@@ -1,374 +1,374 @@
 {
     "tour_seo_low": {
         "name": "Seoyeon",
-        "text": "*You run into Seoyeon at the end of the hall. She adjusts her bag strap and steps half a pace aside.* Let's look around separately today. I still have things to finish."
+        "text": "*At the noisy end of the lunchtime hallway, I run into Seoyeon. She readjusts her grip on the bag strap and steps half a pace aside without a sound.* Let's look around separately today. I still have papers to sort in the student council room."
     },
     "tour_yuna_low": {
         "name": "Yuna",
-        "text": "*The annex door is locked. A short message from Yuna arrives a moment later.* I want to be alone today. *I turn back from the annex and head for the hallway.*"
+        "text": "*Not long after I stop in front of the firmly locked annex door, a short message from Yuna pops up on my phone.* I want to be alone today. *I glance once at the cold, shut handle, then turn and walk back out into the hallway.*"
     },
     "tour_dain_low": {
         "name": "Dain",
-        "text": "*You meet Dain outside the gym. Holding a ball, she turns back toward the court.* I need to practice today. See you later."
+        "text": "*I run into Dain at the gym entrance. A volleyball tucked under her arm, she turns toward the inside of the court, avoiding my eyes.* Sorry. I need to practice alone today. See you later."
     },
     "tour_seo_1": {
         "name": "{name}",
-        "text": "*We stand side by side in front of the school gate. The very spot where Seoyeon was waiting on Day 1.*"
+        "text": "*Seoyeon and I stop side by side in front of the school gate, lunch sunlight pouring down. This is the exact spot where she stood on the morning of my first day, waiting for me when I was nervous.*"
     },
     "tour_seo_2": {
         "name": "Seoyeon",
-        "text": "This is where we first met."
+        "text": "*She looks up at the gate pillar, a faint smile at the corner of her mouth.* We said hello here for the first time, didn't we."
     },
     "tour_seo_3": {
         "name": "{name}",
-        "text": "When we first met, I was so nervous I hardly knew what to say."
+        "text": "It was my first day after transferring, and you have no idea how nervous I was. Standing in front of you, my head went blank. I didn't know what to say first."
     },
     "tour_seo_4": {
         "name": "Seoyeon",
-        "text": "Were you? You still remembered to say hello every time. I noticed you from the start."
+        "text": "*She glances back at me, a playful look in her eyes.* Were you? On the outside you looked perfectly calm, greeting me properly every time. ...Actually, I've been watching you ever since then."
     },
     "tour_seo_5": {
         "name": "{name}",
-        "text": "From day one?"
+        "text": "...From the school gate, on the first day?"
     },
     "tour_seo_6": {
         "name": "Seoyeon",
-        "text": "You might have misheard because of the wind."
+        "text": "*Her earlobes flush red, and she turns her eyes to the distant sky for no reason.* ...Well, you might have misheard that just now, because of the wind."
     },
     "tour_seo_7": {
         "name": "{name}",
-        "text": "*There's not a breath of wind.*"
+        "text": "*The festival banner above the gate hangs perfectly still. There isn't a breath of wind.*"
     },
     "tour_seo_8": {
         "name": "Seoyeon",
-        "text": "Looks like the rooftop key, right? No grooves, though. *She takes out a little metal key ring.*"
+        "text": "Hey, this looks a lot like the rooftop key, doesn't it? There's no real groove cut into the end, though. *Seoyeon takes a silver metal key ring from her pocket and holds it out on her palm.*"
     },
     "tour_seo_9": {
         "name": "Seoyeon",
-        "text": "Here."
+        "text": "Here. Yours."
     },
     "tour_seo_10": {
         "name": "{name}",
-        "text": "The rooftop key... no, it isn't."
+        "text": "...This isn't the real rooftop key."
     },
     "tour_seo_11": {
         "name": "Seoyeon",
-        "text": "It's a student council souvenir. I have to return the real key today."
+        "text": "It's a student council souvenir from this festival. The real rooftop key I had has to go back to the administration office once today's events are over."
     },
     "tour_seo_12": {
         "name": "Seoyeon",
-        "text": "Keep it safe. *Our hands brush as she gives me the key ring; she grips her strap.*"
+        "text": "Don't lose it. Keep it safe. *As she hands me the key ring, the tips of Seoyeon's warm fingers brush long across my palm. Startled, she pulls her hand back and grips her bag strap tight.*"
     },
     "tour_seo_13": {
         "name": "{name}",
-        "text": "Then how do we get onto the roof from now on?"
+        "text": "After you return the key, how do we get up to the roof from next week?"
     },
     "tour_seo_14": {
         "name": "Seoyeon",
-        "text": "Ask me. We can borrow the real key and open it properly together."
+        "text": "*Seoyeon steps closer and looks straight up into my eyes.* You can just tell me. Then, instead of sneaking up, we borrow the key properly and open it together."
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*After our tour, we climb to the roof. Seoyeon rests a hand on the railing.* So even on festival day, we end up having lunch here."
+        "text": "*After we walk once around the schoolyard lined with festival booths, we climb the familiar stairs and open the rooftop door. Seoyeon rests her hand quietly on the sun-warmed railing.* Even at lunch on the school festival day, this is still where the two of us end up."
     },
     "tour_seo_end": {
         "name": "{name}",
-        "text": "*I pocket the key ring. The real key clinks in Seoyeon's bag.*"
+        "text": "*The moment I pocket the souvenir key ring Seoyeon gave me, the real rooftop key she hasn't returned yet clinks, a clear metal sound, inside her bag as the wind shifts it.*"
     },
     "tour_yuna_1_check": {
         "name": "{name}",
-        "text": "*I head to the library annex.*"
+        "text": "*I leave the lunchtime bustle behind and head for the library annex.*"
     },
     "tour_yuna_1": {
         "name": "{name}",
-        "text": "*Afternoon light falls on the annex sofa. The dusty smell is unchanged.*"
+        "text": "*Lazy afternoon sunlight stretches long across the quiet annex window. The old velvet sofa and the smell of aged paper dust wrap around me, just as they did on the first day.*"
     },
     "tour_yuna_1b": {
         "name": "{name}",
-        "text": "*Afternoon light falls on the annex sofa where we read together.*"
+        "text": "*Clear afternoon sunlight settles warmly over the annex's old sofa, where we sat shoulder to shoulder and read together.*"
     },
     "tour_yuna_2": {
         "name": "Yuna",
-        "text": "Sit next to me. No dust here. *She clears a spot on the sofa.*"
+        "text": "*Yuna, sitting by the window, looks up at the sound of my steps and taps the seat right beside her twice with her palm.* Come sit here. I dusted this spot already, so there's no dust."
     },
     "tour_yuna_3": {
         "name": "{name}",
-        "text": "When I come here, the outside sounds seem a little distant."
+        "text": "*When I sit beside Yuna, the edge of my shoulder lightly touches hers.* It's strange. Once I step through this door, the festival noise from the field falls away, like it was never there."
     },
     "tour_yuna_4": {
         "name": "Yuna",
-        "text": "In a good way?"
+        "text": "*Yuna tilts her head a little and looks into my face.* ...You meant that in a good way?"
     },
     "tour_yuna_5": {
         "name": "{name}",
-        "text": "In a good way."
+        "text": "Yeah. In the sense that it's just right for the two of us to catch our breath."
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "I revised it into a new notebook. The margins are messy, though. *She takes it out.*"
+        "text": "*A very faint smile spreads at the corner of Yuna's mouth. She takes a new notebook from her bag and sets it on her lap.* I cleaned up the sentences I'd been writing and copied them neatly into a new notebook. The revision marks are still there beside them, so the margins are a little messy."
     },
     "tour_yuna_7": {
         "name": "Yuna",
-        "text": "I wrote the ending."
+        "text": "...And I finally wrote all the way through to the ending."
     },
     "tour_yuna_8": {
         "name": "{name}",
-        "text": "How does it feel to have written it to the end?"
+        "text": "Really? How does it feel, now that you've written all the way through a story you held onto for so long?"
     },
     "tour_yuna_9": {
         "name": "Yuna",
-        "text": "It felt strange to call it the end."
+        "text": "*Yuna's eyelashes tremble slightly as she brushes a hand down the notebook cover.* I don't know... If I say it's the end out loud, it feels like the time I was sharing with you closes there too. It's a little strange."
     },
     "tour_yuna_10": {
         "name": "Yuna",
-        "text": "Here. ...Caught on the fabric. *She frees the cover and offers the notebook.*"
+        "text": "Here. ...Ah, the corner caught a little on the lining of the bag. *Yuna carefully pulls the notebook free and holds it out to me with both hands. The fingertips wrapped around it are trembling, just barely.*"
     },
     "tour_yuna_11": {
         "name": "{name}",
-        "text": "First reader?"
+        "text": "Is it okay if I'm the first reader of this notebook?"
     },
     "tour_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*She runs a finger along the book’s spine, then looks up.* I’ve talked a lot today, haven’t I?"
+        "text": "*Yuna slowly runs a slender finger down the spine of the new notebook, then quietly lifts her head.* ...I talked a lot more than usual today, didn't I."
     },
     "tour_yuna_end": {
         "name": "Yuna",
-        "text": "The first reader of the ending. I saved that place for you."
+        "text": "The first reader of this ending. ...I left that place open for you from the start."
     },
     "tour_yuna_end_2": {
         "name": "{name}",
-        "text": "*Yuna ends the sentence there.*"
+        "text": "*Yuna stops there and rests her gaze on the notebook in my hands. The quiet of the annex fills with the sound of two heartbeats.*"
     },
     "tour_dain_1_check": {
         "name": "{name}",
-        "text": "*I head to the gym.*"
+        "text": "*I head toward the gym, full of lunchtime energy.*"
     },
     "tour_dain_1": {
         "name": "{name}",
-        "text": "*Beside the line of our first bet stands the ball locker we tidied last night. Today the gym lights are on.*"
+        "text": "*Beside the white court line where Dain and I made our bet on the first day, the volleyball rack we tidied side by side last night sits in a neat row. The gym lights, bright as midday, shine on the court floor.*"
     },
     "tour_dain_1b": {
         "name": "{name}",
-        "text": "*The gym. The lights are on today.*"
+        "text": "*On the ceiling of the gym I just walked into, every light is on bright today, of all days.*"
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "Today I want to just hang out with you, without hitting a ball. You're not going home yet, right? *She stands in the middle of the court with a ball tucked at her side.*"
+        "text": "You're here! Today I don't want to sweat and hit a ball. I just want to hang around with you. You're not heading back to the classroom already, are you? *Dain tucks a volleyball lightly under her arm and waves brightly from the middle of the court.*"
     },
     "tour_dain_3": {
         "name": "Dain",
-        "text": "Hey, one more round of rock-paper-scissors?"
+        "text": "*She strides right up in front of me, eyes bright.* Hey, want to play one more round of rock-paper-scissors right here?"
     },
     "tour_dain_4": {
         "name": "{name}",
-        "text": "You're just going to lose again."
+        "text": "Pretty confident for someone who's just going to lose to me again."
     },
     "tour_dain_5": {
         "name": "Dain",
-        "text": "I'm winning this time!"
+        "text": "Ha, my gut's different today. This time I'm winning, no question!"
     },
     "tour_dain_6": {
         "name": "{name}",
-        "text": "*Rock-paper-scissors. — Dain lost.*"
+        "text": "*Rock, paper, scissors, shoot. — Dain's scissors stop limp in front of my fist.*"
     },
     "tour_dain_7": {
         "name": "Dain",
-        "text": "Why did I lose again?"
+        "text": "...Ah, seriously, why do I only ever lose to you!"
     },
     "tour_dain_8": {
         "name": "Dain",
-        "text": "...Don't make me laugh. *She frowns but can't hold back her smile, setting the volleyball down a beat late.*"
+        "text": "...Hey, don't laugh like that! *Dain frowns like it's unfair, but she can't hold the laugh that slips out. She breaks into a soft laugh and sets the volleyball down on the court.*"
     },
     "tour_dain_10": {
         "name": "Dain",
-        "text": "I don't know about going pro yet."
+        "text": "*She looks quietly down at the white line on the court and speaks in a voice that has grown much calmer.* ...Honestly, I still don't really know if I can make it all the way to the pro stage."
     },
     "tour_dain_11": {
         "name": "{name}",
-        "text": "*The ball rolls along the court line. I leave it alone until Dain speaks again.*"
+        "text": "*The volleyball she set down rolls slowly along the white end line. I stay quietly beside her, without rushing, until she says the next thing she's been holding in.*"
     },
     "tour_dain_11_b": {
         "name": "Dain",
-        "text": "I used to think if volleyball was gone, I'd be empty too. Lately — it's not like that."
+        "text": "I used to think that if one volleyball dropped out of my life, I'd be left as nothing but an empty shell. But... after I met you, that started to change."
     },
     "tour_dain_12": {
         "name": "Dain",
-        "text": "I don't know what changed. But now I have things I want to say off the court too."
+        "text": "I can't put into words exactly what changed, but now even when I walk off the court, I keep finding things I want to say to you."
     },
     "tour_dain_13": {
         "name": "{name}",
-        "text": "What changed?"
+        "text": "Why did that change?"
     },
     "tour_dain_end": {
         "name": "Dain",
-        "text": "I'm not alone, am I?"
+        "text": "*Dain lifts her head, looks me straight in the eye, and smiles brightly.* Of course. I'm not left standing out there alone off the court anymore."
     },
     "tour_dain_freetalk": {
         "name": "Dain",
-        "text": "*She stops a rolling volleyball under her shoe.* It’s the festival lunch break. Wouldn’t it be a shame to stop here?"
+        "text": "*She lightly pins, under the sole of her sneaker, a volleyball that rolled up to her toes.* It's lunch on festival day, for once. It'd be a shame for us to split up like this."
     },
     "tour_dain_end_2": {
         "name": "{name}",
-        "text": "*Dain rests her palm on the volleyball rather than her knee and rolls the ball.*"
+        "text": "*Instead of rubbing the knee that hurt, Dain rests her palm quietly on the leather of the volleyball and rolls the ball gently to my feet.*"
     },
     "tour_co_branch": {},
     "tour_co_event_1": {
         "name": "{name}",
-        "text": "*The lunch bell has rung, but the lines are short. All that remains in the hallway is the sound of lunchbox lids opening and closing.*"
+        "text": "*The bell for lunch rings out, but the serving line is shorter than usual. In the messy hallway, all that's left is the dry clatter of someone opening and closing a lunchbox lid alone.*"
     },
     "tour_co_event_2": {
         "name": "{name}",
-        "text": "*An event vest hangs over the back of a chair. No one asks whose it is.*"
+        "text": "*An ownerless festival staff vest hangs limp over the back of an empty chair. No one says out loud whose seat it was.*"
     },
     "tour_co_seo_1": {
         "name": "{name}",
-        "text": "*The rooftop door is open. Instead of heading for the railing, Seoyeon leans against the doorframe.*"
+        "text": "*The rooftop door is half open, but Seoyeon doesn't walk out toward the railing the way she usually does. She stands with her back leaning at an angle against the steel doorframe.*"
     },
     "tour_co_seo_2": {
         "name": "Seoyeon",
-        "text": "I've returned the key. Let's leave it at that today."
+        "text": "I just returned the rooftop key to the administration office. ...Let's leave lunch here for today."
     },
     "tour_co_seo_3": {
         "name": "{name}",
-        "text": "*As Seoyeon turns away, the corner of her clipboard strikes the doorframe. She keeps walking.*"
+        "text": "*As Seoyeon turns toward the stairs, the corner of her clipboard hits the steel doorframe with a dull sound. She goes down without stopping once.*"
     },
     "tour_co_yuna_1": {
         "name": "{name}",
-        "text": "*On the sofa in the annex, Yuna winds her bag strap around one finger without opening her book.*"
+        "text": "*Yuna sits at the end of the annex sofa and never opens the notebook on her lap. She only winds her bag strap tight around her pale fingers and lets it loose, over and over.*"
     },
     "tour_co_yuna_2": {
         "name": "Yuna",
-        "text": "I won't show you the ending today."
+        "text": "...The ending on the last page of the notebook. I don't want to show it today."
     },
     "tour_co_yuna_3": {
         "name": "{name}",
-        "text": "*Light slips through the window and spreads to the empty seat. Yuna stays where she is.*"
+        "text": "*Afternoon sunlight seeping through the window stretches all the way to the empty seat beside me, but Yuna never closes the distance.*"
     },
     "tour_co_dain_1": {
         "name": "{name}",
-        "text": "*The gym lights are on, but all the balls are still in the rack.*"
+        "text": "*The lights on the gym ceiling are glaringly bright, but every volleyball that should be rolling across the court is locked inside the rack.*"
     },
     "tour_co_dain_2": {
         "name": "Dain",
-        "text": "Rock-paper-scissors can wait till tomorrow. I want to rest today."
+        "text": "Rock-paper-scissors... let's do it next time. Sorry. Today I just want to rest alone."
     },
     "tour_co_dain_3": {
         "name": "{name}",
-        "text": "*Dain tugs the wrist wrap once and lets it go.*"
+        "text": "*Out of habit, Dain yanks the end of her wrist wrap hard, then lets go without strength and drops her gaze.*"
     },
     "tour_seo_event_1": {
         "name": "Haeun",
-        "text": "President, the broadcast club's rehearsal overlaps with the booth safety check. Should I cover the broadcast room?"
+        "text": "*Out of breath, Haeun runs down the hallway and stops.* President! The broadcast club rehearsal in the auditorium overlaps with the field booth safety check. Should I go to the broadcast room instead?"
     },
     "tour_seo_event_2": {
         "name": "{name}",
-        "text": "*Seoyeon's hand moves toward the clipboard, then stops. She taps the box marked 'Broadcast' twice with her pen.*"
+        "text": "*Seoyeon's hand moves to adjust her grip on the clipboard, then stops short. With the tip of her pen, she taps the \"broadcast rehearsal\" box on the schedule twice, lightly.*"
     },
     "tour_seo_event_3": {
         "name": "Seoyeon",
-        "text": "Handle the broadcast room. Just tell me how it went when you're done."
+        "text": "All right. You handle the broadcast room, Haeun. When you're done, just tell me briefly if anything comes up."
     },
     "tour_seo_event_4": {
         "name": "Haeun",
-        "text": "All right. But you can't come check on me halfway through."
+        "text": "*Haeun's eyes go round, then curve bright.* Yes! But you can't sneak over halfway through just because you're worried!"
     },
     "tour_seo_event_5": {
         "name": "Seoyeon",
-        "text": "*Haeun runs off. Seoyeon does not look back once.* Right. The festival won't fall apart just because one thing doesn't pass through my hands."
+        "text": "*Until Haeun's energetic back turns the corner, Seoyeon doesn't chase after her in worry. A lighter breath brushes the corner of her mouth.* ...Right. The world won't fall apart just because one thing doesn't pass through my own hands."
     },
     "tour_yuna_event_1": {
         "name": "{name}",
-        "text": "*When we step into the annex hallway, two younger students are at the display board. They are reading Yuna's anonymous story and asking whether there is more.*"
+        "text": "*When we step out into the hallway in front of the annex, two juniors stand side by side at the literature club display board. Pointing at the short story Yuna posted without a name, they whisper about where they can read what comes next.*"
     },
     "tour_yuna_event_2": {
         "name": "{name}",
-        "text": "*Yuna touches one corner of the page. Her hand, poised to pull it down, stops beneath the title.*"
+        "text": "*Once the juniors leave, Yuna quietly steps up to the board and touches a corner of the manuscript. The fingertips that were about to peel the paper off, out of habit, stop just under the title.*"
     },
     "tour_yuna_event_3": {
         "name": "Yuna",
-        "text": "There isn't a next part yet. But I wrote this."
+        "text": "*She turns slightly toward me and whispers, low.* ...There isn't a next part yet, but at least I wrote this."
     },
     "tour_yuna_event_4": {
         "name": "{name}",
-        "text": "*Yuna takes a pen from her pocket and writes beneath the title: 'Choi Yuna.' The letters lean slightly.*"
+        "text": "*Yuna takes a pale purple fountain pen from her pocket and writes the three characters of her name in the blank space under the title. \"Choi Yuna.\" Because her fingertips are shaking, the last character leans just a little to the right.*"
     },
     "tour_yuna_event_5": {
         "name": "Yuna",
-        "text": "*She turns from the display and walks back into the annex.* You still get to see the ending first."
+        "text": "*Yuna caps the fountain pen, turns from the display, and walks back into the annex. A low, ticklish voice settles by my ear as she passes.* ...The real ending, I'll show it to you first. Before anyone else."
     },
     "tour_dain_event_1": {
         "name": "{name}",
-        "text": "*The coach calls. Dain listens without interrupting as he asks whether she can play in the sports-day exhibition match.*"
+        "text": "*In a corner of the gym, Dain's phone rings for a long time. After she checks the coach's name, she listens in silence all the way through as he asks whether she can play even briefly in the afternoon festival exhibition match.*"
     },
     "tour_dain_event_2": {
         "name": "Dain",
-        "text": "I'll sit this one out. I told Mom today too. But if the commentary booth is open, I can handle it."
+        "text": "*Dain looks at me once, then speaks in a steady voice.* Coach, I'm not playing in today's exhibition match. I told Mom myself this morning, too. But if the commentary mic at the officials' booth is open, I'll take that!"
     },
     "tour_dain_event_3": {
         "name": "{name}",
-        "text": "*A little later, Dain taps the microphone in the booth. The entire court lies below us.*"
+        "text": "*A little later, Dain climbs to the second-floor commentary booth and taps the microphone. Her clear voice carries over the court spread out below.*"
     },
     "tour_dain_event_4": {
         "name": "Dain",
-        "text": "Here comes the serve! That one was inside the line! I'll take complaints after the match!"
+        "text": "Here we go, first serves from both teams! No chance. That ball was exactly inside the line! Complaints about the call, I'll take them after the match, in front of the snack shop, if you bring ice cream!"
     },
     "tour_dain_event_5": {
         "name": "Dain",
-        "text": "*She switches off the microphone and catches her breath as we head down to the gym.* Turns out I still have plenty to say when I'm not the one playing. More than I thought."
+        "text": "*Under the laughter and applause pouring up from below the booth, Dain switches off the microphone and catches her breath, light, as she comes down the stairs.* ...Even without running on the court myself, I have this much I can say. It's a lot more fun than I thought."
     },
     "tour_seo_affinity_check": {},
     "tour_seo_affinity_80": {
         "name": "Seoyeon",
-        "text": "I left the first slot in next week's schedule open. You pick the time."
+        "text": "*Seoyeon opens her diary a little and shows me a page.* I left the first slot on my schedule for next week open. You pick the time for wherever we go."
     },
     "tour_seo_affinity_60": {
         "name": "Seoyeon",
-        "text": "Let's stop by the rooftop when we're done. I'll be the one waiting first today."
+        "text": "When the afternoon events are all done, let's stop by the rooftop for a bit. Today I'll go up first and wait, before you get there."
     },
     "tour_yuna_affinity_check": {},
     "tour_yuna_affinity_80": {
         "name": "Yuna",
-        "text": "Your seat is reserved as the first reader of the next story too. Let's write down a date when we're done."
+        "text": "I'll save the first-reader seat in the next notebook for you, too. When today's events are over, let's write the date on that cover together."
     },
     "tour_yuna_affinity_60": {
         "name": "Yuna",
-        "text": "You read the last page I have to show today first."
+        "text": "The last page I'll show you this afternoon... Don't let it be anyone else. You read it first."
     },
     "tour_dain_affinity_check": {},
     "tour_dain_affinity_80": {
         "name": "Dain",
-        "text": "Come when I practice commentary for the next game too. I'll send you the date."
+        "text": "Next week, when I officially practice match commentary, you have to come watch! Once the date's set, I'll message you first."
     },
     "tour_dain_affinity_60": {
         "name": "Dain",
-        "text": "Want to start with the broadcast booth? You're my first listener today."
+        "text": "Want to stop by the broadcast booth together this afternoon? I already decided you're the first listener for my mic test today."
     },
     "tour_seo_skip": {},
     "tour_yuna_skip": {},
     "tour_dain_skip": {},
     "tour_seo_neg": {
         "name": "Seoyeon",
-        "text": "*She doesn't take out the roof key.* Let's go separately today."
+        "text": "*Seoyeon never takes the key ring out of her pocket.* For the afternoon route, it's better if we go separately."
     },
     "tour_yuna_neg": {
         "name": "Yuna",
-        "text": "*She locks the annex door.* Don't follow today."
+        "text": "*From inside, Yuna latches the annex door.* Sorry. Don't follow me in here today."
     },
     "tour_dain_neg": {
         "name": "Dain",
-        "text": "*She turns off the gym lights.* Skip today. I'm going first."
+        "text": "*Dain flips the light switches on the gym wall off, one after another.* Let's skip today's lunch bet. I'm heading in first."
     },
     "day5_haeun_high_intro": {
         "name": "Haeun",
-        "text": "Could you take this side? Would you help me carry it to the broadcasting room? *Haeun holds out one end of a box of paperwork.*"
+        "text": "Senior, perfect timing! Could you grab this corner with me? Please help me carry it just as far as the broadcast room. *Haeun holds out one side of the paperwork box she had been holding in both arms.*"
     },
     "day5_haeun_high_clasp": {
         "name": "Haeun",
-        "text": "Wait a moment, please. My bracelet's caught on your sleeve button. *She puts the box outside the booth and leans closer to free the clasp. Passing footsteps stop.*"
+        "text": "Ah, senior, please don't move for a second. I think my bracelet clasp caught on your sleeve button. *She sets the box down in front of the broadcast room door, and Haeun leans her head in close to my chest to undo the tangled silver chain. Right then, someone's footsteps in the hallway stop dead beside us.*"
     },
     "day5_haeun_explain_choice": {
         "name": "{name}",
-        "text": "*Haeun lets go of the bracelet and looks back. Standing between them, I begin to speak.*",
+        "text": "*Startled, Haeun quickly lets go of the bracelet and looks back. In the strangely stiffened air, I speak first.*",
         "choices": [
             "Introduce Haeun",
             "Put off the explanation"
@@ -376,23 +376,23 @@
     },
     "day5_haeun_explain_open": {
         "name": "{name}",
-        "text": "This is Haeun from the council. We were carrying papers to the booth; her bracelet got caught. *The other person still looks at my cuff.*"
+        "text": "*I explain calmly that this is Haeun, who helps with student council work, and that while we were carrying a paperwork box to the broadcast room her bracelet clasp caught on my sleeve button and we were undoing it. The gaze from across from us still rests on the ends of our sleeves, where they had been touching.*"
     },
     "day5_haeun_explain_delay": {
         "name": "{name}",
-        "text": "*I ask for a moment and turn back to Haeun, adding that I will explain later to the person waiting in the hallway.*"
+        "text": "*I ask them to wait a moment, then turn back to finish freeing Haeun's bracelet. To the person stopped in the hallway, I only add that I'll explain separately later.*"
     },
     "day5_haeun_defends": {
         "name": "Haeun",
-        "text": "I asked for help. I feel comfortable asking. *Haeun pulls the box closer.* We weren’t doing anything wrong. …So why does it sound like an excuse now that I’ve said it?"
+        "text": "Um, I asked for the help first. I can speak comfortably to senior. *Haeun pulls the paperwork box on the floor in close to her feet.* We really didn't do anything that could be misunderstood. ...No. Why does it sound even more like a strange excuse now that I've said it myself?"
     },
     "day5_haeun_waver_1": {
         "name": "Haeun",
-        "text": "*Haeun looks down at her empty hands and fiddles with her bracelet for a long while.* I said earlier that it wasn't anything strange. That's true. But I keep remembering that I said I was rooting for the two of you. I'll just pretend I haven't noticed."
+        "text": "*After the moment has passed, Haeun looks down at her empty palms, then fidgets with the bracelet clasp on her wrist for a long while.* Senior, I said earlier that it was nothing. That's clearly true, but... what I said before, that I was rooting for the two of you, keeps catching in my throat. I'm just going to keep pretending I don't notice, and swallow it."
     },
     "day5_haeun_waver_choice": {
         "name": "Haeun",
-        "text": "*Haeun opens her clenched hand and closes it again.* I'm fine. It's nothing. …It really is nothing, but what do you think?",
+        "text": "*Haeun clenches her fist and slowly opens it, over and over, forcing a smile.* I'm fine. It's really nothing. ...It really is nothing, but what are you thinking right now, senior?",
         "choices": [
             "Someone's waiting. I'll go.",
             "You don't have to pretend you're fine.",
@@ -402,23 +402,23 @@
     },
     "day5_haeun_waver_up": {
         "name": "Haeun",
-        "text": "*Haeun lets out a long breath.* …Thank you. It's a little less scary now. Stay beside me a little longer."
+        "text": "*Haeun lets out the breath she was holding and drops the tension from her shoulders.* ...Thank you, senior. Hearing you say that, I'm a little less scared. Please stay beside me just a little longer."
     },
     "day5_haeun_waver_down": {
         "name": "Haeun",
-        "text": "*Haeun presses the bracelet clasp with a fingertip, then lets go.* …Okay. I'll treat it as nothing."
+        "text": "*With fingertips gone cold, Haeun presses hard on the bracelet clasp, then lets go.* ...Okay. I'll just treat what I said a moment ago as nothing."
     },
     "day5_haeun_finish": {
         "name": "Haeun",
-        "text": "Thanks for taking it. *She hands the box to the student in charge and fastens her bracelet. The lunch announcement continues.*"
+        "text": "Thank you for taking this paperwork box! *Haeun hands the box to the student in charge of the broadcast club and clicks the undone bracelet clasp shut again. From the speaker overhead, the lunch event announcement plays.*"
     },
     "day5_haeun_low_intro": {
         "name": "Haeun",
-        "text": "Looking for the checklist? *Haeun draws the papers toward herself.* I’m not ready to leave this entirely to you."
+        "text": "Are you looking for the booth checklist? *Haeun draws the file a little closer and holds it against herself.* I'm sorry, but I'm still a little hesitant to leave it to you alone, senior."
     },
     "day5_haeun_low_choice": {
         "name": "Haeun",
-        "text": "We just need to check the booth numbers and emergency access routes again. If you want to help, please come with me.",
+        "text": "We just need to cross-check the afternoon booth numbers and the emergency route locations again. If you really mean to help, walk around with me and check them.",
         "choices": [
             "Apologize for earlier and help with the inspection",
             "Do the inspection together",
@@ -427,39 +427,39 @@
     },
     "day5_haeun_low_apology": {
         "name": "Haeun",
-        "text": "*I apologize to Haeun for my earlier attitude and offer to finish the inspection with her. After a pause, she unfolds the checklist.* I hear your apology. Let’s start here, then."
+        "text": "*I apologize politely for the attitude that made her uncomfortable last time we talked, and say I'll help finish the inspection. Haeun studies my eyes for a moment, then carefully opens the checklist.* ...I heard your apology. Then please check this section with me, starting here."
     },
     "day5_haeun_low_work": {
         "name": "{name}",
-        "text": "Last number matches. Empty boxes by the wall; missing signs listed here. *I return the checklist to Haeun.*"
+        "text": "Every booth number matches, through the last one. I moved the empty boxes blocking the aisle over to the wall, and I wrote where the missing signs go in the margin here. *I hand Haeun the checklist once the checks are done.*"
     },
     "day5_haeun_low_repair": {
         "name": "Haeun",
-        "text": "*Haeun looks over the completed checklist.* You stayed until we finished. What happened before still bothers me, but thank you for helping today."
+        "text": "*Haeun turns through the filled-in checklist, page by page.* You didn't cut corners. You looked through all of it to the end. Honestly, what happened last time still bothers me a little, but I'm really grateful you went out of your way to help today."
     },
     "day5_haeun_low_thanks": {
         "name": "Haeun",
-        "text": "*Haeun ticks the final box.* We finished early thanks to you. I’ll take the paperwork from here."
+        "text": "*Haeun draws a circle in the last box on the checklist.* Thanks to you, senior, we finished much earlier than I expected. I'll take the rest of the paperwork to the student council room."
     },
     "day5_haeun_low_leave": {
         "name": "Haeun",
-        "text": "All right. I’ll do the inspection. *Haeun folds the checklist and walks toward the booths.*"
+        "text": "Yes, I understand. I'll finish checking the remaining sections on my own. *Haeun folds the checklist in half and walks briskly toward the booths.*"
     },
     "day5_haeun_seoyeon_arrival": {
         "name": "Seoyeon",
-        "text": "So here you two are. *Seoyeon stops and looks from Haeun’s hand to my sleeve.* What were you doing?"
+        "text": "So you two were here. *Coming down the hall, Seoyeon stops and looks down, from Haeun's fingertips to my shirt sleeve and back.* ...What were you doing here?"
     },
     "day5_haeun_seoyeon_escalation": {
         "name": "Seoyeon",
-        "text": "So you’re close enough for her to ask freely. *Seoyeon turns toward me.* Tell me yourself. Since when have you two been this close?"
+        "text": "So you're close enough that she can ask you freely. *Seoyeon turns toward me, her eyes calm but cold.* Don't let Haeun speak for you. Say it yourself. Since when have you two been this close?"
     },
     "day5_haeun_seoyeon_escalation_delay": {
         "name": "Seoyeon",
-        "text": "So you’re close enough for her to ask freely. *Seoyeon turns toward me.* Tell me yourself. Since when have you two been this close?"
+        "text": "So you're close enough that she can ask you freely. *Seoyeon turns toward me, her eyes calm but cold.* Don't let Haeun speak for you. Say it yourself. Since when have you two been this close?"
     },
     "day5_haeun_seoyeon_group_talk": {
         "name": "Seoyeon · Haeun",
-        "text": "*Haeun steps half a pace away; the other person waits for an answer.*",
+        "text": "*Haeun steps half a pace back with a troubled face, and Seoyeon waits for my answer, her gaze steady.*",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
         "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
@@ -470,19 +470,19 @@
     },
     "day5_haeun_yuna_arrival": {
         "name": "Yuna",
-        "text": "Wait. *Yuna takes out an earbud and looks between us.* You were standing close."
+        "text": "...Wait. *Passing in the hall, Yuna slowly pulls out one earbud and looks at the narrow space between us.* You two were standing really close."
     },
     "day5_haeun_yuna_escalation": {
         "name": "Yuna",
-        "text": "*Yuna pockets her earbuds.* I understand the work. I didn’t know you two were close, though. I want to hear from you, too."
+        "text": "*Yuna coils the earbud cord and tucks it into her uniform pocket.* I get that you helped move the paperwork. But I've never seen the two of you get this close. ...I want to hear it from you, too."
     },
     "day5_haeun_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna puts her earphones away.* I heard that Haeun asked you. But I want to hear it from you. What were you two doing?"
+        "text": "*Yuna coils the earbud cord and tucks it into her uniform pocket.* I know Haeun asked you first. Still, tell me yourself. What were you two just doing?"
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
-        "text": "*Haeun steps half a pace away; the other person waits for an answer.*",
+        "text": "*Haeun carefully steps half a pace back, and Yuna looks at the corner of my mouth with quiet eyes.*",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
         "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
@@ -493,19 +493,19 @@
     },
     "day5_haeun_dain_arrival": {
         "name": "Dain",
-        "text": "Hey, what are you two doing? *Dain stops beside the box.* I’m not interrupting, am I?"
+        "text": "Oh, hey! What are you two doing here? *Dain stops short beside the box of paperwork.* ...The mood's kind of weird. I can jump in, right?"
     },
     "day5_haeun_dain_escalation": {
         "name": "Dain",
-        "text": "*Dain looks away from Haeun and at me.* You tell me, not Haeun. Were you really just helping with the work?"
+        "text": "*Dain snaps her eyes from Haeun over to me.* Don't let Haeun answer. You tell me. Were you really just helping with student council work?"
     },
     "day5_haeun_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain looks away from Haeun and at me.* You tell me, not Haeun. Were you really just helping with the work?"
+        "text": "*Dain snaps her eyes from Haeun over to me.* Don't let Haeun answer. You tell me. Were you really just helping with student council work?"
     },
     "day5_haeun_dain_group_talk": {
         "name": "Dain · Haeun",
-        "text": "*Haeun steps half a pace away; the other person waits for an answer.*",
+        "text": "*Haeun steps half a pace back, looking awkward, and Dain waits for my answer with her arms crossed.*",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
         "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
@@ -516,19 +516,19 @@
     },
     "day5_haeun_teacher_arrival": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher lowers her folder and looks at us.* What were you doing here?"
+        "text": "*Passing in the hall, the homeroom teacher lowers the folder she was holding and looks at the two of us.* ...What were you two doing in the middle of the hallway?"
     },
     "day5_haeun_teacher_escalation": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher tucks her folder under her arm.* Haeun doesn’t need to answer for you. Explain it yourself. Did I get the wrong idea?"
+        "text": "*The homeroom teacher shifts the folder under her arm.* Haeun doesn't need to cover for you. Explain it yourself. Did I see that wrong just now?"
     },
     "day5_haeun_teacher_escalation_delay": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher tucks her folder under her arm.* Haeun doesn’t need to answer for you. Explain it yourself. Did I get the wrong idea?"
+        "text": "*The homeroom teacher shifts the folder under her arm.* Haeun doesn't need to cover for you. Explain it yourself. Did I see that wrong just now?"
     },
     "day5_haeun_teacher_group_talk": {
         "name": "Homeroom Teacher · Haeun",
-        "text": "*Haeun steps half a pace away; the other person waits for an answer.*",
+        "text": "*Haeun carefully steps half a pace back, and the homeroom teacher waits for my answer with a calm look.*",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
         "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
@@ -539,19 +539,19 @@
     },
     "day5_haeun_nurse_arrival": {
         "name": "School Nurse",
-        "text": "*The school nurse slows down.* You two look comfortable together. What’s going on?"
+        "text": "*Coming back from checking the emergency kit, the school nurse slows down in front of us.* Oh my, you two look pretty close. What's going on?"
     },
     "day5_haeun_nurse_escalation": {
         "name": "School Nurse",
-        "text": "*The nurse stops smiling.* I’m not asking Haeun. I want to hear it from you. What’s between you two?"
+        "text": "*The light smile fades from the school nurse's mouth.* I'm not asking Haeun. I want to hear it from you. What are you two to each other?"
     },
     "day5_haeun_nurse_escalation_delay": {
         "name": "School Nurse",
-        "text": "*The nurse stops smiling.* I’m not asking Haeun. I want to hear it from you. What’s between you two?"
+        "text": "*The light smile fades from the school nurse's mouth.* I'm not asking Haeun. I want to hear it from you. What are you two to each other?"
     },
     "day5_haeun_nurse_group_talk": {
         "name": "School Nurse · Haeun",
-        "text": "*Haeun steps half a pace away; the other person waits for an answer.*",
+        "text": "*Haeun steps half a pace back, and the school nurse waits quietly for my answer.*",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
         "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution.",
@@ -562,7 +562,7 @@
     },
     "day5_haeun_concern_choice": {
         "name": "{name}",
-        "text": "*Haeun turns toward me. The person listening to her stays where they are.*",
+        "text": "*Haeun turns toward me, her face tense. The person who was listening beside her stays put and looks at me too.*",
         "choices": [
             "Ask what they heard",
             "Not now"
@@ -570,35 +570,35 @@
     },
     "day5_haeun_concern_open": {
         "name": "{name}",
-        "text": "*I ask what they heard and say I will explain with Haeun here. The other person glances at her once more, then turns to me.*"
+        "text": "*I calmly ask what they were just talking about, and say I'll explain everything openly here, with Haeun present. The person across from me glances at Haeun once, then looks back at me.*"
     },
     "day5_haeun_concern_delay": {
         "name": "{name}",
-        "text": "*I say I don’t want to discuss it now and try to leave. The other person calls my name. Haeun stays as well.*"
+        "text": "*Saying I don't want to explain every detail here right now, I start to leave. From behind me a voice calls my name, and Haeun stands frozen where she is.*"
     },
     "day5_haeun_concern_clarify": {
         "name": "Haeun",
-        "text": "I’m not trying to make you look bad by inventing things. I talked about what made me uncomfortable. *Haeun looks at me.* If I took it differently than you meant, please tell us here."
+        "text": "Um, I absolutely wasn't making anything up to make you look bad, senior. I only told them what felt uncomfortable and flustered me when we talked that day. *Haeun looks carefully into my eyes.* If I took what you meant the wrong way, senior, please say so yourself, right here."
     },
     "day5_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
-        "text": "*At the hall corner, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Talking quietly at the corner of the hall, Haeun sees me coming and stops.* ...Honestly, when I talked with you last time, senior, I felt a little uncomfortable. I didn't know how to take it on my own, so I was asking."
     },
     "day5_haeun_concern_seoyeon_arrival": {
         "name": "Seoyeon",
-        "text": "What did you talk about with Haeun? *Seoyeon lowers her papers.* It didn’t sound like something I should brush aside."
+        "text": "You. What did you talk about with Haeun? *Seoyeon lowers the stack of papers she was holding and asks, looking serious.* It didn't sound like something to just laugh off."
     },
     "day5_haeun_concern_seoyeon_escalation": {
         "name": "Seoyeon",
-        "text": "I want to know whether you realized she felt uncomfortable. *Seoyeon waits for my answer.* Tell us directly."
+        "text": "I want to know if you even realized how hard that was on Haeun. *Seoyeon waits for my answer without wavering.* Don't dodge it. Tell me yourself, right here."
     },
     "day5_haeun_concern_seoyeon_escalation_delay": {
         "name": "Seoyeon",
-        "text": "I want to know whether you realized she felt uncomfortable. *Seoyeon waits for my answer.* Tell us directly."
+        "text": "I want to know if you even realized how hard that was on Haeun. *Seoyeon waits for my answer without wavering.* Don't dodge it. Tell me yourself, right here."
     },
     "day5_haeun_concern_seoyeon_group_talk": {
         "name": "Seoyeon",
-        "text": "*Seoyeon glances at Haeun, then asks me.* I didn’t expect to hear something like this about you. What did you say to her?",
+        "text": "*Seoyeon glances once at Haeun's stiff face, then asks me.* I didn't think I'd hear about you like this. What on earth did you say to Haeun?",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
         "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
@@ -609,23 +609,23 @@
     },
     "day5_haeun_concern_yuna_intro": {
         "name": "Haeun",
-        "text": "*At the hall corner, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Talking quietly at the corner of the hall, Haeun sees me coming and stops.* ...Honestly, when I talked with you last time, senior, I felt a little uncomfortable. I didn't know how to take it on my own, so I was asking."
     },
     "day5_haeun_concern_yuna_arrival": {
         "name": "Yuna",
-        "text": "*Yuna looks away from Haeun and turns to me.* I heard what Haeun had to say. I want to hear your side too."
+        "text": "*Yuna looks away from Haeun and quietly looks at me.* I heard the gist from Haeun. ...Now I want to hear your side, too."
     },
     "day5_haeun_concern_yuna_escalation": {
         "name": "Yuna",
-        "text": "*Yuna puts away her phone.* I don’t know how to take your words right now. Tell me what you meant then."
+        "text": "*Yuna puts the phone in her hand into her pocket.* Right now I'm not sure how I'm supposed to take what you're saying. Tell me what you were thinking when you said it that day."
     },
     "day5_haeun_concern_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna puts away her phone.* I don’t know how to take your words right now. Tell me what you meant then."
+        "text": "*Yuna puts the phone in her hand into her pocket.* Right now I'm not sure how I'm supposed to take what you're saying. Tell me what you were thinking when you said it that day."
     },
     "day5_haeun_concern_yuna_group_talk": {
         "name": "Yuna",
-        "text": "*Yuna folds her earbud cord into her pocket.* What Haeun told me sounds so unlike the person I know. Tell me yourself. What did you talk about?",
+        "text": "*Yuna calmly folds the earbud cord and puts it in her pocket.* What Haeun told me is too different from the you I know. Tell me yourself. What did you talk about?",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
         "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
@@ -636,23 +636,23 @@
     },
     "day5_haeun_concern_dain_intro": {
         "name": "Haeun",
-        "text": "*At the hall corner, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Talking quietly at the corner of the hall, Haeun sees me coming and stops.* ...Honestly, when I talked with you last time, senior, I felt a little uncomfortable. I didn't know how to take it on my own, so I was asking."
     },
     "day5_haeun_concern_dain_arrival": {
         "name": "Dain",
-        "text": "Haeun stopped halfway through telling me. *Dain stands in front of me.* I’m going to ask you what happened, too."
+        "text": "You show up, and Haeun stops dead mid-sentence. *Dain plants herself in front of me, as if blocking the way.* I'm going to ask you myself what happened between you two."
     },
     "day5_haeun_concern_dain_escalation": {
         "name": "Dain",
-        "text": "*Dain lowers her arms.* If there’s a misunderstanding, clear it up. If you said something hurtful, talk about that too. I’m listening."
+        "text": "*Dain lowers her crossed arms and meets my eyes, serious.* If it's an unfair misunderstanding, clear it up here. If you said something that hurt her, be honest about that too. I'll hear you out to the end."
     },
     "day5_haeun_concern_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain lowers her arms.* If there’s a misunderstanding, clear it up. If you said something hurtful, talk about that too. I’m listening."
+        "text": "*Dain lowers her crossed arms and meets my eyes, serious.* If it's an unfair misunderstanding, clear it up here. If you said something that hurt her, be honest about that too. I'll hear you out to the end."
     },
     "day5_haeun_concern_dain_group_talk": {
         "name": "Dain",
-        "text": "*Dain stops in front of me.* What did you say to Haeun? I didn’t think you were the kind of person to treat someone badly. Let’s hear your side.",
+        "text": "*Dain stops in front of me.* What on earth did you say to Haeun? I believed you weren't someone who'd treat a junior carelessly. Let's hear your side, too.",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
         "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
@@ -663,23 +663,23 @@
     },
     "day5_haeun_concern_teacher_intro": {
         "name": "Haeun",
-        "text": "*At the hall corner, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Talking quietly at the corner of the hall, Haeun sees me coming and stops.* ...Honestly, when I talked with you last time, senior, I felt a little uncomfortable. I didn't know how to take it on my own, so I was asking."
     },
     "day5_haeun_concern_teacher_arrival": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher steps aside from Haeun.* I’m not deciding based on one side. Tell me yours."
+        "text": "*The homeroom teacher steps half a pace aside from Haeun and calls me over.* I won't jump to a judgment from only one side. Explain what the context was that day."
     },
     "day5_haeun_concern_teacher_escalation": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher looks straight at me.* It may not have sounded the way you intended. We still need to hear what bothered Haeun. What do you think?"
+        "text": "*The homeroom teacher looks straight at me.* It may have come across differently from what you intended. Even so, we need to go over why Haeun felt uncomfortable. What do you think?"
     },
     "day5_haeun_concern_teacher_escalation_delay": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher looks straight at me.* It may not have sounded the way you intended. We still need to hear what bothered Haeun. What do you think?"
+        "text": "*The homeroom teacher looks straight at me.* It may have come across differently from what you intended. Even so, we need to go over why Haeun felt uncomfortable. What do you think?"
     },
     "day5_haeun_concern_teacher_group_talk": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher puts down her folder.* I thought well of you, but I can’t brush this aside. Tell me what you said to Haeun.",
+        "text": "*The homeroom teacher lowers the folder she was holding.* I've trusted how you usually are, but I can't pretend I didn't hear this. Explain, step by step, what you said to Haeun.",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
         "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
@@ -690,23 +690,23 @@
     },
     "day5_haeun_concern_nurse_intro": {
         "name": "Haeun",
-        "text": "*At the hall corner, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked before. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Talking quietly at the corner of the hall, Haeun sees me coming and stops.* ...Honestly, when I talked with you last time, senior, I felt a little uncomfortable. I didn't know how to take it on my own, so I was asking."
     },
     "day5_haeun_concern_nurse_arrival": {
         "name": "School Nurse",
-        "text": "*The nurse glances at Haeun, then meets my eyes.* I can’t simply ignore that she felt uncomfortable. I need to hear your side."
+        "text": "*The school nurse looks at Haeun's stiff face, then meets my eyes.* A junior feeling uncomfortable in a conversation isn't something I can brush off. I need to hear your side, too."
     },
     "day5_haeun_concern_nurse_escalation": {
         "name": "School Nurse",
-        "text": "*The nurse’s smile fades.* Let’s work out why Haeun took it that way. Explain your side."
+        "text": "*The school nurse lets the smile leave her soft eyes.* Let's calmly go over why Haeun took your words that way. Will you explain it yourself?"
     },
     "day5_haeun_concern_nurse_escalation_delay": {
         "name": "School Nurse",
-        "text": "*The nurse’s smile fades.* Let’s work out why Haeun took it that way. Explain your side."
+        "text": "*The school nurse lets the smile leave her soft eyes.* Let's calmly go over why Haeun took your words that way. Will you explain it yourself?"
     },
     "day5_haeun_concern_nurse_group_talk": {
         "name": "School Nurse",
-        "text": "*The nurse checks on Haeun before turning to me.* I don’t understand why I’m hearing this about you. I want to hear from you why she’s so upset. What did you say?",
+        "text": "*The school nurse checks on Haeun first, then turns toward me.* I didn't expect to hear about you in a moment like this. I want to hear from you, too, why this is weighing on Haeun. What did you say then?",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
         "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
@@ -717,11 +717,11 @@
     },
     "day5_haeun_trust_cg": {
         "name": "{name}",
-        "text": "*Haeun rests her hands on the box of paperwork and turns toward me.*"
+        "text": "*In front of the broadcasting room door, Haeun quietly rests her hands, one over the other, on the box of paperwork and turns toward me, her cheeks a little flushed.*"
     },
     "day5_haeun_personal": {
         "name": "Haeun",
-        "text": "*Haeun closes the broadcasting-room door and stands beside you.* I couldn’t ask with everyone there. Who did you want to spend today with?",
+        "text": "*Haeun quietly closes the broadcasting room door and stands beside me.* I couldn't bring myself to ask earlier, with someone else there... Senior, who did you originally most want to be with at the festival today?",
         "context": "Day 5 around lunch. You are talking alone with Haeun in the hallway outside the broadcast room, right after the box errand. Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
         "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity. Haeun knows her heart is wavering but tries to act as if she doesn't. She picks her words between what she said about cheering them on and what she feels now, and neither confesses nor acts like a partner."
     }

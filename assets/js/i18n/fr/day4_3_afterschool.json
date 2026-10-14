@@ -1,44 +1,44 @@
 {
     "confess_seo_low": {
         "name": "Seoyeon",
-        "text": "*Seoyeon sort la clé du toit, puis la remet dans sa poche.* Arrêtons-nous là aujourd'hui. Je ne pense pas qu'on doive se rapprocher davantage maintenant."
+        "text": "*Seoyeon sort la clé du toit de son sac, puis, comme si elle changeait d'avis, la remet dans sa poche.* Désolée, mais on s'arrête là pour aujourd'hui. Se rapprocher encore, dans l'état actuel, c'est trop."
     },
     "confess_yuna_low": {
         "name": "Yuna",
-        "text": "*Yuna regarde vers l'annexe, puis fait demi-tour.* C'est tout pour aujourd'hui. Je ne peux pas parler de nous rapprocher davantage maintenant."
+        "text": "*Yuna regarde un moment l'annexe, où le crépuscule s'est posé, puis fait demi-tour en silence.* Aujourd'hui, on se quitte ici. Là, je n'arrive pas à parler de choses plus profondes avec toi."
     },
     "confess_dain_low": {
         "name": "Dain",
-        "text": "*Dain commence à marcher vers le gymnase, puis s'arrête pour réajuster la sangle de son sac à ballons.* On s'arrête là aujourd'hui. Si on continue, on ne fera que rendre les choses plus difficiles."
+        "text": "*Dain marche vers le gymnase éteint, s'arrête net, et rajuste la sangle de son sac à ballons.* Aujourd'hui, on rentre d'ici. Si on parle encore, ça va juste nous peser, tous les deux."
     },
     "confess_seo_1": {
         "name": "{name}",
-        "text": "*Après notre rendez-vous, nous revenons devant le lycée.*"
+        "text": "*Quand le couchant allonge les ombres, le rendez-vous fini, je reviens au portail du lycée, côte à côte avec Seoyeon.*"
     },
     "confess_seo_2": {
         "name": "Seoyeon",
-        "text": "On monte un moment."
+        "text": "C'est dommage de se quitter comme ça. On monte un moment sur le toit."
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*Je suis Seoyeon sur le toit du lycée. Les lumières du terrain s’allument en bas.*"
+        "text": "*Je suis Seoyeon dans l'escalier silencieux, jusqu'au toit du lycée. Sous la rambarde en grillage, le couchant rouge décline, et les lampes de nuit au bord du terrain s'allument une à une.*"
     },
     "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se tient à un pas de la rambarde et glisse la clé dans sa poche.*"
+        "text": "*Seoyeon recule d'un demi-pas de la rambarde et s'arrête juste devant moi. Elle range dans la poche de son cardigan la clé en laiton qui a ouvert la porte, et le vent du soir fait frôler ma joue de ses longs cheveux et d'un parfum discret.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
-        "text": "*Mes doigts accrochent le mot plié au fond de ma poche.*"
+        "text": "*Au bout de mes doigts, dans la poche du pantalon, accroche toute froissée la note de confession que j'ai réécrite encore et encore, hier soir.*"
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": "*Je ne sors pas le mot.*"
+        "text": "*Je décide de ne pas sortir le papier que j'avais préparé. J'inspire à fond et je regarde droit les yeux de Seoyeon, où vacille la lumière du couchant.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Seul le porte-clés tinte brièvement dans la main de Seoyeon.*",
+        "text": "*Dans ce silence, assez près pour que nos souffles se touchent, seul le porte-clés dans la paume de Seoyeon cliquette tout bas.*",
         "choices": [
             "Lui dire qu’elle me plaît.",
             "Rester encore un peu.",
@@ -48,100 +48,100 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "...J'ai bien entendu, hein ? Essaie pas de faire passer ça pour une blague. *Le porte-clés se tait. Elle croise mon regard.*"
+        "text": "Attends. Ce que tu viens de dire, je l'ai bien entendu, hein ? N'imagine même pas, maintenant, faire passer ça pour une blague. *Le cliquetis du porte-clés s'arrête net. D'un regard qui vacille, Seoyeon accroche le mien et ne le lâche plus.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*J'ai la gorge sèche. Dans ma poche, mes doigts replient le mot.*"
+        "text": "*J'humecte une fois mes lèvres sèches et, au lieu de la note dans ma poche, je fais un demi-pas de plus vers le bout des doigts de Seoyeon.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "Tu me plais. J’ai envie qu’on continue à se voir après aujourd’hui."
+        "text": "C'est pas une blague. Tu me plais, Seoyeon. Pas juste pour aujourd'hui. Je veux continuer à te voir, à rester à tes côtés."
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "*Seoyeon ne répond pas tout de suite. Le porte-clés tourne une fois dans sa main.*"
+        "text": "*Seoyeon n'arrive pas à parler et se mord un peu la lèvre. Le long de son cou rougi, son souffle court monte et descend, et le porte-clés dans sa main tourne une fois à vide.*"
     },
     "confess_seo_yes_5": {
         "name": "{name}",
-        "text": "Tu n'as pas besoin de me répondre tout de suite."
+        "text": "Ça a dû être soudain. Tu n'as pas besoin de répondre tout de suite."
     },
     "confess_seo_yes_6": {
         "name": "Seoyeon",
-        "text": "Si tu me dis ça, je vais y réfléchir encore plus."
+        "text": "Si tu me laisses aussi gentiment une porte de sortie, je n'arrive plus à penser à autre chose."
     },
     "confess_seo_yes_7": {
         "name": "Seoyeon",
-        "text": "...Je veux rester ici. Encore un peu. *Elle tient son trousseau.*"
+        "text": "Ne descendons pas encore. Tu veux rester là avec moi, comme ça, encore un peu ? *De la main qui tient le porte-clés, Seoyeon tire doucement le bout de ma manche.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
-        "text": "Moi aussi, je n'ai pas arrêté de t'observer."
+        "text": "En fait, moi aussi, depuis le premier jour de ton transfert, je n'ai regardé que toi."
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
-        "text": "Où tu t'assois. Quand tu parles moins."
+        "text": "Où tu t'assois en classe, avec qui tu souris, et même à quoi tu penses quand tes mots se font rares. Tout."
     },
     "confess_seo_yes_10": {
         "name": "{name}",
-        "text": "Je savais pas que tu faisais autant attention. ...J'étais peut-être trop occupé à cacher mes sentiments pour voir ton expression. *Seoyeon range les clés dans sa poche.*"
+        "text": "Je savais pas que tu me regardais à ce point. À force de cacher ce que je ressens, j'ai fini par manquer ton regard. *J'avance la main et j'enveloppe le dos froid de celle de Seoyeon. Elle laisse tomber la clé dans sa poche et pose sa paume sur la mienne.*"
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "Demain midi. Je laisserai le toit ouvert."
+        "text": "Demain midi, on se voit tous les deux. Je laisserai la porte du toit ouverte d'avance, pour que tu entres seul."
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se dirige vers l'escalier.*"
+        "text": "*En laissant encore la chaleur au bout des doigts qu'on tenait, Seoyeon marche lentement vers la porte de l'escalier.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "...J'aurais peut-être dû le dire la première. Ça fait tellement plaisir de l'entendre. *Ses pas s'arrêtent deux marches plus bas. Elle ne se retourne pas.*"
+        "text": "Ce que tu m'as dit tout à l'heure, j'aurais dû le dire la première, sans faire ma fière. L'entendre de ta bouche, ça me coupe le souffle. *Deux marches plus bas, les pas de Seoyeon s'arrêtent. Elle ne se retourne pas, mais le bord de son oreille, tout rouge, reste net dans le crépuscule.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
-        "text": "On reste encore un peu avant de partir ?"
+        "text": "Le vent est agréable. On reste ici encore un peu ensemble, puis on descend ?"
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*Seoyeon se décale d'un demi-pas vers la rambarde pour me faire une place.*"
+        "text": "*Seoyeon regarde un instant mes lèvres, puis se décale en silence d'un demi-pas le long de la rambarde et me laisse une place.*"
     },
     "confess_seo_no_3": {
         "name": "Seoyeon",
-        "text": "*Nous regardons tous les deux le terrain. Un projecteur de plus s'allume.*"
+        "text": "*Côte à côte, si près que nos épaules pourraient se toucher, on regarde en bas le terrain assombri. Dans le silence, une lampe du terrain s'allume encore.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
-        "text": "Si tu as le temps, viens demain midi."
+        "text": "Demain midi, si tu as un moment de libre, monte sur le toit."
     },
     "confess_seo_no_4_b": {
         "name": "{name}",
-        "text": "*Le mot reste dans ma poche pendant toute la descente.*"
+        "text": "*Tout le long de la descente, derrière Seoyeon, la note que je n'ai pas réussi à donner reste dans ma poche, mouillée par la sueur de ma main.*"
     },
     "confess_yuna_1": {
         "name": "{name}",
-        "text": "*Au moment où l'enseigne du café s'allume, Yuna tourne le menton vers l'annexe.*"
+        "text": "*Au moment où les enseignes des cafés, dans la rue, s'allument une à une en orange, Yuna s'arrête et lève un peu le menton vers l'annexe du lycée.*"
     },
     "confess_yuna_2": {
         "name": "Yuna",
-        "text": "...Il reste un dernier endroit où je veux aller."
+        "text": "Avant qu'on se quitte, il y a un dernier endroit où je veux absolument aller avec toi."
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*Le coin lecture secret de l’annexe. Le couchant atteint l’accoudoir du vieux canapé ; le marque-page de Yuna repose sur la place du canapé juste à côté.*"
+        "text": "*Le coin lecture secret, au fond de l'annexe, où j'entre en suivant Yuna. Le couchant rouge qui passe par la vitre s'enfonce jusqu'à l'accoudoir du vieux canapé en tissu, et juste à côté, le marque-page de Yuna est posé en silence.*"
     },
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Assieds-toi un peu. Aujourd'hui, pas besoin d'ouvrir un livre. Tu es venu jusqu'ici. *Elle s'assied sur le canapé et regarde {name}, un marque-page entre les doigts.*"
+        "text": "Viens t'asseoir à côté de moi. Aujourd'hui, pas besoin d'ouvrir un livre. Tu m'as tenu la main et tu m'as suivie jusqu'ici. *Yuna s'enfonce dans le canapé et lève les yeux vers {name}. Entre ses doigts fins, un marque-page argenté.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*Le bout du marque-page est plié.*"
+        "text": "*Je m'assois juste à côté de Yuna. Le coussin du vieux canapé s'enfonce, et nos cuisses et nos épaules se touchent sans le moindre écart. Le bout du marque-page en papier dans sa main est à peine plié.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*Du pouce, Yuna redresse le bout plié du marque-page et laisse libre la place d'en face.*",
+        "text": "*Du pouce, Yuna déplie lentement le coin replié du marque-page, et elle soutient mon regard, assez près pour que mon souffle l'atteigne.*",
         "choices": [
             "Lui dire qu’elle me plaît.",
             "...Cet endroit est vraiment bien.",
@@ -151,101 +151,101 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": "*Ma voix baisse.*"
+        "text": "*Pour ne pas rompre le calme de la salle de lecture, ma voix descend toute seule, basse et grave.*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": "*Le pouce de Yuna quitte le coin du marque-page.*"
+        "text": "*À l'instant où j'ouvre la bouche, le pouce de Yuna, qui lissait le coin du marque-page, s'arrête net.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna, tu me plais. Avec toi, je n’ai pas besoin de retenir ce que j’ai envie de dire."
+        "text": "Yuna, tu me plais. Quand on est seuls tous les deux, je n'ai pas à me forcer, ni à ravaler ce que j'ai envie de dire."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
-        "text": "Je me sentais bien comme ça."
+        "text": "Le temps passé à respirer à côté de toi a été le plus calme, et le plus précieux, pour moi."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*Yuna pose le marque-page.*"
+        "text": "*Yuna pose sans un bruit, sur le siège du canapé, le marque-page qu'elle tenait.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "J'ai envie de continuer à te voir après aujourd'hui."
+        "text": "Même une fois le rendez-vous d'aujourd'hui fini, demain, et le jour d'après, je veux rester à tes côtés."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
-        "text": "Tu n'as pas besoin de répondre maintenant."
+        "text": "Je ne cherche pas à te mettre la pression. Tu n'as pas besoin de répondre tout de suite."
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*Le tissu du canapé crisse doucement quand Yuna se redresse.*"
+        "text": "*Le tissu du canapé froisse un peu. Yuna redresse le buste et se penche vers moi, d'une largeur de main.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": "*Le marque-page reste posé sur le canapé.*"
+        "text": "*Sur le canapé où s'est posée la lumière du couchant, à la place du marque-page, les doigts de Yuna cherchent le bord de ma manche.*"
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
-        "text": "*Le regard tourné vers les rayonnages, elle serre fermement sa manche.*"
+        "text": "*Comme pour cacher son regard qui vacille, Yuna garde les yeux vers les rayonnages et serre fort, de deux doigts, le bout de la manche de ma chemise.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
-        "text": "*Le bout froissé de sa manche disparaît dans sa paume.*"
+        "text": "*Le bout froissé de ma manche s'enfonce dans la petite paume chaude de Yuna.*"
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
-        "text": "...Préviens-moi d'abord. Si tu comptes disparaître."
+        "text": "Promets-le-moi. Si jamais tu dois disparaître de devant mes yeux, tu me le diras d'abord."
     },
     "confess_yuna_yes_9": {
         "name": "Yuna",
-        "text": "Ne disparais pas sans rien dire."
+        "text": "Ne me laisse pas seule sans même un au revoir. Moi non plus, je ne veux pas te perdre."
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*Le bout de sa manche se froisse davantage dans sa paume.*"
+        "text": "*La main de Yuna se resserre encore sur ma manche, et de mon autre main j'enveloppe en silence le dos de cette main fine.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
-        "text": "...Cet endroit est vraiment bien."
+        "text": "La lumière du couchant est douce, et l'ambiance ici est vraiment bonne."
     },
     "confess_yuna_no_2": {
         "name": "Yuna",
-        "text": "*Elle glisse le marque-page entre les pages, l'enfonce profondément, puis rentre une fois le menton.*"
+        "text": "*Sans un mot, Yuna enfonce le marque-page au fond des pages fermées, puis rentre un peu le menton.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
-        "text": "Yuna, tu n'as pas encore fini ce livre ? ...Tu regardais seulement la couverture. *Sans l'ouvrir, elle suit du doigt le titre sur la couverture.*"
+        "text": "Yuna, ce livre sur tes genoux, tu ne l'as pas encore fini ? Depuis tout à l'heure, tu ne regardes que la couverture. *Yuna n'ouvre pas les pages. Du bout du doigt, elle suit lentement les seules lettres du titre, gravées sur la couverture reliée.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
-        "text": "...La fin n'est pas encore écrite."
+        "text": "Oui. La fin, la plus importante, je ne l'ai pas encore vue."
     },
     "confess_yuna_no_4_b": {
         "name": "{name}",
-        "text": "*Quand je suis à environ trois pas, les yeux rouges de Yuna me suivent par-dessus son livre.*"
+        "text": "*Je me lève et, à environ trois pas vers la porte, je me retourne. Par-dessus le livre, les yeux rouge sombre de Yuna restent longtemps accrochés à mon dos.*"
     },
     "confess_dain_1": {
         "name": "{name}",
-        "text": "*À la fin du rendez-vous, Dain prend les devants à grands pas vers l'école.*"
+        "text": "*Vers la fin du rendez-vous en ville, Dain, comme si elle avait décidé quelque chose, file devant à grandes enjambées vers le portail arrière du lycée.*"
     },
     "confess_dain_2": {
         "name": "Dain",
-        "text": "Encore un endroit. Le dernier."
+        "text": "Avant de rentrer, on s'arrête encore à un seul endroit. Le dernier."
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*Je suis Dain dans le gymnase vide. Seules les lumières au bord du terrain sont allumées.*"
+        "text": "*Je suis Dain dans le gymnase vide, un soir de week-end. Sous le haut plafond, seuls les éclairages d'appoint au bord du court brillent, doux.*"
     },
     "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
-        "text": "On est pas venus s'entraîner. Je peux garder le ballon, hein ? Avec les mains vides, c'est encore plus bizarre. *Elle le serre à deux mains, les jointures blanches contre sa surface.*"
+        "text": "T'inquiète, on n'est pas là pour s'entraîner, à cette heure. Par contre, je peux en garder un dans les bras, le ballon ? Devant toi, les mains vides, le bout de mes doigts n'arrête pas de trembler. *Dain serre à deux mains le ballon de volley en cuir contre sa poitrine. Les jointures qui appuient dessus blanchissent.*"
     },
     "confess_dain_5": {},
     "confess_dain_choice": {
         "name": "Dain",
-        "text": "*Le ballon rebondit une fois. La main qui l'aurait normalement rattrapé s'arrête en l'air un temps trop tard.*",
+        "text": "*Le ballon de volley glisse de sa main, cogne le parquet et rebondit. Un temps trop tard, les doigts de Dain frôlent le flanc du ballon, dans le vide.*",
         "choices": [
             "Lui dire qu’elle me plaît.",
             "On reste encore un peu sur le banc ?",
@@ -255,114 +255,114 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": "*La première syllabe me revient faiblement depuis les murs du gymnase vide.*"
+        "text": "*J'appelle le nom de Dain. La première syllabe revient le long des murs du gymnase vide, basse et nette.*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
-        "text": "*Je reprends un court souffle et j'ouvre de nouveau la bouche.*"
+        "text": "*Je fais un pas, jusqu'à être juste devant Dain, je calme mon souffle chaud, et je rouvre la bouche.*"
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "Dain, j'ai... quelque chose à te dire."
+        "text": "Dain. Avant qu'on se quitte aujourd'hui, il y a quelque chose que je dois absolument te dire."
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "Tu me plais. J’ai envie de continuer à te voir, pas seulement aujourd’hui."
+        "text": "Tu me plais. Pas seulement un rendez-vous du week-end comme aujourd'hui. Après aussi, je veux continuer à marcher à tes côtés."
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*Dain pose le ballon.*"
+        "text": "*Dain pose lentement sur le parquet le ballon de volley qu'elle serrait contre sa poitrine.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
-        "text": "Tu n'as pas besoin de répondre maintenant."
+        "text": "Si c'est trop mêlé pour toi, tu n'as pas besoin de répondre tout de suite."
     },
     "confess_dain_yes_6": {
         "name": "{name}",
-        "text": "Je voulais juste te le dire."
+        "text": "Je voulais juste te faire passer, d'abord, à quel point c'est sincère."
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": "*Les néons du gymnase bourdonnent doucement.*"
+        "text": "*Sous les lampes orange du gymnase silencieux, le souffle court de Dain et la chaleur de son corps arrivent jusqu'à mon menton.*"
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "Moi aussi, je veux dire quelque chose... Me regarde pas. Enfin, je te demande pas de détourner complètement le regard. *Elle joint les pieds sur la ligne du terrain et cache son visage dans ses mains.*"
+        "text": "Ah, qu'est-ce que je fais. Moi aussi je voudrais répondre bien, mais là, regarde pas mon visage. Non, ça veut surtout pas dire de te retourner ! *Dain se tient pieds joints sur la ligne blanche du court et couvre de ses deux paumes son visage tout rouge.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
-        "text": "*Le ballon heurte doucement ses orteils et roule sur le côté, mais Dain ne le poursuit pas.*"
+        "text": "*Le ballon posé par terre tape le bout de ma basket et roule sur le côté, mais Dain ne pense même pas à le poursuivre.*"
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "...Attends. Je n'arrive pas à mettre mes idées en ordre."
+        "text": "Attends un peu. J'ai le souffle remonté jusqu'ici, et dans ma tête, les mots ne se rangent pas."
     },
     "confess_dain_yes_9_b": {
         "name": "Dain",
-        "text": "...Attends. J'arrive pas à parler. *Elle sourit et se frotte les yeux.*"
+        "text": "Non mais c'est pas vrai. J'ai envie de rire parce que ça me fait plaisir, alors pourquoi mes yeux chauffent. *Entre ses doigts, Dain lève les yeux vers moi, sourit clair, puis frotte du dos de la main le coin humide de ses yeux.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "Reviens demain."
+        "text": "Demain aussi, viens me voir. Sans faute. Cette fois, je ne me déroberai pas, et tu auras ma vraie réponse."
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*Elle serre de nouveau le ballon contre elle. Les muscles se tendent sur le dos de ses mains.*"
+        "text": "*À la place du ballon qui a roulé, Dain attrape une fois le devant de ma chemise, fort, le lâche, et me sourit, éclatante.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
-        "text": "…On reste encore un peu sur le banc ?"
+        "text": "On a beaucoup marché. On s'assoit encore un peu sur ce banc, là-bas, avant de partir ?"
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*Je m’assieds près de Dain. Les mots que je voulais dire ne viennent pas.*"
+        "text": "*Je m'assois à côté de Dain, sur le banc au coin du court. La confession remontée jusqu'à ma gorge ne sort pas de mes lèvres.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",
-        "text": "*Dain fait rebondir le ballon deux fois. Au troisième rebond, il franchit la ligne du terrain et roule plus loin.*"
+        "text": "*Assise, Dain fait rebondir deux fois le ballon sur le sol. Au troisième, il échappe à sa main et roule dans le noir, hors du court.*"
     },
     "confess_dain_no_4": {
         "name": "Dain",
-        "text": "...La prochaine fois, dis-le-moi."
+        "text": "La prochaine fois qu'on viendra seuls tous les deux, dis-moi forcément les mots que tu viens d'avaler."
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*Elle ouvre lentement le velcro de son protège-poignet.*"
+        "text": "*La tête baissée, Dain arrache d'un long crissement le velcro de son protège-poignet.*"
     },
     "confess_seo_yes_mid_1": {
         "name": "Seoyeon",
-        "text": "Je ne peux pas répondre tout de suite. Demain j'ouvrirai le toit."
+        "text": "Désolée, mais ici, tout de suite, je ne peux pas te donner une réponse ferme. En échange, demain midi, je laisserai la porte du toit ouverte."
     },
     "confess_seo_yes_low_1": {
         "name": "Seoyeon",
-        "text": "*Elle met la clé en poche.* C'est tout pour aujourd'hui. Je ne peux pas encore prendre ça."
+        "text": "*En silence, Seoyeon glisse la clé du toit au fond de sa poche.* On s'arrête là pour aujourd'hui. Ce que tu viens de dire, je ne suis pas encore prête à le recevoir."
     },
     "confess_yuna_yes_mid_1": {
         "name": "Yuna",
-        "text": "...Je peux pas le dire tout de suite. Mais ne disparais pas."
+        "text": "Sortir ma réponse en mots, tout de suite, c'est difficile. Quand même, ne disparais pas d'à côté de moi."
     },
     "confess_yuna_yes_low_1": {
         "name": "Yuna",
-        "text": "*Elle enfonce le marque-page entre les pages.* Aujourd'hui je ne prends pas ça."
+        "text": "*Yuna enfonce le marque-page entre les pages et referme le livre.* Désolée. Aujourd'hui, ce que tu m'as donné, je ne le prends pas."
     },
     "confess_dain_yes_mid_1": {
         "name": "Dain",
-        "text": "Je ne peux pas répondre tout de suite. Mais ne fuis pas."
+        "text": "Désolée, pour répondre tout de suite, c'est pas encore clair dans ma tête. Quand même, ne t'enfuis pas devant moi."
     },
     "confess_dain_yes_low_1": {
         "name": "Dain",
-        "text": "*Elle ajuste la sangle du sac.* Pas ça, pas encore. File aujourd'hui."
+        "text": "*Le visage fermé, Dain rajuste la sangle de son sac à ballons.* Ces mots-là, je peux pas encore les prendre. Pour aujourd'hui, rentre."
     },
     "confess_seo_yes_neg": {
         "name": "Seoyeon",
-        "text": "*Elle met la clé dans sa poche.* On n'est pas au point où j'écoute ça."
+        "text": "*D'un regard froid, Seoyeon range la clé dans sa poche.* On n'en est pas là, toi et moi, pour s'échanger une confession comme ça."
     },
     "confess_yuna_yes_neg": {
         "name": "Yuna",
-        "text": "*Elle glisse le signet dans le livre.* Je prends pas ça."
+        "text": "*Froide, Yuna glisse le marque-page entre les pages.* Ce que tu viens de dire, je fais comme si je ne l'avais pas entendu. Je ne le prends pas."
     },
     "confess_dain_yes_neg": {
         "name": "Dain",
-        "text": "*Elle rattrape la sangle du sac à ballons.* J'écoute pas ça maintenant."
+        "text": "*Le visage devenu froid, Dain rajuste la sangle de son sac à ballons.* Désolée, mais ces mots-là, j'ai aucune envie de les entendre de toi, maintenant."
     }
 }

@@ -1,15 +1,15 @@
 {
     "after5_farewell_seo_low": {
         "name": "Seoyeon",
-        "text": "*You run into Seoyeon in the hallway. She pauses, then gives you a single nod.* I know what you decided. I have nothing else to say."
+        "text": "*In the hallway, where the afternoon shadows have grown long, I run into Seoyeon. She pauses, then gives a short nod without meeting my eyes.* I know which way your heart went. ...There's nothing else I'd say to hold you here."
     },
     "after5_farewell_yuna_low": {
         "name": "Yuna",
-        "text": "*Your eyes meet outside the library. Yuna holds her book close and gives you a small nod.* Bye."
+        "text": "*In the hall in front of the library, my eyes meet Yuna's. She holds the book she was reading tight against her chest and gives a quiet nod.* ...Bye."
     },
     "after5_farewell_dain_low": {
         "name": "Dain",
-        "text": "*Dain walks up outside the gym and stops two paces away.* I know what you decided. I'll head inside."
+        "text": "*Dain, walking up the path in front of the gym, stops dead two steps away.* I know who you picked. I'll go in first and finish practice."
     },
     "after5_start": {},
     "after5_waited_start_branch": {
@@ -18,15 +18,15 @@
     },
     "after5_farewell_seo_1": {
         "name": "{name}",
-        "text": "*I run into Seoyeon in the hallway.*"
+        "text": "*By the hallway windows, as the festival's last event winds down, I run into Seoyeon, coming out alone after sorting papers.*"
     },
     "after5_farewell_seo_2": {
         "name": "Seoyeon",
-        "text": "What do you want me to say? ...Forget it. That's not for you to answer. *She lets out a long breath.*"
+        "text": "At a moment like this, what face do you want from me, and what am I supposed to say? ...No. Forget it. This isn't yours to answer. *Seoyeon looks out the window and lets out a long breath.*"
     },
     "after5_farewell_seo_3": {
         "name": "Seoyeon",
-        "text": "I thought about walking past without a word, but I'd hate that more. I've heard your choice. *She tucks her hair behind her ear and adjusts her grip on the bag strap.*"
+        "text": "I thought about pretending I didn't see you and just walking past. Running away like that sits even worse with me. I already know the choice you made. *She neatly tucks the hair that slipped down behind her ear and adjusts her grip on the bag strap.*"
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
@@ -34,7 +34,7 @@
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
-        "text": "Seoyeon—"
+        "text": "Seoyeon..."
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
@@ -42,20 +42,20 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon waves without looking back. Her wrist ribbon recedes.*"
+        "text": "*Seoyeon never looks back. She only lifts a hand to shoulder height and waves once. The wrist ribbon that caught the evening light slowly recedes down the hall.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*Alone in the hall, I hear the rooftop door lock upstairs.*"
+        "text": "*Left alone in the empty hallway, I can't take a step. From the top of the stairs overhead, the distant clack of the rooftop door locking drifts down.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna approaches in front of the library. Without a word, she hands me a book.*"
+        "text": "*As I pass the library, Yuna, waiting by the door, comes up without a sound and places a thin book in my hand.*"
     },
     "after5_farewell_yuna_2": {
         "name": "{name}",
-        "text": "*A bookmark is tucked inside. A single line on the bookmark.*"
+        "text": "*When I open the cover, a familiar pale lavender bookmark is tucked in neatly. A short line pressed in with a fountain pen catches my eye.*"
     },
     "after5_farewell_yuna_3": {
         "name": "Yuna",
@@ -63,20 +63,20 @@
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
-        "text": "*She turns down the hall toward the library. The sound of her shoes disappears around the corner.*"
+        "text": "*Without waiting for my answer, Yuna quietly turns toward the hall inside the library. The steady sound of her shoes fades past the corner.*"
     },
     "after5_farewell_yuna_5": {
         "name": "Yuna",
-        "text": "*I reread the bookmark's line, ink smeared beneath its last character.* It was fun."
+        "text": "*Where Yuna's presence has gone, I look down again at the line on the bookmark in my hand. Under the last character, the pale lavender ink has spread in a soft round blot, as if it soaked up moisture.* ...It was really fun, you reading my story."
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
-        "text": "*I walk back to the hall.*"
+        "text": "*I walked quietly out into the hall, the book held to my chest.*"
     },
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*Dain walks over from the gym. Her steps are shorter than usual.*"
+        "text": "*Dain comes out from the gym entrance. Her stride is unusually short and slow, nothing like the way she always used to stride on ahead.*"
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
@@ -84,7 +84,7 @@
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
-        "text": "Dain—"
+        "text": "Dain..."
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
@@ -92,7 +92,7 @@
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
-        "text": "*Dain gives my shoulder a light punch.*"
+        "text": "*Dain taps my shoulder with a loosely closed fist. There's less strength in it than usual.*"
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
@@ -100,40 +100,40 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "Go now. That's as far as I'll go with sending you off smiling. ...I don't have to keep holding it in around you. *She pushes the ball into the locker and readjusts her knee-brace strap.*"
+        "text": "...Okay, go. I'll only send you off smiling up to here. I don't have to act tough and hold in tears in front of you, too. *Dain turns, shoves the volleyball into the storage bin with a thud, and reties the strap of her knee brace hard.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Dain tightens the strap of her knee brace once more and goes into the gym.*"
+        "text": "*With trembling fingertips, Dain presses the Velcro on her knee brace down once more, then walks into the gym without looking back.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
-        "text": "*I leave the gym and head toward the back of the school.*"
+        "text": "*I rubbed at the weight in my chest, left the front of the gym, and headed for the back of the school.*"
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*At the school gate, Seoyeon checks the event roster with Haeun, Dain shortens her stride with a volleyball under one arm, and Yuna lowers her eyes to an open book. Each heads for a different exit.*"
+        "text": "*In front of the school gate, as the afternoon sun slants lower. Seoyeon is checking the last event roster with Haeun, Dain has slowed her stride with a volleyball tucked under one arm, and Yuna has stopped, eyes lowered to an open page. Soon the three quietly scatter down different paths.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*At the gate, I raise one hand in farewell.*"
+        "text": "*At the gate, I raised a hand once, without a sound, toward the three backs moving away.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
-        "text": "*I walk toward the back of the school.*"
+        "text": "*I turned and walked toward the back of the school, where a promise was waiting.*"
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*The closing announcement sounds across the sunset-lit school.*"
+        "text": "*Over the school grounds, where a red sunset has settled long and low, the last announcement marking the end of the festival drifts out, faint.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*The path to meet my friends and the path back to help finish cleaning up after the event split here.*"
+        "text": "*In front of the sunset-stained gate, the path to the park where I promised to meet my friends and the path of staying at school to help finish the cleanup split right in front of me.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*The road to the park and the road back to help finish the event split here. I have to decide who gets my answer today.*",
+        "text": "*The tree-lined path toward the park and the hall back to the classroom building split. Before the sun is fully down, I have to decide who my heart answers today.*",
         "choices": [
             "Go to the park and finish what we started",
             "Return to the homeroom teacher and organize the literature-club manuscript",
@@ -142,49 +142,49 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*The speakers go off. I stop at the fork.*"
+        "text": "*With a crackling final tone, the speakers across the school grounds cut out completely. I stop in the middle of the fork, where the sunset light lies thick.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*I take the phone from my pocket. Only the event banner is reflected in its black screen.*"
+        "text": "*I fidget with the phone in my pocket, then take it out. Across the black screen, still dark, only the festival banner swaying in the evening wind wavers.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Without turning on the phone, I put it back in my pocket. I take two steps toward the other side of the fork and call her name.*"
+        "text": "*In the end I slide the phone deep back into my pocket without turning the screen on. So I won't lose the back about to walk away, I take two long steps to the far side of the fork and call out the name at the top of my voice.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
-        "text": "Seoyeon."
+        "text": "Seoyeon!"
     },
     "after5_last_chance_2_d": {
         "name": "Seoyeon",
-        "text": "*Seoyeon turns around. The event banner behind her folds once in the wind.*"
+        "text": "*Seoyeon stops and turns fully toward me. Behind her, the festival banner dyed red flaps once, hard, in the evening wind.*"
     },
     "after5_last_chance_2_e": {
         "name": "Seoyeon",
-        "text": "You're late."
+        "text": "...You took long enough to call."
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*Seoyeon winds the end of her student council ribbon around one finger, then lets it go.*"
+        "text": "*Seoyeon winds the end of the student council ribbon at her chest tight around one slender finger, then slowly lets it go.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "I'll talk. Just stay for a minute."
+        "text": "Hold still. I'll talk first this time, so just stay like that for a moment."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Seoyeon holds out her hand.*"
+        "text": "*Seoyeon takes one step closer and quietly holds out her right hand in the sunset light.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
-        "text": "Take it."
+        "text": "...Take it."
     },
     "after5_last_chance_2_j": {
         "name": "Seoyeon",
-        "text": "If you aren't going to take it, say so. Don't leave me waiting and hoping on my own again. *She waits with her palm still open.*"
+        "text": "If you're still not going to take it, say so here, straight. Don't leave me waiting again, hoping on my own like a fool. *Without pulling back her faintly trembling palm, Seoyeon looks straight up into my eyes.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -192,44 +192,44 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "Seoyeon",
-        "text": "*She looks back, one foot still half pointed toward the exit.* Why?"
+        "text": "*Seoyeon turns only her head, halfway, to look at me. The toe of her shoe still points toward the gate exit.* ...Why'd you call."
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
         "name": "{name}",
-        "text": "Dain."
+        "text": "Dain!"
     },
     "after5_last_chance_2_l": {
         "name": "Dain",
-        "text": "*She takes one step past me, then presses the volleyball to the floor and stops.*"
+        "text": "*Dain takes one more step on momentum, then pins the rolling volleyball under her sneaker and stops.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
-        "text": "Hey, you—"
+        "text": "...Hey. You, seriously."
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
-        "text": "{name}, wait. *She lowers the arm holding the ball and turns back toward me.*"
+        "text": "{name}, just stand there a second. *Dain lets the arm holding the ball drop, the strength gone from it, and slowly turns toward me.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "You came back?"
+        "text": "...You came back to me?"
     },
     "after5_last_chance_2_p": {
         "name": "{name}",
-        "text": "Yes. I couldn't just leave. I couldn't keep thinking alone about what I needed to tell you. *Dain bites her lip once and takes a short breath.*"
+        "text": "Yeah. If I let you go like this, I think I'd regret it my whole life. I couldn't keep the words I need to say in front of you locked in my head. *Dain bites her lower lip hard and draws in a short, shaking breath.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "I cannot smile right away. But I will hear what brought you this far."
+        "text": "I'll say this first. I can't smile wide for you right now, the way I usually do. ...But I'll hear, all the way through, whatever you ran here to say."
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
-        "text": "I thought it through before coming, but standing in front of you, I can't get it out. ...Give me a moment. *Dain rubs her eyes, leaving moisture on the back of her hand.*"
+        "text": "I went over it dozens of times on the way, but the second I see your eyes I'm out of breath and the words won't come. ...Just wait a little. *Dain wipes the reddened corner of her eye with the back of her hand, and a clear wetness spreads over her fair skin.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Say it. I'll listen to the end."
+        "text": "Say it. I'm not going anywhere. I'll hear all of it right here."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -237,32 +237,32 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "Dain",
-        "text": "*She comes back after taking one step too far. Holding the volleyball against her chest, she keeps her distance.* Why?"
+        "text": "*Dain, who had walked one step past, slowly turns back. She holds the volleyball to her chest like a shield and doesn't close the distance.* ...Why."
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
         "name": "{name}",
-        "text": "Yuna."
+        "text": "Yuna!"
     },
     "after5_last_chance_yuna_2": {
         "name": "Yuna",
-        "text": "*She stops. She hugs the book to her chest. It takes about two seconds for her to turn around.*"
+        "text": "*The steady sound of shoes moving away takes two more steps, then cuts off. Yuna pulls the book in her arms in closer, and after two long breaths she slowly turns her head.*"
     },
     "after5_last_chance_yuna_3": {
         "name": "Yuna",
-        "text": "You came back."
+        "text": "...You came back, after all."
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "I'll say it here. ...Just hear me out. *Yuna waits two steps away.*"
+        "text": "I won't put it off any longer. I'll say it right here. ...Just listen for a second. *Two steps off, where the sunset has settled, Yuna waits, looking at me without a word.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "I'll listen before I go. Even if I can't say it's okay."
+        "text": "I'll hear everything you have to say, then go. ...Even if I can't say I'm fine right now."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna holds my gaze. We're one step closer.*"
+        "text": "*Yuna meets my eyes without wavering. Before I noticed, the space between us has closed to little more than half a step.*"
     },
     "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
@@ -271,11 +271,11 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "Yuna",
-        "text": "*Yuna turns back, tightening her arms around her book.* What is it?"
+        "text": "*Yuna stops and looks back. Strength goes into the slender arms wrapped around her book, on guard.* ...Why."
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*I look at her, choosing my words.*",
+        "text": "*Looking straight into eyes where the sunset has settled deep, I choose the last words that have risen all the way to my throat.*",
         "choices": [
             "Tell her I like her",
             "Don't say it yet",
@@ -284,34 +284,34 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*I take a breath and say her name.*"
+        "text": "*I pull a deep breath in over the short ones and call the name in the clearest voice in the world.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "I like you. As more than a friend. I know I am late, but I wanted to tell you myself."
+        "text": "I like you. Enough that I don't want us to stay just close friends. I'm way too late, but this, at least, I wanted to say myself."
     },
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*We start walking toward the park.* You took your time. But… now I know how you feel."
+        "text": "*Seoyeon's long lashes tremble. Then, cheeks flushed, she steps up beside me and starts toward the park.* ...That was really mean, saying it this late. Still... now I finally know how you really feel."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
-        "text": "*She says nothing until the crosswalk signal changes once.* I heard you. That's enough for now."
+        "text": "*Seoyeon says nothing until the crosswalk light in front of the school changes from green to red.* ...I heard what you just said. But today, leave it there."
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*She looks down at her shoelaces as we leave.* Hey. I was waiting to hear that. No pretending you never said it, okay?"
+        "text": "*Stepping out the school gate, Dain stares down at her shoelaces, as if they could hide her flushed face.* ...Hey, you idiot. I waited all four days for that to come out of your mouth. No take-backs now!"
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
-        "text": "*Her thumb traces a groove in the volleyball.* I heard you. But I can't smile right away yet."
+        "text": "*Dain slowly traces a black groove in the volleyball's leather with her thumb.* ...I heard the confession. Sorry, though. I don't think I can smile and answer you right now."
     },
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*We walk side by side.* Yes. I heard what you said."
+        "text": "*Yuna quietly starts walking, matching her steps beside my shadow.* ...Yeah. I heard every word you just said. Didn't miss one."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -319,75 +319,75 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "Yuna",
-        "text": "Hearing you say it... means I don't have to wonder if I read you wrong. *She starts to put down the book, then grips its corner again.*"
+        "text": "Hearing you say it out loud like this... I don't have to be scared anymore that I misread how you feel, all on my own. *Yuna starts to loosen her hold on the book, then takes the corner again, careful with it.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
-        "text": "I still wanted to hear you say it."
+        "text": "I wanted to hear it in your voice. Not as words on paper."
     },
     "after5_confess_react_yuna_d": {
         "name": "Yuna",
-        "text": "*She hands me a folded note. When I unfold it, there is a single line.*"
+        "text": "*Yuna takes a small folded note from deep in her uniform pocket and sets it on my palm. When I open it carefully, a single line in pale lavender fountain pen appears.*"
     },
     "after5_confess_react_yuna_e": {
         "name": "Yuna",
-        "text": "I've waited a long time."
+        "text": "...I've waited a long time."
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*One letter is pressed hard into the page. The paper bears the creases of being folded and unfolded over and over.*"
+        "text": "*The last character is pressed deep, as if the fountain pen tip stayed there a long time. The square of paper still holds the soft creases of being folded and unfolded over and over in a pocket.*"
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",
-        "text": "If you read it, that's enough."
+        "text": "*She hides a reddened earlobe behind her hair and whispers.* ...If you read it all the way through, that's enough."
     },
     "after5_confess_react_yuna_h": {
         "name": "{name}",
-        "text": "*We walked side by side. In silence.*"
+        "text": "*We walked side by side, close enough that the backs of our hands almost brushed. Even without adding any words, the evening air went warm and sweet.*"
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*We step out through the school gate.*"
+        "text": "*We walked out through the school gate, dragging our long shadows side by side.*"
     },
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
-        "text": "*Yuna holds her book tightly.* I heard you. But I can’t give you an answer yet."
+        "text": "*Yuna clutches the book in her arms until her hands go white.* ...I heard how you feel. But I can't give you my answer right now."
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
-        "text": "*The sun sinks lower. We just keep walking the same way.*"
+        "text": "*The red sun sinks heavier below the horizon. We keep walking the same way, an awkward gap between us.*"
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Without reaching an answer, we walk toward the park.*"
+        "text": "*In the end, without an answer that fit, we walked toward the park under the evening dusk.*"
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*I turn off the phone screen and press my lips together.*"
+        "text": "*I can't bring myself to part my lips. I only turn off the phone screen and keep my mouth shut.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*The evening breeze rolls an event flyer to my feet. I pick it up and tuck it beneath the bulletin board.*"
+        "text": "*In the cooler evening wind, a festival flyer someone dropped rolls, crumpled, to my feet. I bend, pick the paper up, and quietly tuck it under the empty bulletin board.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",
-        "text": "*In the end, I turn around and head home.*"
+        "text": "*I buried the name I never managed to call, turned around alone, and headed home.*"
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*I look at the three names in my chat list and message each of them, asking to meet briefly behind the school.*"
+        "text": "*I look for a long time at the three names pinned side by side at the top of the messenger. After hesitating, I message all three, asking to meet briefly behind the school.*"
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "I couldn't choose one person. *The three arrive one by one. I pocket my phone and face them. No one answers right away.*"
+        "text": "I'm sorry... In the end I couldn't choose only one of you. *In front of the three, who walked up one by one and stopped, I put my phone in my pocket. In the air gone cold, no one is quick to speak.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*We walk toward the park together. For a while, no one speaks.*"
+        "text": "*We leave that spot and walk together toward the park. While the streetlights come on one by one, no one breaks the silence first.*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Unanswered messages remain on my lock screen. My feet turn toward the park.*"
+        "text": "*The old messages I never answered in time sit frozen on the lock screen. My heavy steps turned toward the entrance of the evening park.*"
     },
     "after5_defer_route_check": {},
     "after5_defer_seo": {
@@ -406,219 +406,219 @@
     "after5_co_tempter_branch": {},
     "after5_co_start": {
         "name": "{name}",
-        "text": "*The event winds down. The faces left in the hallway are the same ones from this morning.*"
+        "text": "*In the after-school hall, the festival crowd gone, the people from this morning's suffocating face-to-face are gathered again.*"
     },
     "after5_co_seo_1": {
         "name": "Seoyeon",
-        "text": "*She starts to adjust her glasses, then lowers her hand.* I already handed out the schedule."
+        "text": "*Seoyeon starts to adjust her glasses, then quietly lowers her hand.* I already sent the student council closing schedule around to the members."
     },
     "after5_co_seo_2": {
         "name": "Seoyeon",
-        "text": "I have nothing more to say today. Go."
+        "text": "I have nothing more to say to you today. Just go."
     },
     "after5_co_yuna_1": {
         "name": "Yuna",
-        "text": "*She puts the bookmark in her bag.* I left the board empty."
+        "text": "*Yuna pulls the bookmark from her notebook and puts it deep in her bag.* I left every spot on the literature club board empty."
     },
     "after5_co_yuna_2": {
         "name": "Yuna",
-        "text": "Do not follow me. Not today."
+        "text": "...Don't follow behind me today."
     },
     "after5_co_dain_1": {
         "name": "Dain",
-        "text": "*She shoves the ball into the bin.* I took your name off the partner list."
+        "text": "*Dain shoves the volleyball into the deepest corner of the storage bin.* I took your name off the afternoon event partner list."
     },
     "after5_co_dain_2": {
         "name": "Dain",
-        "text": "Take care. I don't feel like smiling right now."
+        "text": "Take care. Smiling at your face right now feels a little off."
     },
     "after5_co_teacher_1": {
         "name": "Homeroom Teacher",
-        "text": "*She closes the attendance book.* Another teacher is handling today's event."
+        "text": "*The homeroom teacher closes the attendance book without a sound.* I already handed the afternoon event wrap-up to a teacher from another class."
     },
     "after5_co_teacher_2": {
         "name": "Homeroom Teacher",
-        "text": "Let’s arrange another time to talk. I need to finish clearing up after the event today."
+        "text": "Let's set a proper time again next week for the personal talk. Today I'll finish clearing up the class event first."
     },
     "after5_co_nurse_1": {
         "name": "School Nurse",
-        "text": "*She puts the chart in a drawer.* This is where our counseling ends."
+        "text": "*The school nurse puts the medical chart in a drawer and closes it.* We'll stop today's counseling here."
     },
     "after5_co_nurse_2": {
         "name": "School Nurse",
-        "text": "Come to the infirmary if you’re unwell. We’ll finish this conversation at your next appointment."
+        "text": "If you feel unwell, come to the nurse's office anytime, and let's finish the rest at your next proper appointment."
     },
     "after5_co_tempter_seo_1": {
         "name": "Seoyeon",
-        "text": "*She pockets the rooftop keychain.* I was the one who approached you first yesterday."
+        "text": "*Seoyeon puts the rooftop keychain she'd been fidgeting with into her pocket.* Last night, the one who reached out to you first was me. That's clear."
     },
     "after5_co_tempter_seo_2": {
         "name": "Seoyeon",
-        "text": "Even so, I won't ask you to stay today."
+        "text": "Even so, I won't be the one to hold onto you first. Not here, today."
     },
     "after5_co_tempter_yuna_1": {
         "name": "Yuna",
-        "text": "*The annex photo is still on her lock screen.* I called you."
+        "text": "*Yuna's lock screen still shows last night's photo by the annex window.* I was the one who called you to the annex yesterday."
     },
     "after5_co_tempter_yuna_2": {
         "name": "Yuna",
-        "text": "Don't go after them now. That's all I need."
+        "text": "Don't force yourself to follow anyone right now. That's enough."
     },
     "after5_co_tempter_dain_1": {
         "name": "Dain",
-        "text": "*She presses the tape on her knee.* I was the one who told you to stay yesterday."
+        "text": "*Dain presses the loose end of her knee tape flat with her palm.* I'm the one who stopped you last night and asked you to stay at the gym."
     },
     "after5_co_tempter_dain_2": {
         "name": "Dain",
-        "text": "I won't be the one to call you over first today."
+        "text": "...So today I won't be the one to call your name first."
     },
     "after5_normal_start": {
         "name": "{name}",
-        "text": "*The event is winding down. In the hall, I run into the two people I didn't choose.*"
+        "text": "*As the noisy festival draws to a close, in the hallway where the sunset seeps in, I meet the two people I didn't choose in the end, one after the other.*"
     },
     "after5_farewell_seo_affinity_check": {},
     "after5_farewell_seo_high_1": {},
     "after5_farewell_seo_high_2": {
         "name": "Seoyeon",
-        "text": "I know who you chose. But I will not pretend the time I liked you never happened."
+        "text": "*Seoyeon's eyes catch the red sunset and glow, quiet.* I know who you chose. Still, I won't erase the past four days I liked you, as if they never happened."
     },
     "after5_farewell_yuna_affinity_check": {},
     "after5_farewell_yuna_high_1": {
         "name": "Yuna",
-        "text": "*Yuna writes today’s date on the back of a bookmark and hands it to me.* You read it through the last page."
+        "text": "*Yuna writes today's date small on the back of a pale-purple bookmark and presses it into my hand.* Through the last page of this notebook... I still want you to read it."
     },
     "after5_farewell_yuna_high_2": {
         "name": "Yuna",
-        "text": "Do not be late for the person you chose. I am not erasing the lines where I liked you, either."
+        "text": "Don't be late going to the person you've set your heart on. ...Still, I'm leaving the sentences I wrote while I liked you. I won't erase them."
     },
     "after5_farewell_dain_affinity_check": {},
     "after5_farewell_dain_high_1": {
         "name": "Dain",
-        "text": "*Dain bounces the volleyball once, catches it, and sets it outside the court line.* I know who you chose."
+        "text": "*Dain bounces the volleyball in her hand once on the floor, catches it, and sets it down outside the white court line without lingering.* I know the choice you made. All of it."
     },
     "after5_farewell_dain_high_2": {
         "name": "Dain",
-        "text": "But I will not act like liking you never happened. Treat her well. Or I really will get mad."
+        "text": "Still, I'm not pretending the rush I felt liking you never happened! Go and actually treat them well. If you don't, I really will get mad."
     },
     "after5_hidden_teacher_affinity_check": {},
     "after5_hidden_teacher_high": {
         "name": "Homeroom Teacher",
-        "text": "*She checks the blank comment box in critique copy 04, then closes the envelope.* Tell me on Monday where you stopped. Do not pick only the nice parts."
+        "text": "*The teacher glances over the blank comment box on the back page of critique copy 04, then closes the brown envelope.* On Monday I'll hear which sentence your breath caught on. Don't write down only the pretty words."
     },
     "after5_hidden_teacher_mid": {
         "name": "Homeroom Teacher",
-        "text": "*She checks the number on critique copy 04.* Mark only how far you read. We will review the rest with the literature club."
+        "text": "*She checks the number on the envelope of critique copy 04 by sight.* Mark honestly only as far as you actually read yourself. We'll look at the rest together during literature club."
     },
     "after5_hidden_teacher_low": {
         "name": "Homeroom Teacher",
-        "text": "*She puts the manuscript envelope into the file.* You will receive the critique during the scheduled club time. Finish the event first today."
+        "text": "*She tucks the manuscript envelope deep inside the file.* I'll collect the critique comments all at once at literature club, at the scheduled time. Today, let's finish the class event cleanup first."
     },
     "after5_hidden_nurse_affinity_check": {},
     "after5_hidden_nurse_high": {
         "name": "School Nurse",
-        "text": "*She places the counseling confirmation and first-aid card side by side.* Next time it gets heavy, do not endure it alone. Contact people in the order you decided."
+        "text": "*On the desk, she lines up the form that closes out counseling and the first-aid card in its clear case.* From now on, when a day feels too heavy, don't groan and bear it alone. Reach out first, in the order you decided today."
     },
     "after5_hidden_nurse_mid": {
         "name": "School Nurse",
-        "text": "*She points to the counseling QR code on the back of the first-aid card.* Book here if you need it. You do not need to invent a reason."
+        "text": "*She quietly rests a finger on the counseling QR code printed on the back of the first-aid card.* If you need to, book here anytime. You don't have to invent some big excuse about being sick."
     },
     "after5_hidden_nurse_low": {
         "name": "School Nurse",
-        "text": "*She files the counseling record and closes the appointment book.* Schedule the next session through the proper process. We are done recording today."
+        "text": "*She slides the counseling record into the cabinet file and closes the appointment sheet.* If you need another session, apply through the school's official process. I'll close this record here."
     },
     "after5_last_chance_seo_history_check": {},
     "after5_last_chance_seo_postponed": {
         "name": "Seoyeon",
-        "text": "Finish what you left on the rooftop yesterday."
+        "text": "*Across the sunset-lit fork, Seoyeon slows, then stops when she senses me coming, and murmurs.* What we couldn't finish on the rooftop last night... today, tell me all of it."
     },
     "after5_last_chance_seo_tentative": {
         "name": "Seoyeon",
-        "text": "We did not make another plan yesterday. Still, you came first today."
+        "text": "*Seoyeon, lingering across the fork, hears my footsteps and lets out a small breath.* Yesterday we couldn't even set our next time... and today you came to find me first."
     },
     "after5_last_chance_seo_distance": {
         "name": "Seoyeon",
-        "text": "Yesterday, we agreed to stop there. Tell me why you came today first."
+        "text": "*Seoyeon, walking toward the school gate, senses me and shortens her stride.* Yesterday we clearly said we'd stop here. ...First, I'll hear why you came looking for me again today."
     },
     "after5_last_chance_dain_history_check": {},
     "after5_last_chance_dain_postponed": {
         "name": "Dain",
-        "text": "Finish what you could not say yesterday. I want to hear it."
+        "text": "*Across the fork dyed by the sunset, Dain rolls a ball. She listens for my footsteps and speaks low.* What you couldn't finish telling me yesterday... today, don't leave any of it out."
     },
     "after5_last_chance_dain_tentative": {
         "name": "Dain",
-        "text": "We never made the next plan yesterday. You came first today."
+        "text": "*Dain, slowed across the fork, watches my shadow coming and mutters.* Yesterday we couldn't even set a next time, and today you came running first."
     },
     "after5_last_chance_dain_distance": {
         "name": "Dain",
-        "text": "We both stopped yesterday. I want to hear why you came back today."
+        "text": "*Dain, walking the path in front of the gym, slows when she senses me.* Yesterday we said we'd keep our distance. ...I want to hear why you came back today."
     },
     "after5_last_chance_yuna_history_check": {},
     "after5_last_chance_yuna_postponed": {
         "name": "Yuna",
-        "text": "We postponed the ending yesterday. I will hear your answer first today."
+        "text": "*Across the fork in the fading sunset, Yuna slows. She feels me coming up behind her and whispers low.* Yesterday we put off the ending of the last chapter. ...Today I'll hear what you have to say first."
     },
     "after5_last_chance_yuna_tentative": {
         "name": "Yuna",
-        "text": "I said I would contact you first. But you came today."
+        "text": "*Yuna stands across the fork, holding a book. She sees me coming and murmurs.* Yesterday I said I'd contact you first... and today you came first."
     },
     "after5_last_chance_yuna_distance": {
         "name": "Yuna",
-        "text": "Yesterday, we agreed to stop there. I will hear why you came today."
+        "text": "*Yuna, walking quietly, shortens her stride at my footsteps.* Yesterday we clearly said we'd stop here. ...I'll hear why you came to call my name again today."
     },
     "after5_hidden_return_to_park": {
         "name": "{name}",
-        "text": "*After cleanup, I head to the park. The festival flags are folded away.*"
+        "text": "*I finish the last of the cleanup on campus and head to the park outside school. The festival flags that hung along the streets are folded, still, in the sunset.*"
     },
     "after5_farewell_seo_skip": {},
     "after5_farewell_yuna_skip": {},
     "after5_farewell_dain_skip": {},
     "after5_farewell_seo_neg": {
         "name": "Seoyeon",
-        "text": "*She walks past without turning her head.*"
+        "text": "*Seoyeon brushes past me and doesn't even turn her head.*"
     },
     "after5_farewell_yuna_neg": {
         "name": "Yuna",
-        "text": "*She goes the other way down the hall with her book. No words.*"
+        "text": "*Yuna holds her book to her chest and walks off down the other end of the hall without a word.*"
     },
     "after5_farewell_dain_neg": {
         "name": "Dain",
-        "text": "*She fixes her bag and goes through the gym door. She doesn't look back.*"
+        "text": "*Dain hikes her sports bag up hard and goes into the gym without looking back.*"
     },
     "after5_hidden_teacher_neg": {
         "name": "Homeroom Teacher",
-        "text": "*She puts the manuscript envelope in the file and closes it.* Let's just finish the event today. Personal talk ends here."
+        "text": "*The teacher puts the manuscript envelope in the file and shuts the cover, firm.* Today we only finish the class event. Personal talk ends here."
     },
     "after5_hidden_nurse_neg": {
         "name": "School Nurse",
-        "text": "*She files the counseling form and closes the appointment sheet.* From now on, official channels only. That's it for today."
+        "text": "*The school nurse files the counseling record and closes the appointment sheet.* From now on, apply only through the official channel. That's all for today."
     },
     "after5_last_chance_seo_neg": {
         "name": "Seoyeon",
-        "text": "*She walks toward the exit first.* That's enough for today."
+        "text": "*Seoyeon doesn't stop. She walks out first toward the school gate.* ...Let's stop for today."
     },
     "after5_last_chance_dain_neg": {
         "name": "Dain",
-        "text": "*She passes with the ball bag on her shoulder.* Don't call me."
+        "text": "*Dain walks straight past me with the ball bag on her shoulder.* ...Don't call my name right now."
     },
     "after5_last_chance_yuna_neg": {
         "name": "Yuna",
-        "text": "*She goes the other way with her book.* I'm not listening today."
+        "text": "*Yuna, holding her book, turns onto the other path.* ...Sorry. I'm not listening to you today."
     },
     "after5_confess_react_seo_neg": {
         "name": "Seoyeon",
-        "text": "*She pockets the key.* We're not close enough for that."
+        "text": "*Seoyeon slips the key ring into her pocket, her eyes gone cold.* We're not close enough to be saying that to each other right now."
     },
     "after5_confess_react_dain_neg": {
         "name": "Dain",
-        "text": "*She picks up the ball and turns first.* I'm not hearing that now."
+        "text": "*Dain picks the ball up off the floor and turns her back first.* I don't intend to hear that from your mouth. Not now."
     },
     "after5_confess_react_yuna_neg": {
         "name": "Yuna",
-        "text": "*She only turns a page.* I'm not taking that."
+        "text": "*Yuna keeps her eyes down and only turns a page of the book in her hands.* ...I'm not taking what you just said."
     },
     "day5_haeun_route_choice": {
         "name": "Haeun",
-        "text": "If you choose me, things with that person can’t stay as they were. *Haeun folds the paper in her hands.* Please think once more before you answer.",
+        "text": "Senior, if you take my hand now, it'll be hard to stay as you were with the person you already had feelings for. *Haeun folds the schedule sheet in her hands and looks up at me, eyes unsteady.* Before you answer, please think just one more time about whether you'll regret it.",
         "choices": [
             "Spend this time with Haeun",
             "Go back to the person I already cared about"
@@ -626,11 +626,11 @@
     },
     "day5_haeun_guilt_1": {
         "name": "Haeun",
-        "text": "*At the end of the hallway, Haeun stands gripping her bag strap with both hands.* I wasn't lying when I said I was cheering for you two. But now, the person who said it can't look Seoyeon in the face."
+        "text": "*At the end of the hallway where the sunset seeps in, Haeun stands gripping her bag strap with both hands.* I meant it when I said I was truly cheering for you, senior. But the one who said that... I can't look Seoyeon in the face now."
     },
     "day5_haeun_guilt_choice": {
         "name": "Haeun",
-        "text": "*Haeun steadies her breathing and looks up.* Being sorry and wanting to be beside you are both real, and that makes it harder. Is it strange that I'm like this?",
+        "text": "*Haeun takes a small breath and carefully lifts her head.* I'm really sorry to that person, but I also still want to stay beside you, senior, and that upsets me more. ...Is it too selfish and strange of me?",
         "choices": [
             "What happened to all that cheering?",
             "It's okay to be sorry and to want to stay.",
@@ -640,111 +640,111 @@
     },
     "day5_haeun_guilt_up": {
         "name": "Haeun",
-        "text": "*The tension around Haeun's eyes eases a little.* …Thank you. I'll let the guilt be what it is, and I won't lie about my feelings either."
+        "text": "*The redness around Haeun's eyes softens, little by little.* ...Thank you, senior. I'll carry being sorry as it is, and from now on I won't force myself to hide how I really feel."
     },
     "day5_haeun_guilt_down": {
         "name": "Haeun",
-        "text": "*Haeun grips the bag strap harder.* …You're right. They were my words. I'm sorry."
+        "text": "*Haeun grips the bag strap harder, until her knuckles go white.* ...You're right. They were words I said first, myself. I'm sorry."
     },
     "day5_haeun_private_1": {
         "name": "Haeun",
-        "text": "Then let’s talk a little longer. I’d like to hear how you see me. I’ll try to tell you how I feel too, in my own time.",
+        "text": "Then let's talk a little more while we walk. I want to hear how you see me right now, senior. I'll... try to tell you the feelings I kept hidden, slowly.",
         "context": "Day 5 after school, in the hallway. The protagonist has just said they want to spend time with Haeun. Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
         "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity. Haeun feels guilt mixed with the flutter of being chosen. She relies only on what was actually said earlier, and carefully shows her present feelings without denying the encouragement she gave the other person. They have not agreed to date yet."
     },
     "day5_haeun_walk": {
         "name": "Haeun",
-        "text": "*After the cleanup, you walk to the park. Haeun sets her bag at one end of a bench.* Sit here. I’d like to hear more about what we were discussing."
+        "text": "*After we finish cleaning the student council room, we walk side by side through the streets under the sunset and reach the park. Haeun sets her bag down gently at one end of a wooden bench.* Senior, sit here. I want to hear the rest of what we couldn't finish in the hall."
     },
     "day5_haeun_private_2": {
         "name": "Haeun",
-        "text": "I’d like us to be able to talk like this next time too. What kind of relationship do you want with me?",
+        "text": "When we meet again after the festival, I hope we can sit side by side like this and talk. ...What kind of relationship do you want with me, senior?",
         "context": "Day 5 at dusk, on a park bench. Haeun is trying to decide whether to date. Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
         "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity. Haeun is trying to decide without erasing her guilt. She remembers only what was actually said earlier and answers according to how the other person receives her feelings. Until they agree, she does not treat them as a couple."
     },
     "day5_haeun_fallback": {
         "name": "Haeun",
-        "text": "Thank you for talking with me today. It's not that I have no feelings. But that person's face keeps coming back, and the guilt comes first. I can't decide yet to go as far as dating you. *Haeun picks up her bag. We say goodbye, and I turn back toward school.*"
+        "text": "Thank you for hearing me all the way out today, senior. It's not that I have no feelings for you... but that person's face keeps coming back. I'm still too sorry, so I can't bring myself to say I'll take your hand and date you. Not now. *Haeun stands from the bench and shoulders her bag. She bows her head, careful, then turns back toward school alone.*"
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*Haeun moves to sit beside you.* I like you too. Let’s date. Tomorrow, can I ask to see you without pretending I need help with work?"
+        "text": "*Haeun shifts close on the bench, into the seat right beside me, and gently takes the end of my sleeve.* I like you a lot too, senior. Let's... start dating today. Tomorrow morning, even without the excuse of student council work, can I call you out just because I want to see you?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",
-        "text": "*Haeun smiles, then looks back at the school.* I'll go and say hello to Seoyeon on my own. I still feel guilty, but I want to stay by your side."
+        "text": "*Haeun smiles, bright, and glances once toward the school roof in the sunset.* I'll go see Seoyeon tomorrow, on my own, and greet her properly. I won't avoid how sorry I am. I'll carry it, and from now on I want to stand beside you, senior, with my head up."
     },
     "day5_ending_haeun_apology_yuna": {
         "name": "Haeun",
-        "text": "*Haeun smiles, then looks back at the school.* I'll go and say hello to Yuna on my own. I still feel guilty, but I want to stay by your side."
+        "text": "*Haeun smiles, bright, and glances once toward the school roof in the sunset.* I'll go see Yuna tomorrow, on my own, and greet her properly. I won't avoid how sorry I am. I'll carry it, and from now on I want to stand beside you, senior, with my head up."
     },
     "day5_ending_haeun_apology_dain": {
         "name": "Haeun",
-        "text": "*Haeun smiles, then looks back at the school.* I'll go and say hello to Dain on my own. I still feel guilty, but I want to stay by your side."
+        "text": "*Haeun smiles, bright, and glances once toward the school roof in the sunset.* I'll go see Dain tomorrow, on my own, and greet her properly. I won't avoid how sorry I am. I'll carry it, and from now on I want to stand beside you, senior, with my head up."
     },
     "day5_ending_haeun_apology_teacher": {
         "name": "Haeun",
-        "text": "*Haeun smiles, then looks back at the school.* I'll go and say hello to your homeroom teacher on my own. I still feel guilty, but I want to stay by your side."
+        "text": "*Haeun smiles, bright, and glances once toward the school roof in the sunset.* I'll go see the homeroom teacher tomorrow, on my own, and greet her properly. I won't avoid how sorry I am. I'll carry it, and from now on I want to stand beside you, senior, with my head up."
     },
     "day5_ending_haeun_apology_nurse": {
         "name": "Haeun",
-        "text": "*Haeun smiles, then looks back at the school.* I'll go and say hello to the school nurse on my own. I still feel guilty, but I want to stay by your side."
+        "text": "*Haeun smiles, bright, and glances once toward the school roof in the sunset.* I'll go see the school nurse tomorrow, on my own, and greet her properly. I won't avoid how sorry I am. I'll carry it, and from now on I want to stand beside you, senior, with my head up."
     },
     "day5_ending_haeun_epilogue": {
         "name": "Haeun",
-        "text": "*After Haeun has also graduated and reached adulthood, you enter a café. She lifts her bag off the opposite chair.* I got here first today. I waited so we could order together. What would you like?"
+        "text": "*Seasons have changed again and again. One afternoon, after Haeun has finally graduated high school and become an adult, I open a café door to a bell. Haeun, in the window seat, waves and moves her bag off the chair across from her.* Senior, I got here first today and saved our seats! I held off ordering so we could choose together once you got here. What should we drink today?"
     },
     "day5_haeun_offer_seoyeon": {
         "name": "Haeun",
-        "text": "Weren’t you going to see Seoyeon? What do you mean when you say you want to stay with me? Honestly, I wanted things to work out between you and Seoyeon. I hate that I'm starting to waver on that."
+        "text": "Senior, weren't you about to go toward Seoyeon? What do you mean, you want to stay with me longer? Honestly, I hoped things would work out between you and Seoyeon... but that wish to cheer you on keeps wavering, and I hate myself for it."
     },
     "day5_haeun_leave_seoyeon": {
         "name": "{name}",
-        "text": "*You ask Seoyeon to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+        "text": "*I contact Seoyeon to say I have something I need to tell her, and we face each other by the hall window. Haeun, who followed, stops carefully half a step beside me.* Sorry. The person I want to know more deeply from now on is Haeun. I'm going with Haeun today. I wanted to say it myself, without hiding it."
     },
     "day5_haeun_offer_yuna": {
         "name": "Haeun",
-        "text": "Weren’t you going to see Yuna? What do you mean when you say you want to stay with me? Honestly, I wanted things to work out between you and Yuna. I hate that I'm starting to waver on that."
+        "text": "Senior, weren't you about to go toward Yuna? What do you mean, you want to stay with me longer? Honestly, I hoped things would work out between you and Yuna... but that wish to cheer you on keeps wavering, and I hate myself for it."
     },
     "day5_haeun_leave_yuna": {
         "name": "{name}",
-        "text": "*You ask Yuna to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+        "text": "*I contact Yuna to say I have something I need to tell her, and we face each other by the hall window. Haeun, who followed, stops carefully half a step beside me.* Sorry. The person I want to know more deeply from now on is Haeun. I'm going with Haeun today. I wanted to say it myself, without hiding it."
     },
     "day5_haeun_offer_dain": {
         "name": "Haeun",
-        "text": "Weren’t you going to see Dain? What do you mean when you say you want to stay with me? Honestly, I wanted things to work out between you and Dain. I hate that I'm starting to waver on that."
+        "text": "Senior, weren't you about to go toward Dain? What do you mean, you want to stay with me longer? Honestly, I hoped things would work out between you and Dain... but that wish to cheer you on keeps wavering, and I hate myself for it."
     },
     "day5_haeun_leave_dain": {
         "name": "{name}",
-        "text": "*You ask Dain to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+        "text": "*I contact Dain to say I have something I need to tell her, and we face each other by the hall window. Haeun, who followed, stops carefully half a step beside me.* Sorry. The person I want to know more deeply from now on is Haeun. I'm going with Haeun today. I wanted to say it myself, without hiding it."
     },
     "day5_haeun_offer_teacher": {
         "name": "Haeun",
-        "text": "Weren’t you going to see your homeroom teacher? What do you mean when you say you want to stay with me? Honestly, I meant to support you going to your homeroom teacher. I hate that I'm starting to waver on that."
+        "text": "Senior, weren't you about to go toward the homeroom teacher? What do you mean, you want to stay with me longer? Honestly, I meant to quietly cheer you on as you walked toward the homeroom teacher... but that feeling is wavering now, and I don't like it."
     },
     "day5_haeun_leave_teacher": {
         "name": "{name}",
-        "text": "*You ask your homeroom teacher to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+        "text": "*I send word to the homeroom teacher that I have something to say, and we face each other by the hall window. Haeun stops carefully beside me.* Teacher, I want to see more of Haeun from now on. I'm going with Haeun today. I wanted to tell you myself, too, without avoiding it."
     },
     "day5_haeun_offer_nurse": {
         "name": "Haeun",
-        "text": "Weren’t you going to see the school nurse? What do you mean when you say you want to stay with me? Honestly, I meant to support you going to the school nurse. I hate that I'm starting to waver on that."
+        "text": "Senior, weren't you about to go toward the school nurse? What do you mean, you want to stay with me longer? Honestly, I meant to quietly cheer you on as you walked toward the school nurse... but that feeling is wavering now, and I don't like it."
     },
     "day5_haeun_leave_nurse": {
         "name": "{name}",
-        "text": "*You ask the school nurse to talk. You face each other by the hallway window, and Haeun stops beside you.* Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person."
+        "text": "*I send word to the school nurse that I have something to say, and we face each other by the hall window. Haeun stops carefully beside me.* Teacher, I want to see more of Haeun from now on. I'm going with Haeun today. I wanted to tell you myself, too, without avoiding it."
     },
     "day5_haeun_switch_seoyeon_response": {
         "name": "Seoyeon",
-        "text": "You’re telling me this in front of Haeun. Since when have you felt that way?"
+        "text": "*Seoyeon's eyes waver, cold.* ...You say that here, after bringing Haeun along. Since when have you had your mind made up like that?"
     },
     "day5_haeun_switch_seoyeon_haeun": {
         "name": "Haeun",
-        "text": "*Haeun stays beside you and looks at Seoyeon.* I want to talk with you more too. I can't say I'm not sorry. But I don't want to lie. Let’s hear what Seoyeon has to say before we go."
+        "text": "*Haeun stands beside me, swallows a shaky breath, and looks toward Seoyeon.* I want to talk with you more too, senior. I absolutely can't say I'm not sorry. Still, I don't want to cover how I feel with a lie. I'll hear Seoyeon out before we go."
     },
     "day5_haeun_switch_seoyeon_group_talk": {
         "name": "Seoyeon",
-        "text": "Help me understand. Did something change today, or have you been thinking about this for a while?",
+        "text": "Tell me properly, so I can accept it. Did you suddenly waver today, or have you been thinking about this for a while?",
         "context": "Day 5 after school. The protagonist, Seoyeon and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. Seoyeon had the highest affinity before this choice. Haeun +20 and Seoyeon -30 are already applied.",
         "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
         "groupLocation": "Hallway window",
@@ -752,15 +752,15 @@
     },
     "day5_haeun_switch_yuna_response": {
         "name": "Yuna",
-        "text": "Was there no time to tell me first? Did you think I’d just let you go if I heard it like this?"
+        "text": "*Yuna's fingertips grip the book cover until they go white.* ...You didn't have time to tell me alone, first? If the two of you stand here and say it like this, did you think I'd let you go without a word?"
     },
     "day5_haeun_switch_yuna_haeun": {
         "name": "Haeun",
-        "text": "*Haeun stays beside you and looks at Yuna.* I want to talk with you more too. I can't say I'm not sorry. But I don't want to lie. Let’s hear what Yuna has to say before we go."
+        "text": "*Haeun stands beside me and looks straight toward Yuna.* I want to talk with you more too, senior. I absolutely can't say I'm not sorry. Still, I don't want to cover how I feel with a lie. I'll hear Yuna out before we go."
     },
     "day5_haeun_switch_yuna_group_talk": {
         "name": "Yuna",
-        "text": "Look at me and tell me. Don’t change the subject.",
+        "text": "Don't look away. Look me in the eye and tell me.",
         "context": "Day 5 after school. The protagonist, Yuna and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. Yuna had the highest affinity before this choice. Haeun +20 and Yuna -30 are already applied.",
         "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
         "groupLocation": "Hallway window",
@@ -768,15 +768,15 @@
     },
     "day5_haeun_switch_dain_response": {
         "name": "Dain",
-        "text": "You brought Haeun along to tell me. What did you expect me to say?"
+        "text": "*Dain glares at me, swallowing a hollow laugh of disbelief.* Hey. You brought Haeun along to say that, and you thought I'd just nod here and go, oh, is that so?"
     },
     "day5_haeun_switch_dain_haeun": {
         "name": "Haeun",
-        "text": "*Haeun stays beside you and looks at Dain.* I want to talk with you more too. I can't say I'm not sorry. But I don't want to lie. Let’s hear what Dain has to say before we go."
+        "text": "*Haeun stands beside me and looks toward Dain.* I want to talk with you more too, senior. I absolutely can't say I'm not sorry. Still, I don't want to cover how I feel with a lie. I'll hear Dain out before we go."
     },
     "day5_haeun_switch_dain_group_talk": {
         "name": "Dain",
-        "text": "All right. I’m listening. Tell me why you decided that.",
+        "text": "All right. I'm right here listening, so don't hide why you decided that. Tell me all of it.",
         "context": "Day 5 after school. The protagonist, Dain and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. Dain had the highest affinity before this choice. Haeun +20 and Dain -30 are already applied.",
         "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
         "groupLocation": "Hallway window",
@@ -784,15 +784,15 @@
     },
     "day5_haeun_switch_teacher_response": {
         "name": "Homeroom Teacher",
-        "text": "All right. But did you ask me here just to announce your decision?"
+        "text": "*The homeroom teacher lowers the file in her hand and asks, calm, but with an edge.* I understand what you've decided. But am I here just to receive a one-sided notice?"
     },
     "day5_haeun_switch_teacher_haeun": {
         "name": "Haeun",
-        "text": "*Haeun stays beside you and looks at your homeroom teacher.* I want to talk with you more too. I can't say I'm not sorry. But I don't want to lie. Let’s hear what your homeroom teacher has to say before we go."
+        "text": "*Haeun stands beside me and looks toward the homeroom teacher.* I want to talk with you more too, senior. I can't say I'm not sorry. Still, I don't want to lie about how I feel. I'll hear the teacher out, all the way, before we go."
     },
     "day5_haeun_switch_teacher_group_talk": {
         "name": "Homeroom Teacher",
-        "text": "You aren’t asking my permission, I assume. Tell me what you actually wanted to say to me.",
+        "text": "This isn't about getting my permission for your relationships or your choice, I take it. Let's hear what you wanted to say badly enough to call me here.",
         "context": "Day 5 after school. The protagonist, your homeroom teacher and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. your homeroom teacher had the highest affinity before this choice. Haeun +20 and your homeroom teacher -30 are already applied.",
         "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
         "groupLocation": "Hallway window",
@@ -800,15 +800,15 @@
     },
     "day5_haeun_switch_nurse_response": {
         "name": "School Nurse",
-        "text": "Wait. I understand you’ve decided, but you’re going to hear my answer before leaving, right?"
+        "text": "*The school nurse quietly lifts a palm and stops me mid-sentence.* Wait. I get how you've made up your mind. You're going to hear my answer before you go, right?"
     },
     "day5_haeun_switch_nurse_haeun": {
         "name": "Haeun",
-        "text": "*Haeun stays beside you and looks at the school nurse.* I want to talk with you more too. I can't say I'm not sorry. But I don't want to lie. Let’s hear what the school nurse has to say before we go."
+        "text": "*Haeun stands beside me and looks toward the school nurse.* I want to talk with you more too, senior. I can't say I'm not sorry. Still, I don't want to lie about how I feel. I'll hear the teacher out, all the way, before we go."
     },
     "day5_haeun_switch_nurse_group_talk": {
         "name": "School Nurse",
-        "text": "Haeun is here too. Say it so we can both hear you.",
+        "text": "Haeun's standing here with us anyway, so say it so both of us can understand you clearly.",
         "context": "Day 5 after school. The protagonist, the school nurse and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. the school nurse had the highest affinity before this choice. Haeun +20 and the school nurse -30 are already applied.",
         "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
         "groupLocation": "Hallway window",

@@ -1,181 +1,181 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Back in my room, I hang my bag over the chair.*"
+        "text": "*I drag my tired body back to my room and hang my school bag over the back of the chair.*"
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*I turn on the phone lying face down on my desk.*"
+        "text": "*In the room, lights still off, I flip over the phone I left face down on the desk and turn the screen on.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
-        "text": "*I check my phone’s notifications.*"
+        "text": "*Phone light spreads under the dark ceiling. I check the night notifications that have come in.*"
     },
     "night3_faithful_msg_seo_1": {
         "name": "Seoyeon",
-        "text": "What you saw today stays between us."
+        "text": "What you saw in the student council room after school today is really a secret between just the two of us."
     },
     "night3_faithful_msg_seo_2": {
         "name": "Seoyeon",
-        "text": "But you can come back."
+        "text": "You can come find me again tomorrow, with the excuse that you lost your pen. I'll be waiting."
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*I read the message to the end and turn off the screen. The phone's glow disappears from the room.*"
+        "text": "*Seoyeon's warm breath seems to brush my ear again. I read slowly to the last line, and when I turn the screen off, a pleasant afterimage stays in the room.*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*A short message arrives from Yuna about the notebook she lent me.*"
+        "text": "*A late-night message from Yuna is waiting. It's about the leather notebook she handed me in the annex earlier, resting her cheek in my palm.*"
     },
     "night3_faithful_msg_yuna_2": {
         "name": "Yuna",
-        "text": "That novel, I still haven’t decided on the ending"
+        "text": "That novel I lent you earlier. I still haven't decided the ending. Once you've read all of it, let's decide it together."
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*The cursor blinks on the last line of the note. A saved icon remains beside the filename.*"
+        "text": "*I stroke the leather notebook on the desk and look at the last line of my reading notes. Beside the blinking cursor, Yuna's warmth still seems to be there.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
-        "text": "If you’re going to ask about my knee, come ask me in person lol"
+        "text": "Hey. If you're going to ask if my knee's okay, don't settle it in a text. Come ask me yourself tomorrow morning. Haha"
     },
     "night3_faithful_msg_dain_2": {
         "name": "Dain",
-        "text": "but for real tho. thanks"
+        "text": "Thanks for staying beside me the whole time in the gym earlier. Really. See you tomorrow."
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*There is a long gap between “lol” and the next sentence. No new message comes from Dain.*"
+        "text": "*A 3-minute gap between the playful \"haha\" and the sincere sentence after it. Dain's hot grip on my shoulder and her heartbeat come back, clear.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Before turning out the light, I pick up my phone once more. I remember footsteps beside mine today.*"
+        "text": "*I start to turn off the desk lamp, then pick up my phone one more time. How close we were after school today, breathing side by side, is still vivid at my fingertips.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
-        "text": "*I put down my phone. I still don’t know what I’ll say tomorrow.*"
+        "text": "*I set the phone down by my pillow. Choosing the first thing I'll say when we face each other tomorrow morning, my heart beats slow.*"
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*I long-press Sojeong's photo in the gallery.*"
+        "text": "*Before I sleep, deep in my phone gallery, I find a photo of Sojeong from my old school and long-press it.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
-        "text": "*'Delete this photo?' My finger hovers over the confirm button.*"
+        "text": "*A confirmation pops up: \"Delete this photo?\" My thumb stops right above the delete button.*"
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*I stare at the screen for a moment, remembering the writing on Sojeong’s desk and the mornings I looked away.*"
+        "text": "*I look quietly down at the bluish screen. The harsh graffiti that covered Sojeong's desk, and the mornings I turned my head away like a coward, pass by one after another.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*I tap Cancel. Deleting a photo would not change the choice I made.*"
+        "text": "*I quietly tap Cancel on the confirmation. Deleting one photo won't make the fact that I ran away back then disappear.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*My finger stops over the delete button. Instead, I move the photo to a new folder named 'Record.'*"
+        "text": "*Instead of the delete button, I tap Move and put the photo in a new folder. I write the folder name short: \"Record.\"*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*I leave a short note beside the photo. Nothing I say in a new chat can replace what I owe Sojeong.*"
+        "text": "*I leave a short note under the photo. The apology I never managed to give Sojeong can only be repaid by being more honest with the person beside me now.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*The new folder still holds that one photo.*"
+        "text": "*Inside the new folder, one photo settles quietly into place.*"
     },
     "night3_faithful_reflect_4_b": {},
     "night3_faithful_reflect_4_c": {},
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*I close the gallery and check tomorrow’s alarm. Even after putting the phone down, sleep takes a while.*"
+        "text": "*I close the gallery and set tomorrow morning's alarm. Even after I put the phone down, the warmth that brushed me during the day keeps sleep from coming easily.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*When I close my eyes, the rooftop railing comes to mind first.*"
+        "text": "*The moment I close my eyes, the sunset light in the student council room comes first, Seoyeon's hot forehead against my forearm, and the ribbon at her collar, slightly undone.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
-        "text": "*When I close my eyes, the library annex window comes to mind first.*"
+        "text": "*The moment I close my eyes, in the quiet air of the annex, I feel Yuna pull my palm onto her cheek, cool and flushed at once.*"
     },
     "night3_dream_dain_bonus": {
         "name": "{name}",
-        "text": "*When I close my eyes, I hear a ball bouncing on the gym floor.*"
+        "text": "*The moment I close my eyes, I feel Dain on the empty gym bench, clutching the hem of my shirt and pressing into my chest, her breath short.*"
     },
     "night3_cheat_msg_1": {
         "name": "{name}",
-        "text": "*The moment I return to my room, I turn on my phone.*"
+        "text": "*The moment I step into the room, before I can even turn on the light, I switch on my phone with a shaking hand. My palm stings from the vibrations that went off one after another.*"
     },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
-        "text": "Be that way only with me."
+        "text": "Can't you smile like that only for me, not for Dain and Yuna?"
     },
     "night3_cheat_msg_3": {
         "name": "Seoyeon",
-        "text": "Please"
+        "text": "Please. I'm begging you."
     },
     "night3_cheat_msg_3_b": {
         "name": "Seoyeon",
-        "text": "*She types the word 'please.' The cursor sits after it for a long time.*"
+        "text": "*In Seoyeon's chat, the \"typing\" mark keeps appearing and disappearing for a long time. In the end, the next sentence never comes.*"
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
-        "text": "I knew all along"
+        "text": "You weighing the three of us. I knew all of it from the start."
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
-        "text": "Neither I nor the others want to be your backup."
+        "text": "I can't stand being lined up as one of your options. The others can't either."
     },
     "night3_cheat_msg_5": {
         "name": "Yuna",
-        "text": "Decide who you're going to see tomorrow"
+        "text": "Tomorrow, decide for sure which one person you're going to, and come."
     },
     "night3_cheat_msg_6": {
         "name": "Yuna",
-        "text": "Don't avoid me. That's all"
+        "text": "Don't avoid my eyes. Promise me just that."
     },
     "night3_cheat_msg_dain_1": {
         "name": "Dain",
-        "text": "lol I wish this were a joke"
+        "text": "Haha. That thing at lunch earlier. I wish it had just been a joke to tease me."
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "*I reread Yuna’s messages. My finger hovers over the reply field, then pulls away.*"
+        "text": "I know you're reading this and not answering. Tomorrow morning, I'll grab you first. *In the dark, Yuna's last message comes up and binds my gaze like a cold obsession.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*I lie down with the lights off, but sleep won't come. Only my phone screen glows against my palm.*"
+        "text": "*I turn off the light and lie on the bed, but my heart rises to my throat and my eyes won't close. In the dark, only the phone screen burns cold against my palm.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
-        "text": "*I open Seoyeon's chat. Her last message is “Please.” Nothing new follows it.*"
+        "text": "*With a shaking thumb I open Seoyeon's chat again. Over the line where she set all her pride down, \"Please. I'm begging you,\" Seoyeon's wet eyes overlap.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
-        "text": "I'm not asking you to answer now. Just don't avoid me tomorrow."
+        "text": "I'm not pushing you to answer right away tonight. But tomorrow morning, don't run from me."
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*Beneath Yuna’s messages, there’s only the read receipt.*"
+        "text": "*I close the window and open Yuna's chat. The \"Read\" I left sits there like a cold brand.*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
-        "text": "*Her last sentence is short: 'Don't avoid me. That's all.'*"
+        "text": "*\"Don't avoid my eyes. Promise me just that.\" Past the short bubble, Yuna's cold grip, the one that wouldn't let go of my wrist, seems to tighten around the back of my neck.*"
     },
     "night3_nightmare_4_b": {
         "name": "{name}",
-        "text": "*Dain’s only message starts with a laugh.*"
+        "text": "*At the very bottom, Dain's chat shows only one line left hanging after the laugh she forced on.*"
     },
     "night3_nightmare_5": {
         "name": "{name}",
-        "text": "*'I wish it had been a joke.' There are no new messages after that.*"
+        "text": "*\"I wish it had just been a joke to tease me.\" Since the sun went down, not one more message has come from Dain.*"
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*I type and erase replies in all three chats.*"
+        "text": "*Breath caught, I open the three chats in turn, type replies that sound like excuses, then erase every one of them with backspace.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
-        "text": "*Who will I be honest with first tomorrow?*",
+        "text": "*When this awful night ends and the day breaks, who should I run to first and tell the truth?*",
         "choices": [
             "Decide to talk to Seoyeon first",
             "Decide to talk to Yuna first",
@@ -184,59 +184,59 @@
     },
     "night3_nightmare_seo": {
         "name": "{name}",
-        "text": "*In Seoyeon's text box, I write, “I'll tell you face-to-face tomorrow,” and rest my thumb over Send.*"
+        "text": "*In Seoyeon's text box I type \"Sorry. Tomorrow morning I'll see you face to face first and tell you,\" then set my shaking thumb on Send.*"
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
-        "text": "*In Yuna's text box, I write, “Tomorrow, I won't avoid you. I'll tell you,” and the cursor blinks after the final period.*"
+        "text": "*I type in Yuna's text box, \"Tomorrow I won't avoid you at all. I'll come to you first,\" and the cursor blinks fast after the last letter.*"
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*I type, “Sorry I kept you waiting. I will talk to you tomorrow.” My thumb hovers over send in Dain’s chat.*"
+        "text": "*In Dain's text box I type \"Sorry I left you to think it through alone. I'll tell you first thing tomorrow morning.\" The tip of my thumb freezes over the send icon.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",
-        "text": "*The one sentence left is still unsent.*"
+        "text": "*The one last sentence left in the text box is still unsent.*"
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*Still awake at three in the morning, I close the messages and open the gallery. I rest my thumb on Sojeong's photo.*"
+        "text": "*Past 3 in the morning, without a moment of sleep, I close the message app and open the gallery. I rest a heavy thumb on the photo of Sojeong from my old school.*"
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*In the group photo, Sojeong is looking at the camera. Beside her, I'm looking somewhere else.*"
+        "text": "*In the group photo, Sojeong looks at the camera with no strength left, and right beside her I'm looking off somewhere else, the way I did then, dodging anything difficult.*"
     },
     "night3_cheat_reflect_3_b": {
         "name": "{name}",
-        "text": "*The draft remains in my chat list.*"
+        "text": "*Back on the messenger list, the draft I never sent is still there in red.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*I scan the chat list. A different message sits beside each of the three names.*"
+        "text": "*I scan the message list from top to bottom. Beside each of the three names, a different wound is stuck there as the last line.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "Minsu",
-        "text": "*A message from Minsu.* Putting it off won't make it go away"
+        "text": "*Just then, a short message from Minsu pops up at the top of the screen.* Putting it off because you're scared doesn't make it go away on its own."
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*I read all three chats again from the top. I don't close any of them.*"
+        "text": "*I read the three chats again from the first line. This time I don't close any window like I'm running away.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*I pull my hand away from Send and turn the phone face down. Three hours until my alarm.*"
+        "text": "*I take my hand off Send and lay the phone face down on the desk. I'm not going to patch this with a few lines of text. Tomorrow I'll stand face to face and answer. Three hours left until the alarm.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
-        "text": "*I rename the alarm 'Answer tomorrow.'*"
+        "text": "*I rename the dawn alarm to \"Don't run. Answer.\"*"
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*I turn off the light and leave my phone face down.*"
+        "text": "*I turn the desk lamp all the way off and leave the phone face down by my pillow.*"
     },
     "forced_violation_day3_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Seoyeon speaks coldly after a silence.* Don't think you can pretend what you just did never happened. Don't come near me or contact me for a while.",
+        "text": "*After a cold silence, Seoyeon speaks in an ice-cold voice.* Don't think you can call what you just did a mistake and wave it off like it never happened. For a while, don't come near me, and don't contact me.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -244,15 +244,15 @@
     },
     "forced_violation_day3_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's face stays tense.* I heard you. That doesn't erase what happened. Like I said, don't contact me for a while."
+        "text": "*Seoyeon's face doesn't ease at all.* I heard the apology. That doesn't erase the fact that you crossed the line. Like I said, don't contact me for a while."
     },
     "forced_violation_day3_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon cuts the explanation short.* A misunderstanding? The moment I said no, it stopped being one. Don't say anything else."
+        "text": "*Seoyeon cuts me off, firm.* A misunderstanding? From the moment I clearly said no, it can't be a misunderstanding. Don't say one more word."
     },
     "forced_violation_day3_after_yuna": {
         "name": "Yuna",
-        "text": "*Yuna catches her breath, wary.* You knew I didn't want it, and you ignored me. I don't even want to see your face right now. Don't contact me again.",
+        "text": "*Yuna takes a step back and drags in a rough breath.* I said I didn't want it, and you ignored me all the way to the end. I don't even want to see your face right now, so don't contact me anymore.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -260,15 +260,15 @@
     },
     "forced_violation_day3_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna answers after a long pause.* An apology doesn't make it disappear. Stop now."
+        "text": "*After a long silence, Yuna answers, low.* One apology doesn't make what just happened disappear. Go back now."
     },
     "forced_violation_day3_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna cuts off the explanation before it is finished.* I said no. There's nothing to explain."
+        "text": "*Yuna turns her head without even hearing my excuse through.* I clearly said no. This isn't something you can cover with an excuse."
     },
     "forced_violation_day3_after_dain": {
         "name": "Dain",
-        "text": "*Dain doesn't smile. After a long pause, she answers briefly in a stiff voice.* This isn't a joke. I said no and you forced it anyway. I'm not letting this go.",
+        "text": "*The smile leaves Dain's face completely. Her stiff voice drops low.* You don't get to pass this off as a joke. I said no, and you crossed the line anyway. I am not letting that go.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -276,15 +276,15 @@
     },
     "forced_violation_day3_dain_apologize": {
         "name": "Dain",
-        "text": "*Dain finally gives a short answer after a long pause.* Fine. Then we're done for today. I decide if and when we talk again."
+        "text": "*Only after a long while does Dain speak, cold.* I heard the apology. Today's talk ends here. Whether we see each other again is for me to decide."
     },
     "forced_violation_day3_dain_excuse": {
         "name": "Dain",
-        "text": "*Dain's voice turns rough.* No. Don't make excuses. I said no, and you did it anyway."
+        "text": "*Dain's voice turns rough and sharp.* Don't hide behind a cowardly excuse. I told you not to, and you're the one who pushed it."
     },
     "forced_violation_day3_after_teacher": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher speaks firmly.* What you just did clearly crossed a line. Do not come any closer. I will handle this through the proper procedures.",
+        "text": "*The homeroom teacher steps back from where she stands, her face set.* What you just said and did clearly crossed a line. Don't come any closer. I'll handle this by school rules and procedure.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -292,15 +292,15 @@
     },
     "forced_violation_day3_teacher_apologize": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher takes a breath and speaks.* I heard your apology. I'll still follow the proper procedures. Don't say anything else."
+        "text": "*The homeroom teacher takes a short breath and speaks.* I'll log the apology. But the official procedure will go ahead as is, so don't say any more. Go back."
     },
     "forced_violation_day3_teacher_excuse": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher cuts off the explanation.* This is not the time to start explaining yourself. Stop talking and keep your distance."
+        "text": "*The homeroom teacher cuts off the explanation, cold.* This isn't a situation you can smooth over with a clumsy excuse. Keep your distance right now and go back to the classroom."
     },
     "forced_violation_day3_after_haeun": {
         "name": "Haeun",
-        "text": "*Haeun steps back and grips her student-council bracelet.* Don't come any closer. I'm calling a teacher now.",
+        "text": "*Haeun steps back, her face gone pale, and clutches her student council bracelet.* Please don't come any closer. I'm going to the faculty office right now to call a teacher.",
         "choices": [
             "Admit the wrongdoing and keep my distance.",
             "Claim it was a misunderstanding."
@@ -308,15 +308,15 @@
     },
     "forced_violation_day3_haeun_apologize": {
         "name": "Haeun",
-        "text": "*Without answering, Haeun retreats toward the staffroom, making sure I don't follow.*"
+        "text": "*Haeun doesn't even answer. She backs toward the faculty office, watching to be sure I don't follow.*"
     },
     "forced_violation_day3_haeun_excuse": {
         "name": "Haeun",
-        "text": "It wasn't a misunderstanding. Don't follow me. *Keeping her distance, Haeun opens the faculty-office door.*"
+        "text": "This isn't a misunderstanding. Please don't follow me. *Keeping her distance, Haeun hurriedly opens the faculty office door and goes in.*"
     },
     "forced_violation_day3_after_nurse": {
         "name": "School Nurse",
-        "text": "*The nurse's playfulness disappears.* Keep your distance from now on. I will document what happened and inform the people who need to know.",
+        "text": "*The easy smile vanishes completely from the school nurse's face.* From now on, keep a clear distance. I'll record what you just did in the counseling log and officially notify the office in charge.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -324,10 +324,10 @@
     },
     "forced_violation_day3_nurse_apologize": {
         "name": "School Nurse",
-        "text": "*The nurse answers firmly after a pause.* I hear your apology. I'll still document this and notify the appropriate people. This conversation is over."
+        "text": "*The school nurse closes the chart and answers, firm.* I'll hear the apology. Even so, the official record and the report will go through by procedure. Today's session ends here."
     },
     "forced_violation_day3_nurse_excuse": {
         "name": "School Nurse",
-        "text": "*The school nurse's voice drops lower.* Do you think calling it a misunderstanding changes anything? The fact is, you ignored me when I said no."
+        "text": "*The school nurse's voice drops, cold.* Do you think dressing it up as a misunderstanding changes what just happened? I clearly refused, and you ignored that."
     }
 }

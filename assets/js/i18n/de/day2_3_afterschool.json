@@ -1,55 +1,55 @@
 {
     "hidden_nurse_d2_low": {
         "name": "Schulkrankenschwester",
-        "text": "*Als du die Tür zum Krankenzimmer öffnest, klappt die Schulkrankenschwester die Akte zu.* Wenn du keine Behandlung brauchst, kann ich gerade nicht lange mit dir reden. Geh zurück in den Unterricht."
+        "text": "*Als ich die Tür zum Krankenzimmer öffne, klappt die Schulkrankenschwester die Akte zu, die sie gerade gelesen hat.* Wenn es gerade keine nötige Behandlung ist, wird ein langes Gespräch schwierig. Geh zurück ins Klassenzimmer."
     },
     "hidden_nurse_d2_neg": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie klappt die Akte zu und zeigt zur Tür.* Keine Behandlung, raus."
+        "text": "*Sie klappt die Akte mit einem Knall zu und zeigt zur Tür.* Wenn du heute keine weitere Behandlung brauchst, geh bitte."
     },
     "after2_start": {
         "name": "{name}",
-        "text": "*Nach der Schule. Auf meinem Handy warten zwei Benachrichtigungen.*"
+        "text": "*Das Klassenzimmer nach dem Tagesabschluss. Auf dem Handy in meiner Tasche stehen zwei neue Benachrichtigungen nebeneinander.*"
     },
     "after2_msg_dain": {
         "name": "Dain",
-        "text": "Komm in die Turnhalle. Heute gilt die Wette wirklich!"
+        "text": "Komm sofort in die Turnhalle! Heute ist es eine richtig echte Wette."
     },
     "after2_msg_seo": {
         "name": "Seoyeon",
-        "text": "Kannst du zum Schülerratsraum kommen? Uns fehlen Hände."
+        "text": "Kannst du nach der Schule kurz in den Schülerratsraum kommen? Heute fehlen mir ausgerechnet ein paar Hände."
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*Keine Nachricht. Auf dem Zettel vom Morgen steht „Bibliotheksanbau“.*"
+        "text": "*Von Yuna kommt keine eigene Nachricht. Stattdessen streichen meine Fingerspitzen über die fünf Zeichen „Bibliotheksanbau“ auf dem Morgenzettel in der Tasche.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*Nach dem Sportunterricht in der fünften Stunde bleibt der Rand des Pflasters an meinem Ärmel hängen. Ich drücke ihn einmal fest, doch er löst sich wieder.*"
+        "text": "*Die Ecke des Pflasters am Ellbogen, das nach dem Sport in der 5. Stunde draufkam, bleibt immer wieder am Hemdsärmel hängen. Ich drücke sie mit den Fingerspitzen fest an, doch sie hebt sich gleich wieder.*"
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Als ich den Ärmel hochschiebe, hat sich eine Seite des Pflasters gelöst. Die Wunde blutet nicht mehr.*"
+        "text": "*Ich schaue im Krankenzimmer vorbei und schiebe den Ärmel hoch. Ein Ende des Pflasters steht halb ab. Zum Glück sickert kein weiteres Blut aus der Wunde.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Schulkrankenschwester",
-        "text": "Nicht mal einen Tag hat das Pflaster gehalten. Setz dich."
+        "text": "Oh. Noch kein halber Tag drauf, und das Pflaster kommt schon als Retoure zurück. Komm her und setz dich."
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-        "text": "Der Rand bleibt ständig am Ärmel hängen."
+        "text": "Beim Bewegen ist das Ende vom Pflaster immer wieder am Hemdsärmel hängen geblieben."
     },
     "hidden_nurse_d2_4": {
         "name": "Schulkrankenschwester",
-        "text": "Lass mal sehen."
+        "text": "Streck den Arm mal hier rüber. Mal sehen."
     },
     "hidden_nurse_d2_5": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie zieht das gelöste Pflaster ab, säubert die Haut um die Wunde und holt ein neues hervor.* Das brennt gleich ein wenig."
+        "text": "*Die kühlen Fingerspitzen der Schulkrankenschwester ziehen das gelöste Pflaster vorsichtig ab, wischen mit einem Desinfektionstupfer um die Wunde und holen ein neues hervor.* Diesmal wird es auch ein wenig brennen."
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
-        "text": "*Die Krankenschwester beugt und streckt meinen Ellbogen und schätzt dabei die nötige Pflasterlänge ab.*",
+        "text": "*Die Schulkrankenschwester umfasst mein Handgelenk, beugt und streckt den Ellbogen langsam und schätzt den Winkel fürs neue Pflaster.*",
         "choices": [
             "Lernt man so etwas auch im Krankenhaus?",
             "Sie sind sogar bei einem Pflaster gründlich.",
@@ -59,23 +59,23 @@
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Schulkrankenschwester",
-        "text": "Ja. An einem Gelenk muss es so kleben, dass es sich beim Bewegen nicht löst."
+        "text": "Ja. Ein Gelenk, das sich ständig bewegt, klebt man entlang der Hautlinien. Dann reißt es beim Bewegen nicht ab."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Schulkrankenschwester",
-        "text": "Das ist mein Job. Wenn ich es schlampig aufklebe und es im Unterricht abfällt, haben wir beide nichts davon."
+        "text": "Klar, das ist mein Job. Wenn ich es schlampig draufklebe und dich so losschicke, und es fällt im Unterricht wieder ab, hast du den Ärger."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*Die Schulkrankenschwester wirft die Pflasterverpackung weg. Die vorhin geschlossene Schublade bleibt zu.*"
+        "text": "*Die Schulkrankenschwester wirft die Verpackung des neuen Pflasters in den Mülleimer. Die Schublade, die sie vorhin nach dem Mittagessen hastig zugemacht hat, bleibt fest geschlossen.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie bemerkt meinen Blick und legt die Hand auf den Griff.* Das Thema ist abgeschlossen. Neugier öffnet diese Schublade nicht."
+        "text": "*Sie bemerkt meinen Blick zur Schublade und legt ihre schmale Handfläche sanft auf den Griff.* Das mit der Schublade ist seit vorhin erledigt. Egal wie neugierig du guckst, ich mach sie nicht auf."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
-        "text": "*Die Knöchel der Hand am Schubladengriff sind weiß.*",
+        "text": "*Um den Schubladengriff spannen sich die weißen Knöchel der Schulkrankenschwester ein wenig.*",
         "choices": [
             "Sie haben viele Geheimnisse. Können Sie mir nicht eins verraten?",
             "Ja, ich hab nichts gesehen",
@@ -85,20 +85,20 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie tippt auf die Schublade.* Das mit dem Kakao reicht. Kein zweites Geheimnis."
+        "text": "*Sie tippt mit dem Zeigefinger zweimal an die Vorderseite der geschlossenen Schublade.* Das Geheimnis, dass ich Kakao mag, hab ich dir vorhin schon gesagt. Das reicht. Für heute gibt es keins mehr."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie lässt den Schubladengriff los.* Ein Geheimnis. Das reicht doch, oder?"
+        "text": "*Mit einem weichen Lächeln nimmt sie die Hand vom Schubladengriff.* Ja. Ein Geheimnis nur für uns beide reicht so doch, oder?"
     },
     "hidden_nurse_d2_8": {
         "name": "Schulkrankenschwester",
-        "text": "So, fertig. Halte es heute trocken."
+        "text": "So. Jetzt sitzt es viel fester. Heute Nacht wirklich aufpassen, dass kein Wasser drankommt."
     },
     "hidden_nurse_d2_9": {},
     "after2_choice": {
         "name": "{name}",
-        "text": "*Wohin soll ich gehen?*",
+        "text": "*Nach der Schule fängt das Abendrot an, alles zu färben. Wohin soll ich gehen?*",
         "choices": [
             "Zur Turnhalle (Dain)",
             "Zum Schülerratsraum (Seoyeon)",
@@ -107,95 +107,95 @@
     },
     "after2_dain_1": {
         "name": "{name}",
-        "text": "*Die Turnhalle. Dain macht Aufwärmübungen vor dem Volleyballnetz.*"
+        "text": "*Ich öffne die Tür zur Turnhalle. Der Holzboden hallt, und vor dem Volleyballnetz lockert Dain sich leicht auf.*"
     },
     "after2_dain_2": {
         "name": "Dain",
-        "text": "Da bist du ja. Du bist spät!"
+        "text": "Oh, endlich da? Erwischt, du bist zu spät!"
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "Ich bin fünf Minuten zu früh."
+        "text": "Guck auf die Uhr. Ich bin ganze 5 Minuten vor der Zeit da."
     },
     "after2_dain_4": {
         "name": "Dain",
-        "text": "Ich war zehn Minuten zu früh!"
+        "text": "Ich wusste, dass du kommst, und warte schon seit 10 Minuten!"
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Du bist einfach früher gekommen. Ich war nicht zu spät.*"
+        "text": "*Du bist nur früher da, weil du so ungeduldig bist. Ich bin nicht zu spät.*"
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "Also, die Wette! Fünf Aufschläge — schaffst du drei oder mehr übers Netz, gewinnst du! Wenn nicht, zahlst du heute Tteokbokki!"
+        "text": "Genug geredet, ab ins richtige Spiel! Du servierst fünfmal. Landen drei oder mehr im Feld, gewinnst du! Schaffst du sie nicht übers Netz, geht der Tteokbokki vor der Schule heute auf dich!"
     },
     "after2_dain_7": {
         "name": "{name}",
-        "text": "Wie kommst du jetzt auf Tteokbokki?"
+        "text": "Die Strafe fürs Verlieren ist auf einmal Tteokbokki?"
     },
     "after2_dain_8": {
         "name": "Dain",
-        "text": "Ich hab Hunger!"
+        "text": "Vom Laufen hab ich schon Hunger! Los, ich nehme an!"
     },
     "after2_dain_9": {
         "name": "{name}",
-        "text": "*Der erste Aufschlag bleibt am Netz hängen. Der zweite landet innerhalb der Linie.*"
+        "text": "*Nach einem tiefen Atemzug bleibt der erste Aufschlag oben am Netz hängen. Der zweite, mit dem ich den Dreh finde, fliegt scharf übers Netz und setzt auf der Innenlinie auf.*"
     },
     "after2_dain_9_b": {
         "name": "Dain",
-        "text": "*Sie fängt den zurückspringenden Ball mit beiden Händen.* Hä? Ich wollte dich eigentlich schonen, aber daraus wird wohl nichts."
+        "text": "*Sie schnappt den vom Boden hochspringenden Ball leicht mit beiden Händen und reißt die Augen auf.* Hä? Ich hatte dich als Anfänger abgestempelt und wollte dich schonen. Das wäre fast ernst geworden."
     },
     "after2_dain_9_c": {
         "name": "Dain",
-        "text": "Vielleicht war das nur ein Glückstreffer. Ob du wirklich gut bist, sehen wir erst beim nächsten Spiel. *Sie geht tiefer und hält den Ball fester.*"
+        "text": "Das eben kann auch nur zufällig gut in der Hand gelegen haben. Ob das echtes Können ist, sehen wir erst, wenn wir frontal gegeneinander spielen! *Sie geht tiefer in die Haltung und spannt die Finger am Volleyball federnd an.*"
     },
     "after2_dain_9_d": {
         "name": "Dain",
-        "text": "Gut, Schluss mit dem Aufschlagtraining! Jetzt Ballwechsel, wer zuerst drei Punkte hat, gewinnt!"
+        "text": "Gut. Die lockere Aufschlagübung ist hier vorbei! Ab jetzt gewinnt, wer im durchgehenden Ballwechsel zuerst drei Punkte holt!"
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*Während des Ballwechsels landet Dain jedes Mal zuerst auf dem linken Fuß und setzt den rechten einen halben Takt später auf.*"
+        "text": "*Während der atemlose Ballwechsel weitergeht, sehe ich genau hin. Nach jedem Sprung setzt Dain zuerst den linken Fuß auf und stellt das rechte Bein einen halben Takt später leicht ab.*"
     },
     "after2_dain_9_f": {
         "name": "Dain",
-        "text": "3:2 ... Vorbei! *Sie steht auf, reibt ihr rechtes Knie und dreht die Punktetafel um.*"
+        "text": "Hah, hah... 3:2, das Match ist aus! *Noch außer Atem steht Dain vom Boden auf, reibt sich einmal ohne nachzudenken das rechte Knie und dreht die Punktetafel um.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
-        "text": "*Wir verlassen die Turnhalle und gehen die Straße entlang.*"
+        "text": "*Wir kühlen die schweißnasse Hitze ab, kommen aus der Turnhalle und gehen nebeneinander die Straße vor der Schule im Abendrot entlang.*"
     },
     "after2_dain_12": {
         "name": "Dain",
-        "text": "Verloren. Aber du bist ganz schön gut! Ich dachte, du machst keinen Sport."
+        "text": "Ah, so knapp verloren! Aber wie du den Ball triffst, ist alles andere als gewöhnlich. Hast du mir nicht klar gesagt, du machst keinen Sport?"
     },
     "after2_dain_13": {
         "name": "{name}",
-        "text": "Hab ich nie gesagt."
+        "text": "Mit eigenen Worten hab ich nie gesagt, dass ich gar keinen Sport mache."
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Sie lässt den Ball aus den Händen fallen.* Was? Hast du mich reingelegt?"
+        "text": "*Sie reißt die Augen so weit auf, dass der Volleyball unter ihrem Arm dumpf auf den Boden fällt.* Was, dann bin nur ich voll drauf reingefallen?"
     },
     "after2_dain_15": {
         "name": "{name}",
-        "text": "Reingelegt hab ich dich nicht — du hast einfach nie gefragt."
+        "text": "Ich hab dich nicht reingelegt. Du hast einfach nicht richtig nachgefragt."
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*Sie hebt eine Faust bis auf Schulterhöhe und zieht sie dann an ihre eigene Seite.* Du Betrüger. Aber hey, das hat Spaß gemacht!"
+        "text": "*Sie hebt die Faust bis auf Schulterhöhe, lacht kurz auf und drückt sie sich an die Seite.* Du aalglatter Betrüger. Ah, aber so richtig ins Schwitzen zu kommen hat lange nicht mehr so Spaß gemacht!"
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "Nice! Wenn du so spielst, bin ich gleich noch motivierter. Bild dir bloß nicht zu viel auf den Sieg ein. *Unsere Handflächen lösen sich erst nach ihrem Ruf.*"
+        "text": "Gutes Rally! Weil du so gut annimmst, bin ich noch mehr in Fahrt gekommen. Werd nicht übermütig, nur weil du ein Spiel gewonnen hast! *Mit einem Klatschen trifft Dains heiße Handfläche auf meine und löst sich erst einen Schlag später.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "Oh, hat das wehgetan? War wohl ein bisschen zu fest."
+        "text": "Ah, sorry. Kribbelt die Handfläche? Ich war so in Fahrt, dass ich die Kraft nicht dosiert hab."
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
-        "text": "*Dain reibt die Handfläche, die gerade meine berührt hat, an der Seitennaht ihrer Trainingshose entlang.*"
+        "text": "*Auf Dains Schlüsselbein stehen Schweißperlen. Sie reibt die Handfläche, die eben meine berührt hat, ohne Grund an der Seitennaht ihrer Trainingshose ab.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -204,47 +204,47 @@
     "after2_dain_end": {},
     "after2_dain_end_first": {
         "name": "{name}",
-        "text": "*Dain stellt zwei Becher Tteokbokki mit einem Knall ab und reißt die Stäbchenverpackung auf.*"
+        "text": "*Dain stellt zwei dampfende Becher Tteokbokki mit einem Klack auf den Tisch und reißt die Verpackung der Holzstäbchen schwungvoll auf.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
-        "text": "*Im Tteokbokki-Laden vor der Schule pustet Dain auf ihr Essen, um es abzukühlen.*"
+        "text": "*Im Imbiss vor der Schule zieht süß der Geruch von Chilipaste. Dain nimmt ein rotes Reiskuchenstück, spitzt die Lippen und pustet es kühl.*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
-        "text": "Hey, du kennst dich wirklich mit Sport aus, oder?"
+        "text": "Hey, raus mit der Sprache. Du hast früher ziemlich ernst Sport trainiert, oder?"
     },
     "after2_dain_end_2b": {
         "name": "{name}",
-        "text": "Ein bisschen."
+        "text": "Nur ein bisschen, als ich klein war."
     },
     "after2_dain_end_2c": {
         "name": "Dain",
-        "text": "Ein 'bisschen' spielt nicht so! — Gib's zu, du bist gut."
+        "text": "Ach was. Mit nur ein bisschen Übung hältst du meinen Spike nicht so! Gib's zu, du kannst Sport von Haus aus."
     },
     "after2_dain_end_2d": {
         "name": "{name}",
-        "text": "Du warst viel besser."
+        "text": "In meinen Augen hast du hundertmal cooler und besser gespielt."
     },
     "after2_dain_end_3": {
         "name": "{name}",
-        "text": "Seit wann bist du so gut? Bei dem Aufschlag hast du sicher nicht nur in den Pausen gespielt. *Dains Stäbchen halten über dem Tteokbokki-Becher inne.*"
+        "text": "Übrigens, seit wann spielst du so gut Volleyball? Wie du auf dem Feld spielst, ist das kein reines Hobby. *Für einen Moment stockt die Spitze von Dains Stäbchen am Rand des Tteokbokki-Bechers.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
-        "text": "Natürlich. Ich war doch als Sporttalent aufgenommen worden."
+        "text": "Na klar. Ich bin doch damals als Volleyball-Spezialschülerin reingekommen."
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*Sobald das Wort »war« ausgesprochen ist, wandern Dains Stäbchen vom Pappbecher zum Wasser daneben.*"
+        "text": "*In dem Moment, in dem die Vergangenheitsform „reingekommen“ endet, schnellt Dains Hand zum kühlen Wasserbecher neben dem Papierbecher.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
-        "text": "Ah, ist das scharf! Wasser, Wasser!"
+        "text": "Sss, ah, scharf! Hier, Wasser, schnell Wasser!"
     },
     "after2_dain_end_3e": {
         "name": "Dain",
-        "text": "Noch Wasser da, {name}? Mein Mund brennt. *Sie schiebt den Tteokbokki-Becher herüber.*"
+        "text": "Hey {name}, ist da noch mehr kaltes Wasser? In meinem Mund brennt es gerade wie Feuer! *Sie fächelt sich die kribbelnden Lippen und schiebt den Tteokbokki-Becher zu mir rüber.*"
     },
     "after2_dain_rival_seo_high": {
         "name": "Seoyeon",
@@ -272,80 +272,80 @@
     },
     "after2_dain_return": {
         "name": "{name}",
-        "text": "*Auf dem Rückweg zur Schule erreichen wir das Schultor.*"
+        "text": "*Nach dem Abschied von Dain, auf dem Rückweg, um die Tasche zu holen, erreiche ich das Schultor im tiefen Abendrot.*"
     },
     "after2_seo_1": {
         "name": "{name}",
-        "text": "*Im Schülerratsraum sitzt Seoyeon allein vor einem Stapel Unterlagen.*"
+        "text": "*Der stille Schülerratsraum nach Schulschluss. Am langen Konferenztisch sitzt Seoyeon allein vor einem Stapel Unterlagen und führt den Stift.*"
     },
     "after2_seo_2": {
         "name": "Seoyeon",
-        "text": "Du bist wirklich gekommen. — Ehrlich gesagt, hab ich nicht damit gerechnet."
+        "text": "Du bist wirklich gekommen. — Ehrlich gesagt hab ich gedacht, du sagst, du bist beschäftigt, und bleibst weg."
     },
     "after2_seo_3": {
         "name": "{name}",
-        "text": "Wenn man mich ruft, komm ich halt."
+        "text": "Du hast mich selbst gerufen. Da komm ich natürlich."
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "Gut, dass ich dich gefragt habe."
+        "text": "Gut, dass ich mich getraut habe, dich zu rufen."
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "{name}, schreib zuerst auf, was du übernehmen kannst. *Sie dreht das Klemmbrett zu mir.*"
+        "text": "So, {name}. Such dir aus der Liste zuerst aus, was du übernehmen willst. *Sie zieht mir den Stuhl her und dreht das Klemmbrett zu mir.*"
     },
     "after2_seo_5": {
         "name": "{name}",
-        "text": "Du warst diejenige, die um Hilfe gebeten hat."
+        "text": "Du rufst mich, weil Hände fehlen, und gibst mir dann die Wahl."
     },
     "after2_seo_6": {
         "name": "Seoyeon",
-        "text": "Ich meine: Danke, dass du gekommen bist."
+        "text": "Eine Sonderbehandlung. Weil ich dankbar bin, dass du auf meine Bitte hin gekommen bist."
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "Veranstaltungsbudgets und Clubanträge? Was soll ich zuerst sortieren?"
+        "text": "Das sind die Budgetentwürfe für die Veranstaltungen im Frühjahrssemester und ein Bündel Clubanträge. Womit fang ich an?"
     },
     "after2_seo_7": {},
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Die hier nach Datum, die dort nach Schulclub. — Kannst du gut sortieren?"
+        "text": "Die Budgets nach Datum, das da drüben nach Club. — Hast du solche Unterlagen schon mal sortiert?"
     },
     "after2_seo_8a2": {
         "name": "{name}",
-        "text": "Nicht super, aber auch nicht schlecht."
+        "text": "Richtig gut bin ich nicht, aber ein Chaos mach ich auch nicht draus."
     },
     "after2_seo_8a3": {
         "name": "Seoyeon",
-        "text": "Ganz schön vage."
+        "text": "Ziemlich vage, die Antwort."
     },
     "after2_seo_8a4": {
         "name": "{name}",
-        "text": "Wie deine Komplimente. Die sind auch vage."
+        "text": "Ist doch ähnlich wie deine Komplimente sonst. Du redest auch immer so vage drum herum."
     },
     "after2_seo_8b": {
         "name": "{name}",
-        "text": "Wir haben zusammen gearbeitet. Ein Kompliment kann ich doch bekommen, oder? Ohne drum herumzureden. *Seoyeon hört auf zu blättern und sieht zu {name}.*"
+        "text": "Ich helfe hier richtig mit. Ein klares Kompliment wäre doch drin? Nicht so vage drum herumreden. *Seoyeons Finger, die die Unterlagen umblättern, halten inne, und ihr Blick hinter der Brille geht zu {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "Du bist schneller darin, als ich dachte."
+        "text": "Deine Hände sind schneller und genauer, als ich gedacht hab."
     },
     "after2_seo_8b3": {
         "name": "{name}",
-        "text": "Ist das ein Kompliment?"
+        "text": "Darf ich das eben als offizielles Kompliment nehmen?"
     },
     "after2_seo_8b4": {
         "name": "Seoyeon",
-        "text": "Ist eins. Nimm's einfach an."
+        "text": "Ja. Kompliment der Extraklasse. Nimm es dankbar an."
     },
     "after2_seo_8b4_b": {
         "name": "Seoyeon",
-        "text": "*Sie nennt es ein Kompliment und ordnet sofort wieder die Unterlagen. Als sie den Nacken kreisen lässt, zieht sie einmal mit der Hand an ihrem Hemdkragen.*"
+        "text": "*Kaum hat sie es bereitwillig ein Kompliment genannt, senkt sie den Blick und richtet die Blattecken aus. Sie dreht den steifen Hals ein wenig und zieht unter dem geröteten Nacken einmal mit den Fingerspitzen am Hemdkragen.*"
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Ein orangefarbener Lichtstreifen fällt durch den Spalt der Jalousie und teilt die Unterlagen. Seoyeon richtet die Ecken der Blätter sauber aneinander aus.*",
+        "text": "*Durch den Spalt der halb offenen Jalousie fällt orangefarbenes Abendrot und färbt die Unterlagen auf dem Tisch und Seoyeons Profil warm.*",
         "choices": [
             "Der Sonnenuntergang ist schön. Ich meine den da draußen.",
             "Wenn du das jeden Tag machst, bist du es bestimmt gewohnt.",
@@ -355,77 +355,77 @@
     },
     "after2_seo_sunset_joke": {
         "name": "{name}",
-        "text": "Ich muss doch klarstellen, dass ich die Aussicht meine. Wenn du mich missverstehst, habe ich das Problem. *Seoyeons Brille rutscht zur Nasenspitze; ihr Stift gleitet aus dem Datumsfeld.*"
+        "text": "Ich muss vorher klarstellen, dass ich das Abendrot draußen meine. Wenn du das als Satz über dein Gesicht missverstehst, hab nur ich das Problem. *Für einen Moment rutscht Seoyeons Brille leicht zur Nasenspitze, und die Stiftspitze in ihrer Hand rutscht aus dem Datumsfeld.*"
     },
     "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "…Dass du das extra dazusagst, macht es nur verdächtiger."
+        "text": "...Wer hat was gesagt? Dass du das extra noch dazusagst, ist viel verdächtiger."
     },
     "after2_seo_sunset_react_b": {},
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
-        "text": "Geht schon. Das mache ich jeden Tag."
+        "text": "Mir geht's gut. So viel Papierkram ist bei mir Alltag."
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
-        "text": "*Beim Kreisen der Schultern zieht sie leise die Luft ein.*"
+        "text": "*Selbst während sie das sagt, dreht sie langsam die steifen Schultern und zieht leise die Luft ein.*"
     },
     "after2_seo_neck_react_b": {
         "name": "{name}",
-        "text": "Warte. Leg das mal darunter."
+        "text": "Warte kurz. Stütz das unter die Unterlagen."
     },
     "after2_seo_neck_react_c": {
         "name": "{name}",
-        "text": "*Ich schiebe eine leere Ablagebox vom Stapel an der Seite vor Seoyeon.*"
+        "text": "*Ich ziehe die stabile leere Aktenbox, die in der Ecke gestapelt war, heran und schiebe sie vor Seoyeon auf den Tisch.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Du willst das als Ablage benutzen?"
+        "text": "Die leere Aktenbox als Stütze nehmen, wie einen Leseständer?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
-        "text": "Die Kiste braucht niemand. Deinen Nacken gibt es nur einmal."
+        "text": "Ist doch eh eine leere Kiste. Den Nacken der Schülersprecherin gibt's nur einmal."
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
-        "text": "Du hast immer eine Antwort parat."
+        "text": "Du kannst einen Satz wirklich so setzen, dass er nicht unangenehm ist."
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*Seoyeon legt ihre Unterlagen auf die Ablagebox. Sie muss den Kopf nun etwas weniger stark senken.*"
+        "text": "*Seoyeon tut so, als gäbe sie nach, und legt den Stapel auf die Aktenbox. Die Augenhöhe ist höher, und der Winkel, in dem sie den Kopf senkte, wird deutlich flacher.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-        "text": "Nur heute lasse ich das gelten."
+        "text": "Ist tatsächlich bequemer, als ich dachte. Nur heute lass ich deine Idee gelten."
     },
     "after2_seo_neck_high_2_b": {
         "name": "Seoyeon",
-        "text": "Ordnen wir sie nach Datum. Die Kiste bleibt hier. *Sie blättert weiter.*"
+        "text": "So, den Rest ordnen wir noch nach Datum. Die Kiste bleibt hier. *Aus so kurzer Distanz, dass sich die Schultern fast berühren, blättert Seoyeon das nächste Blatt um.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Sie stellt die Aktenbox zwischen uns an den Rand des Schreibtischs.*"
+        "text": "*Ich stelle die mitgebrachte Aktenbox leise an die Tischkante zwischen uns.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
-        "text": "Wenn du nicht willst, dann nicht."
+        "text": "Wenn es unbequem ist und du nicht willst, musst du sie nicht benutzen."
     },
     "after2_seo_neck_low_c": {
         "name": "Seoyeon",
-        "text": "*Sie nimmt die Box und stellt sie neben die Unterlagen.*"
+        "text": "*Seoyeon zieht die Kiste wortlos heran und stellt sie direkt neben ihren Stapel.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "Ich probiere es nachher aus."
+        "text": "Ich mach das hier erst fertig. Beim nächsten Stapel probier ich sie."
     },
     "after2_seo_9": {
         "name": "{name}",
-        "text": "*Als der Schatten der Jalousie bis zum Schreibtischrand reicht, sind die Unterlagen fast fertig sortiert.*"
+        "text": "*Erst als der Schatten der Jalousie am Fenster lang bis ans Tischende reicht, ist der hohe Stapel fast fertig sortiert.*"
     },
     "after2_seo_choice2": {
         "name": "{name}",
-        "text": "*Die Unterlagen sind fast fertig.*",
+        "text": "*Ich klappe die letzte Akte zu und sehe mich im Schülerratsraum um, in dem das Abendrot dunkler geworden ist.*",
         "choices": [
             "Soll ich noch etwas bleiben? Es ist doch noch etwas übrig, oder?",
             "Wenn wir fertig sind, geh ich",
@@ -434,31 +434,31 @@
     },
     "after2_seo_choice2_trap": {
         "name": "Seoyeon",
-        "text": "*Sie zieht den Papierstapel zu sich.* Klar. Es war ja von Anfang an meine Arbeit."
+        "text": "*Sie zieht den restlichen Stapel mit einem Ruck an sich.* Ja. War sowieso von Anfang an meine Arbeit, also geh ruhig."
     },
     "after2_seo_stay": {
         "name": "Seoyeon",
-        "text": "Ich halte dich nicht wegen der restlichen Arbeit hier. Du musst nicht sofort gehen, wenn wir fertig sind. *Sie legt die Papiere ab und zieht die Jalousie eine Stufe hoch.*"
+        "text": "Ich halt dich nicht fest, um dir den Rest aufzuhalsen. Nur weil alles sortiert ist, musst du nicht sofort aufstehen. *Seoyeon legt den Stift hin und zieht die Jalousie am Fenster eine Stufe hoch.*"
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
-        "text": "Ich mag es, wie ruhig es um diese Zeit ist."
+        "text": "Der Schülerratsraum um diese Zeit, wenn alle raus sind, ist so still. Das mag ich wirklich."
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Auch eine Schülersprecherin macht mal Pause?"
+        "text": "Selbst die große Schülersprecherin hat mal Zeit, nicht zu arbeiten und nur ins Leere zu starren?"
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
-        "text": "Ich wollte gerade eine Pause machen."
+        "text": "Ja. Genau ab jetzt ruh ich mich neben dir aus."
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "Das letzte Blatt, oder? Prüfen wir das zusammen. *Ich ziehe es neben das umgedrehte Klemmbrett.*"
+        "text": "Hier liegt noch das letzte Blatt der Abschlusscheckliste? Nur das noch zusammen ansehen, dann Pause. *Ich ziehe das letzte Blatt parallel neben das umgedrehte Klemmbrett.*"
     },
     "after2_seo_leave": {
         "name": "Seoyeon",
-        "text": "*Mit beiden Händen drückt sie den fertigen Stapel flach und richtet seine Kanten aus.*"
+        "text": "*Mit beiden Händen drückt sie leicht auf den sauber geordneten Stapel und richtet ihn aus.*"
     },
     "after2_seo_end": {},
     "after2_seo_skinship_1": {
@@ -467,15 +467,15 @@
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
-        "text": "Halt still. ...So. *Erst nachdem der Putzwagen vorbeigefahren ist, nimmt sie die Hand von meinem Hemdkragen.*"
+        "text": "Beweg dich nicht. Bleib still. ...So, fertig. *Erst nachdem der Putzwagen des diensthabenden Schülers ratternd vorbeigefahren ist, lösen sich Seoyeons Fingerspitzen, die meinen Hemdkragen gehalten haben, langsam.*"
     },
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
-        "text": "Da war etwas Staub."
+        "text": "Am Kragen hing so ein kleines Fädchen."
     },
     "after2_seo_return": {
         "name": "{name}",
-        "text": "*Ich verlasse den Schülerratsraum und gehe zum Schultor.*"
+        "text": "*Die kribbelnde Wärme sitzt noch in meinem Nacken, als ich den Schülerratsraum verlasse und zum Schultor gehe.*"
     },
     "after2_seo_rival_dain_high": {
         "name": "Dain",
@@ -503,59 +503,59 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Ich sehe auf den Zettel vom Morgen und gehe zum Anbau.*"
+        "text": "*Ich denke an den Zettel von heute Morgen und gehe zum Bibliotheksanbau, wo kaum jemand unterwegs ist.*"
     },
     "after2_yuna_1_b": {
         "name": "{name}",
-        "text": "*Im Flur des Nebengebäudes ist niemand zu sehen. Nur die Tür zum geheimen Leseraum steht zwei Fingerbreit offen.*"
+        "text": "*Im Flur des Anbaus, in den das Abendrot schräg einfällt, ist keine Menschenseele. Nur die Tür zum geheimen Leseraum in der Ecke steht einen Spalt offen, zwei Fingerbreit.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*Die Tür knarrt. Yuna liest auf dem Sofa.*"
+        "text": "*Als ich die Tür aufdrücke, knarren die Scharniere leise. Yuna sitzt tief ins Sofa gelehnt und hebt den Kopf vom Buch.*"
     },
     "after2_yuna_2_b": {
         "name": "Yuna",
-        "text": "*Sie schiebt einen der Ohrhörer, der auf ihrem Buch liegt, zur Seite.*"
+        "text": "*Sie nimmt einen der weißen Ohrhörer, der auf der aufgeschlagenen Seite lag, und schiebt ihn leicht beiseite.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
-        "text": "Du bist gekommen."
+        "text": "Du bist wieder da."
     },
     "after2_yuna_4": {
         "name": "{name}",
-        "text": "Du hast mich nicht gerufen."
+        "text": "Du hast mich nach der Schule doch nie extra hergerufen."
     },
     "after2_yuna_5": {
         "name": "Yuna",
-        "text": "Muss ich dich rufen, damit du kommst?"
+        "text": "Kommst du nur, wenn ich dich per Zettel rufe?"
     },
     "after2_yuna_6": {
         "name": "Yuna",
-        "text": "*Ihr Zeigefinger fährt zweimal denselben Satz entlang.*"
+        "text": "*Yunas schmaler Zeigefinger fährt langsam zweimal unter demselben Satz auf der Seite entlang.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
-        "text": "Die Tür war offen."
+        "text": "Bin nur vorbeigegangen. Die Tür stand einen Spalt offen."
     },
     "after2_yuna_8": {
         "name": "Yuna",
-        "text": "Zufällig."
+        "text": "Hab ich sie wohl aus Versehen nicht ganz zugemacht."
     },
     "after2_yuna_8b": {
         "name": "Yuna",
-        "text": "Setz dich neben mich. *Ein Ohrhörer liegt auf dem hinteren Stuhl. Sie zeigt auf das Kissen neben sich.*"
+        "text": "Steh nicht rum. Setz dich neben mich. *Auf dem Kissen weiter innen auf dem Sofa liegt ein Ohrhörer. Yuna zeigt mit der Fingerspitze auf den Platz direkt neben sich.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
-        "text": "Hör zu."
+        "text": "Das hier. Hör es dir mit mir an."
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "Klaviermusik. Stört dich das nicht beim Lesen? *Das Kabel ist zwischen uns gespannt.*"
+        "text": "Ein ruhiges Klavierstück. Stört dich die Musik nicht beim Lesen? *Wir haben jeder einen Ohrhörer im Ohr, und zwischen uns auf dem Sofa spannt sich das dünne Kabel haarscharf.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*Während sie spricht, löst sie einen Knoten aus dem Ohrhörerkabel.* Jeder, der nach der Schule hierherkommt."
+        "text": "*Sie löst das verhedderte Ohrhörerkabel einmal mit den Fingerspitzen und fängt leise an zu sprechen.* Jemand, der nach der Schule bis in dieses Zimmer kommt."
     },
     "after2_yuna_choice_pre2": {
         "name": "{name}",
@@ -563,15 +563,15 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Seit diesem älteren Schüler nicht mehr."
+        "text": "Seit dieser ältere Schüler weg ist, war keine einzige Person mehr hier."
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
-        "text": "*Yuna hebt den Kopf und sieht {name} an. Das Kopfhörerkabel liegt reglos um ihre Finger gewickelt.*"
+        "text": "*Yuna hebt über das Buch den Kopf und sieht {name} reglos an, fast schon hartnäckig. Das Ohrhörerkabel zwischen Yunas weißen Fingern zuckt nicht.*"
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Das Kopfhörerkabel schlingt sich noch einmal um Yunas Finger.*",
+        "text": "*Im Abstand, so eng, dass sich die Schultern fast berühren, zieht sich das Ohrhörerkabel um Yunas Finger noch eine Windung fester.*",
         "choices": [
             "Soll ich jeden Tag kommen?",
             "Es ist schön, weil es ruhig ist",
@@ -580,47 +580,47 @@
     },
     "after2_yuna_everyday": {
         "name": "Yuna",
-        "text": "Jeden Tag, das sagst du so einfach. Ich habe dich nicht mal gebeten zu kommen. *Sie löst den Knoten im Kopfhörerkabel und wickelt es wieder um den Zeigefinger.*"
+        "text": "Jeden Tag kommen, das sagst du so leicht. Ich hab dir nie erlaubt, jeden Tag zu kommen. *Sie löst den Knoten am Finger langsam, wickelt das Kabel wieder um den Zeigefinger und hält es fest.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",
-        "text": "Komm, wenn du willst. Ich werde dich nicht aufhalten."
+        "text": "Trotzdem, wenn du kommen willst, komm. Ich halt dich nicht extra auf."
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "Aber jeden Tag wäre etwas viel. Nur ab und zu."
+        "text": "Dafür ist es mir etwas unangenehm, wenn du jeden Tag aufkreuzt. Komm nur ab und zu, wenn du dran denkst."
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*Yuna lässt das Lesezeichen stecken und bleibt auf derselben Seite.*"
+        "text": "*Yuna lässt das Lesezeichen stecken und kann eine Weile die Augen nicht von derselben Seite lösen.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "Deshalb mag ich es hier."
+        "text": "Stimmt. Deshalb mag ich es hier auch am liebsten."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "Es ist nicht nur ruhig, wenn ich allein bin. Mit dir hier kann ich auch lesen. *Sie legt das Lesezeichen eine Seite zurück und lässt den Kopfhörer am Sofaende liegen.*"
+        "text": "War wohl doch nicht nur ruhig, wenn ich allein bin. Selbst mit dir neben mir kann ich lesen, ohne gestört zu werden. *Auch als sie das Lesezeichen eine Seite zurücksetzt, räumt sie die Ohrhörer auf dem Sofa nicht weg.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "Ich sollte jetzt los. Den Ohrhörer lege ich hierhin. *Ich nehme meine Tasche.*"
+        "text": "Ich sollte jetzt gehen, bevor es dunkel wird. Den geliehenen Ohrhörer leg ich hier hin. *Ich stehe vom Sofa auf und nehme meine Tasche.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
-        "text": "*Wir greifen nach demselben Buch — unsere Hände liegen übereinander.*"
+        "text": "*Als ich die Hand ausstrecke, um das Buch auf dem Tisch zu ordnen, legt sich meine Handfläche direkt auf Yunas kalten, weißen Handrücken.*"
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "...Ich wollte es nicht zuerst nehmen. Ich gebe dir das Buch. *Die Buchecke drückt 3 Sekunden auf unsere übereinanderliegenden Hände, bevor sie ihre zurückzieht.*"
+        "text": "...Ich wollte nicht als Erste zugreifen. Nimm du das Buch. *Die Buchecke bleibt unter den übereinanderliegenden Fingerspitzen gedrückt, und erst nach etwa 3 Sekunden Stille zieht Yuna langsam die Hand weg.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
-        "text": "*Nachdem sie ihre Hand weggezogen hat, dreht Yuna das Buch mit dem Rücken zu mir und reicht es mir.*"
+        "text": "*Nachdem Yuna die Hand weggezogen hat, dreht sie den Buchrücken so, dass ich besser fassen kann, und reicht ihn mir vorsichtig.*"
     },
     "after2_yuna_return": {
         "name": "{name}",
-        "text": "*Als ich den Bibliotheksanbau verlasse, schalten sich die automatischen Flurlichter ein.*"
+        "text": "*Mit Yunas kühler Berührung noch in der Handfläche trete ich aus dem Anbau, und das Sensorlicht an der dunklen Flurdecke springt flackernd an.*"
     },
     "after2_yuna_rival_dain_high": {
         "name": "Dain",
@@ -675,40 +675,40 @@
     },
     "after2_group_return": {
         "name": "{name}",
-        "text": "*Nach dem Gespräch nehme ich meine Tasche und gehe zum Schultor.*"
+        "text": "*Ich beende das Gespräch, das noch leise nachklingt, richte die Tasche auf der Schulter und gehe zum Schultor.*"
     },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",
-        "text": "*Auf dem Heimweg. Als ich das Schultor verlasse, kommt Minsu von hinten auf mich zu.*"
+        "text": "*Heimweg im Abendrot. Gerade als ich aus dem Schultor trete, kommt Minsu mit langen Schritten von hinten und läuft neben mir her.*"
     },
     "minsu_warn_1_b": {
         "name": "Minsu",
-        "text": "*Er holt mit großen Schritten auf und geht neben mir her.*"
+        "text": "*Er passt sich meinem Schritt an, geht neben mir her und steckt beide Hände in die Taschen.*"
     },
     "minsu_warn_2": {
         "name": "Minsu",
-        "text": "Hey."
+        "text": "Hey, Neuzugang."
     },
     "minsu_warn_3": {
         "name": "{name}",
-        "text": "Was?"
+        "text": "Hm? Warum rufst du mich?"
     },
     "minsu_warn_4": {
         "name": "Minsu",
-        "text": "Du hast in letzter Zeit ganz schön Spaß, hm?"
+        "text": "Macht dir die Schule neuerdings ziemlich Spaß?"
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Minsu behält die Fußgängerampel vor dem Schultor im Blick.*"
+        "text": "*Minsu sieht nicht zu mir her und starrt nur auf die blinkende Fußgängerampel gegenüber vom Schultor.*"
     },
     "minsu_warn_5": {
         "name": "{name}",
-        "text": "Warum fragst du das so plötzlich?"
+        "text": "Was soll das auf einmal?"
     },
     "hidden_nurse_d2_return": {
         "name": "{name}",
-        "text": "*Ich verlasse das Krankenzimmer und kehre ins Klassenzimmer zurück, wo das Nachmittagslicht über den Tischen liegt.*"
+        "text": "*Als ich aus dem Krankenzimmer ins Klassenzimmer zurückkomme, liegt das rötliche Licht nach Schulschluss lang über den leeren Tischen.*"
     },
     "hidden_nurse_d2_freetalk": {
         "name": "Schulkrankenschwester",
@@ -718,7 +718,7 @@
     },
     "minsu_warn_6": {
         "name": "Minsu",
-        "text": "Mittags die eine, nach der Schule schon die nächste. Du hast bestimmt deinen Spaß. — Ich sag ja nur. *Er zuckt mit den Schultern und geht voraus.*"
+        "text": "Mittags eine, nach der Schule noch eine. Dir macht das bestimmt Spaß. — Na ja, von der Seite sieht es halt so aus. *Er zuckt einmal leicht mit den Schultern, und sobald die Ampel umspringt, geht er voraus.*"
     },
     "after2_yuna_trap": {
         "name": "Yuna",
@@ -726,89 +726,89 @@
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",
-        "text": "Das klingt, als wolltest du jemand anderen mitbringen. Ich habe nie gesagt, dass jeder herkommen kann. *Sie legt das Lesezeichen eine Seite weiter und steckt den Kopfhörer vom Sofaende in ihre Tasche.*"
+        "text": "Das eben klingt so, als würdest du fragen, ob du nächstes Mal jemand anderen mitbringen darfst. Ich hab nie gesagt, dass du hier irgendwen mitbringen kannst. *Sie setzt das Lesezeichen eine Seite weiter vorn und packt die Ohrhörer vom Sofaende in die Tasche.*"
     },
     "after2_seo_tone": {},
     "after2_dain_tone": {},
     "after2_yuna_tone": {},
     "after2_seo_cool_1": {
         "name": "Seoyeon",
-        "text": "Wenn du da bist, fang mit der Liste an. *Sie schiebt das Klemmbrett rüber.*"
+        "text": "Wenn du da bist, sortier zuerst die markierte Liste hier. *In einer sachlichen Geste schiebt sie das Klemmbrett herüber.*"
     },
     "after2_seo_neg_1": {
         "name": "Seoyeon",
-        "text": "*Sie macht Anwesenheit und legt den Stift hin.* Nur die Pflichtfelder. Rest morgen."
+        "text": "*Sie prüft nur die Anwesenheitsliste und legt den Stift hin.* Füll nur die nötigen Felder aus und geh. Über Privates reden wir morgen."
     },
     "after2_dain_cool_1": {
         "name": "Dain",
-        "text": "Wenn du da bist, Bälle aufsammeln. Reden später."
+        "text": "Wenn du da bist, heb zuerst die Bälle auf, die auf dem Boden liegen. Quatschen nach dem Training."
     },
     "after2_dain_neg_1": {
         "name": "Dain",
-        "text": "*Sie wickelt die Netzschnur und schaut nicht her.* Heute schlage ich allein. Komm nicht in die Quere."
+        "text": "*Sie wickelt die lockere Netzleine fest und sieht nicht einmal her.* Heute trainier ich einfach allein. Steh nicht neben mir und stör."
     },
     "after2_yuna_cool_1": {
         "name": "Yuna",
-        "text": "*Sie nimmt nur einen Ohrhörer raus.* Lesen geht. Wenig reden."
+        "text": "*Sie schiebt nur einen Ohrhörer auf dem Sofa leicht beiseite.* Neben mir lesen geht. Aber spar dir die Worte."
     },
     "after2_yuna_neg_1": {
         "name": "Yuna",
-        "text": "*Sie klappt das Buch nicht zu. Kein Zettel.* Heute will ich niemanden."
+        "text": "*Sie klappt das aufgeschlagene Buch nicht zu und reicht keinen Zettel.* Heute will ich mit niemandem zusammen sein."
     },
     "after2_dain_rival_seo_neg": {
         "name": "Seoyeon",
-        "text": "*Sie geht am Kiosk vorbei, ohne langsamer zu werden.*"
+        "text": "*Sie geht am Laden vorbei, ohne auch nur einmal hinzusehen, und wird nicht langsamer.*"
     },
     "after2_dain_rival_yuna_neg": {
         "name": "{name}",
-        "text": "*Am Anbau nimmt Yuna ihr Buch, das Gesicht abgewandt. Kein Blickkontakt.*"
+        "text": "*Yuna geht zum Anbau, den Kopf zur anderen Seite gedreht, das Buch nur an die Brust gedrückt, und geht vorbei.*"
     },
     "after2_seo_rival_dain_neg": {
         "name": "Dain",
-        "text": "*Sie schiebt den Ballkorb in die Halle. Kein Winken.*"
+        "text": "*Wortlos schiebt sie den Ballkorb grob vor sich her und verschwindet in der Halle. Kein Winken wie sonst.*"
     },
     "after2_seo_rival_yuna_neg": {
         "name": "{name}",
-        "text": "*Auf dem Absatz sieht Yuna mit dem Buch zur Wand. Nicht mal ein Nicken.*"
+        "text": "*Yuna steht auf dem Treppenabsatz, das Buch in der Hand, und sieht nur die Wand gegenüber an. Nicht einmal ein kurzes Nicken.*"
     },
     "after2_yuna_rival_dain_neg": {
         "name": "Dain",
-        "text": "*Am Ende des Gangs hebt sie einen Ball auf und dreht sich weg.*"
+        "text": "*Sie schnappt sich nur den einen Volleyball, der ans Ende des Flurs gerollt ist, und dreht wortlos den Rücken zu.*"
     },
     "after2_yuna_rival_seo_neg": {
         "name": "Seoyeon",
-        "text": "*Sie geht vorbei, die Liste am Arm. Kein Halt.*"
+        "text": "*Die Anwesenheitsliste fest an die Innenseite des Arms gedrückt, streift sie durch den Flur. Das Geräusch ihrer Schuhe setzt kein einziges Mal aus.*"
     },
     "after2_seo_neck_neg": {
         "name": "{name}",
-        "text": "Das ist ein leerer Karton."
+        "text": "Ist doch eh nur eine leere Kiste, die niemand benutzt."
     },
     "after2_seo_neck_neg_b": {
         "name": "Seoyeon",
-        "text": "*Sie schiebt den Karton zurück.* Brauche ich nicht. Halt dich an die Liste."
+        "text": "*Sie schiebt die vorgeschobene Kiste wieder in ihre Ecke zurück.* Eine Stütze brauche ich nicht. Halt dich an die Liste, die dir zugeteilt ist, und mach keine Fehler."
     },
     "after2_seo_neg_leave": {
         "name": "{name}",
-        "text": "*Ich fülle nur die leeren Felder und verlasse den Schülerrat.*"
+        "text": "*Ich fülle schweigend nur die Felder aus, die man mir aufgetragen hat, und gehe durch die kühle Tür des Schülerratsraums.*"
     },
     "after2_dain_neg_leave": {
         "name": "{name}",
-        "text": "*Ich verlasse die Halle und bleibe im Flur stehen.*"
+        "text": "*Ich trete aus der Halle, in der die Luft schwer liegt, und gehe allein zum Schulkiosk.*"
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*Ich gehe am Sitzplatz vorbei, ohne das Buch zu schließen, und bleibe bei der Tür stehen.*"
+        "text": "*Ich gehe leise an dem Platz vorbei, an dem Yuna das Buch nicht zuklappt, und greife nach der Klinke der Anbautür.*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",
-        "text": "*Ich lege Bälle in den Korb. Dain sieht zum Netz und geht nur in Aufschlaghaltung.*"
+        "text": "*Ich hebe die Bälle in der Ecke des Feldes auf und lege sie in den Korb. Dain sieht nur zum fernen Netz und geht schweigend in Aufschlaghaltung.*"
     },
     "after2_yuna_cool_cont": {
         "name": "{name}",
-        "text": "*Ich lese eine Seite im aufgeschlagenen Buch. Yuna steckt den Ohrhörer wieder ein und blättert weiter.*"
+        "text": "*Ich lese leise eine Seite im aufgeschlagenen Buch. Yuna steckt den Ohrhörer, den sie rausgenommen hatte, wieder ins Ohr und blättert zur nächsten Seite.*"
     },
     "after2_seo_cool_work": {
         "name": "{name}",
-        "text": "*Wir fangen mit dem Sortieren an. Veranstaltungsbudgets, Clubanträge. Ein ordentlicher Stapel.*"
+        "text": "*Schweigend fange ich an, die Unterlagen zu sortieren. Vom Budgetentwurf für die Veranstaltungen im Frühjahrssemester bis zu den Clubanträgen liegt ein ziemlicher Stapel.*"
     }
 }

@@ -1,190 +1,190 @@
 {
     "hidden_homeroom_d4_low": {
         "name": "Homeroom Teacher",
-        "text": "*At the meeting spot, your homeroom teacher pulls the paper bag closer to her chest.* I'm not showing you the manuscript today. I'll see you at school."
+        "text": "*In front of the meeting place, the homeroom teacher I run into pulls the worn paper envelope deep against her chest.* Sorry, but I can't show you the manuscript this time. See you at school on Monday."
     },
     "hidden_homeroom_d4_neg": {
         "name": "Homeroom Teacher",
-        "text": "*She tucks the bag against her chest.* No manuscript. Go."
+        "text": "*The homeroom teacher's face has gone cold as she shoves the paper envelope into her bag.* There's no manuscript for you to see. Go on back."
     },
     "hidden_nurse_d4_low": {
         "name": "School Nurse",
-        "text": "*The school nurse zips up the emergency kit she was organizing.* I'll finish this on my own today. You should get back to your plans."
+        "text": "*The school nurse pulls the zipper of the emergency kit she was organizing all the way shut.* I can finish this much on my own just fine. You go take care of your schedule."
     },
     "hidden_nurse_d4_neg": {
         "name": "School Nurse",
-        "text": "*She zips the kit shut.* I'm doing this alone today. Go back."
+        "text": "*Without even looking at me, the school nurse snaps the kit zipper shut.* I'll finish the rest of the organizing alone, so go on back."
     },
     "morning4_start": {
         "name": "{name}",
-        "text": "*Day four, Saturday. I sit up in bed and check today’s plans.*"
+        "text": "*The fourth day, Saturday morning. The moment I open my eyes to weekend sunlight slipping through a gap in the curtains, I pull the phone from beside my pillow and check today's schedule.*"
     },
     "morning4_date_plan_check": {},
     "morning4_nightmare_check": {},
     "morning4_nightmare_seo": {
         "name": "{name}",
-        "text": "*The alarm rings. A message from Seoyeon is waiting on my phone.*"
+        "text": "*A short buzz, and the alarm goes off. On the screen I turn on half-asleep, Seoyeon's name, the one I waited for all night, comes up first.*"
     },
     "morning4_nightmare_yuna": {
         "name": "{name}",
-        "text": "*The alarm rings. A message from Yuna is waiting on my phone.*"
+        "text": "*A short buzz, and the alarm goes off. Through blurry eyes, a message from Yuna sits quietly in the middle of the screen I just turned on.*"
     },
     "morning4_nightmare_dain": {
         "name": "{name}",
-        "text": "*The alarm rings. A message from Dain is waiting on my phone.*"
+        "text": "*A short buzz, and the alarm goes off. The moment the screen comes on, Dain's message, already full of energy this early, catches my eye.*"
     },
     "morning4_nightmare_after": {
         "name": "{name}",
-        "text": "*I check the notification again.*"
+        "text": "*Cheek buried in the pillow, I scroll slowly through the notifications that piled up overnight, one by one.*"
     },
     "minsu_cheer_1": {
         "name": "{name}",
-        "text": "*I check my phone. Morning message. — Minsu's at the top.*"
+        "text": "*The moment I unlock the phone, Minsu's name glints on the top line of the messenger.*"
     },
     "minsu_cheer_1_b": {
         "name": "Minsu",
-        "text": "Hey, you've got a date today, right?"
+        "text": "Hey, you've got a weekend date today, right?"
     },
     "minsu_cheer_1_c": {
         "name": "{name}",
-        "text": "How did you know?"
+        "text": "How did you know that?"
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
-        "text": "You talked about the weekend all over class. Think I wouldn't notice? lol"
+        "text": "You spent all Friday in class in a frenzy locking in weekend plans. Thought I wouldn't notice? haha"
     },
     "minsu_cheer_2": {
         "name": "Minsu",
-        "text": "have fun out there lol"
+        "text": "Dress properly. Don't wreck the mood. Do well out there haha"
     },
     "minsu_cheer_3": {
         "name": "{name}",
-        "text": "yeah yeah."
+        "text": "I'll handle it."
     },
     "minsu_cheer_4_branch": {},
     "minsu_cheer_4_ins_single": {
         "name": "{name}",
-        "text": "*I check my phone calendar. I have only one date today.*"
+        "text": "*I open the calendar app. The single appointment time in Saturday's box stands out sharp.*"
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*The overlapping appointments remain on my calendar. I’ve already been told that moving the times won’t solve this.*"
+        "text": "*The appointments I overlapped, precarious as they are, are still there on the calendar. I already know too well this isn't something I can get past just by splitting the time, and my fingers feel heavy.*"
     },
     "minsu_cheer_4_d": {},
     "minsu_cheer_4_e": {},
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*I take a deep breath and check the messages again.*"
+        "text": "*I open the window, breathe in the cool morning air, and open the message with the meeting place again.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",
-        "text": "Don't be late. The fountain in the park, ten o'clock."
+        "text": "Don't be late. In front of the park fountain, 10 sharp."
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*The message ends there.*"
+        "text": "*It's one neat line, but the timestamp is seven in the morning. I can picture her getting ready long before, the way Seoyeon would, and a smile pulls at my mouth.*"
     },
     "morning4_seo_msg_1_c": {},
     "morning4_yuna_msg_1": {
         "name": "Yuna",
-        "text": "10 a.m. Cafe by the station. If you're late, I'm gone."
+        "text": "10. Cafe in front of the station. If you're late, I just leave"
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Only two sentences. There isn't even a period after “If you're late, I'm leaving.”*"
+        "text": "*There's not even a period at the end of those two short lines, but I can already see Yuna showing up early anyway, sitting in profile by the window.*"
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
-        "text": "*The message is short. It's my only date today.*"
+        "text": "*Past those plain sentences, I almost hear Yuna's quiet voice. I decide to give the whole day to just one person.*"
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "Today’s the day! Outside the gym at ten. Why am I this nervous? Should I even send this?"
+        "text": "It's finally today! You didn't forget, 10 in front of the gym, right? Ah, what do I do, I'm nervous already. Pretend you didn't see that last line!"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
-        "text": "*Weekend morning. I check the notifications and put my phone down.*"
+        "text": "*A quiet room on a weekend morning. I clear the notifications that came in overnight and set my phone down on the bedsheet.*"
     },
     "morning4_hidden_check": {
         "name": "{name}",
-        "text": "*On a weekend morning, I wait at the intersection outside school.*"
+        "text": "*Cutting through the early morning air, I wait at the crosswalk of the intersection in front of school for the light to change.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_missed": {
         "name": "{name}",
-        "text": "*A door closes somewhere inside the main gate. Meanwhile, the walk signal comes on.*"
+        "text": "*From inside the main gate comes the dull sound of an iron door closing. I swallow a disappointed breath, wondering if I was a step too late, and the walk signal turns green.*"
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "Good morning. *I meet my teacher carrying a paper bag at the open gate.*"
+        "text": "Good morning. *At the half-open main gate, I come face to face with the homeroom teacher as she steps out, a thick brown paper envelope hugged to her chest.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*When our eyes meet, she moves the paper bag behind her back. The manuscript inside rustles.*"
+        "text": "*The moment our eyes meet, she hides the paper envelope behind her back on reflex. Inside the thin wrapping, the printed manuscript stack rustles.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Homeroom Teacher",
-        "text": "Huh? {name}?"
+        "text": "Huh? {name}? What are you doing in front of school at this hour?"
     },
     "hidden_homeroom_d4_3": {
         "name": "{name}",
-        "text": "What are you doing at school on a weekend?"
+        "text": "I could ask you the same. It's a weekend off, and you're at school this early?"
     },
     "hidden_homeroom_d4_3_b": {
         "name": "Homeroom Teacher",
-        "text": "I came for the literature club critique. I brought my manuscript too."
+        "text": "The literature club critique was on the schedule, so I stopped by. I also needed to pick up the printout I left in the staff room."
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*One corner of the teacher's paper envelope is folded.*"
+        "text": "*Instead of the neat suit I usually see at the podium, she's in a soft beige trench coat and a thin knit. The corner of the paper envelope hidden behind her back is crumpled small in her grip.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
-        "text": "You hold critiques on weekends?"
+        "text": "You hold literature club critiques even on days off?"
     },
     "hidden_homeroom_d4_3_e": {
         "name": "Homeroom Teacher",
-        "text": "Today was the only time the students who signed up were free. Their advisor has to be there."
+        "text": "The members who signed up said a weekend morning was the only time they could make. An advisor has to fit the students' schedules."
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Only one handle of the paper bag is pulled taut. The folded corner of the manuscript shows through.*"
+        "text": "*The joints of her slender fingers on the envelope flap are drawn especially taut. Through the gap at the opening, the first page of the manuscript shows a little, the marks of being folded and unfolded over and over still plain on it.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Homeroom Teacher",
-        "text": "Why are you here?"
+        "text": "Anyway, why were you hanging around here so early?"
     },
     "hidden_homeroom_d4_4_c": {
         "name": "{name}",
-        "text": "I was just passing by."
+        "text": "I had something to do nearby. I was just passing through."
     },
     "hidden_homeroom_d4_4_d": {
         "name": "Homeroom Teacher",
-        "text": "Students don't usually peek through the school gate when they're just passing by."
+        "text": "For someone just passing through, you were looking inside the main gate for quite a while."
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Only the radio from the gatehouse fills the silence between us.*"
+        "text": "*Only the slow radio music from the gatehouse, carried on the cool morning wind, fills the space between us.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Homeroom Teacher",
-        "text": "The literature club members went ahead to a café nearby. Want to sit in on the critique?"
+        "text": "The literature club kids went ahead to a cafe nearby, and the others will join soon. If you have time, want to watch the critique before you go?"
     },
     "hidden_homeroom_d4_5_b": {
         "name": "{name}",
-        "text": "Is it okay if I come?"
+        "text": "I'm not even in the literature club. Is it all right if I sit in?"
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Homeroom Teacher",
-        "text": "It's an open critique, so that's fine. But whether you read the manuscript is up to you."
+        "text": "It's an open critique, and we take outside readers' comments, so that's fine. Whether you read the manuscript all the way through is something you can decide comfortably once you're there."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Homeroom Teacher",
-        "text": "You don't have to read it just because your teacher wrote it. You may have plans of your own today. *She folds the paper bag's handles twice and holds them.*"
+        "text": "You don't have to feel any pressure just because your homeroom teacher wrote it. It's the weekend, so you probably have plans of your own. *She lets the sentence trail off, folds the paper envelope's flap over twice, and grips it tight.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
-        "text": "*The corners of the manuscript knock together inside the paper bag.*",
+        "text": "*Each time she steadies her breath, the corners of the manuscript rustle and knock together inside the envelope against her chest.*",
         "choices": [
             "Sure. May I sit in on the critique?",
             "I already have plans today.",
@@ -193,59 +193,59 @@
     },
     "hidden_homeroom_d4_choice_trap": {
         "name": "Homeroom Teacher",
-        "text": "*She draws the paper bag closer to herself.* I invited you to an open critique so there wouldn't be any misunderstanding like that."
+        "text": "*She flinches and pulls the paper envelope tight against her chest.* I called you to a proper critique so there wouldn't be some pointless misunderstanding."
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Homeroom Teacher",
-        "text": "See the writing club at that table in the back? Let’s sit here for a moment."
+        "text": "See the literature club kids gathered at that long table by the window? The others will be here soon, so let's sit in this corner for now."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
-        "text": "Are you nervous?"
+        "text": "You seem a lot more nervous than usual."
     },
     "hidden_homeroom_d4_cafe_1_c": {
         "name": "Homeroom Teacher",
-        "text": "A little. I’m tempted to take the manuscript back while I still can."
+        "text": "Does it show? Honestly, I'm tempted to grab the whole envelope and run while I still can."
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Homeroom Teacher",
-        "text": "We should finish our coffee first, right? *She touches the cup with a joking air. Two round water marks overlap on the coaster.*"
+        "text": "Still, we ought to drink the coffee we ordered before we go. *She tries to pass it off as a joke and wraps her hands around the warm mug. Two round water marks overlap side by side on the cork coaster.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
-        "text": "Which part are you showing the club?"
+        "text": "Which part of the manuscript are you thinking of showing the members?"
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Homeroom Teacher",
-        "text": "Choosing feels a little embarrassing. Reading it alone is different from showing it to someone. *She sets down the coffee cup, her fingers still on the handle.*"
+        "text": "Now that I'm actually picking, it's just embarrassing. A sentence weighs completely differently when you fix it alone at night with the lamp on, and when you put it in front of someone else. *Even after she sets the mug down, her fingertips keep fidgeting with the ceramic handle.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Homeroom Teacher",
-        "text": "The opening, for now. I'm still most worried about how the characters sound."
+        "text": "For now I'm starting with the opening and the first scene. The rhythm of the lines the characters trade still worries me the most."
     },
     "hidden_homeroom_d4_cafe_2_b": {
         "name": "{name}",
-        "text": "Will my comments be part of the critique too?"
+        "text": "Do the comments I write go into the official critique record too?"
     },
     "hidden_homeroom_d4_cafe_2_c": {
         "name": "Homeroom Teacher",
-        "text": "I'll collect the comments without names. What matters isn't who said it, but where the story lost them."
+        "text": "I'll hide every name and only collect the comments. Where a reader's eyes stopped matters much more than who wrote it."
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*The corner of a manuscript envelope shows from the teacher's bag. The folded part is a little dark with finger marks.*"
+        "text": "*Through a gap in the homeroom teacher's leather bag, set beside the chair, the manuscript envelope shows. The crease is faintly worn with finger marks, from how many times it was opened and shut.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Homeroom Teacher",
-        "text": "Do you know the hardest part of a critique?"
+        "text": "Do you know what scares a writer most at a critique?"
     },
     "hidden_homeroom_d4_cafe_3": {
         "name": "Homeroom Teacher",
-        "text": "Hearing where someone stopped reading instead of what they liked. It hurts the most—and helps the most."
+        "text": "Facing the moment someone stalls and can't turn the page, more than a polite compliment. It stings the most, and that's exactly why it helps."
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Homeroom Teacher",
-        "text": "Mark it if you get stuck. I'd like to know whether you turned the page out of curiosity or just kept reading to be polite. *She sets down her cup and nods toward the workshop copies on the inner table.*",
+        "text": "If a passage feels awkward, or like you can't get a breath, underline it without holding back. Tell me honestly, too, whether you turned the page because you wanted the next one, or just kept reading out of obligation. *She points at the stack of critique printouts with her chin and looks quietly into my eyes.*",
         "choices": [
             "You still haven't decided on the ending?",
             "You'll show the whole thing to the club too, right?",
@@ -254,92 +254,92 @@
     },
     "hidden_homeroom_d4_cafe_choice_a": {
         "name": "Homeroom Teacher",
-        "text": "I still haven't settled on the ending. Every time I try to make it impressive, I ruin it."
+        "text": "Yeah. I still haven't closed the sentence on the last page. I keep trying to dress it up, and the real feeling goes blurry."
     },
     "hidden_homeroom_d4_cafe_choice_b": {
         "name": "Homeroom Teacher",
-        "text": "Yes, everyone has the same draft. Mark whatever catches your attention."
+        "text": "Right. Everyone has the same printout. Write in pencil, so your handwriting doesn't give you away, and write however you like."
     },
     "hidden_homeroom_d4_cafe_4": {
         "name": "Homeroom Teacher",
-        "text": "Could you mark anything that feels odd from a student's perspective? I'll consider your notes alongside everyone else's."
+        "text": "Don't try to critique it. Just mark the sentences that stick with you. I'll mix them with the other members' critique sheets and read them carefully."
     },
     "hidden_homeroom_d4_cafe_4_b": {
         "name": "{name}",
-        "text": "*She keeps folding the corner of the cup sleeve.*"
+        "text": "*Waiting for an answer, her thumb keeps folding and unfolding a small corner of the paper cup sleeve.*"
     },
     "hidden_homeroom_d4_cafe_5": {
         "name": "{name}",
-        "text": "I'll give it a try."
+        "text": "All right. I'll write it honestly, in my own way."
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "Should I put my name on my comments? I was wondering if the others would see what I wrote. *She opens the hand that was folding the cup sleeve. The creases remain.*"
+        "text": "Should I leave my name off when I note in the margin? I'm afraid it'll put you in a difficult spot if the literature club kids recognize my handwriting. *At my words, she stops the hand that was smoothing the cup sleeve and gives a faint smile.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
-        "text": "Thanks. You don't have to put your name on it. It's anonymous, so mark it honestly."
+        "text": "Thanks for thinking of that. Anonymous critique is the rule, so leave the name blank and just put down what you think."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
-        "text": "Does this count as work too?"
+        "text": "Does passing a manuscript around on the weekend count as an extension of school work too?"
     },
     "hidden_homeroom_d4_cafe_5_e": {
         "name": "Homeroom Teacher",
-        "text": "Let's call it advising the literature club today."
+        "text": "On paper, let's call it club advising."
     },
     "hidden_homeroom_d4_cafe_5_f": {
         "name": "{name}",
-        "text": "*At the table in the back, a club member takes another copy of the manuscript.*"
+        "text": "*A literature club member waiting at the inner table comes over carefully and takes one more numbered copy of the manuscript.*"
     },
     "hidden_homeroom_d4_cafe_5_g": {
         "name": "Homeroom Teacher",
-        "text": "I’ll collect today’s comments so we can go through them together next time."
+        "text": "I'll sort the notes gathered here, and we'll talk through them together at the next club meeting."
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "{name}",
-        "text": "Is having the workshop here very different from doing it at school? ...I didn't expect to be reading a manuscript over coffee. *She numbers every copy and sends the last one to the inner table.*"
+        "text": "Reading your writing in a cafe that smells like coffee beans, instead of the staff room, feels strange. *She writes a small number at the top of the last printout and slides it toward me. The fingertips passing the paper brush the back of my hand, then pull away.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Homeroom Teacher",
-        "text": "Let's hold the next critique in the school library. We chose today's venue in too much of a rush."
+        "text": "Next time, let's meet calmly in the school library. I was in a rush, and I picked the place too suddenly."
     },
     "hidden_homeroom_d4_cafe_6_b": {},
     "hidden_homeroom_d4_decline": {
         "name": "Homeroom Teacher",
-        "text": "All right. Your plans come first. I'll get formal feedback on the manuscript at school."
+        "text": "Right. It's the weekend, so the plans you already made come first. I'll take the manuscript comments properly at school during the week."
     },
     "hidden_homeroom_d4_decline_b": {
         "name": "Homeroom Teacher",
-        "text": "*Checking the literature club group chat, she heads back inside the school.*"
+        "text": "*Checking a notification in the literature club group chat, she slowly turns and heads back inside the school gate.*"
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "I'm here for my appointment. *Event-preparation day in the infirmary. Records and leaflets lie on the desk.*"
+        "text": "I'm here for the counseling time you set last time. *I pass the hallway, messy with festival prep, and open the quiet door of the nurse's office. A counseling record and an information sheet lie neatly on the desk.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "School Nurse",
-        "text": "Right on time. Have a seat."
+        "text": "Right on time. Sit over here. Make yourself comfortable."
     },
     "hidden_nurse_d4_morning_4": {
         "name": "School Nurse",
-        "text": "*She opens the counseling form and picks up her pen.*"
+        "text": "*With a steady hand, the school nurse opens the counseling record and clicks her pen.*"
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
-        "text": "We're wrapping up our last session, right?"
+        "text": "This is to wrap up the counseling we went through last time, right?"
     },
     "hidden_nurse_d4_morning_6": {
         "name": "School Nurse",
-        "text": "Right. We'll check how you're doing today and decide where you can go for help next time."
+        "text": "Right. We'll see how you've been since then, and also settle a place where you can get help right away the next time things are hard."
     },
     "hidden_nurse_d4_morning_7": {
         "name": "School Nurse",
-        "text": "*She goes through the items she wrote down during our last session, one by one.*"
+        "text": "*The school nurse's eyes go down the checklist items she wrote out carefully last session, one by one.*"
     },
     "hidden_nurse_d4_morning_8": {
         "name": "School Nurse",
-        "text": "I need to check one thing."
+        "text": "Before I close the record, let's pin one thing down."
     },
     "hidden_nurse_d4_morning_9": {
         "name": "{name}",
@@ -347,15 +347,15 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "School Nurse",
-        "text": "*She turns the school counseling information sheet toward {name}.*"
+        "text": "*She turns the school counseling support sheet squarely toward {name}.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "School Nurse",
-        "text": "Have you decided on an adult you can ask for help besides me?"
+        "text": "Have you settled on even one adult you won't hesitate to ask for help, even when the nurse's office door is closed?"
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
-        "text": "*The sheet lists the order: homeroom teacher, school counseling center, then parent or guardian.*",
+        "text": "*On the printed sheet, the order is written clear: homeroom teacher counseling, the school counseling center, then the guardian contact list.*",
         "choices": [
             "I'll talk to my homeroom teacher and the counseling center too.",
             "I'm still not sure.",
@@ -364,27 +364,27 @@
     },
     "hidden_nurse_d4_morning_choice_trap": {
         "name": "School Nurse",
-        "text": "You can come to me first. But you’ll need someone to turn to when I’m not here, too."
+        "text": "Of course you can come to me first. But there also has to be an adult who can look out for you when I'm out of the nurse's office, or when I can't reach you."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
-        "text": "I'll talk to my homeroom teacher and the counseling center too."
+        "text": "I'll try talking to my homeroom teacher and the counseling center too."
     },
     "hidden_nurse_d4_morning_choice_b": {
         "name": "{name}",
-        "text": "I'm still not sure."
+        "text": "I still don't really know who I should tell."
     },
     "hidden_nurse_d4_morning_12": {
         "name": "School Nurse",
-        "text": "We can start together. I’ll mark the contacts on this leaflet."
+        "text": "If choosing on your own feels overwhelming from the start, let's narrow it down together. First I'll highlight the extensions on this sheet that you can reach right away."
     },
     "hidden_nurse_d4_morning_13": {
         "name": "School Nurse",
-        "text": "I won't pass your story around carelessly. But if I think you're in danger of being hurt, I'll bring in another adult right away. Let's agree on that now."
+        "text": "I won't pass on what you confide to anyone else without permission. But if I see a risk of you getting hurt, I won't wait. I'll bring other adults in too. Promise me that one rule."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "School Nurse",
-        "text": "*She closes the counseling form.* You remember the order we wrote down today, right? If you feel lost, start with the first person on the list."
+        "text": "*She gently closes the counseling record folder.* You remember the contact order we just wrote down together, right? If you hit a moment where you can't breathe, don't just endure it alone. Start with the place in the first box."
     },
     "hidden_nurse_d4_check": {
         "name": "System",
@@ -392,96 +392,96 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*An event first-aid kit and examination supplies are stacked on one side of the desk. While applying labels, the nurse looks toward the door over her glasses.*"
+        "text": "*First-aid boxes for the school event and disinfectant tools are piled high on the long desk in the nurse's office. Sleeves rolled up, sticking on label stickers, the school nurse looks over her glasses and finds me standing in the doorway.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
-        "text": "*She turns around.* Huh? You actually came?"
+        "text": "*Her eyes go wide as she turns.* Oh? It's a weekend morning, and you actually came to help?"
     },
     "hidden_nurse_d4_2": {
         "name": "School Nurse",
-        "text": "I asked for volunteers to assemble the event first-aid kits, but I didn't think you'd actually sign up."
+        "text": "I put a notice up because I was short on hands to pack the emergency kits for the event site, but I didn't think you'd sign up."
     },
     "hidden_nurse_d4_2_b": {
         "name": "{name}",
-        "text": "So today I'm a volunteer, not a patient."
+        "text": "This time I'm here as a volunteer helping out, not a patient who came in sick."
     },
     "hidden_nurse_d4_2_c": {
         "name": "School Nurse",
-        "text": "A volunteer today. If you get hurt, you go back to being a patient."
+        "text": "Good. A dependable volunteer for now. So much as cut your hand on the paper while we work, and from then on you're a patient again."
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "I'll separate the gauze and swabs. *I arrange the table as staff come and go.*"
+        "text": "I'll sort the sterile gauze and the alcohol swabs over here, where they're easy to reach. *Among the festival-prep staff hurrying in and out, I set the work table to match the way she moves.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "School Nurse",
-        "text": "*She hands me an empty pouch.* Two gauze pads and three alcohol swabs in each. I'll handle any paperwork with personal information."
+        "text": "*She sets a bundle of clear zipper pouches in front of me.* Two sheets of gauze and three antiseptic cottons each. I'll sort the papers with the students' sensitive health records myself."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "This pouch is ready. Could you check it? *I start filling the next one.*"
+        "text": "This row of pouches is filled to the count. Please check I didn't leave anything out. *Her fingertips and mine brush lightly over a pouch, and I pull the next empty one over right away.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "School Nurse",
-        "text": "At the university hospital, there were plenty of days I had to handle this kind of prep alone."
+        "text": "Back when I was on a ward at the university hospital, getting stuck with supply prep like this alone all night happened all the time."
     },
     "hidden_nurse_d4_2_h": {
         "name": "{name}",
-        "text": "By yourself?"
+        "text": "You did all of that by yourself?"
     },
     "hidden_nurse_d4_3": {
         "name": "{name}",
-        "text": "I said I'd help."
+        "text": "You said there were coworkers helping beside you."
     },
     "hidden_nurse_d4_4": {
         "name": "School Nurse",
-        "text": "On night shifts, there were days I did the work of three nurses by myself."
+        "text": "On night duty, when emergency patients came flooding in, there were plenty of nights I had to run around alone covering three nurses' worth of care."
     },
     "hidden_nurse_d4_4_b": {
         "name": "{name}",
-        "text": "So the burnout was..."
+        "text": "So your body wore out, and that's when the burnout hit."
     },
     "hidden_nurse_d4_4_c": {
         "name": "School Nurse",
-        "text": "I was very busy, yes. But if I said it was only because of that... I'd be leaving something out. *She closes the file. Her pen slips once across the cover.*"
+        "text": "It's true I was busy and couldn't sleep. But if I said I quit simply because the work buried me, the most important reason would be left out. *The moment she closes the file, the tip of the pen in her hand slips a little across the smooth cover.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "School Nurse",
-        "text": "The hardest part back then wasn't the workload."
+        "text": "What stifled me most back then wasn't the endless workload."
     },
     "hidden_nurse_d4_4_e": {
         "name": "{name}",
-        "text": "Then what was it?"
+        "text": "If it wasn't the workload, what was so hard?"
     },
     "hidden_nurse_d4_4_f": {
         "name": "School Nurse",
-        "text": "The hardest part was when I started checking bed numbers before names. I couldn't even tell who I was looking at anymore."
+        "text": "It was when I caught myself mechanically checking the bed number and the vitals on the chart before a patient's face or name. I couldn't even tell anymore whether I was looking into someone's eyes or at a monitor."
     },
     "hidden_nurse_d4_4_g": {},
     "hidden_nurse_d4_4_h": {
         "name": "School Nurse",
-        "text": "At school, I have time to see students one at a time. And when something is beyond me, taking them to someone who can help is part of my job too."
+        "text": "In the school nurse's office, there's time to look each kid who comes in straight in the eye and catch a breath. If it's something I can't handle on my own, taking them by the hand to a place that can really help is my job too."
     },
     "hidden_nurse_d4_4_i": {
         "name": "{name}",
-        "text": "Does connecting someone with help count as treatment?"
+        "text": "Does connecting someone to help count as part of treatment too?"
     },
     "hidden_nurse_d4_4_j": {
         "name": "School Nurse",
-        "text": "So if you hit a wall here, go to your homeroom teacher or the counseling center too. Don't carry it alone."
+        "text": "Of course. So if something gets too heavy to carry alone, knock. The nurse's office, your homeroom teacher, the counseling center. Don't just suffer it quietly by yourself."
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
-        "text": "That's the last kit done. *I zip it shut; the volunteers move the boxes.*"
+        "text": "I've closed the zipper on the last first-aid kit. *Once the heavier first-aid boxes are set in order, the student staff who were waiting lift them and carry them out.*"
     },
     "hidden_nurse_d4_5": {
         "name": "School Nurse",
-        "text": "That's why I came to a school. I wanted to relearn how to listen before trying to treat anything."
+        "text": "So I came to a school instead of a glamorous university hospital. I wanted to start over by learning to listen for what someone is holding back, before I hand them any medicine."
     },
     "hidden_nurse_d4_name_choice": {
         "name": "{name}",
-        "text": "*The nurse writes down the number of completed first-aid kits.*",
+        "text": "*The school nurse pushes her glasses up and writes the number of finished first-aid kits, figure by figure, on the count sheet.*",
         "choices": [
             "When are you glad you became a school nurse?",
             "What's the biggest difference between a hospital and a school?",
@@ -490,31 +490,31 @@
     },
     "hidden_nurse_d4_name_choice_a": {
         "name": "School Nurse",
-        "text": "When a student who's been suffering alone opens that door on their own. That's when I know I chose well."
+        "text": "When a student who's been pacing the hall, holding it in alone, works up the courage to knock on the nurse's office door first. In that moment, I really feel I was right to come here."
     },
     "hidden_nurse_d4_name_choice_b": {
         "name": "School Nurse",
-        "text": "Here, I can talk to someone before they get hurt. That's the biggest difference."
+        "text": "A hospital is where you're brought only after you're already badly hurt. Here, I can ask how you are before a wound festers. That's the biggest difference."
     },
     "hidden_nurse_d4_6": {
         "name": "School Nurse",
-        "text": "Thanks. I finished much faster because of you. It's nothing special."
+        "text": "Thanks to you working in step beside me, we finished much earlier than I expected. The story about my past is nothing special. You can just let it pass."
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
-        "text": "It was nothing, really."
+        "text": "What I just heard is absolutely not nothing."
     },
     "hidden_nurse_d4_6_c": {
         "name": "School Nurse",
-        "text": "It does matter. And I'll make sure every minute of your volunteer time is recorded."
+        "text": "You listened so seriously that I'm embarrassed now, for no good reason. In return, I'll fill in your volunteer hours completely. Not one minute left out."
     },
     "hidden_nurse_d4_6_d": {
         "name": "{name}",
-        "text": "*The nurse writes the start and end times on the volunteer form.*"
+        "text": "*She fills the start time and the end time on the volunteer confirmation form in neat handwriting.*"
     },
     "hidden_nurse_d4_choice": {
         "name": "School Nurse",
-        "text": "All that's left is labeling them. The event staff are going to buy snacks—anyone want to help finish up?",
+        "text": "All that's left is sticking department labels on the outsides of the boxes. The event staff are going to the snack shop for snacks. Anyone want to eat together and finish the rest?",
         "choices": [
             "I'll stay and label the first-aid kits too.",
             "That's okay, I should get going",
@@ -523,79 +523,79 @@
     },
     "hidden_nurse_d4_meal_walk": {
         "name": "{name}",
-        "text": "One order per person, right? *I count bags at the snack shop outside school.*"
+        "text": "These are packed for the staff headcount, right? *At the snack shop in front of the school, I take the steaming bags in both hands.*"
     },
     "hidden_nurse_d4_meal_1": {
         "name": "School Nurse",
-        "text": "Who picked the spicy one? Get some water first."
+        "text": "Hold on. Who picked this spicy tteokbokki? Get some cold water over here, quick."
     },
     "hidden_nurse_d4_meal_1_b": {
         "name": "{name}",
-        "text": "You're the one who tried it first."
+        "text": "You're the one who picked it up first just now."
     },
     "hidden_nurse_d4_meal_1_c": {
         "name": "School Nurse",
-        "text": "I had to test it. *She takes a drink of water.* Not even a first-aid kit can save this."
+        "text": "I tasted it first to check how spicy it was before the students ate any. *She downs the cold water in the paper cup in one go and wipes the corner of her mouth.* No matter how I look at it, even the digestive medicine in our first-aid kit couldn't save this."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
-        "text": "*We return to the nurse's office with the staff and label the kit boxes.*"
+        "text": "*After finishing the rest of the snacks with the staff, we come back to the nurse's office and stick area labels on the outsides of the kit boxes.*"
     },
     "hidden_nurse_d4_meal_2": {
         "name": "{name}",
-        "text": "You look different now than when you talk about the hospital."
+        "text": "Your expression is completely different from when you were talking about your university hospital days."
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "{name}",
-        "text": "*One label sticks crookedly to the box's corner.* You look a little more at ease now. ...Oh, that label's crooked. Maybe I distracted you by talking."
+        "text": "*While I'm talking and looking at her face, one label at my fingertips sticks at a slant on the corner of the box.* You look much more at ease now. Oh, I started talking, and the label went crooked."
     },
     "hidden_nurse_d4_meal_3": {
         "name": "School Nurse",
-        "text": "Do I? I must’ve looked pretty tense earlier. All right, let’s finish this last box."
+        "text": "Right? Thinking about the old days, I must have gone stiff without noticing. Hand it over. Let's stick just that corner back on straight and finish."
     },
     "hidden_nurse_d4_meal_3_b": {
         "name": "{name}",
-        "text": "*She presses the final label into the center of the box.*"
+        "text": "*I take the label she peeled off and press it neatly into the exact center of the last box.*"
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "School Nurse",
-        "text": "All right, that's it. Check your volunteer hours, then everyone back to the event site."
+        "text": "Good. Prep stops here. Everyone check that your volunteer hours are written down, then head to the event area you're assigned to."
     },
     "hidden_nurse_d4_meal_3_d": {
         "name": "{name}",
-        "text": "*As I'm about to leave, the nurse calls me back with the form in her hand.*"
+        "text": "*I grab my bag to leave the nurse's office, and she comes up behind me with a sheet of paper.*"
     },
     "hidden_nurse_d4_meal_3_e": {
         "name": "School Nurse",
-        "text": "{name}, you're leaving the checklist behind."
+        "text": "{name}, you're leaving the most important volunteer checklist behind."
     },
     "hidden_nurse_d4_meal_4": {
         "name": "School Nurse",
-        "text": "{name}. Thanks for helping today. Check your volunteer hours on Monday."
+        "text": "{name}. Thank you for working in step beside me from this weekend morning. On Monday, be sure to check that your volunteer hours actually posted in the school system."
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "School Nurse",
-        "text": "*She hands the completed first-aid kit box to the teacher in charge of the event.*"
+        "text": "*She leaves a light smile and hands the finished first-aid kit box to the teacher in charge of the event.*"
     },
     "hidden_nurse_d4_pass": {
         "name": "School Nurse",
-        "text": "All right. Coming in on a weekend was more than enough. Get home safe."
+        "text": "All right. Just coming by on a morning off is thanks enough. Enjoy the rest of your weekend, and get home safe."
     },
     "hidden_homeroom_d4_freetalk": {
         "name": "Homeroom Teacher",
-        "text": "*She squares the manuscript beside her cooling coffee.* The critique is over. Now, what did you want to talk about?",
+        "text": "*She stacks the noted manuscript pages neatly beside the coffee that has cooled.* The literature club critique is more or less done. Now, what you really wanted to say. Shall I hear it?",
         "context": "It is the morning of Day 4, just after discussing the homeroom teacher's old manuscript at a café near school. She appreciates the student's honest reaction, but they are still teacher and student. Use only manuscript facts revealed by the preceding scenes, and do not turn private closeness into a relationship that crosses the teacher-student boundary.",
         "personality": "The homeroom teacher is careful and responsible, as both an educator and a longtime writer. Honest tension and relief show when she hears criticism, but she never demands comfort or secrecy from a student and guides the conversation maturely."
     },
     "hidden_nurse_d4_freetalk": {
         "name": "School Nurse",
-        "text": "*She zips the last first-aid kit and points to the chair across from her.* Good work. I can listen to you for a minute now.",
+        "text": "*She zips the last first-aid kit, puts it in the box, and points a fingertip at the spare chair across from her.* Thanks for helping with the work. Now that we can catch a breath, I can listen to you for a minute.",
         "context": "It is the morning of Day 4 in the nurse's office, after preparations and first-aid kit sorting for the school event. They may have shared a snack or the student may have chosen to rest, so treat only saved events as fact. They remain a school nurse and student; trust has deepened, but professional boundaries remain.",
         "personality": "The school nurse is practical, attentive, and keeps her humor even when tired. She is honest only as far as appropriate rather than dramatizing her past, and she respects the student's health and choices."
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Back home, I check the clock beside the mirror, then return to the entryway and tie my shoes again.*"
+        "text": "*Back home, I straighten my shirt collar and my hair in front of the mirror, check the hands of the wall clock, then steady an eager breath and retie the laces of my going-out sneakers tight at the entryway.*"
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Homeroom Teacher",
@@ -612,7 +612,7 @@
     "day4_date_branch": {},
     "day4_haeun_concern_choice": {
         "name": "{name}",
-        "text": "*Haeun turns toward me. The person listening to her stays where they are.*",
+        "text": "*Haeun turns toward me, her face set. The steps that were listening to her stay stopped in that same spot beside the school gate.*",
         "choices": [
             "Ask what they heard",
             "Not now"
@@ -620,166 +620,166 @@
     },
     "day4_haeun_concern_open": {
         "name": "{name}",
-        "text": "Tell me what you heard first. I'll explain with Haeun here."
+        "text": "Haeun, will you tell me too what was said because of yesterday's talk? I'll explain all of it, nothing hidden, right here with you."
     },
     "day4_haeun_concern_delay": {
         "name": "{name}",
-        "text": "I don't want to talk now. Later. *As I try to leave, the other person calls me back.*"
+        "text": "Haeun, I don't have time right now. Let's talk again later. *I turn to slip away, and a voice calling me from behind catches my step.*"
     },
     "day4_haeun_concern_clarify": {
         "name": "Haeun",
-        "text": "I’m not trying to make you look bad by inventing things. I talked about what made me uncomfortable. *Haeun looks at me.* If I took it differently than you meant, please tell us here."
+        "text": "I didn't make up things that were never said to make you look bad, Senior. I only told them what honestly felt uncomfortable while we talked yesterday. *Haeun looks straight at me, her eyes steady.* If you meant something else, Senior, please say so here."
     },
     "day4_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
-        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Beside a gate pillar, Haeun had been speaking quietly with Seoyeon. She sees me coming and stops.* I felt a little uncomfortable when I talked with you yesterday, Senior. I didn't know how to take it on my own, so I told Seoyeon."
     },
     "day4_haeun_concern_seoyeon_arrival": {
         "name": "Seoyeon",
-        "text": "What did you talk about with Haeun? *Seoyeon lowers her papers.* It didn’t sound like something I should brush aside."
+        "text": "What did you and Haeun talk about yesterday? *Seoyeon slowly lowers the student council folder she had been holding.* It wasn't something I could hear and just laugh off."
     },
     "day4_haeun_concern_seoyeon_escalation": {
         "name": "Seoyeon",
-        "text": "I want to know whether you realized she felt uncomfortable. *Seoyeon waits for my answer.* Tell us directly."
+        "text": "What bothers me most is whether you knew Haeun was that uncomfortable and did it anyway. *Seoyeon waits for my answer, calm, her eyes firm.* Don't dodge it. Say it here, directly."
     },
     "day4_haeun_concern_seoyeon_escalation_delay": {
         "name": "Seoyeon",
-        "text": "I want to know whether you realized she felt uncomfortable. *Seoyeon waits for my answer.* Tell us directly."
+        "text": "What bothers me most is whether you knew Haeun was that uncomfortable and did it anyway. *Seoyeon waits for my answer, calm, her eyes firm.* Don't dodge it. Say it here, directly."
     },
     "day4_haeun_concern_seoyeon_group_talk": {
         "name": "Seoyeon",
-        "text": "*Seoyeon glances at Haeun, then asks me.* I didn’t expect to hear something like this about you. What did you say to her?",
+        "text": "*Seoyeon checks Haeun's tense shoulder once, then turns her eyes to me.* I didn't think I'd hear about you this way. What on earth did you say to Haeun yesterday?",
         "groupLocation": "School gate on Saturday morning, Day 4",
-        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
-        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "context": "It is Saturday morning, Day 4. The protagonist finished the morning schedule and, before going home, meets Haeun and Seoyeon at the school gate. During an earlier free talk with the protagonist, Haeun's trust dropped. She told Seoyeon, who had the highest affinity, about the discomfort she felt in that conversation, and Seoyeon grew wary of the protagonist too. The three of them go over yesterday's conversation at the school gate. Seoyeon's affinity has already been reduced by 15 points, or by 20 if the explanation was delayed. The impression Haeun conveyed and the meaning of what was actually said may differ. Use only the prior transcript below as factual evidence. Do not invent insults, threats, or broken promises that are not in the record. If there is no transcript, address only the impression that she felt uncomfortable, and do not quote specific remarks.",
+        "personality": "Haeun keeps polite speech and separates words she actually heard from her own interpretation. Use descriptions such as frightening or strange only when the prior conversation supports them. Seoyeon listens to the user's explanation and judges in her own voice, matched to her current affinity, and does not treat Haeun's account as established fact. Leave room for the user to explain. Depending on the explanation, a misunderstanding may be cleared or responsibility may be assigned. Do not erase actual harm by calling it a misunderstanding, and do not force an apology. Do not repeat the initial penalty. Score only the change from what is said and done now.",
         "groupChoiceState": {
-            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
-            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+            "open": "The protagonist asked what had been heard and said he would explain with Haeun present. A specific explanation has not started yet.",
+            "delay": "The protagonist said he did not want to talk now and tried to leave. Seoyeon took this as avoiding the explanation. The initial penalty for this choice has already been applied."
         }
     },
     "day4_haeun_concern_yuna_intro": {
         "name": "Haeun",
-        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*In the shade beside the gate, Haeun had been quietly telling Yuna what happened. She sees me and closes her mouth.* I felt a little uncomfortable when I talked with you yesterday, Senior. I didn't know how to take it on my own, so I told Yuna."
     },
     "day4_haeun_concern_yuna_arrival": {
         "name": "Yuna",
-        "text": "*Yuna looks away from Haeun and turns to me.* I heard what Haeun had to say. I want to hear your side too."
+        "text": "*Yuna looks away from Haeun and holds my eyes, still.* I heard about yesterday from Haeun. Now I want to hear it from you."
     },
     "day4_haeun_concern_yuna_escalation": {
         "name": "Yuna",
-        "text": "*Yuna puts away her phone.* I don’t know how to take your words right now. Tell me what you meant then."
+        "text": "*Yuna slides the phone in her hand deep into her coat pocket.* Right now I don't know how to believe what you say. Don't hide it. Tell me what you meant yesterday."
     },
     "day4_haeun_concern_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna puts away her phone.* I don’t know how to take your words right now. Tell me what you meant then."
+        "text": "*Yuna slides the phone in her hand deep into her coat pocket.* Right now I don't know how to believe what you say. Don't hide it. Tell me what you meant yesterday."
     },
     "day4_haeun_concern_yuna_group_talk": {
         "name": "Yuna",
-        "text": "*Yuna folds her earbud cord into her pocket.* What Haeun told me sounds so unlike the person I know. Tell me yourself. What did you talk about?",
+        "text": "*Yuna winds one earbud cord into her pocket and asks, calm.* What Haeun passed on is too different from the you I knew. Tell me yourself. What did you talk about yesterday?",
         "groupLocation": "School gate on Saturday morning, Day 4",
-        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
-        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "context": "It is Saturday morning, Day 4. The protagonist finished the morning schedule and, before going home, meets Haeun and Yuna at the school gate. During an earlier free talk with the protagonist, Haeun's trust dropped. She told Yuna, who had the highest affinity, about the discomfort she felt in that conversation, and Yuna grew wary of the protagonist too. The three of them go over yesterday's conversation at the school gate. Yuna's affinity has already been reduced by 15 points, or by 20 if the explanation was delayed. The impression Haeun conveyed and the meaning of what was actually said may differ. Use only the prior transcript below as factual evidence. Do not invent insults, threats, or broken promises that are not in the record. If there is no transcript, address only the impression that she felt uncomfortable, and do not quote specific remarks.",
+        "personality": "Haeun keeps polite speech and separates words she actually heard from her own interpretation. Use descriptions such as frightening or strange only when the prior conversation supports them. Yuna listens to the user's explanation and judges in her own voice, matched to her current affinity, and does not treat Haeun's account as established fact. Leave room for the user to explain. Depending on the explanation, a misunderstanding may be cleared or responsibility may be assigned. Do not erase actual harm by calling it a misunderstanding, and do not force an apology. Do not repeat the initial penalty. Score only the change from what is said and done now.",
         "groupChoiceState": {
-            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
-            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+            "open": "The protagonist asked what had been heard and said he would explain with Haeun present. A specific explanation has not started yet.",
+            "delay": "The protagonist said he did not want to talk now and tried to leave. Yuna took this as avoiding the explanation. The initial penalty for this choice has already been applied."
         }
     },
     "day4_haeun_concern_dain_intro": {
         "name": "Haeun",
-        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Beside the gate, Haeun had been speaking quietly to Dain. She spots me and stops.* I felt a little uncomfortable when I talked with you yesterday, Senior. I didn't know how to take it, so I told Dain."
     },
     "day4_haeun_concern_dain_arrival": {
         "name": "Dain",
-        "text": "Haeun stopped halfway through telling me. *Dain stands in front of me.* I’m going to ask you what happened, too."
+        "text": "Haeun saw you coming and stopped talking. *Dain drops the smile from her face and stands in front of me, blocking the way.* I'm going to ask you straight what happened yesterday."
     },
     "day4_haeun_concern_dain_escalation": {
         "name": "Dain",
-        "text": "*Dain lowers her arms.* If there’s a misunderstanding, clear it up. If you said something hurtful, talk about that too. I’m listening."
+        "text": "*Dain uncrosses her arms and looks me straight in the eye.* If it's an unfair misunderstanding, clear it up now. If you said something that hurt her, admit it honestly. I'll stay right here and listen to the end."
     },
     "day4_haeun_concern_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain lowers her arms.* If there’s a misunderstanding, clear it up. If you said something hurtful, talk about that too. I’m listening."
+        "text": "*Dain uncrosses her arms and looks me straight in the eye.* If it's an unfair misunderstanding, clear it up now. If you said something that hurt her, admit it honestly. I'll stay right here and listen to the end."
     },
     "day4_haeun_concern_dain_group_talk": {
         "name": "Dain",
-        "text": "*Dain stops in front of me.* What did you say to Haeun? I didn’t think you were the kind of person to treat someone badly. Let’s hear your side.",
+        "text": "*Dain stops dead, right in front of my face.* What on earth did you say to Haeun yesterday? The you I know isn't someone who'd treat a junior carelessly. Say it yourself.",
         "groupLocation": "School gate on Saturday morning, Day 4",
-        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
-        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "context": "It is Saturday morning, Day 4. The protagonist finished the morning schedule and, before going home, meets Haeun and Dain at the school gate. During an earlier free talk with the protagonist, Haeun's trust dropped. She told Dain, who had the highest affinity, about the discomfort she felt in that conversation, and Dain grew wary of the protagonist too. The three of them go over yesterday's conversation at the school gate. Dain's affinity has already been reduced by 15 points, or by 20 if the explanation was delayed. The impression Haeun conveyed and the meaning of what was actually said may differ. Use only the prior transcript below as factual evidence. Do not invent insults, threats, or broken promises that are not in the record. If there is no transcript, address only the impression that she felt uncomfortable, and do not quote specific remarks.",
+        "personality": "Haeun keeps polite speech and separates words she actually heard from her own interpretation. Use descriptions such as frightening or strange only when the prior conversation supports them. Dain listens to the user's explanation and judges in her own voice, matched to her current affinity, and does not treat Haeun's account as established fact. Leave room for the user to explain. Depending on the explanation, a misunderstanding may be cleared or responsibility may be assigned. Do not erase actual harm by calling it a misunderstanding, and do not force an apology. Do not repeat the initial penalty. Score only the change from what is said and done now.",
         "groupChoiceState": {
-            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
-            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+            "open": "The protagonist asked what had been heard and said he would explain with Haeun present. A specific explanation has not started yet.",
+            "delay": "The protagonist said he did not want to talk now and tried to leave. Dain took this as avoiding the explanation. The initial penalty for this choice has already been applied."
         }
     },
     "day4_haeun_concern_teacher_intro": {
         "name": "Haeun",
-        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Beside the gate, Haeun had been quietly explaining things to the homeroom teacher. She sees me and stops.* I felt a little uncomfortable when I talked with you yesterday, Senior. I didn't know how to take it on my own, so I told the homeroom teacher."
     },
     "day4_haeun_concern_teacher_arrival": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher steps aside from Haeun.* I’m not deciding based on one side. Tell me yours."
+        "text": "*The homeroom teacher steps half a pace aside from Haeun and calls me over.* I won't judge from one side alone. Explain calmly what the context was yesterday."
     },
     "day4_haeun_concern_teacher_escalation": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher looks straight at me.* It may not have sounded the way you intended. We still need to hear what bothered Haeun. What do you think?"
+        "text": "*The homeroom teacher looks straight at me, her eyes serious.* It may have come across differently from what you meant. Even so, we need to look together at why Haeun felt uncomfortable. What do you think?"
     },
     "day4_haeun_concern_teacher_escalation_delay": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher looks straight at me.* It may not have sounded the way you intended. We still need to hear what bothered Haeun. What do you think?"
+        "text": "*The homeroom teacher looks straight at me, her eyes serious.* It may have come across differently from what you meant. Even so, we need to look together at why Haeun felt uncomfortable. What do you think?"
     },
     "day4_haeun_concern_teacher_group_talk": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher puts down her folder.* I thought well of you, but I can’t brush this aside. Tell me what you said to Haeun.",
+        "text": "*The homeroom teacher lowers the folder in her hand to her side.* I've thought of you as reliable, but I can't just let this pass. Explain honestly what you said to Haeun yesterday.",
         "groupLocation": "School gate on Saturday morning, Day 4",
-        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
-        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "context": "It is Saturday morning, Day 4. The protagonist finished the morning schedule and, before going home, meets Haeun and the homeroom teacher at the school gate. During an earlier free talk with the protagonist, Haeun's trust dropped. She told the homeroom teacher, who had the highest affinity, about the discomfort she felt in that conversation, and the homeroom teacher grew wary of the protagonist too. The three of them go over yesterday's conversation at the school gate. The homeroom teacher's affinity has already been reduced by 15 points, or by 20 if the explanation was delayed. The impression Haeun conveyed and the meaning of what was actually said may differ. Use only the prior transcript below as factual evidence. Do not invent insults, threats, or broken promises that are not in the record. If there is no transcript, address only the impression that she felt uncomfortable, and do not quote specific remarks.",
+        "personality": "Haeun keeps polite speech and separates words she actually heard from her own interpretation. Use descriptions such as frightening or strange only when the prior conversation supports them. The homeroom teacher listens to the user's explanation and judges in her own voice, matched to her current affinity, and does not treat Haeun's account as established fact. Leave room for the user to explain. Depending on the explanation, a misunderstanding may be cleared or responsibility may be assigned. Do not erase actual harm by calling it a misunderstanding, and do not force an apology. Do not repeat the initial penalty. Score only the change from what is said and done now.",
         "groupChoiceState": {
-            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
-            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+            "open": "The protagonist asked what had been heard and said he would explain with Haeun present. A specific explanation has not started yet.",
+            "delay": "The protagonist said he did not want to talk now and tried to leave. The homeroom teacher took this as avoiding the explanation. The initial penalty for this choice has already been applied."
         }
     },
     "day4_haeun_concern_nurse_intro": {
         "name": "Haeun",
-        "text": "*By the gate, Haeun speaks quietly to the person opposite her, then stops when she sees me.* I felt uncomfortable when we talked yesterday. I wasn’t sure how to take it, so I brought it up."
+        "text": "*Beside the gate, Haeun had been speaking quietly to the school nurse. She sees me and stops talking.* I felt a little uncomfortable when I talked with you yesterday, Senior. I didn't know how to take it, so I told the school nurse."
     },
     "day4_haeun_concern_nurse_arrival": {
         "name": "School Nurse",
-        "text": "*The nurse glances at Haeun, then meets my eyes.* I can’t simply ignore that she felt uncomfortable. I need to hear your side."
+        "text": "*The school nurse checks Haeun's expression, then meets my eyes.* A junior feeling uncomfortable in a conversation is hard to brush off. I need to hear your side directly too."
     },
     "day4_haeun_concern_nurse_escalation": {
         "name": "School Nurse",
-        "text": "*The nurse’s smile fades.* Let’s work out why Haeun took it that way. Explain your side."
+        "text": "*The school nurse lets the easy smile leave her mouth and speaks calmly.* While all three of us are here, let's go through, step by step, why Haeun took your words that way. You explain first."
     },
     "day4_haeun_concern_nurse_escalation_delay": {
         "name": "School Nurse",
-        "text": "*The nurse’s smile fades.* Let’s work out why Haeun took it that way. Explain your side."
+        "text": "*The school nurse lets the easy smile leave her mouth and speaks calmly.* While all three of us are here, let's go through, step by step, why Haeun took your words that way. You explain first."
     },
     "day4_haeun_concern_nurse_group_talk": {
         "name": "School Nurse",
-        "text": "*The nurse checks on Haeun before turning to me.* I don’t understand why I’m hearing this about you. I want to hear from you why she’s so upset. What did you say?",
+        "text": "*The school nurse steadies tense Haeun first, as if to soothe her, then turns toward me.* I didn't think I'd hear about you in a setting like this. I want to hear from you, too, why this weighs on Haeun so much. What did you say yesterday?",
         "groupLocation": "School gate on Saturday morning, Day 4",
-        "context": "It is Saturday morning, Day 4. Having finished the morning errands, the protagonist meets Haeun and the other person at the school gate before returning home. Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three discuss yesterday’s conversation at the school gate. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
-        "personality": "Haeun stays polite and separates words she actually heard from her interpretation. Descriptions such as frightening or strange require evidence in the prior conversation. The other person listens in their own voice at their current affinity and does not treat Haeun’s account as proven fact. Leave room for the user to explain; clarification may resolve a misunderstanding or establish responsibility. Do not erase actual harm by calling it a misunderstanding or force an apology. Do not repeat the initial penalty; score only the effect of the current contribution.",
+        "context": "It is Saturday morning, Day 4. The protagonist finished the morning schedule and, before going home, meets Haeun and the school nurse at the school gate. During an earlier free talk with the protagonist, Haeun's trust dropped. She told the school nurse, who had the highest affinity, about the discomfort she felt in that conversation, and the school nurse grew wary of the protagonist too. The three of them go over yesterday's conversation at the school gate. The school nurse's affinity has already been reduced by 15 points, or by 20 if the explanation was delayed. The impression Haeun conveyed and the meaning of what was actually said may differ. Use only the prior transcript below as factual evidence. Do not invent insults, threats, or broken promises that are not in the record. If there is no transcript, address only the impression that she felt uncomfortable, and do not quote specific remarks.",
+        "personality": "Haeun keeps polite speech and separates words she actually heard from her own interpretation. Use descriptions such as frightening or strange only when the prior conversation supports them. The school nurse listens to the user's explanation and judges in her own voice, matched to her current affinity, and does not treat Haeun's account as established fact. Leave room for the user to explain. Depending on the explanation, a misunderstanding may be cleared or responsibility may be assigned. Do not erase actual harm by calling it a misunderstanding, and do not force an apology. Do not repeat the initial penalty. Score only the change from what is said and done now.",
         "groupChoiceState": {
-            "open": "The protagonist asked what was reported and offered to explain with Haeun present. The actual explanation has not started yet.",
-            "delay": "The protagonist said he did not want to discuss it now and tried to leave. The other person took this as avoidance. The initial penalty for that choice has already been applied."
+            "open": "The protagonist asked what had been heard and said he would explain with Haeun present. A specific explanation has not started yet.",
+            "delay": "The protagonist said he did not want to talk now and tried to leave. The school nurse took this as avoiding the explanation. The initial penalty for this choice has already been applied."
         }
     },
     "day4_haeun_approach": {
         "name": "{name}",
-        "text": "Haeun, got a moment? *I approach her as she talks with someone by the open gate.*"
+        "text": "Haeun, can we talk for a minute? *I walk up to Haeun, who had been talking seriously with someone beside the open gate pillar.*"
     },
     "day4_haeun_finish": {
         "name": "{name}",
-        "text": "We're in the way. Let's move over. *I step aside with Haeun by the gate.*"
+        "text": "We were blocking the path in front of the main gate. Let's step into this shade for a minute. *I steady my breath and walk with Haeun toward the wall beside the gate.*"
     },
     "day4_haeun_notice_1": {
         "name": "Haeun",
-        "text": "*Haeun brings up Seoyeon by the school gate, trails off, and touches her bracelet with her fingertips.* It's strange. I meant to talk about Seoyeon, but the more I talk, the more it turns into talking about you. I don't really know why I'm like this."
+        "text": "*In the shade of the wall beside the gate, Haeun had started talking about Seoyeon. She trails off and fidgets with the knot of the bracelet around her wrist.* It's strange, isn't it. I opened my mouth to talk about Seoyeon, but whenever I come to, it keeps sliding into talk about you, Senior. I don't really know why I'm like this lately."
     },
     "day4_haeun_notice_choice": {
         "name": "Haeun",
-        "text": "*Haeun's gaze rests on you for a moment, then drops to the floor.* Did my face look strange just now?",
+        "text": "*Haeun's unsteady eyes rest for a moment at the corner of my mouth, then drop to the edge of the paving stones.* Did my face just now look very strange?",
         "choices": [
             "Pretend not to notice and check the clock",
             "Ask why her face changed",
@@ -789,19 +789,19 @@
     },
     "day4_haeun_notice_up": {
         "name": "Haeun",
-        "text": "*Haeun blinks, startled.* …Thank you for taking it in. It's too early to put it into words, but I feel a little lighter."
+        "text": "*Haeun blinks, a little startled, then flushes and smiles.* Thank you for hearing me all the way through without laughing. I still can't explain it straight out, but thanks to you, Senior, I feel a little lighter."
     },
     "day4_haeun_notice_down": {
         "name": "Haeun",
-        "text": "*Haeun smiles awkwardly and steps back.* Oh, right. We were talking about Seoyeon. …It was just something I said. Please forget it."
+        "text": "*Haeun forces the corners of her mouth up into a smile and steps half a pace back.* Oh, right. We were in the middle of talking about Seoyeon. What I just said was only a passing thought to myself, so please forget it."
     },
     "day4_haeun_reputation_cg": {
         "name": "{name}",
-        "text": "*Haeun stands by the school gate, waiting for an answer.*"
+        "text": "*In the cool morning air in front of the gate, Haeun waits for my answer with her lip lightly bitten.*"
     },
     "day4_haeun_personal": {
         "name": "Haeun",
-        "text": "Before you go, could we talk? I thought about yesterday. *Haeun steps aside by the gate.* Could I tell you a little about myself today?",
+        "text": "Senior, could you spare a moment before you go? After we talked yesterday, there's something I thought about all night, on my own. *Haeun takes one step closer, under the quiet shade of the tree beside the gate.* Today, would it be all right if I talked a little about myself, and not about someone else?",
         "context": "Day 4 morning. You are talking alone with Haeun beside the school gate. Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity.",
         "personality": "Talk privately with Haeun. Remember only actual prior exchanges. Keep her polite voice and natural senior address. Before the explicit route choice, do not establish romance; even after the choice she has not agreed to date yet. Respond to the current conversation and affinity. If Haeun cheering for Seoyeon actually came up earlier, continue that thread. She finds it unfamiliar that talking about Seoyeon keeps drifting to the protagonist, but she does not settle on her feelings or confess."
     }

@@ -1,22 +1,22 @@
 {
     "hidden_homeroom_d5_low": {
         "name": "Profesora",
-        "text": "*La profesora guarda el manuscrito doblado en la carpeta y la cierra.* Dejemos esta conversación aquí. Del resto me ocuparé en clase."
+        "text": "*La profesora empuja hasta el fondo de la carpeta el fajo doblado del manuscrito y cierra la tapa. El sonido seco de las esquinas del papel al encajar resuena un instante en el aula vacía.* Dejemos esta conversación aquí. Lo que queda lo cierro en clase."
     },
     "hidden_nurse_d5_low": {
         "name": "Enfermera",
-        "text": "*Me da una tarjeta de orientación.* Pide hora para hablar con calma. Si te encuentras mal, puedes venir a la enfermería. *Guardo la tarjeta y vuelvo al aula.*"
+        "text": "*La enfermera saca de entre las fichas una tarjeta de la sala de orientación y la desliza hasta el borde de la mesa.* Lo largo lo hablamos con una cita formal. Si te duele algo, puedes llamar a la puerta de la enfermería cuando quieras. *Recojo la tarjeta y, en silencio, doy la vuelta hacia el aula.*"
     },
     "morning5_start": {
         "name": "{name}",
-        "text": "*Quinto día, domingo. Voy al evento escolar.*"
+        "text": "*Quinto día, domingo por la mañana. Al otro lado de la puerta de la escuela se oye el rumor de las pancartas del festival batiendo con el viento. Pongo el pie en el final de una semana que, desde el traslado, he corrido sin aire.*"
     },
     "morning5_start_branch": {},
     "morning5_temptation_discovery_branch": {},
     "morning5_temptation_counteroffer_branch": {},
     "morning5_caught_teacher_counteroffer": {
         "name": "Profesora",
-        "text": "*En clase, la tutora me muestra la confirmación pendiente de la aplicación. En mi móvil sigue el chat de anoche.* Dijiste que ibas directo a casa. ¿Por qué no avisaste del cambio de planes?",
+        "text": "*La ventana del aula, que el sol de la mañana aún no ha calentado. La profesora gira hacia mí la marca roja de sin confirmar de la app de la escuela. Al otro lado de la pantalla de mi móvil sigue entero el rastro de la conversación que se alargó hasta tarde anoche.* Dijiste que ibas directo a casa. Si el plan cambió, ¿por qué no hubo ni una línea de confirmación ni una llamada?",
         "choices": [
             "Contarle lo que pasó anoche",
             "Restarle importancia y decir que no fue nada",
@@ -26,7 +26,7 @@
     },
     "morning5_caught_nurse_counteroffer": {
         "name": "Enfermera",
-        "text": "*La enfermera señala la confirmación pendiente.* Dijiste que ibas a casa y no supe más. Me preocupé. Bastaba con avisar dónde estabas.",
+        "text": "*La enfermera posa el índice, quieto, sobre el aviso sin confirmar de la app de la escuela en la pantalla del móvil. En el teléfono de mi bolsillo, la conversación de anoche sigue ahí, sin borrar.* Dijiste que te ibas directo a casa y, al no saber de ti hasta tarde, me tuvo en vilo todo el rato. Con que me hubieras dicho, en corto, dónde estabas.",
         "choices": [
             "Contarle lo que pasó anoche",
             "Restarle importancia y decir que no fue nada",
@@ -36,26 +36,26 @@
     },
     "morning5_caught_teacher_honest": {
         "name": "Profesora",
-        "text": "*Cierra el registro tras escuchar.* Gracias por contarlo. Ver a un amigo no es el problema. La próxima vez cumple con avisar. Por hoy dejaremos aquí lo del manuscrito."
+        "text": "*La profesora me escucha hasta el final y cierra en silencio la lista de asistencia. En el suspiro corto se le mezclan el alivio y el cansancio.* Gracias por decirlo claro. No te reprocho que vieras a un amigo. La promesa de avisar, cúmplela a partir de ahora. Lo del manuscrito lo dejamos aquí."
     },
     "morning5_caught_teacher_lie": {
         "name": "Profesora",
-        "text": "*Compara mi respuesta con las horas de la aplicación.* Eso no encaja. No cambies la historia para salir del paso. Hablaremos en el horario de tutoría."
+        "text": "*La mirada de la profesora va despacio de mi cara a la hora que quedó marcada en la app.* Esto no cuadra. No le eches palabras encima solo para salir de este momento. Cuando tengas la cabeza en orden, lo hablamos en la hora de orientación de la escuela."
     },
     "morning5_caught_nurse_honest": {
         "name": "Enfermera",
-        "text": "*Escucha y cierra el registro.* Me alegro de que llegaras bien. La próxima vez avisa si cambian tus planes. Hoy atiendo el festival; reservemos otro momento para hablar con calma. *Vuelvo al aula.*"
+        "text": "*La enfermera no cierra la ficha abierta hasta que ha oído toda mi explicación.* Me alegra que llegaras bien, sin haberte hecho daño. La próxima vez, si el plan se tuerce, avísame primero. Ahora empieza la atención del festival, así que la consulta larga la seguimos con otra cita. *Inclino la cabeza y vuelvo al aula.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "Enfermera",
-        "text": "*Deja el bolígrafo.* Hay cosas que no encajan. Si te encuentras mal, ven cuando lo necesites. Aclararemos esto con orientación. *Vuelvo al aula.*"
+        "text": "*La enfermera deja el bolígrafo sobre el margen de la ficha, con un clic.* Lo que acabas de explicar no encaja en algún punto con el horario. Si te encuentras mal, puedes venir cuando sea, pero esto lo vamos a repasar despacio con la orientadora. *Vuelvo al aula con el paso pesado.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
     "morning5_caught_by_dain_route": {},
     "morning5_caught_seoyeon_by_dain": {
         "name": "Seoyeon",
-        "text": "*Por la mañana, en el aula. En cuanto dejo el móvil delante de Seoyeon, la pantalla se enciende. Una notificación de Dain dice: «No olvides lo que prometimos anoche en el gimnasio». La mirada de Seoyeon se queda clavada en la pantalla.* ¿No fuiste al parque y te marchaste al gimnasio?",
+        "text": "*Aula de la mañana. En cuanto dejo el móvil sobre el pupitre, frente a Seoyeon, la pantalla se enciende de golpe. Bajo el nombre de Dain aparece nítida la frase «No olvides lo que prometimos ayer en el gimnasio». Las pestañas de Seoyeon tiemblan y se quedan quietas sobre la pantalla.* ...¿Así que ayer ni pusiste un pie en el parque y estabas en el gimnasio?",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
@@ -65,7 +65,7 @@
     },
     "morning5_caught_seoyeon_by_yuna": {
         "name": "Seoyeon",
-        "text": "*El móvil vibra sobre la mesa entre Seoyeon y yo. Una notificación de Yuna dice: «Gracias por quedarte conmigo anoche en el anexo». Seoyeon la lee hasta el final y levanta la cabeza despacio.* ¿Fuiste al anexo sin siquiera responderme?",
+        "text": "*En el pupitre, frente a Seoyeon, la pantalla del móvil se enciende con una vibración corta. Un aviso de Yuna: «Gracias por quedarte ayer en el anexo». Seoyeon solo traga saliva y levanta la cabeza despacio cuando ha leído esa línea corta hasta el final.* ...Ayer ni una línea a mi mensaje, ¿y de noche, tarde, estabas en el anexo?",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
@@ -75,7 +75,7 @@
     },
     "morning5_caught_dain_by_seoyeon": {
         "name": "Dain",
-        "text": "*El móvil vibra mientras Dain está junto a la mesa. Una notificación de Seoyeon dice: «Todavía recuerdo la mano que sostuve anoche en la azotea». La sonrisa de Dain se congela.* ¿Fuiste a la azotea mientras yo esperaba?",
+        "text": "*En el instante en que Dain se me pega al lado del pupitre, la pantalla suena y saca el aviso de Seoyeon. «La mano que tomé anoche en la azotea, todavía la recuerdo.» A Dain se le borra del todo la sonrisa que aún le quedaba de broma.* ...Mientras yo esperaba en el gimnasio, ¿tú estabas en la azotea?",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
@@ -85,7 +85,7 @@
     },
     "morning5_caught_dain_by_yuna": {
         "name": "Dain",
-        "text": "*Cuando Dain aparta la silla de enfrente, una notificación de Yuna ilumina la pantalla. «Gracias por quedarte conmigo anoche en el anexo». La mano de Dain se detiene en el respaldo.* ¿Leíste mi mensaje y fuiste al anexo?",
+        "text": "*Justo cuando Dain arrastra la silla de delante para sentarse, en el móvil del pupitre sale un aviso de Yuna. «Gracias por quedarte ayer en el anexo.» El dorso de la mano con la que agarra el respaldo se le pone blanco.* ...¿Leíste mis mensajes enteros y luego te fuiste hacia el anexo?",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
@@ -95,7 +95,7 @@
     },
     "morning5_caught_yuna_by_seoyeon": {
         "name": "Yuna",
-        "text": "*El móvil vibra sobre la mesa entre Yuna y yo. Una notificación de Seoyeon dice: «Todavía recuerdo la mano que sostuve anoche en la azotea». Yuna lee cada palabra antes de apartar los ojos de la pantalla.* Dejaste mis mensajes sin responder y fuiste a la azotea.",
+        "text": "*En el pupitre, frente a Yuna, el móvil suena bajo. Junto al nombre de Seoyeon, la frase «La mano que tomé anoche en la azotea, todavía la recuerdo». Yuna lee esas letras en silencio, todas, y solo entonces levanta los ojos, fríos y hundidos.* ...Dejaste mis mensajes sin abrir y subiste a la azotea.",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
@@ -105,7 +105,7 @@
     },
     "morning5_caught_yuna_by_dain": {
         "name": "Yuna",
-        "text": "*Justo cuando Yuna abre el libro, aparece una notificación de Dain. «No olvides lo que prometimos anoche en el gimnasio». La mano de Yuna se detiene sobre la cubierta.* Mi nombre seguía en tu pantalla y aun así te quedaste en el gimnasio.",
+        "text": "*En el instante en que Yuna va a abrir el libro que tiene en las rodillas, el aviso de Dain se superpone a mi pantalla, donde seguía abierto su chat. «No olvides lo que prometimos ayer en el gimnasio.» La punta pálida de los dedos de Yuna, sobre la cubierta, se queda quieta.* ...Tenías mi nombre en la pantalla y de noche te quedaste en el gimnasio.",
         "choices": [
             "Contarle lo de anoche",
             "Restarle importancia y disimular",
@@ -115,31 +115,31 @@
     },
     "morning5_caught_seoyeon_honest": {
         "name": "Seoyeon",
-        "text": "*Seoyeon vuelve a mirar la pantalla.* No puedo darte las gracias por ser sincero. Ahora me cuesta mirarte a la cara."
+        "text": "*Seoyeon se muerde el labio, fuerte, y aparta la mirada hacia la pantalla que se va apagando.* ...Ni siquiera me sale el gracias por haberlo contado claro. Perdona, pero ahora mismo me pesa demasiado mirarte a la cara."
     },
     "morning5_caught_seoyeon_lie": {
         "name": "Seoyeon",
-        "text": "*Seoyeon mira el aviso y luego a mí.* Me preocupa más lo que dices ahora que lo de ayer."
+        "text": "*Las pupilas frías de Seoyeon van del aviso del móvil a mis ojos, y clavan.* ...Me duelen más las vueltas que le estás dando ahora, delante de mí y sin pestañear, que el sitio donde estuviste anoche."
     },
     "morning5_caught_dain_honest": {
         "name": "Dain",
-        "text": "*Dain estira la muñequera hasta el tope y la suelta.* O sea, cuando te escribí que seguía esperando, tú ya estabas allí."
+        "text": "*Dain tira con fuerza del extremo de la muñequera y lo suelta de golpe. Se le escapa el aire, tembloroso, con una risa que no llega.* ...Cuando te escribí que te estaba esperando, tú ya estabas allí."
     },
     "morning5_caught_dain_lie": {
         "name": "Dain",
-        "text": "*Dain alza las cejas, pero su sonrisa no vuelve.* ¿Pensabas que por dedicarme al deporte era idiota?"
+        "text": "*A Dain se le sube una ceja de lado, pero no le vuelve ni un poco de la risa de siempre.* ...Oye. ¿De verdad creías que, como solo hago deporte, soy una idiota que no se entera?"
     },
     "morning5_caught_yuna_honest": {
         "name": "Yuna",
-        "text": "*Yuna apaga la pantalla y desliza el móvil al otro lado de la mesa.* Esta vez duele más porque sé adónde fuiste."
+        "text": "*Yuna pulsa el botón de encendido, apaga la pantalla del todo y me la empuja en silencio.* ...Escuece mucho más haber oído de tu boca dónde estabas que cuando lo dejé pasar sin saber."
     },
     "morning5_caught_yuna_lie": {
         "name": "Yuna",
-        "text": "*Yuna vuelve a encender el aviso.* Te di la oportunidad de aclararlo y sigues ocultándolo."
+        "text": "*Yuna vuelve a tocar la pantalla con el índice y me pone delante, bien recto, el aviso que acaba de salir.* ...Te di hasta la oportunidad de decirlo tú, y aun así intentas taparme los ojos hasta el final."
     },
     "morning5_counteroffer_group_talk": {
         "name": "Las dos",
-        "text": "*Antes de las instrucciones del festival, me reúno en el aula con las dos personas implicadas en lo de anoche. Nadie se marcha mientras aclaramos por qué se cortó la comunicación y lo que nos dijimos.*\n«¿Qué piensas hacer ahora?»",
+        "text": "*En medio del aula revuelta, justo antes del aviso del festival, me quedo frente a las dos personas que quedaron enredadas por lo que elegí anoche, en un silencio que ahoga. Mientras vamos señalando, una a una, las horas en que se cortó el contacto y las palabras que nos dejamos, nadie mueve el pie primero.* «...Entonces, ¿qué piensas hacer ahora?»",
         "context": "Mañana del día 5, en un aula abierta. El protagonista se quedó por otra invitación y no avisó a quien había prometido primero. Continúa su explicación o evasión anterior. Si ambos son estudiantes, se trata de compromisos románticos solapados. Una docente o enfermera pregunta por la confirmación de llegada como personal escolar, nunca como pareja. La estudiante explica su invitación y sentimientos. La atención no depende de elecciones amorosas. Entre estudiantes, se exige una explicación directa de las intenciones y compromisos del protagonista.",
         "personality": "Cuando ambas participantes son estudiantes: Cada una conserva su propia voz y su propio dolor. La persona traicionada habla primero, y quien lo tentó responde después de escucharla. El centro de la confrontación es la explicación del protagonista: ambas le preguntan directamente y señalan cualquier vacío en lo que diga. La persona traicionada pregunta, a su manera, por qué aceptó a otra mientras mantenía la relación, si jugaba a dos bandas desde el principio o si solo estaba jugando con ella. Quien lo tentó asume que tomó la iniciativa y siente culpa por haber herido a la otra, pero no oculta que quiere quedarse con el protagonista y ser la elegida. La culpa no basta para que se retire o ceda. Pueden contradecirse o responderse, pero no excluyen al protagonista ni deciden la relación entre ellas. No repiten una pregunta ya respondida: insisten en el dato que falta, en lo que significaba la relación o en qué elegirá ahora.\nSi participa personal escolar, sustituye el conflicto romántico anterior por el aviso de llegada incumplido y la responsabilidad de comunicar. El adulto no es rival amoroso y habla desde su función de apoyo. La estudiante explica su invitación y sentimientos con respeto. No repitas penalizaciones ya aplicadas.",
         "buttonText": "Responder"
@@ -152,89 +152,89 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*Mi primera semana en el nuevo instituto toca a su fin. Antes de abrir la puerta del aula, recuerdo lo que hemos hablado estos cuatro días.*"
+        "text": "*La primera semana desde el traslado ya ha llegado al final. Antes de coger el picaporte del aula, repaso en silencio los alientos y las voces que me rozaron el oído estos cuatro días. Se me calientan las yemas, y sienta bien.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
-        "text": "Mi primera semana casi ha terminado y sigo sin decidirme. De momento, cruzo la entrada."
+        "text": "*Se me ha ido casi toda la primera semana desde el traslado sin decidir hacia dónde se inclina lo que siento. Cruzo la puerta de la escuela, que bulle con los preparativos del festival, y alargo la respiración.*"
     },
     "morning5_mood_low": {
         "name": "{name}",
-        "text": "Mi primera semana toca a su fin. Miro los tres nombres en la pantalla bloqueada y la apago sin abrir ningún chat."
+        "text": "*La primera semana desde el traslado se va apagando. Miro los tres nombres que quedan juntos en la pantalla de bloqueo y, al final, apago sin haber abierto ningún chat.*"
     },
     "morning5_gate": {},
     "morning5_seo_note_1": {
         "name": "Seoyeon",
-        "text": "*Una nota en la mesa, de puño y letra de Seoyeon.* Haz un hueco esta tarde. Dejaré abierta la azotea. — Seoyeon"
+        "text": "*En el centro de mi pupitre hay una nota, con las esquinas bien alineadas. De la letra pulcra de Seoyeon, que ya conozco, sale un olor leve a crema de manos.* Por la tarde, déjate un rato libre. Dejaré abierta la puerta de la azotea. — Seoyeon"
     },
     "morning5_seo_note_1_b": {
         "name": "{name}",
-        "text": "*Al pasar por la exposición del club de literatura en el pasillo, veo cuatro tachuelas sin nada sujeto en el tablero.*"
+        "text": "*Al pasar por el rincón de exposición del club de literatura, montado a lo largo de las ventanas del pasillo, me detengo ante cuatro chinchetas vacías, clavadas en una esquina del corcho.*"
     },
     "morning5_yuna_story_gone": {
         "name": "{name}",
-        "text": "*En el tablero solo quedan las marcas de las tachuelas. No sé si el relato estuvo ahí y lo quitaron o si nunca lo colocaron.*"
+        "text": "*En el corcho solo quedan cuatro marcas de chincheta, hundidas en el sitio de donde arrancaron el papel. No hay manera de saber si alguien pegó un manuscrito durante la noche y lo quitó, o si ese hueco estuvo vacío desde el principio.*"
     },
     "morning5_yuna_story_gone_2": {
         "name": "{name}",
-        "text": "*Las marcas de chinchetas no dicen lo que siente Yuna.*"
+        "text": "*Paso la yema por los agujeros pequeños de las chinchetas, pero con estas marcas solas no puedo adivinar adónde fue lo que Yuna se guardó dentro.*"
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*Hay un cuento pegado en el tablero. Título: «A la persona que conocí en la biblioteca». Está escrito con tinta lila y en la esquina doblada hay una pequeña miga de pan.*"
+        "text": "*En un lado del tablón del club de literatura hay varias hojas de un cuento, sujetas en orden con chinchetas. El título es «A la persona que conocí en la biblioteca». Tinta de pluma de un lila pálido que ya me suena, y en la esquina del papel, un poco doblada, se ha pegado una miga diminuta de pan soboro.*"
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*En el cuento, alguien tapa con una manta a quien duerme en la biblioteca. No nos pasó, pero ese cuidado silencioso me recuerda a Yuna.*"
+        "text": "*Quien habla en el manuscrito se acerca en silencio a alguien dormido boca abajo sobre un pupitre de la biblioteca, por la tarde, y le echa encima su propio cárdigan. No pasó de verdad, pero en cada frase de quedarse al lado conteniendo hasta el aliento se me superpone la mirada de Yuna, distante y cariñosa a la vez.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*La última frase dice: «Cuando esa persona abrió los ojos, yo ya no estaba. Solo dejé una nota. — La próxima vez también estaré aquí». Tinta lila, del mismo color que la primera nota.*"
+        "text": "*La vista se me va a la última frase del manuscrito. «Cuando esa persona abrió los ojos, yo ya no estaba. Solo dejé una nota, como un marcapáginas. — La próxima vez también estaré aquí.» La misma tinta lila de la nota que encontré el primer día en mi taquilla se extiende, quieta, con el sol de la mañana.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*En una esquina inferior del tablero hay una frase en letra pequeña: «Esto es ficción. No es real». Debajo se ven manchas de borrador.*"
+        "text": "*En la esquina del margen de abajo del manuscrito queda una letra añadida a lápiz, muy pequeña. «Esto es una novela. No es real.» Encima de esa frase se extienden, tenues, las marcas de un borrador que pasó varias veces y se detuvo; y, al contrario, lo que no pudo esconder se nota nítido, como en la palma.*"
     },
     "morning5_return_class": {
         "name": "{name}",
-        "text": "*Vuelvo al aula y Dain ya está esperando.*"
+        "text": "*Cuando vuelvo al aula desde el fondo del pasillo, Dain, apoyada en el marco de la puerta y dando toques con la punta del pie, me ve y se le iluminan los ojos.*"
     },
     "morning5_dain_1": {
         "name": "Dain",
-        "text": "Oye, te puse como mi pareja para la actividad deportiva de hoy."
+        "text": "*Me da un toque en el hombro y sonríe con ganas de broma.* ¡Oye, ¿de dónde sales ahora! Hoy te he puesto el nombre, clavado, en la casilla de pareja del evento deportivo."
     },
     "morning5_dain_1_b": {
         "name": "{name}",
-        "text": "¿Sin pedirme permiso?"
+        "text": "¿Qué haces apuntándolo como te da la gana, sin ni siquiera mi permiso?"
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "Si llegas tarde, me voy a enojar, ¿entendido?"
+        "text": "*Echa la cabeza atrás, lo bastante para que se le mueva la coleta, y se hincha las mejillas.* Ja. No has dicho que no, ¿eh? Si llegas tarde, me enfado de verdad. ¿Queda claro?"
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*No hay notas nuevas sobre el pupitre. Seoyeon lleva hoy también el portapapeles pegado al brazo. Yuna y Dain solo me hablan brevemente de los preparativos del evento.*"
+        "text": "*Sobre el pupitre ya no hay ninguna nota secreta. En su lugar, Seoyeon, que ordenaba los papeles de información al frente del aula, me sostiene la mirada con el portapapeles contra el pecho y sonríe apenas. Yuna y Dain, con cara serena, me dejan solo el horario de preparación del festival y siguen.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*No hay ninguna nota nueva. Yuna guarda el separador entre las páginas de su cuaderno. Seoyeon y Dain solo me hablan brevemente de los preparativos del evento.*"
+        "text": "*Ni en la taquilla ni sobre el pupitre hay una nota nueva. Yuna, sentada junto a la ventana, juguetea con el marcapáginas lila metido entre las páginas del cuaderno, nota mi mirada y me saluda en silencio con los ojos. Seoyeon y Dain me dicen solo, en corto, lo que hay que transmitir para preparar el festival.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*Dain se ajusta la muñequera cerca del gimnasio. Seoyeon y Yuna solo me hablan brevemente de los preparativos del evento.*"
+        "text": "*Junto a la entrada del gimnasio, Dain se reajusta bien la muñequera y, en cuanto me ve, agita la mano. Seoyeon y Yuna, con las que me cruzo en el aula, me indican en voz tranquila solo el orden de los actos del festival.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
-        "text": "*Durante los preparativos, paso ante un aula vacía y abierta.*"
+        "text": "*Cruzo un hueco del pasillo, ruidoso por los preparativos del festival, y de pronto freno ante un aula vacía cuya puerta está a medio abrir.*"
     },
     "hidden_homeroom_d5_1": {
         "name": "{name}",
-        "text": "Profesora, sigue aquí. Ese sobre... no veo el manuscrito. *Está sentada en la mesa del profesor con un sobre marrón.*"
+        "text": "Profesora, todavía estaba usted aquí. Ese sobre que lleva en la mano... el manuscrito de dentro no se ve. *La profesora está sentada, apoyada ante el escritorio en silencio, y da vueltas a un sobre marrón de documentos, grueso.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Profesora",
-        "text": "Ah, viniste."
+        "text": "*Levanta la cabeza y suelta un suspiro corto.* Ah, viniste."
     },
     "hidden_homeroom_d5_1_c": {
         "name": "{name}",
@@ -242,31 +242,31 @@
     },
     "hidden_homeroom_d5_1_d": {
         "name": "Profesora",
-        "text": "*Levanta el sobre.* Esto."
+        "text": "*Alza un poco, a la altura de mis ojos, el sobre marrón que tenía en la mano.* Me refiero a esto."
     },
     "hidden_homeroom_d5_1_e": {
         "name": "{name}",
-        "text": "¿Qué es?"
+        "text": "¿Qué lleva ahí dentro?"
     },
     "hidden_homeroom_d5_2": {
         "name": "Profesora",
-        "text": "La copia para la sesión de lectura y crítica del club. Está sin terminar, pero también he corregido la parte que señalaste ayer."
+        "text": "Es el impreso para la sesión de crítica del club de literatura. Sigue incompleto, con el final en blanco... Las frases que me señalaste la otra vez las volví a corregir durante la noche."
     },
     "hidden_homeroom_d5_3": {
         "name": "Profesora",
-        "text": "Llevo siete años con esto. Ya va siendo hora de escuchar también a los demás."
+        "text": "*A los dedos que recorren la cara del sobre les pasa un temblor leve.* Llevo siete años agarrándolo sola dentro de un cajón, y ya va siendo hora de oír también cómo lo leen los demás."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
-        "text": "¿Lo entrego con este número? *Hay una sección de comentarios anónimos al final.*"
+        "text": "Si lo anoto con este número y lo entrego, ¿así está bien? *En la última hoja del ejemplar de la sesión, asomado a medias por el sobre, está impresa la casilla de comentarios anónimos.*"
     },
     "hidden_homeroom_d5_5": {
         "name": "Profesora",
-        "text": "Aunque imprima varias copias, los nervios son los mismos."
+        "text": "*Se rasca la mejilla, como si le diera vergüenza.* Qué raro, ¿verdad? Aunque saqué varias copias en la fotocopiadora, cuando se lo tiendo a alguien por primera vez me tiemblan igual las yemas."
     },
     "hidden_homeroom_d5_choice": {
         "name": "{name}",
-        "text": "*Abrazo el manuscrito. El sobre presiona la parte interna de mi brazo.*",
+        "text": "*Abrazo con los dos brazos el sobre del manuscrito que me pasa la profesora. El peso tibio del fajo de papel me aprieta por dentro del brazo.*",
         "choices": [
             "Después de siete años, ya estará casi terminado. No creo que haga falta marcar nada.",
             "Lo leeré primero. ¿Puedo hacer anotaciones?",
@@ -276,120 +276,120 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Profesora",
-        "text": "No tienes que buscar algo bonito que decir antes de leer. Llevar mucho tiempo escribiéndolo no significa que esté bien escrito. *Alisa con el pulgar la esquina del sobre arrugada en la mano.*"
+        "text": "*La profesora sonríe sin ganas y, con el pulgar, va alisando despacio la esquina arrugada del sobre.* No hace falta que busques algo bonito que decir antes siquiera de pasar la primera página. Haberlo tenido mucho tiempo no quiere decir que esté bien escrito."
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Profesora",
-        "text": "Todavía no lo he terminado."
+        "text": "Todavía no he llegado a llenar ni la última página."
     },
     "hidden_homeroom_d5_praise_trap_3": {
         "name": "{name}",
-        "text": "Pero ha conseguido escribir hasta aquí."
+        "text": "Aun así, no lo abandonó usted y escribió hasta aquí."
     },
     "hidden_homeroom_d5_praise_trap_4": {
         "name": "Profesora",
-        "text": "Sí."
+        "text": "...Sí. Hasta aquí he llegado."
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Profesora",
-        "text": "Me lo quedo por ahora. Sé que intentas ser amable. Pero aún no lo has leído. *Recoge el manuscrito, vacila un momento y lo mete en el sobre.*"
+        "text": "Esta copia me la guardo yo de momento. Te agradezco que intentes no hacerme daño con eso. Pero aún no has leído ni una línea. *La profesora recoge el manuscrito de mis manos con cuidado, duda un instante y lo vuelve a meter en el sobre marrón.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Profesora",
-        "text": "No pasa nada. Pero en la sesión, comenta solo lo que hayas leído."
+        "text": "Está bien. A cambio, en la sesión de crítica habla solo de los trozos que hayas leído tú."
     },
     "hidden_homeroom_d5_praise_trap_7": {
         "name": "{name}",
-        "text": "Profesora."
+        "text": "Profesora..."
     },
     "hidden_homeroom_d5_praise_trap_8": {
         "name": "Profesora",
-        "text": "Lo envié a editoriales tres veces y las tres lo rechazaron. Más que ánimos vagos, necesitaba saber en qué punto habían dejado de leer."
+        "text": "Lo mandé a editoriales tres veces y las tres me lo devolvieron. Cada vez, más que un consuelo vago, lo que me urgía era en qué frase había cerrado el lector."
     },
     "hidden_homeroom_d5_praise_trap_9": {
         "name": "{name}",
-        "text": "*La marca de una etiqueta de devolución en la esquina del sobre me llama la atención.*"
+        "text": "*En la esquina del sobre marrón se me queda la vista en la marca blanca del adhesivo de una etiqueta de devolución, arrancada a tirones.*"
     },
     "hidden_homeroom_d5_praise_trap_10": {
         "name": "Profesora",
-        "text": "Más que elogios, necesitaba ver las huellas de una lectura. Y si te he presionado, la culpa es mía como profesora."
+        "text": "Necesitaba el rastro de haberlo leído de verdad, más que un elogio bonito. Si te puse encima un peso que no te tocaba, siendo alumno, eso es culpa mía por entero."
     },
     "hidden_homeroom_d5_praise_trap_11": {
         "name": "Profesora",
-        "text": "Vete. Vas a llegar tarde al evento."
+        "text": "Anda, vete. Se te va a hacer tarde para cuadrar la preparación del festival con los de la clase."
     },
     "hidden_homeroom_d5_praise_trap_12": {
         "name": "{name}",
-        "text": "*Salí y cerré la puerta del aula. El sobre sigue en el escritorio de la profesora. Queda una marca de etiqueta de devolución del tamaño de una uña en la superficie.*"
+        "text": "*Cierro en silencio la puerta del aula vacía y salgo al pasillo. El sobre marrón dejado solo sobre el escritorio, y la marca de la etiqueta de devolución arrancada del tamaño de una uña, se me quedan mucho rato detrás de los párpados.*"
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "Si hay un poco de tiempo, ¿puedo leerlo ahora? Primero quiero ver dónde me atasco. *Mantiene los labios cerrados y endereza el borde del papel doblado en su mano.*"
+        "text": "Profesora, si ahora le viene bien un momento, ¿puedo leerlo aquí mismo? Quiero ver yo primero en qué punto se me corta el aire al leer. *La profesora mueve los labios sin hablar y luego me alisa, bien recto, el borde del manuscrito que tenía un poco enrollado en la mano.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Profesora",
-        "text": "¿Aquí?"
+        "text": "...¿Ahora, aquí mismo?"
     },
     "hidden_homeroom_d5_correct_3": {
         "name": "{name}",
-        "text": "Sí. No quiero decir cualquier cosa."
+        "text": "Sí. No quiero soltar palabras vacías sin haberlo leído."
     },
     "hidden_homeroom_d5_correct_4": {
         "name": "Profesora",
-        "text": "Está bien. Espera un momento."
+        "text": "*Me mira un momento hondo a los ojos y, en silencio, me cede la silla.* Vale. Con un momento basta."
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*El final está en blanco. Bajo los tachones rojos se superponen intentos de reescritura.*"
+        "text": "*Aula vacía: solo el roce de pasar el papel. La última hoja del manuscrito está en blanco más de la mitad. Bajo los tachones rojos, una y otra vez, se superponen las huellas de escribir una frase, borrarla y volver a pararse.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Profesora",
-        "text": "¿Leíste hasta ahí?"
+        "text": "*Pregunta bajo, con la mirada caída por encima de mi hombro.* ...¿Ya has leído hasta ahí?"
     },
     "hidden_homeroom_d5_correct_7": {
         "name": "Profesora",
-        "text": "Cuando miro la última página, la mano se me para. Hace años que es así."
+        "text": "Qué raro. Solo al abrir esa última página, la punta del bolígrafo se me para como si se hubiera quedado helada. Llevo años sin poder pasar ese umbral."
     },
     "hidden_homeroom_d5_correct_8": {
         "name": "Profesora",
-        "text": "...Aquí. *Señala la última línea. Termina el anuncio.*"
+        "text": "...Justo en esta línea. *El dedo fino de la profesora roza cerca del dorso de mi mano y señala la última frase, cortada. El aviso del festival que sonaba lejos, al otro lado de la ventana, se va apagando.*"
     },
     "hidden_homeroom_d5_correct_9": {
         "name": "{name}",
-        "text": "¿Puedo marcar en la última página por qué me detuve?"
+        "text": "En esta última página, ¿me deja marcar en el margen por qué creo que el paso se detuvo?"
     },
     "hidden_homeroom_d5_correct_10": {
         "name": "Profesora",
-        "text": "¿Vas a hacer una crítica de verdad?"
+        "text": "*Abre mucho los ojos, como sorprendida, y enseguida se le suaviza el gesto y sonríe.* ¿Vas a dejarme hasta una crítica escrita en mi manuscrito?"
     },
     "hidden_homeroom_d5_correct_11": {
         "name": "{name}",
-        "text": "Sí. Porque lo estoy leyendo como lector."
+        "text": "Sí. Porque ahora no lo leo como alumno, sino como el primer lector que ha seguido su texto hasta el final."
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Profesora",
-        "text": "Necesitaba que lo leyeras así. Aunque lo haya escrito yo, hay cosas que no veo cuando lo leo sola. *Deja el portapapeles en la mesa y tapa el bolígrafo rojo.*"
+        "text": "...Justo necesitaba a alguien que lo leyera así. Aunque las frases son mías, cuando las miro sola, metida en un cuarto, no veo en absoluto desde dónde perdí el camino. *La profesora deja sobre el escritorio el portapapeles que tenía en la mano, cierra con un clic la tapa del bolígrafo rojo y me lo tiende.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Profesora",
-        "text": "Bien. Escríbelo en la sección de comentarios anónimos."
+        "text": "Bien. En la casilla de comentarios anónimos de la última hoja, escribe tal como lo sentiste."
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "De acuerdo. Lo leeré y comentaré. *Frota la marca de devolución del sobre.*"
+        "text": "Entendido. Lo leeré sin saltarme ni una línea y después se lo anotaré. *La profesora roza en silencio, con la yema, la marca de la etiqueta de devolución que queda en el sobre marrón.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Profesora",
-        "text": "Este es tu número. Lo recogeré el lunes junto con las demás copias."
+        "text": "Toma, este es el número que te corresponde. El lunes lo recogeré todo de una vez, mezclado con los ejemplares de los demás del club."
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*Recuerdo las copias apiladas ayer en la mesa del fondo de la cafetería. En el sobre pone «N.º 04».*"
+        "text": "*Me vuelve el fajo de ejemplares de la sesión, amontonado al anochecer en la mesa del fondo de la cafetería. En la esquina del sobre marrón que tengo en la mano está escrito, con letra pulcra, «04».*"
     },
     "hidden_homeroom_d5_6_c": {},
     "hidden_homeroom_d5_6_d": {
         "name": "Profesora",
-        "text": "Escribe con sinceridad solo hasta donde hayas leído. No hace falta que pongas tu nombre."
+        "text": "Basta con que lo escribas sin adorno, solo hasta donde hayas leído. El nombre no hace falta que lo pongas."
     },
     "hidden_homeroom_d5_6_e": {
         "name": "{name}",
@@ -397,37 +397,37 @@
     },
     "hidden_homeroom_d5_6_f": {
         "name": "{name}",
-        "text": "Y usted tampoco intente averiguar quién escribió cada comentario."
+        "text": "A cambio, usted tampoco busque a propósito, por la letra, quién lo escribió."
     },
     "hidden_homeroom_d5_6_g": {
         "name": "Profesora",
-        "text": "No buscaré quién lo ha escrito. Basta con ver lo que han dicho. *Comprueba la etiqueta numerada de la copia del taller y asiente.*"
+        "text": "No voy a buscar quién lo escribió. Me basta con leer qué frase quedó sobre ese papel. *La profesora comprueba la etiqueta con el número del ejemplar y asiente, sin más.*"
     },
     "hidden_homeroom_d5_6_h": {
         "name": "Profesora",
-        "text": "Nunca pensé que llegaría el día en que estuviera preparada para recibir opiniones."
+        "text": "...No creí que fuera a llegar el día de oír lo que alguien sintió de verdad al leer mi manuscrito."
     },
     "hidden_homeroom_d5_6_i": {},
     "hidden_homeroom_d5_6_j": {
         "name": "Profesora",
-        "text": "Léelo antes del club de literatura del lunes."
+        "text": "Léelo y devuélvemelo antes de la hora de reunión del club de literatura del lunes."
     },
     "hidden_homeroom_d5_6_k": {},
     "hidden_homeroom_d5_6_l": {
         "name": "{name}",
-        "text": "Lo leeré. De verdad."
+        "text": "Sí. No lo pasaré por encima. Lo leeré de verdad."
     },
     "hidden_homeroom_d5_6_m": {
         "name": "Profesora",
-        "text": "*Se acomoda detrás de la oreja el cabello que se le había soltado.* No acepto reseñas."
+        "text": "*Se pasa detrás de la oreja el pelo que le rozaba la mejilla y lo suelta como si le diera igual.* Te lo advierto: no acepto una reseña escrita por compromiso."
     },
     "hidden_homeroom_d5_6_n": {
         "name": "{name}",
-        "text": "Eso no es verdad, ¿cierto?"
+        "text": "Anda, que por dentro lo está esperando usted y dice que no."
     },
     "hidden_homeroom_d5_6_o": {
         "name": "Profesora",
-        "text": "*Se le levantan las comisuras de los labios.* Es cierto. Escríbeme aunque sea una línea."
+        "text": "*Al final no puede aguantarse y la comisura de los labios le dibuja una curva suave.* ...Me has pillado. Sí: aunque sea una línea, escríbela de verdad."
     },
     "hidden_homeroom_d5_6_p": {},
     "hidden_homeroom_d5_6_q": {
@@ -436,56 +436,56 @@
     },
     "hidden_homeroom_d5_6_r": {
         "name": "Profesora",
-        "text": "Recogeré tu respuesta durante el club del lunes. Hasta entonces, yo también intentaré avanzar con el final."
+        "text": "Tu respuesta la recibiré en serio en la hora del club de literatura del lunes. Hasta entonces yo también intentaré empujar, aunque sea una línea más, el final que tenía parado."
     },
     "hidden_homeroom_d5_6_s": {
         "name": "Profesora",
-        "text": "Así ninguno de los dos podrá buscar excusas."
+        "text": "Así ninguno de los dos va a poder poner una excusa para escaparse."
     },
     "hidden_homeroom_d5_6_t": {
         "name": "Profesora",
-        "text": "*Anota la hora límite para entregar las críticas bajo el horario del club.*"
+        "text": "*En la última línea del horario del club de literatura escribe, clara, la hora límite de la crítica.*"
     },
     "hidden_homeroom_d5_7": {
         "name": "Profesora",
-        "text": "Y hasta aquí los agradecimientos. Ahora ve a preparar el evento."
+        "text": "Bueno, el gracias me lo guardo. Vuelve ya a clase y termina de preparar el acto."
     },
     "hidden_homeroom_d5_7_b": {},
     "hidden_homeroom_d5_7_c": {
         "name": "Profesora",
-        "text": "Termina bien el evento primero. Nos vemos el lunes en el club para la sesión de crítica."
+        "text": "Primero termina el festival de la escuela sin dejarte nada por lamentar. Lo de la crítica lo seguimos el lunes en la sala del club de literatura."
     },
     "hidden_homeroom_d5_8": {
         "name": "Profesora",
-        "text": "*Salgo al pasillo y reviso los nombres de los estudiantes encargados de preparar el evento.*"
+        "text": "*La profesora sale primero al pasillo y va comprobando, nombre por nombre, a los alumnos que preparan los puestos del festival.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Profesora",
-        "text": "*Señala la copia número 04.* Es la última revisión. No me hagas concesiones aunque encuentres huecos."
+        "text": "*Señala con la mirada el sobre del ejemplar 04 que llevo en brazos.* Es la última revisión. Si ves una frase vacía, no me la pases: señálamela."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
-        "text": "*En mitad del evento, rato de descanso. Paso por delante de la enfermería.*"
+        "text": "*El descanso en que la preparación del acto de la mañana se para un momento a coger aire. Paso por el pasillo de delante de la enfermería, de donde sale, leve, olor a desinfectante.*"
     },
     "hidden_nurse_d5_1": {
         "name": "Enfermera",
-        "text": "Ah, {name}. Es el último día del evento. Dejemos también cerrado hoy el registro de las consultas."
+        "text": "Ah, {name}, has venido. El festival ya va por el final. Los registros de consulta que fuimos apuntando, los cerramos también ahora."
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
-        "text": "*La enfermera abre la última casilla de comprobación de la hoja de seguimiento.*"
+        "text": "*La enfermera abre el archivo de las fichas y despliega la última casilla de comprobación de la hoja de consulta donde está escrito mi nombre.*"
     },
     "hidden_nurse_d5_1_c": {
         "name": "Enfermera",
-        "text": "Cuando comprobemos cómo estás hoy, daremos por terminadas estas consultas."
+        "text": "Si comprobamos solo cómo estás ahora, el registro de la consulta inicial de esta semana queda cerrado y limpio."
     },
     "hidden_nurse_d5_1_d": {
         "name": "{name}",
-        "text": "¿Eso significa que ya no tengo que venir?"
+        "text": "¿Quiere decir que ya no tengo que pasarme por la enfermería aparte?"
     },
     "hidden_nurse_d5_1_e": {
         "name": "Enfermera",
-        "text": "Si te duele algo o te sientes desbordado, ven por la vía habitual. No necesitas inventar un motivo."
+        "text": "*Aparta la vista de la ficha y me mira a los ojos, quieta.* Si te duele algo o no puedes con lo que llevas dentro, ven cuando quieras, en serio. No hace falta que te hagas daño a propósito ni que te inventes una excusa grande."
     },
     "hidden_nurse_d5_1_f": {
         "name": "{name}",

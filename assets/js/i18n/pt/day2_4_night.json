@@ -1,69 +1,69 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Depois do banho, deito na cama. As notificações das três chegam ao mesmo tempo.*"
+        "text": "*Termino o banho com água morna, sacudo o cabelo molhado e, assim que me deito na cama, o celular toca sem parar e as notificações das três aparecem ao mesmo tempo.*"
     },
     "night2_msg_1": {},
     "night2_msg_dain_specific": {
         "name": "Dain",
-        "text": "Ei, o tteokbokki de hoje estava delicioso."
+        "text": "Ei, o tteokbokki que a gente comeu depois da aula hoje tava muito bom, né!"
     },
     "night2_msg_dain_specific_2": {
         "name": "Dain",
-        "text": "Amanhã apostamos de novo. Mudamos de modalidade."
+        "text": "Amanhã a gente aposta de novo. Só que dessa vez troca pra uma modalidade em que eu ganho!"
     },
     "night2_msg_seo_general": {
         "name": "Seoyeon",
-        "text": "Vou deixar o terraço aberto amanhã no almoço. Aparece."
+        "text": "Amanhã no almoço também vou deixar a porta do terraço aberta. Não esquece e sobe."
     },
     "night2_msg_seo_specific": {
         "name": "Seoyeon",
-        "text": "Valeu hoje. Terminei cedo por sua causa."
+        "text": "Valeu por ter vindo à sala do grêmio hoje e me ajudado. Graças a você, acabou bem mais cedo do que o normal."
     },
     "night2_msg_seo_specific_2": {
         "name": "Seoyeon",
-        "text": "Posso te chamar de novo, então já se prepara."
+        "text": "Agora que eu sei que você trabalha bem, talvez eu te chame de novo. Já vai se preparando."
     },
     "night2_msg_yuna_specific": {
         "name": "Yuna",
-        "text": "O que achou da música que toquei para você hoje?"
+        "text": "A música de piano que a gente ouviu junto no anexo hoje, o que você achou?"
     },
     "night2_msg_yuna_specific_2": {
         "name": "Yuna",
-        "text": "Da próxima vez, me mostra alguma de que você goste também."
+        "text": "Da próxima vez, me deixa ouvir também uma música que você costuma escutar."
     },
     "night2_msg_dain_general": {
         "name": "Dain",
-        "text": "Ei, amanhã a cantina."
+        "text": "Ei, amanhã no almoço a gente vai junto na cantina, sem falta!"
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "Quer subir ao terraço na hora do almoço? A brisa vai estar boa."
+        "text": "Quer subir no terraço no almoço de amanhã? Amanhã o vento também vai estar bem fresco."
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
-        "text": "Amanhã deixo o terraço aberto. Aparece se der"
+        "text": "Amanhã também vou deixar a porta do terraço aberta. Se o horário bater, sobe."
     },
     "night2_msg_yuna_general": {
         "name": "Yuna",
-        "text": "...Vem no anexo amanhã?"
+        "text": "Amanhã você vem de novo para o anexo da biblioteca?"
     },
     "night2_msg_generic": {
         "name": "Dain",
-        "text": "Ei. A gente se vê amanhã na escola."
+        "text": "Ei, amanhã de manhã a gente se vê na sala de aula. Não atrasa!"
     },
     "night2_msg_generic_2": {
         "name": "Seoyeon",
-        "text": "Amanhã deixo o terraço aberto no almoço"
+        "text": "Amanhã no almoço eu deixo o terraço aberto."
     },
     "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Abro três conversas. Antes de responder, a bateria cai uma barra.*"
+        "text": "*Olho, um de cada vez, os três chats que chegaram lado a lado. Enquanto hesito em quem abrir primeiro, a barrinha da bateria no topo desce um nível.*"
     },
     "night2_choice": {
         "name": "{name}",
-        "text": "*Pra quem eu respondo primeiro?*",
+        "text": "*Para qual dos três balões eu mando a resposta primeiro?*",
         "choices": [
             "Respondo a Dain primeiro",
             "Respondo a Seoyeon primeiro",
@@ -73,93 +73,93 @@
     "night2_reply_dain_1": {},
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Não aguenta pimenta?"
+        "text": "Ué, não me diz que você é do tipo que não aguenta coisa apimentada?"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "Amanhã vamos pedir o menos apimentado."
+        "text": "Então amanhã eu peço o sabor mais suave, pra combinar com você."
     },
     "night2_reply_dain_4": {
         "name": "Dain",
-        "text": "ah, mas tteokbokki suave nem é tteokbokki, haha"
+        "text": "Ah, mas, falando sério, o que não arde nem devia se chamar de tteokbokki kkk"
     },
     "night2_reply_dain_5": {
         "name": "{name}",
-        "text": "*Três mensagens emendadas de novo.*"
+        "text": "*Hoje à noite também, balões leves, bem à cara da Dain, se derramam em três linhas seguidas.*"
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "Ei, sério, o que você é? Amanhã venha ao ginásio sem falta."
+        "text": "Ei, sério, você fica fazendo a gente rir. Depois da aula de amanhã, tem que vir ao ginásio, sem falta!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
-        "text": "kkkk beleza. boa noite!"
+        "text": "kkk Ok, entendi. Dorme bem hoje. Boa noite!"
     },
     "night2_reply_seo_1": {
         "name": "{name}",
-        "text": "Se chamar, eu volto"
+        "text": "Se você chamar, eu vou de novo, a qualquer hora."
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
-        "text": "Você diz isso com facilidade."
+        "text": "Você fala fácil demais uma coisa de que vai se arrepender depois."
     },
     "night2_reply_seo_3": {
         "name": "{name}",
-        "text": "Porque é fácil dizer."
+        "text": "É fácil de dizer justamente porque é sincero."
     },
     "night2_reply_seo_4": {
         "name": "Seoyeon",
-        "text": "Vou deixar o terraço aberto na hora do almoço. Não se atrase."
+        "text": "Amanhã no almoço também vou deixar a porta do terraço aberta, então vem sem atrasar."
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*Seoyeon encerra a conversa ali.*"
+        "text": "*Sem acrescentar mais nenhum cumprimento, Seoyeon encerrou a conversa bem ali.*"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
-        "text": "...Você é mais interessante do que eu esperava. Almoço no terraço amanhã?"
+        "text": "Agora que eu vi, você tem um talento discreto pra provocar as pessoas. Quer se ver no terraço no almoço de amanhã?"
     },
     "night2_reply_seo_react_default": {
         "name": "Seoyeon",
-        "text": "Hm, entendi. Até amanhã."
+        "text": "kk Entendi. Dorme na hora. Até amanhã."
     },
     "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "Tá. Também quero saber o que você acha."
+        "text": "É. Quando você terminar de ler, quero muito ouvir o que você achou."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
-        "text": "*O campo de resposta fica vazio por um tempo. Então surge uma nova mensagem.*"
+        "text": "*Por um tempo, o campo de texto fica vazio e quieto. Depois, um balão novo sobe, com cuidado.*"
     },
     "night2_reply_yuna_4": {},
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*Abro a playlist de Yuna. O botão de reprodução pisca ao lado da terceira música.*"
+        "text": "*Abro o link da playlist da madrugada que Yuna compartilhou. Ao lado da terceira faixa, entre as músicas listadas, um ícone pequeno de reprodução pisca.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Escuta até o fim"
+        "text": "Essa música, escuta até a última nota, até o fim."
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Coloco os fones e aperto o botão de reprodução. Ao piano se soma o som grave de uma bateria.*"
+        "text": "*Encaixo os fones nos dois ouvidos e aperto o botão de reprodução. Por trás da melodia baixa e solitária do piano, um som de bateria parecido com batida de coração se sobrepõe, baixinho.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*A música termina, e a barra de progresso para no último trecho da tela de reprodução.*"
+        "text": "*O último acorde vai se apagando e deixa um resto longo. A barra de reprodução na tela para, quieta, no último espaço.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
-        "text": "*Abaixo do título da playlist, vejo uma breve nota de Yuna: 'A terceira é a menos calma.'*"
+        "text": "*Logo abaixo do título da playlist, a linha curta que Yuna escreveu entra no meu campo de visão. «A terceira é a menos quieta.»*"
     },
     "night2_reply_yuna_react_high": {
         "name": "Yuna",
-        "text": "...Quando terminar, amanhã você me conta o que achou. Quer passar no prédio anexo?"
+        "text": "Se você ouviu até o fim, amanhã a gente se vê e você me conta o que achou. Quer vir ao anexo?"
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
-        "text": "...Uhum. Boa noite."
+        "text": "É. Obrigada por ter escutado. Dorme bem."
     },
     "night2_dain_freetalk": {
         "name": "Dain",
@@ -181,84 +181,84 @@
     },
     "night2_hidden_check": {
         "name": "{name}",
-        "text": "*No meio das notificações do chat, aparece mais uma.*"
+        "text": "*Quando vou organizar a janela do mensageiro, vejo mais um aviso do sistema da escola no meio da lista de notificações, no topo.*"
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Surge uma notificação no sistema de orientação escolar: 'Consulta de adaptação do aluno transferido concluída. Se precisar de mais ajuda, procure o horário de atendimento da professora da turma ou marque uma consulta no Wee Class.'*"
+        "text": "*No sistema de aconselhamento acadêmico da escola, há um aviso novo. «Consulta inicial de adaptação do aluno transferido concluída. Se for necessária outra conversa, usar o horário de atendimento da professora ou reservar o Wee Class.»*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Abaixo do nome da professora também aparece seu horário de atendimento.*"
+        "text": "*Logo abaixo do nome da professora, os horários em que a sala dos professores fica livre depois da aula estão anotados com cuidado.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Confiro o botão de agendamento e fecho a notificação.*"
+        "text": "*Confiro com os olhos o lugar do botão de reserva da consulta, embaixo da tela, e fecho em silêncio a janela do aviso.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Notificação do aplicativo de saúde: 'Registro da enfermaria: aluno transferido — escoriação no cotovelo (leve). Manter o curativo seco até amanhã de manhã. Se levantar ou manchar de sangue, procurar a enfermaria para trocá-lo.'*"
+        "text": "*Há um aviso do app de saúde. «Registro da enfermaria: aluno transferido — escoriação no cotovelo (leve). Até a hora de ir à escola amanhã de manhã, manter o curativo impermeável seco. Se a borda levantar ou vazar secreção, trocar imediatamente na enfermaria.»*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Dobro o cotovelo uma vez. As pontas do curativo continuam bem presas.*"
+        "text": "*Em cima do cobertor, dobro o cotovelo devagar, uma vez. O curativo que a enfermeira colou seguindo o veio da pele ainda não levantou nem um pouco e continua firme.*"
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*Mandei as respostas e larguei o celular.*"
+        "text": "*Terminei de responder, soltei um suspiro longo e deixei o celular ao lado do travesseiro.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Hesito antes de responder. Na antiga escola, também dizia a mim mesmo que não queria decepcionar ninguém.*"
+        "text": "*Na hora de responder às outras duas também, o dedo trava. Essa inquietação de não querer decepcionar ninguém que vem me procurar era um sentimento que se repetia igual na escola de antes.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Rolo a tela bastante para baixo. Uma foto do passeio de três meses atrás. Sojeong sorri ao meu lado. Em cada foto seguinte, a carteira dela aparece um pouco mais afastada. A parte de baixo, onde ficava o grafite, está fora do enquadramento.*"
+        "text": "*Desço o álbum até o fim e aparece a foto do passeio de primavera de 3 meses atrás. Na foto, Sojeong sorri aberta, ao lado do meu ombro. Mas, a partir da foto da sala tirada na semana seguinte, a carteira de Sojeong vai sendo empurrada um pouco para trás. A parte de baixo do tampo, onde havia um grafite pesado, está cortada para fora do quadro.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*O aplicativo de notas está cheio de frases que nunca enviei. «Professora, na carteira da Sojeong—». «Hoje de novo—». Todas param na primeira linha. Última modificação: 2h17.*"
+        "text": "*As frases que eu não tive coragem de enviar ficam enfileiradas no bloco de notas do celular, como cicatrizes. «Professora, na carteira da Sojeong—» «Hoje de novo, os outros—» Todas se cortam sem nem fechar a primeira linha. A última edição está parada às 2h17 da madrugada.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Depois da 38ª anotação, não há nada. A 39ª tem apenas o título em branco. No dia seguinte, o lugar de Sojeong ficou vazio o dia todo. A professora apenas disse que ela havia mudado de escola.*"
+        "text": "*A 38ª nota salva como rascunho é a última frase. Na 39ª, logo abaixo, nem o título está escrito. O lugar de Sojeong ficou vazio até a chamada da manhã do dia seguinte, e a professora só disse, em poucas palavras, que Sojeong tinha se transferido.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*Deixo o dedo sobre o botão de apagar a foto e desligo a tela.*"
+        "text": "*Levo o polegar trêmulo até o ícone da lixeira, embaixo da foto, e, sem coragem de apertar, apago a tela.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Dois nomes sem resposta continuam na lista.*"
+        "text": "*Na lista do mensageiro, ligada de novo, os nomes das duas pessoas a quem ainda não respondi continuam quietos, cada um com o número «1».*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Abro a foto de Sojeong de novo. Estou ao lado dela, olhando para a câmera. Sojeong está olhando para mim.*"
+        "text": "*Abro mais uma vez a foto de Sojeong que acabei de fechar. Eu, de pé ao lado dela, sorrio olhando para a lente da câmera à frente, mas os olhos de Sojeong, naquele momento também, estavam no meu perfil.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Não consigo escrever as outras duas respostas.*"
+        "text": "*Um canto do peito afunda, pesado, e no fim eu não consigo escrever nem uma letra das outras duas respostas.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Os três nomes se acumulam um após o outro na tela de bloqueio. Leio todas as notificações, apago a tela e volto a acendê-la.*"
+        "text": "*Na tela de bloqueio, os nomes das três estão empilhados lado a lado. Leio devagar, só com os olhos, as notificações que ainda guardam calor, e então apago a tela e acendo de novo.*"
     },
     "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Mesmo depois que a tela apaga, continuo segurando o celular do mesmo jeito.*"
+        "text": "*Mesmo depois que a luz da tela apaga por completo, não consigo soltar por um bom tempo o celular, que ainda guarda um calor morno.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Ponho o arroz que sobrou, ovos e alga ao lado da marmita.*"
+        "text": "*Sem conseguir dormir, saio para a cozinha e acendo a luz. Ao lado da marmita que vou levar amanhã, coloco lado a lado o arroz que sobrou, os ovos e a alga tostada.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Ponho arroz, omelete enrolada, alga e salsichas na marmita e a guardo na geladeira.*"
+        "text": "*Com as mãos desajeitadas, vou colocando na marmita, camada por camada, a omelete enrolada que acabei de fritar, a salsicha, a alga e o arroz, e guardo no fundo da geladeira.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Após um silêncio, Seoyeon fala com frieza.* Não pense que pode fingir que o que acabou de fazer nunca aconteceu. Por enquanto, não chegue perto de mim nem entre em contato.",
+        "text": "*Depois de um longo silêncio, Seoyeon abre a boca, fria como uma placa de gelo.* Não pense em deixar passar o que você acabou de fazer como se não tivesse acontecido. Por enquanto, não apareça na minha frente e não entre em contato.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -266,15 +266,15 @@
     },
     "forced_violation_day2_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*O rosto de Seoyeon continua sério.* Eu ouvi. Isso não apaga o que aconteceu. Como eu disse, não entre em contato por um tempo."
+        "text": "*A expressão dura de Seoyeon não se desfaz nem um pouco.* Eu ouvi a desculpa. Mesmo assim, o que você acabou de fazer não vira algo que nunca aconteceu. Como eu disse, não entre em contato por um tempo."
     },
     "forced_violation_day2_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon interrompe a explicação.* Mal-entendido? A partir do momento em que eu disse não, deixou de ser. Não diga mais nada."
+        "text": "*Seoyeon corta a fala, fria.* Mal-entendido? A partir do momento em que eu disse claramente que não queria, isso não pode ser mal-entendido nenhum. Não fale mais."
     },
     "forced_violation_day2_after_yuna": {
         "name": "Yuna",
-        "text": "*Yuna respira, desconfiada.* Você sabia que eu não queria e mesmo assim ignorou. Agora eu não quero nem olhar para você. Não entre mais em contato.",
+        "text": "*Yuna recua um passo e recupera o fôlego, que ficou pesado.* Você sabia que eu não queria e mesmo assim ignorou até o fim. Agora eu não quero nem ver o seu rosto. Não entre mais em contato.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -282,15 +282,15 @@
     },
     "forced_violation_day2_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna responde depois de um longo silêncio.* Pedir desculpas não faz isso desaparecer. Pare agora."
+        "text": "*Depois de um longo silêncio, Yuna responde, fria.* Pedir desculpas não faz o que acabou de acontecer desaparecer. Agora para."
     },
     "forced_violation_day2_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna não ouve a explicação até o fim.* Eu disse não. Não há nada para explicar."
+        "text": "*Yuna nem escuta a minha explicação até o fim.* Eu disse claramente que não queria. Não vou ouvir desculpa nenhuma."
     },
     "forced_violation_day2_after_dain": {
         "name": "Dain",
-        "text": "*Dain não sorri. Depois de um longo silêncio, responde brevemente, com a voz tensa.* Isso não é brincadeira. Eu disse não e você me forçou mesmo assim. Não vou deixar isso passar.",
+        "text": "*O sorriso some por completo do rosto de Dain. Um tempo depois, ela solta uma frase curta, com a voz dura.* Isso não é brincadeira. Você fez à força, mesmo eu dizendo que não queria. Não vou deixar isso passar de jeito nenhum.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -298,15 +298,15 @@
     },
     "forced_violation_day2_dain_apologize": {
         "name": "Dain",
-        "text": "*Dain demora um pouco para responder e fala sem rodeios.* Certo. Então por hoje acabou. Eu decido se e quando vamos conversar de novo."
+        "text": "*Dain só responde bem depois, curto, com o rosto duro.* Tá. Então hoje fica por aqui. Se a gente volta a conversar, eu decido."
     },
     "forced_violation_day2_dain_excuse": {
         "name": "Dain",
-        "text": "*A voz de Dain fica áspera.* Não. Sem desculpas. Eu disse não, e você fez mesmo assim."
+        "text": "*A voz de Dain desce, áspera.* Não. Não vem com desculpa. Quem empurrou, mesmo eu dizendo que não queria, foi você."
     },
     "forced_violation_day2_after_teacher": {
         "name": "Professora",
-        "text": "*A professora fala com firmeza.* O que você acabou de fazer passou claramente dos limites. Não chegue mais perto. Vou tratar isso de acordo com os procedimentos necessários.",
+        "text": "*A professora traça o limite com a voz firme.* O que você acabou de fazer passou claramente do limite. Não chegue mais perto. Vou tratar isso pelos procedimentos necessários.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -314,15 +314,15 @@
     },
     "forced_violation_day2_teacher_apologize": {
         "name": "Professora",
-        "text": "*A professora respira e fala.* Eu ouvi seu pedido de desculpas. Mesmo assim, os procedimentos vão seguir. Não diga mais nada."
+        "text": "*A professora toma um fôlego curto e fala.* Eu ouvi a desculpa. Mesmo assim, os procedimentos necessários vão seguir a regra. Não fale mais."
     },
     "forced_violation_day2_teacher_excuse": {
         "name": "Professora",
-        "text": "*A professora interrompe a explicação.* Este não é o momento de começar a se justificar. Pare de falar e mantenha distância."
+        "text": "*A professora corta a explicação de uma vez.* Agora não é hora de começar a despejar desculpas. Não fale mais e mantenha distância."
     },
     "forced_violation_day2_after_nurse": {
         "name": "Enfermeira",
-        "text": "*O tom brincalhão da enfermeira desaparece.* De agora em diante, mantenha distância. Vou registrar o que aconteceu e avisar as pessoas responsáveis.",
+        "text": "*O ar de brincadeira some num instante do rosto da enfermeira.* De agora em diante, mantenha distância. Vou registrar o que acabou de acontecer do jeito que foi e avisar quem precisar saber.",
         "choices": [
             "Pedir desculpas sem dar desculpas e encerrar a conversa.",
             "Tentar explicar que foi um mal-entendido."
@@ -330,55 +330,55 @@
     },
     "forced_violation_day2_nurse_apologize": {
         "name": "Enfermeira",
-        "text": "*Após uma pausa, a enfermeira responde com firmeza.* Vou ouvir seu pedido de desculpas. Ainda assim, vou registrar e fazer os avisos necessários. Esta conversa acabou."
+        "text": "*Um instante depois, a enfermeira responde, firme.* Vou ouvir a desculpa. Mesmo assim, o registro oficial e os avisos seguem como estão. A conversa de hoje termina aqui."
     },
     "forced_violation_day2_nurse_excuse": {
         "name": "Enfermeira",
-        "text": "*A voz da enfermeira fica ainda mais baixa.* Acha que chamar de mal-entendido muda alguma coisa? Você ignorou uma recusa. Isso é fato."
+        "text": "*A voz da enfermeira fica ainda mais baixa.* Acha que, se chamar de mal-entendido, o que acabou de acontecer muda? Eu disse que não queria, e você ignorou."
     },
     "night2_reply_dain_1_established": {
         "name": "{name}",
-        "text": "o tteokbokki tava ardido kkkk"
+        "text": "O tteokbokki de hoje tava muito apimentado kkk"
     },
     "night2_reply_dain_1_first": {
         "name": "{name}",
-        "text": "Vamos comer tteokbokki amanhã? Não aguento muita pimenta kkk"
+        "text": "Quer comer tteokbokki amanhã na frente da escola? Eu sou meio fraco pra coisa apimentada kkk"
     },
     "night2_reply_yuna_1_established": {
         "name": "{name}",
-        "text": "Ainda na metade. Tá bom"
+        "text": "O livro que você me emprestou mais cedo, eu já li quase a metade. É bem interessante."
     },
     "night2_reply_yuna_1_first": {
         "name": "{name}",
-        "text": "Me recomenda um livro quando eu for ao anexo amanhã."
+        "text": "Se eu for ao anexo da biblioteca amanhã, me recomenda um livro que valha a pena ler."
     },
     "night2_reply_yuna_4_established": {
         "name": "Yuna",
-        "text": "A playlist de antes. Escuta também a terceira música"
+        "text": "A playlist que você me mostrou mais cedo. Escuta a terceira música de lá também, sem falta."
     },
     "night2_reply_yuna_4_first": {
         "name": "Yuna",
-        "text": "Vou mandar uma playlist. Comece pela terceira música."
+        "text": "Vou te mandar uma playlist de que eu gosto muito. Começa pela terceira música."
     },
     "night2_msg_generic_3_established": {
         "name": "Yuna",
-        "text": "...Já terminou aquele livro?"
+        "text": "O livro que eu te emprestei, até onde você leu?"
     },
     "night2_msg_generic_3_first": {
         "name": "Yuna",
-        "text": "O que você anda lendo?"
+        "text": "Que tipo de livro você costuma ler?"
     },
     "night2_reply_dain_react_neg": {
         "name": "Dain",
-        "text": "Beleza. Dorme. *Visto. Mais nada.*"
+        "text": "Entendi. Só vai dormir. *Só a marca de não lida some, e não chega mais nenhuma resposta.*"
     },
     "night2_reply_seo_react_neg": {
         "name": "Seoyeon",
-        "text": "Até amanhã. *Marca visto na hora.*"
+        "text": "Até amanhã. *No instante em que a mensagem é enviada, ela é marcada como lida, de um jeito seco.*"
     },
     "night2_reply_yuna_react_neg": {
         "name": "Yuna",
-        "text": "...Boa noite. *O balão para ali.*"
+        "text": "...Dorme bem. *Depois do cumprimento curto, o balão para ali.*"
     },
     "night2_reply_dain_1_visit": {},
     "night2_reply_yuna_4_visit": {}

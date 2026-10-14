@@ -1,23 +1,23 @@
 {
     "date_seo_low": {
         "name": "Seoyeon",
-        "text": "*Die Bank am Brunnen ist leer. Kurz darauf kommt eine Nachricht von Seoyeon.* Ich glaube nicht, dass wir uns heute allein treffen sollten. Wir sehen uns nächste Woche in der Schule."
+        "text": "*Die Bank vor dem Brunnen, an der wir uns verabredet haben, ist leer. Ich höre nur das Wasser, schalte das Handy ein, und auf dem Bildschirm kommt eine kurze Nachricht von Seoyeon an.* Tut mir leid, aber heute sollten wir uns besser nicht allein treffen. Wir sehen uns nächste Woche in der Schule."
     },
     "date_yuna_low": {
         "name": "Yuna",
-        "text": "*Yuna wartet bereits vor dem Café. Sie richtet den Riemen ihrer Tasche und macht einen Schritt zurück.* Ich glaube nicht, dass wir gerade lange allein sein sollten. Lassen wir es für heute dabei."
+        "text": "*Unter dem Vordach des Cafés steht Yuna schon. Als sie mich sieht, rückt sie den Taschenriemen zurecht und tritt einen Schritt zurück.* So, wie ich gerade fühle, können wir wohl nicht lange zusammenbleiben. Für heute belassen wir es dabei."
     },
     "date_dain_low": {
         "name": "Dain",
-        "text": "*Vor der Sporthalle richtet Dain den Riemen ihrer Balltasche.* Mir ist heute nicht danach, etwas zu unternehmen. Wir sehen uns in der Schule."
+        "text": "*Vor der Treppe der Turnhalle rückt Dain mit hartem Gesicht den Riemen ihrer Sporttasche zurecht.* Tut mir leid, aber heute bin ich nicht in der Stimmung, lächelnd mit dir rumzuhängen. Wir sehen uns nächste Woche in der Schule."
     },
     "date_seo_1": {
         "name": "{name}",
-        "text": "Wartest du schon? Heute ohne Klemmbrett. *Am Brunnen hat Seoyeon den Taschenriemen um die Finger gewickelt.*"
+        "text": "Hast du lange gewartet? Ohne Schuluniform und Klemmbrett wirkst du wie eine andere Person. *Vor der Bank, an der die Tropfen des Brunnens im Sonnenlicht zerbrechen, steht Seoyeon in einem weichen elfenbeinfarbenen Strickcardigan und einem leichten Rock. Unter dem runden Ausschnitt zeigen sich das helle Schlüsselbein und die schmale Linie ihres Halses, und um die angespannten Finger ist der Lederriemen der Umhängetasche straff gewickelt.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
-        "text": "*Seoyeon wickelt den Riemen ihrer Tasche noch einmal um einen Finger.*",
+        "text": "*Zwischen den Haaren, die der Morgenwind bewegt, streift ein leiser Duft nach Blumenseife vorbei, und der Taschenriemen legt sich noch eine Windung um Seoyeons Finger.*",
         "choices": [
             "Du siehst heute wirklich schön aus.",
             "Du hast dir heute echt Mühe gegeben.",
@@ -26,99 +26,99 @@
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "...Wenn du das so plötzlich sagst, weiß ich gar nicht, was ich antworten soll. Darf ich erst mal lächeln? *Ihr Griff um den Taschenriemen lockert sich.*"
+        "text": "Wenn du gleich beim Treffen so direkt kommst, weiß ich doch nicht, was ich antworten soll. *Über Seoyeons Wangen zieht ein blasses Rosa, und der fest umklammerte Taschenriemen lockert sich langsam.* Aber mir geht es gut dabei, also kommt erst mal ein Lächeln."
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
-        "text": "Hast du dir den Spruch vorher zurechtgelegt?"
+        "text": "Sag ehrlich. Den Satz eben hast du vorbereitet, seit du aus dem Haus gegangen bist, oder?"
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*Sie wendet den Blick zum Plätschern des Springbrunnens.* Lass uns etwas frische Luft schnappen."
+        "text": "*Als wollte sie die heißen Wangen abkühlen, dreht sie den Blick schräg zum Wasserstrahl des Brunnens, rückt aber nicht von meiner Seite.* Stehen wir nicht hier. Gehen wir den Spazierweg entlang und holen uns etwas Luft."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
-        "text": "Ist mir einfach so rausgerutscht."
+        "text": "Vorbereitet hab ich das nicht. Das ist mir eben vor dem Brunnen rausgerutscht, kaum dass ich dich gesehen habe."
     },
     "date_seo_pretty_high_3_b": {
         "name": "Seoyeon",
-        "text": "*Sie fasst den Riemen ihrer Tasche neu.* Schon gut."
+        "text": "*Seoyeons Wimpern zittern kurz. Dann tut sie ruhig und fasst den Taschenriemen neu.* Hör da auf. Wenn ich noch mehr höre, kann ich wirklich nicht mehr aufsehen."
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "Was du vorhin gesagt hast... habe ich gehört. Nimm es nicht zurück, nur weil ich nicht gleich geantwortet habe. *Das zurückgestrichene Haar fällt wieder herab. Die angehobene Hand kehrt zum Taschenriemen zurück.*"
+        "text": "Was du eben gesagt hast, hab ich trotzdem ganz gehört. Nur weil ich mich geschämt habe und nicht gleich antworten konnte, nimmst du das nicht zurück. *Rot bis an den Ohrrand schiebt sie die heruntergerutschten Seitenhaare hinters Ohr. Das helle Handgelenk aus dem Cardiganärmel streift ganz knapp meinen Arm.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
-        "text": "Wie kommst du denn jetzt darauf? Warn mich, bevor du so etwas sagst."
+        "text": "Was, so plötzlich. So etwas sagst du mit Ansage, damit ich mich wenigstens drauf einstellen kann."
     },
     "date_seo_bright": {
         "name": "Seoyeon",
-        "text": "Klar. Hab mir heute extra Mühe gegeben."
+        "text": "Sieht man das? Am Wochenende treffe ich mich extra allein mit dir, da hab ich schon morgens ziemlich lange vor dem Spiegel gewählt."
     },
     "date_seo_walk": {
         "name": "{name}",
-        "text": "*Wir spazieren durch den Park. Wir werfen den Enten Brot zu.*"
+        "text": "*Wir gehen im gleichen Schritt den Seeweg im Park entlang. Bei jedem Schritt streift der Saum von Seoyeons Rock weich mein Hosenbein, und wir werfen den Enten am Wasser kleine Brotstücke zu.*"
     },
     "date_seo_duck": {
         "name": "Seoyeon",
-        "text": "Die sind so schön unkompliziert. Gibst du ihnen Brot, kommen sie. Gibst du nichts, kommen sie nicht."
+        "text": "Die haben es gut, so einfach, wie sie empfinden. Wirfst du Brot, kommen sie ohne zu zögern. Gibst du nichts, gehen sie und drehen sich nicht mal um."
     },
     "date_seo_duck_2": {
         "name": "{name}",
-        "text": "Sind Menschen nicht genauso?"
+        "text": "Sind die Gefühle von Menschen am Ende nicht auch alle ähnlich?"
     },
     "date_seo_duck_3": {
         "name": "Seoyeon",
-        "text": "Menschen kommen manchmal nicht, selbst wenn man ihnen Brot gibt."
+        "text": "Menschen sind viel komplizierter. Manchmal gibst du dein ganzes Herz, und sie tun so, als wäre nichts, und rücken weg. Und manchmal bleibt der Blick an jemandem hängen, für den du gar nichts getan hast."
     },
     "date_seo_duck_4": {
         "name": "Seoyeon",
-        "text": "Der Blumenladen ... Warte kurz. *Nach einem Blick aufs Wasser wird sie langsamer.*"
+        "text": "Oh, da am Anfang der Gasse ist ein kleiner Blumenladen. Lass uns kurz hingucken. *Seoyeon, die aufs Wasser gesehen hat, wird langsamer und zieht sanft an meinem Ärmel.*"
     },
     "date_seo_flower_b": {
         "name": "Seoyeon",
-        "text": "*Sie dreht die Fußspitzen zur Glastür des Blumenladens.* Wollen wir reingehen?"
+        "text": "*Vor der Tür des Blumenladens, hinter dem großen Glas voller grüner Töpfe, dreht sich Seoyeon um und sieht mir in die Augen.* Wollen wir reingehen?"
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "Wie wäre der kleine Topf? *Die Türglocke klingelt; sie wählt eine Sukkulente.*"
+        "text": "Wie findest du diesen runden Topf? *Mit dem hellen Klingeln der Türglocke schlagen feuchter Erdgeruch und Blütenduft entgegen. Im schmalen Gang am Regal steht Seoyeon so dicht, dass sie meine Schulter berührt, und hebt einen Sukkulententopf hoch, kaum größer als eine Handfläche.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
-        "text": "Du musst sie nicht oft gießen. Für den Anfang ist sie ganz gut, denke ich."
+        "text": "Eine Sukkulente musst du nicht oft gießen. Wenn genug Sonne drankommt, wächst sie auch allein ganz munter. Am Fenster in deinem Zimmer wäre sie zum ersten Mal genau richtig."
     },
     "date_seo_succulent_2_b": {
         "name": "{name}",
-        "text": "Schenkst du mir das?"
+        "text": "An mein Fenster? Schenkst du mir das?"
     },
     "date_seo_succulent_3": {
         "name": "Seoyeon",
-        "text": "Wenn du sie am Leben halten kannst. — Wenn nicht, nehme ich sie zurück."
+        "text": "Ja, wenn du dir zutraust, sie nicht umzubringen und gut großzuziehen. Falls du sie doch eingehen lässt, komme ich bis in dein Zimmer und hole sie mir zurück."
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "Hier. Dass ich sie wieder abholen würde... heißt nicht, dass ich sie dir nicht geben möchte. *Sie reicht den kleinen Topf mit Erde. Er berührt meine Handfläche.*"
+        "text": "Hier, nimm sie mit beiden Händen. Dass ich sie wieder holen würde, heißt nicht, dass ich sie dir nicht geben will. Du sollst nur oft an mich denken. *Die warmen, weichen Finger, mit denen Seoyeon den kleinen Sukkulententopf reicht, legen sich um meine Handfläche und das Handgelenk und lösen sich dann langsam.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
-        "text": "*Wir verlassen den Park und gehen die Straße entlang.*"
+        "text": "*Wir verlassen den Blumenladen und gehen nebeneinander die baumgesäumte Straße vor dem Park entlang. In einer Hand der Topf, der andere Handrücken schwingt so nah an Seoyeons, dass sie sich fast berühren.*"
     },
     "date_seo_end_c": {
         "name": "Seoyeon",
-        "text": "*Die Verpackung um den Blumentopf raschelt leise in ihrer Hand.* Heute."
+        "text": "*Als das Packpapier des Topfes in meiner Hand raschelt, wird Seoyeon einen halben Takt langsamer.* Weißt du, heute."
     },
     "date_seo_end_d": {
         "name": "Seoyeon",
-        "text": "Heute war's schön."
+        "text": "Heute nur mit dir unterwegs zu sein, war wirklich schön. *Seoyeon lehnt ihre Schulter leicht an meine und lächelt schüchtern mit den Augen.*"
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna vor dem Café: schwarzes Kleid, Umhängetasche, sichtbare Tattoos.* Wartest du schon lange?"
+        "text": "*Im Schatten der Caféterrasse vor dem Bahnhof fällt Yuna sofort ins Auge. Über dem schwarzen Kleid, das ihrer Figur weich folgt, treten das helle Schlüsselbein und das dunkle Tattoo an der Schulter viel klarer hervor als in der Schuluniform.* Hast du lange gewartet?"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
-        "text": "*Yunas Blick hebt sich kurz über den Rand ihres Bechers.*",
+        "text": "*Als wir uns am Fenster gegenübersetzen, heben sich Yunas rote Augen langsam über den Becher und halten meinen Blick fest.*",
         "choices": [
             "Du siehst heute wunderschön aus.",
             "Du siehst heute irgendwie anders aus.",
@@ -127,11 +127,11 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "...Mir fällt gerade nichts anderes ein. Ich muss dauernd an deine Worte denken. *Sie schaut lange auf den Tassenrand. Silberweißes Haar fällt neben ihre Wange.*"
+        "text": "Wenn du das so plötzlich sagst, fällt mir gerade nichts anderes mehr ein. In meinem Kopf hallt nur noch, was du eben gesagt hast. *Yuna senkt den Blick auf den Rand des Bechers. Das silberweiße Haar fällt herab und legt sich um die gerötete Wange und den schmalen Nacken.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
-        "text": "Das."
+        "text": "Den Satz eben."
     },
     "date_yuna_pretty_high_3": {
         "name": "{name}",
@@ -139,115 +139,115 @@
     },
     "date_yuna_pretty_high_4": {
         "name": "Yuna",
-        "text": "Sag es nochmal."
+        "text": "Sag es noch einmal, so dass nur ich es höre."
     },
     "date_yuna_pretty_high_5": {
         "name": "Yuna",
-        "text": "*Sie hebt den Blick nicht.*"
+        "text": "*Den Kopf vor Scham gesenkt, hält die Fingerspitze, die sie über den Tisch streckt, dicht vor meinem Handrücken an.*"
     },
     "date_yuna_pretty_high_5_b": {
         "name": "{name}",
-        "text": "Du siehst schön aus."
+        "text": "Du bist heute wirklich hübsch, Yuna. So sehr, dass mein Blick immer wieder hängen bleibt."
     },
     "date_yuna_pretty_high_5_c": {
         "name": "Yuna",
-        "text": "*Mit dem Daumen wischt sie das Kondenswasser vom Deckel des Bechers.* Schon gut."
+        "text": "*Yuna fährt mit dem Daumen langsam über die kalten Tropfen auf dem Becherdeckel und atmet leise aus.* Ja. Jetzt reicht's."
     },
     "date_yuna_pretty_low": {
         "name": "Yuna",
-        "text": "Ich bin es nicht gewohnt, so etwas zu hören."
+        "text": "So etwas von jemandem zu hören, ist mir noch etwas fremd."
     },
     "date_yuna_bright": {
         "name": "Yuna",
-        "text": "Was ist denn anders?"
+        "text": "Was ist anders als sonst, wenn du mich in der Schule siehst, und woran?"
     },
     "date_yuna_bookstore": {
         "name": "{name}",
-        "text": "*Wir gehen zu einer Buchhandlung. Yuna schlendert langsam zwischen den Regalen.*"
+        "text": "*Wir verlassen das Café und gehen zu der Buchhandlung, in die Yuna oft geht. Zwischen den hohen Regalen, in denen der Papiergeruch liegt, geht Yuna langsam hinein.*"
     },
     "date_yuna_bookstore_2": {
         "name": "Yuna",
-        "text": "Warst du schon mal hier?"
+        "text": "Warst du in der Buchhandlung in dieser Gasse schon mal?"
     },
     "date_yuna_bookstore_2_b": {
         "name": "{name}",
-        "text": "Ich war noch nie hier."
+        "text": "Nein, heute bin ich zum ersten Mal mit dir hergekommen."
     },
     "date_yuna_bookstore_3": {
         "name": "Yuna",
-        "text": "Gut. Dann war ich die Erste, die dir diesen Ort gezeigt hat."
+        "text": "Zum Glück. Dann habe ich dir mein geheimes Versteck als Erste gezeigt, und niemand sonst."
     },
     "date_yuna_earphone": {
         "name": "Yuna",
-        "text": "Es geht nicht nur um Bücher. Das möchte ich heute auch mit dir hören. *Sie reicht mir einen Ohrhörer.*"
+        "text": "Ich hab dich nicht hergeholt, nur damit du dir Bücher ansiehst. Dieses Stück wollte ich heute auch neben dir hören. *Yuna holt Kabelkopfhörer aus der Tasche und steckt mir den linken Hörer selbst ins Ohr. Die kalten Fingerspitzen streifen mein Ohrläppchen und die Kieferlinie und hinterlassen einen süßen Nachduft.*"
     },
     "date_yuna_earphone_2": {
         "name": "Yuna",
-        "text": "Hör mal."
+        "text": "Hör einfach still zu."
     },
     "date_yuna_earphone_2_b": {
         "name": "{name}",
-        "text": "*Ein leises Klavierstück erklingt. Der Lärm der Buchhandlung rückt in die Ferne.*"
+        "text": "*Als eine leise, verträumte Klaviermelodie ins Ohr zieht, werden Schritte und Geräusche in der Buchhandlung auf einmal ganz fern.*"
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*Yuna setzt sich näher, bis kurz bevor das Kopfhörerkabel straff wird.*"
+        "text": "*Damit das kurze Kopfhörerkabel nicht straff wird, setzt sich Yuna auf der Eckbank dicht neben mich. Ihre nackte Schulter, die aus dem schwarzen Kleid ragt, liegt an meinem Arm, und ihr warmer Atem mit Shampooduft trifft voll meinen Nacken.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
-        "text": "*Zwei Schritte nachdem wir an einem Antiquariat vorbeigegangen sind, dreht Yuna um.*"
+        "text": "*Yuna ist die innere Ecke mit alten Büchern und die Regale mit gebrauchten Büchern schon etwa zwei Schritte vorbei, da bleibt sie plötzlich stehen, zieht an meinem Ärmel und kehrt um.*"
     },
     "date_yuna_oldbook_b": {
         "name": "Yuna",
-        "text": "Hier."
+        "text": "Moment. Dieses Fach hier."
     },
     "date_yuna_oldbook_c": {
         "name": "{name}",
-        "text": "*Sie zieht ein altes Buch heraus. Blättert durch die Seiten.*"
+        "text": "*Yuna zieht vorsichtig einen verblichenen Hardcover-Roman heraus und schlägt mit gewohnter Hand die Seiten kurz vor dem Ende auf.*"
     },
     "date_yuna_oldbook_2": {
         "name": "Yuna",
-        "text": "Dieses Buch habe ich vor einem Jahr gelesen. Damals fand ich das Ende traurig."
+        "text": "Diesen Roman habe ich vor einem Jahr allein gelesen. Die letzte Seite war damals so traurig, dass mir die Luft wegblieb."
     },
     "date_yuna_oldbook_3": {
         "name": "{name}",
-        "text": "Und jetzt?"
+        "text": "Und jetzt, wo du ihn noch mal siehst?"
     },
     "date_yuna_oldbook_4": {
         "name": "Yuna",
-        "text": "Jetzt lese ich es anders."
+        "text": "Komisch, das Ende lese ich jetzt ganz anders. Wohl weil du neben mir stehst."
     },
     "date_yuna_end": {
         "name": "Yuna",
-        "text": "*Sie sieht {name} an. Die Ecke der Seite knickt unter ihren Fingern um.*"
+        "text": "*Yuna hebt den Kopf und sieht zu {name} auf, tief in die Augen. Unter den schmalen Fingern knickt die Ecke der verblichenen Seite lautlos um.*"
     },
     "date_yuna_end_b": {
         "name": "Yuna",
-        "text": "*Kurz bevor wir aus der Buchhandlung treten, reicht sie mir wortlos einen Zettel.*"
+        "text": "*Kurz vor der Glastür der Buchhandlung öffnet Yuna leicht meine Handfläche, drückt einen gefalteten Zettel hinein und schließt die Finger darum.*"
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*‚Heute habe ich viel geredet. Weil ich bei dir war.‘ Die hellviolette Tinte ist beim letzten Buchstaben leicht verwischt.*"
+        "text": "*Ich spüre die Wärme, die auf der Handfläche geblieben ist, und falte den Zettel auf. Darauf steht: „Heute habe ich viel mehr geredet als sonst. Wohl weil ich bei dir war.“ Die hellviolette Füllertinte verläuft am letzten Buchstaben ganz leicht, so fern wie Yunas Gefühl.*"
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Vor der Turnhalle winkt Dain in Sportkleidung und Kappe, rechts mit Kniebandage.*"
+        "text": "*Wochenendmorgen vor der Turnhalle. Dain in einem leichten, kurzen Trainingszipper, einem ärmellosen Top und einer tief aufgesetzten Kappe winkt schon von weitem kräftig. In den Alltagssachen fallen die straffe Taille und die langen Beine ins Auge, noch stärker aber die schwarze Bandage am rechten Knie.*"
     },
     "date_dain_2": {
         "name": "Dain",
-        "text": "Da bist du ja! Du wärst beinahe zu spät gekommen, oder?"
+        "text": "Oh, endlich da! Sag ehrlich, du hast verschlafen und wärst fast zu spät, oder?"
     },
     "date_dain_3": {
         "name": "{name}",
-        "text": "Ich bin zehn Minuten zu früh gekommen."
+        "text": "Was redest du. Ich bin ganze 10 Minuten vor der Zeit hier."
     },
     "date_dain_4": {
         "name": "Dain",
-        "text": "Ich war schon vor zwanzig Minuten da!"
+        "text": "Ach was, gewonnen hab ich trotzdem. Zu Hause konnte ich nicht stillsitzen, deshalb war ich schon 20 Minuten vorher hier."
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*Dain drückt einmal den Schirm ihrer Kappe nach unten und wartet.*",
+        "text": "*Dain tritt einen Schritt näher, drückt den Schirm der Kappe einmal verlegen herunter und wartet, dass ich den Mund aufmache. Frischer Zitrus-Seifenduft und warme Körperwärme schlagen mir entgegen.*",
         "choices": [
             "Die Kappe steht dir.",
             "Sportkleidung ist einfach total dein Ding.",
@@ -257,23 +257,23 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "Du machst dich nicht lustig, oder? Nur wegen einer Kappe gleich so ein Kompliment... *Sie zieht sie tief und verdeckt das halbe Gesicht.*"
+        "text": "Moment, du nimmst mich doch nicht auf den Arm? Es geht nur um die Kappe, aber wenn du das mit so einem Blick sagst, bleibt mir plötzlich die Luft weg. *Dain zieht den Schirm der Kappe mit beiden Händen tief herunter und verdeckt die Hälfte ihres geröteten Gesichts.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
-        "text": "Hey, sag so etwas nicht ohne Vorwarnung!"
+        "text": "Hey, wirf so was nicht ohne Vorwarnung einfach hin. Da bleibt mir fast das Herz stehen."
     },
     "date_dain_pretty_high_3": {
         "name": "{name}",
-        "text": "Es ist die Wahrheit."
+        "text": "Das ist kein leeres Gerede. Es steht dir wirklich."
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "Denkst du, du kannst alles sagen, nur weil es stimmt? ...Ich sage nicht, dass es mir nicht gefällt. Wenn du weiter guckst, komme ich gar nicht mehr vom Fleck. *Unter dem Schirm röten sich ihre Ohrspitzen, die Finger bleiben am Rand.*"
+        "text": "Glaubst du, nur weil es stimmt, darfst du mich so anstarren und das sagen? Ah, ich meine auf keinen Fall, dass ich es nicht hören will! Wenn du mich so ansiehst, schäme ich mich so, dass ich keinen Schritt mehr kann. *Unter dem Schirm sind das Ohrläppchen und sogar der helle Nacken knallrot. Dains Fingerspitzen, die nicht weiterwissen, fassen kurz meinen Ärmel und lassen wieder los.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
-        "text": "Wie kommst du denn jetzt darauf? Danke trotzdem."
+        "text": "Was, auf einmal so ein Kompliment. Ist mir peinlich, aber es fühlt sich gut an."
     },
     "date_dain_bright": {
         "name": "Dain",
@@ -281,55 +281,55 @@
     },
     "date_dain_to_arcade": {
         "name": "{name}",
-        "text": "*Wir gehen zur Arcade.*"
+        "text": "*Schulter an Schulter mit Dain gehen wir zur Arcade in der Einkaufsstraße.*"
     },
     "date_dain_arcade": {
         "name": "{name}",
-        "text": "*Wir stehen vor dem Rhythmusspiel-Automaten. Der Bildschirm flackert.*"
+        "text": "*Hinten in der Arcade, wo grelle Elektronikklänge laufen, stehen wir nebeneinander vor dem Rhythmusspiel. Buntes Licht flackert über Dains glänzende Augen und die feuchten Lippen.*"
     },
     "date_dain_arcade_2": {
         "name": "Dain",
-        "text": "Los, wir wetten! Wer verliert, zahlt die Getränke."
+        "text": "Na, hier gehen wir nicht einfach vorbei. Punktevette! Wer verliert, gibt nachher ein kaltes Getränk aus!"
     },
     "date_dain_arcade_2_b": {
         "name": "{name}",
-        "text": "Schon wieder eine Wette?"
+        "text": "Selbst auf dem Date bist du erst zufrieden, wenn wieder eine Runde entschieden ist?"
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "Ohne Wetteinsatz macht es doch keinen Spaß!"
+        "text": "Klar doch, ohne Wette, wo bleibt da der Spaß! Sei auf Zack!"
     },
     "date_dain_arcade_3_b": {
         "name": "Dain",
-        "text": "Schau, den Takt darfst du nicht verpassen! *Die Kombo hält bis zum Liedende.*"
+        "text": "Hier darfst du den Takt im Highlight nicht verpassen! *Vor einem Gerät mit Knöpfen für die Hände, keinem schmalen Tanzpad, drückt Dain ihren Arm fest an meinen und schlägt die Noten blitzschnell. Bis zum letzten Ton hält die Kombo perfekt.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
-        "text": "*Sie springt von ihrem Platz auf.* Full Combo! Hast du das gesehen?"
+        "text": "*Als das Ergebnisfenster aufgeht, packt Dain mir vor Begeisterung mit beiden Händen die Schulter und jubelt.* Full Kombo geschafft! Hast du eben meine Hände gesehen?"
     },
     "date_dain_rhythm": {
         "name": "Dain",
-        "text": "*Sie zeigt auf den Bildschirm.* Dieser Score ist mein zweitbester überhaupt!"
+        "text": "*Mit vor Freude roten, glänzenden Wangen zeigt sie mit dem Finger auf den Ranglistenwert oben auf dem Bildschirm.* Schau mal, der Allzeit-Score auf Platz 2 an diesem Gerät!"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
-        "text": "Das war unglaublich."
+        "text": "Echt stark. Deine Reflexe sind der Wahnsinn."
     },
     "date_dain_rhythm_3": {
         "name": "Dain",
-        "text": "Natürlich. Dafür brauche ich die Knie nicht."
+        "text": "Hehe, klar. Das Spiel hier geht über die Hände, da kann ich ranklotzen, ohne die Knie zu benutzen."
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*„Da brauche ich meine Knie nicht.“ Dain lächelt dabei und sieht dann auf ihr rechtes Knie.*"
+        "text": "*„Weil ich die Knie nicht brauche.“ Wie von den eigenen, nebenbei hingesagten Worten getroffen, sinkt der Blick der eben noch breit lächelnden Dain still auf die schwarze Bandage am rechten Knie.*"
     },
     "date_dain_knee_2": {
         "name": "Dain",
-        "text": "Warte. Ich will mir die Volleyballschuhe ansehen. *Sie hält vorm Sportladen an.*"
+        "text": "Oh, warte. Die neuen Volleyballschuhe da, die gucken wir uns kurz an. *Auf dem Weg aus der Arcade bleibt Dain vor dem Schaufenster des Sportgeschäfts abrupt stehen.*"
     },
     "date_dain_shop": {
         "name": "Dain",
-        "text": "...Nein, ich schaue nur. *Sie kann den Blick nicht von den Schuhen lösen.*"
+        "text": "Nein, ich kaufe nichts. Ich schau nur. *Dain tritt nah an die Scheibe und kann den Blick nicht von den schneeweißen Volleyballschuhen unter dem Licht des Regals lösen.*"
     },
     "date_dain_shop_2": {
         "name": "{name}",
@@ -337,39 +337,39 @@
     },
     "date_dain_shop_2_b": {
         "name": "Dain",
-        "text": "*Sie dreht das Kinn zur anderen Seite der Auslage.* Nichts! Komm, gehen wir!"
+        "text": "*Als ich sie rufe, zuckt Dain zusammen und reißt den Kopf zur anderen Seite des Schaufensters.* Ach, gar nichts! Ich hab genug gesehen, los, wir gehen!"
     },
     "date_dain_shop_3": {
         "name": "Dain",
-        "text": "*Sie steckt beide Hände in die Taschen und geht voraus.* Starr mich nicht so an."
+        "text": "*Dain steckt beide Hände tief in die Taschen des Trainingszippers und geht absichtlich mit langen Schritten voraus.* Hey, warum starrst du einem dauernd so ins Gesicht. Schau nicht."
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*Sie macht längere Schritte.* Frag noch einmal, dann gehe ich wirklich ohne dich."
+        "text": "*Sie tut betont gelassen und macht die Schritte länger, doch Dains rechter Fuß hinkt ganz leicht.* Wenn du noch ein einziges Mal fragst, ob es geht, gehe ich wirklich ohne dich voraus."
     },
     "date_dain_end": {
         "name": "{name}",
-        "text": "*Sie lächelt. Unter dem Schirm ihrer Kappe bleibt ihr Blick am Schaufenster hängen.*"
+        "text": "*Als ich wortlos neben sie trete und mich ihrem Schritt anpasse, lächelt Dain endlich kurz. Der Blick unter dem Kappenschirm bleibt aber noch zum Schaufenster hin, wie ein Nachbild.*"
     },
     "date_dain_end_b": {
         "name": "Dain",
-        "text": "Hey."
+        "text": "Hey, hör mal."
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Heute hat es Spaß gemacht. Das sage ich nicht nur so."
+        "text": "Das Date mit dir heute hat echt Spaß gemacht. Du weißt doch, leere Worte kann ich bei meinem Charakter nicht. *Dain bleibt stehen, lehnt Schulter und Arm locker an meine Schulter und atmet heiß aus.*"
     },
     "pre_confess_minsu": {
         "name": "Minsu",
-        "text": "Hey, du bist gerade bei einem Date, oder? Ich sage dir nur eins"
+        "text": "Hey, du bist gerade mitten im Date, oder? Als Freund sag ich nur einen Satz."
     },
     "pre_confess_minsu_2": {
         "name": "Minsu",
-        "text": "Mach es diesmal richtig. Lauf nicht weg"
+        "text": "Dreh nicht ungeschickt drum herum. Sag heute richtig, was du fühlst."
     },
     "pre_confess_callback": {
         "name": "{name}",
-        "text": "*Die Ecke des Handys in meiner Tasche drückt in meine Handfläche. Keine Benachrichtigung – im Display spiegelt sich nur schwarzes Glas.*"
+        "text": "*Die Handfläche um das Handy in der Hosentasche wird nass vor Schweiß. Auf dem ausgeschalteten schwarzen Display spiegelt sich nur mein angespannter Blick.*"
     },
     "date_seo_role_trap": {
         "name": "Seoyeon",
@@ -382,111 +382,111 @@
     "date_seo_tier_check": {},
     "date_seo_high_1": {
         "name": "Seoyeon",
-        "text": "Heute können wir ruhig vom Plan abweichen. Gehen wir zuerst dahin, wo du hinwillst."
+        "text": "Heute müssen wir uns nicht an den Plan halten, den ich gemacht habe. Gehen wir zuerst dorthin, wo du am liebsten hinwolltest."
     },
     "date_seo_high_2": {
         "name": "Seoyeon",
-        "text": "Den Zeitplan packe ich weg. Heute will ich nicht auch nach Stundenplan laufen. *Sie geht in den Park voraus.*"
+        "text": "Den Zeitplan aus dem Notizbuch stecke ich ganz unten in die Tasche. Selbst an diesem seltenen Wochenende allein mit dir will ich nicht im Gehen auf die Uhr schauen. *Seoyeon streicht die Haare zurück, die der Wind leicht hebt, und geht zum Spazierweg im Park vor, als würde sie meine Hand mitziehen.*"
     },
     "date_seo_tentative_1": {
         "name": "{name}",
-        "text": "*Während wir eine Runde durch den Park gehen, spricht Seoyeon nur über den Zeitplan der nächsten Woche. Vor einer Bank bleibt sie stehen.*"
+        "text": "*Die ganze Runde auf dem Parkweg spricht Seoyeon statt über Persönliches nur ruhig über den Plan der Schülervertretung für nächste Woche. An der Bank vor dem See bleibt sie endlich stehen.*"
     },
     "date_seo_tentative_2": {
         "name": "Seoyeon",
-        "text": "Das reicht für heute. In der Schule gehe ich dir nicht aus dem Weg."
+        "text": "Tut mir leid, aber heute sollten wir nur so weit gehen. Wenn wir uns am Montag in der Schule über den Weg laufen, weiche ich nicht aus und grüße dich."
     },
     "date_seo_tentative_3": {
         "name": "{name}",
-        "text": "*Wir trennen uns am Bahnhof, ohne ein weiteres Treffen auszumachen.*"
+        "text": "*Nach einem verlegenen Schweigen trennen wir uns auf dem Platz vor dem Bahnhof, ohne ein nächstes Treffen festzumachen.*"
     },
     "date_yuna_tier_check": {},
     "date_yuna_high_1": {
         "name": "Yuna",
-        "text": "*Yuna legt zwei Lesezeichen nebeneinander auf den Tisch.* Such nachher eins mit mir aus. Es ist für das nächste Buch, das wir lesen."
+        "text": "*Yuna legt zwei silberne Lesezeichen, die sie aus der Tasche holt, nebeneinander auf den Cafétisch.* Wenn der Kaffee alle ist und wir in die Buchhandlung gehen, such eins mit mir aus. Das stecke ich in das Buch, das wir das nächste Mal zusammen lesen."
     },
     "date_yuna_high_2": {
         "name": "Yuna",
-        "text": "Ich meine, dass wir wieder zusammen lesen. Das darfst du dir merken."
+        "text": "Das heißt, wir hören nicht nach heute auf. Nächste Woche treffen wir uns wieder allein. Du kannst es schon in deinen Plan schreiben."
     },
     "date_yuna_tentative_1": {
         "name": "Yuna",
-        "text": "Heute reden wir nur über Bücher."
+        "text": "Heute kein anderes privates Thema. Wir reden nur kurz über Bücher und gehen dann."
     },
     "date_yuna_tentative_2": {
         "name": "{name}",
-        "text": "*Das Gespräch geht weiter, aber Yuna holt das alte Buch nicht aus ihrer Tasche. Als ihr Kaffee noch halb voll ist, sieht sie auf die Uhr.*"
+        "text": "*Das Gespräch geht leise weiter, aber Yuna holt den alten Kurzgeschichtenband, den sie in der Tasche hat, am Ende doch nicht heraus. Als im Becher noch etwa die Hälfte Kaffee ist, sieht Yuna auf ihre Armbanduhr.*"
     },
     "date_yuna_tentative_3": {
         "name": "Yuna",
-        "text": "Nächstes Mal schreibe ich zuerst. Für heute belassen wir es dabei."
+        "text": "Wenn ich mit mir im Reinen bin, melde ich mich das nächste Mal zuerst. Für heute belassen wir es dabei."
     },
     "date_dain_tier_check": {},
     "date_dain_high_1": {
         "name": "Dain",
-        "text": "Halte dir nächste Woche auch frei. Wenn es heute Spaß macht, machen wir das noch mal."
+        "text": "Hey, halt dir nächstes Wochenende auch schon frei! Wenn es heute Spaß macht, mit dir abzuhängen, hole ich dich nächste Woche wieder raus."
     },
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*Sie holt ein Schweißband aus der Tasche und hält es mir hin.* Heute suchst du das erste Spiel aus."
+        "text": "*Dain holt ein neues Schweißband aus der Tasche und legt es mir selbst ums Handgelenk. Die warmen Fingerspitzen streifen die Innenseite, wo der Puls schlägt.* So, Partnerteil ist angelegt! Die erste Disziplin heute suchst du aus."
     },
     "date_dain_tentative_1": {
         "name": "Dain",
-        "text": "Lass uns heute nicht lange bleiben. Mein Knie braucht auch etwas Ruhe."
+        "text": "Tut mir leid, heute will ich nicht weit weg. Nur kurz bleiben und dann zurück. Das Knie sollte ich auch etwas schonen."
     },
     "date_dain_tentative_2": {
         "name": "{name}",
-        "text": "*Am Automaten trinken wir jeder etwas. Dain lässt die Turnhallentür geschlossen und richtet ihren Taschenriemen.*"
+        "text": "*Vor dem Automaten neben der Turnhalle ziehen wir jeder eine Dose und trinken. Dain wirft nicht einmal einen Blick zur Turnhalle und nestelt nur an ihrem Taschenriemen.*"
     },
     "date_dain_tentative_3": {
         "name": "Dain",
-        "text": "Bis dann in der Schule. Dort planen wir das nächste Treffen."
+        "text": "Montag sehen wir uns in der Schule. Ob wir uns danach noch mal treffen, überleg ich mir dann."
     },
     "day4_caught_fallout_1": {
         "name": "{name}",
-        "text": "*Die Entschuldigung von gestern Abend steht noch im Eingabefeld. Gerade als ich sie abschicken will, kommt eine Nachricht von Seoyeon.*"
+        "text": "*Die Entschuldigung, die ich in der Nacht davor am Ende doch nicht abgeschickt habe, steht noch im Eingabefeld des Messengers. Gerade als mein zögernder Daumen auf Senden drücken will, kommt zuerst eine Nachricht von Seoyeon.*"
     },
     "day4_caught_fallout_2": {
         "name": "Seoyeon",
-        "text": "Ich lasse nicht einfach durchgehen, dass du gestern Verabredungen zur selben Zeit gemacht hast. Sag uns erst, wen du heute triffst."
+        "text": "Ich lasse das mit unseren überlappenden Verabredungen von gestern nicht durchgehen, als wäre nichts gewesen. Sag zuerst ehrlich, wen du heute zu treffen vorhast."
     },
     "day4_caught_fallout_3": {
         "name": "{name}",
-        "text": "*Yuna liest die Gruppennachrichten, ohne zu antworten. Dain schreibt: „Wenn wir uns heute treffen, leg erst die Uhrzeit fest.“ Ich prüfe die überlappenden Termine noch einmal im Kalender.*"
+        "text": "*Die Zahl im Gruppenchat ist gesunken, aber Yuna antwortet gar nicht. Kurz darauf kommt eine kurze Nachricht von Dain: „Willst du mich heute treffen, dann leg zuerst eine klare Uhrzeit fest.“ Mir bleibt die Luft weg, und ich sehe wieder auf die überlappenden Termine im Kalender hinunter.*"
     },
     "day4_caught_fallout_4": {
         "name": "{name}",
-        "text": "*Ich schreibe die noch nicht gesendete Entschuldigung zu Ende und schicke sie ab. Während ich auf eine Antwort warte, prüfe ich die heutigen Verabredungen.*"
+        "text": "*Ich schreibe die Entschuldigung zu Ende, die ich die ganze Nacht umgeschrieben habe, und drücke auf Senden. Während ich nervös auf eine Antwort warte, mache ich mich fertig, zum heutigen Treffpunkt zu gehen.*"
     },
     "day4_harem_fallout_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon schreibt in die Gruppe.* Dass wir gestern darüber gelacht haben, klärt unsere Verabredungen noch nicht."
+        "text": "*Oben im Gruppenchat erscheint Seoyeons Nachricht.* Nur weil wir es gestern vor Ort lachend abgetan haben, sind die Verabredungen, die du dir überlappend ausgemacht hast, noch nicht alle geklärt."
     },
     "day4_harem_fallout_2": {
         "name": "Seoyeon",
-        "text": "Ich sage dir nicht, dass du eine von uns wählen sollst. Aber du kannst nicht jede von uns weiter hoffen lassen."
+        "text": "Ich dränge dich nicht, jetzt sofort eine von uns dreien zu wählen. Aber hör auf, jede von uns so vage wie jetzt hoffen zu lassen."
     },
     "day4_harem_fallout_3": {
         "name": "{name}",
-        "text": "*Yuna schreibt: „Bestätige auch unsere Verabredung.“ Dain ergänzt: „Wenn sich die Zeiten überschneiden, sag es jetzt.“ Ich antworte mit geöffnetem Kalender.*"
+        "text": "*Sofort schreibt Yuna: „Sag mir meine Uhrzeit auch noch mal ganz klar.“ Darunter setzt Dain hinzu: „Wenn sich die Zeiten überschneiden, sag es jetzt sofort ehrlich.“ Mit offenem Kalender tippe ich mit zitternden Fingerspitzen eine Antwort.*"
     },
     "day4_harem_fallout_4": {
         "name": "{name}",
-        "text": "*Ich schreibe der Gruppe, dass ich die Verabredungen noch einmal bestätigen werde. Mit noch geöffnetem Kalender ziehe ich an der Tür meine Schuhe an.*"
+        "text": "*Ich schreibe in den Gruppenchat zurück, dass ich die heutigen Verabredungszeiten noch einmal ordnen und durchgeben werde. Den schweren Bildschirm lasse ich an und ziehe im Eingang die Schuhe an.*"
     },
     "date_seo_skip": {},
     "date_yuna_skip": {},
     "date_dain_skip": {},
     "date_seo_neg": {
         "name": "Seoyeon",
-        "text": "*Die Bank ist leer. Eine Nachricht.* Komm heute nicht. In der Schule."
+        "text": "*Auch nachdem die verabredete Zeit vorbei ist, bleibt die Bank vor dem Brunnen kalt und leer. Auf dem Handybildschirm kommt eine kurze Zeile an.* Komm heute nicht zum Treffpunkt. Wir sehen uns in der Schule."
     },
     "date_yuna_neg": {
         "name": "Yuna",
-        "text": "*Sie dreht vor dem Café um.* Heute will ich dich nicht sehen."
+        "text": "*In der Gasse vor dem Café begegnet mir Yuna. Mit kaltem Blick macht sie sofort kehrt.* Tut mir leid, aber heute will ich dir nicht begegnen."
     },
     "date_dain_neg": {
         "name": "Dain",
-        "text": "*Vor dem Hallenrollo richtet sie die Tasche.* Heute will ich dich nicht. Geh."
+        "text": "*Vor dem fest geschlossenen Rolltor der Turnhalle schultert Dain mit kalt erstarrtem Gesicht die Balltasche neu.* Heute will ich nicht mit dir zusammen sein. Geh einfach zurück."
     }
 }

@@ -1,36 +1,36 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Après les cours, dans le couloir. Je consulte la notification du groupe de mon ancien lycée.*"
+        "text": "*Le couloir d'après les cours est noyé d'un coucher de soleil rouge. Je sors le téléphone qui vibre dans ma poche et je vérifie la notification du groupe de mon ancien lycée.*"
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*« Hé, Sojeong va bien dans son nouveau lycée. » « Tant mieux mdr. » Des noms familiers s’affichent les uns après les autres.*"
+        "text": "*« Hé, il paraît que Sojeong va bien dans son nouveau lycée. » « Tant mieux, haha. » Sur l'écran, des noms familiers, ceux avec qui je me frottais tous les jours, s'affichent les uns après les autres.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*Je relis le dernier message. « Tant mieux mdr. » J’ouvre le champ de réponse, sans trouver quoi écrire.*"
+        "text": "*Mon regard s'arrête sur cette dernière ligne, légère : « Tant mieux, haha. » J'ouvre plusieurs fois le champ de réponse, mais je n'arrive pas à écrire un seul caractère devant le curseur qui clignote.*"
     },
     "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*J'hésite, puis quitte le groupe. La messagerie du nouveau lycée reste en tête.*"
+        "text": "*J'hésite longtemps, puis j'appuie en silence pour quitter le groupe. Tout en haut de la liste vide, il ne reste que la messagerie de ce lycée, ajoutée aujourd'hui.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
-        "text": "Hé, t'étais où à midi ? Je suis allée à la supérette et t'étais pas là."
+        "text": "Hé, tu t'es sauvé où, à midi ? Je suis allée à la supérette, j'ai beau chercher, t'étais nulle part."
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*J'efface « avec Seoyeon » de ma réponse.*"
+        "text": "*Du pouce, j'efface vite les quatre caractères « avec Seoyeon » que j'étais en train de taper.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
-        "text": "...Je t'ai vu descendre du toit. Juste vous deux ?"
+        "text": "Je vous ai vus descendre tous les deux, la présidente et toi, du côté de l'escalier. Pourquoi vous êtes montés ensemble sur le toit ?"
     },
     "after1_jealousy_seo_choice": {
         "name": "Dain",
-        "text": "*Je serre plus fort mon téléphone.*",
+        "text": "*Les messages de Dain s'enchaînent, et mes doigts se crispent tout seuls sur le téléphone.*",
         "choices": [
             "J'ai mangé sur le toit avec la présidente. (Honnête)",
             "J'ai juste traîné seul. (Mensonge)",
@@ -40,138 +40,138 @@
     },
     "after1_jealousy_seo_honest": {
         "name": "{name}",
-        "text": "Oui, la présidente du conseil m'a emmené. Elle avait même préparé un bento."
+        "text": "Oui. Ce matin, en me faisant visiter, la présidente du conseil m'a appelé sur le toit. Elle avait même apporté un bento bien rempli."
     },
     "after1_jealousy_seo_honest_2": {
         "name": "Dain",
-        "text": "...Ah bon ? Tu aurais pu me le dire, au moins."
+        "text": "Ah ouais ? Tch. Tu aurais au moins pu me dire que tu partais devant."
     },
     "after1_jealousy_seo_lie": {
         "name": "{name}",
-        "text": "Non, j'ai juste traîné tout seul."
+        "text": "Non. Je voulais comprendre le plan du lycée, alors j'ai tourné un peu partout, tout seul."
     },
     "after1_jealousy_seo_lie_2": {
         "name": "Dain",
-        "text": "Vraiment ? …J’ai dû me tromper, alors."
+        "text": "T'étais vraiment seul ? Hmm. Alors j'ai dû mal voir, de dos."
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*Un billet plié dans la poche latérale du sac. C’est l’écriture de Yuna ; le point final a bavé.* Je t’ai vu sur le toit à midi. Tu avais l’air proche de la présidente."
+        "text": "*Je déplie le mot qui était glissé dans la poche latérale du sac. L'écriture de Yuna, appuyée à l'encre violet pâle, finit sur un point qui a un peu bavé.* Je t'ai vu descendre du toit, à midi. Avec la présidente, vous aviez l'air assez proches."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
-        "text": "Je t'ai vu à la supérette avec Dain à midi. Tu t'adaptes vite."
+        "text": "À midi, tu étais avec Dain, sur le banc de la supérette. Tu t'adaptes très vite, dès le premier jour."
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon aligne le porte-bloc. Je m'arrête et choisis ma réponse.*"
+        "text": "*Seoyeon resserre bien droit le coin du porte-bloc qu'elle tient contre elle. Sous son regard, derrière les lunettes froides, je m'arrête et je choisis ma réponse.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
-        "text": "T'es allé à la bibliothèque à midi ? Avec Yuna ?"
+        "text": "Hé, il paraît que t'es allé à la bibliothèque à midi ? Et tout seul avec Yuna, en plus ?"
     },
     "after1_jealousy_yuna_2": {
         "name": "Dain",
-        "text": "...D'habitude elle ne traîne avec personne."
+        "text": "Étonnant. D'habitude, elle déteste vraiment qu'on vienne à côté d'elle."
     },
     "after1_pre_miss": {
         "name": "{name}",
-        "text": "*Je continue dans le couloir.*"
+        "text": "*Je range le téléphone dans ma poche et j'avance lentement dans le couloir, où le soleil couchant s'étire.*"
     },
     "after_dain_skip": {},
     "after_miss_dain_1": {
         "name": "{name}",
-        "text": "*Je marche dans le couloir quand j’entends des pas lourds derrière moi.*"
+        "text": "*Je tourne au coin du couloir. Derrière moi, des semelles de baskets poussent sur le parquet, et ce pas léger se rapproche vite.*"
     },
     "after_miss_dain_2": {
         "name": "Dain",
-        "text": "Attention !!"
+        "text": "Hé, attention devant !"
     },
     "after_miss_dain_3": {
         "name": "Dain",
-        "text": "Ah, tu t'es poussé ! *Elle s'arrête trois pas plus loin.*"
+        "text": "Ouf, t'as esquivé de justesse ! *Elle frôle mon épaule dans un courant d'air, et ne s'arrête, à peine, qu'à trois pas derrière moi.*"
     },
     "after_miss_dain_4": {
         "name": "Dain",
-        "text": "Oh, tu l’as esquivé ? Pas mal, tes réflexes."
+        "text": "Oh, tes réflexes étaient pas mal, là. T'as déjà fait du sport, non ?"
     },
     "after_miss_dain_5": {
         "name": "{name}",
-        "text": "Pourquoi tu sprintes dans le couloir ?"
+        "text": "On a failli se rentrer dedans. C'est quoi, ce sprint dans le couloir ?"
     },
     "after_miss_dain_6": {
         "name": "Dain",
-        "text": "Je suis en retard ! Faut que j’aille au gymnase ! — Ah, à demain ! Le nouveau !"
+        "text": "Je suis en retard pour le rassemblement du club de volley ! Faut que je coure au gymnase, là, tout de suite. À demain matin, le nouveau !"
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Après quelques pas de course, elle touche son genou droit, puis le lâche et accélère.*"
+        "text": "*Dain se retourne, fait deux pas, puis s'arrête d'un coup et se tient le genou droit. Aussitôt, comme si de rien n'était, elle retire la main et accélère de nouveau.*"
     },
     "after_miss_dain_7": {
         "name": "Dain",
-        "text": "Moi, c'est Dain. Oublie pas ! *Elle fait signe au coin du couloir.*"
+        "text": "Au fait, moi c'est Dain ! Demain, t'as pas le droit d'oublier mon nom ! *Au coin, tout au bout du couloir, elle secoue sa frange trempée de sueur et lève la main bien haut.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*La fille aux yeux rouges passe devant la bibliothèque, son livre sur son bras tatoué.*"
+        "text": "*Je passe dans le couloir devant la bibliothèque. Une fille aux yeux rouges vient vers moi, un gros livre calé sur le tatouage qui dépasse à peine du bout de sa manche.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
-        "text": "Hé, tu as fait tomber ça..."
+        "text": "Pardon, ça vient de tomber d'entre tes livres."
     },
     "after_miss_yuna_1_c": {
         "name": "{name}",
-        "text": "*Je le ramasse et le lui tends. Yuna cale son livre sous son bras et récupère le marque-page.*"
+        "text": "*Je ramasse avec soin le vieux marque-page tombé au sol et je le lui tends. Yuna cale le livre sous un bras et le prend au bout de mes doigts.*"
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "Il n'est pas froissé. *Elle vérifie son marque-page.*"
+        "text": "Tant mieux, le coin n'est pas froissé. *Du bout de ses doigts blancs, elle suit le bord du marque-page et laisse sortir un petit souffle.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
-        "text": "......Merci."
+        "text": "Merci de l'avoir ramassé."
     },
     "after_miss_yuna_3_b": {
         "name": "Yuna",
-        "text": "*Elle glisse le marque-page près du dos du livre et se détourne.*"
+        "text": "*Comme pour cacher quelque chose de précieux, elle enfonce le marque-page tout au fond du livre, puis se retourne sans un bruit et s'éloigne.*"
     },
     "after_miss_yuna_4": {},
     "after_miss_seoyeon_1": {
         "name": "{name}",
-        "text": "*En partant, je croise Seoyeon dans le couloir.*"
+        "text": "*Je mets mon sac pour descendre aux casiers à chaussures. Dans le couloir, devant l'escalier, je me retrouve face à Seoyeon, des documents dans les bras.*"
     },
     "after_miss_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "T’étais où tout à l’heure ?"
+        "text": "T'étais où, à midi ?"
     },
     "after_miss_seoyeon_3": {
         "name": "{name}",
-        "text": "Comment ça, où ?"
+        "text": "À midi, comment ça, où ?"
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "J'avais laissé le toit ouvert, t'es pas venu. — T'as du cran, le nouveau."
+        "text": "J'avais laissé la porte du toit ouverte exprès, et tu n'es jamais monté. Poser un lapin à la présidente dès le premier jour, t'as un sacré culot."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
-        "text": "Tu as attendu ?"
+        "text": "Me dis pas que tu m'as attendu tout ce temps, sur le toit."
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "J’avais commencé à manger. Préviens-moi, la prochaine fois."
+        "text": "Qui a dit que j'attendais ? Je mangeais déjà mon bento. Bref, la prochaine fois, si tu ne peux pas venir, préviens-moi avant."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Elle serre le porte-bloc et rebouche son stylo sans me regarder.*"
+        "text": "*Seoyeon ramène le porte-bloc contre sa poitrine, détourne un peu les yeux et referme d'un clic le capuchon du stylo.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
-        "text": "Demain, ne te sauve pas."
+        "text": "Demain midi, ne file pas ailleurs."
     },
     "after_end": {
         "name": "{name}",
-        "text": "*Après l'annonce de sortie, le couloir se vide peu à peu.*",
+        "text": "*Une fois l'annonce de fin des cours terminée, le couloir, où il ne reste que la lumière du couchant, devient peu à peu silencieux.*",
         "choices": [
             "Salle des profs",
             "Infirmerie",
@@ -180,39 +180,39 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Je frappe à la porte de la salle des professeurs.* Madame, vous avez un instant ?"
+        "text": "*Je m'arrête au bord de la porte entrouverte de la salle des profs et je frappe doucement.* Madame, vous avez un instant ?"
     },
     "after_hidden_homeroom_cool": {
         "name": "Professeure principale",
-        "text": "*Elle ne ferme pas le registre, elle regarde juste vers la porte.* Je suis encore sur l’appel. Demain, en classe."
+        "text": "*Le registre d'appel encore ouvert, elle lève seulement la tête vers la porte.* Désolée, je suis en train de clôturer l'appel. Si ce n'est pas urgent, on en parle demain, en classe."
     },
     "after_hidden_homeroom_neg": {
         "name": "Professeure principale",
-        "text": "*Elle serre le presse-papiers contre elle.* C’est l’heure de rentrer. À demain."
+        "text": "*Elle ramène le porte-bloc contre elle, comme pour couper court.* L'heure de la sortie est déjà passée. Pour aujourd'hui, ça suffit. Rentre, on se voit demain."
     },
     "after_hidden_homeroom_2": {
         "name": "Professeure principale",
-        "text": "Oh, {name} ? Qu'est-ce qu'il y a ?"
+        "text": "Oh, c'est pas {name} ? T'es pas encore parti. Qu'est-ce qu'il y a ?"
     },
     "after_hidden_homeroom_3": {
         "name": "Professeure principale",
-        "text": "Oui, entre. *Une manche retroussée, une annonce pliée dépasse du registre.*"
+        "text": "J'étais justement libre. Entre. *Sous les manches du cardigan souple, remontées jusqu'aux coudes, le registre d'appel et le planning scolaire sont posés en désordre.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "Je voulais vous poser une question sur mon adaptation ici."
+        "text": "Pour la suite au lycée, il y a des choses que je dois savoir. Je suis venu vous demander, rapidement."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Professeure principale",
-        "text": "Ah. C’est donc pour ça ? Tu as bien fait de venir. Assieds-toi."
+        "text": "Ah, c'était de ça ? Tu tombes bien. Assieds-toi là, tranquille."
     },
     "after_hidden_homeroom_4": {
         "name": "Professeure principale",
-        "text": "T'as rien fait de mal. — C'est juste que t'es nouveau, je voulais savoir. Tu t'adaptes ?"
+        "text": "Tu n'as rien fait de mal, inutile de te crisper autant. Après cette journée, l'ambiance de la classe, tu la trouves comment ?"
     },
     "after_hidden_homeroom_choice": {
         "name": "Professeure principale",
-        "text": "*La professeure principale baisse son porte-bloc et regarde le visage de {name}.*",
+        "text": "*La professeure principale pose le porte-bloc sur le bureau, cale légèrement le menton et observe le visage de {name}.*",
         "choices": [
             "Ça va. Tout me paraît encore nouveau, cela dit.",
             "Franchement, c'est un peu intense.",
@@ -221,67 +221,67 @@
     },
     "after_homeroom_choice_trap": {
         "name": "Professeure principale",
-        "text": "*Le porte-bloc se redresse devant sa poitrine.* Ce n'est pas un traitement de faveur, c'est mon travail de professeure principale. D'accord. On va en rester là."
+        "text": "*Elle reprend le porte-bloc et le redresse devant sa poitrine.* Ce n'est pas un traitement de faveur, juste la vérification normale d'une professeure principale. Si ça te gêne, on s'arrête là pour aujourd'hui."
     },
     "after_homeroom_ok": {
         "name": "Professeure principale",
-        "text": "Ah oui ? — Si quelque chose te pèse, passe à la salle des profs. Tu pourras toujours prétexter des papiers à remplir."
+        "text": "Ah bon ? Tant mieux. Si jamais quelque chose te bloque, passe à la salle des profs quand tu veux. Il reste encore des papiers de transfert."
     },
     "after_homeroom_ok_b": {
         "name": "Professeure principale",
-        "text": "*Elle pousse les papiers pour dégager une chaise.*"
+        "text": "*Elle pousse d'un côté la pile de documents au bord du bureau et me fait une place pour m'asseoir.*"
     },
     "after_homeroom_ok_3": {
         "name": "Professeure principale",
-        "text": "Si ça te paraît seulement nouveau, c'est rassurant. Ce serait plus étrange que tu te sentes déjà chez toi dès le premier jour."
+        "text": "Si c'est juste un peu nouveau, c'est très bien parti. Te sentir à l'aise dès le premier jour, comme si ça faisait longtemps, ce serait plus bizarre."
     },
     "after_homeroom_ok_4": {
         "name": "Professeure principale",
-        "text": "*La feuille qu'elle allait déplacer reste posée sur le porte-bloc.*"
+        "text": "*Le bout du doigt fin de la professeure principale s'attarde un instant sur le coin du papier de transfert qu'elle allait tourner.*"
     },
     "after_homeroom_ok_5": {
         "name": "Professeure principale",
-        "text": "Être parfait le premier jour, ça t'épuise plus tard. Fais semblant d'être un peu nul. — Allez, file."
+        "text": "À vouloir t'adapter trop parfaitement dès le premier jour, tu vas vite t'épuiser. Par moments, laisse voir que tu es un peu maladroit, et avance doucement. Allez, rentre, maintenant."
     },
     "after_homeroom_ok_6": {
         "name": "Professeure principale",
-        "text": "Rentre bien. *Elle retourne à son bureau.*"
+        "text": "Rentre bien. *Elle laisse un léger parfum de café et ramène sa chaise vers son bureau.*"
     },
     "after_homeroom_honest_1": {
         "name": "Professeure principale",
-        "text": "Être débordé, c'est normal. Rester zen dès le premier jour, ça serait bizarre."
+        "text": "Forcément, être un peu perdu, c'est normal. Dans une classe inconnue, être déjà détendu dès le premier jour, ça, ce serait plus étonnant."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
-        "text": "Vous avez déjà changé d'école, madame ?"
+        "text": "Vous aussi, madame, vous avez déjà changé de lycée, quand vous étiez élève ?"
     },
     "after_homeroom_honest_3": {
         "name": "Professeure principale",
-        "text": "...Quelque chose comme ça. J'ai été parachutée dans un nouveau lieu du jour au lendemain."
+        "text": "Ce n'est pas tout à fait un transfert. Mais oui, je me suis déjà retrouvée seule, d'un coup, dans un endroit où je n'avais aucune attache."
     },
     "after_homeroom_honest_3_b": {
         "name": "Professeure principale",
-        "text": "*Elle retourne le porte-bloc et en frotte un coin du pouce.*"
+        "text": "*La professeure principale retourne le porte-bloc et frotte lentement, du pouce, le coin de plastique lisse.*"
     },
     "after_homeroom_honest_4": {
         "name": "Professeure principale",
-        "text": "Si ça devient dur, viens à la salle des profs. Je peux t'offrir un café — ah, t'es élève. Un jus, alors."
+        "text": "Si l'air de la classe devient trop lourd, viens te réfugier ici quand tu veux. Un café bien chaud... ah, c'est vrai, tu es élève. Un jus sucré, ça, je peux toujours t'en donner."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "Une prof qui offre à boire à un élève ?"
+        "text": "Si je viens à la salle des profs, vous m'achetez la boisson vous-même ?"
     },
     "after_homeroom_honest_6": {
         "name": "Professeure principale",
-        "text": "Intérêt pédagogique, j'imagine."
+        "text": "Disons que c'est un pur intérêt pédagogique pour le nouvel élève de ma classe."
     },
     "after_homeroom_honest_6_b": {
         "name": "Professeure principale",
-        "text": "*Du pouce, elle appuie sur le coin plié du registre d'appel pour l'aplatir.*"
+        "text": "*Avec un sourire malicieux, elle appuie du pouce sur le coin un peu replié du registre d'appel et l'aplatit.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*Le coin du registre d'appel touche le bureau.*",
+        "text": "*Appuyée au coin du bureau, la professeure principale s'est rapprochée d'environ une main, et son regard doux croise le mien.*",
         "choices": [
             "Si vous êtes inquiète, dites juste que vous êtes inquiète",
             "Alors, ce sera encore un jus la prochaine fois, madame.",
@@ -291,53 +291,53 @@
     },
     "after_homeroom_honest_choice2a": {
         "name": "Professeure principale",
-        "text": "...D'accord, je m'inquiète. — C'était si évident ?"
+        "text": "Oui. Honnêtement, je m'inquiétais un peu. Ça se voyait tant que ça sur mon visage ?"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "Professeure principale",
-        "text": "*Elle aligne soigneusement le registre d'appel avec le bord du bureau.*"
+        "text": "*Elle toussote pour rien, puis aligne bien droit le registre d'appel sur le bord du bureau.*"
     },
     "after_homeroom_honest_choice2b": {
         "name": "Professeure principale",
-        "text": "*Elle désigne le distributeur du bout de son stylo.* Ne t'emballe pas. Ce sera un jus du distributeur."
+        "text": "*Du bout de son stylo-plume, elle désigne le distributeur, côté couloir, et sourit.* N'espère pas trop. C'est le jus en canette du distributeur, là-bas."
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Professeure principale",
-        "text": "*La professeure principale referme le registre d'appel. Arrivée au seuil, elle rappelle {name}.*"
+        "text": "*Elle referme le registre d'appel, sort pour m'accompagner jusqu'au seuil de la salle des profs, puis s'arrête net et rappelle {name}.*"
     },
     "after_homeroom_honest_7": {
         "name": "Professeure principale",
-        "text": "Ah, {name}."
+        "text": "Au fait, {name}."
     },
     "after_homeroom_honest_8": {
         "name": "{name}",
-        "text": "Oui ?"
+        "text": "Oui, madame ?"
     },
     "after_homeroom_honest_9": {
         "name": "Professeure principale",
-        "text": "Si tu n'arrives pas à t'adapter, je reviendrai te chercher."
+        "text": "Si je vois que tu restes à l'écart ou que tu ne t'adaptes pas, je viendrai te chercher moi-même. Alors débrouille-toi."
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Des pas dehors. La professeure pousse les documents de côté.*"
+        "text": "*Des pas d'un autre professeur arrivent du fond du couloir. La professeure principale repousse naturellement les documents sur le bureau.*"
     },
     "after_homeroom_honest_10": {
         "name": "Professeure principale",
-        "text": "On continue dans le couloir ? *Elle sort avec le registre.*"
+        "text": "Je sors, de toute façon. On finit en marchant dans le couloir ? *Le registre d'appel contre elle, elle franchit la porte à côté de moi.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professeure principale",
-        "text": "*La professeure principale laisse la porte de la salle des profs entrouverte et cale le registre sous son bras.*",
+        "text": "*Elle laisse la porte de la salle des profs à moitié fermée, cale le registre d'appel sous son bras et règle son pas sur le mien.*",
         "context": "[Mode : en personne] Devant la salle des professeurs, après les cours du premier jour. L’élève a demandé conseil pour s’intégrer et sa professeure principale l’a écouté. Poursuivre cet échange à partir de ses paroles et du motif de sa visite.",
         "personality": "La professeure principale est une femme attentive à la fin de la vingtaine, aux longs cheveux bruns ondulés, vêtue d'un cardigan beige. Elle inscrit l'accompagnement et les conseils dans les procédures de l'école. Elle rêvait autrefois de devenir romancière et tient toujours à l'écriture."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Pris de vertige, je m'appuie au mur. Juste à côté, je vois le panneau de l'infirmerie.*"
+        "text": "*Un vertige me prend d'un coup. Je m'arrête, une main sur le mur froid du couloir. En relevant la tête, je vois le panneau de l'infirmerie, juste au-dessus de la porte d'à côté.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*Depuis ce matin, je n'ai pas arrêté de voir du monde. Mes pas s'immobilisent devant l'infirmerie.*",
+        "text": "*Depuis le matin, les regards inconnus et le bruit m'ont usé. La fatigue arrive d'un coup, et mes pieds ne quittent plus le sol devant la porte de l'infirmerie.*",
         "choices": [
             "Aller à l'infirmerie",
             "Rentrer directement",
@@ -347,79 +347,79 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Je respire et saisis la poignée froide.*"
+        "text": "*Je calme un instant ma respiration courte, puis je tourne avec soin la poignée de métal froide.*"
     },
     "after_nurse_d1_cool": {
         "name": "Infirmière",
-        "text": "*Elle referme le dossier.* Je range. Si tu n’as mal nulle part, rentre."
+        "text": "*Elle lève les yeux en refermant la fiche.* Là, je range les médicaments avant de partir. Si rien ne te fait mal en particulier, rentre."
     },
     "after_nurse_d1_neg": {
         "name": "Infirmière",
-        "text": "*Elle ferme le cahier de rendez-vous.* C’est tout pour aujourd’hui. Rentre."
+        "text": "*Elle ferme net le registre des rendez-vous.* Les consultations sont closes pour aujourd'hui. Rentre directement chez toi."
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Une odeur de désinfectant. Une femme en blouse blanche me regarde par-dessus ses lunettes.* Excusez-moi."
+        "text": "*J'ouvre la porte. Par-dessus l'odeur piquante du désinfectant, un reste de parfum doux et sucré. L'infirmière, en blouse blanche, me regarde par-dessus ses fines lunettes.* Excusez-moi."
     },
     "after_nurse_enter_2": {
         "name": "Infirmière",
-        "text": "Oh, un patient."
+        "text": "Tiens, une visite tardive, après les cours."
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*Elle sort une fiche et tapote la première ligne.*"
+        "text": "*L'infirmière tire une nouvelle fiche et tapote la première ligne du bout de ses doigts fins.*"
     },
     "after_nurse_enter_3": {
         "name": "{name}",
-        "text": "J'ai un peu le vertige."
+        "text": "D'un coup, j'ai un peu la nausée, et la tête qui tourne."
     },
     "after_nurse_enter_4": {
         "name": "Infirmière",
-        "text": "C'est toi, le nouveau ? L'infirmerie dès le premier jour, ça a dû être rude. Fais voir."
+        "text": "C'est toi, le nouveau d'aujourd'hui ? Si tu passes déjà à l'infirmerie le premier jour, la journée a dû être rude. Approche."
     },
     "after_nurse_enter_4_b": {
         "name": "{name}",
-        "text": "Comment vous avez deviné ?"
+        "text": "Comment vous avez su tout de suite que je suis le nouveau ?"
     },
     "after_nurse_enter_4_c": {
         "name": "Infirmière",
-        "text": "Je ne t’avais jamais vu, et ton uniforme a l’air neuf. J’ai bon ?"
+        "text": "Déjà, un beau visage que je n'avais jamais vu, et pas un seul pli sur la veste d'uniforme. Ma déduction est bonne, non ?"
     },
     "after_nurse_enter_4_d": {
         "name": "Infirmière",
-        "text": "*Elle me tend un thermomètre numérique, puis sort un tensiomètre de sous le bureau.*"
+        "text": "*Avec un sourire tranquille dans les yeux, elle me tend un thermomètre électronique, puis sort un tensiomètre de l'étagère sous le bureau.*"
     },
     "after_nurse_enter_5": {
         "name": "Infirmière",
-        "text": "*Après avoir vérifié ma température, elle enroule le brassard autour de mon bras.*"
+        "text": "*Après avoir vérifié le chiffre du thermomètre, elle remonte ma manche et, du bout des doigts froids, enroule le brassard autour de mon bras.*"
     },
     "after_nurse_enter_6": {
         "name": "Infirmière",
-        "text": "Pas de fièvre. Ta tension est un peu basse, par contre."
+        "text": "Pas de fièvre, heureusement. Par contre, ta tension est un peu plus basse que d'habitude."
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "Je n'ai pas vraiment mangé ce matin."
+        "text": "En fait, ce matin j'étais trop tendu. Je suis parti presque sans manger."
     },
     "after_nurse_enter_7": {
         "name": "Infirmière",
-        "text": "Ça peut expliquer les vertiges. Allez, allonge-toi. On attend dix minutes."
+        "text": "Le ventre vide, et tendu toute la journée : forcément, ça tourne. Allez, va t'allonger sur le lit, là-bas. On ferme les yeux, pile 10 minutes."
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
-        "text": "*Le drap bruisse quand je m'allonge.*"
+        "text": "*Je m'allonge sur le lit du fond. Le drap blanc, raide d'amidon, bruisse et reste frais sous moi.*"
     },
     "after_nurse_enter_7_c": {
         "name": "Infirmière",
-        "text": "*Elle tire le rideau à moitié.* Tu veux de l'eau ? Ou quelque chose de chaud ?"
+        "text": "*L'infirmière tire à moitié le rideau autour du lit et coupe la lumière du couchant.* Je t'apporte à boire ? Tu préfères de l'eau fraîche, ou un thé chaud ?"
     },
     "after_nurse_enter_7_d": {
         "name": "{name}",
-        "text": "De l'eau, ça ira."
+        "text": "Juste un verre d'eau tiède, ça me suffit."
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
-        "text": "*Derrière le rideau, l'infirmière remplit la fiche.*",
+        "text": "*Derrière le rideau blanc à moitié fermé, la silhouette calme de l'infirmière qui remplit la fiche se dessine.*",
         "choices": [
             "Vous avez l'air plus fatiguée que moi, en fait",
             "L'infirmerie est plus calme que je pensais.",
@@ -428,112 +428,112 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "Infirmière",
-        "text": "Tu comprends vite. Mais pour l'instant, on s'occupe de toi."
+        "text": "Tiens. T'es pas en état de t'inquiéter pour les autres, et pourtant tu captes vite. Pour l'instant, on s'occupe d'abord de toi."
     },
     "after_nurse_enter_choice_b": {
         "name": "Infirmière",
-        "text": "Hein ? J'aime bien ici. — C'est calme, et si on oublie l'odeur de désinfectant, c'est parfait."
+        "text": "Pas vrai ? Moi aussi, c'est le calme de cette pièce que je préfère. Sans l'odeur piquante du désinfectant, c'est parfait, même pour une sieste."
     },
     "after_nurse_enter_8": {
         "name": "Infirmière",
-        "text": "Pas besoin de forcer pour faire de longues phrases. Quand tu as la tête qui tourne, prends ton temps pour répondre."
+        "text": "Pas la peine de forcer pour allonger tes phrases. Quand tu as des vertiges, le souffle et les réponses, tu les donnes un demi-temps plus lentement."
     },
     "after_nurse_enter_8_b": {
         "name": "{name}",
-        "text": "Ça va vite passer ?"
+        "text": "Si je reste allongé juste un moment comme ça, ça va vite se calmer ?"
     },
     "after_nurse_enter_8_c": {
         "name": "Infirmière",
-        "text": "*Elle me tend un verre d'eau.* Bois et repose-toi, ça devrait aller beaucoup mieux. Si les vertiges persistent, on préviendra aussi ta professeure principale."
+        "text": "*Elle s'approche par l'ouverture du rideau, me tend un gobelet d'eau et effleure le dos de ma main.* Bois l'eau lentement et reprends ton souffle, ça ira bien mieux. Si la nausée continue, on préviendra aussi ta professeure principale."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Je bois en regardant autour de moi. Une petite plante en pot est posée dans un coin de l'infirmerie.*"
+        "text": "*Je garde une gorgée en bouche et je parcours du regard l'infirmerie silencieuse. Dans le coin de la fenêtre, sous le soleil couchant, se trouve un petit pot pas plus grand qu'une paume.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
-        "text": "Cette plante — c'est la vôtre ?"
+        "text": "Le pot vert près de la fenêtre, vous le cultivez vous-même ?"
     },
     "after_nurse_enter_9_c": {
         "name": "Infirmière",
-        "text": "Oui, du romarin. — Je l'ai depuis mes années à l'hôpital."
+        "text": "Oui, du romarin. Je l'emmène partout avec moi depuis que je travaillais à l'hôpital universitaire."
     },
     "after_nurse_enter_9_d": {
         "name": "{name}",
-        "text": "L'hôpital ?"
+        "text": "Avant de venir à l'école, vous étiez dans un grand hôpital ?"
     },
     "after_nurse_enter_9_e": {
         "name": "Infirmière",
-        "text": "*Elle saisit un instant la poignée du tiroir, puis la relâche.*"
+        "text": "*Les doigts fins de l'infirmière agrippent un instant la poignée du tiroir du bureau, puis la lâchent sans un bruit.*"
     },
     "after_nurse_enter_10": {
         "name": "Infirmière",
-        "text": "Vieille histoire. J'aime l'école. Ici, quand la cloche sonne, tout le monde retourne en classe."
+        "text": "Tout ça, c'est du passé. Cette école me plaît bien plus. Ici, dès que la cloche sonne, même les élèves qui étaient malades retournent en classe d'un bon pas."
     },
     "after_nurse_enter_10_b": {
         "name": "Infirmière",
-        "text": "Ça fait dix minutes. Tu te sens mieux ? *Un carnet vert pâle apparaît quand elle range la fiche dans le tiroir.*"
+        "text": "Allez, les 10 minutes promises sont passées. Ton ventre, ça va mieux ? *Dans le tiroir qu'elle a ouvert pour ranger la fiche, on entrevoit un instant un carnet vert pâle délavé.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
-        "text": "Merci. Je me sens un peu mieux."
+        "text": "Grâce à vous, ça s'est beaucoup calmé. Merci."
     },
     "after_nurse_enter_11": {
         "name": "Infirmière",
-        "text": "Si tu as de nouveau la tête qui tourne, reviens. L'infirmerie est toujours ouverte. Mais n'attends pas que ça empire : je commencerais par te gronder."
+        "text": "Tant mieux. Si tu as encore la tête qui tourne, viens quand tu veux : la porte de l'infirmerie est toujours ouverte. Mais si tu t'obstines à encaisser tout seul et que tu arrives trop tard, sache que je te gronderai pour de bon."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
-        "text": "Vous me gronderiez ?"
+        "text": "Vous grondez aussi les patients ?"
     },
     "after_nurse_enter_11_c": {
         "name": "Infirmière",
-        "text": "*Elle fait rouler une fois son stylo sur la fiche de soins.* Si tu te sens mal, que tu t'obstines et ne viens me voir que bien plus tard, tu mérites de te faire gronder. C'est pour ça que je suis là."
+        "text": "*Elle fait rouler son stylo sur la fiche de soins et plisse les yeux.* Évidemment. Si tu caches que tu es malade, que tu tiens bon et que tu t'effondres pour de bon, tu mérites qu'on te gronde. Je suis dans cette pièce pour t'empêcher d'encaisser jusqu'au bout."
     },
     "after_nurse_enter_11_d": {
         "name": "Infirmière",
-        "text": "*Elle pose le verre d'eau dans un bruit sourd.*"
+        "text": "*Elle prend le gobelet vide et le pose sur le bureau. Un bruit bas et sourd brise le silence.*"
     },
     "after_nurse_enter_11_e": {
         "name": "Infirmière",
-        "text": "*À la remarque sur sa fatigue, elle se frotte une fois la nuque.*"
+        "text": "*Comme si ce que je lui avais dit tout à l'heure lui revenait, elle fait glisser une fois sa main le long de sa nuque blanche, par-dessus le col de sa blouse.*"
     },
     "after_nurse_enter_11_f": {
         "name": "Infirmière",
-        "text": "Tu as dit que j'avais l'air fatiguée tout à l'heure, non ? Si même un élève le remarque, je ferais mieux de rentrer un peu plus tôt aujourd'hui. Merci."
+        "text": "Au fait, tu as dit tout à l'heure que j'avais l'air plus fatiguée, non ? Si ça se voit à ce point, même pour un nouvel élève, je ferais mieux de partir plus tôt aujourd'hui, moi aussi. Merci de t'inquiéter."
     },
     "after_nurse_enter_11_g": {
         "name": "Infirmière",
-        "text": "*Elle note l'heure dans le registre de soins, puis débarrasse le verre vide.*"
+        "text": "*Dans la dernière case de la fiche, elle note d'une écriture nette l'heure du soin et range le gobelet.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Infirmière",
-        "text": "Tu as dit que c'était calme ici, non ? Si tu as besoin de souffler, préviens ta professeure principale et viens. Ne serre pas les dents tout seul."
+        "text": "Tu as dit tout à l'heure que le calme de l'infirmerie te plaisait, non ? Quand le bruit de la classe pèse trop, préviens ta professeure principale et viens te cacher ici. Ne reste pas à encaisser tout seul."
     },
     "after_nurse_enter_11_i": {
         "name": "Infirmière",
-        "text": "*Elle ouvre le rideau et remet le drap en ordre.*"
+        "text": "*Elle ouvre en grand le rideau resté à moitié tiré et lisse du plat de la main le drap froissé du lit.*"
     },
     "after_nurse_enter_11_j": {},
     "after_nurse_enter_11_k": {
         "name": "Infirmière",
-        "text": "Oh, le nouveau."
+        "text": "Ah, c'est vrai, le nouveau."
     },
     "after_nurse_enter_11_l": {
         "name": "Infirmière",
-        "text": "C'est quoi ton prénom ?"
+        "text": "Je dois le noter sur la fiche. C'est quoi, ton nom ?"
     },
     "after_nurse_enter_11_m": {
         "name": "{name}",
-        "text": "{name}."
+        "text": "Terminale 2, {name}."
     },
     "after_nurse_enter_12": {
         "name": "Infirmière",
-        "text": "Si les symptômes reviennent, viens tout de suite. N'essaie pas de tenir dans le couloir."
+        "text": "Je le note bien sur la fiche. Si les vertiges reviennent en chemin, ne tiens pas bon dans le couloir : reviens directement."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Je m'apprête à me lever, puis m'arrête. L'infirmière regarde l'heure et tourne sa chaise vers moi.*"
+        "text": "*Au moment où je vais descendre du lit, l'infirmière jette un coup d'œil à l'horloge murale et fait pivoter son fauteuil vers moi.*"
     },
     "after_nurse_freetalk": {
         "name": "Infirmière",
@@ -543,7 +543,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Je marche vers le portail.*"
+        "text": "*J'inspire profondément et j'avance lentement vers le portail, sous le soleil couchant.*"
     },
     "after_nurse_enter_trap": {
         "name": "Infirmière",

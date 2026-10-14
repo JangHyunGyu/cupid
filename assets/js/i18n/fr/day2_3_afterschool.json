@@ -1,55 +1,55 @@
 {
     "hidden_nurse_d2_low": {
         "name": "Infirmière",
-        "text": "*Quand tu ouvres la porte de l'infirmerie, l'infirmière referme le dossier.* Si tu n'as pas besoin de soins, je ne peux pas discuter longtemps pour le moment. Retourne en classe."
+        "text": "*Quand j'ouvre la porte de l'infirmerie, l'infirmière referme le dossier qu'elle lisait.* Si ce n'est pas un soin vraiment nécessaire, difficile de parler longtemps. Allez, retourne en classe."
     },
     "hidden_nurse_d2_neg": {
         "name": "Infirmière",
-        "text": "*Elle referme le dossier et désigne la porte.* Pas de soins, tu sors."
+        "text": "*Elle referme le dossier d'un coup sec et désigne la porte.* S'il n'y a plus de soin pour toi aujourd'hui, ça suffit : sors."
     },
     "after2_start": {
         "name": "{name}",
-        "text": "*Après les cours. Deux notifications sur mon téléphone.*"
+        "text": "*Salle de classe, après l'appel de fin de journée. Dans ma poche, deux nouvelles notifications s'affichent côte à côte sur le téléphone.*"
     },
     "after2_msg_dain": {
         "name": "Dain",
-        "text": "Viens au gymnase !! Aujourd'hui c'est le vrai pari !!"
+        "text": "Viens tout de suite au gymnase ! Aujourd'hui, le pari est pour de vrai."
     },
     "after2_msg_seo": {
         "name": "Seoyeon",
-        "text": "Tu peux passer à la salle du conseil ? On manque de monde."
+        "text": "Tu peux passer un instant à la salle du conseil, après les cours ? Aujourd'hui, on est un peu à court de bras."
     },
     "after2_msg_yuna": {
         "name": "{name}",
-        "text": "*Pas de message. Je relis « annexe de la bibliothèque » sur le billet du matin.*"
+        "text": "*Pas de message venu de Yuna. À la place, du bout des doigts, je passe sur les cinq caractères de « annexe de la bibliothèque », écrits sur le mot du matin dans ma poche.*"
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*Après le cours de sport de cinquième heure, le bord du pansement accroche ma manche. Je le plaque une fois, mais il se redécolle.*"
+        "text": "*Le coin du pansement collé sur mon coude après le sport de la 5e heure accroche sans cesse la manche de ma chemise. Je le presse du bout des doigts, mais il se redécolle aussitôt.*"
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
-        "text": "*Quand je remonte ma manche, un côté du pansement est décollé. La plaie ne saigne plus.*"
+        "text": "*Je m'arrête à l'infirmerie et je remonte ma manche. Un côté du pansement est à moitié levé. Heureusement, la plaie ne laisse plus perler de sang.*"
     },
     "hidden_nurse_d2_2": {
         "name": "Infirmière",
-        "text": "Il n'aura même pas tenu une journée, ce pansement. Assieds-toi."
+        "text": "Oh. Ça ne fait même pas une demi-journée, et le pansement demande déjà un échange. Viens t'asseoir par ici."
     },
     "hidden_nurse_d2_3": {
         "name": "{name}",
-        "text": "Le bord n'arrête pas de s'accrocher à ma manche."
+        "text": "À force de bouger, le bout du pansement n'arrête pas de s'accrocher à la manche de ma chemise."
     },
     "hidden_nurse_d2_4": {
         "name": "Infirmière",
-        "text": "Fais voir."
+        "text": "Avance le bras par ici, que je regarde."
     },
     "hidden_nurse_d2_5": {
         "name": "Infirmière",
-        "text": "*Elle retire le pansement décollé, nettoie autour de la plaie et en sort un neuf.* Ça va piquer un peu."
+        "text": "*Du bout des doigts, frais, l'infirmière décolle avec soin le pansement qui se soulève, essuie le pourtour de la plaie au coton désinfectant, puis sort un pansement neuf.* Cette fois encore, ça va piquer un peu."
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
-        "text": "*L'infirmière plie et déplie mon coude pour mesurer la longueur nécessaire.*",
+        "text": "*L'infirmière referme la main sur mon poignet, plie puis déplie lentement mon coude, et estime l'angle du nouveau pansement.*",
         "choices": [
             "On apprend aussi ce genre de chose à l'hôpital ?",
             "Vous êtes minutieuse, même pour un simple pansement.",
@@ -59,23 +59,23 @@
     },
     "hidden_nurse_d2_choice1_a": {
         "name": "Infirmière",
-        "text": "Oui. Sur une articulation, il faut le poser de façon à ce que les mouvements ne le décollent pas."
+        "text": "Oui. Sur une articulation qui bouge sans arrêt, on colle dans le sens de la peau. Comme ça, même en activité, ça ne s'arrache pas."
     },
     "hidden_nurse_d2_choice1_b": {
         "name": "Infirmière",
-        "text": "C'est mon travail. Si je le pose n'importe comment et qu'il tombe en cours, ça pose problème."
+        "text": "Évidemment. C'est mon travail. Si je le colle n'importe comment et qu'il tombe encore pendant le cours, c'est toi qui galères."
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*L’infirmière jette l’emballage du nouveau pansement. Le tiroir qu’elle a fermé plus tôt reste clos.*"
+        "text": "*L'infirmière jette à la poubelle l'emballage du pansement neuf. Le tiroir du bureau, refermé à la hâte après le déjeuner, reste fermé, sans bouger.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Infirmière",
-        "text": "*Elle remarque mon regard et pose la main sur la poignée.* On en reste là. Ta curiosité ne l’ouvrira pas."
+        "text": "*Elle remarque mon regard tourné vers le tiroir, et pose tout doucement sa paume mince sur la poignée.* Pour ce tiroir, c'est terminé depuis tout à l'heure. Tu peux le fixer avec des yeux aussi curieux que tu veux, je ne l'ouvrirai pas."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
-        "text": "*Les jointures de la main qui serre la poignée du tiroir ont blanchi.*",
+        "text": "*Dans les jointures blanches de l'infirmière, refermées sur la poignée, une tension très fine s'installe.*",
         "choices": [
             "Vous avez beaucoup de secrets. Vous pouvez m'en dire un seul ?",
             "Oui, j'ai rien vu",
@@ -85,20 +85,20 @@
     },
     "hidden_nurse_d2_choice2_a": {
         "name": "Infirmière",
-        "text": "*Elle tapote le tiroir.* Le chocolat chaud, ça suffit. Pas de deuxième secret."
+        "text": "*De l'index, elle tapote la face du tiroir fermé.* Le secret du chocolat chaud, je te l'ai déjà donné tout à l'heure. Ça suffit. Plus de secret pour aujourd'hui."
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Infirmière",
-        "text": "*Elle lâche la poignée du tiroir.* Un secret. Ça te suffit, non ?"
+        "text": "*Avec un sourire doux, elle lâche la poignée du tiroir.* Bon. Un secret entre nous deux, jusque-là, ça suffit, non ?"
     },
     "hidden_nurse_d2_8": {
         "name": "Infirmière",
-        "text": "Voilà, c'est fait. Garde-le au sec aujourd'hui."
+        "text": "Voilà. Je l'ai collé bien plus solidement. Ce soir, fais vraiment attention à ce que l'eau ne le touche pas."
     },
     "hidden_nurse_d2_9": {},
     "after2_choice": {
         "name": "{name}",
-        "text": "*Où aller ?*",
+        "text": "*Après les cours, le couchant commence à colorer les choses. De quel côté je pars ?*",
         "choices": [
             "Au gymnase (Dain)",
             "À la salle du conseil des élèves (Seoyeon)",
@@ -107,95 +107,95 @@
     },
     "after2_dain_1": {
         "name": "{name}",
-        "text": "*Le gymnase. Dain fait des échauffements devant le filet de volley.*"
+        "text": "*J'ouvre la porte du gymnase. Le parquet résonne, et Dain est là, devant le filet de volley, en train de s'échauffer légèrement.*"
     },
     "after2_dain_2": {
         "name": "Dain",
-        "text": "T'es là ?! T'es en retard !!"
+        "text": "Oh, te voilà enfin ? Je te tiens, t'es en retard !"
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "J'ai cinq minutes d'avance."
+        "text": "Regarde l'heure. J'ai 5 minutes d'avance sur l'heure qu'on avait dite."
     },
     "after2_dain_4": {
         "name": "Dain",
-        "text": "Moi j'avais dix minutes d'avance !!"
+        "text": "Moi, je savais que tu viendrais. Je suis arrivée il y a 10 minutes, et j'attendais !"
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*C'est toi qui es arrivée en avance. Moi, je ne suis pas en retard.*"
+        "text": "*C'est toi, impatiente, qui es arrivée en avance. Moi, je ne suis pas en retard.*"
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "Bon, le défi ! Cinq services — si t'en passes trois ou plus, tu gagnes ! Sinon, le tteokbokki d'aujourd'hui c'est pour toi !"
+        "text": "Assez de commentaires, on entre dans le vrai match ! Cinq services : trois ou plus plantés dans le court, tu gagnes ! Si ça ne passe pas le filet, le tteokbokki devant le lycée, aujourd'hui, c'est toi qui invites !"
     },
     "after2_dain_7": {
         "name": "{name}",
-        "text": "Du tteokbokki sorti de nulle part ?"
+        "text": "La pénalité, d'un coup, c'est du tteokbokki ?"
     },
     "after2_dain_8": {
         "name": "Dain",
-        "text": "J'ai faim !!"
+        "text": "C'est que j'ai déjà faim, à force d'avoir couru ! Allez, je réceptionne !"
     },
     "after2_dain_9": {
         "name": "{name}",
-        "text": "*Le premier service accroche le filet. Le deuxième tombe à l’intérieur de la ligne.*"
+        "text": "*Après une grande inspiration, le premier service accroche le sommet du filet. Le deuxième, le geste en place, franchit le filet d'un coup vif et se plante sur la ligne intérieure du court.*"
     },
     "after2_dain_9_b": {
         "name": "Dain",
-        "text": "*Elle récupère des deux mains le ballon qui a rebondi.* Hein ? J'allais y aller doucement, mais tant pis."
+        "text": "*Elle saisit des deux mains, sans forcer, la balle qui rebondit du sol, les yeux tout ronds.* Hein ? Je te prenais pour un débutant, j'allais y aller doucement. J'ai failli le regretter."
     },
     "after2_dain_9_c": {
         "name": "Dain",
-        "text": "C'était peut-être juste un coup de chance. Faut rejouer pour voir si tu es vraiment bon. *Elle se baisse et resserre sa prise sur le ballon.*"
+        "text": "Ça, ça peut être un coup parti par hasard. Le vrai niveau, on ne le voit qu'en se confrontant de face ! *Elle se baisse et donne du ressort à la main qui tient le ballon.*"
     },
     "after2_dain_9_d": {
         "name": "Dain",
-        "text": "Bon, fini les services ! Maintenant, des échanges : la première personne à trois points gagne !"
+        "text": "Bien. L'exercice de service, tout léger, s'arrête là ! Maintenant, c'est un rallye continu : le premier qui prend trois points gagne !"
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*Pendant l'échange, Dain retombe chaque fois sur le pied gauche et pose le droit un demi-temps plus tard.*"
+        "text": "*Le rallye continue, le souffle court. En regardant bien, je vois que Dain, à chaque réception de saut, pose le pied gauche d'abord, et dépose la jambe droite un demi-temps plus tard, tout en douceur.*"
     },
     "after2_dain_9_f": {
         "name": "Dain",
-        "text": "3 à 2... Terminé ! *Elle se lève, frotte son genou droit et retourne le tableau.*"
+        "text": "Hah, hah... 3:2, le match est fini ! *Le souffle court, Dain se relève du sol. Distraitement, elle frotte une fois son genou droit, puis fait tourner le tableau des scores.*"
     },
     "after2_dain_11b": {
         "name": "{name}",
-        "text": "*On est sortis du gymnase et on a marché dans la rue.*"
+        "text": "*En laissant retomber la chaleur trempée de sueur, on est sortis du gymnase et on a marché côte à côte dans la rue devant le lycée, sous le couchant.*"
     },
     "after2_dain_12": {
         "name": "Dain",
-        "text": "Aaaargh !! J'ai perdu !! — Mais t'es pas mal ?! Tu disais que tu faisais pas de sport ?!"
+        "text": "Ah, je l'ai perdue de justesse ! Mais ta façon de frapper, ça n'a rien d'ordinaire. Tu m'avais bien dit que tu ne faisais pas de sport ?"
     },
     "after2_dain_13": {
         "name": "{name}",
-        "text": "J'ai jamais dit ça."
+        "text": "Moi, je n'ai jamais dit que je ne faisais pas de sport du tout."
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Elle lâche le ballon qu'elle tenait.* Quoi ? Tu m'as roulée ?"
+        "text": "*Elle écarquille les yeux, assez pour que le ballon sous son bras tombe au sol.* Quoi ? Alors c'est moi, et moi seule, qui me suis fait complètement avoir ?"
     },
     "after2_dain_15": {
         "name": "{name}",
-        "text": "Je t'ai pas roulée — t'as juste jamais demandé."
+        "text": "Je ne t'ai pas trompée. C'est toi qui n'as pas demandé pour de vrai."
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*Elle lève le poing à hauteur d'épaule, puis le ramène contre son flanc.* Escroc. Mais c'était vraiment marrant !"
+        "text": "*Elle lève le poing jusqu'à l'épaule, puis, avec un petit rire, le plaque contre son flanc.* Quel sournois, celui-là. Ah, mais ça faisait longtemps que je ne m'étais pas autant amusée, à en transpirer pour de vrai !"
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "Bien joué ! Avec toi qui joues comme ça, ça me motive encore plus. Mais prends pas la grosse tête parce que t'as gagné. *Nos paumes restent jointes jusqu'après son cri.*"
+        "text": "Beau rallye ! Tu réceptionnes si bien que j'ai couru encore plus à fond. Ne te gonfle pas juste parce que tu as gagné une manche ! *Dans le claquement, la paume chaude de Dain ne quitte la mienne qu'un temps plus tard.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
-        "text": "Oups, ça pique ? J’aurais dû y aller moins fort."
+        "text": "Ah, pardon. Ça picote, la main ? J'étais trop lancée, j'ai oublié de doser."
     },
     "after2_dain_skinship_3": {
         "name": "{name}",
-        "text": "*Dain frotte contre la couture de son survêtement la paume qui vient de heurter la mienne.*"
+        "text": "*La sueur perle juste au-dessus de la clavicule de Dain. Elle frotte, sans raison, contre la couture de son pantalon de sport la paume qui vient de toucher la mienne.*"
     },
     "after2_dain_freetalk": {
         "name": "Dain",
@@ -204,47 +204,47 @@
     "after2_dain_end": {},
     "after2_dain_end_first": {
         "name": "{name}",
-        "text": "*Dain pose sèchement deux gobelets de tteokbokki et ouvre l'emballage de ses baguettes.*"
+        "text": "*Dain pose d'un coup sec deux gobelets de tteokbokki, la vapeur qui monte, et elle déchire net l'emballage des baguettes en bois.*"
     },
     "after2_dain_end_b": {
         "name": "{name}",
-        "text": "*Au restaurant de tteokbokki devant le lycée, Dain souffle sur son plat.*"
+        "text": "*Au snack devant le lycée, une odeur de pâte de piment, presque sucrée, se répand. Dain prend un morceau de riz gluant bien rouge, pince les lèvres et souffle dessus.*"
     },
     "after2_dain_end_2": {
         "name": "Dain",
-        "text": "Hé, tu connais vraiment le sport, hein ?"
+        "text": "Hé, dis-le franchement. Tu as appris le sport assez sérieusement, avant, non ?"
     },
     "after2_dain_end_2b": {
         "name": "{name}",
-        "text": "Un peu."
+        "text": "Rien de plus. J'en ai fait un peu, quand j'étais petit."
     },
     "after2_dain_end_2c": {
         "name": "Dain",
-        "text": "Un 'peu' ça joue pas comme ça ! — Avoue, t'es bon."
+        "text": "Mon œil. Juste « un peu » de pratique, et tu réceptionnes mon smash comme ça ? Avoue, tu es bon en sport, à la base."
     },
     "after2_dain_end_2d": {
         "name": "{name}",
-        "text": "Tu étais bien meilleure que moi."
+        "text": "À mes yeux, tu frappais cent fois mieux, et avec bien plus de style."
     },
     "after2_dain_end_3": {
         "name": "{name}",
-        "text": "Tu joues aussi bien depuis quand ? Avec ce service, t'as pas dû jouer seulement pendant les pauses. *Les baguettes de Dain s'arrêtent au-dessus du gobelet de tteokbokki.*"
+        "text": "Au fait, depuis quand tu joues au volley à ce niveau ? Sur le court, ça ne ressemble pas à un simple loisir. *La pointe des baguettes de Dain s'arrête un instant au bord du gobelet de tteokbokki.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
-        "text": "...Évidemment ! J'étais boursière sportive !"
+        "text": "Évidemment. À la base, on m'avait sélectionnée en volley, et j'étais entrée ici."
     },
     "after2_dain_end_3c": {
         "name": "{name}",
-        "text": "*À peine « j'étais » prononcé, les baguettes de Dain quittent le gobelet en carton pour se diriger vers le verre d'eau.*"
+        "text": "*À l'instant où le passé de « j'étais entrée » se referme, la main de Dain file vers le verre d'eau fraîche, juste à côté du gobelet.*"
     },
     "after2_dain_end_3d": {
         "name": "Dain",
-        "text": "Ahh c'est trop épicé !! De l'eau, de l'eau !!"
+        "text": "Hss, ça pique ! De l'eau, vite !"
     },
     "after2_dain_end_3e": {
         "name": "Dain",
-        "text": "Il reste de l'eau, {name} ? J'ai la bouche en feu. *Elle pousse son gobelet de tteokbokki.*"
+        "text": "Hé, {name}, il n'y a plus d'eau froide, là ? On dirait qu'il y a le feu dans ma bouche ! *Elle s'évente les lèvres en feu et pousse le gobelet de tteokbokki vers moi.*"
     },
     "after2_dain_rival_seo_high": {
         "name": "Seoyeon",
@@ -272,80 +272,80 @@
     },
     "after2_dain_return": {
         "name": "{name}",
-        "text": "*Sur le chemin du retour vers le lycée, nous arrivons devant le portail.*"
+        "text": "*Après avoir dit au revoir à Dain, en revenant chercher mon sac, j'arrive devant le portail, où le couchant s'est épaissi.*"
     },
     "after2_seo_1": {
         "name": "{name}",
-        "text": "*La salle du conseil des élèves. Seoyeon est assise derrière une pile de documents. Seule.*"
+        "text": "*La salle du conseil, silencieuse après les cours. Seoyeon est seule, assise devant une pile de documents sur la longue table de réunion, et son stylo avance.*"
     },
     "after2_seo_2": {
         "name": "Seoyeon",
-        "text": "T'es vraiment venu. — Honnêtement, je pensais pas que tu viendrais."
+        "text": "Tu es vraiment venu. Honnêtement, je pensais que tu ne viendrais pas, trop occupé."
     },
     "after2_seo_3": {
         "name": "{name}",
-        "text": "Quand on m'appelle, je viens."
+        "text": "C'est toi qui m'as appelé en personne. Bien sûr que je viens."
     },
     "after2_seo_4": {
         "name": "Seoyeon",
-        "text": "J’ai bien fait de te demander de venir."
+        "text": "Bien fait d'avoir osé t'appeler."
     },
     "after2_seo_4_b": {
         "name": "Seoyeon",
-        "text": "{name}, écris d'abord ce que tu peux prendre en charge. *Elle tourne le porte-bloc vers moi.*"
+        "text": "Tiens, {name}. Sur cette liste, choisis d'abord ce que tu veux prendre. *Elle dégage une chaise de mon côté et tourne le porte-bloc vers moi.*"
     },
     "after2_seo_5": {
         "name": "{name}",
-        "text": "C'est toi qui as demandé de l'aide."
+        "text": "Tu m'appelles parce qu'il manque du monde, et c'est toi qui me laisses le choix."
     },
     "after2_seo_6": {
         "name": "Seoyeon",
-        "text": "Je veux dire, merci d’être venu."
+        "text": "C'est une attention particulière, pour te remercier d'avoir répondu à ma demande."
     },
     "after2_seo_6_b": {
         "name": "{name}",
-        "text": "Les budgets et les demandes des clubs ? Je trie quoi d'abord ?"
+        "text": "Le projet de budget des événements du semestre de printemps, et la liasse des demandes de clubs. On commence par lequel ?"
     },
     "after2_seo_7": {},
     "after2_seo_8": {
         "name": "Seoyeon",
-        "text": "Ceux-ci par date, ceux-là par club. — T'es doué pour ranger ?"
+        "text": "Les budgets, tu les mets dans l'ordre des dates, et le reste, tu le classes par club. Tu as déjà fait ce genre de tri ?"
     },
     "after2_seo_8a2": {
         "name": "{name}",
-        "text": "Pas génial, mais pas nul non plus."
+        "text": "Je ne suis pas excellent, mais je ne fais pas n'importe quoi non plus."
     },
     "after2_seo_8a3": {
         "name": "Seoyeon",
-        "text": "Vague."
+        "text": "Réponse bien vague."
     },
     "after2_seo_8a4": {
         "name": "{name}",
-        "text": "Comme tes compliments. Toi aussi t'es vague."
+        "text": "C'est un peu comme tes compliments. Toi aussi, tu tournes toujours autour du pot."
     },
     "after2_seo_8b": {
         "name": "{name}",
-        "text": "On a travaillé ensemble. J'ai quand même droit à un compliment ? Sans tourner autour. *Seoyeon cesse de tourner les feuilles et regarde {name}.*"
+        "text": "Je me donne du mal pour t'aider. Tu pourrais lâcher un compliment franc, non ? Arrête de rester aussi vague. *Les doigts de Seoyeon s'arrêtent sur les documents. Derrière ses lunettes, son regard se tourne vers {name}.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
-        "text": "Tu es plus efficace que je ne pensais."
+        "text": "Tes mains sont plus rapides, et plus précises, que je ne le pensais."
     },
     "after2_seo_8b3": {
         "name": "{name}",
-        "text": "C'est un compliment ?"
+        "text": "Je peux prendre ce que tu viens de dire pour un compliment officiel ?"
     },
     "after2_seo_8b4": {
         "name": "Seoyeon",
-        "text": "C'est un compliment. Prends-le."
+        "text": "Oui. Compliment de première classe. Accepte-le, et sois-en reconnaissant."
     },
     "after2_seo_8b4_b": {
         "name": "Seoyeon",
-        "text": "*Elle dit que c'est un compliment, puis retourne aussitôt à ses papiers. En roulant la nuque, elle tire une fois sur le col de sa chemise.*"
+        "text": "*Elle dit sans détour que c'est un compliment, puis baisse tout de suite les yeux et aligne le coin des feuilles. Le cou un peu raide, elle le tourne légèrement, et tire une fois du bout des doigts le col de sa chemise, sous la nuque qui a rougi.*"
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Une bande orange traverse les stores et coupe en deux la pile de documents. Seoyeon en aligne les coins.*",
+        "text": "*Le couchant orange, par le store à moitié ouvert, teint d'une lumière chaude les documents sur le bureau et le profil de Seoyeon.*",
         "choices": [
             "C'est un beau coucher de soleil. Je parle de la vue.",
             "Si tu fais ça tous les jours, tu dois avoir l'habitude.",
@@ -355,77 +355,77 @@
     },
     "after2_seo_sunset_joke": {
         "name": "{name}",
-        "text": "Il faut bien préciser que je parle de la vue. Si tu comprends de travers, c'est moi qui suis mal. *Les lunettes de Seoyeon glissent vers le bout de son nez et son stylo sort de la case de la date.*"
+        "text": "Autant le préciser : je parle du couchant, dehors, par la fenêtre. Si tu prends ça pour une remarque sur ton visage, je suis le seul à être embêté. *Les lunettes de Seoyeon glissent un peu vers le bout de son nez, et la pointe du stylo sort de la case de la date.*"
     },
     "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
         "name": "Seoyeon",
-        "text": "…Le fait que tu précises ça rend la chose encore plus suspecte."
+        "text": "...Qui a dit quoi ? En rajouter comme ça, c'est encore plus suspect."
     },
     "after2_seo_sunset_react_b": {},
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
-        "text": "Ça va. Ça m'arrive tous les jours."
+        "text": "Moi, ça va. Ce genre de paperasse, c'est tous les jours, pour moi."
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
-        "text": "*Elle fait rouler une épaule et prend une petite inspiration.*"
+        "text": "*Même en disant ça, elle fait tourner lentement son épaule raide, et elle inspire un peu.*"
     },
     "after2_seo_neck_react_b": {
         "name": "{name}",
-        "text": "Attends. Essaie de mettre ça en dessous."
+        "text": "Attends une seconde. Cale ça sous les papiers, et continue comme ça."
     },
     "after2_seo_neck_react_c": {
         "name": "{name}",
-        "text": "*Je pousse vers Seoyeon une des boîtes à dossiers vides empilées à côté.*"
+        "text": "*Je ramène une boîte à dossiers vide, solide, qui était empilée dans le coin, et je la pousse devant le bureau de Seoyeon.*"
     },
     "after2_seo_neck_touch": {
         "name": "Seoyeon",
-        "text": "Tu veux t’en servir comme support ?"
+        "text": "La boîte à dossiers vide, tu veux t'en servir de support, comme un pupitre ?"
     },
     "after2_seo_neck_high": {
         "name": "{name}",
-        "text": "C'est une boîte vide. Tu n'as qu'un seul cou."
+        "text": "De toute façon, elle est vide, cette boîte. La présidente du conseil n'a qu'un cou."
     },
     "after2_seo_neck_high_b": {
         "name": "Seoyeon",
-        "text": "...Tu sais toujours quoi répondre."
+        "text": "Décidément, tu sais dire une phrase de façon à ce qu'elle ne déplaise pas."
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*Seoyeon pose ses papiers sur la boîte. Elle a un peu moins besoin de pencher la tête.*"
+        "text": "*Seoyeon fait mine de céder et pose la liasse sur la boîte à dossiers. L'œil nettement plus haut, l'angle de sa nuque penchée se réduit, visible tout de suite.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
-        "text": "Pour aujourd'hui, je veux bien."
+        "text": "C'est plus confortable que je ne le pensais. Pour aujourd'hui seulement, j'admets ton idée."
     },
     "after2_seo_neck_high_2_b": {
         "name": "Seoyeon",
-        "text": "On les classe par date. Laisse la boîte là. *Elle tourne une feuille.*"
+        "text": "Allez, on finit de mettre le reste dans l'ordre des dates. Cette boîte, on la laisse ici. *Tout près, au point que nos épaules se toucheraient, Seoyeon tourne le document suivant.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
-        "text": "*Je pose la boîte à dossiers au bord du bureau, entre nous deux.*"
+        "text": "*Je pose sans bruit, au coin du bureau entre nous deux, la boîte à dossiers que j'ai apportée.*"
     },
     "after2_seo_neck_low_b": {
         "name": "{name}",
-        "text": "Laisse tomber si tu n'en veux pas."
+        "text": "Si ça te gêne, tu n'es pas obligée de t'en servir."
     },
     "after2_seo_neck_low_c": {
         "name": "Seoyeon",
-        "text": "*Elle prend la boîte et la pose à côté des papiers.*"
+        "text": "*Sans un mot, Seoyeon tire la boîte et la garde juste à côté de sa pile.*"
     },
     "after2_seo_neck_low_2": {
         "name": "Seoyeon",
-        "text": "Je l'essaierai quand on aura fini."
+        "text": "Je finis d'abord celui-ci. Pour la liasse d'après, j'essaierai."
     },
     "after2_seo_9": {
         "name": "{name}",
-        "text": "*Quand l'ombre des stores atteint enfin le bord du bureau, le tri est presque terminé.*"
+        "text": "*Ce n'est que lorsque l'ombre du store, près de la fenêtre, s'allonge jusqu'au bout du bureau que le gros tas de documents est presque rangé.*"
     },
     "after2_seo_choice2": {
         "name": "{name}",
-        "text": "*Le tri est presque terminé.*",
+        "text": "*En refermant le dernier classeur, je regarde la salle du conseil, où la lumière du couchant s'est épaissie.*",
         "choices": [
             "Je reste encore un peu ? Il semble en rester",
             "Si c'est fini, j'y vais",
@@ -434,31 +434,31 @@
     },
     "after2_seo_choice2_trap": {
         "name": "Seoyeon",
-        "text": "*Elle ramène la pile de feuilles vers elle.* Oui. C'était mon travail, après tout."
+        "text": "*Elle tire d'un coup la pile qui reste, contre elle.* D'accord. De toute façon, c'était mon travail depuis le début. Tu peux y aller."
     },
     "after2_seo_stay": {
         "name": "Seoyeon",
-        "text": "Je te retiens pas pour ce qui reste à faire. Même quand on a fini, tu peux rester un peu. *Elle pose les feuilles et remonte le store d'un cran.*"
+        "text": "Je ne te garde pas pour te coller ce qui reste. Même le tri fini, aucune règle ne dit qu'il faut se lever tout de suite. *Seoyeon pose le stylo et relève d'un cran le store, côté fenêtre.*"
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
-        "text": "...J'aime le calme qu'il y a à cette heure-ci."
+        "text": "J'aime bien la salle du conseil à cette heure. Tout le monde est parti, et c'est vraiment calme."
     },
     "after2_seo_stay_3": {
         "name": "{name}",
-        "text": "Même la présidente du conseil se repose ?"
+        "text": "Même la présidente en personne, elle a des moments où elle ne travaille pas et où elle reste dans le vague ?"
     },
     "after2_seo_stay_3b": {
         "name": "Seoyeon",
-        "text": "Je comptais justement faire une pause."
+        "text": "Oui. Justement maintenant, je vais me reposer à côté de toi."
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "C'est la dernière ? On la vérifie ensemble. *Je rapproche la feuille du porte-bloc retourné.*"
+        "text": "Il reste une dernière feuille, celle de la vérification finale ? On la regarde ensemble, juste celle-là, et on se repose. *Je tire la dernière feuille à côté du porte-bloc retourné.*"
     },
     "after2_seo_leave": {
         "name": "Seoyeon",
-        "text": "*Des deux mains, elle appuie une fois sur la pile terminée pour en aligner les bords.*"
+        "text": "*Des deux mains, elle appuie légèrement sur la pile bien ordonnée, pour en aligner les bords.*"
     },
     "after2_seo_end": {},
     "after2_seo_skinship_1": {
@@ -467,15 +467,15 @@
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
-        "text": "Ne bouge pas. ...Voilà. *Elle ne retire sa main du col de ma chemise qu'après le passage du chariot de ménage.*"
+        "text": "Ne bouge pas. Reste comme ça. ...Voilà, c'est bon. *Ce n'est qu'après que le chariot de ménage de l'élève de service a traversé le couloir en bringuebalant que les doigts de Seoyeon lâchent lentement le col de ma chemise.*"
     },
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
-        "text": "...T'avais de la poussière."
+        "text": "Il y avait comme un petit fil accroché à ton col."
     },
     "after2_seo_return": {
         "name": "{name}",
-        "text": "*Je quitte la salle du conseil et me dirige vers le portail.*"
+        "text": "*Conscient de la chaleur qui chatouille encore ma nuque, je sors de la salle du conseil et je marche vers le portail.*"
     },
     "after2_seo_rival_dain_high": {
         "name": "Dain",
@@ -503,59 +503,59 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Je relis le billet du matin et vais à l'annexe.*"
+        "text": "*En repensant au billet reçu ce matin, je me dirige vers l'annexe de la bibliothèque, où il n'y a presque personne.*"
     },
     "after2_yuna_1_b": {
         "name": "{name}",
-        "text": "*Le couloir de l'annexe est désert. Seule la porte de la salle de lecture secrète est entrouverte de la largeur de deux phalanges.*"
+        "text": "*Dans le couloir de l'annexe, où le couchant s'infiltre de biais, pas âme qui vive. Seule la porte de la salle de lecture secrète, dans le coin, est entrouverte de la largeur de deux phalanges.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
-        "text": "*La porte grince. Yuna lit sur le canapé.*"
+        "text": "*Quand je pousse la porte, les gonds grincent doucement. Yuna, calée au fond du canapé, lève la tête de son livre.*"
     },
     "after2_yuna_2_b": {
         "name": "Yuna",
-        "text": "*Elle pousse sur le côté l'un des écouteurs posé sur son livre.*"
+        "text": "*Elle prend l'un des écouteurs blancs posés sur la page ouverte et le décale un peu sur le côté.*"
     },
     "after2_yuna_3": {
         "name": "Yuna",
-        "text": "...T'es venu."
+        "text": "T'es encore venu."
     },
     "after2_yuna_4": {
         "name": "{name}",
-        "text": "Tu m'as pas appelé."
+        "text": "Tu m'as jamais appelé pour venir après les cours."
     },
     "after2_yuna_5": {
         "name": "Yuna",
-        "text": "Faut que je t'appelle pour que tu viennes ?"
+        "text": "Faut vraiment que je t'appelle par un billet pour que tu viennes ?"
     },
     "after2_yuna_6": {
         "name": "Yuna",
-        "text": "*Son index suit deux fois la même phrase.*"
+        "text": "*L'index fin de Yuna trace deux fois, lentement, le dessous de la même phrase sur la page.*"
     },
     "after2_yuna_7": {
         "name": "{name}",
-        "text": "La porte était ouverte."
+        "text": "Je passais, c'est tout. La porte était juste un peu ouverte."
     },
     "after2_yuna_8": {
         "name": "Yuna",
-        "text": "...Par hasard."
+        "text": "J'ai dû la laisser mal fermée, par hasard."
     },
     "after2_yuna_8b": {
         "name": "Yuna",
-        "text": "Assieds-toi à côté de moi. *Un écouteur repose sur la chaise du fond. Elle montre le coussin à côté d'elle.*"
+        "text": "Reste pas debout. Assieds-toi à côté de moi. *Un écouteur est posé sur le coussin, au fond du canapé. Du bout du doigt, Yuna désigne la place juste à côté d'elle.*"
     },
     "after2_yuna_8c": {
         "name": "Yuna",
-        "text": "Écoute."
+        "text": "Ça, écoute-le avec moi."
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "Du piano. Ça ne te distrait pas pour lire ? *Le fil se tend entre nous.*"
+        "text": "Un morceau de piano tout calme. Lire avec de la musique, ça te gêne pas ? *Sur le canapé, entre Yuna et moi qui portons chacun un écouteur, le fin fil se tend à la limite.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
-        "text": "*Elle démêle une fois le fil des écouteurs avant de parler.* Quelqu'un qui vient ici après les cours..."
+        "text": "*En démêlant une fois le fil emmêlé du bout des doigts, elle se met à parler tout bas.* Quelqu'un qui vient jusqu'ici, dans cette pièce, après les cours."
     },
     "after2_yuna_choice_pre2": {
         "name": "{name}",
@@ -563,15 +563,15 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Personne depuis mon aînée."
+        "text": "Depuis que cette aînée est partie, il n'y en a pas eu une seule."
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
-        "text": "*Yuna lève la tête et regarde {name}. Le fil de l'écouteur reste enroulé autour de ses doigts immobiles.*"
+        "text": "*Yuna lève la tête par-dessus le livre et fixe {name} sans bouger, d'un regard presque obstiné. Entre ses doigts blancs, le fil de l'écouteur enroulé ne frémit pas.*"
     },
     "after2_yuna_choice": {
         "name": "{name}",
-        "text": "*Le fil de l'écouteur s'enroule encore entre les doigts de Yuna.*",
+        "text": "*Dans l'espace réduit au point que nos épaules se touchent presque, le fil enroulé autour des doigts de Yuna se resserre d'un tour de plus.*",
         "choices": [
             "Je devrais venir tous les jours ?",
             "C'est agréable parce que c'est calme",
@@ -580,47 +580,47 @@
     },
     "after2_yuna_everyday": {
         "name": "Yuna",
-        "text": "Tous les jours, tu dis ça facilement. Je t'ai même pas demandé de venir. *Elle défait le nœud du fil de l'écouteur, puis l'enroule de nouveau autour de son index.*"
+        "text": "Venir tous les jours, tu le dis vraiment facilement. Je t'ai même jamais permis de venir tous les jours. *Elle dénoue d'un geste fluide le fil autour de son doigt, puis l'enroule de nouveau autour de son index et serre.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",
-        "text": "...Viens si tu veux. Je ne t'en empêcherai pas."
+        "text": "Si tu as envie de venir, viens quand même. Je ne ferai rien pour t'en empêcher."
     },
     "after2_yuna_everyday_react": {
         "name": "Yuna",
-        "text": "...Mais, tous les jours, c'est trop. Juste de temps en temps."
+        "text": "Par contre, venir tous les jours, c'est un peu gênant. Seulement de temps en temps, quand tu y penses."
     },
     "after2_yuna_everyday_react_b": {
         "name": "{name}",
-        "text": "*Yuna ne retire pas le marque-page et reste sur la même page.*"
+        "text": "*Le marque-page toujours en place, Yuna n'arrive pas, un moment, à quitter des yeux la même page.*"
     },
     "after2_yuna_quiet": {
         "name": "Yuna",
-        "text": "...C'est pour ça que j'aime cet endroit."
+        "text": "C'est ça. Moi aussi, c'est pour ça que c'est ici que je préfère."
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "C'est pas calme seulement quand je suis seule. Je peux lire avec toi aussi. *Elle recule le marque-page d'une page et laisse l'écouteur au bout du canapé.*"
+        "text": "C'était pas calme seulement quand je suis seule. Même avec toi à côté comme ça, je peux lire sans être dérangée. *Elle recule le marque-page d'une page, sans ranger l'écouteur posé sur le canapé.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "Il faut que j'y aille. Je pose l'écouteur là. *Je prends mon sac.*"
+        "text": "Il faut que j'y aille avant qu'il fasse noir. L'écouteur que j'ai emprunté, je le laisse ici. *Je me lève du canapé et je prends mon sac.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
-        "text": "*Nous tendons la main vers le même livre — et nos mains se superposent.*"
+        "text": "*Je tends la main pour ranger le livre sur la table, et ma paume se pose telle quelle sur le dos froid et blanc de la main de Yuna.*"
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "...Je voulais pas le prendre avant toi. Je te passe le livre. *Le coin du livre appuie sur nos mains superposées pendant 3 secondes avant qu'elle retire la sienne.*"
+        "text": "...C'est pas que je voulais l'attraper en premier. Ce livre, prends-le. *Le coin du livre reste pressé sous nos doigts superposés, et ce n'est qu'après un silence d'environ 3 secondes que Yuna retire lentement sa main.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
-        "text": "*Après avoir retiré sa main, Yuna tourne le livre pour orienter le dos vers moi, puis me le tend.*"
+        "text": "*Une fois sa main retirée, Yuna tourne le dos du livre vers moi pour que je puisse le prendre facilement, et me le tend avec précaution.*"
     },
     "after2_yuna_return": {
         "name": "{name}",
-        "text": "*Quand je quitte l'annexe de la bibliothèque, l'éclairage automatique du couloir s'allume.*"
+        "text": "*En me souvenant du contact frais de Yuna encore dans ma paume, je sors de l'annexe, et la lumière à détecteur du plafond clignote avant de s'allumer dans le couloir déjà sombre.*"
     },
     "after2_yuna_rival_dain_high": {
         "name": "Dain",
@@ -675,40 +675,40 @@
     },
     "after2_group_return": {
         "name": "{name}",
-        "text": "*La conversation terminée, je reprends mon sac et me dirige vers le portail du lycée.*"
+        "text": "*Après cette conversation au reste subtil, je rajuste mon sac sur l'épaule et je marche vers le portail.*"
     },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",
-        "text": "*Sur le chemin du retour, juste après le portail, Minsu vient marcher derrière moi.*"
+        "text": "*Chemin du retour, au coucher du soleil. À peine sorti du portail, Minsu arrive derrière moi à grandes enjambées et m'emboîte le pas.*"
     },
     "minsu_warn_1_b": {
         "name": "Minsu",
-        "text": "*Il me rattrape à grands pas et se met à marcher à côté de moi.*"
+        "text": "*Il se place à côté de moi, au même pas, puis enfonce les deux mains dans ses poches.*"
     },
     "minsu_warn_2": {
         "name": "Minsu",
-        "text": "Hé."
+        "text": "Hé, le nouveau."
     },
     "minsu_warn_3": {
         "name": "{name}",
-        "text": "Quoi ?"
+        "text": "Hein ? Pourquoi tu m'appelles ?"
     },
     "minsu_warn_4": {
         "name": "Minsu",
-        "text": "Tu t'éclates bien en ce moment ?"
+        "text": "Toi, l'école en ce moment, tu trouves ça plutôt marrant ?"
     },
     "minsu_warn_4_b": {
         "name": "{name}",
-        "text": "*Minsu ne quitte pas des yeux le feu du passage piéton, de l'autre côté du portail.*"
+        "text": "*Minsu ne regarde pas de mon côté. Il fixe seulement le feu clignotant du passage piéton, de l'autre côté du portail.*"
     },
     "minsu_warn_5": {
         "name": "{name}",
-        "text": "Pourquoi tu me demandes ça ?"
+        "text": "C'est quoi, ça, tout d'un coup ?"
     },
     "hidden_nurse_d2_return": {
         "name": "{name}",
-        "text": "*Je quitte l'infirmerie et retourne en classe, où la lumière de fin de journée s'étire sur les bureaux.*"
+        "text": "*Je quitte l'infirmerie et je regagne la classe. Le soleil d'après les cours, teinté de rouge, s'étire en long sur les bureaux vides.*"
     },
     "hidden_nurse_d2_freetalk": {
         "name": "Infirmière",
@@ -718,7 +718,7 @@
     },
     "minsu_warn_6": {
         "name": "Minsu",
-        "text": "Une à midi, une autre après les cours. Toi, tu dois bien t’amuser. — Je dis ça comme ça. *Il hausse les épaules et prend les devants.*"
+        "text": "Une à midi, une autre après les cours. Toi, tu dois bien t'amuser. — Enfin, de côté, c'est juste ce que ça donne. *Il hausse légèrement les épaules, une fois, et dès que le feu change, il part devant.*"
     },
     "after2_yuna_trap": {
         "name": "Yuna",
@@ -726,89 +726,89 @@
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",
-        "text": "On dirait que tu demandes si tu peux amener quelqu'un d'autre. J'ai jamais dit que n'importe qui pouvait venir. *Elle avance le marque-page d'une page et range dans son sac l'écouteur posé au bout du canapé.*"
+        "text": "Ce que tu viens de dire, on dirait que tu demandes si la prochaine fois tu peux amener quelqu'un d'autre. J'ai jamais dit que tu pouvais amener n'importe qui ici. *Elle avance le marque-page d'une page et range dans son sac l'écouteur laissé au bout du canapé.*"
     },
     "after2_seo_tone": {},
     "after2_dain_tone": {},
     "after2_yuna_tone": {},
     "after2_seo_cool_1": {
         "name": "Seoyeon",
-        "text": "Si tu es là, commence par cette liste. *Elle pousse le bloc-notes.*"
+        "text": "Si tu es là, commence par classer la liste marquée ici. *D'un geste purement administratif, elle pousse le porte-bloc.*"
     },
     "after2_seo_neg_1": {
         "name": "Seoyeon",
-        "text": "*Elle fait l'appel et pose le stylo.* Remplis seulement les cases nécessaires. Le reste, demain."
+        "text": "*Elle ne vérifie que la liste de présence, puis pose le stylo.* Remplis juste les cases nécessaires, puis va-t'en. Les affaires personnelles, on en parle demain."
     },
     "after2_dain_cool_1": {
         "name": "Dain",
-        "text": "Si tu es là, ramasse les ballons d'abord. On parlera après."
+        "text": "Si tu es là, ramasse d'abord les ballons par terre. Le bavardage, ce sera après l'entraînement."
     },
     "after2_dain_neg_1": {
         "name": "Dain",
-        "text": "*Elle enroule la corde du filet sans regarder ici.* Aujourd'hui je frappe seule. Ne gêne pas."
+        "text": "*Elle enroule la corde détendue du filet pour la resserrer, sans un regard de ce côté.* Aujourd'hui, je m'entraîne toute seule. Reste pas là à me gêner."
     },
     "after2_yuna_cool_1": {
         "name": "Yuna",
-        "text": "*Elle écarte un seul écouteur.* Tu peux lire. Parle peu."
+        "text": "*Elle écarte d'un geste discret un seul écouteur sur le canapé.* Tu peux lire à côté. Par contre, parle peu."
     },
     "after2_yuna_neg_1": {
         "name": "Yuna",
-        "text": "*Elle ne ferme pas le livre. Pas de mot.* J'ai pas envie de compagnie aujourd'hui."
+        "text": "*Elle ne referme même pas le livre ouvert, et ne tend aucun billet.* Aujourd'hui, j'ai pas envie d'être avec qui que ce soit."
     },
     "after2_dain_rival_seo_neg": {
         "name": "Seoyeon",
-        "text": "*Elle passe devant le magasin sans ralentir.*"
+        "text": "*Même en passant devant le magasin, elle ne jette pas un regard et ne ralentit pas le pas.*"
     },
     "after2_dain_rival_yuna_neg": {
         "name": "{name}",
-        "text": "*Côté annexe, Yuna prend son livre le visage détourné. Nos regards ne se croisent pas.*"
+        "text": "*Yuna, qui marche vers l'annexe, passe la tête tournée de l'autre côté, le livre seulement serré contre elle.*"
     },
     "after2_seo_rival_dain_neg": {
         "name": "Dain",
-        "text": "*Elle pousse le bac à ballons dans le gymnase. Pas un signe.*"
+        "text": "*Sans un mot, elle pousse brutalement le bac à ballons et entre dans le gymnase. Pas même le salut de la main qu'elle fait d'habitude.*"
     },
     "after2_seo_rival_yuna_neg": {
         "name": "{name}",
-        "text": "*Sur le palier, Yuna regarde le mur, livre en main. Même pas un signe de tête.*"
+        "text": "*Sur le palier, Yuna, le livre à la main, ne regarde que le mur d'en face. Pas même un bref signe de tête.*"
     },
     "after2_yuna_rival_dain_neg": {
         "name": "Dain",
-        "text": "*Au bout du couloir elle ramasse un ballon et tourne le dos.*"
+        "text": "*Au bout du couloir, elle ramasse d'un geste sec le seul ballon de volley qui a roulé là, et tourne le dos sans un mot.*"
     },
     "after2_yuna_rival_seo_neg": {
         "name": "Seoyeon",
-        "text": "*Elle passe, le registre sous le bras. Elle ne s'arrête pas.*"
+        "text": "*Le registre calé fermement contre l'intérieur de son bras, elle traverse le couloir au passage. Le bruit de ses chaussures ne s'arrête pas une seule fois.*"
     },
     "after2_seo_neck_neg": {
         "name": "{name}",
-        "text": "C'est une boîte vide."
+        "text": "De toute façon, c'est une boîte vide qu'on n'utilise pas."
     },
     "after2_seo_neck_neg_b": {
         "name": "Seoyeon",
-        "text": "*Elle remet la boîte à sa place.* Pas besoin. Tiens-toi à la liste."
+        "text": "*Elle remet la boîte avancée à sa place, dans le coin.* Pas besoin de support. La liste qu'on t'a donnée, fais-la correspondre sans te tromper."
     },
     "after2_seo_neg_leave": {
         "name": "{name}",
-        "text": "*Je remplis seulement les cases vides et je quitte la salle du conseil.*"
+        "text": "*Je remplis en silence seulement les cases qu'on m'a indiquées, et je sors par la porte froide de la salle du conseil.*"
     },
     "after2_dain_neg_leave": {
         "name": "{name}",
-        "text": "*Je sors du gymnase et je m'arrête dans le couloir.*"
+        "text": "*Je sors du gymnase où l'air est devenu lourd, et je marche seul vers la supérette.*"
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",
-        "text": "*Sans refermer le livre, je passe à côté du siège et m'arrête près de la porte.*"
+        "text": "*Je passe sans bruit à côté de Yuna, qui ne referme pas son livre, et je saisis la poignée de la porte de l'annexe.*"
     },
     "after2_dain_cool_cont": {
         "name": "{name}",
-        "text": "*Je mets les ballons dans le panier. Dain regarde le filet et ne fait que la posture de service.*"
+        "text": "*Je ramasse les ballons dans le coin du terrain et je les mets dans le panier. Dain ne regarde que le filet, au loin, et se met en silence en position de service.*"
     },
     "after2_yuna_cool_cont": {
         "name": "{name}",
-        "text": "*Je lis une page du livre ouvert. Yuna remet son écouteur et tourne la page.*"
+        "text": "*Je lis en silence une page du livre ouvert. Yuna remet à son oreille l'écouteur qu'elle avait retiré et passe à la page suivante.*"
     },
     "after2_seo_cool_work": {
         "name": "{name}",
-        "text": "*On commence à trier les documents. Budgets d'événements, demandes de clubs. Une bonne pile.*"
+        "text": "*Je commence sans un mot à classer les documents. Du projet de budget des événements du semestre de printemps jusqu'aux demandes de clubs, la pile à traiter est déjà haute.*"
     }
 }

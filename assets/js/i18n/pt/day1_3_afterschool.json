@@ -1,36 +1,36 @@
 {
     "after_start": {
         "name": "{name}",
-        "text": "*Depois da aula, no corredor. Vejo a notificação do grupo da antiga escola.*"
+        "text": "*No corredor depois da aula, o pôr do sol vermelho se espalha. Tiro do bolso o celular que vibra e confiro o aviso do grupo da escola antiga.*"
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*‘Ei, a Sojeong está bem na escola nova.’ ‘Ainda bem kkk.’ Nomes conhecidos aparecem um após o outro.*"
+        "text": "*“Ei, dizem que a Sojeong tá bem na escola nova.” “Ainda bem, kkk.” Na tela, um atrás do outro, surgem nomes familiares de gente com quem eu convivia todo dia.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*Releio a última mensagem: ‘Ainda bem kkk.’ Toco no campo de resposta, mas não consigo escrever nada.*"
+        "text": "*Meus olhos param naquela última linha leve: “Ainda bem, kkk.” Aperto o campo de resposta várias vezes, mas não consigo escrever nem uma letra na frente do cursor que pisca.*"
     },
     "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Hesito e saio do grupo. A conversa da nova escola fica no topo.*"
+        "text": "*Depois de hesitar um bom tempo, aperto em silêncio para sair do grupo. No topo da lista vazia, só resta o mensageiro desta escola, adicionado hoje.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
-        "text": "Ei, onde você estava no almoço? Fui à cantina e você não estava lá."
+        "text": "Ei, pra onde você escapou no almoço? Fui na cantina e, por mais que eu procurasse, você não tava lá."
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*Apago “com Seoyeon” da resposta.*"
+        "text": "*Apago rápido, com o polegar, as quatro letras “com a Seoyeon” que eu estava digitando no campo.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
-        "text": "...Eu vi vocês descendo do terraço. Os dois juntos?"
+        "text": "Eu vi vocês dois descendo pela escada, você e a presidente. Por que subiram juntos pro terraço?"
     },
     "after1_jealousy_seo_choice": {
         "name": "Dain",
-        "text": "*Aperto o celular na mão.*",
+        "text": "*Com as mensagens seguidas da Dain, meus dedos apertam o celular sem eu perceber.*",
         "choices": [
             "Comi no terraço com a presidente do grêmio. (Sincero)",
             "Só fiquei andando por aí. (Mentira)",
@@ -40,138 +40,138 @@
     },
     "after1_jealousy_seo_honest": {
         "name": "{name}",
-        "text": "É, a presidente me puxou. Até trouxe marmita pra dois."
+        "text": "É. De manhã, a presidente estava me mostrando a escola e me chamou pro terraço. Ela até tinha trazido uma marmita bem farta."
     },
     "after1_jealousy_seo_honest_2": {
         "name": "Dain",
-        "text": "...Ah é? Podia ter avisado, né."
+        "text": "Ah, foi isso? Tsc. Podia ter falado pelo menos que ia na frente."
     },
     "after1_jealousy_seo_lie": {
         "name": "{name}",
-        "text": "Não, só fiquei andando por aí."
+        "text": "Não. Andei por aí sozinho só pra conhecer a estrutura da escola."
     },
     "after1_jealousy_seo_lie_2": {
         "name": "Dain",
-        "text": "Sério? …Então devo ter visto errado."
+        "text": "Sério que você estava sozinho? Hmm, então eu vi errado de costas."
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*Um bilhete dobrado no bolso lateral. Letra de Yuna, o ponto final borrado.* Vi você no terraço no almoço. Parecia se dar bem com a presidente."
+        "text": "*Desdobro o bilhete que estava no bolso lateral da mochila. No fim da letra da Yuna, feita à tinta lilás, o último ponto está levemente borrado.* Vi você descendo do terraço no almoço. Você e a presidente pareciam bem próximos."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
-        "text": "Vi você com Dain na cantina durante o almoço. Está se adaptando rápido."
+        "text": "No almoço, você estava com a Dain no banco da cantina. Primeiro dia e já se adapta rápido assim."
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon alinha as bordas da prancheta. Paro e escolho a resposta.*"
+        "text": "*A Seoyeon endireita o canto da prancheta que segura contra o peito. Diante do olhar frio por trás dos óculos, paro e escolho a resposta.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
-        "text": "Você foi à biblioteca no almoço? Com a Yuna?"
+        "text": "Ei, você foi na biblioteca no almoço, é verdade? E ainda sozinho com a Yuna?"
     },
     "after1_jealousy_yuna_2": {
         "name": "Dain",
-        "text": "Ela normalmente não convive com ninguém."
+        "text": "Olha só. Ela odeia de verdade quando alguém fica do lado dela."
     },
     "after1_pre_miss": {
         "name": "{name}",
-        "text": "*Continuo andando pelo corredor.*"
+        "text": "*Guardo o celular no bolso e sigo devagar pelo corredor, onde o pôr do sol se estende longo.*"
     },
     "after_dain_skip": {},
     "after_miss_dain_1": {
         "name": "{name}",
-        "text": "*Andando pelo corredor quando ouço passos pesados atrás de mim.*"
+        "text": "*Quando dobro a esquina do corredor, o solado de um tênis empurra o assoalho atrás de mim, e os passos leves chegam rápido.*"
     },
     "after_miss_dain_2": {
         "name": "Dain",
-        "text": "Cuidado!"
+        "text": "Ei, cuidado aí na frente!"
     },
     "after_miss_dain_3": {
         "name": "Dain",
-        "text": "Ah, você desviou! *Ela para três passos depois.*"
+        "text": "Ufa, desviou por um triz! *Ela passa roçando meu ombro, faz vento e mal consegue parar, três passos adiante.*"
     },
     "after_miss_dain_4": {
         "name": "Dain",
-        "text": "Olha, você desviou? Bons reflexos."
+        "text": "Oh, o reflexo de agora foi bem bom. Você já treinou, né?"
     },
     "after_miss_dain_5": {
         "name": "{name}",
-        "text": "Por que você tá correndo que nem louca no corredor?"
+        "text": "A gente quase bateu. Que corrida a toda é essa no corredor?"
     },
     "after_miss_dain_6": {
         "name": "Dain",
-        "text": "Estou atrasada! Preciso ir ao ginásio. Até amanhã, estudante transferido!"
+        "text": "Atrasei pra chamada do vôlei! Preciso correr pro ginásio agora mesmo. Até amanhã de manhã, estudante transferido!"
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Depois de alguns passos correndo, toca o joelho direito, solta e acelera.*"
+        "text": "*A Dain se vira, dá uns dois passos, para de repente e segura o joelho direito. Logo tira a mão, como se nada tivesse acontecido, e acelera de novo.*"
     },
     "after_miss_dain_7": {
         "name": "Dain",
-        "text": "Meu nome é Dain. Não esquece! *Ela acena na esquina.*"
+        "text": "Ah, meu nome é Dain! Amanhã, quando vier, não pode esquecer o nome! *Na esquina no fim do corredor, ela balança a franja molhada de suor e levanta a mão bem alto.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*A garota de olhos vermelhos passa pela biblioteca, apoiando o livro no braço tatuado.*"
+        "text": "*Passo pelo corredor em frente à biblioteca. Uma garota de olhos vermelhos vem andando, com um livro grosso apoiado sobre a tatuagem que aparece de leve na ponta da manga.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
-        "text": "Ei, isso aqui..."
+        "text": "Ei, isso caiu agora, do meio dos livros."
     },
     "after_miss_yuna_1_c": {
         "name": "{name}",
-        "text": "*Pego do chão e entrego. Yuna prende o livro sob o braço e recebe o marcador.*"
+        "text": "*Pego com cuidado o marcador velho que ficou no chão e entrego. A Yuna ajeita o livro num braço e recebe o marcador da ponta dos meus dedos.*"
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
-        "text": "Não amassou. *Ela confere o marcador.*"
+        "text": "Ainda bem, o canto não amassou. *Ela passa um dedo branco na ponta do marcador e solta um pouco o ar.*"
     },
     "after_miss_yuna_3": {
         "name": "Yuna",
-        "text": "Obrigada."
+        "text": "Obrigada por pegar."
     },
     "after_miss_yuna_3_b": {
         "name": "Yuna",
-        "text": "*Ela coloca o marcador entre as páginas e se vira.*"
+        "text": "*Como quem esconde algo precioso, ela enfia o marcador bem fundo no livro e se afasta, virando o corpo sem fazer som.*"
     },
     "after_miss_yuna_4": {},
     "after_miss_seoyeon_1": {
         "name": "{name}",
-        "text": "*Tô indo embora quando esbarro na Seoyeon no corredor.*"
+        "text": "*Vou descer até o armário de sapatos, de mochila nas costas, quando no corredor diante da escada cruzo de frente com a Seoyeon, que vinha com papéis nos braços.*"
     },
     "after_miss_seoyeon_2": {
         "name": "Seoyeon",
-        "text": "Onde você se meteu hoje?"
+        "text": "Onde você foi no almoço?"
     },
     "after_miss_seoyeon_3": {
         "name": "{name}",
-        "text": "Como assim?"
+        "text": "Como assim, onde no almoço?"
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Deixei o terraço aberto e você não apareceu. — Que ousadia, transferido."
+        "text": "Deixei a porta do terraço aberta de propósito, e você não subiu. Dar um bolo na presidente no primeiro dia de transferência. Você tem muita coragem."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
-        "text": "Você me esperou?"
+        "text": "Não me diga que ficou o tempo todo me esperando no terraço."
     },
     "after_miss_seoyeon_6": {
         "name": "Seoyeon",
-        "text": "Eu já tinha começado a comer. Da próxima vez, me avisa."
+        "text": "Quem disse que esperei? Eu estava comendo a minha marmita. Enfim, da próxima, se não puder vir, avisa antes."
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Ela abraça a prancheta e tampa a caneta sem me olhar.*"
+        "text": "*A Seoyeon puxa a prancheta contra o peito, desvia um pouco o olhar e fecha com um clique a tampa da caneta na mão.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
-        "text": "Amanhã não tenta fugir."
+        "text": "Amanhã no almoço, não suma pra outro lugar."
     },
     "after_end": {
         "name": "{name}",
-        "text": "*Depois do aviso de saída, o corredor vai esvaziando.*",
+        "text": "*Quando termina o comunicado de saída, o corredor, só com a luz do pôr do sol, vai ficando em silêncio.*",
         "choices": [
             "Sala dos professores",
             "Enfermaria",
@@ -180,39 +180,39 @@
     },
     "after_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Bato na porta da sala dos professores.* Professora, tem um minuto?"
+        "text": "*Paro na porta entreaberta da sala dos professores e bato com cuidado.* Professora, a senhora tem um tempinho agora?"
     },
     "after_hidden_homeroom_cool": {
         "name": "Professora",
-        "text": "*Ela não fecha o diário, só olha para a porta.* Ainda estou na chamada. Amanhã na sala."
+        "text": "*Com o livro de chamada aberto, ela só levanta a cabeça na direção da porta.* Desculpa, mas agora estou fechando a chamada. Se não for urgente, a gente conversa amanhã na sala."
     },
     "after_hidden_homeroom_neg": {
         "name": "Professora",
-        "text": "*Ela guarda a prancheta no peito.* Hora de ir. Até amanhã."
+        "text": "*Ela puxa a prancheta contra o peito e corta por ali.* Já passou a hora de ir embora. Por hoje, vai pra casa. Até amanhã."
     },
     "after_hidden_homeroom_2": {
         "name": "Professora",
-        "text": "Ah, {name}? — Que foi?"
+        "text": "Ué, não é o {name}? Ainda não foi embora? O que foi?"
     },
     "after_hidden_homeroom_3": {
         "name": "Professora",
-        "text": "Sim, entra. *Uma manga dobrada; um aviso dobrado sai do livro de chamada.*"
+        "text": "Justo estava livre. Entra aqui. *Debaixo da manga macia do cardigã, arregaçada até o cotovelo, o livro de chamada e o cronograma escolar estão espalhados de qualquer jeito.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
-        "text": "Queria perguntar uma coisa sobre minha adaptação à escola."
+        "text": "Tem coisa que eu preciso saber pra seguir na escola, então vim perguntar rapidinho."
     },
     "after_hidden_homeroom_3_c": {
         "name": "Professora",
-        "text": "Ah, era isso? Fez bem em vir. Sente-se."
+        "text": "Ah, era isso? Chegou bem na hora. Senta aí, à vontade."
     },
     "after_hidden_homeroom_4": {
         "name": "Professora",
-        "text": "Você não fez nada de errado. — Como é novo, eu queria saber: como está se adaptando?"
+        "text": "Você não aprontou nada. Não precisa ficar tão tenso assim. E o dia de hoje, como foi o clima da nossa turma?"
     },
     "after_hidden_homeroom_choice": {
         "name": "Professora",
-        "text": "*A professora abaixa a prancheta e olha para o rosto de {name}.*",
+        "text": "*Ela deixa a prancheta na mesa e, com o queixo apoiado de leve, observa quieta o rosto de {name}.*",
         "choices": [
             "Estou bem. Embora tudo ainda seja estranho.",
             "Sinceramente, está tudo meio caótico.",
@@ -221,67 +221,67 @@
     },
     "after_homeroom_choice_trap": {
         "name": "Professora",
-        "text": "*A prancheta volta a se erguer diante do peito dela.* Não é tratamento especial, é meu trabalho como professora da turma. Entendi. Vamos parar por aqui."
+        "text": "*Ela pega de novo a prancheta e a ergue diante do peito.* Não é tratamento especial. Como professora da turma, essa checagem é o normal. Se te incomoda, paramos por aqui hoje."
     },
     "after_homeroom_ok": {
         "name": "Professora",
-        "text": "É? — Se surgir algum problema, passa na sala dos professores. Nem que seja com a papelada como desculpa."
+        "text": "É? Ainda bem. Se alguma coisa travar, aparece na sala dos professores quando quiser. Ainda tem documento da transferência pra resolver."
     },
     "after_homeroom_ok_b": {
         "name": "Professora",
-        "text": "*Ela afasta os papéis para liberar uma cadeira.*"
+        "text": "*Ela empurra para um lado a pilha de papéis na ponta da mesa e abre um lugar pra eu sentar.*"
     },
     "after_homeroom_ok_3": {
         "name": "Professora",
-        "text": "Se ainda só parece estranho, já é um alívio. Seria mais esquisito se você se sentisse à vontade desde o primeiro dia."
+        "text": "Se estiver só um pouco estranho, está indo muito bem. Ficar à vontade no primeiro dia, como se fosse um reencontro, seria bem mais estranho."
     },
     "after_homeroom_ok_4": {
         "name": "Professora",
-        "text": "*A folha que ela estava prestes a virar permanece sobre a prancheta.*"
+        "text": "*A ponta do dedo fino da professora fica um instante na borda do papel de transferência que ela ia virar.*"
     },
     "after_homeroom_ok_5": {
         "name": "Professora",
-        "text": "Se se esforçar demais no primeiro dia, desmorona depois. Finge que tá um pouco perdido. — Pode ir."
+        "text": "Se você se esforçar demais pra se adaptar perfeito no primeiro dia, cansa rápido. Às vezes, deixa ver que ainda está meio cru e vai no seu ritmo. Anda, agora vai logo pra casa."
     },
     "after_homeroom_ok_6": {
         "name": "Professora",
-        "text": "Vai com cuidado. *Ela se volta para a mesa.*"
+        "text": "Vai com cuidado. *Ela deixa um cheiro leve de café e gira a cadeira de volta para a própria mesa.*"
     },
     "after_homeroom_honest_1": {
         "name": "Professora",
-        "text": "Estar sobrecarregado é normal. Tranquilo no primeiro dia é que seria estranho."
+        "text": "Pois é, atordoado é o normal. Numa sala estranha, estar tranquilo desde o primeiro dia seria bem mais estranho."
     },
     "after_homeroom_honest_2": {
         "name": "{name}",
-        "text": "A senhora também já mudou de escola?"
+        "text": "A senhora também já se transferiu, quando era estudante?"
     },
     "after_homeroom_honest_3": {
         "name": "Professora",
-        "text": "...Algo parecido. Já fui atirada num lugar novo do nada."
+        "text": "Não é exatamente uma transferência, mas já caí sozinha, do nada, num lugar estranho onde eu não conhecia ninguém."
     },
     "after_homeroom_honest_3_b": {
         "name": "Professora",
-        "text": "*Ela vira a prancheta e esfrega um canto com o polegar.*"
+        "text": "*A professora vira a prancheta e esfrega devagar com o polegar a borda lisa de plástico.*"
     },
     "after_homeroom_honest_4": {
         "name": "Professora",
-        "text": "Se não estiver dando conta, aparece aqui. Pago um café — ah, é aluno. Um suco, pelo menos."
+        "text": "Se o ar da sala apertar, foge pra cá quando quiser. Um café quente. Ah, é verdade, você é aluno. Um suco doce, pelo menos, eu sempre posso oferecer."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
-        "text": "A senhora vai pagar bebida pra aluno?"
+        "text": "Então, se eu vier à sala dos professores, a senhora mesma me compra a bebida?"
     },
     "after_homeroom_honest_6": {
         "name": "Professora",
-        "text": "Chama de interesse pedagógico."
+        "text": "Digamos que é puro interesse pedagógico pelo estudante transferido da minha turma."
     },
     "after_homeroom_honest_6_b": {
         "name": "Professora",
-        "text": "*Com o polegar, ela alisa a ponta dobrada do diário de classe.*"
+        "text": "*Com um sorriso brincalhão, ela aperta com o polegar o cantinho dobrado do livro de chamada até alisar.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*O canto do livro de chamada encosta na mesa.*",
+        "text": "*A professora está encostada na quina da mesa, um palmo mais perto, e o olhar macio cruza com o meu.*",
         "choices": [
             "Se é preocupação, basta dizer que é preocupação",
             "Então, da próxima vez também vou querer suco, professora.",
@@ -291,19 +291,19 @@
     },
     "after_homeroom_honest_choice2a": {
         "name": "Professora",
-        "text": "...É, é preocupação. — Foi tão óbvio assim?"
+        "text": "É. Pra falar a verdade, eu estava preocupada. Apareceu tanto assim no meu rosto?"
     },
     "after_homeroom_honest_choice2a_b": {
         "name": "Professora",
-        "text": "*Ela alinha cuidadosamente o diário de classe com a borda da mesa.*"
+        "text": "*Ela pigarreia à toa e alinha o livro de chamada certinho com a borda da mesa.*"
     },
     "after_homeroom_honest_choice2b": {
         "name": "Professora",
-        "text": "*Ela aponta para a máquina de bebidas com a ponta da caneta.* Não crie expectativas. É suco de máquina."
+        "text": "*Com a ponta da caneta-tinteiro, ela aponta a máquina do corredor e sorri.* Não espera grande coisa. É suco em lata daquela máquina ali."
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Professora",
-        "text": "*A professora fecha o livro de chamada. Ao chegar à soleira, chama {name} outra vez.*"
+        "text": "*Ela fecha o livro de chamada, vem até a soleira da sala dos professores para me acompanhar, para de repente e chama {name} de novo.*"
     },
     "after_homeroom_honest_7": {
         "name": "Professora",
@@ -311,33 +311,33 @@
     },
     "after_homeroom_honest_8": {
         "name": "{name}",
-        "text": "Sim?"
+        "text": "Sim, professora?"
     },
     "after_homeroom_honest_9": {
         "name": "Professora",
-        "text": "Se não se adaptar, eu vou aí te puxar."
+        "text": "Se eu notar que você está de fora ou sem conseguir se adaptar, eu mesma vou atrás de você. Então se cuida."
     },
     "after_homeroom_honest_9_b": {
         "name": "{name}",
-        "text": "*Passos lá fora. A professora afasta os papéis.*"
+        "text": "*Quando os passos de outro professor soam no fim do corredor, a professora empurra os papéis da mesa para o lado, como se fosse natural.*"
     },
     "after_homeroom_honest_10": {
         "name": "Professora",
-        "text": "Vamos continuar no corredor? *Ela sai com o livro de chamada.*"
+        "text": "Estou de saída. Terminamos a conversa andando pelo corredor? *Com o livro de chamada contra o peito, ela sai pela porta andando ao meu lado.*"
     },
     "after_homeroom_freetalk": {
         "name": "Professora",
-        "text": "*A professora deixa a porta da sala dos professores meio aberta e prende o diário de classe sob o braço.*",
+        "text": "*Com a porta da sala dos professores meio fechada, ela prende o livro de chamada debaixo do braço e acompanha o meu passo.*",
         "context": "[Meio: presencial] Em frente à sala dos professores, depois das aulas do primeiro dia. O aluno pediu ajuda para se adaptar e sua professora o ouviu. Continue a conversa com base no que ele disse e no motivo da visita.",
         "personality": "A professora está perto dos trinta anos e, embora pareça indiferente, não deixa de perceber o estado dos alunos. Tem cabelos castanhos, longos e ondulados, usa um cardigã bege e conduz orientação e acompanhamento pelos procedimentos oficiais da escola. No passado sonhava em ser romancista e ainda se interessa por escrita criativa."
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Fico tonto e me apoio na parede. Ao lado está a placa da enfermaria.*"
+        "text": "*Uma tontura que gira de repente me faz parar, apoiado na parede fria do corredor. Levanto a cabeça e a placa da enfermaria, na porta ao lado, entra na minha vista.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*Passei a manhã inteira no meio de outras pessoas. Meus passos param diante da enfermaria.*",
+        "text": "*Desde a manhã, o cansaço de ficar no meio de olhares estranhos e barulho sobe de uma vez, e eu não consigo sair da frente da porta da enfermaria.*",
         "choices": [
             "Entrar na enfermaria",
             "Ir direto pra casa",
@@ -347,79 +347,79 @@
     },
     "after_hidden_nurse_intro_b": {
         "name": "{name}",
-        "text": "*Respiro e seguro a maçaneta fria.*"
+        "text": "*Firmo a respiração uma vez e giro com cuidado a maçaneta de metal, fria.*"
     },
     "after_nurse_d1_cool": {
         "name": "Enfermeira",
-        "text": "*Ela fecha a ficha.* Estou arrumando. Se não dói nada, volta."
+        "text": "*Ela fecha a ficha e levanta os olhos.* Agora, antes de ir embora, estou organizando os remédios. Se não tem dor nenhuma, vai pra casa."
     },
     "after_nurse_d1_neg": {
         "name": "Enfermeira",
-        "text": "*Ela fecha a agenda.* Por hoje chega. Vai embora."
+        "text": "*Ela fecha o caderno de agendamentos.* O atendimento de hoje já fechou. Vai direto pra casa."
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Cheiro de desinfetante. A professora de jaleco branco me olha por cima dos óculos.* Com licença."
+        "text": "*Ao abrir a porta, um rastro doce e suave se junta ao cheiro forte de desinfetante. A enfermeira, de jaleco branco, me olha por cima da armação fina dos óculos.* Com licença."
     },
     "after_nurse_enter_2": {
         "name": "Enfermeira",
-        "text": "Olha só, um paciente."
+        "text": "Ora, visita atrasada depois da aula."
     },
     "after_nurse_enter_2_b": {
         "name": "{name}",
-        "text": "*Ela pega uma ficha e bate na primeira linha com a caneta.*"
+        "text": "*A enfermeira puxa uma ficha nova e, com a ponta fina do dedo, bate de leve na primeira linha.*"
     },
     "after_nurse_enter_3": {
         "name": "{name}",
-        "text": "Tô um pouco tonto."
+        "text": "De repente o estômago embrulhou e eu fiquei tonto."
     },
     "after_nurse_enter_4": {
         "name": "Enfermeira",
-        "text": "É o transferido, né? Primeiro dia e já na enfermaria, tá puxado o dia. Deixa eu ver."
+        "text": "Você é o estudante transferido que chegou hoje, né? Vir à enfermaria já no primeiro dia, o dia deve ter sido pesado. Chega mais perto."
     },
     "after_nurse_enter_4_b": {
         "name": "{name}",
-        "text": "Como a senhora sabe?"
+        "text": "Como a senhora soube tão rápido que eu sou transferido?"
     },
     "after_nurse_enter_4_c": {
         "name": "Enfermeira",
-        "text": "Nunca tinha te visto, e seu uniforme parece novo. Acertei?"
+        "text": "Pra começar, é um rosto bonito que eu nunca vi, e o blazer do uniforme não tem marca nenhuma de dobra. Acertei, né?"
     },
     "after_nurse_enter_4_d": {
         "name": "Enfermeira",
-        "text": "*Ela entrega o termômetro digital e tira o aparelho de pressão debaixo da mesa.*"
+        "text": "*Sem pressa, sorrindo com os olhos, ela me passa o termômetro digital e tira o aparelho de pressão da prateleira debaixo da mesa.*"
     },
     "after_nurse_enter_5": {
         "name": "Enfermeira",
-        "text": "*Depois de medir minha temperatura, coloca a braçadeira do aparelho no meu braço.*"
+        "text": "*Depois de conferir o número do termômetro, ela sobe a minha manga e enrola a braçadeira no meu braço com a ponta fria dos dedos.*"
     },
     "after_nurse_enter_6": {
         "name": "Enfermeira",
-        "text": "Você não está com febre, e a pressão está um pouco baixa."
+        "text": "Ainda bem, não tem febre. A pressão só está um pouco mais baixa que o normal."
     },
     "after_nurse_enter_6_b": {
         "name": "{name}",
-        "text": "Na verdade, eu quase não tomei café da manhã."
+        "text": "Na verdade, de manhã eu estava nervoso e saí quase sem comer."
     },
     "after_nurse_enter_7": {
         "name": "Enfermeira",
-        "text": "Então pode ser por isso. Anda, deita aqui. Descansa por dez minutos."
+        "text": "Estômago vazio e o dia inteiro no nervoso, é claro que dá tontura. Anda, deita na cama ali. Só 10 minutos de olho fechado."
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
-        "text": "*O lençol farfalha quando me deito.*"
+        "text": "*Deito na cama de dentro e o lençol branco, bem passado, farfalha com um toque frio.*"
     },
     "after_nurse_enter_7_c": {
         "name": "Enfermeira",
-        "text": "*Fecha a cortina até a metade.* Quer água? Ou algo quente?"
+        "text": "*A enfermeira puxa pela metade a cortina ao redor da cama e cobre a luz do pôr do sol.* Quer alguma coisa pra beber? Prefere água fresca ou um chá quente?"
     },
     "after_nurse_enter_7_d": {
         "name": "{name}",
-        "text": "Água tá bom."
+        "text": "Um copo de água morna já basta."
     },
     "after_nurse_enter_choice": {
         "name": "{name}",
-        "text": "*Atrás da cortina, a enfermeira preenche a ficha.*",
+        "text": "*Por trás da cortina branca, meio fechada, aparece a silhueta calma da enfermeira enquanto ela preenche a ficha.*",
         "choices": [
             "A senhora parece mais cansada do que eu",
             "A enfermaria é bem silenciosa.",
@@ -428,112 +428,112 @@
     },
     "after_nurse_enter_choice_a": {
         "name": "Enfermeira",
-        "text": "Que paciente observador. Mas primeiro vamos ver como você está."
+        "text": "Ora, você não está em estado de se preocupar com os outros, mas é um paciente de olho vivo. Mesmo assim, agora a gente cuida primeiro de você."
     },
     "after_nurse_enter_choice_b": {
         "name": "Enfermeira",
-        "text": "Né? Eu adoro. — Silencioso, e tirando o cheiro de desinfetante, é perfeito."
+        "text": "Né? Eu também gosto mais é do silêncio desta sala. Tirando o cheiro forte de desinfetante, é perfeita até pra cochilar."
     },
     "after_nurse_enter_8": {
         "name": "Enfermeira",
-        "text": "Não precisa falar muito. Se estiver tonto, responda devagar."
+        "text": "Não force pra continuar falando. Na tontura, respiração e resposta vão meio tempo mais devagar."
     },
     "after_nurse_enter_8_b": {
         "name": "{name}",
-        "text": "Com isso eu melhoro logo?"
+        "text": "Se eu ficar deitado assim só um pouco, passa logo?"
     },
     "after_nurse_enter_8_c": {
         "name": "Enfermeira",
-        "text": "*Entrega um copo d'água.* Beba e descanse; você deve melhorar bastante. Se continuar tonto, vamos avisar também a sua professora da turma."
+        "text": "*A enfermeira se aproxima pela fresta da cortina, me entrega a água num copo de papel e toca de leve o dorso da minha mão.* Bebe a água devagar e acalma a respiração, que você melhora bastante. Mas se o enjoo continuar, vamos avisar a professora também."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Bebo água e observo a enfermaria. Em um canto junto à janela há um vaso do tamanho da palma da mão.*"
+        "text": "*Seguro um gole de água na boca e olho em volta da enfermaria silenciosa. No canto da janela, onde o pôr do sol se acomodou, há um vaso pequeno, do tamanho da palma da mão.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
-        "text": "Aquele vasinho é da senhora?"
+        "text": "E aquele vaso verde da janela, a senhora mesma cultiva?"
     },
     "after_nurse_enter_9_c": {
         "name": "Enfermeira",
-        "text": "É, alecrim. — Cuido dele desde a época em que eu trabalhava no hospital."
+        "text": "É, alecrim. Eu carrego ele comigo desde a época em que trabalhava no hospital universitário."
     },
     "after_nurse_enter_9_d": {
         "name": "{name}",
-        "text": "Hospital?"
+        "text": "Antes de vir para a escola, a senhora trabalhava num hospital grande?"
     },
     "after_nurse_enter_9_e": {
         "name": "Enfermeira",
-        "text": "*Ela segura a alça da gaveta por um instante e depois solta.*"
+        "text": "*Os dedos finos da enfermeira apertam firme a alça da gaveta da mesa, uma vez, e a soltam em silêncio.*"
     },
     "after_nurse_enter_10": {
         "name": "Enfermeira",
-        "text": "História antiga. Gosto da escola. Aqui, quando o sinal toca, todo mundo volta para a sala de aula."
+        "text": "É história antiga, já passou. Agora eu gosto bem mais desta escola. Aqui, basta o sinal tocar que até os que estavam mal voltam pra sala todos dispostos."
     },
     "after_nurse_enter_10_b": {
         "name": "Enfermeira",
-        "text": "Já passaram dez minutos. Melhorou? *Ao guardar a ficha, ela deixa aparecer um caderno verde-claro na gaveta.*"
+        "text": "Pronto, já passaram os 10 minutos que combinamos. E o enjoo, como está? *No interior da gaveta aberta para guardar a ficha, um caderno verde-claro desbotado aparece de relance.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
-        "text": "Obrigado. Acho que já tô melhor."
+        "text": "Graças à senhora, passou bastante. Obrigado."
     },
     "after_nurse_enter_11": {
         "name": "Enfermeira",
-        "text": "Se sentir tontura de novo, volta. A enfermaria está sempre aberta. Só não fica aguentando até piorar. Posso acabar te dando uma bronca antes de cuidar de você."
+        "text": "Ainda bem. Se a tontura voltar, vem quando quiser. A porta da enfermaria fica sempre aberta. Mas se você teimar em aguentar sozinho e só chegar tarde, saiba que eu te dou uma bronca feia."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
-        "text": "Vou levar bronca?"
+        "text": "A senhora dá bronca até em paciente?"
     },
     "after_nurse_enter_11_c": {
         "name": "Enfermeira",
-        "text": "*Ela faz a caneta rolar uma vez sobre a ficha de atendimento.* Se você está mal, aguenta calado e só vem tarde demais, claro que merece uma bronca. É para isso que estou aqui."
+        "text": "*A enfermeira faz a caneta rolar sobre a ficha e estreita os olhos.* Claro. Se você esconder que está doente, aguentar e desabar feio, merece bronca sim. Eu estou nesta sala pra não deixar você aguentar até quebrar."
     },
     "after_nurse_enter_11_d": {
         "name": "Enfermeira",
-        "text": "*Ela pousa o copo d'água com um som baixo.*"
+        "text": "*Quando a enfermeira recebe o copo de papel vazio e o pousa na mesa, um som baixo e surdo quebra o silêncio.*"
     },
     "after_nurse_enter_11_e": {
         "name": "Enfermeira",
-        "text": "*Ao lembrar que eu disse que ela parecia cansada, esfrega uma vez a nuca.*"
+        "text": "*Como se lembrasse do que eu disse antes, a enfermeira desce a mão uma vez pela nuca branca, além da gola do jaleco.*"
     },
     "after_nurse_enter_11_f": {
         "name": "Enfermeira",
-        "text": "Você disse que eu parecia cansada, não foi? Se até um aluno percebeu, hoje é melhor eu ir embora um pouco mais cedo. Obrigada."
+        "text": "Ah, é verdade. Você disse antes que eu parecia mais cansada, né? Se aparece tanto até para um aluno transferido, hoje eu também preciso sair mais cedo. Obrigada por se preocupar."
     },
     "after_nurse_enter_11_g": {
         "name": "Enfermeira",
-        "text": "*Anota o horário no prontuário e recolhe o copo d'água.*"
+        "text": "*No último campo da ficha, a enfermeira anota com letra alinhada a hora do atendimento e guarda o copo d'água.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Enfermeira",
-        "text": "Você disse que aqui era tranquilo, não foi? Se precisar descansar, avise sua professora antes de vir. Não guarde isso para você."
+        "text": "Você disse antes que a enfermaria é boa por ser quieta, né? Quando o barulho da sala de aula ficar pesado demais, fala com a professora e vem se esconder aqui. Não fica aguentando sozinho, calado."
     },
     "after_nurse_enter_11_i": {
         "name": "Enfermeira",
-        "text": "*Abre a cortina e ajeita o lençol da maca.*"
+        "text": "*A enfermeira abre de vez a cortina que estava pela metade e alisa com a palma o lençol amassado da maca.*"
     },
     "after_nurse_enter_11_j": {},
     "after_nurse_enter_11_k": {
         "name": "Enfermeira",
-        "text": "Ah, transferido."
+        "text": "Ah, verdade, o transferido."
     },
     "after_nurse_enter_11_l": {
         "name": "Enfermeira",
-        "text": "Como é o seu nome?"
+        "text": "Tenho que anotar na ficha. Qual é o seu nome?"
     },
     "after_nurse_enter_11_m": {
         "name": "{name}",
-        "text": "Sou o {name}."
+        "text": "Sou o {name}, do 3º ano, turma 2."
     },
     "after_nurse_enter_12": {
         "name": "Enfermeira",
-        "text": "Se os sintomas voltarem, venha direto para cá. Não fique aguentando no corredor."
+        "text": "Vou anotar direitinho na ficha. Se a tontura voltar no caminho, não aguenta no corredor. Volta direto pra cá."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Começo a levantar, mas paro. A enfermeira olha a hora e vira a cadeira para mim.*"
+        "text": "*Quando vou descer da maca, a enfermeira olha uma vez o relógio de parede e gira a cadeira giratória para o meu lado.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermeira",
@@ -543,7 +543,7 @@
     },
     "after_nurse_skip": {
         "name": "{name}",
-        "text": "*Ando em direção ao portão.*"
+        "text": "*Respiro fundo e caminho devagar em direção ao portão, onde o pôr do sol se acomodou.*"
     },
     "after_nurse_enter_trap": {
         "name": "Enfermeira",

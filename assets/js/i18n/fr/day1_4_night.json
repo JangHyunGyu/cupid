@@ -1,147 +1,147 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Dans ma chambre, j'enlève mon uniforme et m'allonge.*"
+        "text": "*De retour à la maison, j'accroche au cintre le nouvel uniforme encore peu familier et je m'allonge de tout mon long sur le matelas.*"
     },
     "night_start_3": {
         "name": "{name}",
-        "text": "*Mon téléphone vibre. La messagerie du lycée.*"
+        "text": "*Dans la chambre silencieuse, le téléphone posé près de l'oreiller vibre brièvement et affiche une alerte de la messagerie du lycée.*"
     },
     "night_msg_seo_1": {
         "name": "Seoyeon",
-        "text": "Le toit, aujourd'hui, ça t'a plu ?"
+        "text": "Le toit où on est montés à midi, c'était comment ?"
     },
     "night_msg_seo_2": {
         "name": "{name}",
-        "text": "*La brise était agréable*"
+        "text": "*La brise était fraîche, et le bento était bon aussi*"
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
-        "text": "La prochaine fois, je prévoirai de quoi boire"
+        "text": "Tant mieux. Demain, je prévoirai aussi une boisson fraîche."
     },
     "night_msg_seo_4": {
         "name": "Seoyeon",
-        "text": "C'est offert"
+        "text": "C'est le service spécial pour l'élève transféré."
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*Elle a envoyé « C'est cadeau » sur une ligne séparée exprès.*"
+        "text": "*La bulle « C'est le service spécial pour l'élève transféré », arrivée seule une ligne plus bas, comme ajoutée après une hésitation, me fait relever le coin de la bouche sans vraie raison.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
-        "text": "C'était bien de t'avoir là, au calme, aujourd'hui"
+        "text": "Merci d'être resté en silence à côté de moi, aujourd'hui à midi."
     },
     "night_msg_yuna_2": {
         "name": "Yuna",
-        "text": "Je te garderai une place demain aussi"
+        "text": "Demain aussi, je laisserai libre la place à côté de moi."
     },
     "night_msg_yuna_3": {
         "name": "{name}",
-        "text": "*Pendant que je relis « Je te garderai ta place », l'écran s'assombrit de lui-même.*"
+        "text": "*Pendant que je relis plusieurs fois de suite la phrase courte et sobre « je laisserai libre la place à côté de moi », l'écran du téléphone s'assombrit lentement.*"
     },
     "night_msg_dain_1": {
         "name": "Dain",
-        "text": "Je pensais pas perdre à pierre-feuille-ciseaux"
+        "text": "Hé, j'aurais jamais imaginé perdre à pierre-feuille-ciseaux en une seule manche."
     },
     "night_msg_dain_2": {
         "name": "Dain",
-        "text": "Demain, revanche mdr"
+        "text": "Demain midi, c'est la revanche, sans discussion. Prépare-toi haha"
     },
     "night_msg_dain_3": {
         "name": "Dain",
-        "text": "J'ai encore mal au porte-monnaie pour les petits pains. Sérieux."
+        "text": "Ah, plus je pense à ce que m'a coûté le pain soboro aujourd'hui, plus ça me fait mal. Sérieux !"
     },
     "night_msg_dain_4": {
         "name": "{name}",
-        "text": "*Les trois messages arrivent presque en même temps. « mdr » est déjà écrit dans la zone de réponse.*"
+        "text": "*Trois lignes arrivent d'affilée, sans même le temps de respirer. J'éclate de rire malgré moi et je tape d'abord « haha » dans la zone de réponse.*"
     },
     "night_hidden_check": {
         "name": "{name}",
-        "text": "*Une autre alerte parmi les messages.*"
+        "text": "*Au moment de fermer la messagerie, une autre alerte de l'appli du lycée s'affiche dans la barre de notifications, en haut.*"
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Il y a un message de la prof principale sur l'appli de l'école. 'Terminale 2 : Apportez vos affaires de maths pour la 1re heure demain. — Et l'élève transféré doit seulement continuer à bien s'adapter.'*"
+        "text": "*Sur l'appli des annonces de la classe, je vois le message que la professeure principale vient de publier. « Annonce de la terminale 2 : demain, n'oubliez pas d'apporter le manuel de maths pour la 1re heure. — Et l'élève transféré arrivé aujourd'hui n'a qu'à bien s'adapter. Cela suffira. »*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Je relis l'annonce et retourne mon téléphone.*"
+        "text": "*Ce n'est qu'après avoir relu une fois de plus la phrase gentille ajoutée à la fin de l'annonce que je retourne le téléphone contre ma poitrine.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Une notification de l'application santé du lycée apparaît. « Dossier de l'infirmerie : élève transféré — légers vertiges. Bien boire aujourd'hui et ne pas sauter le petit-déjeuner. Si les symptômes reviennent, passer à l'infirmerie. »*"
+        "text": "*Une nouvelle alerte s'affiche sur l'appli de santé du lycée. « Dossier de l'infirmerie : élève transféré — léger vertige passager. Ce soir, boire suffisamment d'eau tiède, et ne surtout pas sauter le petit-déjeuner demain. Si les symptômes reviennent, venir immédiatement à l'infirmerie. »*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Je lis les consignes et remplis la bouteille près du lit.*"
+        "text": "*La voix douce de l'infirmière semble encore résonner à mon oreille. Je me lève et je remplis à ras bord la bouteille près de l'oreiller.*"
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Au moment où je vais m'endormir, mon téléphone vibre de nouveau. Vingt-trois heures. Qui ça peut bien être ?*"
+        "text": "*J'éteins la lumière et je m'apprête à fermer les yeux quand le téléphone vibre encore, tout bas, et rompt le silence. L'heure indique 11 h du soir. Qui, à cette heure-ci ?*"
     },
     "night_late_branch": {
         "name": "{name}",
-        "text": "*L’écran s’allume.*"
+        "text": "*Dans la chambre sombre, l'écran que je tiens dans la main s'illumine en blanc.*"
     },
     "night_seo_late_1": {
         "name": "Seoyeon",
-        "text": "À demain au lycée."
+        "text": "Demain matin aussi, ne sois pas en retard. On se voit au lycée."
     },
     "night_seo_late_2": {
         "name": "Seoyeon",
-        "text": "Si tu ne viens pas, je viendrai te chercher"
+        "text": "Si tu n'es pas là à l'heure, je viendrai te chercher moi-même."
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Je pose le téléphone. L’heure à laquelle je dois arriver au lycée demain reste affichée sur l’écran verrouillé.*"
+        "text": "*Je laisse un court au revoir et je pose le téléphone près de l'oreiller. Sur l'écran de verrouillage qui s'éteint, l'heure de l'alarme pour aller au lycée demain matin se lit nettement.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
-        "text": "*Une bulle grise indique : « Ce message a été supprimé. »*"
+        "text": "*J'ouvre la conversation. Seule une mention grise reste là, isolée : « Ce message a été supprimé. »*"
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*L'indicateur de saisie apparaît puis disparaît. Aucun nouveau message.*"
+        "text": "*L'indicateur de saisie clignote quelques fois, comme si l'autre écrivait quelque chose, puis disparaît sans bruit.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
-        "text": "*J'ouvre et ferme le champ de réponse ; l'écran finit par s'éteindre.*"
+        "text": "*Moi non plus, je ne sais pas quoi dire en premier. Le temps d'ouvrir puis de refermer la zone de réponse, la lumière de l'écran s'éteint doucement.*"
     },
     "night_yuna_late_4": {
         "name": "{name}",
-        "text": "*Seule l'empreinte de mon pouce reste sur l'écran noir.*"
+        "text": "*Sur l'écran de verre, noir et verrouillé, il ne reste que la trace floue de mon pouce hésitant.*"
     },
     "night_dain_late_1": {
         "name": "Dain",
-        "text": "Hé, tu dors pas encore, hein ?"
+        "text": "Hé, me dis pas que tu dors déjà."
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "Cherche partenaire pour le sport demain matin"
+        "text": "Je cherche une personne, premier arrivé premier servi, pour sortir sur le terrain tôt demain matin et s'échauffer."
     },
     "night_dain_late_3": {
         "name": "Dain",
-        "text": "Refus interdit mdr"
+        "text": "Pour info, je n'accepte aucun refus haha"
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*J'ai déjà tapé « Partant » dans la zone de réponse.*"
+        "text": "*C'est tellement absurde qu'un rire m'échappe, mais mon doigt avait déjà tapé « Partant » dans la zone de réponse.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",
-        "text": "*Des émojis différents suivent le message de Dain.*"
+        "text": "*Sous le message de Dain, des émoticônes de chiot tout excité s'enchaînent.*"
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Je pose le téléphone et regarde le plafond. Mon uniforme sent encore les fleurs de cerisier.*"
+        "text": "*Je pose le téléphone et je lève les yeux vers le plafond sombre. Du nouvel uniforme sur le cintre, la brise de printemps et le parfum de cerisier qui ont traversé la journée se répandent, légers.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Je regarde les noms enregistrés et éteins l'écran.*"
+        "text": "*Je regarde encore une fois les nouveaux noms enregistrés côte à côte dans mes contacts, puis j'éteins l'écran en silence.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Après un silence, Seoyeon parle froidement.* Ne crois pas pouvoir faire comme si ce que tu viens de faire n'avait jamais eu lieu. Pendant quelque temps, ne m'approche plus et ne me contacte pas.",
+        "text": "*Après un long silence, Seoyeon parle d'une voix dure comme la glace.* Ne crois pas pouvoir laisser passer ce que tu viens de faire comme si rien ne s'était passé. Pendant quelque temps, ne te montre pas devant moi, et ne me contacte pas.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -149,15 +149,15 @@
     },
     "forced_violation_day1_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Seoyeon garde le visage fermé.* J'ai entendu. Ça n'efface pas ce qui s'est passé. Comme je l'ai dit, ne me contacte pas pendant quelque temps."
+        "text": "*L'expression froide de Seoyeon ne se détend pas le moins du monde.* J'ai entendu tes excuses. Mais s'excuser n'efface pas ce qui vient de se passer. Comme je l'ai dit, ne me contacte pas pendant quelque temps."
     },
     "forced_violation_day1_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon coupe court à l'explication.* Un malentendu ? À partir du moment où j'ai dit non, ça n'en était plus un. Ne dis rien de plus."
+        "text": "*Seoyeon me coupe net.* Un malentendu ? À partir du moment où j'ai clairement dit non et posé une limite, ça ne peut plus en être un. Plus d'excuses."
     },
     "forced_violation_day1_after_yuna": {
         "name": "Yuna",
-        "text": "*Yuna reprend son souffle, méfiante.* Tu savais que je ne voulais pas et tu n'en as pas tenu compte. Là, je ne veux même pas voir ton visage. Ne me contacte plus.",
+        "text": "*Yuna recule d'un pas, le regard froid et luisant.* J'ai bien montré que je ne voulais pas, et tu m'as ignorée jusqu'au bout. Là, je ne veux même pas voir ton visage. Ne me contacte plus.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -165,15 +165,15 @@
     },
     "forced_violation_day1_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Yuna répond après un long silence.* Des excuses ne feront pas disparaître ce qui s'est passé. Arrête."
+        "text": "*Après un long silence, Yuna répond à voix basse.* Un mot d'excuse ne fera pas comme si rien ne s'était passé. Maintenant, va-t'en."
     },
     "forced_violation_day1_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna refuse d'écouter l'explication jusqu'au bout.* J'ai dit non. Il n'y a rien à expliquer."
+        "text": "*Yuna tourne la tête sans même écouter mon explication jusqu'au bout.* J'ai clairement dit non. Des excuses, je n'ai pas à les entendre."
     },
     "forced_violation_day1_after_dain": {
         "name": "Dain",
-        "text": "*Dain ne sourit pas. Après un long silence, elle répond brièvement d'une voix tendue.* Ce n'est pas une blague. Je t'ai dit non et tu m'as forcée quand même. Je ne laisserai pas passer ça.",
+        "text": "*Le sourire habituel disparaît complètement du visage de Dain. Au bout d'un long moment, une voix nouée s'en échappe.* Là, ce n'est pas une blague. M'avoir forcée alors que je disais non, je ne laisserai pas passer ça.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -181,15 +181,15 @@
     },
     "forced_violation_day1_dain_apologize": {
         "name": "Dain",
-        "text": "*Dain finit par répondre brièvement après un long moment.* D'accord. Alors on s'arrête là pour aujourd'hui. C'est moi qui déciderai si on reparle, et quand."
+        "text": "*Dain se mord la lèvre. Longtemps après, elle lâche seulement quelques mots.* D'accord. Aujourd'hui, on s'arrête là. Si on se reparle ou non, c'est moi qui déciderai."
     },
     "forced_violation_day1_dain_excuse": {
         "name": "Dain",
-        "text": "*La voix de Dain devient plus dure.* Non. Ne cherche pas d'excuse. J'ai dit non, et tu l'as fait quand même."
+        "text": "*La voix de Dain devient rauque et coupante.* Non. Ne me sors pas une excuse absurde. C'est toi qui n'as pas arrêté, alors que j'avais dit non."
     },
     "forced_violation_day1_after_teacher": {
         "name": "Professeure principale",
-        "text": "*La professeure parle fermement.* Ce que tu viens de faire a clairement dépassé les bornes. Ne t'approche plus. Cette affaire sera traitée selon les procédures prévues.",
+        "text": "*La professeure principale range son sourire et pose une limite, nette.* Ce que tu viens de faire a clairement dépassé la limite, en tant qu'élève. Ne t'approche plus. Je réglerai cette affaire selon le règlement et les procédures de l'école.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -197,15 +197,15 @@
     },
     "forced_violation_day1_teacher_apologize": {
         "name": "Professeure principale",
-        "text": "*La professeure respire et parle.* J'ai entendu tes excuses. La procédure suivra quand même son cours. Ne dis rien de plus."
+        "text": "*La professeure principale reprend brièvement son souffle et parle calmement.* J'ai reçu tes excuses. Même ainsi, les procédures nécessaires suivront les règles. Pour aujourd'hui, rentre."
     },
     "forced_violation_day1_teacher_excuse": {
         "name": "Professeure principale",
-        "text": "*La professeure interrompt l'explication.* Ce n'est pas le moment de commencer à te justifier. Arrête de parler et garde tes distances."
+        "text": "*La professeure principale lève la main et coupe l'explication.* Ce n'est pas le moment de commencer par des excuses. Ne dis plus rien, et prends tes distances tout de suite."
     },
     "forced_violation_day1_after_nurse": {
         "name": "Infirmière",
-        "text": "*L'infirmière perd son ton joueur.* À partir de maintenant, garde tes distances. Je vais consigner ce qui s'est passé et prévenir les personnes concernées.",
+        "text": "*Le sourire détendu de l'infirmière s'efface en un instant.* À partir de maintenant, ne t'approche pas d'un seul pas. Je noterai tel quel dans le dossier ce que tu viens de faire, et j'en informerai aussi la professeure principale.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -213,10 +213,10 @@
     },
     "forced_violation_day1_nurse_apologize": {
         "name": "Infirmière",
-        "text": "*Après un silence, l'infirmière répond fermement.* J'entends tes excuses. Mais je vais quand même consigner les faits et prévenir qui de droit. Cette conversation est terminée."
+        "text": "*L'infirmière referme le dossier et répond fermement.* Tes excuses, je les entends. Mais l'enregistrement officiel et le rapport suivront la procédure. On termine cette conversation ici."
     },
     "forced_violation_day1_nurse_excuse": {
         "name": "Infirmière",
-        "text": "*La voix de l'infirmière baisse encore.* Tu crois que parler de malentendu change quelque chose ? Tu n'as pas respecté mon refus. C'est un fait."
+        "text": "*La voix de l'infirmière tombe, froide.* Tu crois qu'en appelant ça un malentendu, ce qui vient de se passer va changer ? Tu m'as ignorée alors que j'avais clairement refusé."
     }
 }

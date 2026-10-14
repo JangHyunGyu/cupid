@@ -1,15 +1,15 @@
 {
     "after5_farewell_seo_low": {
         "name": "Seoyeon",
-        "text": "*Auf dem Flur begegnest du Seoyeon. Sie hält kurz inne und nickt dir einmal zu.* Ich weiß, wie du dich entschieden hast. Mehr habe ich nicht zu sagen."
+        "text": "*Im Flur, wo die Nachmittagsschatten länger geworden sind, treffe ich Seoyeon. Sie hält kurz inne und senkt, ohne mir in die Augen zu sehen, nur einmal knapp den Kopf.* Ich weiß, wohin dein Herz gegangen ist. ...Mehr habe ich nicht zu sagen, um dich festzuhalten."
     },
     "after5_farewell_yuna_low": {
         "name": "Yuna",
-        "text": "*Vor der Bibliothek treffen sich eure Blicke. Yuna drückt ihr Buch an sich und nickt dir knapp zu.* Tschüss."
+        "text": "*Im Flur vor der Bibliothek treffen sich unsere Blicke. Yuna drückt das Buch, in dem sie gerade gelesen hat, fest an die Brust und nickt leise.* ...Mach's gut."
     },
     "after5_farewell_dain_low": {
         "name": "Dain",
-        "text": "*Dain kommt vor der Sporthalle auf dich zu und bleibt zwei Schritte entfernt stehen.* Ich weiß, wie du dich entschieden hast. Ich gehe rein."
+        "text": "*Auf dem Weg vor der Turnhalle bleibt Dain, die auf mich zukommt, zwei Schritte entfernt abrupt stehen.* Ich weiß, wen du gewählt hast. Ich gehe zuerst hinein und mache das Training fertig."
     },
     "after5_start": {},
     "after5_waited_start_branch": {
@@ -18,15 +18,15 @@
     },
     "after5_farewell_seo_1": {
         "name": "{name}",
-        "text": "*Ich treffe Seoyeon im Flur.*"
+        "text": "*Am Fenster im Flur, während der letzte Programmpunkt des Festes ausklingt, treffe ich Seoyeon, die allein ihre Unterlagen sortiert und herauskommt.*"
     },
     "after5_farewell_seo_2": {
         "name": "Seoyeon",
-        "text": "Was soll ich deiner Meinung nach sagen? ...Vergiss es. Das musst du nicht beantworten. *Sie atmet lange aus.*"
+        "text": "In so einem Moment, welches Gesicht soll ich machen und was soll ich sagen? ...Nein, schon gut. Das ist nicht deine Sache zu beantworten. *Seoyeon wirft den Blick aus dem Fenster und atmet lang aus.*"
     },
     "after5_farewell_seo_3": {
         "name": "Seoyeon",
-        "text": "Ich habe überlegt, wortlos vorbeizugehen, aber das wäre mir noch unangenehmer. Deine Entscheidung habe ich gehört. *Sie streicht das Haar hinter ihr Ohr und fasst den Taschenriemen neu.*"
+        "text": "Ich habe auch überlegt, so zu tun, als sähe ich dich nicht, und einfach vorbeizugehen. So wegzulaufen passt noch schlechter zu mir. Deine Entscheidung kenne ich schon. *Sie streicht das herabgefallene Seitenhaar ordentlich hinters Ohr und fasst den Taschenriemen neu.*"
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
@@ -34,7 +34,7 @@
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
-        "text": "Seoyeon—"
+        "text": "Seoyeon..."
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
@@ -42,20 +42,20 @@
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon winkt, ohne zurückzusehen. Ihr Handgelenkband entfernt sich.*"
+        "text": "*Seoyeon sieht sich am Ende nicht um und hebt nur einmal die Hand auf Schulterhöhe. Die Schleife am Handgelenk, die im Abendlicht glänzte, entfernt sich langsam den Flur hinunter.*"
     },
     "after5_farewell_seo_7": {
         "name": "{name}",
-        "text": "*Allein im Flur höre ich oben die Dachtür verriegeln.*"
+        "text": "*Allein im leeren Flur zurückgelassen, bringe ich keinen Schritt zustande. Vom oberen Ende der Treppe über mir dringt fern das Klacken herab, mit dem die eiserne Tür zum Dach ins Schloss fällt.*"
     },
     "after5_farewell_yuna_check": {},
     "after5_farewell_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna kommt vor der Bibliothek auf mich zu. Wortlos reicht sie mir ein Buch.*"
+        "text": "*Als ich an der Bibliothek vorbeikomme, kommt Yuna, die an der Tür gewartet hat, lautlos heran und legt mir ein dünnes Buch in die Hand.*"
     },
     "after5_farewell_yuna_2": {
         "name": "{name}",
-        "text": "*Ein Lesezeichen steckt darin. Eine einzige Zeile auf dem Lesezeichen.*"
+        "text": "*Als ich den Deckel aufschlage, steckt ein vertrautes hellviolettes Lesezeichen ordentlich darin. Auf dem Lesezeichen fällt eine kurze Zeile ins Auge, mit dem Füller fest niedergeschrieben.*"
     },
     "after5_farewell_yuna_3": {
         "name": "Yuna",
@@ -63,20 +63,20 @@
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
-        "text": "*Sie biegt in den Flur zur Bibliothek ab. Das Klacken ihrer Schuhe verschwindet hinter der Ecke.*"
+        "text": "*Yuna wartet meine Antwort nicht ab und wendet sich leise dem Flur im Inneren der Bibliothek zu. Das gleichmäßige Klacken der Schuhe verschwindet fern hinter der Ecke.*"
     },
     "after5_farewell_yuna_5": {
         "name": "Yuna",
-        "text": "*Ich lese den Satz auf dem Lesezeichen erneut. Unter dem letzten Zeichen ist Tinte verwischt.* Es hat Spaß gemacht."
+        "text": "*Wo Yunas Gegenwart verschwunden ist, sehe ich die Zeile auf dem Lesezeichen in meiner Hand noch einmal an. Unter dem letzten Buchstaben ist die hellviolette Tinte rund verlaufen, als hätte sie Feuchtigkeit aufgenommen.* ...Es hat wirklich Spaß gemacht, dass du meine Geschichte gelesen hast."
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
-        "text": "*Ich gehe zurück auf den Flur.*"
+        "text": "*Ich trat leise auf den Flur hinaus, das Buch an die Brust gedrückt.*"
     },
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*Dain kommt vor der Turnhalle auf mich zu. Ihre Schritte sind kleiner als sonst.*"
+        "text": "*Vom Eingang der Turnhalle kommt Dain heraus. Ihre Schritte sind auffällig kurz und langsam, ganz anders als sonst, wo sie immer mit großen Schritten vorausging.*"
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
@@ -84,7 +84,7 @@
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
-        "text": "Dain—"
+        "text": "Dain..."
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
@@ -92,7 +92,7 @@
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
-        "text": "*Dain boxt mir leicht gegen die Schulter.*"
+        "text": "*Dain tippt mir mit locker geballter Faust gegen die Schulter. Weniger Kraft als sonst.*"
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
@@ -100,40 +100,40 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "Geh jetzt. Dich lächelnd zu verabschieden, reicht mir bis hierhin. ...Vor dir muss ich mich nicht auch noch zusammenreißen. *Sie schiebt den Ball in den Schrank und richtet den Riemen ihrer Kniebandage.*"
+        "text": "...Na gut, jetzt geh. Mit einem Lächeln verabschieden mache ich nur bis hierhin. Vor dir muss ich nicht auch noch stark tun und die Tränen zurückhalten. *Dain dreht sich um, schiebt den Volleyball mit einem dumpfen Stoß in den Kasten und zieht den Riemen der Kniebandage fest nach.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Dain zieht den Riemen ihrer Kniebandage noch einmal fest und geht in die Turnhalle.*"
+        "text": "*Dain drückt mit zitternden Fingerspitzen den Klettverschluss der Kniebandage noch einmal fest und geht, ohne sich umzusehen, in die Turnhalle.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
-        "text": "*Ich verlasse die Turnhalle und gehe zur Rückseite der Schule.*"
+        "text": "*Ich strich über die Schwere in der Brust, verließ den Platz vor der Turnhalle und ging zur Rückseite der Schule.*"
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*Vor dem Schultor prüft Seoyeon mit Haeun die Veranstaltungsliste, Dain verkürzt ihre Schritte mit einem Volleyball unter dem Arm, und Yuna senkt den Blick auf ihr offenes Buch. Jede geht zu einem anderen Ausgang.*"
+        "text": "*Vor dem Schultor senkt sich das Nachmittagslicht. Seoyeon gleicht mit Haeun die Liste der letzten Veranstaltung ab, Dain verlangsamt ihre Schritte mit dem Volleyball unter dem Arm, und Yuna bleibt stehen und senkt den Blick auf die aufgeschlagene Seite. Gleich darauf gehen die drei still auseinander, jede auf einen anderen Weg.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
-        "text": "*Vor dem Schultor hebe ich nur einmal die Hand.*"
+        "text": "*Vor dem Schultor hob ich nur einmal lautlos die Hand in Richtung der drei, die sich entfernten.*"
     },
     "after5_hidden_farewell_3b": {
         "name": "{name}",
-        "text": "*Ich gehe zur Rückseite der Schule.*"
+        "text": "*Ich kehrte um und ging zur Rückseite der Schule, wo die Verabredung wartete.*"
     },
     "after5_sunset_1": {
         "name": "{name}",
-        "text": "*Die Schlussdurchsage klingt über den Hof im Abendlicht.*"
+        "text": "*Über dem Schulgelände, wo das rote Abendlicht lang liegt, klingt fern die letzte Durchsage, die das Ende des Festes ankündigt.*"
     },
     "after5_ending_check": {},
     "after5_hidden_route_choice_check": {
         "name": "{name}",
-        "text": "*Hier trennen sich der Weg zu meiner Verabredung mit den Freunden und der Weg zurück, um noch beim Aufräumen zu helfen.*"
+        "text": "*Vor dem Schultor im Abendrot teilen sich vor meinen Augen zwei Wege: der zum Park, wo ich mit den Freunden verabredet bin, und der, in der Schule zu bleiben und beim Aufräumen weiterzuhelfen.*"
     },
     "after5_hidden_route_choice": {
         "name": "{name}",
-        "text": "*Hier trennen sich der Weg zum Park und der Rückweg zu den letzten Aufräumarbeiten. Heute muss ich entscheiden, wem ich antworte.*",
+        "text": "*Die Allee zum Park und der Flur zurück zum Klassentrakt trennen sich. Bevor die Sonne ganz untergeht, muss ich entscheiden, wem mein Herz heute antwortet.*",
         "choices": [
             "Zum Park gehen und zu Ende bringen, was schon angefangen war",
             "Zur Klassenlehrerin zurückkehren und das Manuskript des Literaturklubs ordnen",
@@ -142,49 +142,49 @@
     },
     "after5_last_chance_1": {
         "name": "{name}",
-        "text": "*Die Lautsprecher gehen aus. Ich bleibe an der Weggabelung stehen.*"
+        "text": "*Mit einem knisternden Endton verstummen die Lautsprecher auf dem Schulgelände ganz. Mitten an der Weggabelung, wo das Abendrot dicht liegt, bleibe ich stehen.*"
     },
     "after5_last_chance_2": {
         "name": "{name}",
-        "text": "*Ich hole das Handy aus der Tasche. Im schwarzen Display spiegelt sich nur das Veranstaltungsbanner.*"
+        "text": "*Ich nestle am Handy in der Tasche und hole es heraus. Auf dem schwarzen, ausgeschalteten Display flimmert nur das Festbanner, das im Abendwind schwankt.*"
     },
     "after5_last_chance_route_check": {},
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Ohne das Handy einzuschalten, stecke ich es wieder ein. Ich gehe zwei Schritte zur anderen Seite der Gabelung und rufe ihren Namen.*"
+        "text": "*Am Ende stecke ich das Handy, ohne den Bildschirm einzuschalten, wieder tief in die Tasche. Damit ich den Rücken nicht verliere, der gerade weggehen will, mache ich zwei große Schritte auf die andere Seite der Gabelung und rufe den Namen aus voller Kehle.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
-        "text": "Seoyeon."
+        "text": "Seoyeon!"
     },
     "after5_last_chance_2_d": {
         "name": "Seoyeon",
-        "text": "*Seoyeon dreht sich um. Hinter ihr faltet sich das Veranstaltungsbanner einmal im Wind.*"
+        "text": "*Seoyeon bleibt stehen und dreht sich ganz zu mir um. Hinter ihrem Rücken schlägt das rot gefärbte Festbanner einmal groß im Abendwind.*"
     },
     "after5_last_chance_2_e": {
         "name": "Seoyeon",
-        "text": "Du bist zu spät."
+        "text": "...Du rufst aber spät."
     },
     "after5_last_chance_2_f": {
         "name": "{name}",
-        "text": "*Seoyeon wickelt das Ende ihres Schülerratsbands einmal um den Finger und lässt es wieder los.*"
+        "text": "*Seoyeon wickelt das Ende der Schülerratsschleife an der Brust einmal fest um den schmalen Finger und lässt es langsam wieder los.*"
     },
     "after5_last_chance_2_g": {
         "name": "Seoyeon",
-        "text": "Ich rede. Bleib bitte kurz da."
+        "text": "Bleib still. Diesmal rede ich zuerst, also bleib einen Moment genau so."
     },
     "after5_last_chance_2_h": {
         "name": "{name}",
-        "text": "*Seoyeon streckt ihre Hand aus.*"
+        "text": "*Seoyeon kommt einen Schritt näher und streckt mir im Abendrot leise die rechte Hand entgegen.*"
     },
     "after5_last_chance_2_i": {
         "name": "Seoyeon",
-        "text": "Nimm sie."
+        "text": "...Nimm sie."
     },
     "after5_last_chance_2_j": {
         "name": "Seoyeon",
-        "text": "Wenn du sie nicht nehmen willst, sag es. Lass mich nicht wieder allein warten und hoffen. *Sie wartet mit weiterhin offener Handfläche.*"
+        "text": "Wenn du sie auch jetzt nicht nehmen willst, sag es hier geradeheraus. Mach nicht, dass ich wieder allein dastehe und wie eine Dumme hoffe. *Seoyeon zieht die leicht zitternde Handfläche nicht zurück und sieht mir von unten gerade in die Augen.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -192,44 +192,44 @@
     },
     "after5_last_chance_seo_low_2": {
         "name": "Seoyeon",
-        "text": "*Sie blickt zurück, einen Fuß noch halb zum Ausgang gerichtet.* Warum?"
+        "text": "*Seoyeon dreht nur halb den Kopf zu mir. Die Schuhspitze zeigt immer noch zum Ausgang am Schultor.* ...Warum rufst du."
     },
     "after5_last_chance_dain_aff_check": {},
     "after5_last_chance_2_k": {
         "name": "{name}",
-        "text": "Dain."
+        "text": "Dain!"
     },
     "after5_last_chance_2_l": {
         "name": "Dain",
-        "text": "*Sie geht einen Schritt an mir vorbei, drückt dann den Volleyball auf den Boden und bleibt stehen.*"
+        "text": "*Dain geht aus Schwung noch einen Schritt weiter, hält dann den rollenden Volleyball mit der Sohle ihres Turnschuhs fest und bleibt stehen.*"
     },
     "after5_last_chance_2_m": {
         "name": "Dain",
-        "text": "Hey, du—"
+        "text": "...Hey. Du, echt jetzt."
     },
     "after5_last_chance_2_n": {
         "name": "Dain",
-        "text": "{name}, warte. *Sie senkt den Arm mit dem Ball und dreht sich wieder zu mir.*"
+        "text": "{name}, bleib kurz da stehen. *Dain lässt den Arm mit dem Ball kraftlos sinken und dreht sich langsam zu mir.*"
     },
     "after5_last_chance_2_o": {
         "name": "Dain",
-        "text": "Du bist zurückgekommen?"
+        "text": "...Bist du zu mir zurückgekommen?"
     },
     "after5_last_chance_2_p": {
         "name": "{name}",
-        "text": "Ja. Ich konnte nicht einfach gehen. Ich konnte nicht weiter allein darüber nachdenken, was ich dir sagen muss. *Dain beißt einmal auf die Lippe und atmet kurz ein.*"
+        "text": "Ja. Wenn ich dich so gehen lasse, bereue ich das wohl mein Leben lang. Was ich vor dir sagen muss, durfte ich nicht nur in meinem Kopf einsperren. *Dain beißt fest auf die Unterlippe und zieht zitternd kurz die Luft ein.*"
     },
     "after5_last_chance_2_q": {
         "name": "Dain",
-        "text": "Ich kann nicht sofort lächeln. Aber ich höre mir an, was du bis hierher gebracht hast."
+        "text": "Ich sage es vorher: Ich kann dir jetzt nicht sofort so breit zulächeln wie sonst. ...Aber was du sagst, nachdem du bis hierher gerannt bist, höre ich bis zum Ende."
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
-        "text": "Ich habe es mir vorher überlegt, aber vor dir bekomme ich die Worte nicht heraus. ...Warte kurz. *Dain reibt sich die Augen, Feuchtigkeit bleibt auf ihrem Handrücken.*"
+        "text": "Auf dem Weg habe ich es Dutzende Male geübt, aber sobald ich dir in die Augen sehe, geht mir die Luft aus und die Worte kommen nicht. ...Warte einen Moment. *Als Dain sich mit dem Handrücken über die geröteten Augen wischt, zieht sich klare Nässe über die helle Haut.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
-        "text": "Sag es. Ich höre bis zum Ende zu."
+        "text": "Sag schon. Ich gehe nirgendwohin. Ich höre hier alles."
     },
     "after5_last_chance_dain_low_1": {
         "name": "{name}",
@@ -237,32 +237,32 @@
     },
     "after5_last_chance_dain_low_2": {
         "name": "Dain",
-        "text": "*Nach einem Schritt hält sie inne und kommt zurück. Den Volleyball vor die Brust gedrückt, hält sie Abstand.* Warum?"
+        "text": "*Dain, die einen Schritt an mir vorbei war, dreht sich langsam um. Den Volleyball wie einen Schild vor die Brust gedrückt, verringert sie den Abstand nicht.* ...Warum."
     },
     "after5_last_chance_yuna_aff_check": {},
     "after5_last_chance_yuna_1": {
         "name": "{name}",
-        "text": "Yuna."
+        "text": "Yuna!"
     },
     "after5_last_chance_yuna_2": {
         "name": "Yuna",
-        "text": "*Sie bleibt stehen. Sie drückt das Buch an ihre Brust. Es dauert etwa zwei Sekunden, bis sie sich umdreht.*"
+        "text": "*Das gleichmäßige Schuhklacken, das sich entfernte, bricht nach zwei weiteren Schritten abrupt ab. Yuna zieht das Buch noch enger an sich und dreht nach zwei langen Atemzügen langsam den Kopf.*"
     },
     "after5_last_chance_yuna_3": {
         "name": "Yuna",
-        "text": "Du bist zurückgekommen."
+        "text": "...Du bist also doch zurückgekommen."
     },
     "after5_last_chance_yuna_4": {
         "name": "{name}",
-        "text": "Ich sage es hier. ...Hör mir kurz zu. *Yuna wartet zwei Schritte entfernt.*"
+        "text": "Ich schiebe es nicht länger auf. Ich sage es jetzt hier. ...Hör mir kurz zu. *Zwei Schritte entfernt, wo das Abendrot liegt, wartet Yuna und sieht mich wortlos an.*"
     },
     "after5_last_chance_yuna_5": {
         "name": "Yuna",
-        "text": "Ich höre dir zu, bevor ich gehe. Auch wenn ich nicht sagen kann, dass es in Ordnung ist."
+        "text": "Was du sagen willst, höre ich mir an, bevor ich gehe. ...Auch wenn ich jetzt nicht sagen kann, dass alles in Ordnung ist."
     },
     "after5_last_chance_yuna_6": {
         "name": "{name}",
-        "text": "*Yuna hält meinen Blick. Zwischen uns fehlt nur noch ein Schritt.*"
+        "text": "*Yuna sieht mir ohne zu schwanken in die Augen. Unbemerkt ist der Abstand zwischen uns auf wenig mehr als einen halben Schritt geschrumpft.*"
     },
     "after5_last_chance_yuna_7": {},
     "after5_last_chance_yuna_low_1": {
@@ -271,11 +271,11 @@
     },
     "after5_last_chance_yuna_low_2": {
         "name": "Yuna",
-        "text": "*Yuna dreht sich um und drückt ihr Buch fester an sich.* Was ist?"
+        "text": "*Yuna bleibt stehen und sieht sich um. In den schmalen Armen um das Buch spannt sich die Kraft, als wäre sie auf der Hut.* ...Warum."
     },
     "after5_last_chance_choice": {
         "name": "{name}",
-        "text": "*Ich sehe sie an und suche nach Worten.*",
+        "text": "*Ich sehe gerade in die Augen, tief im Abendlicht, und wähle die letzten Worte, die mir bis in den Hals gestiegen sind.*",
         "choices": [
             "Ihr sagen, dass ich sie mag",
             "Noch nichts sagen",
@@ -284,34 +284,34 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Ich hole Luft und sage ihren Namen.*"
+        "text": "*Ich atme den keuchenden Atem tief ein und rufe den Namen mit der klarsten Stimme der Welt.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
-        "text": "Ich mag dich. Mehr als nur freundschaftlich. Ich bin spät dran, aber ich wollte es dir selbst sagen."
+        "text": "Ich mag dich. So sehr, dass ich nicht nur ein enger Freund bleiben will. Es ist viel zu spät, aber genau das wollte ich dir unbedingt selbst sagen."
     },
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Wir gehen nebeneinander zum Park.* Du hast dir Zeit gelassen. Aber… jetzt weiß ich, was du fühlst."
+        "text": "*Seoyeons lange Wimpern zittern kurz. Dann tritt sie mit geröteten Wangen neben mich und geht zum Park los.* ...Echt gemein, es so spät zu sagen. Aber... jetzt weiß ich endlich, wie du wirklich fühlst."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
-        "text": "*Sie sagt nichts, bis die Fußgängerampel einmal umspringt.* Ich habe dich gehört. Für den Moment reicht das."
+        "text": "*Bis die Fußgängerampel vor der Schule von Grün auf Rot springt, sagt Seoyeon nichts.* ...Ich habe gehört, was du gerade gesagt hast. Aber für heute lass es bitte dabei."
     },
     "after5_confess_aff_dain": {},
     "after5_confess_react_dain": {
         "name": "Dain",
-        "text": "*Beim Hinausgehen sieht sie auf ihre Schnürsenkel.* Hey. Darauf habe ich gewartet. Tu jetzt bloß nicht wieder so, als hättest du nichts gesagt."
+        "text": "*Auf dem Weg aus dem Schultor sieht Dain nur auf die Schnürsenkel hinab, die nichts dafür können, als wollte sie ihr erhitztes Gesicht verbergen.* ...Hey, du Idiot. Die ganzen letzten vier Tage habe ich nur darauf gewartet, dass der Satz aus deinem Mund kommt. Zurücknehmen gibt es jetzt nicht!"
     },
     "after5_confess_react_dain_low": {
         "name": "Dain",
-        "text": "*Ihr Daumen fährt eine Rille im Volleyball entlang.* Ich habe dich gehört. Aber ich kann noch nicht sofort wieder lächeln."
+        "text": "*Dain fährt mit dem Daumen langsam die schwarze Rille im Leder des Volleyballs nach.* ...Das Geständnis habe ich gehört. Sorry, aber jetzt sofort lächelnd zu antworten, wird wohl schwer."
     },
     "after5_confess_aff_yuna": {},
     "after5_confess_react_yuna": {
         "name": "Yuna",
-        "text": "*Wir gehen nebeneinander.* Ja. Ich habe dich gehört."
+        "text": "*Yuna setzt leise die Füße neben meinen Schatten und geht mit.* ...Ja. Was du gerade gesagt hast, habe ich richtig gehört. Kein Zeichen habe ich ausgelassen."
     },
     "after5_confess_react_yuna_call": {
         "name": "{name}",
@@ -319,75 +319,75 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "Yuna",
-        "text": "Wenn du es sagst... muss ich nicht mehr überlegen, ob ich dich falsch verstanden habe. *Sie will das Buch ablegen, greift aber wieder nach der Ecke.*"
+        "text": "Weil du es mir so mit der Stimme sagst... muss ich nicht mehr fürchten, dass ich dein Herz die ganze Zeit allein falsch gelesen habe. *Yuna will das Buch lockerer halten, fasst dann aber die Ecke wieder behutsam.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
-        "text": "Trotzdem wollte ich es direkt von dir hören."
+        "text": "Nicht als Buchstaben auf Papier. Ich wollte es direkt in deiner Stimme hören."
     },
     "after5_confess_react_yuna_d": {
         "name": "Yuna",
-        "text": "*Sie reicht mir einen gefalteten Zettel. Aufgeklappt steht darauf eine einzige Zeile.*"
+        "text": "*Yuna holt tief aus der Uniformtasche einen klein gefalteten Zettel und legt ihn mir auf die Handfläche. Als ich ihn vorsichtig aufschlage, erscheint eine Zeile in hellvioletter Füllertinte.*"
     },
     "after5_confess_react_yuna_e": {
         "name": "Yuna",
-        "text": "Ich habe lange gewartet."
+        "text": "...Ich habe lange gewartet."
     },
     "after5_confess_react_yuna_f": {
         "name": "{name}",
-        "text": "*Eine Stelle der Schrift ist tief eingedrückt. Das Papier wurde mehrmals auf- und wieder zugefaltet.*"
+        "text": "*Als wäre die Füllerspitze lange dort geblieben, ist eine Stelle am letzten Buchstaben tief eingedrückt. Auf dem rechteckigen Papier liegen die weichen Falten vom unzähligen Auf- und Zufalten in der Tasche.*"
     },
     "after5_confess_react_yuna_g": {
         "name": "Yuna",
-        "text": "Wenn du es gelesen hast, reicht das."
+        "text": "*Sie verbirgt das gerötete Ohrläppchen hinter dem Haar und flüstert leise.* ...Wenn du bis zum Ende gelesen hast, reicht das."
     },
     "after5_confess_react_yuna_h": {
         "name": "{name}",
-        "text": "*Wir gingen nebeneinander. Schweigend.*"
+        "text": "*Wir gingen so nah nebeneinander, dass die Handrücken sich nur knapp streiften. Auch ohne ein Wort mehr wurde die Abendluft süß und warm.*"
     },
     "after5_confess_react_yuna_i": {
         "name": "{name}",
-        "text": "*Wir treten durch das Schultor.*"
+        "text": "*Wir traten nebeneinander aus dem Schultor und zogen lange Schatten hinter uns her.*"
     },
     "after5_confess_react_yuna_low": {
         "name": "Yuna",
-        "text": "*Yuna hält ihr Buch fest.* Ich habe dich gehört. Aber ich kann dir noch keine Antwort geben."
+        "text": "*Yuna hält das Buch an der Brust so fest, dass die Finger weiß werden.* ...Wie du fühlst, habe ich gehört. Aber jetzt kann ich dir meine Antwort nicht sofort geben."
     },
     "after5_confess_fail_walk_1": {
         "name": "{name}",
-        "text": "*Die Sonne sinkt weiter. Wir gehen einfach weiter in dieselbe Richtung.*"
+        "text": "*Die rote Sonne sinkt schwerer unter den Horizont. Mit einem unbehaglichen Abstand gehen wir nur weiter in dieselbe Richtung.*"
     },
     "after5_confess_fail_walk_2": {
         "name": "{name}",
-        "text": "*Ohne eine Antwort gehe ich weiter in Richtung Park.*"
+        "text": "*Ohne am Ende eine passende Antwort gefunden zu haben, ging ich zum Park in der Abenddämmerung.*"
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*Ich schalte das Handy aus und presse die Lippen zusammen.*"
+        "text": "*Ich bringe die Lippen nicht auseinander, schalte nur den Handybildschirm aus und halte den Mund schwer zu.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
-        "text": "*Der Abendwind rollt einen Veranstaltungsflyer bis vor meine Füße. Ich hebe ihn auf und klemme ihn unter das Schwarze Brett.*"
+        "text": "*Im kühleren Abendwind rollt ein zerknitterter Festzettel, den jemand hat fallen lassen, bis vor meine Füße. Ich bücke mich, hebe das Papier auf und schiebe es leise unter das leere Schwarze Brett.*"
     },
     "after5_confess_no_2b": {
         "name": "{name}",
-        "text": "*Schließlich drehe ich mich um und gehe nach Hause.*"
+        "text": "*Den Namen, den ich niemandem rufen konnte, begrub ich in der Brust, drehte mich am Ende allein um und ging nach Hause.*"
     },
     "after5_set_harem": {
         "name": "{name}",
-        "text": "*Ich sehe die drei Namen in meiner Chatliste an und schreibe jeder, ob wir uns kurz hinter der Schule treffen können.*"
+        "text": "*Ich sehe lange auf die drei Namen, oben im Messenger nebeneinander angepinnt. Nach dem Zögern schicke ich allen dreien, dass wir uns kurz hinter der Schule treffen sollen.*"
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "Ich konnte mich nicht für eine entscheiden. *Vor den drei stecke ich das Handy weg. Keine antwortet sofort.*"
+        "text": "Tut mir leid... Am Ende konnte ich nicht nur eine von euch wählen. *Vor den dreien, die nacheinander gekommen sind und stehen geblieben, stecke ich das Handy in die Tasche. In der Luft, die kalt geworden ist, macht niemand den Mund auf.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
-        "text": "*Wir gehen gemeinsam zum Park. Eine Weile sagt niemand etwas.*"
+        "text": "*Wir gehen von dort zusammen zum Park. Während die Laternen eine nach der anderen angehen, bricht niemand zuerst das Schweigen.*"
     },
     "after5_harem_walk_2": {
         "name": "{name}",
-        "text": "*Die unbeantworteten Nachrichten bleiben auf dem Sperrbildschirm. Meine Schritte führen zum Park.*"
+        "text": "*Die alten Nachrichten, auf die ich nicht rechtzeitig geantwortet habe, stehen eingefroren auf dem Sperrbildschirm. Meine schweren Schritte führten zum Eingang des Parks am Abend.*"
     },
     "after5_defer_route_check": {},
     "after5_defer_seo": {
@@ -406,71 +406,71 @@
     "after5_co_tempter_branch": {},
     "after5_co_start": {
         "name": "{name}",
-        "text": "*Die Veranstaltung endet. Im Flur stehen dieselben Gesichter wie heute Morgen.*"
+        "text": "*Im Flur nach dem Unterricht, die Festmenge ist weg, stehen wieder die Leute, mit denen ich heute Morgen diese erstickende Begegnung hatte.*"
     },
     "after5_co_seo_1": {
         "name": "Seoyeon",
-        "text": "*Sie will ihre Brille zurechtrücken, senkt die Hand dann aber wieder.* Den Plan habe ich schon verteilt."
+        "text": "*Seoyeon will die Brille zurechtrücken und lässt die Hand dann leise sinken.* Die Abschlussliste des Schülerrats habe ich an die Mitglieder verteilt."
     },
     "after5_co_seo_2": {
         "name": "Seoyeon",
-        "text": "Ich habe dir heute nichts mehr zu sagen. Geh."
+        "text": "Heute habe ich dir nichts mehr zu sagen. Geh jetzt."
     },
     "after5_co_yuna_1": {
         "name": "Yuna",
-        "text": "*Sie steckt das Lesezeichen in die Tasche.* Das Brett habe ich leer gelassen."
+        "text": "*Yuna zieht das Lesezeichen aus dem Heft und steckt es tief in die Tasche.* Die Plätze am Brett des Literaturklubs habe ich alle freigelassen."
     },
     "after5_co_yuna_2": {
         "name": "Yuna",
-        "text": "Komm nicht hinterher. Heute nicht."
+        "text": "...Heute komm nicht hinter mir her."
     },
     "after5_co_dain_1": {
         "name": "Dain",
-        "text": "*Sie schiebt den Ball in die Kiste.* Ich habe deinen Namen von der Partnerliste gestrichen."
+        "text": "*Dain schiebt den Volleyball in die tiefste Ecke des Kastens.* Auf der Partnerliste für das Nachmittagsevent habe ich deinen Namen gestrichen."
     },
     "after5_co_dain_2": {
         "name": "Dain",
-        "text": "Tschüss. Mir ist gerade nicht nach Lächeln."
+        "text": "Mach's gut. Dir jetzt ins Gesicht zu lächeln, geht gerade nicht so recht."
     },
     "after5_co_teacher_1": {
         "name": "Klassenlehrerin",
-        "text": "*Sie klappt das Klassenbuch zu.* Die Veranstaltung übernimmt eine andere Lehrkraft."
+        "text": "*Die Klassenlehrerin klappt das Klassenbuch lautlos zu.* Den Abschluss der Nachmittagsveranstaltung habe ich einer Lehrkraft der anderen Klasse übergeben."
     },
     "after5_co_teacher_2": {
         "name": "Klassenlehrerin",
-        "text": "Für unser Gespräch machen wir einen neuen Termin aus. Heute muss ich erst noch nach dem Fest aufräumen."
+        "text": "Die persönliche Beratung setzen wir nächste Woche offiziell neu an. Heute mache ich zuerst die Nachbereitung der Klassenveranstaltung fertig."
     },
     "after5_co_nurse_1": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie legt die Kartei in die Schublade.* Die Beratung ist hier zu Ende."
+        "text": "*Die Schulkrankenschwester legt die Behandlungsakte in die Schublade und schließt sie.* Die Beratung heute beende ich hier."
     },
     "after5_co_nurse_2": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn es dir körperlich schlecht geht, komm ins Krankenzimmer. Dieses Gespräch setzen wir beim nächsten Termin fort."
+        "text": "Wenn es dir körperlich schlecht geht, komm jederzeit ins Krankenzimmer. Den Rest besprechen wir beim nächsten offiziellen Termin."
     },
     "after5_co_tempter_seo_1": {
         "name": "Seoyeon",
-        "text": "*Sie steckt den Schlüsselbund fürs Dach ein.* Gestern bin ich zuerst auf dich zugegangen."
+        "text": "*Seoyeon steckt den Dachschlüsselbund, an dem sie gespielt hat, in die Tasche.* Gestern Nacht war eindeutig ich diejenige, die dir zuerst die Hand hingestreckt hat."
     },
     "after5_co_tempter_seo_2": {
         "name": "Seoyeon",
-        "text": "Trotzdem halte ich dich heute nicht fest."
+        "text": "Trotzdem halte ich dich heute hier nicht als Erste fest."
     },
     "after5_co_tempter_yuna_1": {
         "name": "Yuna",
-        "text": "*Das Foto vom Anbau steht noch auf dem Sperrbildschirm.* Ich habe dich gerufen."
+        "text": "*Auf Yunas Sperrbildschirm steht noch das Foto vom Fenster des Anbaus, gestern Nacht.* Ich war es, die dich gestern in den Anbau gerufen hat."
     },
     "after5_co_tempter_yuna_2": {
         "name": "Yuna",
-        "text": "Lauf ihnen jetzt nicht hinterher. Mehr brauche ich nicht."
+        "text": "Zwing dich jetzt nicht, irgendwem hinterherzulaufen. Das reicht."
     },
     "after5_co_tempter_dain_1": {
         "name": "Dain",
-        "text": "*Sie drückt das Tape am Knie fest.* Ich habe gestern gesagt, du sollst bleiben."
+        "text": "*Dain drückt das locker gelöste Ende des Knietapes mit der Handfläche fest an.* Ich war es, die dich gestern Nacht festgehalten und gebeten hat, in der Turnhalle zu bleiben."
     },
     "after5_co_tempter_dain_2": {
         "name": "Dain",
-        "text": "Heute werde ich dich nicht als Erste zu mir rufen."
+        "text": "...Deshalb rufe ich heute nicht als Erste deinen Namen."
     },
     "after5_normal_start": {
         "name": "{name}",

@@ -1,44 +1,44 @@
 {
     "confess_seo_low": {
         "name": "Seoyeon",
-        "text": "*Seoyeon takes out the rooftop key, then puts it back in her pocket.* Let's stop here today. I don't think getting any closer is right for us now."
+        "text": "*Seoyeon takes the rooftop key out of her bag, then, as if changing her mind, puts it back in her pocket.* Sorry, but let's stop here today. The way things are now, I don't think we can get any closer."
     },
     "confess_yuna_low": {
         "name": "Yuna",
-        "text": "*Yuna looks toward the annex, then turns away.* This is it for today. I can't talk about us getting closer right now."
+        "text": "*Yuna looks for a moment toward the annex, where the dusk has settled, then quietly turns away.* Let's part here today. The way I feel now, it's hard to go any deeper with you."
     },
     "confess_dain_low": {
         "name": "Dain",
-        "text": "*Dain starts toward the gym, then stops to adjust the strap of her ball bag.* Let's call it here today. If we keep talking, we'll just make this harder for each other."
+        "text": "*Dain walks toward the dark gym, then stops short and adjusts the strap of her ball bag.* Let's just head in from here today. If we talk any more now, it'll only weigh on both of us."
     },
     "confess_seo_1": {
         "name": "{name}",
-        "text": "*After our date, we find ourselves back in front of the school.*"
+        "text": "*By the time the evening sunset casts long shadows, the date is over, and Seoyeon and I have walked back side by side to the school gate.*"
     },
     "confess_seo_2": {
         "name": "Seoyeon",
-        "text": "Let's go up for a minute."
+        "text": "I don't want to just say goodbye. Let's go up to the roof for a minute."
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*I follow Seoyeon onto the school roof. The field lights come on below.*"
+        "text": "*I follow Seoyeon up the quiet stairs to the school roof. Below the wire railing the red sunset fades, and the night lights along the edge of the field come on one by one.*"
     },
     "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon stands one step back from the railing and slips the key into her pocket.*"
+        "text": "*Seoyeon steps half a step back from the railing and stops right in front of me. When she slips the brass key that opened the door into her cardigan pocket, the evening wind brushes her long hair and a faint scent across my cheek.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
-        "text": "*My fingers catch on the folded note inside my pocket.*"
+        "text": "*The fingertips I slip into my pants pocket catch on the crumpled confession note I rewrote over and over last night.*"
     },
     "confess_seo_5": {
         "name": "{name}",
-        "text": "*I don't take the note out.*"
+        "text": "*I decide not to take out the paper I brought. I draw a deep breath and look straight into Seoyeon's eyes, where the sunset light flickers.*"
     },
     "confess_seo_choice": {
         "name": "{name}",
-        "text": "*Only the key ring gives a brief jingle in Seoyeon's hand.*",
+        "text": "*In a silence close enough that our breath meets, only the key ring in Seoyeon's palm gives a small jingle.*",
         "choices": [
             "Tell her I like her.",
             "Stay a little longer",
@@ -48,100 +48,100 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "...I heard you right, didn't I? Don't try to pass it off as a joke. *The key ring falls silent. She meets my eyes.*"
+        "text": "Wait. I heard what you just said right, didn't I? Don't even dream of brushing it off as a joke now. *The jingling key ring goes dead still. Seoyeon's unsteady eyes lock onto mine and won't let go.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
-        "text": "*My throat is dry. The note folds inside my pocket.*"
+        "text": "*I wet my burning lips once and, instead of the note in my pocket, step half a step closer to Seoyeon's fingertips.*"
     },
     "confess_seo_yes_3": {
         "name": "{name}",
-        "text": "I like you. I want to keep seeing you after today."
+        "text": "I'm not joking. I like you, Seoyeon. This isn't just for today. I want to keep meeting you, right beside you, from now on."
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "*Seoyeon doesn't answer right away. The key ring turns once in her hand.*"
+        "text": "*Seoyeon can't quite get the words out, and she bites her lower lip. A short breath rises and falls along the flushed line of her neck, and the key ring in her hand spins once without catching.*"
     },
     "confess_seo_yes_5": {
         "name": "{name}",
-        "text": "You don't have to answer right now."
+        "text": "It must have been sudden, so you don't have to answer right now."
     },
     "confess_seo_yes_6": {
         "name": "Seoyeon",
-        "text": "Saying that only makes me think about it more."
+        "text": "If you kindly leave me a way out like that, I can't think about anything else."
     },
     "confess_seo_yes_7": {
         "name": "Seoyeon",
-        "text": "...I want to stay here. Just a little longer. *She holds her key ring.*"
+        "text": "Let's not go down yet. Stay here with me a little longer, just like this. *Seoyeon gently tugs the end of my sleeve with the hand holding the key ring.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
-        "text": "I've been watching you too."
+        "text": "The truth is, I've been watching only you since the first day you transferred."
     },
     "confess_seo_yes_9": {
         "name": "Seoyeon",
-        "text": "Where you sit. When you get quiet."
+        "text": "Where you sit in class, who you're with when you laugh, even when you go quiet over what you're thinking. All of it."
     },
     "confess_seo_yes_10": {
         "name": "{name}",
-        "text": "I didn't know you were watching that closely. ...Maybe I was too busy hiding my feelings to notice yours. *Seoyeon puts the keys in her pocket.*"
+        "text": "I didn't know you were watching me that closely. I was so busy trying not to let my feelings show that I missed the look in your eyes. *When I reach out and cover the back of Seoyeon's cold hand, she drops the key into her pocket and lays her palm over mine.*"
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
-        "text": "I'll leave the rooftop open tomorrow at lunch."
+        "text": "Let's meet at lunch tomorrow, just the two of us. I'll leave the roof door open ahead of time so only you can come in."
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon walks toward the stairs.*"
+        "text": "*Leaving a warm trace where our fingertips were clasped, Seoyeon slowly starts toward the stairwell door.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "...Maybe I should have said it first. It feels so good to hear it. *Her footsteps stop two steps down. She doesn't turn around.*"
+        "text": "What you said earlier, I should have dropped my pride and said it first. Hearing it straight from you, I can barely breathe. *Two steps down the stairs, Seoyeon's footsteps stop. She never turns around, but the flushed rim of her ear is clear even in the dusk.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
-        "text": "Want to stay a little longer?"
+        "text": "The wind feels nice. Want to stay here a little longer together, then head down?"
     },
     "confess_seo_no_2": {
         "name": "{name}",
-        "text": "*Seoyeon shifts half a step toward the railing to make room beside her.*"
+        "text": "*Seoyeon looks at my lips for a moment, then quietly steps half a step aside by the railing and makes room for me.*"
     },
     "confess_seo_no_3": {
         "name": "Seoyeon",
-        "text": "*We both look down at the field. Another light switches on.*"
+        "text": "*Side by side, close enough that our shoulders almost touch, we look down at the darkening field. In the quiet, one more field light comes on.*"
     },
     "confess_seo_no_4": {
         "name": "Seoyeon",
-        "text": "Come by tomorrow at lunch if you have time."
+        "text": "If you happen to be free at lunch tomorrow, come up to the roof."
     },
     "confess_seo_no_4_b": {
         "name": "{name}",
-        "text": "*The note stays in my pocket all the way down the stairs.*"
+        "text": "*All the way down the roof stairs behind Seoyeon, the note I never managed to give her sits in my pocket, damp with sweat from my hand.*"
     },
     "confess_yuna_1": {
         "name": "{name}",
-        "text": "*As the café sign lights up, Yuna tips her chin toward the annex.*"
+        "text": "*Around the time orange lights come on one by one across the café signs along the street, Yuna stops and tips her chin slightly toward the school annex.*"
     },
     "confess_yuna_2": {
         "name": "Yuna",
-        "text": "There's one last place to go."
+        "text": "Before we part, there's one last place I really want to go with you."
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*The secret reading nook in the annex. Sunset reaches the old sofa's armrest; Yuna's bookmark lies on the adjoining sofa seat.*"
+        "text": "*The secret reading nook in a corner of the annex, where I followed Yuna in. Red sunset pouring through the window settles deep onto the armrest of the old fabric sofa, and Yuna's bookmark lies quietly on the seat right beside it.*"
     },
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Sit for a bit. We don't have to open a book today. You came all the way here. *She sits on the sofa and looks at {name}, a bookmark between her fingers.*"
+        "text": "Come sit next to me. We don't have to open a book today. You held my hand and followed me all the way here. *Yuna leans back deep into the sofa and looks up at {name}. A silver bookmark is held between her slender fingers.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*The tip of the bookmark is bent.*"
+        "text": "*When I sit right beside Yuna, the old sofa cushion sinks, and our thighs and shoulders press together with no gap between them. The tip of the paper bookmark in Yuna's hand is slightly bent.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna smooths the folded end of the bookmark with her thumb and leaves the seat opposite her open.*",
+        "text": "*Yuna slowly smooths the folded corner of the bookmark with her thumb and meets my eyes from close enough that my breath reaches her.*",
         "choices": [
             "Tell her I like her.",
             "This place is really nice.",
@@ -151,101 +151,101 @@
     },
     "confess_yuna_yes_1": {
         "name": "{name}",
-        "text": "*My voice comes out smaller than I expected.*"
+        "text": "*Trying not to break the quiet air of the reading room, my voice sinks low and deep on its own.*"
     },
     "confess_yuna_yes_2": {
         "name": "{name}",
-        "text": "*Yuna's thumb lifts away from the corner of the bookmark.*"
+        "text": "*The moment I open my mouth, Yuna's thumb, smoothing the corner of the bookmark, stops where it is.*"
     },
     "confess_yuna_yes_3": {
         "name": "{name}",
-        "text": "Yuna, I like you. When I’m with you, I don’t have to hold back what I want to say."
+        "text": "Yuna, I like you. When it's just the two of us, I don't have to put on an act or swallow what I want to say."
     },
     "confess_yuna_yes_3_b": {
         "name": "{name}",
-        "text": "I liked that."
+        "text": "The time I spend breathing beside you has been the most comfortable, and the most precious, thing to me."
     },
     "confess_yuna_yes_4": {
         "name": "{name}",
-        "text": "*Yuna sets down the bookmark.*"
+        "text": "*Yuna sets the bookmark she was holding down on the sofa cushion without a sound.*"
     },
     "confess_yuna_yes_5": {
         "name": "{name}",
-        "text": "I want to keep seeing you after today."
+        "text": "Even after today's date ends, I want to stay beside you tomorrow, and the day after that."
     },
     "confess_yuna_yes_6": {
         "name": "{name}",
-        "text": "You don't have to answer right now."
+        "text": "I'm not trying to pressure you, so you don't have to answer right away."
     },
     "confess_yuna_yes_6_b": {
         "name": "{name}",
-        "text": "*The sofa fabric gives a soft creak as Yuna straightens.*"
+        "text": "*With a small brush of the sofa fabric, Yuna straightens and leans a handspan closer toward me.*"
     },
     "confess_yuna_yes_7": {
         "name": "{name}",
-        "text": "*The bookmark remains on the sofa.*"
+        "text": "*On the sofa where the sunset has settled, Yuna's fingertips search out the edge of my sleeve instead of the bookmark.*"
     },
     "confess_yuna_yes_8": {
         "name": "Yuna",
-        "text": "*Keeping her eyes on the shelves, she grips her sleeve tight.*"
+        "text": "*As if hiding the unsteadiness in her eyes, Yuna keeps her gaze toward the shelves and grips the end of my shirt sleeve tight with two fingers.*"
     },
     "confess_yuna_yes_8_b": {
         "name": "{name}",
-        "text": "*The crumpled ends of the sleeves disappear into the palm.*"
+        "text": "*The crumpled end of my sleeve winds deep into Yuna's small, hot palm.*"
     },
     "confess_yuna_yes_8_c": {
         "name": "Yuna",
-        "text": "Tell me first if you're going to disappear."
+        "text": "Promise me. If you're ever going to disappear from in front of me, you'll tell me first."
     },
     "confess_yuna_yes_9": {
         "name": "Yuna",
-        "text": "Don't disappear without saying anything."
+        "text": "Don't leave me alone without even a goodbye. I don't want to lose you either."
     },
     "confess_yuna_yes_9_b": {
         "name": "{name}",
-        "text": "*The end of her sleeve crumples further in her palm.*"
+        "text": "*Yuna's grip on my sleeve tightens, and with my other hand I quietly cover the back of that slender hand.*"
     },
     "confess_yuna_no_1": {
         "name": "{name}",
-        "text": "This place is really nice."
+        "text": "The sunset light is warm, and this place feels really nice."
     },
     "confess_yuna_no_2": {
         "name": "Yuna",
-        "text": "*She slips the bookmark between the pages, pushes it in deep, then dips her chin once.*"
+        "text": "*Without a word, Yuna pushes the bookmark deep between the closed pages, then dips her chin a little.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
-        "text": "Yuna, haven't you finished that book yet? ...You were only looking at the cover. *Without opening it, she traces the title with her finger.*"
+        "text": "Yuna, you still haven't finished that book on your lap? You've only been looking at the cover. *Yuna never opens the pages. She only slowly traces the title letters on the hardcover with her fingertip.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
-        "text": "The ending isn't here yet."
+        "text": "Yeah. I still haven't seen the ending that matters most."
     },
     "confess_yuna_no_4_b": {
         "name": "{name}",
-        "text": "*Three steps away, I looked back. Yuna was watching me too, over the top of her book.*"
+        "text": "*When I get up and take about three steps toward the door, I look back, and past the book Yuna's deep-red eyes hold onto my back for a long time.*"
     },
     "confess_dain_1": {
         "name": "{name}",
-        "text": "*When the date ends, Dain strides ahead toward school.*"
+        "text": "*As the downtown date draws to a close, Dain strides ahead toward the school's back gate, as if she has decided something.*"
     },
     "confess_dain_2": {
         "name": "Dain",
-        "text": "One last place. Come on."
+        "text": "Before we head home, let's stop by just one last place."
     },
     "confess_dain_3": {
         "name": "{name}",
-        "text": "*I follow Dain into the empty gym. Only the lights along the court are on.*"
+        "text": "*I follow Dain into the empty gym on a weekend evening. Under the high ceiling, only the side lights along the edge of the court are faintly on.*"
     },
     "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
-        "text": "We're not here to practice. I can hold the ball, right? Leaving my hands empty feels stranger. *She grips the ball with both hands, her knuckles white against it.*"
+        "text": "Don't worry. I didn't come to practice at this hour. But is it okay if I hold a ball? If I stand in front of you empty-handed, my fingertips keep shaking. *Dain pulls a leather volleyball to her chest with both hands. The knuckles pressing the ball stand out white.*"
     },
     "confess_dain_5": {},
     "confess_dain_choice": {
         "name": "Dain",
-        "text": "*The ball bounces once. Half a beat late, Dain's hand brushes past its side.*",
+        "text": "*The volleyball slips from her hand and thumps up off the wooden floor. A beat late, Dain's outstretched fingertips brush the side of the ball in midair.*",
         "choices": [
             "Tell her I like her.",
             "Shall we sit on the bench a little longer?",
@@ -255,114 +255,114 @@
     },
     "confess_dain_yes_1": {
         "name": "{name}",
-        "text": "*The first syllable echoes low from the empty gym walls.*"
+        "text": "*When I call Dain's name, the first syllable comes back off the empty gym walls in a low, clear echo.*"
     },
     "confess_dain_yes_2": {
         "name": "{name}",
-        "text": "*I steady one short breath and open my mouth again.*"
+        "text": "*I take one step right up to Dain, steady my hot breath, and open my mouth again.*"
     },
     "confess_dain_yes_3": {
         "name": "{name}",
-        "text": "Dain. There's — something I need to tell you."
+        "text": "Dain. Before we part today, there's something I have to tell you."
     },
     "confess_dain_yes_3_b": {
         "name": "{name}",
-        "text": "I like you. I want to keep seeing you, not just today."
+        "text": "I like you. Not just a weekend date like today. From now on, I want to keep walking beside you."
     },
     "confess_dain_yes_4": {
         "name": "{name}",
-        "text": "*Dain sets down the ball.*"
+        "text": "*Dain slowly sets the volleyball she was hugging to her chest down on the wooden floor.*"
     },
     "confess_dain_yes_5": {
         "name": "{name}",
-        "text": "You don't have to answer right now."
+        "text": "If your feelings are a mess, you don't have to answer right now."
     },
     "confess_dain_yes_6": {
         "name": "{name}",
-        "text": "I just wanted you to know."
+        "text": "I just wanted you to know first how much I mean it."
     },
     "confess_dain_yes_7": {
         "name": "{name}",
-        "text": "*The gym lights hum softly.*"
+        "text": "*Under the quiet gym's orange light, Dain's short breaths and warm body heat reach all the way to my chin.*"
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "I want to say something, too... Stop looking at me. No, I don't mean don't look at all. *She brings her feet together on the court line and covers her face with both hands.*"
+        "text": "Ah, what do I do. I want to give you a good answer, but don't look at my face right now. No, I absolutely don't mean turn around! *Dain stands with both feet together on the white court line and covers her bright-red face with both palms.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
-        "text": "*She keeps her face covered. The volleyball bumps her toes, but she doesn't pick it up.*"
+        "text": "*The volleyball on the floor taps the toe of my sneaker and rolls aside, but Dain can't even think of going after it.*"
     },
     "confess_dain_yes_9": {
         "name": "Dain",
-        "text": "Wait. I can't get my words straight right now."
+        "text": "Wait just a second. My breath is right up in my throat, and I can't sort out a single word in my head."
     },
     "confess_dain_yes_9_b": {
         "name": "Dain",
-        "text": "...Wait. I can't get the words out. *She smiles and rubs her eyes.*"
+        "text": "I'm really in trouble. I'm smiling because I'm happy, so why are the corners of my eyes getting hot too. *Dain looks up at me through her fingers and smiles bright, then rubs the damp corner of her eye with the back of her hand.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",
-        "text": "Come back tomorrow."
+        "text": "Come see me tomorrow too. I won't dodge it then. I'll give you my answer properly."
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*She hugs the ball again. The backs of her hands tense.*"
+        "text": "*Instead of the ball that rolled away, Dain grabs the front of my shirt once, lets go, and gives me a dazzling smile.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",
-        "text": "…Shall we sit on the bench a little longer?"
+        "text": "We walked a lot, so want to sit on that bench a little longer before we go?"
     },
     "confess_dain_no_2": {
         "name": "{name}",
-        "text": "*I sit beside Dain on the bench. The words I meant to say won’t come.*"
+        "text": "*I sit beside Dain on the bench in the corner of the court. The confession that rose all the way to my throat never makes it past my lips.*"
     },
     "confess_dain_no_3": {
         "name": "Dain",
-        "text": "*Dain bounces the volleyball twice. On the third bounce, it crosses the court line and rolls away.*"
+        "text": "*Still seated, Dain bounces the volleyball on the floor twice. On the third bounce it leaves her hand and rolls off into the dark beyond the court.*"
     },
     "confess_dain_no_4": {
         "name": "Dain",
-        "text": "Next time, say it."
+        "text": "Next time we come here alone, say the thing you just swallowed."
     },
     "confess_dain_no_4_b": {
         "name": "{name}",
-        "text": "*She slowly pulls open the wrist brace's Velcro.*"
+        "text": "*Head lowered, Dain rips the Velcro of her wrist brace open in one long tear.*"
     },
     "confess_seo_yes_mid_1": {
         "name": "Seoyeon",
-        "text": "I can't answer right now. I'll leave the roof open tomorrow."
+        "text": "Sorry, but I don't think I can give you a definite answer right here. I'll leave the roof door open at lunch tomorrow, though."
     },
     "confess_seo_yes_low_1": {
         "name": "Seoyeon",
-        "text": "*She pockets the key.* That's enough for today. I can't take that yet."
+        "text": "*Seoyeon quietly slips the rooftop key deep into her pocket.* Let's stop here today. I'm not ready yet to take what you just said into my heart."
     },
     "confess_yuna_yes_mid_1": {
         "name": "Yuna",
-        "text": "...I can't say it back right now. Just don't disappear."
+        "text": "It's hard to put my answer into words right now. Even so, don't disappear from beside me."
     },
     "confess_yuna_yes_low_1": {
         "name": "Yuna",
-        "text": "*She pushes the bookmark between the pages.* I won't take that today."
+        "text": "*Yuna pushes the bookmark deep between the pages and closes the book.* I'm sorry. Today, I won't take the feeling you offered me."
     },
     "confess_dain_yes_mid_1": {
         "name": "Dain",
-        "text": "I can't answer right now. Just don't run."
+        "text": "Sorry. My feelings aren't sorted out enough to answer right away. Even so, don't run from in front of me."
     },
     "confess_dain_yes_low_1": {
         "name": "Dain",
-        "text": "*She fixes the strap on the ball bag.* Not that yet. Go today."
+        "text": "*With a stiff expression, Dain adjusts the strap of her ball bag.* I can't take those words yet. Head back for today."
     },
     "confess_seo_yes_neg": {
         "name": "Seoyeon",
-        "text": "*She pockets the key.* We're not on terms where I listen to that."
+        "text": "*Seoyeon puts the key in her pocket with a cold look.* We're not on terms right now to trade a confession like that."
     },
     "confess_yuna_yes_neg": {
         "name": "Yuna",
-        "text": "*She slides the bookmark back in.* I'm not taking that."
+        "text": "*Yuna coldly slides the bookmark in between the pages.* I'll act like I didn't hear what you just said. I'm not taking it."
     },
     "confess_dain_yes_neg": {
         "name": "Dain",
-        "text": "*She fixes the strap on the ball bag.* I'm not listening to that right now."
+        "text": "*Dain adjusts the strap of her ball bag, her face gone cold.* Sorry, but I have no intention at all of hearing that from you right now."
     }
 }

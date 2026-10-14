@@ -1,83 +1,83 @@
 {
     "hidden_homeroom_d2_low": {
         "name": "Klassenlehrerin",
-        "text": "*Vor dem Lehrerzimmer begegnest du deiner Klassenlehrerin. Sie dreht die Unterlagen in ihrer Hand wieder in Richtung Schreibtisch.* Heute sollten wir nicht unter vier Augen reden. Wir sehen uns im Unterricht."
+        "text": "*Vor der Tür des Lehrerzimmers treffe ich die Klassenlehrerin. Die Aktenmappe in ihrer Hand legt sie wieder nach innen auf den Schreibtisch.* Heute bin ich beschäftigt, unter vier Augen wird das wohl nichts. Wir sehen uns später im Unterricht."
     },
     "hidden_homeroom_d2_neg": {
         "name": "Klassenlehrerin",
-        "text": "*Sie zieht die Unterlagen an sich.* Heute gibt's nichts zu besprechen. Ab in den Unterricht."
+        "text": "*Sie schließt die Aktenmappe in die Arme und wendet den Blick ab.* Heute haben wir nichts zu besprechen. Geh schnell zurück ins Klassenzimmer."
     },
     "morning2_start": {
         "name": "{name}",
-        "text": "*Zweiter Tag. Die Bügelfalten an den Ärmeln meiner Uniform sind schwächer als gestern.*"
+        "text": "*Der zweite Morgen seit meinem Schulwechsel. Die steifen Knickfalten an den Ärmeln meiner Uniform sind deutlich weicher als gestern.*"
     },
     "morning2_start_2": {},
     "morning2_greet_seo_1": {},
     "morning2_greet_seo_1_roof": {
         "name": "Seoyeon",
-        "text": "Was du gestern auf dem Dach gesagt hast — gilt das noch?"
+        "text": "Das Versprechen von gestern auf dem Dach. Du hast es nicht vergessen und dir die Zeit freigehalten, oder?"
     },
     "morning2_greet_seo_1_gate": {
         "name": "Seoyeon",
-        "text": "Anwesenheit. Setz dich."
+        "text": "Ich bin wegen der morgendlichen Anwesenheit hier. Setz dich schnell hin."
     },
     "morning2_greet_seo_2": {
         "name": "Seoyeon",
-        "text": "Schon da? Findest du den Klassenraum inzwischen? *Dain rückt den Stuhl zurück, Yuna blättert um.*"
+        "text": "Heute bist du ziemlich früh. Den Weg hierher verwechselst du jetzt nicht mehr, oder? *Auf Seoyeons Stimme scharrt neben mir Dains Stuhl zurück, und am Fenster blättert eine Seite in Yunas Buch leise um.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
-        "text": "*Seoyeon tippt einmal gegen ihr Klemmbrett.*"
+        "text": "*Seoyeon tippt mit den langen Fingern auf die Rückseite des Klemmbretts und lässt in den Augen ein Lächeln zurück, das nur ich sehe.*"
     },
     "morning2_greet_dain_1": {},
     "morning2_greet_dain_2": {
         "name": "Dain",
-        "text": "Noch halb im Schlaf? Dreh dich her. Deinem Rücken will ich keinen guten Morgen wünschen. *Sie klopft mir von hinten auf die Schulter.*"
+        "text": "Hey, bist du noch nicht richtig wach? Dreh dich schnell her, ich hab keine Lust, morgens nur einen Rücken zu begrüßen! *Von hinten kommt sie heran und gibt mir einen federnden Klaps auf die Schulter.*"
     },
     "morning2_greet_dain_others": {
         "name": "{name}",
-        "text": "Dain, du machst mich schon vor der Morgenbesprechung fertig. Bei deiner Stimme fühle ich mich gleich auf dem Sportplatz. *Seoyeon geht vorbei und blättert auf ihrem Klemmbrett um.*"
+        "text": "Dain, bevor die Morgenbesprechung überhaupt losgeht, bin ich schon leer. Nur deine Stimme, und es fühlt sich an, als wäre ich schon zehn Runden über den Sportplatz gelaufen. *Inzwischen geht Seoyeon langsam am Flurfenster vorbei und blättert auf dem Klemmbrett.*"
     },
     "morning2_greet_dain_others_seo": {
         "name": "Seoyeon",
-        "text": "Viel Energie."
+        "text": "Schon am Morgen so viel Energie."
     },
     "morning2_greet_dain_others_yuna": {
         "name": "{name}",
-        "text": "*Yunas Stiftspitze hinterlässt mitten auf ihrem Zettel einen Tintenpunkt.*"
+        "text": "*Die Spitze des Füllers in Yunas Hand, hinten in der Reihe, stockt und hinterlässt mitten auf dem weißen Zettel einen kleinen violetten Tintenpunkt.*"
     },
     "morning2_greet_dain_others_2": {
         "name": "{name}",
-        "text": "*Nachdem die Klassenzimmertür zufällt, ist vom Flur ein einzelnes Klopfen gegen ein Klemmbrett zu hören.*"
+        "text": "*Gleich nachdem die vordere Klassenzimmertür zufällt, hallt vom Flur einmal klar das Tippen gegen eine Klemmbrettecke.*"
     },
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*Yunas Handschrift. Ein Satz länger als gestern. — Auf der Rückseite, winzig klein: 'Mittags im Bibliotheksanbau.'*"
+        "text": "*An der Ecke des Tischs liegt Yunas ordentliche Handschrift. Auf der Rückseite des Zettels, um einen Satz länger als gestern, steht in kleiner Schrift: „Mittags zum Bibliotheksanbau.“*"
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
-        "text": "Ein Brief so früh am Morgen?"
+        "text": "Schon am Morgen ein Geheimbrief?"
     },
     "morning2_greet_yuna_others_seo": {
         "name": "Seoyeon",
-        "text": "Darf ich den Zettel etwa nicht sehen? *Sie zeigt auf den Rand.*"
+        "text": "Ist der Zettel in deiner Hand etwas, das ich als Schülersprecherin nicht sehen darf? *Seoyeons Blick bleibt an der Ecke des Papiers in meiner Hand.*"
     },
     "morning2_greet_yuna_others_dain": {
         "name": "Dain",
-        "text": "Was ist das?! Zeig mal!"
+        "text": "Hey, was ist das! Zeig's mir auch, schnell!"
     },
     "morning2_greet_yuna_others_2": {
         "name": "{name}",
-        "text": "*Ich falte den Zettel und halte ihn in der Hand. In meiner Handfläche wird die Falte zusammengedrückt.*"
+        "text": "*Ich falte den Zettel schnell in der Mitte und verstecke ihn in der Hand. In der verschwitzten Handfläche drückt sich die Falz straff zusammen.*"
     },
     "morning2_yuna_seen": {
         "name": "Yuna",
-        "text": "...Warst du vor deinem Schulwechsel schon einmal hier?"
+        "text": "...Warst du vor dem Schulwechsel schon mal an dieser Schule?"
     },
     "morning2_note_1": {
         "name": "{name}",
-        "text": "*Ich will mich gerade setzen, als — mir ein gefalteter Zettel auf meinem Tisch auffällt.*"
+        "text": "*Ich hänge die Tasche auf und will mich setzen, da liegt mitten auf dem Tisch ein ordentlich gefalteter Zettel.*"
     },
     "morning2_note_2": {
         "name": "{name}",
@@ -85,119 +85,119 @@
     },
     "morning2_note_3": {
         "name": "{name}",
-        "text": "*Dieselbe Handschrift wie gestern. Unten steht der Ort: ‚Bibliotheksanbau‘.*"
+        "text": "*Dieselbe blasslila Tinte wie gestern. Unter der letzten Zeile stehen fünf Zeichen, deutlich: „Bibliotheksanbau“.*"
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
-        "text": "*Im Vorbeigehen wirft sie einen Blick ins Klassenzimmer.* Hast du gut geschlafen?"
+        "text": "*Seoyeon kommt den Flur entlang und schiebt den Kopf leicht durch den Spalt der offenen Klassenzimmertür.* Hast du letzte Nacht ruhig geschlafen, ohne dich herumzuwälzen?"
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "Die Schülersprecherin höchstpersönlich vor meinem Klassenzimmer?"
+        "text": "Kommt die beschäftigte Schülersprecherin extra schon morgens persönlich bis vor ein fremdes Klassenzimmer, nur zum Grüßen?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
-        "text": "Ich war auf dem Weg ins Lehrerzimmer und wollte kurz nach dir sehen."
+        "text": "Ich halte nur kurz auf dem Weg, Unterlagen ins Lehrerzimmer zu bringen. Wollte bloß sehen, ob's deinem Gesicht gut geht, und weiter."
     },
     "morning2_minsu_1": {
         "name": "Seoyeon",
-        "text": "Ich habe dich gesehen, also gehe ich. ...Komm pünktlich zur Morgenbesprechung. Wäre peinlich, wenn ich wegen meines Besuchs bei dir zu spät käme. *Vor dem Hinausgehen berührt das Klemmbrett einmal den Türrahmen.*"
+        "text": "Ich hab dein Gesicht gesehen, jetzt geh ich. Nicht zu spät zur Morgenbesprechung. Wenn ich dich besuche und dann selbst zu spät komme, steht das schlecht für mich. *Im Umdrehen stößt die Spitze des Klemmbretts in Seoyeons Hand kurz gegen den Türrahmen und löst sich wieder.*"
     },
     "morning2_minsu_1b": {
         "name": "{name}",
-        "text": "*Ich sehe in den Flur, wo Seoyeon verschwand. Minsu dreht sich um.*"
+        "text": "*Ich sehe noch zum Flur, wo Seoyeons langes Haar verschwunden ist, da wirbelt Minsu vor mir herum, als wäre das unfassbar.*"
     },
     "morning2_minsu_3": {
         "name": "Minsu",
-        "text": "Alter, du bist zwei Tage hier und die Schülersprecherin kommt extra zu dir? Ich bin seit 'nem Jahr in dieser Klasse und sie schaut mich nicht mal an."
+        "text": "Hey, kaum zwei Tage nach dem Schulwechsel kommt die Schülersprecherin persönlich bis vor die Tür zum Anstandsbesuch? Ich bin 1 Jahr an der Schule und treffe im Flur kaum einmal ihren Blick."
     },
     "morning2_dain_claim_1": {
         "name": "{name}",
-        "text": "Vielleicht bist du einfach nicht beliebt."
+        "text": "Das liegt doch einfach daran, dass du nicht beliebt bist."
     },
     "morning2_dain_claim_2": {
         "name": "Minsu",
-        "text": "Das stimmt, aber darum geht's nicht."
+        "text": "Das sitzt zu hart. Stimmt schon, aber darum geht's gerade nicht!"
     },
     "morning2_dain_claim_3": {
         "name": "{name}",
-        "text": "*Seoyeon hält das Klemmbrett an sich und geht den Flur entlang.*"
+        "text": "*Hinter der Glasscheibe im Flur streift ein Bild vorbei: Seoyeon, das Klemmbrett an die Brust gedrückt, streicht sich im Gehen über die Ohrmuschel.*"
     },
     "morning2_dain_claim_4": {
         "name": "Dain",
-        "text": "Hat die Schülersprecherin auch ein Auge auf unseren Neuen geworfen? Ganz schön beliebt!"
+        "text": "Oho, selbst die stolze Schülersprecherin hat an unserem Neuen wohl ziemliches Interesse? Du bist beliebter, als ich dachte!"
     },
     "morning2_dain_claim_5": {
         "name": "{name}",
-        "text": "‚Unser‘ Neuer?"
+        "text": "Hast du gerade „unser Neuer“ gesagt?"
     },
     "morning2_dain_claim_6": {
         "name": "Dain",
-        "text": "Wir sitzen in derselben Klasse nebeneinander. So viel muss schon drin sein."
+        "text": "Na klar! Gleiche Klasse, und mein Partner auf dem Platz direkt neben mir. So einen Anspruch darf ich doch stellen."
     },
     "morning2_break_transition": {
         "name": "{name}",
-        "text": "*Pause. Ich gehe auf den Flur.*"
+        "text": "*Nach der 1. Stunde gehe ich ans Flurfenster, um die laute, stickige Luft im Klassenzimmer loszuwerden.*"
     },
     "morning2_break_transition_b": {
         "name": "{name}",
-        "text": "*An der Tür treffen sich unsere Blicke. Die Lehrerin hält das Klassenbuch.*"
+        "text": "*Vor der Klassenzimmertür treffe ich frontal den Blick der Klassenlehrerin, die mit dem Klassenbuch im Arm vorbeigeht.*"
     },
     "morning2_break_1": {
         "name": "{name}",
-        "text": "*Das Klemmbrett stößt an den Tisch. Seoyeon geht, bevor ich antworten kann.*"
+        "text": "*Seoyeons Klemmbrett tippt an die Ecke meines Tischs und löst sich wieder. Noch bevor ich antworten kann, ist sie auf dem Flur verschwunden.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Klassenlehrerin",
-        "text": "Ach, {name}. Komm mal kurz ins Lehrerzimmer."
+        "text": "Gut, dass ich dich treffe, {name}. Komm jetzt kurz mit mir ins Lehrerzimmer."
     },
     "hidden_homeroom_d2_1_b": {
         "name": "{name}",
-        "text": "Stimmt etwas nicht?"
+        "text": "Ist vielleicht irgendetwas vorgefallen?"
     },
     "hidden_homeroom_d2_1_c": {
         "name": "Klassenlehrerin",
-        "text": "Nein, nur die Überprüfung deiner Transferunterlagen. — Verwaltungskram."
+        "text": "Keine Angst. Es sind nur noch deine Unterlagen zum Schulwechsel zu prüfen. Das ist rein administrativ."
     },
     "hidden_homeroom_d2_2": {
         "name": "{name}",
-        "text": "*Zwischen den Seiten ihres Klassenbuchs ragt die Ecke der Unterlagen zu meinem Schulwechsel hervor.*"
+        "text": "*Zwischen dem Klassenbuch in den Armen der Klassenlehrerin ragt leicht die Ecke der Unterlagen zum Schulwechsel hervor, auf denen mein Name steht.*"
     },
     "hidden_homeroom_d2_2_b": {
         "name": "{name}",
-        "text": "*Im Lehrerzimmer ragt Manuskriptpapier aus einer Schublade.* Soll ich mich hier setzen?"
+        "text": "*Als ich vor den Schreibtisch der Klassenlehrerin trete, sehe ich durch den Spalt der halb offenen Schublade einen Stapel Manuskriptpapier, dicht mit Schrift gefüllt.* Frau Lehrerin, darf ich mich auf diesen Stuhl setzen?"
     },
     "hidden_homeroom_d2_3": {
         "name": "Klassenlehrerin",
-        "text": "Hab dein altes Zeugnis gesehen. Deine Deutschnoten waren gut. Liest du gerne?"
+        "text": "Ja, setz dich. In deiner Akte von der alten Schule waren die Noten in Koreanisch besonders gut. Liest du sonst gern Bücher?"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "{name}",
-        "text": "Romane lese ich schon hin und wieder."
+        "text": "Romane, nicht die Lehrbücher, lese ich ziemlich gern."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "Ich hatte nicht erwartet, dass wir auch über Romane reden. Ich dachte, Sie würden nur meine Koreanischnoten ansehen. *Sie legt einen Stift quer über das Manuskriptpapier in der offenen Schublade.*"
+        "text": "Ich hätte nicht erwartet, dass Sie von Romanen anfangen. Ich dachte, Sie sehen sich nur die Noten an. *Als merke sie meinen Blick, legt die Klassenlehrerin den Füller quer über das Manuskriptpapier in der offenen Schublade.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Klassenlehrerin",
-        "text": "Du liest also gern. Und schreibst du auch?"
+        "text": "Du liest also gern. Und selbst hast du noch nichts geschrieben?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*Der Finger auf dem Zeugnis verdeckt die Ecke des Manuskriptpapiers.*"
+        "text": "*Der schmale Finger der Klassenlehrerin auf dem Zeugnis verdeckt sacht die Ecke des Manuskriptpapiers in der Schublade.*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
-        "text": "Mit Schreiben kann ich nicht viel anfangen."
+        "text": "Ich weiß noch nicht, ob selbst zu schreiben wirklich mein Geschmack ist."
     },
     "hidden_homeroom_d2_3_g": {
         "name": "Klassenlehrerin",
-        "text": "Moment, die Schublade klemmt. *Sie hört auf, sie mit dem Knie zuzuschieben; eine Ecke des Manuskriptpapiers ist im Weg.*"
+        "text": "Oh, die Schubladenschiene hakt schon wieder. *Sie schiebt die Schublade, die an der dicken Manuskriptecke hängen bleibt und nicht zugeht, leicht mit dem Knie hinein und stockt, sobald sie meinen Blick trifft.*"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Meine Klassenlehrerin hört auf, die Schublade schließen zu wollen, und wartet auf meine Antwort.*",
+        "text": "*Die Klassenlehrerin hat die Hand von der Schublade genommen und wartet hinter dem Dampf über der Teetasse auf meine Antwort.*",
         "choices": [
             "Und Sie? Was lesen Sie?",
             "Ja, ich lese gern",
@@ -206,60 +206,60 @@
     },
     "hidden_homeroom_d2_choice1_a": {
         "name": "Klassenlehrerin",
-        "text": "Krimis. Nicht die, in denen es nur darum geht, den Täter zu fassen, sondern die, die dem Motiv nachgehen."
+        "text": "Ich lese oft Krimis. Mir geht es nicht darum, den Täter zu erraten, sondern darum, bis zum Schluss mitzugehen, warum ein Mensch so gewählt hat."
     },
     "hidden_homeroom_d2_choice1_b": {
         "name": "Klassenlehrerin",
-        "text": "*Sie dreht den Henkel ihrer Kaffeetasse einmal ganz herum.* Wirklich? Schönes Hobby."
+        "text": "*Mit den Fingerspitzen dreht sie den Henkel der Porzellan-Kaffeetasse langsam einmal herum.* Ach ja? Still in die Geschichten anderer sehen zu können, ist ein ziemlich gutes Hobby."
     },
     "hidden_homeroom_d2_5": {
         "name": "Klassenlehrerin",
-        "text": "Schon gut. Ich hab nur gefragt."
+        "text": "Na ja. Nicht weil da eine große Absicht hintersteckt. Ich war einfach neugierig."
     },
     "hidden_homeroom_d2_6": {
         "name": "Klassenlehrerin",
-        "text": "Mein Schreibtisch ist etwas chaotisch, was? *Sie schiebt das Manuskript hinein und schließt die Schublade.*"
+        "text": "Mein Schreibtisch ist ein bisschen unordentlich, was? *Sie schiebt den herausstehenden Stapel Manuskriptpapier tief nach innen und schließt die Schublade zu Ende.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Klassenlehrerin",
-        "text": "Wie läuft die Eingewöhnung? Besser als gestern?"
+        "text": "Und, wie ist der zweite Tag? Fühlt sich die Luft im Klassenzimmer vertrauter an als gestern?"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
-        "text": "Viel besser. Die Leute in der Klasse sind nett."
+        "text": "Ja. Viel angenehmer als gestern. Die anderen in der Klasse sprechen mich auch zuerst an."
     },
     "hidden_homeroom_d2_8": {
         "name": "Klassenlehrerin",
-        "text": "Dain ist laut, oder? — So ist sie eben. Aber jemand, der Krawall macht, ist nicht dasselbe wie jemand mit überschüssiger Energie."
+        "text": "Dain neben dir ist ganz schön laut, oder? So heiter ist sie einfach. Aber jemand, der grundlos Streit sucht, ist etwas völlig anderes als jemand, der vor Energie nicht zu bremsen ist."
     },
     "hidden_homeroom_d2_8_b": {
         "name": "{name}",
-        "text": "So wie Sie von ihr reden, muss Dain ja ziemlich bekannt sein."
+        "text": "So wie Sie das sagen, scheint Dain auch im Lehrerzimmer ziemlich bekannt zu sein."
     },
     "hidden_homeroom_d2_8_c": {
         "name": "Klassenlehrerin",
-        "text": "Es geht weniger darum, dass sie bekannt ist. Ich mach mir eher Sorgen um sie. *Sie nimmt einen Schluck Kaffee.*"
+        "text": "Nicht weil sie bekannt ist. Als Klassenlehrerin geht sie mir einfach nicht aus dem Sinn. *Sie behält einen Schluck warmen Kaffee im Mund und senkt den Blick.*"
     },
     "hidden_homeroom_d2_8_d": {
         "name": "{name}",
-        "text": "*Ihre Stiftspitze hält im Klassenbuch neben Dains Namen inne.*"
+        "text": "*Im aufgeschlagenen Klassenbuch hält die Stiftspitze der Klassenlehrerin einen Moment neben dem Namen Dain inne.*"
     },
     "hidden_homeroom_d2_8_e": {
         "name": "Klassenlehrerin",
-        "text": "*Sie stellt ihren Kaffee ab.* Jedenfalls scheint bei dir alles in Ordnung zu sein."
+        "text": "*Sie stellt die Kaffeetasse lautlos ab.* Jedenfalls sind deine Unterlagen zum Schulwechsel jetzt alle durch, ohne Auffälligkeiten."
     },
     "hidden_homeroom_d2_8_f": {},
     "hidden_homeroom_d2_9": {
         "name": "{name}",
-        "text": "Danke."
+        "text": "Danke, dass Sie sich so genau darum kümmern, Frau Lehrerin."
     },
     "hidden_homeroom_d2_10": {
         "name": "Klassenlehrerin",
-        "text": "Das gehört zu meinen Aufgaben als Klassenlehrerin. Du musst nicht so förmlich sein."
+        "text": "Das gehört zu dem, was ich als Klassenlehrerin zu tun habe. Mach dir daraus keine Schuld."
     },
     "hidden_homeroom_d2_choice2": {
         "name": "{name}",
-        "text": "*Die Klassenlehrerin dreht die Untertasse zweimal auf derselben Stelle.*",
+        "text": "*Die Fingerspitzen der Klassenlehrerin streichen zweimal an derselben Stelle über den Rand des Korkuntersetzers.*",
         "choices": [
             "Für Arbeit sehen Sie ziemlich zufrieden aus",
             "Danke, dass Sie sich kümmern",
@@ -268,72 +268,72 @@
     },
     "hidden_homeroom_d2_choice2_trap": {
         "name": "Klassenlehrerin",
-        "text": "*Ihre Hand hält mitten in der Bewegung über der Untertasse inne.* So solltest du das nicht auffassen."
+        "text": "*Der Finger, der den Untersetzer drehte, hält abrupt an.* Die Fürsorge einer Lehrerin so umzudeuten, ist unangebracht."
     },
     "hidden_homeroom_d2_choice2_a": {
         "name": "Klassenlehrerin",
-        "text": "Natürlich freue ich mich, wenn es dir gut geht."
+        "text": "Wenn der Neue in meiner Klasse sich gut einfindet, freut mich das natürlich."
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Klassenlehrerin",
-        "text": "Danke. Schön, dass du das sagst."
+        "text": "Na schön. Auch wenn es nur so dahingesagt ist, lohnt es sich, dass du dich so bedankst."
     },
     "hidden_homeroom_d2_11": {
         "name": "Klassenlehrerin",
-        "text": "Die anderen kommen auch zu mir, wenn sie etwas bedrückt. Du kannst das genauso machen."
+        "text": "Die anderen aus der Klasse schauen auch öfter vorbei, wenn sie etwas bedrückt. Komm jederzeit vorbei, ganz ungezwungen."
     },
     "hidden_homeroom_d2_11_b": {
         "name": "Klassenlehrerin",
-        "text": "Du brauchst kein schlechtes Gewissen zu haben, wenn du herkommst. Was du nicht erzählen möchtest, musst du nicht erzählen. *Sie spricht leise und schaut auf ihren Kaffee.*"
+        "text": "Du musst kein schlechtes Gewissen haben, wenn du ins Lehrerzimmer kommst. Was dir noch schwer über die Lippen geht, musst du nicht erzählen. *Sie blickt in die Kaffeetasse, in der es leicht schwankt, und setzt leise nach.*"
     },
     "hidden_homeroom_d2_12": {},
     "morning2_seo_dust_1": {
         "name": "Seoyeon",
-        "text": "Was hast du denn schon in der ersten Stunde gemacht? *In der Pause schaut sie im Flur auf meine Schulter.*"
+        "text": "Was hast du während der 1. Stunde eigentlich gemacht. *Seoyeon, der ich in der Pause auf dem Flur begegne, bleibt stehen und sieht prüfend auf meine Schulter.*"
     },
     "morning2_seo_dust_2": {
         "name": "Seoyeon",
-        "text": "Moment."
+        "text": "Nicht bewegen. Bleib kurz still."
     },
     "morning2_seo_dust_3": {
         "name": "Seoyeon",
-        "text": "*Ihre Hand berührt die Schulter von {name}. Sie klopft den Staub zweimal ab und nimmt die Hand wieder weg.*"
+        "text": "*Seoyeon tritt einen Schritt näher, und ihre weißen Fingerspitzen berühren die Schulter an der Uniform von {name}. Durch den dünnen Stoff kommt eine kühle und doch weiche Körperwärme, und zweimal streicht sie leicht den Staub ab.*"
     },
     "morning2_seo_dust_4": {
         "name": "Seoyeon",
-        "text": "Du hattest da etwas auf der Kleidung."
+        "text": "Auf deiner Schulter war sowas wie Kreidestaub."
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "Du hast mich erschreckt, als du mir so plötzlich an die Schulter gefasst hast. *Ich richte den Taschenriemen.*"
+        "text": "Ohne Vorwarnung kommt da plötzlich eine Hand. Klar, dass ich zusammenzucke. *Irgendwie verlegen greife ich den Riemen an der Schulter fester.*"
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",
-        "text": "Was denn? Nur Staub."
+        "text": "Wieso so erschrecken? Ich hab doch nur den Staub abgeklopft."
     },
     "morning2_dain_react_1": {
         "name": "{name}",
-        "text": "*Der Staub auf meiner Schulter ist weg, trotzdem richte ich meinen Taschenriemen zweimal neu.*"
+        "text": "*Der Staub ist eindeutig weg, und trotzdem kitzelt die Stelle, wo Seoyeons Fingerspitzen die Schulter berührt haben, sodass ich den Taschenriemen sogar zweimal neu greife.*"
     },
     "morning2_dain_react_2": {
         "name": "{name}",
-        "text": "*Seoyeon rückt das Klemmbrett zurecht und geht den Flur entlang. Dains Stimme kommt von hinten.*"
+        "text": "*Gerade als Seoyeon das Klemmbrett zurechtrückt und den Flur hinunter verschwindet, kommt von hinten Dains Stimme.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",
-        "text": "Hey, was war das gerade? Hat sie deine Schulter berührt?!"
+        "text": "Hey, was war das gerade? Die Schülersprecherin hat deine Schulter angefasst, stimmt's?"
     },
     "morning2_dain_react_4": {
         "name": "{name}",
-        "text": "Sie hat nur Staub weggewischt."
+        "text": "Sie hat nicht angefasst, nur den Staub von der Schulter abgeklopft."
     },
     "morning2_dain_react_5": {
         "name": "Dain",
-        "text": "War da wirklich Staub?"
+        "text": "Verdächtig. War da wirklich Staub dran?"
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "Sie hat nur Staub abgewischt. Warum schaust du so? *Ich lasse den Riemen los.*"
+        "text": "Wirklich nur Staub, sag ich doch. Warum guckst du mich so an? *Ich lasse den Taschenriemen, an dem ich herumgefingert habe, unauffällig los.*"
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Klassenlehrerin",
@@ -343,7 +343,7 @@
     },
     "morning2_end": {
         "name": "{name}",
-        "text": "*Laut Minsu hat Seoyeon ihn ein ganzes Jahr lang nicht einmal angeschaut. Heute ist sie bis vor mein Klassenzimmer gekommen.*"
+        "text": "*Laut Minsu sieht man Seoyeon im Flur selbst nach 1 Jahr kaum einmal in die Augen. Heute ist sie bis vor meine Klassenzimmertür gekommen und hat im Vorbeigehen meine Schulter gestreift.*"
     },
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Klassenlehrerin",
@@ -351,31 +351,31 @@
     },
     "morning2_greet_none_1": {
         "name": "{name}",
-        "text": "*Ich öffne die Klassenzimmertür. Niemand kommt zu mir. Nur das Geräusch einer abgestellten Tasche ist zu hören.*"
+        "text": "*Ich öffne die Klassenzimmertür und trete ein, und niemand kommt auf mich zu. Nur das Geräusch, mit dem ich die Tasche an meinen Platz stelle, hallt schwer.*"
     },
     "morning2_greet_none_2": {
         "name": "{name}",
-        "text": "*Seoyeon blättert im Klassenbuch. Dain wendet sich ihren Freundinnen zu; Yuna hat ihr Buch schon aufgeschlagen.*"
+        "text": "*Seoyeon blättert vor dem Pult nur im Klassenbuch, Dain dreht sich zu den Freunden auf der anderen Seite. Yuna am Fenster hat den Blick schon im Buch versenkt.*"
     },
     "morning2_greet_none_tone": {},
     "morning2_greet_none_neg_1": {
         "name": "{name}",
-        "text": "*Ich öffne die Klassenzimmertür. Blicke richten sich kurz auf mich und wenden sich sofort wieder ab. Das Geräusch einer abgestellten Tasche wirkt ungewöhnlich laut.*"
+        "text": "*Als ich die vordere Klassenzimmertür öffne, zerstreuen sich die Blicke, die kurz zu mir geschossen waren, kühl und wie abgesprochen. Das Abstellen der Tasche hallt ungewöhnlich laut.*"
     },
     "morning2_greet_none_neg_2": {
         "name": "{name}",
-        "text": "*Keine der drei schaut zu mir.*"
+        "text": "*Keine der drei sieht am Ende auch nur einmal hierher.*"
     },
     "morning2_greet_dain_1_fun": {
         "name": "Dain",
-        "text": "Hey! Gestern war's lustig, heute wieder was zusammen!"
+        "text": "Hey, gestern war echt lustig! Heute machen wir auch zusammen was Aufregendes!"
     },
     "morning2_greet_dain_1_plain": {
         "name": "Dain",
-        "text": "Hey! Morgen. Spar dir Energie für heute."
+        "text": "Oh, guten Morgen! Halt dir für heute die Energie schön voll!"
     },
     "morning2_greet_yuna_1_thanks": {
         "name": "Yuna",
-        "text": "*Beim Hinsetzen liegt ein gefalteter Zettel auf dem Tisch.* Danke für gestern."
+        "text": "*Auf der Ecke des Tischs, an den ich mich setzen will, liegt ein ordentlich gefalteter Zettel.* Danke, dass du gestern neben mir warst."
     }
 }
