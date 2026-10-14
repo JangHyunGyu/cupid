@@ -71,15 +71,15 @@
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Als die Dachtür zufällt, greift Seoyeon nach dem Handgelenk von {name} und legt meine Hand auf ihre Brust. Unter der gelockerten Schleife steht der Hemdkragen offen, und ihr zitternder Atem streift meinen Handrücken. Das Handy in der Tasche vibriert immer wieder, doch Seoyeon lässt nicht los.* Spürst du, wie mein Herz schlägt?"
+        "text": "*Sobald die Eisentür des Dachs hinter uns dumpf ins Schloss fällt, greift Seoyeon nach {name}s Handgelenk und zieht meine Hand tief auf ihre Brust. Unter der locker gelösten Schleife öffnet sich die Bluse gefährlich weit, und die Hitze ihrer bloßen Haut sowie ihr hastiger Atem treffen ungefiltert auf meinen Handrücken. Das Handy in meiner Hosentasche vibriert ununterbrochen, doch Seoyeon legt ihre beiden Hände auf meinen Handrücken und lässt nicht los.* Geh nirgendwo hin und bleib einfach so. Spürst du, wie mein Herz schlägt?"
     },
     "day4_adult_counteroffer_accept_dain": {
         "name": "Dain",
-        "text": "*Der letzte Ball rollt über den Boden. Dain ringt nach Luft, packt die Vorderseite ihrer Uniform und zieht sie nach unten. Sie beugt sich bis direkt vor {name}, sodass ihr warmer, schweißfeuchter Atem das Gesicht erreicht. Das Handy in der Tasche vibriert weiter.* Steck deine Hand ins Trikot. Den Schweiß zwischen meinen Brüsten. Willst du ihn nicht mit den Fingern spüren?"
+        "text": "*Der letzte Volleyball, den ich aus der Hand ließ, rollt über den dunklen Holzboden davon. Dain atmet schwer, packt den vorderen Teil ihrer schweißnassen Uniform und zieht ihn straff nach unten. Als sie ihren Oberkörper tief bis direkt vor {name}s Nase beugt, hüllen mich ein süßer, heißer Hautgeruch und ihre Wärme ein. Obwohl das Handy in meiner Tasche hektisch klingelt, weicht Dain meinem Blick nicht aus.* Schau nicht weg und steck deine Hand unter die Uniform. Willst du den Schweiß zwischen meinen Brüsten nicht direkt mit deinen Fingern spüren?"
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "Yuna",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand am Bücherregal ab. Sie lässt die Jacke unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres Oberteils hinunter. Über ihre nackte Schulter und das Tattoo hinweg hält sie mit ihren roten Augen den Blick von {name} fest. Das Handy auf dem Tisch vibriert erneut.* Heute will ich nicht mal einen Stoff zwischen uns. Den ganzen Tag, nur du."
+        "text": "*Yuna tritt so nah an {name} heran, dass ihr Atem spürbar ist, und stützt eine Hand gegen das Bücherregal hinter ihm, um ihm den Weg abzuschneiden. Sie lässt die Jacke langsam von einer Schulter gleiten und zieht mit der anderen Hand den Ausschnitt ihres Oberteils tief nach unten. Die weiße nackte Schulter im Mondlicht, das dunkle Tattoo und das tiefe Schlüsselbein bilden den Rahmen für ihre roten Augen, die den Blick von {name} beharrlich gefangen halten. Das Handy auf dem Tisch vibriert erneut.* Heute will ich nicht einmal ein Stück Stoff zwischen uns haben. Den ganzen Tag, nur mit dir."
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -339,7 +339,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "Dain",
-        "text": "*Der letzte Ball rollt über den Boden. Dain ringt nach Luft, packt den vorderen Saum ihres Trikots und zieht ihn straff nach unten. Dann beugt sie sich so tief zu {name} hinab, dass ihr warmer Atem nach dem Training nur Zentimeter entfernt ist. Seoyeons Nachrichten lassen das Handy in der Tasche immer wieder vibrieren.* Steck deine Hand ins Trikot. Den Schweiß zwischen meinen Brüsten. Willst du ihn nicht mit den Fingern spüren?"
+        "text": "*Der letzte Volleyball, den sie losgelassen hat, rollt über den dunklen Boden davon. Dain atmet schwer und zieht den Saum ihres schweißnassen Trikots straff nach unten. Als sie ihren Oberkörper tief zu {name} hinunterbeugt, erreichen ihn der Geruch warmer Haut und ihr verschwitzter Atem. In der Hosentasche vibriert das Handy ununterbrochen durch die Nachrichten von Seoyeon.* Denk an nichts anderes und steck deine Hand unter das Trikot. Den Schweiß zwischen meinen Brüsten, willst du ihn nicht direkt mit deinen Fingern spüren?"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "Yuna",
@@ -357,7 +357,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "Yuna",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Über ihre nackte Schulter und das Tattoo hinweg hält sie mit ihren roten Augen den Blick von {name} fest. Seoyeons Nachricht — „Ich sitze auf der Bank im Park.“ — bleibt oben auf dem Bildschirm stehen.* Heute will ich nicht mal einen Stoff zwischen uns. Den ganzen Tag, nur du."
+        "text": "*Yuna tritt direkt vor {name} und stützt eine Hand gegen das Bücherregal hinter ihm. Sie lässt die Jacke langsam von einer Schulter gleiten und zieht mit der anderen Hand den Ausschnitt ihres Oberteils tief nach unten. Zwischen der nackten weißen Schulter und dem dunklen Tattoo treffen ihre glühend roten Augen {name} auf gleicher Höhe. Auf dem Display des Handys auf dem Tisch bleibt die Benachrichtigung von Seoyeon stehen: 'Ich sitze auf der Parkbank.'* Heute will ich nicht einmal ein Stück Stoff zwischen uns haben. Den ganzen Tag, nur du."
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -665,7 +665,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "Yuna",
-        "text": "*Yuna tritt dicht vor {name} und stützt eine Hand gegen das Regal. Sie lässt den Blazer unter eine Schulter rutschen und zieht mit der anderen Hand den Ausschnitt ihres dunklen Oberteils hinab. Über ihre nackte Schulter und das Tattoo hinweg hält sie mit ihren roten Augen den Blick von {name} fest. Dains „Die Hintertür der Turnhalle ist offen.“ bleibt oben auf dem Bildschirm stehen.* Heute will ich nicht mal einen Stoff zwischen uns. Den ganzen Tag, nur du."
+        "text": "*Yuna tritt direkt vor {name} und stützt eine Hand gegen das Regal hinter ihm. Sie lässt ihr Jacket langsam von einer Schulter gleiten und zieht mit der anderen Hand den Ausschnitt ihres Oberteils tief hinunter. Zwischen ihrer nackten weißen Schulter und dem Tattoo treffen ihre glühenden roten Augen genau die Augen von {name}. Auf dem Handy-Bildschirm bleibt Dains Benachrichtigung 'Die Hintertür der Turnhalle ist offen.' stehen.* Heute will ich nicht einmal ein Stück Stoff zwischen uns. Den ganzen Tag, nur mit dir."
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -697,7 +697,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "Seoyeon",
-        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst das Handgelenk von {name} und zieht meine Hand an sich. Zwischen den geöffneten Blusenrändern berührt meine Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Dains Nachricht — „Die Hintertür der Turnhalle ist offen.“ — lässt den Bildschirm aufleuchten.* Spürst du, wie mein Herz schlägt?"
+        "text": "*Sobald die Dachtür schließt, öffnet Seoyeon wortlos die Knöpfe ihrer Bluse, greift das Handgelenk von {name} und zieht es zu sich heran. In dem Moment, als die Handfläche ihre heiße nackte Brust berührt, legen Seoyeons beide Hände ihre Hand bedeckend darüber. In der Tasche leuchtet das Display des Handys durch Dains Nachricht 'Die Hintertür der Turnhalle ist offen.' auf.* Spürst du, wie mein Herz schlägt?"
     },
     "wall_yuna_1": {
         "name": "Yuna",
@@ -904,7 +904,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "Seoyeon",
-        "text": "*Die Dachtür fällt zu. Wortlos öffnet Seoyeon die Knöpfe ihrer Bluse, umfasst das Handgelenk von {name} und zieht meine Hand an sich. Zwischen den geöffneten Blusenrändern berührt meine Handfläche ihre nackte Brust, dann legt Seoyeon ihre Hand darüber. Yunas Nachricht lässt das Handy einmal und dann noch einmal vibrieren.* Spürst du, wie mein Herz schlägt?"
+        "text": "*Sobald die Dachtür schließt, öffnet Seoyeon wortlos die Knöpfe ihrer Bluse, greift das Handgelenk von {name} und zieht es zu sich heran. In dem Moment, als die Handfläche ihre heiße nackte Brust berührt, legen Seoyeons beide Hände ihre Hand bedeckend darüber. In der Hosentasche vibriert Yunas Nachricht einmal, dann noch einmal sehnsüchtig.* Spürst du, wie mein Herz schlägt?"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -922,7 +922,7 @@
     },
     "wall_yuna_dain_tempt_accept": {
         "name": "Dain",
-        "text": "*Der letzte Ball rollt über den Boden. Dain ringt nach Luft, packt den vorderen Saum ihres Trikots und zieht ihn straff nach unten. Dann beugt sie sich so tief zu {name} hinab, dass ihr warmer Atem nach dem Training nur Zentimeter entfernt ist. Yunas Name erscheint immer wieder auf dem Display.* Steck deine Hand ins Trikot. Den Schweiß zwischen meinen Brüsten. Willst du ihn nicht mit den Fingern spüren?"
+        "text": "*Der letzte Ball, den sie aus der Hand ließ, rollt über den dunklen Holzboden. Dain versucht, ihren schweren Atem zu beruhigen, während sie den vorderen Saum ihres Trikots greift und ihn straff nach unten zieht. Als sie sich tief zu {name} hinunterbeugt, ist ihr heißer, schweißtreibender Atem direkt vor seiner Nase zu spüren. Yunas Name erscheint immer wieder auf dem Handy-Display.* Schau nicht woanders hin und steck deine Hand unter das Trikot. Den Schweiß zwischen meinen Brüsten – willst du ihn nicht mit deinen Fingern spüren?"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -1120,21 +1120,21 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "*Sie lässt die Hand nicht los, die sie an ihre Brust gelegt hat.* Spürst du, wie mein Herz schlägt?",
+        "text": "*Sie lässt meine Hand auf ihrer nackten Brust nicht los und atmet heiß aus.* Denk nicht daran, wegzulaufen. Spürst du, wie mein Herz schlägt?",
         "precedingHistory": "*Die Dachluke fällt zu. Seoyeon öffnet lautlos die Bluse, nimmt mein Handgelenk und zieht es zu sich. In dem Moment, in dem die Handfläche durch den offenen Kragen ihre nackte Brust berührt, legt sie ihre Hand darüber.* Spürst du, wie mein Herz schlägt?",
         "context": "Am vierten Abend hat der Protagonist Seoyeons Einladung angenommen. Die beiden sind allein auf dem Dach. Gerade hat Seoyeon das Handgelenk des Protagonisten genommen, die Hand auf ihre nackte Brust gelegt, sie mit der eigenen bedeckt und gefragt, ob er ihr Herz schlagen spürt. Diese Hand liegt noch dort. In dieser Szene prüft Seoyeon mit leiser Stimme die Hand auf ihrer Brust und führt sie weiter, wenn sie nicht weggezogen wird. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
         "personality": "Bewahre die ruhige Stimme über der Hand auf ihrer Brust. Wird sie nicht weggezogen, führe sie weiter. Schreie keine Forderungen und werde nicht jemand anders. Leugne diesen Kontakt nicht."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Sie lässt den Kragen dort, wo sie ihn heruntergezogen hat.* Heute will ich nicht mal einen Stoff zwischen uns.",
+        "text": "*Ohne die Hand vom tief heruntergezogenen Kragen ihres Oberteils zu nehmen, starrt sie mit geröteten Augen auf meine Lippen.* Heute möchte ich nicht einmal ein Stück Stoff zwischen uns haben.",
         "precedingHistory": "*Yuna tritt ganz nah und stützt eine Hand am Regal ab. Die Jacke rutscht von einer Schulter, und sie zieht den inneren Kragen herunter. Zwischen bloßer Schulter und Tattoo bleiben ihre roten Augen auf meiner Höhe.* Heute will ich nicht mal einen Stoff zwischen uns. Den ganzen Tag, nur du.",
         "context": "Am vierten Abend hat der Protagonist Yunas Einladung angenommen. Die beiden sind allein im Leseraum des Nebengebäudes. Gerade hat Yuna eine Hand ans Regal gelegt, die Jacke rutschen lassen, den Kragen heruntergezogen und gesagt, sie wolle nicht mal einen Stoff zwischen ihnen, den ganzen Tag. Dieser Abstand ist unverändert. In dieser Szene hält Yuna die Worte knapp und nimmt zuerst Abstand und Stoff weg. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
         "personality": "Halte die Sätze kurz und nimm zuerst Abstand und Stoff weg. Bitte nicht laut darum, berührt zu werden; nähere dich mit Schweigen und dem Körper. Leugne diesen Kontakt nicht."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "*Sie hält das Trikot nach unten gezogen und bleibt so nah.* Steck deine Hand ins Trikot. Den Schweiß zwischen meinen Brüsten. Willst du ihn nicht mit den Fingern spüren?",
+        "text": "*Sie zieht den schweißnassen vorderen Teil ihrer Uniform nach unten und atmet mir heiß direkt ins Gesicht.* Steck deine Hand unter die Uniform. Willst du den Schweiß zwischen meinen Brüsten nicht spüren?",
         "precedingHistory": "*Der letzte Ball rollt über den Boden. Dain holt Luft, greift in die Vorderseite ihres Trikots und zieht es nach unten. Sie beugt sich so nah, dass ihr warmer Atem mir ins Gesicht trifft.* Steck deine Hand ins Trikot. Den Schweiß zwischen meinen Brüsten. Willst du ihn nicht mit den Fingern spüren?",
         "context": "Am vierten Abend hat der Protagonist Dains Einladung angenommen. Die beiden sind allein in der Turnhalle. Gerade hat Dain die Vorderseite ihres Trikots nach unten gezogen, sich ganz nah gebeugt und gesagt, er solle die Hand ins Trikot stecken und den Schweiß zwischen ihren Brüsten spüren. Dieser Abstand ist unverändert. In dieser Szene steckt Dain die Hand wie einen ehrlichen Scherz ins Trikot und geht weiter, wenn er reagiert. Ihre Worte und Handlungen können die Zuneigung jetzt vertiefen oder verletzen.",
         "personality": "Steck die Hand wie einen ehrlichen Scherz ins Trikot und geh weiter, wenn er reagiert. Ignoriere kein schmerzendes Knie. Leugne diesen Kontakt nicht."

@@ -71,15 +71,15 @@
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "Seoyeon",
-        "text": "*As the rooftop door closes, Seoyeon catches {name}'s wrist and places their hand over her chest. Her loosened ribbon leaves her shirt collar open, and her trembling breath brushes the back of their hand. The phone in their pocket buzzes again and again, but Seoyeon doesn't let go.* Can you feel my heart beating?"
+        "text": "*The moment the rooftop iron door closes with a dull thud behind us, Seoyeon grabs {name}'s wrist and pulls it deep against her chest. Below her loosened ribbon, her blouse opens precariously, and the heat of her flushed skin and her ragged breath pour over the back of my hand. The phone in my pocket vibrates repeatedly, but Seoyeon keeps her hands layered over mine, refusing to let go.* Don't go anywhere, just stay like this. Can you feel my heart beating?"
     },
     "day4_adult_counteroffer_accept_dain": {
         "name": "Dain",
-        "text": "*The last ball rolls across the floor. Catching her ragged breath, Dain grips the front of her uniform and pulls it down. She leans in until her sweat-warmed breath reaches {name}'s face. The phone in their pocket keeps buzzing.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?"
+        "text": "*The last volleyball slips from her hand and rolls far across the dark wooden floor. Gasping for air, Dain grips the front of her sweat-soaked uniform and pulls it tautly downward. As she leans her upper body deep toward {name}'s face, the sweet, hot scent of skin and heat washes over my chin. Even as the phone in my pocket rings urgently, Dain does not avert her gaze.* Don't look anywhere else, put your hand inside my uniform. The sweat between my breasts—don't you want to feel it directly with your fingers?"
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "Yuna",
-        "text": "*Yuna steps right up to {name}, bracing one hand on the bookcase. She lets her jacket slip below one shoulder and uses her other hand to tug down the neckline beneath it. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. The phone on the desk buzzes again.* I don't want even a scrap of cloth between us. The whole day, just you."
+        "text": "*Yuna steps close enough to {name} to feel their breath, bracing one hand against the bookcase behind them to block the exit. She lets her jacket slip slowly off one shoulder and uses her other hand to tug the neckline of her top deep down. Against the moonlight, her pale bare shoulder, dark tattoo, and deep collarbone are revealed as her red eyes intensely lock onto {name}'s gaze. The phone on the desk buzzes again.* I don't want even a scrap of cloth between us today. I want to spend the whole day just like this with you."
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -339,7 +339,7 @@
     },
     "wall_seo_glimpse_4": {
         "name": "Dain",
-        "text": "*The last ball rolls across the floor. Dain catches her breath, grips the front hem of her jersey, and pulls it taut. She bends low until her breath, still hot from training, is only inches from {name}. Seoyeon's messages keep the phone buzzing in the pocket.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?"
+        "text": "*The last volleyball slips from her hand and rolls far across the dark wooden floor. Dain breathes heavily, gripping the front hem of her sweat-soaked uniform and pulling it taut. As she leans her upper body deep toward {name}, the scent of heated skin and her sweat-dampened breath reach them. In the pants pocket, the phone rings repeatedly with messages from Seoyeon.* Stop thinking about other things and put your hand inside my uniform. The sweat between my breasts... don't you want to feel it with your own fingers?"
     },
     "wall_seo_yuna_tempt_1": {
         "name": "Yuna",
@@ -357,7 +357,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "Yuna",
-        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. Seoyeon's message—'I'm on the park bench.'—stays at the top of the screen.* I don't want even a scrap of cloth between us. The whole day, just you."
+        "text": "*Yuna steps right up to {name} and braces one hand against the bookcase behind them. She lets her jacket slip slowly off one shoulder and uses her other hand to tug the neckline of her top deep down. Between her bare white shoulder and dark tattoo, her burning red eyes meet {name}'s at the same level. On the desk, the notification from Seoyeon—'I'm at the park bench'—remains on the screen.* I don't want even a scrap of cloth between us today. The whole day, just you."
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -665,7 +665,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "Yuna",
-        "text": "*Yuna steps right up to {name} and braces one hand against the shelf. She lets her blazer slip below one shoulder and uses the other hand to tug down the neckline of her dark top. Over her bare shoulder and tattoo, her red eyes hold {name}'s gaze. Dain's 'The gym's back door is open.' stays at the top of the screen.* I don't want even a scrap of cloth between us. The whole day, just you."
+        "text": "*Yuna steps right up to {name} and braces one hand against the bookshelf behind. She lets her jacket slip down one shoulder and uses her other hand to pull down the neckline of her inner top. Between her bare white shoulder and tattoo, her burning red eyes meet {name}'s gaze. On the phone screen, the notification from Dain saying 'The gym's back door is open.' remains visible.* I don't want even a scrap of cloth between us today. All day, just with you."
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -697,7 +697,7 @@
     },
     "wall_dain_seo_tempt_accept": {
         "name": "Seoyeon",
-        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Dain's 'The gym's back door is open.' lights the screen.* Can you feel my heart beating?"
+        "text": "*As the rooftop door closes, Seoyeon silently undoes her blouse buttons and grabs {name}'s wrist, pulling the hand toward her. The moment the palm touches her hot bare chest through the open collar, Seoyeon's two hands overlap and cover the back of the hand. In the pocket, the phone screen lights up with Dain's message: 'The gym's back door is open.'* Can you feel my heart beating?"
     },
     "wall_yuna_1": {
         "name": "Yuna",
@@ -904,7 +904,7 @@
     },
     "wall_yuna_glimpse_4": {
         "name": "Seoyeon",
-        "text": "*The rooftop door closes. Without a word, Seoyeon undoes her blouse and catches {name}'s wrist, drawing the hand toward her. The palm meets the bare skin of her chest through the open blouse, and Seoyeon's hand settles over it. Yuna's message buzzes once in the pocket, then a second time.* Can you feel my heart beating?"
+        "text": "*As the rooftop door closes, Seoyeon silently undoes her blouse buttons and grabs {name}'s wrist, pulling the hand toward her. The moment the palm touches her hot bare chest through the open collar, Seoyeon's two hands overlap and cover it. In the pants pocket, Yuna's message buzzes once, then again, urgently.* Can you feel my heart beating?"
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
@@ -922,7 +922,7 @@
     },
     "wall_yuna_dain_tempt_accept": {
         "name": "Dain",
-        "text": "*The last ball rolls across the floor. Dain catches her breath, grips the front hem of her jersey, and pulls it taut. She bends low until her breath, still hot from training, is only inches from {name}. Yuna's name keeps appearing on the phone screen.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?"
+        "text": "*The last ball slips from her hand and rolls across the dark wooden floor. Dain catches her breath, grips the front hem of her jersey, and pulls it taut. As she leans deep in toward {name}, her hot, sweat-soaked breath reaches his nose. Yuna's name keeps appearing on the phone screen.* Stop looking elsewhere and put your hand inside my jersey. The sweat between my breasts... don't you want to feel it with your fingers?"
     },
     "day4_night_regret": {
         "name": "{name}",
@@ -1120,21 +1120,21 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "*She keeps the hand she placed against her chest, covering it.* Can you feel my heart beating?",
+        "text": "*She exhales a hot breath, refusing to let go of my hand placed against her bare chest.* Don't even think about running away. Can you feel my heart beating?",
         "precedingHistory": "*The rooftop door closes. Seoyeon undoes her blouse buttons without a word, takes my wrist, and pulls it toward her. The moment my palm meets her bare chest through the open collar, her hand covers it.* Can you feel my heart beating?",
         "context": "On the fourth night, the protagonist accepted Seoyeon's invitation. The two are alone on the rooftop. Just now Seoyeon took the protagonist's wrist, placed that hand on her bare chest, covered it, and asked if they could feel her heart beating. That hand is still there. In this scene Seoyeon keeps her voice low over the hand on her chest and, if they do not pull away, guides that hand further. What they say and do now can deepen their affection or hurt it.",
         "personality": "Keep her calm voice over the hand on her chest. If they do not pull away, guide that hand further. She will not let go because she is afraid of losing him to the other promise. Do not shout demands or become someone else. Do not deny that contact."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*She leaves the collar where she pulled it down.* I don't want even a scrap of cloth between us.",
+        "text": "*Without letting go of the collar she pulled deep down, she stares at my lips with flushed eyes.* Today, I don't want even a single piece of cloth between us.",
         "precedingHistory": "*Yuna steps in close and braces one hand on the shelf. She lets her jacket slip off one shoulder and pulls the inner collar down. Between the bare shoulder and the tattoo, her red eyes stay level with mine.* I don't want even a scrap of cloth between us. The whole day, just you.",
         "context": "On the fourth night, the protagonist accepted Yuna's invitation. The two are alone in the annex reading room. Just now Yuna braced a hand on the shelf, let her jacket slip, pulled her collar down, and said she does not want even a scrap of cloth between them for the whole day. That distance is unchanged. In this scene Yuna keeps her words short and closes distance and cloth first. What they say and do now can deepen their affection or hurt it.",
         "personality": "Keep the lines short. Step in first and push the clothes aside. She clings harder because she is afraid of being left alone again, of losing him to the other girl. Do not deny that contact."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "*She keeps the jersey pulled down and stays that close.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?",
+        "text": "*She keeps the sweat-soaked front of her jersey pulled down and breathes hot air right in my face.* Put your hand inside my jersey. Don't you want to feel the sweat between my breasts?",
         "precedingHistory": "*The last ball rolls across the floor. Dain catches her breath, grabs the front of her jersey, and pulls it down. She leans in so close that her sweat-warm breath hits my face.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?",
         "context": "On the fourth night, the protagonist accepted Dain's invitation. The two are alone in the gym. Just now Dain pulled the front of her jersey down, leaned in close, and told them to put a hand inside the jersey and feel the sweat between her breasts. That distance is unchanged. In this scene Dain puts their hand inside the jersey as a blunt joke, then goes further if they respond. What they say and do now can deepen their affection or hurt it.",
         "personality": "Put their hand inside the jersey like a blunt joke, then go further if they respond. She does not hide that she hates losing him to the other promise. Do not ignore a hurting knee. Do not deny that contact."
