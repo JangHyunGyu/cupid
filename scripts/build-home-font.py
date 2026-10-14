@@ -38,6 +38,9 @@ def main():
     home_chars = set()
     for page in sorted(ROOT.glob('index*.html')):
         home_chars.update(map(ord, page.read_text(encoding='utf-8')))
+    # Home copy injected at runtime (school link and its status messages).
+    for script in ['assets/js/school-bridge.js']:
+        home_chars.update(map(ord, (ROOT / script).read_text(encoding='utf-8')))
     # Keep Latin, combining marks and punctuation together for text shaping.
     requested = home_chars | set(range(0x250)) | set(range(0x300, 0x370)) | set(range(0x1E00, 0x1F00)) | set(range(0x2000, 0x2070))
     points = available & requested
