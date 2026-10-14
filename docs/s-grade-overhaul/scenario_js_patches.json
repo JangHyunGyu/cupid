@@ -1,0 +1,37 @@
+{
+    "day5_patches": [
+        {
+            "file": "assets/js/scenario/day5_4_night.js",
+            "node": "nurse_perfect_pills_black_4",
+            "issue": "nurse_perfect_pills_black_4 sets redirectNevergrad: true but omits next: 'nurse_perfect_14' (or fallback credit transition), which can leave the scenario engine without a valid next node if redirectNevergrad does not immediately halt scene progression.",
+            "current": {
+                "character": "riin_Cold.png",
+                "background": "room_night",
+                "bgm": "nerve.mp3",
+                "redirectNevergrad": true
+            },
+            "recommended_patch": {
+                "character": "riin_Cold.png",
+                "background": "room_night",
+                "bgm": "nerve.mp3",
+                "redirectNevergrad": true,
+                "next": "nurse_perfect_14"
+            }
+        },
+        {
+            "file": "assets/js/scenario/day5_3_afterschool.js",
+            "node": "after5_last_chance_seo_history_check / after5_last_chance_dain_history_check / after5_last_chance_yuna_history_check",
+            "issue": "In day5_3_afterschool.js, the history check nodes route to *_postponed / *_tentative / *_distance BEFORE the protagonist steps forward and calls the heroine's name (after5_last_chance_2_b -> 2_c -> 2_d for Seoyeon, 2_k -> 2_l for Dain, yuna_1 -> yuna_2 for Yuna). Note: ko/day5_3_afterschool.json has been written so both execution orders read naturally without contradiction, but moving the history check after the heroine turns around (after 2_d / 2_l / yuna_2) is even cleaner.",
+            "current": {
+                "after5_last_chance_seo_aff_check_branch": "after5_last_chance_seo_history_check -> _postponed/_tentative/_distance -> after5_last_chance_2_b -> 2_c -> 2_d",
+                "after5_last_chance_dain_aff_check_branch": "after5_last_chance_dain_history_check -> _postponed/_tentative/_distance -> after5_last_chance_2_k -> 2_l",
+                "after5_last_chance_yuna_aff_check_branch": "after5_last_chance_yuna_history_check -> _postponed/_tentative/_distance -> after5_last_chance_yuna_1 -> yuna_2"
+            },
+            "recommended_patch": {
+                "seo_sequence": "after5_last_chance_2_b -> after5_last_chance_2_c -> after5_last_chance_2_d -> after5_last_chance_seo_history_check -> _postponed/_tentative/_distance -> after5_last_chance_2_e",
+                "dain_sequence": "after5_last_chance_2_k -> after5_last_chance_2_l -> after5_last_chance_dain_history_check -> _postponed/_tentative/_distance -> after5_last_chance_2_m",
+                "yuna_sequence": "after5_last_chance_yuna_1 -> after5_last_chance_yuna_2 -> after5_last_chance_yuna_history_check -> _postponed/_tentative/_distance -> after5_last_chance_yuna_3"
+            }
+        }
+    ]
+}

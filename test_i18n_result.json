@@ -2,16 +2,7357 @@
   "stats": {
     "byLang": {
       "ko": 0,
-      "en": 0,
-      "ja": 0,
-      "es": 0,
-      "fr": 0,
-      "de": 0,
-      "pt": 0,
-      "zh": 0
+      "en": 131,
+      "ja": 131,
+      "es": 131,
+      "fr": 131,
+      "de": 131,
+      "pt": 131,
+      "zh": 131
     },
-    "bySeverity": {},
-    "byType": {}
+    "bySeverity": {
+      "WARNING": 917
+    },
+    "byType": {
+      "ITALIC_MISSING": 917
+    }
   },
-  "issues": []
+  "issues": [
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_6",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_6",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_6",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_6",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_6",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_6",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "morning3_seo_gate_6",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "morning3_yuna_gate_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "morning3_react_yuna_1",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "morning3_react_yuna_1",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "morning3_react_yuna_1",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "morning3_react_yuna_1",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "morning3_react_yuna_1",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "morning3_react_yuna_1",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "morning3_react_yuna_1",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_d",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_d",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_d",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_d",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_d",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_d",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_4_d",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_1",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_1",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_1",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_1",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_1",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_1",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_1",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_4_e",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_4_e",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_4_e",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_4_e",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_4_e",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_4_e",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "hidden_homeroom_d3_reveal_4_e",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_1_d",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_1_d",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_1_d",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_1_d",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_1_d",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_1_d",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_1_d",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_k",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_k",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_k",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_k",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_k",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_k",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_5_k",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice1_c",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice1_c",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice1_c",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice1_c",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice1_c",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice1_c",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice1_c",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice2_c",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice2_c",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice2_c",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice2_c",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice2_c",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice2_c",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_1_morning",
+      "node": "hidden_nurse_d3_choice2_c",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_5",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_5",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_5",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_5",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_5",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_5",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_meal_5",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_seo_1",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_seo_1",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_seo_1",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_seo_1",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_seo_1",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_seo_1",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_seo_1",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_skin_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_chase_dain_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_chase_dain_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_chase_dain_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_chase_dain_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_chase_dain_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_chase_dain_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_chase_dain_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_focus_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_focus_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_focus_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_focus_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_focus_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_focus_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_seo_focus_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_dain_skin_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_dain_skin_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_dain_skin_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_dain_skin_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_dain_skin_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_dain_skin_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_dain_skin_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_dain_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_dain_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_dain_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_dain_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_dain_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_dain_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_dain_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_1",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_1",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_1",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_1",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_1",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_1",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_1",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_yuna_skin_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_yuna_skin_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_yuna_skin_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_yuna_skin_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_yuna_skin_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_yuna_skin_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_yuna_skin_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_give_yuna_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_6",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_6",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_6",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_6",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_6",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_6",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_6",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_7",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_7",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_7",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_7",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_7",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_7",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_7",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_14",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_14",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_14",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_14",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_14",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_14",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_14",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_honest_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_honest_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_honest_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_honest_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_honest_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_honest_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_honest_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_excuse_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_excuse_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_excuse_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_excuse_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_excuse_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_excuse_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_2_lunch",
+      "node": "lunch3_expose_excuse_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_reject_for_seo_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_8",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_8",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_8",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_8",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_8",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_8",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_8",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_pity_trap_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_pity_trap_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_pity_trap_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_pity_trap_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_pity_trap_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_pity_trap_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_pity_trap_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_5",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_5",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_5",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_5",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_5",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_5",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_5",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_9",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_9",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_9",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_9",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_9",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_9",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_9",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_11",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_11",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_11",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_11",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_11",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_11",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_correct_11",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_6",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_6",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_6",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_6",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_6",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_6",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_6",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_4",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_4",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_4",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_4",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_4",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_4",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_4",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_7",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_7",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_7",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_7",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_7",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_7",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_7",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_12",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_12",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_12",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_12",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_12",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_12",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_correct_12",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_4",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_4",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_4",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_4",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_4",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_4",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_4",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_6",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_6",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_6",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_6",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_6",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_6",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_6",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_8",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_8",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_8",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_8",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_8",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_8",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_correct_8",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell_8",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell_8",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell_8",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell_8",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell_8",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell_8",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_dilemma_tell_8",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_tell_confirm",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_tell_confirm",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_tell_confirm",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_tell_confirm",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_tell_confirm",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_tell_confirm",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_tell_confirm",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_5_b",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_5_b",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_5_b",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_5_b",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_5_b",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_5_b",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_5_b",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_admit_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_admit_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_admit_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_admit_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_admit_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_admit_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_admit_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_excuse",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_excuse",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_excuse",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_excuse",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_excuse",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_excuse",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_excuse",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_lie",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_lie",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_lie",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_lie",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_lie",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_lie",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_confront_lie",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_2b",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_2b",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_2b",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_2b",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_2b",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_2b",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_2b",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_3_b",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_3_b",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_3_b",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_3_b",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_3_b",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_3_b",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "haeun_warn_3_b",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_overcare_react",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_overcare_react",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_overcare_react",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_overcare_react",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_overcare_react",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_overcare_react",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_seo_overcare_react",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_control_react",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_control_react",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_control_react",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_control_react",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_control_react",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_control_react",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_yuna_control_react",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_control_react",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_control_react",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_control_react",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_control_react",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_control_react",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_control_react",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day3_3_afterschool",
+      "node": "after3_dain_control_react",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day4_2_lunch",
+      "node": "date_seo_end_d",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day4_2_lunch",
+      "node": "date_seo_end_d",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day4_2_lunch",
+      "node": "date_seo_end_d",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day4_2_lunch",
+      "node": "date_seo_end_d",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day4_2_lunch",
+      "node": "date_seo_end_d",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day4_2_lunch",
+      "node": "date_seo_end_d",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day4_2_lunch",
+      "node": "date_seo_end_d",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day4_2_lunch",
+      "node": "date_dain_end_c",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day4_2_lunch",
+      "node": "date_dain_end_c",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day4_2_lunch",
+      "node": "date_dain_end_c",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day4_2_lunch",
+      "node": "date_dain_end_c",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day4_2_lunch",
+      "node": "date_dain_end_c",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day4_2_lunch",
+      "node": "date_dain_end_c",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day4_2_lunch",
+      "node": "date_dain_end_c",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_mid",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_mid",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_mid",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_mid",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_mid",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_mid",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_mid",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_low",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_low",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_low",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_low",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_low",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_low",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_low",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_1",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_1",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_1",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_1",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_1",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_1",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_1",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "morning5_dain_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_1_b",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_1_b",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_1_b",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_1_b",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_1_b",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_1_b",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_1_b",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_5",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_5",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_5",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_5",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_5",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_5",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_5",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_4",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_4",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_4",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_4",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_4",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_4",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_4",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_6",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_6",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_6",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_6",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_6",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_6",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_6",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_10",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_10",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_10",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_10",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_10",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_10",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "hidden_homeroom_d5_correct_10",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_1_e",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_1_e",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_1_e",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_1_e",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_1_e",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_1_e",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_1_e",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_6",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_6",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_6",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_6",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_6",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_6",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "hidden_nurse_d5_6",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "morning5_harem_fallout_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "morning5_harem_fallout_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "morning5_harem_fallout_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "morning5_harem_fallout_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "morning5_harem_fallout_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "morning5_harem_fallout_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "morning5_harem_fallout_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_neg",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_neg",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_neg",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_neg",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_neg",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_neg",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_1_morning",
+      "node": "morning5_mood_neg",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_4",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_4",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_4",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_4",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_4",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_4",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_4",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_6",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_6",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_6",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_6",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_6",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_6",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_6",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_14",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_14",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_14",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_14",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_14",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_14",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_14",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_4",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_4",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_4",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_4",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_4",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_4",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_4",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_9",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_9",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_9",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_9",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_9",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_9",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_9",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_10",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_10",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_10",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_10",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_10",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_10",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_10",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_end",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_end",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_end",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_end",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_end",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_end",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_end",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_1",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_1",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_1",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_1",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_1",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_1",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_1",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_4",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_4",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_4",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_4",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_4",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_4",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_event_4",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_event_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_event_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_event_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_event_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_event_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_event_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_yuna_event_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_event_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_event_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_event_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_event_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_event_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_event_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_dain_event_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_affinity_80",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_affinity_80",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_affinity_80",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_affinity_80",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_affinity_80",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_affinity_80",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_2_lunch",
+      "node": "tour_seo_affinity_80",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_react_yuna_g",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_react_yuna_g",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_react_yuna_g",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_react_yuna_g",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_react_yuna_g",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_react_yuna_g",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_confess_react_yuna_g",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_farewell_seo_high_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_farewell_seo_high_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_farewell_seo_high_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_farewell_seo_high_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_farewell_seo_high_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_farewell_seo_high_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_farewell_seo_high_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_postponed",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_postponed",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_postponed",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_postponed",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_postponed",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_postponed",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_postponed",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_tentative",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_tentative",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_tentative",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_tentative",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_tentative",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_tentative",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_tentative",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_distance",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_distance",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_distance",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_distance",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_distance",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_distance",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_seo_distance",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_postponed",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_postponed",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_postponed",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_postponed",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_postponed",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_postponed",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_postponed",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_tentative",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_tentative",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_tentative",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_tentative",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_tentative",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_tentative",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_tentative",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_distance",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_distance",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_distance",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_distance",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_distance",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_distance",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_dain_distance",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_postponed",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_postponed",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_postponed",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_postponed",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_postponed",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_postponed",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_postponed",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_tentative",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_tentative",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_tentative",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_tentative",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_tentative",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_tentative",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_tentative",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_distance",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_distance",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_distance",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_distance",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_distance",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_distance",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "after5_last_chance_yuna_distance",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_seoyeon_response",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_seoyeon_response",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_seoyeon_response",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_seoyeon_response",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_seoyeon_response",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_seoyeon_response",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_seoyeon_response",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_yuna_response",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_yuna_response",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_yuna_response",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_yuna_response",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_yuna_response",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_yuna_response",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_yuna_response",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_dain_response",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_dain_response",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_dain_response",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_dain_response",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_dain_response",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_dain_response",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_dain_response",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_teacher_response",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_teacher_response",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_teacher_response",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_teacher_response",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_teacher_response",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_teacher_response",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_teacher_response",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_nurse_response",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_nurse_response",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_nurse_response",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_nurse_response",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_nurse_response",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_nurse_response",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_3_afterschool",
+      "node": "day5_haeun_switch_nurse_response",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "harem_1",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "harem_1",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "harem_1",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "harem_1",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "harem_1",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "harem_1",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "harem_1",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_2c",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_2c",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_2c",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_2c",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_2c",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_2c",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_2c",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_3f",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_3f",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_3f",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_3f",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_3f",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_3f",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_3f",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_4g",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_4g",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_4g",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_4g",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_4g",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_4g",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_homeroom_4g",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3_c",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3_c",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3_c",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3_c",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3_c",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3_c",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_3_c",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_4_f",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_4_f",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_4_f",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_4_f",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_4_f",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_4_f",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_4_f",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_6",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_6",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_6",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_6",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_6",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_6",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_true_homeroom_6",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_3b",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_3b",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_3b",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_3b",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_3b",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_3b",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_3b",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_5",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_5",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_5",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_5",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_5",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_5",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_perfect_nurse_5",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_2_c",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_2_c",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_2_c",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_2_c",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_2_c",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_2_c",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_2_c",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_8_e",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_8_e",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_8_e",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_8_e",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_8_e",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_8_e",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "hidden_true_nurse_8_e",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "perfect_seo_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "perfect_seo_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "perfect_seo_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "perfect_seo_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "perfect_seo_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "perfect_seo_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "perfect_seo_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "bitter_seo_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "bitter_seo_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "bitter_seo_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "bitter_seo_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "bitter_seo_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "bitter_seo_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "bitter_seo_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "true_seo_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "true_seo_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "true_seo_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "true_seo_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "true_seo_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "true_seo_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "true_seo_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "true_seo_5",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "true_seo_5",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "true_seo_5",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "true_seo_5",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "true_seo_5",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "true_seo_5",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "true_seo_5",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "true_seo_6b",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "true_seo_6b",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "true_seo_6b",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "true_seo_6b",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "true_seo_6b",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "true_seo_6b",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "true_seo_6b",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "perfect_yuna_3",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "perfect_yuna_3",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "perfect_yuna_3",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "perfect_yuna_3",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "perfect_yuna_3",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "perfect_yuna_3",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "perfect_yuna_3",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "true_yuna_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "true_yuna_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "true_yuna_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "true_yuna_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "true_yuna_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "true_yuna_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "true_yuna_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "true_yuna_6b",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "true_yuna_6b",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "true_yuna_6b",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "true_yuna_6b",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "true_yuna_6b",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "true_yuna_6b",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "true_yuna_6b",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "perfect_dain_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "perfect_dain_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "perfect_dain_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "perfect_dain_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "perfect_dain_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "perfect_dain_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "perfect_dain_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "bitter_dain_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "bitter_dain_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "bitter_dain_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "bitter_dain_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "bitter_dain_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "bitter_dain_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "bitter_dain_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "true_dain_8",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "true_dain_8",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "true_dain_8",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "true_dain_8",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "true_dain_8",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "true_dain_8",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "true_dain_8",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "good_1_yuna",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "good_1_yuna",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "good_1_yuna",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "good_1_yuna",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "good_1_yuna",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "good_1_yuna",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "good_1_yuna",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_0",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_0",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_0",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_0",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_0",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_0",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_0",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_pink_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_pink_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_pink_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_pink_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_pink_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_pink_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "nurse_perfect_pills_pink_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "date_perfect_dain_gym_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "date_perfect_dain_gym_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "date_perfect_dain_gym_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "date_perfect_dain_gym_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "date_perfect_dain_gym_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "date_perfect_dain_gym_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "date_perfect_dain_gym_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "date_perfect_teacher_museum_2",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "date_perfect_teacher_museum_2",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "date_perfect_teacher_museum_2",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "date_perfect_teacher_museum_2",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "date_perfect_teacher_museum_2",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "date_perfect_teacher_museum_2",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "date_perfect_teacher_museum_2",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "date_choice_perfect_nurse",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "date_choice_perfect_nurse",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "date_choice_perfect_nurse",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "date_choice_perfect_nurse",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "date_choice_perfect_nurse",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "date_choice_perfect_nurse",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "date_choice_perfect_nurse",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "date_true_yuna_roof_1",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "date_true_yuna_roof_1",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "date_true_yuna_roof_1",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "date_true_yuna_roof_1",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "date_true_yuna_roof_1",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "date_true_yuna_roof_1",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "date_true_yuna_roof_1",
+      "detail": "ko에 *2개, zh에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "en",
+      "file": "day5_4_night",
+      "node": "true_yuna_6_established",
+      "detail": "ko에 *2개, en에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "ja",
+      "file": "day5_4_night",
+      "node": "true_yuna_6_established",
+      "detail": "ko에 *2개, ja에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "es",
+      "file": "day5_4_night",
+      "node": "true_yuna_6_established",
+      "detail": "ko에 *2개, es에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "fr",
+      "file": "day5_4_night",
+      "node": "true_yuna_6_established",
+      "detail": "ko에 *2개, fr에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "de",
+      "file": "day5_4_night",
+      "node": "true_yuna_6_established",
+      "detail": "ko에 *2개, de에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "pt",
+      "file": "day5_4_night",
+      "node": "true_yuna_6_established",
+      "detail": "ko에 *2개, pt에 0개"
+    },
+    {
+      "severity": "WARNING",
+      "type": "ITALIC_MISSING",
+      "lang": "zh",
+      "file": "day5_4_night",
+      "node": "true_yuna_6_established",
+      "detail": "ko에 *2개, zh에 0개"
+    }
+  ]
 }
