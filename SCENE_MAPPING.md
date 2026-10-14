@@ -44,7 +44,7 @@
 | sojeong_flashback.png | Day2 밤 소정이 플래시백 |
 | dain_hurt_event1.png | Day3 방과후 다인 무릎 부상 CG |
 | dain_depression_event1.png | Day4 밤 다인 울음 CG |
-| nurse_home_event1.png | 보건 PERFECT/TRUE END 이벤트 CG |
+| ~~nurse_home_event1.png~~ | **은퇴(2026-10-08)** — 시나리오·갤러리 미사용, 원본과 해금 기록만 보존 |
 
 ### 엔딩 CG 배경 (23종)
 
@@ -803,7 +803,7 @@
 |--------|------|--------|-----------|
 | hidden_perfect_nurse_1 | nurse_room.png | 없음 | 졸업 후, night |
 | hidden_perfect_nurse_2 | **nurse_house.png** | nurse_normal | 보건선생님 집, 카디건+맨발 |
-| hidden_perfect_nurse_3 ~ 4 | **nurse_home_event1.png** | 없음 | 이벤트 CG |
+| hidden_perfect_nurse_3 ~ 4 | cafe.png | nurse_normal | 카페 (기존 `nurse_home_event1.png`는 2026-10-08 은퇴) |
 | hidden_perfect_nurse_4b ~ 5 | **ending_perfect_nurse.png** | 없음 | 엔딩 CG |
 
 ---
@@ -840,7 +840,7 @@
 |--------|------|--------|-----------|
 | hidden_true_nurse_1 | school.png | 없음 | 졸업식 |
 | hidden_true_nurse_2 ~ 6 | cafe.png | nurse_normal | 카페, 밴드 없이 |
-| hidden_true_nurse_7 | **nurse_home_event1.png** | nurse_normal | 이벤트 CG |
+| hidden_true_nurse_7 | street.png | nurse_normal | 거리 (기존 `nurse_home_event1.png`는 2026-10-08 은퇴) |
 | hidden_true_nurse_8 | **ending_true_nurse.png** | 없음 | 엔딩 CG |
 
 ---

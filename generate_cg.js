@@ -36,6 +36,9 @@ const CG_PROMPTS = [
         prompt: `이 캐릭터를 엄격한 레퍼런스로 사용하고 정확한 외형을 유지한다: ${DAIN_HAIR_LOCK}, 밝은 초록색 눈, 건강하게 그을린 피부, 유니폼을 팽팽하게 당기는 매우 큰 상체 볼륨과 동일한 체형 비율, 주황색과 남색 라인이 있는 흰색 ETAURS 19번 배구 유니폼, 남색 돌핀 핫팬츠, 왼팔에만 검은 암슬리브 착용, 오른팔은 맨팔. 애니메이션 비주얼 노벨 이벤트 CG를 생성한다: 석양의 야외 공원. 그녀는 한 손으로 눈가의 눈물을 닦고, 다른 손으로 작별 인사를 하며 손을 흔든다. 눈물이 고인 눈이지만 애써 씩씩한 미소를 짓고 있다. 전경에는 짧은 다크 브라운 머리와 남색 블레이저를 입은 남학생의 뒷모습 실루엣이 그녀를 바라보고 있다. 석양 하늘, 따뜻하지만 쓸쓸한 조명. 달콤쌉싸름한 이별 분위기. 1024x1024, 애니메이션 스타일, 텍스트 없음, 워터마크 없음.`
     },
     {
+        // 2026-10-08 은퇴 CG, 원본 그림과 예전 해금 기록 보존용 (docs/qa/review-fixes-20261008.json)
+        // 전체 실행 시 원본 덮어쓰기 방지용 플래그, 재생성은 id를 직접 지정할 때만 실행
+        retired: true,
         id: 'nurse_home_event1',
         output: 'assets/images/background/nurse_home_event1.png',
         refImage: 'assets/images/characters/nurse_normal.webp',
@@ -140,6 +143,11 @@ async function main() {
     const target = process.argv[2]; // optional: run specific CG by id
     for (const cg of CG_PROMPTS) {
         if (target && cg.id !== target) continue;
+        // 은퇴 CG(retired: true)는 id를 직접 지정한 경우에만 재생성
+        if (!target && cg.retired) {
+            console.log(`[은퇴 CG 건너뜀] ${cg.id}`);
+            continue;
+        }
         const success = await generateCG(cg);
         if (!success) console.error(`FAILED: ${cg.id}`);
     }

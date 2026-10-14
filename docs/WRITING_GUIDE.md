@@ -76,7 +76,8 @@
 - 보건선생님 집: `nurse_house.png`
 - 선생님 방: `teacher_room.png`
 - 학생 방: `student_room.png`
-- **이벤트 CG**: `nurse_home_event1.png`, `dain_hurt_event1.png`, `dain_depression_event1.png`
+- **이벤트 CG**: `dain_hurt_event1.png`, `dain_depression_event1.png`
+  - `nurse_home_event1.png`: 2026-10-08 은퇴. 시나리오·갤러리에서 사용하지 않음 (`docs/qa/review-fixes-20261008.json`)
 
 ### 캐릭터 이미지 실제 외형 (스프라이트 분석 기준)
 
@@ -105,7 +106,7 @@
 #### 보건선생님 (nurse_*.png)
 - **외형**: 보라빛 칼단발, **안경**, 흰 가운+핑크 블라우스, 목에 **청진기**, 앉아있는 포즈
 - **표정 특징**: normal(안경 만지며 빙긋), shy(볼 빨개지며 안경 김 서림), angry(안경 위로 쏘아봄)
-- **이벤트 CG**: `nurse_home_event1.png`(핑크 가디건 사복, 소파에서 커피 마시는 밤 장면)
+- **이벤트 CG**: 없음. `nurse_home_event1.png`(핑크 가디건 사복, 소파에서 커피 마시는 밤 장면)는 2026-10-08 은퇴, 엔딩은 `ending_perfect_nurse.png`·`ending_true_nurse.png` 사용
 - **시나리오 활용**: 안경을 고쳐 쓰며 장난치는 동작, 청진기를 주인공에게 갖다 대는 장면, 안경 너머로 진지하게 바라보는 묘사
 
 ### 캐릭터 스프라이트 표시 규칙 (실제 파일 기준)
