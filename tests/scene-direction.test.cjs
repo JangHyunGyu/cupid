@@ -125,3 +125,23 @@ test('missing optional SFX does not persist an application error',async()=>{
  assert.equal(await h.sound._loadBuffer('assets/audio/sfx/missing.wav'),null);
  assert.equal(reports,0);
 });
+
+test('stale engine audio cues never fetch bgm/none or sfx/synth:* files',async()=>{
+ const h=soundHarness();const fetched=[];let reports=0;
+ h.sound._fetchAudioArrayBuffer=async path=>{fetched.push(path);throw new Error('HTTP 404');};
+ h.sound._reportSoundLoadError=()=>{reports++;};
+ const playing=h.context.createBufferSource(),gain=h.context.createGain();
+ h.sound.bgmSourceNode=playing;h.sound.bgmGain=gain;h.sound.currentBgmPath='assets/audio/bgm/daily.mp3';
+ await h.sound.playBgm('assets/audio/bgm/none');
+ assert.equal(h.sound.currentBgmPath,'');assert.equal(h.sound.bgmSourceNode,null);
+ for(const cue of ['none','',null,'assets/audio/bgm/null'])await h.sound.playBgm(cue);
+ const before=h.nodes.length;
+ await h.sound.playSfx('assets/audio/sfx/synth:page_turn');
+ assert.equal(h.nodes.length,before+1);assert.equal(h.nodes.at(-1).started,true);
+ assert.equal(h.nodes.at(-1).buffer,h.sound._createSoundscapeBuffer('page_turn'));
+ await h.sound.playSfx('synth:door');assert.equal(h.nodes.at(-1).buffer,h.sound._createSoundscapeBuffer('door'));
+ await h.sound.playSfx('assets/audio/sfx/none');
+ assert.deepEqual(fetched,[]);assert.equal(reports,0);
+ await h.sound.playSfx('assets/audio/sfx/affinity_up.mp3');
+ assert.deepEqual(fetched,['assets/audio/sfx/affinity_up.mp3']);
+});

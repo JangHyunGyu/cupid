@@ -294,6 +294,22 @@ class SoundManager {
         return 'scheduled';
     }
 
+    /**
+     * Normalize scene audio cues before they reach fetch().
+     * - "synth:*" stays a runtime soundscape even when a caller prefixed it
+     *   with an asset folder (assets/audio/sfx/synth:page_turn).
+     * - "none"/"null"/empty means "no file" and returns ''.
+     */
+    _normalizeCuePath(path) {
+        const value = typeof path === 'string' ? path.trim() : '';
+        if (!value) return '';
+        const synth = value.match(/(?:^|\/)(synth:[a-z_]+)$/i);
+        if (synth) return synth[1];
+        const name = value.split(/[?#]/)[0].split('/').pop().toLowerCase();
+        if (name === '' || name === 'none' || name === 'null' || name === 'undefined') return '';
+        return value;
+    }
+
     async _fetchAudioArrayBuffer(path, options = {}) {
         let lastError = null;
         const bypassCache = options.bypassCache === true;
@@ -403,6 +419,14 @@ class SoundManager {
      * BGM 재생 요청
      */
     async playBgm(path, loop = true, force = false) {
+        // A stop cue ("none"/empty) must never become a file request such as
+        // assets/audio/bgm/none, even if a caller prefixed the BGM folder.
+        const cue = this._normalizeCuePath(path);
+        if (!cue) {
+            this.stopBgm();
+            return;
+        }
+        path = cue;
         if (!force && this.currentBgmPath === path) {
             if (this.bgmSourceNode
                 || this._loadingPromises[path]
@@ -660,6 +684,8 @@ class SoundManager {
      */
     async playSfx(path) {
         if (this.muted) return;
+        path = this._normalizeCuePath(path);
+        if (!path) return;
 
         const buffer = await this._loadBuffer(path);
         if (!buffer || !this._unlocked) return;
