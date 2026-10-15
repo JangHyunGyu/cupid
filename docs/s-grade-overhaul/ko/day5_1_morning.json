@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d5_choice_trap": {
         "name": "보건선생님",
-        "text": "반대야. 혼자 버티라고 만든 카드가 아니야."
+        "text": "*단호하게 고개를 젓는다.* 정반대야. 이 카드는 너 혼자서 참아 내라고 쥐여 주는 부적이 아니야."
     },
     "morning5_after_counteroffer_hidden_check": {},
     "hidden_nurse_d5_after_co_check": {},

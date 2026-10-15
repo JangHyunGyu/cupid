@@ -599,15 +599,15 @@
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Homeroom Teacher",
-        "text": "Then there'd be no point in getting feedback. I don't want them going easy on me because I'm their teacher."
+        "text": "If I only wanted polite praise, I wouldn't have handed out copies in the first place. I don't want anyone going easy on my writing because I'm their teacher."
     },
     "hidden_nurse_d4_name_trap": {
         "name": "School Nurse",
-        "text": "I wish serious injuries were the only problems I had to deal with. More students keep quiet and tough it out."
+        "text": "If only visible injuries were all we had to treat. There are far more students suffering quietly, without showing anyone."
     },
     "hidden_nurse_d4_trap": {
         "name": "School Nurse",
-        "text": "I can do it on my own. I was just hoping you’d help finish what’s left."
+        "text": "I could do it alone. But since we started together, I was hoping you'd stay beside me until we finished the last box."
     },
     "day4_date_branch": {},
     "day4_haeun_concern_choice": {

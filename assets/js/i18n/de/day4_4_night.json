@@ -11,7 +11,7 @@
     "day4_adult_nurse_student_rank": {},
     "day4_teacher_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*Meine Schritte zum Schultor bleiben am Eingang der Dachtreppe stehen. Seoyeon, die allein im Dunkeln stand, kommt heran, packt meinen Ärmel fest und fängt ihren zitternden Atem.* Musst du jetzt sofort nach Hause? Denk heute Nacht an nichts anderes. Kannst du nicht noch ein bisschen bei mir bleiben?",
+        "text": "*Auf dem Weg zum Schultor bleibe ich am Eingang zur Dachtreppe stehen. Seoyeon kommt von ihrem einsamen Platz auf mich zu und greift nach meinem Ärmel. Sonst spricht sie immer zuerst, doch diesmal muss sie erst Atem holen.* Musst du jetzt sofort nach Hause? Ich hätte nie gedacht, dass ich dich um so etwas bitte. Kannst du heute Abend nicht noch ein bisschen bei mir bleiben?",
         "choices": [
             "Direkt heimgehen und die Ankunft bestätigen",
             "Seoyeon aufs Dach folgen und ihre Hand nehmen",
@@ -21,7 +21,7 @@
     },
     "day4_teacher_dain_counteroffer": {
         "name": "Dain",
-        "text": "*Auf dem Weg zum Tor, vor der Treppe der dunklen Turnhalle, winkt Dain dringend. Sie sitzt auf der Kante der Bank, zieht die Kniebandage zurecht und sieht mit einem drängenden Blick zu mir auf.* Musst du jetzt sofort nach Hause? Heute kein Training. Kannst du dich nicht einfach neben mich setzen und ein bisschen mit mir reden?",
+        "text": "*Auf dem Weg zum Ausgang winkt Dain vor den Stufen der dunklen Sporthalle. Sie sitzt am Rand einer Bank und hört auf, ihre Kniebandage zu richten, als ich näher komme.* Musst du schon nach Hause? Könntest du dich heute einfach neben mich setzen und etwas reden, ohne Sport? Leute festzuhalten ist nicht meine Art… aber gerade will ich dich nicht gehen lassen.",
         "choices": [
             "Direkt heimgehen und die Ankunft bestätigen",
             "Die Turnhalle betreten und Dains Bitte annehmen",
@@ -31,7 +31,7 @@
     },
     "day4_teacher_yuna_counteroffer": {
         "name": "Yuna",
-        "text": "*Als ich um die Ecke des dunklen Nebengebäudes komme, vibriert das Handy kurz, und ein Foto von Yuna erscheint. Dazu das Foto eines leeren Stuhls, der unter dem Licht der Lampe neben ihrem steht, und dann folgt Yunas Nachricht.* Wenn du noch in der Schule bist, kommst du kurz hoch? Heute Nacht will ich, dass du noch ein bisschen länger neben mir bleibst.",
+        "text": "*Mein Handy vibriert kurz, als ich an der dunklen Ecke des Anbaus vorbeigehe. Nach einem Foto von zwei leeren Stühlen unter einer Schreibtischlampe erscheint Yunas Nachricht. Die Schreibanzeige bleibt lange stehen, bevor noch ein kurzer Satz ankommt.* Wenn du noch in der Schule bist, kannst du kurz hochkommen? Ich hätte dich heute Abend gern noch etwas länger neben mir. Ich dachte, wenn ich nichts sage, weißt du es vielleicht nie.",
         "choices": [
             "Direkt heimgehen und die Ankunft bestätigen",
             "Zum Nebengebäude gehen und bei Yuna bleiben",
@@ -41,7 +41,7 @@
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*Meine Schritte zum Schultor bleiben am Eingang der Dachtreppe stehen. Seoyeon, die allein im Dunkeln stand, kommt heran, packt meinen Ärmel fest und fängt ihren zitternden Atem.* Musst du jetzt sofort nach Hause? Denk heute Nacht an nichts anderes. Kannst du nicht noch ein bisschen bei mir bleiben?",
+        "text": "*Auf dem Weg zum Schultor bleibe ich am Eingang zur Dachtreppe stehen. Seoyeon kommt von ihrem einsamen Platz auf mich zu und greift nach meinem Ärmel. Sonst spricht sie immer zuerst, doch diesmal muss sie erst Atem holen.* Musst du jetzt sofort nach Hause? Ich hätte nie gedacht, dass ich dich um so etwas bitte. Kannst du heute Abend nicht noch ein bisschen bei mir bleiben?",
         "choices": [
             "Direkt heimgehen und die Ankunft bestätigen",
             "Seoyeon aufs Dach folgen und ihre Hand nehmen",
@@ -51,7 +51,7 @@
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
-        "text": "*Auf dem Weg zum Tor, vor der Treppe der dunklen Turnhalle, winkt Dain dringend. Sie sitzt auf der Kante der Bank, zieht die Kniebandage zurecht und sieht mit einem drängenden Blick zu mir auf.* Musst du jetzt sofort nach Hause? Heute kein Training. Kannst du dich nicht einfach neben mich setzen und ein bisschen mit mir reden?",
+        "text": "*Auf dem Weg zum Ausgang winkt Dain vor den Stufen der dunklen Sporthalle. Sie sitzt am Rand einer Bank und hört auf, ihre Kniebandage zu richten, als ich näher komme.* Musst du schon nach Hause? Könntest du dich heute einfach neben mich setzen und etwas reden, ohne Sport? Leute festzuhalten ist nicht meine Art… aber gerade will ich dich nicht gehen lassen.",
         "choices": [
             "Direkt heimgehen und die Ankunft bestätigen",
             "Die Turnhalle betreten und Dains Bitte annehmen",
@@ -61,7 +61,7 @@
     },
     "day4_nurse_yuna_counteroffer": {
         "name": "Yuna",
-        "text": "*Als ich um die Ecke des dunklen Nebengebäudes komme, vibriert das Handy kurz, und ein Foto von Yuna erscheint. Dazu das Foto eines leeren Stuhls, der unter dem Licht der Lampe neben ihrem steht, und dann folgt Yunas Nachricht.* Wenn du noch in der Schule bist, kommst du kurz hoch? Heute Nacht will ich, dass du noch ein bisschen länger neben mir bleibst.",
+        "text": "*Mein Handy vibriert kurz, als ich an der dunklen Ecke des Anbaus vorbeigehe. Nach einem Foto von zwei leeren Stühlen unter einer Schreibtischlampe erscheint Yunas Nachricht. Die Schreibanzeige bleibt lange stehen, bevor noch ein kurzer Satz ankommt.* Wenn du noch in der Schule bist, kannst du kurz hochkommen? Ich hätte dich heute Abend gern noch etwas länger neben mir. Ich dachte, wenn ich nichts sage, weißt du es vielleicht nie.",
         "choices": [
             "Direkt heimgehen und die Ankunft bestätigen",
             "Zum Nebengebäude gehen und bei Yuna bleiben",
@@ -275,7 +275,7 @@
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "Tu nicht so, als wüsstest du es."
+        "text": "Sag das nicht so leicht dahin, als würdest du schon alles verstehen."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -329,7 +329,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
-        "text": "Keine Sorge, um diese Zeit trainiere ich nicht über meine Grenze. Nur… kannst du mich heute Nacht kurz halten? Allein so zu tun, als wäre nichts, halte ich nicht mehr aus.",
+        "text": "Keine Sorge, um diese Uhrzeit übertreibe ich es nicht mehr mit dem Training. *Dain nimmt die Hand vom Knie. Sie versucht zu lächeln und presst dann die Lippen zusammen. Die Hand, mit der sie mich aufgehalten hat, bleibt erhoben.* Nur… könntest du mich heute Abend kurz in den Arm nehmen? Allein weiter so zu tun, als wäre alles gut, ist zu schwer. Ich hasse es, wenn es klingt, als würde ich dich aufhalten. Aber dich einfach gehen zu lassen, will ich noch weniger.",
         "choices": [
             "Das Versprechen halten und zu Seoyeon in den Park gehen",
             "In die Turnhalle gehen und bei Dain bleiben",
@@ -343,7 +343,7 @@
     },
     "wall_seo_yuna_tempt_1": {
         "name": "Yuna",
-        "text": "*Auf dem Weg zum Park, wo Seoyeon ist, klingelt das Handy, und Yunas Nachricht kommt an. Angehängt ist ein Foto von zwei leeren Stühlen nebeneinander am dunklen Fenster.* Im Leseraum des Nebengebäudes brennt noch Licht"
+        "text": "*Auf dem Weg zum Park, wo Seoyeon wartet, klingelt mein Handy mit einer Nachricht von Yuna. Dabei ist ein Foto von zwei leeren Stühlen nebeneinander an einem dunklen Fenster. Noch bevor ich fertig gelesen habe, erscheint die Schreibanzeige und verschwindet wieder.* Im Lesesaal im Anbau brennt noch Licht"
     },
     "wall_seo_yuna_tempt_2": {
         "name": "Yuna",
@@ -580,7 +580,7 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Dain blickt vom Ballwagen auf.* Moment. Warum entscheidest du alles?"
+        "text": "*Dain hebt vor dem Ballschrank plötzlich den Kopf.* Warte. Es ist mein Ball. Warum entscheidest du einfach, wie alles weggeräumt wird?"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
@@ -661,7 +661,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*Yuna sitzt am Fenster, das aufgeschlagene Buch vor sich, und sieht nur in die dunkle Nacht hinaus. Keine Seite wird umgeblättert.*"
+        "text": "*Yuna sitzt am Fenster und schaut mit dem offenen Buch vor sich in die Dunkelheit hinaus. Keine einzige Seite wird umgeblättert. Als sie mein Spiegelbild im Glas entdeckt, hebt sie sich etwas vom Stuhl und hält inne. Ihr Blick bleibt auf mir.*"
     },
     "wall_dain_glimpse_4": {
         "name": "Yuna",
@@ -683,7 +683,7 @@
     },
     "wall_dain_seo_tempt_1": {
         "name": "{name}",
-        "text": "*Ich gehe zur Turnhalle, wo Dain wartet, und vor dem Eingang zur Dachtreppe steht Seoyeon allein. Sie sieht mich und lächelt angestrengt, aber ihre schmalen Fingerspitzen zerknittern den Ärmel der Bluse in kleine Falten.*"
+        "text": "*Auf dem Weg zur Sporthalle, wo Dain wartet, sehe ich Seoyeon allein am Eingang zur Dachtreppe stehen. Als sie mich sieht, versucht sie zu lächeln und presst dann die Lippen zusammen. Ihre Finger zittern um ihren Ärmel. Sie öffnet den Mund, als wollte sie zuerst sprechen, doch die Stimme kommt nicht sofort.*"
     },
     "wall_dain_seo_tempt_2": {
         "name": "Seoyeon",
@@ -890,7 +890,7 @@
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Seoyeon steckt unruhig das Handy in die Tasche und holt es wieder heraus, immer wieder. Als sie mich kommen sieht, lächelt sie angestrengt, aber ihre schmalen Fingerspitzen zerknittern den Ärmel der Bluse fest.*"
+        "text": "*Seoyeon nimmt ihr Handy immer wieder aus der Tasche und steckt es zurück. Als sie mich sieht, versucht sie zu lächeln und presst dann die Lippen zusammen. Ihre Finger zittern um ihren Ärmel. Sie öffnet den Mund, als wollte sie zuerst sprechen, doch die Stimme kommt nicht sofort.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
@@ -908,7 +908,7 @@
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
-        "text": "*Auf dem Weg zum Hintertor, wo Yuna wartet. Unter dem Licht an der Notausgangstür der dunklen Turnhalle steht Dain allein und rückt das Tape am Knie zurecht.*"
+        "text": "*Auf dem Weg zum Hintertor, wo Yuna wartet, sehe ich Dain allein unter dem Notlicht der dunklen Sporthalle an ihrem Knietape zupfen. Sie hebt die Hand, als sie mich sieht, kann mich aber nicht so laut rufen wie sonst. Stattdessen kommt sie einen Schritt näher und wartet auf eine Antwort.*"
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",

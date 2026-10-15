@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "Yuna",
-        "text": "Nimm auch etwas von meinem Brot. *Mittagspause am dritten Tag. Seoyeon setzt sich neben mich, Dain gegenüber. Yuna zieht einen Stuhl heran.*"
+        "text": "Nimm auch die Hälfte von meinem Brot. *Beim Mittagessen am dritten Tag schieben wir im Klassenzimmer die Tische zusammen. Seoyeon sitzt neben mir, Dain gegenüber, und Yuna zieht einen Stuhl an meine andere Seite.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "Das darf ich zuerst probieren, oder? ...Nur ein bisschen. *Dain nimmt das gerollte Omelett vor Yuna. Seoyeon schaut auf die andere Tischseite, bevor sie die Stäbchen hebt.*"
+        "text": "Ich darf zuerst von der Eierrolle probieren, oder? Nur mal kosten! *Dains Stäbchen greifen einen halben Moment vor Yunas zu. Bevor Seoyeon ihre eigenen hebt, betrachtet sie still Dain gegenüber.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Oh, lecker. Probieren Sie auch, Frau Schülersprecherin. Nur weil man zuerst da war, darf man nicht alles für sich behalten."
+        "text": "Oh, genau richtig gewürzt! Greifen Sie auch zu, Frau Präsidentin. Nur weil Sie zuerst den Platz neben ihm hatten, dürfen Sie nicht sämtliche Beilagen für sich beanspruchen."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "Ich habe nicht vor, das Bento eines anderen für mich zu beanspruchen. Das gerollte Omelett bekommt sechs Punkte."
+        "text": "*Seoyeon nimmt ein Stück Eierrolle aus meiner Brotdose und probiert es.* Ich will niemandes Mittagessen monopolisieren. Gut gewürzt, aber die Form fällt etwas auseinander. Sechs Punkte."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Sie sieht Dain an, während sie die Wurst kaut.* Wer zuerst kommt, bekommt also doch nicht automatisch alles."
+        "text": "*Yuna beißt langsam in ein Würstchen und sieht dabei Dain gegenüber an.* Wer zuerst zugreift, dem gehört es also doch nicht."
     },
     "lunch3_meal_10": {
         "name": "{name}",

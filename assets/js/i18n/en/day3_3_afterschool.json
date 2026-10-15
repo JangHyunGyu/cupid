@@ -463,7 +463,7 @@
     },
     "after3_dain_correct_2": {
         "name": "Dain",
-        "text": "Hey."
+        "text": "*Dain turns to look at me.* Hey."
     },
     "after3_dain_correct_3": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
-        "text": "Thanks. When I go to the nurse's office... stay with me."
+        "text": "*Dain gently rests her warm fingers over the back of my hand on the bench.* When I go down to the nurse's office… stay with me, at least as far as the door."
     },
     "after3_dain_freetalk": {
         "name": "Dain",

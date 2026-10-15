@@ -661,11 +661,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Tá livre no fim de semana? Vamos ao parque juntos."
+        "text": "*Perto da janela do corredor, Seoyeon se aproxima meio passo e abaixa a voz.* Pode reservar um tempinho neste fim de semana? Queria ir ao parque só com você. Sem trabalho do conselho."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pergunta na porta da sala. Dain para de girar a tampa da garrafa.*",
+        "text": "*Os olhos de Seoyeon se fixam nos meus lábios. Do outro lado da porta aberta da sala, a mão de Dain para sobre a tampa da garrafa enquanto ela nos observa.*",
         "choices": [
             "Vamos. Que horas?",
             "Acho que vou tá meio ocupado",
@@ -675,23 +675,23 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "Sim, até o fim de semana. *Combino com Seoyeon; Dain vem até minha mesa.*"
+        "text": "Ótimo, a gente se vê no parque no fim de semana. *As bochechas de Seoyeon ficam levemente rosadas com a minha resposta, e Dain vem até a minha carteira a passos largos.*"
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*Quando recuso o convite de Seoyeon, Dain volta a girar a tampa da garrafa.*"
+        "text": "*Quando recuso o convite de Seoyeon, ela abaixa o olhar em silêncio. Dentro da sala, Dain volta a girar com vigor a tampa da garrafa e a abre.*"
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Agora é a minha vez. Quer ir ao fliperama no fim de semana? A presidente não é a única que pode perguntar."
+        "text": "Agora é a minha vez! Quer ir ao fliperama comigo neste fim de semana? A presidente não tem exclusividade nos convites."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "Perguntei em voz alta. Melhor que bilhete, né? *Ela bate na borda da mesa.*"
+        "text": "Eu perguntei pra todo mundo ouvir. Melhor que um bilhete, né? *Dain bate com a ponta dos dedos no canto da minha carteira e se inclina.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "Se não odeia fliperama, pode ir comigo. Não responde só à presidente. *Ela se inclina um pouco e espera.*",
+        "text": "Se você não odeia fliperamas, arruma um tempinho pra mim também. Não responde só pra presidente, tá? *Dain chega bem perto, olhando firme pra mim enquanto espera a resposta.*",
         "choices": [
             "Fechou, bora",
             "Fim de semana tá meio corrido...",
@@ -701,11 +701,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "Tá. A gente se vê no fliperama. *Dain sorri; Seoyeon fecha a prancheta.*"
+        "text": "Beleza, a gente se vê no fliperama no fim de semana. *Dain sorri como se tivesse ganhado o mundo, enquanto Seoyeon fecha a prancheta com força na carteira da frente.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Ah, é? Se você está ocupado, fazer o quê! Não é porque a presidente perguntou primeiro, né?"
+        "text": "Ah, é? Se está ocupado, fazer o quê! Não vai dizer que está me dispensando só porque a presidente chegou primeiro, né?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -713,19 +713,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Pouco antes do almoço, Yuna coloca um bilhete dobrado em cima da minha carteira. Seoyeon e Dain olham para a mão dela ao mesmo tempo.*"
+        "text": "*Pouco antes do almoço, Yuna se aproxima em silêncio e deixa um bilhete dobrado em quadrado sobre a minha carteira. Seoyeon e Dain olham ao mesmo tempo para os dedos dela.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Yuna. Se você pergunta por bilhete, ninguém mais consegue ouvir."
+        "text": "Yuna. Se você só pergunta por bilhetes, quem está do lado não sabe do que vocês estão falando."
     },
     "morning3_date_yuna_2": {
         "name": "Yuna",
-        "text": "*No bilhete está escrito.* Fim de semana. Sebo. Mesmo se já tiver compromisso, vem se quiser. — Yuna"
+        "text": "*O bilhete aberto traz uma letra nítida em tinta lilás.* Neste fim de semana, no sebo da viela. Mesmo que já tenha planos, venha se quiser ficar comigo. Vou esperar."
     },
     "morning3_date_yuna_choice": {
         "name": "Yuna",
-        "text": "Se falar alto importa, falo agora. Quero ouvir sua resposta. *Olha Seoyeon e Dain, sem esconder o rosto atrás do livro.*",
+        "text": "Se o justo é falar pra todo mundo ouvir, eu falo agora. Quero a sua resposta, não a dos outros. *Yuna olha para Seoyeon e Dain, uma de cada vez, e depois encara meus olhos sem se esconder atrás do livro.*",
         "choices": [
             "Escrever «Eu vou» no verso do bilhete",
             "Escrever «Este fim de semana não dá» no verso do bilhete",
@@ -735,7 +735,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*Escrevo a resposta no verso e devolvo o bilhete. Yuna lê, dobra e guarda no livro.*"
+        "text": "*Escrevo a resposta no verso e devolvo o bilhete. Yuna lê até o fim, dobra o papel com cuidado e o guarda entre as páginas do livro.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

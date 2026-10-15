@@ -89,15 +89,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Da bist du ja. Hab dich gefunden. Wenn ihr hier oben esst, darf ich mich dazusetzen?"
+        "text": "Hier versteckst du dich also! Endlich gefunden. Wenn ihr ein Picknick auf dem Dach macht, darf ich mich dazusetzen?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "Für den Zutritt zum Dach braucht man eine Genehmigung. Und fürs heutige Mittagessen war ich zuerst verabredet."
+        "text": "Für den Zugang zum Dach braucht man die Erlaubnis des Schülerrats. Außerdem habe ich mir diese Mittagspause zuerst gesichert."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Dann kann ich mich eben ab jetzt dazusetzen. Ich setze mich auch, ja?"
+        "text": "Aber die Tür war doch schon offen! Dann nehme ich das als Erlaubnis vor Ort. Ich setze mich, ja?"
     },
     "lunch2_seo_12": {
         "name": "Dain",
@@ -105,19 +105,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "Gestern hast du noch mit mir gegessen. Bist du innerhalb eines Tages auf das Bento der Schülersprecherin umgestiegen?"
+        "text": "Hey, gestern hast du mit mir gegessen, und schon wechselst du zur Brotdose der Präsidentin?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Freut mich, Frau Schülersprecherin. Der Platz daneben ist doch frei, oder?"
+        "text": "Hallo, Frau Präsidentin! Aber der Platz daneben ist noch frei, oder?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon rückt ihre Lunchbox näher zu mir.* Setz dich ruhig. Lass uns nur erst zu Ende reden."
+        "text": "*Seoyeon zieht ihre offene Brotdose noch ein Stück näher zu mir.* Du kannst dich setzen, aber wir bringen unser Gespräch erst zu Ende."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "Ich rücke etwas näher. *Sie zieht ihren Stuhl zu mir.*"
+        "text": "Wenn es dir dort zu eng ist, rücke ich etwas näher. *Seoyeon zieht ihren Stuhl dicht an meinen, und unsere Arme streifen sich durch die dünnen Hemdsärmel.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -125,19 +125,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Sich näherzukommen und jemandem den Platz zu überlassen, sind zwei verschiedene Dinge."
+        "text": "Klassenkameraden zu sein und meine Mittagspause abzutreten, sind zwei verschiedene Dinge."
     },
     "lunch2_seo_17": {
         "name": "Dain",
-        "text": "Dann gebe ich auch nicht nach. Komm in der nächsten Pause in die Sporthalle."
+        "text": "Ach, so läuft das? Dann gebe ich auch nicht nach! Hey, komm in der nächsten Pause zur Sporthalle."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "{name}, machst du direkt vor meinen Augen schon die nächste Verabredung aus?"
+        "text": "{name}, verabredest du dich gerade vor meinen Augen mit jemand anderem, während du mein Essen isst?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "Antworte später. Du hast erst mal etwas am Mundwinkel. Halt still."
+        "text": "Antworte später. Du hast ein Reiskorn am Mund. Halt mal kurz still."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
@@ -630,15 +630,15 @@
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
-        "text": "*Sie zieht das Feuchttuch zurück.* Klar. Du kommst ja allein zurecht."
+        "text": "*Sie zieht das angebotene Feuchttuch wortlos zurück.* Klar. So etwas kannst du ja ganz allein."
     },
     "lunch2_yuna_trap_compare": {
         "name": "Yuna",
-        "text": "*Yuna schiebt das Ende des Lesezeichens noch ein Stück tiefer.* Du und diese Person, das lässt sich nicht vergleichen."
+        "text": "*Yuna schiebt das Lesezeichen tief zwischen die Seiten und zieht eine kühle Grenze.* Ihn und dich vergleicht man nicht einfach so."
     },
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
-        "text": "*Sie zieht das Buch zu sich und lässt es dann langsam los.* Das entscheide ich."
+        "text": "*Sie zieht das Buch an die Brust und senkt es dann langsam wieder.* Ich entscheide selbst, wem ich wie viel erzähle."
     },
     "lunch2_seo_2_warm": {
         "name": "Seoyeon",

@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d5_choice_trap": {
         "name": "Infirmière",
-        "text": "C'est l'inverse. Cette carte n'est pas faite pour que tu gères tout seul."
+        "text": "*Elle secoue fermement la tête.* C'est l'inverse. Cette carte n'est pas un porte-bonheur censé te faire tout supporter seul."
     },
     "morning5_after_counteroffer_hidden_check": {},
     "hidden_nurse_d5_after_co_check": {},

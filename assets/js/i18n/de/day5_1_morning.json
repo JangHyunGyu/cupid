@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d5_choice_trap": {
         "name": "Schulkrankenschwester",
-        "text": "Im Gegenteil. Die Karte ist nicht dafür da, dass du alles allein aushältst."
+        "text": "*Sie schüttelt entschieden den Kopf.* Genau andersherum. Diese Karte ist kein Glücksbringer, damit du alles allein erträgst."
     },
     "morning5_after_counteroffer_hidden_check": {},
     "hidden_nurse_d5_after_co_check": {},

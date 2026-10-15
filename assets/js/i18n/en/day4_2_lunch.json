@@ -277,7 +277,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "*Dain's smile pauses as she tugs the brim lower.* ...Right. Sportswear is comfortable."
+        "text": "*Dain presses her cap farther down, her smile still in place.* Haha, right? I guess comfortable sportswear suits me better than dressing up."
     },
     "date_dain_to_arcade": {
         "name": "{name}",
@@ -373,11 +373,11 @@
     },
     "date_seo_role_trap": {
         "name": "Seoyeon",
-        "text": "*Her hand leaves the bag strap.* I'm not here as the student council president today."
+        "text": "*Seoyeon's fingers slowly loosen from her bag strap.* I didn't come here as student council president today."
     },
     "date_yuna_trap": {
         "name": "Yuna",
-        "text": "I guess it's usually hard for you to talk to me."
+        "text": "So at school, you found it that hard to talk to me."
     },
     "date_seo_tier_check": {},
     "date_seo_high_1": {

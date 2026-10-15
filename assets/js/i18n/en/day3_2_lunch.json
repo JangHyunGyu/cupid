@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "Yuna",
-        "text": "Have some of my bread, too. *Lunch on the third day. Seoyeon sits beside me, Dain across from me. Yuna pulls up a chair.*"
+        "text": "Have half of my bread, too. *At lunch on the third day, we push desks together in the classroom. Seoyeon sits beside me, Dain opposite, and Yuna pulls a chair up to my other side.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "I can try this first, right? ...Okay, just a taste. *Dain takes the rolled omelet before Yuna. Seoyeon looks across the table before lifting her chopsticks.*"
+        "text": "I can try this rolled omelet first, right? Just a taste! *Dain's chopsticks reach it half a beat before Yuna's. Before picking up her own chopsticks, Seoyeon quietly watches Dain across the desks.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Oh, this is good. Have some too, President. Getting here first doesn't mean you get all of it today."
+        "text": "Oh, the seasoning's just right! Dig in, Madam President. Getting the seat next to him first doesn't mean you can hog all the side dishes too."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "I have no intention of monopolizing someone else's lunchbox. The rolled omelette gets a six."
+        "text": "*Seoyeon picks a piece of rolled omelet from my lunchbox and tastes it.* I have no intention of monopolizing someone else's lunch. The seasoning's fine, but the shape's a little loose. Six points."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Yuna looks at Dain while chewing the sausage.* So the first person to grab it doesn't get to keep it."
+        "text": "*Yuna slowly bites into a sausage while looking at Dain across the desks.* Reaching for it first doesn't make it yours."
     },
     "lunch3_meal_10": {
         "name": "{name}",

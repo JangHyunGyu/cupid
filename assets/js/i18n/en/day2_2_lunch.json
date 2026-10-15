@@ -89,15 +89,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "There you are. Found you. If you're eating up here, can I join?"
+        "text": "So this is where you've been hiding! Found you at last. Mind if I join your rooftop picnic?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "The rooftop requires permission. And I made lunch plans first today."
+        "text": "Rooftop access requires student council permission. Besides, I got this lunch slot first."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Then I can join from now on. I'm sitting too, okay?"
+        "text": "Oh, but the door was already open! I'll take that as permission on arrival. I'm sitting down, okay?"
     },
     "lunch2_seo_12": {
         "name": "Dain",
@@ -105,19 +105,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "You ate with me yesterday. Did you switch to the president's lunchbox in a single day?"
+        "text": "Hey, you ate with me yesterday, and you've already switched to the president's lunchbox?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Nice to meet you, President. The seat beside you is open, right?"
+        "text": "Hello, Madam President! This seat next to you is still free, right?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon moves her lunchbox closer to me.* You can sit. Just let us finish our conversation."
+        "text": "*Seoyeon pulls the open lunchbox a little closer to me.* You can sit down, but we're finishing our conversation first."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "I'll move a little closer. *She pulls her chair toward me.*"
+        "text": "If you're cramped over there, I'll move a little closer. *Seoyeon draws her chair right up to mine, and our arms brush through our thin shirt sleeves.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -125,19 +125,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Getting close and giving way are two different things."
+        "text": "Being classmates and giving up my lunchtime are two separate things."
     },
     "lunch2_seo_17": {
         "name": "Dain",
-        "text": "Then I'm not giving way either. Come to the gym next break."
+        "text": "Oh, so that's how we're playing it? Then I'm not giving way either! Hey, come down to the gym next break."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "{name}, are you making your next plans right in front of me?"
+        "text": "{name}, are you making plans with someone else right in front of me while eating my lunch?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "Answer later. You've got something at the corner of your mouth. Hold still."
+        "text": "Answer her later. You've got a grain of rice by your mouth. Hold still a second."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
@@ -630,15 +630,15 @@
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
-        "text": "*She pulls the wet wipe back.* Right. You can handle it on your own."
+        "text": "*She quietly draws back the wet wipe she was holding out.* Right. You can handle that yourself."
     },
     "lunch2_yuna_trap_compare": {
         "name": "Yuna",
-        "text": "*Yuna pushes the tip of the bookmark one notch deeper.* This isn't about comparing you to that person."
+        "text": "*Yuna slides the bookmark deep between the pages, drawing a firm line.* You and he aren't people to compare so lightly."
     },
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
-        "text": "*She pulls the book toward herself, then slowly lets it go.* That’s for me to decide."
+        "text": "*She pulls the book to her chest, then slowly lowers it.* I decide who I tell things to, and how much."
     },
     "lunch2_seo_2_warm": {
         "name": "Seoyeon",

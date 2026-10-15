@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d5_choice_trap": {
         "name": "保健室の先生",
-        "text": "逆。これ、一人で我慢するためのカードじゃないから。"
+        "text": "*きっぱりと首を横に振る。* 逆よ。このカードは、一人で我慢するためのお守りじゃないの。"
     },
     "morning5_after_counteroffer_hidden_check": {},
     "hidden_nurse_d5_after_co_check": {},

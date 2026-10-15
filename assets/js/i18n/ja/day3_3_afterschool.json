@@ -463,7 +463,7 @@
     },
     "after3_dain_correct_2": {
         "name": "ダイン",
-        "text": "……ねえ。"
+        "text": "*ダインが俺を振り返る。* ねえ。"
     },
     "after3_dain_correct_3": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "after3_dain_choice1_react3": {
         "name": "ダイン",
-        "text": "ありがと。保健室に行くとき……そばにいて。"
+        "text": "*ベンチの上で、ダインの温かい指が俺の手の甲にそっと重なる。* 保健室に下りるとき…せめてドアの前まで、一緒にいて。"
     },
     "after3_dain_freetalk": {
         "name": "ダイン",

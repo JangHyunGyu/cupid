@@ -547,6 +547,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "School Nurse",
-        "text": "When no one’s here, I catch up on records and check supplies. A quiet room doesn’t always mean a break."
+        "text": "When there are no students here, I still have records to update and medicine to restock. A quiet room doesn't mean I'm taking a break."
     }
 }

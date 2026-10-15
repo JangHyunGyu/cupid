@@ -277,7 +277,7 @@
     },
     "date_dain_bright": {
         "name": "Dain",
-        "text": "*La sonrisa de Dain se detiene mientras se baja un poco más la visera.* ...Claro. La ropa deportiva es cómoda."
+        "text": "*Dain se cala un poco más la gorra, todavía sonriendo.* Ja, claro, ¿no? Supongo que me queda mejor la ropa deportiva cómoda que arreglarme."
     },
     "date_dain_to_arcade": {
         "name": "{name}",
@@ -373,11 +373,11 @@
     },
     "date_seo_role_trap": {
         "name": "Seoyeon",
-        "text": "*Suelta la correa del bolso.* Hoy no he venido como presidenta del consejo."
+        "text": "*Los dedos de Seoyeon se sueltan despacio de la correa del bolso.* Hoy no he venido como presidenta del consejo estudiantil."
     },
     "date_yuna_trap": {
         "name": "Yuna",
-        "text": "Así que normalmente no soy fácil de abordar."
+        "text": "Entonces, en la escuela te resultaba así de difícil hablar conmigo."
     },
     "date_seo_tier_check": {},
     "date_seo_high_1": {

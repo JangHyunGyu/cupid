@@ -240,27 +240,27 @@
     },
     "after2_dain_rival_seo_high": {
         "name": "Seoyeon",
-        "text": "*Seoyeon stops outside the window. Seeing the two tteokbokki cups, she texts.* So you went to the gym today. Come by the council room next time too."
+        "text": "*Seoyeon stops outside the snack shop's large window. She sees the two cups of tteokbokki facing each other, and a message arrives almost at once.* You went to the gym after school today. Don't forget to drop by the council room next time, too."
     },
     "after2_dain_rival_seo_mid": {
         "name": "{name}",
-        "text": "*Seoyeon passes the snack bar and looks at the table. She squares the edges of her clipboard twice, then heads for the school gate.*"
+        "text": "*Passing the shop, Seoyeon spots our table through the window. She adjusts the corners of the clipboard against her chest twice, then walks silently away toward the school gate.*"
     },
     "after2_dain_rival_seo_low": {
         "name": "{name}",
-        "text": "*As Seoyeon passes the snack bar, she nods to both of us without breaking stride.*"
+        "text": "*Seoyeon gives us a small nod through the snack shop window as she passes, without slowing her steps.*"
     },
     "after2_dain_rival_yuna_high": {
         "name": "{name}",
-        "text": "*Yuna looks through the snack bar window. She puts the folded note in her hand back into her pocket and turns away.*"
+        "text": "*Yuna watches us through the shop window. She pushes the folded note between her fingers deep into her pocket, then turns away.*"
     },
     "after2_dain_rival_yuna_mid": {
         "name": "{name}",
-        "text": "*Passing the snack bar, Yuna starts to remove one earbud, sees our table, and puts it back in.*"
+        "text": "*Yuna starts to take out an earbud when she sees me outside the snack shop, then notices Dain opposite me and quietly puts it back in.*"
     },
     "after2_dain_rival_yuna_low": {
         "name": "{name}",
-        "text": "*Yuna gives us one nod through the window and continues toward the annex.*"
+        "text": "*Yuna gives a brief nod through the window, then turns toward the library annex.*"
     },
     "after2_seo_1": {
         "name": "{name}",
@@ -463,27 +463,27 @@
     },
     "after2_seo_rival_dain_high": {
         "name": "Dain",
-        "text": "*Pushing a cart of gym balls, Dain sees us at the end of the hall.* Student council work took a while. *She grips the handle and turns away first.*"
+        "text": "*Dain stops in the gym corridor with a cart of volleyballs as she sees us walking out together.* That student council errand took a while today, huh. *She tightens her grip on the handle and turns away first.*"
     },
     "after2_seo_rival_dain_mid": {
         "name": "Dain",
-        "text": "*She stops the ball cart.* Done? *She glances at Seoyeon, then pushes the cart back toward the gym.*"
+        "text": "*She stops the ball cart.* All done now? *She glances at Seoyeon beside me, then pushes the cart back into the gym.*"
     },
     "after2_seo_rival_dain_low": {
         "name": "Dain",
-        "text": "Good work! *She waves over the ball cart and heads toward the gym.*"
+        "text": "Good work, both of you! *She waves energetically over the ball cart, then disappears toward the gym.*"
     },
     "after2_seo_rival_yuna_high": {
         "name": "{name}",
-        "text": "*Reading on the stair landing, Yuna closes her book when she hears us. She pulls out the note tucked between the pages and folds it in half.*"
+        "text": "*Yuna, reading by the landing window, closes her book at the sound of us coming out together. She pulls out the purple note beside her bookmark and silently folds it in half.*"
     },
     "after2_seo_rival_yuna_mid": {
         "name": "{name}",
-        "text": "*Yuna's hand stops on the page. She shifts aside to let us pass, then opens the book again.*"
+        "text": "*Yuna's fingers stop on the open page. She steps aside on the stairs to let us both pass, then quietly opens her book again.*"
     },
     "after2_seo_rival_yuna_low": {
         "name": "{name}",
-        "text": "*Yuna steps aside on the landing and gives us a brief nod.*"
+        "text": "*Standing on the landing, Yuna steps aside and gives us a brief nod.*"
     },
     "after2_yuna_1": {
         "name": "{name}",
@@ -604,27 +604,27 @@
     },
     "after2_yuna_rival_dain_high": {
         "name": "Dain",
-        "text": "I told you to come to the gym, and you went to the annex. Come my way next time, too."
+        "text": "Hey, I said come to the gym, and you escaped to the library annex? You'd better come my way tomorrow!"
     },
     "after2_yuna_rival_dain_mid": {
         "name": "Dain",
-        "text": "You were at the library? Stop by the gym tomorrow."
+        "text": "Were you at the library after school today? Make sure you stop by the gym tomorrow!"
     },
     "after2_yuna_rival_dain_low": {
         "name": "Dain",
-        "text": "You were near the library? See you tomorrow!"
+        "text": "Oh, you were over by the library annex? Get home safe. See you tomorrow!"
     },
     "after2_yuna_rival_seo_high": {
         "name": "Seoyeon",
-        "text": "So you were in the annex. Stop by the student council room next time, too."
+        "text": "So you were at the library annex. Show your face at the council room next time, too."
     },
     "after2_yuna_rival_seo_mid": {
         "name": "Seoyeon",
-        "text": "You were in the annex. I finished today's work. See you tomorrow."
+        "text": "You were in the annex, then. I've finished the urgent council work for today, so I'll see you in class tomorrow."
     },
     "after2_yuna_rival_seo_low": {
         "name": "Seoyeon",
-        "text": "I found enough help. See you tomorrow."
+        "text": "The other council members filled in where we were short-handed. See you tomorrow."
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon",
@@ -698,7 +698,7 @@
     },
     "after2_yuna_trap": {
         "name": "Yuna",
-        "text": "…I thought you meant me, not this place."
+        "text": "…I thought you meant you liked being with me, not being in this room."
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",

@@ -463,7 +463,7 @@
     },
     "after3_dain_correct_2": {
         "name": "Dain",
-        "text": "...Oye."
+        "text": "*Dain se vuelve hacia mí.* Oye."
     },
     "after3_dain_correct_3": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
-        "text": "Gracias. Cuando vaya a la enfermería... quédate conmigo."
+        "text": "*Los dedos cálidos de Dain cubren suavemente el dorso de mi mano sobre el banco.* Cuando baje a la enfermería… acompáñame, al menos hasta la puerta."
     },
     "after3_dain_freetalk": {
         "name": "Dain",

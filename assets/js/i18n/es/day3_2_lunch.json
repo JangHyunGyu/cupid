@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "Yuna",
-        "text": "Toma también un poco de mi pan. *La comida del tercer día. Seoyeon se sienta a mi lado y Dain enfrente. Yuna acerca una silla.*"
+        "text": "Come también la mitad de mi pan. *A la hora de comer del tercer día, juntamos los pupitres en el aula. Seoyeon se sienta a mi lado, Dain enfrente y Yuna arrima una silla a mi otro costado.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "Puedo probar esto primero, ¿no? ...Solo un poquito. *Dain toma la tortilla enrollada antes que Yuna. Seoyeon mira al otro lado de la mesa antes de alzar los palillos.*"
+        "text": "¿Puedo probar primero esta tortilla enrollada? ¡Solo un bocado! *Los palillos de Dain llegan medio instante antes que los de Yuna. Seoyeon mira en silencio a Dain, enfrente, antes de coger los suyos.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Uy, qué rico. Coma también, presidenta. Haber llegado primero no significa que hoy pueda quedarse con todo."
+        "text": "¡Qué buen punto de sal! Coma también, señora presidenta. Haber ganado el asiento de al lado no le da derecho a acaparar las guarniciones."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "No pienso monopolizar la lonchera de otra persona. El rollito de huevo tiene un seis."
+        "text": "*Seoyeon coge un trozo de tortilla enrollada de mi fiambrera y lo prueba.* No pretendo monopolizar la comida de nadie. Está bien de sal, aunque la forma se ha deshecho un poco. Seis puntos."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Yuna mira a Dain mientras mastica la salchicha.* Así que no se lo queda quien lo toma primero."
+        "text": "*Yuna muerde lentamente una salchicha mientras mira a Dain, sentada enfrente.* Llegar primero no significa que sea tuyo."
     },
     "lunch3_meal_10": {
         "name": "{name}",

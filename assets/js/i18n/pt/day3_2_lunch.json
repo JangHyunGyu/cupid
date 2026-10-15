@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "Yuna",
-        "text": "Pode pegar um pouco do meu pão também. *Almoço do terceiro dia. Seoyeon se senta ao meu lado, Dain à minha frente. Yuna puxa uma cadeira.*"
+        "text": "Come metade do meu pão também. *No almoço do terceiro dia, juntamos as carteiras na sala. Seoyeon se senta ao meu lado, Dain à frente e Yuna puxa uma cadeira para o meu outro lado.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "Posso provar primeiro, né? ...Só um pouquinho. *Dain pega a omelete enrolada antes de Yuna. Seoyeon olha para o outro lado da mesa antes de levantar os palitinhos.*"
+        "text": "Posso provar este omelete enrolado primeiro, né? Só uma provinha! *Os hashis de Dain chegam um instante antes dos de Yuna. Antes de pegar os seus, Seoyeon observa Dain em silêncio do outro lado.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Uau, tá muito bom. Presidente, prova também. Não dá para ficar com tudo só porque chegou primeiro."
+        "text": "Opa, tempero no ponto! Pode comer também, senhora presidente. Conseguir primeiro o lugar ao lado dele não dá direito a ficar com todos os acompanhamentos."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "Não pretendo monopolizar a marmita de outra pessoa. A omelete merece nota seis."
+        "text": "*Seoyeon pega um pedaço de omelete enrolado da minha marmita e prova.* Não pretendo monopolizar o almoço de ninguém. O tempero está bom, mas o formato desmanchou um pouco. Seis pontos."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Olha para Dain enquanto mastiga a salsicha.* Então não é de quem pega primeiro."
+        "text": "*Yuna morde devagar uma salsicha enquanto olha para Dain à sua frente.* Então não é de quem pega primeiro."
     },
     "lunch3_meal_10": {
         "name": "{name}",

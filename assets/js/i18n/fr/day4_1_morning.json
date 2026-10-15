@@ -599,15 +599,15 @@
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Professeure principale",
-        "text": "Dans ce cas, leur critique ne servirait à rien. Je ne veux pas qu'ils m'épargnent parce que je suis leur prof."
+        "text": "Si je ne voulais que des compliments de politesse, je n'aurais même pas distribué les copies. Je refuse qu'on épargne mon texte parce que je suis leur professeure."
     },
     "hidden_nurse_d4_name_trap": {
         "name": "Infirmière",
-        "text": "Si seulement les blessures graves étaient le seul problème. Bien plus d'élèves se taisent et encaissent."
+        "text": "Si seulement on n'avait que les blessures visibles à soigner. À l'école, il y a bien plus d'élèves qui souffrent en silence sans rien laisser paraître."
     },
     "hidden_nurse_d4_trap": {
         "name": "Infirmière",
-        "text": "Je peux le faire seule. J’espérais juste que tu m’aiderais à terminer."
+        "text": "Je pourrais le faire seule. Mais puisqu'on a commencé ensemble, j'espérais que tu resterais à mes côtés jusqu'à la dernière boîte."
     },
     "day4_date_branch": {},
     "day4_haeun_concern_choice": {

@@ -463,7 +463,7 @@
     },
     "after3_dain_correct_2": {
         "name": "Dain",
-        "text": "Hey."
+        "text": "*Dain dreht sich zu mir um.* Hey."
     },
     "after3_dain_correct_3": {
         "name": "{name}",
@@ -582,7 +582,7 @@
     },
     "after3_dain_choice1_react3": {
         "name": "Dain",
-        "text": "Danke. Wenn ich ins Krankenzimmer gehe ... bleib bei mir."
+        "text": "*Dains warme Finger legen sich auf der Bank behutsam über meinen Handrücken.* Wenn ich zur Krankenstation runtergehe… bleib bei mir, wenigstens bis zur Tür."
     },
     "after3_dain_freetalk": {
         "name": "Dain",

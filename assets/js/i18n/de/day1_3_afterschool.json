@@ -547,6 +547,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn niemand da ist, kümmere ich mich um Unterlagen und Vorräte. Nur weil es ruhig ist, habe ich noch lange keine Pause."
+        "text": "Wenn keine Schüler da sind, muss ich auch Berichte schreiben und die Medikamentenvorräte prüfen. Nur weil es ruhig ist, habe ich nicht ständig Pause."
     }
 }

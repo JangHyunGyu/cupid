@@ -30,7 +30,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Bueno, me lo esperaba. Aun así, no quiero que parezca que fui yo quien se rindió primero."
+        "text": "Más o menos me lo esperaba. …Pero no quiero que parezca que fui yo quien se asustó y se rindió primero."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -38,7 +38,7 @@
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
-        "text": "Si esa es tu decisión, la respetaré. Eso no significa que yo ya haya ordenado mis sentimientos."
+        "text": "*Seoyeon alza la vista hacia mí, esforzándose por mantenerla firme.* Lo has pensado bien, así que respetaré tu decisión. Pero… eso no significa que hoy pueda ordenar mis sentimientos de golpe."
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
@@ -59,7 +59,7 @@
     },
     "after5_farewell_yuna_3": {
         "name": "Yuna",
-        "text": "No llegues tarde con la persona que elegiste. ...Aun así, todavía me gustas."
+        "text": "*Yuna me mira el rostro con ojos serenos.* No llegues tarde por nada a donde esté la persona que elegiste. …Aun así, todavía me gustas mucho."
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
@@ -80,7 +80,7 @@
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
-        "text": "Tch, qué lástima. Pero no pienso retirarme solo porque me duela."
+        "text": "*Dain se planta delante de mí y se sopla el flequillo con un resoplido deliberadamente fuerte.* ¡Jo, qué rabia! …Pero no pienso limitarme a decir que es una pena y marcharme fingiendo que no me importa."
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
@@ -88,7 +88,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "Sé a quién elegiste. Aun así, todavía me gustas. Al menos puedo decir eso, ¿no?"
+        "text": "Sé a quién se fue tu corazón. Pero tú todavía me gustas, y eso es cosa mía, ¿no? Ya que es la última ocasión, al menos puedo decirlo yo misma, ¿verdad?"
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -96,7 +96,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "Hazlo bien. Si no, volveré para llevarte conmigo."
+        "text": "Ve y trátala bien de verdad. Si andas con tonterías, iré a recuperarte yo misma."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
@@ -392,15 +392,15 @@
     "after5_defer_route_check": {},
     "after5_defer_seo": {
         "name": "Seoyeon",
-        "text": "*Baja despacio la mano que tenía extendida.* Bien. Si eso es lo que has decidido."
+        "text": "*Retira despacio la mano que me había tendido.* …Bien. Si eso has decidido, no puedo cambiarlo."
     },
     "after5_defer_dain": {
         "name": "Dain",
-        "text": "*Vuelve a abrazar el balón.* Bien. Hoy también nos detenemos aquí."
+        "text": "*Dain vuelve a abrazar el balón de voleibol con ambos brazos.* …Claro. Hoy también nos detenemos aquí."
     },
     "after5_defer_yuna": {
         "name": "Yuna",
-        "text": "*Vuelve a apretar el libro contra el pecho.* Entiendo. Hoy también nos detenemos aquí."
+        "text": "*Yuna vuelve a apretar contra el pecho el libro que había bajado un poco.* …Entendido. Hoy nuestra historia también termina aquí."
     },
     "after5_co_abandoned_branch": {},
     "after5_co_tempter_branch": {},

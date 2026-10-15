@@ -1,15 +1,15 @@
 {
     "lunch3_start": {
         "name": "Yuna",
-        "text": "Prends aussi un peu de mon pain. *Le déjeuner du troisième jour. Seoyeon s’assied à côté de moi, Dain en face. Yuna tire une chaise.*"
+        "text": "Prends aussi la moitié de mon pain. *Au déjeuner du troisième jour, nous rapprochons les bureaux de la classe. Seoyeon s'assied à côté de moi, Dain en face et Yuna tire une chaise de mon autre côté.*"
     },
     "lunch3_start_2_b": {
         "name": "Dain",
-        "text": "Je peux goûter d'abord, hein ? ...Juste pour voir. *Dain prend l'omelette roulée avant Yuna. Seoyeon regarde en face avant de lever ses baguettes.*"
+        "text": "Je peux goûter cette omelette roulée la première, non ? Juste un morceau ! *Les baguettes de Dain la saisissent une fraction de seconde avant celles de Yuna. Avant de prendre les siennes, Seoyeon observe Dain en silence de l'autre côté des bureaux.*"
     },
     "lunch3_meal_1": {
         "name": "Dain",
-        "text": "Oh, c’est bon. Goûtez aussi, madame la présidente. Ce n’est pas parce qu’on arrive la première qu’on peut tout garder."
+        "text": "Oh, c'est bien assaisonné ! Servez-vous aussi, madame la présidente. Avoir décroché la place à côté de lui ne vous donne pas tous les accompagnements."
     },
     "lunch3_meal_2": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "lunch3_meal_3": {
         "name": "Seoyeon",
-        "text": "Je n’ai pas l’intention de monopoliser le bento de quelqu’un d’autre. L’omelette roulée vaut six sur dix."
+        "text": "*Seoyeon prend un morceau d'omelette roulée dans ma boîte et le goûte.* Je ne compte pas monopoliser le déjeuner des autres. L'assaisonnement est bon, mais la forme se défait un peu. Six points."
     },
     "lunch3_meal_4": {
         "name": "{name}",
@@ -37,7 +37,7 @@
     },
     "lunch3_meal_7_b": {
         "name": "Yuna",
-        "text": "*Elle regarde Dain en mâchant la saucisse.* Ce n’est donc pas la première arrivée qui l’emporte."
+        "text": "*Yuna mord lentement dans une saucisse en regardant Dain en face.* Ce n'est donc pas au premier qui tend la main."
     },
     "lunch3_meal_10": {
         "name": "{name}",

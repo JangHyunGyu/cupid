@@ -547,6 +547,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "Enfermeira",
-        "text": "Quando não tem aluno, atualizo as fichas e confiro o material. Estar tudo quieto nem sempre significa folga."
+        "text": "Quando não tem alunos, ainda preciso preencher registros e conferir o estoque de remédios. A sala estar quieta não quer dizer que eu esteja descansando."
     }
 }

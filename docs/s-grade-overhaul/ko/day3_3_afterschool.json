@@ -475,7 +475,7 @@
     },
     "after3_dain_correct_2": {
         "name": "다인",
-        "text": "야."
+        "text": "*다인이 나를 돌아본다.* 야."
     },
     "after3_dain_correct_3": {
         "name": "{name}",
@@ -594,7 +594,7 @@
     },
     "after3_dain_choice1_react3": {
         "name": "다인",
-        "text": "고마워. 보건실 갈 때... 옆에 있어 줘."
+        "text": "*다인의 뜨거운 손가락이 벤치 위에서 내 손등을 살며시 덮어 쥔다.* 나 보건실 내려갈 때, 문 앞까지만이라도 꼭 옆에 같이 있어 줘."
     },
     "after3_dain_freetalk": {
         "name": "다인",

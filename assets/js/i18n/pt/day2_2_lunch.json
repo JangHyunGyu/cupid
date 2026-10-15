@@ -89,15 +89,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Aí está você. Te achei. Se vocês vão comer aqui no terraço, posso me juntar?"
+        "text": "Então era aqui que você estava se escondendo! Finalmente achei. Se é um piquenique no terraço, posso participar?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "O terraço exige autorização. E fui eu que combinei o almoço de hoje primeiro."
+        "text": "Para entrar no terraço, precisa de autorização do conselho estudantil. Além disso, eu reservei este almoço primeiro."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Então é só eu entrar agora. Vou sentar também, tá?"
+        "text": "Mas a porta já estava aberta! Então vou considerar que ganhei autorização na hora. Vou sentar, tá?"
     },
     "lunch2_seo_12": {
         "name": "Dain",
@@ -105,19 +105,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "Ontem você almoçou comigo. Em um dia já me trocou pela marmita da presidente?"
+        "text": "Ei, ontem você comeu comigo e já trocou pela marmita da presidente?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Prazer, presidente. Mas o lugar do lado está vazio, não está?"
+        "text": "Olá, senhora presidente! Mas este lugar aqui do lado ainda está livre, né?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon aproxima a marmita de mim.* Pode sentar. Só deixa a gente terminar a conversa."
+        "text": "*Seoyeon puxa a marmita aberta um pouco mais para perto de mim.* Pode sentar, mas primeiro vamos terminar a nossa conversa."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "Vou chegar mais perto. *Ela puxa a cadeira para perto de mim.*"
+        "text": "Se aí está apertado, eu chego um pouco mais pra cá. *Seoyeon aproxima a cadeira da minha, e nossos braços se roçam por baixo das mangas finas das camisas.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -125,19 +125,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Ficar próximo e ceder o lugar são coisas diferentes."
+        "text": "Ser colega de turma e abrir mão do meu horário de almoço são coisas diferentes."
     },
     "lunch2_seo_17": {
         "name": "Dain",
-        "text": "Então eu também não vou ceder. Vem ao ginásio no próximo intervalo."
+        "text": "Ah, é assim? Então eu também não vou ceder! Ei, no próximo intervalo, desce pro ginásio."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "{name}, você já está marcando o próximo encontro bem na minha frente?"
+        "text": "{name}, você está marcando outro encontro na minha frente enquanto come a minha comida?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "Responde depois. Primeiro, tem alguma coisa no canto da sua boca. Fica parado."
+        "text": "Responde depois. Tem um grão de arroz no canto da sua boca. Fica quietinho um instante."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
@@ -630,15 +630,15 @@
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
-        "text": "*Ela recolhe o lenço umedecido.* Claro. Você se vira muito bem sozinho."
+        "text": "*Ela recolhe em silêncio o lenço umedecido que tinha me oferecido.* Claro. Você sabe cuidar disso sozinho."
     },
     "lunch2_yuna_trap_compare": {
         "name": "Yuna",
-        "text": "*Yuna empurra a ponta do marcador um pouco mais para dentro.* Você e essa pessoa não são coisas que se comparem."
+        "text": "*Yuna empurra o marcador para o fundo das páginas, impondo um limite frio.* Ele e você não são pessoas pra comparar assim, sem pensar."
     },
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
-        "text": "*Ela puxa o livro para si e depois o solta devagar.* Isso quem decide sou eu."
+        "text": "*Ela puxa o livro contra o peito e depois o abaixa devagar.* Eu decido com quem falo e até onde conto as coisas."
     },
     "lunch2_seo_2_warm": {
         "name": "Seoyeon",

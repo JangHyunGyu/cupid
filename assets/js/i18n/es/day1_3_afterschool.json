@@ -547,6 +547,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "Enfermera",
-        "text": "Cuando no hay alumnos, actualizo las fichas y reviso el material. Que esté tranquilo no significa que esté descansando."
+        "text": "Cuando no hay alumnos, también tengo que completar registros y revisar las existencias de medicamentos. Que esté en silencio no significa que esté descansando."
     }
 }

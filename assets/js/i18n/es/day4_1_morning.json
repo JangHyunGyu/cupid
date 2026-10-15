@@ -599,15 +599,15 @@
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Profesora",
-        "text": "Entonces no tendría sentido pedir una crítica. No quiero que sean indulgentes solo porque soy su profesora."
+        "text": "Si solo quisiera cumplidos de compromiso, ni siquiera habría repartido copias. No quiero que traten mi texto con indulgencia por ser su profesora."
     },
     "hidden_nurse_d4_name_trap": {
         "name": "Enfermera",
-        "text": "Ojalá las heridas graves fueran lo único que importara. Hay muchos más alumnos que callan y aguantan."
+        "text": "Ojalá solo tuviéramos que curar heridas visibles. En la escuela hay muchos más alumnos sufriendo en silencio, sin poder mostrarlo."
     },
     "hidden_nurse_d4_trap": {
         "name": "Enfermera",
-        "text": "Puedo hacerlo sola. Te lo preguntaba porque esperaba que me ayudaras a terminar."
+        "text": "Podría hacerlo sola. Pero, ya que empezamos juntos, esperaba que te quedaras a mi lado hasta terminar la última caja."
     },
     "day4_date_branch": {},
     "day4_haeun_concern_choice": {

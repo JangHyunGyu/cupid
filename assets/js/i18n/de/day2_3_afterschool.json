@@ -240,27 +240,27 @@
     },
     "after2_dain_rival_seo_high": {
         "name": "Seoyeon",
-        "text": "*Seoyeon bleibt vorm Fenster stehen. Sie sieht die zwei Tteokbokki-Becher und schreibt.* Heute warst du also in der Halle. Schau nächstes Mal auch im Schülerrat vorbei."
+        "text": "*Seoyeon bleibt vor der großen Scheibe des Imbisses stehen. Sie sieht die beiden gegenüberstehenden Tteokbokki-Becher, und sofort kommt eine Nachricht.* Heute warst du nach der Schule also bei der Sporthalle. Vergiss nicht, nächstes Mal auch beim Schülerrat vorbeizuschauen."
     },
     "after2_dain_rival_seo_mid": {
         "name": "{name}",
-        "text": "*Seoyeon kommt am Imbiss vorbei und schaut zum Tisch. Zweimal richtet sie die Kanten ihres Klemmbretts aus, dann geht sie weiter zum Schultor.*"
+        "text": "*Als Seoyeon am Imbiss vorbeikommt, entdeckt sie unseren Tisch durch die Scheibe. Sie richtet die Ecken des Klemmbretts vor ihrer Brust zweimal aus und geht dann wortlos zum Schultor weiter.*"
     },
     "after2_dain_rival_seo_low": {
         "name": "{name}",
-        "text": "*Im Vorbeigehen nickt Seoyeon uns beiden zu, ohne langsamer zu werden.*"
+        "text": "*Seoyeon nickt uns im Vorbeigehen durch die Scheibe des Imbisses kurz zu, ohne langsamer zu werden.*"
     },
     "after2_dain_rival_yuna_high": {
         "name": "{name}",
-        "text": "*Yuna schaut durch das Fenster. Sie steckt den gefalteten Zettel in ihrer Hand zurück in die Tasche und dreht um.*"
+        "text": "*Yuna betrachtet uns durch die Scheibe des Imbisses. Sie schiebt den gefalteten Zettel zwischen ihren Fingern tief in die Tasche und dreht sich um.*"
     },
     "after2_dain_rival_yuna_mid": {
         "name": "{name}",
-        "text": "*Als Yuna am Imbiss vorbeikommt, will sie einen Ohrhörer herausnehmen. Dann sieht sie unseren Tisch und setzt ihn wieder ein.*"
+        "text": "*Als Yuna mich vor dem Imbiss sieht, will sie einen Ohrhörer herausnehmen. Dann bemerkt sie Dain mir gegenüber und steckt ihn still wieder ins Ohr.*"
     },
     "after2_dain_rival_yuna_low": {
         "name": "{name}",
-        "text": "*Yuna nickt uns einmal durch das Fenster zu und geht weiter zum Anbau.*"
+        "text": "*Yuna nickt uns durch die Scheibe kurz zu und wendet sich dann dem Bibliotheksanbau zu.*"
     },
     "after2_seo_1": {
         "name": "{name}",
@@ -463,27 +463,27 @@
     },
     "after2_seo_rival_dain_high": {
         "name": "Dain",
-        "text": "*Dain schiebt einen Ballwagen und sieht uns am Ende des Flurs.* Die Arbeit im Schülerrat hat ganz schön lange gedauert. *Sie umklammert den Griff und dreht sich als Erste um.*"
+        "text": "*Dain bleibt mit dem Volleyballwagen im Flur vor der Sporthalle stehen, als sie uns zusammen herauskommen sieht.* Dein Botengang beim Schülerrat hat heute ziemlich lange gedauert. *Sie umklammert den Griff und wendet sich zuerst ab.*"
     },
     "after2_seo_rival_dain_mid": {
         "name": "Dain",
-        "text": "*Sie hält den Ballwagen an.* Fertig? *Sie sieht kurz zu Seoyeon und schiebt den Wagen zurück Richtung Sporthalle.*"
+        "text": "*Sie hält den Ballwagen an.* Jetzt fertig? *Sie wirft einen Blick auf Seoyeon neben mir und schiebt den Wagen zurück in die Sporthalle.*"
     },
     "after2_seo_rival_dain_low": {
         "name": "Dain",
-        "text": "Gute Arbeit! *Sie winkt über den Ballwagen hinweg und geht zur Sporthalle.*"
+        "text": "Gut gemacht, ihr zwei! *Sie winkt energisch über den Ballwagen hinweg und verschwindet zur Sporthalle.*"
     },
     "after2_seo_rival_yuna_high": {
         "name": "{name}",
-        "text": "*Yuna liest auf dem Treppenabsatz. Als sie uns hört, schließt sie das Buch, zieht den Zettel zwischen den Seiten hervor und faltet ihn in der Mitte.*"
+        "text": "*Yuna liest am Fenster auf dem Treppenabsatz. Als sie uns zusammen herauskommen hört, schließt sie das Buch. Sie zieht den violetten Zettel neben dem Lesezeichen heraus und faltet ihn wortlos in der Mitte.*"
     },
     "after2_seo_rival_yuna_mid": {
         "name": "{name}",
-        "text": "*Yunas Hand bleibt auf der Seite liegen. Sie macht Platz für uns und öffnet dann wieder ihr Buch.*"
+        "text": "*Yunas Finger halten auf der offenen Seite inne. Sie weicht auf der Treppe eine Stufe aus, um uns vorbeizulassen, und schlägt dann still ihr Buch wieder auf.*"
     },
     "after2_seo_rival_yuna_low": {
         "name": "{name}",
-        "text": "*Yuna tritt auf dem Treppenabsatz zur Seite und nickt uns kurz zu.*"
+        "text": "*Yuna, die auf dem Treppenabsatz steht, tritt zur Seite und nickt uns kurz zu.*"
     },
     "after2_yuna_1": {
         "name": "{name}",
@@ -604,27 +604,27 @@
     },
     "after2_yuna_rival_dain_high": {
         "name": "Dain",
-        "text": "Ich hab gesagt, du sollst in die Sporthalle kommen, und du bist zum Anbau gegangen. Komm nächstes Mal auch zu mir."
+        "text": "Hey, ich hatte gesagt, du sollst zur Sporthalle kommen, und du flüchtest in den Bibliotheksanbau? Morgen kommst du gefälligst zu mir!"
     },
     "after2_yuna_rival_dain_mid": {
         "name": "Dain",
-        "text": "Du warst in der Bibliothek? Komm morgen in der Sporthalle vorbei."
+        "text": "Warst du heute nach der Schule in der Bibliothek? Schau morgen unbedingt bei der Sporthalle vorbei!"
     },
     "after2_yuna_rival_dain_low": {
         "name": "Dain",
-        "text": "Du warst bei der Bibliothek? Bis morgen!"
+        "text": "Ach, du warst beim Bibliotheksanbau? Komm gut nach Hause, bis morgen!"
     },
     "after2_yuna_rival_seo_high": {
         "name": "Seoyeon",
-        "text": "Du warst also im Anbau. Komm nächstes Mal auch im Schülerratsraum vorbei."
+        "text": "Du warst also im Bibliotheksanbau. Lass dich nächstes Mal auch beim Schülerrat sehen."
     },
     "after2_yuna_rival_seo_mid": {
         "name": "Seoyeon",
-        "text": "Du warst im Anbau. Ich bin mit der Arbeit für heute fertig. Bis morgen."
+        "text": "Also im Anbau. Die dringende Arbeit im Schülerrat ist für heute erledigt. Dann bis morgen im Klassenzimmer."
     },
     "after2_yuna_rival_seo_low": {
         "name": "Seoyeon",
-        "text": "Ich habe genug Hilfe gefunden. Bis morgen."
+        "text": "Die anderen Ratsmitglieder haben ausgeholfen, wo Leute fehlten. Bis morgen."
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon",
@@ -698,7 +698,7 @@
     },
     "after2_yuna_trap": {
         "name": "Yuna",
-        "text": "…Ich dachte, du meinst mich, nicht diesen Ort."
+        "text": "…Ich dachte, du meinst, dass du gern mit mir zusammen bist. Nicht, dass dir dieses Zimmer gefällt."
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",

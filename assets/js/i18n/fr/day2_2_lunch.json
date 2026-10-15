@@ -89,15 +89,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Te voilà. Je t’ai trouvé. Si vous mangez sur le toit, je peux me joindre à vous ?"
+        "text": "Alors c'est ici que tu te cachais ! Enfin trouvé. Si c'est un pique-nique sur le toit, je peux me joindre à vous ?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "L’accès au toit est soumis à autorisation. Et c’est moi qui avais prévu ce déjeuner en premier."
+        "text": "L'accès au toit nécessite l'autorisation du conseil des élèves. Et j'ai réservé ce déjeuner la première."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Alors je peux me joindre à vous maintenant. Je m’assois aussi, d’accord ?"
+        "text": "Mais la porte était déjà ouverte ! Alors je vais considérer ça comme une autorisation sur place. Je m'assieds, d'accord ?"
     },
     "lunch2_seo_12": {
         "name": "Dain",
@@ -105,19 +105,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "Hier, tu as mangé avec moi. En une journée, tu m’as remplacée par le bento de la présidente ?"
+        "text": "Hé, hier tu mangeais avec moi, et tu es déjà passé au repas de madame la présidente ?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Enchantée, madame la présidente. Mais la place à côté est libre, non ?"
+        "text": "Bonjour, madame la présidente ! Mais cette place à côté est encore libre, non ?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon rapproche son repas de moi.* Tu peux t’asseoir. Laisse-nous juste finir notre conversation."
+        "text": "*Seoyeon rapproche un peu plus sa boîte-repas ouverte de moi.* Tu peux t'asseoir, mais on va finir notre conversation d'abord."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "Je me rapproche un peu. *Elle tire sa chaise vers moi.*"
+        "text": "Si tu es à l'étroit, je vais me rapprocher un peu. *Seoyeon tire sa chaise tout près de la mienne et nos bras se frôlent à travers les fines manches de nos chemises.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -125,19 +125,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Se rapprocher et céder sa place, ce n’est pas la même chose."
+        "text": "Être camarades de classe et céder ma pause déjeuner, ce sont deux choses différentes."
     },
     "lunch2_seo_17": {
         "name": "Dain",
-        "text": "Alors moi non plus, je ne céderai pas. Viens au gymnase à la prochaine pause."
+        "text": "Ah, tu le prends comme ça ? Alors moi non plus, je ne cède pas ! Hé, viens au gymnase à la prochaine pause."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "{name}, tu prends déjà ton prochain rendez-vous juste devant moi ?"
+        "text": "{name}, tu prévois une autre sortie sous mes yeux pendant que tu manges mon déjeuner ?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "Tu répondras plus tard. D’abord, tu as quelque chose au coin des lèvres. Ne bouge pas."
+        "text": "Tu répondras plus tard. Tu as un grain de riz au coin de la bouche. Ne bouge pas une seconde."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
@@ -630,15 +630,15 @@
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
-        "text": "*Elle retire la lingette.* Bien sûr. Tu te débrouilles très bien tout seul."
+        "text": "*Elle retire en silence la lingette qu'elle me tendait.* Bien sûr. Tu sais très bien t'en occuper tout seul."
     },
     "lunch2_yuna_trap_compare": {
         "name": "Yuna",
-        "text": "*Yuna enfonce un peu plus le bout du marque-page.* Toi et cette personne, ça ne se compare pas."
+        "text": "*Yuna enfonce le marque-page entre les feuilles, posant une limite froide.* Lui et toi, vous n'êtes pas des gens qu'on compare à la légère."
     },
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
-        "text": "*Elle ramène le livre vers elle, puis le relâche lentement.* C’est à moi d’en décider."
+        "text": "*Elle ramène le livre contre sa poitrine, puis l'abaisse lentement.* C'est moi qui décide à qui je parle, et de quoi."
     },
     "lunch2_seo_2_warm": {
         "name": "Seoyeon",

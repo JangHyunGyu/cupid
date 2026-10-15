@@ -661,11 +661,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Tu es libre ce week-end ? Allons au parc ensemble."
+        "text": "*Près de la fenêtre du couloir, Seoyeon se rapproche d'un demi-pas et baisse la voix.* Tu peux me garder un peu de temps ce week-end ? J'aimerais aller au parc, juste nous deux. Sans travail du conseil."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pose la question devant la porte de la classe. Dain ne tourne plus le bouchon de sa bouteille.*",
+        "text": "*Les yeux de Seoyeon se fixent sur mes lèvres. De l'autre côté de la porte ouverte de la classe, la main de Dain s'arrête sur le bouchon de sa bouteille pendant qu'elle nous regarde.*",
         "choices": [
             "D’accord. À quelle heure ?",
             "Je crois que je serai un peu occupé",
@@ -675,23 +675,23 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "Oui, à ce week-end. *Je fixe le rendez-vous avec Seoyeon ; Dain vient à mon bureau.*"
+        "text": "Bien, on se voit au parc ce week-end. *Les joues de Seoyeon rosissent à ma réponse et Dain s'avance à grands pas vers mon bureau.*"
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*Quand je refuse la proposition de Seoyeon, Dain recommence à tourner le bouchon de sa bouteille.*"
+        "text": "*Quand je décline l'invitation de Seoyeon, elle baisse les yeux sans un mot. Dans la classe, Dain reprend vivement le mouvement interrompu et ouvre le bouchon de sa bouteille.*"
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Alors, à mon tour. Ça te dit d’aller à la salle d’arcade ce week-end ? La présidente n’est pas la seule à pouvoir te le demander."
+        "text": "Bon, à mon tour ! Tu viens à la salle d'arcade avec moi ce week-end ? La présidente n'a pas l'exclusivité des invitations."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "J'ai demandé à voix haute. Mieux qu'un billet, non ? *Elle tapote le bord du bureau.*"
+        "text": "Moi, j'ai demandé assez fort pour que tout le monde entende. C'est mieux qu'un billet, non ? *Dain tapote le coin de mon bureau du bout des doigts et se penche.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "Si t'aimes les salles d'arcade, tu peux venir avec moi. Réponds pas seulement à la présidente. *Elle se penche un peu et attend.*",
+        "text": "Si tu ne détestes pas les salles d'arcade, garde-moi un peu de temps aussi. Ne réponds pas qu'à la présidente, d'accord ? *Dain se rapproche tout près et me fixe en attendant ma réponse.*",
         "choices": [
             "OK, c’est parti",
             "Ce week-end, c’est compliqué...",
@@ -701,11 +701,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "D'accord. À la salle d'arcade. *Dain sourit ; Seoyeon referme son porte-bloc.*"
+        "text": "Super, on se voit à la salle d'arcade ce week-end. *Dain rayonne comme si elle avait tout gagné, tandis que Seoyeon referme sèchement son porte-documents au premier rang.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Ah, vraiment ? Si tu es occupé, tant pis ! Ce n’est pas parce que la présidente t’a demandé en premier, hein ?"
+        "text": "Ah, vraiment ? Si tu es occupé, tant pis ! Ce n'est pas parce que la présidente m'a devancée que tu refuses, hein ?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -713,19 +713,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Juste avant le déjeuner, Yuna pose un mot plié sur mon bureau. Seoyeon et Dain regardent sa main au même instant.*"
+        "text": "*Juste avant le déjeuner, Yuna s'approche sans bruit et pose un billet plié en carré sur mon bureau. Seoyeon et Dain regardent ses doigts en même temps.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Yuna. Si tu le demandes par écrit, les autres ne peuvent pas entendre."
+        "text": "Yuna. Si tu ne parles que par billets, les gens à côté ne peuvent pas savoir ce que tu dis."
     },
     "morning3_date_yuna_2": {
         "name": "Yuna",
-        "text": "*Le billet dit.* Ce week-end. Bouquiniste. Même si tu as déjà un rendez-vous, viens si tu veux. — Yuna"
+        "text": "*Sur le billet déplié, l'écriture à l'encre mauve est nette.* Ce week-end, la librairie d'occasion dans la ruelle. Même si tu as déjà prévu quelque chose, viens si tu as envie d'être avec moi. Je t'attendrai."
     },
     "morning3_date_yuna_choice": {
         "name": "Yuna",
-        "text": "Si c'est important de le dire à voix haute, je le dis maintenant. Je veux ta réponse. *Elle regarde Seoyeon puis Dain, sans se cacher derrière le livre.*",
+        "text": "Si c'est plus juste de le dire devant tout le monde, je vais le faire maintenant. C'est ta réponse que je veux entendre, pas celle des autres. *Yuna regarde tour à tour Seoyeon et Dain, puis soutient mon regard sans se cacher derrière son livre.*",
         "choices": [
             "Écrire « Je viendrai » au dos du mot",
             "Écrire « Ce week-end, ça va être difficile » au dos du mot",
@@ -735,7 +735,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*J’écris ma réponse au dos et rends le billet. Yuna le lit, le plie et le glisse dans son livre.*"
+        "text": "*J'écris ma réponse au dos et lui rends le billet. Yuna le lit jusqu'au bout, le replie avec soin et le glisse entre les pages de son livre.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

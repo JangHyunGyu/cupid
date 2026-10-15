@@ -89,15 +89,15 @@
     },
     "lunch2_seo_9": {
         "name": "Dain",
-        "text": "Aquí estabas. Te encontré. Si van a comer en la azotea, ¿puedo sumarme?"
+        "text": "¡Así que aquí te escondías! Por fin te encuentro. Si es un pícnic en la azotea, ¿me puedo apuntar?"
     },
     "lunch2_seo_10": {
         "name": "Seoyeon",
-        "text": "La azotea requiere permiso. Y hoy yo hice primero los planes para el almuerzo."
+        "text": "Para entrar en la azotea hace falta permiso del consejo estudiantil. Y, además, yo reservé primero este almuerzo."
     },
     "lunch2_seo_11": {
         "name": "Dain",
-        "text": "Entonces puedo sumarme desde ahora. Me siento también, ¿sí?"
+        "text": "¡Pero si la puerta ya estaba abierta! Entonces lo tomaré como un permiso sobre la marcha. Me siento, ¿vale?"
     },
     "lunch2_seo_12": {
         "name": "Dain",
@@ -105,19 +105,19 @@
     },
     "lunch2_seo_13": {
         "name": "Dain",
-        "text": "Ayer comiste conmigo. ¿En un solo día me cambiaste por la lonchera de la presidenta?"
+        "text": "Oye, ayer comiste conmigo y ¿ya te has pasado a la fiambrera de la presidenta?"
     },
     "lunch2_seo_13b": {
         "name": "Dain",
-        "text": "Mucho gusto, presidenta. Pero el asiento de al lado está libre, ¿verdad?"
+        "text": "¡Hola, presidenta! Pero este asiento de al lado sigue libre, ¿no?"
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon acerca su comida hacia mí.* Puedes sentarte. Pero déjanos terminar lo que estábamos hablando."
+        "text": "*Seoyeon acerca un poco más su fiambrera abierta hacia mí.* Puedes sentarte, pero primero vamos a terminar nuestra conversación."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
-        "text": "Me acerco un poco más. *Arrima su silla hacia mí.*"
+        "text": "Si estás apretado ahí, me acercaré un poco más. *Seoyeon arrima su silla a la mía y nuestros brazos se rozan a través de las finas mangas de las camisas.*"
     },
     "lunch2_seo_15": {
         "name": "{name}",
@@ -125,19 +125,19 @@
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
-        "text": "Llevarse bien y ceder son cosas distintas."
+        "text": "Ser compañeros de clase y ceder mi hora de comer son cosas distintas."
     },
     "lunch2_seo_17": {
         "name": "Dain",
-        "text": "Entonces yo tampoco voy a ceder. Ven al gimnasio en el próximo descanso."
+        "text": "¿Ah, esas tenemos? ¡Pues yo tampoco pienso ceder! Oye, baja al gimnasio en el próximo descanso."
     },
     "lunch2_seo_19": {
         "name": "Seoyeon",
-        "text": "{name}, ¿estás haciendo tus próximos planes delante de mí?"
+        "text": "{name}, ¿estás haciendo otros planes delante de mí mientras te comes mi comida?"
     },
     "lunch2_seo_20": {
         "name": "Seoyeon",
-        "text": "Responde después. Primero, tienes algo en la comisura de los labios. Quieto."
+        "text": "Contesta luego. Tienes un grano de arroz junto a la boca. No te muevas un momento."
     },
     "lunch2_seo_choice": {
         "name": "Seoyeon",
@@ -630,15 +630,15 @@
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
-        "text": "*Retira la toallita.* Claro. Tú puedes con todo solo."
+        "text": "*Retira en silencio la toallita húmeda que me ofrecía.* Claro. Para eso te bastas tú solo."
     },
     "lunch2_yuna_trap_compare": {
         "name": "Yuna",
-        "text": "*Yuna empuja un poco más el extremo del marcapáginas.* Tú y esa persona no se pueden comparar."
+        "text": "*Yuna hunde el marcapáginas entre las hojas, marcando una distancia fría.* Él y tú no sois personas a las que comparar tan a la ligera."
     },
     "lunch2_yuna_trap_exclusive": {
         "name": "Yuna",
-        "text": "*Atrae el libro hacia sí y luego lo suelta despacio.* Eso lo decido yo."
+        "text": "*Se lleva el libro al pecho y después lo baja despacio.* Yo decido a quién le cuento las cosas y hasta dónde."
     },
     "lunch2_seo_2_warm": {
         "name": "Seoyeon",

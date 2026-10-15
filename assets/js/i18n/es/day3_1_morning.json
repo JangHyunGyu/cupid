@@ -661,11 +661,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "¿Tienes tiempo este fin de semana? Vamos juntos al parque."
+        "text": "*Junto a la ventana del pasillo, Seoyeon se acerca medio paso y baja la voz.* ¿Puedes reservarme un rato este fin de semana? Quiero ir al parque contigo, a solas. Sin asuntos del consejo."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon pregunta desde la puerta del salón. La tapa de la botella que Dain estaba girando se detiene.*",
+        "text": "*Los ojos de Seoyeon se fijan en mis labios. Al otro lado de la puerta abierta del aula, la mano de Dain se queda inmóvil sobre el tapón de su botella mientras nos mira.*",
         "choices": [
             "Vale. ¿A qué hora?",
             "Creo que voy a estar ocupado",
@@ -675,23 +675,23 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "Sí, nos vemos el fin de semana. *Quedo con Seoyeon; Dain se acerca a mi mesa.*"
+        "text": "Bien, nos vemos en el parque este fin de semana. *Las mejillas de Seoyeon se tiñen ligeramente al oír mi respuesta y Dain se acerca a mi pupitre a grandes pasos.*"
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*Cuando rechazo la invitación de Seoyeon, Dain vuelve a girar la tapa de su botella.*"
+        "text": "*Cuando rechazo la invitación de Seoyeon, ella baja la mirada en silencio. Dentro del aula, Dain vuelve a girar con brío el tapón de la botella y lo abre.*"
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Entonces es mi turno. ¿Quieres ir al arcade este fin de semana? La presidenta no es la única que puede invitarte."
+        "text": "¡Ahora me toca a mí! ¿Vamos a los recreativos este fin de semana? La presidenta no tiene derecho a reservarlo todo primero."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "Lo he preguntado en voz alta. Mejor que una nota, ¿no? *Golpea el borde de la mesa.*"
+        "text": "Yo lo he preguntado para que me oigan todos. Mejor que una nota, ¿no? *Dain tamborilea con los dedos en la esquina de mi pupitre y se inclina.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "Si no odias los recreativos, puedes venir conmigo. No le des una respuesta solo a la presidenta. *Se inclina un poco y espera.*",
+        "text": "Si no odias los recreativos, hazme un hueco a mí también. No le contestes solo a la presidenta, ¿vale? *Dain se acerca mucho y me mira fijamente, esperando respuesta.*",
         "choices": [
             "Bueno, hecho",
             "El fin de semana no puedo...",
@@ -701,11 +701,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "Vale. Nos vemos en los recreativos. *Dain sonríe; Seoyeon cierra su carpeta.*"
+        "text": "Bien, nos vemos en los recreativos este fin de semana. *Dain sonríe como si hubiera ganado el mundo y Seoyeon cierra de golpe su carpeta en el asiento de delante.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "¿Ah, sí? ¡Bueno, si estás ocupado, qué le vamos a hacer! No será porque la presidenta preguntó primero, ¿verdad?"
+        "text": "¿Ah, sí? ¡Si estás ocupado, qué le vamos a hacer! No será que me dices que no porque la presidenta se me adelantó, ¿verdad?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -713,19 +713,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Justo antes del almuerzo, Yuna deja una nota doblada sobre mi pupitre. Seoyeon y Dain miran su mano al mismo tiempo.*"
+        "text": "*Justo antes del almuerzo, Yuna se acerca en silencio y deja una nota doblada en cuadrado sobre mi pupitre. Las miradas de Seoyeon y Dain coinciden en sus dedos.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Yuna. Si preguntas con una nota, nadie más puede oírte."
+        "text": "Yuna. Si solo preguntas mediante notas, los que estamos al lado no sabemos de qué habláis."
     },
     "morning3_date_yuna_2": {
         "name": "Yuna",
-        "text": "*La nota dice.* Fin de semana. Librería de segunda mano. Aunque ya tengas planes, ven si quieres. — Yuna"
+        "text": "*La nota desplegada lleva una letra clara en tinta lila.* Este fin de semana, la librería de segunda mano del callejón. Aunque ya tengas planes, ven si quieres estar conmigo. Te esperaré."
     },
     "morning3_date_yuna_choice": {
         "name": "Yuna",
-        "text": "Si importa decirlo en voz alta, lo digo ahora. Quiero tu respuesta. *Mira a Seoyeon y a Dain, sin esconderse tras el libro.*",
+        "text": "Si lo justo es decirlo para que lo oigan todos, lo diré ahora. Quiero tu respuesta, no la de los demás. *Yuna mira a Seoyeon y a Dain por turnos y después me mira a los ojos sin esconderse tras el libro.*",
         "choices": [
             "Escribir «Iré» al dorso de la nota",
             "Escribir «Este fin de semana no puedo» al dorso de la nota",
@@ -735,7 +735,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*Escribo detrás y devuelvo la nota. Yuna la lee, la dobla y la guarda en el libro.*"
+        "text": "*Escribo la respuesta por detrás y le devuelvo la nota. Yuna la lee hasta el final, dobla el papel con cuidado y lo guarda entre las páginas de su libro.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

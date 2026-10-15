@@ -30,7 +30,7 @@
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
-        "text": "Well, I expected it. I just don't want it to look like I was the one who gave up first."
+        "text": "I expected it, more or less. …But I hope it doesn't look like I was the one who got scared and gave up first."
     },
     "after5_farewell_seo_5": {
         "name": "{name}",
@@ -38,7 +38,7 @@
     },
     "after5_farewell_seo_6": {
         "name": "Seoyeon",
-        "text": "If that's your decision, I'll respect it. That doesn't mean I've sorted out my own feelings."
+        "text": "*Seoyeon looks up at me, trying to keep her gaze steady.* You thought it through, so I'll respect your choice. But… that doesn't mean I can neatly put my feelings away today."
     },
     "after5_farewell_seo_6_b": {
         "name": "Seoyeon",
@@ -59,7 +59,7 @@
     },
     "after5_farewell_yuna_3": {
         "name": "Yuna",
-        "text": "Don't be late for the person you chose. ...I still like you, though."
+        "text": "*Yuna holds my face in her quiet gaze.* Don't ever be late for the person you chose. …Even so, I still like you. A lot."
     },
     "after5_farewell_yuna_4": {
         "name": "Yuna",
@@ -80,7 +80,7 @@
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
-        "text": "Tch, that stings! But I'm not backing off just because I'm disappointed."
+        "text": "*Dain stops in front of me and blows her bangs up with a deliberately loud breath.* Tch, that really stings! …But I'm not going to say I'm disappointed and walk away pretending I'm cool with it."
     },
     "after5_farewell_dain_3": {
         "name": "{name}",
@@ -88,7 +88,7 @@
     },
     "after5_farewell_dain_4": {
         "name": "Dain",
-        "text": "I know who you chose. I still like you, though. I'm allowed to say that much."
+        "text": "I know where your heart went. But I still like you, and those feelings are mine, aren't they? It's the last chance. I can at least say that myself, right?"
     },
     "after5_farewell_dain_4_b": {
         "name": "{name}",
@@ -96,7 +96,7 @@
     },
     "after5_farewell_dain_4_c": {
         "name": "Dain",
-        "text": "Treat her right. If you don't, I'm winning you back."
+        "text": "Go and treat her right. If you mess around, I'll come take you back myself."
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
@@ -392,15 +392,15 @@
     "after5_defer_route_check": {},
     "after5_defer_seo": {
         "name": "Seoyeon",
-        "text": "*She slowly lowers her open hand.* Fine. If that is what you decided."
+        "text": "*She slowly draws back the hand she held out to me.* …Okay. If that's what you've decided, I can't change it."
     },
     "after5_defer_dain": {
         "name": "Dain",
-        "text": "*She hugs the volleyball again.* Okay. We are stopping here again today."
+        "text": "*Dain hugs the volleyball in both arms again.* …Right. So this is where we stop today, too."
     },
     "after5_defer_yuna": {
         "name": "Yuna",
-        "text": "*She gathers the book back to her chest.* I see. We are stopping here again today."
+        "text": "*Yuna draws the book she'd lowered back against her chest.* …All right. So our story stops here today, too."
     },
     "after5_co_abandoned_branch": {},
     "after5_co_tempter_branch": {},

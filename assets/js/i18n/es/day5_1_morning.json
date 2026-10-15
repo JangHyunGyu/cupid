@@ -606,7 +606,7 @@
     },
     "hidden_nurse_d5_choice_trap": {
         "name": "Enfermera",
-        "text": "Al contrario. La tarjeta no es para que lo aguantes todo a solas."
+        "text": "*Niega con firmeza.* Es justo al revés. Esta tarjeta no es un amuleto para que lo aguantes todo tú solo."
     },
     "morning5_after_counteroffer_hidden_check": {},
     "hidden_nurse_d5_after_co_check": {},

@@ -661,11 +661,11 @@
     },
     "morning3_date_seo_1": {
         "name": "Seoyeon",
-        "text": "Are you free this weekend? Let's go to the park together."
+        "text": "*Seoyeon steps half a pace closer by the corridor window and lowers her voice.* Can you keep some time free this weekend? I want to go to the park, just the two of us. No council work."
     },
     "morning3_date_seo_choice": {
         "name": "Seoyeon",
-        "text": "*Seoyeon asks from the classroom doorway. The cap on Dain's water bottle stops turning.*",
+        "text": "*Seoyeon's eyes settle on my lips. Through the open classroom door, Dain's hand stops on the cap of her water bottle as she watches us.*",
         "choices": [
             "Sure. What time?",
             "I might be kind of busy.",
@@ -675,23 +675,23 @@
     },
     "morning3_date_seo_accept": {
         "name": "{name}",
-        "text": "Yeah, see you this weekend. *I arrange to meet Seoyeon; Dain comes to my desk.*"
+        "text": "Great. See you at the park this weekend. *Seoyeon's cheeks turn faintly pink at my answer, and Dain strides over to my desk.*"
     },
     "morning3_date_seo_decline": {
         "name": "{name}",
-        "text": "*When I turn down Seoyeon's offer, Dain starts twisting the water-bottle cap again.*"
+        "text": "*When I turn down Seoyeon's invitation, she quietly lowers her gaze. Inside the classroom, Dain briskly twists open the bottle cap she'd stopped turning.*"
     },
     "morning3_date_dain_1": {
         "name": "Dain",
-        "text": "Then it's my turn. Want to hit the arcade this weekend? The president isn't the only one allowed to ask."
+        "text": "Right, my turn now! Want to go to the arcade with me this weekend? The president doesn't get first dibs on everything."
     },
     "morning3_date_dain_2": {
         "name": "Dain",
-        "text": "I asked out loud. Better than a note, right? *She taps the desk edge.*"
+        "text": "I asked where everyone could hear me. Better than a note, right? *Dain taps the corner of my desk with her fingertips and leans forward.*"
     },
     "morning3_date_dain_choice": {
         "name": "Dain",
-        "text": "If you don't hate arcades, you could go with me. Don't just give the president an answer. *She leans down a little, waiting.*",
+        "text": "If you don't hate arcades, make some time for me too. Don't just answer the president, okay? *Dain leans close, watching me intently for an answer.*",
         "choices": [
             "Sure, let's do it",
             "This weekend might be tough.",
@@ -701,11 +701,11 @@
     },
     "morning3_date_dain_accept": {
         "name": "{name}",
-        "text": "Okay. See you at the arcade. *Dain smiles; Seoyeon closes her clipboard.*"
+        "text": "Great, see you at the arcade this weekend. *Dain beams as if she's won the world, while Seoyeon snaps her clipboard shut at the desk ahead.*"
     },
     "morning3_date_dain_decline": {
         "name": "Dain",
-        "text": "Oh, yeah? Can't help it if you're busy! It's not because the president asked first, is it?"
+        "text": "Oh, really? Can't help it if you're busy! You're not turning me down just because the president got here first, are you?"
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
@@ -713,19 +713,19 @@
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
-        "text": "*Just before lunch, Yuna sets a folded note on my desk. Seoyeon and Dain look at her hand at the same time.*"
+        "text": "*Just before lunch, Yuna quietly comes over and sets a neatly folded note on my desk. Seoyeon and Dain both look at her fingertips.*"
     },
     "morning3_date_yuna_1_b": {
         "name": "Seoyeon",
-        "text": "Yuna. If you ask by note, nobody else can hear you."
+        "text": "Yuna. If you only ask through notes, the rest of us can't hear what you're saying."
     },
     "morning3_date_yuna_2": {
         "name": "Yuna",
-        "text": "*The note reads.* Weekend. Used bookstore. Even if you have plans already, come if you want to. — Yuna"
+        "text": "*The unfolded note is written clearly in pale purple ink.* This weekend. The used bookshop in the alley. Even if you've already made plans, come if you want to be with me. I'll wait."
     },
     "morning3_date_yuna_choice": {
         "name": "Yuna",
-        "text": "If saying it aloud matters, I'll say it now. I want your answer. *She looks at Seoyeon, then Dain, leaving her face uncovered.*",
+        "text": "If saying it out loud makes it fair, I'll say it now. I want your answer, not anyone else's. *Yuna looks at Seoyeon and Dain in turn, then meets my eyes without hiding behind her book.*",
         "choices": [
             "Write “I'll go” on the back of the note",
             "Write “I can't this weekend” on the back of the note",
@@ -735,7 +735,7 @@
     },
     "morning3_date_yuna_accept": {
         "name": "{name}",
-        "text": "*I write my answer on the back and return the note. Yuna reads it, folds it and slips it into her book.*"
+        "text": "*I write my answer on the back and hand it over. Yuna reads it to the end, carefully folds the paper, and slips it between the pages of her book.*"
     },
     "morning3_date_yuna_decline": {
         "name": "{name}",

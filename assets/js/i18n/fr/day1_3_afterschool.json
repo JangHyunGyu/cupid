@@ -547,6 +547,6 @@
     },
     "after_nurse_enter_trap": {
         "name": "Infirmière",
-        "text": "Quand il n’y a personne, je m’occupe des dossiers et du matériel. Le calme, ce n’est pas toujours une pause."
+        "text": "Quand il n'y a pas d'élèves, j'ai aussi des dossiers à remplir et les stocks de médicaments à vérifier. Ce n'est pas parce que la pièce est calme que je me repose."
     }
 }

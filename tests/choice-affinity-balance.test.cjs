@@ -479,8 +479,8 @@ test('audited trap copy follows the selected intent into a matching reaction', (
     assert.equal(scenes.lunch2_yuna_choice.choices[3].next, 'lunch2_yuna_trap_exclusive');
     assert.equal(scenes.lunch2_yuna_trap_compare.next, 'lunch2_yuna_c2_1');
     assert.equal(scenes.lunch2_yuna_trap_exclusive.next, 'lunch2_yuna_c2_1');
-    assert.match(korean.lunch2_yuna_trap_compare.text, /비교할 일이 아니야/);
-    assert.match(korean.lunch2_yuna_trap_exclusive.text, /내가 정해/);
+    assert.match(korean.lunch2_yuna_trap_compare.text, /가볍게 비교할 대상이 아니야/);
+    assert.match(korean.lunch2_yuna_trap_exclusive.text, /내가 직접 정해/);
 
     for (const [sceneId, character, flag] of [
         ['confess_seo_choice', 'Seoyeon', 'postponed_seoyeon'],
@@ -933,7 +933,7 @@ test('authored optimal-route choice budgets stay fixed after added group turns',
     assert.ok(scenes.after3_dain_dilemma_final.choices[1].setFlags.includes('dain_planned_nurse_visit'));
     assert.equal(scenes.after3_dain_dilemma_final.choices[1].setFlags.includes('ignored_dain_knee'), false);
     assert.equal(korean.after3_dain_dilemma_final.choices[1], '알겠어. 네가 직접 말해. 대신 보건실엔 같이 갈게.');
-    assert.equal(korean.after3_dain_choice1_react3.text, '고마워. 보건실 갈 때... 옆에 있어 줘.');
+    assert.equal(korean.after3_dain_choice1_react3.text, "*다인의 뜨거운 손가락이 벤치 위에서 내 손등을 살며시 덮어 쥔다.* 나 보건실 내려갈 때, 문 앞까지만이라도 꼭 옆에 같이 있어 줘.");
     assert.equal(scenes.wall_dain_choice.choices[1].stats.Dain.affinity, 5);
     assert.equal(scenes.hidden_homeroom_d4_choice.choices[0].stats.Teacher.affinity, 5);
     assert.equal(scenes.hidden_homeroom_d4_cafe_choice.choices[0].stats.Teacher.affinity, 7);
@@ -1783,7 +1783,7 @@ test('prior-lunch dialogue is reachable only through the flag that proves the lu
         { condition: 'chose_dain_lunch', next: 'lunch2_seo_13' },
         { next: 'lunch2_seo_13b' }
     ]);
-    assert.match(korean.lunch2_seo_13.text, /어제는 나랑 먹었잖아/);
+    assert.match(korean.lunch2_seo_13.text, /어제는 나랑 먹었으면서/);
     assert.doesNotMatch(korean.lunch2_seo_13b.text, /어제|나랑 먹었/);
 
     const flagProducers = Object.values(scenario[1])
@@ -1814,16 +1814,16 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_seo_4', 'after5_farewell_seo_6', 'after5_farewell_yuna_3',
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
-    // Reviewed dialogue-balance copy in all eight languages; see docs/qa/dialogue-balance-2026-10-04.json and docs/qa/scene-upgrade-20261015.json.
+    // Reviewed dialogue-balance copy in all eight languages; see docs/qa/dialogue-balance-2026-10-04.json, docs/qa/scene-upgrade-20261015.json, and docs/qa/scenario-copy-polish-20261015.json.
     const expectedDigests = {
-        "ko": "65611e5d1710494fc681b72ed24518ca8a228cad4e6896d11dcf2db92980b574",
-        "en": "e3eb92b53e52b522250f617797b695b89c927151cd2c7669daf7eadeed731b74",
-        "ja": "8bd7877f4bfb8c66d3994e5fea13477efb926339363511b199b797fbd30a0423",
-        "es": "d82e7246d86d2bd868a1e92e62ce87bce728aac6c69e3c544c24396634e3e1ed",
-        "fr": "3234d79fed09124d134196dc4c0e84f78d0a7ed37ef9c658f942c1d48d6f74d9",
-        "de": "3190432b8193c30a1f87067b4f172d51f427b6cd3b524126dcdcd3dd67584e25",
-        "pt": "cab006b3a083a6e54ad2f209b74b3c6e68286b31879ed2a48e1305ef8cbecce0",
-        "zh": "aedf622f1d587a33a03ab68142daac0b0e979223659d0b7b7b94f0ad31346848"
+        "ko": "8fe237e44dde4de575401910576cd2ce68aa1a64d3c831629780321ae5befaf6",
+        "en": "cd42d7f95081fef2ba899c0075b53844b74169ae257a7fcfb0af3bec88c4cf78",
+        "ja": "1555fa49490455190aa755d61c260a38368eb9ba8adc5f56dd8233e10cad825e",
+        "es": "cba8b2288951d986dae82ce90eac97c229860e796d094498c51fe237c538c374",
+        "fr": "a06d5a06495622a0d4c3a61e272c4ee4ef5dc25d07bd3d349f5f9a4fe0846676",
+        "de": "161c2b6333a196677ce696c7d18890dafafb3d663d6f9e939b19972dfa5cc8b0",
+        "pt": "fb79356c14f30e260e836f085f9daef8941dfb9a65bd1ac38a04cefea4e08f39",
+        "zh": "98b7434b908f1419bccdb5cef94611e02c102e1a7e5a5d08c7e6b6727a078912"
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {
@@ -1885,23 +1885,23 @@ test('character-specific trap choices retain their understated Korean wording an
     }
 
     const reactions = {
-        lunch_dain_trap_1: '관심 없으면 없다고 해. 맞춰주는 건 더 싫어.',
-        after_nurse_enter_trap: '학생 없을 땐 기록도 쓰고 물품도 챙겨. 조용하다고 늘 쉬는 건 아니야.',
-        hidden_homeroom_d2_choice1_trap: '선생님이라고 취향까지 어려울 필요는 없지.',
-        lunch2_seo_trap_1: '*물티슈를 거둔다.* 그래. 혼자서 잘하니까.',
-        after2_yuna_trap: '…여기가 아니라, 내 얘기인 줄 알았는데.',
-        date_seo_role_trap: '*가방끈에서 손을 뗀다.* 오늘은 학생회장으로 나온 거 아닌데.',
-        date_yuna_trap: '평소에는 말 걸기 불편했나 보네.',
-        date_dain_bright: '*웃던 다인이 모자챙을 한 번 더 눌러쓴다.* ...그렇지. 운동복이 편하니까.',
-        hidden_homeroom_d4_cafe_trap: '그런 합평이면 받을 이유가 없지. 선생님 글이라고 봐주는 건 싫어.',
-        hidden_nurse_d4_name_trap: '크게 다치는 일만 일이면 좋겠네. 말 못 하고 버티는 애들이 더 많아.',
-        hidden_nurse_d4_trap: '혼자 할 수야 있지. 그래도 남은 일까지 같이 끝내 줬으면 해서 물어봤어.',
-        wall_seo_line_react_3: '아는 척하지 마.',
-        wall_dain_lastspike_2: '*공 보관함을 보다가 다인이 고개를 든다.* 잠깐. 왜 네가 다 정해.',
-        hidden_nurse_d5_choice_trap: '반대야. 혼자 버티라고 만든 카드가 아니야.',
-        after5_defer_seo: '*펴고 있던 손을 천천히 거둔다.* 그래. 네가 정했으면.',
-        after5_defer_dain: '*배구공을 다시 끌어안는다.* 그래. 오늘도 여기서 멈추는 거네.',
-        after5_defer_yuna: '*책을 다시 품에 안는다.* 알겠어. 오늘도 여기서 멈추는 거네.'
+        lunch_dain_trap_1: "야, 관심 없으면 차라리 없다고 솔직히 말해. 억지로 분위기 맞춰 주는 게 제일 별로거든.",
+        after_nurse_enter_trap: "학생들이 없을 땐 일지도 정리하고 약품 재고도 맞춰야 해. 방이 조용하다고 해서 늘 놀고 있는 건 아니란다.",
+        hidden_homeroom_d2_choice1_trap: "국어 선생이라고 해서 쉬는 시간에 읽는 책까지 딱딱하고 어려울 필요는 없잖아.",
+        lunch2_seo_trap_1: "*내밀었던 물티슈를 말없이 거두어들인다.* 그래, 그런 건 혼자서도 알아서 잘하니까.",
+        after2_yuna_trap: "…이 방이 좋다는 게 아니라, 나랑 있는 게 좋다는 얘기인 줄 알았는데.",
+        date_seo_role_trap: "*서연의 손가락이 가방끈에서 스르르 풀린다.* 오늘은 학생회장 자격으로 나온 자리가 아닌데.",
+        date_yuna_trap: "그럼 학교에서 볼 때는 나한테 말 걸기가 그만큼 불편했다는 뜻이네.",
+        date_dain_bright: "*웃던 다인이 모자챙을 한 번 더 깊숙이 눌러쓴다.* 하하, 그렇지? 역시 난 꾸미는 것보다 활동하기 편한 운동복이 제일 잘 맞나 봐.",
+        hidden_homeroom_d4_cafe_trap: "그렇게 인사치레만 들으려는 자리였으면 애초에 인쇄본을 돌리지도 않았지. 담임이 쓴 글이라고 덮어놓고 봐주는 건 사양이야.",
+        hidden_nurse_d4_name_trap: "눈에 보이는 외상만 치료하면 되는 곳이면 얼마나 좋겠어. 학교에는 티도 못 내고 속으로 곪아 가며 버티는 아이들이 훨씬 더 많거든.",
+        hidden_nurse_d4_trap: "혼자서도 할 수야 있지. 그래도 기왕 시작한 일, 네가 마지막 상자까지 같이 옆에서 마무리해 주면 좋겠다 싶어서 물어본 거야.",
+        wall_seo_line_react_3: "다 아는 것처럼 그렇게 쉽게 말하지 마.",
+        wall_dain_lastspike_2: "*공 보관함 쪽을 바라보던 다인이 불현듯 고개를 든다.* 잠깐만. 내 공인데 왜 네가 마음대로 다 정리하려고 해.",
+        hidden_nurse_d5_choice_trap: "*단호하게 고개를 젓는다.* 정반대야. 이 카드는 너 혼자서 참아 내라고 쥐여 주는 부적이 아니야.",
+        after5_defer_seo: "*내 앞에 펼쳐 보였던 손을 천천히 거두어들인다.* ...그래. 네가 그렇게 정했다면 어쩔 수 없지.",
+        after5_defer_dain: "*다인이 배구공을 다시 두 팔로 끌어안는다.* ...그래. 오늘도 여기서 멈추는 거네.",
+        after5_defer_yuna: "*유나가 조금 내렸던 책을 다시 가슴팍으로 끌어안는다.* ...알겠어. 오늘도 우리 이야기는 여기서 멈추는 거네."
     };
 
     for (const [sceneId, text] of Object.entries(reactions)) {

@@ -11,7 +11,7 @@
     "day4_adult_nurse_student_rank": {},
     "day4_teacher_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*Mes pas, qui allaient vers le portail, s'arrêtent à l'entrée de l'escalier du toit. Seoyeon, seule dans le noir, s'approche, serre fort le bout de ma manche et cale son souffle, qui tremble.* Tu dois rentrer tout de suite ? Ce soir, laisse le reste. Tu ne peux pas rester encore un peu avec moi ?",
+        "text": "*Je m'arrête à l'entrée des escaliers du toit en allant vers le portail. Seoyeon quitte l'endroit où elle se tenait seule et saisit ma manche. Elle qui parle toujours la première doit cette fois reprendre son souffle avant de commencer.* Tu dois rentrer tout de suite ? Je n'aurais jamais pensé te demander ça. Tu ne pourrais pas rester encore un peu avec moi ce soir ?",
         "choices": [
             "Rentrer directement et confirmer mon arrivée",
             "Suivre Seoyeon sur le toit et lui prendre la main",
@@ -21,7 +21,7 @@
     },
     "day4_teacher_dain_counteroffer": {
         "name": "Dain",
-        "text": "*Sur le chemin qui sort par le portail, devant l'escalier du gymnase éteint, Dain me fait signe, pressée. Assise au bout du banc, en train de resserrer sa genouillère, elle lève vers moi un regard qui supplie.* Tu dois rentrer tout de suite ? Aujourd'hui, pas le sport. Tu ne peux pas juste t'asseoir à côté de moi et me parler un peu ?",
+        "text": "*Sur le chemin de la sortie, Dain me fait signe devant les marches du gymnase sombre. Assise au bord d'un banc, elle cesse d'ajuster sa genouillère quand j'approche.* Tu dois déjà rentrer ? Tu pourrais t'asseoir à côté de moi et me parler un peu, sans faire de sport aujourd'hui ? Retenir les gens, ce n'est pas mon genre… mais là, je n'ai pas envie de te laisser partir.",
         "choices": [
             "Rentrer directement et confirmer mon arrivée",
             "Entrer dans le gymnase et accepter la demande de Dain",
@@ -31,7 +31,7 @@
     },
     "day4_teacher_yuna_counteroffer": {
         "name": "Yuna",
-        "text": "*En passant le coin sombre de l'annexe, le téléphone vibre brièvement, et une photo envoyée par Yuna s'affiche. Des chaises vides, côte à côte sous la lumière d'une lampe, et le message de Yuna suit.* Si tu es encore dans le lycée, tu montes une minute ? Ce soir, j'aimerais que tu restes encore un peu à côté de moi.",
+        "text": "*Mon téléphone vibre brièvement quand je passe le coin sombre de l'annexe. Après une photo de deux chaises vides sous une lampe de bureau, un message de Yuna apparaît. L'indicateur de saisie reste longtemps avant qu'une dernière phrase arrive.* Si tu es encore à l'école, tu pourrais monter un instant ? J'aimerais que tu restes encore un peu près de moi ce soir. Je me suis dit que tu ne le saurais pas si je ne le disais pas.",
         "choices": [
             "Rentrer directement et confirmer mon arrivée",
             "Aller à l'annexe et rester avec Yuna",
@@ -41,7 +41,7 @@
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*Mes pas, qui allaient vers le portail, s'arrêtent à l'entrée de l'escalier du toit. Seoyeon, seule dans le noir, s'approche, serre fort le bout de ma manche et cale son souffle, qui tremble.* Tu dois rentrer tout de suite ? Ce soir, laisse le reste. Tu ne peux pas rester encore un peu avec moi ?",
+        "text": "*Je m'arrête à l'entrée des escaliers du toit en allant vers le portail. Seoyeon quitte l'endroit où elle se tenait seule et saisit ma manche. Elle qui parle toujours la première doit cette fois reprendre son souffle avant de commencer.* Tu dois rentrer tout de suite ? Je n'aurais jamais pensé te demander ça. Tu ne pourrais pas rester encore un peu avec moi ce soir ?",
         "choices": [
             "Rentrer directement et confirmer mon arrivée",
             "Suivre Seoyeon sur le toit et lui prendre la main",
@@ -51,7 +51,7 @@
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
-        "text": "*Sur le chemin qui sort par le portail, devant l'escalier du gymnase éteint, Dain me fait signe, pressée. Assise au bout du banc, en train de resserrer sa genouillère, elle lève vers moi un regard qui supplie.* Tu dois rentrer tout de suite ? Aujourd'hui, pas le sport. Tu ne peux pas juste t'asseoir à côté de moi et me parler un peu ?",
+        "text": "*Sur le chemin de la sortie, Dain me fait signe devant les marches du gymnase sombre. Assise au bord d'un banc, elle cesse d'ajuster sa genouillère quand j'approche.* Tu dois déjà rentrer ? Tu pourrais t'asseoir à côté de moi et me parler un peu, sans faire de sport aujourd'hui ? Retenir les gens, ce n'est pas mon genre… mais là, je n'ai pas envie de te laisser partir.",
         "choices": [
             "Rentrer directement et confirmer mon arrivée",
             "Entrer dans le gymnase et accepter la demande de Dain",
@@ -61,7 +61,7 @@
     },
     "day4_nurse_yuna_counteroffer": {
         "name": "Yuna",
-        "text": "*En passant le coin sombre de l'annexe, le téléphone vibre brièvement, et une photo envoyée par Yuna s'affiche. Des chaises vides, côte à côte sous la lumière d'une lampe, et le message de Yuna suit.* Si tu es encore dans le lycée, tu montes une minute ? Ce soir, j'aimerais que tu restes encore un peu à côté de moi.",
+        "text": "*Mon téléphone vibre brièvement quand je passe le coin sombre de l'annexe. Après une photo de deux chaises vides sous une lampe de bureau, un message de Yuna apparaît. L'indicateur de saisie reste longtemps avant qu'une dernière phrase arrive.* Si tu es encore à l'école, tu pourrais monter un instant ? J'aimerais que tu restes encore un peu près de moi ce soir. Je me suis dit que tu ne le saurais pas si je ne le disais pas.",
         "choices": [
             "Rentrer directement et confirmer mon arrivée",
             "Aller à l'annexe et rester avec Yuna",
@@ -275,7 +275,7 @@
     },
     "wall_seo_line_react_3": {
         "name": "Seoyeon",
-        "text": "Ne fais pas comme si tu savais."
+        "text": "Ne le dis pas si facilement, comme si tu savais déjà tout."
     },
     "wall_seo_line_react_3_b": {
         "name": "Seoyeon",
@@ -329,7 +329,7 @@
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
-        "text": "T'inquiète, je ne vais pas forcer l'entraînement à cette heure. Juste… ce soir, tu peux me prendre dans tes bras un moment ? Faire semblant que tout va bien, toute seule, c'est trop dur.",
+        "text": "Ne t'inquiète pas, je ne vais pas me forcer à m'entraîner à cette heure-ci. *Dain retire sa main de son genou. Elle essaie de sourire, puis pince les lèvres. La main levée pour m'arrêter reste en l'air.* Seulement… tu pourrais me serrer un instant dans tes bras ce soir ? C'est trop dur de faire semblant d'aller bien toute seule. Je déteste avoir l'air de te retenir, mais j'ai encore moins envie de te laisser partir.",
         "choices": [
             "Tenir ma promesse et rejoindre Seoyeon au parc",
             "Entrer dans le gymnase et rester avec Dain",
@@ -343,7 +343,7 @@
     },
     "wall_seo_yuna_tempt_1": {
         "name": "Yuna",
-        "text": "*En route vers le parc où est Seoyeon, le téléphone sonne et le message de Yuna arrive. Une photo est jointe : deux chaises vides, côte à côte, près d'une fenêtre sombre.* La lumière de la salle de lecture de l'annexe est encore allumée"
+        "text": "*Sur le chemin du parc où Seoyeon m'attend, mon téléphone sonne : un message de Yuna, avec une photo de deux chaises vides côte à côte près d'une fenêtre sombre. Avant que j'aie fini de lire, l'indicateur de saisie apparaît, puis disparaît.* La salle de lecture de l'annexe est encore éclairée"
     },
     "wall_seo_yuna_tempt_2": {
         "name": "Yuna",
@@ -580,7 +580,7 @@
     },
     "wall_dain_lastspike_2": {
         "name": "Dain",
-        "text": "*Dain relève la tête du chariot à ballons.* Attends. Pourquoi tu décides de tout ?"
+        "text": "*Dain relève brusquement la tête devant le casier à ballons.* Attends. C'est mon ballon. Pourquoi tu décides tout seul de tout ranger ?"
     },
     "wall_dain_lastspike_3": {
         "name": "{name}",
@@ -661,7 +661,7 @@
     },
     "wall_dain_glimpse_2": {
         "name": "{name}",
-        "text": "*Yuna, assise près de la fenêtre, a un livre ouvert devant elle et ne regarde que le dehors sombre, sans fin. Pas une page ne se tourne.*"
+        "text": "*Assise près de la fenêtre, Yuna regarde l'obscurité dehors avec son livre ouvert devant elle. Pas une page ne tourne. Elle remarque mon reflet dans la vitre et commence à se lever, puis s'arrête. Ses yeux ne me quittent pas.*"
     },
     "wall_dain_glimpse_4": {
         "name": "Yuna",
@@ -683,7 +683,7 @@
     },
     "wall_dain_seo_tempt_1": {
         "name": "{name}",
-        "text": "*Je me dirige vers le gymnase où Dain m'attend, et Seoyeon se tient seule devant l'entrée de l'escalier du toit. Elle force un sourire en me voyant, mais le bout de ses doigts fins froisse la manche de son chemisier en petits plis.*"
+        "text": "*Sur le chemin du gymnase où Dain m'attend, je trouve Seoyeon seule à l'entrée des escaliers du toit. Quand elle me voit, elle tente de sourire, puis serre les lèvres. Ses doigts tremblent autour de sa manche. Elle ouvre la bouche comme pour parler la première, mais sa voix ne vient pas tout de suite.*"
     },
     "wall_dain_seo_tempt_2": {
         "name": "Seoyeon",
@@ -890,7 +890,7 @@
     },
     "wall_yuna_glimpse_2": {
         "name": "{name}",
-        "text": "*Seoyeon, nerveuse, remet son téléphone dans sa poche et le ressort, encore et encore. En me voyant arriver, elle force un sourire, mais le bout de ses doigts fins froisse fort la manche de son chemisier.*"
+        "text": "*Seoyeon sort et remet sans cesse son téléphone dans sa poche. Quand elle me voit, elle tente de sourire, puis serre les lèvres. Ses doigts tremblent autour de sa manche. Elle ouvre la bouche comme pour parler la première, mais sa voix ne vient pas tout de suite.*"
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
@@ -908,7 +908,7 @@
     },
     "wall_yuna_dain_tempt_1": {
         "name": "{name}",
-        "text": "*En route vers la porte arrière du lycée, où Yuna m'attend. Sous la lumière de la porte de secours du gymnase éteint, Dain est seule et passe la main sur le strapping de son genou.*"
+        "text": "*En allant vers le portail arrière où Yuna m'attend, j'aperçois Dain seule sous l'éclairage de secours du gymnase éteint, occupée à sa bande de maintien au genou. Elle lève la main en me voyant, sans parvenir à m'appeler aussi fort que d'habitude. Elle fait plutôt un pas vers moi et attend ma réponse.*"
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",

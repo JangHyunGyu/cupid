@@ -240,27 +240,27 @@
     },
     "after2_dain_rival_seo_high": {
         "name": "Seoyeon",
-        "text": "*Seoyeon se para ante el escaparate. Ve los dos vasos de tteokbokki y manda un mensaje.* Hoy tocaba gimnasio. La próxima vez pásate también por el consejo."
+        "text": "*Seoyeon se detiene ante el gran ventanal del local. Ve los dos vasos de tteokbokki enfrentados y enseguida llega un mensaje.* Hoy fuiste al gimnasio después de clase. La próxima vez no te olvides de pasar también por la sala del consejo."
     },
     "after2_dain_rival_seo_mid": {
         "name": "{name}",
-        "text": "*Seoyeon pasa frente al local y mira la mesa. Alinea dos veces los bordes de la carpeta y sigue hacia la entrada de la escuela.*"
+        "text": "*Al pasar por el local, Seoyeon distingue nuestra mesa a través del cristal. Alinea dos veces las esquinas de la carpeta que lleva contra el pecho y se aleja en silencio hacia la puerta de la escuela.*"
     },
     "after2_dain_rival_seo_low": {
         "name": "{name}",
-        "text": "*Al pasar frente al local, Seoyeon nos saluda con la cabeza sin detenerse.*"
+        "text": "*Seoyeon nos saluda con una leve inclinación de cabeza a través del cristal del local, sin detener el paso.*"
     },
     "after2_dain_rival_yuna_high": {
         "name": "{name}",
-        "text": "*Yuna mira por el cristal del local. Guarda en el bolsillo la nota doblada que llevaba en la mano y se da la vuelta.*"
+        "text": "*Yuna nos observa a través del escaparate. Hunde en el bolsillo la nota doblada que llevaba entre los dedos y se da la vuelta.*"
     },
     "after2_dain_rival_yuna_mid": {
         "name": "{name}",
-        "text": "*Al pasar frente al local, Yuna empieza a quitarse un auricular, ve nuestra mesa y vuelve a ponérselo.*"
+        "text": "*Al verme frente al local, Yuna empieza a quitarse un auricular, pero ve a Dain sentada enfrente y se lo vuelve a poner en silencio.*"
     },
     "after2_dain_rival_yuna_low": {
         "name": "{name}",
-        "text": "*Yuna nos saluda una vez con la cabeza a través del cristal y sigue hacia el anexo.*"
+        "text": "*Yuna nos saluda brevemente a través del cristal y se encamina al anexo de la biblioteca.*"
     },
     "after2_seo_1": {
         "name": "{name}",
@@ -463,27 +463,27 @@
     },
     "after2_seo_rival_dain_high": {
         "name": "Dain",
-        "text": "*Dain empuja un carro de balones y nos ve al fondo del pasillo.* El trabajo del consejo duró bastante. *Aprieta el manillar y se da la vuelta antes que nosotros.*"
+        "text": "*En el pasillo del gimnasio, Dain se detiene con el carro de balones de voleibol al vernos salir juntos.* Hoy el recado del consejo ha durado bastante, ¿eh? *Aprieta el asa y es la primera en darse la vuelta.*"
     },
     "after2_seo_rival_dain_mid": {
         "name": "Dain",
-        "text": "*Detiene el carro.* ¿Ya terminaron? *Mira una vez a Seoyeon y vuelve a empujarlo hacia el gimnasio.*"
+        "text": "*Detiene el carro de balones.* ¿Ya habéis terminado? *Mira de reojo a Seoyeon a mi lado y vuelve a empujar el carro hacia el gimnasio.*"
     },
     "after2_seo_rival_dain_low": {
         "name": "Dain",
-        "text": "¡Buen trabajo! *Saluda por encima del carro y sigue hacia el gimnasio.*"
+        "text": "¡Buen trabajo, los dos! *Nos saluda con energía por encima del carro y desaparece hacia el gimnasio.*"
     },
     "after2_seo_rival_yuna_high": {
         "name": "{name}",
-        "text": "*Yuna estaba leyendo en el rellano. Al oírnos, cierra el libro, saca la nota que tenía entre las páginas y la dobla por la mitad.*"
+        "text": "*Yuna, que leía junto a la ventana del rellano, cierra el libro al oírnos salir juntos. Saca la nota morada que tenía junto al marcapáginas y la dobla por la mitad en silencio.*"
     },
     "after2_seo_rival_yuna_mid": {
         "name": "{name}",
-        "text": "*La mano de Yuna se detiene sobre la página. Se aparta para dejarnos pasar y vuelve a abrir el libro.*"
+        "text": "*Los dedos de Yuna se detienen sobre la página abierta. Se aparta un peldaño para dejarnos pasar y vuelve a abrir el libro en silencio.*"
     },
     "after2_seo_rival_yuna_low": {
         "name": "{name}",
-        "text": "*Yuna se hace a un lado en el rellano y nos saluda brevemente con la cabeza.*"
+        "text": "*Yuna, que estaba de pie en el rellano, se hace a un lado y nos saluda con un breve gesto de cabeza.*"
     },
     "after2_yuna_1": {
         "name": "{name}",
@@ -604,27 +604,27 @@
     },
     "after2_yuna_rival_dain_high": {
         "name": "Dain",
-        "text": "Te dije que vinieras al gimnasio y te fuiste al anexo. La próxima vez ven también conmigo."
+        "text": "Oye, te dije que vinieras al gimnasio, ¿y te has escapado al anexo de la biblioteca? ¡Mañana te quiero por mi zona!"
     },
     "after2_yuna_rival_dain_mid": {
         "name": "Dain",
-        "text": "¿Estabas en la biblioteca? Mañana pásate por el gimnasio."
+        "text": "¿Hoy estuviste en la biblioteca después de clase? ¡Mañana pásate por el gimnasio!"
     },
     "after2_yuna_rival_dain_low": {
         "name": "Dain",
-        "text": "¿Estabas por la biblioteca? ¡Nos vemos mañana!"
+        "text": "¿Así que estabas por el anexo de la biblioteca? ¡Vuelve con cuidado, nos vemos mañana!"
     },
     "after2_yuna_rival_seo_high": {
         "name": "Seoyeon",
-        "text": "Así que estabas en el anexo. La próxima vez pásate también por el consejo."
+        "text": "Estabas en el anexo de la biblioteca. La próxima vez déjate ver también por la sala del consejo."
     },
     "after2_yuna_rival_seo_mid": {
         "name": "Seoyeon",
-        "text": "Estabas en el anexo. Ya terminé el trabajo de hoy. Nos vemos mañana."
+        "text": "Ah, estabas en el anexo. Ya he terminado lo urgente del consejo, así que mañana nos vemos en clase."
     },
     "after2_yuna_rival_seo_low": {
         "name": "Seoyeon",
-        "text": "Ya encontré ayuda suficiente. Nos vemos mañana."
+        "text": "Los otros miembros del consejo cubrieron las manos que faltaban. Nos vemos mañana."
     },
     "after2_group_seoyeon_companion": {
         "name": "Seoyeon",
@@ -698,7 +698,7 @@
     },
     "after2_yuna_trap": {
         "name": "Yuna",
-        "text": "…Pensé que hablabas de mí, no de este sitio."
+        "text": "…Creía que decías que te gustaba estar conmigo, no estar en esta sala."
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",
