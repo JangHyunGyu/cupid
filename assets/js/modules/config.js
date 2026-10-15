@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.318";
+const ASSET_VERSION = "2.9.319";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -1028,7 +1028,12 @@ async function fetchCupidLogOnce(url, init, timeoutMs = CUPID_LOG_REQUEST_TIMEOU
         return { ok: response.ok, status: response.status, text: String(text || '') };
     } catch (error) {
         if (timedOut) {
-            try { response?.body?.cancel?.(); } catch (_) {}
+            // text()가 읽는 중이면 본문이 잠겨 있어 cancel()이 거부됩니다. 잠긴 본문은 abort()가 이미 끊었으니
+            // 잠기지 않았을 때만 취소하고, 거부된 프라미스도 받아 둡니다(받지 않으면 UnhandledRejection으로 남습니다).
+            try {
+                const body = response?.body;
+                if (body && !body.locked && typeof body.cancel === 'function') Promise.resolve(body.cancel()).catch(() => {});
+            } catch (_) {}
             const timeoutError = new Error(`fetch timeout after ${timeoutMs}ms`);
             timeoutError.name = 'TimeoutError';
             timeoutError.cupidFetchTimeout = true;
