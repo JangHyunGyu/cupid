@@ -161,10 +161,6 @@
         "name": "Dain",
         "text": "Hah, hah... Match over at 3:2! *Still gasping, Dain gets up off the floor, rubs her right knee once without thinking, and flips the scoreboard.*"
     },
-    "after2_dain_11b": {
-        "name": "{name}",
-        "text": "*Cooling the heat still soaked into our sweat, we left the gym and walked side by side down the sunset street in front of school.*"
-    },
     "after2_dain_12": {
         "name": "Dain",
         "text": "Ah, I lost by a hair! But your form hitting the ball isn't ordinary. Didn't you tell me you don't do sports?"
@@ -202,10 +198,6 @@
         "text": "*After we step into the shop, she pushes the tteokbokki cup closer and lifts her chopsticks.* Let's see how well you handle spicy food."
     },
     "after2_dain_end": {},
-    "after2_dain_end_first": {
-        "name": "{name}",
-        "text": "*Dain sets two steaming cups of tteokbokki down on the table with a thump and rips a wooden chopstick wrapper open clean.*"
-    },
     "after2_dain_end_b": {
         "name": "{name}",
         "text": "*The snack shop in front of school, the sweet smell of chili paste spreading. Dain picks up one red rice cake, purses her lips, and blows on it to cool it.*"
@@ -269,10 +261,6 @@
     "after2_dain_rival_yuna_low": {
         "name": "{name}",
         "text": "*Yuna gives us one nod through the window and continues toward the annex.*"
-    },
-    "after2_dain_return": {
-        "name": "{name}",
-        "text": "*After saying goodbye to Dain, on the way back for my bag, I reach the school gate under a deep sunset.*"
     },
     "after2_seo_1": {
         "name": "{name}",
@@ -473,10 +461,6 @@
         "name": "Seoyeon",
         "text": "There was a little loose thread stuck on your collar."
     },
-    "after2_seo_return": {
-        "name": "{name}",
-        "text": "*Still aware of the ticklish warmth left on my nape, I leave the student council room and walk toward the school gate.*"
-    },
     "after2_seo_rival_dain_high": {
         "name": "Dain",
         "text": "*Pushing a cart of gym balls, Dain sees us at the end of the hall.* Student council work took a while. *She grips the handle and turns away first.*"
@@ -618,10 +602,6 @@
         "name": "{name}",
         "text": "*Yuna draws her hand back, turns the spine toward me so I can take it, and carefully holds the book out.*"
     },
-    "after2_yuna_return": {
-        "name": "{name}",
-        "text": "*Still remembering the cool feel of Yuna's hand on my palm, I step out of the annex. The sensor light on the dim hall ceiling flicks on.*"
-    },
     "after2_yuna_rival_dain_high": {
         "name": "Dain",
         "text": "I told you to come to the gym, and you went to the annex. Come my way next time, too."
@@ -705,10 +685,6 @@
     "minsu_warn_5": {
         "name": "{name}",
         "text": "What are you talking about all of a sudden?"
-    },
-    "hidden_nurse_d2_return": {
-        "name": "{name}",
-        "text": "*I leave the nurse's office and come back to the classroom. Red after-school sunlight lies long across the empty desks.*"
     },
     "hidden_nurse_d2_freetalk": {
         "name": "School Nurse",

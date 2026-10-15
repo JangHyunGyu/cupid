@@ -19,7 +19,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
-            { "condition": "day3_has_multiple_dates", "next": "night3_cheat_msg_1" },
+            { "condition": "day3_has_multiple_dates", "next": "night3_cheat_msg_2" },
             { "next": "night3_faithful_check" }
         ]
     },
@@ -172,11 +172,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "stats": {"Dain":{"affinity":2}},
         "next": "night3_end"
-    },
-    "night3_cheat_msg_1": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_cheat_msg_2"
     },
     "night3_cheat_msg_2": {
         "background": "assets/images/background/room_my.png",
@@ -340,11 +335,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "night3_cheat_reflect_2"
     },
     "night3_cheat_reflect_2": {
-        "background": "assets/images/background/room_my.png",
-        "character": null,
-        "next": "night3_cheat_reflect_3_b"
-    },
-    "night3_cheat_reflect_3_b": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_cheat_reflect_3_c"

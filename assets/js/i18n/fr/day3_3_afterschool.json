@@ -210,10 +210,6 @@
         "name": "Seoyeon",
         "text": "Il me reste la clôture du conseil. Ne m'attends pas, pars devant aujourd'hui."
     },
-    "after3_reject_for_yuna_walk_gym": {
-        "name": "{name}",
-        "text": "*Je prends le couloir qui passe devant le gymnase et continue vers l'annexe de la bibliothèque.*"
-    },
     "after3_reject_for_yuna_3": {
         "name": "Dain",
         "text": "*Par l'entrebâillement de la porte du gymnase, je vois Dain s'entraîner seule au service, sur le court vide.*"
@@ -383,17 +379,9 @@
         "name": "Seoyeon",
         "text": "Aujourd'hui, la réunion du conseil risque de durer. Ne t'en fais pas, pars devant."
     },
-    "after3_reject_for_dain_2b": {
-        "name": "{name}",
-        "text": "*Avant d'aller au gymnase, je passe un instant au coin de Yuna, dans l'annexe de la bibliothèque.*"
-    },
     "after3_reject_for_dain_3": {
         "name": "{name}",
         "text": "*Sur la table de l'annexe, pas de mot, et pas de sac de Yuna non plus. À la place où elle était assise, il ne reste que la trace ronde et tiède d'un gobelet à emporter.*"
-    },
-    "after3_reject_for_dain_3b": {
-        "name": "{name}",
-        "text": "*Je referme doucement la porte de l'annexe et je presse le pas vers le gymnase.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -808,10 +796,6 @@
         "name": "{name}",
         "text": "Haeun ? Tu n'es pas encore partie. Pourquoi tu attends ici ?"
     },
-    "haeun_warn_2b": {
-        "name": "{name}",
-        "text": "*Quand je m'arrête, Haeun n'arrive pas à parler tout de suite et guette ma réaction.*"
-    },
     "haeun_warn_3": {
         "name": "Haeun",
         "text": "Vous venez de voir Seoyeon, à la salle du conseil ?"
@@ -878,10 +862,6 @@
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "Je sais bien que je me mêle de ce qui ne me regarde pas. Mais au moins ce soir, ne laissez pas Seoyeon toute seule, comme si vous n'aviez rien vu."
-    },
-    "haeun_warn_7_b": {
-        "name": "{name}",
-        "text": "*Devant moi, Haeun garde les lèvres closes, tripote le fermoir du bracelet du conseil des élèves, et jette un coup d'œil au couloir de la salle des professeurs.*"
     },
     "haeun_warn_7_c": {
         "name": "Haeun",

@@ -236,10 +236,6 @@
         "name": "Yuna",
         "text": "*Head down, Yuna draws one short, heavy line in the corner of her notebook.*"
     },
-    "morning3_date_intro": {
-        "name": "{name}",
-        "text": "*The bell ending period 1 rang. Looks that still haven't settled keep circling my seat all through the break.*"
-    },
     "morning3_date_intro_b": {
         "name": "{name}",
         "text": "*I step into the hall to catch my breath. As if she was waiting, Seoyeon comes up beside me and matches my stride.*"
@@ -272,21 +268,9 @@
         "name": "Homeroom Teacher",
         "text": "*Her voice drops half a tone.* What are you staring at. Why come all the way to an empty classroom during break instead of being with your friends."
     },
-    "hidden_homeroom_d3_4_e": {
-        "name": "{name}",
-        "text": "*A worn stack of manuscript paper hidden under the attendance book. Do I ask outright, or let it go like I didn't see?*"
-    },
-    "hidden_homeroom_d3_4_f": {
-        "name": "{name}",
-        "text": "*My steps stop right in front of the stack on the desk: the attendance book, report cards, and student records.*"
-    },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
         "text": "*Red writing in the corner of the first manuscript page: “On hold.” The moment my eyes hit those words, veins rise faintly on the back of the homeroom teacher's hand.*"
-    },
-    "hidden_homeroom_d3_4_h": {
-        "name": "{name}",
-        "text": "*I could have brushed it off and left. But instead of putting the manuscript in a drawer, the homeroom teacher only fidgets with the fountain pen cap.*"
     },
     "hidden_homeroom_d3_choice": {
         "name": "{name}",
@@ -530,10 +514,6 @@
         "name": "School Nurse",
         "text": "*She lets out a small laugh.* It's written all over your face. You can't talk your way out of it."
     },
-    "hidden_nurse_d3_5_l": {
-        "name": "{name}",
-        "text": "*I lose what I was going to say and only look down at the ripples in the warm paper cup in my hands.*"
-    },
     "hidden_nurse_d3_5_m": {
         "name": "School Nurse",
         "text": "I'm not sure this counts as official school-health work, but I'll make an exception and listen, just for today. The bed happens to be empty, too."
@@ -608,10 +588,6 @@
         "name": "School Nurse",
         "text": "So say it honestly, starting with the feelings you can actually carry. Don't hold onto everything just to stay a good person to everyone, and suffer alone."
     },
-    "hidden_nurse_d3_8_b": {
-        "name": "{name}",
-        "text": "*As if the words hit the mark, the side of the paper cup in my hand dents in the shape of my fingers.*"
-    },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
         "text": "Thank you for the advice."
@@ -627,10 +603,6 @@
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
         "text": "*I stand and take hold of the nurse's office door handle. When a drawer opens behind me, the corner of the pale green notebook comes to mind again.*"
-    },
-    "hidden_nurse_d3_8_g": {
-        "name": "{name}",
-        "text": "*I press the lifted edge of the bandage on my elbow down hard with my nail. Beyond the half-closed curtain, her name tag reading “School Nurse” sways faintly.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
@@ -673,10 +645,6 @@
         "name": "School Nurse",
         "text": "Of course, before that, I'll talk with you first about who we tell, and how much."
     },
-    "hidden_nurse_d3_9_e": {
-        "name": "{name}",
-        "text": "*She quietly slides the consultation booking sheet on the desk toward me.*"
-    },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
         "text": "*The sheet lists open times for the nurse's office and the counseling center side by side. I pick up a pen and quietly circle one empty slot.*"
@@ -709,17 +677,9 @@
         "name": "{name}",
         "text": "Yeah, see you this weekend. *I arrange to meet Seoyeon; Dain comes to my desk.*"
     },
-    "morning3_date_seo_accept_b": {
-        "name": "{name}",
-        "text": "*Back in the classroom, one period passes, and the break bell rings again.*"
-    },
     "morning3_date_seo_decline": {
         "name": "{name}",
         "text": "*When I turn down Seoyeon's offer, Dain starts twisting the water-bottle cap again.*"
-    },
-    "morning3_date_seo_decline_b": {
-        "name": "{name}",
-        "text": "*Back in the classroom, one period passes, and the break bell rings again.*"
     },
     "morning3_date_dain_1": {
         "name": "Dain",
@@ -750,10 +710,6 @@
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
         "text": "Okay, let's just get ready for the next class! *She smiles, deliberately bright, and goes back to her seat, but just before the bell she taps quickly inside her uniform pocket.*"
-    },
-    "morning3_date_dain_decline_inner_2": {
-        "name": "{name}",
-        "text": "*Dain goes back to her seat, and the warning bell for class cuts through the air.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

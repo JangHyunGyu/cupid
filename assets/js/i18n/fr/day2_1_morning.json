@@ -46,10 +46,6 @@
         "name": "{name}",
         "text": "*Derrière, la pointe du stylo-plume que tenait Yuna hésite, et laisse un petit point d'encre violette au milieu d'un billet blanc.*"
     },
-    "morning2_greet_dain_others_2": {
-        "name": "{name}",
-        "text": "*Juste après que la porte de la classe se ferme, un coup clair contre le coin d'un porte-bloc résonne une fois dans le couloir.*"
-    },
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
@@ -82,10 +78,6 @@
     "morning2_note_2": {
         "name": "{name}",
         "text": "*'Viens à l'annexe de la bibliothèque à midi. — Yuna'*"
-    },
-    "morning2_note_3": {
-        "name": "{name}",
-        "text": "*La même écriture à l'encre violet pâle qu'hier. Sous la dernière ligne, cinq signes bien nets : « Annexe de la bibliothèque. »*"
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
@@ -142,10 +134,6 @@
     "morning2_break_transition_b": {
         "name": "{name}",
         "text": "*Devant la porte de la classe, je croise de face le regard de la professeure principale, qui passe avec le registre serré contre elle.*"
-    },
-    "morning2_break_1": {
-        "name": "{name}",
-        "text": "*Le porte-bloc de Seoyeon touche le coin de mon bureau, puis s'en écarte. Avant que j'aie le temps de répondre, elle file dans le couloir.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Professeure principale",
@@ -315,10 +303,6 @@
         "name": "{name}",
         "text": "*La poussière est bien partie, et pourtant l'endroit où les doigts de Seoyeon ont touché mon épaule me démange. Je reprends la bretelle du sac, deux fois.*"
     },
-    "morning2_dain_react_2": {
-        "name": "{name}",
-        "text": "*Au moment où Seoyeon resserre le porte-bloc et s'éloigne au bout du couloir, la voix de Dain arrive dans mon dos.*"
-    },
     "morning2_dain_react_3": {
         "name": "Dain",
         "text": "Hé, c'était quoi, ça ? La présidente t'a bien touché l'épaule, non ?"
@@ -340,10 +324,6 @@
         "text": "*Elle tourne sa chaise vers moi.* Tu avais d’autres questions ?",
         "context": "Nous sommes au matin du jour 2, juste après un entretien dans la salle des professeurs. L'élève transféré a aperçu par hasard un long manuscrit dans le tiroir de sa professeure, mais n'en connaît ni le contenu ni l'histoire. Ils commencent à se faire confiance en tant que professeure et élève. N'invente pas le secret du manuscrit et ne franchis pas les limites de cette relation.",
         "personality": "La professeure principale est calme et responsable ; elle écoute avant de conseiller. Sa gêne au sujet de ce manuscrit personnel se traduit par une brève hésitation, mais elle ne fait pas porter ses émotions à l'élève et garde une proximité chaleureuse et appropriée."
-    },
-    "morning2_end": {
-        "name": "{name}",
-        "text": "*Minsu disait que même après 1 an, on croise à peine le regard de Seoyeon dans le couloir. Aujourd'hui, elle est venue jusqu'à la porte de ma classe, a frôlé mon épaule, et elle est repartie.*"
     },
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Professeure principale",

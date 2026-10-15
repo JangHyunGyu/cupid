@@ -281,10 +281,6 @@
         "name": "{name}",
         "text": "Hay mucha gente. Apoyémonos en esta ventana y comamos. *Con la bolsa de pan caliente, nos quedamos juntos al lado de la puerta de cristal de la tienda. Más allá del pasillo, se ve a Seoyeon acercarse.*"
     },
-    "lunch2_dain_10": {
-        "name": "{name}",
-        "text": "*Al otro lado del cristal, Seoyeon nos ve, cruza la mirada una vez y sigue de largo. El pan se me queda en la garganta y no baja.*"
-    },
     "lunch2_dain_11": {
         "name": "Dain",
         "text": "Oye, ¿qué le pasa a la presidenta del consejo? ¿Por qué nos mira así de fijo y se va?"
@@ -296,10 +292,6 @@
     "lunch2_dain_13": {
         "name": "Dain",
         "text": "Humm, qué sospechoso. ¿Te has hecho muy cercano de la presidenta a mis espaldas?"
-    },
-    "lunch2_dain_13_b": {
-        "name": "{name}",
-        "text": "*Dain, como de mal humor, le pega un mordisco grande al pan soboro. En el borde de los labios enrojecidos se le quedan migas dulces.*"
     },
     "lunch2_dain_choice": {
         "name": "Dain",
@@ -362,17 +354,9 @@
         "name": "Enfermera",
         "text": "¿Dos días seguidos? ¿Ya piensas hacerte fijo de mi enfermería?"
     },
-    "lunch2_dain_end_h": {
-        "name": "{name}",
-        "text": "*La mano fina de la enfermera, con guantes de látex, me coge la muñeca y quita con cuidado, primero, la tierra de alrededor de la herida.*"
-    },
     "lunch2_dain_end_ins7_first": {
         "name": "Enfermera",
         "text": "Si corres en un campo que no conoces, te puedes hacer daño. Ven aquí y te desinfecto primero."
-    },
-    "lunch2_dain_end_ins8_first": {
-        "name": "{name}",
-        "text": "*La enfermera me sostiene el brazo con la mano enguantada y quita con cuidado, primero, el polvo de alrededor del codo.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -381,10 +365,6 @@
     "lunch2_dain_end_j": {
         "name": "Enfermera",
         "text": "Al tocar el desinfectante, escuece un poco. Deja el hombro y el brazo flojos."
-    },
-    "lunch2_dain_end_k": {
-        "name": "{name}",
-        "text": "*El algodón empapado en desinfectante frío roza la herida, y la piel de la cara interna del codo pincha y escuece.*"
     },
     "lunch2_dain_end_l": {
         "name": "Enfermera",
@@ -440,29 +420,13 @@
         "name": "Enfermera",
         "text": "Si se levanta una esquina o rezuma, ven a mí enseguida. Si está bien, puedes dejarla puesta."
     },
-    "lunch2_dain_end_b2": {
-        "name": "{name}",
-        "text": "*La enfermera coge la pluma y anota con letra clara, en el registro, la hora a la que puso la venda.*"
-    },
     "lunch2_dain_end_c2": {
         "name": "Enfermera",
         "text": "Si en lo que queda de educación física te escuece la herida, no aguantes y díselo al profesor. Fuera de eso, pásate en el recreo."
     },
-    "lunch2_dain_end_d2": {
-        "name": "{name}",
-        "text": "*En la última casilla de observaciones del registro se añade una nota pulcra: «Flexión de la articulación del codo: comprobada».*"
-    },
     "lunch2_dain_end_nurse_short1": {
         "name": "Enfermera",
         "text": "Venga, ya está. La próxima vez no corras mirando solo el balón. Mira primero a la gente de alrededor."
-    },
-    "lunch2_dain_end_nurse_short2": {
-        "name": "{name}",
-        "text": "*Salgo de la enfermería pasándome la mano por el brazo de la venda nueva. Aunque doble el codo, la venda no se levanta donde la tocó la enfermera.*"
-    },
-    "lunch2_dain_end_nurse_short3": {
-        "name": "{name}",
-        "text": "*Suena largo el timbre de fin de clase. La venda, que se había enganchado un poco en el puño de la camisa, vuelve con suavidad a su sitio.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",
@@ -631,10 +595,6 @@
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
         "text": "...Sí. Ya está. Leamos cada uno. *Con la yema alisa despacio la esquina arrugada de la página.*"
-    },
-    "lunch2_yuna_c1_14": {
-        "name": "{name}",
-        "text": "*Durante un rato, Yuna no puede pasar la página y solo lee con la yema las letras doradas del lomo viejo.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",

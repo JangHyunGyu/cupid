@@ -281,10 +281,6 @@
         "name": "{name}",
         "text": "It's crowded, so let's lean by this window and eat. *We stand side by side by the shop's glass door with the warm bag of bread, and down the hall I see Seoyeon coming this way.*"
     },
-    "lunch2_dain_10": {
-        "name": "{name}",
-        "text": "*Through the glass, Seoyeon spots the two of us, meets our eyes once, and walks on. The bread caught in my throat doesn't go down easily.*"
-    },
     "lunch2_dain_11": {
         "name": "Dain",
         "text": "Hey, what was that with the student council president? Why'd she stare at us like that and walk off?"
@@ -296,10 +292,6 @@
     "lunch2_dain_13": {
         "name": "Dain",
         "text": "Hmm. Suspicious. Did you get really close with the president behind my back?"
-    },
-    "lunch2_dain_13_b": {
-        "name": "{name}",
-        "text": "*Put out, Dain takes a big bite of the soboro bun. Sweet crumbs stick to the edge of her flushed lips.*"
     },
     "lunch2_dain_choice": {
         "name": "Dain",
@@ -362,17 +354,9 @@
         "name": "School Nurse",
         "text": "Two days in a row? Already planning to become a regular in my office?"
     },
-    "lunch2_dain_end_h": {
-        "name": "{name}",
-        "text": "*In latex gloves, the nurse's slender hand takes my wrist and carefully brushes the dirt from around the wound first.*"
-    },
     "lunch2_dain_end_ins7_first": {
         "name": "School Nurse",
         "text": "You can get hurt running on a field you don't know. Come here. Let's disinfect it first."
-    },
-    "lunch2_dain_end_ins8_first": {
-        "name": "{name}",
-        "text": "*The school nurse supports my arm in a gloved hand and carefully brushes the dust from around my elbow first.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -381,10 +365,6 @@
     "lunch2_dain_end_j": {
         "name": "School Nurse",
         "text": "The disinfectant will sting a little. Relax your shoulder and your arm."
-    },
-    "lunch2_dain_end_k": {
-        "name": "{name}",
-        "text": "*A cotton pad soaked in cold disinfectant sweeps over the wound, and the skin inside my elbow stings sharp.*"
     },
     "lunch2_dain_end_l": {
         "name": "School Nurse",
@@ -440,29 +420,13 @@
         "name": "School Nurse",
         "text": "If an edge lifts or it starts to weep, come straight to me. If it's fine, you can leave it on."
     },
-    "lunch2_dain_end_b2": {
-        "name": "{name}",
-        "text": "*The school nurse picks up a fountain pen and writes the time she dressed the bandage into the chart, one neat stroke at a time.*"
-    },
     "lunch2_dain_end_c2": {
         "name": "School Nurse",
         "text": "If the cut stings during the rest of PE, don't hold it in. Tell your teacher. Otherwise, stop by on a break."
     },
-    "lunch2_dain_end_d2": {
-        "name": "{name}",
-        "text": "*In the remarks at the end of the chart, a neat note is added: \"Elbow joint flexion check complete.\"*"
-    },
     "lunch2_dain_end_nurse_short1": {
         "name": "School Nurse",
         "text": "There, all done. Next time, don't run with your eyes only on the ball. Watch the people around you first."
-    },
-    "lunch2_dain_end_nurse_short2": {
-        "name": "{name}",
-        "text": "*I step out of the nurse's office, hand on the arm with the new bandage. Even when I bend my elbow, the bandage where her hand pressed it doesn't lift.*"
-    },
-    "lunch2_dain_end_nurse_short3": {
-        "name": "{name}",
-        "text": "*The end-of-class bell rings long. The bandage that had caught on the edge of my shirt sleeve settles softly back into place.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",
@@ -631,10 +595,6 @@
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
         "text": "...Yeah. Let's just read our own books now. *She slowly smooths the creased page corner with her fingertip.*"
-    },
-    "lunch2_yuna_c1_14": {
-        "name": "{name}",
-        "text": "*For a while Yuna can't turn the page. Her fingertip only traces the gold letters on the worn spine.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",

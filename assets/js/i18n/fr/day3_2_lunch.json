@@ -39,10 +39,6 @@
         "name": "Yuna",
         "text": "*Elle regarde Dain en mâchant la saucisse.* Ce n’est donc pas la première arrivée qui l’emporte."
     },
-    "lunch3_meal_8": {
-        "name": "{name}",
-        "text": "*Le bout des baguettes de Yuna vise à nouveau, sans hésiter, le centre de mon bento.*"
-    },
     "lunch3_meal_10": {
         "name": "{name}",
         "text": "Eh, attendez ! C'est le dernier morceau qui reste. *Au moment de mon cri, les pointes des baguettes des trois s'arrêtent de justesse dans le vide, juste au-dessus du bento.*"
@@ -54,10 +50,6 @@
     "lunch3_meal_10_c": {},
     "lunch3_meal_10_d": {},
     "lunch3_meal_10_e": {},
-    "lunch3_meal_11": {
-        "name": "{name}",
-        "text": "*Trois paires d'yeux suivent le bout de mes baguettes. À qui dois-je tendre ce dernier morceau ?*"
-    },
     "lunch3_choice": {
         "name": "{name}",
         "text": "*À la table où même les souffles se sont tus, je choisis à qui donner le dernier accompagnement.*",
@@ -122,10 +114,6 @@
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",
         "text": "*J'ai calmé Dain et je l'ai ramenée à sa place, en classe.*"
-    },
-    "lunch3_seo_focus_1": {
-        "name": "{name}",
-        "text": "*Les pas de Dain, qui résonnaient dans le couloir, s'éloignent enfin vers la fontaine.*"
     },
     "lunch3_seo_focus_2": {
         "name": "Seoyeon",
@@ -254,10 +242,6 @@
     "lunch3_expose_14": {
         "name": "Minsu",
         "text": "*Minsu m'attrape l'épaule et chuchote, incrédule.* Mec, t'as vraiment perdu la tête ? T'as empilé combien de rendez-vous sur un seul week-end ?"
-    },
-    "lunch3_expose_15": {
-        "name": "{name}",
-        "text": "*J'avale ma salive à sec et mes lèvres remuent. Même Minsu secoue la tête et pose ses baguettes.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",

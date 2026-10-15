@@ -256,7 +256,6 @@
 | morning2_note_1 ~ 3 | room_school.png | 없음 | 주인공 | 유나 쪽지: "도서관 별관으로" |
 | morning2_seo_1 ~ 5 | room_school.png | seyoun_normal/laugh | 서연 | 아침 인사 |
 | morning2_minsu_1 ~ 3 | room_school.png | minsu_normal/smirk | 민수 | "학생회장이 인사하러 오냐?" |
-| morning2_break_1 | school_hallway.png | 없음 | 주인공 | 쉬는시간 |
 | morning2_seo_dust_1 ~ 6 | school_hallway.png | seyoun_normal | 서연 | 어깨 먼지 터는 씬 |
 | morning2_dain_react_1 ~ 6 | school_hallway.png | dain_normal | 다인 | 다인 질투 반응 |
 | morning2_haeun_1 ~ 7 | school_hallway.png | haeun_normal/worried | 하은/주인공 | "서연 선배가 요즘 달라졌어" |
@@ -502,7 +501,7 @@
 ### 양다리 루트 (악몽)
 | 씬 ID | 배경 | 캐릭터 | 특이사항 |
 |--------|------|--------|----------|
-| night3_cheat_msg_1 ~ 7 | school.png | 서연/유나/다인(0.35) | 추궁 메시지, night |
+| night3_cheat_msg_2 ~ 7 | room_my.png | 서연/유나/다인(0.35) | 추궁 메시지, night |
 | night3_nightmare_1 ~ 2 | **school_back.png** | 없음 | 악몽, BGM: mystery.mp3, night |
 | night3_nightmare_3 ~ 5 | school.png | seyoun/yuna/dain_normal | 캐릭터 등장, 선택 강제 |
 | night3_nightmare_end ~ 3 | room_my.png | 없음 | 악몽 종료, night |

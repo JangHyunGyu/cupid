@@ -210,10 +210,6 @@
         "name": "Seoyeon",
         "text": "I've still got council closing work. Don't wait. Head out first today."
     },
-    "after3_reject_for_yuna_walk_gym": {
-        "name": "{name}",
-        "text": "*I turn toward the hall that runs past the gym and on to the library annex.*"
-    },
     "after3_reject_for_yuna_3": {
         "name": "Dain",
         "text": "*Through the gap in the open gym door, I see Dain alone on the empty court, practicing her serve.*"
@@ -383,17 +379,9 @@
         "name": "Seoyeon",
         "text": "The student council meeting looks like it'll run long today. Don't worry about it. Go on ahead."
     },
-    "after3_reject_for_dain_2b": {
-        "name": "{name}",
-        "text": "*Before I head to the gym, I stop briefly at Yuna's hideout in the library annex.*"
-    },
     "after3_reject_for_dain_3": {
         "name": "{name}",
         "text": "*On the annex table, no note, and no sign of Yuna's bag. Where she sat, only the round water ring from a takeout cup remains, still lukewarm.*"
-    },
-    "after3_reject_for_dain_3b": {
-        "name": "{name}",
-        "text": "*I quietly close the annex door and hurry my steps toward the gym.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -808,10 +796,6 @@
         "name": "{name}",
         "text": "Haeun? Why are you still waiting here? You haven't left?"
     },
-    "haeun_warn_2b": {
-        "name": "{name}",
-        "text": "*When I stop, Haeun can't quite get the words out and watches my face.*"
-    },
     "haeun_warn_3": {
         "name": "Haeun",
         "text": "Senior, did you just come from seeing Seoyeon in the student council room?"
@@ -878,10 +862,6 @@
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "I know I'm meddling in someone else's business. Even so, tonight, please don't pretend you didn't see Seoyeon and leave her."
-    },
-    "haeun_warn_7_b": {
-        "name": "{name}",
-        "text": "*Haeun, right in front of me, presses her lips shut, fiddles with the clasp of her student council bracelet, and glances down the hall toward the staff room.*"
     },
     "haeun_warn_7_c": {
         "name": "Haeun",

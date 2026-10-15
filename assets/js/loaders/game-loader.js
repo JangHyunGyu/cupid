@@ -54,7 +54,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.319';
+    const version = '2.9.320';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -226,6 +226,7 @@
         'modules/GalleryManager.js', // 갤러리 해금 추적
         'modules/UIManager.js',      // UI/DOM 제어
         'modules/DialogueSystem.js', // 대사 타이핑 효과
+        'modules/MessengerView.js',  // 밤 문자 메신저 말풍선
         'modules/SceneRenderer.js',  // 씬 렌더링
         'modules/FreeTalkSystem.js', // AI 자유대화
         'modules/GameEngine.js',     // 메인 오케스트레이터

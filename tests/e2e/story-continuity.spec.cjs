@@ -20,7 +20,8 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             await e.renderScene('night2_msg_1');
         });
         const nightCopy = require(`../../assets/js/i18n/${lang}/day2_4_night.json`);
-        await expect(page.locator('#message')).toHaveText(nightCopy.night2_msg_yuna_specific.text, { useInnerText: true });
+        await expect(page.locator('.messenger-row.is-contact .messenger-bubble').last()).toHaveText(nightCopy.night2_msg_yuna_specific.text, { useInnerText: true });
+        await expect(page.locator('#message')).toBeEmpty();
         expect(await page.evaluate(() => window.gameEngine.sceneRenderer.currentSceneId)).toBe('night2_msg_yuna_specific');
 
         await page.evaluate(async () => {

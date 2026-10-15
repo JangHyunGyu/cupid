@@ -281,10 +281,6 @@
         "name": "{name}",
         "text": "Tem muita gente, então vamos comer encostados nesta janela. *Com o saco de pão quente na mão, ficamos lado a lado junto à porta de vidro da cantina, e lá no corredor dá para ver Seoyeon vindo.*"
     },
-    "lunch2_dain_10": {
-        "name": "{name}",
-        "text": "*Do outro lado do vidro, Seoyeon nos vê, cruza o olhar uma vez e segue. O pão preso na garganta não desce fácil.*"
-    },
     "lunch2_dain_11": {
         "name": "Dain",
         "text": "Ei, o que deu na presidente do grêmio? Por que ela olhou tão fixo para o nosso lado e foi embora?"
@@ -296,10 +292,6 @@
     "lunch2_dain_13": {
         "name": "Dain",
         "text": "Hmm. Suspeito. Você também ficou bem próximo da presidente, escondido de mim?"
-    },
-    "lunch2_dain_13_b": {
-        "name": "{name}",
-        "text": "*Emburrada, Dain morde um pedaço grande do pão soboro. Migalhas doces grudam na borda dos lábios corados.*"
     },
     "lunch2_dain_choice": {
         "name": "Dain",
@@ -362,17 +354,9 @@
         "name": "Enfermeira",
         "text": "Dois dias seguidos? Já quer virar freguês da minha enfermaria?"
     },
-    "lunch2_dain_end_h": {
-        "name": "{name}",
-        "text": "*De luva de látex, a mão fina da enfermeira segura meu pulso e tira com cuidado, primeiro, a terra ao redor do ferimento.*"
-    },
     "lunch2_dain_end_ins7_first": {
         "name": "Enfermeira",
         "text": "Num campo que você não conhece, correndo, a gente se machuca. Vem cá. Primeiro a desinfecção."
-    },
-    "lunch2_dain_end_ins8_first": {
-        "name": "{name}",
-        "text": "*A enfermeira segura meu braço com a mão de luva e tira com cuidado, primeiro, a poeira ao redor do cotovelo.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -381,10 +365,6 @@
     "lunch2_dain_end_j": {
         "name": "Enfermeira",
         "text": "Quando o antisséptico encostar, arde um pouco. Solta a força do ombro e do braço."
-    },
-    "lunch2_dain_end_k": {
-        "name": "{name}",
-        "text": "*Quando o algodão embebido no antisséptico frio passa pelo ferimento, a pele de dentro do cotovelo pinica, aguda.*"
     },
     "lunch2_dain_end_l": {
         "name": "Enfermeira",
@@ -440,29 +420,13 @@
         "name": "Enfermeira",
         "text": "Se a ponta descolar ou sair secreção, vem direto até mim. Se estiver bem, pode deixar colado."
     },
-    "lunch2_dain_end_b2": {
-        "name": "{name}",
-        "text": "*A enfermeira levanta a caneta-tinteiro e anota na ficha, com letra caprichada, a hora em que fez o curativo.*"
-    },
     "lunch2_dain_end_c2": {
         "name": "Enfermeira",
         "text": "Se arder no resto da educação física, não fica segurando. Fala com o professor. No mais, passa aqui no intervalo."
     },
-    "lunch2_dain_end_d2": {
-        "name": "{name}",
-        "text": "*No fim da ficha, no campo de observações, entra uma nota caprichada: “Flexão da articulação do cotovelo conferida”.*"
-    },
     "lunch2_dain_end_nurse_short1": {
         "name": "Enfermeira",
         "text": "Pronto, acabou. Da próxima, não corre olhando só para a bola. Primeiro olha quem está em volta."
-    },
-    "lunch2_dain_end_nurse_short2": {
-        "name": "{name}",
-        "text": "*Aliso o braço com o curativo novo e saio da enfermaria. Mesmo dobrando o cotovelo, o curativo no ponto em que a mão da enfermeira encostou não levanta.*"
-    },
-    "lunch2_dain_end_nurse_short3": {
-        "name": "{name}",
-        "text": "*O sinal de fim de aula toca, longo. O curativo que tinha prendido de leve na ponta da manga da camisa volta suave para o lugar.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",
@@ -631,10 +595,6 @@
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
         "text": "...É. Chega. Agora cada um lê o seu. *Com a ponta dos dedos, ela alisa devagar o canto da página que tinha amassado.*"
-    },
-    "lunch2_yuna_c1_14": {
-        "name": "{name}",
-        "text": "*Por um tempo, Yuna não consegue virar as páginas e só lê, com a ponta dos dedos, as letras douradas gravadas na lombada velha.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",

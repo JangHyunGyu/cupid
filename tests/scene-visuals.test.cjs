@@ -21,7 +21,8 @@ test('departed speakers, remote messages and room transitions retain the correct
     assert.match(get('night3_cheat_msg_7').characters.center.src, /yuna_normal/);
     assert.equal(get('night3_nightmare_3').characters.center.opacity, 0.35);
     assert.match(get('after3_seo_pity_trap_10').background, /school_hallway/);
-    assert.match(get('after2_yuna_return').background, /school_hallway/);
+    assert.match(get('after2_yuna_rival_seo_high').background, /school_hallway/);
+    assert.match(get('after2_group_yuna_companion').background, /library_old/);
     assert.match(get('wall_seo_yuna_tempt_1').background, /street/);
     assert.equal(get('wall_seo_yuna_tempt_1').characters.center.opacity, 0.35);
     assert.match(get('morning4_start').background, /room_my_day/);

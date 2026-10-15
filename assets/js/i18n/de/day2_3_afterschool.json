@@ -161,10 +161,6 @@
         "name": "Dain",
         "text": "Hah, hah... 3:2, das Match ist aus! *Noch außer Atem steht Dain vom Boden auf, reibt sich einmal ohne nachzudenken das rechte Knie und dreht die Punktetafel um.*"
     },
-    "after2_dain_11b": {
-        "name": "{name}",
-        "text": "*Wir kühlen die schweißnasse Hitze ab, kommen aus der Turnhalle und gehen nebeneinander die Straße vor der Schule im Abendrot entlang.*"
-    },
     "after2_dain_12": {
         "name": "Dain",
         "text": "Ah, so knapp verloren! Aber wie du den Ball triffst, ist alles andere als gewöhnlich. Hast du mir nicht klar gesagt, du machst keinen Sport?"
@@ -202,10 +198,6 @@
         "text": "*Als wir den Laden betreten, schiebt sie den Tteokbokki-Becher näher heran und hebt die Stäbchen.* Heute sehe ich, wie gut du Scharfes verträgst."
     },
     "after2_dain_end": {},
-    "after2_dain_end_first": {
-        "name": "{name}",
-        "text": "*Dain stellt zwei dampfende Becher Tteokbokki mit einem Klack auf den Tisch und reißt die Verpackung der Holzstäbchen schwungvoll auf.*"
-    },
     "after2_dain_end_b": {
         "name": "{name}",
         "text": "*Im Imbiss vor der Schule zieht süß der Geruch von Chilipaste. Dain nimmt ein rotes Reiskuchenstück, spitzt die Lippen und pustet es kühl.*"
@@ -269,10 +261,6 @@
     "after2_dain_rival_yuna_low": {
         "name": "{name}",
         "text": "*Yuna nickt uns einmal durch das Fenster zu und geht weiter zum Anbau.*"
-    },
-    "after2_dain_return": {
-        "name": "{name}",
-        "text": "*Nach dem Abschied von Dain, auf dem Rückweg, um die Tasche zu holen, erreiche ich das Schultor im tiefen Abendrot.*"
     },
     "after2_seo_1": {
         "name": "{name}",
@@ -473,10 +461,6 @@
         "name": "Seoyeon",
         "text": "Am Kragen hing so ein kleines Fädchen."
     },
-    "after2_seo_return": {
-        "name": "{name}",
-        "text": "*Die kribbelnde Wärme sitzt noch in meinem Nacken, als ich den Schülerratsraum verlasse und zum Schultor gehe.*"
-    },
     "after2_seo_rival_dain_high": {
         "name": "Dain",
         "text": "*Dain schiebt einen Ballwagen und sieht uns am Ende des Flurs.* Die Arbeit im Schülerrat hat ganz schön lange gedauert. *Sie umklammert den Griff und dreht sich als Erste um.*"
@@ -618,10 +602,6 @@
         "name": "{name}",
         "text": "*Nachdem Yuna die Hand weggezogen hat, dreht sie den Buchrücken so, dass ich besser fassen kann, und reicht ihn mir vorsichtig.*"
     },
-    "after2_yuna_return": {
-        "name": "{name}",
-        "text": "*Mit Yunas kühler Berührung noch in der Handfläche trete ich aus dem Anbau, und das Sensorlicht an der dunklen Flurdecke springt flackernd an.*"
-    },
     "after2_yuna_rival_dain_high": {
         "name": "Dain",
         "text": "Ich hab gesagt, du sollst in die Sporthalle kommen, und du bist zum Anbau gegangen. Komm nächstes Mal auch zu mir."
@@ -705,10 +685,6 @@
     "minsu_warn_5": {
         "name": "{name}",
         "text": "Was soll das auf einmal?"
-    },
-    "hidden_nurse_d2_return": {
-        "name": "{name}",
-        "text": "*Als ich aus dem Krankenzimmer ins Klassenzimmer zurückkomme, liegt das rötliche Licht nach Schulschluss lang über den leeren Tischen.*"
     },
     "hidden_nurse_d2_freetalk": {
         "name": "Schulkrankenschwester",

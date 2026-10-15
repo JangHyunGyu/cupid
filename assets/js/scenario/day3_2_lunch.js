@@ -58,11 +58,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "lunch3_meal_7_b": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_normal.png",
-        "next": "lunch3_meal_8"
-    },
-    "lunch3_meal_8": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
         "next": "lunch3_meal_10"
     },
     "lunch3_meal_10": {
@@ -77,25 +72,20 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             { "condition": "accepted_seoyeon_date", "next": "lunch3_meal_10_c" },
             { "condition": "accepted_dain_date", "next": "lunch3_meal_10_d" },
             { "condition": "accepted_yuna_date", "next": "lunch3_meal_10_e" },
-            { "next": "lunch3_meal_11" }
+            { "next": "lunch3_choice" }
         ]
     },
     "lunch3_meal_10_c": {
-        "next": "lunch3_meal_11",
+        "next": "lunch3_choice",
         "routeBeforeRender": true
     },
     "lunch3_meal_10_d": {
-        "next": "lunch3_meal_11",
+        "next": "lunch3_choice",
         "routeBeforeRender": true
     },
     "lunch3_meal_10_e": {
-        "next": "lunch3_meal_11",
+        "next": "lunch3_choice",
         "routeBeforeRender": true
-    },
-    "lunch3_meal_11": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "next": "lunch3_choice"
     },
     "lunch3_choice": {
         "background": "assets/images/background/room_school.png",
@@ -220,7 +210,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
                 }
             },
             {
-                "next": "lunch3_seo_focus_1",
+                "next": "lunch3_seo_focus_2",
                 "stats": {
                     "Dain": {
                         "affinity": -5
@@ -259,11 +249,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_sad.png",
         "next": "lunch3_give_seo_3_check"
-    },
-    "lunch3_seo_focus_1": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "lunch3_seo_focus_2"
     },
     "lunch3_seo_focus_2": {
         "background": "assets/images/background/room_school.png",
@@ -629,11 +614,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_expose_14"
     },
     "lunch3_expose_14": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/minsu_smirk.png",
-        "next": "lunch3_expose_15"
-    },
-    "lunch3_expose_15": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/minsu_smirk.png",
         "next": "lunch3_expose_choice"

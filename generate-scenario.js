@@ -278,6 +278,8 @@ function formatScene(sceneId, scene, i18n) {
     if (scene.timeOfDay) lines.push(`- 시간대: \`${scene.timeOfDay}\``);
     if (scene.bgm) lines.push(`- BGM: \`${scene.bgm}\``);
     if (scene.type) lines.push(`- 타입: \`${scene.type}\``);
+    if (scene.messenger === true) lines.push('- 연출: `메신저 말풍선`');
+    if (scene.messenger === false) lines.push('- 연출: `메신저 제외(통화)`');
     if (scene.affinityLocked === true) lines.push('- 호감도 변동: `없음`');
     if (scene.condition) lines.push(`- 조건: \`${scene.condition}\``);
     if (scene.excludeCondition) lines.push(`- 제외조건: \`${scene.excludeCondition}\``);

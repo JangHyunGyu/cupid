@@ -236,10 +236,6 @@
         "name": "Yuna",
         "text": "*Mit gesenktem Kopf zieht Yuna in der Ecke ihres Hefts einen kurzen, dunklen Strich.*"
     },
-    "morning3_date_intro": {
-        "name": "{name}",
-        "text": "*Es hat zum Ende der 1. Stunde geklingelt. Blicke, die sich nicht legen, kreisen die ganze Pause um meinen Platz.*"
-    },
     "morning3_date_intro_b": {
         "name": "{name}",
         "text": "*Der Flur, in den ich kurz zum Durchatmen gegangen bin. Als hätte sie gewartet, kommt Seoyeon an meine Seite und passt den Schritt an.*"
@@ -272,21 +268,9 @@
         "name": "Klassenlehrerin",
         "text": "*Die Stimme sinkt um einen halben Ton.* Was starrst du da so genau an. Warum kommst du in der Pause bis ins leere Klassenzimmer, statt mit deinen Freunden zu sein."
     },
-    "hidden_homeroom_d3_4_e": {
-        "name": "{name}",
-        "text": "*Ein alter Stapel Manuskriptpapier, versteckt unter dem Klassenbuch. Frage ich jetzt geradeheraus, oder tue ich so, als hätte ich nichts gesehen?*"
-    },
-    "hidden_homeroom_d3_4_f": {
-        "name": "{name}",
-        "text": "*Meine Schritte bleiben stehen, direkt vor dem Stapel auf dem Pult: Klassenbuch, Notenlisten und Schülerakten.*"
-    },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
         "text": "*In der Ecke des ersten Manuskriptblatts steht in Rot: „Zurückgestellt“. Als mein Blick die Buchstaben trifft, treten auf dem Handrücken der Klassenlehrerin fein die Adern hervor.*"
-    },
-    "hidden_homeroom_d3_4_h": {
-        "name": "{name}",
-        "text": "*Ich hätte es mit einer Ausrede bewenden lassen und gehen können. Aber statt das Manuskript in die Schublade zu legen, nestelt die Klassenlehrerin nur am Deckel ihres Füllers.*"
     },
     "hidden_homeroom_d3_choice": {
         "name": "{name}",
@@ -530,10 +514,6 @@
         "name": "Schulkrankenschwester",
         "text": "*Die Schulkrankenschwester lacht leise.* Um das abzustreiten, steht dir zu viel ins Gesicht geschrieben."
     },
-    "hidden_nurse_d3_5_l": {
-        "name": "{name}",
-        "text": "*Mir fehlen die Worte, und ich schaue nur auf die Wellen im warmen Pappbecher in meiner Hand hinunter.*"
-    },
     "hidden_nurse_d3_5_m": {
         "name": "Schulkrankenschwester",
         "text": "Ob das offiziell zu meinem Dienst gehört, weiß ich nicht. Nur heute höre ich dir extra zu. Das Bett ist gerade auch frei."
@@ -608,10 +588,6 @@
         "name": "Schulkrankenschwester",
         "text": "Sag also auch du zuerst ehrlich, was du innerlich tragen kannst. Zieh nicht alles an dich, nur um für alle der Gute zu bleiben, und leid nicht allein daran."
     },
-    "hidden_nurse_d3_8_b": {
-        "name": "{name}",
-        "text": "*Wie auf den Punkt getroffen drückt sich die Seite des Pappbechers in meiner Hand in der Form meiner Finger ein.*"
-    },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
         "text": "Danke für den Rat."
@@ -627,10 +603,6 @@
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
         "text": "*Ich stehe auf und greife nach der Klinke des Krankenzimmers. Als hinter mir eine Schublade aufgeht, kommt mir die Ecke des hellgrünen Hefts wieder in den Sinn.*"
-    },
-    "hidden_nurse_d3_8_g": {
-        "name": "{name}",
-        "text": "*Ich drücke das abstehende Ende des Pflasters am Ellbogen mit dem Fingernagel fest. Hinter dem halb geschlossenen Vorhang schwankt das Namensschild mit der Aufschrift „Schulkrankenschwester“ nur schwach.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
@@ -673,10 +645,6 @@
         "name": "Schulkrankenschwester",
         "text": "Natürlich bespreche ich vorher auf jeden Fall zuerst mit dir, wem wir wie viel sagen."
     },
-    "hidden_nurse_d3_9_e": {
-        "name": "{name}",
-        "text": "*Die Schulkrankenschwester schiebt den Terminplan für die Beratung auf dem Tisch still zu mir herüber.*"
-    },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
         "text": "*Auf dem Plan stehen die freien Zeiten von Krankenzimmer und Beratungsstelle nebeneinander. Ich nehme einen Stift und ziehe leise einen Kreis in ein leeres Feld.*"
@@ -709,17 +677,9 @@
         "name": "{name}",
         "text": "Ja, bis zum Wochenende. *Ich verabrede mich mit Seoyeon; Dain kommt an meinen Tisch.*"
     },
-    "morning3_date_seo_accept_b": {
-        "name": "{name}",
-        "text": "*Zurück im Klassenzimmer vergeht eine Stunde, dann klingelt es wieder zur Pause.*"
-    },
     "morning3_date_seo_decline": {
         "name": "{name}",
         "text": "*Als ich Seoyeons Einladung ablehne, beginnt Dain wieder, den Deckel ihrer Flasche zu drehen.*"
-    },
-    "morning3_date_seo_decline_b": {
-        "name": "{name}",
-        "text": "*Zurück im Klassenzimmer vergeht eine Stunde, dann klingelt es wieder zur Pause.*"
     },
     "morning3_date_dain_1": {
         "name": "Dain",
@@ -750,10 +710,6 @@
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
         "text": "Okay, dann bereiten wir uns auf die nächste Stunde vor! *Sie lächelt extra munter und geht zurück an ihren Platz, tippt aber kurz vor der Klingel mit dem Finger fein innen an ihre Uniformtasche.*"
-    },
-    "morning3_date_dain_decline_inner_2": {
-        "name": "{name}",
-        "text": "*Dain geht an ihren Platz zurück, und die Vorklingel zum Unterrichtsbeginn schneidet durch die Luft im Klassenzimmer.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

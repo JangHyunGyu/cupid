@@ -82,11 +82,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_greet_dain_others_yuna": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "morning2_greet_dain_others_2"
-    },
-    "morning2_greet_dain_others_2": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
         "next": "morning2_yuna_seen"
     },
     "morning2_greet_yuna_1": {
@@ -137,11 +132,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "morning2_note_2"
     },
     "morning2_note_2": {
-        "background": "assets/images/background/room_school.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "morning2_note_3"
-    },
-    "morning2_note_3": {
         "background": "assets/images/background/room_school.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "morning2_seo_1"
@@ -214,17 +204,12 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": null,
         "branches": [
             { "condition": "homeroom_day1", "next": "morning2_break_transition_b" },
-            { "next": "morning2_break_1" }
+            { "next": "morning2_seo_dust_1" }
         ]
     },
     "morning2_break_transition_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/teacher_normal.png",
-        "next": "morning2_break_1"
-    },
-    "morning2_break_1": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_back.png",
         "next": "morning2_seo_dust_1"
     },
     "hidden_homeroom_d2_1": {
@@ -472,11 +457,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_dain_react_1": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_dain_react_2"
-    },
-    "morning2_dain_react_2": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_angry.png",
         "next": "morning2_dain_react_3"
     },
     "morning2_dain_react_3": {
@@ -497,11 +477,6 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_dain_react_6": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/dain_angry.png",
-        "next": "morning2_end"
-    },
-    "morning2_end": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "next": "lunch2_start"
     },
     "morning2_greet_none_1": {

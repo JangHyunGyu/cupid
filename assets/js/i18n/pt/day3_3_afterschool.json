@@ -210,10 +210,6 @@
         "name": "Seoyeon",
         "text": "Ainda me resta o fechamento do conselho. Não espera. Hoje vai na frente."
     },
-    "after3_reject_for_yuna_walk_gym": {
-        "name": "{name}",
-        "text": "*Viro para o corredor que passa pelo ginásio e segue até o anexo da biblioteca.*"
-    },
     "after3_reject_for_yuna_3": {
         "name": "Dain",
         "text": "*Pela fresta da porta aberta do ginásio, vejo a Dain sozinha na quadra vazia, treinando o saque.*"
@@ -383,17 +379,9 @@
         "name": "Seoyeon",
         "text": "Hoje a reunião do conselho deve se estender. Não se preocupa. Vai na frente."
     },
-    "after3_reject_for_dain_2b": {
-        "name": "{name}",
-        "text": "*Antes de seguir para o ginásio, passo um instante no esconderijo da Yuna, no anexo da biblioteca.*"
-    },
     "after3_reject_for_dain_3": {
         "name": "{name}",
         "text": "*Na mesa do anexo, não aparece bilhete nem a bolsa da Yuna. No lugar onde ela sentou, só resta, ainda morna, a marca redonda de água de um copo pra viagem.*"
-    },
-    "after3_reject_for_dain_3b": {
-        "name": "{name}",
-        "text": "*Fecho em silêncio a porta do anexo e apresso o passo na direção do ginásio.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -808,10 +796,6 @@
         "name": "{name}",
         "text": "Haeun? Você ainda não foi? Por que tá esperando aqui?"
     },
-    "haeun_warn_2b": {
-        "name": "{name}",
-        "text": "*Quando eu paro, a Haeun não consegue abrir a boca fácil e fica lendo a minha cara.*"
-    },
     "haeun_warn_3": {
         "name": "Haeun",
         "text": "Você, por acaso, acabou de ver a Seoyeon na sala do grêmio?"
@@ -878,10 +862,6 @@
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "Eu sei bem que estou me metendo na vida dos outros. Mesmo assim, esta noite, por favor, não a deixe sozinha fingindo que não viu."
-    },
-    "haeun_warn_7_b": {
-        "name": "{name}",
-        "text": "*A Haeun, bem na minha frente, fecha os lábios, mexe no fecho da pulseira do grêmio e lança um olhar pro corredor da sala dos professores.*"
     },
     "haeun_warn_7_c": {
         "name": "Haeun",

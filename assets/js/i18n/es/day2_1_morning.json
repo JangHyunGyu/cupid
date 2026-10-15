@@ -46,10 +46,6 @@
         "name": "{name}",
         "text": "*La punta de la pluma que sostiene Yuna, en el pupitre de atrás, vacila y deja un pequeño punto de tinta violeta en el centro de una nota blanca.*"
     },
-    "morning2_greet_dain_others_2": {
-        "name": "{name}",
-        "text": "*Justo después de cerrarse la puerta delantera del aula, en el pasillo suena una vez, nítido, un golpecito en la esquina del portapapeles.*"
-    },
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
@@ -82,10 +78,6 @@
     "morning2_note_2": {
         "name": "{name}",
         "text": "*'Al mediodía, en el anexo de la biblioteca. — Yuna'*"
-    },
-    "morning2_note_3": {
-        "name": "{name}",
-        "text": "*La misma letra en tinta lila pálida que recibí ayer. Debajo de la última línea se leen nítidos los cinco caracteres «anexo de la biblioteca».*"
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
@@ -142,10 +134,6 @@
     "morning2_break_transition_b": {
         "name": "{name}",
         "text": "*Frente a la puerta del aula cruzo la mirada de frente con la profesora, que pasa con la lista de asistencia contra el pecho.*"
-    },
-    "morning2_break_1": {
-        "name": "{name}",
-        "text": "*El portapapeles de Seoyeon roza la esquina de mi pupitre y se aparta. Sin darme tiempo a contestar, Seoyeon se escurre al pasillo.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Profesora",
@@ -315,10 +303,6 @@
         "name": "{name}",
         "text": "*El polvo está fuera, está claro, pero el punto del hombro que tocaron los dedos de Seoyeon me cosquillea, y vuelvo a coger la correa dos veces.*"
     },
-    "morning2_dain_react_2": {
-        "name": "{name}",
-        "text": "*Justo cuando Seoyeon se recoloca el portapapeles y se aleja al fondo del pasillo, la voz de Dain me llega por la espalda.*"
-    },
     "morning2_dain_react_3": {
         "name": "Dain",
         "text": "Oye, ¿qué ha sido eso? La presidenta te ha tocado el hombro, ¿a que sí?"
@@ -340,10 +324,6 @@
         "text": "*Gira la silla hacia mí.* ¿Hay algo más que quieras preguntar?",
         "context": "Es la mañana del día 2, justo después de una tutoría en la sala de profesores. El estudiante transferido alcanzó a ver en el cajón de la profesora el manuscrito de una novela larga en la que lleva mucho tiempo trabajando, pero aún desconoce su contenido y sus circunstancias. Son profesora y alumno y apenas empiezan a crear confianza. No inventes el secreto del manuscrito ni cruces los límites entre profesora y alumno.",
         "personality": "La profesora es serena y responsable; escucha antes de aconsejar. Su vergüenza por el manuscrito personal se nota en una breve vacilación, pero no hace responsable al alumno de sus emociones y mantiene una cercanía apropiada."
-    },
-    "morning2_end": {
-        "name": "{name}",
-        "text": "*Según Minsu, con Seoyeon costaba cruzar la mirada una vez en el pasillo aunque llevaras 1 año. Hoy ha venido hasta la puerta de mi aula y se ha ido rozándome el hombro.*"
     },
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Profesora",

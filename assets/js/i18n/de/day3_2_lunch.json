@@ -39,10 +39,6 @@
         "name": "Yuna",
         "text": "*Sie sieht Dain an, während sie die Wurst kaut.* Wer zuerst kommt, bekommt also doch nicht automatisch alles."
     },
-    "lunch3_meal_8": {
-        "name": "{name}",
-        "text": "*Die Spitze von Yunas Stäbchen zielt ohne Zögern wieder genau in die Mitte meiner Lunchbox.*"
-    },
     "lunch3_meal_10": {
         "name": "{name}",
         "text": "Hey, Moment! Das ist das letzte Stück. *Im selben Moment wie mein Ruf halten die Stäbchenspitzen der drei knapp über der Lunchbox in der Luft an.*"
@@ -54,10 +50,6 @@
     "lunch3_meal_10_c": {},
     "lunch3_meal_10_d": {},
     "lunch3_meal_10_e": {},
-    "lunch3_meal_11": {
-        "name": "{name}",
-        "text": "*Drei Augenpaare folgen der Spitze meiner Stäbchen. Wem soll ich dieses letzte Stück geben?*"
-    },
     "lunch3_choice": {
         "name": "{name}",
         "text": "*Am Tisch, wo selbst das Atmen leiser geworden ist, wähle ich, wem ich die letzte Beilage gebe.*",
@@ -122,10 +114,6 @@
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",
         "text": "*Ich habe Dain beruhigt und sie zurück an den Platz im Klassenzimmer gebracht.*"
-    },
-    "lunch3_seo_focus_1": {
-        "name": "{name}",
-        "text": "*Dains Schritte, die durch den Flur hallten, entfernen sich am Ende zum Wasserspender.*"
     },
     "lunch3_seo_focus_2": {
         "name": "Seoyeon",
@@ -254,10 +242,6 @@
     "lunch3_expose_14": {
         "name": "Minsu",
         "text": "*Minsu packt meine Schulter und flüstert fassungslos.* Hey, spinnst du? Wie viele Treffen hast du an einem Wochenende übereinandergelegt?"
-    },
-    "lunch3_expose_15": {
-        "name": "{name}",
-        "text": "*Ich schlucke nur trocken und bewege die Lippen. Selbst Minsu schüttelt den Kopf und legt die Stäbchen ab.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",

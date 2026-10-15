@@ -134,6 +134,14 @@ class GameEngine {
         this.dialogueSystem = new DialogueSystem(this.stateManager, this.uiManager);
 
         /**
+         * 밤 문자 장면용 메신저 화면 - 입력 중 표시, 말풍선, 읽음 표시
+         * 모듈이 없으면(구버전 캐시) 기존 대화창 출력으로 동작
+         */
+        this.messengerView = window.MessengerView
+            ? new window.MessengerView(this.uiManager, this.dialogueSystem)
+            : null;
+
+        /**
          * 프리토킹 시스템 - AI 대화
          * 🔧 디버깅: gameEngine.freeTalkSystem.isFreeTalking으로 프리토킹 상태 확인
          */
@@ -417,6 +425,12 @@ class GameEngine {
 
         // 엔딩 CG 감상 중이면 클릭 무시 (4초간 스킵 불가)
         if (this._cgLocked) return;
+
+        // 메신저 '입력 중' 대기 중이면 대기만 끝내고 말풍선 표시
+        if (this.messengerView?.isAnimating()) {
+            this.messengerView.skip();
+            return;
+        }
 
         // 타이핑 중이면 스킵 (단, 엔딩/에필로그는 스킵 불가 — 끝까지 감상)
         if (this.dialogueSystem.isCurrentlyTyping()) {
@@ -1030,6 +1044,8 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 씬 데이터 로드
         // ─────────────────────────────────────────────────────────
+        // 예전 세이브가 정리로 지운 장면을 가리키면 대체 장면 ID로 바꾼 뒤 진행
+        sceneId = this.sceneRenderer.resolveSceneAlias?.(sceneId) ?? sceneId;
         let scene = await this._getSceneWithLazyContent(sceneId);
 
         // 씬이 없으면 HTML 페이지 이동인지 확인
@@ -1148,6 +1164,10 @@ class GameEngine {
         this.uiManager.nameInputContainer.style.display = 'none';   // 이름 입력 숨김
         this.freeTalkSystem.isFreeTalking = false;                  // 프리토킹 플래그 리셋
 
+        // 문자 장면이 아니면 휴대폰 화면을 닫고 지문만 남는 장면이면 열린 대화방 유지
+        this.uiManager.dialogueBox.classList.remove('messenger-quiet');
+        if (!this.messengerView?.isPhoneContext(scene)) this.messengerView?.hide();
+
         // ─────────────────────────────────────────────────────────
         // 🌑 4단계: 페이드 효과 처리
         // ─────────────────────────────────────────────────────────
@@ -1239,8 +1259,10 @@ class GameEngine {
         if (isNightScene && /_(msg|reply)_/.test(sceneId)) {
             const box = this.uiManager.dialogueBox;
             box.classList.remove('msg-vibrate');
-            void box.offsetWidth;
-            box.classList.add('msg-vibrate');
+            if (!this.messengerView?.vibrate()) {
+                void box.offsetWidth;
+                box.classList.add('msg-vibrate');
+            }
             if (navigator.vibrate) navigator.vibrate(50);
         }
 
@@ -1562,7 +1584,25 @@ class GameEngine {
             // ═══════════════════════════════════════════════════════
         } else {
             // 📜 대사가 있으면 타이핑 효과로 출력
-            if (scene.text) {
+            if (scene.text && this.messengerView?.shouldBubble(scene)) {
+                // 밤 문자: 대사는 휴대폰 말풍선, 지문은 대화창에 표시, 지문이 없으면 대화창에 진행 화살표만 남김
+                this.uiManager.messageEl.textContent = "";
+                this.uiManager.dialogueBox.classList.add('messenger-quiet');
+                const narration = await this.messengerView.present(scene, {
+                    restoring,
+                    isStillCurrent: () => this.sceneRenderer.currentSceneId === sceneId
+                });
+                if (this.sceneRenderer.currentSceneId !== sceneId) return;
+                if (narration) {
+                    this.uiManager.dialogueBox.classList.remove('messenger-quiet');
+                    await this.dialogueSystem.typeText(narration, scene.name);
+                    if (this.sceneRenderer.currentSceneId !== sceneId) return;
+                } else {
+                    this.uiManager.messageEl.textContent = "";
+                    this.uiManager.dialogueBox.classList.add('messenger-quiet');
+                }
+
+            } else if (scene.text) {
                 await this.dialogueSystem.typeText(scene.text, scene.name);
                 if (this.sceneRenderer.currentSceneId !== sceneId) return;
 

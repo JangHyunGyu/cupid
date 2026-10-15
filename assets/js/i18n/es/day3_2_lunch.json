@@ -39,10 +39,6 @@
         "name": "Yuna",
         "text": "*Yuna mira a Dain mientras mastica la salchicha.* Así que no se lo queda quien lo toma primero."
     },
-    "lunch3_meal_8": {
-        "name": "{name}",
-        "text": "*La punta de los palillos de Yuna vuelve, sin dudar, hacia el centro de mi lonchera.*"
-    },
     "lunch3_meal_10": {
         "name": "{name}",
         "text": "Eh, ¡espera! Ese es el último trozo que queda. *Justo con mi grito, las puntas de los palillos de las tres se detienen por los pelos en el aire, encima mismo de la lonchera.*"
@@ -54,10 +50,6 @@
     "lunch3_meal_10_c": {},
     "lunch3_meal_10_d": {},
     "lunch3_meal_10_e": {},
-    "lunch3_meal_11": {
-        "name": "{name}",
-        "text": "*Tres pares de ojos siguen la punta de mis palillos. ¿A quién le doy este último trozo?*"
-    },
     "lunch3_choice": {
         "name": "{name}",
         "text": "*Sobre la mesa, donde hasta la respiración se ha apagado, elijo a quién entregarle el último acompañamiento.*",
@@ -122,10 +114,6 @@
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",
         "text": "*Calmé a Dain y volvimos juntos a su sitio en el aula.*"
-    },
-    "lunch3_seo_focus_1": {
-        "name": "{name}",
-        "text": "*Los pasos de Dain, que resonaban por el pasillo, acaban alejándose hacia la fuente.*"
     },
     "lunch3_seo_focus_2": {
         "name": "Seoyeon",
@@ -254,10 +242,6 @@
     "lunch3_expose_14": {
         "name": "Minsu",
         "text": "*Minsu me agarra del hombro y susurra, como si no diera crédito.* Oye, ¿se te ha ido la cabeza? ¿Cuántos planes has solapado en un solo fin de semana?"
-    },
-    "lunch3_expose_15": {
-        "name": "{name}",
-        "text": "*Trago saliva y muevo los labios. Hasta Minsu niega con la cabeza y deja los palillos.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",

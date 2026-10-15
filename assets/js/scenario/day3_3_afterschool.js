@@ -151,7 +151,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "branches": [
             { "condition": "route_seoyeon", "next": "after3_reject_for_seo_1" },
-            { "condition": "route_yuna", "next": "after3_reject_for_yuna_walk_gym" },
+            { "condition": "route_yuna", "next": "after3_reject_for_yuna_3" },
             { "next": "after3_rival_dain_done" }
         ]
     },
@@ -199,7 +199,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "branches": [
             { "condition": "route_seoyeon", "next": "after3_reject_for_seo_3" },
-            { "condition": "route_dain", "next": "after3_reject_for_dain_2b" },
+            { "condition": "route_dain", "next": "after3_reject_for_dain_3" },
             { "next": "after3_rival_yuna_done" }
         ]
     },
@@ -624,11 +624,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_rival_seo_done"
     },
-    "after3_reject_for_yuna_walk_gym": {
-        "background": "assets/images/background/gym.png",
-        "character": null,
-        "next": "after3_reject_for_yuna_3"
-    },
     "after3_reject_for_yuna_3": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_sad.png",
@@ -898,19 +893,9 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "after3_rival_seo_done"
     },
-    "after3_reject_for_dain_2b": {
-        "background": "assets/images/background/yuna_hideout_day.webp",
-        "character": null,
-        "next": "after3_reject_for_dain_3"
-    },
     "after3_reject_for_dain_3": {
         "background": "assets/images/background/library_old.png",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "after3_reject_for_dain_3b"
-    },
-    "after3_reject_for_dain_3b": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": null,
         "next": "after3_rival_yuna_done"
     },
     "after3_dain_1": {
@@ -1581,11 +1566,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "haeun_warn_2_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_normal.png",
-        "next": "haeun_warn_2b"
-    },
-    "haeun_warn_2b": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
         "next": "haeun_warn_3"
     },
     "haeun_warn_3": {
@@ -1670,11 +1650,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "setFlags": ["haeun_cheer_seen"]
     },
     "haeun_warn_7": {
-        "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_worried.png",
-        "next": "haeun_warn_7_b"
-    },
-    "haeun_warn_7_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/haeun_worried.png",
         "next": "haeun_warn_7_c"

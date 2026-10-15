@@ -1392,9 +1392,9 @@ test('day-two student rivalry and day-three adult social groups use the highest-
     const day2 = scenarioContext.SCENARIO[2];
     const day3 = scenarioContext.SCENARIO[3];
     const studentGroups = {
-        after2_group_seoyeon_companion: { focus: 'Seoyeon', firstTie: 'Dain', entry: 'after2_seo_return' },
-        after2_group_yuna_companion: { focus: 'Yuna', firstTie: 'Seoyeon', entry: 'after2_yuna_return' },
-        after2_group_dain_companion: { focus: 'Dain', firstTie: 'Yuna', entry: 'after2_dain_return' }
+        after2_group_seoyeon_companion: { focus: 'Seoyeon', firstTie: 'Dain', entry: ['after2_seo_rival_yuna_high', 'after2_seo_rival_yuna_mid', 'after2_seo_rival_yuna_low', 'after2_seo_rival_yuna_neg'] },
+        after2_group_yuna_companion: { focus: 'Yuna', firstTie: 'Seoyeon', entry: ['after2_yuna_rival_seo_high', 'after2_yuna_rival_seo_mid', 'after2_yuna_rival_seo_low', 'after2_yuna_rival_seo_neg'] },
+        after2_group_dain_companion: { focus: 'Dain', firstTie: 'Yuna', entry: ['after2_dain_rival_yuna_high', 'after2_dain_rival_yuna_mid', 'after2_dain_rival_yuna_low', 'after2_dain_rival_yuna_neg'] }
     };
     const adultGroups = {
         after3_group_teacher_companion: { focus: 'Teacher', firstTie: 'Seoyeon' },
@@ -1403,7 +1403,9 @@ test('day-two student rivalry and day-three adult social groups use the highest-
 
     for (const [id, expected] of Object.entries(studentGroups)) {
         const scene = day2[id];
-        assert.equal(day2[expected.entry].next, id, `${expected.entry} must enter its day-two group event`);
+        for (const entry of expected.entry) {
+            assert.equal(day2[entry].next, id, `${entry} must enter its day-two group event`);
+        }
         assert.equal(scene.type, 'group_free_talk');
         assert.equal(scene.groupMode, 'route_rivalry');
         assert.equal(scene.dynamicGroupName, true);

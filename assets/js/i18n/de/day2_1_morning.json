@@ -46,10 +46,6 @@
         "name": "{name}",
         "text": "*Die Spitze des Füllers in Yunas Hand, hinten in der Reihe, stockt und hinterlässt mitten auf dem weißen Zettel einen kleinen violetten Tintenpunkt.*"
     },
-    "morning2_greet_dain_others_2": {
-        "name": "{name}",
-        "text": "*Gleich nachdem die vordere Klassenzimmertür zufällt, hallt vom Flur einmal klar das Tippen gegen eine Klemmbrettecke.*"
-    },
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
@@ -82,10 +78,6 @@
     "morning2_note_2": {
         "name": "{name}",
         "text": "*'Komm mittags zum Bibliotheksanbau. — Yuna'*"
-    },
-    "morning2_note_3": {
-        "name": "{name}",
-        "text": "*Dieselbe blasslila Tinte wie gestern. Unter der letzten Zeile stehen fünf Zeichen, deutlich: „Bibliotheksanbau“.*"
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
@@ -142,10 +134,6 @@
     "morning2_break_transition_b": {
         "name": "{name}",
         "text": "*Vor der Klassenzimmertür treffe ich frontal den Blick der Klassenlehrerin, die mit dem Klassenbuch im Arm vorbeigeht.*"
-    },
-    "morning2_break_1": {
-        "name": "{name}",
-        "text": "*Seoyeons Klemmbrett tippt an die Ecke meines Tischs und löst sich wieder. Noch bevor ich antworten kann, ist sie auf dem Flur verschwunden.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Klassenlehrerin",
@@ -315,10 +303,6 @@
         "name": "{name}",
         "text": "*Der Staub ist eindeutig weg, und trotzdem kitzelt die Stelle, wo Seoyeons Fingerspitzen die Schulter berührt haben, sodass ich den Taschenriemen sogar zweimal neu greife.*"
     },
-    "morning2_dain_react_2": {
-        "name": "{name}",
-        "text": "*Gerade als Seoyeon das Klemmbrett zurechtrückt und den Flur hinunter verschwindet, kommt von hinten Dains Stimme.*"
-    },
     "morning2_dain_react_3": {
         "name": "Dain",
         "text": "Hey, was war das gerade? Die Schülersprecherin hat deine Schulter angefasst, stimmt's?"
@@ -340,10 +324,6 @@
         "text": "*Sie dreht ihren Stuhl zu mir.* Möchtest du sonst noch etwas wissen?",
         "context": "Es ist der Morgen von Tag 2, direkt nach einem Beratungsgespräch im Lehrerzimmer. Der neue Schüler hat zufällig ein langes Manuskript in der Schublade der Klassenlehrerin gesehen, kennt aber weder Inhalt noch Vorgeschichte. Als Lehrerin und Schüler beginnen sie gerade erst, Vertrauen aufzubauen. Erfinde kein Geheimnis des Manuskripts und überschreite nicht die Lehrer-Schüler-Grenze.",
         "personality": "Die Klassenlehrerin ist ruhig und verantwortungsbewusst und hört zu, bevor sie Rat gibt. Ihre Verlegenheit über das persönliche Manuskript zeigt sich in kurzem Zögern, doch sie lädt dem Schüler keine emotionale Verantwortung auf und wahrt eine warme, angemessene Grenze."
-    },
-    "morning2_end": {
-        "name": "{name}",
-        "text": "*Laut Minsu sieht man Seoyeon im Flur selbst nach 1 Jahr kaum einmal in die Augen. Heute ist sie bis vor meine Klassenzimmertür gekommen und hat im Vorbeigehen meine Schulter gestreift.*"
     },
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Klassenlehrerin",

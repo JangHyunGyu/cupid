@@ -1,0 +1,476 @@
+{
+  "date": "2026-10-15",
+  "scope": "New and modified Korean comments in the inherited night-messenger and scene-trimming changes; no authored dialogue or character prompt rewritten",
+  "skill": "D:/workspace/im-not-ai/codex/skills/humanize-korean/SKILL.md",
+  "quickRules": "D:/workspace/im-not-ai/skills/humanize-korean/references/quick-rules.md",
+  "run_id": "2026-10-15-001-1b22",
+  "route": "light",
+  "route_source": "route_hint",
+  "reviewedBlocks": 58,
+  "changedBlocks": 10,
+  "grade": "B",
+  "selfCheck": "6/6",
+  "selfCheckResults": {
+    "factsAndAnchors": "PASS; technical corrections verified directly against the implementation and listed below",
+    "genre": "PASS; code comments retain useful lists, JSDoc identifiers and function contracts",
+    "changeRate": "PASS; deterministic gate 0.9%, no forced edits to already concise comments",
+    "s1Patterns": "PASS; no remaining high-confidence pattern in reviewed text",
+    "register": "PASS; concise noun endings without polite sentence endings or final periods in changed prose",
+    "artificialExpressions": "PASS; no new metaphors, claims or tutorial filler"
+  },
+  "technicalCorrections": [
+    "Korean unread marker is the sent message count 1, rather than a received indicator",
+    "Japanese unread marker is blank; other non-Korean locales use delivery wording",
+    "_showTyping receives a generation number, rather than a callback",
+    "Reply contact inference now follows the explicit scene contact, sprite prefix, then current thread"
+  ],
+  "gate": {
+    "genre": "report",
+    "change_rate": {
+      "rate": 0.0087,
+      "scope": "전문",
+      "verdict": "OK"
+    },
+    "s1_targets": [],
+    "antithesis": {
+      "before": 0,
+      "after": 0,
+      "verdict": "스킵 (원문 대구 < 5)"
+    },
+    "golden": [],
+    "sentence_touch": {
+      "rate": 0.0813,
+      "touched": 13,
+      "total": 160
+    },
+    "numbers_dropped": [],
+    "modality": {
+      "lost_pairs": [],
+      "uncertain_pairs": [],
+      "counts": {
+        "deontic": {
+          "before": 0,
+          "after": 0
+        },
+        "hedge": {
+          "before": 0,
+          "after": 0
+        }
+      },
+      "verdict": "OK"
+    },
+    "gate": {
+      "verdict": "OK — 수렴",
+      "exit_code": 0
+    }
+  },
+  "note": "Grade B because change rate is below the skill's 10-25% A range; already good comments retained. Source comments with technical inaccuracies were corrected separately from style edits. No new Korean runtime log messages.",
+  "comments": [
+    {
+      "id": 1,
+      "file": "assets/css/style.css",
+      "line": 2808,
+      "original": "/* ==========================================================================\n   Night Messenger (밤 문자 장면 메신저 화면)\n   1~4일차 밤 문자를 휴대폰 대화방 형태로 표시. 지문은 기존 대화창에 남김\n   ========================================================================== */",
+      "final": "/* ==========================================================================\n   Night Messenger (밤 문자 장면 메신저 화면)\n   1~4일차 밤 문자를 휴대폰 대화방 형태로 표시, 지문은 기존 대화창에 남김\n   ========================================================================== */"
+    },
+    {
+      "id": 2,
+      "file": "assets/css/style.css",
+      "line": 2925,
+      "original": "/* 안 읽음 표시: 한국어는 노란 숫자 1, 다른 언어는 전송/읽음 문구 */",
+      "final": "/* 안 읽음 표시: 한국어는 노란 숫자 1, 일본어는 빈칸, 나머지는 전송 문구 */"
+    },
+    {
+      "id": 3,
+      "file": "assets/css/style.css",
+      "line": 2965,
+      "original": "/* 유나의 망설임: 입력 중 표시가 잠깐 사라졌다가 다시 뜸 */",
+      "final": "/* 유나의 망설임: 입력 중 표시가 잠깐 사라졌다가 다시 뜸 */"
+    },
+    {
+      "id": 4,
+      "file": "assets/css/style.css",
+      "line": 2970,
+      "original": "/* 말풍선만 있는 장면: 대화창은 진행 화살표만 남기고 비움 */",
+      "final": "/* 말풍선만 있는 장면: 대화창은 진행 화살표만 남기고 비움 */"
+    },
+    {
+      "id": 5,
+      "file": "assets/js/loaders/game-loader.js",
+      "line": 229,
+      "original": "// 밤 문자 메신저 말풍선",
+      "final": "// 밤 문자 메신저 말풍선"
+    },
+    {
+      "id": 6,
+      "file": "assets/js/modules/GameEngine.js",
+      "line": 136,
+      "original": "/**\n         * 밤 문자 장면용 메신저 화면 - 입력 중 표시, 말풍선, 읽음 표시\n         * 모듈이 없으면(구버전 캐시) 기존 대화창 출력으로 동작\n         */",
+      "final": "/**\n         * 밤 문자 장면용 메신저 화면 - 입력 중 표시, 말풍선, 읽음 표시\n         * 모듈이 없으면(구버전 캐시) 기존 대화창 출력으로 동작\n         */"
+    },
+    {
+      "id": 7,
+      "file": "assets/js/modules/GameEngine.js",
+      "line": 429,
+      "original": "// 메신저 '입력 중' 대기 중이면 대기만 끝내고 말풍선 표시",
+      "final": "// 메신저 '입력 중' 대기 중이면 대기만 끝내고 말풍선 표시"
+    },
+    {
+      "id": 8,
+      "file": "assets/js/modules/GameEngine.js",
+      "line": 1047,
+      "original": "// 예전 세이브가 정리로 지운 장면을 가리키면 대체 장면 ID로 바꾼 뒤 진행",
+      "final": "// 예전 세이브가 정리로 지운 장면을 가리키면 대체 장면 ID로 바꾼 뒤 진행"
+    },
+    {
+      "id": 9,
+      "file": "assets/js/modules/GameEngine.js",
+      "line": 1167,
+      "original": "// 문자 장면이 아니면 휴대폰 화면을 닫고, 지문만 남는 장면이면 열린 대화방을 유지",
+      "final": "// 문자 장면이 아니면 휴대폰 화면을 닫고 지문만 남는 장면이면 열린 대화방 유지"
+    },
+    {
+      "id": 10,
+      "file": "assets/js/modules/GameEngine.js",
+      "line": 1588,
+      "original": "// 밤 문자: 대사는 휴대폰 말풍선, 지문은 대화창. 지문이 없으면 대화창은 진행 화살표만 남김",
+      "final": "// 밤 문자: 대사는 휴대폰 말풍선, 지문은 대화창에 표시, 지문이 없으면 대화창에 진행 화살표만 남김"
+    },
+    {
+      "id": 11,
+      "file": "assets/js/modules/SceneRenderer.js",
+      "line": 111,
+      "original": "// 2026-10-15 Day 2~3 중복 지문·이동 브릿지 정리로 지운 장면 ID -> 이어서 보여 줄 장면 ID",
+      "final": "// 2026-10-15 Day 2~3 중복 지문·이동 브릿지 정리로 지운 장면 ID -> 이어서 보여 줄 장면 ID"
+    },
+    {
+      "id": 12,
+      "file": "assets/js/modules/SceneRenderer.js",
+      "line": 112,
+      "original": "// 예전 세이브(currentSceneId, 마지막으로 본 장면 ID)가 지운 장면을 가리켜도 같은 흐름으로 이어 붙이는 용도",
+      "final": "// 예전 세이브(currentSceneId, 마지막으로 본 장면 ID)가 지운 장면을 가리켜도 같은 흐름으로 이어 붙이는 용도"
+    },
+    {
+      "id": 13,
+      "file": "assets/js/modules/SceneRenderer.js",
+      "line": 211,
+      "original": "// 5. 정리 과정에서 지운 장면이면 대체 장면으로 이어 붙임",
+      "final": "// 5. 정리 과정에서 지운 장면이면 대체 장면으로 이어 붙임"
+    },
+    {
+      "id": 14,
+      "file": "assets/js/modules/SceneRenderer.js",
+      "line": 218,
+      "original": "/**\n     * 지운 장면 ID를 현재 시나리오의 대체 장면 ID로 변환\n     * 입력: 장면 ID -> REMOVED_SCENE_REDIRECTS를 끝까지 따라감 -> 대체 ID, 지운 장면이 아니면 입력 그대로\n     * 표가 순환하면 원래 ID를 돌려줘 무한 루프를 막음\n     * @param {string} id - 장면 ID\n     * @returns {string} 실제로 렌더링할 장면 ID\n     */",
+      "final": "/**\n     * 지운 장면 ID를 현재 시나리오의 대체 장면 ID로 변환\n     * 입력: 장면 ID -> REMOVED_SCENE_REDIRECTS를 끝까지 따라감 -> 대체 ID, 지운 장면이 아니면 입력 그대로\n     * 표가 순환하면 원래 ID를 반환해 무한 루프 방지\n     * @param {string} id - 장면 ID\n     * @returns {string} 실제로 렌더링할 장면 ID\n     */"
+    },
+    {
+      "id": 15,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 2,
+      "original": "// MessengerView.js - 밤 문자 장면 메신저 말풍선 모듈",
+      "final": "// MessengerView.js - 밤 문자 장면 메신저 말풍선 모듈"
+    },
+    {
+      "id": 16,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 4,
+      "original": "// 1~4일차 밤의 문자 장면을 대화창 텍스트 대신 휴대폰 메신저 화면으로 표시",
+      "final": "// 1~4일차 밤의 문자 장면을 대화창 텍스트 대신 휴대폰 메신저 화면으로 표시"
+    },
+    {
+      "id": 17,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 5,
+      "original": "// - 상대 메시지: '입력 중' 점 세 개를 캐릭터별 속도로 보여 준 뒤 왼쪽 말풍선 추가",
+      "final": "// - 상대 메시지: '입력 중' 점 세 개를 캐릭터별 속도로 보여 준 뒤 왼쪽 말풍선 추가"
+    },
+    {
+      "id": 18,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 6,
+      "original": "// - 주인공 메시지: 오른쪽 말풍선 + 안 읽음 표시('1'), 잠시 뒤 읽음 처리",
+      "final": "// - 주인공 메시지: 오른쪽 말풍선 + 안 읽음 표시('1'), 잠시 뒤 읽음 처리"
+    },
+    {
+      "id": 19,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 7,
+      "original": "// - 지문(*...*)은 기존 대화창에 그대로 출력하고 휴대폰 화면은 유지",
+      "final": "// - 지문(*...*)은 기존 대화창에 그대로 출력하고 휴대폰 화면은 유지"
+    },
+    {
+      "id": 20,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 9,
+      "original": "// 의존성:",
+      "final": "// 의존성:"
+    },
+    {
+      "id": 21,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 10,
+      "original": "//   - config.js         → CHAR_NAME_MAP (표시 이름 → 내부 캐릭터 키)",
+      "final": "//   - config.js         → CHAR_NAME_MAP (표시 이름 → 내부 캐릭터 키)"
+    },
+    {
+      "id": 22,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 11,
+      "original": "//   - DialogueSystem.js → processPlaceholders, _parseNarrationSegments ({name} 치환, 지문 분리)",
+      "final": "//   - DialogueSystem.js → processPlaceholders, _parseNarrationSegments ({name} 치환, 지문 분리)"
+    },
+    {
+      "id": 23,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 13,
+      "original": "// window 노출:",
+      "final": "// window 노출:"
+    },
+    {
+      "id": 24,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 17,
+      "original": "/** 메신저 화면을 쓰는 장면 파일: 1~4일차 밤 (5일차 밤은 엔딩 CG 위주라 제외) */",
+      "final": "/** 메신저 화면을 쓰는 장면 파일: 1~4일차 밤 (5일차 밤은 엔딩 CG 위주라 제외) */"
+    },
+    {
+      "id": 25,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 20,
+      "original": "/**\n * 말풍선으로 보여 줄 상대 캐릭터\n * 담임·보건선생님은 재학 중 개인 메시지를 쓰지 않는 설정이라 제외 (학교 앱 공지는 기존 지문 유지)\n */",
+      "final": "/**\n * 말풍선으로 보여 줄 상대 캐릭터\n * 담임·보건선생님은 재학 중 개인 메시지를 쓰지 않는 설정이라 제외 (학교 앱 공지는 기존 지문 유지)\n */"
+    },
+    {
+      "id": 26,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 26,
+      "original": "/** 스프라이트 파일명 접두어 → 캐릭터 키 (주인공이 먼저 보내는 장면에서 대화 상대 추정용) */",
+      "final": "/** 스프라이트 파일명 접두어 → 캐릭터 키 (주인공이 먼저 보내는 장면에서 대화 상대 추정용) */"
+    },
+    {
+      "id": 27,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 29,
+      "original": "/**\n * 캐릭터별 입력 속도\n * base: 기본 대기(ms), perChar: 글자당 추가(ms), max: 상한(ms), pause: 입력 중 표시가 한 번 끊겼다 다시 뜨는 시간(ms)\n * 유나: 오래 망설이다 짧게 보냄 / 다인: 거의 바로 연달아 보냄 / 서연: 차분하고 일정한 속도\n */",
+      "final": "/**\n * 캐릭터별 입력 속도\n * base: 기본 대기(ms), perChar: 글자당 추가(ms), max: 상한(ms), pause: 입력 중 표시가 한 번 끊겼다 다시 뜨는 시간(ms)\n * 유나: 오래 망설이다 짧게 보냄 / 다인: 거의 바로 연달아 보냄 / 서연: 차분하고 일정한 속도\n */"
+    },
+    {
+      "id": 28,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 42,
+      "original": "/** 언어별 UI 문구 (받은 표시는 한국어만 카카오톡식 숫자 '1') */",
+      "final": "/** 언어별 UI 문구 (한국어 안 읽음 표시는 숫자 '1') */"
+    },
+    {
+      "id": 29,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 54,
+      "original": "/** 대화방 제목 기본값 (상대가 아직 말하지 않은 방에서 사용) */",
+      "final": "/** 대화방 제목 기본값 (상대가 아직 말하지 않은 방에서 사용) */"
+    },
+    {
+      "id": 30,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 63,
+      "original": "/**\n     * @param {UIManager} uiManager - 대화창·게임 컨테이너 DOM 접근\n     * @param {DialogueSystem} dialogueSystem - {name} 치환과 지문 분리 재사용\n     */",
+      "final": "/**\n     * @param {UIManager} uiManager - 대화창·게임 컨테이너 DOM 접근\n     * @param {DialogueSystem} dialogueSystem - {name} 치환과 지문 분리 재사용\n     */"
+    },
+    {
+      "id": 31,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 74,
+      "original": "/** 현재 열린 대화방 상대 캐릭터 키 */",
+      "final": "/** 현재 열린 대화방 상대 캐릭터 키 */"
+    },
+    {
+      "id": 32,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 76,
+      "original": "/** 입력 중 연출 진행 여부 (클릭 시 건너뛰기 판단) */",
+      "final": "/** 입력 중 연출 진행 여부 (클릭 시 건너뛰기 판단) */"
+    },
+    {
+      "id": 33,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 92,
+      "original": "/** 패널 DOM을 처음 필요할 때 한 번만 생성 */",
+      "final": "/** 패널 DOM이 처음 필요할 때 한 번만 생성 */"
+    },
+    {
+      "id": 34,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 102,
+      "original": "// 휴대폰 화면을 눌러도 대화창 클릭과 똑같이 다음 장면으로 진행",
+      "final": "// 휴대폰 화면을 눌러도 대화창 클릭과 똑같이 다음 장면으로 진행"
+    },
+    {
+      "id": 35,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 112,
+      "original": "/**\n     * 휴대폰 화면을 유지할 장면인지 판단\n     * 조건: 1~4일차 밤 파일 + 프리토킹·입력 장면 아님 + (messenger:true 명시 또는 반투명 스프라이트)\n     * 반투명(opacity < 1) 스프라이트는 기존 시나리오에서 '화면 너머 상대'를 뜻하는 표기\n     * messenger:false로 통화 장면 등을 직접 제외 가능\n     */",
+      "final": "/**\n     * 휴대폰 화면을 유지할 장면인지 판단\n     * 조건: 1~4일차 밤 파일 + 프리토킹·입력 장면 아님 + (messenger:true 명시 또는 반투명 스프라이트)\n     * 반투명(opacity < 1) 스프라이트는 기존 시나리오에서 '화면 너머 상대'를 뜻하는 표기\n     * messenger:false로 통화 장면 등을 직접 제외 가능\n     */"
+    },
+    {
+      "id": 36,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 127,
+      "original": "/**\n     * 장면 화자를 메신저 기준으로 분류\n     * 반환: { kind: 'player' } | { kind: 'contact', key } | null(말풍선 대상 아님)\n     */",
+      "final": "/**\n     * 장면 화자를 메신저 기준으로 분류\n     * 반환: { kind: 'player' } | { kind: 'contact', key } | null(말풍선 대상 아님)\n     */"
+    },
+    {
+      "id": 37,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 139,
+      "original": "/** 대사(말풍선)와 지문(대화창)을 분리. 둘 다 원문 기준이라 {name} 치환은 출력 직전에 처리 */",
+      "final": "/** 대사(말풍선)와 지문(대화창)을 원문 기준으로 분리, 둘 다 {name} 치환은 출력 직전에 처리 */"
+    },
+    {
+      "id": 38,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 149,
+      "original": "/** 말풍선을 추가할 장면인지 판단 (휴대폰 맥락 + 허용 화자 + 실제 대사 존재) */",
+      "final": "/** 말풍선을 추가할 장면인지 판단 (휴대폰 맥락 + 허용 화자 + 실제 대사 존재) */"
+    },
+    {
+      "id": 39,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 158,
+      "original": "/** 주인공 메시지의 대화 상대: 열린 방 → 반투명 스프라이트 파일명 순으로 추정 */",
+      "final": "/** 주인공 메시지의 대화 상대: 장면 지정값 → 스프라이트 파일명 → 열린 방 순으로 추정 */"
+    },
+    {
+      "id": 40,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 173,
+      "original": "/** 상대가 바뀌면 다른 대화방으로 넘어간 것으로 보고 말풍선 목록을 비움 */",
+      "final": "/** 상대가 바뀌면 다른 대화방으로 넘어간 것으로 보고 말풍선 목록을 비움 */"
+    },
+    {
+      "id": 41,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 209,
+      "original": "/**\n     * 상대 입력 중 표시 대기\n     * 입력: 프로필, 대사 길이, 소유권 확인 함수 → 점 세 개 표시 후 대기(유나는 중간에 한 번 끊김)\n     * 반환: 대기가 끝나거나 skip()이 호출되면 resolve\n     */",
+      "final": "/**\n     * 상대 입력 중 표시 대기\n     * 입력: 프로필, 대사 길이, 현재 연출 번호 → 점 세 개 표시 후 대기(유나는 중간에 한 번 끊김)\n     * 반환: 대기가 끝나거나 skip()이 호출되면 resolve\n     */"
+    },
+    {
+      "id": 42,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 233,
+      "original": "// 입력 중 표시가 사라졌다가 다시 뜨는 망설임 연출",
+      "final": "// 입력 중 표시가 사라졌다가 다시 뜨는 망설임 연출"
+    },
+    {
+      "id": 43,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 242,
+      "original": "/**\n     * 장면 하나를 메신저에 반영\n     * 입력: 장면 데이터, { restoring: 세이브 복원 여부, isStillCurrent: 장면 전환 감지 함수 }\n     * 처리: 대화방 열기 → (상대) 입력 중 대기 후 말풍선 / (주인공) 말풍선 + 읽음 타이머\n     * 반환: 대화창에 따로 출력할 지문 원문(없으면 빈 문자열)\n     * 장면이 중간에 바뀌면 말풍선을 추가하지 않고 빈 문자열 반환\n     */",
+      "final": "/**\n     * 장면 하나를 메신저에 반영\n     * 입력: 장면 데이터, { restoring: 세이브 복원 여부, isStillCurrent: 장면 전환 감지 함수 }\n     * 처리: 대화방 열기 → (상대) 입력 중 대기 후 말풍선 / (주인공) 말풍선 + 읽음 타이머\n     * 반환: 대화창에 따로 출력할 지문 원문(없으면 빈 문자열)\n     * 장면이 중간에 바뀌면 말풍선을 추가하지 않고 빈 문자열 반환\n     */"
+    },
+    {
+      "id": 44,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 290,
+      "original": "/** 입력 중 연출 진행 여부 */",
+      "final": "/** 입력 중 연출 진행 여부 */"
+    },
+    {
+      "id": 45,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 295,
+      "original": "/** 클릭 시 입력 중 대기를 즉시 끝내고 말풍선 표시 */",
+      "final": "/** 클릭 시 입력 중 대기를 즉시 끝내고 말풍선 표시 */"
+    },
+    {
+      "id": 46,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 300,
+      "original": "/** 문자 장면이 끝나면 휴대폰 화면을 닫고 대화방 상태 초기화 */",
+      "final": "/** 문자 장면이 끝나면 휴대폰 화면을 닫고 대화방 상태 초기화 */"
+    },
+    {
+      "id": 47,
+      "file": "assets/js/modules/MessengerView.js",
+      "line": 313,
+      "original": "/** 새 메시지 진동 효과를 휴대폰 화면에 적용 */",
+      "final": "/** 새 메시지 진동 효과를 휴대폰 화면에 적용 */"
+    },
+    {
+      "id": 48,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 2,
+      "original": "// 밤 문자 메신저 화면과 Day 2~3 중복 지문 정리 회귀 테스트",
+      "final": "// 밤 문자 메신저 화면과 Day 2~3 중복 지문 정리 회귀 테스트"
+    },
+    {
+      "id": 49,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 15,
+      "original": "// 시나리오 전체 + 언어별 문구 로드",
+      "final": "// 시나리오 전체 + 언어별 문구 로드"
+    },
+    {
+      "id": 50,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 22,
+      "original": "// 브라우저 전역 최소 대역 (DOM 없이 판단 로직만 검증)",
+      "final": "// 브라우저 전역 최소 대역 (DOM 없이 판단 로직만 검증)"
+    },
+    {
+      "id": 51,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 42,
+      "original": "// 장면 데이터 + 한국어 문구 결합 (런타임 _applyI18n과 같은 필드)",
+      "final": "// 장면 데이터 + 한국어 문구 결합 (런타임 _applyI18n과 같은 필드)"
+    },
+    {
+      "id": 52,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 54,
+      "original": "// 주인공 답장은 반투명 스프라이트로 대화 상대를 추정",
+      "final": "// 주인공 답장은 반투명 스프라이트로 대화 상대를 추정"
+    },
+    {
+      "id": 53,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 58,
+      "original": "// 지문만 있는 휴대폰 장면은 화면만 유지",
+      "final": "// 지문만 있는 휴대폰 장면은 화면만 유지"
+    },
+    {
+      "id": 54,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 62,
+      "original": "// 학교 앱 공지(담임·보건)는 개인 메시지로 보이지 않게 제외",
+      "final": "// 학교 앱 공지(담임·보건)는 개인 메시지로 보이지 않게 제외"
+    },
+    {
+      "id": 55,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 65,
+      "original": "// 통화 장면은 명시적으로 제외",
+      "final": "// 통화 장면은 명시적으로 제외"
+    },
+    {
+      "id": 56,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 70,
+      "original": "// 스프라이트 없는 주인공 답장 문자는 명시적으로 포함",
+      "final": "// 스프라이트 없는 주인공 답장 문자는 명시적으로 포함"
+    },
+    {
+      "id": 57,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 76,
+      "original": "// 낮 장면·5일차 엔딩·프리토킹은 대상 아님",
+      "final": "// 낮 장면·5일차 엔딩·프리토킹은 대상 아님"
+    },
+    {
+      "id": 58,
+      "file": "tests/night-messenger.test.cjs",
+      "line": 122,
+      "original": "// 남은 장면 어디에서도 지운 장면을 가리키지 않음",
+      "final": "// 남은 장면 어디에서도 지운 장면을 가리키지 않음"
+    }
+  ]
+}

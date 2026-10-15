@@ -210,10 +210,6 @@
         "name": "Seoyeon",
         "text": "Ich hab noch Abschlussarbeit für den Schülerrat. Wart nicht, geh heute schon vor."
     },
-    "after3_reject_for_yuna_walk_gym": {
-        "name": "{name}",
-        "text": "*Ich biege in den Flur ab, der an der Turnhalle vorbei zum Bibliotheksanbau führt.*"
-    },
     "after3_reject_for_yuna_3": {
         "name": "Dain",
         "text": "*Durch den Spalt der offenen Turnhallentür sehe ich Dain, die allein auf dem leeren Spielfeld Aufschlag übt.*"
@@ -383,17 +379,9 @@
         "name": "Seoyeon",
         "text": "Die Schülerratssitzung zieht sich heute wohl. Mach dir keinen Kopf und geh schon vor."
     },
-    "after3_reject_for_dain_2b": {
-        "name": "{name}",
-        "text": "*Bevor ich zur Turnhalle gehe, schaue ich kurz in Yunas Versteck im Bibliotheksanbau.*"
-    },
     "after3_reject_for_dain_3": {
         "name": "{name}",
         "text": "*Auf dem Tisch im Anbau liegen weder ein Zettel noch Yunas Tasche. Auf ihrem Platz bleibt nur der runde, noch lauwarme Wasserrand eines Bechers zum Mitnehmen.*"
-    },
-    "after3_reject_for_dain_3b": {
-        "name": "{name}",
-        "text": "*Ich schließe leise die Tür des Anbaus und gehe schneller Richtung Turnhalle.*"
     },
     "after3_dain_1": {
         "name": "{name}",
@@ -808,10 +796,6 @@
         "name": "{name}",
         "text": "Haeun? Warum wartest du hier noch, statt schon zu gehen?"
     },
-    "haeun_warn_2b": {
-        "name": "{name}",
-        "text": "*Als ich stehen bleibe, bringt Haeun den Mund nicht auf und liest meine Miene.*"
-    },
     "haeun_warn_3": {
         "name": "Haeun",
         "text": "Hast du Seoyeon gerade im Schülerratsraum getroffen?"
@@ -878,10 +862,6 @@
     "haeun_warn_7": {
         "name": "Haeun",
         "text": "Ich weiß, dass ich mich in fremde Angelegenheiten einmische. Aber bitte lass Seoyeon heute Nacht nicht so stehen, als hättest du nichts gemerkt."
-    },
-    "haeun_warn_7_b": {
-        "name": "{name}",
-        "text": "*Haeun vor mir presst die Lippen zusammen, nestelt am Verschluss des Schülerratsarmbands und wirft einen Blick in den Flur zum Lehrerzimmer.*"
     },
     "haeun_warn_7_c": {
         "name": "Haeun",

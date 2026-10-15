@@ -39,10 +39,6 @@
         "name": "Yuna",
         "text": "*Olha para Dain enquanto mastiga a salsicha.* Então não é de quem pega primeiro."
     },
-    "lunch3_meal_8": {
-        "name": "{name}",
-        "text": "*A ponta dos hashis de Yuna volta, sem hesitar, para o meio da minha marmita.*"
-    },
     "lunch3_meal_10": {
         "name": "{name}",
         "text": "Ah, espera! Esse é o último pedaço que sobrou. *No mesmo instante do meu grito, as pontas dos hashis das três param no ar, por um triz, bem em cima da marmita.*"
@@ -54,10 +50,6 @@
     "lunch3_meal_10_c": {},
     "lunch3_meal_10_d": {},
     "lunch3_meal_10_e": {},
-    "lunch3_meal_11": {
-        "name": "{name}",
-        "text": "*Três pares de olhos seguem a ponta do meu hashi. Pra quem eu entrego este último pedaço?*"
-    },
     "lunch3_choice": {
         "name": "{name}",
         "text": "*Na mesa, onde até o som da respiração baixou, escolho quem recebe o último acompanhamento.*",
@@ -122,10 +114,6 @@
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",
         "text": "*Acalmei a Dain e a trouxe de volta para o lugar na sala.*"
-    },
-    "lunch3_seo_focus_1": {
-        "name": "{name}",
-        "text": "*Os passos de Dain, que ecoavam no corredor, se afastam de vez na direção do bebedouro.*"
     },
     "lunch3_seo_focus_2": {
         "name": "Seoyeon",
@@ -254,10 +242,6 @@
     "lunch3_expose_14": {
         "name": "Minsu",
         "text": "*Minsu segura o meu ombro e sussurra, sem acreditar.* Cara, você pirou de vez? Quantos encontros você empilhou num fim de semana só?"
-    },
-    "lunch3_expose_15": {
-        "name": "{name}",
-        "text": "*Engulo em seco e só mexo os lábios. Até Minsu sacode a cabeça e pousa os hashis.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",

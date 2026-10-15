@@ -1,0 +1,1095 @@
+{
+  "date": "2026-10-15",
+  "scope": "Finish inherited night messenger UI and Day 2-3 scene trimming on main",
+  "sourceBaseline": "ab4d7732b40388739410655b4e3fae9d495b9338",
+  "runtimeFixes": [
+    "Explicit scene/sprite contact takes priority over the previously open chat",
+    "Bubble-only scenes hide the inline-styled name tag and clear stale text before typing",
+    "School notices and the remaining low-affinity Seoyeon phone call stay in the dialogue box",
+    "Day-four player replies carry messengerContact so a direct save restore opens the correct room",
+    "ResizeObserver sizes the phone above narration and choices; a fully constrained choice view hides the phone until controls close or the viewport grows",
+    "Internal asset and service-worker cache versions advance without changing the visible version label"
+  ],
+  "scenario": {
+    "languages": {
+      "de": [
+        "after2_dain_11b",
+        "after2_dain_end_first",
+        "after2_dain_return",
+        "after2_seo_return",
+        "after2_yuna_return",
+        "after3_reject_for_dain_2b",
+        "after3_reject_for_dain_3b",
+        "after3_reject_for_yuna_walk_gym",
+        "haeun_warn_2b",
+        "haeun_warn_7_b",
+        "hidden_homeroom_d3_4_e",
+        "hidden_homeroom_d3_4_f",
+        "hidden_homeroom_d3_4_h",
+        "hidden_nurse_d2_return",
+        "hidden_nurse_d3_5_l",
+        "hidden_nurse_d3_8_b",
+        "hidden_nurse_d3_8_g",
+        "hidden_nurse_d3_9_e",
+        "lunch2_dain_10",
+        "lunch2_dain_13_b",
+        "lunch2_dain_end_b2",
+        "lunch2_dain_end_d2",
+        "lunch2_dain_end_h",
+        "lunch2_dain_end_ins8_first",
+        "lunch2_dain_end_k",
+        "lunch2_dain_end_nurse_short2",
+        "lunch2_dain_end_nurse_short3",
+        "lunch2_yuna_c1_14",
+        "lunch3_expose_15",
+        "lunch3_meal_11",
+        "lunch3_meal_8",
+        "lunch3_seo_focus_1",
+        "morning2_break_1",
+        "morning2_dain_react_2",
+        "morning2_end",
+        "morning2_greet_dain_others_2",
+        "morning2_note_3",
+        "morning3_date_dain_decline_inner_2",
+        "morning3_date_intro",
+        "morning3_date_seo_accept_b",
+        "morning3_date_seo_decline_b",
+        "night3_cheat_msg_1",
+        "night3_cheat_reflect_3_b"
+      ],
+      "en": [
+        "after2_dain_11b",
+        "after2_dain_end_first",
+        "after2_dain_return",
+        "after2_seo_return",
+        "after2_yuna_return",
+        "after3_reject_for_dain_2b",
+        "after3_reject_for_dain_3b",
+        "after3_reject_for_yuna_walk_gym",
+        "haeun_warn_2b",
+        "haeun_warn_7_b",
+        "hidden_homeroom_d3_4_e",
+        "hidden_homeroom_d3_4_f",
+        "hidden_homeroom_d3_4_h",
+        "hidden_nurse_d2_return",
+        "hidden_nurse_d3_5_l",
+        "hidden_nurse_d3_8_b",
+        "hidden_nurse_d3_8_g",
+        "hidden_nurse_d3_9_e",
+        "lunch2_dain_10",
+        "lunch2_dain_13_b",
+        "lunch2_dain_end_b2",
+        "lunch2_dain_end_d2",
+        "lunch2_dain_end_h",
+        "lunch2_dain_end_ins8_first",
+        "lunch2_dain_end_k",
+        "lunch2_dain_end_nurse_short2",
+        "lunch2_dain_end_nurse_short3",
+        "lunch2_yuna_c1_14",
+        "lunch3_expose_15",
+        "lunch3_meal_11",
+        "lunch3_meal_8",
+        "lunch3_seo_focus_1",
+        "morning2_break_1",
+        "morning2_dain_react_2",
+        "morning2_end",
+        "morning2_greet_dain_others_2",
+        "morning2_note_3",
+        "morning3_date_dain_decline_inner_2",
+        "morning3_date_intro",
+        "morning3_date_seo_accept_b",
+        "morning3_date_seo_decline_b",
+        "night3_cheat_msg_1",
+        "night3_cheat_reflect_3_b"
+      ],
+      "es": [
+        "after2_dain_11b",
+        "after2_dain_end_first",
+        "after2_dain_return",
+        "after2_seo_return",
+        "after2_yuna_return",
+        "after3_reject_for_dain_2b",
+        "after3_reject_for_dain_3b",
+        "after3_reject_for_yuna_walk_gym",
+        "haeun_warn_2b",
+        "haeun_warn_7_b",
+        "hidden_homeroom_d3_4_e",
+        "hidden_homeroom_d3_4_f",
+        "hidden_homeroom_d3_4_h",
+        "hidden_nurse_d2_return",
+        "hidden_nurse_d3_5_l",
+        "hidden_nurse_d3_8_b",
+        "hidden_nurse_d3_8_g",
+        "hidden_nurse_d3_9_e",
+        "lunch2_dain_10",
+        "lunch2_dain_13_b",
+        "lunch2_dain_end_b2",
+        "lunch2_dain_end_d2",
+        "lunch2_dain_end_h",
+        "lunch2_dain_end_ins8_first",
+        "lunch2_dain_end_k",
+        "lunch2_dain_end_nurse_short2",
+        "lunch2_dain_end_nurse_short3",
+        "lunch2_yuna_c1_14",
+        "lunch3_expose_15",
+        "lunch3_meal_11",
+        "lunch3_meal_8",
+        "lunch3_seo_focus_1",
+        "morning2_break_1",
+        "morning2_dain_react_2",
+        "morning2_end",
+        "morning2_greet_dain_others_2",
+        "morning2_note_3",
+        "morning3_date_dain_decline_inner_2",
+        "morning3_date_intro",
+        "morning3_date_seo_accept_b",
+        "morning3_date_seo_decline_b",
+        "night3_cheat_msg_1",
+        "night3_cheat_reflect_3_b"
+      ],
+      "fr": [
+        "after2_dain_11b",
+        "after2_dain_end_first",
+        "after2_dain_return",
+        "after2_seo_return",
+        "after2_yuna_return",
+        "after3_reject_for_dain_2b",
+        "after3_reject_for_dain_3b",
+        "after3_reject_for_yuna_walk_gym",
+        "haeun_warn_2b",
+        "haeun_warn_7_b",
+        "hidden_homeroom_d3_4_e",
+        "hidden_homeroom_d3_4_f",
+        "hidden_homeroom_d3_4_h",
+        "hidden_nurse_d2_return",
+        "hidden_nurse_d3_5_l",
+        "hidden_nurse_d3_8_b",
+        "hidden_nurse_d3_8_g",
+        "hidden_nurse_d3_9_e",
+        "lunch2_dain_10",
+        "lunch2_dain_13_b",
+        "lunch2_dain_end_b2",
+        "lunch2_dain_end_d2",
+        "lunch2_dain_end_h",
+        "lunch2_dain_end_ins8_first",
+        "lunch2_dain_end_k",
+        "lunch2_dain_end_nurse_short2",
+        "lunch2_dain_end_nurse_short3",
+        "lunch2_yuna_c1_14",
+        "lunch3_expose_15",
+        "lunch3_meal_11",
+        "lunch3_meal_8",
+        "lunch3_seo_focus_1",
+        "morning2_break_1",
+        "morning2_dain_react_2",
+        "morning2_end",
+        "morning2_greet_dain_others_2",
+        "morning2_note_3",
+        "morning3_date_dain_decline_inner_2",
+        "morning3_date_intro",
+        "morning3_date_seo_accept_b",
+        "morning3_date_seo_decline_b",
+        "night3_cheat_msg_1",
+        "night3_cheat_reflect_3_b"
+      ],
+      "ja": [
+        "after2_dain_11b",
+        "after2_dain_end_first",
+        "after2_dain_return",
+        "after2_seo_return",
+        "after2_yuna_return",
+        "after3_reject_for_dain_2b",
+        "after3_reject_for_dain_3b",
+        "after3_reject_for_yuna_walk_gym",
+        "haeun_warn_2b",
+        "haeun_warn_7_b",
+        "hidden_homeroom_d3_4_e",
+        "hidden_homeroom_d3_4_f",
+        "hidden_homeroom_d3_4_h",
+        "hidden_nurse_d2_return",
+        "hidden_nurse_d3_5_l",
+        "hidden_nurse_d3_8_b",
+        "hidden_nurse_d3_8_g",
+        "hidden_nurse_d3_9_e",
+        "lunch2_dain_10",
+        "lunch2_dain_13_b",
+        "lunch2_dain_end_b2",
+        "lunch2_dain_end_d2",
+        "lunch2_dain_end_h",
+        "lunch2_dain_end_ins8_first",
+        "lunch2_dain_end_k",
+        "lunch2_dain_end_nurse_short2",
+        "lunch2_dain_end_nurse_short3",
+        "lunch2_yuna_c1_14",
+        "lunch3_expose_15",
+        "lunch3_meal_11",
+        "lunch3_meal_8",
+        "lunch3_seo_focus_1",
+        "morning2_break_1",
+        "morning2_dain_react_2",
+        "morning2_end",
+        "morning2_greet_dain_others_2",
+        "morning2_note_3",
+        "morning3_date_dain_decline_inner_2",
+        "morning3_date_intro",
+        "morning3_date_seo_accept_b",
+        "morning3_date_seo_decline_b",
+        "night3_cheat_msg_1",
+        "night3_cheat_reflect_3_b"
+      ],
+      "ko": [
+        "after2_dain_11b",
+        "after2_dain_end_first",
+        "after2_dain_return",
+        "after2_seo_return",
+        "after2_yuna_return",
+        "after3_reject_for_dain_2b",
+        "after3_reject_for_dain_3b",
+        "after3_reject_for_yuna_walk_gym",
+        "haeun_warn_2b",
+        "haeun_warn_7_b",
+        "hidden_homeroom_d3_4_e",
+        "hidden_homeroom_d3_4_f",
+        "hidden_homeroom_d3_4_h",
+        "hidden_nurse_d2_return",
+        "hidden_nurse_d3_5_l",
+        "hidden_nurse_d3_8_b",
+        "hidden_nurse_d3_8_g",
+        "hidden_nurse_d3_9_e",
+        "lunch2_dain_10",
+        "lunch2_dain_13_b",
+        "lunch2_dain_end_b2",
+        "lunch2_dain_end_d2",
+        "lunch2_dain_end_h",
+        "lunch2_dain_end_ins8_first",
+        "lunch2_dain_end_k",
+        "lunch2_dain_end_nurse_short2",
+        "lunch2_dain_end_nurse_short3",
+        "lunch2_yuna_c1_14",
+        "lunch3_expose_15",
+        "lunch3_meal_11",
+        "lunch3_meal_8",
+        "lunch3_seo_focus_1",
+        "morning2_break_1",
+        "morning2_dain_react_2",
+        "morning2_end",
+        "morning2_greet_dain_others_2",
+        "morning2_note_3",
+        "morning3_date_dain_decline_inner_2",
+        "morning3_date_intro",
+        "morning3_date_seo_accept_b",
+        "morning3_date_seo_decline_b",
+        "night3_cheat_msg_1",
+        "night3_cheat_reflect_3_b"
+      ],
+      "pt": [
+        "after2_dain_11b",
+        "after2_dain_end_first",
+        "after2_dain_return",
+        "after2_seo_return",
+        "after2_yuna_return",
+        "after3_reject_for_dain_2b",
+        "after3_reject_for_dain_3b",
+        "after3_reject_for_yuna_walk_gym",
+        "haeun_warn_2b",
+        "haeun_warn_7_b",
+        "hidden_homeroom_d3_4_e",
+        "hidden_homeroom_d3_4_f",
+        "hidden_homeroom_d3_4_h",
+        "hidden_nurse_d2_return",
+        "hidden_nurse_d3_5_l",
+        "hidden_nurse_d3_8_b",
+        "hidden_nurse_d3_8_g",
+        "hidden_nurse_d3_9_e",
+        "lunch2_dain_10",
+        "lunch2_dain_13_b",
+        "lunch2_dain_end_b2",
+        "lunch2_dain_end_d2",
+        "lunch2_dain_end_h",
+        "lunch2_dain_end_ins8_first",
+        "lunch2_dain_end_k",
+        "lunch2_dain_end_nurse_short2",
+        "lunch2_dain_end_nurse_short3",
+        "lunch2_yuna_c1_14",
+        "lunch3_expose_15",
+        "lunch3_meal_11",
+        "lunch3_meal_8",
+        "lunch3_seo_focus_1",
+        "morning2_break_1",
+        "morning2_dain_react_2",
+        "morning2_end",
+        "morning2_greet_dain_others_2",
+        "morning2_note_3",
+        "morning3_date_dain_decline_inner_2",
+        "morning3_date_intro",
+        "morning3_date_seo_accept_b",
+        "morning3_date_seo_decline_b",
+        "night3_cheat_msg_1",
+        "night3_cheat_reflect_3_b"
+      ],
+      "zh": [
+        "after2_dain_11b",
+        "after2_dain_end_first",
+        "after2_dain_return",
+        "after2_seo_return",
+        "after2_yuna_return",
+        "after3_reject_for_dain_2b",
+        "after3_reject_for_dain_3b",
+        "after3_reject_for_yuna_walk_gym",
+        "haeun_warn_2b",
+        "haeun_warn_7_b",
+        "hidden_homeroom_d3_4_e",
+        "hidden_homeroom_d3_4_f",
+        "hidden_homeroom_d3_4_h",
+        "hidden_nurse_d2_return",
+        "hidden_nurse_d3_5_l",
+        "hidden_nurse_d3_8_b",
+        "hidden_nurse_d3_8_g",
+        "hidden_nurse_d3_9_e",
+        "lunch2_dain_10",
+        "lunch2_dain_13_b",
+        "lunch2_dain_end_b2",
+        "lunch2_dain_end_d2",
+        "lunch2_dain_end_h",
+        "lunch2_dain_end_ins8_first",
+        "lunch2_dain_end_k",
+        "lunch2_dain_end_nurse_short2",
+        "lunch2_dain_end_nurse_short3",
+        "lunch2_yuna_c1_14",
+        "lunch3_expose_15",
+        "lunch3_meal_11",
+        "lunch3_meal_8",
+        "lunch3_seo_focus_1",
+        "morning2_break_1",
+        "morning2_dain_react_2",
+        "morning2_end",
+        "morning2_greet_dain_others_2",
+        "morning2_note_3",
+        "morning3_date_dain_decline_inner_2",
+        "morning3_date_intro",
+        "morning3_date_seo_accept_b",
+        "morning3_date_seo_decline_b",
+        "night3_cheat_msg_1",
+        "night3_cheat_reflect_3_b"
+      ]
+    },
+    "removed": [
+      {
+        "id": "morning2_greet_dain_others_2",
+        "target": "morning2_yuna_seen"
+      },
+      {
+        "id": "morning2_note_3",
+        "target": "morning2_seo_1"
+      },
+      {
+        "id": "morning2_break_1",
+        "target": "morning2_seo_dust_1"
+      },
+      {
+        "id": "morning2_dain_react_2",
+        "target": "morning2_dain_react_3"
+      },
+      {
+        "id": "morning2_end",
+        "target": "lunch2_start"
+      },
+      {
+        "id": "lunch2_dain_10",
+        "target": "lunch2_dain_11"
+      },
+      {
+        "id": "lunch2_dain_13_b",
+        "target": "lunch2_dain_choice"
+      },
+      {
+        "id": "lunch2_dain_end_h",
+        "target": "lunch2_dain_end_i"
+      },
+      {
+        "id": "lunch2_dain_end_ins8_first",
+        "target": "lunch2_dain_end_i"
+      },
+      {
+        "id": "lunch2_dain_end_k",
+        "target": "lunch2_dain_end_l"
+      },
+      {
+        "id": "lunch2_dain_end_b2",
+        "target": "lunch2_dain_end_c2"
+      },
+      {
+        "id": "lunch2_dain_end_d2",
+        "target": "after2_start"
+      },
+      {
+        "id": "lunch2_dain_end_nurse_short2",
+        "target": "after2_start"
+      },
+      {
+        "id": "lunch2_dain_end_nurse_short3",
+        "target": "after2_start"
+      },
+      {
+        "id": "lunch2_yuna_c1_14",
+        "target": "lunch2_yuna_end"
+      },
+      {
+        "id": "hidden_nurse_d2_return",
+        "target": "after2_choice"
+      },
+      {
+        "id": "after2_dain_11b",
+        "target": "after2_dain_12"
+      },
+      {
+        "id": "after2_dain_end_first",
+        "target": "after2_dain_end_b"
+      },
+      {
+        "id": "after2_dain_return",
+        "target": "after2_group_dain_companion"
+      },
+      {
+        "id": "after2_seo_return",
+        "target": "after2_group_seoyeon_companion"
+      },
+      {
+        "id": "after2_yuna_return",
+        "target": "after2_group_yuna_companion"
+      },
+      {
+        "id": "morning3_date_intro",
+        "target": "morning3_date_intro_b"
+      },
+      {
+        "id": "hidden_homeroom_d3_4_e",
+        "target": "hidden_homeroom_d3_4_g"
+      },
+      {
+        "id": "hidden_homeroom_d3_4_f",
+        "target": "hidden_homeroom_d3_4_g"
+      },
+      {
+        "id": "hidden_homeroom_d3_4_h",
+        "target": "hidden_homeroom_d3_choice"
+      },
+      {
+        "id": "hidden_nurse_d3_5_l",
+        "target": "hidden_nurse_d3_5_m"
+      },
+      {
+        "id": "hidden_nurse_d3_8_b",
+        "target": "hidden_nurse_d3_8_c"
+      },
+      {
+        "id": "hidden_nurse_d3_8_g",
+        "target": "hidden_nurse_d3_8_h"
+      },
+      {
+        "id": "hidden_nurse_d3_9_e",
+        "target": "hidden_nurse_d3_9_f"
+      },
+      {
+        "id": "morning3_date_seo_accept_b",
+        "target": "morning3_date_dain_1"
+      },
+      {
+        "id": "morning3_date_seo_decline_b",
+        "target": "morning3_date_dain_1"
+      },
+      {
+        "id": "morning3_date_dain_decline_inner_2",
+        "target": "morning3_date_yuna_1"
+      },
+      {
+        "id": "lunch3_meal_8",
+        "target": "lunch3_meal_10"
+      },
+      {
+        "id": "lunch3_meal_11",
+        "target": "lunch3_choice"
+      },
+      {
+        "id": "lunch3_seo_focus_1",
+        "target": "lunch3_seo_focus_2"
+      },
+      {
+        "id": "lunch3_expose_15",
+        "target": "lunch3_expose_choice"
+      },
+      {
+        "id": "after3_reject_for_yuna_walk_gym",
+        "target": "after3_reject_for_yuna_3"
+      },
+      {
+        "id": "after3_reject_for_dain_2b",
+        "target": "after3_reject_for_dain_3"
+      },
+      {
+        "id": "after3_reject_for_dain_3b",
+        "target": "after3_rival_yuna_done"
+      },
+      {
+        "id": "haeun_warn_2b",
+        "target": "haeun_warn_3"
+      },
+      {
+        "id": "haeun_warn_7_b",
+        "target": "haeun_warn_7_c"
+      },
+      {
+        "id": "night3_cheat_msg_1",
+        "target": "night3_cheat_msg_2"
+      },
+      {
+        "id": "night3_cheat_reflect_3_b",
+        "target": "night3_cheat_reflect_3_c"
+      }
+    ],
+    "modifiedSceneFields": [
+      {
+        "id": "morning2_greet_dain_others_yuna",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning2_note_2",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning2_break_transition",
+        "fields": [
+          "branches"
+        ]
+      },
+      {
+        "id": "morning2_break_transition_b",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning2_dain_react_1",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning2_dain_react_6",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_dain_9",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_dain_13",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_dain_end_g",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_dain_end_ins7_first",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_dain_end_j",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_dain_end_z",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_dain_end_c2",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_dain_end_nurse_short1",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch2_yuna_c1_12",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "hidden_nurse_d2_freetalk",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_dain_9_f",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_dain_freetalk",
+        "fields": [
+          "branches"
+        ]
+      },
+      {
+        "id": "after2_dain_rival_yuna_high",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_dain_rival_yuna_mid",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_dain_rival_yuna_low",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_seo_rival_yuna_high",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_seo_rival_yuna_mid",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_seo_rival_yuna_low",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_yuna_rival_seo_high",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_yuna_rival_seo_mid",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_yuna_rival_seo_low",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_dain_rival_yuna_neg",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_seo_rival_yuna_neg",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after2_yuna_rival_seo_neg",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning3_react_seo_2",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning3_react_yuna_2_b",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning3_react_dain_2",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "hidden_homeroom_d3_4_d",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "hidden_homeroom_d3_4_g",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "hidden_nurse_d3_5_k",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "hidden_nurse_d3_8",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "hidden_nurse_d3_8_f",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "hidden_nurse_d3_9_d",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning3_date_seo_accept",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning3_date_seo_decline",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "morning3_date_dain_decline_narr",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch3_meal_7_b",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch3_meal_10_b",
+        "fields": [
+          "branches"
+        ]
+      },
+      {
+        "id": "lunch3_meal_10_c",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch3_meal_10_d",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch3_meal_10_e",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "lunch3_seo_witness_choice",
+        "fields": [
+          "choices"
+        ]
+      },
+      {
+        "id": "lunch3_expose_14",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "after3_rival_dain_promised_dispatch",
+        "fields": [
+          "branches"
+        ]
+      },
+      {
+        "id": "after3_rival_yuna_promised_dispatch",
+        "fields": [
+          "branches"
+        ]
+      },
+      {
+        "id": "after3_reject_for_dain_3",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "haeun_warn_2_b",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "haeun_warn_7",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "night3_start_2",
+        "fields": [
+          "branches"
+        ]
+      },
+      {
+        "id": "night3_cheat_reflect_2",
+        "fields": [
+          "next"
+        ]
+      },
+      {
+        "id": "day4_waited_seoyeon_promise",
+        "fields": [
+          "messenger",
+          "messengerContact"
+        ]
+      },
+      {
+        "id": "day4_waited_dain_promise",
+        "fields": [
+          "messenger",
+          "messengerContact"
+        ]
+      },
+      {
+        "id": "day4_waited_yuna_promise",
+        "fields": [
+          "messenger",
+          "messengerContact"
+        ]
+      },
+      {
+        "id": "wall_seo_pre_high_1",
+        "fields": [
+          "messenger"
+        ]
+      },
+      {
+        "id": "wall_seo_pre_high_2",
+        "fields": [
+          "messenger"
+        ]
+      },
+      {
+        "id": "wall_seo_pre_low_2",
+        "fields": [
+          "messenger"
+        ]
+      },
+      {
+        "id": "wall_seo_2",
+        "fields": [
+          "messenger"
+        ]
+      }
+    ]
+  },
+  "koreanCommentReview": "night-messenger-korean-comments-20261015.json",
+  "visualVerification": {
+    "viewports": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        568
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        568,
+        320
+      ]
+    ],
+    "messenger": "Incoming/outgoing bubbles, narration, receipts and reply choices inspected in the browser; no control overlap",
+    "unchangedUi": "Home, gallery, daytime dialogue, school notices and phone calls compared at desktop and mobile widths; no visible change",
+    "comparison": "13 of 14 image pairs are pixel-identical. One mobile rounded dialogue corner differs by 2 pixels (maximum RGB channel delta 3/255). No text, geometry, colors, art or interaction change observed; raw results retained below.",
+    "pixels": [
+      {
+        "case": "1440-classroom_dain_1",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null
+      },
+      {
+        "case": "1440-gallery",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null
+      },
+      {
+        "case": "1440-home",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null
+      },
+      {
+        "case": "1440-morning2_seo_1",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null
+      },
+      {
+        "case": "1440-night_homeroom_msg_1",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null
+      },
+      {
+        "case": "1440-wall_seo_pre_high_1",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null
+      },
+      {
+        "case": "1440-wall_seo_pre_low_2",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null
+      },
+      {
+        "case": "390-classroom_dain_1",
+        "changedPixels": 2,
+        "totalPixels": 329160,
+        "bounds": [
+          20,
+          723,
+          23,
+          724
+        ]
+      },
+      {
+        "case": "390-gallery",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null
+      },
+      {
+        "case": "390-home",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null
+      },
+      {
+        "case": "390-morning2_seo_1",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null
+      },
+      {
+        "case": "390-night_homeroom_msg_1",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null
+      },
+      {
+        "case": "390-wall_seo_pre_high_1",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null
+      },
+      {
+        "case": "390-wall_seo_pre_low_2",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null
+      }
+    ],
+    "screenshots": "Reproducible via tests/e2e/night-messenger.spec.cjs; review captures retained locally under _workspace/ui-comparison and test-results"
+  },
+  "validation": {
+    "npmTest": "PASS (exit 0)",
+    "textCheck": "PASS (exit 0)",
+    "scenarioCheck": "PASS (3393 scenes)",
+    "cacheCheck": "PASS (exit 0)",
+    "messengerE2E": "PASS (21 tests, including 5 four-choice and rotation cases)",
+    "fullE2E": {
+      "initialRun": {
+        "cases": 328,
+        "passed": 325,
+        "failed": 3
+      },
+      "failureCause": "Three locale assertions still expected night messages in #message; updated to verify the exact localized bubble and an empty dialogue message",
+      "finalTargetedRun": {
+        "cases": 34,
+        "passed": 34,
+        "failed": 0,
+        "scope": "All 13 story-continuity cases and all 21 messenger cases"
+      },
+      "verifiedUniqueCases": 333
+    },
+    "build": "PASS (exit 0), metadata already synchronized, 482 public runtime files",
+    "afterUpstreamIntegration": {
+      "unitTests": "6/6 passed (upstream timeout regression plus messenger unit cases)",
+      "browserTests": "26/26 passed (log delivery and all messenger cases)",
+      "build": "PASS",
+      "cacheCheck": "PASS"
+    }
+  },
+  "deployment": {
+    "target": "https://cupid.archerlab.dev",
+    "branch": "main",
+    "method": "Automatic Cloudflare Pages deployment on git push",
+    "assetVersion": "2.9.320",
+    "serviceWorkerCacheVersion": "cupid-v3.3.239"
+  },
+  "integratedUpstream": {
+    "commit": "7692b6adf5097b657f1f23c44e25796d75d7bdcc",
+    "scope": "Concurrent log response timeout fix preserved by rebasing the unpublished commit on main",
+    "versionCollision": "Advanced internal cache versions again because upstream already published 2.9.319 / cupid-v3.3.238"
+  }
+}

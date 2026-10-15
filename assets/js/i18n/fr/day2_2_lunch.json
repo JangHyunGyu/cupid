@@ -281,10 +281,6 @@
         "name": "{name}",
         "text": "Y a du monde, alors on mange adossés à la fenêtre, ici. *Le sachet de pain encore chaud à la main, on se poste côte à côte près de la porte vitrée. Plus loin dans le couloir, Seoyeon arrive.*"
     },
-    "lunch2_dain_10": {
-        "name": "{name}",
-        "text": "*Derrière la vitre, Seoyeon nous voit, croise mon regard une fois, puis passe. Le pain coincé dans ma gorge ne descend pas.*"
-    },
     "lunch2_dain_11": {
         "name": "Dain",
         "text": "Hé, c'était quoi, la présidente, à l'instant ? Pourquoi elle nous a fixés comme ça en passant ?"
@@ -296,10 +292,6 @@
     "lunch2_dain_13": {
         "name": "Dain",
         "text": "Hmm, louche. Tu serais pas devenu super proche de la présidente, dans mon dos ?"
-    },
-    "lunch2_dain_13_b": {
-        "name": "{name}",
-        "text": "*Dain, l'air de bouder, mord un gros morceau de pain soboro. Des miettes sucrées restent au bord de ses lèvres rosies.*"
     },
     "lunch2_dain_choice": {
         "name": "Dain",
@@ -362,17 +354,9 @@
         "name": "Infirmière",
         "text": "Deux jours d'affilée ? Tu comptes déjà devenir un habitué de mon infirmerie ?"
     },
-    "lunch2_dain_end_h": {
-        "name": "{name}",
-        "text": "*La main fine de l'infirmière, dans un gant de latex, me prend le poignet et chasse d'abord, avec soin, la terre autour de la plaie.*"
-    },
     "lunch2_dain_end_ins7_first": {
         "name": "Infirmière",
         "text": "Courir sur un terrain que tu ne connais pas, ça arrive de se blesser. Viens, on désinfecte d'abord."
-    },
-    "lunch2_dain_end_ins8_first": {
-        "name": "{name}",
-        "text": "*L'infirmière me soutient le bras de sa main gantée et chasse d'abord, avec soin, la poussière autour du coude.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -381,10 +365,6 @@
     "lunch2_dain_end_j": {
         "name": "Infirmière",
         "text": "Quand le désinfectant touche, ça pique un peu. Relâche l'épaule et le bras."
-    },
-    "lunch2_dain_end_k": {
-        "name": "{name}",
-        "text": "*Le coton imbibé de désinfectant froid passe sur la plaie, et la peau à l'intérieur du coude picote net.*"
     },
     "lunch2_dain_end_l": {
         "name": "Infirmière",
@@ -440,29 +420,13 @@
         "name": "Infirmière",
         "text": "Si un coin se soulève, ou si ça suinte, tu viens me voir tout de suite. Si tout va bien, tu peux le laisser comme ça."
     },
-    "lunch2_dain_end_b2": {
-        "name": "{name}",
-        "text": "*L'infirmière prend un stylo plume et note, d'une écriture nette, sur la fiche de soins l'heure où elle a posé le pansement.*"
-    },
     "lunch2_dain_end_c2": {
         "name": "Infirmière",
         "text": "S'il te lance pendant le cours de sport qui reste, ne serre pas les dents : dis-le au professeur. À part ça, passe pendant les pauses."
     },
-    "lunch2_dain_end_d2": {
-        "name": "{name}",
-        "text": "*Dans la dernière case de remarques de la fiche, une note nette s'ajoute : « Flexion du coude : confirmée. »*"
-    },
     "lunch2_dain_end_nurse_short1": {
         "name": "Infirmière",
         "text": "Voilà, c'est fait. La prochaine fois, ne cours pas en ne regardant que le ballon. Regarde d'abord les gens autour de toi."
-    },
-    "lunch2_dain_end_nurse_short2": {
-        "name": "{name}",
-        "text": "*Je sors de l'infirmerie en passant la main sur le bras au pansement neuf. Même le coude plié, là où les doigts de l'infirmière sont passés, le pansement ne se soulève pas.*"
-    },
-    "lunch2_dain_end_nurse_short3": {
-        "name": "{name}",
-        "text": "*La sonnerie de fin de cours sonne longtemps. Le pansement, un peu pris dans le bord de la manche, revient doucement à sa place.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",
@@ -631,10 +595,6 @@
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
         "text": "...Oui. Ça suffit. On lit, chacun de son côté. *Du bout des doigts, elle lisse lentement le coin froissé de la page.*"
-    },
-    "lunch2_yuna_c1_14": {
-        "name": "{name}",
-        "text": "*Incapable de tourner les pages pendant un moment, Yuna ne fait que lire du bout des doigts les lettres dorées gravées sur le vieux dos du livre.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",

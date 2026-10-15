@@ -46,10 +46,6 @@
         "name": "{name}",
         "text": "*In the seat behind me, the tip of Yuna's fountain pen pauses and leaves a small violet ink dot in the middle of a white note.*"
     },
-    "morning2_greet_dain_others_2": {
-        "name": "{name}",
-        "text": "*Right after the classroom's front door shuts, one clear tap of a clipboard corner rings out from the hall.*"
-    },
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
@@ -82,10 +78,6 @@
     "morning2_note_2": {
         "name": "{name}",
         "text": "*'Come to the library annex at lunch. — Yuna'*"
-    },
-    "morning2_note_3": {
-        "name": "{name}",
-        "text": "*The same pale lavender ink as the note I got yesterday. Below the last line, five characters are written clear: “Library annex.”*"
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
@@ -142,10 +134,6 @@
     "morning2_break_transition_b": {
         "name": "{name}",
         "text": "*At the classroom door, I meet the eyes of the homeroom teacher passing by, the attendance book hugged to her chest.*"
-    },
-    "morning2_break_1": {
-        "name": "{name}",
-        "text": "*Seoyeon's clipboard taps the corner of my desk and drops away. Before I have room to answer, she slips out into the hall.*"
     },
     "hidden_homeroom_d2_1": {
         "name": "Homeroom Teacher",
@@ -315,10 +303,6 @@
         "name": "{name}",
         "text": "*The dust is clearly gone, but the spot on my shoulder where Seoyeon's fingertips touched still itches, so I fix my grip on the bag strap twice.*"
     },
-    "morning2_dain_react_2": {
-        "name": "{name}",
-        "text": "*The moment Seoyeon resettles the clipboard against her and walks off down the hall, Dain's voice comes in from behind me.*"
-    },
     "morning2_dain_react_3": {
         "name": "Dain",
         "text": "Hey, what was that just now? The student council president touched your shoulder, right?"
@@ -340,10 +324,6 @@
         "text": "*She turns her chair toward me.* Anything else you wanted to ask?",
         "context": "It is the morning of Day 2, just after a counseling meeting in the faculty office. The transfer student happened to glimpse a long manuscript in the homeroom teacher's drawer but does not yet know its contents or history. They are a teacher and student beginning to build trust. Do not invent the manuscript's secret or cross the teacher-student boundary.",
         "personality": "The homeroom teacher is calm, responsible, and listens before she advises. Her embarrassment about the personal manuscript appears in a brief hesitation, but she does not place emotional responsibility on the student and keeps a warm, appropriate boundary."
-    },
-    "morning2_end": {
-        "name": "{name}",
-        "text": "*According to Minsu, Seoyeon was someone you could barely meet eyes with once in the hall even after 1 year here, but today she came all the way to my classroom door, brushed my shoulder, and left.*"
     },
     "hidden_homeroom_d2_choice1_trap": {
         "name": "Homeroom Teacher",

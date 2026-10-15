@@ -101,10 +101,6 @@
         "name": "{name}",
         "text": "*Quando fecho os olhos, volta o fôlego ofegante da Dain no banco do ginásio vazio, segurando firme a barra da minha camisa e se enterrando no meu peito.*"
     },
-    "night3_cheat_msg_1": {
-        "name": "{name}",
-        "text": "*Assim que entro no quarto, sem conseguir nem acender a luz, ligo a tela do celular com a mão tremendo. A palma arde das vibrações que vieram uma atrás da outra.*"
-    },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
         "text": "Não dá para sorrir assim só para mim? Não para a Dain e a Yuna."
@@ -205,10 +201,6 @@
     "night3_cheat_reflect_2": {
         "name": "{name}",
         "text": "*Na foto da turma, Sojeong olha para a câmera sem força, e eu, parado bem ao lado, já naquela época desvio o olhar para longe, como quem evita um problema.*"
-    },
-    "night3_cheat_reflect_3_b": {
-        "name": "{name}",
-        "text": "*De volta à lista de conversas, a frase salva em rascunho, que não enviei, continua em vermelho.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",

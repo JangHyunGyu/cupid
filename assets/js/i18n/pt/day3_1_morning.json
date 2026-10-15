@@ -236,10 +236,6 @@
         "name": "Yuna",
         "text": "*De cabeça baixa, Yuna traça no canto do caderno uma linha reta, curta e forte.*"
     },
-    "morning3_date_intro": {
-        "name": "{name}",
-        "text": "*O sinal do fim da 1ª aula tocou. Os olhares que não se acalmaram rondam a minha carteira o intervalo inteiro.*"
-    },
     "morning3_date_intro_b": {
         "name": "{name}",
         "text": "*Saio ao corredor um instante, para tomar fôlego. Como se estivesse à espera, Seoyeon chega ao meu lado e acerta o passo.*"
@@ -272,21 +268,9 @@
         "name": "Professora",
         "text": "*A voz desce meio tom.* O que você está olhando com tanta atenção? No intervalo, em vez de ficar com os colegas, por que veio até uma sala vazia?"
     },
-    "hidden_homeroom_d3_4_e": {
-        "name": "{name}",
-        "text": "*Um maço velho de folhas de manuscrito, escondido debaixo do diário de classe. Eu pergunto direto, ou finjo que não vi?*"
-    },
-    "hidden_homeroom_d3_4_f": {
-        "name": "{name}",
-        "text": "*Meus passos param bem diante da pilha na mesa: diário de classe, boletins e registros escolares.*"
-    },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
         "text": "*No canto da primeira folha de manuscrito, em vermelho: «Em espera». Quando o meu olhar chega nessas letras, as veias no dorso da mão da professora saltam de leve.*"
-    },
-    "hidden_homeroom_d3_4_h": {
-        "name": "{name}",
-        "text": "*Eu podia dar uma desculpa qualquer e sair. Mas a professora, em vez de guardar o manuscrito na gaveta, só mexe na tampa da caneta-tinteiro.*"
     },
     "hidden_homeroom_d3_choice": {
         "name": "{name}",
@@ -530,10 +514,6 @@
         "name": "Enfermeira",
         "text": "*A enfermeira solta uma risada baixa.* Para quem insiste que não é, está tudo escrito no seu rosto."
     },
-    "hidden_nurse_d3_5_l": {
-        "name": "{name}",
-        "text": "*Fico sem palavras e só olho as ondas no copo de papel quente, entre as mãos.*"
-    },
     "hidden_nurse_d3_5_m": {
         "name": "Enfermeira",
         "text": "Não sei se isso entra no serviço oficial da enfermaria, mas hoje, só hoje, eu escuto você. A maca está vazia, por acaso."
@@ -608,10 +588,6 @@
         "name": "Enfermeira",
         "text": "Então você também fala com franqueza, primeiro, o que consegue aguentar. Não abraça tudo para ser uma boa pessoa para todo mundo e sofre sozinho."
     },
-    "hidden_nurse_d3_8_b": {
-        "name": "{name}",
-        "text": "*Como se tivesse acertado no ponto, o lado do copo de papel na minha mão afunda no formato dos meus dedos.*"
-    },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
         "text": "Obrigado pelo conselho, senhora."
@@ -627,10 +603,6 @@
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
         "text": "*Levanto e seguro a maçaneta da porta da enfermaria. Quando ouço a gaveta abrir atrás de mim, o canto do caderno verde-claro volta à cabeça.*"
-    },
-    "hidden_nurse_d3_8_g": {
-        "name": "{name}",
-        "text": "*Aperto com a unha a ponta solta do curativo no cotovelo. Além da cortina meio fechada, o crachá «Enfermeira escolar» da enfermeira balança, apagado.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",
@@ -673,10 +645,6 @@
         "name": "Enfermeira",
         "text": "Claro, antes disso eu com certeza combino com você a quem contar e até onde."
     },
-    "hidden_nurse_d3_9_e": {
-        "name": "{name}",
-        "text": "*A enfermeira empurra devagar, até a minha frente, a tabela de agendamento que está na mesa.*"
-    },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
         "text": "*Na tabela, os horários livres da enfermaria e da orientação estão lado a lado. Pego a caneta e faço um círculo, em silêncio, num espaço vazio.*"
@@ -709,17 +677,9 @@
         "name": "{name}",
         "text": "Sim, até o fim de semana. *Combino com Seoyeon; Dain vem até minha mesa.*"
     },
-    "morning3_date_seo_accept_b": {
-        "name": "{name}",
-        "text": "*Volto para a sala, passo uma aula, e o sinal do intervalo toca de novo.*"
-    },
     "morning3_date_seo_decline": {
         "name": "{name}",
         "text": "*Quando recuso o convite de Seoyeon, Dain volta a girar a tampa da garrafa.*"
-    },
-    "morning3_date_seo_decline_b": {
-        "name": "{name}",
-        "text": "*Volto para a sala, passo uma aula, e o sinal do intervalo toca de novo.*"
     },
     "morning3_date_dain_1": {
         "name": "Dain",
@@ -750,10 +710,6 @@
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
         "text": "Tá, vamos preparar a próxima aula! *Ela força um sorriso animado e volta para o lugar, mas, pouco antes do sinal, bate miúdo com os dedos por dentro do bolso do uniforme.*"
-    },
-    "morning3_date_dain_decline_inner_2": {
-        "name": "{name}",
-        "text": "*Dain volta para o próprio lugar, e o sinal de aviso do começo da aula corta o ar da sala.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",

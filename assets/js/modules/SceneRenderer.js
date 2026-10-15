@@ -108,6 +108,54 @@ const FORCED_SEXUAL_VIOLATION_CHARACTER_IDS = Object.freeze({
     Haeun: 'haeun'
 });
 
+// 2026-10-15 Day 2~3 중복 지문·이동 브릿지 정리로 지운 장면 ID -> 이어서 보여 줄 장면 ID
+// 예전 세이브(currentSceneId, 마지막으로 본 장면 ID)가 지운 장면을 가리켜도 같은 흐름으로 이어 붙이는 용도
+const REMOVED_SCENE_REDIRECTS = Object.freeze({
+    morning2_greet_dain_others_2: 'morning2_yuna_seen',
+    morning2_note_3: 'morning2_seo_1',
+    morning2_dain_react_2: 'morning2_dain_react_3',
+    morning2_break_1: 'morning2_seo_dust_1',
+    morning2_end: 'lunch2_start',
+    lunch2_dain_10: 'lunch2_dain_11',
+    lunch2_dain_13_b: 'lunch2_dain_choice',
+    lunch2_dain_end_h: 'lunch2_dain_end_i',
+    lunch2_dain_end_ins8_first: 'lunch2_dain_end_i',
+    lunch2_dain_end_k: 'lunch2_dain_end_l',
+    lunch2_dain_end_b2: 'lunch2_dain_end_c2',
+    lunch2_dain_end_d2: 'after2_start',
+    lunch2_dain_end_nurse_short2: 'after2_start',
+    lunch2_dain_end_nurse_short3: 'after2_start',
+    lunch2_yuna_c1_14: 'lunch2_yuna_end',
+    after2_dain_11b: 'after2_dain_12',
+    after2_dain_end_first: 'after2_dain_end_b',
+    after2_dain_return: 'after2_group_dain_companion',
+    after2_seo_return: 'after2_group_seoyeon_companion',
+    after2_yuna_return: 'after2_group_yuna_companion',
+    hidden_nurse_d2_return: 'after2_choice',
+    morning3_date_intro: 'morning3_date_intro_b',
+    morning3_date_seo_accept_b: 'morning3_date_dain_1',
+    morning3_date_seo_decline_b: 'morning3_date_dain_1',
+    morning3_date_dain_decline_inner_2: 'morning3_date_yuna_1',
+    hidden_homeroom_d3_4_e: 'hidden_homeroom_d3_4_g',
+    hidden_homeroom_d3_4_f: 'hidden_homeroom_d3_4_g',
+    hidden_homeroom_d3_4_h: 'hidden_homeroom_d3_choice',
+    hidden_nurse_d3_5_l: 'hidden_nurse_d3_5_m',
+    hidden_nurse_d3_8_b: 'hidden_nurse_d3_8_c',
+    hidden_nurse_d3_8_g: 'hidden_nurse_d3_8_h',
+    hidden_nurse_d3_9_e: 'hidden_nurse_d3_9_f',
+    lunch3_meal_8: 'lunch3_meal_10',
+    lunch3_meal_11: 'lunch3_choice',
+    lunch3_seo_focus_1: 'lunch3_seo_focus_2',
+    lunch3_expose_15: 'lunch3_expose_choice',
+    after3_reject_for_dain_2b: 'after3_reject_for_dain_3',
+    after3_reject_for_dain_3b: 'after3_rival_yuna_done',
+    after3_reject_for_yuna_walk_gym: 'after3_reject_for_yuna_3',
+    haeun_warn_2b: 'haeun_warn_3',
+    haeun_warn_7_b: 'haeun_warn_7_c',
+    night3_cheat_msg_1: 'night3_cheat_msg_2',
+    night3_cheat_reflect_3_b: 'night3_cheat_reflect_3_c'
+});
+
 class SceneRenderer {
     /**
      * @param {StateManager} stateManager - 게임 상태 관리자
@@ -160,7 +208,29 @@ class SceneRenderer {
         // 4. 루트 레벨 검색 (구버전 호환)
         if (SCENARIO[id]) return this._applyI18n(SCENARIO[id], id);
 
+        // 5. 정리 과정에서 지운 장면이면 대체 장면으로 이어 붙임
+        const aliasId = this.resolveSceneAlias(id);
+        if (aliasId !== id) return this.getScene(aliasId);
+
         return null;
+    }
+
+    /**
+     * 지운 장면 ID를 현재 시나리오의 대체 장면 ID로 변환
+     * 입력: 장면 ID -> REMOVED_SCENE_REDIRECTS를 끝까지 따라감 -> 대체 ID, 지운 장면이 아니면 입력 그대로
+     * 표가 순환하면 원래 ID를 반환해 무한 루프 방지
+     * @param {string} id - 장면 ID
+     * @returns {string} 실제로 렌더링할 장면 ID
+     */
+    resolveSceneAlias(id) {
+        let current = id;
+        const seen = new Set();
+        while (typeof current === 'string' && Object.prototype.hasOwnProperty.call(REMOVED_SCENE_REDIRECTS, current)) {
+            if (seen.has(current)) return id;
+            seen.add(current);
+            current = REMOVED_SCENE_REDIRECTS[current];
+        }
+        return current;
     }
 
     /**

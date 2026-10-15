@@ -601,6 +601,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_waited_seoyeon_promise"
     },
     "day4_waited_seoyeon_promise": {
+        "messenger": true,
+        "messengerContact": "Seoyeon",
         "background": "assets/images/background/room_my.png",
         "character": null,
         "setFlags": [
@@ -619,6 +621,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_waited_dain_promise"
     },
     "day4_waited_dain_promise": {
+        "messenger": true,
+        "messengerContact": "Dain",
         "background": "assets/images/background/room_my.png",
         "character": null,
         "setFlags": [
@@ -637,6 +641,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_waited_yuna_promise"
     },
     "day4_waited_yuna_promise": {
+        "messenger": true,
+        "messengerContact": "Yuna",
         "background": "assets/images/background/room_my.png",
         "character": null,
         "setFlags": [
@@ -678,11 +684,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "affinityBranches": [{"minAffinity":60,"next":"wall_seo_pre_high_1"},{"minAffinity":0,"next":"wall_seo_pre_low_1"},{"minAffinity":-19,"next":"wall_seo_skip"},{"minAffinity":-100,"next":"wall_seo_skip"}]
     },
     "wall_seo_pre_high_1": {
+        "messenger": false,
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
         "next": "wall_seo_pre_high_2"
     },
     "wall_seo_pre_high_2": {
+        "messenger": false,
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_sad.png","opacity":0.35}},
         "next": "wall_seo_rival_rank"
@@ -698,11 +706,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "wall_seo_pre_low_2"
     },
     "wall_seo_pre_low_2": {
+        "messenger": false,
         "background": "assets/images/background/room_my.png",
         "characters": {"center":{"src":"assets/images/characters/seyoun_sad.png","opacity":0.35}},
         "next": "wall_seo_2"
     },
     "wall_seo_2": {
+        "messenger": false,
         "background": "assets/images/background/room_my.png",
         "characters": {
             "center": {

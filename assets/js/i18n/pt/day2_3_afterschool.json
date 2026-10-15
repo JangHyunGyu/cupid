@@ -161,10 +161,6 @@
         "name": "Dain",
         "text": "Uff, uff... fim de jogo, 3 a 2! *A Dain se levanta do chão, ofegante, esfrega sem pensar o joelho direito uma vez e vira o placar.*"
     },
-    "after2_dain_11b": {
-        "name": "{name}",
-        "text": "*Deixando esfriar o calor do suor, saímos do ginásio e andamos lado a lado pela rua da frente da escola, já no pôr do sol.*"
-    },
     "after2_dain_12": {
         "name": "Dain",
         "text": "Ah, perdi por pouco! Mas esse seu jeito de bater na bola não é nada comum, hein? Você não me disse que não fazia esporte?"
@@ -202,10 +198,6 @@
         "text": "*Ao entrar na loja, ela empurra o copo de tteokbokki para perto e pega os hashis.* Hoje vou ver se você aguenta pimenta."
     },
     "after2_dain_end": {},
-    "after2_dain_end_first": {
-        "name": "{name}",
-        "text": "*A Dain põe com um baque dois copos de tteokbokki, soltando vapor, em cima da mesa e rasga de uma vez a embalagem dos hashis de madeira.*"
-    },
     "after2_dain_end_b": {
         "name": "{name}",
         "text": "*Na lanchonete da frente da escola, o cheiro doce da pasta de pimenta se espalha. A Dain pega um pedaço vermelho de massa, junta os lábios e sopra pra esfriar.*"
@@ -269,10 +261,6 @@
     "after2_dain_rival_yuna_low": {
         "name": "{name}",
         "text": "*Yuna nos cumprimenta uma vez com a cabeça pela vitrine e segue para o anexo.*"
-    },
-    "after2_dain_return": {
-        "name": "{name}",
-        "text": "*Depois de me despedir da Dain, no caminho de volta pra pegar a mochila, chego ao portão da escola, coberto por um pôr do sol forte.*"
     },
     "after2_seo_1": {
         "name": "{name}",
@@ -473,10 +461,6 @@
         "name": "Seoyeon",
         "text": "Tinha uma coisinha tipo fiapo grudada na gola."
     },
-    "after2_seo_return": {
-        "name": "{name}",
-        "text": "*Sentindo o calor que ficou na nuca e ainda faz cócegas, saio da sala do grêmio e caminho em direção ao portão.*"
-    },
     "after2_seo_rival_dain_high": {
         "name": "Dain",
         "text": "*Dain empurra um carrinho de bolas quando nos vê no fim do corredor.* O trabalho do grêmio demorou bastante. *Ela aperta o puxador e vira primeiro.*"
@@ -618,10 +602,6 @@
         "name": "{name}",
         "text": "*Yuna, já com a mão recolhida, vira a lombada para eu pegar fácil e estende o livro com cuidado.*"
     },
-    "after2_yuna_return": {
-        "name": "{name}",
-        "text": "*Lembrando do toque frio de Yuna que ficou na palma, saio pela porta do anexo, e a luz do sensor no teto do corredor escuro pisca e acende.*"
-    },
     "after2_yuna_rival_dain_high": {
         "name": "Dain",
         "text": "Eu disse para você vir ao ginásio e você foi ao anexo. Da próxima vez, venha também para o meu lado."
@@ -705,10 +685,6 @@
     "minsu_warn_5": {
         "name": "{name}",
         "text": "Do nada, que história é essa?"
-    },
-    "hidden_nurse_d2_return": {
-        "name": "{name}",
-        "text": "*Saio da enfermaria e volto à sala. A luz avermelhada de depois da aula se deita comprida sobre as carteiras vazias.*"
     },
     "hidden_nurse_d2_freetalk": {
         "name": "Enfermeira",

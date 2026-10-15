@@ -101,10 +101,6 @@
         "name": "{name}",
         "text": "*The moment I close my eyes, I feel Dain on the empty gym bench, clutching the hem of my shirt and pressing into my chest, her breath short.*"
     },
-    "night3_cheat_msg_1": {
-        "name": "{name}",
-        "text": "*The moment I step into the room, before I can even turn on the light, I switch on my phone with a shaking hand. My palm stings from the vibrations that went off one after another.*"
-    },
     "night3_cheat_msg_2": {
         "name": "Seoyeon",
         "text": "Can't you smile like that only for me, not for Dain and Yuna?"
@@ -205,10 +201,6 @@
     "night3_cheat_reflect_2": {
         "name": "{name}",
         "text": "*In the group photo, Sojeong looks at the camera with no strength left, and right beside her I'm looking off somewhere else, the way I did then, dodging anything difficult.*"
-    },
-    "night3_cheat_reflect_3_b": {
-        "name": "{name}",
-        "text": "*Back on the messenger list, the draft I never sent is still there in red.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",

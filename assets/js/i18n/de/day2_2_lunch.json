@@ -281,10 +281,6 @@
         "name": "{name}",
         "text": "Viele Leute, lass uns hier am Fenster lehnen und essen. *Mit der warmen Brottüte stehen wir nebeneinander an der Glastür des Schulkiosks, und über den Flur sehe ich Seoyeon kommen.*"
     },
-    "lunch2_dain_10": {
-        "name": "{name}",
-        "text": "*Durch die Scheibe entdeckt Seoyeon uns beide, unsere Blicke treffen sich einmal, dann geht sie einfach weiter. Das Brot im Hals will nicht runter.*"
-    },
     "lunch2_dain_11": {
         "name": "Dain",
         "text": "Hey, was war das gerade mit der Schülersprecherin? Warum starrt sie uns so an und geht weiter?"
@@ -296,10 +292,6 @@
     "lunch2_dain_13": {
         "name": "Dain",
         "text": "Hm, verdächtig. Bist du hinter meinem Rücken etwa auch total eng mit der Schülersprecherin geworden?"
-    },
-    "lunch2_dain_13_b": {
-        "name": "{name}",
-        "text": "*Dain beißt wie eingeschnappt kräftig ins Soboro-Brötchen. Am Rand ihrer geröteten Lippen bleiben süße Krümel kleben.*"
     },
     "lunch2_dain_choice": {
         "name": "Dain",
@@ -362,17 +354,9 @@
         "name": "Schulkrankenschwester",
         "text": "Zwei Tage hintereinander? Willst du schon Stammgast in meinem Krankenzimmer werden?"
     },
-    "lunch2_dain_end_h": {
-        "name": "{name}",
-        "text": "*Die schlanke Hand der Schulkrankenschwester, in Latexhandschuhen, hält mein Handgelenk und klopft zuerst vorsichtig den Staub um die Wunde ab.*"
-    },
     "lunch2_dain_end_ins7_first": {
         "name": "Schulkrankenschwester",
         "text": "Auf einem fremden Sportplatz verletzt man sich schon mal. Komm her, erst desinfizieren."
-    },
-    "lunch2_dain_end_ins8_first": {
-        "name": "{name}",
-        "text": "*Die Schulkrankenschwester stützt meinen Arm mit der behandschuhten Hand und klopft zuerst sorgfältig den Staub um den Ellbogen ab.*"
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
@@ -381,10 +365,6 @@
     "lunch2_dain_end_j": {
         "name": "Schulkrankenschwester",
         "text": "Wenn das Desinfektionsmittel drankommt, brennt es ein bisschen. Lass Schulter und Arm ganz locker."
-    },
-    "lunch2_dain_end_k": {
-        "name": "{name}",
-        "text": "*Als der Wattebausch mit dem kalten Desinfektionsmittel über die Wunde streicht, brennt die Haut innen am Ellbogen scharf.*"
     },
     "lunch2_dain_end_l": {
         "name": "Schulkrankenschwester",
@@ -440,29 +420,13 @@
         "name": "Schulkrankenschwester",
         "text": "Wenn eine Ecke hochsteht oder es nässt, komm sofort zu mir. Wenn alles in Ordnung ist, kannst du es einfach dranlassen."
     },
-    "lunch2_dain_end_b2": {
-        "name": "{name}",
-        "text": "*Die Schulkrankenschwester nimmt den Füller und schreibt die Uhrzeit der Pflasterversorgung in klaren Zügen auf den Behandlungsbogen.*"
-    },
     "lunch2_dain_end_c2": {
         "name": "Schulkrankenschwester",
         "text": "Wenn die Wunde im restlichen Sportunterricht brennt, halt es nicht aus, sondern sag dem Lehrer Bescheid. Sonst komm in der Pause vorbei."
     },
-    "lunch2_dain_end_d2": {
-        "name": "{name}",
-        "text": "*Im letzten Bemerkungsfeld des Behandlungsbogens kommt eine klare Notiz dazu: „Beugung des Ellbogengelenks geprüft“.*"
-    },
     "lunch2_dain_end_nurse_short1": {
         "name": "Schulkrankenschwester",
         "text": "So, fertig. Lauf nächstes Mal nicht nur dem Ball nach. Schau zuerst auf die Leute um dich herum."
-    },
-    "lunch2_dain_end_nurse_short2": {
-        "name": "{name}",
-        "text": "*Ich streiche über den Arm mit dem neuen Pflaster und gehe aus dem Krankenzimmer. Auch wenn ich den Ellbogen beuge, hebt sich das Pflaster an der Stelle nicht, die ihre Hand berührt hat.*"
-    },
-    "lunch2_dain_end_nurse_short3": {
-        "name": "{name}",
-        "text": "*Die Klingel zum Stundenende läutet lang. Das Pflaster, das kurz am Saum des Hemdsärmels hängen geblieben war, legt sich wieder sanft an.*"
     },
     "lunch2_yuna_1": {
         "name": "{name}",
@@ -631,10 +595,6 @@
     "lunch2_yuna_c1_12": {
         "name": "Yuna",
         "text": "...Ja. Lesen wir jetzt jeder für sich. *Mit der Fingerspitze streicht sie die geknitterte Seitenecke langsam glatt.*"
-    },
-    "lunch2_yuna_c1_14": {
-        "name": "{name}",
-        "text": "*Eine Weile kann Yuna nicht umblättern und liest mit der Fingerspitze nur die Goldbuchstaben auf dem alten Buchrücken nach.*"
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",

@@ -39,10 +39,6 @@
         "name": "Yuna",
         "text": "*Yuna looks at Dain while chewing the sausage.* So the first person to grab it doesn't get to keep it."
     },
-    "lunch3_meal_8": {
-        "name": "{name}",
-        "text": "*The tip of Yuna's chopsticks heads for the middle of my lunchbox again, no hesitation.*"
-    },
     "lunch3_meal_10": {
         "name": "{name}",
         "text": "Hey, wait! That's the last piece left. *The moment I shout, the tips of three pairs of chopsticks freeze in the air just above the lunchbox.*"
@@ -54,10 +50,6 @@
     "lunch3_meal_10_c": {},
     "lunch3_meal_10_d": {},
     "lunch3_meal_10_e": {},
-    "lunch3_meal_11": {
-        "name": "{name}",
-        "text": "*Three pairs of eyes follow the tip of my chopsticks. Who should I hand this last piece to?*"
-    },
     "lunch3_choice": {
         "name": "{name}",
         "text": "*At the table, even the breathing has gone quiet. I choose who gets the last side.*",
@@ -122,10 +114,6 @@
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",
         "text": "*I calmed Dain down and brought her back to her seat in the classroom.*"
-    },
-    "lunch3_seo_focus_1": {
-        "name": "{name}",
-        "text": "*Dain's footsteps, echoing down the hall, finally fade toward the water fountain.*"
     },
     "lunch3_seo_focus_2": {
         "name": "Seoyeon",
@@ -254,10 +242,6 @@
     "lunch3_expose_14": {
         "name": "Minsu",
         "text": "*Minsu grabs my shoulder and whispers, like he can't believe it.* Hey, have you actually lost it? How many plans did you stack on one weekend?"
-    },
-    "lunch3_expose_15": {
-        "name": "{name}",
-        "text": "*I swallow dry, and my lips barely move. Even Minsu shakes his head and sets his chopsticks down.*"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
