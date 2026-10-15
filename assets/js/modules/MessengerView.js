@@ -272,6 +272,8 @@ class MessengerView {
      * 장면이 중간에 바뀌면 말풍선을 추가하지 않고 빈 문자열 반환
      */
     async present(scene, { restoring = false, isStillCurrent = null } = {}) {
+        this.skip();
+        this._animating = false;
         const speaker = this._speaker(scene);
         const { spoken, narration } = this._split(scene.text);
         const generation = ++this._generation;

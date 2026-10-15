@@ -1,0 +1,305 @@
+{
+  "auditDate": "2026-10-15",
+  "timeZone": "Asia/Seoul",
+  "finishedAt": "2026-10-15 17:19:59",
+  "scope": {
+    "baselineCommit": "ab4d7732",
+    "reviewedHead": "d69f2eb4e14d9384d71e2ff2841e7e6da64cfe8a",
+    "todayCommits": [
+      "7692b6ad",
+      "794ca64a",
+      "c311b0f1",
+      "2fdb490f",
+      "39529613",
+      "d69f2eb4"
+    ],
+    "reviewedChangedFiles": 202,
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "es",
+      "fr",
+      "de",
+      "pt",
+      "zh"
+    ],
+    "initialBranch": "main",
+    "initialWorkingTreeClean": true
+  },
+  "result": "All executed automated checks passed. One reproduced progression bug fixed locally; static advisories remain. Fix not deployed.",
+  "findings": [
+    {
+      "id": "messenger-restore-stall",
+      "severity": "high",
+      "status": "fixed-locally",
+      "trigger": "Restore a different phone-message scene while an incoming message typing indicator is active, then advance the restored scene.",
+      "before": {
+        "scene": "night2_reply_dain_react_neg",
+        "animating": true,
+        "finishAnimationPresentAfterOldRenderSettled": false,
+        "clickAdvanced": false
+      },
+      "cause": "A restored message increments the generation without clearing the previous typing animation; the stale completion cannot reset _animating.",
+      "fix": "Cancel the previous typing wait and reset _animating at the beginning of MessengerView.present.",
+      "file": "assets/js/modules/MessengerView.js",
+      "regression": "tests/e2e/night-messenger.spec.cjs now asserts animation cancellation, no stale typing row, and successful advancement."
+    },
+    {
+      "id": "timeout-test-not-in-default-runner",
+      "severity": "low",
+      "status": "fixed-locally",
+      "file": "scripts/test-all.cjs",
+      "fix": "Added tests/log-transport-timeout.test.cjs to the default npm test command list."
+    }
+  ],
+  "checks": {
+    "npmTest": {
+      "status": "passed",
+      "passed": 348,
+      "failed": 0,
+      "includesSyntaxChecks": true,
+      "includesTimeoutRegression": true
+    },
+    "cacheCheck": {
+      "status": "passed",
+      "passed": 101,
+      "failed": 0,
+      "languages": 8
+    },
+    "additionalNodeTests": {
+      "status": "passed",
+      "passed": 20,
+      "failed": 0,
+      "note": "Includes cases not selected by the default runner; overlaps exist with other suites, so counts must not be added as unique coverage."
+    },
+    "browser": {
+      "status": "passed",
+      "passed": 350,
+      "failed": 0,
+      "runnerExitCode": 0,
+      "cleanupNote": "After all 350 cases passed, the audit-owned static server was stopped to release delayed runner cleanup. The runner then printed the passing summary and exited with code 0.",
+      "browser": "Chromium",
+      "note": "The full audit started before the fix; the affected specs ran with the fix. A separate focused suite also verified the fix."
+    },
+    "focusedBrowser": {
+      "status": "passed",
+      "passed": 38,
+      "failed": 0,
+      "viewports": [
+        "1440x900",
+        "390x844",
+        "320x568",
+        "844x390",
+        "568x320"
+      ],
+      "specs": [
+        "night-messenger",
+        "dialogue-skip-cooldown",
+        "scene-direction"
+      ]
+    },
+    "scenario": {
+      "status": "passed",
+      "scenes": 3393,
+      "exploredPaths": 50000,
+      "completedPaths": 25000,
+      "deadEnds": 0,
+      "endingReachability": "27/27"
+    },
+    "i18n": {
+      "status": "passed",
+      "checks": 68851,
+      "issues": 0,
+      "languages": 8
+    },
+    "koreanText": {
+      "status": "passed",
+      "scenarioFiles": 20,
+      "scenarioStrings": 5569
+    },
+    "build": {
+      "status": "passed",
+      "localizedPages": 24,
+      "i18nFiles": 160,
+      "publicRuntimeFiles": 482,
+      "protectedR2AssetsVerified": 116
+    },
+    "diffCheck": {
+      "status": "passed"
+    },
+    "generatedMetadata": {
+      "status": "passed",
+      "assetVersion": "2.9.325",
+      "serviceWorkerCacheVersion": "cupid-v3.3.244",
+      "versionOnlyFiles": 30,
+      "unexpectedNonVersionChangesInGeneratedFiles": 0
+    }
+  },
+  "visualVerification": {
+    "visibleDifferenceDetected": false,
+    "viewports": [
+      "1440x900",
+      "390x844"
+    ],
+    "scenes": [
+      "night2_msg_yuna_general",
+      "night2_reply_dain_react_neg",
+      "morning2_seo_1",
+      "lunch3_start"
+    ],
+    "pairedComparisons": 8,
+    "exactPixelMatches": 7,
+    "otherComparison": {
+      "viewport": "1440x900",
+      "scene": "night2_reply_dain_react_neg",
+      "differentPixels": 1,
+      "location": [
+        20,
+        679
+      ],
+      "maximumChannelDifference": 7,
+      "assessment": "A single border rasterization pixel; no visible UI change on inspection."
+    },
+    "evidenceDirectory": "D:\\workspace\\_workspace\\cupid-final-20261015\\visual-comparison"
+  },
+  "staticAdvisories": {
+    "count": 47,
+    "byType": {
+      "FLAG": 3,
+      "MEMORY_LEAK": 4,
+      "IMAGE_MATCH": 28,
+      "BG_CHANGE": 12
+    },
+    "assessment": {
+      "FLAG": "FreeTalkSystem sets messaged_${sceneId} dynamically; the static scenario-only scan does not resolve those names.",
+      "MEMORY_LEAK": "Application-lifetime listeners and a reused MessengerView ResizeObserver; no reproduced growth or progression failure. The observer has no explicit teardown.",
+      "IMAGE_MATCH": "Explicit character:null scenes and runtime group/CG/message staging; missing-image and browser checks passed.",
+      "BG_CHANGE": "Heuristic notices about missing transition narration. No dangling scene references or tested route dead ends; narrative wording left for editorial review."
+    },
+    "warnings": [
+      "[FLAG] \"messaged_day4_haeun_personal\" checked but never set in scenario",
+      "[FLAG] \"messaged_haeun_freetalk\" checked but never set in scenario",
+      "[FLAG] \"messaged_day5_haeun_personal\" checked but never set in scenario",
+      "[MEMORY_LEAK] config.js:1812 window/document에 익명 함수 addEventListener — 제거 불가: document.addEventListener('visibilitychange', () => {",
+      "[MEMORY_LEAK] MessengerView.js: Observer 생성 1건, disconnect 0건 — 정리 안 됨",
+      "[MEMORY_LEAK] RouteTelemetry.js:258 window/document에 익명 함수 addEventListener — 제거 불가: window.addEventListener('online', () => { void flush(); });",
+      "[MEMORY_LEAK] RouteTelemetry.js:260 window/document에 익명 함수 addEventListener — 제거 불가: document.addEventListener('visibilitychange', () => { if (document.visibilitySta",
+      "[IMAGE_MATCH] after2_group_dain_companion: speaker=\"다인\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] after2_group_seoyeon_companion: speaker=\"서연\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] after2_group_yuna_companion: speaker=\"유나\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] after3_group_teacher_companion: speaker=\"담임선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] after3_group_nurse_companion: speaker=\"보건선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day4_haeun_concern_seoyeon_group_talk: speaker=\"서연\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day4_haeun_concern_yuna_group_talk: speaker=\"유나\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day4_haeun_concern_dain_group_talk: speaker=\"다인\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day4_haeun_concern_teacher_group_talk: speaker=\"담임선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day4_haeun_concern_nurse_group_talk: speaker=\"보건선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day4_harem_fallout_1: speaker=\"서연\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] wall_yuna_1: speaker=\"유나\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_concern_seoyeon_group_talk: speaker=\"서연\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_concern_yuna_group_talk: speaker=\"유나\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_concern_dain_group_talk: speaker=\"다인\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_concern_teacher_group_talk: speaker=\"담임선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_concern_nurse_group_talk: speaker=\"보건선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_switch_seoyeon_group_talk: speaker=\"서연\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_switch_yuna_group_talk: speaker=\"유나\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_switch_dain_group_talk: speaker=\"다인\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_switch_teacher_group_talk: speaker=\"담임선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] day5_haeun_switch_nurse_group_talk: speaker=\"보건선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] friend_4_seo: speaker=\"서연\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] friend_4_yuna: speaker=\"유나\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] friend_4_dain: speaker=\"다인\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] nurse_perfect_pills_1: speaker=\"보건선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] nurse_perfect_pills_2: speaker=\"보건선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[IMAGE_MATCH] nurse_perfect_pills_pink_2: speaker=\"보건선생님\" 인데 character=null (캐릭터가 말하는데 이미지 없음)",
+      "[BG_CHANGE] lunch2_yuna_10 → lunch2_yuna_11: 배경 변경 (annex_exhibit_hallway.png → yuna_hideout_day.webp) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] hidden_nurse_d2_freetalk → after2_choice: 배경 변경 (nurse_room.png → room_school.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] after2_dain_9_f → after2_dain_12: 배경 변경 (gym.png → street.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] after2_yuna_end → after2_yuna_rival_dain_check: 배경 변경 (yuna_hideout_day.webp → school_hallway.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] after2_yuna_neg_leave → after2_yuna_rival_dain_check: 배경 변경 (yuna_hideout_day.webp → school_hallway.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] after3_reject_for_yuna_3_react → after3_reject_for_yuna_4: 배경 변경 (gym.png → school_hallway.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] after3_rival_yuna_cool → after3_rival_yuna_done: 배경 변경 (library_old.png → school_hallway.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] after3_rival_yuna_neg → after3_rival_yuna_done: 배경 변경 (library_old.png → school_hallway.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] after5_confess_react_seo → ending_start: 배경 변경 (school_back.png → park.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] hidden_perfect_nurse_ending_title → hidden_perfect_nurse_ep2: 배경 변경 (ending_perfect_nurse.png → nurse_house.png) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] nurse_perfect_pills_black_2 → nurse_perfect_pills_black_3: 배경 변경 (nurse_bedroom_pills.jpg → riin_lab_pills.jpg) 인데 장소 이동 나레이션 없음",
+      "[BG_CHANGE] ending_aff_check_yuna → bitter_yuna_1: 배경 변경 (yuna_hideout_day.webp → park.png) 인데 장소 이동 나레이션 없음"
+    ]
+  },
+  "production": {
+    "origin": "https://cupid.archerlab.dev",
+    "requests": [
+      {
+        "path": "/",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "bytes": 69283,
+        "assetVersions": [
+          "2.9.324",
+          "2.9.308",
+          "2.9.6"
+        ]
+      },
+      {
+        "path": "/game",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "bytes": 15935,
+        "assetVersions": [
+          "2.9.324",
+          "2.9.308"
+        ]
+      },
+      {
+        "path": "/gallery",
+        "status": 200,
+        "type": "text/html; charset=utf-8",
+        "bytes": 15270,
+        "assetVersions": [
+          "2.9.324",
+          "2.9.6",
+          "2.9.9"
+        ]
+      },
+      {
+        "path": "/assets/js/modules/MessengerView.js?v=2.9.324",
+        "status": 200,
+        "type": "application/javascript",
+        "bytes": 17914,
+        "assetVersions": [],
+        "cancelsPreviousMessenger": false
+      },
+      {
+        "path": "/assets/js/sound.js?v=2.9.324",
+        "status": 200,
+        "type": "application/javascript",
+        "bytes": 33228,
+        "assetVersions": []
+      },
+      {
+        "path": "/service-worker.js",
+        "status": 200,
+        "type": "application/javascript",
+        "bytes": 17146,
+        "assetVersions": [],
+        "sw": "cupid-v3.3.243"
+      }
+    ],
+    "observedAssetVersion": "2.9.324",
+    "observedServiceWorkerCacheVersion": "cupid-v3.3.243",
+    "localFixDeployed": false
+  },
+  "limitations": [
+    "Browser functional tests use local API/media fixtures and mocked AI responses. They do not validate paid live model output or production database/R2 grants end to end.",
+    "Desktop and mobile viewports use Chromium emulation, not physical iOS/Android devices.",
+    "Static advisory warnings remain; passing finite tests is not a guarantee against every possible input or route combination."
+  ],
+  "delivery": {
+    "branch": "main",
+    "committed": false,
+    "pushed": false,
+    "deployed": false,
+    "evidenceDirectory": "D:/workspace/_workspace/cupid-final-20261015"
+  }
+}

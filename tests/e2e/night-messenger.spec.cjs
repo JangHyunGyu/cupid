@@ -100,6 +100,11 @@ test('typing can be skipped without advancing and cancelled typing cannot leak i
     await expect(page.locator('.messenger-bubble')).toHaveCount(1);
     await expect(page.locator('#message')).toContainText('읽음 표시');
     await expect(page.locator('#name-tag')).toBeVisible();
+    expect(await page.evaluate(() => gameEngine.messengerView.isAnimating())).toBe(false);
+    await expect(page.locator('.messenger-typing-row')).toHaveCount(0);
+    const nextScene = await page.evaluate(() => gameEngine.sceneRenderer.getScene(gameEngine.sceneRenderer.currentSceneId).next);
+    await page.locator('#dialogue-box').click();
+    await expect.poll(() => page.evaluate(() => gameEngine.sceneRenderer.currentSceneId)).toBe(nextScene);
     await render(page, 'morning2_seo_1');
     await expect(page.locator('#messenger-panel')).toBeHidden();
     await expect(page.locator('#name-tag')).toBeVisible();

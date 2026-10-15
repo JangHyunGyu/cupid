@@ -20,7 +20,7 @@ const commands = [
     ['node', ['--test', 'tests/haeun-festival.test.cjs', 'tests/haeun-romance.test.cjs', 'tests/haeun-affinity-anchor.test.cjs', 'tests/progression-integrity.test.cjs']],
     ['node', ['--test', 'tests/affinity-negative-branches.test.cjs']],
     ['node', ['--test', 'tests/affinity-corrections.test.cjs', 'tests/affinity-guard.test.cjs']],
-    ['node', ['--test', 'tests/route-telemetry.test.cjs', 'tests/chat-log-queue.test.cjs', 'tests/log-outbox-tabs.test.cjs']],
+    ['node', ['--test', 'tests/route-telemetry.test.cjs', 'tests/chat-log-queue.test.cjs', 'tests/log-outbox-tabs.test.cjs', 'tests/log-transport-timeout.test.cjs']],
     ['node', ['--test', 'tests/scenario-commercial-polish.test.cjs']],
     ['node', ['--test', 'tests/story-continuity.test.cjs']],
     ['node', ['--test', 'tests/freetalk-core.test.cjs']],
