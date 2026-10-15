@@ -700,3 +700,11 @@ TRUE 엔딩은 본편 에필로그 데이트(1회)로 남긴다. 갤러리 연�
 ## 밤 문자 메신저 화면 (2026-10-15)
 
 1~4일차 밤 문자 장면은 휴대폰 대화방 UI로 표시한다. 유나는 입력 중 망설이고, 다인은 기존 메시지를 빠르게 연달아 보낸다. 주인공이 보낸 메시지에는 안 읽음 표시가 붙는다. 새 대사는 추가하지 않았다. 같은 날 Day 2~3의 중복 지문·이동 브릿지 43개를 덜어 1회차 클릭 수를 줄였다. 세부 규칙은 `docs/WRITING_GUIDE.md` 참고.
+
+### Manual reveal input guard (2026-10-15)
+
+A manual text completion or skipped messenger arrival blocks dialogue advance
+for 250ms after the completed line or bubble appears. Repeated input is dropped
+without extending the deadline. Natural completion has no extra wait, and scene
+entry clears the guard. Existing ending locks are preserved. See
+`docs/qa/dialogue-skip-cooldown-20261015.md` for validation.

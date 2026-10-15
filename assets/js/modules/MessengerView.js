@@ -247,11 +247,11 @@ class MessengerView {
 
         return new Promise(resolve => {
             const timers = [];
-            const done = () => {
+            const done = (skipped = false) => {
                 timers.forEach(timer => clearTimeout(timer));
                 indicator.remove();
                 if (this._finishAnimation === done) this._finishAnimation = null;
-                resolve();
+                resolve(skipped === true);
             };
             this._finishAnimation = done;
             if (profile.pause > 0 && total > profile.pause * 2) {
@@ -281,16 +281,18 @@ class MessengerView {
             this._openThread(speaker.key, this._contactName(speaker.key, scene.name));
             const bubbleText = this.dialogueSystem.processPlaceholders(spoken, scene.name);
             const profile = MESSENGER_TYPING_PROFILES[speaker.key] || MESSENGER_TYPING_PROFILES.default;
+            let skipped = false;
             if (!restoring) {
                 this._animating = true;
                 try {
-                    await this._showTyping(profile, Array.from(bubbleText).length, generation);
+                    skipped = await this._showTyping(profile, Array.from(bubbleText).length, generation);
                 } finally {
                     if (generation === this._generation) this._animating = false;
                 }
                 if (!stillCurrent()) return '';
             }
             this._appendRow('contact', bubbleText);
+            if (skipped) this.dialogueSystem.armAdvanceCooldown?.();
             return narration;
         }
 
@@ -319,7 +321,7 @@ class MessengerView {
 
     /** 클릭 시 입력 중 대기를 즉시 끝내고 말풍선 표시 */
     skip() {
-        if (typeof this._finishAnimation === 'function') this._finishAnimation();
+        if (typeof this._finishAnimation === 'function') this._finishAnimation(true);
     }
 
     /** 문자 장면이 끝나면 휴대폰 화면을 닫고 대화방 상태 초기화 */

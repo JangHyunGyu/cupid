@@ -45,6 +45,7 @@ class DialogueSystem {
 
         /** 타이핑 스킵 요청 플래그 */
         this.skipTyping = false;
+        this._advanceBlockedUntil = 0;
 
         /** 이전 requestAnimationFrame이 새 타이핑 상태를 해제하지 못하게 하는 렌더 소유권 */
         this._renderGeneration = 0;
@@ -484,6 +485,7 @@ class DialogueSystem {
                 // 스킵 요청이 들어오면 즉시 전체 텍스트 표시
                 if (this.skipTyping) {
                     this.uiManager.messageEl.innerHTML = this.parseNarration(textPart);
+                    this.armAdvanceCooldown();
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
                     const msgEl = this.uiManager.messageEl;
                     if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
@@ -554,6 +556,20 @@ class DialogueSystem {
      */
     requestSkip() {
         if (this.isTyping) this.skipTyping = true;
+    }
+
+    armAdvanceCooldown() {
+        const now = typeof performance === 'undefined' ? Date.now() : performance.now();
+        this._advanceBlockedUntil = now + 250;
+    }
+
+    isAdvanceCoolingDown() {
+        const now = typeof performance === 'undefined' ? Date.now() : performance.now();
+        return now < this._advanceBlockedUntil;
+    }
+
+    resetAdvanceCooldown() {
+        this._advanceBlockedUntil = 0;
     }
 
     /**

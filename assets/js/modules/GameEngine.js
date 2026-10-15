@@ -426,6 +426,8 @@ class GameEngine {
         // 엔딩 CG 감상 중이면 클릭 무시 (4초간 스킵 불가)
         if (this._cgLocked) return;
 
+        if (this.dialogueSystem.isAdvanceCoolingDown?.()) return;
+
         // 메신저 '입력 중' 대기 중이면 대기만 끝내고 말풍선 표시
         if (this.messengerView?.isAnimating()) {
             this.messengerView.skip();
@@ -1032,6 +1034,7 @@ class GameEngine {
     }
 
     async renderScene(sceneId, { restoring = false } = {}) {
+        this.dialogueSystem.resetAdvanceCooldown?.();
         // 렌더링 락 활성화 (비동기 로딩 중 클릭 방지).
         // 중간에 예외가 나도 이 락이 남지 않게 하고, 더 새로 시작한 렌더의 락은 풀지 않는다.
         const renderToken = (this._renderToken = (this._renderToken || 0) + 1);
