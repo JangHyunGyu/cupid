@@ -212,7 +212,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "Professora",
-        "text": "*Ela deixa a prancheta na mesa e, com o queixo apoiado de leve, observa quieta o rosto de {name}.*",
+        "text": "*Ela deixa a prancheta na mesa e, com o queixo apoiado de leve, observa quieta o meu rosto.*",
         "choices": [
             "Estou bem. Embora tudo ainda seja estranho.",
             "Sinceramente, está tudo meio caótico.",
@@ -303,7 +303,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Professora",
-        "text": "*Ela fecha o livro de chamada, vem até a soleira da sala dos professores para me acompanhar, para de repente e chama {name} de novo.*"
+        "text": "*Ela fecha o livro de chamada, vem até a soleira da sala dos professores para me acompanhar, para de repente e me chama de novo.*"
     },
     "after_homeroom_honest_7": {
         "name": "Professora",

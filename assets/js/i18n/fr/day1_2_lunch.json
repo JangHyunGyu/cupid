@@ -66,7 +66,7 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Du bout de sa chaussure, elle pousse le pied de la chaise pour l'aligner du côté de {name}.* Tu te méfies trop. En bas, c'est bruyant. Ici, c'est calme. Je t'ai amené pour ça."
+        "text": "*Du bout de sa chaussure, elle pousse le pied de la chaise pour l'aligner de mon côté.* Tu te méfies trop. En bas, c'est bruyant. Ici, c'est calme. Je t'ai amené pour ça."
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
@@ -328,7 +328,7 @@
     },
     "lunch_dain_after_5": {
         "name": "Dain",
-        "text": "*Du poing, pour jouer, elle tape l'épaule de {name}, laisse la chaleur souple de ses doigts, puis recule d'un pas.*"
+        "text": "*Du poing, pour jouer, elle me tape l'épaule, laisse la chaleur souple de ses doigts, puis recule d'un pas.*"
     },
     "lunch_dain_freetalk": {
         "name": "Dain",

@@ -212,7 +212,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "Profesora",
-        "text": "*Deja el portapapeles sobre el escritorio, se apoya un poco la barbilla en la mano y observa en silencio el rostro de {name}.*",
+        "text": "*Deja el portapapeles sobre el escritorio, se apoya un poco la barbilla en la mano y observa en silencio mi rostro.*",
         "choices": [
             "Estoy bien. Aunque todavía se siente extraño.",
             "Sinceramente, estoy un poco abrumado.",
@@ -303,7 +303,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Profesora",
-        "text": "*Cierra la lista de asistencia y sale hasta el umbral de la sala para acompañarme; entonces se detiene y vuelve a llamar a {name}.*"
+        "text": "*Cierra la lista de asistencia y sale hasta el umbral de la sala para acompañarme; entonces se detiene y vuelve a llamarme.*"
     },
     "after_homeroom_honest_7": {
         "name": "Profesora",

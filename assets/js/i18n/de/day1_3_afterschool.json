@@ -212,7 +212,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "Klassenlehrerin",
-        "text": "*Sie legt das Klemmbrett auf den Schreibtisch, stützt leicht das Kinn und sieht {name} ruhig ins Gesicht.*",
+        "text": "*Sie legt das Klemmbrett auf den Schreibtisch, stützt leicht das Kinn und sieht mir ruhig ins Gesicht.*",
         "choices": [
             "Ganz gut. Es ist nur noch ungewohnt.",
             "Ehrlich gesagt, ziemlich überwältigend.",
@@ -303,7 +303,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Klassenlehrerin",
-        "text": "*Sie nimmt das zugeklappte Klassenbuch und kommt bis zur Schwelle mit, um mich zu verabschieden. Dann hält sie plötzlich inne und ruft noch einmal {name}.*"
+        "text": "*Sie nimmt das zugeklappte Klassenbuch und kommt bis zur Schwelle mit, um mich zu verabschieden. Dann hält sie plötzlich inne und ruft mich noch einmal.*"
     },
     "after_homeroom_honest_7": {
         "name": "Klassenlehrerin",

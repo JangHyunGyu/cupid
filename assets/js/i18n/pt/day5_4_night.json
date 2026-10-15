@@ -38,7 +38,7 @@
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
-        "text": "*Quatro anos se passaram sem nenhum contato pessoal desde que cruzei os portões da escola no dia da formatura. Após terminar a faculdade, {name} alugou um pequeno officetel perto do primeiro emprego e vive sozinho.*"
+        "text": "*Quatro anos se passaram sem nenhum contato pessoal desde que cruzei os portões da escola no dia da formatura. Após terminar a faculdade, aluguei um pequeno officetel perto do primeiro emprego e vivo sozinho.*"
     },
     "hidden_perfect_homeroom_3b": {
         "name": "{name}",
@@ -98,7 +98,7 @@
     },
     "hidden_perfect_homeroom_ep2": {
         "name": "{name}",
-        "text": "*Os próximos encontros eram sempre decididos alternadamente. O bar de vinhos de quinta-feira à noite era escolha dela; a ruela tranquila de livrarias no sábado à tarde era escolha de {name}.*"
+        "text": "*Os próximos encontros eram sempre decididos alternadamente. O bar de vinhos de quinta-feira à noite era escolha dela; a ruela tranquila de livrarias no sábado à tarde era escolha minha.*"
     },
     "hidden_perfect_homeroom_ep3": {
         "name": "{name}",
@@ -110,7 +110,7 @@
     },
     "hidden_true_homeroom_1": {
         "name": "{name}",
-        "text": "*Passaram-se quatro anos desde a formatura. Durante esse tempo, os dois não tiveram nenhum contato privado. Depois de deixar a escola e concluir a faculdade, {name} ganha o próprio sustento e leva uma vida adulta. Num dia de primavera, na volta do trabalho, vê um nome dolorosamente familiar num cartaz de conversa literária na vitrine de uma livraria independente do bairro.*"
+        "text": "*Passaram-se quatro anos desde a formatura. Durante esse tempo, nós dois não tivemos nenhum contato privado. Depois de deixar a escola e concluir a faculdade, ganho o próprio sustento e levo uma vida adulta. Num dia de primavera, na volta do trabalho, vejo um nome dolorosamente familiar num cartaz de conversa literária na vitrine de uma livraria independente do bairro.*"
     },
     "hidden_true_homeroom_2": {
         "name": "{name}",
@@ -118,7 +118,7 @@
     },
     "hidden_true_homeroom_2_b": {
         "name": "{name}",
-        "text": "*No pescoço de {name} está pendurado o crachá de funcionária; em suas mãos, em vez da lista de presença da antiga sala de aula, ela segura seu primeiro livro com o próprio nome impresso com clareza.*"
+        "text": "*No meu pescoço está pendurado o crachá de funcionário; em suas mãos, em vez da lista de presença da antiga sala de aula, ela segura seu primeiro livro com o próprio nome impresso com clareza.*"
     },
     "hidden_true_homeroom_3": {
         "name": "Professora",
@@ -170,7 +170,7 @@
     },
     "hidden_true_homeroom_5_b": {
         "name": "{name}",
-        "text": "*Ela não caminha em direção ao caixa da livraria, esperando a resposta de {name} com olhos que brilham suavemente.*"
+        "text": "*Ela não caminha em direção ao caixa da livraria, esperando a minha resposta com olhos que brilham suavemente.*"
     },
     "hidden_true_homeroom_5_c": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "hidden_true_homeroom_8": {
         "name": "Professora",
-        "text": "*Além do pequeno prato de bolo, ela abre suavemente a palma da mão. Ela para por um triz antes de tocar a ponta dos meus dedos, esperando a resposta de {name}.* ...Queremos nos encontrar de novo na próxima semana?"
+        "text": "*Além do pequeno prato de bolo, ela abre suavemente a palma da mão. Ela para por um triz antes de tocar a ponta dos meus dedos, esperando a minha resposta.* ...Queremos nos encontrar de novo na próxima semana?"
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
@@ -210,7 +210,7 @@
     },
     "hidden_good_homeroom_1": {
         "name": "Professora",
-        "text": "*Na sala vazia, após o tumulto da cerimônia de formatura ter diminuído, a professora, que organizava a cópia da carta de recomendação e os registros de avaliação do clube de literatura, chama {name}, que estava parado à porta.* Aqui, estes são os registros que você deixou. Verifique se não falta nenhum papel antes de colocá-los na mala de formatura."
+        "text": "*Na sala vazia, após o tumulto da cerimônia de formatura ter diminuído, a professora, que organizava a cópia da carta de recomendação e os registros de avaliação do clube de literatura, me chama quando paro à porta.* Aqui, estes são os registros que você deixou. Verifique se não falta nenhum papel antes de colocá-los na mala de formatura."
     },
     "hidden_good_homeroom_2": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "hidden_good_homeroom_4": {
         "name": "{name}",
-        "text": "*Na janela da sala de aula iluminada pelo sol da primavera, {name} faz uma reverência profunda para a professora, que continua acenando até o fim, e finalmente deixa os portões da escola que tanto amava.*"
+        "text": "*Na janela da sala de aula iluminada pelo sol da primavera, faço uma reverência profunda para a professora, que continua acenando até o fim, e finalmente deixo os portões da escola que tanto amava.*"
     },
     "hidden_good_homeroom_ending_title": {
         "name": "",
@@ -230,7 +230,7 @@
     },
     "hidden_bitter_homeroom_1": {
         "name": "Professora",
-        "text": "*A sala de aula vazia e silenciosa após a cerimônia de formatura. A professora termina de ler a carta entregue por {name}, fecha o envelope e o coloca cuidadosamente sobre a mesa do professor.* ...Sinto muito, mas não posso aceitar esta carta."
+        "text": "*A sala de aula vazia e silenciosa após a cerimônia de formatura. A professora termina de ler a carta que lhe entreguei, fecha o envelope e o coloca cuidadosamente sobre a mesa do professor.* ...Sinto muito, mas não posso aceitar esta carta."
     },
     "hidden_bitter_homeroom_2": {
         "name": "{name}",
@@ -347,7 +347,7 @@
     },
     "hidden_true_nurse_5_b": {
         "name": "{name}",
-        "text": "*Juwon tira lentamente a mão da alça da xícara de café quente e espera a resposta de {name} com um olhar profundo.*"
+        "text": "*Juwon tira lentamente a mão da alça da xícara de café quente e espera a minha resposta com um olhar profundo.*"
     },
     "hidden_true_nurse_5_c": {
         "name": "Enfermeira",
@@ -419,11 +419,11 @@
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "Eu também quero continuar assim com a senhora na semana que vem, e na seguinte. *Antes mesmo que os créditos finais do filme terminem, Juwon solta um suspiro quente com aroma de shampoo e adormece calmamente, encostando a cabeça no ombro de {name}.*"
+        "text": "Eu também quero continuar assim com a senhora na semana que vem, e na seguinte. *Antes mesmo que os créditos finais do filme terminem, Juwon solta um suspiro quente com aroma de shampoo e adormece calmamente, encostando a cabeça no meu ombro.*"
     },
     "hidden_good_nurse_1": {
         "name": "Enfermeira",
-        "text": "*Depois que a cerimônia de formatura termina, bato na porta da enfermaria silenciosa pela última vez. Juwon, que bebia café junto à janela, percebe {name} parado à porta e coloca a xícara de lado.* Ora, o que traz você aqui? É dia de formatura, então não deve ter nada machucado hoje."
+        "text": "*Depois que a cerimônia de formatura termina, bato na porta da enfermaria silenciosa pela última vez. Juwon, que bebia café junto à janela, me vê parado à porta e coloca a xícara de lado.* Ora, o que traz você aqui? É dia de formatura, então não deve ter nada machucado hoje."
     },
     "hidden_good_nurse_2": {
         "name": "Enfermeira",
@@ -603,7 +603,7 @@
     },
     "true_seo_8": {
         "name": "{name}",
-        "text": "*Uma das canecas, ainda com o calor de Seoyeon, é deslizada cuidadosamente para a frente de {name}, e as pontas de nossos dedos se tocam calorosamente.*"
+        "text": "*Uma das canecas, ainda com o calor de Seoyeon, é deslizada cuidadosamente para a frente da minha mão, e as pontas de nossos dedos se tocam calorosamente.*"
     },
     "true_seo_bridge": {
         "name": "{name}",
@@ -651,7 +651,7 @@
     },
     "perfect_epilogue_3_yuna": {
         "name": "Yuna",
-        "text": "*Yuna continua falando pouco na frente das pessoas, mas as frases nos bilhetes lilás que ela coloca secretamente no bolso de {name} tornaram-se gradualmente mais longas e doces a cada estação.*"
+        "text": "*Yuna continua falando pouco na frente das pessoas, mas as frases nos bilhetes lilás que ela coloca secretamente no meu bolso tornaram-se gradualmente mais longas e doces a cada estação.*"
     },
     "perfect_epilogue_4_yuna": {
         "name": "Sistema",
@@ -754,7 +754,7 @@
     },
     "perfect_dain_5": {
         "name": "Dain",
-        "text": "...Ei, posso te abraçar rapidinho agora? *Quando {name} abre os braços e se aproxima, Dain equilibra-se no pé esquerdo e envolve o pescoço dele com os braços. {name} segura firmemente a cintura de Dain, garantindo que nenhum peso recaia sobre o joelho direito lesionado.*"
+        "text": "...Ei, posso te abraçar rapidinho agora? *Quando abro os braços e me aproximo primeiro, Dain equilibra-se no pé esquerdo e envolve o meu pescoço com os braços. Seguro firmemente a cintura de Dain, garantindo que nenhum peso recaia sobre o joelho direito lesionado.*"
     },
     "perfect_epilogue_1_dain": {
         "name": "{name}",
@@ -763,7 +763,7 @@
     "perfect_epilogue_1b_dain": {},
     "perfect_epilogue_1c_dain": {
         "name": "{name}",
-        "text": "*Nos dias de reabilitação após as idas ao hospital, o ritmo do passo é sempre definido por Dain, e {name} alegremente ajusta seus próprios passos à passada dela.*"
+        "text": "*Nos dias de reabilitação após as idas ao hospital, o ritmo do passo é sempre definido por Dain, e eu alegremente ajusto meus próprios passos à passada dela.*"
     },
     "perfect_epilogue_bridge_dain": {
         "name": "Sistema",
@@ -1020,7 +1020,7 @@
     },
     "good_epilogue_3": {
         "name": "{name}",
-        "text": "*No horário do almoço do dia seguinte, Seoyeon abre a porta do telhado com a chave que pegou formalmente e fica ali, sorrindo e esperando até que {name} suba todas as escadas.*"
+        "text": "*No horário do almoço do dia seguinte, Seoyeon abre a porta do telhado com a chave que pegou formalmente e fica ali, sorrindo e esperando até que eu suba todas as escadas.*"
     },
     "good_5_cg_seo": {
         "name": "Sistema",
@@ -1169,7 +1169,7 @@
     },
     "mayhem_1": {
         "name": "Seoyeon",
-        "text": "*Ao se cruzarem no corredor, Seoyeon passa raspando pelo ombro de {name}, deixando apenas um vento frio. Ela nem sequer vira a cabeça.*"
+        "text": "*Ao nos cruzarmos no corredor, Seoyeon passa raspando pelo meu ombro, deixando apenas um vento frio. Ela nem sequer vira a cabeça.*"
     },
     "mayhem_2": {
         "name": "Yuna",
@@ -1229,7 +1229,7 @@
     },
     "harem_6": {
         "name": "{name}",
-        "text": "*As três seguem seus caminhos sem hesitar por direções diferentes, e apenas {name} permanece ali, onde sopra a brisa da noite.*"
+        "text": "*As três seguem seus caminhos sem hesitar por direções diferentes, e apenas eu permaneço ali, onde sopra a brisa da noite.*"
     },
     "harem_7": {
         "name": "{name}",
@@ -1680,7 +1680,7 @@
     },
     "date_true_yuna_book_2": {
         "name": "Yuna",
-        "text": "*Yuna puxa suavemente a manga da camisa de {name} e solta, aproximando-se bem do meu lado.* ...Não precisamos de saudações, vamos agora só nós dois."
+        "text": "*Yuna puxa suavemente a manga da minha camisa e solta, aproximando-se bem do meu lado.* ...Não precisamos de saudações, vamos agora só nós dois."
     },
     "date_true_yuna_roof_1": {
         "name": "Yuna",

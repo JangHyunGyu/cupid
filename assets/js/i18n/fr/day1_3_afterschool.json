@@ -212,7 +212,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "Professeure principale",
-        "text": "*La professeure principale pose le porte-bloc sur le bureau, cale légèrement le menton et observe le visage de {name}.*",
+        "text": "*La professeure principale pose le porte-bloc sur le bureau, cale légèrement le menton et observe mon visage.*",
         "choices": [
             "Ça va. Tout me paraît encore nouveau, cela dit.",
             "Franchement, c'est un peu intense.",
@@ -303,7 +303,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Professeure principale",
-        "text": "*Elle referme le registre d'appel, sort pour m'accompagner jusqu'au seuil de la salle des profs, puis s'arrête net et rappelle {name}.*"
+        "text": "*Elle referme le registre d'appel, sort pour m'accompagner jusqu'au seuil de la salle des profs, puis s'arrête net et me rappelle.*"
     },
     "after_homeroom_honest_7": {
         "name": "Professeure principale",

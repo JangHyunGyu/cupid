@@ -113,7 +113,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon moves her lunchbox closer to {name}.* You can sit. Just let us finish our conversation."
+        "text": "*Seoyeon moves her lunchbox closer to me.* You can sit. Just let us finish our conversation."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -414,7 +414,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "School Nurse",
-        "text": "You don't have to change it every single day. Check the wound tomorrow morning and decide then. *Halfway through folding the empty bandage wrapper in half, she looks up at {name} with a peculiar look.*"
+        "text": "You don't have to change it every single day. Check the wound tomorrow morning and decide then. *Halfway through folding the empty bandage wrapper in half, she looks up at me with a peculiar look.*"
     },
     "lunch2_dain_end_z": {
         "name": "School Nurse",

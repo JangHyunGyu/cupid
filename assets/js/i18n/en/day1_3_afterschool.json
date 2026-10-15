@@ -212,7 +212,7 @@
     },
     "after_hidden_homeroom_choice": {
         "name": "Homeroom Teacher",
-        "text": "*She sets the clipboard down on the desk, rests her chin lightly on her hand, and quietly studies {name}'s face.*",
+        "text": "*She sets the clipboard down on the desk, rests her chin lightly on her hand, and quietly studies my face.*",
         "choices": [
             "I'm okay. It still feels unfamiliar, though.",
             "Honestly? It's a lot.",
@@ -303,7 +303,7 @@
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Homeroom Teacher",
-        "text": "*She closes the attendance book and comes out to see me off as far as the staff room threshold, then suddenly stops and calls {name} again.*"
+        "text": "*She closes the attendance book and comes out to see me off as far as the staff room threshold, then suddenly stops and calls me again.*"
     },
     "after_homeroom_honest_7": {
         "name": "Homeroom Teacher",

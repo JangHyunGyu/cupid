@@ -113,7 +113,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon rapproche son repas de {name}.* Tu peux t’asseoir. Laisse-nous juste finir notre conversation."
+        "text": "*Seoyeon rapproche son repas de moi.* Tu peux t’asseoir. Laisse-nous juste finir notre conversation."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -414,7 +414,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "Infirmière",
-        "text": "Pas besoin de le changer tous les jours. Demain matin, on regarde la plaie, et on décide. *Elle s'interrompt en pliant en deux l'emballage vide du pansement, et lève vers {name} un regard un peu trouble.*"
+        "text": "Pas besoin de le changer tous les jours. Demain matin, on regarde la plaie, et on décide. *Elle s'interrompt en pliant en deux l'emballage vide du pansement, et lève vers moi un regard un peu trouble.*"
     },
     "lunch2_dain_end_z": {
         "name": "Infirmière",

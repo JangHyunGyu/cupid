@@ -347,7 +347,7 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie dreht das Infoblatt zur schulischen Beratungshilfe gerade zu {name} hin.*"
+        "text": "*Sie dreht das Infoblatt zur schulischen Beratungshilfe gerade zu mir hin.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Schulkrankenschwester",

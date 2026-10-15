@@ -347,7 +347,7 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "School Nurse",
-        "text": "*She turns the school counseling support sheet squarely toward {name}.*"
+        "text": "*She turns the school counseling support sheet squarely toward me.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "School Nurse",

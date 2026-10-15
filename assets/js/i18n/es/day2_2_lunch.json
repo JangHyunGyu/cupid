@@ -113,7 +113,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon acerca su comida a {name}.* Puedes sentarte. Pero déjanos terminar lo que estábamos hablando."
+        "text": "*Seoyeon acerca su comida hacia mí.* Puedes sentarte. Pero déjanos terminar lo que estábamos hablando."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -414,7 +414,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "Enfermera",
-        "text": "No hace falta cambiarla todos los días sí o sí. Mañana por la mañana miramos cómo está la herida y decidimos. *A medio doblar por la mitad el envoltorio vacío de la venda, mira hacia arriba a {name} con una mirada extraña.*"
+        "text": "No hace falta cambiarla todos los días sí o sí. Mañana por la mañana miramos cómo está la herida y decidimos. *A medio doblar por la mitad el envoltorio vacío de la venda, me mira desde abajo con una mirada extraña.*"
     },
     "lunch2_dain_end_z": {
         "name": "Enfermera",

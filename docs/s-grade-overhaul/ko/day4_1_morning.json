@@ -347,7 +347,7 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "보건선생님",
-        "text": "*학교 상담 지원 안내문을 {name} 쪽으로 반듯하게 돌려 놓는다.*"
+        "text": "*학교 상담 지원 안내문을 내 눈앞으로 반듯하게 돌려 놓는다.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "보건선생님",

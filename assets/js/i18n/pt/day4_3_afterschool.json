@@ -133,7 +133,7 @@
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Vem sentar aqui do meu lado. Hoje não precisa abrir um livro. Você segurou minha mão e veio comigo até aqui. *Yuna se recosta fundo no sofá e ergue o olhar para {name}. Entre os dedos finos, um marcador prateado.*"
+        "text": "Vem sentar aqui do meu lado. Hoje não precisa abrir um livro. Você segurou minha mão e veio comigo até aqui. *Yuna se recosta fundo no sofá e ergue o olhar para mim. Entre os dedos finos, um marcador prateado.*"
     },
     "confess_yuna_5": {
         "name": "{name}",

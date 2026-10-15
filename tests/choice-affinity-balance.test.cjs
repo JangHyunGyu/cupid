@@ -1816,14 +1816,14 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
     ];
     // Reviewed dialogue-balance copy in all eight languages; see docs/qa/dialogue-balance-2026-10-04.json and docs/qa/scene-upgrade-20261015.json.
     const expectedDigests = {
-        "ko": "48c79cba81c30aba60977f31dd9bc34ba79a74f6b6bb71d26192fe69bfa2b8a4",
-        "en": "cda53f9ce75b587f8ca16a7aec153138ea913d5fc6d7f569bf43895403eb8c23",
-        "ja": "d26bf856af84f0ffd3d2a6c21619f51b44a740c395ecc461c867e4d870344ba0",
-        "es": "d954f6a010a4e7b78ea3d517237aff0b2be3ef17f047b20e14067dd4677780f7",
-        "fr": "dd95fa7ce63ad1425acbd8a3ce493042c224fa832cf67647d274abffb7effc92",
-        "de": "32559af4e9e9d0c8e2b8e986a7b5e40764c57a1ce13c04c2366ca925960eed7f",
-        "pt": "eaf8171e730d6e76fc002fe5cd8bfb9e6a8e8b16b20ff90407d63eeaa6ce68cc",
-        "zh": "946040d0eae7aec1770653a1068ffbc3b517c12fc8f7222a911569ef99e30466"
+        "ko": "65611e5d1710494fc681b72ed24518ca8a228cad4e6896d11dcf2db92980b574",
+        "en": "e3eb92b53e52b522250f617797b695b89c927151cd2c7669daf7eadeed731b74",
+        "ja": "8bd7877f4bfb8c66d3994e5fea13477efb926339363511b199b797fbd30a0423",
+        "es": "d82e7246d86d2bd868a1e92e62ce87bce728aac6c69e3c544c24396634e3e1ed",
+        "fr": "3234d79fed09124d134196dc4c0e84f78d0a7ed37ef9c658f942c1d48d6f74d9",
+        "de": "3190432b8193c30a1f87067b4f172d51f427b6cd3b524126dcdcd3dd67584e25",
+        "pt": "cab006b3a083a6e54ad2f209b74b3c6e68286b31879ed2a48e1305ef8cbecce0",
+        "zh": "aedf622f1d587a33a03ab68142daac0b0e979223659d0b7b7b94f0ad31346848"
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {

@@ -133,7 +133,7 @@
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Viens t'asseoir à côté de moi. Aujourd'hui, pas besoin d'ouvrir un livre. Tu m'as tenu la main et tu m'as suivie jusqu'ici. *Yuna s'enfonce dans le canapé et lève les yeux vers {name}. Entre ses doigts fins, un marque-page argenté.*"
+        "text": "Viens t'asseoir à côté de moi. Aujourd'hui, pas besoin d'ouvrir un livre. Tu m'as tenu la main et tu m'as suivie jusqu'ici. *Yuna s'enfonce dans le canapé et lève les yeux vers moi. Entre ses doigts fins, un marque-page argenté.*"
     },
     "confess_yuna_5": {
         "name": "{name}",

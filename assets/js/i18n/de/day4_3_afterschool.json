@@ -133,7 +133,7 @@
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Komm her, setz dich neben mich. Heute müssen wir kein Buch aufschlagen. Du hast meine Hand genommen und bist mir bis hierher gefolgt. *Yuna lehnt sich tief ins Sofa und sieht zu {name} auf. Zwischen ihren schmalen Fingern steckt ein silbernes Lesezeichen.*"
+        "text": "Komm her, setz dich neben mich. Heute müssen wir kein Buch aufschlagen. Du hast meine Hand genommen und bist mir bis hierher gefolgt. *Yuna lehnt sich tief ins Sofa und sieht zu mir auf. Zwischen ihren schmalen Fingern steckt ein silbernes Lesezeichen.*"
     },
     "confess_yuna_5": {
         "name": "{name}",

@@ -65,12 +65,23 @@ for (const file of FILES) {
     }
 }
 
+// 대사 문자열을 받아 지문(*...*) 안의 따옴표 없는 3인칭 {name}을 제외한 뒤 플레이스홀더별 등장 횟수 객체를 반환(빈 값이면 빈 객체 반환)
 function countPlaceholders(text) {
     if (!text) return {};
-    const matches = text.match(/\{[^}]+\}/g) || [];
+    const normalized = text.replace(/\*[^*]+\*/g, segment =>
+        segment.replace(/(?<!['"‘’“”「」『』«»])\{name\}(?!['"‘’“”「」『』«»])/g, '')
+    );
+    const matches = normalized.match(/\{[^}]+\}/g) || [];
     const result = {};
     matches.forEach(m => { result[m] = (result[m] || 0) + 1; });
     return result;
+}
+
+// 대사 문자열을 받아 지문(*...*) 안에 따옴표 없이 쓰인 3인칭 {name}이 남아 있는지 확인해 불리언 반환(빈 값이면 false 반환)
+function hasUnquotedStageDirectionName(text) {
+    if (!text) return false;
+    const segments = text.match(/\*[^*]+\*/g) || [];
+    return segments.some(seg => /(?<!['"‘’“”「」『』«»])\{name\}(?!['"‘’“”「」『』«»])/.test(seg));
 }
 
 const issues = [];
@@ -117,6 +128,10 @@ for (const file of FILES) {
     const koData = i18n['ko'][file];
     if (!koData) continue;
     for (const [key, koNode] of Object.entries(koData)) {
+        // 한국어 지문(*...*) 안에서 주인공을 3인칭 {name}으로 부르면 몰입이 깨지므로 1인칭 서술 유지 여부 확인
+        if (koNode.text && hasUnquotedStageDirectionName(koNode.text)) {
+            addIssue('ERROR', 'STAGE_DIRECTION_NAME', 'ko', file, key, '한국어 지문(*...*) 내 3인칭 {name} 서술 발견');
+        }
         for (const lang of LANGS.filter(l => l !== 'ko')) {
             const trData = i18n[lang][file];
             if (!trData || !trData[key]) continue;

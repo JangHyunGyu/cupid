@@ -113,7 +113,7 @@
     },
     "lunch2_seo_13b_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon aproxima a marmita de {name}.* Pode sentar. Só deixa a gente terminar a conversa."
+        "text": "*Seoyeon aproxima a marmita de mim.* Pode sentar. Só deixa a gente terminar a conversa."
     },
     "lunch2_seo_14": {
         "name": "Seoyeon",
@@ -414,7 +414,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "Enfermeira",
-        "text": "Não precisa trocar todo dia, sem falta. Amanhã de manhã você vê como está o ferimento e decide. *Ela para no meio de dobrar ao meio a embalagem vazia do curativo e olha de baixo para {name}, com um olhar peculiar.*"
+        "text": "Não precisa trocar todo dia, sem falta. Amanhã de manhã você vê como está o ferimento e decide. *Ela para no meio de dobrar ao meio a embalagem vazia do curativo e olha de baixo para mim, com um olhar peculiar.*"
     },
     "lunch2_dain_end_z": {
         "name": "Enfermeira",

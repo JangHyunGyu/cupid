@@ -313,7 +313,7 @@
     },
     "after2_seo_8b": {
         "name": "{name}",
-        "text": "Te estoy ayudando en serio. ¿No puedes soltarme un elogio claro, aunque sea uno? Sin darle tantas vueltas. *La punta de los dedos de Seoyeon, que pasaba los papeles, se detiene, y la mirada tras las gafas se vuelve hacia {name}.*"
+        "text": "Te estoy ayudando en serio. ¿No puedes soltarme un elogio claro, aunque sea uno? Sin darle tantas vueltas. *La punta de los dedos de Seoyeon, que pasaba los papeles, se detiene, y la mirada tras las gafas se vuelve hacia mí.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -551,7 +551,7 @@
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
-        "text": "*Yuna alza la vista por encima del libro y mira a {name} con una quietud casi insistente. Entre sus dedos blancos, el cable del auricular enrollado no se mueve ni un milímetro.*"
+        "text": "*Yuna alza la vista por encima del libro y me mira con una quietud casi insistente. Entre sus dedos blancos, el cable del auricular enrollado no se mueve ni un milímetro.*"
     },
     "after2_yuna_choice": {
         "name": "{name}",

@@ -133,7 +133,7 @@
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Come sit next to me. We don't have to open a book today. You held my hand and followed me all the way here. *Yuna leans back deep into the sofa and looks up at {name}. A silver bookmark is held between her slender fingers.*"
+        "text": "Come sit next to me. We don't have to open a book today. You held my hand and followed me all the way here. *Yuna leans back deep into the sofa and looks up at me. A silver bookmark is held between her slender fingers.*"
     },
     "confess_yuna_5": {
         "name": "{name}",

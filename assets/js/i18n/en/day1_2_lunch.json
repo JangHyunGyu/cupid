@@ -66,7 +66,7 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*With the toe of her shoe, she nudges a chair leg and sets the gap toward {name}.* Suspicious, aren't you. Downstairs is loud. I brought you up because it's quiet here."
+        "text": "*With the toe of her shoe, she nudges a chair leg and sets the gap toward me.* Suspicious, aren't you. Downstairs is loud. I brought you up because it's quiet here."
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
@@ -328,7 +328,7 @@
     },
     "lunch_dain_after_5": {
         "name": "Dain",
-        "text": "*She taps {name}'s shoulder with a playful fist, then steps back a pace, leaving the warmth of her springy fingertips.*"
+        "text": "*She taps my shoulder with a playful fist, then steps back a pace, leaving the warmth of her springy fingertips.*"
     },
     "lunch_dain_freetalk": {
         "name": "Dain",

@@ -347,7 +347,7 @@
     },
     "hidden_nurse_d4_morning_10": {
         "name": "Infirmière",
-        "text": "*L'infirmière tourne bien droit vers {name} la brochure d'aide au suivi du lycée.*"
+        "text": "*L'infirmière tourne bien droit vers moi la brochure d'aide au suivi du lycée.*"
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Infirmière",

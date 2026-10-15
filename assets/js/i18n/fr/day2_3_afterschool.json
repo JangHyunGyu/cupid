@@ -313,7 +313,7 @@
     },
     "after2_seo_8b": {
         "name": "{name}",
-        "text": "Je me donne du mal pour t'aider. Tu pourrais lâcher un compliment franc, non ? Arrête de rester aussi vague. *Les doigts de Seoyeon s'arrêtent sur les documents. Derrière ses lunettes, son regard se tourne vers {name}.*"
+        "text": "Je me donne du mal pour t'aider. Tu pourrais lâcher un compliment franc, non ? Arrête de rester aussi vague. *Les doigts de Seoyeon s'arrêtent sur les documents. Derrière ses lunettes, son regard se tourne vers moi.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -551,7 +551,7 @@
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
-        "text": "*Yuna lève la tête par-dessus le livre et fixe {name} sans bouger, d'un regard presque obstiné. Entre ses doigts blancs, le fil de l'écouteur enroulé ne frémit pas.*"
+        "text": "*Yuna lève la tête par-dessus le livre et me fixe sans bouger, d'un regard presque obstiné. Entre ses doigts blancs, le fil de l'écouteur enroulé ne frémit pas.*"
     },
     "after2_yuna_choice": {
         "name": "{name}",
