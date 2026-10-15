@@ -1,0 +1,4040 @@
+{
+  "date": "2026-10-15",
+  "baseline": "c311b0f1e38519cde6cafa4a296085ee376d8c38",
+  "instruction": "C:/Users/user/.codex/attachments/d2b66658-a370-4575-9ac4-293e5ad27744/붙여넣은 텍스트.txt",
+  "gameplay": {
+    "scenesBefore": 3393,
+    "scenesAfter": 3393,
+    "unchanged": true,
+    "sha256": "5b8ec2e70c1396bc53ec50781a8e8f577bbbf95b84de46686425c1944ef5d827",
+    "routeBudgets": {
+      "Seoyeon": 125,
+      "Yuna": 125,
+      "Dain": 126,
+      "Teacher": 123,
+      "Nurse": 123,
+      "Haeun": 127
+    },
+    "storedAffinityCap": 100
+  },
+  "framing": {
+    "normal": 1,
+    "far": 0.88,
+    "close": 1.14,
+    "intimate": 1.24,
+    "composition": "Distance multiplies the existing portrait padding and side-slot scale; normal scenes preserve their previous scale",
+    "depthOfField": "Backdrop blur on the character layer preserves the background time/tone filter",
+    "reset": "Unspecified scenes return to normal and remove depth blur"
+  },
+  "staging": {
+    "positions": {
+      "left": "Seoyeon",
+      "center": "Yuna",
+      "right": "Dain"
+    },
+    "day3Stairs": "Dain joins after the authored arrival at after3_confront_5_b; no unseen Yuna arrival is invented",
+    "counteroffer": "Existing FreeTalk participant resolver selects the saved lead and tempter, including school-staff routes",
+    "mobile": "Three-person portrait staging uses equal 0.72 slot scale with bottom anchoring so all three faces remain visible",
+    "listenerExpressions": "Exposure listeners retain sad/bored/pouting poses instead of resetting to neutral between accusations; the authored speaking expression is always preserved."
+  },
+  "sound": {
+    "presets": [
+      "page_turn",
+      "door",
+      "notification",
+      "volleyball",
+      "heartbeat",
+      "library",
+      "gym",
+      "rain"
+    ],
+    "method": "Native WebAudio sample-rate synthesis with deterministic noise; no missing sample-file placeholders",
+    "ambience": "Independent looping source and gain controlled by existing SFX volume and mute",
+    "silence": "bgm none/null plus finite 0–30 second fade; no none gallery unlock",
+    "failure": "Unknown synthesis and invalid direction metadata are rejected by validation; optional missing SFX remains silent"
+  },
+  "metadataChanges": [
+    {
+      "id": "morning2_seo_dust_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "morning2_seo_dust_3",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "morning2_seo_dust_4",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "morning2_seo_dust_5",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_yuna_earphone",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_yuna_earphone_2",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_yuna_earphone_2_b",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_yuna_earphone_3",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_dain_high_2",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_seo_high_2",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_seo_pretty_high_4",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_seo_flower_2",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_seo_end",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_seo_end_b",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_seo_end_c",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "date_seo_end_d",
+      "file": "assets/js/scenario/day4_2_lunch.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_seo_1_roof",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_seo_1_gate",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_seo_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_seo_others_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_dain_1_fun",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_dain_1_plain",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_dain_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_dain_others",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_dain_others_seo",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_dain_others_yuna",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_yuna_1_thanks",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "characters": {
+          "before": {
+            "center": {
+              "src": "assets/images/characters/yuna_normal.png",
+              "opacity": 0.35
+            }
+          },
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_yuna_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "characters": {
+          "before": {
+            "center": {
+              "src": "assets/images/characters/yuna_normal.png",
+              "opacity": 0.35
+            }
+          },
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_yuna_others",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_yuna_others_seo",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_yuna_others_dain",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_yuna_others_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_none_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning2_greet_none_neg_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_start",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_start_2_b",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_1",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_2",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_3",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_4",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_5",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_6",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_7",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_7_b",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_10",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_meal_10_b",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_1",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        },
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 1
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_2",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_3",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_4",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        },
+        "bgm": {
+          "before": null,
+          "after": "mystery.mp3"
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_6",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_7",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_pout.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_7_b",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_pout.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_9",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_10",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_11",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_sad.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_12",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/minsu_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/minsu_normal.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_14",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/minsu_smirk.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/minsu_smirk.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_choice",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_honest_1",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_honest_2",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_honest_3",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_honest_4",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_honest_5",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_honest_6",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_honest_7",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_excuse_1",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_excuse_2",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_excuse_2_b",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_excuse_3",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_excuse_4",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_expose_run_1",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_pout.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "lunch3_harem_1",
+      "file": "assets/js/scenario/day3_2_lunch.js",
+      "changes": {
+        "character": {
+          "before": null,
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_2",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_3",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:heartbeat"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_4",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_5",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_6",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_7",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_8",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        },
+        "bgm": {
+          "before": null,
+          "after": "confession.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_9",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_10",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_11",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_11_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_12",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_2",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_3",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:heartbeat"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_3_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_4",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_5",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_6",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_6_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_7",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_8",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_8_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_8_c",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_9",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        },
+        "bgm": {
+          "before": null,
+          "after": "confession.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_9_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_2",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_3",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:heartbeat"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_3_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_4",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_5",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_6",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "close"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_7",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_8",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_8_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_9",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_9_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        },
+        "bgm": {
+          "before": null,
+          "after": "confession.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_10",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_10_b",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_hug_choice",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_hug_1",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_hug_2_b",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_hug_2_c",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_hug_3",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_pinky_1",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_pinky_2",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_pinky_3",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_pinky_4",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_pinky_5",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_pinky_5_b",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_skin70_1",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_skin60_1",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_seo_skin60_2",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_dain_skin70_1",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_dain_skin70_2",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_dain_skin70_3",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_dain_skin60_1",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_dain_skin60_2",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_yuna_skin70_1",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_yuna_skin70_2",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_yuna_skin70_3",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_yuna_skin60_1",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_yuna_skin60_2",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_yuna_moved_3",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "wall_yuna_moved_5_b",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "intimate"
+        }
+      }
+    },
+    {
+      "id": "after5_farewell_seo_6_b",
+      "file": "assets/js/scenario/day5_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "far"
+        }
+      }
+    },
+    {
+      "id": "after5_farewell_yuna_4",
+      "file": "assets/js/scenario/day5_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "far"
+        }
+      }
+    },
+    {
+      "id": "after5_farewell_dain_4_d",
+      "file": "assets/js/scenario/day5_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "far"
+        }
+      }
+    },
+    {
+      "id": "after5_farewell_yuna_neg",
+      "file": "assets/js/scenario/day5_3_afterschool.js",
+      "changes": {
+        "framing": {
+          "before": null,
+          "after": "far"
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_2",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_3",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/teacher_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/teacher_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_4",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_5",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_5_b",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/teacher_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/teacher_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_5_c",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/teacher_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/teacher_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_5_d",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/teacher_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/teacher_angry.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_yuna_1",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:page_turn"
+        }
+      }
+    },
+    {
+      "id": "classroom_yuna_4",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_seat_2",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_talk_2",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_talk_3",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_talk_4",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_talk_5",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_talk_6",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_normal.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_talk_7",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_dain_talk_8",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_laugh.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_yuna_note_1",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:page_turn"
+        }
+      }
+    },
+    {
+      "id": "classroom_yuna_note_3",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_yuna_note_5",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "classroom_yuna_note_6",
+      "file": "assets/js/scenario/day1_1_morning.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/yuna_bored.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_5_b",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        },
+        "bgm": {
+          "before": null,
+          "after": "mystery.mp3"
+        }
+      }
+    },
+    {
+      "id": "after3_confront_5_c",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/dain_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_6",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_choice",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_admit",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_admit_b",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_admit_2",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_cry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_cry.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_admit_3",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_cry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_cry.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_admit_4",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_admit_4_b",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_admit_5",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_excuse",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_excuse_2",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_excuse_2_b",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_angry.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_angry.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_lie_b",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_lie",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_lie_2",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "after3_confront_end",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "character": {
+          "before": "assets/images/characters/seyoun_sad.png",
+          "after": null
+        },
+        "characters": {
+          "before": null,
+          "after": {
+            "left": "assets/images/characters/seyoun_sad.png",
+            "right": "assets/images/characters/dain_sad.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "morning5_counteroffer_gather",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "staging": {
+          "before": null,
+          "after": "counteroffer"
+        }
+      }
+    },
+    {
+      "id": "morning5_counteroffer_choice",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "staging": {
+          "before": null,
+          "after": "counteroffer"
+        }
+      }
+    },
+    {
+      "id": "morning5_counteroffer_choice_lead",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "staging": {
+          "before": null,
+          "after": "counteroffer"
+        }
+      }
+    },
+    {
+      "id": "morning5_counteroffer_choice_tempter",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "staging": {
+          "before": null,
+          "after": "counteroffer"
+        }
+      }
+    },
+    {
+      "id": "morning5_counteroffer_choice_neither",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "staging": {
+          "before": null,
+          "after": "counteroffer"
+        }
+      }
+    },
+    {
+      "id": "after3_confront_1",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": "mystery.mp3",
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 1
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_choice",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 1.5
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_mid_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_low_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_seo_yes_neg",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_choice",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 1.5
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_mid_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_low_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_yuna_yes_neg",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_choice",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 1.5
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:volleyball"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_mid_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_low_1",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "confess_dain_yes_neg",
+      "file": "assets/js/scenario/day4_3_afterschool.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "sunset2.mp3"
+        }
+      }
+    },
+    {
+      "id": "morning5_caught_seoyeon_by_dain",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 0
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:notification"
+        }
+      }
+    },
+    {
+      "id": "morning5_caught_seoyeon_by_yuna",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 0
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:notification"
+        }
+      }
+    },
+    {
+      "id": "morning5_caught_dain_by_seoyeon",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 0
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:notification"
+        }
+      }
+    },
+    {
+      "id": "morning5_caught_dain_by_yuna",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 0
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:notification"
+        }
+      }
+    },
+    {
+      "id": "morning5_caught_yuna_by_seoyeon",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 0
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:notification"
+        }
+      }
+    },
+    {
+      "id": "morning5_caught_yuna_by_dain",
+      "file": "assets/js/scenario/day5_1_morning.js",
+      "changes": {
+        "bgm": {
+          "before": null,
+          "after": "none"
+        },
+        "bgmFadeOut": {
+          "before": null,
+          "after": 0
+        },
+        "ambient": {
+          "before": null,
+          "after": "none"
+        },
+        "sfx": {
+          "before": null,
+          "after": "synth:notification"
+        }
+      }
+    },
+    {
+      "id": "morning2_note_2",
+      "file": "assets/js/scenario/day2_1_morning.js",
+      "changes": {
+        "sfx": {
+          "before": null,
+          "after": "synth:page_turn"
+        }
+      }
+    },
+    {
+      "id": "after3_confront_3",
+      "file": "assets/js/scenario/day3_3_afterschool.js",
+      "changes": {
+        "sfx": {
+          "before": null,
+          "after": "synth:door"
+        }
+      }
+    },
+    {
+      "id": "wall_dain_12_c",
+      "file": "assets/js/scenario/day4_4_night.js",
+      "changes": {
+        "sfx": {
+          "before": null,
+          "after": "synth:volleyball"
+        }
+      }
+    }
+  ],
+  "koreanReview": {
+    "skill": "D:/workspace/im-not-ai/codex/skills/humanize-korean/SKILL.md",
+    "quickRules": "D:/workspace/im-not-ai/skills/humanize-korean/references/quick-rules.md",
+    "runId": "2026-10-15-003-af79",
+    "route": "light",
+    "grade": "B",
+    "selfCheck": "6/6",
+    "gate": {
+      "genre": "essay",
+      "change_rate": {
+        "rate": 0.002,
+        "scope": "전문",
+        "verdict": "OK"
+      },
+      "s1_targets": [],
+      "antithesis": {
+        "before": 0,
+        "after": 0,
+        "verdict": "스킵 (원문 대구 < 5)"
+      },
+      "golden": [],
+      "sentence_touch": {
+        "rate": 0.0556,
+        "touched": 2,
+        "total": 36
+      },
+      "numbers_dropped": [],
+      "modality": {
+        "lost_pairs": [],
+        "uncertain_pairs": [],
+        "counts": {
+          "deontic": {
+            "before": 0,
+            "after": 0
+          },
+          "hedge": {
+            "before": 0,
+            "after": 0
+          }
+        },
+        "verdict": "OK"
+      },
+      "gate": {
+        "verdict": "OK — 수렴",
+        "exit_code": 0
+      }
+    },
+    "records": [
+      {
+        "id": "morning2_start",
+        "file": "day2_1_morning.json",
+        "original": "*전학 온 지 이틀째 아침. 교복 소매에 남았던 빳빳한 접힌 자국이 어제보다 한결 부드러워져 있다.*",
+        "draft": "*전학 온 지 이틀째 아침. 교복 소매에 남았던 빳빳한 접힌 자국이 어제보다 옅어져 있다. 교과서를 펴자 어제 급히 적은 시간표가 여백에 남아 있다.*",
+        "final": "*전학 온 지 이틀째 아침. 교복 소매에 남았던 빳빳한 접힌 자국이 어제보다 옅어져 있다. 교과서를 펴자 어제 급히 적은 시간표가 여백에 남아 있다.*"
+      },
+      {
+        "id": "lunch2_start",
+        "file": "day2_2_lunch.json",
+        "original": "*아침에 받은 유나의 쪽지를 손안에 쥔 채 옥상 계단과 지하 매점, 그리고 도서관 별관으로 갈라지는 복도 한가운데에 멈춰 선다.*",
+        "draft": "*아침에 받은 유나의 쪽지를 손안에 쥔다. 수업 사이마다 펼친 쪽지의 접힌 모서리가 닳아 있다. 옥상 계단과 지하 매점, 도서관 별관으로 갈라지는 복도에서 걸음을 멈춘다.*",
+        "final": "*아침에 받은 유나의 쪽지를 손안에 쥔다. 수업 사이마다 펼친 쪽지의 접힌 모서리가 닳아 있다. 옥상 계단과 지하 매점, 도서관 별관으로 갈라지는 복도에서 걸음을 멈춘다.*"
+      },
+      {
+        "id": "after2_start",
+        "file": "day2_3_afterschool.json",
+        "original": "*종례가 끝난 방과후 교실. 주머니 속 휴대폰에 새 알림 두 개가 나란히 떠 있다.*",
+        "draft": "*종례가 끝난 방과후 교실. 쉬는 시간마다 꺼냈던 휴대폰이 주머니 안에서 다시 짧게 울린다. 새 알림 두 개가 나란히 떠 있다.*",
+        "final": "*종례가 끝난 방과 후 교실. 쉬는 시간마다 꺼냈던 휴대폰이 주머니 안에서 다시 짧게 울린다. 새 알림 두 개가 나란히 떠 있다.*"
+      },
+      {
+        "id": "morning3_start",
+        "file": "day3_1_morning.json",
+        "original": "*전학 사흘째 아침. 밤늦도록 깜빡이는 메시지 창을 붙들고 있던 탓에 알람을 세 번이나 끄고 늦잠을 잤다.*",
+        "draft": "*전학 사흘째, 금요일 아침. 밤늦도록 깜빡이는 메시지 창을 붙들고 있던 탓에 알람을 세 번이나 끄고 늦잠을 잤다.*",
+        "final": "*전학 사흘째, 금요일 아침. 밤늦도록 깜빡이는 메시지 창을 보고 있던 탓에 알람을 세 번이나 끄고 늦잠을 잤다.*"
+      },
+      {
+        "id": "lunch3_start",
+        "file": "day3_2_lunch.json",
+        "original": "내 빵도 나눠 먹어. *서연은 옆, 다인은 맞은편에 앉는다. 유나가 의자를 끈다.*",
+        "draft": "내 빵도 나눠 먹어. *사흘째 점심. 서연은 옆, 다인은 맞은편에 앉는다. 유나가 의자를 끈다.*",
+        "final": "내 빵도 나눠 먹어. *사흘째 점심. 서연은 옆, 다인은 맞은편에 앉는다. 유나가 의자를 끈다.*"
+      },
+      {
+        "id": "after3_start",
+        "file": "day3_3_afterschool.json",
+        "original": "*방과 후, 노을빛이 길게 드리운 복도 갈림길에 선다. 학생회실과 도서관 별관, 체육관을 가리키는 표지판이 저마다 다른 방향을 향하고 있다.*",
+        "draft": "*방과 후, 노을빛 복도 갈림길에 선다. 사흘째 지나는 학생회실·도서관 별관·체육관 표지판을 올려다보고 어깨의 가방끈을 고쳐 쥔다.*",
+        "final": "*방과 후, 노을빛 복도 갈림길에 선다. 사흘째 지나는 학생회실·도서관 별관·체육관 표지판을 올려다보고 어깨의 가방끈을 고쳐 쥔다.*"
+      },
+      {
+        "id": "night3_start",
+        "file": "day3_4_night.json",
+        "original": "*지친 몸을 이끌고 방에 돌아와 교복 가방을 의자 등받이에 걸어 둔다.*",
+        "draft": "*금요일 밤, 지친 몸으로 방에 돌아와 교복 차림으로 의자 등받이에 가방을 건다. 가방 밖으로 나온 교과서 모서리에는 사흘치 손때가 묻어 있다.*",
+        "final": "*금요일 밤, 지친 몸으로 방에 돌아와 교복 차림으로 의자 등받이에 가방을 건다. 가방 밖으로 나온 교과서 모서리에는 사흘치 손때가 묻어 있다.*"
+      },
+      {
+        "id": "night3_end",
+        "file": "day3_4_night.json",
+        "original": "*스탠드 불을 완전히 끄고 휴대폰을 머리맡에 엎어 둔다.*",
+        "draft": "*금요일 시간표가 적힌 교과서를 덮고 스탠드 불을 완전히 끈다. 휴대폰은 머리맡에 엎어 둔다.*",
+        "final": "*금요일 시간표가 적힌 교과서를 덮고 스탠드 불을 완전히 끈다. 휴대폰은 머리맡에 엎어 둔다.*"
+      },
+      {
+        "id": "morning4_start",
+        "file": "day4_1_morning.json",
+        "original": "*넷째 날, 토요일 아침. 커튼 틈으로 스며든 주말 햇살에 눈을 뜨자마자 머리맡의 휴대폰부터 끌어당겨 오늘 일정을 확인한다.*",
+        "draft": "*넷째 날, 토요일 아침. 커튼 틈으로 스며든 주말 햇살에 눈을 뜬다. 등교 시간 대신 오늘 일정을 확인하려 머리맡의 휴대폰부터 끌어당긴다.*",
+        "final": "*넷째 날, 토요일 아침. 커튼 틈으로 스며든 주말 햇살에 눈을 뜬다. 등교 시간 대신 오늘 일정을 확인하려 머리맡의 휴대폰부터 끌어당긴다.*"
+      },
+      {
+        "id": "morning4_start_2",
+        "file": "day4_1_morning.json",
+        "original": "*창문을 열어 선선한 아침 공기를 들이마시고 약속 장소가 적힌 메시지를 다시 열어 본다.*",
+        "draft": "*창문을 열어 선선한 아침 공기를 들이마신다. 주중에 확인하던 시간표 대신 약속 장소가 적힌 메시지를 다시 열어 본다.*",
+        "final": "*창문을 열어 선선한 아침 공기를 들이마신다. 주중에 확인하던 시간표 대신 약속 장소가 적힌 메시지를 다시 열어 본다.*"
+      }
+    ],
+    "note": "A second author pass clarified three physical descriptions before the final conservative monolith run; earlier inputs are retained locally. No Korean code comments or log messages added."
+  },
+  "localizedCopy": [
+    {
+      "lang": "ko",
+      "id": "morning2_start",
+      "file": "assets\\js\\i18n\\ko\\day2_1_morning.json",
+      "before": "*전학 온 지 이틀째 아침. 교복 소매에 남았던 빳빳한 접힌 자국이 어제보다 한결 부드러워져 있다.*",
+      "after": "*전학 온 지 이틀째 아침. 교복 소매에 남았던 빳빳한 접힌 자국이 어제보다 옅어져 있다. 교과서를 펴자 어제 급히 적은 시간표가 여백에 남아 있다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "lunch2_start",
+      "file": "assets\\js\\i18n\\ko\\day2_2_lunch.json",
+      "before": "*아침에 받은 유나의 쪽지를 손안에 쥔 채 옥상 계단과 지하 매점, 그리고 도서관 별관으로 갈라지는 복도 한가운데에 멈춰 선다.*",
+      "after": "*아침에 받은 유나의 쪽지를 손안에 쥔다. 수업 사이마다 펼친 쪽지의 접힌 모서리가 닳아 있다. 옥상 계단과 지하 매점, 도서관 별관으로 갈라지는 복도에서 걸음을 멈춘다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "after2_start",
+      "file": "assets\\js\\i18n\\ko\\day2_3_afterschool.json",
+      "before": "*종례가 끝난 방과후 교실. 주머니 속 휴대폰에 새 알림 두 개가 나란히 떠 있다.*",
+      "after": "*종례가 끝난 방과 후 교실. 쉬는 시간마다 꺼냈던 휴대폰이 주머니 안에서 다시 짧게 울린다. 새 알림 두 개가 나란히 떠 있다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "morning3_start",
+      "file": "assets\\js\\i18n\\ko\\day3_1_morning.json",
+      "before": "*전학 사흘째 아침. 밤늦도록 깜빡이는 메시지 창을 붙들고 있던 탓에 알람을 세 번이나 끄고 늦잠을 잤다.*",
+      "after": "*전학 사흘째, 금요일 아침. 밤늦도록 깜빡이는 메시지 창을 보고 있던 탓에 알람을 세 번이나 끄고 늦잠을 잤다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "lunch3_start",
+      "file": "assets\\js\\i18n\\ko\\day3_2_lunch.json",
+      "before": "내 빵도 나눠 먹어. *서연은 옆, 다인은 맞은편에 앉는다. 유나가 의자를 끈다.*",
+      "after": "내 빵도 나눠 먹어. *사흘째 점심. 서연은 옆, 다인은 맞은편에 앉는다. 유나가 의자를 끈다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "after3_start",
+      "file": "assets\\js\\i18n\\ko\\day3_3_afterschool.json",
+      "before": "*방과 후, 노을빛이 길게 드리운 복도 갈림길에 선다. 학생회실과 도서관 별관, 체육관을 가리키는 표지판이 저마다 다른 방향을 향하고 있다.*",
+      "after": "*방과 후, 노을빛 복도 갈림길에 선다. 사흘째 지나는 학생회실·도서관 별관·체육관 표지판을 올려다보고 어깨의 가방끈을 고쳐 쥔다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "night3_start",
+      "file": "assets\\js\\i18n\\ko\\day3_4_night.json",
+      "before": "*지친 몸을 이끌고 방에 돌아와 교복 가방을 의자 등받이에 걸어 둔다.*",
+      "after": "*금요일 밤, 지친 몸으로 방에 돌아와 교복 차림으로 의자 등받이에 가방을 건다. 가방 밖으로 나온 교과서 모서리에는 사흘치 손때가 묻어 있다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "night3_end",
+      "file": "assets\\js\\i18n\\ko\\day3_4_night.json",
+      "before": "*스탠드 불을 완전히 끄고 휴대폰을 머리맡에 엎어 둔다.*",
+      "after": "*금요일 시간표가 적힌 교과서를 덮고 스탠드 불을 완전히 끈다. 휴대폰은 머리맡에 엎어 둔다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "morning4_start",
+      "file": "assets\\js\\i18n\\ko\\day4_1_morning.json",
+      "before": "*넷째 날, 토요일 아침. 커튼 틈으로 스며든 주말 햇살에 눈을 뜨자마자 머리맡의 휴대폰부터 끌어당겨 오늘 일정을 확인한다.*",
+      "after": "*넷째 날, 토요일 아침. 커튼 틈으로 스며든 주말 햇살에 눈을 뜬다. 등교 시간 대신 오늘 일정을 확인하려 머리맡의 휴대폰부터 끌어당긴다.*"
+    },
+    {
+      "lang": "ko",
+      "id": "morning4_start_2",
+      "file": "assets\\js\\i18n\\ko\\day4_1_morning.json",
+      "before": "*창문을 열어 선선한 아침 공기를 들이마시고 약속 장소가 적힌 메시지를 다시 열어 본다.*",
+      "after": "*창문을 열어 선선한 아침 공기를 들이마신다. 주중에 확인하던 시간표 대신 약속 장소가 적힌 메시지를 다시 열어 본다.*"
+    },
+    {
+      "lang": "en",
+      "id": "morning2_start",
+      "file": "assets\\js\\i18n\\en\\day2_1_morning.json",
+      "before": "*Morning of my second day since transferring. The stiff creases left in my uniform sleeves have gone much softer than yesterday.*",
+      "after": "*My second morning at the new school. The stiff creases in my uniform sleeves have faded since yesterday. I open my textbook; the timetable I hurriedly wrote yesterday is still in the margin.*"
+    },
+    {
+      "lang": "en",
+      "id": "lunch2_start",
+      "file": "assets\\js\\i18n\\en\\day2_2_lunch.json",
+      "before": "*Clutching the note Yuna gave me this morning, I stop in the middle of the hall where it splits toward the rooftop stairs, the basement shop, and the library annex.*",
+      "after": "*I hold Yuna’s note from this morning. Its folded corners are worn from opening it between classes. I stop where the corridor branches toward the roof stairs, the basement snack shop and the library annex.*"
+    },
+    {
+      "lang": "en",
+      "id": "after2_start",
+      "file": "assets\\js\\i18n\\en\\day2_3_afterschool.json",
+      "before": "*Homeroom is over. In the after-school classroom, two new notifications sit side by side on the phone in my pocket.*",
+      "after": "*Homeroom is over, and the classroom is emptying. The phone I kept checking during breaks vibrates again in my pocket. Two new notifications appear side by side.*"
+    },
+    {
+      "lang": "en",
+      "id": "morning3_start",
+      "file": "assets\\js\\i18n\\en\\day3_1_morning.json",
+      "before": "*Morning of my third day since transferring. I stayed up late holding onto a blinking message window, so I shut the alarm off three times and overslept.*",
+      "after": "*Friday morning, my third day at the new school. I stayed up watching the blinking message window, turned off my alarm three times and overslept.*"
+    },
+    {
+      "lang": "en",
+      "id": "lunch3_start",
+      "file": "assets\\js\\i18n\\en\\day3_2_lunch.json",
+      "before": "Have some of my bread, too. *Seoyeon sits beside me, Dain opposite. Yuna pulls up a chair.*",
+      "after": "Have some of my bread, too. *Lunch on the third day. Seoyeon sits beside me, Dain across from me. Yuna pulls up a chair.*"
+    },
+    {
+      "lang": "en",
+      "id": "after3_start",
+      "file": "assets\\js\\i18n\\en\\day3_3_afterschool.json",
+      "before": "*After school, I stand where the hallway splits, the sunset stretched long across it. Signs for the student council room, the library annex, and the gym each point a different way.*",
+      "after": "*After school, I stop at the corridor junction in the sunset. I look up at the signs for the student council room, library annex and gym that I have passed for three days, then adjust the bag strap on my shoulder.*"
+    },
+    {
+      "lang": "en",
+      "id": "night3_start",
+      "file": "assets\\js\\i18n\\en\\day3_4_night.json",
+      "before": "*I drag my tired body back to my room and hang my school bag over the back of the chair.*",
+      "after": "*Friday night. Exhausted, I get home and hang my bag on the chair back, still in uniform. The textbook corner sticking out of the bag bears three days of finger marks.*"
+    },
+    {
+      "lang": "en",
+      "id": "night3_end",
+      "file": "assets\\js\\i18n\\en\\day3_4_night.json",
+      "before": "*I turn the desk lamp all the way off and leave the phone face down by my pillow.*",
+      "after": "*I close the textbook with Friday’s timetable written in it and switch the desk lamp off completely. I put my phone face down beside my pillow.*"
+    },
+    {
+      "lang": "en",
+      "id": "morning4_start",
+      "file": "assets\\js\\i18n\\en\\day4_1_morning.json",
+      "before": "*The fourth day, Saturday morning. The moment I open my eyes to weekend sunlight slipping through a gap in the curtains, I pull the phone from beside my pillow and check today's schedule.*",
+      "after": "*Saturday morning, the fourth day. Weekend sunlight slips through the curtains and wakes me. Instead of checking when to leave for school, I pull over the phone beside my pillow to check today’s plans.*"
+    },
+    {
+      "lang": "en",
+      "id": "morning4_start_2",
+      "file": "assets\\js\\i18n\\en\\day4_1_morning.json",
+      "before": "*I open the window, breathe in the cool morning air, and open the message with the meeting place again.*",
+      "after": "*I open the window and breathe in the cool morning air. Instead of the timetable I checked during the week, I reopen the message with our meeting place.*"
+    },
+    {
+      "lang": "ja",
+      "id": "morning2_start",
+      "file": "assets\\js\\i18n\\ja\\day2_1_morning.json",
+      "before": "*転校して二日目の朝。制服の袖に残っていた、ぴんと張った折り目が昨日よりずっと柔らかくなっている。*",
+      "after": "*転校二日目の朝。制服の袖に残っていた硬い折り目が、昨日より薄くなっている。教科書を開くと、昨日急いで書いた時間割が余白に残っていた。*"
+    },
+    {
+      "lang": "ja",
+      "id": "lunch2_start",
+      "file": "assets\\js\\i18n\\ja\\day2_2_lunch.json",
+      "before": "*朝もらったユナのメモを手の中に握ったまま、屋上の階段と地下の購買、図書館別館へ分かれる廊下の真ん中で足を止める。*",
+      "after": "*今朝もらったユナのメモを手の中に握る。授業の合間に何度も開いたせいで、折った角が擦れている。屋上への階段、地下の購買、図書館の別館へと分かれる廊下で足を止める。*"
+    },
+    {
+      "lang": "ja",
+      "id": "after2_start",
+      "file": "assets\\js\\i18n\\ja\\day2_3_afterschool.json",
+      "before": "*終礼の終わった放課後の教室。ポケットの中のスマホに、新しい通知が二つ並んで浮かんでいる。*",
+      "after": "*帰りのホームルームが終わった放課後の教室。休み時間ごとに取り出していたスマホが、ポケットの中でまた短く震える。新しい通知が二つ並んでいる。*"
+    },
+    {
+      "lang": "ja",
+      "id": "morning3_start",
+      "file": "assets\\js\\i18n\\ja\\day3_1_morning.json",
+      "before": "*転校して三日目の朝。夜遅くまで点滅するメッセージ画面を見つめていたせいで、アラームを三度も切って寝坊した。*",
+      "after": "*転校三日目、金曜日の朝。夜遅くまで点滅するメッセージ画面を見ていたせいで、アラームを三度も止めて寝坊した。*"
+    },
+    {
+      "lang": "ja",
+      "id": "lunch3_start",
+      "file": "assets\\js\\i18n\\ja\\day3_2_lunch.json",
+      "before": "私のパンも分ける。*ソヨンが隣、ダインが向かいに座る。ユナが椅子を引く。*",
+      "after": "私のパンも分けてあげる。*三日目の昼休み。ソヨンは隣に、ダインは向かいに座る。ユナが椅子を引く。*"
+    },
+    {
+      "lang": "ja",
+      "id": "after3_start",
+      "file": "assets\\js\\i18n\\ja\\day3_3_afterschool.json",
+      "before": "*放課後、夕暮れの光が長く差し込む廊下の分かれ道に立つ。生徒会室と図書館の別館、体育館を指す標識が、それぞれ違う方向を向いている。*",
+      "after": "*放課後、夕日が差す廊下の分かれ道に立つ。三日間通った生徒会室、図書館の別館、体育館への案内板を見上げ、肩の鞄の紐を握り直す。*"
+    },
+    {
+      "lang": "ja",
+      "id": "night3_start",
+      "file": "assets\\js\\i18n\\ja\\day3_4_night.json",
+      "before": "*疲れた体を引きずって部屋に戻り、制服の鞄を椅子の背もたれに掛ける。*",
+      "after": "*金曜日の夜。疲れた体で帰宅し、制服のまま椅子の背に鞄を掛ける。鞄からのぞく教科書の角には、三日分の手垢が付いている。*"
+    },
+    {
+      "lang": "ja",
+      "id": "night3_end",
+      "file": "assets\\js\\i18n\\ja\\day3_4_night.json",
+      "before": "*スタンドの明かりを完全に消し、スマホを枕元に伏せて置く。*",
+      "after": "*金曜日の時間割を書いた教科書を閉じ、デスクライトを完全に消す。スマホを枕元に伏せて置く。*"
+    },
+    {
+      "lang": "ja",
+      "id": "morning4_start",
+      "file": "assets\\js\\i18n\\ja\\day4_1_morning.json",
+      "before": "*四日目、土曜日の朝。カーテンの隙間から差し込む週末の光に目を開けた瞬間、枕元のスマホを引き寄せて今日の予定を確かめる。*",
+      "after": "*四日目、土曜日の朝。カーテンの隙間から差す週末の日差しで目を覚ます。登校時刻ではなく今日の予定を確認しようと、枕元のスマホを手元に引き寄せる。*"
+    },
+    {
+      "lang": "ja",
+      "id": "morning4_start_2",
+      "file": "assets\\js\\i18n\\ja\\day4_1_morning.json",
+      "before": "*窓を開けて涼しい朝の空気を吸い、待ち合わせ場所の書いてあるメッセージを、もう一度開く。*",
+      "after": "*窓を開け、涼しい朝の空気を吸い込む。平日に見ていた時間割の代わりに、待ち合わせ場所が書かれたメッセージをもう一度開く。*"
+    },
+    {
+      "lang": "zh",
+      "id": "morning2_start",
+      "file": "assets\\js\\i18n\\zh\\day2_1_morning.json",
+      "before": "*转学来的第二天早晨。校服袖子上那道硬折痕，比昨天软了不少。*",
+      "after": "*转学后的第二个早晨。校服袖子上原本硬挺的折痕比昨天淡了些。翻开课本，昨天匆忙写下的课程表还留在页边。*"
+    },
+    {
+      "lang": "zh",
+      "id": "lunch2_start",
+      "file": "assets\\js\\i18n\\zh\\day2_2_lunch.json",
+      "before": "*我把早上收到的由娜的纸条握在手里，停在走廊正中。眼前分成天台楼梯、地下小卖部和图书馆副楼三条路。*",
+      "after": "*我把早上收到的由娜的纸条攥在手里。课间反复展开过，折起的边角已经磨损。我停在走廊岔口，前方分别通往天台楼梯、地下小卖部和图书馆别馆。*"
+    },
+    {
+      "lang": "zh",
+      "id": "after2_start",
+      "file": "assets\\js\\i18n\\zh\\day2_3_afterschool.json",
+      "before": "*放学班会结束的教室里。我口袋里的手机上，两条新通知并排亮着。*",
+      "after": "*放学班会结束后的教室里，课间总拿出来看的手机又在口袋里短促地震动。两条新通知并排显示着。*"
+    },
+    {
+      "lang": "zh",
+      "id": "morning3_start",
+      "file": "assets\\js\\i18n\\zh\\day3_1_morning.json",
+      "before": "*转学第三天的早晨。昨晚一直抓着那个闪个不停的消息窗口，闹钟关了三次，睡过了头。*",
+      "after": "*转学第三天，星期五早晨。昨晚盯着闪烁的消息窗口看到很晚，结果把闹钟关了三次，还是睡过了头。*"
+    },
+    {
+      "lang": "zh",
+      "id": "lunch3_start",
+      "file": "assets\\js\\i18n\\zh\\day3_2_lunch.json",
+      "before": "我的面包也可以分。*书妍坐在身旁，多因坐在对面，由娜拉来一把椅子。*",
+      "after": "我的面包也分你一些。*第三天的午休。书妍坐在旁边，多因坐在对面。由娜拉过椅子。*"
+    },
+    {
+      "lang": "zh",
+      "id": "after3_start",
+      "file": "assets\\js\\i18n\\zh\\day3_3_afterschool.json",
+      "before": "*放学后，我站在夕阳拉得很长的走廊岔路口。指向学生会室、图书馆别馆和体育馆的指示牌，各自朝向不同的方向。*",
+      "after": "*放学后，我站在洒着夕阳的走廊岔口，抬头看了看这三天总要经过的学生会室、图书馆别馆和体育馆指示牌，重新攥好肩上的书包带。*"
+    },
+    {
+      "lang": "zh",
+      "id": "night3_start",
+      "file": "assets\\js\\i18n\\zh\\day3_4_night.json",
+      "before": "*拖着疲惫的身体回到房间，我把书包挂在椅背上。*",
+      "after": "*星期五晚上，拖着疲惫的身体回到房间，校服还没换就把书包挂在椅背上。露在包外的课本边角，沾着这三天留下的指痕。*"
+    },
+    {
+      "lang": "zh",
+      "id": "night3_end",
+      "file": "assets\\js\\i18n\\zh\\day3_4_night.json",
+      "before": "*我把台灯完全关掉，把手机扣在枕边。*",
+      "after": "*合上写着星期五课程表的课本，把台灯彻底关掉，再将手机扣在枕边。*"
+    },
+    {
+      "lang": "zh",
+      "id": "morning4_start",
+      "file": "assets\\js\\i18n\\zh\\day4_1_morning.json",
+      "before": "*第四天，周六早晨。周末的阳光从窗帘缝里透进来，我一睁眼，就先把枕边的手机拉过来，确认今天的安排。*",
+      "after": "*第四天，星期六早晨。周末的阳光从窗帘缝隙照进来，我睁开眼。不用先看上学时间，我伸手把枕边的手机拉过来，确认今天的安排。*"
+    },
+    {
+      "lang": "zh",
+      "id": "morning4_start_2",
+      "file": "assets\\js\\i18n\\zh\\day4_1_morning.json",
+      "before": "*我打开窗，吸进清凉的早晨空气，又把写着见面地点的消息打开看了一遍。*",
+      "after": "*推开窗，吸一口清凉的晨间空气。我没有再看平日反复确认的课程表，而是重新打开写着约定地点的消息。*"
+    },
+    {
+      "lang": "es",
+      "id": "morning2_start",
+      "file": "assets\\js\\i18n\\es\\day2_1_morning.json",
+      "before": "*Segunda mañana desde el traslado. Las marcas rígidas del pliegue que quedaban en la manga del uniforme están mucho más suaves que ayer.*",
+      "after": "*Mi segunda mañana en el nuevo instituto. Las rígidas marcas de los pliegues en las mangas del uniforme se han suavizado desde ayer. Abro el libro de texto; en el margen sigue el horario que anoté ayer a toda prisa.*"
+    },
+    {
+      "lang": "es",
+      "id": "lunch2_start",
+      "file": "assets\\js\\i18n\\es\\day2_2_lunch.json",
+      "before": "*Con la nota de Yuna de esta mañana apretada en la mano, me detengo en medio del pasillo, donde se separan las escaleras de la azotea, la tienda del sótano y el anexo de la biblioteca.*",
+      "after": "*Aprieto en la mano la nota que Yuna me dio esta mañana. Sus esquinas dobladas están gastadas de abrirla entre clases. Me detengo donde el pasillo se divide hacia las escaleras de la azotea, el quiosco del sótano y el anexo de la biblioteca.*"
+    },
+    {
+      "lang": "es",
+      "id": "after2_start",
+      "file": "assets\\js\\i18n\\es\\day2_3_afterschool.json",
+      "before": "*El aula de después de clase, ya terminada la tutoría. En el celular del bolsillo hay dos avisos nuevos, uno al lado del otro.*",
+      "after": "*Ya ha terminado la tutoría de cierre y estamos en el aula después de clase. El móvil que sacaba en cada recreo vuelve a vibrar brevemente en mi bolsillo. Hay dos notificaciones nuevas, una junto a la otra.*"
+    },
+    {
+      "lang": "es",
+      "id": "morning3_start",
+      "file": "assets\\js\\i18n\\es\\day3_1_morning.json",
+      "before": "*Mañana del tercer día desde el traslado. Por quedarme hasta tarde pegado a la ventana de mensajes, que no paraba de parpadear, apagué la alarma tres veces y me quedé dormido.*",
+      "after": "*Viernes por la mañana, mi tercer día en el instituto. Anoche me quedé mirando la ventana parpadeante de mensajes hasta muy tarde; apagué la alarma tres veces y me quedé dormido.*"
+    },
+    {
+      "lang": "es",
+      "id": "lunch3_start",
+      "file": "assets\\js\\i18n\\es\\day3_2_lunch.json",
+      "before": "Compartid también mi pan. *Seoyeon se sienta al lado, Dain enfrente. Yuna acerca una silla.*",
+      "after": "Toma también un poco de mi pan. *La comida del tercer día. Seoyeon se sienta a mi lado y Dain enfrente. Yuna acerca una silla.*"
+    },
+    {
+      "lang": "es",
+      "id": "after3_start",
+      "file": "assets\\js\\i18n\\es\\day3_3_afterschool.json",
+      "before": "*Después de clase, me detengo en la bifurcación del pasillo, donde la luz del atardecer se alarga. Los letreros de la sala del consejo estudiantil, el anexo de la biblioteca y el gimnasio apuntan cada uno hacia un lado distinto.*",
+      "after": "*Después de clase me detengo en la bifurcación del pasillo, iluminado por el atardecer. Miro los letreros de la sala del consejo estudiantil, el anexo de la biblioteca y el gimnasio que llevo tres días viendo, y reajusto la correa de la mochila en el hombro.*"
+    },
+    {
+      "lang": "es",
+      "id": "night3_start",
+      "file": "assets\\js\\i18n\\es\\day3_4_night.json",
+      "before": "*Vuelvo a la habitación arrastrando el cuerpo cansado y cuelgo la mochila en el respaldo de la silla.*",
+      "after": "*Viernes por la noche. Llego agotado a mi habitación y, aún con el uniforme, cuelgo la mochila en el respaldo de la silla. La esquina del libro que sobresale lleva las marcas de tres días de dedos.*"
+    },
+    {
+      "lang": "es",
+      "id": "night3_end",
+      "file": "assets\\js\\i18n\\es\\day3_4_night.json",
+      "before": "*Apago del todo la lámpara y dejo el móvil boca abajo junto a la almohada.*",
+      "after": "*Cierro el libro donde anoté el horario del viernes y apago del todo la lámpara del escritorio. Dejo el móvil boca abajo junto a la almohada.*"
+    },
+    {
+      "lang": "es",
+      "id": "morning4_start",
+      "file": "assets\\js\\i18n\\es\\day4_1_morning.json",
+      "before": "*Cuarto día, sábado por la mañana. En cuanto abro los ojos con el sol del fin de semana colándose por la cortina, tiro del móvil de junto a la almohada y miro el plan de hoy.*",
+      "after": "*Sábado por la mañana, el cuarto día. Me despierta la luz del fin de semana que entra entre las cortinas. En vez de mirar la hora de salir al instituto, acerco el móvil de la almohada para comprobar los planes de hoy.*"
+    },
+    {
+      "lang": "es",
+      "id": "morning4_start_2",
+      "file": "assets\\js\\i18n\\es\\day4_1_morning.json",
+      "before": "*Abro la ventana, respiro el aire fresco de la mañana y vuelvo a abrir el mensaje donde está el lugar de la cita.*",
+      "after": "*Abro la ventana y respiro el aire fresco de la mañana. En lugar del horario que consultaba entre semana, vuelvo a abrir el mensaje con el lugar de nuestra cita.*"
+    },
+    {
+      "lang": "fr",
+      "id": "morning2_start",
+      "file": "assets\\js\\i18n\\fr\\day2_1_morning.json",
+      "before": "*Deuxième matin depuis le transfert. Le pli raide resté sur la manche de mon uniforme est bien plus souple qu'hier.*",
+      "after": "*Deuxième matin dans mon nouveau lycée. Les plis raides des manches de mon uniforme se sont estompés depuis hier. J’ouvre mon manuel ; l’emploi du temps noté hier à la hâte est toujours dans la marge.*"
+    },
+    {
+      "lang": "fr",
+      "id": "lunch2_start",
+      "file": "assets\\js\\i18n\\fr\\day2_2_lunch.json",
+      "before": "*Le billet de Yuna reçu ce matin serré dans la main, je m'arrête au milieu du couloir qui part vers l'escalier du toit, la supérette du sous-sol et l'annexe de la bibliothèque.*",
+      "after": "*Je serre dans ma main le mot reçu de Yuna ce matin. Ses coins pliés sont usés à force de l’avoir déplié entre les cours. Je m’arrête à la bifurcation vers l’escalier du toit, le kiosque du sous-sol et l’annexe de la bibliothèque.*"
+    },
+    {
+      "lang": "fr",
+      "id": "after2_start",
+      "file": "assets\\js\\i18n\\fr\\day2_3_afterschool.json",
+      "before": "*Salle de classe, après l'appel de fin de journée. Dans ma poche, deux nouvelles notifications s'affichent côte à côte sur le téléphone.*",
+      "after": "*La réunion de fin de journée est terminée, nous sommes encore dans la salle de classe. Le téléphone que je sortais à chaque pause vibre de nouveau brièvement dans ma poche. Deux nouvelles notifications s’affichent côte à côte.*"
+    },
+    {
+      "lang": "fr",
+      "id": "morning3_start",
+      "file": "assets\\js\\i18n\\fr\\day3_1_morning.json",
+      "before": "*Troisième matin depuis le transfert. À force d'être resté collé, tard dans la nuit, à la fenêtre de messages qui clignotait, j'ai coupé l'alarme trois fois et j'ai trop dormi.*",
+      "after": "*Vendredi matin, mon troisième jour au lycée. J’ai regardé la fenêtre de messages clignoter jusque tard dans la nuit, éteint mon réveil trois fois et fini par me lever en retard.*"
+    },
+    {
+      "lang": "fr",
+      "id": "lunch3_start",
+      "file": "assets\\js\\i18n\\fr\\day3_2_lunch.json",
+      "before": "Prenez de mon pain aussi. *Seoyeon s'assied à côté, Dain en face. Yuna tire une chaise.*",
+      "after": "Prends aussi un peu de mon pain. *Le déjeuner du troisième jour. Seoyeon s’assied à côté de moi, Dain en face. Yuna tire une chaise.*"
+    },
+    {
+      "lang": "fr",
+      "id": "after3_start",
+      "file": "assets\\js\\i18n\\fr\\day3_3_afterschool.json",
+      "before": "*Après les cours, je m'arrête au carrefour du couloir, là où la lumière du couchant s'étire. Les panneaux de la salle du conseil, de l'annexe de la bibliothèque et du gymnase pointent chacun dans une direction différente.*",
+      "after": "*Après les cours, je m’arrête à la bifurcation du couloir baigné de soleil couchant. Je lève les yeux vers les panneaux de la salle du conseil des élèves, de l’annexe de la bibliothèque et du gymnase devant lesquels je passe depuis trois jours, puis reprends la sangle de mon sac sur mon épaule.*"
+    },
+    {
+      "lang": "fr",
+      "id": "night3_start",
+      "file": "assets\\js\\i18n\\fr\\day3_4_night.json",
+      "before": "*Je traîne mon corps fatigué jusqu'à la chambre et j'accroche mon sac d'uniforme au dossier de la chaise.*",
+      "after": "*Vendredi soir. Je rentre épuisé et suspends mon sac au dossier de la chaise sans avoir quitté mon uniforme. Le coin du manuel qui dépasse porte les traces de trois jours de doigts.*"
+    },
+    {
+      "lang": "fr",
+      "id": "night3_end",
+      "file": "assets\\js\\i18n\\fr\\day3_4_night.json",
+      "before": "*J'éteins complètement la lampe et je pose le téléphone écran contre le matelas, près de l'oreiller.*",
+      "after": "*Je ferme le manuel où j’ai noté l’emploi du temps du vendredi et éteins complètement la lampe du bureau. Je pose mon téléphone face contre le lit, près de mon oreiller.*"
+    },
+    {
+      "lang": "fr",
+      "id": "morning4_start",
+      "file": "assets\\js\\i18n\\fr\\day4_1_morning.json",
+      "before": "*Quatrième jour, samedi matin. Dès que j'ouvre les yeux dans le soleil du week-end qui filtre entre les rideaux, j'attrape d'abord le téléphone à mon chevet et je vérifie le programme d'aujourd'hui.*",
+      "after": "*Samedi matin, le quatrième jour. Le soleil du week-end me réveille à travers les rideaux. Au lieu de vérifier l’heure de partir au lycée, je ramène le téléphone posé près de mon oreiller pour consulter le programme du jour.*"
+    },
+    {
+      "lang": "fr",
+      "id": "morning4_start_2",
+      "file": "assets\\js\\i18n\\fr\\day4_1_morning.json",
+      "before": "*J'ouvre la fenêtre, j'inspire l'air frais du matin, et je rouvre le message où le lieu du rendez-vous est noté.*",
+      "after": "*J’ouvre la fenêtre et inspire l’air frais du matin. À la place de l’emploi du temps que je consultais en semaine, je rouvre le message indiquant notre lieu de rendez-vous.*"
+    },
+    {
+      "lang": "de",
+      "id": "morning2_start",
+      "file": "assets\\js\\i18n\\de\\day2_1_morning.json",
+      "before": "*Der zweite Morgen seit meinem Schulwechsel. Die steifen Knickfalten an den Ärmeln meiner Uniform sind deutlich weicher als gestern.*",
+      "after": "*Mein zweiter Morgen an der neuen Schule. Die steifen Falten in meinen Uniformärmeln sind schwächer als gestern. Ich schlage das Schulbuch auf; am Rand steht noch der Stundenplan, den ich gestern hastig notiert habe.*"
+    },
+    {
+      "lang": "de",
+      "id": "lunch2_start",
+      "file": "assets\\js\\i18n\\de\\day2_2_lunch.json",
+      "before": "*Yunas Zettel vom Morgen fest in der Hand, bleibe ich mitten im Flur stehen, wo es zu den Dachtreppen, zum Schulkiosk im Keller und zum Bibliotheksanbau abzweigt.*",
+      "after": "*Ich halte Yunas Zettel von heute Morgen fest. Die gefalteten Ecken sind vom wiederholten Öffnen zwischen den Stunden abgenutzt. Ich bleibe dort stehen, wo der Flur zur Dachtreppe, zum Kiosk im Untergeschoss und zum Bibliotheksanbau abzweigt.*"
+    },
+    {
+      "lang": "de",
+      "id": "after2_start",
+      "file": "assets\\js\\i18n\\de\\day2_3_afterschool.json",
+      "before": "*Das Klassenzimmer nach dem Tagesabschluss. Auf dem Handy in meiner Tasche stehen zwei neue Benachrichtigungen nebeneinander.*",
+      "after": "*Die Abschlussbesprechung ist vorbei, wir sind nach Unterrichtsschluss noch im Klassenzimmer. Das Handy, das ich in jeder Pause hervorgeholt habe, vibriert wieder kurz in meiner Tasche. Zwei neue Benachrichtigungen stehen nebeneinander.*"
+    },
+    {
+      "lang": "de",
+      "id": "morning3_start",
+      "file": "assets\\js\\i18n\\de\\day3_1_morning.json",
+      "before": "*Der dritte Morgen seit meinem Schulwechsel. Weil ich bis tief in die Nacht am blinkenden Nachrichtenfenster hing, habe ich den Wecker dreimal ausgestellt und verschlafen.*",
+      "after": "*Freitagmorgen, mein dritter Tag an der neuen Schule. Ich habe bis spät in die Nacht auf das blinkende Nachrichtenfenster geschaut, den Wecker dreimal ausgeschaltet und verschlafen.*"
+    },
+    {
+      "lang": "de",
+      "id": "lunch3_start",
+      "file": "assets\\js\\i18n\\de\\day3_2_lunch.json",
+      "before": "Nehmt auch von meinem Brot. *Seoyeon sitzt neben mir, Dain gegenüber. Yuna zieht einen Stuhl heran.*",
+      "after": "Nimm auch etwas von meinem Brot. *Mittagspause am dritten Tag. Seoyeon setzt sich neben mich, Dain gegenüber. Yuna zieht einen Stuhl heran.*"
+    },
+    {
+      "lang": "de",
+      "id": "after3_start",
+      "file": "assets\\js\\i18n\\de\\day3_3_afterschool.json",
+      "before": "*Nach der Schule stehe ich an der Flurgabelung, über die das Abendlicht lang fällt. Die Schilder zum Schülerratsraum, zum Bibliotheksanbau und zur Turnhalle zeigen jeweils in eine andere Richtung.*",
+      "after": "*Nach dem Unterricht bleibe ich an der Flurgabelung im Abendlicht stehen. Ich sehe zu den Schildern für Schülerratsraum, Bibliotheksanbau und Sporthalle auf, an denen ich seit drei Tagen vorbeigehe, und fasse den Taschengurt auf meiner Schulter neu.*"
+    },
+    {
+      "lang": "de",
+      "id": "night3_start",
+      "file": "assets\\js\\i18n\\de\\day3_4_night.json",
+      "before": "*Ich schleppe meinen müden Körper zurück ins Zimmer und hänge die Schultasche über die Stuhllehne.*",
+      "after": "*Freitagabend. Erschöpft komme ich heim und hänge, noch in Uniform, meine Tasche über die Stuhllehne. An der herausragenden Ecke des Schulbuchs sind die Fingerspuren von drei Tagen zu sehen.*"
+    },
+    {
+      "lang": "de",
+      "id": "night3_end",
+      "file": "assets\\js\\i18n\\de\\day3_4_night.json",
+      "before": "*Ich mache die Schreibtischlampe ganz aus und lege das Handy mit dem Display nach unten ans Kopfkissen.*",
+      "after": "*Ich schließe das Schulbuch mit dem notierten Freitagsstundenplan und schalte die Schreibtischlampe ganz aus. Das Handy lege ich mit dem Display nach unten neben mein Kopfkissen.*"
+    },
+    {
+      "lang": "de",
+      "id": "morning4_start",
+      "file": "assets\\js\\i18n\\de\\day4_1_morning.json",
+      "before": "*Vierter Tag, Samstagmorgen. Kaum öffne ich die Augen in der Wochenendsonne, die durch den Vorhangspalt fällt, ziehe ich als Erstes das Handy neben dem Kopfkissen heran und prüfe den Plan für heute.*",
+      "after": "*Samstagmorgen, der vierte Tag. Das Wochenendlicht dringt durch die Vorhänge und weckt mich. Statt nach der Zeit für den Schulweg zu sehen, ziehe ich das Handy neben dem Kopfkissen heran und prüfe meine heutigen Pläne.*"
+    },
+    {
+      "lang": "de",
+      "id": "morning4_start_2",
+      "file": "assets\\js\\i18n\\de\\day4_1_morning.json",
+      "before": "*Ich öffne das Fenster, atme die kühle Morgenluft ein und öffne noch einmal die Nachricht mit dem Treffpunkt.*",
+      "after": "*Ich öffne das Fenster und atme die kühle Morgenluft ein. Statt des Stundenplans, den ich unter der Woche nachgesehen habe, öffne ich wieder die Nachricht mit unserem Treffpunkt.*"
+    },
+    {
+      "lang": "pt",
+      "id": "morning2_start",
+      "file": "assets\\js\\i18n\\pt\\day2_1_morning.json",
+      "before": "*Manhã do segundo dia desde a transferência. As marcas duras das dobras nas mangas do uniforme estão bem mais macias do que ontem.*",
+      "after": "*Minha segunda manhã na escola nova. As marcas rígidas das dobras nas mangas do uniforme estão mais suaves que ontem. Abro o livro; o horário que anotei às pressas ontem continua na margem.*"
+    },
+    {
+      "lang": "pt",
+      "id": "lunch2_start",
+      "file": "assets\\js\\i18n\\pt\\day2_2_lunch.json",
+      "before": "*Com o bilhete da Yuna, recebido de manhã, apertado na mão, paro no meio do corredor que se divide entre a escada do terraço, a cantina do subsolo e o anexo da biblioteca.*",
+      "after": "*Seguro na mão o bilhete que Yuna me deu esta manhã. Os cantos dobrados estão gastos de tanto abri-lo entre as aulas. Paro onde o corredor se divide para a escada do terraço, a cantina no subsolo e o anexo da biblioteca.*"
+    },
+    {
+      "lang": "pt",
+      "id": "after2_start",
+      "file": "assets\\js\\i18n\\pt\\day2_3_afterschool.json",
+      "before": "*A chamada final acabou. Na sala, depois da aula, dois avisos novos aparecem lado a lado no celular do bolso.*",
+      "after": "*A reunião de fim de aula acabou, e ainda estamos na sala. O celular que eu tirava do bolso em cada intervalo volta a vibrar brevemente. Duas notificações novas aparecem lado a lado.*"
+    },
+    {
+      "lang": "pt",
+      "id": "morning3_start",
+      "file": "assets\\js\\i18n\\pt\\day3_1_morning.json",
+      "before": "*Manhã do terceiro dia desde a transferência. Por ter ficado até tarde grudado na janela de mensagens que piscava, desliguei o alarme três vezes e dormi demais.*",
+      "after": "*Sexta-feira de manhã, meu terceiro dia na escola nova. Fiquei olhando a janela de mensagens piscando até tarde, desliguei o alarme três vezes e perdi a hora.*"
+    },
+    {
+      "lang": "pt",
+      "id": "lunch3_start",
+      "file": "assets\\js\\i18n\\pt\\day3_2_lunch.json",
+      "before": "Podem comer do meu pão também. *Seoyeon senta ao lado, Dain em frente. Yuna puxa uma cadeira.*",
+      "after": "Pode pegar um pouco do meu pão também. *Almoço do terceiro dia. Seoyeon se senta ao meu lado, Dain à minha frente. Yuna puxa uma cadeira.*"
+    },
+    {
+      "lang": "pt",
+      "id": "after3_start",
+      "file": "assets\\js\\i18n\\pt\\day3_3_afterschool.json",
+      "before": "*Depois da aula, paro na bifurcação do corredor, onde a luz do pôr do sol se estende comprida. As placas da sala do conselho estudantil, do anexo da biblioteca e do ginásio apontam cada uma para um lado.*",
+      "after": "*Depois das aulas, paro na bifurcação do corredor iluminado pelo pôr do sol. Olho as placas da sala do conselho estudantil, do anexo da biblioteca e do ginásio pelas quais passo há três dias, e ajeito a alça da mochila no ombro.*"
+    },
+    {
+      "lang": "pt",
+      "id": "night3_start",
+      "file": "assets\\js\\i18n\\pt\\day3_4_night.json",
+      "before": "*Arrasto o corpo cansado de volta ao quarto e penduro a mochila escolar no encosto da cadeira.*",
+      "after": "*Sexta-feira à noite. Chego exausto em casa e penduro a mochila no encosto da cadeira, ainda de uniforme. O canto do livro que aparece para fora traz as marcas de três dias de manuseio.*"
+    },
+    {
+      "lang": "pt",
+      "id": "night3_end",
+      "file": "assets\\js\\i18n\\pt\\day3_4_night.json",
+      "before": "*Apago de vez a luz do abajur e deixo o celular de bruços ao lado do travesseiro.*",
+      "after": "*Fecho o livro onde anotei o horário de sexta e apago completamente a luminária da escrivaninha. Deixo o celular virado para baixo junto ao travesseiro.*"
+    },
+    {
+      "lang": "pt",
+      "id": "morning4_start",
+      "file": "assets\\js\\i18n\\pt\\day4_1_morning.json",
+      "before": "*Quarto dia, manhã de sábado. Assim que abro os olhos na luz de fim de semana que entra pela fresta da cortina, puxo primeiro o celular da cabeceira e confiro a agenda de hoje.*",
+      "after": "*Sábado de manhã, o quarto dia. A luz do fim de semana entra pelas cortinas e me acorda. Em vez de conferir a hora de sair para a escola, puxo o celular de junto do travesseiro para ver os planos de hoje.*"
+    },
+    {
+      "lang": "pt",
+      "id": "morning4_start_2",
+      "file": "assets\\js\\i18n\\pt\\day4_1_morning.json",
+      "before": "*Abro a janela, puxo o ar fresco da manhã e abro de novo a mensagem com o lugar do encontro.*",
+      "after": "*Abro a janela e respiro o ar fresco da manhã. Em vez do horário que consultava durante a semana, volto a abrir a mensagem com o lugar do encontro.*"
+    }
+  ],
+  "updatedCopyDigests": {
+    "nodeIds": [
+      "lunch2_seo_9",
+      "lunch2_seo_10",
+      "lunch2_seo_11",
+      "lunch2_seo_13",
+      "lunch2_seo_13b",
+      "lunch2_seo_13b_b",
+      "lunch2_seo_14",
+      "lunch2_seo_16",
+      "lunch2_seo_17",
+      "lunch2_seo_19",
+      "lunch2_seo_20",
+      "after2_dain_rival_seo_low",
+      "after2_dain_rival_seo_mid",
+      "after2_dain_rival_seo_high",
+      "after2_dain_rival_yuna_low",
+      "after2_dain_rival_yuna_mid",
+      "after2_dain_rival_yuna_high",
+      "after2_seo_rival_dain_low",
+      "after2_seo_rival_dain_mid",
+      "after2_seo_rival_dain_high",
+      "after2_seo_rival_yuna_low",
+      "after2_seo_rival_yuna_mid",
+      "after2_seo_rival_yuna_high",
+      "after2_yuna_rival_dain_low",
+      "after2_yuna_rival_dain_mid",
+      "after2_yuna_rival_dain_high",
+      "after2_yuna_rival_seo_low",
+      "after2_yuna_rival_seo_mid",
+      "after2_yuna_rival_seo_high",
+      "morning3_date_seo_1",
+      "morning3_date_seo_choice",
+      "morning3_date_seo_accept",
+      "morning3_date_seo_decline",
+      "morning3_date_dain_1",
+      "morning3_date_dain_2",
+      "morning3_date_dain_choice",
+      "morning3_date_dain_accept",
+      "morning3_date_dain_decline",
+      "morning3_date_yuna_1",
+      "morning3_date_yuna_1_b",
+      "morning3_date_yuna_2",
+      "morning3_date_yuna_choice",
+      "morning3_date_yuna_accept",
+      "lunch3_start",
+      "lunch3_start_2_b",
+      "lunch3_meal_1",
+      "lunch3_meal_3",
+      "lunch3_meal_7_b",
+      "after5_farewell_seo_4",
+      "after5_farewell_seo_6",
+      "after5_farewell_yuna_3",
+      "after5_farewell_dain_2",
+      "after5_farewell_dain_4",
+      "after5_farewell_dain_4_c"
+    ],
+    "before": {
+      "ko": "67eede3e997f6ca9bcd0db56b19a828ad4eb2215eeb1c19b3e6d9c6827b2a70c",
+      "en": "4ec70da07388b91d7b4ce115355ef36b04c454637c5c9a988219317271169a3e",
+      "ja": "acbe3eb560bfce6d08713659a588a7934db906d66407f9b1f4f49220b86dcfe1",
+      "es": "b5000288fd3459a757263fe457016328df7e493fd61dda74990f1ce44fcc939f",
+      "fr": "aa2817fe1947fa57661533d4c239a72fa58ba7cd89bd56f746c9a7e088c84d93",
+      "de": "f715b33c3bcb1b480a77193efdfdd3629201345c2679d6e6d684c58dc78ae98a",
+      "pt": "ba27408147268660076e8d4298f0dae6dc7e6971925491a65cce16340b01dcad",
+      "zh": "f5856c848f2e4f01903480dd927b254949aef9365a803886dca4af7fa132e4df"
+    },
+    "after": {
+      "ko": "48c79cba81c30aba60977f31dd9bc34ba79a74f6b6bb71d26192fe69bfa2b8a4",
+      "en": "cda53f9ce75b587f8ca16a7aec153138ea913d5fc6d7f569bf43895403eb8c23",
+      "ja": "d26bf856af84f0ffd3d2a6c21619f51b44a740c395ecc461c867e4d870344ba0",
+      "es": "d954f6a010a4e7b78ea3d517237aff0b2be3ef17f047b20e14067dd4677780f7",
+      "fr": "dd95fa7ce63ad1425acbd8a3ce493042c224fa832cf67647d274abffb7effc92",
+      "de": "32559af4e9e9d0c8e2b8e986a7b5e40764c57a1ce13c04c2366ca925960eed7f",
+      "pt": "eaf8171e730d6e76fc002fe5cd8bfb9e6a8e8b16b20ff90407d63eeaa6ce68cc",
+      "zh": "946040d0eae7aec1770653a1068ffbc3b517c12fc8f7222a911569ef99e30466"
+    }
+  },
+  "validation": {
+    "orderedCommands": [
+      "scenario:sync",
+      "scenario:check",
+      "text:check",
+      "validate",
+      "npm test"
+    ],
+    "orderedResult": "All passed (exit 0)",
+    "directionUnitCases": 9,
+    "browserRegressions": {
+      "cases": 50,
+      "passed": 50,
+      "failed": 0
+    },
+    "portraitCalibration": "Single-portrait scale tests now explicitly isolate their calibration portrait from the authored three-person starting scene; original crown and scale assertions are retained",
+    "additionalScaleRun": "20/20 passed across phone, tablet, desktop, rotation and animation cases",
+    "cacheCheck": "PASS",
+    "build": "PASS",
+    "pathExploration": {
+      "explored": 50000,
+      "completed": 25000,
+      "deadEnds": 0,
+      "cap": 50000
+    },
+    "endingCases": {
+      "passed": 27,
+      "total": 27
+    },
+    "protectedMedia": "Canonical raw image URLs identify speakers even when the displayed image is a blob URL; dedicated regression passed"
+  },
+  "visualRegression": {
+    "baseline": "c311b0f1",
+    "unchangedViews": [
+      "home",
+      "gallery",
+      "ordinary daytime dialogue",
+      "school notices",
+      "phone calls"
+    ],
+    "viewports": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "comparison": [
+      {
+        "case": "1440-classroom_dain_1",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "1440-gallery",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "1440-home",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "1440-morning2_seo_1",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "1440-night_homeroom_msg_1",
+        "changedPixels": 1,
+        "totalPixels": 1296000,
+        "bounds": [
+          20,
+          626,
+          21,
+          627
+        ],
+        "maxChannelDifference": 7
+      },
+      {
+        "case": "1440-wall_seo_pre_high_1",
+        "changedPixels": 1,
+        "totalPixels": 1296000,
+        "bounds": [
+          20,
+          679,
+          21,
+          680
+        ],
+        "maxChannelDifference": 7
+      },
+      {
+        "case": "1440-wall_seo_pre_low_2",
+        "changedPixels": 0,
+        "totalPixels": 1296000,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "390-classroom_dain_1",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "390-gallery",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "390-home",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "390-morning2_seo_1",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "390-night_homeroom_msg_1",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null,
+        "maxChannelDifference": 0
+      },
+      {
+        "case": "390-wall_seo_pre_high_1",
+        "changedPixels": 2,
+        "totalPixels": 329160,
+        "bounds": [
+          20,
+          695,
+          23,
+          696
+        ],
+        "maxChannelDifference": 6
+      },
+      {
+        "case": "390-wall_seo_pre_low_2",
+        "changedPixels": 0,
+        "totalPixels": 329160,
+        "bounds": null,
+        "maxChannelDifference": 0
+      }
+    ],
+    "result": "No visible text, control or layout changes in unaffected views. Eleven of fourteen image pairs are identical; the other three differ by one or two isolated rounded-border pixels, at most 7/255 per channel. Authored framing and staging changes were inspected at desktop, portrait phone and landscape phone sizes.",
+    "captures": "_workspace/scene-upgrade-ui-baseline; _workspace/scene-upgrade-regressions-final"
+  },
+  "release": {
+    "assetVersion": "2.9.322",
+    "serviceWorkerCacheVersion": "cupid-v3.3.241",
+    "deployment": "Cloudflare Pages Git integration from main"
+  }
+}

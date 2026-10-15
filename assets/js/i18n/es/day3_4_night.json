@@ -1,7 +1,7 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Vuelvo a la habitación arrastrando el cuerpo cansado y cuelgo la mochila en el respaldo de la silla.*"
+        "text": "*Viernes por la noche. Llego agotado a mi habitación y, aún con el uniforme, cuelgo la mochila en el respaldo de la silla. La esquina del libro que sobresale lleva las marcas de tres días de dedos.*"
     },
     "night3_start_2": {
         "name": "{name}",
@@ -224,7 +224,7 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*Apago del todo la lámpara y dejo el móvil boca abajo junto a la almohada.*"
+        "text": "*Cierro el libro donde anoté el horario del viernes y apago del todo la lámpara del escritorio. Dejo el móvil boca abajo junto a la almohada.*"
     },
     "forced_violation_day3_after_seoyeon": {
         "name": "Seoyeon",

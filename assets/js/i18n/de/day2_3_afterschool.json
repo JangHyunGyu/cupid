@@ -9,7 +9,7 @@
     },
     "after2_start": {
         "name": "{name}",
-        "text": "*Das Klassenzimmer nach dem Tagesabschluss. Auf dem Handy in meiner Tasche stehen zwei neue Benachrichtigungen nebeneinander.*"
+        "text": "*Die Abschlussbesprechung ist vorbei, wir sind nach Unterrichtsschluss noch im Klassenzimmer. Das Handy, das ich in jeder Pause hervorgeholt habe, vibriert wieder kurz in meiner Tasche. Zwei neue Benachrichtigungen stehen nebeneinander.*"
     },
     "after2_msg_dain": {
         "name": "Dain",

@@ -85,91 +85,166 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy2.png",
         "choices": [
-            { "next": "confess_seo_yes_1", "setFlags": ["confessed_seoyeon"] },
-            { "next": "confess_seo_no_1", "setFlags": ["postponed_seoyeon"] },
-            { "next": "confess_seo_no_2", "stats": {"Seoyeon":{"affinity":-4}}, "setFlags": ["postponed_seoyeon"] },
-            { "next": "confess_seo_no_2", "stats": {"Seoyeon":{"affinity":-5}}, "setFlags": ["postponed_seoyeon"] }
-        ]
+            {
+                "next": "confess_seo_yes_1",
+                "setFlags": [
+                    "confessed_seoyeon"
+                ]
+            },
+            {
+                "next": "confess_seo_no_1",
+                "setFlags": [
+                    "postponed_seoyeon"
+                ]
+            },
+            {
+                "next": "confess_seo_no_2",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -4
+                    }
+                },
+                "setFlags": [
+                    "postponed_seoyeon"
+                ]
+            },
+            {
+                "next": "confess_seo_no_2",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -5
+                    }
+                },
+                "setFlags": [
+                    "postponed_seoyeon"
+                ]
+            }
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 1.5,
+        "ambient": "none"
     },
     "confess_seo_yes_1": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "confess_seo_yes_2"
+        "next": "confess_seo_yes_2",
+        "framing": "close",
+        "ambient": "none"
     },
     "confess_seo_yes_2": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "confess_seo_yes_3"
+        "next": "confess_seo_yes_3",
+        "framing": "close",
+        "ambient": "none"
     },
     "confess_seo_yes_3": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "confess_seo_yes_4"
+        "next": "confess_seo_yes_4",
+        "framing": "close",
+        "ambient": "none",
+        "sfx": "synth:heartbeat"
     },
     "confess_seo_yes_4": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "confess_seo_yes_5"
+        "next": "confess_seo_yes_5",
+        "framing": "close"
     },
     "confess_seo_yes_5": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_worried.png",
-        "next": "confess_seo_yes_6"
+        "next": "confess_seo_yes_6",
+        "framing": "close"
     },
     "confess_seo_yes_6": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "confess_seo_yes_7"
+        "next": "confess_seo_yes_7",
+        "framing": "close"
     },
     "confess_seo_yes_7": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy2.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":60,"next":"confess_seo_yes_8"},{"minAffinity":40,"next":"confess_seo_yes_mid_1"},{"minAffinity":0,"next":"confess_seo_yes_low_1"},{"minAffinity":-19,"next":"confess_seo_yes_low_1"},{"minAffinity":-100,"next":"confess_seo_yes_neg"}]
+        "affinityBranches": [
+            {
+                "minAffinity": 60,
+                "next": "confess_seo_yes_8"
+            },
+            {
+                "minAffinity": 40,
+                "next": "confess_seo_yes_mid_1"
+            },
+            {
+                "minAffinity": 0,
+                "next": "confess_seo_yes_low_1"
+            },
+            {
+                "minAffinity": -19,
+                "next": "confess_seo_yes_low_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "confess_seo_yes_neg"
+            }
+        ],
+        "framing": "intimate"
     },
     "confess_seo_yes_8": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "next": "confess_seo_yes_9"
+        "next": "confess_seo_yes_9",
+        "framing": "intimate",
+        "bgm": "confession.mp3"
     },
     "confess_seo_yes_9": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy.png",
-        "next": "confess_seo_yes_10"
+        "next": "confess_seo_yes_10",
+        "framing": "intimate"
     },
     "confess_seo_yes_10": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy.png",
-        "next": "confess_seo_yes_11"
+        "next": "confess_seo_yes_11",
+        "framing": "intimate"
     },
     "confess_seo_yes_11": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "next": "confess_seo_yes_11_b"
+        "next": "confess_seo_yes_11_b",
+        "framing": "close"
     },
     "confess_seo_yes_11_b": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "next": "confess_seo_yes_12"
+        "next": "confess_seo_yes_12",
+        "framing": "close"
     },
     "confess_seo_yes_12": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "setFlags": ["day4_confession_accepted","isDating_Seoyeon"],
-        "next": "day4_night_start"
+        "setFlags": [
+            "day4_confession_accepted",
+            "isDating_Seoyeon"
+        ],
+        "next": "day4_night_start",
+        "framing": "close"
     },
     "confess_seo_no_1": {
         "background": "assets/images/background/top_school.png",
@@ -289,55 +364,70 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                     "postponed_yuna"
                 ]
             }
-        ]
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 1.5,
+        "ambient": "none"
     },
     "confess_yuna_yes_1": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_normal.webp",
-        "next": "confess_yuna_yes_2"
+        "next": "confess_yuna_yes_2",
+        "framing": "close",
+        "ambient": "none"
     },
     "confess_yuna_yes_2": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_normal.webp",
-        "next": "confess_yuna_yes_3"
+        "next": "confess_yuna_yes_3",
+        "framing": "close",
+        "ambient": "none"
     },
     "confess_yuna_yes_3": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_normal.webp",
-        "next": "confess_yuna_yes_3_b"
+        "next": "confess_yuna_yes_3_b",
+        "framing": "close",
+        "ambient": "none",
+        "sfx": "synth:heartbeat"
     },
     "confess_yuna_yes_3_b": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_normal.webp",
-        "next": "confess_yuna_yes_4"
+        "next": "confess_yuna_yes_4",
+        "framing": "close"
     },
     "confess_yuna_yes_4": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_normal.webp",
-        "next": "confess_yuna_yes_5"
+        "next": "confess_yuna_yes_5",
+        "framing": "close"
     },
     "confess_yuna_yes_5": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_normal.webp",
-        "next": "confess_yuna_yes_6"
+        "next": "confess_yuna_yes_6",
+        "framing": "close"
     },
     "confess_yuna_yes_6": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_shy.webp",
-        "next": "confess_yuna_yes_6_b"
+        "next": "confess_yuna_yes_6_b",
+        "framing": "close"
     },
     "confess_yuna_yes_6_b": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_shy.webp",
-        "next": "confess_yuna_yes_7"
+        "next": "confess_yuna_yes_7",
+        "framing": "intimate"
     },
     "confess_yuna_yes_7": {
         "background": "assets/images/background/yuna_hideout_day.webp",
@@ -365,25 +455,29 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "minAffinity": -100,
                 "next": "confess_yuna_yes_neg"
             }
-        ]
+        ],
+        "framing": "intimate"
     },
     "confess_yuna_yes_8": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_shy.webp",
-        "next": "confess_yuna_yes_8_b"
+        "next": "confess_yuna_yes_8_b",
+        "framing": "intimate"
     },
     "confess_yuna_yes_8_b": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_shy.webp",
-        "next": "confess_yuna_yes_8_c"
+        "next": "confess_yuna_yes_8_c",
+        "framing": "intimate"
     },
     "confess_yuna_yes_8_c": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_sad.webp",
-        "next": "confess_yuna_yes_9"
+        "next": "confess_yuna_yes_9",
+        "framing": "intimate"
     },
     "confess_yuna_yes_9": {
         "background": "assets/images/background/yuna_hideout_day.webp",
@@ -393,13 +487,16 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "day4_confession_accepted",
             "isDating_Yuna"
         ],
-        "next": "confess_yuna_yes_9_b"
+        "next": "confess_yuna_yes_9_b",
+        "framing": "intimate",
+        "bgm": "confession.mp3"
     },
     "confess_yuna_yes_9_b": {
         "background": "assets/images/background/yuna_hideout_day.webp",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_date_shy.webp",
-        "next": "day4_night_start"
+        "next": "day4_night_start",
+        "framing": "intimate"
     },
     "confess_yuna_no_1": {
         "background": "assets/images/background/yuna_hideout_day.webp",
@@ -519,49 +616,64 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                     "postponed_dain"
                 ]
             }
-        ]
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 1.5,
+        "ambient": "none",
+        "sfx": "synth:volleyball"
     },
     "confess_dain_yes_1": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_normal.webp",
-        "next": "confess_dain_yes_2"
+        "next": "confess_dain_yes_2",
+        "framing": "close",
+        "ambient": "none"
     },
     "confess_dain_yes_2": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_normal.webp",
-        "next": "confess_dain_yes_3"
+        "next": "confess_dain_yes_3",
+        "framing": "close",
+        "ambient": "none"
     },
     "confess_dain_yes_3": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_normal.webp",
-        "next": "confess_dain_yes_3_b"
+        "next": "confess_dain_yes_3_b",
+        "framing": "close",
+        "ambient": "none",
+        "sfx": "synth:heartbeat"
     },
     "confess_dain_yes_3_b": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_normal.webp",
-        "next": "confess_dain_yes_4"
+        "next": "confess_dain_yes_4",
+        "framing": "close"
     },
     "confess_dain_yes_4": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_normal.webp",
-        "next": "confess_dain_yes_5"
+        "next": "confess_dain_yes_5",
+        "framing": "close"
     },
     "confess_dain_yes_5": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_normal.webp",
-        "next": "confess_dain_yes_6"
+        "next": "confess_dain_yes_6",
+        "framing": "close"
     },
     "confess_dain_yes_6": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_laugh.webp",
-        "next": "confess_dain_yes_7"
+        "next": "confess_dain_yes_7",
+        "framing": "close"
     },
     "confess_dain_yes_7": {
         "background": "assets/images/background/gym.png",
@@ -589,31 +701,37 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "minAffinity": -100,
                 "next": "confess_dain_yes_neg"
             }
-        ]
+        ],
+        "framing": "intimate"
     },
     "confess_dain_yes_8": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_shy.webp",
-        "next": "confess_dain_yes_8_b"
+        "next": "confess_dain_yes_8_b",
+        "framing": "intimate"
     },
     "confess_dain_yes_8_b": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_shy.webp",
-        "next": "confess_dain_yes_9"
+        "next": "confess_dain_yes_9",
+        "framing": "intimate"
     },
     "confess_dain_yes_9": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_shy.webp",
-        "next": "confess_dain_yes_9_b"
+        "next": "confess_dain_yes_9_b",
+        "framing": "intimate"
     },
     "confess_dain_yes_9_b": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_shy.webp",
-        "next": "confess_dain_yes_10"
+        "next": "confess_dain_yes_10",
+        "framing": "intimate",
+        "bgm": "confession.mp3"
     },
     "confess_dain_yes_10": {
         "background": "assets/images/background/gym.png",
@@ -623,13 +741,15 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "day4_confession_accepted",
             "isDating_Dain"
         ],
-        "next": "confess_dain_yes_10_b"
+        "next": "confess_dain_yes_10_b",
+        "framing": "intimate"
     },
     "confess_dain_yes_10_b": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_date_laugh.webp",
-        "next": "day4_night_start"
+        "next": "day4_night_start",
+        "framing": "intimate"
     },
     "confess_dain_no_1": {
         "background": "assets/images/background/gym.png",
@@ -698,14 +818,19 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_worried.png",
-        "next": "confess_seo_yes_11"
+        "next": "confess_seo_yes_11",
+        "bgm": "sunset2.mp3"
     },
     "confess_seo_yes_low_1": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_pout.png",
-        "setFlags": ["postponed_seoyeon","day4_waited"],
-        "next": "day4_night_start"
+        "setFlags": [
+            "postponed_seoyeon",
+            "day4_waited"
+        ],
+        "next": "day4_night_start",
+        "bgm": "sunset2.mp3"
     },
     "confess_yuna_yes_mid_1": {
         "background": "assets/images/background/yuna_hideout_day.webp",
@@ -715,7 +840,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "day4_confession_accepted",
             "isDating_Yuna"
         ],
-        "next": "confess_yuna_yes_9_b"
+        "next": "confess_yuna_yes_9_b",
+        "bgm": "sunset2.mp3"
     },
     "confess_yuna_yes_low_1": {
         "background": "assets/images/background/yuna_hideout_day.webp",
@@ -725,7 +851,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "postponed_yuna",
             "day4_waited"
         ],
-        "next": "day4_night_start"
+        "next": "day4_night_start",
+        "bgm": "sunset2.mp3"
     },
     "confess_dain_yes_mid_1": {
         "background": "assets/images/background/gym.png",
@@ -735,7 +862,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "day4_confession_accepted",
             "isDating_Dain"
         ],
-        "next": "confess_dain_yes_10_b"
+        "next": "confess_dain_yes_10_b",
+        "bgm": "sunset2.mp3"
     },
     "confess_dain_yes_low_1": {
         "background": "assets/images/background/gym.png",
@@ -745,14 +873,19 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "postponed_dain",
             "day4_waited"
         ],
-        "next": "day4_night_start"
+        "next": "day4_night_start",
+        "bgm": "sunset2.mp3"
     },
     "confess_seo_yes_neg": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
         "character": "assets/images/characters/seyoun_pout.png",
-        "setFlags": ["postponed_seoyeon","day4_waited"],
-        "next": "day4_night_start"
+        "setFlags": [
+            "postponed_seoyeon",
+            "day4_waited"
+        ],
+        "next": "day4_night_start",
+        "bgm": "sunset2.mp3"
     },
     "confess_yuna_yes_neg": {
         "background": "assets/images/background/yuna_hideout_day.webp",
@@ -762,7 +895,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "postponed_yuna",
             "day4_waited"
         ],
-        "next": "day4_night_start"
+        "next": "day4_night_start",
+        "bgm": "sunset2.mp3"
     },
     "confess_dain_yes_neg": {
         "background": "assets/images/background/gym.png",
@@ -772,7 +906,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "postponed_dain",
             "day4_waited"
         ],
-        "next": "day4_night_start"
+        "next": "day4_night_start",
+        "bgm": "sunset2.mp3"
     }
     };
     for (const scene of Object.values(scenes)) {

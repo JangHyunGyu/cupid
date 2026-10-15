@@ -885,67 +885,78 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                     }
                 }
             }
-        ]
+        ],
+        "framing": "intimate"
     },
     "wall_seo_hug_1": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_hug_2_b"
+        "next": "wall_seo_hug_2_b",
+        "framing": "intimate"
     },
     "wall_seo_hug_2_b": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_hug_2_c"
+        "next": "wall_seo_hug_2_c",
+        "framing": "intimate"
     },
     "wall_seo_hug_2_c": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_hug_3"
+        "next": "wall_seo_hug_3",
+        "framing": "intimate"
     },
     "wall_seo_hug_3": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_line_choice"
+        "next": "wall_seo_line_choice",
+        "framing": "intimate"
     },
     "wall_seo_pinky_1": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_pinky_2"
+        "next": "wall_seo_pinky_2",
+        "framing": "intimate"
     },
     "wall_seo_pinky_2": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_pinky_3"
+        "next": "wall_seo_pinky_3",
+        "framing": "intimate"
     },
     "wall_seo_pinky_3": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_pinky_4"
+        "next": "wall_seo_pinky_4",
+        "framing": "intimate"
     },
     "wall_seo_pinky_4": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_pinky_5"
+        "next": "wall_seo_pinky_5",
+        "framing": "intimate"
     },
     "wall_seo_pinky_5": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_pinky_5_b"
+        "next": "wall_seo_pinky_5_b",
+        "framing": "intimate"
     },
     "wall_seo_pinky_5_b": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_cry.png",
-        "next": "wall_seo_line_choice"
+        "next": "wall_seo_line_choice",
+        "framing": "intimate"
     },
     "wall_seo_line_choice": {
         "background": "assets/images/background/park.png",
@@ -1034,7 +1045,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_shy.png",
-        "next": "wall_seo_skin70_3"
+        "next": "wall_seo_skin70_3",
+        "framing": "intimate"
     },
     "wall_seo_skin70_3": {
         "setFlags": [
@@ -1047,14 +1059,18 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_shy.png",
-        "next": "wall_seo_skin60_2"
+        "next": "wall_seo_skin60_2",
+        "framing": "intimate"
     },
     "wall_seo_skin60_2": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/seyoun_shy.png",
-        "setFlags": ["day4_skinship_seoyeon_60"],
-        "next": "wall_seo_freetalk"
+        "setFlags": [
+            "day4_skinship_seoyeon_60"
+        ],
+        "next": "wall_seo_freetalk",
+        "framing": "intimate"
     },
     "wall_seo_freetalk": {
         "background": "assets/images/background/park.png",
@@ -1364,7 +1380,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
         "character": "assets/images/characters/dain_pain.png",
-        "next": "wall_dain_13"
+        "next": "wall_dain_13",
+        "sfx": "synth:volleyball"
     },
     "wall_dain_13": {
         "background": "assets/images/background/gym.png",
@@ -1657,29 +1674,38 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_skin70_1": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "wall_dain_skin70_2"
+        "next": "wall_dain_skin70_2",
+        "framing": "intimate"
     },
     "wall_dain_skin70_2": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "wall_dain_skin70_3"
+        "next": "wall_dain_skin70_3",
+        "framing": "intimate"
     },
     "wall_dain_skin70_3": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_shy.png",
-        "setFlags": ["day4_skinship_dain_70"],
-        "next": "wall_dain_freetalk"
+        "setFlags": [
+            "day4_skinship_dain_70"
+        ],
+        "next": "wall_dain_freetalk",
+        "framing": "intimate"
     },
     "wall_dain_skin60_1": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_shy.png",
-        "next": "wall_dain_skin60_2"
+        "next": "wall_dain_skin60_2",
+        "framing": "intimate"
     },
     "wall_dain_skin60_2": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_shy.png",
-        "setFlags": ["day4_skinship_dain_60"],
-        "next": "wall_dain_freetalk"
+        "setFlags": [
+            "day4_skinship_dain_60"
+        ],
+        "next": "wall_dain_freetalk",
+        "framing": "intimate"
     },
     "wall_dain_freetalk": {
         "background": "assets/images/background/school_back.png",
@@ -2059,7 +2085,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "wall_yuna_moved_4"
+        "next": "wall_yuna_moved_4",
+        "framing": "intimate"
     },
     "wall_yuna_moved_4": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -2078,7 +2105,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "wall_yuna_skin_check"
+        "next": "wall_yuna_skin_check",
+        "framing": "intimate"
     },
     "wall_yuna_skin_check": {
         "background": "assets/images/background/yuna_hideout.png",
@@ -2091,33 +2119,42 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "wall_yuna_skin70_2"
+        "next": "wall_yuna_skin70_2",
+        "framing": "intimate"
     },
     "wall_yuna_skin70_2": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "wall_yuna_skin70_3"
+        "next": "wall_yuna_skin70_3",
+        "framing": "intimate"
     },
     "wall_yuna_skin70_3": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
-        "setFlags": ["day4_skinship_yuna_70"],
-        "next": "wall_yuna_freetalk"
+        "setFlags": [
+            "day4_skinship_yuna_70"
+        ],
+        "next": "wall_yuna_freetalk",
+        "framing": "intimate"
     },
     "wall_yuna_skin60_1": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
-        "next": "wall_yuna_skin60_2"
+        "next": "wall_yuna_skin60_2",
+        "framing": "intimate"
     },
     "wall_yuna_skin60_2": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
         "character": "assets/images/characters/yuna_shy.png",
-        "setFlags": ["day4_skinship_yuna_60"],
-        "next": "wall_yuna_freetalk"
+        "setFlags": [
+            "day4_skinship_yuna_60"
+        ],
+        "next": "wall_yuna_freetalk",
+        "framing": "intimate"
     },
     "wall_yuna_sub_1": {
         "background": "assets/images/background/yuna_hideout.png",

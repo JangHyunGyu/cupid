@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Le billet de Yuna reçu ce matin serré dans la main, je m'arrête au milieu du couloir qui part vers l'escalier du toit, la supérette du sous-sol et l'annexe de la bibliothèque.*"
+        "text": "*Je serre dans ma main le mot reçu de Yuna ce matin. Ses coins pliés sont usés à force de l’avoir déplié entre les cours. Je m’arrête à la bifurcation vers l’escalier du toit, le kiosque du sous-sol et l’annexe de la bibliothèque.*"
     },
     "lunch2_choice": {
         "name": "{name}",

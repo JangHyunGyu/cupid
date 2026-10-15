@@ -1814,16 +1814,16 @@ test('day 2 through 5 rivalry copy stays synchronized across every supported loc
         'after5_farewell_seo_4', 'after5_farewell_seo_6', 'after5_farewell_yuna_3',
         'after5_farewell_dain_2', 'after5_farewell_dain_4', 'after5_farewell_dain_4_c'
     ];
-    // Reviewed dialogue-balance copy in all eight languages; see docs/qa/dialogue-balance-2026-10-04.json.
+    // Reviewed dialogue-balance copy in all eight languages; see docs/qa/dialogue-balance-2026-10-04.json and docs/qa/scene-upgrade-20261015.json.
     const expectedDigests = {
-        "ko": "67eede3e997f6ca9bcd0db56b19a828ad4eb2215eeb1c19b3e6d9c6827b2a70c",
-        "en": "4ec70da07388b91d7b4ce115355ef36b04c454637c5c9a988219317271169a3e",
-        "ja": "acbe3eb560bfce6d08713659a588a7934db906d66407f9b1f4f49220b86dcfe1",
-        "es": "b5000288fd3459a757263fe457016328df7e493fd61dda74990f1ce44fcc939f",
-        "fr": "aa2817fe1947fa57661533d4c239a72fa58ba7cd89bd56f746c9a7e088c84d93",
-        "de": "f715b33c3bcb1b480a77193efdfdd3629201345c2679d6e6d684c58dc78ae98a",
-        "pt": "ba27408147268660076e8d4298f0dae6dc7e6971925491a65cce16340b01dcad",
-        "zh": "f5856c848f2e4f01903480dd927b254949aef9365a803886dca4af7fa132e4df"
+        "ko": "48c79cba81c30aba60977f31dd9bc34ba79a74f6b6bb71d26192fe69bfa2b8a4",
+        "en": "cda53f9ce75b587f8ca16a7aec153138ea913d5fc6d7f569bf43895403eb8c23",
+        "ja": "d26bf856af84f0ffd3d2a6c21619f51b44a740c395ecc461c867e4d870344ba0",
+        "es": "d954f6a010a4e7b78ea3d517237aff0b2be3ef17f047b20e14067dd4677780f7",
+        "fr": "dd95fa7ce63ad1425acbd8a3ce493042c224fa832cf67647d274abffb7effc92",
+        "de": "32559af4e9e9d0c8e2b8e986a7b5e40764c57a1ce13c04c2366ca925960eed7f",
+        "pt": "eaf8171e730d6e76fc002fe5cd8bfb9e6a8e8b16b20ff90407d63eeaa6ce68cc",
+        "zh": "946040d0eae7aec1770653a1068ffbc3b517c12fc8f7222a911569ef99e30466"
     };
 
     for (const [locale, expectedDigest] of Object.entries(expectedDigests)) {

@@ -16,7 +16,7 @@ test('every authored scene and localized gallery image has a real matching asset
 test('departed speakers, remote messages and room transitions retain the corrected visual bindings', () => {
     const { rows } = loadCorpus();
     const get = id => rows.find(row => row.id === id).scene;
-    assert.match(get('lunch3_expose_12').character, /minsu_normal/);
+    assert.match(get('lunch3_expose_12').characters.center, /minsu_normal/);
     for (const id of ['haeun_warn_8', 'haeun_warn_8b', 'after5_farewell_seo_7', 'hidden_perfect_homeroom_4c', 'lunch3_give_dain_yuna_neg']) assert.equal(get(id).character, null, id);
     assert.match(get('night3_cheat_msg_7').characters.center.src, /yuna_normal/);
     assert.equal(get('night3_nightmare_3').characters.center.opacity, 0.35);

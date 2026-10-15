@@ -36,6 +36,8 @@ async function boot(page) {
   await page.evaluate(async () => {
     window.gameEngine.dialogueSystem.typingSpeed = 0;
     await window.gameEngine.renderScene('classroom_yuna_1');
+    const renderer = window.gameEngine.sceneRenderer;
+    await renderer.updateCharacters({ character: 'assets/images/characters/yuna_normal.png' }, renderer.currentSceneId);
   });
   await expect(page.locator('#char-center img')).toBeVisible();
 }

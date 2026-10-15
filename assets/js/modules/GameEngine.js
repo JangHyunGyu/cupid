@@ -1144,17 +1144,24 @@ class GameEngine {
         // 🎵 2단계: BGM/SFX 처리
         // ─────────────────────────────────────────────────────────
         // bgm: "파일명" → 재생, bgm: null → 정지
-        if (scene.bgm) {
+        if (scene.bgm && scene.bgm !== 'none') {
             if (typeof soundManager !== 'undefined') soundManager.playBgm(`assets/audio/bgm/${scene.bgm}`);
             // 🔧 갤러리에 BGM 해금 (파일명에서 확장자 제거)
             const bgmId = scene.bgm.replace(/\.(mp3|ogg|wav)$/i, '');
             this.galleryManager.unlockBGM(bgmId);
-        } else if (scene.bgm === null) {
-            if (typeof soundManager !== 'undefined') soundManager.stopBgm();
+        } else if (scene.bgm === null || scene.bgm === 'none' || Number.isFinite(scene.bgmFadeOut)) {
+            if (typeof soundManager !== 'undefined') soundManager.stopBgm(scene.bgmFadeOut);
         }
 
+        const ambientBackground = String(scene.background || this.sceneRenderer.lastBgUrl || '');
+        const ambient = Object.prototype.hasOwnProperty.call(scene, 'ambient') ? scene.ambient
+            : scene.backgroundVariant === 'rain' ? 'rain'
+            : /(?:library_old|yuna_hideout|bookstore)/.test(ambientBackground) ? 'library'
+            : /\/gym\./.test(ambientBackground) ? 'gym' : null;
+        if (typeof soundManager !== 'undefined') soundManager.setAmbience?.(ambient);
+
         // sfx: 효과음 1회 재생
-        if (scene.sfx && typeof soundManager !== 'undefined') soundManager.playSfx(`assets/audio/sfx/${scene.sfx}`);
+        if (scene.sfx && typeof soundManager !== 'undefined') soundManager.playSfx(scene.sfx.startsWith('synth:') ? scene.sfx : `assets/audio/sfx/${scene.sfx}`);
 
         // ─────────────────────────────────────────────────────────
         // 🖥️ 3단계: UI 초기화 (깨끗한 상태로 시작)
@@ -1283,7 +1290,15 @@ class GameEngine {
         // 👤 9단계: 캐릭터 이미지 업데이트 (배경과 병렬)
         // ─────────────────────────────────────────────────────────
         // character 또는 characters 속성에 따라 캐릭터 표시
-        const charPromise = this.sceneRenderer.updateCharacters(scene, sceneId);
+        let characterScene = scene;
+        if (scene.staging === 'counteroffer') {
+            const participants = this.freeTalkSystem._resolveCounterofferGroupParticipants(window.GAME_LANG || 'ko');
+            const portraits = { Seoyeon: 'seyoun_sad', Yuna: 'yuna_sad', Dain: 'dain_sad', Teacher: 'teacher_normal', Nurse: 'nurse_normal' };
+            characterScene = { ...scene, character: null, characters: Object.fromEntries(participants.map(participant => [
+                participant.side, `assets/images/characters/${portraits[participant.id]}.png`
+            ])) };
+        }
+        const charPromise = this.sceneRenderer.updateCharacters(characterScene, sceneId);
 
         // 배경 + 캐릭터 모두 완료 대기
         await Promise.all([bgPromise, charPromise]);

@@ -424,10 +424,11 @@ TRUE 엔딩은 본편 에필로그 데이트(1회)로 남긴다. 갤러리 연�
 | Day/시간 | 장면 | 등장 캐릭터 | 연출 포인트 |
 |---------|------|-----------|-----------|
 | **Day 1 아침** | 교실 — 서연의 안내 중 다인이 끼어들고 유나가 지켜봄 | 서연, 다인, 유나 | 서연의 공적 태도 vs 다인의 즉각적 친근함 vs 유나의 관찰. 주인공의 첫인상이 세 방향으로 갈린다. |
-| **Day 2 아침** | 등교 — 호감도 최고 캐릭터가 먼저 다가오고 나머지가 반응 | 서연, 다인, 유나 (순차) | 호감도 순서대로 인사. 1위가 말 걸 때 나머지의 미세한 반응(고개 돌림, 책에 파묻힘, 시선 고정). |
+| **Day 2 아침** | 등교 — 호감도 최고 캐릭터가 먼저 다가오고 나머지가 반응 | 서연, 다인, 유나 (좌·중·우 동시 배치) | 기존 호감도 분기와 표정을 유지하고 현재 발화자에 포커스 적용 |
 | **Day 3 점심** | 도시락 나눠먹기 선택 시 3명 동시 | 서연, 다인, 유나 | 서연과 다인의 시선전. 유나는 조용히 먹지만 젓가락 멈춤. 공기가 무겁다. 양다리 플레이 시 가장 불편한 장면. |
-| **Day 3 방과후** | 양다리 발각 시 대치 | 서연, 다인, (유나) | 양다리 발각 트리거(`day3_caught_multiple_dates`) 발동 시 3명이 한 공간에. 서연의 차가운 여유, 다인의 직접적 분노, 유나의 침묵. |
+| **Day 3 방과후** | 양다리 발각 시 대치 | 서연, 다인 | 서연과의 대면으로 시작하고 `after3_confront_5_b`에서 다인이 도착한 뒤 2인 배치. 유나가 계단참에 왔다는 사건은 추가하지 않음 |
 | **Day 4 방과후** | 고백 장소에서 탈락 캐릭터가 멀리서 봄 | 루트 캐릭터 + 탈락 1~2명 (원경) | 고백 순간, 탈락 캐릭터가 건물 그림자에서 지켜본다. 대사 없음. 돌아서는 뒷모습만 보인다. |
+| **Day 5 아침** | 역제안 뒤 삼자대면 | 주인공과 기존 약속 상대·역제안 상대 | 저장된 플래그로 두 상대를 배치하고 그룹 대화 전후에도 같은 인물 유지 |
 
 ---
 
@@ -708,3 +709,22 @@ for 250ms after the completed line or bubble appears. Repeated input is dropped
 without extending the deadline. Natural completion has no extra wait, and scene
 entry clears the guard. Existing ending locks are preserved. See
 `docs/qa/dialogue-skip-cooldown-20261015.md` for validation.
+
+## Scene direction and timeline detail (2026-10-15)
+
+Scene metadata controls distance framing, multi-person staging and silence cues.
+Close interactions use 1.14 distance scale; intimate confession/contact moments
+use 1.24 with subtle background depth blur; receding farewells use 0.88. Existing
+portrait padding corrections remain in effect, and unspecified scenes return to
+normal. Static multi-person scenes dim listeners and preserve the current
+speaker's emphasis after text finishes; narration restores equal emphasis.
+
+Library, gym and rain soundscapes run independently of BGM. Page, door, phone,
+volleyball and heartbeat effects are synthesized at the AudioContext sample rate.
+Exposure and confession moments can fade BGM to silence and resume a real track
+at the response. Existing mute and volume controls govern the new audio.
+
+Ten existing Day 2–4 entries add ordinary classroom wear, repeated checks and
+Friday/Saturday context in all eight languages. There are no added scene clicks,
+choices or FreeTalk turns, and character affinity budgets are unchanged. Detailed
+source comparisons and Korean review are in `docs/qa/scene-upgrade-20261015.json`.

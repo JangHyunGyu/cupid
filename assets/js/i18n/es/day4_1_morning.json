@@ -17,7 +17,7 @@
     },
     "morning4_start": {
         "name": "{name}",
-        "text": "*Cuarto día, sábado por la mañana. En cuanto abro los ojos con el sol del fin de semana colándose por la cortina, tiro del móvil de junto a la almohada y miro el plan de hoy.*"
+        "text": "*Sábado por la mañana, el cuarto día. Me despierta la luz del fin de semana que entra entre las cortinas. En vez de mirar la hora de salir al instituto, acerco el móvil de la almohada para comprobar los planes de hoy.*"
     },
     "morning4_date_plan_check": {},
     "morning4_nightmare_check": {},
@@ -74,7 +74,7 @@
     "minsu_cheer_4_e": {},
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*Abro la ventana, respiro el aire fresco de la mañana y vuelvo a abrir el mensaje donde está el lugar de la cita.*"
+        "text": "*Abro la ventana y respiro el aire fresco de la mañana. En lugar del horario que consultaba entre semana, vuelvo a abrir el mensaje con el lugar de nuestra cita.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",

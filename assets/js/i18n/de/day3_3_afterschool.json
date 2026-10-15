@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Nach der Schule stehe ich an der Flurgabelung, über die das Abendlicht lang fällt. Die Schilder zum Schülerratsraum, zum Bibliotheksanbau und zur Turnhalle zeigen jeweils in eine andere Richtung.*"
+        "text": "*Nach dem Unterricht bleibe ich an der Flurgabelung im Abendlicht stehen. Ich sehe zu den Schildern für Schülerratsraum, Bibliotheksanbau und Sporthalle auf, an denen ich seit drei Tagen vorbeigehe, und fasse den Taschengurt auf meiner Schulter neu.*"
     },
     "after3_route_check": {
         "name": "{name}",

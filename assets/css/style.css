@@ -3023,3 +3023,41 @@ html:not([lang="ko"]) .messenger-bubble {
         animation: none;
     }
 }
+
+/* Authored scene distance composes with existing portrait padding and idle motion. */
+#char-left, #char-right { --char-slot-scale: 0.9; }
+.char-frame-normal { --char-distance-scale: 1; }
+.char-frame-far { --char-distance-scale: 0.88; --char-distance-y: -6px; }
+.char-frame-close { --char-distance-scale: 1.14; --char-distance-y: 4px; }
+.char-frame-intimate { --char-distance-scale: 1.24; --char-distance-y: 6px; }
+#character-layer .char-slot img:is(.char-frame-far, .char-frame-close, .char-frame-intimate, .char-focused) {
+    transform: translateZ(0) scale(calc(var(--char-slot-scale, 1) * var(--char-distance-scale, 1) * var(--char-speaker-scale, 1))) translateY(var(--char-distance-y, 0px));
+    transition: opacity 0.25s ease-in-out, transform 0.45s cubic-bezier(0.22, 0.61, 0.36, 1), filter 0.3s ease;
+}
+#character-layer .char-slot img:is(.char-frame-close, .char-frame-intimate) { transform-origin: center 22%; }
+#character-layer .char-slot img.char-frame-far { filter: brightness(0.92) saturate(0.85); }
+#character-layer.bg-depth-of-field {
+    backdrop-filter: blur(1.6px);
+    -webkit-backdrop-filter: blur(1.6px);
+}
+#character-layer:not(.group-freetalk-mode) .char-slot.char-dimmed { z-index: 1; }
+#character-layer:not(.group-freetalk-mode) .char-slot.char-dimmed img:not(.silhouette):not(.thinking) { filter: brightness(0.68) saturate(0.85); }
+#character-layer:not(.group-freetalk-mode) .char-slot.char-focused { z-index: 4; }
+#character-layer:not(.group-freetalk-mode) .char-slot img.char-focused { --char-speaker-scale: 1.02; }
+@media (max-width: 600px) {
+    #character-layer.multi-character-scene:not(.group-freetalk-mode) #char-left { transform: translateX(-72%); }
+    #character-layer.multi-character-scene:not(.group-freetalk-mode) #char-right { transform: translateX(-28%); }
+}
+@media (orientation: portrait) {
+    #char-left, #char-right { --char-slot-scale: 0.8; }
+}
+@media (max-width: 600px) and (orientation: portrait) {
+    #character-layer.three-character-scene:not(.group-freetalk-mode) .char-slot img {
+        --char-slot-scale: 0.72;
+        transform: translateZ(0) translateY(var(--char-distance-y, 0px)) scale(calc(var(--char-slot-scale) * var(--char-distance-scale, 1) * var(--char-speaker-scale, 1)));
+        transform-origin: bottom center;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    #character-layer .char-slot img:is(.char-frame-far, .char-frame-close, .char-frame-intimate, .char-focused) { transition: none; }
+}

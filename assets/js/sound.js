@@ -9,6 +9,8 @@
  *
  * GainNode + linearRampToValueAtTime으로 볼륨 전환도 노이즈 없음.
  */
+const SOUND_SCAPE_PRESETS = Object.freeze({"page_turn":0.32,"door":0.45,"notification":0.38,"volleyball":0.65,"heartbeat":1.1,"library":4,"gym":6,"rain":5});
+
 class SoundManager {
     constructor() {
         this.audioContext = null;
@@ -17,6 +19,9 @@ class SoundManager {
         this.bgmSourceNode = null;   // AudioBufferSourceNode
         this.bgmGain = null;         // GainNode
         this.bgmBuffer = null;       // 현재 재생 중인 AudioBuffer
+        this.ambientSource = null;
+        this.ambientGain = null;
+        this.ambientKind = '';
 
         // 디코딩된 오디오 버퍼 캐시 (같은 파일 재다운로드 방지)
         this._bufferCache = {};
@@ -105,6 +110,7 @@ class SoundManager {
 
             if (ctx.state === 'running') {
                 this._unlocked = true;
+                this._startAmbience();
                 window.removeEventListener('click', unlock);
                 window.removeEventListener('touchstart', unlock);
                 console.log("SoundManager: AudioContext 잠금 해제 완료");
@@ -121,6 +127,7 @@ class SoundManager {
             ctx.resume?.().then(() => {
                 if (!this._unlocked && ctx.state === 'running') {
                     this._unlocked = true;
+                    this._startAmbience();
                     window.removeEventListener('click', unlock);
                     window.removeEventListener('touchstart', unlock);
 
@@ -323,6 +330,7 @@ class SoundManager {
      * 캐시하여 같은 파일은 재다운로드하지 않음.
      */
     async _loadBuffer(path, isBgm = false) {
+        if (typeof path === 'string' && path.startsWith('synth:')) return this._createSoundscapeBuffer(path.slice(6));
         // 이미 캐시에 있으면 즉시 반환
         if (this._bufferCache[path]) {
             return this._bufferCache[path];
@@ -359,6 +367,7 @@ class SoundManager {
                 if (this.currentBgmPath === path) this._resetBgmRecoveryEpisode();
                 return audioBuffer;
             } catch (e) {
+                if (!isBgm && /^HTTP (404|410)$/.test(String(e?.message || ''))) return null;
                 if (this._isRetryableAudioError(e)) {
                     console.warn("SoundManager: 일시적인 오디오 네트워크 오류, 복구 대기 ->", path, e?.message || e);
                     if (isBgm && this.currentBgmPath === path) {
@@ -513,10 +522,10 @@ class SoundManager {
     /**
      * BGM 페이드 아웃 후 정지
      */
-    stopBgm() {
+    stopBgm(duration = this.fadeOutDuration) {
         if (this.bgmSourceNode || this._pendingPlay || this._bgmRecoveryTimer !== null || this.currentBgmPath) {
             console.log("SoundManager: BGM 페이드 아웃 정지");
-            this._fadeOutAndCleanup();
+            this._fadeOutAndCleanup(duration);
             this.currentBgmPath = '';
             this._pendingPlay = null;
             this._resetBgmRecoveryEpisode();
@@ -526,7 +535,9 @@ class SoundManager {
     /**
      * 현재 BGM을 페이드 아웃시키고 정리
      */
-    _fadeOutAndCleanup() {
+    _fadeOutAndCleanup(duration = this.fadeOutDuration) {
+        duration = Number.isFinite(duration) ? Math.max(0, Math.min(30, duration)) : this.fadeOutDuration;
+        if (duration === 0) { this._stopCurrentBgm(); return; }
         if (!this.bgmSourceNode || !this.bgmGain || !this.audioContext) {
             this._stopCurrentBgm();
             return;
@@ -545,7 +556,7 @@ class SoundManager {
         sourceNode.onended = null;
         gainNode.gain.cancelScheduledValues(now);
         gainNode.gain.setValueAtTime(gainNode.gain.value, now);
-        gainNode.gain.linearRampToValueAtTime(0, now + this.fadeOutDuration);
+        gainNode.gain.linearRampToValueAtTime(0, now + duration);
 
         // 페이드 완료 후 정리
         setTimeout(() => {
@@ -554,7 +565,94 @@ class SoundManager {
                 sourceNode.disconnect();
                 gainNode.disconnect();
             } catch (e) {}
-        }, (this.fadeOutDuration + 0.1) * 1000);
+        }, (duration + 0.1) * 1000);
+    }
+
+    _createSoundscapeBuffer(kind) {
+        const durations = SOUND_SCAPE_PRESETS;
+        if (!Object.prototype.hasOwnProperty.call(durations, kind)) return null;
+        const key = `synth:${kind}`;
+        if (this._bufferCache[key]) return this._bufferCache[key];
+        const ctx = this._ensureAudioContext();
+        if (!ctx) return null;
+        const duration = durations[kind];
+        const rate = ctx.sampleRate;
+        const buffer = ctx.createBuffer(1, Math.ceil(rate * duration), rate);
+        const data = buffer.getChannelData(0);
+        let seed = 0x51a7;
+        let smooth = 0;
+        for (let i = 0; i < data.length; i++) {
+            seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+            const noise = seed / 2147483648 - 1;
+            smooth = smooth * 0.96 + noise * 0.04;
+            const t = i / rate;
+            let sample = 0;
+            if (kind === 'page_turn') sample = (noise * 0.12 + smooth * 0.3) * Math.sin(Math.PI * t / duration) ** 2;
+            if (kind === 'door') sample = (smooth * 0.7 + Math.sin(2 * Math.PI * 68 * t) * 0.16) * Math.exp(-t * 16);
+            if (kind === 'notification') sample = (Math.sin(2 * Math.PI * 880 * t) + Math.sin(2 * Math.PI * 1320 * t) * 0.35) * Math.sin(Math.PI * t / duration) ** 2 * 0.11;
+            if (kind === 'volleyball') {
+                const pulse = t < 0.35 ? t : t - 0.35;
+                sample = (Math.sin(2 * Math.PI * (92 - pulse * 65) * pulse) * 0.24 + smooth * 0.12) * Math.exp(-pulse * 23);
+            }
+            if (kind === 'heartbeat') {
+                const pulse = t % 0.55;
+                sample = Math.sin(2 * Math.PI * 58 * pulse) * (Math.exp(-pulse * 36) + (pulse > 0.16 ? Math.exp(-(pulse - 0.16) * 48) * 0.55 : 0)) * 0.16;
+            }
+            if (kind === 'library') {
+                const tick = t % 1;
+                sample = smooth * 0.025 + Math.sin(2 * Math.PI * 1800 * tick) * Math.exp(-tick * 130) * 0.08;
+            }
+            if (kind === 'gym') {
+                const pulse = t % 1.8;
+                sample = smooth * 0.045 + Math.sin(2 * Math.PI * 85 * pulse) * Math.exp(-pulse * 22) * 0.1;
+            }
+            if (kind === 'rain') sample = noise * 0.11 + smooth * 0.3;
+            const oneShot = duration < 2;
+            const envelope = oneShot ? Math.min(1, t / 0.008, Math.max(0, (duration - t) / 0.025)) : 1;
+            data[i] = sample * envelope;
+        }
+        this._bufferCache[key] = buffer;
+        return buffer;
+    }
+
+    setAmbience(kind) {
+        const next = ['library', 'gym', 'rain'].includes(kind) ? kind : '';
+        if (next === this.ambientKind && this.ambientSource) return;
+        const source = this.ambientSource;
+        const gain = this.ambientGain;
+        this.ambientSource = null;
+        this.ambientGain = null;
+        if (source && gain && this.audioContext) {
+            const now = this.audioContext.currentTime;
+            try {
+                gain.gain.cancelScheduledValues(now);
+                gain.gain.setValueAtTime(gain.gain.value, now);
+                gain.gain.linearRampToValueAtTime(0, now + 0.18);
+                source.onended = () => { try { source.disconnect(); gain.disconnect(); } catch (_) {} };
+                source.stop(now + 0.2);
+            } catch (_) {}
+        }
+        this.ambientKind = next;
+        this._startAmbience();
+    }
+
+    _startAmbience() {
+        if (!this.ambientKind || this.ambientSource || !this._unlocked) return;
+        const ctx = this._ensureAudioContext();
+        if (!ctx) return;
+        const buffer = this._createSoundscapeBuffer(this.ambientKind);
+        if (!buffer) return;
+        const source = ctx.createBufferSource();
+        const gain = ctx.createGain();
+        source.buffer = buffer;
+        source.loop = true;
+        source.connect(gain);
+        gain.connect(ctx.destination);
+        gain.gain.setValueAtTime(0, ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(this.muted ? 0 : this.sfxVolume * 0.15, ctx.currentTime + 0.35);
+        this.ambientSource = source;
+        this.ambientGain = gain;
+        source.start();
     }
 
     /**
@@ -643,6 +741,7 @@ class SoundManager {
     setSfxVolume(volume) {
         this.sfxVolume = volume;
         try { window.CupidStorage.setItem('sfxVolume', volume); } catch (e) {}
+        this._updateAmbienceVolume();
     }
 
     /**
@@ -650,6 +749,7 @@ class SoundManager {
      */
     setMuted(muted) {
         this.muted = muted;
+        this._updateAmbienceVolume();
         try { window.CupidStorage.setItem('soundMuted', muted); } catch (e) {}
         if (this.bgmGain && this.audioContext) {
             const now = this.audioContext.currentTime;
@@ -658,6 +758,14 @@ class SoundManager {
             this.bgmGain.gain.setValueAtTime(this.bgmGain.gain.value, now);
             this.bgmGain.gain.linearRampToValueAtTime(targetVol, now + 0.05);
         }
+    }
+
+    _updateAmbienceVolume() {
+        if (!this.ambientGain || !this.audioContext) return;
+        const now = this.audioContext.currentTime;
+        this.ambientGain.gain.cancelScheduledValues(now);
+        this.ambientGain.gain.setValueAtTime(this.ambientGain.gain.value, now);
+        this.ambientGain.gain.linearRampToValueAtTime(this.muted ? 0 : this.sfxVolume * 0.15, now + 0.05);
     }
 }
 

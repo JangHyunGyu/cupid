@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Après les cours, je m'arrête au carrefour du couloir, là où la lumière du couchant s'étire. Les panneaux de la salle du conseil, de l'annexe de la bibliothèque et du gymnase pointent chacun dans une direction différente.*"
+        "text": "*Après les cours, je m’arrête à la bifurcation du couloir baigné de soleil couchant. Je lève les yeux vers les panneaux de la salle du conseil des élèves, de l’annexe de la bibliothèque et du gymnase devant lesquels je passe depuis trois jours, puis reprends la sangle de mon sac sur mon épaule.*"
     },
     "after3_route_check": {
         "name": "{name}",

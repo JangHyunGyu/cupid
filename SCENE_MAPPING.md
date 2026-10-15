@@ -162,12 +162,12 @@
 | classroom_1 ~ 2 | room_school.png | 없음 | 주인공 | 교실 분위기 묘사 |
 | classroom_3 ~ 5 | room_school.png | teacher_normal | 담임/주인공 | 전학생 소개 |
 | classroom_6 | room_school.png | 없음 | 주인공 | 자리 배정 |
-| classroom_dain_1 ~ 5 | room_school.png | dain_normal | 다인/주인공 | "옆자리잖아! 나 김다인", 배구부 언급 |
-| classroom_yuna_1 ~ 2 | room_school.png | yuna_bored | 주인공 | 창가 유나 묘사 (은백색 머리, 타투) |
+| classroom_dain_1 ~ 5 | room_school.png | 첫 줄은 다인 단독, 이후 서연·유나·다인; 교사 발화 시 중앙 교사 | 다인/담임/주인공 | 기존 표정 유지, 발화자 포커스 |
+| classroom_yuna_1 ~ 4 | room_school.png | 서연·유나·다인 | 주인공 | 창가 유나 묘사, 나레이션에서는 디밍 해제 |
 | classroom_seat_1 ~ 2 | room_school.png | dain_normal | 주인공 | 다인 옆에 앉음 |
 | classroom_minsu_1 ~ 4 | room_school.png | minsu_normal/smirk | 민수/주인공 | 뒷자리 민수 대화 |
-| classroom_dain_talk_1 ~ 8 | room_school.png | dain_normal/laugh | 다인/주인공 | "볼 머신" 수업 대화 |
-| classroom_yuna_note_1 ~ 6 | room_school.png | yuna_bored | 주인공 | 유나 쪽지: "시끄러운 자리" |
+| classroom_dain_talk_1 ~ 8 | room_school.png | 민수 소개 후 서연·유나·다인 | 다인/주인공 | "볼 머신" 수업 대화, 다인의 기존 표정 유지 |
+| classroom_yuna_note_1 ~ 6 | room_school.png | 서연·유나·다인 | 유나/주인공 | 유나 쪽지, 종이 효과음과 발화자 포커스 |
 
 ---
 
@@ -252,11 +252,11 @@
 | 씬 ID | 배경 | 캐릭터 | 화자 | 장면 설명 |
 |--------|------|--------|------|-----------|
 | morning2_start ~ 2 | room_school.png | 없음 | 주인공 | 등교, 교실 도착 |
-| morning2_greet_dain_1 ~ others_2 | room_school.png | dain_laugh | 다인 | 등짝 인사 |
+| morning2_greet_* | room_school.png | 서연·유나·다인 | 해당 분기 화자 | 기존 1위 호감도 분기 유지, 좌·중·우 배치 |
 | morning2_note_1 ~ 3 | room_school.png | 없음 | 주인공 | 유나 쪽지: "도서관 별관으로" |
 | morning2_seo_1 ~ 5 | room_school.png | seyoun_normal/laugh | 서연 | 아침 인사 |
 | morning2_minsu_1 ~ 3 | room_school.png | minsu_normal/smirk | 민수 | "학생회장이 인사하러 오냐?" |
-| morning2_seo_dust_1 ~ 6 | school_hallway.png | seyoun_normal | 서연 | 어깨 먼지 터는 씬 |
+| morning2_seo_dust_1 ~ 6 | school_hallway.png | seyoun_normal | 서연 | 2~5는 close, 6에서 normal 복귀 |
 | morning2_dain_react_1 ~ 6 | school_hallway.png | dain_normal | 다인 | 다인 질투 반응 |
 | morning2_haeun_1 ~ 7 | school_hallway.png | haeun_normal/worried | 하은/주인공 | "서연 선배가 요즘 달라졌어" |
 
@@ -405,7 +405,7 @@
 ### 삼자 합석 도시락
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
 |--------|------|--------|-----------|
-| lunch3_start ~ meal_11 | room_school.png | dain_laugh/seyoun_normal/yuna_bored | 3인 합석, 캐릭터 교대 표시 |
+| lunch3_start ~ meal_10_c | room_school.png | 서연·유나·다인, 기존 표정 유지 | 3인 합석, 발화자 포커스; harem_1도 3인 유지 |
 | lunch3_choice | room_school.png | 없음 | **4지 선택**: 서연에게/다인에게/유나에게/나눠먹기 |
 
 ### 도시락 선택 분기
@@ -419,8 +419,8 @@
 ### 양다리 폭로 (day3_has_multiple_dates 시)
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
 |--------|------|--------|-----------|
-| lunch3_expose_1 ~ 15 | room_school.png | seyoun_sad/angry, dain_pout, yuna_sad, minsu_smirk | 양다리 폭로 |
-| lunch3_expose_choice | room_school.png | seyoun_angry | 선택지: 솔직/변명/도망 |
+| lunch3_expose_1 ~ 15 | room_school.png | 서연·유나·다인; 민수 발화 시 중앙 민수 | 1에서 BGM fade-out, 4에서 mystery 재생 |
+| lunch3_expose_choice | room_school.png | 서연·유나·다인, 기존 화자 표정 유지 | 선택지: 솔직/변명/도망, 비발화자 디밍 |
 
 ---
 
@@ -469,8 +469,8 @@
 ### 양다리 대면 (day3_has_multiple_dates 시)
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
 |--------|------|--------|-----------|
-| after3_confront_1 ~ 6 | school_hallway.png | seyoun_sad/cry/angry | 대면, sunset, BGM: mystery.mp3 |
-| after3_confront_choice | school_hallway.png | seyoun_sad | 인정/변명/거짓말 |
+| after3_confront_1 ~ 6 | school_hallway.png → school_stairwell.png | 서연 단독 → 5_b에서 서연·다인 | 대면 시작 시 침묵, 다인 도착 때 mystery 재생 |
+| after3_confront_choice | school_stairwell.png | 서연·다인, 서연 발화자 포커스 | 인정/변명/거짓말 |
 
 ### NPC: 하은의 경고
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
@@ -599,7 +599,7 @@
 | wall_seo_pre_high/low | room_my.png | seyoun(0.35) | **night: true**, 전주 |
 | wall_seo_to_park ~ 6 | **park.png** | seyoun_normal → sad | 밤 공원, night |
 | wall_seo_7 ~ 15 | park.png | seyoun_sad → cry | 부모 불화 오열 |
-| wall_seo_hug/pinky | park.png | seyoun_cry | 안아줌/새끼손가락 선택 |
+| wall_seo_hug/pinky | park.png | seyoun_cry | 기존 선택·보상 유지, intimate 프레이밍 |
 | wall_seo_after_line ~ 5 | park.png | seyoun_sad → normal | `day4_seoyeon_wall_broken` |
 | wall_seo_skin70/60 | park.png | seyoun_shy | 스킨십 (호감도 70+/60+) |
 | wall_seo_freetalk | park.png | seyoun_normal | **프리토킹, maxTurns: 3** |

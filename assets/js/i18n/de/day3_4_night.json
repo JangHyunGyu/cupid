@@ -1,7 +1,7 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Ich schleppe meinen müden Körper zurück ins Zimmer und hänge die Schultasche über die Stuhllehne.*"
+        "text": "*Freitagabend. Erschöpft komme ich heim und hänge, noch in Uniform, meine Tasche über die Stuhllehne. An der herausragenden Ecke des Schulbuchs sind die Fingerspuren von drei Tagen zu sehen.*"
     },
     "night3_start_2": {
         "name": "{name}",
@@ -224,7 +224,7 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*Ich mache die Schreibtischlampe ganz aus und lege das Handy mit dem Display nach unten ans Kopfkissen.*"
+        "text": "*Ich schließe das Schulbuch mit dem notierten Freitagsstundenplan und schalte die Schreibtischlampe ganz aus. Das Handy lege ich mit dem Display nach unten neben mein Kopfkissen.*"
     },
     "forced_violation_day3_after_seoyeon": {
         "name": "Seoyeon",

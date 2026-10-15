@@ -29,23 +29,39 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "morning2_greet_seo_1_roof": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_greet_seo_2"
+        "next": "morning2_greet_seo_2",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_seo_1_gate": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_greet_seo_2"
+        "next": "morning2_greet_seo_2",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_seo_2": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_greet_seo_others_2"
+        "next": "morning2_greet_seo_others_2",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_seo_others_2": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_yuna_seen"
+        "next": "morning2_yuna_seen",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_dain_1": {
         "routeBeforeRender": true,
@@ -56,33 +72,57 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "morning2_greet_dain_1_fun": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning2_greet_dain_2"
+        "next": "morning2_greet_dain_2",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+        }
     },
     "morning2_greet_dain_1_plain": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning2_greet_dain_2"
+        "next": "morning2_greet_dain_2",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+        }
     },
     "morning2_greet_dain_2": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning2_greet_dain_others"
+        "next": "morning2_greet_dain_others",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_laugh.png"
+        }
     },
     "morning2_greet_dain_others": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_greet_dain_others_seo"
+        "next": "morning2_greet_dain_others_seo",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_dain_others_seo": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_greet_dain_others_yuna"
+        "next": "morning2_greet_dain_others_yuna",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_dain_others_yuna": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_bored.png",
-        "next": "morning2_yuna_seen"
+        "next": "morning2_yuna_seen",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_bored.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_yuna_1": {
         "routeBeforeRender": true,
@@ -93,33 +133,57 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "morning2_greet_yuna_1_thanks": {
         "background": "assets/images/background/room_school.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        },
         "next": "morning2_greet_yuna_2"
     },
     "morning2_greet_yuna_2": {
         "background": "assets/images/background/room_school.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        },
         "next": "morning2_greet_yuna_others"
     },
     "morning2_greet_yuna_others": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_greet_yuna_others_seo"
+        "next": "morning2_greet_yuna_others_seo",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_yuna_others_seo": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_greet_yuna_others_dain"
+        "next": "morning2_greet_yuna_others_dain",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_yuna_others_dain": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "morning2_greet_yuna_others_2"
+        "next": "morning2_greet_yuna_others_2",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_yuna_others_2": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
-        "next": "morning2_seo_4"
+        "next": "morning2_seo_4",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_yuna_seen": {
         "background": "assets/images/background/room_school.png",
@@ -133,8 +197,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "morning2_note_2": {
         "background": "assets/images/background/room_school.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "morning2_seo_1"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "morning2_seo_1",
+        "sfx": "synth:page_turn"
     },
     "morning2_seo_1": {
         "background": "assets/images/background/room_school.png",
@@ -432,22 +502,26 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "morning2_seo_dust_2": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_seo_dust_3"
+        "next": "morning2_seo_dust_3",
+        "framing": "close"
     },
     "morning2_seo_dust_3": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_seo_dust_4"
+        "next": "morning2_seo_dust_4",
+        "framing": "close"
     },
     "morning2_seo_dust_4": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_seo_dust_5"
+        "next": "morning2_seo_dust_5",
+        "framing": "close"
     },
     "morning2_seo_dust_5": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_seo_dust_6"
+        "next": "morning2_seo_dust_6",
+        "framing": "close"
     },
     "morning2_seo_dust_6": {
         "background": "assets/images/background/school_hallway.png",
@@ -486,8 +560,12 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "morning2_greet_none_2": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_yuna_seen"
+        "next": "morning2_yuna_seen",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     },
     "morning2_greet_none_tone": {
         "background": "assets/images/background/room_school.png",
@@ -505,8 +583,12 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "morning2_greet_none_neg_2": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
-        "next": "morning2_yuna_seen"
+        "next": "morning2_yuna_seen",
+        "characters": {
+            "left": "assets/images/characters/seyoun_normal.png",
+            "center": "assets/images/characters/yuna_normal.png",
+            "right": "assets/images/characters/dain_normal.png"
+        }
     }
     };
     for (const scene of Object.values(scenes)) {

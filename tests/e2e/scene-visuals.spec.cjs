@@ -31,8 +31,13 @@ for (const width of [390, 1440]) test(`corrected visual states render real art a
             images: [...document.querySelectorAll('#character-layer img')].map(img => ({ src: decodeURIComponent(img.src), width: img.naturalWidth }))
         }));
         expect(result.background).toContain(background + '.');
-        expect(result.images).toHaveLength(actor ? 1 : 0);
-        if (actor) { expect(result.images[0].src).toContain(actor + '.'); expect(result.images[0].width).toBeGreaterThan(0); }
+        expect(result.images).toHaveLength(id === 'lunch3_expose_12' ? 3 : actor ? 1 : 0);
+        if (actor) {
+            const portrait = result.images.find(img => img.src.includes(actor + '.'));
+            expect(portrait).toBeTruthy();
+            expect(portrait.width).toBeGreaterThan(0);
+            for (const img of result.images) expect(img.width).toBeGreaterThan(0);
+        }
         if (['date_yuna_bookstore', 'date_dain_pretty_high', 'date_perfect_nurse_home_1'].includes(id)) {
             await page.waitForTimeout(350);
             await page.screenshot({ path: testInfo.outputPath(id + '.png'), animations: 'disabled' });

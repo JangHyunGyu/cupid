@@ -9,7 +9,7 @@
     },
     "after2_start": {
         "name": "{name}",
-        "text": "*Salle de classe, après l'appel de fin de journée. Dans ma poche, deux nouvelles notifications s'affichent côte à côte sur le téléphone.*"
+        "text": "*La réunion de fin de journée est terminée, nous sommes encore dans la salle de classe. Le téléphone que je sortais à chaque pause vibre de nouveau brièvement dans ma poche. Deux nouvelles notifications s’affichent côte à côte.*"
     },
     "after2_msg_dain": {
         "name": "Dain",

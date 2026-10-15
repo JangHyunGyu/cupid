@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Clutching the note Yuna gave me this morning, I stop in the middle of the hall where it splits toward the rooftop stairs, the basement shop, and the library annex.*"
+        "text": "*I hold Yuna’s note from this morning. Its folded corners are worn from opening it between classes. I stop where the corridor branches toward the roof stairs, the basement snack shop and the library annex.*"
     },
     "lunch2_choice": {
         "name": "{name}",

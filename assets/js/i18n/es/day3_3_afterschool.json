@@ -1,7 +1,7 @@
 {
     "after3_start": {
         "name": "{name}",
-        "text": "*Después de clase, me detengo en la bifurcación del pasillo, donde la luz del atardecer se alarga. Los letreros de la sala del consejo estudiantil, el anexo de la biblioteca y el gimnasio apuntan cada uno hacia un lado distinto.*"
+        "text": "*Después de clase me detengo en la bifurcación del pasillo, iluminado por el atardecer. Miro los letreros de la sala del consejo estudiantil, el anexo de la biblioteca y el gimnasio que llevo tres días viendo, y reajusto la correa de la mochila en el hombro.*"
     },
     "after3_route_check": {
         "name": "{name}",

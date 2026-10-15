@@ -106,6 +106,21 @@ class DialogueSystem {
      */
     updateTalkingAnimation(charName, isStarting) {
         const charSlots = this.uiManager.charSlots;
+        const activeImages = Object.values(charSlots).filter(Boolean).map(slot => slot.querySelector('img')).filter(Boolean);
+        const canonical = this.charNameMap[charName] || charName;
+        const portraitKeys = { Seoyeon: 'seyoun', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse', Haeun: 'haeun' };
+        const focusKey = this.charFileMap[charName] || portraitKeys[canonical];
+        const groupMode = document.getElementById?.('character-layer')?.classList.contains('group-freetalk-mode');
+        const focusEnabled = !groupMode && activeImages.length > 1 && !!focusKey
+            && activeImages.some(img => String(img.dataset?.rawSrc || img.src).toLowerCase().includes(focusKey));
+        for (const slot of Object.values(charSlots)) {
+            if (!slot) continue;
+            const img = slot.querySelector('img');
+            const focused = focusEnabled && !!img && String(img.dataset?.rawSrc || img.src).toLowerCase().includes(focusKey);
+            slot.classList.toggle('char-dimmed', focusEnabled && !!img && !focused);
+            slot.classList.toggle('char-focused', focused);
+            img?.classList.toggle('char-focused', focused);
+        }
 
         // 주인공이나 시스템 메시지는 애니메이션 없음
         const nonCharacterNames = new Set([
@@ -128,7 +143,7 @@ class DialogueSystem {
         Object.values(charSlots).forEach(slot => {
             if (!slot) return;
             slot.querySelectorAll('img').forEach(img => {
-                const src = img.src.toLowerCase();
+                const src = String(img.dataset?.rawSrc || img.src).toLowerCase();
                 if (src.includes(targetKey)) {
                     // 이 캐릭터가 말하는 중
                     if (isStarting) img.classList.add('char-talking');

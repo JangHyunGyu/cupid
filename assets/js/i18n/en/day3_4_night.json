@@ -1,7 +1,7 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*I drag my tired body back to my room and hang my school bag over the back of the chair.*"
+        "text": "*Friday night. Exhausted, I get home and hang my bag on the chair back, still in uniform. The textbook corner sticking out of the bag bears three days of finger marks.*"
     },
     "night3_start_2": {
         "name": "{name}",
@@ -224,7 +224,7 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*I turn the desk lamp all the way off and leave the phone face down by my pillow.*"
+        "text": "*I close the textbook with Friday’s timetable written in it and switch the desk lamp off completely. I put my phone face down beside my pillow.*"
     },
     "forced_violation_day3_after_seoyeon": {
         "name": "Seoyeon",

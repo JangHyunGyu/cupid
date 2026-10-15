@@ -39,7 +39,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_high_2": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy.png",
-        "next": "date_seo_compliment_choice"
+        "next": "date_seo_compliment_choice",
+        "framing": "close"
     },
     "date_seo_tentative_1": {
         "background": "assets/images/background/park.png",
@@ -95,7 +96,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_pretty_high_4": {
         "background": "assets/images/background/park.png",
         "character": "assets/images/characters/seyoun_shy2.png",
-        "next": "date_seo_walk"
+        "next": "date_seo_walk",
+        "framing": "close"
     },
     "date_seo_pretty_low": {
         "background": "assets/images/background/park.png",
@@ -146,7 +148,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_flower_2": {
         "background": "assets/images/background/flower_shop.webp",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_succulent_2"
+        "next": "date_seo_succulent_2",
+        "framing": "close"
     },
     "date_seo_succulent_2": {
         "background": "assets/images/background/flower_shop.webp",
@@ -166,22 +169,26 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_end": {
         "background": "assets/images/background/flower_shop.webp",
         "character": "assets/images/characters/seyoun_worried.png",
-        "next": "date_seo_end_b"
+        "next": "date_seo_end_b",
+        "framing": "close"
     },
     "date_seo_end_b": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_end_c"
+        "next": "date_seo_end_c",
+        "framing": "close"
     },
     "date_seo_end_c": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "date_seo_end_d"
+        "next": "date_seo_end_d",
+        "framing": "close"
     },
     "date_seo_end_d": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/seyoun_shy.png",
-        "next": "pre_confess_minsu"
+        "next": "pre_confess_minsu",
+        "framing": "close"
     },
     "date_yuna_1": {
         "background": "assets/images/background/cafe.png",
@@ -356,22 +363,26 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_yuna_earphone": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_date_shy.webp",
-        "next": "date_yuna_earphone_2"
+        "next": "date_yuna_earphone_2",
+        "framing": "close"
     },
     "date_yuna_earphone_2": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_date_normal.webp",
-        "next": "date_yuna_earphone_2_b"
+        "next": "date_yuna_earphone_2_b",
+        "framing": "close"
     },
     "date_yuna_earphone_2_b": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_date_normal.webp",
-        "next": "date_yuna_earphone_3"
+        "next": "date_yuna_earphone_3",
+        "framing": "close"
     },
     "date_yuna_earphone_3": {
         "background": "assets/images/background/bookstore.png",
         "character": "assets/images/characters/yuna_date_shy.webp",
-        "next": "date_yuna_oldbook"
+        "next": "date_yuna_oldbook",
+        "framing": "close"
     },
     "date_yuna_oldbook": {
         "background": "assets/images/background/bookstore.png",
@@ -470,7 +481,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_dain_high_2": {
         "background": "assets/images/background/school_back.png",
         "character": "assets/images/characters/dain_date_shy.webp",
-        "next": "date_dain_2"
+        "next": "date_dain_2",
+        "framing": "close"
     },
     "date_dain_tentative_1": {
         "background": "assets/images/background/school_back.png",

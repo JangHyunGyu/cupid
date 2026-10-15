@@ -17,7 +17,7 @@
     },
     "morning4_start": {
         "name": "{name}",
-        "text": "*The fourth day, Saturday morning. The moment I open my eyes to weekend sunlight slipping through a gap in the curtains, I pull the phone from beside my pillow and check today's schedule.*"
+        "text": "*Saturday morning, the fourth day. Weekend sunlight slips through the curtains and wakes me. Instead of checking when to leave for school, I pull over the phone beside my pillow to check today’s plans.*"
     },
     "morning4_date_plan_check": {},
     "morning4_nightmare_check": {},
@@ -74,7 +74,7 @@
     "minsu_cheer_4_e": {},
     "morning4_start_2": {
         "name": "{name}",
-        "text": "*I open the window, breathe in the cool morning air, and open the message with the meeting place again.*"
+        "text": "*I open the window and breathe in the cool morning air. Instead of the timetable I checked during the week, I reopen the message with our meeting place.*"
     },
     "morning4_seo_msg_1": {
         "name": "Seoyeon",

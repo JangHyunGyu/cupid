@@ -176,3 +176,14 @@
 - 다음 장면 대사·지문이 이미 보여 주는 행동을 다시 중계하는 주인공 지문과 장면 사이 단순 이동 지문 43개 삭제 (Day 2~3 주인공 지문 후보 221개 중 약 19%)
 - 지운 장면 ID는 `SceneRenderer.js`의 `REMOVED_SCENE_REDIRECTS`로 다음 장면에 연결해 예전 세이브도 이어서 진행
 - 새 문구는 쓰지 않고 삭제·재연결만 수행. 8개 언어 i18n과 `SCENARIO.md` 동기화 완료
+
+### Authored scene direction (2026-10-15)
+
+- `framing` accepts `far`, `normal`, `close` and `intimate`; per-slot `characters.left.framing` overrides the scene value. Normal is restored when omitted. Distance composes with existing portrait padding and side-slot depth.
+- Use `characters.left/center/right` only for people present in the authored scene. Keep the speaking person's existing expression. Narration clears static-scene dimming; group FreeTalk retains its own speaker presentation.
+- `staging: "counteroffer"` uses the existing saved lead/tempter resolver, so the gathering and final choice show the same two people as the intervening group conversation.
+- `bgm: "none"` or `null` stops music; `bgmFadeOut` is a duration in seconds from 0 to 30. Resume an actual track at the intended response. A stop cue never unlocks a gallery track.
+- `sfx: "synth:page_turn"`, `door`, `notification`, `volleyball` and `heartbeat` use native WebAudio synthesis. Existing audio file names remain supported. Library/gym/rain ambience uses an independent loop controlled by SFX volume and mute; `ambient: "none"` suppresses it for silence cues.
+- Timeline details update existing text entries in all eight languages. Do not add scene clicks, change rewards or imply an unplayed route event. Run `scenario:sync` to document framing, staging, fades, ambience and effects.
+
+Review and validation: `docs/qa/scene-upgrade-20261015.json`.

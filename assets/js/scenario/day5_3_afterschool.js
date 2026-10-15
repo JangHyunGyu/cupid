@@ -206,7 +206,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_farewell_seo_6_b": {
         "background": "assets/images/background/school_hallway.png",
         "character": "assets/images/characters/seyoun_normal.png",
-        "next": "after5_farewell_seo_7"
+        "next": "after5_farewell_seo_7",
+        "framing": "far"
     },
     "after5_farewell_seo_7": {
         "background": "assets/images/background/school_hallway.png",
@@ -261,7 +262,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_normal.png",
         "excludeCondition": "route_yuna",
-        "next": "after5_farewell_yuna_5"
+        "next": "after5_farewell_yuna_5",
+        "framing": "far"
     },
     "after5_farewell_yuna_5": {
         "background": "assets/images/background/library_old.png",
@@ -346,7 +348,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_farewell_dain_4_d": {
         "background": "assets/images/background/gym.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "after5_farewell_dain_5"
+        "next": "after5_farewell_dain_5",
+        "framing": "far"
     },
     "after5_farewell_dain_5": {
         "background": "assets/images/background/gym.png",
@@ -1009,7 +1012,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "after5_farewell_yuna_neg": {
         "background": "assets/images/background/library_old.png",
         "character": "assets/images/characters/yuna_bored.png",
-        "next": "after5_farewell_dain_check"
+        "next": "after5_farewell_dain_check",
+        "framing": "far"
     },
     "after5_farewell_dain_neg": {
         "background": "assets/images/background/school_back.png",

@@ -566,14 +566,16 @@ if (cssVersionKeys.length > 1) {
 // ===== 16. Audio File Existence =====
 const AUDIO_BGM_DIR = path.join(__dirname, 'assets/audio/bgm');
 const AUDIO_SFX_DIR = path.join(__dirname, 'assets/audio/sfx');
+const { validateDirection } = require('./scripts/lib/scene-direction-contract.cjs');
 for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
-    if (scene.bgm && typeof scene.bgm === 'string') {
+    for (const issue of validateDirection(scene)) errors.push('[SCENE_DIRECTION] ' + sceneId + ': ' + issue);
+    if (scene.bgm && scene.bgm !== 'none' && typeof scene.bgm === 'string') {
         const bgmPath = path.join(AUDIO_BGM_DIR, scene.bgm);
         if (!fs.existsSync(bgmPath)) {
             errors.push('[AUDIO_MISSING] ' + sceneId + ' (day' + day + '): bgm="' + scene.bgm + '" file not found');
         }
     }
-    if (scene.sfx && typeof scene.sfx === 'string') {
+    if (scene.sfx && typeof scene.sfx === 'string' && !scene.sfx.startsWith('synth:')) {
         const sfxPath = path.join(AUDIO_SFX_DIR, scene.sfx);
         if (!fs.existsSync(sfxPath)) {
             errors.push('[AUDIO_MISSING] ' + sceneId + ' (day' + day + '): sfx="' + scene.sfx + '" file not found');

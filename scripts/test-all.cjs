@@ -33,6 +33,7 @@ const commands = [
     ['node', ['--test', 'tests/scene-visuals.test.cjs']],
     ['node', ['--test', 'tests/night-messenger.test.cjs']],
     ['node', ['--test', 'tests/dialogue-skip-cooldown.test.cjs']],
+    ['node', ['--test', 'tests/scene-direction.test.cjs']],
     ['node', ['--test', 'tests/immersive.test.cjs']],
     ['node', ['scripts/verify-repetition-guards.cjs']],
     ['node', ['scripts/audit-media.cjs']]

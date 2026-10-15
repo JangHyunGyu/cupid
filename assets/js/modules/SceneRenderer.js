@@ -601,7 +601,10 @@ class SceneRenderer {
                     scene.background.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '')
                 )
             )
-        ) return;
+        ) {
+            this.syncPresentation(scene);
+            return;
+        }
 
         // 호출 ID로 이전 비동기 작업 무효화
         const backgroundId = scene.background
@@ -616,7 +619,10 @@ class SceneRenderer {
         // they explicitly opt in.
         if (!shouldHideCharactersForCG
             && !scene.hasOwnProperty('characters')
-            && !scene.hasOwnProperty('character')) return;
+            && !scene.hasOwnProperty('character')) {
+            this.syncPresentation(scene);
+            return;
+        }
 
         this._charUpdateId = (this._charUpdateId || 0) + 1;
         const updateId = this._charUpdateId;
@@ -632,7 +638,7 @@ class SceneRenderer {
                 if (typeof value === 'object' && value?.src) {
                     // 객체 형태: {src, opacity}
                     newCharMap[posKey] = (window.CupidMedia?.isProtectedPath?.(value.src) ? window.CupidMedia.resolveUrl(value.src) : getAssetUrl(value.src));
-                    charOptions[posKey] = { opacity: value.opacity ?? 1 };
+                    charOptions[posKey] = { opacity: value.opacity ?? 1, framing: value.framing };
                 } else {
                     // 문자열: 단순 URL
                     newCharMap[posKey] = (window.CupidMedia?.isProtectedPath?.(value) ? window.CupidMedia.resolveUrl(value) : getAssetUrl(value));
@@ -672,6 +678,7 @@ class SceneRenderer {
                 if (scene.thinking) img.classList.add('thinking');
                 else img.classList.remove('thinking');
             });
+            this.syncPresentation(scene);
         };
         if (changedSlots.length === 0) {
             syncPresentation();
@@ -770,6 +777,35 @@ class SceneRenderer {
 
         await Promise.all([...exitPromises, ...swapPromises]);
         if (this.currentSceneId === sceneId && this._charUpdateId === updateId) syncPresentation();
+    }
+
+    syncPresentation(scene) {
+        const frames = ['far', 'normal', 'close', 'intimate'];
+        const layer = document.getElementById?.('character-layer');
+        let count = 0;
+        let intimate = false;
+        for (const [pos, slot] of Object.entries(this.uiManager.charSlots)) {
+            if (!slot) continue;
+            const img = slot.querySelector('img');
+            if (!img) {
+                slot.classList.remove('char-dimmed', 'char-focused');
+                continue;
+            }
+            const requested = scene.characters?.[pos]?.framing || scene.framing || 'normal';
+            const frame = frames.includes(requested) ? requested : 'normal';
+            img.classList.remove(...frames.map(name => `char-frame-${name}`));
+            img.classList.add(`char-frame-${frame}`);
+            count++;
+            intimate = intimate || frame === 'intimate';
+        }
+        layer?.classList.toggle('multi-character-scene', count > 1);
+        layer?.classList.toggle('three-character-scene', count === 3);
+        layer?.classList.toggle('bg-depth-of-field', intimate && count > 0);
+        this.uiManager.bgLayer?.classList.toggle('bg-depth-of-field', intimate && count > 0);
+        if (count < 2) for (const slot of Object.values(this.uiManager.charSlots)) {
+            slot?.classList.remove('char-dimmed', 'char-focused');
+            slot?.querySelector('img')?.classList.remove('char-focused');
+        }
     }
     // ============================================================================================
     // 🚩 연락처 합성 플래그 계산

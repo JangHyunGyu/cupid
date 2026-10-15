@@ -12,7 +12,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "morning5_counteroffer_gather": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "next": "morning5_counteroffer_group_talk"
+        "next": "morning5_counteroffer_group_talk",
+        "staging": "counteroffer"
     },
     "morning5_start": {
         "background": "assets/images/background/room_school.png",
@@ -182,63 +183,303 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
-            { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_seoyeon"] },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_seoyeon"] },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-45}} },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-55}} }
-        ]
+            {
+                "next": "morning5_caught_seoyeon_honest",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -40
+                    }
+                },
+                "setFlags": [
+                    "day5_confessed_counteroffer",
+                    "day5_abandoned_seoyeon"
+                ]
+            },
+            {
+                "next": "morning5_caught_seoyeon_lie",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -50
+                    }
+                },
+                "setFlags": [
+                    "day5_lied_about_counteroffer",
+                    "day5_abandoned_seoyeon"
+                ]
+            },
+            {
+                "next": "morning5_caught_seoyeon_lie",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -45
+                    }
+                }
+            },
+            {
+                "next": "morning5_caught_seoyeon_lie",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -55
+                    }
+                }
+            }
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 0,
+        "ambient": "none",
+        "sfx": "synth:notification"
     },
     "morning5_caught_seoyeon_by_yuna": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/seyoun_sad.png",
         "choices": [
-            { "next": "morning5_caught_seoyeon_honest", "stats": {"Seoyeon":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_seoyeon"] },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_seoyeon"] },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-45}} },
-            { "next": "morning5_caught_seoyeon_lie", "stats": {"Seoyeon":{"affinity":-55}} }
-        ]
+            {
+                "next": "morning5_caught_seoyeon_honest",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -40
+                    }
+                },
+                "setFlags": [
+                    "day5_confessed_counteroffer",
+                    "day5_abandoned_seoyeon"
+                ]
+            },
+            {
+                "next": "morning5_caught_seoyeon_lie",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -50
+                    }
+                },
+                "setFlags": [
+                    "day5_lied_about_counteroffer",
+                    "day5_abandoned_seoyeon"
+                ]
+            },
+            {
+                "next": "morning5_caught_seoyeon_lie",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -45
+                    }
+                }
+            },
+            {
+                "next": "morning5_caught_seoyeon_lie",
+                "stats": {
+                    "Seoyeon": {
+                        "affinity": -55
+                    }
+                }
+            }
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 0,
+        "ambient": "none",
+        "sfx": "synth:notification"
     },
     "morning5_caught_dain_by_seoyeon": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
-            { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_dain"] },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_dain"] },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-45}} },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-55}} }
-        ]
+            {
+                "next": "morning5_caught_dain_honest",
+                "stats": {
+                    "Dain": {
+                        "affinity": -40
+                    }
+                },
+                "setFlags": [
+                    "day5_confessed_counteroffer",
+                    "day5_abandoned_dain"
+                ]
+            },
+            {
+                "next": "morning5_caught_dain_lie",
+                "stats": {
+                    "Dain": {
+                        "affinity": -50
+                    }
+                },
+                "setFlags": [
+                    "day5_lied_about_counteroffer",
+                    "day5_abandoned_dain"
+                ]
+            },
+            {
+                "next": "morning5_caught_dain_lie",
+                "stats": {
+                    "Dain": {
+                        "affinity": -45
+                    }
+                }
+            },
+            {
+                "next": "morning5_caught_dain_lie",
+                "stats": {
+                    "Dain": {
+                        "affinity": -55
+                    }
+                }
+            }
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 0,
+        "ambient": "none",
+        "sfx": "synth:notification"
     },
     "morning5_caught_dain_by_yuna": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_sad.png",
         "choices": [
-            { "next": "morning5_caught_dain_honest", "stats": {"Dain":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_dain"] },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_dain"] },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-45}} },
-            { "next": "morning5_caught_dain_lie", "stats": {"Dain":{"affinity":-55}} }
-        ]
+            {
+                "next": "morning5_caught_dain_honest",
+                "stats": {
+                    "Dain": {
+                        "affinity": -40
+                    }
+                },
+                "setFlags": [
+                    "day5_confessed_counteroffer",
+                    "day5_abandoned_dain"
+                ]
+            },
+            {
+                "next": "morning5_caught_dain_lie",
+                "stats": {
+                    "Dain": {
+                        "affinity": -50
+                    }
+                },
+                "setFlags": [
+                    "day5_lied_about_counteroffer",
+                    "day5_abandoned_dain"
+                ]
+            },
+            {
+                "next": "morning5_caught_dain_lie",
+                "stats": {
+                    "Dain": {
+                        "affinity": -45
+                    }
+                }
+            },
+            {
+                "next": "morning5_caught_dain_lie",
+                "stats": {
+                    "Dain": {
+                        "affinity": -55
+                    }
+                }
+            }
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 0,
+        "ambient": "none",
+        "sfx": "synth:notification"
     },
     "morning5_caught_yuna_by_seoyeon": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/yuna_sad.png",
         "choices": [
-            { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_yuna"] },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_yuna"] },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-45}} },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-55}} }
-        ]
+            {
+                "next": "morning5_caught_yuna_honest",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -40
+                    }
+                },
+                "setFlags": [
+                    "day5_confessed_counteroffer",
+                    "day5_abandoned_yuna"
+                ]
+            },
+            {
+                "next": "morning5_caught_yuna_lie",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -50
+                    }
+                },
+                "setFlags": [
+                    "day5_lied_about_counteroffer",
+                    "day5_abandoned_yuna"
+                ]
+            },
+            {
+                "next": "morning5_caught_yuna_lie",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -45
+                    }
+                }
+            },
+            {
+                "next": "morning5_caught_yuna_lie",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -55
+                    }
+                }
+            }
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 0,
+        "ambient": "none",
+        "sfx": "synth:notification"
     },
     "morning5_caught_yuna_by_dain": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "cold",
         "character": "assets/images/characters/yuna_sad.png",
         "choices": [
-            { "next": "morning5_caught_yuna_honest", "stats": {"Yuna":{"affinity":-40}}, "setFlags": ["day5_confessed_counteroffer", "day5_abandoned_yuna"] },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-50}}, "setFlags": ["day5_lied_about_counteroffer", "day5_abandoned_yuna"] },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-45}} },
-            { "next": "morning5_caught_yuna_lie", "stats": {"Yuna":{"affinity":-55}} }
-        ]
+            {
+                "next": "morning5_caught_yuna_honest",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -40
+                    }
+                },
+                "setFlags": [
+                    "day5_confessed_counteroffer",
+                    "day5_abandoned_yuna"
+                ]
+            },
+            {
+                "next": "morning5_caught_yuna_lie",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -50
+                    }
+                },
+                "setFlags": [
+                    "day5_lied_about_counteroffer",
+                    "day5_abandoned_yuna"
+                ]
+            },
+            {
+                "next": "morning5_caught_yuna_lie",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -45
+                    }
+                }
+            },
+            {
+                "next": "morning5_caught_yuna_lie",
+                "stats": {
+                    "Yuna": {
+                        "affinity": -55
+                    }
+                }
+            }
+        ],
+        "bgm": "none",
+        "bgmFadeOut": 0,
+        "ambient": "none",
+        "sfx": "synth:notification"
     },
     "morning5_caught_seoyeon_honest": {
         "setFlags": ["day5_confessed_counteroffer"],
@@ -296,25 +537,44 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "background": "assets/images/background/room_school.png",
         "character": null,
         "choices": [
-            { "next": "morning5_counteroffer_choice_lead", "setFlags": ["day5_counteroffer_choice_lead"] },
-            { "next": "morning5_counteroffer_choice_tempter", "setFlags": ["day5_counteroffer_choice_tempter"] },
-            { "next": "morning5_counteroffer_choice_neither", "setFlags": ["day5_counteroffer_choice_neither"] }
-        ]
+            {
+                "next": "morning5_counteroffer_choice_lead",
+                "setFlags": [
+                    "day5_counteroffer_choice_lead"
+                ]
+            },
+            {
+                "next": "morning5_counteroffer_choice_tempter",
+                "setFlags": [
+                    "day5_counteroffer_choice_tempter"
+                ]
+            },
+            {
+                "next": "morning5_counteroffer_choice_neither",
+                "setFlags": [
+                    "day5_counteroffer_choice_neither"
+                ]
+            }
+        ],
+        "staging": "counteroffer"
     },
     "morning5_counteroffer_choice_lead": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "next": "morning5_after_counteroffer"
+        "next": "morning5_after_counteroffer",
+        "staging": "counteroffer"
     },
     "morning5_counteroffer_choice_tempter": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "next": "morning5_after_counteroffer"
+        "next": "morning5_after_counteroffer",
+        "staging": "counteroffer"
     },
     "morning5_counteroffer_choice_neither": {
         "background": "assets/images/background/room_school.png",
         "character": null,
-        "next": "morning5_after_counteroffer"
+        "next": "morning5_after_counteroffer",
+        "staging": "counteroffer"
     },
     "morning5_after_counteroffer": {
         "background": "assets/images/background/room_school.png",

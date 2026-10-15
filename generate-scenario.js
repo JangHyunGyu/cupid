@@ -276,7 +276,16 @@ function formatScene(sceneId, scene, i18n) {
 
     if (scene.backgroundVariant) lines.push(`- 배경톤: \`${scene.backgroundVariant}\``);
     if (scene.timeOfDay) lines.push(`- 시간대: \`${scene.timeOfDay}\``);
-    if (scene.bgm) lines.push(`- BGM: \`${scene.bgm}\``);
+    if (scene.bgm === null || scene.bgm === 'none') lines.push('- BGM: `stop`');
+    else if (scene.bgm) lines.push(`- BGM: \`${scene.bgm}\``);
+    if (Number.isFinite(scene.bgmFadeOut)) lines.push(`- BGM fade out: \`${scene.bgmFadeOut}s\``);
+    if (scene.sfx) lines.push(`- SFX: \`${scene.sfx}\``);
+    if (Object.prototype.hasOwnProperty.call(scene, 'ambient')) lines.push(`- Ambience: \`${scene.ambient || 'none'}\``);
+    if (scene.framing) lines.push(`- Framing: \`${scene.framing}\``);
+    if (scene.staging) lines.push(`- Staging: \`${scene.staging}\``);
+    if (scene.characters) for (const [pos, actor] of Object.entries(scene.characters)) {
+        if (actor && typeof actor === 'object' && actor.framing) lines.push(`- ${pos} framing: \`${actor.framing}\``);
+    }
     if (scene.type) lines.push(`- 타입: \`${scene.type}\``);
     if (scene.messenger === true) lines.push('- 연출: `메신저 말풍선`');
     if (scene.messenger === false) lines.push('- 연출: `메신저 제외(통화)`');
