@@ -1,0 +1,80 @@
+{
+  "method": "Local facial feature compositing at native resolution; original alpha retained",
+  "maskBounds": [
+    954,
+    390,
+    1363,
+    804
+  ],
+  "maskBlurRadius": 3,
+  "records": [
+    {
+      "name": "seyoun_date_laugh",
+      "dimensions": [
+        2480,
+        3312
+      ],
+      "outsideFacialFeatureMaskChangedPixels": 0,
+      "belowFaceChangedPixels": 0,
+      "glassesBridgeRegistration": {
+        "translation": [
+          0,
+          2
+        ],
+        "score": 0.941703
+      },
+      "alphaIdenticalToBase": true
+    },
+    {
+      "name": "seyoun_date_shy",
+      "dimensions": [
+        2480,
+        3312
+      ],
+      "outsideFacialFeatureMaskChangedPixels": 0,
+      "belowFaceChangedPixels": 0,
+      "glassesBridgeRegistration": {
+        "translation": [
+          -1,
+          -1
+        ],
+        "score": 0.937574
+      },
+      "alphaIdenticalToBase": true
+    },
+    {
+      "name": "seyoun_date_worried",
+      "dimensions": [
+        2480,
+        3312
+      ],
+      "outsideFacialFeatureMaskChangedPixels": 0,
+      "belowFaceChangedPixels": 0,
+      "glassesBridgeRegistration": {
+        "translation": [
+          18,
+          3
+        ],
+        "score": 0.899649
+      },
+      "alphaIdenticalToBase": true
+    },
+    {
+      "name": "seyoun_date_sad",
+      "dimensions": [
+        2480,
+        3312
+      ],
+      "outsideFacialFeatureMaskChangedPixels": 0,
+      "belowFaceChangedPixels": 0,
+      "glassesBridgeRegistration": {
+        "translation": [
+          0,
+          0
+        ],
+        "score": 0.949733
+      },
+      "alphaIdenticalToBase": true
+    }
+  ]
+}

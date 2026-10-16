@@ -1,0 +1,589 @@
+{
+  "date": "2026-10-16",
+  "scope": "Restore canonical Seoyeon proportions, correct bag geometry, add natural garment contact, synchronize five date expressions and flower-shop CG",
+  "generator": "Higgsfield GPT Image 2.5",
+  "requested": {
+    "quality": "max",
+    "resolution": "4k"
+  },
+  "actualDimensions": {
+    "sprites": [
+      2480,
+      3312
+    ],
+    "eventCG": [
+      2880,
+      2880
+    ]
+  },
+  "canonical": {
+    "path": "assets/images/characters/seyoun_normal.png",
+    "ageEvidence": "assets/js/gallery-data.js:112",
+    "age": 18
+  },
+  "approvedBagGeometry": "One strap from picture-right shoulder to picture-left hip bag; slash direction",
+  "generation": {
+    "base": {
+      "jobId": "bb919929-a452-48a9-9317-d6b1e1f40b6e",
+      "prompt": "Use case: identity-preserve.\nAsset: one corrected production standing sprite for the visual novel CUPID.\nIMAGE 1 IS THE EDIT TARGET AND THE SOLE ANATOMY / FACE / STYLE MASTER: the original canonical Seoyeon (canonically 18 years old). IMAGE 2 is a wardrobe-and-bag-design reference ONLY; do not inherit its anatomy, face proportions or pose.\nEdit image 1 by changing only her clothes to her established weekend outfit and adding the crossbody bag. Preserve image 1's exact face, eyes, glasses shape and scale, head size relative to shoulder width, short natural neck, shoulder height, torso length and volume, waist-to-hip proportions, upper-leg width, standing stance, tilt of her head and original hands gently interlaced at waist height. Do not enlarge the head or eyes, lengthen the neck, lower the shoulders, narrow the torso, flatten the silhouette or redesign her figure. Maintain the original bold clean painted-anime linework, smooth restrained shading and BLACK hair with its original broad wave shapes; do not replace with hundreds of thin flyaway strands or photorealistic hair.\nWardrobe from image 2: ivory knitted cardigan open over an opaque WHITE blouse with all front buttons correctly closed and no gaps, navy A-line MIDI skirt, one small brown leather crossbody bag with brass hardware. Natural fully clothed everyday appearance. No school blazer or crest. Keep the cardigan fitted to the original silhouette rather than hiding the entire torso under a box shape. No cleavage emphasis, no erotic posing.\nBAG GEOMETRY: one continuous diagonal strap starts at PICTURE-RIGHT shoulder (her left shoulder), crosses down toward PICTURE-LEFT hip (her right hip), and attaches to the one brown bag at PICTURE-LEFT hip. The strap makes a slash '/' in image coordinates. The strap passes naturally behind the interlaced hands if necessary. Show the shoulder attachment beside the hair; do not alter the head/hair silhouette to do so. No mirrored strap, second strap or duplicated bag.\nSame head-to-mid-thigh framing as image 1. Entire hair and hands inside the frame, original pose and subject scale, small clear top margin; the midi skirt continues past the lower crop, no visible skirt hem or bare legs needed. True transparent alpha background, no glow, floor, scenery, shadow, text, watermark or sheet. One 3:4 portrait. Maximum supported NATIVE 4K resolution, highest MAX quality.",
+      "review": "Rejected bag direction; restored anatomy retained as the source for the next edit"
+    },
+    "bagCorrection": {
+      "jobId": "7c96c76f-94fc-4710-8657-04a9a39401c0",
+      "prompt": "Use case: precise-object-edit.\nEdit THIS exact 18-year-old adult Seoyeon sprite. The face, head size, glasses, BLACK hair waves, short neck, shoulders, restored body proportions, interlaced hands, ivory cardigan, white blouse, navy midi skirt, subject scale and transparent canvas are ALREADY correct. Preserve all of them.\nCHANGE ONLY the brown crossbody strap and the tiny fabric contact/shadow area immediately under it. The current strap is WRONG: it starts on picture LEFT. Completely remove that wrong left-shoulder strap and restore the blouse underneath.\nDraw ONE physically continuous strap from PICTURE RIGHT SHOULDER (her LEFT shoulder) diagonally DOWN AND LEFT to the existing brown bag at PICTURE LEFT HIP (her RIGHT hip). The upper endpoint must be on the RIGHT side of the canvas, not hidden on the left. Image-coordinate path: upper-right shoulder -> middle chest -> lower-left waist -> existing lower-left bag. Slash '/' direction. The bag stays at the picture LEFT, unchanged. No extra strap at the left shoulder, no strap crossing back toward the right hip, no disconnected ends. Strap attachment at upper-right is visible beside the hair without changing the hair silhouette.\nThe slim leather strap should conform naturally to the three-dimensional CLOTHED bust: gently settle against the central valley between the breasts and create realistic mild fabric tension, shallow folds and soft contact shadows in the closed opaque white blouse. Attractive but natural fit; preserve the reference's existing adult figure without enlargement. The strap curves subtly along the fabric surface rather than cutting through anatomy or flattening the chest. All blouse buttons remain closed, no gaps, no transparent fabric or nudity. Keep the polished painted-anime style and original smooth shading, not photorealism. Keep her original hands and pose exactly.\nOne finished 3:4 portrait. Genuine transparent alpha; no glow, background, floor, shadow, text or watermark. Highest MAX quality and maximum supported NATIVE 4K resolution."
+    },
+    "finalBase": {
+      "jobId": "0d10c04a-518e-40bd-a8b8-44387dfee1e1",
+      "prompt": "Use case: precise-object-edit.\nMake a small LOCAL refinement of the blouse and strap contact in this exact reference of Seoyeon, an adult aged 18. Keep everything else exactly as in this image: her face, glasses, eye size, head size, neck length, black hair wave shapes, shoulders, overall original body proportions, torso volume, waist and hips, interlaced hands, cardigan, long navy skirt, bag, pose, canvas and shading.\nKeep the correct ONE brown strap starting at PICTURE RIGHT SHOULDER and ending at PICTURE LEFT HIP BAG, slash '/' direction. This is fixed and must not change.\nRefine the white blouse so the strap visibly settles into the natural central valley between her existing full breasts, with a soft shallow indentation in the FABRIC, slight asymmetric tension folds and believable contact shadow immediately alongside the leather. The two curved fabric volumes must read clearly instead of a single flat shirt plane; keep their existing size. Subtle attractive everyday clothing fit, not exaggerated squeezing, no anatomical distortion or strap penetrating the body. The diagonal strap remains physically continuous, with gently curved perspective following the body surface.\nRestore a relaxed blouse collar with the top collar button open, as a normal casual shirt; the rest stays fully closed and opaque, no gaps between buttons, no sheer cloth, no nipples or nudity. Keep the neckline modest. Do not add cleavage with unrealistic skin folds. Preserve the exact painted-anime lines and smooth rendering of the reference.\nChange only this local blouse/strap contact detail. No new pose, no zoom, no head or body changes, no new hair texture, no extra accessories.\nOne transparent-alpha 3:4 portrait, maximum supported native 4K resolution and highest MAX quality; no glow, scenery, floor, text or watermark."
+    },
+    "variants": [
+      {
+        "name": "seyoun_date_laugh",
+        "job": {
+          "index": 0,
+          "job_id": "9f49d062-7b14-4ed0-ab9e-ec68b2987706",
+          "status": "completed",
+          "type": "image",
+          "model": "gpt_image_2_5",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_083146_9f49d062-7b14-4ed0-ab9e-ec68b2987706.png"
+        },
+        "params": {
+          "model": "gpt_image_2_5",
+          "quality": "max",
+          "resolution": "4k",
+          "background": "transparent",
+          "aspect_ratio": "3:4",
+          "prompt": "Use case: identity-preserve. Edit this EXACT reference of the canonically 18-year-old adult Seoyeon. Change ONLY the expression inside her face to a warm natural smile with gently lifted cheeks, open eyes and slightly parted smiling lips; no exaggerated grin. Preserve head size, face outline, chin, ear, head angle, glasses frame geometry, BLACK hair shape, short neck, shoulders, original adult body proportions, hands interlaced at waist, ivory cardigan, casually open blouse collar, opaque white blouse, long navy skirt, one brown bag at PICTURE LEFT hip and ONE continuous strap from PICTURE RIGHT shoulder to PICTURE LEFT hip. Preserve all blouse/strap contact folds and its subtle shaping exactly. No second strap, no mirror. No new pose, scaling, zoom, lighting or brushwork; keep the clean painted-anime linework. Everything outside the facial expression must remain identical. True transparent alpha, one 3:4 portrait, all hair and hands inside frame. Maximum supported native 4K resolution and highest MAX quality. No glow, background, shadow, text or watermark.",
+          "medias": [
+            {
+              "role": "image_references",
+              "value": "0d10c04a-518e-40bd-a8b8-44387dfee1e1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "seyoun_date_shy",
+        "job": {
+          "index": 1,
+          "job_id": "f6987d91-e6d4-4436-b8ea-ff7d4e19d265",
+          "status": "completed",
+          "type": "image",
+          "model": "gpt_image_2_5",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_083145_f6987d91-e6d4-4436-b8ea-ff7d4e19d265.png"
+        },
+        "params": {
+          "model": "gpt_image_2_5",
+          "quality": "max",
+          "resolution": "4k",
+          "background": "transparent",
+          "aspect_ratio": "3:4",
+          "prompt": "Use case: identity-preserve. Edit this EXACT reference of the canonically 18-year-old adult Seoyeon. Change ONLY the expression inside her face to a small shy closed-mouth smile, subtly lowered OPEN eyes, soft natural cheek warmth; no head tilt change. Preserve head size, face outline, chin, ear, head angle, glasses frame geometry, BLACK hair shape, short neck, shoulders, original adult body proportions, hands interlaced at waist, ivory cardigan, casually open blouse collar, opaque white blouse, long navy skirt, one brown bag at PICTURE LEFT hip and ONE continuous strap from PICTURE RIGHT shoulder to PICTURE LEFT hip. Preserve all blouse/strap contact folds and its subtle shaping exactly. No second strap, no mirror. No new pose, scaling, zoom, lighting or brushwork; keep the clean painted-anime linework. Everything outside the facial expression must remain identical. True transparent alpha, one 3:4 portrait, all hair and hands inside frame. Maximum supported native 4K resolution and highest MAX quality. No glow, background, shadow, text or watermark.",
+          "medias": [
+            {
+              "role": "image_references",
+              "value": "0d10c04a-518e-40bd-a8b8-44387dfee1e1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "seyoun_date_worried",
+        "job": {
+          "index": 2,
+          "job_id": "6fce3887-dfbb-4f0f-840b-439adbba4c0a",
+          "status": "completed",
+          "type": "image",
+          "model": "gpt_image_2_5",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_083145_6fce3887-dfbb-4f0f-840b-439adbba4c0a.png"
+        },
+        "params": {
+          "model": "gpt_image_2_5",
+          "quality": "max",
+          "resolution": "4k",
+          "background": "transparent",
+          "aspect_ratio": "3:4",
+          "prompt": "Use case: identity-preserve. Edit this EXACT reference of the canonically 18-year-old adult Seoyeon. Change ONLY the expression inside her face to an attentive concerned expression, slightly knit eyebrows, OPEN eyes, and slightly parted unsmiling lips; no head tilt change. Preserve head size, face outline, chin, ear, head angle, glasses frame geometry, BLACK hair shape, short neck, shoulders, original adult body proportions, hands interlaced at waist, ivory cardigan, casually open blouse collar, opaque white blouse, long navy skirt, one brown bag at PICTURE LEFT hip and ONE continuous strap from PICTURE RIGHT shoulder to PICTURE LEFT hip. Preserve all blouse/strap contact folds and its subtle shaping exactly. No second strap, no mirror. No new pose, scaling, zoom, lighting or brushwork; keep the clean painted-anime linework. Everything outside the facial expression must remain identical. True transparent alpha, one 3:4 portrait, all hair and hands inside frame. Maximum supported native 4K resolution and highest MAX quality. No glow, background, shadow, text or watermark.",
+          "medias": [
+            {
+              "role": "image_references",
+              "value": "0d10c04a-518e-40bd-a8b8-44387dfee1e1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "seyoun_date_sad",
+        "job": {
+          "index": 3,
+          "job_id": "94ac7cb1-0149-4706-876e-e636e70d8bc1",
+          "status": "completed",
+          "type": "image",
+          "model": "gpt_image_2_5",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_083146_94ac7cb1-0149-4706-876e-e636e70d8bc1.png"
+        },
+        "params": {
+          "model": "gpt_image_2_5",
+          "quality": "max",
+          "resolution": "4k",
+          "background": "transparent",
+          "aspect_ratio": "3:4",
+          "prompt": "Use case: identity-preserve. Edit this EXACT reference of the canonically 18-year-old adult Seoyeon. Change ONLY the expression inside her face to a restrained sad expression, inner brows slightly raised, OPEN downcast eyes and closed lips with gently lowered corners; no tears and no head tilt change. Preserve head size, face outline, chin, ear, head angle, glasses frame geometry, BLACK hair shape, short neck, shoulders, original adult body proportions, hands interlaced at waist, ivory cardigan, casually open blouse collar, opaque white blouse, long navy skirt, one brown bag at PICTURE LEFT hip and ONE continuous strap from PICTURE RIGHT shoulder to PICTURE LEFT hip. Preserve all blouse/strap contact folds and its subtle shaping exactly. No second strap, no mirror. No new pose, scaling, zoom, lighting or brushwork; keep the clean painted-anime linework. Everything outside the facial expression must remain identical. True transparent alpha, one 3:4 portrait, all hair and hands inside frame. Maximum supported native 4K resolution and highest MAX quality. No glow, background, shadow, text or watermark.",
+          "medias": [
+            {
+              "role": "image_references",
+              "value": "0d10c04a-518e-40bd-a8b8-44387dfee1e1"
+            }
+          ]
+        }
+      },
+      {
+        "name": "event_seoyeon_succulent",
+        "job": {
+          "index": 4,
+          "job_id": "9fcfc98b-8d7c-438f-8a33-c709d60e48ff",
+          "status": "completed",
+          "type": "image",
+          "model": "gpt_image_2_5",
+          "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_083146_9fcfc98b-8d7c-438f-8a33-c709d60e48ff.png"
+        },
+        "params": {
+          "model": "gpt_image_2_5",
+          "quality": "max",
+          "resolution": "4k",
+          "background": "opaque",
+          "aspect_ratio": "1:1",
+          "prompt": "Use case: identity-preserve / precise-object-edit.\nImage 1 is the EDIT TARGET: existing CUPID flower-shop event CG. Keep the same flower shop, shelf arrangement, doorway, warm spring daylight, perspective, single little terracotta succulent pot and two-handed offering gesture. Image 2 is the DEFINITIVE Seoyeon character master: her exact face, eyes, glasses, BLACK broad-wave hair, short neck, original head-to-shoulder proportions, torso volume, waist-to-hip silhouette, ivory cardigan, casually open white blouse collar, navy midi skirt and brown crossbody bag.\nUpdate only Seoyeon in image 1 to match image 2's restored design. She is canonically an 18-year-old adult. Do not enlarge her head or eyes, elongate her neck, drop or narrow her shoulders, flatten her torso or redesign her figure. Keep the same clean painted-anime linework and smooth shading of image 2, rendered naturally in image 1's warm light. Natural small smile, direct eye contact; single person, same two hands holding ONE pot naturally at chest height with believable fingers. No extra people or foreground hands.\nCRITICAL BAG GEOMETRY: one brown bag at PICTURE LEFT HIP, ONE strap starting on PICTURE RIGHT SHOULDER, descending diagonally DOWN AND LEFT across her white blouse to the PICTURE LEFT bag. Slash '/' direction. It passes BEHIND the succulent pot and both hands, emerges lower on picture LEFT, and actually connects to the bag. No picture-left shoulder strap or second strap. Match the strap's natural mild indentation into the central valley of the CLOTHED bust, soft garment tension folds and contact shadows from image 2, preserving her existing size. Fully clothed opaque blouse, modest relaxed collar, no gaps, no nudity or exaggerated squeezing.\nKeep source CG composition and background; a coherent painted scene, not a pasted sprite. Native 1:1 SQUARE canvas. Whole face in the upper half, pot near center, both hands clear above the lower dialogue area; bag visible at lower left. Preserve the source image's sharp details. Highest MAX quality and maximum supported NATIVE 4K resolution. No text, readable writing, logos, watermark or UI.",
+          "medias": [
+            {
+              "role": "image_references",
+              "value": "be3c5c8b-d0cf-480a-aea9-547fdfbbc41c"
+            },
+            {
+              "role": "image_references",
+              "value": "0d10c04a-518e-40bd-a8b8-44387dfee1e1"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "delivery": {
+    "masterDirectory": "assets/images/masters/seoyeon-proportions-20261016",
+    "rawGeneratedOriginals": "generated/",
+    "finalNativePNG": "delivery/",
+    "method": "Facial feature regions aligned to the unchanged glasses bridge and composited onto a single base. Original alpha and all pixels outside the facial mask retained. Native PNG preserved; pixel-identical lossless WebP for delivery.",
+    "previousMastersPreserved": "assets/images/masters/art-expansion-20261016/"
+  },
+  "verification": {
+    "status": "passed",
+    "npmTest": true,
+    "build": true,
+    "cache": true,
+    "browserSceneAndGalleryTests": 23,
+    "languages": 8,
+    "storyViewports": [
+      [
+        1440,
+        1000
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "galleryVisibleChecks": [
+      {
+        "width": 1440,
+        "expression": "date_normal",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 1440,
+        "expression": "date_laugh",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 1440,
+        "expression": "date_shy",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 1440,
+        "expression": "date_worried",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 1440,
+        "expression": "date_sad",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 1440,
+        "cg": "event_seoyeon_succulent",
+        "size": [
+          2880,
+          2880
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 390,
+        "expression": "date_normal",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 390,
+        "expression": "date_laugh",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 390,
+        "expression": "date_shy",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 390,
+        "expression": "date_worried",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 390,
+        "expression": "date_sad",
+        "size": [
+          2480,
+          3312
+        ],
+        "opacity": "1"
+      },
+      {
+        "width": 390,
+        "cg": "event_seoyeon_succulent",
+        "size": [
+          2880,
+          2880
+        ],
+        "opacity": "1"
+      }
+    ],
+    "unaffectedUI": [
+      {
+        "screen": "title",
+        "width": 1440,
+        "pixelIdentical": true,
+        "differenceBounds": null
+      },
+      {
+        "screen": "title",
+        "width": 390,
+        "pixelIdentical": true,
+        "differenceBounds": null
+      },
+      {
+        "screen": "unchanged-story",
+        "width": 1440,
+        "pixelIdentical": true,
+        "differenceBounds": null
+      },
+      {
+        "screen": "unchanged-story",
+        "width": 390,
+        "pixelIdentical": true,
+        "differenceBounds": null
+      }
+    ],
+    "localImageChecks": [
+      {
+        "name": "event_seoyeon_succulent",
+        "size": [
+          2880,
+          2880
+        ],
+        "losslessWebPMatches": true,
+        "bodyMatchesBase": null
+      },
+      {
+        "name": "seyoun_date_laugh",
+        "size": [
+          2480,
+          3312
+        ],
+        "losslessWebPMatches": true,
+        "bodyMatchesBase": true
+      },
+      {
+        "name": "seyoun_date_normal",
+        "size": [
+          2480,
+          3312
+        ],
+        "losslessWebPMatches": true,
+        "bodyMatchesBase": true
+      },
+      {
+        "name": "seyoun_date_sad",
+        "size": [
+          2480,
+          3312
+        ],
+        "losslessWebPMatches": true,
+        "bodyMatchesBase": true
+      },
+      {
+        "name": "seyoun_date_shy",
+        "size": [
+          2480,
+          3312
+        ],
+        "losslessWebPMatches": true,
+        "bodyMatchesBase": true
+      },
+      {
+        "name": "seyoun_date_worried",
+        "size": [
+          2480,
+          3312
+        ],
+        "losslessWebPMatches": true,
+        "bodyMatchesBase": true
+      }
+    ],
+    "privateStorage": "12 PNG/WebP objects uploaded to content-addressed private R2 and verified by full readback; private catalog synchronized",
+    "visualReview": "Inspected actual desktop and mobile story renders plus fully visible gallery renders after entrance animation. Faces, pot and both hands remain visible in the square CG. Body and bag pixels identical across five expressions.",
+    "sourceChanges": "Only six target artworks, their source fixtures/masters, media identities and internal cache versions changed. Existing layout, controls, visible text and scenario data preserved.",
+    "deployment": {
+      "authorized": true,
+      "branch": "main",
+      "target": "https://cupid.archerlab.dev",
+      "preflight": "Tests, native image checks, 23 story/gallery browser tests and four unchanged UI pixel comparisons passed before commit. Recheck clean tree and origin/main equality before production deployment.",
+      "receiptLocation": "D:/workspace/_workspace/cupid-seoyeon-proportions-20261016/release-receipt.json"
+    },
+    "focusedGalleryCaptures": 4
+  },
+  "expressionPixelVerification": {
+    "method": "Local facial feature compositing at native resolution; original alpha retained",
+    "maskBounds": [
+      954,
+      390,
+      1363,
+      804
+    ],
+    "maskBlurRadius": 3,
+    "records": [
+      {
+        "name": "seyoun_date_laugh",
+        "dimensions": [
+          2480,
+          3312
+        ],
+        "outsideFacialFeatureMaskChangedPixels": 0,
+        "belowFaceChangedPixels": 0,
+        "glassesBridgeRegistration": {
+          "translation": [
+            0,
+            2
+          ],
+          "score": 0.941703
+        },
+        "alphaIdenticalToBase": true
+      },
+      {
+        "name": "seyoun_date_shy",
+        "dimensions": [
+          2480,
+          3312
+        ],
+        "outsideFacialFeatureMaskChangedPixels": 0,
+        "belowFaceChangedPixels": 0,
+        "glassesBridgeRegistration": {
+          "translation": [
+            -1,
+            -1
+          ],
+          "score": 0.937574
+        },
+        "alphaIdenticalToBase": true
+      },
+      {
+        "name": "seyoun_date_worried",
+        "dimensions": [
+          2480,
+          3312
+        ],
+        "outsideFacialFeatureMaskChangedPixels": 0,
+        "belowFaceChangedPixels": 0,
+        "glassesBridgeRegistration": {
+          "translation": [
+            18,
+            3
+          ],
+          "score": 0.899649
+        },
+        "alphaIdenticalToBase": true
+      },
+      {
+        "name": "seyoun_date_sad",
+        "dimensions": [
+          2480,
+          3312
+        ],
+        "outsideFacialFeatureMaskChangedPixels": 0,
+        "belowFaceChangedPixels": 0,
+        "glassesBridgeRegistration": {
+          "translation": [
+            0,
+            0
+          ],
+          "score": 0.949733
+        },
+        "alphaIdenticalToBase": true
+      }
+    ]
+  },
+  "files": [
+    {
+      "name": "event_seoyeon_succulent",
+      "width": 2880,
+      "height": 2880,
+      "protected": true,
+      "files": [
+        {
+          "path": "assets/images/background/event_seoyeon_succulent.png",
+          "sha256": "6cb85cf3b82fb2b694a7b421287b2bd0b49bb427c69b635e73f27093b3923800",
+          "size": 11745955
+        },
+        {
+          "path": "assets/images/background/event_seoyeon_succulent.webp",
+          "sha256": "7f9baec9e561a12affc63eec6a0034558a9d75c715273ea17b847018ca66d6bc",
+          "size": 7530942
+        }
+      ]
+    },
+    {
+      "name": "seyoun_date_laugh",
+      "width": 2480,
+      "height": 3312,
+      "protected": true,
+      "files": [
+        {
+          "path": "assets/images/characters/seyoun_date_laugh.png",
+          "sha256": "15c409d9c5e11c5911830c074ef97a66e4a31eb2b4ca7d3f9f3cecfa0c982568",
+          "size": 7796510
+        },
+        {
+          "path": "assets/images/characters/seyoun_date_laugh.webp",
+          "sha256": "1990ef437be7a3456595892ade1d4797d511480472553ca4f26ab5bb2d7231b7",
+          "size": 4843252
+        }
+      ]
+    },
+    {
+      "name": "seyoun_date_normal",
+      "width": 2480,
+      "height": 3312,
+      "protected": true,
+      "files": [
+        {
+          "path": "assets/images/characters/seyoun_date_normal.png",
+          "sha256": "293f3db81ac920906d228fe261904b768753a97a527de5263a7f5f79dc902f3f",
+          "size": 7815616
+        },
+        {
+          "path": "assets/images/characters/seyoun_date_normal.webp",
+          "sha256": "d7d7e8a0fda5d62e5c1fb63094589b08b40beffe96d1189bff3a64bca542a5e0",
+          "size": 4841034
+        }
+      ]
+    },
+    {
+      "name": "seyoun_date_sad",
+      "width": 2480,
+      "height": 3312,
+      "protected": true,
+      "files": [
+        {
+          "path": "assets/images/characters/seyoun_date_sad.png",
+          "sha256": "bc2ea9fc9f28c41cb9a49cec0448dcf7464b8ac15ea6253dbf8304fcc6ea4d89",
+          "size": 7791958
+        },
+        {
+          "path": "assets/images/characters/seyoun_date_sad.webp",
+          "sha256": "d64975acc25dbf681b8fcdcffb7a0ba09fc9cbb395add4d4325982e672a9fbe4",
+          "size": 4840968
+        }
+      ]
+    },
+    {
+      "name": "seyoun_date_shy",
+      "width": 2480,
+      "height": 3312,
+      "protected": true,
+      "files": [
+        {
+          "path": "assets/images/characters/seyoun_date_shy.png",
+          "sha256": "655811108b02d3949935b57fd9ee80a825726e871da1fca9087c764054fad033",
+          "size": 7796727
+        },
+        {
+          "path": "assets/images/characters/seyoun_date_shy.webp",
+          "sha256": "51f0c42536c0e7b446a5486752a38bb898d4a320108191443ed12c621983886d",
+          "size": 4843814
+        }
+      ]
+    },
+    {
+      "name": "seyoun_date_worried",
+      "width": 2480,
+      "height": 3312,
+      "protected": true,
+      "files": [
+        {
+          "path": "assets/images/characters/seyoun_date_worried.png",
+          "sha256": "5b8465b8042a66ce9abf8cef87f0a6334f9e13e298803e28a0efc098095073fd",
+          "size": 7790747
+        },
+        {
+          "path": "assets/images/characters/seyoun_date_worried.webp",
+          "sha256": "04ac7c0b7834ed06ef3200b0c4b957f61af735669bed5a6592f8fe85619d6c3b",
+          "size": 4842996
+        }
+      ]
+    }
+  ]
+}
