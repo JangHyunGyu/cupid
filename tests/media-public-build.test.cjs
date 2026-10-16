@@ -7,7 +7,7 @@ const { buildPublic } = require('../scripts/build-public.cjs');
 test('public build includes runtime entrypoints but excludes protected media and private sources', () => {
   const { output, publicFiles, protectedFiles } = buildPublic();
   for (const file of protectedFiles) assert.equal(fs.existsSync(path.join(output, file)), false, file);
-  for (const file of ['assets/images/masters', 'config', 'functions', 'tests', 'scripts', '.git', '.cupid-media-key', 'AGENTS.md',
+  for (const file of ['assets/images/masters', 'config', 'functions', 'tests', 'scripts', 'archive', '.git', '.cupid-media-key', 'AGENTS.md',
     'deepseek_api.js', 'model_adapters', 'assets/js/all_nodes.txt', 'assets/js/scenario/extract_all.js',
     'assets/js/scenario/extract_for_translation.js', 'assets/js/scenario/to_translate.json',
     'assets/audio/sfx/README.md', 'assets/images/ui/petal-frame.md']) {

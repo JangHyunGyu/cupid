@@ -1100,6 +1100,11 @@ class GameEngine {
             }
         }
 
+        if ((scene.type === 'free_talk' || scene.type === 'group_free_talk') && window.ensureCupidFreeTalkRuntime) {
+            await window.ensureCupidFreeTalkRuntime();
+            if (this._renderToken !== renderToken) return;
+        }
+
         // 현재 씬 ID 저장 (다른 곳에서 참조용)
         this.sceneRenderer.currentSceneId = sceneId;
         this._prefetchNextScenarioDay(scene);
@@ -1689,6 +1694,7 @@ class GameEngine {
         this.saveGame();
         } finally {
             releaseRenderLock();
+            if (this.sceneRenderer.currentSceneId && window.prefetchCupidFreeTalkRuntime) window.prefetchCupidFreeTalkRuntime();
         }
     }
 

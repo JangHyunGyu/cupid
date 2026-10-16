@@ -8,6 +8,7 @@ const config = JSON.parse(fs.readFileSync(path.join(root, 'config/project.json')
 const write = process.argv.includes('--write');
 const check = process.argv.includes('--check') || !write;
 const changed = [];
+require('./sync-error-classifier.cjs').syncErrorClassifier(write);
 const mediaManifest = require('./sync-media-manifest.cjs').syncMediaManifest(write);
 
 function update(relativePath, transforms) {

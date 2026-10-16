@@ -10,7 +10,29 @@
             this.active = null;
         }
 
-        _snapshot(source) {
+        _snapshotProperties() {
+            const properties = new Set(['opacity', 'transform', 'filter', 'display', 'visibility', 'background-image', 'app-region']);
+            const visit = rules => {
+                for (const rule of rules) {
+                    if (rule.style) for (const property of rule.style) {
+                        if (property === 'all') throw new Error('Full computed-style snapshot required');
+                        properties.add(property);
+                        if (property.startsWith('-webkit-')) properties.add(property.slice(8));
+                    }
+                    if (rule.cssRules) visit(rule.cssRules);
+                    if (rule.styleSheet) visit(rule.styleSheet.cssRules);
+                }
+            };
+            try {
+                if (!document.styleSheets?.length) return null;
+                for (const sheet of document.styleSheets) visit(sheet.cssRules);
+                return properties;
+            } catch (_) {
+                return null;
+            }
+        }
+
+        _snapshot(source, properties = this._snapshotProperties()) {
             const clone = source.cloneNode(true);
             const originals = [source, ...source.querySelectorAll('*')];
             const copies = [clone, ...clone.querySelectorAll('*')];
@@ -18,7 +40,26 @@
                 const copy = copies[index];
                 const computed = getComputedStyle(element);
                 copy.removeAttribute('id');
-                for (const property of computed) copy.style.setProperty(property, computed.getPropertyValue(property));
+                if (properties) {
+                    const selected = new Set([...properties, ...element.style]);
+                    for (const animation of element.getAnimations?.() || []) {
+                        for (const frame of animation.effect?.getKeyframes?.() || []) {
+                            for (const property of Object.keys(frame)) {
+                                if (!['offset', 'computedOffset', 'easing', 'composite'].includes(property)) {
+                                    selected.add(property.replace(/[A-Z]/g, value => '-' + value.toLowerCase()));
+                                }
+                            }
+                        }
+                    }
+                    const declarations = [];
+                    for (const property of selected) {
+                        const value = computed.getPropertyValue(property);
+                        if (value) declarations.push(property + ':' + value + ';');
+                    }
+                    copy.style.cssText = declarations.join('');
+                } else {
+                    for (const property of computed) copy.style.setProperty(property, computed.getPropertyValue(property));
+                }
                 copy.style.animation = 'none';
                 copy.style.transition = 'none';
                 copy.style.pointerEvents = 'none';
@@ -38,7 +79,8 @@
             overlay.setAttribute('aria-hidden', 'true');
             const picture = document.createElement('div');
             Object.assign(picture.style, { position: 'absolute', inset: '0', pointerEvents: 'none' });
-            this.layers.forEach(layer => picture.appendChild(this._snapshot(layer)));
+            const properties = this._snapshotProperties();
+            this.layers.forEach(layer => picture.appendChild(this._snapshot(layer, properties)));
             overlay.appendChild(picture);
             this.layers[0].parentNode.appendChild(overlay);
             const state = {

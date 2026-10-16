@@ -1,3 +1,47 @@
+// BEGIN GENERATED CUPID ERROR CLASSIFIER
+(function (root, factory) {
+    var api = factory();
+    if (root) root.CupidErrorClassifier = api;
+    if (typeof module === 'object' && module.exports) module.exports = api;
+})(typeof window !== 'undefined' ? window : (typeof self !== 'undefined' ? self : null), function () {
+    'use strict';
+
+    function isExpectedTransientNetworkError(error) {
+        var name = String(error && error.name || '');
+        var message = String(error && error.message || error || '');
+        return name === 'AbortError' || name === 'NetworkError'
+            || name === 'TypeError' && /load failed|failed to fetch|network request failed|fetch failed/i.test(message);
+    }
+
+    function classify(type, message, stack, source, profile, errorName) {
+        var msg = String(message || '');
+        var trace = String(stack || '');
+        var src = String(source || '');
+        var text = [msg, trace, src].join('\n');
+        var appStack = /(?:^|\/)assets\/js\/|modules\/|scenario\//i.test(trace + '\n' + src);
+        if (profile === 'worker' && type === 'UnhandledRejection'
+            && isExpectedTransientNetworkError({ name: errorName, message: msg })) return 'noise';
+        if (!msg || msg === 'Script error.' && !trace || /ResizeObserver loop/.test(msg)) return 'noise';
+        if (/chrome-extension:|moz-extension:|safari-extension:|safari-web-extension:|webkit-masked-url:\/\/hidden/i.test(text)) return 'external';
+        if (/googletagmanager|google-analytics|gtag\/js|cdn\.jsdelivr\.net|wcs\.pstatic\.net\/wcslog\.js|ssl\.pstatic\.net\/melona\/libs\/gfp-nac-module\/synchronizer\.js|static\.cloudflareinsights\.com\/beacon\.min\.js/i.test(text)) return 'external';
+        if (type === 'UnhandledRejection') {
+            var rejection = msg.replace(/^\[app:UnhandledRejection\]\s*/i, '').trim();
+            if (/^[A-Za-z_$][\w$]{0,2}$/.test(rejection) && !/(?:^|\/)assets\/js\//i.test(trace)) return 'external';
+            if (!appStack && (/^(\s*@\s*){1,4}$/.test(trace)
+                || /^\s*(?:[A-Za-z_$][\w$]*@?\s*){1,4}$/.test(trace) && rejection.length <= 12)) return 'external';
+        }
+        if (!appStack && (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)
+            || /window\.ethereum|window\.__firefox__|standardSelectors/.test(msg))) return 'noise';
+        if (/^undefined:/.test(src) && !appStack) return 'external';
+        if (type === 'ResourceError' || /Loading chunk|dynamically imported module|load failed|failed to fetch|network request failed|fetch failed/i.test(msg)) return 'network';
+        if (type === 'SecurityPolicyViolation') return 'security';
+        return 'app';
+    }
+
+    return { classify: classify, isExpectedTransientNetworkError: isExpectedTransientNetworkError };
+});
+// END GENERATED CUPID ERROR CLASSIFIER
+
 /**
  * ============================================================================
  * Cupid - 게임 로더 (Game Loader)
@@ -54,7 +98,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.330';
+    const version = '2.9.331';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -173,47 +217,19 @@
     // 게임 엔진 스크립트 (Game Engine Scripts)
     // =========================================================================
 
-    /**
-     * 게임 실행에 필요한 핵심 엔진 스크립트
-     *
-     * 로드 순서가 중요합니다!
-     * 의존성이 있는 파일은 의존하는 파일보다 먼저 로드되어야 합니다.
-     *
-     * 1. prompts.js              : AI 캐릭터 프롬프트 정의
-     * 2. gallery-*.js            : 갤러리 페이지 모듈들
-     * 3. modules/config.js       : 전역 상수 + 유틸 함수
-     * 4. modules/KoreanProcessor : 한국어 조사 처리
-     * 5. modules/StateManager    : 게임 상태(이름, 호감도, 플래그)
-     * 6. modules/SaveManager     : localStorage 저장/불러오기
-     * 7. modules/GalleryManager  : 갤러리 해금 추적
-     * 8. modules/UIManager       : DOM/UI 제어
-     * 9. modules/DialogueSystem  : 대사 타이핑 효과
-     * 10. modules/SceneRenderer  : 씬 렌더링 (배경, 캐릭터, 분기)
-     * 11. modules/FreeTalkSystem : AI 자유대화
-     * 12. modules/GameEngine     : 메인 오케스트레이터
-     * 13. modules/index.js       : 초기화 + 모듈 검증 (항상 마지막)
-     */
+    // Critical scene/storage modules stay eager; prompt definitions load after the first scene.
     const engineScripts = [
         'affinity-corrections.js',
         'progression-integrity.js',
         // 다국어 텍스트 로더
         'loaders/i18n-loader.js',
 
-        // AI 캐릭터 프롬프트
         'freetalk-core.js',
-        'example-dialogues-ko.js',
-        'prompts.js',
 
         // 갤러리 모듈 (게임에서 진행도 저장에도 사용됨)
         'media-gate.js',             // encrypted media unlock gate
         'gallery-data.js',           // 갤러리 데이터 정의
         'gallery-progress.js',       // 진행도 관리 (localStorage)
-        'gallery-ui-core.js',        // UI 코어: 팝업, 기본 기능
-        'gallery-ui-character.js',   // UI: 캐릭터 도감
-        'gallery-ui-cg.js',          // UI: CG 갤러리
-        'gallery-ui-ending.js',      // UI: 엔딩 도감
-        'gallery-ui-music.js',       // UI: 음악실
-        'gallery.js',                // 갤러리 초기화 및 이벤트
 
         // 게임 엔진 모듈 (의존성 순서대로 로드)
         'modules/config.js',         // 전역 상수 + getAssetUrl()
@@ -267,6 +283,9 @@
      */
     var runtimePromise = null;
     var scriptPromises = new Map();
+    var freeTalkRuntimePromise = null;
+    var freeTalkPrefetchScheduled = false;
+    const deferredFreeTalkScripts = ['example-dialogues-ko.js', 'prompts.js'];
     var loadedScenarioDays = new Set();
     var scenarioDayPromises = new Map();
     var requiredGlobals = [
@@ -369,6 +388,37 @@
             throw error;
         }
     }
+
+    window.ensureCupidFreeTalkRuntime = function() {
+        if (window.CupidFreeTalkPromptsReady) return Promise.resolve(true);
+        if (freeTalkRuntimePromise) return freeTalkRuntimePromise;
+        freeTalkRuntimePromise = (async function() {
+            for (const src of deferredFreeTalkScripts) await loadScript(src);
+            if (!window.getPromptData || !window.buildSystemPrompt || !window.CHARACTER_EXPRESSIONS) {
+                throw new Error('[game-loader] Free-talk prompt definitions are incomplete');
+            }
+            window.CupidFreeTalkPromptsReady = true;
+            delete window.__cupidLastFreeTalkPrefetchError;
+            return true;
+        })().catch(function(error) {
+            freeTalkRuntimePromise = null;
+            throw error;
+        });
+        return freeTalkRuntimePromise;
+    };
+
+    window.prefetchCupidFreeTalkRuntime = function() {
+        if (freeTalkPrefetchScheduled || window.CupidFreeTalkPromptsReady) return;
+        freeTalkPrefetchScheduled = true;
+        const run = function() {
+            window.ensureCupidFreeTalkRuntime().catch(function(error) {
+                window.__cupidLastFreeTalkPrefetchError = error.message || String(error);
+                if (window.__cupidLogRuntimeError) window.__cupidLogRuntimeError('FreeTalkPrefetchFailure', error.message, error.stack || '', 'game-loader');
+            });
+        };
+        if (typeof window.requestAnimationFrame === 'function') window.requestAnimationFrame(function() { window.requestAnimationFrame(run); });
+        else setTimeout(run, 0);
+    };
 
     async function ensureScenarioDay(day) {
         var normalizedDay = Number(day);
@@ -708,36 +758,8 @@
         } catch (_) { return 'ctx-error'; }
     }
 
-    function _hasAppStack(stack) {
-        return /\/assets\/js\/|\/assets\/|modules\/|scenario\/|index-(ko|en|es|ja|fr|de|pt|zh)|game-(ko|en|es|ja|fr|de|pt|zh)|index\.html|game\.html/.test(stack || '');
-    }
-
-    function _isOpaqueExternalRejection(type, msg, stack) {
-        if (type !== 'UnhandledRejection') return false;
-
-        var text = String(msg || '').replace(/^\[app:UnhandledRejection\]\s*/i, '').trim();
-        // Google App / in-app browser injected scripts sometimes reject minified
-        // sentinel values such as "Yd" or "Ba" and iOS attributes the stack to the page URL.
-        if (/^[A-Za-z_$][\w$]{0,2}$/.test(text) && !/\/assets\/js\//i.test(stack || '')) return true;
-        if (_hasAppStack(stack)) return false;
-        if (/^(\s*@\s*){1,4}$/.test(stack || '')) return true;
-        if (/^\s*(?:[A-Za-z_$][\w$]*@?\s*){1,4}$/.test(stack || '') && text.length <= 12) return true;
-        return false;
-    }
-
     function _classifyError(type, msg, stack, src) {
-        if (!msg) return 'noise';
-        if (msg === 'Script error.' && !stack) return 'noise';
-        if (_isOpaqueExternalRejection(type, msg, stack)) return 'external';
-        if (/Can't find variable: (gmo|__gCrWeb|ytcfg|__)/.test(msg)) return 'noise';
-        if (/ResizeObserver loop/.test(msg)) return 'noise';
-        if (/window\.ethereum|window\.__firefox__/.test(msg)) return 'noise';
-        if (/standardSelectors/.test(msg)) return 'noise';
-        // External scripts
-        if (src && /googletagmanager|google-analytics|gtag\/js|cloudflare|chrome-extension|moz-extension|safari-extension/.test(src)) return 'external';
-        if (src && /^undefined:/.test(src) && !_hasAppStack(stack)) return 'external';
-        if (/Loading chunk|dynamically imported module/.test(msg)) return 'network';
-        return 'app';
+        return window.CupidErrorClassifier.classify(type, msg, stack, src);
     }
 
     // error-reporter.js가 없을 때만 쓰는 예비 경로입니다. keepalive·sendBeacon은 진행 중인 본문이 64KB를 넘으면

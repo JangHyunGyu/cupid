@@ -55,26 +55,49 @@ async function openHome(browser, lang, viewport, baseline) {
     return { context, page, fonts };
 }
 
+async function switchToSubsetFont(page) {
+    await page.unroute('**/*');
+    await page.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
+    await page.evaluate(async () => {
+        const link = document.querySelector('link[href*="pretendard-home.css"]');
+        await new Promise((resolve, reject) => {
+            link.addEventListener('load', resolve, { once: true });
+            link.addEventListener('error', reject, { once: true });
+            const url = new URL(link.href);
+            url.searchParams.set('font-review', 'subset');
+            link.href = url.href;
+        });
+        await document.fonts.ready;
+        await new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)));
+    });
+}
+
 for (const viewport of [{ width: 1440, height: 900 }, { width: 390, height: 844 }]) {
     for (const lang of languages) {
         test(`home font preserves ${lang} appearance at ${viewport.width}px`, async ({ browser }, testInfo) => {
-            const images = [];
-            const geometry = [];
-            for (const baseline of [true, false]) {
-                const { context, page, fonts } = await openHome(browser, lang, viewport, baseline);
-                geometry.push(await page.locator('h1,.start-btn,.contact-link,.lang-combo-selected,.footer').evaluateAll(nodes => nodes.map(node => {
+            const full = await openHome(browser, lang, viewport, true);
+            let cold;
+            const geometry = page => page.locator('h1,.start-btn,.contact-link,.lang-combo-selected,.footer').evaluateAll(nodes => nodes.map(node => {
                     const rect = node.getBoundingClientRect();
                     return { text: node.textContent, x: rect.x, y: rect.y, width: rect.width, height: rect.height };
-                })));
-                images.push(await page.screenshot({ animations: 'disabled', path: testInfo.outputPath(baseline ? 'before.png' : 'after.png') }));
-                if (!baseline && lang !== 'zh') {
-                    expect(fonts.some(url => url.includes('CupidHomeSans-'))).toBe(true);
-                    expect(fonts.some(url => url.endsWith('/PretendardVariable.woff2'))).toBe(false);
+                }));
+            try {
+                const beforeGeometry = await geometry(full.page);
+                const before = await full.page.screenshot({ animations: 'disabled', path: testInfo.outputPath('before.png') });
+                await switchToSubsetFont(full.page);
+                const after = await full.page.screenshot({ animations: 'disabled', path: testInfo.outputPath('after.png') });
+                expect(await geometry(full.page)).toEqual(beforeGeometry);
+                expectSameRendering(before, after);
+                cold = await openHome(browser, lang, viewport, false);
+                expect(await geometry(cold.page)).toEqual(beforeGeometry);
+                if (lang !== 'zh') {
+                    expect(cold.fonts.some(url => url.includes('CupidHomeSans-'))).toBe(true);
+                    expect(cold.fonts.some(url => url.endsWith('/PretendardVariable.woff2'))).toBe(false);
                 }
-                await context.close();
+            } finally {
+                await full.context.close();
+                if (cold) await cold.context.close();
             }
-            expect(geometry[1]).toEqual(geometry[0]);
-            expectSameRendering(images[0], images[1]);
         });
     }
 }

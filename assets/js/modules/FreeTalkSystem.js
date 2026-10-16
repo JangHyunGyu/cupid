@@ -588,6 +588,11 @@ class FreeTalkSystem {
     }
 
     async startFreeTalk(scene, sceneId) {
+        if (window.ensureCupidFreeTalkRuntime && !window.CupidFreeTalkPromptsReady) {
+            const epoch = this._freeTalkEpoch;
+            await window.ensureCupidFreeTalkRuntime();
+            if (this._freeTalkEpoch !== epoch) return;
+        }
         if (scene.legacyHaeunMaxTurns && this.stateManager.getFlag('haeun_route_selected')
             && !this.stateManager.getFlag('haeun_switch_declared')) {
             scene = { ...scene, maxTurns: scene.legacyHaeunMaxTurns };
@@ -1132,6 +1137,11 @@ class FreeTalkSystem {
     }
 
     async startGroupFreeTalk(scene, sceneId) {
+        if (window.ensureCupidFreeTalkRuntime && !window.CupidFreeTalkPromptsReady) {
+            const epoch = this._freeTalkEpoch;
+            await window.ensureCupidFreeTalkRuntime();
+            if (this._freeTalkEpoch !== epoch) return;
+        }
         if (this.isFreeTalking) return;
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const checkpoint = this._getFreeTalkCheckpoint(scene, sceneId);
@@ -3009,6 +3019,14 @@ class FreeTalkSystem {
 
     applyExpression(exprName, scene) {
         if (scene.romanticInterlude === true) return;
+        if (!window.CHARACTER_EXPRESSIONS && window.ensureCupidFreeTalkRuntime) {
+            const epoch = this._freeTalkEpoch;
+            return window.ensureCupidFreeTalkRuntime().then(() => {
+                if (this._freeTalkEpoch === epoch) FreeTalkSystem.prototype.applyExpression.call(this, exprName, scene);
+            }).catch(error => {
+                if (window.__cupidLogRuntimeError) window.__cupidLogRuntimeError('ExpressionLoadFailure', error.message, error.stack || '', 'FreeTalkSystem');
+            });
+        }
         if (!window.CHARACTER_EXPRESSIONS) return;
         const charExprs = typeof getCharacterExpressionSet === 'function'
             ? getCharacterExpressionSet(scene.name)

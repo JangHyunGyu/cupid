@@ -2935,9 +2935,12 @@ if (unvisitedReport.length > 0) {
     for (const d of Object.keys(byDay).sort()) md += '- Day ' + d + ': ' + byDay[d].join(', ') + '\n';
 }
 
-fs.writeFileSync(path.join(__dirname, 'PLAYTEST_REPORT.md'), md, 'utf8');
+const reportPath = path.join(__dirname, 'tmp', 'reports', 'PLAYTEST_REPORT.md');
+fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+fs.writeFileSync(reportPath, md, 'utf8');
 console.log('[REPORT] 플레이테스트 리포트 생성 완료 — ' + reportExplored + '경로, ' + sortedEndings.length + '종 엔딩');
 console.log('[REPORT] → PLAYTEST_REPORT.md\n');
+console.log(reportPath);
 } else {
     console.log('[REPORT] --no-report: 플레이테스트 리포트 파일 생성을 건너뜁니다.\n');
 }

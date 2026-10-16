@@ -789,7 +789,7 @@ function renderPage(lang, page) {
 <script src="/assets/js/ga-engagement.js?v=20260618-engagement" defer></script>
   <meta charset="UTF-8">
   <meta http-equiv="origin-trial" content="${ORIGIN_TRIAL_TOKEN}">
-  <script src="/assets/js/error-reporter.js?v=20261008-log-transport"></script>
+  <script src="/assets/js/error-reporter.js?v=20261016-shared-errors"></script>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>${escapeHTML(page.title)}</title>
   <meta name="description" content="${escapeHTML(page.meta)}">

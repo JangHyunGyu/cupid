@@ -323,5 +323,8 @@ if (critErr === 0) {
 }
 console.log('='.repeat(60));
 
-fs.writeFileSync('test_i18n_result.json', JSON.stringify({ stats, issues }, null, 2), 'utf8');
+const reportPath = path.join(__dirname, 'tmp', 'reports', 'test_i18n_result.json');
+fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+fs.writeFileSync(reportPath, JSON.stringify({ stats, issues }, null, 2), 'utf8');
 console.log('\n상세 결과: test_i18n_result.json');
+console.log(reportPath);
