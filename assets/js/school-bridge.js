@@ -3,6 +3,63 @@
     'use strict';
     const LANGUAGES = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
     const RETURN_KEY = 'harem:cupidReturnLanguage';
+    const CROSSING_KEY = 'school:pendingCrossings:v1';
+    let crossingBusy = false;
+    let crossingRetry = null;
+    const crossingSeen = new Map();
+    const crossingStore = () => root.CupidStorage || root.localStorage;
+    function pendingCrossings() {
+        try { const rows = JSON.parse(crossingStore().getItem(CROSSING_KEY) || '[]'); return Array.isArray(rows) ? rows : []; }
+        catch (_) { return []; }
+    }
+    async function flushCrossings() {
+        if (crossingBusy || typeof root.fetch !== 'function') return;
+        crossingBusy = true;
+        try {
+            const pending = pendingCrossings();
+            const first = pending[0];
+            if (!first) return;
+            const batch = pending.filter(row => row.appId === first.appId && row.userId === first.userId).slice(0, 16);
+            const response = await root.fetch('https://chatbot-api.yama5993.workers.dev/cupid-route-events', {
+                method: 'POST', headers: { 'Content-Type': 'application/json', 'x-app-id': first.appId }, keepalive: true,
+                body: JSON.stringify({ appId:first.appId, userId:first.userId, events:batch.map(row=>row.event) }),
+                signal: root.AbortSignal?.timeout(10000),
+            });
+            if (!response.ok) throw new Error('CROSSING_WRITE_FAILED');
+            const ack = await response.json();
+            if (!ack.ok || !Array.isArray(ack.eventIds)) throw new Error('CROSSING_ACK_MISSING');
+            const accepted = new Set(ack.eventIds);
+            crossingStore().setItem(CROSSING_KEY, JSON.stringify(pendingCrossings().filter(row=>!accepted.has(row.event.eventId))));
+        } catch (_) { /* Keep the original event ID for an idempotent retry. Navigation never waits. */ }
+        finally {
+            crossingBusy = false;
+            if (pendingCrossings().length && !crossingRetry && root.setTimeout) {
+                crossingRetry = root.setTimeout(() => { crossingRetry = null; void flushCrossings(); }, 30000);
+            }
+        }
+    }
+    function recordCrossing(direction, family) {
+        try {
+            if (!['arrived','departed'].includes(direction) || !['harem','cupid'].includes(family)) return;
+            const key = `${family}:${direction}`, now = Date.now();
+            if (now - (crossingSeen.get(key) || 0) < 1000) return;
+            const store = crossingStore();
+            const identityKey = family === 'cupid' ? 'cupid_device_id' : 'harem:backupUserId';
+            let userId = store.getItem(identityKey);
+            if (!userId) {
+                userId = family === 'cupid' ? `cupid_${root.crypto.randomUUID()}` : `harem_${now}_${root.crypto.randomUUID().slice(0,8)}`;
+                store.setItem(identityKey,userId);
+            }
+            const lang = language(root.document?.documentElement?.lang?.toLowerCase().split('-')[0]);
+            const appId = family === 'harem' ? 'harem' : (lang === 'ko' ? 'cupid' : `cupid-${lang}`);
+            const eventId = root.crypto.randomUUID();
+            const isTest = root.CUPID_ROUTE_TELEMETRY_TEST === true || /^(localhost|127\.0\.0\.1)$/.test(root.location.hostname) || root.location.hostname.endsWith('.pages.dev');
+            const event = { eventId, runId:eventId, eventType:`school_crossing_${direction}`, sceneId:'school_gate', nextSceneId:'', day:1, route:'', version:'school-bridge.1', clientTime:new Date(now).toISOString(), isTest, details:{} };
+            store.setItem(CROSSING_KEY,JSON.stringify([...pendingCrossings(),{appId,userId,event}].slice(-100)));
+            crossingSeen.set(key,now);
+            void flushCrossings();
+        } catch (_) { /* Blocked storage must not prevent crossing the gate. */ }
+    }
     const COPY = {
         ko: ['학교 둘러보기', '공개방', '교문 · 나의 이야기로', 'Cupid에서 저장한 이야기 이어가기', '진행 기록을 저장하지 못했어요. 저장 공간을 확인한 뒤 다시 눌러 주세요.', '이야기를 열지 못했어요. 계속하기를 다시 눌러 주세요.'],
         en: ['Visit the school', 'Public room', 'School gate · My story', 'Continue your saved story in Cupid', 'Your progress could not be saved. Check your storage space and try again.', 'Your story could not be opened. Try Continue again.'],
@@ -32,6 +89,7 @@
     function takeSchoolArrival() {
         const url = new URL(root.location.href);
         if (url.searchParams.get('school') !== 'cupid') return false;
+        recordCrossing('arrived','harem');
         const lang = language(url.searchParams.get('cupidLang'));
         bridge.returnLanguage = lang;
         try { root.sessionStorage.setItem(RETURN_KEY, lang); } catch (_) { /* In-memory fallback for blocked storage. */ }
@@ -91,10 +149,17 @@
             if (!hasDurableSave()) {
                 event.preventDefault();
                 showError(text[4]);
+                return;
             }
+            recordCrossing('departed','cupid');
         });
         links.after(row);
-        if (new URL(root.location.href).searchParams.get('from') !== 'school') return;
+        const arrival = new URL(root.location.href);
+        const continueStory = arrival.searchParams.get('from') === 'school';
+        if (!continueStory && arrival.searchParams.get('crossing') !== 'school') return;
+        recordCrossing('arrived','cupid');
+        consume(['crossing']);
+        if (!continueStory) return;
         consume(['from']);
         if (!savedStory() || typeof root.continueGame !== 'function') {
             document.getElementById('start-btn')?.focus();
@@ -112,8 +177,13 @@
             document.getElementById('continue-btn')?.focus();
         }
     }
-    const bridge = { language, copy, cupidUrl, schoolUrl, takeSchoolArrival, getReturnLanguage: returnLanguage, savedStory, hasDurableSave, initCupid };
+    const bridge = { language, copy, cupidUrl, schoolUrl, takeSchoolArrival, getReturnLanguage: returnLanguage, savedStory, hasDurableSave, initCupid, recordCrossing, flushCrossings };
     root.SchoolBridge = bridge;
+    if (root.addEventListener) {
+        root.addEventListener('online', () => { void flushCrossings(); });
+        root.addEventListener('pagehide', () => { void flushCrossings(); });
+    }
+    void flushCrossings();
     if (root.document?.addEventListener) {
         if (root.document.readyState === 'loading') root.document.addEventListener('DOMContentLoaded', initCupid, { once: true });
         else void initCupid();

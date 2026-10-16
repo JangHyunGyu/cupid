@@ -23,7 +23,7 @@ const cases = [
 ];
 
 test('browser reporters and loader fallbacks classify the same corpus identically', () => {
-    const source = fs.readFileSync(path.join(root, 'assets/js/error-classifier.js'), 'utf8').trim();
+    const source = fs.readFileSync(path.join(root, 'assets/js/error-classifier.js'), 'utf8').replace(/\r\n/g, '\n').trim();
     for (const relative of ['assets/js/error-reporter.js', 'assets/js/loaders/game-loader.js', 'assets/js/loaders/gallery-loader.js', 'service-worker.js']) {
         const code = fs.readFileSync(path.join(root, relative), 'utf8').replace(/\r\n/g, '\n');
         const embedded = code.match(/\/\/ BEGIN GENERATED CUPID ERROR CLASSIFIER\n([\s\S]*?)\n\/\/ END GENERATED CUPID ERROR CLASSIFIER/)[1];

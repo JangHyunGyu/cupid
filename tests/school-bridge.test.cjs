@@ -69,3 +69,32 @@ test('fresh or corrupt saves do not trigger continuation', () => {
         assert.equal(root.SchoolBridge.savedStory(), null);
     }
 });
+
+test('school crossings persist only app direction and retry the same event id, independent of story loading',async()=>{
+    for(const family of ['harem','cupid']){
+        const stored=new Map(),root=runtime(`https://${family}.archerlab.dev/`,stored),sent=[];
+        root.location.hostname=`${family}.archerlab.dev`;
+        root.crypto=require('node:crypto').webcrypto;
+        root.document={documentElement:{lang:'ko'}};
+        let fail=true;
+        root.fetch=async(url,options)=>{
+            sent.push({url,payload:JSON.parse(options.body),keepalive:options.keepalive});
+            if(fail)throw new Error('offline');
+            return{ok:true,json:async()=>({ok:true,eventIds:JSON.parse(options.body).events.map(event=>event.eventId)})};
+        };
+        root.SchoolBridge.recordCrossing('arrived',family);
+        await new Promise(resolve=>setImmediate(resolve));
+        assert.equal(sent.length,1);assert.equal(sent[0].payload.appId,family);
+        assert.deepEqual(sent[0].payload.events[0].details,{});
+        assert.equal(sent[0].payload.events[0].eventType,'school_crossing_arrived');
+        assert.equal(sent[0].keepalive,true);assert.equal(sent[0].payload.events[0].isTest,false);
+        assert.ok(stored.get(family==='harem'?'harem:backupUserId':'cupid_device_id'));
+        assert.ok(stored.get('school:pendingCrossings:v1').includes(sent[0].payload.events[0].eventId));
+        fail=false;await root.SchoolBridge.flushCrossings();
+        assert.equal(sent[1].payload.events[0].eventId,sent[0].payload.events[0].eventId);
+        assert.equal(stored.get('school:pendingCrossings:v1'),'[]');
+        root.SchoolBridge.recordCrossing('arrived',family);assert.equal(sent.length,2,'duplicate arrival in the same gesture is ignored');
+        root.SchoolBridge.recordCrossing('departed',family);await new Promise(resolve=>setImmediate(resolve));
+        assert.equal(sent.at(-1).payload.events[0].eventType,'school_crossing_departed');
+    }
+});
