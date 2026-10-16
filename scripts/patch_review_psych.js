@@ -47,8 +47,10 @@ function makeEntry(day, section, sceneId, preview) {
 }
 
 for (const day of [2, 3]) {
-  const fp = path.join(ROOT, `translation_review_day${day}.json`);
-  const json = JSON.parse(fs.readFileSync(fp, 'utf8'));
+  const fp = path.join(ROOT, 'tmp/reports', `translation_review_day${day}.json`);
+  const source = fs.existsSync(fp) ? fp :
+    path.join(ROOT, 'archive/maintenance-20261016/root', `translation_review_day${day}.json`);
+  const json = JSON.parse(fs.readFileSync(source, 'utf8'));
   const { section, scenes } = NEW[day];
   if (!json[section]) { console.error(`section ${section} missing`); continue; }
   let added = 0;
@@ -61,6 +63,7 @@ for (const day of [2, 3]) {
     json._meta.total_nodes = (json._meta.total_nodes || 0) + added;
     json._meta.all_reviewed = false;
   }
+  fs.mkdirSync(path.dirname(fp), { recursive: true });
   fs.writeFileSync(fp, JSON.stringify(json, null, 2) + '\n', 'utf8');
   console.log(`day${day}: +${added} entries`);
 }

@@ -36,8 +36,10 @@ for (const file of fs.readdirSync(KO_DIR).filter(name => FILE_RE.test(name)).sor
     const changed = Object.keys(current).filter(id => JSON.stringify(current[id]) !== JSON.stringify(before[id]));
     if (!changed.length) continue;
 
-    const reviewPath = path.join(ROOT, `translation_review_day${day}.json`);
-    const review = readJson(reviewPath);
+    const reviewPath = path.join(ROOT, 'tmp/reports', `translation_review_day${day}.json`);
+    const reviewSource = fs.existsSync(reviewPath) ? reviewPath :
+        path.join(ROOT, 'archive/maintenance-20261016/root', `translation_review_day${day}.json`);
+    const review = readJson(reviewSource);
     review._meta.generated = GENERATED_AT;
     review._meta.all_reviewed = false;
     review._meta.lang_avg = review._meta.lang_avg || {};
@@ -85,6 +87,7 @@ for (const file of fs.readdirSync(KO_DIR).filter(name => FILE_RE.test(name)).sor
         .filter(([key, value]) => key !== '_meta' && value && typeof value === 'object')
         .reduce((sum, [, value]) => sum + Object.keys(value).length, 0);
 
+    fs.mkdirSync(path.dirname(reviewPath), { recursive: true });
     fs.writeFileSync(reviewPath, JSON.stringify(review, null, 2) + '\n', 'utf8');
 }
 

@@ -240,6 +240,8 @@ foreach ($file in $files | Sort-Object Name) {
 Write-Host "`n=== Check Complete ===" -ForegroundColor Cyan
 
 Write-Host "`nGenerating all_nodes.txt..." -ForegroundColor Gray
-$allNodesPath = Join-Path (Split-Path $scenarioPath) "all_nodes.txt"
+$reportDirectory = Join-Path $PSScriptRoot "..\tmp\reports"
+New-Item -ItemType Directory -Path $reportDirectory -Force | Out-Null
+$allNodesPath = Join-Path $reportDirectory "all_nodes.txt"
 $allNodeLines | Out-File -FilePath $allNodesPath -Encoding UTF8
 Write-Host "Saved: $allNodesPath`n" -ForegroundColor Green

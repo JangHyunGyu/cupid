@@ -17,3 +17,8 @@ The local deepseek_api.js and model_adapters/ interfaces retain their paths.
 New validation reports are written to the ignored tmp/reports/ directory. The
 archived PLAYTEST_REPORT.md and test_i18n_result.json retain the old snapshots.
 The public builder excludes this archive and all current maintenance sources.
+
+The active sync-changed-translation-review.cjs and patch_review_psych.js helpers
+seed their first run from the archived review JSON, then read and write the working
+copies in tmp/reports/. They never update these historical snapshots. The scenario
+quick checker also writes its all_nodes.txt index to tmp/reports/.
