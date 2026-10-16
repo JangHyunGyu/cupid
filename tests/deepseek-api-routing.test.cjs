@@ -28,7 +28,7 @@ function jsonResponse(status, body) {
     };
 }
 
-test('Cupid tools use Gemma 4 31B text through Venice without fallback', async () => {
+test('Cupid tools prefer DeepInfra fp4 Turbo with Venice fp4 fallback', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -43,9 +43,11 @@ test('Cupid tools use Gemma 4 31B text through Venice without fallback', async (
     assert.equal(calls[0].url, OPENROUTER_ENDPOINT);
     assert.equal(calls[0].body.model, OPENROUTER_MODEL);
     assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
+    assert.equal(OPENROUTER_GEMMA_PROVIDER, 'deepinfra/turbo');
     assert.deepEqual(calls[0].body.provider, {
-        order: [OPENROUTER_GEMMA_PROVIDER],
-        only: [OPENROUTER_GEMMA_PROVIDER],
+        order: ['deepinfra/turbo', 'venice/fp4'],
+        only: ['deepinfra/turbo', 'venice/fp4'],
+        quantizations: ['fp4'],
         allow_fallbacks: false,
         require_parameters: true,
     });
@@ -74,7 +76,7 @@ test('Cupid JSON tools use Gemma JSON mode', async () => {
     assert.equal('thinking' in calls[0].body, false);
 });
 
-test('Cupid default route does not fall back to another model or provider', async () => {
+test('Cupid default route fails after the allowed providers are exhausted without changing models', async () => {
     const calls = [];
     await assert.rejects(callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -85,6 +87,9 @@ test('Cupid default route does not fall back to another model or provider', asyn
     }), /Text model routes exhausted/);
     assert.equal(calls.length, 1);
     assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
+    assert.deepEqual(calls[0].body.provider.order, ['deepinfra/turbo', 'venice/fp4']);
+    assert.deepEqual(calls[0].body.provider.only, ['deepinfra/turbo', 'venice/fp4']);
+    assert.equal(calls[0].body.provider.allow_fallbacks, false);
 });
 
 test('Cupid route configuration can switch to official DeepSeek or any OpenRouter model', async () => {
@@ -129,7 +134,9 @@ test('Cupid direct tools keep model-native protocols behind isolated adapters', 
 
     const gemmaPayload = { model: OPENROUTER_GEMMA_MODEL };
     gemma.applyPayload(gemmaPayload, { wantsJson: true });
-    assert.deepEqual(gemmaPayload.provider.only, [OPENROUTER_GEMMA_PROVIDER]);
+    assert.deepEqual(gemmaPayload.provider.order, ['deepinfra/turbo', 'venice/fp4']);
+    assert.deepEqual(gemmaPayload.provider.only, ['deepinfra/turbo', 'venice/fp4']);
+    assert.deepEqual(gemmaPayload.provider.quantizations, ['fp4']);
     assert.equal(gemmaPayload.provider.allow_fallbacks, false);
     assert.deepEqual(gemmaPayload.response_format, { type: 'json_object' });
     assert.deepEqual(gemmaPayload.reasoning, { effort: 'none', exclude: true });
