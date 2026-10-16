@@ -413,7 +413,8 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         back: 'assets/images/characters/seyoun_back.png',
         flushed: 'assets/images/characters/seyoun_flushed.png',
         climax: 'assets/images/characters/seyoun_climax.png',
-        bikini: 'assets/images/characters/seyoun_bikini.png'
+        bikini: 'assets/images/characters/seyoun_bikini.png',
+        exhausted: 'assets/images/characters/seyoun_exhausted.png'
     }),
     Yuna: Object.freeze({
         normal: 'assets/images/characters/yuna_normal.png',
@@ -427,7 +428,8 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         climax: 'assets/images/characters/yuna_climax.png',
         laugh: 'assets/images/characters/yuna_laugh.png',
         pout: 'assets/images/characters/yuna_pout.png',
-        bikini: 'assets/images/characters/yuna_bikini.png'
+        bikini: 'assets/images/characters/yuna_bikini.png',
+        exhausted: 'assets/images/characters/yuna_exhausted.png'
     }),
     Dain: Object.freeze({
         normal: 'assets/images/characters/dain_normal.png',
@@ -441,7 +443,8 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sweat: 'assets/images/characters/dain_sweat.png',
         flushed: 'assets/images/characters/dain_flushed.png',
         climax: 'assets/images/characters/dain_climax.png',
-        bikini: 'assets/images/characters/dain_bikini.png'
+        bikini: 'assets/images/characters/dain_bikini.png',
+        exhausted: 'assets/images/characters/dain_exhausted.png'
     }),
     Teacher: Object.freeze({
         normal: 'assets/images/characters/teacher_normal.png',
@@ -452,7 +455,8 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         worried: 'assets/images/characters/teacher_worried.png',
         flushed: 'assets/images/characters/teacher_flushed.png',
         climax: 'assets/images/characters/teacher_climax.png',
-        bikini: 'assets/images/characters/teacher_bikini.png'
+        bikini: 'assets/images/characters/teacher_bikini.png',
+        exhausted: 'assets/images/characters/teacher_exhausted.png'
     }),
     Nurse: Object.freeze({
         normal: 'assets/images/characters/nurse_normal.png',
@@ -465,7 +469,8 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         climax: 'assets/images/characters/nurse_climax.png',
         smile: 'assets/images/characters/nurse_smile.png',
         sad: 'assets/images/characters/nurse_sad.png',
-        bikini: 'assets/images/characters/nurse_bikini.png'
+        bikini: 'assets/images/characters/nurse_bikini.png',
+        exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
     Haeun: Object.freeze({
         normal: 'assets/images/characters/haeun_normal.png',
@@ -474,7 +479,12 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         relieved: 'assets/images/characters/haeun_relieved.png',
         shy: 'assets/images/characters/haeun_shy.png',
         smile: 'assets/images/characters/haeun_smile.png',
-        sad: 'assets/images/characters/haeun_sad.png'
+        sad: 'assets/images/characters/haeun_sad.png',
+        exhausted: 'assets/images/characters/haeun_exhausted.png'
+    }),
+    Minsu: Object.freeze({
+        normal: 'assets/images/characters/minsu_normal.png',
+        exhausted: 'assets/images/characters/minsu_exhausted.png'
     })
 });
 
@@ -485,6 +495,8 @@ window.CHARACTER_EXPRESSIONS = Object.freeze({
     Teacher: CHARACTER_EXPRESSION_PATHS.Teacher,
     Nurse: CHARACTER_EXPRESSION_PATHS.Nurse,
     Haeun: CHARACTER_EXPRESSION_PATHS.Haeun,
+    Minsu: CHARACTER_EXPRESSION_PATHS.Minsu,
+    '민수': CHARACTER_EXPRESSION_PATHS.Minsu,
     'Homeroom Teacher': CHARACTER_EXPRESSION_PATHS.Teacher,
     'Health Teacher': CHARACTER_EXPRESSION_PATHS.Nurse,
     'School Nurse': CHARACTER_EXPRESSION_PATHS.Nurse
@@ -2073,8 +2085,8 @@ Types: narration/dialogue. segments must be non-empty. Expressions: ${expression
     }
     if (!includeForcedSexualViolation && lang === 'ko') {
         return `JSON만 출력: {"segments":[{"type":"dialogue","text":"대사, 별표 없음"}],"expression":"normal","affinity":<판정한 정수>}
-세 필드는 필수이며 affinity는 위 기준으로 고른 -50~+5 정수입니다. 예시나 기본값 0을 복사하지 않습니다.
-허용 type: narration, dialogue. segments는 비어 있지 않아야 합니다. 허용 expression: ${expressions}. ${guidance} text 단일 필드는 쓰지 않습니다.`;
+세 필드 필수. affinity는 위 기준의 -50~+5 정수. 예시나 기본값 0을 복사하지 않습니다.
+허용 type: narration, dialogue. segments는 비우지 않습니다. expression: ${expressions}. ${guidance} text 단일 필드는 금지.`;
     }
     if (!includeForcedSexualViolation) {
         return `JSON only: {"segments":[{"type":"dialogue","text":"spoken line without asterisks"}],"expression":"normal","affinity":<scored integer>}
@@ -2561,7 +2573,7 @@ Include both characters exactly once in focus-character then companion order. na
         ? `[${dynamicLabelKo}]\n장소=${locationName || '교실'}; 주인공=${playerName || '주인공'}; 직전 흐름=${choiceState || '확인되지 않음'}\n장면 맥락: ${context}\n추가 연기 맥락: ${extraGuideline}\n${participantStates}`
         : `[${dynamicLabelEn}]\nPlace=${locationName || 'classroom'}; protagonist=${playerName || 'the protagonist'}; preceding situation=${choiceState || 'unknown'}\nScene context: ${context}\nAdditional scene direction: ${extraGuideline}\n${participantStates}`;
 
-    return keepCupidRuntimePromptBoundary(`${stableRules}\n${window.CupidFreeTalkCore.buildCharacterAgencyRule(effectiveLang)}\n${buildCupidEmotionalRangeRule(effectiveLang)}\n===CACHE_BOUNDARY===\n${dynamicState}`);
+    return keepCupidRuntimePromptBoundary(`${stableRules}\n${window.CupidFreeTalkCore.buildCharacterAgencyRule(effectiveLang)}\n${buildCupidEmotionalRangeRule(effectiveLang)}\n${window.CupidFreeTalkCore.buildExhaustionExpressionGuidance(effectiveLang)}\n===CACHE_BOUNDARY===\n${dynamicState}`);
 }
 
 // 전역 함수로 노출
@@ -2598,5 +2610,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.77';
+const PROMPT_VERSION = '2.7.78';
 window.PROMPT_VERSION = PROMPT_VERSION;

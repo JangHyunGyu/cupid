@@ -2559,6 +2559,14 @@ for (const lang of Object.keys(GalleryData.cg)) {
     GalleryData.cg[lang] = GalleryData.cg[lang].filter(cg => !GalleryData.RETIRED_CG_IDS.includes(cg.id));
 }
 window.GalleryData = GalleryData;
+const exhaustedExpressionLabels = { ko: '탈진', en: 'Exhausted', ja: '疲労困憊', es: 'Agotamiento', fr: 'Épuisement', de: 'Erschöpft', pt: 'Exaustão', zh: '疲惫不堪' };
+for (const [lang, label] of Object.entries(exhaustedExpressionLabels)) {
+    GalleryData.expressions[lang].exhausted = label;
+    for (const character of Object.values(GalleryData.characters[lang])) {
+        if (!character.expressions.includes('exhausted')) character.expressions.push('exhausted');
+    }
+}
+
 // Outfit variants share the original expression's unlock threshold and meaning.
 GalleryData.OUTFIT_EXPRESSIONS = Object.freeze({
     seyoun: { date: ['normal', 'laugh', 'shy', 'worried', 'sad'] },
@@ -2568,7 +2576,7 @@ GalleryData.OUTFIT_EXPRESSIONS = Object.freeze({
 });
 GalleryData.getExpressionRequirement = function (charId, expression) {
     const baseExpressions = (this.getCharacter('ko', charId)?.expressions || ['normal'])
-        .filter(name => !/^(date|home)_/.test(name));
+        .filter(name => name !== 'exhausted' && !/^(date|home)_/.test(name));
     const base = String(expression).replace(/^(date|home)_/, '');
     if (charId === 'haeun') {
         return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, smile: 60, sad: 20 })[base] ?? 100;
@@ -2583,7 +2591,7 @@ GalleryData.resolveOutfitExpression = function (scene, rawPath) {
     const available = this.OUTFIT_EXPRESSIONS[outfit[1]]?.[outfit[2]];
     if (!available) return rawPath;
     const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
-    if (expression === 'bikini' || expression === 'climax') return rawPath;
+    if (expression === 'bikini' || expression === 'climax' || expression === 'exhausted') return rawPath;
     const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', pain: 'sad', laugh: 'smile', smile: 'laugh', shy2: 'shy', active: 'normal', flushed: 'shy' };
     const chosen = available.includes(expression) ? expression
         : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
