@@ -420,6 +420,7 @@ class GameEngine {
 
     /** 대화창 클릭 처리 */
     async handleDialogueClick() {
+        if (this.sceneRenderer.cgTransition?.active) return;
         // 씬 렌더링 중이면 클릭 무시 (배경/캐릭터 로딩 완료 전 스킵 방지)
         if (this._isRendering) return;
 
@@ -701,6 +702,7 @@ class GameEngine {
      * @param {Object} choice - 실행할 선택지 객체
      */
     async executeChoice(choice) {
+        if (this.sceneRenderer.cgTransition?.active) return false;
         if (this._choiceInFlight) return false;
         const sceneId = this.sceneRenderer.currentSceneId;
         const available = this.getAvailableChoices(this.sceneRenderer.getScene(sceneId)?.choices || []);
@@ -1034,6 +1036,7 @@ class GameEngine {
     }
 
     async renderScene(sceneId, { restoring = false } = {}) {
+        this.sceneRenderer.cgTransition?.cancel();
         this.dialogueSystem.resetAdvanceCooldown?.();
         // 렌더링 락 활성화 (비동기 로딩 중 클릭 방지).
         // 중간에 예외가 나도 이 락이 남지 않게 하고, 더 새로 시작한 렌더의 락은 풀지 않는다.
@@ -1199,7 +1202,7 @@ class GameEngine {
             this._clearCgLock();
         }
         const bgPromise = scene.background
-            ? this.sceneRenderer.setBackground(scene.background)
+            ? this.sceneRenderer.setBackground(scene.background, { instant: scene.cgTransition === false })
             : Promise.resolve();
 
         // ─────────────────────────────────────────────────────────

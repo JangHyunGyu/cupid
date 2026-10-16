@@ -175,6 +175,9 @@ class SceneRenderer {
 
         /** 캐릭터 이름 매핑 (공통 상수 참조) */
         this.charNameMap = CHAR_NAME_MAP;
+        this.cgTransition = window.CGTransition ? new window.CGTransition(
+            [uiManager.bgLayer, document.getElementById('character-layer')], uiManager.dialogueBox
+        ) : null;
     }
 
     /**
@@ -490,12 +493,17 @@ class SceneRenderer {
      *
      * @param {string} bgPath - 배경 이미지 경로
      */
-    async setBackground(bgPath) {
+    async setBackground(bgPath, { instant = false } = {}) {
         if (!bgPath) return;
 
-        const cgFileName = bgPath.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+        const cgFileName = bgPath.split(/[?#]/)[0].split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
+        const isCG = typeof REGISTERED_CG_IDS !== 'undefined' && REGISTERED_CG_IDS.has(cgFileName);
+        const transition = this.cgTransition?.prepare(cgFileName, isCG, instant);
+        const requestId = this._backgroundRequestId = (this._backgroundRequestId ?? 0) + 1;
+        try {
         this.galleryManager.unlockCG(cgFileName);
         try { await window.CupidMedia?.unlockCG?.(cgFileName); } catch (_) {}
+        if (requestId !== this._backgroundRequestId) return;
 
         const bgUrl = (window.CupidMedia?.isProtectedPath?.(bgPath))
             ? window.CupidMedia.resolveUrl(bgPath)
@@ -518,7 +526,16 @@ class SceneRenderer {
             loadImageWithFallback(img, bgUrl, () => resolve(img.src), () => resolve(null));
         });
 
-        if (this.lastBgUrl !== bgUrl || !displayBgUrl) return;
+        if (requestId !== this._backgroundRequestId || !displayBgUrl) return;
+        this.cgTransition?.commit(cgFileName, isCG);
+
+        if (transition || instant) {
+            bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow', 'bg-crossfade-long');
+            bgLayer.style.removeProperty('--bg-next');
+            bgLayer.style.backgroundImage = `url("${displayBgUrl}")`;
+            if (transition) await this.cgTransition.reveal(transition);
+            return;
+        }
 
         // 첫 배경이거나 같은 배경이면 즉시 적용
         if (!currentBg || currentBg === 'none' || currentBg === `url("${displayBgUrl}")` || currentBg === `url(${displayBgUrl})` || currentBg === `url("${bgUrl}")` || currentBg === `url(${bgUrl})`) {
@@ -554,6 +571,9 @@ class SceneRenderer {
             bgLayer.style.backgroundImage = `url(${displayBgUrl})`;
             bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow', 'bg-crossfade-long');
             bgLayer.style.removeProperty('--bg-next');
+        }
+        } finally {
+            if (transition && this.cgTransition?.active === transition) this.cgTransition.cancel();
         }
     }
 
