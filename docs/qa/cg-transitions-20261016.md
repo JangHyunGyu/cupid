@@ -1,6 +1,6 @@
 # CG transitions — 2026-10-16
 
-CG entry now takes 2 seconds and exit takes 1 second. A change between two different CGs uses a 1-second exit followed by a 2-second entry. Dialogue starts after the image has loaded and the transition has completed. Repeated dialogue and choice input is discarded during the transition.
+CG entry now takes 1.5 seconds and exit takes 1 second. A change between two different CGs uses a 1-second exit followed by a 1.5-second entry. Dialogue starts after the image has loaded and the transition has completed. Repeated dialogue and choice input is discarded during the transition.
 
 The same CG remains visible between dialogue nodes. Registered event/ending CGs retain their existing unlocks, image fitting, artwork and gallery behavior. Existing ending reading/hold rules remain in force. A scene may explicitly request a hard cut with `cgTransition: false`.
 
@@ -15,3 +15,5 @@ Validation:
 - Screenshot comparison found small background rasterization variations at some sizes. Repeated runs of the unchanged original scripts reproduce these differences (375px: 70,164 pixels; 1280px: 33,098 pixels). The same image URL, geometry, filter and transform were confirmed. No claim of universal pixel equality is made.
 
 Evidence is retained under `_workspace/cg-*.log` and the Nevergrad workspace's `_workspace/cg-transitions/`. Browser screenshots remain in `test-results/`.
+
+Timing revision: all CG entrances, including replacement CGs and endings, use 1,500 ms. Exit remains 1,000 ms. The six CG transition browser cases were rerun at the revised timing; artwork and settled UI remain unchanged.
