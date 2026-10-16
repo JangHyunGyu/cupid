@@ -8,18 +8,29 @@ const output = path.join(root, 'dist');
 function buildPublic() {
   const protectedFiles = new Set(listProtectedAssets(root));
   const publicFiles = [];
-  const topLevel = /^(?:(?:index|game|gallery)(?:-(?:ko|en|ja|es|fr|de|pt|zh))?\.html|404\.html|manifest(?:-(?:ko|en|ja|es|fr|de|pt|zh))?\.json|favicon(?:-(?:192|512))?\.(?:ico|png|webp)|cupid_link(?:_new)?\.(?:png|webp)|service-worker\.js|deepseek_api\.js|robots\.txt|llms(?:-full)?\.txt|sitemap\.xml|_headers)$/;
+  const topLevel = /^(?:(?:index|game|gallery)(?:-(?:ko|en|ja|es|fr|de|pt|zh))?\.html|404\.html|manifest(?:-(?:ko|en|ja|es|fr|de|pt|zh))?\.json|favicon(?:-(?:192|512))?\.(?:ico|png|webp)|cupid_link(?:_new)?\.(?:png|webp)|service-worker\.js|robots\.txt|llms(?:-full)?\.txt|sitemap\.xml|_headers)$/;
+  function isRuntimeAsset(rel) {
+    if (rel.startsWith('assets/js/i18n/')) return /^assets\/js\/i18n\/(ko|en|ja|es|fr|de|pt|zh)\/day[1-5]_[1-4]_(morning|lunch|afterschool|night)\.json$/.test(rel);
+    if (rel.startsWith('assets/js/scenario/')) return /^assets\/js\/scenario\/day[1-5]_[1-4]_(morning|lunch|afterschool|night)\.js$/.test(rel);
+    if (rel.startsWith('assets/js/')) return rel.endsWith('.js');
+    if (rel.startsWith('assets/css/')) return rel.endsWith('.css');
+    if (rel.startsWith('assets/vendor/pretendard/')) return /\.(css|woff2)$/.test(rel) || rel === 'assets/vendor/pretendard/LICENSE.txt';
+    if (rel.startsWith('assets/images/')) return /\.(png|webp|jpg|jpeg|svg|ico|avif|gif)$/.test(rel);
+    if (rel.startsWith('assets/audio/')) return /\.(mp3|ogg|wav|m4a)$/.test(rel);
+    return false;
+  }
   function walk(dir) {
     for (const entry of fs.readdirSync(path.join(root, dir), { withFileTypes: true })) {
       const rel = (dir ? dir + '/' : '') + entry.name;
       if (entry.isSymbolicLink()) throw new Error('Public build refuses symlinks: ' + rel);
       if (entry.isDirectory()) {
-        if (!dir && !['assets', 'seo', 'model_adapters'].includes(entry.name)) continue;
+        if (!dir && !['assets', 'seo'].includes(entry.name)) continue;
         if (rel === 'assets/images/masters' || rel === 'assets/images/characters') continue;
         walk(rel);
       } else if (entry.isFile()) {
         if (!dir && !topLevel.test(entry.name)) continue;
         if (dir === 'seo' && !entry.name.endsWith('.html')) continue;
+        if (rel.startsWith('assets/') && !isRuntimeAsset(rel)) continue;
         if (protectedFiles.has(rel) || entry.name.startsWith('.')) continue;
         const bytes = fs.readFileSync(path.join(root, rel));
         if (bytes.subarray(0, 9).toString() === 'CUPIDENC1') throw new Error('Encrypted media in public build: ' + rel);

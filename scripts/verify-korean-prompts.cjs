@@ -76,20 +76,25 @@ function getRuntimeStableHash(context, functionName, prompt) {
     return vm.runInContext(`${callable}(${JSON.stringify(prompt)})`, context);
 }
 
-function verifyGalleryLoaderOrder() {
-    const writes = [];
+async function verifyGalleryLoaderOrder() {
+    const loaded = [];
     const loaderContext = {
         window: {
+            __cupidErrorReporterInstalled: true,
+            LoaderConfig: {}, GalleryData: {}, GalleryProgress: {}, GalleryUI: {},
+            GalleryFreeTalk: {}, Gallery: {}, gallery: {}, CupidGalleryReady: Promise.resolve(),
             location: { pathname: '/gallery.html', href: 'https://example.test/gallery.html' },
             innerWidth: 1280,
             innerHeight: 720,
             addEventListener() {}
         },
         document: {
-            write(value) { writes.push(String(value)); },
+            createElement() { return { setAttribute() {} }; },
+            head: { appendChild(script) { loaded.push(script.src.replace(/\?.*$/, '')); script.onload(); } },
             addEventListener() {}
         },
         navigator: { userAgent: 'prompt-verifier' },
+        sessionStorage: { removeItem() {} },
         console,
         Math,
         Date,
@@ -100,9 +105,7 @@ function verifyGalleryLoaderOrder() {
         filename: 'assets/js/loaders/gallery-loader.js'
     });
 
-    const loaded = writes
-        .map(tag => tag.match(/src="([^"]+)"/)?.[1]?.replace(/\?.*$/, ''))
-        .filter(Boolean);
+    await loaderContext.window.CupidGalleryLoaderReady;
     const exampleIndex = loaded.indexOf('assets/js/example-dialogues-ko.js');
     const promptsIndex = loaded.indexOf('assets/js/prompts.js');
     const galleryIndex = loaded.indexOf('assets/js/gallery-freetalk.js');
@@ -1241,16 +1244,19 @@ function verifyTypingOwnerIsolation(context) {
         'current gallery render did not release its own typing state');
 }
 
-verifyGalleryLoaderOrder();
 const context = createPromptRuntime();
-verifyMainAndGalleryPrompts(context);
-verifyMemories(context);
-verifyLatestUserCanon(context);
-verifyWiringAndScenePrompts();
-verifyAdultExamplesOwnUserActions();
-verifyRequestOwnershipGuards();
-verifyCacheKeyWiring();
-verifyGroupPromptCacheContract(context);
-verifyTypingOwnerIsolation(context);
+async function main() {
+    await verifyGalleryLoaderOrder();
+    verifyMainAndGalleryPrompts(context);
+    verifyMemories(context);
+    verifyLatestUserCanon(context);
+    verifyWiringAndScenePrompts();
+    verifyAdultExamplesOwnUserActions();
+    verifyRequestOwnershipGuards();
+    verifyCacheKeyWiring();
+    verifyGroupPromptCacheContract(context);
+    verifyTypingOwnerIsolation(context);
 
-console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 76 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+    console.log(`Verified Korean runtime prompts for ${CHARACTERS.length} romance characters plus Haeun, 76 scene prompts, daily turn limits, loader order, memories, user agency, and stale-turn ownership.`);
+}
+main().catch(error => { console.error(error); process.exitCode = 1; });

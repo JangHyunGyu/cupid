@@ -179,23 +179,15 @@ window.__cupidShowGalleryLoadError = function() {
 };
 
 (function () {
-    // 로더 설정 로드 (동기)
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
-    document.write('<script src="assets/js/loaders/config.js?v=2.9.329" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
-})();
-
-// config.js 로드 후 실행
-document.addEventListener('DOMContentLoaded', function () {
-    // 이미 document.write로 로드됨
-}, false);
-
-// 갤러리 스크립트 로드 (document.write는 동기적)
-(function () {
+    if (window.CupidGalleryLoaderReady) return;
     const basePath = 'assets/js/';
-    if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
-    const version = '2.9.329';
+    const version = '2.9.330';
+    const LOAD_RETRIES = 3;
+    const recoveryKey = 'cupid-gallery-load-recovery:' + window.location.pathname;
 
     const scripts = [
+        'loaders/config.js',
         'affinity-corrections.js',
         // 0. 모듈 설정 (ASSET_VERSION 등)
         'modules/config.js',
@@ -230,10 +222,78 @@ document.addEventListener('DOMContentLoaded', function () {
         'gallery.js'
     ];
 
-    scripts.forEach(function (src) {
+    function scriptUrl(src, attempt) {
         const historyRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&history=20260924b'
             : (src === 'gallery-progress.js' || src === 'gallery-ui-cg.js' || src === 'media-gate.js' ? '&guard=20260926-gallery-slot'
             : (src === 'gallery-tips-data.js' || src === 'gallery-data.js' ? '&history=20261009-ko-voice' : ''));
-        document.write('<script src="' + basePath + src + '?v=' + version + historyRevision + '" onerror="window.__cupidShowGalleryLoadError && window.__cupidShowGalleryLoadError()"><\/script>');
-    });
+        return basePath + src + '?v=' + version + historyRevision + (attempt ? '&retry=' + Date.now() : '');
+    }
+
+    function loadScriptAttempt(src, attempt) {
+        return new Promise(function(resolve, reject) {
+            const script = document.createElement('script');
+            script.async = false;
+            script.setAttribute('data-cupid-gallery-script', 'true');
+            script.src = scriptUrl(src, attempt);
+            script.onload = function() {
+                script.onload = null;
+                script.onerror = null;
+                resolve();
+            };
+            script.onerror = function() {
+                script.onload = null;
+                script.onerror = null;
+                if (script.parentNode) script.parentNode.removeChild(script);
+                reject(new Error('[gallery-loader] Failed to load script: ' + src));
+            };
+            document.head.appendChild(script);
+        });
+    }
+
+    function delay(ms) {
+        return new Promise(function(resolve) { setTimeout(resolve, ms); });
+    }
+
+    async function loadScript(src) {
+        for (let attempt = 0; attempt < LOAD_RETRIES; attempt++) {
+            try {
+                await loadScriptAttempt(src, attempt);
+                return;
+            } catch (error) {
+                if (attempt === LOAD_RETRIES - 1) throw error;
+                await delay(500 * (attempt + 1));
+            }
+        }
+    }
+
+    async function loadGallery() {
+        for (const src of scripts) await loadScript(src);
+        const required = ['LoaderConfig', 'GalleryData', 'GalleryProgress', 'GalleryUI', 'GalleryFreeTalk', 'Gallery', 'gallery'];
+        const missing = required.filter(function(name) { return !window[name]; });
+        if (missing.length) throw new Error('[gallery-loader] Required module not registered: ' + missing.join(', '));
+        if (!window.CupidGalleryReady) throw new Error('[gallery-loader] Gallery initialization is unavailable');
+        await window.CupidGalleryReady;
+        try { sessionStorage.removeItem(recoveryKey); } catch (_) {}
+        window.galleryScriptsLoaded = true;
+        return window.gallery;
+    }
+
+    function recoverLoad(error) {
+        window.__cupidLastGalleryLoadError = error.message || String(error);
+        if (window.__cupidLogRuntimeError) window.__cupidLogRuntimeError('GalleryLoadFailure', error.message, error.stack || '', window.location.href);
+        if (navigator.onLine !== false) {
+            try {
+                if (sessionStorage.getItem(recoveryKey) !== '1') {
+                    sessionStorage.setItem(recoveryKey, '1');
+                    setTimeout(function() { window.location.reload(); }, 700);
+                    return;
+                }
+            } catch (_) {}
+        }
+        if (document.body) window.__cupidShowGalleryLoadError();
+        else document.addEventListener('DOMContentLoaded', window.__cupidShowGalleryLoadError, { once: true });
+    }
+
+    window.CupidGalleryLoaderReady = loadGallery();
+    window.CupidGalleryLoaderReady.catch(recoverLoad);
 })();

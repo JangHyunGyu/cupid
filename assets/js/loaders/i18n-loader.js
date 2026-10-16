@@ -5,17 +5,8 @@
 (function() {
     window.I18N_DATA = window.I18N_DATA || {};
     const lang = window.GAME_LANG || 'ko';
-    // 폴백 언어는 페이지 언어에 따라 분기:
-    //   ko 페이지 → ko만 로드
-    //   en 페이지 → en만 로드
-    //   그 외(es/ja/fr/de/pt/zh) → en을 베이스로 로드 후 해당 언어로 덮어쓰기
-    // (이전엔 ko를 베이스로 썼으나, 대상 언어에 키가 누락되면 한국어가 유출되는 문제가 있어 en으로 교체)
-    let locales;
-    if (lang === 'ko') locales = ['ko'];
-    else if (lang === 'en') locales = ['en'];
-    else locales = ['en', lang];
-    const localeData = {};
-    for (const locale of locales) localeData[locale] = {};
+    const locales = [lang];
+    const I18N_ASSET_VERSION = '2.9.330';
     
     // We have 20 scenario files. We could hardcode them or use a list.
     // Given Cupid's 5 days x 4 slots, they are:
@@ -77,9 +68,8 @@
 
                     // Promise.allSettled로 수집하므로 개별 rejection은 상위로 전파되지 않음
                     // (bingbot 등 크롤러가 Cloudflare에 차단당해 403 받을 때 unhandled rejection 발생하던 문제 방지)
-                    const task = () => fetchJsonWithRetry(`${basePath}/${file}?v=20261014-i18n`)
+                    const task = () => fetchJsonWithRetry(`${basePath}/${file}?v=${I18N_ASSET_VERSION}`)
                         .then(data => {
-                            Object.assign(localeData[locale], data);
                             Object.assign(dayLocaleData[locale], data);
                             return { locale, file, ok: true };
                         })
@@ -108,11 +98,6 @@
                         'i18n-loader'
                     );
                 }
-                // 베이스 언어가 통째로 비면 초기화 실패로 간주 (빈 i18n 상태 방지)
-                const baseLocale = lang === 'ko' ? 'ko' : 'en';
-                if (Object.keys(dayLocaleData[baseLocale] || {}).length === 0) {
-                    throw new Error(`i18n base locale '${baseLocale}' empty after ${failures.length} failures`);
-                }
             }
             // 대상 언어 파일 하나라도 빠지면 영어 폴백을 섞어 화면에 내보내지 않는다.
             // 서비스 워커 캐시까지 실패한 상태이므로, 호출부에서 현지어 재시도 안내를 표시한다.
@@ -127,9 +112,7 @@
                     + (missingTargetFiles ? `; missing=${missingTargetFiles}` : '')
                 );
             }
-            const baseLocale = lang === 'ko' ? 'ko' : 'en';
-            Object.assign(window.I18N_DATA, dayLocaleData[baseLocale] || {});
-            if (lang !== baseLocale) Object.assign(window.I18N_DATA, dayLocaleData[lang] || {});
+            Object.assign(window.I18N_DATA, dayLocaleData[lang]);
             loadedDays.add(normalizedDay);
             return true;
         })();

@@ -183,10 +183,17 @@ class Gallery {
 /** 전역 Gallery 인스턴스 */
 const gallery = new Gallery();
 
-/** DOM 로드 완료 시 갤러리 초기화 */
-document.addEventListener('DOMContentLoaded', async () => {
+window.CupidGalleryReady = new Promise(resolve => {
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', resolve, { once: true });
+    else resolve();
+}).then(async () => {
+    if (!document.getElementById('character-grid')) return gallery;
     await window.CupidAffinityCorrections?.ready;
     gallery.init();
+    return gallery;
+});
+window.CupidGalleryReady.catch(error => {
+    if (window.__cupidLogRuntimeError) window.__cupidLogRuntimeError('GalleryInitFailure', error.message, error.stack || '', window.location.href);
 });
 
 // 전역 접근을 위해 window에 노출

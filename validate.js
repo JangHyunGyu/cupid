@@ -775,7 +775,8 @@ try {
         }
     }
 
-    const versions = { 'loaders/config.js(LoaderConfig)': loaderVersion, 'game-loader.js': gameLoaderVersion, 'gallery-loader.js': galleryLoaderVersion, 'modules/config.js(ASSET_VERSION)': assetVersion };
+    const i18nLoaderVersion = (i18nLoaderContent.match(/const\s+I18N_ASSET_VERSION\s*=\s*['"]([^'"]+)['"]/) || [])[1];
+    const versions = { 'loaders/config.js(LoaderConfig)': loaderVersion, 'game-loader.js': gameLoaderVersion, 'gallery-loader.js': galleryLoaderVersion, 'i18n-loader.js': i18nLoaderVersion, 'modules/config.js(ASSET_VERSION)': assetVersion };
     for (const [label, value] of Object.entries(versions)) {
         if (!value) errors.push('[VERSION_SYNC] JS version missing: ' + label);
     }
@@ -788,7 +789,8 @@ try {
     if (loaderVersion !== projectConfig.assetVersion) {
         errors.push('[VERSION_SYNC] 프리토킹 런타임 캐시 버전이 config/project.json과 다름: ' + loaderVersion);
     }
-    if (!galleryLoaderContent.includes(`assets/js/loaders/config.js?v=${loaderVersion}`)) {
+    if (!/const scripts\s*=\s*\[\s*'loaders\/config\.js'/.test(galleryLoaderContent)
+        || !galleryLoaderContent.includes("const basePath = 'assets/js/';")) {
         errors.push('[VERSION_SYNC] gallery-loader의 config.js 캐시 버전 불일치');
     }
     for (const file of htmlFiles) {

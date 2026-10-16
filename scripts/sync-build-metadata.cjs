@@ -38,8 +38,10 @@ update('assets/js/loaders/config.js', [
 update('assets/js/loaders/game-loader.js', [
     replaceRequired(/const\s+version\s*=\s*['"][^'"]+['"]/, `const version = '${version}'`, 'game loader version')
 ]);
+update('assets/js/loaders/i18n-loader.js', [
+    replaceRequired(/const\s+I18N_ASSET_VERSION\s*=\s*['"][^'"]+['"]/, `const I18N_ASSET_VERSION = '${version}'`, 'translation JSON version')
+]);
 update('assets/js/loaders/gallery-loader.js', [
-    replaceRequired(/assets\/js\/loaders\/config\.js\?v=[0-9.]+/, `assets/js/loaders/config.js?v=${version}`, 'gallery config reference'),
     replaceRequired(/const\s+version\s*=\s*['"][^'"]+['"]/, `const version = '${version}'`, 'gallery loader version')
 ]);
 update('assets/js/modules/config.js', [
