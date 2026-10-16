@@ -1644,21 +1644,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/teacher_flushed": {
-    "version": "83fb3283569f9e690d1803ce",
+    "version": "0b9d293b4710428be939e296",
     "files": [
       {
         "path": "assets/images/characters/teacher_flushed.png",
-        "key": "images/63f90a2401ecbdef0feb2f5635168947e56ec810be94af9ea82fddd63c55b13a.png",
-        "sha256": "63f90a2401ecbdef0feb2f5635168947e56ec810be94af9ea82fddd63c55b13a",
-        "etag": "a44b907e3e4fb89a1d007a91d942ab1e",
-        "size": 1585735
+        "key": "images/085a81bfe6ce5f71dd8ae6ff19f23cb45114e683de7e6f036785a07423fa9b8a.png",
+        "sha256": "085a81bfe6ce5f71dd8ae6ff19f23cb45114e683de7e6f036785a07423fa9b8a",
+        "etag": "968e51139b720e4fa5cc39ebd219ab5a",
+        "size": 19712029
       },
       {
         "path": "assets/images/characters/teacher_flushed.webp",
-        "key": "images/33e2c706a6b39a0032a6fde327280073dd1ff027813552acbc3d124154532af4.webp",
-        "sha256": "33e2c706a6b39a0032a6fde327280073dd1ff027813552acbc3d124154532af4",
-        "etag": "68d6d5018f6e84b0f94916bba8bad2c6",
-        "size": 129012
+        "key": "images/679493459c7411222af74c4d99d66f814a706a24779d11e83cd68fe43f2ba366.webp",
+        "sha256": "679493459c7411222af74c4d99d66f814a706a24779d11e83cd68fe43f2ba366",
+        "etag": "4b7261254c189e3390f6712a3937db91",
+        "size": 12460258
       }
     ]
   },

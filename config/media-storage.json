@@ -1106,18 +1106,18 @@
     "etag": "d6085b8c9f35a139662bc80513252842"
   },
   "assets/images/characters/teacher_flushed.png": {
-    "sourceHash": "348890463d27d95629eade66d58bd020c1168ad12b706f567db6f564243eeced",
-    "key": "images/63f90a2401ecbdef0feb2f5635168947e56ec810be94af9ea82fddd63c55b13a.png",
-    "sha256": "63f90a2401ecbdef0feb2f5635168947e56ec810be94af9ea82fddd63c55b13a",
-    "size": 1585735,
-    "etag": "a44b907e3e4fb89a1d007a91d942ab1e"
+    "sourceHash": "83a1e8502288ac0590c75b9a313108769c659fa573e2060a0a8a5ba1979da754",
+    "key": "images/085a81bfe6ce5f71dd8ae6ff19f23cb45114e683de7e6f036785a07423fa9b8a.png",
+    "sha256": "085a81bfe6ce5f71dd8ae6ff19f23cb45114e683de7e6f036785a07423fa9b8a",
+    "etag": "968e51139b720e4fa5cc39ebd219ab5a",
+    "size": 19712029
   },
   "assets/images/characters/teacher_flushed.webp": {
-    "sourceHash": "7e841449c45877b3ad6f3020821175a9e3e0d45300975eeab6c055374170ca8b",
-    "key": "images/33e2c706a6b39a0032a6fde327280073dd1ff027813552acbc3d124154532af4.webp",
-    "sha256": "33e2c706a6b39a0032a6fde327280073dd1ff027813552acbc3d124154532af4",
-    "size": 129012,
-    "etag": "68d6d5018f6e84b0f94916bba8bad2c6"
+    "sourceHash": "9e469fc3cefb4ab9d94a7958f9bf2c8a7dec9a8f15e346ccdcd0e4f854c56ea2",
+    "key": "images/679493459c7411222af74c4d99d66f814a706a24779d11e83cd68fe43f2ba366.webp",
+    "sha256": "679493459c7411222af74c4d99d66f814a706a24779d11e83cd68fe43f2ba366",
+    "etag": "4b7261254c189e3390f6712a3937db91",
+    "size": 12460258
   },
   "assets/images/characters/teacher_normal.png": {
     "sourceHash": "78824d5e64ac10e5cda3953ba68da064bd259c37bcebddf036821b11c3586d00",
