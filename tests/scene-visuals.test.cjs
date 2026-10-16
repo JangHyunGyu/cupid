@@ -6,6 +6,41 @@ const path = require('node:path');
 const { loadCorpus, inspect } = require('../scripts/audit-scene-visuals.cjs');
 const root = path.resolve(__dirname, '..');
 
+test('new relationship artwork is connected without changing existing Haeun unlock thresholds', () => {
+    const festival = fs.readFileSync(path.join(root, 'assets/images/background/school_festival.png'));
+    assert.equal(festival.readUInt32BE(16), 2880);
+    assert.equal(festival.readUInt32BE(20), 2880);
+    const { rows, GalleryData } = loadCorpus();
+    const scene = id => rows.find(row => row.id === id).scene;
+    assert.match(scene('date_seo_1').character, /seyoun_date_normal/);
+    assert.match(scene('date_seo_pretty_high_3').character, /seyoun_date_shy/);
+    assert.match(scene('date_seo_tentative_1').character, /seyoun_date_worried/);
+    assert.match(scene('date_seo_tentative_2').character, /seyoun_date_sad/);
+    assert.match(scene('date_seo_succulent_3').background, /event_seoyeon_succulent/);
+    assert.equal(scene('date_seo_succulent_3').character, null);
+    assert.match(scene('lunch_yuna_18').background, /event_yuna_reading/);
+    assert.equal(scene('lunch_yuna_18').character, null);
+    assert.match(scene('lunch_yuna_20').background, /library_old/);
+    assert.match(scene('tour_seo_7').background, /school_festival/);
+    assert.match(scene('day5_haeun_private_1').character, /haeun_shy/);
+    assert.match(scene('day5_haeun_guilt_choice').character, /haeun_sad/);
+    assert.match(scene('day5_ending_haeun_apology_seoyeon').character, /haeun_smile/);
+    for (const [expression, requirement] of Object.entries({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, smile: 60, sad: 20 })) {
+        assert.equal(GalleryData.getExpressionRequirement('haeun', expression), requirement);
+    }
+    for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
+        assert.deepEqual(Array.from(GalleryData.getCharacter(lang, 'haeun').expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad']);
+        for (const id of ['event_seoyeon_succulent', 'event_yuna_reading']) {
+            const cg = GalleryData.cg[lang].filter(cg => cg.id === id);
+            assert.equal(cg.length, 1);
+            assert.ok(cg[0].name && cg[0].description && cg[0].unlockHint);
+        }
+    }
+    const date = scene('date_seo_pretty_high_3');
+    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_shy2.png'), /seyoun_date_shy/);
+    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_angry.png'), /seyoun_date_worried/);
+});
+
 test('every authored scene and localized gallery image has a real matching asset', () => {
     const result = inspect();
     assert.deepEqual(result.errors, []);

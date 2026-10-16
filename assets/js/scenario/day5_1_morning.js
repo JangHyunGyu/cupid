@@ -623,7 +623,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "morning5_gate"
     },
     "morning5_mood_mid": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "next": "morning5_gate"
     },

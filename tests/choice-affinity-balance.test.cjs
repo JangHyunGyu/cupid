@@ -1912,7 +1912,7 @@ test('character-specific trap choices retain their understated Korean wording an
         lunch_dain_trap_1: 'dain_normal.png',
         after2_yuna_trap: 'yuna_normal.png',
         after2_yuna_trap_react: 'yuna_normal.png',
-        date_seo_role_trap: 'seyoun_normal.png',
+        date_seo_role_trap: 'seyoun_date_normal.webp',
         date_yuna_trap: 'yuna_date_normal.webp'
     };
     for (const [sceneId, filename] of Object.entries(authoredReactionAvatars)) {

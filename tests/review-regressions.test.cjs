@@ -20,7 +20,7 @@ test('all collectible CGs have authored backgrounds, including appended multilin
     const gallery = context.window.GalleryData;
     for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         const list = gallery.getCGList(lang);
-        assert.equal(list.length, 33);
+        assert.equal(list.length, 35);
         assert.equal(list.some(cg => cg.id === 'nurse_home_event1'), false);
         for (const cg of list) assert.ok(backgrounds.has(cg.file), `${lang}/${cg.id}`);
     }

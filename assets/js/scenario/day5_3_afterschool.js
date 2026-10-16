@@ -1166,7 +1166,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_haeun_private_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
+        "character": "assets/images/characters/haeun_shy.png",
         "next": "day5_haeun_walk",
         "type": "free_talk",
         "maxTurns": 5,
@@ -1181,7 +1181,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_haeun_private_2": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/haeun_normal.png",
+        "character": "assets/images/characters/haeun_shy.png",
         "next": "day5_haeun_romance_check",
         "type": "free_talk",
         "maxTurns": 5,
@@ -1228,12 +1228,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_haeun_guilt_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_worried.png",
+        "character": "assets/images/characters/haeun_sad.png",
         "next": "day5_haeun_guilt_choice"
     },
     "day5_haeun_guilt_choice": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_worried.png",
+        "character": "assets/images/characters/haeun_sad.png",
         "choices": [
             { "next": "day5_haeun_guilt_down", "stats": { "Haeun": { "affinity": -2 } } },
             { "next": "day5_haeun_guilt_up", "stats": { "Haeun": { "affinity": 3 } } },
@@ -1276,27 +1276,27 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_ending_haeun_apology_seoyeon": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/haeun_relieved.png",
+        "character": "assets/images/characters/haeun_smile.png",
         "next": "day5_haeun_romance_check"
     },
     "day5_ending_haeun_apology_yuna": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/haeun_relieved.png",
+        "character": "assets/images/characters/haeun_smile.png",
         "next": "day5_haeun_romance_check"
     },
     "day5_ending_haeun_apology_dain": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/haeun_relieved.png",
+        "character": "assets/images/characters/haeun_smile.png",
         "next": "day5_haeun_romance_check"
     },
     "day5_ending_haeun_apology_teacher": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/haeun_relieved.png",
+        "character": "assets/images/characters/haeun_smile.png",
         "next": "day5_haeun_romance_check"
     },
     "day5_ending_haeun_apology_nurse": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/haeun_relieved.png",
+        "character": "assets/images/characters/haeun_smile.png",
         "next": "day5_haeun_romance_check"
     },
     "day5_haeun_romance_check": {
@@ -1315,7 +1315,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_haeun_fallback": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/haeun_firm.png",
+        "character": "assets/images/characters/haeun_sad.png",
         "next": "after5_original_start",
         "clearFlags": [
             "haeun_route_selected"

@@ -547,8 +547,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "next": "lunch_yuna_18"
     },
     "lunch_yuna_18": {
-        "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "background": "assets/images/background/event_yuna_reading.png",
+        "character": null,
         "next": "lunch_yuna_20"
     },
     "lunch_yuna_20": {

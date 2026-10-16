@@ -1668,10 +1668,10 @@
 ---
 
 ### `lunch_yuna_18`
-- 배경: `library_old.png`
+- 배경: `event_yuna_reading.png`
 - 다음: `lunch_yuna_20`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `없음`
 **유나**: 그럼 이제 각자 읽자. *책상 하나를 사이에 두고 나란히 첫 장을 펼친다.*
 
 ---
@@ -17373,7 +17373,7 @@
 - 조건: `route_seoyeon`
 - 다음: `date_seo_tier_check`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **{name}**: 많이 기다렸어? 교복이랑 클립보드 없이 만나니까 딴사람 같네. *분수대 물방울이 햇살에 부서지는 벤치 앞, 부드러운 아이보리색 니트 가디건에 가벼운 스커트를 입은 서연이 서 있다. 둥글게 파인 옷깃 아래로 하얀 쇄골과 가느다란 목선이 드러나고 긴장한 손가락에는 가죽 크로스백 끈이 팽팽하게 감겨 있다.*
 
 ---
@@ -17399,7 +17399,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_high_2`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_date_laugh.webp`
 **서연**: 오늘은 내가 짜 온 계획표대로 안 움직여도 괜찮아. 제일 먼저 네가 가 보고 싶었던 곳부터 같이 가자.
 
 ---
@@ -17409,7 +17409,7 @@
 - Framing: `close`
 - 다음: `date_seo_compliment_choice`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: 수첩에 적어 온 일정표는 가방 맨 밑에 넣어 둘게. 모처럼 너랑 단둘이 나온 주말까지 시계 보면서 걷기는 싫거든. *서연이 가볍게 바람에 흩날리는 머리카락을 넘기며 공원 산책로 쪽으로 내 손을 이끌듯 앞장선다.*
 
 ---
@@ -17423,7 +17423,7 @@
   2. "신경 많이 썼다, 오늘." → `date_seo_bright` | Seoyeon +4
   3. "역시 학생회장은 데이트도 빈틈없네." → `date_seo_role_trap` | Seoyeon -4
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **{name}**: *아침 바람에 살랑인 머리카락 사이로 은은한 꽃비누 향이 스치고 서연의 손가락에 가방끈이 한 바퀴 더 감긴다.*
 
 ---
@@ -17433,7 +17433,7 @@
 - 스탯: Seoyeon +2
 - 다음: `date_seo_pretty_high_b`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: 만나자마자 그렇게 훅 들어오면 내가 뭐라고 대답해야 할지 모르잖아. *서연의 볼 위로 옅은 분홍빛이 번지고 꽉 쥐고 있던 가방끈이 스르르 느슨해진다.* 그래도 기분은 좋아서 웃음부터 나오네.
 
 ---
@@ -17442,7 +17442,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_pretty_high_2`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: 솔직히 말해 봐. 방금 그 말, 집에서 나올 때부터 준비해 온 거지?
 
 ---
@@ -17451,7 +17451,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_pretty_high_3`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: *달아오른 뺨을 식히려는 듯 분수대 물줄기 쪽으로 시선을 비스듬히 돌리면서도 내 옆자리에서 떨어지지 않는다.* 여기 서 있지 말고 산책로 쪽으로 걸으면서 바람 좀 쐬자.
 
 ---
@@ -17460,7 +17460,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_pretty_high_3_b`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **{name}**: 준비해 온 거 아냐. 방금 분수대 앞에서 너 보자마자 바로 나온 말이야.
 
 ---
@@ -17469,7 +17469,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_pretty_high_4`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: *서연의 속눈썹이 파르르 떨리더니 애써 침착한 척 가방끈을 고쳐 쥔다.* 거기까지만 해. 더 들으면 진짜 얼굴 못 들겠으니까.
 
 ---
@@ -17479,7 +17479,7 @@
 - Framing: `close`
 - 다음: `date_seo_walk`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: 그래도 방금 네가 해 준 말은 다 들었으니까, 내가 부끄러워서 바로 대답 못 했다고 무르기 없기야. *귓바퀴까지 빨개진 채 흘러내린 옆머리를 귀 뒤로 넘긴다. 가디건 소매 끝으로 드러난 흰 손목이 내 팔 끝에 아슬아슬하게 스친다.*
 
 ---
@@ -17489,7 +17489,7 @@
 - 스탯: Seoyeon +2
 - 다음: `date_seo_walk`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: 뭐야, 갑자기. 그런 말은 마음의 준비라도 하게 미리 예고하고 해 줘.
 
 ---
@@ -17498,7 +17498,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_walk`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_date_laugh.webp`
 **서연**: 티 나? 주말에 너랑 따로 만나는 건데 아침부터 거울 앞에서 꽤 오래 골랐거든.
 
 ---
@@ -17507,7 +17507,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_walk`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **서연**: *서연의 손가락이 가방끈에서 스르르 풀린다.* 오늘은 학생회장 자격으로 나온 자리가 아닌데.
 
 ---
@@ -17516,7 +17516,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_duck`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **{name}**: *나란히 보폭을 맞춰 공원 호수 산책로를 걷는다. 걸음을 옮길 때마다 서연의 치맛자락이 내 바지 끝에 부드럽게 스치고 우리는 물가로 몰려든 오리들에게 작은 빵 조각을 던져 준다.*
 
 ---
@@ -17525,7 +17525,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_duck_2`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **서연**: 얘네들은 속마음이 단순해서 참 좋겠다. 빵을 던져 주면 망설임 없이 다가오고 안 주면 뒤도 안 돌아보고 가잖아.
 
 ---
@@ -17534,7 +17534,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_duck_3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **{name}**: 사람 마음도 결국엔 다들 비슷한 거 아냐?
 
 ---
@@ -17543,7 +17543,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_duck_4`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **서연**: 사람은 훨씬 복잡하지. 마음을 다 내어 줘도 모른 척 멀어질 때가 있고 아무것도 안 해 줬는데 자꾸만 눈이 가는 사람도 있으니까.
 
 ---
@@ -17552,7 +17552,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_flower_b`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **서연**: 어, 저기 골목 어귀에 작은 꽃집 있다. 잠깐만 보고 가자. *물가를 바라보던 서연이 걸음을 늦추며 내 소매 끝을 살며시 잡아당긴다.*
 
 ---
@@ -17561,7 +17561,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_flower_2`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **서연**: *통유리 너머로 초록빛 화분들이 가득한 꽃집 문 앞에서 서연이 내 눈을 돌아본다.* 안으로 들어가 볼까?
 
 ---
@@ -17571,7 +17571,7 @@
 - Framing: `close`
 - 다음: `date_seo_succulent_2`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **서연**: 이 동그란 화분 어때? *맑은 문종 소리와 함께 촉촉한 흙냄새와 꽃향기가 훅 끼쳐 온다. 좁은 진열대 통로에서 서연이 내 어깨에 닿을 만큼 바짝 붙어 서서 손바닥만 한 다육이 화분을 들어 올린다.*
 
 ---
@@ -17580,7 +17580,7 @@
 - 배경: `flower_shop.webp`
 - 다음: `date_seo_succulent_2_b`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **서연**: 다육이는 물을 자주 주지 않아도 햇볕만 잘 들면 혼자서도 씩씩하게 자라거든. 네 방 창가에 두고 처음 키우기엔 딱 좋을 거야.
 
 ---
@@ -17589,16 +17589,16 @@
 - 배경: `flower_shop.webp`
 - 다음: `date_seo_succulent_3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **{name}**: 내 방 창가라니, 이거 나한테 선물로 주는 거야?
 
 ---
 
 ### `date_seo_succulent_3`
-- 배경: `flower_shop.webp`
+- 배경: `event_seoyeon_succulent.png`
 - 다음: `date_seo_end`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `없음`
 **서연**: 응, 네가 안 죽이고 잘 키울 자신 있으면. 혹시라도 시들하게 만들면 내가 네 방까지 찾아가서 도로 뺏어 올 거니까.
 
 ---
@@ -17608,7 +17608,7 @@
 - Framing: `close`
 - 다음: `date_seo_end_b`
 
-- 캐릭터: `seyoun_worried.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: 자, 두 손으로 받아. 도로 가져가겠다고 한 건 주기 싫어서가 아니라 내 생각 자주 하라는 뜻이니까. *작은 다육이 화분을 건네는 서연의 따뜻하고 부드러운 손가락이 내 손바닥과 손목을 감싸듯 포개졌다가 천천히 떨어진다.*
 
 ---
@@ -17618,7 +17618,7 @@
 - Framing: `close`
 - 다음: `date_seo_end_c`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **{name}**: *꽃집을 나서서 나란히 공원 바깥 가로수길 거리를 걸었다. 한 손에는 화분을 들고 다른 쪽 손등은 서연의 손등과 닿을 듯 말 듯 흔들린다.*
 
 ---
@@ -17628,7 +17628,7 @@
 - Framing: `close`
 - 다음: `date_seo_end_d`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_normal.webp`
 **서연**: *내 손안에서 화분 포장지가 사각거리는 소리를 내자 서연이 걸음을 반 박자 늦춘다.* 있잖아, 오늘.
 
 ---
@@ -17638,7 +17638,7 @@
 - Framing: `close`
 - 다음: `pre_confess_minsu`
 
-- 캐릭터: `seyoun_shy.png`
+- 캐릭터: `seyoun_date_shy.webp`
 **서연**: 오늘 너랑 단둘이 나와서 정말 좋았어. *서연이 내 어깨에 자기 어깨를 살짝 기대며 수줍게 눈웃음을 짓는다.*
 
 ---
@@ -17647,7 +17647,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_tentative_2`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_worried.webp`
 **{name}**: *공원 산책로를 한 바퀴 도는 내내 서연은 사적인 이야기 대신 다음 주 학생회 일정만 담담하게 꺼낸다. 호수 앞 벤치에서 마침내 걸음을 멈춘다.*
 
 ---
@@ -17656,7 +17656,7 @@
 - 배경: `park.png`
 - 다음: `date_seo_tentative_3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_date_sad.webp`
 **서연**: 미안하지만 오늘은 이 정도까지만 걷는 게 좋겠다. 월요일에 학교에서 마주치면 피하지 않고 인사할게.
 
 ---
@@ -23031,7 +23031,7 @@
 ---
 
 ### `morning5_mood_mid`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `morning5_gate`
 
 - 캐릭터: `없음`
@@ -25171,7 +25171,7 @@
 ---
 
 ### `tour_co_branch`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 분기:
   - [`day4_counteroffer_target_teacher`] → `tour_co_event_1`
   - [`day4_counteroffer_target_nurse`] → `tour_co_event_1`
@@ -25290,7 +25290,7 @@
 ---
 
 ### `tour_seo_1`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - BGM: `sunset1.mp3`
 - 다음: `tour_seo_affinity_check`
 
@@ -25300,7 +25300,7 @@
 ---
 
 ### `tour_seo_affinity_check`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 호감분기: Seoyeon
   - [80+] → `tour_seo_affinity_80`
   - [60+] → `tour_seo_affinity_60`
@@ -25313,7 +25313,7 @@
 ---
 
 ### `tour_seo_affinity_80`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_affinity_60`
 
 - 캐릭터: `seyoun_shy.png`
@@ -25322,7 +25322,7 @@
 ---
 
 ### `tour_seo_affinity_60`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_event_1`
 
 - 캐릭터: `seyoun_laugh.png`
@@ -25331,7 +25331,7 @@
 ---
 
 ### `tour_seo_event_1`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_event_2`
 
 - 캐릭터: `haeun_worried.png`
@@ -25340,7 +25340,7 @@
 ---
 
 ### `tour_seo_event_2`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_event_3`
 
 - 캐릭터: `seyoun_worried.png`
@@ -25349,7 +25349,7 @@
 ---
 
 ### `tour_seo_event_3`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_event_4`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25358,7 +25358,7 @@
 ---
 
 ### `tour_seo_event_4`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_event_5`
 
 - 캐릭터: `haeun_normal.png`
@@ -25367,7 +25367,7 @@
 ---
 
 ### `tour_seo_event_5`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 플래그: `day5_seoyeon_delegated`
 - 다음: `tour_seo_2`
 
@@ -25377,7 +25377,7 @@
 ---
 
 ### `tour_seo_2`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_3`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25386,7 +25386,7 @@
 ---
 
 ### `tour_seo_3`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_4`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25395,7 +25395,7 @@
 ---
 
 ### `tour_seo_4`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_5`
 
 - 캐릭터: `seyoun_laugh.png`
@@ -25404,7 +25404,7 @@
 ---
 
 ### `tour_seo_5`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_6`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25413,7 +25413,7 @@
 ---
 
 ### `tour_seo_6`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_7`
 
 - 캐릭터: `seyoun_shy.png`
@@ -25422,7 +25422,7 @@
 ---
 
 ### `tour_seo_7`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_8`
 
 - 캐릭터: `seyoun_shy.png`
@@ -25431,7 +25431,7 @@
 ---
 
 ### `tour_seo_8`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_9`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25440,7 +25440,7 @@
 ---
 
 ### `tour_seo_9`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_10`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25449,7 +25449,7 @@
 ---
 
 ### `tour_seo_10`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_11`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25458,7 +25458,7 @@
 ---
 
 ### `tour_seo_11`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_12`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25467,7 +25467,7 @@
 ---
 
 ### `tour_seo_12`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_13`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25476,7 +25476,7 @@
 ---
 
 ### `tour_seo_13`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `tour_seo_14`
 
 - 캐릭터: `seyoun_normal.png`
@@ -25485,7 +25485,7 @@
 ---
 
 ### `tour_seo_14`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 스탯: Seoyeon +1
 - 다음: `tour_seo_freetalk`
 
@@ -25983,7 +25983,7 @@
 ---
 
 ### `tour_seo_skip`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 호감분기: Seoyeon
   - [0+] → `tour_seo_low`
   - [-19 이상] → `tour_seo_low`
@@ -26006,7 +26006,7 @@
 ---
 
 ### `tour_seo_neg`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `after5_start`
 
 - 캐릭터: `seyoun_pout.png`
@@ -26114,7 +26114,7 @@
 - 배경: `school_hallway.png`
 - 다음: `day5_haeun_guilt_choice`
 
-- 캐릭터: `haeun_worried.png`
+- 캐릭터: `haeun_sad.png`
 **하은**: *노을이 스며드는 복도 끝에서 하은이 가방끈을 두 손으로 꼭 쥐고 서 있다.* 선배를 진심으로 응원한다고 했던 말, 거짓말은 아니었어요. 그런데 그렇게 말했던 제가... 지금은 서연 선배 얼굴을 똑바로 못 보겠어요.
 
 ---
@@ -26127,7 +26127,7 @@
   3. "서두르지 마. 생각할 시간 줄게." → `day5_haeun_guilt_up` | Haeun +2
   4. "*한숨만 쉰다.*" → `day5_haeun_guilt_down` | Haeun -3
 
-- 캐릭터: `haeun_worried.png`
+- 캐릭터: `haeun_sad.png`
 **하은**: *하은이 작게 숨을 고르고 조심스레 고개를 든다.* 그분께 너무 미안한데, 동시에 선배 옆에 계속 있고 싶은 마음도 안 사라져서 더 속상해요. ...이런 제가 너무 이기적이고 이상하죠?
 
 ---
@@ -26481,7 +26481,7 @@
 - 컨텍스트: "5일차 방과후 복도. 주인공이 하은과 시간을 보내겠다고 밝힌 직후다. 하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
 - 성격: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다. 하은은 미안한 마음과 선택받은 설렘이 섞여 있다. 이전 대화에서 실제로 나온 말만 근거로 삼고 전에 건넸던 응원의 말은 부정하지 않으면서 지금 마음을 조심스럽게 꺼낸다. 아직 사귀기로 하지 않았다."
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_shy.png`
 **하은**: 그럼 우리 조금만 더 걸으면서 얘기해요. 선배가 지금 저를 어떤 마음으로 보고 계신지 듣고 싶어요. 저도... 숨겨 뒀던 제 마음을 천천히 말씀드려 볼게요.
 
 ---
@@ -26502,7 +26502,7 @@
 - 컨텍스트: "5일차 해 질 무렵 공원 벤치. 하은이 사귈지 말지 마음을 정하려는 자리다. 하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다."
 - 성격: "하은과 단둘이 대화한다. 이전 대화에서 실제로 나온 말만 기억한다. 존댓말과 선배 호칭을 유지한다. 선택 전에는 연애를 확정하지 않는다. 하은을 선택한 뒤에도 사귀기로 합의한 상태는 아니며 현재 대화와 호감도에 따라 마음을 판단한다. 하은은 미안함을 지우지 않은 채 마음을 정하려 한다. 이전 대화에서 실제로 나온 말만 기억하고 상대가 자기 마음을 어떻게 받아 주는지 보며 대답한다. 합의하기 전에는 연인으로 대하지 않는다."
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_shy.png`
 **하은**: 오늘 축제가 끝나고 다음에 만날 때도, 선배랑 이렇게 나란히 앉아서 이야기할 수 있으면 좋겠어요. ...선배는 저랑 어떤 사이가 되고 싶으세요?
 
 ---
@@ -26530,7 +26530,7 @@
 - 배경: `park.png`
 - 다음: `day5_haeun_romance_check`
 
-- 캐릭터: `haeun_relieved.png`
+- 캐릭터: `haeun_smile.png`
 **하은**: *하은이 맑게 웃으며 노을 진 학교 지붕 쪽을 한 번 돌아본다.* 서연 선배한테는 내일 제가 따로 찾아가서 정식으로 인사드릴게요. 미안한 마음은 피하지 않고 안은 채로, 이제 당당하게 선배 옆에 있을래요.
 
 ---
@@ -26539,7 +26539,7 @@
 - 배경: `park.png`
 - 다음: `day5_haeun_romance_check`
 
-- 캐릭터: `haeun_relieved.png`
+- 캐릭터: `haeun_smile.png`
 **하은**: *하은이 맑게 웃으며 노을 진 학교 지붕 쪽을 한 번 돌아본다.* 유나 선배한테는 내일 제가 따로 찾아가서 정식으로 인사드릴게요. 미안한 마음은 피하지 않고 안은 채로, 이제 당당하게 선배 옆에 있을래요.
 
 ---
@@ -26548,7 +26548,7 @@
 - 배경: `park.png`
 - 다음: `day5_haeun_romance_check`
 
-- 캐릭터: `haeun_relieved.png`
+- 캐릭터: `haeun_smile.png`
 **하은**: *하은이 맑게 웃으며 노을 진 학교 지붕 쪽을 한 번 돌아본다.* 다인 선배한테는 내일 제가 따로 찾아가서 정식으로 인사드릴게요. 미안한 마음은 피하지 않고 안은 채로, 이제 당당하게 선배 옆에 있을래요.
 
 ---
@@ -26557,7 +26557,7 @@
 - 배경: `park.png`
 - 다음: `day5_haeun_romance_check`
 
-- 캐릭터: `haeun_relieved.png`
+- 캐릭터: `haeun_smile.png`
 **하은**: *하은이 맑게 웃으며 노을 진 학교 지붕 쪽을 한 번 돌아본다.* 담임선생님께는 내일 제가 따로 찾아뵙고 인사드릴게요. 미안한 마음은 피하지 않고 안은 채로, 이제 당당하게 선배 옆에 있을래요.
 
 ---
@@ -26566,7 +26566,7 @@
 - 배경: `park.png`
 - 다음: `day5_haeun_romance_check`
 
-- 캐릭터: `haeun_relieved.png`
+- 캐릭터: `haeun_smile.png`
 **하은**: *하은이 맑게 웃으며 노을 진 학교 지붕 쪽을 한 번 돌아본다.* 보건선생님께는 내일 제가 따로 찾아뵙고 인사드릴게요. 미안한 마음은 피하지 않고 안은 채로, 이제 당당하게 선배 옆에 있을래요.
 
 ---
@@ -26582,7 +26582,7 @@
 - 배경: `park.png`
 - 다음: `after5_original_start`
 
-- 캐릭터: `haeun_firm.png`
+- 캐릭터: `haeun_sad.png`
 **하은**: 오늘 제 이야기 끝까지 들어 주셔서 고마워요, 선배. 선배를 향한 마음이 없는 건 아닌데요... 자꾸만 그분 얼굴이 눈에 밟혀요. 미안한 마음이 아직 너무 커서, 지금 선배 손을 잡고 사귀겠다는 대답은 도저히 못 하겠어요. *하은이 벤치에서 일어나 가방을 챙겨 멘다. 조심스레 고개 숙여 인사하고는 홀로 학교 쪽으로 발길을 돌린다.*
 
 ---
@@ -31894,7 +31894,7 @@
 ---
 
 ### `bitter_dain_3_b`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 배경톤: `rain`
 - 다음: `bitter_epilogue_1`
 
@@ -32100,7 +32100,7 @@
 ---
 
 ### `true_epilogue_2`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `true_epilogue_3`
 
 - 캐릭터: `없음`
@@ -32109,7 +32109,7 @@
 ---
 
 ### `true_epilogue_3`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 다음: `true_epilogue_4`
 
 - 캐릭터: `없음`
@@ -32645,7 +32645,7 @@
 ---
 
 ### `good_2_dain`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 시간대: `sunset`
 - 다음: `good_3_dain`
 
@@ -32655,7 +32655,7 @@
 ---
 
 ### `good_3_dain`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 시간대: `sunset`
 - 다음: `good_4_dain`
 
@@ -32665,7 +32665,7 @@
 ---
 
 ### `good_4_dain`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 시간대: `sunset`
 - 다음: `good_5_dain`
 
@@ -32806,7 +32806,7 @@
 ---
 
 ### `day5_ending_alone`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 시간대: `night`
 - BGM: `night2.mp3`
 - 다음: `alone_1`
@@ -32862,7 +32862,7 @@
 ---
 
 ### `day5_credits`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 타입: `credits`
 - 다음: `day5_ending_restart`
 
@@ -32872,7 +32872,7 @@
 ---
 
 ### `day5_ending_restart`
-- 배경: `school.png`
+- 배경: `school_festival.webp`
 - 선택지:
   1. "처음부터 다시 시작하기" → `index.html`
 

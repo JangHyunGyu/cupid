@@ -1,0 +1,416 @@
+{
+  "date": "2026-10-16",
+  "generator": "Higgsfield GPT Image 2.5",
+  "requested": {
+    "quality": "max",
+    "resolution": "4k"
+  },
+  "actualDimensions": {
+    "sprites": [
+      2480,
+      3312
+    ],
+    "eventCG": [
+      2880,
+      2880
+    ],
+    "festivalBackground": [
+      2880,
+      2880
+    ]
+  },
+  "masters": "assets/images/masters/art-expansion-20261016/",
+  "delivery": "Original native PNG plus pixel-identical lossless WebP; protected artwork delivered through private R2",
+  "sceneChanges": 75,
+  "unchanged": [
+    "all eight scenario translation datasets",
+    "all scene transitions and choices",
+    "affinity values and ending requirements",
+    "existing character and gallery artwork"
+  ],
+  "newHaeunThresholds": {
+    "shy": 45,
+    "smile": 60,
+    "sad": 20
+  },
+  "preservedHaeunThresholds": {
+    "normal": 0,
+    "worried": 33,
+    "firm": 67,
+    "relieved": 100
+  },
+  "retries": [
+    {
+      "job_id": "fdeb779e-c017-4c3f-ba64-e7acc887270d",
+      "status": "provider rejected output",
+      "replacedBy": "0edbd6cb-9920-407c-bb7b-cd234a91c5b0"
+    },
+    {
+      "job_id": "247b3095-dad1-45d8-86e8-d69859896e5e",
+      "status": "unused; prompt contained an incorrect hair description",
+      "replacedBy": "0133f280-1ac7-4e85-95d3-5186f5fbe9b7"
+    }
+  ],
+  "jobs": [
+    {
+      "name": "seyoun_date_normal",
+      "id": "22878def-86c8-4821-ab3b-7e29cc7fbdf2",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: identity-preserve. Create one final transparent visual-novel character sprite for CUPID, using the reference as the EXACT identity, face, anatomy, hair, glasses and painted-anime rendering reference. Seoyeon has long wavy black hair with the same part and loose bangs, brown eyes behind her SAME thin framed glasses, same face and proportions. Change her SCHOOL UNIFORM to her authored weekend outfit: modest soft IVORY knit cardigan over a simple opaque blouse, relaxed A-line midi skirt in soft muted navy, small brown leather crossbody bag. Keep the outfit age-appropriate, fully clothed and nonsexual; natural neckline, no cleavage emphasis, no pinup. Upright relaxed standing, front three-quarter view facing camera, calm attentive closed-mouth neutral expression, hands naturally loosely holding the bag strap at waist. Head to mid-thigh framing matching reference scale and margins; both hands and entire hair silhouette fully within frame, generous clear transparent margin above hair and at sides. One character only. Match the reference's nuanced painted shading, clean detailed line work and restrained soft light exactly. No text, no watermark, no floor, no cast shadow, no scene, no opaque background, no decorative particles. Genuine transparent alpha background. Maximum supported native resolution 4K and highest MAX quality; polished master sprite, not a sprite sheet.",
+        "aspect_ratio": "3:4",
+        "reference_images": [
+          "974b7ca7-8cb9-48f4-aa35-0d5bee91627b"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "transparent"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_071917_22878def-86c8-4821-ab3b-7e29cc7fbdf2.png"
+    },
+    {
+      "name": "seyoun_date_laugh",
+      "id": "d710e456-16e1-449a-a7ec-f4d4675fce01",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: identity-preserve. Make ONE expression variant of this EXACT reference sprite for CUPID. Change ONLY her face to bright natural open-eyed happy smile, slightly parted smiling lips with subtle visible upper teeth, relaxed brows. Preserve exact Seoyeon identity and body anatomy, long wavy BLACK hair and part, thin-frame glasses, eye color, same ivory knit cardigan with same buttons and weave over white opaque blouse, high-waist navy midi skirt, same brown leather crossbody bag and strap, exact hand positions and pose, head angle, crop and silhouette. No school uniform, no jacket, no new accessories. Fully clothed, nonsexual. Preserve the exact painted-anime rendering, lighting, color palette, canvas composition and scale of the reference; no new pose or zoom. All hair and hands within frame. Real transparent alpha background, no floor, no shadow, no text, no watermark. Maximum native 4K resolution and highest MAX quality. One finished head-to-mid-thigh sprite, not a sheet.",
+        "aspect_ratio": "3:4",
+        "reference_images": [
+          "01201eba-4065-4c7b-baed-82894fb9f85d"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "transparent"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_072110_d710e456-16e1-449a-a7ec-f4d4675fce01.png"
+    },
+    {
+      "name": "seyoun_date_shy",
+      "id": "d244b96f-88ed-4ae1-bb4a-bd7b736e7a26",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: identity-preserve. Make ONE expression variant of this EXACT reference sprite for CUPID. Change ONLY her face to quiet shy expression with averted but open eyes, slight cheek warmth and small hesitant closed-mouth smile. Preserve exact Seoyeon identity and body anatomy, long wavy BLACK hair and part, thin-frame glasses, eye color, same ivory knit cardigan with same buttons and weave over white opaque blouse, high-waist navy midi skirt, same brown leather crossbody bag and strap, exact hand positions and pose, head angle, crop and silhouette. No school uniform, no jacket, no new accessories. Fully clothed, nonsexual. Preserve the exact painted-anime rendering, lighting, color palette, canvas composition and scale of the reference; no new pose or zoom. All hair and hands within frame. Real transparent alpha background, no floor, no shadow, no text, no watermark. Maximum native 4K resolution and highest MAX quality. One finished head-to-mid-thigh sprite, not a sheet.",
+        "aspect_ratio": "3:4",
+        "reference_images": [
+          "01201eba-4065-4c7b-baed-82894fb9f85d"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "transparent"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_072112_d244b96f-88ed-4ae1-bb4a-bd7b736e7a26.png"
+    },
+    {
+      "name": "seyoun_date_worried",
+      "id": "38c927a2-7c71-43bb-b7a1-a617333d1ffd",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: identity-preserve. Make ONE expression variant of this EXACT reference sprite for CUPID. Change ONLY her face to concerned attentive expression, gently knit brows and slightly parted lips, open eyes focused on the viewer, no smile. Preserve exact Seoyeon identity and body anatomy, long wavy BLACK hair and part, thin-frame glasses, eye color, same ivory knit cardigan with same buttons and weave over white opaque blouse, high-waist navy midi skirt, same brown leather crossbody bag and strap, exact hand positions and pose, head angle, crop and silhouette. No school uniform, no jacket, no new accessories. Fully clothed, nonsexual. Preserve the exact painted-anime rendering, lighting, color palette, canvas composition and scale of the reference; no new pose or zoom. All hair and hands within frame. Real transparent alpha background, no floor, no shadow, no text, no watermark. Maximum native 4K resolution and highest MAX quality. One finished head-to-mid-thigh sprite, not a sheet.",
+        "aspect_ratio": "3:4",
+        "reference_images": [
+          "01201eba-4065-4c7b-baed-82894fb9f85d"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "transparent"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_072116_38c927a2-7c71-43bb-b7a1-a617333d1ffd.png"
+    },
+    {
+      "name": "seyoun_date_sad",
+      "id": "3981303a-b717-452e-a132-816b5274c936",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: identity-preserve. Make ONE expression variant of this EXACT reference sprite for CUPID. Change ONLY her face to restrained sad expression, slightly raised inner eyebrows, downcast open eyes and closed lips with corners gently lowered, no flowing tears. Preserve exact Seoyeon identity and body anatomy, long wavy BLACK hair and part, thin-frame glasses, eye color, same ivory knit cardigan with same buttons and weave over white opaque blouse, high-waist navy midi skirt, same brown leather crossbody bag and strap, exact hand positions and pose, head angle, crop and silhouette. No school uniform, no jacket, no new accessories. Fully clothed, nonsexual. Preserve the exact painted-anime rendering, lighting, color palette, canvas composition and scale of the reference; no new pose or zoom. All hair and hands within frame. Real transparent alpha background, no floor, no shadow, no text, no watermark. Maximum native 4K resolution and highest MAX quality. One finished head-to-mid-thigh sprite, not a sheet.",
+        "aspect_ratio": "3:4",
+        "reference_images": [
+          "01201eba-4065-4c7b-baed-82894fb9f85d"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "transparent"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_072118_3981303a-b717-452e-a132-816b5274c936.png"
+    },
+    {
+      "name": "haeun_shy",
+      "id": "294107ef-1a39-415f-ab1a-f8e06175722d",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: identity-preserve. Edit the reference into ONE production visual-novel sprite. EXACT same Haeun identity, 17-year-old schoolgirl, shoulder-length charcoal-black bob with curled ends, same wide white headband, brown eyes, face shape, navy school blazer with gold crest, opaque buttoned white shirt and modest skirt. Fully clothed and nonsexual. Preserve her exact standing pose, hands folded at waist, anatomy, crop, uniform details, hair silhouette, soft lighting, painted-anime style and proportions. Change ONLY the facial expression to quietly shy: eyes still open and softly looking toward the viewer, gaze a little lowered, lips in a small hesitant smile, subtle natural warmth in cheeks. Do not change the head angle or add gestures. Genuine transparent alpha background, no shadow, no floor, no scenery, no text, no watermark. Keep all hair and both hands within the frame with transparent top and side margins. Highest MAX quality and maximum native 4K resolution. One portrait head to mid-thigh; not a sheet.",
+        "aspect_ratio": "3:4",
+        "reference_images": [
+          "de428e0e-2f29-4e7a-b492-eba12f9119c1"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "transparent"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_071941_294107ef-1a39-415f-ab1a-f8e06175722d.png"
+    },
+    {
+      "name": "haeun_smile",
+      "id": "b21c340f-03f5-49ab-832d-16fd0617a980",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: identity-preserve. Edit the reference into ONE production visual-novel sprite. EXACT same Haeun identity, 17-year-old schoolgirl, shoulder-length charcoal-black bob with curled ends, same wide white headband, brown eyes, face shape, navy school blazer with gold crest, opaque buttoned white shirt and modest skirt. Fully clothed and nonsexual. Preserve her exact standing pose, hands folded at waist, anatomy, crop, uniform details, hair silhouette, soft lighting, painted-anime style and proportions. Change ONLY the facial expression to a bright happy smile: warm open eyes with slightly lifted lower lids, a spontaneous gentle open-mouth smile with a small glimpse of upper teeth, relaxed eyebrows. Sincere cheerful teenage schoolmate, not exaggerated comedy. Keep eyes open. Genuine transparent alpha background, no shadow, no floor, no scenery, no text, no watermark. Keep all hair and both hands within the frame with transparent top and side margins. Highest MAX quality and maximum native 4K resolution. One portrait head to mid-thigh; not a sheet.",
+        "aspect_ratio": "3:4",
+        "reference_images": [
+          "de428e0e-2f29-4e7a-b492-eba12f9119c1"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "transparent"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_071943_b21c340f-03f5-49ab-832d-16fd0617a980.png"
+    },
+    {
+      "name": "haeun_sad",
+      "id": "0edbd6cb-9920-407c-bb7b-cd234a91c5b0",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Create a single fully clothed character portrait of Haeun from this reference for the school visual novel CUPID. Keep her exact identity, short charcoal-black bob, white headband, warm brown eyes, navy school blazer and buttoned white shirt. Keep reference pose, folded hands at waist, full hair silhouette, head-to-mid-thigh framing and painted anime style. Her expression is gently sad after a difficult conversation: inner brows slightly raised, open downcast eyes, closed mouth with corners slightly lowered. No tears needed. Preserve all clothing, body proportions, pose and lighting; only change the facial expression. Transparent background, no scenery, no words or watermark. Highest MAX quality and maximum native 4K resolution. One finished sprite.",
+        "aspect_ratio": "3:4",
+        "reference_images": [
+          "de428e0e-2f29-4e7a-b492-eba12f9119c1"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "transparent"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_072146_0edbd6cb-9920-407c-bb7b-cd234a91c5b0.png"
+    },
+    {
+      "name": "school_festival",
+      "id": "c973d403-f40b-4cc0-b4f6-73067abca039",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: lighting-weather and precise-object-edit. Adapt the provided CUPID Korean school exterior background for its spring school festival. Preserve the SAME campus architecture, school facade, gates, cherry trees, perspective, painted-anime environment style and soft spring daylight; no redesign and no extra buildings. Add a modest school-festival setup: small orderly booths with pastel fabric awnings along the courtyard sides, simple paper bunting overhead and a blank fabric banner stretched near the gate. Leave the central walking path open and clear, matching the original camera viewpoint. The festival is in April, cherry blossoms present, not autumn, night, fireworks or a different country. NO people, recognizable faces, readable text, letters, numbers, logos, watermark or UI. Quiet empty setting suitable as background behind large character sprites. Preserve clean center and detailed but understated painted textures. Maximum supported native 4K resolution and highest MAX quality. Landscape 16:9.",
+        "aspect_ratio": "16:9",
+        "reference_images": [
+          "76f1cce1-9351-4439-9d69-d410557cbd61"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "opaque"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_071949_c973d403-f40b-4cc0-b4f6-73067abca039.png"
+    },
+    {
+      "name": "event_yuna_reading",
+      "id": "0133f280-1ac7-4e85-95d3-5186f5fbe9b7",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: illustration-story. Create one new collectible event CG for Korean visual novel CUPID. Reference 1 is the EXACT Yuna identity: layered shoulder-length SILVER-WHITE hair with the same layered bangs and side strands, vivid RED eyes, her distinctive black tattoos on neck and forearms, navy school blazer over opaque black T-shirt and navy skirt. No glasses. Preserve that identity, hair COLOR and length, tattoos and outfit exactly; never replace her with a black-haired girl. Reference 2 is the exact old library location and painted-anime environment style. A quiet first-day lunchtime: Yuna sits at a library reading table beside an implied unseen schoolmate and opens her book to its first page. Only Yuna is visibly portrayed; no second person, foreground hands, silhouettes or generic lover. Natural seated three-quarter medium view from the neighboring chair, showing her face in the upper middle, relaxed hands resting on either side of her open book near center. She glances sideways toward the viewer with restrained curiosity and a very small soft smile; retain her cool reserved demeanor. Tall shelves, old wood table and filtered window sunlight matching reference 2. Calm quiet friendship atmosphere, completely nonsexual, fully clothed. Full coherent illustration, not a pasted standing sprite. Correct natural five-fingered hands and plausible book perspective. NATIVE 1:1 SQUARE composition, maximum native 4K resolution and highest MAX quality, finely painted light matching CUPID artwork. Quiet lower 25 percent for dialogue overlay, face and open book above this area. No readable writing, text, captions, logos, UI or watermark.",
+        "aspect_ratio": "1:1",
+        "reference_images": [
+          "d400804c-095d-448c-9ead-6fa46e98781b",
+          "c785d747-a91e-48ca-a22d-13f60fa8516a"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "opaque"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_072017_0133f280-1ac7-4e85-95d3-5186f5fbe9b7.png"
+    },
+    {
+      "name": "event_seoyeon_succulent",
+      "id": "1555340f-3b47-4307-bd20-fb39bd9d167f",
+      "model": "gpt_image_2_5",
+      "params": {
+        "prompt": "Use case: illustration-story. Create one new collectible event CG for Korean visual novel CUPID. Reference 1 is Seoyeon's EXACT identity and her weekend outfit: long wavy BLACK hair, her same thin framed glasses and warm brown eyes, IVORY knit cardigan over opaque white blouse, navy A-line skirt and small brown leather crossbody bag. Reference 2 is the exact flower-shop location and warm painted-anime style. On the fourth-day weekend date she stands in the flower shop's narrow aisle, holding up ONE palm-sized potted succulent as a gift for an unseen schoolmate protagonist. Seoyeon is the only person shown, no extra faces/silhouettes, no protagonist hand. A small natural happy smile and warm direct eye contact, her two hands naturally holding the little terracotta pot at chest height. Clearly show five natural fingers on each hand where visible, one pot, no duplicated hands. Surrounding shelves and sunlit window suggest the same lush flower shop architecture. Wholesome nonsexual fully clothed scene. Coherent fresh composition, not a pasted standing sprite. NATIVE 1:1 SQUARE composition, face centered in upper half and succulent at center above lower 25 percent dialogue overlay area. Maximum native 4K resolution and highest MAX quality. Detailed linework, soft painted foliage and warm daylight matching reference. No readable signs, text, logos, UI, captions or watermark.",
+        "aspect_ratio": "1:1",
+        "reference_images": [
+          "01201eba-4065-4c7b-baed-82894fb9f85d",
+          "25deaa24-452f-4701-a277-29ebdc213593"
+        ],
+        "resolution": "4k",
+        "quality": "max",
+        "background": "opaque"
+      },
+      "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_072121_1555340f-3b47-4307-bd20-fb39bd9d167f.png"
+    }
+  ],
+  "revision": {
+    "date": "2026-10-16",
+    "reason": "User review: unify bag and strap direction across all five date sprites and flower-shop CG; regenerate the festival background natively square.",
+    "bagGeometry": "Bag at viewer-left hip; one strap from viewer-right shoulder to viewer-left hip, consistent across all six Seoyeon images.",
+    "masterDirectory": "assets/images/masters/art-expansion-20261016/revised/",
+    "festivalDimensions": [
+      2880,
+      2880
+    ],
+    "rejectedGeometryJob": "f6c76262-4095-4162-9232-3d4455eb4a10",
+    "jobs": [
+      {
+        "name": "seyoun_date_normal",
+        "id": "92a2ae21-cbc2-4669-86f5-b392aee66390",
+        "type": "image",
+        "status": "pending",
+        "model": "gpt_image_2_5",
+        "params": {
+          "prompt": "Use case: illustration-story. Create a NEW standing character sprite of the EXACT Seoyeon shown in this flower-shop CG. Use this reference for her face, thin framed glasses, long wavy black hair, ivory cardigan, white opaque blouse, navy skirt AND the physically correct brown crossbody bag. One person, neutral calm attentive face, standing head-to-mid-thigh on a genuinely transparent background. IMPORTANT BAG CONSTRUCTION: the bag hangs at the LEFT EDGE of the picture (her RIGHT hip). The SINGLE strap lies over the RIGHT SHOULDER of the picture (her LEFT shoulder) and crosses the front of her chest diagonally DOWN AND LEFT, continuing to the bag on the picture LEFT. This is a slash '/' line in the picture: bottom-left hip to upper-right shoulder. It MUST NOT be a backslash '\\\\' line. No strap over the picture-left shoulder. Make the upper-right shoulder attachment visible against the ivory cardigan; keep her hair just behind that attachment. Her two hands can rest lightly together at the picture-left waist near the top of the bag, so the one diagonal strap remains continuous and visible across the chest. No strap loops or a second bag. Match the reference identity, anatomy, painted-anime shading and clothing details. Do not paste the flower-shop scene: standing sprite on true transparent alpha, no scenery, shadow, floor, text or watermark. Highest MAX quality and maximum supported native 4K resolution. One 3:4 portrait, all hair and hands within frame, modest fully clothed outfit.",
+          "aspect_ratio": "3:4",
+          "reference_images": [
+            "387bd5ad-8fc3-4e40-b469-f5ce9760b849"
+          ],
+          "resolution": "4k",
+          "quality": "max",
+          "background": "transparent"
+        },
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_074543_92a2ae21-cbc2-4669-86f5-b392aee66390.png"
+      },
+      {
+        "name": "seyoun_date_laugh",
+        "id": "5fde704a-f499-443c-b489-af9b693539fd",
+        "type": "image",
+        "status": "pending",
+        "model": "gpt_image_2_5",
+        "params": {
+          "prompt": "Use case: identity-preserve. Change ONLY the FACE of this exact reference sprite to a bright natural happy smile with open eyes and slightly parted smiling lips. Keep EVERYTHING ELSE identical, especially the newly corrected bag geometry: ONE brown bag at the picture LEFT hip, its ONE continuous strap from picture RIGHT shoulder diagonally down to picture LEFT hip, slash '/' direction. Preserve that exact strap, both brass buckles, bag location and bag silhouette; do not mirror it, swap shoulders or add straps. Preserve thin framed glasses, black wavy hair, exact face identity, ivory cardigan, white buttoned blouse, navy A-line skirt, exact hands folded low at waist, body proportions, pose, lighting, scale, framing and all clothing details. The only change is her facial expression. Transparent alpha background, no floor, shadow, scenery, letters or watermark. Entire hair and hands inside frame. Maximum native 4K resolution and highest MAX quality. One 3:4 standing sprite, not a sheet.",
+          "aspect_ratio": "3:4",
+          "reference_images": [
+            "c7de93ed-1433-4ebc-9b31-87e18668f926"
+          ],
+          "resolution": "4k",
+          "quality": "max",
+          "background": "transparent"
+        },
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_074807_5fde704a-f499-443c-b489-af9b693539fd.png"
+      },
+      {
+        "name": "seyoun_date_shy",
+        "id": "8e9e963b-b6d7-45bd-9233-9a8c9c17c416",
+        "type": "image",
+        "status": "pending",
+        "model": "gpt_image_2_5",
+        "params": {
+          "prompt": "Use case: identity-preserve. Change ONLY the FACE of this exact reference sprite to a shy closed-mouth smile, open slightly lowered eyes, and subtle cheek warmth. Keep EVERYTHING ELSE identical, especially the newly corrected bag geometry: ONE brown bag at the picture LEFT hip, its ONE continuous strap from picture RIGHT shoulder diagonally down to picture LEFT hip, slash '/' direction. Preserve that exact strap, both brass buckles, bag location and bag silhouette; do not mirror it, swap shoulders or add straps. Preserve thin framed glasses, black wavy hair, exact face identity, ivory cardigan, white buttoned blouse, navy A-line skirt, exact hands folded low at waist, body proportions, pose, lighting, scale, framing and all clothing details. The only change is her facial expression. Transparent alpha background, no floor, shadow, scenery, letters or watermark. Entire hair and hands inside frame. Maximum native 4K resolution and highest MAX quality. One 3:4 standing sprite, not a sheet.",
+          "aspect_ratio": "3:4",
+          "reference_images": [
+            "c7de93ed-1433-4ebc-9b31-87e18668f926"
+          ],
+          "resolution": "4k",
+          "quality": "max",
+          "background": "transparent"
+        },
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_074810_8e9e963b-b6d7-45bd-9233-9a8c9c17c416.png"
+      },
+      {
+        "name": "seyoun_date_worried",
+        "id": "4308741e-78a5-4542-8ec2-54f5e7751225",
+        "type": "image",
+        "status": "pending",
+        "model": "gpt_image_2_5",
+        "params": {
+          "prompt": "Use case: identity-preserve. Change ONLY the FACE of this exact reference sprite to a concerned attentive expression, gently knit brows, open eyes and slightly parted lips. Keep EVERYTHING ELSE identical, especially the newly corrected bag geometry: ONE brown bag at the picture LEFT hip, its ONE continuous strap from picture RIGHT shoulder diagonally down to picture LEFT hip, slash '/' direction. Preserve that exact strap, both brass buckles, bag location and bag silhouette; do not mirror it, swap shoulders or add straps. Preserve thin framed glasses, black wavy hair, exact face identity, ivory cardigan, white buttoned blouse, navy A-line skirt, exact hands folded low at waist, body proportions, pose, lighting, scale, framing and all clothing details. The only change is her facial expression. Transparent alpha background, no floor, shadow, scenery, letters or watermark. Entire hair and hands inside frame. Maximum native 4K resolution and highest MAX quality. One 3:4 standing sprite, not a sheet.",
+          "aspect_ratio": "3:4",
+          "reference_images": [
+            "c7de93ed-1433-4ebc-9b31-87e18668f926"
+          ],
+          "resolution": "4k",
+          "quality": "max",
+          "background": "transparent"
+        },
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_074813_4308741e-78a5-4542-8ec2-54f5e7751225.png"
+      },
+      {
+        "name": "seyoun_date_sad",
+        "id": "5d3096ac-b996-4f2f-af9b-ec793a811202",
+        "type": "image",
+        "status": "pending",
+        "model": "gpt_image_2_5",
+        "params": {
+          "prompt": "Use case: identity-preserve. Change ONLY the FACE of this exact reference sprite to a restrained sad expression with raised inner brows, downcast open eyes and closed lips with lowered corners. Keep EVERYTHING ELSE identical, especially the newly corrected bag geometry: ONE brown bag at the picture LEFT hip, its ONE continuous strap from picture RIGHT shoulder diagonally down to picture LEFT hip, slash '/' direction. Preserve that exact strap, both brass buckles, bag location and bag silhouette; do not mirror it, swap shoulders or add straps. Preserve thin framed glasses, black wavy hair, exact face identity, ivory cardigan, white buttoned blouse, navy A-line skirt, exact hands folded low at waist, body proportions, pose, lighting, scale, framing and all clothing details. The only change is her facial expression. Transparent alpha background, no floor, shadow, scenery, letters or watermark. Entire hair and hands inside frame. Maximum native 4K resolution and highest MAX quality. One 3:4 standing sprite, not a sheet.",
+          "aspect_ratio": "3:4",
+          "reference_images": [
+            "c7de93ed-1433-4ebc-9b31-87e18668f926"
+          ],
+          "resolution": "4k",
+          "quality": "max",
+          "background": "transparent"
+        },
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_074815_5d3096ac-b996-4f2f-af9b-ec793a811202.png"
+      },
+      {
+        "name": "school_festival",
+        "id": "116680c1-da91-4b22-91d0-b24a80bd51dd",
+        "type": "image",
+        "status": "pending",
+        "model": "gpt_image_2_5",
+        "params": {
+          "prompt": "Use case: precise-object-edit. Recompose this exact CUPID spring school-festival background as a NATIVE 1:1 SQUARE scene. Preserve the SAME Korean school facade, gate pillars, cherry-blossom trees, pastel side booths, bunting, blank festival banner, open courtyard, painted-anime rendering and clear spring daylight. Fit the full gate opening and banner into the square composition; main school facade centered in the upper half, festival booths visible along BOTH sides of the central empty path. Keep the important architectural details away from the outer edges for mobile framing. Do not merely add bars or put a landscape image inside a square canvas. A fully painted square background filling the canvas edge to edge. No people, readable text, letters, numbers, logos, watermark, UI or extra buildings. Match original artwork style and the same campus identity exactly. Highest MAX quality and maximum supported native 4K resolution. Actual composition must be square 1:1.",
+          "aspect_ratio": "1:1",
+          "reference_images": [
+            "48b82825-ab36-469f-a14f-ef876d0f2388"
+          ],
+          "resolution": "4k",
+          "quality": "max",
+          "background": "opaque"
+        },
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_074315_116680c1-da91-4b22-91d0-b24a80bd51dd.png"
+      },
+      {
+        "name": "event_seoyeon_succulent",
+        "id": "bcec8f9a-460c-4d11-8254-9476138ad912",
+        "type": "image",
+        "status": "pending",
+        "model": "gpt_image_2_5",
+        "params": {
+          "prompt": "Use case: illustration-story. Create one CUPID flower-shop event CG. Reference 1 gives the EXACT Seoyeon identity, face, thin framed glasses, black wavy hair, ivory cardigan over white blouse, navy skirt, and CORRECT BAG GEOMETRY. Reference 2 gives the exact flower-shop setting. Seoyeon is the only visible person, standing in the narrow flower-shop aisle, offering one palm-sized potted succulent to the unseen protagonist. She holds the single terracotta pot with both natural hands at chest height, smiling softly toward the viewer. CRITICAL CONTINUITY: her brown crossbody bag remains at the LEFT side of the picture, her RIGHT hip. Its ONE strap starts on the RIGHT shoulder of the picture (her LEFT), visibly slopes diagonally DOWN AND LEFT across her white blouse (slash '/' direction), passes BEHIND the pot and hands, and ends at the bag at picture LEFT hip. Keep this geometry exactly as reference 1. No strap on picture-left shoulder, no duplicate strap or second bag. Her body is frontal, not mirrored. Match the painted-anime rendering, nuanced facial shading and warm flower-shop daylight. Wholesome fully clothed scene; no other people, foreground hands or silhouettes. Correct five-fingered hands around one small pot, no duplicated limbs. NATIVE 1:1 SQUARE composition, face in upper half, pot at center, bag visible near lower-left corner. Keep lower 25 percent quiet for dialogue overlay. Highest MAX quality and maximum native 4K resolution. No readable signs, text, letters, logos, UI or watermark.",
+          "aspect_ratio": "1:1",
+          "reference_images": [
+            "c7de93ed-1433-4ebc-9b31-87e18668f926",
+            "25deaa24-452f-4701-a277-29ebdc213593"
+          ],
+          "resolution": "4k",
+          "quality": "max",
+          "background": "opaque"
+        },
+        "result_url": "https://d8j0ntlcm91z4.cloudfront.net/user_3FmH4KnEpNlYvd9ZuvDRc0jR2EM/hf_20261016_074818_bcec8f9a-460c-4d11-8254-9476138ad912.png"
+      }
+    ]
+  },
+  "verification": {
+    "npmTest": "passed",
+    "build": "passed",
+    "buildMetadata": "passed",
+    "cache": "passed",
+    "sceneCoverage": {
+      "scenes": 3393,
+      "languages": 8,
+      "missingBindings": 0
+    },
+    "browser": {
+      "sceneAndGalleryTests": 23,
+      "languages": 8,
+      "storyViewports": [
+        [
+          1440,
+          1000
+        ],
+        [
+          390,
+          844
+        ]
+      ],
+      "allAddedSpritesLoaded": true,
+      "cgNativeSize": [
+        2880,
+        2880
+      ]
+    },
+    "visualRegression": {
+      "unchangedTitleAndStoryScreens": 4,
+      "pixelIdentical": 4,
+      "approvedVisualChanges": [
+        "new artwork",
+        "gallery registrations"
+      ]
+    },
+    "sourcePixels": "Every delivery WebP decodes to the native PNG pixels exactly",
+    "privateStorage": "All protected PNG/WebP uploads verified by full R2 readback",
+    "bagReview": "All five final sprites and final flower-shop CG inspected together; strap upper-right to lower-left, bag at viewer-left hip",
+    "backgroundReview": "Native square festival image inspected, 2880 x 2880"
+  }
+}

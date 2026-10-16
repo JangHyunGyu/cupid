@@ -1810,7 +1810,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "bitter_dain_3_b"
     },
     "bitter_dain_3_b": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "next": "bitter_epilogue_1",
         "backgroundVariant": "rain"
@@ -1907,12 +1907,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "date_choice_true_dain"
     },
     "true_epilogue_2": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "next": "true_epilogue_3"
     },
     "true_epilogue_3": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "next": "true_epilogue_4"
     },
@@ -2136,19 +2136,19 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "timeOfDay": "sunset"
     },
     "good_2_dain": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/dain_pout.png",
         "next": "good_3_dain",
         "timeOfDay": "sunset"
     },
     "good_3_dain": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/dain_laugh.png",
         "next": "good_4_dain",
         "timeOfDay": "sunset"
     },
     "good_4_dain": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/dain_normal.png",
         "next": "good_5_dain",
         "timeOfDay": "sunset"
@@ -2179,7 +2179,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "day5_dain_ending_freetalk_intro"
     },
     "day5_ending_alone": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "bgm": "night2.mp3",
         "next": "alone_1",
@@ -3016,13 +3016,13 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "forcedSexualViolationResume": true
     },
     "day5_credits": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "type": "credits",
         "next": "day5_ending_restart"
     },
     "day5_ending_restart": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "choices": [
             { "next": "index.html" }

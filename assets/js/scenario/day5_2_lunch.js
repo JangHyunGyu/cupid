@@ -1051,7 +1051,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "dynamicGroupName": true
     },
     "tour_co_branch": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "routeBeforeRender": true,
         "branches": [
@@ -1123,14 +1123,14 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_start"
     },
     "tour_seo_1": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "bgm": "sunset1.mp3",
         "affinityGuard": {"character":"Seoyeon","minAffinity":40,"fallback":"tour_seo_skip"},
         "next": "tour_seo_affinity_check"
     },
     "tour_seo_affinity_check": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "affinityChar": "Seoyeon",
         "affinityBranches": [
@@ -1140,103 +1140,103 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "tour_seo_affinity_80": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_shy.png",
         "next": "tour_seo_affinity_60"
     },
     "tour_seo_affinity_60": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_laugh.png",
         "next": "tour_seo_event_1"
     },
     "tour_seo_event_1": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/haeun_worried.png",
         "next": "tour_seo_event_2"
     },
     "tour_seo_event_2": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_worried.png",
         "next": "tour_seo_event_3"
     },
     "tour_seo_event_3": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_event_4"
     },
     "tour_seo_event_4": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/haeun_normal.png",
         "next": "tour_seo_event_5"
     },
     "tour_seo_event_5": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "setFlags": ["day5_seoyeon_delegated"],
         "next": "tour_seo_2"
     },
     "tour_seo_2": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_3"
     },
     "tour_seo_3": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_4"
     },
     "tour_seo_4": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_laugh.png",
         "next": "tour_seo_5"
     },
     "tour_seo_5": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_6"
     },
     "tour_seo_6": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_shy.png",
         "next": "tour_seo_7"
     },
     "tour_seo_7": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_shy.png",
         "next": "tour_seo_8"
     },
     "tour_seo_8": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_9"
     },
     "tour_seo_9": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_10"
     },
     "tour_seo_10": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_11"
     },
     "tour_seo_11": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_12"
     },
     "tour_seo_12": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_13"
     },
     "tour_seo_13": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_normal.png",
         "next": "tour_seo_14"
     },
     "tour_seo_14": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_shy.png",
         "stats": {"Seoyeon":{"affinity":1}},
         "next": "tour_seo_freetalk"
@@ -1571,7 +1571,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "after5_start"
     },
     "tour_seo_skip": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": null,
         "affinityChar": "Seoyeon",
         "affinityBranches": [{"minAffinity":0,"next":"tour_seo_low"},{"minAffinity":-19,"next":"tour_seo_low"},{"minAffinity":-100,"next":"tour_seo_neg"}],
@@ -1608,7 +1608,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "routeBeforeRender": true
     },
     "tour_seo_neg": {
-        "background": "assets/images/background/school.png",
+        "background": "assets/images/background/school_festival.webp",
         "character": "assets/images/characters/seyoun_pout.png",
         "next": "after5_start"
     },

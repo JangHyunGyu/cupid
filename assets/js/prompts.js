@@ -471,7 +471,10 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         normal: 'assets/images/characters/haeun_normal.png',
         worried: 'assets/images/characters/haeun_worried.png',
         firm: 'assets/images/characters/haeun_firm.png',
-        relieved: 'assets/images/characters/haeun_relieved.png'
+        relieved: 'assets/images/characters/haeun_relieved.png',
+        shy: 'assets/images/characters/haeun_shy.png',
+        smile: 'assets/images/characters/haeun_smile.png',
+        sad: 'assets/images/characters/haeun_sad.png'
     })
 });
 

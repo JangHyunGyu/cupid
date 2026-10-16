@@ -11,7 +11,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     const scenes = {
     "date_seo_1": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "bgm": "date.mp3",
         "condition": "route_seoyeon",
         "affinityGuard": {"character":"Seoyeon","minAffinity":30,"fallback":"date_seo_skip"},
@@ -33,23 +33,23 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_seo_high_1": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_date_laugh.webp",
         "next": "date_seo_high_2"
     },
     "date_seo_high_2": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "next": "date_seo_compliment_choice",
         "framing": "close"
     },
     "date_seo_tentative_1": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_worried.webp",
         "next": "date_seo_tentative_2"
     },
     "date_seo_tentative_2": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_sad.webp",
         "next": "date_seo_tentative_3"
     },
     "date_seo_tentative_3": {
@@ -60,7 +60,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_seo_compliment_choice": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "choices": [
             { "affinityChar": "Seoyeon", "affinityBranches": [{"minAffinity":50,"next":"date_seo_pretty_high"},{"minAffinity":-100,"next":"date_seo_pretty_low"}] },
             { "next": "date_seo_bright", "stats": {"Seoyeon":{"affinity":4}} },
@@ -69,124 +69,124 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_seo_pretty_high": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "stats": {"Seoyeon":{"affinity":2}},
         "next": "date_seo_pretty_high_b"
     },
     "date_seo_pretty_high_b": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "next": "date_seo_pretty_high_2"
     },
     "date_seo_pretty_high_2": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "next": "date_seo_pretty_high_3"
     },
     "date_seo_pretty_high_3": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "next": "date_seo_pretty_high_3_b"
     },
     "date_seo_pretty_high_3_b": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "next": "date_seo_pretty_high_4"
     },
     "date_seo_pretty_high_4": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "next": "date_seo_walk",
         "framing": "close"
     },
     "date_seo_pretty_low": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "stats": {"Seoyeon":{"affinity":2}},
         "next": "date_seo_walk"
     },
     "date_seo_bright": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_date_laugh.webp",
         "next": "date_seo_walk"
     },
     "date_seo_role_trap": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_walk"
     },
     "date_seo_walk": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_duck"
     },
     "date_seo_duck": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_duck_2"
     },
     "date_seo_duck_2": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_duck_3"
     },
     "date_seo_duck_3": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_duck_4"
     },
     "date_seo_duck_4": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_flower_b"
     },
     "date_seo_flower_b": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_flower_2"
     },
     "date_seo_flower_2": {
         "background": "assets/images/background/flower_shop.webp",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_succulent_2",
         "framing": "close"
     },
     "date_seo_succulent_2": {
         "background": "assets/images/background/flower_shop.webp",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_succulent_2_b"
     },
     "date_seo_succulent_2_b": {
         "background": "assets/images/background/flower_shop.webp",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_succulent_3"
     },
     "date_seo_succulent_3": {
-        "background": "assets/images/background/flower_shop.webp",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "background": "assets/images/background/event_seoyeon_succulent.png",
+        "character": null,
         "next": "date_seo_end"
     },
     "date_seo_end": {
         "background": "assets/images/background/flower_shop.webp",
-        "character": "assets/images/characters/seyoun_worried.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "next": "date_seo_end_b",
         "framing": "close"
     },
     "date_seo_end_b": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_end_c",
         "framing": "close"
     },
     "date_seo_end_c": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_date_normal.webp",
         "next": "date_seo_end_d",
         "framing": "close"
     },
     "date_seo_end_d": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/seyoun_shy.png",
+        "character": "assets/images/characters/seyoun_date_shy.webp",
         "next": "pre_confess_minsu",
         "framing": "close"
     },

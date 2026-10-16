@@ -570,6 +570,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "background/event_seoyeon_succulent": {
+    "version": "e9c3c0ae91a97ec164ca70db",
+    "files": [
+      {
+        "path": "assets/images/background/event_seoyeon_succulent.png",
+        "key": "images/c6348d52daa0b6d70a7aa706970554cbf107371af624197bc4eac1048c767391.png",
+        "sha256": "c6348d52daa0b6d70a7aa706970554cbf107371af624197bc4eac1048c767391",
+        "etag": "f00595e3f57ec5476a3afe4fbaaf6e12",
+        "size": 11947098
+      },
+      {
+        "path": "assets/images/background/event_seoyeon_succulent.webp",
+        "key": "images/f1f72189885fccf4ec6050e65f0ebdf45c5b40c0023511b33f3e89c814753041.webp",
+        "sha256": "f1f72189885fccf4ec6050e65f0ebdf45c5b40c0023511b33f3e89c814753041",
+        "etag": "f6d3819353cd107544194eda4b3eafcc",
+        "size": 7640732
+      }
+    ]
+  },
   "background/event_temptation_dain": {
     "version": "ea1f573b313ef7004b352a28",
     "files": [
@@ -624,6 +643,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "9a1a0b7acc77c2aaf999be313f3c3d283f634a3d991dc4c9c35d484f1be629b0",
         "etag": "da44545a56a0f9e12c5f7c9e5b367287",
         "size": 270836
+      }
+    ]
+  },
+  "background/event_yuna_reading": {
+    "version": "f9fe8aae463477345c4cd825",
+    "files": [
+      {
+        "path": "assets/images/background/event_yuna_reading.png",
+        "key": "images/bd7a9215b6bfc453822b68b9d9328a2c7b3b0795e478b141d7a37fca12744af9.png",
+        "sha256": "bd7a9215b6bfc453822b68b9d9328a2c7b3b0795e478b141d7a37fca12744af9",
+        "etag": "8b5750a643f017dce61032cfc9af99f3",
+        "size": 9216106
+      },
+      {
+        "path": "assets/images/background/event_yuna_reading.webp",
+        "key": "images/564e232f7115c643824d05bfdd1bb6178cb13a8bcba5ab0acb6a3b75ce44c252.webp",
+        "sha256": "564e232f7115c643824d05bfdd1bb6178cb13a8bcba5ab0acb6a3b75ce44c252",
+        "etag": "dcd02e25ababc00b95998e5b0a0c399a",
+        "size": 5859280
       }
     ]
   },
@@ -1000,6 +1038,63 @@ export const MEDIA_MANIFEST = {
         "sha256": "58d333731e60952f27873b2eaa5bb39f82a8f1b4403dab5863e90d7d425be0bb",
         "etag": "8b51f00fdd10634d8b5301e4a37db9db",
         "size": 151462
+      }
+    ]
+  },
+  "characters/haeun_sad": {
+    "version": "91bbc1ba21925c266c155c92",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_sad.png",
+        "key": "images/bee0ab5077493f539ce925895183e9a4e57c7e794c496f0a3de6f7c20b98ccdd.png",
+        "sha256": "bee0ab5077493f539ce925895183e9a4e57c7e794c496f0a3de6f7c20b98ccdd",
+        "etag": "298812035f09bb119d42b5cbe0f9d2dd",
+        "size": 6142752
+      },
+      {
+        "path": "assets/images/characters/haeun_sad.webp",
+        "key": "images/337399ed2544352b1f16f515e62204bd0d38d0c23f80348bf40b9f9d2132336b.webp",
+        "sha256": "337399ed2544352b1f16f515e62204bd0d38d0c23f80348bf40b9f9d2132336b",
+        "etag": "4ac000434d460f9c5103c3587b0f88e8",
+        "size": 3871518
+      }
+    ]
+  },
+  "characters/haeun_shy": {
+    "version": "e5c7155323bc5af3b7a5daae",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_shy.png",
+        "key": "images/eb446bfc3cb09b336d229a4ea72930d6be7e9adf956fcc12ceba39a0e8b1c73e.png",
+        "sha256": "eb446bfc3cb09b336d229a4ea72930d6be7e9adf956fcc12ceba39a0e8b1c73e",
+        "etag": "812090a02bf304ed7f21bee405184493",
+        "size": 6179175
+      },
+      {
+        "path": "assets/images/characters/haeun_shy.webp",
+        "key": "images/9634f0afd57dfeb45b9bfb367ec909ac86d6c478a8f12accec4f8700e4ff23d9.webp",
+        "sha256": "9634f0afd57dfeb45b9bfb367ec909ac86d6c478a8f12accec4f8700e4ff23d9",
+        "etag": "b23d933d4893919b43429e37ac9ae78c",
+        "size": 3899576
+      }
+    ]
+  },
+  "characters/haeun_smile": {
+    "version": "9b7beee792e87070936f4822",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_smile.png",
+        "key": "images/41a4b7420cab3f28b7d3de6abb6430c71000f7aaeedf163623a687a75dd6087c.png",
+        "sha256": "41a4b7420cab3f28b7d3de6abb6430c71000f7aaeedf163623a687a75dd6087c",
+        "etag": "b79c1f94b7825b044f99a205d4b8bd81",
+        "size": 6361081
+      },
+      {
+        "path": "assets/images/characters/haeun_smile.webp",
+        "key": "images/eadc1f671fe89f1142cbff1f4284824f7bf176fa64cac133f417a5923c9d7d1d.webp",
+        "sha256": "eadc1f671fe89f1142cbff1f4284824f7bf176fa64cac133f417a5923c9d7d1d",
+        "etag": "2e42987e03b431e482b582dc024d226b",
+        "size": 4018746
       }
     ]
   },
@@ -1431,6 +1526,101 @@ export const MEDIA_MANIFEST = {
         "sha256": "d971e55796be340738bd668a6c21e5882d931a6726799e8f796825b0aaba5a68",
         "etag": "7962f64df8bde045e15e5d25195e18af",
         "size": 832794
+      }
+    ]
+  },
+  "characters/seyoun_date_laugh": {
+    "version": "31d95ad8fde2c145f72672e8",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_date_laugh.png",
+        "key": "images/fee6344ca4a3eac4f2e2abbd36e591353609e07d6815078919f70c28917dfa26.png",
+        "sha256": "fee6344ca4a3eac4f2e2abbd36e591353609e07d6815078919f70c28917dfa26",
+        "etag": "72915f0d791289a84cb931ff3e8f4bd1",
+        "size": 8539083
+      },
+      {
+        "path": "assets/images/characters/seyoun_date_laugh.webp",
+        "key": "images/1d1bbc990b3f77d01b46583f6fd57cf1fa234adbb59f4a96927d865c74ac7f84.webp",
+        "sha256": "1d1bbc990b3f77d01b46583f6fd57cf1fa234adbb59f4a96927d865c74ac7f84",
+        "etag": "241248e1db8781cf5820cf3476e115f3",
+        "size": 5217644
+      }
+    ]
+  },
+  "characters/seyoun_date_normal": {
+    "version": "7d85fb81242f1cb8e7837e7c",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_date_normal.png",
+        "key": "images/fae428958709f9947824269f788546cabba096ce8fa29268129394aff8f74d98.png",
+        "sha256": "fae428958709f9947824269f788546cabba096ce8fa29268129394aff8f74d98",
+        "etag": "a9625dea7e9cb790b4bf1c6f3f3a38da",
+        "size": 9300224
+      },
+      {
+        "path": "assets/images/characters/seyoun_date_normal.webp",
+        "key": "images/fbc3a88199b94769733f1cd843f5e59b44e09e6b154f0f6ad43d0fe5330abfd6.webp",
+        "sha256": "fbc3a88199b94769733f1cd843f5e59b44e09e6b154f0f6ad43d0fe5330abfd6",
+        "etag": "a474b17ff0862736c774c376436cacdc",
+        "size": 5648954
+      }
+    ]
+  },
+  "characters/seyoun_date_sad": {
+    "version": "cb2194a47d625f374c48b10a",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_date_sad.png",
+        "key": "images/c9b4e944ac87752e761945ac40516e429383423aab7e7fc39b9ec1a628743002.png",
+        "sha256": "c9b4e944ac87752e761945ac40516e429383423aab7e7fc39b9ec1a628743002",
+        "etag": "2d557b42a426d73aba1a684ffea0ac8a",
+        "size": 8617684
+      },
+      {
+        "path": "assets/images/characters/seyoun_date_sad.webp",
+        "key": "images/b2de46d6c13c557c18d4cce91ecc20354b2b43e94b40561acf010222961b6d8e.webp",
+        "sha256": "b2de46d6c13c557c18d4cce91ecc20354b2b43e94b40561acf010222961b6d8e",
+        "etag": "7081aca615bddb1205ce2d628bd8642d",
+        "size": 5284642
+      }
+    ]
+  },
+  "characters/seyoun_date_shy": {
+    "version": "5e1f9d76cb9b5ffcdae46cda",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_date_shy.png",
+        "key": "images/11aedb945bd7039c7264fce3a29087daa8daae46e1784b6d7860293043784f8c.png",
+        "sha256": "11aedb945bd7039c7264fce3a29087daa8daae46e1784b6d7860293043784f8c",
+        "etag": "5acfa6f7df992986e7d8475256a22356",
+        "size": 8706142
+      },
+      {
+        "path": "assets/images/characters/seyoun_date_shy.webp",
+        "key": "images/cfc2e9436c524b4624e67f05698e2250a0ee3b74534d65b292b1508b1875f17f.webp",
+        "sha256": "cfc2e9436c524b4624e67f05698e2250a0ee3b74534d65b292b1508b1875f17f",
+        "etag": "be974719f2e1d6f16b051f97e3aefb14",
+        "size": 5313336
+      }
+    ]
+  },
+  "characters/seyoun_date_worried": {
+    "version": "f520ee1c9d83ac83a58919c8",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_date_worried.png",
+        "key": "images/a11995948b307a03123a5fb31159a77f9561acc1eb7fc73d15d51878f75e012e.png",
+        "sha256": "a11995948b307a03123a5fb31159a77f9561acc1eb7fc73d15d51878f75e012e",
+        "etag": "7ca866de912aef8244c6792e62a390df",
+        "size": 8669385
+      },
+      {
+        "path": "assets/images/characters/seyoun_date_worried.webp",
+        "key": "images/00e42ca33a6960f0845174792faabc0e686f69f6212c1309ac242bce7351ad53.webp",
+        "sha256": "00e42ca33a6960f0845174792faabc0e686f69f6212c1309ac242bce7351ad53",
+        "etag": "de808af2346d12810e1476aada3d74bc",
+        "size": 5284550
       }
     ]
   },

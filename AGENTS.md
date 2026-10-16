@@ -34,6 +34,7 @@
 - `affinityRebalanceVersion` 일회성 마이그레이션은 기존 100점 본편·갤러리 기록을 99로 낮추고, 해당 캐릭터의 퍼펙트 완료 표식·퍼펙트 CG·100점 캐릭터 해금을 다시 잠근다. 이미 마이그레이션된 저장에서 새로 달성한 100점은 다시 내리지 않는다.
 
 ## Image Asset Generation (Permanent)
+- All newly generated Cupid backgrounds, including reusable location backgrounds, use a 1:1 square composition at maximum supported quality and native resolution. Preserve existing originals when adapting an asset.
 - 이벤트·엔딩 CG는 사용자가 해당 이미지에 다른 비율을 명시하지 않는 한 1:1 정사각형으로 제작한다. 최고 품질과 최대 기본 해상도를 유지한다.
 - 기존 가로 CG를 정사각형으로 적용할 때는 원본을 별도 보존하고 얼굴과 주요 동작이 남도록 좌우를 자른다. 사용자 요청 없이 새로 생성하거나 축소하지 않는다. 본편과 갤러리 양쪽에서 구도를 확인한다.
 - 새 배경, 이벤트 CG, 캐릭터 이미지 등 생성형 이미지 자산이 필요할 때는 반드시 Higgsfield MCP를 사용한다.

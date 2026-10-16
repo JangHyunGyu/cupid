@@ -2471,6 +2471,7 @@ const haeunGalleryProfiles = {
     }
 };
 for (const [lang, profile] of Object.entries(haeunGalleryProfiles)) {
+    profile.expressions.push('shy', 'smile', 'sad');
     GalleryData.characters[lang].haeun = profile;
     Object.assign(GalleryData.expressions[lang], {
         firm: {"ko":"단호함","en":"Firm","ja":"毅然","es":"Firme","fr":"Ferme","de":"Entschlossen","pt":"Firme","zh":"坚决"}[lang],
@@ -2560,6 +2561,7 @@ for (const lang of Object.keys(GalleryData.cg)) {
 window.GalleryData = GalleryData;
 // Outfit variants share the original expression's unlock threshold and meaning.
 GalleryData.OUTFIT_EXPRESSIONS = Object.freeze({
+    seyoun: { date: ['normal', 'laugh', 'shy', 'worried', 'sad'] },
     yuna: { date: ['normal', 'shy', 'smile', 'sad', 'bored'] },
     dain: { date: ['normal', 'laugh', 'shy', 'sweat', 'angry', 'sad'] },
     nurse: { home: ['normal', 'smile', 'shy', 'sad', 'angry'] }
@@ -2568,18 +2570,21 @@ GalleryData.getExpressionRequirement = function (charId, expression) {
     const baseExpressions = (this.getCharacter('ko', charId)?.expressions || ['normal'])
         .filter(name => !/^(date|home)_/.test(name));
     const base = String(expression).replace(/^(date|home)_/, '');
+    if (charId === 'haeun') {
+        return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, smile: 60, sad: 20 })[base] ?? 100;
+    }
     const index = baseExpressions.indexOf(base);
     if (index < 0) return 100;
     return baseExpressions.length <= 1 ? 0 : Math.round(index / (baseExpressions.length - 1) * 100);
 };
 GalleryData.resolveOutfitExpression = function (scene, rawPath) {
-    const outfit = String(scene?.character || '').match(/\/(yuna|dain|nurse)_(date|home)_[^/]+\.(?:png|webp)$/);
+    const outfit = String(scene?.character || '').match(/\/(seyoun|yuna|dain|nurse)_(date|home)_[^/]+\.(?:png|webp)$/);
     if (!outfit) return rawPath;
     const available = this.OUTFIT_EXPRESSIONS[outfit[1]]?.[outfit[2]];
     if (!available) return rawPath;
     const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
     if (expression === 'bikini' || expression === 'climax') return rawPath;
-    const alternatives = { angry: 'bored', pout: 'sad', worried: 'sad', pain: 'sad', laugh: 'smile', active: 'normal', flushed: 'shy' };
+    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', pain: 'sad', laugh: 'smile', smile: 'laugh', shy2: 'shy', active: 'normal', flushed: 'shy' };
     const chosen = available.includes(expression) ? expression
         : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
     return `assets/images/characters/${outfit[1]}_${outfit[2]}_${chosen}.webp`;
@@ -2603,5 +2608,47 @@ for (const [lang, label] of Object.entries(outfitLabels)) {
                 GalleryData.expressions[lang][id] = `${label[outfit]} · ${GalleryData.getExpressionName(lang, expression)}`;
             }
         }
+    }
+}
+
+const relationshipEventCGs = {
+    event_seoyeon_succulent: {
+        characterId: 'seyoun',
+        file: 'assets/images/background/event_seoyeon_succulent.png',
+        thumbnail: 'assets/images/background/event_seoyeon_succulent.webp',
+        copy: {
+            ko: ['작은 화분 하나', '꽃집에서 다육이 화분을 선물하는 서연', '4일차 서연과의 데이트에서 꽃집 선물 장면 보기'],
+            en: ['A Little Potted Plant', 'Seoyeon offers a potted succulent in the flower shop', 'See the flower-shop gift scene on your Day 4 date with Seoyeon'],
+            ja: ['小さな鉢植え', '花屋で多肉植物の鉢を贈るソヨン', '四日目のソヨンとのデートで、花屋の贈り物の場面を見る'],
+            es: ['Una pequeña maceta', 'Seoyeon regala una suculenta en la floristería', 'Ve la escena del regalo en la floristería durante la cita con Seoyeon del día 4'],
+            fr: ['Un petit pot de verdure', 'Seoyeon offre une plante grasse chez le fleuriste', 'Voir la scène du cadeau chez le fleuriste pendant le rendez-vous avec Seoyeon au jour 4'],
+            de: ['Eine kleine Topfpflanze', 'Seoyeon verschenkt eine Sukkulente im Blumenladen', 'Erlebe die Geschenkszene im Blumenladen beim Date mit Seoyeon an Tag 4'],
+            pt: ['Um pequeno vaso', 'Seoyeon oferece uma suculenta na floricultura', 'Veja a cena do presente na floricultura durante o encontro com Seoyeon no dia 4'],
+            zh: ['一盆小小的绿意', '书妍在花店送出一盆多肉植物', '第四天与书妍约会时，看到花店赠礼的场景']
+        }
+    },
+    event_yuna_reading: {
+        characterId: 'yuna',
+        file: 'assets/images/background/event_yuna_reading.png',
+        thumbnail: 'assets/images/background/event_yuna_reading.webp',
+        copy: {
+            ko: ['나란히 펼친 첫 장', '점심시간 도서관에서 함께 책을 펼치는 유나', '1일차 점심에 유나와 나란히 책을 읽는 장면 보기'],
+            en: ['The First Page Together', 'Yuna opens her book beside you in the library at lunch', 'Read beside Yuna in the library at lunch on Day 1'],
+            ja: ['並んで開く最初のページ', '昼休みの図書館で隣り合って本を開くユナ', '一日目の昼休みに、図書館でユナと並んで本を読む'],
+            es: ['La primera página juntos', 'Yuna abre su libro a tu lado en la biblioteca durante el almuerzo', 'Lee junto a Yuna en la biblioteca durante el almuerzo del día 1'],
+            fr: ['La première page ensemble', 'Yuna ouvre son livre à vos côtés à la bibliothèque à midi', 'Lire aux côtés de Yuna à la bibliothèque au déjeuner du jour 1'],
+            de: ['Die erste Seite zusammen', 'Yuna schlägt mittags neben dir in der Bibliothek ihr Buch auf', 'Lies an Tag 1 in der Mittagspause neben Yuna in der Bibliothek'],
+            pt: ['A primeira página juntos', 'Yuna abre o livro ao seu lado na biblioteca durante o almoço', 'Leia ao lado de Yuna na biblioteca durante o almoço do dia 1'],
+            zh: ['并肩翻开的第一页', '午休时，优娜在图书馆与你并肩翻开书本', '第一天午休时，在图书馆与优娜并肩读书']
+        }
+    }
+};
+for (const [id, event] of Object.entries(relationshipEventCGs)) {
+    for (const [lang, [name, description, unlockHint]] of Object.entries(event.copy)) {
+        GalleryData.cg[lang].push({
+            id, name, description, unlockHint,
+            character: GalleryData.getCharacter(lang, event.characterId).name,
+            file: event.file, thumbnail: event.thumbnail
+        });
     }
 }
