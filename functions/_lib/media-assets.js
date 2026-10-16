@@ -6,6 +6,8 @@ const IMAGE_EXT = ['.webp', '.png', '.jpg', '.jpeg'];
 
 /** Keep in sync with REGISTERED_CG_IDS / gallery-data CG filenames. */
 export const GALLERY_CG_BASES = Object.freeze([
+  'event_seoyeon_succulent',
+  'event_yuna_reading',
   'ending_perfect_haeun',
   'event_haeun_trust',
   'event_haeun_reputation',

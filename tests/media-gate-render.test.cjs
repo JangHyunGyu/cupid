@@ -7,6 +7,22 @@ const { pathToFileURL } = require('url');
 
 const root = path.resolve(__dirname, '..');
 
+test('every collectible CG is grantable by Pages and protected by the client', async () => {
+    const server = await import(pathToFileURL(path.join(root, 'functions/_lib/media-assets.js')).href);
+    const { MEDIA_MANIFEST } = await import(pathToFileURL(path.join(root, 'functions/_lib/media-manifest.js')).href);
+    const context = vm.createContext({ window: {} });
+    vm.runInContext(fs.readFileSync(path.join(root, 'assets/js/gallery-data.js'), 'utf8'), context);
+    const gallery = context.window.GalleryData;
+    const expected = new Set([...gallery.getAllCGIds(), ...gallery.RETIRED_CG_IDS]);
+    assert.deepEqual([...server.GALLERY_CG_BASES].sort(), [...expected].sort());
+    const media = bootMediaGate();
+    for (const id of expected) {
+        assert.equal(server.isProtectedLogicalId(`background/${id}`), true, id);
+        assert.equal(media.isProtectedPath(`assets/images/background/${id}.png`), true, id);
+        assert.ok(MEDIA_MANIFEST[`background/${id}`]?.files.length, id);
+    }
+});
+
 function bootMediaGate(options = {}) {
     const store = new Map();
     const sandbox = {
