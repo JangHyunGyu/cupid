@@ -2562,6 +2562,9 @@ window.GalleryData = GalleryData;
 const exhaustedExpressionLabels = { ko: '탈진', en: 'Exhausted', ja: '疲労困憊', es: 'Agotamiento', fr: 'Épuisement', de: 'Erschöpft', pt: 'Exaustão', zh: '疲惫不堪' };
 for (const [lang, label] of Object.entries(exhaustedExpressionLabels)) {
     GalleryData.expressions[lang].exhausted = label;
+    if (GalleryData.characters[lang]?.haeun && !GalleryData.characters[lang].haeun.expressions.includes('climax')) {
+        GalleryData.characters[lang].haeun.expressions.push('climax');
+    }
     for (const character of Object.values(GalleryData.characters[lang])) {
         if (!character.expressions.includes('exhausted')) character.expressions.push('exhausted');
     }

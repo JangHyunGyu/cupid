@@ -7,8 +7,8 @@ const vm = require('node:vm');
 const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
 
 const root = path.resolve(__dirname, '..');
-const characterIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
-const dedicatedAssetIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse'];
+const characterIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse', 'haeun'];
+const dedicatedAssetIds = ['seyoun', 'yuna', 'dain', 'teacher', 'nurse', 'haeun', 'minsu'];
 const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 
 function read(relativePath) {
@@ -43,7 +43,9 @@ test('climax assets are valid transparent PNG and WebP files', () => {
         assert.equal(png[25], 6, `${charId} PNG must use RGBA color`);
         assert.equal(webp.subarray(0, 4).toString('ascii'), 'RIFF');
         assert.equal(webp.subarray(8, 12).toString('ascii'), 'WEBP');
-        assert.ok(webp.includes(Buffer.from('ALPH')), `${charId} WebP must preserve transparency`);
+        const hasAlpha = webp.includes(Buffer.from('ALPH'))
+            || (webp.subarray(12, 16).toString('ascii') === 'VP8L' && (webp[24] & 0x10) !== 0);
+        assert.ok(hasAlpha, `${charId} WebP must preserve transparency`);
     }
 });
 

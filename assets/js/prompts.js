@@ -480,10 +480,12 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/haeun_shy.png',
         smile: 'assets/images/characters/haeun_smile.png',
         sad: 'assets/images/characters/haeun_sad.png',
+        climax: 'assets/images/characters/haeun_climax.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
         normal: 'assets/images/characters/minsu_normal.png',
+        climax: 'assets/images/characters/minsu_climax.png',
         exhausted: 'assets/images/characters/minsu_exhausted.png'
     })
 });
@@ -2610,5 +2612,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.78';
+const PROMPT_VERSION = '2.7.79';
 window.PROMPT_VERSION = PROMPT_VERSION;

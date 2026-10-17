@@ -151,7 +151,7 @@ test('all locales have Haeun route copy, eight expressions and gallery prompt ca
         for (const [id, scene] of Object.entries(scenes).filter(([id]) => /^day[45]_(?:haeun_|ending_haeun)/.test(id))) {
             if (!scene.routeBeforeRender) assert.ok(copy[id]?.text, `${lang}/${id}`);
         }
-        assert.deepEqual(Array.from(Gallery.characters[lang].haeun.expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'exhausted']);
+        assert.deepEqual(Array.from(Gallery.characters[lang].haeun.expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'exhausted']);
         for (const expression of Gallery.characters[lang].haeun.expressions) assert.ok(fs.existsSync(path.join(root, `assets/images/characters/haeun_${expression}.webp`)));
         let affinity = 100;
         const talk = new context.window.GalleryFreeTalk(lang, { getPlayerName: () => 'TEST_PLAYER', getAffinity: () => affinity, getCurrentAffinity: () => affinity });

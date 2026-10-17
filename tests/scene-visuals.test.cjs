@@ -29,7 +29,7 @@ test('new relationship artwork is connected without changing existing Haeun unlo
         assert.equal(GalleryData.getExpressionRequirement('haeun', expression), requirement);
     }
     for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
-        assert.deepEqual(Array.from(GalleryData.getCharacter(lang, 'haeun').expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'exhausted']);
+        assert.deepEqual(Array.from(GalleryData.getCharacter(lang, 'haeun').expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'exhausted']);
         for (const id of ['event_seoyeon_succulent', 'event_yuna_reading']) {
             const cg = GalleryData.cg[lang].filter(cg => cg.id === id);
             assert.equal(cg.length, 1);
