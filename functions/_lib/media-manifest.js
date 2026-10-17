@@ -2157,21 +2157,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/yuna_climax": {
-    "version": "00da935df51e1cb40ed25f3d",
+    "version": "f1419bced29aa04e2ad031c7",
     "files": [
       {
         "path": "assets/images/characters/yuna_climax.png",
-        "key": "images/825814579dcf5d96dbd67d545ba6607a21971ae75bffb5b40dd8f7b30e5f84bb.png",
-        "sha256": "825814579dcf5d96dbd67d545ba6607a21971ae75bffb5b40dd8f7b30e5f84bb",
-        "etag": "125b8fd9acd4e55aef54351ff44c1933",
-        "size": 1313307
+        "key": "images/b850f400cc900a25be3f37c880055ca9cf04672345f129c93101cb8ca43b9b23.png",
+        "sha256": "b850f400cc900a25be3f37c880055ca9cf04672345f129c93101cb8ca43b9b23",
+        "etag": "543bf7986691852833da27ba2f0b9193",
+        "size": 1574147
       },
       {
         "path": "assets/images/characters/yuna_climax.webp",
-        "key": "images/f8d878170cc63b34ec84d649586466e068f71accd93c39ee4bdbdb7dd04f5643.webp",
-        "sha256": "f8d878170cc63b34ec84d649586466e068f71accd93c39ee4bdbdb7dd04f5643",
-        "etag": "4f884e173a7ecc5a2edfcb8929fd5c65",
-        "size": 155618
+        "key": "images/c95277404be51b650d7522d9555d08c34be53f5bda1003ad4af302c188b519b8.webp",
+        "sha256": "c95277404be51b650d7522d9555d08c34be53f5bda1003ad4af302c188b519b8",
+        "etag": "e40702f066014d9a35ce00501ef375f2",
+        "size": 915122
       }
     ]
   },
