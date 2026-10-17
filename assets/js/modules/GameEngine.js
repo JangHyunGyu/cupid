@@ -909,7 +909,7 @@ class GameEngine {
      */
     async handleNameConfirm() {
         // 📌 입력값 가져와서 앞뒤 공백 제거
-        const name = this.uiManager.playerNameInput.value.trim();
+        const name = this.uiManager.playerNameInput.value.normalize('NFC').trim();
 
         // 📌 이름 유효성 검사 — 페이지 언어에 맞는 문자셋 허용
         //    (이전엔 한글/영문만 허용해서 ja/zh/악센트 이름 전원 거부 → 프리토킹 진입 차단)
@@ -921,16 +921,17 @@ class GameEngine {
 
         let msg = '';
 
-        if (!/^[\p{L}\p{Nd}][\p{L}\p{M}\p{Nd} ]*$/u.test(name)) {
+        if (/[\u1100-\u11ff\u3130-\u318f\ua960-\ua97f\ud7b0-\ud7ff\uffa0-\uffdc]/u.test(name)
+            || !/^[\p{L}\p{Nd}][\p{L}\p{M}\p{Nd} ]*$/u.test(name)) {
             msg = {
-                ko: '이름에 특수문자를 사용할 수 없어요.',
-                en: 'Special characters are not allowed in names.',
-                es: 'No se permiten caracteres especiales en el nombre.',
-                ja: '名前に特殊文字は使用できません。',
-                fr: 'Les caractères spéciaux ne sont pas autorisés dans le nom.',
-                de: 'Sonderzeichen sind im Namen nicht erlaubt.',
-                pt: 'Não são permitidos caracteres especiais no nome.',
-                zh: '名字不能包含特殊字符。'
+                ko: '이름에는 특수문자나 한글 낱자 자음·모음을 사용할 수 없어요.',
+                en: 'Symbols and standalone Korean consonants or vowels are not allowed in names.',
+                es: 'No se permiten símbolos ni consonantes o vocales coreanas sueltas en el nombre.',
+                ja: '名前に記号やハングルの子音・母音だけの文字は使えません。',
+                fr: 'Les symboles et les consonnes ou voyelles coréennes isolées ne sont pas autorisés dans le nom.',
+                de: 'Symbole und einzelne koreanische Konsonanten oder Vokale sind im Namen nicht erlaubt.',
+                pt: 'Não são permitidos símbolos nem consoantes ou vogais coreanas isoladas no nome.',
+                zh: '名字不能包含特殊符号或单独的韩语辅音、元音。'
             }[lang] || 'Special characters are not allowed in names.';
         } else if (hasMixed && lang === 'ko') {
             // 한영 혼합 입력
