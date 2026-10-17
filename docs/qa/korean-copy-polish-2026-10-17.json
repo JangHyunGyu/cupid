@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-17",
+  "skill": "C:/workspace/im-not-ai/codex/skills/humanize-korean/SKILL.md",
+  "quickRules": "C:/workspace/im-not-ai/skills/humanize-korean/references/quick-rules.md",
+  "run_id": "2026-10-17-001-a8f4",
+  "route": "light",
+  "route_source": "route_hint",
+  "scope": "Project-wide Korean copy polish across HTML/manifest/LLMs metadata, gallery unlock hints & UI popups, and Korean scenario dialogue nodes.",
+  "changes": [
+    "index.html: '담임 선생님' / '보건 선생님' 히로인 alt → '담임선생님' / '보건선생님', '보내주세요!' → '보내 주세요!'",
+    "game.html: '정말 시작 화면으로 돌아가시겠습니까?' → '정말 시작 화면으로 돌아갈까요?'",
+    "manifest.json: '주인공이 되어보세요.' → '주인공이 되어 보세요.'",
+    "llms-full.txt: C-11 연결어미(-고) 직후 쉼표 제거 및 '데이터 삭제 시' → '데이터를 지우면', '현재 저장 데이터가 삭제됩니다' → '지금 저장된 진행이 지워집니다'",
+    "assets/js/gallery-data.js: '비터스윗' → '비터스위트', '담임/보건 Bittersweet/트루러브/굿/퍼펙트' → '담임선생님/보건선생님 비터스위트/트루러브/굿/퍼펙트', '어두운 방. 꺼진 핸드폰. 창밖에 가로등.' → '어두운 방, 꺼진 휴대폰, 창밖의 가로등.'",
+    "assets/js/gallery-ui-core.js: '\"${exprName}\" 표정을 해금하려면<br>호감도 ${requiredAffinity}이 필요합니다.' → '\"${exprName}\" 표정을 보려면<br>호감도 ${requiredAffinity} 이상이 필요합니다.' (45 등 모음 종결 숫자 조사 오류 및 관료체 해금 표현 교정)",
+    "assets/js/i18n/ko/day2_2_lunch.json (lunch2_yuna_c1_10): '남들 입을 통해 들었어' → '남들한테 건네 들었어'",
+    "assets/js/i18n/ko/day5_1_morning.json (morning5_sojeong_5): '지나쳤던 일에 대해 정식으로 상담받고 싶습니다' → '지나쳤던 일로 정식 상담을 받고 싶습니다'",
+    "assets/js/i18n/ko/day5_1_morning.json (hidden_nurse_d5_neg): '응급 처치만 진행할게. 개인적인 상담이 필요하면 학교 공식 창구를 통해 신청해 줘.' → '응급 처치만 받을게. 개인적인 상담이 필요하면 학교 공식 창구로 신청해 줘.'",
+    "assets/js/i18n/ko/day5_4_night.json (true_dain_2): '알아버렸으니까, 이제' → '알아 버렸으니까 이제'"
+  ],
+  "gate": {
+    "change_rate": "3.7%",
+    "exit_code": 0,
+    "verdict": "OK — 수렴",
+    "s1_targets": [
+      {
+        "metric": "ending_comma_rate",
+        "z_before": 3.35,
+        "z_after": -0.52,
+        "verdict": "달성"
+      }
+    ],
+    "modality": "OK (deontic 1→1, hedge 4→4, lost 0)",
+    "grade": "B",
+    "self_check": "6/6",
+    "note": "탐지된 번역투·보조용언 띄어쓰기·호칭 불일치·연결어미 쉼표(C-11) 구간만 보수적으로 교정하여 전 축 통과."
+  }
+}

@@ -1091,7 +1091,7 @@ class GalleryData {
             },
             {
                 id: 'ending_bittersweet',
-                unlockHint: "비터스윗 엔딩 도달"
+                unlockHint: "비터스위트 엔딩 도달"
             ,
                 name: '빗속의 이별',
                 character: null,
@@ -1101,7 +1101,7 @@ class GalleryData {
             },
             {
                 id: 'ending_true_teacher',
-                unlockHint: "담임 트루러브 엔딩 도달"
+                unlockHint: "담임선생님 트루러브 엔딩 도달"
             ,
                 name: '다음 주의 약속',
                 character: '담임선생님',
@@ -1111,7 +1111,7 @@ class GalleryData {
             },
             {
                 id: 'ending_true_nurse',
-                unlockHint: "보건 트루러브 엔딩 도달"
+                unlockHint: "보건선생님 트루러브 엔딩 도달"
             ,
                 name: '안전한 곳',
                 character: '보건선생님',
@@ -1135,7 +1135,7 @@ class GalleryData {
             ,
                 name: '혼자 남은 방',
                 character: null,
-                description: '어두운 방. 꺼진 핸드폰. 창밖에 가로등.',
+                description: '어두운 방, 꺼진 휴대폰, 창밖의 가로등.',
                 file: 'assets/images/background/ending_alone.png',
                 thumbnail: 'assets/images/background/ending_alone.png'
             },
@@ -1188,23 +1188,23 @@ class GalleryData {
             { id: 'event_temptation_dain', name: '불 꺼진 체육관', character: '다인', description: '훈련이 끝난 어두운 체육관에서 다인이 공을 낮춘 채 한 걸음 다가온 순간', file: 'assets/images/background/event_temptation_dain.png', thumbnail: 'assets/images/background/event_temptation_dain.png',
                 unlockHint: "4일차에 라이벌 다인의 제안을 받아들이기"
             },
-            { id: 'ending_bittersweet_teacher', name: '돌아온 편지', character: '담임선생님', description: '졸업식 뒤 빈 교실, 담임이 추천서와 편지를 책상 위에 돌려놓고 작별을 택한 순간', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
-                unlockHint: "담임 Bittersweet 엔딩 도달"
+            { id: 'ending_bittersweet_teacher', name: '돌아온 편지', character: '담임선생님', description: '졸업식 뒤 빈 교실, 담임선생님이 추천서와 편지를 책상 위에 돌려놓고 작별을 택한 순간', file: 'assets/images/background/ending_bittersweet_teacher.png', thumbnail: 'assets/images/background/ending_bittersweet_teacher.png',
+                unlockHint: "담임선생님 비터스위트 엔딩 도달"
             },
             { id: 'ending_bittersweet_nurse', name: '상담 종료', character: '보건선생님', description: '상담 기록과 연락처 쪽지가 책상 위로 돌아오고 보건실 문이 닫히기 직전에 남은 마지막 인사', file: 'assets/images/background/ending_bittersweet_nurse.png', thumbnail: 'assets/images/background/ending_bittersweet_nurse.png',
-                unlockHint: "보건 Bittersweet 엔딩 도달"
+                unlockHint: "보건선생님 비터스위트 엔딩 도달"
             },
             { id: 'ending_good_teacher', name: '졸업식의 작별', character: '담임선생님', description: '졸업식 날 추천서와 합평본을 건넨 뒤, 복도 창가에서 졸업생들을 배웅하는 담임선생님', file: 'assets/images/background/ending_good_teacher.png', thumbnail: 'assets/images/background/ending_good_teacher.png',
-                unlockHint: "담임 굿 엔딩 도달"
+                unlockHint: "담임선생님 굿 엔딩 도달"
             },
             { id: 'ending_good_nurse', name: '마지막 확인', character: '보건선생님', description: '졸업식 날 상담 기록을 종결하고 졸업생과 가볍게 인사를 나누는 보건선생님', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png',
-                unlockHint: "보건 굿 엔딩 도달"
+                unlockHint: "보건선생님 굿 엔딩 도달"
             },
             { id: 'ending_perfect_teacher', name: '벚꽃 아래 꽃다발', character: '담임선생님', description: '졸업 4년 뒤 다시 만난 두 성인. 벚꽃 테라스에서 출간 작가가 축하 꽃다발을 건네는 순간', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png',
-                unlockHint: "담임 퍼펙트 엔딩 도달"
+                unlockHint: "담임선생님 퍼펙트 엔딩 도달"
             },
             { id: 'ending_perfect_nurse', name: '함께 맞은 아침', character: '보건선생님', description: '졸업 5년 뒤 다시 만나 몇 달간 약속을 이어 온 두 성인이 함께 맞은 아침', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
-                unlockHint: "보건 퍼펙트 엔딩 도달"
+                unlockHint: "보건선생님 퍼펙트 엔딩 도달"
             }
         ],
         en: [
