@@ -178,3 +178,47 @@ test('the stricter anchor stays non-sexual and age-appropriate for a 17-year-old
     assert.doesNotMatch(anchorBlock, /섹시|야한|스킨십|몸매|sexy|sexual|body|kiss|키스|性感|セクシー/i);
     assert.match(anchorBlock, /연애 접근은 기존 경계 규칙을 따른다/);
 });
+
+const MISUNDERSTANDING_STAGE = {
+    ko: '[하은의 현재 단계: 오해 수습과 동요]',
+    en: "[Haeun's current stage: clearing the misunderstanding and wavering]",
+    ja: '[ハウンの現在の段階：誤解の収拾と動揺]',
+    es: '[Etapa actual de Haeun: aclarar el malentendido y vacilación]',
+    fr: '[Étape actuelle de Haeun : dissiper le malentendu et trouble]',
+    de: '[Haeuns aktuelle Phase: Missverständnis klären und Schwanken]',
+    pt: '[Etapa atual de Haeun: desfazer o mal-entendido e hesitação]',
+    zh: '[夏恩当前阶段：澄清误会与动摇]'
+};
+
+test('Day 5 high-trust misunderstanding group scenes score Haeun like a personal conversation in all eight languages', () => {
+    const { context, state, scenes } = runtime();
+    const p = context.window.FreeTalkSystem.prototype;
+    const partners = ['seoyeon', 'yuna', 'dain', 'teacher', 'nurse'];
+    for (const lang of languages) {
+        const copy = copyOf(lang, 'day5_2_lunch');
+        for (const partner of partners) {
+            const id = `day5_haeun_${partner}_group_talk`;
+            const scene = { ...scenes[id], ...copy[id] };
+            assert.equal(scene.groupMode, 'haeun_misunderstanding', id);
+            assert.ok(scene.personality.includes('+2') && scene.personality.includes('+3'), `${lang}/${id} personality scores Haeun +2/+3 like personal talk`);
+            const { text } = guidanceFor(context, state, scene, id, lang);
+            assert.ok(text.startsWith(MISUNDERSTANDING_STAGE[lang]), `${lang}/${id} starts with misunderstanding stage`);
+            const talk = {
+                stateManager: state,
+                getGameContext: () => '',
+                charNameMap: {},
+                _getLocalizedGroupCharacterName: p._getLocalizedGroupCharacterName,
+                _getLocalizedGroupLocation: p._getLocalizedGroupLocation,
+                _getGroupChoiceState: p._getGroupChoiceState,
+                _getHaeunStageGuidance: p._getHaeunStageGuidance,
+                currentSceneId: id
+            };
+            talk.groupParticipants = p._resolveGroupParticipants.call(talk, scene, lang);
+            const prompt = p._buildCurrentGroupSystemPrompt.call(talk, scene, lang);
+            const [stable, dynamic] = prompt.split(BOUNDARY);
+            assert.ok(dynamic.includes(MISUNDERSTANDING_STAGE[lang]), `${lang}/${id} stage sits after boundary`);
+            assert.ok(!stable.includes(MISUNDERSTANDING_STAGE[lang]), `${lang}/${id} stage never enters stable prefix`);
+        }
+    }
+});
+

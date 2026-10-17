@@ -71,23 +71,70 @@ test('100 dates Haeun; 99 returns to the unchanged ending conditions and does no
     assert.equal(state.getFlag('isDating_Seoyeon'), false);
     assert.equal(state.getFlag('ending_perfect'), true);
 });
-test('the best path has a 127-point budget (33 turns x3, +20 declaration, +8 stage choices), stored cap 100, mostly personal conversation', async () => {
+test('the best path has a 142-point budget (33 turns x3, +15 pre-gate completion bonus, +20 declaration, +8 stage choices), stored cap 100, mostly personal conversation', async () => {
     const { context, state, scenes } = runtime();
     const personal = ['haeun_freetalk', 'day4_haeun_personal', 'day5_haeun_personal', 'day5_haeun_private_1', 'day5_haeun_private_2'];
+    const preGatePersonal = Array.from(context.window.FreeTalkSystem.HAEUN_PRE_GATE_PERSONAL_SCENE_IDS);
+    const bonusPerScene = context.window.FreeTalkSystem.HAEUN_PRE_GATE_COMPLETION_BONUS;
+    assert.deepEqual(preGatePersonal, ['haeun_freetalk', 'day4_haeun_personal', 'day5_haeun_personal']);
+    assert.equal(bonusPerScene, 5);
     assert.equal(personal.reduce((n, id) => n + scenes[id].maxTurns, 0), 25);
     let raw = 0;
     const stageBest = ['haeun_cheer_choice', 'day4_haeun_notice_choice', 'day5_haeun_waver_choice', 'day5_haeun_guilt_choice']
         .reduce((sum, id) => sum + Math.max(...scenes[id].choices.map(c => Number(c.stats.Haeun.affinity))), 0);
     assert.equal(stageBest, 8);
     await fixture.award(state, 'Haeun', stageBest); raw += stageBest;
+    const p = context.window.FreeTalkSystem.prototype;
+    for (const id of preGatePersonal) {
+        const scene = { ...scenes[id], name: 'Haeun' };
+        const talk = {
+            stateManager: state,
+            charNameMap: { Haeun: 'Haeun' },
+            currentSceneId: id,
+            currentMaxTurns: scene.maxTurns,
+            freeTalkTurns: scene.maxTurns - 1,
+            uiManager: { showAffinityChange() {} },
+            galleryManager: { updateMaxAffinity() {}, checkAffinityUnlock() {} },
+            _applyHaeunCompletionBonus: p._applyHaeunCompletionBonus
+        };
+        const early = await state.commitProgressEvent(`talk:${id}:${scene.maxTurns - 2}`, function commitTurn() {
+            return talk._applyHaeunCompletionBonus(scene, id);
+        });
+        assert.equal(early.value.bonus, 0, `${id} must not grant completion bonus before final turn`);
+        talk.freeTalkTurns = scene.maxTurns;
+        const finalTurn = await state.commitProgressEvent(`talk:${id}:${scene.maxTurns - 1}`, function commitTurn() {
+            return talk._applyHaeunCompletionBonus(scene, id);
+        });
+        assert.equal(finalTurn.value.bonus, 5, `${id} grants +5 on completing the final turn`);
+        raw += finalTurn.value.bonus;
+        const duplicate = await state.commitProgressEvent(`talk:${id}:dup`, function commitTurn() {
+            return talk._applyHaeunCompletionBonus(scene, id);
+        });
+        assert.equal(duplicate.value.bonus, 0, `${id} completion bonus never applies twice`);
+    }
+    for (const id of ['day5_haeun_private_1', 'day5_haeun_private_2']) {
+        const scene = { ...scenes[id], name: 'Haeun' };
+        const talk = {
+            stateManager: state,
+            charNameMap: { Haeun: 'Haeun' },
+            currentSceneId: id,
+            currentMaxTurns: scene.maxTurns,
+            freeTalkTurns: scene.maxTurns,
+            _applyHaeunCompletionBonus: p._applyHaeunCompletionBonus
+        };
+        const postGate = await state.commitProgressEvent(`talk:${id}:${scene.maxTurns - 1}`, function commitTurn() {
+            return talk._applyHaeunCompletionBonus(scene, id);
+        });
+        assert.equal(postGate.value.bonus, 0, `${id} post-gate personal talk has no completion bonus`);
+    }
     for (let turn = 0; turn < 33; turn++) {
         if (turn === 20) { await fixture.award(state, 'Haeun', 20); raw += 20; }
         const gain = context.window.CupidFreeTalkCore.normalizeStoryFreeTalkAffinityChange(5, state.getAffinity('Haeun'));
         raw += gain;
         await fixture.award(state, 'Haeun', gain);
     }
-    assert.equal(raw, 127);
-    assert.equal(raw, 33 * 3 + 20 + stageBest, 'flat +3 per turn at every affinity level');
+    assert.equal(raw, 142);
+    assert.equal(raw, 33 * 3 + preGatePersonal.length * bonusPerScene + 20 + stageBest, 'flat +3 per turn plus +15 pre-gate completion bonus');
     assert.equal(state.getAffinity('Haeun'), 100);
     fixture.seed(state, 'Haeun', 45);
     await fixture.award(state, 'Haeun', 20);

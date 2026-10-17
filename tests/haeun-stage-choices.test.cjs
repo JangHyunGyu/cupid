@@ -1,7 +1,7 @@
 'use strict';
 // Haeun's four emotional-stage choice scenes (cheering -> awareness -> avoidance/wavering -> guilt).
 // Rules: plus/minus symmetric, 4 choices. Day 3 cheering stays ±1; the late scenes were raised on 2026-10-06
-// (awareness ±2/±1, wavering ±2/±1, guilt ±3/±2) so the best-choice sum = +8 (Haeun total 127),
+// (awareness ±2/±1, wavering ±2/±1, guilt ±3/±2) so the best-choice sum = +8 (Haeun total 142 with the +15 pre-gate completion bonus),
 // 8-language parity, and scene order following the emotional arc.
 const vm = require('node:vm');
 const fixture = require('./affinity-fixture.cjs');

@@ -55,6 +55,12 @@ const cupidTruncateLatestUserText = CupidFreeTalkCore.truncateLatestUserText;
 const cupidFindLatestUserText = CupidFreeTalkCore.findLatestUserText;
 const GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY = -20;
 const GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX = 3;
+const HAEUN_PRE_GATE_COMPLETION_BONUS = 5;
+const HAEUN_PRE_GATE_PERSONAL_SCENE_IDS = Object.freeze([
+    'haeun_freetalk',
+    'day4_haeun_personal',
+    'day5_haeun_personal'
+]);
 
 class FreeTalkSystem {
     /**
@@ -535,6 +541,16 @@ class FreeTalkSystem {
                 de: "[Haeuns aktuelle Phase: Entscheidung] Haeun versucht zu entscheiden, ob sie zusammenkommen will, ohne ihre Schuldgefühle zu löschen. Sie achtet darauf, ob der Protagonist ihre Schuldgefühle gegenüber {R} ernst nimmt und ihre Gefühle respektiert. Bevor sie sich einig sind, behandelt sie ihn nicht wie einen Partner.",
                 pt: "[Etapa atual de Haeun: decisão] Haeun tenta decidir se quer namorar sem apagar a culpa. Observa se o protagonista leva a sério a culpa dela em relação a {R} e respeita seus sentimentos. Até que combinem, não trata como casal.",
                 zh: "[夏恩当前阶段：决定] 夏恩想在不抹去愧疚的前提下决定要不要交往。她观察主角是否认真对待她对{R}的愧疚、是否尊重她的心意。在达成一致之前，她不会把两人当作恋人。"
+            },
+            misunderstanding: {
+                ko: "[하은의 현재 단계: 오해 수습과 동요] 하은은 주인공을 두둔하다가 {R} 앞에서 말을 멈춘 상태다. 주인공이 {R}에게 건네는 해명이라도 하은은 자기에게 한 말처럼 듣는다. 하은의 affinity는 개인 대화와 똑같이 채점한다. 하은에게 책임을 떠넘기지 않고 성실하게 해명하면 +2, 자신을 두둔하다 난처해진 하은의 입장이나 걱정까지 구체적으로 헤아리면 +3까지 줄 수 있다. 대사가 {R}에게 향했다는 이유만으로 하은의 +2~+3을 아끼지 않는다.",
+                en: "[Haeun's current stage: clearing the misunderstanding and wavering] Haeun stepped in to defend the protagonist and stopped short in front of {R}. Even when the protagonist is explaining to {R}, Haeun hears those words as if spoken to her too. Score Haeun's affinity just like a personal conversation: a sincere explanation that does not shift blame onto Haeun earns +2, and concretely caring for Haeun's awkward position or worry after defending the protagonist earns up to +3. Do not withhold +2 to +3 from Haeun merely because the line was addressed to {R}.",
+                ja: "[ハウンの現在の段階：誤解の収拾と動揺] ハウンは主人公をかばいかけて{R}の前で言葉を止めている。主人公が{R}に向けて弁明する言葉でも、ハウンは自分に向けられた言葉のように聞いている。ハウンのaffinityは1対1の会話と同じ基準で採点する。ハウンに責任を押しつけず誠実に釈明すれば+2、自分をかばって気まずくなったハウンの立場や心配まで具体的に気遣えば最大+3まで与えてよい。台詞が{R}に向けられているという理由だけでハウンの+2〜+3を惜しまない。",
+                es: "[Etapa actual de Haeun: aclarar el malentendido y vacilación] Haeun salió en defensa del protagonista y se calló delante de {R}. Aunque el protagonista se esté explicando ante {R}, Haeun escucha esas palabras como si también fueran para ella. Puntúa la afinidad de Haeun igual que en una conversación personal: una explicación sincera que no le eche la culpa a Haeun da +2, y tener en cuenta de forma concreta su posición incómoda o su preocupación por haberlo defendido da hasta +3. No le niegues +2 o +3 a Haeun solo porque la frase vaya dirigida a {R}.",
+                fr: "[Étape actuelle de Haeun : dissiper le malentendu et trouble] Haeun a pris la défense du protagoniste avant de s’interrompre devant {R}. Même quand le protagoniste s’explique auprès de {R}, Haeun écoute ces paroles comme si elles s’adressaient aussi à elle. Note l’affinité de Haeun exactement comme dans une conversation personnelle : une explication sincère sans rejeter la faute sur Haeun vaut +2, et prendre concrètement soin de sa position délicate ou de son inquiétude après l’avoir défendu vaut jusqu’à +3. Ne retiens pas +2 ou +3 pour Haeun sous prétexte que la réplique s’adresse à {R}.",
+                de: "[Haeuns aktuelle Phase: Missverständnis klären und Schwanken] Haeun hat den Protagonisten verteidigt und ist vor {R} verstummt. Selbst wenn der Protagonist sich gegenüber {R} erklärt, hört Haeun diese Worte, als wären sie auch an sie gerichtet. Bewerte Haeuns Zuneigung genauso wie in einem persönlichen Gespräch: Eine aufrichtige Erklärung, die die Schuld nicht auf Haeun schiebt, bringt +2, und konkretes Eingehen auf Haeuns unangenehme Lage oder ihre Sorge, nachdem sie ihn verteidigt hat, bis zu +3. Halte +2 bis +3 für Haeun nicht nur deshalb zurück, weil die Zeile an {R} gerichtet war.",
+                pt: "[Etapa atual de Haeun: desfazer o mal-entendido e hesitação] Haeun saiu em defesa do protagonista e parou de falar diante de {R}. Mesmo quando o protagonista está se explicando para {R}, Haeun ouve essas palavras como se também fossem para ela. Pontue a afinidade de Haeun exatamente como em uma conversa pessoal: uma explicação sincera que não jogue a culpa em Haeun rende +2, e cuidar de forma concreta da posição delicada ou da preocupação de Haeun por tê-lo defendido rende até +3. Não deixe de dar +2 a +3 para Haeun só porque a fala foi dirigida a {R}.",
+                zh: "[夏恩当前阶段：澄清误会与动摇] 夏恩刚替主角辩解，却在{R}面前停住了话头。就算主角是在向{R}解释，夏恩也会把这些话当作说给自己听。夏恩的affinity按与个人对话相同的标准评分：不把责任推给夏恩、诚恳解释可给+2；具体体谅夏恩因替自己说话而陷入的难堪处境或担心，最多可给+3。不要只因为台词是对{R}说的，就吝惜给夏恩+2到+3。"
             }
         };
         const ANCHOR = {
@@ -571,7 +587,7 @@ class FreeTalkSystem {
             day5_haeun_private_1: routeChosen ? 'guilt' : '',
             day5_haeun_private_2: routeChosen ? 'decide' : ''
         };
-        const stage = stageBySceneId[sceneId] || (scene?.groupMode === 'haeun_switch' ? 'guilt' : '');
+        const stage = stageBySceneId[sceneId] || (scene?.groupMode === 'haeun_switch' ? 'guilt' : scene?.groupMode === 'haeun_misunderstanding' ? 'misunderstanding' : '');
         const parts = [];
         if (stage && STAGES[stage]) parts.push(pick(STAGES[stage]).replace(/\{R\}/g, rivalName));
         // 하은이 말하는 모든 장면(자유 대화·그룹 대화·스위치 그룹·private_1/2)에 같은 호감도 기준을 붙인다.
@@ -1858,6 +1874,17 @@ class FreeTalkSystem {
                     }
                 );
                 if (!displayFallback && !_sceneDialogue.romanticInterlude) this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
+                if (!displayFallback) {
+                    const completionBonus = this._applyHaeunCompletionBonus(scene, requestSceneId);
+                    if (completionBonus?.bonus) {
+                        affinityResult = {
+                            ...affinityResult,
+                            change: (affinityResult?.change ?? 0) + completionBonus.bonus,
+                            completionBonus: completionBonus.bonus,
+                            value: completionBonus.value
+                        };
+                    }
+                }
                 if (forcedSexualViolation === 'rape' || forcedSexualViolation === 'molestation') {
                     this.stateManager.setFlag('forced_sexual_violation', {
                         character: charKey,
@@ -3102,6 +3129,45 @@ class FreeTalkSystem {
     }
 
     /**
+     * 하은 45 게이트 전 개인 대화 3장면(3·4·5일차)을 끝까지 마쳤을 때 +5 완료 보너스를 준다.
+     * 스킵이나 중간 이탈에는 주지 않고, 장면당 한 번만 반영한다.
+     */
+    _applyHaeunCompletionBonus(scene, sceneId = this.currentSceneId) {
+        if (!HAEUN_PRE_GATE_PERSONAL_SCENE_IDS.includes(sceneId)) {
+            return { bonus: 0, value: this.stateManager?.getAffinity?.('Haeun') ?? 0 };
+        }
+        const charKey = (this.charNameMap && scene?.name && this.charNameMap[scene.name]) || scene?.name || 'Haeun';
+        if (charKey !== 'Haeun' || !this.stateManager?.stats?.Haeun || scene?.affinityLocked === true) {
+            return { bonus: 0, value: this.stateManager?.getAffinity?.('Haeun') ?? 0 };
+        }
+        const maxTurns = Number(this.currentMaxTurns || scene?.maxTurns || 0);
+        if (!(maxTurns > 0) || this.freeTalkTurns < maxTurns) {
+            return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
+        }
+        const bonusFlag = `completed_bonus_${sceneId}`;
+        if (this.stateManager.getFlag?.(bonusFlag)) {
+            return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
+        }
+        const talkKey = window.CupidAffinityGate?.commitKey() || '';
+        const talkTurn = Number(talkKey.slice(talkKey.lastIndexOf(':') + 1));
+        const talkAllowed = talkKey.startsWith(`talk:${sceneId}:`)
+            && Number.isInteger(talkTurn) && talkTurn >= 0 && talkTurn < maxTurns
+            && window.CupidAffinityGate?.grant('Haeun', HAEUN_PRE_GATE_COMPLETION_BONUS);
+        if (!talkAllowed) {
+            return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
+        }
+
+        const previousValue = this.stateManager.getAffinity('Haeun');
+        const newValue = this.stateManager.changeAffinity('Haeun', HAEUN_PRE_GATE_COMPLETION_BONUS);
+        const actualBonus = newValue - previousValue;
+        this.stateManager.setFlag?.(bonusFlag, true);
+        if (actualBonus !== 0) this.uiManager?.showAffinityChange?.(actualBonus, 'Haeun');
+        this.galleryManager?.updateMaxAffinity?.('Haeun', newValue);
+        this.galleryManager?.checkAffinityUnlock?.('Haeun', newValue);
+        return { bonus: actualBonus, value: newValue, requestedBonus: HAEUN_PRE_GATE_COMPLETION_BONUS };
+    }
+
+    /**
      * ═══════════════════════════════════════════════════════════════
      * 😊 processExpressionTags - AI 응답에서 표정 태그 처리
      * ═══════════════════════════════════════════════════════════════
@@ -3223,4 +3289,6 @@ class FreeTalkSystem {
     }
 }
 
+FreeTalkSystem.HAEUN_PRE_GATE_COMPLETION_BONUS = HAEUN_PRE_GATE_COMPLETION_BONUS;
+FreeTalkSystem.HAEUN_PRE_GATE_PERSONAL_SCENE_IDS = HAEUN_PRE_GATE_PERSONAL_SCENE_IDS;
 window.FreeTalkSystem = FreeTalkSystem;
