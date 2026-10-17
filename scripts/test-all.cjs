@@ -5,6 +5,7 @@ const path = require('path');
 
 const root = path.resolve(__dirname, '..');
 const commands = [
+    ['node', ['--test', 'tests/player-name.test.cjs']],
     ['node', ['--test', 'tests/school-bridge.test.cjs']],
     ['node', ['--test', 'tests/i18n-loader.test.cjs', 'tests/gallery-loader.test.cjs']],
     ['node', ['--test', 'tests/error-classifier.test.cjs']],

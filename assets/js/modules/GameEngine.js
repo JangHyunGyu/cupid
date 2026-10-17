@@ -921,7 +921,18 @@ class GameEngine {
 
         let msg = '';
 
-        if (hasMixed && lang === 'ko') {
+        if (!/^[\p{L}\p{Nd}][\p{L}\p{M}\p{Nd} ]*$/u.test(name)) {
+            msg = {
+                ko: '이름에 특수문자를 사용할 수 없어요.',
+                en: 'Special characters are not allowed in names.',
+                es: 'No se permiten caracteres especiales en el nombre.',
+                ja: '名前に特殊文字は使用できません。',
+                fr: 'Les caractères spéciaux ne sont pas autorisés dans le nom.',
+                de: 'Sonderzeichen sind im Namen nicht erlaubt.',
+                pt: 'Não são permitidos caracteres especiais no nome.',
+                zh: '名字不能包含特殊字符。'
+            }[lang] || 'Special characters are not allowed in names.';
+        } else if (hasMixed && lang === 'ko') {
             // 한영 혼합 입력
             msg = { es: "Por favor, usa solo coreano o solo inglés. No se permite mezclar.", ja: "名前は日本語（ひらがな・カタカナ・漢字）1〜8文字、または英字1〜12文字で入力してください。", en: "Please use only Korean or only English. Mixing is not allowed.", fr: "Veuillez utiliser uniquement le coréen ou uniquement l'anglais. Le mélange n'est pas autorisé.", de: "Bitte verwende nur Koreanisch oder nur Englisch. Mischen ist nicht erlaubt.", pt: "Use apenas coreano ou apenas inglês. Não é permitido misturar.", zh: "请只使用韩文或只使用英文，不能混用。" }[lang] || "한글과 영문을 섞어서 사용할 수 없습니다.";
         } else if (hasJamo) {
