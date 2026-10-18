@@ -1893,22 +1893,24 @@ class FreeTalkSystem {
                         day: Number(this.stateManager.currentDay) || 1
                     });
                 }
-                requestHistory.push({ role: "assistant",
-                    content: reply,
-                    segments: parsedSegments,
-                    speakerId: charKey,
-                    speakerName: scene.name
-                });
-                if (!displayFallback?.empty) this.galleryManager.incrementFreeTalkCount(charKey);
+                // 대화 기록 저장 (로컬)
+                this._assertRequestContext(requestContext, data);
                 if (displayFallback?.empty) {
                     this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                     if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
+                    this._rollbackRequestHistory(requestContext);
+                    this.stateManager.setChatMemory(charKey, requestHistory);
+                } else {
+                    requestHistory.push({ role: "assistant",
+                        content: reply,
+                        segments: parsedSegments,
+                        speakerId: charKey,
+                        speakerName: scene.name
+                    });
+                    this.galleryManager.incrementFreeTalkCount(charKey);
+                    this.stateManager.setChatMemory(charKey, requestHistory);
+                    this._commitFreeTalkCheckpoint(requestHistory.at(-1));
                 }
-
-                // 대화 기록 저장 (로컬)
-                this._assertRequestContext(requestContext, data);
-                this.stateManager.setChatMemory(charKey, requestHistory);
-                this._commitFreeTalkCheckpoint(requestHistory.at(-1));
                 };
                 const turnResult = this.stateManager.commitProgressEvent && !displayFallback?.empty
                     ? await this.stateManager.commitProgressEvent(`talk:${requestSceneId}:${requestContext.freeTalkTurnsBefore}`, commitTurn,
@@ -2251,7 +2253,9 @@ class FreeTalkSystem {
             conversation.affinityResult = affinityResult;
         }
             const last = rendered.at(-1);
-            this._commitFreeTalkCheckpoint({ content: last.text, speakerId: last.speakerId, speakerName: last.speakerName, segments: last.segments });
+            if (!displayFallback?.empty && last) {
+                this._commitFreeTalkCheckpoint({ content: last.text, speakerId: last.speakerId, speakerName: last.speakerName, segments: last.segments });
+            }
         };
         if (displayFallback?.empty) {
             this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
@@ -2503,6 +2507,7 @@ class FreeTalkSystem {
             this._clearThinkingMessage();
             document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.remove('thinking'));
             this.uiManager.dialogueBox.classList.remove('thinking-box');
+            const displayFallback = CupidFreeTalkCore.getAiDisplayFallbackInfo(reply);
             const rendered = await this._renderGroupConversations(
                 conversations,
                 requestContext,
@@ -2510,25 +2515,11 @@ class FreeTalkSystem {
                 lang,
                 scene,
                 streamingPreview,
-                CupidFreeTalkCore.getAiDisplayFallbackInfo(reply)
+                displayFallback
             );
             streamingPreview = null;
             this._assertRequestContext(requestContext, data);
 
-            const transcript = rendered
-                .map(item => `${item.speakerName}: ${item.text}`)
-                .join('\n\n');
-            requestHistory.push({
-                role: 'assistant',
-                content: transcript,
-                speakerStates: rendered.map(item => ({
-                    speakerId: item.speakerId,
-                    speakerName: item.speakerName,
-                    content: item.text,
-                    segments: item.segments
-                }))
-            });
-            this.stateManager.setChatMemory(groupKey, requestHistory);
             const conversationDay = window.resolveCupidConversationDay?.(
                 this.stateManager.currentDay,
                 requestSceneId
@@ -2541,17 +2532,36 @@ class FreeTalkSystem {
                 affinityCurrent: item.affinityResult?.value,
                 renderReceipt: item.renderReceipt
             }));
-            this.stateManager.addGroupConversationMemory?.({
-                turnId: lastTurnMeta?.turnId || '',
-                sessionId: requestSceneId || '',
-                day: conversationDay,
-                participants: this.groupParticipants,
-                playerName: this.stateManager.playerName || '',
-                userContent: finalContent,
-                assistantMessages
-            });
-            const lastSpeaker = rendered.at(-1);
-            this._commitFreeTalkCheckpoint({ content: lastSpeaker.text, speakerId: lastSpeaker.speakerId, speakerName: lastSpeaker.speakerName, segments: lastSpeaker.segments });
+            if (displayFallback?.empty) {
+                this._rollbackRequestHistory(requestContext);
+                this.stateManager.setChatMemory(groupKey, requestHistory);
+            } else {
+                const transcript = rendered
+                    .map(item => `${item.speakerName}: ${item.text}`)
+                    .join('\n\n');
+                requestHistory.push({
+                    role: 'assistant',
+                    content: transcript,
+                    speakerStates: rendered.map(item => ({
+                        speakerId: item.speakerId,
+                        speakerName: item.speakerName,
+                        content: item.text,
+                        segments: item.segments
+                    }))
+                });
+                this.stateManager.setChatMemory(groupKey, requestHistory);
+                this.stateManager.addGroupConversationMemory?.({
+                    turnId: lastTurnMeta?.turnId || '',
+                    sessionId: requestSceneId || '',
+                    day: conversationDay,
+                    participants: this.groupParticipants,
+                    playerName: this.stateManager.playerName || '',
+                    userContent: finalContent,
+                    assistantMessages
+                });
+                const lastSpeaker = rendered.at(-1);
+                this._commitFreeTalkCheckpoint({ content: lastSpeaker.text, speakerId: lastSpeaker.speakerId, speakerName: lastSpeaker.speakerName, segments: lastSpeaker.segments });
+            }
             window.saveGameState?.();
 
             if (typeof window.saveCupidGroupChatLog === 'function') {
@@ -2684,7 +2694,11 @@ class FreeTalkSystem {
     _buildWindowedHistory(history = this.freeTalkHistory, charKey = this.currentCharKey) {
         if (!Array.isArray(history) || history.length === 0) return [];
         this.stateManager.clearChatPromptEpoch?.(charKey);
-        return history.slice();
+        return history.filter(msg => {
+            if (!msg || msg.role !== 'assistant') return true;
+            if (msg.displayFallback?.empty === true) return false;
+            return String(msg.content || '').trim() !== '...';
+        });
     }
 
     _buildInWorldUserRoleBlock(messages) {

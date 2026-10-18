@@ -1293,18 +1293,21 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 }
             );
             if (!displayFallback) this.progress?.setRelationshipAftermath?.(requestCharId, nextAftermath);
-            requestHistory.push({
-                role: 'assistant',
-                content: displayText,
-                segments: displaySegments,
-                speakerId: requestCharId,
-                speakerName: charName
-            });
-
-            // 프리토킹 횟수 증가
-            if (!displayFallback?.empty) this._incrementFreeTalkCount(requestCharId);
-
             this._assertRequestContext(requestContext, data);
+            if (displayFallback?.empty) {
+                this._rollbackRequestHistory(requestContext);
+            } else {
+                requestHistory.push({
+                    role: 'assistant',
+                    content: displayText,
+                    segments: displaySegments,
+                    speakerId: requestCharId,
+                    speakerName: charName
+                });
+
+                // 프리토킹 횟수 증가
+                this._incrementFreeTalkCount(requestCharId);
+            }
             this._saveMemory(requestCharId, requestHistory);
 
             // D1 chat-logs 저장 (백업 뷰어용, 비동기 fire-and-forget)
@@ -2604,18 +2607,23 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
 
     _buildWindowedHistory(history = this.chatHistory, charId = this.currentCharId) {
         if (!Array.isArray(history) || history.length === 0) return [];
+        const cleanHistory = history.filter(msg => {
+            if (!msg || msg.role !== 'assistant') return true;
+            if (msg.displayFallback?.empty === true) return false;
+            return String(msg.content || '').trim() !== '...';
+        });
         if (typeof window.buildCupidPromptEpoch !== 'function') {
-            const sysMsg = history[0];
+            const sysMsg = cleanHistory[0];
             if (!sysMsg || sysMsg.role !== 'system') {
-                return history.slice(-this.HISTORY_WINDOW);
+                return cleanHistory.slice(-this.HISTORY_WINDOW);
             }
-            const rest = history.slice(1);
+            const rest = cleanHistory.slice(1);
             return rest.length <= this.HISTORY_WINDOW
-                ? history
+                ? cleanHistory
                 : [sysMsg, ...rest.slice(-this.HISTORY_WINDOW)];
         }
 
-        const result = window.buildCupidPromptEpoch(history, {
+        const result = window.buildCupidPromptEpoch(cleanHistory, {
             state: this._loadPromptEpochState(charId),
             maxMessages: this.HISTORY_WINDOW,
             retainMessages: 3,
