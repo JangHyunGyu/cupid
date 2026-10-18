@@ -17,6 +17,9 @@ const cases = [
     ['TypeError', 'Unexpected failure', '', 'chrome-extension://abc/content.js', 'external'],
     ['TypeError', 'Unexpected failure', '', 'https://ssl.pstatic.net/melona/libs/gfp-nac-module/synchronizer.js', 'external'],
     ['TypeError', 'Unexpected failure', '', 'https://static.cloudflareinsights.com/beacon.min.js', 'external'],
+    ['TypeError', "Cannot read properties of undefined (reading 'toLowerCase')", 'at handleKey (https://rg96.z5.web.core.windows.net/js/chrome.js:2439:19)\nat Object.apply (https://rg96.z5.web.core.windows.net/assets/app.js:4:1346)', 'https://rg96.z5.web.core.windows.net/js/chrome.js', 'external'],
+    ['TypeError', 'Unexpected failure', 'at /assets/js/modules/GameEngine.js:10\nat Object.apply (https://rg96.z5.web.core.windows.net/assets/app.js:4:1346)', '/assets/js/modules/GameEngine.js', 'app'],
+    ['TypeError', 'Unexpected failure', 'at handleKey (https://cupid.archerlab.dev/js/chrome.js:10)', 'https://cupid.archerlab.dev/js/chrome.js', 'app'],
     ['ResourceError', 'Script failed', '', '/assets/js/modules/GameEngine.js', 'network'],
     ['TypeError', 'Failed to fetch', 'at /assets/js/modules/GameEngine.js:1', '', 'network'],
     ['SecurityPolicyViolation', 'Blocked by CSP', '', '/game.html', 'security']

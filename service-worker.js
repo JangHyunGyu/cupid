@@ -23,6 +23,8 @@
             && isExpectedTransientNetworkError({ name: errorName, message: msg })) return 'noise';
         if (!msg || msg === 'Script error.' && !trace || /ResizeObserver loop/.test(msg)) return 'noise';
         if (/chrome-extension:|moz-extension:|safari-extension:|safari-web-extension:|webkit-masked-url:\/\/hidden/i.test(text)) return 'external';
+        // Injected browser wrappers can use ordinary HTTPS URLs instead of extension URLs.
+        if (!appStack && /https?:\/\/[^/\s)]+\.z\d+\.web\.core\.windows\.net\/(?:js\/chrome\.js|assets\/app\.js)(?:[?:\s)]|$)/i.test(trace + '\n' + src)) return 'external';
         if (/googletagmanager|google-analytics|gtag\/js|cdn\.jsdelivr\.net|wcs\.pstatic\.net\/wcslog\.js|ssl\.pstatic\.net\/melona\/libs\/gfp-nac-module\/synchronizer\.js|static\.cloudflareinsights\.com\/beacon\.min\.js/i.test(text)) return 'external';
         if (type === 'UnhandledRejection') {
             var rejection = msg.replace(/^\[app:UnhandledRejection\]\s*/i, '').trim();
@@ -56,7 +58,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.259';
+const CACHE_VERSION = 'cupid-v3.3.260';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 // Protected images carry their own content hash. App-only releases retain them.

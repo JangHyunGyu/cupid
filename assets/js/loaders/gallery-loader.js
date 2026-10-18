@@ -23,6 +23,8 @@
             && isExpectedTransientNetworkError({ name: errorName, message: msg })) return 'noise';
         if (!msg || msg === 'Script error.' && !trace || /ResizeObserver loop/.test(msg)) return 'noise';
         if (/chrome-extension:|moz-extension:|safari-extension:|safari-web-extension:|webkit-masked-url:\/\/hidden/i.test(text)) return 'external';
+        // Injected browser wrappers can use ordinary HTTPS URLs instead of extension URLs.
+        if (!appStack && /https?:\/\/[^/\s)]+\.z\d+\.web\.core\.windows\.net\/(?:js\/chrome\.js|assets\/app\.js)(?:[?:\s)]|$)/i.test(trace + '\n' + src)) return 'external';
         if (/googletagmanager|google-analytics|gtag\/js|cdn\.jsdelivr\.net|wcs\.pstatic\.net\/wcslog\.js|ssl\.pstatic\.net\/melona\/libs\/gfp-nac-module\/synchronizer\.js|static\.cloudflareinsights\.com\/beacon\.min\.js/i.test(text)) return 'external';
         if (type === 'UnhandledRejection') {
             var rejection = msg.replace(/^\[app:UnhandledRejection\]\s*/i, '').trim();
@@ -215,7 +217,7 @@ window.__cupidShowGalleryLoadError = function() {
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
     if (window.CupidGalleryLoaderReady) return;
     const basePath = 'assets/js/';
-    const version = '2.9.340';
+    const version = '2.9.341';
     const LOAD_RETRIES = 3;
     const recoveryKey = 'cupid-gallery-load-recovery:' + window.location.pathname;
 
