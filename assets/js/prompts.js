@@ -422,6 +422,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/yuna_shy.png',
         angry: 'assets/images/characters/yuna_angry.png',
         sad: 'assets/images/characters/yuna_sad.png',
+        cry: 'assets/images/characters/yuna_cry.png',
         worried: 'assets/images/characters/yuna_worried.png',
         bored: 'assets/images/characters/yuna_bored.png',
         flushed: 'assets/images/characters/yuna_flushed.png',
@@ -436,6 +437,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/dain_shy.png',
         angry: 'assets/images/characters/dain_angry.png',
         sad: 'assets/images/characters/dain_sad.png',
+        cry: 'assets/images/characters/dain_cry.png',
         pain: 'assets/images/characters/dain_pain.png',
         laugh: 'assets/images/characters/dain_laugh.png',
         pout: 'assets/images/characters/dain_pout.png',
@@ -452,6 +454,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/teacher_shy.png',
         angry: 'assets/images/characters/teacher_angry.png',
         sad: 'assets/images/characters/teacher_sad.png',
+        cry: 'assets/images/characters/teacher_cry.png',
         worried: 'assets/images/characters/teacher_worried.png',
         flushed: 'assets/images/characters/teacher_flushed.png',
         climax: 'assets/images/characters/teacher_climax.png',
@@ -469,6 +472,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         climax: 'assets/images/characters/nurse_climax.png',
         smile: 'assets/images/characters/nurse_smile.png',
         sad: 'assets/images/characters/nurse_sad.png',
+        cry: 'assets/images/characters/nurse_cry.png',
         bikini: 'assets/images/characters/nurse_bikini.png',
         exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
@@ -480,11 +484,13 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         shy: 'assets/images/characters/haeun_shy.png',
         smile: 'assets/images/characters/haeun_smile.png',
         sad: 'assets/images/characters/haeun_sad.png',
+        cry: 'assets/images/characters/haeun_cry.png',
         climax: 'assets/images/characters/haeun_climax.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
         normal: 'assets/images/characters/minsu_normal.png',
+        cry: 'assets/images/characters/minsu_cry.png',
         climax: 'assets/images/characters/minsu_climax.png',
         exhausted: 'assets/images/characters/minsu_exhausted.png'
     })
@@ -2612,5 +2618,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.79';
+const PROMPT_VERSION = '2.7.80';
 window.PROMPT_VERSION = PROMPT_VERSION;

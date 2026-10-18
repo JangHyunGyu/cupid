@@ -145,8 +145,8 @@ function assertCommonKoreanPrompt(prompt, label) {
         assert(prompt.includes(block), `${label} is missing ${block}`);
     }
     const stablePrompt = splitCacheBoundary(prompt, label).stable;
-    // Reserve room for narrator register without shortening character canon.
-    const stableBudget = label.startsWith('main/') ? 4325 : 4075;
+    // Reserve room for narrator register and cry expression enum without shortening character canon.
+    const stableBudget = label.startsWith('main/') ? 4335 : 4085;
     assert(stablePrompt.length <= stableBudget,
         `${label} stable prompt exceeded the ${stableBudget}-character input budget (${stablePrompt.length})`);
     for (const rule of REQUIRED_NATURAL_KOREAN_RULES) {

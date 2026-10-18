@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.69';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.70';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
@@ -123,11 +123,11 @@ class GalleryFreeTalk {
         // 캐릭터별 표정 매핑
         this.CHAR_EXPRESSIONS = {
             seyoun: ['normal', 'shy', 'shy2', 'pout', 'angry', 'cry', 'laugh', 'worried', 'sad', 'flushed', 'climax'],
-            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'bored', 'flushed', 'climax', 'worried', 'laugh', 'pout'],
-            dain: ['normal', 'shy', 'angry', 'laugh', 'sad', 'pout', 'flushed', 'climax'],
-            teacher: ['normal', 'angry', 'shy', 'sad', 'smile', 'flushed', 'climax', 'worried'],
-            nurse: ['normal', 'angry', 'shy', 'flushed', 'climax', 'worried', 'smile', 'sad'],
-            haeun: ['normal', 'worried', 'firm', 'relieved', 'climax']
+            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'cry', 'bored', 'flushed', 'climax', 'worried', 'laugh', 'pout'],
+            dain: ['normal', 'shy', 'angry', 'laugh', 'sad', 'cry', 'pout', 'flushed', 'climax'],
+            teacher: ['normal', 'angry', 'shy', 'sad', 'cry', 'smile', 'flushed', 'climax', 'worried'],
+            nurse: ['normal', 'angry', 'shy', 'flushed', 'climax', 'worried', 'smile', 'sad', 'cry'],
+            haeun: ['normal', 'worried', 'firm', 'relieved', 'cry', 'climax']
         };
 
         // 캐릭터별 연인 모드 성격 프롬프트 (7개 언어)

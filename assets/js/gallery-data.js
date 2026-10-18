@@ -2566,6 +2566,7 @@ for (const [lang, label] of Object.entries(exhaustedExpressionLabels)) {
         GalleryData.characters[lang].haeun.expressions.push('climax');
     }
     for (const character of Object.values(GalleryData.characters[lang])) {
+        if (!character.expressions.includes('cry')) character.expressions.push('cry');
         if (!character.expressions.includes('exhausted')) character.expressions.push('exhausted');
     }
 }
@@ -2582,7 +2583,7 @@ GalleryData.getExpressionRequirement = function (charId, expression) {
         .filter(name => name !== 'exhausted' && !/^(date|home)_/.test(name));
     const base = String(expression).replace(/^(date|home)_/, '');
     if (charId === 'haeun') {
-        return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, smile: 60, sad: 20 })[base] ?? 100;
+        return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, smile: 60, sad: 20, cry: 20 })[base] ?? 100;
     }
     const index = baseExpressions.indexOf(base);
     if (index < 0) return 100;
@@ -2595,7 +2596,7 @@ GalleryData.resolveOutfitExpression = function (scene, rawPath) {
     if (!available) return rawPath;
     const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
     if (expression === 'bikini' || expression === 'climax' || expression === 'exhausted') return rawPath;
-    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', pain: 'sad', laugh: 'smile', smile: 'laugh', shy2: 'shy', active: 'normal', flushed: 'shy' };
+    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', shy2: 'shy', active: 'normal', flushed: 'shy' };
     const chosen = available.includes(expression) ? expression
         : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
     return `assets/images/characters/${outfit[1]}_${outfit[2]}_${chosen}.webp`;
