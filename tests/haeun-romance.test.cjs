@@ -142,7 +142,7 @@ test('the best path has a 142-point budget (33 turns x3, +15 pre-gate completion
     assert.equal(state.getAffinity('Haeun'), 100);
     for (const id of personal) assert.equal(scenes[id].stats, undefined);
 });
-test('all locales have Haeun route copy, eight expressions and gallery prompt cache isolation', async () => {
+test('all locales have Haeun route copy, registered expressions and gallery prompt cache isolation', async () => {
     const { context, scenes } = runtime();
     const Gallery = context.window.GalleryData;
     assert.equal(Gallery.resolveEndingId('day5_ending_haeun'), 'perfect_haeun');
@@ -151,7 +151,7 @@ test('all locales have Haeun route copy, eight expressions and gallery prompt ca
         for (const [id, scene] of Object.entries(scenes).filter(([id]) => /^day[45]_(?:haeun_|ending_haeun)/.test(id))) {
             if (!scene.routeBeforeRender) assert.ok(copy[id]?.text, `${lang}/${id}`);
         }
-        assert.deepEqual(Array.from(Gallery.characters[lang].haeun.expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'exhausted']);
+        assert.deepEqual(Array.from(Gallery.characters[lang].haeun.expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'cry', 'exhausted']);
         for (const expression of Gallery.characters[lang].haeun.expressions) assert.ok(fs.existsSync(path.join(root, `assets/images/characters/haeun_${expression}.webp`)));
         let affinity = 100;
         const talk = new context.window.GalleryFreeTalk(lang, { getPlayerName: () => 'TEST_PLAYER', getAffinity: () => affinity, getCurrentAffinity: () => affinity });
