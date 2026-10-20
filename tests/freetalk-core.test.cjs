@@ -1071,7 +1071,17 @@ test('main story keeps every character message for the current run', () => {
     const builderStart = freeTalk.indexOf('    _buildWindowedHistory(');
     const builderEnd = freeTalk.indexOf('    _buildInWorldUserRoleBlock(', builderStart);
     const builder = freeTalk.slice(builderStart, builderEnd);
-    assert.match(builder, /return history\.slice\(\);/);
+    const historyBuilder = vm.runInNewContext(`({${builder}})`);
+    const remembered = Array.from(state.getChatMemory('Seoyeon'));
+    historyBuilder.stateManager = { clearChatPromptEpoch() {} };
+    const promptHistory = historyBuilder._buildWindowedHistory([
+        ...remembered,
+        { role: 'assistant', content: '...', displayFallback: { empty: true } },
+        { role: 'assistant', content: '...' },
+        { role: 'user', content: '...' }
+    ], 'Seoyeon');
+    assert.deepEqual(Array.from(promptHistory), [...remembered, { role: 'user', content: '...' }]);
+    assert.equal(remembered.length, 36);
     assert.doesNotMatch(builder, /HISTORY_WINDOW|buildCupidPromptEpoch|slice\(-/);
 
     const latestStart = freeTalk.indexOf('    _forceLatestUserMessageLast(');
