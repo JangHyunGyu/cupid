@@ -928,21 +928,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_pain": {
-    "version": "3b8a76bfcebf90a38e5fd6fc",
+    "version": "3098b02efabd0d90966d76f3",
     "files": [
       {
         "path": "assets/images/characters/dain_pain.png",
-        "key": "images/809a022e48b12f20efad628da6d61e53d9134fc4456e8c146a8cc6e2d84a5205.png",
-        "sha256": "809a022e48b12f20efad628da6d61e53d9134fc4456e8c146a8cc6e2d84a5205",
-        "etag": "76be008164e478c474d11afd0b933cc8",
-        "size": 2085228
+        "key": "images/87c696a4d523a9e029b06a96ed0d2f8466f428c492f27c7be52cc6dcc0291ca8.png",
+        "sha256": "87c696a4d523a9e029b06a96ed0d2f8466f428c492f27c7be52cc6dcc0291ca8",
+        "etag": "a8106d9085171a9e9011a715f2035f7e",
+        "size": 1953353
       },
       {
         "path": "assets/images/characters/dain_pain.webp",
-        "key": "images/c1243f1cbb0e0d5eb1adff874110ce1bcf1d5f4e3c3282aa33510d6b1dfef672.webp",
-        "sha256": "c1243f1cbb0e0d5eb1adff874110ce1bcf1d5f4e3c3282aa33510d6b1dfef672",
-        "etag": "a40d9e9abb7ea49ebb251561ab51f231",
-        "size": 845428
+        "key": "images/144299ad72d05e71f41cb62204c574fc594786ae07ae8f25a9b1ad33fa008c7b.webp",
+        "sha256": "144299ad72d05e71f41cb62204c574fc594786ae07ae8f25a9b1ad33fa008c7b",
+        "etag": "ff582575c74dc2c0405376278155891d",
+        "size": 847408
       }
     ]
   },
@@ -1118,21 +1118,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/haeun_pain": {
-    "version": "e569293a7309a9cc233646b2",
+    "version": "c07ac5697bcf2e96b23e6dc3",
     "files": [
       {
         "path": "assets/images/characters/haeun_pain.png",
-        "key": "images/257ce7db80bda4b9c540b95bd60cd70f07edd44cb2538412804ecc0506c51e5e.png",
-        "sha256": "257ce7db80bda4b9c540b95bd60cd70f07edd44cb2538412804ecc0506c51e5e",
-        "etag": "6b674bab0518cc03f51456b7a540fd9c",
-        "size": 1718049
+        "key": "images/c5865740369b0b93718bf206076b8ef4836c76aaa525e6ac6cd1e0ecf7b04ea3.png",
+        "sha256": "c5865740369b0b93718bf206076b8ef4836c76aaa525e6ac6cd1e0ecf7b04ea3",
+        "etag": "59ea9c87ab470c2e606ddab1472d511a",
+        "size": 1593436
       },
       {
         "path": "assets/images/characters/haeun_pain.webp",
-        "key": "images/77b9c6749dc2c237e04bce0da677c76e49b0fd1e375c415066365e6ce6a68d17.webp",
-        "sha256": "77b9c6749dc2c237e04bce0da677c76e49b0fd1e375c415066365e6ce6a68d17",
-        "etag": "cbb5837ebc6b4f2020d115a701cde7a2",
-        "size": 696658
+        "key": "images/80ef12558a981c791e5ca86f0b1d6bf8d6f20147976c81ea1bf60e0b41b92400.webp",
+        "sha256": "80ef12558a981c791e5ca86f0b1d6bf8d6f20147976c81ea1bf60e0b41b92400",
+        "etag": "a15b60e470ebd2a9aa855e5b2a6e40ea",
+        "size": 701968
       }
     ]
   },
@@ -1332,21 +1332,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/minsu_pain": {
-    "version": "1d22fe8cb8bdca4b2d2925a7",
+    "version": "3d0f0830ad6a13797883f726",
     "files": [
       {
         "path": "assets/images/characters/minsu_pain.png",
-        "key": "images/b51069143aca55331c109594454c88ac3fa42423aeb86789e46c26ff79026109.png",
-        "sha256": "b51069143aca55331c109594454c88ac3fa42423aeb86789e46c26ff79026109",
-        "etag": "0b5d1b62c4c70fbe2f2722da827147cb",
-        "size": 2145180
+        "key": "images/563175ab351314b1d5de545acd585f3bef6b213c9dc4114197ccb7d99bce335d.png",
+        "sha256": "563175ab351314b1d5de545acd585f3bef6b213c9dc4114197ccb7d99bce335d",
+        "etag": "ef06d7e26f72e035283ca021101ff315",
+        "size": 2051035
       },
       {
         "path": "assets/images/characters/minsu_pain.webp",
-        "key": "images/572063014020394e6b8a9907ca57895214716ced1ac32ba42790b7ee966ee182.webp",
-        "sha256": "572063014020394e6b8a9907ca57895214716ced1ac32ba42790b7ee966ee182",
-        "etag": "d45fdbe6620a16c09c0af990602905b0",
-        "size": 894784
+        "key": "images/09eee62e5aef609d7e1df4260c7a0dd72cd31571aca0e9eaa101d2e7ea8b9c4c.webp",
+        "sha256": "09eee62e5aef609d7e1df4260c7a0dd72cd31571aca0e9eaa101d2e7ea8b9c4c",
+        "etag": "0d57c6e042975245d60467ae2e263694",
+        "size": 896544
       }
     ]
   },
@@ -1582,21 +1582,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/nurse_pain": {
-    "version": "b4efb7294fe9f90b388cff60",
+    "version": "eb95b9f937b404f7f26f81c0",
     "files": [
       {
         "path": "assets/images/characters/nurse_pain.png",
-        "key": "images/e2002e56f0ceb07f9ce2dadc9d5d9f9a250aec19f913a09ae17ffb22e2475970.png",
-        "sha256": "e2002e56f0ceb07f9ce2dadc9d5d9f9a250aec19f913a09ae17ffb22e2475970",
-        "etag": "ad018e9eb2be5b01c2a7014cd7e1e3cd",
-        "size": 2495347
+        "key": "images/a57c4a46ea22bfa51f109fb008a3734ba74039bdf9abc599d01ec002e8dacb03.png",
+        "sha256": "a57c4a46ea22bfa51f109fb008a3734ba74039bdf9abc599d01ec002e8dacb03",
+        "etag": "e625648e5dd0a7c01b0aeb9c3c0a1572",
+        "size": 2362015
       },
       {
         "path": "assets/images/characters/nurse_pain.webp",
-        "key": "images/01993073c3deabcc25ab559d1e7ff3bf824a4ebb70b5897c2abde1126d76b4b0.webp",
-        "sha256": "01993073c3deabcc25ab559d1e7ff3bf824a4ebb70b5897c2abde1126d76b4b0",
-        "etag": "cd8d1408315462594ca755430e26213c",
-        "size": 1014432
+        "key": "images/293594713cef69b100c8338534b9feb5b6a59706cb9eef031e83587d3cf33df5.webp",
+        "sha256": "293594713cef69b100c8338534b9feb5b6a59706cb9eef031e83587d3cf33df5",
+        "etag": "3bad92a206ea827eda9df45b0e068e01",
+        "size": 1011026
       }
     ]
   },
@@ -1948,21 +1948,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/seyoun_pain": {
-    "version": "ee2b8c4d1b620d6e00972152",
+    "version": "0c56400d1dc1232463178d0e",
     "files": [
       {
         "path": "assets/images/characters/seyoun_pain.png",
-        "key": "images/2d16c9d36e687e94cd8ef15694a35b9a8d44a0f3ac832f0a67116fb634df315e.png",
-        "sha256": "2d16c9d36e687e94cd8ef15694a35b9a8d44a0f3ac832f0a67116fb634df315e",
-        "etag": "3ecf642f13b3fb88597ffaf147f4b2ec",
-        "size": 2095258
+        "key": "images/39c7b0e1ed8c6fccf207a8af531d2e1a0e24ea4f61292b9eedc3bbf117789d87.png",
+        "sha256": "39c7b0e1ed8c6fccf207a8af531d2e1a0e24ea4f61292b9eedc3bbf117789d87",
+        "etag": "81107b0415a2aee147d0358a4544af3d",
+        "size": 1978209
       },
       {
         "path": "assets/images/characters/seyoun_pain.webp",
-        "key": "images/e2e87740c37a273a76b459a2f3a3b11e9a8539065d5779439338649c3ae80182.webp",
-        "sha256": "e2e87740c37a273a76b459a2f3a3b11e9a8539065d5779439338649c3ae80182",
-        "etag": "b5906e885868966ebd7790b3d7e193e2",
-        "size": 864300
+        "key": "images/cd3516927582ca720bdf9d9c453fb6d2e7e4c948f562fe1b8a5aa5c6c81dbb55.webp",
+        "sha256": "cd3516927582ca720bdf9d9c453fb6d2e7e4c948f562fe1b8a5aa5c6c81dbb55",
+        "etag": "5a6397c29bec8285cc978790aab17f7d",
+        "size": 870518
       }
     ]
   },
@@ -2195,21 +2195,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/teacher_pain": {
-    "version": "cec7fe65b2eaed978d00b5b6",
+    "version": "3fb8718649c6b339ea3a0611",
     "files": [
       {
         "path": "assets/images/characters/teacher_pain.png",
-        "key": "images/6d02eb39d1a377a2546475bc495743107788c6a035b70d0003b6aeb8bb78a5bd.png",
-        "sha256": "6d02eb39d1a377a2546475bc495743107788c6a035b70d0003b6aeb8bb78a5bd",
-        "etag": "c97fa4d3a36b06759e2b633361cd3603",
-        "size": 2084713
+        "key": "images/fff7b9de4d0e3076f085956f62c4c5e7d78545c7326fef444ed3af81d2a5c5db.png",
+        "sha256": "fff7b9de4d0e3076f085956f62c4c5e7d78545c7326fef444ed3af81d2a5c5db",
+        "etag": "b9727a4774067b7dfc2063cdec298f17",
+        "size": 1959537
       },
       {
         "path": "assets/images/characters/teacher_pain.webp",
-        "key": "images/f58dbd07b3b79540b7bbe6f6ffc01c792330206aa531bf78580d0c2cc7037847.webp",
-        "sha256": "f58dbd07b3b79540b7bbe6f6ffc01c792330206aa531bf78580d0c2cc7037847",
-        "etag": "a19ea38e9c6c96d4f156ab6b3834909e",
-        "size": 844122
+        "key": "images/90482874716c3ab80ee2e341c851417fccb18aab75e719582b9b04ea9a99d5ab.webp",
+        "sha256": "90482874716c3ab80ee2e341c851417fccb18aab75e719582b9b04ea9a99d5ab",
+        "etag": "342b8960791b7e41947cc31354276c9f",
+        "size": 850282
       }
     ]
   },
@@ -2533,21 +2533,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/yuna_pain": {
-    "version": "bfc7a3fd35f031ca3ea8e5c6",
+    "version": "141ddde3084b7398efc4108b",
     "files": [
       {
         "path": "assets/images/characters/yuna_pain.png",
-        "key": "images/be5cb136c120cf3bedf5013e2f2acabb169521e222968d0e5b9faec48c35a0ec.png",
-        "sha256": "be5cb136c120cf3bedf5013e2f2acabb169521e222968d0e5b9faec48c35a0ec",
-        "etag": "4f3e8fc02702a9d0e474a4382545f702",
-        "size": 2156975
+        "key": "images/34d8ef7e420788a0ef23ad5fce2035c1a7c61e4950a49354ee6154cbb4f1074b.png",
+        "sha256": "34d8ef7e420788a0ef23ad5fce2035c1a7c61e4950a49354ee6154cbb4f1074b",
+        "etag": "8fbd56b32f1d75701517925dc4771820",
+        "size": 2037104
       },
       {
         "path": "assets/images/characters/yuna_pain.webp",
-        "key": "images/6864f86e0acb18f24a84b4fabf4ffe299cfae79972c280f3557220ccde2b6ccb.webp",
-        "sha256": "6864f86e0acb18f24a84b4fabf4ffe299cfae79972c280f3557220ccde2b6ccb",
-        "etag": "1f8f0e6181679a68ddea0c25bebc5f5a",
-        "size": 895248
+        "key": "images/73a5f4ea9c20d983ba4ff1ca59a1e0a4c1acfa7aff2f7138e7916c6763f62e4d.webp",
+        "sha256": "73a5f4ea9c20d983ba4ff1ca59a1e0a4c1acfa7aff2f7138e7916c6763f62e4d",
+        "etag": "d5eb31feb6059427b1cf97628f8af494",
+        "size": 901638
       }
     ]
   },
