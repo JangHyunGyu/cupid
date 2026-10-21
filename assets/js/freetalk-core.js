@@ -350,9 +350,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
     function buildExpressionAffinityGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. climax는 성인 간 성행위에서 이번 응답에 절정이 있을 때만, 그 전에는 flushed를 쓰세요. ' + buildExhaustionExpressionGuidance(lang);
+            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. 성인 성행위 절정은 climax, 직전은 flushed, 여운·탈진은 exhausted. ' + buildExhaustionExpressionGuidance(lang);
         }
-        return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Use climax only for an orgasm in this response during consensual adult sex; before: flushed. ' + buildExhaustionExpressionGuidance(lang);
+        return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Adult sex orgasm=climax; before: flushed; afterglow: exhausted. ' + buildExhaustionExpressionGuidance(lang);
     }
 
     function normalizeAvailableExpression(expression, validExpressions = []) {
