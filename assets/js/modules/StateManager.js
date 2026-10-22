@@ -156,6 +156,7 @@ class StateManager {
         this.progressionRevision = 0;
         this.appliedAffinityCorrections = window.CupidAffinityCorrections?.ids() || [];
         this._installAffinityGuards();
+        window.rotateCupidMainMemoryEpoch?.();
         window.CupidProgressIntegrity?.start(this);
     }
 

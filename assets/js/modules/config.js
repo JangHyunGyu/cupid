@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.343";
+const ASSET_VERSION = "2.9.344";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -443,7 +443,7 @@ async function prepareCupidPromptMemoryRecall({ charId = '', value = '', message
             timer = setTimeout(() => {
                 controller?.abort();
                 resolve(null);
-            }, 1500);
+            }, 4500);
         });
         const data = await Promise.race([request, timeout]);
         return core.filterPromptMemoryHits(data?.hits, query, messages);
@@ -452,6 +452,75 @@ async function prepareCupidPromptMemoryRecall({ charId = '', value = '', message
     } finally {
         if (timer) clearTimeout(timer);
     }
+}
+
+const CUPID_MAIN_MEMORY_EPOCH_KEY = 'cupid:mainMemoryEpoch';
+const CUPID_GALLERY_MEMORY_EPOCH = 'gallery01';
+const CUPID_DURABLE_MEMORY_TIMEOUT_MS = 2000;
+
+function createCupidMemoryEpoch() {
+    return `run${Date.now().toString(36)}${Math.random().toString(36).slice(2, 10)}`.replace(/[^a-zA-Z0-9_-]/g, '').slice(0, 64);
+}
+
+function getCupidMainMemoryEpoch() {
+    try {
+        const current = localStorage.getItem(CUPID_MAIN_MEMORY_EPOCH_KEY) || '';
+        if (/^[a-zA-Z0-9_-]{8,64}$/.test(current)) return current;
+        const created = createCupidMemoryEpoch();
+        localStorage.setItem(CUPID_MAIN_MEMORY_EPOCH_KEY, created);
+        return created;
+    } catch (_) {
+        return 'runinitial';
+    }
+}
+
+function rotateCupidMainMemoryEpoch() {
+    const created = createCupidMemoryEpoch();
+    try { localStorage.setItem(CUPID_MAIN_MEMORY_EPOCH_KEY, created); } catch (_) {}
+    return created;
+}
+
+function cupidMemoryEpochFor(gallery) {
+    return gallery ? CUPID_GALLERY_MEMORY_EPOCH : getCupidMainMemoryEpoch();
+}
+
+async function postCupidDurable(path, charId, payload, { gallery = false, timeoutMs = CUPID_DURABLE_MEMORY_TIMEOUT_MS } = {}) {
+    if (!charId || typeof fetch !== 'function') return null;
+    const controller = typeof AbortController === 'function' ? new AbortController() : null;
+    const timer = controller ? setTimeout(() => controller.abort(), timeoutMs) : null;
+    try {
+        const response = await fetch(`${API_ENDPOINT}${path}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', 'x-app-id': getCupidAppId() },
+            body: JSON.stringify({
+                userId: getCupidDeviceId(),
+                charId,
+                memoryEpoch: cupidMemoryEpochFor(gallery),
+                ...payload,
+            }),
+            ...(controller ? { signal: controller.signal } : {}),
+        });
+        if (!response.ok) return null;
+        return await response.json();
+    } catch (_) {
+        return null;
+    } finally {
+        if (timer) clearTimeout(timer);
+    }
+}
+
+async function prepareCupidDurableFacts(charId, { gallery = false } = {}) {
+    const data = await postCupidDurable('memory-facts/query', charId, {}, { gallery });
+    return (Array.isArray(data?.facts) ? data.facts : []).filter(fact => fact?.status !== 'resolved');
+}
+
+function saveCupidDurableFacts({ charId = '', facts = [], userText = '', assistantText = '', gallery = false } = {}) {
+    const core = window.CupidFreeTalkCore;
+    const accepted = typeof core?.acceptCupidDurableFacts === 'function'
+        ? core.acceptCupidDurableFacts(facts, userText, assistantText)
+        : [];
+    if (!charId || !accepted.length) return;
+    postCupidDurable('memory-facts', charId, { facts: accepted, userText, assistantText }, { gallery });
 }
 
 // ============================================================================
@@ -1763,6 +1832,9 @@ window.inferCupidConversationDay = inferCupidConversationDay;
 window.resolveCupidConversationDay = resolveCupidConversationDay;
 window.getCupidResponseLogMetadata = getCupidResponseLogMetadata;
 window.prepareCupidPromptMemoryRecall = prepareCupidPromptMemoryRecall;
+window.prepareCupidDurableFacts = prepareCupidDurableFacts;
+window.saveCupidDurableFacts = saveCupidDurableFacts;
+window.rotateCupidMainMemoryEpoch = rotateCupidMainMemoryEpoch;
 window.uploadImageToR2 = uploadImageToR2;
 window.optimizeImageHistory = optimizeImageHistory;
 window.saveCupidChatLog = saveCupidChatLog;

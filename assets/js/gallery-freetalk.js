@@ -1141,6 +1141,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 lang: this.lang || 'en',
                 state: this.progress?.getRelationshipAftermath?.(requestCharId)
             });
+            const _durableFactsPromise = typeof window.prepareCupidDurableFacts === 'function'
+                ? window.prepareCupidDurableFacts(requestCharKey, { gallery: true })
+                : [];
             const _memoryRecall = typeof window.prepareCupidPromptMemoryRecall === 'function'
                 ? await window.prepareCupidPromptMemoryRecall({
                     charId: requestCharKey,
@@ -1148,6 +1151,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     messages: _optimized
                 })
                 : [];
+            const _durableFacts = await _durableFactsPromise;
             this._assertRequestContext(requestContext);
             const _dataBankRecallBlock = GalleryFreeTalkCore.buildDataBankRecallBlock(_memoryRecall, {
                 lang: this.lang || 'en',
@@ -1162,7 +1166,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 lowInformationRule: _lowInformationContinuationRule,
                 boundaryRule: _latestTurnIntimacyBoundaryRule
             });
-            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_dataBankRecallBlock}${_incidentRuntimeBlock}${_postHistoryGuidance}`;
+            const _durableFactInstruction = GalleryFreeTalkCore.buildDurableFactInstruction?.(this.lang || 'en') || '';
+            const _durableFactBlock = GalleryFreeTalkCore.buildDurableFactBlock?.(_durableFacts, this.lang || 'en') || '';
+            const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_durableFactInstruction}${_durableFactBlock}${_dataBankRecallBlock}${_incidentRuntimeBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
@@ -1336,6 +1342,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 }
             );
             if (!displayFallback) this.progress?.setRelationshipAftermath?.(requestCharId, nextAftermath);
+            if (!displayFallback) window.saveCupidDurableFacts?.({
+                charId: requestCharKey,
+                facts: parsed.memoryFacts,
+                userText: finalContent,
+                assistantText: displayText,
+                gallery: true
+            });
             this._assertRequestContext(requestContext, data);
             if (displayFallback?.empty) {
                 this._rollbackRequestHistory(requestContext);
@@ -1640,7 +1653,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || '').toLowerCase(),
                     affinity: this._normalizeAffinityChange(parsed.affinity),
-                    incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident)
+                    incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident),
+                    memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : []
                 };
             }
 
@@ -1651,7 +1665,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     segments: null,
                     expression: (parsed.expression || '').toLowerCase(),
                     affinity: this._normalizeAffinityChange(parsed.affinity),
-                    incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident)
+                    incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident),
+                    memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : []
                 };
             }
 

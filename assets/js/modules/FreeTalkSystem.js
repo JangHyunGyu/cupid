@@ -1659,6 +1659,9 @@ class FreeTalkSystem {
                 lang: _lang,
                 state: this.stateManager.getRelationshipAftermath?.(charKey)
             });
+            const _durableFactsPromise = typeof window.prepareCupidDurableFacts === 'function'
+                ? window.prepareCupidDurableFacts(charKey)
+                : [];
             const _memoryRecall = typeof window.prepareCupidPromptMemoryRecall === 'function'
                 ? await window.prepareCupidPromptMemoryRecall({
                     charId: charKey,
@@ -1666,6 +1669,7 @@ class FreeTalkSystem {
                     messages: _optimized
                 })
                 : [];
+            const _durableFacts = await _durableFactsPromise;
             this._assertRequestContext(requestContext);
             const _dataBankRecallBlock = CupidFreeTalkCore.buildDataBankRecallBlock(_memoryRecall, {
                 lang: _lang,
@@ -1683,7 +1687,9 @@ class FreeTalkSystem {
                     ? window.buildCupidTemptationSceneCanonRule(_lang)
                     : ''
             });
-            const _runtimePromptPatch = `${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_dataBankRecallBlock}${_postHistoryGuidance}`;
+            const _durableFactInstruction = CupidFreeTalkCore.buildDurableFactInstruction?.(_lang) || '';
+            const _durableFactBlock = CupidFreeTalkCore.buildDurableFactBlock?.(_durableFacts, _lang) || '';
+            const _runtimePromptPatch = `${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_durableFactInstruction}${_durableFactBlock}${_dataBankRecallBlock}${_postHistoryGuidance}`;
             if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
@@ -1874,6 +1880,12 @@ class FreeTalkSystem {
                     }
                 );
                 if (!displayFallback && !_sceneDialogue.romanticInterlude) this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
+                if (!displayFallback) window.saveCupidDurableFacts?.({
+                    charId: charKey,
+                    facts: parsed.memoryFacts,
+                    userText: finalContent,
+                    assistantText: reply
+                });
                 if (!displayFallback) {
                     const completionBonus = this._applyHaeunCompletionBonus(scene, requestSceneId);
                     if (completionBonus?.bonus) {
@@ -2962,6 +2974,7 @@ class FreeTalkSystem {
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: parseInt(parsed.affinity) || 0,
                     forcedSexualViolation: CupidFreeTalkCore.normalizeForcedSexualViolation(parsed.forcedSexualViolation),
+                    memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : [],
                 };
             }
 
@@ -2973,6 +2986,7 @@ class FreeTalkSystem {
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: parseInt(parsed.affinity) || 0,
                     forcedSexualViolation: CupidFreeTalkCore.normalizeForcedSexualViolation(parsed.forcedSexualViolation),
+                    memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : [],
                 };
             }
 

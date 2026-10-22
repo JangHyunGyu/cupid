@@ -2137,6 +2137,56 @@ Latest user: """${excerpt}"""
         };
     }
 
+    function spokenCupidFactText(value) {
+        return String(value || '')
+            .replace(/\(\([\s\S]*?\)\)/g, ' ')
+            .replace(/(^|\s)\*[^*\n]{1,400}\*(?=\s|$)/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    function acceptCupidDurableFacts(facts, userText, assistantText) {
+        const spoken = spokenCupidFactText(userText);
+        const fullUser = String(userText || '');
+        const reply = String(assistantText || '');
+        const accepted = [];
+        for (const fact of Array.isArray(facts) ? facts.slice(0, 24) : []) {
+            const key = String(fact?.key || '').trim();
+            const kind = String(fact?.kind || '').trim();
+            const value = String(fact?.value || '').replace(/\s+/g, ' ').trim().slice(0, 240);
+            const quote = String(fact?.quote || '').replace(/\s+/g, ' ').trim().slice(0, 180);
+            const basis = String(fact?.basis || '').trim();
+            const status = fact?.status === 'resolved' ? 'resolved' : 'active';
+            if (!/^[\p{L}\p{N}_:-]{1,64}$/u.test(key) || !value || [...quote].length < 4) continue;
+            if (!['address', 'promise', 'secret', 'place', 'object', 'boundary', 'like', 'dislike'].includes(kind)) continue;
+            const userSpeech = basis === 'user_speech' && spoken.includes(quote);
+            const userAction = basis === 'user_action' && fullUser.includes(quote) && reply.includes(quote) && !spoken.includes(quote);
+            const characterAction = basis === 'character_action' && reply.includes(quote);
+            if (!userSpeech && !userAction && !characterAction) continue;
+            if (accepted.some(item => item.key === key)) continue;
+            accepted.push({ key, kind, value, quote, basis, status });
+        }
+        return accepted;
+    }
+
+    function buildDurableFactInstruction(lang) {
+        return lang === 'ko'
+            ? '확정된 호칭·약속·비밀·장소·물건·경계·호불호만 선택 필드 memoryFacts:[{key,kind,value,quote,basis}]에 넣습니다. basis는 user_speech, user_action, character_action 중 하나이고 quote는 그 근거 문장입니다. 없으면 필드를 뺍니다.'
+            : 'Add optional memoryFacts:[{key,kind,value,quote,basis}] only for an established address, promise, secret, place, object, boundary, like, or dislike. basis is user_speech, user_action, or character_action, and quote is the supporting sentence. Omit the field when nothing changed.';
+    }
+
+    function buildDurableFactBlock(facts, lang) {
+        const lines = (Array.isArray(facts) ? facts : [])
+            .filter(fact => fact && fact.status !== 'resolved' && fact.value)
+            .slice(0, 24)
+            .map(fact => `- ${fact.kind}: ${fact.value}`)
+            .join('\n');
+        if (!lines) return '';
+        return lang === 'ko'
+            ? `\n[이어지는 사실]\n${lines}\n최근 장면과 어긋나면 최근 장면을 따른다. 나열하지 말고 호칭과 거리만 맞춘다.\n`
+            : `\n[Carried facts]\n${lines}\nIf these disagree with the current scene, follow the current scene. Use them for address and distance without reciting the list.\n`;
+    }
+
     global.CupidFreeTalkCore = Object.freeze({
         CACHE_BOUNDARY_MARKER,
         FAILOVER_HTTP_STATUSES,
@@ -2184,6 +2234,9 @@ Latest user: """${excerpt}"""
         buildPromptMemoryQuery,
         filterPromptMemoryHits,
         buildDataBankRecallBlock,
+        acceptCupidDurableFacts,
+        buildDurableFactInstruction,
+        buildDurableFactBlock,
         isNearDuplicateReply,
         normalizeCupidResponsePayload,
         getVisibleProtocolIssue,
