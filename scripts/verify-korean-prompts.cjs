@@ -1212,8 +1212,12 @@ function verifyTypingOwnerIsolation(context) {
         'old DialogueSystem frame released the new render owner');
     assert(!dialogueEvents.includes('Old:false'),
         'old DialogueSystem frame disabled animation after a new render started');
-    newDialogueFrame(1);
-    frames.shift()(1000);
+    let dialogueClock = 1;
+    newDialogueFrame(dialogueClock);
+    for (let step = 0; dialogue.isTyping && frames.length && step < 12; step += 1) {
+        dialogueClock += 40;
+        frames.shift()(dialogueClock);
+    }
     assert(!dialogue.isTyping && dialogue._activeRenderOwner === null,
         'current DialogueSystem render did not release its own typing state');
 
@@ -1238,8 +1242,12 @@ function verifyTypingOwnerIsolation(context) {
     assert(gallery.isTyping, 'old gallery frame cleared the new typing state');
     assert(gallery._activeTypingOwner === newGalleryOwner,
         'old gallery frame released the new typing owner');
-    newGalleryFrame(1);
-    frames.shift()(1000);
+    let galleryClock = 1;
+    newGalleryFrame(galleryClock);
+    for (let step = 0; gallery.isTyping && frames.length && step < 12; step += 1) {
+        galleryClock += 40;
+        frames.shift()(galleryClock);
+    }
     assert(!gallery.isTyping && gallery._activeTypingOwner === null,
         'current gallery render did not release its own typing state');
 }
