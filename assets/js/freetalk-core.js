@@ -1828,12 +1828,15 @@ Latest user: """${excerpt}"""
                 let response;
                 try {
                     const init = buildRequestInit(wantsStream);
+                    const requestBody = JSON.parse(init.body);
+                    if (wantsStream) requestBody.responseStreaming = 'segments-v1';
+                    init.body = JSON.stringify(requestBody);
                     const presentation = { ...JSON.parse(init.body), appType: 'cupid' };
                     response = await fetchImpl(endpoint, { ...init, signal: controller.signal });
                     assertCurrent();
                     if (!response.ok) throw await createAiResponseError(response);
-                    // Validate the complete candidate before any preview can render it.
-                    const payload = await readChatCompletionStream(response, { wasTimedOut: () => timedOut, presentation });
+                    const payload = await readChatCompletionStream(response, { wasTimedOut: () => timedOut, presentation,
+                        onDelta: async event => { assertCurrent(event.event); if (event.event?.segmentPreview) await onDelta?.(event); } });
                     assertCurrent(payload);
                     if (hasCupidRepeatLoop(payload?.streamedContent) || hasCupidRepeatLoop(payload?.choices?.[0]?.message?.content)) {
                         window.logCupidError?.(new Error('Repeated-token output blocked before display'), {
@@ -1894,6 +1897,7 @@ Latest user: """${excerpt}"""
         let rawContent = '';
         let partialEvent = '';
         let finalPayload = null;
+        let receivedSegmentPreview = false;
         const processEvent = async eventText => {
             const dataText = String(eventText || '')
                 .split(/\r?\n/)
@@ -1909,6 +1913,12 @@ Latest user: """${excerpt}"""
                 partialEvent = dataText;
                 return;
             }
+            if (event?.segmentPreview === true && typeof event.content === 'string') {
+                receivedSegmentPreview = true;
+                rawContent = event.content;
+                if (typeof onDelta === 'function') await onDelta({ delta: '', content: rawContent, event });
+                return;
+            }
             assertChatCompletionSucceeded(event);
             if (event?.error) {
                 const error = new Error(event.error?.message || event.error?.reason || 'AI streaming failed');
@@ -1917,6 +1927,7 @@ Latest user: """${excerpt}"""
             }
             if (event?.final === true) {
                 finalPayload = event;
+                if (event.segmentStream) rawContent = event.choices?.[0]?.message?.content || rawContent;
                 return;
             }
             const delta = event?.choices?.[0]?.delta?.content;
@@ -1942,6 +1953,10 @@ Latest user: """${excerpt}"""
             if (!finalPayload && buffer.trim()) await processEvent(buffer);
         } catch (error) {
             if (buffer.trim()) await processEvent(buffer);
+            if (receivedSegmentPreview && !['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason)
+                && !(error?.name === 'AbortError' && !wasTimedOut())) {
+                return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
+            }
             if (error?.retryExhausted || ['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason) || (error?.name === 'AbortError' && !wasTimedOut())) throw error;
             if (presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
             const existingReply = getCompleteDisplayableStreamReply(rawContent);

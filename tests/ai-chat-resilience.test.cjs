@@ -72,6 +72,33 @@ test('explicit cancellation stops recovery', async () => {
 const sandbox = { window: {}, AbortController, TextDecoder, setTimeout, clearTimeout };
 vm.runInNewContext(fs.readFileSync(path.join(root, 'assets/js/freetalk-core.js'), 'utf8'), sandbox);
 const core = sandbox.window.CupidFreeTalkCore;
+test('validated segment snapshots render before final; affinity arrives only with final', { timeout: 3000 }, async () => {
+  let controller, notifyPreview;
+  const previewReady = new Promise(resolve => { notifyPreview = resolve; });
+  const snapshot = JSON.stringify({ segments: [{ type: 'dialogue', text: 'The original reply.' }], displayFallback: { empty: false, partial: true } });
+  const runtime = load([() => new Response(new ReadableStream({ start(c) { controller = c; } }), { headers: { 'content-type': 'text/event-stream' } })]);
+  let finished = false;
+  const pending = runtime.run({ onDelta: value => notifyPreview(value) }).then(value => { finished = true; return value; });
+  while (!controller) await new Promise(resolve => setTimeout(resolve, 1));
+  const send = value => controller.enqueue(new TextEncoder().encode(`data: ${JSON.stringify(value)}\n\n`));
+  send({ segmentPreview: true, content: snapshot, turnId: 'same-turn' });
+  assert.equal((await previewReady).content, snapshot);
+  assert.equal(finished, false);
+  assert.equal(runtime.requests[0].body.responseStreaming, 'segments-v1');
+  send({ final: true, segmentStream: true, choices: [{ message: { content: JSON.stringify({ segments: [{ type: 'dialogue', text: 'The original reply.' }], affinity: 2 }) } }] });
+  controller.close();
+  assert.equal(JSON.parse(await pending).affinity, 2);
+});
+
+test('a segment preview survives an archival failure without retry or affinity', async () => {
+  const snapshot = JSON.stringify({ segments: [{ type: 'dialogue', text: 'Keep the visible line.' }], displayFallback: { empty: false, partial: true } });
+  const runtime = load([() => new Response(`data: ${JSON.stringify({ segmentPreview: true, content: snapshot })}\n\ndata: ${JSON.stringify({ final: true, error: 'Archive unavailable', reason: 'REPLY_ARCHIVE_FAILED', retryExhausted: true })}\n\n`, { headers: { 'content-type': 'text/event-stream' } })]);
+  const result = JSON.parse(await runtime.run());
+  assert.equal(runtime.requests.length, 1);
+  assert.equal(result.segments[0].text, 'Keep the visible line.');
+  assert.equal(result.affinity, 0);
+  assert.ok(result.displayFallback);
+});
 function load(responses) {
   const requests = [], controller = new AbortController();
   return { requests, cancel: () => controller.abort(), async run(options = {}) {
