@@ -1991,8 +1991,28 @@ Latest user: """${excerpt}"""
         return visible;
     }
 
-    const STREAMING_CHARACTER_DELAY_MS = 10;
-    const STREAMING_MAX_CHARACTERS_PER_FRAME = 2;
+    function advanceSteadyReveal(shown, total, elapsedMs, carryMs, charMs, frameCap, idleFlushMs) {
+        const safeShown = Math.max(0, Math.floor(Number(shown) || 0));
+        const safeTotal = Math.max(safeShown, Math.floor(Number(total) || 0));
+        if (safeShown >= safeTotal) return { shown: safeTotal, carry: 0 };
+        const elapsed = Math.max(0, Number(elapsedMs) || 0);
+        const flushMs = Math.max(0, Number(idleFlushMs) || 0);
+        if (flushMs > 0 && elapsed >= flushMs) return { shown: safeTotal, carry: 0 };
+        const delay = Math.max(1, Number(charMs) || 15);
+        const cap = Math.max(1, Math.floor(Number(frameCap) || 1));
+        let bank = Math.max(0, Number(carryMs) || 0) + elapsed;
+        let step = 0;
+        while (step < cap && bank >= delay && safeShown + step < safeTotal) {
+            bank -= delay;
+            step += 1;
+        }
+        if (step >= cap) bank = 0;
+        return { shown: safeShown + step, carry: bank };
+    }
+
+    const STREAMING_CHARACTER_DELAY_MS = 15;
+    const STREAMING_MAX_CHARACTERS_PER_FRAME = 1;
+    const STREAMING_IDLE_FLUSH_MS = 1000;
 
     function createPacedStreamingPreview({
         onRender,
@@ -2040,23 +2060,27 @@ Latest user: """${excerpt}"""
             frame = null;
             if (stopped) return;
             const targetLength = Array.from(targetText).length;
+            const before = visibleCharacters;
             if (typeof shouldFlush === 'function' && shouldFlush()) {
                 visibleCharacters = targetLength;
+                accumulatedMs = 0;
             } else {
                 const currentTimestamp = Number.isFinite(Number(timestamp)) ? Number(timestamp) : now();
-                accumulatedMs += Math.max(0, currentTimestamp - lastTimestamp);
+                const elapsed = Math.max(0, currentTimestamp - lastTimestamp);
                 lastTimestamp = currentTimestamp;
-                const step = Math.min(
-                    Math.floor(accumulatedMs / charDelay),
+                const advanced = advanceSteadyReveal(
+                    visibleCharacters,
+                    targetLength,
+                    elapsed,
+                    accumulatedMs,
+                    charDelay,
                     frameCharacterLimit,
-                    targetLength - visibleCharacters
+                    STREAMING_IDLE_FLUSH_MS
                 );
-                if (step > 0) {
-                    visibleCharacters += step;
-                    accumulatedMs -= step * charDelay;
-                }
+                visibleCharacters = advanced.shown;
+                accumulatedMs = advanced.carry;
             }
-            render();
+            if (visibleCharacters !== before) render();
             resolveDrain();
             if (visibleCharacters < targetLength) {
                 scheduleNextFrame();

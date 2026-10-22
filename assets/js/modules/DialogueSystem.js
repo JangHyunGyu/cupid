@@ -12,6 +12,49 @@
 //    - window.DialogueSystem
 // ============================================================================================
 
+function advanceSteadyReveal(shown, total, elapsedMs, carryMs, charMs, frameCap, idleFlushMs) {
+    const safeShown = Math.max(0, Math.floor(Number(shown) || 0));
+    const safeTotal = Math.max(safeShown, Math.floor(Number(total) || 0));
+    if (safeShown >= safeTotal) return { shown: safeTotal, carry: 0 };
+    const elapsed = Math.max(0, Number(elapsedMs) || 0);
+    const flushMs = Math.max(0, Number(idleFlushMs) || 0);
+    if (flushMs > 0 && elapsed >= flushMs) return { shown: safeTotal, carry: 0 };
+    const delay = Math.max(1, Number(charMs) || 15);
+    const cap = Math.max(1, Math.floor(Number(frameCap) || 1));
+    let bank = Math.max(0, Number(carryMs) || 0) + elapsed;
+    let step = 0;
+    while (step < cap && bank >= delay && safeShown + step < safeTotal) {
+        bank -= delay;
+        step += 1;
+    }
+    if (step >= cap) bank = 0;
+    return { shown: safeShown + step, carry: bank };
+}
+
+function paintGrowingHtml(el, html) {
+    if (!el) return;
+    const next = String(html || '');
+    const prev = String(el._streamHtml || '');
+    if (prev && next !== prev && next.includes('<')) {
+        const closing = prev.match(/<\/(div|strong|span)>$/);
+        if (closing && next.endsWith(closing[0]) && prev.split(closing[0]).length === next.split(closing[0]).length) {
+            const end = closing[0];
+            const pivot = prev.lastIndexOf(end);
+            if (pivot > 0 && next.startsWith(prev.slice(0, pivot)) && el.lastElementChild) {
+                const openEnd = next.lastIndexOf('>', next.length - end.length);
+                if (openEnd >= 0 && openEnd < next.length - end.length) {
+                    const inner = next.slice(openEnd + 1, next.length - end.length);
+                    if (el.lastElementChild.innerHTML !== inner) el.lastElementChild.innerHTML = inner;
+                    el._streamHtml = next;
+                    return;
+                }
+            }
+        }
+    }
+    if (el._streamHtml !== next) el.innerHTML = next;
+    el._streamHtml = next;
+}
+
 // ============================================================================================
 // 💬 DialogueSystem 클래스 - 대화 시스템
 // ============================================================================================
@@ -377,6 +420,7 @@ class DialogueSystem {
         this.isTyping = true;
         this.skipTyping = false;
         this.uiManager.messageEl.innerHTML = '';
+        delete this.uiManager.messageEl._streamHtml;
         this.updateTalkingAnimation(charName, true);
         return true;
     }
@@ -392,14 +436,22 @@ class DialogueSystem {
         const processedText = Array.isArray(structuredSegments) && structuredSegments.length > 0
             ? this._segmentsToInlineText(structuredSegments, charName)
             : this.processPlaceholders(String(text || ''), charName);
-        this.uiManager.messageEl.innerHTML = this.parseNarration(processedText);
         const msgEl = this.uiManager.messageEl;
-        if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
+        const pinned = !msgEl || (msgEl.scrollHeight - msgEl.scrollTop - msgEl.clientHeight) < 160;
+        paintGrowingHtml(msgEl, this.parseNarration(processedText));
+        if (pinned && msgEl) {
+            const now = Date.now();
+            if (now - (this._streamScrollAt || 0) >= 48) {
+                this._streamScrollAt = now;
+                msgEl.scrollTop = msgEl.scrollHeight;
+            }
+        }
         return true;
     }
 
     resetStreamingText(charName = this._streamingCharName) {
         this.uiManager.messageEl.innerHTML = '';
+        delete this.uiManager.messageEl._streamHtml;
         this.skipTyping = false;
         if (charName) this.updateTalkingAnimation(charName, true);
     }
@@ -464,6 +516,7 @@ class DialogueSystem {
 
             // 대사창 초기화
             this.uiManager.messageEl.innerHTML = "";
+            delete this.uiManager.messageEl._streamHtml;
 
             // 이미지 포함 여부 확인 (Base64 데이터가 있으면 이미지)
             const hasImage = processedText.includes('data:image/');
@@ -481,8 +534,10 @@ class DialogueSystem {
                 }
             }
 
-            let charIndex = 0;      // 현재까지 표시한 글자 수
-            let startTime = null;   // 타이핑 시작 시각
+            let shown = 0;
+            let carry = 0;
+            let revealAt = null;
+            let lastScrollAt = 0;
 
             // 애니메이션 프레임 함수
             const typeFrame = (timestamp) => {
@@ -495,11 +550,12 @@ class DialogueSystem {
                     resolve();
                     return;
                 }
-                if (!startTime) startTime = timestamp;
 
                 // 스킵 요청이 들어오면 즉시 전체 텍스트 표시
                 if (this.skipTyping) {
-                    this.uiManager.messageEl.innerHTML = this.parseNarration(textPart);
+                    const html = this.parseNarration(textPart);
+                    this.uiManager.messageEl.innerHTML = html;
+                    this.uiManager.messageEl._streamHtml = html;
                     this.armAdvanceCooldown();
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
                     const msgEl = this.uiManager.messageEl;
@@ -509,20 +565,29 @@ class DialogueSystem {
                     return;
                 }
 
-                const elapsed = timestamp - startTime;
-                const speed = this._endingMode ? this._endingTypingSpeed : this.typingSpeed;
-                const targetIndex = Math.min(Math.floor(elapsed / speed), textPart.length);
-
-                if (charIndex < targetIndex) {
-                    const currentText = textPart.substring(0, targetIndex);
-                    this.uiManager.messageEl.innerHTML = this.parseNarration(currentText);
-                    charIndex = targetIndex;
-                    // 대사가 길어지면 대화창을 최신 텍스트로 자동 스크롤
-                    const msgEl = this.uiManager.messageEl;
-                    if (msgEl) msgEl.scrollTop = msgEl.scrollHeight;
+                if (revealAt === null) {
+                    revealAt = timestamp;
+                    requestAnimationFrame(typeFrame);
+                    return;
                 }
 
-                if (charIndex < textPart.length) {
+                const elapsed = Math.max(0, timestamp - revealAt);
+                revealAt = timestamp;
+                const speed = this._endingMode ? this._endingTypingSpeed : this.typingSpeed;
+                const advanced = advanceSteadyReveal(shown, textPart.length, elapsed, carry, speed, 1, 0);
+                carry = advanced.carry;
+                if (advanced.shown !== shown) {
+                    shown = advanced.shown;
+                    const msgEl = this.uiManager.messageEl;
+                    const pinned = !msgEl || (msgEl.scrollHeight - msgEl.scrollTop - msgEl.clientHeight) < 160;
+                    paintGrowingHtml(msgEl, this.parseNarration(textPart.substring(0, shown)));
+                    if (pinned && msgEl && (timestamp - lastScrollAt > 48 || shown >= textPart.length)) {
+                        lastScrollAt = timestamp;
+                        msgEl.scrollTop = msgEl.scrollHeight;
+                    }
+                }
+
+                if (shown < textPart.length) {
                     requestAnimationFrame(typeFrame);
                 } else {
                     if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;

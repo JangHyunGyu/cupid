@@ -19,6 +19,49 @@
 const GALLERY_FREETALK_PROMPT_VERSION = '2.7.71';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
+function advanceSteadyReveal(shown, total, elapsedMs, carryMs, charMs, frameCap, idleFlushMs) {
+    const safeShown = Math.max(0, Math.floor(Number(shown) || 0));
+    const safeTotal = Math.max(safeShown, Math.floor(Number(total) || 0));
+    if (safeShown >= safeTotal) return { shown: safeTotal, carry: 0 };
+    const elapsed = Math.max(0, Number(elapsedMs) || 0);
+    const flushMs = Math.max(0, Number(idleFlushMs) || 0);
+    if (flushMs > 0 && elapsed >= flushMs) return { shown: safeTotal, carry: 0 };
+    const delay = Math.max(1, Number(charMs) || 15);
+    const cap = Math.max(1, Math.floor(Number(frameCap) || 1));
+    let bank = Math.max(0, Number(carryMs) || 0) + elapsed;
+    let step = 0;
+    while (step < cap && bank >= delay && safeShown + step < safeTotal) {
+        bank -= delay;
+        step += 1;
+    }
+    if (step >= cap) bank = 0;
+    return { shown: safeShown + step, carry: bank };
+}
+
+function paintGrowingHtml(el, html) {
+    if (!el) return;
+    const next = String(html || '');
+    const prev = String(el._streamHtml || '');
+    if (prev && next !== prev && next.includes('<')) {
+        const closing = prev.match(/<\/(div|strong|span)>$/);
+        if (closing && next.endsWith(closing[0]) && prev.split(closing[0]).length === next.split(closing[0]).length) {
+            const end = closing[0];
+            const pivot = prev.lastIndexOf(end);
+            if (pivot > 0 && next.startsWith(prev.slice(0, pivot)) && el.lastElementChild) {
+                const openEnd = next.lastIndexOf('>', next.length - end.length);
+                if (openEnd >= 0 && openEnd < next.length - end.length) {
+                    const inner = next.slice(openEnd + 1, next.length - end.length);
+                    if (el.lastElementChild.innerHTML !== inner) el.lastElementChild.innerHTML = inner;
+                    el._streamHtml = next;
+                    return;
+                }
+            }
+        }
+    }
+    if (el._streamHtml !== next) el.innerHTML = next;
+    el._streamHtml = next;
+}
+
 const GalleryFreeTalkCore = window.CupidFreeTalkCore;
 if (!GalleryFreeTalkCore) {
     console.error('CupidFreeTalkCore must be loaded before GalleryFreeTalk');
@@ -1031,8 +1074,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         try {
             let _streamingStarted = false;
             _streamingPreview = GalleryFreeTalkCore.createPacedStreamingPreview({
-                characterDelayMs: 10,
-                maxCharactersPerFrame: 2,
+                characterDelayMs: 15,
+                maxCharactersPerFrame: 1,
                 shouldFlush: () => this.skipTyping === true,
                 onRender: ({ text: previewText, segments: previewSegments }) => {
                     if (!this._isRequestContextCurrent(requestContext)) return;
@@ -1760,7 +1803,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         this.isTyping = true;
         this.skipTyping = false;
         const msgEl = document.getElementById('message');
-        if (msgEl) msgEl.innerHTML = '';
+        if (msgEl) {
+            msgEl.innerHTML = '';
+            delete msgEl._streamHtml;
+        }
         return Boolean(msgEl);
     }
 
@@ -1786,14 +1832,24 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 return `<span class="${isAction ? 'gft-action' : 'gft-text'}">${escaped}</span>`;
             }).filter(Boolean).join(' ')
             : this._formatAction(resolvedText);
-        msgEl.innerHTML = html;
-        msgEl.scrollTop = msgEl.scrollHeight;
+        const pinned = (msgEl.scrollHeight - msgEl.scrollTop - msgEl.clientHeight) < 160;
+        paintGrowingHtml(msgEl, html);
+        if (pinned) {
+            const now = Date.now();
+            if (now - (this._streamScrollAt || 0) >= 48) {
+                this._streamScrollAt = now;
+                msgEl.scrollTop = msgEl.scrollHeight;
+            }
+        }
         return true;
     }
 
     _resetStreamingText() {
         const msgEl = document.getElementById('message');
-        if (msgEl) msgEl.innerHTML = '';
+        if (msgEl) {
+            msgEl.innerHTML = '';
+            delete msgEl._streamHtml;
+        }
         this.skipTyping = false;
     }
 
@@ -1858,33 +1914,12 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const totalLength = segments.reduce((sum, s) => sum + s.content.length, 0);
 
         return new Promise((resolve) => {
-            let startTime = null;
+            let shown = 0;
+            let carry = 0;
+            let revealAt = null;
 
-            const typeFrame = (timestamp) => {
-                if (!ownsTyping()) {
-                    resolve();
-                    return;
-                }
-                if (requestContext && !this._isRequestContextCurrent(requestContext)) {
-                    finishOwnedTyping();
-                    resolve();
-                    return;
-                }
-                if (!startTime) startTime = timestamp;
-
-                // 스킵 요청 시 즉시 전체 텍스트 표시
-                if (this.skipTyping) {
-                    segments.forEach((seg, i) => { elements[i].textContent = seg.content; });
-                    finishOwnedTyping();
-                    resolve();
-                    return;
-                }
-
-                const elapsed = timestamp - startTime;
-                const targetTotal = Math.min(Math.floor(elapsed / speed), totalLength);
-
-                // 각 세그먼트에 타이핑 진행분 반영
-                let remaining = targetTotal;
+            const paintUnits = (count) => {
+                let remaining = count;
                 for (let i = 0; i < segments.length; i++) {
                     const segLen = segments[i].content.length;
                     if (remaining >= segLen) {
@@ -1897,8 +1932,42 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         break;
                     }
                 }
+            };
 
-                if (targetTotal < totalLength) {
+            const typeFrame = (timestamp) => {
+                if (!ownsTyping()) {
+                    resolve();
+                    return;
+                }
+                if (requestContext && !this._isRequestContextCurrent(requestContext)) {
+                    finishOwnedTyping();
+                    resolve();
+                    return;
+                }
+
+                if (this.skipTyping) {
+                    segments.forEach((seg, i) => { elements[i].textContent = seg.content; });
+                    finishOwnedTyping();
+                    resolve();
+                    return;
+                }
+
+                if (revealAt === null) {
+                    revealAt = timestamp;
+                    requestAnimationFrame(typeFrame);
+                    return;
+                }
+
+                const elapsed = Math.max(0, timestamp - revealAt);
+                revealAt = timestamp;
+                const advanced = advanceSteadyReveal(shown, totalLength, elapsed, carry, speed, 1, 0);
+                carry = advanced.carry;
+                if (advanced.shown !== shown) {
+                    shown = advanced.shown;
+                    paintUnits(shown);
+                }
+
+                if (shown < totalLength) {
                     requestAnimationFrame(typeFrame);
                 } else {
                     finishOwnedTyping();
