@@ -24,17 +24,15 @@ function advanceSteadyReveal(shown, total, elapsedMs, carryMs, charMs, frameCap,
     const safeTotal = Math.max(safeShown, Math.floor(Number(total) || 0));
     if (safeShown >= safeTotal) return { shown: safeTotal, carry: 0 };
     const elapsed = Math.max(0, Number(elapsedMs) || 0);
-    const flushMs = Math.max(0, Number(idleFlushMs) || 0);
-    if (flushMs > 0 && elapsed >= flushMs) return { shown: safeTotal, carry: 0 };
-    const delay = Math.max(1, Number(charMs) || 15);
+    const delay = Math.max(1, Number(charMs) || 30);
     const cap = Math.max(1, Math.floor(Number(frameCap) || 1));
-    let bank = Math.max(0, Number(carryMs) || 0) + elapsed;
+    let bank = elapsed >= 250 ? delay : Math.max(0, Number(carryMs) || 0) + elapsed;
     let step = 0;
     while (step < cap && bank >= delay && safeShown + step < safeTotal) {
         bank -= delay;
         step += 1;
     }
-    if (step >= cap) bank = 0;
+    if (step >= cap) bank %= delay;
     return { shown: safeShown + step, carry: bank };
 }
 
@@ -1074,7 +1072,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         try {
             let _streamingStarted = false;
             _streamingPreview = GalleryFreeTalkCore.createPacedStreamingPreview({
-                characterDelayMs: 15,
+                characterDelayMs: 30,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.skipTyping === true,
                 onRender: ({ text: previewText, segments: previewSegments }) => {

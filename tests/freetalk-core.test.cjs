@@ -84,6 +84,7 @@ test('paced preview starts immediately and then reveals at most two characters p
     const preview = core.createPacedStreamingPreview({
         onRender: frame => rendered.push(frame.text),
         characterDelayMs: 10,
+        initialBufferMs: 0,
         maxCharactersPerFrame: 2,
         now: () => 0,
         scheduleFrame(callback) {
@@ -103,12 +104,13 @@ test('paced preview starts immediately and then reveals at most two characters p
     preview.stop();
 });
 
-test('paced preview reveals one character on a late frame and flushes only after a hidden second', async () => {
+test('paced preview reveals one character on a late frame and does not flush after a hidden second', async () => {
     const scheduled = [];
     const rendered = [];
     const preview = core.createPacedStreamingPreview({
         onRender: frame => rendered.push(frame.text),
         characterDelayMs: 15,
+        initialBufferMs: 0,
         maxCharactersPerFrame: 1,
         now: () => 0,
         scheduleFrame(callback) {
@@ -123,6 +125,8 @@ test('paced preview reveals one character on a late frame and flushes only after
     scheduled.shift().callback(80);
     assert.equal(rendered.at(-1), '가나');
     scheduled.shift().callback(1080);
+    assert.equal(Array.from(rendered.at(-1)).length, 3);
+    scheduled.shift().callback(1100);
     assert.equal(rendered.at(-1), '가나다라');
     preview.stop();
 });
@@ -238,9 +242,9 @@ test('every Cupid free-talk surface validates buffered SSE before paced display 
     assert.doesNotMatch(source, /await readChatCompletionStream\(response, \{ onDelta/, 'unchecked deltas must not reach the preview callback');
     assert.ok((main.match(/selectChatCompletionContent\(data\)/g) || []).length >= 2, 'single and group completion must preserve valid raw streams');
     assert.match(gallery, /selectChatCompletionContent\(data\)/, 'gallery completion must preserve a valid raw stream');
-    assert.ok((main.match(/characterDelayMs:\s*15/g) || []).length >= 2);
+    assert.ok((main.match(/characterDelayMs:\s*30/g) || []).length >= 2);
     assert.ok((main.match(/maxCharactersPerFrame:\s*1/g) || []).length >= 2);
-    assert.match(gallery, /characterDelayMs:\s*15/);
+    assert.match(gallery, /characterDelayMs:\s*30/);
     assert.match(gallery, /maxCharactersPerFrame:\s*1/);
     assert.match(dialogue, /renderStreamingText\(/);
     assert.match(main, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidChatLog/);

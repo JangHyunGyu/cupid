@@ -2011,23 +2011,21 @@ Latest user: """${excerpt}"""
         const safeTotal = Math.max(safeShown, Math.floor(Number(total) || 0));
         if (safeShown >= safeTotal) return { shown: safeTotal, carry: 0 };
         const elapsed = Math.max(0, Number(elapsedMs) || 0);
-        const flushMs = Math.max(0, Number(idleFlushMs) || 0);
-        if (flushMs > 0 && elapsed >= flushMs) return { shown: safeTotal, carry: 0 };
-        const delay = Math.max(1, Number(charMs) || 15);
+        const delay = Math.max(1, Number(charMs) || 30);
         const cap = Math.max(1, Math.floor(Number(frameCap) || 1));
-        let bank = Math.max(0, Number(carryMs) || 0) + elapsed;
+        let bank = elapsed >= 250 ? delay : Math.max(0, Number(carryMs) || 0) + elapsed;
         let step = 0;
         while (step < cap && bank >= delay && safeShown + step < safeTotal) {
             bank -= delay;
             step += 1;
         }
-        if (step >= cap) bank = 0;
+        if (step >= cap) bank %= delay;
         return { shown: safeShown + step, carry: bank };
     }
 
-    const STREAMING_CHARACTER_DELAY_MS = 15;
+    const STREAMING_CHARACTER_DELAY_MS = 30;
     const STREAMING_MAX_CHARACTERS_PER_FRAME = 1;
-    const STREAMING_IDLE_FLUSH_MS = 1000;
+    const STREAMING_IDLE_FLUSH_MS = 0;
 
     function createPacedStreamingPreview({
         onRender,
@@ -2035,6 +2033,8 @@ Latest user: """${excerpt}"""
         shouldFlush = null,
         characterDelayMs = STREAMING_CHARACTER_DELAY_MS,
         maxCharactersPerFrame = STREAMING_MAX_CHARACTERS_PER_FRAME,
+        initialBufferChars = 24,
+        initialBufferMs = 320,
         now = () => (global.performance?.now?.() ?? Date.now()),
         scheduleFrame = callback => (typeof global.requestAnimationFrame === 'function'
             ? global.requestAnimationFrame(callback)
@@ -2055,6 +2055,9 @@ Latest user: """${excerpt}"""
         let lastTimestamp = null;
         let accumulatedMs = 0;
         let stopped = false;
+        let bufferingMs = 0;
+        let buffering = true;
+        let finishing = false;
         const drainWaiters = [];
 
         const render = () => {
@@ -2083,6 +2086,11 @@ Latest user: """${excerpt}"""
                 const currentTimestamp = Number.isFinite(Number(timestamp)) ? Number(timestamp) : now();
                 const elapsed = Math.max(0, currentTimestamp - lastTimestamp);
                 lastTimestamp = currentTimestamp;
+                if (buffering && !finishing && targetLength - visibleCharacters < initialBufferChars) {
+                    bufferingMs += Math.min(50, elapsed);
+                    if (bufferingMs < initialBufferMs) { scheduleNextFrame(); return; }
+                }
+                buffering = false;
                 const advanced = advanceSteadyReveal(
                     visibleCharacters,
                     targetLength,
@@ -2102,6 +2110,8 @@ Latest user: """${excerpt}"""
             } else {
                 lastTimestamp = null;
                 accumulatedMs = 0;
+                buffering = true;
+                bufferingMs = 0;
             }
         };
 
@@ -2118,14 +2128,16 @@ Latest user: """${excerpt}"""
                     if (typeof onReset === 'function') onReset();
                 }
                 visibleCharacters = Math.min(visibleCharacters, targetLength);
-                if (targetLength > 0 && visibleCharacters === 0) {
+                if (targetLength > 0 && visibleCharacters === 0 && (initialBufferMs <= 0 || targetLength >= initialBufferChars)) {
                     visibleCharacters = 1;
+                    buffering = false;
                     render();
                 }
                 if (visibleCharacters < targetLength) scheduleNextFrame();
                 else resolveDrain();
             },
             drain() {
+                finishing = true;
                 if (visibleCharacters >= Array.from(targetText).length) return Promise.resolve();
                 scheduleNextFrame();
                 return new Promise(resolve => drainWaiters.push(resolve));
@@ -2137,6 +2149,7 @@ Latest user: """${excerpt}"""
                 targetSegments = [];
                 visibleCharacters = 0;
                 lastTimestamp = null;
+                bufferingMs = 0; buffering = true; finishing = false;
                 accumulatedMs = 0;
                 while (drainWaiters.length) drainWaiters.shift()();
                 if (typeof onReset === 'function') onReset();

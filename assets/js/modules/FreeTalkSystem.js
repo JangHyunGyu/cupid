@@ -1582,7 +1582,7 @@ class FreeTalkSystem {
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             let _streamingStarted = false;
             _streamingPreview = CupidFreeTalkCore.createPacedStreamingPreview({
-                characterDelayMs: 15,
+                characterDelayMs: 30,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.dialogueSystem.skipTyping === true,
                 onRender: ({ text: previewText, segments: previewSegments }) => {
@@ -2356,7 +2356,7 @@ class FreeTalkSystem {
             let streamingStarted = false;
             let previewSpeaker = this.groupParticipants[0] || null;
             streamingPreview = CupidFreeTalkCore.createPacedStreamingPreview({
-                characterDelayMs: 15,
+                characterDelayMs: 30,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.dialogueSystem.skipTyping === true,
                 onRender: ({ text: previewText, segments: previewSegments }) => {
