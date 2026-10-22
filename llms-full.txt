@@ -17,7 +17,7 @@ Cupid(큐피드)는 전학 첫날부터 닷새 동안 선택과 대화로 이야
 - 엔딩: 스무 개가 넘는 엔딩. 4일차 고백 여부와 호감도 등으로 갈립니다.
 - 저장: 같은 기기·브라우저에 자동 저장 (계정 연동 없음)
 - 언어: 한국어, 영어, 일본어, 스페인어, 프랑스어, 독일어, 포르투갈어, 중국어 간체
-- 운영: ArcherLab (장현규·김유진)
+- 운영: ArcherLab (archerlab·김유진)
 
 ### Who it is for / 대상
 - 설치 없이 가볍게 시작할 수 있는 한글 미연시를 찾는 분
@@ -79,7 +79,7 @@ Cupid is a free browser visual novel (dating sim) in which your choices and conv
 - Endings: More than twenty, decided by factors such as whether you confess on day 4 and your affinity
 - Saving: Automatic, in the same browser on the same device (no account sync)
 - Languages: Korean, English, Japanese, Spanish, French, German, Portuguese, Simplified Chinese
-- Made by: ArcherLab (Hyungyu Jang and Yujin Kim)
+- Made by: ArcherLab (archerlab and Yujin Kim)
 
 ### Who it is for / 대상
 - Players looking for a no-install romance visual novel
@@ -142,7 +142,7 @@ Cupid is a free romance visual novel (dating sim) that runs in your browser. Ope
 - Free talk: Type your own lines to talk with characters; replies are AI-generated
 - Saving: Automatic, in the same browser on the same device (no account sync)
 - Languages: Korean, English, Japanese, Spanish, French, German, Portuguese, Simplified Chinese
-- Developer: ArcherLab (Hyungyu Jang)
+- Developer: archerlab
 
 ### What is the Cupid game?
 Cupid (full title "Cupid: 5 Days of Love") is a browser visual novel set in a Korean high school. You play a transfer student for five days. Seoyeon, Yuna and Dain are the first characters you meet, and hidden routes open from your choices on Day 1. Scenes read like a messenger chat, so it is easy to play on a phone.

@@ -1,6 +1,6 @@
 # Contact scoring, chat tip and independent group scoring (2026-10-06)
 
-User-approved changes (장현규, 2026-10-06). Gates, the -50 floor, the +3 turn cap, the stored cap 100
+User-approved changes (archerlab, 2026-10-06). Gates, the -50 floor, the +3 turn cap, the stored cap 100
 and the penalty tiers outside skinship are unchanged. Nurse scoring is unchanged by user decision.
 Haeun is a 17-year-old student: every related rule stays non-sexual and age-appropriate.
 
