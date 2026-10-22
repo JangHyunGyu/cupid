@@ -1739,21 +1739,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/seyoun_climax": {
-    "version": "347fe4fca4b369f832a49d8f",
+    "version": "85e00e9bcc305d19e63843a1",
     "files": [
       {
         "path": "assets/images/characters/seyoun_climax.png",
-        "key": "images/558209183657c1e21ac67abc930f765061e93e953c260373f34389a51c826571.png",
-        "sha256": "558209183657c1e21ac67abc930f765061e93e953c260373f34389a51c826571",
-        "etag": "cd91abd0fa8d9e5465b8fb7bd28233c4",
-        "size": 1203827
+        "key": "images/f0254e75ced76fbc7f7e7055fcd7642d8ace00192d10df4db6cbc12165d09ab2.png",
+        "sha256": "f0254e75ced76fbc7f7e7055fcd7642d8ace00192d10df4db6cbc12165d09ab2",
+        "etag": "d1e2ed16dbe7dc49d64ced9eaed429a2",
+        "size": 1680219
       },
       {
         "path": "assets/images/characters/seyoun_climax.webp",
-        "key": "images/d129a17c365aca37ffdea888114416b410e5673fa659bf522665f533a9177d0c.webp",
-        "sha256": "d129a17c365aca37ffdea888114416b410e5673fa659bf522665f533a9177d0c",
-        "etag": "54b60073df06adcbc47286638d9fb95c",
-        "size": 135796
+        "key": "images/b3184322524c3bbba7dfa53b50c37c4ed01581c23ee33df92f25ee04dc39d675.webp",
+        "sha256": "b3184322524c3bbba7dfa53b50c37c4ed01581c23ee33df92f25ee04dc39d675",
+        "etag": "8cfa1f1a560f1e72b1d9da05c819ee45",
+        "size": 743344
       }
     ]
   },
