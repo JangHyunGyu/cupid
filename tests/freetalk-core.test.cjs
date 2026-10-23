@@ -621,8 +621,8 @@ test('outward expression remains independent from affinity direction', () => {
     assert.equal(core.normalizeAvailableExpression('', expressions), '');
     assert.match(core.buildExpressionAffinityGuidance('ko'), /기계적으로 같은 방향에 맞추지 마세요/);
     assert.match(core.buildExpressionAffinityGuidance('ko'), /몹시 지치면 exhausted/);
-    assert.match(core.buildExpressionAffinityGuidance('ko'), /하나만 있으면 그 코드를 씁니다/);
-    assert.match(core.buildExpressionAffinityGuidance('en'), /only one of those codes uses that code/);
+    assert.match(core.buildExpressionAffinityGuidance('ko'), /flushed, climax, exhausted, shy, pain, cry 가운데/);
+    assert.match(core.buildExpressionAffinityGuidance('en'), /among "flushed", "climax", "exhausted", "shy", "pain", and "cry"/);
     assert.match(core.buildExpressionAffinityGuidance('en'), /Do not mechanically force them in the same direction/);
     assert.match(core.buildExpressionAffinityGuidance('en'), /exhausted=very tired/);
 });
