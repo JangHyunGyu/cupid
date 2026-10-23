@@ -94,7 +94,7 @@ solid bright green background, chromakey background, simple background, soft dif
 ```
 **네거티브:** (공통 네거티브 + `full body, knees, feet, lower body, particles, light rays, no glasses, missing glasses, glasses removed, bare face, contact lenses, sunglasses`)
 
-### seyoun_shy2.png
+### seyoun_very_shy.png
 **프롬프트:**
 ```
 masterpiece, best quality, very aesthetic, absurdres, newest,

@@ -38,6 +38,20 @@ if (!CupidFreeTalkCore) {
     throw new Error('CupidFreeTalkCore must be loaded before FreeTalkSystem');
 }
 
+function cupidExpressionImageChoices(sceneName, displayName) {
+    const expressionMap = typeof getCharacterExpressionSet === 'function'
+        ? getCharacterExpressionSet(sceneName, displayName)
+        : null;
+    const codes = [];
+    for (const value of Object.keys(expressionMap || {})) {
+        const code = String(value || '').trim().toLowerCase();
+        if (!/^[a-z][a-z0-9_-]{0,31}$/.test(code) || codes.includes(code)) continue;
+        codes.push(code);
+    }
+    if (!codes.includes('normal')) codes.unshift('normal');
+    return codes.length ? codes : ['normal'];
+}
+
 const FREE_TALK_CACHE_BOUNDARY_MARKER = CupidFreeTalkCore.CACHE_BOUNDARY_MARKER;
 const FREE_TALK_AI_FAILOVER_HTTP_STATUSES = CupidFreeTalkCore.FAILOVER_HTTP_STATUSES;
 const FREE_TALK_AI_RETRY_HTTP_STATUSES = CupidFreeTalkCore.RETRY_HTTP_STATUSES;
@@ -1581,6 +1595,7 @@ class FreeTalkSystem {
             // [Explicit Caching] 캐시 키 — static 영역이 유저 중립(placeholder 유지)이라 전체 유저 공유 캐시 가능
             const _lang = window.GAME_LANG || document.documentElement.lang || 'ko';
             let _streamingStarted = false;
+            this._streamedExpressionKeys = new Set();
             _streamingPreview = CupidFreeTalkCore.createPacedStreamingPreview({
                 characterDelayMs: 30,
                 maxCharactersPerFrame: 1,
@@ -1616,6 +1631,15 @@ class FreeTalkSystem {
                 }
             });
             const updateStreamingPreview = rawContent => {
+                const faces = CupidFreeTalkCore.extractStreamingExpressionPreviews?.(rawContent) || [];
+                const lead = faces[0];
+                if (lead?.expression) {
+                    const key = `${charKey}:${lead.expression}`;
+                    if (!this._streamedExpressionKeys.has(key)) {
+                        this._streamedExpressionKeys.add(key);
+                        this.applyExpression(lead.expression, scene);
+                    }
+                }
                 const preview = CupidFreeTalkCore.extractStreamingSegmentsPreview(rawContent);
                 const previewSegments = this._sanitizeSegmentsPlaceholders(preview.segments || null) || [];
                 const previewText = previewSegments.map(segment => segment.text).join('\n\n');
@@ -1738,7 +1762,7 @@ class FreeTalkSystem {
                         requestType: "character",
                         chatMode: "single",
                         responseSchema: "cupid-single-forced-sexual-violation",
-                        responseSpeakers: [{ id: charKey, key: charKey, name: scene.name }],
+                        responseSpeakers: [{ id: charKey, key: charKey, name: scene.name, expressions: cupidExpressionImageChoices(charKey, scene.name) }],
                         outputLanguage: _lang,
                         cacheKey: _cacheKey,
                         stream: wantsStream,
@@ -2354,6 +2378,7 @@ class FreeTalkSystem {
         try {
             this._assertRequestContext(requestContext);
             let streamingStarted = false;
+            this._streamedExpressionKeys = new Set();
             let previewSpeaker = this.groupParticipants[0] || null;
             streamingPreview = CupidFreeTalkCore.createPacedStreamingPreview({
                 characterDelayMs: 30,
@@ -2391,6 +2416,18 @@ class FreeTalkSystem {
                 }
             });
             const updateGroupStreamingPreview = rawContent => {
+                const faces = CupidFreeTalkCore.extractStreamingExpressionPreviews?.(rawContent) || [];
+                faces.forEach(face => {
+                    const speaker = this.groupParticipants.find(participant => (
+                        participant.name.toLowerCase() === String(face.name || '').toLowerCase()
+                        || participant.id.toLowerCase() === String(face.name || '').toLowerCase()
+                    )) || this.groupParticipants[face.index];
+                    if (!speaker) return;
+                    const key = `${speaker.id}:${face.expression}`;
+                    if (this._streamedExpressionKeys.has(key)) return;
+                    this._streamedExpressionKeys.add(key);
+                    this._applyGroupExpression(face.expression, speaker.id);
+                });
                 const preview = CupidFreeTalkCore.extractFirstStreamingConversationPreview(rawContent);
                 const nextSpeaker = this.groupParticipants.find(participant => (
                     participant.name.toLowerCase() === String(preview.name || '').toLowerCase()
@@ -2463,7 +2500,7 @@ class FreeTalkSystem {
                     requestType: 'character',
                     chatMode: 'group',
                     responseSchema: 'cupid-group-conversations',
-                    responseSpeakers: this.groupParticipants.map(item => ({ id: item.id, key: item.id, name: item.name })),
+                    responseSpeakers: this.groupParticipants.map(item => ({ id: item.id, key: item.id, name: item.name, expressions: cupidExpressionImageChoices(item.id, item.name) })),
                     outputLanguage: lang,
                     cacheKey: lastCacheKey,
                     stream: wantsStream,

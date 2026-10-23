@@ -9,7 +9,8 @@ export async function onRequestGet(context) {
   const { request, env } = context;
   const url = new URL(request.url);
   const asset = url.searchParams.get('asset') || '';
-  const id = toLogicalAssetId(asset);
+  const requestedId = toLogicalAssetId(asset);
+  const id = requestedId === 'characters/seyoun_shy2' ? 'characters/seyoun_very_shy' : requestedId;
   const entry = id && Object.hasOwn(MEDIA_MANIFEST, id) ? MEDIA_MANIFEST[id] : null;
   if (!entry) return jsonResponse({ error: 'invalid_asset' }, 400);
   const publicAsset = isPublicLogicalId(id);
@@ -25,9 +26,15 @@ export async function onRequestGet(context) {
     if (!guest || (claimed && claimed !== guest)) return jsonResponse({ error: 'unauthorized' }, 401);
     if (!env.DB) return jsonResponse({ error: 'db_unavailable' }, 503);
     const receipt = await readMediaGrant(request, env, guest);
-    const unlocked = receipt?.has(id) || await env.DB.prepare(
+    let unlocked = receipt?.has(id) || await env.DB.prepare(
       'SELECT 1 AS ok FROM cupid_gallery_unlocks WHERE guest_id = ? AND asset_id = ? LIMIT 1'
     ).bind(guest, id).first();
+    // very_shy is the renamed shy2 file. Grants saved under the old id still open it.
+    if (!unlocked && id === 'characters/seyoun_very_shy') {
+      unlocked = await env.DB.prepare(
+        'SELECT 1 AS ok FROM cupid_gallery_unlocks WHERE guest_id = ? AND asset_id = ? LIMIT 1'
+      ).bind(guest, 'characters/seyoun_shy2').first();
+    }
     if (!unlocked) return jsonResponse({ error: 'forbidden' }, 403);
   }
   timings.push(`authorize;dur=${(performance.now() - started).toFixed(2)}`);

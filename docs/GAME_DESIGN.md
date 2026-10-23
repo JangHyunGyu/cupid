@@ -137,7 +137,7 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 
 | 캐릭터 | 표정 목록 (필요 호감도) |
 |--------|----------------------|
-| 서연 (11개) | normal(0), shy(10), shy2(20), angry(30), sad(40), laugh(50), cry(60), pout(70), worried(80), back(90), bikini(별도) |
+| 서연 (11개) | normal(0), shy(10), very_shy(20), angry(30), sad(40), laugh(50), cry(60), pout(70), worried(80), back(90), bikini(별도) |
 | 유나 (7개) | normal(0), smile(17), shy(33), angry(50), sad(67), bored(83), bikini(별도) |
 | 다인 (9개) | normal(0), shy(13), angry(25), sad(38), laugh(50), pout(63), active(75), sweat(88), bikini(별도) |
 | 담임 (6개) | normal(0), smile(20), shy(40), angry(60), sad(80), bikini(별도) |
@@ -681,7 +681,7 @@ TRUE 엔딩은 본편 에필로그 데이트(1회)로 남긴다. 갤러리 연�
 
 | 씬 | 변경 전 | 변경 후 | 이유 |
 |---|---|---|---|
-| confess_seo_yes_8 | seyoun_cry | seyoun_shy2 | 벅차오름, 아직 눈물 아님 |
+| confess_seo_yes_8 | seyoun_cry | seyoun_very_shy | 벅차오름, 아직 눈물 아님 |
 | confess_yuna_yes_8,9 | yuna_sad | yuna_shy | 사랑의 감정, 슬픔 아님 |
 | confess_dain_yes_8 | dain_sad | dain_shy | 수줍음+행복한 눈물 |
 | wall_dain_11 | dain_laugh | dain_sweat | 밝은 척 가면이 깨지는 순간 |

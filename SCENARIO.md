@@ -7088,7 +7088,7 @@
 - 배경: `student_room.png`
 - 다음: `after2_seo_sunset_joke_b`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **{name}**: 창밖 노을 얘기라는 건 미리 확실히 해 둬야지. 괜히 네 얼굴 보고 한 말인 줄 오해받으면 나만 곤란하잖아. *순간 서연의 안경이 코끝으로 살짝 미끄러지고 쥐고 있던 펜 끝이 날짜 칸 밖으로 삐끗한다.*
 
 ---
@@ -7104,7 +7104,7 @@
 - 배경: `student_room.png`
 - 다음: `after2_seo_sunset_react_b`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **서연**: …누가 뭐랬어? 그렇게 굳이 덧붙이는 게 훨씬 더 수상하거든.
 
 ---
@@ -18661,7 +18661,7 @@
   3. "서연이 먼저 말해주면 그때 솔직해지자" → `confess_seo_no_2` | Seoyeon -4 | 플래그: `postponed_seoyeon`
   4. "우리 사이면 굳이 말로 확인하지 않아도 알겠지" → `confess_seo_no_2` | Seoyeon -5 | 플래그: `postponed_seoyeon`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **{name}**: *둘 사이의 숨결이 닿을 만큼 가까워진 침묵 속에서 서연이 쥔 열쇠고리만 손바닥 안에서 작게 달그락거린다.*
 
 ---
@@ -18747,7 +18747,7 @@
   - [-19 이상] → `confess_seo_yes_low_1`
   - [기본] → `confess_seo_yes_neg`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **서연**: 아직 내려가지 말자. 너랑 여기서 조금만 더 이대로 서 있을래. *서연이 열쇠고리를 쥔 손으로 내 소매 끝을 살며시 잡아당긴다.*
 
 ---
@@ -18759,7 +18759,7 @@
 - Framing: `intimate`
 - 다음: `confess_seo_yes_9`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **서연**: 사실은 나도 전학 첫날부터 계속 너만 보고 있었어.
 
 ---
@@ -18803,7 +18803,7 @@
 - Framing: `close`
 - 다음: `confess_seo_yes_11_b`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **서연**: 내일 점심시간에 단둘이 보자. 옥상 문, 너만 들어올 수 있게 미리 열어 둘게.
 
 ---
@@ -18814,7 +18814,7 @@
 - Framing: `close`
 - 다음: `confess_seo_yes_12`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **서연**: *맞잡았던 손끝에서 뜨거운 여운을 남기며 서연이 천천히 계단 문 쪽으로 걸음을 옮긴다.*
 
 ---
@@ -18826,7 +18826,7 @@
 - 플래그: `day4_confession_accepted`, `isDating_Seoyeon`
 - 다음: `day4_night_start`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **서연**: 아까 네가 해 준 그 말, 자존심 부리지 말고 내가 먼저 꺼낼걸 그랬나 봐. 막상 네 입으로 직접 듣고 나니까 이렇게 숨이 벅찬데. *계단 두 칸 아래에서 서연의 발소리가 멎는다. 끝내 돌아보지는 않지만 붉게 달아오른 귓바퀴가 어스름 속에서도 선명하다.*
 
 ---
@@ -27591,7 +27591,7 @@
 - 배경: `school_back.png`
 - 다음: `after5_last_chance_choice`
 
-- 캐릭터: `seyoun_shy2.png`
+- 캐릭터: `seyoun_very_shy.png`
 **서연**: 만약 지금도 안 잡을 거면 여기서 솔직하게 말해. 기다리는 내가 또 혼자 바보처럼 기대하게 만들지는 말고. *서연은 미세하게 떨리는 손바닥을 거두지 않은 채 내 눈을 똑바로 올려다본다.*
 
 ---

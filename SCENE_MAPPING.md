@@ -81,7 +81,7 @@
 | **서연** | seyoun_normal.png | 기본 표정 |
 | | seyoun_laugh.png | 웃는 표정 |
 | | seyoun_shy.png | 수줍은 표정 |
-| | seyoun_shy2.png | 더 수줍은 표정 (칭찬 반응) |
+| | seyoun_very_shy.png | 더 수줍은 표정 (칭찬 반응) |
 | | seyoun_sad.png | 슬픈 표정 |
 | | seyoun_cry.png | 우는 표정 |
 | | seyoun_angry.png | 화난 표정 |
@@ -327,7 +327,7 @@
 | 루트 | 배경 | 캐릭터 | 장면 설명 |
 |------|------|--------|-----------|
 | 다인 | gym.png → street.png | dain_active/laugh/shy | 체육관 배구 → 떡볶이 |
-| 서연 | teacher_office.png | seyoun_normal/laugh/shy/shy2 | 학생회실 노을, 어깨 마사지 |
+| 서연 | teacher_office.png | seyoun_normal/laugh/shy/very_shy | 학생회실 노을, 어깨 마사지 |
 | 유나 | yuna_hideout.png | yuna_normal/shy/smile | 별관 이어폰 공유 |
 
 ### 민수 직설 (공통)
@@ -543,7 +543,7 @@
 ### 서연 데이트 — 공원 산책
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
 |--------|------|--------|-----------|
-| date_seo_1 ~ succulent_3 | park.png | seyoun_normal/shy/shy2/laugh | 공원, 다육이 선물 |
+| date_seo_1 ~ succulent_3 | park.png | seyoun_normal/shy/very_shy/laugh | 공원, 다육이 선물 |
 | date_seo_end_b | street.png | 없음 | 거리 전환 |
 
 ### 유나 데이트 — 카페 → 서점
@@ -572,7 +572,7 @@
 | 씬 ID | 배경 | 캐릭터 | 장면 설명 |
 |--------|------|--------|-----------|
 | confess_seo_1 ~ 5 | top_school.png | seyoun_normal | **sunset: true** |
-| confess_seo_yes_1 ~ 12 | top_school.png | seyoun_normal → shy2 → shy | 고백 수락, `isDating_Seoyeon` |
+| confess_seo_yes_1 ~ 12 | top_school.png | seyoun_normal → very_shy → shy | 고백 수락, `isDating_Seoyeon` |
 | confess_seo_no_1 ~ 4 | top_school.png | seyoun_normal → sad | 고백 보류, `day4_waited` |
 
 ### 유나 고백 — 별관

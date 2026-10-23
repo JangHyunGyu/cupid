@@ -83,7 +83,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_seo_choice": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "choices": [
             {
                 "next": "confess_seo_yes_1",
@@ -173,7 +173,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_seo_yes_7": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "affinityChar": "Seoyeon",
         "affinityBranches": [
             {
@@ -202,7 +202,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_seo_yes_8": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "next": "confess_seo_yes_9",
         "framing": "intimate",
         "bgm": "confession.mp3"
@@ -224,21 +224,21 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_seo_yes_11": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "next": "confess_seo_yes_11_b",
         "framing": "close"
     },
     "confess_seo_yes_11_b": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "next": "confess_seo_yes_12",
         "framing": "close"
     },
     "confess_seo_yes_12": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "setFlags": [
             "day4_confession_accepted",
             "isDating_Seoyeon"

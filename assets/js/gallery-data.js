@@ -116,7 +116,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: '음악 감상, 독서',
                 personality: '책임감, 신중함',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'very_shy', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
 
             // 유나 - 쪽지로 문장을 고르는 독서가
@@ -205,7 +205,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Music, Reading',
                 personality: 'Responsible, Cautious',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'very_shy', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
 
             // Yuna - 쪽지로 문장을 고르는 독서가
@@ -292,7 +292,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Música, Lectura',
                 personality: 'Responsable, Prudente',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'very_shy', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -371,7 +371,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: '音楽鑑賞、読書',
                 personality: '責任感が強い、慎重',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'very_shy', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -450,7 +450,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Musique, Lecture',
                 personality: 'Responsable, Prudente',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'very_shy', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -529,7 +529,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Musik, Lesen',
                 personality: 'Verantwortungsbewusst, Bedacht',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'very_shy', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -608,7 +608,7 @@ class GalleryData {
                 bust: '36-23-35 70E',
                 hobby: 'Música, Leitura',
                 personality: 'Responsável, Cautelosa',
-                expressions: ['normal', 'shy', 'shy2', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
+                expressions: ['normal', 'shy', 'very_shy', 'angry', 'sad', 'laugh', 'cry', 'pout', 'worried', 'back', 'flushed', 'bikini']
             },
             yuna: {
                 id: 'yuna',
@@ -688,7 +688,7 @@ class GalleryData {
                 "expressions": [
                     "normal",
                     "shy",
-                    "shy2",
+                    "very_shy",
                     "angry",
                     "sad",
                     "laugh",
@@ -823,7 +823,7 @@ class GalleryData {
         ko: {
             normal: '기본',      // 기본 표정
             shy: '수줍음',       // 수줍은 표정
-            shy2: '수줍음2',     // 수줍은 표정 변형
+            very_shy: '더 수줍음',     // 약한 수줍음보다 더한 표정
             angry: '화남',       // 화난 표정
             sad: '슬픔',         // 슬픈 표정
             pain: '통증',
@@ -848,7 +848,7 @@ class GalleryData {
         en: {
             normal: 'Normal',
             shy: 'Shy',
-            shy2: 'Shy 2',
+            very_shy: 'Very shy',
             angry: 'Angry',
             sad: 'Sad',
             pain: 'Pain',
@@ -873,7 +873,7 @@ class GalleryData {
         es: {
             normal: 'Normal',
             shy: 'Tímida',
-            shy2: 'Tímida 2',
+            very_shy: 'Más tímida',
             angry: 'Enojada',
             sad: 'Triste',
             pain: 'Dolor',
@@ -898,7 +898,7 @@ class GalleryData {
         ja: {
             normal: '普段',
             shy: '照れ',
-            shy2: '照れ（強）',
+            very_shy: '強い照れ',
             angry: '怒り',
             sad: '悲しみ',
             pain: '痛み',
@@ -923,7 +923,7 @@ class GalleryData {
         fr: {
             normal: 'Normale',
             shy: 'Timide',
-            shy2: 'Timide 2',
+            very_shy: 'Très timide',
             angry: 'En colère',
             sad: 'Triste',
             pain: 'Douleur',
@@ -948,7 +948,7 @@ class GalleryData {
         de: {
             normal: 'Normal',
             shy: 'Schüchtern',
-            shy2: 'Schüchtern 2',
+            very_shy: 'Sehr schüchtern',
             angry: 'Wütend',
             sad: 'Traurig',
             pain: 'Schmerz',
@@ -973,7 +973,7 @@ class GalleryData {
         pt: {
             normal: 'Normal',
             shy: 'Tímida',
-            shy2: 'Tímida 2',
+            very_shy: 'Mais tímida',
             angry: 'Brava',
             sad: 'Triste',
             pain: 'Dor',
@@ -996,7 +996,7 @@ class GalleryData {
         zh: {
             "normal": "普通",
             "shy": "害羞",
-            "shy2": "害羞2",
+            "very_shy": "更害羞",
             "angry": "生气",
             "sad": "难过",
             "pain": "疼痛",
@@ -2597,7 +2597,7 @@ GalleryData.resolveOutfitExpression = function (scene, rawPath) {
     if (!available) return rawPath;
     const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
     if (expression === 'bikini' || expression === 'climax' || expression === 'exhausted' || expression === 'pain') return rawPath;
-    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', shy2: 'shy', active: 'normal', flushed: 'shy' };
+    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', very_shy: 'shy', shy2: 'shy', active: 'normal', flushed: 'shy' };
     const chosen = available.includes(expression) ? expression
         : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
     return `assets/images/characters/${outfit[1]}_${outfit[2]}_${chosen}.webp`;

@@ -403,7 +403,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     Seoyeon: Object.freeze({
         normal: 'assets/images/characters/seyoun_normal.png',
         shy: 'assets/images/characters/seyoun_shy.png',
-        shy2: 'assets/images/characters/seyoun_shy2.png',
+        very_shy: 'assets/images/characters/seyoun_very_shy.png',
         angry: 'assets/images/characters/seyoun_angry.png',
         sad: 'assets/images/characters/seyoun_sad.png',
         laugh: 'assets/images/characters/seyoun_laugh.png',

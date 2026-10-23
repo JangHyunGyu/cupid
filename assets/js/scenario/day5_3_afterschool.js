@@ -594,7 +594,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_last_chance_2_j": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "next": "after5_last_chance_choice"
     },
     "after5_last_chance_seo_low_1": {

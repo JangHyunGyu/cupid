@@ -113,7 +113,7 @@
 - `dain_active.png`는 체육관/운동 장면에서만 사용. 교실, 복도, 매점, 옥상 등 모든 비운동 장면에서는 `dain_normal.png` 사용
 - 나레이션 장면 (name: "나" 또는 "{name}")에서는 현재 표시 중인 캐릭터를 숨기지 않음 — 이전 장면의 캐릭터가 그대로 유지됨
 - 호감도 스탯은 캐릭터가 화면에 보이는 장면에서 항상 표시
-- **서연**: `seyoun_normal.png`, `seyoun_shy.png`, `seyoun_shy2.png`, `seyoun_laugh.png`, `seyoun_angry.png`, `seyoun_sad.png`, `seyoun_pout.png`, `seyoun_cry.png`, `seyoun_worried.png`, `seyoun_back.png`, `seyoun_bikini.png`
+- **서연**: `seyoun_normal.png`, `seyoun_shy.png`, `seyoun_very_shy.png`, `seyoun_laugh.png`, `seyoun_angry.png`, `seyoun_sad.png`, `seyoun_pout.png`, `seyoun_cry.png`, `seyoun_worried.png`, `seyoun_back.png`, `seyoun_bikini.png`
 - **유나**: `yuna_normal.png`, `yuna_shy.png`, `yuna_smile.png`, `yuna_angry.png`, `yuna_sad.png`, `yuna_bored.png`, `yuna_bikini.png`
 - **다인**: `dain_normal.png`, `dain_active.png`, `dain_shy.png`, `dain_laugh.png`, `dain_angry.png`, `dain_sad.png`, `dain_pout.png`, `dain_sweat.png`, `dain_bikini.png`
 - **담임선생님**: `teacher_normal.png`, `teacher_smile.png`, `teacher_shy.png`, `teacher_angry.png`, `teacher_sad.png`, `teacher_bikini.png`

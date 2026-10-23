@@ -575,7 +575,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_seo_sunset_joke": {
         "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "next": "after2_seo_sunset_joke_b"
     },
     "after2_seo_sunset_joke_b": {
@@ -584,7 +584,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_seo_sunset_react": {
         "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_shy2.png",
+        "character": "assets/images/characters/seyoun_very_shy.png",
         "next": "after2_seo_sunset_react_b"
     },
     "after2_seo_sunset_react_b": {

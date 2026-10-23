@@ -163,7 +163,7 @@ class GalleryFreeTalk {
 
         // 캐릭터별 표정 매핑
         this.CHAR_EXPRESSIONS = {
-            seyoun: ['normal', 'shy', 'shy2', 'pout', 'angry', 'cry', 'pain', 'laugh', 'worried', 'sad', 'flushed', 'climax'],
+            seyoun: ['normal', 'shy', 'very_shy', 'pout', 'angry', 'cry', 'pain', 'laugh', 'worried', 'sad', 'flushed', 'climax'],
             yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'cry', 'pain', 'bored', 'flushed', 'climax', 'worried', 'laugh', 'pout'],
             dain: ['normal', 'shy', 'angry', 'laugh', 'sad', 'cry', 'pain', 'pout', 'flushed', 'climax'],
             teacher: ['normal', 'angry', 'shy', 'sad', 'cry', 'pain', 'smile', 'flushed', 'climax', 'worried'],
@@ -1071,6 +1071,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         try {
             let _streamingStarted = false;
+            this._streamedExpressionKeys = new Set();
+            const expressionChoices = (() => {
+                const codes = [];
+                for (const value of this.CHAR_EXPRESSIONS[requestCharId] || []) {
+                    const code = String(value || '').trim().toLowerCase();
+                    if (!/^[a-z][a-z0-9_-]{0,31}$/.test(code) || codes.includes(code)) continue;
+                    codes.push(code);
+                }
+                if (!codes.includes('normal')) codes.unshift('normal');
+                return codes.length ? codes : ['normal'];
+            })();
             _streamingPreview = GalleryFreeTalkCore.createPacedStreamingPreview({
                 characterDelayMs: 30,
                 maxCharactersPerFrame: 1,
@@ -1098,6 +1109,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 }
             });
             const updateStreamingPreview = rawContent => {
+                const faces = GalleryFreeTalkCore.extractStreamingExpressionPreviews?.(rawContent) || [];
+                const lead = faces[0];
+                if (lead?.expression) {
+                    const key = `${requestCharId}:${lead.expression}`;
+                    if (!this._streamedExpressionKeys.has(key)) {
+                        this._streamedExpressionKeys.add(key);
+                        this._updateExpression(lead.expression, requestCharId);
+                    }
+                }
                 const preview = GalleryFreeTalkCore.extractStreamingSegmentsPreview(rawContent);
                 const previewSegments = this._sanitizeSegmentsPlaceholders(preview.segments || null) || [];
                 const previewText = previewSegments.map(segment => segment.text).join('\n\n');
@@ -1212,7 +1232,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         requestType: 'character',
                         chatMode: 'single',
                         responseSchema: 'cupid-single',
-                        responseSpeakers: [{ id: requestCharId, key: requestCharId, name: pendingCharName }],
+                        responseSpeakers: [{ id: requestCharId, key: requestCharId, name: pendingCharName, expressions: expressionChoices }],
                         outputLanguage: this.lang,
                         cacheKey: _gftCacheKey,
                         stream: wantsStream,

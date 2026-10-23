@@ -2023,18 +2023,18 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
-  "characters/seyoun_shy2": {
-    "version": "7bc1a58bafdadc4aba81cd47",
+  "characters/seyoun_very_shy": {
+    "version": "61f4f599624db6f1364bbbfe",
     "files": [
       {
-        "path": "assets/images/characters/seyoun_shy2.png",
+        "path": "assets/images/characters/seyoun_very_shy.png",
         "key": "images/42bce890a2d99b72f11b4f1ee705f1d3485143d68c16a116c7922ae0f9c902b8.png",
         "sha256": "42bce890a2d99b72f11b4f1ee705f1d3485143d68c16a116c7922ae0f9c902b8",
         "etag": "9fa748c2cc11cee7623d110bb5ba135a",
         "size": 1371635
       },
       {
-        "path": "assets/images/characters/seyoun_shy2.webp",
+        "path": "assets/images/characters/seyoun_very_shy.webp",
         "key": "images/0e12ab12b7061205549e4b677345a9fcfeea227fc732bec35b362c79b7c1881c.webp",
         "sha256": "0e12ab12b7061205549e4b677345a9fcfeea227fc732bec35b362c79b7c1881c",
         "etag": "6e25afe45b8ea4cf7b94a7defa744aeb",

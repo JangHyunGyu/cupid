@@ -350,9 +350,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
     function buildExpressionAffinityGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. 성인 성행위 절정은 climax, 직전은 flushed, 여운·탈진은 exhausted. ' + buildExhaustionExpressionGuidance(lang);
+            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. expression은 이 요청에 적힌 그 화자의 이미지 코드만 고르고, 보이는 문장보다 먼저 적습니다. ' + buildExhaustionExpressionGuidance(lang);
         }
-        return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Adult sex orgasm=climax; before: flushed; afterglow: exhausted. ' + buildExhaustionExpressionGuidance(lang);
+        return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Choose expression only from that speaker\'s image codes in this request, and write it before visible text. ' + buildExhaustionExpressionGuidance(lang);
     }
 
     function normalizeAvailableExpression(expression, validExpressions = []) {
@@ -362,7 +362,8 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
                 .filter(Boolean)
         );
         const requested = String(expression || '').toLowerCase();
-        return requested && valid.has(requested) ? requested : '';
+        const canonical = requested === 'shy2' ? 'very_shy' : requested;
+        return canonical && valid.has(canonical) ? canonical : '';
     }
 
     function normalizeNonNegativeInteger(value, fallback = 0) {
@@ -1458,6 +1459,72 @@ Latest user: """${excerpt}"""
         };
     }
 
+    function readCompleteObjectField(source, key) {
+        const escaped = String(key || '').replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const pattern = new RegExp(`"${escaped}"\\s*:\\s*"`, 'g');
+        const match = pattern.exec(String(source || ''));
+        if (!match) return '';
+        const parsed = readPartialJsonString(source, pattern.lastIndex);
+        if (!parsed.complete) return '';
+        return decodePartialJsonString(parsed.value, true).trim();
+    }
+
+    function sliceStreamingObjects(source, startIndex) {
+        const raw = String(source || '');
+        const items = [];
+        let objectStart = -1;
+        let depth = 0;
+        let inString = false;
+        let escaped = false;
+        for (let index = startIndex; index < raw.length; index += 1) {
+            const char = raw[index];
+            if (inString) {
+                if (escaped) escaped = false;
+                else if (char === '\\') escaped = true;
+                else if (char === '"') inString = false;
+                continue;
+            }
+            if (char === '"') {
+                inString = true;
+                continue;
+            }
+            if (char === '{') {
+                if (depth === 0) objectStart = index;
+                depth += 1;
+                continue;
+            }
+            if (char === '}') {
+                if (depth > 0) depth -= 1;
+                if (depth === 0 && objectStart >= 0) {
+                    items.push(raw.slice(objectStart, index + 1));
+                    objectStart = -1;
+                }
+                continue;
+            }
+            if (char === ']' && depth === 0) break;
+        }
+        if (objectStart >= 0 && depth > 0) items.push(raw.slice(objectStart));
+        return items;
+    }
+
+    function extractStreamingExpressionPreviews(rawText) {
+        const source = String(rawText || '');
+        if (!source) return [];
+        const collection = /"(?:conversations|sceneMessages)"\s*:\s*\[/.exec(source);
+        const slices = collection
+            ? sliceStreamingObjects(source, collection.index + collection[0].length)
+            : [source];
+        return slices.map((slice, index) => {
+            const expression = readCompleteObjectField(slice, 'expression').toLowerCase();
+            if (!/^[a-z][a-z0-9_-]{0,31}$/.test(expression)) return null;
+            return {
+                expression,
+                name: readCompleteObjectField(slice, 'name'),
+                index
+            };
+        }).filter(Boolean);
+    }
+
     function extractFirstStreamingConversationPreview(rawText) {
         const raw = String(rawText || '');
         const collectionMatch = /"conversations"\s*:\s*\[/.exec(raw);
@@ -2276,6 +2343,7 @@ Latest user: """${excerpt}"""
         buildCharacterAgencyTurnRule,
         buildLatestUserCanonBlock,
         extractStreamingSegmentsPreview,
+        extractStreamingExpressionPreviews,
         extractFirstStreamingConversationPreview,
         assertChatCompletionSucceeded,
         createAiResponseError,

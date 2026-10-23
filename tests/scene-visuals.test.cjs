@@ -37,6 +37,7 @@ test('new relationship artwork is connected without changing existing Haeun unlo
         }
     }
     const date = scene('date_seo_pretty_high_3');
+    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_very_shy.png'), /seyoun_date_shy/);
     assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_shy2.png'), /seyoun_date_shy/);
     assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_angry.png'), /seyoun_date_worried/);
 });

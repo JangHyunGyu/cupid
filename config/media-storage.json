@@ -1462,14 +1462,14 @@
     "size": 813866,
     "etag": "3fb04548272c96b98d47998391eb9036"
   },
-  "assets/images/characters/seyoun_shy2.png": {
+  "assets/images/characters/seyoun_very_shy.png": {
     "sourceHash": "68cb00e02ef02105d3425ef49a6ea2980f2b34aa85b966d5a2668d19fbf6f9db",
     "key": "images/42bce890a2d99b72f11b4f1ee705f1d3485143d68c16a116c7922ae0f9c902b8.png",
     "sha256": "42bce890a2d99b72f11b4f1ee705f1d3485143d68c16a116c7922ae0f9c902b8",
     "size": 1371635,
     "etag": "9fa748c2cc11cee7623d110bb5ba135a"
   },
-  "assets/images/characters/seyoun_shy2.webp": {
+  "assets/images/characters/seyoun_very_shy.webp": {
     "sourceHash": "aaba60cfe3b4b8e45194e5f043dfa76e0a555fed84d004d81bf5bc0bfbfefaf8",
     "key": "images/0e12ab12b7061205549e4b677345a9fcfeea227fc732bec35b362c79b7c1881c.webp",
     "sha256": "0e12ab12b7061205549e4b677345a9fcfeea227fc732bec35b362c79b7c1881c",

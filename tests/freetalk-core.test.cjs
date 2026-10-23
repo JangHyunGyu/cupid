@@ -30,6 +30,17 @@ function read(relativePath) {
     return fs.readFileSync(path.join(__dirname, '..', relativePath), 'utf8');
 }
 
+test('a completed expression is available before the visible reply finishes streaming', () => {
+    const partial = '{"expression":"shy","segments":[{"type":"dialogue","text":"조금만';
+    const faces = core.extractStreamingExpressionPreviews(partial);
+    assert.deepEqual(JSON.parse(JSON.stringify(faces)), [{ expression: 'shy', name: '', index: 0 }]);
+    const group = '{"conversations":[{"expression":"angry","name":"유나","segments":[{"type":"dialogue","text":"잠깐';
+    assert.deepEqual(JSON.parse(JSON.stringify(core.extractStreamingExpressionPreviews(group))), [
+        { expression: 'angry', name: '유나', index: 0 }
+    ]);
+    assert.deepEqual(JSON.parse(JSON.stringify(core.extractStreamingExpressionPreviews('{"expression":"sh'))), []);
+});
+
 test('partial structured output becomes narration and dialogue before JSON completion', () => {
     const partial = '{"segments":[{"type":"narration","text":"창가에 비가 번졌다."},{"type":"dialogue","text":"조금만 더';
     const preview = core.extractStreamingSegmentsPreview(partial);
@@ -605,6 +616,8 @@ test('outward expression remains independent from affinity direction', () => {
     assert.equal(core.normalizeAvailableExpression('sad', expressions), 'sad');
     assert.equal(core.normalizeAvailableExpression('ANGRY', expressions), 'angry');
     assert.equal(core.normalizeAvailableExpression('laugh', expressions), '');
+    assert.equal(core.normalizeAvailableExpression('shy2', ['normal', 'shy', 'very_shy']), 'very_shy');
+    assert.equal(core.normalizeAvailableExpression('very_shy', ['normal', 'shy', 'very_shy']), 'very_shy');
     assert.equal(core.normalizeAvailableExpression('', expressions), '');
     assert.match(core.buildExpressionAffinityGuidance('ko'), /기계적으로 같은 방향에 맞추지 마세요/);
     assert.match(core.buildExpressionAffinityGuidance('en'), /Do not mechanically force them in the same direction/);
@@ -1335,8 +1348,8 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.equal((scenario.match(/"next": "morning5_counteroffer_gather"/g) || []).length, 10);
     assert.equal((scenario.match(/"next": "morning5_counteroffer_group_talk"/g) || []).length, 1);
     assert.match(freeTalk, /'x-chat-mode': 'group'/);
-    assert.match(freeTalk, /responseSpeakers: this\.groupParticipants/);
-    assert.match(freeTalk, /responseSpeakers: \[\{ id: charKey, key: charKey, name: scene\.name \}\]/);
+    assert.match(freeTalk, /responseSpeakers: this\.groupParticipants\.map\(item => \(\{ id: item\.id, key: item\.id, name: item\.name, expressions: cupidExpressionImageChoices\(item\.id, item\.name\) \}\)\)/);
+    assert.match(freeTalk, /responseSpeakers: \[\{ id: charKey, key: charKey, name: scene\.name, expressions: cupidExpressionImageChoices\(charKey, scene\.name\) \}\]/);
     assert.match(freeTalk, /speakerId: charKey,[\s\S]*?speakerName: scene\.name/);
     assert.match(freeTalk, /speakerStates: rendered\.map\(item => \(\{/);
     assert.match(freeTalk, /setChatMemory\(groupKey, requestHistory\)/);
@@ -1415,7 +1428,7 @@ test('gallery free talk sends and retains explicit local actor ownership', () =>
     const galleryFreeTalk = read('assets/js/gallery-freetalk.js');
     assert.match(
         galleryFreeTalk,
-        /responseSpeakers: \[\{ id: requestCharId, key: requestCharId, name: pendingCharName \}\]/
+        /responseSpeakers: \[\{ id: requestCharId, key: requestCharId, name: pendingCharName, expressions: expressionChoices \}\]/
     );
     assert.match(
         galleryFreeTalk,

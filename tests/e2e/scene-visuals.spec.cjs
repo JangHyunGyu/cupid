@@ -35,7 +35,7 @@ for (const [width, height] of [[1440, 1000], [390, 844]]) {
         }
         await page.evaluate(async () => {
             await gameEngine.renderScene('date_seo_pretty_high_3', { restoring: true });
-            gameEngine.freeTalkSystem.applyExpression('shy2', gameEngine.sceneRenderer.getScene('date_seo_pretty_high_3'));
+            gameEngine.freeTalkSystem.applyExpression('very_shy', gameEngine.sceneRenderer.getScene('date_seo_pretty_high_3'));
         });
         await expect.poll(() => page.locator('#char-center img').getAttribute('src')).toContain('seyoun_date_shy');
         for (const [id, asset] of [['lunch_yuna_18', 'event_yuna_reading'], ['date_seo_succulent_3', 'event_seoyeon_succulent'], ['tour_seo_7', 'school_festival']]) {
