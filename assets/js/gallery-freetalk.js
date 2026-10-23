@@ -2079,7 +2079,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         // Encrypted CUPIDENC1 sprites must go through /api/media — raw static URLs blank the img.
         if (window.CupidMedia?.loadImageWithMediaFallback) {
             window.CupidMedia.unlockExpression?.(charId, resolvedExpression);
-            window.CupidMedia.loadImageWithMediaFallback(img, path);
+            window.CupidMedia.loadImageWithMediaFallback(img, path, null, null, { preservePrevious: true });
             return;
         }
         img.src = `${path}?v=${window.ASSET_VERSION || ''}`;

@@ -58,6 +58,36 @@ function bootMediaGate(options = {}) {
     return sandbox.window.CupidMedia;
 }
 
+test('expression loading retains the visible face and ignores older or failed replacements', async () => {
+    const pending = [];
+    function Image() { pending.push(this); this.decode = async () => {}; }
+    const media = bootMediaGate({ Image });
+    await media.ensureSession();
+    const img = { src: 'previous-face', getAttribute(name) { return name === 'src' ? this.src : null; } };
+    const hold = { preservePrevious: true };
+    media.loadImageWithMediaFallback(img, 'characters/dain_sad', null, null, hold);
+    media.loadImageWithMediaFallback(img, 'characters/dain_angry', null, null, hold);
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(img.src, 'previous-face');
+    pending[0].onload();
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(img.src, 'previous-face', 'superseded image cannot flash on screen');
+    pending[1].onload();
+    await new Promise(resolve => setImmediate(resolve));
+    assert.match(img.src, /dain_angry/);
+    const selected = img.src;
+    media.loadImageWithMediaFallback(img, 'characters/dain_pain', null, null, hold);
+    await new Promise(resolve => setImmediate(resolve));
+    pending[2].onerror();
+    assert.equal(img.src, selected);
+    media.loadImageWithMediaFallback(img, 'characters/dain_normal', null, null, hold);
+    await new Promise(resolve => setImmediate(resolve));
+    assert.equal(img.src, selected);
+    pending[3].onload();
+    await new Promise(resolve => setImmediate(resolve));
+    assert.match(img.src, /dain_normal/);
+});
+
 test('protected gameplay paths request WebP through the media API', () => {
     const media = bootMediaGate();
     const url = media.resolveUrl('assets/images/characters/seyoun_normal.png');

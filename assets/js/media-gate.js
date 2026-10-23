@@ -422,10 +422,23 @@
     return queueUnlock(collectAssetsFromGalleryData(data));
   }
 
-  function loadImageWithMediaFallback(img, rawPath, onload, onerror) {
+  function loadImageWithMediaFallback(img, rawPath, onload, onerror, options) {
     if (!img) return;
     var generation = (img.__cupidLoadGeneration || 0) + 1;
     img.__cupidLoadGeneration = generation;
+    // Keep the visible portrait until its replacement is ready; stale loads cannot win.
+    if (options?.preservePrevious && img.getAttribute?.('src') && global.Image) {
+      var pending = new global.Image();
+      loadImageWithMediaFallback(pending, rawPath, function () {
+        if (img.__cupidLoadGeneration !== generation) return;
+        img.onload = onload || null;
+        img.onerror = onerror || null;
+        img.src = pending.src;
+      }, function () {
+        if (img.__cupidLoadGeneration === generation && onerror) onerror();
+      });
+      return;
+    }
     var source = rawPath;
     if (typeof source === 'string' && source.indexOf('/api/media?') !== -1) {
       source = logicalFromAny(source) || source;

@@ -16,7 +16,7 @@ const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const image = { dataset: {} };
 const calls = [];
 const runtime = { window: {}, console, setTimeout, clearTimeout,
-    document: { getElementById: () => image } };
+    document: { getElementById: () => image, documentElement: { lang: 'en' } } };
 vm.createContext(runtime);
 for (const file of ['assets/js/freetalk-core.js', 'assets/js/example-dialogues-ko.js', 'assets/js/prompts.js',
     'assets/js/gallery-data.js', 'assets/js/gallery-freetalk.js', 'assets/js/modules/FreeTalkSystem.js']) {
@@ -30,6 +30,22 @@ runtime.window.CupidMedia = {
 const core = runtime.window.CupidFreeTalkCore;
 const main = runtime.window.FreeTalkSystem.prototype;
 const gallery = runtime.window.GalleryData;
+
+test('missing expressions in Main, Group and Gallery preserve the current face', () => {
+    const slot = { dataset: { groupCharId: 'Dain' }, querySelector: () => image };
+    const system = Object.assign(Object.create(main), { uiManager: { charSlots: { center: slot } },
+        groupParticipants: [{ id: 'Dain', name: 'Dain', side: 'left' }], charNameMap: {} });
+    const gallerySystem = new runtime.window.GalleryFreeTalk('en', {});
+    calls.length = 0;
+    system.applyExpression('', { name: 'Dain' });
+    system._applyGroupExpression('', 'Dain');
+    gallerySystem._updateExpression('', 'dain');
+    assert.deepEqual(calls, []);
+    const parsed = system.parseGroupJsonResponse(JSON.stringify({ conversations: [
+        { name: 'Dain', segments: [{ type: 'dialogue', text: 'Hello.' }] }
+    ] }));
+    assert.equal(parsed[0].expression, '');
+});
 
 test('all seven imported VN sprites retain native RGBA dimensions and catalog hashes', () => {
     const catalog = JSON.parse(read('config/media-storage.json'));

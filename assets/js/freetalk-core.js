@@ -1707,7 +1707,15 @@ Latest user: """${excerpt}"""
             const items = Array.isArray(parsed) ? parsed : (collection ? parsed[collection] : []);
             const parts = items.map((item, index) => {
                 const content = typeof item === 'string' ? [{ type: 'dialogue', text: displayText(item, collection ? [collection, index] : [index]) }] : segments(item, collection ? [collection, index] : [index]);
-                return content.some(segment => segment.text) ? { name: name(item), segments: content.filter(segment => segment.text) } : null;
+                const expressionPath = [...(collection ? [collection, index] : [index]), 'expression'];
+                const requestedExpression = String(item?.expression || '').trim().toLowerCase();
+                const expression = !cut.has(JSON.stringify(expressionPath)) && /^[a-z][a-z0-9_-]{0,31}$/.test(requestedExpression)
+                    ? requestedExpression : '';
+                return content.some(segment => segment.text) ? {
+                    name: name(item),
+                    segments: content.filter(segment => segment.text),
+                    ...(expression ? { expression } : {}),
+                } : null;
             }).filter(Boolean);
             if (parts.length) result[collection === 'conversations' ? 'conversations' : 'sceneMessages'] = parts;
         } else if (source && !/^[\[{"]/.test(source) && parsed === undefined && !/^<\/?(?:html|!doctype)/i.test(source)) {

@@ -2153,7 +2153,7 @@ class FreeTalkSystem {
                 side: participant.side,
                 segments,
                 text: this._sanitizeVisibleArtifacts(this.segmentsToText(segments)),
-                expression: String(conversation.expression || 'normal').toLowerCase(),
+                expression: String(conversation.expression || '').toLowerCase(),
                 affinity: Number.isFinite(Number(conversation.affinity)) ? Math.trunc(Number(conversation.affinity)) : 0
             });
         }
@@ -3103,7 +3103,7 @@ class FreeTalkSystem {
         if (window.CupidMedia?.loadImageWithMediaFallback) {
             // This expression was selected by the active conversation, not a preload.
             window.CupidMedia.unlock?.([rawPath]);
-            window.CupidMedia.loadImageWithMediaFallback(img, rawPath);
+            window.CupidMedia.loadImageWithMediaFallback(img, rawPath, null, null, { preservePrevious: true });
             return;
         }
         const url = typeof getAssetUrl === 'function' ? getAssetUrl(rawPath) : rawPath;
