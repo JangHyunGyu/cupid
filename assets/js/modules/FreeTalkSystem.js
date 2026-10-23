@@ -1873,7 +1873,7 @@ class FreeTalkSystem {
                 window.recordCupidVisibleChat?.({ charId: charKey, role: 'assistant', content: reply,
                     sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
                     conversationDay: this.stateManager.currentDay, responseMetadata: data,
-                    clientMsgId: data?.logIds?.assistant });
+                    expression: parsed.expression, clientMsgId: data?.logIds?.assistant });
                 _streamingPreview.update(pacedReplyText, parsedSegments);
                 await _streamingPreview.drain();
                 this.dialogueSystem.finishStreamingText(scene.name);
@@ -1976,7 +1976,8 @@ class FreeTalkSystem {
                             affinityCurrent: affinityResult?.value,
                             assistantRenderReceipt,
                             turnId: requestContext.turnMeta?.turnId || '',
-                            responseMetadata: data
+                            responseMetadata: data,
+                            expression: parsed.expression
                         }))
                         .catch(logError => {
                             console.warn('[Cupid FreeTalk] Could not persist chat log asynchronously', logError);
@@ -2233,7 +2234,7 @@ class FreeTalkSystem {
             window.recordCupidVisibleChat?.({ charId: 'group', role: 'assistant', content: conversation.text,
                 speakerId: conversation.speakerId, participants: this.groupParticipants,
                 sessionId: requestContext.sceneId, turnId: requestContext.turnMeta?.turnId,
-                conversationDay: this.stateManager.currentDay });
+                expression: conversation.expression, conversationDay: this.stateManager.currentDay });
             this._setGroupActiveSpeaker(conversation.speakerId);
             this.uiManager.updateNameTag(conversation.speakerName);
             if (!displayFallback) this._applyGroupExpression(conversation.expression, conversation.speakerId);

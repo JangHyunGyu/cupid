@@ -1324,7 +1324,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'assistant', content: displayText,
                 sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
                 playerName: this.progress.getPlayerName() || '', responseMetadata: data,
-                clientMsgId: data?.logIds?.assistant });
+                expression: parsed.expression, clientMsgId: data?.logIds?.assistant });
             _streamingPreview.update(pacedDisplayText, displaySegments);
             await _streamingPreview.drain();
             this._finishStreamingText();
@@ -1400,7 +1400,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         affinityCurrent: affinityResult?.value,
                         assistantRenderReceipt,
                         turnId: requestContext.turnMeta?.turnId || '',
-                        responseMetadata: data
+                        responseMetadata: data,
+                        expression: parsed.expression
                     }))
                     .catch(logError => {
                         console.warn('[Cupid GalleryFreeTalk] Could not persist chat log asynchronously', logError);

@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.347";
+const ASSET_VERSION = "2.9.348";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -978,7 +978,8 @@ function makeCupidChatLogEntry({
     model = '',
     providerRoute = '',
     outputLanguage = '',
-    logSource = ''
+    logSource = '',
+    expression = ''
 }) {
     const createdAt = new Date().toISOString();
     const entry = {
@@ -1015,6 +1016,10 @@ function makeCupidChatLogEntry({
     if (providerRoute) entry.providerRoute = String(providerRoute).substring(0, 200);
     if (outputLanguage) entry.outputLanguage = String(outputLanguage).substring(0, 35);
     if (logSource) entry.logSource = String(logSource).substring(0, 32);
+    if (role === 'assistant') {
+        const code = String(expression || '').trim().toLowerCase();
+        entry.expression = /^[a-z][a-z0-9_-]{0,63}$/.test(code) ? code : '';
+    }
     const normalizedRecoveryOccurrence = Number(recoveryOccurrence);
     if (Number.isInteger(normalizedRecoveryOccurrence) && normalizedRecoveryOccurrence > 0) {
         entry.recoveryOccurrence = normalizedRecoveryOccurrence;
@@ -1482,7 +1487,7 @@ function sendCupidPendingLogsOnPageHide() {
 // Queue before rendering or awaiting AI. The server archive uses these same IDs.
 function recordCupidVisibleChat({ charId, role, content, sessionId = '', turnId = '',
     speakerId = null, participants = [], conversationDay = null, playerName = '',
-    clientMsgId = '', responseMetadata = null, logSource = 'client-reply' } = {}) {
+    clientMsgId = '', responseMetadata = null, logSource = 'client-reply', expression = '' } = {}) {
     if (!charId || !String(content || '').trim()) return null;
     const group = charId === 'group';
     const entry = makeCupidChatLogEntry({
@@ -1493,7 +1498,7 @@ function recordCupidVisibleChat({ charId, role, content, sessionId = '', turnId 
         conversationDay: resolveCupidConversationDay(conversationDay, sessionId),
         groupParticipants: participants.map(item => String(item?.id || item)),
         ...getCupidResponseLogMetadata(responseMetadata || { turnId }, getCupidLanguage()),
-        logSource, clientMsgId: clientMsgId || (turnId
+        logSource, expression, clientMsgId: clientMsgId || (turnId
             ? `cupid-api:${turnId}:${role}${role === 'assistant' ? ':' + (speakerId || charId) : ''}` : '')
     });
     if (logSource === 'stream-preview' && enqueueCupidChatLog(entry)) scheduleCupidLogRetry(1);
@@ -1516,7 +1521,8 @@ async function saveCupidChatLog({
     affinityChange = null,
     affinityCurrent = null,
     responseMetadata = null,
-    turnId = ''
+    turnId = '',
+    expression = ''
 }) {
     responseMetadata = { ...(responseMetadata || {}), turnId: responseMetadata?.turnId || turnId };
     if (!charId) {
@@ -1552,6 +1558,7 @@ async function saveCupidChatLog({
             clientMsgId: responseMetadata?.logIds?.assistant || (responseMetadata?.turnId ? `cupid-api:${responseMetadata.turnId}:assistant:${charId}` : ''),
             affinityChange,
             affinityCurrent,
+            expression,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(charId) || []
         });
         entries.push(assistantEntry);

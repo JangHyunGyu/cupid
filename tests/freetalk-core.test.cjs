@@ -620,7 +620,11 @@ test('outward expression remains independent from affinity direction', () => {
     assert.equal(core.normalizeAvailableExpression('very_shy', ['normal', 'shy', 'very_shy']), 'very_shy');
     assert.equal(core.normalizeAvailableExpression('', expressions), '');
     assert.match(core.buildExpressionAffinityGuidance('ko'), /기계적으로 같은 방향에 맞추지 마세요/);
+    assert.match(core.buildExpressionAffinityGuidance('ko'), /몹시 지치면 exhausted/);
+    assert.match(core.buildExpressionAffinityGuidance('ko'), /하나만 있으면 그 코드를 씁니다/);
+    assert.match(core.buildExpressionAffinityGuidance('en'), /only one of those codes uses that code/);
     assert.match(core.buildExpressionAffinityGuidance('en'), /Do not mechanically force them in the same direction/);
+    assert.match(core.buildExpressionAffinityGuidance('en'), /exhausted=very tired/);
 });
 
 test('game and gallery affinity paths share the core normalizer', () => {
@@ -2025,6 +2029,33 @@ test('Cupid chat entries and every free-talk path preserve actual AI routing met
     assert.equal(entry.providerRoute, 'openrouter:provider:actual/provider-model');
     assert.equal(entry.outputLanguage, 'ja');
     assert.equal(entry.logSource, 'realtime');
+    assert.equal(entry.expression, '');
+    const faced = sandbox.__makeCupidChatLogEntry({
+        userId: 'cupid-test-user',
+        charId: 'Yuna',
+        sessionId: 'session-test',
+        role: 'assistant',
+        content: 'response',
+        context: '1:1',
+        playerName: 'player',
+        language: 'ja',
+        appId: 'cupid-ja',
+        expression: 'Flushed'
+    });
+    assert.equal(faced.expression, 'flushed');
+    const userFaced = sandbox.__makeCupidChatLogEntry({
+        userId: 'cupid-test-user',
+        charId: 'Yuna',
+        sessionId: 'session-test',
+        role: 'user',
+        content: 'hello',
+        context: '1:1',
+        playerName: 'player',
+        language: 'ja',
+        appId: 'cupid-ja',
+        expression: 'flushed'
+    });
+    assert.equal(userFaced.expression, undefined);
     assert.equal((freeTalk.match(/responseMetadata: data/g) || []).length, 3);
     assert.equal((gallery.match(/responseMetadata: data/g) || []).length, 2);
 });

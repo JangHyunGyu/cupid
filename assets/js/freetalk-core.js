@@ -350,9 +350,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
     function buildExpressionAffinityGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. expression은 이 요청에 적힌 그 화자의 이미지 코드만 고르고, 보이는 문장보다 먼저 적습니다. ' + buildExhaustionExpressionGuidance(lang);
+            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. expression은 이 요청에 적힌 그 화자의 이미지 코드만 고르고, 보이는 문장보다 먼저 적습니다. 성행위 중에는 flushed와 climax가 둘 다 있으면 그 장면에 더 맞는 쪽을 고르고, 하나만 있으면 그 코드를 씁니다. ' + buildExhaustionExpressionGuidance(lang);
         }
-        return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Choose expression only from that speaker\'s image codes in this request, and write it before visible text. ' + buildExhaustionExpressionGuidance(lang);
+        return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Choose expression only from that speaker\'s image codes in this request, and write it before visible text. During a sexual act, choose the better fit between "flushed" and "climax" when both are that speaker\'s codes. A speaker with only one of those codes uses that code. ' + buildExhaustionExpressionGuidance(lang);
     }
 
     function normalizeAvailableExpression(expression, validExpressions = []) {
