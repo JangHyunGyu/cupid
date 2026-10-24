@@ -374,7 +374,7 @@
     },
     "night2_reply_seo_react_neg": {
         "name": "서연",
-        "text": "내일 봐. *메시지가 보내지자마자 건조하게 읽음 처리된다.*"
+        "text": "내일 봐. *답장을 보내자마자 바로 읽음 표시가 뜨고 건조한 인사만 짧게 돌아온다.*"
     },
     "night2_reply_yuna_react_neg": {
         "name": "유나",

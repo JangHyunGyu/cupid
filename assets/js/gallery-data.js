@@ -1105,7 +1105,7 @@ class GalleryData {
             ,
                 name: '다음 주의 약속',
                 character: '담임선생님',
-                description: '졸업 4년 뒤 우연히 다시 만난 두 성인이 카페에서 다음 약속을 묻는 순간',
+                description: '졸업 4년 뒤 성인이 되어 우연히 다시 만난 두 사람이 카페에서 다음 약속을 묻는 순간',
                 file: 'assets/images/background/ending_true_teacher.png',
                 thumbnail: 'assets/images/background/ending_true_teacher.png'
             },
@@ -1115,7 +1115,7 @@ class GalleryData {
             ,
                 name: '안전한 곳',
                 character: '보건선생님',
-                description: '졸업 4년 뒤 다시 만나 석 달간 약속을 이어 온 두 성인이 함께 영화를 본 밤',
+                description: '졸업 4년 뒤 성인이 되어 다시 만나 석 달간 약속을 이어 온 두 사람이 함께 영화를 본 밤',
                 file: 'assets/images/background/ending_true_nurse.png',
                 thumbnail: 'assets/images/background/ending_true_nurse.png'
             },
@@ -1155,19 +1155,19 @@ class GalleryData {
             { id: 'ending_true_yuna', name: '옥상의 별', character: '유나', description: '옥상 난간에 나란히 앉아 야경과 초승달을 바라보는 밤', file: 'assets/images/background/ending_true_yuna.png', thumbnail: 'assets/images/background/ending_true_yuna.png',
                 unlockHint: "유나 트루 엔딩 도달"
             },
-            { id: 'ending_true_dain', name: '다인의 다음 약속', character: '다인', description: '병원 예약을 마친 다인이 체육관에서 어깨 하나만큼 자리를 비우고 답을 기다리는 순간', file: 'assets/images/background/ending_true_dain.png', thumbnail: 'assets/images/background/ending_true_dain.png',
+            { id: 'ending_true_dain', name: '다인의 다음 약속', character: '다인', description: '병원 예약을 마친 다인이 체육관 벤치 옆자리를 비워 두고 답을 기다리는 순간', file: 'assets/images/background/ending_true_dain.png', thumbnail: 'assets/images/background/ending_true_dain.png',
                 unlockHint: "다인 트루 엔딩 도달"
             },
-            { id: 'ending_good_seoyeon', name: '공원의 두 사람', character: '서연', description: '해질녘 공원길에서 보폭을 맞추고 다음 일정의 시간과 장소를 정한 순간', file: 'assets/images/background/ending_good_seoyeon.png', thumbnail: 'assets/images/background/ending_good_seoyeon.png',
+            { id: 'ending_good_seoyeon', name: '공원의 두 사람', character: '서연', description: '해 질 녘 공원길에서 발맞춰 걸으며 다음에 만날 시간과 장소를 정한 순간', file: 'assets/images/background/ending_good_seoyeon.png', thumbnail: 'assets/images/background/ending_good_seoyeon.png',
                 unlockHint: "서연 굿 엔딩 도달"
             },
             { id: 'ending_good_yuna', name: '옥상의 다음 장', character: '유나', description: '운동장 스피커가 꺼진 뒤에도 같은 난간 앞에 남아 다음 책갈피를 고른 순간', file: 'assets/images/background/ending_good_yuna.png', thumbnail: 'assets/images/background/ending_good_yuna.png',
                 unlockHint: "유나 굿 엔딩 도달"
             },
-            { id: 'ending_good_dain', name: '교문 앞 인사', character: '다인', description: '석양의 교문 앞에서 다인이 주먹을 내밀고 대답을 기다리는 순간', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
+            { id: 'ending_good_dain', name: '교문 앞 인사', character: '다인', description: '노을 진 교문 앞에서 다인이 주먹을 내밀고 대답을 기다리는 순간', file: 'assets/images/background/ending_good_dain.png', thumbnail: 'assets/images/background/ending_good_dain.png',
                 unlockHint: "다인 굿 엔딩 도달"
             },
-            { id: 'ending_confess_fail_seoyeon', name: '서연의 대답', character: '서연', description: '석양의 공원에서 끝까지 들은 뒤 지금은 아니라고 분명히 답하는 서연', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png',
+            { id: 'ending_confess_fail_seoyeon', name: '서연의 대답', character: '서연', description: '노을 진 공원에서 끝까지 들은 뒤 지금은 아니라고 분명히 답하는 서연', file: 'assets/images/background/ending_confess_fail_seoyeon.png', thumbnail: 'assets/images/background/ending_confess_fail_seoyeon.png',
                 unlockHint: "서연에게 고백 거절당하기"
             },
             { id: 'ending_confess_fail_yuna', name: '유나의 대답', character: '유나', description: '공원 출구까지 나란히 걸은 뒤 그 마음을 받을 수 없다고 답하는 유나', file: 'assets/images/background/ending_confess_fail_yuna.png', thumbnail: 'assets/images/background/ending_confess_fail_yuna.png',
@@ -1200,10 +1200,10 @@ class GalleryData {
             { id: 'ending_good_nurse', name: '마지막 확인', character: '보건선생님', description: '졸업식 날 상담 기록을 종결하고 졸업생과 가볍게 인사를 나누는 보건선생님', file: 'assets/images/background/ending_good_nurse.png', thumbnail: 'assets/images/background/ending_good_nurse.png',
                 unlockHint: "보건선생님 굿 엔딩 도달"
             },
-            { id: 'ending_perfect_teacher', name: '벚꽃 아래 꽃다발', character: '담임선생님', description: '졸업 4년 뒤 다시 만난 두 성인. 벚꽃 테라스에서 출간 작가가 축하 꽃다발을 건네는 순간', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png',
+            { id: 'ending_perfect_teacher', name: '벚꽃 아래 꽃다발', character: '담임선생님', description: '졸업 4년 뒤 성인이 되어 다시 만난 두 사람. 벚꽃 테라스에서 작가가 된 그녀가 꽃다발을 건네는 순간', file: 'assets/images/background/ending_perfect_teacher.png', thumbnail: 'assets/images/background/ending_perfect_teacher.png',
                 unlockHint: "담임선생님 퍼펙트 엔딩 도달"
             },
-            { id: 'ending_perfect_nurse', name: '함께 맞은 아침', character: '보건선생님', description: '졸업 5년 뒤 다시 만나 몇 달간 약속을 이어 온 두 성인이 함께 맞은 아침', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
+            { id: 'ending_perfect_nurse', name: '함께 맞은 아침', character: '보건선생님', description: '졸업 5년 뒤 성인이 되어 다시 만나 몇 달간 약속을 이어 온 두 사람이 함께 맞은 아침', file: 'assets/images/background/ending_perfect_nurse.png', thumbnail: 'assets/images/background/ending_perfect_nurse.png',
                 unlockHint: "보건선생님 퍼펙트 엔딩 도달"
             }
         ],
@@ -1960,12 +1960,12 @@ class GalleryData {
                 perfect: '{character} 루트에서 호감도 100으로 마지막 날까지 가세요.',
                 true: '{character} 루트에서 호감도 60 이상으로 마지막 날까지 가세요.',
                 good: '고백을 받아들인 {character} 루트에서 호감도 40 이상을 유지하세요.',
-                counteroffer: '{character}와의 약속 뒤 다른 사람의 제안을 받아들이고 그 결과를 확인하세요.',
+                counteroffer: '{character}에게 약속한 뒤 다른 사람의 제안을 받아들이고 그 결과를 확인하세요.',
                 bittersweet: '{character} 루트에서 호감도 40 미만으로 마지막 날까지 가세요.',
                 lateGood: '{character}의 고백을 미룬 뒤 마지막 기회에 마음을 전하세요.',
                 confessFail: '{character}의 고백을 미루고 관계가 깊어지기 전에 마지막 고백을 선택하세요.',
                 friend: '마지막 고백 대신 친구로 남는 답을 선택하세요.',
-                mayhem: '여러 약속을 잡고 그 사실이 드러난 채 마지막 날까지 가세요.',
+                mayhem: '여러 사람과 약속을 겹쳐 잡았다가 들킨 채로 마지막 날까지 가세요.',
                 unresolved: '여러 관계에 하나의 답을 정하지 않은 채 마지막 날까지 가세요.',
                 alone: '누구의 루트도 선택하지 않은 채 마지막 날까지 가세요.'
             }
@@ -2028,7 +2028,7 @@ class GalleryData {
             { id: 'morning', name: '상쾌한 아침', artist: 'Cupid OST', duration: '3:25', file: 'assets/audio/bgm/morning.mp3' },
             { id: 'daily', name: '학교 일상', artist: 'Cupid OST', duration: '3:15', file: 'assets/audio/bgm/daily.mp3' },
             { id: 'daily2', name: '평화로운 오후', artist: 'Cupid OST', duration: '3:00', file: 'assets/audio/bgm/daily2.mp3' },
-            { id: 'sunset1', name: '노을 지는 하교길', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
+            { id: 'sunset1', name: '노을 지는 하굣길', artist: 'Cupid OST', duration: '2:45', file: 'assets/audio/bgm/sunset1.mp3' },
             { id: 'sunset2', name: '노을 직전', artist: 'Cupid OST', duration: '2:50', file: 'assets/audio/bgm/sunset2.mp3' },
             { id: 'date', name: '약속 있는 오후', artist: 'Cupid OST', duration: '4:16', file: 'assets/audio/bgm/date.mp3' },
             { id: 'night1', name: '고요한 밤', artist: 'Cupid OST', duration: '3:20', file: 'assets/audio/bgm/night1.mp3' },
@@ -2313,7 +2313,7 @@ const haeunGalleryProfiles = {
         "id": "haeun",
         "name": "하은",
         "title": "대화로 가까워진 후배",
-        "shortDescription": "서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿는다. 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 단둘이 나눈 대화 끝에 연인이 된다. 서연과 주인공을 응원하다 자기 마음이 흔들리는 걸 알게 되고 미안함을 안은 채 천천히 마음을 정한다.",
+        "shortDescription": "서연을 걱정하던 학생회 후배. 어려운 말도 존댓말로 또박또박 전한다.",
         "description": "서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿는다. 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 단둘이 나눈 대화 끝에 연인이 된다. 서연과 주인공을 응원하다 자기 마음이 흔들리는 걸 알게 되고 미안함을 안은 채 천천히 마음을 정한다.",
         "age": "미공개",
         "birthday": "미공개",
@@ -2321,7 +2321,7 @@ const haeunGalleryProfiles = {
         "weight": "미공개",
         "bust": "미공개",
         "hobby": "미공개",
-        "personality": "서연을 걱정하던 후배. 남의 말보다 직접 나눈 대화를 믿는다. 불편한 일도 존댓말로 분명히 말한다. 축제 뒤 단둘이 나눈 대화 끝에 연인이 된다. 서연과 주인공을 응원하다 자기 마음이 흔들리는 걸 알게 되고 미안함을 안은 채 천천히 마음을 정한다.",
+        "personality": "예의 바름, 솔직하고 당찬 태도",
         "expressions": [
             "normal",
             "worried",
