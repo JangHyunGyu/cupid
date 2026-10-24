@@ -1904,6 +1904,8 @@ Latest user: """${excerpt}"""
                 try {
                     const init = buildRequestInit(wantsStream);
                     const requestBody = JSON.parse(init.body);
+                    requestBody.expressionDecision = true;
+                    requestBody.previousExpressions = { ...global.CupidExpressionState };
                     if (wantsStream) requestBody.responseStreaming = 'segments-v1';
                     init.body = JSON.stringify(requestBody);
                     const presentation = { ...JSON.parse(init.body), appType: 'cupid' };
@@ -2002,7 +2004,7 @@ Latest user: """${excerpt}"""
             }
             if (event?.final === true) {
                 finalPayload = event;
-                if (event.segmentStream) rawContent = event.choices?.[0]?.message?.content || rawContent;
+                if (event.segmentStream || event.expressionDecision) rawContent = event.choices?.[0]?.message?.content || rawContent;
                 return;
             }
             const delta = event?.choices?.[0]?.delta?.content;

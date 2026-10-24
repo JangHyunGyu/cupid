@@ -58,7 +58,7 @@
  * ============================================================================
  */
 
-const CACHE_VERSION = 'cupid-v3.3.270';
+const CACHE_VERSION = 'cupid-v3.3.271';
 const STATIC_CACHE = CACHE_VERSION + '-static';
 const MEDIA_CACHE = CACHE_VERSION + '-media';
 // Protected images carry their own content hash. App-only releases retain them.

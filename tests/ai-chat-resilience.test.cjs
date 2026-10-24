@@ -11,6 +11,14 @@ const completion = content => completionPayload({ choices: [{ message: { content
 const sse = (content, final = null) => new Response(`data: ${JSON.stringify({ choices: [{ delta: { content } }] })}\n\n${final ? `data: ${JSON.stringify({ final: true, ...final })}\n\n` : ''}`, { headers: { 'content-type': 'text/event-stream' } });
 const history = [{ role: 'system', content: 'Stable character canon\n===CACHE_BOUNDARY===\nCurrent turn' }, { role: 'user', content: 'Continue.' }];
 
+test('the client requests a final expression decision and preserves that decision over a draft face', async () => {
+  const final = JSON.stringify({ expression: 'sad', segments: [{ type: 'dialogue', text: 'The original reply.' }] });
+  const runtime = load([() => sse(reply, { expressionDecision: { model: 'decision-test' }, choices: [{ message: { content: final } }] })]);
+  assert.equal(JSON.parse(await runtime.run()).expression, 'sad');
+  assert.equal(runtime.requests[0].body.expressionDecision, true);
+  assert.deepEqual(runtime.requests[0].body.messages, history);
+});
+
 for (const [label, response] of [
   ['network disconnect', () => { throw new TypeError('Failed to fetch'); }],
   ['temporary gateway error', () => new Response('Bad gateway', { status: 502 })]

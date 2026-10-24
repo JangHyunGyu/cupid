@@ -1109,7 +1109,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 }
             });
             const updateStreamingPreview = rawContent => {
-                const faces = GalleryFreeTalkCore.extractStreamingExpressionPreviews?.(rawContent) || [];
+                const faces = []; // Await the completed response's expression decision.
                 const lead = faces[0];
                 if (lead?.expression) {
                     const key = `${requestCharId}:${lead.expression}`;
@@ -2072,6 +2072,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             validExprs
         );
         if (!validExprs.includes(resolvedExpression)) return;
+        (window.CupidExpressionState ||= {})[charId] = resolvedExpression;
 
         const img = document.getElementById('gft-char-img');
         if (!img) return;

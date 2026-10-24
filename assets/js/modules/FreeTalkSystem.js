@@ -1631,7 +1631,7 @@ class FreeTalkSystem {
                 }
             });
             const updateStreamingPreview = rawContent => {
-                const faces = CupidFreeTalkCore.extractStreamingExpressionPreviews?.(rawContent) || [];
+                const faces = []; // Expressions are selected after the completed reply.
                 const lead = faces[0];
                 if (lead?.expression) {
                     const key = `${charKey}:${lead.expression}`;
@@ -1939,6 +1939,7 @@ class FreeTalkSystem {
                 } else {
                     requestHistory.push({ role: "assistant",
                         content: reply,
+                        expression: parsed.expression,
                         segments: parsedSegments,
                         speakerId: charKey,
                         speakerName: scene.name
@@ -2177,6 +2178,7 @@ class FreeTalkSystem {
             .find(candidate => candidate?.dataset?.groupCharId === speakerId);
         const img = slot?.querySelector('img');
         if (src && img) {
+            (window.CupidExpressionState ||= {})[speakerId] = normalized;
             img.dataset.rawSrc = src;
             this._loadCupidProtectedImage(img, src);
         }
@@ -2417,7 +2419,7 @@ class FreeTalkSystem {
                 }
             });
             const updateGroupStreamingPreview = rawContent => {
-                const faces = CupidFreeTalkCore.extractStreamingExpressionPreviews?.(rawContent) || [];
+                const faces = []; // Never apply draft expressions to group portraits.
                 faces.forEach(face => {
                     const speaker = this.groupParticipants.find(participant => (
                         participant.name.toLowerCase() === String(face.name || '').toLowerCase()
@@ -2596,6 +2598,7 @@ class FreeTalkSystem {
                         speakerId: item.speakerId,
                         speakerName: item.speakerName,
                         content: item.text,
+                        expression: item.expression,
                         segments: item.segments
                     }))
                 });
@@ -3129,6 +3132,8 @@ class FreeTalkSystem {
             Object.keys(charExprs || {})
         );
         if (!charExprs || !charExprs[name]) return;
+        const expressionOwner = this.charNameMap?.[scene.name] || scene.name;
+        if (expressionOwner) (window.CupidExpressionState ||= {})[expressionOwner] = name;
 
         const centerSlot = this.uiManager.charSlots.center;
         if (!centerSlot) return;
