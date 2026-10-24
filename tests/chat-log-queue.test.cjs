@@ -134,7 +134,7 @@ test('a stalled response body times out, releases the flush, and lets the next r
     h.run(`enqueueCupidChatLogs(['stalled', 'next'].map(clientMsgId => ({ appId: 'cupid', clientMsgId, content: 'reply' })))`);
     const flushing = h.run('flushCupidChatLogQueue()');
     await Promise.resolve();
-    const timeout = [...h.timers.values()].find(timer => timer.delay === 15000);
+    const timeout = [...h.timers.values()].find(timer => timer.delay === 60000);
     assert.ok(timeout);
     timeout.fn();
     await flushing;

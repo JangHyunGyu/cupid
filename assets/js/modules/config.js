@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.350";
+const ASSET_VERSION = "2.9.351";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -1030,11 +1030,11 @@ function makeCupidChatLogEntry({
 // ============================================================================
 // chatbot-api 기록 전송 (대화 로그·표시 영수증·장면 기록 공통)
 // ============================================================================
-// 평소에는 keepalive 없이 일반 요청(15초 시간 제한)으로 보냅니다. 브라우저의 keepalive 전송 한도(64KB)가 차면
+// 평소에는 keepalive 없이 일반 요청(60초 시간 제한)으로 보냅니다. 브라우저의 keepalive 전송 한도(64KB)가 차면
 // 네트워크가 멀쩡해도 'Failed to fetch'로 거절되고, 그동안 이 기록들이 통째로 막히기 때문입니다.
 // keepalive는 페이지를 떠날 때(pagehide)만, error-reporter.js가 관리하는 한도 안에서 씁니다.
 // CUPID_LOG_TRANSPORT_START (tests/route-telemetry.test.cjs가 이 구간을 그대로 불러 씁니다)
-const CUPID_LOG_REQUEST_TIMEOUT_MS = 15000;
+const CUPID_LOG_REQUEST_TIMEOUT_MS = 60000;
 const CUPID_LOG_MAX_ATTEMPTS = 6;
 const CUPID_LOG_RETRY_BASE_MS = 15000;
 const CUPID_LOG_RETRY_MAX_MS = 120000;
