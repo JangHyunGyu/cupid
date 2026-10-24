@@ -2,6 +2,7 @@
  * Protected asset path helpers shared by Pages Functions.
  */
 
+import { CHARACTER_ASSET_IDS } from './character-asset-aliases.js';
 const IMAGE_EXT = ['.webp', '.png', '.jpg', '.jpeg'];
 
 /** Keep in sync with REGISTERED_CG_IDS / gallery-data CG filenames. */
@@ -67,6 +68,8 @@ export function normalizeAssetInput(raw) {
 export function toLogicalAssetId(raw) {
   let p = normalizeAssetInput(raw);
   if (!p || p.includes('..')) return null;
+  const canonical = p.replace(/\.(png|webp|jpg|jpeg)$/i, '');
+  if (Object.hasOwn(CHARACTER_ASSET_IDS, canonical)) return CHARACTER_ASSET_IDS[canonical];
   if (p.startsWith('assets/images/')) p = p.slice('assets/images/'.length);
   p = p.replace(/\.(png|webp|jpg|jpeg)$/i, '');
   return /^(?:characters|background)\/[a-z0-9_-]+$/.test(p) ? p : null;
@@ -74,7 +77,7 @@ export function toLogicalAssetId(raw) {
 
 export function isProtectedLogicalId(logicalId) {
   if (!logicalId || logicalId.includes('..')) return false;
-  if (logicalId.startsWith('characters/')) return true;
+  if (logicalId.startsWith('characters/') || logicalId.startsWith('assets/characters/')) return true;
   const base = logicalId.startsWith('background/')
     ? logicalId.slice('background/'.length)
     : logicalId;

@@ -2,6 +2,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { listProtectedAssets } = require('./lib/cupid-protected-assets.cjs');
+const { rewriteReferences } = require('./character-assets.cjs');
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
 
@@ -25,7 +26,7 @@ function buildPublic() {
       if (entry.isSymbolicLink()) throw new Error('Public build refuses symlinks: ' + rel);
       if (entry.isDirectory()) {
         if (!dir && !['assets', 'seo'].includes(entry.name)) continue;
-        if (rel === 'assets/images/masters' || rel === 'assets/images/characters') continue;
+        if (rel === 'assets/images/masters' || rel === 'assets/images/characters' || rel === 'assets/characters') continue;
         walk(rel);
       } else if (entry.isFile()) {
         if (!dir && !topLevel.test(entry.name)) continue;
@@ -46,7 +47,9 @@ function buildPublic() {
   for (const rel of publicFiles) {
     const target = path.join(output, rel);
     fs.mkdirSync(path.dirname(target), { recursive: true });
-    fs.copyFileSync(path.join(root, rel), target);
+    if (/\.(html|js|css|json|xml|txt|svg)$/.test(rel)) {
+      fs.writeFileSync(target, rewriteReferences(root, fs.readFileSync(path.join(root, rel), 'utf8')));
+    } else fs.copyFileSync(path.join(root, rel), target);
   }
   console.log(`[public] ${publicFiles.length} runtime files; protected images, masters and repository sources excluded`);
   return { output, publicFiles, protectedFiles: [...protectedFiles] };

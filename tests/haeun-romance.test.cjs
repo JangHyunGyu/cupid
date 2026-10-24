@@ -1,3 +1,4 @@
+const { resolveAssetSource } = require('../scripts/character-assets.cjs');
 const fixture = require('./affinity-fixture.cjs');
 'use strict';
 const test = require('node:test');
@@ -152,7 +153,7 @@ test('all locales have Haeun route copy, registered expressions and gallery prom
             if (!scene.routeBeforeRender) assert.ok(copy[id]?.text, `${lang}/${id}`);
         }
         assert.deepEqual(Array.from(Gallery.characters[lang].haeun.expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'cry', 'pain', 'exhausted']);
-        for (const expression of Gallery.characters[lang].haeun.expressions) assert.ok(fs.existsSync(path.join(root, `assets/images/characters/haeun_${expression}.webp`)));
+        for (const expression of Gallery.characters[lang].haeun.expressions) assert.ok(fs.existsSync(resolveAssetSource(root, `assets/images/characters/haeun_${expression}.webp`)));
         let affinity = 100;
         const talk = new context.window.GalleryFreeTalk(lang, { getPlayerName: () => 'TEST_PLAYER', getAffinity: () => affinity, getCurrentAffinity: () => affinity });
         const a = talk._buildSystemPrompt('haeun');

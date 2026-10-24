@@ -1,3 +1,5 @@
+const { resolveAssetSource } = require('./scripts/character-assets.cjs');
+const assetExists = file => require('node:fs').existsSync(resolveAssetSource(__dirname, file));
 /**
  * Cupid 시나리오 종합 검증 스크립트
  * - 씬 참조 무결성
@@ -67,7 +69,7 @@ for (const day of Object.keys(SCENARIO)) {
 
 // ===== Load i18n =====
 const i18nData = {};
-if (fs.existsSync(I18N_DIR)) {
+if (assetExists(I18N_DIR)) {
     const i18nFiles = fs.readdirSync(I18N_DIR).filter(f => f.endsWith('.json'));
     for (const file of i18nFiles) {
         try {
@@ -156,7 +158,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     // character image
     if (scene.character && typeof scene.character === 'string') {
         const imgPath = path.join(__dirname, scene.character);
-        if (!fs.existsSync(imgPath)) {
+        if (!assetExists(imgPath)) {
             errors.push('[IMG_MISSING] ' + sceneId + ': character="' + scene.character + '" file not found');
         }
     }
@@ -170,7 +172,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
             const src = typeof val === 'object' ? val.src : val;
             if (src) {
                 const imgPath = path.join(__dirname, src);
-                if (!fs.existsSync(imgPath)) {
+                if (!assetExists(imgPath)) {
                     errors.push('[IMG_MISSING] ' + sceneId + ': characters.' + pos + '="' + src + '" file not found');
                 }
             }
@@ -179,7 +181,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     // background image
     if (scene.background && typeof scene.background === 'string') {
         const bgPath = path.join(__dirname, scene.background);
-        if (!fs.existsSync(bgPath)) {
+        if (!assetExists(bgPath)) {
             errors.push('[IMG_MISSING] ' + sceneId + ': background="' + scene.background + '" file not found');
         }
     }
@@ -381,7 +383,7 @@ if (unreachable.length > 0) {
 const i18nLangs = ['en', 'ja', 'fr', 'es', 'de', 'pt', 'zh'];
 for (const lang of i18nLangs) {
     const langDir = path.join(BASE, 'i18n', lang);
-    if (!fs.existsSync(langDir)) continue;
+    if (!assetExists(langDir)) continue;
     const langData = {};
     const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
     for (const file of langFiles) {
@@ -408,7 +410,7 @@ const HTML_DIR = __dirname;
 // JS 파일 수집 (재귀 X, 지정 디렉토리만)
 const jsFiles = [];
 for (const dir of JS_DIRS) {
-    if (!fs.existsSync(dir)) continue;
+    if (!assetExists(dir)) continue;
     fs.readdirSync(dir).filter(f => f.endsWith('.js')).forEach(f => {
         const full = path.join(dir, f);
         if (!jsFiles.some(x => x.path === full)) {
@@ -571,13 +573,13 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     for (const issue of validateDirection(scene)) errors.push('[SCENE_DIRECTION] ' + sceneId + ': ' + issue);
     if (scene.bgm && scene.bgm !== 'none' && typeof scene.bgm === 'string') {
         const bgmPath = path.join(AUDIO_BGM_DIR, scene.bgm);
-        if (!fs.existsSync(bgmPath)) {
+        if (!assetExists(bgmPath)) {
             errors.push('[AUDIO_MISSING] ' + sceneId + ' (day' + day + '): bgm="' + scene.bgm + '" file not found');
         }
     }
     if (scene.sfx && typeof scene.sfx === 'string' && !scene.sfx.startsWith('synth:')) {
         const sfxPath = path.join(AUDIO_SFX_DIR, scene.sfx);
-        if (!fs.existsSync(sfxPath)) {
+        if (!assetExists(sfxPath)) {
             errors.push('[AUDIO_MISSING] ' + sceneId + ' (day' + day + '): sfx="' + scene.sfx + '" file not found');
         }
     }
@@ -592,7 +594,7 @@ try {
     const cgFileMatches = gdContent.matchAll(/file:\s*'([^']+)'/g);
     for (const m of cgFileMatches) {
         const filePath = path.join(__dirname, m[1]);
-        if (!fs.existsSync(filePath)) {
+        if (!assetExists(filePath)) {
             errors.push('[GALLERY_ASSET] gallery-data.js: CG/BGM file="' + m[1] + '" not found');
         }
     }
@@ -600,7 +602,7 @@ try {
     const thumbMatches = gdContent.matchAll(/thumbnail:\s*'([^']+)'/g);
     for (const m of thumbMatches) {
         const filePath = path.join(__dirname, m[1]);
-        if (!fs.existsSync(filePath)) {
+        if (!assetExists(filePath)) {
             errors.push('[GALLERY_ASSET] gallery-data.js: thumbnail="' + m[1] + '" not found');
         }
     }
@@ -618,7 +620,7 @@ try {
             const exprName = expr.replace(/'/g, '');
             const imgFile = charId + '_' + exprName + '.png';
             const imgPath = path.join(charImgDir, imgFile);
-            if (!fs.existsSync(imgPath)) {
+            if (!assetExists(imgPath)) {
                 errors.push('[GALLERY_ASSET] gallery-data.js: ' + charId + ' expression "' + exprName + '" → ' + imgFile + ' not found');
             }
         }
@@ -828,7 +830,7 @@ try {
 // ===== 20. i18n Text/Choices Field Completeness =====
 for (const lang of ['ko', ...i18nLangs]) {
     const langDir = path.join(BASE, 'i18n', lang);
-    if (!fs.existsSync(langDir)) continue;
+    if (!assetExists(langDir)) continue;
     const langData = {};
     const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
     for (const file of langFiles) {
@@ -859,7 +861,7 @@ for (const file of htmlFiles) {
     for (const m of scriptMatches) {
         if (m[1].startsWith('http') || m[1].startsWith('//')) continue;
         const filePath = path.join(__dirname, m[1]);
-        if (!fs.existsSync(filePath)) {
+        if (!assetExists(filePath)) {
             errors.push('[HTML_RESOURCE] ' + file.name + ': <script src="' + m[1] + '"> file not found');
         }
     }
@@ -868,7 +870,7 @@ for (const file of htmlFiles) {
     for (const m of cssMatches) {
         if (m[1].startsWith('http') || m[1].startsWith('//')) continue;
         const filePath = path.join(__dirname, m[1]);
-        if (!fs.existsSync(filePath)) {
+        if (!assetExists(filePath)) {
             errors.push('[HTML_RESOURCE] ' + file.name + ': <link href="' + m[1] + '"> file not found');
         }
     }
@@ -879,7 +881,7 @@ for (const [sceneId, { day, scene }] of Object.entries(allScenes)) {
     const checkHtmlTarget = (target, context) => {
         if (target && target.endsWith('.html')) {
             const filePath = path.join(__dirname, target);
-            if (!fs.existsSync(filePath)) {
+            if (!assetExists(filePath)) {
                 errors.push('[HTML_TARGET] ' + sceneId + ' ' + context + '="' + target + '" file not found');
             }
         }
@@ -897,7 +899,7 @@ for (const mf of manifestFiles) {
         if (manifest.icons) {
             for (const icon of manifest.icons) {
                 const iconPath = path.join(__dirname, icon.src);
-                if (!fs.existsSync(iconPath)) {
+                if (!assetExists(iconPath)) {
                     errors.push('[MANIFEST] ' + mf + ': icon "' + icon.src + '" not found');
                 }
             }
@@ -910,7 +912,7 @@ for (const mf of manifestFiles) {
 const nameFormatRegex = /[\uAC00-\uD7A3]+\([A-Za-z]+\)/;
 for (const lang of i18nLangs) {
     const langDir = path.join(BASE, 'i18n', lang);
-    if (!fs.existsSync(langDir)) continue;
+    if (!assetExists(langDir)) continue;
     const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
     for (const file of langFiles) {
         const content = fs.readFileSync(path.join(langDir, file), 'utf8');
@@ -1327,7 +1329,7 @@ const allLangData = {};
 for (const lang of allLangs) {
     allLangData[lang] = {};
     const langDir = path.join(BASE, 'i18n', lang);
-    if (!fs.existsSync(langDir)) { errors.push('[I18N_COVERAGE] ' + lang + ' 디렉토리 없음'); continue; }
+    if (!assetExists(langDir)) { errors.push('[I18N_COVERAGE] ' + lang + ' 디렉토리 없음'); continue; }
     const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
     for (const file of langFiles) {
         try { Object.assign(allLangData[lang], JSON.parse(fs.readFileSync(path.join(langDir, file), 'utf8'))); } catch (e) {}
@@ -1600,7 +1602,7 @@ try {
             for (const ev of exprValues) {
                 const fileName = ev.replace(/'/g, '');
                 const filePath = path.join(charImgDir, fileName);
-                if (!fs.existsSync(filePath)) {
+                if (!assetExists(filePath)) {
                     errors.push('[FREETALK_ASSET] gallery-freetalk.js CHAR_EXPRESSIONS ' + charId + ': "' + fileName + '" not found');
                 }
             }
@@ -1613,7 +1615,7 @@ try {
         const bgPaths = bgMapMatch[1].match(/'(assets\/[^']+)'/g) || [];
         for (const bp of bgPaths) {
             const bgFile = bp.replace(/'/g, '');
-            if (!fs.existsSync(path.join(__dirname, bgFile))) {
+            if (!assetExists(path.join(__dirname, bgFile))) {
                 errors.push('[FREETALK_ASSET] gallery-freetalk.js CHAR_BACKGROUNDS: "' + bgFile + '" not found');
             }
         }
@@ -1645,7 +1647,7 @@ for (const file of htmlFiles) {
         let target = href.replace(/^\//, '');
         if (!target.includes('.')) target += '.html';  // /index-en → index-en.html
         const filePath = path.join(__dirname, target);
-        if (!fs.existsSync(filePath)) {
+        if (!assetExists(filePath)) {
             errors.push('[NAV_LINK] ' + file.name + ': <a href="' + href + '"> → "' + target + '" not found');
         }
     }
@@ -1675,7 +1677,7 @@ try {
         const urls = precacheMatch[1].match(/'([^']+)'/g) || [];
         for (const u of urls) {
             const url = u.replace(/'/g, '');
-            if (!fs.existsSync(path.join(__dirname, url))) {
+            if (!assetExists(path.join(__dirname, url))) {
                 errors.push('[SW_CACHE] service-worker.js PRECACHE_URLS: "' + url + '" not found');
             }
         }
@@ -1834,7 +1836,7 @@ try {
 
 try {
     const promptsPath = path.join(__dirname, 'assets/js/prompts.js');
-    if (fs.existsSync(promptsPath)) {
+    if (assetExists(promptsPath)) {
         const promptsContent = fs.readFileSync(promptsPath, 'utf8');
         // FLAG_MEMORIES에서 참조하는 캐릭터 이름 확인
         const charRefs = promptsContent.matchAll(/char:\s*['"]([^'"]+)['"]/g);
@@ -2525,7 +2527,7 @@ for (const day of Object.keys(SCENARIO)) {
 
 let imageMissing = 0;
 for (const img of referencedImages) {
-    if (!fs.existsSync(path.join(__dirname, img))) {
+    if (!assetExists(path.join(__dirname, img))) {
         errors.push('[IMAGE_MISSING] ' + img + ' 파일이 존재하지 않음');
         imageMissing++;
     }
@@ -3046,7 +3048,7 @@ console.log('[I18N_HANGUL_CHECK] 비한국어 i18n 한글 유출 검증 시작..
     let hangulLeaks = 0;
     for (const lang of langs) {
         const dir = path.join(I18N_BASE, lang);
-        if (!fs.existsSync(dir)) continue;
+        if (!assetExists(dir)) continue;
         const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
         for (const file of files) {
             let data;

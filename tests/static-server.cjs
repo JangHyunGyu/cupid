@@ -5,6 +5,7 @@ const http = require('http');
 const path = require('path');
 const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
 
+const { resolveAssetSource, catalog } = require('../scripts/character-assets.cjs');
 const root = path.resolve(__dirname, '..');
 const port = Number.parseInt(process.env.CUPID_E2E_PORT || '4173', 10);
 if (!Number.isInteger(port) || port < 1 || port > 65535) {
@@ -32,14 +33,16 @@ function contentTypeForAsset(assetPath) {
 }
 
 function mediaCandidates(assetParam) {
-    const raw = String(assetParam || '').split('?')[0].replace(/^\/+/, '');
+    let raw = String(assetParam || '').split('?')[0].replace(/^\/+/, '');
+    const entry = catalog(root).data.assets.find(a => Object.values(a.files).some(f => f.source.replace(/\.[^.]+$/, '') === raw.replace(/\.[^.]+$/, '')));
+    if (entry) raw = Object.values(entry.files)[0].publicPaths[0].replace(/\.[^.]+$/, '');
     const stripped = raw.replace(/^assets\/images\//, '').replace(/\.(png|webp|jpe?g)$/i, '');
     if (!stripped || stripped.includes('..')) return [];
     const extensions = ['.webp', '.png', '.jpg', '.jpeg'];
     if (/\.png$/i.test(raw)) extensions.sort((a, b) => Number(b === '.png') - Number(a === '.png'));
     return extensions.map((ext) => ({
         relative: `assets/images/${stripped}${ext}`,
-        full: path.join(root, 'assets', 'images', `${stripped}${ext}`)
+        full: resolveAssetSource(root, `assets/images/${stripped}${ext}`)
     }));
 }
 
@@ -47,7 +50,7 @@ function sendMedia(assetParam, response) {
     try {
     for (const candidate of mediaCandidates(assetParam)) {
         if (!fs.existsSync(candidate.full) || !fs.statSync(candidate.full).isFile()) continue;
-        const plain = plainCache.get(candidate.full) || readPlainMedia(candidate.full);
+        const plain = plainCache.get(candidate.full) || readPlainMedia(path.join(root, candidate.relative));
         plainCache.set(candidate.full, plain);
         if (plain.subarray(0, 9).toString('ascii') === 'CUPIDENC1') continue;
         response.writeHead(200, {

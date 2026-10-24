@@ -1,3 +1,4 @@
+const { resolveAssetSource } = require('../scripts/character-assets.cjs');
 const fixture = require('./affinity-fixture.cjs');
 'use strict';
 const assert = require('node:assert/strict');
@@ -120,7 +121,7 @@ test('every visible new scene has seven-language copy, valid choices and existin
                 for (const field of ['context', 'personality', 'groupLocation']) assert.ok(copy[id][field], `${lang}/${id}/${field}`);
                 assert.ok(copy[id].groupChoiceState.open && copy[id].groupChoiceState.delay);
             }
-            for (const asset of [scene.character, scene.background].filter(Boolean)) assert.ok(fs.existsSync(path.join(root, asset)), asset);
+            for (const asset of [scene.character, scene.background].filter(Boolean)) assert.ok(fs.existsSync(resolveAssetSource(root, asset)), asset);
         }
     }
 });

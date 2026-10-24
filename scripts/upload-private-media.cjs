@@ -45,7 +45,7 @@ async function upload() {
       headers: { 'Content-Type': contentType, 'Cache-Control': 'private, max-age=0' } });
     const readback = Buffer.from(await (await request('/objects/' + key)).arrayBuffer());
     if (digest('sha256', readback) !== sha256) throw new Error('Readback mismatch: ' + file);
-    catalog[file] = { sourceHash: digest('sha256', fs.readFileSync(path.join(root, file))),
+    catalog[file] = { sourceHash: digest('sha256', fs.readFileSync(require('./character-assets.cjs').resolveAssetSource(root, file))),
       key, sha256, etag: digest('md5', bytes), size: bytes.length };
     console.log('Verified ' + file);
   }

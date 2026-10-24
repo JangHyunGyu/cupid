@@ -4,6 +4,7 @@ const path = require('path');
 const { loadKeyFromEnvOrFile, encryptFileInPlace, isEncryptedBuffer } = require('./lib/cupid-media-crypto.cjs');
 const { listProtectedAssets } = require('./lib/cupid-protected-assets.cjs');
 const fs = require('fs');
+const { resolveAssetSource } = require('./character-assets.cjs');
 
 async function main() {
   const root = path.resolve(__dirname, '..');
@@ -14,7 +15,7 @@ async function main() {
   let bytesIn = 0;
   let bytesOut = 0;
   for (const rel of assets) {
-    const full = path.join(root, rel);
+    const full = resolveAssetSource(root, rel);
     const before = fs.readFileSync(full);
     if (isEncryptedBuffer(before)) {
       skipped += 1;
@@ -30,6 +31,7 @@ async function main() {
       console.log('encrypted', rel);
     }
   }
+  require('./character-assets.cjs').sync(root);
   console.log(JSON.stringify({
     total: assets.length,
     encrypted,

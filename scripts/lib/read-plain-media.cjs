@@ -7,11 +7,12 @@ const { createHash } = require('crypto');
 const { isEncryptedBuffer, decryptBuffer, loadKeyFromEnvOrFile } = require('./cupid-media-crypto.cjs');
 
 const root = path.resolve(__dirname, '../..');
+const { resolveAssetSource } = require('../character-assets.cjs');
 const WRAPPER_OVERHEAD = 9 + 12 + 16;
 
 function readPlainMedia(filePath) {
   const full = path.resolve(filePath);
-  const packed = fs.readFileSync(full);
+  const packed = fs.readFileSync(resolveAssetSource(root, full));
   if (!isEncryptedBuffer(packed)) return packed;
   try {
     return decryptBuffer(packed, loadKeyFromEnvOrFile());

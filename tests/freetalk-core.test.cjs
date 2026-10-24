@@ -1,3 +1,4 @@
+const { resolveAssetSource } = require('../scripts/character-assets.cjs');
 'use strict';
 
 const assert = require('node:assert/strict');
@@ -288,7 +289,7 @@ test('gallery outings stay after the cache boundary and birthdays are calendar-o
     assert.match(read('assets/js/gallery-progress.js'), /perfectEndingCleared/);
     assert.doesNotMatch(read('assets/js/gallery-progress.js'), /trueEndingCleared && this\.isFreeTalkUnlocked/);
     assert.match(read('assets/js/scenario/day5_4_night.js'), /date_choice_perfect_yuna/);
-    assert.equal(require('node:fs').existsSync(require('node:path').join(__dirname, '../assets/images/characters/junho_normal.png')), true);
+    assert.equal(require('node:fs').existsSync(resolveAssetSource(require('node:path').join(__dirname, '..'), 'assets/images/characters/junho_normal.png')), true);
 });
 
 test('cache fingerprint ignores dynamic context after the boundary', () => {

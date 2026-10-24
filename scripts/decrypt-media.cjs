@@ -3,6 +3,7 @@
 const path = require('path');
 const { loadKeyFromEnvOrFile, decryptFileInPlace } = require('./lib/cupid-media-crypto.cjs');
 const { listProtectedAssets } = require('./lib/cupid-protected-assets.cjs');
+const { resolveAssetSource } = require('./character-assets.cjs');
 
 async function main() {
   const root = path.resolve(__dirname, '..');
@@ -11,7 +12,7 @@ async function main() {
   let decrypted = 0;
   let skipped = 0;
   for (const rel of assets) {
-    const full = path.join(root, rel);
+    const full = resolveAssetSource(root, rel);
     const result = decryptFileInPlace(full, key);
     if (result.skipped) skipped += 1;
     else {
@@ -19,6 +20,7 @@ async function main() {
       console.log('decrypted', rel);
     }
   }
+  require('./character-assets.cjs').sync(root);
   console.log(JSON.stringify({ total: assets.length, decrypted, skipped }, null, 2));
 }
 

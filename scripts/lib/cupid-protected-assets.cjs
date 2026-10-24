@@ -2,10 +2,15 @@
 
 const fs = require('fs');
 const path = require('path');
+const { catalog } = require('../character-assets.cjs');
 
 const IMAGE_EXT = new Set(['.png', '.webp', '.jpg', '.jpeg']);
 
 function listCharacterImages(rootDir) {
+  if (fs.existsSync(path.join(rootDir, 'config/character-assets.json'))) {
+    return catalog(rootDir).data.assets.flatMap(asset => Object.values(asset.files)
+      .map(file => file.publicPaths[0])).sort();
+  }
   const dir = path.join(rootDir, 'assets/images/characters');
   const out = [];
   if (!fs.existsSync(dir)) return out;

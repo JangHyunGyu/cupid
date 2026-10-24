@@ -11,6 +11,9 @@ test('legacy protected static URLs are denied before CDN lookup while ordinary b
   const sprites = await load('functions/assets/images/characters/[[path]].js');
   const backgrounds = await load('functions/assets/images/background/[[path]].js');
   assert.equal(sprites.onRequest().status, 404);
+  const canonical = await load('functions/assets/characters/[[path]].js');
+  assert.equal(canonical.onRequest().status, 404);
+  assert.equal(canonical.onRequest().headers.get('cache-control'), 'no-store');
   let staticReads = 0;
   const next = () => { staticReads++; return new Response('public-background'); };
   for (const suffix of ['ending_perfect_seoyeon.webp', 'ending_perfect_seoyeon.png?v=old', '%65nding_perfect_seoyeon.webp']) {
@@ -75,6 +78,23 @@ async function fixture() {
     cacheEntries, counters: () => ({ fetches, checks }),
     restore() { [MEDIA_MANIFEST[id], MEDIA_MANIFEST[publicId]] = original; global.caches = oldCaches; } };
 }
+
+test('every canonical sprite preserves its historical media identity and existing grants', async () => {
+  const { toLogicalAssetId } = await load('functions/_lib/media-assets.js');
+  const registry = require('../config/character-assets.json');
+  for (const asset of registry.assets) for (const file of Object.values(asset.files)) {
+    assert.equal(toLogicalAssetId(file.source), toLogicalAssetId(file.publicPaths[0]));
+  }
+  const f = await fixture();
+  try {
+    const source = registry.assets.flatMap(a => Object.values(a.files)).find(x => x.publicPaths[0].endsWith('/dain_bikini.webp')).source;
+    assert.equal((await f.serve(f.request(source))).status, 403);
+    assert.equal((await f.post([f.id])).status, 200);
+    const response = await f.serve(f.request(source));
+    assert.equal(response.status, 200);
+    assert.deepEqual(Buffer.from(await response.arrayBuffer()), f.plain);
+  } finally { f.restore(); }
+});
 
 test('signed session cannot be replaced by guest URLs, forged cookies or cross-site calls', async () => {
   const f = await fixture();
