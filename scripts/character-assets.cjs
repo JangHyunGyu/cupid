@@ -5,7 +5,7 @@ const crypto = require('node:crypto');
 const cache = new Map();
 const slash = value => value.split(path.sep).join('/');
 function inside(root, relative) {
-    if (typeof relative !== 'string' || relative.includes('\\') || relative.split('/').includes('..') || path.isAbsolute(relative)) throw new Error('Unsafe asset path: ' + relative);
+    if (typeof relative !== 'string' || relative.includes('\\') || relative.split('/').includes('..') || /^[a-z]:/i.test(relative) || path.isAbsolute(relative)) throw new Error('Unsafe asset path: ' + relative);
     const target = path.resolve(root, relative);
     if (!target.startsWith(path.resolve(root) + path.sep)) throw new Error('Asset escaped repository');
     return target;
