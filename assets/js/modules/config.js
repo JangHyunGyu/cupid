@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.353";
+const ASSET_VERSION = "2.9.354";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -200,6 +200,7 @@ const SEND_ICON = `<svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l
 
 const CUPID_IS_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent || '')
     || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+let cupidKeyboardBaselineWidth = window.innerWidth || 0;
 let cupidKeyboardBaselineHeight = Math.max(
     window.innerHeight || 0,
     document.documentElement?.clientHeight || 0,
@@ -217,8 +218,11 @@ function isCupidEditableElement(element) {
 
 function updateCupidKeyboardBaseline() {
     const viewport = window.visualViewport;
+    const width = window.innerWidth || 0;
+    const previousHeight = width === cupidKeyboardBaselineWidth ? cupidKeyboardBaselineHeight : 0;
+    cupidKeyboardBaselineWidth = width;
     cupidKeyboardBaselineHeight = Math.max(
-        cupidKeyboardBaselineHeight,
+        previousHeight,
         window.innerHeight || 0,
         document.documentElement?.clientHeight || 0,
         viewport?.height || 0
@@ -226,9 +230,9 @@ function updateCupidKeyboardBaseline() {
 }
 
 function getCupidKeyboardOffset(focusedElement = document.activeElement) {
+    updateCupidKeyboardBaseline();
     const viewport = window.visualViewport;
     if (window.innerWidth > 768 || !isCupidEditableElement(focusedElement)) {
-        updateCupidKeyboardBaseline();
         return 0;
     }
 

@@ -1038,14 +1038,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         requestContext.historyLengthBeforeTurn = historyLengthBeforeTurn;
         requestHistory.push({ role: 'user', content: finalContent });
 
-        // 전송 버튼 & 입력 비활성화 + 로딩 상태 (게임과 동일)
+        // Keep the next draft editable while the current reply is pending.
         const sendBtn = document.getElementById('chat-send');
         const originalBtnContent = sendBtn ? sendBtn.innerHTML : '';
         if (sendBtn) {
             sendBtn.disabled = true;
             sendBtn.innerHTML = '<span class="loading-dots">...</span>';
         }
-        if (input) input.disabled = true;
+        if (input) input.disabled = false;
 
         // 생각중 상태 (게임과 동일: thinking 클래스)
         const charImg = document.getElementById('gft-char-img');
@@ -1427,9 +1427,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 err.__staleTurnHandled = true;
             }
             if (!err?.__staleTurnHandled) {
-                input.value = text;
+                if (!input.value) input.value = text;
                 this._resizeInput(input);
-                if (stagedImage) {
+                if (stagedImage && !this.stagedImage) {
                     this.stagedImage = stagedImage;
                     this._setImageUploadState(false, stagedImage);
                 }

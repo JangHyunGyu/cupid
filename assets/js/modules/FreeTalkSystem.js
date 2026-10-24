@@ -1553,7 +1553,7 @@ class FreeTalkSystem {
 
         // 로딩 상태
         this.uiManager.chatSendBtn.disabled = true;
-        this.uiManager.chatInput.disabled = true;
+        this.uiManager.chatInput.disabled = false;
         const originalBtnContent = this.uiManager.chatSendBtn.innerHTML;
         this.uiManager.chatSendBtn.innerHTML = `<span class="loading-dots">...</span>`;
 
@@ -2006,9 +2006,9 @@ class FreeTalkSystem {
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
-                this.uiManager.chatInput.value = text;
+                if (!this.uiManager.chatInput.value) this.uiManager.chatInput.value = text;
                 this.uiManager.resizeChatInput?.();
-                if (stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
+                if (stagedImage && !this.uiManager.stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
                 this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                 if (this.uiManager.turnCountEl) {
                     this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
@@ -2368,7 +2368,7 @@ class FreeTalkSystem {
 
         const originalBtnContent = this.uiManager.chatSendBtn.innerHTML;
         this.uiManager.chatSendBtn.disabled = true;
-        this.uiManager.chatInput.disabled = true;
+        this.uiManager.chatInput.disabled = false;
         if (this.uiManager.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = true;
         this.uiManager.chatSendBtn.innerHTML = '<span class="loading-dots">...</span>';
         document.querySelectorAll('.group-freetalk-participant img').forEach(img => img.classList.add('thinking'));
@@ -2652,9 +2652,9 @@ class FreeTalkSystem {
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
-                this.uiManager.chatInput.value = text;
+                if (!this.uiManager.chatInput.value) this.uiManager.chatInput.value = text;
                 this.uiManager.resizeChatInput?.();
-                if (stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
+                if (stagedImage && !this.uiManager.stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
                 this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                 if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
             }
