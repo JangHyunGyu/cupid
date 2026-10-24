@@ -1645,8 +1645,8 @@
             "assets/images/characters/seyoun_laugh.png",
             "assets/characters/seoyeon/expressions/laugh/01/sprite.png"
           ],
-          "sha256": "8643de879fe955fcfa617f64da905a7e9b8b1efc2e6806693e8266af71b4ab90",
-          "bytes": 1323976
+          "sha256": "6fbce9c76ac71dfb636b6be89f2feaad5264a604746ef0871a632207bba287b0",
+          "bytes": 1775766
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/laugh/01/sprite.webp",
@@ -1654,8 +1654,8 @@
             "assets/images/characters/seyoun_laugh.webp",
             "assets/characters/seoyeon/expressions/laugh/01/sprite.webp"
           ],
-          "sha256": "ada66928085a98f0970ac34c2cf32a608e34416288f5cacfa7e29b1e40c335a8",
-          "bytes": 160309
+          "sha256": "2df3367269d5270dea14fe67134d31d2ca7e9378c17bed99450682e5eac23e4d",
+          "bytes": 846011
         }
       }
     },
@@ -1862,8 +1862,8 @@
             "assets/images/characters/seyoun_date_laugh.png",
             "assets/characters/seoyeon/outfits/date/expressions/laugh/01/sprite.png"
           ],
-          "sha256": "ac47bdb77c0e8dae119432e5ffd1c80412aefe3d1a5814adff323ce7781c8335",
-          "bytes": 7796547
+          "sha256": "0a21e99eec800d1f4d4aa86d71cfaa9e0f113bf4d2a4d8e4b1c7350ea1a8c211",
+          "bytes": 10544680
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/outfits/date/expressions/laugh/01/sprite.webp",
@@ -1871,8 +1871,8 @@
             "assets/images/characters/seyoun_date_laugh.webp",
             "assets/characters/seoyeon/outfits/date/expressions/laugh/01/sprite.webp"
           ],
-          "sha256": "dbc194384d368573e9a6a2b5b97d09d5734f240f18e682f4246fab077a02ca32",
-          "bytes": 4843289
+          "sha256": "a24e580316cfa8bec9f4bde4d2b0a5cf516d2d8a3434542fb195d4f2c7140473",
+          "bytes": 3837497
         }
       }
     },

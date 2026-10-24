@@ -1777,21 +1777,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/seyoun_date_laugh": {
-    "version": "c666ccb754e89e74db95437c",
+    "version": "10014e75edb7e3812e89b99d",
     "files": [
       {
         "path": "assets/images/characters/seyoun_date_laugh.png",
-        "key": "images/15c409d9c5e11c5911830c074ef97a66e4a31eb2b4ca7d3f9f3cecfa0c982568.png",
-        "sha256": "15c409d9c5e11c5911830c074ef97a66e4a31eb2b4ca7d3f9f3cecfa0c982568",
-        "etag": "8c314de5848596a13b3951953865d108",
-        "size": 7796510
+        "key": "images/b4f2574d656a1787d9acfb7bb535c8056ac4ab4fa6093f63282a187c47c7da08.png",
+        "sha256": "b4f2574d656a1787d9acfb7bb535c8056ac4ab4fa6093f63282a187c47c7da08",
+        "etag": "46d4d4039ea708d6e30af1f96ad00dd1",
+        "size": 10544643
       },
       {
         "path": "assets/images/characters/seyoun_date_laugh.webp",
-        "key": "images/1990ef437be7a3456595892ade1d4797d511480472553ca4f26ab5bb2d7231b7.webp",
-        "sha256": "1990ef437be7a3456595892ade1d4797d511480472553ca4f26ab5bb2d7231b7",
-        "etag": "3976410e3cbd96ff1fc1fed9a3a673fe",
-        "size": 4843252
+        "key": "images/276f75a01e6e4d04c97ae008df180fa08f0634db0f67ea781e7e0f7d54a91715.webp",
+        "sha256": "276f75a01e6e4d04c97ae008df180fa08f0634db0f67ea781e7e0f7d54a91715",
+        "etag": "8c242830dd7dde0e7c0efce6daf405b9",
+        "size": 3837460
       }
     ]
   },
@@ -1910,21 +1910,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/seyoun_laugh": {
-    "version": "7b2178e6048f2bd168520baa",
+    "version": "6059a840fe65aec63b73be57",
     "files": [
       {
         "path": "assets/images/characters/seyoun_laugh.png",
-        "key": "images/9806a14bf9231d01e2f8c3140e20f53ca5403b5092400c10be5cc98bfbbf7a3b.png",
-        "sha256": "9806a14bf9231d01e2f8c3140e20f53ca5403b5092400c10be5cc98bfbbf7a3b",
-        "etag": "e82f3f23a5c3b16df4afeb3f198ffc68",
-        "size": 1323939
+        "key": "images/c3f6610bcd1891b86b9d748ccd9ff924a8ba9ef0452d011165e50380216206d3.png",
+        "sha256": "c3f6610bcd1891b86b9d748ccd9ff924a8ba9ef0452d011165e50380216206d3",
+        "etag": "2e6e61f54e8ea8f391caf45a0724e610",
+        "size": 1775729
       },
       {
         "path": "assets/images/characters/seyoun_laugh.webp",
-        "key": "images/456cf6a8800e0816a7ef4c76ea28e85441efd54024a3ab9d39237162873c9de7.webp",
-        "sha256": "456cf6a8800e0816a7ef4c76ea28e85441efd54024a3ab9d39237162873c9de7",
-        "etag": "ca1206c4e4bffcaedaabec796b1abb2d",
-        "size": 160272
+        "key": "images/833dd196f11ca8235b70abd34846881785ab07de0171316f0f343a7b75ce0879.webp",
+        "sha256": "833dd196f11ca8235b70abd34846881785ab07de0171316f0f343a7b75ce0879",
+        "etag": "de0d3b0c777b7d56ad6f48ed251c11c1",
+        "size": 845974
       }
     ]
   },
