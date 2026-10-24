@@ -429,8 +429,30 @@
     // Keep the visible portrait until its replacement is ready; stale loads cannot win.
     if (options?.preservePrevious && img.getAttribute?.('src') && global.Image) {
       var pending = new global.Image();
-      loadImageWithMediaFallback(pending, rawPath, function () {
+      loadImageWithMediaFallback(pending, rawPath, async function () {
         if (img.__cupidLoadGeneration !== generation) return;
+        if (img.src === pending.src) return;
+        var animate = img.naturalWidth > 0 && img.parentElement && typeof img.animate === 'function'
+          && !global.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+        if (animate && img.__cupidExpressionAnimation?.playState === 'running') {
+          await img.__cupidExpressionAnimation.finished.catch(function () {});
+          if (img.__cupidLoadGeneration !== generation || img.isConnected === false) return;
+        }
+        if (animate) {
+          var old = img.cloneNode(false);
+          old.removeAttribute('id'); old.removeAttribute('alt'); old.setAttribute('aria-hidden', 'true');
+          old.classList.add('cupid-expression-outgoing');
+          Object.assign(old.style, { position: 'absolute', left: img.offsetLeft + 'px', top: img.offsetTop + 'px',
+            width: img.offsetWidth + 'px', height: img.offsetHeight + 'px', maxWidth: 'none', maxHeight: 'none',
+            pointerEvents: 'none', zIndex: '2', transition: 'none', opacity: '1' });
+          img.parentElement.appendChild(old);
+          var timing = { duration: 1500, easing: 'cubic-bezier(0.4, 0, 0.2, 1)' };
+          old.animate([{ opacity: 1 }, { opacity: 0 }], { ...timing, fill: 'forwards' }).finished.then(function () { old.remove(); }, function () { old.remove(); });
+          img.__cupidExpressionAnimation = img.animate([{ opacity: 0 }, { opacity: 1 }], timing);
+        } else {
+          img.__cupidExpressionAnimation?.cancel?.();
+          img.parentElement?.querySelectorAll?.('.cupid-expression-outgoing').forEach(function (node) { node.remove(); });
+        }
         img.onload = onload || null;
         img.onerror = onerror || null;
         img.src = pending.src;
