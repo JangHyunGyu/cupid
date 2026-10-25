@@ -1,7 +1,7 @@
 ﻿'use strict';
 const {test,expect}=require('@playwright/test');
 const {isMediaFixtureRequest}=require('./helpers/media-fixture.cjs');
-for(const [width,height]of [[320,568],[430,932],[667,375],[768,1024],[1440,900]])for(const surface of ['main','gallery'])test(`${surface}/${width}: one response keeps one variant across redraws`,async({page})=>{
+for(const [width,height]of [[320,568],[430,932],[667,375],[768,1024],[1440,900]])for(const surface of ['main','gallery'])test(`${surface}/${width}: one response keeps one variant across redraws`,async({page},testInfo)=>{
  test.setTimeout(90000);await page.setViewportSize({width,height});await page.emulateMedia({reducedMotion:'reduce'});
  await page.route('**/*',async route=>{const request=route.request();if(request.method()!=='POST'||isMediaFixtureRequest(request))return route.continue();return route.fulfill({json:{ok:true}});});
  if(surface==='gallery'){
@@ -18,9 +18,8 @@ for(const [width,height]of [[320,568],[430,932],[667,375],[768,1024],[1440,900]]
   const assets=[];for(let turn=0;turn<7;turn++){owner._activeChatTurnId='variant-e2e-'+turn;const first=draw();if(draw()!==first)throw Error('same reply redrew');assets.push(first);}return assets;
  },surface);
  expect(new Set(selected.slice(0,6)).size).toBe(6);expect(selected[5]).not.toBe(selected[6]);
- const image=surface==='gallery'?page.locator('#gft-char-img'):page.locator('#center-slot img');
  await expect.poll(()=>page.evaluate(surface=>{const img=surface==='gallery'?document.getElementById('gft-char-img'):window.gameEngine.uiManager.charSlots.center.querySelector('img');return img.complete&&img.naturalWidth>0;},surface)).toBe(true);
  await page.setViewportSize({width,height:Math.max(320,height-100)});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);
- if([320,1440].includes(width))await page.screenshot({path:`D:/workspace/_workspace/model-trace-20261026/variants/${surface}-${width}.png`});
+ if([320,1440].includes(width))await page.screenshot({path:testInfo.outputPath(`${surface}-${width}.png`)});
 });
