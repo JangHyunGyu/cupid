@@ -1954,6 +1954,7 @@ class FreeTalkSystem {
                         { checkpoint: () => this.stateManager.freeTalkCheckpoint })
                     : { applied: true, value: commitTurn() };
                 if (!turnResult.applied) throw this._makeStaleTurnError('This conversation turn was already committed');
+                const avatarAsset = window.getCupidChatAvatarAsset?.(this.uiManager.charSlots?.center?.querySelector('img')) || '';
                 try {
                     window.saveGameState?.();
                 } catch (saveError) {
@@ -1978,7 +1979,8 @@ class FreeTalkSystem {
                             assistantRenderReceipt,
                             turnId: requestContext.turnMeta?.turnId || '',
                             responseMetadata: data,
-                            expression: parsed.expression
+                            expression: parsed.expression,
+                            avatarAsset
                         }))
                         .catch(logError => {
                             console.warn('[Cupid FreeTalk] Could not persist chat log asynchronously', logError);
@@ -2240,6 +2242,8 @@ class FreeTalkSystem {
             this._setGroupActiveSpeaker(conversation.speakerId);
             this.uiManager.updateNameTag(conversation.speakerName);
             if (!displayFallback) this._applyGroupExpression(conversation.expression, conversation.speakerId);
+            const portrait = Object.values(this.uiManager?.charSlots || {}).find(slot => slot?.dataset?.groupCharId === conversation.speakerId)?.querySelector('img');
+            const avatarAsset = window.getCupidChatAvatarAsset?.(portrait) || '';
             if (index === 0 && streamingPreview) {
                 const pacedConversationText = Array.isArray(conversation.segments) && conversation.segments.length > 0
                     ? conversation.segments.map(segment => segment.text).join('\n\n')
@@ -2261,7 +2265,7 @@ class FreeTalkSystem {
                 conversation.speakerName,
                 conversation.segments
             );
-            rendered.push({ ...conversation, renderReceipt });
+            rendered.push({ ...conversation, renderReceipt, avatarAsset });
             const remaining = conversations.length - index - 1;
             if (remaining > 0) await this._waitForGroupMessageAdvance(requestContext, remaining);
         }
@@ -2580,6 +2584,8 @@ class FreeTalkSystem {
                 speakerId: item.speakerId,
                 speakerName: item.speakerName,
                 content: item.text,
+                expression: item.expression,
+                avatarAsset: item.avatarAsset,
                 affinityChange: item.affinityResult?.change,
                 affinityCurrent: item.affinityResult?.value,
                 renderReceipt: item.renderReceipt
@@ -3100,6 +3106,7 @@ class FreeTalkSystem {
     _loadCupidProtectedImage(img, rawPath) {
         if (!img || !rawPath) return;
         if (img.dataset) {
+            img.dataset.cupidAvatarAsset = rawPath;
             img.dataset.rawSrc = window.CupidMedia?.resolveUrl?.(rawPath)
                 || (typeof getAssetUrl === 'function' ? getAssetUrl(rawPath) : rawPath);
         }

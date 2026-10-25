@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.355";
+const ASSET_VERSION = "2.9.356";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -983,7 +983,8 @@ function makeCupidChatLogEntry({
     providerRoute = '',
     outputLanguage = '',
     logSource = '',
-    expression = ''
+    expression = '',
+    avatarAsset = ''
 }) {
     const createdAt = new Date().toISOString();
     const entry = {
@@ -1023,6 +1024,7 @@ function makeCupidChatLogEntry({
     if (role === 'assistant') {
         const code = String(expression || '').trim().toLowerCase();
         entry.expression = /^[a-z][a-z0-9_-]{0,63}$/.test(code) ? code : '';
+        if (/^assets\/images\/characters\/[a-z0-9_-]+\.(?:webp|png)$/.test(avatarAsset)) entry.avatarAsset = avatarAsset;
     }
     const normalizedRecoveryOccurrence = Number(recoveryOccurrence);
     if (Number.isInteger(normalizedRecoveryOccurrence) && normalizedRecoveryOccurrence > 0) {
@@ -1512,6 +1514,18 @@ function recordCupidVisibleChat({ charId, role, content, sessionId = '', turnId 
 }
 window.recordCupidVisibleChat = recordCupidVisibleChat;
 
+// Snapshot the selected logical portrait, never an expiring media URL or a blob URL.
+function getCupidChatAvatarAsset(img) {
+    let raw = img?.dataset?.cupidAvatarAsset || img?.dataset?.rawSrc || img?.getAttribute?.('src') || '';
+    if (raw.includes('/api/media?')) {
+        try { raw = new URL(raw, 'https://cupid.archerlab.dev').searchParams.get('asset') || ''; } catch (_) { return ''; }
+    }
+    const logical = window.CupidMedia?.toLogicalAssetId?.(raw)
+        || String(raw).split('?')[0].replace(/^assets\/images\//, '').replace(/\.(png|webp)$/, '');
+    return /^characters\/[a-z0-9_-]+$/.test(logical) ? `assets/images/${logical}.webp` : '';
+}
+window.getCupidChatAvatarAsset = getCupidChatAvatarAsset;
+
 // user/assistant 메시지 한 페어를 D1에 저장. 전송 실패 시 오프라인 큐에서 복구한다.
 async function saveCupidChatLog({
     charId,
@@ -1526,7 +1540,8 @@ async function saveCupidChatLog({
     affinityCurrent = null,
     responseMetadata = null,
     turnId = '',
-    expression = ''
+    expression = '',
+    avatarAsset = ''
 }) {
     responseMetadata = { ...(responseMetadata || {}), turnId: responseMetadata?.turnId || turnId };
     if (!charId) {
@@ -1563,6 +1578,7 @@ async function saveCupidChatLog({
             affinityChange,
             affinityCurrent,
             expression,
+            avatarAsset,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(charId) || []
         });
         entries.push(assistantEntry);
@@ -1646,6 +1662,8 @@ async function saveCupidGroupChatLog({
             content: assistantContent,
             speakerId,
             affinityChange: message.affinityChange,
+            expression: message.expression || '',
+            avatarAsset: message.avatarAsset || '',
             affinityCurrent: message.affinityCurrent,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(speakerId) || [],
             clientMsgId: responseMetadata?.logIds?.assistants?.[speakerId] || (turnId ? `cupid-api:${turnId}:assistant:${speakerId}` : '') || makeCupidGroupChatLogClientId({

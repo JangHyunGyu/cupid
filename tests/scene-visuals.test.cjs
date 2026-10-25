@@ -5,6 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { loadCorpus, inspect } = require('../scripts/audit-scene-visuals.cjs');
 const root = path.resolve(__dirname, '..');
+const { resolveAssetSource } = require('../scripts/character-assets.cjs');
 
 test('new relationship artwork is connected without changing existing Haeun unlock thresholds', () => {
     const festival = fs.readFileSync(path.join(root, 'assets/images/background/school_festival.png'));
@@ -108,7 +109,7 @@ test('all new protected outfit files have deterministic native-resolution recove
     const { readPlainMedia } = require('../scripts/lib/read-plain-media.cjs');
     for (const [id, outfits] of Object.entries(GalleryData.OUTFIT_EXPRESSIONS)) for (const [outfit, expressions] of Object.entries(outfits)) for (const expression of expressions) {
         const relative = `assets/images/characters/${id}_${outfit}_${expression}.webp`;
-        const packed = fs.readFileSync(path.join(root, relative));
+        const packed = fs.readFileSync(resolveAssetSource(root, relative));
         assert.equal(packed.subarray(0, 9).toString(), 'CUPIDENC1');
         const bytes = readPlainMedia(path.join(root, relative));
         assert.equal(bytes.subarray(0, 4).toString(), 'RIFF');

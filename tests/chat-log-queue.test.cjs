@@ -39,6 +39,32 @@ function harness(post = async () => new Response('{"ok":true}')) {
         acks: () => JSON.parse(storage.get('cupid_pending_render_acks_v1') || '[]') };
 }
 
+test('single, gallery and group log payloads retain selected portrait snapshots and group expressions', async () => {
+    const h=harness(),source=fs.readFileSync(path.join(__dirname,'../assets/js/modules/config.js'),'utf8');
+    vm.runInContext(source.slice(source.indexOf('async function saveCupidChatLog('),source.indexOf('function limitCupidLogText(')),h.context);
+    const saved=[];
+    Object.assign(h.context,{getCupidDeviceId:()=> 'fixture',getCupidLanguage:()=> 'en',getCupidAppId:()=> 'cupid',
+        getCurrentCupidConversationDay:()=>1,resolveCupidConversationDay:day=>day,normalizeCupidConversationDay:day=>day,
+        getCupidResponseLogMetadata:()=>({}),normalizeCupidChatLogAffinity:value=>value??null,
+        persistCupidChatLogEntries:async entries=>saved.push(...entries),URL});
+    const portrait='assets/images/characters/seyoun_date_shy.webp';
+    await h.context.saveCupidChatLog({charId:'Seoyeon',assistantContent:'Hello',sessionId:'day4_date',expression:'shy',avatarAsset:portrait});
+    await h.context.saveCupidChatLog({charId:'Seoyeon',assistantContent:'Hello',sessionId:'gallery-freetalk',expression:'shy',avatarAsset:portrait});
+    await h.context.saveCupidGroupChatLog({turnId:'fixture',participants:['Seoyeon','Yuna'],assistantMessages:[{speakerId:'Seoyeon',content:'Hello',expression:'shy',avatarAsset:portrait},{speakerId:'Yuna',content:'Hi',expression:'sad',avatarAsset:'assets/images/characters/yuna_sad.webp'}]});
+    assert.equal(saved.length,4);
+    assert.ok(saved.slice(0,3).every(e=>e.avatarAsset===portrait&&e.expression==='shy'));
+    assert.equal(saved[3].avatarAsset,'assets/images/characters/yuna_sad.webp');
+    assert.equal(saved[3].expression,'sad');
+    const select=h.context.getCupidChatAvatarAsset;
+    assert.equal(select({dataset:{cupidAvatarAsset:portrait,rawSrc:'wrong'}}),portrait);
+    assert.equal(select({dataset:{rawSrc:'/api/media?asset=assets%2Fimages%2Fcharacters%2Fyuna_sad.png&guest=private'}}),'assets/images/characters/yuna_sad.webp');
+    assert.equal(select({dataset:{rawSrc:'blob:secret'}}),'');
+    h.run(`enqueueCupidChatLog(${JSON.stringify(saved[0])})`);
+    assert.equal(h.logs()[0].avatarAsset,portrait);
+    await h.run('flushCupidChatLogQueue()');
+    assert.equal(h.requests.at(-1).body.avatarAsset,portrait);
+});
+
 test('retryable server errors survive six attempts and recover with the original ID', async () => {
     let status = 503;
     const h = harness(async () => new Response('{"ok":true}', { status }));

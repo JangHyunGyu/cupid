@@ -4,6 +4,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const { createHash } = require('node:crypto');
 const root = path.resolve(__dirname, '..');
+const { resolveAssetSource } = require('./character-assets.cjs');
 const languages = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
 const visualKeys = new Set(['background', 'backgroundVariant', 'character', 'characters', 'night', 'sunset', 'timeOfDay']);
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex');
@@ -66,7 +67,7 @@ function inspect() {
     const ledger = rows.map(row => {
         const scene = row.scene, text = locales.ko[row.id] || {}, shown = assets(scene);
         for (const asset of [scene.background, ...shown].filter(Boolean)) {
-            if (!fs.existsSync(path.join(root, asset))) errors.push(`${row.id}: missing ${asset}`);
+            if (!fs.existsSync(resolveAssetSource(root, asset))) errors.push(`${row.id}: missing ${asset}`);
         }
         if (scene.timeOfDay && !['day', 'sunset', 'night'].includes(scene.timeOfDay)) errors.push(`${row.id}: invalid timeOfDay`);
         const expectedActor = actorNames[text.name];
@@ -99,7 +100,7 @@ function inspect() {
     for (const lang of languages) for (const character of Object.values(GalleryData.characters[lang])) {
         for (const expression of character.expressions) {
             const stem = `assets/images/characters/${character.id}_${expression}`;
-            if (!['.png', '.webp'].some(ext => fs.existsSync(path.join(root, stem + ext)))) errors.push(`${lang}: missing gallery expression ${stem}`);
+            if (!['.png', '.webp'].some(ext => fs.existsSync(resolveAssetSource(root, stem + ext)))) errors.push(`${lang}: missing gallery expression ${stem}`);
             if (!GalleryData.getExpressionName(lang, expression)) errors.push(`${lang}: missing expression label ${expression}`);
         }
     }

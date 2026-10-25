@@ -1333,6 +1333,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
             if (!displayFallback) this._updateExpression(parsed.expression, requestCharId);
+            const avatarAsset = window.getCupidChatAvatarAsset?.(document.getElementById('gft-char-img')) || '';
             this._assertRequestContext(requestContext, data);
             const incidentResult = displayFallback ? { affinityChange: 0 } : this._commitGalleryIncidentTurn({
                 charId: requestCharId,
@@ -1401,7 +1402,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         assistantRenderReceipt,
                         turnId: requestContext.turnMeta?.turnId || '',
                         responseMetadata: data,
-                        expression: parsed.expression
+                        expression: parsed.expression,
+                        avatarAsset
                     }))
                     .catch(logError => {
                         console.warn('[Cupid GalleryFreeTalk] Could not persist chat log asynchronously', logError);
@@ -2077,6 +2079,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const img = document.getElementById('gft-char-img');
         if (!img) return;
         const path = `assets/images/characters/${charId}_${resolvedExpression}.png`;
+        if (img.dataset) img.dataset.cupidAvatarAsset = path;
         // Encrypted CUPIDENC1 sprites must go through /api/media — raw static URLs blank the img.
         if (window.CupidMedia?.loadImageWithMediaFallback) {
             window.CupidMedia.unlockExpression?.(charId, resolvedExpression);

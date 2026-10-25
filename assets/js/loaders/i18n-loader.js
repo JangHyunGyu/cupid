@@ -6,7 +6,7 @@
     window.I18N_DATA = window.I18N_DATA || {};
     const lang = window.GAME_LANG || 'ko';
     const locales = [lang];
-    const I18N_ASSET_VERSION = '2.9.355';
+    const I18N_ASSET_VERSION = '2.9.356';
     
     // We have 20 scenario files. We could hardcode them or use a list.
     // Given Cupid's 5 days x 4 slots, they are:
