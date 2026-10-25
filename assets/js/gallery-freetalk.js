@@ -1332,8 +1332,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             _streamingPreview = null;
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
-            if (!displayFallback) this._updateExpression(parsed.expression, requestCharId);
-            const avatarAsset = window.getCupidChatAvatarAsset?.(document.getElementById('gft-char-img')) || '';
+            const selection = displayFallback ? null : this._updateExpression(parsed.expression, requestCharId);
+            const avatarAsset = window.getCupidChatAvatarAsset?.(document.getElementById('gft-char-img'))
+                || selection?.avatarAsset
+                || '';
+            const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
+                || window.getCupidExpressionVariantId?.(avatarAsset, parsed.expression)
+                || '';
             this._assertRequestContext(requestContext, data);
             const incidentResult = displayFallback ? { affinityChange: 0 } : this._commitGalleryIncidentTurn({
                 charId: requestCharId,
@@ -1405,6 +1410,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         turnId: requestContext.turnMeta?.turnId || '',
                         responseMetadata: data,
                         expression: parsed.expression,
+                        expressionVariant,
                         avatarAsset
                     }))
                     .catch(logError => {
@@ -2086,14 +2092,28 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             : defaultPath;
         const variantMatch = path.match(/\/([a-z0-9]+)_([a-z0-9_]+)\.(?:png|webp)$/i);
         const unlockExpr = (variantMatch && variantMatch[1] === charId) ? variantMatch[2] : resolvedExpression;
+        const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(path)
+            || window.getCupidChatAvatarAsset?.({ dataset: { cupidAvatarAsset: path } })
+            || '';
+        const expressionVariant = window.normalizeCupidExpressionVariant?.(
+            window.getCupidExpressionVariantId?.(path || avatarAsset, resolvedExpression)
+        ) || '';
+        this._lastExpressionSelection = {
+            owner: charId,
+            expression: resolvedExpression,
+            path: path || '',
+            avatarAsset,
+            expressionVariant
+        };
         if (img.dataset) img.dataset.cupidAvatarAsset = path;
         // Encrypted CUPIDENC1 sprites must go through /api/media — raw static URLs blank the img.
         if (window.CupidMedia?.loadImageWithMediaFallback) {
             window.CupidMedia.unlockExpression?.(charId, unlockExpr);
             window.CupidMedia.loadImageWithMediaFallback(img, path, null, null, { preservePrevious: true });
-            return;
+            return this._lastExpressionSelection;
         }
         img.src = `${path}?v=${window.ASSET_VERSION || ''}`;
+        return this._lastExpressionSelection;
     }
 
     _applyAffinityChange(change, charId = this.currentCharId, latestUserText = '') {

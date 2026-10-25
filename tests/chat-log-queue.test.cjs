@@ -55,6 +55,8 @@ test('single, gallery and group log payloads retain selected portrait snapshots 
     assert.ok(saved.slice(0,3).every(e=>e.avatarAsset===portrait&&e.expression==='shy'));
     assert.equal(saved[3].avatarAsset,'assets/images/characters/yuna_sad.webp');
     assert.equal(saved[3].expression,'sad');
+    // Date outfit paths are not shuffle-bag variants of expression "shy".
+    assert.equal(saved[0].expressionVariant, undefined);
     const select=h.context.getCupidChatAvatarAsset;
     assert.equal(select({dataset:{cupidAvatarAsset:portrait,rawSrc:'wrong'}}),portrait);
     assert.equal(select({dataset:{rawSrc:'/api/media?asset=assets%2Fimages%2Fcharacters%2Fyuna_sad.png&guest=private'}}),'assets/images/characters/yuna_sad.webp');
@@ -63,6 +65,53 @@ test('single, gallery and group log payloads retain selected portrait snapshots 
     assert.equal(h.logs()[0].avatarAsset,portrait);
     await h.run('flushCupidChatLogQueue()');
     assert.equal(h.requests.at(-1).body.avatarAsset,portrait);
+});
+
+test('climax variant selection is written into the chat-log payload as expressionVariant and avatarAsset', async () => {
+    const h=harness(),source=fs.readFileSync(path.join(__dirname,'../assets/js/modules/config.js'),'utf8');
+    vm.runInContext(source.slice(source.indexOf('async function saveCupidChatLog('),source.indexOf('function limitCupidLogText(')),h.context);
+    const saved=[];
+    Object.assign(h.context,{getCupidDeviceId:()=> 'fixture',getCupidLanguage:()=> 'en',getCupidAppId:()=> 'cupid',
+        getCurrentCupidConversationDay:()=>1,resolveCupidConversationDay:day=>day,normalizeCupidConversationDay:day=>day,
+        getCupidResponseLogMetadata:()=>({}),normalizeCupidChatLogAffinity:value=>value??null,
+        persistCupidChatLogEntries:async entries=>saved.push(...entries),URL});
+
+    const climaxVariantPath='assets/images/characters/dain_climax_02.png';
+    const climaxAvatar=h.context.getCupidChatAvatarAssetFromPath(climaxVariantPath);
+    assert.equal(climaxAvatar,'assets/images/characters/dain_climax_02.webp');
+    assert.equal(h.context.getCupidExpressionVariantId(climaxVariantPath,'climax'),'02');
+    assert.equal(h.context.getCupidExpressionVariantId(climaxAvatar,'climax'),'02');
+    assert.equal(h.context.getCupidExpressionVariantId('assets/images/characters/dain_climax.webp','climax'),'01');
+
+    await h.context.saveCupidChatLog({
+        charId:'Dain',
+        assistantContent:'...',
+        sessionId:'gallery-freetalk',
+        expression:'climax',
+        expressionVariant:'02',
+        avatarAsset:climaxAvatar
+    });
+    assert.equal(saved.length,1);
+    assert.equal(saved[0].expression,'climax');
+    assert.equal(saved[0].expressionVariant,'02');
+    assert.equal(saved[0].avatarAsset,climaxAvatar);
+
+    // Derives variant id from avatarAsset when expressionVariant was omitted by the caller.
+    saved.length=0;
+    await h.context.saveCupidChatLog({
+        charId:'Dain',
+        assistantContent:'...',
+        sessionId:'day5_talk',
+        expression:'climax',
+        avatarAsset:climaxAvatar
+    });
+    assert.equal(saved[0].expressionVariant,'02');
+
+    h.run(`enqueueCupidChatLog(${JSON.stringify(saved[0])})`);
+    await h.run('flushCupidChatLogQueue()');
+    assert.equal(h.requests.at(-1).body.expressionVariant,'02');
+    assert.equal(h.requests.at(-1).body.avatarAsset,climaxAvatar);
+    assert.equal(h.requests.at(-1).body.expression,'climax');
 });
 
 test('retryable server errors survive six attempts and recover with the original ID', async () => {

@@ -1954,7 +1954,13 @@ class FreeTalkSystem {
                         { checkpoint: () => this.stateManager.freeTalkCheckpoint })
                     : { applied: true, value: commitTurn() };
                 if (!turnResult.applied) throw this._makeStaleTurnError('This conversation turn was already committed');
-                const avatarAsset = window.getCupidChatAvatarAsset?.(this.uiManager.charSlots?.center?.querySelector('img')) || '';
+                const selected = this._lastExpressionSelection || null;
+                const avatarAsset = window.getCupidChatAvatarAsset?.(this.uiManager.charSlots?.center?.querySelector('img'))
+                    || selected?.avatarAsset
+                    || '';
+                const expressionVariant = window.normalizeCupidExpressionVariant?.(selected?.expressionVariant)
+                    || window.getCupidExpressionVariantId?.(avatarAsset, parsed.expression)
+                    || '';
                 try {
                     window.saveGameState?.();
                 } catch (saveError) {
@@ -1980,6 +1986,7 @@ class FreeTalkSystem {
                             turnId: requestContext.turnMeta?.turnId || '',
                             responseMetadata: data,
                             expression: parsed.expression,
+                            expressionVariant,
                             avatarAsset
                         }))
                         .catch(logError => {
@@ -2179,6 +2186,20 @@ class FreeTalkSystem {
         const src = (baseSrc && typeof window.pickCharacterExpressionVariant === 'function')
             ? window.pickCharacterExpressionVariant(speakerId, normalized, baseSrc, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
             : baseSrc;
+        const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(src)
+            || window.getCupidChatAvatarAsset?.({ dataset: { cupidAvatarAsset: src } })
+            || '';
+        const expressionVariant = window.normalizeCupidExpressionVariant?.(
+            window.getCupidExpressionVariantId?.(src || avatarAsset, normalized)
+        ) || '';
+        const selection = {
+            owner: speakerId,
+            expression: normalized,
+            path: src || '',
+            avatarAsset,
+            expressionVariant
+        };
+        this._lastExpressionSelection = selection;
         const slot = Object.values(this.uiManager?.charSlots || {})
             .find(candidate => candidate?.dataset?.groupCharId === speakerId);
         const img = slot?.querySelector('img');
@@ -2187,6 +2208,7 @@ class FreeTalkSystem {
             img.dataset.rawSrc = src;
             this._loadCupidProtectedImage(img, src);
         }
+        return selection;
     }
 
     // Each group speaker is scored independently: every character may gain up to +3 per turn on its own,
@@ -2244,9 +2266,16 @@ class FreeTalkSystem {
                 expression: conversation.expression, conversationDay: this.stateManager.currentDay });
             this._setGroupActiveSpeaker(conversation.speakerId);
             this.uiManager.updateNameTag(conversation.speakerName);
-            if (!displayFallback) this._applyGroupExpression(conversation.expression, conversation.speakerId);
+            const selection = displayFallback
+                ? null
+                : this._applyGroupExpression(conversation.expression, conversation.speakerId);
             const portrait = Object.values(this.uiManager?.charSlots || {}).find(slot => slot?.dataset?.groupCharId === conversation.speakerId)?.querySelector('img');
-            const avatarAsset = window.getCupidChatAvatarAsset?.(portrait) || '';
+            const avatarAsset = window.getCupidChatAvatarAsset?.(portrait)
+                || selection?.avatarAsset
+                || '';
+            const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
+                || window.getCupidExpressionVariantId?.(avatarAsset, conversation.expression)
+                || '';
             if (index === 0 && streamingPreview) {
                 const pacedConversationText = Array.isArray(conversation.segments) && conversation.segments.length > 0
                     ? conversation.segments.map(segment => segment.text).join('\n\n')
@@ -2268,7 +2297,7 @@ class FreeTalkSystem {
                 conversation.speakerName,
                 conversation.segments
             );
-            rendered.push({ ...conversation, renderReceipt, avatarAsset });
+            rendered.push({ ...conversation, renderReceipt, avatarAsset, expressionVariant });
             const remaining = conversations.length - index - 1;
             if (remaining > 0) await this._waitForGroupMessageAdvance(requestContext, remaining);
         }
@@ -2589,6 +2618,7 @@ class FreeTalkSystem {
                 content: item.text,
                 expression: item.expression,
                 avatarAsset: item.avatarAsset,
+                expressionVariant: item.expressionVariant,
                 affinityChange: item.affinityResult?.change,
                 affinityCurrent: item.affinityResult?.value,
                 renderReceipt: item.renderReceipt
@@ -3152,6 +3182,19 @@ class FreeTalkSystem {
         const rawPath = (basePath === charExprs[name] && typeof window.pickCharacterExpressionVariant === 'function')
             ? window.pickCharacterExpressionVariant(expressionOwner || scene.name, name, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
             : basePath;
+        const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(rawPath)
+            || window.getCupidChatAvatarAsset?.({ dataset: { cupidAvatarAsset: rawPath } })
+            || '';
+        const expressionVariant = window.normalizeCupidExpressionVariant?.(
+            window.getCupidExpressionVariantId?.(rawPath || avatarAsset, name)
+        ) || '';
+        this._lastExpressionSelection = {
+            owner: expressionOwner || scene.name,
+            expression: name,
+            path: rawPath || '',
+            avatarAsset,
+            expressionVariant
+        };
         const existingImg = centerSlot.querySelector('img');
         if (existingImg) {
             this._loadCupidProtectedImage(existingImg, rawPath);
@@ -3162,6 +3205,7 @@ class FreeTalkSystem {
             centerSlot.appendChild(img);
             this._loadCupidProtectedImage(img, rawPath);
         }
+        return this._lastExpressionSelection;
     }
 
     /**

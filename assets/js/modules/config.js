@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.357";
+const ASSET_VERSION = "2.9.358";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -958,6 +958,27 @@ function getCupidResponseLogMetadata(payload = {}, fallbackOutputLanguage = '') 
     };
 }
 
+
+// D1 expression_variant is the shuffle-bag image id (01, 02, ...), not a full path.
+function getCupidExpressionVariantId(assetPath, expression = '') {
+    const file = String(assetPath || '').split('?')[0].split('/').pop() || '';
+    const match = file.match(/^[a-z0-9]+_([a-z0-9_]+?)(?:_(\d{2}))?\.(?:webp|png)$/i);
+    if (!match) return '';
+    const exprBody = match[1].toLowerCase();
+    const suffix = match[2] || '';
+    const expr = String(expression || '').trim().toLowerCase();
+    if (expr) {
+        if (exprBody === expr) return suffix || '01';
+        return '';
+    }
+    return suffix || '';
+}
+
+function normalizeCupidExpressionVariant(value) {
+    const id = String(value || '').trim();
+    return /^[a-z0-9][a-z0-9_-]{0,31}$/i.test(id) ? id.slice(0, 32) : '';
+}
+
 function makeCupidChatLogEntry({
     userId,
     charId,
@@ -984,6 +1005,7 @@ function makeCupidChatLogEntry({
     outputLanguage = '',
     logSource = '',
     expression = '',
+    expressionVariant = '',
     avatarAsset = ''
 }) {
     const createdAt = new Date().toISOString();
@@ -1025,6 +1047,9 @@ function makeCupidChatLogEntry({
         const code = String(expression || '').trim().toLowerCase();
         entry.expression = /^[a-z][a-z0-9_-]{0,63}$/.test(code) ? code : '';
         if (/^assets\/images\/characters\/[a-z0-9_-]+\.(?:webp|png)$/.test(avatarAsset)) entry.avatarAsset = avatarAsset;
+        const variant = normalizeCupidExpressionVariant(expressionVariant)
+            || (entry.expression ? getCupidExpressionVariantId(entry.avatarAsset || avatarAsset, entry.expression) : '');
+        if (entry.expression && variant) entry.expressionVariant = variant;
     }
     const normalizedRecoveryOccurrence = Number(recoveryOccurrence);
     if (Number.isInteger(normalizedRecoveryOccurrence) && normalizedRecoveryOccurrence > 0) {
@@ -1526,6 +1551,14 @@ function getCupidChatAvatarAsset(img) {
 }
 window.getCupidChatAvatarAsset = getCupidChatAvatarAsset;
 
+// Normalize a picked sprite path the same way as an <img> snapshot.
+function getCupidChatAvatarAssetFromPath(rawPath) {
+    return getCupidChatAvatarAsset({ dataset: { cupidAvatarAsset: String(rawPath || '') } });
+}
+window.getCupidChatAvatarAssetFromPath = getCupidChatAvatarAssetFromPath;
+window.getCupidExpressionVariantId = getCupidExpressionVariantId;
+window.normalizeCupidExpressionVariant = normalizeCupidExpressionVariant;
+
 // user/assistant 메시지 한 페어를 D1에 저장. 전송 실패 시 오프라인 큐에서 복구한다.
 async function saveCupidChatLog({
     charId,
@@ -1541,6 +1574,7 @@ async function saveCupidChatLog({
     responseMetadata = null,
     turnId = '',
     expression = '',
+    expressionVariant = '',
     avatarAsset = ''
 }) {
     responseMetadata = { ...(responseMetadata || {}), turnId: responseMetadata?.turnId || turnId };
@@ -1578,6 +1612,7 @@ async function saveCupidChatLog({
             affinityChange,
             affinityCurrent,
             expression,
+            expressionVariant,
             avatarAsset,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(charId) || []
         });
@@ -1663,6 +1698,7 @@ async function saveCupidGroupChatLog({
             speakerId,
             affinityChange: message.affinityChange,
             expression: message.expression || '',
+            expressionVariant: message.expressionVariant || '',
             avatarAsset: message.avatarAsset || '',
             affinityCurrent: message.affinityCurrent,
             affinityCorrectionIds: window.CupidAffinityCorrections?.ids(speakerId) || [],
