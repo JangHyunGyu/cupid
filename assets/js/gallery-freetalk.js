@@ -2078,11 +2078,16 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         const img = document.getElementById('gft-char-img');
         if (!img) return;
-        const path = `assets/images/characters/${charId}_${resolvedExpression}.png`;
+        const defaultPath = `assets/images/characters/${charId}_${resolvedExpression}.png`;
+        const path = typeof window.pickCharacterExpressionVariant === 'function'
+            ? window.pickCharacterExpressionVariant(charId, resolvedExpression, defaultPath)
+            : defaultPath;
+        const variantMatch = path.match(/\/([a-z0-9]+)_([a-z0-9_]+)\.(?:png|webp)$/i);
+        const unlockExpr = (variantMatch && variantMatch[1] === charId) ? variantMatch[2] : resolvedExpression;
         if (img.dataset) img.dataset.cupidAvatarAsset = path;
         // Encrypted CUPIDENC1 sprites must go through /api/media — raw static URLs blank the img.
         if (window.CupidMedia?.loadImageWithMediaFallback) {
-            window.CupidMedia.unlockExpression?.(charId, resolvedExpression);
+            window.CupidMedia.unlockExpression?.(charId, unlockExpr);
             window.CupidMedia.loadImageWithMediaFallback(img, path, null, null, { preservePrevious: true });
             return;
         }

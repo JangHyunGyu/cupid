@@ -63,3 +63,43 @@ test('main and gallery free talk register climax with a strict actual-climax gua
     assert.match(core, /climax는 성인 간 성행위에서 이번 응답에 절정이 있을 때만/);
     assert.match(core, /Use climax only for an orgasm in this response during consensual adult sex/);
 });
+
+test('all 57 multi-variant expression sprites are registered in GalleryData and randomly selected in FreeTalk', () => {
+    const sandbox = { window: {}, console };
+    vm.runInNewContext(read('assets/js/gallery-data.js').toString('utf8'), sandbox);
+    vm.runInNewContext(read('assets/js/freetalk-core.js').toString('utf8'), sandbox);
+    vm.runInNewContext(read('assets/js/prompts.js').toString('utf8'), sandbox);
+
+    const GalleryData = sandbox.window.GalleryData;
+    for (const lang of languages) {
+        for (const [charId, variantGroups] of Object.entries(GalleryData.EXPRESSION_VARIANTS)) {
+            const char = GalleryData.getCharacter(lang, charId);
+            for (const [baseExpr, suffixes] of Object.entries(variantGroups)) {
+                const baseReq = GalleryData.getExpressionRequirement(charId, baseExpr);
+                for (const suffix of suffixes) {
+                    const variantCode = `${baseExpr}_${suffix}`;
+                    assert.ok(char.expressions.includes(variantCode), `${lang}/${charId} missing ${variantCode}`);
+                    assert.notEqual(GalleryData.getExpressionName(lang, variantCode), variantCode);
+                    assert.equal(GalleryData.getExpressionRequirement(charId, variantCode), baseReq);
+                }
+            }
+        }
+    }
+
+    // Verify shuffle-bag covers all variants without immediate repeat
+    for (const [charKey, exprMap] of Object.entries(sandbox.window.CHARACTER_EXPRESSION_VARIANTS)) {
+        if (!['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse', 'Haeun', 'Minsu'].includes(charKey)) continue;
+        for (const [expr, expectedList] of Object.entries(exprMap)) {
+            const seen = new Set();
+            let prev = '';
+            for (let i = 0; i < expectedList.length * 2; i++) {
+                const picked = sandbox.window.pickCharacterExpressionVariant(charKey, expr, expectedList[0]);
+                assert.ok(expectedList.includes(picked), `Unexpected variant ${picked} for ${charKey}/${expr}`);
+                if (expectedList.length > 1) assert.notEqual(picked, prev, `Immediate repeat on ${charKey}/${expr}`);
+                prev = picked;
+                seen.add(picked);
+            }
+            assert.equal(seen.size, expectedList.length, `Shuffle bag must cover all ${expectedList.length} variants for ${charKey}/${expr}`);
+        }
+    }
+});

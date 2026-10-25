@@ -2579,10 +2579,31 @@ GalleryData.OUTFIT_EXPRESSIONS = Object.freeze({
     dain: { date: ['normal', 'laugh', 'shy', 'sweat', 'angry', 'sad'] },
     nurse: { home: ['normal', 'smile', 'shy', 'sad', 'angry'] }
 });
+GalleryData.EXPRESSION_VARIANTS = Object.freeze({
+    seyoun: {
+        flushed: ['02', '03', '04', '05', '06'],
+        climax: ['02', '03', '04', '05', '06']
+    },
+    yuna: {
+        climax: ['02', '03', '04', '05', '06', '07', '08', '09']
+    },
+    dain: {
+        climax: ['02', '03', '04', '05', '06', '07', '08', '09', '10', '11']
+    },
+    teacher: {
+        climax: ['02', '03', '04', '05', '06', '07', '08', '09', '10']
+    },
+    nurse: {
+        climax: ['02', '03', '04', '05', '06', '07', '08', '09']
+    },
+    haeun: {
+        climax: ['02', '03', '04', '05', '06', '07', '08']
+    }
+});
 GalleryData.getExpressionRequirement = function (charId, expression) {
     const baseExpressions = (this.getCharacter('ko', charId)?.expressions || ['normal'])
-        .filter(name => name !== 'exhausted' && !/^(date|home)_/.test(name));
-    const base = String(expression).replace(/^(date|home)_/, '');
+        .filter(name => name !== 'exhausted' && !/^(date|home)_/.test(name) && !/_[0-9]{2}$/.test(name));
+    const base = String(expression).replace(/^(date|home)_/, '').replace(/_[0-9]{2}$/, '');
     if (charId === 'haeun') {
         return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, smile: 60, sad: 20, cry: 20, pain: 20 })[base] ?? 100;
     }
@@ -2596,7 +2617,7 @@ GalleryData.resolveOutfitExpression = function (scene, rawPath) {
     const available = this.OUTFIT_EXPRESSIONS[outfit[1]]?.[outfit[2]];
     if (!available) return rawPath;
     const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
-    if (expression === 'bikini' || expression === 'climax' || expression === 'exhausted' || expression === 'pain') return rawPath;
+    if (expression === 'bikini' || expression === 'climax' || /^(?:climax|flushed)_[0-9]{2}$/.test(expression) || expression === 'exhausted' || expression === 'pain') return rawPath;
     const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', very_shy: 'shy', shy2: 'shy', active: 'normal', flushed: 'shy' };
     const chosen = available.includes(expression) ? expression
         : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
@@ -2619,6 +2640,27 @@ for (const [lang, label] of Object.entries(outfitLabels)) {
                 const id = `${outfit}_${expression}`;
                 if (!GalleryData.characters[lang][charId].expressions.includes(id)) GalleryData.characters[lang][charId].expressions.push(id);
                 GalleryData.expressions[lang][id] = `${label[outfit]} · ${GalleryData.getExpressionName(lang, expression)}`;
+            }
+        }
+    }
+    for (const [charId, variantGroups] of Object.entries(GalleryData.EXPRESSION_VARIANTS)) {
+        const charEntry = GalleryData.characters[lang]?.[charId];
+        if (!charEntry || !Array.isArray(charEntry.expressions)) continue;
+        for (const [baseExpr, suffixList] of Object.entries(variantGroups)) {
+            const baseLabel = GalleryData.getExpressionName(lang, baseExpr);
+            let insertAfter = charEntry.expressions.indexOf(baseExpr);
+            for (const suffix of suffixList) {
+                const variantExpr = `${baseExpr}_${suffix}`;
+                const num = Number.parseInt(suffix, 10);
+                GalleryData.expressions[lang][variantExpr] = `${baseLabel} ${num}`;
+                if (!charEntry.expressions.includes(variantExpr)) {
+                    if (insertAfter >= 0) {
+                        charEntry.expressions.splice(insertAfter + 1, 0, variantExpr);
+                        insertAfter++;
+                    } else {
+                        charEntry.expressions.push(variantExpr);
+                    }
+                }
             }
         }
     }

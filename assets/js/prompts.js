@@ -516,6 +516,97 @@ window.CHARACTER_EXPRESSIONS = Object.freeze({
     'School Nurse': CHARACTER_EXPRESSION_PATHS.Nurse
 });
 
+const makeCharacterExpressionVariants = (charId, expr, maxVariant) => {
+    const list = [`assets/images/characters/${charId}_${expr}.png`];
+    for (let i = 2; i <= maxVariant; i++) {
+        list.push(`assets/images/characters/${charId}_${expr}_${String(i).padStart(2, '0')}.png`);
+    }
+    return Object.freeze(list);
+};
+
+const CHARACTER_EXPRESSION_VARIANT_PATHS = Object.freeze({
+    Seoyeon: Object.freeze({
+        flushed: makeCharacterExpressionVariants('seyoun', 'flushed', 6),
+        climax: makeCharacterExpressionVariants('seyoun', 'climax', 6)
+    }),
+    Yuna: Object.freeze({
+        climax: makeCharacterExpressionVariants('yuna', 'climax', 9)
+    }),
+    Dain: Object.freeze({
+        climax: makeCharacterExpressionVariants('dain', 'climax', 11)
+    }),
+    Teacher: Object.freeze({
+        climax: makeCharacterExpressionVariants('teacher', 'climax', 10)
+    }),
+    Nurse: Object.freeze({
+        climax: makeCharacterExpressionVariants('nurse', 'climax', 9)
+    }),
+    Haeun: Object.freeze({
+        climax: makeCharacterExpressionVariants('haeun', 'climax', 8)
+    }),
+    Minsu: Object.freeze({
+        climax: makeCharacterExpressionVariants('minsu', 'climax', 6)
+    })
+});
+
+window.CHARACTER_EXPRESSION_VARIANTS = Object.freeze({
+    Seoyeon: CHARACTER_EXPRESSION_VARIANT_PATHS.Seoyeon,
+    seyoun: CHARACTER_EXPRESSION_VARIANT_PATHS.Seoyeon,
+    seoyeon: CHARACTER_EXPRESSION_VARIANT_PATHS.Seoyeon,
+    Yuna: CHARACTER_EXPRESSION_VARIANT_PATHS.Yuna,
+    yuna: CHARACTER_EXPRESSION_VARIANT_PATHS.Yuna,
+    Dain: CHARACTER_EXPRESSION_VARIANT_PATHS.Dain,
+    dain: CHARACTER_EXPRESSION_VARIANT_PATHS.Dain,
+    Teacher: CHARACTER_EXPRESSION_VARIANT_PATHS.Teacher,
+    teacher: CHARACTER_EXPRESSION_VARIANT_PATHS.Teacher,
+    'Homeroom Teacher': CHARACTER_EXPRESSION_VARIANT_PATHS.Teacher,
+    Nurse: CHARACTER_EXPRESSION_VARIANT_PATHS.Nurse,
+    nurse: CHARACTER_EXPRESSION_VARIANT_PATHS.Nurse,
+    'Health Teacher': CHARACTER_EXPRESSION_VARIANT_PATHS.Nurse,
+    'School Nurse': CHARACTER_EXPRESSION_VARIANT_PATHS.Nurse,
+    Haeun: CHARACTER_EXPRESSION_VARIANT_PATHS.Haeun,
+    haeun: CHARACTER_EXPRESSION_VARIANT_PATHS.Haeun,
+    Minsu: CHARACTER_EXPRESSION_VARIANT_PATHS.Minsu,
+    minsu: CHARACTER_EXPRESSION_VARIANT_PATHS.Minsu,
+    '민수': CHARACTER_EXPRESSION_VARIANT_PATHS.Minsu
+});
+
+const _expressionVariantShuffleBags = new Map();
+
+function pickCharacterExpressionVariant(charKey, expression, fallbackPath = '', randomFn = Math.random) {
+    const normalizedKey = normalizePromptCharacterKey(charKey) || String(charKey || '').trim();
+    const variantMap = window.CHARACTER_EXPRESSION_VARIANTS?.[normalizedKey]
+        || window.CHARACTER_EXPRESSION_VARIANTS?.[charKey]
+        || null;
+    const exprKey = String(expression || '').trim().toLowerCase();
+    const variants = variantMap?.[exprKey];
+    if (!Array.isArray(variants) || variants.length <= 1) {
+        return fallbackPath || (Array.isArray(variants) && variants[0]) || '';
+    }
+    const bagId = `${normalizedKey}:${exprKey}`;
+    let state = _expressionVariantShuffleBags.get(bagId);
+    if (!state || !Array.isArray(state.remaining)) {
+        state = { remaining: [], last: '' };
+        _expressionVariantShuffleBags.set(bagId, state);
+    }
+    if (state.remaining.length === 0) {
+        const next = variants.slice();
+        const rng = typeof randomFn === 'function' ? randomFn : Math.random;
+        for (let i = next.length - 1; i > 0; i--) {
+            const j = Math.min(i, Math.max(0, Math.floor(rng() * (i + 1))));
+            [next[i], next[j]] = [next[j], next[i]];
+        }
+        if (next.length > 1 && next[0] === state.last) {
+            [next[0], next[1]] = [next[1], next[0]];
+        }
+        state.remaining = next;
+    }
+    const chosen = state.remaining.shift();
+    state.last = chosen;
+    return chosen;
+}
+window.pickCharacterExpressionVariant = pickCharacterExpressionVariant;
+
 // 영어 예시를 번역하게 두면 비영어권 출력이 영어 어순을 따라가기 쉽다.
 // 각 로케일의 실제 구어 리듬을 짧은 앵커로 직접 제공한다.
 const LOCALIZED_FREE_TALK_VOICE_EXAMPLES = {

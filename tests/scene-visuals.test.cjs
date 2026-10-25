@@ -30,7 +30,7 @@ test('new relationship artwork is connected without changing existing Haeun unlo
         assert.equal(GalleryData.getExpressionRequirement('haeun', expression), requirement);
     }
     for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
-        assert.deepEqual(Array.from(GalleryData.getCharacter(lang, 'haeun').expressions), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'cry', 'pain', 'exhausted']);
+        assert.deepEqual(Array.from(GalleryData.getCharacter(lang, 'haeun').expressions).filter(e => !/_[0-9]{2}$/.test(e)), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'cry', 'pain', 'exhausted']);
         for (const id of ['event_seoyeon_succulent', 'event_yuna_reading']) {
             const cg = GalleryData.cg[lang].filter(cg => cg.id === id);
             assert.equal(cg.length, 1);
@@ -76,7 +76,7 @@ test('outfit variants never lower or raise existing expression unlock thresholds
     for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
         for (const [id, outfits] of Object.entries(GalleryData.OUTFIT_EXPRESSIONS)) {
             const char = GalleryData.getCharacter(lang, id);
-            const base = char.expressions.filter(expr => expr !== 'exhausted' && !/^(date|home)_/.test(expr));
+            const base = char.expressions.filter(expr => expr !== 'exhausted' && !/^(date|home)_/.test(expr) && !/_[0-9]{2}$/.test(expr));
             assert.equal(GalleryData.getExpressionRequirement(id, 'exhausted'), 100);
             for (const [index, expr] of base.entries()) {
                 const expected = Math.round(index / (base.length - 1) * 100);

@@ -2175,7 +2175,10 @@ class FreeTalkSystem {
             expression,
             Object.keys(expressions || {})
         );
-        const src = expressions?.[normalized];
+        const baseSrc = expressions?.[normalized];
+        const src = (baseSrc && typeof window.pickCharacterExpressionVariant === 'function')
+            ? window.pickCharacterExpressionVariant(speakerId, normalized, baseSrc)
+            : baseSrc;
         const slot = Object.values(this.uiManager?.charSlots || {})
             .find(candidate => candidate?.dataset?.groupCharId === speakerId);
         const img = slot?.querySelector('img');
@@ -3145,7 +3148,10 @@ class FreeTalkSystem {
         const centerSlot = this.uiManager.charSlots.center;
         if (!centerSlot) return;
 
-        const rawPath = window.GalleryData?.resolveOutfitExpression?.(scene, charExprs[name]) || charExprs[name];
+        const basePath = window.GalleryData?.resolveOutfitExpression?.(scene, charExprs[name]) || charExprs[name];
+        const rawPath = (basePath === charExprs[name] && typeof window.pickCharacterExpressionVariant === 'function')
+            ? window.pickCharacterExpressionVariant(expressionOwner || scene.name, name, basePath)
+            : basePath;
         const existingImg = centerSlot.querySelector('img');
         if (existingImg) {
             this._loadCupidProtectedImage(existingImg, rawPath);
@@ -3295,7 +3301,10 @@ class FreeTalkSystem {
                     // 🔧 centerSlot이 없으면 표정 변경 스킵
                     if (!centerSlot) continue;
 
-                                        const rawPath = charExprs[exprName];
+                                        const basePath = charExprs[exprName];
+                    const rawPath = typeof window.pickCharacterExpressionVariant === 'function'
+                        ? window.pickCharacterExpressionVariant(this.charNameMap?.[scene.name] || scene.name, exprName, basePath)
+                        : basePath;
 
                     // 이미 이미지가 있으면 src만 변경, 없으면 새로 생성
                     const existingImg = centerSlot.querySelector('img');
