@@ -572,37 +572,54 @@ window.CHARACTER_EXPRESSION_VARIANTS = Object.freeze({
 });
 
 const _expressionVariantShuffleBags = new Map();
+const _expressionVariantTurns = new Map();
+let _expressionVariantStorageLoaded = false;
+const _expressionVariantStorageKey = 'expression-variants:v1:cupid';
 
-function pickCharacterExpressionVariant(charKey, expression, fallbackPath = '', randomFn = Math.random) {
+function pickCharacterExpressionVariant(charKey, expression, fallbackPath = '', randomFn = Math.random, context = {}) {
     const normalizedKey = normalizePromptCharacterKey(charKey) || String(charKey || '').trim();
     const variantMap = window.CHARACTER_EXPRESSION_VARIANTS?.[normalizedKey]
-        || window.CHARACTER_EXPRESSION_VARIANTS?.[charKey]
-        || null;
+        || window.CHARACTER_EXPRESSION_VARIANTS?.[charKey] || null;
     const exprKey = String(expression || '').trim().toLowerCase();
     const variants = variantMap?.[exprKey];
-    if (!Array.isArray(variants) || variants.length <= 1) {
-        return fallbackPath || (Array.isArray(variants) && variants[0]) || '';
+    if (!Array.isArray(variants) || variants.length <= 1) return fallbackPath || variants?.[0] || '';
+    let storage;
+    try { storage = window.CupidStorage || window.localStorage; } catch (_) { /* Memory-only when storage is denied. */ }
+    if (!_expressionVariantStorageLoaded) {
+        _expressionVariantStorageLoaded = true;
+        try {
+            const saved = JSON.parse(storage?.getItem(_expressionVariantStorageKey) || '{}');
+            for (const [key, value] of Object.entries(saved || {}).slice(-512)) _expressionVariantShuffleBags.set(key, value);
+        } catch (_) { /* Ignore malformed state. */ }
     }
-    const bagId = `${normalizedKey}:${exprKey}`;
+    const owner = Object.entries(CHARACTER_EXPRESSION_VARIANT_PATHS).find(([, value]) => value === variantMap)?.[0] || normalizedKey;
+    const bagId = JSON.stringify([context.scope || '', owner, exprKey]);
+    const turn = String(context.turn || ''), turnKey = JSON.stringify([bagId, turn]);
+    const signature = JSON.stringify(variants);
     let state = _expressionVariantShuffleBags.get(bagId);
-    if (!state || !Array.isArray(state.remaining)) {
-        state = { remaining: [], last: '' };
-        _expressionVariantShuffleBags.set(bagId, state);
-    }
-    if (state.remaining.length === 0) {
-        const next = variants.slice();
-        const rng = typeof randomFn === 'function' ? randomFn : Math.random;
-        for (let i = next.length - 1; i > 0; i--) {
-            const j = Math.min(i, Math.max(0, Math.floor(rng() * (i + 1))));
-            [next[i], next[j]] = [next[j], next[i]];
+    if (!state || state.signature !== signature || !Array.isArray(state.remaining)) state = { signature, remaining: [], last: state?.last || '' };
+    let chosen = turn ? (_expressionVariantTurns.get(turnKey) || (state.turn === turn ? state.choice : ''))
+        : context.reuse ? state.last : '';
+    if (!variants.includes(chosen)) {
+        let remaining = [...new Set(state.remaining)].filter(path => variants.includes(path));
+        if (!remaining.length) {
+            remaining = [...variants];
+            const rng = typeof randomFn === 'function' ? randomFn : Math.random;
+            for (let i = remaining.length - 1; i > 0; i--) {
+                const j = Math.min(i, Math.max(0, Math.floor(rng() * (i + 1))));
+                [remaining[i], remaining[j]] = [remaining[j], remaining[i]];
+            }
+            if (remaining.length > 1 && remaining[0] === state.last) [remaining[0], remaining[1]] = [remaining[1], remaining[0]];
         }
-        if (next.length > 1 && next[0] === state.last) {
-            [next[0], next[1]] = [next[1], next[0]];
-        }
-        state.remaining = next;
+        chosen = remaining.shift();
+        _expressionVariantShuffleBags.set(bagId, { signature, remaining, last: chosen, turn, choice: chosen });
+        if (_expressionVariantShuffleBags.size > 512) _expressionVariantShuffleBags.delete(_expressionVariantShuffleBags.keys().next().value);
+        try { storage?.setItem(_expressionVariantStorageKey, JSON.stringify(Object.fromEntries(_expressionVariantShuffleBags))); } catch (_) { /* Keep the in-memory bag. */ }
     }
-    const chosen = state.remaining.shift();
-    state.last = chosen;
+    if (turn) {
+        _expressionVariantTurns.set(turnKey, chosen);
+        if (_expressionVariantTurns.size > 512) _expressionVariantTurns.delete(_expressionVariantTurns.keys().next().value);
+    }
     return chosen;
 }
 window.pickCharacterExpressionVariant = pickCharacterExpressionVariant;

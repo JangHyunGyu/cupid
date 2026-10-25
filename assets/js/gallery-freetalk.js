@@ -792,7 +792,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 const msgEl = document.getElementById('message');
                 if (msgEl) msgEl.innerHTML = this._formatAction(text);
                 // 마지막 표정도 복원
-                if (parsed.expression) this._updateExpression(parsed.expression);
+                if (this.chatHistory[i].expression || parsed.expression) this._updateExpression(this.chatHistory[i].expression || parsed.expression, this.currentCharId, this.chatHistory[i].expressionTurn || '');
                 return;
             }
         }
@@ -1377,7 +1377,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     content: displayText,
                     segments: displaySegments,
                     speakerId: requestCharId,
-                    speakerName: charName
+                    speakerName: charName,
+                    expression: parsed.expression || '',
+                    expressionTurn: requestContext.turnMeta.turnId
                 });
 
                 // 프리토킹 횟수 증가
@@ -2066,7 +2068,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         this._updateExpression('normal');
     }
 
-    _updateExpression(expression, charId = this.currentCharId) {
+    _updateExpression(expression, charId = this.currentCharId, turn = this._activeChatTurnId || '') {
         if (!charId) return;
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
         const resolvedExpression = GalleryFreeTalkCore.normalizeAvailableExpression(
@@ -2080,7 +2082,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (!img) return;
         const defaultPath = `assets/images/characters/${charId}_${resolvedExpression}.png`;
         const path = typeof window.pickCharacterExpressionVariant === 'function'
-            ? window.pickCharacterExpressionVariant(charId, resolvedExpression, defaultPath)
+            ? window.pickCharacterExpressionVariant(charId, resolvedExpression, defaultPath, Math.random, { scope: `gallery:${this.lang}`, turn, reuse: !turn })
             : defaultPath;
         const variantMatch = path.match(/\/([a-z0-9]+)_([a-z0-9_]+)\.(?:png|webp)$/i);
         const unlockExpr = (variantMatch && variantMatch[1] === charId) ? variantMatch[2] : resolvedExpression;

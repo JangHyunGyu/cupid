@@ -2177,7 +2177,7 @@ class FreeTalkSystem {
         );
         const baseSrc = expressions?.[normalized];
         const src = (baseSrc && typeof window.pickCharacterExpressionVariant === 'function')
-            ? window.pickCharacterExpressionVariant(speakerId, normalized, baseSrc)
+            ? window.pickCharacterExpressionVariant(speakerId, normalized, baseSrc, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
             : baseSrc;
         const slot = Object.values(this.uiManager?.charSlots || {})
             .find(candidate => candidate?.dataset?.groupCharId === speakerId);
@@ -3150,7 +3150,7 @@ class FreeTalkSystem {
 
         const basePath = window.GalleryData?.resolveOutfitExpression?.(scene, charExprs[name]) || charExprs[name];
         const rawPath = (basePath === charExprs[name] && typeof window.pickCharacterExpressionVariant === 'function')
-            ? window.pickCharacterExpressionVariant(expressionOwner || scene.name, name, basePath)
+            ? window.pickCharacterExpressionVariant(expressionOwner || scene.name, name, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
             : basePath;
         const existingImg = centerSlot.querySelector('img');
         if (existingImg) {
@@ -3303,7 +3303,7 @@ class FreeTalkSystem {
 
                                         const basePath = charExprs[exprName];
                     const rawPath = typeof window.pickCharacterExpressionVariant === 'function'
-                        ? window.pickCharacterExpressionVariant(this.charNameMap?.[scene.name] || scene.name, exprName, basePath)
+                        ? window.pickCharacterExpressionVariant(this.charNameMap?.[scene.name] || scene.name, exprName, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
                         : basePath;
 
                     // 이미 이미지가 있으면 src만 변경, 없으면 새로 생성

@@ -261,7 +261,8 @@ window.__cupidShowGalleryLoadError = function() {
         const historyRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&history=20260924b'
             : (src === 'gallery-progress.js' || src === 'gallery-ui-cg.js' || src === 'media-gate.js' ? '&guard=20260926-gallery-slot'
             : (src === 'gallery-tips-data.js' || src === 'gallery-data.js' ? '&history=20261009-ko-voice' : ''));
-        return basePath + src + '?v=' + version + historyRevision + (attempt ? '&retry=' + Date.now() : '');
+        const expressionRevision = src === 'prompts.js' || src === 'gallery-freetalk.js' ? '&expressions=20261026' : '';
+        return basePath + src + '?v=' + version + historyRevision + expressionRevision + (attempt ? '&retry=' + Date.now() : '');
     }
 
     function loadScriptAttempt(src, attempt) {
