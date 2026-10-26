@@ -444,17 +444,42 @@
         if (animate) {
           var old = img.cloneNode(false);
           old.removeAttribute('id'); old.removeAttribute('alt'); old.setAttribute('aria-hidden', 'true');
-          old.classList.add('cupid-expression-outgoing');
+          old.classList.remove('cupid-expression-gradient-in');
+          old.classList.add('cupid-expression-outgoing', 'cupid-expression-gradient-out');
           Object.assign(old.style, { position: 'absolute', left: img.offsetLeft + 'px', top: img.offsetTop + 'px',
             width: img.offsetWidth + 'px', height: img.offsetHeight + 'px', maxWidth: 'none', maxHeight: 'none',
             pointerEvents: 'none', zIndex: '2', transition: 'none', opacity: '1' });
           img.parentElement.appendChild(old);
           var timing = { duration: 1500, easing: 'cubic-bezier(0.4, 0, 0.2, 1)' };
-          old.animate([{ opacity: 1 }, { opacity: 0 }], { ...timing, fill: 'forwards' }).finished.then(function () { old.remove(); }, function () { old.remove(); });
-          img.__cupidExpressionAnimation = img.animate([{ opacity: 0 }, { opacity: 1 }], timing);
+          old.animate([
+            { opacity: 1, filter: 'blur(0px) brightness(1)', maskPosition: '0% 100%', webkitMaskPosition: '0% 100%' },
+            { opacity: 0.75, filter: 'blur(1px) brightness(1.02)', offset: 0.48 },
+            { opacity: 0, filter: 'blur(3px) brightness(1.04)', maskPosition: '0% 0%', webkitMaskPosition: '0% 0%' }
+          ], { ...timing, fill: 'forwards' }).finished.then(function () { old.remove(); }, function () { old.remove(); });
+          var veil = document.createElement('div');
+          veil.className = 'cupid-expression-gradient-veil';
+          veil.setAttribute('aria-hidden', 'true');
+          Object.assign(veil.style, { left: img.offsetLeft + 'px', top: img.offsetTop + 'px',
+            width: img.offsetWidth + 'px', height: img.offsetHeight + 'px' });
+          img.parentElement.appendChild(veil);
+          veil.animate([
+            { opacity: 0, transform: 'translateY(-38%)' },
+            { opacity: 0.38, offset: 0.5 },
+            { opacity: 0, transform: 'translateY(38%)' }
+          ], { ...timing, fill: 'forwards' }).finished.then(function () { veil.remove(); }, function () { veil.remove(); });
+          img.classList.add('cupid-expression-gradient-in');
+          img.__cupidExpressionAnimation = img.animate([
+            { opacity: 0, filter: 'blur(4px) saturate(1.12)', maskPosition: '0% 100%', webkitMaskPosition: '0% 100%' },
+            { opacity: 0.45, filter: 'blur(1px) saturate(1.02)', offset: 0.5 },
+            { opacity: 1, filter: 'blur(0px) saturate(1)', maskPosition: '0% 0%', webkitMaskPosition: '0% 0%' }
+          ], timing);
+          img.__cupidExpressionAnimation.finished.then(function () {
+            img.classList.remove('cupid-expression-gradient-in');
+          }, function () { img.classList.remove('cupid-expression-gradient-in'); });
         } else {
           img.__cupidExpressionAnimation?.cancel?.();
-          img.parentElement?.querySelectorAll?.('.cupid-expression-outgoing').forEach(function (node) { node.remove(); });
+          img.classList?.remove('cupid-expression-gradient-in');
+          img.parentElement?.querySelectorAll?.('.cupid-expression-outgoing, .cupid-expression-gradient-veil').forEach(function (node) { node.remove(); });
         }
         img.onload = onload || null;
         img.onerror = onerror || null;
