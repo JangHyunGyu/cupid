@@ -15,9 +15,12 @@ for(const [width,height]of [[320,568],[430,932],[667,375],[768,1024],[1440,900]]
   const owner=surface==='gallery'?window.galleryFreeTalk:window.gameEngine.freeTalkSystem;
   const getImage=()=>surface==='gallery'?document.getElementById('gft-char-img'):window.gameEngine.uiManager.charSlots.center.querySelector('img');
   const draw=()=>{if(surface==='gallery')owner._updateExpression('flushed','seyoun');else owner.applyExpression('flushed',{name:'Seoyeon'});return getImage().dataset.cupidAvatarAsset;};
-  const assets=[];for(let turn=0;turn<7;turn++){owner._activeChatTurnId='variant-e2e-'+turn;const first=draw();if(draw()!==first)throw Error('same reply redrew');assets.push(first);}return assets;
+  const originalPicker=window.pickCharacterExpressionVariant;let sample=0;
+  window.pickCharacterExpressionVariant=(char,expression,fallback,random,context)=>originalPicker(char,expression,fallback,()=>sample,context);
+  const samples=[0,0,.999,0,.37,.37,.999];
+  const assets=[];for(let turn=0;turn<7;turn++){sample=samples[turn];owner._activeChatTurnId='variant-e2e-'+turn;const first=draw();if(draw()!==first)throw Error('same reply redrew');assets.push(first);}return assets;
  },surface);
- expect(new Set(selected.slice(0,6)).size).toBe(6);expect(selected[5]).not.toBe(selected[6]);
+ expect(selected[0]).toBe(selected[1]);expect(selected[0]).toBe(selected[3]);expect(selected[2]).toBe(selected[6]);expect(selected[4]).toBe(selected[5]);expect(selected[0]).not.toBe(selected[2]);
  await expect.poll(()=>page.evaluate(surface=>{const img=surface==='gallery'?document.getElementById('gft-char-img'):window.gameEngine.uiManager.charSlots.center.querySelector('img');return img.complete&&img.naturalWidth>0;},surface)).toBe(true);
  await page.setViewportSize({width,height:Math.max(320,height-100)});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1)).toBe(true);

@@ -588,7 +588,7 @@ window.CHARACTER_EXPRESSION_VARIANTS = Object.freeze({
     '민수': CHARACTER_EXPRESSION_VARIANT_PATHS.Minsu
 });
 
-const _expressionVariantShuffleBags = new Map();
+const _expressionVariantSelections = new Map();
 const _expressionVariantTurns = new Map();
 let _expressionVariantStorageLoaded = false;
 const _expressionVariantStorageKey = 'expression-variants:v1:cupid';
@@ -606,32 +606,24 @@ function pickCharacterExpressionVariant(charKey, expression, fallbackPath = '', 
         _expressionVariantStorageLoaded = true;
         try {
             const saved = JSON.parse(storage?.getItem(_expressionVariantStorageKey) || '{}');
-            for (const [key, value] of Object.entries(saved || {}).slice(-512)) _expressionVariantShuffleBags.set(key, value);
+            for (const [key, value] of Object.entries(saved || {}).slice(-512)) _expressionVariantSelections.set(key, value);
         } catch (_) { /* Ignore malformed state. */ }
     }
     const owner = Object.entries(CHARACTER_EXPRESSION_VARIANT_PATHS).find(([, value]) => value === variantMap)?.[0] || normalizedKey;
-    const bagId = JSON.stringify([context.scope || '', owner, exprKey]);
-    const turn = String(context.turn || ''), turnKey = JSON.stringify([bagId, turn]);
+    const selectionId = JSON.stringify([context.scope || '', owner, exprKey]);
+    const turn = String(context.turn || ''), turnKey = JSON.stringify([selectionId, turn]);
     const signature = JSON.stringify(variants);
-    let state = _expressionVariantShuffleBags.get(bagId);
-    if (!state || state.signature !== signature || !Array.isArray(state.remaining)) state = { signature, remaining: [], last: state?.last || '' };
+    let state = _expressionVariantSelections.get(selectionId);
+    if (!state || state.signature !== signature) state = { signature, last: state?.last || '' };
     let chosen = turn ? (_expressionVariantTurns.get(turnKey) || (state.turn === turn ? state.choice : ''))
         : context.reuse ? state.last : '';
     if (!variants.includes(chosen)) {
-        let remaining = [...new Set(state.remaining)].filter(path => variants.includes(path));
-        if (!remaining.length) {
-            remaining = [...variants];
-            const rng = typeof randomFn === 'function' ? randomFn : Math.random;
-            for (let i = remaining.length - 1; i > 0; i--) {
-                const j = Math.min(i, Math.max(0, Math.floor(rng() * (i + 1))));
-                [remaining[i], remaining[j]] = [remaining[j], remaining[i]];
-            }
-            if (remaining.length > 1 && remaining[0] === state.last) [remaining[0], remaining[1]] = [remaining[1], remaining[0]];
-        }
-        chosen = remaining.shift();
-        _expressionVariantShuffleBags.set(bagId, { signature, remaining, last: chosen, turn, choice: chosen });
-        if (_expressionVariantShuffleBags.size > 512) _expressionVariantShuffleBags.delete(_expressionVariantShuffleBags.keys().next().value);
-        try { storage?.setItem(_expressionVariantStorageKey, JSON.stringify(Object.fromEntries(_expressionVariantShuffleBags))); } catch (_) { /* Keep the in-memory bag. */ }
+        const rng = typeof randomFn === 'function' ? randomFn : Math.random;
+        const index = Math.min(variants.length - 1, Math.max(0, Math.floor(rng() * variants.length)));
+        chosen = variants[index];
+        _expressionVariantSelections.set(selectionId, { signature, last: chosen, turn, choice: chosen });
+        if (_expressionVariantSelections.size > 512) _expressionVariantSelections.delete(_expressionVariantSelections.keys().next().value);
+        try { storage?.setItem(_expressionVariantStorageKey, JSON.stringify(Object.fromEntries(_expressionVariantSelections))); } catch (_) { /* Keep the in-memory choice. */ }
     }
     if (turn) {
         _expressionVariantTurns.set(turnKey, chosen);

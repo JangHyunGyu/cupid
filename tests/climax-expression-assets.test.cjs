@@ -86,20 +86,18 @@ test('all 57 multi-variant expression sprites are registered in GalleryData and 
         }
     }
 
-    // Verify shuffle-bag covers all variants without immediate repeat
+    // Each interval selects its registered image; repeated draws remain eligible.
     for (const [charKey, exprMap] of Object.entries(sandbox.window.CHARACTER_EXPRESSION_VARIANTS)) {
         if (!['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse', 'Haeun', 'Minsu'].includes(charKey)) continue;
         for (const [expr, expectedList] of Object.entries(exprMap)) {
             const seen = new Set();
-            let prev = '';
             for (let i = 0; i < expectedList.length * 2; i++) {
-                const picked = sandbox.window.pickCharacterExpressionVariant(charKey, expr, expectedList[0]);
+                const picked = sandbox.window.pickCharacterExpressionVariant(charKey, expr, expectedList[0], () => ((Math.floor(i / 2) + 0.5) / expectedList.length));
                 assert.ok(expectedList.includes(picked), `Unexpected variant ${picked} for ${charKey}/${expr}`);
-                if (expectedList.length > 1) assert.notEqual(picked, prev, `Immediate repeat on ${charKey}/${expr}`);
-                prev = picked;
+                assert.equal(picked, expectedList[Math.floor(i / 2)]);
                 seen.add(picked);
             }
-            assert.equal(seen.size, expectedList.length, `Shuffle bag must cover all ${expectedList.length} variants for ${charKey}/${expr}`);
+            assert.equal(seen.size, expectedList.length, `Random intervals must cover all ${expectedList.length} variants for ${charKey}/${expr}`);
         }
     }
 });
