@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.72';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.73';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function advanceSteadyReveal(shown, total, elapsedMs, carryMs, charMs, frameCap, idleFlushMs) {
@@ -163,12 +163,12 @@ class GalleryFreeTalk {
 
         // 캐릭터별 표정 매핑
         this.CHAR_EXPRESSIONS = {
-            seyoun: ['normal', 'smile', 'shy', 'very_shy', 'pout', 'angry', 'cry', 'pain', 'laugh', 'worried', 'surprised', 'sad', 'flushed', 'climax'],
-            yuna: ['normal', 'smile', 'shy', 'angry', 'sad', 'cry', 'pain', 'bored', 'flushed', 'climax', 'worried', 'surprised', 'laugh', 'pout'],
-            dain: ['normal', 'smile', 'shy', 'angry', 'laugh', 'sad', 'cry', 'pain', 'pout', 'worried', 'surprised', 'flushed', 'climax'],
-            teacher: ['normal', 'angry', 'shy', 'sad', 'cry', 'pain', 'smile', 'laugh', 'pout', 'surprised', 'flushed', 'climax', 'worried'],
-            nurse: ['normal', 'angry', 'shy', 'flushed', 'climax', 'worried', 'smile', 'laugh', 'pout', 'surprised', 'sad', 'cry', 'pain'],
-            haeun: ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'cry', 'pain', 'climax']
+            seyoun: ['normal', 'soft_smile', 'smile', 'shy', 'very_shy', 'pout', 'angry', 'cry', 'pain', 'laugh', 'worried', 'surprised', 'sad', 'flushed', 'climax'],
+            yuna: ['normal', 'soft_smile', 'smile', 'shy', 'angry', 'sad', 'cry', 'pain', 'bored', 'flushed', 'climax', 'worried', 'surprised', 'laugh', 'pout'],
+            dain: ['normal', 'soft_smile', 'smile', 'shy', 'angry', 'laugh', 'sad', 'cry', 'pain', 'pout', 'worried', 'surprised', 'flushed', 'climax'],
+            teacher: ['normal', 'soft_smile', 'angry', 'shy', 'sad', 'cry', 'pain', 'smile', 'laugh', 'pout', 'surprised', 'flushed', 'climax', 'worried'],
+            nurse: ['normal', 'soft_smile', 'angry', 'shy', 'flushed', 'climax', 'worried', 'smile', 'laugh', 'pout', 'surprised', 'sad', 'cry', 'pain'],
+            haeun: ['normal', 'soft_smile', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'cry', 'pain', 'climax']
         };
 
         // 캐릭터별 연인 모드 성격 프롬프트 (7개 언어)

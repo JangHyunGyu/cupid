@@ -402,6 +402,7 @@ window.getCupidSharedCastKnowledge = getCupidSharedCastKnowledge;
 const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     Seoyeon: Object.freeze({
         normal: 'assets/images/characters/seyoun_normal.png',
+        soft_smile: 'assets/images/characters/seyoun_soft_smile.png',
         smile: 'assets/images/characters/seyoun_smile.png',
         shy: 'assets/images/characters/seyoun_shy.png',
         very_shy: 'assets/images/characters/seyoun_very_shy.png',
@@ -421,6 +422,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     }),
     Yuna: Object.freeze({
         normal: 'assets/images/characters/yuna_normal.png',
+        soft_smile: 'assets/images/characters/yuna_soft_smile.png',
         smile: 'assets/images/characters/yuna_smile.png',
         shy: 'assets/images/characters/yuna_shy.png',
         angry: 'assets/images/characters/yuna_angry.png',
@@ -439,6 +441,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     }),
     Dain: Object.freeze({
         normal: 'assets/images/characters/dain_normal.png',
+        soft_smile: 'assets/images/characters/dain_soft_smile.png',
         smile: 'assets/images/characters/dain_smile.png',
         shy: 'assets/images/characters/dain_shy.png',
         angry: 'assets/images/characters/dain_angry.png',
@@ -458,6 +461,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     }),
     Teacher: Object.freeze({
         normal: 'assets/images/characters/teacher_normal.png',
+        soft_smile: 'assets/images/characters/teacher_soft_smile.png',
         smile: 'assets/images/characters/teacher_smile.png',
         shy: 'assets/images/characters/teacher_shy.png',
         angry: 'assets/images/characters/teacher_angry.png',
@@ -475,6 +479,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     }),
     Nurse: Object.freeze({
         normal: 'assets/images/characters/nurse_normal.png',
+        soft_smile: 'assets/images/characters/nurse_soft_smile.png',
         shy: 'assets/images/characters/nurse_shy.png',
         angry: 'assets/images/characters/nurse_angry.png',
         worried: 'assets/images/characters/nurse_worried.png',
@@ -494,6 +499,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
     }),
     Haeun: Object.freeze({
         normal: 'assets/images/characters/haeun_normal.png',
+        soft_smile: 'assets/images/characters/haeun_soft_smile.png',
         worried: 'assets/images/characters/haeun_worried.png',
         firm: 'assets/images/characters/haeun_firm.png',
         relieved: 'assets/images/characters/haeun_relieved.png',
@@ -2741,5 +2747,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.82';
+const PROMPT_VERSION = '2.7.83';
 window.PROMPT_VERSION = PROMPT_VERSION;

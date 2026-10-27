@@ -500,8 +500,8 @@
             "assets/images/characters/dain_normal.png",
             "assets/characters/dain/expressions/normal/01/sprite.png"
           ],
-          "sha256": "f3668845e903d73cdb53e6433990c562a7f3dc6371c81038dd68a4168a39213f",
-          "bytes": 1157382
+          "sha256": "caaad53b622784cb83379dd0efa495dd7cbe8ec36c4cbab8a3e594b728881f0c",
+          "bytes": 1162087
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/normal/01/sprite.webp",
@@ -509,8 +509,8 @@
             "assets/images/characters/dain_normal.webp",
             "assets/characters/dain/expressions/normal/01/sprite.webp"
           ],
-          "sha256": "1609f1514e9e7492134b94d232cc9d4ae35f53608f0c2b614558387cc1e39c81",
-          "bytes": 759115
+          "sha256": "427ab7d3da4a18c839c4c697246312df24498d554e6fbdec667a609a2667cdb6",
+          "bytes": 760221
         }
       }
     },
@@ -646,6 +646,33 @@
           ],
           "sha256": "5448cd7ff004580cdcaacaaaac3301524605c41ac4421ca34285bdce0d8f085f",
           "bytes": 94477
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/soft_smile/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "soft_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/soft_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_soft_smile.png",
+            "assets/characters/dain/expressions/soft_smile/01/sprite.png"
+          ],
+          "sha256": "8118cf923c719b6aa61ff730aea5d3635f71abe4824a1d3fc068a4de5634b07b",
+          "bytes": 1157409
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_soft_smile.webp",
+            "assets/characters/dain/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "14081d3eaefcb8a67f7856d6d12c5b03ee2c38ce0d5a672626391fd58122470c",
+          "bytes": 760213
         }
       }
     },
@@ -1235,8 +1262,8 @@
             "assets/images/characters/haeun_normal.png",
             "assets/characters/haeun/expressions/normal/01/sprite.png"
           ],
-          "sha256": "7c21bd5cf05416cc863443cab78f5501653f503b0e9e6ea4431469c401a6f205",
-          "bytes": 1162571
+          "sha256": "dd087df106e1ec3a860e070a035682e9d6b86bd5037db60be10a1f6a139feadc",
+          "bytes": 1118029
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/normal/01/sprite.webp",
@@ -1244,8 +1271,8 @@
             "assets/images/characters/haeun_normal.webp",
             "assets/characters/haeun/expressions/normal/01/sprite.webp"
           ],
-          "sha256": "0123e8084be8e0e6822427ca56147847816e17ce02f5a5b2e764ee9c766ee979",
-          "bytes": 120693
+          "sha256": "1e0555078853dc34b97f132dd7feb9778805155f9bd2ca7078030e2e28beb817",
+          "bytes": 734837
         }
       }
     },
@@ -1408,6 +1435,33 @@
           ],
           "sha256": "d95bf71c467252c6319d6e5ab65a72536586cd11f61304dab98f8fa566d20d3d",
           "bytes": 4018783
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/soft_smile/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "soft_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/soft_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_soft_smile.png",
+            "assets/characters/haeun/expressions/soft_smile/01/sprite.png"
+          ],
+          "sha256": "331d9e6240c6913425063b11d5397eb9d20d3c478c91c12cbed2f8dd5040dbd1",
+          "bytes": 1120708
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_soft_smile.webp",
+            "assets/characters/haeun/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "1ab6a74a7a3f990a559f76355278ee1654a8fc6ab65f89ebb86d7fbfb205fc43",
+          "bytes": 737045
         }
       }
     },
@@ -2243,8 +2297,8 @@
             "assets/images/characters/nurse_normal.png",
             "assets/characters/nurse/expressions/normal/01/sprite.png"
           ],
-          "sha256": "9fca67cef3f04762dce7f004c730acec695d97f598e0a0ed27821a854a5f438b",
-          "bytes": 1199158
+          "sha256": "0bdd63ec41025065a717980699482606f23d858286ee92eeebc56d77873ab462",
+          "bytes": 1550257
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/normal/01/sprite.webp",
@@ -2252,8 +2306,8 @@
             "assets/images/characters/nurse_normal.webp",
             "assets/characters/nurse/expressions/normal/01/sprite.webp"
           ],
-          "sha256": "84805a7bd119017daf0fac6a2ce67f7c4f79b1e481129867bc62d4598dca02cc",
-          "bytes": 501345
+          "sha256": "dac10a7c260d5410ad456d03cb50b66d00e0bf5c5b279f727c2986e69929f400",
+          "bytes": 1011353
         }
       }
     },
@@ -2371,6 +2425,33 @@
           ],
           "sha256": "c96e8f6247fd305bee18799c7a63822374bb00140887e335ffbe905764efab27",
           "bytes": 1460686
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/soft_smile/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "soft_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/soft_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_soft_smile.png",
+            "assets/characters/nurse/expressions/soft_smile/01/sprite.png"
+          ],
+          "sha256": "827675a6721359937d032875854873bcf688e5100c8147e207d8e78af54befdc",
+          "bytes": 1542279
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_soft_smile.webp",
+            "assets/characters/nurse/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "520253e96cc9fdbd7e63c4e528bdefe8713c32ccbb9c60d703541c105a71d4db",
+          "bytes": 1006857
         }
       }
     },
@@ -3049,8 +3130,8 @@
             "assets/images/characters/seyoun_normal.png",
             "assets/characters/seoyeon/expressions/normal/01/sprite.png"
           ],
-          "sha256": "12f8adddaeb0fd1d606684d739ae90116df735200dcaa656429a4125a529b039",
-          "bytes": 1314399
+          "sha256": "1ac88dbf087d63cd4823c50ac075756b121375f636a9c2f95cf7257ed3ea85b5",
+          "bytes": 1267411
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/normal/01/sprite.webp",
@@ -3058,8 +3139,8 @@
             "assets/images/characters/seyoun_normal.webp",
             "assets/characters/seoyeon/expressions/normal/01/sprite.webp"
           ],
-          "sha256": "78c7dacd5db9a81606bae9e088c96d02d73c12f360171c44551d9241962b5eb8",
-          "bytes": 809611
+          "sha256": "395408439376008c1923ca5553ed995bccf93803a82bcd950e3ca21014cc68c8",
+          "bytes": 818209
         }
       }
     },
@@ -3184,8 +3265,8 @@
             "assets/images/characters/seyoun_smile.png",
             "assets/characters/seoyeon/expressions/smile/01/sprite.png"
           ],
-          "sha256": "3d788b74c85fffc9f65c55fe311200eea1cc7fe1da964cb4757c375240e5782c",
-          "bytes": 1260292
+          "sha256": "d10b847af970d14d86addeee869b8611987b5d9ca24427bed21667fde649623e",
+          "bytes": 1269593
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/smile/01/sprite.webp",
@@ -3193,8 +3274,35 @@
             "assets/images/characters/seyoun_smile.webp",
             "assets/characters/seoyeon/expressions/smile/01/sprite.webp"
           ],
-          "sha256": "b043e13f54a77b6b6bfa0cb0bff426213cb45076d40b60cf16254cfe3ab5cf1b",
-          "bytes": 821451
+          "sha256": "1e538eb3182bdef0fab3ee1e4e14b58e6389408d0daa253635728e54d078b21d",
+          "bytes": 822619
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/soft_smile/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "soft_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/soft_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_soft_smile.png",
+            "assets/characters/seoyeon/expressions/soft_smile/01/sprite.png"
+          ],
+          "sha256": "ac22f59c34669364a8c450c0f90ef8f51a3d7e09eb7f6f97f2fdaaf6dd9b0238",
+          "bytes": 1265097
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_soft_smile.webp",
+            "assets/characters/seoyeon/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "a2c6836650405cf378d0e0c5d0068be5757e93770578ba6e79df1805c5879c00",
+          "bytes": 821211
         }
       }
     },
@@ -3864,8 +3972,8 @@
             "assets/images/characters/teacher_normal.png",
             "assets/characters/teacher/expressions/normal/01/sprite.png"
           ],
-          "sha256": "78824d5e64ac10e5cda3953ba68da064bd259c37bcebddf036821b11c3586d00",
-          "bytes": 1448882
+          "sha256": "c5e1d224289266d27e478bb7020480e3a904e2222e0422f4c8f5e2073838cb18",
+          "bytes": 1350364
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/normal/01/sprite.webp",
@@ -3873,8 +3981,8 @@
             "assets/images/characters/teacher_normal.webp",
             "assets/characters/teacher/expressions/normal/01/sprite.webp"
           ],
-          "sha256": "ea174038ac927f14eb7270b11c135b9152cd5b464137b11848abb01740ae9e7f",
-          "bytes": 134213
+          "sha256": "fd9e05f992bf41b1442e13e57381b7cbad8cdcccc0eb06818b5fa7d6f3b9fc45",
+          "bytes": 876075
         }
       }
     },
@@ -4010,6 +4118,33 @@
           ],
           "sha256": "a6f01971a7a1219443210438646e587fc690c1a7dc8ca42cf7429af16eea56b9",
           "bytes": 126275
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/soft_smile/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "soft_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/soft_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_soft_smile.png",
+            "assets/characters/teacher/expressions/soft_smile/01/sprite.png"
+          ],
+          "sha256": "406917f0b569548f8feea7d38760b5f45184794b15913066622ab0d101ca7792",
+          "bytes": 1351592
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_soft_smile.webp",
+            "assets/characters/teacher/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "ccaa3b53ea980c9b7f89196e87a0ac8f3973a129571d8bcae3d8225a0da4963b",
+          "bytes": 888631
         }
       }
     },
@@ -4667,6 +4802,33 @@
           ],
           "sha256": "1c0f87c827b387ab317d3639ec987669073aa6eadc8bdd79a3a51ed563cd9950",
           "bytes": 988313
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/soft_smile/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "soft_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/soft_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_soft_smile.png",
+            "assets/characters/yuna/expressions/soft_smile/01/sprite.png"
+          ],
+          "sha256": "3a1ae5a76f66b7c3c07e38dce1fd5e488eea36ac71ac9a6edecd6ec2fe552c59",
+          "bytes": 1391270
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_soft_smile.webp",
+            "assets/characters/yuna/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "5cf360caa0952f9ec811f72fc4402b35227418ab70d8335269b2c21ebc2a2cd1",
+          "bytes": 836147
         }
       }
     },

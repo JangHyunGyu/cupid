@@ -1099,21 +1099,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_normal": {
-    "version": "5b2b45026bff76fdaa184963",
+    "version": "3dce26ce40f148d11888b8ed",
     "files": [
       {
         "path": "assets/images/characters/dain_normal.png",
-        "key": "images/e168d86f4373242f4cf9557c2d2e624aebc23d0733752c1f0357518f9b481e61.png",
-        "sha256": "e168d86f4373242f4cf9557c2d2e624aebc23d0733752c1f0357518f9b481e61",
-        "etag": "72b30e6c0c95b55749e267936097fcf2",
-        "size": 1157345
+        "key": "images/ad9703dadc895ccf5c8986bf52fc0810cf0f9ab7cc34f4cb6bccdbe55b29fada.png",
+        "sha256": "ad9703dadc895ccf5c8986bf52fc0810cf0f9ab7cc34f4cb6bccdbe55b29fada",
+        "etag": "d13ceb20b478a17b3034a7dae2d7cded",
+        "size": 1162050
       },
       {
         "path": "assets/images/characters/dain_normal.webp",
-        "key": "images/45c875819aa567e414c88e00a0e1e620609c2b3248366af6659df6a0894da10b.webp",
-        "sha256": "45c875819aa567e414c88e00a0e1e620609c2b3248366af6659df6a0894da10b",
-        "etag": "8bcbe9792e8112c158f10c551cd6d1d6",
-        "size": 759078
+        "key": "images/4ca621784d7ee005c03c834182a1b35fa7ec64c74ee946494acf1cec14f23bb6.webp",
+        "sha256": "4ca621784d7ee005c03c834182a1b35fa7ec64c74ee946494acf1cec14f23bb6",
+        "etag": "34c3cbebd87cc04946b9d96bafa9c646",
+        "size": 760184
       }
     ]
   },
@@ -1209,6 +1209,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "57190b435e7f85100f797625d0b694ae6581428bd3d65a0ffb4c4a6904246120",
         "etag": "3567d2839332e18e0d80c752b1e32273",
         "size": 94440
+      }
+    ]
+  },
+  "characters/dain_soft_smile": {
+    "version": "de77743dc1644c9a3a87864e",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_soft_smile.png",
+        "key": "images/40b05c2edf35be981c97c18e1444b6f58d51094663a263f2d19fab67c0071d54.png",
+        "sha256": "40b05c2edf35be981c97c18e1444b6f58d51094663a263f2d19fab67c0071d54",
+        "etag": "eb96db87e3270c06626bd551aee35e4f",
+        "size": 1157372
+      },
+      {
+        "path": "assets/images/characters/dain_soft_smile.webp",
+        "key": "images/e14605d398d1403d8bc4ddb9be24a1fa1ec7331adb098aca90dbfd286cda2284.webp",
+        "sha256": "e14605d398d1403d8bc4ddb9be24a1fa1ec7331adb098aca90dbfd286cda2284",
+        "etag": "b45e866c6e41f1c42774a291078111e6",
+        "size": 760176
       }
     ]
   },
@@ -1536,21 +1555,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/haeun_normal": {
-    "version": "a13bbe3ca7fd8704532f204e",
+    "version": "3deab4251a9c075ae70b7eb5",
     "files": [
       {
         "path": "assets/images/characters/haeun_normal.png",
-        "key": "images/0d475fff561392004ce336818e9446f36f7e0d23180a38a71e9ec49e03ed2bfa.png",
-        "sha256": "0d475fff561392004ce336818e9446f36f7e0d23180a38a71e9ec49e03ed2bfa",
-        "etag": "bda2588a9d514657786add9f0e577062",
-        "size": 1162534
+        "key": "images/0312dc09ea5e90e3ce1b87566fa6fe5f3ba1c061c376efbdcd262fbbf3176541.png",
+        "sha256": "0312dc09ea5e90e3ce1b87566fa6fe5f3ba1c061c376efbdcd262fbbf3176541",
+        "etag": "e239b974214865cf56148756baa265c5",
+        "size": 1117992
       },
       {
         "path": "assets/images/characters/haeun_normal.webp",
-        "key": "images/1afa07e76349d852e770ab45207c97637dd1e8fa9df6f61c4a88d92c8e30e33d.webp",
-        "sha256": "1afa07e76349d852e770ab45207c97637dd1e8fa9df6f61c4a88d92c8e30e33d",
-        "etag": "99b34cdec4392745009827117532040f",
-        "size": 120656
+        "key": "images/9bc3b690cf16347b7e07fa439f5126da176fc7510fd73131bd779ef166840e3b.webp",
+        "sha256": "9bc3b690cf16347b7e07fa439f5126da176fc7510fd73131bd779ef166840e3b",
+        "etag": "bba34663b32aec530e4497dfad3c2726",
+        "size": 734800
       }
     ]
   },
@@ -1665,6 +1684,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "eadc1f671fe89f1142cbff1f4284824f7bf176fa64cac133f417a5923c9d7d1d",
         "etag": "2e42987e03b431e482b582dc024d226b",
         "size": 4018746
+      }
+    ]
+  },
+  "characters/haeun_soft_smile": {
+    "version": "d503d53f7a8d7f7129f2fd48",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_soft_smile.png",
+        "key": "images/17b12de767a8eb1995d7c0450cdcf83cf8f380839231d8ff01b794e01b934fee.png",
+        "sha256": "17b12de767a8eb1995d7c0450cdcf83cf8f380839231d8ff01b794e01b934fee",
+        "etag": "da53c983ae171bf2d97eac06715efccc",
+        "size": 1120671
+      },
+      {
+        "path": "assets/images/characters/haeun_soft_smile.webp",
+        "key": "images/be0b42da3b20344cf318053e7818993ad676d762a1f7b9306988a9f7527cea41.webp",
+        "sha256": "be0b42da3b20344cf318053e7818993ad676d762a1f7b9306988a9f7527cea41",
+        "etag": "9b396de0e3e0d54447290bf3f0edae98",
+        "size": 737008
       }
     ]
   },
@@ -2304,21 +2342,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/nurse_normal": {
-    "version": "474b41ba9bb94c4c8ea8bb4a",
+    "version": "2e08e0cfb7461f00df7bec7f",
     "files": [
       {
         "path": "assets/images/characters/nurse_normal.png",
-        "key": "images/cf51a8dbca8c4a622b731d7fc92c63210a6cfc11e08c6a5002b9163ce1eb1b2f.png",
-        "sha256": "cf51a8dbca8c4a622b731d7fc92c63210a6cfc11e08c6a5002b9163ce1eb1b2f",
-        "etag": "cae1dfa5f7675d9134d4a164a3ea91a4",
-        "size": 1199121
+        "key": "images/15a45d537cb1a8d6d04005ec47a1607b2f7073d1d476d4c8f5fce9a972ecc457.png",
+        "sha256": "15a45d537cb1a8d6d04005ec47a1607b2f7073d1d476d4c8f5fce9a972ecc457",
+        "etag": "33a2e0d4879d907ec1d5ae366d0ae799",
+        "size": 1550220
       },
       {
         "path": "assets/images/characters/nurse_normal.webp",
-        "key": "images/2d26f3229b596d5ecd58d17d95fc9fed9bb4d8e29b1f71fb4a6773dd7c842f30.webp",
-        "sha256": "2d26f3229b596d5ecd58d17d95fc9fed9bb4d8e29b1f71fb4a6773dd7c842f30",
-        "etag": "fe6c3f5454f90762557c3ed8541ab00e",
-        "size": 501308
+        "key": "images/a3756d57327a1244460e71eab3290f235e11891895167dd4eafe3e3bf2e412af.webp",
+        "sha256": "a3756d57327a1244460e71eab3290f235e11891895167dd4eafe3e3bf2e412af",
+        "etag": "491d0ca297d0831fe4b0375f847af409",
+        "size": 1011316
       }
     ]
   },
@@ -2400,6 +2438,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "c54424ce5e65136b1ef973a6e6a1876500cabb278fcbcb5c8e162137d2a6ee2a",
         "etag": "5be7119d87c269d0908ae43671c7c2c9",
         "size": 1460649
+      }
+    ]
+  },
+  "characters/nurse_soft_smile": {
+    "version": "9704c698fd5b3f32c15cd6e9",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_soft_smile.png",
+        "key": "images/f21f6e175b7e8b6f2432c46c5cb678af6801029623837496a437e02f815357c2.png",
+        "sha256": "f21f6e175b7e8b6f2432c46c5cb678af6801029623837496a437e02f815357c2",
+        "etag": "81041aba30e2e9ce69cf6e3765e89e72",
+        "size": 1542242
+      },
+      {
+        "path": "assets/images/characters/nurse_soft_smile.webp",
+        "key": "images/b1fcf9988f619561ef11f61669e608de9305c44d3c7e09fd042e43748dc36f4b.webp",
+        "sha256": "b1fcf9988f619561ef11f61669e608de9305c44d3c7e09fd042e43748dc36f4b",
+        "etag": "9dfae306120792cdb5afa82f8cbb9f25",
+        "size": 1006820
       }
     ]
   },
@@ -2898,21 +2955,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/seyoun_normal": {
-    "version": "557245d018f0cad5171f6cf0",
+    "version": "e48354d42862986b80e9bac6",
     "files": [
       {
         "path": "assets/images/characters/seyoun_normal.png",
-        "key": "images/379d035291f5174b166b6c84f7a7745f5ef59fb6f71cb2ac5acf2c4042870b35.png",
-        "sha256": "379d035291f5174b166b6c84f7a7745f5ef59fb6f71cb2ac5acf2c4042870b35",
-        "etag": "49587dca1315e765f1948ebf69309730",
-        "size": 1314362
+        "key": "images/ed3747e3c28c68cef851e4f9931eece5a0708e88fd5714f85c00dfbfdc608225.png",
+        "sha256": "ed3747e3c28c68cef851e4f9931eece5a0708e88fd5714f85c00dfbfdc608225",
+        "etag": "ddd13ce12d5e4284913fc37ba2c8db94",
+        "size": 1267374
       },
       {
         "path": "assets/images/characters/seyoun_normal.webp",
-        "key": "images/f727e959cf9fe684078cb970d977db234fcd3185ebf689ce5cad4b8a7bea8fe7.webp",
-        "sha256": "f727e959cf9fe684078cb970d977db234fcd3185ebf689ce5cad4b8a7bea8fe7",
-        "etag": "016cb807c2bd03626e08cef06f6ea02f",
-        "size": 809574
+        "key": "images/2c23233eb95fd3cdc8564a0edb3641abe124135b7cd57a61512faabbbb5de2ca.webp",
+        "sha256": "2c23233eb95fd3cdc8564a0edb3641abe124135b7cd57a61512faabbbb5de2ca",
+        "etag": "903df82b29050a7daa8c65ce60bc9683",
+        "size": 818172
       }
     ]
   },
@@ -2993,21 +3050,40 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/seyoun_smile": {
-    "version": "4c519912d3a3c7a69c4b7a2d",
+    "version": "ed28c1f2f0be10862783a3d0",
     "files": [
       {
         "path": "assets/images/characters/seyoun_smile.png",
-        "key": "images/ff49cde4b96d9ba644bd31e65568d6f02e57089fc55e80f200b8fd3fd6588740.png",
-        "sha256": "ff49cde4b96d9ba644bd31e65568d6f02e57089fc55e80f200b8fd3fd6588740",
-        "etag": "16a40e7607d7867f313579a45ad655df",
-        "size": 1260255
+        "key": "images/828bafb7c9c3ca5b3a7e08b1d131fec887b1418b50948bc70e2fa94b033b46f9.png",
+        "sha256": "828bafb7c9c3ca5b3a7e08b1d131fec887b1418b50948bc70e2fa94b033b46f9",
+        "etag": "d476a9e5363be9ec3e8f6fd984e242e9",
+        "size": 1269556
       },
       {
         "path": "assets/images/characters/seyoun_smile.webp",
-        "key": "images/40f79f1c2b9e49637101a55656f1370b24d0b91e6927f3c11f951499b3695543.webp",
-        "sha256": "40f79f1c2b9e49637101a55656f1370b24d0b91e6927f3c11f951499b3695543",
-        "etag": "26258e1e1558ef4a9d59fcc42ac4c48b",
-        "size": 821414
+        "key": "images/f15358462b711f7342f86aaccf73d89ce3207e8a74d1883ddce345b3762156b2.webp",
+        "sha256": "f15358462b711f7342f86aaccf73d89ce3207e8a74d1883ddce345b3762156b2",
+        "etag": "d93649a0589b62b599773793683fcdc3",
+        "size": 822582
+      }
+    ]
+  },
+  "characters/seyoun_soft_smile": {
+    "version": "9df428f596a110730a051512",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_soft_smile.png",
+        "key": "images/ab1feed9afa83ffde15f84816c719e23d9767e8a4d66bffaca35f702cdcdeeaa.png",
+        "sha256": "ab1feed9afa83ffde15f84816c719e23d9767e8a4d66bffaca35f702cdcdeeaa",
+        "etag": "740a24c76720409c1ddfad65f4a21d05",
+        "size": 1265060
+      },
+      {
+        "path": "assets/images/characters/seyoun_soft_smile.webp",
+        "key": "images/7aebdc7cfd295fb9aec075a514d9b2f18b23e3c42898f5cda770198cd07c1b38.webp",
+        "sha256": "7aebdc7cfd295fb9aec075a514d9b2f18b23e3c42898f5cda770198cd07c1b38",
+        "etag": "0f4c6e5b4d1b0e89be8e34ad7a63a27e",
+        "size": 821174
       }
     ]
   },
@@ -3373,21 +3449,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/teacher_normal": {
-    "version": "035e176bdf30610982f002a0",
+    "version": "41d9cdc0b18caf041634af03",
     "files": [
       {
         "path": "assets/images/characters/teacher_normal.png",
-        "key": "images/fcdcfefa41a9f4f2739881c689e146544f0740dc88dcd72f15341c0f5ddbc6ed.png",
-        "sha256": "fcdcfefa41a9f4f2739881c689e146544f0740dc88dcd72f15341c0f5ddbc6ed",
-        "etag": "4068653e806ba174d17d48b6b26e6f31",
-        "size": 1448845
+        "key": "images/a191dd0c81161461d8e381c98e264f5e734b9557e8f0a26b496cfa08ef403764.png",
+        "sha256": "a191dd0c81161461d8e381c98e264f5e734b9557e8f0a26b496cfa08ef403764",
+        "etag": "bb7de884251e90898a260bd834fa3416",
+        "size": 1350327
       },
       {
         "path": "assets/images/characters/teacher_normal.webp",
-        "key": "images/e374a1db328bd8ecfcb1eee01e17895a79ba04de8ec79fc497741748a2ca2cad.webp",
-        "sha256": "e374a1db328bd8ecfcb1eee01e17895a79ba04de8ec79fc497741748a2ca2cad",
-        "etag": "401bfaf86c09684a9433aadaef49f17c",
-        "size": 134176
+        "key": "images/80da44533aca0766bc4eb3247a3240ed51e1420633051c201700d564a02a8f28.webp",
+        "sha256": "80da44533aca0766bc4eb3247a3240ed51e1420633051c201700d564a02a8f28",
+        "etag": "e9fd12737aecfa0194888cfd19a0ecc9",
+        "size": 876038
       }
     ]
   },
@@ -3483,6 +3559,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "31cee630e990d849b5078e589a6dc70f4ba862518f4d2756222b827b8c75a0be",
         "etag": "6dbdd441680b2b14452b4170849552e0",
         "size": 126238
+      }
+    ]
+  },
+  "characters/teacher_soft_smile": {
+    "version": "093a4e6ca84248a5d62a805f",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_soft_smile.png",
+        "key": "images/965955ed4fda02cdff401cf8087b339741b89107f37dcb8d0d8bb1bcedb2b53c.png",
+        "sha256": "965955ed4fda02cdff401cf8087b339741b89107f37dcb8d0d8bb1bcedb2b53c",
+        "etag": "1ee8134a42154502e1ccfee346f50ea8",
+        "size": 1351555
+      },
+      {
+        "path": "assets/images/characters/teacher_soft_smile.webp",
+        "key": "images/0778dc2dc0508955c2ede8d28d388ebc6562ccb7e06d2f9b7c76be45a251edad.webp",
+        "sha256": "0778dc2dc0508955c2ede8d28d388ebc6562ccb7e06d2f9b7c76be45a251edad",
+        "etag": "ec05d95c865afbee5bc4b8569481baf6",
+        "size": 888594
       }
     ]
   },
@@ -4004,6 +4099,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "668524033dd240c4a4aafbf4ee264265c758f1feef6747eeec63b025899540c2",
         "etag": "41f5a27af13a43af22352d84f922d593",
         "size": 988276
+      }
+    ]
+  },
+  "characters/yuna_soft_smile": {
+    "version": "26f271eb7ced7ae65688216f",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_soft_smile.png",
+        "key": "images/75e7cc01920786500a36ee8abc501230a6648c879fe27bd9bb079f6435c1bbed.png",
+        "sha256": "75e7cc01920786500a36ee8abc501230a6648c879fe27bd9bb079f6435c1bbed",
+        "etag": "cb08d569847712cc8d328efaea7b8fe9",
+        "size": 1391233
+      },
+      {
+        "path": "assets/images/characters/yuna_soft_smile.webp",
+        "key": "images/4f84dd7f9674bb0b2a87a88360d2532c781e40f187f98d9e3b6336b875a8eb95.webp",
+        "sha256": "4f84dd7f9674bb0b2a87a88360d2532c781e40f187f98d9e3b6336b875a8eb95",
+        "etag": "6d59bcf2b95356c64b8791bb4a8774a2",
+        "size": 836110
       }
     ]
   },
