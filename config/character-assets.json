@@ -500,8 +500,8 @@
             "assets/images/characters/dain_normal.png",
             "assets/characters/dain/expressions/normal/01/sprite.png"
           ],
-          "sha256": "496d7ccefe81df98844b6e1aed456e6bdc5dc438e82a7404ccb9bb84abdb6e00",
-          "bytes": 1321284
+          "sha256": "f3668845e903d73cdb53e6433990c562a7f3dc6371c81038dd68a4168a39213f",
+          "bytes": 1157382
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/normal/01/sprite.webp",
@@ -509,8 +509,8 @@
             "assets/images/characters/dain_normal.webp",
             "assets/characters/dain/expressions/normal/01/sprite.webp"
           ],
-          "sha256": "b5a0383b2472bd97105af2c863c813d3b721db8ef67d4686527a9c63057d6ae5",
-          "bytes": 94477
+          "sha256": "1609f1514e9e7492134b94d232cc9d4ae35f53608f0c2b614558387cc1e39c81",
+          "bytes": 759115
         }
       }
     },
@@ -635,8 +635,8 @@
             "assets/images/characters/dain_smile.png",
             "assets/characters/dain/expressions/smile/01/sprite.png"
           ],
-          "sha256": "6a216ea86f1e518ebc04f4c4eda72c8fd757fb77d0c3b16c500b28cd27c1bd93",
-          "bytes": 1157382
+          "sha256": "2d7fce2d66a08ded51224b2538c5e230292186b0c911033b947b900875731391",
+          "bytes": 1321284
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/smile/01/sprite.webp",
@@ -644,8 +644,8 @@
             "assets/images/characters/dain_smile.webp",
             "assets/characters/dain/expressions/smile/01/sprite.webp"
           ],
-          "sha256": "17b4eb7c17e358586b40882d01d63265fba5b8f81ea3acf7389cd1e0c083b65b",
-          "bytes": 759115
+          "sha256": "5448cd7ff004580cdcaacaaaac3301524605c41ac4421ca34285bdce0d8f085f",
+          "bytes": 94477
         }
       }
     },
@@ -2243,8 +2243,8 @@
             "assets/images/characters/nurse_normal.png",
             "assets/characters/nurse/expressions/normal/01/sprite.png"
           ],
-          "sha256": "714e8dc3a024f68d3927a6fc3dcad7673df3969fea2405092db432b3e240f46f",
-          "bytes": 1669557
+          "sha256": "9fca67cef3f04762dce7f004c730acec695d97f598e0a0ed27821a854a5f438b",
+          "bytes": 1199158
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/normal/01/sprite.webp",
@@ -2252,8 +2252,8 @@
             "assets/images/characters/nurse_normal.webp",
             "assets/characters/nurse/expressions/normal/01/sprite.webp"
           ],
-          "sha256": "41c4e3fd68c0f42b87a71d01c2ffb0fa8c20e2633c77987d25e4e0a6a9dcfb5f",
-          "bytes": 123273
+          "sha256": "84805a7bd119017daf0fac6a2ce67f7c4f79b1e481129867bc62d4598dca02cc",
+          "bytes": 501345
         }
       }
     },
@@ -2369,8 +2369,8 @@
             "assets/images/characters/nurse_smile.png",
             "assets/characters/nurse/expressions/smile/01/sprite.png"
           ],
-          "sha256": "75068c539aed6fd814dfafc05286c92fa505866e95bcb94e31f453a146fe84db",
-          "bytes": 1199158
+          "sha256": "c96e8f6247fd305bee18799c7a63822374bb00140887e335ffbe905764efab27",
+          "bytes": 1460686
         }
       }
     },
