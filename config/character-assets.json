@@ -623,6 +623,60 @@
       }
     },
     {
+      "id": "dain/expressions/smile/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_smile.png",
+            "assets/characters/dain/expressions/smile/01/sprite.png"
+          ],
+          "sha256": "277a259c61f9f5c8f383f411728e72d47b0f2f46144b60cba3b8c164719e7f50",
+          "bytes": 1329413
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_smile.webp",
+            "assets/characters/dain/expressions/smile/01/sprite.webp"
+          ],
+          "sha256": "df172ccdecd8113366752d0df2f50e6cea5dbc156011ff9ea5f8ca9cbd673225",
+          "bytes": 814305
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/surprised/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "surprised",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/surprised/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_surprised.png",
+            "assets/characters/dain/expressions/surprised/01/sprite.png"
+          ],
+          "sha256": "e2db7d7c1285f30aed88d09c3939889d5462931e47cfa1bec211a2c47ebed52b",
+          "bytes": 1342483
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_surprised.webp",
+            "assets/characters/dain/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "d024ce07b98705c49e50bb7dc212d923c0c4563fca6bec2c17d37d53eec54d41",
+          "bytes": 137067
+        }
+      }
+    },
+    {
       "id": "dain/expressions/sweat/01",
       "characterId": "dain",
       "role": "expression",
@@ -646,6 +700,33 @@
           ],
           "sha256": "53e23124f591d4e1f9feb3f6657419ecf14ac424d45d14b883c191893b103f6b",
           "bytes": 159117
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/worried/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "worried",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/worried/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_worried.png",
+            "assets/characters/dain/expressions/worried/01/sprite.png"
+          ],
+          "sha256": "b8edac70e22acdfddfea7232252efd251d59ecf1bec3cdb244afdcea86c92868",
+          "bytes": 1316809
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/worried/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_worried.webp",
+            "assets/characters/dain/expressions/worried/01/sprite.webp"
+          ],
+          "sha256": "fc859f9f3a9053a9ebd11c57081cccf76112254b39ea20f14a1c5dba30abfd66",
+          "bytes": 803123
         }
       }
     },
@@ -760,6 +841,33 @@
           ],
           "sha256": "438a7a30a47fab71fdb08b8599f05e836fff4754b6e1043c218d494402ad0c51",
           "bytes": 9155101
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/angry/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "angry",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/angry/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_angry.png",
+            "assets/characters/haeun/expressions/angry/01/sprite.png"
+          ],
+          "sha256": "f4007b536d84c11b8292dc94d04948c223e04167938d75a13d8eef1160f8495c",
+          "bytes": 1153990
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/angry/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_angry.webp",
+            "assets/characters/haeun/expressions/angry/01/sprite.webp"
+          ],
+          "sha256": "a81053cf1a2d0039bc59e17e4044856f8b488456b239fae5a4573b1086511b77",
+          "bytes": 697521
         }
       }
     },
@@ -1061,6 +1169,60 @@
       }
     },
     {
+      "id": "haeun/expressions/flushed/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "flushed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/flushed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_flushed.png",
+            "assets/characters/haeun/expressions/flushed/01/sprite.png"
+          ],
+          "sha256": "3806514a7e3c47d17e18a96157c27cdfe681c9bc8c7345885ba27681e47ca36e",
+          "bytes": 1143996
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/flushed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_flushed.webp",
+            "assets/characters/haeun/expressions/flushed/01/sprite.webp"
+          ],
+          "sha256": "333841414e65806776c18043dab49705d3ebb05ae6710f37989a20db4f39f034",
+          "bytes": 694411
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/laugh/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "laugh",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/laugh/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_laugh.png",
+            "assets/characters/haeun/expressions/laugh/01/sprite.png"
+          ],
+          "sha256": "0dfa8d83dfab38fc4411e47052d21660158453eb293c6f6a0e867a003fc61bff",
+          "bytes": 1146468
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/laugh/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_laugh.webp",
+            "assets/characters/haeun/expressions/laugh/01/sprite.webp"
+          ],
+          "sha256": "e43e61707e8d8b1b6066c980e8e797916ced35e7a5831021d39048139c70aa94",
+          "bytes": 695341
+        }
+      }
+    },
+    {
       "id": "haeun/expressions/normal/01",
       "characterId": "haeun",
       "role": "expression",
@@ -1111,6 +1273,33 @@
           ],
           "sha256": "fbf375918c3323d17cae90793450a394f9391973ddc60b10ca5a9ef7646edce2",
           "bytes": 702005
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/pout/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "pout",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/pout/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_pout.png",
+            "assets/characters/haeun/expressions/pout/01/sprite.png"
+          ],
+          "sha256": "012fc66bbe7d93388d8d0d02b8939e42a2ccd12d7dda319098f357ad0d4051a3",
+          "bytes": 1139676
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/pout/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_pout.webp",
+            "assets/characters/haeun/expressions/pout/01/sprite.webp"
+          ],
+          "sha256": "486c9163b48b430b2cd0e4785a8c726ccc7f214cfaf9db179018461364b6ebae",
+          "bytes": 692867
         }
       }
     },
@@ -1219,6 +1408,33 @@
           ],
           "sha256": "d95bf71c467252c6319d6e5ab65a72536586cd11f61304dab98f8fa566d20d3d",
           "bytes": 4018783
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/surprised/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "surprised",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/surprised/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_surprised.png",
+            "assets/characters/haeun/expressions/surprised/01/sprite.png"
+          ],
+          "sha256": "808ab932eef1152f66f1a6b3c83ad719fab996fb49627a374a13d3c747571383",
+          "bytes": 1171068
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_surprised.webp",
+            "assets/characters/haeun/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "0d7dfb607c815eb8efd66e19f2fd48147c4375ee51596027cd430267e2f56354",
+          "bytes": 117109
         }
       }
     },
@@ -1988,6 +2204,33 @@
       }
     },
     {
+      "id": "nurse/expressions/laugh/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "laugh",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/laugh/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_laugh.png",
+            "assets/characters/nurse/expressions/laugh/01/sprite.png"
+          ],
+          "sha256": "d63776e7047b44edc412a47695baebb090e517fb73114a028af0a526f408da1b",
+          "bytes": 1649871
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/laugh/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_laugh.webp",
+            "assets/characters/nurse/expressions/laugh/01/sprite.webp"
+          ],
+          "sha256": "8e49b97dde016d1d21e065fea0ae156013796a0eae0ec4edc548e2f6fd8a5dee",
+          "bytes": 1000409
+        }
+      }
+    },
+    {
       "id": "nurse/expressions/normal/01",
       "characterId": "nurse",
       "role": "expression",
@@ -2038,6 +2281,33 @@
           ],
           "sha256": "ea3c5365ad93a5c483e3deb1b66dfc761c22427f7f05b2e30704f7136b6aa19c",
           "bytes": 1011063
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/pout/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "pout",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/pout/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_pout.png",
+            "assets/characters/nurse/expressions/pout/01/sprite.png"
+          ],
+          "sha256": "e1eff7cb531dd09e83a00999adfb45e5c1720222c413d97c47d2eea593ae2717",
+          "bytes": 1648759
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/pout/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_pout.webp",
+            "assets/characters/nurse/expressions/pout/01/sprite.webp"
+          ],
+          "sha256": "6f132335ade3d260b447a23f48ac44784ef6c95a8ada995eed2a751f46262e84",
+          "bytes": 979833
         }
       }
     },
@@ -2101,6 +2371,33 @@
           ],
           "sha256": "75068c539aed6fd814dfafc05286c92fa505866e95bcb94e31f453a146fe84db",
           "bytes": 1199158
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/surprised/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "surprised",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/surprised/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_surprised.png",
+            "assets/characters/nurse/expressions/surprised/01/sprite.png"
+          ],
+          "sha256": "fb65e72032a78a73a590932fc300d0ef7106b41b192251add258122957d202bd",
+          "bytes": 1673977
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_surprised.webp",
+            "assets/characters/nurse/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "015fa5305c097162e4e671e0406ffa3ff2e83e527cb391bef78e099109729e79",
+          "bytes": 171033
         }
       }
     },
@@ -2875,6 +3172,60 @@
       }
     },
     {
+      "id": "seoyeon/expressions/smile/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_smile.png",
+            "assets/characters/seoyeon/expressions/smile/01/sprite.png"
+          ],
+          "sha256": "f4f35c5629ac3ef4c5e08ba9d4e542eb06d6288828d7b723042904831b60992f",
+          "bytes": 1414667
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_smile.webp",
+            "assets/characters/seoyeon/expressions/smile/01/sprite.webp"
+          ],
+          "sha256": "c536f1af1fe3288245e6c9649cef794a30e6a69ceea42d122d0ee3669814aa1d",
+          "bytes": 864811
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/surprised/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "surprised",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/surprised/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_surprised.png",
+            "assets/characters/seoyeon/expressions/surprised/01/sprite.png"
+          ],
+          "sha256": "2583f587360f909b378021a490f6b8d5adc87bb128eeeeef65cbbda95108fb6c",
+          "bytes": 1309869
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_surprised.webp",
+            "assets/characters/seoyeon/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "20e987dd30fcac0cfb0d4fe89b94e8c64bd0b2f85ad7096e5c6d9b6cdafbd490",
+          "bytes": 152709
+        }
+      }
+    },
+    {
       "id": "seoyeon/expressions/very_shy/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -3474,6 +3825,33 @@
       }
     },
     {
+      "id": "teacher/expressions/laugh/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "laugh",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/laugh/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_laugh.png",
+            "assets/characters/teacher/expressions/laugh/01/sprite.png"
+          ],
+          "sha256": "57d22a0e8e823292d2a02d86a4f388bf0ebe1c1d35c201a7bd4ddcc32949dbf6",
+          "bytes": 1455963
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/laugh/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_laugh.webp",
+            "assets/characters/teacher/expressions/laugh/01/sprite.webp"
+          ],
+          "sha256": "c9ad8f5b20341c4409146b0ff98faf0513a563761e1e155fc0ab1f56744a9a23",
+          "bytes": 874559
+        }
+      }
+    },
+    {
       "id": "teacher/expressions/normal/01",
       "characterId": "teacher",
       "role": "expression",
@@ -3524,6 +3902,33 @@
           ],
           "sha256": "c38773630edb5c1258ac9df1c9a9b5bba0bdabaee7fc60e00bb6ecb38fde701d",
           "bytes": 850319
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/pout/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "pout",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/pout/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_pout.png",
+            "assets/characters/teacher/expressions/pout/01/sprite.png"
+          ],
+          "sha256": "b3450ef18fd60747e68a3b1bc6b70e492863e1963d7c27c62b6adeb19f6e853c",
+          "bytes": 1450710
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/pout/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_pout.webp",
+            "assets/characters/teacher/expressions/pout/01/sprite.webp"
+          ],
+          "sha256": "9737b1d1faa2469c853912cd5e9c66c3b8434ed803b279891867100055e4ea28",
+          "bytes": 867067
         }
       }
     },
@@ -3605,6 +4010,33 @@
           ],
           "sha256": "a6f01971a7a1219443210438646e587fc690c1a7dc8ca42cf7429af16eea56b9",
           "bytes": 126275
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/surprised/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "surprised",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/surprised/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_surprised.png",
+            "assets/characters/teacher/expressions/surprised/01/sprite.png"
+          ],
+          "sha256": "1465fa8794c6d5005e3a788bc7e06eb17615e8240bf79979eff234310a876b60",
+          "bytes": 1450297
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_surprised.webp",
+            "assets/characters/teacher/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "5fb74b75d9c8eac0ab882e4b1b06ba593401a31c168fd0269e15fe38eb124328",
+          "bytes": 140727
         }
       }
     },
@@ -4235,6 +4667,33 @@
           ],
           "sha256": "c74f5ba4e4cba1dee548222b493c0b45e937a93e8e5984fb2a3ce3a8a5e0ad8d",
           "bytes": 191227
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/surprised/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "surprised",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/surprised/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_surprised.png",
+            "assets/characters/yuna/expressions/surprised/01/sprite.png"
+          ],
+          "sha256": "c50e0e45d0cb35e96636cb3727e4a06bab5f05c3d7b1a8bcfa3e10b18bb2a6c0",
+          "bytes": 1458768
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_surprised.webp",
+            "assets/characters/yuna/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "fd713e2290fb2fe35abec9ce5b8b2aa35170209deb16d5757c75d9afc2a03a9f",
+          "bytes": 202379
         }
       }
     },
