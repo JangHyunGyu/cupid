@@ -1,7 +1,7 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Vendredi soir. Je rentre épuisé et suspends mon sac au dossier de la chaise sans avoir quitté mon uniforme. Le coin du manuel qui dépasse porte les traces de trois jours de doigts.*"
+        "text": "*Vendredi soir. Épuisé, je rentre chez moi et accroche mon sac au dossier de la chaise.*"
     },
     "night3_start_2": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*Le souffle chaud de Seoyeon semble encore frôler mon oreille. Je lis lentement jusqu'à la dernière ligne, et quand j'éteins l'écran, une image agréable persiste dans la pièce.*"
+        "text": "*J'ai l'impression que le souffle chaud de Seoyeon passe à nouveau près de moi. Je lis la dernière ligne et éteins l'écran, laissant une impression agréable.*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
@@ -33,7 +33,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Je caresse le carnet de cuir sur le bureau et je regarde la dernière ligne de mes notes de lecture. À côté du curseur qui clignote, la chaleur de Yuna semble encore là.*"
+        "text": "*Je caresse le carnet de cuir sur le bureau et regarde la dernière ligne de mes notes de lecture. La chaleur de Yuna semble toujours être là.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -45,11 +45,11 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Un blanc de 3 minutes entre le « haha » taquin et la phrase suivante, celle qui est sincère. La main brûlante de Dain qui me serrait l'épaule, et les battements de son cœur, me reviennent nettement.*"
+        "text": "*Un écart de 3 minutes entre le \"haha\" enjoué et la phrase suivante. Le contact de Dain sur mon épaule revient, vif.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Au moment d'éteindre la lampe, je reprends le téléphone une fois de plus. Cette proximité d'après les cours, aujourd'hui, quand on respirait au même rythme côte à côte, est encore vive au bout de mes doigts.*"
+        "text": "*Je commence à éteindre la lampe de bureau, puis je reprend mon téléphone. La proximité qu'on avait après l'école, respirant côte à côte, est toujours vivace à mes doigts.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -57,37 +57,37 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Avant de m'endormir, tout au fond de la galerie du téléphone, je retrouve une photo de Sojeong à l'ancienne école et j'appuie longtemps dessus.*"
+        "text": "*Avant de dormir, au fond de la galerie, je trouve une photo de Sojeong de mon ancienne école et je la maintiens enfoncée.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
-        "text": "*Une fenêtre de confirmation s'affiche : « Supprimer cette photo ? » Mon pouce s'arrête juste au-dessus du bouton Supprimer.*"
+        "text": "*Une confirmation apparaît : \"Supprimer cette photo ?\" Mon pouce s'arrête au-dessus du bouton supprimer.*"
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Je baisse les yeux vers la lumière bleutée de l'écran. Les mots cruels qui couvraient le bureau de Sojeong, et mes matins où j'ai lâchement tourné la tête, défilent l'un après l'autre.*"
+        "text": "*Le graffiti couvrant le bureau de Sojeong me traverse l'esprit, tout comme les matins où je me suis détourné.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*Dans la fenêtre de confirmation, j'appuie en silence sur Annuler. Effacer une photo ne fera pas disparaître le fait que j'ai fui, à l'époque.*"
+        "text": "*Je touche Annuler sur la confirmation. Supprimer une photo ne fera pas disparaître le fait que j'ai fui à cette époque.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*Au lieu du bouton Supprimer, j'ouvre le menu Déplacer et je range la photo dans un nouveau dossier. Le nom, je l'écris court : « Archive ».*"
+        "text": "*Au lieu du bouton supprimer, je touche Déplacer et je mets la photo dans un nouveau dossier appelé 'Enregistrements'.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Je laisse une courte note sous la photo. Les excuses que je n'ai jamais réussi à donner à Sojeong, je ne peux les rattraper qu'en étant plus honnête avec la personne qui est à mes côtés maintenant.*"
+        "text": "*La seule façon de me faire pardonner pour les excuses que je n'ai jamais données à Sojeong est d'être honnête avec la personne à mes côtés maintenant.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Dans le dossier tout juste créé, une photo prend place, en silence.*"
+        "text": "*Dans le nouveau dossier, une photo se place tranquillement.*"
     },
     "night3_faithful_reflect_4_b": {},
     "night3_faithful_reflect_4_c": {},
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*Je ferme la galerie et je règle l'alarme de demain matin. Même une fois le téléphone posé, la chaleur croisée dans la journée empêche le sommeil de venir.*"
+        "text": "*Je ferme la galerie et programme le réveil pour demain. La chaleur qui m'a effleuré pendant la journée empêche le sommeil de venir facilement.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*J'éteins la lumière de la chambre et je m'allonge sur le lit, mais le cœur me monte jusqu'à la gorge et je n'arrive pas à fermer les yeux. Dans le noir, seule la lumière froide de l'écran me brûle la paume.*"
+        "text": "*J'éteins la lumière et je m'allonge, mais mon cœur se serre et je ne peux pas fermer les yeux. Seule la lumière froide de l'écran tombe sur ma paume.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*Le souffle coupé, j'ouvre à tour de rôle les trois conversations, j'écris des réponses qui ressemblent à des excuses, puis je les efface toutes au retour arrière.*"
+        "text": "*J'ouvre les trois conversations à tour de rôle, tape des réponses qui ressemblent à des excuses, puis j'efface chacune d'elles.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
@@ -196,15 +196,15 @@
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*Passé 3 heures du matin, sans avoir fermé l'œil, je ferme l'appli des messages et j'ouvre la galerie. Je pose un pouce lourd sur la photo de Sojeong, à l'ancienne école.*"
+        "text": "*Toujours éveillé après trois heures du matin, je ferme l'application de messagerie et pose mon pouce sur la photo de Sojeong dans la galerie.*"
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Sur la photo de groupe, Sojeong regarde l'objectif sans force. Moi, debout juste à côté, je tourne le regard ailleurs, comme si, même alors, j'évitais ce qui me gênait.*"
+        "text": "*Sur la photo de groupe, Sojeong regarde l'appareil sans force, et à côté d'elle, je regarde au loin, comme je le faisais à l'époque, évitant tout ce qui est difficile.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Je parcours la liste des messages de haut en bas. À côté du nom de chacune des trois, une blessure différente est plantée en dernière phrase.*"
+        "text": "*Je parcours la liste des messages. À côté de chacun des trois noms, une blessure différente est coincée.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "Minsu",
@@ -216,7 +216,7 @@
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*Je retire la main du bouton Envoyer et je pose le téléphone face contre le bureau. Pas question de m'en tirer avec quelques lignes : demain, je répondrai debout, en face. Il reste trois heures avant l'alarme.*"
+        "text": "*Je retire ma main du bouton Envoyer et pose le téléphone face contre terre. Je ne vais pas colmater ça avec quelques lignes de texte. Demain, je ferai face et je répondrai.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",

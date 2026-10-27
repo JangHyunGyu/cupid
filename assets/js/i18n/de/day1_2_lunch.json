@@ -1,7 +1,7 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Sobald die Glocke die Mittagspause einläutet, wird die Luft im Klassenzimmer munter. Seoyeon nimmt ihre ordentliche Essentasche und geht zur Treppe, Dain winkt vom Flur Richtung Schulkiosk. Yuna am Fenster drückt das Buch, das sie gelesen hat, still an die Brust und macht sich auf zur Bibliothek.*"
+        "text": "*Als die Pausenglocke läutet, erwacht der Klassenzimmer. Seoyeon nimmt ihre Lunchbox und geht die Treppe hinunter. Dain winkelt im Flur. Yuna hält das Buch an ihre Brust und geht in Richtung Bibliothek.*"
     },
     "lunch_start_4": {
         "name": "Seoyeon",
@@ -46,7 +46,7 @@
     },
     "lunch_seo_2": {
         "name": "{name}",
-        "text": "Die Blumentöpfe in der Dachecke, pflegst du die alle? *Im lichten Schatten stehen zwei Klappstühle nebeneinander.*"
+        "text": "Die Blumentöpfe in der Dachecke, pflegst du die alle? *Zwei Klappstühle stehen im Schatten neben dem Topf.*"
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
@@ -58,7 +58,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "Eigentlich lasse ich sonst absolut niemanden hier rein. *Sie klappt einen Klappstuhl lautlos auf.* Nur heute mache ich eine Ausnahme."
+        "text": "Ich zeige diesen Ort niemandem. *Sie klappt einen Klappstuhl lautlos aus.* Nur heute mache ich eine Ausnahme."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -66,7 +66,7 @@
     },
     "lunch_seo_6_b": {
         "name": "Seoyeon",
-        "text": "*Mit der Schuhspitze schiebt sie das Stuhlbein leicht zu mir und rückt den Abstand zurecht.* So misstrauisch. Unten ist es laut und hier ruhig. Deshalb hab ich dich mitgenommen."
+        "text": "*Mit der Zehe stößt sie ein Stuhlbein an, um eine Lücke zu schaffen.* Sei nicht so misstrauisch. Unten ist es laut, hier ist es ruhig. Deshalb habe ich dich hergebracht."
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
@@ -98,7 +98,7 @@
     },
     "lunch_seo_16": {
         "name": "Seoyeon",
-        "text": "*Statt zu antworten drückt sie mir ein Paar Holzstäbchen in die Hand und weicht meinem Blick etwas aus.* Hör auf nachzubohren und iss. Kalt schmeckt es nicht mehr."
+        "text": "*Anstatt zu antworten, drückt sie mir Essstäbchen in die Hand und wendet sich ab.* Hör auf zu neugierig zu sein und iss. Es schmeckt nicht gut, wenn es kalt wird."
     },
     "lunch_seo_17": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "lunch_seo_21": {
         "name": "Seoyeon",
-        "text": "*Die Spitze von Seoyeons Stäbchen tippt gegen den Trenner in der Lunchbox, und sie lacht leise auf.* Ich frag nach der Schule, und du lobst die Lunchbox?"
+        "text": "*Seoyeon lacht, als sie mit ihren Essstäbchen den Trenner der Lunchbox berührt.* Ich frag nach der Schule, und du lobst die Lunchbox?"
     },
     "lunch_seo_22": {
         "name": "Seoyeon",
@@ -144,7 +144,7 @@
     },
     "lunch_seo_c1_2_b": {
         "name": "Seoyeon",
-        "text": "Nicht so hastig runterschlucken. Kau etwas langsamer. *Seoyeon hebt die Wasserflasche und verdeckt damit leicht ihren Mund. In ihrer Hand knittert das durchsichtige Etikett klein zusammen.*"
+        "text": "Schluck es nicht hastig herunter. Kaue langsamer. *Das Plastiketikett knistert in Seoyeons Hand, als sie sich hinter der Wasserflasche versteckt.*"
     },
     "lunch_seo_c1_3": {
         "name": "Seoyeon",
@@ -156,7 +156,7 @@
     },
     "lunch_seo_c2_1": {
         "name": "Seoyeon",
-        "text": "So? Dann gehört das mir. *Sie steckt sich die Eierrolle einfach in den Mund und tippt dann ohne Grund mit den Stäbchen gegen die Ecke des Deckels.*"
+        "text": "So? Dann gehört das mir. *Sie steckt das gerollte Omelett in den Mund und tippt mit ihren Essstäbchen auf die Ecke des Deckels der Lunchbox.*"
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
@@ -190,7 +190,7 @@
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
         "text": "*Sie packt die Lunchbox in die Tasche, schiebt den Klappstuhl etwa eine halbe Handbreit zu mir heran und setzt sich.* Der Wind hier ist ziemlich frisch. Dir ist nicht kalt, oder?",
-        "context": "Mittagspause am ersten Tag, direkt nachdem Seoyeons selbst gemachtes Bento auf dem Schuldach geteilt wurde. Beide lernen einander erst kennen; etwas Unsicherheit und gegenseitige Neugier sind noch da.",
+        "context": "Mittagessen am ersten Tag. Kurz nachdem sie Seoyeons Bento auf dem Dach geteilt hatten. Sie sind noch unbeholfen, aber beginnen, sich gegenseitig neugierig zu sein.",
         "personality": "Seoyeon ist eine gefasste Schülersprecherin mit ihrem eigenen bedachten Tempo. Sie beobachtet, bevor sie Interesse zeigt, und ist in Worten wie Handlungen ehrlich."
     },
     "lunch_dain_1": {
@@ -255,7 +255,7 @@
     },
     "lunch_dain_15": {
         "name": "{name}",
-        "text": "*Wir setzen uns nebeneinander auf die Bank im Schatten des Blauregens neben dem Schulkiosk und teilen die Brottüten. Bei jeder Bewegung kommt von Dains Nacken eine gesunde Wärme herüber, die nach Sonne riecht.*"
+        "text": "*Wir sitzen nebeneinander im Schatten der Glyzin und teilen die Brotdosen. Jedes Mal, wenn Dain sich bewegt, erreicht mich ihre Wärme, die den Duft von Sonnenschein trägt.*"
     },
     "lunch_dain_16": {
         "name": "Dain",
@@ -374,7 +374,7 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Yunas Fingerspitzen verdecken kurz die verblasste Schrift auf dem alten Lesezeichen. Ich sehe weg und ziehe irgendein Buch aus dem Regal dahinter.*"
+        "text": "*Yunas Fingerspitzen bedecken die verblasende Schrift auf dem Lesezeichen. Ich blicke weg und nehme ein Buch aus dem Regal hinter uns.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",

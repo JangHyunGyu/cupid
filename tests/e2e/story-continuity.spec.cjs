@@ -4,7 +4,8 @@ const { expect, test } = require('@playwright/test');
 const { installAffinitySeeder } = require('./helpers/affinity-seed.cjs');
 
 async function ready(page) {
-    await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
+    await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer?.currentSceneId
+        && !window.gameEngine._isRendering && !window.gameEngine.dialogueSystem.isCurrentlyTyping());
 }
 
 for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {

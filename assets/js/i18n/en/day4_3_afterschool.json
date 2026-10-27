@@ -21,12 +21,12 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*I follow Seoyeon up the quiet stairs to the school roof. Below the wire railing the red sunset fades, and the night lights along the edge of the field come on one by one.*"
+        "text": "*I follow Seoyeon up to the school roof. Below the wire railing the sunset fades, and the field lights come on one by one.*"
     },
     "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon steps half a step back from the railing and stops right in front of me. When she slips the brass key that opened the door into her cardigan pocket, the evening wind brushes her long hair and a faint scent across my cheek.*"
+        "text": "*Seoyeon steps half a step back from the railing and stops in front of me. When she slips the key into her pocket, the evening wind brushes her long hair across my cheek.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
@@ -48,7 +48,7 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "Wait. I heard what you just said right, didn't I? Don't even dream of brushing it off as a joke now. *The jingling key ring goes dead still. Seoyeon's unsteady eyes lock onto mine and won't let go.*"
+        "text": "Wait. I heard what you just said right, didn't I? Don't even think about brushing it off as a joke now. *Seoyeon's unsteady eyes lock onto mine.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
@@ -60,7 +60,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "*Seoyeon can't quite get the words out, and she bites her lower lip. A short breath rises and falls along the flushed line of her neck, and the key ring in her hand spins once without catching.*"
+        "text": "*Seoyeon bites her lower lip, unable to get the words out. Ragged breaths rise and fall along her flushed neckline.*"
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -72,7 +72,7 @@
     },
     "confess_seo_yes_7": {
         "name": "Seoyeon",
-        "text": "Let's not go down yet. Stay here with me a little longer, just like this. *Seoyeon gently tugs the end of my sleeve with the hand holding the key ring.*"
+        "text": "Let's not go down yet. I want to stand here like this a little longer. *Seoyeon gently tugs the end of my sleeve.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
@@ -84,7 +84,7 @@
     },
     "confess_seo_yes_10": {
         "name": "{name}",
-        "text": "I didn't know you were watching me that closely. I was so busy trying not to let my feelings show that I missed the look in your eyes. *When I reach out and cover the back of Seoyeon's cold hand, she drops the key into her pocket and lays her palm over mine.*"
+        "text": "I didn't know you were watching me that closely. *When I cover the back of Seoyeon's hand, she lays her palm over mine.*"
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
@@ -96,7 +96,7 @@
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "What you said earlier, I should have dropped my pride and said it first. Hearing it straight from you, I can barely breathe. *Two steps down the stairs, Seoyeon's footsteps stop. She never turns around, but the flushed rim of her ear is clear even in the dusk.*"
+        "text": "I should have dropped my pride and said it first. Hearing it straight from you, I can barely breathe. *Seoyeon's ear is flushed red at the bottom of the stairs.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -128,16 +128,16 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*The secret reading nook in a corner of the annex, where I followed Yuna in. Red sunset pouring through the window settles deep onto the armrest of the old fabric sofa, and Yuna's bookmark lies quietly on the seat right beside it.*"
+        "text": "*The reading space in the annex, where I followed Yuna in. The sunset coming through the window settles deep onto the armrest of the old sofa.*"
     },
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Come sit next to me. We don't have to open a book today. You held my hand and followed me all the way here. *Yuna leans back deep into the sofa and looks up at me. A silver bookmark is held between her slender fingers.*"
+        "text": "Come sit next to me. We don't have to open a book today. *Yuna leans back into the sofa and looks up at me.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*When I sit right beside Yuna, the old sofa cushion sinks, and our thighs and shoulders press together with no gap between them. The tip of the paper bookmark in Yuna's hand is slightly bent.*"
+        "text": "*When I sit next to Yuna, the sofa cushion sinks and our shoulders touch.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -215,7 +215,7 @@
     },
     "confess_yuna_no_3": {
         "name": "{name}",
-        "text": "Yuna, you still haven't finished that book on your lap? You've only been looking at the cover. *Yuna never opens the pages. She only slowly traces the title letters on the hardcover with her fingertip.*"
+        "text": "Yuna, you still haven't finished the book on your lap? *Yuna does not open the pages, only traces the title letters on the cover with her fingertip.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
@@ -240,7 +240,7 @@
     "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
-        "text": "Don't worry. I didn't come to practice at this hour. But is it okay if I hold a ball? If I stand in front of you empty-handed, my fingertips keep shaking. *Dain pulls a leather volleyball to her chest with both hands. The knuckles pressing the ball stand out white.*"
+        "text": "I didn't come to practice at this hour. But is it okay if I hold a ball? If I stand in front of you empty-handed, my fingertips shake. *Dain pulls a volleyball to her chest.*"
     },
     "confess_dain_5": {},
     "confess_dain_choice": {
@@ -287,7 +287,7 @@
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "Ah, what do I do. I want to give you a good answer, but don't look at my face right now. No, I absolutely don't mean turn around! *Dain stands with both feet together on the white court line and covers her bright-red face with both palms.*"
+        "text": "Ah, what do I do. I want to give you a good answer, but don't look at my face right now! *Dain stands on the white court line and covers her bright-red face with both palms.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
@@ -299,7 +299,7 @@
     },
     "confess_dain_yes_9_b": {
         "name": "Dain",
-        "text": "I'm really in trouble. I'm smiling because I'm happy, so why are the corners of my eyes getting hot too. *Dain looks up at me through her fingers and smiles bright, then rubs the damp corner of her eye with the back of her hand.*"
+        "text": "I'm smiling because I'm happy, so why are the corners of my eyes getting hot too. *Dain looks at me through her fingers and laughs, then rubs her eyes with the back of her hand.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",

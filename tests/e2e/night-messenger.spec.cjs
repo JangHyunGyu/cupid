@@ -6,7 +6,9 @@ async function openGame(page, lang = 'ko') {
     page.on('pageerror', error => errors.push(error.message));
     await page.route('**/*', route => new URL(route.request().url()).hostname === '127.0.0.1' ? route.continue() : route.abort());
     await page.goto(`/game${lang === 'ko' ? '' : '-' + lang}.html`);
-    await page.waitForFunction(() => window.gameEngine?.messengerView && !gameEngine._isRendering);
+    await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.messengerView
+        && gameEngine.sceneRenderer?.currentSceneId && !gameEngine._isRendering
+        && !gameEngine.dialogueSystem.isCurrentlyTyping());
     await page.evaluate(async () => {
         for (const day of [2, 3, 4]) await CupidContentLoader.ensureDay(day);
         gameEngine.dialogueSystem.typingSpeed = 0;

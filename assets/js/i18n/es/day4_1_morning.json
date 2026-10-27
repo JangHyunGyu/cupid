@@ -17,7 +17,7 @@
     },
     "morning4_start": {
         "name": "{name}",
-        "text": "*Sábado por la mañana, el cuarto día. Me despierta la luz del fin de semana que entra entre las cortinas. En vez de mirar la hora de salir al instituto, acerco el móvil de la almohada para comprobar los planes de hoy.*"
+        "text": "*Sábado por la mañana, el cuarto día. Despierto con la luz del fin de semana filtrándose por las cortinas e inmediatamente acerco el celular a mi almohada.*"
     },
     "morning4_date_plan_check": {},
     "morning4_nightmare_check": {},
@@ -68,7 +68,7 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*En el calendario siguen ahí las citas que encajé unas sobre otras, en precario. Ya sé de sobra que no es algo que se pase solo partiendo el tiempo, y se me hacen pesados los dedos.*"
+        "text": "*Las citas que coincidieron, por precarias que sean, siguen ahí en el calendario. Sé que esto no es algo que pueda superar solo dividiendo el tiempo, y mis dedos se sienten pesados.*"
     },
     "minsu_cheer_4_d": {},
     "minsu_cheer_4_e": {},
@@ -116,11 +116,11 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "Buenos días, profesora. *Delante de la puerta principal, abierta a medias, me encuentro de frente con la profesora, que sale con un sobre de papel marrón y grueso abrazado al pecho.*"
+        "text": "Buenos días, profesora. *En la puerta principal, me encuentro cara a cara con la maestra de grupo mientras ella sale con un sobre de papel marrón grueso.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*En cuanto se cruzan las miradas, la profesora esconde el sobre de papel a la espalda, por reflejo. Dentro del envoltorio fino, el fajo del manuscrito impreso cruje.*"
+        "text": "*En el momento en que nuestros ojos se encuentran, ella oculta el sobre tras su espalda por reflejo.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Profesora",
@@ -136,7 +136,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*En vez del traje impecable que le veo siempre en la tarima, lleva un trench beige, suave, y un jersey fino. La esquina del sobre de papel que esconde a la espalda está arrugada de lo fuerte que la aprieta.*"
+        "text": "*En lugar del traje que suelo ver en el podio, lleva un abrigo beige y un suéter de punto.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -148,7 +148,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Las articulaciones finas de los dedos, cerradas sobre la solapa del sobre, están muy tensas. Por la rendija de la abertura asoma un poco la primera página del manuscrito, con marcas claras de haberla doblado y desdoblado una y otra vez.*"
+        "text": "*A través de la abertura del sobre, vislumbro la primera página del manuscrito, doblada y desdoblada muchas veces.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Profesora",
@@ -164,7 +164,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Solo la música lenta de la radio, que sale de la garita de la puerta principal, llega con el viento fresco de la mañana y llena el espacio entre nosotros.*"
+        "text": "*Música de radio desde la caseta del portón flota en la brisa matutina.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Profesora",
@@ -180,7 +180,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Profesora",
-        "text": "No hace falta que te pese solo porque lo haya escrito tu profesora. Es fin de semana: tú también tendrás algo ya apalabrado. *Deja la frase a medias, dobla dos veces la solapa del sobre y la aprieta fuerte.*"
+        "text": "No tienes que sentir ninguna presión solo porque tu profesor de aula lo escribió. Es fin de semana, así que probablemente tengas tus propios planes. *Sus palabras se apagan mientras aprieta el asa del sobre.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -197,7 +197,7 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Profesora",
-        "text": "¿Ves a los del club de literatura en la mesa larga, junto a la ventana? Los demás llegan enseguida, así que nosotros sentémonos de momento en este rincón."
+        "text": "¿Ven a los chicos del club de literatura reunidos en esa mesa junto a la ventana? Sentémonos en esta esquina por ahora."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Profesora",
-        "text": "Aun así, el café que hemos pedido habrá que bebérselo antes de irnos. *Lo suelta forzando la broma y envuelve con las manos la taza caliente. En el posavasos de corcho, sobre la mesa, dos marcas redondas de agua se solapan una junto a la otra.*"
+        "text": "Aun así, deberíamos tomar el café que pedimos antes de irnos. *Ella envuelve sus manos alrededor de la taza caliente. Dos marcas redondas de agua se superponen una al lado de la otra en el posavasos de corcho.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -217,7 +217,7 @@
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Profesora",
-        "text": "Ahora que de verdad tengo que elegir, me da una vergüenza enorme. El peso de una frase no tiene nada que ver cuando la corrijo sola de noche, con la lámpara encendida, y cuando la pongo delante de otra persona. *Incluso después de dejar la taza, las yemas de la profesora siguen jugueteando con el asa de porcelana.*"
+        "text": "Una frase pesa completamente diferente cuando la fijas solo por la noche, y cuando la pones frente a otra persona. *Incluso después de que ella deja la taza, sus dedos siguen jugueteando con el asa.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Profesora",
@@ -233,7 +233,7 @@
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*Por una rendija del bolso de cuero de la profesora, apoyado junto a la silla, se ve el sobre del manuscrito. De tanto abrirlo y cerrarlo, el pliegue está gastado, tenue, del roce de las manos.*"
+        "text": "*A través de una abertura en la bolsa del profesor de aula, se ve el sobre del manuscrito. El pliegue está desgastado con marcas de dedos por las veces que se abrió y cerró.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Profesora",
@@ -274,7 +274,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "Cuando anote en el margen, ¿dejo mi nombre en blanco? Si los del club de literatura reconocen mi letra, me da miedo dejarla a usted en un apuro. *Al oírme, la profesora detiene la mano con la que alisaba la funda del vaso y sonríe apenas.*"
+        "text": "¿Debería omitir mi nombre al anotar en el margen? Me temo que te pondrá en una situación difícil si los chicos reconocen mi letra. *Ella detiene la mano que estaba alisando la funda de la taza y sonríe.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Profesora",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "{name}",
-        "text": "Leer lo suyo en un café que huele a grano, y no en la sala de profesores, me resulta raro. *La profesora escribe un número pequeño arriba de la última copia y la desliza hacia mí. Las yemas que me pasan el papel rozan el dorso de mi mano y se apartan.*"
+        "text": "Leer tu escritura en un café se siente extraño. *Ella escribe un número pequeño en la parte superior de la impresión y me lo desliza. Las yemas de sus dedos rozan el dorso de mi mano.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Profesora",
@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "Enfermera, he venido a la hora de consulta que me concertó la otra vez. *Cruzo el pasillo, revuelto por los preparativos del festival, y abro la puerta silenciosa de la enfermería. Sobre el escritorio, la hoja de la consulta y el folleto están puestos en orden.*"
+        "text": "Estoy aquí por el tiempo de consejería que programaste. *Abro la puerta de la tranquila oficina de enfermería. Un registro de consejería y una hoja de información yacen sobre el escritorio.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Enfermera",
@@ -380,7 +380,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "Enfermera",
-        "text": "Lo que me abras no se lo paso a nadie sin tu permiso. En cambio, si veo riesgo de que te hagas daño, no voy a tardar: uniré fuerzas con otros adultos. Esa única regla me la tienes que prometer."
+        "text": "No pasaré lo que confíes a nadie sin permiso. Pero si veo un riesgo de que te lastimes, trabajaré con otros adultos."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Enfermera",
@@ -392,7 +392,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*Sobre el escritorio largo de la enfermería se amontonan los botiquines del evento de la escuela y el material de desinfección. La enfermera, con las mangas remangadas y pegando etiquetas, me descubre de pie en la puerta, por encima de las gafas.*"
+        "text": "*Hay cajas de primeros auxilios para el evento y herramientas desinfectantes apiladas sobre el escritorio en la oficina de enfermería. La enfermera de la escuela, que estaba pegando etiquetas, me nota de pie en el umbral.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Enfermera",
@@ -412,15 +412,15 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "La gasa estéril y las torundas de alcohol las dejo separadas por aquí, a mano. *Entre el personal del festival, que no para de entrar y salir, ordeno la mesa de trabajo siguiendo por dónde se mueve la enfermera.*"
+        "text": "Organizaré las gasas estériles y los hisopos de alcohol aquí. *Organizo la mesa de trabajo para que coincida con sus movimientos.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Enfermera",
-        "text": "*Me pone delante un fajo de bolsas transparentes con cremallera.* En cada una van dos gasas y tres algodones desinfectantes. Los papeles con los datos de salud sensibles de los alumnos los clasifico yo."
+        "text": "*Ella me entrega un paquete de bolsas con cierre transparente.* Ponga dos compresas de gasa y tres almohadillas de algodón antiséptico en cada una. Yo me encargaré de los expedientes médicos confidenciales."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "Esta fila de bolsas ya está llena, con las cantidades. Mire a ver si falta algo. *Las yemas de la enfermera y las mías se rozan un momento sobre la bolsa, y yo tiro enseguida de la siguiente, que está vacía.*"
+        "text": "Todas las bolsas de esta fila tienen las cantidades correctas ahora. *La punta de sus dedos y la mía rozan ligeramente una bolsa.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "Enfermera",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Enfermera",
-        "text": "Es verdad que no dormía y que iba hasta arriba. Pero, si digo que lo dejé solo porque el trabajo me comía, se queda fuera la razón que más importa. *En cuanto la enfermera cierra la carpeta, la punta del bolígrafo que tiene en la mano resbala un poco sobre la tapa lisa.*"
+        "text": "Es cierto que estaba ocupada. Pero no renuncié solo por el trabajo. *En el momento en que ella cierra el expediente, la punta del bolígrafo se desliza sobre la cubierta.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Enfermera",
@@ -456,12 +456,12 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "Enfermera",
-        "text": "Era darme cuenta de que comprobaba a máquina, antes que la cara o el nombre del paciente, el número de cama y las constantes de la ficha. Se me nublaba hasta si miraba los ojos de una persona o el monitor."
+        "text": "Fue cuando me descubrí revisando mecánicamente el número de cama y los signos vitales antes de la cara de un paciente. Ya ni podía distinguir si estaba mirando a alguien a los ojos o a un monitor."
     },
     "hidden_nurse_d4_4_g": {},
     "hidden_nurse_d4_4_h": {
         "name": "Enfermera",
-        "text": "En la enfermería de la escuela hay tiempo para mirar a los ojos, uno a uno, a los chicos que vienen, y para coger aire. Si es algo que yo no puedo resolver, llevarlos de la mano hasta un sitio que sí pueda ayudarles de verdad también me toca."
+        "text": "En la enfermería de la escuela, hay tiempo para mirar a los ojos a los niños y tomar un respiro. Si es algo que no puedo manejar por mi cuenta, conectarlos a un lugar que pueda ayudar es mi trabajo también."
     },
     "hidden_nurse_d4_4_i": {
         "name": "{name}",
@@ -469,7 +469,7 @@
     },
     "hidden_nurse_d4_4_j": {
         "name": "Enfermera",
-        "text": "Claro que sí. Así que tú también, si te viene algo demasiado grande para llevarlo solo, llama a la puerta de la enfermería, de la profesora o de la sala de orientación. No te lo tragues todo por dentro."
+        "text": "Así que si algo se vuelve demasiado pesado para llevar solo, toquen. La enfermería, el centro de consejería. No lo sufras en silencio por tu cuenta."
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
@@ -535,7 +535,7 @@
     },
     "hidden_nurse_d4_meal_1_c": {
         "name": "Enfermera",
-        "text": "Lo he probado primero para ver cuánto pica, antes de que lo coman los alumnos. *Se bebe de un trago el agua fría del vaso de papel y se limpia el borde de los labios.* Por más que lo mire, este sabor no lo salva ni el digestivo de nuestro botiquín."
+        "text": "Lo probé primero para verificar el picante antes de que los estudiantes lo comieran. *Ella se toma el agua fría de un trago y se seca los labios.* Ni siquiera nuestro medicamento para la indigestión pudo salvar ese sabor."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "{name}",
-        "text": "*Mientras le hablo mirándole la cara, una etiqueta de la punta de los dedos se pega de través en la esquina de la caja.* Ahora se le ve mucho más tranquila. Ah, al ponerme a hablarle se me ha torcido la etiqueta."
+        "text": "*Mientras hablo y miro su rostro, una etiqueta se pega en diagonal en la esquina de la caja.* Ahora te ves mucho más tranquila. Oh, la etiqueta quedó torcida."
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Enfermera",
@@ -595,7 +595,7 @@
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Vuelvo a casa, me arreglo delante del espejo el cuello de la camisa y el pelo, compruebo las agujas del reloj de la pared y, con la respiración agitada, me ato fuerte en la entrada los cordones de las zapatillas de salir.*"
+        "text": "*En casa, me afeito el cuello de la camisa y mi cabello, y vuelvo a atar los cordones de mis tenis de salir firmemente en la entrada.*"
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Profesora",
@@ -628,7 +628,7 @@
     },
     "day4_haeun_concern_clarify": {
         "name": "Haeun",
-        "text": "No me inventé palabras que no se dijeron para dejarte mal. Solo conté lo que, con sinceridad, me incomodó al hablar ayer. *Haeun me mira de frente, sin que se le mueva la mirada.* Si lo dijiste con otro sentido, dilo aquí, por favor."
+        "text": "No inventé nada. Describí lo que honestamente me incomodó cuando hablamos ayer. *Haeun me mira fijamente.* Si quisiste decir otra cosa, por favor, dímelo."
     },
     "day4_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
@@ -775,7 +775,7 @@
     },
     "day4_haeun_notice_1": {
         "name": "Haeun",
-        "text": "*A la sombra del muro, junto a la verja, Haeun, que había sacado el tema de Seoyeon, deja de pronto la frase a medias y juguetea con el nudo de la pulsera en la muñeca.* Qué raro, ¿verdad? Abrí la boca para hablar de Seoyeon, y cuando me doy cuenta se me va una y otra vez a hablar de ti. Últimamente ni yo sé bien por qué estoy así."
+        "text": "*A la sombra de la pared, Haeun juguetea con el nudo de la pulsera mientras menciona a Seoyeon.* Es extraño, ¿verdad? Intenté hablar de Seoyeon, pero cuando me doy cuenta, siempre deriva hacia usted, sunbae."
     },
     "day4_haeun_notice_choice": {
         "name": "Haeun",
@@ -789,7 +789,7 @@
     },
     "day4_haeun_notice_up": {
         "name": "Haeun",
-        "text": "*Haeun parpadea, como si se sorprendiera un poco, y sonríe con las mejillas encendidas.* Gracias por escucharme hasta el final, sin reírte. Todavía me cuesta explicarlo bien con mis palabras, pero gracias a ti me siento bastante más ligera."
+        "text": "*Haeun se sonroja y sonríe.* Gracias por escucharme hasta el final sin reírte. Gracias a usted, sunbae, me siento un poco más ligera."
     },
     "day4_haeun_notice_down": {
         "name": "Haeun",

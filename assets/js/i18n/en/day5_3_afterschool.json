@@ -26,7 +26,7 @@
     },
     "after5_farewell_seo_3": {
         "name": "Seoyeon",
-        "text": "I thought about pretending I didn't see you and just walking past. Running away like that sits even worse with me. I already know the choice you made. *She neatly tucks the hair that slipped down behind her ear and adjusts her grip on the bag strap.*"
+        "text": "I thought about pretending I didn't see you and just walking past. Running away like that sits even worse with me. I know the choice you made. *She tucks her hair behind her ear and adjusts her grip on the bag strap.*"
     },
     "after5_farewell_seo_4": {
         "name": "Seoyeon",
@@ -67,7 +67,7 @@
     },
     "after5_farewell_yuna_5": {
         "name": "Yuna",
-        "text": "*Where Yuna's presence has gone, I look down again at the line on the bookmark in my hand. Under the last character, the pale lavender ink has spread in a soft round blot, as if it soaked up moisture.* ...It was really fun, you reading my story."
+        "text": "*Where Yuna's presence has gone, I look down again at the line on the bookmark. Under the last character, the pale lavender ink has spread in a soft round blot.* ...It was really fun, you reading my story."
     },
     "after5_farewell_yuna_5b": {
         "name": "{name}",
@@ -100,7 +100,7 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "...Okay, go. I'll only send you off smiling up to here. I don't have to act tough and hold in tears in front of you, too. *Dain turns, shoves the volleyball into the storage bin with a thud, and reties the strap of her knee brace hard.*"
+        "text": "...Okay, go. I'll only send you off smiling up to here. I don't have to act tough and hold in tears in front of you, too. *Dain turns and puts the volleyball into the storage bin.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
@@ -112,7 +112,7 @@
     },
     "after5_hidden_farewell_1": {
         "name": "{name}",
-        "text": "*In front of the school gate, as the afternoon sun slants lower. Seoyeon is checking the last event roster with Haeun, Dain has slowed her stride with a volleyball tucked under one arm, and Yuna has stopped, eyes lowered to an open page. Soon the three quietly scatter down different paths.*"
+        "text": "*By the school gate, the afternoon sun is sinking. Seoyeon checks the inspection list, Dain slows her stride with the ball tucked under her arm, and Yuna looks down at the pages of her book. Soon, the three head off down separate paths.*"
     },
     "after5_hidden_farewell_3": {
         "name": "{name}",
@@ -184,7 +184,7 @@
     },
     "after5_last_chance_2_j": {
         "name": "Seoyeon",
-        "text": "If you're still not going to take it, say so here, straight. Don't leave me waiting again, hoping on my own like a fool. *Without pulling back her faintly trembling palm, Seoyeon looks straight up into my eyes.*"
+        "text": "If you're still not going to take it, say so here, straight. Don't leave me waiting again, hoping on my own. *Seoyeon looks up at me without pulling back her trembling palm.*"
     },
     "after5_last_chance_seo_low_1": {
         "name": "{name}",
@@ -225,7 +225,7 @@
     },
     "after5_last_chance_2_r": {
         "name": "{name}",
-        "text": "I went over it dozens of times on the way, but the second I see your eyes I'm out of breath and the words won't come. ...Just wait a little. *Dain wipes the reddened corner of her eye with the back of her hand, and a clear wetness spreads over her fair skin.*"
+        "text": "I went over it dozens of times on the way, but the second I see your eyes I'm out of breath and the words won't come. ...Just wait a little. *Dain wipes the reddened corner of her eye with the back of her hand.*"
     },
     "after5_last_chance_2_s": {
         "name": "Dain",
@@ -293,7 +293,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's long lashes tremble. Then, cheeks flushed, she steps up beside me and starts toward the park.* ...That was really mean, saying it this late. Still... now I finally know how you really feel."
+        "text": "*Seoyeon stands beside me with her flushed cheeks and starts walking toward the park.* ...That was really mean, saying it this late. Still... now I finally know how you really feel."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -319,7 +319,7 @@
     },
     "after5_confess_react_yuna_b": {
         "name": "Yuna",
-        "text": "Hearing you say it out loud like this... I don't have to be scared anymore that I misread how you feel, all on my own. *Yuna starts to loosen her hold on the book, then takes the corner again, careful with it.*"
+        "text": "Hearing you say it out loud like this... I don't have to be scared anymore that I misread how you feel, all on my own. *Yuna carefully adjusts her grip on the corner of the book in her arms.*"
     },
     "after5_confess_react_yuna_c": {
         "name": "Yuna",
@@ -379,7 +379,7 @@
     },
     "after5_harem_commit": {
         "name": "{name}",
-        "text": "I'm sorry... In the end I couldn't choose only one of you. *In front of the three, who walked up one by one and stopped, I put my phone in my pocket. In the air gone cold, no one is quick to speak.*"
+        "text": "I'm sorry... In the end I couldn't choose only one of you. *In front of the three, who stopped, I put my phone in my pocket. In the air gone cold, no one is quick to speak.*"
     },
     "after5_harem_walk_1": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "day5_haeun_guilt_1": {
         "name": "Haeun",
-        "text": "*At the end of the hallway where the sunset seeps in, Haeun stands gripping her bag strap with both hands.* I meant it when I said I was truly cheering for you, senior. But the one who said that... I can't look Seoyeon in the face now."
+        "text": "*At the end of the hallway, Haeun stands gripping her bag strap.* I wasn't lying when I said I was rooting for you, sunbae. But now I can't look Seoyeon in the face."
     },
     "day5_haeun_guilt_choice": {
         "name": "Haeun",
@@ -654,7 +654,7 @@
     },
     "day5_haeun_walk": {
         "name": "Haeun",
-        "text": "*After we finish cleaning the student council room, we walk side by side through the streets under the sunset and reach the park. Haeun sets her bag down gently at one end of a wooden bench.* Senior, sit here. I want to hear the rest of what we couldn't finish in the hall."
+        "text": "*After cleaning up, we walk through the sunset-lit streets to the park. Haeun puts her bag down at one end of a bench.* Senior, sit here. I want to hear the rest of what we couldn't finish in the hall."
     },
     "day5_haeun_private_2": {
         "name": "Haeun",
@@ -664,11 +664,11 @@
     },
     "day5_haeun_fallback": {
         "name": "Haeun",
-        "text": "Thank you for hearing me all the way out today, senior. It's not that I have no feelings for you... but that person's face keeps coming back. I'm still too sorry, so I can't bring myself to say I'll take your hand and date you. Not now. *Haeun stands from the bench and shoulders her bag. She bows her head, careful, then turns back toward school alone.*"
+        "text": "Thank you for hearing me out today, sunbae. It's not that I don't have feelings for you, but I keep seeing that person's face. I still feel too guilty to agree to date you now. *Haeun shoulders her bag, says goodbye, and turns back toward the school.*"
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*Haeun shifts close on the bench, into the seat right beside me, and gently takes the end of my sleeve.* I like you a lot too, senior. Let's... start dating today. Tomorrow morning, even without the excuse of student council work, can I call you out just because I want to see you?"
+        "text": "*Haeun sits next to me on the bench and takes the end of my sleeve.* I really like you too, sunbae. Let's start dating today. Tomorrow morning, can I ask to see you just because I miss you, without needing an excuse?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",
@@ -692,7 +692,7 @@
     },
     "day5_ending_haeun_epilogue": {
         "name": "Haeun",
-        "text": "*Seasons have changed again and again. One afternoon, after Haeun has finally graduated high school and become an adult, I open a café door to a bell. Haeun, in the window seat, waves and moves her bag off the chair across from her.* Senior, I got here first today and saved our seats! I held off ordering so we could choose together once you got here. What should we drink today?"
+        "text": "*One afternoon, after Haeun has graduated from high school and become an adult, I enter the café. She waves happily from a seat by the window.* Senior, I got here first today and saved our seats! I waited so we could choose the menu together. What should we drink today?"
     },
     "day5_haeun_offer_seoyeon": {
         "name": "Haeun",

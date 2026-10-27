@@ -59,11 +59,11 @@
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*I knock, then open the student council room door. Sunset cuts across the desk, where Seoyeon is down on her arms. At her feet, the clipboard she never lets go of lies limp on the floor.*"
+        "text": "*When I open the student council room door, Seoyeon is slumped over the sunset-lit desk, her head resting on her arms. The clipboard she always carries lies at her feet.*"
     },
     "after3_seo_3": {
         "name": "Seoyeon",
-        "text": "*Startled by the door, Seoyeon sits up fast. The ribbon at her shirt collar is a little undone, and mascara is smeared faint under her flushed eyes.*"
+        "text": "*Startled by the sound of the door, Seoyeon sits up. The ribbon is slightly undone, and mascara is smeared faintly under her flushed eyes.*"
     },
     "after3_seo_4": {
         "name": "Seoyeon",
@@ -87,7 +87,7 @@
     },
     "after3_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon takes half a step toward me, then stops and presses the back of her hand hard against her eyes. Heat spills out between her short breaths.* Of all people, you. I never wanted you to see my face fallen apart like this."
+        "text": "*Seoyeon takes half a step toward me, then stops and presses the back of her hand against her eyes.* Of all people, you. I never wanted you to see my face fallen apart like this."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
@@ -129,7 +129,7 @@
     },
     "after3_seo_pity_trap_6": {
         "name": "Seoyeon",
-        "text": "I wasn't hiding in an empty room because I wanted pity. I don't want to hear one more word right now. *Seoyeon turns away, drawing her rumpled collar closed. A black streak of makeup is smeared sharp across the back of her pale hand.*"
+        "text": "I wasn't hiding because I wanted pity. I don't want to hear any more right now. *Seoyeon turns away, drawing her collar closed. A black streak of makeup is smeared across the back of her hand.*"
     },
     "after3_seo_pity_trap_7": {
         "name": "Seoyeon",
@@ -153,7 +153,7 @@
     },
     "after3_seo_correct_2": {
         "name": "{name}",
-        "text": "*I bend down, casual on purpose, and reach under Seoyeon's desk. To buy her time to fix her eyes, I keep my gaze on the floor and feel around, pretending to look for a pen.*"
+        "text": "*I bend down and reach under the desk. To give Seoyeon time to dry her eyes, I look at the floor and fumble around as if searching for a pen.*"
     },
     "after3_seo_correct_3": {
         "name": "{name}",
@@ -177,7 +177,7 @@
     },
     "after3_seo_correct_8": {
         "name": "{name}",
-        "text": "So where are all those pens even hiding? *I keep the dumb jokes going, perch on the corner of the desk, and stay beside her until her breathing settles all the way.*"
+        "text": "So where are all those pens even hiding? *I keep the dumb jokes going, perch on the corner of the desk, and stay beside her until her breathing settles.*"
     },
     "after3_seo_correct_9": {
         "name": "Seoyeon",
@@ -189,7 +189,7 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "*Seoyeon lowers her head close enough that her forehead nearly touches my forearm, and whispers. A sweet, hot breath brushes through the slightly loosened collar of her shirt.* Next time you lose a pen, don't go anywhere else. Come here first. No exceptions."
+        "text": "*Seoyeon lowers her head until her forehead nearly touches my forearm and whispers. Hot breath brushes through the open shirt collar.* Next time you lose a pen, come here first."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
@@ -232,11 +232,11 @@
     },
     "after3_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna isn't on the sofa inside. Only an old leather notebook lies open on the cushion. Under Yuna's name, written inside the cover, neat handwriting fills every page.*"
+        "text": "*Yuna isn't on the sofa. Only an old leather notebook lies open on the cushion. Neat handwriting fills the pages under Yuna's name.*"
     },
     "after3_yuna_4": {
         "name": "{name}",
-        "text": "*My eyes hit the first page without meaning to. \"One day a transfer student came. He found his way to the corner of the library and sat in the seat beside me without a word. Strangely, I didn't mind that warmth.\"*"
+        "text": "*My eyes hit the first page without meaning to. \"One day a transfer student came. He found his way to the corner of the library and sat beside me without a word. I didn't mind that warmth.\"*"
     },
     "after3_yuna_5_b": {
         "name": "{name}",
@@ -260,7 +260,7 @@
     },
     "after3_yuna_9": {
         "name": "Yuna",
-        "text": "I brought it so I could hand it to you myself. I'm not ready right now. *Yuna clutches the notebook to her chest and grips my wrist hard with her other hand. Her pale earlobe flares bright red.*"
+        "text": "I brought it so I could hand it to you myself. I'm not ready yet. *Yuna clutches the notebook and grips my wrist. Her earlobe flares bright red.*"
     },
     "after3_yuna_choice": {
         "name": "{name}",
@@ -338,7 +338,7 @@
     },
     "after3_yuna_correct_6": {
         "name": "Yuna",
-        "text": "It's not writing that needs praise that far. The sentences get shaky the further in you go. *Yuna sets the notebook down from her arms and slowly smooths the crumpled corner of the cover with her palm.*"
+        "text": "It doesn't deserve that much praise. The writing gets shakier the further you go. *Yuna sets the notebook down and smooths the crumpled corner of the cover with her palm.*"
     },
     "after3_yuna_correct_7": {
         "name": "Yuna",
@@ -354,7 +354,7 @@
     },
     "after3_yuna_correct_10": {
         "name": "Yuna",
-        "text": "Now that I'm actually putting it in your hands, my heart's a little loud. Here. Don't ever show it to anyone else. *Yuna holds the notebook out with both hands and lays her cold palm over the back of mine.*"
+        "text": "Now that I'm actually putting it in your hands, my heart's loud. Don't ever show it to anyone else. *Yuna holds out the notebook and lays her cold palm over the back of my hand.*"
     },
     "after3_yuna_correct_11": {
         "name": "{name}",
@@ -362,7 +362,7 @@
     },
     "after3_yuna_correct_12": {
         "name": "Yuna",
-        "text": "*Yuna leans in, her hot cheek against my palm, and whispers in a voice like a breath.* When you've read it through to the last page, leave that writer one anonymous line. Only for her."
+        "text": "*Yuna leans in, her hot cheek against my palm, and whispers.* When you've read it through to the last page, leave that writer one anonymous line. Only for her."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
@@ -385,7 +385,7 @@
     },
     "after3_dain_1": {
         "name": "{name}",
-        "text": "*On the empty gym court, Dain is practicing jump serves alone. The moment she lands after hitting the ball hard, her right knee buckles and her body tips hard toward the floor.*"
+        "text": "*On the empty gym court, Dain is practicing jump serves. The moment she lands, her right knee buckles and her body tips hard toward the floor.*"
     },
     "after3_dain_3": {
         "name": "{name}",
@@ -483,7 +483,7 @@
     },
     "after3_dain_correct_7": {
         "name": "Dain",
-        "text": "If you just stand there, I have to keep looking up at you. Come here and sit close. *Dain shifts inward on the bench to make room and rolls the volleyball at her feet off the court.*"
+        "text": "If you just stand there, I have to keep looking up at you. Come here and sit. *Dain shifts inward on the bench to make room and rolls the volleyball at her feet off the court.*"
     },
     "after3_dain_correct_8": {
         "name": "Dain",
@@ -496,7 +496,7 @@
     },
     "after3_dain_correct_11": {
         "name": "Dain",
-        "text": "If I just sit still, it's bearable enough. *Dain tries to slowly stretch her right leg, then swallows her breath at the throbbing pain and clenches the side of my uniform shirt.*"
+        "text": "If I just sit still, it's bearable. *Dain tries to stretch her right leg, then catches her breath at the pain and clutches the hem of my shirt.*"
     },
     "after3_dain_correct_12": {
         "name": "{name}",
@@ -528,7 +528,7 @@
     },
     "after3_dain_dilemma_tell_7": {
         "name": "Dain",
-        "text": "My hands are shaking so much I can't even tie one shoelace right. Don't decide for me just because you saw me like this. *Hand still on her knee, Dain lowers her head into my arms. Heat comes off her flushed nape in a wave, mixed with the smell of sweat.*"
+        "text": "My hands are shaking so much I can't tie the laces right. Don't decide for me just because you saw me like this. *Hand still on her knee, Dain lowers her head into my arms.*"
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
@@ -574,7 +574,7 @@
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
-        "text": "You mean I should say it when I'm ready. Not dump it all right now, like I'm making excuses. *Dain swallows the breath rising in her throat, bites her lip, then rubs her wet eyes with the back of her hand and smiles.*"
+        "text": "You mean I should say it when I'm ready. Not dump it all right now. *Dain bites her lip, then rubs her wet eyes with the back of her hand and smiles.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -601,7 +601,7 @@
     },
     "after3_confront_1": {
         "name": "{name}",
-        "text": "*After I finish the after-school schedule and step into the hall, Seoyeon is waiting in the shade by the window, arms crossed. Her long, thin fingers tap a steady beat on her own arm.*"
+        "text": "*When I step into the hallway after class, Seoyeon is waiting in the shade by the window with her arms crossed. Her long fingers tap steadily against her forearm.*"
     },
     "after3_confront_2": {
         "name": "Seoyeon",
@@ -654,7 +654,7 @@
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
-        "text": "Did you think one honest apology and we'd all understand and move on? I asked what happens to this weekend's plans. *Seoyeon squeezes the lunch-bag handle hard enough to twist the leather.*"
+        "text": "Did you think I'd understand and let it go after one apology? I asked what was happening with our plans for this weekend. *Seoyeon squeezes the bag handle hard.*"
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
@@ -750,7 +750,7 @@
     "minsu_d3_4": {},
     "minsu_d3_5": {
         "name": "Minsu",
-        "text": "It's getting hard to watch this from beside you, as a friend. All three of them are good people, and they mean it with you. I know you're not stringing them along out of malice, but you keep avoiding the moment to say no."
+        "text": "It's getting hard to watch as your friend. All three of them are sincere with you. I know you don't mean any harm, but you keep dodging the chance to say no."
     },
     "minsu_d3_5b": {
         "name": "Minsu",
@@ -770,7 +770,7 @@
     },
     "minsu_d3_8": {
         "name": "{name}",
-        "text": "*At my old school, too, I always shut my mouth at the moment that mattered. I saw the graffiti covering Sojeong's desk and still turned my head, pretending I didn't. This time I can't dress my cowardly silence up as consideration.*"
+        "text": "*At my old school, too, I always shut my mouth at the moment that mattered. I saw the graffiti on Sojeong's desk and still turned my head. This time I can't dress my cowardly silence up as consideration.*"
     },
     "minsu_d3_9": {
         "name": "Minsu",
@@ -839,7 +839,7 @@
     },
     "haeun_cheer_1": {
         "name": "Haeun",
-        "text": "*Haeun takes her hand off the bracelet and carefully meets my eyes.* Only when she talks about you, Senior, does Seoyeon's face change completely. That's why I'm truly rooting for both of you. I hope you'll give her, from beside her, the comfort I can't."
+        "text": "*Haeun takes her hand off the bracelet and meets my eyes.* Seoyeon's expression only changes like that when she talks about you, sunbae. I'm really rooting for both of you. I hope you'll stay by her side and comfort her."
     },
     "haeun_cheer_choice": {
         "name": "Haeun",
@@ -900,7 +900,7 @@
     "haeun_warn_7_d": {},
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*After Haeun leaves, I turn back and knock carefully on the student council room door. No answer, but beyond the door a chair scrapes, faint.* Seoyeon, it's me. I'll stay outside a moment, then go."
+        "text": "*After Haeun leaves, I knock carefully on the student council room door. A faint scraping of a chair comes from the other side.* Seoyeon, it's me. I'll stay outside a moment, then go."
     },
     "haeun_warn_8b": {
         "name": "{name}",

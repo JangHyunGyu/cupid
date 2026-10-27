@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*I hold Yuna’s note from this morning. Its folded corners are worn from opening it between classes. I stop where the corridor branches toward the roof stairs, the basement snack shop and the library annex.*"
+        "text": "*I hold Yuna’s note from this morning. I stop where the corridor branches toward the roof stairs, the basement snack shop and the library annex.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -18,7 +18,7 @@
     },
     "lunch2_seo_1b": {
         "name": "Seoyeon",
-        "text": "First time you've come up to the roof today, right? Sit in the shade over here. You can hear the field below a little, but the breeze is cool. *She opens a neat lunchbox on a folding chair.*"
+        "text": "First time you've come up to the roof? Sit in the shade over here. The breeze is cool. *She opens a neat lunchbox on a folding chair.*"
     },
     "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {},
@@ -150,7 +150,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "Seoyeon",
-        "text": "Right. Stay still, like you are now. This won't take long. *Seoyeon's soft fingertips brush the corner of my lips, lift off the grain of rice, and fold the wet wipe so the inside doesn't show.*"
+        "text": "Right, I meant for you to stay still. *Seoyeon's fingertips brush the corner of my lips, lift off the grain of rice, and fold the wet wipe.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -158,7 +158,7 @@
     },
     "lunch2_seo_c1_2_b": {
         "name": "Dain",
-        "text": "Sorry. I was just about to grab a sausage. ...Is it really okay if I keep sitting here? *Chopsticks frozen in midair, Dain looks back and forth between the two of us, her face gone stiff.*"
+        "text": "Wait, I was just about to take a sausage. ...It's still okay for me to sit here, right? *With chopsticks frozen, Dain looks back and forth between the two of us.*"
     },
     "lunch2_seo_c1_3": {
         "name": "Dain",
@@ -191,7 +191,7 @@
     "lunch2_seo_c2_3": {},
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*A faint rice mark is still on the back of my hand. Seoyeon draws her hand back from the air and only unties the lunchbox cloth strap, then cinches it again.*"
+        "text": "*A rice mark remains on the back of my hand. Seoyeon, having withdrawn her hand, only unties the lunchbox cloth strap and cinches it again.*"
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -279,7 +279,7 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "It's crowded, so let's lean by this window and eat. *We stand side by side by the shop's glass door with the warm bag of bread, and down the hall I see Seoyeon coming this way.*"
+        "text": "Let's eat leaning by this window. *We stand side by side by the glass door, holding the bag of bread, and down the hall I see Seoyeon walking toward us.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -304,23 +304,23 @@
     },
     "lunch2_dain_c1_1": {
         "name": "Dain",
-        "text": "...Oh. So the two of you talked on your own yesterday, too. Then there's plenty between you that I don't know. *Bread still in her mouth, she fiddles with the end of the empty wrapper, and the chewing stops.*"
+        "text": "...Oh. So the two of you talked on your own yesterday, too. Then there's plenty between you that I don't know. *Bread still in her mouth, she fiddles with the end of the empty wrapper.*"
     },
     "lunch2_dain_c2_1": {
         "name": "Dain",
-        "text": "Just a tour of the school... Fine. If that's what you say, I'll take it. *She takes another bite of the soboro, but glances at the faint trace of Seoyeon still on the shop's glass door.*"
+        "text": "Just a tour of the school... Fine. I'll take it. *She takes a bite of the soboro, but glances at the faint trace of Seoyeon on the glass door.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "Hey, don't laugh like you're making fun of me! *Dain snaps the soboro bun in her hand in half and thrusts the bigger piece out toward my chest.* Don't make me talk. Eat more of this!"
+        "text": "Hey, don't laugh like you're making fun of me! *Dain splits the soboro bun in half and holds the larger piece out in front of my chest.* Don't make me talk. Eat more of this!"
     },
     "lunch2_dain_c3_2": {
         "name": "Dain",
-        "text": "I gave it so you'd eat more. Why do you keep grinning? I'm not putting it in your mouth for you, so just take it! *As if to hide her reddened cheeks, she folds the bread wrapper down to the width of two finger joints.*"
+        "text": "I gave it so you'd eat more. Why do you keep smiling? Just take it! *As if to hide her reddened cheeks, she folds the bread wrapper.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*While Dain sulks and chews what's left of the bread, the shop's glass door Seoyeon brushed past still sways, faintly, like the moment hasn't left.*"
+        "text": "*While Dain sulked and chewed the rest of her bread, I kept seeing Seoyeon's retreating back beyond the shop's glass door.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
@@ -360,7 +360,7 @@
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
-        "text": "You're even putting a towel under my elbow? This is more of a setup than I expected. *The nurse takes out a bottle of disinfectant and white gauze, and gently props my elbow up from underneath.*"
+        "text": "You're even putting a towel under my elbow? *She takes out disinfectant and gauze, then gently supports my elbow from underneath.*"
     },
     "lunch2_dain_end_j": {
         "name": "School Nurse",
@@ -372,7 +372,7 @@
     },
     "lunch2_dain_end_m": {
         "name": "{name}",
-        "text": "It's on already? It's right over the joint. Won't the bandage peel if I bend my arm? *The nurse wraps a hand around my wrist and signals me to bend my elbow once.*"
+        "text": "It's right on the joint. Won't the bandage peel off when I bend my arm? *She cups my wrist and signals for me to bend my elbow.*"
     },
     "lunch2_dain_end_n": {
         "name": "School Nurse",
@@ -389,19 +389,19 @@
     "lunch2_dain_end_q": {},
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*The desk drawer is open to put the scissors away, and inside it I see a faded pale-green notebook. The moment I read the first line inside the cover, \"To you, that day—\", the drawer snaps shut.*"
+        "text": "*As she opens the drawer to put away the scissors, I see a faded pale-green notebook inside. Just as I make out the words 'To you, from that day—' inside the cover, the drawer closes.*"
     },
     "lunch2_dain_end_s": {
         "name": "School Nurse",
-        "text": "*She glances down at the closed drawer once, then looks me straight in the eye.* Pretend you didn't see what just went by. I'll tell you one secret instead. I like sweet cocoa much more than bitter coffee."
+        "text": "*She looks down at the closed drawer, then meets my eyes.* Pretend you didn't see that. I'll tell you another secret instead. I like cocoa much more than coffee."
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Even after she offers the cocoa line like a joke, the nurse's pale fingers stay pressed hard on the drawer handle and don't let go.*"
+        "text": "*Even after her playful remark about cocoa, her pale fingers keep pressing firmly on the drawer handle.*"
     },
     "lunch2_dain_end_u": {
         "name": "School Nurse",
-        "text": "*Then she eases off the handle and slips her hand into her coat pocket.* That's enough of an adult's private talk for today. The bandage on your elbow isn't uncomfortable?"
+        "text": "*She relaxes her grip on the handle and slips her hand into her coat pocket.* That's enough about an adult's private life. The bandage on your elbow isn't uncomfortable, is it?"
     },
     "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
@@ -414,7 +414,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "School Nurse",
-        "text": "You don't have to change it every single day. Check the wound tomorrow morning and decide then. *Halfway through folding the empty bandage wrapper in half, she looks up at me with a peculiar look.*"
+        "text": "You don't have to change it every day. We can decide after checking the wound tomorrow morning. *She looks up at me while folding the empty bandage wrapper.*"
     },
     "lunch2_dain_end_z": {
         "name": "School Nurse",
@@ -524,7 +524,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "If you just stand there, I can't focus enough to read. Sit. You don't have to ask permission for every little thing here. *She sinks into the small 2-seat sofa, sets her bag on the floor, and leaves the seat right beside her empty.*"
+        "text": "If you just stand there, I can't focus enough to read. Sit. *She sinks into the small 2-seat sofa, sets her bag down and leaves the seat right beside her empty.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -598,7 +598,7 @@
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
-        "text": "*I don't ask anything more. When I quietly lean into the seat beside her, Yuna picks a book from the stack by her knee and sets it down close to my thigh.*"
+        "text": "*When I quietly lean into the seat beside her, Yuna picks a book from the stack by her knee and sets it down close to me.*"
     },
     "lunch2_yuna_c2_3": {
         "name": "Yuna",
@@ -626,7 +626,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Before I close the annex door, I look back one last time. Yuna is looking down again at the very page she stopped on when she said “used to be.”*"
+        "text": "*Before I close the annex door, I look back. Yuna is looking down at the page she stopped on when she said “used to be.”*"
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",

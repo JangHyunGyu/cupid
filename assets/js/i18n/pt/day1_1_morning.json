@@ -1,15 +1,15 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Abril, pétalas de cerejeira se espalhando na frente do portão. Ajeito a gola ainda dura do uniforme novo e reajusto a alça da mochila com os documentos da transferência.*"
+        "text": "*Abril, pétalas de cerejeira espalhadas em frente ao portão da escola. Eu ajeito a gola do meu uniforme novo e a alça da bolsa que carrega meus papéis de transferência.*"
     },
     "start_again": {
         "name": "{name}",
-        "text": "*Uma tontura sobe de repente e eu me apoio no pilar frio do portão. Solto o ar devagar e espero o enjoo por dentro passar.*"
+        "text": "*Uma onda de tontura me atinge, e eu me apoio no pilar do portão. Eu expiro em respirações ofegantes e espero meu estômago se acalmar.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*O celular no bolso vibra uma vez. Olho um instante os nomes conhecidos que surgiram no grupo da escola antiga e apago a tela em silêncio.*"
+        "text": "*O telefone no meu bolso vibra uma vez. Eu olho para os nomes familiares no antigo grupo de bate-papo da escola e desligo a tela silenciosamente.*"
     },
     "name_input_scene": {
         "name": "Sistema",
@@ -17,7 +17,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Na sombra do portão, uma garota de cabelo longo e liso empurra de leve a armação dos óculos e confere o relógio de pulso. Quando meus passos se aproximam, os cílios arrumados se erguem devagar.*"
+        "text": "*Sob a sombra do portão, uma garota de cabelos longos e lisos ajeita os óculos e checa o relógio. Ao meus passos, seus cílios bem cuidados se levantam.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "No crachá do peito também está {name}. Prazer. *Com a ponta arrumada dos dedos, ela marca de leve a lista na prancheta.*"
+        "text": "Sua etiqueta de nome também diz {name}. Prazer em conhecê-la. *Com a ponta arrumada dos dedos, ela marca de leve a lista na prancheta.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "Não precisa diminuir o passo pra receber o oi de quem passa. Só acompanha o meu passo. *Às saudações que vêm do corredor, ela só levanta a mão de leve.*"
+        "text": "Não precisa desacelerar para dar 'oi' para todos que passamos. Apenas acompanhe meu ritmo. *Às saudações que vêm do corredor, ela só levanta a mão de leve.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -170,11 +170,11 @@
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*A porta da frente desliza. No ar barulhento da sala, dezenas de olhares se voltam todos de uma vez.* Bom dia."
+        "text": "*A porta da frente se abre com um estrondo, e a sala barulhenta fica em silêncio enquanto dezenas de olhos se voltam para mim.* Bom dia."
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*Na frente da mesa está a professora, aparentando o fim dos 20 anos. De cardigã bege macio, com o botão de cima naturalmente aberto, ela segura o diário de classe e me recebe.*"
+        "text": "*Diante da mesa está a professora responsável pela turma, que parece estar no fim dos vinte anos. De cardigã bege, ela me recebe com o livro de chamada nas mãos.*"
     },
     "classroom_3": {
         "name": "Professora",
@@ -182,7 +182,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "Sou {name}. Transferi hoje. Conto com vocês. *Termino a apresentação e levanto a cabeça. A professora marca um ponto arrumado ao lado do meu nome no diário e sorri com os olhos.*"
+        "text": "Sou {name}. Transferi hoje. Conto com vocês. *Eu termino a saudação. A professora regente marca um ponto ao lado do meu nome no livro de chamada, sorrindo com os olhos.*"
     },
     "classroom_5_b": {
         "name": "Professora",
@@ -198,7 +198,7 @@
     },
     "classroom_dain_2": {
         "name": "Dain",
-        "text": "Aqui, olha aqui! *Uma garota de cabelo castanho curto e leve, de uniforme do time de vôlei, se levanta de um pulo e acena largo.*"
+        "text": "Aqui, olha aqui! *Uma garota de cabelo curto e uniforme de vôlei levanta-se de sua cadeira e acena animadamente.*"
     },
     "classroom_dain_3": {
         "name": "Professora",
@@ -226,12 +226,12 @@
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Longe da bagunça da sala, no último lugar da janela, só a garota de cabelo branco-prateado sob o sol da primavera vira a página em silêncio.*"
+        "text": "*Exceto pela sala barulhenta, na última carteira perto da janela, apenas a garota de cabelos prateados vira uma página silenciosamente.*"
     },
     "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Alguém da primeira fileira roça a minha manga e sussurra. \"Não fala com ela. Os boatos também são meio assustadores.\" Mesmo assim, a ponta branca dos dedos de Yuna vira a página seguinte sem o menor tremor.*"
+        "text": "*Uma aluna da primeira fila roça minha manga e sussurra. \"Não fale com ela. Os boatos são meio assustadores.\" Mesmo assim, os dedos de Yuna viram a próxima página sem um tremor.*"
     },
     "classroom_seat_1": {
         "name": "Professora",
@@ -239,7 +239,7 @@
     },
     "classroom_seat_2": {
         "name": "Dain",
-        "text": "Ô, bem do meu lado? Não fica aí parado, vem sentar! *Ela puxa a cadeira para perto e vira o tronco todo na minha direção.*"
+        "text": "Ah, bem aqui perto? Não fique parada. Vem sentar! *Ela puxa a cadeira e vira o tronco em minha direção.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "classroom_dain_talk_2": {
         "name": "Dain",
-        "text": "Não liga pro que aquele cara falou! Aliás, posso te perguntar uma coisa que eu quero saber? *Ela inclina o tronco na minha direção, o bastante para passar da borda da carteira.*"
+        "text": "Não dê importância ao que aquele cara disse! Enfim, posso te perguntar uma coisa? *Ela se inclina tanto que seu tronco cruza a borda da minha mesa.*"
     },
     "classroom_dain_talk_3": {
         "name": "Dain",
@@ -287,15 +287,15 @@
     },
     "classroom_dain_talk_8": {
         "name": "Dain",
-        "text": "E aí, quer tentar comigo? *O indicador quente de Dain desenha, no veio da madeira da minha carteira, uma quadra de vôlei pequena e a linha da rede.*"
+        "text": "E aí, quer tentar comigo? *O dedo indicador de Dain desenha um minúsculo campo de vôlei e uma linha de rede sobre a madeira da minha mesa.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Nesse momento, da carteira de trás, um papel bem dobrado desliza até a beira da minha mesa. Quando me viro, a garota de cabelo branco-prateado finge que não foi ela e só olha os galhos balançando fora da janela.*"
+        "text": "*Um bilhete dobrado desliza da cadeira atrás de mim para o canto da minha mesa. Eu me viro, mas a garota de cabelos prateados apenas olha pela janela como se não soubesse de nada.*"
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*Quando abro com cuidado, aparece uma letra em lilás suave e uma dobra pequena no canto.* Lugar barulhento logo no primeiro dia. — Yuna"
+        "text": "*Eu o desdobro, e tinta lavanda pálida aparece, com uma dobra dobrada no canto.* Lugar barulhento logo no primeiro dia. — Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
@@ -303,6 +303,6 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*O sinal do começo da 1ª aula enche a sala. Entre o perfil frio de Yuna, olhando para fora, e o calor de Dain, que não para de falar, o meu primeiro dia começava.*"
+        "text": "*O sino da primeira aula preenche a sala. Entre o perfil frio de Yuna e a conversa animada de Dain, meu primeiro dia estava começando.*"
     }
 }

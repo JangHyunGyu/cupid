@@ -13,7 +13,7 @@
     },
     "date_seo_1": {
         "name": "{name}",
-        "text": "Been waiting long? Without the uniform and the clipboard, you look like someone else. *In front of the bench, fountain droplets break in the sunlight. Seoyeon stands there in a soft ivory knit cardigan and a light skirt. Below the rounded neckline, her pale collarbone and the slim line of her neck show, and a leather crossbody strap is wound tight around her tense fingers.*"
+        "text": "Been waiting long? Without the uniform and the clipboard, you look like someone else. *In front of the fountain, Seoyeon stands in an ivory knit cardigan and a light skirt, holding her cross-body bag strap.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
@@ -26,7 +26,7 @@
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "Come at me like that the second we meet, and I don't know what I'm supposed to say. *A faint pink spreads over Seoyeon's cheeks, and the bag strap she was gripping tight slowly loosens.* Still, it feels good, so the smile comes first."
+        "text": "If you come at me like that the second we meet, I don't know what to say. *A pink hue spreads across Seoyeon's cheeks, and the bag strap she was holding loosens.* Still, it feels good, so the smile comes first."
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
@@ -34,7 +34,7 @@
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*As if to cool her flushed cheeks, she turns her gaze sideways toward the fountain, but she doesn't leave the spot beside me.* Don't just stand here. Let's walk the path and get some air."
+        "text": "*As if to cool her flushed cheeks, she turns her gaze toward the fountain, but she doesn't leave the spot beside me.* Don't just stand here. Let's walk the path and get some air."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -46,7 +46,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "Still, I heard everything you just said, so don't take it back just because I was too embarrassed to answer right away. *Flushed red to the rims of her ears, she tucks the loose side of her hair behind one ear. The pale wrist showing past her cardigan sleeve barely brushes the edge of my arm.*"
+        "text": "I heard everything you just said. No taking it back just because I couldn't answer right away. *Red right up to her ears, she tucks her hair behind one ear. Her pale wrist brushes my arm.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -58,7 +58,7 @@
     },
     "date_seo_walk": {
         "name": "{name}",
-        "text": "*We match our strides and walk the path around the park lake. With every step, the hem of Seoyeon's skirt brushes the edge of my pants, and we toss small pieces of bread to the ducks gathered at the water.*"
+        "text": "*We walk in step along the lakeside path. Seoyeon's skirt brushes past as we toss pieces of bread to the ducks gathered by the water.*"
     },
     "date_seo_duck": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "How about this round pot? *A clear door chime, and the smell of damp soil and flowers hits at once. In the narrow aisle between the shelves, Seoyeon stands close enough that her shoulder touches mine and lifts a succulent pot no bigger than her palm.*"
+        "text": "How about this round pot? *The door chimes, and the scent of flowers reaches us. In the narrow aisle, Seoyeon stands close enough to touch my shoulder as she lifts a pot of succulents.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -98,7 +98,7 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "Here. Take it with both hands. When I said I'd take it back, it wasn't that I don't want to give it to you. It means think of me often. *As Seoyeon hands over the little succulent pot, her warm, soft fingers fold over my palm and wrist as if to wrap them, then slowly pull away.*"
+        "text": "Here. Take it with both hands. It means think of me often. *As Seoyeon hands me the succulent pot, her warm fingers close over my palm for a moment before drawing away.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna comes into view at once, standing in the shade of the café terrace in front of the station. Over the black dress that follows her figure, her pale collarbone and the dark tattoo on her shoulder show much more clearly than they do in her school uniform.* Been waiting long?"
+        "text": "*Yuna comes into view at once, standing at the café terrace in front of the station. Over the black dress, her pale collarbone and the tattoo on her shoulder show clearly.* Been waiting long?"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "Say that out of nowhere and I can't think of anything else. What you just said keeps echoing in my head. *Yuna drops her gaze to the rim of the cup. Silver-white hair falls and wraps her flushed cheek and the slim nape of her neck.*"
+        "text": "Say that out of nowhere and I can't think of anything else. *Yuna drops her gaze to the rim of the cup. Silver-white hair wraps her flushed cheek.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -179,7 +179,7 @@
     },
     "date_yuna_earphone": {
         "name": "Yuna",
-        "text": "I didn't call you all the way here just to look at books. I wanted to listen to this song beside you today, too. *Yuna takes wired earphones from her pocket and puts the left bud in my ear herself. Her cold fingertips brush my earlobe and jawline and leave a sweet trace.*"
+        "text": "I didn't just want to show you books. I wanted to listen to this song beside you too. *Yuna takes wired earphones and puts the left bud in my ear herself. Her cold fingertips brush my earlobe.*"
     },
     "date_yuna_earphone_2": {
         "name": "Yuna",
@@ -191,7 +191,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*So the short earphone cord won't pull tight, Yuna sits right against me on the corner bench. Her bare shoulder, showing past the black dress, presses to my arm, and her warm breath, mixed with shampoo, lands fully on the nape of my neck.*"
+        "text": "*So the earphone cord won't pull tight, Yuna sits right against me. Yuna's shoulder touches my arm, and her warm breath brushes my nape.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -227,11 +227,11 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*Feeling the warmth left on my palm, I unfold the note. It says, \"I talked a lot more than usual today. I guess it's because I was in front of you.\" The pale lavender fountain-pen ink bleeds faintly at the end of the last letter, like Yuna's heart.*"
+        "text": "*The unfolded note reads, 'I talked so much more than usual today. Maybe it was because I was with you.' The lavender ink has spread at the tip of the last letter.*"
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Weekend morning, in front of the gym. Dain, in a light cropped track jacket, a sleeveless top, and a cap pulled low, waves hard from a distance. Out of uniform, the firm line of her waist and her long legs stand out, but the black brace around her right knee draws the eye more.*"
+        "text": "*In front of the gym. Dain, in a cropped track jacket and a cap pulled low, waves from a distance. The black brace around her right knee draws the eye.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -257,7 +257,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "Wait, you're not teasing me, right? It's only about a cap, but when you look at me like that and say it, my breath just stops. *Dain yanks the brim of her cap down with both hands and hides half of her flushed face.*"
+        "text": "Wait, you're not teasing me, right? When you look at me like that and say it, my breath just stops. *Dain pulls down the brim of her cap, hiding her flushed face.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -269,7 +269,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "You think you can stare straight at me and say all that just because it's true? I absolutely don't mean I don't want to hear it! If you look at me like that, I'm too embarrassed to move a single step. *Under the brim, even her earlobe and the pale nape of her neck are bright red. Dain's fingertips, not knowing what to do, catch the edge of my sleeve, then let go.*"
+        "text": "If you say that while staring right at me, I get so embarrassed I can't move! *Even her earlobe, visible under the brim, is bright red. Dain's fingertips lightly touch and then release my sleeve.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
@@ -297,11 +297,11 @@
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "Obviously. What's the fun without a bet? Stay sharp!"
+        "text": "Of course. What's the fun without a bet? Stay sharp!"
     },
     "date_dain_arcade_3_b": {
         "name": "Dain",
-        "text": "Don't miss the beat on this highlight! *In front of a button machine you play with your hands, not a narrow foot panel, Dain presses her arm tight against mine and hammers the notes in a blur. The combo holds perfectly through the last note.*"
+        "text": "Don't miss the beat on the highlight! *In front of a button machine, Dain presses her arm tight against mine and hammers the notes. The combo continues through the last note.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -386,7 +386,7 @@
     },
     "date_seo_high_2": {
         "name": "Seoyeon",
-        "text": "I'll put the schedule I wrote in my notebook at the very bottom of my bag. I don't want to spend even this rare weekend alone with you walking while I watch the clock. *Seoyeon lightly brushes aside the hair the wind is tossing and walks ahead toward the park path, as if leading me by the hand.*"
+        "text": "I'll put the schedule at the bottom of my bag. I don't want to keep watching the clock even on a weekend out alone with you. *Seoyeon brushes aside her hair and walks ahead toward the path.*"
     },
     "date_seo_tentative_1": {
         "name": "{name}",
@@ -428,7 +428,7 @@
     },
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*Dain takes a new wristband from her pocket and fastens it on my wrist herself. Her warm fingertips brush the inside of my wrist, where my pulse is beating.* There. Couple item equipped! You pick the first event today."
+        "text": "*Dain takes a new wristband and fastens it on my wrist herself. Her warm fingertips brush the inside of my wrist.* There. Couple item equipped! You pick the first event."
     },
     "date_dain_tentative_1": {
         "name": "Dain",

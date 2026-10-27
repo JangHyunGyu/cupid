@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Sur l'appli des annonces de la classe, je vois le message que la professeure principale vient de publier. « Annonce de la terminale 2 : demain, n'oubliez pas d'apporter le manuel de maths pour la 1re heure. — Et l'élève transféré arrivé aujourd'hui n'a qu'à bien s'adapter. Cela suffira. »*"
+        "text": "*Une publication de notre professeur principal apparaît dans l'application des annonces de la classe. 'Apportez votre manuel de mathématiques pour le premier cours demain. Et quant à notre nouvel élève transféré, il suffit qu'il s'installe en toute sécurité.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Une nouvelle alerte s'affiche sur l'appli de santé du lycée. « Dossier de l'infirmerie : élève transféré — léger vertige passager. Ce soir, boire suffisamment d'eau tiède, et ne surtout pas sauter le petit-déjeuner demain. Si les symptômes reviennent, venir immédiatement à l'infirmerie. »*"
+        "text": "*Une alerte s'affiche sur l'application de gestion de la santé. 'Dossier de l'infirmerie : étourdissements temporaires légers. Buvez beaucoup d'eau ce soir et ne sautez pas le petit-déjeuner demain.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*J'éteins la lumière et je m'apprête à fermer les yeux quand le téléphone vibre encore, tout bas, et rompt le silence. L'heure indique 11 h du soir. Qui, à cette heure-ci ?*"
+        "text": "*J'éteins la lumière et suis sur le point de fermer les yeux quand le téléphone vibre à nouveau doucement. Il est 23 heures. Qui est-ce à cette heure ?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Je laisse un court au revoir et je pose le téléphone près de l'oreiller. Sur l'écran de verrouillage qui s'éteint, l'heure de l'alarme pour aller au lycée demain matin se lit nettement.*"
+        "text": "*Je laisse un court message et place mon téléphone près de ma tête. L'heure du réveil de demain matin est visible sur l'écran de verrouillage qui s'estompe.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Je pose le téléphone et je lève les yeux vers le plafond sombre. Du nouvel uniforme sur le cintre, la brise de printemps et le parfum de cerisier qui ont traversé la journée se répandent, légers.*"
+        "text": "*Je pose mon téléphone et regarde le plafond. Le nouvel uniforme accroché à proximité dégage le parfum de la brise printanière et des fleurs de cerisier d'aujourd'hui.*"
     },
     "night_end_3": {
         "name": "{name}",

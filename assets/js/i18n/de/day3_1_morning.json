@@ -38,7 +38,7 @@
     "morning3_gate_branch": {},
     "morning3_seo_gate_1": {
         "name": "{name}",
-        "text": "Seoyeon? Gleich klingelt es. Warum stehst du noch hier, statt reinzugehen? *Seoyeon tritt nicht einmal unruhig auf der Stelle. Neben dem Torpfosten sieht sie herüber.*"
+        "text": "Seoyeon? Die Glocke wird gleich läuten. Warum stehst du noch hier? *Seoyeon blickt ruhig neben dem Torpfosten in diese Richtung.*"
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
@@ -54,7 +54,7 @@
     },
     "morning3_seo_gate_warm_4": {
         "name": "Seoyeon",
-        "text": "{name}, hol erst Luft. Auch wenn du langsam gehst, reicht es noch. *Seoyeon geht neben mir und verlangsamt den Schritt zu meinem keuchenden Atem. Zwischen den streifenden Ärmeln der Uniform zieht ein leiser Seifenduft.*"
+        "text": "{name}, hol erst einmal tief Luft. Uns geht es auch gut, wenn wir langsam gehen. *Seoyeon verlangsamt ihren Schritt, um sich meinem Atem anzupassen. Ein Seifenduft breitet sich zwischen unseren sich berührenden Ärmeln aus.*"
     },
     "morning3_seo_gate_2": {
         "name": "Seoyeon",
@@ -142,7 +142,7 @@
     },
     "morning3_yuna_gate_7": {
         "name": "Yuna",
-        "text": "Iss langsam beim Gehen. Lass keine Krümel in die Tasche, und gib mir die leere Tüte. *Yuna beobachtet mein Profil, während ich das geteilte Brot esse, nimmt die leere Tüte entgegen und faltet sie klein.*"
+        "text": "Iss langsam, während wir gehen. Gib mir die leere Verpackung. *Yuna beobachtet die Seite meines Gesichts, während ich das Brot esse, das sie mir geschnitten hat, die leere Tüte nimmt und zusammenfaltet.*"
     },
     "morning3_yuna_gate_cold_1": {
         "name": "Yuna",
@@ -166,7 +166,7 @@
     },
     "morning3_dain_gate_warm_3": {
         "name": "Dain",
-        "text": "{name}, halt meinen Arm. Bei dem Tempo kommst du doch nicht außer Atem? *Dain hakt ihren Ellbogen an meinen Arm und gleicht den Schritt an. Wo wir uns berühren, zieht die Wärme deutlich durch die Uniform.*"
+        "text": "{name}, halte meinen Arm. Du wirst bei diesem Tempo nicht außer Atem kommen, oder? *Dain steckt ihren Ellbogen durch meinen Arm und gleicht meinen Schritt an.*"
     },
     "morning3_dain_gate_2": {
         "name": "Dain",
@@ -174,7 +174,7 @@
     },
     "morning3_dain_gate_3": {
         "name": "Dain",
-        "text": "Los, nimm meine Hand! Zusammen starten, das ist das Wahre. Wenn nur ich zuerst reingehe, ist das langweilig. *Dain hält die offene Handfläche hin und senkt den Oberkörper, als stünde sie am Start auf der Laufbahn.*"
+        "text": "Hier, nimm meine Hand! Es macht erst Spaß, wenn wir zusammen loslegen. *Dain streckt ihre Handfläche aus und senkt sich wie auf einer Bahn.*"
     },
     "morning3_dain_gate_4": {
         "name": "{name}",
@@ -202,7 +202,7 @@
     },
     "morning3_classroom_1": {
         "name": "{name}",
-        "text": "*Kaum öffne ich die Hintertür des Klassenzimmers, wird die Luft aus drei Richtungen fein steif. Seoyeons Füller bleibt mitten in der Luft stehen, Dains Stuhl rutscht nach hinten, und Yuna schiebt das Lesezeichen, das schon sitzt, noch einmal an dieselbe Stelle.*"
+        "text": "*Als ich die Hintertür des Klassenzimmers öffnete, fror die Luft in drei Richtungen ein. Seoyeons Füllfederhalter blieb stehen, Dains Stuhl verschob sich und Yuna schob ihren Lesezeichen wieder hinein.*"
     },
     "morning3_react_seo_1": {
         "name": "Dain",
@@ -242,35 +242,35 @@
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "Frau Lehrerin, Sie waren also hier. *Ich öffne die Tür zum leeren Klassenzimmer, in dem niemand ist. Der Füller der Klassenlehrerin, der über das Pult lief, stockt und hält an.*"
+        "text": "Frau Lehrerin, Sie waren also hier. *Ich öffne die Tür zum leeren Klassenzimmer. Der Füllfederhalter der Klassenlehrerin, der über den Schreibtisch gleitet, stockt.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Klassenlehrerin",
-        "text": "*Von der Federspitze, die sie nicht rechtzeitig gehoben hat, zerläuft ein einzelner schwarzer Tintenpunkt auf dem Papier.*"
+        "text": "*Von der Spitze, die sie nicht rechtzeitig hob, breitet sich schwarze Tinte auf dem Papier aus.*"
     },
     "hidden_homeroom_d3_3_b": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin verbirgt, wie erschrocken sie ist, deckt die Mitte des Papiers mit der Handfläche ab und dreht das Manuskript schnell um.*"
+        "text": "*Die Klassenlehrerin bedeckt das Papier mit ihrer Handfläche und dreht das Manuskript schnell um.*"
     },
     "hidden_homeroom_d3_4": {
         "name": "Klassenlehrerin",
-        "text": "Nichts Besonderes. Ich habe nur dienstliche Unterlagen sortiert. Dass du so schnell merkst, ist ein Vorteil, aber gerade ist es etwas unangenehm."
+        "text": "Das ist nichts. Ich habe nur Schulunterlagen sortiert."
     },
     "hidden_homeroom_d3_4_b": {
         "name": "{name}",
-        "text": "*Durch die Rückseite des umgedrehten Blatts scheinen unzählige Male überarbeitete Handschrift und rote Korrekturzeichen. Die schmalen, langen Finger der Klassenlehrerin drücken fest auf die Ecke des Manuskripts.*"
+        "text": "*Durch die Rückseite der umgeblätterten Seite sind handschriftliche Korrekturen und rote Markierungen zu sehen, die immer wieder überarbeitet wurden.*"
     },
     "hidden_homeroom_d3_4_c": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin zieht das Klassenbuch heran, um das Manuskriptpapier zu bedecken, aber das überstehende Ende bleibt unbedeckt.*"
+        "text": "*Sie nimmt das Anwesen, um das Manuskript zu verdecken, aber der Rand der Seite ragt immer noch hervor.*"
     },
     "hidden_homeroom_d3_4_d": {
         "name": "Klassenlehrerin",
-        "text": "*Die Stimme sinkt um einen halben Ton.* Was starrst du da so genau an. Warum kommst du in der Pause bis ins leere Klassenzimmer, statt mit deinen Freunden zu sein."
+        "text": "*Die Stimme sinkt um einen halben Ton.* Warum kommst du in der Pause in dieses leere Klassenzimmer, anstatt Zeit mit deinen Freunden zu verbringen?"
     },
     "hidden_homeroom_d3_4_g": {
         "name": "{name}",
-        "text": "*In der Ecke des ersten Manuskriptblatts steht in Rot: „Zurückgestellt“. Als mein Blick die Buchstaben trifft, treten auf dem Handrücken der Klassenlehrerin fein die Adern hervor.*"
+        "text": "*Rote Schrift in der Ecke der ersten Manuskriptseite: „Ausgesetzt.“ In dem Moment, als meine Augen auf diese Worte trafen, versteift sich die Hand der Klassenlehrerin.*"
     },
     "hidden_homeroom_d3_choice": {
         "name": "{name}",
@@ -284,7 +284,7 @@
     },
     "hidden_homeroom_d3_reveal_1": {
         "name": "Klassenlehrerin",
-        "text": "*Von den Schultern der Klassenlehrerin fällt die Anspannung, und ein leiser Atem verliert sich.* Als Roman vorzeigen wäre mir peinlich, und um es eine simple Übung zu nennen, halte ich es schon zu lange fest. Es ist schon das 7. Jahr."
+        "text": "*Die Anspannung fällt von den Schultern der Klassenlehrerin ab.* Es ist zu peinlich, es als Roman anzubieten, und ich habe zu lange darauf gewartet, es als einfache Übung zu bezeichnen. Es sind schon 7 Jahre vergangen."
     },
     "hidden_homeroom_d3_reveal_1_b": {
         "name": "{name}",
@@ -300,19 +300,19 @@
     },
     "hidden_homeroom_d3_reveal_1_e": {
         "name": "Klassenlehrerin",
-        "text": "Gegen Ende des Studiums habe ich es ein paarmal beim Neujahrsliteraturwettbewerb und bei anderen Wettbewerben eingereicht. Alles Absagen. Danach war es viel realistischer, die Bewerbung zur Lehramtsprüfung abzugeben, als das Manuskript zu überarbeiten."
+        "text": "Kurz vor dem Abschluss habe ich es dem Frühjahrs-Literaturwettbewerb und ein paar anderen Ausschreibungen geschickt. Alle abgelehnt. Danach erschien es realistischer, eine Bewerbung für die Lehrerprüfung einzureichen."
     },
     "hidden_homeroom_d3_reveal_1_f": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin hebt langsam ein Blatt Manuskriptpapier an, das sie umgedreht hatte. Die feine Handschrift sitzt so dicht, dass kaum ein Rand zu finden ist.*"
+        "text": "*Sie hebt ein Blatt des Manuskript-Entwurfs hoch, das sie umgedreht hat. Die Handschrift ist dicht.*"
     },
     "hidden_homeroom_d3_reveal_2": {
         "name": "Klassenlehrerin",
-        "text": "An dem Tag, als ich auf das Ergebnis der letzten Einsendung wartete, kam am Ende keine Zusage. Von jener Nacht an habe ich die Hoffnung beiseitegelegt und angefangen, mich auf den Lehrerberuf vorzubereiten."
+        "text": "An dem Tag, als ich auf das Ergebnis meiner letzten Einreichung wartete, kam nie eine Antwort. In dieser Nacht begann ich, mich auf das Leben als Lehrer vorzubereiten."
     },
     "hidden_homeroom_d3_reveal_2_b": {
         "name": "Klassenlehrerin",
-        "text": "Ich dachte, sobald ich an der Schule Fuß fasse, vergesse ich es von selbst. Aber bei jedem Umzug, von der Schublade in meiner Wohnung bis zu der im Lehrerzimmer, ist dieses Bündel mitgekommen."
+        "text": "Ich dachte, ich würde es vergessen, sobald ich in der Schule angekommen wäre. Aber jedes Mal, wenn ich eine Schublade verschob, kam dieser Stapel immer mit."
     },
     "hidden_homeroom_d3_reveal_2_c": {
         "name": "{name}",
@@ -320,7 +320,7 @@
     },
     "hidden_homeroom_d3_reveal_2_d": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin richtet die losen Manuskriptkanten gerade und seufzt leise.*"
+        "text": "*Sie richtet die Kanten des Manuskript-Entwurfs und seufzt leise.*"
     },
     "hidden_homeroom_d3_reveal_2_e": {
         "name": "Klassenlehrerin",
@@ -328,11 +328,11 @@
     },
     "hidden_homeroom_d3_reveal_2_f": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin streicht mit den Fingerspitzen über die abgenutzte Ecke des Manuskriptpapiers und lehnt sich tief in die Stuhllehne.*"
+        "text": "*Nachdem sie ihre Hand entlang der Ecke des Manuskript-Entwurfs geführt hat, lehnt sie sich in ihrem Stuhl zurück.*"
     },
     "hidden_homeroom_d3_reveal_3": {
         "name": "Klassenlehrerin",
-        "text": "So wurde ich Koreanischlehrerin, die anderen das Schreiben beibringt. Komisch, oder? Meinen eigenen Satz bekomme ich nicht zu Ende. Ich halte nur das Papier fest."
+        "text": "So wurde ich Lehrer für Sprachwissenschaft und unterricht andere Leute schreiben. Ich kann nicht einmal einen einzigen Satz von mir selbst beenden."
     },
     "hidden_homeroom_d3_reveal_3_b": {
         "name": "{name}",
@@ -344,7 +344,7 @@
     },
     "hidden_homeroom_d3_reveal_4": {
         "name": "Klassenlehrerin",
-        "text": "Wenn ich sage, ich hätte aufgegeben, wäre das sauber. Aber ich verstecke mich jede freie Stunde im leeren Klassenzimmer und tue genau das. Offenbar bin ich noch nicht fertig."
+        "text": "Ich dachte, ich hätte aufgegeben, aber in jeder freien Stunde verstecke ich mich in einem leeren Klassenzimmer und überarbeite dieselben Sätze."
     },
     "hidden_homeroom_d3_reveal_4_b": {
         "name": "{name}",
@@ -352,7 +352,7 @@
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin legt den Stapel Manuskriptpapier extra neben das Klassenbuch.* Das bleibt meine private Arbeit. Es hat nichts mit Unterricht oder Bewertung zu tun, und du musst dich deswegen nicht belastet fühlen."
+        "text": "*Sie trennt den Stapel von Manuskriptseiten vom Klassenbuch.* Das ist meine persönliche Arbeit. Es hat nichts mit dem Unterricht oder der Bewertung zu tun, und es ist nichts, worüber du dich verantwortlich fühlen musst."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
@@ -360,7 +360,7 @@
     },
     "hidden_homeroom_d3_reveal_4_e": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin hebt den Kopf und sieht mir gerade in die Augen.* Bei der nächsten öffentlichen Textbesprechung im Literaturklub will ich es anonym einreichen. Liest du es dann offiziell?"
+        "text": "*Die Klassenlehrerin sieht mir direkt in die Augen.* Bei der nächsten öffentlichen Textbesprechung im Literaturklub will ich es anonym einreichen. Liest du es dann offiziell?"
     },
     "hidden_homeroom_d3_reveal_4_f": {
         "name": "Klassenlehrerin",
@@ -393,7 +393,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Klassenlehrerin",
-        "text": "Noch in dieser Woche will ich es zuerst auch den Kolleginnen und Kollegen im Fachbereich Koreanisch zeigen. Wenn es nur in der Schublade bleibt, setze ich wohl nie den Schlusspunkt."
+        "text": "Innerhalb dieser Woche plane ich, es zuerst den anderen Sprachwissenschaftler zu zeigen. Ich habe das Gefühl, wenn ich es einfach in einer Schublade lasse, werde ich es nie beenden können."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Klassenlehrerin",
@@ -417,11 +417,11 @@
     },
     "hidden_homeroom_d3_reveal_6_f": {
         "name": "Klassenlehrerin",
-        "text": "Die ausführlichen Eindrücke zum Manuskript hören wir offiziell am Tag der Textbesprechung im Literaturklub."
+        "text": "Lassen Sie uns am Tag der Literaturclub-Kritik die detaillierten Gedanken zum Manuskript richtig hören."
     },
     "hidden_homeroom_d3_reveal_6_g": {
         "name": "Klassenlehrerin",
-        "text": "Den Rest stecke ich in den Umschlag. *Die Hand der Klassenlehrerin, die den Manuskriptstapel zusammensammelt, hält über der letzten leeren Seite kurz inne.*"
+        "text": "Den Rest stecke ich in den Umschlag. *Die Hand der Klassenlehrerin, die das Manuskript aufgreift, hält über der letzten leeren Seite inne.*"
     },
     "hidden_homeroom_d3_hide_1": {
         "name": "Klassenlehrerin",
@@ -429,7 +429,7 @@
     },
     "hidden_homeroom_d3_end": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin räumt das Manuskript weg, deckt es zu und öffnet das Fenster neben dem Pult weit. Mit einer kühlen Brise strömt der Lärm aus dem Flur herein und ebbt gleich wieder ab.*"
+        "text": "*Sie sammelt das Manuskript ein, schließt es und öffnet das Fenster. Kühle Luft strömt herein und der Lärm aus dem Flur wird leiser.*"
     },
     "hidden_homeroom_d3_freetalk": {
         "name": "Klassenlehrerin",
@@ -443,7 +443,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*In der nächsten Pause öffne ich mit schweren Schritten die Tür zum Krankenzimmer. Im Geruch nach Desinfektionsmittel streift das Ende des Pflasters am Ellbogen den Ärmel der Schuluniform.*"
+        "text": "*Während der Pause öffne ich die Tür zur Krankenstation. Im Geruch von Desinfektionsmittel berührt der Rand des Pflasters an meinem Ellbogen meinen Ärmel.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Schulkrankenschwester",
@@ -481,7 +481,7 @@
     "hidden_nurse_d3_3_d": {},
     "hidden_nurse_d3_4": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester zieht den Vorhang am Bett halb zu und reicht mir einen Pappbecher mit warmem Wasser.* Komm her, setz dich. Hier musst du dein Gesicht nicht im Griff behalten. Erzähl in Ruhe."
+        "text": "*Die Schulnotärin zieht den Vorhang halb zu und reicht mir eine Tasse warmes Wasser.* Komm und setz dich hier. Du musst hier nicht so tun, als wärst du okay, also nimm dir Zeit und erzähl mir."
     },
     "hidden_nurse_d3_5_b": {},
     "hidden_nurse_d3_5_c": {},
@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_o": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Wimpern der Schulkrankenschwester flattern leicht, ihr Blick geht zum Fenster hinaus. Der Rand des Pappbechers knickt unter ihrem Daumen ein wenig ein.* Wenn du so fragst, kommen alte Erinnerungen hoch. Womit soll ich anfangen."
+        "text": "*Ihr Blick wandert zum Fenster, und der Rand des Pappbechers biegt sich unter ihrem Daumen.* Die Art, wie du fragst, weckt Erinnerungen."
     },
     "hidden_nurse_d3_5_p": {
         "name": "Schulkrankenschwester",
@@ -557,7 +557,7 @@
     },
     "hidden_nurse_d3_6": {
         "name": "Schulkrankenschwester",
-        "text": "Auf der Station der Uniklinik musste ich in jedem Moment abwägen, zu welchem Zimmer ich zuerst laufen sollte, wenn die Klingeln von überall gleichzeitig gingen. An den meisten Tagen habe ich mich umgedreht, ohne den Patienten bis zum Ende zuzuhören."
+        "text": "Auf der Station des Universitätskrankenhauses, als überall die Rufglocken läuteten, musste ich ständig abwägen, in welchen Raum ich zuerst rennen sollte. Ich konnte meine Patienten nicht einmal richtig zuhören."
     },
     "hidden_nurse_d3_6_b": {
         "name": "Schulkrankenschwester",
@@ -569,11 +569,11 @@
     },
     "hidden_nurse_d3_6_d": {
         "name": "{name}",
-        "text": "Ist in dem Krankenhaus etwas Entscheidendes passiert, bevor Sie an die Schule gewechselt sind? Wenn es Ihnen zu schwer ist, davon zu sprechen, müssen Sie es nicht. *Die Schulkrankenschwester, die das Stethoskop wegräumt, legt die Hand an den Schubladengriff und zieht sie leise wieder zurück.*"
+        "text": "Ist vor deinem Wechsel zur Schule etwas Entscheidendes passiert? Du musst es mir nicht sagen, wenn es zu schwierig ist. *Sie berührt den Schubladengriff und zieht dann ihre Hand zurück.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "Schulkrankenschwester",
-        "text": "Ja. Da war eine Patientin, die ich am Ende nicht retten konnte. Sie war siebzehn, genau so alt wie du. Nachdem ich sie gehen lassen hatte, habe ich das Krankenhaus verlassen."
+        "text": "Ja. Es gab einen siebzehnjährigen Patienten, den ich nicht retten konnte. Nach dem Verlust dieses Patienten verließ ich das Krankenhaus."
     },
     "hidden_nurse_d3_6_f": {
         "name": "{name}",
@@ -586,7 +586,7 @@
     "hidden_nurse_d3_7_b": {},
     "hidden_nurse_d3_8": {
         "name": "Schulkrankenschwester",
-        "text": "Sag also auch du zuerst ehrlich, was du innerlich tragen kannst. Zieh nicht alles an dich, nur um für alle der Gute zu bleiben, und leid nicht allein daran."
+        "text": "Also fang damit an, ehrlich zu den Gefühlen zu sein, die du bewältigen kannst. Leide nicht allein, indem du versuchst, in den Augen aller ein guter Mensch zu sein."
     },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
@@ -602,7 +602,7 @@
     },
     "hidden_nurse_d3_8_f": {
         "name": "{name}",
-        "text": "*Ich stehe auf und greife nach der Klinke des Krankenzimmers. Als hinter mir eine Schublade aufgeht, kommt mir die Ecke des hellgrünen Hefts wieder in den Sinn.*"
+        "text": "*Ich fasse den Griff zur Krankenstation. Als ich höre, wie hinter mir eine Schublade geöffnet wird, denke ich wieder an das hellgrüne Notizbuch.*"
     },
     "hidden_nurse_d3_8_h": {
         "name": "{name}",

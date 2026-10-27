@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*In der App mit den Klassenmitteilungen sehe ich einen Beitrag, den die Klassenlehrerin gerade gepostet hat. „Mitteilung an Klasse 3-2: Morgen das Mathebuch für die 1. Stunde nicht vergessen mitzubringen. — Und für den Neuzugang von heute reicht es, wenn er sich nur in Ruhe eingewöhnt.“*"
+        "text": "*Ein Beitrag unseres Klassenlehrers erscheint in der Klassen-App. 'Bring morgen dein Mathebuch für die erste Stunde mit. Und was unseren neuen Austauschschüler angeht, ist es genug, wenn er sich sicher einlebt.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*In der Schulgesundheits-App steht eine neue Meldung. „Eintrag des Krankenzimmers: Neuzugang — vorübergehender Schwindel, leicht. Heute Nacht ausreichend lauwarmes Wasser trinken und das Frühstück morgen auf keinen Fall auslassen. Bei wiederkehrenden Symptomen sofort ins Krankenzimmer kommen.“*"
+        "text": "*Auf der Gesundheitsmanagement-App erscheint eine Benachrichtigung. 'Aufzeichnungen der Schulschwester: Vorübergehender leichter Schwindel. Trinke heute Abend viel Wasser und überspringe morgen nicht das Frühstück.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Ich mache das Licht aus und will gerade die Augen schließen, da durchbricht das Handy mit einem leisen Vibrieren noch einmal die Stille. Die Uhr zeigt 23 Uhr. Wer ist das um diese Zeit?*"
+        "text": "*Ich schalte das Licht aus und bin dabei, die Augen zu schließen, als das Telefon wieder sanft vibriert. Es ist 23 Uhr. Wer ist das zu dieser Zeit?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Nach dem kurzen Gruß lege ich das Handy ans Kopfkissen. Auf dem verblassenden Sperrbildschirm leuchtet die Uhrzeit des Schulweckers für morgen früh deutlich.*"
+        "text": "*Ich hinterlasse eine kurze Begrüßung und lege mein Telefon neben meinen Kopf. Die Weckzeit für morgen ist auf dem verblassenden Sperrbildschirm sichtbar.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Ich lege das Handy hin und sehe zur dunklen Decke hoch. Von der neuen Uniform am Bügel ziehen Frühlingswind und Kirschblütenduft, die heute vorbeigestreift sind, leise herüber.*"
+        "text": "*Ich lege mein Telefon weg und blicke an die Decke. Die neue Schuluniform hängt in der Nähe und trägt den Duft der heutigen Frühlingsbrise und der Kirschblüten.*"
     },
     "night_end_3": {
         "name": "{name}",

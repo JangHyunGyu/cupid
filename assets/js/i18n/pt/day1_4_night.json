@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*No app de avisos da turma, vejo o recado que a professora acabou de publicar. «Aviso da 3-2: não esqueçam de trazer o material de matemática para a 1ª aula de amanhã. — E o aluno transferido que chegou hoje só precisa estar se adaptando bem. Com isso já basta.»*"
+        "text": "*Um post do nosso professor regente aparece no aplicativo de avisos da turma. 'Tragam o livro de matemática para a primeira aula amanhã. E quanto ao nosso novo aluno transferido, apenas se estabelecer em segurança já é o suficiente.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*No app de saúde da escola, aparece um aviso novo. «Registro da enfermaria: aluno transferido — tontura passageira, leve. Hoje à noite, beber bastante água morna, e amanhã de manhã não pular o café da manhã de jeito nenhum. Se os sintomas se repetirem, ir imediatamente à enfermaria.»*"
+        "text": "*Um alerta aparece no aplicativo de gestão de saúde. 'Registro do consultório da enfermeira: Tontura temporária leve. Beba bastante água esta noite e não pule o café da manhã amanhã.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Apago a luz e, no momento em que vou fechar os olhos, o celular vibra de novo, baixinho, e quebra o silêncio. Olho o relógio: 11 da noite. Quem é a essa hora?*"
+        "text": "*Eu apago a luz e estou prestes a fechar os olhos quando o telefone vibra suavemente de novo. São 11 da noite. Quem é a essa hora?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Deixo o cumprimento curto e pouso o celular na cabeceira. Na tela de bloqueio, que vai se apagando, o horário do alarme de amanhã de manhã para ir à escola aparece nítido.*"
+        "text": "*Eu deixo uma saudação curta e coloco meu telefone ao lado da minha cabeça. O horário do alarme para amanhã está visível na tela de bloqueio que desaparece.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Largo o celular e olho o teto escuro. Do uniforme novo no cabide, o vento de primavera e o cheiro de flor de cerejeira que passaram por hoje chegam, leves.*"
+        "text": "*Eu coloco o telefone e olho para o teto. O uniforme novo pendurado por perto carrega o cheiro da brisa primaveril e das cerejeiras de hoje.*"
     },
     "night_end_3": {
         "name": "{name}",

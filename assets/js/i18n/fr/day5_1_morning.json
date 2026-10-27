@@ -36,7 +36,7 @@
     },
     "morning5_caught_teacher_honest": {
         "name": "Professeure principale",
-        "text": "*La professeure principale m'écoute jusqu'au bout, puis referme doucement le registre d'appel. Dans le souffle qu'elle laisse échapper, le soulagement et la fatigue se mêlent.* Merci de me l'avoir dit franchement. Je ne te reproche pas d'être allé voir un ami. La promesse de donner des nouvelles, tiens-la à partir de la prochaine fois. Pour le manuscrit, on s'arrête là."
+        "text": "*Elle m'écoute, puis ferme le registre de présence.* Merci d'avoir été honnête. La prochaine fois, tiens ta promesse de me contacter. La discussion sur le manuscrit s'arrête ici."
     },
     "morning5_caught_teacher_lie": {
         "name": "Professeure principale",
@@ -44,11 +44,11 @@
     },
     "morning5_caught_nurse_honest": {
         "name": "Infirmière",
-        "text": "*Ce n'est qu'après avoir entendu toute mon explication que l'infirmière referme la fiche restée ouverte.* Tant mieux, tu es rentré sans une égratignure. La prochaine fois, si ton programme dérape, préviens-moi d'abord. Les soins de la fête commencent, alors pour la longue discussion, on prendra un autre créneau. *Je baisse la tête pour saluer, puis je retourne en classe.*"
+        "text": "*L'infirmière écoute toute mon explication, puis ferme la fiche d'enregistrement.* Je suis contente que tu sois rentré sain et sauf. La prochaine fois, préviens-moi si tes plans changent. Organisons un autre moment pour continuer cette longue conversation. *Je dis au revoir et retourne en classe.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "Infirmière",
-        "text": "*L'infirmière pose d'un clic le stylo qu'elle tenait au-dessus de la marge de la fiche.* Ce que tu viens d'expliquer ne colle pas à l'horaire, par endroits. Tu peux venir quand tu as mal, mais cette histoire, on va la reprendre pas à pas avec la conseillère. *Je regagne la classe d'un pas lourd.*"
+        "text": "*L'infirmière pose son stylo sur la fiche d'enregistrement.* Certaines parties de cette explication ne correspondent pas au planning. Revoyons cela avec le conseiller d'orientation de l'école. *Je regagne la classe d'un pas lourd.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -181,19 +181,19 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*D'un côté du panneau du club littéraire, quelques feuilles d'une nouvelle sont fixées bien alignées avec des punaises. Le titre : « À la personne rencontrée à la bibliothèque ». Une encre violet clair de stylo plume, que je reconnais, et, sur le coin un peu plié, une miette minuscule de pain soboro.*"
+        "text": "*Plusieurs pages d'une nouvelle sont épinglées sur le tableau d'affichage du club de littérature. Le titre est 'À la personne que j'ai rencontrée à la bibliothèque.' L'encre lavande familière et une petite miette de pain sur un coin froissé attirent mon regard.*"
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Dans le manuscrit, quelqu'un s'approche sans bruit d'une personne endormie, la tête sur un bureau de la bibliothèque, l'après-midi, et la couvre de son propre cardigan. Ce n'est pas arrivé pour de vrai. Pourtant, dans chaque phrase où l'on reste tout près en retenant jusqu'au souffle, le regard un peu froid et pourtant tendre de Yuna se superpose.*"
+        "text": "*Le narrateur du manuscrit s'approche de quelqu'un endormi à un bureau de bibliothèque et le recouvre d'un cardigan. Chaque phrase sur le fait de rester à ses côtés, de respirer à peine, me rappelle le regard de Yuna.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*Mon regard touche la toute dernière phrase du manuscrit. « Quand cette personne a ouvert les yeux, je n'étais déjà plus là. Je n'avais laissé qu'un mot, comme un marque-page. — La prochaine fois aussi, je serai ici. » La même encre violet clair que le mot trouvé dans mon casier le premier jour s'étale doucement sous le soleil du matin.*"
+        "text": "*Mes yeux atteignent la dernière phrase du manuscrit. « Quand cette personne a ouvert les yeux, j'étais partie. Je n'ai laissé qu'une note. — Je serai de retour la prochaine fois. » La même encre lavande pâle que celle de la note que j'ai trouvée dans mon casier le premier jour.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*Dans un coin de la marge, tout en bas de la feuille, des mots ajoutés au crayon restent, minuscules. « C'est une fiction. Ce n'est pas réel. » Par-dessus, les traces d'une gomme frottée encore et encore, puis abandonnée, s'étalent en pâle. À l'inverse, ce qu'on n'a pas su cacher se touche avec la netteté d'une paume.*"
+        "text": "*Dans la marge inférieure, une minuscule note au crayon subsiste : 'Ceci est de la fiction. Ce n'est pas réel.' À travers les traces d'effacements répétés et inachevés, ses sentiments qu'elle ne pouvait cacher transparaissent.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -214,11 +214,11 @@
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*Il n'y a plus de mot secret sur le bureau. À la place, devant la classe, Seoyeon range les documents d'information, le porte-bloc serré contre elle. Elle croise mon regard et esquisse un léger sourire. Yuna et Dain, sans rien laisser paraître, ne me glissent que le planning des préparatifs de la fête, puis passent.*"
+        "text": "*Il n'y a plus de note secrète sur le bureau. Au devant de la classe, Seoyeon, tenant le presse-papiers, croise mon regard et sourit. Yuna et Dain me remettent calmement uniquement le calendrier du festival et passent à autre chose.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*Ni dans le casier ni sur le bureau, aucun nouveau mot. Assise près de la fenêtre, Yuna tripote le marque-page violet clair glissé dans son cahier, sent mon regard, et me salue des yeux, en silence. Seoyeon et Dain ne me disent, brièvement, que ce qu'il faut transmettre pour les préparatifs de la fête.*"
+        "text": "*Près de la fenêtre, Yuna tripote le marque-page lavande pâle et hoche la tête discrètement. Seoyeon et Dain ne me disent que brièvement ce qui doit être transmis pour la préparation du festival.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "{name}",
-        "text": "Madame, vous étiez encore là. Cette enveloppe que vous tenez... je ne vois pas le manuscrit dedans. *Devant le bureau silencieux, la professeure principale est assise, un peu appuyée, et tripote une grosse enveloppe brune.*"
+        "text": "Vous êtes toujours là, madame. Qu'est-ce que cette enveloppe que vous tenez ? *L'enseignante est assise, appuyée contre le devant du bureau des professeurs, tripotant une épaisse enveloppe de document marron.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Professeure principale",
@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Professeure principale",
-        "text": "*Un léger tremblement passe au bout des doigts qui descendent le long de l'enveloppe.* Ça fait sept ans que je la tiens seule dans un tiroir. Maintenant, je veux aussi entendre comment les autres la lisent."
+        "text": "*Un tremblement parcourt ses doigts alors qu'elle caresse la face de l'enveloppe.* Je la garde dans un tiroir depuis sept ans. Je pensais qu'il était temps que j'entende comment elle se lit aux autres aussi."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Professeure principale",
-        "text": "*La professeure principale esquisse un sourire amer et, du pouce, défroisse lentement le coin froissé de l'enveloppe.* Pas besoin de chercher de belles paroles avant même de tourner la première page. L'avoir tenu longtemps ne veut pas dire que c'est bien écrit."
+        "text": "*Elle esquisse un sourire mélancolique et lisse le coin de l'enveloppe.* Tu n'as pas besoin de choisir quelque chose de gentil avant même d'avoir tourné la première page. Le fait de la garder longtemps ne signifie pas que je l'ai bien écrite."
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professeure principale",
@@ -292,7 +292,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Professeure principale",
-        "text": "Cet exemplaire, je le reprends pour l'instant. Merci d'avoir voulu ménager ce que je ressens. Mais tu n'en as pas encore lu une seule ligne. *La professeure principale reprend doucement le manuscrit de mes mains, hésite un moment, puis le remet dans l'enveloppe brune.*"
+        "text": "Je garderai cette copie. Je suis reconnaissant que tu essaies de ne pas me blesser. Mais tu n'as lu aucune ligne. *L'enseignante prend le manuscrit et le remet dans l'enveloppe marron.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Professeure principale",
@@ -324,7 +324,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "Madame, si vous avez un petit moment, je peux le lire ici, tout de suite ? Je voudrais voir d'abord, par moi-même, à quel endroit ça coupe le souffle. *La professeure principale remue les lèvres sans rien dire, puis remet bien droit le bout du manuscrit, un peu roulé dans sa main.*"
+        "text": "Professeur, puis-je le lire ici ? Je veux voir par moi-même où mon souffle se coupe. *Sans un mot, elle redresse le bord du manuscrit qui s'était recourbé dans sa main.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Professeure principale",
@@ -340,7 +340,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*La classe est vide : on n'entend que le froissement des pages. La dernière page du manuscrit est blanche sur plus de la moitié. Sous les ratures rouges, tirées sans compter, s'imprègnent en couches les traces d'une phrase écrite, effacée, puis arrêtée.*"
+        "text": "*La salle de classe vide ne retient que le bruit des pages qui se tournent. Plus de la moitié de la dernière page du manuscrit est blanche. Sous les lignes de suppression rouges, les traces d'écriture et d'effacement sont imprégnées de couches.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Professeure principale",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Professeure principale",
-        "text": "...Il me fallait quelqu'un qui lise exactement comme ça. Ce sont mes phrases, et pourtant, quand je les regarde seule, enfermée, je ne vois plus du tout à partir d'où je me suis perdue. *La professeure principale pose sur le bureau le porte-bloc qu'elle tenait, referme d'un clic le stylo rouge et me le tend.*"
+        "text": "...C'est exactement le genre de lecture dont j'avais besoin. Quand je le regarde seul, je ne vois pas où j'ai perdu le fil. *La professeure pose le presse-papiers qu'elle tenait et me tend le stylo rouge.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Professeure principale",
@@ -499,7 +499,7 @@
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
-        "text": "Je suis venu à l'heure convenue, mais je ne vous ai pas simplement ajouté du travail, si ? Je me suis dit qu'avec l'événement de l'école, vous seriez débordée, sans une minute à vous. *D'une main calme, l'infirmière inscrit la date et l'heure dans les cases vides de l'attestation.*"
+        "text": "Je suis venu à l'heure convenue, mais je ne fais pas que compléter votre travail, n'est-ce pas ? Je pensais que vous étiez occupé par l'événement. *La professeure inscrit la date et l'heure dans les blancs de la confirmation.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Infirmière",
@@ -616,7 +616,7 @@
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*Debout près de la fenêtre calme, j'ouvre l'application de notes du téléphone. Des phrases que j'ai fini par ravaler, alors que je voulais dire aux adultes ce que Sojeong subissait dans mon ancien lycée, et des excuses lâches, effacées et réécrites encore et encore. Le curseur du trente-neuvième brouillon clignote sur l'écran vide.*"
+        "text": "*Je me tiens près de la fenêtre et ouvre l'application de notes. Le curseur clignote dans le trente-neuvième brouillon, effacé et réécrit : les mots que j'ai avalés en essayant de rapporter ce que Sojeong traversait.*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",
@@ -624,7 +624,7 @@
     },
     "morning5_sojeong_3": {
         "name": "{name}",
-        "text": "Ce jour-là, j'ai vu de mes deux yeux les graffitis sur ton bureau, et je n'ai pas pu en parler à un professeur. Tourner la tête en faisant semblant de ne rien voir, c'était mon choix, et je n'ai aucune excuse. Je suis vraiment désolé. Je t'envoie ça pour me soulager, alors tu n'as pas à répondre."
+        "text": "À l'époque, j'ai vu les graffitis sur ta table, mais je n'ai pas réussi à en parler à un professeur. Détourner les yeux et faire semblant de ne rien savoir, c'était aussi mon choix. Je suis vraiment désolé. Tu n'as pas besoin de répondre."
     },
     "morning5_sojeong_4": {
         "name": "{name}",
@@ -632,7 +632,7 @@
     },
     "morning5_sojeong_5": {
         "name": "{name}",
-        "text": "Je souhaiterais un entretien officiel sur ce que j'ai fait semblant de ne pas voir, au lycée d'avant mon transfert. *J'envoie aussi le message à ma professeure principale d'ici. Dans l'annonce du festival qui résonne dans la cour, je n'efface pas, au bout du compte, les deux lignes de confession que je viens enfin d'envoyer.*"
+        "text": "J'aimerais avoir un conseil formel concernant quelque chose que j'ai ignoré à l'école avant de transférer. *J'envoie également un message à mon professeur principal actuel. Je ne supprime pas les deux lignes de confession que j'ai finalement envoyées.*"
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
@@ -640,7 +640,7 @@
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",
-        "text": "*Yuna sort la première par la porte du fond, le paquet de livrets serré contre la poitrine, sans un seul regard. Dain, le visage fermé, s'en va à grandes enjambées vers la porte de devant. Même Seoyeon, qui triait la feuille de présence devant le bureau, ne tourne pas la tête de mon côté.*"
+        "text": "*Yuna part la première par la porte de derrière avec les guides. Dain marche vers la porte avant avec une expression impassible. Même Seoyeon, en train de classer la feuille de présence, ne me tourne jamais le dos.*"
     },
     "morning5_caught_fallout_3": {
         "name": "{name}",

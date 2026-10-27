@@ -36,7 +36,7 @@
     },
     "morning5_caught_teacher_honest": {
         "name": "Homeroom Teacher",
-        "text": "*After hearing me all the way out, the teacher quietly closes the attendance book. Relief and fatigue both sit in the small breath she lets out.* Thank you for telling me straight. I'm not scolding you for meeting a friend. Keep the promise to get in touch, from next time. Let's leave the manuscript talk here."
+        "text": "*She hears me out, then closes the attendance book.* Thank you for being honest. Next time, keep your promise to get in touch. Let's leave the manuscript discussion here."
     },
     "morning5_caught_teacher_lie": {
         "name": "Homeroom Teacher",
@@ -44,11 +44,11 @@
     },
     "morning5_caught_nurse_honest": {
         "name": "School Nurse",
-        "text": "*Only after hearing all of my explanation does the school nurse close the open record.* I'm glad you got in safe, with nothing hurt. Next time your plans slip, tell us first. Festival treatment is starting now, so let's set a separate time and pick up the longer talk. *I bow and head back to the classroom.*"
+        "text": "*The nurse listens to my whole explanation, then closes the record sheet.* I'm glad you got home safely. Next time, let me know first if your plans change. Let's arrange a separate time to continue the longer conversation. *I say goodbye and return to the classroom.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "School Nurse",
-        "text": "*The school nurse clicks the pen she was holding down onto the margin of the record.* Parts of the explanation you just gave don't match the timeline. You can come anytime if you feel sick, but let's go back over this carefully with the counselor. *I walk back to the classroom with heavy steps.*"
+        "text": "*The nurse sets her pen down on the record sheet.* Parts of that explanation don't fit the timetable. Let's go over this again with the school counselor. *I walk back to the classroom with heavy steps.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -181,19 +181,19 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*A few pages of a short-story manuscript are pinned neatly to one side of the literature club board. The title is “To the Person I Met in the Library.” Familiar pale lavender fountain-pen ink, and a very small soboro bun crumb on the slightly folded corner of the paper.*"
+        "text": "*Several pages of a short story are pinned to the literature club's noticeboard. The title is 'To the Person I Met in the Library.' The familiar lavender ink and a little bread crumb on a folded corner catch my eye.*"
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*In the manuscript, the narrator goes up without a sound to someone asleep, facedown on an afternoon library desk, and covers them with her own cardigan. It never actually happened, and still, over every line that keeps beside them with even the breath held quiet, Yuna's cool, gentle eyes settle.*"
+        "text": "*The narrator in the manuscript approaches someone asleep at a library desk and covers them with a cardigan. Each sentence about staying beside them, barely breathing, brings Yuna's gaze to mind.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*My eyes reach the last sentence of the manuscript. “When that person opened their eyes, I was already gone. I left only a note, like a bookmark. — I'll be here again next time.” The same pale lavender ink as the note I found in my locker on the first day spreads quietly in the morning sun.*"
+        "text": "*My eyes reach the last sentence of the manuscript. “When that person opened their eyes, I was gone. I left only a note. — I'll be here again next time.” The same pale lavender ink as the note I found in my locker on the first day.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*In a corner of the bottom margin of the manuscript paper, very small pencil writing remains. “This is fiction. It isn't real.” Faint marks where an eraser was rubbed over that sentence and then stopped spread across it, and the feeling that couldn't be hidden comes through clearer for it, plain as an open palm.*"
+        "text": "*In the bottom margin, a tiny pencil note remains: 'This is fiction. It isn't real.' Through the traces of repeated, unfinished erasing, the feelings she couldn't hide come through.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -214,11 +214,11 @@
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*There's no secret note on the desk anymore. At the front of the classroom, Seoyeon, sorting the handouts, meets my eyes with the clipboard held to her and smiles a little. Yuna and Dain, faces calm, pass on only a short word about the festival schedule and move on.*"
+        "text": "*There is no secret note on the desk anymore. At the front of the classroom, Seoyeon, holding the clipboard, meets my eyes and smiles. Yuna and Dain calmly pass on only the festival schedule and move on.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*No new note in the locker or on the desk. By the window, Yuna fiddles with the pale lavender bookmark tucked in her notebook, feels my look, and gives a quiet nod. Seoyeon and Dain only tell me, briefly, what needs passing on for festival prep.*"
+        "text": "*By the window, Yuna fiddles with the pale lavender bookmark and gives a quiet nod. Seoyeon and Dain only tell me, briefly, what needs passing on for festival prep.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "{name}",
-        "text": "Teacher, you were still here. That envelope in your hand... I can't see the manuscript inside. *The homeroom teacher sits leaning in front of the quiet teacher's desk, turning a thick brown document envelope over in her hands.*"
+        "text": "You're still here, ma'am. What's that envelope you're holding? *The homeroom teacher sits leaning against the front of the teacher's desk, fidgeting with a thick brown document envelope.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Homeroom Teacher",
@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Homeroom Teacher",
-        "text": "*A faint tremor runs through her fingertips as she strokes the face of the envelope.* I've been holding on to it alone in a drawer for seven years. I thought it was time I heard how it reads to other people, too."
+        "text": "*A tremor runs through her fingertips as she strokes the face of the envelope.* I've been holding on to it in a drawer for seven years. I thought it was time I heard how it reads to other people, too."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher gives a bitter smile and slowly smooths the crumpled corner of the envelope with her thumb.* You don't have to pick something nice to say before you've even turned the first page. Holding on to it for a long time doesn't mean I wrote it well."
+        "text": "*She gives a rueful smile and smooths out the corner of the envelope.* You don't have to pick something nice to say before you've even turned the first page. Holding on to it for a long time doesn't mean I wrote it well."
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Homeroom Teacher",
@@ -292,7 +292,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Homeroom Teacher",
-        "text": "I'll hold on to this copy for now. I'm grateful you're trying not to hurt my feelings. But you haven't read a single line yet. *The teacher carefully takes the manuscript from my hands, hesitates a moment, and puts it back into the brown envelope.*"
+        "text": "I'll hold on to this copy. I'm grateful you're trying not to hurt my feelings. But you haven't read a single line yet. *The teacher takes the manuscript and puts it back into the brown envelope.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Homeroom Teacher",
@@ -324,7 +324,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "Teacher, if you have a little time right now, may I read it here? I want to see for myself, first, where my breath catches while I read. *The teacher moves her lips without a word, then straightens the end of the manuscript that had curled a little in her hand.*"
+        "text": "Teacher, may I read it right here? I want to see for myself where my breath catches. *Without a word, she straightens the manuscript's edge, which had curled in her hand.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Homeroom Teacher",
@@ -340,7 +340,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*The empty classroom holds only the scratch of turning pages. More than half the last page of the manuscript is blank white. Under red deletion lines drawn over and over, the traces of writing a sentence and erasing it, stopped there again and again, are soaked in layer on layer.*"
+        "text": "*The empty classroom holds only the sound of turning pages. More than half the last page of the manuscript is blank. Under red deletion lines, the traces of writing and erasing are soaked in layers.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Homeroom Teacher",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Homeroom Teacher",
-        "text": "...That's exactly the kind of reading I needed. They're sentences I wrote, and still, when I look at them alone in a back room, I can't see at all where I lost the way. *The teacher sets the clipboard she was holding down on the desk, clicks the red pen cap shut, and hands it to me.*"
+        "text": "...That's exactly the kind of reading I needed. When I look at it alone, I can't see where I lost my way. *The teacher sets the clipboard she was holding down and hands me the red pen.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Homeroom Teacher",
@@ -499,7 +499,7 @@
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
-        "text": "I came at the time we agreed, but I'm not just adding to your work for nothing, am I? I figured the school event would leave you too busy to breathe. *With a steady hand, she writes the date and time into the blanks on the confirmation.*"
+        "text": "I came at the agreed time, but I'm not just adding to your work, am I? I thought you'd be busy with the event. *The teacher writes the date and time in the blanks on the confirmation.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "School Nurse",
@@ -616,7 +616,7 @@
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*I stand at the quiet window and open the notes app on my phone. Sentences I tried to tell the adults about what Sojeong went through at my old school, and swallowed in the end. Cowardly excuses I kept erasing and rewriting. The cursor of the thirty-ninth draft blinks on a blank screen.*"
+        "text": "*I stand by the window and open the notes app. The cursor blinks in the thirty-ninth draft, erased and rewritten: the words I swallowed when I tried to report what Sojeong was going through.*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",
@@ -624,7 +624,7 @@
     },
     "morning5_sojeong_3": {
         "name": "{name}",
-        "text": "I saw the graffiti on your desk with my own eyes back then, and still couldn't tell a teacher. Turning my head and pretending I didn't see was my choice, and there's no excuse for it. I'm really sorry. I sent this to make myself feel better, so you don't have to reply."
+        "text": "I saw the graffiti on your desk back then, but I couldn't tell a teacher. Turning away and pretending not to know was my choice too. I'm truly sorry. You don't have to reply."
     },
     "morning5_sojeong_4": {
         "name": "{name}",
@@ -632,7 +632,7 @@
     },
     "morning5_sojeong_5": {
         "name": "{name}",
-        "text": "I would like formal counseling about something I looked past at the school before I transferred. *I send a message to my current homeroom teacher as well. While the festival broadcast rings across the school grounds, I do not delete the two lines of confession I finally sent.*"
+        "text": "I would like formal counseling about something I looked past at the school before I transferred. *I send a message to my current homeroom teacher as well. I do not delete the two lines of confession I finally sent.*"
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
@@ -640,7 +640,7 @@
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",
-        "text": "*Yuna hugs the bundle of guidebooks to her chest and leaves first through the back door without a glance. Dain walks toward the front door in long strides, her face set. Even Seoyeon, sorting the attendance sheet at the teacher's desk, never turns her head my way.*"
+        "text": "*Yuna leaves first through the back door with the guidebooks. Dain walks toward the front door with a set face. Even Seoyeon, sorting the attendance sheet, never turns her head my way.*"
     },
     "morning5_caught_fallout_3": {
         "name": "{name}",

@@ -21,12 +21,12 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*Ich folge Seoyeon die stillen Stufen hinauf aufs Schuldach. Unter dem Drahtgeländer vergeht das rote Abendrot, und am Rand des Sportplatzes gehen die Nachtlichter nacheinander an.*"
+        "text": "*Ich folge Seoyeon auf das Schuldach. Unter dem Drahtgeländer verblasst der Sonnenuntergang und die Flutlichter des Feldes gehen eins nach dem anderen an.*"
     },
     "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon tritt einen halben Schritt vom Geländer zurück und bleibt direkt vor mir stehen. Als sie den Messingschlüssel, der die Tür geöffnet hat, in die Tasche ihres Cardigans steckt, streifen im Abendwind ihre langen Haare und ein schwacher Duft meine Wange.*"
+        "text": "*Seoyeon tritt einen halben Schritt vom Geländer zurück und hält vor mir stehen. Als sie den Schlüssel in ihre Tasche steckt, streicht der Abendwind ihr langes Haar über meine Wange.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
@@ -48,7 +48,7 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "Warte. Was du gerade gesagt hast, hab ich richtig gehört, oder? Denk nicht mal im Traum daran, es jetzt als Scherz abzutun. *Das Klirren des Schlüsselbunds setzt abrupt aus. Seoyeons unruhige Augen halten meinen Blick fest und lassen nicht los.*"
+        "text": "Warte. Ich habe gehört, was du gerade gesagt hast, oder? Denk jetzt nicht daran, es als Scherz abzutun. *Seoyeons unruhige Augen fixieren meine.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
@@ -60,7 +60,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "*Seoyeon bringt die Worte nicht heraus und beißt sich leicht auf die Unterlippe. An ihrem geröteten Hals hebt und senkt sich ein kurzer Atem, und der Schlüsselbund in ihrer Hand dreht sich einmal ins Leere.*"
+        "text": "*Seoyeon bei sich untere Lippe, unfähig, die Worte herauszubekommen. Zerfetzte Atemzüge steigen und fallen entlang ihres geröteten Ausschnitt-Bereichs.*"
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -72,7 +72,7 @@
     },
     "confess_seo_yes_7": {
         "name": "Seoyeon",
-        "text": "Lass uns noch nicht runtergehen. Willst du hier noch ein bisschen so mit mir stehen bleiben? *Mit der Hand am Schlüsselbund zieht Seoyeon sanft an meinem Ärmelende.*"
+        "text": "Gehen wir noch nicht runter. Ich möchte noch ein bisschen so stehen. *Seoyeon zieht sanft den Ende meines Ärmels.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
@@ -84,7 +84,7 @@
     },
     "confess_seo_yes_10": {
         "name": "{name}",
-        "text": "Ich wusste nicht, dass du mich so genau beobachtest. Ich war so damit beschäftigt, meine Gefühle zu verbergen, dass ich deinen Blick wohl verpasst habe. *Als ich nach Seoyeons kühlem Handrücken greife und ihn umschließe, lässt sie den Schlüssel in die Tasche fallen und legt ihre Handfläche auf meine.*"
+        "text": "Ich wusste nicht, dass du mich so genau beobachtest. *Als ich den Handrücken von Seoyeon bedeckte, legte sie ihre Handfläche über meine.*"
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
@@ -96,7 +96,7 @@
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "Was du vorhin gesagt hast, hätte ich ohne Stolz zuerst sagen sollen. Es jetzt direkt von dir zu hören, nimmt mir so den Atem. *Zwei Stufen tiefer bleiben Seoyeons Schritte stehen. Sie dreht sich nicht um, aber ihr gerötetes Ohr ist selbst in der Dämmerung deutlich zu sehen.*"
+        "text": "Ich hätte meinen Stolz ablegen und es zuerst sagen sollen. Es von dir zu hören, ich kann kaum atmen. *Seoyeons Ohr ist am Fuße der Treppe rot angelaufen.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -128,16 +128,16 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*Die geheime Leseecke im Anbau, wohin ich Yuna gefolgt bin. Rotes Abendlicht fällt durchs Fenster tief bis auf die Armlehne des alten Stoffsofas, und auf dem Platz direkt daneben liegt still Yunas Lesezeichen.*"
+        "text": "*Der Lesebereich im Anbau, wohin ich Yuna gefolgt bin. Der Sonnenuntergang, der durch das Fenster fällt, setzt sich tief auf die Armlehne des alten Sofas.*"
     },
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Komm her, setz dich neben mich. Heute müssen wir kein Buch aufschlagen. Du hast meine Hand genommen und bist mir bis hierher gefolgt. *Yuna lehnt sich tief ins Sofa und sieht zu mir auf. Zwischen ihren schmalen Fingern steckt ein silbernes Lesezeichen.*"
+        "text": "Komm neben mich sitzen. Wir müssen heute kein Buch aufmachen. *Yuna lehnt sich auf das Sofa zurück und blickt zu mir auf.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*Als ich mich direkt neben Yuna setze, sackt das alte Sofakissen ein, und unsere Oberschenkel und Schultern liegen ohne Abstand aneinander. Die Spitze des Papierlesezeichens in Yunas Hand ist leicht geknickt.*"
+        "text": "*Als ich neben Yuna sitze, sinkt die Sofakissen und unsere Schultern berühren sich.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -211,11 +211,11 @@
     },
     "confess_yuna_no_2": {
         "name": "Yuna",
-        "text": "*Wortlos schiebt Yuna das Lesezeichen tief zwischen die geschlossenen Seiten und senkt das Kinn ein wenig.*"
+        "text": "*Ohne ein Wort zu sagen, schiebt Yuna den Lesezeichen tief zwischen die geschlossenen Seiten und neigt dann leicht ihr Kinn.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
-        "text": "Yuna, das Buch auf deinem Schoß hast du noch nicht zu Ende gelesen? Du schaust schon die ganze Zeit nur auf den Einband. *Yuna schlägt die Seiten am Ende nicht auf und fährt mit der Fingerspitze langsam nur über die Titelbuchstaben auf dem festen Einband.*"
+        "text": "Yuna, hast du das Buch auf deinem Schoß noch nicht zu Ende gelesen? *Yuna öffnet die Seiten nicht, sondern fährt nur mit ihrem Finger über die Titelbuchstaben auf dem Umschlag.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
@@ -240,7 +240,7 @@
     "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
-        "text": "Keine Sorge, um die Zeit trainieren wir nicht. Aber einen Ball darf ich halten, oder? Wenn ich mit leeren Händen vor dir stehe, zittern mir dauernd die Finger. *Dain zieht den Volleyball aus Leder mit beiden Händen an die Brust. Die Knöchel, die den Ball drücken, treten weiß hervor.*"
+        "text": "Ich bin nicht zu dieser Zeit zum Training gekommen. Aber ist es in Ordnung, wenn ich einen Ball halte? Wenn ich vor dir mit leeren Händen stehe, zittern meine Fingerspitzen. *Dain zieht einen Volleyball zu sich heran.*"
     },
     "confess_dain_5": {},
     "confess_dain_choice": {
@@ -287,7 +287,7 @@
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "Ach, was mach ich nur. Ich will auch cool antworten, aber schau mir gerade nicht ins Gesicht. Nein, ich meine auf keinen Fall, dass du dich umdrehen sollst! *Dain stellt beide Füße nebeneinander auf die weiße Linie des Spielfelds und bedeckt mit beiden Händen ihr knallrotes Gesicht.*"
+        "text": "Ach, was soll ich tun. Ich möchte dir eine gute Antwort geben, aber schau mir jetzt nicht in die Augen! *Dain steht auf der weißen Linienmarkierung und bedeckt ihr leuchtend rotes Gesicht mit beiden Handflächen.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
@@ -299,7 +299,7 @@
     },
     "confess_dain_yes_9_b": {
         "name": "Dain",
-        "text": "Das ist echt schlimm. Ich lache, weil ich mich freue, und trotzdem werden mir die Augen heiß. *Dain sieht zwischen den Fingern zu mir hoch, lacht hell und reibt sich mit dem Handrücken den feuchten Augenwinkel.*"
+        "text": "Ich lächle, weil ich glücklich bin, also warum brennen dann auch die Augenwinkel? *Dain blickt mich durch ihre Finger an und lacht, dann reibt sie sich mit dem Handrücken die Augen.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",

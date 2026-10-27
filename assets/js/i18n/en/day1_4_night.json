@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*A post the homeroom teacher just put up is on the class notice app. “Class 3-2 notice: Don't forget to bring your math textbook for period 1 tomorrow. — And the transfer student who arrived today only needs to settle in all right. That's enough.”*"
+        "text": "*A post from our homeroom teacher appears in the class notice app. 'Bring your math textbook for first period tomorrow. And as for our new transfer student, just settling in safely is enough.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*A new alert is up on the school health app. “Nurse's office record: Transfer student — mild, temporary dizziness. Drink plenty of lukewarm water tonight, and do not skip breakfast tomorrow. If the symptoms return, come to the nurse's office immediately.”*"
+        "text": "*An alert is up on the health management app. 'Nurse's office record: Temporary dizziness mild. Drink plenty of water tonight, and do not skip breakfast tomorrow.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*I turn the light off and am just about to close my eyes when the phone vibrates softly again, breaking the quiet. The clock says 11 at night. Who is it at this hour?*"
+        "text": "*I turn the light off and am about to close my eyes when the phone vibrates softly again. It's 11 at night. Who is it at this hour?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*I leave the short goodbye and set the phone by my pillow. On the fading lock screen, tomorrow morning's school alarm time shows clear.*"
+        "text": "*I leave a short greeting and place my phone by my head. The alarm time for tomorrow morning is visible on the fading lock screen.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*I put the phone down and look up at the dark ceiling. From the new uniform on the hanger, the spring breeze and cherry-blossom scent that passed through today drift out, faint.*"
+        "text": "*I put down my phone and look up at the ceiling. The new uniform hanging nearby carries the scent of today's spring breeze and cherry blossoms.*"
     },
     "night_end_3": {
         "name": "{name}",

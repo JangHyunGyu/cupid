@@ -1,15 +1,15 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Devant le portail, les pétales de cerisier d'avril s'éparpillent. Je lisse le col encore raide de mon uniforme neuf et je remonte la bretelle du sac qui contient mon dossier de transfert.*"
+        "text": "*Avril, les pétales de cerisier se dispersent devant le port de l'école. Je lisse le col de mon nouvel uniforme et je remets la sangle du sac contenant mes papiers de transfert.*"
     },
     "start_again": {
         "name": "{name}",
-        "text": "*Un vertige me monte d'un coup, et je m'appuie au pilier froid du portail. J'expire lentement mon souffle court, en attendant que la nausée retombe.*"
+        "text": "*Une vague de vertige m'atteint, et je m'appuie contre le pilier du port. Je souffle de manière saccadée et j'attends que mon estomac se calme.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*Le téléphone vibre brièvement dans ma poche. Je baisse les yeux sur les noms familiers apparus dans le groupe de mon ancien lycée, puis j'éteins l'écran sans un bruit.*"
+        "text": "*Le téléphone dans ma poche vibre une fois. Je regarde les noms familiers dans le groupe de discussion de l'ancienne école et j'éteins discrètement l'écran.*"
     },
     "name_input_scene": {
         "name": "Système",
@@ -17,7 +17,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Sous l'ombre du portail, une fille aux longs cheveux lisses remonte légèrement ses lunettes et regarde sa montre. Quand mes pas approchent, ses cils se lèvent lentement.*"
+        "text": "*Sous l'ombre du port, une fille aux longs cheveux lisses remonte ses lunettes et consulte sa montre. Au rythme de mes pas, ses cils soignés se soulèvent.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "Le badge aussi, c'est {name}. Ravie. *Du bout des doigts, elle pose une légère marque sur la liste du porte-bloc.*"
+        "text": "Ton badge porte aussi {name}. Enchanté de te rencontrer. *Du bout des doigts, elle pose une légère marque sur la liste du porte-bloc.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "Pas besoin de ralentir pour saluer ceux qui passent. Marche juste à mon pas. *Aux saluts qui défilent dans le couloir, elle répond d'un simple signe de la main.*"
+        "text": "Pas besoin de ralentir pour répondre aux salutations de tous ceux que nous croisons. Garde simplement mon rythme. *Aux saluts qui défilent dans le couloir, elle répond d'un simple signe de la main.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -170,11 +170,11 @@
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*La porte de devant coulisse. D'un coup, des dizaines de regards se braquent par-dessus le brouhaha.* Bonjour."
+        "text": "*La porte avant s'ouvre en grincant, et la salle de classe bruyante tombe au silence tandis que des dizaines d'yeux se tournent vers moi.* Bonjour."
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*Devant le bureau se tient la professeure principale, qui a l'air d'avoir la fin de ses 20 ans. Cardigan beige souple, boutons du haut ouverts sans façon, elle m'accueille le registre à la main.*"
+        "text": "*Devant le bureau se tient la professeure principale, qui semble approcher de la trentaine. Vêtue d'un cardigan beige, elle m'accueille, le registre d'appel à la main.*"
     },
     "classroom_3": {
         "name": "Professeure principale",
@@ -182,7 +182,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "Je m'appelle {name}, transféré aujourd'hui. Je compte sur vous. *Je relève la tête après le bonjour. La professeure principale pose un point net à côté de mon nom dans le registre et sourit des yeux.*"
+        "text": "Je m'appelle {name}, transféré aujourd'hui. Je compte sur vous. *Je termine la salutation. L'enseignante de classe marque un point à côté de mon nom dans le registre, souriant avec ses yeux.*"
     },
     "classroom_5_b": {
         "name": "Professeure principale",
@@ -198,7 +198,7 @@
     },
     "classroom_dain_2": {
         "name": "Dain",
-        "text": "Par ici, par ici ! *Une fille aux cheveux courts châtains, en tenue de volley, bondit de sa chaise et agite la main sans retenue.*"
+        "text": "Par ici, par ici ! *Une fille aux cheveux bruns courts et en uniforme de volley se lève de son siège et fait un signe de la main animé.*"
     },
     "classroom_dain_3": {
         "name": "Professeure principale",
@@ -226,12 +226,12 @@
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Tout au fond, près de la fenêtre, à l'écart du vacarme, seule la fille aux cheveux blanc argenté dans le soleil de printemps tourne une page en silence.*"
+        "text": "*Mis à part la salle de classe bruyante, au dernier siège près de la fenêtre, seule la fille aux cheveux blanc argenté tourne silencieusement une page.*"
     },
     "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Un élève du premier rang frôle ma manche et chuchote. « Ne lui parle pas. Les rumeurs font un peu peur. » Même à cet instant, les doigts blancs de Yuna tournent la page suivante sans un frémissement.*"
+        "text": "*Un élève au premier rang me frôle la manche et murmure : \"Ne lui parle pas. Les rumeurs sont un peu effrayantes.\" Même ainsi, les doigts de Yuna tournent la page suivante sans ciller.*"
     },
     "classroom_seat_1": {
         "name": "Professeure principale",
@@ -239,7 +239,7 @@
     },
     "classroom_seat_2": {
         "name": "Dain",
-        "text": "Oh, pile à côté de moi ? Reste pas planté là, viens t'asseoir ! *Elle tire sa chaise tout contre et tourne franchement le buste vers moi.*"
+        "text": "Oh, juste à côté de moi ? Ne reste pas là. Viens t'asseoir ! *Elle tire sa chaise et tourne son buste vers moi.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "classroom_dain_talk_2": {
         "name": "Dain",
-        "text": "Ignore ce qu'il raconte ! Sinon, je peux te demander un seul truc ? *Elle se penche vers moi, assez pour dépasser le bord du bureau.*"
+        "text": "Ne fais pas attention à ce que ce gars a dit ! Quoi qu'il en soit, puis-je te demander quelque chose ? *Elle se penche si loin que son buste dépasse du bord de mon bureau.*"
     },
     "classroom_dain_talk_3": {
         "name": "Dain",
@@ -287,15 +287,15 @@
     },
     "classroom_dain_talk_8": {
         "name": "Dain",
-        "text": "Alors, on essaie ensemble ? *L'index chaud de Dain trace, sur le grain du bois de mon bureau, un petit terrain de volley et la ligne du filet.*"
+        "text": "Alors, on essaie ensemble ? *Le doigt de Dain dessine un minuscule terrain de volley et une ligne de filet sur le grain de mon bureau.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Là, depuis la place de derrière, un mot bien plié glisse jusqu'au coin du bureau. Je me retourne : la fille aux cheveux blanc argenté fait semblant de rien et fixe seulement les branches qui bougent dehors.*"
+        "text": "*Une note pliée glisse du siège derrière moi vers le coin de mon bureau. Je me retourne, mais la fille aux cheveux argentés regarde simplement par la fenêtre, comme si elle n'en savait rien.*"
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*Je l'ouvre avec précaution. Une écriture à l'encre mauve pâle, et un petit pli au coin.* Dès le premier jour, t'es tombé sur une place bruyante. — Yuna"
+        "text": "*Je la déplie, et une encre lavande pâle apparaît, avec un pli marqué au coin.* Dès le premier jour, t'es tombé sur une place bruyante. — Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
@@ -303,6 +303,6 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*La sonnerie qui annonce le 1er cours emplit la salle. Entre le profil froid de Yuna, tournée vers la fenêtre, et la chaleur de Dain qui n'arrête pas de parler, mon premier jour commençait.*"
+        "text": "*La sonnerie de la première période emplit la salle de classe. Entre le profil froid de Yuna et les bavardages animés de Dain, ma première journée commençait.*"
     }
 }

@@ -5,16 +5,16 @@
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*«Oye, dicen que a Sojeong le va bien en la escuela nueva.» «Menos mal, jaja.» En la pantalla van saliendo, uno tras otro, los nombres de siempre, con los que antes andaba todos los días.*"
+        "text": "*'Oye, escuché que Sojeong se está portando bien en su nueva escuela.' 'Eso es un alivio, jaja.' Nombres familiares de los días que pasamos juntos aparecen en la pantalla.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*Se me queda la vista en esa última línea, tan ligera: «Menos mal, jaja». Pulso el campo de respuesta una y otra vez, pero no consigo escribir ni una letra delante del cursor que parpadea.*"
+        "text": "*Mi mirada se detiene en esa frase casual: 'Eso es un alivio, jaja.' Toque el cuadro de entrada varias veces, pero no puedo escribir ni una sola letra.*"
     },
     "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*Tras dudar un buen rato, pulso en silencio para salir del grupo. Arriba de la lista vacía solo queda el chat de esta escuela, el que añadieron hoy.*"
+        "text": "*Después de una larga vacilación, toco Salir del Grupo. Solo el mensajero de esta escuela, añadido hoy, permanece en la parte superior de la lista.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -56,7 +56,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*Despliego la nota doblada que estaba en el bolsillo lateral de la mochila. Al final de la letra de Yuna, marcada con tinta lila, el último punto está un poco corrido.* Te vi bajar de la azotea a la hora de comer. Se te veía bastante cercano con la presidenta del consejo."
+        "text": "*Desdoblo la nota metida en el bolsillo lateral de mi bolso. El punto al final de la escritura lavanda de Yuna está borroso.* Te vi bajar de la azotea a la hora de comer. Se te veía bastante cercano con la presidenta del consejo."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -105,7 +105,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Dain se da la vuelta, da un par de pasos y, de pronto, se detiene y se sujeta la rodilla derecha. Enseguida suelta la mano como si nada y vuelve a acelerar.*"
+        "text": "*Después de unos pasos, Dain se detiene y se apoya en su rodilla derecha. Luego suelta como si nada hubiera pasado y retoma el paso.*"
     },
     "after_miss_dain_7": {
         "name": "Dain",
@@ -114,7 +114,7 @@
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Al pasar por el pasillo de delante de la biblioteca, viene una chica de ojos rojos, con un libro grueso apoyado sobre el tatuaje que asoma apenas al borde de la manga.*"
+        "text": "*En el pasillo frente a la biblioteca, una chica de ojos rojos camina hacia mí, sosteniendo un libro grueso. Un pequeño tatuaje es ligeramente visible en su manga.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "after_miss_yuna_1_c": {
         "name": "{name}",
-        "text": "*Recojo con cuidado el marcapáginas viejo que quedó en el suelo y se lo tiendo. Yuna se pasa el libro a un brazo y lo toma de la punta de mis dedos.*"
+        "text": "*Recojo el viejo marcapáginas que cayó al suelo y se lo entrego. Yuna mueve el libro y toma el marcapáginas de mis dedos.*"
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
@@ -196,7 +196,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "Profesora",
-        "text": "Justo estaba libre, así que pasa. *Bajo las mangas del cárdigan suave, remangadas hasta el codo, la lista de asistencia y el calendario escolar están hechos un desorden.*"
+        "text": "Por casualidad estoy libre, así que entra. *Un libro de asistencia y un calendario escolar yacen bajo las mangas enrolladas de su cárdigan.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "after_homeroom_choice_trap": {
         "name": "Profesora",
-        "text": "*Vuelve a coger el portapapeles y lo pone delante del pecho.* No es un trato especial. Es lo normal, como tutora. Si te incomoda, lo dejamos aquí por hoy."
+        "text": "*Ella vuelve a tomar la carpeta y la levanta.* Esto no es un trato especial. Es una revisión normal, como tu maestra de grupo. Si te sientes incómodo, podemos parar aquí por hoy."
     },
     "after_homeroom_ok": {
         "name": "Profesora",
@@ -241,7 +241,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Profesora",
-        "text": "Si desde el primer día te empeñas en adaptarte a la perfección, te cansas enseguida. A veces ve despacio, y que se note que aún vas un poco torpe. Venga, ahora vete."
+        "text": "Si intentas encajar perfectamente desde el primer día, te agotarás rápido. Está bien ir despacio. Muy bien, ve a casa ahora."
     },
     "after_homeroom_ok_6": {
         "name": "Profesora",
@@ -265,7 +265,7 @@
     },
     "after_homeroom_honest_4": {
         "name": "Profesora",
-        "text": "Si el aire del aula se te hace pesado, escápate aquí cuando quieras. Un café caliente... ah, cierto, eres estudiante. Un jugo dulce sí te lo puedo dar cuando sea."
+        "text": "Si el aire del salón se vuelve sofocante, ven aquí en cualquier momento. Como eres estudiante, siempre puedo conseguirte un jugo rico en lugar de café."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
@@ -333,7 +333,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*Un mareo repentino me para, con la mano en la pared fría del pasillo. Al levantar la cabeza, veo el letrero de la enfermería justo encima de la puerta de al lado.*"
+        "text": "*Un repentino mareo me detiene, apoyando la mano en la pared del pasillo. El letrero de la enfermería en la puerta justo a mi lado aparece.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -359,7 +359,7 @@
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*Al abrir la puerta, sobre el olor penetrante a desinfectante se posa un rastro dulce y suave. La enfermera, con la bata blanca, me mira por encima de la montura fina.* Disculpe."
+        "text": "*Al abrir la puerta, una tenue fragancia persistente se mezcla con el olor a desinfectante. La maestra con bata blanca me mira por encima de sus gafas.* Disculpe."
     },
     "after_nurse_enter_2": {
         "name": "Enfermera",
@@ -411,7 +411,7 @@
     },
     "after_nurse_enter_7_c": {
         "name": "Enfermera",
-        "text": "*La enfermera corre la cortina a medias alrededor de la cama y tapa la luz del atardecer.* ¿Te traigo algo de beber? ¿Agua fría, o un té caliente?"
+        "text": "*Ella cierra la cortina de la cama hasta la mitad para bloquear la luz del atardecer.* ¿Quieres algo de beber? ¿Agua fría o té caliente?"
     },
     "after_nurse_enter_7_d": {
         "name": "{name}",
@@ -444,11 +444,11 @@
     },
     "after_nurse_enter_8_c": {
         "name": "Enfermera",
-        "text": "*Se acerca por el hueco de la cortina y, al tenderme el agua en un vaso de papel, me roza levemente el dorso de la mano.* Bebe el agua despacio y calma la respiración; te sentirás mucho mejor. Si sigues con náuseas, se lo diremos también a la profesora."
+        "text": "*Se acerca a través de la abertura de la cortina, me da agua y me roza el dorso de la mano.* Bébelo despacio y calma tu respiración. Te sentirás mejor. Si sigues sintiéndote mal, también se lo diremos a tu maestra de grupo."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*Retengo un sorbo de agua en la boca y miro alrededor de la enfermería en silencio. En el rincón de la ventana, donde se posa el atardecer, hay una maceta pequeña, apenas del tamaño de la palma de una mano.*"
+        "text": "*Tengo un sorbo de agua en la boca y miro alrededor de la enfermería. Una maceta del tamaño de una palma está en la esquina junto a la ventana iluminada por el atardecer.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -468,11 +468,11 @@
     },
     "after_nurse_enter_10": {
         "name": "Enfermera",
-        "text": "Eso ya es cosa del pasado. Ahora esta escuela me gusta mucho más. Aquí, en cuanto suena el timbre, hasta los que estaban malos vuelven todos a clase con ánimo."
+        "text": "Eso es todo del pasado. Me gusta mucho más esta escuela. Aquí, solo hace falta la campana, e incluso los niños que estaban enfermos regresan a clase luciendo bien."
     },
     "after_nurse_enter_10_b": {
         "name": "Enfermera",
-        "text": "Venga, ya han pasado los 10 minutos que te prometí. ¿Qué tal el estómago? *Dentro del cajón que abre para guardar el registro, asoma un instante un cuaderno verde claro desvaído.*"
+        "text": "De acuerdo. Pasaron los 10 minutos. ¿Cómo está tu estómago ahora? *En el cajón abierto, un cuaderno descolorido de color verde pálido llama mi atención por un momento.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -480,7 +480,7 @@
     },
     "after_nurse_enter_11": {
         "name": "Enfermera",
-        "text": "Me alegro. A partir de ahora, si te mareas, ven cuando quieras; la puerta de la enfermería siempre está abierta. Pero si te empeñas en aguantar solo y llegas tarde, que sepas que te voy a regañar de verdad."
+        "text": "Eso es un alivio. Si te mareas, ven en cualquier momento. Solo ten en cuenta que si lo aguantas solo de forma terca y llegas tarde, te regañaré."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
@@ -488,31 +488,31 @@
     },
     "after_nurse_enter_11_c": {
         "name": "Enfermera",
-        "text": "*Hace rodar el bolígrafo sobre el registro y entorna los ojos.* Claro que sí. Si ocultas que estás mal, aguantas y te desplomas de verdad, mereces que te regañen. Estoy en esta sala para no dejarte aguantarlo."
+        "text": "*Ella hace rodar el bolígrafo sobre la ficha y entre las cejas.* Si ocultas lo enferma que estás y sigues adelante hasta colapsar, por supuesto que te regañarán. Es mi trabajo evitar que aguantes el dolor."
     },
     "after_nurse_enter_11_d": {
         "name": "Enfermera",
-        "text": "*Recibe el vaso de papel vacío y lo deja sobre el escritorio; un sonido bajo y sordo rompe el silencio.*"
+        "text": "*Ella toma el vaso de papel vacío y lo pone sobre el escritorio.*"
     },
     "after_nurse_enter_11_e": {
         "name": "Enfermera",
-        "text": "*Como si recordara lo que le dije antes, se pasa una vez la mano por la nuca blanca, por encima del cuello de la bata.*"
+        "text": "*Ella traza su mano una vez por su cuello, pasando el cuello de su bata.*"
     },
     "after_nurse_enter_11_f": {
         "name": "Enfermera",
-        "text": "Ah, cierto. Antes dijiste que parecía más cansada, ¿no? Si se nota hasta para un alumno nuevo, hoy yo también debería irme antes. Gracias por preocuparte."
+        "text": "Ah, cierto. ¿Dijiste antes que me veía cansada, verdad? Yo también debería irme temprano hoy. Gracias por preocuparte por mí."
     },
     "after_nurse_enter_11_g": {
         "name": "Enfermera",
-        "text": "*Anota con letra pulcra la hora del tratamiento en la última casilla del registro y retira el vaso de agua.*"
+        "text": "*Ella escribe el tiempo de tratamiento en el último recuadro del formulario y guarda el vaso de agua.*"
     },
     "after_nurse_enter_11_h": {
         "name": "Enfermera",
-        "text": "Antes dijiste que te gustaba la enfermería porque estaba tranquila, ¿no? Cuando el ruido del aula te pese, díselo a la profesora y ven a esconderte aquí. No te lo aguantes solo."
+        "text": "Cuando el ruido del salón sea demasiado, dile a tu profesor de curso y ven a descansar aquí."
     },
     "after_nurse_enter_11_i": {
         "name": "Enfermera",
-        "text": "*Abre del todo la cortina que estaba a medias y alisa con la palma la sábana arrugada de la camilla.*"
+        "text": "*Ella abre la cortina y endereza la sábana arrugada.*"
     },
     "after_nurse_enter_11_j": {},
     "after_nurse_enter_11_k": {
@@ -529,11 +529,11 @@
     },
     "after_nurse_enter_12": {
         "name": "Enfermera",
-        "text": "Lo anotaré bien en la ficha. Si te mareas otra vez de camino, no aguantes en el pasillo y vuelve directo."
+        "text": "Lo anotaré en tu historial. Si te vuelves a marear por el camino, no intentes aguantar. Regresa enseguida."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*Cuando voy a bajarme de la camilla, la enfermera mira una vez el reloj de pared y hace girar la silla hacia mí.*"
+        "text": "*Al bajar de la cama, la enfermera de la escuela gira su silla giratoria hacia mí.*"
     },
     "after_nurse_freetalk": {
         "name": "Enfermera",

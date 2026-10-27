@@ -17,7 +17,7 @@
     },
     "morning4_start": {
         "name": "{name}",
-        "text": "*Samstagmorgen, der vierte Tag. Das Wochenendlicht dringt durch die Vorhänge und weckt mich. Statt nach der Zeit für den Schulweg zu sehen, ziehe ich das Handy neben dem Kopfkissen heran und prüfe meine heutigen Pläne.*"
+        "text": "*Samstagmorgen, der vierte Tag. Ich wache auf, als das Wochenendlicht durch die Vorhänge fällt, und ziehe sofort das Telefon neben mein Kissen heran.*"
     },
     "morning4_date_plan_check": {},
     "morning4_nightmare_check": {},
@@ -68,7 +68,7 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*Auf dem Kalenderbildschirm liegen die Termine noch immer gefährlich übereinander. Ich weiß schon schmerzhaft genau, dass das nichts ist, was sich erledigt, wenn ich die Zeiten nur halbwegs aufteile, und meine Fingerspitzen werden schwer.*"
+        "text": "*Die Termine, die sich überschnitten haben, so prekär sie auch sind, stehen immer noch im Kalender. Ich weiß, dass ich das nicht einfach durch Zeitaufteilung überwinden kann, und meine Finger fühlen sich schwer an.*"
     },
     "minsu_cheer_4_d": {},
     "minsu_cheer_4_e": {},
@@ -116,11 +116,11 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "Guten Morgen, Frau Lehrerin. *Vor dem halb offenen Haupttor treffe ich frontal auf die Klassenlehrerin, die mit einer dicken braunen Papiertüte im Arm herauskommt.*"
+        "text": "Guten Morgen, Frau Lehrerin. *Am Haupttor stehe ich der Klassenlehrerin gegenüber, als sie mit einem dicken braunen Papierumschlag herauskommt.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*Kaum treffen sich die Blicke, versteckt die Klassenlehrerin die Papiertüte reflexartig hinter dem Rücken. Im dünnen Papier raschelt der gedruckte Manuskriptstapel.*"
+        "text": "*In dem Moment, als sich unsere Blicke trafen, versteckt sie den Umschlag reflexartig hinter ihrem Rücken.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Klassenlehrerin",
@@ -136,7 +136,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*Statt des ordentlichen Kostüms, das ich sonst am Pult sehe, trägt die Klassenlehrerin einen weichen beigen Trenchcoat und einen dünnen Strickpullover. Die Ecke der Papiertüte, die sie hinter dem Rücken versteckt, ist in ihrem Griff fein zerknittert.*"
+        "text": "*Anstelle des Anzugs, den ich normalerweise am Rednerpult sehe, trägt sie einen beigen Trenchcoat und einen Strickpullover.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -148,7 +148,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*Am Henkel der Tüte sind die schlanken Fingergelenke der Klassenlehrerin ungewöhnlich straff gespannt. Durch den Spalt an der Öffnung schimmert leicht die erste Seite des Manuskripts, deutlich vom vielen Falten und Glätten gezeichnet.*"
+        "text": "*Durch die Lücke im Umschlag erhasche ich die erste Manuskriptseite, die mehrfach gefaltet und entfaltet wurde.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Klassenlehrerin",
@@ -164,7 +164,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Nur die schläfrige Radiomusik aus dem Pförtnerhäuschen am Haupttor füllt, vom kühlen Morgenwind getragen, den Raum zwischen uns beiden.*"
+        "text": "*Radio-Musik vom Torhaus trägt am Morgenwind vorbei.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Klassenlehrerin",
@@ -180,7 +180,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Klassenlehrerin",
-        "text": "Nur weil deine Klassenlehrerin den Text geschrieben hat, musst du dich überhaupt nicht unter Druck setzen. Es ist Wochenende, du hast sicher selbst einen Termin. *Sie lässt den Satz ausklingen, faltet den Henkel der Papiertüte zweimal und hält ihn fest.*"
+        "text": "Du musst dich nicht unter Druck gesetzt fühlen, nur weil dein Klassenlehrer es geschrieben hat. Es ist Wochenende, also hast du wahrscheinlich deine eigenen Pläne. *Ihre Worte verhallen, als sie den Griff des Umschlags fest umklammert.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -197,7 +197,7 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Klassenlehrerin",
-        "text": "Siehst du, am langen Tisch am Fenster sitzen die vom Literaturklub zusammen? Die anderen kommen auch gleich, wir setzen uns erst mal hier in die Ecke."
+        "text": "Seht ihr die Kinder des Literaturclubs an diesem Tisch am Fenster? Setzen wir uns erstmal in diese Ecke."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Klassenlehrerin",
-        "text": "Den bestellten Kaffee sollten wir aber noch austrinken, bevor wir gehen. *Sie tut es betont als Scherz ab und umschließt die warme Tasse. Auf dem Korkuntersetzer überlappen sich zwei runde Wasserflecken nebeneinander.*"
+        "text": "Trotzdem sollten wir den Kaffee trinken, den wir bestellt haben, bevor wir gehen. *Sie umschließt die warme Tasse mit ihren Händen. Zwei runde Wasserflecken überlappen nebeneinander auf dem Korkuntersetzer.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -217,7 +217,7 @@
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Klassenlehrerin",
-        "text": "Wenn ich es wirklich aussuchen soll, ist mir das richtig peinlich. Nachts allein unter der Lampe daran feilen ist etwas ganz anderes, als es jemandem vor die Augen zu legen. Die Sätze wiegen dann völlig anders. *Auch nachdem sie die Tasse abgestellt hat, nesteln die Fingerspitzen der Klassenlehrerin am Porzellanhenkel.*"
+        "text": "Ein Satz wiegt völlig anders, wenn man ihn allein nachts korrigiert, als wenn man ihn jemand anderem zeigt. *Selbst nachdem sie die Tasse abgestellt hat, spielen ihre Fingerspitzen immer noch mit dem Griff.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Klassenlehrerin",
@@ -233,7 +233,7 @@
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*Im Spalt der Ledertasche der Klassenlehrerin neben dem Stuhl ist die Papiertüte mit dem Manuskript zu sehen. Die Knickstellen sind vom vielen Öffnen und Schließen blass von den Händen abgenutzt.*"
+        "text": "*Durch eine Lücke in der Tasche des Klassenlehrers ist der Manuskeltasche zu sehen. Die Falte ist durch Fingerabdrücke abgenutzt, von all den Male, in denen sie geöffnet und geschlossen wurde.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Klassenlehrerin",
@@ -274,7 +274,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "Soll ich meinen Namen weglassen, wenn ich an den Rand schreibe? Wenn die vom Literaturklub meine Schrift erkennen, wird das für Sie unangenehm, fürchte ich. *Auf meine Worte hin hält die Klassenlehrerin die Hand still, die die Bechermanschette glattgestrichen hat, und lächelt schwach.*"
+        "text": "Soll ich meinen Namen weglassen, wenn ich eine Anmerkung in die Marge schreibe? Ich fürchte, es würde dich in eine schwierige Lage bringen, wenn die Kinder meine Handschrift erkennen. *Sie hält die Hand, die den Bechergriff glättete, an und lächelt.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Klassenlehrerin",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "{name}",
-        "text": "Ihren Text nicht im Lehrerzimmer zu lesen, sondern in einem Café, das nach Kaffeebohnen riecht, fühlt sich merkwürdig an. *Die Klassenlehrerin notiert oben auf dem letzten Ausdruck eine kleine Zahl und schiebt ihn vor mich. Die Fingerspitzen, die das Papier reichen, streifen meinen Handrücken und heben sich wieder.*"
+        "text": "In einem Café deine Schrift zu lesen, fühlt sich seltsam an. *Sie schreibt eine kleine Zahl oben auf den Ausdruck und schiebt ihn zu mir. Die Fingerspitzen berühren den Handrücken.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Klassenlehrerin",
@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "Ich bin zur Beratungszeit gekommen, die Sie letztes Mal für mich festgelegt haben. *Ich gehe den Flur entlang, der von den Vorbereitungen fürs Schulfest unruhig ist, und öffne die Tür zum stillen Krankenzimmer. Auf dem Schreibtisch liegen Beratungsprotokoll und Infoblatt ordentlich nebeneinander.*"
+        "text": "Ich bin hier für die Beratungszeit, die du angesetzt hast. *Ich öffne die Tür zum ruhigen Schulgesundheitsraum. Ein Beratungsbericht und ein Informationsblatt liegen auf dem Schreibtisch.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Schulkrankenschwester",
@@ -380,7 +380,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "Schulkrankenschwester",
-        "text": "Was du mir anvertraust, trage ich nicht ohne deine Erlaubnis zu anderen. Wenn ich aber sehe, dass du dich verletzen könntest, arbeite ich sofort auch mit anderen Erwachsenen zusammen. Genau dieses Prinzip musst du mir zusagen."
+        "text": "Ich werde nichts über das, was du mir anvertraust, ohne deine Erlaubnis weitergeben. Aber wenn ich ein Risiko sehe, dass du dich verletzt, werde ich mit anderen Erwachsenen zusammenarbeiten."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Schulkrankenschwester",
@@ -392,7 +392,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*Auf dem langen Tisch im Krankenzimmer türmen sich Erste-Hilfe-Kästen für die Schulveranstaltung und Desinfektionsmaterial. Die Schulkrankenschwester, die mit hochgekrempelten Ärmeln Etiketten klebt, entdeckt mich über ihre Brille hinweg an der Tür.*"
+        "text": "*Erste-Hilfe-Kästen für die Veranstaltung und Desinfektionsmittel sind auf dem Schreibtisch im Schulgesundheitsraum gestapelt. Die Schulnotärin, die gerade Etiketten anbringend, bemerkt mich, wie ich in der Tür stehe.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "Schulkrankenschwester",
@@ -412,15 +412,15 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "Sterile Gaze und Alkoholtupfer lege ich hierhin, gut in Reichweite. *Zwischen den Helfern, die geschäftig fürs Schulfest ein und aus gehen, räume ich den Arbeitstisch entlang der Wege der Schulkrankenschwester.*"
+        "text": "Ich werde die sterilen Tupfer und die Alkoholpads hier sortieren. *Ich organisiere den Arbeitstisch passend zu ihren Bewegungen.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie reicht mir ein Bündel durchsichtiger Reißverschlussbeutel.* Pro Beutel zwei Lagen Gaze und drei Stück Desinfektionswatte. Die Unterlagen mit den sensiblen Gesundheitsdaten der Schüler sortiere ich selbst."
+        "text": "*Sie reicht mir einen Stapel durchsichtiger Reißverschlusstaschen.* Legt zwei Tupfer und drei antiseptische Wattepads in jede. Die vertraulichen Gesundheitsunterlagen übernehme ich selbst."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "Diese Reihe Beutel ist nach Anzahl voll. Schauen Sie bitte, ob etwas fehlt. *Die Fingerspitzen der Schulkrankenschwester und meine streifen sich leicht über dem Beutel, und ich ziehe sofort den nächsten leeren heran.*"
+        "text": "Alle Taschen in dieser Reihe haben jetzt die richtige Menge. *Ihre Fingerspitzen und meine berühren sich leicht über einer Tasche.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "Schulkrankenschwester",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "Es stimmt schon, ich habe nicht geschlafen und hatte viel zu tun. Aber wenn ich nur sage, die Arbeit habe mich erdrückt und ich hätte deshalb aufgehört, fehlt der wichtigste Grund. *In dem Moment, in dem die Schulkrankenschwester die Mappe zuklappt, rutscht die Spitze des Stifts in ihrer Hand leise über den glatten Deckel.*"
+        "text": "Es stimmt, ich war beschäftigt. Aber ich habe nicht aufgegeben, nur weil die Arbeit zu viel war. *In dem Moment, als sie die Akte schließt, rutscht die Spitze des Stiftes über den Einband.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "Schulkrankenschwester",
@@ -456,12 +456,12 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "Schulkrankenschwester",
-        "text": "Es war, wenn ich mich dabei erwischte, wie ich vor Gesicht und Namen zuerst die Bettnummer und die Vitalwerte auf dem Chart mechanisch prüfte. Irgendwann verschwamm sogar, ob ich einem Menschen in die Augen sah oder auf den Monitor."
+        "text": "Es war, als ich mich ertappte, wie ich mechanisch die Bettennummer und die Vitalzeichen vor dem Gesicht eines Patienten überprüfte. Ich konnte nicht einmal mehr unterscheiden, ob ich jemand in die Augen sah oder auf einen Monitor blickte."
     },
     "hidden_nurse_d4_4_g": {},
     "hidden_nurse_d4_4_h": {
         "name": "Schulkrankenschwester",
-        "text": "Im Krankenzimmer habe ich Zeit, jedem Kind, das kommt, direkt in die Augen zu sehen und einmal durchzuatmen. Wenn ich etwas nicht selbst lösen kann, nehme ich es an die Hand und verbinde es mit einem Ort, der wirklich helfen kann. Auch das ist meine Aufgabe."
+        "text": "In der Schulgesundheitsstation hat man Zeit, den Kindern in die Augen zu sehen und einen Atemzug zu nehmen. Wenn es etwas ist, das ich alleine nicht bewältigen kann, ist es auch meine Aufgabe, sie an einen Ort zu vermitteln, der helfen kann."
     },
     "hidden_nurse_d4_4_i": {
         "name": "{name}",
@@ -469,7 +469,7 @@
     },
     "hidden_nurse_d4_4_j": {
         "name": "Schulkrankenschwester",
-        "text": "Klar. Wenn dir etwas zu schwer wird, um es allein zu tragen, klopf unbedingt an, ob im Krankenzimmer, bei der Klassenlehrerin oder in der Beratungsstelle. Behalt es nicht nur still für dich."
+        "text": "Wenn also etwas zu schwer wird, um es alleine zu tragen, klopft an. Die Gesundheitsstation, das Beratungszentrum. Leidet nicht einfach schweigend alleine."
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
@@ -535,7 +535,7 @@
     },
     "hidden_nurse_d4_meal_1_c": {
         "name": "Schulkrankenschwester",
-        "text": "Ich habe zuerst probiert, um zu prüfen, wie scharf es ist, bevor die Schüler essen. *Die Schulkrankenschwester trinkt das kalte Wasser im Pappbecher in einem Zug und wischt sich über die Lippen.* So wie das schmeckt, hilft da nicht mal das Verdauungsmittel aus unserem Erste-Hilfe-Set."
+        "text": "Ich habe es zuerst probiert, um die Schärfe zu prüfen, bevor die Schüler es aßen. *Sie trinkt das kalte Wasser in einem Zug und wischt sich die Lippen ab.* Nicht einmal unsere Verdauungstabletten konnten diesen Geschmack retten."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "{name}",
-        "text": "*Während ich der Schulkrankenschwester ins Gesicht sehe und weiterrede, klebt ein Etikett an meinen Fingerspitzen schief an der Kistenecke.* Jetzt wirken Sie deutlich entspannter. Ah, ich habe Sie angesprochen, und dabei ist das Etikett schief geworden."
+        "text": "*Während ich spreche und ihr Gesicht ansehe, klebt ein Etikett schräg in der Ecke der Schachtel.* Du siehst jetzt viel entspannter aus. Oh, das Etikett ist schief."
     },
     "hidden_nurse_d4_meal_3": {
         "name": "Schulkrankenschwester",
@@ -595,7 +595,7 @@
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Zu Hause richte ich vor dem Spiegel Hemdkragen und Haare, prüfe die Zeiger der Wanduhr, hole im Flur aufgeregt Luft und binde die Schnürsenkel meiner Sneaker fest neu.*"
+        "text": "*Zuhause glätte ich meinen Hemdkragen und mein Haar und schnür die Schnürsenkel meiner Sportschuhe fest am Eingang.*"
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Klassenlehrerin",
@@ -628,7 +628,7 @@
     },
     "day4_haeun_concern_clarify": {
         "name": "Haeun",
-        "text": "Ich habe nichts erfunden, um dich schlecht dastehen zu lassen. Ich habe nur gesagt, was mir im Gespräch gestern ehrlich unangenehm war. *Haeun sieht mich mit festem Blick gerade an.* Falls du es in einem anderen Sinn gesagt hast, sag es bitte jetzt hier."
+        "text": "Ich habe nichts erfunden. Ich habe ehrlich erzählt, was mir an unserem Gespräch gestern unangenehm war. *Haeun schaut mich direkt an.* Wenn du etwas anderes gemeint hast, sag es bitte."
     },
     "day4_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
@@ -775,7 +775,7 @@
     },
     "day4_haeun_notice_1": {
         "name": "Haeun",
-        "text": "*Im Schatten der Mauer neben dem Schultor beginnt Haeun von Seoyeon, lässt den Satz plötzlich auslaufen und nestelt am Knoten des Armbands um ihr Handgelenk.* Es ist wirklich seltsam. Ich wollte über Seoyeon sprechen, aber ehe ich es merke, geht es immer um dich. Ich weiß selbst nicht, warum ich in letzter Zeit so bin."
+        "text": "*Im Schatten der Wand spielt Haeun mit dem Armbandknoten und spricht über Seoyeon.* Es ist seltsam, nicht wahr. Ich habe versucht, über Seoyeon zu sprechen, aber wenn ich es merke, schweift es immer zu dir, Sunbae."
     },
     "day4_haeun_notice_choice": {
         "name": "Haeun",
@@ -789,7 +789,7 @@
     },
     "day4_haeun_notice_up": {
         "name": "Haeun",
-        "text": "*Haeun blinzelt leicht überrascht, wird an den Wangen rot und lächelt.* Danke, dass du nicht gelacht und bis zum Schluss zugehört hast. Mit meinen eigenen Worten kann ich es noch nicht klar erklären, aber dank dir ist mir leichter."
+        "text": "*Haeun wird rot und lächelt.* Danke, dass du mir zu Ende zugehört hast, ohne zu lachen. Dank dir, Sunbae, fühle ich mich ein wenig leichter."
     },
     "day4_haeun_notice_down": {
         "name": "Haeun",

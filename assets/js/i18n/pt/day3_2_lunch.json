@@ -75,15 +75,15 @@
     "lunch3_seo_skin_check": {},
     "lunch3_seo_skin_1": {
         "name": "Seoyeon",
-        "text": "Espera, tem alguma coisa no canto da sua boca. Fica parado, não se mexe. *Seoyeon inclina o tronco bem perto, segura de leve a ponta do meu queixo com os dedos e, com a ponta do polegar, tira devagar o grão de arroz grudado ao lado dos meus lábios.*"
+        "text": "Espere, tem algo perto da sua boca. Não se mexa. *Seoyeon se inclina, pega meu queixo e remove o grão de arroz ao lado dos meus lábios.*"
     },
     "lunch3_seo_skin_2": {
         "name": "Seoyeon",
-        "text": "*O dedo de Seoyeon, na borda dos meus lábios, não se afasta logo. Uma voz mais baixa roça a minha orelha.* Na frente dos outros, toma mais cuidado. Eu não posso ficar te limpando assim toda vez."
+        "text": "*O dedo de Seoyeon fica demorando no canto dos meus lábios.* Tenha um pouco mais de cuidado na frente dos outros. Eu não consigo limpar seu rosto toda vez."
     },
     "lunch3_seo_skin_3": {
         "name": "Seoyeon",
-        "text": "Ah, meus hashis. Deixa, eu pego. Fica parado. *Ao recolher a mão, Seoyeon pega os hashis que rolaram da beira da mesa e esconde a orelha vermelha atrás do cabelo.*"
+        "text": "Ah, meus hashis. Eu vou pegar, então fique parado. *Enquanto ela pega os hashis caídos, Seoyeon esconde a orelha avermelhada atrás do cabelo.*"
     },
     "lunch3_give_seo_2": {
         "name": "Dain",
@@ -138,11 +138,11 @@
     "lunch3_dain_skin_check": {},
     "lunch3_dain_skin_1": {
         "name": "Dain",
-        "text": "Obrigada por me deixar a parte gostosa. De prêmio, posso te abraçar uma vez? *Dain engole a omelete enrolada de uma vez, se levanta pela metade e abre os braços. Antes de ouvir a minha resposta, abraça a minha nuca e se enfia no meu peito.*"
+        "text": "Você me deu algo tão gostoso. Posso te dar um abraço? *Dain se levanta de seu assento e se encolhe em mim, me puxando pelo pescoço antes mesmo de ouvir minha resposta.*"
     },
     "lunch3_dain_skin_3": {
         "name": "Dain",
-        "text": "*Através da roupa de educação física, o calor do corpo de Dain e o coração acelerado passam direto. Meio tempo depois, ela se afasta e coça a bochecha vermelha.* Depois que eu abracei primeiro, deu muito mais vergonha do que eu pensava."
+        "text": "*Através das roupas esportivas dela, o calor e o batimento cardíaco de Dain passam para mim. Ela se afasta e coça a bochecha.* Agora que eu te abrace primeiro, isso é muito mais embaraçoso do que eu pensei."
     },
     "lunch3_give_dain_2": {
         "name": "Seoyeon",
@@ -168,7 +168,7 @@
     "lunch3_yuna_skin_check": {},
     "lunch3_yuna_skin_1": {
         "name": "Yuna",
-        "text": "É um agradecimento. Pega. *No instante em que Yuna passa o bilhete por baixo da mesa, os dedos frios e lisos dela entram fundo na palma da minha mão, como se a envolvessem.*"
+        "text": "É um agradecimento. Pega. *Debaixo da mesa, no momento em que Yuna me entrega o bilhete, seus dedos frios envolve minha palma.*"
     },
     "lunch3_yuna_skin_2": {
         "name": "Yuna",
@@ -307,7 +307,7 @@
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
-        "text": "*De dentro da sala, só se ouve a cadeira sendo arrastada, uma depois da outra, e ninguém sai atrás de mim. Nas aulas da tarde, as letras do quadro não entram, e debaixo da mesa eu só ligo e desligo a tela do celular.*"
+        "text": "*Da sala de aula eu só ouço cadeiras arrastando. Ninguém me segue para fora. Durante toda a aula da tarde, debaixo da mesa eu continuo ligando e desligando a tela do meu celular.*"
     },
     "lunch3_share_1": {
         "name": "{name}",

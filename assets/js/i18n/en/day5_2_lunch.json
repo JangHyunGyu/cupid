@@ -69,7 +69,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*After we walk once around the schoolyard lined with festival booths, we climb the familiar stairs and open the rooftop door. Seoyeon rests her hand quietly on the sun-warmed railing.* Even at lunch on the school festival day, this is still where the two of us end up."
+        "text": "*After a circuit of the school grounds lined with festival stalls, I open the rooftop door. Seoyeon rests her hand quietly on the railing.* Even at lunch on the school festival day, this is still where the two of us end up."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*A very faint smile spreads at the corner of Yuna's mouth. She takes a new notebook from her bag and sets it on her lap.* I cleaned up the sentences I'd been writing and copied them neatly into a new notebook. The revision marks are still there beside them, so the margins are a little messy."
+        "text": "*Yuna takes a new notebook from her bag and sets it on her lap.* I copied the sentences I'd been writing neatly into a new notebook. The revision marks are still there, so the margins are a little messy."
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -153,7 +153,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "You're here! Today I don't want to sweat and hit a ball. I just want to hang around with you. You're not heading back to the classroom already, are you? *Dain tucks a volleyball lightly under her arm and waves brightly from the middle of the court.*"
+        "text": "You're here! Today I'd rather just laze around with you than play ball. *With a volleyball tucked under her arm, Dain waves brightly from the middle of the court.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -274,11 +274,11 @@
     },
     "tour_seo_event_5": {
         "name": "Seoyeon",
-        "text": "*Until Haeun's energetic back turns the corner, Seoyeon doesn't chase after her in worry. A lighter breath brushes the corner of her mouth.* ...Right. The world won't fall apart just because one thing doesn't pass through my own hands."
+        "text": "*Until Haeun's back turns the corner, Seoyeon doesn't chase after her in worry.* ...Right. The world won't fall apart just because one thing doesn't pass through my own hands."
     },
     "tour_yuna_event_1": {
         "name": "{name}",
-        "text": "*When we step out into the hallway in front of the annex, two juniors stand side by side at the literature club display board. Pointing at the short story Yuna posted without a name, they whisper about where they can read what comes next.*"
+        "text": "*Two younger students stand at the literature club's display board outside the annex. Pointing to Yuna's unsigned short story, they whisper about where they can read the next part.*"
     },
     "tour_yuna_event_2": {
         "name": "{name}",
@@ -290,11 +290,11 @@
     },
     "tour_yuna_event_4": {
         "name": "{name}",
-        "text": "*Yuna takes a pale purple fountain pen from her pocket and writes the three characters of her name in the blank space under the title. \"Choi Yuna.\" Because her fingertips are shaking, the last character leans just a little to the right.*"
+        "text": "*Yuna takes a pale purple fountain pen and writes the three characters of her name in the blank space under the title. \"Choi Yuna.\" The last character is a little tilted.*"
     },
     "tour_yuna_event_5": {
         "name": "Yuna",
-        "text": "*Yuna caps the fountain pen, turns from the display, and walks back into the annex. A low, ticklish voice settles by my ear as she passes.* ...The real ending, I'll show it to you first. Before anyone else."
+        "text": "*Yuna caps the fountain pen and walks back into the annex. A low voice settles by my ear as she passes.* ...The real ending, I'll show it to you first. Before anyone else."
     },
     "tour_dain_event_1": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "tour_dain_event_2": {
         "name": "Dain",
-        "text": "*Dain looks at me once, then speaks in a steady voice.* Coach, I'm not playing in today's exhibition match. I told Mom myself this morning, too. But if the commentary mic at the officials' booth is open, I'll take that!"
+        "text": "*Dain looks at me and speaks in a steady voice.* Coach, I won't play in the exhibition match today. I told Mom this morning too. I'll take the commentary microphone at the officials' booth instead!"
     },
     "tour_dain_event_3": {
         "name": "{name}",
@@ -314,7 +314,7 @@
     },
     "tour_dain_event_5": {
         "name": "Dain",
-        "text": "*Under the laughter and applause pouring up from below the booth, Dain switches off the microphone and catches her breath, light, as she comes down the stairs.* ...Even without running on the court myself, I have this much I can say. It's a lot more fun than I thought."
+        "text": "*Under the applause pouring up from below the booth, Dain switches off the microphone and catches her breath as she comes down.* ...Even without running on the court myself, I have this much I can say. It's a lot more fun than I thought."
     },
     "tour_seo_affinity_check": {},
     "tour_seo_affinity_80": {
@@ -364,7 +364,7 @@
     },
     "day5_haeun_high_clasp": {
         "name": "Haeun",
-        "text": "Ah, senior, please don't move for a second. I think my bracelet clasp caught on your sleeve button. *She sets the box down in front of the broadcast room door, and Haeun leans her head in close to my chest to undo the tangled silver chain. Right then, someone's footsteps in the hallway stop dead beside us.*"
+        "text": "Ah, senior, please don't move for a second. I think my bracelet clasp caught on your sleeve button. *Haeun puts the box down and lowers her head to untangle the chain. Just then, someone passing through the hallway stops beside us.*"
     },
     "day5_haeun_explain_choice": {
         "name": "{name}",
@@ -384,11 +384,11 @@
     },
     "day5_haeun_defends": {
         "name": "Haeun",
-        "text": "Um, I asked for the help first. I can speak comfortably to senior. *Haeun pulls the paperwork box on the floor in close to her feet.* We really didn't do anything that could be misunderstood. ...No. Why does it sound even more like a strange excuse now that I've said it myself?"
+        "text": "I asked for the help first. *Haeun pulls the paperwork box to her feet.* We really didn't do anything that could be misunderstood. ...No. Why does it sound even more like a strange excuse now that I've said it myself?"
     },
     "day5_haeun_waver_1": {
         "name": "Haeun",
-        "text": "*After the moment has passed, Haeun looks down at her empty palms, then fidgets with the bracelet clasp on her wrist for a long while.* Senior, I said earlier that it was nothing. That's clearly true, but... what I said before, that I was rooting for the two of you, keeps catching in my throat. I'm just going to keep pretending I don't notice, and swallow it."
+        "text": "*After the moment has passed, Haeun fidgets with the bracelet clasp on her wrist.* Sunbae, what I said before about rooting for the two of you keeps catching in my throat. I'll just keep pretending not to notice and swallow it."
     },
     "day5_haeun_waver_choice": {
         "name": "Haeun",
@@ -427,7 +427,7 @@
     },
     "day5_haeun_low_apology": {
         "name": "Haeun",
-        "text": "*I apologize politely for the attitude that made her uncomfortable last time we talked, and say I'll help finish the inspection. Haeun studies my eyes for a moment, then carefully opens the checklist.* ...I heard your apology. Then please check this section with me, starting here."
+        "text": "*I apologize for the attitude that made her uncomfortable last time we talked, and say I'll help finish the inspection. Haeun studies my eyes for a moment, then opens the checklist.* ...I heard your apology. Then please check this section with me, starting here."
     },
     "day5_haeun_low_work": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "day5_haeun_concern_clarify": {
         "name": "Haeun",
-        "text": "Um, I absolutely wasn't making anything up to make you look bad, senior. I only told them what felt uncomfortable and flustered me when we talked that day. *Haeun looks carefully into my eyes.* If I took what you meant the wrong way, senior, please say so yourself, right here."
+        "text": "I wasn't making anything up to make you look bad, senior. I only told what felt uncomfortable when we talked that day. *Haeun looks into my eyes.* If I took what you meant the wrong way, please say so right here."
     },
     "day5_haeun_concern_seoyeon_intro": {
         "name": "Haeun",

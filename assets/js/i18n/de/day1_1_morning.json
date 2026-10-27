@@ -1,15 +1,15 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*Vor dem Schultor wirbeln im April die Kirschblütenblätter. Ich streiche den noch steifen Kragen der neuen Schuluniform glatt und rücke den Riemen der Tasche mit den Unterlagen für den Schulwechsel zurecht.*"
+        "text": "*April, Kirschblütenblätter vor dem Schultor verwehen. Ich glätte den Kragen meiner neuen Uniform und ordne den Rucksack mit meinen Überweisungsunterlagen.*"
     },
     "start_again": {
         "name": "{name}",
-        "text": "*Ein plötzlicher Schwindel überkommt mich, und ich stütze mich am kalten Pfeiler des Schultors ab. Ich lasse den hastigen Atem langsam aus und warte, bis die Übelkeit nachlässt.*"
+        "text": "*Eine Schwindelwelle überkommt mich, und ich lehne mich gegen den Torpfosten. Ich atme keuchend aus und warte, bis sich mein Magen beruhigt hat.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*Das Handy in meiner Hosentasche vibriert kurz. Ich sehe einen Moment auf die vertrauten Namen, die im Gruppenchat meiner alten Schule aufgetaucht sind, und schalte den Bildschirm leise aus.*"
+        "text": "*Das Telefon in meiner Tasche vibriert einmal. Ich schaue auf die vertrauten Namen im alten Schul-Gruppenchat und schalte den Bildschirm leise aus.*"
     },
     "name_input_scene": {
         "name": "System",
@@ -17,7 +17,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Im Schatten unter dem Schultor schiebt eine Schülerin mit langem glattem Haar die Brille leicht hoch und sieht auf die Uhr. Als meine Schritte näher kommen, heben sich ihre ordentlichen Wimpern langsam.*"
+        "text": "*Im Schatten des Tores schiebt ein Mädchen mit langen, glatten Haaren ihre Brille hoch und sieht auf die Uhr. Als meine Schritte zu hören sind, heben sich ihre feinen Wimpern.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "Auf dem Namensschild an der Brust steht auch {name}. Freut mich. *Mit ordentlichen Fingerspitzen setzt sie einen leichten Strich auf die Liste am Klemmbrett.*"
+        "text": "Auch dein Namensschild trägt {name}. Schön, dich kennenzulernen. *Mit ordentlichen Fingerspitzen setzt sie einen leichten Strich auf die Liste am Klemmbrett.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -114,7 +114,7 @@
     },
     "hallway_1": {
         "name": "Seoyeon",
-        "text": "Du musst nicht langsamer werden, nur weil dich die Vorbeigehenden grüßen. Geh einfach in meinem Tempo. *Die Grüße, die im Flur auf sie einprasseln, beantwortet sie nur mit einem kurzen Heben der Hand.*"
+        "text": "Es ist nicht nötig, bei jedem, den wir passieren, Hallo zu sagen. Pass einfach meinen Schritt. *Die Grüße, die im Flur auf sie einprasseln, beantwortet sie nur mit einem kurzen Heben der Hand.*"
     },
     "hallway_3": {
         "name": "Seoyeon",
@@ -170,11 +170,11 @@
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*Die vordere Klassentür rattert auf, und über dem Stimmengewirr richten sich Dutzende Blicke gleichzeitig auf mich.* Guten Morgen."
+        "text": "*Die Vordertür knarrt auf, und der laute Klassenraum verstummt, als Dutzende Augen sich gleichzeitig auf mich richten.* Guten Morgen."
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*Vor dem Pult steht die Klassenlehrerin, etwa in den späten 20ern. In einem weichen beigen Cardigan, der obere Knopf offen, hält sie das Klassenbuch und begrüßt mich.*"
+        "text": "*Vor dem Lehrerpult steht die Klassenlehrerin, die Ende zwanzig zu sein scheint. In einem beigen Cardigan begrüßt sie mich mit dem Klassenbuch in der Hand.*"
     },
     "classroom_3": {
         "name": "Klassenlehrerin",
@@ -182,7 +182,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "Ich heiße {name} und bin heute an diese Schule gewechselt. Bitte nehmt mich gut auf. *Als ich den Kopf wieder hebe, setzt die Klassenlehrerin ordentlich einen Punkt neben meinen Namen im Klassenbuch und lächelt mit den Augen.*"
+        "text": "Ich heiße {name} und bin heute an diese Schule gewechselt. Bitte nehmt mich gut auf. *Ich beende die Begrüßung. Die Klassenlehrerin setzt einen Punkt neben meinen Namen im Klassenbuch und lächelt mit den Augen.*"
     },
     "classroom_5_b": {
         "name": "Klassenlehrerin",
@@ -198,7 +198,7 @@
     },
     "classroom_dain_2": {
         "name": "Dain",
-        "text": "Hier rüber, hier rüber! *Eine Schülerin mit frischem braunem Kurzhaarschnitt im Trikot der Volleyballmannschaft springt auf und winkt weit.*"
+        "text": "Hier rüber, hier rüber! *Ein Mädchen mit kurzen braunen Haaren und Volleyballuniform steht auf und winkelt lebhaft.*"
     },
     "classroom_dain_3": {
         "name": "Klassenlehrerin",
@@ -226,12 +226,12 @@
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Abseits vom lauten Treiben im Klassenzimmer blättert ganz hinten am Fenster nur die Schülerin mit silberweißem Haar im Frühlingslicht still eine Seite um.*"
+        "text": "*Abgesehen vom lauten Klassenraum blättert das Mädchen mit silberweißem Haar am letzten Platz am Fenster nur leise um eine Seite.*"
     },
     "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*Jemand aus der vorderen Reihe streift meinen Ärmel und flüstert: „Sprich sie nicht an. Die Gerüchte sind ziemlich unheimlich.“ Selbst da zucken Yunas weiße Fingerspitzen nicht und blättern nur die nächste Seite um.*"
+        "text": "*Ein Schüler in der ersten Reihe streift meinen Ärmel und flüstert: „Sprich nicht mit ihr. Die Gerüchte sind ziemlich gruselig.“ Selbst dann dreht Yuna mit ihren Fingerspitzen die nächste Seite um, ohne zu zucken.*"
     },
     "classroom_seat_1": {
         "name": "Klassenlehrerin",
@@ -239,7 +239,7 @@
     },
     "classroom_seat_2": {
         "name": "Dain",
-        "text": "Oh, direkt neben mir? Steh nicht so rum, komm her und setz dich! *Sie zieht den Stuhl dicht heran, setzt sich und dreht den Oberkörper ganz zu mir.*"
+        "text": "Oh, direkt neben mir? Steh nicht nur da. Setz dich! *Sie zieht ihren Stuhl heran und dreht ihren Oberkörper zu mir.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "classroom_dain_talk_2": {
         "name": "Dain",
-        "text": "Was der da sagt, ignorier das! Darf ich dich stattdessen eine Sache fragen? *Sie beugt sich so weit vor, dass ihr Oberkörper über die Kante meines Tischs kommt.*"
+        "text": "Ignoriere, was dieser Typ gesagt hat! Übrigens, kann ich dich etwas fragen? *Sie lehnt sich so weit vor, dass ihr Oberkörper über den Rand meines Schreibtisches ragt.*"
     },
     "classroom_dain_talk_3": {
         "name": "Dain",
@@ -287,15 +287,15 @@
     },
     "classroom_dain_talk_8": {
         "name": "Dain",
-        "text": "Na, willst du es zusammen versuchen? *Dains warmer Zeigefinger zeichnet auf die Holzmaserung meines Tischs schwungvoll einen kleinen Volleyballplatz und die Netzlinie.*"
+        "text": "Na, willst du es zusammen versuchen? *Dains Zeigefinger skizziert auf der Maserung meines Schreibtisches ein kleines Volleyballfeld und eine Netzlinie.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Da gleitet von hinten ein ordentlich gefalteter Zettel auf die Ecke meines Tischs. Als ich mich umdrehe, tut die Schülerin mit dem silberweißen Haar, als wäre sie es nicht gewesen, und sieht nur die schwankenden Äste draußen an.*"
+        "text": "*Eine gefaltete Notiz gleitet vom Platz hinter mir auf die Ecke meines Schreibtisches. Ich drehe mich um, aber das Mädchen mit silbernem Haar starrt nur aus dem Fenster, als wüsste sie nichts davon.*"
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*Ich falte ihn vorsichtig auf. Blasse hellviolette Tinte und eine kleine Falz an der Ecke kommen zum Vorschein.* Gleich am ersten Tag ein lauter Platz. — Yuna"
+        "text": "*Ich entfalte sie, und blasses lavendelfarbenes Tinte wird sichtbar, mit einer gefalteten Falte in der Ecke.* Gleich am ersten Tag ein lauter Platz. — Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
@@ -303,6 +303,6 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*Die Glocke zur 1. Stunde füllt das Klassenzimmer. Zwischen Yunas kühlem Profil zum Fenster und Dains Wärme, die ohne Pause plappert, begann mein erster Tag.*"
+        "text": "*Die erste Klingel füllt den Klassenraum. Zwischen Yunas kühlem Profil und Dains lebhaftem Geplaudere begann mein erster Tag.*"
     }
 }

@@ -1,7 +1,7 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Viernes por la noche. Llego agotado a mi habitación y, aún con el uniforme, cuelgo la mochila en el respaldo de la silla. La esquina del libro que sobresale lleva las marcas de tres días de dedos.*"
+        "text": "*Viernes por la noche. Agotada, llego a casa y cuelgo mi bolso del respaldo de la silla.*"
     },
     "night3_start_2": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*Es como si el aliento cálido de Seoyeon me rozara otra vez junto al oído. Leo despacio hasta la última línea y, al apagar la pantalla, en la habitación queda un resto agradable.*"
+        "text": "*Siento como si el cálido aliento de Seoyeon volviera a rozarme. Leo la última línea y apago la pantalla, dejando una impresión agradable.*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
@@ -33,7 +33,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Acaricio el cuaderno de cuero del escritorio y miro la última línea de las notas. Junto al cursor que parpadea parece que aún queda el calor de Yuna.*"
+        "text": "*Paso mi mano sobre el cuaderno de cuero del escritorio y miro la última línea de mis notas de lectura. El calor de Yuna todavía parece estar ahí.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -45,11 +45,11 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*Entre el «jaja» de broma y la frase de después, la de verdad, hay un hueco de 3 minutos. Vuelven nítidos la mano caliente de Dain agarrándome el hombro y el latido de su corazón.*"
+        "text": "*Una pausa de 3 minutos entre el juguetón \"jaja\" y la siguiente frase. El toque de Dain en mi hombro regresa, vívido.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Iba a apagar la lámpara y cojo el móvil otra vez. En los dedos sigue vivo lo cerca que estuvimos hoy después de clase, respirando al mismo ritmo.*"
+        "text": "*Empiezo a apagar la lámpara del escritorio, luego vuelvo a tomar mi celular. Qué cerca estuvimos después de la escuela, respirando uno al lado del otro, sigue vívido en mis dedos.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -57,37 +57,37 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Antes de dormirme, busco en lo hondo de la galería del móvil una foto de Sojeong de la escuela de antes y la mantengo pulsada.*"
+        "text": "*Antes de dormir, en la galería, encuentro una foto de Sojeong de mi escuela anterior y la mantengo presionada.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
-        "text": "*En la pantalla sale la ventana: «¿Desea eliminar esta foto?». El pulgar se me para justo encima del botón de eliminar.*"
+        "text": "*Aparece una confirmación: \"¿Eliminar esta foto?\" Mi pulgar se detiene sobre el botón de eliminar.*"
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*Me quedo mirando la luz azulada de la pantalla. Pasan, una tras otra, las pintadas feas que cubrían el pupitre de Sojeong y las mañanas en que yo, cobarde, aparté la mirada.*"
+        "text": "*El grafiti que cubría el escritorio de Sojeong cruza mi mente, junto con las mañanas en que me di la vuelta.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*En la ventana pulso Cancelar en silencio. Borrar una foto no hace desaparecer el hecho de que entonces huí.*"
+        "text": "*Toco Cancel en la confirmación. Borrar una foto no hará desaparecer el hecho de que me fui en aquel entonces.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*En vez del botón de eliminar, pulso el menú de mover y paso la foto a una carpeta nueva. El nombre lo escribo corto: «Registro».*"
+        "text": "*En lugar del botón de eliminar, toco Mover y pongo la foto en una carpeta nueva llamada 'Registro'.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*Dejo una nota corta debajo de la foto. La disculpa que al final no pude darle a Sojeong solo la puedo pagar siendo más sincero con quien está ahora a mi lado.*"
+        "text": "*La única manera de compensar la disculpa que nunca le di a Sojeong es ser honesto con la persona que está a mi lado ahora.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
-        "text": "*Dentro de la carpeta nueva, una foto se queda quieta en su sitio.*"
+        "text": "*Dentro de la carpeta nueva, una foto se asienta tranquilamente.*"
     },
     "night3_faithful_reflect_4_b": {},
     "night3_faithful_reflect_4_c": {},
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*Cierro la galería y pongo la alarma de mañana por la mañana. Incluso después de dejar el móvil, el calor que me rozó de día hace que el sueño no llegue fácil.*"
+        "text": "*Cierro la galería y pongo la alarma para mañana. El calor que me rozó durante el día me impide dormir fácilmente.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*Apago la luz de la habitación y me tumbo en la cama, pero el corazón me sube hasta la garganta y no puedo cerrar los ojos. En la oscuridad, solo la luz de la pantalla me quema la palma, fría.*"
+        "text": "*Apago la luz y me acuesto, pero mi corazón se hincha y no puedo cerrar los ojos. Solo la luz fría de la pantalla cae sobre mi palma.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*Me ahogo. Abro por turnos los chats de las tres, escribo respuestas que parecen excusas y las borro todas con retroceso.*"
+        "text": "*Abro los tres chats uno por uno, escribo respuestas que suenan a excusas, y luego borro cada una de ellas.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
@@ -196,15 +196,15 @@
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*Pasadas las 3 de la madrugada, sin haber pegado ojo, cierro la app de mensajes y abro la galería. Apoyo el pulgar, pesado, sobre la foto de Sojeong de la escuela de antes.*"
+        "text": "*Aún despierto después de las tres de la mañana, cierro la aplicación de mensajería y apoyo mi pulgar sobre la foto de Sojeong en la galería.*"
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*En la foto de grupo, Sojeong mira a la cámara sin fuerzas, y yo, justo a su lado, también entonces desvío la vista a otro lado, como si esquivara algo incómodo.*"
+        "text": "*En la foto grupal, Sojeong mira a la cámara sin fuerzas, y a mi lado estoy mirando hacia otro lado, como lo hice entonces, esquivando cualquier cosa difícil.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Recorro la lista de mensajes de arriba abajo. Junto al nombre de cada una queda clavada una herida distinta, como última frase.*"
+        "text": "*Escaneo la lista de mensajes. Junto a cada uno de los tres nombres, hay una herida diferente clavada.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "Minsu",
@@ -216,7 +216,7 @@
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*Quito la mano del botón de enviar y dejo el móvil boca abajo sobre el escritorio. No pienso zanjarlo con unas líneas: mañana me planto delante y respondo. Faltan tres horas para la alarma.*"
+        "text": "*Quito mi mano de Enviar y dejo el teléfono boca abajo. No voy a tapar esto con unas líneas de texto. Mañana me enfrentaré y responderé.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",

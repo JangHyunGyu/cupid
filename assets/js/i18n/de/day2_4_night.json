@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Nach der warmen Dusche schüttle ich das nasse Haar aus, und kaum liege ich im Bett, klingelt das Handy hintereinander. Die Benachrichtigungen von allen drei tauchen gleichzeitig auf.*"
+        "text": "*Nachdem ich geduscht und mich hingelegt hatte, gehen meine Telefonbenachrichtigungen nacheinander durch. Benachrichtigungen von allen dreien erscheinen gleichzeitig.*"
     },
     "night2_msg_1": {},
     "night2_msg_dain_specific": {
@@ -59,7 +59,7 @@
     "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Ich sehe abwechselnd die drei Chats an, die nebeneinander angekommen sind. Während ich zögere, wen ich zuerst antippe, sinkt oben der Akku um einen Balken.*"
+        "text": "*Ich sehe hin und her zwischen den drei Chats, die nebeneinander eingegangen sind. Ich zögere, welchen ich zuerst öffnen soll.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -143,11 +143,11 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Ich stecke mir die Ohrhörer in beide Ohren und drücke auf Wiedergabe. Hinter der tiefen, einsamen Klaviermelodie legt sich leise ein Schlagzeug wie ein Herzschlag darüber.*"
+        "text": "*Ich stecke Kopfhörer ein und drücke auf Play. Hinter der leisen Klavierweise schicht ein Trommeln wie ein Herzschlag ein.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*Der letzte Akkord verklingt mit langem Nachhall, und der Fortschrittsbalken auf dem Bildschirm bleibt still im letzten Abschnitt stehen.*"
+        "text": "*Der letzte Akkord klingt aus und der Fortschrittsbalken stoppt beim letzten Segment.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
@@ -185,23 +185,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Im schulischen Beratungssystem steht eine neue Meldung. „Eingewöhnungsgespräch für den Neuzugang abgeschlossen. Falls ein weiteres Gespräch nötig ist, die Sprechzeit der Klassenlehrerin oder eine Wee-Class-Reservierung nutzen.“*"
+        "text": "*In dem akademischen Beratungs-System erscheint eine neue Benachrichtigung. 'Erstberatung für den Austauschstudenten abgeschlossen. Für weitere Konsultationen nutzen Sie die Sprechstunden des Klassenlehrers oder buchen Sie einen Termin in der Schulberatungsstelle.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Direkt unter dem Namen der Klassenlehrerin stehen sorgfältig die Zeiten, in denen das Lehrerzimmer nach der Schule frei ist.*"
+        "text": "*Unter dem Namen des Klassenlehrers sind die Nachmittagszeiten angegeben, in denen das Lehrerzimmer frei ist.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Ich sehe mir unten auf dem Bildschirm an, wo die Schaltfläche für die Gesprächsreservierung sitzt, und schließe dann leise das Benachrichtigungsfenster.*"
+        "text": "*Ich überprüfe den Standort des Buttons zur Terminbuchung für die Beratung und schließe die Benachrichtigung.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*In der Gesundheits-App steht eine Meldung. „Eintrag des Krankenzimmers: Neuzugang — Schürfwunde am Ellbogen, leicht. Das wasserfeste Pflaster bis zum Schulbeginn morgen früh trocken halten. Wenn sich eine Ecke hebt oder Wundflüssigkeit durchsickert, sofort im Krankenzimmer wechseln lassen.“*"
+        "text": "*In der Gesundheits-App erscheint eine Benachrichtigung. 'Aufzeichnung der Krankenstation: Ellbogen-Schürfwunde (leicht). Halten Sie den wasserfesten Verband bis morgen vor der Schule. Wenn eine Ecke abhebt, lassen Sie ihn in der Krankenstation wechseln.'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Auf der Decke beuge ich den Ellbogen langsam einmal. Das Pflaster, das die Schulkrankenschwester entlang der Hautlinien geklebt hat, sitzt noch fest und hat sich kein Stück gehoben.*"
+        "text": "*Ich beuge meinen Ellbogen. Der Verband, den die Schulkrankenschwester angebracht hat, sitzt fest und hat sich nicht gelöst.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -209,52 +209,52 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Ich will auch den beiden übrigen antworten, da erstarrt der Finger. Diese Unruhe, niemanden enttäuschen zu wollen, der nach mir sucht, war an der alten Schule genau dieselbe.*"
+        "text": "*Ich gehe, um auf die anderen beiden zu antworten, und mein Finger klemmt. Dieses nervöse Gefühl, niemanden zu enttäuschen, ist ein Gefühl, das ich an meiner alten Schule hatte.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Ich scrolle im Fotoalbum ganz nach unten. Ein Foto vom Frühlingsausflug vor 3 Monaten. Sojeong lacht darauf hell neben meiner Schulter. Ab den Klassenzimmerfotos der Woche darauf steht ihr Tisch immer ein Stück weiter hinten. Der untere Teil der Tischplatte, auf dem gemeine Schmierereien standen, ist aus dem Bild geschnitten.*"
+        "text": "*Im Fotoalbum erscheint ein Foto vom Ausflug vor 3 Monaten. Sojeong lächelt neben mir, aber auf dem Foto, das die Woche danach aufgenommen wurde, ist Sojeongs Schreibtisch zurückgeschoben und der Schreibtisch mit Graffiti ist herausgeschnitten.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Sätze, bei denen ich den Senden-Knopf nicht über mich gebracht habe, stehen im Notizblock des Handys wie Narben in einer Reihe. „Frau Lehrerin, auf Sojeongs Tisch—“ „Heute auch die anderen—“ Alle brechen ab, ohne auch nur die erste Zeile zu Ende zu bringen. Die letzte Änderung bleibt bei 2:17 Uhr nachts stehen.*"
+        "text": "*Sätze, die ich nicht senden konnte, stehen in den Notizen des Telefons. 'Klassenlehrer, an Sojeongs Schreibtisch—' 'Auch heute, die Kinder—' Alle brechen in der ersten Zeile ab, und die letzte Bearbeitung ist um 2:17 Uhr morgens.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*Die 38. Entwurfsnotiz ist der letzte Satz. Darunter hat die 39. nicht einmal einen Titel. Sojeongs Platz blieb bis zur Morgenrunde am nächsten Tag doch leer, und die Klassenlehrerin sagte nur kurz, Sojeong habe die Schule gewechselt.*"
+        "text": "*Der 38. gespeicherte Entwurf ist der letzte. Sojeongs Platz blieb bis zur letzten Stunde des nächsten Tages leer, als unser Lehrer nur kurz sagte, dass sie gewechselt sei.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*Ich setze den zitternden Daumen auf das Papierkorbsymbol unter dem Foto, bringe es nicht über mich zu drücken und schalte den Bildschirm aus.*"
+        "text": "*Ich lege meinen zitternden Daumen auf das Papierkorb-Löschen-Symbol, aber ich kann es nicht drücken und den Bildschirm ausschalten.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*In der wieder geöffneten Messenger-Liste stehen die Namen der beiden, denen ich noch nicht geantwortet habe, still da, jeder mit einer 1.*"
+        "text": "*In der Messenger-Liste, nachdem ich ihn wieder eingeschaltet habe, bleiben die Namen der beiden, auf die ich nicht geantwortet habe, mit einer '1' daneben stehen.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Ich öffne Sojeongs Foto, das ich gerade geschlossen habe, noch einmal. Nebeneinander stehend lächle ich in die Kamera vor mir, aber Sojeongs Augen waren auch damals auf mein Profil gerichtet.*"
+        "text": "*Ich öffne das Foto, das ich gerade geschlossen habe. Ich lächele direkt nach vorne, während Sojeong neben mir mein Profil ansieht.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*In der Brust wird es schwer, und die beiden übrigen Antworten bringe ich am Ende kein einziges Zeichen zu Papier.*"
+        "text": "*Ein schweres Gefühl setzt in einer Ecke meiner Brust ein, und am Ende kann ich keine Antwort an die anderen beiden schreiben.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Auf dem Sperrbildschirm liegen die Namen der drei untereinander. Ich lese die noch warmen Benachrichtigungen nur mit den Augen, dann schalte ich den Bildschirm aus und wieder ein.*"
+        "text": "*Drei Namen sind nebeneinander auf dem Sperrbildschirm aufgelistet. Ich lese die Benachrichtigungen nur mit den Augen und schalte den Bildschirm aus.*"
     },
     "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Auch nachdem das Display ganz erloschen ist, lasse ich das noch lauwarme Handy eine ganze Weile nicht los.*"
+        "text": "*Selbst nachdem das Licht aus ist, kann ich das Telefon lange nicht loslassen.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Ich kann nicht schlafen, gehe in die Küche und mache Licht. Den übrigen Reis, die Eier und den gerösteten Seetang nehme ich heraus und lege sie neben die Lunchbox für morgen.*"
+        "text": "*Ich kann nicht schlafen, also schalte ich das Licht in der Küche ein. Neben der Brotdose für morgen lege ich Reis, Eier und Nori bereit.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Die mit ungeschickten Händen gebratene Eierrolle, die Würstchen, den Seetang und den Reis packe ich Schicht für Schicht in die Lunchbox und stelle sie hinten in den Kühlschrank.*"
+        "text": "*Mit ungeschickten Händen lege ich das gerollte Omelett, die Würstchen und den Reis in die Brotdose und stelle sie in den Kühlschrank.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
@@ -374,7 +374,7 @@
     },
     "night2_reply_seo_react_neg": {
         "name": "Seoyeon",
-        "text": "Bis morgen. *Kaum ist die Nachricht raus, wird sie trocken als gelesen markiert.*"
+        "text": "Bis morgen. *Sobald die Antwort gesendet ist, wird sie sofort als gelesen markiert und es kommt nur eine trockene Begrüßung zurück.*"
     },
     "night2_reply_yuna_react_neg": {
         "name": "Yuna",

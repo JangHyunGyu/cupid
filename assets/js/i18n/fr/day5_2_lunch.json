@@ -69,7 +69,7 @@
     },
     "tour_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Après avoir fait le tour, côte à côte, de la cour bordée de stands de la fête, nous montons l'escalier familier et ouvrons la porte du toit. Seoyeon pose doucement la main sur la rambarde tiédie par le soleil.* Même à la pause déjeuner, le jour de la fête de l'école, l'endroit où on finit par venir tous les deux, c'est ici."
+        "text": "*Après un tour du campus bordé de stands de festival, j'ouvre la porte du toit. Seoyeon pose doucement sa main sur la rambarde.* Même à la pause déjeuner, le jour de la fête de l'école, l'endroit où on finit par venir tous les deux, c'est ici."
     },
     "tour_seo_end": {
         "name": "{name}",
@@ -105,7 +105,7 @@
     },
     "tour_yuna_6": {
         "name": "Yuna",
-        "text": "*Un très léger sourire se dessine sur les lèvres de Yuna. Elle sort un nouveau carnet de son sac et le pose sur ses genoux.* Les phrases que j'avais écrites, je les ai reprises et recopiées au propre dans un nouveau carnet. Il reste des traces de corrections à côté, alors les marges sont encore un peu en désordre."
+        "text": "*Yuna prend un nouveau carnet dans son sac et le pose sur ses genoux.* J'ai copié les phrases que j'écrivais soigneusement dans un nouveau carnet. Les marques de révision sont toujours là, donc les marges sont un peu en désordre."
     },
     "tour_yuna_7": {
         "name": "Yuna",
@@ -153,7 +153,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "T'es venu ! Aujourd'hui, j'ai pas envie de suer en tapant dans le ballon. Je veux juste traîner avec toi, tous les deux. Tu comptes pas déjà retourner en classe, hein ? *Dain coince un ballon de volley sous le bras et me fait signe, radieuse, au milieu du terrain.*"
+        "text": "Tu es là ! Aujourd'hui, je préfère juste traîner avec toi plutôt que jouer au ballon. *Avec un ballon de volley sous le bras, Dain salue vivement au milieu du terrain.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -274,11 +274,11 @@
     },
     "tour_seo_event_5": {
         "name": "Seoyeon",
-        "text": "*Jusqu'à ce que le dos de Haeun, qui court d'un pas décidé, tourne au coin, Seoyeon ne la suit pas, inquiète. Un souffle devenu bien plus léger passe sur les lèvres de Seoyeon.* ...C'est vrai. Ce n'est pas parce qu'une chose ne passe pas directement par mes mains que le monde va s'écrouler."
+        "text": "*Jusqu'à ce que Haeun tourne le coin, Seoyeon ne la poursuit pas par inquiétude.* ...C'est vrai. Ce n'est pas parce qu'une chose ne passe pas directement par mes mains que le monde va s'écrouler."
     },
     "tour_yuna_event_1": {
         "name": "{name}",
-        "text": "*En sortant dans le couloir devant l'annexe, je vois deux cadets plantés côte à côte devant le panneau d'exposition du club de littérature. Du doigt, ils suivent la nouvelle que Yuna a affichée sans nom, et ils chuchotent pour savoir où lire la suite.*"
+        "text": "*Deux élèves plus jeunes se tiennent devant le tableau d'affichage du club de littérature à l'extérieur de l'annexe. En pointant le court récit non signé de Yuna, ils chuchotent sur l'endroit où ils peuvent lire la suite.*"
     },
     "tour_yuna_event_2": {
         "name": "{name}",
@@ -290,11 +290,11 @@
     },
     "tour_yuna_event_4": {
         "name": "{name}",
-        "text": "*Yuna sort de sa poche un stylo-plume mauve pâle et inscrit, dans la marge vide sous le titre, les trois caractères de son nom. « Choi Yuna ». Le bout de ses doigts tremble, et le dernier caractère penche à peine vers la droite.*"
+        "text": "*Yuna prend un stylo-plume violet pâle et écrit les trois caractères de son nom dans l'espace vide sous le titre. \"Choi Yuna.\" Le dernier caractère est un peu penché.*"
     },
     "tour_yuna_event_5": {
         "name": "Yuna",
-        "text": "*Yuna referme le capuchon du stylo-plume, se détourne du panneau et rentre dans l'annexe. Au passage, une voix basse, qui chatouille, se pose contre mon oreille.* ...La vraie fin, je te la montrerai avant tout le monde. À toi seul."
+        "text": "*Yuna ferme son stylo-plume et retourne dans l'annexe. Une voix basse se pose près de mon oreille alors qu'elle passe.* ...La vraie fin, je te la montrerai avant tout le monde. À toi seul."
     },
     "tour_dain_event_1": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "tour_dain_event_2": {
         "name": "Dain",
-        "text": "*Dain me jette un regard, puis prend la parole d'une voix qui ne tremble pas.* Coach, aujourd'hui je ne jouerai pas le match de démonstration. Je l'ai dit de ma bouche à maman, ce matin. Par contre, si le micro de retransmission du banc central est libre, je m'en charge !"
+        "text": "*Dain me regarde et parle d'une voix posée.* Coach, je ne jouerai pas dans le match d'exhibition aujourd'hui. Je l'ai dit à Maman ce matin aussi. Je prendrai le micro de commentaire dans le box des officiels à la place !"
     },
     "tour_dain_event_3": {
         "name": "{name}",
@@ -314,7 +314,7 @@
     },
     "tour_dain_event_5": {
         "name": "Dain",
-        "text": "*Sous les rires et les applaudissements qui montent au pied de la tribune, Dain coupe le micro et descend l'escalier en reprenant son souffle, soulagée.* ...Même sans courir moi-même sur le terrain, j'ai tant de choses à dire. C'est bien plus amusant que je ne le pensais."
+        "text": "*Sous les applaudissements qui montent du box, Dain éteint le micro et reprend son souffle en descendant.* ...Même sans courir sur le terrain, j'ai au moins ça à dire. C'est beaucoup plus amusant que je ne le pensais."
     },
     "tour_seo_affinity_check": {},
     "tour_seo_affinity_80": {
@@ -364,7 +364,7 @@
     },
     "day5_haeun_high_clasp": {
         "name": "Haeun",
-        "text": "Ah, ne bougez pas, juste un instant. On dirait que le fermoir de mon bracelet s'est accroché au bouton de votre manche. *Elle pose la caisse devant la porte de la salle radio, et Haeun baisse la tête tout près de ma poitrine pour défaire la chaîne argentée emmêlée. À cet instant, les pas de quelqu'un qui traversait le couloir s'arrêtent net à côté de nous.*"
+        "text": "Ah, sunbae, s'il vous plaît, ne bougez pas une seconde. Je crois que le fermoir de mon bracelet s'est accroché au bouton de votre manche. *Haeun pose la boîte et baisse la tête pour défaire le collier. Juste à ce moment-là, quelqu'un passant dans le couloir s'arrête à côté de nous.*"
     },
     "day5_haeun_explain_choice": {
         "name": "{name}",
@@ -384,11 +384,11 @@
     },
     "day5_haeun_defends": {
         "name": "Haeun",
-        "text": "Euh, c'est moi qui ai demandé de l'aide en premier. Avec lui, je peux parler sans me gêner. *Haeun tire la caisse de documents, au sol, tout contre ses pieds.* On n'a vraiment rien fait qui puisse prêter à malentendu. …Non, ce n'est pas ça. Pourquoi, une fois que je l'ai dit moi-même, ça sonne encore plus comme une excuse bizarre ?"
+        "text": "J'ai demandé de l'aide en premier. *Haeun tire la boîte de documents pour se lever.* Nous n'avons vraiment rien fait qui puisse être mal interprété. ...Non. Pourquoi ça sonne encore plus comme une excuse étrange maintenant que je l'ai dit moi-même ?"
     },
     "day5_haeun_waver_1": {
         "name": "Haeun",
-        "text": "*Une fois la situation passée, Haeun regarde ses paumes vides, puis tripote longtemps seulement le fermoir du bracelet à son poignet.* Tout à l'heure, j'ai bien dit que ce n'était rien. C'est clairement vrai, et pourtant... Cette phrase d'avant, quand je disais que je vous soutenais tous les deux, me reste coincée dans la gorge. Je vais juste continuer à faire semblant de ne rien voir, et la ravaler."
+        "text": "*Une fois le moment passé, Haeun tripote le fermoir de son bracelet au poignet.* Sunbae, ce que j'ai dit avant sur le fait de vous encourager tous les deux me coince dans la gorge. Je vais juste continuer à faire semblant de ne pas le remarquer et l'avaler."
     },
     "day5_haeun_waver_choice": {
         "name": "Haeun",
@@ -427,7 +427,7 @@
     },
     "day5_haeun_low_apology": {
         "name": "Haeun",
-        "text": "*Je m'excuse poliment de l'attitude qui l'a mise mal à l'aise lors de notre dernière conversation, et je dis que je l'aiderai jusqu'au bout du contrôle. Haeun observe mes yeux un instant, puis déplie avec précaution la fiche de contrôle.* ...J'ai bien entendu tes excuses. Alors, cette zone, on la vérifie ensemble en commençant par ici, s'il te plaît."
+        "text": "*Je m'excuse pour l'attitude qui l'a mise mal à l'aise la dernière fois que nous avons parlé, et je dis que je vais aider à terminer l'inspection. Haeun étudie mes yeux un instant, puis ouvre la liste de contrôle.* ...J'ai entendu tes excuses. Alors, s'il te plaît, vérifie cette section avec moi, en commençant ici."
     },
     "day5_haeun_low_work": {
         "name": "{name}",
@@ -578,7 +578,7 @@
     },
     "day5_haeun_concern_clarify": {
         "name": "Haeun",
-        "text": "Euh, je n'ai absolument pas inventé des paroles qui n'existaient pas pour te faire passer pour quelqu'un de mauvais. J'ai simplement dit ce qui m'a mise mal à l'aise et déstabilisée, pendant la conversation de ce jour-là. *Haeun pose les yeux sur les miens, avec précaution.* Si j'ai compris ton intention de travers, dis-le ici, toi-même, s'il te plaît."
+        "text": "Je n'inventais rien pour te faire passer pour quelqu'un de mal, sunbae. J'ai juste dit ce qui m'a semblé inconfortable quand nous avons parlé ce jour-là. *Haeun regarde dans mes yeux.* Si j'ai mal interprété ce que tu voulais dire, s'il te plaît, dis-le-moi ici."
     },
     "day5_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
@@ -706,7 +706,7 @@
     },
     "day5_haeun_concern_nurse_group_talk": {
         "name": "Infirmière",
-        "text": "*L'infirmière observe d'abord l'état de Haeun, puis se tourne vers moi.* Je ne pensais pas entendre parler de toi dans un moment comme celui-ci. Je veux aussi entendre de ta bouche pourquoi Haeun se fait autant de souci. Qu'est-ce que tu as dit, à ce moment-là ?",
+        "text": "*L'infirmière observe d'abord l'état de Haeun, puis se tourne vers moi.* Je ne m'attendais pas à entendre parler de toi à un moment comme celui-ci. Je veux aussi entendre de toi pourquoi cela pèse sur Haeun. Qu'as-tu dit alors ?",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois sont dans le couloir. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
         "personality": "Haeun reste polie et distingue les paroles entendues de son interprétation. Les qualificatifs effrayant ou étrange nécessitent des éléments dans la conversation antérieure. L’autre personne écoute avec sa voix propre et son affinité actuelle, sans tenir le récit de Haeun pour une vérité établie. Laisse la place aux explications ; elles peuvent lever le malentendu ou montrer une responsabilité. N’efface pas un tort réel sous prétexte de malentendu et n’impose pas d’excuses. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle.",

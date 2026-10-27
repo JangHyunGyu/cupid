@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Je finis ma douche à l'eau chaude, je secoue mes cheveux mouillés et, à peine allongé sur le lit, le téléphone sonne coup sur coup : les notifications des trois s'affichent en même temps.*"
+        "text": "*Après avoir pris une douche et m'être allongé, mon téléphone sonne l'un après l'autre. Les notifications des trois apparaissent en même temps.*"
     },
     "night2_msg_1": {},
     "night2_msg_dain_specific": {
@@ -59,7 +59,7 @@
     "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Je parcours des yeux les trois conversations arrivées côte à côte. Le temps d'hésiter sur laquelle ouvrir en premier, la barre de batterie en haut perd un cran.*"
+        "text": "*Je regarde les trois discussions qui sont arrivées côte à côte, d'un regard à l'autre. J'hésite sur laquelle ouvrir en premier.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -143,11 +143,11 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Je mets les écouteurs dans les deux oreilles et j'appuie sur lecture. Derrière le piano, bas et un peu triste, une batterie comme un battement de cœur se superpose en silence.*"
+        "text": "*Je mets mes écouteurs et je lance la lecture. Derrière la mélodie de piano douce, un rythme de batterie semblable à un battement de cœur s'ajoute.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*Le dernier accord s'éteint en laissant un long écho, et la barre de lecture à l'écran s'immobilise sur la dernière case.*"
+        "text": "*Le dernier accord s'estompe, et la barre de progression s'arrête sur le segment final.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
@@ -185,23 +185,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Une nouvelle notification s'affiche dans le système de conseil scolaire. « Entretien d'adaptation initiale de l'élève transféré terminé. Si un entretien supplémentaire est nécessaire, utiliser les heures de permanence de la professeure principale ou prendre rendez-vous au service d'orientation. »*"
+        "text": "*Une nouvelle notification apparaît dans le système de conseil académique. 'Conseil initial pour l'étudiant transféré terminé. Pour toute consultation supplémentaire, veuillez utiliser les heures de conseil de classe ou réserver un créneau au centre de conseil de l'école.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Juste sous le nom de la professeure principale, les créneaux d'après les cours où la salle des professeurs est libre sont notés avec soin.*"
+        "text": "*Sous le nom de l'enseignant de classe, on lit les heures après les cours où le bureau du personnel est libre.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Je repère du regard le bouton de réservation, en bas de l'écran, puis je ferme la notification sans bruit.*"
+        "text": "*Je vérifie l'emplacement du bouton de réservation du conseil et je ferme la notification.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Une notification s'affiche dans l'application santé. « Dossier de l'infirmerie : élève transféré — écorchure au coude (légère). Jusqu'à l'arrivée au lycée demain matin, garder le pansement étanche au sec. Si un bord se soulève ou si du liquide suinte, le faire remplacer immédiatement à l'infirmerie. »*"
+        "text": "*Une notification apparaît dans l'application de santé. 'Dossier du bureau de l'infirmière : Éraflure au coude (mineure). Gardez le pansement étanche jusqu'à demain avant l'école. Si un coin se soulève, faites-le remplacer au bureau de l'infirmière.'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Sur la couverture, je plie lentement le coude une fois. Le pansement que l'infirmière a collé dans le sens de la peau ne se soulève pas du tout. Il tient encore bien.*"
+        "text": "*Je plie mon coude. Le pansement que l'infirmière de l'école m'a mis est bien serré et ne s'est pas décollé.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -209,52 +209,52 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Je m'apprête à répondre aussi aux deux autres, et mon doigt se fige. Cette hâte anxieuse de ne décevoir personne qui vient me chercher, je l'avais déjà ressentie, exactement pareille, dans mon ancien lycée.*"
+        "text": "*Je vais répondre aux deux autres, et mon doigt se bloque. Cette agitation anxieuse de ne décevoir personne est un sentiment que j'ai ressenti dans mon ancienne école.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Je fais défiler l'album jusqu'en bas : une photo de la sortie de printemps, il y a 3 mois. Sur la photo, Sojeong sourit, lumineuse, juste à côté de mon épaule. Mais à partir de la photo de classe de la semaine suivante, son bureau recule un peu plus à chaque fois. Le bas du plateau, là où les graffitis méchants étaient écrits, est coupé hors du cadre.*"
+        "text": "*Dans l'album photo, une photo de sortie scolaire du printemps d'il y a 3 mois apparaît. Sojeong sourit à mes côtés, mais sur la photo prise la semaine suivante, le bureau de Sojeong est repoussé et le bureau avec des graffitis est coupé.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Les phrases que je n'ai pas pu me résoudre à envoyer restent alignées dans les notes du téléphone, comme des cicatrices. « Madame, sur le bureau de Sojeong— » « Aujourd'hui encore, les autres— » Toutes s'arrêtent sans même finir la première ligne. La dernière modification est figée à 2 h 17 du matin.*"
+        "text": "*Les phrases que je n'ai pas pu envoyer sont alignées dans les notes du téléphone. 'Professeur de classe, sur le bureau de Sojeong—' 'Aujourd'hui aussi, les enfants—' Tout s'arrête à la première ligne, et la dernière modification date de 2h17 du matin.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*La 38e note en brouillon est la dernière phrase. Juste en dessous, la 39e n'a même pas de titre. La place de Sojeong est restée vide jusqu'à l'appel du lendemain matin, et la professeure principale n'a dit, brièvement, que Sojeong avait changé d'établissement.*"
+        "text": "*Le 38e brouillon enregistré est le dernier. La place de Sojeong est restée vide jusqu'à la dernière période de cours du lendemain, lorsque notre professeur a seulement brièvement dit qu'elle était partie.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*Je pose mon pouce tremblant sur l'icône de la corbeille, sous la photo. Je n'ose pas appuyer, et j'éteins l'écran.*"
+        "text": "*Je pose mon pouce tremblant sur l'icône de suppression dans la corbeille, mais je n'arrive pas à appuyer dessus et à éteindre l'écran.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Dans la messagerie que je rallume, les noms des deux personnes à qui je n'ai pas encore répondu restent là, immobiles, chacun avec un 1.*"
+        "text": "*Dans la liste des messageries après l'avoir rallumé, les noms des deux personnes auxquelles je n'ai pas répondu conservent un '1' à côté d'eux.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Je rouvre encore une fois la photo de Sojeong que je viens de fermer. Debout à côté d'elle, je souris face à l'objectif, mais les yeux de Sojeong, déjà à ce moment-là, étaient tournés vers mon profil.*"
+        "text": "*Je rouvre la photo que je viens de fermer. Je souris droit devant, tandis que Sojeong à mes côtés regarde mon profil.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Un poids s'installe dans un coin de la poitrine, et au final je n'arrive pas à écrire une seule lettre des deux autres réponses.*"
+        "text": "*Un sentiment lourd s'installe dans un coin de ma poitrine, et au final, je ne peux pas écrire de réponse aux deux autres.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Sur l'écran verrouillé, les noms des trois sont empilés côte à côte. Je lis lentement, des yeux seulement, les notifications encore tièdes, puis j'éteins l'écran et je le rallume.*"
+        "text": "*Trois noms sont empilés côte à côte sur l'écran de verrouillage. Je lis les notifications sans les regarder et j'éteins l'écran.*"
     },
     "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Même une fois la lumière de l'écran complètement éteinte, je n'arrive pas, pendant un long moment, à lâcher le téléphone encore tiède.*"
+        "text": "*Même après avoir éteint la lumière, je ne peux pas lâcher le téléphone pendant longtemps.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Le sommeil ne vient pas. Je sors dans la cuisine et j'allume la lumière. À côté de la boîte-repas pour demain, je pose côte à côte le riz qui reste, des œufs et des algues grillées.*"
+        "text": "*Je ne peux pas dormir, alors j'allume la lumière de la cuisine. À côté la boîte à lunch pour demain, je dispose le riz, les œufs et les algues.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*De gestes maladroits, je tasse dans la boîte-repas l'omelette roulée que je viens de cuire, les saucisses, les algues et le riz, puis je la range au fond du frigo.*"
+        "text": "*Avec des mains maladroites, je mets l'omelette roulée, les saucisses et le riz dans la boîte à lunch et je la mets au réfrigérateur.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
@@ -374,7 +374,7 @@
     },
     "night2_reply_seo_react_neg": {
         "name": "Seoyeon",
-        "text": "À demain. *À peine le message envoyé, il est marqué comme lu, tout sec.*"
+        "text": "À demain. *Dès que la réponse est envoyée, elle est immédiatement marquée comme lue, et seule une salutation sèche revient.*"
     },
     "night2_reply_yuna_react_neg": {
         "name": "Yuna",

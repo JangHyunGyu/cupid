@@ -13,7 +13,7 @@
     },
     "date_seo_1": {
         "name": "{name}",
-        "text": "Hast du lange gewartet? Ohne Schuluniform und Klemmbrett wirkst du wie eine andere Person. *Vor der Bank, an der die Tropfen des Brunnens im Sonnenlicht zerbrechen, steht Seoyeon in einem weichen elfenbeinfarbenen Strickcardigan und einem leichten Rock. Unter dem runden Ausschnitt zeigen sich das helle Schlüsselbein und die schmale Linie ihres Halses, und um die angespannten Finger ist der Lederriemen der Umhängetasche straff gewickelt.*"
+        "text": "Hast du lange gewartet? Ohne Schuluniform und Klemmbrett wirkst du wie eine andere Person. *Vor dem Brunnen steht Seoyeon in einem cremefarbenen Strickcardigan und einem hellen Rock, sie hält den Riemens ihres Crossbody-Rucksacks.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
@@ -26,7 +26,7 @@
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "Wenn du gleich beim Treffen so direkt kommst, weiß ich doch nicht, was ich antworten soll. *Über Seoyeons Wangen zieht ein blasses Rosa, und der fest umklammerte Taschenriemen lockert sich langsam.* Aber mir geht es gut dabei, also kommt erst mal ein Lächeln."
+        "text": "Wenn du mich so ansprichst, sobald wir uns treffen, weiß ich nicht, was ich sagen soll. *Ein rosiger Schimmer breitet sich auf Seoyeons Wangen aus, und der Riemens ihres Rucksacks lockert sich.* Aber mir geht es gut dabei, also kommt erst mal ein Lächeln."
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
@@ -34,7 +34,7 @@
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*Als wollte sie die heißen Wangen abkühlen, dreht sie den Blick schräg zum Wasserstrahl des Brunnens, rückt aber nicht von meiner Seite.* Stehen wir nicht hier. Gehen wir den Spazierweg entlang und holen uns etwas Luft."
+        "text": "*Als ob sie ihre geröteten Wangen abkühlen wollte, wendet sie ihren Blick dem Brunnen zu, bleibt aber nicht an meinem Platz.* Stehen wir nicht hier. Gehen wir den Spazierweg entlang und holen uns etwas Luft."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -46,7 +46,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "Was du eben gesagt hast, hab ich trotzdem ganz gehört. Nur weil ich mich geschämt habe und nicht gleich antworten konnte, nimmst du das nicht zurück. *Rot bis an den Ohrrand schiebt sie die heruntergerutschten Seitenhaare hinters Ohr. Das helle Handgelenk aus dem Cardiganärmel streift ganz knapp meinen Arm.*"
+        "text": "Ich habe alles gehört, was du gerade gesagt hast. Du kannst es nicht einfach zurücknehmen, nur weil ich nicht sofort antworten konnte. *Rot bis zu ihren Ohren, steckt sie ihr Haar hinter ein Ohr. Ihr blasses Handgelenk streift meinen Arm.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -58,7 +58,7 @@
     },
     "date_seo_walk": {
         "name": "{name}",
-        "text": "*Wir gehen im gleichen Schritt den Seeweg im Park entlang. Bei jedem Schritt streift der Saum von Seoyeons Rock weich mein Hosenbein, und wir werfen den Enten am Wasser kleine Brotstücke zu.*"
+        "text": "*Wir gehen Schritt für Schritt auf dem Weg am See entlang. Seoyeons Rock streift vorbei, als wir Brotwürfel den bei dem Wasser versammelten Enten werfen.*"
     },
     "date_seo_duck": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "Wie findest du diesen runden Topf? *Mit dem hellen Klingeln der Türglocke schlagen feuchter Erdgeruch und Blütenduft entgegen. Im schmalen Gang am Regal steht Seoyeon so dicht, dass sie meine Schulter berührt, und hebt einen Sukkulententopf hoch, kaum größer als eine Handfläche.*"
+        "text": "Wie findest du diesen runden Topf? *Die Tür klingelt und der Duft von Blumen erreicht uns. Im schmalen Gang steht Seoyeon nah genug an mir, um meine Schulter zu berühren, als sie einen Topf Sukkulenten hochhebt.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -98,11 +98,11 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "Hier, nimm sie mit beiden Händen. Dass ich sie wieder holen würde, heißt nicht, dass ich sie dir nicht geben will. Du sollst nur oft an mich denken. *Die warmen, weichen Finger, mit denen Seoyeon den kleinen Sukkulententopf reicht, legen sich um meine Handfläche und das Handgelenk und lösen sich dann langsam.*"
+        "text": "Hier. Nimm es mit beiden Händen. Es bedeutet, an mich oft zu denken. *Als Seoyeon mir den Topf mit Sukkulenten reichte, umschließen ihre warmen Finger meine Handfläche für einen Moment, bevor sie sich zurückzieht.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
-        "text": "*Wir verlassen den Blumenladen und gehen nebeneinander die baumgesäumte Straße vor dem Park entlang. In einer Hand der Topf, der andere Handrücken schwingt so nah an Seoyeons, dass sie sich fast berühren.*"
+        "text": "*Wir verließen den Blumenladen und gingen Seite an Seite die von Bäumen gesäumte Straße vor dem Park entlang. Der Topf ist in einer Hand. Die Rückseite meiner anderen Hand schwingt nahe an Seoyeons Rücken, fast berührend.*"
     },
     "date_seo_end_c": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Im Schatten der Caféterrasse vor dem Bahnhof fällt Yuna sofort ins Auge. Über dem schwarzen Kleid, das ihrer Figur weich folgt, treten das helle Schlüsselbein und das dunkle Tattoo an der Schulter viel klarer hervor als in der Schuluniform.* Hast du lange gewartet?"
+        "text": "*Yuna taucht plötzlich auf und steht auf der Café-Terrasse vor dem Bahnhof. Unter ihrem schwarzen Kleid sind ihre blasse Schlüsselbeinknochen und die Tätowierung auf ihrer Schulter deutlich zu sehen.* Hast du lange gewartet?"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "Wenn du das so plötzlich sagst, fällt mir gerade nichts anderes mehr ein. In meinem Kopf hallt nur noch, was du eben gesagt hast. *Yuna senkt den Blick auf den Rand des Bechers. Das silberweiße Haar fällt herab und legt sich um die gerötete Wange und den schmalen Nacken.*"
+        "text": "Das so aus heiterem Himmel zu sagen, lässt mich nicht mehr an etwas anderem denken. *Yuna senkt ihren Blick auf den Rand der Tasse. Silberweiße Haare umrahmen ihre gerötete Wange.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -179,7 +179,7 @@
     },
     "date_yuna_earphone": {
         "name": "Yuna",
-        "text": "Ich hab dich nicht hergeholt, nur damit du dir Bücher ansiehst. Dieses Stück wollte ich heute auch neben dir hören. *Yuna holt Kabelkopfhörer aus der Tasche und steckt mir den linken Hörer selbst ins Ohr. Die kalten Fingerspitzen streifen mein Ohrläppchen und die Kieferlinie und hinterlassen einen süßen Nachduft.*"
+        "text": "Ich wollte dir nicht nur Bücher zeigen. Ich wollte dieses Lied auch neben dir hören. *Yuna nimmt kabellose Kopfhörer und steckt selbst den linken Ohrhörer in mein Ohr. Ihre kalten Fingerspitzen berühren meine Ohrläppchen.*"
     },
     "date_yuna_earphone_2": {
         "name": "Yuna",
@@ -191,7 +191,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*Damit das kurze Kopfhörerkabel nicht straff wird, setzt sich Yuna auf der Eckbank dicht neben mich. Ihre nackte Schulter, die aus dem schwarzen Kleid ragt, liegt an meinem Arm, und ihr warmer Atem mit Shampooduft trifft voll meinen Nacken.*"
+        "text": "*Da das Kopfhörerkabel nicht fest sitzt, sitzt Yuna direkt an mir. Yunas Schulter berührt meinen Arm und ihr warmer Atem streichelt meinen Nacken.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -227,11 +227,11 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*Ich spüre die Wärme, die auf der Handfläche geblieben ist, und falte den Zettel auf. Darauf steht: „Heute habe ich viel mehr geredet als sonst. Wohl weil ich bei dir war.“ Die hellviolette Füllertinte verläuft am letzten Buchstaben ganz leicht, so fern wie Yunas Gefühl.*"
+        "text": "*Die entrollte Notiz lautet: „Ich habe heute viel mehr geredet als sonst. Vielleicht liegt es daran, dass ich bei dir war.“ Die lavendelfarbene Tinte hat an der Spitze des letzten Buchstabens verschmiert.*"
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Wochenendmorgen vor der Turnhalle. Dain in einem leichten, kurzen Trainingszipper, einem ärmellosen Top und einer tief aufgesetzten Kappe winkt schon von weitem kräftig. In den Alltagssachen fallen die straffe Taille und die langen Beine ins Auge, noch stärker aber die schwarze Bandage am rechten Knie.*"
+        "text": "*Vor der Sporthalle. Dain, in einer kurzen Trainingsjacke und einer tiefgezogenen Mütze, winkte aus der Ferne. Die schwarze Schiene um ihr rechtes Knie zieht die Blicke auf sich.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -257,7 +257,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "Moment, du nimmst mich doch nicht auf den Arm? Es geht nur um die Kappe, aber wenn du das mit so einem Blick sagst, bleibt mir plötzlich die Luft weg. *Dain zieht den Schirm der Kappe mit beiden Händen tief herunter und verdeckt die Hälfte ihres geröteten Gesichts.*"
+        "text": "Warte, du machst das nicht nur zum Spaß, oder? Wenn du mich so ansiehst und das sagst, stockt mir der Atem. *Dain zieht den Schirm ihrer Mütze herunter und verbirgt ihr gerötetes Gesicht.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -269,7 +269,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "Glaubst du, nur weil es stimmt, darfst du mich so anstarren und das sagen? Ah, ich meine auf keinen Fall, dass ich es nicht hören will! Wenn du mich so ansiehst, schäme ich mich so, dass ich keinen Schritt mehr kann. *Unter dem Schirm sind das Ohrläppchen und sogar der helle Nacken knallrot. Dains Fingerspitzen, die nicht weiterwissen, fassen kurz meinen Ärmel und lassen wieder los.*"
+        "text": "Wenn du das sagst, während du mich direkt ansiehst, werde ich so verlegen, dass ich mich nicht bewegen kann! *Sogar ihr Ohrläppchen, das unter dem Schirm sichtbar ist, ist leuchtend rot. Dain berührt leicht und lässt dann meinen Ärmel los.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
@@ -297,11 +297,11 @@
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "Klar doch, ohne Wette, wo bleibt da der Spaß! Sei auf Zack!"
+        "text": "Natürlich. Was macht der Spaß ohne einen Einsatz? Bleib wachsam!"
     },
     "date_dain_arcade_3_b": {
         "name": "Dain",
-        "text": "Hier darfst du den Takt im Highlight nicht verpassen! *Vor einem Gerät mit Knöpfen für die Hände, keinem schmalen Tanzpad, drückt Dain ihren Arm fest an meinen und schlägt die Noten blitzschnell. Bis zum letzten Ton hält die Kombo perfekt.*"
+        "text": "Verpasse keinen Höhepunkt! *Vor einer Knopfmaschine drückt Dain ihren Arm fest gegen meinen und schlägt die Noten. Die Kombination setzt sich bis zur letzten Note fort.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -386,7 +386,7 @@
     },
     "date_seo_high_2": {
         "name": "Seoyeon",
-        "text": "Den Zeitplan aus dem Notizbuch stecke ich ganz unten in die Tasche. Selbst an diesem seltenen Wochenende allein mit dir will ich nicht im Gehen auf die Uhr schauen. *Seoyeon streicht die Haare zurück, die der Wind leicht hebt, und geht zum Spazierweg im Park vor, als würde sie meine Hand mitziehen.*"
+        "text": "Ich werde den Stundenplan unten in meiner Tasche aufbewahren. Ich möchte nicht einmal am Wochenende mit dir allein die Uhr im Auge behalten. *Seoyeon wischt sich die Haare zurück und geht den Weg entlang voraus.*"
     },
     "date_seo_tentative_1": {
         "name": "{name}",
@@ -428,7 +428,7 @@
     },
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*Dain holt ein neues Schweißband aus der Tasche und legt es mir selbst ums Handgelenk. Die warmen Fingerspitzen streifen die Innenseite, wo der Puls schlägt.* So, Partnerteil ist angelegt! Die erste Disziplin heute suchst du aus."
+        "text": "*Dain nimmt ein neues Handgelenkband und befestigt es selbst an meinem Handgelenk. Ihre warmen Fingerspitzen streicheln die Innenseite meines Handgelenks.* Da ist es. Paar-Item ausgerüstet! Du wählst das erste Ereignis."
     },
     "date_dain_tentative_1": {
         "name": "Dain",

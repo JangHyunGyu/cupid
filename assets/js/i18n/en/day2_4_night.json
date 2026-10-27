@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*I finish a warm shower, shake out my wet hair, and the moment I lie down, my phone goes off one after another. Notifications from all three pop up at once.*"
+        "text": "*After finishing a shower and lying down, my phone goes off one after another. Notifications from all three pop up at once.*"
     },
     "night2_msg_1": {},
     "night2_msg_dain_specific": {
@@ -59,7 +59,7 @@
     "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*I look back and forth between the three chats that arrived side by side. While I hesitate over who to open first, the battery bar at the top drops one notch.*"
+        "text": "*I look back and forth between the three chats that arrived side by side. I hesitate over who to open first.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -143,11 +143,11 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*I put earphones in both ears and press play. Behind the low, lonely piano, a drum like a heartbeat quietly layers in.*"
+        "text": "*I put earphones in and press play. Behind the low piano melody, a drum like a heartbeat layers in.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*The last chord fades, leaving a long tail, and the progress bar on the screen stops still on the final segment.*"
+        "text": "*The last chord fades, and the progress bar stops on the final segment.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
@@ -185,23 +185,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*A new notification is up in the school academic counseling system. “Transfer student initial adjustment counseling complete. If a further meeting is needed, use homeroom counseling hours or book a session at the school counseling center.”*"
+        "text": "*A new notification is up in the academic counseling system. 'Transfer student initial adjustment counseling complete. For further consultation, use homeroom counseling hours or book a session at the school counseling center.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Right under Homeroom Teacher's name, the after-school hours when the faculty office is free are written in with care.*"
+        "text": "*Under the Homeroom Teacher's name, the after-school hours when the faculty office is free are written.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*I check where the counseling booking button sits at the bottom of the screen, then quietly close the notification.*"
+        "text": "*I check the location of the counseling booking button and close the notification.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*A notification is up in the health app. “Nurse's office record: Transfer student — elbow abrasion (minor). Keep the waterproof bandage dry until you get to school tomorrow morning. If a corner lifts or fluid seeps through, have it replaced at the nurse's office immediately.”*"
+        "text": "*A notification is up in the health app. 'Nurse's office record: Elbow abrasion (minor). Keep the waterproof bandage until tomorrow before school. If a corner lifts, have it replaced at the nurse's office.'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*On the blanket, I slowly bend my elbow once. The bandage the school nurse pressed on along the grain of my skin hasn't lifted at all. It is still stuck tight.*"
+        "text": "*I bend my elbow. The bandage the school nurse put on is stuck tight and hasn't lifted.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -209,52 +209,52 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*I go to reply to the other two, and my finger locks. This anxious rush not to disappoint anyone who reaches out is a feeling that repeated, the same way, at my old school.*"
+        "text": "*I go to reply to the other two, and my finger locks. This anxious rush not to disappoint anyone is a feeling I experienced at my old school.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*I scroll the album all the way down, and a spring field-trip photo from 3 months ago comes up. In it, Sojeong smiles brightly right beside my shoulder. But from the classroom photo taken the next week on, Sojeong's desk is pushed a little farther back. The lower part of the desktop, where the harsh graffiti was, is cropped out of the frame.*"
+        "text": "*In the photo album, a spring field-trip photo from 3 months ago appears. Sojeong is smiling next to me, but from the photo taken the next week, Sojeong's desk is pushed back, and the desk with graffiti is cropped out.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*Sentences I couldn't bring myself to send sit lined up in the phone's notes like scars. “Homeroom Teacher, on Sojeong's desk—” “Today too, the kids—” Every one breaks off before the first line is even finished. The last edit is frozen at 2:17 a.m.*"
+        "text": "*Sentences I couldn't send sit lined up in the phone's notes. 'Homeroom Teacher, on Sojeong's desk—' 'Today too, the kids—' All break off at the first line, and the last edit is at 2:17 a.m.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*The 38th draft memo is the last sentence. Beneath it, the 39th memo doesn't even have a title. Sojeong's seat stayed empty until morning homeroom the next day, and Homeroom Teacher only said, briefly, that Sojeong had transferred.*"
+        "text": "*The 38th saved draft is the last. Sojeong's seat stayed empty until the next day's final homeroom period, when our teacher only said briefly that she had transferred.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*I set my trembling thumb on the trash delete icon under the photo, can't bring myself to press it, and turn the screen off.*"
+        "text": "*I place my trembling thumb on the trash delete icon, but I can't bring myself to press it and turn off the screen.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*When I turn the messenger back on, the two names I still haven't answered sit there quietly, each with a “1”.*"
+        "text": "*In the messenger list after turning it back on, the names of the two people I haven't replied to remain with a '1' next to them.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*I open the photo of Sojeong I just closed, one more time. I'm standing next to her, smiling at the lens straight ahead, but Sojeong's eyes were on my profile even then.*"
+        "text": "*I reopen the photo I just closed. I'm smiling straight ahead, while Sojeong beside me is looking at my profile.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Something heavy settles in a corner of my chest, and in the end I can't get a single character of the other two replies down.*"
+        "text": "*A heavy feeling settles in a corner of my chest, and in the end, I can't write a reply to the other two.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Three names are stacked side by side on the lock screen. I read the still-warm notifications carefully, with my eyes only, then turn the screen off and on again.*"
+        "text": "*Three names are stacked side by side on the lock screen. I read the notifications with my eyes only and turn off the screen.*"
     },
     "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Even after the screen light is fully out, I can't let go of the phone, still lukewarm, for a long while.*"
+        "text": "*Even after the light is out, I can't let go of the phone for a long time.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*I can't sleep, so I go out to the kitchen and turn on the light. Beside the lunchbox for tomorrow, I set out the leftover rice, the eggs, and the roasted seaweed.*"
+        "text": "*I can't sleep, so I turn on the light in the kitchen. Beside the lunchbox for tomorrow, I set out the rice, eggs, and seaweed.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*With clumsy hands I pack the rolled omelet I just cooked, the sausages, the seaweed, and the rice into the box, layer by layer, and put it in the back of the fridge.*"
+        "text": "*With clumsy hands, I put the rolled omelet, sausages, and rice into the lunchbox and put it in the refrigerator.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
@@ -374,7 +374,7 @@
     },
     "night2_reply_seo_react_neg": {
         "name": "Seoyeon",
-        "text": "See you tomorrow. *The moment the message sends, it is marked read, dry.*"
+        "text": "See you tomorrow. *As soon as the reply is sent, it is immediately marked as read, and only a dry greeting comes back.*"
     },
     "night2_reply_yuna_react_neg": {
         "name": "Yuna",

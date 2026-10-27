@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*En la app de avisos de la clase veo un mensaje que la profesora acaba de publicar. «Aviso de la clase 3-2: mañana no olvidéis traer el libro de matemáticas para la 1.ª hora. — Y el alumno transferido que llegó hoy, con que se adapte bien y sin problemas, basta.»*"
+        "text": "*Aparece una publicación de nuestro profesor de curso en la aplicación de avisos de la clase. 'Traigan su libro de matemáticas para la primera hora de mañana. Y en cuanto a nuestra nueva estudiante transferida, solo que se establezca de forma segura es suficiente.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -69,7 +69,7 @@
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*En la app de salud de la escuela hay un aviso nuevo. «Registro de la enfermería: alumno transferido — mareo temporal, leve. Esta noche, beber bastante agua tibia. El desayuno de mañana, no saltárselo bajo ningún concepto. Si los síntomas se repiten, acudir de inmediato a la enfermería.»*"
+        "text": "*Hay una alerta en la aplicación de gestión de salud. 'Registro de la enfermería: Mareo temporal leve. Beban mucha agua esta noche y no se salten el desayuno mañana.'*"
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
@@ -77,7 +77,7 @@
     },
     "night_late_transition": {
         "name": "{name}",
-        "text": "*Apago la luz y, justo cuando voy a cerrar los ojos, el móvil vibra otra vez, bajito, y rompe el silencio. Miro el reloj: las 11 de la noche. ¿Quién será a esta hora?*"
+        "text": "*Apago la luz y estoy a punto de cerrar los ojos cuando el teléfono vibra suavemente de nuevo. Son las 11 de la noche. ¿Quién es a esta hora?*"
     },
     "night_late_branch": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Dejo el saludo breve y suelto el móvil junto a la almohada. En la pantalla de bloqueo, que se va apagando, se ve clara la hora de la alarma para ir a clase mañana por la mañana.*"
+        "text": "*Dejo un saludo corto y coloco mi teléfono junto a mi cabeza. La hora de la alarma para mañana es visible en la pantalla de bloqueo que se desvanece.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -133,7 +133,7 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Dejo el móvil y miro hacia el techo a oscuras. Del uniforme nuevo en la percha llega, tenue, la brisa de primavera y el aroma de cerezo que cruzaron el día.*"
+        "text": "*Bajo el teléfono y miro al techo. El uniforme nuevo que cuelga cerca huele a la brisa primaveral y a los cerezos de hoy.*"
     },
     "night_end_3": {
         "name": "{name}",

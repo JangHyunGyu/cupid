@@ -9,7 +9,7 @@
     },
     "after2_start": {
         "name": "{name}",
-        "text": "*Ya ha terminado la tutoría de cierre y estamos en el aula después de clase. El móvil que sacaba en cada recreo vuelve a vibrar brevemente en mi bolsillo. Hay dos notificaciones nuevas, una junto a la otra.*"
+        "text": "*El salón después de la última hora de clase. Mi celular vibra brevemente en mi bolsillo, y aparecen dos notificaciones nuevas una al lado de la otra.*"
     },
     "after2_msg_dain": {
         "name": "Dain",
@@ -25,7 +25,7 @@
     },
     "after2_nurse_transition": {
         "name": "{name}",
-        "text": "*El borde del apósito del codo, el de después de Educación Física en la 5.ª hora, se engancha todo el rato en la manga de la camisa. Lo aprieto con la yema, pero enseguida se levanta otra vez.*"
+        "text": "*La esquina de la venda del codo después de la clase de educación física del quinto período sigue enganchándose. Incluso si la presiono con las yemas de los dedos, vuelve a levantarse de inmediato.*"
     },
     "hidden_nurse_d2_1": {
         "name": "{name}",
@@ -45,7 +45,7 @@
     },
     "hidden_nurse_d2_5": {
         "name": "Enfermera",
-        "text": "*Las yemas frescas de la enfermera despegan con cuidado el apósito levantado, limpian el contorno de la herida con un algodón desinfectante y sacan uno nuevo.* Esta vez también va a escocer un poco."
+        "text": "*La enfermera de la escuela retira el vendaje suelto, limpia la herida con algodón antiséptico y saca uno nuevo.* Esta vez también va a escocer un poco."
     },
     "hidden_nurse_d2_choice1": {
         "name": "{name}",
@@ -67,11 +67,11 @@
     },
     "hidden_nurse_d2_6": {
         "name": "{name}",
-        "text": "*La enfermera tira a la papelera el envoltorio del apósito nuevo. El cajón del escritorio, el que cerró a toda prisa después del almuerzo, sigue bien cerrado.*"
+        "text": "*Tira el envoltorio del vendaje nuevo en el bote. El cajón del escritorio que cerré apresuradamente antes sigue cerrado con llave.*"
     },
     "hidden_nurse_d2_7": {
         "name": "Enfermera",
-        "text": "*Nota que miro hacia el cajón y posa, suave, la palma fina sobre el tirador.* Lo de ese cajón se acabó antes. Por mucho que me mires con esa curiosidad, no te lo voy a abrir."
+        "text": "*Nota mis ojos en el cajón y apoya una palma en el pomo.* Esa charla del cajón terminó hace rato. Por mucho que mi mires, no lo voy a abrir."
     },
     "hidden_nurse_d2_choice2": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "after2_dain_6": {
         "name": "Dain",
-        "text": "¡Sin más charla, al partido de verdad! Sacas cinco veces: si clavas tres o más dentro de la cancha, ganas tú. Si no pasan la red, hoy el tteokbokki de delante de la escuela lo pagas tú."
+        "text": "¡Vamos al juego de verdad! ¡Si sacas tres o más de cinco servicios, ganas! ¡Si no puedes, tú te compras el tteokbokki frente a la escuela!"
     },
     "after2_dain_7": {
         "name": "{name}",
@@ -139,15 +139,15 @@
     },
     "after2_dain_9": {
         "name": "{name}",
-        "text": "*Tras un respiro hondo, el primer saque se queda en lo alto de la red. El segundo, ya con el tacto, cruza la red con fuerza y se clava en la línea de dentro de la cancha.*"
+        "text": "*Mi primer saque se engancha en la red, pero una vez que lo siento, la segunda pelota sale dentro de la línea de la cancha.*"
     },
     "after2_dain_9_b": {
         "name": "Dain",
-        "text": "*Atrapa con las dos manos el balón que rebota en el suelo y abre los ojos de par en par.* ¿Eh? Te tenía por novato y pensaba ir suave. Por poco se pone esto serio."
+        "text": "*Ella atrapó la pelota rebotando con ambas manos, con los ojos muy abiertos.* ¿Eh? Te tenía como principiante y iba a ir fácil. Eso casi se pone serio."
     },
     "after2_dain_9_c": {
         "name": "Dain",
-        "text": "Eso de ahora pudo salirte bien en la mano de pura casualidad. Si es nivel de verdad, solo se sabe yendo de frente. *Baja la postura y mete una fuerza elástica en los dedos que agarran el balón de voleibol.*"
+        "text": "Eso pudo haber sido solo un golpe de suerte. ¡Tendremos que jugar para ver si realmente tienes las habilidades! *Ella baja su postura y aprieta el agarre del voleibol.*"
     },
     "after2_dain_9_d": {
         "name": "Dain",
@@ -155,11 +155,11 @@
     },
     "after2_dain_9_e": {
         "name": "{name}",
-        "text": "*Durante el rally, ya sin aire, me fijo: cada vez que Dain aterriza de un salto, apoya primero el pie izquierdo y deja caer la pierna derecha medio compás más tarde, muy suave.*"
+        "text": "*Durante el rally, observaba. Cada vez que Dain aterriza, su pie izquierdo toca primero, y pone el pie derecho medio latido después.*"
     },
     "after2_dain_9_f": {
         "name": "Dain",
-        "text": "Uf, uf... ¡Partido acabado, 3:2! *Aún sin aire, Dain se levanta del suelo, se frota una vez la rodilla derecha sin pensarlo y gira el marcador.*"
+        "text": "Uf, uf... ¡Partido acabado, 3:2! *Aún jadeando, Dain se levanta, se frota la rodilla derecha una vez sin pensarlo y cambia el marcador.*"
     },
     "after2_dain_12": {
         "name": "Dain",
@@ -179,11 +179,11 @@
     },
     "after2_dain_16": {
         "name": "Dain",
-        "text": "*Levanta el puño hasta la altura del hombro y, con una risa corta, se lo pega al propio costado.* Menudo estafador tan fino. Ah, pero hacía tiempo que no me lo pasaba tan bien, sudando de verdad."
+        "text": "*Levanta un puño, luego suelta una risa corta y lo mete contra su costado.* Tramposa pequeña. ¡Hace una eternidad que me divertía de verdad hasta sudar!"
     },
     "after2_dain_skinship_1": {
         "name": "Dain",
-        "text": "¡Buen rally! Como recibías así de bien, yo me animé más. ¡No te vengas arriba solo porque ganaste una! *Con una palmada seca, la palma caliente de Dain choca con la mía y solo se separa un compás más tarde.*"
+        "text": "¡Buen rally! Seguiste recibiendo así, así me involucré aún más. *La palma caliente de Dain golpeó la mía y solo se apartó de mi mano un latido después.*"
     },
     "after2_dain_skinship_2": {
         "name": "Dain",
@@ -220,7 +220,7 @@
     },
     "after2_dain_end_3": {
         "name": "{name}",
-        "text": "Por cierto, ¿desde cuándo se te da tan bien el voleibol? Viéndote en la cancha, eso no era nivel de hobby. *Por un instante, la punta de los palillos de Dain se queda parada en el borde del vaso de tteokbokki.*"
+        "text": "¿Desde cuándo eres tan buena en voleibol? Eso no era solo un pasatiempo. *Por un instante, la punta de los palillos de Dain se queda parada en el borde del vaso de tteokbokki.*"
     },
     "after2_dain_end_3b": {
         "name": "Dain",
@@ -236,7 +236,7 @@
     },
     "after2_dain_end_3e": {
         "name": "Dain",
-        "text": "Oye, {name}, ¿ahí no queda más agua fría? ¡Parece que se me está quemando la boca! *Se abanica los labios, que le escuecen, y empuja el vaso de tteokbokki hacia mí.*"
+        "text": "Oye {name}, ¿más agua fría? ¡Siento que tengo la boca en llamas! *Abanicándose los labios adoloridos, empuja la taza de tteokbokki hacia mí.*"
     },
     "after2_dain_rival_seo_high": {
         "name": "Seoyeon",
@@ -288,7 +288,7 @@
     },
     "after2_seo_6": {
         "name": "Seoyeon",
-        "text": "Es una cortesía especial, porque agradezco que vinieras cuando te lo pedí."
+        "text": "Es un gesto especial porque estoy agradecida de que vinieras cuando te pedí."
     },
     "after2_seo_6_b": {
         "name": "{name}",
@@ -313,7 +313,7 @@
     },
     "after2_seo_8b": {
         "name": "{name}",
-        "text": "Te estoy ayudando en serio. ¿No puedes soltarme un elogio claro, aunque sea uno? Sin darle tantas vueltas. *La punta de los dedos de Seoyeon, que pasaba los papeles, se detiene, y la mirada tras las gafas se vuelve hacia mí.*"
+        "text": "Estoy trabajando duro para ayudarte. ¿No podrías darme un poco de elogio? *La punta de los dedos de Seoyeon, que pasaba los papeles, se detiene, y la mirada tras las gafas se vuelve hacia mí.*"
     },
     "after2_seo_8b2": {
         "name": "Seoyeon",
@@ -329,7 +329,7 @@
     },
     "after2_seo_8b4_b": {
         "name": "Seoyeon",
-        "text": "*Lo dice con toda naturalidad, que es un elogio, y enseguida baja la vista y cuadra las esquinas de los papeles. Gira un poco el cuello entumecido y, con la yema, tira una vez del cuello de la camisa bajo la nuca, que se le ha puesto roja.*"
+        "text": "*Ella lo llama un cumplido, luego baja la mirada y endereza las esquinas de los papeles. Se jala el cuello de la camisa bajo la nuca sonrojada.*"
     },
     "after2_seo_choice1": {
         "name": "{name}",
@@ -343,7 +343,7 @@
     },
     "after2_seo_sunset_joke": {
         "name": "{name}",
-        "text": "Más vale dejar claro desde el principio que hablo del ocaso de fuera. Si te crees que lo dije mirándote la cara, el que queda mal soy yo. *Por un instante, las gafas de Seoyeon resbalan un poco hacia la punta de la nariz y la punta del bolígrafo se sale de la casilla de la fecha.*"
+        "text": "Debo dejar claro que estoy hablando del atardecer de afuera. No querríamos ningún malentendido. *Las gafas de Seoyeon se le deslizan hacia la punta de la nariz, y el bolígrafo se sale del recuadro de la fecha.*"
     },
     "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
@@ -381,7 +381,7 @@
     },
     "after2_seo_neck_high_c": {
         "name": "{name}",
-        "text": "*Seoyeon finge ceder y deja el fajo de papeles sobre la caja de archivos. Con los ojos ya bastante más altos, el ángulo al que hundía la cabeza se reduce a simple vista.*"
+        "text": "*Seoyeon fingió ceder y colocó la pila de papeles en la caja de archivos. Al elevarla tanto a la altura de los ojos, el ángulo de su cabeza inclinada se alivia.*"
     },
     "after2_seo_neck_high_2": {
         "name": "Seoyeon",
@@ -426,7 +426,7 @@
     },
     "after2_seo_stay": {
         "name": "Seoyeon",
-        "text": "No te retengo para endosarte lo que queda. Que el orden esté hecho no significa que tengas que levantarte enseguida. *Seoyeon deja el bolígrafo y sube un tramo la persiana de la ventana.*"
+        "text": "No te mantengo aquí para que trabajes. Solo porque terminamos de clasificar no significa que tengas que levantarte de inmediato. *Seoyeon deja el bolígrafo y levanta la ceja ciega un poco.*"
     },
     "after2_seo_stay_2": {
         "name": "Seoyeon",
@@ -451,11 +451,11 @@
     "after2_seo_end": {},
     "after2_seo_skinship_1": {
         "name": "Seoyeon",
-        "text": "*Cuando estoy a punto de salir, Seoyeon extiende la mano para quitarme una pelusa del cuello del uniforme y el dorso de su mano, fresco y suave, roza peligrosamente la piel de mi nuca*"
+        "text": "*Justo cuando estaba a punto de irme, Seoyeon quita una mota de polvo de mi cuello, y la suave parte posterior de su mano roza mi cuello.*"
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
-        "text": "No te muevas. Quédate quieto. ...Ya está. *Solo después de que el carro de limpieza del alumno de turno pasa traqueteando por fuera del pasillo, las yemas de Seoyeon, que sujetaban el cuello de mi camisa, se separan despacio.*"
+        "text": "No te muevas. Quédate quieto. ...Ya está. *Solo después de que el carrito de limpieza pasa por el pasillo, los dedos de Seoyeon se sueltan lentamente.*"
     },
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
@@ -535,7 +535,7 @@
     },
     "after2_yuna_8d": {
         "name": "{name}",
-        "text": "Es una pieza de piano suave. ¿No te molesta leer con música? *Entre Yuna y yo, cada uno con un auricular, el cable fino se tensa al límite sobre el sofá.*"
+        "text": "Una suave pieza de piano. ¿No te molesta la música mientras lees? *Entre nosotros en el sofá, un auricular cada uno, el delgado cordón se tensó.*"
     },
     "after2_yuna_choice_pre1": {
         "name": "Yuna",
@@ -564,7 +564,7 @@
     },
     "after2_yuna_everyday": {
         "name": "Yuna",
-        "text": "Decir que vendrás todos los días te resulta muy fácil. Ni siquiera te he dado permiso para eso. *Suelta con suavidad el nudo del cable que tenía en el dedo y vuelve a enrollarlo en el índice.*"
+        "text": "Dices que vendrás todos los días tan fácilmente. Yo nunca dije que pudieras venir todos los días. *Ella desata el nudo del cordón del auricular en su dedo y lo enrolla de nuevo alrededor de su dedo índice.*"
     },
     "after2_yuna_everyday_b": {
         "name": "Yuna",
@@ -584,7 +584,7 @@
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "Resulta que no solo hay silencio cuando estoy sola. Así, contigo al lado, también puedo leer sin que me molesten. *Aunque mueve el marcapáginas una página hacia atrás, no recoge los auriculares que hay sobre el sofá.*"
+        "text": "Incluso contigo a mi lado, puedo leer sin distraerme. *Ella mueve el marcapáginas una página hacia atrás, y aun así no quita el auricular del sofá.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
@@ -596,7 +596,7 @@
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "...No es que fuera a cogerlo yo primero. Llévate este libro. *Bajo las yemas superpuestas, la esquina del libro sigue apretada, y solo tras unos 3 segundos de silencio Yuna retira la mano despacio.*"
+        "text": "...No es que fuera a cogerlo yo primero. Llévate este libro. *Nuestras yemas se superponen en silencio por unos tres segundos antes de que Yuna retire lentamente la mano.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
@@ -660,7 +660,7 @@
     "minsu_warn_gate": {},
     "minsu_warn_1": {
         "name": "{name}",
-        "text": "*Camino a casa, con el atardecer cayendo. Acabo de salir por la puerta cuando Minsu se acerca a zancadas por detrás y se me pega al lado.*"
+        "text": "*El camino a casa, el sol se está poniendo. Acabo de salir de la puerta de la escuela cuando Minsu se acerca por detrás y se une a mí.*"
     },
     "minsu_warn_1_b": {
         "name": "Minsu",
@@ -702,7 +702,7 @@
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",
-        "text": "Lo que acabas de decir suena a que preguntas si la próxima vez puedes traer a otra persona. Yo nunca he dicho que pudieras traer a cualquiera aquí. *Vuelve a colocar el marcapáginas una página más adelante y mete en la mochila el auricular que había dejado al extremo del sofá.*"
+        "text": "Eso suena como si estuvieras preguntando si puedes traer a otra persona la próxima vez. Yo nunca dije que pudieras traer a cualquiera aquí. *Ella vuelve a poner el marcapáginas y guarda los auriculares en su bolso.*"
     },
     "after2_seo_tone": {},
     "after2_dain_tone": {},

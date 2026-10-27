@@ -17,7 +17,7 @@
     },
     "morning4_start": {
         "name": "{name}",
-        "text": "*Saturday morning, the fourth day. Weekend sunlight slips through the curtains and wakes me. Instead of checking when to leave for school, I pull over the phone beside my pillow to check today’s plans.*"
+        "text": "*Saturday morning, the fourth day. I wake to weekend sunlight filtering through the curtains and immediately pull the phone beside my pillow closer.*"
     },
     "morning4_date_plan_check": {},
     "morning4_nightmare_check": {},
@@ -68,7 +68,7 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*The appointments I overlapped, precarious as they are, are still there on the calendar. I already know too well this isn't something I can get past just by splitting the time, and my fingers feel heavy.*"
+        "text": "*The appointments I overlapped, precarious as they are, are still there on the calendar. I know this isn't something I can get past just by splitting the time, and my fingers feel heavy.*"
     },
     "minsu_cheer_4_d": {},
     "minsu_cheer_4_e": {},
@@ -116,11 +116,11 @@
     },
     "hidden_homeroom_d4_1": {
         "name": "{name}",
-        "text": "Good morning. *At the half-open main gate, I come face to face with the homeroom teacher as she steps out, a thick brown paper envelope hugged to her chest.*"
+        "text": "Good morning. *At the main gate, I come face to face with the homeroom teacher as she steps out with a thick brown paper envelope.*"
     },
     "hidden_homeroom_d4_1_b": {
         "name": "{name}",
-        "text": "*The moment our eyes meet, she hides the paper envelope behind her back on reflex. Inside the thin wrapping, the printed manuscript stack rustles.*"
+        "text": "*The moment our eyes meet, she hides the envelope behind her back on reflex.*"
     },
     "hidden_homeroom_d4_2": {
         "name": "Homeroom Teacher",
@@ -136,7 +136,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*Instead of the neat suit I usually see at the podium, she's in a soft beige trench coat and a thin knit. The corner of the paper envelope hidden behind her back is crumpled small in her grip.*"
+        "text": "*Instead of the suit I usually see at the podium, she's in a beige trench coat and a knit.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -148,7 +148,7 @@
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
-        "text": "*The joints of her slender fingers on the envelope flap are drawn especially taut. Through the gap at the opening, the first page of the manuscript shows a little, the marks of being folded and unfolded over and over still plain on it.*"
+        "text": "*Through the gap in the envelope, I glimpse the first manuscript page, folded and unfolded many times.*"
     },
     "hidden_homeroom_d4_4_b": {
         "name": "Homeroom Teacher",
@@ -164,7 +164,7 @@
     },
     "hidden_homeroom_d4_4_e": {
         "name": "{name}",
-        "text": "*Only the slow radio music from the gatehouse, carried on the cool morning wind, fills the space between us.*"
+        "text": "*Radio music from the gatehouse drifts past on the morning breeze.*"
     },
     "hidden_homeroom_d4_5": {
         "name": "Homeroom Teacher",
@@ -180,7 +180,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Homeroom Teacher",
-        "text": "You don't have to feel any pressure just because your homeroom teacher wrote it. It's the weekend, so you probably have plans of your own. *She lets the sentence trail off, folds the paper envelope's flap over twice, and grips it tight.*"
+        "text": "You don't have to feel any pressure just because your homeroom teacher wrote it. It's the weekend, so you probably have plans of your own. *Her words trail off as she grips the envelope's handle tightly.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -197,7 +197,7 @@
     },
     "hidden_homeroom_d4_cafe_1": {
         "name": "Homeroom Teacher",
-        "text": "See the literature club kids gathered at that long table by the window? The others will be here soon, so let's sit in this corner for now."
+        "text": "See the literature club kids gathered at that table by the window? Let's sit in this corner for now."
     },
     "hidden_homeroom_d4_cafe_1_b": {
         "name": "{name}",
@@ -209,7 +209,7 @@
     },
     "hidden_homeroom_d4_cafe_1_d": {
         "name": "Homeroom Teacher",
-        "text": "Still, we ought to drink the coffee we ordered before we go. *She tries to pass it off as a joke and wraps her hands around the warm mug. Two round water marks overlap side by side on the cork coaster.*"
+        "text": "Still, we ought to drink the coffee we ordered before we go. *She wraps her hands around the warm mug. Two round water marks overlap side by side on the cork coaster.*"
     },
     "hidden_homeroom_d4_cafe_1_e": {
         "name": "{name}",
@@ -217,7 +217,7 @@
     },
     "hidden_homeroom_d4_cafe_1_f": {
         "name": "Homeroom Teacher",
-        "text": "Now that I'm actually picking, it's just embarrassing. A sentence weighs completely differently when you fix it alone at night with the lamp on, and when you put it in front of someone else. *Even after she sets the mug down, her fingertips keep fidgeting with the ceramic handle.*"
+        "text": "A sentence weighs completely differently when you fix it alone at night, and when you put it in front of someone else. *Even after she sets the mug down, her fingertips keep fidgeting with the handle.*"
     },
     "hidden_homeroom_d4_cafe_2": {
         "name": "Homeroom Teacher",
@@ -233,7 +233,7 @@
     },
     "hidden_homeroom_d4_cafe_2_d": {
         "name": "{name}",
-        "text": "*Through a gap in the homeroom teacher's leather bag, set beside the chair, the manuscript envelope shows. The crease is faintly worn with finger marks, from how many times it was opened and shut.*"
+        "text": "*Through a gap in the homeroom teacher's bag, the manuscript envelope shows. The crease is worn with finger marks from how many times it was opened and shut.*"
     },
     "hidden_homeroom_d4_cafe_2_e": {
         "name": "Homeroom Teacher",
@@ -274,7 +274,7 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "Should I leave my name off when I note in the margin? I'm afraid it'll put you in a difficult spot if the literature club kids recognize my handwriting. *At my words, she stops the hand that was smoothing the cup sleeve and gives a faint smile.*"
+        "text": "Should I leave my name off when I note in the margin? I'm afraid it'll put you in a difficult spot if the kids recognize my handwriting. *She stops the hand that was smoothing the cup sleeve and smiles.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "{name}",
-        "text": "Reading your writing in a cafe that smells like coffee beans, instead of the staff room, feels strange. *She writes a small number at the top of the last printout and slides it toward me. The fingertips passing the paper brush the back of my hand, then pull away.*"
+        "text": "Reading your writing in a cafe feels strange. *She writes a small number at the top of the printout and slides it toward me. The fingertips brush the back of my hand.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Homeroom Teacher",
@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "I'm here for the counseling time you set last time. *I pass the hallway, messy with festival prep, and open the quiet door of the nurse's office. A counseling record and an information sheet lie neatly on the desk.*"
+        "text": "I'm here for the counseling time you set. *I open the door to the quiet nurse's office. A counseling record and an information sheet lie on the desk.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "School Nurse",
@@ -380,7 +380,7 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "School Nurse",
-        "text": "I won't pass on what you confide to anyone else without permission. But if I see a risk of you getting hurt, I won't wait. I'll bring other adults in too. Promise me that one rule."
+        "text": "I won't pass on what you confide to anyone else without permission. But if I see a risk of you getting hurt, I'll work with other adults."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "School Nurse",
@@ -392,7 +392,7 @@
     },
     "hidden_nurse_d4_1": {
         "name": "{name}",
-        "text": "*First-aid boxes for the school event and disinfectant tools are piled high on the long desk in the nurse's office. Sleeves rolled up, sticking on label stickers, the school nurse looks over her glasses and finds me standing in the doorway.*"
+        "text": "*First-aid boxes for the event and disinfectant tools are piled on the desk in the nurse's office. The school nurse, who was sticking labels, notices me standing in the doorway.*"
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
@@ -412,15 +412,15 @@
     },
     "hidden_nurse_d4_2_d": {
         "name": "{name}",
-        "text": "I'll sort the sterile gauze and the alcohol swabs over here, where they're easy to reach. *Among the festival-prep staff hurrying in and out, I set the work table to match the way she moves.*"
+        "text": "I'll sort the sterile gauze and the alcohol swabs over here. *I organize the work table to match her movements.*"
     },
     "hidden_nurse_d4_2_e": {
         "name": "School Nurse",
-        "text": "*She sets a bundle of clear zipper pouches in front of me.* Two sheets of gauze and three antiseptic cottons each. I'll sort the papers with the students' sensitive health records myself."
+        "text": "*She hands me a bundle of clear zipper pouches.* Put two gauze pads and three antiseptic cotton pads in each. I'll handle the confidential health records myself."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "This row of pouches is filled to the count. Please check I didn't leave anything out. *Her fingertips and mine brush lightly over a pouch, and I pull the next empty one over right away.*"
+        "text": "All the pouches in this row have the right quantities now. *Her fingertips and mine brush lightly over a pouch.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "School Nurse",
@@ -444,7 +444,7 @@
     },
     "hidden_nurse_d4_4_c": {
         "name": "School Nurse",
-        "text": "It's true I was busy and couldn't sleep. But if I said I quit simply because the work buried me, the most important reason would be left out. *The moment she closes the file, the tip of the pen in her hand slips a little across the smooth cover.*"
+        "text": "It's true I was busy. But I didn't quit just because of the work. *The moment she closes the file, the tip of the pen slips across the cover.*"
     },
     "hidden_nurse_d4_4_d": {
         "name": "School Nurse",
@@ -456,12 +456,12 @@
     },
     "hidden_nurse_d4_4_f": {
         "name": "School Nurse",
-        "text": "It was when I caught myself mechanically checking the bed number and the vitals on the chart before a patient's face or name. I couldn't even tell anymore whether I was looking into someone's eyes or at a monitor."
+        "text": "It was when I caught myself mechanically checking the bed number and vitals before a patient's face. I couldn't even tell anymore whether I was looking into someone's eyes or at a monitor."
     },
     "hidden_nurse_d4_4_g": {},
     "hidden_nurse_d4_4_h": {
         "name": "School Nurse",
-        "text": "In the school nurse's office, there's time to look each kid who comes in straight in the eye and catch a breath. If it's something I can't handle on my own, taking them by the hand to a place that can really help is my job too."
+        "text": "In the school nurse's office, there's time to look at the kids' eyes and catch a breath. If it's something I can't handle on my own, connecting them to a place that can help is my job too."
     },
     "hidden_nurse_d4_4_i": {
         "name": "{name}",
@@ -469,7 +469,7 @@
     },
     "hidden_nurse_d4_4_j": {
         "name": "School Nurse",
-        "text": "Of course. So if something gets too heavy to carry alone, knock. The nurse's office, your homeroom teacher, the counseling center. Don't just suffer it quietly by yourself."
+        "text": "So if something gets too heavy to carry alone, knock. The nurse's office, the counseling center. Don't just suffer it quietly by yourself."
     },
     "hidden_nurse_d4_4_k": {
         "name": "{name}",
@@ -535,7 +535,7 @@
     },
     "hidden_nurse_d4_meal_1_c": {
         "name": "School Nurse",
-        "text": "I tasted it first to check how spicy it was before the students ate any. *She downs the cold water in the paper cup in one go and wipes the corner of her mouth.* No matter how I look at it, even the digestive medicine in our first-aid kit couldn't save this."
+        "text": "I tasted it first to check the spiciness before the students ate it. *She downs the cold water in one go and wipes her lips.* Even our indigestion medicine couldn't save this taste."
     },
     "hidden_nurse_d4_meal_1b": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "hidden_nurse_d4_meal_2_b": {
         "name": "{name}",
-        "text": "*While I'm talking and looking at her face, one label at my fingertips sticks at a slant on the corner of the box.* You look much more at ease now. Oh, I started talking, and the label went crooked."
+        "text": "*While I'm talking and looking at her face, a label sticks at a slant on the corner of the box.* You look much more at ease now. Oh, the label went crooked."
     },
     "hidden_nurse_d4_meal_3": {
         "name": "School Nurse",
@@ -595,7 +595,7 @@
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Back home, I straighten my shirt collar and my hair in front of the mirror, check the hands of the wall clock, then steady an eager breath and retie the laces of my going-out sneakers tight at the entryway.*"
+        "text": "*Back home, I straighten my shirt collar and my hair, and retie the laces of my going-out sneakers tight at the entryway.*"
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Homeroom Teacher",
@@ -628,7 +628,7 @@
     },
     "day4_haeun_concern_clarify": {
         "name": "Haeun",
-        "text": "I didn't make up things that were never said to make you look bad, Senior. I only told them what honestly felt uncomfortable while we talked yesterday. *Haeun looks straight at me, her eyes steady.* If you meant something else, Senior, please say so here."
+        "text": "I didn't make anything up. I described what honestly made me uncomfortable when we talked yesterday. *Haeun looks straight at me.* If you meant something else, please say so."
     },
     "day4_haeun_concern_seoyeon_intro": {
         "name": "Haeun",
@@ -775,7 +775,7 @@
     },
     "day4_haeun_notice_1": {
         "name": "Haeun",
-        "text": "*In the shade of the wall beside the gate, Haeun had started talking about Seoyeon. She trails off and fidgets with the knot of the bracelet around her wrist.* It's strange, isn't it. I opened my mouth to talk about Seoyeon, but whenever I come to, it keeps sliding into talk about you, Senior. I don't really know why I'm like this lately."
+        "text": "*In the shade of the wall, Haeun fiddles with the bracelet knot while bringing up Seoyeon.* It's strange, isn't it. I tried to talk about Seoyeon, but when I realize it, it keeps drifting to you, Senior."
     },
     "day4_haeun_notice_choice": {
         "name": "Haeun",
@@ -789,7 +789,7 @@
     },
     "day4_haeun_notice_up": {
         "name": "Haeun",
-        "text": "*Haeun blinks, a little startled, then flushes and smiles.* Thank you for hearing me all the way through without laughing. I still can't explain it straight out, but thanks to you, Senior, I feel a little lighter."
+        "text": "*Haeun flushes and smiles.* Thank you for listening to me all the way through without laughing. Thanks to you, Senior, I feel a little lighter."
     },
     "day4_haeun_notice_down": {
         "name": "Haeun",

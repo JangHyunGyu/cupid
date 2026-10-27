@@ -1,7 +1,7 @@
 {
     "night3_start": {
         "name": "{name}",
-        "text": "*Friday night. Exhausted, I get home and hang my bag on the chair back, still in uniform. The textbook corner sticking out of the bag bears three days of finger marks.*"
+        "text": "*Friday night. Exhausted, I get home and hang my bag on the chair back.*"
     },
     "night3_start_2": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*Seoyeon's warm breath seems to brush my ear again. I read slowly to the last line, and when I turn the screen off, a pleasant afterimage stays in the room.*"
+        "text": "*It feels as though Seoyeon's warm breath is brushing past again. I read the last line and turn off the screen, leaving a pleasant impression behind.*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
@@ -33,7 +33,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*I stroke the leather notebook on the desk and look at the last line of my reading notes. Beside the blinking cursor, Yuna's warmth still seems to be there.*"
+        "text": "*I stroke the leather notebook on the desk and look at the last line of my reading notes. Yuna's warmth still seems to be there.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -45,11 +45,11 @@
     },
     "night3_faithful_msg_dain_3": {
         "name": "{name}",
-        "text": "*A 3-minute gap between the playful \"haha\" and the sincere sentence after it. Dain's hot grip on my shoulder and her heartbeat come back, clear.*"
+        "text": "*A 3-minute gap between the playful \"haha\" and the next sentence. Dain's touch on my shoulder comes back, vivid.*"
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*I start to turn off the desk lamp, then pick up my phone one more time. How close we were after school today, breathing side by side, is still vivid at my fingertips.*"
+        "text": "*I start to turn off the desk lamp, then pick up my phone again. How close we were after school, breathing side by side, is still vivid at my fingertips.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -57,27 +57,27 @@
     },
     "night3_faithful_reflect_1": {
         "name": "{name}",
-        "text": "*Before I sleep, deep in my phone gallery, I find a photo of Sojeong from my old school and long-press it.*"
+        "text": "*Before I sleep, deep in the gallery, I find a photo of Sojeong from my old school and long-press it.*"
     },
     "night3_faithful_reflect_2_b": {
         "name": "{name}",
-        "text": "*A confirmation pops up: \"Delete this photo?\" My thumb stops right above the delete button.*"
+        "text": "*A confirmation pops up: \"Delete this photo?\" My thumb stops above the delete button.*"
     },
     "night3_faithful_reflect_2_c": {
         "name": "{name}",
-        "text": "*I look quietly down at the bluish screen. The harsh graffiti that covered Sojeong's desk, and the mornings I turned my head away like a coward, pass by one after another.*"
+        "text": "*The graffiti covering Sojeong's desk flashes through my mind, along with the mornings I turned away.*"
     },
     "night3_faithful_reflect_2_d": {
         "name": "{name}",
-        "text": "*I quietly tap Cancel on the confirmation. Deleting one photo won't make the fact that I ran away back then disappear.*"
+        "text": "*I tap Cancel on the confirmation. Deleting one photo won't make the fact that I ran away back then disappear.*"
     },
     "night3_faithful_reflect_3": {
         "name": "{name}",
-        "text": "*Instead of the delete button, I tap Move and put the photo in a new folder. I write the folder name short: \"Record.\"*"
+        "text": "*Instead of the delete button, I tap Move and put the photo in a new folder called 'Record'.*"
     },
     "night3_faithful_reflect_3_b": {
         "name": "{name}",
-        "text": "*I leave a short note under the photo. The apology I never managed to give Sojeong can only be repaid by being more honest with the person beside me now.*"
+        "text": "*The only way to make up for the apology I never gave Sojeong is to be honest with the person beside me now.*"
     },
     "night3_faithful_reflect_4": {
         "name": "{name}",
@@ -87,7 +87,7 @@
     "night3_faithful_reflect_4_c": {},
     "night3_dream_3": {
         "name": "{name}",
-        "text": "*I close the gallery and set tomorrow morning's alarm. Even after I put the phone down, the warmth that brushed me during the day keeps sleep from coming easily.*"
+        "text": "*I close the gallery and set tomorrow's alarm. The warmth that brushed me during the day keeps sleep from coming easily.*"
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
@@ -139,7 +139,7 @@
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*I turn off the light and lie on the bed, but my heart rises to my throat and my eyes won't close. In the dark, only the phone screen burns cold against my palm.*"
+        "text": "*I switch off the light and lie down, but my heart swells and I can't close my eyes. Only the cold light of the screen falls on my palm.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
@@ -167,7 +167,7 @@
     },
     "night3_nightmare_6": {
         "name": "{name}",
-        "text": "*Breath caught, I open the three chats in turn, type replies that sound like excuses, then erase every one of them with backspace.*"
+        "text": "*I open the three chats in turn, type replies that sound like excuses, then erase every one of them.*"
     },
     "night3_nightmare_choice": {
         "name": "{name}",
@@ -196,15 +196,15 @@
     },
     "night3_nightmare_end_3": {
         "name": "{name}",
-        "text": "*Past 3 in the morning, without a moment of sleep, I close the message app and open the gallery. I rest a heavy thumb on the photo of Sojeong from my old school.*"
+        "text": "*Still awake past three in the morning, I close the messaging app and rest my thumb on Sojeong's photo in the gallery.*"
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*In the group photo, Sojeong looks at the camera with no strength left, and right beside her I'm looking off somewhere else, the way I did then, dodging anything difficult.*"
+        "text": "*In the group photo, Sojeong looks at the camera with no strength left, and beside her I'm looking off, the way I did then, dodging anything difficult.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*I scan the message list from top to bottom. Beside each of the three names, a different wound is stuck there as the last line.*"
+        "text": "*I scan the message list. Beside each of the three names, a different wound is stuck.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "Minsu",
@@ -216,7 +216,7 @@
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*I take my hand off Send and lay the phone face down on the desk. I'm not going to patch this with a few lines of text. Tomorrow I'll stand face to face and answer. Three hours left until the alarm.*"
+        "text": "*I take my hand off Send and lay the phone face down. I'm not going to patch this with a few lines of text. Tomorrow I'll stand face to face and answer.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",

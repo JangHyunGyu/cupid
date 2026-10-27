@@ -13,7 +13,7 @@
     },
     "date_seo_1": {
         "name": "{name}",
-        "text": "¿Esperaste mucho? Sin el uniforme y el portapapeles pareces otra persona. *Frente al banco, donde las gotas de la fuente se parten al sol, está Seoyeon, con un cárdigan de punto marfil y una falda ligera. Bajo el escote redondo se le ven la clavícula blanca y el cuello fino, y la correa de cuero del bolso cruzado va tensa en los dedos, nerviosos.*"
+        "text": "¿Esperaste mucho? Sin el uniforme y el portapapeles pareces otra persona. *Frente a la fuente, Seoyeon está vestida con un cárdigan de punto color marfil y una falda clara, sosteniendo la correa de su bolso cruzado.*"
     },
     "date_seo_compliment_choice": {
         "name": "{name}",
@@ -26,7 +26,7 @@
     },
     "date_seo_pretty_high": {
         "name": "Seoyeon",
-        "text": "Si me sueltas eso así, nada más vernos, no sé qué se supone que te conteste. *Un rosa tenue se le extiende por las mejillas y la correa del bolso, que apretaba con fuerza, se afloja poco a poco.* Aun así me pone contenta, y la sonrisa me sale antes que nada."
+        "text": "Si me hablas así justo al vernos, no sé qué decir. *Un tono rosado se extiende por las mejillas de Seoyeon, y la correa del bolso que sostenía se afloja.* Aun así me pone contenta, y la sonrisa me sale antes que nada."
     },
     "date_seo_pretty_high_b": {
         "name": "Seoyeon",
@@ -34,7 +34,7 @@
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*Como si quisiera enfriar las mejillas encendidas, aparta la mirada hacia el chorro de la fuente, pero no se separa de mi lado.* No nos quedemos aquí parados. Vamos hacia el paseo y tomemos un poco el aire."
+        "text": "*Como si quisiera refrescar sus mejillas sonrojadas, dirige su mirada hacia la fuente, pero no se aleja del lugar a mi lado.* No nos quedemos aquí parados. Vamos hacia el paseo y tomemos un poco el aire."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -46,7 +46,7 @@
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
-        "text": "Aun así oí todo lo que acabas de decirme. No lo retires solo porque me dio vergüenza y no pude contestar enseguida. *Con la oreja roja hasta el borde, se echa detrás de la oreja el pelo que le caía a un lado. La muñeca blanca que asoma de la manga del cárdigan roza apenas la punta de mi brazo.*"
+        "text": "Escuché todo lo que acabas de decir. No lo retractaré solo porque no pude responder de inmediato. *Con el rostro rojo hasta las orejas, se pasa el cabello detrás de una oreja. Su muñeca pálida roza mi brazo.*"
     },
     "date_seo_pretty_low": {
         "name": "Seoyeon",
@@ -58,7 +58,7 @@
     },
     "date_seo_walk": {
         "name": "{name}",
-        "text": "*Caminamos lado a lado, al mismo paso, por el sendero del lago del parque. A cada paso, el borde de la falda de Seoyeon roza suave el bajo de mi pantalón, y les lanzamos trocitos de pan a los patos reunidos en la orilla.*"
+        "text": "*Caminamos al paso a lo largo del sendero junto al lago. La falda de Seoyeon roza mientras lanzamos trozos de pan a los patos reunidos junto al agua.*"
     },
     "date_seo_duck": {
         "name": "Seoyeon",
@@ -82,7 +82,7 @@
     },
     "date_seo_flower_2": {
         "name": "Seoyeon",
-        "text": "¿Qué te parece esta maceta redonda? *Con el sonido claro de la campanilla llegan de golpe el olor a tierra húmeda y el perfume de las flores. En el pasillo estrecho del expositor, Seoyeon se pega lo bastante como para rozarme el hombro y levanta una maceta de suculenta del tamaño de la palma.*"
+        "text": "¿Qué te parece esta maceta redonda? *Suena el timbre de la puerta y nos llega el aroma de las flores. En el pasillo estrecho, Seoyeon se para lo suficientemente cerca de mí como para tocar mi hombro mientras levanta una maceta de suculentas.*"
     },
     "date_seo_succulent_2": {
         "name": "Seoyeon",
@@ -98,11 +98,11 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "Toma, cógela con las dos manos. Lo de llevármela otra vez no es porque no quiera dártela, sino para que pienses en mí a menudo. *Los dedos cálidos y suaves de Seoyeon, al pasarme la maceta pequeña de la suculenta, se posan sobre mi palma y mi muñeca como si las cubrieran, y luego se apartan despacio.*"
+        "text": "Toma. Tómala con ambas manos. Significa que pienses en mí a menudo. *Mientras Seoyeon me entrega la maceta de suculentas, sus dedos cálidos cubren mi palma por un momento antes de retirarse.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
-        "text": "*Salimos de la floristería y caminamos lado a lado por la calle arbolada, fuera del parque. Llevo la maceta en una mano, y el dorso de la otra oscila a punto de rozar el de Seoyeon.*"
+        "text": "*Salimos de la floristería y caminamos uno al lado del otro por la calle bordeada de árboles frente al parque. La maceta está en una mano. La parte posterior de mi otra mano se mueve cerca de la espalda de Seoyeon, casi tocándola.*"
     },
     "date_seo_end_c": {
         "name": "Seoyeon",
@@ -114,7 +114,7 @@
     },
     "date_yuna_1": {
         "name": "{name}",
-        "text": "*Yuna, de pie a la sombra de la terraza del café frente a la estación, se ve de un vistazo. Sobre el vestido negro que le sigue suave la línea del cuerpo, la clavícula blanca y el tatuaje oscuro del hombro se notan mucho más que con el uniforme.* ¿Esperaste mucho?"
+        "text": "*Yuna aparece de repente, parada en la terraza del café frente a la estación. Sobre el vestido negro, su clavícula pálida y el tatuaje en su hombro se ven claramente.* ¿Esperaste mucho?"
     },
     "date_yuna_compliment_choice": {
         "name": "{name}",
@@ -127,7 +127,7 @@
     },
     "date_yuna_pretty_high": {
         "name": "Yuna",
-        "text": "Si lo dices así de golpe, ahora no me cabe otra cosa en la cabeza. Solo sigue sonando lo que acabas de decir. *Yuna baja la mirada al borde del vaso. El pelo blanco plateado le cae y le envuelve la mejilla encendida y la nuca fina.*"
+        "text": "Decir eso de la nada y no puedo pensar en otra cosa. *Yuna baja la mirada hacia el borde de la taza. Su cabello blanco plateado envuelve su mejilla sonrojada.*"
     },
     "date_yuna_pretty_high_2": {
         "name": "Yuna",
@@ -179,7 +179,7 @@
     },
     "date_yuna_earphone": {
         "name": "Yuna",
-        "text": "No te traje hasta aquí solo para mirar libros. Hoy también quería oír esta canción a tu lado. *Yuna saca de un bolsillo los auriculares de cable y me pone ella misma el de la izquierda en la oreja. Las yemas frías me rozan el lóbulo y la línea de la mandíbula, y dejan un eco dulce.*"
+        "text": "No solo quería mostrarte libros. También quería escuchar esta canción a tu lado. *Yuna toma unos audífonos con cable y se pone el auricular izquierdo en mi oído ella misma. Sus dedos fríos rozan mi lóbulo.*"
     },
     "date_yuna_earphone_2": {
         "name": "Yuna",
@@ -191,7 +191,7 @@
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
-        "text": "*Para que el cable corto de los auriculares no se tense, Yuna se sienta pegada a mí en el banco del rincón. El hombro desnudo que asoma del vestido negro se aprieta contra mi brazo, y su aliento cálido, con olor a champú, me llega entero a la nuca.*"
+        "text": "*Así que el cable de los audífonos no se tensará, Yuna se sienta justo a mi lado. El hombro de Yuna toca mi brazo y su cálido aliento roza mi nuca.*"
     },
     "date_yuna_oldbook": {
         "name": "{name}",
@@ -227,11 +227,11 @@
     },
     "date_yuna_end_c": {
         "name": "{name}",
-        "text": "*Con el calor aún en la palma, abro la nota. Dice: «Hoy hablé mucho más de lo normal. Será porque estaba delante de ti». La tinta lila de la pluma se corre, tenue, al final de la última letra, como el corazón de Yuna.*"
+        "text": "*La nota sin doblar dice: 'Hablé mucho más de lo habitual hoy. Quizás fue porque estuve contigo'. La tinta lavanda se ha extendido en la punta de la última letra.*"
     },
     "date_dain_1": {
         "name": "{name}",
-        "text": "*Frente al gimnasio, una mañana de fin de semana. Dain, con una sudadera corta de chándal, un top sin mangas y la gorra calada, agita la mano desde lejos. La cintura firme y la línea larga de las piernas, a la vista con ropa de calle, deslumbran, pero la rodillera negra de la rodilla derecha llama aún más la atención.*"
+        "text": "*Frente al gimnasio. Dain, con una chaqueta deportiva entallada y una gorra baja, saluda desde la distancia. El soporte negro alrededor de su rodilla derecha llama la atención.*"
     },
     "date_dain_2": {
         "name": "Dain",
@@ -257,7 +257,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "Espera, no te estás burlando de mí, ¿verdad? Aunque solo hablemos de la gorra, si lo dices mirándome con esos ojos, de golpe me falta el aire. *Dain se baja la visera con las dos manos y se tapa media cara, encendida.*"
+        "text": "Espera, no me estás tomando el pelo, ¿verdad? Cuando me miras así y lo dices, simplemente me quedo sin aliento. *Dain baja el ala de su gorra, ocultando su rostro sonrojado.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -269,7 +269,7 @@
     },
     "date_dain_pretty_high_4": {
         "name": "Dain",
-        "text": "¿Crees que, por ser verdad, puedes decirlo mirándome así de fijo? Ah, no es que no quiera oírlo, para nada. Si me miras así, me da tanta vergüenza que no puedo mover ni un paso. *El lóbulo y la nuca blanca que asoman bajo la visera están rojos del todo. Las yemas de Dain, sin saber qué hacer, me agarran un instante el borde de la manga y lo sueltan.*"
+        "text": "¡Si dices eso mirándome fijamente, me avergüenzo tanto que no puedo moverme! *Hasta el lóbulo de su oreja, visible bajo el ala, está de un rojo brillante. Las yemas de los dedos de Dain tocan ligeramente y luego su manga.*"
     },
     "date_dain_pretty_low": {
         "name": "Dain",
@@ -297,11 +297,11 @@
     },
     "date_dain_arcade_3": {
         "name": "Dain",
-        "text": "¡Pues claro, sin apuesta qué gracia tiene! ¡Ponte bien alerta!"
+        "text": "Por supuesto. ¿Qué diversión hay sin una apuesta? ¡Mantente alerta!"
     },
     "date_dain_arcade_3_b": {
         "name": "Dain",
-        "text": "¡En este tramo fuerte no puedes perder el compás! *No es una plataforma estrecha: es una máquina de botones que se pulsan con las manos. Dain pega su brazo al mío y saca las notas con una destreza brillante. El combo sigue perfecto hasta la última nota.*"
+        "text": "¡No te pierdas el ritmo en el momento destacado! *Frente a una máquina de pinball, Dain presiona su brazo contra el mío y golpea las notas. La combinación continúa hasta la última nota.*"
     },
     "date_dain_arcade_3_c": {
         "name": "Dain",
@@ -386,7 +386,7 @@
     },
     "date_seo_high_2": {
         "name": "Seoyeon",
-        "text": "El horario que anoté en la libreta lo dejo en el fondo del bolso. No quiero caminar mirando el reloj ni en este fin de semana, que por fin salimos a solas. *Seoyeon se aparta con suavidad el pelo que le mueve el viento y se adelanta hacia el paseo del parque, como si me llevara de la mano.*"
+        "text": "Pondré el horario en el fondo de mi bolso. No quiero seguir mirando el reloj ni siquiera en un fin de semana fuera contigo. *Seoyeon se aparta el cabello y camina adelante hacia el sendero.*"
     },
     "date_seo_tentative_1": {
         "name": "{name}",
@@ -428,7 +428,7 @@
     },
     "date_dain_high_2": {
         "name": "Dain",
-        "text": "*Dain saca del bolsillo una muñequera nueva y me la abrocha ella misma en la muñeca. Las yemas cálidas rozan la cara interna, donde late el pulso.* ¡Listo, accesorio de pareja puesto! Hoy la primera prueba la eliges tú."
+        "text": "*Dain toma una pulsera nueva y me la coloca en la muñeca. Sus cálidas yemas rozan el interior de mi muñeca.* Listo. ¡Equipo de pareja equipado! Tú eliges el primer evento."
     },
     "date_dain_tentative_1": {
         "name": "Dain",

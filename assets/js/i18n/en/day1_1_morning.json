@@ -1,15 +1,15 @@
 {
     "start": {
         "name": "{name}",
-        "text": "*April, cherry blossom petals scattering in front of the school gate. I smooth the still-stiff collar of my new uniform and resettle the strap of the bag holding my transfer papers.*"
+        "text": "*April, cherry blossom petals scattering in front of the school gate. I smooth the collar of my new uniform and resettle the strap of the bag holding my transfer papers.*"
     },
     "start_again": {
         "name": "{name}",
-        "text": "*A sudden rush of dizziness hits, and I brace against the cold gate pillar. I slowly breathe out and wait for the queasiness inside to settle.*"
+        "text": "*A wave of dizziness hits, and I brace myself against the gate pillar. I breathe out in ragged breaths and wait for my stomach to settle.*"
     },
     "start_3": {
         "name": "{name}",
-        "text": "*The phone in my pocket buzzes once. I look down for a moment at the familiar names that popped up over the old school group chat, then quietly turn the screen off.*"
+        "text": "*The phone in my pocket buzzes once. I look down at the familiar names in the old school group chat and quietly turn the screen off.*"
     },
     "name_input_scene": {
         "name": "System",
@@ -17,7 +17,7 @@
     },
     "gate_1": {
         "name": "{name}",
-        "text": "*Under the shade of the gate, a girl with long straight hair pushes her glasses up and checks her watch. As my footsteps draw closer, her neat lashes slowly lift.*"
+        "text": "*Under the shade of the gate, a girl with long straight hair pushes her glasses up and checks her watch. At my footsteps, her neat lashes lift.*"
     },
     "seoyeon_meet_1": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "seoyeon_meet_2": {
         "name": "Seoyeon",
-        "text": "Name tag says {name} too. Nice to meet you. *Her neat fingertips leave a light mark on the list on the clipboard.*"
+        "text": "Your name tag says {name} too. Nice to meet you. *Her neat fingertips leave a light mark on the list on the clipboard.*"
     },
     "seoyeon_meet_3": {
         "name": "{name}",
@@ -170,11 +170,11 @@
     },
     "classroom_1": {
         "name": "{name}",
-        "text": "*The front door rattles open, and dozens of eyes turn at once on the noisy classroom.* Hello."
+        "text": "*The front door rattles open, and the noisy classroom falls silent as dozens of eyes turn at once to me.* Hello."
     },
     "classroom_2_b": {
         "name": "{name}",
-        "text": "*In front of the podium stands the homeroom teacher, who looks to be in her late 20s. In a soft beige cardigan with the top button undone, she holds the attendance book and greets me.*"
+        "text": "*In front of the podium stands the homeroom teacher, who looks to be in her late 20s. In a beige cardigan, she holds the attendance book and greets me.*"
     },
     "classroom_3": {
         "name": "Homeroom Teacher",
@@ -182,7 +182,7 @@
     },
     "classroom_3_b": {
         "name": "{name}",
-        "text": "I'm {name}. I transferred in today. Nice to meet you. *I finish the greeting and look up. The homeroom teacher marks a neat dot beside my name in the attendance book, smiling with her eyes.*"
+        "text": "I'm {name}. I transferred in today. Nice to meet you. *I finish the greeting. The homeroom teacher marks a dot beside my name in the attendance book, smiling with her eyes.*"
     },
     "classroom_5_b": {
         "name": "Homeroom Teacher",
@@ -198,7 +198,7 @@
     },
     "classroom_dain_2": {
         "name": "Dain",
-        "text": "Over here, over here! *A girl with a crisp brown bob, in a sporty volleyball uniform, springs up from her seat and waves wide.*"
+        "text": "Over here, over here! *A girl with short brown hair and a volleyball uniform gets up from her seat and gives a lively wave.*"
     },
     "classroom_dain_3": {
         "name": "Homeroom Teacher",
@@ -226,12 +226,12 @@
     },
     "classroom_yuna_1": {
         "name": "{name}",
-        "text": "*Apart from the noisy classroom, in the last seat by the window, only the girl with silver-white hair in the spring sun quietly turns a page.*"
+        "text": "*Apart from the noisy classroom, in the last seat by the window, only the girl with silver-white hair quietly turns a page.*"
     },
     "classroom_yuna_2": {},
     "classroom_yuna_4": {
         "name": "{name}",
-        "text": "*A student in the front row brushes my sleeve and whispers. \"Don't talk to her. The rumors are kind of scary.\" Even then, Yuna's pale fingertips turn the next page without the slightest twitch.*"
+        "text": "*A student in the front row brushes my sleeve and whispers. \"Don't talk to her. The rumors are kind of scary.\" Even then, Yuna's fingertips turn the next page without a twitch.*"
     },
     "classroom_seat_1": {
         "name": "Homeroom Teacher",
@@ -239,7 +239,7 @@
     },
     "classroom_seat_2": {
         "name": "Dain",
-        "text": "Oh, right next to me? Don't just stand there. Come sit! *She pulls her chair in tight and turns her upper body fully toward me.*"
+        "text": "Oh, right next to me? Don't just stand there. Come sit! *She pulls her chair in and turns her upper body toward me.*"
     },
     "classroom_minsu_1": {
         "name": "{name}",
@@ -263,7 +263,7 @@
     },
     "classroom_dain_talk_2": {
         "name": "Dain",
-        "text": "Don't mind what that guy said! More importantly, can I ask you one thing I'm curious about? *She leans in so far her upper body crosses the edge of my desk.*"
+        "text": "Don't mind what that guy said! Anyway, can I ask you something? *She leans in so far her upper body crosses the edge of my desk.*"
     },
     "classroom_dain_talk_3": {
         "name": "Dain",
@@ -287,15 +287,15 @@
     },
     "classroom_dain_talk_8": {
         "name": "Dain",
-        "text": "So, want to try it together? *Dain's warm index finger sketches a tiny volleyball court and a net line across the wood grain of my desk.*"
+        "text": "So, want to try it together? *Dain's index finger sketches a tiny volleyball court and a net line across the wood grain of my desk.*"
     },
     "classroom_yuna_note_1": {
         "name": "{name}",
-        "text": "*Then a neatly folded note slides in from the seat behind, onto the corner of my desk. I turn, and the silver-haired girl acts like it wasn't her, staring only at the branches swaying outside the window.*"
+        "text": "*A folded note slides from the seat behind me onto the corner of my desk. I turn around, but the silver-haired girl just stares out the window as if she knows nothing about it.*"
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*I unfold it carefully, and pale lavender ink comes into view, with a small crease at the corner.* Noisy seat from day one. — Yuna"
+        "text": "*I unfold it, and pale lavender ink comes into view, with a folded crease at the corner.* Noisy seat from day one. — Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
@@ -303,6 +303,6 @@
     },
     "classroom_yuna_note_6": {
         "name": "{name}",
-        "text": "*The bell for period 1 fills the classroom. Between Yuna's cool profile turned toward the window and the heat of Dain chattering without a stop, my first day was beginning.*"
+        "text": "*The first-period bell fills the classroom. Between Yuna's cool profile and Dain's lively chatter, my first day was beginning.*"
     }
 }

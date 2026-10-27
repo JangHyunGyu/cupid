@@ -5,16 +5,16 @@
     },
     "after_kakao_1": {
         "name": "{name}",
-        "text": "*“Hey, they say Sojeong's doing well at her new school.” “That's a relief haha.” Familiar names I used to bump into every day pop up one after another on the screen.*"
+        "text": "*'Hey, I hear Sojeong's doing well at her new school.' 'That's a relief, haha.' Familiar names from the days we spent together appear on the screen.*"
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*My eyes stop on that light last line, “That's a relief haha.” I tap the reply box again and again, but I can't get a single character down in front of the blinking cursor.*"
+        "text": "*My gaze catches on that casual line: 'That's a relief, haha.' I tap the input box several times, but I can't type a single letter.*"
     },
     "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*After hesitating a long while, I quietly tap leave on the group chat. At the top of the empty list, only this school's messenger, added new today, remains.*"
+        "text": "*After a long hesitation, I tap Leave Group. Only this school's messenger, added today, remains at the top of the list.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -56,7 +56,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*I unfold the note tucked in the side pocket of my bag. At the end of Yuna's writing, pressed in pale purple ink, the last period is slightly smudged.* I saw you coming down from the roof at lunch. You looked pretty close with the student council president."
+        "text": "*I unfold the note tucked into my bag's side pocket. The period at the end of Yuna's lavender handwriting has smudged.* I saw you coming down from the roof at lunch. You looked pretty close with the student council president."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -105,7 +105,7 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*Dain turns and takes a couple of steps, then suddenly stops and grips her right knee. A moment later she lets go as if nothing happened and picks up speed again.*"
+        "text": "*After a couple of steps, Dain stops and puts a hand on her right knee. Then she lets go as if nothing happened and picks up her pace again.*"
     },
     "after_miss_dain_7": {
         "name": "Dain",
@@ -114,7 +114,7 @@
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Passing the hall in front of the library, a girl with red eyes walks toward me, a thick book held up over the tattoo just showing past her sleeve.*"
+        "text": "*In the hallway in front of the library, a girl with red eyes walks toward me, holding a thick book. A small tattoo is slightly visible at her sleeve.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -122,7 +122,7 @@
     },
     "after_miss_yuna_1_c": {
         "name": "{name}",
-        "text": "*I carefully pick up the old bookmark that settled on the floor and hold it out. Yuna shifts the book into one arm and takes the bookmark from my fingertips.*"
+        "text": "*I pick up the old bookmark that fell on the floor and hand it over. Yuna shifts the book and takes the bookmark from my fingertips.*"
     },
     "after_miss_yuna_2": {
         "name": "Yuna",
@@ -196,7 +196,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "Homeroom Teacher",
-        "text": "I happened to be free, so come on in. *Beneath the soft cardigan sleeves rolled to her elbows, the attendance book and the school calendar lie scattered.*"
+        "text": "I happened to be free, so come in. *An attendance book and school calendar lie beneath her rolled-up cardigan sleeves.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -221,7 +221,7 @@
     },
     "after_homeroom_choice_trap": {
         "name": "Homeroom Teacher",
-        "text": "*She picks the clipboard back up and holds it in front of her chest.* This isn't special treatment. It's a normal check, as your homeroom teacher. If it makes you uncomfortable, we'll stop here for today."
+        "text": "*She picks the clipboard back up and holds it up.* This isn't special treatment. It's a normal check, as your homeroom teacher. If you're uncomfortable, let's stop here for today."
     },
     "after_homeroom_ok": {
         "name": "Homeroom Teacher",
@@ -241,7 +241,7 @@
     },
     "after_homeroom_ok_5": {
         "name": "Homeroom Teacher",
-        "text": "If you try to fit in perfectly from day one, you'll wear yourself out fast. Sometimes let it show that you're still clumsy, and take it slow. All right, head home now."
+        "text": "If you try to fit in perfectly from day one, you'll wear yourself out fast. It's okay to take it slow. All right, head home now."
     },
     "after_homeroom_ok_6": {
         "name": "Homeroom Teacher",
@@ -265,7 +265,7 @@
     },
     "after_homeroom_honest_4": {
         "name": "Homeroom Teacher",
-        "text": "If the classroom air gets stifling, run over here anytime. A warm cup of coffee— oh, right, you're a student. I can always get you a sweet juice, at least."
+        "text": "If the classroom air gets stifling, come here anytime. Since you're a student, I can always get you a sweet juice instead of coffee."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
@@ -333,7 +333,7 @@
     },
     "after_hidden_nurse_intro": {
         "name": "{name}",
-        "text": "*A sudden spinning dizziness stops me, hand braced on the cold hallway wall. When I look up, the nurse's office sign on the door right beside me comes into view.*"
+        "text": "*A sudden spinning dizziness stops me, hand braced on the hallway wall. The nurse's office sign on the door right beside me comes into view.*"
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
@@ -359,7 +359,7 @@
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*When I open the door, a faint sweet trace layers over the sharp smell of disinfectant. The teacher in a white coat looks at me past thin glasses.* Excuse me."
+        "text": "*As I open the door, a faint lingering fragrance mingles with the smell of disinfectant. The teacher in a white coat looks at me over her glasses.* Excuse me."
     },
     "after_nurse_enter_2": {
         "name": "School Nurse",
@@ -411,7 +411,7 @@
     },
     "after_nurse_enter_7_c": {
         "name": "School Nurse",
-        "text": "*The teacher draws the curtain halfway around the bed and blocks the sunset.* Want something to drink? Cold water, or warm tea?"
+        "text": "*She draws the bed curtain halfway to block the sunset light.* Want something to drink? Cold water, or warm tea?"
     },
     "after_nurse_enter_7_d": {
         "name": "{name}",
@@ -444,11 +444,11 @@
     },
     "after_nurse_enter_8_c": {
         "name": "School Nurse",
-        "text": "*She comes closer through the gap in the curtain, hands me water in a paper cup, and lightly brushes the back of my hand.* Drink the water slowly and steady your breathing. You'll feel a lot better. If you keep feeling queasy, we'll tell your homeroom teacher too."
+        "text": "*She comes closer through the gap in the curtain, hands me water, and brushes the back of my hand.* Drink it slowly and steady your breathing. You'll feel better. If you keep feeling queasy, we'll tell your homeroom teacher too."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
-        "text": "*I hold a sip of water in my mouth and look around the quiet nurse's office. In the corner by the window, where the sunset has settled, sits a small pot no bigger than my palm.*"
+        "text": "*I hold a sip of water in my mouth and look around the nurse's office. A palm-sized plant pot sits in the corner by the sunset-lit window.*"
     },
     "after_nurse_enter_9_b": {
         "name": "{name}",
@@ -468,11 +468,11 @@
     },
     "after_nurse_enter_10": {
         "name": "School Nurse",
-        "text": "That's all in the past. I like this school much better now. Here, all it takes is the bell, and even the kids who were sick head back to class looking fine."
+        "text": "That's all in the past. I like this school much better. Here, all it takes is the bell, and even the kids who were sick head back to class looking fine."
     },
     "after_nurse_enter_10_b": {
         "name": "School Nurse",
-        "text": "Okay. The 10 minutes we agreed on are up. How's your stomach now? *In the drawer she opened to put the chart away, a faded pale-green notebook catches my eye for a moment.*"
+        "text": "Okay. The 10 minutes are up. How's your stomach now? *In the open drawer, a faded pale-green notebook catches my eye for a moment.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -480,7 +480,7 @@
     },
     "after_nurse_enter_11": {
         "name": "School Nurse",
-        "text": "That's a relief. If you get dizzy again, come by anytime. The nurse's office door is always open. Just know that if you stubbornly tough it out alone and show up late, I'll scold you hard."
+        "text": "That's a relief. If you get dizzy, come by anytime. Just know that if you stubbornly tough it out alone and show up late, I'll scold you."
     },
     "after_nurse_enter_11_b": {
         "name": "{name}",
@@ -488,31 +488,31 @@
     },
     "after_nurse_enter_11_c": {
         "name": "School Nurse",
-        "text": "*She sends the pen rolling across the chart and narrows her eyes.* Of course. If you hide that you're sick, tough it out, and collapse hard, you should be scolded. Stopping you from just enduring it is why I'm in this room."
+        "text": "*She rolls the pen on the chart and narrows her eyes.* If you hide how sick you are and keep going until you collapse, of course you'll get a scolding. It's my job to stop you from toughing it out."
     },
     "after_nurse_enter_11_d": {
         "name": "School Nurse",
-        "text": "*When she takes the empty paper cup and sets it on the desk, a low, dull sound breaks the quiet.*"
+        "text": "*She takes the empty paper cup and sets it on the desk.*"
     },
     "after_nurse_enter_11_e": {
         "name": "School Nurse",
-        "text": "*As if the words I said earlier came back to her, she draws her hand once down the white nape of her neck, past her gown collar.*"
+        "text": "*She draws her hand once down her neck, past her gown collar.*"
     },
     "after_nurse_enter_11_f": {
         "name": "School Nurse",
-        "text": "Oh, right. You said earlier I looked more tired, didn't you? If it shows that much even to a transfer student, I should leave early today too. Thanks for worrying about me."
+        "text": "Oh, right. You said earlier I looked tired, didn't you? I should leave early today too. Thanks for worrying about me."
     },
     "after_nurse_enter_11_g": {
         "name": "School Nurse",
-        "text": "*She writes the treatment time in neat handwriting in the last box of the chart and puts the water cup away.*"
+        "text": "*She writes the treatment time in the last box of the chart and puts the water cup away.*"
     },
     "after_nurse_enter_11_h": {
         "name": "School Nurse",
-        "text": "You said earlier you liked how quiet the nurse's office was, right? When the classroom noise gets to be too much, tell your homeroom teacher and come hide in here. Don't just groan and bear it alone."
+        "text": "When the classroom noise gets to be too much, tell your homeroom teacher and come rest in here."
     },
     "after_nurse_enter_11_i": {
         "name": "School Nurse",
-        "text": "*She pulls the half-drawn curtain wide open and smooths the wrinkled sheet with her palm.*"
+        "text": "*She draws the curtain back and straightens the crumpled bedsheet.*"
     },
     "after_nurse_enter_11_j": {},
     "after_nurse_enter_11_k": {
@@ -529,11 +529,11 @@
     },
     "after_nurse_enter_12": {
         "name": "School Nurse",
-        "text": "I'll write it on the chart. If you get dizzy again on the way, don't tough it out in the hall. Come straight back."
+        "text": "I'll note it on your chart. If you feel dizzy again on the way, don't try to put up with it. Come straight back."
     },
     "after_nurse_enter_12_b": {
         "name": "{name}",
-        "text": "*I'm about to get off the bed when the school nurse checks the wall clock once and spins her swivel chair toward me.*"
+        "text": "*As I get off the bed, the school nurse turns her swivel chair toward me.*"
     },
     "after_nurse_freetalk": {
         "name": "School Nurse",

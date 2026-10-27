@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Seguro na mão o bilhete que Yuna me deu esta manhã. Os cantos dobrados estão gastos de tanto abri-lo entre as aulas. Paro onde o corredor se divide para a escada do terraço, a cantina no subsolo e o anexo da biblioteca.*"
+        "text": "*Eu seguro o bilhete de Yuna desta manhã. Eu paro onde o corredor se divide em direção às escadas do telhado, à lanchonete do porão e ao anexo da biblioteca.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -18,7 +18,7 @@
     },
     "lunch2_seo_1b": {
         "name": "Seoyeon",
-        "text": "Primeira vez que você sobe no terraço, né? Senta nesta sombra. O barulho do campo lá embaixo sobe um pouco, mas o vento é fresco. *Ela abre a marmita, bem arrumada, em cima da cadeira dobrável.*"
+        "text": "É a primeira vez que você vem ao telhado? Sente à sombra por aqui. A brisa está fresca. *Ela abre a marmita, bem arrumada, em cima da cadeira dobrável.*"
     },
     "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {},
@@ -73,7 +73,7 @@
     },
     "lunch2_seo_4": {
         "name": "Seoyeon",
-        "text": "Você subiu só pelo gosto da comida?"
+        "text": "Então você veio aqui só porque a comida estava boa?"
     },
     "lunch2_seo_5": {
         "name": "{name}",
@@ -150,7 +150,7 @@
     },
     "lunch2_seo_c1_1": {
         "name": "Seoyeon",
-        "text": "É. Era para você ficar parado, assim. É rapidinho. *A ponta macia dos dedos de Seoyeon roça o canto dos meus lábios, tira o grão de arroz e dobra o lenço umedecido bem reto, escondendo o lado de dentro.*"
+        "text": "Certo, eu quis dizer para você ficar parada. *A ponta dos dedos de Seoyeon roça o canto dos meus lábios, levanta o grão de arroz e dobra o lenço umedecido.*"
     },
     "lunch2_seo_c1_2": {
         "name": "Seoyeon",
@@ -158,7 +158,7 @@
     },
     "lunch2_seo_c1_2_b": {
         "name": "Dain",
-        "text": "Espera, por favor. Eu só ia pegar uma salsicha. ...O clima agora é de eu continuar sentada aqui? *Com os hashis parados no ar, Dain olha de um para o outro, o rosto duro.*"
+        "text": "Espere, eu estava prestes a pegar uma salsicha... Ainda está tudo bem para eu sentar aqui, certo? *Com os hashis parados, Dain olha para nós dois.*"
     },
     "lunch2_seo_c1_3": {
         "name": "Dain",
@@ -191,7 +191,7 @@
     "lunch2_seo_c2_3": {},
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*Nas costas da minha mão ainda fica um rastro fraco do grão de arroz. Seoyeon recolhe a mão no ar e só desata o cordão do pano da marmita, para apertar de novo.*"
+        "text": "*Uma marca de arroz permanece no dorso da minha mão. Seoyeon, após retirar a mão, apenas desfaz a tira do pano da marmita e a aperta novamente.*"
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -279,7 +279,7 @@
     },
     "lunch2_dain_9": {
         "name": "{name}",
-        "text": "Tem muita gente, então vamos comer encostados nesta janela. *Com o saco de pão quente na mão, ficamos lado a lado junto à porta de vidro da cantina, e lá no corredor dá para ver Seoyeon vindo.*"
+        "text": "Vamos comer encostados nesta janela. *Nós ficamos lado a lado perto da porta de vidro, segurando a sacola de pão, e no corredor eu vejo Seoyeon caminhando em nossa direção.*"
     },
     "lunch2_dain_11": {
         "name": "Dain",
@@ -304,23 +304,23 @@
     },
     "lunch2_dain_c1_1": {
         "name": "Dain",
-        "text": "...Ah, ontem vocês dois também falaram à parte. Então deve ter bastante conversa só de vocês que eu não sei. *Com o pão na boca, ela mexe só na ponta da embalagem vazia, e a mastigação para.*"
+        "text": "...Ah. Então vocês dois conversaram sozinhos ontem também. Então há muito entre vocês que eu não sei. *Com o pão ainda na boca, ela mexe na ponta da embalagem vazia.*"
     },
     "lunch2_dain_c2_1": {
         "name": "Dain",
-        "text": "Só o tanto de ter sido guiado pela escola... Tá. Se você diz, então é isso. *Ela dá mais uma mordida no soboro, mas olha de relance a imagem de Seoyeon que ainda aparece no vidro da porta da cantina.*"
+        "text": "Apenas um tour pela escola... Tudo bem. Eu aceito. *Ela dá uma mordida no soboro, mas olha para o rastro tênue de Seoyeon na porta de vidro.*"
     },
     "lunch2_dain_c3_1": {
         "name": "Dain",
-        "text": "Ei, não ri como se estivesse me zoando! *Dain parte ao meio o pão soboro na mão e estende o pedaço maior na direção do meu peito.* Não me faz falar. Come mais isto!"
+        "text": "Ei, não ri como se estivesse zombando de mim! *Dain divide o pão de soboro ao meio e estende o pedaço maior na minha frente.* Não me faz falar. Come mais isto!"
     },
     "lunch2_dain_c3_2": {
         "name": "Dain",
-        "text": "Eu dei para você comer mais. Por que fica com esse sorrisinho? Não vou pôr na sua boca, então pega logo! *Como quem esconde as bochechas vermelhas, ela dobra a embalagem do pão até a largura de duas juntas do dedo.*"
+        "text": "Eu dei para você comer mais. Por que você continua sorrindo? Apenas pegue! *Como se escondesse suas bochechas avermelhadas, ela dobra a embalagem do pão.*"
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*Enquanto Dain mastiga emburrada o pão que sobrou, a porta de vidro da cantina por onde Seoyeon passou ainda oscila de leve, como um resto do momento.*"
+        "text": "*Enquanto Dain fazia bico e comia o resto do pão, eu continuava vendo as costas de Seoyeon se afastarem além da porta de vidro da loja.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
@@ -360,7 +360,7 @@
     },
     "lunch2_dain_end_i": {
         "name": "{name}",
-        "text": "A senhora põe até uma toalha embaixo do cotovelo? O preparo está mais sério do que eu pensei. *A enfermeira pega o frasco de antisséptico e a gaze branca, e sustenta de leve por baixo do meu cotovelo.*"
+        "text": "Você está colocando uma toalha debaixo do meu cotovelo? *Ela pega antisséptico e gaze, depois apoia gentilmente meu cotovelo por baixo.*"
     },
     "lunch2_dain_end_j": {
         "name": "Enfermeira",
@@ -372,7 +372,7 @@
     },
     "lunch2_dain_end_m": {
         "name": "{name}",
-        "text": "A senhora já colou? Como é na junta, se eu dobrar o braço o curativo não solta? *A enfermeira envolve meu pulso e faz um sinal para eu dobrar o cotovelo uma vez.*"
+        "text": "Está bem na articulação. A bandagem não vai soltar quando eu dobrar o braço? *Ela envolve meu pulso e faz um sinal para eu dobrar o cotovelo.*"
     },
     "lunch2_dain_end_n": {
         "name": "Enfermeira",
@@ -389,19 +389,19 @@
     "lunch2_dain_end_q": {},
     "lunch2_dain_end_r": {
         "name": "{name}",
-        "text": "*Na gaveta da mesa, aberta para guardar a tesoura, aparece um caderno verde-claro desbotado. No instante em que leio a primeira linha de dentro da capa, “Para você, naquele dia—”, a gaveta se fecha depressa.*"
+        "text": "*Enquanto ela abre a gaveta para guardar as tesouras, vejo um caderno verde-claro desbotado lá dentro. Assim que consigo distinguir as palavras 'Para você, desde aquele dia—' na capa, a gaveta se fecha.*"
     },
     "lunch2_dain_end_s": {
         "name": "Enfermeira",
-        "text": "*Ela olha uma vez para a gaveta fechada e encara os meus olhos.* Finge que não viu o que acabou de passar. Em troca, te conto um segredo. Eu gosto bem mais de cacau doce do que de café amargo."
+        "text": "*Ela olha para a gaveta fechada, depois encontra meus olhos.* Finja que você não viu. Eu te contarei outro segredo. Eu gosto muito mais de cacau do que de café."
     },
     "lunch2_dain_end_t": {
         "name": "{name}",
-        "text": "*Mesmo depois de falar do cacau, como brincadeira, os dedos brancos da enfermeira continuam apertados no puxador da gaveta e não soltam.*"
+        "text": "*Mesmo depois do comentário brincalhão dela sobre cacau, seus dedos pálidos continuam pressionando firmemente o puxador da gaveta.*"
     },
     "lunch2_dain_end_u": {
         "name": "Enfermeira",
-        "text": "*Logo ela tira a força do puxador e enfia a mão no bolso do jaleco.* Assunto particular de adulto fica por aqui hoje. O curativo do cotovelo não incomoda?"
+        "text": "*Ela relaxa a pegada no puxador e enfia a mão no bolso do casaco.* Chega de vida privada de adulto. A bandagem no seu cotovelo não está desconfortável, está?"
     },
     "lunch2_dain_end_v": {},
     "lunch2_dain_end_w": {
@@ -414,7 +414,7 @@
     },
     "lunch2_dain_end_y": {
         "name": "Enfermeira",
-        "text": "Não precisa trocar todo dia, sem falta. Amanhã de manhã você vê como está o ferimento e decide. *Ela para no meio de dobrar ao meio a embalagem vazia do curativo e olha de baixo para mim, com um olhar peculiar.*"
+        "text": "Você não precisa trocá-la todo dia. Podemos decidir depois de checar o ferimento amanhã de manhã. *Ela olha para mim enquanto dobra o embrulho vazio da bandagem.*"
     },
     "lunch2_dain_end_z": {
         "name": "Enfermeira",
@@ -524,7 +524,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "Se você ficar plantado na minha frente, eu me distraio e não consigo ler. Senta aqui. Aqui não precisa pedir permissão pra cada coisa. *Ela se afunda no pequeno sofá de 2 lugares, baixa a bolsa até o chão e deixa vazio o lugar bem ao lado.*"
+        "text": "Se você ficar parado aí, eu não consigo focar o suficiente para ler. Sente-se. *Ela se afunda no pequeno sofá de 2 lugares, coloca sua bolsa e deixa o assento ao lado dela vazio.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -582,7 +582,7 @@
     },
     "lunch2_yuna_c1_9_b": {
         "name": "Yuna",
-        "text": "Racionalmente, eu sei que pode ter sido assim. Mas você, que não sabe de nada, não arruma desculpa no lugar dela. *Fecha o livro com um estalo.*"
+        "text": "Eu sei que isso é possível, na minha cabeça. Mas você não sabe de nada, então não inventar desculpas para essa pessoa. *Ela fecha o livro com um estalo.*"
     },
     "lunch2_yuna_c1_10": {
         "name": "Yuna",
@@ -598,7 +598,7 @@
     },
     "lunch2_yuna_c2_1": {
         "name": "{name}",
-        "text": "*Sem perguntar mais, eu me encosto quieto no lugar ao lado, no sofá. Yuna escolhe um livro da pilha junto ao joelho dela e o coloca perto da minha coxa.*"
+        "text": "*Quando eu me inclino silenciosamente no assento ao lado dela, Yuna pega um livro da pilha ao lado do joelho dela e o coloca perto de mim.*"
     },
     "lunch2_yuna_c2_3": {
         "name": "Yuna",
@@ -626,7 +626,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Antes de fechar a porta do anexo, olho para trás pela última vez. Yuna estava olhando de novo para baixo, para a página exata em que parou ao dizer «tinha».*"
+        "text": "*Antes de fechar a porta do anexo, eu olho para trás. Yuna está olhando para a página em que parou quando disse 'costumava'.*"
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",

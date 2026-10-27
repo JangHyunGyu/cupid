@@ -21,12 +21,12 @@
     },
     "confess_seo_3": {
         "name": "{name}",
-        "text": "*Siguiendo a Seoyeon, subo la escalera silenciosa hasta la azotea del instituto. Bajo la barandilla de malla, el atardecer rojo se apaga y las luces nocturnas del borde del campo se encienden una a una.*"
+        "text": "*Sigo a Seoyeon hasta el techo de la escuela. Debajo de la barandilla de alambre, el atardecer se desvanece y las luces del campo se encienden una por una.*"
     },
     "confess_seo_3b": {},
     "confess_seo_4": {
         "name": "Seoyeon",
-        "text": "*Seoyeon retrocede medio paso de la barandilla y se detiene justo delante de mí. Cuando guarda en el bolsillo del cárdigan la llave de latón con la que abrió la puerta, el viento de la tarde hace que el pelo largo de Seoyeon y un perfume tenue me rocen la mejilla.*"
+        "text": "*Seoyeon da medio paso atrás de la barandilla y se detiene frente a mí. Cuando desliza la llave en su bolsillo, el viento de la tarde roza su largo cabello sobre mi mejilla.*"
     },
     "confess_seo_4_b": {
         "name": "{name}",
@@ -48,7 +48,7 @@
     },
     "confess_seo_yes_1": {
         "name": "Seoyeon",
-        "text": "Espera. Lo que acabas de decir, lo he oído bien, ¿verdad? Ni se te ocurra pensar en dejarlo pasar ahora como si fuera una broma. *El tintineo del llavero se corta en seco. Seoyeon, con los ojos temblorosos, me sujeta la mirada y no me deja apartarla.*"
+        "text": "Espera. Escuché lo que acabas de decir, ¿verdad? No pienses en ignorarlo como una broma ahora. *Los ojos inestables de Seoyeon se fijan en los míos.*"
     },
     "confess_seo_yes_2": {
         "name": "{name}",
@@ -60,7 +60,7 @@
     },
     "confess_seo_yes_4": {
         "name": "{name}",
-        "text": "*Seoyeon no consigue hablar y se muerde un poco el labio de abajo. Sobre el cuello enrojecido sube y baja el aliento entrecortado, y el llavero le gira en falso una vez en la mano.*"
+        "text": "*Seoyeon muerde su labio inferior, incapaz de decir las palabras. Respiraciones agitadas suben y bajan a lo largo de su cuello sonrojado.*"
     },
     "confess_seo_yes_5": {
         "name": "{name}",
@@ -72,7 +72,7 @@
     },
     "confess_seo_yes_7": {
         "name": "Seoyeon",
-        "text": "No bajemos todavía. ¿Te quedas un poco más aquí, así, conmigo? *Con la mano que sostiene el llavero, Seoyeon tira con suavidad de la punta de mi manga.*"
+        "text": "No bajemos todavía. Quiero quedarme aquí así un poco más. *Seoyeon tira suavemente del borde de mi manga.*"
     },
     "confess_seo_yes_8": {
         "name": "Seoyeon",
@@ -84,7 +84,7 @@
     },
     "confess_seo_yes_10": {
         "name": "{name}",
-        "text": "No sabía que me hubieras estado mirando hasta ese punto. Por empeñarme en que no se me notara lo que siento, parece que se me escapó tu mirada. *Cuando alargo la mano y le cubro el dorso frío de la mano a Seoyeon, ella deja caer la llave en el bolsillo y pone su palma sobre la mía.*"
+        "text": "No sabía que me estaba observando tan de cerca. *Cuando cubro la parte posterior de la mano de Seoyeon, ella posa su palma sobre la mía.*"
     },
     "confess_seo_yes_11": {
         "name": "Seoyeon",
@@ -96,7 +96,7 @@
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
-        "text": "Eso que me has dicho antes, tendría que haberlo sacado yo primero, sin poner el orgullo por delante. Ahora que lo oigo de tu propia boca, se me llena así el pecho. *Dos escalones más abajo, los pasos de Seoyeon se detienen. Al final no se vuelve, pero la oreja enrojecida se ve nítida incluso en la penumbra.*"
+        "text": "Debí haber dejado mi orgullo y haberlo dicho primero. Escucharlo directamente de ti, apenas puedo respirar. *La oreja de Seoyeon está sonrojada en la parte inferior de la escalera.*"
     },
     "confess_seo_no_1": {
         "name": "{name}",
@@ -128,16 +128,16 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*El rincón secreto de lectura, en una esquina del anexo, al que entro siguiendo a Yuna. La luz roja del atardecer que entra por el cristal se posa hasta lo hondo del reposabrazos del viejo sofá de tela, y en el asiento de justo al lado descansa en silencio el marcapáginas de Yuna.*"
+        "text": "*El espacio de lectura en el anexo, donde seguí a Yuna. El atardecer que entra por la ventana se asienta profundamente en el reposabrazos del viejo sofá.*"
     },
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Ven aquí y siéntate a mi lado. Hoy no hace falta abrir un libro. Has llegado hasta aquí tomándome de la mano. *Yuna se recuesta bien hondo en el sofá y alza la vista hacia mí. Entre sus dedos finos va encajado un marcapáginas plateado.*"
+        "text": "Ven y siéntate a mi lado. No tenemos que abrir un libro hoy. *Yuna se reclina en el sofá y me mira.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*En cuanto me siento justo al lado de Yuna, el cojín viejo del sofá se hunde y nuestros muslos y hombros quedan pegados, sin hueco. La punta del marcapáginas de papel que sostiene Yuna está doblada, apenas.*"
+        "text": "*Cuando me siento junto a Yuna, el cojín del sofá se hunde y nuestros hombros se tocan.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
@@ -211,11 +211,11 @@
     },
     "confess_yuna_no_2": {
         "name": "Yuna",
-        "text": "*Yuna, sin decir nada, empuja el marcapáginas hasta el fondo del hueco del libro cerrado y luego recoge un poco la barbilla.*"
+        "text": "*Sin decir una palabra, Yuna empuja el marcapáginas profundamente entre las páginas cerradas, luego baja un poco la barbilla.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
-        "text": "Yuna, ese libro que tienes sobre las rodillas, ¿aún no lo has terminado? Es que desde hace un rato solo le miras la cubierta. *Yuna, al final, no abre las páginas y solo recorre despacio con la punta de los dedos las letras del título grabadas en la cubierta de tapa dura.*"
+        "text": "Yuna, ¿todavía no terminaste el libro que tienes en tu regazo? *Yuna no abre las páginas, solo traza las letras del título en la portada con la punta de sus dedos.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
@@ -240,7 +240,7 @@
     "confess_dain_3b": {},
     "confess_dain_4": {
         "name": "Dain",
-        "text": "No te preocupes: a estas horas no he venido a entrenar. Pero ¿puedo tener un balón abrazado? Es que, si me planto delante de ti con las manos vacías, se me ponen a temblar las puntas de los dedos. *Dain se abraza al pecho, con las dos manos, el balón de voleibol de cuero. Los nudillos que aprietan el balón se le marcan blancos.*"
+        "text": "No vine a practicar a esta hora. Pero ¿está bien si sostengo un balón? Si me paro frente a ti sin nada en las manos, mis dedos tiemblan. *Dain acerca un voleibol a su pecho.*"
     },
     "confess_dain_5": {},
     "confess_dain_choice": {
@@ -287,7 +287,7 @@
     },
     "confess_dain_yes_8": {
         "name": "Dain",
-        "text": "Ay, ¿qué hago? Yo también quiero responder con estilo, pero ahora no me mires la cara. No, no te digo para nada que te des la vuelta del todo. *Dain junta los dos pies sobre la línea blanca de la pista y se tapa con las dos palmas la cara, roja del todo.*"
+        "text": "Ah, qué hago. Quiero darte una buena respuesta, ¡pero no mi cara ahora! *Dain se para sobre la línea blanca de la cancha y cubre su rostro de color rojo brillante con ambas palmas.*"
     },
     "confess_dain_yes_8_b": {
         "name": "{name}",
@@ -299,7 +299,7 @@
     },
     "confess_dain_yes_9_b": {
         "name": "Dain",
-        "text": "Menudo lío. Me sale la risa de lo contenta que estoy, ¿y por qué se me calientan hasta los ojos? *Dain me mira hacia arriba entre los dedos, sonríe radiante y se frota con el dorso de la mano el rabillo de los ojos, que se le han humedecido.*"
+        "text": "Estoy sonriendo porque estoy feliz, así que ¿por qué se me calientan también las comisuras de los ojos? *Dain me mira a través de sus dedos y se ríe, luego se frota los ojos con el dorso de la mano.*"
     },
     "confess_dain_yes_10": {
         "name": "Dain",

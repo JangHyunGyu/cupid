@@ -36,7 +36,7 @@
     },
     "morning5_caught_teacher_honest": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin hört mich bis zum Ende an und klappt dann leise das Klassenbuch zu. Im leisen Ausatmen liegen Erleichterung und Müdigkeit zugleich.* Danke, dass du ehrlich warst. Dass du Freunde getroffen hast, werfe ich dir nicht vor. Das Versprechen, dich zu melden, hältst du ab jetzt bitte ein. Über das Manuskript reden wir nur bis hier."
+        "text": "*Sie hört mir zu und schließt dann das Anwesenbuch.* Danke, dass du ehrlich warst. Versprich mir, das nächste Mal Kontakt aufzunehmen. Lass die Diskussion über das Manuskript hier beenden."
     },
     "morning5_caught_teacher_lie": {
         "name": "Klassenlehrerin",
@@ -44,11 +44,11 @@
     },
     "morning5_caught_nurse_honest": {
         "name": "Schulkrankenschwester",
-        "text": "*Erst als die Schulkrankenschwester meine Erklärung ganz gehört hat, klappt sie das offene Protokoll zu.* Gut, dass du unverletzt und sicher nach Hause gekommen bist. Wenn der Plan das nächste Mal verrutscht, sag es bitte vorher. Die Versorgung beim Fest fängt jetzt an, das längere Gespräch setzen wir mit einem eigenen Termin fort. *Ich senke den Kopf zum Gruß und gehe ins Klassenzimmer zurück.*"
+        "text": "*Die Krankenschwester hört mir meine ganze Erklärung zu und schließt dann das Aufzeichnungsblatt.* Ich freue mich, dass du sicher nach Hause gekommen bist. Nächstes Mal sag mir bitte vorher Bescheid, falls sich deine Pläne ändern. Lass uns einen separaten Zeitpunkt vereinbaren, um das längere Gespräch fortzusetzen. *Ich verabschiede mich und kehre in den Klassenraum zurück.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester legt den Kugelschreiber, den sie über dem Rand des Protokolls gehalten hat, mit einem Klicken ab.* Deine Erklärung hat Stellen, die nicht zu den Uhrzeiten passen. Wenn du krank bist, kannst du jederzeit kommen. Diese Sache gehen wir aber zusammen mit der Beratungslehrkraft in Ruhe noch einmal durch. *Mit schweren Schritten gehe ich ins Klassenzimmer zurück.*"
+        "text": "*Die Krankenschwester legt ihren Stift auf das Aufzeichnungsblatt.* Einige Teile dieser Erklärung passen nicht zum Stundenplan. Lass uns das noch einmal mit dem Schulberater durchgehen. *Mit schweren Schritten gehe ich ins Klassenzimmer zurück.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -181,19 +181,19 @@
     },
     "morning5_seo_note_1_c": {
         "name": "{name}",
-        "text": "*An einer Seite der Tafel des Literaturklubs sind ein paar Seiten eines Kurzgeschichtenmanuskripts ordentlich mit Reißzwecken festgesteckt. Der Titel lautet „An die Person, die ich in der Bibliothek getroffen habe“. Vertraute hellviolette Füllertinte, und an der leicht gefalteten Papierkante klebt ein winziger Krümel vom Soboro-Brötchen.*"
+        "text": "*Mehrere Seiten einer Kurzgeschichte sind an das schwarze Brett des Literaturclubs geheftet. Der Titel lautet 'An die Person, die ich in der Bibliothek traf.' Die vertraute lila Tinte und ein kleiner Krümel auf einer gefalteten Ecke fallen mir ins Auge.*"
     },
     "morning5_yuna_story_1": {
         "name": "{name}",
-        "text": "*Die Stimme im Manuskript geht lautlos auf jemanden zu, der nachmittags vornüber am Bibliothekstisch eingeschlafen ist, und deckt die Person mit dem eigenen Cardigan zu. Es ist nicht wirklich passiert, und doch legt sich über jeden Satz, in dem sie mit angehaltenem Atem Wache hält, Yunas kühler und zugleich zarter Blick.*"
+        "text": "*Der Erzähler des Manuskripts nähert sich jemandem, das an einem Schreibtisch in der Bibliothek schläft, und deckt ihn mit einem Cardigan zu. Jeder Satz darüber, bei ihm zu bleiben, kaum zu atmen, erinnert mich an Yunas Blick.*"
     },
     "morning5_yuna_story_2": {
         "name": "{name}",
-        "text": "*Mein Blick trifft den allerletzten Satz des Manuskripts. „Als diese Person die Augen öffnete, war ich schon nicht mehr da. Ich ließ nur einen Zettel zurück, wie ein Lesezeichen. — Ich werde auch das nächste Mal hier sein.“ Dieselbe hellviolette Tinte wie auf dem Zettel, den ich am ersten Tag in meinem Schließfach gefunden habe, schimmert ruhig im Morgenlicht.*"
+        "text": "*Meine Augen erreichen den letzten Satz des Manuskripts. „Als diese Person die Augen öffnete, war ich weg. Ich hinterließ nur eine Notiz. — Ich werde das nächste Mal wieder hier sein.“ Dieselbe blasse lilafarbene Tinte wie die Notiz, die ich am ersten Tag in meinem Schließfach fand.*"
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*In der Ecke des unteren Rands auf dem Manuskriptpapier steht in Bleistift ganz klein nachgetragen: „Das ist eine Geschichte. Sie ist nicht wahr.“ Darüber liegen schwach die Stellen, an denen ein Radiergummi mehrmals angesetzt und wieder losgelassen wurde, und gerade dadurch liegt das, was sich nicht verbergen ließ, klar auf der Hand.*"
+        "text": "*In der unteren Randnotiz bleibt eine winzige Bleistiftnotiz stehen: 'Das ist Fiktion. Es ist nicht real.' Durch die Spuren wiederholter, unvollendeter Radierungen kommen die Gefühle durch, die sie nicht verbergen konnte.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -214,11 +214,11 @@
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*Auf dem Tisch liegt kein geheimer Zettel mehr. Stattdessen trifft Seoyeon, die vorn im Klassenzimmer die Infoblätter ordnet, meinen Blick, das Klemmbrett an die Brust gedrückt, und lächelt kurz. Yuna und Dain geben mir mit ruhigen Gesichtern nur knapp den Zeitplan für die Festvorbereitungen und gehen weiter.*"
+        "text": "*Auf dem Schreibtisch liegt keine geheime Notiz mehr. Vorne im Klassenzimmer trifft Seoyeon, die das Klemmbrett hält, meinen Blick und lächelt. Yuna und Dain geben ruhig nur den Festplan weiter und gehen weiter.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
-        "text": "*Weder im Schließfach noch auf dem Tisch liegt eine neue Notiz. Yuna am Fenster nestelt am hellvioletten Lesezeichen zwischen den Seiten ihres Hefts, merkt meinen Blick und nickt mir leise zu. Seoyeon und Dain geben nur kurz die Hinweise durch, die für die Festvorbereitungen nötig sind.*"
+        "text": "*Am Fenster spielt Yuna mit dem blasslila Lesezeichen und nickt leise. Seoyeon und Dain sagen mir nur kurz, was für die Festvorbereitungen weitergegeben werden muss.*"
     },
     "morning5_committed_dain": {
         "name": "{name}",
@@ -230,7 +230,7 @@
     },
     "hidden_homeroom_d5_1": {
         "name": "{name}",
-        "text": "Frau Lehrerin, Sie sind noch hier. Der Umschlag in Ihrer Hand... das Manuskript darin sehe ich nicht. *Die Klassenlehrerin sitzt an das stille Pult gelehnt und nestelt an einem dicken braunen Umschlag.*"
+        "text": "Sie sind immer noch da, Ma'am. Was ist das für ein Umschlag, den Sie halten? *Die Klassenlehrerin lehnt an der Vorderseite des Lehrer-Schreibtisches und spielt mit einem dicken braunen Dokumentenumschlags.*"
     },
     "hidden_homeroom_d5_1_b": {
         "name": "Klassenlehrerin",
@@ -254,7 +254,7 @@
     },
     "hidden_homeroom_d5_3": {
         "name": "Klassenlehrerin",
-        "text": "*Über die Fingerspitzen, die über die Außenseite des Umschlags streichen, geht ein leises Zittern.* Sieben Jahre habe ich es allein in der Schublade festgehalten. Jetzt will ich auch hören, wie es in den Augen anderer gelesen wird."
+        "text": "*Ein Zittern durchzieht ihre Fingerspitzen, als sie die Vorderseite des Umschlags streichelt.* Ich habe ihn sieben Jahre in einer Schublade aufbewahrt. Ich dachte, es sei an der Zeit, zu hören, wie er für andere klingt."
     },
     "hidden_homeroom_d5_4": {
         "name": "{name}",
@@ -276,7 +276,7 @@
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin lächelt schief und streicht die zerknitterte Umschlagecke mit dem Daumen langsam glatt.* Du musst nicht schon vor der ersten Seite nach netten Worten suchen. Lange daran festgehalten zu haben heißt nicht, dass es gut geschrieben ist."
+        "text": "*Sie schenkt mir ein bedauerndes Lächeln und glättet die Ecke des Umschlags.* Du musst nichts Schönes sagen, bevor du die erste Seite überhaupt umgeblättert hast. Dass ich ihn lange behalten habe, bedeutet nicht, dass ich ihn gut geschrieben habe."
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Klassenlehrerin",
@@ -292,7 +292,7 @@
     },
     "hidden_homeroom_d5_praise_trap_5": {
         "name": "Klassenlehrerin",
-        "text": "Dieses Exemplar nehme ich erst einmal wieder an mich. Dass du Rücksicht nimmst, damit es mich nicht trifft, dafür danke ich dir. Gelesen hast du aber noch keine einzige Zeile. *Die Klassenlehrerin nimmt das Manuskript vorsichtig aus meinen Händen, zögert kurz und steckt es wieder in den braunen Umschlag.*"
+        "text": "Ich werde diese Kopie behalten. Ich bin dankbar, dass du versuchst, meine Gefühle nicht zu verletzen. Aber du hast noch keine einzige Zeile gelesen. *Die Lehrerin nimmt das Manuskript und legt es zurück in den braunen Umschlag.*"
     },
     "hidden_homeroom_d5_praise_trap_6": {
         "name": "Klassenlehrerin",
@@ -324,7 +324,7 @@
     },
     "hidden_homeroom_d5_correct_1": {
         "name": "{name}",
-        "text": "Frau Lehrerin, wenn Sie gerade ein wenig Zeit haben, darf ich es hier sofort lesen? Ich möchte zuerst selbst sehen, an welcher Stelle einem beim Lesen die Luft wegbleibt. *Die Klassenlehrerin bewegt wortlos die Lippen und streicht dann das Ende des Manuskripts glatt, das sich in ihrer Hand leicht gerollt hatte.*"
+        "text": "Lehrer, darf ich es hier lesen? Ich möchte selbst sehen, wo mir der Atem stockt. *Sie richtet ohne ein Wort den Rand des Manuskripts, das in ihrer Hand gekräuselt war.*"
     },
     "hidden_homeroom_d5_correct_2": {
         "name": "Klassenlehrerin",
@@ -340,7 +340,7 @@
     },
     "hidden_homeroom_d5_correct_5": {
         "name": "{name}",
-        "text": "*Ein leeres Klassenzimmer, in dem nur das Rascheln umgeblätterter Seiten zu hören ist. Die letzte Seite des Manuskripts ist mehr als zur Hälfte weiß und leer. Unter den unzähligen roten Streichungen liegen in Schichten die Spuren, wo ein Satz geschrieben, wieder gelöscht und dann stehen geblieben ist.*"
+        "text": "*Der leere Klassenraum enthält nur das Geräusch von umgeblätterten Seiten. Mehr als die Hälfte der letzten Seite des Manuskript ist leer. Unter roten Löschlinien sind die Spuren von Schreiben und Löschen in Schichten eingezogen.*"
     },
     "hidden_homeroom_d5_correct_6": {
         "name": "Klassenlehrerin",
@@ -368,7 +368,7 @@
     },
     "hidden_homeroom_d5_correct_12": {
         "name": "Klassenlehrerin",
-        "text": "...Genau so einen Leser habe ich gebraucht. Es sind Sätze, die ich geschrieben habe, und trotzdem sehe ich allein in der Kammer überhaupt nicht, wo ich den Weg verloren habe. *Die Klassenlehrerin legt das Klemmbrett aufs Pult, schließt mit einem Klick die Kappe des roten Stifts und reicht ihn mir.*"
+        "text": "...Das ist genau die Art von Lesung, die ich brauchte. Wenn ich es alleine ansehe, sehe ich nicht, wo ich den Faden verloren habe. *Die Lehrerin legt das Klemmbrett, das sie gehalten hatte, ab und reicht mir den roten Stift.*"
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Klassenlehrerin",
@@ -499,7 +499,7 @@
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
-        "text": "Ich bin doch zur vereinbarten Zeit gekommen. Ich habe Ihnen nicht nur unnötig mehr Arbeit gemacht, oder? Wegen der Schulveranstaltung sind Sie sicher so beschäftigt, dass Sie kaum Luft holen. *Die Schulkrankenschwester schreibt mit ruhiger Hand Datum und Uhrzeit in die leeren Felder der Beratungsbestätigung.*"
+        "text": "Ich bin zur vereinbarten Zeit gekommen, aber ich füge nicht einfach nur zu Ihrer Arbeit hinzu, oder? Ich dachte, Sie wären mit der Veranstaltung beschäftigt. *Die Lehrerin schreibt das Datum und die Uhrzeit in die leeren Felder der Bestätigung.*"
     },
     "hidden_nurse_d5_3_c": {
         "name": "Schulkrankenschwester",
@@ -616,7 +616,7 @@
     },
     "morning5_sojeong_1": {
         "name": "{name}",
-        "text": "*Ich stehe am stillen Fenster und öffne die Notiz-App. Darin die Sätze, mit denen ich Erwachsenen sagen wollte, was Sojeong an der alten Schule durchgemacht hat, und die ich am Ende doch hinuntergeschluckt habe. Dazu die feigen Ausreden, die ich wieder und wieder gelöscht und neu geschrieben habe. Auf dem leeren Bildschirm blinkt der Cursor des neununddreißigsten Entwurfs.*"
+        "text": "*Ich stehe am Fenster und öffne die Notizen-App. Der Cursor blinkt im neununddreißigsten Entwurf, gelöscht und neu geschrieben: die Worte, die ich geschluckte, als ich versuchte, zu berichten, was Sojeong durchmachte.*"
     },
     "morning5_sojeong_2": {
         "name": "{name}",
@@ -624,7 +624,7 @@
     },
     "morning5_sojeong_3": {
         "name": "{name}",
-        "text": "Damals habe ich die Schmierereien auf deinem Tisch mit eigenen Augen gesehen und der Lehrkraft trotzdem nichts sagen können. Den Kopf wegzudrehen und so zu tun, als sähe ich nichts, war ohne jede Ausrede meine Entscheidung. Es tut mir wirklich leid. Das hier schicke ich, damit es mir leichter wird, also musst du nicht antworten."
+        "text": "Ich habe damals die Kritzeleien auf deinem Tisch gesehen, aber es keinem Lehrer sagen können. Wegzusehen und so zu tun, als wüsste ich von nichts, war auch meine Entscheidung. Es tut mir wirklich leid. Du musst nicht antworten."
     },
     "morning5_sojeong_4": {
         "name": "{name}",
@@ -632,7 +632,7 @@
     },
     "morning5_sojeong_5": {
         "name": "{name}",
-        "text": "Ich bitte um eine offizielle Beratung zu dem, was ich an meiner alten Schule absichtlich ignoriert habe. *Ich schicke auch der jetzigen Klassenlehrerin eine Nachricht. Während die Durchsage zum Schulfest über das Schulgelände hallt, lösche ich die zwei endlich abgeschickten Zeilen des Geständnisses am Ende doch nicht.*"
+        "text": "Ich möchte eine formelle Beratung zu etwas in Anspruch nehmen, das ich an der Schule vor meinem Umzug übersehen habe. *Ich schreibe auch meinem jetzigen Klassenlehrer. Ich lösche die zwei Zeilen des Geständnisses, die ich schließlich geschickt habe, nicht.*"
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
@@ -640,7 +640,7 @@
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",
-        "text": "*Yuna presst das Bündel Programmhefte an die Brust und geht als Erste durch die Hintertür, ohne auch nur einmal herzusehen. Dain geht mit starrem Gesicht in großen Schritten auf die Vordertür zu. Selbst Seoyeon, die vor dem Pult die Anwesenheitsliste sortiert, dreht am Ende den Kopf nicht zu mir.*"
+        "text": "*Yuna verlässt zuerst durch die Hintertür mit den Führerbüchern. Dain geht mit ernstem Gesicht zur Vordertür. Sogar Seoyeon, die die Anwesenheitsliste sortiert, wendet sich nie zu mir um.*"
     },
     "morning5_caught_fallout_3": {
         "name": "{name}",

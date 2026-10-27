@@ -1,7 +1,7 @@
 {
     "night2_start": {
         "name": "{name}",
-        "text": "*Termino o banho com água morna, sacudo o cabelo molhado e, assim que me deito na cama, o celular toca sem parar e as notificações das três aparecem ao mesmo tempo.*"
+        "text": "*Depois de tomar um banho e deitado, meu telefone toca um após o outro. Notificações de todos os três aparecem de uma vez.*"
     },
     "night2_msg_1": {},
     "night2_msg_dain_specific": {
@@ -59,7 +59,7 @@
     "night2_msg_generic_3": {},
     "night2_msg_7": {
         "name": "{name}",
-        "text": "*Olho, um de cada vez, os três chats que chegaram lado a lado. Enquanto hesito em quem abrir primeiro, a barrinha da bateria no topo desce um nível.*"
+        "text": "*Eu olho alternadamente entre os três chats que chegaram lado a lado. Hesito sobre qual abrir primeiro.*"
     },
     "night2_choice": {
         "name": "{name}",
@@ -143,11 +143,11 @@
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
-        "text": "*Encaixo os fones nos dois ouvidos e aperto o botão de reprodução. Por trás da melodia baixa e solitária do piano, um som de bateria parecido com batida de coração se sobrepõe, baixinho.*"
+        "text": "*Coloco os fones de ouvido e pressiono play. Por trás da melodia suave do piano, um tambor como um batimento cardíaco se sobrepõe.*"
     },
     "night2_reply_yuna_6_c": {
         "name": "{name}",
-        "text": "*O último acorde vai se apagando e deixa um resto longo. A barra de reprodução na tela para, quieta, no último espaço.*"
+        "text": "*O último acorde desaparece e a barra de progresso para no segmento final.*"
     },
     "night2_reply_yuna_7": {
         "name": "{name}",
@@ -185,23 +185,23 @@
     },
     "night2_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*No sistema de aconselhamento acadêmico da escola, há um aviso novo. «Consulta inicial de adaptação do aluno transferido concluída. Se for necessária outra conversa, usar o horário de atendimento da professora ou reservar o Wee Class.»*"
+        "text": "*Uma nova notificação aparece no sistema de orientação acadêmica. 'Aconselhamento inicial de adaptação para aluno transferido concluído. Para consultas adicionais, utilize o horário de aconselhamento da turma ou agende uma sessão no centro de aconselhamento escolar.'*"
     },
     "night2_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Logo abaixo do nome da professora, os horários em que a sala dos professores fica livre depois da aula estão anotados com cuidado.*"
+        "text": "*Sob o nome da Professora Regente, estão escritos os horários após o horário escolar em que o escritório da faculdade está livre.*"
     },
     "night2_hidden_homeroom_3": {
         "name": "{name}",
-        "text": "*Confiro com os olhos o lugar do botão de reserva da consulta, embaixo da tela, e fecho em silêncio a janela do aviso.*"
+        "text": "*Verifico a localização do botão de agendamento de aconselhamento e fecho a notificação.*"
     },
     "night2_hidden_nurse_1": {
         "name": "{name}",
-        "text": "*Há um aviso do app de saúde. «Registro da enfermaria: aluno transferido — escoriação no cotovelo (leve). Até a hora de ir à escola amanhã de manhã, manter o curativo impermeável seco. Se a borda levantar ou vazar secreção, trocar imediatamente na enfermaria.»*"
+        "text": "*Uma notificação aparece no aplicativo de saúde. 'Registro do consultório da enfermeira: Abrasão no cotovelo (leve). Mantenha o curativo à prova d'água até amanhã antes da escola. Se um canto levantar, substitua no consultório da enfermeira.'*"
     },
     "night2_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Em cima do cobertor, dobro o cotovelo devagar, uma vez. O curativo que a enfermeira colou seguindo o veio da pele ainda não levantou nem um pouco e continua firme.*"
+        "text": "*Eu dobro o cotovelo. O curativo que a enfermeira da escola colocou está bem firme e não levantou.*"
     },
     "night2_end_1": {
         "name": "{name}",
@@ -209,52 +209,52 @@
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Na hora de responder às outras duas também, o dedo trava. Essa inquietação de não querer decepcionar ninguém que vem me procurar era um sentimento que se repetia igual na escola de antes.*"
+        "text": "*Vou responder aos outros dois, e meu dedo trava. Essa ansiedade de não decepcionar ninguém é um sentimento que eu vivenciei na minha escola antiga.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Desço o álbum até o fim e aparece a foto do passeio de primavera de 3 meses atrás. Na foto, Sojeong sorri aberta, ao lado do meu ombro. Mas, a partir da foto da sala tirada na semana seguinte, a carteira de Sojeong vai sendo empurrada um pouco para trás. A parte de baixo do tampo, onde havia um grafite pesado, está cortada para fora do quadro.*"
+        "text": "*No álbum de fotos, aparece uma foto de passeio de primavera de 3 meses atrás. Sojeong está sorrindo ao meu lado, mas na foto tirada na semana seguinte, a mesa de Sojeong está empurrada para trás e a mesa com grafite está cortada.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
-        "text": "*As frases que eu não tive coragem de enviar ficam enfileiradas no bloco de notas do celular, como cicatrizes. «Professora, na carteira da Sojeong—» «Hoje de novo, os outros—» Todas se cortam sem nem fechar a primeira linha. A última edição está parada às 2h17 da madrugada.*"
+        "text": "*Frases que eu não consegui enviar ficam alinhadas nas notas do telefone. 'Professora Regente, na mesa da Sojeong—' 'Hoje também, as crianças—' Todas são interrompidas na primeira linha, e a última edição é às 2:17 da manhã.*"
     },
     "night2_flashback_5": {
         "name": "{name}",
-        "text": "*A 38ª nota salva como rascunho é a última frase. Na 39ª, logo abaixo, nem o título está escrito. O lugar de Sojeong ficou vazio até a chamada da manhã do dia seguinte, e a professora só disse, em poucas palavras, que Sojeong tinha se transferido.*"
+        "text": "*O rascunho salvo número 38 é o último. O assento de Sojeong permaneceu vazio até o último período da aula do dia seguinte, quando nossa professora apenas disse brevemente que havia transferido.*"
     },
     "night2_flashback_7": {
         "name": "{name}",
-        "text": "*Levo o polegar trêmulo até o ícone da lixeira, embaixo da foto, e, sem coragem de apertar, apago a tela.*"
+        "text": "*Coloco meu polegar trêmulo no ícone de excluir do lixo, mas não consigo me forçar a pressioná-lo e desligar a tela.*"
     },
     "night2_flashback_8": {
         "name": "{name}",
-        "text": "*Na lista do mensageiro, ligada de novo, os nomes das duas pessoas a quem ainda não respondi continuam quietos, cada um com o número «1».*"
+        "text": "*Na lista de mensagens após ligá-la novamente, os nomes das duas pessoas para quem não respondi permanecem com um '1' ao lado.*"
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Abro mais uma vez a foto de Sojeong que acabei de fechar. Eu, de pé ao lado dela, sorrio olhando para a lente da câmera à frente, mas os olhos de Sojeong, naquele momento também, estavam no meu perfil.*"
+        "text": "*Reabro a foto que acabei de fechar. Estou sorrindo para frente, enquanto Sojeong ao meu lado está olhando para o meu perfil.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Um canto do peito afunda, pesado, e no fim eu não consigo escrever nem uma letra das outras duas respostas.*"
+        "text": "*Um sentimento pesado se instala em um canto do meu peito, e no final, não consigo escrever uma resposta para os outros dois.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Na tela de bloqueio, os nomes das três estão empilhados lado a lado. Leio devagar, só com os olhos, as notificações que ainda guardam calor, e então apago a tela e acendo de novo.*"
+        "text": "*Três nomes estão empilhados lado a lado na tela de bloqueio. Eu leio as notificações apenas com os olhos e desligo a tela.*"
     },
     "night2_end_2_b": {},
     "night2_end_3_b": {
         "name": "{name}",
-        "text": "*Mesmo depois que a luz da tela apaga por completo, não consigo soltar por um bom tempo o celular, que ainda guarda um calor morno.*"
+        "text": "*Mesmo com a luz apagada, não consigo largar o telefone por muito tempo.*"
     },
     "night2_end_4_b": {
         "name": "{name}",
-        "text": "*Sem conseguir dormir, saio para a cozinha e acendo a luz. Ao lado da marmita que vou levar amanhã, coloco lado a lado o arroz que sobrou, os ovos e a alga tostada.*"
+        "text": "*Não consigo dormir, então acendo a luz da cozinha. Ao lado da lancheira de amanhã, coloco o arroz, os ovos e o nori.*"
     },
     "night2_end_4_c": {
         "name": "{name}",
-        "text": "*Com as mãos desajeitadas, vou colocando na marmita, camada por camada, a omelete enrolada que acabei de fritar, a salsicha, a alga e o arroz, e guardo no fundo da geladeira.*"
+        "text": "*Com mãos desajeitadas, coloco o omelete enrolado, as salsichas e o arroz na lancheira e a coloco na geladeira.*"
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
@@ -374,7 +374,7 @@
     },
     "night2_reply_seo_react_neg": {
         "name": "Seoyeon",
-        "text": "Até amanhã. *No instante em que a mensagem é enviada, ela é marcada como lida, de um jeito seco.*"
+        "text": "Até amanhã. *Assim que a resposta é enviada, ela é marcada como lida imediatamente, e apenas uma saudação seca retorna.*"
     },
     "night2_reply_yuna_react_neg": {
         "name": "Yuna",
