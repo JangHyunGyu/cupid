@@ -1166,7 +1166,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_seo_event_4": {
         "background": "assets/images/background/school_festival.webp",
-        "character": "assets/images/characters/haeun_normal.png",
+        "character": "assets/images/characters/haeun_laugh.png",
         "next": "tour_seo_event_5"
     },
     "tour_seo_event_5": {
@@ -1177,7 +1177,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_seo_2": {
         "background": "assets/images/background/school_festival.webp",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "tour_seo_3"
     },
     "tour_seo_3": {
@@ -1227,7 +1227,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_seo_12": {
         "background": "assets/images/background/school_festival.webp",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_surprised.png",
         "next": "tour_seo_13"
     },
     "tour_seo_13": {
@@ -1357,7 +1357,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_yuna_6": {
         "background": "assets/images/background/yuna_hideout_day.webp",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_soft_smile.png",
         "next": "tour_yuna_7"
     },
     "tour_yuna_7": {

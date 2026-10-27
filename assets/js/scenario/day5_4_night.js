@@ -548,7 +548,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_perfect_homeroom_3c": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/teacher_smile.png",
+        "character": "assets/images/characters/teacher_laugh.png",
         "next": "hidden_perfect_homeroom_3e"
     },
     "hidden_perfect_homeroom_3e": {
@@ -646,7 +646,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_homeroom_3": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "next": "hidden_true_homeroom_3_b"
     },
     "hidden_true_homeroom_3_b": {
@@ -862,7 +862,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_perfect_nurse_3b": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "hidden_perfect_nurse_4",
         "timeOfDay": "day"
     },
@@ -880,7 +880,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_perfect_nurse_5": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "hidden_perfect_nurse_5b",
         "timeOfDay": "day"
     },
@@ -1027,7 +1027,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_nurse_3": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "hidden_true_nurse_3_b"
     },
     "hidden_true_nurse_3_b": {
@@ -1161,7 +1161,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_good_nurse_2_c": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "hidden_good_nurse_2_d",
         "timeOfDay": "day"
     },

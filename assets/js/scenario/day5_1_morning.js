@@ -729,7 +729,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "morning5_committed_seo": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "hidden_homeroom_d5_check"
     },
     "morning5_committed_yuna": {
@@ -1293,7 +1293,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_nurse_d5_6": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "hidden_nurse_d5_6_b"
     },
     "hidden_nurse_d5_6_b": {

@@ -58,7 +58,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_school.png",
         "next": "morning2_yuna_seen",
         "characters": {
-            "left": "assets/images/characters/seyoun_normal.png",
+            "left": "assets/images/characters/seyoun_smile.png",
             "center": "assets/images/characters/yuna_normal.png",
             "right": "assets/images/characters/dain_normal.png"
         }

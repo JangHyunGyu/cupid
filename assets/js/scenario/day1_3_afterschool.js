@@ -422,7 +422,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_homeroom_honest_6_b": {
         "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "next": "after_homeroom_honest_choice2"
     },
     "after_homeroom_honest_choice2": {
@@ -565,7 +565,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_nurse_enter_4_d": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_smile.png",
         "next": "after_nurse_enter_5"
     },
     "after_nurse_enter_5": {

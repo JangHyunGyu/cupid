@@ -212,7 +212,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_dain_9_b": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_surprised.png",
         "next": "after2_dain_9_c"
     },
     "after2_dain_9_c": {
@@ -258,7 +258,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "after2_dain_16": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_smile.png",
         "affinityChar": "Dain",
         "affinityBranches": [{"minAffinity":25,"next":"after2_dain_skinship_1"},{"minAffinity":-100,"next":"after2_dain_freetalk"}],
         "next": "after2_dain_freetalk"

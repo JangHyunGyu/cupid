@@ -78,7 +78,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "morning3_seo_gate_6": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "morning3_seo_gate_6_b"
     },
     "morning3_seo_gate_6_b": {

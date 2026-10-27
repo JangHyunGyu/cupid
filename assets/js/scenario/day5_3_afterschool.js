@@ -347,7 +347,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_farewell_dain_4_d": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_smile.png",
         "next": "after5_farewell_dain_5",
         "framing": "far"
     },

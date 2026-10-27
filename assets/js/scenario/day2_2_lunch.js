@@ -118,7 +118,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "lunch2_seo_6b_yuna": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_smile.png",
         "next": "lunch2_seo_7"
     },
     "lunch2_seo_1": {
@@ -510,7 +510,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "lunch2_dain_end_e": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "lunch2_dain_end_f"
     },
     "lunch2_dain_end_ins4_first": {
@@ -543,7 +543,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "lunch2_dain_end_i": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "lunch2_dain_end_j"
     },
     "lunch2_dain_end_j": {

@@ -1076,7 +1076,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "hidden_homeroom_d4_cafe_5_b": {
         "background": "assets/images/background/cafe.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/teacher_smile.png",
+        "character": "assets/images/characters/teacher_soft_smile.png",
         "next": "hidden_homeroom_d4_cafe_5_c"
     },
     "hidden_homeroom_d4_cafe_5_c": {
@@ -1234,7 +1234,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_morning_freetalk": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "hidden_nurse_d4_check"
     },
     "hidden_nurse_d4_check": {
@@ -1253,7 +1253,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_1_b": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_surprised.png",
         "next": "hidden_nurse_d4_2"
     },
     "hidden_nurse_d4_2": {
@@ -1493,7 +1493,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_meal_4_b": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "next": "hidden_nurse_d4_freetalk"
     },
     "hidden_nurse_d4_pass": {

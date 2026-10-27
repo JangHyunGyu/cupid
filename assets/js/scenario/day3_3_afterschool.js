@@ -561,7 +561,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "after3_seo_correct_7": {
         "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_smile.png",
         "next": "after3_seo_correct_8"
     },
     "after3_seo_correct_8": {
@@ -885,7 +885,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "after3_reject_for_dain_1": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "after3_reject_for_dain_2"
     },
     "after3_reject_for_dain_2": {
@@ -1713,7 +1713,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "haeun_cheer_choice": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
+        "character": "assets/images/characters/haeun_soft_smile.png",
         "choices": [
             { "next": "haeun_cheer_up", "stats": { "Haeun": { "affinity": 1 } } },
             { "next": "haeun_cheer_down", "stats": { "Haeun": { "affinity": -1 } } },

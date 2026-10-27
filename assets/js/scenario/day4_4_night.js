@@ -1307,7 +1307,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_4": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_soft_smile.png",
         "next": "wall_dain_5"
     },
     "wall_dain_5": {
@@ -2165,7 +2165,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_yuna_sub_2": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
-        "character": "assets/images/characters/yuna_smile.png",
+        "character": "assets/images/characters/yuna_soft_smile.png",
         "setFlags": ["day4_yuna_wall_broken"],
         "next": "wall_yuna_freetalk"
     },

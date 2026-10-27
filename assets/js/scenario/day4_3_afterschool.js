@@ -166,7 +166,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "confess_seo_yes_6": {
         "background": "assets/images/background/top_school.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "confess_seo_yes_7",
         "framing": "close"
     },

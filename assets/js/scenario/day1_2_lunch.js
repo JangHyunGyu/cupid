@@ -155,7 +155,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "lunch_seo_21": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_smile.png",
         "next": "lunch_seo_22"
     },
     "lunch_seo_22": {

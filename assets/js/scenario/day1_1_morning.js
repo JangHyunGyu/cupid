@@ -43,7 +43,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "seoyeon_meet_2": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "seoyeon_meet_3"
     },
     "seoyeon_meet_3": {
@@ -182,7 +182,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "hallway_6_c": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "hallway_7"
     },
     "hallway_7": {
@@ -239,7 +239,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "classroom_3_b": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "next": "classroom_5_b"
     },
     "classroom_5_b": {

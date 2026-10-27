@@ -72,7 +72,7 @@
 - 배경: `school.png`
 - 다음: `seoyeon_meet_3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_soft_smile.png`
 **서연**: 명찰에도 {name}이라고 적혀 있네. 반가워. *단정한 손끝으로 클립보드 명단에 가볍게 표시를 남긴다.*
 
 ---
@@ -318,7 +318,7 @@
 - 배경: `school_hallway.png`
 - 다음: `hallway_7`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_soft_smile.png`
 **서연**: *입꼬리를 살짝 올린 채 대답 대신 열쇠를 다시 주머니 깊숙이 넣는다.*
 
 ---
@@ -419,7 +419,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_5_b`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `teacher_smile.png`
 **{name}**: 오늘 전학 온 {name}입니다. 잘 부탁드립니다. *인사를 마치고 고개를 들자 담임이 출석부의 내 이름 옆에 단정하게 점을 찍으며 눈웃음을 짓는다.*
 
 ---
@@ -963,7 +963,7 @@
 - 배경: `top_school.png`
 - 다음: `lunch_seo_22`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_smile.png`
 **서연**: *서연이 젓가락 끝으로 도시락 칸막이를 톡 건드리며 작게 웃음을 터뜨린다.* 학교 소감을 물었는데 대답이 왜 도시락 칭찬이야.
 
 ---
@@ -2472,7 +2472,7 @@
 - 배경: `teacher_office.png`
 - 다음: `after_homeroom_honest_choice2`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `teacher_smile.png`
 **담임선생님**: *장난기 어린 미소와 함께 엄지손가락으로 출석부의 살짝 접힌 귀퉁이를 꾹 눌러 편다.*
 
 ---
@@ -2713,7 +2713,7 @@
 - 배경: `nurse_room.png`
 - 다음: `after_nurse_enter_5`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_smile.png`
 **보건선생님**: *여유로운 눈웃음을 지으며 전자체온계를 건네더니 책상 아래 선반에서 혈압계를 꺼내 올린다.*
 
 ---
@@ -4590,7 +4590,7 @@
 - 배경: `top_school.png`
 - 다음: `lunch2_seo_7`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_smile.png`
 **서연**: *도시락 뚜껑 모서리를 나무젓가락 끝으로 톡 치며 미소 짓는다.* 그 핑계, 이상하게 설득력이 있네.
 
 ---
@@ -5373,7 +5373,7 @@
 - 배경: `nurse_room.png`
 - 다음: `lunch2_dain_end_f`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **보건선생님**: *진료 기록지를 정리하다 고개를 든 선생님의 눈매가 부드럽게 휘어진다.* 어라, 어제 왔던 전학생이네.
 
 ---
@@ -5429,7 +5429,7 @@
 - 배경: `nurse_room.png`
 - 다음: `lunch2_dain_end_j`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **{name}**: 팔꿈치 아래에 수건까지 받치는 거예요? 생각보다 처치 준비가 본격적이네요. *선생님이 소독약 병과 하얀 거즈를 꺼내 내 팔꿈치 아래를 부드럽게 받쳐 올린다.*
 
 ---
@@ -6518,7 +6518,7 @@
 - 배경: `gym.png`
 - 다음: `after2_dain_9_c`
 
-- 캐릭터: `dain_normal.png`
+- 캐릭터: `dain_surprised.png`
 **다인**: *바닥을 튀어 오른 공을 두 손으로 가볍게 잡아채며 눈을 동그랗게 뜬다.* 어라? 초보인 줄 알고 살살 봐주려고 했는데 큰일 날 뻔했네.
 
 ---
@@ -6603,7 +6603,7 @@
   - [기본] → `after2_dain_freetalk`
 - 다음: `after2_dain_freetalk`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_smile.png`
 **다인**: *주먹을 어깨 높이까지 치켜들었다가 피식 웃으며 자기 옆구리에 붙인다.* 이 능구렁이 사기꾼 같으니라고. 아, 근데 오랜만에 진짜 땀 나게 재밌었다!
 
 ---
@@ -9105,7 +9105,7 @@
 - 배경: `school.png`
 - 다음: `morning3_seo_gate_6_b`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_soft_smile.png`
 **서연**: *서연의 입꼬리가 부드럽게 휘어진다.* 농담이야. 같이 늦은 이유는 내가 알아서 설명할게.
 
 ---
@@ -11572,7 +11572,7 @@
 - 스탯: Yuna +5
 - 다음: `lunch3_yuna_skin_check`
 
-- 캐릭터: `yuna_normal.png`
+- 캐릭터: `yuna_soft_smile.png`
 **유나**: *유나의 눈동자가 작게 흔들리더니 이내 옅은 미소가 번진다.* 고마워. 네가 준 거니까 다 먹을게.
 
 ---
@@ -12276,7 +12276,7 @@
 - 배경: `school_hallway.png`
 - 다음: `after3_reject_for_dain_2`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_soft_smile.png`
 **서연**: *복도에서 마주친 서연은 옅은 미소를 띤 채 클립보드의 종이 모서리를 가지런히 맞춘다.*
 
 ---
@@ -12925,7 +12925,7 @@
 - 배경: `student_room.png`
 - 다음: `after3_seo_correct_8`
 
-- 캐릭터: `seyoun_laugh.png`
+- 캐릭터: `seyoun_smile.png`
 **서연**: *서연의 입술 사이로 결국 나지막한 웃음소리가 새어 나온다.* 볼펜 하나까지 일일이 색출하면 애들이 학생회를 너무 무서워하잖아.
 
 ---
@@ -14577,7 +14577,7 @@
   3. "응원해 줘서 고마워. 서연도 들으면 힘이 될 거야." → `haeun_cheer_up` | Haeun +1
   4. "고개만 끄덕이고 시선을 돌린다" → `haeun_cheer_down` | Haeun -1
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_soft_smile.png`
 **하은**: *하은이 작고 희미하게 미소 짓는다.* 서연 선배가 옛날처럼 편하게 웃으셨으면 좋겠어요. 그 옆자리에 선배가 있어 주면 더 바랄 게 없고요. 뒤에서 응원하는 후배가 한 명쯤 있다는 것만 기억해 주세요.
 
 ---
@@ -16081,7 +16081,7 @@
 - 배경톤: `warm`
 - 다음: `hidden_homeroom_d4_cafe_5_c`
 
-- 캐릭터: `teacher_smile.png`
+- 캐릭터: `teacher_soft_smile.png`
 **{name}**: 여백에 메모할 때 제 이름은 비워 둘까요? 문예부 애들이 제 필체를 알아보면 선생님이 곤란하실까 봐요. *내 말에 선생님이 컵홀더를 매만지던 손을 멈추고 옅게 웃는다.*
 
 ---
@@ -16348,7 +16348,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_check`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **보건선생님**: *상담 기록지 파일철을 부드럽게 덮는다.* 방금 같이 적어 둔 연락 순서 기억하지? 숨이 턱 막히는 순간이 오면 혼자 참지 말고 첫 번째 칸에 적힌 곳부터 찾아가.
 
 ---
@@ -16406,7 +16406,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_2`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_surprised.png`
 **보건선생님**: *선생님이 눈을 동그랗게 뜨며 몸을 돌린다.* 어라, 주말 아침인데 진짜 도와주러 온 거야?
 
 ---
@@ -16819,7 +16819,7 @@
 - 배경: `nurse_room.png`
 - 다음: `hidden_nurse_d4_freetalk`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **보건선생님**: *선생님이 가벼운 미소를 남기고 완성된 응급키트 상자를 행사 담당 교사에게 인계한다.*
 
 ---
@@ -18731,7 +18731,7 @@
 - Framing: `close`
 - 다음: `confess_seo_yes_7`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_soft_smile.png`
 **서연**: 네가 그렇게 다정하게 빠져나갈 길을 만들어 주면 내가 더 다른 생각을 못 하잖아.
 
 ---
@@ -20787,7 +20787,7 @@
 - 배경톤: `lights-off`
 - 다음: `wall_dain_5`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_soft_smile.png`
 **{name}**: *초록빛 비상등만 희미하게 켜진 밤의 체육관. 다인이 텅 빈 코트 한가운데 서서 홀로 배구공을 바닥에 튕기고 있다. 나를 보고 애써 입꼬리는 올리지만 양어깨가 잔뜩 굳어 있다.*
 
 ---
@@ -22008,7 +22008,7 @@
 - 플래그: `day4_yuna_wall_broken`
 - 다음: `wall_yuna_freetalk`
 
-- 캐릭터: `yuna_smile.png`
+- 캐릭터: `yuna_soft_smile.png`
 **유나**: 고마워. 이 편지는 이제 다시 봉투에 넣어 둘게. *유나가 옅게 한쪽 입꼬리를 올리며 편지를 봉투 안으로 깊숙이 밀어 넣는다.*
 
 ---
@@ -22969,7 +22969,7 @@
 - 배경: `room_school.png`
 - 다음: `hidden_homeroom_d5_check`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_soft_smile.png`
 **{name}**: *책상 위에는 더 이상 비밀스러운 쪽지가 놓여 있지 않다. 대신 교실 앞쪽에서 안내 자료를 정리하던 서연이 클립보드를 품에 안은 채 내 눈을 맞추고는 살짝 미소 짓는다. 유나와 다인은 담담한 얼굴로 축제 준비 일정만 짧게 건네고 지나간다.*
 
 ---
@@ -24125,7 +24125,7 @@
 - 배경: `school_hallway.png`
 - 다음: `hidden_nurse_d5_6_b`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **보건선생님**: *그제야 안심한 듯 눈매가 부드럽게 풀린다.* 그렇게만 해 주면 돼. 자, 여기 응급처치 카드.
 
 ---
@@ -25361,7 +25361,7 @@
 - 배경: `school_festival.webp`
 - 다음: `tour_seo_event_5`
 
-- 캐릭터: `haeun_normal.png`
+- 캐릭터: `haeun_laugh.png`
 **하은**: *하은의 눈이 동그랗게 커졌다가 이내 환하게 휘어진다.* 네! 대신 불안하다고 중간에 몰래 확인하러 오시면 안 돼요!
 
 ---
@@ -25380,7 +25380,7 @@
 - 배경: `school_festival.webp`
 - 다음: `tour_seo_3`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_soft_smile.png`
 **서연**: *교문 기둥을 올려다보며 입가에 옅은 미소를 띤다.* 우리, 여기서 처음 인사했었지.
 
 ---
@@ -25470,7 +25470,7 @@
 - 배경: `school_festival.webp`
 - 다음: `tour_seo_13`
 
-- 캐릭터: `seyoun_normal.png`
+- 캐릭터: `seyoun_surprised.png`
 **서연**: 잃어버리지 말고 잘 챙겨 둬. *열쇠고리를 건네는 서연의 따뜻한 손가락 끝이 내 손바닥을 길게 스친다. 서연은 화들짝 놀란 듯 손을 거두어 자기 가방끈을 꽉 쥔다.*
 
 ---
@@ -25659,7 +25659,7 @@
 - 배경: `yuna_hideout_day.webp`
 - 다음: `tour_yuna_7`
 
-- 캐릭터: `yuna_smile.png`
+- 캐릭터: `yuna_soft_smile.png`
 **유나**: *유나의 입가에 아주 옅은 미소가 번진다. 가방 안에서 새 노트를 꺼내 무릎 위에 올린다.* 그동안 썼던 문장들, 다듬어서 새 노트에 깨끗하게 옮겨 적었어. 옆에 고쳐 쓴 자국이 남아서 여백은 아직 조금 지저분하지만.
 
 ---
@@ -27204,7 +27204,7 @@
 - Framing: `far`
 - 다음: `after5_farewell_dain_5`
 
-- 캐릭터: `dain_laugh.png`
+- 캐릭터: `dain_smile.png`
 **다인**: ...자, 이제 빨리 가 봐. 웃는 얼굴로 보내 주는 건 딱 여기까지만 할래. 내가 네 앞에서까지 센 척하면서 눈물 참을 필요는 없잖아. *다인이 돌아서서 배구공을 보관함에 쿵 밀어 넣고 무릎 보호대 끈을 세게 고쳐 맨다.*
 
 ---
@@ -29104,7 +29104,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_perfect_homeroom_3e`
 
-- 캐릭터: `teacher_smile.png`
+- 캐릭터: `teacher_laugh.png`
 **담임선생님**: *그녀가 놀란 눈으로 입가를 가렸다가 이내 환하게 웃으며 다가온다.* 세상에, 정말 우연이네. *품에 안고 있던 행사 자료를 테이블 위에 내려놓는다.* 오늘 퇴근길이야? 시간 괜찮으면 잠깐 앉았다 갈래?
 
 ---
@@ -29350,7 +29350,7 @@
 - 배경: `bookstore.png`
 - 다음: `hidden_true_homeroom_3_b`
 
-- 캐릭터: `teacher_normal.png`
+- 캐릭터: `teacher_smile.png`
 **담임선생님**: *그녀의 눈동자가 놀라움으로 크게 흔들리더니 이내 벅찬 미소가 번진다.* ...정말 오랜만이네. 이제는 서로 뭐라고 불러야 할까?
 
 ---
@@ -29842,7 +29842,7 @@
 - 시간대: `day`
 - 다음: `hidden_perfect_nurse_4`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **보건선생님**: *그녀가 찻잔을 감싸 쥐며 조심스레 미소 짓는다.* 예전엔 내가 학교에서 네 상담을 맡았던 교사였잖아. 이제는 다 큰 어른이라지만 이렇게 단둘이 마주 앉아도 너 괜찮겠어?
 
 ---
@@ -29872,7 +29872,7 @@
 - 시간대: `day`
 - 다음: `hidden_perfect_nurse_5b`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **보건선생님**: *그녀의 눈매가 나른하고 달콤한 곡선으로 부드럽게 풀린다.* ...그래? 그럼 우리 다음 만남은, 진료도 상담도 아닌 두 사람의 사적인 약속으로 잡아 볼까?
 
 ---
@@ -30175,7 +30175,7 @@
 - 배경: `cafe.png`
 - 다음: `hidden_true_nurse_3_b`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **보건선생님**: *주원이 찻잔을 두 손으로 감싸 쥐며 작게 웃는다.* 다시 만나니 호칭부터 어렵네. 다 큰 성인인데 예전처럼 계속 선생님이라고 부르라고 하면 어색하려나.
 
 ---
@@ -30461,7 +30461,7 @@
 - 시간대: `day`
 - 다음: `hidden_good_nurse_2_d`
 
-- 캐릭터: `nurse_normal.png`
+- 캐릭터: `nurse_soft_smile.png`
 **보건선생님**: *그녀가 잠시 말을 고르듯 내 얼굴을 바라보다가 다정하게 고개를 끄덕인다.* 그래, 무사히 졸업해서 고마워. 앞으로 사회에 나가서 다치거나 아프면 예전처럼 혼자 참지 말고 병원부터 가야 해. 이제는 내가 옆에서 직접 확인해 줄 수 없으니까.
 
 ---

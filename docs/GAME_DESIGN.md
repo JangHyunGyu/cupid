@@ -137,11 +137,12 @@ AI가 반환한 표정은 해당 캐릭터가 실제 보유한 이미지로만 �
 
 | 캐릭터 | 표정 목록 (필요 호감도) |
 |--------|----------------------|
-| 서연 (11개) | normal(0), shy(10), very_shy(20), angry(30), sad(40), laugh(50), cry(60), pout(70), worried(80), back(90), bikini(별도) |
-| 유나 (7개) | normal(0), smile(17), shy(33), angry(50), sad(67), bored(83), bikini(별도) |
-| 다인 (9개) | normal(0), shy(13), angry(25), sad(38), laugh(50), pout(63), active(75), sweat(88), bikini(별도) |
-| 담임 (6개) | normal(0), smile(20), shy(40), angry(60), sad(80), bikini(별도) |
-| 보건 (4개) | normal(0), shy(33), angry(67), bikini(별도) |
+| 서연 (18개) | normal(0), shy(6), very_shy(13), angry(19), sad(25), laugh(31), cry(38), pout(44), worried(50), back(56), flushed(63), climax(별도), bikini(별도), soft_smile(81), smile(88), surprised(94), pain(100), exhausted(별도) |
+| 유나 (17개) | normal(0), smile(7), shy(13), angry(20), sad(27), bored(33), flushed(40), worried(47), laugh(53), pout(60), climax(별도), bikini(별도), soft_smile(80), surprised(87), cry(93), pain(100), exhausted(별도) |
+| 다인 (18개) | normal(0), shy(6), angry(13), sad(19), pain(25), laugh(31), pout(38), active(44), sweat(50), flushed(56), climax(별도), bikini(별도), soft_smile(75), smile(81), worried(88), surprised(94), cry(100), exhausted(별도) |
+| 담임 (16개) | normal(0), smile(7), shy(14), angry(21), sad(29), flushed(36), worried(43), climax(별도), bikini(별도), soft_smile(64), laugh(71), pout(79), surprised(86), cry(93), pain(100), exhausted(별도) |
+| 보건 (18개) | normal(0), shy(6), angry(13), flushed(19), worried(25), tired(31), dry_smile(38), smile(44), sad(50), climax(별도), bikini(별도), soft_smile(69), laugh(75), pout(81), surprised(88), cry(94), pain(100), exhausted(별도) |
+| 하은 (17개) | normal(0), worried(33), firm(67), relieved(100), shy(45), smile(60), sad(20), climax(별도), soft_smile(20), angry(20), flushed(80), laugh(60), pout(33), surprised(20), cry(20), pain(20), exhausted(별도) |
 
 #### 비키니 해금
 | 대상 | 호감도 조건 | 프리토킹 조건 |
@@ -554,7 +555,7 @@ TRUE 엔딩은 본편 에필로그 데이트(1회)로 남긴다. 갤러리 연�
 *   **대사 톤**: 조심스럽고 공손한 존댓말. 서연·유나·다인은 각각 `서연 선배`, `유나 선배`, `다인 선배`로 부르고 교직원은 `선생님`으로 부른다. 걱정, 질투, 죄책감이 쌓여도 반말이나 노골적인 압박으로 바꾸지 않는다. 만 17세 학생이므로 관계 묘사는 비성적으로 유지한다.
 *   **감정 단계**: Day 3 응원(±1) → Day 4 자각(-1/+2/-2/+1) → Day 5 점심 흔들림(-1/+2/-2/+1) → Day 5 방과후 죄책감(-2/+3/+2/-3). 각 단계는 해당 선행 장면과 호감도 조건을 만족해야 열리며, 네 단계 최적 합계는 +8이다.
 *   **루트와 호감도**: 실제 저장 상한 100. Day 5 개인 대화 뒤 45 이상이면 선택 가능하다. 선언 시 하은 +20, 밀려난 최고 호감 상대 -30을 적용하고 그룹 3라운드와 5턴 개인 대화 2회를 거친다. 선택 선언만으로 교제하지 않으며 최종 100이면 전용 PERFECT, 미달이면 기존 루트로 복귀한다. 이론 최대는 선택 선언 20 + 단계 선택 8 + 프리토킹 33턴 × 3 = 127이다.
-*   **이미지**: 전용 스프라이트 `haeun_normal.png`, `haeun_worried.png`, `haeun_firm.png`, `haeun_relieved.png`와 대응 WebP. 신뢰 이벤트 CG `event_haeun_trust.png`와 엔딩 CG `ending_perfect_haeun.png`를 본편·갤러리에 연결한다. 신뢰 CG는 Day 5 점심의 8 이상 진입 분기에서 관련 선택 뒤 표시하며, 엔딩 CG는 최종 100점 판정 뒤 표시한다.
+*   **이미지**: 전용 스프라이트 `haeun_normal.png`, `haeun_soft_smile.png`, `haeun_smile.png`, `haeun_laugh.png`, `haeun_shy.png`, `haeun_worried.png`, `haeun_sad.png`, `haeun_angry.png`, `haeun_pout.png`, `haeun_surprised.png`, `haeun_flushed.png`, `haeun_firm.png`, `haeun_relieved.png`, `haeun_cry.png`, `haeun_pain.png`, `haeun_climax.png`, `haeun_exhausted.png`와 대응 WebP. 신뢰 이벤트 CG `event_haeun_trust.png`와 엔딩 CG `ending_perfect_haeun.png`를 본편·갤러리에 연결한다. 신뢰 CG는 Day 5 점심의 8 이상 진입 분기에서 관련 선택 뒤 표시하며, 엔딩 CG는 최종 100점 판정 뒤 표시한다.
 
 ### 6. 공략 가능 서브캐릭터 (히든 루트)
 
