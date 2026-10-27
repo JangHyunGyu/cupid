@@ -1,0 +1,1015 @@
+{
+  "date": "2026-10-27",
+  "project": "cupid",
+  "baseCommit": "6f78ddbec4e3dbe391041a111923076cc235ab60",
+  "summary": {
+    "pngFiles": 66,
+    "webpFiles": 6,
+    "imageBytesSaved": 192822523,
+    "temporaryFilesRemoved": 209,
+    "temporaryBytesRemoved": 263322220
+  },
+  "policy": {
+    "resolution": "All native dimensions and aspect ratios retained; square story/gallery CGs preserved",
+    "png": "Lossless IDAT replacement; decoded RGBA and all original ancillary chunks identical",
+    "webp": "q92 or q95, method 6; matching PNG or separate byte-identical WebP master retained; exact alpha; display SSIM >= 0.99 and MAE <= 1.5; minimum 15% saving",
+    "protectedMedia": "432 encrypted offline archives, deterministic recovery fixtures, R2 objects, session-signing secrets and authorization paths unchanged; no local archive key available",
+    "losslessDelivery": "Existing .lossless.webp background contracts retained",
+    "ui": "No visible layout, copy or interaction changes"
+  },
+  "validation": {
+    "fullTest": "npm test passed",
+    "build": "npm run build passed; 472 allowlisted runtime files; private assets and masters excluded",
+    "cache": "npm run cache:check passed after each applied image batch; repeated as final pre-publish gate",
+    "browser": "Five targeted E2E assertions passed: background fallback and two corrected-art cases; two artwork/CG cases rerun with a 180-second local timeout (assertions unchanged) after original 45-second timeout",
+    "testEnvironment": "Ten existing public title sprites were fetched with GET and verified against media-storage SHA-256 for the local test server; protected fixtures and production authorization were not changed",
+    "visual": {
+      "project": "cupid",
+      "layoutEqual": true,
+      "browserErrors": 0,
+      "viewports": [
+        [
+          1440,
+          900
+        ],
+        [
+          1024,
+          900
+        ],
+        [
+          768,
+          1024
+        ],
+        [
+          375,
+          812
+        ],
+        [
+          667,
+          375
+        ]
+      ],
+      "screenshots": [
+        {
+          "file": "cupid-1024-gallery.png",
+          "ssim": 1.0,
+          "meanError": 0.0,
+          "changedPixels": 0
+        },
+        {
+          "file": "cupid-1024-home-ko.png",
+          "ssim": 1.0,
+          "meanError": 0.0,
+          "changedPixels": 0
+        },
+        {
+          "file": "cupid-1024-story.png",
+          "ssim": 0.996078411336268,
+          "meanError": 0.5728345630787037,
+          "changedPixels": 772221
+        },
+        {
+          "file": "cupid-1440-gallery.png",
+          "ssim": 0.9999999979289571,
+          "meanError": 7.716049382716049e-07,
+          "changedPixels": 1
+        },
+        {
+          "file": "cupid-1440-home-ko.png",
+          "ssim": 1.0,
+          "meanError": 0.0,
+          "changedPixels": 0
+        },
+        {
+          "file": "cupid-1440-story.png",
+          "ssim": 0.9902817678644613,
+          "meanError": 0.8754490740740741,
+          "changedPixels": 1122885
+        },
+        {
+          "file": "cupid-375-gallery.png",
+          "ssim": 1.0,
+          "meanError": 0.0,
+          "changedPixels": 0
+        },
+        {
+          "file": "cupid-375-home-ko.png",
+          "ssim": 1.0,
+          "meanError": 0.0,
+          "changedPixels": 0
+        },
+        {
+          "file": "cupid-375-story.png",
+          "ssim": 0.9948718337515542,
+          "meanError": 0.553688013136289,
+          "changedPixels": 238763
+        },
+        {
+          "file": "cupid-667-gallery.png",
+          "ssim": 0.9989893882075357,
+          "meanError": 0.13633716475095786,
+          "changedPixels": 2884
+        },
+        {
+          "file": "cupid-667-home-ko.png",
+          "ssim": 1.0,
+          "meanError": 0.0,
+          "changedPixels": 0
+        },
+        {
+          "file": "cupid-667-story.png",
+          "ssim": 0.9950069730747083,
+          "meanError": 0.5726989838414126,
+          "changedPixels": 186715
+        },
+        {
+          "file": "cupid-768-gallery.png",
+          "ssim": 0.9999999965352219,
+          "meanError": 1.2715657552083333e-06,
+          "changedPixels": 1
+        },
+        {
+          "file": "cupid-768-home-ko.png",
+          "ssim": 1.0,
+          "meanError": 0.0,
+          "changedPixels": 0
+        },
+        {
+          "file": "cupid-768-story.png",
+          "ssim": 0.994896517813999,
+          "meanError": 0.6290944417317709,
+          "changedPixels": 682123
+        }
+      ]
+    }
+  },
+  "png": [
+    {
+      "path": "assets/images/background/annex_exhibit_hallway.png",
+      "before": 5737007,
+      "after": 4114285,
+      "width": 2048,
+      "height": 1536,
+      "beforeSha256": "5e6bf967ef1ea845b975f72eb32804d23497215ab80ef3ef9275a96c073b3930",
+      "afterSha256": "08dbb9dac360b3b6ab7bfb2bd37a004c32bd7f7c9e0dfc4b3648aa814b171223",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/arcade.png",
+      "before": 9739573,
+      "after": 5149594,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "30d94d2d000af61835fadb4b795f8bcc7792770ae7e5d7f0726c5c598746379d",
+      "afterSha256": "523f8dfa6a78385c2167268a59c65a66f2911965d65da3c4715975f326b376ec",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/bookstore.png",
+      "before": 8709046,
+      "after": 4522892,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "567bfc72974ea94a3016a46f4820976faac178bc36f99dc8dccdaec3fdaa485d",
+      "afterSha256": "83ca3c27b8ceaca8c7fee2924139eba96df6848e4b976cec01284a1782d579e1",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/cafe.png",
+      "before": 7587729,
+      "after": 4080972,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "14bf5590670da294cddd3270b70c42607fd8d29224ec125793b79eeac96d08ce",
+      "afterSha256": "2b94c6f18f4f2e8b409c91454401b77b9880fa62d16c029a95364abeeb8f4bad",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/gym.png",
+      "before": 9177455,
+      "after": 4928729,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "40a01017342c4a6aabd290c0ea18b78d1c23f6f83f7c3f4d739896620e83c9e0",
+      "afterSha256": "27c9725a3758f0fc4ae6fb6b8fd0c867a11c1452ec8b8ad464cb09c6834fbaa5",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/library_old.png",
+      "before": 8582092,
+      "after": 4509484,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "6b4c15e963ee776a34f1bb0468d021da4df6c863cb23561a0037d4a70739fb99",
+      "afterSha256": "6ab37f8cf1b5d2ab6aa3c44385c7a0566c3d84c300161b04c04e7e530e81b180",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/museum.png",
+      "before": 7463442,
+      "after": 4021412,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "57d438045d0ca850fa5a4c494a2234bf405985394a593d86c842a7049ea00aeb",
+      "afterSha256": "cb63ec781d616b9324714a66303c1368623ebdc378c1aeba3d1858cf379ecf7e",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/nurse_house.png",
+      "before": 8316056,
+      "after": 4308393,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "8012ac1bc0cebf03f7e27a5d31cfcca8dffcbc0d9c2a6dfa8a2434f895f9a4f2",
+      "afterSha256": "f4a4f821c4f1c9af3197117d9ebe30f535ec776a270ed207aedf5e9d04361de3",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/nurse_room.png",
+      "before": 8200773,
+      "after": 4357351,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "4201ca64df333c4c3c557443b719f1ef290006f1f056257ca89e83b1672e2fee",
+      "afterSha256": "618edba8e0f2931971a4eb13812bc1636a6c8c8badd54ac73658212350fdc4cc",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/park.png",
+      "before": 10691445,
+      "after": 6501739,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "154034d5e0be6442a7523340be7d905d0835d73f60e9b443e6d0380001be0dee",
+      "afterSha256": "9d0533a3dd3abf2529d70dc469547dcb834fdf652d14f5c51fa0e8f115298fb2",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/playground.png",
+      "before": 8102932,
+      "after": 4839930,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "8188c2882bf01aa7f13d3f4c6f63dc580f186ae57b77bf67ff9c5be8bf5925c3",
+      "afterSha256": "2a1f034a6dc89258b09f8af0e9367a11b89f787eed67a4f5f32f3b2b9f4d94da",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/room_my.png",
+      "before": 6232654,
+      "after": 3374261,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "e9a58c15dcf90a7bd11fac94656669e9e4e4aaa69eb770d05ee9ccc8c8008509",
+      "afterSha256": "f4e789e827e400f9968df33a1e41ecdae3591eb447966482103f189572a43cb3",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/room_school.png",
+      "before": 7474447,
+      "after": 3838131,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "729c90cd3949175ad4156b7f8814c460c74f12ab3aa3861a09434441b9303b32",
+      "afterSha256": "ed0cddd3c77649915a57fdd66ca97cce7673b183a9d389b0cd1e57dc4357468e",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/school.png",
+      "before": 9258954,
+      "after": 5615345,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "2e09945d20aaacca4f2d204a752926d0949923cf0aaf7209bcebf65a9b4f493e",
+      "afterSha256": "48b250a325a4ba19127e328b2190c73db54d001141b72a9875064dec19048eac",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/school_back.png",
+      "before": 8930456,
+      "after": 5376469,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "ab5cb94e99e30a6bec581057c111a008984da538a0f915c166f15b87871b294e",
+      "afterSha256": "2cc24cfbb56d1bc335e2d95420ccbc0b81d406ebc0d50629b7ff17701782be7f",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/school_basement.png",
+      "before": 7259687,
+      "after": 4114127,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "2313c3339ceba8c9bc529d9995fab273262ce17ff28494b8d8e3c42b58396c82",
+      "afterSha256": "6c519c90a00bc6ae0ccfc703ab4aa88405d1c330734fd97af034a420e2a3abe9",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/school_event_classroom.png",
+      "before": 5505798,
+      "after": 3757217,
+      "width": 2048,
+      "height": 1536,
+      "beforeSha256": "5325dbbc0d68b258fbadf43f91a9e2cda93a7f4f84a44210e425871c46fefe33",
+      "afterSha256": "030dc335acad8ffeeb89607ed0bdbdec0b4f06fe987af5c613c57d5ac258fe48",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/school_festival.png",
+      "before": 15366796,
+      "after": 14353288,
+      "width": 2880,
+      "height": 2880,
+      "beforeSha256": "9bda6324be63d25f71f3b3439d8f9b942ed102a293d836e5e5338bd474974ca6",
+      "afterSha256": "7f3ca87f38a6f0a0dfe17d50f65a23d5a351144706227faed1592ca44d185ba7",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/school_hallway.png",
+      "before": 8071386,
+      "after": 4326380,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "8c24bfec71f0ae8b72662cbd18f633b72835c9cd359bbd342ded51ecaa0c74fc",
+      "afterSha256": "c3363fdc41008493cd6a07441f014942597b0da15c7c7b4a84e8c7506f08f6d2",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/school_stairwell.png",
+      "before": 5873591,
+      "after": 4215846,
+      "width": 2048,
+      "height": 1536,
+      "beforeSha256": "f70aabb7909b8c7edc051ec848d41bb880c41c5d13741efb1a5ed7693a1fb28a",
+      "afterSha256": "25149356158dd5aeaa1ec1b6f98bb68ae5365b498ff75f8d4c3778aea138f70b",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/seyoun_room.png",
+      "before": 8498752,
+      "after": 4679967,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "c8d86d28114a692d917dd9fb32fde5dedda2f866ab21fb896aa27e816f379783",
+      "afterSha256": "520a5d851b25160c78b233dd5a6c5b97fe450785b6532249e7bfaa22e378c5b0",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/sojeong_flashback.png",
+      "before": 3599017,
+      "after": 2661597,
+      "width": 1536,
+      "height": 1536,
+      "beforeSha256": "5ae3dc1d0a72912cd5b8e460a42421ef67738576c3a8e40c2c036b0ff733962c",
+      "afterSha256": "83709b3cee7ea8d525f64cf9f5ebb079761fe5120b205f77cffc8de9f9817664",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/store.png",
+      "before": 8676866,
+      "after": 4969093,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "f574f85f991290ffef29d19a98f5fb0aa1a30d8392f10bd757a600c8d274b2fa",
+      "afterSha256": "cae4f516237a52443ee0ce3669bbb8f73f80bfddea96d9f4b026b6464a22e1e2",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/street.png",
+      "before": 9296789,
+      "after": 5366282,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "1f2b3ab5309e334a7c9070ccdec32eb4acac86a58a11c07ff93ae8e5a39507ee",
+      "afterSha256": "6bfc0657c675a41c6d4886cb6a1baf2cc8c0dc7cc662e4ae8261ea6c93e746a4",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/student_room.png",
+      "before": 8022138,
+      "after": 4411432,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "df8fdf29feb37c45edf8c1ca086e2e03401341f607018a3033d5359fa04b57bd",
+      "afterSha256": "3b3d802b364d2bd153b37a35d84a6509149a214a2fc55162fcc4ced51d51fb78",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/teacher_office.png",
+      "before": 8472953,
+      "after": 4674308,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "4ec53e8c6e1d11c33e15a8b6eafe2cac30a672605971c534d7d7282923a36981",
+      "afterSha256": "1b48d2db2d42562bd1aaef1eac15d76549eddabcafe08f01119724a9205d00da",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/teacher_room.png",
+      "before": 7694287,
+      "after": 4309466,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "51b9e7394b7d95d17ce0df9447ba0833a01382e5b93e90c549e27399639ef1d7",
+      "afterSha256": "63adfa1c1013168f60df35cc4def966526144b5f74e469587c7d1ac1ec3571a6",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/top_school.png",
+      "before": 8128197,
+      "after": 4749005,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "5288504f8bc9c3bfd81e00902cb05d443b3ec4649107f1c57f9e8d03d988764a",
+      "afterSha256": "63e46ab545944f424baa0a1a70e70e88de69d99af9d9a3ad1212c0908fcbd01e",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/background/yuna_hideout.png",
+      "before": 7589679,
+      "after": 4495465,
+      "width": 2048,
+      "height": 2048,
+      "beforeSha256": "2273b99ec91be33136b15687c7addcf916e8acdd869952b180d1bcbbb21890ba",
+      "afterSha256": "7820de1d9d7b05ea86ddeead161595987837c4df53157fefa45fe19c077f00ed",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/event_seoyeon_succulent.png",
+      "before": 11553909,
+      "after": 10689082,
+      "width": 2880,
+      "height": 2880,
+      "beforeSha256": "36f269887d6dab377aebdfcbd85433bafe8f4672db58f7154d79103846de3a2d",
+      "afterSha256": "b82c3bb538ce0315f63e5a152fdb048fcb7bbdf2117f05c190232afe31be53da",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/event_yuna_reading.png",
+      "before": 9216106,
+      "after": 8087321,
+      "width": 2880,
+      "height": 2880,
+      "beforeSha256": "bd7a9215b6bfc453822b68b9d9328a2c7b3b0795e478b141d7a37fca12744af9",
+      "afterSha256": "5f1756b9bd8155fa6b05bc4711458be19ceee031e0a6dbb36637f368c7bda6db",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/haeun_sad.png",
+      "before": 6142752,
+      "after": 5611473,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "bee0ab5077493f539ce925895183e9a4e57c7e794c496f0a3de6f7c20b98ccdd",
+      "afterSha256": "0e9b1719f11609e348ae3e6a08bd34095f9b45d6c5ee2f91d586d153fadb60ac",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/haeun_shy.png",
+      "before": 6179175,
+      "after": 5668158,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "eb446bfc3cb09b336d229a4ea72930d6be7e9adf956fcc12ceba39a0e8b1c73e",
+      "afterSha256": "7167ad126bfacb73020d67f3e1fa1d8105091ccaa0ecc9582a6b06055b1b961f",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/haeun_smile.png",
+      "before": 6361081,
+      "after": 5860655,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "41a4b7420cab3f28b7d3de6abb6430c71000f7aaeedf163623a687a75dd6087c",
+      "afterSha256": "3b66b0dab38c43674e5acefe105508936040d9f8e6b59a4f126396dc3e2542a7",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/revised/event_seoyeon_succulent.png",
+      "before": 11947098,
+      "after": 11121989,
+      "width": 2880,
+      "height": 2880,
+      "beforeSha256": "c6348d52daa0b6d70a7aa706970554cbf107371af624197bc4eac1048c767391",
+      "afterSha256": "969ce8fc025a4cad6ca9b3827315265c0dd82c1f09383c90d9d75a87a31a44b4",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/revised/school_festival.png",
+      "before": 15366796,
+      "after": 14353288,
+      "width": 2880,
+      "height": 2880,
+      "beforeSha256": "9bda6324be63d25f71f3b3439d8f9b942ed102a293d836e5e5338bd474974ca6",
+      "afterSha256": "7f3ca87f38a6f0a0dfe17d50f65a23d5a351144706227faed1592ca44d185ba7",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/revised/seyoun_date_laugh.png",
+      "before": 8539083,
+      "after": 8045613,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "fee6344ca4a3eac4f2e2abbd36e591353609e07d6815078919f70c28917dfa26",
+      "afterSha256": "8b0e326a61e0b38f0426a846dbf9c11af68520e9fd7a0c69a2c07690ef82358c",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/revised/seyoun_date_normal.png",
+      "before": 9300224,
+      "after": 8821129,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "fae428958709f9947824269f788546cabba096ce8fa29268129394aff8f74d98",
+      "afterSha256": "bd06f40751f8f08cb3bcec33a334dc11c19b4c61fcc2d6826c9cb625f7b9ad27",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/revised/seyoun_date_sad.png",
+      "before": 8617684,
+      "after": 8121630,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "c9b4e944ac87752e761945ac40516e429383423aab7e7fc39b9ec1a628743002",
+      "afterSha256": "98f21e34c9054ec4ddf9f2e78b6e9466832ad6e02c63b18a6afc5bb277169d40",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/revised/seyoun_date_shy.png",
+      "before": 8706142,
+      "after": 8205514,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "11aedb945bd7039c7264fce3a29087daa8daae46e1784b6d7860293043784f8c",
+      "afterSha256": "04bd9e577c50c237297c945a62c03eaccbbb5ed97fdcad78d6f1114ffa86ff90",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/revised/seyoun_date_worried.png",
+      "before": 8669385,
+      "after": 8181436,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "a11995948b307a03123a5fb31159a77f9561acc1eb7fc73d15d51878f75e012e",
+      "afterSha256": "83f9aa8c90b4d0981429b6289327130fa319aa55bd08e0ec8b1ff39087985fb6",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/school_festival.png",
+      "before": 13787508,
+      "after": 12892576,
+      "width": 3840,
+      "height": 2160,
+      "beforeSha256": "e02bab2a311ce03e16e8149145db75cdcb0877c70fe761528f42ffd8497e6169",
+      "afterSha256": "4599d0097366fd1d66af255a31da27010ab3e305256487726b2dcaec17ed6dda",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/seyoun_date_laugh.png",
+      "before": 7806087,
+      "after": 7329584,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "7728d28607414b5ab7de5f252977d3abfe1335b2e20a8b3b3567d2c802ac1ffd",
+      "afterSha256": "9b186af058c9eb900a790ba0ccd004bb47faba3c27a792d3908942da346c15fb",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/seyoun_date_normal.png",
+      "before": 7660515,
+      "after": 7174210,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "5ee6b6b5f2bc7a4601d65f1b82fb68fc31b3e3101156726aa51f0d3825ce5b5e",
+      "afterSha256": "2e21cbfbcf55718267f3a82975d746e3484d02e7793dc331b45b723feb75ac5a",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/seyoun_date_sad.png",
+      "before": 7685426,
+      "after": 7199952,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "9594847b7dbd48f24c00f960f28bae766aae9b653e7e8625241d6260774034a9",
+      "afterSha256": "710e50caa6f1fbde8d7b512d4ace2e53f2cbd97c15c9ee74446fde5053b5afcb",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/seyoun_date_shy.png",
+      "before": 7833275,
+      "after": 7365236,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "d18d59431c1e7284a9b01391f2555833dd8f657bff31d7a5e6b4006185013e6d",
+      "afterSha256": "80ebaee2936e90adcecc63329758732053e7b586d649139e3a9d9e521fb01e5f",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/art-expansion-20261016/seyoun_date_worried.png",
+      "before": 7890918,
+      "after": 7420218,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "5cd0238b708811e829e6db12014ef4e97aaf476517ffc45bbbe2eb6612f07e45",
+      "afterSha256": "3828c5bb6af5dae588c34a8b69787861bbfce9b733b04671076c677bbe1748bd",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/event_haeun_trust_landscape.png",
+      "before": 9835756,
+      "after": 8776785,
+      "width": 3840,
+      "height": 2160,
+      "beforeSha256": "a35f61e38ac11f671253c13e10ae6f6e5957522e14ff3612eee559e231186a38",
+      "afterSha256": "44153705e90a929e2b7c86cce2a6c62bb0b2638a9b7653d530fd9992ccf993fb",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/scene-audit-20261008/ending_harem.png",
+      "before": 28822052,
+      "after": 18089187,
+      "width": 4096,
+      "height": 4096,
+      "beforeSha256": "e9ce7ccfe9dcedca0a1e702888a79ba6f510e93953096a11b463e4c77d678760",
+      "afterSha256": "1240aa430ea54d4a3252fe065eb4916c5250fe33935bbf823cc80214ca5b0b5b",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/delivery/event_seoyeon_succulent.png",
+      "before": 11745955,
+      "after": 10937555,
+      "width": 2880,
+      "height": 2880,
+      "beforeSha256": "6cb85cf3b82fb2b694a7b421287b2bd0b49bb427c69b635e73f27093b3923800",
+      "afterSha256": "c54414a2b0922807fa8b3f7aaae384ea703d9243a6629f2b311d3c0567dab10a",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/delivery/seyoun_date_laugh.png",
+      "before": 7796510,
+      "after": 7300696,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "15c409d9c5e11c5911830c074ef97a66e4a31eb2b4ca7d3f9f3cecfa0c982568",
+      "afterSha256": "bd2f7c3b2838cd114e58a411e0a8da1176964b886519f61b57cd1db0cec74aaf",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/delivery/seyoun_date_normal.png",
+      "before": 7815616,
+      "after": 7319570,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "293f3db81ac920906d228fe261904b768753a97a527de5263a7f5f79dc902f3f",
+      "afterSha256": "d4d0e3f03635cd63ef31d5bc225bd68cd11a76975b1fd772322de211d5b3de41",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/delivery/seyoun_date_sad.png",
+      "before": 7791958,
+      "after": 7295960,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "bc2ea9fc9f28c41cb9a49cec0448dcf7464b8ac15ea6253dbf8304fcc6ea4d89",
+      "afterSha256": "8f6143d3b56c425bb739798518e9e5c07d8b232c71d785a42526f20cef12daa3",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/delivery/seyoun_date_shy.png",
+      "before": 7796727,
+      "after": 7300419,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "655811108b02d3949935b57fd9ee80a825726e871da1fca9087c764054fad033",
+      "afterSha256": "f8bc38478cffab0bfe6a131dc01364ac60a5a1e2703670824dfd6e537f7353b1",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/delivery/seyoun_date_worried.png",
+      "before": 7790747,
+      "after": 7294279,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "5b8465b8042a66ce9abf8cef87f0a6334f9e13e298803e28a0efc098095073fd",
+      "afterSha256": "703de4e4b424a913d2514ea42dcfe35890dff3eb0333e2675166fd218a6f6ae8",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/generated/event_seoyeon_succulent.png",
+      "before": 11745955,
+      "after": 10937555,
+      "width": 2880,
+      "height": 2880,
+      "beforeSha256": "6cb85cf3b82fb2b694a7b421287b2bd0b49bb427c69b635e73f27093b3923800",
+      "afterSha256": "c54414a2b0922807fa8b3f7aaae384ea703d9243a6629f2b311d3c0567dab10a",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/generated/seyoun_date_laugh.png",
+      "before": 7976787,
+      "after": 7473182,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "506ca3a351933de1a39c23a4e2a5fe70cebea1b9d92136125b7ba12e750cb788",
+      "afterSha256": "254eb4c5de03b125d589d8e4cb07c0d6a6e314f2cf3fe213e22c737e9ec88cdf",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/generated/seyoun_date_normal.png",
+      "before": 7815616,
+      "after": 7319570,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "293f3db81ac920906d228fe261904b768753a97a527de5263a7f5f79dc902f3f",
+      "afterSha256": "d4d0e3f03635cd63ef31d5bc225bd68cd11a76975b1fd772322de211d5b3de41",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/generated/seyoun_date_sad.png",
+      "before": 7779380,
+      "after": 7296094,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "a3365b7764067167bfff72143a0e000db0ea13b6e30601eb16ea7d12b5c59996",
+      "afterSha256": "fb31bcac97343667d06c0380798753ba6ef3d60d4309220b690c35193fecd39c",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/generated/seyoun_date_shy.png",
+      "before": 7914797,
+      "after": 7434236,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "205e352e08f6e3e8934fc637f34b986dd88bb84e234dea688e755e84c8eb587a",
+      "afterSha256": "a58e3598ea174896aa556b217f7d94ea7096aed472c19e90b09b503d891c7741",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/seoyeon-proportions-20261016/generated/seyoun_date_worried.png",
+      "before": 7850755,
+      "after": 7363200,
+      "width": 2480,
+      "height": 3312,
+      "beforeSha256": "2edb6ac5b1ae015a70cf80c1a226e9eea86ecd96edca42bb3bf7f3e81bb21c9b",
+      "afterSha256": "6d679030badfd626eda2025e85e8c45c3059b5bec09f6539d8321491e8575fac",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/teacher-flushed-20261016/cutout-native-3584x4800.png",
+      "before": 20599295,
+      "after": 18443630,
+      "width": 3584,
+      "height": 4800,
+      "beforeSha256": "451a0a6775e0a508f8a8cecd0c6a46ed44aa39c1bfe4751787e282b6d9268348",
+      "afterSha256": "d7ce4463f7500c58275ba5fdf9e70672ea7d7eae80abf010562367b3f0b90ec7",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/teacher-flushed-20261016/generated-3584x4800.png",
+      "before": 17295753,
+      "after": 16258901,
+      "width": 3584,
+      "height": 4800,
+      "beforeSha256": "71cf1395034a4c83395e041257a418b9be72663cf4c89ea986e36451a2ce479a",
+      "afterSha256": "9d487e1d3a54cbab86cbdce192d95a67c9b003458c3a76e5d950e195e5fc184e",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "assets/images/masters/teacher-flushed-20261016/original-before.png",
+      "before": 1585735,
+      "after": 1529508,
+      "width": 1152,
+      "height": 1536,
+      "beforeSha256": "63f90a2401ecbdef0feb2f5635168947e56ec810be94af9ea82fddd63c55b13a",
+      "afterSha256": "a20f69ffddbaa04b3b3f1a8d06b7f23488746eba7c24653db05b7c0117d23b18",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "cupid_link.png",
+      "before": 1550663,
+      "after": 1496071,
+      "width": 1024,
+      "height": 1024,
+      "beforeSha256": "fa622201cd41c24dc0ad83add9651b425d2076183dfdd67648a5fae005eebd30",
+      "afterSha256": "c5b23681f6557799d85307c3d389bf4916a7f95c6cf5f18f52f53dfc1edbce58",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    },
+    {
+      "path": "favicon-512.png",
+      "before": 190891,
+      "after": 174454,
+      "width": 512,
+      "height": 512,
+      "beforeSha256": "06b763a7b0e6b0abc989dd5e5b7571e091ab1ee0ca78e18b0d36f952c21299f2",
+      "afterSha256": "43e627490ce1a130d1fdc75fdd67bc6bfcda3f1984709f7da5f9f347b051e61f",
+      "pixelEquality": true,
+      "ancillaryChunksPreserved": true
+    }
+  ],
+  "webp": [
+    {
+      "path": "assets/images/background/flower_shop.webp",
+      "before": 13628972,
+      "after": 2439618,
+      "width": 4096,
+      "height": 4096,
+      "beforeSha256": "0271c5e355258a58c22b0227ea2695aed563169ba4974de5f815bcc41d2d87ba",
+      "afterSha256": "5eb777f3c38e1790e6614e6d1ad3f0a5417e0e6d5db512c3c7a900bc149c3837",
+      "quality": 95,
+      "alphaEqual": true,
+      "masterPath": "assets/images/masters/scene-audit-20261008/flower_shop.webp",
+      "minDisplaySSIM": 0.9966181110680473,
+      "maxDisplayMAE": 0.6547841332456718,
+      "attempts": [
+        {
+          "quality": 92,
+          "bytes": 1740700,
+          "displaySSIM": 0.996014327439409,
+          "displayMAE": 0.6799119710922241
+        },
+        {
+          "quality": 95,
+          "bytes": 2439618,
+          "displaySSIM": 0.9966181110680473,
+          "displayMAE": 0.6547841332456718
+        }
+      ],
+      "actualViewportAdjustment": "q92 actual 1440x900 story SSIM was 0.989689; increased to q95"
+    },
+    {
+      "path": "assets/images/background/nurse_house_day.webp",
+      "before": 12367306,
+      "after": 1439806,
+      "width": 4096,
+      "height": 4096,
+      "beforeSha256": "5195fc45074955a630265fb5597c8ba61b1318776d532a34171592da30fe3bda",
+      "afterSha256": "5f780be7256d13542bb6ac9dced1734a2c700d319a543e8dcba1fa7a6001a634",
+      "quality": 92,
+      "alphaEqual": true,
+      "masterPath": "assets/images/masters/scene-audit-20261008/nurse_house_day.webp",
+      "minDisplaySSIM": 0.9944778686850065,
+      "maxDisplayMAE": 0.6132442951202393,
+      "attempts": [
+        {
+          "quality": 92,
+          "bytes": 1439806,
+          "displaySSIM": 0.9944778686850065,
+          "displayMAE": 0.6132442951202393
+        }
+      ]
+    },
+    {
+      "path": "assets/images/background/room_my_day.webp",
+      "before": 12146032,
+      "after": 1133166,
+      "width": 4096,
+      "height": 4096,
+      "beforeSha256": "485029bc21ac3901bab835176525da58f0ec523fa351ffedc429d04c7dc6357a",
+      "afterSha256": "2d3f8f298720987088520c2411197d929929135f9c19d32d0cb435a6ab59627e",
+      "quality": 92,
+      "alphaEqual": true,
+      "masterPath": "assets/images/masters/scene-audit-20261008/room_my_day.webp",
+      "minDisplaySSIM": 0.9946512112577958,
+      "maxDisplayMAE": 0.6252630352973938,
+      "attempts": [
+        {
+          "quality": 92,
+          "bytes": 1133166,
+          "displaySSIM": 0.9946512112577958,
+          "displayMAE": 0.6252630352973938
+        }
+      ]
+    },
+    {
+      "path": "assets/images/background/school_festival.webp",
+      "before": 10729998,
+      "after": 2687774,
+      "width": 2880,
+      "height": 2880,
+      "beforeSha256": "c6d88b2d1d96f1e789f4c176ab6dee3cb4c0e28ea23d7be0ed08179178a1a59e",
+      "afterSha256": "5ca304d8b8dc2bb9b7218bef6487ba352c2bd229b177c138d3c03048a0f9482e",
+      "quality": 92,
+      "alphaEqual": true,
+      "masterPath": "assets/images/background/school_festival.png",
+      "minDisplaySSIM": 0.9948263272635826,
+      "maxDisplayMAE": 1.0123984813690186,
+      "attempts": [
+        {
+          "quality": 92,
+          "bytes": 2687774,
+          "displaySSIM": 0.9948263272635826,
+          "displayMAE": 1.0123984813690186
+        }
+      ]
+    },
+    {
+      "path": "assets/images/background/snack_shop.webp",
+      "before": 12113498,
+      "after": 1265896,
+      "width": 4096,
+      "height": 4096,
+      "beforeSha256": "edddd1e65302c7a173f73c98eef0e8e9650310eb869f57276860eacf0a101e2b",
+      "afterSha256": "36ecf2a39908cb6bd75e4f2da88ab97f5a3dc50bf007c2e2b198057a132ee686",
+      "quality": 92,
+      "alphaEqual": true,
+      "masterPath": "assets/images/masters/scene-audit-20261008/snack_shop.webp",
+      "minDisplaySSIM": 0.9952150458869774,
+      "maxDisplayMAE": 0.7020293474197388,
+      "attempts": [
+        {
+          "quality": 92,
+          "bytes": 1265896,
+          "displaySSIM": 0.9952150458869774,
+          "displayMAE": 0.7020293474197388
+        }
+      ]
+    },
+    {
+      "path": "assets/images/background/yuna_hideout_day.webp",
+      "before": 14211526,
+      "after": 1820282,
+      "width": 4096,
+      "height": 4096,
+      "beforeSha256": "f34b69f6db85cf71df41b56a4762bbca228b406a7b8b0a1167f52390eecd1d10",
+      "afterSha256": "233da0e52905fb0ab221b008be1e91c05d68f1cbaa78e64943095a08be0472f3",
+      "quality": 92,
+      "alphaEqual": true,
+      "masterPath": "assets/images/masters/scene-audit-20261008/yuna_hideout_day.webp",
+      "minDisplaySSIM": 0.9957744757745758,
+      "maxDisplayMAE": 0.6260817646980286,
+      "attempts": [
+        {
+          "quality": 92,
+          "bytes": 1820282,
+          "displaySSIM": 0.9957744757745758,
+          "displayMAE": 0.6260817646980286
+        }
+      ]
+    }
+  ]
+}
