@@ -254,7 +254,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {
             "center": {
-                "src": "assets/images/characters/dain_normal.png",
+                "src": "assets/images/characters/dain_smile.png",
                 "opacity": 0.35
             }
         },
@@ -309,7 +309,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {
             "center": {
-                "src": "assets/images/characters/seyoun_normal.png",
+                "src": "assets/images/characters/seyoun_soft_smile.png",
                 "opacity": 0.35
             }
         },
@@ -461,7 +461,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "characters": {
             "center": {
-                "src": "assets/images/characters/yuna_normal.png",
+                "src": "assets/images/characters/yuna_soft_smile.png",
                 "opacity": 0.35
             }
         },

@@ -483,7 +483,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_homeroom_freetalk": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "night_start",
@@ -763,7 +763,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after_nurse_freetalk": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "night_start",

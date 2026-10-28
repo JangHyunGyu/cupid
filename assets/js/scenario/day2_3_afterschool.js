@@ -128,7 +128,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "hidden_nurse_d2_freetalk": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "after2_choice",

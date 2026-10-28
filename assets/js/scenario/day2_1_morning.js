@@ -470,7 +470,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "hidden_homeroom_d2_freetalk": {
         "background": "assets/images/background/teacher_office.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "morning2_seo_dust_1",

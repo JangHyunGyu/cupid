@@ -548,7 +548,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "hidden_homeroom_d3_freetalk": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_shy.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "hidden_nurse_d3_check",
@@ -857,7 +857,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "hidden_nurse_d3_freetalk": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "morning3_date_seo_1",

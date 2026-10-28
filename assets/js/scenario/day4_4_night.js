@@ -1075,7 +1075,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_seo_freetalk": {
         "background": "assets/images/background/park.png",
         "backgroundVariant": "cold",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_cry.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "day4_student_return_home",
@@ -1709,7 +1709,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "wall_dain_freetalk": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_relieved.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "day4_student_return_home",
@@ -2196,7 +2196,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_yuna_freetalk": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "day4_student_return_home",

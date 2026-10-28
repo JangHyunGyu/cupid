@@ -1663,7 +1663,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_haeun_personal": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
+        "character": "assets/images/characters/haeun_shy.png",
         "next": "day5_haeun_resume",
         "type": "free_talk",
         "maxTurns": 5,

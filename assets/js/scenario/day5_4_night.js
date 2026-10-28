@@ -2654,7 +2654,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_seo_ending_freetalk_perfect": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_smile.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2672,7 +2672,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_seo_ending_freetalk_good": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2681,7 +2681,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_seo_ending_freetalk_bittersweet": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2734,7 +2734,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_yuna_ending_freetalk_good": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_soft_smile.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2795,7 +2795,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_dain_ending_freetalk_good": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_soft_smile.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2804,7 +2804,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_dain_ending_freetalk_bittersweet": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_sad.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2857,7 +2857,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_teacher_ending_freetalk_good": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_soft_smile.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2895,7 +2895,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_nurse_ending_freetalk_perfect": {
         "background": "assets/images/background/nurse_house.png",
-        "character": "assets/images/characters/nurse_home_normal.webp",
+        "character": "assets/images/characters/nurse_home_smile.webp",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2904,7 +2904,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_nurse_ending_freetalk_true_love": {
         "background": "assets/images/background/nurse_house.png",
-        "character": "assets/images/characters/nurse_home_normal.webp",
+        "character": "assets/images/characters/nurse_home_smile.webp",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2913,7 +2913,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_nurse_ending_freetalk_good": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2923,7 +2923,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_nurse_ending_freetalk_bittersweet": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_sad.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,

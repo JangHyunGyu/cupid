@@ -1129,7 +1129,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "hidden_homeroom_d4_freetalk": {
         "background": "assets/images/background/cafe.png",
         "backgroundVariant": "warm",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "hidden_nurse_d4_check",
@@ -1508,7 +1508,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_freetalk": {
         "background": "assets/images/background/nurse_room.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "day4_haeun_gate",
@@ -1632,7 +1632,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "day4_haeun_personal": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/haeun_normal.png",
+        "character": "assets/images/characters/haeun_shy.png",
         "next": "morning4_end",
         "type": "free_talk",
         "maxTurns": 5,

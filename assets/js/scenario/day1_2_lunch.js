@@ -249,7 +249,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "lunch_seo_freetalk": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "lunch_end",
@@ -445,7 +445,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "lunch_dain_freetalk": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "lunch_end",
@@ -613,7 +613,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "lunch_yuna_freetalk": {
         "background": "assets/images/background/library_old.png",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_soft_smile.png",
         "type": "free_talk",
         "maxTurns": 3,
         "next": "lunch_end",
