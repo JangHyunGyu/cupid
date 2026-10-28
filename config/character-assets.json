@@ -29,6 +29,60 @@
       }
     },
     {
+      "id": "dain/expressions/aegyo/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "aegyo",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/aegyo/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_aegyo.png",
+            "assets/characters/dain/expressions/aegyo/01/sprite.png"
+          ],
+          "sha256": "3420680f95e504802054784cd467f7727f5d11c94806e85dfddb0b633f2ef27e",
+          "bytes": 1165540
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_aegyo.webp",
+            "assets/characters/dain/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "03125b3611e9981e30fb3536657c951e498afbc95709d8e65ede555cc51ec29d",
+          "bytes": 761645
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/ahegao/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "ahegao",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/ahegao/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_ahegao.png",
+            "assets/characters/dain/expressions/ahegao/01/sprite.png"
+          ],
+          "sha256": "8c320b4f74ad3184b37cf7a5b60b3e46147fd1b436bb7f8b730a394ca02c6806",
+          "bytes": 1382076
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_ahegao.webp",
+            "assets/characters/dain/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "c21983465e029f1006e44d2bef90e21d48acbe775b587cb5b59f2e5f26ba170c",
+          "bytes": 888997
+        }
+      }
+    },
+    {
       "id": "dain/expressions/angry/01",
       "characterId": "dain",
       "role": "expression",
@@ -596,6 +650,33 @@
       }
     },
     {
+      "id": "dain/expressions/scared/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "scared",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/scared/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_scared.png",
+            "assets/characters/dain/expressions/scared/01/sprite.png"
+          ],
+          "sha256": "b7a7c74def5004cf54af95a4a9832db21f2ae8abba0ff0bd657cafce246a294e",
+          "bytes": 1174595
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_scared.webp",
+            "assets/characters/dain/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "fa9a63fe73a31badd1aa4dac911e296bce4e05c714857287391cd1da89e8b8a6",
+          "bytes": 772195
+        }
+      }
+    },
+    {
       "id": "dain/expressions/shy/01",
       "characterId": "dain",
       "role": "expression",
@@ -868,6 +949,60 @@
           ],
           "sha256": "b59fe8f7219831edced5fb654668a1b62b32bd61b6d4f454ab6040fe93357b0f",
           "bytes": 6123913
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/aegyo/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "aegyo",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/aegyo/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_aegyo.png",
+            "assets/characters/haeun/expressions/aegyo/01/sprite.png"
+          ],
+          "sha256": "53a9c8ddb8d110893d84ef134e282cd16ee953b59f18f42c13f946fddd0516c5",
+          "bytes": 1120598
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_aegyo.webp",
+            "assets/characters/haeun/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "28b8289bc55bd91c00bf4d1f5b3a3c5893db12a47b03cccc6ad7b9bb62c88361",
+          "bytes": 743545
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/ahegao/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "ahegao",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/ahegao/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_ahegao.png",
+            "assets/characters/haeun/expressions/ahegao/01/sprite.png"
+          ],
+          "sha256": "dc94edcf7ab9c7428cf69f8990692ee98869d06d1ceb87974d8b6fcfeb24e5fc",
+          "bytes": 1293883
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_ahegao.webp",
+            "assets/characters/haeun/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "a8446ddbf48448a4ed0037c0fc890a630344b0ad483ec7b98e7ab68ae48f2a15",
+          "bytes": 855849
         }
       }
     },
@@ -1385,6 +1520,33 @@
       }
     },
     {
+      "id": "haeun/expressions/scared/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "scared",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/scared/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_scared.png",
+            "assets/characters/haeun/expressions/scared/01/sprite.png"
+          ],
+          "sha256": "8f98a9d13fc4432118663ee0c990f821b453a50239beeab9512fa58b0938f6ba",
+          "bytes": 1122543
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_scared.webp",
+            "assets/characters/haeun/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "1c86e60400f9ec6405a75796eca921f391ec126d753616cf0376a17f529ba6ca",
+          "bytes": 737235
+        }
+      }
+    },
+    {
       "id": "haeun/expressions/shy/01",
       "characterId": "haeun",
       "role": "expression",
@@ -1552,6 +1714,33 @@
           ],
           "sha256": "33a0bbebe799b96d91eae4de1953c4e87c9cc81a7e848aba51334d441f82b4cc",
           "bytes": 1002485
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/aegyo/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "aegyo",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/aegyo/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_aegyo.png",
+            "assets/characters/minsu/expressions/aegyo/01/sprite.png"
+          ],
+          "sha256": "e7fa4cf8fb2b1a85f0a48e63bea207747187d5341a37fbeb3da7efa731fad601",
+          "bytes": 1282273
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_aegyo.webp",
+            "assets/characters/minsu/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "9bd76a54ed8458ec652e9ff3fb4c296c440d8c460538dd98ff7ad62ae127e898",
+          "bytes": 874009
         }
       }
     },
@@ -1826,6 +2015,33 @@
       }
     },
     {
+      "id": "minsu/expressions/scared/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "scared",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/scared/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_scared.png",
+            "assets/characters/minsu/expressions/scared/01/sprite.png"
+          ],
+          "sha256": "a37351ef8074b8c0db781da8633d9aee3176469a9123fef656a8367732544730",
+          "bytes": 1289131
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_scared.webp",
+            "assets/characters/minsu/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "60fdc0cb3e8c6fce4fa1cc62a45d11aceeaa653a84189e12a67438ce17a42632",
+          "bytes": 878869
+        }
+      }
+    },
+    {
       "id": "minsu/expressions/smirk/01",
       "characterId": "minsu",
       "role": "expression",
@@ -1849,6 +2065,87 @@
           ],
           "sha256": "39f12f4f414f6b6ee6062d2ceb787a730d565ab1a274b49ec55d2fbfd1410801",
           "bytes": 123565
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/surprised/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "surprised",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/surprised/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_surprised.png",
+            "assets/characters/minsu/expressions/surprised/01/sprite.png"
+          ],
+          "sha256": "9a65d189797eb5adf8f187ee8a1cf5f1c2124fc30821baf3ce0c6335f09d99e6",
+          "bytes": 1280103
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_surprised.webp",
+            "assets/characters/minsu/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "4f013f1780fdde766bcbe31e9028b0d0f26bd4e95e2e674303862ca54dc7fad5",
+          "bytes": 873157
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/aegyo/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "aegyo",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/aegyo/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_aegyo.png",
+            "assets/characters/nurse/expressions/aegyo/01/sprite.png"
+          ],
+          "sha256": "fe596a66d9331688c46b3e8a6c1d226da347f7443b73f7a93612430e3d58c796",
+          "bytes": 1562830
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_aegyo.webp",
+            "assets/characters/nurse/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "1bd391f9e88c26f5299985d66ab5e82093491641d68c55a4aec99193dfe8e9d5",
+          "bytes": 1018041
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/ahegao/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "ahegao",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/ahegao/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_ahegao.png",
+            "assets/characters/nurse/expressions/ahegao/01/sprite.png"
+          ],
+          "sha256": "a67b91054d61fc4b865d470291fa721a89770a491c1023951dadca56599d8669",
+          "bytes": 1890197
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_ahegao.webp",
+            "assets/characters/nurse/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "1e70486c2996bddc5c0a238075af4a3ad5d1fed6f26e0106a98ef5d94eb2233b",
+          "bytes": 1175517
         }
       }
     },
@@ -2384,6 +2681,33 @@
       }
     },
     {
+      "id": "nurse/expressions/scared/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "scared",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/scared/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_scared.png",
+            "assets/characters/nurse/expressions/scared/01/sprite.png"
+          ],
+          "sha256": "736933b2f9ef885c161c078cc7fa08c2858a1edd9a0758df9c5ed6424b984360",
+          "bytes": 1579071
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_scared.webp",
+            "assets/characters/nurse/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "d1d82971d0337355f796beb5c9a46909e60d627b5df06a5e10e728ff693b51cc",
+          "bytes": 1035923
+        }
+      }
+    },
+    {
       "id": "nurse/expressions/shy/01",
       "characterId": "nurse",
       "role": "expression",
@@ -2628,6 +2952,60 @@
           ],
           "sha256": "2a02cfbd9d273453fb31a7b829b7c69cde1c15e5c9f609f2e6d6a1a7cda6ff2f",
           "bytes": 7539935
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/aegyo/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "aegyo",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/aegyo/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_aegyo.png",
+            "assets/characters/seoyeon/expressions/aegyo/01/sprite.png"
+          ],
+          "sha256": "3c19ef574eaf49a5ce323abf4cdc5139624d94b303b1d5bc2ed53bee0bedd9fb",
+          "bytes": 1269450
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_aegyo.webp",
+            "assets/characters/seoyeon/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "6d4f1b12a0144f323b0468cbebde86883a5ec6ab34879fdcf046a1f6b14a45c9",
+          "bytes": 818907
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/ahegao/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "ahegao",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/ahegao/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_ahegao.png",
+            "assets/characters/seoyeon/expressions/ahegao/01/sprite.png"
+          ],
+          "sha256": "3141a2ebe3bca31e1582d9aa1e75d071be655067f72eb673e962c13fcea779c5",
+          "bytes": 1415287
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_ahegao.webp",
+            "assets/characters/seoyeon/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "1c56e36c27ac38ee2c4b29755d9664935ca4744e7d5e983666997ded892046ba",
+          "bytes": 911871
         }
       }
     },
@@ -3226,6 +3604,33 @@
       }
     },
     {
+      "id": "seoyeon/expressions/scared/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "scared",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/scared/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_scared.png",
+            "assets/characters/seoyeon/expressions/scared/01/sprite.png"
+          ],
+          "sha256": "3a78b46e013186585297312812d23511406d8a502da66de625416ba5480ce4fc",
+          "bytes": 1267904
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_scared.webp",
+            "assets/characters/seoyeon/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "bbfc22876664398909fcf181fd8b24419462d52d9fda449546377cb7925f09c6",
+          "bytes": 819977
+        }
+      }
+    },
+    {
       "id": "seoyeon/expressions/shy/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -3524,6 +3929,60 @@
           ],
           "sha256": "a355084c32605911fa7a2a66424d9ce3574f16a962b1b262a96bd2d558462c29",
           "bytes": 3672567
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/aegyo/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "aegyo",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/aegyo/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_aegyo.png",
+            "assets/characters/teacher/expressions/aegyo/01/sprite.png"
+          ],
+          "sha256": "4cc5fccbc89318303bf654535d823f03d1ac8229445ae9d45d4001f9f5bd3b5b",
+          "bytes": 1353036
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_aegyo.webp",
+            "assets/characters/teacher/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "aee1ac50b877cb59805b7adad99c1c3f6282701ef6229eb921676de9a194b393",
+          "bytes": 883453
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/ahegao/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "ahegao",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/ahegao/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_ahegao.png",
+            "assets/characters/teacher/expressions/ahegao/01/sprite.png"
+          ],
+          "sha256": "9a52203d71e9f3790b1030745832d645613b6aceb80dc260eaf57f7e1d4380a5",
+          "bytes": 1611606
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_ahegao.webp",
+            "assets/characters/teacher/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "ccc031bf8bd620180c680abd084682491dcc17534a2d8d4097b06be2997267ef",
+          "bytes": 1029905
         }
       }
     },
@@ -4068,6 +4527,33 @@
       }
     },
     {
+      "id": "teacher/expressions/scared/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "scared",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/scared/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_scared.png",
+            "assets/characters/teacher/expressions/scared/01/sprite.png"
+          ],
+          "sha256": "71725bc73eb2da4a18822b689c63310b78a6123ce2e3f24552822da094924d00",
+          "bytes": 1361272
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_scared.webp",
+            "assets/characters/teacher/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "b4ee1200bfdb1cf9286762c1b906ae29132f48013234d9ca3d04288510f50df7",
+          "bytes": 891909
+        }
+      }
+    },
+    {
       "id": "teacher/expressions/shy/01",
       "characterId": "teacher",
       "role": "expression",
@@ -4199,6 +4685,60 @@
           ],
           "sha256": "a1eb10f5992e9a14b349ff427a244fc160c4729b14ee9325d0e583a8bcb04dbd",
           "bytes": 154173
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/aegyo/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "aegyo",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/aegyo/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_aegyo.png",
+            "assets/characters/yuna/expressions/aegyo/01/sprite.png"
+          ],
+          "sha256": "2e5a78c4dea73e730b28c5551a81cbc0723b01bd70b711b1883ee6d06d0e9956",
+          "bytes": 1394235
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_aegyo.webp",
+            "assets/characters/yuna/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "0062e2ca7b4dd8495c6e93cf81d92ecba38f2fc0157e5bd0f3d40a570e96454b",
+          "bytes": 834751
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/ahegao/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "ahegao",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/ahegao/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_ahegao.png",
+            "assets/characters/yuna/expressions/ahegao/01/sprite.png"
+          ],
+          "sha256": "d4542a74970da32b60eca6edcc3b9895d1122383474fe67b4baae8f48eacb141",
+          "bytes": 1688250
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_ahegao.webp",
+            "assets/characters/yuna/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "66404b6b78ea4e1adb1f856214e75bf267b84c8826b43062b3c04ce6d838fa74",
+          "bytes": 1039493
         }
       }
     },
@@ -4748,6 +5288,33 @@
           ],
           "sha256": "03638fd2fb93448f754a12d0fa1894067866048c8d425757081f7842cc3c290c",
           "bytes": 992683
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/scared/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "scared",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/scared/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_scared.png",
+            "assets/characters/yuna/expressions/scared/01/sprite.png"
+          ],
+          "sha256": "67cd4672470ddbf6b7e1e4dc30e8fa3cf3e821e40f6c21d12c4637aa212820f2",
+          "bytes": 1402013
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_scared.webp",
+            "assets/characters/yuna/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "733e65b980662089813f06317259ee7cec02169e57d304264ad1942a3ed2c76b",
+          "bytes": 839487
         }
       }
     },

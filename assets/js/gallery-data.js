@@ -2562,18 +2562,24 @@ window.GalleryData = GalleryData;
 const exhaustedExpressionLabels = { ko: '탈진', en: 'Exhausted', ja: '疲労困憊', es: 'Agotamiento', fr: 'Épuisement', de: 'Erschöpft', pt: 'Exaustão', zh: '疲惫不堪' };
 const surprisedExpressionLabels = { ko: '놀람', en: 'Surprised', ja: '驚き', es: 'Sorprendida', fr: 'Surprise', de: 'Überrascht', pt: 'Surpresa', zh: '惊讶' };
 const softSmileExpressionLabels = { ko: '살짝 미소', en: 'Soft Smile', ja: '微笑み', es: 'Sonrisa suave', fr: 'Sourire doux', de: 'Sanftes Lächeln', pt: 'Sorriso suave', zh: '浅笑' };
+const scaredExpressionLabels = { ko: '공포', en: 'Scared', ja: '恐怖', es: 'Asustada', fr: 'Effrayée', de: 'Verängstigt', pt: 'Assustada', zh: '恐惧' };
+const aegyoExpressionLabels = { ko: '애교', en: 'Coy Charm', ja: '愛嬌', es: 'Coqueta', fr: 'Charmeuse', de: 'Kokett', pt: 'Charmosa', zh: '撒娇' };
+const ahegaoExpressionLabels = { ko: '아헤가오', en: 'Ahegao', ja: 'アヘ顔', es: 'Ahegao', fr: 'Ahegao', de: 'Ahegao', pt: 'Ahegao', zh: '阿黑颜' };
 const additionalCharacterExpressions = {
-    seyoun: ['soft_smile', 'smile', 'surprised'],
-    yuna: ['soft_smile', 'surprised'],
-    dain: ['soft_smile', 'smile', 'worried', 'surprised'],
-    teacher: ['soft_smile', 'laugh', 'pout', 'surprised'],
-    nurse: ['soft_smile', 'laugh', 'pout', 'surprised'],
-    haeun: ['soft_smile', 'angry', 'flushed', 'laugh', 'pout', 'surprised']
+    seyoun: ['soft_smile', 'smile', 'surprised', 'scared', 'aegyo', 'ahegao'],
+    yuna: ['soft_smile', 'surprised', 'scared', 'aegyo', 'ahegao'],
+    dain: ['soft_smile', 'smile', 'worried', 'surprised', 'scared', 'aegyo', 'ahegao'],
+    teacher: ['soft_smile', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao'],
+    nurse: ['soft_smile', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao'],
+    haeun: ['soft_smile', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao']
 };
 for (const [lang, label] of Object.entries(exhaustedExpressionLabels)) {
     GalleryData.expressions[lang].exhausted = label;
     GalleryData.expressions[lang].surprised = surprisedExpressionLabels[lang];
     GalleryData.expressions[lang].soft_smile = softSmileExpressionLabels[lang];
+    GalleryData.expressions[lang].scared = scaredExpressionLabels[lang];
+    GalleryData.expressions[lang].aegyo = aegyoExpressionLabels[lang];
+    GalleryData.expressions[lang].ahegao = ahegaoExpressionLabels[lang];
     if (GalleryData.characters[lang]?.haeun && !GalleryData.characters[lang].haeun.expressions.includes('climax')) {
         GalleryData.characters[lang].haeun.expressions.push('climax');
     }
@@ -2624,7 +2630,7 @@ GalleryData.getExpressionRequirement = function (charId, expression) {
         .filter(name => name !== 'exhausted' && !/^(date|home)_/.test(name) && !/_[0-9]{2}$/.test(name));
     const base = String(expression).replace(/^(date|home)_/, '').replace(/_[0-9]{2}$/, '');
     if (charId === 'haeun') {
-        return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, smile: 60, sad: 20, angry: 20, flushed: 80, laugh: 60, pout: 33, surprised: 20, soft_smile: 20, cry: 20, pain: 20 })[base] ?? 100;
+        return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, smile: 60, sad: 20, angry: 20, flushed: 80, laugh: 60, pout: 33, surprised: 20, soft_smile: 20, scared: 20, aegyo: 60, ahegao: 100, cry: 20, pain: 20 })[base] ?? 100;
     }
     const index = baseExpressions.indexOf(base);
     if (index < 0) return 100;
@@ -2636,8 +2642,8 @@ GalleryData.resolveOutfitExpression = function (scene, rawPath) {
     const available = this.OUTFIT_EXPRESSIONS[outfit[1]]?.[outfit[2]];
     if (!available) return rawPath;
     const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
-    if (expression === 'bikini' || expression === 'climax' || /^(?:climax|flushed)_[0-9]{2}$/.test(expression) || expression === 'exhausted' || expression === 'pain') return rawPath;
-    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', surprised: available.includes('worried') ? 'worried' : available.includes('sweat') ? 'sweat' : 'shy', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', soft_smile: available.includes('smile') ? 'smile' : 'normal', very_shy: 'shy', shy2: 'shy', active: 'normal', flushed: 'shy' };
+    if (expression === 'bikini' || expression === 'climax' || expression === 'ahegao' || /^(?:climax|flushed)_[0-9]{2}$/.test(expression) || expression === 'exhausted' || expression === 'pain') return rawPath;
+    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', surprised: available.includes('worried') ? 'worried' : available.includes('sweat') ? 'sweat' : 'shy', scared: available.includes('worried') ? 'worried' : 'sad', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', soft_smile: available.includes('smile') ? 'smile' : 'normal', aegyo: available.includes('laugh') ? 'laugh' : available.includes('smile') ? 'smile' : 'shy', very_shy: 'shy', shy2: 'shy', active: 'normal', flushed: 'shy' };
     const chosen = available.includes(expression) ? expression
         : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
     return `assets/images/characters/${outfit[1]}_${outfit[2]}_${chosen}.webp`;

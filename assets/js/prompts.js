@@ -418,6 +418,9 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         flushed: 'assets/images/characters/seyoun_flushed.png',
         climax: 'assets/images/characters/seyoun_climax.png',
         bikini: 'assets/images/characters/seyoun_bikini.png',
+        scared: 'assets/images/characters/seyoun_scared.png',
+        aegyo: 'assets/images/characters/seyoun_aegyo.png',
+        ahegao: 'assets/images/characters/seyoun_ahegao.png',
         exhausted: 'assets/images/characters/seyoun_exhausted.png'
     }),
     Yuna: Object.freeze({
@@ -437,6 +440,9 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         laugh: 'assets/images/characters/yuna_laugh.png',
         pout: 'assets/images/characters/yuna_pout.png',
         bikini: 'assets/images/characters/yuna_bikini.png',
+        scared: 'assets/images/characters/yuna_scared.png',
+        aegyo: 'assets/images/characters/yuna_aegyo.png',
+        ahegao: 'assets/images/characters/yuna_ahegao.png',
         exhausted: 'assets/images/characters/yuna_exhausted.png'
     }),
     Dain: Object.freeze({
@@ -457,6 +463,9 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         flushed: 'assets/images/characters/dain_flushed.png',
         climax: 'assets/images/characters/dain_climax.png',
         bikini: 'assets/images/characters/dain_bikini.png',
+        scared: 'assets/images/characters/dain_scared.png',
+        aegyo: 'assets/images/characters/dain_aegyo.png',
+        ahegao: 'assets/images/characters/dain_ahegao.png',
         exhausted: 'assets/images/characters/dain_exhausted.png'
     }),
     Teacher: Object.freeze({
@@ -475,6 +484,9 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         flushed: 'assets/images/characters/teacher_flushed.png',
         climax: 'assets/images/characters/teacher_climax.png',
         bikini: 'assets/images/characters/teacher_bikini.png',
+        scared: 'assets/images/characters/teacher_scared.png',
+        aegyo: 'assets/images/characters/teacher_aegyo.png',
+        ahegao: 'assets/images/characters/teacher_ahegao.png',
         exhausted: 'assets/images/characters/teacher_exhausted.png'
     }),
     Nurse: Object.freeze({
@@ -495,6 +507,9 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         cry: 'assets/images/characters/nurse_cry.png',
         pain: 'assets/images/characters/nurse_pain.png',
         bikini: 'assets/images/characters/nurse_bikini.png',
+        scared: 'assets/images/characters/nurse_scared.png',
+        aegyo: 'assets/images/characters/nurse_aegyo.png',
+        ahegao: 'assets/images/characters/nurse_ahegao.png',
         exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
     Haeun: Object.freeze({
@@ -514,10 +529,16 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         cry: 'assets/images/characters/haeun_cry.png',
         pain: 'assets/images/characters/haeun_pain.png',
         climax: 'assets/images/characters/haeun_climax.png',
+        scared: 'assets/images/characters/haeun_scared.png',
+        aegyo: 'assets/images/characters/haeun_aegyo.png',
+        ahegao: 'assets/images/characters/haeun_ahegao.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
         normal: 'assets/images/characters/minsu_normal.png',
+        surprised: 'assets/images/characters/minsu_surprised.png',
+        scared: 'assets/images/characters/minsu_scared.png',
+        aegyo: 'assets/images/characters/minsu_aegyo.png',
         cry: 'assets/images/characters/minsu_cry.png',
         pain: 'assets/images/characters/minsu_pain.png',
         climax: 'assets/images/characters/minsu_climax.png',
@@ -2747,5 +2768,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.83';
+const PROMPT_VERSION = '2.7.84';
 window.PROMPT_VERSION = PROMPT_VERSION;
