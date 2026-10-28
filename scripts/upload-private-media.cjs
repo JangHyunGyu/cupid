@@ -6,6 +6,7 @@ const path = require('node:path');
 const { createHash } = require('node:crypto');
 const { listProtectedAssets } = require('./lib/cupid-protected-assets.cjs');
 const { readPlainMedia } = require('./lib/read-plain-media.cjs');
+const { resolveMediaDelivery } = require('./lib/media-delivery.cjs');
 const root = path.resolve(__dirname, '..');
 const digest = (algorithm, bytes) => createHash(algorithm).update(bytes).digest('hex');
 
@@ -50,12 +51,21 @@ async function upload() {
     console.log('Verified ' + file);
   }
   const catalogJson = JSON.stringify(catalog, null, 2) + '\n';
+  const deliveryPath = path.join(root, 'config/media-delivery.json');
+  const delivery = resolveMediaDelivery(catalog, fs.existsSync(deliveryPath)
+    ? JSON.parse(fs.readFileSync(deliveryPath, 'utf8')) : {});
+  for (const [relative, item] of Object.entries(delivery)) {
+    if (item.sha256 === catalog[relative].sha256) continue;
+    const readback = Buffer.from(await (await request('/objects/' + item.key)).arrayBuffer());
+    if (digest('sha256', readback) !== item.sha256) throw new Error('Delivery object mismatch: ' + relative);
+  }
+  const deliveryJson = JSON.stringify(delivery, null, 2) + '\n';
   // Authenticated backup viewers resolve logical paths through this private index.
   // Publish it last so readers never see a reference to an unverified object.
-  await request('/objects/catalog/media-v1.json', { method: 'PUT', body: catalogJson,
+  await request('/objects/catalog/media-v1.json', { method: 'PUT', body: deliveryJson,
     headers: { 'Content-Type': 'application/json', 'Cache-Control': 'private, no-store' } });
   const indexReadback = await (await request('/objects/catalog/media-v1.json')).text();
-  if (indexReadback !== catalogJson) throw new Error('Private catalog readback mismatch');
+  if (indexReadback !== deliveryJson) throw new Error('Private catalog readback mismatch');
   fs.writeFileSync(path.join(root, 'config/media-storage.json'), catalogJson);
 }
 upload().catch(error => { console.error(error.message); process.exitCode = 1; });

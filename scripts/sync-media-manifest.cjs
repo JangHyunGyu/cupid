@@ -7,22 +7,28 @@ const { listProtectedAssets, toLogicalAssetId } = require('./lib/cupid-protected
 const { isEncryptedBuffer } = require('./lib/cupid-media-crypto.cjs');
 const root = path.resolve(__dirname, '..');
 const { resolveAssetSource, catalog } = require('./character-assets.cjs');
+const { resolveMediaDelivery } = require('./lib/media-delivery.cjs');
 
 function syncMediaManifest(write = false) {
   const storage = JSON.parse(fs.readFileSync(path.join(root, 'config/media-storage.json'), 'utf8'));
+  const deliveryPath = path.join(root, 'config/media-delivery.json');
+  const delivery = resolveMediaDelivery(storage, fs.existsSync(deliveryPath)
+    ? JSON.parse(fs.readFileSync(deliveryPath, 'utf8')) : {});
   const entries = {};
   for (const relative of listProtectedAssets(root)) {
     const bytes = fs.readFileSync(resolveAssetSource(root, relative));
     if (!isEncryptedBuffer(bytes)) throw new Error(`Protected media must be encrypted: ${relative}`);
     const id = toLogicalAssetId(relative);
-    (entries[id] ||= []).push({ path: relative, hash: createHash('sha256').update(bytes).digest('hex') });
+    const file = { path: relative, hash: createHash('sha256').update(bytes).digest('hex') };
+    if (delivery[relative]?.sha256 !== storage[relative]?.sha256) file.deliveryHash = delivery[relative]?.sha256;
+    (entries[id] ||= []).push(file);
   }
   const manifest = {};
   for (const [id, files] of Object.entries(entries)) {
     // Preserve existing content URLs and browser caches through the storage migration.
     const version = createHash('sha256').update(JSON.stringify(files)).digest('hex').slice(0, 24);
     manifest[id] = { version, files: files.map(file => {
-      const item = storage[file.path];
+      const item = delivery[file.path];
       if (!item || item.sourceHash !== file.hash || !/^[a-f0-9]{64}$/.test(item.sha256)
         || item.key !== 'images/' + item.sha256 + path.extname(file.path)
         || !/^[a-f0-9]{32}$/.test(item.etag) || !Number.isSafeInteger(item.size) || item.size <= 0) {
