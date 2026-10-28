@@ -633,7 +633,13 @@
         "personality": "Es wirkt wie ein kleines Terminproblem, doch beide achten darauf, wen der Protagonist bevorzugt. Lass daraus keine offene Feindseligkeit oder Demütigung werden. Weicht er aus, verlangt jede Figur auf ihre Art eine Antwort. Wird eine gewählt, tut die andere nicht gezwungen so, als mache es ihr nichts aus.",
         "groupLocation": "Schülerratsraum",
         "groupChoiceState": "Seoyeons Termin überschneidet sich mit der Bitte der Begleitung und der Protagonist muss sagen, wem er zuerst hilft",
-        "groupAftermathCause": "wem der Protagonist im Schülerratsraum zuerst helfen wollte und warum"
+        "groupAftermathCause": "wem der Protagonist im Schülerratsraum zuerst helfen wollte und warum",
+        "companionTexts": {
+            "Dain": "*Dain tritt näher und richtet den Taschenriemen.* Die Turnhalle braucht dich auch. Kannst du zuerst mit mir kommen?",
+            "Yuna": "*Yuna dreht einen Zettel zwischen den Fingern.* Die Unterlagen im Anbau müssen heute auch sortiert werden. Hilfst du zuerst mir?",
+            "Teacher": "*Die Klassenlehrerin richtet eine Büroklammer.* Es ist noch ein Botengang fürs Lehrerzimmer offen. Können wir zuerst diese Seite ansehen?",
+            "Nurse": "*Die Krankenschwester hält einen kleinen Zettel hin.* Die Materialkontrolle im Krankenzimmer ist auch dringend. Hilfst du mir zuerst?"
+        }
     },
     "after2_group_yuna_companion": {
         "name": "Yuna",
@@ -642,7 +648,13 @@
         "personality": "Yuna verlangt eine knappe, genaue Entscheidung, während die Begleitung auf ihre eigene Art nicht zurückweicht. Erzwinge keine Versöhnung und erfinde nicht sofort eine Lösung, die beide zufriedenstellt. Die Antwort darf eine Person erleichtern und die andere enttäuschen.",
         "groupLocation": "Bibliotheksanbau",
         "groupChoiceState": "es bleibt nur Zeit für einen von zwei Stapeln und der Protagonist muss sagen, bei wem er bleibt",
-        "groupAftermathCause": "bei wem der Protagonist im Bibliotheksanbau bleiben wollte und warum"
+        "groupAftermathCause": "bei wem der Protagonist im Bibliotheksanbau bleiben wollte und warum",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon stellt einen Zeitplan neben die Stapel.* Der Schülervertretungsplan muss heute auch passen. Zuerst meine Seite.",
+            "Dain": "*Dain tippt an die Tischkante.* Die Aufräumerei in der Turnhalle hängt auch. Hilf mir zuerst.",
+            "Teacher": "*Die Klassenlehrerin schiebt eine Mappe einen halben Schritt.* Es steht noch eine Bürokontrolle aus. Können wir zuerst diese Seite ansehen?",
+            "Nurse": "*Die Krankenschwester stellt eine kleine Box ab.* Die Materialien im Krankenzimmer müssen heute auch stimmen. Hilfst du mir zuerst?"
+        }
     },
     "after2_group_dain_companion": {
         "name": "Dain",
@@ -651,7 +663,13 @@
         "personality": "Erfinde weder einen schweren Unfall noch eine böswillige Lüge. Es geht nicht um die objektive Lösung eines Rätsels, sondern darum, wem der Protagonist zuerst glaubt. Dain verlangt offen eine Antwort, und die Begleitung zieht sich nicht in eine Nebenrolle zurück. Die Antwort darf eine der beiden verletzen.",
         "groupLocation": "Turnhalle",
         "groupChoiceState": "Entscheiden, wessen Anweisung zuerst geprüft wird und ob Ballwagen oder Festmaterial zuerst zurückkommt",
-        "groupAftermathCause": "wem der Protagonist in der Turnhalle zuerst geglaubt hat und warum"
+        "groupAftermathCause": "wem der Protagonist in der Turnhalle zuerst geglaubt hat und warum",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon hebt die Lagerpapiere an.* Mir wurde gesagt, zuerst das Veranstaltungsmaterial zu bewegen. Bestätigst du zuerst meine Seite?",
+            "Yuna": "*Yuna faltet einen kurzen Zettel auf.* Der Lagerverantwortliche wollte zuerst die Papiere. Bestätigst du das zuerst?",
+            "Teacher": "*Die Klassenlehrerin hebt einen Ausdruck an.* Was ich aus dem Lehrerzimmer bekommen habe, stellte die Papiere zuerst. Können wir zuerst diese Seite prüfen?",
+            "Nurse": "*Die Krankenschwester hält eine kleine Liste hin.* Die Materialliste sollte zuerst kommen. Bestätigst du das zuerst?"
+        }
     },
     "after2_group_return": {
         "name": "{name}",

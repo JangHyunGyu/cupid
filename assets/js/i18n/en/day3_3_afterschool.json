@@ -707,7 +707,13 @@
         "buttonText": "Speak",
         "groupLocation": "Open Classroom",
         "groupChoiceState": "the protagonist must say whether to help with the teacher's literature-event draft or the companion's request first",
-        "groupAftermathCause": "whom the protagonist chose to help first in the open classroom, and why"
+        "groupAftermathCause": "whom the protagonist chose to help first in the open classroom, and why",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon sets another department’s stack beside the podium.* The student-council manuscript edits are due today too. Can you look at mine first?",
+            "Yuna": "*Yuna holds out a thin folder.* These are the literary-club event papers. They need work before sunset.",
+            "Dain": "*Dain catches her breath with a stack under one arm.* The PE event schedule is due today as well. I’d like you to check mine first.",
+            "Nurse": "*The school nurse sets a thin envelope on the podium corner.* These are the nurse’s-office event papers. They need a check before closing."
+        }
     },
     "after3_group_nurse_companion": {
         "name": "School Nurse",
@@ -717,7 +723,13 @@
         "buttonText": "Speak",
         "groupLocation": "Nurse's Office",
         "groupChoiceState": "the protagonist must say whether to handle the nurse's health check or the companion's supply problem first",
-        "groupAftermathCause": "whom the protagonist chose to help first in the nurse's office, and why"
+        "groupAftermathCause": "whom the protagonist chose to help first in the nurse's office, and why",
+        "companionTexts": {
+            "Dain": "*Dain taps the latch on the emergency-supply box.* The PE club ran out of first-aid stock. It has to be refilled today.",
+            "Seoyeon": "*Seoyeon sets a small memo on the desk corner.* A student-council event supply list is missing. It needs to be matched before closing.",
+            "Yuna": "*Yuna pulls an order form from her bag.* The annex first-aid restock request got delayed. It has to be handled today.",
+            "Teacher": "*The homeroom teacher lifts a folder from the staff room.* There is still a supply check left for the office. Can we look at it together?"
+        }
     },
     "after3_group_return": {
         "name": "{name}",

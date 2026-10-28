@@ -707,7 +707,13 @@
         "buttonText": "Sprechen",
         "groupLocation": "Offenes Klassenzimmer",
         "groupChoiceState": "der Protagonist muss sagen, ob er zuerst der Lehrerin beim Veranstaltungsentwurf oder der Begleitung bei ihrer Bitte hilft",
-        "groupAftermathCause": "wem der Protagonist im offenen Klassenzimmer zuerst helfen wollte und warum"
+        "groupAftermathCause": "wem der Protagonist im offenen Klassenzimmer zuerst helfen wollte und warum",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon legt einen anderen Aktenstapel neben das Katheder.* Die Manuskriptkorrektur der Schülervertretung ist auch heute fällig. Kannst du meine zuerst ansehen?",
+            "Yuna": "*Yuna hält eine dünne Mappe hin.* Das sind die Veranstaltungsunterlagen des Literaturclubs. Die müssen vor Sonnenuntergang dran.",
+            "Dain": "*Dain holt Luft, einen Stapel unterm Arm.* Der Sportveranstaltungsplan ist auch bis heute. Ich hätte gern, dass du meinen zuerst checkst.",
+            "Nurse": "*Die Krankenschwester legt einen dünnen Umschlag an die Kathederkante.* Das sind die Kooperationspapiere vom Krankenzimmer. Die brauchen vor Feierabend noch einen Check."
+        }
     },
     "after3_group_nurse_companion": {
         "name": "Schulkrankenschwester",
@@ -717,7 +723,13 @@
         "buttonText": "Sprechen",
         "groupLocation": "Krankenzimmer",
         "groupChoiceState": "der Protagonist muss sagen, ob er zuerst die Gesundheitskontrolle der Schulkrankenschwester oder das Materialproblem der Begleitung angeht",
-        "groupAftermathCause": "wem der Protagonist im Krankenzimmer zuerst helfen wollte und warum"
+        "groupAftermathCause": "wem der Protagonist im Krankenzimmer zuerst helfen wollte und warum",
+        "companionTexts": {
+            "Dain": "*Dain tippt gegen den Riegel der Notfallkiste.* Dem Sportclub ist das Erste-Hilfe-Zeug ausgegangen. Das muss heute nachgefüllt werden.",
+            "Seoyeon": "*Seoyeon legt einen kleinen Zettel an die Tischkante.* Eine Materialliste der Schülervertretung fehlt. Die muss vor Feierabend stimmen.",
+            "Yuna": "*Yuna holt einen Bestellschein aus der Tasche.* Der Nachschubantrag für den Erste-Hilfe-Kasten im Anbau hängt. Das muss heute erledigt werden.",
+            "Teacher": "*Die Klassenlehrerin hebt eine Mappe aus dem Lehrerzimmer an.* Fürs Büro steht noch eine Materialkontrolle aus. Können wir sie zusammen ansehen?"
+        }
     },
     "after3_group_return": {
         "name": "{name}",

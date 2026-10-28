@@ -707,7 +707,13 @@
         "buttonText": "Hablar",
         "groupLocation": "Aula abierta",
         "groupChoiceState": "el protagonista debe decir si ayudará primero con el borrador de la profesora o con la petición de la otra persona",
-        "groupAftermathCause": "a quién decidió ayudar primero el protagonista en el aula abierta y por qué"
+        "groupAftermathCause": "a quién decidió ayudar primero el protagonista en el aula abierta y por qué",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon deja otro fajo de papeles junto al estrado.* La corrección del manuscrito del consejo también vence hoy. ¿Puedes mirar el mío primero?",
+            "Yuna": "*Yuna tiende una carpeta delgada.* Son los papeles del evento del club literario. Hay que revisarlos antes del anochecer.",
+            "Dain": "*Dain toma aire con un fajo bajo el brazo.* El calendario del evento de educación física también es para hoy. Prefiero que mires el mío primero.",
+            "Nurse": "*La enfermera deja un sobre delgado en la esquina del estrado.* Son los papeles de apoyo del consultorio. Hay que revisarlos antes de salir."
+        }
     },
     "after3_group_nurse_companion": {
         "name": "Enfermera",
@@ -717,7 +723,13 @@
         "buttonText": "Hablar",
         "groupLocation": "Enfermería",
         "groupChoiceState": "el protagonista debe decir si atenderá primero la revisión de la enfermera o el problema de suministros de la otra persona",
-        "groupAftermathCause": "a quién decidió ayudar primero el protagonista en la enfermería y por qué"
+        "groupAftermathCause": "a quién decidió ayudar primero el protagonista en la enfermería y por qué",
+        "companionTexts": {
+            "Dain": "*Dain golpea suavemente el cierre de la caja de suministros de emergencia.* Al club de educación física se le acabó el botiquín. Hay que reponerlo hoy.",
+            "Seoyeon": "*Seoyeon deja un pequeño memo en la esquina del escritorio.* Falta una lista de suministros del consejo estudiantil. Hay que completarla antes de salir.",
+            "Yuna": "*Yuna saca un pedido de su maletín.* La solicitud de reposición del botiquín del anexo se atrasó. Hay que resolverla hoy.",
+            "Teacher": "*La tutora alza una carpeta traída de la sala de profesores.* Todavía queda una revisión de suministros de la oficina. ¿Podemos mirarla juntos?"
+        }
     },
     "after3_group_return": {
         "name": "{name}",

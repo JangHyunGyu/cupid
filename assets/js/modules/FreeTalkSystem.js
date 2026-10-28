@@ -1166,6 +1166,62 @@ class FreeTalkSystem {
         return locations[language] || locations.en;
     }
 
+
+    _buildGroupOpeningDialogues(scene, participants = []) {
+        const focus = participants[0];
+        const companion = participants[1];
+        const lines = [];
+        const focusText = String(scene?.text || '').trim();
+        if (focus && focusText) {
+            lines.push({
+                speakerId: focus.id,
+                speakerName: focus.name,
+                content: focusText
+            });
+        }
+        const companionMap = scene?.companionTexts;
+        const companionText = companion && companionMap && typeof companionMap === 'object'
+            ? String(companionMap[companion.id] || '').trim()
+            : '';
+        if (companion && companionText) {
+            lines.push({
+                speakerId: companion.id,
+                speakerName: companion.name,
+                content: companionText
+            });
+        }
+        return lines;
+    }
+
+    _waitForGroupOpeningAdvance(openingEpoch, sceneId, remaining) {
+        this._groupMessagesRemaining = remaining;
+        this.uiManager.showNextIndicator?.(remaining > 0);
+        if (remaining <= 0) return Promise.resolve(true);
+        return new Promise((resolve) => {
+            let timer = null;
+            const resolver = (value) => {
+                if (timer) clearTimeout(timer);
+                resolve(value);
+            };
+            timer = setTimeout(() => {
+                if (this._groupAdvanceResolver === resolver) {
+                    this._groupAdvanceResolver = null;
+                    this.uiManager.showNextIndicator?.(false);
+                    resolver(true);
+                }
+            }, 180000);
+            this._groupAdvanceResolver = resolver;
+        }).then((advanced) => {
+            this._groupMessagesRemaining = Math.max(0, remaining - 1);
+            if (this._freeTalkEpoch !== openingEpoch
+                || this.currentSceneId !== sceneId
+                || !this.isFreeTalking) {
+                throw this._makeStaleTurnError('Free-talk scene changed during group opening');
+            }
+            return advanced;
+        });
+    }
+
     async startGroupFreeTalk(scene, sceneId) {
         if (window.ensureCupidFreeTalkRuntime && !window.CupidFreeTalkPromptsReady) {
             const epoch = this._freeTalkEpoch;
@@ -1231,15 +1287,41 @@ class FreeTalkSystem {
             : (scene.name || participants[0].name);
         const openingEpoch = this._freeTalkEpoch;
         const lastReply = checkpoint?.lastReply;
+        const openingDialogues = this._buildGroupOpeningDialogues(scene, participants);
         this.uiManager.updateNameTag(lastReply?.speakerName || participants[0].name);
         if (lastReply?.speakerId) this._setGroupActiveSpeaker(lastReply.speakerId);
-        if (!lastReply?.content && scene.text) window.recordCupidVisibleChat?.({ charId: 'group',
-            role: 'assistant', content: scene.text, sessionId: sceneId,
-            speakerId: participants[0]?.id, participants,
-            conversationDay: this.stateManager.currentDay, logSource: 'opening' });
-        if (lastReply?.content || scene.text) await this.dialogueSystem.typeText(lastReply?.content || scene.text, lastReply?.speakerName || openingName, lastReply?.segments || null);
-        if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
-        this._commitFreeTalkCheckpoint(lastReply || { content: scene.text || '', speakerName: openingName });
+        if (lastReply?.content) {
+            await this.dialogueSystem.typeText(lastReply.content, lastReply.speakerName || openingName, lastReply.segments || null);
+            if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
+            this._commitFreeTalkCheckpoint(lastReply);
+        } else if (openingDialogues.length) {
+            for (let index = 0; index < openingDialogues.length; index += 1) {
+                const line = openingDialogues[index];
+                this._setGroupActiveSpeaker(line.speakerId);
+                this.uiManager.updateNameTag(line.speakerName);
+                window.recordCupidVisibleChat?.({ charId: 'group',
+                    role: 'assistant', content: line.content, sessionId: sceneId,
+                    speakerId: line.speakerId, participants,
+                    conversationDay: this.stateManager.currentDay, logSource: 'opening' });
+                await this.dialogueSystem.typeText(line.content, line.speakerName, null);
+                if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
+                this.freeTalkHistory.push({
+                    role: 'assistant',
+                    content: line.content,
+                    speakerId: line.speakerId,
+                    speakerName: line.speakerName
+                });
+                const remaining = openingDialogues.length - index - 1;
+                if (remaining > 0) {
+                    await this._waitForGroupOpeningAdvance(openingEpoch, sceneId, remaining);
+                    if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
+                }
+            }
+            this.stateManager.setChatMemory(this.currentCharKey, this.freeTalkHistory);
+            this._commitFreeTalkCheckpoint(openingDialogues.at(-1));
+        } else {
+            this._commitFreeTalkCheckpoint({ content: '', speakerName: openingName });
+        }
         if (this.freeTalkTurns >= this.currentMaxTurns) {
             this.endFreeTalk();
             return;

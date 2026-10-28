@@ -707,7 +707,13 @@
         "buttonText": "Parler",
         "groupLocation": "Salle de classe ouverte",
         "groupChoiceState": "le protagoniste doit dire s'il aidera d'abord la professeure avec son brouillon ou l'autre personne avec sa demande",
-        "groupAftermathCause": "qui le protagoniste a choisi d'aider d'abord dans la salle ouverte, et pourquoi"
+        "groupAftermathCause": "qui le protagoniste a choisi d'aider d'abord dans la salle ouverte, et pourquoi",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon pose une autre liasse à côté de l’estrade.* La relecture du manuscrit du conseil tombe aussi aujourd’hui. Tu peux regarder le mien d’abord ?",
+            "Yuna": "*Yuna tend un mince dossier.* Ce sont les papiers de l’événement du club littéraire. Il faut y toucher avant le coucher du soleil.",
+            "Dain": "*Dain reprend son souffle, une liasse sous le bras.* Le planning sportif est aussi pour aujourd’hui. J’aimerais que tu regardes le mien d’abord.",
+            "Nurse": "*L’infirmière pose une fine enveloppe au coin de l’estrade.* Ce sont les papiers de coopération de l’infirmerie. Il faut les vérifier avant de partir."
+        }
     },
     "after3_group_nurse_companion": {
         "name": "Infirmière",
@@ -717,7 +723,13 @@
         "buttonText": "Parler",
         "groupLocation": "Infirmerie",
         "groupChoiceState": "le protagoniste doit dire s'il s'occupera d'abord du contrôle de l'infirmière ou du problème de matériel de l'autre personne",
-        "groupAftermathCause": "qui le protagoniste a choisi d'aider d'abord à l'infirmerie, et pourquoi"
+        "groupAftermathCause": "qui le protagoniste a choisi d'aider d'abord à l'infirmerie, et pourquoi",
+        "companionTexts": {
+            "Dain": "*Dain tape légèrement sur le loquet de la caisse de secours.* Le club de sport a épuisé sa trousse. Il faut la remplir aujourd’hui.",
+            "Seoyeon": "*Seoyeon pose un petit mémo au coin du bureau.* Une liste de fournitures du conseil des élèves manque. Il faut la compléter avant de partir.",
+            "Yuna": "*Yuna sort un bon de commande de son sac.* La demande de réapprovisionnement de la trousse de l’annexe a pris du retard. Il faut s’en occuper aujourd’hui.",
+            "Teacher": "*La professeure principale soulève une chemise venue de la salle des professeurs.* Il reste encore une vérification de fournitures pour le bureau. On peut la regarder ensemble ?"
+        }
     },
     "after3_group_return": {
         "name": "{name}",

@@ -1507,6 +1507,14 @@ test('day-two student rivalry and day-three adult social groups use the highest-
             for (const field of ['name', 'text', 'context', 'personality', 'groupLocation', 'groupChoiceState', 'groupAftermathCause']) {
                 assert.ok(typeof day2I18n[id]?.[field] === 'string' && day2I18n[id][field].trim(), `${lang}/${id} is missing ${field}`);
             }
+            const companionTexts = day2I18n[id]?.companionTexts;
+            assert.equal(typeof companionTexts, 'object');
+            assert.ok(companionTexts && !Array.isArray(companionTexts), `${lang}/${id} companionTexts must be an object`);
+            for (const companionId of ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']) {
+                if (companionId === studentGroups[id].focus) continue;
+                assert.ok(typeof companionTexts[companionId] === 'string' && companionTexts[companionId].trim(),
+                    `${lang}/${id} missing companionTexts.${companionId}`);
+            }
         }
         for (const id of Object.keys(adultGroups)) {
             for (const field of ['name', 'text', 'context', 'personality', 'buttonText', 'groupLocation', 'groupChoiceState', 'groupAftermathCause']) {
@@ -1514,6 +1522,14 @@ test('day-two student rivalry and day-three adult social groups use the highest-
             }
             assert.match(day3I18n[id].text, /[?？]/,
                 `${lang}/${id} must ask for the protagonist's priority before input`);
+            const companionTexts = day3I18n[id]?.companionTexts;
+            assert.equal(typeof companionTexts, 'object');
+            assert.ok(companionTexts && !Array.isArray(companionTexts), `${lang}/${id} companionTexts must be an object`);
+            for (const companionId of ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']) {
+                if (companionId === adultGroups[id].focus) continue;
+                assert.ok(typeof companionTexts[companionId] === 'string' && companionTexts[companionId].trim(),
+                    `${lang}/${id} missing companionTexts.${companionId}`);
+            }
         }
         for (const field of ['name', 'text', 'context', 'personality']) {
             assert.ok(typeof day3I18n.haeun_freetalk?.[field] === 'string' && day3I18n.haeun_freetalk[field].trim(), `${lang}/haeun_freetalk is missing ${field}`);
@@ -1581,6 +1597,37 @@ test('day-two student rivalry and day-three adult social groups use the highest-
     assert.match(renderer, /'groupLocation'/);
     assert.match(renderer, /'groupChoiceState'/);
     assert.match(renderer, /'groupAftermathCause'/);
+    assert.match(renderer, /'companionTexts'/);
+    assert.match(freeTalk, /_buildGroupOpeningDialogues\(scene, participants = \[\]\)/);
+    assert.match(freeTalk, /_waitForGroupOpeningAdvance\(openingEpoch, sceneId, remaining\)/);
+    assert.match(freeTalk, /scene\?\.companionTexts/);
+    assert.match(freeTalk, /openingDialogues\.length/);
+
+    const nurseI18n = JSON.parse(read('assets/js/i18n/ko/day3_3_afterschool.json')).after3_group_nurse_companion;
+    const opening = system._buildGroupOpeningDialogues(
+        { text: nurseI18n.text, companionTexts: nurseI18n.companionTexts },
+        [
+            { id: 'Nurse', name: '보건선생님' },
+            { id: 'Dain', name: '다인' }
+        ]
+    );
+    assert.equal(opening.length, 2);
+    assert.equal(opening[0].speakerId, 'Nurse');
+    assert.equal(opening[0].content, nurseI18n.text);
+    assert.equal(opening[1].speakerId, 'Dain');
+    assert.equal(opening[1].content, nurseI18n.companionTexts.Dain);
+
+    const haeunOpening = system._buildGroupOpeningDialogues(
+        { text: '둘만의 자리야.' },
+        [
+            { id: 'Haeun', name: '하은' },
+            { id: 'Seoyeon', name: '서연' }
+        ]
+    );
+    assert.equal(haeunOpening.length, 1, 'scenes without companionTexts stay single-line');
+    assert.equal(haeunOpening[0].speakerId, 'Haeun');
+    assert.equal(haeunOpening[0].speakerName, '하은');
+    assert.equal(haeunOpening[0].content, '둘만의 자리야.');
 });
 
 test('group reply order, per-speaker affinity, and Dain expression assets follow the active speaker', async () => {

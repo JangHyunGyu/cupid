@@ -707,7 +707,13 @@
         "buttonText": "Falar",
         "groupLocation": "Sala de aula aberta",
         "groupChoiceState": "o protagonista deve dizer se vai ajudar primeiro a professora com o rascunho ou a acompanhante com o pedido",
-        "groupAftermathCause": "quem o protagonista decidiu ajudar primeiro na sala aberta e por quê"
+        "groupAftermathCause": "quem o protagonista decidiu ajudar primeiro na sala aberta e por quê",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon deixa outro maço de papéis ao lado da mesa.* A revisão do manuscrito do grêmio também vence hoje. Dá para olhar o meu primeiro?",
+            "Yuna": "*Yuna estende uma pasta fina.* São os papéis do evento do clube literário. Precisa mexer nisso antes do sol baixar.",
+            "Dain": "*Dain toma fôlego com um maço no braço.* O cronograma do evento de educação física também é para hoje. Queria que você olhasse o meu primeiro.",
+            "Nurse": "*A enfermeira deixa um envelope fino na quina da mesa.* São os papéis de apoio da enfermaria. Precisa conferir antes de sair."
+        }
     },
     "after3_group_nurse_companion": {
         "name": "Enfermeira",
@@ -717,7 +723,13 @@
         "buttonText": "Falar",
         "groupLocation": "Enfermaria",
         "groupChoiceState": "o protagonista deve dizer se vai cuidar primeiro da avaliação da enfermeira ou do problema de materiais da acompanhante",
-        "groupAftermathCause": "quem o protagonista decidiu ajudar primeiro na enfermaria e por quê"
+        "groupAftermathCause": "quem o protagonista decidiu ajudar primeiro na enfermaria e por quê",
+        "companionTexts": {
+            "Dain": "*Dain bate de leve na trava da caixa de emergência.* O clube de educação física ficou sem estoque de primeiros socorros. Precisa repor hoje.",
+            "Seoyeon": "*Seoyeon deixa um bilhete pequeno na quina da mesa.* Falta uma lista de materiais do grêmio. Tem de fechar isso antes de sair.",
+            "Yuna": "*Yuna tira um pedido da pasta.* A reposição do kit de primeiros socorros do anexo atrasou. Precisa resolver hoje.",
+            "Teacher": "*A professora-chefe ergue uma pasta trazida da sala dos professores.* Ainda falta conferir o material do escritório. Dá para olharmos juntos?"
+        }
     },
     "after3_group_return": {
         "name": "{name}",

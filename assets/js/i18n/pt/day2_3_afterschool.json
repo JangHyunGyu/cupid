@@ -633,7 +633,13 @@
         "personality": "Parece um pequeno conflito de horários, mas as duas personagens percebem a prioridade do protagonista. Não transforme a cena em hostilidade aberta ou humilhação. Se ele fugir da resposta, cada uma insiste à sua maneira. Se uma for escolhida, a outra não finge que está tudo bem.",
         "groupLocation": "Sala do conselho estudantil",
         "groupChoiceState": "o horário de Seoyeon coincide com o pedido da acompanhante e o protagonista precisa dizer quem vai ajudar primeiro",
-        "groupAftermathCause": "quem o protagonista escolheu ajudar primeiro na sala do conselho e por quê"
+        "groupAftermathCause": "quem o protagonista escolheu ajudar primeiro na sala do conselho e por quê",
+        "companionTexts": {
+            "Dain": "*Dain se aproxima ajustando a alça da bolsa.* O ginásio também precisa de você. Dá para vir comigo primeiro?",
+            "Yuna": "*Yuna gira um bilhete entre os dedos.* Os papéis do anexo também precisam ser organizados hoje. Você me ajuda primeiro?",
+            "Teacher": "*A professora-chefe ajeita um clipe.* Ainda tem um recado da sala dos professores. Dá para olhar este lado primeiro?",
+            "Nurse": "*A enfermeira estende um bilhete pequeno.* A conferência de materiais da enfermaria também é urgente. Me ajuda primeiro?"
+        }
     },
     "after2_group_yuna_companion": {
         "name": "Yuna",
@@ -642,7 +648,13 @@
         "personality": "Yuna exige uma escolha curta e precisa, e a acompanhante mantém sua posição do próprio jeito. Não force uma reconciliação nem invente logo uma solução que agrade às duas. A resposta pode aliviar uma e magoar a outra.",
         "groupLocation": "Anexo da biblioteca",
         "groupChoiceState": "só há tempo para organizar uma das duas pilhas e o protagonista precisa dizer ao lado de quem vai ficar",
-        "groupAftermathCause": "ao lado de quem o protagonista escolheu ficar no anexo e por quê"
+        "groupAftermathCause": "ao lado de quem o protagonista escolheu ficar no anexo e por quê",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon apoia um cronograma ao lado dos maços.* A agenda do grêmio também precisa fechar hoje. Primeiro o meu lado.",
+            "Dain": "*Dain bate na quina da mesa.* A organização do ginásio também atrasou. Me ajuda primeiro.",
+            "Teacher": "*A professora-chefe empurra uma pasta meio passo.* Ainda falta uma conferência do escritório. Dá para olhar este lado primeiro?",
+            "Nurse": "*A enfermeira deixa uma caixa pequena.* Os materiais da enfermaria também precisam fechar hoje. Me ajuda primeiro?"
+        }
     },
     "after2_group_dain_companion": {
         "name": "Dain",
@@ -651,7 +663,13 @@
         "personality": "Não invente um acidente grave nem uma mentira maldosa. O ponto não é a solução objetiva de um mistério, mas em quem o protagonista decide acreditar primeiro. Dain cobra uma resposta franca, e a acompanhante não recua para um papel secundário. A resposta pode magoar uma das duas.",
         "groupLocation": "Ginásio",
         "groupChoiceState": "Decidir qual pedido conferir e se devolve primeiro as bolas ou o material do festival",
-        "groupAftermathCause": "em quem o protagonista acreditou primeiro no ginásio e por quê"
+        "groupAftermathCause": "em quem o protagonista acreditou primeiro no ginásio e por quê",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon ergue os papéis do depósito.* Disseram para eu mover primeiro o material do evento. Você confirma o meu lado primeiro?",
+            "Yuna": "*Yuna abre um bilhete curto.* O responsável do depósito pediu os papéis primeiro. Você confirma isso primeiro?",
+            "Teacher": "*A professora-chefe ergue uma impressão.* O que eu recebi na sala dos professores priorizava os papéis. Dá para conferir este lado primeiro?",
+            "Nurse": "*A enfermeira estende uma lista pequena.* Pediram a lista de materiais primeiro. Você confirma isso primeiro?"
+        }
     },
     "after2_group_return": {
         "name": "{name}",

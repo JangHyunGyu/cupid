@@ -633,7 +633,13 @@
         "personality": "Parece un pequeño problema de horarios, pero ambos personajes están pendientes de la prioridad del protagonista. No lo conviertas en hostilidad abierta ni humillación. Si evita responder, cada uno insiste a su manera. Si elige a uno, el otro no finge que no le importa.",
         "groupLocation": "Sala del consejo estudiantil",
         "groupChoiceState": "el horario de Seoyeon coincide con la petición del acompañante y el protagonista debe decir a quién ayudará primero",
-        "groupAftermathCause": "a quién eligió ayudar primero el protagonista en la sala del consejo y por qué"
+        "groupAftermathCause": "a quién eligió ayudar primero el protagonista en la sala del consejo y por qué",
+        "companionTexts": {
+            "Dain": "*Dain se acerca ajustando la correa de la mochila.* El gimnasio también te necesita. ¿Puedes venir primero conmigo?",
+            "Yuna": "*Yuna gira un billete entre los dedos.* Los papeles del anexo también hay que ordenarlos hoy. ¿Me ayudas primero a mí?",
+            "Teacher": "*La tutora acomoda un clip.* Todavía queda un recado de la sala de profesores. ¿Podemos ver este lado primero?",
+            "Nurse": "*La enfermera tiende un pequeño memo.* La revisión de suministros del consultorio también urge. ¿Me ayudas primero?"
+        }
     },
     "after2_group_yuna_companion": {
         "name": "Yuna",
@@ -642,7 +648,13 @@
         "personality": "Yuna exige una elección breve y precisa, y el acompañante no se retira. No fuerces una reconciliación ni inventes de inmediato una solución que deje contentos a ambos. La respuesta puede aliviar a uno y decepcionar al otro.",
         "groupLocation": "Anexo de la biblioteca",
         "groupChoiceState": "solo hay tiempo para ordenar uno de los dos grupos de documentos y el protagonista debe decir al lado de quién se quedará",
-        "groupAftermathCause": "al lado de quién eligió quedarse el protagonista en el anexo y por qué"
+        "groupAftermathCause": "al lado de quién eligió quedarse el protagonista en el anexo y por qué",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon apoya un horario junto a los papeles.* El calendario del consejo también hay que cuadrarlo hoy. Primero el mío.",
+            "Dain": "*Dain golpea la esquina del escritorio.* La limpieza del gimnasio también va atrasada. Ayúdame primero.",
+            "Teacher": "*La tutora desplaza una carpeta medio paso.* Todavía queda una revisión de la oficina. ¿Podemos ver este lado primero?",
+            "Nurse": "*La enfermera deja una caja pequeña.* Los suministros del consultorio también hay que cuadrarlos hoy. ¿Me ayudas primero?"
+        }
     },
     "after2_group_dain_companion": {
         "name": "Dain",
@@ -651,7 +663,13 @@
         "personality": "No inventes un accidente grave ni una mentira maliciosa. Lo importante no es resolver un misterio, sino a quién decide creer primero el protagonista. Dain exige sinceridad y el acompañante no queda reducido a un papel secundario. La respuesta puede herir a uno de los dos.",
         "groupLocation": "Gimnasio",
         "groupChoiceState": "Decidir qué indicación comprobar y si devolver primero los balones o el material del festival",
-        "groupAftermathCause": "a quién creyó primero el protagonista en el gimnasio y por qué"
+        "groupAftermathCause": "a quién creyó primero el protagonista en el gimnasio y por qué",
+        "companionTexts": {
+            "Seoyeon": "*Seoyeon alza los papeles del almacén.* Me dijeron que moviera primero el material del evento. ¿Confirmas mi lado primero?",
+            "Yuna": "*Yuna abre un memo corto.* El encargado del almacén pidió primero los papeles. ¿Lo confirmas primero?",
+            "Teacher": "*La tutora alza una impresión.* Lo que recibí en la sala de profesores priorizaba los papeles. ¿Podemos ver este lado primero?",
+            "Nurse": "*La enfermera tiende una lista pequeña.* Pidieron primero la lista de suministros. ¿Lo confirmas primero?"
+        }
     },
     "after2_group_return": {
         "name": "{name}",

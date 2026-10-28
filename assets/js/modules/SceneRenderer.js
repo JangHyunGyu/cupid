@@ -273,7 +273,8 @@ class SceneRenderer {
             'buttonText',
             'groupLocation',
             'groupChoiceState',
-            'groupAftermathCause'
+            'groupAftermathCause',
+            'companionTexts'
         ]) {
             if (i18n[key] !== undefined) result[key] = i18n[key];
         }
