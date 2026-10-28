@@ -30,7 +30,7 @@ test('new relationship artwork is connected without changing existing Haeun unlo
         assert.equal(GalleryData.getExpressionRequirement('haeun', expression), requirement);
     }
     for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
-        assert.deepEqual(Array.from(GalleryData.getCharacter(lang, 'haeun').expressions).filter(e => !/_[0-9]{2}$/.test(e)), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'soft_smile', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'cry', 'pain', 'exhausted']);
+        assert.deepEqual(Array.from(GalleryData.getCharacter(lang, 'haeun').expressions).filter(e => !/_[0-9]{2}$/.test(e)), ['normal', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'climax', 'soft_smile', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'sob', 'scream', 'choking', 'cry', 'pain', 'exhausted']);
         for (const id of ['event_seoyeon_succulent', 'event_yuna_reading']) {
             const cg = GalleryData.cg[lang].filter(cg => cg.id === id);
             assert.equal(cg.length, 1);

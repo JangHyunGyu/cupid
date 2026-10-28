@@ -423,6 +423,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         ahegao: 'assets/images/characters/seyoun_ahegao.png',
         fainted: 'assets/images/characters/seyoun_fainted.png',
         dazed: 'assets/images/characters/seyoun_dazed.png',
+        disgusted: 'assets/images/characters/seyoun_disgusted.png',
+        smirk: 'assets/images/characters/seyoun_smirk.png',
+        furious: 'assets/images/characters/seyoun_furious.png',
+        confused: 'assets/images/characters/seyoun_confused.png',
+        relieved: 'assets/images/characters/seyoun_relieved.png',
+        sob: 'assets/images/characters/seyoun_sob.png',
+        scream: 'assets/images/characters/seyoun_scream.png',
+        choking: 'assets/images/characters/seyoun_choking.png',
         exhausted: 'assets/images/characters/seyoun_exhausted.png'
     }),
     Yuna: Object.freeze({
@@ -447,6 +455,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         ahegao: 'assets/images/characters/yuna_ahegao.png',
         fainted: 'assets/images/characters/yuna_fainted.png',
         dazed: 'assets/images/characters/yuna_dazed.png',
+        disgusted: 'assets/images/characters/yuna_disgusted.png',
+        smirk: 'assets/images/characters/yuna_smirk.png',
+        furious: 'assets/images/characters/yuna_furious.png',
+        confused: 'assets/images/characters/yuna_confused.png',
+        relieved: 'assets/images/characters/yuna_relieved.png',
+        sob: 'assets/images/characters/yuna_sob.png',
+        scream: 'assets/images/characters/yuna_scream.png',
+        choking: 'assets/images/characters/yuna_choking.png',
         exhausted: 'assets/images/characters/yuna_exhausted.png'
     }),
     Dain: Object.freeze({
@@ -472,6 +488,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         ahegao: 'assets/images/characters/dain_ahegao.png',
         fainted: 'assets/images/characters/dain_fainted.png',
         dazed: 'assets/images/characters/dain_dazed.png',
+        disgusted: 'assets/images/characters/dain_disgusted.png',
+        smirk: 'assets/images/characters/dain_smirk.png',
+        furious: 'assets/images/characters/dain_furious.png',
+        confused: 'assets/images/characters/dain_confused.png',
+        relieved: 'assets/images/characters/dain_relieved.png',
+        sob: 'assets/images/characters/dain_sob.png',
+        scream: 'assets/images/characters/dain_scream.png',
+        choking: 'assets/images/characters/dain_choking.png',
         exhausted: 'assets/images/characters/dain_exhausted.png'
     }),
     Teacher: Object.freeze({
@@ -495,6 +519,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         ahegao: 'assets/images/characters/teacher_ahegao.png',
         fainted: 'assets/images/characters/teacher_fainted.png',
         dazed: 'assets/images/characters/teacher_dazed.png',
+        disgusted: 'assets/images/characters/teacher_disgusted.png',
+        smirk: 'assets/images/characters/teacher_smirk.png',
+        furious: 'assets/images/characters/teacher_furious.png',
+        confused: 'assets/images/characters/teacher_confused.png',
+        relieved: 'assets/images/characters/teacher_relieved.png',
+        sob: 'assets/images/characters/teacher_sob.png',
+        scream: 'assets/images/characters/teacher_scream.png',
+        choking: 'assets/images/characters/teacher_choking.png',
         exhausted: 'assets/images/characters/teacher_exhausted.png'
     }),
     Nurse: Object.freeze({
@@ -520,6 +552,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         ahegao: 'assets/images/characters/nurse_ahegao.png',
         fainted: 'assets/images/characters/nurse_fainted.png',
         dazed: 'assets/images/characters/nurse_dazed.png',
+        disgusted: 'assets/images/characters/nurse_disgusted.png',
+        smirk: 'assets/images/characters/nurse_smirk.png',
+        furious: 'assets/images/characters/nurse_furious.png',
+        confused: 'assets/images/characters/nurse_confused.png',
+        relieved: 'assets/images/characters/nurse_relieved.png',
+        sob: 'assets/images/characters/nurse_sob.png',
+        scream: 'assets/images/characters/nurse_scream.png',
+        choking: 'assets/images/characters/nurse_choking.png',
         exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
     Haeun: Object.freeze({
@@ -544,6 +584,13 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         ahegao: 'assets/images/characters/haeun_ahegao.png',
         fainted: 'assets/images/characters/haeun_fainted.png',
         dazed: 'assets/images/characters/haeun_dazed.png',
+        disgusted: 'assets/images/characters/haeun_disgusted.png',
+        smirk: 'assets/images/characters/haeun_smirk.png',
+        furious: 'assets/images/characters/haeun_furious.png',
+        confused: 'assets/images/characters/haeun_confused.png',
+        sob: 'assets/images/characters/haeun_sob.png',
+        scream: 'assets/images/characters/haeun_scream.png',
+        choking: 'assets/images/characters/haeun_choking.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
@@ -553,6 +600,13 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         aegyo: 'assets/images/characters/minsu_aegyo.png',
         fainted: 'assets/images/characters/minsu_fainted.png',
         dazed: 'assets/images/characters/minsu_dazed.png',
+        disgusted: 'assets/images/characters/minsu_disgusted.png',
+        furious: 'assets/images/characters/minsu_furious.png',
+        confused: 'assets/images/characters/minsu_confused.png',
+        relieved: 'assets/images/characters/minsu_relieved.png',
+        sob: 'assets/images/characters/minsu_sob.png',
+        scream: 'assets/images/characters/minsu_scream.png',
+        choking: 'assets/images/characters/minsu_choking.png',
         cry: 'assets/images/characters/minsu_cry.png',
         pain: 'assets/images/characters/minsu_pain.png',
         climax: 'assets/images/characters/minsu_climax.png',
@@ -2782,5 +2836,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.85';
+const PROMPT_VERSION = '2.7.86';
 window.PROMPT_VERSION = PROMPT_VERSION;

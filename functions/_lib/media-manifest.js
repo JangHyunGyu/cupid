@@ -779,6 +779,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/dain_choking": {
+    "version": "dcba4afa081e6d5e18e685de",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_choking.png",
+        "key": "images/3a792099a4ebc992fd1d0af2d062ca5162a79b326cfd0d08dfc205451f145843.png",
+        "sha256": "3a792099a4ebc992fd1d0af2d062ca5162a79b326cfd0d08dfc205451f145843",
+        "etag": "259457ac39dc611015f936ae1f08b162",
+        "size": 1214977
+      },
+      {
+        "path": "assets/images/characters/dain_choking.webp",
+        "key": "images/830631500b90b57af716b6d96e70f81fb45ea6a126b7d2661c1167eedce95d5e.webp",
+        "sha256": "830631500b90b57af716b6d96e70f81fb45ea6a126b7d2661c1167eedce95d5e",
+        "etag": "28790707c725cf18ba1c63aff5933be3",
+        "size": 794130
+      }
+    ]
+  },
   "characters/dain_climax": {
     "version": "485ab7590abb2ebcd451033f",
     "files": [
@@ -988,6 +1007,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/dain_confused": {
+    "version": "e3fd0fadd286c5b9eb6f2b4a",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_confused.png",
+        "key": "images/9927284c8a0bccd4fa1684becff309eebcb604014949542e6aaa7615e939775c.png",
+        "sha256": "9927284c8a0bccd4fa1684becff309eebcb604014949542e6aaa7615e939775c",
+        "etag": "85e9ff0832e273f0cdb921ed8ef02e20",
+        "size": 1168224
+      },
+      {
+        "path": "assets/images/characters/dain_confused.webp",
+        "key": "images/7bc5473a3c7c8d83005b1b86e72acb355a7ca093f1770b40637baee16c025c88.webp",
+        "sha256": "7bc5473a3c7c8d83005b1b86e72acb355a7ca093f1770b40637baee16c025c88",
+        "etag": "0d4d6ada194bf9bc555e94874d177179",
+        "size": 766422
+      }
+    ]
+  },
   "characters/dain_cry": {
     "version": "08d87a65fd4c18de3cfad56c",
     "files": [
@@ -1098,6 +1136,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/dain_disgusted": {
+    "version": "6dabdce7b39a570874d003ec",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_disgusted.png",
+        "key": "images/2e759c25c958a3b43ff302e964339040d1f99731c7950284ec41c74c3fbfa818.png",
+        "sha256": "2e759c25c958a3b43ff302e964339040d1f99731c7950284ec41c74c3fbfa818",
+        "etag": "215500c16b2e73e84e9dd80a10d9b2fd",
+        "size": 1167330
+      },
+      {
+        "path": "assets/images/characters/dain_disgusted.webp",
+        "key": "images/1fc4c68b7866d0e23d74fcf0a1aa5a39d42c586f304b14c052ef3737f6dd4e05.webp",
+        "sha256": "1fc4c68b7866d0e23d74fcf0a1aa5a39d42c586f304b14c052ef3737f6dd4e05",
+        "etag": "b63cc5a9678c719d2fd262fd14433d8b",
+        "size": 770856
+      }
+    ]
+  },
   "characters/dain_exhausted": {
     "version": "6e21496029af30203932f9fa",
     "files": [
@@ -1152,6 +1209,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "e4ce5aac779c7ed79ff7fa9e8c5d393299d8eaaf9f3ed5afada61f6ab0d90200",
         "etag": "f760083254f27624b33c8a4b566b3d55",
         "size": 799082
+      }
+    ]
+  },
+  "characters/dain_furious": {
+    "version": "850cb47debb47104e01fbea4",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_furious.png",
+        "key": "images/b75aef8d60fb1d210a5545ae72e0c1a0793e0001e3fc4099a899500970225839.png",
+        "sha256": "b75aef8d60fb1d210a5545ae72e0c1a0793e0001e3fc4099a899500970225839",
+        "etag": "81cd7c24f550288c3318dc7846a9c887",
+        "size": 1178371
+      },
+      {
+        "path": "assets/images/characters/dain_furious.webp",
+        "key": "images/0572e7bc6e195989eec261b2aa0ef62df1e30bc969e2c439d1cf341261d50b6b.webp",
+        "sha256": "0572e7bc6e195989eec261b2aa0ef62df1e30bc969e2c439d1cf341261d50b6b",
+        "etag": "8b3dac8dadfff5a760f61c66535b13ed",
+        "size": 773608
       }
     ]
   },
@@ -1231,6 +1307,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/dain_relieved": {
+    "version": "82a6131cea56a0fea8bd0123",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_relieved.png",
+        "key": "images/67ca99fd67e458c73f2663e249978bad00075ecd65cc30d1569c0dfdb8bea616.png",
+        "sha256": "67ca99fd67e458c73f2663e249978bad00075ecd65cc30d1569c0dfdb8bea616",
+        "etag": "2c64b5b076f2f07b72997b53b0783068",
+        "size": 1165784
+      },
+      {
+        "path": "assets/images/characters/dain_relieved.webp",
+        "key": "images/35a729c2dde1c953cab60c41950c6e4ed7df7be7aafbb2976bbf84272b71cdd5.webp",
+        "sha256": "35a729c2dde1c953cab60c41950c6e4ed7df7be7aafbb2976bbf84272b71cdd5",
+        "etag": "ae16d3fb6f01ae2ef4d280a2c7c1ce2f",
+        "size": 762752
+      }
+    ]
+  },
   "characters/dain_sad": {
     "version": "06fa16f733055ffa974cdef6",
     "files": [
@@ -1269,6 +1364,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/dain_scream": {
+    "version": "541e85cf94685226761105df",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_scream.png",
+        "key": "images/a516ebfe51a95bf8d95838b5aa836ee98c5070af4723590252dabace982aeff2.png",
+        "sha256": "a516ebfe51a95bf8d95838b5aa836ee98c5070af4723590252dabace982aeff2",
+        "etag": "e70a7ff92a6b3dc9723e30c00bbe27e0",
+        "size": 1184531
+      },
+      {
+        "path": "assets/images/characters/dain_scream.webp",
+        "key": "images/5e1adcaa059b7943817bc896dfcfe90e89d3f62f2089705fbe979170ee884f9b.webp",
+        "sha256": "5e1adcaa059b7943817bc896dfcfe90e89d3f62f2089705fbe979170ee884f9b",
+        "etag": "1edf7df9f7b507dfcf31a69513d743c7",
+        "size": 779620
+      }
+    ]
+  },
   "characters/dain_shy": {
     "version": "c87a3b1452ff0f7c858b12ab",
     "files": [
@@ -1304,6 +1418,44 @@ export const MEDIA_MANIFEST = {
         "sha256": "57190b435e7f85100f797625d0b694ae6581428bd3d65a0ffb4c4a6904246120",
         "etag": "3567d2839332e18e0d80c752b1e32273",
         "size": 94440
+      }
+    ]
+  },
+  "characters/dain_smirk": {
+    "version": "3eb4b19408b2b5483e64c47d",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_smirk.png",
+        "key": "images/fd9e64a0cb245cebe799e55ee27d3f35292320a1d30cbc6ded12584b439cff56.png",
+        "sha256": "fd9e64a0cb245cebe799e55ee27d3f35292320a1d30cbc6ded12584b439cff56",
+        "etag": "9aa068ea0b013a506869810e662cfb0b",
+        "size": 1166226
+      },
+      {
+        "path": "assets/images/characters/dain_smirk.webp",
+        "key": "images/9f788bceb4c7e753ea80ddff3d0df7a4b4e2dc2ddcf115277460eb6b50e1770c.webp",
+        "sha256": "9f788bceb4c7e753ea80ddff3d0df7a4b4e2dc2ddcf115277460eb6b50e1770c",
+        "etag": "2fcfaa225ab0cc3779fb8ac6b02181fb",
+        "size": 761826
+      }
+    ]
+  },
+  "characters/dain_sob": {
+    "version": "3bd8e0f98b5775082eb598b0",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_sob.png",
+        "key": "images/b49f411a41fb3e21c06bf221e571ca37a96d2f6e97138634ea7a17d471a5d40b.png",
+        "sha256": "b49f411a41fb3e21c06bf221e571ca37a96d2f6e97138634ea7a17d471a5d40b",
+        "etag": "7ec1504e6e3634b3c5ed65aec6039903",
+        "size": 1180036
+      },
+      {
+        "path": "assets/images/characters/dain_sob.webp",
+        "key": "images/a0aab79d486b3838bc6b27685c6741f456fb102be3c1ac23caf478690829bdbb.webp",
+        "sha256": "a0aab79d486b3838bc6b27685c6741f456fb102be3c1ac23caf478690829bdbb",
+        "etag": "63f016490b5c00f09d7c5f65a6f6b444",
+        "size": 772838
       }
     ]
   },
@@ -1437,6 +1589,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "39c204df5205676fc6da2a4d3319079991e3eefebab5a4f8987aca8aad07571a",
         "etag": "a8beb58cbd613cb5b8d90eabf3b65502",
         "size": 688666
+      }
+    ]
+  },
+  "characters/haeun_choking": {
+    "version": "45516f7d8c8908032cfdf6ec",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_choking.png",
+        "key": "images/57e0e6da0d0c67ee77745ac1619b505ddb430180f5b77137fe6074573418b21b.png",
+        "sha256": "57e0e6da0d0c67ee77745ac1619b505ddb430180f5b77137fe6074573418b21b",
+        "etag": "e3bd5bc78530990d28838555512e0a26",
+        "size": 1164829
+      },
+      {
+        "path": "assets/images/characters/haeun_choking.webp",
+        "key": "images/78b891c3e5d7522898851f1cefc02b4621bb064891613d3b761c84421c3bcc2d.webp",
+        "sha256": "78b891c3e5d7522898851f1cefc02b4621bb064891613d3b761c84421c3bcc2d",
+        "etag": "a0e6570c88cce0114a7c6bacd6b79d87",
+        "size": 760722
       }
     ]
   },
@@ -1592,6 +1763,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/haeun_confused": {
+    "version": "65442923cfe812ba79c335fa",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_confused.png",
+        "key": "images/ad5476bc3a75ac0c5e095664e3a32f8905027965329ee2d250a6dba57aba7a7f.png",
+        "sha256": "ad5476bc3a75ac0c5e095664e3a32f8905027965329ee2d250a6dba57aba7a7f",
+        "etag": "0590c0709cd7abc0e7fa5b14fa594690",
+        "size": 1117492
+      },
+      {
+        "path": "assets/images/characters/haeun_confused.webp",
+        "key": "images/1df315b90e011ffd84bfde80346700edecd90ad62d811f399167752f81a876f5.webp",
+        "sha256": "1df315b90e011ffd84bfde80346700edecd90ad62d811f399167752f81a876f5",
+        "etag": "2cd3840a241bd7d5a4215c697687ed70",
+        "size": 732264
+      }
+    ]
+  },
   "characters/haeun_cry": {
     "version": "135e7d3f62dbfcb0e9aaf18d",
     "files": [
@@ -1627,6 +1817,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "f050d8e3ff6728325bc949194f77c353fe48f5fac23b3102b0bd986330b64581",
         "etag": "e2d883cd19b398b376b1df8ec528f226",
         "size": 731106
+      }
+    ]
+  },
+  "characters/haeun_disgusted": {
+    "version": "93e0d7f50cc88c6ef856eaa8",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_disgusted.png",
+        "key": "images/eef0867fd76b4f603ba6b1c279125572eac6b29e113e02b9e3c6a48b26f99d7f.png",
+        "sha256": "eef0867fd76b4f603ba6b1c279125572eac6b29e113e02b9e3c6a48b26f99d7f",
+        "etag": "db91f28cfce2559cf701f75a95f3971a",
+        "size": 1115858
+      },
+      {
+        "path": "assets/images/characters/haeun_disgusted.webp",
+        "key": "images/610845a2c9f0a812c6afda5b6145ee8725408a7abee80c13b4f01918de9ccedc.webp",
+        "sha256": "610845a2c9f0a812c6afda5b6145ee8725408a7abee80c13b4f01918de9ccedc",
+        "etag": "92dc1ed9f06a7378fa85015055f0660c",
+        "size": 732118
       }
     ]
   },
@@ -1703,6 +1912,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "921f3ba9a9388eefc70b3dd7239097a7bed3c17b9b7cc99948e2db42e64818cb",
         "etag": "aba9b3801c30da10ce1dc69ab6445555",
         "size": 695208
+      }
+    ]
+  },
+  "characters/haeun_furious": {
+    "version": "b335d4a87747f0f640fbf193",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_furious.png",
+        "key": "images/19cc106f97b13e0f20785d4c134e62c1c9d209f5f806c13b1a64fd59f8a72e96.png",
+        "sha256": "19cc106f97b13e0f20785d4c134e62c1c9d209f5f806c13b1a64fd59f8a72e96",
+        "etag": "b6c1a066602f0f1401d419d957018574",
+        "size": 1123870
+      },
+      {
+        "path": "assets/images/characters/haeun_furious.webp",
+        "key": "images/978b89f834cf05b33ea1f7167317cbccbc95c8e99a355ff284ed777a0e8e97b7.webp",
+        "sha256": "978b89f834cf05b33ea1f7167317cbccbc95c8e99a355ff284ed777a0e8e97b7",
+        "etag": "83674ea73975cbda5f9f57824578b04f",
+        "size": 736792
       }
     ]
   },
@@ -1839,6 +2067,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/haeun_scream": {
+    "version": "db6d6450704a923eae8f64db",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_scream.png",
+        "key": "images/fb3b98491db5ced2fc9f7da35864f2362d33b42e0c0bb4d3388684230587466d.png",
+        "sha256": "fb3b98491db5ced2fc9f7da35864f2362d33b42e0c0bb4d3388684230587466d",
+        "etag": "2096748f3983e1585f49af67e34e8397",
+        "size": 1123400
+      },
+      {
+        "path": "assets/images/characters/haeun_scream.webp",
+        "key": "images/a25a8546aa97da3a81eb465cfe087d0635a9632fe0f351e3d45cc4d266bdd795.webp",
+        "sha256": "a25a8546aa97da3a81eb465cfe087d0635a9632fe0f351e3d45cc4d266bdd795",
+        "etag": "03d6315592d44e005e54c407218210c6",
+        "size": 736340
+      }
+    ]
+  },
   "characters/haeun_shy": {
     "version": "e5c7155323bc5af3b7a5daae",
     "files": [
@@ -1874,6 +2121,44 @@ export const MEDIA_MANIFEST = {
         "sha256": "eadc1f671fe89f1142cbff1f4284824f7bf176fa64cac133f417a5923c9d7d1d",
         "etag": "2e42987e03b431e482b582dc024d226b",
         "size": 4018746
+      }
+    ]
+  },
+  "characters/haeun_smirk": {
+    "version": "50785a1f8ec2abfb7472a714",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_smirk.png",
+        "key": "images/ddeb132a6a3ba2da897e65a66ce465d9ef3bbd76d94902eb3b92d83564ac3044.png",
+        "sha256": "ddeb132a6a3ba2da897e65a66ce465d9ef3bbd76d94902eb3b92d83564ac3044",
+        "etag": "953e1fbb5fa8402db8eabae4c8c186c2",
+        "size": 1117850
+      },
+      {
+        "path": "assets/images/characters/haeun_smirk.webp",
+        "key": "images/46b8c7bcb31cb8545fc23bb244da9eb2d0592a890b143b50c72029858abf9049.webp",
+        "sha256": "46b8c7bcb31cb8545fc23bb244da9eb2d0592a890b143b50c72029858abf9049",
+        "etag": "f6284c8c436296a2e69356ed0a7e92c1",
+        "size": 739308
+      }
+    ]
+  },
+  "characters/haeun_sob": {
+    "version": "ad079749e4eb39535b50ef13",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_sob.png",
+        "key": "images/220c7539cc05bd64a99122b7557a549986b5f207f0113dd7a9daac7bc25caa68.png",
+        "sha256": "220c7539cc05bd64a99122b7557a549986b5f207f0113dd7a9daac7bc25caa68",
+        "etag": "c5914842cec06b34ef67b5452fa100f3",
+        "size": 1127862
+      },
+      {
+        "path": "assets/images/characters/haeun_sob.webp",
+        "key": "images/f9d5d3ce9adb7c5a4e9411b877bbc167bae3ba185d312a84bc441c680615ef8e.webp",
+        "sha256": "f9d5d3ce9adb7c5a4e9411b877bbc167bae3ba185d312a84bc441c680615ef8e",
+        "etag": "90d0daf3b086b5d0d435b0aff346d0d1",
+        "size": 738950
       }
     ]
   },
@@ -1974,6 +2259,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "92eea3df505e1d021c08c972a4ecfd1148a2a0188641a925c70dc118e70d7775",
         "etag": "623e3d7d8e978c43e331dbc8b0ec1037",
         "size": 873972
+      }
+    ]
+  },
+  "characters/minsu_choking": {
+    "version": "d10fc64a1ee8b07cb52429cb",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_choking.png",
+        "key": "images/1aa33903f79bcb7955b63c07ab3e001cd4595fce45a1c032308c98f4ae4e6d1e.png",
+        "sha256": "1aa33903f79bcb7955b63c07ab3e001cd4595fce45a1c032308c98f4ae4e6d1e",
+        "etag": "042053e8004d00f32a18a30c9fbea9ce",
+        "size": 1358016
+      },
+      {
+        "path": "assets/images/characters/minsu_choking.webp",
+        "key": "images/7bed5ae8e64d28224a0d92cfed3e7b7ab62d61739a335026a56e16452a5d845a.webp",
+        "sha256": "7bed5ae8e64d28224a0d92cfed3e7b7ab62d61739a335026a56e16452a5d845a",
+        "etag": "043441bd865e818f068b9ef9401d49a6",
+        "size": 910752
       }
     ]
   },
@@ -2091,6 +2395,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_confused": {
+    "version": "635e57542a845ca42cd2de75",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_confused.png",
+        "key": "images/be350d2a6ffa04ed6ad52eb993ec48afb5c01373a3afc4a5e94c80ac974a8de6.png",
+        "sha256": "be350d2a6ffa04ed6ad52eb993ec48afb5c01373a3afc4a5e94c80ac974a8de6",
+        "etag": "7d2a4aa0b5ddd099f2581d157b26adad",
+        "size": 1279048
+      },
+      {
+        "path": "assets/images/characters/minsu_confused.webp",
+        "key": "images/2cde7dee18a78f67d475a40d6df789de0f023c028f9c001fce03b94011e5469c.webp",
+        "sha256": "2cde7dee18a78f67d475a40d6df789de0f023c028f9c001fce03b94011e5469c",
+        "etag": "0a329c1da2ef249f2dedd78651c4a599",
+        "size": 871022
+      }
+    ]
+  },
   "characters/minsu_cry": {
     "version": "a73c159b7724cd2e2db3d68d",
     "files": [
@@ -2126,6 +2449,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "38dde4e9af2be783ed42b0c53950f2bb10b52de875a867fb87a225dcd31dc87e",
         "etag": "56f69950f80fa1bcf4a543f68051ee46",
         "size": 874572
+      }
+    ]
+  },
+  "characters/minsu_disgusted": {
+    "version": "8e5c5e756e4228fbb61f0ee3",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_disgusted.png",
+        "key": "images/c857fedccf135ea9d10532902ff62dc13e7e9ec6c1e3dafcef074123ddd1f2ad.png",
+        "sha256": "c857fedccf135ea9d10532902ff62dc13e7e9ec6c1e3dafcef074123ddd1f2ad",
+        "etag": "247e61a4016f157c289b272fff9412fa",
+        "size": 1280153
+      },
+      {
+        "path": "assets/images/characters/minsu_disgusted.webp",
+        "key": "images/10e82a00a9fd61c157f01c05a4aaaf15e05b308bc9b279f5e5941cbab52d831e.webp",
+        "sha256": "10e82a00a9fd61c157f01c05a4aaaf15e05b308bc9b279f5e5941cbab52d831e",
+        "etag": "0acda902293ea85d2687139d448f7b9f",
+        "size": 871216
       }
     ]
   },
@@ -2167,6 +2509,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_furious": {
+    "version": "355ebd5b6c78b358f1b492f5",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_furious.png",
+        "key": "images/41b2f0b51596df922cc2a054e5a882bdc104df2644c4ceaa7f25149f295597cf.png",
+        "sha256": "41b2f0b51596df922cc2a054e5a882bdc104df2644c4ceaa7f25149f295597cf",
+        "etag": "a0fe286bbad7283d37be8e1d5c77b0e4",
+        "size": 1297299
+      },
+      {
+        "path": "assets/images/characters/minsu_furious.webp",
+        "key": "images/8fe2b4b627ea7e87cdbfd549b0a8ef1f551b630fbd7fa2d9ddab9e3b219222f7.webp",
+        "sha256": "8fe2b4b627ea7e87cdbfd549b0a8ef1f551b630fbd7fa2d9ddab9e3b219222f7",
+        "etag": "e862dc045669ad7d839c720515322786",
+        "size": 880620
+      }
+    ]
+  },
   "characters/minsu_normal": {
     "version": "78f0752a9ade0f2047a2d644",
     "files": [
@@ -2205,6 +2566,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_relieved": {
+    "version": "7d68ce3444fa99673d1266cc",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_relieved.png",
+        "key": "images/af9a209c910d74d873b0367fe72d523aa193978b5a400536628b717fc7108f84.png",
+        "sha256": "af9a209c910d74d873b0367fe72d523aa193978b5a400536628b717fc7108f84",
+        "etag": "21f5aee65407505f45b5ab82e7b0ff60",
+        "size": 1281306
+      },
+      {
+        "path": "assets/images/characters/minsu_relieved.webp",
+        "key": "images/b52278b5d4966aa87dae6ec9cde30d5f93e2b2b0d1ecc33b33b4c5252b396711.webp",
+        "sha256": "b52278b5d4966aa87dae6ec9cde30d5f93e2b2b0d1ecc33b33b4c5252b396711",
+        "etag": "b3ba467a1a61eca057379893292db647",
+        "size": 871108
+      }
+    ]
+  },
   "characters/minsu_scared": {
     "version": "bc62328c096d39b78810b2ab",
     "files": [
@@ -2224,6 +2604,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_scream": {
+    "version": "9f4eefcc3adefc5c802fcfdc",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_scream.png",
+        "key": "images/6bd22a4aeff0a84cefd228e09ff3e00d6b8301fa0734ad4d8e7b79b44296f15c.png",
+        "sha256": "6bd22a4aeff0a84cefd228e09ff3e00d6b8301fa0734ad4d8e7b79b44296f15c",
+        "etag": "457135f80b7fd3b902220f45d877185a",
+        "size": 1293873
+      },
+      {
+        "path": "assets/images/characters/minsu_scream.webp",
+        "key": "images/a5609abe30ffab93f37c7def720801d704f76ba558292678a24ec424fec8a348.webp",
+        "sha256": "a5609abe30ffab93f37c7def720801d704f76ba558292678a24ec424fec8a348",
+        "etag": "91b7201a2ff460904bf1d01c1bf8097b",
+        "size": 882896
+      }
+    ]
+  },
   "characters/minsu_smirk": {
     "version": "e7f382060afa06f790d3411e",
     "files": [
@@ -2240,6 +2639,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "bd724614c08035e219e7fe1ed514c3e9aaa66b28d22f6d7db029167a1e66b9a5",
         "etag": "9d350397186ae0f05306eba5ed478b17",
         "size": 123528
+      }
+    ]
+  },
+  "characters/minsu_sob": {
+    "version": "0be61dd72ab00f69554ffaa7",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_sob.png",
+        "key": "images/d10350df5b9a4942e35178f0da6e002a4baca278dd546b489c459f89d3d7b27a.png",
+        "sha256": "d10350df5b9a4942e35178f0da6e002a4baca278dd546b489c459f89d3d7b27a",
+        "etag": "25a0c56da98ae730b36a823bd0db0d82",
+        "size": 1301003
+      },
+      {
+        "path": "assets/images/characters/minsu_sob.webp",
+        "key": "images/79cd9a864cf47cf3b0888a0348dc33b98308504d7b46c3ff55cc71439961a813.webp",
+        "sha256": "79cd9a864cf47cf3b0888a0348dc33b98308504d7b46c3ff55cc71439961a813",
+        "etag": "e7397ac5647ff8cfc4c6dfa62206b62e",
+        "size": 883016
       }
     ]
   },
@@ -2335,6 +2753,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "85527d2df6c143edd8cc60e8ec04a4cdf4467908c5b0d9b79ce2670745148d1a",
         "etag": "8995332fca7280ff443c0f6b846d0746",
         "size": 128880
+      }
+    ]
+  },
+  "characters/nurse_choking": {
+    "version": "fca2312c4c725af6701c3a1a",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_choking.png",
+        "key": "images/8789850e5d2b82b42bb2e8f5eadd7024b6632eb62a836cb38a89f73e8c998610.png",
+        "sha256": "8789850e5d2b82b42bb2e8f5eadd7024b6632eb62a836cb38a89f73e8c998610",
+        "etag": "c981a106ff6e480d5051cfdd6b16d6fb",
+        "size": 1591856
+      },
+      {
+        "path": "assets/images/characters/nurse_choking.webp",
+        "key": "images/b12804c156453b7b449d39fdefc0d94ab1c105c3984fb4bfebe86010acd4b985.webp",
+        "sha256": "b12804c156453b7b449d39fdefc0d94ab1c105c3984fb4bfebe86010acd4b985",
+        "etag": "719e8a85b12b61ad1c36db612ed5085f",
+        "size": 1034274
       }
     ]
   },
@@ -2509,6 +2946,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/nurse_confused": {
+    "version": "ef5f8cb238f984d15ec2627d",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_confused.png",
+        "key": "images/d284c74a0fb6bfd4581fa142b4e74b08e8e81e679fa742ffbe4f96cf8abf2421.png",
+        "sha256": "d284c74a0fb6bfd4581fa142b4e74b08e8e81e679fa742ffbe4f96cf8abf2421",
+        "etag": "d66b621767941a05b96fb8031de11b36",
+        "size": 1553202
+      },
+      {
+        "path": "assets/images/characters/nurse_confused.webp",
+        "key": "images/37ed6bceb9f70eace8b4e3622284b36b1bc66f38bb769e360997a00ee7ae6a59.webp",
+        "sha256": "37ed6bceb9f70eace8b4e3622284b36b1bc66f38bb769e360997a00ee7ae6a59",
+        "etag": "459567809071610addf05326515ea37c",
+        "size": 1012776
+      }
+    ]
+  },
   "characters/nurse_cry": {
     "version": "323429ad8f1339b9848ba5f5",
     "files": [
@@ -2544,6 +3000,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "b09bbbb8018652d29289614333005866f23cc22fd9207ccd20102ec70c912b7a",
         "etag": "68cce0961bf61328f10884b85a0172ad",
         "size": 1018278
+      }
+    ]
+  },
+  "characters/nurse_disgusted": {
+    "version": "369a548e2ace8bd4fc7348c2",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_disgusted.png",
+        "key": "images/59508b6e3db3774b254cdf767dcc6aa82a26e84bbb24d3cb0ef931554bcd2bf4.png",
+        "sha256": "59508b6e3db3774b254cdf767dcc6aa82a26e84bbb24d3cb0ef931554bcd2bf4",
+        "etag": "5eef98a572c2d25d199c0cc8caa1ef67",
+        "size": 1549771
+      },
+      {
+        "path": "assets/images/characters/nurse_disgusted.webp",
+        "key": "images/723e141cf538f947fc48a6df9225f9f3613f322e267e000abeb63d11b3570be7.webp",
+        "sha256": "723e141cf538f947fc48a6df9225f9f3613f322e267e000abeb63d11b3570be7",
+        "etag": "75fd0ea76dc56846c39773aa9c7e4e04",
+        "size": 1014006
       }
     ]
   },
@@ -2620,6 +3095,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "b79fa568b73184e8985186d91c67db26e064cce4946fe8411757d9f0c39ef6b0",
         "etag": "0a6455a27aee82aaa797300e503eb871",
         "size": 971712
+      }
+    ]
+  },
+  "characters/nurse_furious": {
+    "version": "fb3ea9bec41b5292d465644d",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_furious.png",
+        "key": "images/f9fa8b292c6e4e06d5259e4ba4f1847007b29c19e2f3c516fa5f8ebce61293ac.png",
+        "sha256": "f9fa8b292c6e4e06d5259e4ba4f1847007b29c19e2f3c516fa5f8ebce61293ac",
+        "etag": "e6262aa7b51f63b582dd537e51b03637",
+        "size": 1564360
+      },
+      {
+        "path": "assets/images/characters/nurse_furious.webp",
+        "key": "images/f16c187c7d9c8c50ea4cea0c642063b8bac42a3b49de5a9c0599477f31fc3d98.webp",
+        "sha256": "f16c187c7d9c8c50ea4cea0c642063b8bac42a3b49de5a9c0599477f31fc3d98",
+        "etag": "eb1fcab0585a59ec3e670e79ff593db6",
+        "size": 1023362
       }
     ]
   },
@@ -2759,6 +3253,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/nurse_relieved": {
+    "version": "99bfc2e04c75d7395db39f45",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_relieved.png",
+        "key": "images/f3967f0d2e6afc67a7e653fe51e55697120d75470c36b442bcfa7bf85e7aecf8.png",
+        "sha256": "f3967f0d2e6afc67a7e653fe51e55697120d75470c36b442bcfa7bf85e7aecf8",
+        "etag": "a70d1a312e0c45b5a935c680d4698982",
+        "size": 1549275
+      },
+      {
+        "path": "assets/images/characters/nurse_relieved.webp",
+        "key": "images/63f154a3edd5d7f7e82541439283303299a09ebd0eca62fdd0d53cbefad4f033.webp",
+        "sha256": "63f154a3edd5d7f7e82541439283303299a09ebd0eca62fdd0d53cbefad4f033",
+        "etag": "db27dc0d172381cf35531c713022efc3",
+        "size": 1012918
+      }
+    ]
+  },
   "characters/nurse_sad": {
     "version": "952e508e2a9acc8d496ddace",
     "files": [
@@ -2790,6 +3303,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/nurse_scream": {
+    "version": "649adb8026a7c3684b674ded",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_scream.png",
+        "key": "images/75667ec9d20671908fd11674f8eaec8fb0b30155cc4c7d980b6edb8e12b96339.png",
+        "sha256": "75667ec9d20671908fd11674f8eaec8fb0b30155cc4c7d980b6edb8e12b96339",
+        "etag": "84e4bf090da13ba98d2642a860adccc4",
+        "size": 1560730
+      },
+      {
+        "path": "assets/images/characters/nurse_scream.webp",
+        "key": "images/f70a7aa35eeaeda53c66731e5ad4cae83a2164d01f04ee91ce7753bf643e7cd7.webp",
+        "sha256": "f70a7aa35eeaeda53c66731e5ad4cae83a2164d01f04ee91ce7753bf643e7cd7",
+        "etag": "7c2a86166a17ea451227ae7815a2b8aa",
+        "size": 1023368
+      }
+    ]
+  },
   "characters/nurse_shy": {
     "version": "6d8d734d908ae5ece3efc55c",
     "files": [
@@ -2818,6 +3350,44 @@ export const MEDIA_MANIFEST = {
         "sha256": "c54424ce5e65136b1ef973a6e6a1876500cabb278fcbcb5c8e162137d2a6ee2a",
         "etag": "5be7119d87c269d0908ae43671c7c2c9",
         "size": 1460649
+      }
+    ]
+  },
+  "characters/nurse_smirk": {
+    "version": "1178e7eebb015f7fd6a0f18b",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_smirk.png",
+        "key": "images/855f9e078962ae30461c33eb4340659a278a934fd6432a86f344d9bdc3a389b2.png",
+        "sha256": "855f9e078962ae30461c33eb4340659a278a934fd6432a86f344d9bdc3a389b2",
+        "etag": "229b4f8a12aa2cff8ebdecf25980902a",
+        "size": 1552146
+      },
+      {
+        "path": "assets/images/characters/nurse_smirk.webp",
+        "key": "images/663532ed1aafcf2cc2bb9cc1fd5dbeca8a41874d6da286653d20b6f5e3759ef9.webp",
+        "sha256": "663532ed1aafcf2cc2bb9cc1fd5dbeca8a41874d6da286653d20b6f5e3759ef9",
+        "etag": "6ebcc060d2fb87613ee7c0179407842e",
+        "size": 1014446
+      }
+    ]
+  },
+  "characters/nurse_sob": {
+    "version": "6f3685f9d242ad4c1384f8a4",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_sob.png",
+        "key": "images/192202e1d903a4a691f99219a35e04caf45e25d433991878a0432efbb203e6f6.png",
+        "sha256": "192202e1d903a4a691f99219a35e04caf45e25d433991878a0432efbb203e6f6",
+        "etag": "7bc29ed93411d15ef597f64e50db0437",
+        "size": 1563934
+      },
+      {
+        "path": "assets/images/characters/nurse_sob.webp",
+        "key": "images/e5fe7ecada38feb55cc644827945ca9a5f51ec3ad1d042ae438fd240115e9c69.webp",
+        "sha256": "e5fe7ecada38feb55cc644827945ca9a5f51ec3ad1d042ae438fd240115e9c69",
+        "etag": "4aefdc4dba9f7e77c243e294b07c3203",
+        "size": 1023008
       }
     ]
   },
@@ -2992,6 +3562,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/seyoun_choking": {
+    "version": "19873788c258af0ccc3a6c73",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_choking.png",
+        "key": "images/949694c86acd527aa32394bf765a8689d95a6f151c90facfedcabf722efc3fca.png",
+        "sha256": "949694c86acd527aa32394bf765a8689d95a6f151c90facfedcabf722efc3fca",
+        "etag": "c5262828db2b5a23c8808e203bb7d06b",
+        "size": 1289492
+      },
+      {
+        "path": "assets/images/characters/seyoun_choking.webp",
+        "key": "images/7caec897a472ce903561373464efbf75de38175de7cec3ed81f1f3de82eaf942.webp",
+        "sha256": "7caec897a472ce903561373464efbf75de38175de7cec3ed81f1f3de82eaf942",
+        "etag": "cddfa429d5f058cd2557fe332ca29ee5",
+        "size": 835646
+      }
+    ]
+  },
   "characters/seyoun_climax": {
     "version": "85e00e9bcc305d19e63843a1",
     "files": [
@@ -3103,6 +3692,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "1cc3ff479bf7b1a8cfbcce532d34d44ebb1b4e1e5bb1c904c8849915ff1791f7",
         "etag": "3d0abbe3ba8c9c5b70c9329481442bae",
         "size": 793632
+      }
+    ]
+  },
+  "characters/seyoun_confused": {
+    "version": "84ec0384651e232d819bbb41",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_confused.png",
+        "key": "images/d377c161fbdb5ac45a64d3209274fd3aa5d9f36337773ef277635a87fcbafafe.png",
+        "sha256": "d377c161fbdb5ac45a64d3209274fd3aa5d9f36337773ef277635a87fcbafafe",
+        "etag": "ebca17e4849907f55966659b984f9000",
+        "size": 1266512
+      },
+      {
+        "path": "assets/images/characters/seyoun_confused.webp",
+        "key": "images/792263c855768dc7014c4314c46c6451358a4b71b2619e046ebd3bf287228284.webp",
+        "sha256": "792263c855768dc7014c4314c46c6451358a4b71b2619e046ebd3bf287228284",
+        "etag": "6a2f663d5e5eddc60246e41930773bce",
+        "size": 818062
       }
     ]
   },
@@ -3236,6 +3844,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "ff489607a0fd7776bd3fc55167d3d1ab73cc13d822031580f32069e27b3def24",
         "etag": "8faa5bbad1894856261e5040b79fd60b",
         "size": 812986
+      }
+    ]
+  },
+  "characters/seyoun_disgusted": {
+    "version": "2f421024171b039bfb8ce753",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_disgusted.png",
+        "key": "images/bcf068bcaef07867300ddbf34841196ca0ae120fc0434689645ff26b8ce1b311.png",
+        "sha256": "bcf068bcaef07867300ddbf34841196ca0ae120fc0434689645ff26b8ce1b311",
+        "etag": "1a481f023d0f9ce41bc2a8ae31bb171a",
+        "size": 1263269
+      },
+      {
+        "path": "assets/images/characters/seyoun_disgusted.webp",
+        "key": "images/6b097e171e188f5ac934b90b0692052344596a9d323946cf7b03184d64ef4afb.webp",
+        "sha256": "6b097e171e188f5ac934b90b0692052344596a9d323946cf7b03184d64ef4afb",
+        "etag": "2908f35a4369801b5fa70c15eec756b4",
+        "size": 817324
       }
     ]
   },
@@ -3391,6 +4018,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/seyoun_furious": {
+    "version": "3bc6e65a7871c83e55a25a6e",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_furious.png",
+        "key": "images/9fea760f9c60b5e589011007f08a71fc88ef7ab92bfe87d00d09178e47ea94d8.png",
+        "sha256": "9fea760f9c60b5e589011007f08a71fc88ef7ab92bfe87d00d09178e47ea94d8",
+        "etag": "7453fbf1777eeaa27682bfe2acd21d44",
+        "size": 1271133
+      },
+      {
+        "path": "assets/images/characters/seyoun_furious.webp",
+        "key": "images/1d593e7b5c129c6bc1630a4fb52438fd4a42456bd57899e02b4151f7be2d4fcb.webp",
+        "sha256": "1d593e7b5c129c6bc1630a4fb52438fd4a42456bd57899e02b4151f7be2d4fcb",
+        "etag": "1886e3abd1b39ff95a0f4deb9a409d40",
+        "size": 822038
+      }
+    ]
+  },
   "characters/seyoun_laugh": {
     "version": "6059a840fe65aec63b73be57",
     "files": [
@@ -3467,6 +4113,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/seyoun_relieved": {
+    "version": "55ac05760913bd3bf8a5cb3e",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_relieved.png",
+        "key": "images/6bdc58ebad7774612b49e4741f6bc345aa2a1f94d599acd6d2ac29065fc25d4c.png",
+        "sha256": "6bdc58ebad7774612b49e4741f6bc345aa2a1f94d599acd6d2ac29065fc25d4c",
+        "etag": "b6a19f1e7a0d72c0f658ab8da3136088",
+        "size": 1268420
+      },
+      {
+        "path": "assets/images/characters/seyoun_relieved.webp",
+        "key": "images/8d3d03dc23973e94abe4c9172304c669aae469fde6cbecf3fc125318ddf992e3.webp",
+        "sha256": "8d3d03dc23973e94abe4c9172304c669aae469fde6cbecf3fc125318ddf992e3",
+        "etag": "2fe82aaf116fd9c5eab263d1c62d7cac",
+        "size": 818268
+      }
+    ]
+  },
   "characters/seyoun_sad": {
     "version": "82567c7b21bfa6e9bbc6babe",
     "files": [
@@ -3505,6 +4170,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/seyoun_scream": {
+    "version": "ab853b5b49f3102aaf52010e",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_scream.png",
+        "key": "images/116cab7bc6065742944f33a78444b969c3781eb8042601e2ad80d39a95eba69c.png",
+        "sha256": "116cab7bc6065742944f33a78444b969c3781eb8042601e2ad80d39a95eba69c",
+        "etag": "7940fc8f653854b6e276fa48f058a200",
+        "size": 1271954
+      },
+      {
+        "path": "assets/images/characters/seyoun_scream.webp",
+        "key": "images/bff24a52bd92244714b88dc9c5d1d230d2191ca5ed490919455225854048471c.webp",
+        "sha256": "bff24a52bd92244714b88dc9c5d1d230d2191ca5ed490919455225854048471c",
+        "etag": "d4cc8f9ee23a84c95c485e59722e44f1",
+        "size": 823006
+      }
+    ]
+  },
   "characters/seyoun_shy": {
     "version": "f801eecb2ccd228d45aa18b5",
     "files": [
@@ -3540,6 +4224,44 @@ export const MEDIA_MANIFEST = {
         "sha256": "a851fb6417eb68fce0300eec3b3001f68da3f63e606f39ae343827995f48df92",
         "etag": "3c601c76b85607781de0b8c442fb0478",
         "size": 819202
+      }
+    ]
+  },
+  "characters/seyoun_smirk": {
+    "version": "945e1d2c78fb844ad1b943c1",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_smirk.png",
+        "key": "images/69cd1713789bd9813b8d29ab738e396d55ad691952afa8478bffe34e3cbdcf92.png",
+        "sha256": "69cd1713789bd9813b8d29ab738e396d55ad691952afa8478bffe34e3cbdcf92",
+        "etag": "1d78f5e3b948eb92305bca492d4ac43d",
+        "size": 1268209
+      },
+      {
+        "path": "assets/images/characters/seyoun_smirk.webp",
+        "key": "images/5f80e32b3f7cbe28a9885799aa5656dfd2bcbf9a5c2ed9d54e0f2a042c3a3179.webp",
+        "sha256": "5f80e32b3f7cbe28a9885799aa5656dfd2bcbf9a5c2ed9d54e0f2a042c3a3179",
+        "etag": "aec0575ec80194b8f81288f6df886cc8",
+        "size": 819546
+      }
+    ]
+  },
+  "characters/seyoun_sob": {
+    "version": "3379d3cf9f77ecdecab37564",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_sob.png",
+        "key": "images/58a8ec300a6cab389c7df9e3cd17911cb9746074a387af824d80e68508acf967.png",
+        "sha256": "58a8ec300a6cab389c7df9e3cd17911cb9746074a387af824d80e68508acf967",
+        "etag": "70be053cb63fb0a25777e3af73db487b",
+        "size": 1276994
+      },
+      {
+        "path": "assets/images/characters/seyoun_sob.webp",
+        "key": "images/e61a37bcc5656f42e5b5a4b29a7b93d6788460951a4e754c38f45131d2fd004a.webp",
+        "sha256": "e61a37bcc5656f42e5b5a4b29a7b93d6788460951a4e754c38f45131d2fd004a",
+        "etag": "2aae6093c869d42efd21f827d5f59955",
+        "size": 822758
       }
     ]
   },
@@ -3692,6 +4414,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "1871b70f5daa0eef09e00b8d5c36d3cc73af013b27b3d341126e1b95c2817f56",
         "etag": "8ccd03c683156a69263bb64de3f9774e",
         "size": 267712
+      }
+    ]
+  },
+  "characters/teacher_choking": {
+    "version": "68c0c2190c30f9fe4fe4f254",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_choking.png",
+        "key": "images/83c4f6c0841694fe8f30e5682d813000c14be33f7c1846c9099e8b5b3b9e9ef8.png",
+        "sha256": "83c4f6c0841694fe8f30e5682d813000c14be33f7c1846c9099e8b5b3b9e9ef8",
+        "etag": "e983bb1455f7a228cebdca672076ef87",
+        "size": 1390582
+      },
+      {
+        "path": "assets/images/characters/teacher_choking.webp",
+        "key": "images/35cad146d51f06b889321aac6284cf1221e28de62805f87938d1f39ea9f36697.webp",
+        "sha256": "35cad146d51f06b889321aac6284cf1221e28de62805f87938d1f39ea9f36697",
+        "etag": "1690c3f2534a96ca41d60d29531310e8",
+        "size": 895250
       }
     ]
   },
@@ -3885,6 +4626,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/teacher_confused": {
+    "version": "11b5b1e1126f3a4030c15d21",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_confused.png",
+        "key": "images/f61e21717bc568cb12862a0a5d7fbb92b1d6a40758636c04337be71d1d4527db.png",
+        "sha256": "f61e21717bc568cb12862a0a5d7fbb92b1d6a40758636c04337be71d1d4527db",
+        "etag": "f52cfa28cfbf6909d1edb51a8cda8304",
+        "size": 1350891
+      },
+      {
+        "path": "assets/images/characters/teacher_confused.webp",
+        "key": "images/982c23cd7556223478fd9e0c23ec251f25e3f7864fb57d9e7a64f69b7d2b3167.webp",
+        "sha256": "982c23cd7556223478fd9e0c23ec251f25e3f7864fb57d9e7a64f69b7d2b3167",
+        "etag": "81c8593c34264e09c47c00bfc2cf338b",
+        "size": 871090
+      }
+    ]
+  },
   "characters/teacher_cry": {
     "version": "dfe8357bab71017cf2ab88e6",
     "files": [
@@ -3920,6 +4680,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "b6784b365353430cc9cbe4116bf0089c2655298217a80c43c5d60fee600dc7b6",
         "etag": "42d94df47cc74bbae1e04740de57457c",
         "size": 885552
+      }
+    ]
+  },
+  "characters/teacher_disgusted": {
+    "version": "4bee0d3954b0117a7f1407c8",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_disgusted.png",
+        "key": "images/6db5fa98f1483ccdc8208107b8bfcf21ccd9e5d3406944fce421540fdb2be9f9.png",
+        "sha256": "6db5fa98f1483ccdc8208107b8bfcf21ccd9e5d3406944fce421540fdb2be9f9",
+        "etag": "5e316c8a29c5734281e1749affb3e31c",
+        "size": 1345732
+      },
+      {
+        "path": "assets/images/characters/teacher_disgusted.webp",
+        "key": "images/37c5cd8b5d43cd34187583d145cf77830a64aac2c761e3f5809df2a4df621c87.webp",
+        "sha256": "37c5cd8b5d43cd34187583d145cf77830a64aac2c761e3f5809df2a4df621c87",
+        "etag": "b0341034c16f3f1ac2fd1836665ca526",
+        "size": 869394
       }
     ]
   },
@@ -3977,6 +4756,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "63e150d842717afbc59b80faf4127e1c0530c3284bcd63e41ef6d79d3679a76e",
         "etag": "95ebc076de444ce798f96bc810c720d8",
         "size": 8777650
+      }
+    ]
+  },
+  "characters/teacher_furious": {
+    "version": "4eb9090ec0f48268207b0da5",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_furious.png",
+        "key": "images/a4edd170945b8d2a77b5c9994cebb2dc1c21b80854730dba5cf5844e00338579.png",
+        "sha256": "a4edd170945b8d2a77b5c9994cebb2dc1c21b80854730dba5cf5844e00338579",
+        "etag": "fa1c3e2720102cbd9707185cd916e361",
+        "size": 1363898
+      },
+      {
+        "path": "assets/images/characters/teacher_furious.webp",
+        "key": "images/1799ceb1da8370171c39ac6024c04f80def985d788113bc5728f005dfd150cab.webp",
+        "sha256": "1799ceb1da8370171c39ac6024c04f80def985d788113bc5728f005dfd150cab",
+        "etag": "36419e893a6c9b01cffc1b26e804cf4d",
+        "size": 878886
       }
     ]
   },
@@ -4056,6 +4854,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/teacher_relieved": {
+    "version": "92a327240cc80a816d758ade",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_relieved.png",
+        "key": "images/1804f2209626bd525ff9b2344aff5a6c878318947d33a3c3b50a04d6f4afa5be.png",
+        "sha256": "1804f2209626bd525ff9b2344aff5a6c878318947d33a3c3b50a04d6f4afa5be",
+        "etag": "ae95a77ee35a3b9758a3ba8949f4b5ba",
+        "size": 1349291
+      },
+      {
+        "path": "assets/images/characters/teacher_relieved.webp",
+        "key": "images/ad27cb239954d02889d88e09f2b0baf8fc57a355b76346abc2a1175cd829e124.webp",
+        "sha256": "ad27cb239954d02889d88e09f2b0baf8fc57a355b76346abc2a1175cd829e124",
+        "etag": "1d8da034302d4b457eb30dd458d797eb",
+        "size": 877646
+      }
+    ]
+  },
   "characters/teacher_sad": {
     "version": "84fdf0fc2607c26a916eea70",
     "files": [
@@ -4094,6 +4911,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/teacher_scream": {
+    "version": "7e519d37bde7b45b0570d5f6",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_scream.png",
+        "key": "images/aeff8abdc49189efc16737fb011e28a49cf3c84899e6cf4c0615c14d968d9226.png",
+        "sha256": "aeff8abdc49189efc16737fb011e28a49cf3c84899e6cf4c0615c14d968d9226",
+        "etag": "dff2f30b2dbdda5b04fbdd9e8d28b09c",
+        "size": 1372035
+      },
+      {
+        "path": "assets/images/characters/teacher_scream.webp",
+        "key": "images/cbcccc90badca0df3dc123121089e4078ade9884e202d73b01c94552e41eae43.webp",
+        "sha256": "cbcccc90badca0df3dc123121089e4078ade9884e202d73b01c94552e41eae43",
+        "etag": "9f759446209e182fa44d128aaab3b1e6",
+        "size": 884856
+      }
+    ]
+  },
   "characters/teacher_shy": {
     "version": "7c11cbbf36d76f81a913d6cc",
     "files": [
@@ -4129,6 +4965,44 @@ export const MEDIA_MANIFEST = {
         "sha256": "31cee630e990d849b5078e589a6dc70f4ba862518f4d2756222b827b8c75a0be",
         "etag": "6dbdd441680b2b14452b4170849552e0",
         "size": 126238
+      }
+    ]
+  },
+  "characters/teacher_smirk": {
+    "version": "f75a6ab6ff6c7cdf18b66602",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_smirk.png",
+        "key": "images/fee60566272392572ec4367301d12ba93fd55066257e2773d6408a339a74f51e.png",
+        "sha256": "fee60566272392572ec4367301d12ba93fd55066257e2773d6408a339a74f51e",
+        "etag": "64eda073b3c11b9efa3979a369f276a4",
+        "size": 1350548
+      },
+      {
+        "path": "assets/images/characters/teacher_smirk.webp",
+        "key": "images/a898c6bd770ce90586b7658c2b731e2fd54e1db1dd7be31b1021a69c6d9d8f9f.webp",
+        "sha256": "a898c6bd770ce90586b7658c2b731e2fd54e1db1dd7be31b1021a69c6d9d8f9f",
+        "etag": "a3e12028062aafbf87d2f58b32940482",
+        "size": 874190
+      }
+    ]
+  },
+  "characters/teacher_sob": {
+    "version": "a29bb927785087def4df6229",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_sob.png",
+        "key": "images/136f62273305fc9ae935a2539ecbb082d81644988ce9676a188a4a02cf89408a.png",
+        "sha256": "136f62273305fc9ae935a2539ecbb082d81644988ce9676a188a4a02cf89408a",
+        "etag": "05555959ebd600990146cf89954f4a5f",
+        "size": 1363983
+      },
+      {
+        "path": "assets/images/characters/teacher_sob.webp",
+        "key": "images/9e596808a9480c83d43fc32bb5bbb61e020599e8fe91d45908245a0b70638fff.webp",
+        "sha256": "9e596808a9480c83d43fc32bb5bbb61e020599e8fe91d45908245a0b70638fff",
+        "etag": "78df27a44cc4532337101f0ef119fef1",
+        "size": 881528
       }
     ]
   },
@@ -4281,6 +5155,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "05e650f68541d98402c58ce9ac8911d6c151b4c85168fc8ddf7bb6c097e7e23f",
         "etag": "53b28a261832b362d306aff329ef6dc6",
         "size": 982120
+      }
+    ]
+  },
+  "characters/yuna_choking": {
+    "version": "5ee09327bbb08d4159687d76",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_choking.png",
+        "key": "images/f2cfdc20d379f41b1936dabbd211a08287157cc85ae108f8d45e2e09623a3c31.png",
+        "sha256": "f2cfdc20d379f41b1936dabbd211a08287157cc85ae108f8d45e2e09623a3c31",
+        "etag": "80d2a4291ee179a64b0854983307d124",
+        "size": 1464114
+      },
+      {
+        "path": "assets/images/characters/yuna_choking.webp",
+        "key": "images/43ad8e14fe61b3fdb9cc833471d7a2b489c5ab499ae180d525d52bf859469602.webp",
+        "sha256": "43ad8e14fe61b3fdb9cc833471d7a2b489c5ab499ae180d525d52bf859469602",
+        "etag": "7b5c452f54b6c7c07bbe8e436335ca11",
+        "size": 874430
       }
     ]
   },
@@ -4455,6 +5348,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/yuna_confused": {
+    "version": "aeee12092c3f58fecd4fb666",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_confused.png",
+        "key": "images/2598ae065de6288f9e503bad67fa2a04e3142f070252d5efdef87e1d32e79b42.png",
+        "sha256": "2598ae065de6288f9e503bad67fa2a04e3142f070252d5efdef87e1d32e79b42",
+        "etag": "8a1c967184f4f350ca75ed27856afc16",
+        "size": 1400953
+      },
+      {
+        "path": "assets/images/characters/yuna_confused.webp",
+        "key": "images/7dd93775a6d853e79e4524f9f41ecf81eb0156bb1dc980aed05837198d3b25de.webp",
+        "sha256": "7dd93775a6d853e79e4524f9f41ecf81eb0156bb1dc980aed05837198d3b25de",
+        "etag": "955d19fb6b0fc6d99957ccac634480cc",
+        "size": 837756
+      }
+    ]
+  },
   "characters/yuna_cry": {
     "version": "67a0fb2d76936fa7ddf48ff5",
     "files": [
@@ -4553,6 +5465,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/yuna_disgusted": {
+    "version": "b8fc4cb2bba4f421cf509208",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_disgusted.png",
+        "key": "images/a763dc8540becdb51392e216843814eee5ed67afb83053dfc4530fc068a7f2a9.png",
+        "sha256": "a763dc8540becdb51392e216843814eee5ed67afb83053dfc4530fc068a7f2a9",
+        "etag": "7c53a51b664eb4dc54ed4a5afe905b0f",
+        "size": 1403965
+      },
+      {
+        "path": "assets/images/characters/yuna_disgusted.webp",
+        "key": "images/5ff3bfb6c54ebf5472a5e3a32c1a11b79dc9a900eaa612b078bc91b758c42352.webp",
+        "sha256": "5ff3bfb6c54ebf5472a5e3a32c1a11b79dc9a900eaa612b078bc91b758c42352",
+        "etag": "eeba20cb72e1052b6cf8421ab269cb35",
+        "size": 840802
+      }
+    ]
+  },
   "characters/yuna_exhausted": {
     "version": "abcc0bfd58dd8a59c5081582",
     "files": [
@@ -4607,6 +5538,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "ea62668ff9c9478177c350825a3a3538ce9975c9ed8b4315f030075a42747eee",
         "etag": "a5763b6eb487407c316c04742bd5e005",
         "size": 894180
+      }
+    ]
+  },
+  "characters/yuna_furious": {
+    "version": "68d51f732b66bdb286c2fec9",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_furious.png",
+        "key": "images/41c3d44487a7dd4eacf525cc7a556c61990a12551a9a164bbdce7a64c39ec444.png",
+        "sha256": "41c3d44487a7dd4eacf525cc7a556c61990a12551a9a164bbdce7a64c39ec444",
+        "etag": "65c808b08da0f61ae7b5c0d4a3617091",
+        "size": 1413837
+      },
+      {
+        "path": "assets/images/characters/yuna_furious.webp",
+        "key": "images/446b2d0c84a287455095505fe02919100795470dd983a7072557470910767bd5.webp",
+        "sha256": "446b2d0c84a287455095505fe02919100795470dd983a7072557470910767bd5",
+        "etag": "18d5bf375b48da0e0838bddad1de10d6",
+        "size": 849254
       }
     ]
   },
@@ -4691,6 +5641,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/yuna_relieved": {
+    "version": "f52087d4c4481ae7f5966d29",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_relieved.png",
+        "key": "images/194ce115900058ee627ec4cfa67ba00595fdc381917f996d4ea061ae553e2825.png",
+        "sha256": "194ce115900058ee627ec4cfa67ba00595fdc381917f996d4ea061ae553e2825",
+        "etag": "45706349081c3cb3c3887b3d5d1e160c",
+        "size": 1399027
+      },
+      {
+        "path": "assets/images/characters/yuna_relieved.webp",
+        "key": "images/e19184cca15d3a478b9e34b39534dffb4262ed4098c847dc96bfbcf2abbd33ae.webp",
+        "sha256": "e19184cca15d3a478b9e34b39534dffb4262ed4098c847dc96bfbcf2abbd33ae",
+        "etag": "4bf7acf4acfe0aff1134ee32945e416c",
+        "size": 839726
+      }
+    ]
+  },
   "characters/yuna_sad": {
     "version": "c73c2a3d293ec676ad7faaf9",
     "files": [
@@ -4729,6 +5698,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/yuna_scream": {
+    "version": "7429883b0519fd4522be5725",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_scream.png",
+        "key": "images/36c93558374076c9bf7fb15126fa6668eed7966b6f16e54d9a173cf015b350ea.png",
+        "sha256": "36c93558374076c9bf7fb15126fa6668eed7966b6f16e54d9a173cf015b350ea",
+        "etag": "7c2b748bdf155e7a67ec9d10ada7af0c",
+        "size": 1413538
+      },
+      {
+        "path": "assets/images/characters/yuna_scream.webp",
+        "key": "images/4d8665bd545c3920c764a41d5b226e23c5aa9352750a0392bd52cb96b5a5178e.webp",
+        "sha256": "4d8665bd545c3920c764a41d5b226e23c5aa9352750a0392bd52cb96b5a5178e",
+        "etag": "090f4c99205935b2406e71c9ec46c254",
+        "size": 844938
+      }
+    ]
+  },
   "characters/yuna_shy": {
     "version": "7de73a6c1803e06fb13e5ad0",
     "files": [
@@ -4764,6 +5752,44 @@ export const MEDIA_MANIFEST = {
         "sha256": "668524033dd240c4a4aafbf4ee264265c758f1feef6747eeec63b025899540c2",
         "etag": "41f5a27af13a43af22352d84f922d593",
         "size": 988276
+      }
+    ]
+  },
+  "characters/yuna_smirk": {
+    "version": "cd1090acbc23857e9762bf61",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_smirk.png",
+        "key": "images/5bda37473094130c2b571c8bb970648a2800b2729b057a002822a4e175123256.png",
+        "sha256": "5bda37473094130c2b571c8bb970648a2800b2729b057a002822a4e175123256",
+        "etag": "c910113600aa56103a4c28f6dcac4dde",
+        "size": 1397957
+      },
+      {
+        "path": "assets/images/characters/yuna_smirk.webp",
+        "key": "images/11fc44d0f9b59c87a79024a17764a495e3d7e0f16332402f354f013ca45fc8cf.webp",
+        "sha256": "11fc44d0f9b59c87a79024a17764a495e3d7e0f16332402f354f013ca45fc8cf",
+        "etag": "8e885f7a680a5c237ab040805d6f4695",
+        "size": 837128
+      }
+    ]
+  },
+  "characters/yuna_sob": {
+    "version": "f2540e94407349e0adbef2e2",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_sob.png",
+        "key": "images/123fb02883afb1872e452b9c662ae44e56292748a3a8266c2e9863e765affbca.png",
+        "sha256": "123fb02883afb1872e452b9c662ae44e56292748a3a8266c2e9863e765affbca",
+        "etag": "c0b9dac8a430f27c0658db915abe4163",
+        "size": 1419560
+      },
+      {
+        "path": "assets/images/characters/yuna_sob.webp",
+        "key": "images/771ca1df33231f2fa629ff7a5b31c668d40f67d5be39adc0c39d3b4257002636.webp",
+        "sha256": "771ca1df33231f2fa629ff7a5b31c668d40f67d5be39adc0c39d3b4257002636",
+        "etag": "b119f4d530a0ab821a6f520a6d080315",
+        "size": 849516
       }
     ]
   },
