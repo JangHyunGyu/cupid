@@ -461,6 +461,33 @@
       }
     },
     {
+      "id": "dain/expressions/dazed/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dazed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/dazed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_dazed.png",
+            "assets/characters/dain/expressions/dazed/01/sprite.png"
+          ],
+          "sha256": "cf3862bd3f5c01b84b78cdde66fd35a2b7a8d5dd3c8e6cf260682b91e3032b52",
+          "bytes": 1234702
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_dazed.webp",
+            "assets/characters/dain/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "0be3e7b860bef62436119624e7521abc7f1ef2074d23652fd028f7666b4300e6",
+          "bytes": 759685
+        }
+      }
+    },
+    {
       "id": "dain/expressions/exhausted/01",
       "characterId": "dain",
       "role": "expression",
@@ -484,6 +511,33 @@
           ],
           "sha256": "87ea14f1a09d60b5317f2e768ee8793f3ce441c8f6a4ab7be084b685fe85adb7",
           "bytes": 965633
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/fainted/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "fainted",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/fainted/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_fainted.png",
+            "assets/characters/dain/expressions/fainted/01/sprite.png"
+          ],
+          "sha256": "9dabab3e6ab9ca5905cf95436f07f353587b63a9467eb8e0e52e580e749b6e62",
+          "bytes": 1235876
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_fainted.webp",
+            "assets/characters/dain/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "fda8d19c73a68dd00ad48a53c35f0780af09c8275357dd26c25d8055e34585f6",
+          "bytes": 757853
         }
       }
     },
@@ -1277,6 +1331,33 @@
       }
     },
     {
+      "id": "haeun/expressions/dazed/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "dazed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/dazed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_dazed.png",
+            "assets/characters/haeun/expressions/dazed/01/sprite.png"
+          ],
+          "sha256": "ebf083dc2f36d1cd9feee6d42328c2f2d68baeb97418bfd9132ad976bba3af86",
+          "bytes": 1169066
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_dazed.webp",
+            "assets/characters/haeun/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "8e213f127c916bd159486bf98b5ef4ff66961b13cd1a35222e89808b800cdbed",
+          "bytes": 731143
+        }
+      }
+    },
+    {
       "id": "haeun/expressions/exhausted/01",
       "characterId": "haeun",
       "role": "expression",
@@ -1300,6 +1381,33 @@
           ],
           "sha256": "1c18c6f802d2cc7584bccf07c4edba9ec85493d99a53844541441f7bff8ad5f0",
           "bytes": 754411
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/fainted/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "fainted",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/fainted/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_fainted.png",
+            "assets/characters/haeun/expressions/fainted/01/sprite.png"
+          ],
+          "sha256": "37c87f644ba9d78eb4d5f80b4a98b4f595b7f31fd5f6344d668800e085c56f94",
+          "bytes": 1171578
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_fainted.webp",
+            "assets/characters/haeun/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "a7f309bad40ccfdb572edeb8c9609e8f5eafb4c302084c3ef693ba0664ebdaad",
+          "bytes": 730479
         }
       }
     },
@@ -1934,6 +2042,33 @@
       }
     },
     {
+      "id": "minsu/expressions/dazed/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "dazed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/dazed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_dazed.png",
+            "assets/characters/minsu/expressions/dazed/01/sprite.png"
+          ],
+          "sha256": "68bd3d36edfeddfa3051612dedc096ffd7782ffd0db635ce0701542d26349930",
+          "bytes": 1381473
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_dazed.webp",
+            "assets/characters/minsu/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "9e5eb82867553a522cb0a3edcfb46a6ab08791bfdd4542d002dc6306d145c83a",
+          "bytes": 874609
+        }
+      }
+    },
+    {
       "id": "minsu/expressions/exhausted/01",
       "characterId": "minsu",
       "role": "expression",
@@ -1957,6 +2092,33 @@
           ],
           "sha256": "c3dd26e1c75886d98c42a2e3d17d8547a098ef58811eac050b66bece7460716a",
           "bytes": 994075
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/fainted/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "fainted",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/fainted/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_fainted.png",
+            "assets/characters/minsu/expressions/fainted/01/sprite.png"
+          ],
+          "sha256": "64d443768bb3b9c1524c4d49a386ec97bc1f5c8a8266bf6271ea2a7f046d47c2",
+          "bytes": 1379587
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_fainted.webp",
+            "assets/characters/minsu/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "a65881b164b4907b2b13d576bdb4b69260c542d1ca8314c70887a6850c122d29",
+          "bytes": 871519
         }
       }
     },
@@ -2474,6 +2636,33 @@
       }
     },
     {
+      "id": "nurse/expressions/dazed/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dazed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/dazed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_dazed.png",
+            "assets/characters/nurse/expressions/dazed/01/sprite.png"
+          ],
+          "sha256": "0f55b74aa0523f8a235f21d709ccb1e378037de55489e31a4bb443e30f33b76c",
+          "bytes": 1625767
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_dazed.webp",
+            "assets/characters/nurse/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "21912df9dd3c8e8d69040b97626efe1a1d19f944ad6990af51fe1c0531a5812a",
+          "bytes": 1018315
+        }
+      }
+    },
+    {
       "id": "nurse/expressions/dry_smile/01",
       "characterId": "nurse",
       "role": "expression",
@@ -2524,6 +2713,33 @@
           ],
           "sha256": "ab8ac38106eddcde3f63e4e836c57d48ade46b4550417781699637ababe292cb",
           "bytes": 1127575
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/fainted/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "fainted",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/fainted/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_fainted.png",
+            "assets/characters/nurse/expressions/fainted/01/sprite.png"
+          ],
+          "sha256": "c0ee24812a5960ba65632034339908aa2c27c57004a1cf311bc98f6ce801e04a",
+          "bytes": 1627903
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_fainted.webp",
+            "assets/characters/nurse/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "b12e993a8c56acd1aaab00ef4d2fdeee0274fe127271cac041044c023916e06b",
+          "bytes": 1020639
         }
       }
     },
@@ -3280,6 +3496,33 @@
       }
     },
     {
+      "id": "seoyeon/expressions/dazed/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dazed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/dazed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dazed.png",
+            "assets/characters/seoyeon/expressions/dazed/01/sprite.png"
+          ],
+          "sha256": "2c159f5514d1dd8954354b1b81d65aedb8aea8ece3ec1d82ddfcd6071ef35423",
+          "bytes": 1314665
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dazed.webp",
+            "assets/characters/seoyeon/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "8556b497f1d239d63660d77a3d995a4b08e60636c32eb21967c7522bce35d32f",
+          "bytes": 813023
+        }
+      }
+    },
+    {
       "id": "seoyeon/expressions/exhausted/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -3303,6 +3546,33 @@
           ],
           "sha256": "e618dbbd4a81ec3e4a37a2b598960e45138987926f068654ad79631ed90fc08e",
           "bytes": 986699
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/fainted/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "fainted",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/fainted/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_fainted.png",
+            "assets/characters/seoyeon/expressions/fainted/01/sprite.png"
+          ],
+          "sha256": "28422f04ff1df0816dfe79893488e73819342a3be26d4695e77b0486e6794d33",
+          "bytes": 1317240
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_fainted.webp",
+            "assets/characters/seoyeon/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "ef63bf3f050939ccb2f818dfb98653cc84f782a73d853990a7dbcd37d2c3740e",
+          "bytes": 819581
         }
       }
     },
@@ -4338,6 +4608,33 @@
       }
     },
     {
+      "id": "teacher/expressions/dazed/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "dazed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/dazed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_dazed.png",
+            "assets/characters/teacher/expressions/dazed/01/sprite.png"
+          ],
+          "sha256": "c65ac4843df54ebb05ee273634fa49c14c73720cda1434b840b3e5c3ac92fcb8",
+          "bytes": 1423180
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_dazed.webp",
+            "assets/characters/teacher/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "82112fe5a80280fbcb108e500fd04ec0de451bfe0375c4a7a27210c03c2333d5",
+          "bytes": 885589
+        }
+      }
+    },
+    {
       "id": "teacher/expressions/exhausted/01",
       "characterId": "teacher",
       "role": "expression",
@@ -4361,6 +4658,33 @@
           ],
           "sha256": "fef9d661c6b9494c89b4989d16c7c8367b51fc6718143005c57f7f61497957b0",
           "bytes": 984649
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/fainted/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "fainted",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/fainted/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_fainted.png",
+            "assets/characters/teacher/expressions/fainted/01/sprite.png"
+          ],
+          "sha256": "494a5c34fa42eb236178e54b5c471633f25619db554dd6ce7f44e30b4448e3b2",
+          "bytes": 1418847
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_fainted.webp",
+            "assets/characters/teacher/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "5c12ffdc53988b99c6fc367cb3e7214945e48bb609cca06dcaf2d85f605f5eff",
+          "bytes": 875235
         }
       }
     },
@@ -5094,6 +5418,33 @@
       }
     },
     {
+      "id": "yuna/expressions/dazed/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dazed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/dazed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_dazed.png",
+            "assets/characters/yuna/expressions/dazed/01/sprite.png"
+          ],
+          "sha256": "d9381f9135d66a0fa461758d15be42f337e49bb222b82844115056ab62d0458d",
+          "bytes": 1438393
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_dazed.webp",
+            "assets/characters/yuna/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "b0c00e92901d595661ce22b3fcfee4db098d73c704a61b74e55e7bbca25ddc8b",
+          "bytes": 840149
+        }
+      }
+    },
+    {
       "id": "yuna/expressions/exhausted/01",
       "characterId": "yuna",
       "role": "expression",
@@ -5117,6 +5468,33 @@
           ],
           "sha256": "f406d375df1bcaa07bd681a2f2cdff679a748f04444b0d7ce8b3f20005961afc",
           "bytes": 1045125
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/fainted/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "fainted",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/fainted/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_fainted.png",
+            "assets/characters/yuna/expressions/fainted/01/sprite.png"
+          ],
+          "sha256": "1f82f17412a9e29f236d00803134c818c4f43c5c46447eedaa55805403cbfdd4",
+          "bytes": 1435246
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_fainted.webp",
+            "assets/characters/yuna/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "6654192a5ea6aaad0ae9d81ed063006bca58f5d69f61a985fd8b6609add623db",
+          "bytes": 837779
         }
       }
     },

@@ -146,7 +146,7 @@ function assertCommonKoreanPrompt(prompt, label) {
     }
     const stablePrompt = splitCacheBoundary(prompt, label).stable;
     // Reserve room for narrator register and cry expression enum without shortening character canon.
-    const stableBudget = label.startsWith('main/') ? 4495 : 4245;
+    const stableBudget = label.startsWith('main/') ? 4520 : 4270;
     assert(stablePrompt.length <= stableBudget,
         `${label} stable prompt exceeded the ${stableBudget}-character input budget (${stablePrompt.length})`);
     for (const rule of REQUIRED_NATURAL_KOREAN_RULES) {
