@@ -217,7 +217,7 @@ window.__cupidShowGalleryLoadError = function() {
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
     if (window.CupidGalleryLoaderReady) return;
     const basePath = 'assets/js/';
-    const version = '2.9.366';
+    const version = '2.9.367';
     const LOAD_RETRIES = 3;
     const recoveryKey = 'cupid-gallery-load-recovery:' + window.location.pathname;
 
@@ -262,7 +262,8 @@ window.__cupidShowGalleryLoadError = function() {
             : (src === 'gallery-progress.js' || src === 'gallery-ui-cg.js' || src === 'media-gate.js' ? '&guard=20260926-gallery-slot'
             : (src === 'gallery-tips-data.js' || src === 'gallery-data.js' ? '&history=20261009-ko-voice' : ''));
         const expressionRevision = src === 'prompts.js' || src === 'gallery-freetalk.js' ? '&expressions=20261026' : '';
-        return basePath + src + '?v=' + version + historyRevision + expressionRevision + (attempt ? '&retry=' + Date.now() : '');
+        const portraitRevision = src === 'modules/config.js' || src === 'gallery-freetalk.js' ? '&portrait=20261030' : '';
+        return basePath + src + '?v=' + version + historyRevision + expressionRevision + portraitRevision + (attempt ? '&retry=' + Date.now() : '');
     }
 
     function loadScriptAttempt(src, attempt) {

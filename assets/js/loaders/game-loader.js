@@ -100,7 +100,7 @@
      * 
      * 예: 2.2.0 → 2.2.1 또는 2.3.1
      */
-    const version = '2.9.366';
+    const version = '2.9.367';
     const LOAD_RETRIES = 3;
 
     // =========================================================================
@@ -314,6 +314,7 @@
         var query = '?v=' + encodeURIComponent(version);
         if (src === 'prompts.js' || src === 'modules/FreeTalkSystem.js') query += '&expressions=20261026';
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
+        if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&portrait=20261030';
         if (src === 'sound.js' || src === 'scenario/day5_4_night.js') query += '&history=20260926-bedline';
         if (src === 'modules/SceneRenderer.js') query += '&history=20260926-cross';
         if (src === 'modules/GameEngine.js' || src === 'progression-integrity.js' || src === 'modules/SaveManager.js') query += '&history=20261009-rebalance';

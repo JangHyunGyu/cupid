@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.366";
+const ASSET_VERSION = "2.9.367";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -594,7 +594,10 @@ async function migrateCupidChatHistoryToD1() {
         affinityChange = null,
         affinityCurrent = null,
         clientMsgId,
-        recoveryOccurrence = null
+        recoveryOccurrence = null,
+        expression = '',
+        expressionVariant = '',
+        avatarAsset = ''
     }) {
         try {
             const entry = makeCupidChatLogEntry({
@@ -615,7 +618,10 @@ async function migrateCupidChatHistoryToD1() {
                 affinityChange,
                 affinityCurrent,
                 clientMsgId,
-                recoveryOccurrence
+                recoveryOccurrence,
+                expression,
+                expressionVariant,
+                avatarAsset
             });
             entry.logSource = 'local-recovery';
             await persistCupidChatLogEntries([entry], {
@@ -688,6 +694,27 @@ async function migrateCupidChatHistoryToD1() {
         return content;
     }
 
+    // Saved history keeps the expression either as fields or inside the original JSON reply.
+    function _recoveredExpressionFields(msg) {
+        if (msg?.role !== 'assistant') return {};
+        let expression = typeof msg.expression === 'string' ? msg.expression : '';
+        if (!expression && typeof msg.content === 'string') {
+            const trimmed = msg.content.trim();
+            if (trimmed.startsWith('{') || trimmed.startsWith('```')) {
+                try {
+                    const fenced = trimmed.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
+                    const obj = JSON.parse(fenced ? fenced[1].trim() : trimmed);
+                    if (typeof obj?.expression === 'string') expression = obj.expression;
+                } catch (_) { /* Plain text replies carry no expression. */ }
+            }
+        }
+        return {
+            expression,
+            expressionVariant: typeof msg.expressionVariant === 'string' ? msg.expressionVariant : '',
+            avatarAsset: typeof msg.avatarAsset === 'string' ? msg.avatarAsset : ''
+        };
+    }
+
     async function migrateChatArray(charId, history, sessionId, context) {
         if (!Array.isArray(history)) return;
         const normalizedCharId = _normalizeCharId(charId);
@@ -702,6 +729,7 @@ async function migrateCupidChatHistoryToD1() {
                 content,
                 sessionId,
                 context,
+                ..._recoveredExpressionFields(msg),
                 clientMsgId: makeCupidMigratedClientMsgId([
                     'legacy', normalizedCharId, sessionId, context, msg.role, String(index), hashCupidLogText(content)
                 ])
@@ -787,6 +815,7 @@ async function migrateCupidChatHistoryToD1() {
                         role: 'assistant',
                         content: message.content,
                         speakerId,
+                        ..._recoveredExpressionFields({ ...message, role: 'assistant' }),
                         affinityChange: message.affinityChange,
                         affinityCurrent: message.affinityCurrent,
                         clientMsgId: makeCupidGroupChatLogClientId({
@@ -979,6 +1008,40 @@ function normalizeCupidExpressionVariant(value) {
     return /^[a-z0-9][a-z0-9_-]{0,31}$/i.test(id) ? id.slice(0, 32) : '';
 }
 
+// A portrait belongs to a speaker when its file name starts with that speaker's prefix (seyoun_, dain_ ...).
+// Unknown or custom speakers have no prefix to compare, so their portrait is accepted as is.
+function getCupidAvatarAssetPrefix(speaker) {
+    const map = window.CHARACTER_EXPRESSIONS || {};
+    const wanted = String(speaker || '').trim().toLowerCase();
+    const key = Object.keys(map).find(name => name.toLowerCase() === wanted);
+    const match = String((key && map[key]?.normal) || '').match(/characters\/([a-z0-9]+)_normal\.(?:webp|png)$/i);
+    return match ? match[1].toLowerCase() : '';
+}
+
+function isCupidAvatarAssetOwnedBy(asset, speaker) {
+    const prefix = getCupidAvatarAssetPrefix(speaker);
+    if (!prefix) return true;
+    return (String(asset || '').split('?')[0].split('/').pop() || '').toLowerCase().startsWith(prefix + '_');
+}
+
+// First candidate portrait that belongs to the speaker. Another character's portrait is never logged for them.
+function pickCupidSpeakerAvatarAsset(speaker, ...candidates) {
+    for (const candidate of candidates) {
+        const asset = getCupidChatAvatarAssetFromPath(candidate);
+        if (asset && isCupidAvatarAssetOwnedBy(asset, speaker)) return asset;
+    }
+    return '';
+}
+
+// Expression code and image id of a portrait already on screen (opening lines have no model expression).
+function getCupidPortraitLogFields(img, speaker) {
+    const avatarAsset = pickCupidSpeakerAvatarAsset(speaker, getCupidChatAvatarAsset(img));
+    const file = avatarAsset.split('/').pop() || '';
+    const match = file.match(/^[a-z0-9]+_([a-z0-9_]+?)(?:_(\d{2}))?\.webp$/i);
+    if (!match) return { expression: '', expressionVariant: '', avatarAsset: '' };
+    return { expression: match[1].toLowerCase(), expressionVariant: match[2] || '01', avatarAsset };
+}
+
 function makeCupidChatLogEntry({
     userId,
     charId,
@@ -1046,9 +1109,10 @@ function makeCupidChatLogEntry({
     if (role === 'assistant') {
         const code = String(expression || '').trim().toLowerCase();
         entry.expression = /^[a-z][a-z0-9_-]{0,63}$/.test(code) ? code : '';
-        if (/^assets\/images\/characters\/[a-z0-9_-]+\.(?:webp|png)$/.test(avatarAsset)) entry.avatarAsset = avatarAsset;
+        if (/^assets\/images\/characters\/[a-z0-9_-]+\.(?:webp|png)$/.test(avatarAsset)
+            && isCupidAvatarAssetOwnedBy(avatarAsset, speakerId || charId)) entry.avatarAsset = avatarAsset;
         const variant = normalizeCupidExpressionVariant(expressionVariant)
-            || (entry.expression ? getCupidExpressionVariantId(entry.avatarAsset || avatarAsset, entry.expression) : '');
+            || (entry.expression && entry.avatarAsset ? getCupidExpressionVariantId(entry.avatarAsset, entry.expression) : '');
         if (entry.expression && variant) entry.expressionVariant = variant;
     }
     const normalizedRecoveryOccurrence = Number(recoveryOccurrence);
@@ -1518,7 +1582,8 @@ function sendCupidPendingLogsOnPageHide() {
 // Queue before rendering or awaiting AI. The server archive uses these same IDs.
 function recordCupidVisibleChat({ charId, role, content, sessionId = '', turnId = '',
     speakerId = null, participants = [], conversationDay = null, playerName = '',
-    clientMsgId = '', responseMetadata = null, logSource = 'client-reply', expression = '' } = {}) {
+    clientMsgId = '', responseMetadata = null, logSource = 'client-reply', expression = '',
+    expressionVariant = '', avatarAsset = '' } = {}) {
     if (!charId || !String(content || '').trim()) return null;
     const group = charId === 'group';
     const entry = makeCupidChatLogEntry({
@@ -1529,7 +1594,7 @@ function recordCupidVisibleChat({ charId, role, content, sessionId = '', turnId 
         conversationDay: resolveCupidConversationDay(conversationDay, sessionId),
         groupParticipants: participants.map(item => String(item?.id || item)),
         ...getCupidResponseLogMetadata(responseMetadata || { turnId }, getCupidLanguage()),
-        logSource, expression, clientMsgId: clientMsgId || (turnId
+        logSource, expression, expressionVariant, avatarAsset, clientMsgId: clientMsgId || (turnId
             ? `cupid-api:${turnId}:${role}${role === 'assistant' ? ':' + (speakerId || charId) : ''}` : '')
     });
     if (logSource === 'stream-preview' && enqueueCupidChatLog(entry)) scheduleCupidLogRetry(1);
@@ -1556,6 +1621,10 @@ function getCupidChatAvatarAssetFromPath(rawPath) {
     return getCupidChatAvatarAsset({ dataset: { cupidAvatarAsset: String(rawPath || '') } });
 }
 window.getCupidChatAvatarAssetFromPath = getCupidChatAvatarAssetFromPath;
+window.isCupidAvatarAssetOwnedBy = isCupidAvatarAssetOwnedBy;
+window.pickCupidSpeakerAvatarAsset = pickCupidSpeakerAvatarAsset;
+window.getCupidPortraitLogFields = getCupidPortraitLogFields;
+
 window.getCupidExpressionVariantId = getCupidExpressionVariantId;
 window.normalizeCupidExpressionVariant = normalizeCupidExpressionVariant;
 

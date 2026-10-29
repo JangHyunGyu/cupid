@@ -1333,9 +1333,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
             const selection = displayFallback ? null : this._updateExpression(parsed.expression, requestCharId);
-            const avatarAsset = window.getCupidChatAvatarAsset?.(document.getElementById('gft-char-img'))
-                || selection?.avatarAsset
-                || '';
+            const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(requestCharId,
+                window.getCupidChatAvatarAsset?.(document.getElementById('gft-char-img')),
+                selection?.avatarAsset) || '';
             const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
                 || window.getCupidExpressionVariantId?.(avatarAsset, parsed.expression)
                 || '';

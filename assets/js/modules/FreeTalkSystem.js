@@ -858,7 +858,8 @@ class FreeTalkSystem {
         if (displayReply?.content || scene.text) {
             if (!displayReply?.content) window.recordCupidVisibleChat?.({ charId: charKey,
                 role: 'assistant', content: scene.text, sessionId: sceneId,
-                conversationDay: this.stateManager.currentDay, logSource: 'opening' });
+                conversationDay: this.stateManager.currentDay, logSource: 'opening',
+                ...(window.getCupidPortraitLogFields?.(this.uiManager.charSlots?.center?.querySelector('img'), charKey) || {}) });
             await this.dialogueSystem.typeText(displayReply?.content || scene.text, displayReply?.speakerName || scene.name, displayReply?.segments || null, () => (
                 this._freeTalkEpoch === startEpoch
                 && this.currentSceneId === sceneId
@@ -1303,7 +1304,9 @@ class FreeTalkSystem {
                 window.recordCupidVisibleChat?.({ charId: 'group',
                     role: 'assistant', content: line.content, sessionId: sceneId,
                     speakerId: line.speakerId, participants,
-                    conversationDay: this.stateManager.currentDay, logSource: 'opening' });
+                    conversationDay: this.stateManager.currentDay, logSource: 'opening',
+                    ...(window.getCupidPortraitLogFields?.(Object.values(this.uiManager?.charSlots || {})
+                        .find(slot => slot?.dataset?.groupCharId === line.speakerId)?.querySelector('img'), line.speakerId) || {}) });
                 await this.dialogueSystem.typeText(line.content, line.speakerName, null);
                 if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
                 this.freeTalkHistory.push({
@@ -2038,9 +2041,10 @@ class FreeTalkSystem {
                     : { applied: true, value: commitTurn() };
                 if (!turnResult.applied) throw this._makeStaleTurnError('This conversation turn was already committed');
                 const selected = this._lastExpressionSelection || null;
-                const avatarAsset = window.getCupidChatAvatarAsset?.(this.uiManager.charSlots?.center?.querySelector('img'))
-                    || selected?.avatarAsset
-                    || '';
+                // The center slot can still show another character, so only the speaker's own portrait is logged.
+                const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(charKey,
+                    window.getCupidChatAvatarAsset?.(this.uiManager.charSlots?.center?.querySelector('img')),
+                    selected?.avatarAsset) || '';
                 const expressionVariant = window.normalizeCupidExpressionVariant?.(selected?.expressionVariant)
                     || window.getCupidExpressionVariantId?.(avatarAsset, parsed.expression)
                     || '';
@@ -2353,9 +2357,8 @@ class FreeTalkSystem {
                 ? null
                 : this._applyGroupExpression(conversation.expression, conversation.speakerId);
             const portrait = Object.values(this.uiManager?.charSlots || {}).find(slot => slot?.dataset?.groupCharId === conversation.speakerId)?.querySelector('img');
-            const avatarAsset = window.getCupidChatAvatarAsset?.(portrait)
-                || selection?.avatarAsset
-                || '';
+            const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(conversation.speakerId,
+                window.getCupidChatAvatarAsset?.(portrait), selection?.avatarAsset) || '';
             const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
                 || window.getCupidExpressionVariantId?.(avatarAsset, conversation.expression)
                 || '';
