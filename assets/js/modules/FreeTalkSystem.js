@@ -1213,10 +1213,11 @@ class FreeTalkSystem {
             this._groupAdvanceResolver = resolver;
         }).then((advanced) => {
             this._groupMessagesRemaining = Math.max(0, remaining - 1);
+            // 오프닝 대기 중 자유대화가 끝나거나 장면이 바뀌면 조용히 멈춘다(오류로 올리지 않음).
             if (this._freeTalkEpoch !== openingEpoch
                 || this.currentSceneId !== sceneId
                 || !this.isFreeTalking) {
-                throw this._makeStaleTurnError('Free-talk scene changed during group opening');
+                return false;
             }
             return advanced;
         });
@@ -1313,8 +1314,8 @@ class FreeTalkSystem {
                 });
                 const remaining = openingDialogues.length - index - 1;
                 if (remaining > 0) {
-                    await this._waitForGroupOpeningAdvance(openingEpoch, sceneId, remaining);
-                    if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
+                    const advanced = await this._waitForGroupOpeningAdvance(openingEpoch, sceneId, remaining);
+                    if (!advanced || this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId || !this.isFreeTalking) return;
                 }
             }
             this.stateManager.setChatMemory(this.currentCharKey, this.freeTalkHistory);

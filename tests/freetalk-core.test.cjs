@@ -2363,3 +2363,55 @@ test('gallery rollover retains recent voice and a bounded stable checkpoint', ()
         state = result.state;
     }
 });
+
+test('leaving a group free talk during its opening stops quietly instead of throwing StaleTurnError', async () => {
+    const freeTalkWindow = { CupidFreeTalkCore: core, GAME_LANG: 'en', FLAG_MEMORIES: [] };
+    const sandbox = {
+        window: freeTalkWindow,
+        document: { documentElement: { lang: 'en' }, getElementById: () => null },
+        navigator: { onLine: true },
+        console: { log() {}, info() {}, warn() {}, error() {} },
+        DEFAULT_MAX_FREE_TALK_TURNS: 3,
+        CHAR_NAME_MAP: {},
+        SEND_ICON: '<svg></svg>',
+        setTimeout, clearTimeout, URL, URLSearchParams, Math, Date, Object, Array, String, Number, Set, Map, Promise, Error
+    };
+    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), sandbox);
+    const memory = {};
+    const typed = [];
+    const ui = {
+        chatContainer: { style: {} },
+        chatSendBtn: { style: {} },
+        chatInput: { focus() {} },
+        showNextIndicator() {},
+        updateNameTag() {}
+    };
+    const dialogue = { typeText: async (text) => { typed.push(text); } };
+    const system = new freeTalkWindow.FreeTalkSystem({
+        currentDay: 1,
+        getChatMemory: key => memory[key],
+        setChatMemory: (key, value) => { memory[key] = value; }
+    }, {}, ui, dialogue);
+    const participants = [{ id: 'Seoyeon', name: 'Seoyeon' }, { id: 'Dain', name: 'Dain' }];
+    system._getFreeTalkCheckpoint = () => null;
+    system._resolveGroupParticipants = () => participants;
+    system._buildCurrentGroupSystemPrompt = () => 'system';
+    system._setGroupStandingCharacters = () => {};
+    system._setGroupActiveSpeaker = () => {};
+    let committed = 0;
+    system._commitFreeTalkCheckpoint = () => { committed += 1; };
+    system._buildGroupOpeningDialogues = () => [
+        { speakerId: 'Seoyeon', speakerName: 'Seoyeon', content: 'first line' },
+        { speakerId: 'Dain', speakerName: 'Dain', content: 'second line' }
+    ];
+    const scene = { name: 'Seoyeon', maxTurns: 3 };
+    const started = system.startGroupFreeTalk(scene, 'after2_group_seoyeon_companion');
+    for (let i = 0; i < 20 && !system._groupAdvanceResolver; i += 1) await new Promise(r => setImmediate(r));
+    assert.ok(system._groupAdvanceResolver, 'opening must wait for the player before the second line');
+    // The player leaves the free talk while the opening is waiting (endFreeTalk/scene change path).
+    system.isFreeTalking = false;
+    system._invalidateFreeTalkContext();
+    await assert.doesNotReject(started);
+    assert.deepEqual(typed, ['first line'], 'the second opening line must not play after leaving');
+    assert.equal(committed, 0, 'a stale opening must not commit a checkpoint');
+});
