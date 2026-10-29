@@ -281,7 +281,7 @@ class CharacterRenderer {
             const path = `assets/images/characters/${this.currentCharacter}_${this.currentExpression}.png`;
             if (window.CupidMedia) {
                 window.CupidMedia.unlockExpression(this.currentCharacter, this.currentExpression);
-                window.CupidMedia.loadImageWithMediaFallback(img, path);
+                window.CupidMedia.loadImageWithMediaFallback(img, path, null, null, { preservePrevious: true });
             } else {
                 img.src = `${path}?v=${window.ASSET_VERSION || ''}`;
             }

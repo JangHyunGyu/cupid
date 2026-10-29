@@ -425,69 +425,120 @@
     return queueUnlock(collectAssetsFromGalleryData(data));
   }
 
+
+// Decode first and serialize crossfades per image; only the newest request may commit.
+async function fadeExpressionImage(image, source, options = {}) {
+    if (!image || !source) return false;
+    if (image.__expressionTarget === source) return image.__expressionRequest;
+    image.__expressionTarget = source;
+    const token = image.__expressionToken = (image.__expressionToken || 0) + 1;
+    const current = () => token === image.__expressionToken && image.isConnected !== false
+        && (!options.isCurrent || options.isCurrent());
+    const request = (async () => {
+        try {
+            if (image.__expressionLoadedSource === source && image.__expressionLoadedURL === image.src) {
+                options.onCommit?.(image.src);
+                return true;
+            }
+            let next = source;
+            if (options.load) next = await options.load(source);
+            else if (typeof Image === 'function') {
+                const pending = new Image();
+                pending.src = source;
+                if (typeof pending.decode === 'function') {
+                    try { await pending.decode(); }
+                    catch (error) {
+                        if (!/\.webp(?=[?#]|$)/i.test(source)) throw error;
+                        pending.src = source.replace(/\.webp(?=[?#]|$)/i, '.png');
+                        await pending.decode();
+                    }
+                }
+                next = pending.src;
+            }
+            if (!current()) return false;
+            await image.__expressionSwap;
+            if (!current()) return false;
+            if (image.src === next || image.getAttribute?.('src') === next) {
+                image.__expressionLoadedSource = source; image.__expressionLoadedURL = image.src;
+                options.onCommit?.(next); return true;
+            }
+            if (image.getAttribute?.('src') && image.complete === false
+                && (image.loading !== 'lazy' || image.getClientRects?.().length)) {
+                try { await image.decode?.(); } catch (_) {}
+                if (!current()) return false;
+            }
+            const swap = (async () => {
+                const animate = options.animate !== false && image.naturalWidth > 0 && image.parentElement
+                    && typeof image.animate === 'function' && typeof image.cloneNode === 'function'
+                    && !window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+                let outgoing, incoming, ghost;
+                try {
+                    if (animate) {
+                        const style = window.getComputedStyle(image);
+                        ghost = image.cloneNode(false);
+                        ghost.removeAttribute('id');
+                        ghost.removeAttribute('alt');
+                        ghost.setAttribute('aria-hidden', 'true');
+                        ghost.classList.add('expression-outgoing');
+                        Object.assign(ghost.style, {
+                            position: 'absolute', left: `${image.offsetLeft}px`, top: `${image.offsetTop}px`,
+                            right: 'auto', bottom: 'auto', margin: '0', width: style.width, height: style.height,
+                            minWidth: '0', minHeight: '0', maxWidth: 'none', maxHeight: 'none',
+                            boxSizing: style.boxSizing, objectFit: style.objectFit, objectPosition: style.objectPosition,
+                            borderRadius: style.borderRadius, transform: style.transform, transformOrigin: style.transformOrigin,
+                            translate: style.translate, scale: style.scale, rotate: style.rotate,
+                            filter: style.filter, opacity: style.opacity, visibility: 'visible',
+                            pointerEvents: 'none', zIndex: '2', transition: 'none', animation: 'none'
+                        });
+                        ghost.loading = 'eager';
+                        await ghost.decode?.();
+                        if (!current()) return false;
+                        image.parentElement.appendChild(ghost);
+                    }
+                    image.src = next;
+                    image.__expressionLoadedSource = source; image.__expressionLoadedURL = image.src;
+                    image.style.display = '';
+                    if (options.onCommit) options.onCommit(next);
+                    if (animate) {
+                        const opacity = Number(window.getComputedStyle(image).opacity);
+                        const timing = { duration: 900, easing: 'ease-in-out', fill: 'forwards' };
+                        outgoing = ghost.animate([{ opacity: Number(ghost.style.opacity) }, { opacity: 0 }], timing);
+                        incoming = image.animate([{ opacity: 0 }, { opacity }], timing);
+                        await Promise.all([outgoing.finished, incoming.finished]);
+                    }
+                    return true;
+                } finally { ghost?.remove(); outgoing?.cancel(); incoming?.cancel(); }
+            })();
+            image.__expressionSwap = swap.catch(() => false);
+            return await swap;
+        } catch (_) { return false; }
+        finally {
+            if (token === image.__expressionToken) image.__expressionTarget = null;
+        }
+    })();
+    image.__expressionRequest = request;
+    return request;
+}
+
   function loadImageWithMediaFallback(img, rawPath, onload, onerror, options) {
     if (!img) return;
+    if (options?.preservePrevious && img.__expressionTarget === rawPath) return img.__expressionRequest;
     var generation = (img.__cupidLoadGeneration || 0) + 1;
     img.__cupidLoadGeneration = generation;
-    // Keep the visible portrait until its replacement is ready; stale loads cannot win.
+    // Both chat avatars and standing portraits retain their decoded previous frame.
     if (options?.preservePrevious && img.getAttribute?.('src') && global.Image) {
-      var pending = new global.Image();
-      loadImageWithMediaFallback(pending, rawPath, async function () {
-        if (img.__cupidLoadGeneration !== generation) return;
-        if (img.src === pending.src) return;
-        var animate = img.naturalWidth > 0 && img.parentElement && typeof img.animate === 'function'
-          && !global.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
-        if (animate && img.__cupidExpressionAnimation?.playState === 'running') {
-          await img.__cupidExpressionAnimation.finished.catch(function () {});
-          if (img.__cupidLoadGeneration !== generation || img.isConnected === false) return;
-        }
-        if (animate) {
-          var old = img.cloneNode(false);
-          old.removeAttribute('id'); old.removeAttribute('alt'); old.setAttribute('aria-hidden', 'true');
-          old.classList.remove('cupid-expression-gradient-in');
-          old.classList.add('cupid-expression-outgoing', 'cupid-expression-gradient-out');
-          Object.assign(old.style, { position: 'absolute', left: img.offsetLeft + 'px', top: img.offsetTop + 'px',
-            width: img.offsetWidth + 'px', height: img.offsetHeight + 'px', maxWidth: 'none', maxHeight: 'none',
-            pointerEvents: 'none', zIndex: '2', transition: 'none', opacity: '1' });
-          img.parentElement.appendChild(old);
-          var timing = { duration: 1500, easing: 'cubic-bezier(0.4, 0, 0.2, 1)' };
-          old.animate([
-            { opacity: 1, filter: 'blur(0px) brightness(1)', maskPosition: '0% 100%', webkitMaskPosition: '0% 100%' },
-            { opacity: 0.75, filter: 'blur(1px) brightness(1.02)', offset: 0.48 },
-            { opacity: 0, filter: 'blur(3px) brightness(1.04)', maskPosition: '0% 0%', webkitMaskPosition: '0% 0%' }
-          ], { ...timing, fill: 'forwards' }).finished.then(function () { old.remove(); }, function () { old.remove(); });
-          var veil = document.createElement('div');
-          veil.className = 'cupid-expression-gradient-veil';
-          veil.setAttribute('aria-hidden', 'true');
-          Object.assign(veil.style, { left: img.offsetLeft + 'px', top: img.offsetTop + 'px',
-            width: img.offsetWidth + 'px', height: img.offsetHeight + 'px' });
-          img.parentElement.appendChild(veil);
-          veil.animate([
-            { opacity: 0, transform: 'translateY(-38%)' },
-            { opacity: 0.38, offset: 0.5 },
-            { opacity: 0, transform: 'translateY(38%)' }
-          ], { ...timing, fill: 'forwards' }).finished.then(function () { veil.remove(); }, function () { veil.remove(); });
-          img.classList.add('cupid-expression-gradient-in');
-          img.__cupidExpressionAnimation = img.animate([
-            { opacity: 0, filter: 'blur(4px) saturate(1.12)', maskPosition: '0% 100%', webkitMaskPosition: '0% 100%' },
-            { opacity: 0.45, filter: 'blur(1px) saturate(1.02)', offset: 0.5 },
-            { opacity: 1, filter: 'blur(0px) saturate(1)', maskPosition: '0% 0%', webkitMaskPosition: '0% 0%' }
-          ], timing);
-          img.__cupidExpressionAnimation.finished.then(function () {
-            img.classList.remove('cupid-expression-gradient-in');
-          }, function () { img.classList.remove('cupid-expression-gradient-in'); });
-        } else {
-          img.__cupidExpressionAnimation?.cancel?.();
-          img.classList?.remove('cupid-expression-gradient-in');
-          img.parentElement?.querySelectorAll?.('.cupid-expression-outgoing, .cupid-expression-gradient-veil').forEach(function (node) { node.remove(); });
-        }
-        img.onload = onload || null;
-        img.onerror = onerror || null;
-        img.src = pending.src;
-      }, function () {
-        if (img.__cupidLoadGeneration === generation && onerror) onerror();
+      return fadeExpressionImage(img, rawPath, {
+        isCurrent: function () { return img.__cupidLoadGeneration === generation; },
+        load: function () { return new Promise(function (resolve, reject) {
+          var pending = new global.Image();
+          loadImageWithMediaFallback(pending, rawPath, function () {
+            Promise.resolve(pending.decode?.()).then(function () { resolve(pending.src); }, reject);
+          }, reject);
+        }); }
+      }).then(function (changed) {
+        if (changed && onload) onload();
+        else if (!changed && img.__cupidLoadGeneration === generation && onerror) onerror();
       });
-      return;
     }
     var source = rawPath;
     if (typeof source === 'string' && source.indexOf('/api/media?') !== -1) {
@@ -586,6 +637,7 @@
     migrateFromLocalGallery: migrateFromLocalGallery,
     syncFromProgressObject: syncFromProgressObject,
     loadImageWithMediaFallback: loadImageWithMediaFallback,
+    fadeExpressionImage: fadeExpressionImage,
     hydrateProtectedImages: hydrateProtectedImages,
     PLACEHOLDER: PLACEHOLDER
   };

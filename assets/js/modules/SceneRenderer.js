@@ -752,43 +752,26 @@ class SceneRenderer {
         // 비동기 대기 중 새 호출이 들어왔으면 무효화
         if (this.currentSceneId !== sceneId || this._charUpdateId !== updateId) return;
 
-        // 캐릭터 이름 프리픽스 추출 (seyoun_normal.png → seyoun)
-        const getCharPrefix = (src) => {
-            if (!src) return null;
-            const filename = src.split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
-            return filename.split('_')[0];
-        };
-
-        // 교체 캐릭터 처리
         const swapPromises = [];
         loadedChars.forEach(result => {
-            if (!result || !this.uiManager.charSlots[result.pos]) return;
-            const slot = this.uiManager.charSlots[result.pos];
+            const slot = result && this.uiManager.charSlots[result.pos];
+            if (!slot) return;
             const oldImg = slot.querySelector('img');
-            const oldPrefix = oldImg ? getCharPrefix(oldImg.dataset.rawSrc) : null;
-            const newPrefix = getCharPrefix(result.img.dataset.rawSrc);
-            const sameChar = oldPrefix && newPrefix && oldPrefix === newPrefix;
-
-            if (sameChar) {
-                // 같은 캐릭터 표정 변화 → 즉시 교체
-                if (oldImg) {
-                    if (slot.contains(oldImg)) slot.removeChild(oldImg);
-                }
-                slot.appendChild(result.img);
-            } else if (oldImg) {
-                // 다른 캐릭터 → 페이드아웃 후 페이드인
-                oldImg.classList.add('char-fade-out');
-                swapPromises.push(new Promise(r => setTimeout(() => {
-                    if (this.currentSceneId !== sceneId || this._charUpdateId !== updateId) { r(); return; }
-                    if (slot.contains(oldImg)) slot.removeChild(oldImg);
-                    result.img.classList.add('char-fade-in');
-                    slot.appendChild(result.img);
-                    void result.img.offsetWidth;
-                    result.img.classList.remove('char-fade-in');
-                    r();
-                }, 280)));
+            if (oldImg && window.CupidMedia?.fadeExpressionImage) {
+                swapPromises.push(window.CupidMedia.fadeExpressionImage(oldImg, result.img.src, {
+                    isCurrent: () => this.currentSceneId === sceneId && this._charUpdateId === updateId,
+                    onCommit: () => {
+                        oldImg.dataset.rawSrc = result.img.dataset.rawSrc;
+                        oldImg.style.opacity = result.img.style.opacity;
+                        oldImg.classList.remove('char-fade-out');
+                        for (const name of ['silhouette', 'thinking']) {
+                            if (scene[name]) oldImg.classList.add(name);
+                            else oldImg.classList.remove(name);
+                        }
+                    }
+                }));
             } else {
-                // 새 등장 → 페이드인
+                if (oldImg) oldImg.remove();
                 result.img.classList.add('char-fade-in');
                 slot.appendChild(result.img);
                 void result.img.offsetWidth;
