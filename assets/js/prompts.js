@@ -432,6 +432,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         scream: 'assets/images/characters/seyoun_scream.png',
         choking: 'assets/images/characters/seyoun_choking.png',
         dead: 'assets/images/characters/seyoun_dead.png',
+        dry_smile: 'assets/images/characters/seyoun_dry_smile.png',
+        bored: 'assets/images/characters/seyoun_bored.png',
+        tired: 'assets/images/characters/seyoun_tired.png',
+        firm: 'assets/images/characters/seyoun_firm.png',
+        humiliated: 'assets/images/characters/seyoun_humiliated.png',
+        dumbfounded: 'assets/images/characters/seyoun_dumbfounded.png',
+        pleading: 'assets/images/characters/seyoun_pleading.png',
+        entranced: 'assets/images/characters/seyoun_entranced.png',
         exhausted: 'assets/images/characters/seyoun_exhausted.png'
     }),
     Yuna: Object.freeze({
@@ -465,6 +473,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         scream: 'assets/images/characters/yuna_scream.png',
         choking: 'assets/images/characters/yuna_choking.png',
         dead: 'assets/images/characters/yuna_dead.png',
+        dry_smile: 'assets/images/characters/yuna_dry_smile.png',
+        tired: 'assets/images/characters/yuna_tired.png',
+        firm: 'assets/images/characters/yuna_firm.png',
+        very_shy: 'assets/images/characters/yuna_very_shy.png',
+        humiliated: 'assets/images/characters/yuna_humiliated.png',
+        dumbfounded: 'assets/images/characters/yuna_dumbfounded.png',
+        pleading: 'assets/images/characters/yuna_pleading.png',
+        entranced: 'assets/images/characters/yuna_entranced.png',
         exhausted: 'assets/images/characters/yuna_exhausted.png'
     }),
     Dain: Object.freeze({
@@ -499,6 +515,15 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         scream: 'assets/images/characters/dain_scream.png',
         choking: 'assets/images/characters/dain_choking.png',
         dead: 'assets/images/characters/dain_dead.png',
+        dry_smile: 'assets/images/characters/dain_dry_smile.png',
+        bored: 'assets/images/characters/dain_bored.png',
+        tired: 'assets/images/characters/dain_tired.png',
+        firm: 'assets/images/characters/dain_firm.png',
+        very_shy: 'assets/images/characters/dain_very_shy.png',
+        humiliated: 'assets/images/characters/dain_humiliated.png',
+        dumbfounded: 'assets/images/characters/dain_dumbfounded.png',
+        pleading: 'assets/images/characters/dain_pleading.png',
+        entranced: 'assets/images/characters/dain_entranced.png',
         exhausted: 'assets/images/characters/dain_exhausted.png'
     }),
     Teacher: Object.freeze({
@@ -531,6 +556,15 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         scream: 'assets/images/characters/teacher_scream.png',
         choking: 'assets/images/characters/teacher_choking.png',
         dead: 'assets/images/characters/teacher_dead.png',
+        dry_smile: 'assets/images/characters/teacher_dry_smile.png',
+        bored: 'assets/images/characters/teacher_bored.png',
+        tired: 'assets/images/characters/teacher_tired.png',
+        firm: 'assets/images/characters/teacher_firm.png',
+        very_shy: 'assets/images/characters/teacher_very_shy.png',
+        humiliated: 'assets/images/characters/teacher_humiliated.png',
+        dumbfounded: 'assets/images/characters/teacher_dumbfounded.png',
+        pleading: 'assets/images/characters/teacher_pleading.png',
+        entranced: 'assets/images/characters/teacher_entranced.png',
         exhausted: 'assets/images/characters/teacher_exhausted.png'
     }),
     Nurse: Object.freeze({
@@ -565,6 +599,13 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         scream: 'assets/images/characters/nurse_scream.png',
         choking: 'assets/images/characters/nurse_choking.png',
         dead: 'assets/images/characters/nurse_dead.png',
+        bored: 'assets/images/characters/nurse_bored.png',
+        firm: 'assets/images/characters/nurse_firm.png',
+        very_shy: 'assets/images/characters/nurse_very_shy.png',
+        humiliated: 'assets/images/characters/nurse_humiliated.png',
+        dumbfounded: 'assets/images/characters/nurse_dumbfounded.png',
+        pleading: 'assets/images/characters/nurse_pleading.png',
+        entranced: 'assets/images/characters/nurse_entranced.png',
         exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
     Haeun: Object.freeze({
@@ -597,6 +638,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         scream: 'assets/images/characters/haeun_scream.png',
         choking: 'assets/images/characters/haeun_choking.png',
         dead: 'assets/images/characters/haeun_dead.png',
+        dry_smile: 'assets/images/characters/haeun_dry_smile.png',
+        bored: 'assets/images/characters/haeun_bored.png',
+        tired: 'assets/images/characters/haeun_tired.png',
+        very_shy: 'assets/images/characters/haeun_very_shy.png',
+        humiliated: 'assets/images/characters/haeun_humiliated.png',
+        dumbfounded: 'assets/images/characters/haeun_dumbfounded.png',
+        pleading: 'assets/images/characters/haeun_pleading.png',
+        entranced: 'assets/images/characters/haeun_entranced.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
@@ -614,6 +663,16 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         scream: 'assets/images/characters/minsu_scream.png',
         choking: 'assets/images/characters/minsu_choking.png',
         dead: 'assets/images/characters/minsu_dead.png',
+        soft_smile: 'assets/images/characters/minsu_soft_smile.png',
+        dry_smile: 'assets/images/characters/minsu_dry_smile.png',
+        bored: 'assets/images/characters/minsu_bored.png',
+        tired: 'assets/images/characters/minsu_tired.png',
+        firm: 'assets/images/characters/minsu_firm.png',
+        very_shy: 'assets/images/characters/minsu_very_shy.png',
+        humiliated: 'assets/images/characters/minsu_humiliated.png',
+        dumbfounded: 'assets/images/characters/minsu_dumbfounded.png',
+        pleading: 'assets/images/characters/minsu_pleading.png',
+        entranced: 'assets/images/characters/minsu_entranced.png',
         cry: 'assets/images/characters/minsu_cry.png',
         pain: 'assets/images/characters/minsu_pain.png',
         climax: 'assets/images/characters/minsu_climax.png',
@@ -2843,5 +2902,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.87';
+const PROMPT_VERSION = '2.7.88';
 window.PROMPT_VERSION = PROMPT_VERSION;

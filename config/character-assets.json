@@ -137,6 +137,33 @@
       }
     },
     {
+      "id": "dain/expressions/bored/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "bored",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/bored/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_bored.png",
+            "assets/characters/dain/expressions/bored/01/sprite.png"
+          ],
+          "sha256": "79d867550f3342b59dca7f3a53e5407be019a1dd33acdf211383d30be09107dd",
+          "bytes": 1163565
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_bored.webp",
+            "assets/characters/dain/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "ca487c59d6439ed70447c988e6e28623ab158dafc037a9715998111ceab94f78",
+          "bytes": 156461
+        }
+      }
+    },
+    {
       "id": "dain/expressions/choking/01",
       "characterId": "dain",
       "role": "expression",
@@ -596,6 +623,87 @@
       }
     },
     {
+      "id": "dain/expressions/dry_smile/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dry_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/dry_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_dry_smile.png",
+            "assets/characters/dain/expressions/dry_smile/01/sprite.png"
+          ],
+          "sha256": "9fb15737039eae5f8ab33076a51866131c8a7492989a126b739e15b3d67ac166",
+          "bytes": 1166958
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_dry_smile.webp",
+            "assets/characters/dain/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "77be91987ad86d485592bf2dfa6c877a54e1033a1cdaabc16d90bdcd427e9a0e",
+          "bytes": 157241
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/dumbfounded/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/dumbfounded/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_dumbfounded.png",
+            "assets/characters/dain/expressions/dumbfounded/01/sprite.png"
+          ],
+          "sha256": "7a3b93399868bf3e9162cdb0d8e324a345e91727f2b070bd2990f8971d3507dd",
+          "bytes": 1166550
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_dumbfounded.webp",
+            "assets/characters/dain/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "5b1970265c513000fb097118b7c661ea49002b0c4eb2413f78ca789b2b3acacf",
+          "bytes": 156585
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/entranced/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "entranced",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/entranced/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_entranced.png",
+            "assets/characters/dain/expressions/entranced/01/sprite.png"
+          ],
+          "sha256": "48653d0d4095e6f6ea82e50c00e25e2e39171eca36c2b988541a739f3fea9afe",
+          "bytes": 1169434
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_entranced.webp",
+            "assets/characters/dain/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "65376cc386cc008dc5d18e79e99603da3b1335622c8265c7dca5d2fc844a72c4",
+          "bytes": 157445
+        }
+      }
+    },
+    {
       "id": "dain/expressions/exhausted/01",
       "characterId": "dain",
       "role": "expression",
@@ -650,6 +758,33 @@
       }
     },
     {
+      "id": "dain/expressions/firm/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "firm",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/firm/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_firm.png",
+            "assets/characters/dain/expressions/firm/01/sprite.png"
+          ],
+          "sha256": "88b625af004f6de3c04adbea2f6db2467679a9c3d18fe3155b205d229fc078a2",
+          "bytes": 1164804
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_firm.webp",
+            "assets/characters/dain/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "e15dac44daeda98dac909f361b005f52f1ee0e964ce80ba12a642d07a62177d3",
+          "bytes": 156863
+        }
+      }
+    },
+    {
       "id": "dain/expressions/flushed/01",
       "characterId": "dain",
       "role": "expression",
@@ -700,6 +835,33 @@
           ],
           "sha256": "fd87df0fefc56c2881c42842020047cd2334c288b233b94bfe2a347cc93910cb",
           "bytes": 159895
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/humiliated/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "humiliated",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/humiliated/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_humiliated.png",
+            "assets/characters/dain/expressions/humiliated/01/sprite.png"
+          ],
+          "sha256": "bea89aa568659ead04de074ba52f82237bb2bb3d98a55c7bdfb4d216563750bc",
+          "bytes": 1171959
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_humiliated.webp",
+            "assets/characters/dain/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "e1579723a6449490e68a3fcbd78011065d28346bd0d01c9ebbc60bbdccefb5b2",
+          "bytes": 158125
         }
       }
     },
@@ -781,6 +943,33 @@
           ],
           "sha256": "f02784e7c06576d335ca3bb598417bb6aaaf7e063fd01bab75f141bd766588d0",
           "bytes": 847445
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/pleading/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "pleading",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/pleading/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_pleading.png",
+            "assets/characters/dain/expressions/pleading/01/sprite.png"
+          ],
+          "sha256": "50fa94b1056e217b4bd92c4db2ee46dbb4dcba4428a1e94021a5274f0ce090de",
+          "bytes": 1169532
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_pleading.webp",
+            "assets/characters/dain/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "f7d1fe6cd0c36c3d9305a218cb7f79a790a55e9ac349df1bf4ddd8c7f0512e56",
+          "bytes": 157811
         }
       }
     },
@@ -1109,6 +1298,60 @@
       }
     },
     {
+      "id": "dain/expressions/tired/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "tired",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/tired/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_tired.png",
+            "assets/characters/dain/expressions/tired/01/sprite.png"
+          ],
+          "sha256": "46a8259c1f628c182de852ab5af33c23eecb2618ebcfc95bbc41467626a9ab52",
+          "bytes": 1165695
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_tired.webp",
+            "assets/characters/dain/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "4a548f52798b46c72198b80e9cf8eef3ce4b1fd3bb96aaf3cb298b0c3eda4d7e",
+          "bytes": 156435
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/very_shy/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "very_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/very_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_very_shy.png",
+            "assets/characters/dain/expressions/very_shy/01/sprite.png"
+          ],
+          "sha256": "df47aa81d2f7a5f4b155e7468e869b26515f3a359f7e032e003f57cebe2fb452",
+          "bytes": 1171475
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_very_shy.webp",
+            "assets/characters/dain/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "3dda0d42c3568c693cd5b38a829ca31831dc919659e979b6b1bf5676c72bdafe",
+          "bytes": 158279
+        }
+      }
+    },
+    {
       "id": "dain/expressions/worried/01",
       "characterId": "dain",
       "role": "expression",
@@ -1327,6 +1570,33 @@
           ],
           "sha256": "e1846e2d27399beda2ca8e052d2ad8c0cd8634f6095b8dc6b277d516cdc8186a",
           "bytes": 118943
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/bored/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "bored",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/bored/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_bored.png",
+            "assets/characters/haeun/expressions/bored/01/sprite.png"
+          ],
+          "sha256": "d735a61fe6e2be8f98c93bd82b9b72c6c77d92bb2e9fad311b38c93fccfa785b",
+          "bytes": 1113732
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_bored.webp",
+            "assets/characters/haeun/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "45f6e0c5c13e9648d54c5637641f582fd742522d42eb2cc086803aea48b5fd77",
+          "bytes": 116959
         }
       }
     },
@@ -1709,6 +1979,87 @@
       }
     },
     {
+      "id": "haeun/expressions/dry_smile/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "dry_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/dry_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_dry_smile.png",
+            "assets/characters/haeun/expressions/dry_smile/01/sprite.png"
+          ],
+          "sha256": "271ec9ac5c4ff28777bad3dd29e12177f84e7af3d12a4bef6ff80ab9e61477ab",
+          "bytes": 1116964
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_dry_smile.webp",
+            "assets/characters/haeun/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "050eeb4894e9f9dc39ede5aa397a51d2ecbe93c95a4fabfbeb7bfaa3db81c517",
+          "bytes": 117331
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/dumbfounded/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/dumbfounded/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_dumbfounded.png",
+            "assets/characters/haeun/expressions/dumbfounded/01/sprite.png"
+          ],
+          "sha256": "7b6e2ff59fb19272e95334e609cb004ce1f47e054b8a915ef416b77a6e616815",
+          "bytes": 1112710
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_dumbfounded.webp",
+            "assets/characters/haeun/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "7eeb4122cb3908705ca6f9aad833ce9e1054c227ed827f98923acbce01a659d8",
+          "bytes": 116457
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/entranced/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "entranced",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/entranced/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_entranced.png",
+            "assets/characters/haeun/expressions/entranced/01/sprite.png"
+          ],
+          "sha256": "bd316a43400f03ab4898875ec34815d14c3f4ecc90be18f5fbecd8bec638c816",
+          "bytes": 1117291
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_entranced.webp",
+            "assets/characters/haeun/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "aabcca3e6f62d2aacdfe48bb9b4dea0a860d27ebbb9a298ffd8e90964eb8b8de",
+          "bytes": 117311
+        }
+      }
+    },
+    {
       "id": "haeun/expressions/exhausted/01",
       "characterId": "haeun",
       "role": "expression",
@@ -1844,6 +2195,33 @@
       }
     },
     {
+      "id": "haeun/expressions/humiliated/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "humiliated",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/humiliated/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_humiliated.png",
+            "assets/characters/haeun/expressions/humiliated/01/sprite.png"
+          ],
+          "sha256": "2b4682bd21ec901c9eb84f3702c879d7dc228cf928a624294d65e3e68ebaa430",
+          "bytes": 1119764
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_humiliated.webp",
+            "assets/characters/haeun/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "cf93366e0c7ca663fe87ba1eb20469931ce3ad7f9702661fd89f3dfb738e2ee2",
+          "bytes": 118337
+        }
+      }
+    },
+    {
       "id": "haeun/expressions/laugh/01",
       "characterId": "haeun",
       "role": "expression",
@@ -1921,6 +2299,33 @@
           ],
           "sha256": "553bc960a684913bd80bd4450b6647476bbc091aa0cc013e9a9604cdf68f272b",
           "bytes": 149409
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/pleading/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "pleading",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/pleading/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_pleading.png",
+            "assets/characters/haeun/expressions/pleading/01/sprite.png"
+          ],
+          "sha256": "50fcf3fd3ca7fbeb2d5be671435c9bfa1a1ccec4fa9bce546933a91c402f0771",
+          "bytes": 1120008
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_pleading.webp",
+            "assets/characters/haeun/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "933a4cd09ac03ef3bc945c5fcc164fbb573d6995d3533ce5f7ce0779c4f4f2a3",
+          "bytes": 117993
         }
       }
     },
@@ -2222,6 +2627,60 @@
       }
     },
     {
+      "id": "haeun/expressions/tired/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "tired",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/tired/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_tired.png",
+            "assets/characters/haeun/expressions/tired/01/sprite.png"
+          ],
+          "sha256": "15ca100b9219e024100a56f618f7a7e83535b26b8cea390cf3058d30dd2d6a9d",
+          "bytes": 1114926
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_tired.webp",
+            "assets/characters/haeun/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "0dc2a08ef9f422a6236575a87eb62b6ec4d6a114150dc1d7057df6965cab35ea",
+          "bytes": 117023
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/very_shy/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "very_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/very_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_very_shy.png",
+            "assets/characters/haeun/expressions/very_shy/01/sprite.png"
+          ],
+          "sha256": "0e8d1e097c4d9c2cbc65f3456cc948ab8caaf50c56286b71987ba548d7a5b048",
+          "bytes": 1123444
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_very_shy.webp",
+            "assets/characters/haeun/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "d15089bb03d509d0d884e18cb4cdd1231e1f2544e8d5679f29bef6656db00dab",
+          "bytes": 118213
+        }
+      }
+    },
+    {
       "id": "haeun/expressions/worried/01",
       "characterId": "haeun",
       "role": "expression",
@@ -2308,6 +2767,33 @@
           ],
           "sha256": "cc06cb766f0a50580a1fe2d54bd25728ac73250da15bc2f9ec01b4eeb28dd8a9",
           "bytes": 99683
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/bored/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "bored",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/bored/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_bored.png",
+            "assets/characters/minsu/expressions/bored/01/sprite.png"
+          ],
+          "sha256": "8b6b7ec442c18e829f636b58ecc556af67393cf887eb9471a03f90bcf7450248",
+          "bytes": 1279817
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_bored.webp",
+            "assets/characters/minsu/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "acc7879dfa6b2077eaf48e604b624aef9b1aa9508d38905b7eba7655bd84999e",
+          "bytes": 98943
         }
       }
     },
@@ -2636,6 +3122,87 @@
       }
     },
     {
+      "id": "minsu/expressions/dry_smile/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "dry_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/dry_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_dry_smile.png",
+            "assets/characters/minsu/expressions/dry_smile/01/sprite.png"
+          ],
+          "sha256": "7c22d65a9c840047514c759a7f072c00a69ddf0c115a87b60c0352cbb4542bb0",
+          "bytes": 1282556
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_dry_smile.webp",
+            "assets/characters/minsu/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "67b732def3256d9dd0313d9c1931165f81bf098d6a9aff3fbcacc0c1d93be653",
+          "bytes": 101165
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/dumbfounded/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/dumbfounded/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_dumbfounded.png",
+            "assets/characters/minsu/expressions/dumbfounded/01/sprite.png"
+          ],
+          "sha256": "a925502b5253bfeba3013e6ebd422f082c7403aa8effe484ce961eacac2d1350",
+          "bytes": 1277614
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_dumbfounded.webp",
+            "assets/characters/minsu/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "2f135e1c05ee940fe7b0e6d614a2429cb91ec3843871f65cb03c4d84d8295c07",
+          "bytes": 99079
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/entranced/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "entranced",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/entranced/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_entranced.png",
+            "assets/characters/minsu/expressions/entranced/01/sprite.png"
+          ],
+          "sha256": "0faff484b9b50a8e92f1f5eabdac06ea3e4c659059b788ad028d1301d7ef84d5",
+          "bytes": 1284338
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_entranced.webp",
+            "assets/characters/minsu/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "ef7ca80684db23128a5df0db168764d2fca1ffee78ff743f5d320aed647681ea",
+          "bytes": 100005
+        }
+      }
+    },
+    {
       "id": "minsu/expressions/exhausted/01",
       "characterId": "minsu",
       "role": "expression",
@@ -2690,6 +3257,33 @@
       }
     },
     {
+      "id": "minsu/expressions/firm/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "firm",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/firm/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_firm.png",
+            "assets/characters/minsu/expressions/firm/01/sprite.png"
+          ],
+          "sha256": "d10c6e45050f7c5c09b6fc3ab75aa384732f1926c1659aa67269a710b9b74bdd",
+          "bytes": 1282142
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_firm.webp",
+            "assets/characters/minsu/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "099d1fe994d3dcbb6ec7ebaf2ac92f7c6d9c42e3e574f86b2c49fbefbade1d0f",
+          "bytes": 99351
+        }
+      }
+    },
+    {
       "id": "minsu/expressions/furious/01",
       "characterId": "minsu",
       "role": "expression",
@@ -2713,6 +3307,33 @@
           ],
           "sha256": "7c7d47c59b4b2522037268fe3fd9c3bebf4bd5a5ca07a25a173b2f9d9a81667c",
           "bytes": 102905
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/humiliated/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "humiliated",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/humiliated/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_humiliated.png",
+            "assets/characters/minsu/expressions/humiliated/01/sprite.png"
+          ],
+          "sha256": "d9d4dc80cd40c851814d269f321948bcc9852b5df11dbd6b3684227a81ed9c11",
+          "bytes": 1289524
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_humiliated.webp",
+            "assets/characters/minsu/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "f1858df510be1d65a6ba86bed4ad71164c967d37c0fa9f02685543f145fd92ca",
+          "bytes": 100979
         }
       }
     },
@@ -2767,6 +3388,33 @@
           ],
           "sha256": "cb561bd4faf2af84dd0b04388822f7bf8ae82ac51cefaf5395b511e8d1741fdc",
           "bytes": 896581
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/pleading/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "pleading",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/pleading/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_pleading.png",
+            "assets/characters/minsu/expressions/pleading/01/sprite.png"
+          ],
+          "sha256": "f999a090769f48ebbe4ca0759ded34bce96eb522d84baa46e8f46e1731a5fb2c",
+          "bytes": 1292040
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_pleading.webp",
+            "assets/characters/minsu/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "aa9b3e54c05ab1689fb510beec8081c72052343d370253bff6f9f59496eaee18",
+          "bytes": 101533
         }
       }
     },
@@ -2906,6 +3554,33 @@
       }
     },
     {
+      "id": "minsu/expressions/soft_smile/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "soft_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/soft_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_soft_smile.png",
+            "assets/characters/minsu/expressions/soft_smile/01/sprite.png"
+          ],
+          "sha256": "74edeca980c609501d18de3ddcdce82400796802231b318b75755505da303ae5",
+          "bytes": 1279767
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_soft_smile.webp",
+            "assets/characters/minsu/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "f1f18680508bc780b5481b858e84951d45be70ee29c6eeb1b485e618f1790cc2",
+          "bytes": 98897
+        }
+      }
+    },
+    {
       "id": "minsu/expressions/surprised/01",
       "characterId": "minsu",
       "role": "expression",
@@ -2929,6 +3604,60 @@
           ],
           "sha256": "88398b63d8e5e8bb10df656c81d6480510457a970c4bd4241f90574331d90b0b",
           "bytes": 99101
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/tired/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "tired",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/tired/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_tired.png",
+            "assets/characters/minsu/expressions/tired/01/sprite.png"
+          ],
+          "sha256": "7ae3a71b75452174e5d5042c7a5b212320290b1d0622b59091523212ca200dab",
+          "bytes": 1276389
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_tired.webp",
+            "assets/characters/minsu/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "2e9304a2a73559e613d31f2abd8ef67c718d6563d2efe6eb4d68c9596c8d9f7d",
+          "bytes": 99491
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/very_shy/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "very_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/very_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_very_shy.png",
+            "assets/characters/minsu/expressions/very_shy/01/sprite.png"
+          ],
+          "sha256": "0781014aa0b3d5e2bc7ff79524e890e7e96cc6cc3d2bf6e6326464cc9b50b4d9",
+          "bytes": 1287018
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_very_shy.webp",
+            "assets/characters/minsu/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "7262039d9363eb7c7a4e6a86b6db9beceb4f41ca4b3f84f4f869993746f6db5a",
+          "bytes": 100801
         }
       }
     },
@@ -3037,6 +3766,33 @@
           ],
           "sha256": "6581c565756aa55d5ca8fe9692dabb47edc93c3ddcadb543d37f25595741b891",
           "bytes": 128917
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/bored/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "bored",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/bored/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_bored.png",
+            "assets/characters/nurse/expressions/bored/01/sprite.png"
+          ],
+          "sha256": "22b3257af3f79657c5a961de5582a633b93e9986b39c437256b39e25a707d54a",
+          "bytes": 1548716
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_bored.webp",
+            "assets/characters/nurse/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "ac1fa3d56e0bdea9eea6ec65459c78b2795b7545ebddeda72babb31418b9dde2",
+          "bytes": 164499
         }
       }
     },
@@ -3473,6 +4229,60 @@
       }
     },
     {
+      "id": "nurse/expressions/dumbfounded/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/dumbfounded/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_dumbfounded.png",
+            "assets/characters/nurse/expressions/dumbfounded/01/sprite.png"
+          ],
+          "sha256": "42c07598797e97156dc3b10e9286822a54966b40570f0b65b9f9c0c7ab02fa98",
+          "bytes": 1547002
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_dumbfounded.webp",
+            "assets/characters/nurse/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "e6540430fade633aeff4444af62ea458ca60d997f0213f22e799ae3430018211",
+          "bytes": 163949
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/entranced/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "entranced",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/entranced/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_entranced.png",
+            "assets/characters/nurse/expressions/entranced/01/sprite.png"
+          ],
+          "sha256": "4e82db2caaaa2ddd0aa68fb417e520019c5066dace4daef99871846f0a0ced3d",
+          "bytes": 1552427
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_entranced.webp",
+            "assets/characters/nurse/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "eb462bcc1798c5be7cb932b42b385b0a610f8d116cc1e39f51c296aa1d7a0d55",
+          "bytes": 165193
+        }
+      }
+    },
+    {
       "id": "nurse/expressions/exhausted/01",
       "characterId": "nurse",
       "role": "expression",
@@ -3527,6 +4337,33 @@
       }
     },
     {
+      "id": "nurse/expressions/firm/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "firm",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/firm/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_firm.png",
+            "assets/characters/nurse/expressions/firm/01/sprite.png"
+          ],
+          "sha256": "47b7be239f7ad4ce4db5d18527148817f5e6b82cc140ac4693f3df7de1d805e5",
+          "bytes": 1550580
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_firm.webp",
+            "assets/characters/nurse/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "300f8914cc8db7d167de008d16bb37dce794d3ee622aec4422ea2bd10576e97a",
+          "bytes": 164647
+        }
+      }
+    },
+    {
       "id": "nurse/expressions/flushed/01",
       "characterId": "nurse",
       "role": "expression",
@@ -3577,6 +4414,33 @@
           ],
           "sha256": "5ebb80b5cd94c100016a3ee409840bfeb80a19313ce4ce6f3cec18295a2ce9f1",
           "bytes": 167439
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/humiliated/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "humiliated",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/humiliated/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_humiliated.png",
+            "assets/characters/nurse/expressions/humiliated/01/sprite.png"
+          ],
+          "sha256": "33d62f3331b1164d6f95ab4dd6e72bd8680bbf329a6b05e3637d9c59c751da44",
+          "bytes": 1558757
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_humiliated.webp",
+            "assets/characters/nurse/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "27ab65eb1aea6252700134bc9026a1c2111b8a797b280ac3fdeb3d4c7834f218",
+          "bytes": 166643
         }
       }
     },
@@ -3658,6 +4522,33 @@
           ],
           "sha256": "ea3c5365ad93a5c483e3deb1b66dfc761c22427f7f05b2e30704f7136b6aa19c",
           "bytes": 1011063
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/pleading/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "pleading",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/pleading/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_pleading.png",
+            "assets/characters/nurse/expressions/pleading/01/sprite.png"
+          ],
+          "sha256": "ed617264dce7e771d3cfb814bdd6f64e4ad2e20d1b6a965de499055b8e97980d",
+          "bytes": 1554590
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_pleading.webp",
+            "assets/characters/nurse/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "565647065b042b8218b22f5ae56ac1f982a23fa38f0a01f19c77a9079756a998",
+          "bytes": 165199
         }
       }
     },
@@ -3968,6 +4859,33 @@
       }
     },
     {
+      "id": "nurse/expressions/very_shy/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "very_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/very_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_very_shy.png",
+            "assets/characters/nurse/expressions/very_shy/01/sprite.png"
+          ],
+          "sha256": "9f498e76055e9610a4134048d6c82e309ba948df5047a2cd0923604414d24b07",
+          "bytes": 1555447
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_very_shy.webp",
+            "assets/characters/nurse/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "df0d8aca2bb0256ed3c382fec7d14e19dd8f91aefd3fa340bb01d2e7ab0bfb0e",
+          "bytes": 165693
+        }
+      }
+    },
+    {
       "id": "nurse/expressions/worried/01",
       "characterId": "nurse",
       "role": "expression",
@@ -4221,6 +5139,33 @@
           ],
           "sha256": "1425c063dbb82b290c857e86fc3168c1a04eedc6bfd361c625581d6eed4401e5",
           "bytes": 138811
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/bored/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "bored",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/bored/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_bored.png",
+            "assets/characters/seoyeon/expressions/bored/01/sprite.png"
+          ],
+          "sha256": "2f792f9f9210fff9207cb491c55b865e1ea4c9cca5c85a5b1e753a2b522bc5d8",
+          "bytes": 1266520
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_bored.webp",
+            "assets/characters/seoyeon/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "2e07fec980af5eb023021f11fc123567a5ed9c803f1b11ec7ff2bcccb5e603b3",
+          "bytes": 154587
         }
       }
     },
@@ -4549,6 +5494,87 @@
       }
     },
     {
+      "id": "seoyeon/expressions/dry_smile/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dry_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/dry_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dry_smile.png",
+            "assets/characters/seoyeon/expressions/dry_smile/01/sprite.png"
+          ],
+          "sha256": "211d1529290a3d0bea5ce1e6d8017f5f65c6026bcaa5098da176fdf4e36914ac",
+          "bytes": 1267701
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dry_smile.webp",
+            "assets/characters/seoyeon/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "838bb77f4c1b9700217a0919afc4d173853b0e14f4be86a5bd715d26ff5f1967",
+          "bytes": 155005
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/dumbfounded/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/dumbfounded/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dumbfounded.png",
+            "assets/characters/seoyeon/expressions/dumbfounded/01/sprite.png"
+          ],
+          "sha256": "f61905c265331c97258291bee0d53569d86ca96c379dfb27c9c2666bd8653786",
+          "bytes": 1265454
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dumbfounded.webp",
+            "assets/characters/seoyeon/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "3f45020d4a1dca2d791c411b9b5b4d1ee5e418514688a97fcedfd0740f4fc98a",
+          "bytes": 154027
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/entranced/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "entranced",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/entranced/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_entranced.png",
+            "assets/characters/seoyeon/expressions/entranced/01/sprite.png"
+          ],
+          "sha256": "164391935c9d73b39e104dc8c9c511de7ec63d6543f9514aa4b875018c8471ad",
+          "bytes": 1267553
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_entranced.webp",
+            "assets/characters/seoyeon/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "d765918b4cf597c5f54a2054ef6f6f61d27a3c9cef808f22a8803334bbc23396",
+          "bytes": 154543
+        }
+      }
+    },
+    {
       "id": "seoyeon/expressions/exhausted/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -4599,6 +5625,33 @@
           ],
           "sha256": "ea0098c6a3e19bf1ae003a6f3ae7b4954b4ed2b0334854a49fc7494b1f0c4d3c",
           "bytes": 154821
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/firm/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "firm",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/firm/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_firm.png",
+            "assets/characters/seoyeon/expressions/firm/01/sprite.png"
+          ],
+          "sha256": "617a456439e520a7ae01fd508ebf590860a855284d06e027487a4e8ec601288c",
+          "bytes": 1266665
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_firm.webp",
+            "assets/characters/seoyeon/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "c5b52771126afba5dd0d54f640db9e5f94f644a686bfa3a65844861aaeb6ce6c",
+          "bytes": 154687
         }
       }
     },
@@ -4792,6 +5845,33 @@
       }
     },
     {
+      "id": "seoyeon/expressions/humiliated/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "humiliated",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/humiliated/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_humiliated.png",
+            "assets/characters/seoyeon/expressions/humiliated/01/sprite.png"
+          ],
+          "sha256": "1d0737f070f3ca3637739ba950314d6c16c543d25500a33ff36f09a0a7698871",
+          "bytes": 1269212
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_humiliated.webp",
+            "assets/characters/seoyeon/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "6742a5d4e893ea77ed23e47d0e162317af648b9209f9b849f0cfd0e85075ac47",
+          "bytes": 155549
+        }
+      }
+    },
+    {
       "id": "seoyeon/expressions/laugh/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -4869,6 +5949,33 @@
           ],
           "sha256": "84c24cc2b49e6b692f580e308f6001305ebfa635fc5108f5a3d479ad2e709411",
           "bytes": 870555
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/pleading/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "pleading",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/pleading/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_pleading.png",
+            "assets/characters/seoyeon/expressions/pleading/01/sprite.png"
+          ],
+          "sha256": "f0cf91b336f8dc10ff17b40cd1c1f453dd9c77c4df92b3ec736e91c1a78f79cf",
+          "bytes": 1266478
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_pleading.webp",
+            "assets/characters/seoyeon/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "5530180157c55272fc489cec6604b030d55f9ab1ec82a29ab340537ab1332d4e",
+          "bytes": 154663
         }
       }
     },
@@ -5166,6 +6273,33 @@
           ],
           "sha256": "02927a5aff716b969e45d0fb5a25008b20230d7a71244f058df64e29279a64f1",
           "bytes": 155767
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/tired/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "tired",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/tired/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_tired.png",
+            "assets/characters/seoyeon/expressions/tired/01/sprite.png"
+          ],
+          "sha256": "61fd39b50e0c180ddebe4d2c0bb82b5271ed3f062f6715a660f03ae969990034",
+          "bytes": 1265525
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_tired.webp",
+            "assets/characters/seoyeon/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "6b6c15cfe0a9633ce1cc62db2515bdcf1b3be06b7da40a1256adec129f9f774a",
+          "bytes": 153991
         }
       }
     },
@@ -5468,6 +6602,33 @@
           ],
           "sha256": "9a25b2601c7b11baff21401c9fcd94ce1fd2a9cd08e1c98b98f533a446189233",
           "bytes": 267749
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/bored/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "bored",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/bored/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_bored.png",
+            "assets/characters/teacher/expressions/bored/01/sprite.png"
+          ],
+          "sha256": "6a1e98fdbec72936a4ffcbe02e77a3ae4fa8521c464262b0eea715d82a045ff7",
+          "bytes": 1347621
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_bored.webp",
+            "assets/characters/teacher/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "b51ad9e01279374ced44da968a84f4196475fba932853c806c682d6c4dd49b07",
+          "bytes": 142903
         }
       }
     },
@@ -5904,6 +7065,87 @@
       }
     },
     {
+      "id": "teacher/expressions/dry_smile/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "dry_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/dry_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_dry_smile.png",
+            "assets/characters/teacher/expressions/dry_smile/01/sprite.png"
+          ],
+          "sha256": "2b81000e9f8a4fc6db24a624d859016778765d2e0e25543600900de311b91a66",
+          "bytes": 1350067
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_dry_smile.webp",
+            "assets/characters/teacher/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "115c66b63813e0e58a299899793e110892938fbb65517a2004a9762717a4961e",
+          "bytes": 143347
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/dumbfounded/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/dumbfounded/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_dumbfounded.png",
+            "assets/characters/teacher/expressions/dumbfounded/01/sprite.png"
+          ],
+          "sha256": "4f0139d12411a5e7d4a9ec93ae488814bb3ca20b1cc7fc543a33f42b44272e0d",
+          "bytes": 1346567
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_dumbfounded.webp",
+            "assets/characters/teacher/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "57667cee92785f17a436294648f132859ac6a8333eccaf5e4c68a38b194c4d36",
+          "bytes": 142623
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/entranced/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "entranced",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/entranced/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_entranced.png",
+            "assets/characters/teacher/expressions/entranced/01/sprite.png"
+          ],
+          "sha256": "a502123f54b74c2e42495ffcce72881be2a8f3f200fe4579f2aa7b71a13dabf2",
+          "bytes": 1349312
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_entranced.webp",
+            "assets/characters/teacher/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "3522d457e9d3b10e83d78a33b843f09e76bb738468e912a1e4b4a63dfaff4001",
+          "bytes": 142815
+        }
+      }
+    },
+    {
       "id": "teacher/expressions/exhausted/01",
       "characterId": "teacher",
       "role": "expression",
@@ -5958,6 +7200,33 @@
       }
     },
     {
+      "id": "teacher/expressions/firm/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "firm",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/firm/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_firm.png",
+            "assets/characters/teacher/expressions/firm/01/sprite.png"
+          ],
+          "sha256": "73ea5f988e9d421663554ef06e278890f43b1a7fc41b05e557ce9a276b5fc211",
+          "bytes": 1348343
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_firm.webp",
+            "assets/characters/teacher/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "0145fca050653d4a4ebdcaacfba37d199ebc0672124eb2ec8f4339b06d52f451",
+          "bytes": 143011
+        }
+      }
+    },
+    {
       "id": "teacher/expressions/flushed/01",
       "characterId": "teacher",
       "role": "expression",
@@ -6008,6 +7277,33 @@
           ],
           "sha256": "a7cd32c3d0a8e12ad15ddcb5c2f070d5187e3fc3ecae70f96a2c2816f7e50b4c",
           "bytes": 144599
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/humiliated/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "humiliated",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/humiliated/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_humiliated.png",
+            "assets/characters/teacher/expressions/humiliated/01/sprite.png"
+          ],
+          "sha256": "60cd7633e3d25edc7e069068620ffa1f8a0ea7f345d7fbe94564bdd71604f0a7",
+          "bytes": 1356075
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_humiliated.webp",
+            "assets/characters/teacher/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "da51f00f4a543755e84305b68a261797dbd4ed7d80cdab6c7449252fb7cbcda6",
+          "bytes": 142607
         }
       }
     },
@@ -6089,6 +7385,33 @@
           ],
           "sha256": "c38773630edb5c1258ac9df1c9a9b5bba0bdabaee7fc60e00bb6ecb38fde701d",
           "bytes": 850319
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/pleading/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "pleading",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/pleading/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_pleading.png",
+            "assets/characters/teacher/expressions/pleading/01/sprite.png"
+          ],
+          "sha256": "581fc19f4519bff685b7a1799d25ee3cabce453b4db66788c55af8c180d3b3ed",
+          "bytes": 1350316
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_pleading.webp",
+            "assets/characters/teacher/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "6e980086f325a5f2c8227b11e29f8b2f6bfd6ec2d4c60c49a2d2e613ced696df",
+          "bytes": 143479
         }
       }
     },
@@ -6386,6 +7709,60 @@
           ],
           "sha256": "3d443857cb11cabcc27a9866911103fc27d40cd36eaf4dbeeaefd6b885644728",
           "bytes": 879335
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/tired/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "tired",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/tired/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_tired.png",
+            "assets/characters/teacher/expressions/tired/01/sprite.png"
+          ],
+          "sha256": "08e124f057d0669afd434cbfca868c611d9a2168968d8f08bd4943c456d52ba4",
+          "bytes": 1346659
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_tired.webp",
+            "assets/characters/teacher/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "84138252db96cac006773b8d03d45600e0c7fdb416b4e2bd9e514a69043137ba",
+          "bytes": 142449
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/very_shy/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "very_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/very_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_very_shy.png",
+            "assets/characters/teacher/expressions/very_shy/01/sprite.png"
+          ],
+          "sha256": "e0099f7907e9d2fe614bdaea2d0d52a9fca392785f1907384a5cdd83bf964928",
+          "bytes": 1350170
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_very_shy.webp",
+            "assets/characters/teacher/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "67ca68eadf60d128c32848be939e0df892919a278107261689591983e36c6a8f",
+          "bytes": 143157
         }
       }
     },
@@ -6957,6 +8334,87 @@
       }
     },
     {
+      "id": "yuna/expressions/dry_smile/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dry_smile",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/dry_smile/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_dry_smile.png",
+            "assets/characters/yuna/expressions/dry_smile/01/sprite.png"
+          ],
+          "sha256": "f60c03c4303fe61b4137a626f4de19d7d4902a83ab6d0fb748ebb765dd24fd86",
+          "bytes": 1398084
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_dry_smile.webp",
+            "assets/characters/yuna/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "73e203305cdc06bb68ac60359362a6db834467aeb67e83aec59e077755a3e04f",
+          "bytes": 205161
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/dumbfounded/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/dumbfounded/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_dumbfounded.png",
+            "assets/characters/yuna/expressions/dumbfounded/01/sprite.png"
+          ],
+          "sha256": "a158446a18d233f5910f749e5cf53719c217fac7ba0efc7b5c1b95d34ddd31b0",
+          "bytes": 1400532
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_dumbfounded.webp",
+            "assets/characters/yuna/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "c42c501e7e51f0bb1e24ed99b3443c3822ec6cb35459900bd7853c9e554fca4e",
+          "bytes": 203839
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/entranced/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "entranced",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/entranced/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_entranced.png",
+            "assets/characters/yuna/expressions/entranced/01/sprite.png"
+          ],
+          "sha256": "1b7041f82521bd854281086de4a2741bfef2da10f0bf63697f5433b2333ae4ed",
+          "bytes": 1405502
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_entranced.webp",
+            "assets/characters/yuna/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "ff6d6639f73ea5bf67ccb0f74d961a331af31c072bdf0ecdcb91a53b310a508b",
+          "bytes": 204215
+        }
+      }
+    },
+    {
       "id": "yuna/expressions/exhausted/01",
       "characterId": "yuna",
       "role": "expression",
@@ -7007,6 +8465,33 @@
           ],
           "sha256": "e19a7ed0242d09edd0250701051a4a09f323e64233a112a7b419f525f3d53966",
           "bytes": 203693
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/firm/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "firm",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/firm/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_firm.png",
+            "assets/characters/yuna/expressions/firm/01/sprite.png"
+          ],
+          "sha256": "a71063947e729f6ef4d05903c8cf8aa494cd05dd02f32d1277a452d8a533d847",
+          "bytes": 1396008
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_firm.webp",
+            "assets/characters/yuna/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "ab523c3f059bef5c2344d341e1b06352316c47a962cf401467b4c62c9ffbaf2e",
+          "bytes": 204779
         }
       }
     },
@@ -7092,6 +8577,33 @@
       }
     },
     {
+      "id": "yuna/expressions/humiliated/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "humiliated",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/humiliated/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_humiliated.png",
+            "assets/characters/yuna/expressions/humiliated/01/sprite.png"
+          ],
+          "sha256": "2c7bc285e7b7930bfd0ec2fdd46263d3b0dab6703c56a8fc34bd4eec63676d78",
+          "bytes": 1410899
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_humiliated.webp",
+            "assets/characters/yuna/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "8ba24c29a95435c086ef4057c90b2cd383f2de173079a679b44fb0fac8060d52",
+          "bytes": 205307
+        }
+      }
+    },
+    {
       "id": "yuna/expressions/laugh/01",
       "characterId": "yuna",
       "role": "expression",
@@ -7160,6 +8672,33 @@
           ],
           "sha256": "abefd59b9ff20edf9d5585621eb1d422f2bad2476f7b123b311ff565516ae38c",
           "bytes": 901675
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/pleading/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "pleading",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/pleading/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_pleading.png",
+            "assets/characters/yuna/expressions/pleading/01/sprite.png"
+          ],
+          "sha256": "70e8b56a22a90d685c07fa8ade093ef8f0b70e0e0867418be7585f0104b148bd",
+          "bytes": 1409307
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_pleading.webp",
+            "assets/characters/yuna/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "bb51327434c784fed3d66a598206089104d17e2c34f1bc06f923116fd045588e",
+          "bytes": 204631
         }
       }
     },
@@ -7448,6 +8987,60 @@
           ],
           "sha256": "968a84db82dced67ced4962d13861cc9a8276093382e63b62efc11d3e4ec5c25",
           "bytes": 833443
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/tired/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "tired",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/tired/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_tired.png",
+            "assets/characters/yuna/expressions/tired/01/sprite.png"
+          ],
+          "sha256": "99cfe80716ebb23a871ff40b3b26de3315b3b0d6a2972aa9c77955eec46a89ea",
+          "bytes": 1401225
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_tired.webp",
+            "assets/characters/yuna/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "6ea2310784ff3ec881d0b189a3d0e6bd57134122133f2970c90641c6f37e19b5",
+          "bytes": 203469
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/very_shy/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "very_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/very_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_very_shy.png",
+            "assets/characters/yuna/expressions/very_shy/01/sprite.png"
+          ],
+          "sha256": "72b9d1d9bce908bc5f3d7e38c219cc50c161676738baaaef16c18c7bf4c8f3d3",
+          "bytes": 1406888
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_very_shy.webp",
+            "assets/characters/yuna/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "8b6575e81aec8e151543da21f015c79dcaf16ee63c7403d09b70351f7e054ad0",
+          "bytes": 204347
         }
       }
     },

@@ -16,7 +16,7 @@
  *   - window.GalleryFreeTalk
  */
 
-const GALLERY_FREETALK_PROMPT_VERSION = '2.7.77';
+const GALLERY_FREETALK_PROMPT_VERSION = '2.7.78';
 window.GALLERY_FREETALK_PROMPT_VERSION = GALLERY_FREETALK_PROMPT_VERSION;
 
 function advanceSteadyReveal(shown, total, elapsedMs, carryMs, charMs, frameCap, idleFlushMs) {
@@ -163,12 +163,12 @@ class GalleryFreeTalk {
 
         // 캐릭터별 표정 매핑
         this.CHAR_EXPRESSIONS = {
-            seyoun: ['normal', 'soft_smile', 'smile', 'shy', 'very_shy', 'pout', 'angry', 'cry', 'pain', 'laugh', 'worried', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'sad', 'flushed', 'climax', 'ahegao'],
-            yuna: ['normal', 'soft_smile', 'smile', 'shy', 'angry', 'sad', 'cry', 'pain', 'bored', 'flushed', 'climax', 'ahegao', 'worried', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'laugh', 'pout'],
-            dain: ['normal', 'soft_smile', 'smile', 'shy', 'angry', 'laugh', 'sad', 'cry', 'pain', 'pout', 'worried', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'flushed', 'climax', 'ahegao'],
-            teacher: ['normal', 'soft_smile', 'angry', 'shy', 'sad', 'cry', 'pain', 'smile', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'flushed', 'climax', 'ahegao', 'worried'],
-            nurse: ['normal', 'soft_smile', 'angry', 'shy', 'flushed', 'climax', 'ahegao', 'worried', 'smile', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'sad', 'cry', 'pain'],
-            haeun: ['normal', 'soft_smile', 'worried', 'firm', 'relieved', 'shy', 'smile', 'sad', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'sob', 'scream', 'choking', 'dead', 'cry', 'pain', 'climax', 'ahegao']
+            seyoun: ['normal', 'soft_smile', 'smile', 'dry_smile', 'bored', 'tired', 'firm', 'shy', 'very_shy', 'pout', 'angry', 'cry', 'pain', 'laugh', 'worried', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'sad', 'flushed', 'climax', 'ahegao'],
+            yuna: ['normal', 'soft_smile', 'smile', 'dry_smile', 'tired', 'firm', 'shy', 'very_shy', 'angry', 'sad', 'cry', 'pain', 'bored', 'flushed', 'climax', 'ahegao', 'worried', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'laugh', 'pout'],
+            dain: ['normal', 'soft_smile', 'smile', 'dry_smile', 'bored', 'tired', 'firm', 'shy', 'very_shy', 'angry', 'laugh', 'sad', 'cry', 'pain', 'pout', 'worried', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'flushed', 'climax', 'ahegao'],
+            teacher: ['normal', 'soft_smile', 'dry_smile', 'bored', 'tired', 'firm', 'angry', 'shy', 'very_shy', 'sad', 'cry', 'pain', 'smile', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'flushed', 'climax', 'ahegao', 'worried'],
+            nurse: ['normal', 'soft_smile', 'bored', 'firm', 'angry', 'shy', 'very_shy', 'flushed', 'climax', 'ahegao', 'worried', 'smile', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'sad', 'cry', 'pain'],
+            haeun: ['normal', 'soft_smile', 'dry_smile', 'bored', 'tired', 'worried', 'firm', 'relieved', 'shy', 'very_shy', 'smile', 'sad', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'cry', 'pain', 'climax', 'ahegao']
         };
 
         // 캐릭터별 연인 모드 성격 프롬프트 (7개 언어)
