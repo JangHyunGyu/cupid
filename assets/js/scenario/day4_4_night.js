@@ -1557,25 +1557,25 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_dain_cry_2": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": "assets/images/characters/dain_cry.png",
         "next": "wall_dain_cry_3"
     },
     "wall_dain_cry_3": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": "assets/images/characters/dain_cry.png",
         "next": "wall_dain_cry_4"
     },
     "wall_dain_cry_4": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": "assets/images/characters/dain_cry.png",
         "next": "wall_dain_cry_5"
     },
     "wall_dain_cry_5": {
         "background": "assets/images/background/gym.png",
         "backgroundVariant": "lights-off",
-        "character": "assets/images/characters/dain_sad.png",
+        "character": "assets/images/characters/dain_cry.png",
         "next": "wall_dain_cry_6"
     },
     "wall_dain_cry_6": {
@@ -2008,19 +2008,19 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_yuna_14_c": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "wall_yuna_14_d"
     },
     "wall_yuna_14_d": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "wall_yuna_14_e"
     },
     "wall_yuna_14_e": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "wall_yuna_14_f"
     },
     "wall_yuna_14_f": {
@@ -2038,7 +2038,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_yuna_14_h": {
         "background": "assets/images/background/yuna_hideout.png",
         "backgroundVariant": "dream",
-        "character": "assets/images/characters/yuna_normal.png",
+        "character": "assets/images/characters/yuna_sad.png",
         "next": "wall_yuna_15"
     },
     "wall_yuna_15": {

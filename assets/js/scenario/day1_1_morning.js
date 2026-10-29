@@ -102,7 +102,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "choice_flirt_1": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "choice_flirt_2"
     },
     "choice_flirt_2": {
@@ -117,22 +117,22 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "choice_flirt_4": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "choice_flirt_5"
     },
     "choice_flirt_5": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "choice_flirt_6"
     },
     "choice_flirt_6": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "choice_flirt_7"
     },
     "choice_flirt_7": {
         "background": "assets/images/background/school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_shy.png",
         "next": "hallway_1"
     },
     "choice_joke_1": {
@@ -374,7 +374,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "classroom_minsu_2_b": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "classroom_dain_talk_1"
     },
     "classroom_dain_talk_1": {

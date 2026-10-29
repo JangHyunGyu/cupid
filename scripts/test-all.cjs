@@ -34,7 +34,7 @@ const commands = [
     ['node', ['--test', 'tests/runtime-error-regressions.test.cjs', 'tests/progress-recovery.test.cjs', 'tests/runtime-support.test.cjs', 'tests/spoken-lexicon.test.cjs']],
     ['node', ['--test', 'tests/product-polish.test.cjs', 'tests/gallery-tips.test.cjs']],
     ['node', ['--test', 'tests/review-regressions.test.cjs']],
-    ['node', ['--test', 'tests/scene-visuals.test.cjs']],
+    ['node', ['--test', 'tests/scene-visuals.test.cjs', 'tests/scene-expression-matching.test.cjs']],
     ['node', ['--test', 'tests/night-messenger.test.cjs']],
     ['node', ['--test', 'tests/dialogue-skip-cooldown.test.cjs']],
     ['node', ['--test', 'tests/scene-direction.test.cjs']],

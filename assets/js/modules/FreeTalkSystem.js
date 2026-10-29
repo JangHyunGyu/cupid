@@ -922,8 +922,8 @@ class FreeTalkSystem {
 
         if (!leadId || !tempterId || leadId === tempterId) return [];
         return [
-            { id: leadId, name: this._getLocalizedGroupCharacterName(leadId, lang), role: 'lead', side: 'left' },
-            { id: tempterId, name: this._getLocalizedGroupCharacterName(tempterId, lang), role: 'tempter', side: 'right' }
+            { id: leadId, name: this._getLocalizedGroupCharacterName(leadId, lang), role: 'lead', side: 'left', initialExpression: ['Teacher', 'Nurse'].includes(leadId) ? 'worried' : 'sad' },
+            { id: tempterId, name: this._getLocalizedGroupCharacterName(tempterId, lang), role: 'tempter', side: 'right', initialExpression: 'worried' }
         ];
     }
 

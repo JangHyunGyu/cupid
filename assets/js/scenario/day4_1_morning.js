@@ -410,7 +410,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "id": "Teacher",
                 "role": "focus",
                 "side": "left",
-                "initialExpression": "sad"
+                "initialExpression": "worried"
             },
             {
                 "id": "Haeun",

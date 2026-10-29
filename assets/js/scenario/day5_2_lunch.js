@@ -532,7 +532,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
                 "id": "Teacher",
                 "role": "focus",
                 "side": "left",
-                "initialExpression": "sad"
+                "initialExpression": "worried"
             },
             {
                 "id": "Haeun",
@@ -968,7 +968,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
                 "id": "Teacher",
                 "role": "focus",
                 "side": "left",
-                "initialExpression": "sad"
+                "initialExpression": "worried"
             },
             {
                 "id": "Haeun",
@@ -1171,7 +1171,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_seo_event_5": {
         "background": "assets/images/background/school_festival.webp",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_worried.png",
         "setFlags": ["day5_seoyeon_delegated"],
         "next": "tour_seo_2"
     },
@@ -1505,7 +1505,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_dain_8": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_laugh.png",
         "next": "tour_dain_10"
     },
     "tour_dain_10": {
@@ -1535,7 +1535,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_dain_end": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
+        "character": "assets/images/characters/dain_smile.png",
         "stats": {"Dain":{"affinity":3}},
         "next": "tour_dain_freetalk"
     },
@@ -1653,7 +1653,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_haeun_waver_up": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/haeun_normal.png",
+        "character": "assets/images/characters/haeun_relieved.png",
         "next": "day5_haeun_personal"
     },
     "day5_haeun_waver_down": {

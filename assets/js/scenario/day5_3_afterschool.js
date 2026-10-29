@@ -325,19 +325,19 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_farewell_dain_3": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_soft_smile.png",
         "excludeCondition": "route_dain",
         "next": "after5_farewell_dain_4"
     },
     "after5_farewell_dain_4": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_soft_smile.png",
         "excludeCondition": "route_dain",
         "next": "after5_farewell_dain_4_b"
     },
     "after5_farewell_dain_4_b": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_soft_smile.png",
         "next": "after5_farewell_dain_4_c"
     },
     "after5_farewell_dain_4_c": {
@@ -353,7 +353,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "after5_farewell_dain_5": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_sad.png",
         "excludeCondition": "route_dain",
         "next": "after5_farewell_dain_5b"
     },
@@ -1563,7 +1563,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
                 "id": "Dain",
                 "role": "focus",
                 "side": "left",
-                "initialExpression": "worried"
+                "initialExpression": "angry"
             },
             {
                 "id": "Haeun",
@@ -1598,7 +1598,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
                 "id": "Teacher",
                 "role": "focus",
                 "side": "left",
-                "initialExpression": "sad"
+                "initialExpression": "worried"
             },
             {
                 "id": "Haeun",

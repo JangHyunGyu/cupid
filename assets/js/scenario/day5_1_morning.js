@@ -54,8 +54,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "morning5_caught_fallout_2": {
         "background": "assets/images/background/room_school.png",
         "characters": {
-            "left": {"src":"assets/images/characters/yuna_normal.png"},
-            "right": {"src":"assets/images/characters/dain_normal.png"}
+            "left": {"src":"assets/images/characters/yuna_sad.png"},
+            "right": {"src":"assets/images/characters/dain_angry.png"}
         },
         "next": "morning5_caught_fallout_3"
     },
@@ -704,7 +704,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "morning5_dain_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": "assets/images/characters/dain_smile.png",
         "next": "morning5_dain_1_b"
     },
     "morning5_dain_1_b": {
@@ -803,7 +803,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "hidden_homeroom_d5_5": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_shy.png",
         "next": "hidden_homeroom_d5_choice"
     },
     "hidden_homeroom_d5_choice": {
@@ -820,7 +820,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "hidden_homeroom_d5_praise_trap_1": {
         "background": "assets/images/background/room_school.png",
         "backgroundVariant": "empty",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_worried.png",
         "next": "hidden_homeroom_d5_praise_trap_2"
     },
     "hidden_homeroom_d5_praise_trap_2": {

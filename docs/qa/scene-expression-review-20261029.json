@@ -1,0 +1,2411 @@
+{
+  "date": "2026-10-29",
+  "baselineCommit": "b36ee673cf8114709483fa38624af086062a83d1",
+  "scope": {
+    "structuralSceneAudit": 3393,
+    "manualReview": "Fixed free-talk openings, explicit facial/emotional cues and adjacent continuity around correction candidates; no claim of line-by-line manual review of the entire corpus.",
+    "freeTalkOpenings": 77,
+    "correctedAuthoredScenes": 46,
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "es",
+      "fr",
+      "de",
+      "pt",
+      "zh"
+    ],
+    "existingOpeningFix": "Retained and rechecked the 33 opening changes already committed in 9b7ee007."
+  },
+  "preservation": {
+    "localizedDialogue": "All eight complete corpora deep-equal baseline.",
+    "gameplay": "All 3,393 scenes match baseline after excluding portrait paths and participant initialExpression.",
+    "images": "Existing assets only; date and home outfits, CGs and remote-message opacity preserved.",
+    "gallery": "No fixed gallery greeting exists; existing last-assistant expression restoration retained."
+  },
+  "dynamicConfrontation": {
+    "students": "sad lead, worried other participant",
+    "staff": "worried lead, worried other participant",
+    "testedCombinations": 96
+  },
+  "changes": [
+    {
+      "id": "classroom_minsu_2_b",
+      "file": "assets\\js\\scenario\\day1_1_morning.js",
+      "reason": "A sly grin accompanies the teasing line.",
+      "before": {
+        "character": "assets/images/characters/minsu_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/minsu_smirk.png"
+      }
+    },
+    {
+      "id": "choice_flirt_1",
+      "file": "assets\\js\\scenario\\day1_1_morning.js",
+      "reason": "The eyes curve in an amused smile.",
+      "before": {
+        "character": "assets/images/characters/seyoun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_soft_smile.png"
+      }
+    },
+    {
+      "id": "choice_flirt_4",
+      "file": "assets\\js\\scenario\\day1_1_morning.js",
+      "reason": "Warm teasing continues after her laugh.",
+      "before": {
+        "character": "assets/images/characters/seyoun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_soft_smile.png"
+      }
+    },
+    {
+      "id": "choice_flirt_5",
+      "file": "assets\\js\\scenario\\day1_1_morning.js",
+      "reason": "Preserve her reaction during the player reply.",
+      "before": {
+        "character": "assets/images/characters/seyoun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_soft_smile.png"
+      }
+    },
+    {
+      "id": "choice_flirt_6",
+      "file": "assets\\js\\scenario\\day1_1_morning.js",
+      "reason": "The playful challenge remains lightly amused.",
+      "before": {
+        "character": "assets/images/characters/seyoun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_soft_smile.png"
+      }
+    },
+    {
+      "id": "choice_flirt_7",
+      "file": "assets\\js\\scenario\\day1_1_morning.js",
+      "reason": "She hides her reddening ears as she walks ahead.",
+      "before": {
+        "character": "assets/images/characters/seyoun_laugh.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_shy.png"
+      }
+    },
+    {
+      "id": "morning3_seo_gate_cold_1",
+      "file": "assets\\js\\scenario\\day3_1_morning.js",
+      "reason": "Cold avoidance on the low-affinity route.",
+      "before": {
+        "character": "assets/images/characters/seyoun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_angry.png"
+      }
+    },
+    {
+      "id": "morning3_seo_gate_cold_2",
+      "file": "assets\\js\\scenario\\day3_1_morning.js",
+      "reason": "Maintain the cold reaction until she leaves.",
+      "before": {
+        "character": "assets/images/characters/seyoun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_angry.png"
+      }
+    },
+    {
+      "id": "hidden_homeroom_d3_reveal_3_c",
+      "file": "assets\\js\\scenario\\day3_1_morning.js",
+      "reason": "Her trembling hand reveals unease about the manuscript.",
+      "before": {
+        "character": "assets/images/characters/teacher_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/teacher_worried.png"
+      }
+    },
+    {
+      "id": "hidden_nurse_d3_5_k",
+      "file": "assets\\js\\scenario\\day3_1_morning.js",
+      "reason": "The narration explicitly describes a small laugh.",
+      "before": {
+        "character": "assets/images/characters/nurse_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/nurse_soft_smile.png"
+      }
+    },
+    {
+      "id": "after3_seo_5_b",
+      "file": "assets\\js\\scenario\\day3_3_afterschool.js",
+      "reason": "She is still tearful after the preceding breakdown.",
+      "before": {
+        "character": "assets/images/characters/seyoun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_sad.png"
+      }
+    },
+    {
+      "id": "after3_dain_choice1_react",
+      "file": "assets\\js\\scenario\\day3_3_afterschool.js",
+      "reason": "She wipes her tears and smiles in relief after being heard.",
+      "before": {
+        "character": "assets/images/characters/dain_shy.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_relieved.png"
+      }
+    },
+    {
+      "id": "after3_dain_choice1_react2",
+      "file": "assets\\js\\scenario\\day3_3_afterschool.js",
+      "reason": "Her gratitude continues the same relieved response.",
+      "before": {
+        "character": "assets/images/characters/dain_shy.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_relieved.png"
+      }
+    },
+    {
+      "id": "date_dain_shop_2_b",
+      "file": "assets\\js\\scenario\\day4_2_lunch.js",
+      "reason": "Embarrassed denial after being caught looking at the shop window; preserve date outfit.",
+      "before": {
+        "character": "assets/images/characters/dain_date_normal.webp"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_date_shy.webp"
+      }
+    },
+    {
+      "id": "date_dain_low",
+      "file": "assets\\js\\scenario\\day4_2_lunch.js",
+      "reason": "She declines the outing with a closed expression; preserve date outfit.",
+      "before": {
+        "character": "assets/images/characters/dain_date_normal.webp"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_date_sad.webp"
+      }
+    },
+    {
+      "id": "wall_dain_cry_2",
+      "file": "assets\\js\\scenario\\day4_4_night.js",
+      "reason": "Tears are actively falling in the narration.",
+      "before": {
+        "character": "assets/images/characters/dain_sad.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_cry.png"
+      }
+    },
+    {
+      "id": "wall_dain_cry_3",
+      "file": "assets\\js\\scenario\\day4_4_night.js",
+      "reason": "The tearful disclosure continues without a recovery cue.",
+      "before": {
+        "character": "assets/images/characters/dain_sad.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_cry.png"
+      }
+    },
+    {
+      "id": "wall_dain_cry_4",
+      "file": "assets\\js\\scenario\\day4_4_night.js",
+      "reason": "Continue the tearful disclosure.",
+      "before": {
+        "character": "assets/images/characters/dain_sad.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_cry.png"
+      }
+    },
+    {
+      "id": "wall_dain_cry_5",
+      "file": "assets\\js\\scenario\\day4_4_night.js",
+      "reason": "Continue the tearful disclosure before her decision.",
+      "before": {
+        "character": "assets/images/characters/dain_sad.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_cry.png"
+      }
+    },
+    {
+      "id": "wall_yuna_14_c",
+      "file": "assets\\js\\scenario\\day4_4_night.js",
+      "reason": "The account of searching in vain remains distressed.",
+      "before": {
+        "character": "assets/images/characters/yuna_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/yuna_sad.png"
+      }
+    },
+    {
+      "id": "wall_yuna_14_d",
+      "file": "assets\\js\\scenario\\day4_4_night.js",
+      "reason": "Her eyes are wet as she looks up.",
+      "before": {
+        "character": "assets/images/characters/yuna_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/yuna_sad.png"
+      }
+    },
+    {
+      "id": "wall_yuna_14_e",
+      "file": "assets\\js\\scenario\\day4_4_night.js",
+      "reason": "Keep the distressed expression through the recollection.",
+      "before": {
+        "character": "assets/images/characters/yuna_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/yuna_sad.png"
+      }
+    },
+    {
+      "id": "wall_yuna_14_h",
+      "file": "assets\\js\\scenario\\day4_4_night.js",
+      "reason": "The player waits for her trembling breathing to settle.",
+      "before": {
+        "character": "assets/images/characters/yuna_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/yuna_sad.png"
+      }
+    },
+    {
+      "id": "morning5_dain_1",
+      "file": "assets\\js\\scenario\\day5_1_morning.js",
+      "reason": "The greeting explicitly includes a playful smile.",
+      "before": {
+        "character": "assets/images/characters/dain_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_smile.png"
+      }
+    },
+    {
+      "id": "hidden_homeroom_d5_5",
+      "file": "assets\\js\\scenario\\day5_1_morning.js",
+      "reason": "She scratches her cheek in embarrassment.",
+      "before": {
+        "character": "assets/images/characters/teacher_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/teacher_shy.png"
+      }
+    },
+    {
+      "id": "hidden_homeroom_d5_praise_trap_1",
+      "file": "assets\\js\\scenario\\day5_1_morning.js",
+      "reason": "Uneasy, rueful reaction to praise before the manuscript is read.",
+      "before": {
+        "character": "assets/images/characters/teacher_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/teacher_worried.png"
+      }
+    },
+    {
+      "id": "tour_seo_event_5",
+      "file": "assets\\js\\scenario\\day5_2_lunch.js",
+      "reason": "She is still visibly anxious after delegating.",
+      "before": {
+        "character": "assets/images/characters/seyoun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_worried.png"
+      }
+    },
+    {
+      "id": "tour_dain_8",
+      "file": "assets\\js\\scenario\\day5_2_lunch.js",
+      "reason": "She breaks into laughter at the end of the line.",
+      "before": {
+        "character": "assets/images/characters/dain_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_laugh.png"
+      }
+    },
+    {
+      "id": "tour_dain_end",
+      "file": "assets\\js\\scenario\\day5_2_lunch.js",
+      "reason": "She looks directly at the player and smiles brightly.",
+      "before": {
+        "character": "assets/images/characters/dain_shy.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_smile.png"
+      }
+    },
+    {
+      "id": "day5_haeun_waver_up",
+      "file": "assets\\js\\scenario\\day5_2_lunch.js",
+      "reason": "She exhales, relaxes her shoulders, and says she feels less afraid.",
+      "before": {
+        "character": "assets/images/characters/haeun_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/haeun_relieved.png"
+      }
+    },
+    {
+      "id": "after5_farewell_dain_3",
+      "file": "assets\\js\\scenario\\day5_3_afterschool.js",
+      "reason": "A restrained farewell replaces an incongruous full laugh.",
+      "before": {
+        "character": "assets/images/characters/dain_laugh.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_soft_smile.png"
+      }
+    },
+    {
+      "id": "after5_farewell_dain_4",
+      "file": "assets\\js\\scenario\\day5_3_afterschool.js",
+      "reason": "She admits lingering affection while trying to send the player off.",
+      "before": {
+        "character": "assets/images/characters/dain_laugh.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_soft_smile.png"
+      }
+    },
+    {
+      "id": "after5_farewell_dain_4_b",
+      "file": "assets\\js\\scenario\\day5_3_afterschool.js",
+      "reason": "The weak shoulder tap continues the restrained farewell.",
+      "before": {
+        "character": "assets/images/characters/dain_laugh.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_soft_smile.png"
+      }
+    },
+    {
+      "id": "after5_farewell_dain_5",
+      "file": "assets\\js\\scenario\\day5_3_afterschool.js",
+      "reason": "Her hand trembles and she leaves after saying she need not hold back tears.",
+      "before": {
+        "character": "assets/images/characters/dain_laugh.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_sad.png"
+      }
+    },
+    {
+      "id": "hidden_true_homeroom_3_c",
+      "file": "assets\\js\\scenario\\day5_4_night.js",
+      "reason": "Her cheeks warm during the adult reunion.",
+      "before": {
+        "character": "assets/images/characters/teacher_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/teacher_shy.png"
+      }
+    },
+    {
+      "id": "hidden_true_homeroom_4",
+      "file": "assets\\js\\scenario\\day5_4_night.js",
+      "reason": "She smiles warmly at the adult player.",
+      "before": {
+        "character": "assets/images/characters/teacher_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/teacher_soft_smile.png"
+      }
+    },
+    {
+      "id": "hidden_true_homeroom_6",
+      "file": "assets\\js\\scenario\\day5_4_night.js",
+      "reason": "Her shoulders relax and she smiles brightly.",
+      "before": {
+        "character": "assets/images/characters/teacher_shy.png"
+      },
+      "after": {
+        "character": "assets/images/characters/teacher_smile.png"
+      }
+    },
+    {
+      "id": "hidden_true_nurse_5_f",
+      "file": "assets\\js\\scenario\\day5_4_night.js",
+      "reason": "She smiles with visibly flushed cheeks.",
+      "before": {
+        "character": "assets/images/characters/nurse_normal.png"
+      },
+      "after": {
+        "character": "assets/images/characters/nurse_shy.png"
+      }
+    },
+    {
+      "id": "day5_seo_ending_freetalk_late_good",
+      "file": "assets\\js\\scenario\\day5_4_night.js",
+      "reason": "Quiet relief and a gentle admonition fit the new relationship better than a full laugh.",
+      "before": {
+        "character": "assets/images/characters/seyoun_laugh.png"
+      },
+      "after": {
+        "character": "assets/images/characters/seyoun_soft_smile.png"
+      }
+    },
+    {
+      "id": "day5_dain_ending_freetalk_true_love",
+      "file": "assets\\js\\scenario\\day5_4_night.js",
+      "reason": "Her confident invitation and initiative fit a bright smile rather than embarrassment.",
+      "before": {
+        "character": "assets/images/characters/dain_shy.png"
+      },
+      "after": {
+        "character": "assets/images/characters/dain_smile.png"
+      }
+    },
+    {
+      "id": "morning5_caught_fallout_2",
+      "file": "assets\\js\\scenario\\day5_1_morning.js",
+      "reason": "Both characters withdraw after the broken promises; Dain explicitly has a tense expression.",
+      "before": {
+        "characters": {
+          "left": {
+            "src": "assets/images/characters/yuna_normal.png"
+          },
+          "right": {
+            "src": "assets/images/characters/dain_normal.png"
+          }
+        }
+      },
+      "after": {
+        "characters": {
+          "left": {
+            "src": "assets/images/characters/yuna_sad.png"
+          },
+          "right": {
+            "src": "assets/images/characters/dain_angry.png"
+          }
+        }
+      }
+    },
+    {
+      "id": "day4_haeun_concern_teacher_group_talk",
+      "file": "assets\\js\\scenario\\day4_1_morning.js",
+      "reason": "Concerned teacher asks for an explanation without romantic heartbreak.",
+      "before": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Teacher",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "sad"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "worried"
+          }
+        ]
+      },
+      "after": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Teacher",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "worried"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "worried"
+          }
+        ]
+      }
+    },
+    {
+      "id": "day5_haeun_concern_teacher_group_talk",
+      "file": "assets\\js\\scenario\\day5_2_lunch.js",
+      "reason": "Concerned teacher asks for an explanation without romantic heartbreak.",
+      "before": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Teacher",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "sad"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "worried"
+          }
+        ]
+      },
+      "after": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Teacher",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "worried"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "worried"
+          }
+        ]
+      }
+    },
+    {
+      "id": "day5_haeun_teacher_group_talk",
+      "file": "assets\\js\\scenario\\day5_2_lunch.js",
+      "reason": "The teacher listens seriously while the misunderstanding is explained.",
+      "before": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Teacher",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "sad"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "worried"
+          }
+        ]
+      },
+      "after": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Teacher",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "worried"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "worried"
+          }
+        ]
+      }
+    },
+    {
+      "id": "day5_haeun_switch_teacher_group_talk",
+      "file": "assets\\js\\scenario\\day5_3_afterschool.js",
+      "reason": "The teacher asks why she was called, without a romantic rejection reaction.",
+      "before": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Teacher",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "sad"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "firm"
+          }
+        ]
+      },
+      "after": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Teacher",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "worried"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "firm"
+          }
+        ]
+      }
+    },
+    {
+      "id": "day5_haeun_switch_dain_group_talk",
+      "file": "assets\\js\\scenario\\day5_3_afterschool.js",
+      "reason": "Maintain the anger established by Dain immediately before this group conversation.",
+      "before": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Dain",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "worried"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "firm"
+          }
+        ]
+      },
+      "after": {
+        "character": null,
+        "groupParticipants": [
+          {
+            "id": "Dain",
+            "role": "focus",
+            "side": "left",
+            "initialExpression": "angry"
+          },
+          {
+            "id": "Haeun",
+            "role": "companion",
+            "side": "right",
+            "initialExpression": "firm"
+          }
+        ]
+      }
+    }
+  ],
+  "openingReview": [
+    {
+      "id": "lunch_seo_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/seyoun_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "26db0dbb016b2a32499f4c9205d521761d5eaa1ab3c67a05c3846bfc611b8a08",
+        "en": "6f2769e9e3622063c4ac58264f37e29574541b9f53a978a1eb53f89837f00a77",
+        "ja": "441d19d146dca0dc89480dfd435cd39363121f42aeef01cad0a0669ec5df0bcb",
+        "es": "bc514786edd2b92c24431eb6ed923176d4d2684a3098a7dc30e9d541c8809b8f",
+        "fr": "85b4eab437a14801aae4d0832737f1b8aad9cf887ef2e4428d81c0ea90d4be9e",
+        "de": "88ac7eb8384dbfc679994f49d2627c73d5d84930ebcd9f557dabbbb228cb32da",
+        "pt": "3cb4f3fa69f2e65a5f0d4477e37a2e1349a1f0a68077028e1f2519341469ca14",
+        "zh": "924da12344dd9bc885b60366259fadf681e00ef0388d01b1cbeb3a872fb4aac6"
+      }
+    },
+    {
+      "id": "lunch_dain_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/dain_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "29e760af7e966ead824129cbf777f7bdd38706b69103db8a6e3853d91d9b043c",
+        "en": "e0c8508f3c8f6d5031686d1a272761f692ee18bff795bedba6abe9b4e5733591",
+        "ja": "4ca757af64e9487a31c5ce5d37849e06d6f64ee708707c6f3830fd934c0d23c3",
+        "es": "4b2f7be6befea57ca2c15206a333bae17c97ad42c818f915dfbdb37056c934e7",
+        "fr": "d0aca8fffb8a0558974e66d732e5d684b7bd037ad29249d9e5844b9c5b416fb6",
+        "de": "04a13644ad468536da216ca942a420aea2edcf28eb06311250bc5f79dd212a92",
+        "pt": "1946fbd424207d3692eeda4354d14788f310e462f1c40454f7c4be5e9c9705f9",
+        "zh": "0af75499bd45b4eaf6fb26fc40c9866e24789c56831ab26dc70184a036d092ac"
+      }
+    },
+    {
+      "id": "lunch_yuna_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/yuna_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "a4efd59f044fb82134267b1f2e3ed111c2b34c2b49a501f1fe6ea3f4ec079c38",
+        "en": "bc1b67330fc8ddefc724e11109a6e7c46229193869580f7ec0a4fa19c71bd18d",
+        "ja": "7aaae8910f3b4dfd0f19c4a9dbc74390f0b9a98a05d6583f5ff3e50f3d550d5d",
+        "es": "ec11bd26ae02bf7812844c74c38ea1c0a3281a897b1abadbc3e259853c2539d7",
+        "fr": "84fee66cbce992a64cc13ee809eff27c79cf06a41c883228047b1d8d68f2bbb2",
+        "de": "d76dd1247c415e0ede1e91076cf2daa68805772c85abe23ce23dd627276d5a62",
+        "pt": "0b126f0fac4c1db83004c7a754aaf00b8bfb246b65c74356930133014f1bccc3",
+        "zh": "744919014699197919cb68cdf66072e1a0cf24b3b37e6d4a96732d904e7daf57"
+      }
+    },
+    {
+      "id": "after_homeroom_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/teacher_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "123382fef81732e1c7f02023c554fdf436dc085ba035d9d4663b495dc9a9587f",
+        "en": "70b46d1a470e86a873741f7d29d1aa10d6c1919752d655dee4bee0685f734d18",
+        "ja": "586a3ec8d5501f73b59b5b8c16213cc34096084d6cd7db87f9ef71690fee5704",
+        "es": "1993bb7074c48c37532973b4c7f7a430fa08dd1c147b4c033ec5f3469916cc36",
+        "fr": "f1bf7df2d721463752a4a46e18b5b7203d3b338b4499c1f73bb7b9af3fc54a15",
+        "de": "2caa349a82cd6491c0cff729ae9ce4b9f8b73ed081e1113b57cc262402d3d1ba",
+        "pt": "76b23b338a2399b863678ff5ca11832e95a38f8e80fe235e9b28889df4974443",
+        "zh": "fab2c3d29d43302ba6f8d34bc87146f045928e41a7cf14afd19d9d04d9bd778b"
+      }
+    },
+    {
+      "id": "after_nurse_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/nurse_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "07955795d74761fcbef16fff08fe3955bb9bc4ccb226c85da3cc0699e5af45b7",
+        "en": "883d935dca2a468be3edcadfb409006fa11c6bf01b72df92a22f2b8656743099",
+        "ja": "4ca0a65aea102e33613b99c0bf01e31e33d81f119fa4d31d53414bdcd39d72a3",
+        "es": "1f6b53d875598f8dbd684edbfc266504738bf6e44baaabea9f3d3bee1e03222f",
+        "fr": "d6aeb34144acb71e48651793544388a818f725c63dc4523eac121eb80c1f8599",
+        "de": "6a7e555ba54035ad4c1e31018e02b7b8db019a0d00f5a261cc3b363f28e0eb4d",
+        "pt": "b9bf26ad6b42bbd34caae0a847e130672834ad942638bbd6257c794ffdc46fc8",
+        "zh": "ed3307b2e2c529442ad9d395fa9edf254fc397a1e84dcf13b66cb7486debabd7"
+      }
+    },
+    {
+      "id": "hidden_homeroom_d2_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/teacher_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "4e11c48aab69ad307521162b2633b4be43e9fac3ebdc6cd64592f65552b59ae4",
+        "en": "d410b32e853290682b93b3d93309e3664ed60923d7f6de3138f473041c625824",
+        "ja": "11ac3ed17d1c3cb927acf338c306dafeff4cfec14960a23c2e06bf8a619e4b6c",
+        "es": "40970dbe351135f7d05233260d911d355c754d7ec4c4f885d0e9484e0aa0fcfc",
+        "fr": "78f52ca699349ef750f4b7960750981af22f710cfd2436d274702f9c2b25c840",
+        "de": "99c28eb293c1cb1faeb7787e177cc9c6b9078b7fb8e3776c22516bef550e6c96",
+        "pt": "f8803367c38ec4428c089f8497235b4a1fadf1079d19cba8064d4cc207128dbc",
+        "zh": "bd06eb975665b5f82539b3da4658549375f705d2d919c67ffe625f6a0cbdacd8"
+      }
+    },
+    {
+      "id": "hidden_nurse_d2_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/nurse_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "5f11d59c85c55aabdc8ee08001de6db6a8ae357508c9b849dced6d5772eb700d",
+        "en": "140fd4c97f2b2f0db5d2fab0914dcc6af9757ff6c65a615f4fd6aa7245d8e628",
+        "ja": "cf04a55104c1b3faaeaba6157119af02ccc6db81aaf9c45d79336807d1373ad1",
+        "es": "db19057ae44c8c0bb31feaa0490d6012c02061be102c3a7e4d5feb25428afda3",
+        "fr": "35955cc9b34f6bc37e2668113b8e4aa4a277739c2a75538c2f2bae1bfe6f4b25",
+        "de": "8b6f6257abfaf6c991ebc2d4bb682cc3d721693fd8c85a716834225346318a32",
+        "pt": "2e1f75fff20e4914e3f902ebf6c0a8815b1409930012f0f7bce1c93a048b35ac",
+        "zh": "e2040904ee63f5444c5788df52b2b15dff5bf17040fd5ede223fd5359f5a7b46"
+      }
+    },
+    {
+      "id": "after2_group_dain_companion",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": {
+        "strategy": "focus_with_highest_other_affinity",
+        "focus": "Dain",
+        "tiePriority": [
+          "Yuna",
+          "Seoyeon",
+          "Teacher",
+          "Nurse"
+        ]
+      },
+      "review": "retained",
+      "textHashes": {
+        "ko": "df3116541587e3d2ea1e21ee08e81b3d2ab2b157715c75e64eb35e80b25bc924",
+        "en": "c60bd6b59270a57cdf0632dcc787b6b165b279cfb6dabecabf718cf2cf288b39",
+        "ja": "2208f05924101f2663f125c389b352c471097d461d4aab39ee4730963fe298a5",
+        "es": "94a2cfd75bf8ac2227fe83dc25f59c2640460b45aaf3f7260032a0025f8d5775",
+        "fr": "bf73f3f94c0e27ac0f3ace5fe829e6fcd567cb1d9b1aeb5a723dbfbe7e981df6",
+        "de": "75fd7c14f7cfa049396075ee4e82484040c26ff6c426c5508d85981a742e0387",
+        "pt": "0673beea23c7fdaaaecb1dfe6ef4caa2cca923752d723025e8062359c36056a6",
+        "zh": "bf81b23c054de701fa820f647a68a142f95d5821ced3c6735cd66ff42047812f"
+      }
+    },
+    {
+      "id": "after2_group_seoyeon_companion",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": {
+        "strategy": "focus_with_highest_other_affinity",
+        "focus": "Seoyeon",
+        "tiePriority": [
+          "Dain",
+          "Yuna",
+          "Teacher",
+          "Nurse"
+        ]
+      },
+      "review": "retained",
+      "textHashes": {
+        "ko": "bb3be5f939d526f44997d59b906b6511a53b063479ee2c54a69bcacdf7b45246",
+        "en": "3faaeb73c950535438f99c771d649881d4f6eee70163f8d20c80b70c40b7e7a0",
+        "ja": "e7f7b9bb0811f435b8d85a6043f99b1bd08e1747592c196e246b2e11ca3c4c45",
+        "es": "449c62aa06176f0b41ddae4dd0c1f9e8401b65f915dff75a545943097048a2b6",
+        "fr": "c77bd2f03356462aa89d123ff2ebf8fa01503826a6af86fac2bf280c270421c4",
+        "de": "48908bab7cca75b02c49616dcce2820c639c66d415508e7ccd29de9bcf320547",
+        "pt": "0f69f358f02e1ef770dc10f8070835f8e30db0c516246a0099f8795378a24dec",
+        "zh": "1c8b528233fd8834d770351cfc4545056dac66638e8f6e63bf09384c48194f05"
+      }
+    },
+    {
+      "id": "after2_group_yuna_companion",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": {
+        "strategy": "focus_with_highest_other_affinity",
+        "focus": "Yuna",
+        "tiePriority": [
+          "Seoyeon",
+          "Dain",
+          "Teacher",
+          "Nurse"
+        ]
+      },
+      "review": "retained",
+      "textHashes": {
+        "ko": "40163950acfbc21dee267c9a88a9d976cb06bc92fcbd06e175032a4cafe7d99a",
+        "en": "d280158b8693e9cac41aacdcf2066b50a68d3f0d47da3cd4b729d38ef3da6747",
+        "ja": "663018d7913df41269865a00cd200715d611085d2a420ee21a3015bfa1f7b139",
+        "es": "d7208658b4eb1a65932477fccc124600d9e723768cb428f31675dcaa02f84d8a",
+        "fr": "a1d983862832cb28cc5abe238185defa88d2a1a147b751a5ac97d3f3b8d0c48d",
+        "de": "0718ab28e30dbd2e81d7d04d6e64f3b4e3858c3977116e6e9ca64d9a16a2d230",
+        "pt": "d2fe565d1a2af0f05bccd272f4689f345ada9b1c4a7bdafbc41d31520cbc9716",
+        "zh": "dad4df7d2d618f8fee69d74cb5c3265f768b9ef0340fe9671a941c649397af01"
+      }
+    },
+    {
+      "id": "night2_dain_freetalk",
+      "type": "free_talk",
+      "character": null,
+      "characters": {
+        "center": {
+          "src": "assets/images/characters/dain_smile.png",
+          "opacity": 0.35
+        }
+      },
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "3543d2bd26c4032cc7c75e9c35e0a3b99e4e08747e4013234a7668613c05f5cf",
+        "en": "fcac2bce198c4431585298288513423e0ef4e26a8e9a0e932c672cb2d2026250",
+        "ja": "32b605c57c3aa5496a0f87f12c03fbeec52448caee3fb00268c65e0660968425",
+        "es": "474426f02522d399d5ac31c8a3a45250ee0130f11f902fff0e9f4dff24aadc08",
+        "fr": "0523abaee51901497bbe0daf96347accd81e00f49cde51f1f2a849ca0ea8babc",
+        "de": "7067894836b1bf02fb96e80734f724fcc0bfc8577fd698f2beeae72566e0b267",
+        "pt": "805428bcbde55bb4b2f00c03ff82ea09c81ee83aac5c8cc22f79388a162368a0",
+        "zh": "e4b932b84355c6ee124ce86cdb5fbaf03bb572edb291cc7d62f4be3572acc540"
+      }
+    },
+    {
+      "id": "night2_seo_freetalk",
+      "type": "free_talk",
+      "character": null,
+      "characters": {
+        "center": {
+          "src": "assets/images/characters/seyoun_soft_smile.png",
+          "opacity": 0.35
+        }
+      },
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "4fb9d6d30442fa91a3ce3987747bc46e99aa677ea2a95e1e0b347798c787d164",
+        "en": "22963bc2a861c6836011063ee12b0b5657a78b9ca226cd99028292ec59249c2a",
+        "ja": "5e24ca695bf10687297ab24043a05f47847925ddc8ef9ac6c13162e1e8e7c633",
+        "es": "583442cb2539e26285874687d405200657eefc9ffa86103c89bbb2446aa39dce",
+        "fr": "09b8064f07aecd6de35a0d48628b3deefe4e1bbb4a2ed8cee14d41eb4b39a4ac",
+        "de": "3bd129b0c740b69ad47673c220e111ec530305251a5ba6a3015480d747359e25",
+        "pt": "a77a5c480369eb636683f5305d38564ee2b14026b6491f513dc7e1e3ed1e24d1",
+        "zh": "356fd9cb4ea76eeecac2f714b05d07f526bdb5c27a975085de804e17dcb86dde"
+      }
+    },
+    {
+      "id": "night2_yuna_freetalk",
+      "type": "free_talk",
+      "character": null,
+      "characters": {
+        "center": {
+          "src": "assets/images/characters/yuna_soft_smile.png",
+          "opacity": 0.35
+        }
+      },
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "b166b3c372692f2f5f5718ed8debd38546640244bf2bbc72e4cbfe4b5affc89b",
+        "en": "423045c1c573f7cf977023d57b836bfd8ad52cae9eb6d74ec58287a7c6df719c",
+        "ja": "3575ab86acf06becd638584cac72cfc8f026cfaaab567efabba35c0c941a3210",
+        "es": "7d7dc166dabb22c2a6893e6e63fe27452c867643dbfc7e1ffb42cd97ce303226",
+        "fr": "f5d668b8b54e8464c72b2b351cc2581d0c8917819ddf2548bab1763c74ecfad7",
+        "de": "d793456651a6b3a6e1c0afabfbe6fa3024e0cc46349b9a9ba56f79638f390c4c",
+        "pt": "b3c725322ad0d223895dd5e034fac4d9abf1a85a5fbb82e9d29dcc6d14baaa38",
+        "zh": "83d61786d23a77a4b4c97767e8fefe2dde7314e2096df790aa920ce2b9adb6a6"
+      }
+    },
+    {
+      "id": "hidden_homeroom_d3_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/teacher_shy.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "c9bd175e0f81f774942aa06fc82eef891df563317af02afdc01460bf6ab9407b",
+        "en": "88f86a114ed021b06b4f2aedd7eaf7b526f34bd6450e87dcffc28b09259f1ee2",
+        "ja": "f9b3263ee31a02b4ce38995f3158f1a113896b8e55c4e2deb0b3242cebfcd87e",
+        "es": "9ec5c550fbba4f704bfbc8a73267ccf2ef4c4bc15e12c9d4118b6d5d0128bccc",
+        "fr": "9664f9129d3412e83357cdc1a195bc4b5190c4522705b49837cb5598240b8e09",
+        "de": "720e5b9396679d3bccd9a697f8a8e934dae25378a4597e85c1fc43803361f6b0",
+        "pt": "f0ad25a74254d534ffb2456180af5b856a0fded47da0f8cb4d9238068336fca9",
+        "zh": "626e45179ad035a717ed33e72a0a15d91da241da0bb13d0a9f43ef3ce1994dfa"
+      }
+    },
+    {
+      "id": "hidden_nurse_d3_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/nurse_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "399c58b4bd2f7de42f58105cccf5108ec17ff3b8b36d8b96f2b7fe2d2c6e3ac4",
+        "en": "517ce0d95d725935a278f824170840a6fb574c0a7ebc06a0810933ea8e9f8394",
+        "ja": "e7147a36aa2787499cbc57aef375b29c37de925706a21212027c5957c5069748",
+        "es": "3566dae1874818a45a16cde62f6ef6931483403fd34cd7046d9423883cebb89f",
+        "fr": "1d3ae390734c9b0b2d2e04f6f3806f6d60ebc6c26c481513598ab81dbcc2ed18",
+        "de": "760f0129303d21d9e704374fd21365ff85b1e19d45814b82f7041cc02e324d12",
+        "pt": "5dacbeba2c1e59fa2c8918abdce92d6e4604735dcdac9ab277c01893dd77eb90",
+        "zh": "144923590f88cc8c4b9104be8e2147335314117b448e0a540304abd439f9efff"
+      }
+    },
+    {
+      "id": "after3_seo_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/seyoun_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "cb9cd7445979c666c5483877ebf00f03c16d3deb38a1a4bcda90b8b35e1e76c9",
+        "en": "2d9404930f5942c883a5ceeefca8dc7d83ad5a143d3c69adbaaed3c5a082d1d3",
+        "ja": "1e9b1222fd54dc1fec505f276ccfb35e0bf85caa85a1697e271c1e962cf1e990",
+        "es": "87a7e982426ea4e3602148d3f84f99ac10a6aeeeb5704232e00e7cb372288b10",
+        "fr": "b78247c765d735ad66391fba0e94fcef1edafa76deb90fa37c4f21fca962933e",
+        "de": "2da2e3fb4a40b0be787cd01ac9ac1afca6af6e1930e0964c244efe87ab58a8a6",
+        "pt": "fa25bf6ee4198d5442610f3d5337c2ad76c18bae1eb75c1f007e18b5ec43c20e",
+        "zh": "f2b0ae993926c6581109711ea323554bfcdfc3ef42834e295c3413f7536ee6ea"
+      }
+    },
+    {
+      "id": "after3_yuna_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/yuna_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "4735cdcbe0efd31c29617079668d773762159993fd132acf23ba217577c306fd",
+        "en": "90a4a11c6f0b6d895bb372c0e746e0126d996abfbd1b181052eb95344795ef93",
+        "ja": "eaf2c865af73e873d62cb74f8aefb3f158cbe7a4fb16c841359e6a435a50415d",
+        "es": "d1124032138743b10c3b3e0ee2998ea1b417fade93c793b1bcb9492738c37d19",
+        "fr": "3b49e243611b17991e982c7cb4dc7452149c820b77d882dbc6c8e3c3b2d87e2f",
+        "de": "707e0954c0da0d4f3f2271dce3ae6723e837623f5eb080eb060ddbe7f9f467b1",
+        "pt": "04af12d0e03e2d20902824a5f96a6492744bb677c9ffcc5a204b52d66a805124",
+        "zh": "2d3fcfdea312198da11d336303ec904c0b463c26d66ad1ce584ea9c50f2d0245"
+      }
+    },
+    {
+      "id": "after3_dain_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/dain_relieved.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "c37831f66ce007e1257e22da66c8cf9baa69418b8d99c5f28d9c15586339e0a1",
+        "en": "556e876a9411139d13f7e85476740654f3cb1f058bba39f0b8d0c6aa2799bc4e",
+        "ja": "f58c6e9973b756b0ad715254f100f0aa409c5701bbb2d41d4a9158ed73a0e19e",
+        "es": "9f87368b13cb5746efee9dfedeee174e324353c1237ad9a9b3cff60bf4b7c651",
+        "fr": "e3fd296842679a4cce6b20508e8d981ff5412f61dcd9c48693c9c0767b7e27b7",
+        "de": "99def3a51f57156137c1d3a73b4b4114b958b9b365eaaca05a2853917551bcc2",
+        "pt": "a322b7d03534a59bd203fd18e6f73cb88c4211fa2ef5df28d3eaaae27accfca4",
+        "zh": "ff0c9f461a0cfdfb5f47ccc6388e6b99eae53f187b0b156a7e67ef8196103da7"
+      }
+    },
+    {
+      "id": "after3_group_teacher_companion",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": {
+        "strategy": "focus_with_highest_other_affinity",
+        "focus": "Teacher",
+        "tiePriority": [
+          "Seoyeon",
+          "Yuna",
+          "Dain",
+          "Nurse"
+        ]
+      },
+      "review": "retained",
+      "textHashes": {
+        "ko": "45890bf6f5ec61e0f778cd7579f19a2e13920ba09571325644c470ac784e6531",
+        "en": "3bf1348d6f6867d29b0cd87094951c6768a65c03137e066026f389f333e0fe2d",
+        "ja": "84021ca76b13eaecca474807d87be58cd7e55877734ccb8ae33adcbf6416935e",
+        "es": "ed0211524ddbe07ba23e6366fb50c9c2238bbf1a602a0a40ce537c3bb536f7f8",
+        "fr": "c1573b5bb2f4c3022c0041fb690c2fd40f52530c034c403e0f065f1992388c68",
+        "de": "b33ec4e4a34b2528ac19443d17feef512d439af7089a7ab5edc0055d80210301",
+        "pt": "c48ab98f75770e07ebd398de24126e3864eb93063c8e2a88aca2d959f5586b31",
+        "zh": "0bc4bf2563d20e0736a1af70f17487f9a1f9ec4d486e2b09d959879e4702ccbb"
+      }
+    },
+    {
+      "id": "after3_group_nurse_companion",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": {
+        "strategy": "focus_with_highest_other_affinity",
+        "focus": "Nurse",
+        "tiePriority": [
+          "Dain",
+          "Seoyeon",
+          "Yuna",
+          "Teacher"
+        ]
+      },
+      "review": "retained",
+      "textHashes": {
+        "ko": "54322fab7c94f55961de8afd0f30597a59eabb2e8fbffb60d92f5b75d10225be",
+        "en": "15302a7bd8e60c52d7a1d2e1d99d62d250a784f45b2beece4edff34ea33f0192",
+        "ja": "66ff8255e7af8cafdd94fdf78ed9c18311b6739fa081b224c2fe1fa6d493b864",
+        "es": "58334607b4983c4e301159a4e0750d2ef5c516c233bff41af2d2f2e43915bd20",
+        "fr": "72e47ddb9e013d6aee5b162b7a76b789095728088881616bc549a481f556c728",
+        "de": "1f52bdea2ddf2afa68567ca2d5629b6e56c90d7009a3004ecd58215eec78ed80",
+        "pt": "f1269098c66686b1ba5c30a34943af675e0219d8a16531d5c943aa93baa4ae8f",
+        "zh": "603104fbb8da3affdacf54b0023a887df8740d05ad2e238b7462a69c73addd97"
+      }
+    },
+    {
+      "id": "haeun_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/haeun_worried.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "4de3608277cc3df3160f773ea7885152a1adf0f19a9317a6f62c1a4fce2d6c27",
+        "en": "7f41287c878f747befd2beda268d3ef16e07c283d67f7bf45baa8a41b95a32ae",
+        "ja": "1b3b1bab2ee7ec16b704641bd8f8667e3d0bad18c4ed48fab0b5ae1345a4d2fb",
+        "es": "a16df55f925d613ec1c080c24d036f08e68cb394f0376a3b4a4fb9e614a6ff9d",
+        "fr": "74e53997f63cab52e6e7d7429766ea4bab7c7f8dc1eba030eab218925aa9823e",
+        "de": "38a7bc352c62ae8b0511f8f6501367c5145a2bef36b74b7e7203c76c669204c0",
+        "pt": "2a53c11bfb6e0c1b0761079894174047cedd50a735cf23d3f20a9db05f3723dd",
+        "zh": "8ce0465826287d5b714a03d6343cb634c0870455c9fc699c7f9bd4db835e9017"
+      }
+    },
+    {
+      "id": "day4_haeun_concern_seoyeon_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Seoyeon",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "sad"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "66377f25dd42987ab97e4a609c34ff43c574854acb3aaec83423665ec925ed56",
+        "en": "e40f1d0c4b9d44a332812533bbde189c3b99ce66dde6a8a3b166e540eb2dc64a",
+        "ja": "77690a8f91fdfbbf6557b28344a63c761f9084827d6bc2bfae3f9ded078901bd",
+        "es": "61921e3cecd6b0433a74e7388a86c75f7799ba22bad7c421575618efe4f5d21f",
+        "fr": "99ad9869e34b6606b3f60b4f525b6641730347db5da71fa43f77b0865c4b4bd0",
+        "de": "df8bf03086aebdeb46e09dfe5e30042f88f1d02f1f4173193e6f9b9aad33991d",
+        "pt": "61c13a79f9cb7fe557bbe8b8cf0fe3fedbd918fe701bba6dcea007613f3f3fcf",
+        "zh": "ba4cedea8096acce127cb43ecc5c565472aaa1d461e6d8385c0351bdfccba836"
+      }
+    },
+    {
+      "id": "day4_haeun_concern_yuna_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Yuna",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "sad"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "4b766b05217baef73e7deec045ea66948cae8ca559f27f660f2c81a54437a060",
+        "en": "5b218c6ed5512b12fd134d5badc68fcf8138e8683a6d0bfcaccc46e70f7bd1ba",
+        "ja": "413b848c4c893ad14f1df3424c6ba4b75eea98e083a6f241f6fde70f6e3fdffd",
+        "es": "e57573fe513bfcb287c6e2f5b1fc124481d46eb7d49f050c27d36d6813f1c26d",
+        "fr": "e725ed1c4c1f1a7095d697f8046ed39a5efb9a8511d15e3eb3f77da02c45541d",
+        "de": "20c395b8cabe0be2138a5dd6c5de09cd30860de8cbb3937e9b98dde8900f6ce8",
+        "pt": "b8ed940d8189a28669eda2c5531f66d96488f4b481e6a0461b997cc09af7f378",
+        "zh": "34427d09cd62790cfe70cb0fe393dd823271e74296b65e87b7440ebf959725f3"
+      }
+    },
+    {
+      "id": "day4_haeun_concern_dain_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Dain",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "angry"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "62515496e97817474fa49139feef7dff33597f683a655a9ae41bf4ed0f65a125",
+        "en": "c5dd564459cb877a38612605c961014ccba4cb4b14abefdf14888f688d4a7bbd",
+        "ja": "0bf99e03084dcee35c690c82218c956748c3c1ca2c31c50aa1baa8cab052be86",
+        "es": "43e40277f3843978b696615d292341d5509e23d1ba1a65b82928437511e4e5d0",
+        "fr": "2b22e812cd5b018cfde850cd42a35e10a94c614fea930a8c900861570fd64bc0",
+        "de": "7b886efad9ad761f61568bde7acccd22f2e42d921168b29849e31fea7d4f8fc3",
+        "pt": "a1179cdec1ed9ed58d0130923257d480c8cd7ad33fa084fa3bb09c059bc88351",
+        "zh": "bb3fae2ddee96f9066f080fb12b29b010115b0df207221f6f618c1d39c590249"
+      }
+    },
+    {
+      "id": "day4_haeun_concern_teacher_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Teacher",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "corrected",
+      "textHashes": {
+        "ko": "e41f4082779dbb0a202d4f4b2926c0e6ebb3c53699b29733881d0a9866832d09",
+        "en": "31f96f69db94819d8fc7c2926f2deff4ec339f8b30d1352511db45556f038e49",
+        "ja": "9cd1ab026873adef529956f0d7cef784cdcd7e2fc9f9342a677c7a6782853f52",
+        "es": "7709edf52b151cebe4af0c65fa543131f37ed15f302f339278474d3b4b11c2af",
+        "fr": "a3b81f01fdd2382a533c0cbcfea162b98d3aa6ccdc640e27340376752b27863a",
+        "de": "02fab3c77fcb702976c36dea7a89340d6a89089fdd58927a003ff89427b9a41d",
+        "pt": "c4e8b5c13635fa8e7c8c3794f695cea397848393ef9d84ee16665333b6221d71",
+        "zh": "2bf67bab5705626cc2e5d817a25b5fb8a088053ea2ef4233591a9aa80457f627"
+      }
+    },
+    {
+      "id": "day4_haeun_concern_nurse_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Nurse",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "f74af864dab8ae419360a1dc7876917759ea8eed7739ed2c330103a641793894",
+        "en": "3b1ed86f472a46ec842eecdeb9d54d9b953b54d24a061817429323b6e6d763a2",
+        "ja": "f7974300563b622fff990dfcdd62b1b20bd787681554a79b8792d06989ce5cea",
+        "es": "bfa8f0dc59d1e6a2e5a83722eb8496df221a8b044443246c48ef3b775a148077",
+        "fr": "0bb71d0f493f831e8f4b3de09a6ea06ade288a101cbd3da93c5e3e5e9c8d5782",
+        "de": "b0c820c6b24067083c4f1c95480cf3601a0c9b05ad07a48165196c1901631834",
+        "pt": "6a6eff2a7059e1e89fa0fa9c50dcca2d937cae2d3fcf2a477bc16918afa487c9",
+        "zh": "b687f70b7591927acce645967d6a2ae54bb6ddfb9046df0703757a11c5bd62e2"
+      }
+    },
+    {
+      "id": "hidden_homeroom_d4_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/teacher_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "4a3a6e506540ebec1abdea26ea0e9026a4f5a68b6fa9f1eb9a92544aabe6bf08",
+        "en": "1b49fe813f72723aaa09bda63d1c280658cf045bcfb41dcef74b8f8f2f64606a",
+        "ja": "700faa38c44b85f2bdf7a9c7c719269658c9e8a34307b0817c2bd5cd0485565c",
+        "es": "51993e4c7c0a46df84c6672fc28bc95a85f7c63685098a03424ebe095b23bdce",
+        "fr": "1ab474cf16c2097ad9bca663f4c56f2aee1feb930ee54fcfc82b446b7b9c1a14",
+        "de": "9094c91fc9f29de3308566d9aff0566fd5ae5186b7052b704ca3822496686628",
+        "pt": "4c4eab3466f26e046d5d92d84cda9a42295e0089b040a35efe17d6b59d9d6b82",
+        "zh": "04da9bc0d02c18155c0ab0a8917bb69819eaab792da0ed115506a87a06e0676b"
+      }
+    },
+    {
+      "id": "hidden_nurse_d4_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/nurse_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "76d6aeac192d9c3fa0592f10a317c29ef80fc7bfe43759e720a2c2d854edcd7e",
+        "en": "40158866502a2875991f88e88ac0606cfc38108ada268b5d304da89e59763bd8",
+        "ja": "31cc0e4716e653f6f371f5e55b56c7020989b161d23640723b5eced10285f9be",
+        "es": "38cd110c8416ac9816404e6c65a39a47f1f3836a8d2939803ab28f24ade891dc",
+        "fr": "ce447e12d57edc4cc41e4e55640a9b2ea3bd3f37164d5e675ead3a18de14fa0a",
+        "de": "94d4b8378751ea24ff01d1d423c0fe3e54a3b413b7e3a7941c382a479cfbbfef",
+        "pt": "5821611d37694e12eae4e3f605746f7b34ca9f184f9e04676319d3acee14b0b6",
+        "zh": "009b0b048b40d4aba1463b77ed7e7bab704c424265d86a00dfacd955f9d5ac59"
+      }
+    },
+    {
+      "id": "day4_haeun_personal",
+      "type": "free_talk",
+      "character": "assets/images/characters/haeun_shy.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "9c39aceec2a795ab2571cb96fc0674fd5ec363ccd4b5cbf5fbb6da19aa3cc59e",
+        "en": "af3614eab88abfce519cb8e307a54db102017ceaf931809926fe76c42bf7ff02",
+        "ja": "25258db37a817639863fbc4be99b9ae012644dbff65ddbc5e6c5500198d5b7cf",
+        "es": "fa73ddf7786d30464f34d03f3677785e64da1ce58f5dc32c7f485877b37622b0",
+        "fr": "902ec607d80f25845835546757d73e417da93e98e592229cc97a134274374e88",
+        "de": "91979745c6caf4c52857de32cf7dfbb6c69865c8f56233caac403afda140ee5c",
+        "pt": "91292b66739d04c1f177f421dffc3a343518bbb54cd57dae03c9fbb664c56e97",
+        "zh": "a642eacfb6d6a965f6457e6b9c6e1b4c1867848ed94ecdaf91d91d8c3e495422"
+      }
+    },
+    {
+      "id": "wall_seo_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/seyoun_cry.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "fac97c2e8a89ddcfcc76da4b509e5fd50092d6f648b7bfb2d7516ecfa4f4da85",
+        "en": "241b8ee8f81c7aec0b4cee1b78bbc74a9961060a8ab13772714de20b9fb995b6",
+        "ja": "2772500d70778c60c48d7c5ff967653c65a7916fb8623c72921b6ccec641bf8c",
+        "es": "e4578b2a6d4640623362349a2701c8dbe8df5fa68ba4d1c8e4ab8f77f1cdb6cb",
+        "fr": "03c60b59ef65989675eb8e8b78572c322f4d4352f257af1c32501b90d1da8769",
+        "de": "bf4508ae60ec3663256bcff785a27382ac8376e3dfbda63a63a74386b93a862d",
+        "pt": "8837e9b8aae25d6352c26d693514bc3e5b0f792f5a1a57588dc6c34212a397e5",
+        "zh": "8730bfbdbb80f3db452c450109d2b5d60077efecac71fb57bcd9fd89729f4f9c"
+      }
+    },
+    {
+      "id": "wall_dain_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/dain_relieved.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "23f5f9e77680a42fd13ec24ac5c627f81d2367c648e6b2fd7eb909e3d28ea79d",
+        "en": "f04e6ec04ddad2002fcbc4634f8822bbf59443a402023c0f3e07886fd68e030c",
+        "ja": "fef5da9bf876c88df698edef6289ecb32f6c7e3c8297b2e25fcda78375ab2c2b",
+        "es": "716b930a962ac95edcf786196304c245f7195f13dfe03aeb8ec6b96bb02357c2",
+        "fr": "8a986934627df0e48c6bcf4568234084ad706580f4ae2e81bee41ceebe1f90ba",
+        "de": "39f00b768ed3163aac983687f59a105e56983a118c25993122a73c53c2fb0d6a",
+        "pt": "93376e533d7222f2bf752bc26fd9ca8b8e92d813a701e7d05dfab474eca3c8c5",
+        "zh": "0fa7f6d0053a7964141dd4bfdc12256b9d3a6b4253f7941171260480e3999eff"
+      }
+    },
+    {
+      "id": "wall_yuna_freetalk",
+      "type": "free_talk",
+      "character": "assets/images/characters/yuna_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "6003fbc841383a2b149e0b16ff9c0acd4857fa9a94491303f3292228e3f4830f",
+        "en": "42624d7584100e65dc06cde23afd5dc034ff3675051872a7d0153827923d6614",
+        "ja": "c578be00ffb5a54c40b04c820f7a3f128141018e7e164d19b712b4965f397e4d",
+        "es": "a6103416aead3ef5397684b04b3daaa4bb13943e2a459358852559c8fa568d9f",
+        "fr": "48cb99884a5af8ba10a95013d6013113d17ec7b2c2e5ab29e4e75a63234a15e2",
+        "de": "186dd33c49a1a490388d50595009159eb82f8995e73ac41908d38b2ec0419380",
+        "pt": "f0a29a71105e57da269729f07adcf1ce89cc524c9eb791cfa102e6936902067e",
+        "zh": "fe0d6bd6440873ed94203fb118c8fa032e2c6aade1503e5bd233d9553b1c2b64"
+      }
+    },
+    {
+      "id": "day4_temptation_seoyeon_freetalk",
+      "type": "free_talk",
+      "character": null,
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "94d9e57f330dd1ce1b561fbe713200f316fce63425dc1bbd890c318700ff0621",
+        "en": "e372ea371c342eba92b6759c0f5dff9d25adc47f8207a39744768fa5704b1757",
+        "ja": "39e94b3031dfd7ea7e624b7050dd0aff396dc3265608b2a9c08f7383b8326a9f",
+        "es": "e89e364d3fd46469681aed25f22c5e7aa5a21b5edd231885eb90f5f1122481d3",
+        "fr": "ff63cac9d664803a65a0b07518d9f5ec22ac218ed0aebaad088d90c3adda460f",
+        "de": "88a53cc18bc83d3b31479636fb6fe3d2633afe28ae52a70358aead8f43be2e6d",
+        "pt": "93bddd7afde0d4b3faa35443bc6a6dd983e10c12ee3296f0a78f8ed890ce340d",
+        "zh": "3005b8cff0b006fe0b09236cc711b04743d3c9fdd702496d72f15bcefa10bb29"
+      }
+    },
+    {
+      "id": "day4_temptation_yuna_freetalk",
+      "type": "free_talk",
+      "character": null,
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "8b7109e04453a3b0f765e0d328c722dbbd4d0902d5263cf0baacc869a9370b40",
+        "en": "243752792f9f22004a503db26068eba509843bdd96fb79541332372233254f0a",
+        "ja": "e30da6658655800bef7a846df07388a634794d88927be300f1143780bdf57cc8",
+        "es": "f7e380e96e75e1da651552d742e6e11453cdf07c0cabef2e6cbe3d46356fd314",
+        "fr": "f64d1cb800ee0b7d068156f2b45552d42ee34a1c4f7a794053cd52c0ff195b2c",
+        "de": "e3d22db6032ed6497deb75e0dee27460094f24d456f024c28b8c4373f6e85bb3",
+        "pt": "6f28bb9a18490da3e21b6c9e38ef29b1b56697eb3f256a8ed1a63c17152fb57d",
+        "zh": "dfe2c0e6953518da159f0955a352d76add6df82a515f3bdf5154cae3421209cb"
+      }
+    },
+    {
+      "id": "day4_temptation_dain_freetalk",
+      "type": "free_talk",
+      "character": null,
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "c56a3671de0bc0beca2f500c3f8ed86620934e1071c3dbc9dc8d152b66453f30",
+        "en": "b30206893e9ebd977771a83a423566d5a417b05472a7027db6a586818fbbe55c",
+        "ja": "11b1b3496a18f79bd329ca86903853776d8ed68cb2398552bc300b4d0c5d6e57",
+        "es": "a9e5a6b5a88e40e7608053b36291508451bfc64034f630b074371ee4cdedf4ef",
+        "fr": "f5b21ee4e0a7784859d78a948448a4eb92607d9e8ee7fa02d5c22bcdaf1f8d6b",
+        "de": "748f45398e415cf0a5a29c5f6a60e83c477ec2c5fdd901dbe5c23ecb968ca418",
+        "pt": "5cad05df93c723599cd471614529a39cf87be61ed3381a76d947bc434a4bcc5a",
+        "zh": "899e6dadc882a1384fe97079ce9500c3dfb37983defdf0c9216a2befe3b664f2"
+      }
+    },
+    {
+      "id": "morning5_counteroffer_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": "counteroffer_confrontation",
+      "review": "corrected-dynamic-expressions",
+      "textHashes": {
+        "ko": "9e20c9416805c6277b22984e4dd6935e0cebbe55ba7cc159146f9cffc78720b7",
+        "en": "e98d6fa8d35170add734296b74050bd8a4cb605dbf307720bbe034b5865fdbd6",
+        "ja": "981c5991af5d3e173e828f5b165b29abccec766a9397342192d19811fc5efcf8",
+        "es": "3a3dfec942116aa1a018ceb06260612e0e049976f0b92f3ce0a5b077cf3c81c8",
+        "fr": "c30a10eb663b20316b8b4f6afd9a2631859986a7f4fcce7929377b3c4bf598d1",
+        "de": "7a14943b7004115b5ba847303bcb109a018f27f29f36eadc9f3ebc0f39d2ef63",
+        "pt": "f40ed237c7f20b82540c854c40db6ddfe6d57e4956d31207ce26f369d171eedb",
+        "zh": "cc78d471a128f3d3d70e13406ceaae38ece18567b2ff9f0706ffc36f99f06ce7"
+      }
+    },
+    {
+      "id": "day5_haeun_seoyeon_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Seoyeon",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "sad"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "664968ece4b648de91f8fedb421c75541195b68d141f021e2cd36567ab99cbd9",
+        "en": "7b86d142ae3b345b6ef9fe2e3d117362bc089e1f8422af7b8d1fc087654893da",
+        "ja": "1aca2566abe486915395ae875a65b770d7dc51a02bc98667713037100118c11e",
+        "es": "8ca33980830fc55b82b6c4c8484937d222bb0b5088eb14fc943498c3842ba4e8",
+        "fr": "853acb06f30120fb36fd7609a1d6ec36d8653d8ccea593df083c29c423a52efb",
+        "de": "3e52ec63b10a35b1d55c501894490385290793fefc2acd7ad24affe327000411",
+        "pt": "f46c9707839ff0002a611cfb3f2dd89378f9240845a75ff7ef49662f4dca2f33",
+        "zh": "cf55ee36503b0f06405a30c30c19265ff10bd4d895ff6c8fb09856614e50c290"
+      }
+    },
+    {
+      "id": "day5_haeun_yuna_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Yuna",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "sad"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "5cfc082f108b1a6814577b23ff72129ea6ad7fd536669ad34952fe10729a2ea5",
+        "en": "687af11487cad4c7f2ac029d194d3f2bc5711600eb80d098501d9773a960b786",
+        "ja": "94cb5034ec5cec81432603e27fd647a22ffa64dcc59a7be728152a2c9f27a119",
+        "es": "5b603f3236c8a1a34b43884b94a118b98f920e04f37600eda597404efcc36ae0",
+        "fr": "5ae6b90621f60db3f9e07964b7e9053990234862d8dcf503ab1dd685682f3289",
+        "de": "c234785e9408850ae6d1da94bc2fed58e1e8060d8db30572a9c2ea288c104918",
+        "pt": "302bf5bda0cb9f71547d6207f81a2d371d3e0052c2efde528952a9b9adcb381c",
+        "zh": "a960dc5277b1dec28dd4c98f7f133f11b1b23d3fd2a90d34061fd0eff8984343"
+      }
+    },
+    {
+      "id": "day5_haeun_dain_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Dain",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "angry"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "f62fad50c7afdcbbf630db8806cd57d52458af3c55b7c040fbabfec515855997",
+        "en": "212912e8544e44ab9e4afdd53421bff5e31ef2351b0f69c360121af78bf78544",
+        "ja": "255e42a422cec9e0846ef2a892c032ddc932fdd2bd78c21333a3d0da194d1302",
+        "es": "8ef7f4087d63953852212cda448f01482b020b5805625d5e65a8469b002f03ef",
+        "fr": "ee0acbab139225542e2b16a7fef5a49b4124891359d62dc21bf9376062c9e4c8",
+        "de": "faaeebad509f44018cc5180ee956129685c855d25617822c8eaa6c2d06bf28c2",
+        "pt": "de6de7fabfe23eea330da81ded4c32b34648e58b7c40a2d91752be9e205e6de6",
+        "zh": "d57ca9265f756748088f70de2953f808c8ca6e984fd326b9f573aab13ef68cec"
+      }
+    },
+    {
+      "id": "day5_haeun_teacher_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Teacher",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "corrected",
+      "textHashes": {
+        "ko": "12806564aebaa947425366b05e43be6b4d3d95f18749713ec013c889dfad4f19",
+        "en": "442110abe25373030ea5e72e2e017bb21db20b81df157db7b79f79fe0bdf7869",
+        "ja": "b37fa1afa36a06c0dfe5e360a7692218bb19e4c80dc370b4f79c66c1b32169fe",
+        "es": "bb09cb8df8918e6d41dd33ba38ac9d72c6422f2ac67841acca450a35679803d6",
+        "fr": "6dc10aa7a0e68e889f76b7b3902f51ed905938ecd0a288304244cd3452b797cd",
+        "de": "804ff26addd762202a5c01a1cf61b03312e30c046467a8d07ec620f8750e113c",
+        "pt": "2be76feac8d87218fbbdba1f41f493826cd20a5c0b452d0ea61027e939eb1208",
+        "zh": "b76df38f88e8855dad3ea0536af1340ced8d5309a6046bf8e938ae94236f3378"
+      }
+    },
+    {
+      "id": "day5_haeun_nurse_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Nurse",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "32d05992ddfd9755ac54239cfb3475aed5ee983ed22716c25b8ea89b5bccb0cd",
+        "en": "12db3c308af60fab13b94d88ce2408893d04200e945d9a41ff6e092d25d9f13b",
+        "ja": "f171f0de68e3005721e605b5fd0b6eaa054e8a1defefe891143c770720d63218",
+        "es": "49fabb313297ecfdc89c553876a784ff18a473b02af629c9fe9b1ece4b20154e",
+        "fr": "6256cb4f0c0bbcf21a86080a77c3a1fb7c2f24bd504fb090b164603c5caeedff",
+        "de": "4be012b7520e8b261e334e35e184aaa9bbad1b98333ba1ab35d036f3da0c86ca",
+        "pt": "ecb0587ae69a8dd35b4a80c8e37d2f72be16c2c5d42d6f720e869d515bf3ff71",
+        "zh": "fa77b0f95df37f80f232ea2d542e241382927297bd08fd7f95b053f0171be838"
+      }
+    },
+    {
+      "id": "day5_haeun_concern_seoyeon_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Seoyeon",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "sad"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "4212f60fefefe7a9eae1c50448b14bf0784cbded9c3a53f05076b562d1d93bf4",
+        "en": "b143ac101515d8178558266a796e089e9f020e37cf442ee5a89feb4f4c2f57af",
+        "ja": "415d6410ecbb0bf90671de436ed93fb26657a070a9c78b11a89d9b4da9e63fc0",
+        "es": "90fde72bcea005008e18c1474fe19f245dedcf2276c45acb801f977a3f1e96fc",
+        "fr": "953f5db96e67edcb33a842124bc905a14bca96ae10cc1080cb8ef6c124eee494",
+        "de": "4f8897b21415cc8786811c949229ddb725b4edf17b64216580906dc3380c219e",
+        "pt": "ed036e3ecfa6e2bde5c32b182a8e7223810fc8b700465f340dc43045b0afd624",
+        "zh": "5ca1b24b6fafdeb80a4db63f2c2e475e2e6e63f235e59c199bfc7dae0a4a5864"
+      }
+    },
+    {
+      "id": "day5_haeun_concern_yuna_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Yuna",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "sad"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "fc54886ff0466d3e2778b728a7fa929d78abdd606e8dfe305f1011bfaff4d625",
+        "en": "b03f816f42554ade3be4e39cb8e5f8e2ffeace9640cd9f74102aee41bc4163c0",
+        "ja": "b37d316ab2e9015d2b4cd4abc1cff07d1e37729504eb8bed6dbfde376ce30945",
+        "es": "a86e1d351c0172806b3928baf791300f9f13e5aa510968095f3585cb09e5a48e",
+        "fr": "c832bee7dec2573257c3c611563ae68e41ca46bf123d7f010d1b9b65401c0564",
+        "de": "6fc383ef19df1248e9a15f4812ee0717b1e9763be3c258d20fba7fca61de959b",
+        "pt": "a1a3ccbdada6a1813fca703056779c0a964f9a82ec600f3a1b489947bc676b08",
+        "zh": "66abd3d38db2f34cecb22703fef108cf1eca369406fcd3bf395be82f5229e96a"
+      }
+    },
+    {
+      "id": "day5_haeun_concern_dain_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Dain",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "angry"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "95de73cfca0a7537033d22a2c469d7822fa70dae006d27afe3549fcae17b27d3",
+        "en": "12d676485753e78a878b90e29d9711479df4fc2722508ab196c7e747180ec7ec",
+        "ja": "2da37090e2a51214fae735741f1a90fcb7b1ea1b3864cbdcf1df770607e354fc",
+        "es": "ce15f55bb7032c4edac77a7c14e85546c027ee723ee2384471c80b592682ad94",
+        "fr": "dba1f894420bce556d67630ef4eb33d7be36ac08bfec6057200dd261af0797fc",
+        "de": "c78befa97e26276a091ae1b9610b6076289c336513f4e249b32a506d4e88a6ac",
+        "pt": "c62d7f62b022d02a5cfdb8e9dae81a6054eef419bb041ba26d291761ed7bbe44",
+        "zh": "cfad1f70c22d6a05bea36b9700c49f60f70ec84f6adc24765e78f5533fa6430b"
+      }
+    },
+    {
+      "id": "day5_haeun_concern_teacher_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Teacher",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "corrected",
+      "textHashes": {
+        "ko": "f2de4c9117856e60fe57ca845b79494a85e99d1f0ee7aab32b0d6b75b2a98fb3",
+        "en": "409e8bf56e42198644a6db79394ae947054c0cdb5f7a59e7f5a1cee995c70e05",
+        "ja": "3b773a11bdb0ac96523e026d16b3ec3b590d73e718aafad129d041d5754a6e28",
+        "es": "1d20cc537ab1515d17bdae68b47e423b96d3897550447511d27b659a925049e8",
+        "fr": "a76c05baa9ceb964ef6e4f91b7807545ddcba8acb65ee9ea119dd00618c845e0",
+        "de": "2f004e7066c07099e9e5a29acf9918fb0ad1eea20bc84ea9b381d73178ff8b25",
+        "pt": "5259fe54cdc663bbbbb39cc6155adce0138db470e03a590cd07ba897a407cfd9",
+        "zh": "44f04c952f7adbdffde6382dc205c2b1c10ef2fa16ad5f4a057d4c3c24f2605d"
+      }
+    },
+    {
+      "id": "day5_haeun_concern_nurse_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Nurse",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "worried"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "c70c646c13e40dc5c17d260fd21e348ba427c8a53f88f113f2a4e3f648b9a73e",
+        "en": "370bd5f28af8639c3390295891d650ec9cf06b29005e3689056370bfe3f12374",
+        "ja": "503749de910f6eef48c881f094402699b392f7e017b0862736f1aeef37a9e731",
+        "es": "251cb909d717358cd606eef2162c059a5468f98cc0f67017f20045c22a3a6fbf",
+        "fr": "c993f27e709d2fb391c70aff181aad9f68e5befbf742f1080f0719009ff1e5a7",
+        "de": "ea6447b8327cbca0845bb8af9ff87f8c54f8ee34e0b2fce72ace739bcd9a904e",
+        "pt": "cda76a768951b344fdc367b4c16114aabcc31b694d6bd92c92f238095729f25b",
+        "zh": "627fca6404b5fdba6ce3127cf1c973da0cf8a389f355446c8bdafc07ecaba6c9"
+      }
+    },
+    {
+      "id": "day5_haeun_personal",
+      "type": "free_talk",
+      "character": "assets/images/characters/haeun_shy.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "4be4fff462fd689e85006cbc01268bbc8cbc5dd2c57ebad189d84ab6b5b9482b",
+        "en": "3480250bf7e806fc6aee0982e6fbd73d67de3bf8ad39481af823efff7e44d77e",
+        "ja": "1615c4e1a5519f2d1a6842cdcf75343c27d0816de14af14ea4a6389c0406ae86",
+        "es": "bb5c156ee166d7e0df6404c8f983c65f390aec064f1aac6fe9e4fb10aee970e7",
+        "fr": "11556858717fd52b46ec8e352814b60e3e00b37a1cfe521aa02f998bc6f5db64",
+        "de": "5b25e7a7adc0651aeea853f2d1da4a3d29a7f7b5fcb5af45da1f568f10b9ad78",
+        "pt": "80ab4bf286e573443c3b64a32b99214668f860f0054148c34007403dca7075b2",
+        "zh": "da1f1252e0527ce9e037a20db91dd24e674308c329b0e144616ab95e0bc5cc1b"
+      }
+    },
+    {
+      "id": "day5_haeun_private_1",
+      "type": "free_talk",
+      "character": "assets/images/characters/haeun_shy.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "23e15f0e5d100656d97cdc9c97dd18849bbc0daaaa3e5b2372cfdba68e4d404c",
+        "en": "76610fc6a3f83cf13f76381615ab578990090f70e50d5a046e576f5d80d329a0",
+        "ja": "a095b525318030b0de05918d16234b4259d916d9c194866866686f7e75da7b17",
+        "es": "f050bc66e75de6ff0eeeaecfd6cface911a78a8cf9bfaff659a78d5c2d2ee7c7",
+        "fr": "9142324f28ca09b667f4a14f3c62895c10e6021a9ebd75f8ebc491a8a1f10fbc",
+        "de": "690f7c7c8d5d40f8533f407da249af56b01827fc6afad31169e1101eb4aafe07",
+        "pt": "fdfe0fc881124fb0afdea3a5d561a3ed05e6f56b178990cd4a1f811d2bc609c2",
+        "zh": "677f94a2989bd209f7662bca93ace2ff8712ae578937558a0c0ec06ea67de9b5"
+      }
+    },
+    {
+      "id": "day5_haeun_private_2",
+      "type": "free_talk",
+      "character": "assets/images/characters/haeun_shy.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "c344e8c4e4d0943e33d67280bef460207593b65ffe0f790178d940dbd7df83ea",
+        "en": "796ac6d9a2d5b3629bf092276ef75ba52c90830bab1550dc906de5426e1cd3e0",
+        "ja": "5617e6644930d7a57fc8cd693f62de43a1b354a8a8e00f7b99a8112bf48876fe",
+        "es": "fc055e111334953d2071b574a265a1fa2885a6310749c785a11372725b1b88b3",
+        "fr": "310bec1f3fae3cba57c402c1e893c6b96fe1e436e4b2265a8718d95fb394a49f",
+        "de": "51a03ed33f31382438609657c9a776dc4fa0d2fb288a24aa55ea5cb3bfbaa935",
+        "pt": "ea8174df7ae4afc8316fad7c4eef3e7addebd5919bf60630f847994ddb0d7ea0",
+        "zh": "50a69eb0afc009036b7996eff84edddd425d0d2c857630769a5d004701b9b823"
+      }
+    },
+    {
+      "id": "day5_haeun_switch_seoyeon_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Seoyeon",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "firm"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "068683b9a0e8681f90b4f9a73b6ef665226ce3b6afde24451a0d1eea37668476",
+        "en": "73b8e7f035380f88ce73706113ebcc12a6c07fa4aaf6bc5707d17038922005ad",
+        "ja": "60f5547578e3909f3d3dd4326784544ac9d2a4a90e8aaf787527214b042ad769",
+        "es": "0d4e919f855659527c275bcc8157d9771cc06e0367bd1678df9bcb07da36f7e8",
+        "fr": "187b4b23bf144bcb3ca847d3dc1b8edeef2c6f71fe9e11cb47a9aa7fab3f117a",
+        "de": "cf2654703c5331e058dab4cd08d64ce9458291c851d4c3b3263c9a8c9b7d6033",
+        "pt": "a4d40672f2bf7669455ab739fc0ba0e11db547965a1e5e82811fea96fcad25ea",
+        "zh": "eb6ebfad4bcf5c055f02963978e42bf8db7846321dbc6ac61b2212ca628f8a98"
+      }
+    },
+    {
+      "id": "day5_haeun_switch_yuna_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Yuna",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "firm"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "76709486bfc75a9b97ebd945fea6631da97becffc63ae71b01bf23a0d5c5a6d6",
+        "en": "e7272d17cd942d711e020e39fac84322eb290f6911755f6900155fb12cc3b80e",
+        "ja": "f8fd3342b9b595f2ac1b4dd100e609124a8130df4e32815f6dbc1082a925bc0c",
+        "es": "ab70aa3162d2c145c83df1590d60b0e6dd1f297a4a06414ae15e2f32f2bbd917",
+        "fr": "5c7ae88f326f5e69d531e5cf0bf1280fc6f35c7ced7df1a9c8e15947612198e2",
+        "de": "8327d74f17d19a0ce82bf11a65f04b4973b03313b833398174e0fd8c78eb23ae",
+        "pt": "761aa4b964dff3a69bdfa776f410e6ebe2feb7d9afbeccdc2e329fc61e73c172",
+        "zh": "f9c4b3363ec1d35378b663c790e1cc97efad01ffa6acfab1f61f71f96dd1851e"
+      }
+    },
+    {
+      "id": "day5_haeun_switch_dain_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Dain",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "angry"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "firm"
+        }
+      ],
+      "review": "corrected",
+      "textHashes": {
+        "ko": "22139e3c0804b723f1d4759343daf1e9afa3dbfe4fcf081538275b90fcb81fdb",
+        "en": "2be53783145ae79a9e743d0cc667b310b1b27f8ce529adb553f50289c43fda8b",
+        "ja": "d12583adc95f49abdc4ad6957c461e434d47d5b272a2371da2d5ae6ede4d76cb",
+        "es": "07e18e7d8ffd6c1ada8f015fbac4239dd86af16614a127f63527b161c7d9e2f9",
+        "fr": "a0c2a1a79532123a3384d4f5ff0be281594ea24d013537cc951f6e3ae42d7969",
+        "de": "b8feed98d821b8c885177540beb321d6da01e0f908da851040ad39f281da12d8",
+        "pt": "7dc7f6ea10e2f314070a372798aa4c23dba80d556894bc90388dd19489bdd77d",
+        "zh": "19a0395fa1066123753bb84490e14e7a6e884fc6cfc7bef74bbb7ebd9377a8b4"
+      }
+    },
+    {
+      "id": "day5_haeun_switch_teacher_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Teacher",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "firm"
+        }
+      ],
+      "review": "corrected",
+      "textHashes": {
+        "ko": "4cc31dab5a353fe2689a6d0a90c16256ed51c61ee5ccda2e7ba2f56f8d0c1fcc",
+        "en": "5cbdb68e0990bc0f9aef40dbf6f0752b39899a4ea2ef52414b3318f1568caa60",
+        "ja": "61d9e7232c0b58f79dbfb200154671fbf70eda362c37f681b65b2cc7d95808f5",
+        "es": "aabc9fd48b102f12dc5735e72d2e487276f0b3084630e1557babcd28d10b0b10",
+        "fr": "2a49a6c3e08245214cd43c57e378fb03ec20ce7373e583ebdb838fe8e08bf864",
+        "de": "30a06de49eb039116a979683425a4b77a20bcd1ee31b0bc73a52c376dd1e6567",
+        "pt": "5005e908eeafcf7f87c5bf2bad40be3c4c3372e0ca342f363ab3796560f6e159",
+        "zh": "6b9cb287218727449878c85428187c8bc83c8f2394c1014767afbba142ee0bb9"
+      }
+    },
+    {
+      "id": "day5_haeun_switch_nurse_group_talk",
+      "type": "group_free_talk",
+      "character": null,
+      "characters": null,
+      "participants": [
+        {
+          "id": "Nurse",
+          "role": "focus",
+          "side": "left",
+          "initialExpression": "worried"
+        },
+        {
+          "id": "Haeun",
+          "role": "companion",
+          "side": "right",
+          "initialExpression": "firm"
+        }
+      ],
+      "review": "retained",
+      "textHashes": {
+        "ko": "44810606fc5b3b54a14a51a21fe7373bde3c6ddede180198c0417ba9f14fe3f7",
+        "en": "bb4fd61b9ed93ee29bed01c91639f3be03c993aa60e8452e286c35a3b5c2d90a",
+        "ja": "2ce8946711dc510d93338804d1220e6495f87507796cff9d52b094c352a4d5f9",
+        "es": "fe06d1670eddfef06c2e188344d59d7b8b38c2cae0c916dc0dc7b021c909282e",
+        "fr": "10f1f628b8d403dfe6b6d313f0d760ae6915b29d0db05d4e59981278f6498516",
+        "de": "cbcef88319fd6ea674369c4b2b0911f43463611354f0972a59b6823d1ea03354",
+        "pt": "a1a816501dd0c7a4936bbe20d89a62cea7752d51c485baaa8aec9d1d6e28b454",
+        "zh": "0a2e5d2de7cf31608046ec0ca1aa8190e0ccbe7dcbfc224d0d329c1816ece418"
+      }
+    },
+    {
+      "id": "day5_seo_ending_freetalk_perfect",
+      "type": "free_talk",
+      "character": "assets/images/characters/seyoun_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "c9badacd32b4dd85eea8f05bcbad6ec3419b8949ce3646dec169b4a51e9233e1",
+        "en": "96ae418c999bc49f1a1417cad3794dc69209cfc2923f81fba183294c132a04a1",
+        "ja": "e1c668230b5942d5e35662ec83baa987e095376ff54ef725a2733f29a5432171",
+        "es": "fff808c12ed67b8c912398cd65eca99e27373c7a8bed86953bcee96bf69fd1ad",
+        "fr": "623e4e7ad003721a284062bb30542a8f04f958f351fdce432877c960df1184ea",
+        "de": "ee45d74cd8f8cb43866417a493cb91d013aa6aaf006b1f42615752fba2c6ef23",
+        "pt": "36f7c1d07ff57223b4cdb8d9d2711188519202d08e7045afd47bedd7c4d84bfc",
+        "zh": "0f80d5877bdb84a1a1db318458d24a5e484174da23da532c9066b97726dadd79"
+      }
+    },
+    {
+      "id": "day5_seo_ending_freetalk_true_love",
+      "type": "free_talk",
+      "character": "assets/images/characters/seyoun_shy.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "a5bf8738e94f08495ba5781dcce05d87a8536a8ecb1f340d87b7e764f33fe244",
+        "en": "26b3ecd7892dac42830e46c791124930c69146db7739534833cda867a8e72f01",
+        "ja": "a8129531504ed8f8f3d5ebb0d7231f7939fb20115795b3c53111238405a1b2ef",
+        "es": "563886be277b226242fe6429c2b397e78563716d9b357e9da8fa799c8f7e1f9d",
+        "fr": "3a9a45af70457974f34b25234b130c7a28cac38a3f14d745ba9fb5b414e0d456",
+        "de": "fc89cc8cb758268773aac8904c55c72e155a5aa71d864d3d0110b2e424409a9f",
+        "pt": "d480aaeb3d56c79a696c1356024f3eea1b358d08ac7f11fc96b40d633bd332cd",
+        "zh": "d95d6ca179f37df82e8f48e084d7e1a940657ad2c4a8abea28cd1cd754e8bb06"
+      }
+    },
+    {
+      "id": "day5_seo_ending_freetalk_good",
+      "type": "free_talk",
+      "character": "assets/images/characters/seyoun_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "612baab88a48dceae23cd29993b08219c2c9a9b3a25d94bef5e0e362f4d5fadc",
+        "en": "e19537c9ac0967b7fca6b2f76b17261964550a605c276977c2dfdf01f5febb12",
+        "ja": "e40041f42f12e88574341741ed2dbfce021aae1f2cfdce75849a6c542ec82bc8",
+        "es": "50170e96974544cb51555ef0e8df0e63abf86b0d1c3c564a88f207bb9c716bb0",
+        "fr": "0db3d2054c65fa4dc1ae7fcb4f604fe9afe83a820e668d2781c898c3b91c4d80",
+        "de": "631ae0f8bc938f4ccf0c50443010799bd24fdd2b0e087f5c9f02f0466367ca70",
+        "pt": "9f27ad892d66a08e378b1f72e7473793a8fdc1f03b8e0ad989a8153cbcf1b11a",
+        "zh": "41bd5a1d785701abb5f7828719a155c349e0e446caf6863e862af0ec5e664178"
+      }
+    },
+    {
+      "id": "day5_seo_ending_freetalk_bittersweet",
+      "type": "free_talk",
+      "character": "assets/images/characters/seyoun_sad.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "731b72b737c3f227cc883b34b245841603897f15aa20b54012ea1bf50a0447c3",
+        "en": "93ca844d679a8829255ead4e7dd866896a3e31bc8d8813082e6091f7dfa10f2d",
+        "ja": "1de818e9fd275a0683f93b01a4513399f6d675d7f8766e5fc755a5e3f7e3ee98",
+        "es": "ab885b9e9df07f793ba9c1b563657e85287a8f86c29b34f378fe725ba5dfe552",
+        "fr": "061454cdbfcf822b152bdc226ab798deb622733ef21be1d4c76194d18307ed65",
+        "de": "8cd3caad916a2752e23179ccc2edeb1163e409f4b98b6fc081e3a536c9d992e3",
+        "pt": "46433e40b8b26c0fbce29390c852007daa0e73dac067638d98d579b02a27f403",
+        "zh": "8b38224c700adc51e6a2867c3c3c360a713acaa0471dda4df76d0153ae177588"
+      }
+    },
+    {
+      "id": "day5_seo_ending_freetalk_late_good",
+      "type": "free_talk",
+      "character": "assets/images/characters/seyoun_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "corrected",
+      "textHashes": {
+        "ko": "e8c7cd28358682a777d22fe8d8a2831435994014983543fd5931c4b37e69569b",
+        "en": "4935e6d6a8468f5583dbd02012d68bdc34e409d0f2d380612532c101b96cb7d6",
+        "ja": "724768fa6613a1b1e2e8ca9063d64073a8efcdb71fdd8997897633e0fd4c4846",
+        "es": "b2c64c230c1b50e18a3638319483a44bbe709d55fe938169a7d7182a4721a3e6",
+        "fr": "bb9a9ef3db072fbbd6460ef1cc0864e2808a8c34018326e90ee0175035836b27",
+        "de": "b3670949088d3cc81ce8fd7ab33fc7722b778c1b9f303141662b54ff30a70844",
+        "pt": "2747e306667dedf3acdb6585c8c692d9bd8cfa4dbd445d788c9c3255dcc7ec7d",
+        "zh": "5b0514c8275b554269f5cfc65cc53460945d3431aa109470811dc4637ae08c16"
+      }
+    },
+    {
+      "id": "day5_yuna_ending_freetalk_perfect",
+      "type": "free_talk",
+      "character": "assets/images/characters/yuna_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "542ad5d6b1790462f6538358fc64c5ee6ccd4f72acec5145775a5a3b283ac8f0",
+        "en": "3df6b68f0e5025c5e83406d4e0c19f3db8a6394f7f848215e5f9103e9ef17d1d",
+        "ja": "f1d710d660f68237831c2747a7552a982d16e7e5776c2f8cbe5924e283b79c7b",
+        "es": "208ff230f3dfaf55d2452e3a1d68262fafd08b208a9d963525958f563657287c",
+        "fr": "d90f32fc7d8671e53559d94cdda430157e2cd3a9aa144d78598405ddbb03dcd7",
+        "de": "5e3a28c846acfed4e3e84cf6ea85dd31c8bc36088202d907db661b969b39733f",
+        "pt": "a0e057ea2b9eb880aaca897a8deee98b294efc6536d2c755e880e41920257296",
+        "zh": "50e27e2c5571a54fbd741cad8c9f4deb088e290b14ab17faf26feaf9a0cf9ddf"
+      }
+    },
+    {
+      "id": "day5_yuna_ending_freetalk_true_love",
+      "type": "free_talk",
+      "character": "assets/images/characters/yuna_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "7026222ac4243feb2f14ab9924037b75f5ef48235bbea106caa425614648787c",
+        "en": "687611d2868a0c42ebd88e3eec020e3eaf2beeb4bdbcf3e2c1f67674d65c38ec",
+        "ja": "81d732127c8bcb357fcee180d7d559d4c021e649092f429af5329a0d41bd7333",
+        "es": "7fbf387e91d2476d97660a23fdcdf7623dc908bf54cd3691a150a1e436e8771a",
+        "fr": "24f0dca2c62931546908c7620968920a0e7a8895fdf5f9e0eb5a90e74a9ef160",
+        "de": "b3a29582e1d4706a4bda919beb9f1a7de0c55c9ad9fdb482c8d810c8f4ed94e7",
+        "pt": "361e4488aced87d2af7afce4faf2037f442c3f7fadc5dcb487a071eb70cceb72",
+        "zh": "661143b16ff80918dd66e705ff490cfcf9bc39aeca9fe4b62db6e86031d542d9"
+      }
+    },
+    {
+      "id": "day5_yuna_ending_freetalk_good",
+      "type": "free_talk",
+      "character": "assets/images/characters/yuna_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "8766cb74a375b4aac30afb388a6bb9b2beeeb67baa28548cedb74a1fc39466a8",
+        "en": "0d5608535102636ef54bd47ceda6fa7f34967cd8fc801e6f6ae6cb43dad5b953",
+        "ja": "862b305d85675075ea8b424fbe831ae01186d52d7a0c0eaa69dea4e94848e9e7",
+        "es": "a41ec72bef44a8ea857cc6405d0b45583a6478ec2251fe67864d1d842ed93676",
+        "fr": "1cf66e1dda6a7c49f5c7e12b918d39101e825183609749d0ca478280a458d3db",
+        "de": "f7be4fe369a918b690c50b84a5fa6b1661e25c31762b7acc52afed8822fb4f58",
+        "pt": "785476ed64bc07840e62c32b550525af3f4d6fbf786da5928463ea520fdeccb6",
+        "zh": "d32f4f0f7b2af4cca6fde45a85323590a55a4330fb9fa6b39dff43a87d04d76b"
+      }
+    },
+    {
+      "id": "day5_yuna_ending_freetalk_bittersweet",
+      "type": "free_talk",
+      "character": "assets/images/characters/yuna_sad.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "1145aaf4cc1ec9d925b0fe1e525b01b7d79b9e9740c7358b4ea66a33274beec1",
+        "en": "b27fbd7595d5427b3a8ac8c76f1a46e297950018ebf6b8ccc8f2db4c1fa7acbf",
+        "ja": "a5ee8cb408fdde6ef2a6e0cc3a8ea7ca2d00051e4eda08e231a9c289a2f0ca5a",
+        "es": "6171b4e1ba99befed86d91f83b2ab4c812bd249e9e6d95e3078c7813f13071af",
+        "fr": "8eedaef73975c8329e3d98c8d67fc96ee47c08581bbe4408195e80aa5ac8d5a5",
+        "de": "1fae15107db75d42aa4d129696f7b3cf101f8528d5cd0bb79f414e0f62946a70",
+        "pt": "43b382ef9f90d30b21cf117df6793f26801234770878cec9f02a0dd404e4118c",
+        "zh": "998631698328841152574d2ad38b41df238cc7c55ef64e8f305b835f3c305572"
+      }
+    },
+    {
+      "id": "day5_yuna_ending_freetalk_late_good",
+      "type": "free_talk",
+      "character": "assets/images/characters/yuna_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "174b5400aee88944beed4851ab161ba5c4318d3a6bb104788864b36068caceaa",
+        "en": "6bb2daa2604ad3093df4026751cc8fbf91a9b131e9a48c8047871aa291a4316f",
+        "ja": "100dea28319c8bd3306785e2678cd87cfc48c4d2ec6f6b29a22616a657474ffc",
+        "es": "ab83eaddcb6f19af7112815f913a8f60eab0600643c086f447661c3c74f18a63",
+        "fr": "b5837ba2fc3641d3e9afd3167e5f08ba7b138af7468ad562ea2da3f44991534d",
+        "de": "19d370d7cecd2ea9ef20626532cf6acd30094106356ae036dde6c9f1999cef40",
+        "pt": "bdd62b82fa0119c0d391906b3d459d1796c0b82840d3fda13bab7fed42cc51e5",
+        "zh": "462d2f5dbb7edcf5f82f6431494a0ca18cbaa1f0ccea4630edbdde09b5988aab"
+      }
+    },
+    {
+      "id": "day5_dain_ending_freetalk_perfect",
+      "type": "free_talk",
+      "character": "assets/images/characters/dain_laugh.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "f4916df585f05cbf2895967218980bd5c31143ea92f6dbcce42c74077d3cd284",
+        "en": "c2bd474906746ccbf6634b43d7fba26e4185cf5b6e237ec76a4a958a5e8756cf",
+        "ja": "1bfeb32d9aa56af686078956f31d4c4a0e9d7a13750b8e4a5b2f22e5f964b354",
+        "es": "d091be46f532d4ba88449fbc20feec69fb4dab148075f9be09045e3b18b1d2cc",
+        "fr": "34b3a6efafdb8cf9273bc6188d8f6a5eaaaad21bb83319a47aa8d3b45e2e1963",
+        "de": "cc8c3d8627a44567ad52ba82dfad93dcf244eebc119666426892c4adebbf3348",
+        "pt": "e6c157f2062b94ee34721c07fc65f9a29281ad34353d7c8d105e2bd49c56168a",
+        "zh": "860f30ea409340ae0a824c6387b01b1949bd580e5ab304122a67afd82c722a28"
+      }
+    },
+    {
+      "id": "day5_dain_ending_freetalk_true_love",
+      "type": "free_talk",
+      "character": "assets/images/characters/dain_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "corrected",
+      "textHashes": {
+        "ko": "404441e6609b8d4a438c0981fbadb72d3984db14a7b0d4fb9f129cd2b7518616",
+        "en": "dce4697dcde52a7318c02225093c001e0789bc8df52fe3bf55345abce80b1e85",
+        "ja": "b3aca9f3b86438a38d9897ebc9eef234ce57b25cb70fdbfd5fd510c3268cce24",
+        "es": "a2d0507f64a9f4ccde2931dcdf09956c2ef15aa70fd9e1e908ea966e2813bbbd",
+        "fr": "d732f63fddc90af46a0105527999b4eccf3c067fb669ef078aa8c0dba554b72b",
+        "de": "76c34ee5b9fd1c59d734dac7ad7dc24cc6a894d2d5f4ae1108dfc28b3d78a6df",
+        "pt": "27be10fddc9e16c0655116260088cb070a519dc254ccbe47c2fa671fe9b87352",
+        "zh": "da6e8e703bb6c2c08c08f8575ed3cadc38859bbdca503f25dfbb2f93fb5940fe"
+      }
+    },
+    {
+      "id": "day5_dain_ending_freetalk_good",
+      "type": "free_talk",
+      "character": "assets/images/characters/dain_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "0f3ad28a5deee67d5321685a9c714db12d722c4277c4789aa0de5cfcb3ec707e",
+        "en": "184936e5a65f880757699ba5c994f8cdccc6fd5133eefca88a0a2d132b2825ac",
+        "ja": "3ff12b2f1f201b6cf5472ea4249f848cb0355a8248a0bca712c68ae5c556eadd",
+        "es": "1c22a8a05fd1c8c8676789712ba4d6192b1cceb2eadff7ac02c5dc08fae3f3fc",
+        "fr": "4384045a569f2393ef9316f5c3dc4d16cf42872ff490bd085a6bded46a8965a6",
+        "de": "6e6bf8626fd388f3558b1d20990f944a9b0d55ce1ad729b809db9d28d6d02a97",
+        "pt": "9e7fbfd70164bb8cc939c20b9ee83df38cd816a6cd54e9643535926eaced755a",
+        "zh": "293de2a4fdc827d5b3d731781d96206984dfccc38c8aea6b67b27ebbe7cacd69"
+      }
+    },
+    {
+      "id": "day5_dain_ending_freetalk_bittersweet",
+      "type": "free_talk",
+      "character": "assets/images/characters/dain_sad.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "ab38394ed58ce9ef367e9c5e72dfbd28d53c545813a9ed834bf16cc2ac034957",
+        "en": "308b91be221fcb651e252e82c7d9ad2b62bcdcd3b88da8d57c9e98f4eee7eb21",
+        "ja": "d194124b58f6c81750a076fa49074eef72e8d31d7f3594634fc14412987cda48",
+        "es": "ae98d144373699ba60a0feb1b78f1b321c6494fcca2a75d1b16c12425ce71b1d",
+        "fr": "769b48156af51a5aa39bfa6f897f716efaa3ab54ac368632065ad8a16d3a34ab",
+        "de": "2b23795b7e5730c962febc232e6a6f433267775b1178e7ed4cc5d505cca8b261",
+        "pt": "38a653120c030d1c4e98c3adc4c7155848e79c6c3e7654bb35f6033e67986c5e",
+        "zh": "7ac9e9f03c6ff940deb3a695dad89f8d9239fc8454282f38a97d7249b098f846"
+      }
+    },
+    {
+      "id": "day5_dain_ending_freetalk_late_good",
+      "type": "free_talk",
+      "character": "assets/images/characters/dain_laugh.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "72e3ea8586351d2dd47a979cbb3880e58486ac485a8b190a4250bb1de3b2e11f",
+        "en": "e8f407d55793cf4c0eeda00b27ccc8e45c38cbea9b17588f96d9a1cf597aa25a",
+        "ja": "414bf1cd2aa3bf4ea5d5803c48458f5db6debe8c31aafe099e3153baa3f775db",
+        "es": "271c6f76428a9b9afbd05c67db4c750a520d7a9602c2499675bee28de13cdb82",
+        "fr": "9677d7f796320d8a44c7a5089f0fb73fd992dcb6b36694598901284a1c214e1a",
+        "de": "d10bb56638b13fe888acbae92d37fce1264b07c0f3c9cfb6f230254bb2f6f72f",
+        "pt": "5c54efa48d772a2798cf702c36b1e71753309b6ff24c515e88f35e7e1bdd8c67",
+        "zh": "052e0c01d2b0ee9fcb089471bb1dc6c31076a4d4ade16822a1e9426d091f084f"
+      }
+    },
+    {
+      "id": "day5_teacher_ending_freetalk_perfect",
+      "type": "free_talk",
+      "character": "assets/images/characters/teacher_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "dba23dccab77859d3542454a47e48fad8dd89b172f7d6fdead0e55cd7eeb00d4",
+        "en": "57434c2d0bcb3f9591ebe86263df57f954a0e7b999552e7b14de1565c80e949a",
+        "ja": "3d718168698300f94c9d863141a7d290a11935d87e2f48bb939df376d1bad395",
+        "es": "ede7d7df4f33d296862ad97d5468b716c67f60110643076fb75916ee5c2ca13e",
+        "fr": "75cf0339506294c5bf4cd97a0b1aeecf80403c0bd707c7b8970882bfdf58e01b",
+        "de": "42ff369ec6c109327cff4e255d8e0d4e68858d18cd08434754f9f1e788dd86ee",
+        "pt": "df523151e161e7992004964797d7c336958115a44d086433753619652f609bc2",
+        "zh": "2959f69f9185211c3690db2976261ac84ce689e9cc2e06c9d3804abe5aaa618d"
+      }
+    },
+    {
+      "id": "day5_teacher_ending_freetalk_true_love",
+      "type": "free_talk",
+      "character": "assets/images/characters/teacher_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "438d9d47b11b7d1fefacd12854e661adf7cf32e747174a675f05881c4219816f",
+        "en": "dd5b56b1a151448f209116f2c7d3ae3b29fab1cfeb073edb51af65fa7d275246",
+        "ja": "93c80fe2a1d1aa32299819e03a6c83aec0d25eed8cc7cc0f03aebb3b79ce3d62",
+        "es": "69eec8ed96c0bb24cb699f29a23e288c7981dea4bbbc484a5dee39e0d1dd798a",
+        "fr": "6efc7f79726527096d226b1985c0e607fecabcae30279cebfda655604e4b820b",
+        "de": "477955f89ace49943d766bbc518b900a71d1b142dbc5c9121e5a7b92279d3798",
+        "pt": "9f29c600cc4666897bbb95a2abe2c156792dfcab7a46cd751bb5f33871235238",
+        "zh": "eabd1a7faaabdb133e660c5902f1e92a4b15ac83c0e8dbf159d6b002107e8d21"
+      }
+    },
+    {
+      "id": "day5_teacher_ending_freetalk_good",
+      "type": "free_talk",
+      "character": "assets/images/characters/teacher_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "daf67ef0d7cd2594cdf991a97b9f0518b3269343966eeee68aadb4473557160d",
+        "en": "bb204cbf2ed4f1298eaefddcc037fdc12d2f3a30c230ee5343230d21c6c6507e",
+        "ja": "3ed84317ef16113995d9db277bf62c693865f18ca0d08af94a87ed304d23d2dc",
+        "es": "72bacb6967bd18db910f1af6818e21195b70e29de7d29e809c287e2b3f97b3da",
+        "fr": "27a59f99221c0befc94ac6fac83ded674bccd6b643f8a4ceac483d2cef3b7659",
+        "de": "3a2d8e04a1523e62eeec679ff87f9e309460466acfa6d332074ee1070ab732db",
+        "pt": "a3b944ba1ef4c05d9d3e72b97cd38cd0f2ec453fd391000dc141a6384ad95e1b",
+        "zh": "91e032bed69f6a35009f02efa55375373108a3ba637acfed9da9580fc2042bbf"
+      }
+    },
+    {
+      "id": "day5_teacher_ending_freetalk_bittersweet",
+      "type": "free_talk",
+      "character": "assets/images/characters/teacher_sad.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "1c7088370caeb1f6e25549461b48cbe7848b3d6973e8c4f3b19a62e1fb8cbc08",
+        "en": "121fef11b34da6e839648b8d782aee8bc8f71053ab4ce3ed7a9957eeb8e62d73",
+        "ja": "617d2cdfca873b2eaecc294e57b64d1053e361087ea5535aa399ba8f2a43693a",
+        "es": "916f4faced7d33200b3648839457dea35569bf66914752835f879dd3aaaa247d",
+        "fr": "f8a8f77510c0eca1502cfaa37e3ac64b7f5c84f66332027c310dab68fed4de47",
+        "de": "06abd7d90068f557b57bdb95196dc1429fabfe5fc6d18c8db13fb638619207fb",
+        "pt": "69d8cc468166b28a54c01898e3be80aff73963af4a7eb148798af67daf00b23f",
+        "zh": "7b033efede972c30bd272bc30a2ab6742788160a113e5761e9cc0e57c37a1a61"
+      }
+    },
+    {
+      "id": "day5_nurse_ending_freetalk_perfect",
+      "type": "free_talk",
+      "character": "assets/images/characters/nurse_home_smile.webp",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "625ffe27334451743f6fae00ea4c810eab02fda750f41f692f8a1f32f4862c42",
+        "en": "343550918f30a102686d9d2782b6e240112375656c4fae579bf13d36f5595721",
+        "ja": "33d1d03c8f0012a3bedf7394ae143953cdbbe5d147349048376aaa4e49ec4fb7",
+        "es": "47591cfebe216eab75f298fbd5de34360797758779a25bcf45e624c21ace2cac",
+        "fr": "7fccf3082bb8f382d7fadd68bc8a40c341bd1426c1e44f5307dca5ce8c28238b",
+        "de": "2cbf82828803b69b20fcef00fe8321c5ed6cfd0a740d3b94012043ac9b11d203",
+        "pt": "d768bac76568ba222a4d24cada920d34929d04acd94e13dadfd28aa45f1e3874",
+        "zh": "4580550a4a55360d65dbc68af2dafed0949b67711532daa7511f2b098db8951e"
+      }
+    },
+    {
+      "id": "day5_nurse_ending_freetalk_true_love",
+      "type": "free_talk",
+      "character": "assets/images/characters/nurse_home_smile.webp",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "2a8236aacc4e9d799f1caf0396fbbe3474a0853817763cc99bc58a83726c9a5a",
+        "en": "2647a061b38c96284c74aded5c3cb12f02df1dd4e27cd704bce5335b8342893f",
+        "ja": "11fc0ecdc94cfdc09ae6460f0944ffe9b305e42ede308c9ddc70069f97814d31",
+        "es": "e5fd700a22c3951a1b42b445b01289994d1980df4efe723b37e445a4af666bfa",
+        "fr": "442cd5835d4c465b15f89b3cc302f9df1e96e96e280567847a865331467741d1",
+        "de": "f9b5160b6f8d4bbf60593a2d35216bedabf93e0622600f1b36626b80b978781c",
+        "pt": "7a4f545fd825b5eb7e17395a6916a953ba3a0c35ffae9ab08c2e6c0c9168a79b",
+        "zh": "2a7e5b13aa704506d289ac68bcf76c11de5e76154048fbb9146e6540ab5ceef0"
+      }
+    },
+    {
+      "id": "day5_nurse_ending_freetalk_good",
+      "type": "free_talk",
+      "character": "assets/images/characters/nurse_soft_smile.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "79783e354602672019acac54f3314119c156b59d41777055882b8d76f36b3430",
+        "en": "5ff7b24625126f8fb394f2b6f0d0a21f1ed76a5d195de005fdd1320798341458",
+        "ja": "cf064dae97940f61540159532368b0e4a89b2ca484ddaaa9ad7f87a7db0328ce",
+        "es": "6741387418862f8a32764e64faffdcc473763b6a673cf4ff34906e9925588812",
+        "fr": "0649d63d3112403486c9a7642fa5f4ec4d04ded42d2355f714d7e0e05d002a9a",
+        "de": "3b8ad5ab7565c4f7a0c4b3289570ea44a4d690a44991cedfcf2eb16cb307bb0b",
+        "pt": "a7eb1181b69489e701de7b6f0efffb1f0f55d651641b2f663c794494e5999df5",
+        "zh": "5493a149eb3e2b5ad3c0a6260e937a19e7ef0af181a04976a507fd9384957830"
+      }
+    },
+    {
+      "id": "day5_nurse_ending_freetalk_bittersweet",
+      "type": "free_talk",
+      "character": "assets/images/characters/nurse_sad.png",
+      "characters": null,
+      "participants": null,
+      "review": "retained",
+      "textHashes": {
+        "ko": "2be706249291ddd312a8681773a7c5942a5e6c0f9f530d894917694fe9238b47",
+        "en": "38a4b2c66a867c05ed25fd7180eee2028081975657f17bdfaee7aad7b24c729c",
+        "ja": "c134128909c91510272acf02757feb80a5a118acb85aa30aaf180bad3d310d85",
+        "es": "367ac6179ede4fd7520e19d8cf181f5c87dc6bd32acbfbd081cb340505791a1e",
+        "fr": "e4b00c8924e397fc697e06202a73d6eebde95c94a94a193715161876778c466e",
+        "de": "77dcb6bdf0084b82c785e3c3795ce3bd6568465af5ddf316179caad2852f4c93",
+        "pt": "4a6ff3017bdac28c3ce7324a649db47c0798f12eef8a95e8d825be6c56e3ddd9",
+        "zh": "f2d0721550594548125971f29dfeef9f0491863f0d4db46df50ff9567a1e9101"
+      }
+    }
+  ],
+  "verification": {
+    "build": "npm run build passed; 472 public runtime files.",
+    "fullSuite": "npm test passed, including scenario sync, Korean text, all-locale validation, deterministic endings, scene asset audit and four new expression regression tests.",
+    "cache": "npm run cache:check passed after runtime, scenario, test and build changes; final documentation check repeated before commit.",
+    "browser": "4 Playwright tests passed: ko/en at 390x900 and 1440x900; four representative scenes each, actual image decode, opening input and turn count verified.",
+    "visual": "8 before/after Chromium screenshots are byte-identical with only portrait img elements made invisible. UI, text, backgrounds and layout remain visible in the comparison. Actual new portraits inspected separately.",
+    "reviewArtifacts": "Ignored tmp/scene-expression-review/ retains logs, artwork contact sheet and full before/after screenshots.",
+    "production": "Publish main through Cloudflare Pages Git integration; verify deployed files against dist after push."
+  }
+}

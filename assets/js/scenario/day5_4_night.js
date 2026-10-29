@@ -656,12 +656,12 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_homeroom_3_c": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_shy.png",
         "next": "hidden_true_homeroom_4"
     },
     "hidden_true_homeroom_4": {
         "background": "assets/images/background/bookstore.png",
-        "character": "assets/images/characters/teacher_normal.png",
+        "character": "assets/images/characters/teacher_soft_smile.png",
         "next": "hidden_true_homeroom_4_b"
     },
     "hidden_true_homeroom_4_b": {
@@ -716,7 +716,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_homeroom_6": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/teacher_shy.png",
+        "character": "assets/images/characters/teacher_smile.png",
         "next": "hidden_true_homeroom_6_b"
     },
     "hidden_true_homeroom_6_b": {
@@ -1067,7 +1067,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "hidden_true_nurse_5_f": {
         "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/nurse_normal.png",
+        "character": "assets/images/characters/nurse_shy.png",
         "next": "hidden_true_nurse_6"
     },
     "hidden_true_nurse_6": {
@@ -2690,7 +2690,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_seo_ending_freetalk_late_good": {
         "background": "assets/images/background/park.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,
@@ -2786,7 +2786,7 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "day5_dain_ending_freetalk_true_love": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
+        "character": "assets/images/characters/dain_smile.png",
         "type": "free_talk",
         "affinityLocked": true,
         "maxTurns": 5,

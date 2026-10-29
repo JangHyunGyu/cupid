@@ -401,7 +401,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "after3_seo_5_b": {
         "background": "assets/images/background/student_room.png",
-        "character": "assets/images/characters/seyoun_normal.png",
+        "character": "assets/images/characters/seyoun_sad.png",
         "next": "after3_seo_6"
     },
     "after3_seo_6": {
@@ -1178,12 +1178,12 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     },
     "after3_dain_choice1_react": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
+        "character": "assets/images/characters/dain_relieved.png",
         "next": "after3_dain_choice1_react2"
     },
     "after3_dain_choice1_react2": {
         "background": "assets/images/background/gym.png",
-        "character": "assets/images/characters/dain_shy.png",
+        "character": "assets/images/characters/dain_relieved.png",
         "next": "after3_dain_choice1_react3"
     },
     "after3_dain_choice1_react3": {

@@ -672,7 +672,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_dain_shop_2_b": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_date_normal.webp",
+        "character": "assets/images/characters/dain_date_shy.webp",
         "next": "date_dain_shop_3"
     },
     "date_dain_shop_3": {
@@ -816,7 +816,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_dain_low": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_date_normal.webp",
+        "character": "assets/images/characters/dain_date_sad.webp",
         "setFlags": [
             "day4_waited",
             "day4_distance_dain"
