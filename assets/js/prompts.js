@@ -431,6 +431,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sob: 'assets/images/characters/seyoun_sob.png',
         scream: 'assets/images/characters/seyoun_scream.png',
         choking: 'assets/images/characters/seyoun_choking.png',
+        dead: 'assets/images/characters/seyoun_dead.png',
         exhausted: 'assets/images/characters/seyoun_exhausted.png'
     }),
     Yuna: Object.freeze({
@@ -463,6 +464,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sob: 'assets/images/characters/yuna_sob.png',
         scream: 'assets/images/characters/yuna_scream.png',
         choking: 'assets/images/characters/yuna_choking.png',
+        dead: 'assets/images/characters/yuna_dead.png',
         exhausted: 'assets/images/characters/yuna_exhausted.png'
     }),
     Dain: Object.freeze({
@@ -496,6 +498,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sob: 'assets/images/characters/dain_sob.png',
         scream: 'assets/images/characters/dain_scream.png',
         choking: 'assets/images/characters/dain_choking.png',
+        dead: 'assets/images/characters/dain_dead.png',
         exhausted: 'assets/images/characters/dain_exhausted.png'
     }),
     Teacher: Object.freeze({
@@ -527,6 +530,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sob: 'assets/images/characters/teacher_sob.png',
         scream: 'assets/images/characters/teacher_scream.png',
         choking: 'assets/images/characters/teacher_choking.png',
+        dead: 'assets/images/characters/teacher_dead.png',
         exhausted: 'assets/images/characters/teacher_exhausted.png'
     }),
     Nurse: Object.freeze({
@@ -560,6 +564,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sob: 'assets/images/characters/nurse_sob.png',
         scream: 'assets/images/characters/nurse_scream.png',
         choking: 'assets/images/characters/nurse_choking.png',
+        dead: 'assets/images/characters/nurse_dead.png',
         exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
     Haeun: Object.freeze({
@@ -591,6 +596,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sob: 'assets/images/characters/haeun_sob.png',
         scream: 'assets/images/characters/haeun_scream.png',
         choking: 'assets/images/characters/haeun_choking.png',
+        dead: 'assets/images/characters/haeun_dead.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
@@ -607,6 +613,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         sob: 'assets/images/characters/minsu_sob.png',
         scream: 'assets/images/characters/minsu_scream.png',
         choking: 'assets/images/characters/minsu_choking.png',
+        dead: 'assets/images/characters/minsu_dead.png',
         cry: 'assets/images/characters/minsu_cry.png',
         pain: 'assets/images/characters/minsu_pain.png',
         climax: 'assets/images/characters/minsu_climax.png',
@@ -2836,5 +2843,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.86';
+const PROMPT_VERSION = '2.7.87';
 window.PROMPT_VERSION = PROMPT_VERSION;

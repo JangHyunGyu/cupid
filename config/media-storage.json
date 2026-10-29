@@ -3920,18 +3920,18 @@
     "size": 160382
   },
   "assets/images/characters/dain_scream.png": {
-    "sourceHash": "8253ee04d416d0161518086a38f3a45e579cfd31612bfafbd1b9f46312aabc26",
-    "key": "images/a516ebfe51a95bf8d95838b5aa836ee98c5070af4723590252dabace982aeff2.png",
-    "sha256": "a516ebfe51a95bf8d95838b5aa836ee98c5070af4723590252dabace982aeff2",
-    "etag": "e70a7ff92a6b3dc9723e30c00bbe27e0",
-    "size": 1184531
+    "sourceHash": "0cd80aac78af5471fee7a905c65cf96a9454d57844c38c79d438faa575d8f123",
+    "key": "images/e1117482c9d1632bc9f2962b5e8da353f0deecc7b7212f89de51a458b3adafeb.png",
+    "sha256": "e1117482c9d1632bc9f2962b5e8da353f0deecc7b7212f89de51a458b3adafeb",
+    "etag": "0f61728285292af223efc476e6d255c3",
+    "size": 1192848
   },
   "assets/images/characters/dain_scream.webp": {
-    "sourceHash": "8d81edaab33e95b71521180fb8b7e00674de5d15b23bdb23b98d92f2038b6d59",
-    "key": "images/f4a42bb875013a71c3a91fe7404f6773f750d3d8be986f5f7873eb44984ecab2.webp",
-    "sha256": "f4a42bb875013a71c3a91fe7404f6773f750d3d8be986f5f7873eb44984ecab2",
-    "etag": "6acfe22c40cc9833b1da12b5d8f05e00",
-    "size": 162454
+    "sourceHash": "26f62c85774a8404ee060a1c4dd5fcce4cf237f8ff6eda40a87a8bf496be28d7",
+    "key": "images/90780e35f474b5573052eb4357a990a32cb80ea6a25ad91dc1706ee786beede4.webp",
+    "sha256": "90780e35f474b5573052eb4357a990a32cb80ea6a25ad91dc1706ee786beede4",
+    "etag": "46cc71b598fd5a4b0ba8573c683bce2c",
+    "size": 160964
   },
   "assets/images/characters/dain_choking.png": {
     "sourceHash": "9e17da6399ae417a7df8cb36e31a7407e59896b12b34144d98ca7879c7094044",
@@ -4268,5 +4268,103 @@
     "sha256": "921bccc2ca8f646921769c683090eab790178bac9e8ffa75b0695417f83278e9",
     "etag": "58d0b8b60f31670451d1ec98a126c6bc",
     "size": 124276
+  },
+  "assets/images/characters/minsu_dead.png": {
+    "sourceHash": "20933e6fe231e3fae857f431140da7c14c7f37f56e6bc673ab8c9a748b4b885a",
+    "key": "images/e36e34639d30e5096fe771018e03cc40b0df0f633305defab6a161f10a204c4b.png",
+    "sha256": "e36e34639d30e5096fe771018e03cc40b0df0f633305defab6a161f10a204c4b",
+    "etag": "0cd5898af57dae0ec4f90d2c18e97779",
+    "size": 1341447
+  },
+  "assets/images/characters/minsu_dead.webp": {
+    "sourceHash": "18ac6466d87735333a979d51e6ca76919a13bcf707f98aa99f4f4b3db504a10f",
+    "key": "images/4212091574c65bc07b66b99a52ec907ff0c65435d1f98e90cad5bcc45fa819c9.webp",
+    "sha256": "4212091574c65bc07b66b99a52ec907ff0c65435d1f98e90cad5bcc45fa819c9",
+    "etag": "0c1c81d0e09e3783a3d95b1afe2a7afb",
+    "size": 127274
+  },
+  "assets/images/characters/seyoun_dead.png": {
+    "sourceHash": "577abb6e27c4bcd56a667214b00c73be312e84f3b0f965f22b2bbb687e6821c8",
+    "key": "images/740412dd31d35cedfb08102444937d5b2ed36030477dd2cb5004ae23b7f43e18.png",
+    "sha256": "740412dd31d35cedfb08102444937d5b2ed36030477dd2cb5004ae23b7f43e18",
+    "etag": "440a060aa734e3e2fb29c6a14f31ac58",
+    "size": 1363002
+  },
+  "assets/images/characters/seyoun_dead.webp": {
+    "sourceHash": "5dfd28eca76cedfaf12be35b0e7daaa77a7f2bd615cb17973e2797d117635a7d",
+    "key": "images/5bd37ae55b46175d4cbec820c65c88fc502bd52f5eff1dfe4b9c70bd10b91610.webp",
+    "sha256": "5bd37ae55b46175d4cbec820c65c88fc502bd52f5eff1dfe4b9c70bd10b91610",
+    "etag": "61f5e09c9454ab5f22dd827a097db2ed",
+    "size": 156584
+  },
+  "assets/images/characters/yuna_dead.png": {
+    "sourceHash": "52fdabd304a7209b705df35f8f302f9f545ed0da2f2f71747c8a02f6b0f40475",
+    "key": "images/f096a9ea4770aa16d3e337176fdb27f085fbaa896d786bd459041cd8d5a11fce.png",
+    "sha256": "f096a9ea4770aa16d3e337176fdb27f085fbaa896d786bd459041cd8d5a11fce",
+    "etag": "25841802b271e80d5592aaa67a95eee9",
+    "size": 1532911
+  },
+  "assets/images/characters/yuna_dead.webp": {
+    "sourceHash": "762aa2b93e0eac7c3acc7409edcd0283a54f1419ece00969ca782c859338eb37",
+    "key": "images/944d9ea235b2e6257247d97eb9f00c3cba98b51eb57b131cfd319244585e5364.webp",
+    "sha256": "944d9ea235b2e6257247d97eb9f00c3cba98b51eb57b131cfd319244585e5364",
+    "etag": "dd690fdb36f442bf97df13be4728e313",
+    "size": 169374
+  },
+  "assets/images/characters/dain_dead.png": {
+    "sourceHash": "d4e6564c3245b6a4f4ce6e602b51d25641923f9fb12eb779a4f35fa824ca3f09",
+    "key": "images/0123102ac0c4fc3247356952fe7698587f8e0d26fc7d5f28de5b1d5206cd94dd.png",
+    "sha256": "0123102ac0c4fc3247356952fe7698587f8e0d26fc7d5f28de5b1d5206cd94dd",
+    "etag": "43fb2cfd25482775fa313e4406e2d926",
+    "size": 1213679
+  },
+  "assets/images/characters/dain_dead.webp": {
+    "sourceHash": "41c66d6a6d4083fe180662b76c877d924db4fb27ce9e95bdeb33d82457a460c7",
+    "key": "images/b73e368a238c6aee09fdaeacfd0893eb3369b7033967b87e7b93732b54cf6df2.webp",
+    "sha256": "b73e368a238c6aee09fdaeacfd0893eb3369b7033967b87e7b93732b54cf6df2",
+    "etag": "4a87a3b39491ec4fcb5df058ddfbc565",
+    "size": 130544
+  },
+  "assets/images/characters/teacher_dead.png": {
+    "sourceHash": "bf942209222a5a556309299eed8275af5d6881189cf2c68f34c755b632e36d64",
+    "key": "images/bb7d52cfcb8541b34fe3cce7c13ce907158c947188e25e31dd6652a9561a01ad.png",
+    "sha256": "bb7d52cfcb8541b34fe3cce7c13ce907158c947188e25e31dd6652a9561a01ad",
+    "etag": "3e3e1505b1cb689b6b92aae72ef9a54a",
+    "size": 1507301
+  },
+  "assets/images/characters/teacher_dead.webp": {
+    "sourceHash": "bb7109f10850adf2979fd23c3860d7366bc8ec037ef75aaf98cbe3c7d3673198",
+    "key": "images/1dc4075f9cef6690e219a28de6bccf92453f7d98a44e6b3086edddba3d02cf98.webp",
+    "sha256": "1dc4075f9cef6690e219a28de6bccf92453f7d98a44e6b3086edddba3d02cf98",
+    "etag": "8ec5b0981132d712b7a0835a528a4f10",
+    "size": 150430
+  },
+  "assets/images/characters/nurse_dead.png": {
+    "sourceHash": "507fb3fc1f11bc2f2a8c43b1c5d24499a1fc50e4b1faf8522a4b3bdd468c3fb6",
+    "key": "images/e91c2accc9fe3961f6e9b341a22b3e05c4b1e0520cf345bdbb1d461f30a3f500.png",
+    "sha256": "e91c2accc9fe3961f6e9b341a22b3e05c4b1e0520cf345bdbb1d461f30a3f500",
+    "etag": "c51f493122605e04ba79ea7860a0822f",
+    "size": 1635842
+  },
+  "assets/images/characters/nurse_dead.webp": {
+    "sourceHash": "616c16afb17a7cde2fc5dedae467beba1520f23c333416bf0595ae041ce452da",
+    "key": "images/f348442f8025df28bb8fe5d4478ec0383821d29d38fb02ee0b2df6f4e4f761ea.webp",
+    "sha256": "f348442f8025df28bb8fe5d4478ec0383821d29d38fb02ee0b2df6f4e4f761ea",
+    "etag": "bf43ab8e0127c4d42cf44c281119ba2b",
+    "size": 162842
+  },
+  "assets/images/characters/haeun_dead.png": {
+    "sourceHash": "5e24bf1134ac174f4a764ae6af1cac4062aa43a5b3c6112b5eb8063a75733084",
+    "key": "images/3b0df8d9b4eab10e77e4ebdfdbf07f9feec72dae981aa579363379fc2a46e739.png",
+    "sha256": "3b0df8d9b4eab10e77e4ebdfdbf07f9feec72dae981aa579363379fc2a46e739",
+    "etag": "6fb9743d84563369904e302f45aa149c",
+    "size": 1152545
+  },
+  "assets/images/characters/haeun_dead.webp": {
+    "sourceHash": "34adf5920756a61a53b5529ed69b629ca7f73721d88fd022c5045fe104d08b5d",
+    "key": "images/c95dcdcad1fc1ed7bca6905ad2a247031f86209236848446769b108123eb8598.webp",
+    "sha256": "c95dcdcad1fc1ed7bca6905ad2a247031f86209236848446769b108123eb8598",
+    "etag": "7875d087cc316e8c2e818b1c7d6b394e",
+    "size": 116020
   }
 }

@@ -542,6 +542,33 @@
       }
     },
     {
+      "id": "dain/expressions/dead/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dead",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/dead/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_dead.png",
+            "assets/characters/dain/expressions/dead/01/sprite.png"
+          ],
+          "sha256": "d4e6564c3245b6a4f4ce6e602b51d25641923f9fb12eb779a4f35fa824ca3f09",
+          "bytes": 1213716
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_dead.webp",
+            "assets/characters/dain/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "41c66d6a6d4083fe180662b76c877d924db4fb27ce9e95bdeb33d82457a460c7",
+          "bytes": 130581
+        }
+      }
+    },
+    {
       "id": "dain/expressions/disgusted/01",
       "characterId": "dain",
       "role": "expression",
@@ -878,8 +905,8 @@
             "assets/images/characters/dain_scream.png",
             "assets/characters/dain/expressions/scream/01/sprite.png"
           ],
-          "sha256": "8253ee04d416d0161518086a38f3a45e579cfd31612bfafbd1b9f46312aabc26",
-          "bytes": 1184568
+          "sha256": "0cd80aac78af5471fee7a905c65cf96a9454d57844c38c79d438faa575d8f123",
+          "bytes": 1192885
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/scream/01/sprite.webp",
@@ -887,8 +914,8 @@
             "assets/images/characters/dain_scream.webp",
             "assets/characters/dain/expressions/scream/01/sprite.webp"
           ],
-          "sha256": "8d81edaab33e95b71521180fb8b7e00674de5d15b23bdb23b98d92f2038b6d59",
-          "bytes": 162491
+          "sha256": "26f62c85774a8404ee060a1c4dd5fcce4cf237f8ff6eda40a87a8bf496be28d7",
+          "bytes": 161001
         }
       }
     },
@@ -1624,6 +1651,33 @@
           ],
           "sha256": "a83610078a7abf0e4cc58bc56d168a07e3f1007bd2214b658e720ea6f3df4bb9",
           "bytes": 115881
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/dead/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "dead",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/dead/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_dead.png",
+            "assets/characters/haeun/expressions/dead/01/sprite.png"
+          ],
+          "sha256": "5e24bf1134ac174f4a764ae6af1cac4062aa43a5b3c6112b5eb8063a75733084",
+          "bytes": 1152582
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_dead.webp",
+            "assets/characters/haeun/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "34adf5920756a61a53b5529ed69b629ca7f73721d88fd022c5045fe104d08b5d",
+          "bytes": 116057
         }
       }
     },
@@ -2528,6 +2582,33 @@
       }
     },
     {
+      "id": "minsu/expressions/dead/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "dead",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/dead/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_dead.png",
+            "assets/characters/minsu/expressions/dead/01/sprite.png"
+          ],
+          "sha256": "20933e6fe231e3fae857f431140da7c14c7f37f56e6bc673ab8c9a748b4b885a",
+          "bytes": 1341484
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_dead.webp",
+            "assets/characters/minsu/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "18ac6466d87735333a979d51e6ca76919a13bcf707f98aa99f4f4b3db504a10f",
+          "bytes": 127311
+        }
+      }
+    },
+    {
       "id": "minsu/expressions/disgusted/01",
       "characterId": "minsu",
       "role": "expression",
@@ -3307,6 +3388,33 @@
           ],
           "sha256": "3a689bb1ba8fce6dbdd36b1d401ce933b3e8e9fd6f05ed6d7e94537ef7019e2c",
           "bytes": 166215
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/dead/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dead",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/dead/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_dead.png",
+            "assets/characters/nurse/expressions/dead/01/sprite.png"
+          ],
+          "sha256": "507fb3fc1f11bc2f2a8c43b1c5d24499a1fc50e4b1faf8522a4b3bdd468c3fb6",
+          "bytes": 1635879
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_dead.webp",
+            "assets/characters/nurse/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "616c16afb17a7cde2fc5dedae467beba1520f23c333416bf0595ae041ce452da",
+          "bytes": 162879
         }
       }
     },
@@ -4383,6 +4491,33 @@
           ],
           "sha256": "73f5f4ff69500d511e8254eeada768bc4d78c6d57b45992fe513de34fc52084e",
           "bytes": 154105
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/dead/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dead",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/dead/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dead.png",
+            "assets/characters/seoyeon/expressions/dead/01/sprite.png"
+          ],
+          "sha256": "577abb6e27c4bcd56a667214b00c73be312e84f3b0f965f22b2bbb687e6821c8",
+          "bytes": 1363039
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dead.webp",
+            "assets/characters/seoyeon/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "5dfd28eca76cedfaf12be35b0e7daaa77a7f2bd615cb17973e2797d117635a7d",
+          "bytes": 156621
         }
       }
     },
@@ -5715,6 +5850,33 @@
       }
     },
     {
+      "id": "teacher/expressions/dead/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "dead",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/dead/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_dead.png",
+            "assets/characters/teacher/expressions/dead/01/sprite.png"
+          ],
+          "sha256": "bf942209222a5a556309299eed8275af5d6881189cf2c68f34c755b632e36d64",
+          "bytes": 1507338
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_dead.webp",
+            "assets/characters/teacher/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "bb7109f10850adf2979fd23c3860d7366bc8ec037ef75aaf98cbe3c7d3673198",
+          "bytes": 150467
+        }
+      }
+    },
+    {
       "id": "teacher/expressions/disgusted/01",
       "characterId": "teacher",
       "role": "expression",
@@ -6737,6 +6899,33 @@
           ],
           "sha256": "0dfa7dd54c60b24c4c67a083311f4415976bf6623451df37d4fd42789dc0d605",
           "bytes": 204485
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/dead/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dead",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/dead/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_dead.png",
+            "assets/characters/yuna/expressions/dead/01/sprite.png"
+          ],
+          "sha256": "52fdabd304a7209b705df35f8f302f9f545ed0da2f2f71747c8a02f6b0f40475",
+          "bytes": 1532948
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_dead.webp",
+            "assets/characters/yuna/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "762aa2b93e0eac7c3acc7409edcd0283a54f1419ece00969ca782c859338eb37",
+          "bytes": 169411
         }
       }
     },

@@ -1136,6 +1136,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/dain_dead": {
+    "version": "3f795e5ebc625d1d2d3420af",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_dead.png",
+        "key": "images/0123102ac0c4fc3247356952fe7698587f8e0d26fc7d5f28de5b1d5206cd94dd.png",
+        "sha256": "0123102ac0c4fc3247356952fe7698587f8e0d26fc7d5f28de5b1d5206cd94dd",
+        "etag": "43fb2cfd25482775fa313e4406e2d926",
+        "size": 1213679
+      },
+      {
+        "path": "assets/images/characters/dain_dead.webp",
+        "key": "images/b73e368a238c6aee09fdaeacfd0893eb3369b7033967b87e7b93732b54cf6df2.webp",
+        "sha256": "b73e368a238c6aee09fdaeacfd0893eb3369b7033967b87e7b93732b54cf6df2",
+        "etag": "4a87a3b39491ec4fcb5df058ddfbc565",
+        "size": 130544
+      }
+    ]
+  },
   "characters/dain_disgusted": {
     "version": "08872bafc06d7be1ed376630",
     "files": [
@@ -1365,21 +1384,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_scream": {
-    "version": "f07a2cfece9f012d77e8354f",
+    "version": "57f2f4274a3bbb682de5eade",
     "files": [
       {
         "path": "assets/images/characters/dain_scream.png",
-        "key": "images/a516ebfe51a95bf8d95838b5aa836ee98c5070af4723590252dabace982aeff2.png",
-        "sha256": "a516ebfe51a95bf8d95838b5aa836ee98c5070af4723590252dabace982aeff2",
-        "etag": "e70a7ff92a6b3dc9723e30c00bbe27e0",
-        "size": 1184531
+        "key": "images/e1117482c9d1632bc9f2962b5e8da353f0deecc7b7212f89de51a458b3adafeb.png",
+        "sha256": "e1117482c9d1632bc9f2962b5e8da353f0deecc7b7212f89de51a458b3adafeb",
+        "etag": "0f61728285292af223efc476e6d255c3",
+        "size": 1192848
       },
       {
         "path": "assets/images/characters/dain_scream.webp",
-        "key": "images/f4a42bb875013a71c3a91fe7404f6773f750d3d8be986f5f7873eb44984ecab2.webp",
-        "sha256": "f4a42bb875013a71c3a91fe7404f6773f750d3d8be986f5f7873eb44984ecab2",
-        "etag": "6acfe22c40cc9833b1da12b5d8f05e00",
-        "size": 162454
+        "key": "images/90780e35f474b5573052eb4357a990a32cb80ea6a25ad91dc1706ee786beede4.webp",
+        "sha256": "90780e35f474b5573052eb4357a990a32cb80ea6a25ad91dc1706ee786beede4",
+        "etag": "46cc71b598fd5a4b0ba8573c683bce2c",
+        "size": 160964
       }
     ]
   },
@@ -1817,6 +1836,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "fba904f22f430e428d856aecedeff6f67bb366cbdfc74e6c9704dc1d66fc2de1",
         "etag": "fab13a7964eab9d74868a9c588d5c0da",
         "size": 115844
+      }
+    ]
+  },
+  "characters/haeun_dead": {
+    "version": "9e941c156cb408242c8107df",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_dead.png",
+        "key": "images/3b0df8d9b4eab10e77e4ebdfdbf07f9feec72dae981aa579363379fc2a46e739.png",
+        "sha256": "3b0df8d9b4eab10e77e4ebdfdbf07f9feec72dae981aa579363379fc2a46e739",
+        "etag": "6fb9743d84563369904e302f45aa149c",
+        "size": 1152545
+      },
+      {
+        "path": "assets/images/characters/haeun_dead.webp",
+        "key": "images/c95dcdcad1fc1ed7bca6905ad2a247031f86209236848446769b108123eb8598.webp",
+        "sha256": "c95dcdcad1fc1ed7bca6905ad2a247031f86209236848446769b108123eb8598",
+        "etag": "7875d087cc316e8c2e818b1c7d6b394e",
+        "size": 116020
       }
     ]
   },
@@ -2452,6 +2490,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_dead": {
+    "version": "480b0387aebdf794338d9e78",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_dead.png",
+        "key": "images/e36e34639d30e5096fe771018e03cc40b0df0f633305defab6a161f10a204c4b.png",
+        "sha256": "e36e34639d30e5096fe771018e03cc40b0df0f633305defab6a161f10a204c4b",
+        "etag": "0cd5898af57dae0ec4f90d2c18e97779",
+        "size": 1341447
+      },
+      {
+        "path": "assets/images/characters/minsu_dead.webp",
+        "key": "images/4212091574c65bc07b66b99a52ec907ff0c65435d1f98e90cad5bcc45fa819c9.webp",
+        "sha256": "4212091574c65bc07b66b99a52ec907ff0c65435d1f98e90cad5bcc45fa819c9",
+        "etag": "0c1c81d0e09e3783a3d95b1afe2a7afb",
+        "size": 127274
+      }
+    ]
+  },
   "characters/minsu_disgusted": {
     "version": "2ee36df04fe8852a0eb5186e",
     "files": [
@@ -3000,6 +3057,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "92f1cc20dcadff698a951494c271048153ef310790238881bcfbf7e342ecd006",
         "etag": "ccfd25ecc95b7a714cb1051cde520633",
         "size": 166178
+      }
+    ]
+  },
+  "characters/nurse_dead": {
+    "version": "fa758c0b5c843f6757c036ed",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_dead.png",
+        "key": "images/e91c2accc9fe3961f6e9b341a22b3e05c4b1e0520cf345bdbb1d461f30a3f500.png",
+        "sha256": "e91c2accc9fe3961f6e9b341a22b3e05c4b1e0520cf345bdbb1d461f30a3f500",
+        "etag": "c51f493122605e04ba79ea7860a0822f",
+        "size": 1635842
+      },
+      {
+        "path": "assets/images/characters/nurse_dead.webp",
+        "key": "images/f348442f8025df28bb8fe5d4478ec0383821d29d38fb02ee0b2df6f4e4f761ea.webp",
+        "sha256": "f348442f8025df28bb8fe5d4478ec0383821d29d38fb02ee0b2df6f4e4f761ea",
+        "etag": "bf43ab8e0127c4d42cf44c281119ba2b",
+        "size": 162842
       }
     ]
   },
@@ -3847,6 +3923,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/seyoun_dead": {
+    "version": "1b395e050ecce72d43b3fe4a",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_dead.png",
+        "key": "images/740412dd31d35cedfb08102444937d5b2ed36030477dd2cb5004ae23b7f43e18.png",
+        "sha256": "740412dd31d35cedfb08102444937d5b2ed36030477dd2cb5004ae23b7f43e18",
+        "etag": "440a060aa734e3e2fb29c6a14f31ac58",
+        "size": 1363002
+      },
+      {
+        "path": "assets/images/characters/seyoun_dead.webp",
+        "key": "images/5bd37ae55b46175d4cbec820c65c88fc502bd52f5eff1dfe4b9c70bd10b91610.webp",
+        "sha256": "5bd37ae55b46175d4cbec820c65c88fc502bd52f5eff1dfe4b9c70bd10b91610",
+        "etag": "61f5e09c9454ab5f22dd827a097db2ed",
+        "size": 156584
+      }
+    ]
+  },
   "characters/seyoun_disgusted": {
     "version": "a0c22954b72056ef8693c637",
     "files": [
@@ -4683,6 +4778,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/teacher_dead": {
+    "version": "338374dcb19e584b6cb4ea51",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_dead.png",
+        "key": "images/bb7d52cfcb8541b34fe3cce7c13ce907158c947188e25e31dd6652a9561a01ad.png",
+        "sha256": "bb7d52cfcb8541b34fe3cce7c13ce907158c947188e25e31dd6652a9561a01ad",
+        "etag": "3e3e1505b1cb689b6b92aae72ef9a54a",
+        "size": 1507301
+      },
+      {
+        "path": "assets/images/characters/teacher_dead.webp",
+        "key": "images/1dc4075f9cef6690e219a28de6bccf92453f7d98a44e6b3086edddba3d02cf98.webp",
+        "sha256": "1dc4075f9cef6690e219a28de6bccf92453f7d98a44e6b3086edddba3d02cf98",
+        "etag": "8ec5b0981132d712b7a0835a528a4f10",
+        "size": 150430
+      }
+    ]
+  },
   "characters/teacher_disgusted": {
     "version": "fd353eddea3a0b57b3aec61d",
     "files": [
@@ -5462,6 +5576,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "68d7c9bf72ec56afe2f98fb2cd2c7973e8e4825e9ab61059d844153931cc0203",
         "etag": "358343aa2b67ae4a49400ab24b9e1397",
         "size": 204448
+      }
+    ]
+  },
+  "characters/yuna_dead": {
+    "version": "9acb46b2941dad90b1488f20",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_dead.png",
+        "key": "images/f096a9ea4770aa16d3e337176fdb27f085fbaa896d786bd459041cd8d5a11fce.png",
+        "sha256": "f096a9ea4770aa16d3e337176fdb27f085fbaa896d786bd459041cd8d5a11fce",
+        "etag": "25841802b271e80d5592aaa67a95eee9",
+        "size": 1532911
+      },
+      {
+        "path": "assets/images/characters/yuna_dead.webp",
+        "key": "images/944d9ea235b2e6257247d97eb9f00c3cba98b51eb57b131cfd319244585e5364.webp",
+        "sha256": "944d9ea235b2e6257247d97eb9f00c3cba98b51eb57b131cfd319244585e5364",
+        "etag": "dd690fdb36f442bf97df13be4728e313",
+        "size": 169374
       }
     ]
   },
