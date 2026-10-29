@@ -470,44 +470,78 @@ async function fadeExpressionImage(image, source, options = {}) {
             const swap = (async () => {
                 const animate = options.animate !== false && image.naturalWidth > 0 && image.parentElement
                     && typeof image.animate === 'function' && typeof image.cloneNode === 'function'
+                    && image.ownerDocument?.createElement && window.CSS?.supports?.('mix-blend-mode', 'plus-lighter')
                     && !window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
-                let outgoing, incoming, ghost;
+                let outgoing, incoming, layer, ghost, arrival, restoreVisibility;
                 try {
                     if (animate) {
                         const style = window.getComputedStyle(image);
-                        ghost = image.cloneNode(false);
-                        ghost.removeAttribute('id');
-                        ghost.removeAttribute('alt');
-                        ghost.setAttribute('aria-hidden', 'true');
-                        ghost.classList.add('expression-outgoing');
-                        Object.assign(ghost.style, {
+                        // Add the weighted images on a transparent isolated backdrop.
+                        // Ordinary source-over fades expose 25% of the background halfway through.
+                        layer = image.ownerDocument.createElement('span');
+                        layer.className = 'expression-crossfade';
+                        layer.setAttribute('aria-hidden', 'true');
+                        Object.assign(layer.style, {
                             position: 'absolute', left: `${image.offsetLeft}px`, top: `${image.offsetTop}px`,
-                            right: 'auto', bottom: 'auto', margin: '0', width: style.width, height: style.height,
-                            minWidth: '0', minHeight: '0', maxWidth: 'none', maxHeight: 'none',
-                            boxSizing: style.boxSizing, objectFit: style.objectFit, objectPosition: style.objectPosition,
-                            borderRadius: style.borderRadius, transform: style.transform, transformOrigin: style.transformOrigin,
-                            translate: style.translate, scale: style.scale, rotate: style.rotate,
-                            filter: style.filter, opacity: style.opacity, visibility: 'visible',
-                            pointerEvents: 'none', zIndex: '2', transition: 'none', animation: 'none'
+                            width: style.width, height: style.height, display: 'block', margin: '0', padding: '0',
+                            border: '0', background: 'none', isolation: 'isolate', pointerEvents: 'none',
+                            zIndex: style.zIndex, overflow: 'visible'
                         });
-                        ghost.loading = 'eager';
-                        await ghost.decode?.();
+                        const copy = (className, src) => {
+                            const clone = image.cloneNode(false);
+                            clone.removeAttribute('id'); clone.removeAttribute('alt');
+                            clone.removeAttribute('srcset'); clone.removeAttribute('sizes');
+                            clone.setAttribute('aria-hidden', 'true');
+                            clone.classList.add(className);
+                            // Preserve ID-specific masks, borders and framing without changing layout.
+                            for (const property of Array.from(style)) clone.style.setProperty(property, style.getPropertyValue(property));
+                            Object.assign(clone.style, {
+                                position: 'absolute', left: '0', top: '0', right: 'auto', bottom: 'auto', margin: '0',
+                                width: style.width, height: style.height, minWidth: '0', minHeight: '0',
+                                maxWidth: 'none', maxHeight: 'none', visibility: 'visible', pointerEvents: 'none',
+                                transition: 'none', animation: 'none'
+                            });
+                            clone.loading = 'eager'; clone.src = src;
+                            return clone;
+                        };
+                        ghost = copy('expression-outgoing', image.currentSrc || image.src);
+                        arrival = copy('expression-incoming', next);
+                        Object.assign(ghost.style, { opacity: style.opacity, zIndex: '1', mixBlendMode: 'plus-lighter' });
+                        Object.assign(arrival.style, { opacity: '0', zIndex: '0', mixBlendMode: 'normal' });
+                        await Promise.all([ghost.decode?.(), arrival.decode?.()]);
                         if (!current()) return false;
-                        image.parentElement.appendChild(ghost);
+                        layer.appendChild(arrival); layer.appendChild(ghost);
+                        image.parentElement.appendChild(layer);
                     }
                     image.src = next;
                     image.__expressionLoadedSource = source; image.__expressionLoadedURL = image.src;
                     image.style.display = '';
                     if (options.onCommit) options.onCommit(next);
                     if (animate) {
-                        const opacity = Number(window.getComputedStyle(image).opacity);
+                        restoreVisibility = image.style.visibility;
+                        image.style.visibility = 'hidden';
+                        await image.decode?.();
+                        const nextStyle = window.getComputedStyle(image);
+                        const opacity = Number(nextStyle.opacity);
+                        for (const property of Array.from(nextStyle)) arrival.style.setProperty(property, nextStyle.getPropertyValue(property));
+                        Object.assign(arrival.style, {
+                            position: 'absolute', left: `${image.offsetLeft - layer.offsetLeft}px`, top: `${image.offsetTop - layer.offsetTop}px`,
+                            right: 'auto', bottom: 'auto', margin: '0', width: nextStyle.width, height: nextStyle.height,
+                            minWidth: '0', minHeight: '0', maxWidth: 'none', maxHeight: 'none',
+                            opacity: '0', visibility: 'visible', zIndex: '0', mixBlendMode: 'normal',
+                            pointerEvents: 'none', transition: 'none', animation: 'none'
+                        });
                         const timing = { duration: 900, easing: 'ease-in-out', fill: 'forwards' };
                         outgoing = ghost.animate([{ opacity: Number(ghost.style.opacity) }, { opacity: 0 }], timing);
-                        incoming = image.animate([{ opacity: 0 }, { opacity }], timing);
+                        incoming = arrival.animate([{ opacity: 0 }, { opacity }], timing);
                         await Promise.all([outgoing.finished, incoming.finished]);
+                        await image.decode?.();
                     }
                     return true;
-                } finally { ghost?.remove(); outgoing?.cancel(); incoming?.cancel(); }
+                } finally {
+                    if (restoreVisibility !== undefined) image.style.visibility = restoreVisibility;
+                    layer?.remove(); outgoing?.cancel(); incoming?.cancel();
+                }
             })();
             image.__expressionSwap = swap.catch(() => false);
             return await swap;

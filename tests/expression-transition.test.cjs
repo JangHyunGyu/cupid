@@ -8,11 +8,11 @@ const start = source.indexOf('async function fadeExpressionImage(');
 const end = source.indexOf('  function loadImageWithMediaFallback(', start);
 function harness(reduced = false) {
   const loads = new Map(), animations = [], commits = [];
-  const scope = { window: { matchMedia: () => ({ matches: reduced }), getComputedStyle: () => ({ opacity: '1', width: '100px', height: '100px' }) }, Image: class {
+  const scope = { window: { CSS: { supports: () => true }, matchMedia: () => ({ matches: reduced }), getComputedStyle: () => ({ opacity: '1', width: '100px', height: '100px' }) }, Image: class {
     decode() { return new Promise((resolve, reject) => loads.set(this.src, { resolve, reject })); }
   } };
   vm.runInNewContext(source.slice(start, end < 0 ? undefined : end), scope);
-  const image = { src: 'old.webp', naturalWidth: 100, isConnected: true, style: {}, parentElement: { appendChild() {} },
+  const image = { src: 'old.webp', naturalWidth: 100, isConnected: true, style: { visibility: '' }, ownerDocument: { createElement() { return { style: {}, setAttribute() {}, appendChild() {}, remove() {} }; } }, parentElement: { appendChild() {} },
     cloneNode() { return { style: {}, removeAttribute() {}, setAttribute() {}, classList: { add() {} }, animate: this.animate, remove() {} }; },
     getAttribute() { return this.src; }, animate(frames, timing) {
       const animation = { frames, timing, cancelled: false, cancel() { this.cancelled = true; } };
@@ -31,7 +31,7 @@ test('cold image loading keeps the previous face, then overlaps outgoing and inc
   assert.deepEqual(JSON.parse(JSON.stringify(h.animations[1].frames)), [{ opacity: 0 }, { opacity: 1 }]);
   assert.equal(h.animations[0].timing.duration, h.animations[1].timing.duration);
   h.animations.forEach(a => a.finish()); assert.equal(await done, true);
-  assert.ok(h.animations.every(a => a.cancelled)); assert.deepEqual(h.commits, ['sad.webp']);
+  assert.equal(h.image.style.visibility, ''); assert.ok(h.animations.every(a => a.cancelled)); assert.deepEqual(h.commits, ['sad.webp']);
 });
 test('a new face waits for the active crossfade and a late preload never overwrites the latest face', async () => {
   const h = harness(), first = h.change('sad.webp');
@@ -76,10 +76,10 @@ test('hidden lazy chat avatars never block a ready expression waiting for an off
 });
 
 test('the outgoing clone must decode before replacing the original visible image', async () => {
-  const h = harness(); const clone = h.image.cloneNode.bind(h.image); let ready;
-  h.image.cloneNode = () => ({ ...clone(), decode: () => new Promise(resolve => ready = resolve) });
+  const h = harness(); const clone = h.image.cloneNode.bind(h.image); const ready = [];
+  h.image.cloneNode = () => ({ ...clone(), decode: () => new Promise(resolve => ready.push(resolve)) });
   const done = h.change('sad.webp'); h.loads.get('sad.webp').resolve(); await tick();
   assert.equal(h.image.src, 'old.webp'); assert.equal(h.animations.length, 0);
-  ready(); await tick(); assert.equal(h.image.src, 'sad.webp');
+  ready.forEach(resolve => resolve()); await tick(); assert.equal(h.image.src, 'sad.webp');
   h.animations.forEach(a => a.finish()); assert.equal(await done, true);
 });
