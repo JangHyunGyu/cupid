@@ -691,6 +691,8 @@ class SceneRenderer {
                 if (!slot) return;
                 const img = slot.querySelector('img');
                 if (!img || !newCharMap[pos] || img.dataset.rawSrc !== newCharMap[pos]) return;
+                // Reused portraits must not retain the previous AI reply's log asset.
+                img.dataset.cupidAvatarAsset = newCharMap[pos];
                 const opacity = charOptions[pos]?.opacity ?? 1;
                 img.style.opacity = opacity === 1 ? '' : String(opacity);
                 img.classList.remove('char-fade-out');
@@ -737,6 +739,7 @@ class SceneRenderer {
                     img.setAttribute('aria-hidden', 'true');
                     loadImageWithFallback(img, charUrl, () => {
                         img.dataset.rawSrc = charUrl;
+                        img.dataset.cupidAvatarAsset = charUrl;
                         const options = charOptions[pos] || { opacity: 1 };
                         if (options.opacity !== 1) img.style.opacity = options.opacity;
                         resolve({ pos, img, sceneId });
@@ -762,6 +765,7 @@ class SceneRenderer {
                     isCurrent: () => this.currentSceneId === sceneId && this._charUpdateId === updateId,
                     onCommit: () => {
                         oldImg.dataset.rawSrc = result.img.dataset.rawSrc;
+                        oldImg.dataset.cupidAvatarAsset = result.img.dataset.cupidAvatarAsset;
                         oldImg.style.opacity = result.img.style.opacity;
                         oldImg.classList.remove('char-fade-out');
                         for (const name of ['silhouette', 'thinking']) {
