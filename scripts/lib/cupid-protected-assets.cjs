@@ -37,11 +37,13 @@ function listGalleryCgImages(rootDir) {
   const galleryDataPath = path.join(rootDir, 'assets/js/gallery-data.js');
   const bases = extractGalleryCgBasenames(galleryDataPath);
   const bgDir = path.join(rootDir, 'assets/images/background');
+  const storagePath = path.join(rootDir, 'config/media-storage.json');
+  const storage = fs.existsSync(storagePath) ? JSON.parse(fs.readFileSync(storagePath, 'utf8')) : {};
   const out = [];
   for (const base of bases) {
     for (const ext of ['.png', '.webp', '.jpg', '.jpeg']) {
       const full = path.join(bgDir, base + ext);
-      if (fs.existsSync(full) && fs.statSync(full).isFile()) {
+      if ((fs.existsSync(full) && fs.statSync(full).isFile()) || Object.hasOwn(storage, 'assets/images/background/' + base + ext)) {
         out.push(path.relative(rootDir, full).split(path.sep).join('/'));
       }
     }

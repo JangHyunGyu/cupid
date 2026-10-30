@@ -3,7 +3,7 @@
   "private": true,
   "version": "2.9.130",
   "scripts": {
-    "build": "npm run characters:check && node scripts/sync-build-metadata.cjs --write && node scripts/verify-project-structure.cjs && node scripts/build-public.cjs",
+    "build": "node scripts/image-assets.cjs && node scripts/sync-build-metadata.cjs --write && node scripts/verify-project-structure.cjs && node scripts/build-public.cjs",
     "build:check": "node scripts/sync-build-metadata.cjs --check && node scripts/verify-project-structure.cjs",
     "scenario:sync": "node generate-scenario.js",
     "scenario:check": "node generate-scenario.js --check",
@@ -23,7 +23,10 @@
     "media:list": "node -e \"console.log(require('./scripts/lib/cupid-protected-assets.cjs').listProtectedAssets(process.cwd()).join('\\n'))\"",
     "characters:check": "node scripts/character-assets.cjs && node --test tests/character-assets.test.cjs",
     "characters:sync": "node scripts/character-assets.cjs --sync",
-    "characters:list": "node scripts/character-assets.cjs --list"
+    "characters:list": "node scripts/character-assets.cjs --list",
+    "images:check": "node scripts/image-assets.cjs && node --test tests/public-images.test.cjs",
+    "images:restore": "python scripts/image-storage.py restore",
+    "images:publish": "python scripts/image-storage.py publish"
   },
   "devDependencies": {
     "@playwright/test": "^1.54.2"

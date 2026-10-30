@@ -20,3 +20,7 @@ bucket_name = "cupid-media-private"
 binding = "DB"
 database_name = "cupid-gallery-unlocks"
 database_id = "f4f4fe52-b7f6-4dff-bb12-821e20c1d885"
+
+[[r2_buckets]]
+binding = "PUBLIC_IMAGE_BUCKET"
+bucket_name = "archerlab-site-images"

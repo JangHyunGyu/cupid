@@ -14,12 +14,23 @@ function syncMediaManifest(write = false) {
   const deliveryPath = path.join(root, 'config/media-delivery.json');
   const delivery = resolveMediaDelivery(storage, fs.existsSync(deliveryPath)
     ? JSON.parse(fs.readFileSync(deliveryPath, 'utf8')) : {});
+  const sourcesPath = path.join(root, 'config/image-sources.json');
+  const sources = fs.existsSync(sourcesPath) ? JSON.parse(fs.readFileSync(sourcesPath, 'utf8')).files : {};
   const entries = {};
   for (const relative of listProtectedAssets(root)) {
-    const bytes = fs.readFileSync(resolveAssetSource(root, relative));
-    if (!isEncryptedBuffer(bytes)) throw new Error(`Protected media must be encrypted: ${relative}`);
+    const sourcePath = resolveAssetSource(root, relative);
+    let sourceHash;
+    if (fs.existsSync(sourcePath)) {
+      const bytes = fs.readFileSync(sourcePath);
+      if (!isEncryptedBuffer(bytes)) throw new Error(`Protected media must be encrypted: ${relative}`);
+      sourceHash = createHash('sha256').update(bytes).digest('hex');
+    } else {
+      const source = path.relative(root, sourcePath).split(path.sep).join('/');
+      sourceHash = sources[source]?.sha256;
+      if (!sourceHash || sourceHash !== storage[relative]?.sourceHash) throw new Error(`Missing verified private image source: ${relative}`);
+    }
     const id = toLogicalAssetId(relative);
-    const file = { path: relative, hash: createHash('sha256').update(bytes).digest('hex') };
+    const file = { path: relative, hash: sourceHash };
     if (delivery[relative]?.sha256 !== storage[relative]?.sha256) file.deliveryHash = delivery[relative]?.sha256;
     (entries[id] ||= []).push(file);
   }

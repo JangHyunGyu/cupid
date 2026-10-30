@@ -1,0 +1,1077 @@
+{
+  "schemaVersion": 1,
+  "project": "cupid",
+  "bucket": "archerlab-site-images",
+  "objects": {
+    "f1a348669c0ef4703016c665fc983795636f11322ac5472064dbaacad756fd90.webp": {
+      "key": "objects/f1a348669c0ef4703016c665fc983795636f11322ac5472064dbaacad756fd90.webp",
+      "sha256": "f1a348669c0ef4703016c665fc983795636f11322ac5472064dbaacad756fd90",
+      "bytes": 2797316,
+      "etag": "54ff8f866711fad5818098a5f42e8f59",
+      "contentType": "image/webp",
+      "source": "assets/images/background/annex_exhibit_hallway.lossless.webp"
+    },
+    "08dbb9dac360b3b6ab7bfb2bd37a004c32bd7f7c9e0dfc4b3648aa814b171223.png": {
+      "key": "objects/08dbb9dac360b3b6ab7bfb2bd37a004c32bd7f7c9e0dfc4b3648aa814b171223.png",
+      "sha256": "08dbb9dac360b3b6ab7bfb2bd37a004c32bd7f7c9e0dfc4b3648aa814b171223",
+      "bytes": 4114285,
+      "etag": "efb74b73bcc205205333d2ef84ee6c1b",
+      "contentType": "image/png",
+      "source": "assets/images/background/annex_exhibit_hallway.png"
+    },
+    "eeb2890a1c250cf2e2f2440dacf4c7751ca2be1ae9fe46f08b11bd3e0fffb182.webp": {
+      "key": "objects/eeb2890a1c250cf2e2f2440dacf4c7751ca2be1ae9fe46f08b11bd3e0fffb182.webp",
+      "sha256": "eeb2890a1c250cf2e2f2440dacf4c7751ca2be1ae9fe46f08b11bd3e0fffb182",
+      "bytes": 280588,
+      "etag": "816dba5907cccdb2e9f38dd4404703e1",
+      "contentType": "image/webp",
+      "source": "assets/images/background/annex_exhibit_hallway.webp"
+    },
+    "ab39a9ed5333d7189fedf8a9fe976d7d63396287e46b33d0e005f322a8815352.webp": {
+      "key": "objects/ab39a9ed5333d7189fedf8a9fe976d7d63396287e46b33d0e005f322a8815352.webp",
+      "sha256": "ab39a9ed5333d7189fedf8a9fe976d7d63396287e46b33d0e005f322a8815352",
+      "bytes": 3936382,
+      "etag": "2e2dfa0b99249bbc7d15b009cdbd4d44",
+      "contentType": "image/webp",
+      "source": "assets/images/background/arcade.lossless.webp"
+    },
+    "523f8dfa6a78385c2167268a59c65a66f2911965d65da3c4715975f326b376ec.png": {
+      "key": "objects/523f8dfa6a78385c2167268a59c65a66f2911965d65da3c4715975f326b376ec.png",
+      "sha256": "523f8dfa6a78385c2167268a59c65a66f2911965d65da3c4715975f326b376ec",
+      "bytes": 5149594,
+      "etag": "8819b911337f935c0c575a3ae16a304d",
+      "contentType": "image/png",
+      "source": "assets/images/background/arcade.png"
+    },
+    "6a8e9c84c20331fd137074d29cc9e59c9e5b3fdc1c4b5471a301c11749ea7b0d.webp": {
+      "key": "objects/6a8e9c84c20331fd137074d29cc9e59c9e5b3fdc1c4b5471a301c11749ea7b0d.webp",
+      "sha256": "6a8e9c84c20331fd137074d29cc9e59c9e5b3fdc1c4b5471a301c11749ea7b0d",
+      "bytes": 452266,
+      "etag": "246c25522af7d2259df65736d5c16c89",
+      "contentType": "image/webp",
+      "source": "assets/images/background/arcade.webp"
+    },
+    "3587c403e6adfea2ac29b38bd66dc0d14055273b52948fef4281d40f1db46fef.webp": {
+      "key": "objects/3587c403e6adfea2ac29b38bd66dc0d14055273b52948fef4281d40f1db46fef.webp",
+      "sha256": "3587c403e6adfea2ac29b38bd66dc0d14055273b52948fef4281d40f1db46fef",
+      "bytes": 3454814,
+      "etag": "a561378438310dc2e5d0cc99f508a881",
+      "contentType": "image/webp",
+      "source": "assets/images/background/bookstore.lossless.webp"
+    },
+    "83ca3c27b8ceaca8c7fee2924139eba96df6848e4b976cec01284a1782d579e1.png": {
+      "key": "objects/83ca3c27b8ceaca8c7fee2924139eba96df6848e4b976cec01284a1782d579e1.png",
+      "sha256": "83ca3c27b8ceaca8c7fee2924139eba96df6848e4b976cec01284a1782d579e1",
+      "bytes": 4522892,
+      "etag": "1df1823008d7666445b3e5e9e7c7dabe",
+      "contentType": "image/png",
+      "source": "assets/images/background/bookstore.png"
+    },
+    "c1283d902935576d42b86bc97eebd302cb3b43d0a765c065ba633b9876026361.webp": {
+      "key": "objects/c1283d902935576d42b86bc97eebd302cb3b43d0a765c065ba633b9876026361.webp",
+      "sha256": "c1283d902935576d42b86bc97eebd302cb3b43d0a765c065ba633b9876026361",
+      "bytes": 361604,
+      "etag": "c55027ef4d2623977b945430dd38e749",
+      "contentType": "image/webp",
+      "source": "assets/images/background/bookstore.webp"
+    },
+    "4b909437e765e0ea922f128629ad491ddf5c935697f091c0e1988c65ade4ff50.webp": {
+      "key": "objects/4b909437e765e0ea922f128629ad491ddf5c935697f091c0e1988c65ade4ff50.webp",
+      "sha256": "4b909437e765e0ea922f128629ad491ddf5c935697f091c0e1988c65ade4ff50",
+      "bytes": 3221992,
+      "etag": "74b7f1732f9327d738581a42b6a8ae00",
+      "contentType": "image/webp",
+      "source": "assets/images/background/cafe.lossless.webp"
+    },
+    "2b94c6f18f4f2e8b409c91454401b77b9880fa62d16c029a95364abeeb8f4bad.png": {
+      "key": "objects/2b94c6f18f4f2e8b409c91454401b77b9880fa62d16c029a95364abeeb8f4bad.png",
+      "sha256": "2b94c6f18f4f2e8b409c91454401b77b9880fa62d16c029a95364abeeb8f4bad",
+      "bytes": 4080972,
+      "etag": "285534a5a12405dcf17ecf419a678f1b",
+      "contentType": "image/png",
+      "source": "assets/images/background/cafe.png"
+    },
+    "22e3c9e28eaabdc60fd731cda9d5cdbc4923365ad167be3f052fa5879ab356cd.webp": {
+      "key": "objects/22e3c9e28eaabdc60fd731cda9d5cdbc4923365ad167be3f052fa5879ab356cd.webp",
+      "sha256": "22e3c9e28eaabdc60fd731cda9d5cdbc4923365ad167be3f052fa5879ab356cd",
+      "bytes": 317610,
+      "etag": "cefe03c84d6f8cb0cf9182ca74acd5e9",
+      "contentType": "image/webp",
+      "source": "assets/images/background/cafe.webp"
+    },
+    "029534f7a46068847248c0b5ec9d1e313050f67084b4d170c4b82a6964129bc4.webp": {
+      "key": "objects/029534f7a46068847248c0b5ec9d1e313050f67084b4d170c4b82a6964129bc4.webp",
+      "sha256": "029534f7a46068847248c0b5ec9d1e313050f67084b4d170c4b82a6964129bc4",
+      "bytes": 3582850,
+      "etag": "6654aba91384b638ab6f33dce029936d",
+      "contentType": "image/webp",
+      "source": "assets/images/background/dain_broadcast_booth.lossless.webp"
+    },
+    "2a132a70c4226220eb34b2246b63eee4fd34a019175687e6c42a62aa425f67d8.png": {
+      "key": "objects/2a132a70c4226220eb34b2246b63eee4fd34a019175687e6c42a62aa425f67d8.png",
+      "sha256": "2a132a70c4226220eb34b2246b63eee4fd34a019175687e6c42a62aa425f67d8",
+      "bytes": 4743979,
+      "etag": "6cf86215b981e7fc4dd4f28e87228b83",
+      "contentType": "image/png",
+      "source": "assets/images/background/dain_broadcast_booth.png"
+    },
+    "4038b7765974edda3b534cd27a85ec89d3d95e0c8c7900b6ebb68547e64acb67.webp": {
+      "key": "objects/4038b7765974edda3b534cd27a85ec89d3d95e0c8c7900b6ebb68547e64acb67.webp",
+      "sha256": "4038b7765974edda3b534cd27a85ec89d3d95e0c8c7900b6ebb68547e64acb67",
+      "bytes": 412894,
+      "etag": "75f621016e7f8ea49aa771ee5dce7892",
+      "contentType": "image/webp",
+      "source": "assets/images/background/dain_broadcast_booth.webp"
+    },
+    "5eb777f3c38e1790e6614e6d1ad3f0a5417e0e6d5db512c3c7a900bc149c3837.webp": {
+      "key": "objects/5eb777f3c38e1790e6614e6d1ad3f0a5417e0e6d5db512c3c7a900bc149c3837.webp",
+      "sha256": "5eb777f3c38e1790e6614e6d1ad3f0a5417e0e6d5db512c3c7a900bc149c3837",
+      "bytes": 2439618,
+      "etag": "ef25b2faae7109351b5b7da33806843d",
+      "contentType": "image/webp",
+      "source": "assets/images/background/flower_shop.webp"
+    },
+    "dc9247c6cd944d6080aea2fca4cde3c08d1613387fe95723b05233ce304ce635.jpg": {
+      "key": "objects/dc9247c6cd944d6080aea2fca4cde3c08d1613387fe95723b05233ce304ce635.jpg",
+      "sha256": "dc9247c6cd944d6080aea2fca4cde3c08d1613387fe95723b05233ce304ce635",
+      "bytes": 292338,
+      "etag": "2669309df91323c8282d1aa8653659c9",
+      "contentType": "image/jpeg",
+      "source": "assets/images/background/gate_bloom.jpg"
+    },
+    "a49343fc4b2e0e4c6aa2c22b751c9675e87a6b44b2db0d4c06e3c6fb71183286.webp": {
+      "key": "objects/a49343fc4b2e0e4c6aa2c22b751c9675e87a6b44b2db0d4c06e3c6fb71183286.webp",
+      "sha256": "a49343fc4b2e0e4c6aa2c22b751c9675e87a6b44b2db0d4c06e3c6fb71183286",
+      "bytes": 3787720,
+      "etag": "3e35f3af949f8cd2ea54d0bf32d6ba8a",
+      "contentType": "image/webp",
+      "source": "assets/images/background/gym.lossless.webp"
+    },
+    "27c9725a3758f0fc4ae6fb6b8fd0c867a11c1452ec8b8ad464cb09c6834fbaa5.png": {
+      "key": "objects/27c9725a3758f0fc4ae6fb6b8fd0c867a11c1452ec8b8ad464cb09c6834fbaa5.png",
+      "sha256": "27c9725a3758f0fc4ae6fb6b8fd0c867a11c1452ec8b8ad464cb09c6834fbaa5",
+      "bytes": 4928729,
+      "etag": "bfe6ff63cef0e5319117db01368ce2a6",
+      "contentType": "image/png",
+      "source": "assets/images/background/gym.png"
+    },
+    "738a819f6ef4018f3f58087b36e570cd88ac9ad9ad3cbd37c1d7ccf10d946b57.webp": {
+      "key": "objects/738a819f6ef4018f3f58087b36e570cd88ac9ad9ad3cbd37c1d7ccf10d946b57.webp",
+      "sha256": "738a819f6ef4018f3f58087b36e570cd88ac9ad9ad3cbd37c1d7ccf10d946b57",
+      "bytes": 401038,
+      "etag": "f3db3b0a1fcb293bcfdc0d6d9e1d1e95",
+      "contentType": "image/webp",
+      "source": "assets/images/background/gym.webp"
+    },
+    "b905fa199a99030ca2a0baad99a91dcff057bf7ab6e13ac38719a2d54674574e.webp": {
+      "key": "objects/b905fa199a99030ca2a0baad99a91dcff057bf7ab6e13ac38719a2d54674574e.webp",
+      "sha256": "b905fa199a99030ca2a0baad99a91dcff057bf7ab6e13ac38719a2d54674574e",
+      "bytes": 3440330,
+      "etag": "45d394f05d2113a31a6a3be7195b1b8e",
+      "contentType": "image/webp",
+      "source": "assets/images/background/library_old.lossless.webp"
+    },
+    "6ab37f8cf1b5d2ab6aa3c44385c7a0566c3d84c300161b04c04e7e530e81b180.png": {
+      "key": "objects/6ab37f8cf1b5d2ab6aa3c44385c7a0566c3d84c300161b04c04e7e530e81b180.png",
+      "sha256": "6ab37f8cf1b5d2ab6aa3c44385c7a0566c3d84c300161b04c04e7e530e81b180",
+      "bytes": 4509484,
+      "etag": "9bb46d51f9adf307e5e1a5739e5c3c5e",
+      "contentType": "image/png",
+      "source": "assets/images/background/library_old.png"
+    },
+    "899bf99099b85ef2107545431d67f304a6e584f423dc60d557aa9ac07de488ad.webp": {
+      "key": "objects/899bf99099b85ef2107545431d67f304a6e584f423dc60d557aa9ac07de488ad.webp",
+      "sha256": "899bf99099b85ef2107545431d67f304a6e584f423dc60d557aa9ac07de488ad",
+      "bytes": 346008,
+      "etag": "af5e20427eb4ee2a8b2c496393259c0a",
+      "contentType": "image/webp",
+      "source": "assets/images/background/library_old.webp"
+    },
+    "047bcd0eb733599de147af32d9d516c8c020e2d8c5fc1ed25ba58546c8ead6a0.webp": {
+      "key": "objects/047bcd0eb733599de147af32d9d516c8c020e2d8c5fc1ed25ba58546c8ead6a0.webp",
+      "sha256": "047bcd0eb733599de147af32d9d516c8c020e2d8c5fc1ed25ba58546c8ead6a0",
+      "bytes": 3120970,
+      "etag": "176eb419dd4b53b0715da20ca9700406",
+      "contentType": "image/webp",
+      "source": "assets/images/background/museum.lossless.webp"
+    },
+    "cb63ec781d616b9324714a66303c1368623ebdc378c1aeba3d1858cf379ecf7e.png": {
+      "key": "objects/cb63ec781d616b9324714a66303c1368623ebdc378c1aeba3d1858cf379ecf7e.png",
+      "sha256": "cb63ec781d616b9324714a66303c1368623ebdc378c1aeba3d1858cf379ecf7e",
+      "bytes": 4021412,
+      "etag": "f809e887ebb019ab72de02fff1d284d7",
+      "contentType": "image/png",
+      "source": "assets/images/background/museum.png"
+    },
+    "fb233ef387ef0bf4a599f396845950f0ef2e9a271792ede8e41a7ee41297949b.webp": {
+      "key": "objects/fb233ef387ef0bf4a599f396845950f0ef2e9a271792ede8e41a7ee41297949b.webp",
+      "sha256": "fb233ef387ef0bf4a599f396845950f0ef2e9a271792ede8e41a7ee41297949b",
+      "bytes": 221816,
+      "etag": "a26374834c6d5702ef34df3f0f0697de",
+      "contentType": "image/webp",
+      "source": "assets/images/background/museum.webp"
+    },
+    "5f4bdf1cfd0a0284e8fb0704d5c86926de0584d0ea594df7d4e90aeec6abf48d.jpg": {
+      "key": "objects/5f4bdf1cfd0a0284e8fb0704d5c86926de0584d0ea594df7d4e90aeec6abf48d.jpg",
+      "sha256": "5f4bdf1cfd0a0284e8fb0704d5c86926de0584d0ea594df7d4e90aeec6abf48d",
+      "bytes": 266142,
+      "etag": "4953fcfc0320826bed1ce3bcc0066f0a",
+      "contentType": "image/jpeg",
+      "source": "assets/images/background/nurse_bedroom_pills.jpg"
+    },
+    "7b49cd79215687a77fa0df2acc68986eb4ae6bb071b7cfc457b3b2b706c48129.webp": {
+      "key": "objects/7b49cd79215687a77fa0df2acc68986eb4ae6bb071b7cfc457b3b2b706c48129.webp",
+      "sha256": "7b49cd79215687a77fa0df2acc68986eb4ae6bb071b7cfc457b3b2b706c48129",
+      "bytes": 3346242,
+      "etag": "87e2a0eec316e45ef551a3bb8378bad6",
+      "contentType": "image/webp",
+      "source": "assets/images/background/nurse_house.lossless.webp"
+    },
+    "f4a4f821c4f1c9af3197117d9ebe30f535ec776a270ed207aedf5e9d04361de3.png": {
+      "key": "objects/f4a4f821c4f1c9af3197117d9ebe30f535ec776a270ed207aedf5e9d04361de3.png",
+      "sha256": "f4a4f821c4f1c9af3197117d9ebe30f535ec776a270ed207aedf5e9d04361de3",
+      "bytes": 4308393,
+      "etag": "fbae07ff00d9b20b6b8144422f1c789c",
+      "contentType": "image/png",
+      "source": "assets/images/background/nurse_house.png"
+    },
+    "c66b0c7188eb6bf96c3c9a59b739a44f5cac2ca7672e2778c8cc797cb7b46cc3.webp": {
+      "key": "objects/c66b0c7188eb6bf96c3c9a59b739a44f5cac2ca7672e2778c8cc797cb7b46cc3.webp",
+      "sha256": "c66b0c7188eb6bf96c3c9a59b739a44f5cac2ca7672e2778c8cc797cb7b46cc3",
+      "bytes": 258282,
+      "etag": "3d8a591884e8ac3b167bca85d7b30c08",
+      "contentType": "image/webp",
+      "source": "assets/images/background/nurse_house.webp"
+    },
+    "5f780be7256d13542bb6ac9dced1734a2c700d319a543e8dcba1fa7a6001a634.webp": {
+      "key": "objects/5f780be7256d13542bb6ac9dced1734a2c700d319a543e8dcba1fa7a6001a634.webp",
+      "sha256": "5f780be7256d13542bb6ac9dced1734a2c700d319a543e8dcba1fa7a6001a634",
+      "bytes": 1439806,
+      "etag": "53670d6be20aaab6aeba1fece2c4ea7b",
+      "contentType": "image/webp",
+      "source": "assets/images/background/nurse_house_day.webp"
+    },
+    "19302a3cb6f8476b17ddd82b0fd1d368013413e93de425ffd3a9692a2a06c035.webp": {
+      "key": "objects/19302a3cb6f8476b17ddd82b0fd1d368013413e93de425ffd3a9692a2a06c035.webp",
+      "sha256": "19302a3cb6f8476b17ddd82b0fd1d368013413e93de425ffd3a9692a2a06c035",
+      "bytes": 3305632,
+      "etag": "c138b588263c67cd4ff36372237f1cf1",
+      "contentType": "image/webp",
+      "source": "assets/images/background/nurse_room.lossless.webp"
+    },
+    "618edba8e0f2931971a4eb13812bc1636a6c8c8badd54ac73658212350fdc4cc.png": {
+      "key": "objects/618edba8e0f2931971a4eb13812bc1636a6c8c8badd54ac73658212350fdc4cc.png",
+      "sha256": "618edba8e0f2931971a4eb13812bc1636a6c8c8badd54ac73658212350fdc4cc",
+      "bytes": 4357351,
+      "etag": "34c7496cd843ac726bc2f0798a3071eb",
+      "contentType": "image/png",
+      "source": "assets/images/background/nurse_room.png"
+    },
+    "2ff1c1856a41e8c103835fbc7c383a671fcc386735f61da7e86cb03cc77940ba.webp": {
+      "key": "objects/2ff1c1856a41e8c103835fbc7c383a671fcc386735f61da7e86cb03cc77940ba.webp",
+      "sha256": "2ff1c1856a41e8c103835fbc7c383a671fcc386735f61da7e86cb03cc77940ba",
+      "bytes": 264836,
+      "etag": "2db8265389696e24accff093de37e578",
+      "contentType": "image/webp",
+      "source": "assets/images/background/nurse_room.webp"
+    },
+    "8382b6e5fb2873f6f2cacf6bcc1c4c9a5eb6181623eee764b60a8cd989d2cbac.webp": {
+      "key": "objects/8382b6e5fb2873f6f2cacf6bcc1c4c9a5eb6181623eee764b60a8cd989d2cbac.webp",
+      "sha256": "8382b6e5fb2873f6f2cacf6bcc1c4c9a5eb6181623eee764b60a8cd989d2cbac",
+      "bytes": 4763542,
+      "etag": "dd5b271bbd2942e91edf66990712ec6e",
+      "contentType": "image/webp",
+      "source": "assets/images/background/park.lossless.webp"
+    },
+    "9d0533a3dd3abf2529d70dc469547dcb834fdf652d14f5c51fa0e8f115298fb2.png": {
+      "key": "objects/9d0533a3dd3abf2529d70dc469547dcb834fdf652d14f5c51fa0e8f115298fb2.png",
+      "sha256": "9d0533a3dd3abf2529d70dc469547dcb834fdf652d14f5c51fa0e8f115298fb2",
+      "bytes": 6501739,
+      "etag": "9e15fb4bc4889107cf2d63567b67141b",
+      "contentType": "image/png",
+      "source": "assets/images/background/park.png"
+    },
+    "266f33fe63ebb11aa5251c42262b283a8d43ac5662f28fca34a2b36cdb2e967e.webp": {
+      "key": "objects/266f33fe63ebb11aa5251c42262b283a8d43ac5662f28fca34a2b36cdb2e967e.webp",
+      "sha256": "266f33fe63ebb11aa5251c42262b283a8d43ac5662f28fca34a2b36cdb2e967e",
+      "bytes": 752498,
+      "etag": "a8094da232adf2c9b441188c8ce03af4",
+      "contentType": "image/webp",
+      "source": "assets/images/background/park.webp"
+    },
+    "9888cf4339849df4270a53c7c41b70a970743b4ebf418ddf46b30ffc7c512ad6.webp": {
+      "key": "objects/9888cf4339849df4270a53c7c41b70a970743b4ebf418ddf46b30ffc7c512ad6.webp",
+      "sha256": "9888cf4339849df4270a53c7c41b70a970743b4ebf418ddf46b30ffc7c512ad6",
+      "bytes": 3682600,
+      "etag": "b0d02561b71dcc4ecb94112ac7b6a5c1",
+      "contentType": "image/webp",
+      "source": "assets/images/background/playground.lossless.webp"
+    },
+    "2a1f034a6dc89258b09f8af0e9367a11b89f787eed67a4f5f32f3b2b9f4d94da.png": {
+      "key": "objects/2a1f034a6dc89258b09f8af0e9367a11b89f787eed67a4f5f32f3b2b9f4d94da.png",
+      "sha256": "2a1f034a6dc89258b09f8af0e9367a11b89f787eed67a4f5f32f3b2b9f4d94da",
+      "bytes": 4839930,
+      "etag": "2406be1d680b85169cda54bbff365d2c",
+      "contentType": "image/png",
+      "source": "assets/images/background/playground.png"
+    },
+    "fe06e9cb21703029d62206726eaf9f041ac624d2ade59d70325ade96e985607e.webp": {
+      "key": "objects/fe06e9cb21703029d62206726eaf9f041ac624d2ade59d70325ade96e985607e.webp",
+      "sha256": "fe06e9cb21703029d62206726eaf9f041ac624d2ade59d70325ade96e985607e",
+      "bytes": 443704,
+      "etag": "20a59f315351880f31fc0cb8d5c59ae0",
+      "contentType": "image/webp",
+      "source": "assets/images/background/playground.webp"
+    },
+    "2273616ee7a5e19f6e84870ea4e0d2f3dcc57f819510550a8326b7faf414ece1.jpg": {
+      "key": "objects/2273616ee7a5e19f6e84870ea4e0d2f3dcc57f819510550a8326b7faf414ece1.jpg",
+      "sha256": "2273616ee7a5e19f6e84870ea4e0d2f3dcc57f819510550a8326b7faf414ece1",
+      "bytes": 226700,
+      "etag": "28064d647067f011a009473438b5f8b0",
+      "contentType": "image/jpeg",
+      "source": "assets/images/background/riin_lab_pills.jpg"
+    },
+    "5c220eb934c2ad183f8e9a132f83bc8fdaf4042d01b8b0dd543954b9ebe4afe5.webp": {
+      "key": "objects/5c220eb934c2ad183f8e9a132f83bc8fdaf4042d01b8b0dd543954b9ebe4afe5.webp",
+      "sha256": "5c220eb934c2ad183f8e9a132f83bc8fdaf4042d01b8b0dd543954b9ebe4afe5",
+      "bytes": 2689284,
+      "etag": "c68d35e54c2632180bc3447132d0aaad",
+      "contentType": "image/webp",
+      "source": "assets/images/background/room_my.lossless.webp"
+    },
+    "f4e789e827e400f9968df33a1e41ecdae3591eb447966482103f189572a43cb3.png": {
+      "key": "objects/f4e789e827e400f9968df33a1e41ecdae3591eb447966482103f189572a43cb3.png",
+      "sha256": "f4e789e827e400f9968df33a1e41ecdae3591eb447966482103f189572a43cb3",
+      "bytes": 3374261,
+      "etag": "d143959392e07abc76dfadc1c3f7cfdf",
+      "contentType": "image/png",
+      "source": "assets/images/background/room_my.png"
+    },
+    "6bbc18faffda42a3967262e437ec5528638ca265c56a90f869df5627171a20e5.webp": {
+      "key": "objects/6bbc18faffda42a3967262e437ec5528638ca265c56a90f869df5627171a20e5.webp",
+      "sha256": "6bbc18faffda42a3967262e437ec5528638ca265c56a90f869df5627171a20e5",
+      "bytes": 166000,
+      "etag": "896bb778a633d016823c091cce16db37",
+      "contentType": "image/webp",
+      "source": "assets/images/background/room_my.webp"
+    },
+    "2d3f8f298720987088520c2411197d929929135f9c19d32d0cb435a6ab59627e.webp": {
+      "key": "objects/2d3f8f298720987088520c2411197d929929135f9c19d32d0cb435a6ab59627e.webp",
+      "sha256": "2d3f8f298720987088520c2411197d929929135f9c19d32d0cb435a6ab59627e",
+      "bytes": 1133166,
+      "etag": "bd1b2c7073fcd413b1619450e26e49c4",
+      "contentType": "image/webp",
+      "source": "assets/images/background/room_my_day.webp"
+    },
+    "63babe34fe488ad708cc0de0c4cce4562c72fc1ccc995230833123e94c6674cd.webp": {
+      "key": "objects/63babe34fe488ad708cc0de0c4cce4562c72fc1ccc995230833123e94c6674cd.webp",
+      "sha256": "63babe34fe488ad708cc0de0c4cce4562c72fc1ccc995230833123e94c6674cd",
+      "bytes": 3023620,
+      "etag": "42733e0f2b89e2c841379fc62728bb6b",
+      "contentType": "image/webp",
+      "source": "assets/images/background/room_school.lossless.webp"
+    },
+    "ed0cddd3c77649915a57fdd66ca97cce7673b183a9d389b0cd1e57dc4357468e.png": {
+      "key": "objects/ed0cddd3c77649915a57fdd66ca97cce7673b183a9d389b0cd1e57dc4357468e.png",
+      "sha256": "ed0cddd3c77649915a57fdd66ca97cce7673b183a9d389b0cd1e57dc4357468e",
+      "bytes": 3838131,
+      "etag": "41c876fe9ee04caa92e20540000e3676",
+      "contentType": "image/png",
+      "source": "assets/images/background/room_school.png"
+    },
+    "8fc4fa548dc8d9e32f50e1bba147f43909ad43fa4f1bde93f70542d3c884b84c.webp": {
+      "key": "objects/8fc4fa548dc8d9e32f50e1bba147f43909ad43fa4f1bde93f70542d3c884b84c.webp",
+      "sha256": "8fc4fa548dc8d9e32f50e1bba147f43909ad43fa4f1bde93f70542d3c884b84c",
+      "bytes": 231908,
+      "etag": "17c9cb7126361965e78a9013d8e45bb6",
+      "contentType": "image/webp",
+      "source": "assets/images/background/room_school.webp"
+    },
+    "5d0a887724b694bb1d6f37aca9c290961244b2740a7cba07a99b9f524e729cc7.webp": {
+      "key": "objects/5d0a887724b694bb1d6f37aca9c290961244b2740a7cba07a99b9f524e729cc7.webp",
+      "sha256": "5d0a887724b694bb1d6f37aca9c290961244b2740a7cba07a99b9f524e729cc7",
+      "bytes": 4191844,
+      "etag": "32a3cf7fca61c3abc706aab7e8e83424",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school.lossless.webp"
+    },
+    "48b250a325a4ba19127e328b2190c73db54d001141b72a9875064dec19048eac.png": {
+      "key": "objects/48b250a325a4ba19127e328b2190c73db54d001141b72a9875064dec19048eac.png",
+      "sha256": "48b250a325a4ba19127e328b2190c73db54d001141b72a9875064dec19048eac",
+      "bytes": 5615345,
+      "etag": "6f49c83707db40f0e1d7159a1b55ced1",
+      "contentType": "image/png",
+      "source": "assets/images/background/school.png"
+    },
+    "84eee89777be45fbe9c6c904f008d81474d8d1892d0d74efb96b4ed9285a4e2d.webp": {
+      "key": "objects/84eee89777be45fbe9c6c904f008d81474d8d1892d0d74efb96b4ed9285a4e2d.webp",
+      "sha256": "84eee89777be45fbe9c6c904f008d81474d8d1892d0d74efb96b4ed9285a4e2d",
+      "bytes": 546598,
+      "etag": "c86369a8113eab874b1abc4c5921a8a0",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school.webp"
+    },
+    "39e260acf26a00c7f5113a0dacdaefa0fea2e820c642195de43e2f7f898806d4.webp": {
+      "key": "objects/39e260acf26a00c7f5113a0dacdaefa0fea2e820c642195de43e2f7f898806d4.webp",
+      "sha256": "39e260acf26a00c7f5113a0dacdaefa0fea2e820c642195de43e2f7f898806d4",
+      "bytes": 3998292,
+      "etag": "6951ce8af128c6114bb7ac431a9ed380",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_back.lossless.webp"
+    },
+    "2cc24cfbb56d1bc335e2d95420ccbc0b81d406ebc0d50629b7ff17701782be7f.png": {
+      "key": "objects/2cc24cfbb56d1bc335e2d95420ccbc0b81d406ebc0d50629b7ff17701782be7f.png",
+      "sha256": "2cc24cfbb56d1bc335e2d95420ccbc0b81d406ebc0d50629b7ff17701782be7f",
+      "bytes": 5376469,
+      "etag": "8de1324e5e038e85c7bb07d8c047b0fa",
+      "contentType": "image/png",
+      "source": "assets/images/background/school_back.png"
+    },
+    "392b0cf8a931e8b211b4ddaa0430ca482fb5110db45fec8effeda3212742577f.webp": {
+      "key": "objects/392b0cf8a931e8b211b4ddaa0430ca482fb5110db45fec8effeda3212742577f.webp",
+      "sha256": "392b0cf8a931e8b211b4ddaa0430ca482fb5110db45fec8effeda3212742577f",
+      "bytes": 473732,
+      "etag": "5c10fb541b51197d1b10c8b0f05e7ac4",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_back.webp"
+    },
+    "edf4227bb10d21e42bc7cabcfdf089288441096dad6be968aa7f3fcd3468861c.webp": {
+      "key": "objects/edf4227bb10d21e42bc7cabcfdf089288441096dad6be968aa7f3fcd3468861c.webp",
+      "sha256": "edf4227bb10d21e42bc7cabcfdf089288441096dad6be968aa7f3fcd3468861c",
+      "bytes": 3182792,
+      "etag": "859edd2a34a6b6b509c4d2b42a81c2c0",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_basement.lossless.webp"
+    },
+    "6c519c90a00bc6ae0ccfc703ab4aa88405d1c330734fd97af034a420e2a3abe9.png": {
+      "key": "objects/6c519c90a00bc6ae0ccfc703ab4aa88405d1c330734fd97af034a420e2a3abe9.png",
+      "sha256": "6c519c90a00bc6ae0ccfc703ab4aa88405d1c330734fd97af034a420e2a3abe9",
+      "bytes": 4114127,
+      "etag": "52dad17172ebec34c933d318dfb54b29",
+      "contentType": "image/png",
+      "source": "assets/images/background/school_basement.png"
+    },
+    "f464faa76e2894237ef2ce5cdc01fc76a5bd1d635d3a20be70d35036e9c6e8db.webp": {
+      "key": "objects/f464faa76e2894237ef2ce5cdc01fc76a5bd1d635d3a20be70d35036e9c6e8db.webp",
+      "sha256": "f464faa76e2894237ef2ce5cdc01fc76a5bd1d635d3a20be70d35036e9c6e8db",
+      "bytes": 225584,
+      "etag": "f831e8aae1d717a8fddf85876fb6092e",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_basement.webp"
+    },
+    "e2c132afe4c5c251170cbf09c343deac807c61099f82a18ee5512afda69ebdd1.webp": {
+      "key": "objects/e2c132afe4c5c251170cbf09c343deac807c61099f82a18ee5512afda69ebdd1.webp",
+      "sha256": "e2c132afe4c5c251170cbf09c343deac807c61099f82a18ee5512afda69ebdd1",
+      "bytes": 2535904,
+      "etag": "a4fab744b7769f6b34b520d14269089f",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_event_classroom.lossless.webp"
+    },
+    "030dc335acad8ffeeb89607ed0bdbdec0b4f06fe987af5c613c57d5ac258fe48.png": {
+      "key": "objects/030dc335acad8ffeeb89607ed0bdbdec0b4f06fe987af5c613c57d5ac258fe48.png",
+      "sha256": "030dc335acad8ffeeb89607ed0bdbdec0b4f06fe987af5c613c57d5ac258fe48",
+      "bytes": 3757217,
+      "etag": "4bc71f75c8f8e8f65dd73ba20bc16782",
+      "contentType": "image/png",
+      "source": "assets/images/background/school_event_classroom.png"
+    },
+    "b63024b5f7d2ede88de439210dc7620c02634af2fbdaf2167dc535aa047c7e4d.webp": {
+      "key": "objects/b63024b5f7d2ede88de439210dc7620c02634af2fbdaf2167dc535aa047c7e4d.webp",
+      "sha256": "b63024b5f7d2ede88de439210dc7620c02634af2fbdaf2167dc535aa047c7e4d",
+      "bytes": 260218,
+      "etag": "6aebcf7fede6b4dcab555ede68cd3877",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_event_classroom.webp"
+    },
+    "7f3ca87f38a6f0a0dfe17d50f65a23d5a351144706227faed1592ca44d185ba7.png": {
+      "key": "objects/7f3ca87f38a6f0a0dfe17d50f65a23d5a351144706227faed1592ca44d185ba7.png",
+      "sha256": "7f3ca87f38a6f0a0dfe17d50f65a23d5a351144706227faed1592ca44d185ba7",
+      "bytes": 14353288,
+      "etag": "29b6a0b0b34a4526174fc33942049d26",
+      "contentType": "image/png",
+      "source": "assets/images/background/school_festival.png"
+    },
+    "5ca304d8b8dc2bb9b7218bef6487ba352c2bd229b177c138d3c03048a0f9482e.webp": {
+      "key": "objects/5ca304d8b8dc2bb9b7218bef6487ba352c2bd229b177c138d3c03048a0f9482e.webp",
+      "sha256": "5ca304d8b8dc2bb9b7218bef6487ba352c2bd229b177c138d3c03048a0f9482e",
+      "bytes": 2687774,
+      "etag": "79423b2caaaa02e3c7540cbdecf4961c",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_festival.webp"
+    },
+    "8b101e1e3b14ecbbabb60e3d6a1d496e65a9ea3c48dd814ed77c2593c6a38ba4.webp": {
+      "key": "objects/8b101e1e3b14ecbbabb60e3d6a1d496e65a9ea3c48dd814ed77c2593c6a38ba4.webp",
+      "sha256": "8b101e1e3b14ecbbabb60e3d6a1d496e65a9ea3c48dd814ed77c2593c6a38ba4",
+      "bytes": 3310896,
+      "etag": "e74ebfdefad9c6efe601cb4c86f8d0a9",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_hallway.lossless.webp"
+    },
+    "c3363fdc41008493cd6a07441f014942597b0da15c7c7b4a84e8c7506f08f6d2.png": {
+      "key": "objects/c3363fdc41008493cd6a07441f014942597b0da15c7c7b4a84e8c7506f08f6d2.png",
+      "sha256": "c3363fdc41008493cd6a07441f014942597b0da15c7c7b4a84e8c7506f08f6d2",
+      "bytes": 4326380,
+      "etag": "292965df55725ad27fe49781fff6fe1a",
+      "contentType": "image/png",
+      "source": "assets/images/background/school_hallway.png"
+    },
+    "913d0b7a84742a6f814eb68506a639b140cbc66fef990f5ade8c00b568af053d.webp": {
+      "key": "objects/913d0b7a84742a6f814eb68506a639b140cbc66fef990f5ade8c00b568af053d.webp",
+      "sha256": "913d0b7a84742a6f814eb68506a639b140cbc66fef990f5ade8c00b568af053d",
+      "bytes": 259544,
+      "etag": "cd9ef3201a1b4a93162e4df7d0039cc2",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_hallway.webp"
+    },
+    "e5c345ead90f11de6b894d997cc8621130034b7d1eb81bc48a48ba764c05e819.webp": {
+      "key": "objects/e5c345ead90f11de6b894d997cc8621130034b7d1eb81bc48a48ba764c05e819.webp",
+      "sha256": "e5c345ead90f11de6b894d997cc8621130034b7d1eb81bc48a48ba764c05e819",
+      "bytes": 2805184,
+      "etag": "15354aab3dfc90ea7cfa379ad4367222",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_stairwell.lossless.webp"
+    },
+    "25149356158dd5aeaa1ec1b6f98bb68ae5365b498ff75f8d4c3778aea138f70b.png": {
+      "key": "objects/25149356158dd5aeaa1ec1b6f98bb68ae5365b498ff75f8d4c3778aea138f70b.png",
+      "sha256": "25149356158dd5aeaa1ec1b6f98bb68ae5365b498ff75f8d4c3778aea138f70b",
+      "bytes": 4215846,
+      "etag": "3ba78887ac574d95a0f3aa5495be693a",
+      "contentType": "image/png",
+      "source": "assets/images/background/school_stairwell.png"
+    },
+    "b76b3b6268110b8d95faeb9ad27dba3e57e5ef8379f74e1fc62160525272bc65.webp": {
+      "key": "objects/b76b3b6268110b8d95faeb9ad27dba3e57e5ef8379f74e1fc62160525272bc65.webp",
+      "sha256": "b76b3b6268110b8d95faeb9ad27dba3e57e5ef8379f74e1fc62160525272bc65",
+      "bytes": 273334,
+      "etag": "16e44eb4ee01037a28ee59238f59a4b4",
+      "contentType": "image/webp",
+      "source": "assets/images/background/school_stairwell.webp"
+    },
+    "18040dd757ba66b02422d2107f3bceda9d32da8d82eb54e4ba1103f8140f7655.webp": {
+      "key": "objects/18040dd757ba66b02422d2107f3bceda9d32da8d82eb54e4ba1103f8140f7655.webp",
+      "sha256": "18040dd757ba66b02422d2107f3bceda9d32da8d82eb54e4ba1103f8140f7655",
+      "bytes": 3557192,
+      "etag": "bb41c33092b6d8229ceee08d3c13500f",
+      "contentType": "image/webp",
+      "source": "assets/images/background/seyoun_room.lossless.webp"
+    },
+    "520a5d851b25160c78b233dd5a6c5b97fe450785b6532249e7bfaa22e378c5b0.png": {
+      "key": "objects/520a5d851b25160c78b233dd5a6c5b97fe450785b6532249e7bfaa22e378c5b0.png",
+      "sha256": "520a5d851b25160c78b233dd5a6c5b97fe450785b6532249e7bfaa22e378c5b0",
+      "bytes": 4679967,
+      "etag": "52bbc975529db15694c03ceda471b9e9",
+      "contentType": "image/png",
+      "source": "assets/images/background/seyoun_room.png"
+    },
+    "6e861cf13d26a48c301a05acf0681cd607819ad9462395180a38f564d23511a4.webp": {
+      "key": "objects/6e861cf13d26a48c301a05acf0681cd607819ad9462395180a38f564d23511a4.webp",
+      "sha256": "6e861cf13d26a48c301a05acf0681cd607819ad9462395180a38f564d23511a4",
+      "bytes": 322616,
+      "etag": "36153e7afe5beee76fab5dc4189ecc3b",
+      "contentType": "image/webp",
+      "source": "assets/images/background/seyoun_room.webp"
+    },
+    "36ecf2a39908cb6bd75e4f2da88ab97f5a3dc50bf007c2e2b198057a132ee686.webp": {
+      "key": "objects/36ecf2a39908cb6bd75e4f2da88ab97f5a3dc50bf007c2e2b198057a132ee686.webp",
+      "sha256": "36ecf2a39908cb6bd75e4f2da88ab97f5a3dc50bf007c2e2b198057a132ee686",
+      "bytes": 1265896,
+      "etag": "02c00f2957975616dec590c971f9751e",
+      "contentType": "image/webp",
+      "source": "assets/images/background/snack_shop.webp"
+    },
+    "900da0a718e70068bc4de063e29d4a0bc919e4f54b0cb15eec4517ab70c50174.webp": {
+      "key": "objects/900da0a718e70068bc4de063e29d4a0bc919e4f54b0cb15eec4517ab70c50174.webp",
+      "sha256": "900da0a718e70068bc4de063e29d4a0bc919e4f54b0cb15eec4517ab70c50174",
+      "bytes": 1615410,
+      "etag": "4434363aa11046fe42d8ef231c348b70",
+      "contentType": "image/webp",
+      "source": "assets/images/background/sojeong_flashback.lossless.webp"
+    },
+    "83709b3cee7ea8d525f64cf9f5ebb079761fe5120b205f77cffc8de9f9817664.png": {
+      "key": "objects/83709b3cee7ea8d525f64cf9f5ebb079761fe5120b205f77cffc8de9f9817664.png",
+      "sha256": "83709b3cee7ea8d525f64cf9f5ebb079761fe5120b205f77cffc8de9f9817664",
+      "bytes": 2661597,
+      "etag": "ce3b19d08542e644a3d2d84a4834a30a",
+      "contentType": "image/png",
+      "source": "assets/images/background/sojeong_flashback.png"
+    },
+    "80c0e98ea6914faad8f68e7be6c6eb937883e6b3faff6515971e3c46f4c5c591.webp": {
+      "key": "objects/80c0e98ea6914faad8f68e7be6c6eb937883e6b3faff6515971e3c46f4c5c591.webp",
+      "sha256": "80c0e98ea6914faad8f68e7be6c6eb937883e6b3faff6515971e3c46f4c5c591",
+      "bytes": 310108,
+      "etag": "c72d534d29f3acf550743fce7da88a70",
+      "contentType": "image/webp",
+      "source": "assets/images/background/sojeong_flashback.webp"
+    },
+    "b3b26d77c049c3dbf83db7ac88a97fa9e40ab8632a2abb04e6837bf3c33ac84a.webp": {
+      "key": "objects/b3b26d77c049c3dbf83db7ac88a97fa9e40ab8632a2abb04e6837bf3c33ac84a.webp",
+      "sha256": "b3b26d77c049c3dbf83db7ac88a97fa9e40ab8632a2abb04e6837bf3c33ac84a",
+      "bytes": 3786104,
+      "etag": "6425443f92e8f78086626057bf37ec56",
+      "contentType": "image/webp",
+      "source": "assets/images/background/store.lossless.webp"
+    },
+    "cae4f516237a52443ee0ce3669bbb8f73f80bfddea96d9f4b026b6464a22e1e2.png": {
+      "key": "objects/cae4f516237a52443ee0ce3669bbb8f73f80bfddea96d9f4b026b6464a22e1e2.png",
+      "sha256": "cae4f516237a52443ee0ce3669bbb8f73f80bfddea96d9f4b026b6464a22e1e2",
+      "bytes": 4969093,
+      "etag": "dec8e53da46cd7dab7ca9aa4be754f7d",
+      "contentType": "image/png",
+      "source": "assets/images/background/store.png"
+    },
+    "8b5632efc3dd3e96880b21dca1877c51c3aaac3ee363221659e70c9b858cd677.webp": {
+      "key": "objects/8b5632efc3dd3e96880b21dca1877c51c3aaac3ee363221659e70c9b858cd677.webp",
+      "sha256": "8b5632efc3dd3e96880b21dca1877c51c3aaac3ee363221659e70c9b858cd677",
+      "bytes": 390582,
+      "etag": "b5ee9030293da760ec00c8734d573d03",
+      "contentType": "image/webp",
+      "source": "assets/images/background/store.webp"
+    },
+    "346ae4afb75b3dabbe2a4333d31f5f01c3ba250cbc2d6e899c4bff95c6867591.webp": {
+      "key": "objects/346ae4afb75b3dabbe2a4333d31f5f01c3ba250cbc2d6e899c4bff95c6867591.webp",
+      "sha256": "346ae4afb75b3dabbe2a4333d31f5f01c3ba250cbc2d6e899c4bff95c6867591",
+      "bytes": 4082570,
+      "etag": "b3c31261b46578c79ec06e31ef85f89c",
+      "contentType": "image/webp",
+      "source": "assets/images/background/street.lossless.webp"
+    },
+    "6bfc0657c675a41c6d4886cb6a1baf2cc8c0dc7cc662e4ae8261ea6c93e746a4.png": {
+      "key": "objects/6bfc0657c675a41c6d4886cb6a1baf2cc8c0dc7cc662e4ae8261ea6c93e746a4.png",
+      "sha256": "6bfc0657c675a41c6d4886cb6a1baf2cc8c0dc7cc662e4ae8261ea6c93e746a4",
+      "bytes": 5366282,
+      "etag": "8905fa39f095c0ff1deb4fdd465daeb3",
+      "contentType": "image/png",
+      "source": "assets/images/background/street.png"
+    },
+    "a095c1187f4e472a721d9c3b7600051255e20612b30dfc893f4dc2bdf73f4020.webp": {
+      "key": "objects/a095c1187f4e472a721d9c3b7600051255e20612b30dfc893f4dc2bdf73f4020.webp",
+      "sha256": "a095c1187f4e472a721d9c3b7600051255e20612b30dfc893f4dc2bdf73f4020",
+      "bytes": 512388,
+      "etag": "dada4d850b2d6b789a802979776f6d7e",
+      "contentType": "image/webp",
+      "source": "assets/images/background/street.webp"
+    },
+    "b8dca526797051ff8e0e1c7b692ae363922c8ce7c08373cabe15b69471d2beb8.webp": {
+      "key": "objects/b8dca526797051ff8e0e1c7b692ae363922c8ce7c08373cabe15b69471d2beb8.webp",
+      "sha256": "b8dca526797051ff8e0e1c7b692ae363922c8ce7c08373cabe15b69471d2beb8",
+      "bytes": 3457706,
+      "etag": "0a3787b1f4b0ecdeb48301d24922a40b",
+      "contentType": "image/webp",
+      "source": "assets/images/background/student_room.lossless.webp"
+    },
+    "3b3d802b364d2bd153b37a35d84a6509149a214a2fc55162fcc4ced51d51fb78.png": {
+      "key": "objects/3b3d802b364d2bd153b37a35d84a6509149a214a2fc55162fcc4ced51d51fb78.png",
+      "sha256": "3b3d802b364d2bd153b37a35d84a6509149a214a2fc55162fcc4ced51d51fb78",
+      "bytes": 4411432,
+      "etag": "cecd5e3fc33f88481817a5f48929dd31",
+      "contentType": "image/png",
+      "source": "assets/images/background/student_room.png"
+    },
+    "c5ef1021f160b4ebf995ad18fc88a2f8a1714acb52e39951cc570cea11945b38.webp": {
+      "key": "objects/c5ef1021f160b4ebf995ad18fc88a2f8a1714acb52e39951cc570cea11945b38.webp",
+      "sha256": "c5ef1021f160b4ebf995ad18fc88a2f8a1714acb52e39951cc570cea11945b38",
+      "bytes": 331822,
+      "etag": "110bee89a12b163dcdc6e9192fc2e5af",
+      "contentType": "image/webp",
+      "source": "assets/images/background/student_room.webp"
+    },
+    "89b4920df457dc67697a73fc4ba98b5a6d2a8aebfbf7663ff6e1eeb1e6b0b97d.webp": {
+      "key": "objects/89b4920df457dc67697a73fc4ba98b5a6d2a8aebfbf7663ff6e1eeb1e6b0b97d.webp",
+      "sha256": "89b4920df457dc67697a73fc4ba98b5a6d2a8aebfbf7663ff6e1eeb1e6b0b97d",
+      "bytes": 3570224,
+      "etag": "59cf30c4b19081cf7ae334917e50dd43",
+      "contentType": "image/webp",
+      "source": "assets/images/background/teacher_office.lossless.webp"
+    },
+    "1b48d2db2d42562bd1aaef1eac15d76549eddabcafe08f01119724a9205d00da.png": {
+      "key": "objects/1b48d2db2d42562bd1aaef1eac15d76549eddabcafe08f01119724a9205d00da.png",
+      "sha256": "1b48d2db2d42562bd1aaef1eac15d76549eddabcafe08f01119724a9205d00da",
+      "bytes": 4674308,
+      "etag": "02a577968dfaed4ed254b424af0e56c7",
+      "contentType": "image/png",
+      "source": "assets/images/background/teacher_office.png"
+    },
+    "82f5fc27eea80996ee96b1a2858f8fbd2661a04261bdea46a4ef9f5e8d51cf73.webp": {
+      "key": "objects/82f5fc27eea80996ee96b1a2858f8fbd2661a04261bdea46a4ef9f5e8d51cf73.webp",
+      "sha256": "82f5fc27eea80996ee96b1a2858f8fbd2661a04261bdea46a4ef9f5e8d51cf73",
+      "bytes": 321764,
+      "etag": "a1931dd3a793e979eca8f824204954f0",
+      "contentType": "image/webp",
+      "source": "assets/images/background/teacher_office.webp"
+    },
+    "cff21a047bcc2698eb512139983db3c3861040cc7c08bfe3bd47081dd97a4900.webp": {
+      "key": "objects/cff21a047bcc2698eb512139983db3c3861040cc7c08bfe3bd47081dd97a4900.webp",
+      "sha256": "cff21a047bcc2698eb512139983db3c3861040cc7c08bfe3bd47081dd97a4900",
+      "bytes": 3343432,
+      "etag": "c404430be5c3e99a30f31c1b136fde7c",
+      "contentType": "image/webp",
+      "source": "assets/images/background/teacher_room.lossless.webp"
+    },
+    "63adfa1c1013168f60df35cc4def966526144b5f74e469587c7d1ac1ec3571a6.png": {
+      "key": "objects/63adfa1c1013168f60df35cc4def966526144b5f74e469587c7d1ac1ec3571a6.png",
+      "sha256": "63adfa1c1013168f60df35cc4def966526144b5f74e469587c7d1ac1ec3571a6",
+      "bytes": 4309466,
+      "etag": "ad5e70a6abcff00e7bf7460bcbc0e109",
+      "contentType": "image/png",
+      "source": "assets/images/background/teacher_room.png"
+    },
+    "cce318cc101a7556800b159e22bc91373a9a8c4c631a1126e8a2d30a0349df45.webp": {
+      "key": "objects/cce318cc101a7556800b159e22bc91373a9a8c4c631a1126e8a2d30a0349df45.webp",
+      "sha256": "cce318cc101a7556800b159e22bc91373a9a8c4c631a1126e8a2d30a0349df45",
+      "bytes": 288074,
+      "etag": "473f438755e252ce003c856b600721d8",
+      "contentType": "image/webp",
+      "source": "assets/images/background/teacher_room.webp"
+    },
+    "598fb21e2e7687e73fd3182e06b6201c139937608374fdb84933f643614d18a0.webp": {
+      "key": "objects/598fb21e2e7687e73fd3182e06b6201c139937608374fdb84933f643614d18a0.webp",
+      "sha256": "598fb21e2e7687e73fd3182e06b6201c139937608374fdb84933f643614d18a0",
+      "bytes": 4001500,
+      "etag": "c1d80aaebc3475a98d1417eb93dca55a",
+      "contentType": "image/webp",
+      "source": "assets/images/background/title_square.lossless.webp"
+    },
+    "cb8acaed0da919ce5e717f094f094850f675e2f5f337437b3c948c75e5af384e.png": {
+      "key": "objects/cb8acaed0da919ce5e717f094f094850f675e2f5f337437b3c948c75e5af384e.png",
+      "sha256": "cb8acaed0da919ce5e717f094f094850f675e2f5f337437b3c948c75e5af384e",
+      "bytes": 4961625,
+      "etag": "1d5eab22cad78968663fb32d33ac0d2a",
+      "contentType": "image/png",
+      "source": "assets/images/background/title_square.png"
+    },
+    "bbe05ac423707ea59a7a8ac745624ea9ebf1413e7b2cee1e979f7fa759524856.webp": {
+      "key": "objects/bbe05ac423707ea59a7a8ac745624ea9ebf1413e7b2cee1e979f7fa759524856.webp",
+      "sha256": "bbe05ac423707ea59a7a8ac745624ea9ebf1413e7b2cee1e979f7fa759524856",
+      "bytes": 333002,
+      "etag": "34f33c077bd4b2ec5a8baeb8b2b66b9a",
+      "contentType": "image/webp",
+      "source": "assets/images/background/title_square.webp"
+    },
+    "60702ce4e889c6baf1eaa326d6f8a5c345b2a05f14c5d15a026fced1a3bb6f13.webp": {
+      "key": "objects/60702ce4e889c6baf1eaa326d6f8a5c345b2a05f14c5d15a026fced1a3bb6f13.webp",
+      "sha256": "60702ce4e889c6baf1eaa326d6f8a5c345b2a05f14c5d15a026fced1a3bb6f13",
+      "bytes": 3703710,
+      "etag": "8bf8a309d822829e5c16092c4229b602",
+      "contentType": "image/webp",
+      "source": "assets/images/background/top_school.lossless.webp"
+    },
+    "63e46ab545944f424baa0a1a70e70e88de69d99af9d9a3ad1212c0908fcbd01e.png": {
+      "key": "objects/63e46ab545944f424baa0a1a70e70e88de69d99af9d9a3ad1212c0908fcbd01e.png",
+      "sha256": "63e46ab545944f424baa0a1a70e70e88de69d99af9d9a3ad1212c0908fcbd01e",
+      "bytes": 4749005,
+      "etag": "0ee00702d86baaccb477bc02c1f80fb9",
+      "contentType": "image/png",
+      "source": "assets/images/background/top_school.png"
+    },
+    "1a0c622bad51d941f13ffdf811ead5110a93dc0adf90c111e78b5a5190c5838b.webp": {
+      "key": "objects/1a0c622bad51d941f13ffdf811ead5110a93dc0adf90c111e78b5a5190c5838b.webp",
+      "sha256": "1a0c622bad51d941f13ffdf811ead5110a93dc0adf90c111e78b5a5190c5838b",
+      "bytes": 374038,
+      "etag": "2da0422864d1412ebca77b0c270cfea4",
+      "contentType": "image/webp",
+      "source": "assets/images/background/top_school.webp"
+    },
+    "96d264160314fa4c5c89fbadc7d35f5526e8ac5b47e8d7df940da651f05e8594.webp": {
+      "key": "objects/96d264160314fa4c5c89fbadc7d35f5526e8ac5b47e8d7df940da651f05e8594.webp",
+      "sha256": "96d264160314fa4c5c89fbadc7d35f5526e8ac5b47e8d7df940da651f05e8594",
+      "bytes": 3485486,
+      "etag": "29248b6e52e0d2c7474088d1f217a989",
+      "contentType": "image/webp",
+      "source": "assets/images/background/yuna_hideout.lossless.webp"
+    },
+    "7820de1d9d7b05ea86ddeead161595987837c4df53157fefa45fe19c077f00ed.png": {
+      "key": "objects/7820de1d9d7b05ea86ddeead161595987837c4df53157fefa45fe19c077f00ed.png",
+      "sha256": "7820de1d9d7b05ea86ddeead161595987837c4df53157fefa45fe19c077f00ed",
+      "bytes": 4495465,
+      "etag": "f941a46b2ae2331ea4ce513ec6c31d53",
+      "contentType": "image/png",
+      "source": "assets/images/background/yuna_hideout.png"
+    },
+    "ad3308bf32a400cece8882f7066001f5ce39a4824873aff519c5271b9c52d1b0.webp": {
+      "key": "objects/ad3308bf32a400cece8882f7066001f5ce39a4824873aff519c5271b9c52d1b0.webp",
+      "sha256": "ad3308bf32a400cece8882f7066001f5ce39a4824873aff519c5271b9c52d1b0",
+      "bytes": 296650,
+      "etag": "fd3f1c9ce2b693ad49da994ed7ef130b",
+      "contentType": "image/webp",
+      "source": "assets/images/background/yuna_hideout.webp"
+    },
+    "233da0e52905fb0ab221b008be1e91c05d68f1cbaa78e64943095a08be0472f3.webp": {
+      "key": "objects/233da0e52905fb0ab221b008be1e91c05d68f1cbaa78e64943095a08be0472f3.webp",
+      "sha256": "233da0e52905fb0ab221b008be1e91c05d68f1cbaa78e64943095a08be0472f3",
+      "bytes": 1820282,
+      "etag": "66c97ef8684cd36cc54c54ac2e93a534",
+      "contentType": "image/webp",
+      "source": "assets/images/background/yuna_hideout_day.webp"
+    },
+    "08d58454283681b802e8f5842266a7075a619d50d670b72060f21f5d91ab1d20.webp": {
+      "key": "objects/08d58454283681b802e8f5842266a7075a619d50d670b72060f21f5d91ab1d20.webp",
+      "sha256": "08d58454283681b802e8f5842266a7075a619d50d670b72060f21f5d91ab1d20",
+      "bytes": 3651788,
+      "etag": "9039dbc8da2f3d5a975ac95d36d07c44",
+      "contentType": "image/webp",
+      "source": "assets/images/background/yuna_secret_rooftop.lossless.webp"
+    },
+    "f2a85091e6b2b058c5f20ef0fb9ff03608bf39247d43e976c5a97103b1bb165c.png": {
+      "key": "objects/f2a85091e6b2b058c5f20ef0fb9ff03608bf39247d43e976c5a97103b1bb165c.png",
+      "sha256": "f2a85091e6b2b058c5f20ef0fb9ff03608bf39247d43e976c5a97103b1bb165c",
+      "bytes": 4855505,
+      "etag": "a9a2073fba4ab8c1e07680e3fedfd0d8",
+      "contentType": "image/png",
+      "source": "assets/images/background/yuna_secret_rooftop.png"
+    },
+    "aa2d896bee0b17a040613beb3ab455955348798e43cab5c0d762410021ec0e8f.webp": {
+      "key": "objects/aa2d896bee0b17a040613beb3ab455955348798e43cab5c0d762410021ec0e8f.webp",
+      "sha256": "aa2d896bee0b17a040613beb3ab455955348798e43cab5c0d762410021ec0e8f",
+      "bytes": 383562,
+      "etag": "0f3f363a1396119c6da26ac065dde073",
+      "contentType": "image/webp",
+      "source": "assets/images/background/yuna_secret_rooftop.webp"
+    },
+    "c0d8a13b1909eeb077c583769551c022157d2f2959207b93a3dff946fba3a9c7.jpg": {
+      "key": "objects/c0d8a13b1909eeb077c583769551c022157d2f2959207b93a3dff946fba3a9c7.jpg",
+      "sha256": "c0d8a13b1909eeb077c583769551c022157d2f2959207b93a3dff946fba3a9c7",
+      "bytes": 615970,
+      "etag": "4931e9e50d3fa28e8d4ca45de4670ec5",
+      "contentType": "image/jpeg",
+      "source": "assets/images/screenshots/cupid-dialogue.jpg"
+    },
+    "9ee3002d5fe1ff4aabf4050be805f1e15c3b6ed2cc1c8e53e4d86ffdeeaf04d3.jpg": {
+      "key": "objects/9ee3002d5fe1ff4aabf4050be805f1e15c3b6ed2cc1c8e53e4d86ffdeeaf04d3.jpg",
+      "sha256": "9ee3002d5fe1ff4aabf4050be805f1e15c3b6ed2cc1c8e53e4d86ffdeeaf04d3",
+      "bytes": 585646,
+      "etag": "d20ad4cdece3d8d418fc424f0f5c93dd",
+      "contentType": "image/jpeg",
+      "source": "assets/images/screenshots/cupid-school.jpg"
+    },
+    "595e277b9f07d000d9da98c8390b4413fdd2144832a6a0dbf528545bd0783c22.jpg": {
+      "key": "objects/595e277b9f07d000d9da98c8390b4413fdd2144832a6a0dbf528545bd0783c22.jpg",
+      "sha256": "595e277b9f07d000d9da98c8390b4413fdd2144832a6a0dbf528545bd0783c22",
+      "bytes": 558720,
+      "etag": "6c25f368902007249eed64bcfd686ea8",
+      "contentType": "image/jpeg",
+      "source": "assets/images/screenshots/cupid-title.jpg"
+    },
+    "93e8c15bdc4034e405d7e98c506d1375d28537fbf15081c844785035cc73a2d7.png": {
+      "key": "objects/93e8c15bdc4034e405d7e98c506d1375d28537fbf15081c844785035cc73a2d7.png",
+      "sha256": "93e8c15bdc4034e405d7e98c506d1375d28537fbf15081c844785035cc73a2d7",
+      "bytes": 647140,
+      "etag": "2d9cf4feacd93ce627c217ec01adf41a",
+      "contentType": "image/png",
+      "source": "assets/images/social/cupid-seoyeon-portrait.png"
+    },
+    "bef62eb77a36737031356ddbb975d15aece952c999ce51d065d061938933e811.webp": {
+      "key": "objects/bef62eb77a36737031356ddbb975d15aece952c999ce51d065d061938933e811.webp",
+      "sha256": "bef62eb77a36737031356ddbb975d15aece952c999ce51d065d061938933e811",
+      "bytes": 466624,
+      "etag": "5d207b22c8ccbc52e5a2181301a4a7e6",
+      "contentType": "image/webp",
+      "source": "assets/images/social/cupid-seoyeon-portrait.webp"
+    },
+    "059ae197ccb52f8e52872836d5cb28ccbaef5b77311b50c299143feffb016203.svg": {
+      "key": "objects/059ae197ccb52f8e52872836d5cb28ccbaef5b77311b50c299143feffb016203.svg",
+      "sha256": "059ae197ccb52f8e52872836d5cb28ccbaef5b77311b50c299143feffb016203",
+      "bytes": 1064,
+      "etag": "eb1c04dd26cc156db7f9343f294a3421",
+      "contentType": "image/svg+xml",
+      "source": "assets/images/ui/button-frame.svg"
+    },
+    "027f59bf8fc9e2f5e25db4635398dcb2f460b3dc376cb9bb8142205fb26b8eff.svg": {
+      "key": "objects/027f59bf8fc9e2f5e25db4635398dcb2f460b3dc376cb9bb8142205fb26b8eff.svg",
+      "sha256": "027f59bf8fc9e2f5e25db4635398dcb2f460b3dc376cb9bb8142205fb26b8eff",
+      "bytes": 560,
+      "etag": "8a5b6a4a0b808ac9fba4495b4dc9614a",
+      "contentType": "image/svg+xml",
+      "source": "assets/images/ui/character-silhouette.svg"
+    },
+    "e97bead3453fc0dadf464d7958e5a25bc01198ac77a9309ef424dd2cbca05b79.webp": {
+      "key": "objects/e97bead3453fc0dadf464d7958e5a25bc01198ac77a9309ef424dd2cbca05b79.webp",
+      "sha256": "e97bead3453fc0dadf464d7958e5a25bc01198ac77a9309ef424dd2cbca05b79",
+      "bytes": 33500,
+      "etag": "1b912436e8e7747eb733e902bc36aa3e",
+      "contentType": "image/webp",
+      "source": "assets/images/ui/petal-frame.webp"
+    },
+    "c5b23681f6557799d85307c3d389bf4916a7f95c6cf5f18f52f53dfc1edbce58.png": {
+      "key": "objects/c5b23681f6557799d85307c3d389bf4916a7f95c6cf5f18f52f53dfc1edbce58.png",
+      "sha256": "c5b23681f6557799d85307c3d389bf4916a7f95c6cf5f18f52f53dfc1edbce58",
+      "bytes": 1496071,
+      "etag": "736d8132f4e5a56bd556e5f8820e3f4d",
+      "contentType": "image/png",
+      "source": "cupid_link.png"
+    },
+    "06a653d1b40c264d28f106c8eb7dc9c278b8cdb6c02a357977ab2d600612212b.webp": {
+      "key": "objects/06a653d1b40c264d28f106c8eb7dc9c278b8cdb6c02a357977ab2d600612212b.webp",
+      "sha256": "06a653d1b40c264d28f106c8eb7dc9c278b8cdb6c02a357977ab2d600612212b",
+      "bytes": 200086,
+      "etag": "9208ec5c213806251b5462f1748818f3",
+      "contentType": "image/webp",
+      "source": "cupid_link.webp"
+    },
+    "f664c40e31ccd0ff17ce1059897bcec26211daf0f14d16830f6945b742bf5a51.png": {
+      "key": "objects/f664c40e31ccd0ff17ce1059897bcec26211daf0f14d16830f6945b742bf5a51.png",
+      "sha256": "f664c40e31ccd0ff17ce1059897bcec26211daf0f14d16830f6945b742bf5a51",
+      "bytes": 24524,
+      "etag": "163ed299f60f8671cd45d3fd0029dd34",
+      "contentType": "image/png",
+      "source": "favicon-192.png"
+    },
+    "e0b43172e68ea41f9650bf445467495a6c38d2dfc0dfb9eada0f507fc169b777.webp": {
+      "key": "objects/e0b43172e68ea41f9650bf445467495a6c38d2dfc0dfb9eada0f507fc169b777.webp",
+      "sha256": "e0b43172e68ea41f9650bf445467495a6c38d2dfc0dfb9eada0f507fc169b777",
+      "bytes": 2196,
+      "etag": "1a023b3160606027c7c411152fa505fe",
+      "contentType": "image/webp",
+      "source": "favicon-192.webp"
+    },
+    "43e627490ce1a130d1fdc75fdd67bc6bfcda3f1984709f7da5f9f347b051e61f.png": {
+      "key": "objects/43e627490ce1a130d1fdc75fdd67bc6bfcda3f1984709f7da5f9f347b051e61f.png",
+      "sha256": "43e627490ce1a130d1fdc75fdd67bc6bfcda3f1984709f7da5f9f347b051e61f",
+      "bytes": 174454,
+      "etag": "395c34a7d6d1bce71d573855692e123c",
+      "contentType": "image/png",
+      "source": "favicon-512.png"
+    },
+    "2b68b8a7e659deee219a3e52a0632c306682ecdf8749dc5426be95f58a0a941a.webp": {
+      "key": "objects/2b68b8a7e659deee219a3e52a0632c306682ecdf8749dc5426be95f58a0a941a.webp",
+      "sha256": "2b68b8a7e659deee219a3e52a0632c306682ecdf8749dc5426be95f58a0a941a",
+      "bytes": 6420,
+      "etag": "a6640dd15c94535b2ac6c16ca3a98122",
+      "contentType": "image/webp",
+      "source": "favicon-512.webp"
+    },
+    "f77bfad1710e0ed690c9a42f3426cb10c178a22c3e2a750b4aec14533c03381a.ico": {
+      "key": "objects/f77bfad1710e0ed690c9a42f3426cb10c178a22c3e2a750b4aec14533c03381a.ico",
+      "sha256": "f77bfad1710e0ed690c9a42f3426cb10c178a22c3e2a750b4aec14533c03381a",
+      "bytes": 4487,
+      "etag": "d8b58181c03f6c5f38fd29aad7ba62ff",
+      "contentType": "image/x-icon",
+      "source": "favicon.ico"
+    }
+  },
+  "routes": {
+    "assets/images/background/annex_exhibit_hallway.lossless.webp": "f1a348669c0ef4703016c665fc983795636f11322ac5472064dbaacad756fd90.webp",
+    "assets/images/background/annex_exhibit_hallway.png": "08dbb9dac360b3b6ab7bfb2bd37a004c32bd7f7c9e0dfc4b3648aa814b171223.png",
+    "assets/images/background/annex_exhibit_hallway.webp": "eeb2890a1c250cf2e2f2440dacf4c7751ca2be1ae9fe46f08b11bd3e0fffb182.webp",
+    "assets/images/background/arcade.lossless.webp": "ab39a9ed5333d7189fedf8a9fe976d7d63396287e46b33d0e005f322a8815352.webp",
+    "assets/images/background/arcade.png": "523f8dfa6a78385c2167268a59c65a66f2911965d65da3c4715975f326b376ec.png",
+    "assets/images/background/arcade.webp": "6a8e9c84c20331fd137074d29cc9e59c9e5b3fdc1c4b5471a301c11749ea7b0d.webp",
+    "assets/images/background/bookstore.lossless.webp": "3587c403e6adfea2ac29b38bd66dc0d14055273b52948fef4281d40f1db46fef.webp",
+    "assets/images/background/bookstore.png": "83ca3c27b8ceaca8c7fee2924139eba96df6848e4b976cec01284a1782d579e1.png",
+    "assets/images/background/bookstore.webp": "c1283d902935576d42b86bc97eebd302cb3b43d0a765c065ba633b9876026361.webp",
+    "assets/images/background/cafe.lossless.webp": "4b909437e765e0ea922f128629ad491ddf5c935697f091c0e1988c65ade4ff50.webp",
+    "assets/images/background/cafe.png": "2b94c6f18f4f2e8b409c91454401b77b9880fa62d16c029a95364abeeb8f4bad.png",
+    "assets/images/background/cafe.webp": "22e3c9e28eaabdc60fd731cda9d5cdbc4923365ad167be3f052fa5879ab356cd.webp",
+    "assets/images/background/dain_broadcast_booth.lossless.webp": "029534f7a46068847248c0b5ec9d1e313050f67084b4d170c4b82a6964129bc4.webp",
+    "assets/images/background/dain_broadcast_booth.png": "2a132a70c4226220eb34b2246b63eee4fd34a019175687e6c42a62aa425f67d8.png",
+    "assets/images/background/dain_broadcast_booth.webp": "4038b7765974edda3b534cd27a85ec89d3d95e0c8c7900b6ebb68547e64acb67.webp",
+    "assets/images/background/flower_shop.webp": "5eb777f3c38e1790e6614e6d1ad3f0a5417e0e6d5db512c3c7a900bc149c3837.webp",
+    "assets/images/background/gate_bloom.jpg": "dc9247c6cd944d6080aea2fca4cde3c08d1613387fe95723b05233ce304ce635.jpg",
+    "assets/images/background/gym.lossless.webp": "a49343fc4b2e0e4c6aa2c22b751c9675e87a6b44b2db0d4c06e3c6fb71183286.webp",
+    "assets/images/background/gym.png": "27c9725a3758f0fc4ae6fb6b8fd0c867a11c1452ec8b8ad464cb09c6834fbaa5.png",
+    "assets/images/background/gym.webp": "738a819f6ef4018f3f58087b36e570cd88ac9ad9ad3cbd37c1d7ccf10d946b57.webp",
+    "assets/images/background/library_old.lossless.webp": "b905fa199a99030ca2a0baad99a91dcff057bf7ab6e13ac38719a2d54674574e.webp",
+    "assets/images/background/library_old.png": "6ab37f8cf1b5d2ab6aa3c44385c7a0566c3d84c300161b04c04e7e530e81b180.png",
+    "assets/images/background/library_old.webp": "899bf99099b85ef2107545431d67f304a6e584f423dc60d557aa9ac07de488ad.webp",
+    "assets/images/background/museum.lossless.webp": "047bcd0eb733599de147af32d9d516c8c020e2d8c5fc1ed25ba58546c8ead6a0.webp",
+    "assets/images/background/museum.png": "cb63ec781d616b9324714a66303c1368623ebdc378c1aeba3d1858cf379ecf7e.png",
+    "assets/images/background/museum.webp": "fb233ef387ef0bf4a599f396845950f0ef2e9a271792ede8e41a7ee41297949b.webp",
+    "assets/images/background/nurse_bedroom_pills.jpg": "5f4bdf1cfd0a0284e8fb0704d5c86926de0584d0ea594df7d4e90aeec6abf48d.jpg",
+    "assets/images/background/nurse_house.lossless.webp": "7b49cd79215687a77fa0df2acc68986eb4ae6bb071b7cfc457b3b2b706c48129.webp",
+    "assets/images/background/nurse_house.png": "f4a4f821c4f1c9af3197117d9ebe30f535ec776a270ed207aedf5e9d04361de3.png",
+    "assets/images/background/nurse_house.webp": "c66b0c7188eb6bf96c3c9a59b739a44f5cac2ca7672e2778c8cc797cb7b46cc3.webp",
+    "assets/images/background/nurse_house_day.webp": "5f780be7256d13542bb6ac9dced1734a2c700d319a543e8dcba1fa7a6001a634.webp",
+    "assets/images/background/nurse_room.lossless.webp": "19302a3cb6f8476b17ddd82b0fd1d368013413e93de425ffd3a9692a2a06c035.webp",
+    "assets/images/background/nurse_room.png": "618edba8e0f2931971a4eb13812bc1636a6c8c8badd54ac73658212350fdc4cc.png",
+    "assets/images/background/nurse_room.webp": "2ff1c1856a41e8c103835fbc7c383a671fcc386735f61da7e86cb03cc77940ba.webp",
+    "assets/images/background/park.lossless.webp": "8382b6e5fb2873f6f2cacf6bcc1c4c9a5eb6181623eee764b60a8cd989d2cbac.webp",
+    "assets/images/background/park.png": "9d0533a3dd3abf2529d70dc469547dcb834fdf652d14f5c51fa0e8f115298fb2.png",
+    "assets/images/background/park.webp": "266f33fe63ebb11aa5251c42262b283a8d43ac5662f28fca34a2b36cdb2e967e.webp",
+    "assets/images/background/playground.lossless.webp": "9888cf4339849df4270a53c7c41b70a970743b4ebf418ddf46b30ffc7c512ad6.webp",
+    "assets/images/background/playground.png": "2a1f034a6dc89258b09f8af0e9367a11b89f787eed67a4f5f32f3b2b9f4d94da.png",
+    "assets/images/background/playground.webp": "fe06e9cb21703029d62206726eaf9f041ac624d2ade59d70325ade96e985607e.webp",
+    "assets/images/background/riin_lab_pills.jpg": "2273616ee7a5e19f6e84870ea4e0d2f3dcc57f819510550a8326b7faf414ece1.jpg",
+    "assets/images/background/room_my.lossless.webp": "5c220eb934c2ad183f8e9a132f83bc8fdaf4042d01b8b0dd543954b9ebe4afe5.webp",
+    "assets/images/background/room_my.png": "f4e789e827e400f9968df33a1e41ecdae3591eb447966482103f189572a43cb3.png",
+    "assets/images/background/room_my.webp": "6bbc18faffda42a3967262e437ec5528638ca265c56a90f869df5627171a20e5.webp",
+    "assets/images/background/room_my_day.webp": "2d3f8f298720987088520c2411197d929929135f9c19d32d0cb435a6ab59627e.webp",
+    "assets/images/background/room_school.lossless.webp": "63babe34fe488ad708cc0de0c4cce4562c72fc1ccc995230833123e94c6674cd.webp",
+    "assets/images/background/room_school.png": "ed0cddd3c77649915a57fdd66ca97cce7673b183a9d389b0cd1e57dc4357468e.png",
+    "assets/images/background/room_school.webp": "8fc4fa548dc8d9e32f50e1bba147f43909ad43fa4f1bde93f70542d3c884b84c.webp",
+    "assets/images/background/school.lossless.webp": "5d0a887724b694bb1d6f37aca9c290961244b2740a7cba07a99b9f524e729cc7.webp",
+    "assets/images/background/school.png": "48b250a325a4ba19127e328b2190c73db54d001141b72a9875064dec19048eac.png",
+    "assets/images/background/school.webp": "84eee89777be45fbe9c6c904f008d81474d8d1892d0d74efb96b4ed9285a4e2d.webp",
+    "assets/images/background/school_back.lossless.webp": "39e260acf26a00c7f5113a0dacdaefa0fea2e820c642195de43e2f7f898806d4.webp",
+    "assets/images/background/school_back.png": "2cc24cfbb56d1bc335e2d95420ccbc0b81d406ebc0d50629b7ff17701782be7f.png",
+    "assets/images/background/school_back.webp": "392b0cf8a931e8b211b4ddaa0430ca482fb5110db45fec8effeda3212742577f.webp",
+    "assets/images/background/school_basement.lossless.webp": "edf4227bb10d21e42bc7cabcfdf089288441096dad6be968aa7f3fcd3468861c.webp",
+    "assets/images/background/school_basement.png": "6c519c90a00bc6ae0ccfc703ab4aa88405d1c330734fd97af034a420e2a3abe9.png",
+    "assets/images/background/school_basement.webp": "f464faa76e2894237ef2ce5cdc01fc76a5bd1d635d3a20be70d35036e9c6e8db.webp",
+    "assets/images/background/school_event_classroom.lossless.webp": "e2c132afe4c5c251170cbf09c343deac807c61099f82a18ee5512afda69ebdd1.webp",
+    "assets/images/background/school_event_classroom.png": "030dc335acad8ffeeb89607ed0bdbdec0b4f06fe987af5c613c57d5ac258fe48.png",
+    "assets/images/background/school_event_classroom.webp": "b63024b5f7d2ede88de439210dc7620c02634af2fbdaf2167dc535aa047c7e4d.webp",
+    "assets/images/background/school_festival.png": "7f3ca87f38a6f0a0dfe17d50f65a23d5a351144706227faed1592ca44d185ba7.png",
+    "assets/images/background/school_festival.webp": "5ca304d8b8dc2bb9b7218bef6487ba352c2bd229b177c138d3c03048a0f9482e.webp",
+    "assets/images/background/school_hallway.lossless.webp": "8b101e1e3b14ecbbabb60e3d6a1d496e65a9ea3c48dd814ed77c2593c6a38ba4.webp",
+    "assets/images/background/school_hallway.png": "c3363fdc41008493cd6a07441f014942597b0da15c7c7b4a84e8c7506f08f6d2.png",
+    "assets/images/background/school_hallway.webp": "913d0b7a84742a6f814eb68506a639b140cbc66fef990f5ade8c00b568af053d.webp",
+    "assets/images/background/school_stairwell.lossless.webp": "e5c345ead90f11de6b894d997cc8621130034b7d1eb81bc48a48ba764c05e819.webp",
+    "assets/images/background/school_stairwell.png": "25149356158dd5aeaa1ec1b6f98bb68ae5365b498ff75f8d4c3778aea138f70b.png",
+    "assets/images/background/school_stairwell.webp": "b76b3b6268110b8d95faeb9ad27dba3e57e5ef8379f74e1fc62160525272bc65.webp",
+    "assets/images/background/seyoun_room.lossless.webp": "18040dd757ba66b02422d2107f3bceda9d32da8d82eb54e4ba1103f8140f7655.webp",
+    "assets/images/background/seyoun_room.png": "520a5d851b25160c78b233dd5a6c5b97fe450785b6532249e7bfaa22e378c5b0.png",
+    "assets/images/background/seyoun_room.webp": "6e861cf13d26a48c301a05acf0681cd607819ad9462395180a38f564d23511a4.webp",
+    "assets/images/background/snack_shop.webp": "36ecf2a39908cb6bd75e4f2da88ab97f5a3dc50bf007c2e2b198057a132ee686.webp",
+    "assets/images/background/sojeong_flashback.lossless.webp": "900da0a718e70068bc4de063e29d4a0bc919e4f54b0cb15eec4517ab70c50174.webp",
+    "assets/images/background/sojeong_flashback.png": "83709b3cee7ea8d525f64cf9f5ebb079761fe5120b205f77cffc8de9f9817664.png",
+    "assets/images/background/sojeong_flashback.webp": "80c0e98ea6914faad8f68e7be6c6eb937883e6b3faff6515971e3c46f4c5c591.webp",
+    "assets/images/background/store.lossless.webp": "b3b26d77c049c3dbf83db7ac88a97fa9e40ab8632a2abb04e6837bf3c33ac84a.webp",
+    "assets/images/background/store.png": "cae4f516237a52443ee0ce3669bbb8f73f80bfddea96d9f4b026b6464a22e1e2.png",
+    "assets/images/background/store.webp": "8b5632efc3dd3e96880b21dca1877c51c3aaac3ee363221659e70c9b858cd677.webp",
+    "assets/images/background/street.lossless.webp": "346ae4afb75b3dabbe2a4333d31f5f01c3ba250cbc2d6e899c4bff95c6867591.webp",
+    "assets/images/background/street.png": "6bfc0657c675a41c6d4886cb6a1baf2cc8c0dc7cc662e4ae8261ea6c93e746a4.png",
+    "assets/images/background/street.webp": "a095c1187f4e472a721d9c3b7600051255e20612b30dfc893f4dc2bdf73f4020.webp",
+    "assets/images/background/student_room.lossless.webp": "b8dca526797051ff8e0e1c7b692ae363922c8ce7c08373cabe15b69471d2beb8.webp",
+    "assets/images/background/student_room.png": "3b3d802b364d2bd153b37a35d84a6509149a214a2fc55162fcc4ced51d51fb78.png",
+    "assets/images/background/student_room.webp": "c5ef1021f160b4ebf995ad18fc88a2f8a1714acb52e39951cc570cea11945b38.webp",
+    "assets/images/background/teacher_office.lossless.webp": "89b4920df457dc67697a73fc4ba98b5a6d2a8aebfbf7663ff6e1eeb1e6b0b97d.webp",
+    "assets/images/background/teacher_office.png": "1b48d2db2d42562bd1aaef1eac15d76549eddabcafe08f01119724a9205d00da.png",
+    "assets/images/background/teacher_office.webp": "82f5fc27eea80996ee96b1a2858f8fbd2661a04261bdea46a4ef9f5e8d51cf73.webp",
+    "assets/images/background/teacher_room.lossless.webp": "cff21a047bcc2698eb512139983db3c3861040cc7c08bfe3bd47081dd97a4900.webp",
+    "assets/images/background/teacher_room.png": "63adfa1c1013168f60df35cc4def966526144b5f74e469587c7d1ac1ec3571a6.png",
+    "assets/images/background/teacher_room.webp": "cce318cc101a7556800b159e22bc91373a9a8c4c631a1126e8a2d30a0349df45.webp",
+    "assets/images/background/title_landscape.lossless.webp": "598fb21e2e7687e73fd3182e06b6201c139937608374fdb84933f643614d18a0.webp",
+    "assets/images/background/title_landscape.png": "cb8acaed0da919ce5e717f094f094850f675e2f5f337437b3c948c75e5af384e.png",
+    "assets/images/background/title_landscape.webp": "bbe05ac423707ea59a7a8ac745624ea9ebf1413e7b2cee1e979f7fa759524856.webp",
+    "assets/images/background/title_portrait.lossless.webp": "598fb21e2e7687e73fd3182e06b6201c139937608374fdb84933f643614d18a0.webp",
+    "assets/images/background/title_portrait.png": "cb8acaed0da919ce5e717f094f094850f675e2f5f337437b3c948c75e5af384e.png",
+    "assets/images/background/title_portrait.webp": "bbe05ac423707ea59a7a8ac745624ea9ebf1413e7b2cee1e979f7fa759524856.webp",
+    "assets/images/background/title_square.lossless.webp": "598fb21e2e7687e73fd3182e06b6201c139937608374fdb84933f643614d18a0.webp",
+    "assets/images/background/title_square.png": "cb8acaed0da919ce5e717f094f094850f675e2f5f337437b3c948c75e5af384e.png",
+    "assets/images/background/title_square.webp": "bbe05ac423707ea59a7a8ac745624ea9ebf1413e7b2cee1e979f7fa759524856.webp",
+    "assets/images/background/top_school.lossless.webp": "60702ce4e889c6baf1eaa326d6f8a5c345b2a05f14c5d15a026fced1a3bb6f13.webp",
+    "assets/images/background/top_school.png": "63e46ab545944f424baa0a1a70e70e88de69d99af9d9a3ad1212c0908fcbd01e.png",
+    "assets/images/background/top_school.webp": "1a0c622bad51d941f13ffdf811ead5110a93dc0adf90c111e78b5a5190c5838b.webp",
+    "assets/images/background/yuna_hideout.lossless.webp": "96d264160314fa4c5c89fbadc7d35f5526e8ac5b47e8d7df940da651f05e8594.webp",
+    "assets/images/background/yuna_hideout.png": "7820de1d9d7b05ea86ddeead161595987837c4df53157fefa45fe19c077f00ed.png",
+    "assets/images/background/yuna_hideout.webp": "ad3308bf32a400cece8882f7066001f5ce39a4824873aff519c5271b9c52d1b0.webp",
+    "assets/images/background/yuna_hideout_day.webp": "233da0e52905fb0ab221b008be1e91c05d68f1cbaa78e64943095a08be0472f3.webp",
+    "assets/images/background/yuna_secret_rooftop.lossless.webp": "08d58454283681b802e8f5842266a7075a619d50d670b72060f21f5d91ab1d20.webp",
+    "assets/images/background/yuna_secret_rooftop.png": "f2a85091e6b2b058c5f20ef0fb9ff03608bf39247d43e976c5a97103b1bb165c.png",
+    "assets/images/background/yuna_secret_rooftop.webp": "aa2d896bee0b17a040613beb3ab455955348798e43cab5c0d762410021ec0e8f.webp",
+    "assets/images/screenshots/cupid-dialogue.jpg": "c0d8a13b1909eeb077c583769551c022157d2f2959207b93a3dff946fba3a9c7.jpg",
+    "assets/images/screenshots/cupid-school.jpg": "9ee3002d5fe1ff4aabf4050be805f1e15c3b6ed2cc1c8e53e4d86ffdeeaf04d3.jpg",
+    "assets/images/screenshots/cupid-title.jpg": "595e277b9f07d000d9da98c8390b4413fdd2144832a6a0dbf528545bd0783c22.jpg",
+    "assets/images/social/cupid-seoyeon-portrait.png": "93e8c15bdc4034e405d7e98c506d1375d28537fbf15081c844785035cc73a2d7.png",
+    "assets/images/social/cupid-seoyeon-portrait.webp": "bef62eb77a36737031356ddbb975d15aece952c999ce51d065d061938933e811.webp",
+    "assets/images/ui/button-frame.svg": "059ae197ccb52f8e52872836d5cb28ccbaef5b77311b50c299143feffb016203.svg",
+    "assets/images/ui/character-silhouette.svg": "027f59bf8fc9e2f5e25db4635398dcb2f460b3dc376cb9bb8142205fb26b8eff.svg",
+    "assets/images/ui/petal-frame.webp": "e97bead3453fc0dadf464d7958e5a25bc01198ac77a9309ef424dd2cbca05b79.webp",
+    "cupid_link.png": "c5b23681f6557799d85307c3d389bf4916a7f95c6cf5f18f52f53dfc1edbce58.png",
+    "cupid_link.webp": "06a653d1b40c264d28f106c8eb7dc9c278b8cdb6c02a357977ab2d600612212b.webp",
+    "favicon-192.png": "f664c40e31ccd0ff17ce1059897bcec26211daf0f14d16830f6945b742bf5a51.png",
+    "favicon-192.webp": "e0b43172e68ea41f9650bf445467495a6c38d2dfc0dfb9eada0f507fc169b777.webp",
+    "favicon-512.png": "43e627490ce1a130d1fdc75fdd67bc6bfcda3f1984709f7da5f9f347b051e61f.png",
+    "favicon-512.webp": "2b68b8a7e659deee219a3e52a0632c306682ecdf8749dc5426be95f58a0a941a.webp",
+    "favicon.ico": "f77bfad1710e0ed690c9a42f3426cb10c178a22c3e2a750b4aec14533c03381a.ico"
+  }
+}

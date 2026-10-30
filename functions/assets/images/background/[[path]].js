@@ -9,6 +9,6 @@ export function onRequest(context) {
   if (id && Object.hasOwn(MEDIA_MANIFEST, id)) {
     return new Response('Not found', { status: 404, headers: { 'cache-control': 'no-store' } });
   }
-  // Ordinary scene backgrounds remain public static assets.
+  // The root image middleware serves registered public backgrounds from R2.
   return context.next();
 }

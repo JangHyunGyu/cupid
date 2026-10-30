@@ -13,3 +13,18 @@ dist/
 # Media encryption key (never commit)
 .cupid-media-key
 .cupid-media-key.*
+
+# Image binaries live in R2; version their SHA-256 manifests instead.
+*.png
+*.webp
+*.jpg
+*.jpeg
+*.gif
+*.avif
+*.svg
+*.ico
+*.PNG
+*.JPG
+*.JPEG
+*.WEBP
+*.restoring

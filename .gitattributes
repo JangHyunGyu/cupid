@@ -1,0 +1,3 @@
+config/public-images.json text eol=lf
+config/image-sources.json text eol=lf
+config/image-publication.json text eol=lf

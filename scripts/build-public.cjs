@@ -5,8 +5,10 @@ const { listProtectedAssets } = require('./lib/cupid-protected-assets.cjs');
 const { rewriteReferences } = require('./character-assets.cjs');
 const root = path.resolve(__dirname, '..');
 const output = path.join(root, 'dist');
+const { IMAGE, verifyPublished, prepareImageRoutes } = require('./image-assets.cjs');
 
 function buildPublic() {
+  verifyPublished(root);
   const protectedFiles = new Set(listProtectedAssets(root));
   const publicFiles = [];
   const topLevel = /^(?:(?:index|game|gallery)(?:-(?:ko|en|ja|es|fr|de|pt|zh))?\.html|404\.html|manifest(?:-(?:ko|en|ja|es|fr|de|pt|zh))?\.json|favicon(?:-(?:192|512))?\.(?:ico|png|webp)|cupid_link(?:_new)?\.(?:png|webp)|service-worker\.js|robots\.txt|llms(?:-full)?\.txt|sitemap\.xml|_headers)$/;
@@ -29,6 +31,7 @@ function buildPublic() {
         if (rel === 'assets/images/masters' || rel === 'assets/images/characters' || rel === 'assets/characters') continue;
         walk(rel);
       } else if (entry.isFile()) {
+        if (IMAGE.test(rel)) continue;
         if (!dir && !topLevel.test(entry.name)) continue;
         if (dir === 'seo' && !entry.name.endsWith('.html')) continue;
         if (rel.startsWith('assets/') && !isRuntimeAsset(rel)) continue;
@@ -51,6 +54,7 @@ function buildPublic() {
       fs.writeFileSync(target, rewriteReferences(root, fs.readFileSync(path.join(root, rel), 'utf8')));
     } else fs.copyFileSync(path.join(root, rel), target);
   }
+  prepareImageRoutes(root, output);
   console.log(`[public] ${publicFiles.length} runtime files; protected images, masters and repository sources excluded`);
   return { output, publicFiles, protectedFiles: [...protectedFiles] };
 }
