@@ -2173,130 +2173,94 @@
       "backupKey": "snapshots/20261030/cupid/part-0005.zip"
     },
     "assets/characters/nurse/expressions/climax/01/sprite.png": {
-      "sha256": "c1ba96cffdf72e853c8d9bb03521b7b8ff11d4ddef465974f825bacad98bbab0",
-      "bytes": 1773642,
-      "snapshotPart": "part-0005.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0005.zip"
+      "sha256": "8a6ea84b2e14d67ddea1fe474266bb296db3bc17b69526af55f131db96e68ed5",
+      "bytes": 1787057,
+      "backupKey": "objects/sources/8a6ea84b2e14d67ddea1fe474266bb296db3bc17b69526af55f131db96e68ed5.png"
     },
     "assets/characters/nurse/expressions/climax/01/sprite.webp": {
-      "sha256": "90a3265e3d1d3f72b4fd5a76b1a260abf83aadbf55e495431692ead5040071fb",
-      "bytes": 204329,
-      "snapshotPart": "part-0005.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0005.zip"
+      "sha256": "768f902b8f162e329198b73c78d224b5c9201d4fe485174a731d98bba4373631",
+      "bytes": 1079901,
+      "backupKey": "objects/sources/768f902b8f162e329198b73c78d224b5c9201d4fe485174a731d98bba4373631.webp"
     },
     "assets/characters/nurse/expressions/climax/02/sprite.png": {
-      "sha256": "4ef416848dc1e1321803b52d005418867aab02ad1c829632466c54b8df37f1a7",
-      "bytes": 1839011,
-      "snapshotPart": "part-0005.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0005.zip"
+      "sha256": "914873d11281939bdf9230410d826249016d4fd17986a5022a9991b62a0364ac",
+      "bytes": 1839208,
+      "backupKey": "objects/sources/914873d11281939bdf9230410d826249016d4fd17986a5022a9991b62a0364ac.png"
     },
     "assets/characters/nurse/expressions/climax/02/sprite.webp": {
-      "sha256": "07b7d3b1794518dbb164781efd06b7682beb26cb42db3000fd3466addae65da1",
-      "bytes": 206753,
-      "snapshotPart": "part-0005.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0005.zip"
+      "sha256": "aaa7dc74c7ce24701179c23be7cac38450144b3a7be637db9bcd1a0bbbe8f2de",
+      "bytes": 1098807,
+      "backupKey": "objects/sources/aaa7dc74c7ce24701179c23be7cac38450144b3a7be637db9bcd1a0bbbe8f2de.webp"
     },
     "assets/characters/nurse/expressions/climax/03/sprite.png": {
-      "sha256": "22b6c804b3160c3fbc0044a5dd06cb7a37ed4300067d47d37d8e0da538ca9496",
-      "bytes": 1881648,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "5d44fd3dd56fe4541bc19c345562679998418b6b3e2b42ffaa23a4eca6d6653c",
+      "bytes": 1885743,
+      "backupKey": "objects/sources/5d44fd3dd56fe4541bc19c345562679998418b6b3e2b42ffaa23a4eca6d6653c.png"
     },
     "assets/characters/nurse/expressions/climax/03/sprite.webp": {
-      "sha256": "bee313624ee49e8b09f8b94a1667ecfeecd428319069172452e3222729bc1817",
-      "bytes": 218031,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "e4657b9c79c71577a627fae64c4fded60d68011fdee1052949b8e5faf81c0c03",
+      "bytes": 1128189,
+      "backupKey": "objects/sources/e4657b9c79c71577a627fae64c4fded60d68011fdee1052949b8e5faf81c0c03.webp"
     },
     "assets/characters/nurse/expressions/climax/04/sprite.png": {
-      "sha256": "c6dbcdfa3a911a24f03109e3c9b26db74db173185b275261cd912ff0efad21eb",
-      "bytes": 1942622,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "7f4461b394e8f4b81a33a8491fff0541d50f620175bfa4006078b6d52049d805",
+      "bytes": 1944091,
+      "backupKey": "objects/sources/7f4461b394e8f4b81a33a8491fff0541d50f620175bfa4006078b6d52049d805.png"
     },
     "assets/characters/nurse/expressions/climax/04/sprite.webp": {
-      "sha256": "811b32b2921e81514111b91e9ccd6e14fb9362d1077f2c121ae5f3ae6a3d4197",
-      "bytes": 228309,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "e02c43e6db557f2273e91296abb7dbd67a1d89612d76666103072ca017affeaf",
+      "bytes": 1161537,
+      "backupKey": "objects/sources/e02c43e6db557f2273e91296abb7dbd67a1d89612d76666103072ca017affeaf.webp"
     },
     "assets/characters/nurse/expressions/climax/05/sprite.png": {
-      "sha256": "488fa60ba43d2b3ea4716e3451920e33b3a05254a808291e13fca8e1bef114c0",
-      "bytes": 1949537,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "894706571fd445401f137d66332843844442c102aa4d4c1c522f8102ae95dab5",
+      "bytes": 1964108,
+      "backupKey": "objects/sources/894706571fd445401f137d66332843844442c102aa4d4c1c522f8102ae95dab5.png"
     },
     "assets/characters/nurse/expressions/climax/05/sprite.webp": {
-      "sha256": "1603ac0d6893934f6738b79d08b0fcb45fc589f2fc6119da505650d81fd6e0cf",
-      "bytes": 233627,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "a459babcbb263d8786daaf4466bdeb83d7e47f13d490ba4245e1ef9977587e9a",
+      "bytes": 1180897,
+      "backupKey": "objects/sources/a459babcbb263d8786daaf4466bdeb83d7e47f13d490ba4245e1ef9977587e9a.webp"
     },
     "assets/characters/nurse/expressions/climax/06/sprite.png": {
-      "sha256": "5dfac8191a1120f595cb0c5749204d745b756930e7245b8d30ab952f0dd01ecd",
-      "bytes": 1793276,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "df7032138dbf01c17f7ee833bef3d65e0aaa0bfe0b7c322c38b200d370e2e544",
+      "bytes": 1792902,
+      "backupKey": "objects/sources/df7032138dbf01c17f7ee833bef3d65e0aaa0bfe0b7c322c38b200d370e2e544.png"
     },
     "assets/characters/nurse/expressions/climax/06/sprite.webp": {
-      "sha256": "35c433def227b298321e94bd6693d1fd3196d50fd28a4557cb39e7f9a066ac45",
-      "bytes": 205369,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "248f8b389a8452e1e64a87c0d5258fa0e644832448d3998df8996357d8627dcc",
+      "bytes": 1120487,
+      "backupKey": "objects/sources/248f8b389a8452e1e64a87c0d5258fa0e644832448d3998df8996357d8627dcc.webp"
     },
     "assets/characters/nurse/expressions/climax/07/sprite.png": {
-      "sha256": "d353495b5fe762eb4600f21c96dc62902bc1336995baa1442ac53161f902daa0",
-      "bytes": 1756015,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "a90a80077d3d41e262fa1c035be80d992616c49e16f3d072bcf73e05d484c17c",
+      "bytes": 1754091,
+      "backupKey": "objects/sources/a90a80077d3d41e262fa1c035be80d992616c49e16f3d072bcf73e05d484c17c.png"
     },
     "assets/characters/nurse/expressions/climax/07/sprite.webp": {
-      "sha256": "a22807197ee090d11acf09f80967ea88b50c5f139a53472a5c5fefb7c6dd9c9d",
-      "bytes": 181433,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "df5abe63a7c860283810a0da480aa5aabb224ddb09daf5de75a55ab829e255c4",
+      "bytes": 1144873,
+      "backupKey": "objects/sources/df5abe63a7c860283810a0da480aa5aabb224ddb09daf5de75a55ab829e255c4.webp"
     },
     "assets/characters/nurse/expressions/climax/08/sprite.png": {
-      "sha256": "12f33afcd0f0c5c3425995a7c9b1e887a5f930680b10867f165f69a8a470d263",
-      "bytes": 1832604,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "54db0313a910d783ad3215384d0dbaccbfd0d14a54e4aac53bfb520fe336bd77",
+      "bytes": 1821306,
+      "backupKey": "objects/sources/54db0313a910d783ad3215384d0dbaccbfd0d14a54e4aac53bfb520fe336bd77.png"
     },
     "assets/characters/nurse/expressions/climax/08/sprite.webp": {
-      "sha256": "36540da4179c23a16b7db4c8f359b9ba091f971bb3fbb27174a2fc74a912d65a",
-      "bytes": 191587,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "f96fbbad711952bf3d1e0b6ec583d581c4abb8b30ef6130a4afb0bc80f625ba4",
+      "bytes": 1176165,
+      "backupKey": "objects/sources/f96fbbad711952bf3d1e0b6ec583d581c4abb8b30ef6130a4afb0bc80f625ba4.webp"
     },
     "assets/characters/nurse/expressions/climax/09/sprite.png": {
-      "sha256": "00f5349f3e314d519a813d13474da32858fc9b3b2d525d4b6c77590c2533ddc4",
-      "bytes": 1805676,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "d0d6c375a9a8877e76e24a41dcb93a7498236e8a453d77831a66ebc767a628ae",
+      "bytes": 1804676,
+      "backupKey": "objects/sources/d0d6c375a9a8877e76e24a41dcb93a7498236e8a453d77831a66ebc767a628ae.png"
     },
     "assets/characters/nurse/expressions/climax/09/sprite.webp": {
-      "sha256": "e3b156f0f8809781ddbfcfa59b2ce2ec84853d29dde1c1510fdf1b6deda67aa9",
-      "bytes": 191359,
-      "snapshotPart": "part-0006.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0006.zip"
+      "sha256": "5c7b946d70c31ee79571b4150dbe823f89f4528244a884ab4d3f955fc36801e8",
+      "bytes": 1163981,
+      "backupKey": "objects/sources/5c7b946d70c31ee79571b4150dbe823f89f4528244a884ab4d3f955fc36801e8.webp"
     },
     "assets/characters/nurse/expressions/confused/01/sprite.png": {
       "sha256": "6ce9d9d5bb40ef34c9182858bc32c4c54774dbbe036ab68bdc5bce217feab4bd",
@@ -2866,88 +2830,64 @@
       "backupKey": "snapshots/20261030/cupid/part-0007.zip"
     },
     "assets/characters/seoyeon/expressions/climax/01/sprite.png": {
-      "sha256": "0b491a024d3e72b31ccc64ea347a27a1118b760f4325e03315968102d967010b",
-      "bytes": 1416208,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "bb149c98011b25472cfeeab3cb4d3761451f27c6c89aee7b22887e5273e28da7",
+      "bytes": 1294139,
+      "backupKey": "objects/sources/bb149c98011b25472cfeeab3cb4d3761451f27c6c89aee7b22887e5273e28da7.png"
     },
     "assets/characters/seoyeon/expressions/climax/01/sprite.webp": {
-      "sha256": "3cc57ea6ec03f1f8d47533c3b613bd7ea5b032c8c97699c727a9096eb2e9886d",
-      "bytes": 142371,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "c173795724cd3a24d024ebe9623ba3a25464dd7d9849dd21e27d8d4a864e0560",
+      "bytes": 797723,
+      "backupKey": "objects/sources/c173795724cd3a24d024ebe9623ba3a25464dd7d9849dd21e27d8d4a864e0560.webp"
     },
     "assets/characters/seoyeon/expressions/climax/02/sprite.png": {
-      "sha256": "51b1dbef07f28c64d00f43a28e122da7069674f5a7d672333cc8e03ecf7b95c7",
-      "bytes": 1274982,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "9b28511abf03df251772d454411c666676dd74b7a7a3851213eb06fd8972a300",
+      "bytes": 1265857,
+      "backupKey": "objects/sources/9b28511abf03df251772d454411c666676dd74b7a7a3851213eb06fd8972a300.png"
     },
     "assets/characters/seoyeon/expressions/climax/02/sprite.webp": {
-      "sha256": "6682c8acc378684b9597283a5e43d76e0f1c5055c39599bd0aac9e83adf58eb1",
-      "bytes": 168607,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "a40db8ea6a60e1802e1d6fc9b2495b8aa6e7e5cff29c19185725ca0741ceb035",
+      "bytes": 761565,
+      "backupKey": "objects/sources/a40db8ea6a60e1802e1d6fc9b2495b8aa6e7e5cff29c19185725ca0741ceb035.webp"
     },
     "assets/characters/seoyeon/expressions/climax/03/sprite.png": {
-      "sha256": "008aa8eaa9f93083ac562ecd6906f0a3653896b6e307396c03a6d4cd556edf8d",
-      "bytes": 1261066,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "76856ce23feee5479e1d3e504b96630e155ded84cbbbff914c44efd2126ecb25",
+      "bytes": 1263315,
+      "backupKey": "objects/sources/76856ce23feee5479e1d3e504b96630e155ded84cbbbff914c44efd2126ecb25.png"
     },
     "assets/characters/seoyeon/expressions/climax/03/sprite.webp": {
-      "sha256": "d4d3af2481819f6c377ce650bb274affa598a078498b3005dc327afe6f83ccd5",
-      "bytes": 171879,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "14b1f4ea6183d6ddbcf73d87567f8b0053af1b7d5b0bf54c4053df280ac03261",
+      "bytes": 758289,
+      "backupKey": "objects/sources/14b1f4ea6183d6ddbcf73d87567f8b0053af1b7d5b0bf54c4053df280ac03261.webp"
     },
     "assets/characters/seoyeon/expressions/climax/04/sprite.png": {
-      "sha256": "59094aa72be933f0dfd2ac79c6abcdaa2360c509105ac082c3aee3e19570c148",
-      "bytes": 1560740,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "a4719b2038c9ac536025e50b202f668974414b40a10988515b5b7f35293ee9ee",
+      "bytes": 1430625,
+      "backupKey": "objects/sources/a4719b2038c9ac536025e50b202f668974414b40a10988515b5b7f35293ee9ee.png"
     },
     "assets/characters/seoyeon/expressions/climax/04/sprite.webp": {
-      "sha256": "cc9b3ecbaf5ce9df3cfe4506144f9adf79f152c5b7984208df97a8f9beb2caaf",
-      "bytes": 159217,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "72a6605c5acd9f5f055a9f909534377afb39ffd928dba05476d3df911e1220b3",
+      "bytes": 880873,
+      "backupKey": "objects/sources/72a6605c5acd9f5f055a9f909534377afb39ffd928dba05476d3df911e1220b3.webp"
     },
     "assets/characters/seoyeon/expressions/climax/05/sprite.png": {
-      "sha256": "500971d203eb24b6e5d00fc5ecaf74f895227e0ea9ff1745feadfbbaff2e2fef",
-      "bytes": 1740101,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "3dbde27af652eb78d8ce961b83375609e5dd67d0160c2157e381f95ed6069168",
+      "bytes": 1624262,
+      "backupKey": "objects/sources/3dbde27af652eb78d8ce961b83375609e5dd67d0160c2157e381f95ed6069168.png"
     },
     "assets/characters/seoyeon/expressions/climax/05/sprite.webp": {
-      "sha256": "ce6861e7e66949579e5a23b65c4f969e080af8ff3f617dd8f90826b086d8975e",
-      "bytes": 172881,
-      "snapshotPart": "part-0007.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0007.zip"
+      "sha256": "57fd936a87edbbcf8d62a300fd5b33a11747b99bd4e8a26a3cb82fe546a021c8",
+      "bytes": 1020281,
+      "backupKey": "objects/sources/57fd936a87edbbcf8d62a300fd5b33a11747b99bd4e8a26a3cb82fe546a021c8.webp"
     },
     "assets/characters/seoyeon/expressions/climax/06/sprite.png": {
-      "sha256": "9814ec50446afc993d8351b797d7ae8df548b108cfe99665c6ae56813341aac0",
-      "bytes": 1617329,
-      "snapshotPart": "part-0008.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0008.zip"
+      "sha256": "486fd8e7bf5ba81cc8950600c1ad2025c3c8ba3f48ad6b5ff5f48681c9a6d54b",
+      "bytes": 1479813,
+      "backupKey": "objects/sources/486fd8e7bf5ba81cc8950600c1ad2025c3c8ba3f48ad6b5ff5f48681c9a6d54b.png"
     },
     "assets/characters/seoyeon/expressions/climax/06/sprite.webp": {
-      "sha256": "cd2f82e38120b37fcd182b446042f127e52ac305cbe40d0b4daf3bd769f47bbe",
-      "bytes": 161849,
-      "snapshotPart": "part-0008.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0008.zip"
+      "sha256": "56bd21cfd706d4d03e5d309b4a8b0172afe4551e5adb7a25ec3ebb3534bd58d9",
+      "bytes": 910919,
+      "backupKey": "objects/sources/56bd21cfd706d4d03e5d309b4a8b0172afe4551e5adb7a25ec3ebb3534bd58d9.webp"
     },
     "assets/characters/seoyeon/expressions/confused/01/sprite.png": {
       "sha256": "a6621e08920d31b821c9b8cb0512eb54c54659dcd1ecdb1cfc6b93c624209e66",
@@ -8751,130 +8691,94 @@
       "backupKey": "snapshots/20261030/cupid/part-0035.zip"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax.png": {
-      "sha256": "a63b513776264ba3ef8738ae8822b1eace9ff19dc57d5109529cc73aabfe81be",
-      "bytes": 1773605,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "d6a9da7ec84aee1e7cc5678d332ad1b678b0def3a7f007242f6aea6b95b28cf8",
+      "bytes": 1787020,
+      "backupKey": "objects/sources/d6a9da7ec84aee1e7cc5678d332ad1b678b0def3a7f007242f6aea6b95b28cf8.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax.webp": {
-      "sha256": "3cb9cc1b259e4a52819a4945e60dd4182c99e6e96a19052b117907c4a1e41643",
-      "bytes": 204292,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "b45b8aada4dfed532c0a901bf32dec55b20ba40f23f8221cf602cb7d050057a5",
+      "bytes": 1079864,
+      "backupKey": "objects/sources/b45b8aada4dfed532c0a901bf32dec55b20ba40f23f8221cf602cb7d050057a5.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_02.png": {
-      "sha256": "c1d158a4c963fb179b2e3ac13441d873d23974038955d93c7e51efde6e175a9a",
-      "bytes": 1838974,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "98a70a580662c2e624751b8f7d131630bb73ddfc9e21ced00627121a518f740c",
+      "bytes": 1839171,
+      "backupKey": "objects/sources/98a70a580662c2e624751b8f7d131630bb73ddfc9e21ced00627121a518f740c.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_02.webp": {
-      "sha256": "1d461edf7f255ecf8d9f2c4000dfeb6a8975a04dc8cf710ef406d5b2718cba34",
-      "bytes": 206716,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "b70ddce50698588da87c0e4ae88abb4a095effa7d2c8538619718599c00747b4",
+      "bytes": 1098770,
+      "backupKey": "objects/sources/b70ddce50698588da87c0e4ae88abb4a095effa7d2c8538619718599c00747b4.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_03.png": {
-      "sha256": "c1219bc3edbf53ac59ef09d2aa06d471ccad0b5b156fe9863a7f1a48fc4f8ce5",
-      "bytes": 1881611,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "02737f73c2b846770cdc4ba8d7d2b86ae9d66702ae6357cd4f5f04c8f42dace0",
+      "bytes": 1885706,
+      "backupKey": "objects/sources/02737f73c2b846770cdc4ba8d7d2b86ae9d66702ae6357cd4f5f04c8f42dace0.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_03.webp": {
-      "sha256": "8a8ffd2c26483c73d6d98e8e8b879d6d4131fb2d2268f94f3c35e94da8b69e93",
-      "bytes": 217994,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "cdaa796b095ffdcd2813fa2126be2dbc826c8fc1cd6b84beef8730c6dd4a6893",
+      "bytes": 1128152,
+      "backupKey": "objects/sources/cdaa796b095ffdcd2813fa2126be2dbc826c8fc1cd6b84beef8730c6dd4a6893.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_04.png": {
-      "sha256": "dd2868d00ea65eee0010de803fc7f226818ad8043a6c8e774eb5d806bdbf2663",
-      "bytes": 1942585,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "e95b41988a47c4d854461fd96f30502432c3b80edaf81289b98a5d8f1073e031",
+      "bytes": 1944054,
+      "backupKey": "objects/sources/e95b41988a47c4d854461fd96f30502432c3b80edaf81289b98a5d8f1073e031.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_04.webp": {
-      "sha256": "66f718d0a63f9540be9abc8cbd37484a1fa6355d78750ca017ce0b3da9938cc0",
-      "bytes": 228272,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "b128e0bed1dfef8f0f210a2c8d9233d51659f0b1763d38ae066a3640fee66e75",
+      "bytes": 1161500,
+      "backupKey": "objects/sources/b128e0bed1dfef8f0f210a2c8d9233d51659f0b1763d38ae066a3640fee66e75.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_05.png": {
-      "sha256": "ec3c58cc192132d3ab3380e45f8426d1c4f55006da7d4fe75cbc81859035f695",
-      "bytes": 1949500,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "0fe27fb5b87ed2b8536d6034c85aacd391d0ac02f4dde7dba7fdcaf729943188",
+      "bytes": 1964071,
+      "backupKey": "objects/sources/0fe27fb5b87ed2b8536d6034c85aacd391d0ac02f4dde7dba7fdcaf729943188.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_05.webp": {
-      "sha256": "5bf5248f7472eada4b3593930240298cecdd2be6add375ccdad6d04ce46900b6",
-      "bytes": 233590,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "469a1bfa2b33f3640c4b5814d62fa6bf5b73748c8985d44b2cd84bfc9bc5a2db",
+      "bytes": 1180860,
+      "backupKey": "objects/sources/469a1bfa2b33f3640c4b5814d62fa6bf5b73748c8985d44b2cd84bfc9bc5a2db.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_06.png": {
-      "sha256": "8560dc342925f6aea09130a7323aab12fbbb28d82c83439c471f826fc2990875",
-      "bytes": 1793239,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "db8801c75462793a7847b82bc04eb0342e1f3ae0b1f1c86e7d3ca697b19ff60b",
+      "bytes": 1792865,
+      "backupKey": "objects/sources/db8801c75462793a7847b82bc04eb0342e1f3ae0b1f1c86e7d3ca697b19ff60b.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_06.webp": {
-      "sha256": "1f2209e492eca11d5be71f528842e6c42c5d3a3c08f8320d44e7ffbd4a41139e",
-      "bytes": 205332,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "b20925dc0df14343c64cfc96c78b0b707fa57fd2ae77de83d2569c225b360ac4",
+      "bytes": 1120450,
+      "backupKey": "objects/sources/b20925dc0df14343c64cfc96c78b0b707fa57fd2ae77de83d2569c225b360ac4.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_07.png": {
-      "sha256": "8565d31444bdd61ffbf155ebbdf8906bb4f11cdfc47afc15c3ba4eb574911e89",
-      "bytes": 1755978,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "56107815876807f7a7ddd01fac4f036ae0f2f0221bb686324f139011187e4e51",
+      "bytes": 1754054,
+      "backupKey": "objects/sources/56107815876807f7a7ddd01fac4f036ae0f2f0221bb686324f139011187e4e51.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_07.webp": {
-      "sha256": "5ef47a452d96e031916a5319d71a45e053c0ad8b72f4f93a85565411a5a55843",
-      "bytes": 181396,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "d05c5c6ae702bb2bcdab4a62f0c56a5b0d18052c6cb571621d882ac1089b3e6b",
+      "bytes": 1144836,
+      "backupKey": "objects/sources/d05c5c6ae702bb2bcdab4a62f0c56a5b0d18052c6cb571621d882ac1089b3e6b.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_08.png": {
-      "sha256": "5a302bd848be85f263520d83ad42b53e1f0a2f496cd16bb7820948885b51cce3",
-      "bytes": 1832567,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "343cba46bae2003f495c59b625ca5b62218a460450dbf9649a5e198b1af5203d",
+      "bytes": 1821269,
+      "backupKey": "objects/sources/343cba46bae2003f495c59b625ca5b62218a460450dbf9649a5e198b1af5203d.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_08.webp": {
-      "sha256": "f775d122771a5401aa7fd9f355f3608b6809ecc00315d5b778d4240c927012e8",
-      "bytes": 191550,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "af7666fff31afb93dbc3c824dcabe17ffc2df1987a85d0292441ad5d766cfa1a",
+      "bytes": 1176128,
+      "backupKey": "objects/sources/af7666fff31afb93dbc3c824dcabe17ffc2df1987a85d0292441ad5d766cfa1a.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_09.png": {
-      "sha256": "e078cbe49c52821d32bdaf29dce05d1f9a74350d6facf53a8a7a53c43e340eea",
-      "bytes": 1805639,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "e6bf58bda1486ec5776ba8690d6f84b9963cc9bd96de1d9a17f74a8e8a769585",
+      "bytes": 1804639,
+      "backupKey": "objects/sources/e6bf58bda1486ec5776ba8690d6f84b9963cc9bd96de1d9a17f74a8e8a769585.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_climax_09.webp": {
-      "sha256": "13701adcc0a7d7cd7c2f567f711094fa814ed238e2da396218d2f711b43afb88",
-      "bytes": 191322,
-      "snapshotPart": "part-0035.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0035.zip"
+      "sha256": "f5538edafbd023b1b382ae35e4024bc520c6d4f3e10dad510fcd95af73851002",
+      "bytes": 1163944,
+      "backupKey": "objects/sources/f5538edafbd023b1b382ae35e4024bc520c6d4f3e10dad510fcd95af73851002.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/nurse_confused.png": {
       "sha256": "d284c74a0fb6bfd4581fa142b4e74b08e8e81e679fa742ffbe4f96cf8abf2421",
@@ -9374,88 +9278,64 @@
       "backupKey": "snapshots/20261030/cupid/part-0037.zip"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax.png": {
-      "sha256": "4230caef4f64deb77e00d97515f49bb0fa05309adf0be0d2983847db1285bf80",
-      "bytes": 1416171,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "1ce0e371d57ae392766445eddb6ed53515f8207335cfe94e1801a396a63e9338",
+      "bytes": 1294102,
+      "backupKey": "objects/sources/1ce0e371d57ae392766445eddb6ed53515f8207335cfe94e1801a396a63e9338.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax.webp": {
-      "sha256": "82fe49c9e9fb74518402a11ef3b4a5142477c2c4ac27764a176546875b4357d2",
-      "bytes": 142334,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "f591a2d3e1d2b695500ad7d71f4e483a8b5130f27f0a1a93a179c0c778ae3a79",
+      "bytes": 797686,
+      "backupKey": "objects/sources/f591a2d3e1d2b695500ad7d71f4e483a8b5130f27f0a1a93a179c0c778ae3a79.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_02.png": {
-      "sha256": "7859409909f14cdbc01ce1b0a4c61ce03f485fd9a03a1041087c4680436b4aaa",
-      "bytes": 1274945,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "2e50da9749b1b0f9c1e545e1da89de93006e138aaf1eabe6c228d6510c0988dd",
+      "bytes": 1265820,
+      "backupKey": "objects/sources/2e50da9749b1b0f9c1e545e1da89de93006e138aaf1eabe6c228d6510c0988dd.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_02.webp": {
-      "sha256": "043bd39c797d87adca19f2467b07714020b742a810b286005b0a92547c33bf4d",
-      "bytes": 168570,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "594bd9327e4a4363c0b123eed455168471f030b9a060a0ceb35c6a32f2c2a833",
+      "bytes": 761528,
+      "backupKey": "objects/sources/594bd9327e4a4363c0b123eed455168471f030b9a060a0ceb35c6a32f2c2a833.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_03.png": {
-      "sha256": "158bf13a0e9dea5b676a26d3816f336f2aac056a3f66bd618cfff25ec44756e8",
-      "bytes": 1261029,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "bf205d565f7a06b13306fffd1b6e566de5c5c3492786123baaeec6993b075498",
+      "bytes": 1263278,
+      "backupKey": "objects/sources/bf205d565f7a06b13306fffd1b6e566de5c5c3492786123baaeec6993b075498.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_03.webp": {
-      "sha256": "e20a494d0a4c6386b48c556155fdd758b03b28a99a0be5b1a13dfb87af03fce4",
-      "bytes": 171842,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "559e4eeb3cf119e36a6a5b6540a25fc6fcb4f10625baa9ef8804ef8d2a8a2469",
+      "bytes": 758252,
+      "backupKey": "objects/sources/559e4eeb3cf119e36a6a5b6540a25fc6fcb4f10625baa9ef8804ef8d2a8a2469.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_04.png": {
-      "sha256": "8a63b28033ec409303189c104753d6a3c24972f2c469adf7899ad998ce258d38",
-      "bytes": 1560703,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "303fe1f344a92e3165ac8c5574c8ff7359f5bfa79ffe02dc13c41e6504b16498",
+      "bytes": 1430588,
+      "backupKey": "objects/sources/303fe1f344a92e3165ac8c5574c8ff7359f5bfa79ffe02dc13c41e6504b16498.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_04.webp": {
-      "sha256": "8d19e6b1a719ff06e5214b5f0e39c659c393404bd51a2e76b8482be5132477e4",
-      "bytes": 159180,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "663f6d276235e269483925fa44b0096574987fd1dc3568ac1c23cd2c43ea8457",
+      "bytes": 880836,
+      "backupKey": "objects/sources/663f6d276235e269483925fa44b0096574987fd1dc3568ac1c23cd2c43ea8457.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_05.png": {
-      "sha256": "3392f9c3521ea4bf6847712ccc3837f02f7feaf0c18cd61a175975f4e29ce90a",
-      "bytes": 1740064,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "1f7a8fde9f45390062e5cbf8fc4b171eee2ac508f9ab5676f24227d306540923",
+      "bytes": 1624225,
+      "backupKey": "objects/sources/1f7a8fde9f45390062e5cbf8fc4b171eee2ac508f9ab5676f24227d306540923.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_05.webp": {
-      "sha256": "78d4295f1462c5ec36f5575b7cfc4b2cd5e5d5a145e261c03a0777bbe133272d",
-      "bytes": 172844,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "b53c865b72034729a9e3f3d3bc23e3ea4b6bc650afbdf2bd25e603aeedd7d448",
+      "bytes": 1020244,
+      "backupKey": "objects/sources/b53c865b72034729a9e3f3d3bc23e3ea4b6bc650afbdf2bd25e603aeedd7d448.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_06.png": {
-      "sha256": "69f165449708a3e1689c8265f299431c62cf796fe15145e6e69e1b8723789f85",
-      "bytes": 1617292,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "78cc7e18daf11c7885451edff4f10b2c08501aa2cef6d91d5a34b18c16df6f28",
+      "bytes": 1479776,
+      "backupKey": "objects/sources/78cc7e18daf11c7885451edff4f10b2c08501aa2cef6d91d5a34b18c16df6f28.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_06.webp": {
-      "sha256": "59b5847e5468c67ccc6d709b64d039d3e52b7504891a26e293a2cc9a321fc74a",
-      "bytes": 161812,
-      "snapshotPart": "part-0037.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0037.zip"
+      "sha256": "5bfd5372cfe89d61d5f49c7f664bab8292d19bd3c3a9c88c85809822b943bc07",
+      "bytes": 910882,
+      "backupKey": "objects/sources/5bfd5372cfe89d61d5f49c7f664bab8292d19bd3c3a9c88c85809822b943bc07.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_confused.png": {
       "sha256": "d377c161fbdb5ac45a64d3209274fd3aa5d9f36337773ef277635a87fcbafafe",

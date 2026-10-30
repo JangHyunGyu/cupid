@@ -1,12 +1,9 @@
 {
   "schemaVersion": 1,
   "verified": true,
-  "method": "R2 upload plus complete GET read-back SHA-256",
-  "snapshot": "20261030",
-  "publicObjects": 118,
-  "sourceImages": 1574,
+  "method": "R2 full read-back SHA-256",
   "manifests": {
-    "config/public-images.json": "e1fc110c5e1c1224f05ee5c897ddfd19e6a1e6bc5a3b912eb063079ca1bd4376",
-    "config/image-sources.json": "6eeaa41e080448121d3535ff52db8187a77b2c780864b36893ebbbb2286f3f5f"
+    "config/image-sources.json": "7e5baa965092ce5ba6fcc2e27e99138e832e2d0545430e8f6dfff173ad3674d5",
+    "config/public-images.json": "e1fc110c5e1c1224f05ee5c897ddfd19e6a1e6bc5a3b912eb063079ca1bd4376"
   }
 }

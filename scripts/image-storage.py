@@ -178,10 +178,10 @@ def publish(args):
             upload_verified(sources['backupBucket'], 'manifests/' + digest(payload) + '.json', staged,
                             {'sha256': digest(payload), 'bytes': len(payload)}, tmp)
         for filename, value in [('config/image-sources.json', sources), ('config/public-images.json', public)]:
-            (ROOT / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+            (ROOT / filename).write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
         receipt = {'schemaVersion': 1, 'verified': True, 'method': 'R2 full read-back SHA-256', 'manifests': {
             name: digest((ROOT / name).read_bytes()) for name in ['config/image-sources.json', 'config/public-images.json']}}
-        (ROOT / 'config/image-publication.json').write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8')
+        (ROOT / 'config/image-publication.json').write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8', newline='\n')
     print('Images backed up and uploaded; review manifests, run image/cache checks, then commit metadata')
 
 parser = argparse.ArgumentParser(description=__doc__)
