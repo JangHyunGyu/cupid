@@ -727,7 +727,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_expose_choice",
         "characters": {
             "left": "assets/images/characters/seyoun_sad.png",
-            "center": "assets/images/characters/minsu_smirk.png",
+            "center": "assets/images/characters/minsu_normal.png",
             "right": "assets/images/characters/dain_pout.png"
         }
     },

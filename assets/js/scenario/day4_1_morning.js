@@ -610,7 +610,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "center": {
-                "src": "assets/images/characters/minsu_normal.png",
+                "src": "assets/images/characters/minsu_smirk.png",
                 "opacity": 0.35
             }
         },
@@ -621,7 +621,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "center": {
-                "src": "assets/images/characters/minsu_normal.png",
+                "src": "assets/images/characters/minsu_smirk.png",
                 "opacity": 0.35
             }
         },
@@ -632,7 +632,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "center": {
-                "src": "assets/images/characters/minsu_normal.png",
+                "src": "assets/images/characters/minsu_smirk.png",
                 "opacity": 0.35
             }
         },
@@ -643,7 +643,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "center": {
-                "src": "assets/images/characters/minsu_normal.png",
+                "src": "assets/images/characters/minsu_smirk.png",
                 "opacity": 0.35
             }
         },
@@ -654,7 +654,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "center": {
-                "src": "assets/images/characters/minsu_normal.png",
+                "src": "assets/images/characters/minsu_smirk.png",
                 "opacity": 0.35
             }
         },
@@ -679,7 +679,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "center": {
-                "src": "assets/images/characters/minsu_normal.png",
+                "src": "assets/images/characters/minsu_smirk.png",
                 "opacity": 0.35
             }
         },

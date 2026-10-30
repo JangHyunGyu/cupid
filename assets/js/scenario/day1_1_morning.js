@@ -379,7 +379,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "classroom_dain_talk_1": {
         "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/minsu_normal.png",
+        "character": "assets/images/characters/minsu_smirk.png",
         "next": "classroom_dain_talk_2"
     },
     "classroom_dain_talk_2": {

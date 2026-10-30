@@ -598,7 +598,7 @@
 - 배경: `room_school.png`
 - 다음: `classroom_dain_talk_2`
 
-- 캐릭터: `minsu_normal.png`
+- 캐릭터: `minsu_smirk.png`
 **{name}**: *장난스럽게 돌아앉는 앞자리 남학생의 교복 명찰에는 '민수'라는 이름이 적혀 있었다.*
 
 ---
@@ -8032,7 +8032,7 @@
 - 배경: `school.png`
 - 다음: `minsu_warn_3`
 
-- 캐릭터: `minsu_smirk.png`
+- 캐릭터: `minsu_normal.png`
 **민수**: 야, 전학생.
 
 ---
@@ -8041,7 +8041,7 @@
 - 배경: `school.png`
 - 다음: `minsu_warn_4`
 
-- 캐릭터: `minsu_smirk.png`
+- 캐릭터: `minsu_normal.png`
 **{name}**: 응? 왜 불러?
 
 ---
@@ -8068,7 +8068,7 @@
 - 배경: `school.png`
 - 다음: `minsu_warn_6`
 
-- 캐릭터: `minsu_smirk.png`
+- 캐릭터: `minsu_normal.png`
 **{name}**: 갑자기 그게 무슨 소리야?
 
 ---
@@ -8077,7 +8077,7 @@
 - 배경: `school.png`
 - 다음: `night2_start`
 
-- 캐릭터: `minsu_smirk.png`
+- 캐릭터: `minsu_normal.png`
 **민수**: 점심엔 한 명, 방과후엔 또 한 명. 넌 재밌겠지. — 뭐, 옆에서 보기에 그냥 그렇다고. *어깨를 한 번 가볍게 으쓱하고는 신호가 바뀌자 먼저 걸어간다.*
 
 ---
@@ -15493,7 +15493,7 @@
 - 시간대: `day`
 - 다음: `minsu_cheer_1_c`
 
-- 캐릭터: `minsu_normal.png` @ 0.35
+- 캐릭터: `minsu_smirk.png` @ 0.35
 **민수**: 야 너 오늘 주말 데이트라며?
 
 ---
@@ -15503,7 +15503,7 @@
 - 시간대: `day`
 - 다음: `minsu_cheer_1_d`
 
-- 캐릭터: `minsu_normal.png` @ 0.35
+- 캐릭터: `minsu_smirk.png` @ 0.35
 **{name}**: 그걸 네가 어떻게 알았어
 
 ---
@@ -15513,7 +15513,7 @@
 - 시간대: `day`
 - 다음: `minsu_cheer_2`
 
-- 캐릭터: `minsu_normal.png` @ 0.35
+- 캐릭터: `minsu_smirk.png` @ 0.35
 **민수**: 교실에서 금요일 내내 주말 약속 잡느라 정신없더니 모를 줄 알았냐ㅋㅋ
 
 ---
@@ -15523,7 +15523,7 @@
 - 시간대: `day`
 - 다음: `minsu_cheer_3`
 
-- 캐릭터: `minsu_normal.png` @ 0.35
+- 캐릭터: `minsu_smirk.png` @ 0.35
 **민수**: 옷 좀 제대로 입어라. 분위기 망치지 말고 잘하고 와ㅋㅋ
 
 ---
@@ -15533,7 +15533,7 @@
 - 시간대: `day`
 - 다음: `minsu_cheer_4_branch`
 
-- 캐릭터: `minsu_normal.png` @ 0.35
+- 캐릭터: `minsu_smirk.png` @ 0.35
 **{name}**: 알아서 할게.
 
 ---
@@ -15556,7 +15556,7 @@
 - 시간대: `day`
 - 다음: `morning4_start_2`
 
-- 캐릭터: `minsu_normal.png` @ 0.35
+- 캐릭터: `minsu_smirk.png` @ 0.35
 **{name}**: *캘린더 앱을 열어 본다. 토요일 칸에 적힌 단 하나의 약속 시간이 선명하게 눈에 박힌다.*
 
 ---
@@ -18374,7 +18374,7 @@
 - 배경: `street.png`
 - 다음: `pre_confess_callback`
 
-- 캐릭터: `minsu_smirk.png` @ 0.35
+- 캐릭터: `minsu_normal.png` @ 0.35
 **민수**: 어설프게 말 돌리지 말고 오늘 네 마음 제대로 전해라
 
 ---
