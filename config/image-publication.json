@@ -1,9 +1,18 @@
 {
   "schemaVersion": 1,
+  "project": "cupid",
+  "publishedAt": "2026-10-30T17:00:56.165851Z",
+  "publicBucket": "archerlab-site-images",
+  "backupBucket": "archerlab-image-backups",
   "verified": true,
-  "method": "R2 full read-back SHA-256",
   "manifests": {
-    "config/image-sources.json": "35c80c21e6722ed80b6e85ef27cdc6e97824c71f5b3f7500170143e3b334da47",
-    "config/public-images.json": "e1fc110c5e1c1224f05ee5c897ddfd19e6a1e6bc5a3b912eb063079ca1bd4376"
+    "config/public-images.json": "e1fc110c5e1c1224f05ee5c897ddfd19e6a1e6bc5a3b912eb063079ca1bd4376",
+    "config/image-sources.json": "1c140d1a14198a4020d724f97c8e98832d2718b29b062618eb278a378c2010e4",
+    "config/character-assets.json": "dc619154cdc17cb5319b6bd4ee853a1674ea2f9065b0ea32bb8024a6b0251b01"
+  },
+  "counts": {
+    "sources": 1582,
+    "publicRoutes": 124,
+    "publicObjects": 118
   }
 }
