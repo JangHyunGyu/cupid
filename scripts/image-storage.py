@@ -74,13 +74,28 @@ def restore(args):
                             continue
                         if not entry.isfile():
                             raise RuntimeError('Non-file image in Git archive')
-                        install(entry.name, archive.extractfile(entry).read(), item)
+                        data = archive.extractfile(entry).read()
+                        if entry.name.lower().endswith('.svg') and digest(data) != item['sha256']:
+                            # Git normalizes text, while the verified snapshot preserves
+                            # Windows originals. Accept reconstruction ONLY by exact hash.
+                            normalized = data.replace(b'\r\n', b'\n')
+                            for candidate in (normalized, normalized.replace(b'\n', b'\r\n')):
+                                if digest(candidate) == item['sha256']:
+                                    data = candidate
+                                    break
+                        install(entry.name, data, item)
                         del pending[entry.name]
+                # Drain TAR trailer padding before waiting: small Windows pipes
+                # can otherwise leave git blocked after tarfile reaches EOF.
+                while proc.stdout.read(1024 * 1024):
+                    pass
                 if proc.wait() != 0:
                     raise RuntimeError('Git archive failed')
             finally:
+                if proc.poll() is None:
+                    proc.kill()
+                    proc.wait()
                 proc.stdout.close()
-                if proc.poll() is None: proc.kill()
     groups = {}
     for name, item in pending.items():
         groups.setdefault(item['backupKey'], []).append((name, item))

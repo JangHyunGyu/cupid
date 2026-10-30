@@ -24,7 +24,7 @@
     "characters:check": "node scripts/character-assets.cjs && node --test tests/character-assets.test.cjs",
     "characters:sync": "node scripts/character-assets.cjs --sync",
     "characters:list": "node scripts/character-assets.cjs --list",
-    "images:check": "node scripts/image-assets.cjs && node --test tests/public-images.test.cjs",
+    "images:check": "node scripts/image-assets.cjs && node --test tests/public-images.test.cjs tests/image-storage-restore.test.cjs",
     "images:restore": "python scripts/image-storage.py restore",
     "images:publish": "python scripts/image-storage.py publish"
   },
