@@ -685,10 +685,15 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return `${base}\n${CACHE_BOUNDARY_MARKER}\n${dynamic}`;
     }
 
-    function getStablePromptHash(content) {
-        const prompt = normalizePromptBlockForCache(content || '');
+    function getStablePromptContent(content) {
+        // Match the Worker split exactly, without scanning the dynamic tail or
+        // silently normalizing bytes that remain different on the wire.
+        const prompt = String(content || '');
         const markerIndex = prompt.indexOf(CACHE_BOUNDARY_MARKER);
-        const stable = markerIndex >= 0 ? prompt.slice(0, markerIndex).trim() : prompt;
+        return (markerIndex >= 0 ? prompt.slice(0, markerIndex) : prompt).trim();
+    }
+
+    function hashStablePromptContent(stable) {
         let hash = 2166136261;
         for (let i = 0; i < stable.length; i++) {
             hash ^= stable.charCodeAt(i);
@@ -697,11 +702,13 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return (hash >>> 0).toString(36);
     }
 
+    function getStablePromptHash(content) {
+        return hashStablePromptContent(getStablePromptContent(content));
+    }
+
     function getStablePromptFingerprint(content) {
-        const prompt = normalizePromptBlockForCache(content || '');
-        const markerIndex = prompt.indexOf(CACHE_BOUNDARY_MARKER);
-        const stable = markerIndex >= 0 ? prompt.slice(0, markerIndex).trim() : prompt;
-        return `${stable.length.toString(36)}_${getStablePromptHash(stable)}`;
+        const stable = getStablePromptContent(content);
+        return `${stable.length.toString(36)}_${hashStablePromptContent(stable)}`;
     }
 
     function encodeCacheKeyPart(value) {

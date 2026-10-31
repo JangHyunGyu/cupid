@@ -296,6 +296,11 @@ test('cache fingerprint ignores dynamic context after the boundary', () => {
     const first = core.appendDynamicContext('stable prompt', 'turn one');
     const second = core.appendDynamicContext('stable prompt', 'turn two');
     assert.equal(core.getStablePromptFingerprint(first), core.getStablePromptFingerprint(second));
+    assert.equal(core.getStablePromptFingerprint(first + 'large tail '.repeat(10000)), core.getStablePromptFingerprint(second));
+    for (const changed of ['A\r\nB', 'A  \nB', 'A\n\n\nB']) {
+        assert.notEqual(core.getStablePromptFingerprint(changed), core.getStablePromptFingerprint('A\nB'), 'wire-distinct stable bytes must split the key');
+    }
+    assert.equal(core.getStablePromptFingerprint('  A\nB  '), core.getStablePromptFingerprint('A\nB'));
 });
 
 test('retry and failover status contracts remain distinct', () => {
