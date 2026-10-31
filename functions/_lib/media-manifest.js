@@ -2623,6 +2623,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_angry": {
+    "version": "3d2df10acdf1afe1f5e68a07",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_angry.png",
+        "key": "images/35a3e2edae396d44efce6611d6875db9d9d9cd478c56f0e432489ef0563c28d3.png",
+        "sha256": "35a3e2edae396d44efce6611d6875db9d9d9cd478c56f0e432489ef0563c28d3",
+        "etag": "f798fc504c088cf39580034ea0bf9876",
+        "size": 1247720
+      },
+      {
+        "path": "assets/images/characters/minsu_angry.webp",
+        "key": "images/5a50ad63a75c99666910ed7ee10a37b5e0507acd3cb7c5d213826df01061aa0a.webp",
+        "sha256": "5a50ad63a75c99666910ed7ee10a37b5e0507acd3cb7c5d213826df01061aa0a",
+        "etag": "bb7a4802fed5a9576b2cba8919e5abb0",
+        "size": 164126
+      }
+    ]
+  },
   "characters/minsu_bored": {
     "version": "643144515d323b753dcfa592",
     "files": [
@@ -2984,6 +3003,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_flushed": {
+    "version": "57cf8c45ba0f06a5a272cee1",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_flushed.png",
+        "key": "images/c489b677eaf3f5df4cab0eeffddbde5ef9e22ef15c721b9e2ac00ea9a39bfe64.png",
+        "sha256": "c489b677eaf3f5df4cab0eeffddbde5ef9e22ef15c721b9e2ac00ea9a39bfe64",
+        "etag": "c9b66391d0f2a338426f64b57eadd739",
+        "size": 1243931
+      },
+      {
+        "path": "assets/images/characters/minsu_flushed.webp",
+        "key": "images/2d9300a28250c188cbaee52f74491bb890c5fdf04257f314590efb73cff9c87f.webp",
+        "sha256": "2d9300a28250c188cbaee52f74491bb890c5fdf04257f314590efb73cff9c87f",
+        "etag": "9131de12ffbc9f2f9fcb94d64d9a7f14",
+        "size": 156236
+      }
+    ]
+  },
   "characters/minsu_furious": {
     "version": "e8585707df0e0165addd67b4",
     "files": [
@@ -3019,6 +3057,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "6f30f56e6b423b35b178f82b0d175fd684705c0fc446f002a685a8decacb10c4",
         "etag": "00de65c4df3aebb4038283d81ada1713",
         "size": 100942
+      }
+    ]
+  },
+  "characters/minsu_laugh": {
+    "version": "60eea1718f6e3a7380c74d6e",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_laugh.png",
+        "key": "images/4a9ed70a6a890065cec1165599d42eed7d879b960b60db4c2da3ac5bfe8ce5ef.png",
+        "sha256": "4a9ed70a6a890065cec1165599d42eed7d879b960b60db4c2da3ac5bfe8ce5ef",
+        "etag": "5cd0eb7e73f29b0c5214446d6bafe4ec",
+        "size": 1259637
+      },
+      {
+        "path": "assets/images/characters/minsu_laugh.webp",
+        "key": "images/b584fb13f21dbedfb0116faf3a09994be1cf7cae4822aa86853a775669cb4942.webp",
+        "sha256": "b584fb13f21dbedfb0116faf3a09994be1cf7cae4822aa86853a775669cb4942",
+        "etag": "ad06765c0e9afcf8c3f4010cd5d9686a",
+        "size": 154154
       }
     ]
   },
@@ -3079,6 +3136,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_pout": {
+    "version": "c08b54ef2fa8404e978ae6f1",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_pout.png",
+        "key": "images/0e9b9d1167ed4706ef2dc5b317b6e4b2191a177c143ed509e2ed694ac2e87379.png",
+        "sha256": "0e9b9d1167ed4706ef2dc5b317b6e4b2191a177c143ed509e2ed694ac2e87379",
+        "etag": "7731c89f194827750eb055cc908ab303",
+        "size": 1253683
+      },
+      {
+        "path": "assets/images/characters/minsu_pout.webp",
+        "key": "images/62101bb91ab57218df728bc17ed254aaae158fc84dc4d116fd7b27feb36b5489.webp",
+        "sha256": "62101bb91ab57218df728bc17ed254aaae158fc84dc4d116fd7b27feb36b5489",
+        "etag": "773c28c479a9fb93ee2934090abaddf2",
+        "size": 149688
+      }
+    ]
+  },
   "characters/minsu_relieved": {
     "version": "c15d3e358f440638997614f3",
     "files": [
@@ -3095,6 +3171,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "1b332e0d3eba4b709e3ad11008751ebfc3597997ec0c29e46f48467c3f994e0d",
         "etag": "9d6997995e6509ed2c262b5cb17833ac",
         "size": 100680
+      }
+    ]
+  },
+  "characters/minsu_sad": {
+    "version": "e45016d67f8e62953c284a90",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_sad.png",
+        "key": "images/cd343bb23de61a6351e74c83aa08af070fba29f745c1db00c7b4f3e603dae68b.png",
+        "sha256": "cd343bb23de61a6351e74c83aa08af070fba29f745c1db00c7b4f3e603dae68b",
+        "etag": "7347f14bd9c302ad959fe1a1b0260736",
+        "size": 1238545
+      },
+      {
+        "path": "assets/images/characters/minsu_sad.webp",
+        "key": "images/c35a005bb810e46430bb14b707bb240519b8e58213ae47e5c700fa8f4a8ee926.webp",
+        "sha256": "c35a005bb810e46430bb14b707bb240519b8e58213ae47e5c700fa8f4a8ee926",
+        "etag": "aacf7a7409376eaf9efdcf2c95189537",
+        "size": 150304
       }
     ]
   },
@@ -3133,6 +3228,44 @@ export const MEDIA_MANIFEST = {
         "sha256": "e82581583f0ef3a42c0763c81b2fcd1ad46aca74c746cc2fff702043b20e69c1",
         "etag": "a143073be7b8b88ebea5cbfcff279148",
         "size": 103566
+      }
+    ]
+  },
+  "characters/minsu_shy": {
+    "version": "ea4664aa46dd64b81f5cd501",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_shy.png",
+        "key": "images/b7cf609c391a80fb32a0da1e647a2dd8c05d941ccbb2811c91dc9f09b9910406.png",
+        "sha256": "b7cf609c391a80fb32a0da1e647a2dd8c05d941ccbb2811c91dc9f09b9910406",
+        "etag": "f776edbddbe966563328308e9a2baf94",
+        "size": 1261615
+      },
+      {
+        "path": "assets/images/characters/minsu_shy.webp",
+        "key": "images/246d364f0c82d30346b311a3e95ca4252bea62167094cffef1d39994be24417a.webp",
+        "sha256": "246d364f0c82d30346b311a3e95ca4252bea62167094cffef1d39994be24417a",
+        "etag": "3f88398747f9298adf3fc8121835b499",
+        "size": 152582
+      }
+    ]
+  },
+  "characters/minsu_smile": {
+    "version": "26552d3918aaa79d2ad64b65",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_smile.png",
+        "key": "images/686d3bd04c82bf71b6819cea66d9515d3a774f62b9faa1f4fbbdd71978c69326.png",
+        "sha256": "686d3bd04c82bf71b6819cea66d9515d3a774f62b9faa1f4fbbdd71978c69326",
+        "etag": "cda8e82400fe9d2d589f1be26ea29114",
+        "size": 1248244
+      },
+      {
+        "path": "assets/images/characters/minsu_smile.webp",
+        "key": "images/af120034ba4f7e797f227159de9b6c280a81bd35400f14254e22609ebae19f77.webp",
+        "sha256": "af120034ba4f7e797f227159de9b6c280a81bd35400f14254e22609ebae19f77",
+        "etag": "59787a2014cc865a1123aab281b2cc24",
+        "size": 155858
       }
     ]
   },
@@ -3247,6 +3380,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "52c6d4c2408d317b97c207a8c0697959dde603e271f077c85c3535eef0dd3b6e",
         "etag": "3f3489420675a7d7550bc5bede2bad7a",
         "size": 100764
+      }
+    ]
+  },
+  "characters/minsu_worried": {
+    "version": "3c5a452223edc7e24bd9bc93",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_worried.png",
+        "key": "images/0e8ba231c08293e67f03817886703766e39f9d8e412fb6d2019ea9d5b403d574.png",
+        "sha256": "0e8ba231c08293e67f03817886703766e39f9d8e412fb6d2019ea9d5b403d574",
+        "etag": "de932364d9db8f49a6c9be9c82588d9b",
+        "size": 1242086
+      },
+      {
+        "path": "assets/images/characters/minsu_worried.webp",
+        "key": "images/94413e6c7d91ea204ae9e05bf8ae65eab032f9dd76649e71d779149e46bf5c50.webp",
+        "sha256": "94413e6c7d91ea204ae9e05bf8ae65eab032f9dd76649e71d779149e46bf5c50",
+        "etag": "612f6743e7c2abb21f53da0820890c8f",
+        "size": 160792
       }
     ]
   },
