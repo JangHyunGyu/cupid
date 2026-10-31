@@ -46,3 +46,17 @@ test('only AI POST requests need proof, with compact mobile verification and can
   await assert.rejects(h.window.fetch('https://openrouter-api.yama5993.workers.dev/', { method: 'POST', body: '{}', signal }), { name: 'AbortError' });
   assert.equal(h.calls.length, 3);
 });
+
+test('cancellation is immediate while another request is still obtaining its proof', async () => {
+  const h = harness();
+  h.window.turnstile.execute = () => {};
+  const first = h.window.fetch('/api/ai', { method: 'POST', body: '{}' });
+  while (!h.widgets.length) await new Promise(resolve => setTimeout(resolve, 1));
+  const controller = new AbortController();
+  const second = h.window.fetch('/api/ai', { method: 'POST', body: '{}', signal: controller.signal });
+  const rejected = assert.rejects(second, { name: 'AbortError' });
+  controller.abort(); await rejected;
+  assert.equal(h.calls.length, 0);
+  h.widgets[0].callback('first-proof'); await first;
+  assert.equal(h.widgets.length, 1);
+});

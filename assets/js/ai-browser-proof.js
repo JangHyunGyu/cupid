@@ -11,6 +11,15 @@
     })[(document.documentElement.lang || 'en').slice(0, 2)] || 'Browser verification failed.';
     const failure = () => new Error(message());
     const aborted = signal => signal?.reason || new DOMException('Aborted', 'AbortError');
+    function abortable(promise, signal) {
+        if (!signal) return promise;
+        if (signal.aborted) return Promise.reject(aborted(signal));
+        return new Promise((resolve, reject) => {
+            const cancel = () => reject(aborted(signal));
+            signal.addEventListener('abort', cancel, { once: true });
+            promise.then(resolve, reject).finally(() => signal.removeEventListener('abort', cancel));
+        });
+    }
     function protectedUrl(url) {
         return (url.hostname === 'openrouter-api.yama5993.workers.dev' && ['/', '/chat/completions', '/v1/chat/completions'].includes(url.pathname))
             || (url.hostname === 'avatar.archerlab.dev' && url.pathname === '/api/credits/chat')
@@ -35,7 +44,7 @@
     }
     async function token(hash, signal) {
         if (signal?.aborted) throw aborted(signal);
-        const api = await load();
+        const api = await abortable(load(), signal);
         if (signal?.aborted) throw aborted(signal);
         return new Promise((resolve, reject) => {
             const host = document.createElement('div');
@@ -78,7 +87,7 @@
         const proof = queue.then(() => token(hash, request.signal));
         queue = proof.catch(() => {});
         const headers = new Headers(request.headers);
-        headers.set('x-ai-proof', await proof);
+        headers.set('x-ai-proof', await abortable(proof, request.signal));
         if (request.signal.aborted) throw aborted(request.signal);
         return fetchOriginal(new Request(request, { headers }));
     }
