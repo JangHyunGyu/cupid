@@ -10,6 +10,45 @@ const CASES = {
     en: { input: 'Long morning, huh? I grabbed you the milk you like from the shop.', reply: 'Oh, thank you. I was thirsty, actually. How did you know?' }
 };
 
+for (const sample of [
+    { status: 'evaluated', delta: -17, expected: -17, width: 375, height: 812 },
+    { status: 'not_applicable', delta: null, expected: 0, width: 667, height: 375 },
+    { status: 'failed', delta: null, expected: 0, width: 1280, height: 800 }
+]) {
+    test(`decision ${sample.status}: completed dialogue commits with ${sample.expected} affinity`, async ({ page }) => {
+        await page.setViewportSize({ width: sample.width, height: sample.height });
+        await page.route('**/*', async route => {
+            const request = route.request();
+            if (request.method() !== 'POST') return route.continue();
+            const body = request.postDataJSON() || {};
+            if (body.requestType !== 'character') return route.fulfill({ json: { ok: true } });
+            const content = { segments: [{ type: 'dialogue', text: 'I heard you. Please give me a moment.' }],
+                expression: 'neutral', affinity: sample.delta, affinityEvaluation: { status: sample.status } };
+            return route.fulfill({ json: { ...(body.turnId && { turnId: body.turnId }),
+                affinityDecision: { status: sample.status }, choices: [{ message: { content: JSON.stringify(content) } }] } });
+        });
+        await installAffinitySeeder(page);
+        await page.goto('/game-en.html');
+        await page.waitForFunction(() => window.gameScriptsLoaded && window.gameEngine?.sceneRenderer && !window.gameEngine._isRendering);
+        const result = await page.evaluate(async () => {
+            const e = window.gameEngine;
+            e.dialogueSystem.typingSpeed = 0;
+            e.uiManager.showModal = async () => {};
+            window.cupidTestSeedAffinities({ Seoyeon: 30 });
+            await e.renderScene('lunch_seo_freetalk');
+            while (e.dialogueSystem.isCurrentlyTyping()) await new Promise(resolve => setTimeout(resolve, 20));
+            const turns = e.freeTalkSystem.freeTalkTurns;
+            document.getElementById('chat-input').value = 'I heard what you said.';
+            await e.freeTalkSystem.sendChatMessage(id => e.sceneRenderer.getScene(id));
+            return { affinity: e.stateManager.getAffinity('Seoyeon'), turns: e.freeTalkSystem.freeTalkTurns - turns,
+                text: e.freeTalkSystem.freeTalkHistory.filter(item => item.role === 'assistant').at(-1)?.content || '' };
+        });
+        expect(result.affinity).toBe(30 + sample.expected);
+        expect(result.turns).toBe(1);
+        expect(result.text).toContain('Please give me a moment.');
+    });
+}
+
 for (const [lang, sample] of Object.entries(CASES)) {
     test(`${lang}: a 1:1 FreeTalk AI reply is displayed, scored, committed and logged`, async ({ page }) => {
         test.setTimeout(90_000);
@@ -27,7 +66,7 @@ for (const [lang, sample] of Object.entries(CASES)) {
             const pathname = new URL(request.url()).pathname;
             if (body.requestType === 'character') {
                 aiRequests.push(body);
-                const content = { segments: [{ type: 'dialogue', text: sample.reply }], expression: 'neutral', affinity: 2, forcedSexualViolation: 'none' };
+                const content = { segments: [{ type: 'dialogue', text: sample.reply }], expression: 'neutral', affinity: 2, affinityEvaluation: { status: 'evaluated' }, forcedSexualViolation: 'none' };
                 const payload = { ...(body.turnId && { turnId: body.turnId }), model: 'google/gemma-4-31b-it', provider: 'openrouter',
                     logIds: { user: `cupid-api:${body.turnId}:user`, assistant: `cupid-api:${body.turnId}:assistant:Seoyeon` },
                     choices: [{ message: { content: JSON.stringify(content) } }] };
@@ -60,6 +99,7 @@ for (const [lang, sample] of Object.entries(CASES)) {
             await e.freeTalkSystem.sendChatMessage(id => e.sceneRenderer.getScene(id));
         }, sample.input);
         expect(aiRequests).toHaveLength(1);
+        expect(aiRequests[0].affinityDecision).toBe(true);
         const after = await page.evaluate(() => {
             const e = window.gameEngine;
             return {

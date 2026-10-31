@@ -1227,6 +1227,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     body: JSON.stringify({
                         messages,
                         characterId: requestCharId || '',
+                        affinityContext: { [requestCharId]: { score: _currentAffinity } },
                         chatLogContext: { sessionId: 'gallery-freetalk' },
                         roleplaySurface: 'gallery',
                         requestType: 'character',
@@ -1346,7 +1347,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 payload: parsed.incident,
                 visibleText: displayText,
                 latestUserText: finalContent,
-                turnAffinity: parsed.affinity
+                turnAffinity: parsed.affinity,
+                decisionEvaluated: true
             });
             const affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.progress.getAffinity(requestCharId) } : this._applyAffinityChange(
                 incidentResult.affinityChange,
@@ -1636,7 +1638,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     }
 
     _parseResponse(reply) {
-        if (!reply) return { text: '', segments: null, expression: '', affinity: 0, incident: null };
+        if (!reply) return { text: '', segments: null, expression: '', affinity: null, incident: null };
 
         const likelyJson = reply.includes('{') || reply.includes('```json');
         if (!likelyJson) {
@@ -1644,7 +1646,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(reply)),
                 segments: null,
                 expression: '',
-                affinity: 0,
+                affinity: null,
                 incident: null
             };
         }
@@ -1681,7 +1683,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(derivedText)),
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || '').toLowerCase(),
-                    affinity: this._normalizeAffinityChange(parsed.affinity),
+                    affinity: GalleryFreeTalkCore.decisionAffinityValue(parsed),
                     incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident),
                     memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : []
                 };
@@ -1693,7 +1695,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     text: this._sanitizeVisibleArtifacts(this._sanitizePlayerPlaceholders(parsed.text || '')),
                     segments: null,
                     expression: (parsed.expression || '').toLowerCase(),
-                    affinity: this._normalizeAffinityChange(parsed.affinity),
+                    affinity: GalleryFreeTalkCore.decisionAffinityValue(parsed),
                     incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident),
                     memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : []
                 };
@@ -1714,7 +1716,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
                 }
             });
-            return { text: '', segments: null, expression: '', affinity: 0, incident: null };
+            return { text: '', segments: null, expression: '', affinity: null, incident: null };
         }
     }
 
@@ -2118,6 +2120,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
     _applyAffinityChange(change, charId = this.currentCharId, latestUserText = '') {
         if (!charId || !this.progress?.changeCurrentAffinity) return null;
+        if (!Number.isInteger(change)) return null;
 
         const currentAffinity = this.progress?.getCurrentAffinity
             ? this.progress.getCurrentAffinity(charId)
@@ -2248,7 +2251,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         payload = null,
         visibleText = '',
         latestUserText = '',
-        turnAffinity = 0
+        turnAffinity = 0,
+        decisionEvaluated = false
     } = {}) {
         let state = GalleryFreeTalkCore.normalizeGalleryIncidentState(
             runtime?.state || this.progress?.getGalleryIncidentState?.(charId)
@@ -2329,7 +2333,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             : GalleryFreeTalkCore.normalizeGalleryIncidentState(state);
 
         return {
-            affinityChange,
+            affinityChange: decisionEvaluated ? turnAffinity : affinityChange,
             startedCategory,
             startedSeverity,
             activeIncident: savedState.activeIncident,

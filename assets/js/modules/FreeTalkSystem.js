@@ -1843,6 +1843,8 @@ class FreeTalkSystem {
                     body: JSON.stringify({
                         messages,
                         characterId: charKey,
+                        affinityContext: { [charKey]: { score: this.stateManager.getAffinity(charKey), locked: scene.affinityLocked === true,
+                            nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true } },
                         chatLogContext: { sessionId: requestSceneId || '', conversationDay: this.stateManager.currentDay },
                         roleplaySurface: "game",
                         requestType: "character",
@@ -2251,7 +2253,7 @@ class FreeTalkSystem {
                 segments,
                 text: this._sanitizeVisibleArtifacts(this.segmentsToText(segments)),
                 expression: String(conversation.expression || '').toLowerCase(),
-                affinity: Number.isFinite(Number(conversation.affinity)) ? Math.trunc(Number(conversation.affinity)) : 0
+                affinity: CupidFreeTalkCore.decisionAffinityValue(conversation)
             });
         }
         const ordered = this.groupParticipants
@@ -2302,6 +2304,7 @@ class FreeTalkSystem {
     // matching the documented 18 turns x 3 = 54 pre-ending free-talk budget per character (2026-10-06).
     _applyGroupAffinity(change, speakerId, latestUserText = '', scene = null) {
         if (!this.stateManager.stats?.[speakerId]) return null;
+        if (!Number.isInteger(change)) return null;
         const previousValue = this.stateManager.getAffinity(speakerId);
         let requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
             change,
@@ -2620,6 +2623,10 @@ class FreeTalkSystem {
                 body: JSON.stringify({
                     messages: optimized,
                     characterId: 'group',
+                    affinityContext: Object.fromEntries(this.groupParticipants.map(item => [item.id, {
+                        score: this.stateManager.getAffinity(item.id), locked: scene.affinityLocked === true,
+                        nonRomance: item.id === 'Haeun' && scene.haeunRomance !== true
+                    }])),
                     chatLogContext: { sessionId: requestSceneId || '', conversationDay: this.stateManager.currentDay },
                     roleplaySurface: 'game',
                     requestType: 'character',
@@ -3100,7 +3107,7 @@ class FreeTalkSystem {
 
         // 📌 JSON일 가능성 체크 (중괄호, 대괄호, 또는 코드블록 포함 여부)
         const likelyJson = reply.includes('{') || reply.includes('[') || reply.includes('```json');
-        if (!likelyJson) return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: "", affinity: 0, forcedSexualViolation: '' };  // 순수 텍스트면 그대로
+        if (!likelyJson) return { text: this._sanitizePlayerPlaceholders(reply), segments: null, expression: "", affinity: null, forcedSexualViolation: '' };  // 순수 텍스트면 그대로
 
         try {
             let jsonStr = reply;
@@ -3138,7 +3145,7 @@ class FreeTalkSystem {
                     text: this._sanitizePlayerPlaceholders(derivedText),
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || "").toLowerCase(),
-                    affinity: parseInt(parsed.affinity) || 0,
+                    affinity: CupidFreeTalkCore.decisionAffinityValue(parsed),
                     forcedSexualViolation: CupidFreeTalkCore.normalizeForcedSexualViolation(parsed.forcedSexualViolation),
                     memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : [],
                 };
@@ -3150,7 +3157,7 @@ class FreeTalkSystem {
                     text: this._sanitizePlayerPlaceholders(parsed.text || ""),
                     segments: null,
                     expression: (parsed.expression || "").toLowerCase(),
-                    affinity: parseInt(parsed.affinity) || 0,
+                    affinity: CupidFreeTalkCore.decisionAffinityValue(parsed),
                     forcedSexualViolation: CupidFreeTalkCore.normalizeForcedSexualViolation(parsed.forcedSexualViolation),
                     memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : [],
                 };
@@ -3302,6 +3309,7 @@ class FreeTalkSystem {
     applyAffinity(change, scene, latestUserText = '') {
         const charKey = this.charNameMap[scene.name] || scene.name;
         if (!this.stateManager.stats[charKey]) return null;
+        if (!Number.isInteger(change)) return null;
 
         const previousValue = this.stateManager.getAffinity(charKey);
         if (scene.affinityLocked === true) {

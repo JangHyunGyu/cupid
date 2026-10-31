@@ -1885,6 +1885,12 @@ Latest user: """${excerpt}"""
         return error;
     }
 
+    function decisionAffinityValue(value) {
+        if (value?.affinityEvaluation?.status !== 'evaluated') return null;
+        const delta = value.affinity;
+        return Number.isInteger(delta) && delta >= -50 && delta <= 3 ? delta : null;
+    }
+
     async function requestChatCompletion(endpoint, buildRequestInit, {
         assertCurrent = () => {}, onDelta = null, onReset = null,
         signal = null, timeoutMs = 120000, retryDelayMs = 400, fetchImpl = fetch
@@ -1905,6 +1911,7 @@ Latest user: """${excerpt}"""
                     const init = buildRequestInit(wantsStream);
                     const requestBody = JSON.parse(init.body);
                     requestBody.expressionDecision = true;
+                    requestBody.affinityDecision = true;
                     requestBody.previousExpressions = { ...global.CupidExpressionState };
                     if (wantsStream) requestBody.responseStreaming = 'segments-v1';
                     init.body = JSON.stringify(requestBody);
@@ -2004,7 +2011,7 @@ Latest user: """${excerpt}"""
             }
             if (event?.final === true) {
                 finalPayload = event;
-                if (event.segmentStream || event.expressionDecision) rawContent = event.choices?.[0]?.message?.content || rawContent;
+                if (event.segmentStream || event.expressionDecision || event.affinityDecision) rawContent = event.choices?.[0]?.message?.content || rawContent;
                 return;
             }
             const delta = event?.choices?.[0]?.delta?.content;
@@ -2307,6 +2314,7 @@ Latest user: """${excerpt}"""
         GALLERY_CRISIS_SEVERITIES,
         GALLERY_CRISIS_IMPACT_RANGES,
         normalizeAffinityChange,
+        decisionAffinityValue,
         classifyCupidIntimacyAdvance,
         getCupidAffinityIntimacyBoundary,
         enforceCupidAffinityIntimacyBoundary,
