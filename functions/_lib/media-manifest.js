@@ -685,21 +685,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_active": {
-    "version": "1b8260ba7330120c0cab8bd6",
+    "version": "f1dce87a0ebd1898752fb8f6",
     "files": [
       {
         "path": "assets/images/characters/dain_active.png",
-        "key": "images/c93948de4fe72e322e626285f199eaab48aebb5a48488503e8ce7847a88caaf1.png",
-        "sha256": "c93948de4fe72e322e626285f199eaab48aebb5a48488503e8ce7847a88caaf1",
-        "etag": "185a06d3cac6cfd8b4e10f4b754328bc",
-        "size": 1357615
+        "key": "images/f289c8954dd5cb60b8103e3eae8c4bfdbcba6dc61f0a3d8a5e4a59ec76725f1f.png",
+        "sha256": "f289c8954dd5cb60b8103e3eae8c4bfdbcba6dc61f0a3d8a5e4a59ec76725f1f",
+        "etag": "6a947d4a5b5948e3b92ba95ae53ce925",
+        "size": 1356237
       },
       {
         "path": "assets/images/characters/dain_active.webp",
-        "key": "images/25c7d5cbec26624250587cb4147044bd6efd39c07618555da2d17c985b69fd14.webp",
-        "sha256": "25c7d5cbec26624250587cb4147044bd6efd39c07618555da2d17c985b69fd14",
-        "etag": "c389bbfeb839ed29532754946ddea191",
-        "size": 181766
+        "key": "images/ed6861231e0fbfa91aee70485ece41ff4716d261b75452a3ec6afe66f352cd3c.webp",
+        "sha256": "ed6861231e0fbfa91aee70485ece41ff4716d261b75452a3ec6afe66f352cd3c",
+        "etag": "d74945af84a4acbebe6a1a02a153a5c6",
+        "size": 164276
       }
     ]
   },
@@ -742,21 +742,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_angry": {
-    "version": "38f221deb4ea51488aa32b00",
+    "version": "9d4b297498b4cf0885f3a07f",
     "files": [
       {
         "path": "assets/images/characters/dain_angry.png",
-        "key": "images/7c32a363000b39e55c3d80c10b71407835ce637ff3a2ff6b224dc4d55f01c50f.png",
-        "sha256": "7c32a363000b39e55c3d80c10b71407835ce637ff3a2ff6b224dc4d55f01c50f",
-        "etag": "172a8e2e476422241bba9e762c47d802",
-        "size": 1380926
+        "key": "images/707c93a47df0d4b2cf922f832481a1face64e9baf34b936827a18f117d699c60.png",
+        "sha256": "707c93a47df0d4b2cf922f832481a1face64e9baf34b936827a18f117d699c60",
+        "etag": "cff2305e4952ab2b546c2cb8ca9088f4",
+        "size": 1379837
       },
       {
         "path": "assets/images/characters/dain_angry.webp",
-        "key": "images/86bccb5e06fd735a67d13f04fae7e0ae35079d0a594a1d25237b771cba63b623.webp",
-        "sha256": "86bccb5e06fd735a67d13f04fae7e0ae35079d0a594a1d25237b771cba63b623",
-        "etag": "cf061934d822b378ec5214c7a0a48093",
-        "size": 183348
+        "key": "images/b7c323a2382812a35829b5227e92f302dfbfabb30171874f9599ace2bdbcbbd7.webp",
+        "sha256": "b7c323a2382812a35829b5227e92f302dfbfabb30171874f9599ace2bdbcbbd7",
+        "etag": "8cdee4c31574b9eec6b69c5fcdd1e9e3",
+        "size": 165178
       }
     ]
   },
@@ -1046,21 +1046,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_cry": {
-    "version": "decb6fc8c4c08db955ea923b",
+    "version": "e4659aae4ade3e95c16ce696",
     "files": [
       {
         "path": "assets/images/characters/dain_cry.png",
-        "key": "images/361ab8951a7419bd078c98e83590b49547d52b70035fe13b9b66f82d97ddd202.png",
-        "sha256": "361ab8951a7419bd078c98e83590b49547d52b70035fe13b9b66f82d97ddd202",
-        "etag": "afa465345121cc4ad69831e71304d01d",
-        "size": 1480551
+        "key": "images/71f5b338771fdc7f49e1252820f9033ce9dc8dc4776bcd292347a5c069b032a5.png",
+        "sha256": "71f5b338771fdc7f49e1252820f9033ce9dc8dc4776bcd292347a5c069b032a5",
+        "etag": "641f6b54f17fd3c7d14dd118fe70d7ec",
+        "size": 1477831
       },
       {
         "path": "assets/images/characters/dain_cry.webp",
-        "key": "images/56879fa144c92d2f037d28725b1a97371a3eda90b2407171fdcfd6014bd5708a.webp",
-        "sha256": "56879fa144c92d2f037d28725b1a97371a3eda90b2407171fdcfd6014bd5708a",
-        "etag": "f81ed89038c9897f1058100987c74aaa",
-        "size": 156812
+        "key": "images/17ceb36cf854858babbbf4c422eac19e054898ec93522af44dbaafbe72ecfa0d.webp",
+        "sha256": "17ceb36cf854858babbbf4c422eac19e054898ec93522af44dbaafbe72ecfa0d",
+        "etag": "55002cd5b34649d3018f44469523b317",
+        "size": 136328
       }
     ]
   },
@@ -1365,21 +1365,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_laugh": {
-    "version": "b0282efca3e9a513dd120a83",
+    "version": "9d2b10fe10aba03614c2caca",
     "files": [
       {
         "path": "assets/images/characters/dain_laugh.png",
-        "key": "images/00041e3f95ebe661e5f944968d4ec2fac09255f56de0e742216ed1ddeb09df0a.png",
-        "sha256": "00041e3f95ebe661e5f944968d4ec2fac09255f56de0e742216ed1ddeb09df0a",
-        "etag": "c3f92b55d2ec301f9e4bd09b145c2761",
-        "size": 1355365
+        "key": "images/e26c166e1a368b9b78e0b247c0e42c6aebcff133f895bbbd704d2d27ff743210.png",
+        "sha256": "e26c166e1a368b9b78e0b247c0e42c6aebcff133f895bbbd704d2d27ff743210",
+        "etag": "df649fb21c2f07eab7e1430abfeab43f",
+        "size": 1354296
       },
       {
         "path": "assets/images/characters/dain_laugh.webp",
-        "key": "images/a7fc4e194d74182fcec0098aef0b92910e6bb06d6525bce8e1490af1a21a79f1.webp",
-        "sha256": "a7fc4e194d74182fcec0098aef0b92910e6bb06d6525bce8e1490af1a21a79f1",
-        "etag": "183a421d1c2511710835b21221faede5",
-        "size": 178624
+        "key": "images/9cb6b8a218692e4b43e4e4db88bac4404a8113f62e231d4a52ba41ee67615b61.webp",
+        "sha256": "9cb6b8a218692e4b43e4e4db88bac4404a8113f62e231d4a52ba41ee67615b61",
+        "etag": "354d7832390b7bab031628d79d696e47",
+        "size": 161334
       }
     ]
   },
@@ -1441,21 +1441,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_pout": {
-    "version": "ad330934188aa2453af98788",
+    "version": "4993b23fad0a8af062680eff",
     "files": [
       {
         "path": "assets/images/characters/dain_pout.png",
-        "key": "images/8747f694cabc25c761c791092af51a2cc04eb0080f61a345c9971f4762ba8b5e.png",
-        "sha256": "8747f694cabc25c761c791092af51a2cc04eb0080f61a345c9971f4762ba8b5e",
-        "etag": "9655380286f5adedaed1ca6107398785",
-        "size": 1356641
+        "key": "images/91a63a520d5a2e495da26a8a92325348f1c49eb10dab36a630670c1047c9572b.png",
+        "sha256": "91a63a520d5a2e495da26a8a92325348f1c49eb10dab36a630670c1047c9572b",
+        "etag": "c1166a1b61a53596695be7a47ce038de",
+        "size": 1355077
       },
       {
         "path": "assets/images/characters/dain_pout.webp",
-        "key": "images/bf6e40c500c517e6284c4b47579d8c02aef60fa3bbd95be9a6f1297d6312d4dc.webp",
-        "sha256": "bf6e40c500c517e6284c4b47579d8c02aef60fa3bbd95be9a6f1297d6312d4dc",
-        "etag": "18e6f2352d6d025303a2844810230856",
-        "size": 179588
+        "key": "images/60c8d1f723a1e320dd528c330398769576a607c5c4542a2270dd6a670bc22f68.webp",
+        "sha256": "60c8d1f723a1e320dd528c330398769576a607c5c4542a2270dd6a670bc22f68",
+        "etag": "93190f92772e815df1107a894abca985",
+        "size": 162538
       }
     ]
   },
@@ -1479,21 +1479,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_sad": {
-    "version": "94d54735dff6fc0a507e3b1f",
+    "version": "a30ccb210a50f1ce9f56dafe",
     "files": [
       {
         "path": "assets/images/characters/dain_sad.png",
-        "key": "images/88181027c1362a2c0d8a90dd1cc8ea75b0e8823a728464c2243f690e49f10669.png",
-        "sha256": "88181027c1362a2c0d8a90dd1cc8ea75b0e8823a728464c2243f690e49f10669",
-        "etag": "ddd6d3abeb6de2981364789f64f59c5f",
-        "size": 1371760
+        "key": "images/f3a53e0c24d29663df69209896fb00146f2e3b7ccd2dbeff4f00c7c5704eb125.png",
+        "sha256": "f3a53e0c24d29663df69209896fb00146f2e3b7ccd2dbeff4f00c7c5704eb125",
+        "etag": "d52512bd7d1bc8334ff7ec41f5995b59",
+        "size": 1370659
       },
       {
         "path": "assets/images/characters/dain_sad.webp",
-        "key": "images/0dd2c92cc278414ed4c369dd2dd528b02bf1d56d6e6bf0fd2f16d0737d4ec7fd.webp",
-        "sha256": "0dd2c92cc278414ed4c369dd2dd528b02bf1d56d6e6bf0fd2f16d0737d4ec7fd",
-        "etag": "f2908e773a5912adb2f911cf3cdf0e89",
-        "size": 181798
+        "key": "images/b28ecef429ee87b506c59e2d19852b21747184d4c194008752eeeac00d6fcf5a.webp",
+        "sha256": "b28ecef429ee87b506c59e2d19852b21747184d4c194008752eeeac00d6fcf5a",
+        "etag": "44b385ad28ae82db7cfedca6af562af6",
+        "size": 164296
       }
     ]
   },
@@ -1536,21 +1536,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_shy": {
-    "version": "6c7854ee5e0f421a980d2a90",
+    "version": "c0b95b0f2f75d76f6ca74d07",
     "files": [
       {
         "path": "assets/images/characters/dain_shy.png",
-        "key": "images/069231cdaa0eaa36a1d12ef02eca24c37f3107a309be6d2995deea9a55fba43c.png",
-        "sha256": "069231cdaa0eaa36a1d12ef02eca24c37f3107a309be6d2995deea9a55fba43c",
-        "etag": "3c6e1190e9cab72711a8c05cff29100f",
-        "size": 1360026
+        "key": "images/9b7d77563144a5daf7eb7a81ea58303757e7503800651e229b62829b22162e37.png",
+        "sha256": "9b7d77563144a5daf7eb7a81ea58303757e7503800651e229b62829b22162e37",
+        "etag": "04f6e0db3ca04d993061b5fa8b12b184",
+        "size": 1359011
       },
       {
         "path": "assets/images/characters/dain_shy.webp",
-        "key": "images/93ae9daa847946e366074d3b4449c5e8032f263b474327a613fb0ab7f8b494d3.webp",
-        "sha256": "93ae9daa847946e366074d3b4449c5e8032f263b474327a613fb0ab7f8b494d3",
-        "etag": "ef98de970135bf7c8a75797e72c97682",
-        "size": 176636
+        "key": "images/2a12f35c81b70677e87efb2d43f82b030b7435051f75fd0a6bf3732dcad1a65b.webp",
+        "sha256": "2a12f35c81b70677e87efb2d43f82b030b7435051f75fd0a6bf3732dcad1a65b",
+        "etag": "e356e570cf6eb457992ca2c132457c3b",
+        "size": 159786
       }
     ]
   },
@@ -1650,21 +1650,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_sweat": {
-    "version": "2cdbfec009e20c9a95232411",
+    "version": "5d6f88962ab3e6a0a87b6518",
     "files": [
       {
         "path": "assets/images/characters/dain_sweat.png",
-        "key": "images/c0312c238b253b5ed9d586bbf19db079bd681c15e985f2cf91262aea2be63aa9.png",
-        "sha256": "c0312c238b253b5ed9d586bbf19db079bd681c15e985f2cf91262aea2be63aa9",
-        "etag": "99e6b929d1b9f1db80aacb21a0343611",
-        "size": 1371347
+        "key": "images/3e8a1e70c7a0e529862e6841eedc9e457928afd6ecc910d627324dfcd1d50502.png",
+        "sha256": "3e8a1e70c7a0e529862e6841eedc9e457928afd6ecc910d627324dfcd1d50502",
+        "etag": "d7ebb5f5e1954294314ce9a5b2482131",
+        "size": 1370039
       },
       {
         "path": "assets/images/characters/dain_sweat.webp",
-        "key": "images/20f7dbdb2a16d02ee6d85b78473ffde1483a85f24480862cf3a74caab88c95e1.webp",
-        "sha256": "20f7dbdb2a16d02ee6d85b78473ffde1483a85f24480862cf3a74caab88c95e1",
-        "etag": "0f5b8448a67b3221aa0e6b29b709d1cb",
-        "size": 180284
+        "key": "images/374e1bfd8a11d55b1f236bf1280f9ef0f9f9f608d7eb3eb8a62f6b2b076f035b.webp",
+        "sha256": "374e1bfd8a11d55b1f236bf1280f9ef0f9f9f608d7eb3eb8a62f6b2b076f035b",
+        "etag": "8d2f51975b5af6aae02795d94dfd9fd3",
+        "size": 164816
       }
     ]
   },

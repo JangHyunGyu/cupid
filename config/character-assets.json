@@ -14,8 +14,8 @@
             "assets/images/characters/dain_active.png",
             "assets/characters/dain/expressions/active/01/sprite.png"
           ],
-          "sha256": "f8a71734197fdfcbaf97d93f35f57f7c22e98137e50262e186a141a7e9773b91",
-          "bytes": 1357652
+          "sha256": "e00e553991e900b159aa3b9e1165910bccbe126bfb2a500d38828faf9662489f",
+          "bytes": 1356274
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/active/01/sprite.webp",
@@ -23,8 +23,8 @@
             "assets/images/characters/dain_active.webp",
             "assets/characters/dain/expressions/active/01/sprite.webp"
           ],
-          "sha256": "7fc9addc1ffaa73f97e40df64482e44192907302bee71151d8a01079633db14c",
-          "bytes": 181803
+          "sha256": "d76e5dccbdf4199defe48d14dd05bcc89eebc5adb17da5c7940d8362d9f3de17",
+          "bytes": 164313
         }
       }
     },
@@ -95,8 +95,8 @@
             "assets/images/characters/dain_angry.png",
             "assets/characters/dain/expressions/angry/01/sprite.png"
           ],
-          "sha256": "acaee6872b6e95df4061b7b426025c189e9232b9c8699643630e897d58814b45",
-          "bytes": 1380963
+          "sha256": "f6078296c3da6334b6bfe47fbef66890ec9d8871f25edc6d22818c49a8013bda",
+          "bytes": 1379874
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/angry/01/sprite.webp",
@@ -104,8 +104,8 @@
             "assets/images/characters/dain_angry.webp",
             "assets/characters/dain/expressions/angry/01/sprite.webp"
           ],
-          "sha256": "c74e7d78354f183849b45f11848177482876ec166d600af96b180f99a90c0432",
-          "bytes": 183385
+          "sha256": "6e1682039b94f19d58ee951f8e1d6ba452bc6df545d6c4fa5f4aff691e9edc29",
+          "bytes": 165215
         }
       }
     },
@@ -527,8 +527,8 @@
             "assets/images/characters/dain_cry.png",
             "assets/characters/dain/expressions/cry/01/sprite.png"
           ],
-          "sha256": "ad388a0ed3fa233bbd5fa0823014ffb67a6a10870d06e1d94b2fe572cf8c2816",
-          "bytes": 1480588
+          "sha256": "bbb4a521beeedc67a6631a46d31973e707e7c4647b58a1cc6da5f05c2fade48b",
+          "bytes": 1477868
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/cry/01/sprite.webp",
@@ -536,8 +536,8 @@
             "assets/images/characters/dain_cry.webp",
             "assets/characters/dain/expressions/cry/01/sprite.webp"
           ],
-          "sha256": "2f2fffd35164d34ecb8361a03855eb7d1c2f2465c317294d158ad54a432e1cc0",
-          "bytes": 156849
+          "sha256": "c653afd88e0893c4b8c1d1f172c11b87831fd91ab0ae4f4e96b3d8549b0629f4",
+          "bytes": 136365
         }
       }
     },
@@ -878,8 +878,8 @@
             "assets/images/characters/dain_laugh.png",
             "assets/characters/dain/expressions/laugh/01/sprite.png"
           ],
-          "sha256": "43daa53d1852abf7e38ebb85f451bc8ece68a4bbf2fab82129e847b89071ee7c",
-          "bytes": 1355402
+          "sha256": "3243d8584a03da55af453fd86cc5a7c9a42537af3f3f21ca791fad9a9af4a451",
+          "bytes": 1354333
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/laugh/01/sprite.webp",
@@ -887,8 +887,8 @@
             "assets/images/characters/dain_laugh.webp",
             "assets/characters/dain/expressions/laugh/01/sprite.webp"
           ],
-          "sha256": "8cd3b5fb196f1cf811d5ba1913390ebff36ce349ffc7f20a82c82f0012b50838",
-          "bytes": 178661
+          "sha256": "21815fbf0422ec5087bb2838fe2fac445f8b0800790d1fce94175fe90ade3e40",
+          "bytes": 161371
         }
       }
     },
@@ -986,8 +986,8 @@
             "assets/images/characters/dain_pout.png",
             "assets/characters/dain/expressions/pout/01/sprite.png"
           ],
-          "sha256": "0a785d624a53aee5b2507e719b56a54d82538c4a57b6acc5da526eee1abeff5b",
-          "bytes": 1356678
+          "sha256": "635f595802a62836d439e8f28a2624d7155d822349069f8ea2fcc6409a818e2a",
+          "bytes": 1355114
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/pout/01/sprite.webp",
@@ -995,8 +995,8 @@
             "assets/images/characters/dain_pout.webp",
             "assets/characters/dain/expressions/pout/01/sprite.webp"
           ],
-          "sha256": "ff6391d9e8ecda52d66eca2fbf0b6dd5907e6d3fa4e2a4c36ee8492ddaf43252",
-          "bytes": 179625
+          "sha256": "fddee0d38d5ee00ac90600fd00b2df0776bd4330aa1d74dcec26a618753a97f0",
+          "bytes": 162575
         }
       }
     },
@@ -1040,8 +1040,8 @@
             "assets/images/characters/dain_sad.png",
             "assets/characters/dain/expressions/sad/01/sprite.png"
           ],
-          "sha256": "822f2f40de8daf6b84b26764e3db4273d84f55ba807cb5605aff616100adc33f",
-          "bytes": 1371797
+          "sha256": "14f744f16520b4047b9b1dff6b1de3f1d69adb0e427d522b1fbba28439364774",
+          "bytes": 1370696
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/sad/01/sprite.webp",
@@ -1049,8 +1049,8 @@
             "assets/images/characters/dain_sad.webp",
             "assets/characters/dain/expressions/sad/01/sprite.webp"
           ],
-          "sha256": "ee12ee4d35c40d8dfeb9c503c947742f1235d453fa1ebab5a0099cb516099b94",
-          "bytes": 181835
+          "sha256": "7e4742311692b80abb42cc8241c27acae81c34dfcc6a7ee2551ff9f6373ca202",
+          "bytes": 164333
         }
       }
     },
@@ -1121,8 +1121,8 @@
             "assets/images/characters/dain_shy.png",
             "assets/characters/dain/expressions/shy/01/sprite.png"
           ],
-          "sha256": "b39bf099ffe9638c3226d3971dc09557583e46748016590597e099a9a60b4192",
-          "bytes": 1360063
+          "sha256": "984025c32dd4efd8c636ffc4fdb04475a088dec66d30fcf0d3bdd70581b8534a",
+          "bytes": 1359048
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/shy/01/sprite.webp",
@@ -1130,8 +1130,8 @@
             "assets/images/characters/dain_shy.webp",
             "assets/characters/dain/expressions/shy/01/sprite.webp"
           ],
-          "sha256": "d9e45014f7fe82f6702d5e083403037fa16b3a4e68ed526ad1239658ba515d89",
-          "bytes": 176673
+          "sha256": "0e71d5362e144dca6a56d4ddeef854ccbf969d56b350005469fb002d353ceca1",
+          "bytes": 159823
         }
       }
     },
@@ -1283,8 +1283,8 @@
             "assets/images/characters/dain_sweat.png",
             "assets/characters/dain/expressions/sweat/01/sprite.png"
           ],
-          "sha256": "94d381a3a558e40b2f5cad18cf74c7f2633fae0122229915159be0cae6f208c8",
-          "bytes": 1371384
+          "sha256": "e332733803242b73e0fd736c5f509a0fe8b39a781fff52ab87d0248adfdf67e2",
+          "bytes": 1370076
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/sweat/01/sprite.webp",
@@ -1292,8 +1292,8 @@
             "assets/images/characters/dain_sweat.webp",
             "assets/characters/dain/expressions/sweat/01/sprite.webp"
           ],
-          "sha256": "42e25063d5d22f3063798b97ceb60a0099b2b9707a3a0ae313d9cf78adc53b19",
-          "bytes": 180321
+          "sha256": "4c783ff3fad388b9e55813a08ad1d5c3d3f6cf7b9570fbca8b541a2462c2c3f3",
+          "bytes": 164853
         }
       }
     },
