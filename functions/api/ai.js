@@ -8,7 +8,8 @@ const FORWARDED_HEADERS = [
     'x-chat-mode',
     'x-response-schema',
     'x-output-language',
-    'x-cache-key'
+    'x-cache-key',
+    'x-ai-proof'
 ];
 
 export async function onRequestPost({ request }) {
@@ -17,6 +18,9 @@ export async function onRequestPost({ request }) {
         const value = request.headers.get(name);
         if (value) headers.set(name, value);
     });
+    headers.set('x-app-type', 'cupid');
+    const origin = request.headers.get('origin');
+    if (origin) headers.set('origin', origin);
 
     const response = await fetch(AI_UPSTREAM_URL, {
         method: 'POST',

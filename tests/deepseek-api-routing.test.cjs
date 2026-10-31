@@ -204,7 +204,9 @@ test('Cupid Pages proxy forwards the roleplay contract without browser cookies',
         headers: {
             'Content-Type': 'application/json',
             Cookie: 'session=private',
-            'x-app-type': 'cupid',
+            'x-app-type': 'forged-app',
+            'x-ai-proof': 'single-use-proof',
+            Origin: 'https://cupid.archerlab.dev',
             'x-roleplay-surface': 'game',
             'x-cache-key': 'cupid:ctx:test'
         },
@@ -214,6 +216,8 @@ test('Cupid Pages proxy forwards the roleplay contract without browser cookies',
     const response = await handler({ request });
     assert.equal(upstreamCall.url, 'https://openrouter-api.yama5993.workers.dev/');
     assert.equal(upstreamCall.init.headers.get('x-app-type'), 'cupid');
+    assert.equal(upstreamCall.init.headers.get('x-ai-proof'), 'single-use-proof');
+    assert.equal(upstreamCall.init.headers.get('origin'), 'https://cupid.archerlab.dev');
     assert.equal(upstreamCall.init.headers.get('x-roleplay-surface'), 'game');
     assert.equal(upstreamCall.init.headers.get('x-cache-key'), 'cupid:ctx:test');
     assert.equal(upstreamCall.init.headers.has('cookie'), false);
