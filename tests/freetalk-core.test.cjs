@@ -1757,7 +1757,8 @@ test('group reply order, per-speaker affinity, and Dain expression assets follow
         'expression:Dain',
         'text:다인',
         'affinity:Teacher',
-        'affinity:Dain'
+        'affinity:Dain',
+        `name:${ordered.at(-1).speakerName}`
     ]);
 });
 

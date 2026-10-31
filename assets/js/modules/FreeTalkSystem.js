@@ -2042,6 +2042,7 @@ class FreeTalkSystem {
                         { checkpoint: () => this.stateManager.freeTalkCheckpoint })
                     : { applied: true, value: commitTurn() };
                 if (!turnResult.applied) throw this._makeStaleTurnError('This conversation turn was already committed');
+                this.uiManager.updateNameTag(scene.name);
                 const selected = this._lastExpressionSelection || null;
                 // The center slot can still show another character, so only the speaker's own portrait is logged.
                 const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(charKey,
@@ -2430,6 +2431,7 @@ class FreeTalkSystem {
                 { checkpoint: () => this.stateManager.freeTalkCheckpoint })
             : { applied: true, value: commitTurn() };
         if (!turnResult.applied) throw this._makeStaleTurnError('This group turn was already committed');
+        if (rendered.length) this.uiManager.updateNameTag(rendered.at(-1).speakerName);
         this.uiManager.showNextIndicator?.(false);
         this._groupMessagesRemaining = 0;
         return rendered;

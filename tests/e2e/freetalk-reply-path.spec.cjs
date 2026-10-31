@@ -13,9 +13,12 @@ const CASES = {
 for (const sample of [
     { status: 'evaluated', delta: -17, expected: -17, width: 375, height: 812 },
     { status: 'not_applicable', delta: null, expected: 0, width: 667, height: 375 },
-    { status: 'failed', delta: null, expected: 0, width: 1280, height: 800 }
+    { status: 'failed', delta: null, expected: 0, width: 1280, height: 800 },
+    { status: 'evaluated', delta: 3, expected: 3, width: 768, height: 1024 },
+    { status: 'evaluated', delta: 0, expected: 0, width: 1024, height: 768 },
+    { status: 'evaluated', delta: 2, expected: 2, width: 430, height: 932 }
 ]) {
-    test(`decision ${sample.status}: completed dialogue commits with ${sample.expected} affinity`, async ({ page }) => {
+    test(`decision ${sample.status}: completed dialogue commits with ${sample.expected} affinity at ${sample.width}px`, async ({ page }) => {
         await page.setViewportSize({ width: sample.width, height: sample.height });
         await page.route('**/*', async route => {
             const request = route.request();
@@ -41,9 +44,11 @@ for (const sample of [
             document.getElementById('chat-input').value = 'I heard what you said.';
             await e.freeTalkSystem.sendChatMessage(id => e.sceneRenderer.getScene(id));
             return { affinity: e.stateManager.getAffinity('Seoyeon'), turns: e.freeTalkSystem.freeTalkTurns - turns,
+                badge: e.uiManager.nameTagEl.textContent,
                 text: e.freeTalkSystem.freeTalkHistory.filter(item => item.role === 'assistant').at(-1)?.content || '' };
         });
         expect(result.affinity).toBe(30 + sample.expected);
+        expect(result.badge).toContain(String(result.affinity));
         expect(result.turns).toBe(1);
         expect(result.text).toContain('Please give me a moment.');
     });
