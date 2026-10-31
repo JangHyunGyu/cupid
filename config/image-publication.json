@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
   "project": "cupid",
-  "publishedAt": "2026-10-30T20:57:39.342862Z",
+  "publishedAt": "2026-10-31T05:02:29.497583Z",
   "publicBucket": "archerlab-site-images",
   "backupBucket": "archerlab-image-backups",
   "verified": true,
   "manifests": {
     "config/public-images.json": "e1fc110c5e1c1224f05ee5c897ddfd19e6a1e6bc5a3b912eb063079ca1bd4376",
-    "config/image-sources.json": "bb5992eb6d7facac8fd1a6ff0f6b17c985989bf96163e3faab4c077399e9d4f9",
-    "config/character-assets.json": "4c214dd88b17759a5265e5b11dd31945145e433037977724f2f79dc1b0543aa0"
+    "config/image-sources.json": "a925cd7072997c692b039994da3dc7abc303cb03306808b60d54cde4197cea08",
+    "config/character-assets.json": "faeebe9b5de73dcb13350f0b49028c53f9b5bb1eafb22f7eb91f8f08789b0b63"
   },
   "counts": {
     "sources": 1582,
