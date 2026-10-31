@@ -3,7 +3,7 @@ import { toLogicalAssetId, isPublicLogicalId, jsonResponse } from '../_lib/media
 import { MEDIA_MANIFEST } from '../_lib/media-manifest.js';
 import { readMediaSession, sameOriginRequest } from '../_lib/media-session.js';
 import { readMediaGrant } from '../_lib/media-grant.js';
-import { mediaCacheKey } from '../_lib/media-storage.js';
+import { mediaCacheKey, readMediaObject } from '../_lib/media-storage.js';
 
 export async function onRequestGet(context) {
   const { request, env } = context;
@@ -15,7 +15,7 @@ export async function onRequestGet(context) {
   if (!entry) return jsonResponse({ error: 'invalid_asset' }, 400);
   const publicAsset = isPublicLogicalId(id);
   if (!sameOriginRequest(request)) return jsonResponse({ error: 'forbidden_origin' }, 403);
-  if (!env.MEDIA_BUCKET) return jsonResponse({ error: 'media_unavailable' }, 503);
+  if (!env.MEDIA_BUCKET && !env.PUBLIC_IMAGE_BUCKET) return jsonResponse({ error: 'media_unavailable' }, 503);
 
   const timings = [];
   let started = performance.now();
@@ -69,7 +69,7 @@ export async function onRequestGet(context) {
 
   try {
     started = performance.now();
-    const object = await env.MEDIA_BUCKET.get(file.key);
+    const object = await readMediaObject(env, file);
     if (!object) return jsonResponse({ error: 'asset_missing' }, 404);
     // Uploads are verified single-part objects. Check their identity without buffering
     // the image; immutable SHA-256 keys are never overwritten with different bytes.

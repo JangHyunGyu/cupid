@@ -63,7 +63,7 @@ test('repaired standing expressions contain real alpha without changing native d
         const rel = `assets/images/characters/${name}.png`;
         const decoded = readPlainMedia(path.join(root, rel));
         const { width, height, transparent, opaque } = pngAlpha(decoded);
-        assert.equal(width, 864); assert.equal(height, 1152);
+        assert.equal(width, name.startsWith('nurse_') ? 1152 : 864); assert.equal(height, name.startsWith('nurse_') ? 1536 : 1152);
         assert.ok(transparent > width * height * 0.1, name);
         assert.ok(opaque > width * height * 0.3, name);
         assert.deepEqual(decoded, fs.readFileSync(path.join(root, 'tests/fixtures/corrected-media', rel)));

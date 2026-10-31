@@ -14,7 +14,8 @@ for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) {
             renderer.init(); renderer.render();
             return [...document.querySelectorAll('.cg-card')].map(card => ({ id: card.dataset.cgId, label: card.querySelector('.card-info p').textContent }));
         }, lang);
-        expect(result).toHaveLength(33);
+        expect(result).toHaveLength(35);
+        expect(result.map(card => card.id)).toEqual(expect.arrayContaining(['event_haeun_trust', 'event_haeun_reputation']));
         expect(result.some(card => card.id === 'nurse_home_event1' || card.label === 'null' || card.label === 'undefined')).toBe(false);
     });
 }

@@ -257,3 +257,24 @@ test('cold delivery starts streaming before the whole image or cache write is av
     await Promise.all(f.writes);
   } finally { f.restore(); }
 });
+
+test('shared PUBLIC_IMAGE_BUCKET objects can back /api/media while preserving unlock checks', async () => {
+  const f = await fixture();
+  try {
+    const originalBucket = f.env.MEDIA_BUCKET;
+    delete f.env.MEDIA_BUCKET;
+    f.env.PUBLIC_IMAGE_BUCKET = {
+      async get(key) {
+        if (!key.startsWith('objects/')) return null;
+        return originalBucket.get(key.replace(/^objects\//, 'images/'));
+      }
+    };
+    assert.equal((await f.serve()).status, 403, 'unlock check still enforced for shared bucket');
+    assert.equal((await f.post([f.id])).status, 200);
+    await Promise.all(f.writes);
+    f.cacheEntries.clear();
+    const res = await f.serve();
+    assert.equal(res.status, 200);
+    assert.deepEqual(Buffer.from(await res.arrayBuffer()), f.plain);
+  } finally { f.restore(); }
+});

@@ -19,16 +19,6 @@
     "height": 4096,
     "encoding": "WebP quality 95, method 6; native dimensions and alpha retained"
   },
-  "assets/images/characters/teacher_flushed.webp": {
-    "sourceSha256": "977bf49a75c323c4602885d687c5e2a768e77d5f1d7402f43ebb3db244496b49",
-    "key": "images/480c3ba0e2af30edb5f1f7bf978f61f29c4013a5664dc4ba00e0a660a6b8d3db.webp",
-    "sha256": "480c3ba0e2af30edb5f1f7bf978f61f29c4013a5664dc4ba00e0a660a6b8d3db",
-    "etag": "3b119ccf9ee2f2850bdbf11674059cb9",
-    "size": 1149414,
-    "width": 3600,
-    "height": 4800,
-    "encoding": "WebP quality 95, method 6; native dimensions and alpha retained"
-  },
   "assets/images/characters/nurse_home_smile.webp": {
     "sourceSha256": "90badeae1ec73169b5d6130ab7b267b1040740da11c3331ac531445f692dc8c0",
     "key": "images/059c7483dd4f68927103151adc3e037e1e17a5116b264d04e6dc395676efb6ad.webp",
@@ -125,26 +115,6 @@
     "sha256": "70f35ee7169a65d67c5523e390b44b3efd6b0737bc8f84e80674d5633fa2df6c",
     "etag": "c714e25d30de0dd8cff767e08f9eb6af",
     "size": 1116962,
-    "width": 3584,
-    "height": 4800,
-    "encoding": "WebP quality 95, method 6; native dimensions and alpha retained"
-  },
-  "assets/images/characters/dain_date_sweat.webp": {
-    "sourceSha256": "dd91f15cc04247fadb5386ba5f54db41aa14e3d260e3db4d2611c5f48662706f",
-    "key": "images/2f16f577f9be02135c28a649a3869669679e89fd3f5dc1303a125ebde78a55fe.webp",
-    "sha256": "2f16f577f9be02135c28a649a3869669679e89fd3f5dc1303a125ebde78a55fe",
-    "etag": "d6a972d4c1ed97afc3424ec4cf538778",
-    "size": 934570,
-    "width": 3584,
-    "height": 4800,
-    "encoding": "WebP quality 95, method 6; native dimensions and alpha retained"
-  },
-  "assets/images/characters/dain_date_laugh.webp": {
-    "sourceSha256": "db25f717e151407d8c73fa47acd3171182c06e9ec5ddc59c7e442134d54b5ff3",
-    "key": "images/3d13a7a0f68cb0bdc0cbb4375da25681bee6ba8df079f9fc303838094fccd8ae.webp",
-    "sha256": "3d13a7a0f68cb0bdc0cbb4375da25681bee6ba8df079f9fc303838094fccd8ae",
-    "etag": "c3d13269801d4c7bc638889b0040c5a2",
-    "size": 912812,
     "width": 3584,
     "height": 4800,
     "encoding": "WebP quality 95, method 6; native dimensions and alpha retained"

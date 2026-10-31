@@ -9,7 +9,7 @@ test('optimized media preserves every original archive identity and unchanged fa
   const original = JSON.stringify(storage);
   const delivery = resolveMediaDelivery(storage, variants);
   assert.equal(JSON.stringify(storage), original);
-  assert.equal(Object.keys(variants).length, 15);
+  assert.equal(Object.keys(variants).length, 12);
   for (const [relative, source] of Object.entries(storage)) {
     assert.equal(delivery[relative].sourceHash, source.sourceHash);
     if (variants[relative]) {
