@@ -49,7 +49,7 @@
         return new Promise((resolve, reject) => {
             const host = document.createElement('div');
             host.className = 'ai-browser-verification';
-            host.style.cssText = 'position:fixed;z-index:2147483647;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:calc(100vw - 20px);visibility:hidden;';
+            host.style.cssText = 'position:fixed;z-index:2147483647;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:calc(100vw - 20px);';
             (document.body || document.documentElement).append(host);
             let id, done = false;
             const finish = (error, value) => {
@@ -63,14 +63,12 @@
             signal?.addEventListener('abort', cancel, { once: true });
             try {
                 id = api.render(host, { sitekey: SITEKEY, action: 'ai_request', cData: hash,
-                    execution: 'execute', appearance: 'interaction-only', theme: 'auto',
+                    execution: 'execute', appearance: 'interaction-only', theme: 'auto', retry: 'never',
                     size: root.innerWidth < 330 ? 'compact' : 'normal', language: 'auto',
                     callback: value => finish(null, value),
-                    'error-callback': () => { finish(failure()); return true; },
+                    'error-callback': code => { console.warn('[AI access] Verification failed:', String(code)); finish(failure()); return true; },
                     'expired-callback': () => finish(failure()),
                     'timeout-callback': () => finish(failure()),
-                    'before-interactive-callback': () => { host.style.visibility = 'visible'; },
-                    'after-interactive-callback': () => { host.style.visibility = 'hidden'; },
                 });
                 if (!done) api.execute(id);
             } catch (_) { finish(failure()); }
