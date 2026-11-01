@@ -30,6 +30,7 @@ for (const surface of ['single', 'group', 'gallery']) for (const fail of [false,
                     perfectEndingCleared: true, freeTalkCount: 30 } }, cg: {}, endings: {}, bgm: {} }));
         });
         await installAffinitySeeder(page);
+        if (surface === 'gallery') await require('./helpers/gallery-credit-mock.cjs').installGalleryCreditMock(page);
         await page.goto(`/${surface === 'gallery' ? 'gallery' : 'game'}-en.html`);
         if (surface === 'gallery') {
             await page.waitForFunction(() => window.galleryFreeTalk);

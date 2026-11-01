@@ -217,7 +217,7 @@ window.__cupidShowGalleryLoadError = function() {
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
     if (window.CupidGalleryLoaderReady) return;
     const basePath = 'assets/js/';
-    const version = '2.9.371';
+    const version = '2.9.372';
     const LOAD_RETRIES = 3;
     const recoveryKey = 'cupid-gallery-load-recovery:' + window.location.pathname;
 
@@ -251,6 +251,7 @@ window.__cupidShowGalleryLoadError = function() {
         'gallery-ui-core.js',
 
         // 4. 갤러리 프리토킹 (UI 코어 의존)
+        'gallery-credits.js',
         'gallery-freetalk.js',
 
         // 5. 메인 컨트롤러 (UI 의존)

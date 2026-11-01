@@ -703,6 +703,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         `;
 
         // 이벤트 바인딩 (게임과 동일한 ID 사용)
+        window.CupidGalleryCredits?.mount(this.overlayEl);
         const closeBtn = this.overlayEl.querySelector('.gft-close-btn');
         const sendBtn = this.overlayEl.querySelector('#chat-send');
         const input = this.overlayEl.querySelector('#chat-input');
@@ -959,7 +960,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     }
 
     async _handleSend() {
-        if (this.isProcessing) return;
+        if (this.isProcessing || this._creditChecking) return;
         if (this.progress?.isFreeTalkUnlocked && !this.progress.isFreeTalkUnlocked(this.currentCharId)) return;
         if (!this.currentCharId || !this.currentCharKey || !this.overlayEl?.classList?.contains('active')) return;
 
@@ -985,6 +986,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         // 텍스트와 이미지 둘 다 없으면 전송 안 함
         if (!text && !stagedImage) return;
+        this._creditChecking = true;
+        let canSend = false;
+        try { canSend = await window.CupidGalleryCredits.beforeSend(); }
+        finally { this._creditChecking = false; }
+        if (!canSend || input.value.trim() !== text || this.stagedImage !== stagedImage
+            || this._galleryTalkEpoch !== requestContext.epoch
+            || this.currentCharId !== requestCharId || !this.overlayEl?.classList.contains('active')) return;
+        requestContext.creditEpoch = window.CupidGalleryCredits.capture();
 
         input.value = '';
         this._resizeInput(input);
@@ -1208,7 +1217,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             _lastTurnMeta = _turnMeta;
             requestContext.turnMeta = _turnMeta;
             this._activeChatTurnId = _turnMeta?.turnId || null;
-            const aiEndpoint = window.AI_API_ENDPOINT || '/api/ai';
+            const aiEndpoint = 'https://avatar.archerlab.dev/api/credits/chat';
             _lastAiEndpoint = aiEndpoint;
             const fallbackEndpoint = ''; // AI text must not fall back to the legacy Gemini endpoint.
             const requestCupidGalleryReplyData = async (messages, { resetPreview = false } = {}) => {
@@ -1244,6 +1253,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     })
                 });
                 return GalleryFreeTalkCore.requestChatCompletion(aiEndpoint, buildRequestInit, {
+                    fetchImpl: (url, init) => window.CupidGalleryCredits.chatFetch(url, init, requestContext.creditEpoch),
                     assertCurrent: payload => this._assertRequestContext(requestContext, payload),
                     signal: requestContext.abortController.signal,
                     onDelta: ({ content }) => {

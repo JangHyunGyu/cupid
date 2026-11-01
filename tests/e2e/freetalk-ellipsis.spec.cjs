@@ -52,6 +52,7 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
             });
         }
         await installAffinitySeeder(page);
+        if (surface === 'gallery') await require('./helpers/gallery-credit-mock.cjs').installGalleryCreditMock(page);
         await page.goto(`/${surface === 'gallery' ? 'gallery' : 'game'}${suffix}.html`);
         if (surface === 'gallery') {
             await page.waitForFunction(() => window.galleryFreeTalk);
@@ -105,7 +106,10 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
         expect(await page.locator('body').innerText()).toContain(failure === 'malformed' ? 'Received prefix...' : '...');
         expect(await page.locator('body').innerText()).not.toContain('our our our');
         expect(succeeded.input).toBe('');
-        expect(succeeded.history.filter(item => item.role === 'assistant').length).toBe(before.history.filter(item => item.role === 'assistant').length + 1);
+        // Gallery deliberately rolls empty/repeated output back out of AI memory;
+        // its visible ellipsis is still logged below. A real prefix is retained.
+        if (surface === 'gallery' && failure !== 'malformed') expect(succeeded.history).toEqual(before.history);
+        else expect(succeeded.history.filter(item => item.role === 'assistant').length).toBe(before.history.filter(item => item.role === 'assistant').length + 1);
         await expect.poll(() => logs.filter(entry => entry.role === 'assistant' && entry.logSource === 'realtime').length).toBe(1);
         expect(logs.some(entry => String(entry.content).includes(placeholder))).toBe(false);
         expect(errors).toHaveLength(failure === 'repeat' ? 1 : 0);

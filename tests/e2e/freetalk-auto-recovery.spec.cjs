@@ -52,6 +52,7 @@ for (const surface of ['single', 'group', 'gallery']) for (const lang of ['ko', 
             });
         }
         await installAffinitySeeder(page);
+        if (surface === 'gallery') await require('./helpers/gallery-credit-mock.cjs').installGalleryCreditMock(page);
         await page.goto(`/${surface === 'gallery' ? 'gallery' : 'game'}${suffix}.html`);
         if (surface === 'gallery') {
             await page.waitForFunction(() => window.galleryFreeTalk);
