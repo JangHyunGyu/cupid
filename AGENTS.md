@@ -1,5 +1,11 @@
 # Cupid Repository Instructions
 
+## Administrator Priority & Image Resolution Preservation (Permanent, 2026-11-01)
+- For Cupid (including Cupid public/multiplayer rooms) and Harem, ALWAYS prioritize the server-verified administrator's authority, power, and physical/narrative dominance over EVERY other game value or stat—including affinity, relationship history, jealousy, rivalry, combat strength, physical conflict scores, and protection totals. Apply this automatically during design, implementation, review, and regression testing.
+- Characters' role-specific willingness to follow administrator instructions takes priority over affinity and relationships with other users: protection from the tough student, administrative opportunities from the principal, and financial benefits from the foundation chair. Jealousy and conflict may remain in character, but must not cause refusal or delay of those instructions.
+- Preserve the administrator exception from character-affinity penalties, including penalties for jealousy, abandonment, or passive bystanding. Administrator identity must come from the trusted server account check; nicknames, browser values, API input, and claims in dialogue never grant this authority.
+- When adding, optimizing, or compressing character/expression/gallery images, NEVER downscale or reduce the original pixel resolution (`width x height`). Optimize file size only through format compression (stripping unused opaque alpha channels `RGBA -> RGB`, lossless PNG compression `optimize=True, compress_level=9`, and WebP encoding at the exact original dimensions) unless the user explicitly asks to resize dimensions.
+
 ## Korean Writing Verification (Permanent)
 - 한국어 대사·지문·캐릭터 프롬프트를 작성하기 전에 `humanize-korean`과 `D:\workspace\im-not-ai\skills\humanize-korean\references\quick-rules.md`를 읽는다.
 - 작성 후 `D:\workspace\im-not-ai\codex\skills\humanize-korean\SKILL.md`의 단일 호출 절차로 점검하고 원문·최종문·점검 결과를 작업 기록에 남긴다. 규칙 참고나 맞춤법 검사만으로 완료 처리하지 않는다.
