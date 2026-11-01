@@ -9,13 +9,15 @@ function harness(width = 375) {
   const window = { innerWidth: width, fetch: async (...args) => { calls.push(args); return new Response('{}'); },
     turnstile: { render(host, options) { widgets.push(options); return widgets.length - 1; },
       execute(id) { queueMicrotask(() => widgets[id].callback('single-use-' + id)); }, remove() {} } };
-  const document = { documentElement: { lang: 'en' }, body: { append() {} },
+  const events = new EventTarget();
+  const document = { documentElement: { lang: 'en' }, body: { append() {} }, visibilityState: 'visible',
+    addEventListener: events.addEventListener.bind(events), removeEventListener: events.removeEventListener.bind(events),
     createElement: () => ({ style: {}, remove() {} }) };
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/js/ai-browser-proof.js'), 'utf8'), {
     window, document, location: new URL('https://cupid.archerlab.dev/game.html'),
-    URL, Request, Response, Headers, crypto: globalThis.crypto, TextEncoder, DOMException, setTimeout, clearTimeout,
+    URL, Request, Response, Headers, crypto: globalThis.crypto, TextEncoder, DOMException, setTimeout, clearTimeout, console: { warn() {} },
   });
-  return { window, calls, widgets };
+  return { window, calls, widgets, document, events };
 }
 
 test('verification preserves every prompt byte, cache key, request type and stream flag', async () => {
@@ -33,6 +35,46 @@ test('verification preserves every prompt byte, cache key, request type and stre
     assert.equal(h.widgets.at(-1).action, 'ai_request');
   }
   assert.equal(new Set(h.calls.map(args => args[0].headers.get('x-ai-proof'))).size, 4);
+});
+
+test('a recoverable verification failure retries once without changing request bytes or cache identity', async () => {
+  const h = harness();
+  h.window.turnstile.execute = id => queueMicrotask(() => id === 0
+    ? h.widgets[id]['error-callback']('300030') : h.widgets[id].callback('recovered-proof'));
+  const body = '{"messages":[{"role":"user","content":"Keep exact bytes"}]}';
+  await h.window.fetch('/api/ai', { method: 'POST', body, headers: { 'x-cache-key': 'stable-key', 'x-request-type': 'summary' } });
+  assert.equal(h.widgets.length, 2);
+  assert.equal(h.calls.length, 1);
+  assert.equal(h.widgets[0].cData, h.widgets[1].cData);
+  assert.equal(await h.calls[0][0].clone().text(), body);
+  assert.equal(h.calls[0][0].headers.get('x-cache-key'), 'stable-key');
+  assert.equal(h.calls[0][0].headers.get('x-ai-proof'), 'recovered-proof');
+});
+
+for (const [code, attempts] of [['200500', 2], ['110200', 1], ['unknown', 1]]) {
+  test(`verification ${code} fails closed after ${attempts} attempt(s)`, async () => {
+    const h = harness();
+    h.window.turnstile.execute = id => queueMicrotask(() => h.widgets[id]['error-callback'](code));
+    await assert.rejects(h.window.fetch('/api/ai', { method: 'POST', body: '{}' }));
+    assert.equal(h.widgets.length, attempts);
+    assert.equal(h.calls.length, 0);
+  });
+}
+
+test('hidden pages wait for visibility, and cancellation releases the verification queue', async () => {
+  const h = harness(); h.document.visibilityState = 'hidden';
+  const controller = new AbortController();
+  const first = h.window.fetch('/api/ai', { method: 'POST', body: '{}', signal: controller.signal });
+  const rejected = assert.rejects(first, { name: 'AbortError' });
+  await new Promise(resolve => setTimeout(resolve, 20));
+  assert.equal(h.widgets.length, 0);
+  controller.abort(); await rejected;
+  const next = h.window.fetch('/api/ai', { method: 'POST', body: '{}' });
+  await new Promise(resolve => setTimeout(resolve, 20));
+  assert.equal(h.widgets.length, 0);
+  h.document.visibilityState = 'visible'; h.events.dispatchEvent(new Event('visibilitychange'));
+  await next;
+  assert.equal(h.widgets.length, 1); assert.equal(h.calls.length, 1);
 });
 
 test('only AI POST requests need proof, with compact mobile verification and cancellation', async () => {

@@ -9,7 +9,7 @@
         ja: '接続を確認できませんでした。ページを再読み込みして、もう一度お試しください。',
         en: 'Browser verification failed. Reload this page and try again.',
     })[(document.documentElement.lang || 'en').slice(0, 2)] || 'Browser verification failed.';
-    const failure = () => new Error(message());
+    const failure = (retryable = false) => Object.assign(new Error(message()), { verificationRetryable: retryable });
     const aborted = signal => signal?.reason || new DOMException('Aborted', 'AbortError');
     function abortable(promise, signal) {
         if (!signal) return promise;
@@ -25,6 +25,22 @@
             || (url.hostname === 'avatar.archerlab.dev' && url.pathname === '/api/credits/chat')
             || (url.origin === location.origin && url.pathname === '/api/ai');
     }
+    function visible(signal) {
+        if (signal?.aborted) return Promise.reject(aborted(signal));
+        if (document.visibilityState !== 'hidden') return Promise.resolve();
+        return new Promise((resolve, reject) => {
+            const finish = error => {
+                document.removeEventListener('visibilitychange', changed);
+                signal?.removeEventListener('abort', cancel);
+                error ? reject(error) : resolve();
+            };
+            const changed = () => { if (document.visibilityState !== 'hidden') finish(); };
+            const cancel = () => finish(aborted(signal));
+            document.addEventListener('visibilitychange', changed);
+            signal?.addEventListener('abort', cancel, { once: true });
+            changed();
+        });
+    }
     async function digest(type, body) {
         const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${type || ''}\n${body}`));
         return Array.from(new Uint8Array(bytes), byte => byte.toString(16).padStart(2, '0')).join('');
@@ -35,14 +51,14 @@
             const script = document.createElement('script');
             script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
             script.async = true;
-            const timer = setTimeout(() => { script.remove(); reject(failure()); }, 20000);
+            const timer = setTimeout(() => { script.remove(); reject(failure(true)); }, 20000);
             script.onload = () => { clearTimeout(timer); root.turnstile?.render ? resolve(root.turnstile) : reject(failure()); };
-            script.onerror = () => { clearTimeout(timer); script.remove(); reject(failure()); };
+            script.onerror = () => { clearTimeout(timer); script.remove(); reject(failure(true)); };
             document.head.append(script);
         }).catch(error => { loading = null; throw error; });
         return loading;
     }
-    async function token(hash, signal) {
+    async function tokenAttempt(hash, signal) {
         if (signal?.aborted) throw aborted(signal);
         const api = await abortable(load(), signal);
         if (signal?.aborted) throw aborted(signal);
@@ -59,20 +75,35 @@
                 host.remove(); error ? reject(error) : resolve(value);
             };
             const cancel = () => finish(aborted(signal));
-            const timer = setTimeout(() => finish(failure()), 90000);
+            const timer = setTimeout(() => finish(failure(true)), 90000);
             signal?.addEventListener('abort', cancel, { once: true });
             try {
                 id = api.render(host, { sitekey: SITEKEY, action: 'ai_request', cData: hash,
                     execution: 'execute', appearance: 'interaction-only', theme: 'auto', retry: 'never',
                     size: root.innerWidth < 330 ? 'compact' : 'normal', language: 'auto',
                     callback: value => finish(null, value),
-                    'error-callback': code => { console.warn('[AI access] Verification failed:', String(code)); finish(failure()); return true; },
-                    'expired-callback': () => finish(failure()),
-                    'timeout-callback': () => finish(failure()),
+                    'error-callback': code => {
+                        console.warn('[AI access] Verification failed:', String(code));
+                        finish(failure(/^(110600|110620|200500|300\d*|600\d*)$/.test(String(code))));
+                        return true;
+                    },
+                    'expired-callback': () => finish(failure(true)),
+                    'timeout-callback': () => finish(failure(true)),
                 });
                 if (!done) api.execute(id);
+                else if (id !== undefined) { try { api.remove(id); } catch (_) {} }
             } catch (_) { finish(failure()); }
         });
+    }
+    async function token(hash, signal) {
+        for (let attempt = 0; attempt < 2; attempt++) {
+            await visible(signal);
+            try { return await tokenAttempt(hash, signal); }
+            catch (error) {
+                if (signal?.aborted) throw aborted(signal);
+                if (attempt || !error.verificationRetryable) throw error;
+            }
+        }
     }
     async function protectedFetch(input, init) {
         const method = String(init?.method || (input instanceof Request ? input.method : 'GET')).toUpperCase();
