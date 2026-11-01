@@ -17,3 +17,17 @@ test('main, group and gallery parsers preserve authoritative results and skip mi
  const normalized=core.normalizeCupidResponsePayload({sceneMessages:[{name:'Teacher',segments:[{type:'dialogue',text:'Stop.'}],affinity:-17,affinityEvaluation:{status:'evaluated'}}]});
  assert.equal(core.decisionAffinityValue(normalized),-17);
 });
+
+test('shared-server attribution correction survives the Cupid request and response path',async()=>{
+ const calls=[];
+ const entry={name:'Teacher',segments:[{type:'dialogue',text:'Thank you for helping.'}],affinity:0,affinityEvaluation:{status:'evaluated',source:'decision'}};
+ const audit={status:'evaluated',evaluations:[{proposedDelta:-10,delta:0,negativeBasis:'other_actor',correction:'negative_not_attributed_to_user'}]};
+ const result=await core.requestChatCompletion('https://api.example.test/chat',()=>({method:'POST',body:JSON.stringify({messages:[{role:'user',content:'Here is gauze to stop the bleeding.'}],responseSpeakers:[{id:'Teacher',name:'Teacher'}]})}),{
+  fetchImpl:async(_url,init)=>{calls.push(JSON.parse(init.body));return Response.json({affinityDecision:audit,choices:[{message:{content:JSON.stringify({sceneMessages:[entry]})}}]});}
+ });
+ assert.equal(calls.length,1);
+ assert.equal(calls[0].affinityDecision,true);
+ const normalized=core.normalizeCupidResponsePayload(JSON.parse(result.choices[0].message.content));
+ assert.equal(core.decisionAffinityValue(normalized),0,'use corrected score, never the proposed penalty');
+ assert.equal(result.affinityDecision.evaluations[0].proposedDelta,-10,'retain cause audit separately');
+});
