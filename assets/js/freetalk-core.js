@@ -202,6 +202,28 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return Math.min(normalized, STORY_FREETALK_TURN_GAIN_MAX);
     }
 
+    function projectDecisionWriterMessages(messages) {
+        const score = 'Affinity scoring runs after the completed reply. Use 0 only as the affinity transport placeholder. Preserve the relationship, causes of hurt and unresolved events in prose; friendliness alone does not resolve them.';
+        const face = 'Expression images are selected after generation. Use "normal" as a transport placeholder; keep metadata out of visible text.';
+        return (messages || []).map(message => {
+            if (message?.role !== 'system' || typeof message.content !== 'string') return message;
+            let content = message.content;
+            for (const lang of ['ko', 'en']) {
+                content = content.split(buildAffinityChangeGuidance(lang)).join(score);
+                content = content.split(buildExpressionAffinityGuidance(lang)).join(face);
+            }
+            const replacements = [
+                ['<판정한 정수>', '0'], ['<scored integer>', '0'],
+                ['세 필드 필수. affinity는 위 기준의 -50~+5 정수. 예시나 기본값 0을 복사하지 않습니다.', score],
+                ['affinity는 -50~+5 정수. 예시나 기본값 0을 복사하지 않습니다.', score],
+                ['All three fields are required; affinity is one -50..+5 integer chosen from the scoring rule, never a copied example or default 0.', score],
+                ['affinity is -50..+5; never copy an example or default 0.', score]
+            ];
+            for (const [before, after] of replacements) content = content.split(before).join(after);
+            return { ...message, content };
+        });
+    }
+
     function buildAffinityChangeGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
@@ -1919,6 +1941,7 @@ Latest user: """${excerpt}"""
                     const requestBody = JSON.parse(init.body);
                     requestBody.expressionDecision = true;
                     requestBody.affinityDecision = true;
+                    requestBody.messages = projectDecisionWriterMessages(requestBody.messages);
                     requestBody.previousExpressions = { ...global.CupidExpressionState };
                     if (wantsStream) requestBody.responseStreaming = 'segments-v1';
                     init.body = JSON.stringify(requestBody);
@@ -2329,6 +2352,7 @@ Latest user: """${excerpt}"""
         normalizeForcedSexualViolation,
         normalizeStoryFreeTalkAffinityChange,
         buildAffinityChangeGuidance,
+        projectDecisionWriterMessages,
         getRelationshipAftermathDuration,
         normalizeRelationshipAftermath,
         updateRelationshipAftermath,

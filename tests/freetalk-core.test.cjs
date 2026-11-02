@@ -25,6 +25,20 @@ vm.runInNewContext(source, {
     encodeURIComponent
 });
 const core = window.CupidFreeTalkCore;
+test('decision projection removes only shared judging instructions and preserves history and relationship evidence', () => {
+    for (const lang of ['ko', 'en']) {
+        const prefix = 'Character canon: quiet librarian. User identity remains unchanged.';
+        const tail = '===CACHE_BOUNDARY===\nUnresolved promise: atlas tomorrow.';
+        const original = [{ role:'system',content:prefix+'\n'+core.buildAffinityChangeGuidance(lang)+'\n'+core.buildExpressionAffinityGuidance(lang)+'\n'+tail },
+            {role:'user',content:core.buildAffinityChangeGuidance(lang)}];
+        const projected = core.projectDecisionWriterMessages(original);
+        assert.ok(projected[0].content.startsWith(prefix));assert.ok(projected[0].content.endsWith(tail));
+        assert.equal(projected[1],original[1]);assert.ok(projected[0].content.length<original[0].content.length);
+        assert.match(projected[0].content,/transport placeholder/);assert.ok(original[0].content.includes(core.buildAffinityChangeGuidance(lang)));
+        const next=core.projectDecisionWriterMessages([{...original[0],content:original[0].content.replace('atlas tomorrow','map next week')}]);
+        assert.equal(next[0].content.split('===CACHE_BOUNDARY===')[0],projected[0].content.split('===CACHE_BOUNDARY===')[0]);
+    }
+});
 const composer = require('../assets/js/modules/MessageComposerUtils.js');
 
 function read(relativePath) {
