@@ -51,8 +51,8 @@ test('Cupid tools prefer DeepInfra fp4 Turbo with Venice fp4 fallback', async ()
         allow_fallbacks: false,
         require_parameters: true,
     });
-    assert.deepEqual(calls[0].body.reasoning, { effort: 'none', exclude: true });
-    assert.equal(calls[0].body.include_reasoning, false);
+    assert.deepEqual(calls[0].body.reasoning, { effort: 'none', enabled: false });
+    assert.equal(calls[0].body.include_reasoning, undefined);
     assert.equal('thinking' in calls[0].body, false);
     assert.equal(calls[0].body.max_tokens, OPENROUTER_GEMMA_MAX_TOKENS);
     assert.equal(normalizeOpenRouterModel('deepseek-v4-flash'), OPENROUTER_DEEPSEEK_MODEL);
@@ -128,7 +128,7 @@ test('Cupid direct tools keep model-native protocols behind isolated adapters', 
     const qwenPayload = {};
     qwen.applyPayload(qwenPayload, { wantsJson: true });
     assert.deepEqual(qwenPayload.response_format, { type: 'json_object' });
-    assert.deepEqual(qwenPayload.reasoning, { effort: 'none', exclude: true });
+    assert.deepEqual(qwenPayload.reasoning, { effort: 'none', enabled: false });
     assert.deepEqual(qwenPayload.provider.only, ['alibaba']);
     assert(!('tools' in qwenPayload));
 
@@ -139,7 +139,7 @@ test('Cupid direct tools keep model-native protocols behind isolated adapters', 
     assert.deepEqual(gemmaPayload.provider.quantizations, ['fp4']);
     assert.equal(gemmaPayload.provider.allow_fallbacks, false);
     assert.deepEqual(gemmaPayload.response_format, { type: 'json_object' });
-    assert.deepEqual(gemmaPayload.reasoning, { effort: 'none', exclude: true });
+    assert.deepEqual(gemmaPayload.reasoning, { effort: 'none', enabled: false });
 
     const nemotronPayload = {};
     nemotron.applyPayload(nemotronPayload, { wantsJson: true });
