@@ -5578,8 +5578,8 @@
             "assets/images/characters/seyoun_climax_06.png",
             "assets/characters/seoyeon/expressions/climax/06/sprite.png"
           ],
-          "bytes": 1103275,
-          "sha256": "5c3ed089e2374337cce56762ab0bdb234935b05fee7c78c1e02c06950740606c"
+          "bytes": 1105296,
+          "sha256": "0e1714084bf4352109a859ef4fb1437c985f5997bcb4ec6b5e010951c8feadf9"
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/climax/06/sprite.webp",
@@ -5587,8 +5587,8 @@
             "assets/images/characters/seyoun_climax_06.webp",
             "assets/characters/seoyeon/expressions/climax/06/sprite.webp"
           ],
-          "bytes": 156397,
-          "sha256": "1236f32eb5d1909001235497dbe9dd93634ea999686422d4723e300ffa49e474"
+          "bytes": 156315,
+          "sha256": "78d7d401433507af4e2c764739fd7b26b9b6cb131456f993598d772280a66752"
         }
       }
     },

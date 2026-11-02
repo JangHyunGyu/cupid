@@ -2452,14 +2452,14 @@
       "backupKey": "objects/sources/3f368383b144db8c11ad2909f986f64b8e53b5363763574622301fdd6ece6e44.webp"
     },
     "assets/characters/seoyeon/expressions/climax/06/sprite.png": {
-      "sha256": "5c3ed089e2374337cce56762ab0bdb234935b05fee7c78c1e02c06950740606c",
-      "bytes": 1103275,
-      "backupKey": "objects/sources/5c3ed089e2374337cce56762ab0bdb234935b05fee7c78c1e02c06950740606c.png"
+      "sha256": "0e1714084bf4352109a859ef4fb1437c985f5997bcb4ec6b5e010951c8feadf9",
+      "bytes": 1105296,
+      "backupKey": "objects/sources/0e1714084bf4352109a859ef4fb1437c985f5997bcb4ec6b5e010951c8feadf9.png"
     },
     "assets/characters/seoyeon/expressions/climax/06/sprite.webp": {
-      "sha256": "1236f32eb5d1909001235497dbe9dd93634ea999686422d4723e300ffa49e474",
-      "bytes": 156397,
-      "backupKey": "objects/sources/1236f32eb5d1909001235497dbe9dd93634ea999686422d4723e300ffa49e474.webp"
+      "sha256": "78d7d401433507af4e2c764739fd7b26b9b6cb131456f993598d772280a66752",
+      "bytes": 156315,
+      "backupKey": "objects/sources/78d7d401433507af4e2c764739fd7b26b9b6cb131456f993598d772280a66752.webp"
     },
     "assets/characters/seoyeon/expressions/confused/01/sprite.png": {
       "sha256": "c98d91ebdf09ac563daaaafd68478596d2fe5c8b4cba69bec73b433683c2b5aa",
@@ -8194,14 +8194,14 @@
       "backupKey": "objects/sources/72496328a773403e8b00c258c57b3963c16361ca3a2caeecca54cf1f4841b9f1.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_06.png": {
-      "sha256": "30ea7b8e71cd1245d409b47358d6f50569e7b92025b52800f67671f839b0eb9e",
-      "bytes": 1103238,
-      "backupKey": "objects/sources/30ea7b8e71cd1245d409b47358d6f50569e7b92025b52800f67671f839b0eb9e.png"
+      "sha256": "eebaf8bc74cb5463a3b59da65e2a2653a992da49e3b1539fca84e5bea845d5f0",
+      "bytes": 1105259,
+      "backupKey": "objects/sources/eebaf8bc74cb5463a3b59da65e2a2653a992da49e3b1539fca84e5bea845d5f0.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_climax_06.webp": {
-      "sha256": "2f03408a97bc3f69cc543950c022120efaf2c9707a29e38878cc95416561cec0",
-      "bytes": 156360,
-      "backupKey": "objects/sources/2f03408a97bc3f69cc543950c022120efaf2c9707a29e38878cc95416561cec0.webp"
+      "sha256": "559ace185c0617c3b7abc35ad377ddfbcea51aed9eba5ab49fe786bae36ef224",
+      "bytes": 156278,
+      "backupKey": "objects/sources/559ace185c0617c3b7abc35ad377ddfbcea51aed9eba5ab49fe786bae36ef224.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/seyoun_confused.png": {
       "sha256": "6eafdfcfe252d97c6d03662a4825fcf38298c011d041fd65050923461bae85a5",
