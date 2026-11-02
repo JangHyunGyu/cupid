@@ -1055,7 +1055,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
 
     function buildResponsePaceBlock(messages = [], lang = 'ko') {
         return lang === 'ko'
-            ? '\n\n[응답 호흡]\n응답 길이와 말·행동·내면 서술은 캐릭터와 현재 장면에 맞춥니다. 경청·질문·침묵·휴식도 자연스러운 반응이며 매번 새 사건이 필요하지 않습니다. 진행 중인 행동은 일어난 만큼 구체적으로 쓰고 사용자의 미정 선택은 남겨 둡니다.'
+            ? '\n\n[응답 호흡]\n응답 길이와 말·행동·내면 서술은 캐릭터와 현재 장면에 맞춥니다. 경청·질문·침묵·휴식도 자연스러운 반응이며 매번 새 사건이 필요하지 않습니다. 진행 중인 행동과 상호 합의된 친밀·성적 접촉은 생략하거나 완곡하게 흐리지 않고 호흡·체온·마찰·신체 반응을 일어난 만큼 생생하고 구체적으로 쓰며, 사용자의 미정 선택은 남겨 둡니다.'
             : "\n\n[Response Pace]\nLet the character and current scene determine length, speech, action, and character interiority. Listening, questions, silence, and rest are valid responses; no new event is required each turn. Describe ongoing action concretely as it occurs, leaving the user's unchosen decisions open.";
     }
 
