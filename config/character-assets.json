@@ -1001,6 +1001,33 @@
       }
     },
     {
+      "id": "dain/expressions/provocative/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "provocative",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/provocative/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_provocative.png",
+            "assets/characters/dain/expressions/provocative/01/sprite.png"
+          ],
+          "sha256": "cd54edf2a4fe91f36e80cc9ca3f60e9fda551bbced317d788a1571d90cd3002b",
+          "bytes": 1317990
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/provocative/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_provocative.webp",
+            "assets/characters/dain/expressions/provocative/01/sprite.webp"
+          ],
+          "sha256": "8b65c791adf66a1f5274d8ede7ddc2c17b06108b4b1c099a7e8225f952f7e9b8",
+          "bytes": 207113
+        }
+      }
+    },
+    {
       "id": "dain/expressions/relieved/01",
       "characterId": "dain",
       "role": "expression",
@@ -2357,6 +2384,33 @@
       }
     },
     {
+      "id": "haeun/expressions/provocative/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "provocative",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/provocative/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_provocative.png",
+            "assets/characters/haeun/expressions/provocative/01/sprite.png"
+          ],
+          "sha256": "79becc069e0d8783404f0a7c121688bca7cfadbf51a80f1d6f68291d7389577f",
+          "bytes": 1256429
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/provocative/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_provocative.webp",
+            "assets/characters/haeun/expressions/provocative/01/sprite.webp"
+          ],
+          "sha256": "dd0b85c84d414b5620e62280f63c6ffe60aab6f6def57d6f346beee95ddae449",
+          "bytes": 192673
+        }
+      }
+    },
+    {
       "id": "haeun/expressions/relieved/01",
       "characterId": "haeun",
       "role": "expression",
@@ -3523,6 +3577,33 @@
           ],
           "sha256": "e7dcefacd74c3fb2a7a0838e49cd040f876a69bafdfa2d15961777dda642db43",
           "bytes": 125509
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/provocative/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "provocative",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/provocative/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_provocative.png",
+            "assets/characters/minsu/expressions/provocative/01/sprite.png"
+          ],
+          "sha256": "370157b3fdddf8388d2301170f15b5a9228abce975ee9df6b7c4ed58d9a65d1b",
+          "bytes": 1597962
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/provocative/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_provocative.webp",
+            "assets/characters/minsu/expressions/provocative/01/sprite.webp"
+          ],
+          "sha256": "4209b03d1c9e5017034a81b1f16afe4273d61d30e025833166757a2213c56d0f",
+          "bytes": 216021
         }
       }
     },
@@ -4792,6 +4873,33 @@
           ],
           "sha256": "a20a49df62ec404b015a14d304ac944098e66651c72339a3e0c1c55726b2f9cd",
           "bytes": 910839
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/provocative/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "provocative",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/provocative/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_provocative.png",
+            "assets/characters/nurse/expressions/provocative/01/sprite.png"
+          ],
+          "sha256": "2ca89380e8d151e39f338059cb34130670e963503fccb66826771a5ca58960c1",
+          "bytes": 1777489
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/provocative/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_provocative.webp",
+            "assets/characters/nurse/expressions/provocative/01/sprite.webp"
+          ],
+          "sha256": "5080fb0c92dce74cd5198e421ff608e927c45e6f79ad42530302e676a26eb98d",
+          "bytes": 268809
         }
       }
     },
@@ -6241,6 +6349,33 @@
       }
     },
     {
+      "id": "seoyeon/expressions/provocative/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "provocative",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/provocative/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_provocative.png",
+            "assets/characters/seoyeon/expressions/provocative/01/sprite.png"
+          ],
+          "sha256": "e7da181a8024943012a953bc751bab380c56280a2ff1ccbe81e2ec777c525624",
+          "bytes": 1346116
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/provocative/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_provocative.webp",
+            "assets/characters/seoyeon/expressions/provocative/01/sprite.webp"
+          ],
+          "sha256": "8b8f1d80632e7a7cfa67e5799e9aef797ca2f4c1b361dd8fd1e9fde149a857c1",
+          "bytes": 205635
+        }
+      }
+    },
+    {
       "id": "seoyeon/expressions/relieved/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -7677,6 +7812,33 @@
       }
     },
     {
+      "id": "teacher/expressions/provocative/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "provocative",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/provocative/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_provocative.png",
+            "assets/characters/teacher/expressions/provocative/01/sprite.png"
+          ],
+          "sha256": "7c9fffa58df9b73328e7d3a95f883f6770056624cb9ac8076acbf25090229157",
+          "bytes": 1464609
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/provocative/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_provocative.webp",
+            "assets/characters/teacher/expressions/provocative/01/sprite.webp"
+          ],
+          "sha256": "7d1b77171de65ba45cc841c999c42fe5688eb5408626d9387584f368c75487bc",
+          "bytes": 213213
+        }
+      }
+    },
+    {
       "id": "teacher/expressions/relieved/01",
       "characterId": "teacher",
       "role": "expression",
@@ -8969,6 +9131,33 @@
           ],
           "sha256": "ebe95a73a1107168abdd7f21ebc57454c6b61dbbbb57f185bee954251437deeb",
           "bytes": 157621
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/provocative/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "provocative",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/provocative/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_provocative.png",
+            "assets/characters/yuna/expressions/provocative/01/sprite.png"
+          ],
+          "sha256": "2144494bd7d1a45b2d9b30438cf81865fcfe72c2f6e5f1721f0cce6bfbb704a1",
+          "bytes": 1563252
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/provocative/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_provocative.webp",
+            "assets/characters/yuna/expressions/provocative/01/sprite.webp"
+          ],
+          "sha256": "59b0ffc16295c3b7b0c761f7a4e6e976247fbe19c650488dd5dbcd11c1f6a854",
+          "bytes": 256493
         }
       }
     },

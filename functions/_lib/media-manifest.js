@@ -1459,6 +1459,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/dain_provocative": {
+    "version": "a1de33793e8ed19e208fcd7a",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_provocative.png",
+        "key": "images/a1d9735fd3c731b4c76e53ae256db4eb4410cc7511ffd768df52c051b204b005.png",
+        "sha256": "a1d9735fd3c731b4c76e53ae256db4eb4410cc7511ffd768df52c051b204b005",
+        "etag": "d13368d5d54fdc3a7bf7b910c7a1ef60",
+        "size": 1317953
+      },
+      {
+        "path": "assets/images/characters/dain_provocative.webp",
+        "key": "images/345a5f00a93fa2b94566a5f2f917b3019b6e684c804ed30f685ba0e36fcb1a80.webp",
+        "sha256": "345a5f00a93fa2b94566a5f2f917b3019b6e684c804ed30f685ba0e36fcb1a80",
+        "etag": "0721e1832a493bc2d3d3bd4cc3170894",
+        "size": 207076
+      }
+    ]
+  },
   "characters/dain_relieved": {
     "version": "6eb594a93c9a649999adf6ca",
     "files": [
@@ -2333,6 +2352,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/haeun_provocative": {
+    "version": "da18be0339486bc06735434e",
+    "files": [
+      {
+        "path": "assets/images/characters/haeun_provocative.png",
+        "key": "images/ed5d3070b652fcf4e344218db66214157fbea19865757b996de9a6aca07918c8.png",
+        "sha256": "ed5d3070b652fcf4e344218db66214157fbea19865757b996de9a6aca07918c8",
+        "etag": "8fa7c9cf97b41e5b6232307b3889ed69",
+        "size": 1256392
+      },
+      {
+        "path": "assets/images/characters/haeun_provocative.webp",
+        "key": "images/a6328edb77d35b2e85408811e079177080875b03b821116780f4b48fbe2ee569.webp",
+        "sha256": "a6328edb77d35b2e85408811e079177080875b03b821116780f4b48fbe2ee569",
+        "etag": "d06a89e8f24ce8fe334b3b703f7d111a",
+        "size": 192636
+      }
+    ]
+  },
   "characters/haeun_relieved": {
     "version": "73f1a4e6524dd6cf92938beb",
     "files": [
@@ -3152,6 +3190,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "ea0cd11b1aaa10a024bd6b1796d53a577cd5209bb3596a1a909b0d6fcdb68f8c",
         "etag": "850b7a3a6ef3fd8e5360002a9de92a2f",
         "size": 125472
+      }
+    ]
+  },
+  "characters/minsu_provocative": {
+    "version": "0938d5a6ba057cbc8fa94c2c",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_provocative.png",
+        "key": "images/ec5f19342cfb9f30ce57659470311695e2abfa639024dd86efc09c7d9c1e2dec.png",
+        "sha256": "ec5f19342cfb9f30ce57659470311695e2abfa639024dd86efc09c7d9c1e2dec",
+        "etag": "9bf42c0821e36c22fdb1fd3bb714e267",
+        "size": 1597925
+      },
+      {
+        "path": "assets/images/characters/minsu_provocative.webp",
+        "key": "images/65d040682c46b4adf625e6c3cb86b4deb906872a41820d171f94d7f9cbd4ea21.webp",
+        "sha256": "65d040682c46b4adf625e6c3cb86b4deb906872a41820d171f94d7f9cbd4ea21",
+        "etag": "ef6d7cf48c50f89439feaa1ad93ddf3c",
+        "size": 215984
       }
     ]
   },
@@ -4105,6 +4162,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "4802be4deab4a00f786e24f7b609110403492ae5ef79c708be149a35a28149db",
         "etag": "5766bd2a866ba7a9ea49ad5ffc07a293",
         "size": 910802
+      }
+    ]
+  },
+  "characters/nurse_provocative": {
+    "version": "01db748104e5102d62e5cd40",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_provocative.png",
+        "key": "images/64a508db819f737b8290ad2864d5e939812babe92497fdaf08553aacced8d960.png",
+        "sha256": "64a508db819f737b8290ad2864d5e939812babe92497fdaf08553aacced8d960",
+        "etag": "200a0bcf0b809502589c000d757af80b",
+        "size": 1777452
+      },
+      {
+        "path": "assets/images/characters/nurse_provocative.webp",
+        "key": "images/ec15cb930fc46f438f580b7c7069035fe189c23521f34fd887c8982e7cfde68d.webp",
+        "sha256": "ec15cb930fc46f438f580b7c7069035fe189c23521f34fd887c8982e7cfde68d",
+        "etag": "260ee9fbb297f1f5e1b10690e4663738",
+        "size": 268772
       }
     ]
   },
@@ -5153,6 +5229,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/seyoun_provocative": {
+    "version": "1f6fd4d1864d422a02a1b7f2",
+    "files": [
+      {
+        "path": "assets/images/characters/seyoun_provocative.png",
+        "key": "images/ff14c06eb0eac15c2c74eba47b0cf84cfd922859a3789fa65ce81e53e546401c.png",
+        "sha256": "ff14c06eb0eac15c2c74eba47b0cf84cfd922859a3789fa65ce81e53e546401c",
+        "etag": "6376d34bffc0ef42c4fe2d7b16cda1f8",
+        "size": 1346079
+      },
+      {
+        "path": "assets/images/characters/seyoun_provocative.webp",
+        "key": "images/650a7107d1eac88c0450ab8b07dbfe4dac611a77575d51e1d33253b0078aec1a.webp",
+        "sha256": "650a7107d1eac88c0450ab8b07dbfe4dac611a77575d51e1d33253b0078aec1a",
+        "etag": "61bf2e762d7728508b3656dc3d60ec5b",
+        "size": 205598
+      }
+    ]
+  },
   "characters/seyoun_relieved": {
     "version": "55be6490f4acf7a7de605c86",
     "files": [
@@ -6062,6 +6157,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "cb42d52a5b2d98c8345c8c78767e44fada66b4b74f1b42d58f540ed9e549ef02",
         "etag": "36222bab0ad09a61e784ef2e2f84a2d9",
         "size": 116234
+      }
+    ]
+  },
+  "characters/teacher_provocative": {
+    "version": "33894c2b02d42dc7aae7526d",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_provocative.png",
+        "key": "images/18a185d7431cc04d5f98a382fe7846b261cd0ec9e531752034bd8255bc60b5e9.png",
+        "sha256": "18a185d7431cc04d5f98a382fe7846b261cd0ec9e531752034bd8255bc60b5e9",
+        "etag": "8e8538a29c8db71825a19ad00eb8e35e",
+        "size": 1464572
+      },
+      {
+        "path": "assets/images/characters/teacher_provocative.webp",
+        "key": "images/b180e2fc4c90ea53bce3c27c93c017f804d04e84fde640f3032c33d94054b8e3.webp",
+        "sha256": "b180e2fc4c90ea53bce3c27c93c017f804d04e84fde640f3032c33d94054b8e3",
+        "etag": "c5e9305ea28135a3f9919461a04e0ffd",
+        "size": 213176
       }
     ]
   },
@@ -7034,6 +7148,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "0ad220fc2fc6e321358839d000d45133ed7bbf752cddb07a0cff957946900f2c",
         "etag": "df4dac86f18ef83dd20ac0afd5d25018",
         "size": 157584
+      }
+    ]
+  },
+  "characters/yuna_provocative": {
+    "version": "a8d3973fd7f12c44278d18f9",
+    "files": [
+      {
+        "path": "assets/images/characters/yuna_provocative.png",
+        "key": "images/49394f60ecd37043a351177b9a500a3c0da1478d61a6e17a1d23a74588a8ecdd.png",
+        "sha256": "49394f60ecd37043a351177b9a500a3c0da1478d61a6e17a1d23a74588a8ecdd",
+        "etag": "c788ac36775a826b33f8706bbf54f7a2",
+        "size": 1563215
+      },
+      {
+        "path": "assets/images/characters/yuna_provocative.webp",
+        "key": "images/cb47392dfa5b36c1c5b57bc2aec46b44a1eee66f63d93415509851b5f5672112.webp",
+        "sha256": "cb47392dfa5b36c1c5b57bc2aec46b44a1eee66f63d93415509851b5f5672112",
+        "etag": "a7ce109b4b09cd3e2abc67d4d0ad8314",
+        "size": 256456
       }
     ]
   },
