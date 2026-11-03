@@ -14,8 +14,8 @@
             "assets/images/characters/dain_active.png",
             "assets/characters/dain/expressions/active/01/sprite.png"
           ],
-          "sha256": "18eade29fcd62e59212641ec06fa0c242843f6bb8ae7c9cd2eeb977ec54b8401",
-          "bytes": 1354322
+          "sha256": "734280f888def682bed15924041f6e1f22108d6fbcf41b2393d4eb7a40b36312",
+          "bytes": 1426449
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/active/01/sprite.webp",
@@ -23,8 +23,8 @@
             "assets/images/characters/dain_active.webp",
             "assets/characters/dain/expressions/active/01/sprite.webp"
           ],
-          "sha256": "115c1b5cd5b56e1e681bc686572567924971e5833b704aaa7b6f4a6f6cd82d26",
-          "bytes": 132615
+          "sha256": "9b7cad5842b29b41d391d9163a03e2c56b54291a554a069b84c15dc27c7641d9",
+          "bytes": 183377
         }
       }
     },
@@ -68,8 +68,8 @@
             "assets/images/characters/dain_ahegao.png",
             "assets/characters/dain/expressions/ahegao/01/sprite.png"
           ],
-          "sha256": "cc22601b7257db726fb0f67d68bb2542ee41c971e24c4b73be81bb70283add8b",
-          "bytes": 1382076
+          "sha256": "42b8d0066dc30f42c7649310b34c2459179c11211945e0b9284483a6742afc4c",
+          "bytes": 1433613
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/ahegao/01/sprite.webp",
@@ -77,8 +77,8 @@
             "assets/images/characters/dain_ahegao.webp",
             "assets/characters/dain/expressions/ahegao/01/sprite.webp"
           ],
-          "sha256": "50c80cd9071edce377caa20832c3ccca5e801cba363a803234443ff1f90b15d7",
-          "bytes": 140169
+          "sha256": "6b0255b69134a465b3351723880fc9c1738e46c72e4579fb7d729b56e877a22e",
+          "bytes": 187349
         }
       }
     },
@@ -95,8 +95,8 @@
             "assets/images/characters/dain_angry.png",
             "assets/characters/dain/expressions/angry/01/sprite.png"
           ],
-          "sha256": "2e77f4371a4f4b9e9046b763ae138e3ecd546444f9b7f0e65b11629c28231f45",
-          "bytes": 1378048
+          "sha256": "fdbfd95f8ab19f6262c04b7cf9c8f3d8220668369914c84b15e98c2c4bd7a430",
+          "bytes": 1448890
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/angry/01/sprite.webp",
@@ -104,8 +104,8 @@
             "assets/images/characters/dain_angry.webp",
             "assets/characters/dain/expressions/angry/01/sprite.webp"
           ],
-          "sha256": "49fbc6e59844a4ba947afbb628f83d45a8be28f4604bd9175e7ebc961d004f68",
-          "bytes": 133535
+          "sha256": "5c235273adf14276a25eca63c196507de1ac56230475d42e374e2c17e413d980",
+          "bytes": 184783
         }
       }
     },
@@ -203,8 +203,8 @@
             "assets/images/characters/dain_climax.png",
             "assets/characters/dain/expressions/climax/01/sprite.png"
           ],
-          "sha256": "b67eb829f0992a61106965ad09bd16973f85bfa6af38047b2c4faed104afa4da",
-          "bytes": 1404896
+          "sha256": "b5f0beb403033d10d6683ef6910383efd6703c04c0dd310e7f3aab605812f4bb",
+          "bytes": 1451664
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/01/sprite.webp",
@@ -212,8 +212,8 @@
             "assets/images/characters/dain_climax.webp",
             "assets/characters/dain/expressions/climax/01/sprite.webp"
           ],
-          "sha256": "924e2cc3b201e1baabeadb9b1cf9c02f8302c976a0501bf333808a2b4a78353b",
-          "bytes": 176607
+          "sha256": "b1b378aa51c61e45752dbe356df80155109260772956ce6d4e7b1fb613a3c4b8",
+          "bytes": 172787
         }
       }
     },
@@ -230,8 +230,8 @@
             "assets/images/characters/dain_climax_02.png",
             "assets/characters/dain/expressions/climax/02/sprite.png"
           ],
-          "bytes": 1405647,
-          "sha256": "e5b826f34f662def029b2580597bff0e56ec2fd37e3e40560a9ed1a78e8255b0"
+          "bytes": 1456199,
+          "sha256": "32638b6cd8a548c84da2f9db377d1d75622abf732dc536358864dc0147cb49bb"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/02/sprite.webp",
@@ -239,8 +239,8 @@
             "assets/images/characters/dain_climax_02.webp",
             "assets/characters/dain/expressions/climax/02/sprite.webp"
           ],
-          "bytes": 181547,
-          "sha256": "39a809725233d9519cc439fc698cbc68ac4eead89cb2c592046acd82dbeeb153"
+          "bytes": 180995,
+          "sha256": "f34e791fa5633e6f9142217dec479ef6ba9c9f958d8912936df9d70788b68291"
         }
       }
     },
@@ -257,8 +257,8 @@
             "assets/images/characters/dain_climax_03.png",
             "assets/characters/dain/expressions/climax/03/sprite.png"
           ],
-          "bytes": 1380707,
-          "sha256": "abcf02659b25e54dd3c53147f73e9df6ea66de8f04bc5b429d1f885002c2d325"
+          "bytes": 1425605,
+          "sha256": "f026688d79f23dd89e0c0301e89d8d695b0d8c6c6523184c16af4aa55b1fa40a"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/03/sprite.webp",
@@ -266,8 +266,8 @@
             "assets/images/characters/dain_climax_03.webp",
             "assets/characters/dain/expressions/climax/03/sprite.webp"
           ],
-          "bytes": 175025,
-          "sha256": "36868a87ae00fa0fb9aede1029c26349c0044ad54d911ddf0ab2344a67591d18"
+          "bytes": 170479,
+          "sha256": "7f39bf2b5628ee7d7c8cd2c4ea0c0a600d1133b98766c913c415b6f1a20dbe57"
         }
       }
     },
@@ -284,8 +284,8 @@
             "assets/images/characters/dain_climax_04.png",
             "assets/characters/dain/expressions/climax/04/sprite.png"
           ],
-          "bytes": 1322683,
-          "sha256": "ddcdd9d3df0634dee4492841a6f3cd92b96d128fa11f53e40ccae63d508a8532"
+          "bytes": 1366377,
+          "sha256": "06cac76d162a563d1a18d4e19a6a82597bfc493f46ac95ae0673812ebacbf0a5"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/04/sprite.webp",
@@ -293,8 +293,8 @@
             "assets/images/characters/dain_climax_04.webp",
             "assets/characters/dain/expressions/climax/04/sprite.webp"
           ],
-          "bytes": 167283,
-          "sha256": "3df4b9b645cf4fe5bd88a6c4ef21a426dafcd4a3922bc76758bf3eb3f1f2fd3a"
+          "bytes": 163473,
+          "sha256": "5d548a191386085392af3f1ab1b1a23166de9ae2cddc9f85a4998c82e3cefb4d"
         }
       }
     },
@@ -311,8 +311,8 @@
             "assets/images/characters/dain_climax_05.png",
             "assets/characters/dain/expressions/climax/05/sprite.png"
           ],
-          "bytes": 1314951,
-          "sha256": "3d5e8c0c2f76d5583915e677e59d77321a557c7e7a2a80b9dc9b9aae255c0afb"
+          "bytes": 1355971,
+          "sha256": "23afe7ee0cf612408c4f886d5e9f97835764842f3a4926781dc064df4f6eaade"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/05/sprite.webp",
@@ -320,8 +320,8 @@
             "assets/images/characters/dain_climax_05.webp",
             "assets/characters/dain/expressions/climax/05/sprite.webp"
           ],
-          "bytes": 166563,
-          "sha256": "dfef20050e06afb293d7611e8c0e090524869d125322770e111c5d56f291aed9"
+          "bytes": 162541,
+          "sha256": "e77622b53cb6732bb6671a5247edfcd108aac9aa90aca26fd2372a4fd09ab12a"
         }
       }
     },
@@ -338,8 +338,8 @@
             "assets/images/characters/dain_climax_06.png",
             "assets/characters/dain/expressions/climax/06/sprite.png"
           ],
-          "bytes": 1395048,
-          "sha256": "b72951586be8cd6a9d9abf9688408d3013716eba47528c3bfdd144b1e0a1cccc"
+          "bytes": 1444907,
+          "sha256": "8e3fae2753883f3766d5b8ec29ff9b8692aba2e88eeae0100b0a5b376eb012bf"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/06/sprite.webp",
@@ -347,8 +347,8 @@
             "assets/images/characters/dain_climax_06.webp",
             "assets/characters/dain/expressions/climax/06/sprite.webp"
           ],
-          "bytes": 173265,
-          "sha256": "080198051eb3a66ed1a3b41fb35024c650e3443ab15a7e1a62e4a9238f9042ab"
+          "bytes": 169237,
+          "sha256": "ad08f2dcaa9ee482a98ed1eeb3693fb8a248360a76b2906c72a1c2dddda83177"
         }
       }
     },
@@ -365,8 +365,8 @@
             "assets/images/characters/dain_climax_07.png",
             "assets/characters/dain/expressions/climax/07/sprite.png"
           ],
-          "bytes": 1373236,
-          "sha256": "1160203c98420a8d75615d731fb1aab705bbbc0022331a332de0e514271a4521"
+          "bytes": 1414745,
+          "sha256": "575ea105fbeb50614bc4431ba7defa813d994a1b54e706dd754ef4a8ffa9efc1"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/07/sprite.webp",
@@ -374,8 +374,8 @@
             "assets/images/characters/dain_climax_07.webp",
             "assets/characters/dain/expressions/climax/07/sprite.webp"
           ],
-          "bytes": 170133,
-          "sha256": "f11b8f80367560211fc52f83ead439536b1f6ac084828f88a92e304f9d1d3e9c"
+          "bytes": 166711,
+          "sha256": "7c1b784360f78a1e4043f798e5971879c9c5950b3399e5e0f679d0a6685bd4e8"
         }
       }
     },
@@ -392,8 +392,8 @@
             "assets/images/characters/dain_climax_08.png",
             "assets/characters/dain/expressions/climax/08/sprite.png"
           ],
-          "bytes": 1396854,
-          "sha256": "a1bd4c2560b81f4ec0cf30ac906666b25dcde416c84723f0a65bb690e8646384"
+          "bytes": 1439278,
+          "sha256": "b54859bc0f18cfe3fb2dd498d36ece4ddca41478d7ce75a865c8bb13eb05194d"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/08/sprite.webp",
@@ -401,8 +401,8 @@
             "assets/images/characters/dain_climax_08.webp",
             "assets/characters/dain/expressions/climax/08/sprite.webp"
           ],
-          "bytes": 173087,
-          "sha256": "25b0df168054651050b51efe15fdd668c6788f64479e3c8bdb2f08e80918e062"
+          "bytes": 168223,
+          "sha256": "9a89de0fd42886e5fd899cc2d18c691d65ea2edccc4a097907040809284ff015"
         }
       }
     },
@@ -419,8 +419,8 @@
             "assets/images/characters/dain_climax_09.png",
             "assets/characters/dain/expressions/climax/09/sprite.png"
           ],
-          "bytes": 1296253,
-          "sha256": "d74762cba64967f87c940ad53f96c729debc13cdbdbf3569c2a5343645377c51"
+          "bytes": 1338213,
+          "sha256": "ea25a943c0874bbb125fc9c1019d54402db31b5f99782439987f6dd298ef47c8"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/09/sprite.webp",
@@ -428,8 +428,8 @@
             "assets/images/characters/dain_climax_09.webp",
             "assets/characters/dain/expressions/climax/09/sprite.webp"
           ],
-          "bytes": 114427,
-          "sha256": "711dd0dfb09bc7b4632c979d0ab375e02d81c27dcbfbb626d63746784e6a50da"
+          "bytes": 157999,
+          "sha256": "7740ce28124eff8b6936b51337002ad0b6b99750d7529f993e5cf23711c7faaa"
         }
       }
     },
@@ -446,8 +446,8 @@
             "assets/images/characters/dain_climax_10.png",
             "assets/characters/dain/expressions/climax/10/sprite.png"
           ],
-          "bytes": 1394516,
-          "sha256": "9483e4ce0765615e4b4307ff8b0d286ebb2e716c7464c1b75a3a5268295e19e8"
+          "bytes": 1440537,
+          "sha256": "27ae8fb576d912de30c8d870d16a5cec38f7022740a0fb2501081dae23637c89"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/10/sprite.webp",
@@ -455,8 +455,8 @@
             "assets/images/characters/dain_climax_10.webp",
             "assets/characters/dain/expressions/climax/10/sprite.webp"
           ],
-          "bytes": 178359,
-          "sha256": "379f5ab7285eadae6064eac004ad10f65e1b581957bc90962463d3f650ab33a0"
+          "bytes": 175161,
+          "sha256": "b6d029731d9c0267006aa9e0a971d7407d717e32564613ea35aad79e5590bfdf"
         }
       }
     },
@@ -473,8 +473,8 @@
             "assets/images/characters/dain_climax_11.png",
             "assets/characters/dain/expressions/climax/11/sprite.png"
           ],
-          "bytes": 1302608,
-          "sha256": "43868a072e50384327da3c5533973681293a5ab0f882b62da71ffe8554e37196"
+          "bytes": 1340292,
+          "sha256": "870f2e311fdc1cfadb90341128d36fb608f3ffb4b4834635af8ba92d4f280b65"
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/climax/11/sprite.webp",
@@ -482,8 +482,8 @@
             "assets/images/characters/dain_climax_11.webp",
             "assets/characters/dain/expressions/climax/11/sprite.webp"
           ],
-          "bytes": 163929,
-          "sha256": "bf356b0a9624270d8d71bde3ca9d9608078a6e41784841a8fb1b3e4120be0c91"
+          "bytes": 160739,
+          "sha256": "bc72e6f5ef01d5415306b741bf1ed19837821ffae7b64ac3db9cb60e6c5e8baa"
         }
       }
     },
@@ -527,8 +527,8 @@
             "assets/images/characters/dain_cry.png",
             "assets/characters/dain/expressions/cry/01/sprite.png"
           ],
-          "sha256": "36c9efcb43b76d633496474dc9caef48a0cf8683233992ec0c528413975b5d91",
-          "bytes": 1477311
+          "sha256": "72fbafc7512705456592301326700e28dae7ca7211f5136550dcf67ca537fc79",
+          "bytes": 1554695
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/cry/01/sprite.webp",
@@ -536,8 +536,8 @@
             "assets/images/characters/dain_cry.webp",
             "assets/characters/dain/expressions/cry/01/sprite.webp"
           ],
-          "sha256": "b7ae1c633cf3eac280c70920126b524a8e335360d6751dd3baa65c9e648b3c7e",
-          "bytes": 112821
+          "sha256": "12023a8892ce80b7770fb24eef2f86b181d8908bbd597ae6fc8d0d0990a17cd6",
+          "bytes": 158019
         }
       }
     },
@@ -716,8 +716,8 @@
             "assets/images/characters/dain_exhausted.png",
             "assets/characters/dain/expressions/exhausted/01/sprite.png"
           ],
-          "sha256": "31d2debc7f61e545b7b43f534f331cbfb4e3a9baa41b45ab81e9f41874ca5698",
-          "bytes": 1433503
+          "sha256": "f95cfaf418c8c24603637c1241609887d0d39e05c4ff03b14bd5d6756ffd0be7",
+          "bytes": 1479126
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/exhausted/01/sprite.webp",
@@ -725,8 +725,8 @@
             "assets/images/characters/dain_exhausted.webp",
             "assets/characters/dain/expressions/exhausted/01/sprite.webp"
           ],
-          "sha256": "5165b46c07a7ebb1f541d2d46f6ebb7510fe1bfa639e74d4c938fd2963ac49fc",
-          "bytes": 192849
+          "sha256": "8a937965705a7ba0d0730e69a0a15e685944b6e7b42cc6a31c9557b90e90f1c5",
+          "bytes": 228727
         }
       }
     },
@@ -797,8 +797,8 @@
             "assets/images/characters/dain_flushed.png",
             "assets/characters/dain/expressions/flushed/01/sprite.png"
           ],
-          "sha256": "784b27d5140270c5f22a5da91840e72c2983052d00e185683e47bb2420658c24",
-          "bytes": 1282677
+          "sha256": "54da85df6056537e975384634c880c13fceaf57cd0006472120b5e85d05abfaa",
+          "bytes": 1375424
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/flushed/01/sprite.webp",
@@ -806,8 +806,8 @@
             "assets/images/characters/dain_flushed.webp",
             "assets/characters/dain/expressions/flushed/01/sprite.webp"
           ],
-          "sha256": "57eecfd2af5954bc0546717572146c5ea50d359714a002a0297914d151f9aa3e",
-          "bytes": 97697
+          "sha256": "78aa075da4750c5af020012da2e86ca2f7480b560f206bb81ad06f48af858fa9",
+          "bytes": 136155
         }
       }
     },
@@ -878,8 +878,8 @@
             "assets/images/characters/dain_laugh.png",
             "assets/characters/dain/expressions/laugh/01/sprite.png"
           ],
-          "sha256": "641b7667aba7246bf1abdd1d8e54d4b7397173113672d10dbad390018294f3e3",
-          "bytes": 1353024
+          "sha256": "6e05245c7ac8001e5c1bad8e09d184041453c583fc6daa64107a7a7844764042",
+          "bytes": 1425506
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/laugh/01/sprite.webp",
@@ -887,8 +887,8 @@
             "assets/images/characters/dain_laugh.webp",
             "assets/characters/dain/expressions/laugh/01/sprite.webp"
           ],
-          "sha256": "796d660a2262472ac3f61984cb187fa6fb1eaf983c8dd52c24fabcc8f9a3036d",
-          "bytes": 131093
+          "sha256": "6581bd2accb3d49ef3cac719db299018528c362d5b6455c24e2490c7f02bf235",
+          "bytes": 178765
         }
       }
     },
@@ -932,8 +932,8 @@
             "assets/images/characters/dain_pain.png",
             "assets/characters/dain/expressions/pain/01/sprite.png"
           ],
-          "sha256": "dcba1c34c6c6b42194dda8d5c9cf191032a724f17026200e17a168e969a4938a",
-          "bytes": 1331229
+          "sha256": "d4c8ca14d5a92d37e28b2b9fe9896c875798fe4c662470a48eb789a5845b625f",
+          "bytes": 1381610
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/pain/01/sprite.webp",
@@ -941,8 +941,8 @@
             "assets/images/characters/dain_pain.webp",
             "assets/characters/dain/expressions/pain/01/sprite.webp"
           ],
-          "sha256": "59b1b211fbe6c8d98721e0c023a7e20a874fe1f8c66d438d18b1b3733398dec2",
-          "bytes": 123261
+          "sha256": "4d44984ecdb366cf99c81e3c279cbce5b07ab6cf32f6083a6addcfd06dd819cb",
+          "bytes": 164323
         }
       }
     },
@@ -986,8 +986,8 @@
             "assets/images/characters/dain_pout.png",
             "assets/characters/dain/expressions/pout/01/sprite.png"
           ],
-          "sha256": "39ccb35ee3396a517480f0dedf671e465680286ab1bb203039f4eb76e62054f0",
-          "bytes": 1353582
+          "sha256": "5aac4cbece7634e0a66f403fbd8893d03f7c78a5efb7b4ba067f33267d31a02d",
+          "bytes": 1426183
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/pout/01/sprite.webp",
@@ -995,8 +995,8 @@
             "assets/images/characters/dain_pout.webp",
             "assets/characters/dain/expressions/pout/01/sprite.webp"
           ],
-          "sha256": "a0128f6dd95b5ca7e00d735139dceca3eeae7993cc028773761f9d4e3fab95c5",
-          "bytes": 131649
+          "sha256": "7cd9ed2d67ba334efb6b274af417037781f43ed0a4db6a6a3c21e56b77518273",
+          "bytes": 179101
         }
       }
     },
@@ -1040,8 +1040,8 @@
             "assets/images/characters/dain_sad.png",
             "assets/characters/dain/expressions/sad/01/sprite.png"
           ],
-          "sha256": "b17fe7fb0be72ef3fd4c12f8e5aeec132baeedf3bc032ed81d6585ca608f06f6",
-          "bytes": 1369640
+          "sha256": "4906c810a4262bab00cc61fcd0b541973035154750e39bdf504f7d3a13a494ab",
+          "bytes": 1440650
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/sad/01/sprite.webp",
@@ -1049,8 +1049,8 @@
             "assets/images/characters/dain_sad.webp",
             "assets/characters/dain/expressions/sad/01/sprite.webp"
           ],
-          "sha256": "133a059240dd5dd874dd0b3d5e49eddc6bbd53b72e29465ca5509b4ae65fda26",
-          "bytes": 133389
+          "sha256": "bc86c3c3b6af5482602a30f9bcd4eb2d4145f9f0da0f99e45c6b2a7ab7e75e04",
+          "bytes": 181239
         }
       }
     },
@@ -1121,8 +1121,8 @@
             "assets/images/characters/dain_shy.png",
             "assets/characters/dain/expressions/shy/01/sprite.png"
           ],
-          "sha256": "cdbeed07ba2a92195eb71491ddb76dbb17396059dc61fa55b81120b4dc990bcf",
-          "bytes": 1358373
+          "sha256": "dbff5526847547ef80ae63bcaf21dc488cec3ca3ab6f5d3bd74b40517df93920",
+          "bytes": 1428222
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/shy/01/sprite.webp",
@@ -1130,8 +1130,8 @@
             "assets/images/characters/dain_shy.webp",
             "assets/characters/dain/expressions/shy/01/sprite.webp"
           ],
-          "sha256": "b47159a4c2f4cbab0031c38c3be26f13e66d07a01ddec8e0c335063dcceb401b",
-          "bytes": 130497
+          "sha256": "74f7dca2fd3ef9a94f2d875d9b61f3e86163a2f5c4f8e55ebbebb78e465894ab",
+          "bytes": 175713
         }
       }
     },
@@ -1283,8 +1283,8 @@
             "assets/images/characters/dain_sweat.png",
             "assets/characters/dain/expressions/sweat/01/sprite.png"
           ],
-          "sha256": "323e72ffa963ca3a1d066c02890ff42aa868e3d4a31488bbfd44a963cdb7151e",
-          "bytes": 1368478
+          "sha256": "911029c7f0580d003045caaf0060a0965a1c706fb13b2fc5eea5295cd4f97bae",
+          "bytes": 1440391
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/sweat/01/sprite.webp",
@@ -1292,8 +1292,8 @@
             "assets/images/characters/dain_sweat.webp",
             "assets/characters/dain/expressions/sweat/01/sprite.webp"
           ],
-          "sha256": "061c2431bee61def0743f013b5211c3e3399e99a1fb0a326a176bc6b313f7e05",
-          "bytes": 133635
+          "sha256": "dadfcb5f8f6fe2f97c46121c7ad31af3a98b6e7fa3b2dc9ff584aa173461e114",
+          "bytes": 181485
         }
       }
     },
@@ -4052,8 +4052,8 @@
             "assets/images/characters/nurse_climax.png",
             "assets/characters/nurse/expressions/climax/01/sprite.png"
           ],
-          "sha256": "465d570160d82f78636c7152340d677e5feaf15c99b6f963eebef2d1bed51f6a",
-          "bytes": 1589886
+          "sha256": "b9b2602c40fb0f9bfe7e092013b2fd7afd38468f456ebfa71fc065ac7184710e",
+          "bytes": 1788735
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/01/sprite.webp",
@@ -4061,8 +4061,8 @@
             "assets/images/characters/nurse_climax.webp",
             "assets/characters/nurse/expressions/climax/01/sprite.webp"
           ],
-          "sha256": "c3930eb2b75d97a9525836a1731c3cdd781847bd85dd3ea0a424fc9e7c606baf",
-          "bytes": 273871
+          "sha256": "665f04a9a3e6e9f5da8c769736ecc6176d32c89c0cf44239faa30b097a1d85cf",
+          "bytes": 191527
         }
       }
     },
@@ -4079,8 +4079,8 @@
             "assets/images/characters/nurse_climax_02.png",
             "assets/characters/nurse/expressions/climax/02/sprite.png"
           ],
-          "bytes": 1710868,
-          "sha256": "44d1a9fedba7b08659e0dea3ca8c04766934f17c3ab2921ed2198fec3f72fb76"
+          "bytes": 1841164,
+          "sha256": "dfaebe81126c85893242c064f4bb811f9adcf6228299fe4bbcaf9b3d9cd3f8b3"
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/02/sprite.webp",
@@ -4088,8 +4088,8 @@
             "assets/images/characters/nurse_climax_02.webp",
             "assets/characters/nurse/expressions/climax/02/sprite.webp"
           ],
-          "bytes": 286323,
-          "sha256": "debbdbed0ca9027ca2d03c5c26b509674dff56c75a36c360995a72511ecce094"
+          "bytes": 196045,
+          "sha256": "9d21e29cd46ff8409485b1dd19777e3c58ae5617aad55c1a9202efaa2a1cf6a7"
         }
       }
     },
@@ -4106,8 +4106,8 @@
             "assets/images/characters/nurse_climax_03.png",
             "assets/characters/nurse/expressions/climax/03/sprite.png"
           ],
-          "bytes": 1790998,
-          "sha256": "4538008b8a46b27e9dd5469b2f609cd714537d22df4dd2be912f801aec6fc5a0"
+          "bytes": 1888826,
+          "sha256": "6ac4261573dc11bfa1fc191c70a555c4381240a9dad686ce3b7544ee3cd2da00"
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/03/sprite.webp",
@@ -4115,8 +4115,8 @@
             "assets/images/characters/nurse_climax_03.webp",
             "assets/characters/nurse/expressions/climax/03/sprite.webp"
           ],
-          "bytes": 301647,
-          "sha256": "e6712c0741e89426c49adeb0f57e71680e83951a345db531da73cabfc03212a6"
+          "bytes": 205197,
+          "sha256": "53b9e864e305e6035b98c56400adae5509a1c614902a4e64af94e52fbd321b16"
         }
       }
     },
@@ -4133,8 +4133,8 @@
             "assets/images/characters/nurse_climax_04.png",
             "assets/characters/nurse/expressions/climax/04/sprite.png"
           ],
-          "bytes": 1882021,
-          "sha256": "a6858b124af13262f501295f27e3986307525199b76a2a6300d73c5257d8ef35"
+          "bytes": 1946856,
+          "sha256": "7c74f1a79413d5fba6013fa0688c7f4c6736ee54c2b36dc0d466c062d8ac6ecd"
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/04/sprite.webp",
@@ -4142,8 +4142,8 @@
             "assets/images/characters/nurse_climax_04.webp",
             "assets/characters/nurse/expressions/climax/04/sprite.webp"
           ],
-          "bytes": 319359,
-          "sha256": "33b5ec8f48f6e6fd1f3417eee7d4f96ffa68ca3a2ccdaefe9945d1f2b90f671b"
+          "bytes": 217943,
+          "sha256": "2d504c86c0148ef72d849045d10a149b0be7bb37e8f2095e5ca104a80dcb326b"
         }
       }
     },
@@ -4160,8 +4160,8 @@
             "assets/images/characters/nurse_climax_05.png",
             "assets/characters/nurse/expressions/climax/05/sprite.png"
           ],
-          "bytes": 1893429,
-          "sha256": "40ac13af58cc095a6e50c1e18c11f2b22faf69548a3f2dd4bf939a9769b1270e"
+          "bytes": 1968946,
+          "sha256": "2008b1f59c8734742f1bda0f70edb4bc4889174cf0dc27aa8ca64bb083532232"
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/05/sprite.webp",
@@ -4169,8 +4169,8 @@
             "assets/images/characters/nurse_climax_05.webp",
             "assets/characters/nurse/expressions/climax/05/sprite.webp"
           ],
-          "bytes": 319953,
-          "sha256": "9446ca38d33370209bf84b01a14a153c67ce7bbebdb4e927b8040d0b09603871"
+          "bytes": 217447,
+          "sha256": "c7f305eda16fd050687d0c7a383cc8c446819805d14bd3902479a023604e133b"
         }
       }
     },
@@ -4187,8 +4187,8 @@
             "assets/images/characters/nurse_climax_06.png",
             "assets/characters/nurse/expressions/climax/06/sprite.png"
           ],
-          "bytes": 1386562,
-          "sha256": "eb1b08d4ebf151811f2c992322e389c1b09a093db3ade01bf98a9d11b2bdc117"
+          "bytes": 1792970,
+          "sha256": "32df1e3d9e2444d694eb1a31be9a2229f56e8fb68d6ed3c904b3240cd45e77d8"
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/06/sprite.webp",
@@ -4196,8 +4196,8 @@
             "assets/images/characters/nurse_climax_06.webp",
             "assets/characters/nurse/expressions/climax/06/sprite.webp"
           ],
-          "bytes": 266983,
-          "sha256": "fb79c9cf8bd89cfbcf02eec54cfdba83d709a08571e9e666a4c7fd9a01b98da9"
+          "bytes": 200033,
+          "sha256": "510bc3a6e4d4f6e02e5f45dc438ffd94983580f9b311f123ca5abb7b01496d00"
         }
       }
     },
@@ -4214,8 +4214,8 @@
             "assets/images/characters/nurse_climax_07.png",
             "assets/characters/nurse/expressions/climax/07/sprite.png"
           ],
-          "bytes": 1391602,
-          "sha256": "b0ec9a7792927ee507e0bbf596844cba951b5089addee5f91142672826e7919f"
+          "bytes": 1760016,
+          "sha256": "3f77cc7c13386fc2c13bcd9185870bf8152047fac9c9cedccd90f47721eb23df"
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/07/sprite.webp",
@@ -4223,8 +4223,8 @@
             "assets/images/characters/nurse_climax_07.webp",
             "assets/characters/nurse/expressions/climax/07/sprite.webp"
           ],
-          "bytes": 240457,
-          "sha256": "6c708dd3bfd66798463ae08aaf86cb08a48c25934ab8bf5e112bb9e4957b4923"
+          "bytes": 176523,
+          "sha256": "46583a1d52e61e9ef35077f7bb3e83a6a9dd70d8335e1f63dba1ff738e816f3f"
         }
       }
     },
@@ -4241,8 +4241,8 @@
             "assets/images/characters/nurse_climax_08.png",
             "assets/characters/nurse/expressions/climax/08/sprite.png"
           ],
-          "bytes": 1478125,
-          "sha256": "81837c48b7d4cf942b90ba4b1f19e548f61240852c78eacae7e3a3bc339c6a0d"
+          "bytes": 1837740,
+          "sha256": "45bcef2e4d633055e374c6022d7268392cc86d5cc11fb52f3789996c48919a82"
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/08/sprite.webp",
@@ -4250,8 +4250,8 @@
             "assets/images/characters/nurse_climax_08.webp",
             "assets/characters/nurse/expressions/climax/08/sprite.webp"
           ],
-          "bytes": 256227,
-          "sha256": "257a9304785f7c52a9650ccd3be8f86c39f0de866ac4a01bd9d8cf5dc82293a7"
+          "bytes": 186661,
+          "sha256": "5d9324996b43297d7b6eba3bda0edc18b96a3f9e33909371460a1a57182ac8ab"
         }
       }
     },
@@ -4268,8 +4268,8 @@
             "assets/images/characters/nurse_climax_09.png",
             "assets/characters/nurse/expressions/climax/09/sprite.png"
           ],
-          "bytes": 1462235,
-          "sha256": "78de6dc371f29cdd2d6f6989e1dd646f6976b91f562f4c1e45f5fa069da5ba9d"
+          "bytes": 1810839,
+          "sha256": "05bea9fc346e767ef192e7cb8a5e0117e2bf0a8a8a143a00c62617996645eda5"
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/climax/09/sprite.webp",
@@ -4277,8 +4277,8 @@
             "assets/images/characters/nurse_climax_09.webp",
             "assets/characters/nurse/expressions/climax/09/sprite.webp"
           ],
-          "bytes": 255641,
-          "sha256": "b8a6a6be61d868969f61fdc386bc08c2a91c121d7e1d315502d2c5247fab14fd"
+          "bytes": 185855,
+          "sha256": "50b0d40e8141620bca263485387636fa672367d5aa7528b0c2e6ff47e55a87cc"
         }
       }
     },
@@ -4592,8 +4592,8 @@
             "assets/images/characters/nurse_flushed.png",
             "assets/characters/nurse/expressions/flushed/01/sprite.png"
           ],
-          "sha256": "a9bd3d55a66997327f2b162180ab474ffb9b50959cf23f85ae0cb657c624f2ee",
-          "bytes": 1448709
+          "sha256": "bb4cc6df9be8aaf47a27670e69d362b26855e5f36f180b7f8b555a752d773a41",
+          "bytes": 1597172
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/flushed/01/sprite.webp",
@@ -4601,8 +4601,8 @@
             "assets/images/characters/nurse_flushed.webp",
             "assets/characters/nurse/expressions/flushed/01/sprite.webp"
           ],
-          "sha256": "bdbea036333c86b5d9495651f0c574561afa74b737e00f7d4680937787f8b734",
-          "bytes": 219027
+          "sha256": "b16179dd3722918653e7ac52f44d04e8bd4900a22e63e00e70996accd3b7bd6b",
+          "bytes": 163537
         }
       }
     },
@@ -4916,8 +4916,8 @@
             "assets/images/characters/nurse_shy.png",
             "assets/characters/nurse/expressions/shy/01/sprite.png"
           ],
-          "sha256": "a9bd3d55a66997327f2b162180ab474ffb9b50959cf23f85ae0cb657c624f2ee",
-          "bytes": 1448709
+          "sha256": "4bca61624a026fd451dc78590e1064248bc0cbdcf610d58a97d0f118585f8e4e",
+          "bytes": 1597172
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/shy/01/sprite.webp",
@@ -4925,8 +4925,8 @@
             "assets/images/characters/nurse_shy.webp",
             "assets/characters/nurse/expressions/shy/01/sprite.webp"
           ],
-          "sha256": "bdbea036333c86b5d9495651f0c574561afa74b737e00f7d4680937787f8b734",
-          "bytes": 219027
+          "sha256": "50b2d3b8328fbba06ba89f35647fce89d8f85fddb241727bc0a04f0f8339f823",
+          "bytes": 163537
         }
       }
     },
@@ -5078,8 +5078,8 @@
             "assets/images/characters/nurse_tired.png",
             "assets/characters/nurse/expressions/tired/01/sprite.png"
           ],
-          "sha256": "3e7032fbe9de3403fe0ac0e425e312d6a663112d9956c883e4bd0ac1da97b495",
-          "bytes": 1875539
+          "sha256": "0869ff8604ae6c031bc850f08876777f4c27dc02a7e6ee51a0d35de8c7f6bfb2",
+          "bytes": 2344881
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/tired/01/sprite.webp",
@@ -5087,8 +5087,8 @@
             "assets/images/characters/nurse_tired.webp",
             "assets/characters/nurse/expressions/tired/01/sprite.webp"
           ],
-          "sha256": "052c9525c24ef0e63fd13324ad1a89ad9fe439b92d4d9ffdea87a4f8bf8e6918",
-          "bytes": 331571
+          "sha256": "a3a0226c11889b6315d9f26da9af183e05620b3952caa25516281f0548db7a0b",
+          "bytes": 218161
         }
       }
     },
@@ -5160,8 +5160,8 @@
             "assets/images/characters/nurse_home_angry.webp",
             "assets/characters/nurse/outfits/home/expressions/angry/01/sprite.webp"
           ],
-          "sha256": "92ae8d16acc2fa8cab991cee250585a86833d09b989202db74b291fd6a5a7d9e",
-          "bytes": 1205143
+          "sha256": "adcff8765a714fc80f9802813e4252c9c7fec004f5adc7b3a3e65eccfa2cab38",
+          "bytes": 7148333
         }
       }
     },
@@ -5179,8 +5179,8 @@
             "assets/images/characters/nurse_home_normal.webp",
             "assets/characters/nurse/outfits/home/expressions/normal/01/sprite.webp"
           ],
-          "sha256": "6cfa16fb71076f418eb5bdea3f41bc7d283f4a340af1c84ad9a283fcf2a36a3b",
-          "bytes": 1130237
+          "sha256": "41e597322ada77005c252c4509b4ac18cc54882e1ed244f8e335eacee0d03db6",
+          "bytes": 6986925
         }
       }
     },
@@ -5198,8 +5198,8 @@
             "assets/images/characters/nurse_home_sad.webp",
             "assets/characters/nurse/outfits/home/expressions/sad/01/sprite.webp"
           ],
-          "sha256": "4cb506d19e3d4db86ab7d05fccbccc910fdae2a11aa2935c9ff62ef9bdf4d063",
-          "bytes": 1396097
+          "sha256": "176686eb4b28f38f0e5765f999ea733c17d2ce245ba12ec4ae03839dae772f4d",
+          "bytes": 7240161
         }
       }
     },
@@ -5217,8 +5217,8 @@
             "assets/images/characters/nurse_home_shy.webp",
             "assets/characters/nurse/outfits/home/expressions/shy/01/sprite.webp"
           ],
-          "sha256": "31aa1cabaa55888e934f5ff2db34f2b061727185a36bf566af469bfafe6a6107",
-          "bytes": 1413541
+          "sha256": "5ac3eeb9d945127e8b602a2a3dbdad7aac38b398fd2a5fd0a83ef32cfc12d894",
+          "bytes": 7256239
         }
       }
     },
@@ -5236,8 +5236,8 @@
             "assets/images/characters/nurse_home_smile.webp",
             "assets/characters/nurse/outfits/home/expressions/smile/01/sprite.webp"
           ],
-          "sha256": "b834557bcc7f95542e376d4bbd69e372bdd1538c1af8c326b95356aa72969eaf",
-          "bytes": 1418833
+          "sha256": "43e98873ac29630fa1b4db66f0cd284eb78f8dffb3e7e813afb39ecc577fcd50",
+          "bytes": 7548239
         }
       }
     },
@@ -5443,8 +5443,8 @@
             "assets/images/characters/seyoun_climax.png",
             "assets/characters/seoyeon/expressions/climax/01/sprite.png"
           ],
-          "sha256": "552a8b9dbe399753c747bbe542e85bcfbb4c900adb132619bfa6fe12bb1fcd30",
-          "bytes": 948619
+          "sha256": "4c742ac948e626965e2749cf1807741fd25405772ff3b3d4fff1824c692550b2",
+          "bytes": 948798
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/climax/01/sprite.webp",
@@ -5452,8 +5452,8 @@
             "assets/images/characters/seyoun_climax.webp",
             "assets/characters/seoyeon/expressions/climax/01/sprite.webp"
           ],
-          "sha256": "4e401b1dd52118c9ee8fdc53aaba5752af8f07b2e690f4af1817b36a129bc55f",
-          "bytes": 141761
+          "sha256": "ad78f91b0818772ce281ddd9312b8ac773387f0a920fdf65d843a9016fa584e5",
+          "bytes": 121341
         }
       }
     },
@@ -5578,8 +5578,8 @@
             "assets/images/characters/seyoun_climax_06.png",
             "assets/characters/seoyeon/expressions/climax/06/sprite.png"
           ],
-          "bytes": 1105296,
-          "sha256": "0e1714084bf4352109a859ef4fb1437c985f5997bcb4ec6b5e010951c8feadf9"
+          "bytes": 1104795,
+          "sha256": "5f9a346be36f5290fd5aa476da9ccff129b30edd10d38a69ceb7f38b126dea12"
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/climax/06/sprite.webp",
@@ -5587,8 +5587,8 @@
             "assets/images/characters/seyoun_climax_06.webp",
             "assets/characters/seoyeon/expressions/climax/06/sprite.webp"
           ],
-          "bytes": 156315,
-          "sha256": "78d7d401433507af4e2c764739fd7b26b9b6cb131456f993598d772280a66752"
+          "bytes": 133563,
+          "sha256": "e5453670e016d398198a69b9fc7d3fccf3650af3810e1ed24b2db0cdd13c0ec9"
         }
       }
     },
