@@ -3,7 +3,61 @@
     if (root.AiBrowserProof) return;
     const SITEKEY = '0x4AAAAAAFuc4-X-L72BjMVG';
     const fetchOriginal = root.fetch.bind(root);
-    let loading, queue = Promise.resolve(), retryBanner = null, forceInteractive = false, firstFreeAllowed = true;
+    let loading, queue = Promise.resolve(), retryBanner = null, forceInteractive = false, firstFreeAllowed = true, fpMemo = '', fpPromise = null;
+    async function computeFingerprint() {
+        if (fpMemo) return fpMemo;
+        const parts = [];
+        try {
+            const nav = root.navigator || {};
+            parts.push(String(nav.platform || ''), String(nav.hardwareConcurrency || 0), String(nav.deviceMemory || 0), String(nav.maxTouchPoints || 0), String(Boolean(nav.pdfViewerEnabled)));
+        } catch (_) {}
+        try {
+            const scr = root.screen || {};
+            const dims = [Number(scr.width) || 0, Number(scr.height) || 0].sort((a, b) => b - a);
+            parts.push(`${dims[0]}x${dims[1]}`, String(scr.colorDepth || 0), String(scr.pixelDepth || 0));
+        } catch (_) {}
+        try { parts.push(String(Intl.DateTimeFormat().resolvedOptions().timeZone || '')); } catch (_) {}
+        try {
+            const canvas = typeof document !== 'undefined' && typeof document.createElement === 'function' ? document.createElement('canvas') : null;
+            const gl = canvas && typeof canvas.getContext === 'function' ? (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')) : null;
+            if (gl && typeof gl.getParameter === 'function') {
+                const dbg = typeof gl.getExtension === 'function' ? gl.getExtension('WEBGL_debug_renderer_info') : null;
+                const vendor = dbg ? gl.getParameter(dbg.UNMASKED_VENDOR_WEBGL) : gl.getParameter(gl.VENDOR);
+                const renderer = dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
+                const prec = typeof gl.getShaderPrecisionFormat === 'function' ? gl.getShaderPrecisionFormat(gl.FRAGMENT_SHADER, gl.HIGH_FLOAT) : null;
+                const exts = typeof gl.getSupportedExtensions === 'function' ? (gl.getSupportedExtensions() || []).length : 0;
+                parts.push(String(vendor || ''), String(renderer || ''), String(gl.getParameter(gl.VERSION) || ''), String(gl.getParameter(gl.SHADING_LANGUAGE_VERSION) || ''),
+                    String(gl.getParameter(gl.MAX_TEXTURE_SIZE) || 0), String(gl.getParameter(gl.MAX_RENDERBUFFER_SIZE) || 0),
+                    String(gl.getParameter(gl.MAX_VERTEX_ATTRIBS) || 0), String(gl.getParameter(gl.MAX_VARYING_VECTORS) || 0),
+                    String(gl.getParameter(gl.MAX_VERTEX_UNIFORM_VECTORS) || 0), String(gl.getParameter(gl.MAX_FRAGMENT_UNIFORM_VECTORS) || 0),
+                    prec ? `${prec.rangeMin}:${prec.rangeMax}:${prec.precision}` : '', String(exts));
+            }
+        } catch (_) {}
+        try {
+            const canvas2d = typeof document !== 'undefined' && typeof document.createElement === 'function' ? document.createElement('canvas') : null;
+            const ctx = canvas2d && typeof canvas2d.getContext === 'function' ? canvas2d.getContext('2d') : null;
+            if (ctx && typeof ctx.measureText === 'function') {
+                const widths = [];
+                for (const font of ['monospace', 'sans-serif', 'serif', '"Malgun Gothic",sans-serif', '"Apple SD Gothic Neo",sans-serif', '"Yu Gothic",sans-serif', '"Segoe UI",sans-serif']) {
+                    ctx.font = `72px ${font}`;
+                    widths.push(Math.round(Number(ctx.measureText('mmmmmmmmmmlli')?.width) || 0));
+                }
+                parts.push(widths.join(','));
+            }
+        } catch (_) {}
+        try {
+            const raw = parts.join('|') || 'default-fp';
+            const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`archerlab-fp:v1|${raw}`));
+            fpMemo = Array.from(new Uint8Array(bytes), byte => byte.toString(16).padStart(2, '0')).join('').slice(0, 32);
+        } catch (_) {}
+        return fpMemo;
+    }
+    function fingerprint() {
+        if (fpMemo) return Promise.resolve(fpMemo);
+        if (!fpPromise) fpPromise = computeFingerprint().catch(() => '');
+        return fpPromise;
+    }
+    void fingerprint();
     const isBotCode = code => /^(300\d*|600\d*)$/.test(String(code || ''));
     const isRetryableCode = code => /^(110600|110620|200500|300\d*|600\d*)$/.test(String(code || ''));
     const lang = () => (document.documentElement?.lang || 'en').slice(0, 2);
@@ -230,6 +284,7 @@
             queue = proof.catch(() => {});
             const headers = new Headers(request.headers);
             headers.set('x-ai-proof', await abortable(proof, request.signal));
+            if (fpMemo && !headers.has('x-device-fp')) headers.set('x-device-fp', fpMemo);
             if (request.signal.aborted) throw aborted(request.signal);
             const response = await fetchOriginal(new Request(request.clone(), { headers }));
             if (attempt || ![403, 503].includes(response.status)) return response;
@@ -239,6 +294,6 @@
             await response.body?.cancel();
         }
     }
-    root.AiBrowserProof = Object.freeze({ fetch: protectedFetch, retry: retryPendingAction });
+    root.AiBrowserProof = Object.freeze({ fetch: protectedFetch, retry: retryPendingAction, fingerprint });
     root.fetch = protectedFetch;
 })(window);

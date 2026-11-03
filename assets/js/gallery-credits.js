@@ -19,7 +19,9 @@
  let accountId=account();
  const node=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n;};
  async function post(url,body){
-  const response=await fetch(url,{method:'POST',credentials:'include',cache:'no-store',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:AbortSignal.timeout(15000)});
+  const fp=await root.AiBrowserProof?.fingerprint?.();
+  const headers={'Content-Type':'application/json'};if(fp&&url.startsWith(base))headers['X-Device-Fp']=fp;
+  const response=await fetch(url,{method:'POST',credentials:'include',cache:'no-store',headers,body:JSON.stringify(body),signal:AbortSignal.timeout(15000)});
   if(!response.ok)throw new Error('IDENTITY_UNAVAILABLE');return response.json();
  }
  async function credentials(){
@@ -43,6 +45,7 @@
  }
  async function authorized(path,init={},auth){
   auth=auth||await credentials();const headers=new Headers(init.headers||{});headers.set('Authorization','Bearer '+auth.token);
+  const fp=await root.AiBrowserProof?.fingerprint?.();if(fp&&!headers.has('X-Device-Fp'))headers.set('X-Device-Fp',fp);
   const response=await fetch(base+path,{...init,headers,credentials:'include',cache:'no-store'});
   if(response.status===401&&session?.token===auth.token)session=null;return response;
  }
