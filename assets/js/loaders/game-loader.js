@@ -312,6 +312,7 @@
 
     function buildScriptUrl(src, attempt) {
         var query = '?v=' + encodeURIComponent(version);
+        if (src === 'modules/FreeTalkSystem.js') query += '&inputHistory=20261103';
         if (src === 'prompts.js' || src === 'modules/FreeTalkSystem.js') query += '&expressions=20261026';
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&portrait=20261030';

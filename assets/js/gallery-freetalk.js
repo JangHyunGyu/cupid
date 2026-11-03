@@ -1266,6 +1266,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             const data = await requestCupidGalleryReplyData(_optimized);
             this._assertRequestContext(requestContext, data);
+            this._applyInputHistoryDisposition(requestContext, data);
             const reply = GalleryFreeTalkCore.selectChatCompletionContent(data);
 
             if (!reply) {
@@ -1381,7 +1382,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             if (!displayFallback) window.saveCupidDurableFacts?.({
                 charId: requestCharKey,
                 facts: parsed.memoryFacts,
-                userText: finalContent,
+                userText: requestContext.aiUserContent ?? finalContent,
                 assistantText: displayText,
                 gallery: true
             });
@@ -2753,13 +2754,26 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
         });
     }
 
+    _applyInputHistoryDisposition(requestContext, data) {
+        const disposition = data?.inputHistory;
+        if (disposition?.version !== 1 || !Array.isArray(requestContext?.history)) return;
+        const user = [...requestContext.history].reverse().find(message => message?.role === 'user');
+        if (!user) return;
+        if (disposition.excludeCurrent === true && disposition.treatment === 'unspoken_control') user.excludeFromAiHistory = true;
+        else if (disposition.content != null) user.aiHistoryContent = disposition.content;
+        const content = user.excludeFromAiHistory ? '' : user.aiHistoryContent ?? user.content;
+        requestContext.aiUserContent = typeof content === 'string' ? content
+            : (content || []).filter(part => part?.type === 'text').map(part => part.text).join('\n');
+    }
+
     _buildWindowedHistory(history = this.chatHistory, charId = this.currentCharId) {
         if (!Array.isArray(history) || history.length === 0) return [];
         const cleanHistory = history.filter(msg => {
+            if (msg?.excludeFromAiHistory) return false;
             if (!msg || msg.role !== 'assistant') return true;
             if (msg.displayFallback?.empty === true) return false;
             return String(msg.content || '').trim() !== '...';
-        });
+        }).map(msg => msg?.aiHistoryContent != null ? { ...msg, content: msg.aiHistoryContent } : msg);
         if (typeof window.buildCupidPromptEpoch !== 'function') {
             const sysMsg = cleanHistory[0];
             if (!sysMsg || sysMsg.role !== 'system') {

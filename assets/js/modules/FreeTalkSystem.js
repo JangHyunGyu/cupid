@@ -1874,6 +1874,7 @@ class FreeTalkSystem {
             // JSON 파싱
             const data = await requestCupidReplyData(_optimized);
             this._assertRequestContext(requestContext, data);
+            this._applyInputHistoryDisposition(requestContext, data);
 
             // OpenAI API 응답 구조에서 대답 텍스트 추출
             // 구조: { choices: [{ message: { content: "대답 내용" } }] }
@@ -1995,7 +1996,7 @@ class FreeTalkSystem {
                 if (!displayFallback) window.saveCupidDurableFacts?.({
                     charId: charKey,
                     facts: parsed.memoryFacts,
-                    userText: finalContent,
+                    userText: requestContext.aiUserContent ?? finalContent,
                     assistantText: reply
                 });
                 if (!displayFallback) {
@@ -2654,6 +2655,7 @@ class FreeTalkSystem {
                 onReset: () => streamingPreview.reset()
             });
             this._assertRequestContext(requestContext, data);
+            this._applyInputHistoryDisposition(requestContext, data);
             if (data?.provider === 'deepseek' && data?.usage) {
                 const usage = data.usage;
                 const cache = data.cache || {};
@@ -2743,7 +2745,7 @@ class FreeTalkSystem {
                     day: conversationDay,
                     participants: this.groupParticipants,
                     playerName: this.stateManager.playerName || '',
-                    userContent: finalContent,
+                    userContent: requestContext.aiUserContent ?? finalContent,
                     assistantMessages
                 });
                 const lastSpeaker = rendered.at(-1);
@@ -2878,14 +2880,27 @@ class FreeTalkSystem {
     }
 
     /** 같은 회차의 캐릭터별 본편 대화 전체를 원래 순서대로 반환합니다. */
+    _applyInputHistoryDisposition(requestContext, data) {
+        const disposition = data?.inputHistory;
+        if (disposition?.version !== 1 || !Array.isArray(requestContext?.history)) return;
+        const user = [...requestContext.history].reverse().find(message => message?.role === 'user');
+        if (!user) return;
+        if (disposition.excludeCurrent === true && disposition.treatment === 'unspoken_control') user.excludeFromAiHistory = true;
+        else if (disposition.content != null) user.aiHistoryContent = disposition.content;
+        const content = user.excludeFromAiHistory ? '' : user.aiHistoryContent ?? user.content;
+        requestContext.aiUserContent = typeof content === 'string' ? content
+            : (content || []).filter(part => part?.type === 'text').map(part => part.text).join('\n');
+    }
+
     _buildWindowedHistory(history = this.freeTalkHistory, charKey = this.currentCharKey) {
         if (!Array.isArray(history) || history.length === 0) return [];
         this.stateManager.clearChatPromptEpoch?.(charKey);
         return history.filter(msg => {
+            if (msg?.excludeFromAiHistory) return false;
             if (!msg || msg.role !== 'assistant') return true;
             if (msg.displayFallback?.empty === true) return false;
             return String(msg.content || '').trim() !== '...';
-        });
+        }).map(msg => msg?.aiHistoryContent != null ? { ...msg, content: msg.aiHistoryContent } : msg);
     }
 
     _buildInWorldUserRoleBlock(messages) {
