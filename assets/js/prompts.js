@@ -440,7 +440,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         dumbfounded: 'assets/images/characters/seyoun_dumbfounded.png',
         pleading: 'assets/images/characters/seyoun_pleading.png',
         entranced: 'assets/images/characters/seyoun_entranced.png',
-        provocative: 'assets/images/characters/seyoun_provocative.png',
+        seductive: 'assets/images/characters/seyoun_seductive.png',
         exhausted: 'assets/images/characters/seyoun_exhausted.png'
     }),
     Yuna: Object.freeze({
@@ -482,7 +482,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         dumbfounded: 'assets/images/characters/yuna_dumbfounded.png',
         pleading: 'assets/images/characters/yuna_pleading.png',
         entranced: 'assets/images/characters/yuna_entranced.png',
-        provocative: 'assets/images/characters/yuna_provocative.png',
+        seductive: 'assets/images/characters/yuna_seductive.png',
         exhausted: 'assets/images/characters/yuna_exhausted.png'
     }),
     Dain: Object.freeze({
@@ -526,7 +526,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         dumbfounded: 'assets/images/characters/dain_dumbfounded.png',
         pleading: 'assets/images/characters/dain_pleading.png',
         entranced: 'assets/images/characters/dain_entranced.png',
-        provocative: 'assets/images/characters/dain_provocative.png',
+        seductive: 'assets/images/characters/dain_seductive.png',
         exhausted: 'assets/images/characters/dain_exhausted.png'
     }),
     Teacher: Object.freeze({
@@ -568,7 +568,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         dumbfounded: 'assets/images/characters/teacher_dumbfounded.png',
         pleading: 'assets/images/characters/teacher_pleading.png',
         entranced: 'assets/images/characters/teacher_entranced.png',
-        provocative: 'assets/images/characters/teacher_provocative.png',
+        seductive: 'assets/images/characters/teacher_seductive.png',
         exhausted: 'assets/images/characters/teacher_exhausted.png'
     }),
     Nurse: Object.freeze({
@@ -610,7 +610,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         dumbfounded: 'assets/images/characters/nurse_dumbfounded.png',
         pleading: 'assets/images/characters/nurse_pleading.png',
         entranced: 'assets/images/characters/nurse_entranced.png',
-        provocative: 'assets/images/characters/nurse_provocative.png',
+        seductive: 'assets/images/characters/nurse_seductive.png',
         exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
     Haeun: Object.freeze({
@@ -651,7 +651,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         dumbfounded: 'assets/images/characters/haeun_dumbfounded.png',
         pleading: 'assets/images/characters/haeun_pleading.png',
         entranced: 'assets/images/characters/haeun_entranced.png',
-        provocative: 'assets/images/characters/haeun_provocative.png',
+        seductive: 'assets/images/characters/haeun_seductive.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
@@ -687,7 +687,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         dumbfounded: 'assets/images/characters/minsu_dumbfounded.png',
         pleading: 'assets/images/characters/minsu_pleading.png',
         entranced: 'assets/images/characters/minsu_entranced.png',
-        provocative: 'assets/images/characters/minsu_provocative.png',
+        seductive: 'assets/images/characters/minsu_seductive.png',
         cry: 'assets/images/characters/minsu_cry.png',
         pain: 'assets/images/characters/minsu_pain.png',
         climax: 'assets/images/characters/minsu_climax.png',
@@ -2917,5 +2917,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.89';
+const PROMPT_VERSION = '2.7.90';
 window.PROMPT_VERSION = PROMPT_VERSION;
