@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.373";
+const ASSET_VERSION = "2.9.374";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -1834,8 +1834,19 @@ function makeCupidLogSafe(value) {
 
 function logCupidError(error, options = {}) {
     try {
+        const turnstileExtra = (error && typeof error === 'object') ? {
+            ...(error.turnstileErrorCode !== undefined ? { turnstileErrorCode: String(error.turnstileErrorCode) } : {}),
+            ...(Array.isArray(error.turnstileErrorCodes) ? { turnstileErrorCodes: error.turnstileErrorCodes.slice(0, 6).map(code => String(code)) } : {}),
+            ...(error.turnstileWidgetLoaded !== undefined ? { turnstileWidgetLoaded: Boolean(error.turnstileWidgetLoaded) } : {}),
+            ...(error.turnstileScriptLoaded !== undefined ? { turnstileScriptLoaded: Boolean(error.turnstileScriptLoaded) } : {}),
+            ...(error.turnstileBotSuspected !== undefined ? { turnstileBotSuspected: Boolean(error.turnstileBotSuspected) } : {})
+        } : {};
+        const mergedExtra = Object.keys(turnstileExtra).length
+            ? { ...turnstileExtra, ...(options.extra && typeof options.extra === 'object' ? options.extra : {}) }
+            : (options.extra || null);
+        const mergedOptions = mergedExtra ? { ...options, extra: mergedExtra } : options;
         if (typeof window !== 'undefined' && typeof window.__cupidReportCaughtError === 'function') {
-            return window.__cupidReportCaughtError(error, options);
+            return window.__cupidReportCaughtError(error, mergedOptions);
         }
         const message = error?.message || String(error || 'Unknown Cupid error');
         const currentLocation = typeof location !== 'undefined' ? location : null;
@@ -1854,7 +1865,7 @@ function logCupidError(error, options = {}) {
                 page: currentLocation?.pathname || '',
                 ...(options.context || {})
             }),
-            extra: makeCupidLogSafe(options.extra || null)
+            extra: makeCupidLogSafe(mergedExtra)
         };
 
         const body = JSON.stringify(payload);

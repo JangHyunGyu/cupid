@@ -4,20 +4,23 @@ const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
 
-function harness(width = 375) {
+function harness(width = 375, respond = () => new Response('{}')) {
   const calls = [], widgets = [];
-  const window = { innerWidth: width, fetch: async (...args) => { calls.push(args); return new Response('{}'); },
+  const window = { innerWidth: width, fetch: async (...args) => { calls.push(args); return respond(...args); },
     turnstile: { render(host, options) { widgets.push(options); return widgets.length - 1; },
       execute(id) { queueMicrotask(() => widgets[id].callback('single-use-' + id)); }, remove() {} } };
   const events = new EventTarget();
-  const document = { documentElement: { lang: 'en' }, body: { append() {} }, visibilityState: 'visible',
+  const appended = [];
+  const document = { documentElement: { lang: 'en' }, body: { append(node) { appended.push(node); } }, visibilityState: 'visible',
     addEventListener: events.addEventListener.bind(events), removeEventListener: events.removeEventListener.bind(events),
-    createElement: () => ({ style: {}, remove() {} }) };
+    createElement: tag => ({ tagName: String(tag || '').toUpperCase(), style: {}, children: [],
+      append(...nodes) { this.children.push(...nodes); }, setAttribute() {}, remove() { this.removed = true; } }) };
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/js/ai-browser-proof.js'), 'utf8'), {
     window, document, location: new URL('https://cupid.archerlab.dev/game.html'),
     URL, Request, Response, Headers, crypto: globalThis.crypto, TextEncoder, DOMException, setTimeout, clearTimeout, console: { warn() {} },
+    Array, Object, Error, String, Boolean,
   });
-  return { window, calls, widgets, document, events };
+  return { window, calls, widgets, document, events, appended };
 }
 
 test('verification preserves every prompt byte, cache key, request type and stream flag', async () => {
@@ -35,6 +38,21 @@ test('verification preserves every prompt byte, cache key, request type and stre
     assert.equal(h.widgets.at(-1).action, 'ai_request');
   }
   assert.equal(new Set(h.calls.map(args => args[0].headers.get('x-ai-proof'))).size, 4);
+});
+
+test('initial first-greeting skips browser verification once and defers Turnstile to the first user message', async () => {
+  const h = harness();
+  const greetingBody = JSON.stringify({ messages: [{ role: 'system', content: 'Opening' }, { role: 'user', content: 'Start' }] });
+  await h.window.fetch('/api/ai', { method: 'POST', body: greetingBody, headers: { 'x-request-type': 'first-greeting' } });
+  assert.equal(h.widgets.length, 0);
+  assert.equal(h.calls.length, 1);
+  assert.equal(h.calls[0][0].headers.get('x-ai-proof'), null);
+
+  const userBody = JSON.stringify({ messages: [{ role: 'system', content: 'Opening' }, { role: 'user', content: 'Hello' }] });
+  await h.window.fetch('/api/ai', { method: 'POST', body: userBody, headers: { 'x-request-type': 'character' } });
+  assert.equal(h.widgets.length, 1);
+  assert.equal(h.calls.length, 2);
+  assert.equal(h.calls[1][0].headers.get('x-ai-proof'), 'single-use-0');
 });
 
 test('a recoverable verification failure retries once without changing request bytes or cache identity', async () => {
@@ -55,11 +73,55 @@ for (const [code, attempts] of [['200500', 2], ['110200', 1], ['unknown', 1]]) {
   test(`verification ${code} fails closed after ${attempts} attempt(s)`, async () => {
     const h = harness();
     h.window.turnstile.execute = id => queueMicrotask(() => h.widgets[id]['error-callback'](code));
-    await assert.rejects(h.window.fetch('/api/ai', { method: 'POST', body: '{}' }));
+    await assert.rejects(h.window.fetch('/api/ai', { method: 'POST', body: '{}' }), error => {
+      assert.equal(error.turnstileErrorCode, code);
+      assert.deepEqual([...error.turnstileErrorCodes], Array(attempts).fill(code));
+      assert.equal(error.turnstileWidgetLoaded, true);
+      assert.equal(error.turnstileScriptLoaded, true);
+      assert.equal(error.turnstileBotSuspected, false);
+      assert.match(error.message, /Verify again/);
+      return true;
+    });
     assert.equal(h.widgets.length, attempts);
     assert.equal(h.calls.length, 0);
   });
 }
+
+test('bot-suspected codes (300/600) attach Turnstile metadata, show extension/VPN guidance, and retry interactively on button click', async () => {
+  const h = harness();
+  let shouldFail = true;
+  h.window.turnstile.execute = id => queueMicrotask(() => shouldFail
+    ? h.widgets[id]['error-callback']('300030')
+    : h.widgets[id].callback('interactive-proof'));
+  await assert.rejects(h.window.fetch('/api/ai', { method: 'POST', body: '{}' }), error => {
+    assert.equal(error.turnstileErrorCode, '300030');
+    assert.deepEqual([...error.turnstileErrorCodes], ['300030', '300030']);
+    assert.equal(error.turnstileWidgetLoaded, true);
+    assert.equal(error.turnstileScriptLoaded, true);
+    assert.equal(error.turnstileBotSuspected, true);
+    assert.match(error.message, /extensions or VPN/i);
+    return true;
+  });
+  const banner = h.appended.find(node => node.className === 'ai-browser-verification-retry');
+  assert.ok(banner, 'retry banner should be rendered');
+  assert.ok(banner.retryButton, 'retry button should be attached');
+
+  let clicked = 0;
+  h.document.querySelector = selector => {
+    if (selector === '#chat-input') return { value: 'Retry my message' };
+    if (selector === '#chat-send') return { disabled: false, click() { clicked++; } };
+    return null;
+  };
+  shouldFail = false;
+  banner.retryButton.onclick({});
+  assert.equal(clicked, 1);
+  assert.equal(banner.removed, true);
+
+  await h.window.fetch('/api/ai', { method: 'POST', body: '{}' });
+  assert.equal(h.widgets.at(-1).appearance, 'always');
+  assert.equal(h.calls.length, 1);
+  assert.equal(h.calls[0][0].headers.get('x-ai-proof'), 'interactive-proof');
+});
 
 test('hidden pages wait for visibility, and cancellation releases the verification queue', async () => {
   const h = harness(); h.document.visibilityState = 'hidden';

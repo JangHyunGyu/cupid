@@ -423,6 +423,10 @@
             var errorClass = details.errorClass || classifyError(normalizedMessage, normalizedStack, normalizedSource, type);
             if (errorClass === 'external' || errorClass === 'noise') return;
             var context = mergeObjects(getGameContext(), details.context || {});
+            var turnstileFallback = null;
+            if (/ai-browser-proof\.js|Browser verification failed|접속 확인에 실패|接続を確認できませんでした/i.test([normalizedMessage, normalizedStack, normalizedSource].join('\n')) && window.__lastTurnstileFailure) {
+                turnstileFallback = extractErrorExtra(window.__lastTurnstileFailure);
+            }
             enqueue({
                 appId: details.appId || defaultAppId,
                 userId: details.userId || getDeviceId(),
@@ -434,7 +438,7 @@
                 errorClass: String(errorClass).slice(0, 50),
                 sessionId: String(details.sessionId || sessionId).slice(0, 64),
                 context: context,
-                extra: details.extra || {}
+                extra: mergeObjects(turnstileFallback || {}, details.extra || {})
             });
         } catch (_) { /* the reporter must never break the app */ }
     }
@@ -707,8 +711,21 @@
             event.message || (error && error.message) || 'Script error.',
             (error && error.stack) || '',
             event.filename || window.location.href,
-            { extra: { line: event.lineno || 0, column: event.colno || 0 } }
+            { extra: mergeObjects({ line: event.lineno || 0, column: event.colno || 0 }, extractErrorExtra(error)) }
         );
+    }
+
+    function extractErrorExtra(error) {
+        if (!error || typeof error !== 'object') return null;
+        var extra = {};
+        if (error.turnstileErrorCode !== undefined) extra.turnstileErrorCode = safeString(error.turnstileErrorCode);
+        if (Array.isArray(error.turnstileErrorCodes)) {
+            extra.turnstileErrorCodes = error.turnstileErrorCodes.slice(0, 6).map(safeString);
+        }
+        if (error.turnstileWidgetLoaded !== undefined) extra.turnstileWidgetLoaded = Boolean(error.turnstileWidgetLoaded);
+        if (error.turnstileScriptLoaded !== undefined) extra.turnstileScriptLoaded = Boolean(error.turnstileScriptLoaded);
+        if (error.turnstileBotSuspected !== undefined) extra.turnstileBotSuspected = Boolean(error.turnstileBotSuspected);
+        return Object.keys(extra).length ? extra : null;
     }
 
     function handleUnhandledRejection(event) {
@@ -718,7 +735,7 @@
             (reason && reason.message) || safeString(reason || 'Unhandled rejection'),
             (reason && reason.stack) || '',
             window.location.href,
-            { extra: { reasonType: (reason && reason.name) || typeof reason } }
+            { extra: mergeObjects({ reasonType: (reason && reason.name) || typeof reason }, extractErrorExtra(reason)) }
         );
     }
 
@@ -758,7 +775,8 @@
                         (errorArg && errorArg.name) || 'ConsoleError',
                         args.map(safeString).join(' '),
                         stack || '',
-                        sourceFromStack(stack)
+                        sourceFromStack(stack),
+                        { extra: extractErrorExtra(errorArg) || {} }
                     );
                 }, 0);
             } catch (_) { /* preserve console behavior */ }
@@ -771,15 +789,17 @@
     };
     window.__cupidReportCaughtError = function (error, options) {
         options = options || {};
+        var mergedOptions = mergeObjects({}, options);
+        mergedOptions.extra = mergeObjects(mergeObjects({}, extractErrorExtra(error)), options.extra);
         try {
             if (reportedCaughtErrors && error && typeof error === 'object') reportedCaughtErrors.add(error);
         } catch (_) { /* ignore */ }
         report(
-            options.errorType || (error && error.name) || 'CaughtError',
+            mergedOptions.errorType || (error && error.name) || 'CaughtError',
             (error && error.message) || safeString(error || 'Unknown Cupid error'),
             (error && error.stack) || '',
-            options.source || 'cupid',
-            options
+            mergedOptions.source || 'cupid',
+            mergedOptions
         );
         return true;
     };
