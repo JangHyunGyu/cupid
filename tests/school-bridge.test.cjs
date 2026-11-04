@@ -17,7 +17,7 @@ test('all Cupid languages round trip through a supported school language without
         const from = runtime().SchoolBridge;
         const url = new URL(from.schoolUrl(lang));
         assert.equal(url.origin, 'https://harem.archerlab.dev');
-        assert.equal(url.searchParams.get('lang'), ['ko', 'en', 'ja'].includes(lang) ? lang : 'en');
+        assert.equal(url.searchParams.get('lang'), lang);
         assert.deepEqual([...url.searchParams.keys()].sort(), ['cupidLang', 'lang', 'school']);
         const school = runtime(url.href + '&keep=1#place');
         assert.equal(school.SchoolBridge.takeSchoolArrival(), true);

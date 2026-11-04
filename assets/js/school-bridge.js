@@ -78,7 +78,7 @@
     };
     const schoolUrl = lang => {
         lang = language(lang);
-        const schoolLang = ['ko', 'en', 'ja'].includes(lang) ? lang : 'en';
+        const schoolLang = LANGUAGES.includes(lang) ? lang : 'en';
         return `https://harem.archerlab.dev/${schoolLang === 'ko' ? '' : `index-${schoolLang}`}?school=cupid&cupidLang=${lang}&lang=${schoolLang}`;
     };
     function consume(keys) {
