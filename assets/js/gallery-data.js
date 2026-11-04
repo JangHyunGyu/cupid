@@ -2581,13 +2581,19 @@ const dumbfoundedExpressionLabels = { ko: '어이없음 (황당)', en: 'Dumbfoun
 const pleadingExpressionLabels = { ko: '애원 (간청)', en: 'Pleading', ja: '懇願', es: 'Suplicante', fr: 'Suppliante', de: 'Flehend', pt: 'Suplicante', zh: '哀求' };
 const entrancedExpressionLabels = { ko: '황홀 (매혹)', en: 'Entranced', ja: '恍惚', es: 'Extasiada', fr: 'Envoûtée', de: 'Verzückt', pt: 'Extasiada', zh: '恍惚' };
 const seductiveExpressionLabels = { ko: '유혹', en: 'Seductive', ja: '誘惑', es: 'Seductora', fr: 'Séduisante', de: 'Verführerisch', pt: 'Sedutora', zh: '诱惑' };
+const jealousExpressionLabels = { ko: '질투', en: 'Jealous', ja: '嫉妬', es: 'Celosa', fr: 'Jalouse', de: 'Eifersüchtig', pt: 'Ciumenta', zh: '嫉妒' };
+const coldExpressionLabels = { ko: '차갑게 (경멸)', en: 'Cold Glare', ja: '冷담 (軽蔑)', es: 'Mirada fría', fr: 'Regard froid', de: 'Kalter Blick', pt: 'Olhar frio', zh: '冷漠' };
+const suspiciousExpressionLabels = { ko: '의심 (추궁)', en: 'Suspicious', ja: '疑念 (追及)', es: 'Sospechosa', fr: 'Soupçonneuse', de: 'Misstrauisch', pt: 'Desconfiada', zh: '怀疑' };
+const lovestruckExpressionLabels = { ko: '사랑에 빠짐', en: 'Lovestruck', ja: 'メロメロ (溺愛)', es: 'Enamorada', fr: 'Éprise', de: 'Verliebt', pt: 'Apaixonada', zh: '沉溺爱意' };
+const kissExpressionLabels = { ko: '입맞춤 (키스)', en: 'Kiss', ja: 'キス', es: 'Beso', fr: 'Baiser', de: 'Kuss', pt: 'Beijo', zh: '亲吻' };
+const afterglowExpressionLabels = { ko: '여운 (사후)', en: 'Afterglow', ja: '事後の余韻', es: 'Resplandor íntimo', fr: 'Extase apaisée', de: 'Nachglühen', pt: 'Êxtase pós-amor', zh: '事后余韵' };
 const additionalCharacterExpressions = {
-    seyoun: ['soft_smile', 'smile', 'dry_smile', 'bored', 'tired', 'firm', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive'],
-    yuna: ['soft_smile', 'dry_smile', 'tired', 'firm', 'very_shy', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive'],
-    dain: ['soft_smile', 'smile', 'dry_smile', 'bored', 'tired', 'firm', 'very_shy', 'worried', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive'],
-    teacher: ['soft_smile', 'dry_smile', 'bored', 'tired', 'firm', 'very_shy', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive'],
-    nurse: ['soft_smile', 'bored', 'firm', 'very_shy', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive'],
-    haeun: ['soft_smile', 'dry_smile', 'bored', 'tired', 'very_shy', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive']
+    seyoun: ['soft_smile', 'smile', 'dry_smile', 'bored', 'tired', 'firm', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive', 'active', 'sweat', 'jealous', 'cold', 'suspicious', 'lovestruck', 'kiss', 'afterglow'],
+    yuna: ['soft_smile', 'dry_smile', 'tired', 'firm', 'very_shy', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive', 'active', 'sweat', 'jealous', 'cold', 'suspicious', 'lovestruck', 'kiss', 'afterglow'],
+    dain: ['soft_smile', 'smile', 'dry_smile', 'bored', 'tired', 'firm', 'very_shy', 'worried', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive', 'jealous', 'cold', 'suspicious', 'lovestruck', 'kiss', 'afterglow'],
+    teacher: ['soft_smile', 'dry_smile', 'bored', 'tired', 'firm', 'very_shy', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive', 'active', 'sweat', 'jealous', 'cold', 'suspicious', 'lovestruck', 'kiss', 'afterglow'],
+    nurse: ['soft_smile', 'bored', 'firm', 'very_shy', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'relieved', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive', 'active', 'sweat', 'jealous', 'cold', 'suspicious', 'lovestruck', 'kiss', 'afterglow'],
+    haeun: ['soft_smile', 'dry_smile', 'bored', 'tired', 'very_shy', 'angry', 'flushed', 'laugh', 'pout', 'surprised', 'scared', 'aegyo', 'ahegao', 'fainted', 'dazed', 'disgusted', 'smirk', 'furious', 'confused', 'sob', 'scream', 'choking', 'dead', 'humiliated', 'dumbfounded', 'pleading', 'entranced', 'seductive', 'active', 'sweat', 'jealous', 'cold', 'suspicious', 'lovestruck', 'kiss', 'afterglow']
 };
 for (const [lang, label] of Object.entries(exhaustedExpressionLabels)) {
     GalleryData.expressions[lang].exhausted = label;
@@ -2612,6 +2618,12 @@ for (const [lang, label] of Object.entries(exhaustedExpressionLabels)) {
     GalleryData.expressions[lang].pleading = pleadingExpressionLabels[lang];
     GalleryData.expressions[lang].entranced = entrancedExpressionLabels[lang];
     GalleryData.expressions[lang].seductive = seductiveExpressionLabels[lang];
+    GalleryData.expressions[lang].jealous = jealousExpressionLabels[lang];
+    GalleryData.expressions[lang].cold = coldExpressionLabels[lang];
+    GalleryData.expressions[lang].suspicious = suspiciousExpressionLabels[lang];
+    GalleryData.expressions[lang].lovestruck = lovestruckExpressionLabels[lang];
+    GalleryData.expressions[lang].kiss = kissExpressionLabels[lang];
+    GalleryData.expressions[lang].afterglow = afterglowExpressionLabels[lang];
     if (GalleryData.characters[lang]?.haeun && !GalleryData.characters[lang].haeun.expressions.includes('climax')) {
         GalleryData.characters[lang].haeun.expressions.push('climax');
     }
@@ -2642,18 +2654,23 @@ GalleryData.EXPRESSION_VARIANTS = Object.freeze({
         climax: ['02', '03', '04', '05', '06']
     },
     yuna: {
+        flushed: ['02', '03'],
         climax: ['02', '03', '04', '05', '06', '07', '08', '09']
     },
     dain: {
+        flushed: ['02', '03'],
         climax: ['02', '03', '04', '05', '06', '07', '08', '09', '10', '11']
     },
     teacher: {
+        flushed: ['02', '03'],
         climax: ['02', '03', '04', '05', '06', '07', '08', '09', '10']
     },
     nurse: {
+        flushed: ['02', '03'],
         climax: ['02', '03', '04', '05', '06', '07', '08', '09']
     },
     haeun: {
+        flushed: ['02', '03'],
         climax: ['02', '03', '04', '05', '06', '07', '08']
     }
 });
@@ -2662,7 +2679,7 @@ GalleryData.getExpressionRequirement = function (charId, expression) {
         .filter(name => name !== 'exhausted' && !/^(date|home)_/.test(name) && !/_[0-9]{2}$/.test(name));
     const base = String(expression).replace(/^(date|home)_/, '').replace(/_[0-9]{2}$/, '');
     if (charId === 'haeun') {
-        return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, very_shy: 45, smile: 60, dry_smile: 20, bored: 20, tired: 20, sad: 20, angry: 20, flushed: 80, laugh: 60, pout: 33, surprised: 20, soft_smile: 20, scared: 20, aegyo: 60, ahegao: 100, fainted: 20, dazed: 20, disgusted: 20, smirk: 20, furious: 20, confused: 20, sob: 20, scream: 20, choking: 100, dead: 20, humiliated: 20, dumbfounded: 20, pleading: 20, entranced: 80, seductive: 80, cry: 20, pain: 20 })[base] ?? 100;
+        return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, very_shy: 45, smile: 60, dry_smile: 20, bored: 20, tired: 20, sad: 20, angry: 20, flushed: 80, laugh: 60, pout: 33, surprised: 20, soft_smile: 20, scared: 20, aegyo: 60, ahegao: 100, fainted: 20, dazed: 20, disgusted: 20, smirk: 20, furious: 20, confused: 20, sob: 20, scream: 20, choking: 100, dead: 20, humiliated: 20, dumbfounded: 20, pleading: 20, entranced: 80, seductive: 80, active: 40, sweat: 20, jealous: 60, cold: 20, suspicious: 20, lovestruck: 80, kiss: 80, afterglow: 100, cry: 20, pain: 20 })[base] ?? 100;
     }
     const index = baseExpressions.indexOf(base);
     if (index < 0) return 100;
@@ -2675,7 +2692,7 @@ GalleryData.resolveOutfitExpression = function (scene, rawPath) {
     if (!available) return rawPath;
     const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
     if (expression === 'bikini' || expression === 'climax' || expression === 'ahegao' || /^(?:climax|flushed)_[0-9]{2}$/.test(expression) || expression === 'exhausted' || expression === 'pain') return rawPath;
-    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', surprised: available.includes('worried') ? 'worried' : available.includes('sweat') ? 'sweat' : 'shy', scared: available.includes('worried') ? 'worried' : 'sad', fainted: available.includes('exhausted') ? 'exhausted' : 'sad', dazed: available.includes('scared') ? 'scared' : 'surprised', disgusted: 'angry', smirk: 'smile', furious: 'angry', confused: 'surprised', relieved: 'soft_smile', sob: 'cry', scream: 'scared', choking: 'pain', dead: available.includes('exhausted') ? 'exhausted' : 'sad', humiliated: 'shy', dumbfounded: available.includes('bored') ? 'bored' : 'sad', pleading: available.includes('worried') ? 'worried' : 'sad', entranced: 'shy', seductive: available.includes('smile') ? 'smile' : 'laugh', dry_smile: available.includes('smile') ? 'smile' : 'sad', tired: available.includes('sweat') ? 'sweat' : 'sad', bored: available.includes('bored') ? 'bored' : 'normal', firm: 'normal', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', soft_smile: available.includes('smile') ? 'smile' : 'normal', aegyo: available.includes('laugh') ? 'laugh' : available.includes('smile') ? 'smile' : 'shy', very_shy: 'shy', shy2: 'shy', active: 'normal', flushed: 'shy' };
+    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', surprised: available.includes('worried') ? 'worried' : available.includes('sweat') ? 'sweat' : 'shy', scared: available.includes('worried') ? 'worried' : 'sad', fainted: available.includes('exhausted') ? 'exhausted' : 'sad', dazed: available.includes('scared') ? 'scared' : 'surprised', disgusted: 'angry', smirk: 'smile', furious: 'angry', confused: 'surprised', relieved: 'soft_smile', sob: 'cry', scream: 'scared', choking: 'pain', dead: available.includes('exhausted') ? 'exhausted' : 'sad', humiliated: 'shy', dumbfounded: available.includes('bored') ? 'bored' : 'sad', pleading: available.includes('worried') ? 'worried' : 'sad', entranced: 'shy', seductive: available.includes('smile') ? 'smile' : 'laugh', jealous: 'pout', cold: available.includes('bored') ? 'bored' : 'normal', suspicious: available.includes('worried') ? 'worried' : 'normal', lovestruck: available.includes('smile') ? 'smile' : 'shy', kiss: 'shy', afterglow: 'shy', sweat: available.includes('worried') ? 'worried' : 'shy', dry_smile: available.includes('smile') ? 'smile' : 'sad', tired: available.includes('sweat') ? 'sweat' : 'sad', bored: available.includes('bored') ? 'bored' : 'normal', firm: 'normal', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', soft_smile: available.includes('smile') ? 'smile' : 'normal', aegyo: available.includes('laugh') ? 'laugh' : available.includes('smile') ? 'smile' : 'shy', very_shy: 'shy', shy2: 'shy', active: 'normal', flushed: 'shy' };
     const chosen = available.includes(expression) ? expression
         : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
     return `assets/images/characters/${outfit[1]}_${outfit[2]}_${chosen}.webp`;

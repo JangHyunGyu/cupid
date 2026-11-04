@@ -441,6 +441,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         pleading: 'assets/images/characters/seyoun_pleading.png',
         entranced: 'assets/images/characters/seyoun_entranced.png',
         seductive: 'assets/images/characters/seyoun_seductive.png',
+        active: 'assets/images/characters/seyoun_active.png',
+        sweat: 'assets/images/characters/seyoun_sweat.png',
+        jealous: 'assets/images/characters/seyoun_jealous.png',
+        cold: 'assets/images/characters/seyoun_cold.png',
+        suspicious: 'assets/images/characters/seyoun_suspicious.png',
+        lovestruck: 'assets/images/characters/seyoun_lovestruck.png',
+        kiss: 'assets/images/characters/seyoun_kiss.png',
+        afterglow: 'assets/images/characters/seyoun_afterglow.png',
         exhausted: 'assets/images/characters/seyoun_exhausted.png'
     }),
     Yuna: Object.freeze({
@@ -483,6 +491,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         pleading: 'assets/images/characters/yuna_pleading.png',
         entranced: 'assets/images/characters/yuna_entranced.png',
         seductive: 'assets/images/characters/yuna_seductive.png',
+        active: 'assets/images/characters/yuna_active.png',
+        sweat: 'assets/images/characters/yuna_sweat.png',
+        jealous: 'assets/images/characters/yuna_jealous.png',
+        cold: 'assets/images/characters/yuna_cold.png',
+        suspicious: 'assets/images/characters/yuna_suspicious.png',
+        lovestruck: 'assets/images/characters/yuna_lovestruck.png',
+        kiss: 'assets/images/characters/yuna_kiss.png',
+        afterglow: 'assets/images/characters/yuna_afterglow.png',
         exhausted: 'assets/images/characters/yuna_exhausted.png'
     }),
     Dain: Object.freeze({
@@ -527,6 +543,12 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         pleading: 'assets/images/characters/dain_pleading.png',
         entranced: 'assets/images/characters/dain_entranced.png',
         seductive: 'assets/images/characters/dain_seductive.png',
+        jealous: 'assets/images/characters/dain_jealous.png',
+        cold: 'assets/images/characters/dain_cold.png',
+        suspicious: 'assets/images/characters/dain_suspicious.png',
+        lovestruck: 'assets/images/characters/dain_lovestruck.png',
+        kiss: 'assets/images/characters/dain_kiss.png',
+        afterglow: 'assets/images/characters/dain_afterglow.png',
         exhausted: 'assets/images/characters/dain_exhausted.png'
     }),
     Teacher: Object.freeze({
@@ -569,6 +591,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         pleading: 'assets/images/characters/teacher_pleading.png',
         entranced: 'assets/images/characters/teacher_entranced.png',
         seductive: 'assets/images/characters/teacher_seductive.png',
+        active: 'assets/images/characters/teacher_active.png',
+        sweat: 'assets/images/characters/teacher_sweat.png',
+        jealous: 'assets/images/characters/teacher_jealous.png',
+        cold: 'assets/images/characters/teacher_cold.png',
+        suspicious: 'assets/images/characters/teacher_suspicious.png',
+        lovestruck: 'assets/images/characters/teacher_lovestruck.png',
+        kiss: 'assets/images/characters/teacher_kiss.png',
+        afterglow: 'assets/images/characters/teacher_afterglow.png',
         exhausted: 'assets/images/characters/teacher_exhausted.png'
     }),
     Nurse: Object.freeze({
@@ -611,6 +641,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         pleading: 'assets/images/characters/nurse_pleading.png',
         entranced: 'assets/images/characters/nurse_entranced.png',
         seductive: 'assets/images/characters/nurse_seductive.png',
+        active: 'assets/images/characters/nurse_active.png',
+        sweat: 'assets/images/characters/nurse_sweat.png',
+        jealous: 'assets/images/characters/nurse_jealous.png',
+        cold: 'assets/images/characters/nurse_cold.png',
+        suspicious: 'assets/images/characters/nurse_suspicious.png',
+        lovestruck: 'assets/images/characters/nurse_lovestruck.png',
+        kiss: 'assets/images/characters/nurse_kiss.png',
+        afterglow: 'assets/images/characters/nurse_afterglow.png',
         exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
     Haeun: Object.freeze({
@@ -652,6 +690,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         pleading: 'assets/images/characters/haeun_pleading.png',
         entranced: 'assets/images/characters/haeun_entranced.png',
         seductive: 'assets/images/characters/haeun_seductive.png',
+        active: 'assets/images/characters/haeun_active.png',
+        sweat: 'assets/images/characters/haeun_sweat.png',
+        jealous: 'assets/images/characters/haeun_jealous.png',
+        cold: 'assets/images/characters/haeun_cold.png',
+        suspicious: 'assets/images/characters/haeun_suspicious.png',
+        lovestruck: 'assets/images/characters/haeun_lovestruck.png',
+        kiss: 'assets/images/characters/haeun_kiss.png',
+        afterglow: 'assets/images/characters/haeun_afterglow.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
@@ -688,6 +734,14 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         pleading: 'assets/images/characters/minsu_pleading.png',
         entranced: 'assets/images/characters/minsu_entranced.png',
         seductive: 'assets/images/characters/minsu_seductive.png',
+        active: 'assets/images/characters/minsu_active.png',
+        sweat: 'assets/images/characters/minsu_sweat.png',
+        jealous: 'assets/images/characters/minsu_jealous.png',
+        cold: 'assets/images/characters/minsu_cold.png',
+        suspicious: 'assets/images/characters/minsu_suspicious.png',
+        lovestruck: 'assets/images/characters/minsu_lovestruck.png',
+        kiss: 'assets/images/characters/minsu_kiss.png',
+        afterglow: 'assets/images/characters/minsu_afterglow.png',
         cry: 'assets/images/characters/minsu_cry.png',
         pain: 'assets/images/characters/minsu_pain.png',
         climax: 'assets/images/characters/minsu_climax.png',
@@ -723,21 +777,27 @@ const CHARACTER_EXPRESSION_VARIANT_PATHS = Object.freeze({
         climax: makeCharacterExpressionVariants('seyoun', 'climax', 6)
     }),
     Yuna: Object.freeze({
+        flushed: makeCharacterExpressionVariants('yuna', 'flushed', 3),
         climax: makeCharacterExpressionVariants('yuna', 'climax', 9)
     }),
     Dain: Object.freeze({
+        flushed: makeCharacterExpressionVariants('dain', 'flushed', 3),
         climax: makeCharacterExpressionVariants('dain', 'climax', 11)
     }),
     Teacher: Object.freeze({
+        flushed: makeCharacterExpressionVariants('teacher', 'flushed', 3),
         climax: makeCharacterExpressionVariants('teacher', 'climax', 10)
     }),
     Nurse: Object.freeze({
+        flushed: makeCharacterExpressionVariants('nurse', 'flushed', 3),
         climax: makeCharacterExpressionVariants('nurse', 'climax', 9)
     }),
     Haeun: Object.freeze({
+        flushed: makeCharacterExpressionVariants('haeun', 'flushed', 3),
         climax: makeCharacterExpressionVariants('haeun', 'climax', 8)
     }),
     Minsu: Object.freeze({
+        flushed: makeCharacterExpressionVariants('minsu', 'flushed', 3),
         climax: makeCharacterExpressionVariants('minsu', 'climax', 6)
     })
 });
@@ -2917,5 +2977,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.90';
+const PROMPT_VERSION = '2.7.91';
 window.PROMPT_VERSION = PROMPT_VERSION;
