@@ -253,3 +253,24 @@ test('HTTP 200 without D1 acknowledgement retains the message for retry', async 
     h.run("enqueueCupidChatLog({appId:'cupid',clientMsgId:'unconfirmed',content:'visible'})");
     await h.run('flushCupidChatLogQueue()');assert.equal(h.logs().length,1);assert.equal(h.logs()[0].attempts,1);
 });
+
+// D1 error_logs #6461 (2026-11-04): cupid-en reported chat_log_delivery_delayed for
+// "TimeoutError: fetch timeout after 60000ms" (httpStatus 0, attempts 6) while the entry was still queued.
+// A network timeout is transient: keep retrying silently and only report server (HTTP) failures.
+test('network timeouts stay queued without delivery_delayed reports (row 6461)', async () => {
+    const h = harness(() => new Promise(() => {}));
+    h.run("enqueueCupidChatLog({ appId: 'cupid-en', clientMsgId: 'cupid-mw1r2wp2-a-73dl5wbs', content: 'x'.repeat(36) })");
+    const timeoutMs = h.run('CUPID_LOG_REQUEST_TIMEOUT_MS');
+    for (let attempt = 1; attempt <= 8; attempt++) {
+        const flushing = h.run('flushCupidChatLogQueue()');
+        await new Promise(resolve => setImmediate(resolve));
+        for (const [id, timer] of [...h.timers]) {
+            if (timer.delay === timeoutMs) { h.timers.delete(id); timer.fn(); }
+        }
+        await flushing;
+        assert.equal(h.logs()[0]?.attempts, attempt);
+        assert.match(h.logs()[0].lastError, /fetch timeout after/);
+        h.advance(120000);
+    }
+    assert.deepEqual(h.reports.map(r => r.errorType), []);
+});

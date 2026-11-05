@@ -250,7 +250,7 @@
 
     if (window.__cupidErrorReporterInstalled) return;
 
-    var VERSION = '20261016-shared-errors';
+    var VERSION = '20261105-turnstile-stage';
     var ERROR_ENDPOINT = 'https://chatbot-api.yama5993.workers.dev/error-logs';
     var QUEUE_KEY = 'cupid-error-queue-v2';
     var SESSION_KEY = 'cupid-error-session-v2';
@@ -725,6 +725,9 @@
         if (error.turnstileWidgetLoaded !== undefined) extra.turnstileWidgetLoaded = Boolean(error.turnstileWidgetLoaded);
         if (error.turnstileScriptLoaded !== undefined) extra.turnstileScriptLoaded = Boolean(error.turnstileScriptLoaded);
         if (error.turnstileBotSuspected !== undefined) extra.turnstileBotSuspected = Boolean(error.turnstileBotSuspected);
+        if (error.turnstileStage !== undefined) extra.turnstileStage = safeString(error.turnstileStage);
+        if (error.turnstileAttempts !== undefined) extra.turnstileAttempts = Number(error.turnstileAttempts) || 0;
+        if (error.turnstileAppearance) extra.turnstileAppearance = safeString(error.turnstileAppearance);
         return Object.keys(extra).length ? extra : null;
     }
 

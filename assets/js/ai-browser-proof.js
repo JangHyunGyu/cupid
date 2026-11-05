@@ -85,6 +85,9 @@
             turnstileWidgetLoaded: Boolean(meta.widgetLoaded),
             turnstileScriptLoaded: Boolean(meta.scriptLoaded ?? root.turnstile?.render),
             turnstileBotSuspected: botSuspected,
+            turnstileStage: String(meta.stage || 'unknown'),
+            turnstileAttempts: Number(meta.attempts) || 1,
+            turnstileAppearance: String(meta.appearance || ''),
         };
         try { root.__lastTurnstileFailure = Object.assign({ at: Date.now() }, info); } catch (_) {}
         return Object.assign(new Error(message(botSuspected)), { verificationRetryable: retryable }, info);
@@ -187,14 +190,14 @@
             const script = document.createElement('script');
             script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
             script.async = true;
-            const timer = setTimeout(() => { script.remove(); reject(failure(true, { code: 'script-load-timeout', widgetLoaded: false, scriptLoaded: false })); }, 20000);
-            script.onload = () => { clearTimeout(timer); root.turnstile?.render ? resolve(root.turnstile) : reject(failure(false, { code: 'script-missing-api', widgetLoaded: false, scriptLoaded: false })); };
-            script.onerror = () => { clearTimeout(timer); script.remove(); reject(failure(true, { code: 'script-load-error', widgetLoaded: false, scriptLoaded: false })); };
+            const timer = setTimeout(() => { script.remove(); reject(failure(true, { code: 'script-load-timeout', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); }, 20000);
+            script.onload = () => { clearTimeout(timer); root.turnstile?.render ? resolve(root.turnstile) : reject(failure(false, { code: 'script-missing-api', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); };
+            script.onerror = () => { clearTimeout(timer); script.remove(); reject(failure(true, { code: 'script-load-error', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); };
             document.head.append(script);
         }).catch(error => { loading = null; throw error; });
         return loading;
     }
-    async function tokenAttempt(hash, signal) {
+    async function tokenAttempt(hash, signal, attempt = 0) {
         if (signal?.aborted) throw aborted(signal);
         const api = await abortable(load(), signal);
         if (signal?.aborted) throw aborted(signal);
@@ -204,6 +207,10 @@
             host.style.cssText = 'position:fixed;z-index:2147483647;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:calc(100vw - 20px);';
             (document.body || document.documentElement).append(host);
             let id, done = false;
+            // Turnstile is rendered with retry: 'never', so a failed invisible run is retried here once
+            // with a visible widget; the visitor can then solve the interactive check instead of failing twice.
+            const appearance = forceInteractive || attempt > 0 ? 'always' : 'interaction-only';
+            const meta = (stage, extra = {}) => Object.assign({ stage, appearance, attempts: attempt + 1, widgetLoaded: true, scriptLoaded: true }, extra);
             const finish = (error, value) => {
                 if (done) return;
                 done = true; clearTimeout(timer); signal?.removeEventListener('abort', cancel);
@@ -211,25 +218,25 @@
                 host.remove(); error ? reject(error) : resolve(value);
             };
             const cancel = () => finish(aborted(signal));
-            const timer = setTimeout(() => finish(failure(true, { code: 'widget-timeout', widgetLoaded: id !== undefined, scriptLoaded: true })), 90000);
+            const timer = setTimeout(() => finish(failure(true, meta('widget-timeout', { code: 'widget-timeout', widgetLoaded: id !== undefined }))), 90000);
             signal?.addEventListener('abort', cancel, { once: true });
             try {
                 id = api.render(host, { sitekey: SITEKEY, action: 'ai_request', cData: hash,
-                    execution: 'execute', appearance: forceInteractive ? 'always' : 'interaction-only', theme: 'auto', retry: 'never',
+                    execution: 'execute', appearance, theme: 'auto', retry: 'never',
                     size: root.innerWidth < 330 ? 'compact' : 'normal', language: 'auto',
                     callback: value => finish(null, value),
                     'error-callback': code => {
                         const normalized = String(code || 'widget-error');
                         console.warn('[AI access] Verification failed:', normalized);
-                        finish(failure(isRetryableCode(normalized), { code: normalized, widgetLoaded: true, scriptLoaded: true }));
+                        finish(failure(isRetryableCode(normalized), meta('challenge', { code: normalized })));
                         return true;
                     },
-                    'expired-callback': () => finish(failure(true, { code: 'widget-expired', widgetLoaded: true, scriptLoaded: true })),
-                    'timeout-callback': () => finish(failure(true, { code: 'widget-challenge-timeout', widgetLoaded: true, scriptLoaded: true })),
+                    'expired-callback': () => finish(failure(true, meta('expired', { code: 'widget-expired' }))),
+                    'timeout-callback': () => finish(failure(true, meta('challenge-timeout', { code: 'widget-challenge-timeout' }))),
                 });
                 if (!done) api.execute(id);
                 else if (id !== undefined) { try { api.remove(id); } catch (_) {} }
-            } catch (_) { finish(failure(false, { code: 'widget-render-exception', widgetLoaded: false, scriptLoaded: Boolean(root.turnstile?.render) })); }
+            } catch (_) { finish(failure(false, meta('render', { code: 'widget-render-exception', widgetLoaded: false, scriptLoaded: Boolean(root.turnstile?.render) }))); }
         });
     }
     async function token(hash, signal) {
@@ -237,7 +244,7 @@
         for (let attempt = 0; attempt < 2; attempt++) {
             await visible(signal);
             try {
-                const value = await tokenAttempt(hash, signal);
+                const value = await tokenAttempt(hash, signal, attempt);
                 forceInteractive = false;
                 clearRetryBanner();
                 return value;
@@ -252,6 +259,9 @@
                         widgetLoaded: error?.turnstileWidgetLoaded,
                         scriptLoaded: error?.turnstileScriptLoaded,
                         botSuspected: error?.turnstileBotSuspected || codes.some(isBotCode),
+                        stage: error?.turnstileStage || 'unknown',
+                        attempts: attempt + 1,
+                        appearance: error?.turnstileAppearance || '',
                     });
                     showRetryBanner(finalError);
                     throw finalError;

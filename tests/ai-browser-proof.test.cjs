@@ -164,3 +164,19 @@ test('cancellation is immediate while another request is still obtaining its pro
   h.widgets[0].callback('first-proof'); await first;
   assert.equal(h.widgets.length, 1);
 });
+
+// D1 error_logs #6465 (2026-11-04): 300030 twice, logged with no stage, and the automatic retry
+// was rendered invisible again. The retry must be interactive and the error must carry stage/attempts.
+test('300030 challenge failures retry with a visible widget and report stage and attempts (row 6465)', async () => {
+  const h = harness();
+  h.window.turnstile.execute = id => queueMicrotask(() => h.widgets[id]['error-callback']('300030'));
+  await assert.rejects(h.window.fetch('/api/ai', { method: 'POST', body: '{}', headers: { 'x-request-type': 'character' } }), error => {
+    assert.equal(error.turnstileErrorCode, '300030');
+    assert.deepEqual(Array.from(error.turnstileErrorCodes), ['300030', '300030']);
+    assert.equal(error.turnstileStage, 'challenge');
+    assert.equal(error.turnstileAttempts, 2);
+    assert.equal(error.turnstileAppearance, 'always');
+    return true;
+  });
+  assert.deepEqual(h.widgets.map(w => w.appearance), ['interaction-only', 'always']);
+});

@@ -50,7 +50,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.374";
+const ASSET_VERSION = "2.9.375";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -1316,7 +1316,9 @@ function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, 
         const lastError = String(error?.message || error).substring(0, 200);
         const nextAttemptAt = Date.now() + Math.min(CUPID_LOG_RETRY_BASE_MS * attempts, CUPID_LOG_RETRY_MAX_MS);
         writeQueue(readQueue().map(queued => getId(queued) === id ? { ...queued, attempts, lastError, nextAttemptAt } : queued));
-        if (attempts === CUPID_LOG_MAX_ATTEMPTS) {
+        // A dropped connection or our own fetch timeout is a network failure: the entry stays queued and keeps
+        // retrying, so only retryable HTTP failures (the server answered with 408/429/5xx) are reported here.
+        if (attempts === CUPID_LOG_MAX_ATTEMPTS && !transient) {
             reportCupidLogFailure(error, itemWithAttempts, `${kind}_delivery_delayed`, { nextAttemptAt });
         }
         console.warn(`[대화 로그 재전송 대기] kind=${kind} attempts=${attempts}`, error?.message || error);
@@ -1839,7 +1841,10 @@ function logCupidError(error, options = {}) {
             ...(Array.isArray(error.turnstileErrorCodes) ? { turnstileErrorCodes: error.turnstileErrorCodes.slice(0, 6).map(code => String(code)) } : {}),
             ...(error.turnstileWidgetLoaded !== undefined ? { turnstileWidgetLoaded: Boolean(error.turnstileWidgetLoaded) } : {}),
             ...(error.turnstileScriptLoaded !== undefined ? { turnstileScriptLoaded: Boolean(error.turnstileScriptLoaded) } : {}),
-            ...(error.turnstileBotSuspected !== undefined ? { turnstileBotSuspected: Boolean(error.turnstileBotSuspected) } : {})
+            ...(error.turnstileBotSuspected !== undefined ? { turnstileBotSuspected: Boolean(error.turnstileBotSuspected) } : {}),
+            ...(error.turnstileStage !== undefined ? { turnstileStage: String(error.turnstileStage) } : {}),
+            ...(error.turnstileAttempts !== undefined ? { turnstileAttempts: Number(error.turnstileAttempts) || 0 } : {}),
+            ...(error.turnstileAppearance ? { turnstileAppearance: String(error.turnstileAppearance) } : {})
         } : {};
         const mergedExtra = Object.keys(turnstileExtra).length
             ? { ...turnstileExtra, ...(options.extra && typeof options.extra === 'object' ? options.extra : {}) }
