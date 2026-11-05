@@ -268,9 +268,9 @@ test('every Cupid free-talk surface validates buffered SSE before paced display 
     assert.doesNotMatch(source, /await readChatCompletionStream\(response, \{ onDelta/, 'unchecked deltas must not reach the preview callback');
     assert.ok((main.match(/selectChatCompletionContent\(data\)/g) || []).length >= 2, 'single and group completion must preserve valid raw streams');
     assert.match(gallery, /selectChatCompletionContent\(data\)/, 'gallery completion must preserve a valid raw stream');
-    assert.ok((main.match(/characterDelayMs:\s*30/g) || []).length >= 2);
+    assert.ok((main.match(/characterDelayMs:\s*50/g) || []).length >= 2);
     assert.ok((main.match(/maxCharactersPerFrame:\s*1/g) || []).length >= 2);
-    assert.match(gallery, /characterDelayMs:\s*30/);
+    assert.match(gallery, /characterDelayMs:\s*50/);
     assert.match(gallery, /maxCharactersPerFrame:\s*1/);
     assert.match(dialogue, /renderStreamingText\(/);
     assert.match(main, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidChatLog/);

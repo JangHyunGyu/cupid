@@ -24,7 +24,7 @@ function advanceSteadyReveal(shown, total, elapsedMs, carryMs, charMs, frameCap,
     const safeTotal = Math.max(safeShown, Math.floor(Number(total) || 0));
     if (safeShown >= safeTotal) return { shown: safeTotal, carry: 0 };
     const elapsed = Math.max(0, Number(elapsedMs) || 0);
-    const delay = Math.max(1, Number(charMs) || 30);
+    const delay = Math.max(1, Number(charMs) || 50);
     const cap = Math.max(1, Math.floor(Number(frameCap) || 1));
     let bank = elapsed >= 250 ? delay : Math.max(0, Number(carryMs) || 0) + elapsed;
     let step = 0;
@@ -1092,7 +1092,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 return codes.length ? codes : ['normal'];
             })();
             _streamingPreview = GalleryFreeTalkCore.createPacedStreamingPreview({
-                characterDelayMs: 30,
+                characterDelayMs: 50,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.skipTyping === true,
                 onRender: ({ text: previewText, segments: previewSegments }) => {
@@ -1957,7 +1957,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 content: this._zetaFormatText(s.text || '', s.type === 'narration') + ' '
             })).filter(s => s.content.trim())
             : this._parseSegments(text).map(s => ({ ...s, content: this._zetaFormatText(s.content, s.type === 'action') + ' ' }));
-        const speed = 30; // ms per character (게임과 동일)
+        const speed = 50; // ms per character (게임과 동일)
 
         // 각 세그먼트별 DOM 요소를 미리 생성 (지문은 처음부터 포맷 적용)
         const elements = segments.map(seg => {

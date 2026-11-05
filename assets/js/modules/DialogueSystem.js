@@ -17,7 +17,7 @@ function advanceSteadyReveal(shown, total, elapsedMs, carryMs, charMs, frameCap,
     const safeTotal = Math.max(safeShown, Math.floor(Number(total) || 0));
     if (safeShown >= safeTotal) return { shown: safeTotal, carry: 0 };
     const elapsed = Math.max(0, Number(elapsedMs) || 0);
-    const delay = Math.max(1, Number(charMs) || 30);
+    const delay = Math.max(1, Number(charMs) || 50);
     const cap = Math.max(1, Math.floor(Number(frameCap) || 1));
     let bank = elapsed >= 250 ? delay : Math.max(0, Number(carryMs) || 0) + elapsed;
     let step = 0;
@@ -95,10 +95,10 @@ class DialogueSystem {
 
         /**
          * 타이핑 속도 (밀리초 단위)
-         * - 30 = 한 글자당 30ms = 초당 약 33글자
+         * - 50 = 한 글자당 50ms = 초당 약 20글자
          * - 숫자가 작을수록 빠름
          */
-        this.typingSpeed = 30;
+        this.typingSpeed = 50;
 
         /** 엔딩 모드 — 느린 타이핑 + 스킵 불가 */
         this._endingMode = false;

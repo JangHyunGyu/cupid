@@ -2125,7 +2125,7 @@ Latest user: """${excerpt}"""
         const safeTotal = Math.max(safeShown, Math.floor(Number(total) || 0));
         if (safeShown >= safeTotal) return { shown: safeTotal, carry: 0 };
         const elapsed = Math.max(0, Number(elapsedMs) || 0);
-        const delay = Math.max(1, Number(charMs) || 30);
+        const delay = Math.max(1, Number(charMs) || 50);
         const cap = Math.max(1, Math.floor(Number(frameCap) || 1));
         let bank = elapsed >= 250 ? delay : Math.max(0, Number(carryMs) || 0) + elapsed;
         let step = 0;
@@ -2137,7 +2137,7 @@ Latest user: """${excerpt}"""
         return { shown: safeShown + step, carry: bank };
     }
 
-    const STREAMING_CHARACTER_DELAY_MS = 30;
+    const STREAMING_CHARACTER_DELAY_MS = 50;
     const STREAMING_MAX_CHARACTERS_PER_FRAME = 1;
     const STREAMING_IDLE_FLUSH_MS = 0;
 

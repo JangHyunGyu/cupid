@@ -1683,7 +1683,7 @@ class FreeTalkSystem {
             let _streamingStarted = false;
             this._streamedExpressionKeys = new Set();
             _streamingPreview = CupidFreeTalkCore.createPacedStreamingPreview({
-                characterDelayMs: 30,
+                characterDelayMs: 50,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.dialogueSystem.skipTyping === true,
                 onRender: ({ text: previewText, segments: previewSegments }) => {
@@ -2512,7 +2512,7 @@ class FreeTalkSystem {
             this._streamedExpressionKeys = new Set();
             let previewSpeaker = this.groupParticipants[0] || null;
             streamingPreview = CupidFreeTalkCore.createPacedStreamingPreview({
-                characterDelayMs: 30,
+                characterDelayMs: 50,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.dialogueSystem.skipTyping === true,
                 onRender: ({ text: previewText, segments: previewSegments }) => {

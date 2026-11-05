@@ -10,25 +10,25 @@ for (const file of files) {
   const sandbox = {};
   vm.runInNewContext(source.slice(start, end) + '\nglobalThis.step = advanceSteadyReveal;', sandbox);
   const step = sandbox.step;
-  test(`${file}: 60, 120 and 144 Hz keep the same 30 ms cadence`, () => {
+  test(`${file}: 60, 120 and 144 Hz keep the same 50 ms cadence`, () => {
     const counts = [60, 120, 144].map(fps => {
       let state = { shown: 0, carry: 0 };
       for (let i = 0; i < fps * 3; i++) {
-        const next = step(state.shown, 1000, 1000 / fps, state.carry, 30, 1, 0);
+        const next = step(state.shown, 1000, 1000 / fps, state.carry, 50, 1, 0);
         assert.ok(next.shown - state.shown <= 1);
         state = next;
       }
-      assert.ok(state.shown >= 99 && state.shown <= 100, `${fps} Hz: ${state.shown}`);
+      assert.ok(state.shown >= 59 && state.shown <= 60, `${fps} Hz: ${state.shown}`);
       return state.shown;
     });
     assert.ok(Math.max(...counts) - Math.min(...counts) <= 1);
   });
   test(`${file}: a long stall never dumps the rest or carries a catch-up burst`, () => {
-    const stalled = step(5, 100, 2000, 20, 30, 1, 1000);
+    const stalled = step(5, 100, 2000, 20, 50, 1, 1000);
     assert.equal(stalled.shown, 6);
     assert.equal(stalled.carry, 0);
-    assert.equal(step(stalled.shown, 100, 8, stalled.carry, 30, 1, 0).shown, 6);
-    assert.equal(step(100, 100, 2000, 20, 30, 1, 0).carry, 0);
+    assert.equal(step(stalled.shown, 100, 8, stalled.carry, 50, 1, 0).shown, 6);
+    assert.equal(step(100, 100, 2000, 20, 50, 1, 0).carry, 0);
   });
 }
 
@@ -48,7 +48,7 @@ test('short packets buffer briefly, refill without bursts, and final drains at t
   assert.equal(renders.length, 0, 'initial packets are buffered before reveal');
   pump(24);
   assert.equal(renders.at(-1).text, 'abcde');
-  assert.ok(renders[0].at >= 320 && renders[0].at <= 368);
+  assert.ok(renders[0].at >= 320 && renders[0].at <= 384);
   const count = renders.length;
   pacer.update('abcdefghij');
   pump(18);
@@ -60,7 +60,7 @@ test('short packets buffer briefly, refill without bursts, and final drains at t
   renders.length = 0;
   pacer.update('xyz');
   const drained = pacer.drain();
-  pump(10);
+  pump(12);
   await drained;
   assert.equal(renders.at(-1).text, 'xyz');
   assert.deepEqual(renders.map(r => r.text.length), [1, 2, 3]);
