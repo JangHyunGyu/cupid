@@ -6692,18 +6692,18 @@
     "etag": "57f05a8053a114427d0074e983bdab03"
   },
   "assets/images/characters/dain_undressed_shy.png": {
-    "sourceHash": "731463aa5ca14aab2a237c545c0a5b1b394bd032066ce17fccccd94488444896",
-    "key": "images/2e19e657dfefe43a43217842bc092efdcac85cbf0ab816338e728198bd5886b4.png",
-    "sha256": "2e19e657dfefe43a43217842bc092efdcac85cbf0ab816338e728198bd5886b4",
-    "size": 876908,
-    "etag": "edbee031fcc0cc47a4b7eb03c226dcb9"
+    "sourceHash": "f877c6507c7a51e1becdcf59ac8578c36529260c9ea8385ab5985ba1ea79431d",
+    "key": "images/9f7a910460bf63230d50eb7c84fe476473ca8fff4293eefa1c2943b16124f3d9.png",
+    "sha256": "9f7a910460bf63230d50eb7c84fe476473ca8fff4293eefa1c2943b16124f3d9",
+    "size": 882713,
+    "etag": "0f2762750c5a7f89e11152320fedb765"
   },
   "assets/images/characters/dain_undressed_shy.webp": {
-    "sourceHash": "17916a87eeeff8b87002836384192c2a342868ba01c07a41a08417a8e90773ea",
-    "key": "images/7fe6f6bb4b8564ee984505a883df447426f176fbf7acef495c7366638f9e53e4.webp",
-    "sha256": "7fe6f6bb4b8564ee984505a883df447426f176fbf7acef495c7366638f9e53e4",
-    "size": 547980,
-    "etag": "6500f9fb31a67858a8c0107cb63b6537"
+    "sourceHash": "cc58bc3b17bfdd0fb624329609e30f9e04b1d3a046b8e6add3b668e84742447d",
+    "key": "images/13414cac5207df4d58dfb4cdef6fe178a04678a478b13a4831fabc1fbb78f8e8.webp",
+    "sha256": "13414cac5207df4d58dfb4cdef6fe178a04678a478b13a4831fabc1fbb78f8e8",
+    "size": 543464,
+    "etag": "26e8e94446efe0752fee243706ee22ad"
   },
   "assets/images/characters/dain_dominant_aroused.png": {
     "sourceHash": "fc0c7842bb6a20cc2f585bbfc4ad90706e1f83c8472a31318798b960a9ce2e84",
@@ -7432,5 +7432,47 @@
     "sha256": "95ada4dcbfad34d573560cd394f3568af8dfa3c780c7287950fe2e88146221e2",
     "size": 695066,
     "etag": "2b81edb11de4e937878107392ae6083b"
+  },
+  "assets/images/characters/dain_undressed_shy_02.png": {
+    "sourceHash": "393b02ef4de2332d900df18a1ea47661474ef071267b9d513f07570d7dcc1857",
+    "key": "images/ea45d079fb59498470549e8607658f935a447fde02637cf3cd8dc82fbec6ba62.png",
+    "sha256": "ea45d079fb59498470549e8607658f935a447fde02637cf3cd8dc82fbec6ba62",
+    "size": 906269,
+    "etag": "abf44b2117398d4a25024ba5f0812bfd"
+  },
+  "assets/images/characters/dain_undressed_shy_02.webp": {
+    "sourceHash": "2785027af4d3c48abf3f44a20e27807801b11709217cca13b5225e48393ef051",
+    "key": "images/d81ea1169f5eecdf3908d22938f8246eeba5e1a3fe354741de1b257b686cc90a.webp",
+    "sha256": "d81ea1169f5eecdf3908d22938f8246eeba5e1a3fe354741de1b257b686cc90a",
+    "size": 555566,
+    "etag": "75e2be9e0a0eae53c3693b996393e44e"
+  },
+  "assets/images/characters/dain_undressed_shy_03.png": {
+    "sourceHash": "7081fce1a93e4e793fd15e9e025c04429dabfe505a444f4b05eeb673e876ceca",
+    "key": "images/ad7c2dab3adb9abab2ba64337ebb317960a6e98e89e77b37e7331639848cd1b2.png",
+    "sha256": "ad7c2dab3adb9abab2ba64337ebb317960a6e98e89e77b37e7331639848cd1b2",
+    "size": 871612,
+    "etag": "9353fb2eb1d37ade7d3a04d8074ab884"
+  },
+  "assets/images/characters/dain_undressed_shy_03.webp": {
+    "sourceHash": "e6fec0189fb33ac60a14fbbfbb62257763c5f13e303b76a7400136ff90ba6c11",
+    "key": "images/ab53e672ed18194143b1fd2b7fd190cf9eec02897df3fce59e7f7dccfcc85b53.webp",
+    "sha256": "ab53e672ed18194143b1fd2b7fd190cf9eec02897df3fce59e7f7dccfcc85b53",
+    "size": 540252,
+    "etag": "c7d35c1d7d54d4dc1b3cdbbd2d623d97"
+  },
+  "assets/images/characters/dain_undressed_shy_04.png": {
+    "sourceHash": "7303bc1e55e883511fd9678b7ae4acafcda2e408edc6e2c2d0c25454de7ede75",
+    "key": "images/e0b1c5f6bbf2b48f4dfba5d43d02b34870f4e46e03ee5b68d5dd5ee3fab4aca4.png",
+    "sha256": "e0b1c5f6bbf2b48f4dfba5d43d02b34870f4e46e03ee5b68d5dd5ee3fab4aca4",
+    "size": 890095,
+    "etag": "34c309e03b5a48481393ab4d3c46d1c8"
+  },
+  "assets/images/characters/dain_undressed_shy_04.webp": {
+    "sourceHash": "64873b501531be0d2b2ea1955238849e0e308bcfbe42cfb80bae20887ac90c5e",
+    "key": "images/50d03ad9dd44910aa9256c065ca422fb67c24f57e2a07b096c448a77ac44aa0d.webp",
+    "sha256": "50d03ad9dd44910aa9256c065ca422fb67c24f57e2a07b096c448a77ac44aa0d",
+    "size": 538118,
+    "etag": "ac057d916b0ab15f5b2e83e64c8b4041"
   }
 }

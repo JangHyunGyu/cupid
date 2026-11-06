@@ -2049,21 +2049,78 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_undressed_shy": {
-    "version": "6aa28c8822eabdf6f4acfaeb",
+    "version": "b249c34a01be5095dd71b51c",
     "files": [
       {
         "path": "assets/images/characters/dain_undressed_shy.png",
-        "key": "images/2e19e657dfefe43a43217842bc092efdcac85cbf0ab816338e728198bd5886b4.png",
-        "sha256": "2e19e657dfefe43a43217842bc092efdcac85cbf0ab816338e728198bd5886b4",
-        "etag": "edbee031fcc0cc47a4b7eb03c226dcb9",
-        "size": 876908
+        "key": "images/9f7a910460bf63230d50eb7c84fe476473ca8fff4293eefa1c2943b16124f3d9.png",
+        "sha256": "9f7a910460bf63230d50eb7c84fe476473ca8fff4293eefa1c2943b16124f3d9",
+        "etag": "0f2762750c5a7f89e11152320fedb765",
+        "size": 882713
       },
       {
         "path": "assets/images/characters/dain_undressed_shy.webp",
-        "key": "images/7fe6f6bb4b8564ee984505a883df447426f176fbf7acef495c7366638f9e53e4.webp",
-        "sha256": "7fe6f6bb4b8564ee984505a883df447426f176fbf7acef495c7366638f9e53e4",
-        "etag": "6500f9fb31a67858a8c0107cb63b6537",
-        "size": 547980
+        "key": "images/13414cac5207df4d58dfb4cdef6fe178a04678a478b13a4831fabc1fbb78f8e8.webp",
+        "sha256": "13414cac5207df4d58dfb4cdef6fe178a04678a478b13a4831fabc1fbb78f8e8",
+        "etag": "26e8e94446efe0752fee243706ee22ad",
+        "size": 543464
+      }
+    ]
+  },
+  "characters/dain_undressed_shy_02": {
+    "version": "fd9dccfe972dd76fad79c477",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_undressed_shy_02.png",
+        "key": "images/ea45d079fb59498470549e8607658f935a447fde02637cf3cd8dc82fbec6ba62.png",
+        "sha256": "ea45d079fb59498470549e8607658f935a447fde02637cf3cd8dc82fbec6ba62",
+        "etag": "abf44b2117398d4a25024ba5f0812bfd",
+        "size": 906269
+      },
+      {
+        "path": "assets/images/characters/dain_undressed_shy_02.webp",
+        "key": "images/d81ea1169f5eecdf3908d22938f8246eeba5e1a3fe354741de1b257b686cc90a.webp",
+        "sha256": "d81ea1169f5eecdf3908d22938f8246eeba5e1a3fe354741de1b257b686cc90a",
+        "etag": "75e2be9e0a0eae53c3693b996393e44e",
+        "size": 555566
+      }
+    ]
+  },
+  "characters/dain_undressed_shy_03": {
+    "version": "b7b8557cd40915a1501a2824",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_undressed_shy_03.png",
+        "key": "images/ad7c2dab3adb9abab2ba64337ebb317960a6e98e89e77b37e7331639848cd1b2.png",
+        "sha256": "ad7c2dab3adb9abab2ba64337ebb317960a6e98e89e77b37e7331639848cd1b2",
+        "etag": "9353fb2eb1d37ade7d3a04d8074ab884",
+        "size": 871612
+      },
+      {
+        "path": "assets/images/characters/dain_undressed_shy_03.webp",
+        "key": "images/ab53e672ed18194143b1fd2b7fd190cf9eec02897df3fce59e7f7dccfcc85b53.webp",
+        "sha256": "ab53e672ed18194143b1fd2b7fd190cf9eec02897df3fce59e7f7dccfcc85b53",
+        "etag": "c7d35c1d7d54d4dc1b3cdbbd2d623d97",
+        "size": 540252
+      }
+    ]
+  },
+  "characters/dain_undressed_shy_04": {
+    "version": "fab26ffc052dafb6a8187ecd",
+    "files": [
+      {
+        "path": "assets/images/characters/dain_undressed_shy_04.png",
+        "key": "images/e0b1c5f6bbf2b48f4dfba5d43d02b34870f4e46e03ee5b68d5dd5ee3fab4aca4.png",
+        "sha256": "e0b1c5f6bbf2b48f4dfba5d43d02b34870f4e46e03ee5b68d5dd5ee3fab4aca4",
+        "etag": "34c309e03b5a48481393ab4d3c46d1c8",
+        "size": 890095
+      },
+      {
+        "path": "assets/images/characters/dain_undressed_shy_04.webp",
+        "key": "images/50d03ad9dd44910aa9256c065ca422fb67c24f57e2a07b096c448a77ac44aa0d.webp",
+        "sha256": "50d03ad9dd44910aa9256c065ca422fb67c24f57e2a07b096c448a77ac44aa0d",
+        "etag": "ac057d916b0ab15f5b2e83e64c8b4041",
+        "size": 538118
       }
     ]
   },

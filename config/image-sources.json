@@ -10597,14 +10597,14 @@
       "backupKey": "objects/sources/ec2c94fba9f375543d2c661975d552a545a91998526b2d6dc1edb7332793330f.webp"
     },
     "assets/characters/dain/expressions/undressed_shy/01/sprite.png": {
-      "sha256": "731463aa5ca14aab2a237c545c0a5b1b394bd032066ce17fccccd94488444896",
-      "bytes": 876945,
-      "backupKey": "objects/sources/731463aa5ca14aab2a237c545c0a5b1b394bd032066ce17fccccd94488444896.png"
+      "sha256": "f877c6507c7a51e1becdcf59ac8578c36529260c9ea8385ab5985ba1ea79431d",
+      "bytes": 882750,
+      "backupKey": "objects/sources/f877c6507c7a51e1becdcf59ac8578c36529260c9ea8385ab5985ba1ea79431d.png"
     },
     "assets/characters/dain/expressions/undressed_shy/01/sprite.webp": {
-      "sha256": "17916a87eeeff8b87002836384192c2a342868ba01c07a41a08417a8e90773ea",
-      "bytes": 548017,
-      "backupKey": "objects/sources/17916a87eeeff8b87002836384192c2a342868ba01c07a41a08417a8e90773ea.webp"
+      "sha256": "cc58bc3b17bfdd0fb624329609e30f9e04b1d3a046b8e6add3b668e84742447d",
+      "bytes": 543501,
+      "backupKey": "objects/sources/cc58bc3b17bfdd0fb624329609e30f9e04b1d3a046b8e6add3b668e84742447d.webp"
     },
     "assets/characters/haeun/expressions/begging_lust/01/sprite.png": {
       "sha256": "35f8ad678f4e3497b9e4fddee91691530e72bf0e1a4ff84c02f398191c4bd0f6",
@@ -12035,6 +12035,36 @@
       "sha256": "af61ceb6e5a170f9c808ffa89dd8411a413f28f85fdd267f08765b93b4b53c2a",
       "bytes": 182996,
       "backupKey": "objects/sources/af61ceb6e5a170f9c808ffa89dd8411a413f28f85fdd267f08765b93b4b53c2a.webp"
+    },
+    "assets/characters/dain/expressions/undressed_shy/02/sprite.png": {
+      "sha256": "393b02ef4de2332d900df18a1ea47661474ef071267b9d513f07570d7dcc1857",
+      "bytes": 906306,
+      "backupKey": "objects/sources/393b02ef4de2332d900df18a1ea47661474ef071267b9d513f07570d7dcc1857.png"
+    },
+    "assets/characters/dain/expressions/undressed_shy/02/sprite.webp": {
+      "sha256": "2785027af4d3c48abf3f44a20e27807801b11709217cca13b5225e48393ef051",
+      "bytes": 555603,
+      "backupKey": "objects/sources/2785027af4d3c48abf3f44a20e27807801b11709217cca13b5225e48393ef051.webp"
+    },
+    "assets/characters/dain/expressions/undressed_shy/03/sprite.png": {
+      "sha256": "7081fce1a93e4e793fd15e9e025c04429dabfe505a444f4b05eeb673e876ceca",
+      "bytes": 871649,
+      "backupKey": "objects/sources/7081fce1a93e4e793fd15e9e025c04429dabfe505a444f4b05eeb673e876ceca.png"
+    },
+    "assets/characters/dain/expressions/undressed_shy/03/sprite.webp": {
+      "sha256": "e6fec0189fb33ac60a14fbbfbb62257763c5f13e303b76a7400136ff90ba6c11",
+      "bytes": 540289,
+      "backupKey": "objects/sources/e6fec0189fb33ac60a14fbbfbb62257763c5f13e303b76a7400136ff90ba6c11.webp"
+    },
+    "assets/characters/dain/expressions/undressed_shy/04/sprite.png": {
+      "sha256": "7303bc1e55e883511fd9678b7ae4acafcda2e408edc6e2c2d0c25454de7ede75",
+      "bytes": 890132,
+      "backupKey": "objects/sources/7303bc1e55e883511fd9678b7ae4acafcda2e408edc6e2c2d0c25454de7ede75.png"
+    },
+    "assets/characters/dain/expressions/undressed_shy/04/sprite.webp": {
+      "sha256": "64873b501531be0d2b2ea1955238849e0e308bcfbe42cfb80bae20887ac90c5e",
+      "bytes": 538155,
+      "backupKey": "objects/sources/64873b501531be0d2b2ea1955238849e0e308bcfbe42cfb80bae20887ac90c5e.webp"
     }
   }
 }
