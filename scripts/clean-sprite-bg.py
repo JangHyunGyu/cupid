@@ -368,6 +368,32 @@ def remove_trapped_hair_pockets(rgba, y_limit_ratio=0.78, protect_white_garments
         if dark_ratio >= 0.70:
             pocket_mask[y0:y1, x0:x1] |= sub_c
 
+    # 턱·목·손가락 사이에 갇힌 순백색(#FFFFFF, cmin >= 252, sat <= 3 비율 90% 이상) 삼각형 배경 포켓(예: 턱에 손가락을 댄 포즈) 제거
+    neck_finger_zone = (yy >= int(0.24 * h)) & (yy <= int(0.34 * h)) & (xx >= int(0.32 * w)) & (xx <= int(0.68 * w))
+    nf_cand = neck_finger_zone & (a >= 180) & (cmin >= 210) & (sat <= 18) & ((r - b) <= 14)
+    nf_lbl, nf_num = ndimage.label(nf_cand)
+    for nf_idx, nf_sl in enumerate(ndimage.find_objects(nf_lbl), 1):
+        if nf_sl is None:
+            continue
+        ny0, ny1 = max(0, nf_sl[0].start - 4), min(h, nf_sl[0].stop + 4)
+        nx0, nx1 = max(0, nf_sl[1].start - 4), min(w, nf_sl[1].stop + 4)
+        nf_sub = (nf_lbl[ny0:ny1, nx0:nx1] == nf_idx)
+        nf_area = int(nf_sub.sum())
+        if nf_area < int(800 * (w / 1152.0) ** 2) or nf_area > int(4200 * (w / 1152.0) ** 2):
+            continue
+        nf_cmin = cmin[ny0:ny1, nx0:nx1][nf_sub]
+        nf_sat = sat[ny0:ny1, nx0:nx1][nf_sub]
+        nf_pure = float(((nf_cmin >= 252) & (nf_sat <= 3)).mean())
+        if nf_pure < 0.88:
+            continue
+        nf_border = ndimage.binary_dilation(nf_sub, iterations=4) & (~nf_sub) & (a[ny0:ny1, nx0:nx1] >= 150)
+        if nf_border.sum() == 0:
+            continue
+        nf_skin = float(warm_skin[ny0:ny1, nx0:nx1][nf_border].mean())
+        nf_dark = float((lum[ny0:ny1, nx0:nx1][nf_border] < 90).mean())
+        if nf_skin >= 0.40 and nf_dark >= 0.20:
+            pocket_mask[ny0:ny1, nx0:nx1] |= nf_sub
+
     if pocket_mask.any():
         a[pocket_mask] = 0.0
         rim = ndimage.binary_dilation(pocket_mask, iterations=3) & outer_hair_zone & (sat <= 28) & ((r - b) <= 18)
