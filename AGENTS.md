@@ -47,6 +47,12 @@
 - Higgsfield MCP를 사용할 수 없거나 생성이 실패하면 다른 이미지 생성기로 임의 대체하지 말고 사용자에게 상황을 알린다.
 - 프로젝트용 생성 이미지는 기존 캐릭터 외형과 화풍을 참조해 일관성을 확인하고, 최종 파일을 저장소 안에 저장한 뒤 실제 시나리오 또는 갤러리 연결까지 검증한다.
 
+## Character Sprite Background Removal & Hole Recovery (Permanent, 2026-11-06)
+- 캐릭터 스프라이트 배경 제거, 잘못 깎인 내부 반투명 침식 구멍 복원, 머리카락·손가락 사이 갇힌 흰 배경 포켓 제거, 외곽 부유 노이즈 섬 정리, 테두리 흰끼(할로) 디프린징은 항상 SOTA 오픈소스 파이프라인이 구현된 `D:\workspace\harem\scripts\clean-sprite-bg.py`를 사용한다.
+- 단순 밝기 임계값(`RGB >= 250`) 플러드필이나 직선 사각형 좌표 잘라내기로 배경을 지우거나 구멍을 메우지 않는다.
+- 표준 SOTA 처리 순서는 `predict_sota_alpha(birefnet-general + isnet-anime 코어 보호 앙상블) -> restore_interior_erosion(RGB가 온전한 내부 반투명 침식 구멍 복원 및 실제 팔·목 사이 투명 배경 공간 보존) -> remove_trapped_hair_pockets(연결 요소 기반 머리카락·손가락 사이 갇힌 흰 배경 포켓 제거) -> clean_sprite_defringe & defringe_with_pymatting(다단계 부유 노이즈 섬 제거 + EDT 코어 색상 참조 + PyMatting estimate_foreground_ml 전경 역산 디프린징) -> 원본 해상도(width x height) 보존 및 시각·정량 검증`을 따른다.
+- `cupid`와 `harem`의 큐피드 방(`mixed_5`) 캐릭터 스프라이트는 평문 SHA-256과 R2 스토리지를 동기화하여 관리한다.
+
 ## Gallery Asset Registration (Permanent)
 - 공략 캐릭터의 새 표정 이미지는 실제 장면 연결과 함께 지원하는 모든 언어(`ko`, `en`, `ja`, `es`, `fr`, `de`, `pt`, `zh`)의 갤러리 표정 목록과 이름에 등록한다.
 - 새 이벤트·엔딩 CG는 해금 장면, `REGISTERED_CG_IDS`, 모든 언어의 갤러리 이름·설명·해금 조건, 실제 이미지 경로를 한 변경에서 맞춘다.
