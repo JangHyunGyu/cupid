@@ -449,6 +449,17 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         lovestruck: 'assets/images/characters/seyoun_lovestruck.png',
         kiss: 'assets/images/characters/seyoun_kiss.png',
         afterglow: 'assets/images/characters/seyoun_afterglow.png',
+        enduring: 'assets/images/characters/seyoun_enduring.png',
+        oral_service: 'assets/images/characters/seyoun_oral_service.png',
+        undressed_shy: 'assets/images/characters/seyoun_undressed_shy.png',
+        dominant_aroused: 'assets/images/characters/seyoun_dominant_aroused.png',
+        messy_afterglow: 'assets/images/characters/seyoun_messy_afterglow.png',
+        begging_lust: 'assets/images/characters/seyoun_begging_lust.png',
+        betrayed: 'assets/images/characters/seyoun_betrayed.png',
+        combat_ready: 'assets/images/characters/seyoun_combat_ready.png',
+        groggy: 'assets/images/characters/seyoun_groggy.png',
+        scheming: 'assets/images/characters/seyoun_scheming.png',
+        touched: 'assets/images/characters/seyoun_touched.png',
         exhausted: 'assets/images/characters/seyoun_exhausted.png'
     }),
     Yuna: Object.freeze({
@@ -499,6 +510,17 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         lovestruck: 'assets/images/characters/yuna_lovestruck.png',
         kiss: 'assets/images/characters/yuna_kiss.png',
         afterglow: 'assets/images/characters/yuna_afterglow.png',
+        enduring: 'assets/images/characters/yuna_enduring.png',
+        oral_service: 'assets/images/characters/yuna_oral_service.png',
+        undressed_shy: 'assets/images/characters/yuna_undressed_shy.png',
+        dominant_aroused: 'assets/images/characters/yuna_dominant_aroused.png',
+        messy_afterglow: 'assets/images/characters/yuna_messy_afterglow.png',
+        begging_lust: 'assets/images/characters/yuna_begging_lust.png',
+        betrayed: 'assets/images/characters/yuna_betrayed.png',
+        combat_ready: 'assets/images/characters/yuna_combat_ready.png',
+        groggy: 'assets/images/characters/yuna_groggy.png',
+        scheming: 'assets/images/characters/yuna_scheming.png',
+        touched: 'assets/images/characters/yuna_touched.png',
         exhausted: 'assets/images/characters/yuna_exhausted.png'
     }),
     Dain: Object.freeze({
@@ -549,6 +571,17 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         lovestruck: 'assets/images/characters/dain_lovestruck.png',
         kiss: 'assets/images/characters/dain_kiss.png',
         afterglow: 'assets/images/characters/dain_afterglow.png',
+        enduring: 'assets/images/characters/dain_enduring.png',
+        oral_service: 'assets/images/characters/dain_oral_service.png',
+        undressed_shy: 'assets/images/characters/dain_undressed_shy.png',
+        dominant_aroused: 'assets/images/characters/dain_dominant_aroused.png',
+        messy_afterglow: 'assets/images/characters/dain_messy_afterglow.png',
+        begging_lust: 'assets/images/characters/dain_begging_lust.png',
+        betrayed: 'assets/images/characters/dain_betrayed.png',
+        combat_ready: 'assets/images/characters/dain_combat_ready.png',
+        groggy: 'assets/images/characters/dain_groggy.png',
+        scheming: 'assets/images/characters/dain_scheming.png',
+        touched: 'assets/images/characters/dain_touched.png',
         exhausted: 'assets/images/characters/dain_exhausted.png'
     }),
     Teacher: Object.freeze({
@@ -599,6 +632,17 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         lovestruck: 'assets/images/characters/teacher_lovestruck.png',
         kiss: 'assets/images/characters/teacher_kiss.png',
         afterglow: 'assets/images/characters/teacher_afterglow.png',
+        enduring: 'assets/images/characters/teacher_enduring.png',
+        oral_service: 'assets/images/characters/teacher_oral_service.png',
+        undressed_shy: 'assets/images/characters/teacher_undressed_shy.png',
+        dominant_aroused: 'assets/images/characters/teacher_dominant_aroused.png',
+        messy_afterglow: 'assets/images/characters/teacher_messy_afterglow.png',
+        begging_lust: 'assets/images/characters/teacher_begging_lust.png',
+        betrayed: 'assets/images/characters/teacher_betrayed.png',
+        combat_ready: 'assets/images/characters/teacher_combat_ready.png',
+        groggy: 'assets/images/characters/teacher_groggy.png',
+        scheming: 'assets/images/characters/teacher_scheming.png',
+        touched: 'assets/images/characters/teacher_touched.png',
         exhausted: 'assets/images/characters/teacher_exhausted.png'
     }),
     Nurse: Object.freeze({
@@ -649,6 +693,17 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         lovestruck: 'assets/images/characters/nurse_lovestruck.png',
         kiss: 'assets/images/characters/nurse_kiss.png',
         afterglow: 'assets/images/characters/nurse_afterglow.png',
+        enduring: 'assets/images/characters/nurse_enduring.png',
+        oral_service: 'assets/images/characters/nurse_oral_service.png',
+        undressed_shy: 'assets/images/characters/nurse_undressed_shy.png',
+        dominant_aroused: 'assets/images/characters/nurse_dominant_aroused.png',
+        messy_afterglow: 'assets/images/characters/nurse_messy_afterglow.png',
+        begging_lust: 'assets/images/characters/nurse_begging_lust.png',
+        betrayed: 'assets/images/characters/nurse_betrayed.png',
+        combat_ready: 'assets/images/characters/nurse_combat_ready.png',
+        groggy: 'assets/images/characters/nurse_groggy.png',
+        scheming: 'assets/images/characters/nurse_scheming.png',
+        touched: 'assets/images/characters/nurse_touched.png',
         exhausted: 'assets/images/characters/nurse_exhausted.png'
     }),
     Haeun: Object.freeze({
@@ -698,6 +753,17 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         lovestruck: 'assets/images/characters/haeun_lovestruck.png',
         kiss: 'assets/images/characters/haeun_kiss.png',
         afterglow: 'assets/images/characters/haeun_afterglow.png',
+        enduring: 'assets/images/characters/haeun_enduring.png',
+        oral_service: 'assets/images/characters/haeun_oral_service.png',
+        undressed_shy: 'assets/images/characters/haeun_undressed_shy.png',
+        dominant_aroused: 'assets/images/characters/haeun_dominant_aroused.png',
+        messy_afterglow: 'assets/images/characters/haeun_messy_afterglow.png',
+        begging_lust: 'assets/images/characters/haeun_begging_lust.png',
+        betrayed: 'assets/images/characters/haeun_betrayed.png',
+        combat_ready: 'assets/images/characters/haeun_combat_ready.png',
+        groggy: 'assets/images/characters/haeun_groggy.png',
+        scheming: 'assets/images/characters/haeun_scheming.png',
+        touched: 'assets/images/characters/haeun_touched.png',
         exhausted: 'assets/images/characters/haeun_exhausted.png'
     }),
     Minsu: Object.freeze({
@@ -742,6 +808,17 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         lovestruck: 'assets/images/characters/minsu_lovestruck.png',
         kiss: 'assets/images/characters/minsu_kiss.png',
         afterglow: 'assets/images/characters/minsu_afterglow.png',
+        enduring: 'assets/images/characters/minsu_enduring.png',
+        oral_service: 'assets/images/characters/minsu_oral_service.png',
+        undressed_shy: 'assets/images/characters/minsu_undressed_shy.png',
+        dominant_aroused: 'assets/images/characters/minsu_dominant_aroused.png',
+        messy_afterglow: 'assets/images/characters/minsu_messy_afterglow.png',
+        begging_lust: 'assets/images/characters/minsu_begging_lust.png',
+        betrayed: 'assets/images/characters/minsu_betrayed.png',
+        combat_ready: 'assets/images/characters/minsu_combat_ready.png',
+        groggy: 'assets/images/characters/minsu_groggy.png',
+        scheming: 'assets/images/characters/minsu_scheming.png',
+        touched: 'assets/images/characters/minsu_touched.png',
         cry: 'assets/images/characters/minsu_cry.png',
         pain: 'assets/images/characters/minsu_pain.png',
         climax: 'assets/images/characters/minsu_climax.png',
@@ -2977,5 +3054,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.91';
+const PROMPT_VERSION = '2.7.92';
 window.PROMPT_VERSION = PROMPT_VERSION;

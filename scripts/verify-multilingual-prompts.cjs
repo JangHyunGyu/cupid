@@ -29,13 +29,13 @@ context.FLAG_MEMORIES = context.window.FLAG_MEMORIES;
 
 const languages = ['en', 'es', 'ja', 'fr', 'de', 'pt', 'zh'];
 const stablePromptBudgets = {
-    en: { main: 9380, gallery: 8810 },
-    es: { main: 9510, gallery: 9160 },
-    ja: { main: 6960, gallery: 5960 },
-    fr: { main: 9620, gallery: 9440 },
-    de: { main: 9610, gallery: 9320 },
-    pt: { main: 9360, gallery: 8960 },
-    zh: { main: 7360, gallery: 7360 }
+    en: { main: 9530, gallery: 8960 },
+    es: { main: 9660, gallery: 9310 },
+    ja: { main: 7110, gallery: 6110 },
+    fr: { main: 9770, gallery: 9590 },
+    de: { main: 9760, gallery: 9470 },
+    pt: { main: 9510, gallery: 9110 },
+    zh: { main: 7510, gallery: 7510 }
 };
 const unnamedPlayerGuardByLanguage = {
     en: 'saved name when present',

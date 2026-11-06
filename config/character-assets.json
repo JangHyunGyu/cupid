@@ -11388,6 +11388,2085 @@
           "bytes": 6564587
         }
       }
+    },
+    {
+      "id": "seoyeon/expressions/enduring/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "enduring",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/enduring/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_enduring.png",
+            "assets/characters/seoyeon/expressions/enduring/01/sprite.png"
+          ],
+          "sha256": "db771b5a7004a4a563e5296e8a93aab2562c436f84327420e73a2cc27d042ad4",
+          "bytes": 1482689
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_enduring.webp",
+            "assets/characters/seoyeon/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "ad2afbb90a06272890f31df596e07bf3d26e83881b21a9d6cdbaf049983a61de",
+          "bytes": 165145
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/oral_service/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "oral_service",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/oral_service/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_oral_service.png",
+            "assets/characters/seoyeon/expressions/oral_service/01/sprite.png"
+          ],
+          "sha256": "3a4964e76cc5b23ee4d2cafd03090475d5bd9729f551b7169e4392aec279c230",
+          "bytes": 1299663
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_oral_service.webp",
+            "assets/characters/seoyeon/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "4d126f2a00846e55bc928319738fff93f99cf33a2e0f77056d43e8df80b3ebc8",
+          "bytes": 147673
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/undressed_shy/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/undressed_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_undressed_shy.png",
+            "assets/characters/seoyeon/expressions/undressed_shy/01/sprite.png"
+          ],
+          "sha256": "8485da0197f020fdb8dda4cead2615ae58f1fd40429f98a18ee2ae25439f5f90",
+          "bytes": 1131644
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_undressed_shy.webp",
+            "assets/characters/seoyeon/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "50fc6d3ec62a853c59c677926d80f585b8138adf82d34b5d5713ecffd1c0ca28",
+          "bytes": 153055
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/dominant_aroused/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/dominant_aroused/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dominant_aroused.png",
+            "assets/characters/seoyeon/expressions/dominant_aroused/01/sprite.png"
+          ],
+          "sha256": "4718a802804234820070037631fc63fa0b5ba35e04f579d733ad9b7213f5d53c",
+          "bytes": 1484543
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_dominant_aroused.webp",
+            "assets/characters/seoyeon/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "280e7087b9ead257bf3e93b964d78734b1ff9418a914e29f71534cba7353d69c",
+          "bytes": 169075
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/messy_afterglow/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_messy_afterglow.png",
+            "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.png"
+          ],
+          "sha256": "6f0a9a4aace75b7b3a99a6b74fd8e02f30ced601bbf286aef26183d91a0eb37f",
+          "bytes": 1119588
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_messy_afterglow.webp",
+            "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "50b1670ce7df41deb8bb3be5e2696e4a46259c8f47c1aec84958550add61327e",
+          "bytes": 160217
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/begging_lust/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "begging_lust",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/begging_lust/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_begging_lust.png",
+            "assets/characters/seoyeon/expressions/begging_lust/01/sprite.png"
+          ],
+          "sha256": "e49d9400faf0f92df83cede040f0d27f084ed5cd9546cb3205bbc9ae0314e73b",
+          "bytes": 1332499
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_begging_lust.webp",
+            "assets/characters/seoyeon/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "97e3d91a0bb0d48f41e591b3e4444ef924fa15bd6715d39b657ac10f43e496c7",
+          "bytes": 147571
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/betrayed/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "betrayed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/betrayed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_betrayed.png",
+            "assets/characters/seoyeon/expressions/betrayed/01/sprite.png"
+          ],
+          "sha256": "f7ef524ce8d80b77e64e1c401fb81bbb5d0c3f722512e7a847899e0070ae2f39",
+          "bytes": 1294777
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_betrayed.webp",
+            "assets/characters/seoyeon/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "ababfe026dee8a3397ee309a0eb3d2e855d7c0d14b566224d6d8abba7560ae4f",
+          "bytes": 147701
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/combat_ready/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "combat_ready",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/combat_ready/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_combat_ready.png",
+            "assets/characters/seoyeon/expressions/combat_ready/01/sprite.png"
+          ],
+          "sha256": "de176d27eb0386247351a032f0f961922bc0779826ae341f50bd5cc1caa9c0d1",
+          "bytes": 1264154
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_combat_ready.webp",
+            "assets/characters/seoyeon/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "69b664c925b8847c675640c29ae51bbd4fb2b4e346cb5bcce9dc2ae5377fa5c6",
+          "bytes": 135279
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/groggy/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "groggy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/groggy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_groggy.png",
+            "assets/characters/seoyeon/expressions/groggy/01/sprite.png"
+          ],
+          "sha256": "4e403cabc0eadabc6ab77b96ceeead80f94d5aafe89299bcf3a6e975a03fbe63",
+          "bytes": 1292761
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_groggy.webp",
+            "assets/characters/seoyeon/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "ccc2a0d8b78c505644dc904f596e17b8048f3e051762bd888da59cfc2e54b548",
+          "bytes": 145353
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/scheming/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "scheming",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/scheming/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_scheming.png",
+            "assets/characters/seoyeon/expressions/scheming/01/sprite.png"
+          ],
+          "sha256": "351d762bac1ea5af6c94fb4dd318b2560b29180e0bd2741597e3669acb761964",
+          "bytes": 1298826
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_scheming.webp",
+            "assets/characters/seoyeon/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "938bdc314f19ee56aa1ba78ea616315f30b0eea918a67b5eade8ab914f71e44e",
+          "bytes": 148767
+        }
+      }
+    },
+    {
+      "id": "seoyeon/expressions/touched/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "touched",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/seoyeon/expressions/touched/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/seyoun_touched.png",
+            "assets/characters/seoyeon/expressions/touched/01/sprite.png"
+          ],
+          "sha256": "9d4cca9718b3a2bb32343ef3715a3d87fad6547e9fe2d474bb39a867fffd2f30",
+          "bytes": 1268174
+        },
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_touched.webp",
+            "assets/characters/seoyeon/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "a0f1065005c7727381acb24361f03be223be52d59c1ebdb4d8fabc3a7d8882d7",
+          "bytes": 132767
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/enduring/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "enduring",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/enduring/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_enduring.png",
+            "assets/characters/yuna/expressions/enduring/01/sprite.png"
+          ],
+          "sha256": "a141aeb1c7b1e698ed5072b9da5d56e68b46244a6e4bed228463a2728f97faec",
+          "bytes": 1759932
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_enduring.webp",
+            "assets/characters/yuna/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "22ab972bc5f4585b2bb6b6d4b5c8692d3725ea7583536ce571dc70a84747594d",
+          "bytes": 214239
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/oral_service/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "oral_service",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/oral_service/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_oral_service.png",
+            "assets/characters/yuna/expressions/oral_service/01/sprite.png"
+          ],
+          "sha256": "888a570cf25da686efea610a1959534e7dfe3ab460a66c8af1f25d492c770006",
+          "bytes": 1681256
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_oral_service.webp",
+            "assets/characters/yuna/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "6af37923635cb41ac7528ec11f0f17b43124a84d929e5a2a4c9bc6c3f56be29b",
+          "bytes": 197597
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/undressed_shy/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/undressed_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_undressed_shy.png",
+            "assets/characters/yuna/expressions/undressed_shy/01/sprite.png"
+          ],
+          "sha256": "85f2d3ac8df89ab054cceea29fc370a1ce2edf14dba93e366c43de87e46c9623",
+          "bytes": 1624606
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_undressed_shy.webp",
+            "assets/characters/yuna/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "17e1783615df3a2348e347acd2f3ee02528797eca05b1f8701c9da59c9728dd7",
+          "bytes": 188573
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/dominant_aroused/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/dominant_aroused/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_dominant_aroused.png",
+            "assets/characters/yuna/expressions/dominant_aroused/01/sprite.png"
+          ],
+          "sha256": "e8f3b577e4469c147135bdd96186f97802c626d438c95dd17492151c67ec99c3",
+          "bytes": 1676716
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_dominant_aroused.webp",
+            "assets/characters/yuna/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "ffc3456cc5ba71e967159fdeb274f78eb2df4c95eb3b31e7c457b9d0ac2e2eeb",
+          "bytes": 196877
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/messy_afterglow/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/messy_afterglow/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_messy_afterglow.png",
+            "assets/characters/yuna/expressions/messy_afterglow/01/sprite.png"
+          ],
+          "sha256": "ef3211fafa6d8c6c947d2b65e621f40876d878449d3506f06f88dd43e4ffcd03",
+          "bytes": 1589660
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_messy_afterglow.webp",
+            "assets/characters/yuna/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "b1cdbd257e5ae61b973fa267a02990c6058b04488c0a39760826edce6870e6c9",
+          "bytes": 178083
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/begging_lust/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "begging_lust",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/begging_lust/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_begging_lust.png",
+            "assets/characters/yuna/expressions/begging_lust/01/sprite.png"
+          ],
+          "sha256": "a1fb9789e5512a2222f16859844f6b8712f145ebe1b3764b4dfec5b6929300a8",
+          "bytes": 1681942
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_begging_lust.webp",
+            "assets/characters/yuna/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "7a427d628e17c8ab835e6b523148353b865da93e1330e0b0205e7cee87e9b54a",
+          "bytes": 197781
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/betrayed/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "betrayed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/betrayed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_betrayed.png",
+            "assets/characters/yuna/expressions/betrayed/01/sprite.png"
+          ],
+          "sha256": "5e9412c36612ff381ad303e296a361cf1d2329f216cba56282b9d6e544614015",
+          "bytes": 1423207
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_betrayed.webp",
+            "assets/characters/yuna/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "10e4714f75ca6fb7ddd5a34bdac794888140724c21dd6489999457721c7fb0bb",
+          "bytes": 204613
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/combat_ready/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "combat_ready",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/combat_ready/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_combat_ready.png",
+            "assets/characters/yuna/expressions/combat_ready/01/sprite.png"
+          ],
+          "sha256": "25ec17445b581fceb898bb7be41df88cf16d1d1bd5bb9e5e502274d768928e58",
+          "bytes": 1488875
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_combat_ready.webp",
+            "assets/characters/yuna/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "ad1476fbcd28f89d48c24390120ca7b8cb4407ab4a7694690bda05f3ca90fcb5",
+          "bytes": 181599
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/groggy/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "groggy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/groggy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_groggy.png",
+            "assets/characters/yuna/expressions/groggy/01/sprite.png"
+          ],
+          "sha256": "4fe98f594173b291814b4b4ac3cdc8b41769387c7a880331f229d849c55e1245",
+          "bytes": 1423084
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_groggy.webp",
+            "assets/characters/yuna/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "bbdbfdb883215f5076b69146701c3598a5a89ebbc2259216b6fc6086468803b1",
+          "bytes": 202329
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/scheming/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "scheming",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/scheming/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_scheming.png",
+            "assets/characters/yuna/expressions/scheming/01/sprite.png"
+          ],
+          "sha256": "4f9a8e814d6eff748e347f93275ca9ae5326555687cf5bd0b790ff80a05dbbe5",
+          "bytes": 1425834
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_scheming.webp",
+            "assets/characters/yuna/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "206dc2429f03a2a0af24e55817b46243738176cf910b4e0fb49efe702d422b62",
+          "bytes": 205331
+        }
+      }
+    },
+    {
+      "id": "yuna/expressions/touched/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "touched",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/yuna/expressions/touched/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/yuna_touched.png",
+            "assets/characters/yuna/expressions/touched/01/sprite.png"
+          ],
+          "sha256": "ded29312ef8611106cc64313518cd6e8a46b4d918f0793bb9a1c46cddbffd566",
+          "bytes": 1493083
+        },
+        "sprite.webp": {
+          "source": "assets/characters/yuna/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_touched.webp",
+            "assets/characters/yuna/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "09f1386388386acec798a5d9ff88b222b65df640e0baec8e84a8feb355df67e8",
+          "bytes": 184605
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/enduring/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "enduring",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/enduring/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_enduring.png",
+            "assets/characters/dain/expressions/enduring/01/sprite.png"
+          ],
+          "sha256": "f76ea8c44a0fadf419b45bcde70464329830acba226a75151d17ccd8d6202954",
+          "bytes": 1423005
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_enduring.webp",
+            "assets/characters/dain/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "869a51598b87b56fea079ca4d93d75406b6321996c98c45a1f72172f7c83e664",
+          "bytes": 168057
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/oral_service/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "oral_service",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/oral_service/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_oral_service.png",
+            "assets/characters/dain/expressions/oral_service/01/sprite.png"
+          ],
+          "sha256": "8d9e075fe1929c90d1cc39fd003a7567a4dbb51079533b9594749560f6861496",
+          "bytes": 1330153
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_oral_service.webp",
+            "assets/characters/dain/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "25062015af54c1428de0d674651aa920311d6c13ced36b2e6447f7b4d4122d06",
+          "bytes": 144963
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/undressed_shy/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/undressed_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_undressed_shy.png",
+            "assets/characters/dain/expressions/undressed_shy/01/sprite.png"
+          ],
+          "sha256": "624762f6f66bd4dce459aae126305d6b0c1532eb1966899d90963e46c3c9d7c2",
+          "bytes": 1363607
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_undressed_shy.webp",
+            "assets/characters/dain/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "4fc64a073d0c6d0c7cce7d4a1d7fea60c3329fa2579947fd96096866b3cdb339",
+          "bytes": 161437
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/dominant_aroused/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/dominant_aroused/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_dominant_aroused.png",
+            "assets/characters/dain/expressions/dominant_aroused/01/sprite.png"
+          ],
+          "sha256": "43800833adbacf6f666daf55f63cb3e41b89bc20fc5316e821323c5679c32099",
+          "bytes": 1390419
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_dominant_aroused.webp",
+            "assets/characters/dain/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "b5144a4cb4b77596dc8684d3d46a242fd3731a6684d90204ae3df57cdaf8a1e1",
+          "bytes": 143301
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/messy_afterglow/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/messy_afterglow/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_messy_afterglow.png",
+            "assets/characters/dain/expressions/messy_afterglow/01/sprite.png"
+          ],
+          "sha256": "15d64338af7a07ecb825bd15414eea5d9b2893d3ef1c9d2b5a4950998fe2557b",
+          "bytes": 1450396
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_messy_afterglow.webp",
+            "assets/characters/dain/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "2d6ea3ec7fbc225fcf332791480f15d1212bc77b2a7d27cc8ec37ba8b2fbdc63",
+          "bytes": 171027
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/begging_lust/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "begging_lust",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/begging_lust/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_begging_lust.png",
+            "assets/characters/dain/expressions/begging_lust/01/sprite.png"
+          ],
+          "sha256": "61afe2a3d9f810513169f8862112fff748b3741ef1ea9e322b934b056ecddc19",
+          "bytes": 1280814
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_begging_lust.webp",
+            "assets/characters/dain/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "d8ccde3bacb7cdd8429e7f2f7e28dc0d9e4133e1ce1b9b7e52bb0f8e1cc4c74f",
+          "bytes": 141163
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/betrayed/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "betrayed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/betrayed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_betrayed.png",
+            "assets/characters/dain/expressions/betrayed/01/sprite.png"
+          ],
+          "sha256": "5f42aae6efc560864564a3acc80bf344aa05f5f62604f0d9e6fc47001162ab16",
+          "bytes": 1219033
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_betrayed.webp",
+            "assets/characters/dain/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "274354420722ef9076a50cb16eabcbcff789e83eafc455009e31891bcb231ff8",
+          "bytes": 155573
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/combat_ready/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "combat_ready",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/combat_ready/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_combat_ready.png",
+            "assets/characters/dain/expressions/combat_ready/01/sprite.png"
+          ],
+          "sha256": "10c94c1555a2ebdc75791756695d56d9989e8cef25c3ef656167c1085079a970",
+          "bytes": 1227667
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_combat_ready.webp",
+            "assets/characters/dain/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "dd9707bc8a30b356776f7edb0e91085854beda07b4267d866dbbd87d0055764b",
+          "bytes": 147063
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/groggy/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "groggy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/groggy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_groggy.png",
+            "assets/characters/dain/expressions/groggy/01/sprite.png"
+          ],
+          "sha256": "027f61f11633b582e7fc32babf582b712b3e7368303a3943e763834f104025a0",
+          "bytes": 1227468
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_groggy.webp",
+            "assets/characters/dain/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "ec29fe7945b080b1b180ace7aa6d701973f75649e631b99aaba2837f86e5604b",
+          "bytes": 154523
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/scheming/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "scheming",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/scheming/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_scheming.png",
+            "assets/characters/dain/expressions/scheming/01/sprite.png"
+          ],
+          "sha256": "6c10bf5cad8b1607edf2d231265e7147e1742db979888a382f811552a73b85bf",
+          "bytes": 1225965
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_scheming.webp",
+            "assets/characters/dain/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "30c42bde3cb166059ff479127ae5289d2913ee711c0ebc97df701ae9c58666b7",
+          "bytes": 156493
+        }
+      }
+    },
+    {
+      "id": "dain/expressions/touched/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "touched",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/dain/expressions/touched/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/dain_touched.png",
+            "assets/characters/dain/expressions/touched/01/sprite.png"
+          ],
+          "sha256": "c9dbf1b2be8a557d1c46c9e2930aad219c5dc1fcdca2a10decb3c369f53eb191",
+          "bytes": 1235036
+        },
+        "sprite.webp": {
+          "source": "assets/characters/dain/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_touched.webp",
+            "assets/characters/dain/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "de3e2bd62906330db2915968a2cb57d75ec1aac6cc550e3ce521ddfca01a9ec9",
+          "bytes": 148239
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/enduring/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "enduring",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/enduring/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_enduring.png",
+            "assets/characters/haeun/expressions/enduring/01/sprite.png"
+          ],
+          "sha256": "aa8a32db9a7c50f987516df13c874c7fd3514dc1e4adde1dd39d254472204453",
+          "bytes": 1217635
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_enduring.webp",
+            "assets/characters/haeun/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "6934e842c046e3678e17ebdca54351a9c11ea165b79cf6db383df7fada3eb1f7",
+          "bytes": 130639
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/oral_service/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "oral_service",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/oral_service/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_oral_service.png",
+            "assets/characters/haeun/expressions/oral_service/01/sprite.png"
+          ],
+          "sha256": "89a055247a29bda25c934568bdab90b8962a7bff5e86c2367769401e7605d1ec",
+          "bytes": 1227364
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_oral_service.webp",
+            "assets/characters/haeun/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "386e2c7d740c5a88a276bcc027a6b6c380a66d75658318cfd83b0b56df821cd5",
+          "bytes": 131653
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/undressed_shy/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/undressed_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_undressed_shy.png",
+            "assets/characters/haeun/expressions/undressed_shy/01/sprite.png"
+          ],
+          "sha256": "288aa88f9ebec0d07dcdd384799beccaec56f16bebc586212eb6cb30864012f0",
+          "bytes": 1486687
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_undressed_shy.webp",
+            "assets/characters/haeun/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "1837a8ac44408e864966b0de2754313df034216dccb66ca590987b3568e897e7",
+          "bytes": 128613
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/dominant_aroused/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/dominant_aroused/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_dominant_aroused.png",
+            "assets/characters/haeun/expressions/dominant_aroused/01/sprite.png"
+          ],
+          "sha256": "52f20cddca580d9a33d0a9f21e06850392df3c40d3557eb819f3e615f3e7c5c4",
+          "bytes": 1228723
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_dominant_aroused.webp",
+            "assets/characters/haeun/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "72689413b651b1bd0dee40ae65e2244565b1a380b7a9fba4af73de3c6deaa81b",
+          "bytes": 129787
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/messy_afterglow/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/messy_afterglow/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_messy_afterglow.png",
+            "assets/characters/haeun/expressions/messy_afterglow/01/sprite.png"
+          ],
+          "sha256": "7b8514fd376444b6d051d6ee4a762dc57cd1f3f50eec74c01547157757dab96f",
+          "bytes": 1496152
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_messy_afterglow.webp",
+            "assets/characters/haeun/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "d2201a99823de76bd10a45d120435b4880f7d7c6c6ef8f2a1031bd630d543f50",
+          "bytes": 131785
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/begging_lust/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "begging_lust",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/begging_lust/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_begging_lust.png",
+            "assets/characters/haeun/expressions/begging_lust/01/sprite.png"
+          ],
+          "sha256": "74579addebce73504bfc9dfdab35e7d6dbebb121593a59da6b19a0a5a794e674",
+          "bytes": 1488861
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_begging_lust.webp",
+            "assets/characters/haeun/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "6902d60b5339a15ee9428d8f21134497711ddfdf99f1b3fd8d859dc219573094",
+          "bytes": 129517
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/betrayed/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "betrayed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/betrayed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_betrayed.png",
+            "assets/characters/haeun/expressions/betrayed/01/sprite.png"
+          ],
+          "sha256": "9965a2526c8753850c5de0792c84053f673c540c78ac50ed938a0302c438f5d5",
+          "bytes": 1169832
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_betrayed.webp",
+            "assets/characters/haeun/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "3eac7c114c4c77179c4d2687838b1ae1ffde94d35f0e2a24c312160a297ed368",
+          "bytes": 117075
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/combat_ready/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "combat_ready",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/combat_ready/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_combat_ready.png",
+            "assets/characters/haeun/expressions/combat_ready/01/sprite.png"
+          ],
+          "sha256": "87c94e2fbad19424b04724a597a45b20873b55782b5a67b67fe5e468b8eac634",
+          "bytes": 1144257
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_combat_ready.webp",
+            "assets/characters/haeun/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "3f3a0f0737f8ce0a9c741279d493b9a07f3389f4a0d11ca6d3f1e92d0ae74f23",
+          "bytes": 107291
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/groggy/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "groggy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/groggy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_groggy.png",
+            "assets/characters/haeun/expressions/groggy/01/sprite.png"
+          ],
+          "sha256": "88e59ad851746b0f892afd41fc6e77f285814829cce758d5ed25f84cdabb0adc",
+          "bytes": 1165488
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_groggy.webp",
+            "assets/characters/haeun/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "f803003bcb91fb70049c04e9120ed92f1f1276a4ff771bb3de13a4c161b24636",
+          "bytes": 115641
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/scheming/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "scheming",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/scheming/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_scheming.png",
+            "assets/characters/haeun/expressions/scheming/01/sprite.png"
+          ],
+          "sha256": "fc2d215c4c76475da36354b9ee511acc0ff33c5a68f2306077714ed816ec62d3",
+          "bytes": 1176459
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_scheming.webp",
+            "assets/characters/haeun/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "8bbe6badfa4a7ba30ba79e1e1a8b0d8ca242689bb8792ebaa2c2fc564adaff44",
+          "bytes": 118043
+        }
+      }
+    },
+    {
+      "id": "haeun/expressions/touched/01",
+      "characterId": "haeun",
+      "role": "expression",
+      "expression": "touched",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/haeun/expressions/touched/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/haeun_touched.png",
+            "assets/characters/haeun/expressions/touched/01/sprite.png"
+          ],
+          "sha256": "690b6667f7ebdcbf04f11c2ce1ed8f131a398617715e6703d3d328c425e184c9",
+          "bytes": 1143315
+        },
+        "sprite.webp": {
+          "source": "assets/characters/haeun/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/haeun_touched.webp",
+            "assets/characters/haeun/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "c2088d6bd988f369ee351792a10de88c936705c74535691a39d4f283ce675365",
+          "bytes": 110409
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/enduring/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "enduring",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/enduring/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_enduring.png",
+            "assets/characters/minsu/expressions/enduring/01/sprite.png"
+          ],
+          "sha256": "e3e758f65078a2656b1f3bbb03e41398e821deef89f3bbb9aca767b4d992443c",
+          "bytes": 1536347
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_enduring.webp",
+            "assets/characters/minsu/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "27dd627e93b2e072313c4e0552c6515f041ee95e6d56411899e7394a3548733f",
+          "bytes": 130647
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/oral_service/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "oral_service",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/oral_service/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_oral_service.png",
+            "assets/characters/minsu/expressions/oral_service/01/sprite.png"
+          ],
+          "sha256": "ffbde2598434890aaee1148e40082b5e02a5616c2534d3025b7cb85914964980",
+          "bytes": 1451405
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_oral_service.webp",
+            "assets/characters/minsu/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "f38933f326d0c96207347a71378e60a10be1a37b0ac8aba1e0d08ab2885edfa3",
+          "bytes": 118227
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/undressed_shy/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/undressed_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_undressed_shy.png",
+            "assets/characters/minsu/expressions/undressed_shy/01/sprite.png"
+          ],
+          "sha256": "9761a5b9438a45ae8be17798ff06012a49a4eb493a2a4838cba7ccc9a54347b1",
+          "bytes": 1774211
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_undressed_shy.webp",
+            "assets/characters/minsu/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "7855ee845a449dfda8fda420b1408d718f90ca944d3453ab82cc55b853121d40",
+          "bytes": 161287
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/dominant_aroused/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/dominant_aroused/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_dominant_aroused.png",
+            "assets/characters/minsu/expressions/dominant_aroused/01/sprite.png"
+          ],
+          "sha256": "fde8e7f7ba62ae7bfbc4bae526e17885be4b41bb6e368a821a6bd75f56dac268",
+          "bytes": 1578462
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_dominant_aroused.webp",
+            "assets/characters/minsu/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "510974d9900d2bcff0fbd81cd9f70276637266d1a8097382fb0e1fe94631683e",
+          "bytes": 140291
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/messy_afterglow/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/messy_afterglow/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_messy_afterglow.png",
+            "assets/characters/minsu/expressions/messy_afterglow/01/sprite.png"
+          ],
+          "sha256": "671a83275a55fda3995c7d5446ff6f1d8eb97b25e8387bd2106421290bc09f15",
+          "bytes": 1703404
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_messy_afterglow.webp",
+            "assets/characters/minsu/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "bf41a3184f70042bac1d600383bfec198028775978deb5923b967d70d3f87754",
+          "bytes": 148821
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/begging_lust/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "begging_lust",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/begging_lust/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_begging_lust.png",
+            "assets/characters/minsu/expressions/begging_lust/01/sprite.png"
+          ],
+          "sha256": "ea2e8600daac725bea6bd16d293d613e3d685a2f47426d3f3c0efdc2ade1be5f",
+          "bytes": 1476016
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_begging_lust.webp",
+            "assets/characters/minsu/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "457163b9f81fea76aba890c402ca0f9fe027825a005703d283149473a793fe7c",
+          "bytes": 112703
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/betrayed/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "betrayed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/betrayed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_betrayed.png",
+            "assets/characters/minsu/expressions/betrayed/01/sprite.png"
+          ],
+          "sha256": "bcfead1e91329e709e82929099efb2e04892cd336ceaeb8904a55676f65c2d4e",
+          "bytes": 1373176
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_betrayed.webp",
+            "assets/characters/minsu/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "dd5edc7231da955f4e174c394a641ca9577d61db648f067a514b38109883ba60",
+          "bytes": 99207
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/combat_ready/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "combat_ready",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/combat_ready/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_combat_ready.png",
+            "assets/characters/minsu/expressions/combat_ready/01/sprite.png"
+          ],
+          "sha256": "84f712163458e6c1eafd533199cdef7f6fe04d12ae807af62da26f8d4dab09d9",
+          "bytes": 1354490
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_combat_ready.webp",
+            "assets/characters/minsu/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "2823ea9a75266c5a1da668a5e5736d136031612d0ad66febd43c3ebac352fc3d",
+          "bytes": 91521
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/groggy/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "groggy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/groggy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_groggy.png",
+            "assets/characters/minsu/expressions/groggy/01/sprite.png"
+          ],
+          "sha256": "a9635a5be076481cbe33b168ef49a954ce6d0e5d0642086f9fbc5d2f9f511d9b",
+          "bytes": 1367512
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_groggy.webp",
+            "assets/characters/minsu/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "a21da10f5424ed16ed6480502ca47b59bd124ad0ff0f9ccd36f06b5e169b06c0",
+          "bytes": 97055
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/scheming/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "scheming",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/scheming/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_scheming.png",
+            "assets/characters/minsu/expressions/scheming/01/sprite.png"
+          ],
+          "sha256": "bdabafa354aa05dde9cb2f9b3035c8787410706be28fe3448e67cf124bfe7c0e",
+          "bytes": 1372712
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_scheming.webp",
+            "assets/characters/minsu/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "a39c56752c3fd603d983ed8f66ac39d278df7a2b719fc942d600473720a135e8",
+          "bytes": 99411
+        }
+      }
+    },
+    {
+      "id": "minsu/expressions/touched/01",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "touched",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/touched/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_touched.png",
+            "assets/characters/minsu/expressions/touched/01/sprite.png"
+          ],
+          "sha256": "3c9f8ac421499689cb784504fc44218ae0dd29327a9b5eecae485c777f8e05a1",
+          "bytes": 1358588
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_touched.webp",
+            "assets/characters/minsu/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "31b609935189eeaf8a3620c2a84aded83ae23e513db23f73a5e6d1eda46c2534",
+          "bytes": 93183
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/enduring/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "enduring",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/enduring/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_enduring.png",
+            "assets/characters/teacher/expressions/enduring/01/sprite.png"
+          ],
+          "sha256": "7abd5e2ec1b28720b85c19231439b6234dc6e5b80f6d2cf20028f72c84c77721",
+          "bytes": 1530061
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_enduring.webp",
+            "assets/characters/teacher/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "ab54ff05a33cb2d51f43aa29303e933b7b526e1d9deb76d7e6122b2c0b61bb6f",
+          "bytes": 156115
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/oral_service/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "oral_service",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/oral_service/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_oral_service.png",
+            "assets/characters/teacher/expressions/oral_service/01/sprite.png"
+          ],
+          "sha256": "3b21542f443981843ace3e0046644b9401c49b4156ee70e6c6b42e89e393c056",
+          "bytes": 1466696
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_oral_service.webp",
+            "assets/characters/teacher/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "2c04b36cbf2b52112895af088a6f98be3289bb77bdc1b0b50a1d465cc201e81f",
+          "bytes": 141087
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/undressed_shy/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/undressed_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_undressed_shy.png",
+            "assets/characters/teacher/expressions/undressed_shy/01/sprite.png"
+          ],
+          "sha256": "6cdda2bb5c5bbec834502d155c1f00b9c0e4f42477c0705dbf2236e3c3677c2b",
+          "bytes": 1538004
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_undressed_shy.webp",
+            "assets/characters/teacher/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "c2cfe4821f6c4017e491b44ee0e7fe5fc353c57e4fd9af5c7730234dac71784e",
+          "bytes": 169393
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/dominant_aroused/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/dominant_aroused/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_dominant_aroused.png",
+            "assets/characters/teacher/expressions/dominant_aroused/01/sprite.png"
+          ],
+          "sha256": "123e55c0a725ef50eee062f976ef0d8f691d60bf6cadbcd52962a800ca9a84a6",
+          "bytes": 1444693
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_dominant_aroused.webp",
+            "assets/characters/teacher/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "a7a5aa0c9c023c16f8e6e0d4535a62375ba6e0d362ced7cc3c16bdc035b2a243",
+          "bytes": 139107
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/messy_afterglow/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/messy_afterglow/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_messy_afterglow.png",
+            "assets/characters/teacher/expressions/messy_afterglow/01/sprite.png"
+          ],
+          "sha256": "9dd55b9cb61d23457106cb9229946c7993700d06dadc7c79c0984dfc3b322a8d",
+          "bytes": 1484741
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_messy_afterglow.webp",
+            "assets/characters/teacher/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "3c06b3dfa5590b63213e3944d3b96c0a1dce995ee23da637275ea7ad4d3ec1df",
+          "bytes": 147789
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/begging_lust/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "begging_lust",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/begging_lust/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_begging_lust.png",
+            "assets/characters/teacher/expressions/begging_lust/01/sprite.png"
+          ],
+          "sha256": "d2ec954525ade2545fa6b5e32134d5950f6a853e016e3491ed94da18b86c4ba3",
+          "bytes": 1465959
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_begging_lust.webp",
+            "assets/characters/teacher/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "9f10b336e7c4a56a70842073fe8030e3fa29d25ed52d136571e524e818225a0c",
+          "bytes": 141127
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/betrayed/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "betrayed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/betrayed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_betrayed.png",
+            "assets/characters/teacher/expressions/betrayed/01/sprite.png"
+          ],
+          "sha256": "96ce6651f6854537c17053767beed7a1680bb9280f16705de9be35a84b7fb1ea",
+          "bytes": 1418931
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_betrayed.webp",
+            "assets/characters/teacher/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "c8c359102ad8426bb735120078aeccfedc707e49b86017437f409d3d357e84c4",
+          "bytes": 142311
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/combat_ready/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "combat_ready",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/combat_ready/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_combat_ready.png",
+            "assets/characters/teacher/expressions/combat_ready/01/sprite.png"
+          ],
+          "sha256": "3ae492cbf52e5332e5bd57e9b179cd3536c9ac2a7c9e4ec1d0042a67c3effdbf",
+          "bytes": 1371602
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_combat_ready.webp",
+            "assets/characters/teacher/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "f099d81b5e41b5092e31d2410dd39e32965ea3328aa51381d157f6150ae78742",
+          "bytes": 134647
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/groggy/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "groggy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/groggy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_groggy.png",
+            "assets/characters/teacher/expressions/groggy/01/sprite.png"
+          ],
+          "sha256": "3c633e464a6cd2d36f4b044024d4f5864e6bf0c0d91aef350e1612276f49c123",
+          "bytes": 1412651
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_groggy.webp",
+            "assets/characters/teacher/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "37def10b58430fa093cb3b16bf7db279fd97d374f79ddf47660bd01677bc30ac",
+          "bytes": 138601
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/scheming/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "scheming",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/scheming/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_scheming.png",
+            "assets/characters/teacher/expressions/scheming/01/sprite.png"
+          ],
+          "sha256": "30aea02236778e77185ac765d2fff8ea25a2abcbb0eb0b19476aa896b6c53221",
+          "bytes": 1419237
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_scheming.webp",
+            "assets/characters/teacher/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "96a9392e66b753ec3d1026e118b8c6e1890e24e65dc111000f7ae5e6bd9ded8c",
+          "bytes": 142311
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/touched/01",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "touched",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/touched/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_touched.png",
+            "assets/characters/teacher/expressions/touched/01/sprite.png"
+          ],
+          "sha256": "96954c0d4174187da53069fbc2e67233d3534ba384bef449a5bf396e9779e812",
+          "bytes": 1378110
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_touched.webp",
+            "assets/characters/teacher/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "32cc13d4aebb31e8bf2b7c5af01911ec587a827506abad9babf0fb71892946a8",
+          "bytes": 135779
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/enduring/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "enduring",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/enduring/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_enduring.png",
+            "assets/characters/nurse/expressions/enduring/01/sprite.png"
+          ],
+          "sha256": "f376c1a48d41604507d386c47abe4233e5bd6592fa4ff4c4c4e75928734d3b70",
+          "bytes": 1851200
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_enduring.webp",
+            "assets/characters/nurse/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "d18289d56735d8fc4ce530ca1c729b06464815e36f13454b6f5c75a2d6925bc3",
+          "bytes": 185551
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/oral_service/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "oral_service",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/oral_service/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_oral_service.png",
+            "assets/characters/nurse/expressions/oral_service/01/sprite.png"
+          ],
+          "sha256": "54f7fb701647809ea89fb6cda0299899fa3c6a75af6899b9e72294217205a731",
+          "bytes": 1649160
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_oral_service.webp",
+            "assets/characters/nurse/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "194e352f48e6448175be77225fb3b0723ea8f8c862333315bdf6fca50bc17c84",
+          "bytes": 164411
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/undressed_shy/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/undressed_shy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_undressed_shy.png",
+            "assets/characters/nurse/expressions/undressed_shy/01/sprite.png"
+          ],
+          "sha256": "4c849c768de09454c51afecd6c0bbabcbf2f6ccbab1757b4a4fd2084a40b029e",
+          "bytes": 1885964
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_undressed_shy.webp",
+            "assets/characters/nurse/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "297d3066f98e4552678712f725bd1ccc70e7ca0f85abf397e53286b628f6a17d",
+          "bytes": 204953
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/dominant_aroused/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/dominant_aroused/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_dominant_aroused.png",
+            "assets/characters/nurse/expressions/dominant_aroused/01/sprite.png"
+          ],
+          "sha256": "c6162a0da0b41bd1a13f1e8153c138f7d0c907621c404d934ead34e2c63622ee",
+          "bytes": 1759056
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_dominant_aroused.webp",
+            "assets/characters/nurse/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "38fe5357d0b31189a4ae0fa3f571dbbc67fa965a3989406c8e381c6d1b78891f",
+          "bytes": 183533
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/messy_afterglow/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/messy_afterglow/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_messy_afterglow.png",
+            "assets/characters/nurse/expressions/messy_afterglow/01/sprite.png"
+          ],
+          "sha256": "7f4a95891a0df69ee237283333d76b5d0fba6e1ddfc662f95be4881a994f6a2a",
+          "bytes": 1795851
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_messy_afterglow.webp",
+            "assets/characters/nurse/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "fa3c726397f5a4d973955628937159703373d0386becb95c82d16687181e8507",
+          "bytes": 195409
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/begging_lust/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "begging_lust",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/begging_lust/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_begging_lust.png",
+            "assets/characters/nurse/expressions/begging_lust/01/sprite.png"
+          ],
+          "sha256": "a7d98c13a3bb7aa6aec754337050e3c5ae0408c624fe987bca3c8b021c8d1d5c",
+          "bytes": 1761056
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_begging_lust.webp",
+            "assets/characters/nurse/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "79bec4c48f0b0330f2171a816373c4e69b212382184edbe9f1ff523bfb89ef32",
+          "bytes": 183753
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/betrayed/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "betrayed",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/betrayed/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_betrayed.png",
+            "assets/characters/nurse/expressions/betrayed/01/sprite.png"
+          ],
+          "sha256": "c79f8582b76691f9484f884c1c3fd103df78a1e283c61d26e24064ec3586810c",
+          "bytes": 1647959
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_betrayed.webp",
+            "assets/characters/nurse/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "e2fff54b56322cf820cbf8b93a89c6d1b3b750835b845f1975794fc2a7fad397",
+          "bytes": 165269
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/combat_ready/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "combat_ready",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/combat_ready/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_combat_ready.png",
+            "assets/characters/nurse/expressions/combat_ready/01/sprite.png"
+          ],
+          "sha256": "039fa2fa6cc5a136e97583c1a67867d4d8bb1d75189e40f1470a0f8218faa1c8",
+          "bytes": 1619017
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_combat_ready.webp",
+            "assets/characters/nurse/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "6b028fa4ab5ae9ea1560de02dffcab6bc9f18b17a4a6f59c32f8c66750f5349b",
+          "bytes": 158309
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/groggy/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "groggy",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/groggy/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_groggy.png",
+            "assets/characters/nurse/expressions/groggy/01/sprite.png"
+          ],
+          "sha256": "45d5cfd98721bfea9c0246e448bf5acebd7adbf1446718fe0e91e4ca8f1eedc8",
+          "bytes": 1653948
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_groggy.webp",
+            "assets/characters/nurse/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "9f4e7f6bb1e80a97ea3cffae580d7f26365d4480f79f4a6d4ec6d33e9df1e78a",
+          "bytes": 166629
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/scheming/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "scheming",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/scheming/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_scheming.png",
+            "assets/characters/nurse/expressions/scheming/01/sprite.png"
+          ],
+          "sha256": "463e738b113b1a379e8f14fab09ecd7f315898a40b40b27435e0ee571b43cb16",
+          "bytes": 1650411
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_scheming.webp",
+            "assets/characters/nurse/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "d2c6889c8786b7981c17e7ffb3495399fc772cc41d05d900564cae9a40db0a82",
+          "bytes": 165611
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/touched/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "touched",
+      "variant": "01",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/touched/01/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_touched.png",
+            "assets/characters/nurse/expressions/touched/01/sprite.png"
+          ],
+          "sha256": "d504826d455ceb9d98a9cdcf121d8e7931391b4370bf0ee3502a479adfa2d528",
+          "bytes": 1622377
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_touched.webp",
+            "assets/characters/nurse/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "121b2431221505fdaf4b99b358b3e7f8ed86c85f0cbffd91cf40a65e2335bb70",
+          "bytes": 158153
+        }
+      }
     }
   ]
 }

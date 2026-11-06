@@ -10495,6 +10495,1546 @@
       "sha256": "be2c3ac7bef9c484aab21fb8624e9153bec906ff98d1e36d35971d158c9f3231",
       "bytes": 199180,
       "backupKey": "objects/sources/be2c3ac7bef9c484aab21fb8624e9153bec906ff98d1e36d35971d158c9f3231.webp"
+    },
+    "assets/characters/dain/expressions/begging_lust/01/sprite.png": {
+      "sha256": "61afe2a3d9f810513169f8862112fff748b3741ef1ea9e322b934b056ecddc19",
+      "bytes": 1280814,
+      "backupKey": "objects/sources/61afe2a3d9f810513169f8862112fff748b3741ef1ea9e322b934b056ecddc19.png"
+    },
+    "assets/characters/dain/expressions/begging_lust/01/sprite.webp": {
+      "sha256": "d8ccde3bacb7cdd8429e7f2f7e28dc0d9e4133e1ce1b9b7e52bb0f8e1cc4c74f",
+      "bytes": 141163,
+      "backupKey": "objects/sources/d8ccde3bacb7cdd8429e7f2f7e28dc0d9e4133e1ce1b9b7e52bb0f8e1cc4c74f.webp"
+    },
+    "assets/characters/dain/expressions/betrayed/01/sprite.png": {
+      "sha256": "5f42aae6efc560864564a3acc80bf344aa05f5f62604f0d9e6fc47001162ab16",
+      "bytes": 1219033,
+      "backupKey": "objects/sources/5f42aae6efc560864564a3acc80bf344aa05f5f62604f0d9e6fc47001162ab16.png"
+    },
+    "assets/characters/dain/expressions/betrayed/01/sprite.webp": {
+      "sha256": "274354420722ef9076a50cb16eabcbcff789e83eafc455009e31891bcb231ff8",
+      "bytes": 155573,
+      "backupKey": "objects/sources/274354420722ef9076a50cb16eabcbcff789e83eafc455009e31891bcb231ff8.webp"
+    },
+    "assets/characters/dain/expressions/combat_ready/01/sprite.png": {
+      "sha256": "10c94c1555a2ebdc75791756695d56d9989e8cef25c3ef656167c1085079a970",
+      "bytes": 1227667,
+      "backupKey": "objects/sources/10c94c1555a2ebdc75791756695d56d9989e8cef25c3ef656167c1085079a970.png"
+    },
+    "assets/characters/dain/expressions/combat_ready/01/sprite.webp": {
+      "sha256": "dd9707bc8a30b356776f7edb0e91085854beda07b4267d866dbbd87d0055764b",
+      "bytes": 147063,
+      "backupKey": "objects/sources/dd9707bc8a30b356776f7edb0e91085854beda07b4267d866dbbd87d0055764b.webp"
+    },
+    "assets/characters/dain/expressions/dominant_aroused/01/sprite.png": {
+      "sha256": "43800833adbacf6f666daf55f63cb3e41b89bc20fc5316e821323c5679c32099",
+      "bytes": 1390419,
+      "backupKey": "objects/sources/43800833adbacf6f666daf55f63cb3e41b89bc20fc5316e821323c5679c32099.png"
+    },
+    "assets/characters/dain/expressions/dominant_aroused/01/sprite.webp": {
+      "sha256": "b5144a4cb4b77596dc8684d3d46a242fd3731a6684d90204ae3df57cdaf8a1e1",
+      "bytes": 143301,
+      "backupKey": "objects/sources/b5144a4cb4b77596dc8684d3d46a242fd3731a6684d90204ae3df57cdaf8a1e1.webp"
+    },
+    "assets/characters/dain/expressions/enduring/01/sprite.png": {
+      "sha256": "f76ea8c44a0fadf419b45bcde70464329830acba226a75151d17ccd8d6202954",
+      "bytes": 1423005,
+      "backupKey": "objects/sources/f76ea8c44a0fadf419b45bcde70464329830acba226a75151d17ccd8d6202954.png"
+    },
+    "assets/characters/dain/expressions/enduring/01/sprite.webp": {
+      "sha256": "869a51598b87b56fea079ca4d93d75406b6321996c98c45a1f72172f7c83e664",
+      "bytes": 168057,
+      "backupKey": "objects/sources/869a51598b87b56fea079ca4d93d75406b6321996c98c45a1f72172f7c83e664.webp"
+    },
+    "assets/characters/dain/expressions/groggy/01/sprite.png": {
+      "sha256": "027f61f11633b582e7fc32babf582b712b3e7368303a3943e763834f104025a0",
+      "bytes": 1227468,
+      "backupKey": "objects/sources/027f61f11633b582e7fc32babf582b712b3e7368303a3943e763834f104025a0.png"
+    },
+    "assets/characters/dain/expressions/groggy/01/sprite.webp": {
+      "sha256": "ec29fe7945b080b1b180ace7aa6d701973f75649e631b99aaba2837f86e5604b",
+      "bytes": 154523,
+      "backupKey": "objects/sources/ec29fe7945b080b1b180ace7aa6d701973f75649e631b99aaba2837f86e5604b.webp"
+    },
+    "assets/characters/dain/expressions/messy_afterglow/01/sprite.png": {
+      "sha256": "15d64338af7a07ecb825bd15414eea5d9b2893d3ef1c9d2b5a4950998fe2557b",
+      "bytes": 1450396,
+      "backupKey": "objects/sources/15d64338af7a07ecb825bd15414eea5d9b2893d3ef1c9d2b5a4950998fe2557b.png"
+    },
+    "assets/characters/dain/expressions/messy_afterglow/01/sprite.webp": {
+      "sha256": "2d6ea3ec7fbc225fcf332791480f15d1212bc77b2a7d27cc8ec37ba8b2fbdc63",
+      "bytes": 171027,
+      "backupKey": "objects/sources/2d6ea3ec7fbc225fcf332791480f15d1212bc77b2a7d27cc8ec37ba8b2fbdc63.webp"
+    },
+    "assets/characters/dain/expressions/oral_service/01/sprite.png": {
+      "sha256": "8d9e075fe1929c90d1cc39fd003a7567a4dbb51079533b9594749560f6861496",
+      "bytes": 1330153,
+      "backupKey": "objects/sources/8d9e075fe1929c90d1cc39fd003a7567a4dbb51079533b9594749560f6861496.png"
+    },
+    "assets/characters/dain/expressions/oral_service/01/sprite.webp": {
+      "sha256": "25062015af54c1428de0d674651aa920311d6c13ced36b2e6447f7b4d4122d06",
+      "bytes": 144963,
+      "backupKey": "objects/sources/25062015af54c1428de0d674651aa920311d6c13ced36b2e6447f7b4d4122d06.webp"
+    },
+    "assets/characters/dain/expressions/scheming/01/sprite.png": {
+      "sha256": "6c10bf5cad8b1607edf2d231265e7147e1742db979888a382f811552a73b85bf",
+      "bytes": 1225965,
+      "backupKey": "objects/sources/6c10bf5cad8b1607edf2d231265e7147e1742db979888a382f811552a73b85bf.png"
+    },
+    "assets/characters/dain/expressions/scheming/01/sprite.webp": {
+      "sha256": "30c42bde3cb166059ff479127ae5289d2913ee711c0ebc97df701ae9c58666b7",
+      "bytes": 156493,
+      "backupKey": "objects/sources/30c42bde3cb166059ff479127ae5289d2913ee711c0ebc97df701ae9c58666b7.webp"
+    },
+    "assets/characters/dain/expressions/touched/01/sprite.png": {
+      "sha256": "c9dbf1b2be8a557d1c46c9e2930aad219c5dc1fcdca2a10decb3c369f53eb191",
+      "bytes": 1235036,
+      "backupKey": "objects/sources/c9dbf1b2be8a557d1c46c9e2930aad219c5dc1fcdca2a10decb3c369f53eb191.png"
+    },
+    "assets/characters/dain/expressions/touched/01/sprite.webp": {
+      "sha256": "de3e2bd62906330db2915968a2cb57d75ec1aac6cc550e3ce521ddfca01a9ec9",
+      "bytes": 148239,
+      "backupKey": "objects/sources/de3e2bd62906330db2915968a2cb57d75ec1aac6cc550e3ce521ddfca01a9ec9.webp"
+    },
+    "assets/characters/dain/expressions/undressed_shy/01/sprite.png": {
+      "sha256": "624762f6f66bd4dce459aae126305d6b0c1532eb1966899d90963e46c3c9d7c2",
+      "bytes": 1363607,
+      "backupKey": "objects/sources/624762f6f66bd4dce459aae126305d6b0c1532eb1966899d90963e46c3c9d7c2.png"
+    },
+    "assets/characters/dain/expressions/undressed_shy/01/sprite.webp": {
+      "sha256": "4fc64a073d0c6d0c7cce7d4a1d7fea60c3329fa2579947fd96096866b3cdb339",
+      "bytes": 161437,
+      "backupKey": "objects/sources/4fc64a073d0c6d0c7cce7d4a1d7fea60c3329fa2579947fd96096866b3cdb339.webp"
+    },
+    "assets/characters/haeun/expressions/begging_lust/01/sprite.png": {
+      "sha256": "74579addebce73504bfc9dfdab35e7d6dbebb121593a59da6b19a0a5a794e674",
+      "bytes": 1488861,
+      "backupKey": "objects/sources/74579addebce73504bfc9dfdab35e7d6dbebb121593a59da6b19a0a5a794e674.png"
+    },
+    "assets/characters/haeun/expressions/begging_lust/01/sprite.webp": {
+      "sha256": "6902d60b5339a15ee9428d8f21134497711ddfdf99f1b3fd8d859dc219573094",
+      "bytes": 129517,
+      "backupKey": "objects/sources/6902d60b5339a15ee9428d8f21134497711ddfdf99f1b3fd8d859dc219573094.webp"
+    },
+    "assets/characters/haeun/expressions/betrayed/01/sprite.png": {
+      "sha256": "9965a2526c8753850c5de0792c84053f673c540c78ac50ed938a0302c438f5d5",
+      "bytes": 1169832,
+      "backupKey": "objects/sources/9965a2526c8753850c5de0792c84053f673c540c78ac50ed938a0302c438f5d5.png"
+    },
+    "assets/characters/haeun/expressions/betrayed/01/sprite.webp": {
+      "sha256": "3eac7c114c4c77179c4d2687838b1ae1ffde94d35f0e2a24c312160a297ed368",
+      "bytes": 117075,
+      "backupKey": "objects/sources/3eac7c114c4c77179c4d2687838b1ae1ffde94d35f0e2a24c312160a297ed368.webp"
+    },
+    "assets/characters/haeun/expressions/combat_ready/01/sprite.png": {
+      "sha256": "87c94e2fbad19424b04724a597a45b20873b55782b5a67b67fe5e468b8eac634",
+      "bytes": 1144257,
+      "backupKey": "objects/sources/87c94e2fbad19424b04724a597a45b20873b55782b5a67b67fe5e468b8eac634.png"
+    },
+    "assets/characters/haeun/expressions/combat_ready/01/sprite.webp": {
+      "sha256": "3f3a0f0737f8ce0a9c741279d493b9a07f3389f4a0d11ca6d3f1e92d0ae74f23",
+      "bytes": 107291,
+      "backupKey": "objects/sources/3f3a0f0737f8ce0a9c741279d493b9a07f3389f4a0d11ca6d3f1e92d0ae74f23.webp"
+    },
+    "assets/characters/haeun/expressions/dominant_aroused/01/sprite.png": {
+      "sha256": "52f20cddca580d9a33d0a9f21e06850392df3c40d3557eb819f3e615f3e7c5c4",
+      "bytes": 1228723,
+      "backupKey": "objects/sources/52f20cddca580d9a33d0a9f21e06850392df3c40d3557eb819f3e615f3e7c5c4.png"
+    },
+    "assets/characters/haeun/expressions/dominant_aroused/01/sprite.webp": {
+      "sha256": "72689413b651b1bd0dee40ae65e2244565b1a380b7a9fba4af73de3c6deaa81b",
+      "bytes": 129787,
+      "backupKey": "objects/sources/72689413b651b1bd0dee40ae65e2244565b1a380b7a9fba4af73de3c6deaa81b.webp"
+    },
+    "assets/characters/haeun/expressions/enduring/01/sprite.png": {
+      "sha256": "aa8a32db9a7c50f987516df13c874c7fd3514dc1e4adde1dd39d254472204453",
+      "bytes": 1217635,
+      "backupKey": "objects/sources/aa8a32db9a7c50f987516df13c874c7fd3514dc1e4adde1dd39d254472204453.png"
+    },
+    "assets/characters/haeun/expressions/enduring/01/sprite.webp": {
+      "sha256": "6934e842c046e3678e17ebdca54351a9c11ea165b79cf6db383df7fada3eb1f7",
+      "bytes": 130639,
+      "backupKey": "objects/sources/6934e842c046e3678e17ebdca54351a9c11ea165b79cf6db383df7fada3eb1f7.webp"
+    },
+    "assets/characters/haeun/expressions/groggy/01/sprite.png": {
+      "sha256": "88e59ad851746b0f892afd41fc6e77f285814829cce758d5ed25f84cdabb0adc",
+      "bytes": 1165488,
+      "backupKey": "objects/sources/88e59ad851746b0f892afd41fc6e77f285814829cce758d5ed25f84cdabb0adc.png"
+    },
+    "assets/characters/haeun/expressions/groggy/01/sprite.webp": {
+      "sha256": "f803003bcb91fb70049c04e9120ed92f1f1276a4ff771bb3de13a4c161b24636",
+      "bytes": 115641,
+      "backupKey": "objects/sources/f803003bcb91fb70049c04e9120ed92f1f1276a4ff771bb3de13a4c161b24636.webp"
+    },
+    "assets/characters/haeun/expressions/messy_afterglow/01/sprite.png": {
+      "sha256": "7b8514fd376444b6d051d6ee4a762dc57cd1f3f50eec74c01547157757dab96f",
+      "bytes": 1496152,
+      "backupKey": "objects/sources/7b8514fd376444b6d051d6ee4a762dc57cd1f3f50eec74c01547157757dab96f.png"
+    },
+    "assets/characters/haeun/expressions/messy_afterglow/01/sprite.webp": {
+      "sha256": "d2201a99823de76bd10a45d120435b4880f7d7c6c6ef8f2a1031bd630d543f50",
+      "bytes": 131785,
+      "backupKey": "objects/sources/d2201a99823de76bd10a45d120435b4880f7d7c6c6ef8f2a1031bd630d543f50.webp"
+    },
+    "assets/characters/haeun/expressions/oral_service/01/sprite.png": {
+      "sha256": "89a055247a29bda25c934568bdab90b8962a7bff5e86c2367769401e7605d1ec",
+      "bytes": 1227364,
+      "backupKey": "objects/sources/89a055247a29bda25c934568bdab90b8962a7bff5e86c2367769401e7605d1ec.png"
+    },
+    "assets/characters/haeun/expressions/oral_service/01/sprite.webp": {
+      "sha256": "386e2c7d740c5a88a276bcc027a6b6c380a66d75658318cfd83b0b56df821cd5",
+      "bytes": 131653,
+      "backupKey": "objects/sources/386e2c7d740c5a88a276bcc027a6b6c380a66d75658318cfd83b0b56df821cd5.webp"
+    },
+    "assets/characters/haeun/expressions/scheming/01/sprite.png": {
+      "sha256": "fc2d215c4c76475da36354b9ee511acc0ff33c5a68f2306077714ed816ec62d3",
+      "bytes": 1176459,
+      "backupKey": "objects/sources/fc2d215c4c76475da36354b9ee511acc0ff33c5a68f2306077714ed816ec62d3.png"
+    },
+    "assets/characters/haeun/expressions/scheming/01/sprite.webp": {
+      "sha256": "8bbe6badfa4a7ba30ba79e1e1a8b0d8ca242689bb8792ebaa2c2fc564adaff44",
+      "bytes": 118043,
+      "backupKey": "objects/sources/8bbe6badfa4a7ba30ba79e1e1a8b0d8ca242689bb8792ebaa2c2fc564adaff44.webp"
+    },
+    "assets/characters/haeun/expressions/touched/01/sprite.png": {
+      "sha256": "690b6667f7ebdcbf04f11c2ce1ed8f131a398617715e6703d3d328c425e184c9",
+      "bytes": 1143315,
+      "backupKey": "objects/sources/690b6667f7ebdcbf04f11c2ce1ed8f131a398617715e6703d3d328c425e184c9.png"
+    },
+    "assets/characters/haeun/expressions/touched/01/sprite.webp": {
+      "sha256": "c2088d6bd988f369ee351792a10de88c936705c74535691a39d4f283ce675365",
+      "bytes": 110409,
+      "backupKey": "objects/sources/c2088d6bd988f369ee351792a10de88c936705c74535691a39d4f283ce675365.webp"
+    },
+    "assets/characters/haeun/expressions/undressed_shy/01/sprite.png": {
+      "sha256": "288aa88f9ebec0d07dcdd384799beccaec56f16bebc586212eb6cb30864012f0",
+      "bytes": 1486687,
+      "backupKey": "objects/sources/288aa88f9ebec0d07dcdd384799beccaec56f16bebc586212eb6cb30864012f0.png"
+    },
+    "assets/characters/haeun/expressions/undressed_shy/01/sprite.webp": {
+      "sha256": "1837a8ac44408e864966b0de2754313df034216dccb66ca590987b3568e897e7",
+      "bytes": 128613,
+      "backupKey": "objects/sources/1837a8ac44408e864966b0de2754313df034216dccb66ca590987b3568e897e7.webp"
+    },
+    "assets/characters/minsu/expressions/begging_lust/01/sprite.png": {
+      "sha256": "ea2e8600daac725bea6bd16d293d613e3d685a2f47426d3f3c0efdc2ade1be5f",
+      "bytes": 1476016,
+      "backupKey": "objects/sources/ea2e8600daac725bea6bd16d293d613e3d685a2f47426d3f3c0efdc2ade1be5f.png"
+    },
+    "assets/characters/minsu/expressions/begging_lust/01/sprite.webp": {
+      "sha256": "457163b9f81fea76aba890c402ca0f9fe027825a005703d283149473a793fe7c",
+      "bytes": 112703,
+      "backupKey": "objects/sources/457163b9f81fea76aba890c402ca0f9fe027825a005703d283149473a793fe7c.webp"
+    },
+    "assets/characters/minsu/expressions/betrayed/01/sprite.png": {
+      "sha256": "bcfead1e91329e709e82929099efb2e04892cd336ceaeb8904a55676f65c2d4e",
+      "bytes": 1373176,
+      "backupKey": "objects/sources/bcfead1e91329e709e82929099efb2e04892cd336ceaeb8904a55676f65c2d4e.png"
+    },
+    "assets/characters/minsu/expressions/betrayed/01/sprite.webp": {
+      "sha256": "dd5edc7231da955f4e174c394a641ca9577d61db648f067a514b38109883ba60",
+      "bytes": 99207,
+      "backupKey": "objects/sources/dd5edc7231da955f4e174c394a641ca9577d61db648f067a514b38109883ba60.webp"
+    },
+    "assets/characters/minsu/expressions/combat_ready/01/sprite.png": {
+      "sha256": "84f712163458e6c1eafd533199cdef7f6fe04d12ae807af62da26f8d4dab09d9",
+      "bytes": 1354490,
+      "backupKey": "objects/sources/84f712163458e6c1eafd533199cdef7f6fe04d12ae807af62da26f8d4dab09d9.png"
+    },
+    "assets/characters/minsu/expressions/combat_ready/01/sprite.webp": {
+      "sha256": "2823ea9a75266c5a1da668a5e5736d136031612d0ad66febd43c3ebac352fc3d",
+      "bytes": 91521,
+      "backupKey": "objects/sources/2823ea9a75266c5a1da668a5e5736d136031612d0ad66febd43c3ebac352fc3d.webp"
+    },
+    "assets/characters/minsu/expressions/dominant_aroused/01/sprite.png": {
+      "sha256": "fde8e7f7ba62ae7bfbc4bae526e17885be4b41bb6e368a821a6bd75f56dac268",
+      "bytes": 1578462,
+      "backupKey": "objects/sources/fde8e7f7ba62ae7bfbc4bae526e17885be4b41bb6e368a821a6bd75f56dac268.png"
+    },
+    "assets/characters/minsu/expressions/dominant_aroused/01/sprite.webp": {
+      "sha256": "510974d9900d2bcff0fbd81cd9f70276637266d1a8097382fb0e1fe94631683e",
+      "bytes": 140291,
+      "backupKey": "objects/sources/510974d9900d2bcff0fbd81cd9f70276637266d1a8097382fb0e1fe94631683e.webp"
+    },
+    "assets/characters/minsu/expressions/enduring/01/sprite.png": {
+      "sha256": "e3e758f65078a2656b1f3bbb03e41398e821deef89f3bbb9aca767b4d992443c",
+      "bytes": 1536347,
+      "backupKey": "objects/sources/e3e758f65078a2656b1f3bbb03e41398e821deef89f3bbb9aca767b4d992443c.png"
+    },
+    "assets/characters/minsu/expressions/enduring/01/sprite.webp": {
+      "sha256": "27dd627e93b2e072313c4e0552c6515f041ee95e6d56411899e7394a3548733f",
+      "bytes": 130647,
+      "backupKey": "objects/sources/27dd627e93b2e072313c4e0552c6515f041ee95e6d56411899e7394a3548733f.webp"
+    },
+    "assets/characters/minsu/expressions/groggy/01/sprite.png": {
+      "sha256": "a9635a5be076481cbe33b168ef49a954ce6d0e5d0642086f9fbc5d2f9f511d9b",
+      "bytes": 1367512,
+      "backupKey": "objects/sources/a9635a5be076481cbe33b168ef49a954ce6d0e5d0642086f9fbc5d2f9f511d9b.png"
+    },
+    "assets/characters/minsu/expressions/groggy/01/sprite.webp": {
+      "sha256": "a21da10f5424ed16ed6480502ca47b59bd124ad0ff0f9ccd36f06b5e169b06c0",
+      "bytes": 97055,
+      "backupKey": "objects/sources/a21da10f5424ed16ed6480502ca47b59bd124ad0ff0f9ccd36f06b5e169b06c0.webp"
+    },
+    "assets/characters/minsu/expressions/messy_afterglow/01/sprite.png": {
+      "sha256": "671a83275a55fda3995c7d5446ff6f1d8eb97b25e8387bd2106421290bc09f15",
+      "bytes": 1703404,
+      "backupKey": "objects/sources/671a83275a55fda3995c7d5446ff6f1d8eb97b25e8387bd2106421290bc09f15.png"
+    },
+    "assets/characters/minsu/expressions/messy_afterglow/01/sprite.webp": {
+      "sha256": "bf41a3184f70042bac1d600383bfec198028775978deb5923b967d70d3f87754",
+      "bytes": 148821,
+      "backupKey": "objects/sources/bf41a3184f70042bac1d600383bfec198028775978deb5923b967d70d3f87754.webp"
+    },
+    "assets/characters/minsu/expressions/oral_service/01/sprite.png": {
+      "sha256": "ffbde2598434890aaee1148e40082b5e02a5616c2534d3025b7cb85914964980",
+      "bytes": 1451405,
+      "backupKey": "objects/sources/ffbde2598434890aaee1148e40082b5e02a5616c2534d3025b7cb85914964980.png"
+    },
+    "assets/characters/minsu/expressions/oral_service/01/sprite.webp": {
+      "sha256": "f38933f326d0c96207347a71378e60a10be1a37b0ac8aba1e0d08ab2885edfa3",
+      "bytes": 118227,
+      "backupKey": "objects/sources/f38933f326d0c96207347a71378e60a10be1a37b0ac8aba1e0d08ab2885edfa3.webp"
+    },
+    "assets/characters/minsu/expressions/scheming/01/sprite.png": {
+      "sha256": "bdabafa354aa05dde9cb2f9b3035c8787410706be28fe3448e67cf124bfe7c0e",
+      "bytes": 1372712,
+      "backupKey": "objects/sources/bdabafa354aa05dde9cb2f9b3035c8787410706be28fe3448e67cf124bfe7c0e.png"
+    },
+    "assets/characters/minsu/expressions/scheming/01/sprite.webp": {
+      "sha256": "a39c56752c3fd603d983ed8f66ac39d278df7a2b719fc942d600473720a135e8",
+      "bytes": 99411,
+      "backupKey": "objects/sources/a39c56752c3fd603d983ed8f66ac39d278df7a2b719fc942d600473720a135e8.webp"
+    },
+    "assets/characters/minsu/expressions/touched/01/sprite.png": {
+      "sha256": "3c9f8ac421499689cb784504fc44218ae0dd29327a9b5eecae485c777f8e05a1",
+      "bytes": 1358588,
+      "backupKey": "objects/sources/3c9f8ac421499689cb784504fc44218ae0dd29327a9b5eecae485c777f8e05a1.png"
+    },
+    "assets/characters/minsu/expressions/touched/01/sprite.webp": {
+      "sha256": "31b609935189eeaf8a3620c2a84aded83ae23e513db23f73a5e6d1eda46c2534",
+      "bytes": 93183,
+      "backupKey": "objects/sources/31b609935189eeaf8a3620c2a84aded83ae23e513db23f73a5e6d1eda46c2534.webp"
+    },
+    "assets/characters/minsu/expressions/undressed_shy/01/sprite.png": {
+      "sha256": "9761a5b9438a45ae8be17798ff06012a49a4eb493a2a4838cba7ccc9a54347b1",
+      "bytes": 1774211,
+      "backupKey": "objects/sources/9761a5b9438a45ae8be17798ff06012a49a4eb493a2a4838cba7ccc9a54347b1.png"
+    },
+    "assets/characters/minsu/expressions/undressed_shy/01/sprite.webp": {
+      "sha256": "7855ee845a449dfda8fda420b1408d718f90ca944d3453ab82cc55b853121d40",
+      "bytes": 161287,
+      "backupKey": "objects/sources/7855ee845a449dfda8fda420b1408d718f90ca944d3453ab82cc55b853121d40.webp"
+    },
+    "assets/characters/nurse/expressions/begging_lust/01/sprite.png": {
+      "sha256": "a7d98c13a3bb7aa6aec754337050e3c5ae0408c624fe987bca3c8b021c8d1d5c",
+      "bytes": 1761056,
+      "backupKey": "objects/sources/a7d98c13a3bb7aa6aec754337050e3c5ae0408c624fe987bca3c8b021c8d1d5c.png"
+    },
+    "assets/characters/nurse/expressions/begging_lust/01/sprite.webp": {
+      "sha256": "79bec4c48f0b0330f2171a816373c4e69b212382184edbe9f1ff523bfb89ef32",
+      "bytes": 183753,
+      "backupKey": "objects/sources/79bec4c48f0b0330f2171a816373c4e69b212382184edbe9f1ff523bfb89ef32.webp"
+    },
+    "assets/characters/nurse/expressions/betrayed/01/sprite.png": {
+      "sha256": "c79f8582b76691f9484f884c1c3fd103df78a1e283c61d26e24064ec3586810c",
+      "bytes": 1647959,
+      "backupKey": "objects/sources/c79f8582b76691f9484f884c1c3fd103df78a1e283c61d26e24064ec3586810c.png"
+    },
+    "assets/characters/nurse/expressions/betrayed/01/sprite.webp": {
+      "sha256": "e2fff54b56322cf820cbf8b93a89c6d1b3b750835b845f1975794fc2a7fad397",
+      "bytes": 165269,
+      "backupKey": "objects/sources/e2fff54b56322cf820cbf8b93a89c6d1b3b750835b845f1975794fc2a7fad397.webp"
+    },
+    "assets/characters/nurse/expressions/combat_ready/01/sprite.png": {
+      "sha256": "039fa2fa6cc5a136e97583c1a67867d4d8bb1d75189e40f1470a0f8218faa1c8",
+      "bytes": 1619017,
+      "backupKey": "objects/sources/039fa2fa6cc5a136e97583c1a67867d4d8bb1d75189e40f1470a0f8218faa1c8.png"
+    },
+    "assets/characters/nurse/expressions/combat_ready/01/sprite.webp": {
+      "sha256": "6b028fa4ab5ae9ea1560de02dffcab6bc9f18b17a4a6f59c32f8c66750f5349b",
+      "bytes": 158309,
+      "backupKey": "objects/sources/6b028fa4ab5ae9ea1560de02dffcab6bc9f18b17a4a6f59c32f8c66750f5349b.webp"
+    },
+    "assets/characters/nurse/expressions/dominant_aroused/01/sprite.png": {
+      "sha256": "c6162a0da0b41bd1a13f1e8153c138f7d0c907621c404d934ead34e2c63622ee",
+      "bytes": 1759056,
+      "backupKey": "objects/sources/c6162a0da0b41bd1a13f1e8153c138f7d0c907621c404d934ead34e2c63622ee.png"
+    },
+    "assets/characters/nurse/expressions/dominant_aroused/01/sprite.webp": {
+      "sha256": "38fe5357d0b31189a4ae0fa3f571dbbc67fa965a3989406c8e381c6d1b78891f",
+      "bytes": 183533,
+      "backupKey": "objects/sources/38fe5357d0b31189a4ae0fa3f571dbbc67fa965a3989406c8e381c6d1b78891f.webp"
+    },
+    "assets/characters/nurse/expressions/enduring/01/sprite.png": {
+      "sha256": "f376c1a48d41604507d386c47abe4233e5bd6592fa4ff4c4c4e75928734d3b70",
+      "bytes": 1851200,
+      "backupKey": "objects/sources/f376c1a48d41604507d386c47abe4233e5bd6592fa4ff4c4c4e75928734d3b70.png"
+    },
+    "assets/characters/nurse/expressions/enduring/01/sprite.webp": {
+      "sha256": "d18289d56735d8fc4ce530ca1c729b06464815e36f13454b6f5c75a2d6925bc3",
+      "bytes": 185551,
+      "backupKey": "objects/sources/d18289d56735d8fc4ce530ca1c729b06464815e36f13454b6f5c75a2d6925bc3.webp"
+    },
+    "assets/characters/nurse/expressions/groggy/01/sprite.png": {
+      "sha256": "45d5cfd98721bfea9c0246e448bf5acebd7adbf1446718fe0e91e4ca8f1eedc8",
+      "bytes": 1653948,
+      "backupKey": "objects/sources/45d5cfd98721bfea9c0246e448bf5acebd7adbf1446718fe0e91e4ca8f1eedc8.png"
+    },
+    "assets/characters/nurse/expressions/groggy/01/sprite.webp": {
+      "sha256": "9f4e7f6bb1e80a97ea3cffae580d7f26365d4480f79f4a6d4ec6d33e9df1e78a",
+      "bytes": 166629,
+      "backupKey": "objects/sources/9f4e7f6bb1e80a97ea3cffae580d7f26365d4480f79f4a6d4ec6d33e9df1e78a.webp"
+    },
+    "assets/characters/nurse/expressions/messy_afterglow/01/sprite.png": {
+      "sha256": "7f4a95891a0df69ee237283333d76b5d0fba6e1ddfc662f95be4881a994f6a2a",
+      "bytes": 1795851,
+      "backupKey": "objects/sources/7f4a95891a0df69ee237283333d76b5d0fba6e1ddfc662f95be4881a994f6a2a.png"
+    },
+    "assets/characters/nurse/expressions/messy_afterglow/01/sprite.webp": {
+      "sha256": "fa3c726397f5a4d973955628937159703373d0386becb95c82d16687181e8507",
+      "bytes": 195409,
+      "backupKey": "objects/sources/fa3c726397f5a4d973955628937159703373d0386becb95c82d16687181e8507.webp"
+    },
+    "assets/characters/nurse/expressions/oral_service/01/sprite.png": {
+      "sha256": "54f7fb701647809ea89fb6cda0299899fa3c6a75af6899b9e72294217205a731",
+      "bytes": 1649160,
+      "backupKey": "objects/sources/54f7fb701647809ea89fb6cda0299899fa3c6a75af6899b9e72294217205a731.png"
+    },
+    "assets/characters/nurse/expressions/oral_service/01/sprite.webp": {
+      "sha256": "194e352f48e6448175be77225fb3b0723ea8f8c862333315bdf6fca50bc17c84",
+      "bytes": 164411,
+      "backupKey": "objects/sources/194e352f48e6448175be77225fb3b0723ea8f8c862333315bdf6fca50bc17c84.webp"
+    },
+    "assets/characters/nurse/expressions/scheming/01/sprite.png": {
+      "sha256": "463e738b113b1a379e8f14fab09ecd7f315898a40b40b27435e0ee571b43cb16",
+      "bytes": 1650411,
+      "backupKey": "objects/sources/463e738b113b1a379e8f14fab09ecd7f315898a40b40b27435e0ee571b43cb16.png"
+    },
+    "assets/characters/nurse/expressions/scheming/01/sprite.webp": {
+      "sha256": "d2c6889c8786b7981c17e7ffb3495399fc772cc41d05d900564cae9a40db0a82",
+      "bytes": 165611,
+      "backupKey": "objects/sources/d2c6889c8786b7981c17e7ffb3495399fc772cc41d05d900564cae9a40db0a82.webp"
+    },
+    "assets/characters/nurse/expressions/touched/01/sprite.png": {
+      "sha256": "d504826d455ceb9d98a9cdcf121d8e7931391b4370bf0ee3502a479adfa2d528",
+      "bytes": 1622377,
+      "backupKey": "objects/sources/d504826d455ceb9d98a9cdcf121d8e7931391b4370bf0ee3502a479adfa2d528.png"
+    },
+    "assets/characters/nurse/expressions/touched/01/sprite.webp": {
+      "sha256": "121b2431221505fdaf4b99b358b3e7f8ed86c85f0cbffd91cf40a65e2335bb70",
+      "bytes": 158153,
+      "backupKey": "objects/sources/121b2431221505fdaf4b99b358b3e7f8ed86c85f0cbffd91cf40a65e2335bb70.webp"
+    },
+    "assets/characters/nurse/expressions/undressed_shy/01/sprite.png": {
+      "sha256": "4c849c768de09454c51afecd6c0bbabcbf2f6ccbab1757b4a4fd2084a40b029e",
+      "bytes": 1885964,
+      "backupKey": "objects/sources/4c849c768de09454c51afecd6c0bbabcbf2f6ccbab1757b4a4fd2084a40b029e.png"
+    },
+    "assets/characters/nurse/expressions/undressed_shy/01/sprite.webp": {
+      "sha256": "297d3066f98e4552678712f725bd1ccc70e7ca0f85abf397e53286b628f6a17d",
+      "bytes": 204953,
+      "backupKey": "objects/sources/297d3066f98e4552678712f725bd1ccc70e7ca0f85abf397e53286b628f6a17d.webp"
+    },
+    "assets/characters/seoyeon/expressions/begging_lust/01/sprite.png": {
+      "sha256": "e49d9400faf0f92df83cede040f0d27f084ed5cd9546cb3205bbc9ae0314e73b",
+      "bytes": 1332499,
+      "backupKey": "objects/sources/e49d9400faf0f92df83cede040f0d27f084ed5cd9546cb3205bbc9ae0314e73b.png"
+    },
+    "assets/characters/seoyeon/expressions/begging_lust/01/sprite.webp": {
+      "sha256": "97e3d91a0bb0d48f41e591b3e4444ef924fa15bd6715d39b657ac10f43e496c7",
+      "bytes": 147571,
+      "backupKey": "objects/sources/97e3d91a0bb0d48f41e591b3e4444ef924fa15bd6715d39b657ac10f43e496c7.webp"
+    },
+    "assets/characters/seoyeon/expressions/betrayed/01/sprite.png": {
+      "sha256": "f7ef524ce8d80b77e64e1c401fb81bbb5d0c3f722512e7a847899e0070ae2f39",
+      "bytes": 1294777,
+      "backupKey": "objects/sources/f7ef524ce8d80b77e64e1c401fb81bbb5d0c3f722512e7a847899e0070ae2f39.png"
+    },
+    "assets/characters/seoyeon/expressions/betrayed/01/sprite.webp": {
+      "sha256": "ababfe026dee8a3397ee309a0eb3d2e855d7c0d14b566224d6d8abba7560ae4f",
+      "bytes": 147701,
+      "backupKey": "objects/sources/ababfe026dee8a3397ee309a0eb3d2e855d7c0d14b566224d6d8abba7560ae4f.webp"
+    },
+    "assets/characters/seoyeon/expressions/combat_ready/01/sprite.png": {
+      "sha256": "de176d27eb0386247351a032f0f961922bc0779826ae341f50bd5cc1caa9c0d1",
+      "bytes": 1264154,
+      "backupKey": "objects/sources/de176d27eb0386247351a032f0f961922bc0779826ae341f50bd5cc1caa9c0d1.png"
+    },
+    "assets/characters/seoyeon/expressions/combat_ready/01/sprite.webp": {
+      "sha256": "69b664c925b8847c675640c29ae51bbd4fb2b4e346cb5bcce9dc2ae5377fa5c6",
+      "bytes": 135279,
+      "backupKey": "objects/sources/69b664c925b8847c675640c29ae51bbd4fb2b4e346cb5bcce9dc2ae5377fa5c6.webp"
+    },
+    "assets/characters/seoyeon/expressions/dominant_aroused/01/sprite.png": {
+      "sha256": "4718a802804234820070037631fc63fa0b5ba35e04f579d733ad9b7213f5d53c",
+      "bytes": 1484543,
+      "backupKey": "objects/sources/4718a802804234820070037631fc63fa0b5ba35e04f579d733ad9b7213f5d53c.png"
+    },
+    "assets/characters/seoyeon/expressions/dominant_aroused/01/sprite.webp": {
+      "sha256": "280e7087b9ead257bf3e93b964d78734b1ff9418a914e29f71534cba7353d69c",
+      "bytes": 169075,
+      "backupKey": "objects/sources/280e7087b9ead257bf3e93b964d78734b1ff9418a914e29f71534cba7353d69c.webp"
+    },
+    "assets/characters/seoyeon/expressions/enduring/01/sprite.png": {
+      "sha256": "db771b5a7004a4a563e5296e8a93aab2562c436f84327420e73a2cc27d042ad4",
+      "bytes": 1482689,
+      "backupKey": "objects/sources/db771b5a7004a4a563e5296e8a93aab2562c436f84327420e73a2cc27d042ad4.png"
+    },
+    "assets/characters/seoyeon/expressions/enduring/01/sprite.webp": {
+      "sha256": "ad2afbb90a06272890f31df596e07bf3d26e83881b21a9d6cdbaf049983a61de",
+      "bytes": 165145,
+      "backupKey": "objects/sources/ad2afbb90a06272890f31df596e07bf3d26e83881b21a9d6cdbaf049983a61de.webp"
+    },
+    "assets/characters/seoyeon/expressions/groggy/01/sprite.png": {
+      "sha256": "4e403cabc0eadabc6ab77b96ceeead80f94d5aafe89299bcf3a6e975a03fbe63",
+      "bytes": 1292761,
+      "backupKey": "objects/sources/4e403cabc0eadabc6ab77b96ceeead80f94d5aafe89299bcf3a6e975a03fbe63.png"
+    },
+    "assets/characters/seoyeon/expressions/groggy/01/sprite.webp": {
+      "sha256": "ccc2a0d8b78c505644dc904f596e17b8048f3e051762bd888da59cfc2e54b548",
+      "bytes": 145353,
+      "backupKey": "objects/sources/ccc2a0d8b78c505644dc904f596e17b8048f3e051762bd888da59cfc2e54b548.webp"
+    },
+    "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.png": {
+      "sha256": "6f0a9a4aace75b7b3a99a6b74fd8e02f30ced601bbf286aef26183d91a0eb37f",
+      "bytes": 1119588,
+      "backupKey": "objects/sources/6f0a9a4aace75b7b3a99a6b74fd8e02f30ced601bbf286aef26183d91a0eb37f.png"
+    },
+    "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.webp": {
+      "sha256": "50b1670ce7df41deb8bb3be5e2696e4a46259c8f47c1aec84958550add61327e",
+      "bytes": 160217,
+      "backupKey": "objects/sources/50b1670ce7df41deb8bb3be5e2696e4a46259c8f47c1aec84958550add61327e.webp"
+    },
+    "assets/characters/seoyeon/expressions/oral_service/01/sprite.png": {
+      "sha256": "3a4964e76cc5b23ee4d2cafd03090475d5bd9729f551b7169e4392aec279c230",
+      "bytes": 1299663,
+      "backupKey": "objects/sources/3a4964e76cc5b23ee4d2cafd03090475d5bd9729f551b7169e4392aec279c230.png"
+    },
+    "assets/characters/seoyeon/expressions/oral_service/01/sprite.webp": {
+      "sha256": "4d126f2a00846e55bc928319738fff93f99cf33a2e0f77056d43e8df80b3ebc8",
+      "bytes": 147673,
+      "backupKey": "objects/sources/4d126f2a00846e55bc928319738fff93f99cf33a2e0f77056d43e8df80b3ebc8.webp"
+    },
+    "assets/characters/seoyeon/expressions/scheming/01/sprite.png": {
+      "sha256": "351d762bac1ea5af6c94fb4dd318b2560b29180e0bd2741597e3669acb761964",
+      "bytes": 1298826,
+      "backupKey": "objects/sources/351d762bac1ea5af6c94fb4dd318b2560b29180e0bd2741597e3669acb761964.png"
+    },
+    "assets/characters/seoyeon/expressions/scheming/01/sprite.webp": {
+      "sha256": "938bdc314f19ee56aa1ba78ea616315f30b0eea918a67b5eade8ab914f71e44e",
+      "bytes": 148767,
+      "backupKey": "objects/sources/938bdc314f19ee56aa1ba78ea616315f30b0eea918a67b5eade8ab914f71e44e.webp"
+    },
+    "assets/characters/seoyeon/expressions/touched/01/sprite.png": {
+      "sha256": "9d4cca9718b3a2bb32343ef3715a3d87fad6547e9fe2d474bb39a867fffd2f30",
+      "bytes": 1268174,
+      "backupKey": "objects/sources/9d4cca9718b3a2bb32343ef3715a3d87fad6547e9fe2d474bb39a867fffd2f30.png"
+    },
+    "assets/characters/seoyeon/expressions/touched/01/sprite.webp": {
+      "sha256": "a0f1065005c7727381acb24361f03be223be52d59c1ebdb4d8fabc3a7d8882d7",
+      "bytes": 132767,
+      "backupKey": "objects/sources/a0f1065005c7727381acb24361f03be223be52d59c1ebdb4d8fabc3a7d8882d7.webp"
+    },
+    "assets/characters/seoyeon/expressions/undressed_shy/01/sprite.png": {
+      "sha256": "8485da0197f020fdb8dda4cead2615ae58f1fd40429f98a18ee2ae25439f5f90",
+      "bytes": 1131644,
+      "backupKey": "objects/sources/8485da0197f020fdb8dda4cead2615ae58f1fd40429f98a18ee2ae25439f5f90.png"
+    },
+    "assets/characters/seoyeon/expressions/undressed_shy/01/sprite.webp": {
+      "sha256": "50fc6d3ec62a853c59c677926d80f585b8138adf82d34b5d5713ecffd1c0ca28",
+      "bytes": 153055,
+      "backupKey": "objects/sources/50fc6d3ec62a853c59c677926d80f585b8138adf82d34b5d5713ecffd1c0ca28.webp"
+    },
+    "assets/characters/teacher/expressions/begging_lust/01/sprite.png": {
+      "sha256": "d2ec954525ade2545fa6b5e32134d5950f6a853e016e3491ed94da18b86c4ba3",
+      "bytes": 1465959,
+      "backupKey": "objects/sources/d2ec954525ade2545fa6b5e32134d5950f6a853e016e3491ed94da18b86c4ba3.png"
+    },
+    "assets/characters/teacher/expressions/begging_lust/01/sprite.webp": {
+      "sha256": "9f10b336e7c4a56a70842073fe8030e3fa29d25ed52d136571e524e818225a0c",
+      "bytes": 141127,
+      "backupKey": "objects/sources/9f10b336e7c4a56a70842073fe8030e3fa29d25ed52d136571e524e818225a0c.webp"
+    },
+    "assets/characters/teacher/expressions/betrayed/01/sprite.png": {
+      "sha256": "96ce6651f6854537c17053767beed7a1680bb9280f16705de9be35a84b7fb1ea",
+      "bytes": 1418931,
+      "backupKey": "objects/sources/96ce6651f6854537c17053767beed7a1680bb9280f16705de9be35a84b7fb1ea.png"
+    },
+    "assets/characters/teacher/expressions/betrayed/01/sprite.webp": {
+      "sha256": "c8c359102ad8426bb735120078aeccfedc707e49b86017437f409d3d357e84c4",
+      "bytes": 142311,
+      "backupKey": "objects/sources/c8c359102ad8426bb735120078aeccfedc707e49b86017437f409d3d357e84c4.webp"
+    },
+    "assets/characters/teacher/expressions/combat_ready/01/sprite.png": {
+      "sha256": "3ae492cbf52e5332e5bd57e9b179cd3536c9ac2a7c9e4ec1d0042a67c3effdbf",
+      "bytes": 1371602,
+      "backupKey": "objects/sources/3ae492cbf52e5332e5bd57e9b179cd3536c9ac2a7c9e4ec1d0042a67c3effdbf.png"
+    },
+    "assets/characters/teacher/expressions/combat_ready/01/sprite.webp": {
+      "sha256": "f099d81b5e41b5092e31d2410dd39e32965ea3328aa51381d157f6150ae78742",
+      "bytes": 134647,
+      "backupKey": "objects/sources/f099d81b5e41b5092e31d2410dd39e32965ea3328aa51381d157f6150ae78742.webp"
+    },
+    "assets/characters/teacher/expressions/dominant_aroused/01/sprite.png": {
+      "sha256": "123e55c0a725ef50eee062f976ef0d8f691d60bf6cadbcd52962a800ca9a84a6",
+      "bytes": 1444693,
+      "backupKey": "objects/sources/123e55c0a725ef50eee062f976ef0d8f691d60bf6cadbcd52962a800ca9a84a6.png"
+    },
+    "assets/characters/teacher/expressions/dominant_aroused/01/sprite.webp": {
+      "sha256": "a7a5aa0c9c023c16f8e6e0d4535a62375ba6e0d362ced7cc3c16bdc035b2a243",
+      "bytes": 139107,
+      "backupKey": "objects/sources/a7a5aa0c9c023c16f8e6e0d4535a62375ba6e0d362ced7cc3c16bdc035b2a243.webp"
+    },
+    "assets/characters/teacher/expressions/enduring/01/sprite.png": {
+      "sha256": "7abd5e2ec1b28720b85c19231439b6234dc6e5b80f6d2cf20028f72c84c77721",
+      "bytes": 1530061,
+      "backupKey": "objects/sources/7abd5e2ec1b28720b85c19231439b6234dc6e5b80f6d2cf20028f72c84c77721.png"
+    },
+    "assets/characters/teacher/expressions/enduring/01/sprite.webp": {
+      "sha256": "ab54ff05a33cb2d51f43aa29303e933b7b526e1d9deb76d7e6122b2c0b61bb6f",
+      "bytes": 156115,
+      "backupKey": "objects/sources/ab54ff05a33cb2d51f43aa29303e933b7b526e1d9deb76d7e6122b2c0b61bb6f.webp"
+    },
+    "assets/characters/teacher/expressions/groggy/01/sprite.png": {
+      "sha256": "3c633e464a6cd2d36f4b044024d4f5864e6bf0c0d91aef350e1612276f49c123",
+      "bytes": 1412651,
+      "backupKey": "objects/sources/3c633e464a6cd2d36f4b044024d4f5864e6bf0c0d91aef350e1612276f49c123.png"
+    },
+    "assets/characters/teacher/expressions/groggy/01/sprite.webp": {
+      "sha256": "37def10b58430fa093cb3b16bf7db279fd97d374f79ddf47660bd01677bc30ac",
+      "bytes": 138601,
+      "backupKey": "objects/sources/37def10b58430fa093cb3b16bf7db279fd97d374f79ddf47660bd01677bc30ac.webp"
+    },
+    "assets/characters/teacher/expressions/messy_afterglow/01/sprite.png": {
+      "sha256": "9dd55b9cb61d23457106cb9229946c7993700d06dadc7c79c0984dfc3b322a8d",
+      "bytes": 1484741,
+      "backupKey": "objects/sources/9dd55b9cb61d23457106cb9229946c7993700d06dadc7c79c0984dfc3b322a8d.png"
+    },
+    "assets/characters/teacher/expressions/messy_afterglow/01/sprite.webp": {
+      "sha256": "3c06b3dfa5590b63213e3944d3b96c0a1dce995ee23da637275ea7ad4d3ec1df",
+      "bytes": 147789,
+      "backupKey": "objects/sources/3c06b3dfa5590b63213e3944d3b96c0a1dce995ee23da637275ea7ad4d3ec1df.webp"
+    },
+    "assets/characters/teacher/expressions/oral_service/01/sprite.png": {
+      "sha256": "3b21542f443981843ace3e0046644b9401c49b4156ee70e6c6b42e89e393c056",
+      "bytes": 1466696,
+      "backupKey": "objects/sources/3b21542f443981843ace3e0046644b9401c49b4156ee70e6c6b42e89e393c056.png"
+    },
+    "assets/characters/teacher/expressions/oral_service/01/sprite.webp": {
+      "sha256": "2c04b36cbf2b52112895af088a6f98be3289bb77bdc1b0b50a1d465cc201e81f",
+      "bytes": 141087,
+      "backupKey": "objects/sources/2c04b36cbf2b52112895af088a6f98be3289bb77bdc1b0b50a1d465cc201e81f.webp"
+    },
+    "assets/characters/teacher/expressions/scheming/01/sprite.png": {
+      "sha256": "30aea02236778e77185ac765d2fff8ea25a2abcbb0eb0b19476aa896b6c53221",
+      "bytes": 1419237,
+      "backupKey": "objects/sources/30aea02236778e77185ac765d2fff8ea25a2abcbb0eb0b19476aa896b6c53221.png"
+    },
+    "assets/characters/teacher/expressions/scheming/01/sprite.webp": {
+      "sha256": "96a9392e66b753ec3d1026e118b8c6e1890e24e65dc111000f7ae5e6bd9ded8c",
+      "bytes": 142311,
+      "backupKey": "objects/sources/96a9392e66b753ec3d1026e118b8c6e1890e24e65dc111000f7ae5e6bd9ded8c.webp"
+    },
+    "assets/characters/teacher/expressions/touched/01/sprite.png": {
+      "sha256": "96954c0d4174187da53069fbc2e67233d3534ba384bef449a5bf396e9779e812",
+      "bytes": 1378110,
+      "backupKey": "objects/sources/96954c0d4174187da53069fbc2e67233d3534ba384bef449a5bf396e9779e812.png"
+    },
+    "assets/characters/teacher/expressions/touched/01/sprite.webp": {
+      "sha256": "32cc13d4aebb31e8bf2b7c5af01911ec587a827506abad9babf0fb71892946a8",
+      "bytes": 135779,
+      "backupKey": "objects/sources/32cc13d4aebb31e8bf2b7c5af01911ec587a827506abad9babf0fb71892946a8.webp"
+    },
+    "assets/characters/teacher/expressions/undressed_shy/01/sprite.png": {
+      "sha256": "6cdda2bb5c5bbec834502d155c1f00b9c0e4f42477c0705dbf2236e3c3677c2b",
+      "bytes": 1538004,
+      "backupKey": "objects/sources/6cdda2bb5c5bbec834502d155c1f00b9c0e4f42477c0705dbf2236e3c3677c2b.png"
+    },
+    "assets/characters/teacher/expressions/undressed_shy/01/sprite.webp": {
+      "sha256": "c2cfe4821f6c4017e491b44ee0e7fe5fc353c57e4fd9af5c7730234dac71784e",
+      "bytes": 169393,
+      "backupKey": "objects/sources/c2cfe4821f6c4017e491b44ee0e7fe5fc353c57e4fd9af5c7730234dac71784e.webp"
+    },
+    "assets/characters/yuna/expressions/begging_lust/01/sprite.png": {
+      "sha256": "a1fb9789e5512a2222f16859844f6b8712f145ebe1b3764b4dfec5b6929300a8",
+      "bytes": 1681942,
+      "backupKey": "objects/sources/a1fb9789e5512a2222f16859844f6b8712f145ebe1b3764b4dfec5b6929300a8.png"
+    },
+    "assets/characters/yuna/expressions/begging_lust/01/sprite.webp": {
+      "sha256": "7a427d628e17c8ab835e6b523148353b865da93e1330e0b0205e7cee87e9b54a",
+      "bytes": 197781,
+      "backupKey": "objects/sources/7a427d628e17c8ab835e6b523148353b865da93e1330e0b0205e7cee87e9b54a.webp"
+    },
+    "assets/characters/yuna/expressions/betrayed/01/sprite.png": {
+      "sha256": "5e9412c36612ff381ad303e296a361cf1d2329f216cba56282b9d6e544614015",
+      "bytes": 1423207,
+      "backupKey": "objects/sources/5e9412c36612ff381ad303e296a361cf1d2329f216cba56282b9d6e544614015.png"
+    },
+    "assets/characters/yuna/expressions/betrayed/01/sprite.webp": {
+      "sha256": "10e4714f75ca6fb7ddd5a34bdac794888140724c21dd6489999457721c7fb0bb",
+      "bytes": 204613,
+      "backupKey": "objects/sources/10e4714f75ca6fb7ddd5a34bdac794888140724c21dd6489999457721c7fb0bb.webp"
+    },
+    "assets/characters/yuna/expressions/combat_ready/01/sprite.png": {
+      "sha256": "25ec17445b581fceb898bb7be41df88cf16d1d1bd5bb9e5e502274d768928e58",
+      "bytes": 1488875,
+      "backupKey": "objects/sources/25ec17445b581fceb898bb7be41df88cf16d1d1bd5bb9e5e502274d768928e58.png"
+    },
+    "assets/characters/yuna/expressions/combat_ready/01/sprite.webp": {
+      "sha256": "ad1476fbcd28f89d48c24390120ca7b8cb4407ab4a7694690bda05f3ca90fcb5",
+      "bytes": 181599,
+      "backupKey": "objects/sources/ad1476fbcd28f89d48c24390120ca7b8cb4407ab4a7694690bda05f3ca90fcb5.webp"
+    },
+    "assets/characters/yuna/expressions/dominant_aroused/01/sprite.png": {
+      "sha256": "e8f3b577e4469c147135bdd96186f97802c626d438c95dd17492151c67ec99c3",
+      "bytes": 1676716,
+      "backupKey": "objects/sources/e8f3b577e4469c147135bdd96186f97802c626d438c95dd17492151c67ec99c3.png"
+    },
+    "assets/characters/yuna/expressions/dominant_aroused/01/sprite.webp": {
+      "sha256": "ffc3456cc5ba71e967159fdeb274f78eb2df4c95eb3b31e7c457b9d0ac2e2eeb",
+      "bytes": 196877,
+      "backupKey": "objects/sources/ffc3456cc5ba71e967159fdeb274f78eb2df4c95eb3b31e7c457b9d0ac2e2eeb.webp"
+    },
+    "assets/characters/yuna/expressions/enduring/01/sprite.png": {
+      "sha256": "a141aeb1c7b1e698ed5072b9da5d56e68b46244a6e4bed228463a2728f97faec",
+      "bytes": 1759932,
+      "backupKey": "objects/sources/a141aeb1c7b1e698ed5072b9da5d56e68b46244a6e4bed228463a2728f97faec.png"
+    },
+    "assets/characters/yuna/expressions/enduring/01/sprite.webp": {
+      "sha256": "22ab972bc5f4585b2bb6b6d4b5c8692d3725ea7583536ce571dc70a84747594d",
+      "bytes": 214239,
+      "backupKey": "objects/sources/22ab972bc5f4585b2bb6b6d4b5c8692d3725ea7583536ce571dc70a84747594d.webp"
+    },
+    "assets/characters/yuna/expressions/groggy/01/sprite.png": {
+      "sha256": "4fe98f594173b291814b4b4ac3cdc8b41769387c7a880331f229d849c55e1245",
+      "bytes": 1423084,
+      "backupKey": "objects/sources/4fe98f594173b291814b4b4ac3cdc8b41769387c7a880331f229d849c55e1245.png"
+    },
+    "assets/characters/yuna/expressions/groggy/01/sprite.webp": {
+      "sha256": "bbdbfdb883215f5076b69146701c3598a5a89ebbc2259216b6fc6086468803b1",
+      "bytes": 202329,
+      "backupKey": "objects/sources/bbdbfdb883215f5076b69146701c3598a5a89ebbc2259216b6fc6086468803b1.webp"
+    },
+    "assets/characters/yuna/expressions/messy_afterglow/01/sprite.png": {
+      "sha256": "ef3211fafa6d8c6c947d2b65e621f40876d878449d3506f06f88dd43e4ffcd03",
+      "bytes": 1589660,
+      "backupKey": "objects/sources/ef3211fafa6d8c6c947d2b65e621f40876d878449d3506f06f88dd43e4ffcd03.png"
+    },
+    "assets/characters/yuna/expressions/messy_afterglow/01/sprite.webp": {
+      "sha256": "b1cdbd257e5ae61b973fa267a02990c6058b04488c0a39760826edce6870e6c9",
+      "bytes": 178083,
+      "backupKey": "objects/sources/b1cdbd257e5ae61b973fa267a02990c6058b04488c0a39760826edce6870e6c9.webp"
+    },
+    "assets/characters/yuna/expressions/oral_service/01/sprite.png": {
+      "sha256": "888a570cf25da686efea610a1959534e7dfe3ab460a66c8af1f25d492c770006",
+      "bytes": 1681256,
+      "backupKey": "objects/sources/888a570cf25da686efea610a1959534e7dfe3ab460a66c8af1f25d492c770006.png"
+    },
+    "assets/characters/yuna/expressions/oral_service/01/sprite.webp": {
+      "sha256": "6af37923635cb41ac7528ec11f0f17b43124a84d929e5a2a4c9bc6c3f56be29b",
+      "bytes": 197597,
+      "backupKey": "objects/sources/6af37923635cb41ac7528ec11f0f17b43124a84d929e5a2a4c9bc6c3f56be29b.webp"
+    },
+    "assets/characters/yuna/expressions/scheming/01/sprite.png": {
+      "sha256": "4f9a8e814d6eff748e347f93275ca9ae5326555687cf5bd0b790ff80a05dbbe5",
+      "bytes": 1425834,
+      "backupKey": "objects/sources/4f9a8e814d6eff748e347f93275ca9ae5326555687cf5bd0b790ff80a05dbbe5.png"
+    },
+    "assets/characters/yuna/expressions/scheming/01/sprite.webp": {
+      "sha256": "206dc2429f03a2a0af24e55817b46243738176cf910b4e0fb49efe702d422b62",
+      "bytes": 205331,
+      "backupKey": "objects/sources/206dc2429f03a2a0af24e55817b46243738176cf910b4e0fb49efe702d422b62.webp"
+    },
+    "assets/characters/yuna/expressions/touched/01/sprite.png": {
+      "sha256": "ded29312ef8611106cc64313518cd6e8a46b4d918f0793bb9a1c46cddbffd566",
+      "bytes": 1493083,
+      "backupKey": "objects/sources/ded29312ef8611106cc64313518cd6e8a46b4d918f0793bb9a1c46cddbffd566.png"
+    },
+    "assets/characters/yuna/expressions/touched/01/sprite.webp": {
+      "sha256": "09f1386388386acec798a5d9ff88b222b65df640e0baec8e84a8feb355df67e8",
+      "bytes": 184605,
+      "backupKey": "objects/sources/09f1386388386acec798a5d9ff88b222b65df640e0baec8e84a8feb355df67e8.webp"
+    },
+    "assets/characters/yuna/expressions/undressed_shy/01/sprite.png": {
+      "sha256": "85f2d3ac8df89ab054cceea29fc370a1ce2edf14dba93e366c43de87e46c9623",
+      "bytes": 1624606,
+      "backupKey": "objects/sources/85f2d3ac8df89ab054cceea29fc370a1ce2edf14dba93e366c43de87e46c9623.png"
+    },
+    "assets/characters/yuna/expressions/undressed_shy/01/sprite.webp": {
+      "sha256": "17e1783615df3a2348e347acd2f3ee02528797eca05b1f8701c9da59c9728dd7",
+      "bytes": 188573,
+      "backupKey": "objects/sources/17e1783615df3a2348e347acd2f3ee02528797eca05b1f8701c9da59c9728dd7.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_begging_lust.png": {
+      "sha256": "72004238f9975ebbaebf800eb4a3b9a834db3c2c9a87429049f8cf256e4ed818",
+      "bytes": 1280777,
+      "backupKey": "objects/sources/72004238f9975ebbaebf800eb4a3b9a834db3c2c9a87429049f8cf256e4ed818.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_begging_lust.webp": {
+      "sha256": "11cc81ac52558b347e0278eea7f29071bb1bf7045d00e6fd6bb15aaa3aaf2b26",
+      "bytes": 141126,
+      "backupKey": "objects/sources/11cc81ac52558b347e0278eea7f29071bb1bf7045d00e6fd6bb15aaa3aaf2b26.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_betrayed.png": {
+      "sha256": "4ea74cfafa15406d5edb0c38a51a6a6271411574940f3a62329d7b866f899a0e",
+      "bytes": 1218996,
+      "backupKey": "objects/sources/4ea74cfafa15406d5edb0c38a51a6a6271411574940f3a62329d7b866f899a0e.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_betrayed.webp": {
+      "sha256": "083cfc0913a9e1e133a960781543152cab9d4f282a4480eb5ef23b514c3d165e",
+      "bytes": 155536,
+      "backupKey": "objects/sources/083cfc0913a9e1e133a960781543152cab9d4f282a4480eb5ef23b514c3d165e.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_combat_ready.png": {
+      "sha256": "a1c79d061c87d9a091d5906c051c9e70544eb9e8832408b35c779585ad517e74",
+      "bytes": 1227630,
+      "backupKey": "objects/sources/a1c79d061c87d9a091d5906c051c9e70544eb9e8832408b35c779585ad517e74.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_combat_ready.webp": {
+      "sha256": "0b441ba67b57cf0389a9cbd129e8f27f836dbb21bfee6b219ba230cdf6bfa6a3",
+      "bytes": 147026,
+      "backupKey": "objects/sources/0b441ba67b57cf0389a9cbd129e8f27f836dbb21bfee6b219ba230cdf6bfa6a3.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_dominant_aroused.png": {
+      "sha256": "e0d826b01a3f8ef4df055246656991f0061cabfac429c7b9569d0f6c41b6a079",
+      "bytes": 1390382,
+      "backupKey": "objects/sources/e0d826b01a3f8ef4df055246656991f0061cabfac429c7b9569d0f6c41b6a079.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_dominant_aroused.webp": {
+      "sha256": "f1cb70fc00a404976a2fb7f7346eb6ab7d8ded1b3cabc264d9849004c6945692",
+      "bytes": 143264,
+      "backupKey": "objects/sources/f1cb70fc00a404976a2fb7f7346eb6ab7d8ded1b3cabc264d9849004c6945692.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_enduring.png": {
+      "sha256": "ba001f97a76dd63d59a86c25056be5da7bdc2ee454e8ab2ac87d11af2d4324ca",
+      "bytes": 1422968,
+      "backupKey": "objects/sources/ba001f97a76dd63d59a86c25056be5da7bdc2ee454e8ab2ac87d11af2d4324ca.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_enduring.webp": {
+      "sha256": "2ea0949f2480776d0312b92232a9caa5cb31006176dcaf49ea6d686470d21051",
+      "bytes": 168020,
+      "backupKey": "objects/sources/2ea0949f2480776d0312b92232a9caa5cb31006176dcaf49ea6d686470d21051.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_groggy.png": {
+      "sha256": "0884fca9aff5343d84d9a201e0194bfa26985a65aa11d82a53200415c7e874c3",
+      "bytes": 1227431,
+      "backupKey": "objects/sources/0884fca9aff5343d84d9a201e0194bfa26985a65aa11d82a53200415c7e874c3.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_groggy.webp": {
+      "sha256": "c1405c83516c2efa33e99995024fb06a65eb2b1043eb1a29a6689680039833e0",
+      "bytes": 154486,
+      "backupKey": "objects/sources/c1405c83516c2efa33e99995024fb06a65eb2b1043eb1a29a6689680039833e0.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_messy_afterglow.png": {
+      "sha256": "72923948cad092f0caf84382d7d3e37b70cc18c0a4578c6a3c5ff340942e89ca",
+      "bytes": 1450359,
+      "backupKey": "objects/sources/72923948cad092f0caf84382d7d3e37b70cc18c0a4578c6a3c5ff340942e89ca.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_messy_afterglow.webp": {
+      "sha256": "d69bcd95f2a24c50c1ea2283e4840ffce32732db2c4b619465a7f5c58f2ccea3",
+      "bytes": 170990,
+      "backupKey": "objects/sources/d69bcd95f2a24c50c1ea2283e4840ffce32732db2c4b619465a7f5c58f2ccea3.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_oral_service.png": {
+      "sha256": "c1334ca4f3579b7fc434b4fd1847822d7e1bff6fd8bbb4af92741f48a1734eb4",
+      "bytes": 1330116,
+      "backupKey": "objects/sources/c1334ca4f3579b7fc434b4fd1847822d7e1bff6fd8bbb4af92741f48a1734eb4.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_oral_service.webp": {
+      "sha256": "20287f2a9f0fddb93be4889e53638ef4a2821aef2a684ec850802efbc56968e3",
+      "bytes": 144926,
+      "backupKey": "objects/sources/20287f2a9f0fddb93be4889e53638ef4a2821aef2a684ec850802efbc56968e3.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_scheming.png": {
+      "sha256": "0b4eee377cae92763a4819be921d7ac7b848ed4bcf1e20c7586282cdae0567b2",
+      "bytes": 1225928,
+      "backupKey": "objects/sources/0b4eee377cae92763a4819be921d7ac7b848ed4bcf1e20c7586282cdae0567b2.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_scheming.webp": {
+      "sha256": "86a2daa7a095fdb001793e5a78db5626affa1a010ff9408100971ed43fff74d7",
+      "bytes": 156456,
+      "backupKey": "objects/sources/86a2daa7a095fdb001793e5a78db5626affa1a010ff9408100971ed43fff74d7.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_touched.png": {
+      "sha256": "0d10577c332a0506fc14e3152f005a5811c735897dc2f0d525a6345dc63d356e",
+      "bytes": 1234999,
+      "backupKey": "objects/sources/0d10577c332a0506fc14e3152f005a5811c735897dc2f0d525a6345dc63d356e.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_touched.webp": {
+      "sha256": "7616ab5486fd1781de2e504e575fc6c636d2a7f7175b7aa4cc41b644dcfc8a30",
+      "bytes": 148202,
+      "backupKey": "objects/sources/7616ab5486fd1781de2e504e575fc6c636d2a7f7175b7aa4cc41b644dcfc8a30.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_undressed_shy.png": {
+      "sha256": "34a9820e88eba03650d915b177becf828e82f9ad6fd362ab6806ad3bebab4a65",
+      "bytes": 1363570,
+      "backupKey": "objects/sources/34a9820e88eba03650d915b177becf828e82f9ad6fd362ab6806ad3bebab4a65.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/dain_undressed_shy.webp": {
+      "sha256": "61b3105724d2804a0e8e4970c25a7247ad33bece21481af24ab4aeae2c559850",
+      "bytes": 161400,
+      "backupKey": "objects/sources/61b3105724d2804a0e8e4970c25a7247ad33bece21481af24ab4aeae2c559850.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_begging_lust.png": {
+      "sha256": "f391e39fded8b92f57f6869a64c7d1d5bdbef0e16d1d5af5e8ea22d8f3d2306a",
+      "bytes": 1488824,
+      "backupKey": "objects/sources/f391e39fded8b92f57f6869a64c7d1d5bdbef0e16d1d5af5e8ea22d8f3d2306a.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_begging_lust.webp": {
+      "sha256": "4a14b687643da21104adb1fb4936c249a3e80b318d374a1b07c6be8c169c3593",
+      "bytes": 129480,
+      "backupKey": "objects/sources/4a14b687643da21104adb1fb4936c249a3e80b318d374a1b07c6be8c169c3593.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_betrayed.png": {
+      "sha256": "187e66943c20e2938b7f3cbe60bf622eea94d0833e301595250256bccb97d807",
+      "bytes": 1169795,
+      "backupKey": "objects/sources/187e66943c20e2938b7f3cbe60bf622eea94d0833e301595250256bccb97d807.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_betrayed.webp": {
+      "sha256": "6d1cae70237cc49d51d4fec020caa8640d08d0166fa23300fd8293db93b36bfa",
+      "bytes": 117038,
+      "backupKey": "objects/sources/6d1cae70237cc49d51d4fec020caa8640d08d0166fa23300fd8293db93b36bfa.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_combat_ready.png": {
+      "sha256": "a19ea4ad07f1e11e03925e3a9df1a683fcd071dce341f945109da9905b9a1021",
+      "bytes": 1144220,
+      "backupKey": "objects/sources/a19ea4ad07f1e11e03925e3a9df1a683fcd071dce341f945109da9905b9a1021.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_combat_ready.webp": {
+      "sha256": "e3bae3c4fe0eb4e408a0094358a17916daf19a3e6ca2a776c0c0a3a7e075a6c7",
+      "bytes": 107254,
+      "backupKey": "objects/sources/e3bae3c4fe0eb4e408a0094358a17916daf19a3e6ca2a776c0c0a3a7e075a6c7.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_dominant_aroused.png": {
+      "sha256": "55cf92e0caee9f5860e19a538ce724bce63b70165a2a93415de190c7d6928bce",
+      "bytes": 1228686,
+      "backupKey": "objects/sources/55cf92e0caee9f5860e19a538ce724bce63b70165a2a93415de190c7d6928bce.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_dominant_aroused.webp": {
+      "sha256": "cbc4b4af23315f12f991563f9ce7692b8dd8d8213531a33370b557e7deec6b6c",
+      "bytes": 129750,
+      "backupKey": "objects/sources/cbc4b4af23315f12f991563f9ce7692b8dd8d8213531a33370b557e7deec6b6c.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_enduring.png": {
+      "sha256": "c54af5b6925d1c996576b8ac5256f42ee7abbb0b124c07d8ad9553901756f642",
+      "bytes": 1217598,
+      "backupKey": "objects/sources/c54af5b6925d1c996576b8ac5256f42ee7abbb0b124c07d8ad9553901756f642.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_enduring.webp": {
+      "sha256": "668b21ed443aad9424178b1f181fa8f9497b76a74f2f7b4eeb54b29424366ee7",
+      "bytes": 130602,
+      "backupKey": "objects/sources/668b21ed443aad9424178b1f181fa8f9497b76a74f2f7b4eeb54b29424366ee7.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_groggy.png": {
+      "sha256": "aef4f4483599f2716949b2e690194a1f9a026eebae3f4f62fda1c6f34ff6b84d",
+      "bytes": 1165451,
+      "backupKey": "objects/sources/aef4f4483599f2716949b2e690194a1f9a026eebae3f4f62fda1c6f34ff6b84d.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_groggy.webp": {
+      "sha256": "c06e4c4ea30573b70e20fd8a0a940823399d62568e9ea160ae5d28e86233f475",
+      "bytes": 115604,
+      "backupKey": "objects/sources/c06e4c4ea30573b70e20fd8a0a940823399d62568e9ea160ae5d28e86233f475.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_messy_afterglow.png": {
+      "sha256": "f89838b715a82425a6f10ac147fae882a6cc24e6ed37ed8e920cbc561d486087",
+      "bytes": 1496115,
+      "backupKey": "objects/sources/f89838b715a82425a6f10ac147fae882a6cc24e6ed37ed8e920cbc561d486087.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_messy_afterglow.webp": {
+      "sha256": "684d4af5c3ff0e9090990dbc07fb7dd2d77d253919a0357332bcaa90cf1515fc",
+      "bytes": 131748,
+      "backupKey": "objects/sources/684d4af5c3ff0e9090990dbc07fb7dd2d77d253919a0357332bcaa90cf1515fc.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_oral_service.png": {
+      "sha256": "44afc66201021298ca2cf659deaefa9ddcb25c422eb5e8058ef9b9207c665595",
+      "bytes": 1227327,
+      "backupKey": "objects/sources/44afc66201021298ca2cf659deaefa9ddcb25c422eb5e8058ef9b9207c665595.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_oral_service.webp": {
+      "sha256": "5966ca6b654854590d656ad56cfb56fd62c5eaa8e834471f914d8cff667ed42d",
+      "bytes": 131616,
+      "backupKey": "objects/sources/5966ca6b654854590d656ad56cfb56fd62c5eaa8e834471f914d8cff667ed42d.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_scheming.png": {
+      "sha256": "de246a2a23fbeff6488f01f7df328004438a1c1fff350d12fc9795088e884de6",
+      "bytes": 1176422,
+      "backupKey": "objects/sources/de246a2a23fbeff6488f01f7df328004438a1c1fff350d12fc9795088e884de6.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_scheming.webp": {
+      "sha256": "8d6d75585a394db911c7f3dacc29443147cce9caf7b475fa7b3675e49f78dbf7",
+      "bytes": 118006,
+      "backupKey": "objects/sources/8d6d75585a394db911c7f3dacc29443147cce9caf7b475fa7b3675e49f78dbf7.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_touched.png": {
+      "sha256": "b26ea8bf25a7367505cd7c112fe2a5d0f0f4dafc71c855c854938d3a49e9077d",
+      "bytes": 1143278,
+      "backupKey": "objects/sources/b26ea8bf25a7367505cd7c112fe2a5d0f0f4dafc71c855c854938d3a49e9077d.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_touched.webp": {
+      "sha256": "8b08cd505e5c3e8df0a0a05e21705f0c6047b6bad955ee6f209b608c00721d95",
+      "bytes": 110372,
+      "backupKey": "objects/sources/8b08cd505e5c3e8df0a0a05e21705f0c6047b6bad955ee6f209b608c00721d95.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_undressed_shy.png": {
+      "sha256": "dfa34eafaf7c9373edbbe7f27bce287137f18d6d07cb75319b211a90b22cdf97",
+      "bytes": 1486650,
+      "backupKey": "objects/sources/dfa34eafaf7c9373edbbe7f27bce287137f18d6d07cb75319b211a90b22cdf97.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/haeun_undressed_shy.webp": {
+      "sha256": "4b41cc82e64a4304aba347ebb19a332d5b7724e2e8d28c3d8b2f2b0630069490",
+      "bytes": 128576,
+      "backupKey": "objects/sources/4b41cc82e64a4304aba347ebb19a332d5b7724e2e8d28c3d8b2f2b0630069490.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_begging_lust.png": {
+      "sha256": "5d70a1af58f26f88e183f403fe55fa72f16933e96311315f65b64129d818ef09",
+      "bytes": 1475979,
+      "backupKey": "objects/sources/5d70a1af58f26f88e183f403fe55fa72f16933e96311315f65b64129d818ef09.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_begging_lust.webp": {
+      "sha256": "90b7c6387603dd8edfd4a14f4a70a722edb54dfe51d71db0b7be44801a53017e",
+      "bytes": 112666,
+      "backupKey": "objects/sources/90b7c6387603dd8edfd4a14f4a70a722edb54dfe51d71db0b7be44801a53017e.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_betrayed.png": {
+      "sha256": "d9c1de643510b01fa63ecac258d44a8d20a08f2ed44c1cd02c9293b4132540bb",
+      "bytes": 1373139,
+      "backupKey": "objects/sources/d9c1de643510b01fa63ecac258d44a8d20a08f2ed44c1cd02c9293b4132540bb.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_betrayed.webp": {
+      "sha256": "31c81f7a3f0321c79bd9884ac09563b9fe24c0ec7c68c931dce1fbce42a2f20a",
+      "bytes": 99170,
+      "backupKey": "objects/sources/31c81f7a3f0321c79bd9884ac09563b9fe24c0ec7c68c931dce1fbce42a2f20a.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_combat_ready.png": {
+      "sha256": "62d246321323a7c7232348a5060453f734713b2f951e387091514d08131a72df",
+      "bytes": 1354453,
+      "backupKey": "objects/sources/62d246321323a7c7232348a5060453f734713b2f951e387091514d08131a72df.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_combat_ready.webp": {
+      "sha256": "b4038e9f4ffe5cf4c70f965b6fc3b39ae23eed8d89e06109c74f5efc56b28d72",
+      "bytes": 91484,
+      "backupKey": "objects/sources/b4038e9f4ffe5cf4c70f965b6fc3b39ae23eed8d89e06109c74f5efc56b28d72.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_dominant_aroused.png": {
+      "sha256": "d15508912bdf00ea257298214567d77fed99fab3adadf0e2cb4cc2e94349c0e0",
+      "bytes": 1578425,
+      "backupKey": "objects/sources/d15508912bdf00ea257298214567d77fed99fab3adadf0e2cb4cc2e94349c0e0.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_dominant_aroused.webp": {
+      "sha256": "77bfd59f54943a4695864518f33f76d89cb0bae7844ed8f9083f309dc6c4ed00",
+      "bytes": 140254,
+      "backupKey": "objects/sources/77bfd59f54943a4695864518f33f76d89cb0bae7844ed8f9083f309dc6c4ed00.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_enduring.png": {
+      "sha256": "1fdcbabb3c4e8c8cfb2d6214bc0bd8f10cd5ca0079aa1a96da20ea19371b9e30",
+      "bytes": 1536310,
+      "backupKey": "objects/sources/1fdcbabb3c4e8c8cfb2d6214bc0bd8f10cd5ca0079aa1a96da20ea19371b9e30.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_enduring.webp": {
+      "sha256": "7bb8937ff2670bc92ab3faad215f7da3ba3121d2db35aa5654fbd4ddb69e407e",
+      "bytes": 130610,
+      "backupKey": "objects/sources/7bb8937ff2670bc92ab3faad215f7da3ba3121d2db35aa5654fbd4ddb69e407e.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_groggy.png": {
+      "sha256": "895711e88e4625a4cfa07b29cf5b6ca37bfb41d05bc3a063230e90145b422d83",
+      "bytes": 1367475,
+      "backupKey": "objects/sources/895711e88e4625a4cfa07b29cf5b6ca37bfb41d05bc3a063230e90145b422d83.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_groggy.webp": {
+      "sha256": "d7f4e39f5e5f269d8199c979e2ffbf9b067ad4c6b5720910551fa164227cce36",
+      "bytes": 97018,
+      "backupKey": "objects/sources/d7f4e39f5e5f269d8199c979e2ffbf9b067ad4c6b5720910551fa164227cce36.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_messy_afterglow.png": {
+      "sha256": "9ffe7a4cb23358fa11e76d93594951f7d44a6bb0a717f94c619bc5f517b3c43c",
+      "bytes": 1703367,
+      "backupKey": "objects/sources/9ffe7a4cb23358fa11e76d93594951f7d44a6bb0a717f94c619bc5f517b3c43c.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_messy_afterglow.webp": {
+      "sha256": "a39c014dd1d035da69d9ed25eb0321659256adfbdf79c06faf6b0fa5a8c8d99b",
+      "bytes": 148784,
+      "backupKey": "objects/sources/a39c014dd1d035da69d9ed25eb0321659256adfbdf79c06faf6b0fa5a8c8d99b.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_oral_service.png": {
+      "sha256": "0ae7538f6bf607dfbaf0c639f864b24876b5cca1e9e8b351afd58cc6b54de429",
+      "bytes": 1451368,
+      "backupKey": "objects/sources/0ae7538f6bf607dfbaf0c639f864b24876b5cca1e9e8b351afd58cc6b54de429.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_oral_service.webp": {
+      "sha256": "a4256df98305c90341afc2cc2a3a52029bf169b241620a06b547b3427cf62d65",
+      "bytes": 118190,
+      "backupKey": "objects/sources/a4256df98305c90341afc2cc2a3a52029bf169b241620a06b547b3427cf62d65.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_scheming.png": {
+      "sha256": "fff4a04a01738bf8f63444cd1df44e32bef6dfa7465e97afc127adafeb2b1893",
+      "bytes": 1372675,
+      "backupKey": "objects/sources/fff4a04a01738bf8f63444cd1df44e32bef6dfa7465e97afc127adafeb2b1893.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_scheming.webp": {
+      "sha256": "98addb21979843070a78d6c810db64d788d08c6014812fc663969d218856ea46",
+      "bytes": 99374,
+      "backupKey": "objects/sources/98addb21979843070a78d6c810db64d788d08c6014812fc663969d218856ea46.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_touched.png": {
+      "sha256": "43bca25a1813b98f25ae5b519b87354f7e3ed88ad4ea01cd97a5e960e8eb60ae",
+      "bytes": 1358551,
+      "backupKey": "objects/sources/43bca25a1813b98f25ae5b519b87354f7e3ed88ad4ea01cd97a5e960e8eb60ae.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_touched.webp": {
+      "sha256": "778541fbbec9dca67541f71037166b6cf178b76560b081912b14952a33379364",
+      "bytes": 93146,
+      "backupKey": "objects/sources/778541fbbec9dca67541f71037166b6cf178b76560b081912b14952a33379364.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_undressed_shy.png": {
+      "sha256": "e57f6e8aea3cf7d8130fd319d6a79614ba46c68b7810f7d2a6b0167e1cf31a32",
+      "bytes": 1774174,
+      "backupKey": "objects/sources/e57f6e8aea3cf7d8130fd319d6a79614ba46c68b7810f7d2a6b0167e1cf31a32.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/minsu_undressed_shy.webp": {
+      "sha256": "4dc9923d1ae63d90ca8dbdab871f52db3f35b9d7017c559ede81df695118a00c",
+      "bytes": 161250,
+      "backupKey": "objects/sources/4dc9923d1ae63d90ca8dbdab871f52db3f35b9d7017c559ede81df695118a00c.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_begging_lust.png": {
+      "sha256": "af7b1b0a6b056d8c1576ee7cd3659c12b86d64fb2f6be6af0f74773ad56460e8",
+      "bytes": 1761019,
+      "backupKey": "objects/sources/af7b1b0a6b056d8c1576ee7cd3659c12b86d64fb2f6be6af0f74773ad56460e8.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_begging_lust.webp": {
+      "sha256": "46277bba3345f19ebe1006d2ee6785d08dc67f6f3fae412af7143041cb0c346e",
+      "bytes": 183716,
+      "backupKey": "objects/sources/46277bba3345f19ebe1006d2ee6785d08dc67f6f3fae412af7143041cb0c346e.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_betrayed.png": {
+      "sha256": "ef65623a7664b9c95efc4a3805f9d2fa6e45db254d1077b673ec7e30333e2e86",
+      "bytes": 1647922,
+      "backupKey": "objects/sources/ef65623a7664b9c95efc4a3805f9d2fa6e45db254d1077b673ec7e30333e2e86.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_betrayed.webp": {
+      "sha256": "76730fd826bb6481116a40ab8ef576b4fd33f09d1806c733b51fbb17003bdc69",
+      "bytes": 165232,
+      "backupKey": "objects/sources/76730fd826bb6481116a40ab8ef576b4fd33f09d1806c733b51fbb17003bdc69.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_combat_ready.png": {
+      "sha256": "d79bc6148d46387eab030f9317dcc1d8396c2ac10c4782b0cd54c6da0fce0818",
+      "bytes": 1618980,
+      "backupKey": "objects/sources/d79bc6148d46387eab030f9317dcc1d8396c2ac10c4782b0cd54c6da0fce0818.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_combat_ready.webp": {
+      "sha256": "423dd5b9707f7bef5e6597d54be6a4b35a14188421548919614f0839f5147e72",
+      "bytes": 158272,
+      "backupKey": "objects/sources/423dd5b9707f7bef5e6597d54be6a4b35a14188421548919614f0839f5147e72.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_dominant_aroused.png": {
+      "sha256": "dc2bb2b120f132a42d836e04d05a11eb2281cfaa8d17f9f27554358bdeb0f46d",
+      "bytes": 1759019,
+      "backupKey": "objects/sources/dc2bb2b120f132a42d836e04d05a11eb2281cfaa8d17f9f27554358bdeb0f46d.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_dominant_aroused.webp": {
+      "sha256": "88500f70177fff455d9c7d290c4679182917cbe986bf61c440ce60659ed59c4f",
+      "bytes": 183496,
+      "backupKey": "objects/sources/88500f70177fff455d9c7d290c4679182917cbe986bf61c440ce60659ed59c4f.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_enduring.png": {
+      "sha256": "df7845d4b735230cbdc2c88404353d5b950b669a723e4975de740327b24d41af",
+      "bytes": 1851163,
+      "backupKey": "objects/sources/df7845d4b735230cbdc2c88404353d5b950b669a723e4975de740327b24d41af.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_enduring.webp": {
+      "sha256": "3be5c734017db9bdcd1bd3909d3fadc6225a16928a4353d0742817a56bb27eec",
+      "bytes": 185514,
+      "backupKey": "objects/sources/3be5c734017db9bdcd1bd3909d3fadc6225a16928a4353d0742817a56bb27eec.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_groggy.png": {
+      "sha256": "6f8c81143fc097e1bc47fbf4b779f325170b9bee18210bb004f95ef180f9af73",
+      "bytes": 1653911,
+      "backupKey": "objects/sources/6f8c81143fc097e1bc47fbf4b779f325170b9bee18210bb004f95ef180f9af73.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_groggy.webp": {
+      "sha256": "72243c0be4e84ede46411bfa516a4bde12fb128bbcceda4fdca186b28f25df40",
+      "bytes": 166592,
+      "backupKey": "objects/sources/72243c0be4e84ede46411bfa516a4bde12fb128bbcceda4fdca186b28f25df40.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_messy_afterglow.png": {
+      "sha256": "4ab26e021bee574e0fe08c954d473a003a34df8cb5f0bb87b9ee1620850e4da5",
+      "bytes": 1795814,
+      "backupKey": "objects/sources/4ab26e021bee574e0fe08c954d473a003a34df8cb5f0bb87b9ee1620850e4da5.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_messy_afterglow.webp": {
+      "sha256": "1f73f39225f3bf7895a9a17d5f630c21a2c56d25d3be5590a185fa917b1ef24f",
+      "bytes": 195372,
+      "backupKey": "objects/sources/1f73f39225f3bf7895a9a17d5f630c21a2c56d25d3be5590a185fa917b1ef24f.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_oral_service.png": {
+      "sha256": "4acb75f04c659871fb081f999b14aa85b390e53478b29e2f194cb22a8ee605ae",
+      "bytes": 1649123,
+      "backupKey": "objects/sources/4acb75f04c659871fb081f999b14aa85b390e53478b29e2f194cb22a8ee605ae.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_oral_service.webp": {
+      "sha256": "c69943962fc315446811acf346f33ec3f706127d4c50f146fc0cd3662eafaf34",
+      "bytes": 164374,
+      "backupKey": "objects/sources/c69943962fc315446811acf346f33ec3f706127d4c50f146fc0cd3662eafaf34.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_scheming.png": {
+      "sha256": "f1b449230f32bfaa9b2862e4992c54951859074ffa250e35503d58fa0268b0cd",
+      "bytes": 1650374,
+      "backupKey": "objects/sources/f1b449230f32bfaa9b2862e4992c54951859074ffa250e35503d58fa0268b0cd.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_scheming.webp": {
+      "sha256": "67448e2a5c8d8899f5784df35bf46745818cf0c247aaf6cf06d2af6b23134f67",
+      "bytes": 165574,
+      "backupKey": "objects/sources/67448e2a5c8d8899f5784df35bf46745818cf0c247aaf6cf06d2af6b23134f67.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_touched.png": {
+      "sha256": "2ab710f56f7f7b58e362aa0bcf558ed005c6641cd29db23dc4b601d00726fb6b",
+      "bytes": 1622340,
+      "backupKey": "objects/sources/2ab710f56f7f7b58e362aa0bcf558ed005c6641cd29db23dc4b601d00726fb6b.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_touched.webp": {
+      "sha256": "8e4ae20033b70f02db7b408093cb919e46736df113387557915edf415d60c85a",
+      "bytes": 158116,
+      "backupKey": "objects/sources/8e4ae20033b70f02db7b408093cb919e46736df113387557915edf415d60c85a.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_undressed_shy.png": {
+      "sha256": "4eb1cac660fdee408ef3c3792bd429b44116d8fecfdbb43580285e1500de4756",
+      "bytes": 1885927,
+      "backupKey": "objects/sources/4eb1cac660fdee408ef3c3792bd429b44116d8fecfdbb43580285e1500de4756.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/nurse_undressed_shy.webp": {
+      "sha256": "04c75103b10d30894cc66cb1ed0acb8c286c7e0ee8ea1864ba38e314ca953d37",
+      "bytes": 204916,
+      "backupKey": "objects/sources/04c75103b10d30894cc66cb1ed0acb8c286c7e0ee8ea1864ba38e314ca953d37.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_begging_lust.png": {
+      "sha256": "2ac109675e82b2102a5b7424f0eda0381dbbde73117c1831d8f1019002be365d",
+      "bytes": 1332462,
+      "backupKey": "objects/sources/2ac109675e82b2102a5b7424f0eda0381dbbde73117c1831d8f1019002be365d.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_begging_lust.webp": {
+      "sha256": "be5447c642087dfb2f9a0a889d0f4a4b63c565c38e726082b37f2cae24d020d9",
+      "bytes": 147534,
+      "backupKey": "objects/sources/be5447c642087dfb2f9a0a889d0f4a4b63c565c38e726082b37f2cae24d020d9.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_betrayed.png": {
+      "sha256": "043135e5298058f71e9e098170f267153d66098289c2e181dc4b447ff2c98f02",
+      "bytes": 1294740,
+      "backupKey": "objects/sources/043135e5298058f71e9e098170f267153d66098289c2e181dc4b447ff2c98f02.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_betrayed.webp": {
+      "sha256": "222b909a4fc1ad39e4cd36b54bc884761c32c3fbf84ea661cd6b39cbe803f028",
+      "bytes": 147664,
+      "backupKey": "objects/sources/222b909a4fc1ad39e4cd36b54bc884761c32c3fbf84ea661cd6b39cbe803f028.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_combat_ready.png": {
+      "sha256": "4e77b8d3a43d3d02bc51ea1a35cfcb58eaf9a6e8c7cce00ddb63f9dd015e30ce",
+      "bytes": 1264117,
+      "backupKey": "objects/sources/4e77b8d3a43d3d02bc51ea1a35cfcb58eaf9a6e8c7cce00ddb63f9dd015e30ce.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_combat_ready.webp": {
+      "sha256": "444ea695e32bba0249f942830b94af2a3781b201491e7d0ff45d508eb30fa94c",
+      "bytes": 135242,
+      "backupKey": "objects/sources/444ea695e32bba0249f942830b94af2a3781b201491e7d0ff45d508eb30fa94c.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_dominant_aroused.png": {
+      "sha256": "95f959d6dbb028a769516a456eb3ccd6961ee426cddaf246a919553c4bdeea00",
+      "bytes": 1484506,
+      "backupKey": "objects/sources/95f959d6dbb028a769516a456eb3ccd6961ee426cddaf246a919553c4bdeea00.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_dominant_aroused.webp": {
+      "sha256": "014edf757d9dc4efb59210bb6bb98f1ac33e09c52d472a29ced5afd34d1129c2",
+      "bytes": 169038,
+      "backupKey": "objects/sources/014edf757d9dc4efb59210bb6bb98f1ac33e09c52d472a29ced5afd34d1129c2.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_enduring.png": {
+      "sha256": "2d888b24afd345e5eb679d2de126cb0750da2684cc083104c34dc1ca7096246f",
+      "bytes": 1482652,
+      "backupKey": "objects/sources/2d888b24afd345e5eb679d2de126cb0750da2684cc083104c34dc1ca7096246f.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_enduring.webp": {
+      "sha256": "8156ba91da0b90cf99f9ec3763bdadba4642fb4213a3de137a087ab6283db2fe",
+      "bytes": 165108,
+      "backupKey": "objects/sources/8156ba91da0b90cf99f9ec3763bdadba4642fb4213a3de137a087ab6283db2fe.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_groggy.png": {
+      "sha256": "cddf7a42e7913e4d2749f595b92fd7a51990bb6f63dd881ffc4642df6c5542ff",
+      "bytes": 1292724,
+      "backupKey": "objects/sources/cddf7a42e7913e4d2749f595b92fd7a51990bb6f63dd881ffc4642df6c5542ff.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_groggy.webp": {
+      "sha256": "e994c069a3bc31d665e18a0c3e680f3fbe010feed1723debbc8421b22a553e83",
+      "bytes": 145316,
+      "backupKey": "objects/sources/e994c069a3bc31d665e18a0c3e680f3fbe010feed1723debbc8421b22a553e83.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_messy_afterglow.png": {
+      "sha256": "403df64c40b5d43668bf6b9610aaf9e39c85160812f936ae4c16f505afab5c19",
+      "bytes": 1119551,
+      "backupKey": "objects/sources/403df64c40b5d43668bf6b9610aaf9e39c85160812f936ae4c16f505afab5c19.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_messy_afterglow.webp": {
+      "sha256": "585d6f57c0c40ae9a351d0cf994450b0e9db93526cb53ab3a06f26d9538c837d",
+      "bytes": 160180,
+      "backupKey": "objects/sources/585d6f57c0c40ae9a351d0cf994450b0e9db93526cb53ab3a06f26d9538c837d.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_oral_service.png": {
+      "sha256": "dc85d483df6e625eebd296e1baa1d0820bbe52e22250ac528ec45f6e4d52bd73",
+      "bytes": 1299626,
+      "backupKey": "objects/sources/dc85d483df6e625eebd296e1baa1d0820bbe52e22250ac528ec45f6e4d52bd73.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_oral_service.webp": {
+      "sha256": "47579739424686de231fb0cb16c19b4912c782abb257c31f5cca1acc5ac37c1f",
+      "bytes": 147636,
+      "backupKey": "objects/sources/47579739424686de231fb0cb16c19b4912c782abb257c31f5cca1acc5ac37c1f.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_scheming.png": {
+      "sha256": "eb0bba8b2e8f10f29ee03c49aa50a93079ce09e5ee739391152f42dcce5490de",
+      "bytes": 1298789,
+      "backupKey": "objects/sources/eb0bba8b2e8f10f29ee03c49aa50a93079ce09e5ee739391152f42dcce5490de.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_scheming.webp": {
+      "sha256": "58559df2419b829feb6fb92245f006962f953e9983758ac3fb5b764e95e3ef0e",
+      "bytes": 148730,
+      "backupKey": "objects/sources/58559df2419b829feb6fb92245f006962f953e9983758ac3fb5b764e95e3ef0e.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_touched.png": {
+      "sha256": "e0c404b19b806ecaa59e24869f26e31646f158daa0d073c9782b9b36041ba0e7",
+      "bytes": 1268137,
+      "backupKey": "objects/sources/e0c404b19b806ecaa59e24869f26e31646f158daa0d073c9782b9b36041ba0e7.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_touched.webp": {
+      "sha256": "7f5265d352d713043b0a8efd2c0f1b1e1e09124adf8b1a3b97eae0dd78649c00",
+      "bytes": 132730,
+      "backupKey": "objects/sources/7f5265d352d713043b0a8efd2c0f1b1e1e09124adf8b1a3b97eae0dd78649c00.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_undressed_shy.png": {
+      "sha256": "0205480f474bd695d930f3b1b3c709778d045f5fc47fcfce06b266c3c6b50b92",
+      "bytes": 1131607,
+      "backupKey": "objects/sources/0205480f474bd695d930f3b1b3c709778d045f5fc47fcfce06b266c3c6b50b92.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/seyoun_undressed_shy.webp": {
+      "sha256": "3bff731102d5937cd133ec1afc1f6e23d08df8db42dc035e1e149361bcd471ef",
+      "bytes": 153018,
+      "backupKey": "objects/sources/3bff731102d5937cd133ec1afc1f6e23d08df8db42dc035e1e149361bcd471ef.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_begging_lust.png": {
+      "sha256": "5d2fa546ad2a4ecba01061934eba333d1eb6c54cbc4208a8284b8e5bd61ed843",
+      "bytes": 1465922,
+      "backupKey": "objects/sources/5d2fa546ad2a4ecba01061934eba333d1eb6c54cbc4208a8284b8e5bd61ed843.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_begging_lust.webp": {
+      "sha256": "a50c6ccda82a1af725259d4cdffe1cd8c0c1face34ddbdbd9a5850cbb46ca873",
+      "bytes": 141090,
+      "backupKey": "objects/sources/a50c6ccda82a1af725259d4cdffe1cd8c0c1face34ddbdbd9a5850cbb46ca873.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_betrayed.png": {
+      "sha256": "d28ae61bc579746bbd1a51f0872de310f6202c187a45d8de4c1eef5d8ea8e49a",
+      "bytes": 1418894,
+      "backupKey": "objects/sources/d28ae61bc579746bbd1a51f0872de310f6202c187a45d8de4c1eef5d8ea8e49a.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_betrayed.webp": {
+      "sha256": "839dd446e68d059272833b253e01ba1375d6c16b746b601420b1873fc35f06a0",
+      "bytes": 142274,
+      "backupKey": "objects/sources/839dd446e68d059272833b253e01ba1375d6c16b746b601420b1873fc35f06a0.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_combat_ready.png": {
+      "sha256": "94aee4944fc0801bf052b07ad31f9b2c8ea631ae2a5af567722967ec4ce0c9cb",
+      "bytes": 1371565,
+      "backupKey": "objects/sources/94aee4944fc0801bf052b07ad31f9b2c8ea631ae2a5af567722967ec4ce0c9cb.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_combat_ready.webp": {
+      "sha256": "3a1af47f0e63e081349c96cd7e49b1c8f6141ef240c37396ccad555f72eaedc2",
+      "bytes": 134610,
+      "backupKey": "objects/sources/3a1af47f0e63e081349c96cd7e49b1c8f6141ef240c37396ccad555f72eaedc2.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_dominant_aroused.png": {
+      "sha256": "8274f7a0de72e250fb64768d138e88c020b0db12adfebf87d3ba4aac6e3a64a6",
+      "bytes": 1444656,
+      "backupKey": "objects/sources/8274f7a0de72e250fb64768d138e88c020b0db12adfebf87d3ba4aac6e3a64a6.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_dominant_aroused.webp": {
+      "sha256": "96ff0ae61e8a01d03826392b54f6de2560fc1b6073f71f87c774dd5002dae787",
+      "bytes": 139070,
+      "backupKey": "objects/sources/96ff0ae61e8a01d03826392b54f6de2560fc1b6073f71f87c774dd5002dae787.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_enduring.png": {
+      "sha256": "ecee596de3cc50334972ac2da9061408124fd09108612f2ec599e489f724c8be",
+      "bytes": 1530024,
+      "backupKey": "objects/sources/ecee596de3cc50334972ac2da9061408124fd09108612f2ec599e489f724c8be.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_enduring.webp": {
+      "sha256": "b8326ee5d781da63743e8f4380037465c006dd9818da1e762ad94e71933e6905",
+      "bytes": 156078,
+      "backupKey": "objects/sources/b8326ee5d781da63743e8f4380037465c006dd9818da1e762ad94e71933e6905.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_groggy.png": {
+      "sha256": "e65ddfaca9ee9b6ee759a031cd44fd1e014a0166289953a43876d1eb976aa6c2",
+      "bytes": 1412614,
+      "backupKey": "objects/sources/e65ddfaca9ee9b6ee759a031cd44fd1e014a0166289953a43876d1eb976aa6c2.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_groggy.webp": {
+      "sha256": "401797a9c2d54aad4d6faccc3eb79e4f68be6101ab3330e6acb290c9f3e62272",
+      "bytes": 138564,
+      "backupKey": "objects/sources/401797a9c2d54aad4d6faccc3eb79e4f68be6101ab3330e6acb290c9f3e62272.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_messy_afterglow.png": {
+      "sha256": "3aea30b6cda31daa2f016141804ac3e0286edfa60ccee52869f8725b1801f957",
+      "bytes": 1484704,
+      "backupKey": "objects/sources/3aea30b6cda31daa2f016141804ac3e0286edfa60ccee52869f8725b1801f957.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_messy_afterglow.webp": {
+      "sha256": "c64144ecd4e92bb629ca69ac92c8dbd084c003f17718fcd426c3bc84b889c764",
+      "bytes": 147752,
+      "backupKey": "objects/sources/c64144ecd4e92bb629ca69ac92c8dbd084c003f17718fcd426c3bc84b889c764.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_oral_service.png": {
+      "sha256": "182d4826942506fca398a022fe6538b3f7af5a235de74db1b6b7cbe187b6588a",
+      "bytes": 1466659,
+      "backupKey": "objects/sources/182d4826942506fca398a022fe6538b3f7af5a235de74db1b6b7cbe187b6588a.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_oral_service.webp": {
+      "sha256": "7f75ba9b5b773460577773b8b033693f6fb7a0e6cc0c0f90157947b5301728f5",
+      "bytes": 141050,
+      "backupKey": "objects/sources/7f75ba9b5b773460577773b8b033693f6fb7a0e6cc0c0f90157947b5301728f5.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_scheming.png": {
+      "sha256": "ed43dab8d553c757b09e64468fe7f3e8586675230d53308e2e9d740b644cf648",
+      "bytes": 1419200,
+      "backupKey": "objects/sources/ed43dab8d553c757b09e64468fe7f3e8586675230d53308e2e9d740b644cf648.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_scheming.webp": {
+      "sha256": "616ef1d68dae8bb28a55a16f9d6b79e6ad100117ab06a5083500e6413602ec1b",
+      "bytes": 142274,
+      "backupKey": "objects/sources/616ef1d68dae8bb28a55a16f9d6b79e6ad100117ab06a5083500e6413602ec1b.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_touched.png": {
+      "sha256": "0eebee804422c8ff046790172caaaa539144de6dc43ea988b847c4d2ac1ac443",
+      "bytes": 1378073,
+      "backupKey": "objects/sources/0eebee804422c8ff046790172caaaa539144de6dc43ea988b847c4d2ac1ac443.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_touched.webp": {
+      "sha256": "5c0acc5e7cb6b3bb48702b109786404bfba66cc1a8e2387dd072e08c6f8d6794",
+      "bytes": 135742,
+      "backupKey": "objects/sources/5c0acc5e7cb6b3bb48702b109786404bfba66cc1a8e2387dd072e08c6f8d6794.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_undressed_shy.png": {
+      "sha256": "aa508af022cef0d00fa1b9d5ca49a061c9d39b7cbc5967652df18fc48edef6ca",
+      "bytes": 1537967,
+      "backupKey": "objects/sources/aa508af022cef0d00fa1b9d5ca49a061c9d39b7cbc5967652df18fc48edef6ca.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/teacher_undressed_shy.webp": {
+      "sha256": "138ab21ca35b99bcd5143354cb2064cbf357c8801da5ca7b172f63a26b2d57cc",
+      "bytes": 169356,
+      "backupKey": "objects/sources/138ab21ca35b99bcd5143354cb2064cbf357c8801da5ca7b172f63a26b2d57cc.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_begging_lust.png": {
+      "sha256": "8dd1353a7f033b79392830f0406e9e94e5c3676e45c06eec51f4f38a6cfb8429",
+      "bytes": 1681905,
+      "backupKey": "objects/sources/8dd1353a7f033b79392830f0406e9e94e5c3676e45c06eec51f4f38a6cfb8429.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_begging_lust.webp": {
+      "sha256": "1f15dbd5bfb11ad77a60773a2e15f990008eca085e15a76a31274213e10c1c83",
+      "bytes": 197744,
+      "backupKey": "objects/sources/1f15dbd5bfb11ad77a60773a2e15f990008eca085e15a76a31274213e10c1c83.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_betrayed.png": {
+      "sha256": "8a9094d7aaf24362f71bd7e1e59c7af6fb0b5c398ceb38972ba563d41b5ae81d",
+      "bytes": 1423170,
+      "backupKey": "objects/sources/8a9094d7aaf24362f71bd7e1e59c7af6fb0b5c398ceb38972ba563d41b5ae81d.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_betrayed.webp": {
+      "sha256": "39bc180e0a5033a4e936062c79dd7063d10f471775daf49ad799ba72bcd34d2c",
+      "bytes": 204576,
+      "backupKey": "objects/sources/39bc180e0a5033a4e936062c79dd7063d10f471775daf49ad799ba72bcd34d2c.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_combat_ready.png": {
+      "sha256": "47b04359cc06a904a4f56d99f2eb8a8aaab067ccb8595da32f376a170f65cfbc",
+      "bytes": 1488838,
+      "backupKey": "objects/sources/47b04359cc06a904a4f56d99f2eb8a8aaab067ccb8595da32f376a170f65cfbc.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_combat_ready.webp": {
+      "sha256": "24be7dd9115ad6583957b976e053f303c6ba3037828cec1c78e134451564a56b",
+      "bytes": 181562,
+      "backupKey": "objects/sources/24be7dd9115ad6583957b976e053f303c6ba3037828cec1c78e134451564a56b.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_dominant_aroused.png": {
+      "sha256": "44ac883415751186480791b33d240907bd9372462e3bf95bd2bae51a1ac1a5bb",
+      "bytes": 1676679,
+      "backupKey": "objects/sources/44ac883415751186480791b33d240907bd9372462e3bf95bd2bae51a1ac1a5bb.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_dominant_aroused.webp": {
+      "sha256": "f4fecd9f193d8f9d61ddbf69bacf88a11a89fe18c8a509b62445f9b1a49e8baa",
+      "bytes": 196840,
+      "backupKey": "objects/sources/f4fecd9f193d8f9d61ddbf69bacf88a11a89fe18c8a509b62445f9b1a49e8baa.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_enduring.png": {
+      "sha256": "1e21fa5416e2eb1a81fa59c1ef3f95ace4f81f6e91b1fc727308845c3c74d58b",
+      "bytes": 1759895,
+      "backupKey": "objects/sources/1e21fa5416e2eb1a81fa59c1ef3f95ace4f81f6e91b1fc727308845c3c74d58b.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_enduring.webp": {
+      "sha256": "6ae2938c574fc3f02989696e90c130fac5077a204d6671164cbefe4280697e73",
+      "bytes": 214202,
+      "backupKey": "objects/sources/6ae2938c574fc3f02989696e90c130fac5077a204d6671164cbefe4280697e73.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_groggy.png": {
+      "sha256": "f909027c730a216b4d773dca6e8f95d5af0ffd469377f6f9b9cc03004065f634",
+      "bytes": 1423047,
+      "backupKey": "objects/sources/f909027c730a216b4d773dca6e8f95d5af0ffd469377f6f9b9cc03004065f634.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_groggy.webp": {
+      "sha256": "64ce27e8c35ba716c24a9dec85c90d3b155257a67753c8152687f9648255ade2",
+      "bytes": 202292,
+      "backupKey": "objects/sources/64ce27e8c35ba716c24a9dec85c90d3b155257a67753c8152687f9648255ade2.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_messy_afterglow.png": {
+      "sha256": "16e3fee3e88d392be2621e22c55ea2ac63e96fe1ae1485fc5d9159e9e3d0f580",
+      "bytes": 1589623,
+      "backupKey": "objects/sources/16e3fee3e88d392be2621e22c55ea2ac63e96fe1ae1485fc5d9159e9e3d0f580.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_messy_afterglow.webp": {
+      "sha256": "fe0edc3e2c265b30099cdf6df30c4001eeeea203df510fe4c8d14c4552edbb8e",
+      "bytes": 178046,
+      "backupKey": "objects/sources/fe0edc3e2c265b30099cdf6df30c4001eeeea203df510fe4c8d14c4552edbb8e.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_oral_service.png": {
+      "sha256": "d906fc3e0fb46af93860c9aee9a4cad233042964ec4927b24e1b2d526c491532",
+      "bytes": 1681219,
+      "backupKey": "objects/sources/d906fc3e0fb46af93860c9aee9a4cad233042964ec4927b24e1b2d526c491532.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_oral_service.webp": {
+      "sha256": "de8a9c105206466f2ba0c7d5d9b3808ce2cb36a3ab2afa5f9f87c5ca7851bef8",
+      "bytes": 197560,
+      "backupKey": "objects/sources/de8a9c105206466f2ba0c7d5d9b3808ce2cb36a3ab2afa5f9f87c5ca7851bef8.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_scheming.png": {
+      "sha256": "c8338d5db783249ae74aaccd2a411e6238430cc04556385798e913cbc5cd34c9",
+      "bytes": 1425797,
+      "backupKey": "objects/sources/c8338d5db783249ae74aaccd2a411e6238430cc04556385798e913cbc5cd34c9.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_scheming.webp": {
+      "sha256": "76bd0bce0dbef69c89c72186ca853db92b55d55d16ffae3514d61321a58d6aa4",
+      "bytes": 205294,
+      "backupKey": "objects/sources/76bd0bce0dbef69c89c72186ca853db92b55d55d16ffae3514d61321a58d6aa4.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_touched.png": {
+      "sha256": "37bd47e076aebf2a9269f84880fe0e950055a9c7e0d11c1521c2fd9b3e7315f8",
+      "bytes": 1493046,
+      "backupKey": "objects/sources/37bd47e076aebf2a9269f84880fe0e950055a9c7e0d11c1521c2fd9b3e7315f8.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_touched.webp": {
+      "sha256": "fba4f8861782e656124d765052b842ac6f757d435f25662af0bb6f6a4f7d4fb7",
+      "bytes": 184568,
+      "backupKey": "objects/sources/fba4f8861782e656124d765052b842ac6f757d435f25662af0bb6f6a4f7d4fb7.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_undressed_shy.png": {
+      "sha256": "43e60c62a7ae8a29b4df67610a7fcc7b695bb1a938b7b30a6cf17b674e90189d",
+      "bytes": 1624569,
+      "backupKey": "objects/sources/43e60c62a7ae8a29b4df67610a7fcc7b695bb1a938b7b30a6cf17b674e90189d.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/characters/yuna_undressed_shy.webp": {
+      "sha256": "22bc597341e1302fbf0f27ef861beebb05946afd463eed91360df6c869e20a16",
+      "bytes": 188536,
+      "backupKey": "objects/sources/22bc597341e1302fbf0f27ef861beebb05946afd463eed91360df6c869e20a16.webp"
     }
   }
 }
