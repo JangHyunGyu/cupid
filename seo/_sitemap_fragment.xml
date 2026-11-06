@@ -14,7 +14,52 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://cupid.archerlab.dev/seo/web-misinsi</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cupid.archerlab.dev/seo/muryo-yeonae-sim</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/muryo-yeonae-sim"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/muryo-renai-sim"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/juego-citas-online"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/jeu-drague-en-ligne"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/dating-spiel-online"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://cupid.archerlab.dev/seo/browser-misinsi</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/browser-misinsi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/browser-otome-game-ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/otome-navegador"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/otome-navigateur"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/browser-otome"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/visual-novel-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -36,24 +81,45 @@
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/cupid-game-online</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/cupid-visual-novel</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/muryo-yeonae-sim"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/muryo-renai-sim"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/juego-citas-online"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/jeu-drague-en-ligne"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/dating-spiel-online"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/browser-otome-game</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/browser-misinsi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/browser-otome-game-ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/otome-navegador"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/otome-navigateur"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/browser-otome"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/visual-novel-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://cupid.archerlab.dev/seo/play-dating-simulator-online</loc>
+        <loc>https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -81,30 +147,51 @@
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/browser-otome-game-ja</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/renai-game-browser</loc>
-        <lastmod>2026-10-01</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://cupid.archerlab.dev/seo/browser-otome-muryo</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/browser-misinsi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/browser-otome-game-ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/otome-navegador"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/otome-navigateur"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/browser-otome"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/visual-novel-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/muryo-renai-sim</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/muryo-yeonae-sim"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/muryo-renai-sim"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/juego-citas-online"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/jeu-drague-en-ligne"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/dating-spiel-online"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://cupid.archerlab.dev/seo/web-otome</loc>
+        <loc>https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cupid.archerlab.dev/seo/renai-game-muryo-download-nashi</loc>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -126,12 +213,45 @@
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/otome-navegador</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/browser-misinsi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/browser-otome-game-ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/otome-navegador"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/otome-navigateur"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/browser-otome"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/visual-novel-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/juego-citas-online</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/muryo-yeonae-sim"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/muryo-renai-sim"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/juego-citas-online"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/jeu-drague-en-ligne"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/dating-spiel-online"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -153,12 +273,45 @@
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/otome-navigateur</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/browser-misinsi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/browser-otome-game-ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/otome-navegador"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/otome-navigateur"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/browser-otome"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/visual-novel-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/jeu-drague-en-ligne</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/muryo-yeonae-sim"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/muryo-renai-sim"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/juego-citas-online"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/jeu-drague-en-ligne"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/dating-spiel-online"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -180,12 +333,45 @@
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/browser-otome</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/browser-misinsi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/browser-otome-game-ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/otome-navegador"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/otome-navigateur"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/browser-otome"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/visual-novel-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/dating-spiel-online</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/muryo-yeonae-sim"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/muryo-renai-sim"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/juego-citas-online"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/jeu-drague-en-ligne"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/dating-spiel-online"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -207,12 +393,45 @@
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/muryo-yeonae-sim"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/muryo-renai-sim"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/juego-citas-online"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/jeu-drague-en-ligne"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/dating-spiel-online"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/visual-novel-romance-gratis</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/browser-misinsi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/browser-otome-game-ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/otome-navegador"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/otome-navigateur"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/browser-otome"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/visual-novel-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
@@ -234,18 +453,51 @@
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/browser-misinsi"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/browser-otome-game-ja"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/otome-navegador"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/otome-navigateur"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/browser-otome"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/visual-novel-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/wangyeban-yinv-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/browser-otome-game"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/muryo-yeonae-sim"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/muryo-renai-sim"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/juego-citas-online"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/jeu-drague-en-ligne"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/dating-spiel-online"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-namoro-online-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/zaixian-lianai-moni-youxi"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/cupid-game-online"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
         <loc>https://cupid.archerlab.dev/seo/galgame-zaixian-wan</loc>
+        <lastmod>2026-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan</loc>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos"/>
+        <xhtml:link rel="alternate" hreflang="pt" href="https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis"/>
+        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download"/>
         <lastmod>2026-10-01</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>

@@ -1,9 +1,11 @@
 {
-  "web-misinsi": "muryo-misinsi-game",
   "muryo-misinsi": "muryo-misinsi-game",
   "misinsi-muryo": "muryo-misinsi-game",
-  "muryo-yeonae-sim": "muryo-misinsi-game",
-  "mu-seolchi-yeonae-game": "muryo-misinsi-game",
-  "renai-game-muryo-download-nashi": "gakuen-renai-game-muryo-browser",
-  "sumaho-otome-game-muryo": "gakuen-renai-game-muryo-browser"
+  "mu-seolchi-yeonae-game": "muryo-yeonae-sim",
+  "cupid-visual-novel": "cupid-game-online",
+  "play-dating-simulator-online": "free-dating-sim-no-download",
+  "renai-game-browser": "gakuen-renai-game-muryo-browser",
+  "browser-otome-muryo": "browser-otome-game-ja",
+  "web-otome": "browser-otome-game-ja",
+  "sumaho-otome-game-muryo": "browser-otome-game-ja"
 }

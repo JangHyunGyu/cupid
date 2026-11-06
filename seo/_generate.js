@@ -325,13 +325,15 @@ const PAGES = {
     },
     {
       slug: 'muryo-yeonae-sim',
-      h1: '무료 연애 시뮬레이션 게임 — 무설치 웹에서 바로',
-      title: '무료 연애 시뮬레이션 게임 | 무설치 브라우저 플레이 2026',
-      meta: '결제나 다운로드 없이 바로 하는 무료 연애 시뮬레이션 게임입니다. 한국어로 된 여러 엔딩의 로맨스 비주얼 노벨을 휴대폰과 PC 브라우저에서 플레이하세요.',
-      intro: '"무료 연애 시뮬레이션 게임"을 찾는다고 스팀이나 앱스토어부터 열 필요는 없습니다. 브라우저만 있으면 5일짜리 로맨스와 여러 엔딩을 결제 없이 끝까지 즐길 수 있습니다.'
+      group: 'online-dating-sim-group',
+      h1: '무료 연애 시뮬레이션 게임 사이트 — 무설치 웹에서 바로',
+      title: '무료 연애 시뮬레이션 게임 사이트 | 무설치 브라우저 플레이 2026',
+      meta: '연애 시뮬레이션 게임 사이트를 찾는다면 결제나 다운로드 없이 바로 하는 Cupid를 열어 보세요. 한국어로 된 여러 엔딩의 로맨스 비주얼 노벨을 휴대폰과 PC 브라우저에서 플레이하세요.',
+      intro: '"무료 연애 시뮬레이션 게임"이나 "연애 시뮬레이션 게임 사이트"를 찾는다고 스팀이나 앱스토어부터 열 필요는 없습니다. 브라우저만 있으면 5일짜리 학원 로맨스와 여러 엔딩을 결제 없이 끝까지 즐길 수 있습니다.'
     },
     {
       slug: 'browser-misinsi',
+      group: 'browser-otome-group',
       h1: '브라우저 미연시 — 설치 없이 PC·모바일에서 바로',
       title: '브라우저 미연시 추천 | 설치 없는 Cupid 무료 플레이',
       meta: '브라우저 야겜이나 웹 미연시를 찾는다면 Cupid를 바로 해 보세요. 다운로드와 설치 없이 PC와 휴대폰에서 하는 무료 로맨스 비주얼 노벨입니다. 엔딩은 여러 갈래입니다.',
@@ -343,6 +345,22 @@ const PAGES = {
       faqs: [
         ['Cupid는 야겜 또는 에로게인가요?', '성인 취향의 연애 게임을 야겜이나 에로게로 넓게 부른다면 가깝습니다. 다만 Cupid의 중심은 노골적인 장면이 아니라 5일간 이어지는 관계와 선택, 여러 엔딩입니다.'],
         ['미연시 다운로드 사이트인가요?', '아니요. 파일을 내려받지 않고 브라우저에서 바로 실행합니다. PC와 모바일 모두 따로 설치할 필요가 없습니다.']
+      ]
+    },
+    {
+      slug: 'ai-yeonae-misinsi-muryo',
+      group: 'ai-romance-visual-novel',
+      h1: '무료 야겜 사이트 · AI 미연시 웹게임 — 다운로드 없는 Cupid',
+      title: '무료 야겜 사이트 · AI 미연시 웹게임 | 다운로드 없는 미소녀 연애 게임 Cupid',
+      meta: '무료 야겜 사이트나 다운로드 없는 미소녀 연애 게임을 찾는다면 Cupid를 브라우저에서 바로 열어 보세요. 설치와 가입 없이 5일간의 학원 로맨스와 AI 자유 대화를 한국어로 즐길 수 있습니다.',
+      intro: '"무료 야겜 사이트"나 "다운로드 없는 야겜·미연시"를 찾다가 설치 파일이나 광고 페이지만 만나 돌아선 적이 있다면 링크 하나로 바로 열리는 Cupid를 시작해 보세요. 전학 첫날부터 닷새 동안 다섯 히로인과 메신저로 대화를 나누며 선택지와 직접 입력한 대사로 스무 가지가 넘는 엔딩을 여는 학원 로맨스입니다.',
+      intentSection: {
+        title: '선택지뿐 아니라 내 말로 직접 대화하는 AI 미연시',
+        body: '정해진 선택지만 누르는 기존 웹 미연시와 달리 자유 대화 구간이 열리면 하고 싶은 말을 직접 적어 보낼 수 있습니다. 상대 인물이 장면에 맞춰 답하고 호감도까지 달라져 같은 날짜라도 매번 다른 대화가 이어집니다.'
+      },
+      faqs: [
+        ['다운로드 없는 무료 야겜 사이트와 무엇이 다른가요?', '설치 파일(.exe, .apk)을 내려받거나 압축을 풀 필요가 없습니다. 전연령 대상 학원 로맨스 비주얼 노벨로 휴대폰과 PC 브라우저에서 링크만 열면 바로 시작됩니다.'],
+        ['AI 자유 대화도 무료인가요?', '네. 이야기 본편과 캐릭터별 엔딩, 장면마다 열리는 AI 자유 대화까지 결제나 회원가입 없이 이용할 수 있습니다.']
       ]
     },
     {
@@ -364,10 +382,19 @@ const PAGES = {
     },
     {
       slug: 'cupid-game-online',
-      h1: 'Cupid Game Online — Free Browser Visual Novel',
-      title: 'Cupid Game Online | Free Romance Visual Novel',
-      meta: 'Play Cupid game online for free in your browser. A no-download romance visual novel with messenger-style choices, multiple endings, and mobile support.',
-      intro: 'If you searched for "Cupid game online", this is the playable browser version: a free romance visual novel about five days of choices, messages, and branching endings.'
+      group: 'online-dating-sim-group',
+      h1: 'Cupid Game Online — Free Browser Romance Visual Novel (No Download)',
+      title: 'Cupid Game Online | Play Free Romance Visual Novel (No Download)',
+      meta: 'Play Cupid game online for free in your browser with no download. A 5-day school romance visual novel with AI free talk, 20+ endings, and mobile support (also for players searching Cupid Run Love Girl online).',
+      intro: 'If you searched for "Cupid game online", "Cupid love game", or "Cupid Run Love Girl online no download", this is the playable browser romance visual novel by ArcherLab: five days of school choices, AI free-talk messages, and 20+ branching endings with zero installation.',
+      intentSection: {
+        title: 'Looking for Cupid Run : Love Girl online or no download?',
+        body: 'Cupid Run : Love Girl is an Android runner app, whereas ArcherLab\'s Cupid is a full browser-based romance visual novel and dating simulator you can play immediately online with no APK download or account signup.'
+      },
+      faqs: [
+        ['Can I play Cupid Run Love Girl online without downloading?', 'Cupid Run : Love Girl is a mobile runner app, while Cupid on this site is a free browser romance visual novel (dating sim) that runs instantly on phone and PC with no download.'],
+        ['Does Cupid have AI chat with characters?', 'Yes. During free-talk scenes you can type your own messages to the heroines and receive real-time AI replies that affect affinity and endings.']
+      ]
     },
     {
       slug: 'cupid-visual-novel',
@@ -378,10 +405,27 @@ const PAGES = {
     },
     {
       slug: 'browser-otome-game',
+      group: 'browser-otome-group',
       h1: 'Looking for a Browser Otome Game? Try Cupid Free',
       title: 'Browser Otome Game Search | Free Romance VN Online',
       meta: 'Looking for a free browser otome game? Cupid is a no-download school-romance visual novel with a male protagonist, five women, and multiple endings.',
       intro: 'If you searched for a "browser otome game," one detail matters: Cupid is not a traditional otome game with a female protagonist and male love interests. You play as a male transfer student getting to know five women in a school-romance visual novel, free in your browser with no install or signup.'
+    },
+    {
+      slug: 'anime-dating-sim-browser-no-download',
+      group: 'ai-romance-visual-novel',
+      h1: 'Anime Dating Sim in Browser (No Download) — Free AI Romance VN',
+      title: 'Anime Dating Sim Browser No Download | Free AI Romance Visual Novel',
+      meta: 'Play an anime dating sim in your browser with no download or signup. Meet five heroines over 5 school days, type your own lines in AI free talk, and unlock 20+ endings for free.',
+      intro: 'Searching for an "anime dating sim browser no download" or "free AI romance visual novel"? Cupid combines branching visual novel routes with live AI free-talk scenes right in your mobile or desktop browser.',
+      intentSection: {
+        title: 'Branching Visual Novel + Live AI Free Talk',
+        body: 'Unlike static browser dating sims where you only click preset options, Cupid opens free-talk moments where you type what you want to say. Characters reply in context and adjust affinity based on your words.'
+      },
+      faqs: [
+        ['Do I need an account or GPU to play?', 'No. Everything runs in standard Chrome, Safari, Edge, or Firefox on phone and PC with no login required.'],
+        ['How many heroines and routes are included?', 'There are three main heroines on Day 1 (Seoyeon, Yuna, Dain) plus hidden routes and over twenty endings unlocked for free.']
+      ]
     },
     {
       slug: 'play-dating-simulator-online',
@@ -402,13 +446,14 @@ const PAGES = {
     },
     {
       slug: 'gakuen-renai-game-muryo-download-nashi',
-      h1: '無料・ダウンロード不要の学園恋愛ゲーム — Cupid',
-      title: '無料・ダウンロード不要の学園恋愛ゲーム | スマホ対応Cupid',
-      meta: '無料・ダウンロード不要で遊べる学園恋愛ゲーム。Cupidは会員登録も不要で、スマートフォンやPCのブラウザから最後まで楽しめます。',
-      intro: 'ダウンロードなしで遊べる無料の学園恋愛ゲームを探しているなら、Cupidはブラウザからそのまま始められます。アプリもインストーラーも不要。学校を舞台にした5日間の恋愛ストーリーを無料で楽しめます。'
+      h1: '学園恋愛ゲーム 無料 ダウンロードなし — 登録不要で遊べるCupid',
+      title: '学園恋愛ゲーム 無料 ダウンロードなし | 登録不要・スマホ対応Cupid',
+      meta: '学園恋愛ゲームを無料・ダウンロードなし・登録不要でプレイ。CupidはスマートフォンやPCのブラウザから5日間の学園ロマンスと20以上のエンディングを最後まで無料で遊べます。',
+      intro: '「学園恋愛ゲーム 無料 ダウンロードなし」「恋愛ゲーム 無料 ダウンロードなし 登録なし」を探しているなら、Cupidはブラウザからそのまま始められます。アプリもインストーラーも不要で、学校を舞台にした5日間の恋愛ストーリーとAIフリートークを無料で楽しめます。'
     },
     {
       slug: 'browser-otome-game-ja',
+      group: 'browser-otome-group',
       h1: 'ブラウザ乙女ゲームを探している方へ — 無料で遊べるCupid',
       title: 'ブラウザ乙女ゲームを探している方へ | 無料・インストール不要',
       meta: 'ブラウザで遊べる恋愛ゲームを探している方へ。Cupidは男性主人公として5人の女性と交流する、無料・インストール不要の学園恋愛VNです。',
@@ -430,10 +475,27 @@ const PAGES = {
     },
     {
       slug: 'muryo-renai-sim',
+      group: 'online-dating-sim-group',
       h1: '無料の恋愛シミュレーション — ダウンロード不要',
       title: '無料・ダウンロード不要の恋愛シミュレーション | ブラウザですぐ遊べる',
       meta: 'ダウンロードも課金も不要で遊べる無料の恋愛シミュレーション。5日間の物語が複数の結末へ分岐する恋愛ビジュアルノベルです。',
       intro: '「無料 恋愛シミュレーション ダウンロード不要」を探している方へ。Steamやアプリストアを経由する必要はありません。5日間のマルチエンディング恋愛ビジュアルノベルを、ブラウザだけで最後まで無料で遊べます。'
+    },
+    {
+      slug: 'bishoujo-galgame-browser-muryo',
+      group: 'ai-romance-visual-novel',
+      h1: 'ギャルゲー・美少女ゲームをブラウザで無料プレイ — ダウンロード不要のCupid',
+      title: 'ギャルゲー・美少女ゲーム ブラウザ無料 | ダウンロード不要の恋愛ゲーム Cupid',
+      meta: 'ダウンロード不要・登録なしで遊べる無料ブラウザ美少女ゲーム・ギャルゲー「Cupid」。スマホ・PC対応、AIフリートーク搭載の5日間学園恋愛ビジュアルノベル（キューピッドランラブガールをブラウザで探している方にも）。',
+      intro: '「ギャルゲー ブラウザ 無料」「美少女ゲーム 無料 ダウンロードなし」や「キューピッドランラブガール（キューピットランラブガール）」をブラウザで探している方へ。Cupidはインストール・会員登録なしで今すぐ遊べる学園恋愛ビジュアルノベルです。',
+      intentSection: {
+        title: 'AIフリートーク搭載の学園ギャルゲー・恋愛ノベル',
+        body: '選択肢を選ぶだけでなく、フリートーク場面では自分の言葉を入力してヒロインと会話できます。会話内容に応じて好感度と20種類以上のエンディングが変化します。なおモバイルランゲーム「Cupid Run : Love Girl（キューピッドランラブガール）」とは別作品のブラウザ恋愛ゲームです。'
+      },
+      faqs: [
+        ['キューピッドランラブガール（Cupid Run Love Girl）と同じゲームですか？', 'いいえ。あちらは別開発者のモバイル向けランゲームで、本作「Cupid」はArcherLabが公開しているインストール不要のブラウザ学園恋愛ビジュアルノベルです。'],
+        ['スマホやPCでダウンロードなしですぐ遊べますか？', 'はい。Safari・Chrome・Edgeなどのブラウザでリンクを開くだけで、登録・課金なしで全ルートを遊べます。']
+      ]
     },
     {
       slug: 'web-otome',
@@ -444,10 +506,10 @@ const PAGES = {
     },
     {
       slug: 'renai-game-muryo-download-nashi',
-      h1: '無料・ダウンロード不要の恋愛ゲーム — ブラウザですぐ遊べる',
-      title: '無料・ダウンロード不要の恋愛ゲーム | ブラウザで遊べるCupid',
-      meta: '無料・ダウンロード不要で遊べる恋愛ゲーム。インストール・会員登録・課金なしで、複数のエンディングを最後まで楽しめます。',
-      intro: 'ダウンロードなしで遊べる無料の恋愛ゲームを探している方へ。Cupidは5日間の物語が複数の結末へ分岐する、学園恋愛ビジュアルノベルです。ブラウザを開けば、そのまま始められます。'
+      h1: 'ダウンロード不要 恋愛ゲーム 無料 — 登録なしでブラウザからすぐ遊べる',
+      title: 'ダウンロード不要 恋愛ゲーム 無料 | 登録なし・ブラウザで遊べるCupid',
+      meta: 'ダウンロード不要・登録なしで遊べる無料の恋愛ゲーム。インストール・会員登録・課金なしで、複数のエンディングをスマホやPCブラウザで最後まで楽しめます。',
+      intro: '「ダウンロード不要 恋愛ゲーム」「恋愛ゲーム 無料 ダウンロードなし 登録なし」を探している方へ。Cupidは5日間の物語が複数の結末へ分岐する学園恋愛ビジュアルノベルです。ブラウザを開けばそのまま始められます。'
     },
     {
       slug: 'sumaho-otome-game-muryo',
@@ -468,6 +530,7 @@ const PAGES = {
     },
     {
       slug: 'otome-navegador',
+      group: 'browser-otome-group',
       h1: '¿Buscas un otome game en el navegador? Prueba Cupid gratis',
       title: 'Otome game en español | Romance visual gratis en navegador',
       meta: '¿Buscas un otome game gratis en español? Cupid es una novela visual escolar sin descarga, con protagonista masculino, cinco mujeres y múltiples finales.',
@@ -475,10 +538,27 @@ const PAGES = {
     },
     {
       slug: 'juego-citas-online',
+      group: 'online-dating-sim-group',
       h1: 'Juego de citas online — Gratis y en el navegador',
       title: 'Juego de citas online gratis | Jugar en el navegador 2026',
       meta: 'Juego de citas online gratis para jugar en el navegador. Sin descarga, sin registro, historia completa desbloqueada.',
       intro: 'Muchos resultados para "juego de citas online" llevan a páginas de descarga poco confiables. Cupid funciona directamente en tu navegador: una novela visual romántica de 5 días, gratis y con la historia completa disponible desde el primer clic.'
+    },
+    {
+      slug: 'novela-visual-anime-romance-gratis',
+      group: 'ai-romance-visual-novel',
+      h1: 'Novela Visual Anime de Romance Gratis — Simulador de Citas con IA Sin Descargar',
+      title: 'Novela Visual Anime Gratis en Español | Juego de Citas con IA Online',
+      meta: 'Juega gratis a una novela visual anime de romance escolar en español sin descargar nada. Cinco días de historia, chat libre con IA y más de 20 finales en PC y móvil.',
+      intro: '¿Buscas una "novela visual anime gratis en español" o un "simulador de citas con IA sin descargar"? Cupid se abre al instante en tu navegador con rutas románticas, decisiones y conversación libre con IA.',
+      intentSection: {
+        title: 'Decisiones de novela visual + chat libre con IA en español',
+        body: 'Además de elegir opciones en cada escena, puedes escribir tus propias respuestas durante los momentos de conversación libre. Las protagonistas responden en español según el contexto y cambian su afinidad contigo.'
+      },
+      faqs: [
+        ['¿Está completamente traducido al español?', 'Sí. Toda la interfaz, los cinco días de historia y las conversaciones están disponibles en español desde el navegador.'],
+        ['¿Necesito descargar algún archivo APK o EXE?', 'No. Se juega 100% online desde Chrome, Safari, Edge o Firefox tanto en celular como en computadora.']
+      ]
     }
   ],
   fr: [
@@ -492,6 +572,7 @@ const PAGES = {
     },
     {
       slug: 'otome-navigateur',
+      group: 'browser-otome-group',
       h1: 'Vous cherchez un otome game sur navigateur ? Essayez Cupid',
       title: 'Otome game en français | Visual novel romantique gratuit',
       meta: 'Vous cherchez un otome game gratuit en français ? Cupid est un visual novel scolaire sans téléchargement, avec un héros, cinq personnages féminins et plusieurs fins.',
@@ -499,10 +580,27 @@ const PAGES = {
     },
     {
       slug: 'jeu-drague-en-ligne',
+      group: 'online-dating-sim-group',
       h1: 'Jeu de drague en ligne — Gratuit, sans téléchargement',
       title: 'Jeu de drague en ligne gratuit | Jouer en navigateur 2026',
       meta: 'Jeu de drague en ligne gratuit, jouable directement dans votre navigateur. Sans téléchargement ni inscription, avec l\'intégralité de l\'histoire accessible.',
       intro: 'De nombreux résultats pour « jeu de drague en ligne » renvoient vers des sites de téléchargement peu fiables. Cupid se lance directement dans votre navigateur : un visual novel romantique de 5 jours, gratuit, dont toute l\'histoire est accessible dès le premier clic.'
+    },
+    {
+      slug: 'visual-novel-romance-anime-gratuit',
+      group: 'ai-romance-visual-novel',
+      h1: 'Visual Novel Romance Anime Gratuit — Jeu de Drague IA en Français',
+      title: 'Visual Novel Romance Anime Gratuit | Jeu de Rencontre IA Sans Téléchargement',
+      meta: 'Jouez gratuitement à un visual novel romance anime en français dans votre navigateur. Cinq jours de lycée, dialogues libres avec IA et plus de 20 fins sans inscription.',
+      intro: 'Vous cherchez un « visual novel romance anime gratuit en français » ou un « jeu de drague IA sans téléchargement » ? Cupid combine une histoire interactive de cinq jours au lycée et des dialogues libres générés par IA directement sur mobile et PC.',
+      intentSection: {
+        title: 'Choix narratifs et discussion libre avec IA en français',
+        body: 'En plus des choix classiques de roman visuel, certaines scènes vous permettent d\'écrire librement vos propres répliques. Les héroïnes vous répondent en contexte et votre affinité évolue selon vos mots.'
+      },
+      faqs: [
+        ['Le jeu est-il entièrement disponible en français ?', 'Oui. L\'interface, les cinq jours de scénario et les dialogues libres sont jouables en français directement dans le navigateur.'],
+        ['Faut-il créer un compte ou installer une application ?', 'Non. Aucun compte ni téléchargement n\'est requis, et votre progression est sauvegardée automatiquement dans votre navigateur.']
+      ]
     }
   ],
   de: [
@@ -516,6 +614,7 @@ const PAGES = {
     },
     {
       slug: 'browser-otome',
+      group: 'browser-otome-group',
       h1: 'Du suchst ein Browser-Otome-Game? Probiere Cupid',
       title: 'Browser-Otome-Game gesucht | Kostenlose Romance-VN',
       meta: 'Du suchst ein kostenloses Browser-Otome-Game? Cupid ist eine Visual Novel über eine Schulromanze – ohne Download, mit männlicher Hauptfigur, fünf weiblichen Figuren und mehreren Enden.',
@@ -523,10 +622,27 @@ const PAGES = {
     },
     {
       slug: 'dating-spiel-online',
+      group: 'online-dating-sim-group',
       h1: 'Dating-Spiel online — Gratis im Browser',
       title: 'Dating-Spiel online gratis | Im Browser spielen ohne Download',
       meta: 'Dating-Spiel online gratis im Browser spielen. Kein Download, keine Anmeldung, die vollständige Handlung ist freigeschaltet.',
       intro: 'Viele Treffer für „Dating-Spiel online“ führen zu fragwürdigen Download-Seiten. Cupid läuft direkt in deinem Browser: eine kostenlose, fünftägige Romance-Visual-Novel, deren komplette Handlung ab dem ersten Klick verfügbar ist.'
+    },
+    {
+      slug: 'anime-romance-visual-novel-kostenlos',
+      group: 'ai-romance-visual-novel',
+      h1: 'Anime Romance Visual Novel Kostenlos — KI-Dating-Sim auf Deutsch im Browser',
+      title: 'Anime Visual Novel Deutsch Kostenlos | KI-Dating-Sim Ohne Download',
+      meta: 'Spiele eine kostenlose Anime Romance Visual Novel auf Deutsch direkt im Browser. Fünf Schultage, freier KI-Chat mit den Charakteren und über 20 Enden ohne Download.',
+      intro: 'Du suchst eine „Anime Visual Novel auf Deutsch kostenlos“ oder eine „KI-Dating-Sim ohne Download“? Cupid verbindet klassische Entscheidungsrouten mit freien KI-Gesprächen direkt im Browser auf PC und Smartphone.',
+      intentSection: {
+        title: 'Visual-Novel-Entscheidungen + freier KI-Dialog auf Deutsch',
+        body: 'Neben festen Antwortmöglichkeiten kannst du in Freitext-Szenen eigene Nachrichten tippen. Die Charaktere antworten passend zur Szene auf Deutsch, was Zuneigung und Enden direkt beeinflusst.'
+      },
+      faqs: [
+        ['Ist die komplette Visual Novel auf Deutsch spielbar?', 'Ja. Oberfläche, alle fünf Schultage und die freien Gespräche stehen vollständig auf Deutsch zur Verfügung.'],
+        ['Muss ich etwas herunterladen oder mich registrieren?', 'Nein. Das Spiel startet sofort im Browser und speichert deinen Fortschritt lokal auf deinem Gerät.']
+      ]
     }
   ],
   pt: [
@@ -540,6 +656,7 @@ const PAGES = {
     },
     {
       slug: 'jogo-namoro-online-gratis',
+      group: 'online-dating-sim-group',
       h1: 'Jogo de namoro online grátis — No navegador, sem download',
       title: 'Jogo de namoro online grátis sem download | Jogar no navegador 2026',
       meta: 'Jogo de namoro online grátis para jogar no navegador. Sem download, sem cadastro, história completa desbloqueada.',
@@ -547,10 +664,27 @@ const PAGES = {
     },
     {
       slug: 'visual-novel-romance-gratis',
+      group: 'browser-otome-group',
       h1: 'Visual novel de romance grátis — No navegador, sem baixar',
       title: 'Visual novel de romance grátis | Jogar sem baixar 2026',
       meta: 'Visual novel romântica grátis para jogar no navegador, sem baixar nem instalar. Múltiplos finais, otimizada para celular.',
       intro: 'Você procura uma “visual novel de romance grátis”? Não precisa de Steam, loja de aplicativos nem cartão. Esta visual novel romântica de 5 dias, com vários finais, roda direto no navegador — no computador ou celular.'
+    },
+    {
+      slug: 'jogo-de-namoro-anime-navegador-gratis',
+      group: 'ai-romance-visual-novel',
+      h1: 'Jogo de Namoro Anime Grátis no Navegador — Simulador com IA em Português',
+      title: 'Jogo de Namoro Anime Grátis em Português | Simulador de Encontros com IA Sem Baixar',
+      meta: 'Jogue um simulador de encontros e jogo de namoro anime grátis em português direto no navegador. Cinco dias de romance escolar, conversa livre com IA e mais de 20 finais sem baixar nada.',
+      intro: 'Procurando um “jogo de namoro anime grátis em português” ou “simulador de encontros com IA sem baixar”? Cupid combina escolhas de visual novel com conversa livre por IA direto no navegador do celular ou PC.',
+      intentSection: {
+        title: 'Escolhas românticas + conversa livre com IA em português',
+        body: 'Além das opções da história, você pode digitar suas próprias mensagens nos momentos de conversa livre. As personagens respondem em português de acordo com a cena e mudam a afinidade com você.'
+      },
+      faqs: [
+        ['O jogo está disponível em português?', 'Sim. Toda a interface, os cinco dias de história e as conversas com IA funcionam em português no navegador.'],
+        ['Preciso baixar APK ou criar conta?', 'Não. Você joga direto pelo Chrome, Safari, Edge ou Firefox sem instalar nada e sem cadastro.']
+      ]
     }
   ],
   zh: [
@@ -564,6 +698,7 @@ const PAGES = {
     },
     {
       slug: 'wangyeban-yinv-youxi',
+      group: 'browser-otome-group',
       h1: '在找网页版乙女游戏？来试试免费的 Cupid',
       title: '网页版乙女游戏 | 免费在线恋爱视觉小说，无需下载',
       meta: '在找免费的网页版乙女游戏？《Cupid》是无需下载的校园恋爱视觉小说，男主视角，五位女主角，多重结局，支持简体中文。',
@@ -571,6 +706,7 @@ const PAGES = {
     },
     {
       slug: 'zaixian-lianai-moni-youxi',
+      group: 'online-dating-sim-group',
       h1: '在线恋爱模拟游戏——免费，浏览器直接玩',
       title: '在线恋爱模拟游戏免费玩 | 无需下载，手机电脑都能玩 2026',
       meta: '免费的在线恋爱模拟游戏，无需下载，无需注册，完整剧情全部开放。多重结局，打开浏览器就能玩。',
@@ -578,14 +714,30 @@ const PAGES = {
     },
     {
       slug: 'galgame-zaixian-wan',
-      h1: 'Galgame 在线玩——免费的网页版校园恋爱视觉小说',
-      title: 'Galgame 在线玩 | 免费网页版恋爱视觉小说 Cupid',
-      meta: '想在线玩 Galgame？《Cupid》是免费的网页版校园恋爱视觉小说，无需下载安装，五位女主角，多重结局，支持简体中文。',
-      intro: '“Galgame 在线玩”“网页版 Galgame”——如果你也想跳过下载和安装，Cupid 可以直接在浏览器里开玩。男主视角，五天校园生活，通过聊天式的对话和选项，一步步走向不同的结局。',
+      h1: 'Galgame 网页版在线玩（Galgame 網頁版）——免下载校园恋爱视觉小说',
+      title: 'Galgame 网页版在线玩 | Galgame 網頁版免費戀愛遊戲 Cupid',
+      meta: '想找 Galgame 网页版在线玩（Galgame 網頁版線上玩）？《Cupid》是免下载、免注册的免费校园恋爱视觉小说，五位女主角、AI 自由对话与 20+ 多重结局，手机电脑浏览器即点即玩。',
+      intro: '无论是搜索“Galgame 在线玩”“Galgame 网页版”还是繁体中文“Galgame 網頁版線上玩 / 免費戀愛遊戲免下載”，Cupid 都能在浏览器里直接开玩。男主视角、五天校园生活，通过聊天式对话、分支选项与 AI 自由对话走向不同结局。',
       intentSection: {
         title: 'Cupid 和传统 Galgame 有什么不同',
-        body: 'Cupid 不用下载安装包，也不用解压或折腾运行环境。点开链接就能开始，剧情以聊天界面推进，选项会影响好感度，好感度又会决定你最后看到的结局。'
+        body: 'Cupid 不用下载安装包，也不用解压或折腾运行环境。点开链接就能开始，剧情以聊天界面推进，选项和 AI 自由输入都会影响好感度，并决定你最后看到的结局。'
       }
+    },
+    {
+      slug: 'galgame-wangyeban-mianfei-wan',
+      group: 'ai-romance-visual-novel',
+      h1: 'Galgame 網頁版 / 免費戀愛遊戲免下載——AI 校園美少女視覺小說 Cupid',
+      title: 'Galgame 網頁版線上玩 | 免費戀愛遊戲免下載・AI 美少女視覺小說 Cupid',
+      meta: '免費戀愛遊戲免下載！《Cupid》支援瀏覽器線上玩（Galgame 網頁版 / 免費文字冒險遊戲），免安裝、免註冊，結合五天校園戀愛劇情、AI 自由對話與 20 多種結局，手機電腦皆可暢玩。',
+      intro: '想找「Galgame 網頁版」「免費戀愛遊戲 免下載」或「AI 恋爱养成游戏网页版」？《Cupid》无需下载 App 或安装包，打开手机或电脑浏览器即可免费畅玩五天校园恋爱故事与多重结局。',
+      intentSection: {
+        title: '分支選項 + AI 自由對話（支援手機與電腦瀏覽器）',
+        body: '除了傳統視覺小說的劇情選項外，在自由對話環節中你還可以親自輸入台詞與女主角互動。AI 會根據場景即時回應並改變好感度，解鎖超過 20 種不同結局。'
+      },
+      faqs: [
+        ['需要下載安裝包或註冊帳號嗎？', '完全不需要。打開瀏覽器就能直接開始遊玩，進度會自動儲存在當前裝置的瀏覽器中。'],
+        ['手機瀏覽器也能玩 Galgame 網頁版嗎？', '可以。介面針對手機直向螢幕最佳化，在 iPhone Safari 與 Android Chrome 上單手就能流暢操作。']
+      ]
     },
     {
       slug: 'shouji-lianai-youxi-mianfei',
@@ -596,7 +748,6 @@ const PAGES = {
     }
   ]
 };
-
 const CSS = `
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}

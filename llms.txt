@@ -53,33 +53,14 @@ Visual Novel, Romance, Dating Simulation, School Life
 
 ## Platform
 Web Browser (Chrome, Safari, Firefox, Edge — any modern browser)
-
-## Service guide (what it is, pricing, how to use, FAQ)
-- Korean: https://cupid.archerlab.dev/seo/cupid-about
-- English: https://cupid.archerlab.dev/seo/cupid-about-en
-- Cupid game, free dating sim online with no download (English): https://cupid.archerlab.dev/seo/cupid-game-free-dating-sim
-- 무료 미연시·연애 시뮬레이션 게임 Cupid (Korean): https://cupid.archerlab.dev/seo/muryo-miyeonsi-yeonae-simulation-game
-- 学園恋愛ゲーム 無料・ダウンロードなし (Japanese): https://cupid.archerlab.dev/seo/gakuen-renai-game-muryo-guide
-- Full text for AI systems: https://cupid.archerlab.dev/llms-full.txt
-- Last updated: 2026-10-02
-
-## Service guide (what it is, pricing, how to use, FAQ)
-- Korean: https://cupid.archerlab.dev/seo/cupid-about
-- English: https://cupid.archerlab.dev/seo/cupid-about-en
-- Cupid game, free dating sim online with no download (English): https://cupid.archerlab.dev/seo/cupid-game-free-dating-sim
-- 무료 미연시·연애 시뮬레이션 게임 Cupid (Korean): https://cupid.archerlab.dev/seo/muryo-miyeonsi-yeonae-simulation-game
-- 学園恋愛ゲーム 無料・ダウンロードなし (Japanese): https://cupid.archerlab.dev/seo/gakuen-renai-game-muryo-guide
-- Full text for AI systems: https://cupid.archerlab.dev/llms-full.txt
-- Last updated: 2026-10-02
-
-## Service guide (what it is, pricing, how to use, FAQ)
-- Korean: https://cupid.archerlab.dev/seo/cupid-about
-- English: https://cupid.archerlab.dev/seo/cupid-about-en
-- Cupid game, free dating sim online with no download (English): https://cupid.archerlab.dev/seo/cupid-game-free-dating-sim
-- 무료 미연시·연애 시뮬레이션 게임 Cupid (Korean): https://cupid.archerlab.dev/seo/muryo-miyeonsi-yeonae-simulation-game
-- 学園恋愛ゲーム 無料・ダウンロードなし (Japanese): https://cupid.archerlab.dev/seo/gakuen-renai-game-muryo-guide
-- Full text for AI systems: https://cupid.archerlab.dev/llms-full.txt
-- Last updated: 2026-10-02
+- AI romance visual novel (Korean): https://cupid.archerlab.dev/seo/ai-yeonae-misinsi-muryo
+- Anime dating sim browser no download (English): https://cupid.archerlab.dev/seo/anime-dating-sim-browser-no-download
+- Bishoujo & Galgame browser free (Japanese): https://cupid.archerlab.dev/seo/bishoujo-galgame-browser-muryo
+- Novela visual anime romance gratis (Spanish): https://cupid.archerlab.dev/seo/novela-visual-anime-romance-gratis
+- Visual novel romance anime gratuit (French): https://cupid.archerlab.dev/seo/visual-novel-romance-anime-gratuit
+- Anime romance visual novel kostenlos (German): https://cupid.archerlab.dev/seo/anime-romance-visual-novel-kostenlos
+- Jogo de namoro anime navegador gratis (Portuguese): https://cupid.archerlab.dev/seo/jogo-de-namoro-anime-navegador-gratis
+- Galgame 网页版 / 免費戀愛遊戲線上玩 (Chinese): https://cupid.archerlab.dev/seo/galgame-wangyeban-mianfei-wan
 
 ## Service guide (what it is, pricing, how to use, FAQ)
 - Korean: https://cupid.archerlab.dev/seo/cupid-about

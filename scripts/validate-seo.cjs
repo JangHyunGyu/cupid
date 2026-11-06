@@ -58,7 +58,31 @@ const PRIMARY_SEO_SLUGS = new Set([
   'simulador-citas-gratis',
   'simulation-amour-gratuit',
   'dating-sim-kostenlos',
-  'otome-navegador-gratis'
+  'otome-navegador-gratis',
+  'muryo-yeonae-sim',
+  'cupid-game-online',
+  'muryo-renai-sim',
+  'juego-citas-online',
+  'jeu-drague-en-ligne',
+  'dating-spiel-online',
+  'jogo-namoro-online-gratis',
+  'zaixian-lianai-moni-youxi',
+  'browser-misinsi',
+  'browser-otome-game',
+  'browser-otome-game-ja',
+  'otome-navegador',
+  'otome-navigateur',
+  'browser-otome',
+  'visual-novel-romance-gratis',
+  'wangyeban-yinv-youxi',
+  'ai-yeonae-misinsi-muryo',
+  'anime-dating-sim-browser-no-download',
+  'bishoujo-galgame-browser-muryo',
+  'novela-visual-anime-romance-gratis',
+  'visual-novel-romance-anime-gratuit',
+  'anime-romance-visual-novel-kostenlos',
+  'jogo-de-namoro-anime-navegador-gratis',
+  'galgame-wangyeban-mianfei-wan'
 ]);
 
 const read = file => fs.readFileSync(path.join(ROOT, file), 'utf8');
@@ -91,7 +115,7 @@ const indexable = [
   ...seoFiles.map(([file, url]) => ({ file, url, lang: '', home: false }))
 ];
 
-if (indexable.length !== 62) fail(`Expected 62 indexable pages, found ${indexable.length}`);
+if (indexable.length !== 70) fail(`Expected 70 indexable pages, found ${indexable.length}`);
 
 const canonicals = new Set();
 let stableGame = '';
