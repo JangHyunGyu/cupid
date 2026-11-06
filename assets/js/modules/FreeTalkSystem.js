@@ -2104,11 +2104,14 @@ class FreeTalkSystem {
             _streamingPreview = null;
             this.dialogueSystem.finishStreamingText(scene.name);
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
+            const isControlBlocked = error?.isControlBlocked === true || error?.reason === 'INPUT_CONTROL_BLOCKED';
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
-                if (!this.uiManager.chatInput.value) this.uiManager.chatInput.value = text;
-                this.uiManager.resizeChatInput?.();
-                if (stagedImage && !this.uiManager.stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
+                if (!isControlBlocked) {
+                    if (!this.uiManager.chatInput.value) this.uiManager.chatInput.value = text;
+                    this.uiManager.resizeChatInput?.();
+                    if (stagedImage && !this.uiManager.stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
+                }
                 this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                 if (this.uiManager.turnCountEl) {
                     this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
@@ -2119,6 +2122,14 @@ class FreeTalkSystem {
             // F12 → Console 탭에서 확인 가능
             if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') {
                 console.warn('[Cupid FreeTalk] Ignored stale chat response');
+                return;
+            }
+            if (isControlBlocked) {
+                const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
+                const notice = error?.userMessage || CupidFreeTalkCore.getControlBlockedNotice?.(langErr) || 'Inputs that dictate the other character cannot be sent.';
+                this._clearThinkingMessage();
+                this.uiManager.updateNameTag(failedTurnName);
+                if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
                 return;
             }
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
@@ -2786,15 +2797,25 @@ class FreeTalkSystem {
             streamingPreview = null;
             this.dialogueSystem.finishStreamingText();
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
+            const isControlBlocked = error?.isControlBlocked === true || error?.reason === 'INPUT_CONTROL_BLOCKED';
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
-                if (!this.uiManager.chatInput.value) this.uiManager.chatInput.value = text;
-                this.uiManager.resizeChatInput?.();
-                if (stagedImage && !this.uiManager.stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
+                if (!isControlBlocked) {
+                    if (!this.uiManager.chatInput.value) this.uiManager.chatInput.value = text;
+                    this.uiManager.resizeChatInput?.();
+                    if (stagedImage && !this.uiManager.stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
+                }
                 this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                 if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
             }
             if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') return;
+            if (isControlBlocked) {
+                const notice = error?.userMessage || CupidFreeTalkCore.getControlBlockedNotice?.(lang) || 'Inputs that dictate the other character cannot be sent.';
+                this._clearThinkingMessage();
+                this.uiManager.updateNameTag(failedTurnName);
+                if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
+                return;
+            }
             const isTransientTransportFailure = CupidFreeTalkCore.isNetworkTransportError(error);
             const isOfflineTransportFailure = navigator.onLine === false && isTransientTransportFailure;
             if (isTransientTransportFailure) console.warn('[Cupid Group FreeTalk] transport interruption:', error?.message || error);

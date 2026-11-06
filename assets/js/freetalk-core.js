@@ -1865,9 +1865,34 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         return hasDisplayableContent(parsed) ? candidate : '';
     }
 
+    const CONTROL_BLOCKED_NOTICE = Object.freeze({
+        ko: '최면·약물·호감도나 기억 조작, 상대의 대사·감정·신체 상태를 마음대로 정하는 내용은 전달되지 않습니다.',
+        en: "Hypnosis, drug effects, memory or affinity manipulation, and dictating another character's dialogue, feelings, or bodily state cannot be sent.",
+        ja: '催眠・薬物・好感度や記憶の操作、相手のセリフ・感情・身体状態を勝手に決める内容は送信されません。',
+        es: 'No se envían contenidos que impongan hipnosis, efectos de drogas, manipulación de memoria o afinidad, ni diálogos, sentimientos o estados físicos de otro personaje.',
+        fr: 'L’hypnose, les effets de drogues, la manipulation de la mémoire ou de l’affinité, ainsi que le fait de dicter les répliques, émotions ou états physiques d’un autre personnage ne sont pas transmis.',
+        de: 'Hypnose, Drogeneffekte, Erinnerungs- oder Affinitätsmanipulation sowie das Vorgeben von Dialogen, Gefühlen oder Körperzuständen anderer Charaktere werden nicht gesendet.',
+        pt: 'Hipnose, efeitos de drogas, manipulação de memória ou afinidade e imposição de falas, sentimentos ou estado físico de outro personagem não são enviados.',
+        zh: '催眠、药物效果、好感度或记忆操纵，以及擅自决定对方台词、感情或身体状态的内容不会被发送。',
+    });
+
+    function getControlBlockedNotice(lang = 'ko') {
+        const normalized = String(lang || 'ko').trim().toLowerCase().split(/[-_]/)[0];
+        return CONTROL_BLOCKED_NOTICE[normalized] || CONTROL_BLOCKED_NOTICE.ko;
+    }
+
     function assertChatCompletionSucceeded(payload = {}) {
         if (payload?.reason === 'SAFETY_BLOCKED' || payload?.error === 'SAFETY_BLOCKED') {
             throw Object.assign(new Error('SAFETY_BLOCKED'), { reason: 'SAFETY_BLOCKED', isSafetyBlocked: true });
+        }
+        if (payload?.controlBlocked === true || payload?.reason === 'INPUT_CONTROL_BLOCKED' || payload?.error === 'INPUT_CONTROL_BLOCKED') {
+            throw Object.assign(new Error(payload?.message || 'INPUT_CONTROL_BLOCKED'), {
+                reason: 'INPUT_CONTROL_BLOCKED',
+                isControlBlocked: true,
+                userMessage: payload?.message || '',
+                inputHistory: payload?.inputHistory || { version: 1, treatment: 'unspoken_control', excludeCurrent: true },
+                turnId: payload?.turnId || '',
+            });
         }
         if (payload?.retryExhausted === true
             || payload?.model === 'local-structured-recovery'
@@ -1888,6 +1913,14 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         error.status = response?.status || 0;
         error.reason = payload?.reason || payload?.error || '';
         error.isSafetyBlocked = error.reason === 'SAFETY_BLOCKED';
+        error.isControlBlocked = error.reason === 'INPUT_CONTROL_BLOCKED'
+            || payload?.controlBlocked === true
+            || response?.headers?.get?.('x-input-control-blocked') === '1';
+        if (error.isControlBlocked) {
+            error.reason = 'INPUT_CONTROL_BLOCKED';
+            error.userMessage = payload?.message || '';
+            error.inputHistory = payload?.inputHistory || { version: 1, treatment: 'unspoken_control', excludeCurrent: true };
+        }
         error.retryExhausted = response?.headers?.get?.('x-ai-retry-exhausted') === 'true'
             || payload?.retryExhausted === true;
         if (error.retryExhausted) error.reason = 'UPSTREAM_RETRIES_EXHAUSTED';
@@ -1980,7 +2013,7 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
                     assertCurrent();
                     markAiRequestTimeout(error, timedOut && controller.signal.aborted);
                     const terminal = controller.signal.aborted || error?.name === 'AbortError'
-                        || error?.retryExhausted || ['SAFETY_BLOCKED', 'STALE_TURN', 'VERSION_MISMATCH'].includes(error?.reason);
+                        || error?.retryExhausted || ['SAFETY_BLOCKED', 'INPUT_CONTROL_BLOCKED', 'STALE_TURN', 'VERSION_MISMATCH'].includes(error?.reason);
                     const recoverable = isNetworkTransportError(error)
                         || error?.isResponseDecodeFailure || ['STREAM_INTERRUPTED', 'STREAM_ERROR', 'EMPTY_AI_RESPONSE', 'INCOMPLETE_STRUCTURED_STREAM', 'PROVIDER_OUTPUT_CONTRACT_VIOLATION'].includes(error?.reason)
                         || (response && shouldRetryAiResponse(response));
@@ -2405,6 +2438,7 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         extractFirstStreamingConversationPreview,
         assertChatCompletionSucceeded,
         createAiResponseError,
+        getControlBlockedNotice,
         selectChatCompletionContent,
         readChatCompletionStream,
         requestChatCompletion,

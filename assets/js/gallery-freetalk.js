@@ -1444,9 +1444,21 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             _streamingPreview = null;
             this._finishStreamingText();
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
+            const isControlBlocked = err?.isControlBlocked === true || err?.reason === 'INPUT_CONTROL_BLOCKED';
             this._rollbackRequestHistory(requestContext);
             if (!ownsCurrentContext || err?.isStaleTurn || err?.reason === 'STALE_TURN') {
                 console.warn('[Cupid GalleryFreeTalk] Ignored stale chat response');
+                err.__staleTurnHandled = true;
+            }
+            if (!err?.__staleTurnHandled && isControlBlocked) {
+                const notice = err?.userMessage || GalleryFreeTalkCore.getControlBlockedNotice?.(this.lang) || 'Inputs that dictate the other character cannot be sent.';
+                this._clearThinkingMessage();
+                if (nameTag) nameTag.textContent = failedTurnName;
+                if (msgEl) msgEl.textContent = notice;
+                if (charImg) charImg.classList.remove('thinking');
+                if (dialogueBox) dialogueBox.classList.remove('thinking-box');
+                document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
+                window.CupidCredits?.refreshBalance?.().catch(() => {});
                 err.__staleTurnHandled = true;
             }
             if (!err?.__staleTurnHandled) {
