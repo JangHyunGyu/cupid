@@ -53,6 +53,14 @@
 - 표준 SOTA 처리 순서는 `predict_sota_alpha(birefnet-general + isnet-anime 코어 보호 앙상블) -> restore_interior_erosion(RGB가 온전한 내부 반투명 침식 구멍 복원 및 실제 팔·목 사이 투명 배경 공간 보존) -> remove_trapped_hair_pockets(연결 요소 기반 머리카락·손가락 사이 갇힌 흰 배경 포켓 제거) -> clean_sprite_defringe & defringe_with_pymatting(다단계 부유 노이즈 섬 제거 + EDT 코어 색상 참조 + PyMatting estimate_foreground_ml 전경 역산 디프린징) -> 원본 해상도(width x height) 보존 및 시각·정량 검증`을 따른다.
 - `cupid`와 `harem`의 큐피드 방(`mixed_5`) 캐릭터 스프라이트는 평문 SHA-256과 R2 스토리지를 동기화하여 관리한다.
 
+## Mandatory Post-Generation & Post-Modification Image Verification (Permanent, 2026-11-06)
+- 모든 이미지 생성(AI 생성 포함) 및 이미지 수정(배경 제거, 리사이즈, 크롭, 합성, 포맷 변환 등) 작업 직후에는 반드시 최종 결과물 파일을 직접 열어 시각·정량 검수를 수행한 뒤에만 에셋 설치·커밋·배포 단계로 넘어간다.
+- 생성 원본(예: 흰 배경 JPG)만 확인하고 후처리 결과물(예: 투명 배경 PNG/WebP) 확인을 생략하는 행위를 엄격히 금지한다.
+- 투명 배경(RGBA) 이미지를 검수할 때는 기본 흰 배경 뷰어에서 흰끼·배경 포켓·내부 침식 구멍이 가려지므로, 반드시 다음 두 가지 대비 배경 합성 시트를 생성해 눈으로 직접 확인한다:
+  1. 어두운 배경(`#181824` 등) 합성: 외곽 흰끼(할로), 머리카락·팔 사이 갇힌 흰 배경 포켓, 미제거 부유 노이즈 섬 검출.
+  2. 고대비 네온 마젠타/그린(`#FF00FF` / `#00FF00`) 배경 합성: 흰 셔츠·흰 가운·안경·눈동자·치아·은발 등이 배경으로 오인되어 파먹힌 내부 침식 구멍(Hole) 검출.
+- 검수 과정에서 단 1건이라도 의상/머리카락 파먹힘, 갇힌 배경 포켓, 흰 테두리 할로, 해상도 불일치, 신체 비율/이중턱 결함이 발견되면 배포를 즉시 중단하고 수정·재검수 후 통과한 파일만 배포한다.
+
 ## Gallery Asset Registration (Permanent)
 - 공략 캐릭터의 새 표정 이미지는 실제 장면 연결과 함께 지원하는 모든 언어(`ko`, `en`, `ja`, `es`, `fr`, `de`, `pt`, `zh`)의 갤러리 표정 목록과 이름에 등록한다.
 - 새 이벤트·엔딩 CG는 해금 장면, `REGISTERED_CG_IDS`, 모든 언어의 갤러리 이름·설명·해금 조건, 실제 이미지 경로를 한 변경에서 맞춘다.
