@@ -3,6 +3,14 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 
+# 로컬 mask-python 가상환경(onnxruntime, rembg 등) 경로 자동 포함
+for _extra_site in (
+    pathlib.Path(__file__).resolve().parent.parent / "tmp" / "mask-python",
+    pathlib.Path("D:/workspace/harem/tmp/mask-python"),
+):
+    if _extra_site.exists() and str(_extra_site) not in sys.path:
+        sys.path.insert(0, str(_extra_site))
+
 
 # 오픈소스 배경 제거 세션(bria-rmbg, birefnet-general, isnet-anime 등) 캐시
 _SESSION = None
@@ -98,8 +106,8 @@ def restore_interior_erosion(rgba, min_hole_alpha=12, max_hole_size_norm=7500, p
     chroma = cmax - cmin
 
     yy, xx = np.mgrid[0:h, 0:w]
-    # 1) 캐릭터 중심 척추 영역(x=0.33..0.67, y=0.03..0.76) 내부에 완전히 포함된 닫힌 홀(흰 머리띠·흰 셔츠 카라·안경알·눈동자·문양)만 100% 불투명 복원
-    #    (팔을 들어 올린 포즈에서 x=0.33 또는 x=0.67 경계를 가로지르는 겨드랑이/팔 사이 실제 배경 공간은 절대 채우지 않음)
+    # 1) 캐릭터 중심 척추 영역(x=0.31..0.69, y=0.02..0.76) 및 상단 두부 영역(x=0.22..0.78, y=0.01..0.28) 내부에 완전히 포함된 닫힌 홀(흰 머리띠·앞머리 틈·은발 가닥 내부·입에 문 흰 손수건·안경알·눈동자·흰 셔츠 카라·명찰)을 100% 불투명 복원
+    #    (팔을 들어 올린 포즈에서 x=0.31 또는 x=0.69 경계를 가로지르는 겨드랑이/팔 사이 실제 배경 공간은 절대 채우지 않음)
     solid_spine = a >= 180
     filled_spine = ndimage.binary_fill_holes(solid_spine)
     spine_holes = filled_spine & (a < 250)
@@ -109,8 +117,20 @@ def restore_interior_erosion(rgba, min_hole_alpha=12, max_hole_size_norm=7500, p
             continue
         sy0, sy1 = s_sl[0].start, s_sl[0].stop
         sx0, sx1 = s_sl[1].start, s_sl[1].stop
-        if sx0 >= int(0.33 * w) and sx1 <= int(0.67 * w) and sy0 >= int(0.03 * h) and sy1 <= int(0.76 * h):
-            a[s_sl][s_lbl[s_sl] == s_idx] = 255.0
+        in_torso_spine = (sx0 >= int(0.31 * w) and sx1 <= int(0.69 * w) and sy0 >= int(0.02 * h) and sy1 <= int(0.76 * h))
+        in_head_crown = (sx0 >= int(0.22 * w) and sx1 <= int(0.78 * w) and sy0 >= int(0.01 * h) and sy1 <= int(0.28 * h))
+        if in_torso_spine or in_head_crown:
+            sub_h = (s_lbl[s_sl] == s_idx)
+            # 단, 얼굴 중앙(눈·치아·볼 땀방울: x=0.42..0.58, y<=0.30)을 제외한 목·손가락·머리카락 사이 순백색(#FFFFFF) 배경 포켓은 채우지 않고 유지
+            in_central_face = (sx0 >= int(0.42 * w) and sx1 <= int(0.58 * w) and sy1 <= int(0.30 * h))
+            h_cmin = cmin[s_sl][sub_h]
+            h_sat = chroma[s_sl][sub_h]
+            h_area = int(sub_h.sum())
+            if (not in_central_face) and h_area >= int(16 * scale_area) and sy0 >= int(0.18 * h) and sy1 <= int(0.36 * h) and float(((h_cmin >= 249) & (h_sat <= 4)).mean()) >= 0.65:
+                continue
+            if (not in_central_face) and h_area >= int(800 * scale_area) and sy0 >= int(0.23 * h) and float(((h_cmin >= 252) & (h_sat <= 3)).mean()) >= 0.88:
+                continue
+            a[s_sl][sub_h] = 255.0
 
     # 2) 불투명 전경(a >= 235)으로 둘러싸인 내부 닫힌 저알파 구멍 탐지
     solid = a >= 235
@@ -263,9 +283,10 @@ def clean_sprite_defringe(rgba, ref_rgba=None, extra_gap_rois=None, use_pymattin
 
     in_edge_zone = fg & ((dist_in <= edge_radius) | (a < 190))
     non_white_interior = (ref_cmin < 215) | (ref_chroma > 22)
-    is_white_halo = in_edge_zone & non_white_interior & (cmin > np.maximum(ref_cmin + 12.0, 175.0)) & (chroma <= 32.0)
-    is_semi_white_halo = in_edge_zone & ((a < 190) | ((dist_in <= edge_radius) & (a < 225))) & (cmin >= 198.0) & (chroma <= 26.0)
-    is_outer_rim_white = fg & (dist_in <= 2.2 * scale) & (cmin >= 232.0) & (chroma <= 16.0)
+    is_lavender_hair_edge = ((b - r) >= 8.0) & (cmin < 236.0)
+    is_white_halo = in_edge_zone & non_white_interior & (~is_lavender_hair_edge) & (cmin > np.maximum(ref_cmin + 12.0, 175.0)) & (chroma <= 32.0)
+    is_semi_white_halo = in_edge_zone & (~is_lavender_hair_edge) & ((a < 190) | ((dist_in <= edge_radius) & (a < 225))) & (cmin >= 198.0) & (chroma <= 26.0)
+    is_outer_rim_white = fg & (~is_lavender_hair_edge) & (dist_in <= 2.2 * scale) & (cmin >= 232.0) & (chroma <= 16.0)
 
     halo_mask = is_white_halo | is_semi_white_halo | is_outer_rim_white
 
@@ -331,17 +352,70 @@ def remove_trapped_hair_pockets(rgba, y_limit_ratio=0.78, protect_white_garments
     sat = cmax - cmin
     lum = 0.299 * r + 0.587 * g + 0.114 * b
 
-    # 피부에서 18px 확장(검은 선화를 넘어 흰 손목 커프스·셔츠 목깃까지 보호) 및 중앙 몸통·머리띠 영역 보호
-    warm_skin = (a >= 150) & ((r - b) >= 20) & (lum >= 110)
-    near_skin = ndimage.binary_dilation(warm_skin, iterations=max(14, int(round(18 * w / 1152.0))))
-    central_body = (xx >= int(0.32 * w)) & (xx <= int(0.68 * w)) & (yy >= int(0.02 * h)) & (yy <= int(0.92 * h))
+    # 은발(yuna 등) 및 연보라/밝은 머리카락(nurse 등) 판별: 얼굴 중앙(눈·입·안경알) 및 상단 정수리 하이라이트, 하단 흰 가운(y >= 0.355*h)을 보호하면서 외곽/목 주변 순백색(#FFFFFF) 배경 포켓 제거
+    head_fg = (yy < int(0.25 * h)) & (a >= 180)
+    is_silver_hair = False
+    if head_fg.sum() > 0:
+        silver_ratio = float(((cmin[head_fg] >= 185) & (sat[head_fg] <= 25)).mean())
+        if silver_ratio >= 0.42:
+            is_silver_hair = True
 
-    outer_hair_zone = (~central_body) & (~near_skin) & (yy < int(y_limit_ratio * h))
-    cand = outer_hair_zone & (a > 0) & (cmin >= 200) & (sat <= 18) & ((r - b) <= 14)
+    warm_skin = (a >= 150) & ((r - b) >= 20) & (lum >= 110)
+    dist_ext = ndimage.distance_transform_edt(a >= 25)
+
+    if is_silver_hair:
+        left_zone = (xx >= int(0.295 * w)) & (xx <= int(0.436 * w)) & (yy >= int(0.127 * h)) & (yy <= int(0.339 * h))
+        upper_flyaway_zone = (xx >= int(0.463 * w)) & (xx <= int(0.573 * w)) & (yy >= int(0.029 * h)) & (yy <= int(0.121 * h))
+        cand_s = left_zone & (a >= 80) & (cmin >= 236) & (sat <= 10)
+        s_lbl, s_num = ndimage.label(cand_s)
+        s_pockets = np.zeros((h, w), dtype=bool)
+        for s_idx in range(1, s_num + 1):
+            ys_s, xs_s = np.where(s_lbl == s_idx)
+            s_area = len(ys_s)
+            if s_area < int(10 * (w / 1152.0) ** 2) or s_area > int(9000 * (w / 1152.0) ** 2):
+                continue
+            pct_250 = float(((cmin[ys_s, xs_s] >= 249) & (sat[ys_s, xs_s] <= 4)).mean())
+            if pct_250 < 0.55:
+                continue
+            sy0, sy1 = max(0, int(ys_s.min()) - 4), min(h, int(ys_s.max()) + 5)
+            sx0, sx1 = max(0, int(xs_s.min()) - 4), min(w, int(xs_s.max()) + 5)
+            sub_sm = (s_lbl[sy0:sy1, sx0:sx1] == s_idx)
+            bdr_s = ndimage.binary_dilation(sub_sm, iterations=3) & (~sub_sm) & (a[sy0:sy1, sx0:sx1] >= 100)
+            if bdr_s.sum() == 0 or float(((lum[sy0:sy1, sx0:sx1][bdr_s] < 192) | warm_skin[sy0:sy1, sx0:sx1][bdr_s]).mean()) >= 0.45:
+                s_pockets[ys_s, xs_s] = True
+        uf_cand = upper_flyaway_zone & (a >= 80) & (lum >= 228) & (sat <= 10)
+        uf_lbl, uf_num = ndimage.label(uf_cand)
+        for u_idx in range(1, uf_num + 1):
+            ys_u, xs_u = np.where(uf_lbl == u_idx)
+            u_area = len(ys_u)
+            if int(20 * (w / 1152.0) ** 2) <= u_area <= int(2200 * (w / 1152.0) ** 2) and float(dist_ext[ys_u, xs_u].min()) <= 4.0 * (w / 1152.0):
+                s_pockets[ys_u, xs_u] = True
+        if s_pockets.any():
+            s_exp = ndimage.binary_dilation(s_pockets, iterations=1) & (~s_pockets) & (cmin >= 225) & (sat <= 14)
+            s_pockets |= s_exp
+            a[s_pockets] = 0.0
+            s_rim = ndimage.binary_dilation(s_pockets, iterations=3) & (~s_pockets) & (a > 0) & (cmin >= 165) & (sat <= 24) & ((r - b) <= 18)
+            if s_rim.any():
+                unmix_a = np.clip((242.0 - cmin) / (242.0 - 140.0), 0.0, 1.0) * 255.0
+                a[s_rim] = np.minimum(a[s_rim], unmix_a[s_rim])
+        a[a < 16] = 0.0
+        out[:, :, 3] = np.clip(np.round(a), 0, 255).astype(np.uint8)
+        out[out[:, :, 3] == 0, :3] = 0
+        return out
+
+    # 피부에서 18px 확장(검은 선화를 넘어 흰 손목 커프스·셔츠 목깃까지 보호) 및 셔츠/가운 몸통(y >= 0.36*h) 보호
+    near_skin = ndimage.binary_dilation(warm_skin, iterations=max(14, int(round(18 * w / 1152.0))))
+    lower_torso_body = (xx >= int(0.32 * w)) & (xx <= int(0.68 * w)) & (yy >= int(0.36 * h)) & (yy <= int(0.92 * h))
+    max_ext_dist = 82.0 * (w / 1152.0)
+
+    # 외곽 실루엣으로부터 82px 이내에 있는 머리카락 영역(정수리·옆머리·어깨 위 갈색/검은/연보라 머리카락 포함, 단 연보라 머리카락 자체 하이라이트 b-r >= 8 & cmin < 236 제외) 탐지
+    is_lavender_hair_px = ((b - r) >= 8.0) & (cmin < 236.0)
+    outer_hair_zone = (~lower_torso_body) & (yy < int(y_limit_ratio * h)) & (~is_lavender_hair_px) & ((~near_skin) | (dist_ext <= 56.0 * (w / 1152.0)))
+    cand = outer_hair_zone & (a > 0) & (cmin >= 185) & (sat <= 24) & ((r - b) <= 18)
     lbl, num = ndimage.label(cand)
     objs = ndimage.find_objects(lbl)
     pocket_mask = np.zeros((h, w), dtype=bool)
-    max_pocket_area = int(4500 * (w / 1152.0) ** 2)
+    max_pocket_area = int(2200 * (w / 1152.0) ** 2)
 
     for idx, sl in enumerate(objs, 1):
         if sl is None:
@@ -350,27 +424,35 @@ def remove_trapped_hair_pockets(rgba, y_limit_ratio=0.78, protect_white_garments
         x0, x1 = max(0, sl[1].start - 4), min(w, sl[1].stop + 4)
         sub_c = (lbl[y0:y1, x0:x1] == idx)
         area = int(sub_c.sum())
-        if area < 8 or area > max_pocket_area:
+        # 흰 머리띠(면적 > 2200)나 흰 셔츠/가운은 max_pocket_area 및 min_d 조건으로 자동 보호됨
+        if area < 4 or area > max_pocket_area:
+            continue
+        min_d = float(dist_ext[y0:y1, x0:x1][sub_c].min())
+        if min_d > max_ext_dist:
             continue
         sub_cmin = cmin[y0:y1, x0:x1][sub_c]
         sub_sat = sat[y0:y1, x0:x1][sub_c]
-        # 음영이 들어간 흰 커프스·가운(RGB 215..245)과 구별되도록 순백색(#FFFFFF, cmin >= 249) 코어 비율이 35% 이상인 실제 배경 포켓만 제거
-        pct_pure = float(((sub_cmin >= 249) & (sub_sat <= 6)).mean())
-        if float(sub_cmin.max()) < 250.0 or pct_pure < 0.35:
+        # 음영이 들어간 흰 커프스·가운과 구별되도록 순백색(#FFFFFF) 또는 좁은 머리카락 틈새(cmin >= 234) 배경 포켓만 제거
+        pct_pure = float(((sub_cmin >= 238) & (sub_sat <= 12)).mean())
+        if float(sub_cmin.max()) < 234.0 or pct_pure < 0.22:
             continue
         sub_a = a[y0:y1, x0:x1]
-        border = ndimage.binary_dilation(sub_c, iterations=4) & (~sub_c) & (sub_a >= 150)
+        border = ndimage.binary_dilation(sub_c, iterations=4) & (~sub_c) & (sub_a >= 110)
         if border.sum() == 0:
             pocket_mask[y0:y1, x0:x1] |= sub_c
             continue
-        sub_lum = lum[y0:y1, x0:x1]
-        dark_ratio = float((sub_lum[border] < 85).mean())
-        if dark_ratio >= 0.70:
+        b_lum = lum[y0:y1, x0:x1][border]
+        b_r = r[y0:y1, x0:x1][border]
+        b_b = b[y0:y1, x0:x1][border]
+        # 검은·갈색 머리카락뿐만 아니라 연보라 머리카락(nurse: b - r >= 6) 경계까지 포괄
+        is_hair_border = ((b_lum < 138) | ((b_lum < 198) & ((b_b - b_r) >= 6))) & (~((b_lum >= 120) & ((b_r - b_b) >= 32)))
+        if float(is_hair_border.mean()) >= 0.48:
             pocket_mask[y0:y1, x0:x1] |= sub_c
 
-    # 턱·목·손가락 사이에 갇힌 순백색(#FFFFFF, cmin >= 252, sat <= 3 비율 90% 이상) 삼각형 배경 포켓(예: 턱에 손가락을 댄 포즈) 제거
-    neck_finger_zone = (yy >= int(0.24 * h)) & (yy <= int(0.34 * h)) & (xx >= int(0.32 * w)) & (xx <= int(0.68 * w))
-    nf_cand = neck_finger_zone & (a >= 180) & (cmin >= 210) & (sat <= 18) & ((r - b) <= 14)
+    # 턱·목·손가락·연보라 머리카락 끝단(y = 0.218*h..0.368*h, x >= 0.273*w) 및 안경 잡은 손 영역(x = 0.273*w..0.404*w, y = 0.130*h..0.218*h) 사이의 배경 포켓 원샷 제거
+    # (치아/입안과 오른쪽 뺨/턱선 하이라이트는 자동 보호됨!)
+    neck_finger_zone = (((xx >= int(0.273 * w)) & (yy >= int(0.218 * h)) & (yy <= int(0.368 * h))) | ((xx >= int(0.273 * w)) & (xx <= int(0.404 * w)) & (yy >= int(0.130 * h)) & (yy < int(0.218 * h)))) & (~is_lavender_hair_px)
+    nf_cand = neck_finger_zone & (a >= 60) & (cmin >= 226) & (sat <= 14) & ((r - b) <= 8)
     nf_lbl, nf_num = ndimage.label(nf_cand)
     for nf_idx, nf_sl in enumerate(ndimage.find_objects(nf_lbl), 1):
         if nf_sl is None:
@@ -379,43 +461,72 @@ def remove_trapped_hair_pockets(rgba, y_limit_ratio=0.78, protect_white_garments
         nx0, nx1 = max(0, nf_sl[1].start - 4), min(w, nf_sl[1].stop + 4)
         nf_sub = (nf_lbl[ny0:ny1, nx0:nx1] == nf_idx)
         nf_area = int(nf_sub.sum())
-        if nf_area < int(800 * (w / 1152.0) ** 2) or nf_area > int(4200 * (w / 1152.0) ** 2):
+        if nf_area < int(6 * (w / 1152.0) ** 2) or nf_area > int(12000 * (w / 1152.0) ** 2):
             continue
         nf_cmin = cmin[ny0:ny1, nx0:nx1][nf_sub]
         nf_sat = sat[ny0:ny1, nx0:nx1][nf_sub]
-        nf_pure = float(((nf_cmin >= 252) & (nf_sat <= 3)).mean())
-        if nf_pure < 0.88:
+        if float(nf_cmin.max()) < 240.0:
             continue
-        nf_border = ndimage.binary_dilation(nf_sub, iterations=4) & (~nf_sub) & (a[ny0:ny1, nx0:nx1] >= 150)
+        pct_245 = float(((nf_cmin >= 245) & (nf_sat <= 6)).mean())
+        pct_232 = float(((nf_cmin >= 232) & (nf_sat <= 12)).mean())
+        if pct_245 < 0.22 and pct_232 < 0.45:
+            continue
+        cy_nf = 0.5 * (nf_sl[0].start + nf_sl[0].stop)
+        cx_nf = 0.5 * (nf_sl[1].start + nf_sl[1].stop)
+        if cx_nf >= 0.477 * w and cy_nf < 0.326 * h and (nf_area > int(70 * (w / 1152.0) ** 2) or pct_245 < 0.55):
+            continue
+        nf_border = ndimage.binary_dilation(nf_sub, iterations=3) & (~nf_sub) & (a[ny0:ny1, nx0:nx1] >= 100)
         if nf_border.sum() == 0:
             continue
-        nf_skin = float(warm_skin[ny0:ny1, nx0:nx1][nf_border].mean())
-        nf_dark = float((lum[ny0:ny1, nx0:nx1][nf_border] < 90).mean())
-        if nf_skin >= 0.40 and nf_dark >= 0.20:
+        b_skin_nf = warm_skin[ny0:ny1, nx0:nx1][nf_border]
+        b_lum_nf = lum[ny0:ny1, nx0:nx1][nf_border]
+        b_r_nf = r[ny0:ny1, nx0:nx1][nf_border]
+        b_b_nf = b[ny0:ny1, nx0:nx1][nf_border]
+        skin_frac_nf = float(b_skin_nf.mean())
+        cool_hair_nf = float(((b_b_nf - b_r_nf) >= 6).mean())
+        dark_nf = float((b_lum_nf < 110).mean())
+        cy_nf = 0.5 * (nf_sl[0].start + nf_sl[0].stop)
+        cx_nf = 0.5 * (nf_sl[1].start + nf_sl[1].stop)
+        # 입안 치아 및 볼 눈물/땀방울 보호 (얼굴 정중앙 x=0.438..0.556에서 차가운 머리카락 경계가 거의 없고 피부로 둘러싸인 경우)
+        if 0.438 * w <= cx_nf <= 0.556 * w and cy_nf < 0.303 * h and cool_hair_nf < 0.06 and skin_frac_nf >= 0.30 and nf_area < int(800 * (w / 1152.0) ** 2):
+            continue
+        # 흰 가운 어깨선/깃 보호 (y > 0.319*h 에서 연보라/어두운 머리카락과 접하지 않는 영역)
+        if cy_nf > 0.319 * h and (cx_nf < 0.304 * w or cx_nf > 0.612 * w) and cool_hair_nf < 0.15:
+            continue
+        if (cool_hair_nf >= 0.08 and float(((b_lum_nf < 198) | ((b_b_nf - b_r_nf) >= 6) | b_skin_nf).mean()) >= 0.45) or (nf_area >= int(800 * (w / 1152.0) ** 2) and skin_frac_nf >= 0.40 and dark_nf >= 0.20):
             pocket_mask[ny0:ny1, nx0:nx1] |= nf_sub
 
+    near_pocket = np.zeros_like(pocket_mask, dtype=bool)
     if pocket_mask.any():
         a[pocket_mask] = 0.0
-        rim = ndimage.binary_dilation(pocket_mask, iterations=3) & outer_hair_zone & (sat <= 28) & ((r - b) <= 18)
-        unmix_a = np.clip((215.0 - cmin) / (215.0 - 45.0), 0.0, 1.0) * 255.0
+        near_pocket = ndimage.binary_dilation(pocket_mask, iterations=4) & (~pocket_mask)
+        rim = near_pocket & (sat <= 32) & ((r - b) <= 22)
+        unmix_a = np.clip((220.0 - cmin) / (220.0 - 45.0), 0.0, 1.0) * 255.0
         a[rim] = np.minimum(a[rim], unmix_a[rim])
 
-    # 외곽 어두운 머리카락 구멍 경계의 회백색 안티앨리어싱 잔여물을 연속 알파·전경 색상 역산으로 매끄럽게 제거
+    # 외곽 어두운/갈색 머리카락 구멍 경계의 회백색 안티앨리어싱 잔여물을 연속 알파·전경 색상 역산으로 매끄럽게 제거
+    # (단, 포켓이 제거되지 않은 일반 외곽선 안쪽의 불투명 회색/푸른빛 머리카락 윤기 하이라이트 cmin=85..160는 검게 죽이지 않고 보존)
     trans = a < 25
     near_trans = ndimage.binary_dilation(trans, iterations=4) & (a > 0)
-    dark_hair = (a >= 160) & (lum < 80) & (sat <= 40)
-    near_dark = ndimage.binary_dilation(dark_hair, iterations=4)
-    hair_crust = outer_hair_zone & near_trans & near_dark & (cmin >= 85) & (sat <= 28) & ((r - b) <= 18)
+    dark_or_brown_hair = (a >= 150) & (lum < 128) & (~((lum >= 110) & ((r - b) >= 32)))
+    near_dark = ndimage.binary_dilation(dark_or_brown_hair, iterations=4)
+    pocket_crust = near_pocket & (a > 0) & near_dark & (cmin >= 115) & (sat <= 32) & ((r - b) <= 24)
+    edge_crust = (~near_pocket) & near_trans & near_dark & ((cmin >= 165) | ((a < 235) & (cmin >= 130))) & (sat <= 28) & ((r - b) <= 22)
+    hair_crust = outer_hair_zone & (dist_ext <= max_ext_dist) & (pocket_crust | edge_crust)
     if hair_crust.any():
-        unmix_a = np.clip((210.0 - cmin) / (210.0 - 45.0), 0.0, 1.0) * 255.0
+        unmix_a = np.clip((218.0 - cmin) / (218.0 - 42.0), 0.0, 1.0) * 255.0
         a[hair_crust] = np.minimum(a[hair_crust], unmix_a[hair_crust])
-        semi = hair_crust & (a > 0) & (a < 245)
-        alpha_norm = np.maximum(a[semi] / 255.0, 0.12)
-        for ch_idx in range(3):
-            ch_arr = out[:, :, ch_idx].astype(np.float32)
-            ch_unmix = np.clip((ch_arr[semi] - (1.0 - alpha_norm) * 250.0) / alpha_norm, 12.0, 55.0)
-            ch_arr[semi] = np.minimum(ch_arr[semi], ch_unmix)
-            out[:, :, ch_idx] = np.clip(np.round(ch_arr), 0, 255).astype(np.uint8)
+        semi_pocket = pocket_crust & (a > 0) & (a < 248)
+        semi_edge = edge_crust & (a > 0) & (a < 245)
+        for semi_mask, hi_clamp in ((semi_pocket, 75.0), (semi_edge, 112.0)):
+            if not semi_mask.any():
+                continue
+            alpha_norm = np.maximum(a[semi_mask] / 255.0, 0.15)
+            for ch_idx in range(3):
+                ch_arr = out[:, :, ch_idx].astype(np.float32)
+                ch_unmix = np.clip((ch_arr[semi_mask] - (1.0 - alpha_norm) * 250.0) / alpha_norm, 16.0, hi_clamp)
+                ch_arr[semi_mask] = np.minimum(ch_arr[semi_mask], ch_unmix)
+                out[:, :, ch_idx] = np.clip(np.round(ch_arr), 0, 255).astype(np.uint8)
 
     a[a < 16] = 0.0
     out[:, :, 3] = np.clip(np.round(a), 0, 255).astype(np.uint8)
