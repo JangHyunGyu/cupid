@@ -1595,201 +1595,210 @@ Latest user: """${excerpt}"""
     }
 
     // AI_DISPLAY_FALLBACK_START
-    async function readAiReplyPrefix(response) {
-        if (!response.body?.getReader) return { text: await response.text(), interrupted: false };
-        const reader = response.body.getReader();
-        const decoder = new TextDecoder();
-        let text = '';
-        let interrupted = false;
-        let error = null;
-        try {
-            while (true) {
-                const chunk = await reader.read();
-                text += decoder.decode(chunk.value || new Uint8Array(), { stream: !chunk.done });
-                if (chunk.done) break;
-                if (text.length > 1048576) { interrupted = true; break; }
-            }
-        } catch (failure) { interrupted = true; error = failure; }
-        finally {
-            if (interrupted) { try { await reader.cancel?.(); } catch (_) { /* best effort */ } }
-            reader.releaseLock?.();
+async function readAiReplyPrefix(response) {
+    if (!response.body?.getReader) return { text: await response.text(), interrupted: false };
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let text = '';
+    let interrupted = false;
+    let error = null;
+    try {
+        while (true) {
+            const chunk = await reader.read();
+            text += decoder.decode(chunk.value || new Uint8Array(), { stream: !chunk.done });
+            if (chunk.done) break;
+            if (text.length > 1048576) { interrupted = true; break; }
         }
-        return { text, interrupted, error };
+    } catch (failure) { interrupted = true; error = failure; }
+    finally {
+        if (interrupted) { try { await reader.cancel?.(); } catch (_) { /* best effort */ } }
+        reader.releaseLock?.();
     }
-    function buildAiDisplayFallback(raw, options = {}) {
-        const source = String(raw || '').replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim().slice(0, 262144);
-        const cut = new Set();
-        let cursor = 0;
-        const skip = () => { while (/\s/.test(source[cursor] || '') && cursor < source.length) cursor++; };
-        const readString = () => {
-            const quote = source[cursor++];
-            let value = '';
+    return { text, interrupted, error };
+}
+function buildAiDisplayFallback(raw, options = {}) {
+    const source = String(raw || '').replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim().slice(0, 262144);
+    const cut = new Set();
+    let cursor = 0;
+    const skip = () => { while (/\s/.test(source[cursor] || '') && cursor < source.length) cursor++; };
+    const readString = () => {
+        const quote = source[cursor++];
+        let value = '';
+        while (cursor < source.length) {
+            const char = source[cursor++];
+            if (char === quote) return { value, complete: true };
+            if (char !== '\\') { value += char; continue; }
+            const escape = source[cursor++];
+            if (escape === undefined) break;
+            if (escape === 'u') {
+                const digits = source.slice(cursor, cursor + 4);
+                if (!/^[\da-f]{4}$/i.test(digits)) break;
+                value += String.fromCharCode(parseInt(digits, 16));
+                cursor += 4;
+            } else value += ({ n: '\n', r: '\r', t: '\t', b: '\b', f: '\f' })[escape] ?? escape;
+        }
+        return { value: value.replace(/[\uD800-\uDBFF]$/, ''), complete: false };
+    };
+    const readValue = (path, depth = 0) => {
+        if (depth > 32 || cursor >= source.length) return undefined;
+        skip();
+        if (source[cursor] === '"' || source[cursor] === "'") {
+            const result = readString();
+            if (!result.complete) cut.add(JSON.stringify(path));
+            return result.value;
+        }
+        if (source[cursor] === '{') {
+            cursor++;
+            const value = Object.create(null);
             while (cursor < source.length) {
-                const char = source[cursor++];
-                if (char === quote) return { value, complete: true };
-                if (char !== '\\') { value += char; continue; }
-                const escape = source[cursor++];
-                if (escape === undefined) break;
-                if (escape === 'u') {
-                    const digits = source.slice(cursor, cursor + 4);
-                    if (!/^[\da-f]{4}$/i.test(digits)) break;
-                    value += String.fromCharCode(parseInt(digits, 16));
-                    cursor += 4;
-                } else value += ({ n: '\n', r: '\r', t: '\t', b: '\b', f: '\f' })[escape] ?? escape;
+                skip();
+                if (source[cursor] === '}') { cursor++; break; }
+                if (source[cursor] === ',') { cursor++; continue; }
+                if (source[cursor] !== '"' && source[cursor] !== "'") break;
+                const key = readString();
+                if (!key.complete) break;
+                skip();
+                if (source[cursor++] !== ':') break;
+                const start = cursor;
+                const item = readValue([...path, key.value], depth + 1);
+                if (!['__proto__', 'constructor', 'prototype'].includes(key.value) && item !== undefined) value[key.value] = item;
+                if (cursor <= start) break;
+                skip();
+                if (!['}', ','].includes(source[cursor])) break;
             }
-            return { value: value.replace(/[\uD800-\uDBFF]$/, ''), complete: false };
-        };
-        const readValue = (path, depth = 0) => {
-            if (depth > 32 || cursor >= source.length) return undefined;
-            skip();
-            if (source[cursor] === '"' || source[cursor] === "'") {
-                const result = readString();
-                if (!result.complete) cut.add(JSON.stringify(path));
-                return result.value;
-            }
-            if (source[cursor] === '{') {
-                cursor++;
-                const value = Object.create(null);
-                while (cursor < source.length) {
-                    skip();
-                    if (source[cursor] === '}') { cursor++; break; }
-                    if (source[cursor] === ',') { cursor++; continue; }
-                    if (source[cursor] !== '"' && source[cursor] !== "'") break;
-                    const key = readString();
-                    if (!key.complete) break;
-                    skip();
-                    if (source[cursor++] !== ':') break;
-                    const start = cursor;
-                    const item = readValue([...path, key.value], depth + 1);
-                    if (!['__proto__', 'constructor', 'prototype'].includes(key.value) && item !== undefined) value[key.value] = item;
-                    if (cursor <= start) break;
-                    skip();
-                    if (!['}', ','].includes(source[cursor])) break;
-                }
-                return value;
-            }
-            if (source[cursor] === '[') {
-                cursor++;
-                const value = [];
-                while (cursor < source.length) {
-                    skip();
-                    if (source[cursor] === ']') { cursor++; break; }
-                    if (source[cursor] === ',') { cursor++; continue; }
-                    const start = cursor;
-                    const item = readValue([...path, value.length], depth + 1);
-                    if (item !== undefined) value.push(item);
-                    if (cursor <= start) break;
-                    skip();
-                    if (![']', ','].includes(source[cursor])) break;
-                }
-                return value;
-            }
-            const scalar = /^(?:true|false|null|-?\d+(?:\.\d+)?(?:e[+-]?\d+)?)/i.exec(source.slice(cursor));
-            if (!scalar) return undefined;
-            cursor += scalar[0].length;
-            try { return JSON.parse(scalar[0]); } catch (_) { return undefined; }
-        };
-        let parsed;
-        try { parsed = JSON.parse(source); } catch (_) { parsed = readValue([]); }
-        const choice = parsed?.choices?.[0];
-        const envelopeText = choice?.message?.content ?? choice?.delta?.content;
-        if (typeof envelopeText === 'string' && !options.envelopeRead) {
-            const field = choice.message ? 'message' : 'delta';
-            return buildAiDisplayFallback(envelopeText, { ...options, envelopeRead: true, truncated: options.truncated || cut.has(JSON.stringify(['choices', 0, field, 'content'])) });
+            return value;
         }
-        const result = { displayFallback: { empty: false, partial: false } };
-        const suffix = text => /(?:\.{3}|\u2026)$/.test(text) ? text : `${text}...`;
-        const displayText = (value, path, plain = false) => {
-            if (typeof value !== 'string') return '';
-            const text = value.replace(/\u0000/g, '').trim();
-            if (!text || /^[\[{]/.test(text) || /^```/.test(text)) return '';
-            if (cut.has(JSON.stringify(path)) || (plain && options.truncated)) {
-                result.displayFallback.partial = true;
-                return suffix(text);
+        if (source[cursor] === '[') {
+            cursor++;
+            const value = [];
+            while (cursor < source.length) {
+                skip();
+                if (source[cursor] === ']') { cursor++; break; }
+                if (source[cursor] === ',') { cursor++; continue; }
+                const start = cursor;
+                const item = readValue([...path, value.length], depth + 1);
+                if (item !== undefined) value.push(item);
+                if (cursor <= start) break;
+                skip();
+                if (![']', ','].includes(source[cursor])) break;
             }
-            return text;
-        };
-        const segments = (item, path) => {
-            if (!item || typeof item !== 'object') return [];
-            if (Array.isArray(item.segments)) return item.segments.map((segment, index) => {
-                const text = displayText(segment?.text, [...path, 'segments', index, 'text']);
-                return text ? { type: ['dialogue', 'narration', 'scene', 'thought', 'action', 'text'].includes(segment.type) ? segment.type : 'dialogue', text } : null;
-            }).filter(Boolean);
-            for (const key of ['text', 'response', 'message', 'content', 'reply', 'dialogue', 'narration', 'speech']) {
-                const text = displayText(item[key], [...path, key]);
-                if (text) return [{ type: key === 'narration' ? 'narration' : 'dialogue', text }];
-            }
-            return [];
-        };
-        const speakers = Array.isArray(options.responseSpeakers) ? options.responseSpeakers : [];
-        const knownName = typeof speakers[0]?.name === 'string' ? speakers[0].name : '';
-        const name = item => typeof item?.name === 'string' ? item.name : knownName;
-        if (parsed && typeof parsed === 'object') {
-            const rootPath = Array.isArray(parsed) ? null : [];
-            if (rootPath) {
-                const main = segments(parsed, rootPath);
-                if (main.length) result.segments = main;
-                const scene = displayText(parsed.sceneNarration, ['sceneNarration']);
-                if (scene) result.sceneNarration = scene;
-            }
-            const collection = Array.isArray(parsed) ? '' : ['sceneMessages', 'conversations', 'messages', 'responses', 'speech', 'character_speech'].find(key => Array.isArray(parsed[key]));
-            const items = Array.isArray(parsed) ? parsed : (collection ? parsed[collection] : []);
-            const parts = items.map((item, index) => {
-                const content = typeof item === 'string' ? [{ type: 'dialogue', text: displayText(item, collection ? [collection, index] : [index]) }] : segments(item, collection ? [collection, index] : [index]);
-                const expressionPath = [...(collection ? [collection, index] : [index]), 'expression'];
-                const requestedExpression = String(item?.expression || '').trim().toLowerCase();
-                const expression = !cut.has(JSON.stringify(expressionPath)) && /^[a-z][a-z0-9_-]{0,31}$/.test(requestedExpression)
-                    ? requestedExpression : '';
-                return content.some(segment => segment.text) ? {
-                    name: name(item),
-                    segments: content.filter(segment => segment.text),
-                    ...(expression ? { expression } : {}),
-                } : null;
-            }).filter(Boolean);
-            if (parts.length) result[collection === 'conversations' ? 'conversations' : 'sceneMessages'] = parts;
-        } else if (source && !/^[\[{"]/.test(source) && parsed === undefined && !/^<\/?(?:html|!doctype)/i.test(source)) {
-            const text = displayText(source, [], true);
-            if (text) result.segments = [{ type: 'dialogue', text }];
+            return value;
         }
-        const visible = (result.segments?.length || 0) + (result.sceneMessages?.length || 0) + (result.conversations?.length || 0) + (result.sceneNarration ? 1 : 0);
-        if (!visible) {
-            result.displayFallback.empty = true;
-            result.segments = [{ type: 'dialogue', text: '...' }];
-        }
-        if (options.chatMode === 'group' && !result.conversations && options.appType !== 'harem') {
-            result.conversations = [{ name: name(parsed), segments: result.segments || [{ type: 'narration', text: result.sceneNarration }] }];
-            delete result.segments;
-            delete result.sceneNarration;
-        } else if (options.appType === 'harem' && result.segments) {
-            result.sceneMessages = [...(result.sceneMessages || []), { name: name(parsed), segments: result.segments }];
-            result.name = name(parsed);
-            delete result.segments;
-        }
-        if (options.appType === 'cupid') {
-            result.expression = 'neutral'; result.affinity = 0; result.forcedSexualViolation = 'none';
-            result.conversations?.forEach(item => { item.expression = 'neutral'; item.affinity = 0; });
-        }
-        return { content: JSON.stringify(result), ...result.displayFallback };
+        const scalar = /^(?:true|false|null|-?\d+(?:\.\d+)?(?:e[+-]?\d+)?)/i.exec(source.slice(cursor));
+        if (!scalar) return undefined;
+        cursor += scalar[0].length;
+        try { return JSON.parse(scalar[0]); } catch (_) { return undefined; }
+    };
+    let parsed;
+    try { parsed = JSON.parse(source); } catch (_) { parsed = readValue([]); }
+    const choice = parsed?.choices?.[0];
+    const envelopeText = choice?.message?.content ?? choice?.delta?.content;
+    if (typeof envelopeText === 'string' && !options.envelopeRead) {
+        const field = choice.message ? 'message' : 'delta';
+        return buildAiDisplayFallback(envelopeText, { ...options, envelopeRead: true, truncated: options.truncated || cut.has(JSON.stringify(['choices', 0, field, 'content'])) });
     }
-    function getAiDisplayFallbackInfo(content) {
-        try { return JSON.parse(String(content || '')).displayFallback || null; } catch (_) { return null; }
+    const result = { displayFallback: { empty: false, partial: false } };
+    const suffix = text => /(?:\.{3}|\u2026)$/.test(text) ? text : `${text}...`;
+    const displayText = (value, path, plain = false) => {
+        if (typeof value !== 'string') return '';
+        const text = value.replace(/\u0000/g, '').trim();
+        if (!text || /^[\[{]/.test(text) || /^```/.test(text)) return '';
+        if (cut.has(JSON.stringify(path)) || (plain && options.truncated)) {
+            result.displayFallback.partial = true;
+            return suffix(text);
+        }
+        return text;
+    };
+    const segments = (item, path) => {
+        if (!item || typeof item !== 'object') return [];
+        if (Array.isArray(item.segments)) return item.segments.flatMap((segment, index) => {
+            if (!segment || typeof segment !== 'object') return [];
+            const directText = displayText(segment.text ?? segment.content ?? segment.message, [...path, 'segments', index, 'text']);
+            if (directText) {
+                return [{ type: ['dialogue', 'narration', 'scene', 'thought', 'action', 'text'].includes(segment.type) ? segment.type : 'dialogue', text: directText }];
+            }
+            const out = [];
+            for (const key of ['dialogue', 'speech', 'narration', 'action', 'scene', 'thought']) {
+                const text = displayText(segment[key], [...path, 'segments', index, key]);
+                if (text) out.push({ type: ['narration', 'action', 'thought'].includes(key) ? 'narration' : (key === 'scene' ? 'scene' : 'dialogue'), text });
+            }
+            return out;
+        });
+        for (const key of ['text', 'response', 'message', 'content', 'reply', 'dialogue', 'narration', 'speech']) {
+            const text = displayText(item[key], [...path, key]);
+            if (text) return [{ type: key === 'narration' ? 'narration' : 'dialogue', text }];
+        }
+        return [];
+    };
+    const speakers = Array.isArray(options.responseSpeakers) ? options.responseSpeakers : [];
+    const knownName = typeof speakers[0]?.name === 'string' ? speakers[0].name : '';
+    const name = item => typeof item?.name === 'string' ? item.name : (typeof item?.speaker === 'string' ? item.speaker : knownName);
+    if (parsed && typeof parsed === 'object') {
+        const rootPath = Array.isArray(parsed) ? null : [];
+        if (rootPath) {
+            const main = segments(parsed, rootPath);
+            if (main.length) result.segments = main;
+            const scene = displayText(parsed.sceneNarration, ['sceneNarration']);
+            if (scene) result.sceneNarration = scene;
+        }
+        const collection = Array.isArray(parsed) ? '' : ['sceneMessages', 'conversations', 'messages', 'responses', 'speech', 'character_speech'].find(key => Array.isArray(parsed[key])); const keyedCollection = (!Array.isArray(parsed) && !collection) ? ['sceneMessages', 'conversations', 'messages', 'responses'].find(key => parsed[key] && typeof parsed[key] === 'object' && !Array.isArray(parsed[key])) : '';
+        const items = Array.isArray(parsed) ? parsed.map((item, index) => ({ item, path: [index], key: '' })) : (collection ? parsed[collection].map((item, index) => ({ item, path: [collection, index], key: '' })) : (keyedCollection ? Object.entries(parsed[keyedCollection]).filter(([, item]) => item && (typeof item === 'string' || (typeof item === 'object' && !Array.isArray(item)))).map(([k, item]) => ({ item, path: [keyedCollection, k], key: k })) : []));
+        const parts = items.map(({ item, path: itemPath, key: fallbackKey }) => {
+            const content = typeof item === 'string' ? [{ type: 'dialogue', text: displayText(item, itemPath) }] : segments(item, itemPath);
+            const expressionPath = [...itemPath, 'expression']; const itemKey = String(item?.key || item?.id || fallbackKey || '').trim(); const speakerMatch = itemKey ? speakers.find(s => String(s?.key || s?.id || '').trim() === itemKey) : null; const itemName = (typeof item?.name === 'string' && item.name.trim()) ? item.name : ((typeof item?.speaker === 'string' && item.speaker.trim()) ? item.speaker : ((typeof speakerMatch?.name === 'string' && speakerMatch.name.trim()) ? speakerMatch.name : (itemKey || knownName)));
+            const requestedExpression = String(item?.expression || '').trim().toLowerCase();
+            const expression = !cut.has(JSON.stringify(expressionPath)) && /^[a-z][a-z0-9_-]{0,31}$/.test(requestedExpression)
+                ? requestedExpression : '';
+            return content.some(segment => segment.text) ? {
+                name: itemName, ...(itemKey ? { key: itemKey } : {}),
+                segments: content.filter(segment => segment.text),
+                ...(expression ? { expression } : {}),
+            } : null;
+        }).filter(Boolean);
+        if (parts.length) result[(collection || keyedCollection) === 'conversations' ? 'conversations' : 'sceneMessages'] = parts;
+    } else if (source && !/^[\[{"]/.test(source) && parsed === undefined && !/^<\/?(?:html|!doctype)/i.test(source)) {
+        const text = displayText(source, [], true);
+        if (text) result.segments = [{ type: 'dialogue', text }];
     }
-    function isAiDisplayJsonIncomplete(raw) {
-        const source = String(raw || '').replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim();
-        if (!/^[\[{]/.test(source)) return false;
-        try { JSON.parse(source); return false; } catch (_) { return true; }
+    const visible = (result.segments?.length || 0) + (result.sceneMessages?.length || 0) + (result.conversations?.length || 0) + (result.sceneNarration ? 1 : 0);
+    if (!visible) {
+        result.displayFallback.empty = true;
+        result.segments = [{ type: 'dialogue', text: '...' }];
     }
-    function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
-        const fallback = buildAiDisplayFallback(raw, options);
-        return {
-            ...payload,
-            recovered: true,
-            recoveryReason: 'DISPLAY_FALLBACK',
-            displayFallback: { empty: fallback.empty, partial: fallback.partial },
-            choices: [{ message: { role: 'assistant', content: fallback.content }, finish_reason: 'stop' }]
-        };
+    if (options.chatMode === 'group' && !result.conversations && options.appType !== 'harem') {
+        result.conversations = [{ name: name(parsed), segments: result.segments || [{ type: 'narration', text: result.sceneNarration }] }];
+        delete result.segments;
+        delete result.sceneNarration;
+    } else if (options.appType === 'harem' && result.segments) {
+        result.sceneMessages = [...(result.sceneMessages || []), { name: name(parsed), segments: result.segments }];
+        result.name = name(parsed);
+        delete result.segments;
     }
-    // AI_DISPLAY_FALLBACK_END
+    if (options.appType === 'cupid') {
+        result.expression = 'neutral'; result.affinity = 0; result.forcedSexualViolation = 'none';
+        result.conversations?.forEach(item => { item.expression = 'neutral'; item.affinity = 0; });
+    }
+    return { content: JSON.stringify(result), ...result.displayFallback };
+}
+function getAiDisplayFallbackInfo(content) {
+    try { return JSON.parse(String(content || '')).displayFallback || null; } catch (_) { return null; }
+}
+function isAiDisplayJsonIncomplete(raw) {
+    const source = String(raw || '').replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim();
+    if (!/^[\[{]/.test(source)) return false;
+    try { JSON.parse(source); return false; } catch (_) { return true; }
+}
+function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
+    const fallback = buildAiDisplayFallback(raw, options);
+    return {
+        ...payload,
+        recovered: true,
+        recoveryReason: 'DISPLAY_FALLBACK',
+        displayFallback: { empty: fallback.empty, partial: fallback.partial },
+        choices: [{ message: { role: 'assistant', content: fallback.content }, finish_reason: 'stop' }]
+    };
+}
+// AI_DISPLAY_FALLBACK_END
 
     function closeDisplayJsonContainers(source) {
       const stack = [];
