@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 function fixture(){
  const listeners={},requests=[],nodes=[];let balance=1000,pendingOnce=false;
@@ -41,4 +41,34 @@ test('an identity change during prompt preparation cannot charge the newly signe
  const f=fixture();await f.api.beforeSend();const epoch=f.api.capture();f.root.archerlabAccount.user={id:'member'};f.listeners['archerlab:session']();
  await assert.rejects(f.api.chatFetch('ignored',{method:'POST',body:JSON.stringify({turnId:'old_draft_001'})},epoch),e=>e.name==='AbortError');
  assert.equal(f.requests.filter(r=>r.path==='/api/credits/chat').length,0);
+});
+test('chat-logs outbox attaches viewerIdentityProof from HaremLogIdentity and preserves queued subject across account switch',async()=>{
+ const f=fixture();
+ assert.equal(f.root.HaremLogIdentity.capture(),'guest');
+ assert.equal(await f.root.HaremLogIdentity.proofFor('guest'),'guest-token');
+ const source=fs.readFileSync(path.join(__dirname,'../assets/js/modules/config.js'),'utf8');
+ const storage=new Map(),logRequests=[];
+ const context=vm.createContext({
+  window:{CupidStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v),removeItem:k=>storage.delete(k)},HaremLogIdentity:f.root.HaremLogIdentity,archerlabAccount:f.root.archerlabAccount},
+  navigator:{onLine:true},API_ENDPOINT:'https://logs.test/',Date,console:{warn(){}},AbortController,Blob,setTimeout,clearTimeout,
+  getCupidAppId:()=>'cupid',logCupidError(){},
+  fetch:async(url,init)=>{const body=JSON.parse(init.body);logRequests.push({url,body});return new Response('{"ok":true}');}
+ });
+ vm.runInContext(source.slice(source.indexOf('const CUPID_CHAT_LOG_QUEUE_KEY'),source.indexOf('async function saveCupidChatLog(')),context);
+ vm.runInContext("enqueueCupidChatLog({appId:'cupid',clientMsgId:'u1',role:'user',content:'hello'});enqueueCupidChatLog({appId:'cupid',clientMsgId:'a1',role:'assistant',content:'hi'});",context);
+ await vm.runInContext('flushCupidChatLogQueue()',context);
+ assert.equal(logRequests.length,2);
+ assert.equal(logRequests[0].body.viewerIdentityProof,'guest-token');
+ assert.equal(logRequests[0].body.viewerIdentitySubject,undefined);
+ assert.equal(logRequests[1].body.viewerIdentityProof,undefined);
+ context.navigator.onLine=false;
+ vm.runInContext("enqueueCupidChatLog({appId:'cupid',clientMsgId:'u2',role:'user',content:'queued as guest'})",context);
+ f.root.archerlabAccount.user={id:'member'};f.listeners['archerlab:session']();
+ vm.runInContext("enqueueCupidChatLog({appId:'cupid',clientMsgId:'u2',role:'user',content:'queued as guest updated'});enqueueCupidChatLog({appId:'cupid',clientMsgId:'u3',role:'user',content:'sent as member'});",context);
+ context.navigator.onLine=true;
+ await vm.runInContext('flushCupidChatLogQueue()',context);
+ const u2=logRequests.find(r=>r.body.clientMsgId==='u2');
+ const u3=logRequests.find(r=>r.body.clientMsgId==='u3');
+ assert.equal(u2.body.viewerIdentityProof,undefined);
+ assert.equal(u3.body.viewerIdentityProof,'member-token');
 });

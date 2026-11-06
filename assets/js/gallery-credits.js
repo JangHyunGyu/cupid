@@ -6,7 +6,7 @@
   en:['Balance ₩{amount} · ₩10/reply','Gallery chat balance','Each AI reply to your message costs ₩10 from the same balance you use in Harem. Greetings and automatic summaries are free.','Not enough balance. An AI reply requires ₩10.','Unable to check your balance. Please try again shortly.','Close','View balance and rewards in Harem','Checking balance…','Cancelled or failed requests are free until a reply begins arriving. Once any part of the reply arrives, the charge is not refunded.'],
   ja:['残高 {amount}ウォン · 返信10ウォン','ギャラリーチャットの残高','メッセージにAIが返信すると、ハーレムと共通の残高から10ウォン引かれます。最初の挨拶と自動要約は無料です。','残高が足りません。返信には10ウォン必要です。','残高を確認できませんでした。少し待ってから再試行してください。','閉じる','ハーレムで残高と報酬を確認','残高を確認中…','返信が届く前にキャンセルまたは失敗した場合は無料です。一部でも返信が届いた後は返金されません。'],
   es:['Saldo ₩{amount} · ₩10/respuesta','Saldo del chat de galería','Cada respuesta de la IA a tu mensaje cuesta ₩10 del mismo saldo que usas en Harem. Los saludos y resúmenes automáticos son gratis.','Saldo insuficiente. Necesitas ₩10 para recibir una respuesta.','No se pudo consultar el saldo. Inténtalo de nuevo en un momento.','Cerrar','Ver saldo y recompensas en Harem','Consultando saldo…','Si la solicitud falla o se cancela antes de empezar a recibir la respuesta, no se cobra. Después de recibir cualquier parte, no hay reembolso.'],
-  fr:['Solde ₩{amount} · ₩10/réponse','Solde du chat de galerie','Chaque réponse de l’IA à votre message coûte ₩10, prélevés sur le même solde que dans Harem. Les salutations et résumés automatiques sont gratuits.','Solde insuffisant. Il faut ₩10 pour recevoir une réponse.','Impossible de consulter le solde. Réessayez dans un instant.','Fermer','Voir le solde et les récompenses dans Harem','Vérification du solde…','Une demande annulée ou échouée avant le début de la réponse est gratuite. Dès qu’une partie arrive, le montant n’est plus remboursable.'],
+  fr:['Solde ₩{amount} · ₩10/réponse','Solde du chat de galerie','Chaque réponse de l’IA à votre message coûte ₩10, prélevés sur le même solde que dans Harem. Les salutations et résumés automáticos sont gratuits.','Solde insuffisant. Il faut ₩10 pour recevoir une réponse.','Impossible de consulter le solde. Réessayez dans un instant.','Fermer','Voir le solde et les récompenses dans Harem','Vérification du solde…','Une demande annulée ou échouée avant le début de la réponse est gratuite. Dès qu’une partie arrive, le montant n’est plus remboursable.'],
   de:['Guthaben ₩{amount} · ₩10/Antwort','Guthaben für den Galeriechat','Jede KI-Antwort auf deine Nachricht kostet ₩10 aus deinem gemeinsamen Harem-Guthaben. Begrüßungen und automatische Zusammenfassungen sind kostenlos.','Nicht genug Guthaben. Eine Antwort kostet ₩10.','Das Guthaben konnte nicht abgerufen werden. Bitte versuche es gleich erneut.','Schließen','Guthaben und Belohnungen in Harem ansehen','Guthaben wird geprüft…','Abgebrochene oder fehlgeschlagene Anfragen sind kostenlos, solange noch keine Antwort eintrifft. Sobald ein Teil ankommt, gibt es keine Erstattung.'],
   pt:['Saldo ₩{amount} · ₩10/resposta','Saldo do chat da galeria','Cada resposta da IA à sua mensagem custa ₩10 do mesmo saldo usado em Harem. Saudações e resumos automáticos são gratuitos.','Saldo insuficiente. São necessários ₩10 para receber uma resposta.','Não foi possível consultar o saldo. Tente novamente em instantes.','Fechar','Ver saldo e recompensas em Harem','Consultando saldo…','Pedidos cancelados ou que falhem antes de a resposta começar a chegar são gratuitos. Depois de qualquer parte chegar, não há reembolso.'],
   zh:['余额 ₩{amount} · 每次回复₩10','画廊聊天余额','发送消息并收到AI回复后，将从与Harem共用的余额中扣除₩10。首次问候和自动摘要免费。','余额不足。收到回复需要₩10。','无法查询余额，请稍后重试。','关闭','在Harem查看余额与奖励','正在查询余额…','在回复开始到达前取消或失败的请求不收费。收到任何部分的回复后均不退款。']
@@ -16,6 +16,7 @@
  let wallet=null,session=null,pending=null,refreshPending=null,epoch=0,dialog=null;
  const active=new Set();
  const account=()=>String(root.archerlabAccount?.user?.id||'').replace(/^al:/,'');
+ const subject=()=>account()?'al:'+account():'guest';
  let accountId=account();
  const node=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n;};
  async function post(url,body){
@@ -48,6 +49,17 @@
   const fp=await root.AiBrowserProof?.fingerprint?.();if(fp&&!headers.has('X-Device-Fp'))headers.set('X-Device-Fp',fp);
   const response=await fetch(base+path,{...init,headers,credentials:'include',cache:'no-store'});
   if(response.status===401&&session?.token===auth.token)session=null;return response;
+ }
+ async function proofFor(expectedSubject=''){
+  const target=String(expectedSubject||subject());
+  if(target!==subject())return '';
+  try{
+   const auth=await credentials();
+   if(target!==subject())return '';
+   if(target==='guest'&&!String(auth?.user_id||'').startsWith('gu:'))return '';
+   if(target.startsWith('al:')&&auth?.user_id!==target)return '';
+   return String(auth?.token||'');
+  }catch{return '';}
  }
  function render(){
   const text=wallet?t(0).replace('{amount}',new Intl.NumberFormat(lang()).format(wallet.balance)):t(7);
@@ -103,5 +115,6 @@
  root.addEventListener('archerlab:session',()=>{const next=account();if(next===accountId)return;accountId=next;epoch++;for(const controller of active)controller.abort();wallet=null;session=null;pending=null;refreshPending=null;dialog?.remove();render();if(document.querySelector('.cupid-gallery-balance'))void refresh().catch(()=>{});});
  root.addEventListener('focus',()=>{if(document.querySelector('.cupid-gallery-balance'))void refresh().catch(()=>{});});
  const style=node('style');style.textContent=`.cupid-gallery-balance{position:absolute;right:max(12px,env(safe-area-inset-right));top:max(12px,env(safe-area-inset-top));z-index:6;max-width:calc(100% - 24px);min-height:44px;padding:9px 14px;border:1px solid #ba859a;border-radius:18px;background:#30212ee8;color:#ffe4ed;font-family:inherit;font-size:13px;font-weight:600;line-height:1.4;cursor:pointer;white-space:normal}.cupid-gallery-credit-dialog{box-sizing:border-box;margin:auto;inset:0;width:min(440px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:24px;border:1px solid #b68099;border-radius:20px;background:#271d2a;color:#fce9f0;box-shadow:0 16px 70px #0008;overflow:auto;font:15px/1.6 sans-serif}.cupid-gallery-credit-dialog::backdrop{background:#100a17b8}.cupid-gallery-credit-dialog h2{word-break:keep-all;font-size:20px;margin:0 0 16px}.cupid-gallery-credit-dialog p{margin:12px 0;overflow-wrap:anywhere}.cupid-gallery-credit-dialog a{display:block;color:#ffc7db;padding:10px 0}.cupid-gallery-credit-dialog button{display:block;margin:12px 0 0 auto;min-height:44px;padding:8px 24px;background:#78445f;color:white;border:1px solid #c78aa9;border-radius:12px;cursor:pointer}.cupid-gallery-credit-dialog :focus-visible,.cupid-gallery-balance:focus-visible{outline:2px solid #ffe4ed;outline-offset:3px}`;document.head.append(style);
- root.CupidGalleryCredits=Object.freeze({mount,beforeSend,chatFetch,refresh,capture:()=>epoch,get wallet(){return wallet;}});
+ root.HaremLogIdentity=Object.freeze({capture:subject,proofFor,prepare:()=>{void proofFor().catch(()=>{});}});
+ root.CupidGalleryCredits=Object.freeze({mount,beforeSend,chatFetch,refresh,capture:()=>epoch,captureSubject:subject,proofFor,get wallet(){return wallet;}});
 })(window);

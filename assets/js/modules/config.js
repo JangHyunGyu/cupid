@@ -957,16 +957,29 @@ function writeCupidChatLogQueue(queue) {
     return chatLogOutbox.write(CUPID_CHAT_LOG_QUEUE_KEY, queue);
 }
 
+function currentCupidViewerIdentitySubject() {
+    const helper = typeof window !== 'undefined' ? window.HaremLogIdentity : null;
+    if (typeof helper?.capture === 'function') return helper.capture();
+    const id = String((typeof window !== 'undefined' && window.archerlabAccount?.user?.id) || '').trim().replace(/^al:/, '');
+    return id ? `al:${id}` : 'guest';
+}
+
 function enqueueCupidChatLog(entry) {
     return enqueueCupidChatLogs([entry]);
 }
 
 function enqueueCupidChatLogs(entries = []) {
     const queue = readCupidChatLogQueue();
-    entries.filter(entry => entry?.clientMsgId).forEach(entry => {
-        const index = queue.findIndex(item => item.clientMsgId === entry.clientMsgId);
+    entries.filter(entry => entry?.clientMsgId).forEach(rawEntry => {
+        const index = queue.findIndex(item => item.clientMsgId === rawEntry.clientMsgId);
+        const existing = index >= 0 ? queue[index] : null;
+        const hasIdentityRuntime = Boolean(typeof window !== 'undefined' && (window.HaremLogIdentity || window.archerlabAccount || existing?.viewerIdentitySubject || rawEntry.viewerIdentitySubject));
+        const entry = rawEntry.role === 'user' && hasIdentityRuntime ? {
+            ...rawEntry,
+            viewerIdentitySubject: String(existing?.viewerIdentitySubject || rawEntry.viewerIdentitySubject || currentCupidViewerIdentitySubject())
+        } : rawEntry;
         if (index < 0) queue.push(entry);
-        else queue[index] = { ...queue[index], ...entry };
+        else queue[index] = { ...existing, ...entry };
     });
     return writeCupidChatLogQueue(queue);
 }
@@ -1335,7 +1348,7 @@ function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, 
 }
 
 function stripCupidLogQueueFields(item = {}) {
-    const { attempts, lastError, nextAttemptAt, ...payload } = item || {};
+    const { attempts, lastError, nextAttemptAt, viewerIdentitySubject, ...payload } = item || {};
     return payload;
 }
 
@@ -1363,6 +1376,11 @@ function assertCupidLogAcknowledged(response) {
 
 async function postCupidChatLogEntry(entry, options = {}) {
     const payload = stripCupidLogQueueFields(entry);
+    if (payload.role === 'user' && !payload.viewerIdentityProof && typeof window !== 'undefined' && typeof window.HaremLogIdentity?.proofFor === 'function') {
+        const subject = String(entry?.viewerIdentitySubject || currentCupidViewerIdentitySubject());
+        const proof = await window.HaremLogIdentity.proofFor(subject);
+        if (proof) payload.viewerIdentityProof = proof;
+    }
     return assertCupidLogAcknowledged(await sendCupidLogRequest(API_ENDPOINT + 'chat-logs', {
         label: 'chat-logs',
         headers: { 'Content-Type': 'application/json', 'x-app-id': payload.appId || getCupidAppId() },
@@ -2029,6 +2047,72 @@ function _cupidSendChatLogsOnPageHide() {
     } catch (error) {
         reportCupidLogFailure(error, {}, 'chat_log_client_exception', { stage: 'pagehide' });
     }
+}
+if (typeof window !== 'undefined' && typeof window.location?.hostname === 'string' && !window.HaremLogIdentity) {
+    (function (root) {
+        const base = 'https://avatar.archerlab.dev';
+        let session = null, pending = null, epoch = 0;
+        const account = () => String(root.archerlabAccount?.user?.id || '').trim().replace(/^al:/, '');
+        let accountId = account();
+        const subject = () => root.CupidGalleryCredits?.captureSubject ? root.CupidGalleryCredits.captureSubject() : (account() ? 'al:' + account() : 'guest');
+        async function post(url, body) {
+            const fp = await root.AiBrowserProof?.fingerprint?.();
+            const headers = { 'Content-Type': 'application/json' };
+            if (fp && url.startsWith(base)) headers['X-Device-Fp'] = fp;
+            const response = await fetch(url, { method: 'POST', credentials: 'include', cache: 'no-store', headers, body: JSON.stringify(body), signal: AbortSignal.timeout(15000) });
+            if (!response.ok) throw new Error('IDENTITY_UNAVAILABLE');
+            return response.json();
+        }
+        async function credentials() {
+            await root.archerlabAccount?.ready;
+            const who = account(), version = epoch;
+            if (session?.account === who && session.expires_at > Date.now() + 60000) return session;
+            if (pending) return pending;
+            pending = (async () => {
+                let value;
+                if (who) {
+                    const status = await post('https://account.archerlab.dev/api/status', {});
+                    if (!status.user || String(status.user.id) !== who) throw new Error('IDENTITY_CHANGED');
+                    const start = await post(base + '/api/session/start', {});
+                    const ticket = await post('https://account.archerlab.dev/api/sso', { csrf: status.csrf, request: start.request });
+                    value = await post(base + '/api/session', { state: start.state, code: ticket.code });
+                } else {
+                    value = await post(base + '/api/session', { guest: true });
+                }
+                if (epoch !== version || account() !== who || !value?.token || !value?.user_id || (who && value.user_id !== 'al:' + who)) throw new Error('IDENTITY_CHANGED');
+                session = { ...value, account: who };
+                const fp = await root.AiBrowserProof?.fingerprint?.();
+                const headers = { Authorization: 'Bearer ' + value.token };
+                if (fp) headers['X-Device-Fp'] = fp;
+                void fetch(base + '/api/credits', { headers, credentials: 'include', cache: 'no-store', signal: AbortSignal.timeout(15000) }).catch(() => {});
+                return session;
+            })().finally(() => { if (version === epoch) pending = null; });
+            return pending;
+        }
+        async function proofFor(expectedSubject = '') {
+            if (root.CupidGalleryCredits?.proofFor) return root.CupidGalleryCredits.proofFor(expectedSubject);
+            const target = String(expectedSubject || subject());
+            if (target !== subject()) return '';
+            try {
+                const auth = await credentials();
+                if (target !== subject()) return '';
+                if (target === 'guest' && !String(auth?.user_id || '').startsWith('gu:')) return '';
+                if (target.startsWith('al:') && auth?.user_id !== target) return '';
+                return String(auth?.token || '');
+            } catch {
+                return '';
+            }
+        }
+        root.addEventListener?.('archerlab:session', () => {
+            const next = account();
+            if (next === accountId) return;
+            accountId = next;
+            epoch++;
+            session = null;
+            pending = null;
+        });
+        root.HaremLogIdentity = Object.freeze({ capture: subject, proofFor, prepare: () => { void proofFor().catch(() => {}); } });
+    })(window);
 }
 if (typeof window !== 'undefined') {
     window.addEventListener('online', _cupidFlushChatLogsOnOnline);

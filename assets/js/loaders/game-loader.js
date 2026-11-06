@@ -316,6 +316,7 @@
         if (src === 'prompts.js' || src === 'modules/FreeTalkSystem.js') query += '&expressions=20261026';
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&history=20260924';
         if (src === 'modules/config.js' || src === 'modules/FreeTalkSystem.js') query += '&portrait=20261030';
+        if (src === 'modules/config.js') query += '&identity=20261107';
         if (src === 'sound.js' || src === 'scenario/day5_4_night.js') query += '&history=20260926-bedline';
         if (src === 'modules/SceneRenderer.js') query += '&history=20260926-cross';
         if (src === 'modules/GameEngine.js' || src === 'progression-integrity.js' || src === 'modules/SaveManager.js') query += '&history=20261009-rebalance';
