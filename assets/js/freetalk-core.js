@@ -384,7 +384,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
                 .filter(Boolean)
         );
         const requested = String(expression || '').toLowerCase();
-        const canonical = requested === 'shy2' ? 'very_shy' : requested;
+        const canonical = requested === 'shy2'
+            ? 'very_shy'
+            : (requested === 'neutral' && !valid.has('neutral') ? 'normal' : requested);
         return canonical && valid.has(canonical) ? canonical : '';
     }
 
@@ -1913,6 +1915,12 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         error.status = response?.status || 0;
         error.reason = payload?.reason || payload?.error || '';
         error.isSafetyBlocked = error.reason === 'SAFETY_BLOCKED';
+        error.isBrowserVerificationError = payload?.error === 'AI_ACCESS_REQUIRED'
+            || /^BROWSER_VERIFICATION_/.test(String(error.reason || ''));
+        if (error.isBrowserVerificationError) {
+            error.turnstileBotSuspected = true;
+            error.turnstileErrorCode = String(error.reason || 'AI_ACCESS_REQUIRED').toLowerCase();
+        }
         error.isControlBlocked = error.reason === 'INPUT_CONTROL_BLOCKED'
             || payload?.controlBlocked === true
             || response?.headers?.get?.('x-input-control-blocked') === '1';

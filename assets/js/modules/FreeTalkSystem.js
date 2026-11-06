@@ -859,7 +859,7 @@ class FreeTalkSystem {
             if (!displayReply?.content) window.recordCupidVisibleChat?.({ charId: charKey,
                 role: 'assistant', content: scene.text, sessionId: sceneId,
                 conversationDay: this.stateManager.currentDay, logSource: 'opening',
-                ...(window.getCupidPortraitLogFields?.(this.uiManager.charSlots?.center?.querySelector('img'), charKey) || {}) });
+                ...(window.getCupidPortraitLogFields?.(this.uiManager.charSlots?.center?.querySelector('img'), charKey, scene?.character) || {}) });
             await this.dialogueSystem.typeText(displayReply?.content || scene.text, displayReply?.speakerName || scene.name, displayReply?.segments || null, () => (
                 this._freeTalkEpoch === startEpoch
                 && this.currentSceneId === sceneId
@@ -1959,10 +1959,23 @@ class FreeTalkSystem {
                 const pacedReplyText = Array.isArray(parsedSegments) && parsedSegments.length > 0
                     ? parsedSegments.map(segment => segment.text).join('\n\n')
                     : reply;
+                const shownPortrait = window.getCupidPortraitLogFields?.(
+                    this.uiManager.charSlots?.center?.querySelector('img'),
+                    charKey,
+                    scene?.character
+                ) || {};
+                const initialExpression = parsed.expression === 'neutral'
+                    ? (shownPortrait.expression || 'normal')
+                    : parsed.expression;
                 window.recordCupidVisibleChat?.({ charId: charKey, role: 'assistant', content: reply,
                     sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
                     conversationDay: this.stateManager.currentDay, responseMetadata: data,
-                    expression: parsed.expression, clientMsgId: data?.logIds?.assistant });
+                    expression: displayFallback ? (shownPortrait.expression || '') : initialExpression,
+                    ...(displayFallback ? {
+                        expressionVariant: shownPortrait.expressionVariant || '',
+                        avatarAsset: shownPortrait.avatarAsset || ''
+                    } : {}),
+                    clientMsgId: data?.logIds?.assistant });
                 _streamingPreview.update(pacedReplyText, parsedSegments);
                 await _streamingPreview.drain();
                 this.dialogueSystem.finishStreamingText(scene.name);
@@ -1978,7 +1991,7 @@ class FreeTalkSystem {
                 this._assertRequestContext(requestContext, data);
                 let affinityResult;
                 const commitTurn = () => {
-                if (!displayFallback) this.applyExpression(parsed.expression, scene);
+                if (!displayFallback) this.applyExpression(initialExpression, scene);
                 affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(charKey) } : this.applyAffinity(parsed.affinity, scene, finalContent);
                 this._assertRequestContext(requestContext, data);
                 const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
@@ -2028,7 +2041,7 @@ class FreeTalkSystem {
                 } else {
                     requestHistory.push({ role: "assistant",
                         content: reply,
-                        expression: parsed.expression,
+                        expression: displayFallback ? (shownPortrait.expression || '') : initialExpression,
                         segments: parsedSegments,
                         speakerId: charKey,
                         speakerName: scene.name
@@ -2044,13 +2057,24 @@ class FreeTalkSystem {
                     : { applied: true, value: commitTurn() };
                 if (!turnResult.applied) throw this._makeStaleTurnError('This conversation turn was already committed');
                 this.uiManager.updateNameTag(scene.name);
-                const selected = this._lastExpressionSelection || null;
+                const selected = !displayFallback ? (this._lastExpressionSelection || null) : null;
+                const currentPortrait = window.getCupidPortraitLogFields?.(
+                    this.uiManager.charSlots?.center?.querySelector('img'),
+                    charKey,
+                    selected?.avatarAsset,
+                    scene?.character
+                ) || {};
                 // The center slot can still show another character, so only the speaker's own portrait is logged.
                 const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(charKey,
                     window.getCupidChatAvatarAsset?.(this.uiManager.charSlots?.center?.querySelector('img')),
-                    selected?.avatarAsset) || '';
+                    selected?.avatarAsset,
+                    scene?.character) || currentPortrait.avatarAsset || '';
+                const loggedExpression = displayFallback
+                    ? (currentPortrait.expression || shownPortrait.expression || '')
+                    : (initialExpression || currentPortrait.expression || '');
                 const expressionVariant = window.normalizeCupidExpressionVariant?.(selected?.expressionVariant)
-                    || window.getCupidExpressionVariantId?.(avatarAsset, parsed.expression)
+                    || window.getCupidExpressionVariantId?.(avatarAsset, loggedExpression)
+                    || currentPortrait.expressionVariant
                     || '';
                 try {
                     window.saveGameState?.();
@@ -2076,7 +2100,7 @@ class FreeTalkSystem {
                             assistantRenderReceipt,
                             turnId: requestContext.turnMeta?.turnId || '',
                             responseMetadata: data,
-                            expression: parsed.expression,
+                            expression: loggedExpression,
                             expressionVariant,
                             avatarAsset
                         }))
@@ -2134,13 +2158,16 @@ class FreeTalkSystem {
             }
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
 
+            const isHandledTurnstileChallenge = error?.turnstileBotSuspected === true
+                || error?.isBrowserVerificationError === true
+                || /^(?:300|600)\d*$/.test(String(error?.turnstileErrorCode || ''));
             const isNetworkTransportFailure = CupidFreeTalkCore.isNetworkTransportError(error);
             const isTransientTransportFailure = isNetworkTransportFailure
                 || /^HTTP (?:408|425|429|5\d\d)$/i.test(error?.message || '');
             const isOfflineTransportFailure = navigator.onLine === false && isNetworkTransportFailure;
-            if (isTransientTransportFailure) console.warn("AI Chat transport interruption:", error?.message || error);
+            if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn("AI Chat transport/verification interruption:", error?.message || error);
             else console.error("AI Chat Error:", error);
-            if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
+            if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
                     errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : CupidFreeTalkCore.isClientCodeException(error) ? 'freetalk_client_exception' : (/^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
@@ -2160,7 +2187,9 @@ class FreeTalkSystem {
                         latestUserHash: _lastTurnMeta?.latestUserHash || '',
                         latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
                         hasImage: String(finalContent || '').includes('data:image/'),
-                        historyLength: requestHistory.length
+                        historyLength: requestHistory.length,
+                        ...(error?.status ? { httpStatus: Number(error.status) } : {}),
+                        ...(error?.reason ? { reason: String(error.reason) } : {})
                     }
                 });
             }
@@ -2363,21 +2392,30 @@ class FreeTalkSystem {
         for (let index = 0; index < conversations.length; index += 1) {
             this._assertRequestContext(requestContext);
             const conversation = conversations[index];
-            window.recordCupidVisibleChat?.({ charId: 'group', role: 'assistant', content: conversation.text,
-                speakerId: conversation.speakerId, participants: this.groupParticipants,
-                sessionId: requestContext.sceneId, turnId: requestContext.turnMeta?.turnId,
-                expression: conversation.expression, conversationDay: this.stateManager.currentDay });
+            const portrait = Object.values(this.uiManager?.charSlots || {}).find(slot => slot?.dataset?.groupCharId === conversation.speakerId)?.querySelector('img');
+            const shownPortrait = window.getCupidPortraitLogFields?.(portrait, conversation.speakerId) || {};
+            const requestedExpression = conversation.expression === 'neutral'
+                ? (shownPortrait.expression || 'normal')
+                : conversation.expression;
             this._setGroupActiveSpeaker(conversation.speakerId);
             this.uiManager.updateNameTag(conversation.speakerName);
             const selection = displayFallback
                 ? null
-                : this._applyGroupExpression(conversation.expression, conversation.speakerId);
-            const portrait = Object.values(this.uiManager?.charSlots || {}).find(slot => slot?.dataset?.groupCharId === conversation.speakerId)?.querySelector('img');
+                : this._applyGroupExpression(requestedExpression, conversation.speakerId);
             const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(conversation.speakerId,
-                window.getCupidChatAvatarAsset?.(portrait), selection?.avatarAsset) || '';
+                window.getCupidChatAvatarAsset?.(portrait), selection?.avatarAsset, shownPortrait.avatarAsset) || '';
+            const loggedExpression = displayFallback
+                ? (shownPortrait.expression || '')
+                : (requestedExpression || shownPortrait.expression || '');
             const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
-                || window.getCupidExpressionVariantId?.(avatarAsset, conversation.expression)
+                || window.getCupidExpressionVariantId?.(avatarAsset, loggedExpression)
+                || shownPortrait.expressionVariant
                 || '';
+            window.recordCupidVisibleChat?.({ charId: 'group', role: 'assistant', content: conversation.text,
+                speakerId: conversation.speakerId, participants: this.groupParticipants,
+                sessionId: requestContext.sceneId, turnId: requestContext.turnMeta?.turnId,
+                expression: loggedExpression, expressionVariant, avatarAsset,
+                conversationDay: this.stateManager.currentDay });
             if (index === 0 && streamingPreview) {
                 const pacedConversationText = Array.isArray(conversation.segments) && conversation.segments.length > 0
                     ? conversation.segments.map(segment => segment.text).join('\n\n')
@@ -2399,7 +2437,7 @@ class FreeTalkSystem {
                 conversation.speakerName,
                 conversation.segments
             );
-            rendered.push({ ...conversation, renderReceipt, avatarAsset, expressionVariant });
+            rendered.push({ ...conversation, expression: loggedExpression, renderReceipt, avatarAsset, expressionVariant });
             const remaining = conversations.length - index - 1;
             if (remaining > 0) await this._waitForGroupMessageAdvance(requestContext, remaining);
         }
@@ -2816,11 +2854,14 @@ class FreeTalkSystem {
                 if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
                 return;
             }
+            const isHandledTurnstileChallenge = error?.turnstileBotSuspected === true
+                || error?.isBrowserVerificationError === true
+                || /^(?:300|600)\d*$/.test(String(error?.turnstileErrorCode || ''));
             const isTransientTransportFailure = CupidFreeTalkCore.isNetworkTransportError(error);
             const isOfflineTransportFailure = navigator.onLine === false && isTransientTransportFailure;
-            if (isTransientTransportFailure) console.warn('[Cupid Group FreeTalk] transport interruption:', error?.message || error);
+            if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn('[Cupid Group FreeTalk] transport/verification interruption:', error?.message || error);
             else console.error('[Cupid Group FreeTalk] Error:', error);
-            if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
+            if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
                 window.logCupidError(error, {
                     source: 'cupid-group-freetalk',
                     errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : CupidFreeTalkCore.isClientCodeException(error) ? 'group_freetalk_client_exception' : /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
@@ -2832,7 +2873,12 @@ class FreeTalkSystem {
                         language: lang,
                         chatMode: 'group'
                     },
-                    extra: { cacheKey: lastCacheKey, turnId: lastTurnMeta?.turnId || '' }
+                    extra: {
+                        cacheKey: lastCacheKey,
+                        turnId: lastTurnMeta?.turnId || '',
+                        ...(error?.status ? { httpStatus: Number(error.status) } : {}),
+                        ...(error?.reason ? { reason: String(error.reason) } : {})
+                    }
                 });
             }
             this._clearThinkingMessage();

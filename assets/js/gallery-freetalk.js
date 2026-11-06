@@ -1333,10 +1333,19 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const pacedDisplayText = Array.isArray(displaySegments) && displaySegments.length > 0
                 ? displaySegments.map(segment => segment.text).join('\n\n')
                 : displayText;
+            const shownPortrait = window.getCupidPortraitLogFields?.(document.getElementById('gft-char-img'), requestCharId) || {};
+            const initialExpression = parsed.expression === 'neutral'
+                ? (shownPortrait.expression || 'normal')
+                : parsed.expression;
             window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'assistant', content: displayText,
                 sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
                 playerName: this.progress.getPlayerName() || '', responseMetadata: data,
-                expression: parsed.expression, clientMsgId: data?.logIds?.assistant });
+                expression: displayFallback ? (shownPortrait.expression || '') : initialExpression,
+                ...(displayFallback ? {
+                    expressionVariant: shownPortrait.expressionVariant || '',
+                    avatarAsset: shownPortrait.avatarAsset || ''
+                } : {}),
+                clientMsgId: data?.logIds?.assistant });
             _streamingPreview.update(pacedDisplayText, displaySegments);
             await _streamingPreview.drain();
             this._finishStreamingText();
@@ -1344,12 +1353,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             _streamingPreview = null;
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
-            const selection = displayFallback ? null : this._updateExpression(parsed.expression, requestCharId);
+            const selection = displayFallback ? null : this._updateExpression(initialExpression, requestCharId);
+            const currentPortrait = window.getCupidPortraitLogFields?.(document.getElementById('gft-char-img'), requestCharId, selection?.avatarAsset) || {};
             const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(requestCharId,
                 window.getCupidChatAvatarAsset?.(document.getElementById('gft-char-img')),
-                selection?.avatarAsset) || '';
+                selection?.avatarAsset) || currentPortrait.avatarAsset || '';
+            const loggedExpression = displayFallback
+                ? (currentPortrait.expression || shownPortrait.expression || '')
+                : (initialExpression || currentPortrait.expression || '');
             const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
-                || window.getCupidExpressionVariantId?.(avatarAsset, parsed.expression)
+                || window.getCupidExpressionVariantId?.(avatarAsset, loggedExpression)
+                || currentPortrait.expressionVariant
                 || '';
             this._assertRequestContext(requestContext, data);
             const incidentResult = displayFallback ? { affinityChange: 0 } : this._commitGalleryIncidentTurn({
@@ -1396,7 +1410,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     segments: displaySegments,
                     speakerId: requestCharId,
                     speakerName: charName,
-                    expression: parsed.expression || '',
+                    expression: loggedExpression || '',
                     expressionTurn: requestContext.turnMeta.turnId
                 });
 
@@ -1422,7 +1436,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         assistantRenderReceipt,
                         turnId: requestContext.turnMeta?.turnId || '',
                         responseMetadata: data,
-                        expression: parsed.expression,
+                        expression: loggedExpression,
                         expressionVariant,
                         avatarAsset
                     }))
@@ -1468,13 +1482,16 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                     this.stagedImage = stagedImage;
                     this._setImageUploadState(false, stagedImage);
                 }
+                const isHandledTurnstileChallenge = err?.turnstileBotSuspected === true
+                    || err?.isBrowserVerificationError === true
+                    || /^(?:300|600)\d*$/.test(String(err?.turnstileErrorCode || ''));
                 const isNetworkTransportFailure = GalleryFreeTalkCore.isNetworkTransportError(err);
                 const isTransientTransportFailure = isNetworkTransportFailure
                     || /^HTTP (?:408|425|429|5\d\d)$/i.test(err?.message || '');
                 const isOfflineTransportFailure = navigator.onLine === false && isNetworkTransportFailure;
-                if (isTransientTransportFailure) console.warn('[GalleryFreeTalk] transport interruption:', err?.message || err);
+                if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn('[GalleryFreeTalk] transport/verification interruption:', err?.message || err);
                 else console.error('[GalleryFreeTalk] API 오류:', err);
-                if (typeof window.logCupidError === 'function' && !isOfflineTransportFailure && (!isTransientTransportFailure || err?.retryExhausted)) {
+                if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || err?.retryExhausted)) {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
                         errorType: err?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : GalleryFreeTalkCore.isClientCodeException(err) ? 'freetalk_client_exception' : (/^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
@@ -1492,7 +1509,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                             latestUserHash: _lastTurnMeta?.latestUserHash || '',
                             latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
                             hasImage: String(finalContent || '').includes('data:image/'),
-                            historyLength: requestHistory.length
+                            historyLength: requestHistory.length,
+                            ...(err?.status ? { httpStatus: Number(err.status) } : {}),
+                            ...(err?.reason ? { reason: String(err.reason) } : {})
                         }
                     });
                 }

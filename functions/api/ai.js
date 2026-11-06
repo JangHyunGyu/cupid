@@ -3,13 +3,16 @@ const FORWARDED_HEADERS = [
     'accept',
     'content-type',
     'x-app-type',
+    'x-app-version',
     'x-roleplay-surface',
     'x-request-type',
     'x-chat-mode',
     'x-response-schema',
     'x-output-language',
     'x-cache-key',
-    'x-ai-proof'
+    'x-user-id',
+    'x-ai-proof',
+    'x-device-fp'
 ];
 
 export async function onRequestPost({ request }) {

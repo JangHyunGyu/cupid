@@ -60,20 +60,32 @@
     void fingerprint();
     const isBotCode = code => /^(300\d*|600\d*)$/.test(String(code || ''));
     const isRetryableCode = code => /^(110600|110620|200500|300\d*|600\d*)$/.test(String(code || ''));
-    const lang = () => (document.documentElement?.lang || 'en').slice(0, 2);
+    const lang = () => String(root.GAME_LANG || document.documentElement?.lang || 'en').toLowerCase().slice(0, 2);
     const message = (botSuspected = false) => (botSuspected ? {
         ko: '접속 확인에 실패했어요. 브라우저 확장 프로그램이나 VPN을 잠시 끄고 다시 인증해 주세요.',
         ja: '接続を確認できませんでした。ブラウザの拡張機能やVPNを一時的にオフにして、再認証してください。',
         en: 'Browser verification failed. Turn off browser extensions or VPN and verify again.',
+        es: 'La verificación del navegador falló. Desactiva las extensiones del navegador o la VPN y vuelve a verificar.',
+        fr: 'La vérification du navigateur a échoué. Désactivez les extensions du navigateur ou le VPN, puis recommencez la vérification.',
+        de: 'Die Browserprüfung ist fehlgeschlagen. Deaktiviere Browsererweiterungen oder VPN und prüfe erneut.',
+        pt: 'A verificação do navegador falhou. Desative as extensões do navegador ou a VPN e verifique novamente.',
+        zh: '浏览器验证失败。请关闭浏览器扩展程序或 VPN，然后重新验证。',
     } : {
         ko: '접속 확인에 실패했어요. 다시 인증 버튼을 눌러 다시 시도해 주세요.',
         ja: '接続を確認できませんでした。「再認証」ボタンを押してもう一度お試しください。',
         en: 'Browser verification failed. Click "Verify again" and try again.',
+        es: 'La verificación del navegador falló. Pulsa «Volver a verificar» e inténtalo de nuevo.',
+        fr: 'La vérification du navigateur a échoué. Cliquez sur « Vérifier à nouveau » et réessayez.',
+        de: 'Die Browserprüfung ist fehlgeschlagen. Klicke auf „Erneut prüfen“ und versuche es noch einmal.',
+        pt: 'A verificação do navegador falhou. Clique em “Verificar novamente” e tente outra vez.',
+        zh: '浏览器验证失败。请点击“重新验证”后重试。',
     })[lang()] || 'Browser verification failed.';
     const retryLabel = () => ({
         ko: '다시 인증',
         ja: '再認証',
         en: 'Verify again',
+        es: 'Volver a verificar', fr: 'Vérifier à nouveau', de: 'Erneut prüfen',
+        pt: 'Verificar novamente', zh: '重新验证',
     })[lang()] || 'Verify again';
     function failure(retryable = false, meta = {}) {
         const code = String(meta.code || 'unknown');
@@ -297,7 +309,22 @@
             if (fpMemo && !headers.has('x-device-fp')) headers.set('x-device-fp', fpMemo);
             if (request.signal.aborted) throw aborted(request.signal);
             const response = await fetchOriginal(new Request(request.clone(), { headers }));
-            if (attempt || ![403, 503].includes(response.status)) return response;
+            if (attempt || ![403, 503].includes(response.status)) {
+                if (attempt && [403, 503].includes(response.status)) {
+                    const terminalErr = await response.clone().json().catch(() => null);
+                    if (terminalErr?.error === 'AI_ACCESS_REQUIRED') {
+                        showRetryBanner(failure(true, {
+                            code: String(terminalErr.reason || 'server-verify-failed').toLowerCase(),
+                            stage: 'server-verify',
+                            attempts: attempt + 1,
+                            widgetLoaded: true,
+                            scriptLoaded: true,
+                            botSuspected: true,
+                        }));
+                    }
+                }
+                return response;
+            }
             const error = await response.clone().json().catch(() => null);
             if (error?.error !== 'AI_ACCESS_REQUIRED'
                 || !['BROWSER_VERIFICATION_FAILED', 'BROWSER_VERIFICATION_UNAVAILABLE'].includes(error.reason)) return response;
