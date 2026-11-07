@@ -46,12 +46,15 @@ function paintGrowingHtml(el, html) {
             const end = closing[0];
             const pivot = prev.lastIndexOf(end);
             if (pivot > 0 && next.startsWith(prev.slice(0, pivot)) && el.lastElementChild) {
-                const openEnd = next.lastIndexOf('>', next.length - end.length);
+                const openStart = prev.lastIndexOf(`<${closing[1]}`, pivot);
+                const openEnd = openStart >= 0 ? next.indexOf('>', openStart) : -1;
                 if (openEnd >= 0 && openEnd < next.length - end.length) {
                     const inner = next.slice(openEnd + 1, next.length - end.length);
-                    if (el.lastElementChild.innerHTML !== inner) el.lastElementChild.innerHTML = inner;
-                    el._streamHtml = next;
-                    return;
+                    if (!inner.includes(end)) {
+                        if (el.lastElementChild.innerHTML !== inner) el.lastElementChild.innerHTML = inner;
+                        el._streamHtml = next;
+                        return;
+                    }
                 }
             }
         }
