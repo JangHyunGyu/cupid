@@ -83,3 +83,16 @@ test('the outgoing clone must decode before replacing the original visible image
   ready.forEach(resolve => resolve()); await tick(); assert.equal(h.image.src, 'sad.webp');
   h.animations.forEach(a => a.finish()); assert.equal(await done, true);
 });
+
+test('clone decode failure and query-embedded .webp fallback still commit the new portrait', async () => {
+  const h = harness(); const clone = h.image.cloneNode.bind(h.image);
+  h.image.cloneNode = () => ({ ...clone(), decode: () => Promise.reject(new Error('clone decode failed')) });
+  const mediaWebp = '/api/media?asset=assets%2Fimages%2Fcharacters%2Fteacher_soft_smile.webp&guest=g1&v=1';
+  const mediaPng = '/api/media?asset=assets%2Fimages%2Fcharacters%2Fteacher_soft_smile.png&guest=g1&v=1';
+  const done = h.change(mediaWebp);
+  h.loads.get(mediaWebp).reject(new Error('webp decode failed')); await tick();
+  h.loads.get(mediaPng).resolve();
+  assert.equal(await done, true);
+  assert.equal(h.image.src, mediaPng);
+  assert.deepEqual(h.commits, [mediaPng]);
+});

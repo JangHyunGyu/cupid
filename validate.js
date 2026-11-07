@@ -1822,8 +1822,8 @@ try {
         errors.push('[FREETALK_API] shared request recovery regression failed');
         console.error(recoveryTests.stdout, recoveryTests.stderr);
     }
-    if (!ftSysContent.includes('AI Chat transport interruption:')
-        || !gftContent.includes('[GalleryFreeTalk] transport interruption:')) {
+    if ((!ftSysContent.includes('AI Chat transport interruption:') && !ftSysContent.includes('AI Chat transport/verification interruption:'))
+        || (!gftContent.includes('[GalleryFreeTalk] transport interruption:') && !gftContent.includes('[GalleryFreeTalk] transport/verification interruption:'))) {
         errors.push('[FREETALK_API] transient transport failures must not create duplicate console-error reports');
     }
     if (!ftSysContent.includes('isOfflineTransportFailure')

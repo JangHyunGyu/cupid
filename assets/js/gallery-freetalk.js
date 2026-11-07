@@ -1334,13 +1334,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 ? displaySegments.map(segment => segment.text).join('\n\n')
                 : displayText;
             const shownPortrait = window.getCupidPortraitLogFields?.(document.getElementById('gft-char-img'), requestCharId) || {};
-            const initialExpression = parsed.expression === 'neutral'
-                ? (shownPortrait.expression || 'normal')
-                : parsed.expression;
+            if (parsed.expression === 'neutral') {
+                parsed.expression = shownPortrait.expression || (displayFallback ? '' : 'normal');
+            }
             window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'assistant', content: displayText,
                 sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
                 playerName: this.progress.getPlayerName() || '', responseMetadata: data,
-                expression: displayFallback ? (shownPortrait.expression || '') : initialExpression,
+                expression: displayFallback ? (shownPortrait.expression || '') : parsed.expression,
                 ...(displayFallback ? {
                     expressionVariant: shownPortrait.expressionVariant || '',
                     avatarAsset: shownPortrait.avatarAsset || ''
@@ -1353,14 +1353,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             _streamingPreview = null;
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
-            const selection = displayFallback ? null : this._updateExpression(initialExpression, requestCharId);
+            const selection = displayFallback ? null : this._updateExpression(parsed.expression, requestCharId);
             const currentPortrait = window.getCupidPortraitLogFields?.(document.getElementById('gft-char-img'), requestCharId, selection?.avatarAsset) || {};
             const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(requestCharId,
                 window.getCupidChatAvatarAsset?.(document.getElementById('gft-char-img')),
                 selection?.avatarAsset) || currentPortrait.avatarAsset || '';
             const loggedExpression = displayFallback
                 ? (currentPortrait.expression || shownPortrait.expression || '')
-                : (initialExpression || currentPortrait.expression || '');
+                : (parsed.expression || currentPortrait.expression || '');
             const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
                 || window.getCupidExpressionVariantId?.(avatarAsset, loggedExpression)
                 || currentPortrait.expressionVariant

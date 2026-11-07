@@ -10,7 +10,8 @@ const vm = require('node:vm');
 const root = path.join(__dirname, '..');
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 
-function loadRuntime(storageSeed = {}) {
+function loadRuntime(storageSeed = {}, { rewritePrompts = false } = {}) {
+    const { rewriteReferences } = require('../scripts/character-assets.cjs');
     const storage = new Map(Object.entries(storageSeed));
     const box = {
         console: { log() {}, info() {}, warn() {}, error() {} }, setTimeout, clearTimeout, URL, AbortController, Blob,
@@ -21,7 +22,8 @@ function loadRuntime(storageSeed = {}) {
     };
     box.window = box; box.self = box;
     vm.createContext(box);
-    vm.runInContext(read('assets/js/prompts.js'), box);
+    const promptsSrc = read('assets/js/prompts.js');
+    vm.runInContext(rewritePrompts ? rewriteReferences(root, promptsSrc) : promptsSrc, box);
     vm.runInContext(read('assets/js/modules/config.js'), box);
     box.CupidStorage = { getItem: k => storage.has(k) ? storage.get(k) : null, setItem: (k, v) => storage.set(k, v), removeItem: k => storage.delete(k) };
     const saved = [];
@@ -145,4 +147,49 @@ test('local recovery keeps expression and portrait from saved history', async ()
     const dainSolo = recovered.find(e => e.charId === 'Dain');
     assert.equal(dainSolo.content, '응, 안녕.');
     assert.equal(dainSolo.expression, 'smile');
+});
+
+test('rewritten dist CHARACTER_EXPRESSIONS paths still enforce speaker ownership and scene.character fallback', () => {
+    const { box, saved } = loadRuntime({}, { rewritePrompts: true });
+
+    assert.equal(box.isCupidAvatarAssetOwnedBy('assets/images/characters/yuna_normal.webp', 'Teacher'), false);
+    assert.equal(box.isCupidAvatarAssetOwnedBy('assets/images/characters/seyoun_pout.webp', 'Dain'), false);
+    assert.equal(box.isCupidAvatarAssetOwnedBy('assets/images/characters/teacher_soft_smile.webp', 'Teacher'), true);
+    assert.equal(box.isCupidAvatarAssetOwnedBy('assets/images/characters/dain_relieved.webp', 'Dain'), true);
+
+    // Reproduces D1 incident: center slot still holds yuna_normal.webp when hidden_homeroom_d2_freetalk opens for Teacher.
+    const selfTeacher = {
+        stateManager: { currentDay: 2 },
+        uiManager: { charSlots: { center: { querySelector: () => img('assets/images/characters/yuna_normal.webp') } } }
+    };
+    runOpeningStatement(box, "const displayReply = checkpoint?.lastReply;", {
+        self: selfTeacher,
+        displayReply: null,
+        charKey: 'Teacher',
+        scene: { text: '교무실로 부른 건 다름이 아니라...', character: 'assets/characters/teacher/expressions/soft_smile/01/sprite.png' },
+        sceneId: 'hidden_homeroom_d2_freetalk'
+    });
+    assert.equal(saved.length, 1);
+    assert.equal(saved[0].charId, 'Teacher');
+    assert.equal(saved[0].expression, 'soft_smile');
+    assert.equal(saved[0].expressionVariant, '01');
+    assert.equal(saved[0].avatarAsset, 'assets/images/characters/teacher_soft_smile.webp');
+
+    // Reproduces D1 incident: center slot still holds seyoun_pout.webp when wall_dain_freetalk opens for Dain.
+    const selfDain = {
+        stateManager: { currentDay: 4 },
+        uiManager: { charSlots: { center: { querySelector: () => img('assets/images/characters/seyoun_pout.webp') } } }
+    };
+    runOpeningStatement(box, "const displayReply = checkpoint?.lastReply;", {
+        self: selfDain,
+        displayReply: null,
+        charKey: 'Dain',
+        scene: { text: '왔어?', character: 'assets/characters/dain/expressions/relieved/01/sprite.png' },
+        sceneId: 'wall_dain_freetalk'
+    });
+    assert.equal(saved.length, 2);
+    assert.equal(saved[1].charId, 'Dain');
+    assert.equal(saved[1].expression, 'relieved');
+    assert.equal(saved[1].expressionVariant, '01');
+    assert.equal(saved[1].avatarAsset, 'assets/images/characters/dain_relieved.webp');
 });

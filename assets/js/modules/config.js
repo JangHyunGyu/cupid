@@ -1021,14 +1021,60 @@ function normalizeCupidExpressionVariant(value) {
     return /^[a-z0-9][a-z0-9_-]{0,31}$/i.test(id) ? id.slice(0, 32) : '';
 }
 
+const CUPID_SPEAKER_AVATAR_PREFIXES = Object.freeze({
+    seoyeon: 'seyoun',
+    seyoun: 'seyoun',
+    '서연': 'seyoun',
+    yuna: 'yuna',
+    '유나': 'yuna',
+    dain: 'dain',
+    '다인': 'dain',
+    teacher: 'teacher',
+    'homeroom teacher': 'teacher',
+    '담임선생님': 'teacher',
+    '담임': 'teacher',
+    nurse: 'nurse',
+    'school nurse': 'nurse',
+    'health teacher': 'nurse',
+    '보건선생님': 'nurse',
+    '보건': 'nurse',
+    haeun: 'haeun',
+    '하은': 'haeun',
+    minsu: 'minsu',
+    '민수': 'minsu',
+    junho: 'junho',
+    '준호': 'junho'
+});
+
+function canonicalCharacterPathToLogicalId(raw) {
+    const clean = String(raw || '').split('?')[0].replace(/^\/+/, '').replace(/\\/g, '/').replace(/\.(?:png|webp|jpe?g)$/i, '');
+    const match = clean.match(/^assets\/characters\/([a-z0-9_]+)\/(?:(?:outfits\/([a-z0-9_]+)\/)?expressions\/([a-z0-9_]+)|(?:poses|special)\/([a-z0-9_]+))\/(\d{2})\/sprite$/i);
+    if (!match) return '';
+    const folder = match[1].toLowerCase();
+    const prefix = folder === 'seoyeon' ? 'seyoun' : folder;
+    const outfit = match[2] ? `${match[2].toLowerCase()}_` : '';
+    const expr = (match[3] || match[4] || '').toLowerCase();
+    const variant = match[5] && match[5] !== '01' ? `_${match[5]}` : '';
+    return expr ? `characters/${prefix}_${outfit}${expr}${variant}` : '';
+}
+
 // A portrait belongs to a speaker when its file name starts with that speaker's prefix (seyoun_, dain_ ...).
 // Unknown or custom speakers have no prefix to compare, so their portrait is accepted as is.
 function getCupidAvatarAssetPrefix(speaker) {
+    const rawSpeaker = String(speaker || '').trim();
+    const wanted = rawSpeaker.toLowerCase();
+    if (!wanted) return '';
+    const mappedKey = String(window.CHAR_NAME_MAP?.[rawSpeaker] || '').trim().toLowerCase();
     const map = window.CHARACTER_EXPRESSIONS || {};
-    const wanted = String(speaker || '').trim().toLowerCase();
-    const key = Object.keys(map).find(name => name.toLowerCase() === wanted);
-    const match = String((key && map[key]?.normal) || '').match(/characters\/([a-z0-9]+)_normal\.(?:webp|png)$/i);
-    return match ? match[1].toLowerCase() : '';
+    const key = Object.keys(map).find(name => {
+        const lower = name.toLowerCase();
+        return lower === wanted || (mappedKey && lower === mappedKey);
+    });
+    const normalCandidate = key && map[key]?.normal;
+    const normalizedNormal = normalCandidate ? getCupidChatAvatarAssetFromPath(normalCandidate) : '';
+    const match = String(normalizedNormal || normalCandidate || '').match(/characters\/([a-z0-9]+)_normal\.(?:webp|png)$/i);
+    if (match) return match[1].toLowerCase();
+    return CUPID_SPEAKER_AVATAR_PREFIXES[wanted] || (mappedKey ? CUPID_SPEAKER_AVATAR_PREFIXES[mappedKey] || '' : '');
 }
 
 function isCupidAvatarAssetOwnedBy(asset, speaker) {
@@ -1047,8 +1093,8 @@ function pickCupidSpeakerAvatarAsset(speaker, ...candidates) {
 }
 
 // Expression code and image id of a portrait already on screen (opening lines have no model expression).
-function getCupidPortraitLogFields(img, speaker) {
-    const avatarAsset = pickCupidSpeakerAvatarAsset(speaker, getCupidChatAvatarAsset(img));
+function getCupidPortraitLogFields(img, speaker, ...fallbackCandidates) {
+    const avatarAsset = pickCupidSpeakerAvatarAsset(speaker, getCupidChatAvatarAsset(img), ...fallbackCandidates);
     const file = avatarAsset.split('/').pop() || '';
     const match = file.match(/^[a-z0-9]+_([a-z0-9_]+?)(?:_(\d{2}))?\.webp$/i);
     if (!match) return { expression: '', expressionVariant: '', avatarAsset: '' };
@@ -1631,6 +1677,7 @@ function getCupidChatAvatarAsset(img) {
         try { raw = new URL(raw, 'https://cupid.archerlab.dev').searchParams.get('asset') || ''; } catch (_) { return ''; }
     }
     const logical = window.CupidMedia?.toLogicalAssetId?.(raw)
+        || canonicalCharacterPathToLogicalId(raw)
         || String(raw).split('?')[0].replace(/^assets\/images\//, '').replace(/\.(png|webp)$/, '');
     return /^characters\/[a-z0-9_-]+$/.test(logical) ? `assets/images/${logical}.webp` : '';
 }

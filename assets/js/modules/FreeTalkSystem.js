@@ -1964,13 +1964,13 @@ class FreeTalkSystem {
                     charKey,
                     scene?.character
                 ) || {};
-                const initialExpression = parsed.expression === 'neutral'
-                    ? (shownPortrait.expression || 'normal')
-                    : parsed.expression;
+                if (parsed.expression === 'neutral') {
+                    parsed.expression = shownPortrait.expression || (displayFallback ? '' : 'normal');
+                }
                 window.recordCupidVisibleChat?.({ charId: charKey, role: 'assistant', content: reply,
                     sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
                     conversationDay: this.stateManager.currentDay, responseMetadata: data,
-                    expression: displayFallback ? (shownPortrait.expression || '') : initialExpression,
+                    expression: displayFallback ? (shownPortrait.expression || '') : parsed.expression,
                     ...(displayFallback ? {
                         expressionVariant: shownPortrait.expressionVariant || '',
                         avatarAsset: shownPortrait.avatarAsset || ''
@@ -1991,7 +1991,7 @@ class FreeTalkSystem {
                 this._assertRequestContext(requestContext, data);
                 let affinityResult;
                 const commitTurn = () => {
-                if (!displayFallback) this.applyExpression(initialExpression, scene);
+                if (!displayFallback) this.applyExpression(parsed.expression, scene);
                 affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(charKey) } : this.applyAffinity(parsed.affinity, scene, finalContent);
                 this._assertRequestContext(requestContext, data);
                 const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
@@ -2041,7 +2041,7 @@ class FreeTalkSystem {
                 } else {
                     requestHistory.push({ role: "assistant",
                         content: reply,
-                        expression: displayFallback ? (shownPortrait.expression || '') : initialExpression,
+                        expression: displayFallback ? (shownPortrait.expression || '') : parsed.expression,
                         segments: parsedSegments,
                         speakerId: charKey,
                         speakerName: scene.name
@@ -2071,7 +2071,7 @@ class FreeTalkSystem {
                     scene?.character) || currentPortrait.avatarAsset || '';
                 const loggedExpression = displayFallback
                     ? (currentPortrait.expression || shownPortrait.expression || '')
-                    : (initialExpression || currentPortrait.expression || '');
+                    : (parsed.expression || currentPortrait.expression || '');
                 const expressionVariant = window.normalizeCupidExpressionVariant?.(selected?.expressionVariant)
                     || window.getCupidExpressionVariantId?.(avatarAsset, loggedExpression)
                     || currentPortrait.expressionVariant

@@ -761,18 +761,26 @@ class SceneRenderer {
             if (!slot) return;
             const oldImg = slot.querySelector('img');
             if (oldImg && window.CupidMedia?.fadeExpressionImage) {
+                const commitOldImg = () => {
+                    oldImg.dataset.rawSrc = result.img.dataset.rawSrc;
+                    oldImg.dataset.cupidAvatarAsset = result.img.dataset.cupidAvatarAsset;
+                    oldImg.style.opacity = result.img.style.opacity;
+                    oldImg.classList.remove('char-fade-out');
+                    for (const name of ['silhouette', 'thinking']) {
+                        if (scene[name]) oldImg.classList.add(name);
+                        else oldImg.classList.remove(name);
+                    }
+                };
                 swapPromises.push(window.CupidMedia.fadeExpressionImage(oldImg, result.img.src, {
                     isCurrent: () => this.currentSceneId === sceneId && this._charUpdateId === updateId,
-                    onCommit: () => {
-                        oldImg.dataset.rawSrc = result.img.dataset.rawSrc;
-                        oldImg.dataset.cupidAvatarAsset = result.img.dataset.cupidAvatarAsset;
-                        oldImg.style.opacity = result.img.style.opacity;
-                        oldImg.classList.remove('char-fade-out');
-                        for (const name of ['silhouette', 'thinking']) {
-                            if (scene[name]) oldImg.classList.add(name);
-                            else oldImg.classList.remove(name);
-                        }
+                    load: () => Promise.resolve(result.img.src),
+                    onCommit: commitOldImg
+                }).then(committed => {
+                    if (!committed && this.currentSceneId === sceneId && this._charUpdateId === updateId && oldImg.isConnected !== false) {
+                        oldImg.src = result.img.src;
+                        commitOldImg();
                     }
+                    return committed;
                 }));
             } else {
                 if (oldImg) oldImg.remove();
