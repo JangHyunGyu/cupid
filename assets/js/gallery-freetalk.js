@@ -1465,6 +1465,16 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 err.__staleTurnHandled = true;
             }
             if (!err?.__staleTurnHandled && isControlBlocked) {
+                window.recordCupidVisibleChat?.({
+                    charId: requestCharKey,
+                    role: 'user',
+                    content: finalContent,
+                    sessionId: 'gallery-freetalk',
+                    turnId: requestContext?.turnMeta?.turnId || err?.turnId || '',
+                    playerName: this.progress?.getPlayerName?.() || '',
+                    responseMetadata: err,
+                    logSource: 'control-blocked'
+                });
                 const notice = err?.userMessage || GalleryFreeTalkCore.getControlBlockedNotice?.(this.lang) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 if (nameTag) nameTag.textContent = failedTurnName;

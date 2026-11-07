@@ -1894,6 +1894,9 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
                 userMessage: payload?.message || '',
                 inputHistory: payload?.inputHistory || { version: 1, treatment: 'unspoken_control', excludeCurrent: true },
                 turnId: payload?.turnId || '',
+                model: payload?.model || '',
+                providerRoute: payload?.providerRoute || payload?.provider || '',
+                outputLanguage: payload?.outputLanguage || '',
             });
         }
         if (payload?.retryExhausted === true
@@ -1928,6 +1931,10 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
             error.reason = 'INPUT_CONTROL_BLOCKED';
             error.userMessage = payload?.message || '';
             error.inputHistory = payload?.inputHistory || { version: 1, treatment: 'unspoken_control', excludeCurrent: true };
+            error.turnId = payload?.turnId || '';
+            error.model = payload?.model || '';
+            error.providerRoute = payload?.providerRoute || payload?.provider || '';
+            error.outputLanguage = payload?.outputLanguage || '';
         }
         error.retryExhausted = response?.headers?.get?.('x-ai-retry-exhausted') === 'true'
             || payload?.retryExhausted === true;

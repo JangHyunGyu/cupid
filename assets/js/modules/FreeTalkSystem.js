@@ -2150,6 +2150,16 @@ class FreeTalkSystem {
             }
             if (isControlBlocked) {
                 const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
+                window.recordCupidVisibleChat?.({
+                    charId: charKey,
+                    role: 'user',
+                    content: finalContent,
+                    sessionId: requestSceneId,
+                    turnId: requestContext?.turnMeta?.turnId || error?.turnId || '',
+                    conversationDay: this.stateManager?.currentDay,
+                    responseMetadata: error,
+                    logSource: 'control-blocked'
+                });
                 const notice = error?.userMessage || CupidFreeTalkCore.getControlBlockedNotice?.(langErr) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 this.uiManager.updateNameTag(failedTurnName);
@@ -2848,6 +2858,18 @@ class FreeTalkSystem {
             }
             if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') return;
             if (isControlBlocked) {
+                window.recordCupidVisibleChat?.({
+                    charId: 'group',
+                    role: 'user',
+                    content: finalContent,
+                    sessionId: requestSceneId,
+                    turnId: requestContext?.turnMeta?.turnId || error?.turnId || '',
+                    speakerId: '__player__',
+                    participants: this.groupParticipants,
+                    conversationDay: this.stateManager?.currentDay,
+                    responseMetadata: error,
+                    logSource: 'control-blocked'
+                });
                 const notice = error?.userMessage || CupidFreeTalkCore.getControlBlockedNotice?.(lang) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 this.uiManager.updateNameTag(failedTurnName);
