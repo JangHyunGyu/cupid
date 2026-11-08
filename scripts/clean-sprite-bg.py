@@ -75,7 +75,8 @@ def detect_silver_hair(rgba):
 
 def recover_silver_hair_locks(rgba):
     """
-    은발/백발 캐릭터의 외곽 잔머리·옆머리 선화(hair_lines)와 두부 본체 사이의 반열린 루프 및 속 빈 구멍을 형태학적으로 닫아 순백색/은색 머리카락 결을 100% 불투명하게 복원
+    은발/백발 캐릭터의 외곽 잔머리·옆머리 선화(hair_lines)와 두부 본체 사이의 반열린 루프 및 속 빈 구멍을 닫고,
+    순백색(#FFFFFF) 캔버스 원본인 경우 포토샵 Remove-White-Matte 방식의 선화 기반 외곽 플러드필 + 서브픽셀 알파/색상 역산(Unmix)으로 은발 결을 100% 보존·정리
     """
     import cv2
     out = rgba.copy()
@@ -93,6 +94,49 @@ def recover_silver_hair_locks(rgba):
     sat = cmax - cmin
     lum = 0.299 * r + 0.587 * g + 0.114 * b
     yy, xx = np.mgrid[0:h, 0:w]
+
+    # 순백색(#FFFFFF) 배경 원본인 경우: 외곽 순백색 여백 플러드필 + 2.2px 선화 경계 서브픽셀 역산(Photoshop Remove-White-Matte)
+    top_corners_white = (lum[0, 0] >= 250.0) and (lum[0, w - 1] >= 250.0) and (sat[0, 0] <= 5.0)
+    if top_corners_white:
+        is_pure_white = (lum >= 252.5) & (sat <= 3.0)
+        k2 = np.ones((2, 2), dtype=np.uint8)
+        barrier = cv2.dilate((~is_pure_white).astype(np.uint8), k2, iterations=1) > 0
+        walkable = (~barrier).astype(np.uint8)
+        num_l, labels, stats, _ = cv2.connectedComponentsWithStats(walkable, connectivity=4)
+        ext_bg = np.zeros((h, w), dtype=bool)
+        for lbl in range(1, num_l):
+            x0, y0, cw, ch, area = stats[lbl]
+            if x0 == 0 or y0 == 0 or (x0 + cw) >= w or (y0 + ch) >= h:
+                ext_bg |= (labels == lbl)
+        ext_bg = (cv2.dilate(ext_bg.astype(np.uint8), k2, iterations=1) > 0) & is_pure_white
+
+        fg_mask = (~ext_bg).astype(np.uint8)
+        num_h, h_labels, h_stats, _ = cv2.connectedComponentsWithStats(1 - fg_mask, connectivity=4)
+        for lbl in range(1, num_h):
+            x0, y0, cw, ch, area = h_stats[lbl]
+            if x0 > 0 and y0 > 0 and (x0 + cw) < w and (y0 + ch) < h and area < int(350 * (scale ** 2)):
+                ext_bg[h_labels == lbl] = False
+
+        dist_to_ext = cv2.distanceTransform((~ext_bg).astype(np.uint8), cv2.DIST_L2, 3)
+        ps_alpha = np.where(ext_bg, 0.0, 255.0).astype(np.float32)
+        rim = (~ext_bg) & (dist_to_ext <= 2.2) & (lum > 100.0) & (sat <= 25.0)
+        local_min_lum = cv2.erode(lum, cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5)))
+        fg_lum = np.minimum(local_min_lum, 90.0)
+        rim_a = np.clip((254.0 - lum) / np.maximum(254.0 - fg_lum, 30.0), 0.0, 1.0) * 255.0
+        ps_alpha[rim] = np.minimum(ps_alpha[rim], rim_a[rim])
+
+        hair_zone = yy < int(0.385 * h)
+        a[hair_zone] = ps_alpha[hair_zone]
+        valid_rim = rim & hair_zone & (a > 1.0) & (a < 250.0)
+        a01 = np.clip(a[valid_rim] / 255.0, 0.08, 1.0)
+        r[valid_rim] = np.clip((r[valid_rim] - (1.0 - a01) * 255.0) / a01, 0.0, 255.0)
+        g[valid_rim] = np.clip((g[valid_rim] - (1.0 - a01) * 255.0) / a01, 0.0, 255.0)
+        b[valid_rim] = np.clip((b[valid_rim] - (1.0 - a01) * 255.0) / a01, 0.0, 255.0)
+        out[:, :, 0] = np.clip(np.round(r), 0, 255).astype(np.uint8)
+        out[:, :, 1] = np.clip(np.round(g), 0, 255).astype(np.uint8)
+        out[:, :, 2] = np.clip(np.round(b), 0, 255).astype(np.uint8)
+        out[:, :, 3] = np.clip(np.round(a), 0, 255).astype(np.uint8)
+        return out
 
     hair_roi = (yy < int(0.365 * h)) & (xx >= int(0.18 * w)) & (xx <= int(0.82 * w))
     near_fg = ndimage.binary_dilation(a >= 32, iterations=max(6, int(round(12 * scale))))
@@ -581,9 +625,9 @@ def sota_clean_one_shot(rgba):
         # 두부 외곽선에서 안쪽으로 8px 이상 들어간 내부 홀이거나, 피부로 둘러싸인 코/볼/입 주변 홀이면 100% 복원
         if min_d_in >= 8.0 * scale or (skin_f >= 0.45 and fh_area <= int(500 * (scale ** 2))):
             a[fh_sl][sub_fh] = 255.0
-            r[fh_sl][sub_fh] = orig_rgb[fh_sl, 0][sub_fh]
-            g[fh_sl][sub_fh] = orig_rgb[fh_sl, 1][sub_fh]
-            b[fh_sl][sub_fh] = orig_rgb[fh_sl, 2][sub_fh]
+            r[fh_sl][sub_fh] = orig_rgb[:, :, 0][fh_sl][sub_fh]
+            g[fh_sl][sub_fh] = orig_rgb[:, :, 1][fh_sl][sub_fh]
+            b[fh_sl][sub_fh] = orig_rgb[:, :, 2][fh_sl][sub_fh]
 
     # 양끝 두부 윤곽 내부의 눈·코 중심부(xl_e .. xr_e) 불투명도 최종 보장
     for y_face in range(int(0.14 * h), int(0.255 * h)):
