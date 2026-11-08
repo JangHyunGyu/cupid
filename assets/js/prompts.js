@@ -225,6 +225,7 @@ function getPromptData(lang = 'ko') {
 }
 
 window.getPromptData = getPromptData;
+window.normalizePromptCharacterKey = normalizePromptCharacterKey;
 
 function normalizePromptCharacterKey(name) {
     return ({
@@ -270,7 +271,7 @@ function normalizePromptCharacterKey(name) {
         "dain": "Dain",
         "teacher": "Teacher",
         "nurse": "Nurse",
-        "haeun": "Haeun"
+        "haeun": "Haeun", "seoyeon": "Seoyeon", "minsu": "Minsu", "이서연": "Seoyeon", "신유나": "Yuna", "강다인": "Dain", "윤하은": "Haeun", "민수": "Minsu", "박민수": "Minsu", "담임 선생님": "Teacher", "선생님": "Teacher", "보건 선생님": "Nurse", "보건교사": "Nurse", "양호 선생님": "Nurse", "양호선생님": "Nurse", "Lee Seoyeon": "Seoyeon", "Shin Yuna": "Yuna", "Kang Dain": "Dain", "Yoon Haeun": "Haeun", "Minsu": "Minsu", "Park Minsu": "Minsu", "Docente de la clase": "Teacher", "Profesora tutora": "Teacher", "Enfermera escolar": "Nurse", "Professora responsável pela turma": "Teacher", "Professora da turma": "Teacher", "Enfermeira escolar": "Nurse", "イ・ソヨン": "Seoyeon", "シン・ユナ": "Yuna", "カン・ダイン": "Dain", "ユン・ハウン": "Haeun", "ミンス": "Minsu", "パク・ミンス": "Minsu", "保健の先生": "Nurse", "Schulgesundheitslehrerin": "Nurse", "Krankenschwester": "Nurse", "书妍": "Seoyeon", "李书妍": "Seoyeon", "由娜": "Yuna", "申由娜": "Yuna", "多因": "Dain", "姜多因": "Dain", "夏恩": "Haeun", "尹夏恩": "Haeun", "珉洙": "Minsu", "朴珉洙": "Minsu", "敏秀": "Minsu", "班主任": "Teacher", "班主任老师": "Teacher", "老师": "Teacher", "保健老师": "Nurse", "校医": "Nurse"
     })[name] || name;
 }
 

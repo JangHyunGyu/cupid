@@ -2293,7 +2293,7 @@ class FreeTalkSystem {
         for (const conversation of parsed.conversations) {
             const rawName = String(conversation?.name || '').trim();
             const participant = byName.get(rawName.toLowerCase())
-                || this.groupParticipants.find(item => (this.charNameMap[rawName] || rawName) === item.id);
+                || this.groupParticipants.find(item => (this.charNameMap[rawName] || window.normalizePromptCharacterKey?.(rawName) || rawName) === item.id);
             if (!participant || seen.has(participant.id)) continue;
             const segments = this._sanitizeSegmentsPlaceholders(this.normalizeSegments(conversation.segments));
             if (!segments?.length) continue;
@@ -3364,8 +3364,8 @@ class FreeTalkSystem {
         }
         if (!window.CHARACTER_EXPRESSIONS) return;
         const charExprs = typeof getCharacterExpressionSet === 'function'
-            ? getCharacterExpressionSet(scene.name)
-            : window.CHARACTER_EXPRESSIONS[scene.name];
+            ? getCharacterExpressionSet(this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name, scene.name)
+            : (window.CHARACTER_EXPRESSIONS[this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name] || window.CHARACTER_EXPRESSIONS[scene.name]);
         const name = CupidFreeTalkCore.normalizeAvailableExpression(
             exprName,
             Object.keys(charExprs || {})
@@ -3535,8 +3535,8 @@ class FreeTalkSystem {
             if (window.CHARACTER_EXPRESSIONS) {
                 // 현재 캐릭터의 표정 목록 가져오기
                 const charExprs = typeof getCharacterExpressionSet === 'function'
-                    ? getCharacterExpressionSet(scene.name)
-                    : window.CHARACTER_EXPRESSIONS[scene.name];
+                    ? getCharacterExpressionSet(this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name, scene.name)
+                    : (window.CHARACTER_EXPRESSIONS[this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name] || window.CHARACTER_EXPRESSIONS[scene.name]);
 
                 // 해당 표정이 정의되어 있으면 이미지 변경
                 if (charExprs && charExprs[exprName]) {

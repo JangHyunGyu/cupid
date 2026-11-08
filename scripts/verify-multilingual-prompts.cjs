@@ -1128,4 +1128,5 @@ for (const lang of languages) {
 
 verifyLocalizedFreeTalkInventory();
 
+for (const [alias, expectedKey] of [['书妍','Seoyeon'],['李书妍','Seoyeon'],['由娜','Yuna'],['申由娜','Yuna'],['多因','Dain'],['姜多因','Dain'],['夏恩','Haeun'],['尹夏恩','Haeun'],['班主任','Teacher'],['保健老师','Nurse'],['Docente de la clase','Teacher'],['Profesora tutora','Teacher'],['Enfermera escolar','Nurse'],['Professora responsável pela turma','Teacher'],['Enfermeira escolar','Nurse'],['Schulgesundheitslehrerin','Nurse'],['이서연','Seoyeon'],['신유나','Yuna'],['강다인','Dain'],['윤하은','Haeun'],['담임 선생님','Teacher'],['보건 선생님','Nurse'],['박민수','Minsu'],['珉洙','Minsu']]) assert(context.window.normalizePromptCharacterKey(alias) === expectedKey, `Mismatch for ${alias} -> ${expectedKey}`);
 console.log(`Verified ${languages.length} non-Korean languages across ${characters.length} characters, plus ${activeFreeTalkIds.length} active scene prompts in all 7 languages.`);
