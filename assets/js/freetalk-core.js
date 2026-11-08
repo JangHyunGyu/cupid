@@ -2124,11 +2124,11 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
             if (!finalPayload && buffer.trim()) await processEvent(buffer);
         } catch (error) {
             if (buffer.trim()) await processEvent(buffer);
-            if (receivedSegmentPreview && !['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason)
+            if (receivedSegmentPreview && !['SAFETY_BLOCKED', 'STALE_TURN', 'INPUT_CONTROL_BLOCKED'].includes(error?.reason) && !error?.isControlBlocked
                 && !(error?.name === 'AbortError' && !wasTimedOut())) {
                 return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
             }
-            if (error?.retryExhausted || ['SAFETY_BLOCKED', 'STALE_TURN'].includes(error?.reason) || (error?.name === 'AbortError' && !wasTimedOut())) throw error;
+            if (error?.retryExhausted || error?.isControlBlocked || ['SAFETY_BLOCKED', 'STALE_TURN', 'INPUT_CONTROL_BLOCKED'].includes(error?.reason) || (error?.name === 'AbortError' && !wasTimedOut())) throw error;
             if (presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
             const existingReply = getCompleteDisplayableStreamReply(rawContent);
             if (!existingReply && presentation) return makeAiDisplayCompletion(rawContent || partialEvent, {}, { ...presentation, truncated: true });

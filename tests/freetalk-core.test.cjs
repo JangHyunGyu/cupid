@@ -2435,3 +2435,36 @@ test('leaving a group free talk during its opening stops quietly instead of thro
     assert.deepEqual(typed, ['first line'], 'the second opening line must not play after leaving');
     assert.equal(committed, 0, 'a stale opening must not commit a checkpoint');
 });
+
+test('readChatCompletionStream rethrows INPUT_CONTROL_BLOCKED instead of returning ellipsis displayFallback', async () => {
+    const blockedFrame = {
+        turnId: 'cupid_blocked_turn_1',
+        error: 'INPUT_CONTROL_BLOCKED',
+        reason: 'INPUT_CONTROL_BLOCKED',
+        controlBlocked: true,
+        model: 'microsoft/microsoft-decision-1',
+        providerRoute: 'microsoft-decision-azure',
+        outputLanguage: 'ko',
+        message: '최면·약물·호감도나 기억 조작, 상대의 대사·감정·신체 상태를 마음대로 정하는 내용은 전달되지 않습니다.',
+        final: true,
+        segmentStream: true
+    };
+    const sseText = `data: ${JSON.stringify(blockedFrame)}\n\ndata: [DONE]\n\n`;
+    const encoder = new TextEncoder();
+    const response = new Response(new ReadableStream({
+        start(controller) {
+            controller.enqueue(encoder.encode(sseText));
+            controller.close();
+        }
+    }), { status: 200, headers: { 'content-type': 'text/event-stream' } });
+    await assert.rejects(
+        () => core.readChatCompletionStream(response, { presentation: { appType: 'cupid', chatMode: 'single' } }),
+        (err) => {
+            assert.equal(err.reason, 'INPUT_CONTROL_BLOCKED');
+            assert.equal(err.isControlBlocked, true);
+            assert.equal(err.model, 'microsoft/microsoft-decision-1');
+            assert.equal(err.providerRoute, 'microsoft-decision-azure');
+            return true;
+        }
+    );
+});
