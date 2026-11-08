@@ -117,6 +117,25 @@ def recover_silver_hair_locks(rgba):
             if x0 > 0 and y0 > 0 and (x0 + cw) < w and (y0 + ch) < h and area < int(350 * (scale ** 2)):
                 ext_bg[h_labels == lbl] = False
 
+        # 외곽 잔머리 루프(flyaway hair loop) 내부에 갇힌 순백색(#FFFFFF) 배경 여백 포켓 제거
+        dist_from_ext0 = cv2.distanceTransform((~ext_bg).astype(np.uint8), cv2.DIST_L2, 3)
+        in_crown_highlight = (
+            ((xx >= int(0.330 * w)) & (xx <= int(0.742 * w)) & (yy <= int(0.042 * h)))
+            | ((xx >= int(0.378 * w)) & (xx <= int(0.742 * w)) & (yy <= int(0.218 * h)))
+        )
+        in_face_or_neck_core = (
+            ((((xx - 0.473 * w) / (0.117 * w)) ** 2 + ((yy - 0.221 * h) / (0.098 * h)) ** 2) <= 1.0)
+            | ((xx >= int(0.347 * w)) & (xx <= int(0.655 * w)) & (yy >= int(0.221 * h)) & (yy <= int(0.404 * h)) & (dist_from_ext0 > 12.0 * scale))
+        )
+        cand_pocket = (lum >= 250.5) & (sat <= 4.0) & (~ext_bg) & (~(in_crown_highlight | in_face_or_neck_core)) & (yy < int(0.42 * h))
+        num_p, p_labels, p_stats, _ = cv2.connectedComponentsWithStats(cand_pocket.astype(np.uint8), connectivity=8)
+        for lbl in range(1, num_p):
+            if p_stats[lbl, cv2.CC_STAT_AREA] < max(12, int(18 * (scale ** 2))):
+                continue
+            comp = p_labels == lbl
+            if float(dist_from_ext0[comp].min()) <= 15.0 * scale and float(dist_from_ext0[comp].max()) <= 65.0 * scale:
+                ext_bg |= comp
+
         dist_to_ext = cv2.distanceTransform((~ext_bg).astype(np.uint8), cv2.DIST_L2, 3)
         ps_alpha = np.where(ext_bg, 0.0, 255.0).astype(np.float32)
         rim = (~ext_bg) & (dist_to_ext <= 2.2) & (lum > 100.0) & (sat <= 25.0)
