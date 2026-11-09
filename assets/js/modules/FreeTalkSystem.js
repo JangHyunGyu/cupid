@@ -744,7 +744,7 @@ class FreeTalkSystem {
             "llamada", "teléfono", "enviar",
             "appel", "téléphone", "envoyer",
             "nachricht", "anruf", "telefon", "chat", "senden",
-            "mensagem", "ligação", "telefone", "enviar"
+            "mensagem", "ligação", "telefone", "enviar", "連絡", "メッセージ", "電話", "通話", "チャット", "送信", "联系", "消息", "电话", "通话", "短信", "发送", "发消息"
         ];
         const isRemote = scene.isRemote === true || (scene.isRemote !== false && remoteKeywords.some(k =>
             (scene.context && scene.context.toLowerCase().includes(k)) ||
@@ -2470,7 +2470,7 @@ class FreeTalkSystem {
                     source: 'user',
                     fallbackCause: scene?.groupAftermathCause || (lang === 'ko'
                         ? '함께 나눈 대화에서 사용자가 남긴 말이나 행동'
-                        : 'the user’s words or actions during the group conversation')
+                        : ({ ja: '一緒に交わした会話でユーザーが残した言葉や行動', es: 'las palabras o acciones del usuario durante la conversación grupal', fr: 'les paroles ou les actes de l’utilisateur pendant la conversation de groupe', de: 'die Worte oder Handlungen des Nutzers während des Gruppengesprächs', pt: 'as palavras ou ações do usuário durante a conversa em grupo', zh: '在共同对话中用户留下的话语或行动' }[lang] || 'the user’s words or actions during the group conversation'))
                 }
             );
             if (!displayFallback) this.stateManager.setRelationshipAftermath?.(conversation.speakerId, nextAftermath);
@@ -2953,7 +2953,7 @@ class FreeTalkSystem {
             [/school-uniform hem/gi, 'volleyball-jersey hem'],
             [/school-uniform sleeve/gi, 'black arm sleeve'],
             [/school skirt/gi, 'sports shorts'],
-            [/school uniform/gi, 'volleyball uniform']
+            [/school uniform/gi, 'volleyball uniform'], [/uniforme escolar/gi, 'uniforme de voleibol'], [/falda escolar/gi, 'pantalones cortos deportivos'], [/uniforme scolaire/gi, 'tenue de volley'], [/jupe d['’]uniforme/gi, 'short de sport'], [/Schuluniform/gi, 'Volleyballtrikot'], [/Uniformrock/gi, 'Sporthose'], [/saia do uniforme/gi, 'shorts esportivos'], [/(?:校服裙|制服裙)/g, '运动短裤'], [/校服/g, '排球服']
         ];
 
         return messages.map((msg) => {
@@ -3012,7 +3012,8 @@ class FreeTalkSystem {
 
         const blockedRoleNames = new Set([
             'ai', 'assistant', 'bot', 'system', 'user', 'player',
-            '사용자', '유저', '플레이어', '주인공', '캐릭터'
+            '사용자', '유저', '플레이어', '주인공', '캐릭터',
+            'ユーザー', 'プレイヤー', '主人公', 'キャラクター', 'usuario', 'jugador', 'utilisateur', 'joueur', 'benutzer', 'spieler', 'usuário', '用户', '玩家', '主角', '角色'
         ]);
 
         for (const msg of userMessages) {
@@ -3024,7 +3025,11 @@ class FreeTalkSystem {
                 text.match(/\b(?:you are|you're)\s+(?:playing\s+as\s+)?["'“”‘’]?([A-Za-z][A-Za-z0-9_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/i) ||
                 text.match(/\b(?:the player is|player is|the user is|user is|i am|i'm)\s+(?:playing\s+as\s+)?["'“”‘’]?([A-Za-z][A-Za-z0-9_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/i);
 
-            const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || '');
+            const multiMatch =
+                text.match(/(?:あなたは|君は|私は|僕は|俺は)\s*["'“”‘’「」『』]?([\p{L}\p{N}_\- ]{1,24}?)["'“”‘’「」『』]?\s*(?:です|だ|である)(?:[\s.!?。]|$)/u) ||
+                text.match(/(?:你是|我是|玩家是|用户是)\s*["'“”‘’「」『』]?([\p{L}\p{N}_\- ]{1,24}?)["'“”‘’「」『』]?(?:[\s.!?。]|$)/u) ||
+                text.match(/\b(?:eres|soy|tu es|je suis|du bist|ich bin|você é|eu sou)\s+["'“”‘’]?([\p{L}][\p{L}\p{N}_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/iu);
+            const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || multiMatch?.[1] || '');
             if (!roleName || blockedRoleNames.has(roleName.toLowerCase())) continue;
 
             const lang = String(
@@ -3136,8 +3141,8 @@ class FreeTalkSystem {
 
         // Keep stat changes internal to JSON fields. Never let them appear as character dialogue.
         out = out
-            .replace(/\bInterest\s*[+-]\s*\d+\b\.?/gi, interestText)
-            .replace(/\bAffinity\s*[+-]\s*\d+\b\.?/gi, '')
+            .replace(/\b(?:Interest|Interés|Intérêt|Interesse)\s*[+-]\s*\d+\b\.?/gi, interestText)
+            .replace(/\b(?:Affinity|Afinidad|Affinité|Zuneigung|Affinität|Afinidade)\s*[+-]\s*\d+\b\.?/gi, '')
             .replace(/\bSTAT(?:S)?\s*[+-]\s*\d+\b\.?/gi, '')
             .replace(/(?:흥미|관심)\s*[+-]\s*\d+\s*(?:이니까|이라서|라고|이라며|이라니까)?/g, (match) => (
                 /이니까|이라서/.test(match) ? '재미있으니까' :
@@ -3145,8 +3150,8 @@ class FreeTalkSystem {
                 '흥미롭네'
             ))
             .replace(/(?:호감도|호감|친밀도)\s*[+-]\s*\d+\s*(?:이니까|이라서|라고|이라며|이라니까)?/g, '')
-            .replace(/(?:興味|関心)\s*[+-]\s*\d+/g, locale === 'ja' ? '面白いね。' : interestText)
-            .replace(/(?:好感度|好感|親密度)\s*[+-]\s*\d+/g, '')
+            .replace(/(?:興味|関心)\s*[+-]\s*\d+/g, locale === 'ja' ? '面白いね。' : interestText).replace(/(?:兴趣|兴致)\s*[+-]\s*\d+/g, locale === 'zh' ? '有意思。' : interestText)
+            .replace(/(?:好感度|好感|親密度|亲密度)\s*[+-]\s*\d+/g, '')
             .replace(/(?:Δ|delta)\s*[+-]\s*\d+/gi, '')
             .replace(/\s{2,}/g, ' ')
             .trim();
@@ -3171,9 +3176,9 @@ class FreeTalkSystem {
             zh: '片刻'
         }[locale] || '잠깐';
         out = out
-            .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒|sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
-            .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, shortPause)
-            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒)\.?/g, shortPause);
+            .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?|sec(?:onds?)?|second(?:es?|s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
+            .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:es?|s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, shortPause)
+            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?)\.?/g, shortPause);
 
         return out.replace(/\s+([.?!,;:])/g, '$1').trim();
     }

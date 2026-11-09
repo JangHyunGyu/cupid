@@ -671,7 +671,7 @@ async function migrateCupidChatHistoryToD1() {
 
     // 마이그레이션 시 charId 정규화: 다국어 표시 이름 / lowercase 키 → 표준 대문자 영문 키
     // 예: '보건선생님' / 'Infirmière' / 'nurse' → 'Nurse'
-    const GALLERY_LOWERCASE_MAP = { seyoun: 'Seoyeon', yuna: 'Yuna', dain: 'Dain', teacher: 'Teacher', nurse: 'Nurse' };
+    const GALLERY_LOWERCASE_MAP = { seyoun: 'Seoyeon', yuna: 'Yuna', dain: 'Dain', haeun: 'Haeun', teacher: 'Teacher', nurse: 'Nurse' };
     function _normalizeCharId(raw) {
         if (!raw) return raw;
         if (CHAR_NAME_MAP[raw]) return CHAR_NAME_MAP[raw];

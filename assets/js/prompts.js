@@ -1715,7 +1715,8 @@ function isCupidLowInformationContinuationInput(value) {
         'ㅇ', 'ㅇㅇ', '응', '어', '음', '흠', '네', '예', '그래', '좋아', '알겠어', '계속',
         'ok', 'okay', 'yes', 'yeah', 'yep', 'mhm', 'sure', 'fine', 'go on', 'continue',
         'sí', 'si', 'vale', 'claro', 'continúa', 'はい', 'うん', 'ええ', 'そう', '続けて',
-        "d'accord", 'vas-y', 'oui', 'ja', 'weiter', 'sim', 'tá'
+        "d'accord", 'vas-y', 'oui', 'ja', 'weiter', 'sim', 'tá',
+        '继续', '嗯', '嗯嗯', '好', '好的', '行', '对', '是', '是的', '哦'
     ]).has(compact);
 }
 
@@ -2294,9 +2295,9 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
             issues.push('nurse_user_age_canon');
         }
 
-        const japaneseDoctorClaimPattern = /(?:(?:私は|私が|自分は|自分が)\s*)?(?:医者|医師|女医|ドクター)(?:です|だ(?:よ|から|けど)?|なの|として働|をして|をやって|にな(?:った|る)|だった)/u;
-        if (lang === 'ja'
-            && japaneseDoctorClaimPattern.test(combinedText)) {
+        const japaneseDoctorClaimPattern = lang === 'ja' ? /(?:(?:私は|私が|自分は|自分が)\s*)?(?:医者|医師|女医|ドクター)(?:です|だ(?:よ|から|けど)?|なの|として働|をして|をやって|にな(?:った|る)|だった)/u : /(?:(?:나는|제가|저는)\s*(?:학교\s*)?(?:의사|전문의)(?:야|예요|입니다|다)|(?:她|我|我是)(?:这所学校的)?(?:医生|医师|女医)|\b(?:i\s+am|i'm|she\s+is)\s+(?:a\s+|the\s+)?(?:school\s+)?(?:doctor|physician)\b|\b(?:soy|es)\s+(?:la\s+|una\s+)?(?:médica|doctora)(?:\s+de\s+la\s+escuela)?\b|\b(?:je\s+suis|elle\s+est)\s+(?:la\s+|une\s+)?médecin(?:\s+de\s+l'école)?\b|\b(?:ich\s+bin|sie\s+ist)\s+(?:die\s+|eine\s+)?(?:Schul)?ärztin\b|\b(?:eu\s+sou|ela\s+é)\s+(?:a\s+|uma\s+)?médica(?:\s+da\s+escola)?\b)/iu;
+        if (japaneseDoctorClaimPattern.test(combinedText)) {
+            // nurse_profession_canon checked across all languages
             issues.push('nurse_profession_canon');
         }
     }

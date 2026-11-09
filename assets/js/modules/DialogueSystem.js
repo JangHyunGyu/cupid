@@ -113,10 +113,10 @@ class DialogueSystem {
         /** 캐릭터 이름 → 이미지 파일명 매핑 (말하기 애니메이션용) */
         this.charFileMap = {
             // Korean
-            "서연": "seyoun", "유나": "yuna", "다인": "dain",
+            "서연": "seyoun", "유나": "yuna", "다인": "dain", "하은": "haeun",
             "담임선생님": "teacher", "담임": "teacher", "보건선생님": "nurse",
             // English
-            "Seoyeon": "seyoun", "Yuna": "yuna", "Dain": "dain",
+            "Seoyeon": "seyoun", "Yuna": "yuna", "Dain": "dain", "Haeun": "haeun",
             "Teacher": "teacher", "Nurse": "nurse",
             "Homeroom Teacher": "teacher", "School Nurse": "nurse",
             // Spanish
@@ -124,7 +124,7 @@ class DialogueSystem {
             // Portuguese
             "Professora": "teacher", "Enfermeira": "nurse",
             // Japanese
-            "ソヨン": "seyoun", "ユナ": "yuna", "ダイン": "dain",
+            "ソヨン": "seyoun", "ユナ": "yuna", "ダイン": "dain", "ハウン": "haeun",
             "担任先生": "teacher", "担任の先生": "teacher",
             "保健先生": "nurse", "保健室の先生": "nurse",
             // French
@@ -133,7 +133,7 @@ class DialogueSystem {
             // German
             "Klassenlehrerin": "teacher", "Lehrerin": "teacher", "Schulkrankenschwester": "nurse",
             // Chinese (Simplified)
-            "书妍": "seyoun", "由娜": "yuna", "多因": "dain",
+            "书妍": "seyoun", "由娜": "yuna", "多因": "dain", "夏恩": "haeun", "荷恩": "haeun",
             "班主任": "teacher", "保健老师": "nurse",
             // Unknown
             "???": "seyoun"
@@ -168,7 +168,7 @@ class DialogueSystem {
 
         // 주인공이나 시스템 메시지는 애니메이션 없음
         const nonCharacterNames = new Set([
-            "나", "Me", "Yo", "Moi", "Ich", "Eu", "我",
+            "나", "Me", "Yo", "Moi", "Ich", "Eu", "我", "俺", "僕", "私",
             "시스템", "System", "Sistema", "Système", "システム", "系统"
         ]);
         if (!charName || nonCharacterNames.has(charName)) {
@@ -218,7 +218,7 @@ class DialogueSystem {
 
         // 주인공/시스템 메시지인지 확인
         const isPlayer = new Set([
-            "나", "Me", "Yo", "Moi", "Ich", "Eu", "我",
+            "나", "Me", "Yo", "Moi", "Ich", "Eu", "我", "俺", "僕", "私",
             "시스템", "System", "Sistema", "Système", "システム", "系统"
         ]).has(charName);
         const charKey = charName && (this.charNameMap[charName] || charName);

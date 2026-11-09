@@ -826,7 +826,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         const blockedRoleNames = new Set([
             'ai', 'assistant', 'bot', 'system', 'user', 'player',
-            '사용자', '유저', '플레이어', '주인공', '캐릭터'
+            '사용자', '유저', '플레이어', '주인공', '캐릭터',
+            'ユーザー', 'プレイヤー', '主人公', 'キャラクター', 'usuario', 'jugador', 'utilisateur', 'joueur', 'benutzer', 'spieler', 'usuário', '用户', '玩家', '主角', '角色'
         ]);
 
         for (const msg of userMessages) {
@@ -838,7 +839,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 text.match(/\b(?:you are|you're)\s+(?:playing\s+as\s+)?["'“”‘’]?([A-Za-z][A-Za-z0-9_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/i) ||
                 text.match(/\b(?:the player is|player is|the user is|user is|i am|i'm)\s+(?:playing\s+as\s+)?["'“”‘’]?([A-Za-z][A-Za-z0-9_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/i);
 
-            const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || '');
+            const multiMatch =
+                text.match(/(?:あなたは|君は|私は|僕は|俺は)\s*["'“”‘’「」『』]?([\p{L}\p{N}_\- ]{1,24}?)["'“”‘’「」『』]?\s*(?:です|だ|である)(?:[\s.!?。]|$)/u) ||
+                text.match(/(?:你是|我是|玩家是|用户是)\s*["'“”‘’「」『』]?([\p{L}\p{N}_\- ]{1,24}?)["'“”‘’「」『』]?(?:[\s.!?。]|$)/u) ||
+                text.match(/\b(?:eres|soy|tu es|je suis|du bist|ich bin|você é|eu sou)\s+["'“”‘’]?([\p{L}][\p{L}\p{N}_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/iu);
+            const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || multiMatch?.[1] || '');
             if (!roleName || blockedRoleNames.has(roleName.toLowerCase())) continue;
 
             if (this.lang === 'ko') {
@@ -1659,18 +1664,18 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }[locale] || 'a brief pause';
 
         return text
-            .replace(/\bInterest\s*[+-]\s*\d+\b\.?/gi, interestText)
-            .replace(/\bAffinity\s*[+-]\s*\d+\b\.?/gi, '')
+            .replace(/\b(?:Interest|Interés|Intérêt|Interesse)\s*[+-]\s*\d+\b\.?/gi, interestText)
+            .replace(/\b(?:Affinity|Afinidad|Affinité|Zuneigung|Affinität|Afinidade)\s*[+-]\s*\d+\b\.?/gi, '')
             .replace(/\bSTAT(?:S)?\s*[+-]\s*\d+\b\.?/gi, '')
             .replace(/(?:흥미|관심)\s*[+-]\s*\d+/g, locale === 'ko' ? '흥미롭네' : interestText)
             .replace(/(?:호감도|호감|친밀도)\s*[+-]\s*\d+/g, '')
             .replace(/(?:興味|関心)\s*[+-]\s*\d+/g, locale === 'ja' ? '面白いね。' : interestText)
             .replace(/(?:兴趣|兴致)\s*[+-]\s*\d+/g, locale === 'zh' ? '有意思。' : interestText)
-            .replace(/(?:好感度|好感|親密度)\s*[+-]\s*\d+/g, '')
+            .replace(/(?:好感度|好感|親密度|亲密度)\s*[+-]\s*\d+/g, '')
             .replace(/(?:Δ|delta)\s*[+-]\s*\d+/gi, '')
-            .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒|sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
-            .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, shortPause)
-            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒)\.?/g, shortPause)
+            .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?|sec(?:onds?)?|second(?:es?|s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
+            .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:es?|s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, shortPause)
+            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?)\.?/g, shortPause)
             .replace(/\s{2,}/g, ' ')
             .replace(/\s+([.?!,;:])/g, '$1')
             .trim();
@@ -2783,7 +2788,7 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
             [/school-uniform sleeve/gi, 'black arm sleeve'],
             [/school skirt/gi, 'track pants'],
             [/school uniform/gi, 'sporty streetwear'],
-            [/student uniform/gi, 'sporty streetwear']
+            [/student uniform/gi, 'sporty streetwear'], [/uniforme escolar/gi, 'ropa deportiva'], [/falda escolar/gi, 'pantalones deportivos'], [/uniforme scolaire/gi, 'tenue de sport'], [/jupe d['’]uniforme/gi, 'pantalon de survêtement'], [/Schuluniform/gi, 'sportliche Freizeitkleidung'], [/Uniformrock/gi, 'Trainingshose'], [/saia do uniforme/gi, 'calça esportiva'], [/(?:校服裙|制服裙)/g, '运动裤'], [/校服/g, '运动便服']
         ];
 
         return messages.map((msg) => {
