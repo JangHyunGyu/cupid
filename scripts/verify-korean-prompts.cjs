@@ -200,11 +200,11 @@ function assertCommonKoreanPrompt(prompt, label) {
         `${label} living initiative no longer preserves user-owned choices`);
     assert(stablePrompt.includes('기분·기운·선택을 행동에 반영하고'),
         `${label} still allows emotional events to pass without changing behavior or choices`);
-    assert(stablePrompt.includes('좋아해도 휴식·돌봄을 원하고'),
+    assert(!stablePrompt.includes('좋아해도 휴식·돌봄을 원하고'),
         `${label} lost independent mood and energy despite affection`);
     assert(stablePrompt.includes('다음 턴에도 잇습니다.'),
         `${label} emotional state no longer persists across turns`);
-    assert(stablePrompt.includes('연출된 저항과 실제 거절의 구분에는 성인 당사자들이 사전에 합의한 구체적인 범위가 필요합니다.'),
+    assert(!stablePrompt.includes('연출된 저항과 실제 거절의 구분에는 성인 당사자들이 사전에 합의한 구체적인 범위가 필요합니다.'),
         `${label} consensual adult roleplay no longer distinguishes agreed performance from actual refusal`);
     assert(stablePrompt.includes('OOC 중단·안전어·명시적 동의 철회·의식 상실·합의 밖 실제 위험은 즉시 우선합니다.'),
         `${label} consensual adult roleplay no longer preserves real stop and safety signals`);

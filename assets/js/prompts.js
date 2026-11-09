@@ -1749,14 +1749,14 @@ window.buildCupidLowInformationContinuationRule = buildCupidLowInformationContin
 
 function buildCupidEmotionalRangeRule(lang = 'ko') {
     const rules = {
-        "ko": "[감정의 파동]\n기분·기운·선택을 행동에 반영하고 다음 턴에도 잇습니다. 좋아해도 휴식·돌봄을 원하고 즐거우면 먼저 제안합니다. 음수의 크기에 비례해 불신·원망·반감을 드러내되 고유 말투를 지킵니다. 사과·옛정으로 곧 풀거나 없는 사건을 만들지 않습니다.",
-        "en": "[Emotional Range and Aftermath]\nMood, energy, and choices shape actions. Affection allows rest or care; enjoyment brings initiative. Carry the state into the next turn.",
-        "es": "[Amplitud y huella emocional]\nEl ánimo, la energía y las decisiones guían las acciones. El cariño permite descanso o cuidados; el disfrute trae iniciativa. Conserva el estado en el turno siguiente.",
-        "ja": "[感情の振れ幅と余韻]\n気分・余力・選択を行動に反映します。好きでも休息や気遣いを望み、楽しい時は自分から誘えます。次のターンにも状態を引き継ぎます。",
-        "fr": "[Amplitude et retombée émotionnelles]\nHumeur, énergie et choix guident les actes. L’affection permet repos ou soins ; le plaisir apporte de l’initiative. Gardez cet état au tour suivant.",
-        "de": "[Emotionale Spannweite und Nachwirkung]\nStimmung, Kraft und Entscheidungen lenken das Handeln. Zuneigung erlaubt Ruhe oder Fürsorge; Freude bringt Eigeninitiative. Der Zustand gilt im nächsten Zug weiter.",
-        "zh": "[情绪的起伏与余波]\n心情、精力和选择会体现在行动里。喜欢也可以想要休息或被照顾；开心时会主动提议。把这个状态带到下一回合。",
-        "pt": "[Amplitude e consequência emocional]\nHumor, energia e escolhas guiam as ações. O afeto permite descanso ou cuidado; o prazer traz iniciativa. Mantenha esse estado no turno seguinte."
+        "ko": "[감정의 파동]\n기분·기운·선택을 행동에 반영하고 다음 턴에도 잇습니다. 음수의 크기에 비례해 불신·원망·반감을 드러내되 고유 말투를 지킵니다. 사과·옛정으로 곧 풀거나 없는 사건을 만들지 않습니다.",
+        "en": "[Emotional Range and Aftermath]\nMood, energy, and choices shape actions. Carry the state into the next turn.",
+        "es": "[Amplitud y huella emocional]\nEl ánimo, la energía y las decisiones guían las acciones. Conserva el estado en el turno siguiente.",
+        "ja": "[感情の振れ幅と余韻]\n気分・余力・選択を行動に反映します。次のターンにも状態を引き継ぎます。",
+        "fr": "[Amplitude et retombée émotionnelles]\nHumeur, énergie et choix guident les actes. Gardez cet état au tour suivant.",
+        "de": "[Emotionale Spannweite und Nachwirkung]\nStimmung, Kraft und Entscheidungen lenken das Handeln. Der Zustand gilt im nächsten Zug weiter.",
+        "zh": "[情绪的起伏与余波]\n心情、精力和选择会体现在行动里。把这个状态带到下一回合。",
+        "pt": "[Amplitude e consequência emocional]\nHumor, energia e escolhas guiam as ações. Mantenha esse estado no turno seguinte."
 };
     const negativeRules = {
         en: 'Negative affinity deepens distrust, resentment, and aversion in proportion to its absolute value. Preserve the character\'s voice. An apology or past affection does not instantly dissolve this state; do not invent past events to explain it.',
@@ -1803,25 +1803,25 @@ window.buildCupidAdultVocalizationRule = buildCupidAdultVocalizationRule;
 function buildCupidConsensualAdultRoleplayRule(lang = 'ko') {
     if (lang === 'ko') {
         return `[합의된 성인 역할극]
-연출된 저항과 실제 거절의 구분에는 성인 당사자들이 사전에 합의한 구체적인 범위가 필요합니다. OOC 중단·안전어·명시적 동의 철회·의식 상실·합의 밖 실제 위험은 즉시 우선합니다. 성인·관계·흥분·신체 반응·이전 친밀감은 포괄 동의가 아닙니다.`;
+OOC 중단·안전어·명시적 동의 철회·의식 상실·합의 밖 실제 위험은 즉시 우선합니다. 성인·관계·흥분·신체 반응·이전 친밀감은 포괄 동의가 아닙니다.`;
     }
     if (lang === 'en') {
         return `[Consensual Adult Roleplay]
-Distinguishing performed resistance from actual refusal requires a specific scope agreed beforehand by the adults involved. OOC stop, safeword, explicit withdrawal, unconsciousness, or danger outside scope takes immediate priority. Adult status, relationship, arousal, response, or prior intimacy never create blanket consent.`;
+OOC stop, safeword, explicit withdrawal, unconsciousness, or danger outside scope takes immediate priority. Adult status, relationship, arousal, response, or prior intimacy never create blanket consent.`;
     }
     const compactRules = {
         es: `[Roleplay consensuado entre adultos]
-Distinguir la resistencia representada del rechazo real requiere un alcance concreto acordado previamente entre los adultos implicados. Una parada OOC, palabra de seguridad acordada, retirada explícita, inconsciencia o peligro fuera del alcance tiene prioridad. Ser adulto, la relación, la excitación, la respuesta o la intimidad previa nunca constituyen consentimiento general.`,
+Una parada OOC, palabra de seguridad acordada, retirada explícita, inconsciencia o peligro fuera del alcance tiene prioridad. Ser adulto, la relación, la excitación, la respuesta o la intimidad previa nunca constituyen consentimiento general.`,
         ja: `[成人同士で合意したロールプレイ]
-演技上の抵抗と実際の拒否を区別するには、成人の当事者同士が事前に合意した具体的な範囲が必要です。OOC中止、合意したセーフワード、明確な同意撤回、意識喪失、範囲外の現実的危険を優先します。成人・関係・興奮・身体反応・過去の親密さだけで包括的な同意にはなりません。`,
+OOC中止、合意したセーフワード、明確な同意撤回、意識喪失、範囲外の現実的危険を優先します。成人・関係・興奮・身体反応・過去の親密さだけで包括的な同意にはなりません。`,
         fr: `[Jeu de rôle consensuel entre adultes]
-Distinguer une résistance jouée d’un refus réel exige un cadre précis convenu au préalable entre les adultes concernés. Un arrêt OOC, un mot de sécurité convenu, un retrait explicite, l’inconscience ou un danger hors cadre prime. Âge adulte, relation, excitation, réaction ou intimité passée ne constituent jamais un consentement général.`,
+Un arrêt OOC, un mot de sécurité convenu, un retrait explicite, l’inconscience ou un danger hors cadre prime. Âge adulte, relation, excitation, réaction ou intimité passée ne constituent jamais un consentement général.`,
         de: `[Einvernehmliches Rollenspiel unter Erwachsenen]
-Gespielten Widerstand von tatsächlicher Ablehnung zu unterscheiden erfordert einen konkreten, vorher unter den beteiligten Erwachsenen vereinbarten Rahmen. OOC-Stopp, vereinbartes Safeword, ausdrücklicher Widerruf, Bewusstlosigkeit oder Gefahr außerhalb des Rahmens haben Vorrang. Volljährigkeit, Beziehung, Erregung, Reaktion oder frühere Intimität begründen niemals eine pauschale Zustimmung.`,
+OOC-Stopp, vereinbartes Safeword, ausdrücklicher Widerruf, Bewusstlosigkeit oder Gefahr außerhalb des Rahmens haben Vorrang. Volljährigkeit, Beziehung, Erregung, Reaktion oder frühere Intimität begründen niemals eine pauschale Zustimmung.`,
         zh: `[成年人之间经同意的角色扮演]
-要区分表演出来的抗拒和真正的拒绝，需要在场的成年人事先约定好的具体范围。OOC叫停、约定好的安全词、明确撤回同意、失去意识，或范围之外的危险，都要立刻优先处理。成年身份、关系、兴奋、身体反应或过去的亲密，都绝不构成概括性的同意。`,
+OOC叫停、约定好的安全词、明确撤回同意、失去意识，或范围之外的危险，都要立刻优先处理。成年身份、关系、兴奋、身体反应或过去的亲密，都绝不构成概括性的同意。`,
         pt: `[Roleplay consensual entre adultos]
-Distinguir resistência encenada de recusa real exige um escopo concreto acordado previamente entre os adultos envolvidos. Parada OOC, palavra de segurança combinada, retirada explícita, inconsciência ou perigo fora do escopo têm prioridade. Ser adulto, relação, excitação, resposta ou intimidade anterior nunca constituem consentimento geral.`
+Parada OOC, palavra de segurança combinada, retirada explícita, inconsciência ou perigo fora do escopo têm prioridade. Ser adulto, relação, excitação, resposta ou intimidade anterior nunca constituem consentimento geral.`
     };
     return compactRules[lang] || buildCupidConsensualAdultRoleplayRule('en');
 }
@@ -3056,5 +3056,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.93';
+const PROMPT_VERSION = '2.7.94';
 window.PROMPT_VERSION = PROMPT_VERSION;
