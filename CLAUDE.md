@@ -120,3 +120,4 @@
 ## 기술 환경
 - 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용
 - exe, 설치 폴더, 파일 시스템 접근 절대 불가
+- **Pages 배포 주의 (영구)**: 절대 프로젝트 루트(`D:\workspace\cupid`) 외부(예: `D:\workspace`)에서 `wrangler pages deploy`를 실행하지 말 것(`functions/`가 누락되어 R2 이미지 서빙이 전부 `404`로 깨짐). 배포 후 라이브 이미지(`200 image/webp`)와 백업 뷰어·잔액 조회 API 정상 응답을 반드시 확인할 것.
