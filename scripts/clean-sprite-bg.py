@@ -85,10 +85,81 @@ def predict_sota_alpha(rgb_im, primary_model="birefnet-general", core_model="isn
     return np.clip(np.round(combined_a), 0, 255).astype(np.uint8)
 
 
-def detect_silver_hair(rgba):
+# 캐릭터별 배경 제거 및 잘림 복원 전용 프로파일 설정
+CHARACTER_PROFILES = {
+    "yuna": {
+        "silver_hair": True,
+        "remove_flyaway_pockets": True,
+        "neck_pocket_cleanup": False,
+        "protect_white_coat": False,
+        "protect_glasses": False,
+    },
+    "nurse": {
+        "silver_hair": False,
+        "remove_flyaway_pockets": False,
+        "neck_pocket_cleanup": True,
+        "protect_white_coat": True,
+        "protect_glasses": True,
+    },
+    "seoyeon": {
+        "silver_hair": False,
+        "remove_flyaway_pockets": False,
+        "neck_pocket_cleanup": True,
+        "protect_white_coat": False,
+        "protect_glasses": True,
+    },
+    "haeun": {
+        "silver_hair": False,
+        "remove_flyaway_pockets": False,
+        "neck_pocket_cleanup": True,
+        "protect_white_coat": False,
+        "protect_glasses": False,
+    },
+    "dain": {
+        "silver_hair": False,
+        "remove_flyaway_pockets": False,
+        "neck_pocket_cleanup": True,
+        "protect_white_coat": False,
+        "protect_glasses": False,
+    },
+    "teacher": {
+        "silver_hair": False,
+        "remove_flyaway_pockets": False,
+        "neck_pocket_cleanup": True,
+        "protect_white_coat": False,
+        "protect_glasses": False,
+    },
+    "minsu": {
+        "silver_hair": False,
+        "remove_flyaway_pockets": False,
+        "neck_pocket_cleanup": True,
+        "protect_white_coat": False,
+        "protect_glasses": False,
+    },
+}
+
+
+def detect_character_id(path_str=None, rgba=None):
     """
-    RGBA 배열을 받아 상단 두부 영역(y < 0.25*h, a >= 180)의 고명도·저채도 비율을 분석해 은발/백발 캐릭터 여부를 반환
+    파일 경로 문자열 또는 RGBA 이미지의 색상 특징으로부터 캐릭터 식별자(yuna, nurse, seoyeon, haeun, dain, teacher, minsu)를 반환
     """
+    if path_str:
+        norm = str(path_str).replace("\\", "/").lower()
+        for cid in CHARACTER_PROFILES:
+            if f"/{cid}/" in norm or f"_{cid}_" in norm or norm.startswith(f"{cid}/"):
+                return cid
+    if rgba is not None and detect_silver_hair(rgba):
+        return "yuna"
+    return None
+
+
+def detect_silver_hair(rgba, character_id=None):
+    """
+    캐릭터 ID 또는 RGBA 배열 상단 두부 영역(y < 0.25*h, a >= 180)의 고명도·저채도/은청색(b >= r) 비율을 분석해 은발/백발 캐릭터(유나 전용) 여부를 반환 ->
+    연보라 단발인 보건교사(nurse)가 은발로 오인되어 검정 배경 포켓이 생기는 현상을 원천 차단
+    """
+    if character_id in CHARACTER_PROFILES:
+        return CHARACTER_PROFILES[character_id]["silver_hair"]
     h, w = rgba.shape[:2]
     r = rgba[:, :, 0].astype(np.float32)
     g = rgba[:, :, 1].astype(np.float32)
@@ -101,17 +172,19 @@ def detect_silver_hair(rgba):
     head_fg = (yy < int(0.25 * h)) & (a >= 180)
     if head_fg.sum() == 0:
         return False
-    silver_ratio = float(((cmin[head_fg] >= 185) & (sat[head_fg] <= 25)).mean())
-    return silver_ratio >= 0.42
+    # 순수 무채색 백발/은발(cmin >= 200, sat <= 14) 조건으로 엄격히 제한해 연보라색(nurse) 배제
+    silver_ratio = float(((cmin[head_fg] >= 200) & (sat[head_fg] <= 14)).mean())
+    return silver_ratio >= 0.38
 
 
-def recover_silver_hair_locks(rgba):
+def recover_silver_hair_locks(rgba, character_id=None):
     """
-    은발/백발 캐릭터의 외곽 잔머리·옆머리 선화(hair_lines)와 두부 본체 사이의 반열린 루프 및 속 빈 구멍을 닫고,
-    순백색(#FFFFFF) 캔버스 원본인 경우 포토샵 Remove-White-Matte 방식의 선화 기반 외곽 플러드필 + 서브픽셀 알파/색상 역산(Unmix)으로 은발 결을 100% 보존·정리
+    은발/백발 캐릭터(yuna)의 외곽 잔머리·옆머리 선화(hair_lines)와 두부 본체 사이의 반열린 루프 및 속 빈 구멍을 닫고,
+    순백색(#FFFFFF) 캔버스 원본인 경우 포토샵 Remove-White-Matte 방식의 선화 기반 외곽 플러드필 + 서브픽셀 알파/색상 역산(Unmix)으로 은발 결을 100% 보존·정리 ->
+    이미 투명 배경이 적용된 RGBA 입력인 경우 배경의 검은 픽셀(a == 0, RGB == 0)을 머리카락 선화로 오인해 검정 덩어리를 만드는 현상을 원천 차단하고, 잔머리 루프 안쪽 순백색(#FFFFFF) 포켓만 정밀 제거
     """
     out = rgba.copy()
-    if not detect_silver_hair(out):
+    if not detect_silver_hair(out, character_id=character_id):
         return out
 
     h, w = out.shape[:2]
@@ -125,6 +198,53 @@ def recover_silver_hair_locks(rgba):
     sat = cmax - cmin
     lum = 0.299 * r + 0.587 * g + 0.114 * b
     yy, xx = np.mgrid[0:h, 0:w]
+
+    # 이미 투명 배경이 적용된 RGBA인 경우: 잔머리 루프 내부에 갇힌 순백색(#FFFFFF) 배경 포켓만 정밀 제거하고, 투명 픽셀(a==0, RGB==0)은 절대 불투명화하지 않음
+    top_corners_transparent = (a[0, 0] < 10.0) and (a[0, w - 1] < 10.0)
+    if top_corners_transparent:
+        ext_bg = a < 25.0
+        dist_from_ext0 = ndimage.distance_transform_edt(~ext_bg)
+        in_face_or_neck_core = (
+            ((((xx - 0.473 * w) / (0.117 * w)) ** 2 + ((yy - 0.221 * h) / (0.098 * h)) ** 2) <= 1.0)
+            | ((xx >= int(0.347 * w)) & (xx <= int(0.655 * w)) & (yy >= int(0.221 * h)) & (yy <= int(0.404 * h)) & (dist_from_ext0 > 12.0 * scale))
+        )
+        # 정수리 은발 하이라이트(대형 단일 연결 성분, area > 5000)가 사각 박스에 잘려 조각나지 않도록 분할 전 전체 연결 성분을 먼저 라벨링
+        cand_pocket = (a >= 120.0) & (cmin >= 246.0) & (sat <= 6.0) & (~in_face_or_neck_core)
+        p_labels, _ = ndimage.label(cand_pocket, structure=np.ones((3, 3), dtype=bool))
+        min_p_area = max(12, int(18 * (scale ** 2)))
+        max_p_area = int(650 * (scale ** 2))
+        killed_p = np.zeros((h, w), dtype=bool)
+        for lbl_i, sl in enumerate(ndimage.find_objects(p_labels), 1):
+            if sl is None:
+                continue
+            if sl[0].start < int(0.11 * h):
+                continue
+            comp = (p_labels[sl] == lbl_i)
+            p_area = int(comp.sum())
+            if p_area < min_p_area or p_area > int(4500 * (scale ** 2)):
+                continue
+            d_sub = dist_from_ext0[sl][comp]
+            sub_cmin_mean = float(cmin[sl][comp].mean())
+            sub_sat_mean = float(sat[sl][comp].mean())
+            if p_area <= max_p_area:
+                if float(d_sub.min()) <= 3.0 * scale and float(d_sub.max()) <= 11.5 * scale and sub_cmin_mean >= 250.2:
+                    killed_p[sl] |= comp
+            elif (float(d_sub.min()) <= 1.5 * scale and float(d_sub.max()) <= 32.0 * scale and sub_cmin_mean >= 253.9 and sub_sat_mean <= 0.45) or (p_area <= int(1200 * (scale ** 2)) and float(d_sub.min()) <= 2.0 * scale and float(d_sub.max()) <= 9.5 * scale and sub_cmin_mean >= 252.5):
+                killed_p[sl] |= comp
+        if np.any(killed_p):
+            a[killed_p] = 0.0
+            p_rim = ndimage.binary_dilation(killed_p, iterations=2) & (~killed_p) & (a > 0) & (lum > 160.0) & (sat <= 20.0)
+            a[p_rim] = np.minimum(a[p_rim], np.clip((253.0 - lum[p_rim]) / 65.0, 0.0, 1.0) * 255.0)
+            valid_rim = p_rim & (a >= 16.0) & (a < 245.0)
+            a01 = np.clip(a[valid_rim] / 255.0, 0.15, 1.0)
+            r[valid_rim] = np.clip((r[valid_rim] - (1.0 - a01) * 255.0) / a01, 0.0, 255.0)
+            g[valid_rim] = np.clip((g[valid_rim] - (1.0 - a01) * 255.0) / a01, 0.0, 255.0)
+            b[valid_rim] = np.clip((b[valid_rim] - (1.0 - a01) * 255.0) / a01, 0.0, 255.0)
+        out[:, :, 0] = np.clip(np.round(r), 0, 255).astype(np.uint8)
+        out[:, :, 1] = np.clip(np.round(g), 0, 255).astype(np.uint8)
+        out[:, :, 2] = np.clip(np.round(b), 0, 255).astype(np.uint8)
+        out[:, :, 3] = np.clip(np.round(a), 0, 255).astype(np.uint8)
+        return out
 
     # 순백색(#FFFFFF) 배경 원본인 경우: 외곽 순백색 여백 플러드필 + 2.2px 선화 경계 서브픽셀 역산(Photoshop Remove-White-Matte)
     top_corners_white = (lum[0, 0] >= 250.0) and (lum[0, w - 1] >= 250.0) and (sat[0, 0] <= 5.0)
@@ -575,17 +695,149 @@ def generate_verification_sheet(rgba, sheet_path, ref_rgba=None):
     canvas.save(sheet_path, quality=92)
 
 
-def sota_clean_one_shot(rgba):
+def restore_clipped_contours_by_lineart(rgba, orig_rgb=None):
     """
-    RGBA 배열을 받아 원샷(One-Shot) 무결점 배경 정리 파이프라인을 수행:
-    1. 은발 캐릭터인 경우 외곽 은발 잔머리 루프(recover_silver_hair_locks) 복원.
+    원본 RGB에 선화(Line-art)나 채색이 온전히 존재함에도 AI 배경 제거 모델이 흰 가운 소매·흰 셔츠 카라·리본·창백한 손가락·외곽 잔머리 가닥을 배경으로 오인해 잘라낸 영역을 전신 선화 장벽(Line-Art Contour Barrier) 기반으로 자동 복원:
+    1. 선화/비순백색 장벽으로 외부 여백과 격리된 닫힌 내부 공간(흰 셔츠/가운/소매/피부/안경/치아)을 좌표 무관 100% 불투명(a=255) 및 원본 RGB로 복원.
+    2. 캐릭터 본체에서 바깥으로 뻗어나간 얇은 머리카락/옷깃/장식 선화 가닥(lum < 238 또는 채도 >= 14)이 AI 마스크에서 끊긴 경우 본체 연결 성분을 따라 서브픽셀 안티앨리어싱 알파와 원본 RGB를 복원.
+    """
+    out = rgba.copy()
+    h, w = out.shape[:2]
+    scale = max(1.0, w / 1152.0)
+
+    src_rgb = orig_rgb.astype(np.float32) if orig_rgb is not None else out[:, :, :3].astype(np.float32)
+    r = src_rgb[:, :, 0]
+    g = src_rgb[:, :, 1]
+    b = src_rgb[:, :, 2]
+    a = out[:, :, 3].astype(np.float32)
+
+    # 이미 투명 배경이 적용된 RGBA 입력인지, 아니면 순백색(#FFFFFF) 배경 원본 RGB 입력인지 판별
+    top_corners_transparent = (a[0, 0] < 10.0) and (a[0, w - 1] < 10.0)
+    zero_black = (a == 0.0) & (r == 0.0) & (g == 0.0) & (b == 0.0)
+    r_bg = np.where(zero_black, 255.0, r)
+    g_bg = np.where(zero_black, 255.0, g)
+    b_bg = np.where(zero_black, 255.0, b)
+
+    cmin = np.minimum(np.minimum(r_bg, g_bg), b_bg)
+    cmax = np.maximum(np.maximum(r_bg, g_bg), b_bg)
+    sat = cmax - cmin
+    lum = 0.299 * r_bg + 0.587 * g_bg + 0.114 * b_bg
+    gy, gx = np.gradient(lum)
+    grad = np.hypot(gx, gy)
+
+    main_fg = a >= 180.0
+    if not np.any(main_fg):
+        return out
+
+    # 1. 선화 및 비순백색 장벽(Line-Art & Non-White Barrier) 검출
+    #    이미 외곽이 투명(a < 16)으로 정리된 RGBA의 경우, 외부 여백과 2x2 클로징으로 작은 틈새가 브릿징되어 정상 반투명 테두리가 닫히는 현상을 막기 위해
+    #    실제 불투명 전경(a >= 180) 또는 투명 영역 아래에 숨겨진 실제 원본 선화/채색((a == 0) & (~zero_black) & (lum < 245))만 클로징 없이 장벽으로 인정
+    if top_corners_transparent:
+        hidden_real_paint = (~zero_black) & (a == 0.0) & ((lum < 245.0) | (sat >= 12.0))
+        valid_barrier = main_fg | hidden_real_paint
+    else:
+        is_flat_white_bg = (lum >= 251.5) & (sat <= 4.5) & (grad <= 6.0) & (a < 180.0)
+        line_or_paint_barrier = (~is_flat_white_bg) | main_fg
+        k2 = np.ones((2, 2), dtype=bool)
+        closed_barrier = ndimage.binary_closing(line_or_paint_barrier, structure=k2, iterations=1)
+        near_main_24 = ndimage.binary_dilation(main_fg, iterations=max(8, int(round(18 * scale))))
+        valid_barrier = ndimage.binary_propagation(main_fg, mask=closed_barrier & near_main_24)
+
+    # 캔버스 테두리(x=0, y=0, x=w-1, y=h-1)와 연결된 진짜 외부 배경만 플러드필로 추출
+    walkable_bg = ~valid_barrier
+    bg_lbl, _ = ndimage.label(walkable_bg)
+    true_ext_bg = np.zeros((h, w), dtype=bool)
+    for lbl_i, sl in enumerate(ndimage.find_objects(bg_lbl), 1):
+        if sl is None:
+            continue
+        if sl[0].start == 0 or sl[1].start == 0 or sl[0].stop >= h or sl[1].stop >= w:
+            true_ext_bg[sl] |= (bg_lbl[sl] == lbl_i)
+
+    # 선화 폐곡선 안쪽에 갇혀 외부 여백과 분리된 내부 영역 중 AI가 잘못 파먹은 영역(a < 235) 검사
+    # (단, 외부 배경과 3px 이내로 맞닿은 정상 반투명 안티앨리어싱 테두리는 제외하고 실제 내부 침식 구멍만 대상)
+    dist_to_ext_bg = ndimage.distance_transform_edt(~true_ext_bg)
+    trapped_inside_contour = (~true_ext_bg) & (dist_to_ext_bg >= 3.0) & (a < 235.0)
+    in_lbl, _ = ndimage.label(trapped_inside_contour)
+    max_sleeve_or_collar_hole = int(18000 * (scale ** 2))
+
+    for lbl_i, sl in enumerate(ndimage.find_objects(in_lbl), 1):
+        if sl is None:
+            continue
+        comp = (in_lbl[sl] == lbl_i)
+        area = int(comp.sum())
+        if area == 0 or area > max_sleeve_or_collar_hole:
+            continue
+
+        sub_lum = lum[sl][comp]
+        sub_sat = sat[sl][comp]
+        sub_a = a[sl][comp]
+        # 이미 투명 배경이 적용된 스프라이트에서 어두운 머리카락·입김·목 그림자 틈새(평균 명도 < 185 또는 최소 알파 < 60)는 침식 홀이 아니므로 원형 보존
+        if float(zero_black[sl][comp].mean()) >= 0.20 or (top_corners_transparent and (float(sub_a.min()) < 60.0 or float(sub_lum.mean()) < 185.0)):
+            continue
+
+        # 주변 경계(border) 픽셀 분석: 선화·피부·어두운 의상으로 둘러싸인 내부 홀(흰 셔츠/가운/소매/치아/안경)인지, 팔-몸통 사이 실제 배경 구멍인지 구분
+        y0_b, y1_b = max(0, sl[0].start - 3), min(h, sl[0].stop + 3)
+        x0_b, x1_b = max(0, sl[1].start - 3), min(w, sl[1].stop + 3)
+        sub_m = (in_lbl[y0_b:y1_b, x0_b:x1_b] == lbl_i)
+        rim_b = ndimage.binary_dilation(sub_m, iterations=2) & (~sub_m)
+        if rim_b.any():
+            rim_a_mean = float(a[y0_b:y1_b, x0_b:x1_b][rim_b].mean())
+            rim_lum_mean = float(lum[y0_b:y1_b, x0_b:x1_b][rim_b].mean())
+        else:
+            rim_a_mean, rim_lum_mean = 255.0, 128.0
+
+        # 팔-몸통 사이 넓은 배경 구멍(area > 2200*scale^2 이고 내부가 95% 이상 순백색 평탄면)만 투명으로 유지하고,
+        # 선화/의상/피부로 둘러싸인 흰 셔츠 카라·소매 커프스·리본·안경·손가락·치아는 100% 불투명 복원
+        pure_white_ratio = float(((sub_lum >= 252.0) & (sub_sat <= 3.0)).mean())
+        if area > int(2200 * (scale ** 2)) and pure_white_ratio >= 0.96 and rim_lum_mean < 70.0:
+            continue
+
+        if rim_a_mean >= 180.0 and float((sub_a > 0).mean()) >= 0.35:
+            a[sl][comp] = 255.0
+            out[:, :, 0][sl][comp] = np.clip(np.round(r[sl][comp]), 0, 255).astype(np.uint8)
+            out[:, :, 1][sl][comp] = np.clip(np.round(g[sl][comp]), 0, 255).astype(np.uint8)
+            out[:, :, 2][sl][comp] = np.clip(np.round(b[sl][comp]), 0, 255).astype(np.uint8)
+
+    # 2. 본체 외곽에서 끊어진 잔머리 가닥·옷깃 선화·손가락 윤곽선(Clipped Strands & Contours) 연속 복원
+    #    순백색 배경 원본인 경우에만 끊긴 가닥 복원 수행 (이미 정상 안티앨리어싱된 반투명 테두리 보호)
+    if not top_corners_transparent:
+        near_main_14 = ndimage.binary_dilation(a >= 180.0, iterations=max(5, int(round(12 * scale))))
+        visible_strand_px = (~zero_black) & near_main_14 & ((lum < 236.0) | (sat >= 15.0)) & (grad >= 5.0)
+        connected_strands = ndimage.binary_propagation(a >= 180.0, mask=(a >= 180.0) | visible_strand_px)
+        newly_recovered_strand = connected_strands & (a < 210.0)
+
+        if np.any(newly_recovered_strand):
+            strand_alpha = np.clip((252.0 - lum) / (252.0 - 115.0), 0.20, 1.0) * 255.0
+            colored_boost = np.clip(sat / 32.0, 0.0, 1.0) * 255.0
+            target_a = np.maximum(a, np.maximum(strand_alpha, colored_boost))
+            a[newly_recovered_strand] = target_a[newly_recovered_strand]
+
+            a01 = np.clip(a[newly_recovered_strand] / 255.0, 0.20, 1.0)
+            out[:, :, 0][newly_recovered_strand] = np.clip(np.round((r[newly_recovered_strand] - (1.0 - a01) * 255.0) / a01), 0, 255).astype(np.uint8)
+            out[:, :, 1][newly_recovered_strand] = np.clip(np.round((g[newly_recovered_strand] - (1.0 - a01) * 255.0) / a01), 0, 255).astype(np.uint8)
+            out[:, :, 2][newly_recovered_strand] = np.clip(np.round((b[newly_recovered_strand] - (1.0 - a01) * 255.0) / a01), 0, 255).astype(np.uint8)
+
+    out[:, :, 3] = np.clip(np.round(a), 0, 255).astype(np.uint8)
+    return out
+
+
+def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
+    """
+    RGBA 배열과 캐릭터 식별자(character_id)를 받아 캐릭터별 맞춤형 원샷(One-Shot) 무결점 배경 정리 파이프라인을 수행:
+    1. 은발 캐릭터(yuna)인 경우 외곽 은발 잔머리 루프(recover_silver_hair_locks) 복원 및 잔머리 루프 포켓 제거 + 전신 선화 장벽 기반 잘림 복원(restore_clipped_contours_by_lineart).
     2. 기존 투명 영역(a < 35)과 8px 이내로 맞닿은 두부·목·손 주변(y < 0.305*h) 순백색(#FFFFFF) 잔여 코너 전파 제거 + 턱 밑·손가락-목 사이(y=0.19..0.300*h) 외곽 투명 경계 인접 미세 순백색 배경 조각(<=650px) 제거.
     3. 부유 노이즈 섬 제거 + 외곽 반투명 경계(0 < a < 235) 서브픽셀 전경 색상 역산(unmix).
     4. 두부·얼굴 내부(눈동자·공막·코끝 하이라이트·치아·혀·머리띠 등, 외곽 윤곽선에서 안쪽으로 10px 이상 들어간 내부 영역 및 피부로 둘러싸인 미세 하이라이트) 100% 불투명(a=255) 및 원본 RGB 복원(코/눈 구멍 원천 차단).
     """
+    if character_id is None:
+        character_id = detect_character_id(rgba=rgba)
+    if not is_fresh_cutout and (rgba[0, 0, 3] < 10) and (rgba[0, rgba.shape[1] - 1, 3] < 10):
+        rgba = rgba.copy()
+        rgba[rgba[:, :, 3] == 0, :3] = 0
     orig_rgb = rgba[:, :, :3].copy()
-    out = recover_silver_hair_locks(rgba.copy())
-    is_silver = detect_silver_hair(out)
+    out = recover_silver_hair_locks(rgba.copy(), character_id=character_id)
+    out = restore_clipped_contours_by_lineart(out, orig_rgb=orig_rgb)
+    is_silver = detect_silver_hair(out, character_id=character_id)
     h, w = out.shape[:2]
     scale = w / 1152.0
 
@@ -602,20 +854,16 @@ def sota_clean_one_shot(rgba):
     head_filled_init = ndimage.binary_fill_holes(a >= 180)
     dist_head_in = ndimage.distance_transform_edt(head_filled_init)
     warm_skin = (a >= 150) & ((r - b) >= 18.0) & (r >= 135.0)
-    deep_face_interior = (yy >= int(0.08 * h)) & (yy <= int(0.285 * h)) & (dist_head_in >= 12.0 * scale)
+    dist_ext_init = ndimage.distance_transform_edt(~(a < 25.0))
+    deep_face_interior = (yy >= int(0.08 * h)) & (yy <= int(0.285 * h)) & (xx >= int(0.39 * w)) & (xx <= int(0.62 * w)) & (dist_ext_init >= 12.0 * scale)
 
     # 1. 기존 투명 영역(a < 35)과 인접한 상단 순백색 코너 및 턱 밑/목-손가락 사이 미세 순백색 배경 조각 제거
     if not is_silver:
-        trans_seed = a < 35
-        near_trans_8 = ndimage.binary_dilation(trans_seed, iterations=max(6, int(round(8 * scale))))
-        pure_white_corner = (yy < int(0.305 * h)) & (~deep_face_interior) & near_trans_8 & (cmin >= 242.0) & (sat <= 10.0)
-        prop_mask = ndimage.binary_propagation(trans_seed, mask=trans_seed | pure_white_corner)
-        new_eroded = prop_mask & (~trans_seed)
-        a[new_eroded] = 0.0
-
-        # 턱 밑·귀 밑·손가락-목 사이의 미세 순백색 배경 삼각형 제거 (단, 얼굴 내부 코끝 하이라이트·치아는 철저히 제외)
-        neck_band = (yy >= int(0.19 * h)) & (yy < int(0.300 * h)) & (~deep_face_interior)
-        tiny_white_cand = neck_band & (a > 0) & (cmin >= 228.0) & (sat <= 14.0) & ((r - b) <= 10.0)
+        # 턱 밑·귀 밑·목 외곽 경계(외부 투명 배경으로부터 6px 이내)의 미세 순백색 배경 삼각형 제거
+        # (near_trans 스트립으로 사전 절단하지 않고 전체 흰색 연결 성분을 먼저 라벨링하여 들어올린 팔의 흰 소매 커프스·셔츠 칼라·코끝 하이라이트·치아를 100% 보존)
+        dist_ext_tw = ndimage.distance_transform_edt(~(a < 35.0))
+        neck_band = (yy >= int(0.185 * h)) & (yy < int(0.272 * h)) & (xx >= int(0.33 * w)) & (xx <= int(0.76 * w)) & (~deep_face_interior)
+        tiny_white_cand = (a > 0) & (cmin >= 228.0) & (sat <= 14.0) & ((r - b) <= 10.0) & (~deep_face_interior)
         tw_lbl, _ = ndimage.label(tiny_white_cand)
         max_tw_area = int(650 * (scale ** 2))
         killed_tw = np.zeros((h, w), dtype=bool)
@@ -625,6 +873,11 @@ def sota_clean_one_shot(rgba):
             sub_tw = (tw_lbl[tw_sl] == tw_i)
             tw_area = int(sub_tw.sum())
             if 3 <= tw_area <= max_tw_area:
+                if not bool(neck_band[tw_sl][sub_tw].any()):
+                    continue
+                d_tw = dist_ext_tw[tw_sl][sub_tw]
+                if float(d_tw.min()) > 6.0 * scale or float(d_tw.max()) > 16.0 * scale:
+                    continue
                 sub_cm = cmin[tw_sl][sub_tw]
                 if float(sub_cm.max()) < 242.0:
                     continue
@@ -641,6 +894,45 @@ def sota_clean_one_shot(rgba):
             a[killed_tw] = 0.0
             tw_rim = ndimage.binary_dilation(killed_tw, iterations=2) & (~killed_tw) & (~deep_face_interior) & (a > 0) & (cmin >= 180.0) & (sat <= 26.0)
             a[tw_rim] *= np.clip((235.0 - cmin[tw_rim]) / 55.0, 0.0, 0.65)
+
+        # 전신 외곽(머리카락·어깨·소매·치마 경계)에서 어두운 선화/의상 테두리 바깥쪽에 갇힌 순백색(#FFFFFF) 배경 포켓 제거 (흰 가운·셔츠 하이라이트는 주변 전경 명도가 높으므로 100% 보존)
+        lum_cur = 0.299 * r + 0.587 * g + 0.114 * b
+        ext_bg_cur = a < 25.0
+        dist_ext_cur = ndimage.distance_transform_edt(~ext_bg_cur)
+        outer_pw_cand = (~deep_face_interior) & (a >= 120.0) & (cmin >= 246.0) & (sat <= 6.0)
+        op_lbl, _ = ndimage.label(outer_pw_cand)
+        min_op_area = max(12, int(15 * (scale ** 2)))
+        max_op_area = int(950 * (scale ** 2))
+        killed_op = np.zeros((h, w), dtype=bool)
+        for op_i, op_sl in enumerate(ndimage.find_objects(op_lbl), 1):
+            if op_sl is None:
+                continue
+            sub_op = (op_lbl[op_sl] == op_i)
+            op_area = int(sub_op.sum())
+            if op_area < min_op_area or op_area > max_op_area:
+                continue
+            if float(dist_ext_cur[op_sl][sub_op].min()) > 8.0 * scale:
+                continue
+            if float(cmin[op_sl][sub_op].mean()) < 250.5 or float(sat[op_sl][sub_op].mean()) > 3.5:
+                continue
+            y0_o, y1_o = max(0, op_sl[0].start - 3), min(h, op_sl[0].stop + 3)
+            x0_o, x1_o = max(0, op_sl[1].start - 3), min(w, op_sl[1].stop + 3)
+            pad_o = (op_lbl[y0_o:y1_o, x0_o:x1_o] == op_i)
+            rim_o = ndimage.binary_dilation(pad_o, iterations=3) & (~pad_o) & (a[y0_o:y1_o, x0_o:x1_o] >= 150.0)
+            if not rim_o.any():
+                killed_op[op_sl] |= sub_op
+                continue
+            if op_area <= int(180 * (scale ** 2)) and float(warm_skin[y0_o:y1_o, x0_o:x1_o][rim_o].mean()) >= 0.15:
+                continue
+            rim_lums = lum_cur[y0_o:y1_o, x0_o:x1_o][rim_o]
+            fg_lum_mean = float(rim_lums.mean())
+            fg_lum_p25 = float(np.percentile(rim_lums, 25))
+            if fg_lum_mean <= 165.0 and fg_lum_p25 <= 120.0:
+                killed_op[op_sl] |= sub_op
+        if np.any(killed_op):
+            a[killed_op] = 0.0
+            op_rim = ndimage.binary_dilation(killed_op, iterations=2) & (~killed_op) & (~deep_face_interior) & (a > 0) & (cmin >= 180.0) & (sat <= 26.0)
+            a[op_rim] *= np.clip((242.0 - cmin[op_rim]) / 55.0, 0.0, 0.65)
 
     # 2. 부유 노이즈 섬 제거 (메인 캐릭터 연결 성분만 유지)
     for thresh in (20, 10, 1):
@@ -665,6 +957,9 @@ def sota_clean_one_shot(rgba):
 
     # 4. 얼굴 내부(눈동자·공막·코끝 하이라이트·치아·혀·머리띠 등) 구멍 원천 차단 및 원본 RGB 복원
     #    어떤 각도/줌의 표정이든 두부 실루엣 안쪽(dist_head_in >= 10px)이거나 피부 안쪽에 생긴 미세 구멍(<=450px)은 100% 불투명 복원
+    #    (단, 이미 투명 배경으로 도려내진 외곽 잔머리 루프 구멍(orig_a == 0, orig_RGB == 0)은 검정 점으로 메워지지 않도록 배제)
+    top_corners_trans_now = (rgba[0, 0, 3] < 10) and (rgba[0, w - 1, 3] < 10)
+    near_any_trans = ndimage.distance_transform_edt(a >= 20.0)
     head_filled_now = ndimage.binary_fill_holes(a >= 180)
     face_holes = head_filled_now & (a < 250) & (yy >= int(0.04 * h)) & (yy <= int(0.32 * h))
     fh_lbl, _ = ndimage.label(face_holes)
@@ -676,14 +971,17 @@ def sota_clean_one_shot(rgba):
         fh_area = int(sub_fh.sum())
         if fh_area == 0 or fh_area > max_face_hole:
             continue
+        if top_corners_trans_now and float(a[fh_sl][sub_fh].min()) < 60.0:
+            continue
         min_d_in = float(dist_head_in[fh_sl][sub_fh].min())
         y0_f, y1_f = max(0, fh_sl[0].start - 2), min(h, fh_sl[0].stop + 2)
         x0_f, x1_f = max(0, fh_sl[1].start - 2), min(w, fh_sl[1].stop + 2)
         pad_f = (fh_lbl[y0_f:y1_f, x0_f:x1_f] == fh_i)
         rim_f = ndimage.binary_dilation(pad_f, iterations=2) & (~pad_f) & (a[y0_f:y1_f, x0_f:x1_f] >= 180)
         skin_f = float(warm_skin[y0_f:y1_f, x0_f:x1_f][rim_f].mean()) if rim_f.any() else 0.0
-        # 두부 외곽선에서 안쪽으로 8px 이상 들어간 내부 홀이거나, 피부로 둘러싸인 코/볼/입 주변 홀이면 100% 복원
-        if min_d_in >= 8.0 * scale or (skin_f >= 0.45 and fh_area <= int(500 * (scale ** 2))):
+        is_headband_or_bright = (fh_sl[0].stop <= int(0.13 * h)) and (float(cmin[fh_sl][sub_fh].mean()) >= 185.0) and (min_d_in >= 10.0 * scale)
+        # 피부로 둘러싸인 얼굴 내부(눈·코·입·볼) 홀이거나 상단 흰 머리띠 침식 홀만 복원하고, 머리카락·입김·목 옆 틈새는 원형 보존
+        if is_headband_or_bright or (skin_f >= 0.45 and fh_area <= int(500 * (scale ** 2))):
             a[fh_sl][sub_fh] = 255.0
             r[fh_sl][sub_fh] = orig_rgb[:, :, 0][fh_sl][sub_fh]
             g[fh_sl][sub_fh] = orig_rgb[:, :, 1][fh_sl][sub_fh]
@@ -697,7 +995,7 @@ def sota_clean_one_shot(rgba):
             xr_e = min(int(xs_head.max()) - int(round(12 * scale)), int(0.64 * w))
             if xr_e > xl_e:
                 span_a = a[y_face, xl_e:xr_e + 1]
-                eroded_f = span_a < 250.0
+                eroded_f = (span_a < 250.0) & (near_any_trans[y_face, xl_e:xr_e + 1] >= 4.0 * scale)
                 if np.any(eroded_f):
                     span_a[eroded_f] = 255.0
                     r[y_face, xl_e:xr_e + 1][eroded_f] = orig_rgb[y_face, xl_e:xr_e + 1, 0][eroded_f]
@@ -730,11 +1028,11 @@ def trimap_closed_form_matting(rgba):
     if len(xs) == 0:
         return out
 
-    solid_fg = ndimage.binary_fill_holes(a_u8 >= 220)
+    solid_fg = a_u8 >= 220
     dist_in = ndimage.distance_transform_edt(solid_fg)
-    locked_interior = dist_in >= (6.0 * scale)
+    locked_interior = dist_in >= (4.0 * scale)
 
-    # 확정 내부 코어 영역은 알파 255로 잠금해 의상·피부·얼굴 내부 침식 원천 차단
+    # 확정 내부 코어 영역은 알파 255로 잠금해 의상·피부·얼굴 내부 침식 원천 차단 (단, 원래 투명 배경 구멍은 제외)
     out[:, :, 3][locked_interior] = 255
 
     unknown_zone = (out[:, :, 3] > 0) & (out[:, :, 3] < 245) & (~locked_interior)
@@ -882,15 +1180,15 @@ def patch_face_onto_base_ref(rgba, ref_rgba):
     return res
 
 
-def clean_sprite(rgba, ref_rgba=None, extra_gap_rois=None, restore_holes=True, use_pymatting=False, restore_crown=True, harmonize_style=False, restore_outer_hair=False, style_ref_rgba=None, patch_face_from_base=False):
+def clean_sprite(rgba, ref_rgba=None, extra_gap_rois=None, restore_holes=True, use_pymatting=False, restore_crown=True, harmonize_style=False, restore_outer_hair=False, style_ref_rgba=None, patch_face_from_base=False, character_id=None, is_fresh_cutout=False):
     """
     RGBA 배열을 받아:
-    1. 원샷(One-Shot) 무결점 SOTA 배경 정리(sota_clean_one_shot) 및 상단 정수리 잘림 복원 수행.
+    1. 캐릭터별 원샷(One-Shot) 무결점 SOTA 배경 정리(sota_clean_one_shot) 및 상단 정수리 잘림 복원 수행.
     2. use_pymatting=True(또는 단독/신규 포즈 정밀 매팅) 시 내부 코어 잠금 Trimap + PyMatting 전경 역산(trimap_closed_form_matting) 수행.
     3. patch_face_from_base=True이고 기준 스프라이트(normal/smile)와 포즈가 호환되면 기준 외곽 마스크·몸통을 100% 고정하고 얼굴 내부만 패치(patch_face_onto_base_ref).
     4. 포즈가 다른 표정인 경우 기준 스프라이트 기반 외곽 머리카락 복원 및 그림체/색감 정합을 수행해 정리된 RGBA 배열 반환.
     """
-    out = sota_clean_one_shot(rgba)
+    out = sota_clean_one_shot(rgba, character_id=character_id, is_fresh_cutout=is_fresh_cutout)
     if restore_crown:
         out, _ = restore_crown_if_needed(out)
     if use_pymatting:
@@ -905,10 +1203,12 @@ def clean_sprite(rgba, ref_rgba=None, extra_gap_rois=None, restore_holes=True, u
     return out
 
 
-def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemble=True, use_pymatting=False, ref_path=None, verify_sheet_path=None, harmonize_style=False, restore_outer_hair=False, patch_face_from_base=False):
+def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemble=True, use_pymatting=False, ref_path=None, verify_sheet_path=None, harmonize_style=False, restore_outer_hair=False, patch_face_from_base=False, character_id=None):
     """
-    입력 이미지 경로와 출력 경로를 받아 SOTA 추론 및 원샷 무결점 배경 정리(sota_clean_one_shot)·Trimap 매팅·베이스 마스크 고정 얼굴 패치·정수리 복원을 순서대로 수행하고 기준 스프라이트 대비 신체비율 검수 시트를 생성 -> 원본 해상도(width x height) 보존 및 용량 최적화(optimize=True, compress_level=9)로 저장
+    입력 이미지 경로와 출력 경로를 받아 캐릭터별 SOTA 추론 및 원샷 무결점 배경 정리(sota_clean_one_shot)·Trimap 매팅·베이스 마스크 고정 얼굴 패치·정수리 복원을 순서대로 수행하고 기준 스프라이트 대비 신체비율 검수 시트를 생성 -> 원본 해상도(width x height) 보존 및 용량 최적화(optimize=True, compress_level=9)로 저장
     """
+    if character_id is None:
+        character_id = detect_character_id(path_str=output_path or input_path)
     im = Image.open(input_path)
     if use_rembg:
         rgb_im = im.convert("RGB")
@@ -916,13 +1216,6 @@ def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemb
         rgba = np.dstack([np.array(rgb_im), alpha])
     else:
         rgba = np.array(im.convert("RGBA"))
-        # 다른 표정의 알파 마스크가 잘못 덮어씌워져 투명 영역(a==0) 아래에 원본 RGB가 숨겨진 손상 파일 자동 감지 및 SOTA 재추론
-        h_im, w_im = rgba.shape[:2]
-        hidden_rgb_px = int(((rgba[:, :, 3] == 0) & (rgba[:, :, :3].max(axis=2) > 10)).sum())
-        if hidden_rgb_px > int(0.05 * h_im * w_im):
-            rgb_im = Image.fromarray(rgba[:, :, :3], mode="RGB")
-            alpha = predict_sota_alpha(rgb_im)
-            rgba = np.dstack([rgba[:, :, :3], alpha])
 
     prop_ref_rgba = resolve_default_ref_rgba(output_path or input_path, explicit_ref_path=ref_path)
     rgba = clean_sprite(
@@ -934,6 +1227,8 @@ def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemb
         restore_outer_hair=restore_outer_hair,
         style_ref_rgba=prop_ref_rgba,
         patch_face_from_base=patch_face_from_base,
+        character_id=character_id,
+        is_fresh_cutout=use_rembg,
     )
     Image.fromarray(rgba).save(output_path, format="PNG", optimize=True, compress_level=9)
     if verify_sheet_path:
