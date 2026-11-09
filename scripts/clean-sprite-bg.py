@@ -821,6 +821,269 @@ def restore_clipped_contours_by_lineart(rgba, orig_rgb=None):
     return out
 
 
+_TEACHER_PAIN_REF_1152 = None
+
+
+def _get_teacher_pain_ref_1152():
+    """
+    담임교사(teacher) 우측 머리카락 구멍 및 침식 컬 복원용 기준 스프라이트(pain/01/sprite.png)를 로드해
+    외곽 흰끼 제거 및 내부 반투명 홀 인페인팅을 마친 1152x1536 float32 RGBA 배열로 반환 -> 파일이 없으면 None 반환
+    """
+    global _TEACHER_PAIN_REF_1152
+    if _TEACHER_PAIN_REF_1152 is not None:
+        return _TEACHER_PAIN_REF_1152
+    cand_paths = [
+        r"d:\workspace\harem\assets\characters\mixed_5\members\teacher\expressions\pain\01\sprite.png",
+        r"d:\workspace\cupid\assets\characters\teacher\expressions\pain\01\sprite.png",
+    ]
+    p_pain = next((p for p in cand_paths if os.path.exists(p)), None)
+    if p_pain is None:
+        return None
+    try:
+        ref = np.array(Image.open(p_pain).convert("RGBA").resize((1152, 1536), Image.Resampling.LANCZOS)).astype(np.float32)
+        r_p, g_p, b_p, a_p = ref[:, :, 0], ref[:, :, 1], ref[:, :, 2], ref[:, :, 3]
+        cmin_p = np.minimum(np.minimum(r_p, g_p), b_p)
+        cmax_p = np.maximum(np.maximum(r_p, g_p), b_p)
+        sat_p = cmax_p - cmin_p
+        lum_p = 0.299 * r_p + 0.587 * g_p + 0.114 * b_p
+        yy_p, xx_p = np.mgrid[0:1536, 0:1152]
+
+        rim_top = (yy_p < 220) & (xx_p > 680) & (a_p > 0) & (cmin_p > 170) & (sat_p < 30)
+        a_p[rim_top] = 0.0
+        outer_zone = (yy_p >= 220) & (yy_p <= 505) & (xx_p >= 720) & (xx_p <= 855) & (a_p > 0)
+        dist_ext_p = ndimage.distance_transform_edt(~(a_p < 30))
+        edge_halo = outer_zone & (dist_ext_p <= 3.5) & ((sat_p < 28) | (cmin_p > 110))
+        a_p[edge_halo] = np.clip((185.0 - cmin_p[edge_halo]) / 110.0, 0.0, 1.0) * a_p[edge_halo]
+        a_p[a_p < 24] = 0.0
+
+        valid_hair_px = (a_p >= 210) & (lum_p >= 25.0) & (lum_p <= 155.0) & ((r_p - b_p) >= 18.0)
+        _, (iy, ix) = ndimage.distance_transform_edt(~valid_hair_px, return_indices=True)
+        inpainted_r = ndimage.gaussian_filter(r_p[iy, ix], sigma=2.0)
+        inpainted_g = ndimage.gaussian_filter(g_p[iy, ix], sigma=2.0)
+        inpainted_b = ndimage.gaussian_filter(b_p[iy, ix], sigma=2.0)
+
+        curl_solid = ndimage.binary_fill_holes(a_p >= 120)
+        curl_hole = curl_solid & (a_p < 245) & (yy_p >= 300) & (yy_p <= 502) & (xx_p >= 700) & (xx_p <= 845)
+        w_hole = np.clip((245.0 - a_p) / 200.0, 0.0, 1.0) * curl_hole.astype(np.float32)
+        ref[:, :, 0] = r_p * (1.0 - w_hole) + inpainted_r * w_hole
+        ref[:, :, 1] = g_p * (1.0 - w_hole) + inpainted_g * w_hole
+        ref[:, :, 2] = b_p * (1.0 - w_hole) + inpainted_b * w_hole
+        a_p[curl_hole] = 255.0
+        ref[:, :, 3] = a_p
+        _TEACHER_PAIN_REF_1152 = ref
+        return _TEACHER_PAIN_REF_1152
+    except Exception:
+        return None
+
+
+def repair_seoyeon_right_hair(rgba, character_id=None):
+    """
+    서연(seoyeon) RGBA 배열을 받아 귀 위·뒤편 우측 머리카락 삼각형 영역(y=80..445, x=625..745, 1086x1448 기준)의
+    검은색 삼각형 단절 및 밝은 회색 블록·세로 경계선을 주변 흑갈색/차콜색 머리카락 톤(명도 35..46)으로 자연스럽게 보정 ->
+    귀 피부·셔츠/재킷 칼라·목 입김은 보존한 RGBA 배열 반환
+    """
+    if character_id != "seoyeon":
+        return rgba
+    out = rgba.copy()
+    h, w = out.shape[:2]
+    sx, sy = w / 1086.0, h / 1448.0
+    y0, y1 = int(round(80 * sy)), int(round(445 * sy))
+    x0, x1 = int(round(625 * sx)), int(round(745 * sx))
+    sub = out[y0:y1, x0:x1].copy()
+    rgb = sub[:, :, :3].astype(np.float32)
+    a = sub[:, :, 3].astype(np.float32)
+    yy, xx = np.mgrid[y0:y1, x0:x1]
+    lum = rgb.mean(axis=2)
+
+    skin_seed = (
+        (a > 150)
+        & (xx <= int(round(665 * sx)))
+        & (yy >= int(round(158 * sy)))
+        & (yy <= int(round(398 * sy)))
+        & (rgb[:, :, 0] > 130.0)
+        & (((rgb[:, :, 0] - rgb[:, :, 2]) > 14.0) | ((lum > 175.0) & (xx <= int(round(662 * sx)))))
+    )
+    ear_skin_filled = ndimage.binary_fill_holes(skin_seed)
+    is_ear_area = ear_skin_filled | (ndimage.binary_dilation(ear_skin_filled, iterations=1) & (xx <= int(round(665 * sx))))
+
+    is_collar = (yy >= int(round(400 * sy))) & (((rgb[:, :, 2] - rgb[:, :, 0]) > 12.0) | (lum > 170.0))
+    is_collar = ndimage.binary_dilation(is_collar, iterations=max(1, int(round(2 * sx))))
+
+    steam_cand = (
+        (yy >= int(round(262 * sy)))
+        & (yy <= int(round(372 * sy)))
+        & (xx <= int(round(688 * sx)))
+        & (rgb[:, :, 2] > 82.0)
+        & ((rgb[:, :, 0] - rgb[:, :, 2]) < 22.0)
+        & (~is_ear_area)
+    )
+    is_steam = ndimage.gaussian_filter(steam_cand.astype(np.float32), sigma=2.5 * sx) > 0.15
+
+    hair_base_lum = np.minimum(lum, rgb[:, :, 2] + 6.0)
+    target_cap = 45.0
+    dark_w = np.clip((xx.astype(np.float32) - 630.0 * sx) / (14.0 * sx), 0.0, 1.0)
+    dark_w[is_ear_area | is_collar | is_steam] = 0.0
+
+    excess = np.maximum(0.0, hair_base_lum - target_cap)
+    compressed_lum = hair_base_lum - excess * 0.85 * dark_w
+
+    too_dark = (
+        (yy >= int(round(110 * sy)))
+        & (yy <= int(round(215 * sy)))
+        & (xx >= int(round(645 * sx)))
+        & (compressed_lum < 34.0)
+        & (a > 180.0)
+        & (~is_ear_area)
+    )
+    compressed_lum[too_dark] = 35.0 + (compressed_lum[too_dark] / 34.0) * 7.0
+
+    scale = compressed_lum / np.maximum(lum, 1.0)
+    scaled_rgb = np.clip(rgb * scale[:, :, None], 0.0, 255.0)
+
+    neutral_hair = (xx >= int(round(648 * sx))) & (~is_ear_area) & (~is_collar) & (~is_steam)
+    if np.any(neutral_hair):
+        nh_lum = compressed_lum[neutral_hair]
+        w_n = dark_w[neutral_hair]
+        scaled_rgb[neutral_hair, 0] = scaled_rgb[neutral_hair, 0] * (1.0 - w_n) + nh_lum * w_n
+        scaled_rgb[neutral_hair, 1] = scaled_rgb[neutral_hair, 1] * (1.0 - w_n) + nh_lum * w_n
+        scaled_rgb[neutral_hair, 2] = scaled_rgb[neutral_hair, 2] * (1.0 - w_n) + np.clip(nh_lum + 2.0, 0.0, 255.0) * w_n
+
+    outer_rim = (a > 0) & (~ndimage.binary_erosion(a >= 245, iterations=max(1, int(round(2 * sx))))) & (xx >= int(round(655 * sx))) & (~is_ear_area) & (~is_collar)
+    rim_bright = outer_rim & (scaled_rgb.mean(axis=2) > 42.0)
+    if np.any(rim_bright):
+        scaled_rgb[rim_bright] = np.minimum(scaled_rgb[rim_bright], 38.0)
+
+    sub[:, :, :3] = np.clip(np.round(scaled_rgb), 0, 255).astype(np.uint8)
+    out[y0:y1, x0:x1] = sub
+    return out
+
+
+def repair_teacher_hair_holes(rgba, character_id=None):
+    """
+    담임교사(teacher) RGBA 배열을 받아 우측 어깨 위 갈색 웨이브 머리카락(y=210..508, x=665..855)의 침식 구멍·외곽 파먹힘과
+    좌측 머리카락 내부 세로 틈새(y=260..410, x=325..385)를 온전한 기준 머리카락(pain/01) 및 주변 갈색 모발 인페인팅으로 복원한 RGBA 배열 반환
+    """
+    if character_id != "teacher":
+        return rgba
+    ref_pain = _get_teacher_pain_ref_1152()
+    if ref_pain is None:
+        return rgba
+    out = rgba.copy().astype(np.float32)
+    h, w = out.shape[:2]
+    if (h, w) != (1536, 1152):
+        ref = np.array(Image.fromarray(ref_pain.astype(np.uint8)).resize((w, h), Image.Resampling.LANCZOS)).astype(np.float32)
+    else:
+        ref = ref_pain
+
+    full_solid_head = ndimage.binary_fill_holes(out[:, :, 3] >= 210)
+    ry0, ry1 = int(round(210 * h / 1536.0)), int(round(508 * h / 1536.0))
+    rx0, rx1 = int(round(665 * w / 1152.0)), int(round(855 * w / 1152.0))
+    sub = out[ry0:ry1, rx0:rx1]
+    r_sub = ref[ry0:ry1, rx0:rx1]
+    solid_sub = full_solid_head[ry0:ry1, rx0:rx1]
+    sh, sw = sub.shape[:2]
+    yy, xx = np.mgrid[0:sh, 0:sw]
+    abs_y = yy + ry0
+    abs_x = xx + rx0
+
+    r, g, b, a = sub[:, :, 0], sub[:, :, 1], sub[:, :, 2], sub[:, :, 3]
+    lum = 0.299 * r + 0.587 * g + 0.114 * b
+    cmin = np.minimum(np.minimum(r, g), b)
+    sat = np.maximum(np.maximum(r, g), b) - cmin
+
+    white_tip = (abs_y >= int(445 * h / 1536.0)) & (abs_x >= int(815 * w / 1152.0)) & (cmin >= 175.0) & (sat <= 30.0)
+    a[white_tip] = 0.0
+    sub[:, :, 3] = a
+
+    is_ear = (abs_y < int(305 * h / 1536.0)) & (abs_x < int(718 * w / 1152.0)) & (a >= 180)
+    is_shoulder = (abs_y >= int(482 * h / 1536.0)) & (a >= 200) & (r >= 175.0) & (g >= 130.0)
+    protect_r = ndimage.binary_dilation(is_ear | is_shoulder, iterations=2)
+
+    core_mask = (
+        (abs_y >= int(280 * h / 1536.0))
+        & (abs_y <= int(430 * h / 1536.0))
+        & (abs_x >= int(685 * w / 1152.0))
+        & (abs_x <= int(740 * w / 1152.0))
+        & (a >= 220)
+        & (r_sub[:, :, 3] >= 220)
+        & (~protect_r)
+        & (cmin < 130)
+    )
+    is_cel_shaded = (core_mask.sum() > 80) and (np.median(r[core_mask] - b[core_mask]) < 29.0)
+
+    if is_cel_shaded:
+        own_valid_hair = (a >= 245) & (lum >= 42.0) & (lum <= 95.0) & ((r - b) >= 12.0) & (abs_y >= int(300 * h / 1536.0))
+        if own_valid_hair.sum() > 50:
+            _, (oy, ox) = ndimage.distance_transform_edt(~own_valid_hair, return_indices=True)
+            inp_r = ndimage.gaussian_filter(r[oy, ox], sigma=2.0)
+            inp_g = ndimage.gaussian_filter(g[oy, ox], sigma=2.0)
+            inp_b = ndimage.gaussian_filter(b[oy, ox], sigma=2.0)
+            enc_hole = (
+                solid_sub
+                & ((a < 245) | ((sat < 10) & (lum > 70)))
+                & (abs_y >= int(412 * h / 1536.0))
+                & (abs_y <= int(455 * h / 1536.0))
+                & (abs_x >= int(760 * w / 1152.0))
+                & (abs_x <= int(792 * w / 1152.0))
+            )
+            if np.any(enc_hole):
+                sub[enc_hole, 0] = inp_r[enc_hole]
+                sub[enc_hole, 1] = inp_g[enc_hole]
+                sub[enc_hole, 2] = inp_b[enc_hole]
+                sub[enc_hole, 3] = 255.0
+            outer_halo = (abs_x >= int(720 * w / 1152.0)) & (abs_y < int(472 * h / 1536.0)) & (sub[:, :, 3] > 0) & ((sub[:, :, 3] < 240) | (cmin > 120)) & (sat < 22)
+            sub[outer_halo, :3] *= 0.28
+            faint_cel = (abs_x >= int(725 * w / 1152.0)) & (abs_y < int(472 * h / 1536.0)) & (sub[:, :, 3] < 110)
+            sub[faint_cel, 3] = 0.0
+            out[ry0:ry1, rx0:rx1] = sub
+    else:
+        if core_mask.sum() > 80:
+            exp_med = np.median(sub[core_mask, :3], axis=0)
+            ref_med = np.median(r_sub[core_mask, :3], axis=0)
+            scale_rgb = np.clip(exp_med / np.maximum(ref_med, 15.0), 0.72, 1.18)
+        else:
+            scale_rgb = np.array([1.0, 1.0, 1.0], dtype=np.float32)
+
+        adapted_r = r_sub.copy()
+        for c_i in range(3):
+            adapted_r[:, :, c_i] = np.clip(r_sub[:, :, c_i] * scale_rgb[c_i], 0.0, 255.0)
+
+        wx_outer = np.clip((abs_x - 716.0 * w / 1152.0) / (14.0 * w / 1152.0), 0.0, 1.0)
+        wy_lower = np.clip((abs_y - 355.0 * h / 1536.0) / (16.0 * h / 1536.0), 0.0, 1.0)
+        wx_lower = np.clip((abs_x - 696.0 * w / 1152.0) / (16.0 * w / 1152.0), 0.0, 1.0)
+        w_zone = np.maximum(wx_outer, wy_lower * wx_lower)
+
+        wy_top = np.clip((abs_y - 215.0 * h / 1536.0) / (18.0 * h / 1536.0), 0.0, 1.0)
+        wy_bot = np.clip((506.0 * h / 1536.0 - abs_y) / (6.0 * h / 1536.0), 0.0, 1.0)
+        w_blend = w_zone * wy_top * wy_bot * (~protect_r).astype(np.float32) * (r_sub[:, :, 3] > 15).astype(np.float32)
+
+        is_target_hole = (a < 240) & (r_sub[:, :, 3] >= 200) & (~protect_r) & (abs_y >= int(225 * h / 1536.0))
+        w_blend = np.maximum(w_blend, is_target_hole.astype(np.float32))
+
+        for c_i in range(3):
+            sub[:, :, c_i] = sub[:, :, c_i] * (1.0 - w_blend) + adapted_r[:, :, c_i] * w_blend
+        sub[:, :, 3] = np.maximum(sub[:, :, 3], adapted_r[:, :, 3] * w_blend)
+        out[ry0:ry1, rx0:rx1] = sub
+
+    ly0, ly1 = int(round(260 * h / 1536.0)), int(round(410 * h / 1536.0))
+    lx0, lx1 = int(round(325 * w / 1152.0)), int(round(385 * w / 1152.0))
+    lsub = out[ly0:ly1, lx0:lx1]
+    lr_sub = ref[ly0:ly1, lx0:lx1]
+    lsolid_sub = full_solid_head[ly0:ly1, lx0:lx1]
+    la = lsub[:, :, 3]
+    lcmin = np.minimum(np.minimum(lsub[:, :, 0], lsub[:, :, 1]), lsub[:, :, 2])
+    has_left_opaque = np.maximum.accumulate(la >= 180, axis=1)
+    slit = lsolid_sub & has_left_opaque & ((la < 240) | (lcmin > 145)) & (lr_sub[:, :, 3] >= 200)
+    if np.any(slit):
+        slit_f = np.clip(ndimage.gaussian_filter(slit.astype(np.float32), sigma=1.2) * 1.6, 0.0, 1.0) * (lsolid_sub & has_left_opaque).astype(np.float32)
+        for c_i in range(3):
+            lsub[:, :, c_i] = lsub[:, :, c_i] * (1.0 - slit_f) + lr_sub[:, :, c_i] * slit_f
+        lsub[:, :, 3] = np.maximum(lsub[:, :, 3], lr_sub[:, :, 3] * slit_f)
+        out[ly0:ly1, lx0:lx1] = lsub
+
+    return np.clip(np.round(out), 0, 255).astype(np.uint8)
+
+
 def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
     """
     RGBA 배열과 캐릭터 식별자(character_id)를 받아 캐릭터별 맞춤형 원샷(One-Shot) 무결점 배경 정리 파이프라인을 수행:
@@ -837,6 +1100,8 @@ def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
     orig_rgb = rgba[:, :, :3].copy()
     out = recover_silver_hair_locks(rgba.copy(), character_id=character_id)
     out = restore_clipped_contours_by_lineart(out, orig_rgb=orig_rgb)
+    out = repair_seoyeon_right_hair(out, character_id=character_id)
+    out = repair_teacher_hair_holes(out, character_id=character_id)
     is_silver = detect_silver_hair(out, character_id=character_id)
     h, w = out.shape[:2]
     scale = w / 1152.0
