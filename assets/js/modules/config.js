@@ -316,18 +316,18 @@ const CHAR_NAME_MAP = Object.freeze({
     "Teacher": "Teacher", "Nurse": "Nurse",
     "Homeroom Teacher": "Teacher", "School Nurse": "Nurse",
     // Spanish
-    "Profesora": "Teacher", "Enfermera": "Nurse",
+    "Profesora": "Teacher", "Profesora titular": "Teacher", "Docente de la clase": "Teacher", "Enfermera": "Nurse", "Enfermera escolar": "Nurse",
     // Portuguese (PT-BR)
-    "Professora": "Teacher", "Enfermeira": "Nurse",
+    "Professora": "Teacher", "Professor titular": "Teacher", "Professora responsável pela turma": "Teacher", "Enfermeira": "Nurse", "Enfermeira escolar": "Nurse",
     // Japanese
     "ソヨン": "Seoyeon", "ユナ": "Yuna", "ダイン": "Dain", "ハウン": "Haeun",
-    "担任先生": "Teacher", "担任の先生": "Teacher", "保健先生": "Nurse", "保健室の先生": "Nurse",
+    "担任先生": "Teacher", "担任の先生": "Teacher", "保健先生": "Nurse", "保健室の先生": "Nurse", "保健の先生": "Nurse",
     // French
     "Professeur Principal": "Teacher", "Professeure principale": "Teacher", "Professeure": "Teacher", "Infirmière Scolaire": "Nurse", "Infirmière scolaire": "Nurse", "Infirmière": "Nurse",
     // German
-    "Klassenlehrerin": "Teacher", "Lehrerin": "Teacher", "Schulkrankenschwester": "Nurse",
+    "Klassenlehrerin": "Teacher", "Klassenlehrer": "Teacher", "Lehrerin": "Teacher", "Schulkrankenschwester": "Nurse",
     // Chinese (Simplified)
-    "书妍": "Seoyeon", "由娜": "Yuna", "多因": "Dain", "夏恩": "Haeun",
+    "书妍": "Seoyeon", "李书妍": "Seoyeon", "瑞妍": "Seoyeon", "李瑞妍": "Seoyeon", "由娜": "Yuna", "申由娜": "Yuna", "宥娜": "Yuna", "申宥娜": "Yuna", "多因": "Dain", "姜多因": "Dain", "多仁": "Dain", "姜多仁": "Dain", "夏恩": "Haeun", "荷恩": "Haeun", "尹荷恩": "Haeun",
     "班主任": "Teacher", "保健老师": "Nurse"
 });
 
@@ -618,7 +618,7 @@ async function migrateCupidChatHistoryToD1() {
                 affinityChange,
                 affinityCurrent,
                 clientMsgId,
-                recoveryOccurrence,
+                recoveryOccurrence, outputLanguage: language,
                 expression,
                 expressionVariant,
                 avatarAsset
@@ -1043,7 +1043,7 @@ const CUPID_SPEAKER_AVATAR_PREFIXES = Object.freeze({
     minsu: 'minsu',
     '민수': 'minsu',
     junho: 'junho',
-    '준호': 'junho'
+    '준호': 'junho', 'ソヨン': 'seyoun', 'ユナ': 'yuna', 'ダイン': 'dain', 'ハウン': 'haeun', '担任の先生': 'teacher', '担任先生': 'teacher', '保健室の先生': 'nurse', '保健先生': 'nurse', '保健の先生': 'nurse', 'profesora': 'teacher', 'profesora titular': 'teacher', 'docente de la clase': 'teacher', 'enfermera': 'nurse', 'enfermera escolar': 'nurse', 'professora': 'teacher', 'professor titular': 'teacher', 'enfermeira': 'nurse', 'enfermeira escolar': 'nurse', 'professeure': 'teacher', 'professeure principale': 'teacher', 'professeur principal': 'teacher', 'infirmière': 'nurse', 'infirmière scolaire': 'nurse', 'klassenlehrerin': 'teacher', 'klassenlehrer': 'teacher', 'lehrerin': 'teacher', 'schulkrankenschwester': 'nurse', '书妍': 'seyoun', '李书妍': 'seyoun', '瑞妍': 'seyoun', '由娜': 'yuna', '申由娜': 'yuna', '宥娜': 'yuna', '多因': 'dain', '姜多因': 'dain', '多仁': 'dain', '夏恩': 'haeun', '荷恩': 'haeun', '班主任': 'teacher', '保健老师': 'nurse'
 });
 
 function canonicalCharacterPathToLogicalId(raw) {

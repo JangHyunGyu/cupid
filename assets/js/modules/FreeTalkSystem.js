@@ -1313,7 +1313,7 @@ class FreeTalkSystem {
                     role: 'assistant',
                     content: line.content,
                     speakerId: line.speakerId,
-                    speakerName: line.speakerName
+                    speakerName: line.speakerName, expression: line.expression || 'normal'
                 });
                 const remaining = openingDialogues.length - index - 1;
                 if (remaining > 0) {
@@ -2163,7 +2163,7 @@ class FreeTalkSystem {
                 const notice = error?.userMessage || CupidFreeTalkCore.getControlBlockedNotice?.(langErr) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 this.uiManager.updateNameTag(failedTurnName);
-                if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
+                this.uiManager.updateNameTag({ ko: '안내', en: 'Notice', es: 'Aviso', ja: '案内', fr: 'Info', de: 'Hinweis', pt: 'Aviso', zh: '提示' }[String((typeof langErr !== 'undefined' ? langErr : lang) || 'ko').toLowerCase().split('-')[0]] || 'Notice'); if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
                 return;
             }
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
@@ -2873,7 +2873,7 @@ class FreeTalkSystem {
                 const notice = error?.userMessage || CupidFreeTalkCore.getControlBlockedNotice?.(lang) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 this.uiManager.updateNameTag(failedTurnName);
-                if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
+                this.uiManager.updateNameTag({ ko: '안내', en: 'Notice', es: 'Aviso', ja: '案内', fr: 'Info', de: 'Hinweis', pt: 'Aviso', zh: '提示' }[String((typeof langErr !== 'undefined' ? langErr : lang) || 'ko').toLowerCase().split('-')[0]] || 'Notice'); if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
                 return;
             }
             const isHandledTurnstileChallenge = error?.turnstileBotSuspected === true
@@ -3075,7 +3075,7 @@ class FreeTalkSystem {
      * @returns {string} 추출된 텍스트 또는 원본 그대로
      */
     _getPlayerDisplayName() {
-        return this.stateManager?.playerName || '주인공';
+        const lang = String((typeof window !== 'undefined' && window.GAME_LANG) || (typeof document !== 'undefined' && document.documentElement?.lang) || 'ko').toLowerCase().split('-')[0]; return this.stateManager?.playerName || ({ ko: '주인공', en: 'Player', ja: '主人公', es: 'Protagonista', fr: 'Protagoniste', de: 'Protagonist', pt: 'Protagonista', zh: '主角' }[lang] || 'Player');
     }
 
     _sanitizePlayerPlaceholders(text) {

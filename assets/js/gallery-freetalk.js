@@ -1481,7 +1481,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 const notice = err?.userMessage || GalleryFreeTalkCore.getControlBlockedNotice?.(this.lang) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 if (nameTag) nameTag.textContent = failedTurnName;
-                if (msgEl) msgEl.textContent = notice;
+                if (nameTag) nameTag.textContent = ({ ko: '안내', en: 'Notice', es: 'Aviso', ja: '案内', fr: 'Info', de: 'Hinweis', pt: 'Aviso', zh: '提示' }[this.lang] || 'Notice'); if (msgEl) msgEl.textContent = notice;
                 if (charImg) charImg.classList.remove('thinking');
                 if (dialogueBox) dialogueBox.classList.remove('thinking-box');
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());

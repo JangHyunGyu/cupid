@@ -1276,8 +1276,8 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         );
         const lines = sorted.map(hit => {
             const speaker = hit.role === 'user'
-                ? (playerName || (isKo ? '플레이어' : 'Player'))
-                : (characterName || (isKo ? '캐릭터' : 'Character'));
+                ? (playerName || ({ ko: '플레이어', en: 'Player', ja: 'プレイヤー', es: 'Jugador', fr: 'Joueur', de: 'Spieler', pt: 'Jogador', zh: '玩家' }[String(lang || 'ko').toLowerCase().split('-')[0]] || 'Player'))
+                : (characterName || ({ ko: '캐릭터', en: 'Character', ja: 'キャラクター', es: 'Personaje', fr: 'Personnage', de: 'Charakter', pt: 'Personagem', zh: '角色' }[String(lang || 'ko').toLowerCase().split('-')[0]] || 'Character'));
             const date = String(hit.created_at || '').split(/[ T]/u)[0];
             return `- ${date ? `[${date}] ` : ''}${speaker}: ${hit.content}`;
         }).join('\n');
