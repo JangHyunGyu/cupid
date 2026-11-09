@@ -979,7 +979,7 @@ function enqueueCupidChatLogs(entries = []) {
             viewerIdentitySubject: String(existing?.viewerIdentitySubject || rawEntry.viewerIdentitySubject || currentCupidViewerIdentitySubject())
         } : rawEntry;
         if (index < 0) queue.push(entry);
-        else queue[index] = { ...existing, ...entry };
+        else { const upgraded = (entry.content && entry.content !== existing.content) || (entry.logSource && entry.logSource !== existing.logSource); queue[index] = { ...existing, ...entry, ...(upgraded ? { attempts: 0, lastError: '', ...(entry.nextAttemptAt === undefined ? { nextAttemptAt: 0 } : {}) } : {}) }; }
     });
     return writeCupidChatLogQueue(queue);
 }
