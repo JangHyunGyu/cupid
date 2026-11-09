@@ -228,12 +228,16 @@ async function main() {
     rawSourcePath,
     targetPng,
     '--sota',
+    '--trimap-matting',
     '--ref',
     refSprite,
     '--harmonize-style',
     '--verify-sheet',
     verifySheet,
   ];
+  if (!args.includes('--no-patch-face')) {
+    cleanArgs.push('--patch-face');
+  }
   if (args.includes('--restore-outer-hair')) {
     cleanArgs.push('--restore-outer-hair');
   }
