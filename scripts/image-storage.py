@@ -182,6 +182,10 @@ def publish(args):
         receipt = {'schemaVersion': 1, 'verified': True, 'method': 'R2 full read-back SHA-256', 'manifests': {
             name: digest((ROOT / name).read_bytes()) for name in ['config/image-sources.json', 'config/public-images.json']}}
         (ROOT / 'config/image-publication.json').write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8', newline='\n')
+    sync_script = ROOT / 'scripts/sync-cupid-sprites.py'
+    if not getattr(args, 'no_cupid_sync', False) and sync_script.exists() and any(f.startswith(('assets/characters/', 'tests/fixtures/corrected-media/assets/images/characters/')) for f in args.files):
+        import sys as _sys
+        subprocess.run([_sys.executable, str(sync_script), '--prefer', 'cupid'], cwd=ROOT, check=True)
     print('Images backed up and uploaded; review manifests, run image/cache checks, then commit metadata')
 
 parser = argparse.ArgumentParser(description=__doc__)
@@ -192,6 +196,7 @@ r.add_argument('--from-git', action='store_true', help='Recover baseline images 
 r.add_argument('--prefix', default='', help='Restore a subset of source paths')
 p = commands.add_parser('publish')
 p.add_argument('--public', action='store_true', help='Register new public runtime images; refuses protected Cupid media')
+p.add_argument('--no-cupid-sync', action='store_true', help='Skip automatic harem <-> cupid sprite synchronization')
 p.add_argument('files', nargs='*')
 if __name__ == '__main__':
     args = parser.parse_args()

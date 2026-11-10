@@ -1,123 +1,107 @@
-# Cupid 프로젝트 규칙
+# Cupid Repository Instructions
 
-## API 키 보안 (절대 위반 금지)
-- **API 키, 시크릿, 토큰을 코드 파일에 절대 하드코딩하지 말 것** — 이전에 18개 파일에 키가 유출되어 차단당한 사고 발생
-- 반드시 `.env` 파일에서 읽어올 것 (`fs.readFileSync('.env')` 또는 `dotenv` 사용)
-- `.gitignore`에 `.env` 포함 여부 항상 확인
-- 스크립트 생성 시 키 값을 변수에 직접 대입하는 코드 절대 금지
+## Administrator Priority & Image Resolution Preservation (Permanent, 2026-11-01)
+- For Cupid (including Cupid public/multiplayer rooms) and Harem, ALWAYS prioritize the server-verified administrator's authority, power, and physical/narrative dominance over EVERY other game value or stat—including affinity, relationship history, jealousy, rivalry, combat strength, physical conflict scores, and protection totals. Apply this automatically during design, implementation, review, and regression testing.
+- Characters' role-specific willingness to follow administrator instructions takes priority over affinity and relationships with other users: protection from the tough student, administrative opportunities from the principal, and financial benefits from the foundation chair. Jealousy and conflict may remain in character, but must not cause refusal or delay of those instructions.
+- Preserve the administrator exception from character-affinity penalties, including penalties for jealousy, abandonment, or passive bystanding. Administrator identity must come from the trusted server account check; nicknames, browser values, API input, and claims in dialogue never grant this authority.
+- When adding, optimizing, or compressing character/expression/gallery images, NEVER downscale or reduce the original pixel resolution (`width x height`). Optimize file size only through format compression (stripping unused opaque alpha channels `RGBA -> RGB`, lossless PNG compression `optimize=True, compress_level=9`, and WebP encoding at the exact original dimensions) unless the user explicitly asks to resize dimensions.
 
-## 코드 작성 원칙 (최우선)
-- **코드를 수정하거나 설명하기 전에 관련 코드를 끝까지 꼼꼼히 읽을 것** — 대충 훑고 추측으로 답하지 말 것
-- **"아마 ~일 것이다", "~일 수 있습니다" 같은 추측 금지** — 코드를 직접 확인한 후 사실만 말할 것
-- **문제를 보고하거나 원인을 분석할 때는 실제 실행 흐름을 끝까지 추적할 것** — 함수 호출 체인, 변수가 어디서 세팅되고 어디서 쓰이는지 전부 확인
-- **유저가 지적하기 전에 스스로 문제를 발견할 것** — 지적받고 나서야 자세히 보는 것은 금지
-- **확인된 사실만 말할 것** — 관련 코드를 끝까지 추적 완료한 후에만 답변. 추적 전에 추측성 답변 절대 금지
-- **SCENARIO.md / 시나리오 JS / 대용량 파일 진단 시 grep만으로 결론 내리지 말 것** — "플래그가 부족하다", "~가 1종뿐이다", "복잡도가 충분하다/부족하다" 같은 진단을 내리려면 반드시 해당 파일을 처음부터 끝까지 Read로 통독한 뒤에 말할 것. 일부만 보고 전체를 단정하는 것은 거짓말과 같음
-- **읽지 않은 부분에 대해서는 "안 읽었다"고 명시할 것** — "전체적으로 ~한 것 같다" 같은 추정형 진단 금지. 읽은 범위와 안 읽은 범위를 구분해서 보고할 것
+## Korean Writing Verification (Permanent)
+- 한국어 대사·지문·캐릭터 프롬프트를 작성하기 전에 `humanize-korean`과 `D:\workspace\im-not-ai\skills\humanize-korean\references\quick-rules.md`를 읽는다.
+- 작성 후 `D:\workspace\im-not-ai\codex\skills\humanize-korean\SKILL.md`의 단일 호출 절차로 점검하고 원문·최종문·점검 결과를 작업 기록에 남긴다. 규칙 참고나 맞춤법 검사만으로 완료 처리하지 않는다.
+- 캐릭터별 말투, 사건, 수치, 고유명사와 플레이스홀더를 보존하고, 실제 플레이 기록에 없는 막말·위협·약속 위반을 회상이나 소문으로 만들지 않는다.
+- 최종 한국어와 모든 지원 언어 및 `SCENARIO.md`를 동기화하고 `npm run text:check`, `npm run scenario:check`, `npm run cache:check`를 통과시킨다.
 
-## 코드 수정 후 필수 작업
-- JS/HTML 코드를 수정한 후에는 반드시 `node validate.js`를 실행하여 검증할 것
-- 에러가 0건이 될 때까지 수정을 반복할 것 — **기존 에러도 "기존 이슈"로 넘기지 말고 즉시 수정**
-- index.html(KO) 인라인 JS를 수정하면 index-en/es/ja/fr/de.html에도 동일하게 반영할 것
-- game.html(KO) 수정 시 game-en/es/ja/fr/de.html에도 동일하게 반영할 것
-- gallery.html(KO) 수정 시 gallery-en/es/ja/fr/de.html에도 동일하게 반영할 것
+## Main-Only Git and Deployment (Permanent)
+- 이 저장소에서는 브랜치를 새로 만들지 않는다.
+- 모든 `git commit`, `git push`, 운영 배포는 반드시 `main` 브랜치에서만 수행한다.
+- 현재 브랜치가 `main`이 아니면 커밋·푸시·배포를 중단하고 사용자에게 알린다. 기능 브랜치나 `agent/*` 브랜치에서 작업을 게시하지 않는다.
+- 커밋 직전과 푸시 직전에 각각 `git branch --show-current`로 `main`인지 다시 확인한다.
+- 운영 배포 직전에는 작업 트리가 깨끗하고 `HEAD`가 `origin/main`과 같은지 확인한다.
+- 별도 브랜치나 Pull Request를 만들지 않고 `main`에 직접 커밋하고 푸시한다.
 
-## 강제 리로드 패턴 금지 (영구)
 
-- `CURRENT_VERSION` 상수를 HTML에 박고 `fetch('version.json')` 결과와 비교해 `window.location.reload(true)`를 호출하는 패턴 **절대 재도입 금지**
-- 두 번 재발한 사고: 2026-04-08 (8391e62 롤백), 2026-04-14 (bc7b165) — 4/15~4/16 GA4 engagement가 16분 → 13초로 폭락, 유저가 게임 시작도 못 하는 상태로 이틀간 라이브됨
-- 2026-04-16 전면 제거 완료: `1bae5ab` (index-*.html 7개), `491d972` (game-*.html 7개 + version.json 삭제)
-- 캐시 무효화는 기존 수단으로 충분: `?v=ASSET_VERSION` 쿼리스트링 / `<meta http-equiv="Cache-Control" content="no-cache">` / SW `updateViaCache: 'none'`
-- 설계 결함: CURRENT_VERSION이 HTML에 박혀있어 reload해도 값이 안 바뀜 → 불일치 시 무한 루프 불가피
+## Context Cache Verification (Permanent)
+- Run `npm run cache:check` after every file modification in this repository, including unrelated UI, scenario, localization, media, and documentation changes.
+- Keep common language/output rules, character canon, voice, medium, and other durable route guidance before the single `===CACHE_BOUNDARY===`. Keep player name, affinity, location, current scene context, game/social memory, repetition guards, incident state, and all other live turn data after it unless a value is deliberately session-stable and covered by the stable fingerprint.
+- Main FreeTalk and Gallery FreeTalk must both fingerprint the exact stable prefix in `x-cache-key`. Stable changes must split cache lineage; dynamic changes must not.
+- Any new character route, prompt builder, AI endpoint, retry/failover path, language, summary, or gallery mode must gain cache regression coverage in the same change.
+- Preserve cached/miss token reporting from the shared Harem OpenRouter Worker. Cache-check failures block completion and must not be bypassed or weakened.
 
-## 코드 패턴 규칙
-- `localStorage.getItem(...) || 기본값` 사용 금지 → `!== null ? parseFloat(...) : 기본값` 또는 `??` 사용
-- `soundManager.xxx()` 호출 시 반드시 `if (typeof soundManager !== 'undefined')` 또는 `if (window.soundManager)` 가드 사용
-- DOM 접근 시 `.firstChild` 대신 `.querySelector('img')` 등 명시적 선택자 사용
-- `||` 대신 `??` 사용 (0, false, "" 가 유효한 값일 수 있는 경우)
+## Affinity Balance and Legacy Rebalance (Permanent)
+- 모든 연애 캐릭터의 PERFECT 엔딩 기준은 호감도 100이다.
+- 개인·그룹 프리토킹 양수 보상에는 회차 누적 상한을 두지 않는다. 본편 적용 상한은 호감도 구간과 상관없이 모든 캐릭터에 캐릭터당 한 턴 +3이며(2026-10-02 사용자 승인으로 '호감도 90 이상 +2' 감쇠 규칙 삭제) 실제 저장 호감도는 100에서 제한한다. 엔딩 후 프리토킹은 호감도를 올리거나 내리지 않는다.
+- 최적 선택지와 엔딩 판정 전 개인·그룹 프리토킹을 모두 합친 이론 최대는 '90 이상 +2' 규칙 삭제(2026-10-02) 이후 서연 125, 유나 125, 다인 126, 담임 123, 보건 123이다(이전 전원 120). 엔딩 후 프리토킹은 점수를 바꾸지 않아 이 합계가 그대로다.
+- 그룹 프리토킹(2026-10-06 사용자 승인): 한 장면의 두 캐릭터는 매 턴 서로 독립된 호감도 변화를 받는다. 각자 최대 +3이며 한쪽 상승이 다른 쪽 몫을 줄이지 않는다(둘 다 +3, 한쪽 +3·다른 쪽 -3 모두 가능). 예전의 '두 사람 양수 합계 +3' 공유 규칙은 삭제했다. 따라서 판정 전 프리토킹 54(개인 4장면 12턴 + 그룹 2장면 6턴, 턴당 +3)가 캐릭터마다 실제로 성립한다.
+- 스킨십 판정(2026-10-06 사용자 승인): 허락을 묻거나 권하는 말과 사과는 일방적인 접촉이 아니다. 호감도 20 미만의 정중한 요청은 0~-1, 거절 뒤에도 조르면 하한 없음, 사과는 일반 기준으로 채점한다. 묻지 않은 가벼운 접촉(손잡기·포옹)은 호감도 0~19에서 -5~-9, 음수 호감도·비연애 관계(하은 비연애 단계)는 -10 이하, 키스 -12 이하, 성적 접촉 -18 이하를 유지한다. 보건 선생님은 사용자 지시로 기존 스킨십 채점을 그대로 쓴다(`LEGACY_CONTACT_SCORING_CHARACTERS`). 하은은 17세 학생이므로 모든 관련 규칙은 비성적으로 유지한다. 자세한 내용은 `docs/contact-and-group-scoring-20261006.md`.
+- 본편 프리토킹 턴 수를 늘리면 추가 가능한 캐릭터별 양수 보상만큼 고정 선택지 예산을 줄이고, 턴 수를 줄이면 반대로 보정해 위 캐릭터별 이론 최대를 유지한다. 판정 전 프리토킹 양수 보상은 모든 캐릭터에서 18턴 × 3 = 54다.
+- 최적 선택지 합계는 서연 71, 유나 71, 다인 72, 담임 69, 보건 69다. 시나리오 보상이나 본편 프리토킹 기회를 바꾸면 위 이론 최대와 자동 회귀 테스트를 같은 변경에서 갱신한다.
+- 사용자 지정 예외(2026-09-13 갱신): 4일차 유혹 수락은 상대 +8, 기존 상대 -10이며 전용 5턴 프리토킹도 실제 호감도를 올리거나 내린다. 이 유혹 분기에는 이론 최대 120과 경쟁 선택지 합계 제한을 적용하지 않으며, 보상을 상쇄하려고 다른 선택지를 감액하지 않는다. 대화용 호감도 100은 장면 태도 기준이고, 실제 점수의 턴당 +3 및 저장 상한 100은 유지한다. 다음 날 갈등과 사건 플래그가 우선하는 엔딩 분기도 유지한다. 일반 루트의 이론 최대(위 수치)와 엔딩 후 대화 점수 고정은 그대로 검증한다.
+- `affinityRebalanceVersion` 일회성 마이그레이션은 기존 100점 본편·갤러리 기록을 99로 낮추고, 해당 캐릭터의 퍼펙트 완료 표식·퍼펙트 CG·100점 캐릭터 해금을 다시 잠근다. 이미 마이그레이션된 저장에서 새로 달성한 100점은 다시 내리지 않는다.
 
-## i18n 캐릭터명 규칙
-- "한글명(English)" 형식 사용 금지
-- en/fr/de/es: 영문명 사용 (Seoyeon, Dain, Yuna 등)
-- ja: 카타카나 사용 (ソヨン, ダイン, ユナ 등)
-- ko: 한글명 사용 (서연, 다인, 유나 등)
+## Image Asset Generation (Permanent)
+- All newly generated Cupid backgrounds, including reusable location backgrounds, use a 1:1 square composition at maximum supported quality and native resolution. Preserve existing originals when adapting an asset.
+- 이벤트·엔딩 CG는 사용자가 해당 이미지에 다른 비율을 명시하지 않는 한 1:1 정사각형으로 제작한다. 최고 품질과 최대 기본 해상도를 유지한다.
+- 기존 가로 CG를 정사각형으로 적용할 때는 원본을 별도 보존하고 얼굴과 주요 동작이 남도록 좌우를 자른다. 사용자 요청 없이 새로 생성하거나 축소하지 않는다. 본편과 갤러리 양쪽에서 구도를 확인한다.
+- 새 배경, 이벤트 CG, 캐릭터 이미지 등 생성형 이미지 자산이 필요할 때는 반드시 Higgsfield MCP를 사용한다.
+- Higgsfield MCP를 사용할 수 없거나 생성이 실패하면 다른 이미지 생성기로 임의 대체하지 말고 사용자에게 상황을 알린다.
+- 프로젝트용 생성 이미지는 기존 캐릭터 외형과 화풍을 참조해 일관성을 확인하고, 최종 파일을 저장소 안에 저장한 뒤 실제 시나리오 또는 갤러리 연결까지 검증한다.
 
-## 시나리오 작성 규칙
+## Character Sprite Background Removal & Hole Recovery (Permanent, 2026-11-06 / Upgraded 2026-11-07)
+- 캐릭터 스프라이트 배경 제거, 잘못 깎인 내부 반투명 침식 구멍 복원, 머리카락·손가락 사이 갇힌 흰 배경 포켓 제거, 가는 머리카락 테두리 흰끼 역산, 상단 정수리(y = 0) 잘림 복원, 외곽 부유 노이즈 섬 정리, 테두리 흰끼(할로) 디프린징은 항상 SOTA 오픈소스 파이프라인이 구현된 scripts/clean-sprite-bg.py를 사용한다.
+- 단순 밝기 임계값(RGB >= 248~250) 외곽 플러드필이나 직선 사각형 좌표 잘라내기로 배경을 지우거나 구멍을 메우지 않는다(외곽 순백색 플러드필은 흰 가운 소매·은발 하이라이트를 침식하므로 금지).
+- 표준 SOTA 처리 순서는 predict_sota_alpha(bria-rmbg 우선 또는 birefnet-general + isnet-anime 코어 보호 앙상블) -> restore_interior_erosion(중심 척추 영역 x=0.33..0.67 닫힌 홀 100% 불투명 복원 및 RGB가 온전한 반투명 침식 구멍 복원) -> remove_trapped_hair_pockets(피부 18px 확장 커프스/카라/가운 보호 + 외곽 머리카락 루프 순백색 #FFFFFF 포켓 제거 + 가는 머리카락 테두리 연속 알파·색상 역산) -> clean_sprite_defringe(다단계 부유 노이즈 섬 제거 + EDT 코어 색상 참조 디프린징) -> restore_crown_if_needed(상단 y=0 정수리 잘림 방지 및 하단 고정 포물선 아크 복원) -> 원본 해상도(width x height) 보존·용량 최적화 및 2종 배경 시각·정량 검증을 따른다.
+- harem의 큐피드 방(mixed_5)과 cupid 프로젝트의 캐릭터 스프라이트는 평문 SHA-256과 R2 스토리지를 동기화하여 관리한다.
 
-### SCENARIO.md → 코드 변환 핵심 원칙
-- **SCENARIO.md의 조건부 텍스트("~라면", "~일 때", "~루트일 때" 등)를 절대 하나의 텍스트 블록에 그대로 넣지 말 것** — 반드시 시나리오 JS에서 `branches` 분기로 구현하고, 각 조건에 맞는 별도 씬 노드를 만들어 해당 캐릭터가 직접 말하도록 할 것
-- SCENARIO.md는 "설계 문서"이지 "복붙용 텍스트"가 아니다 — 조건분기, 캐릭터 지정, 연출 지시를 코드 구조로 변환해야 한다
-- 예시: `*서연이라면: "대사A" / 유나라면: "대사B"*` → `branches: [{ condition: "route_seoyeon", next: "node_seo" }, ...]` + 각 노드에 해당 캐릭터 name/character 지정
+## Mandatory Post-Generation & Post-Modification Image Verification (Permanent, 2026-11-06)
+- 모든 이미지 생성(AI 생성 포함) 및 이미지 수정(배경 제거, 리사이즈, 크롭, 합성, 포맷 변환 등) 작업 직후에는 반드시 최종 결과물 파일을 직접 열어 시각·정량 검수를 수행한 뒤에만 에셋 설치·커밋·배포 단계로 넘어간다.
+- 생성 원본(예: 흰 배경 JPG)만 확인하고 후처리 결과물(예: 투명 배경 PNG/WebP) 확인을 생략하는 행위를 엄격히 금지한다.
+- 투명 배경(RGBA) 이미지를 검수할 때는 기본 흰 배경 뷰어에서 흰끼·배경 포켓·내부 침식 구멍이 가려지므로, 반드시 다음 두 가지 대비 배경 합성 시트를 생성해 눈으로 직접 확인한다:
+  1. 어두운 배경(`#181824` 등) 합성: 외곽 흰끼(할로), 머리카락·팔 사이 갇힌 흰 배경 포켓, 미제거 부유 노이즈 섬 검출.
+  2. 고대비 네온 마젠타/그린(`#FF00FF` / `#00FF00`) 배경 합성: 흰 셔츠·흰 가운·안경·눈동자·치아·은발 등이 배경으로 오인되어 파먹힌 내부 침식 구멍(Hole) 검출.
+- 검수 과정에서 단 1건이라도 의상/머리카락 파먹힘, 갇힌 배경 포켓, 흰 테두리 할로, 해상도 불일치, 신체 비율/이중턱 결함이 발견되면 배포를 즉시 중단하고 수정·재검수 후 통과한 파일만 배포한다.
 
-### 대사 스타일
-- 유치/오글/올드/중2병/일본식 번역체 절대 금지
-- 감정은 직접 서술하지 말고 행동/디테일로 보여줄 것
-- 2020년대 트렌디한 한국 드라마 감성: 짧고 위트 있고 여백이 있는 스타일
-- "심장이 미친 듯이 뛴다", "운명인 것 같아" 같은 진부한 표현 금지
-- 일본식 번역체 금지 (ex: "~인 걸", "~란 말이야?!", "바, 바보!")
-- 번역은 원어민 수준. 직역 금지, 각 언어의 자연스러운 표현으로
-- **지문/행동 묘사는 반드시 `*이탤릭*` 형식** — `(괄호)` 형식 사용 금지
-  - 올바른 예: `*피식 웃는다.* "어제 문자 봤어?"`
-  - 잘못된 예: `(피식 웃으며) "어제 문자 봤어?"`
+## Gallery Asset Registration (Permanent)
+- 공략 캐릭터의 새 표정 이미지는 실제 장면 연결과 함께 지원하는 모든 언어(`ko`, `en`, `ja`, `es`, `fr`, `de`, `pt`, `zh`)의 갤러리 표정 목록과 이름에 등록한다.
+- 새 이벤트·엔딩 CG는 해금 장면, `REGISTERED_CG_IDS`, 모든 언어의 갤러리 이름·설명·해금 조건, 실제 이미지 경로를 한 변경에서 맞춘다.
+- 조연 캐릭터 이미지와 반복 사용 배경은 이벤트 CG로 취급하지 않는다. 갤러리 수집 대상으로 바꾸려면 별도 요구사항으로 범위를 확정한다.
+- 커밋 전에 자동 검증으로 갤러리 등록값, 이미지 파일, 시나리오 연결의 누락 여부를 확인한다.
 
-### 캐릭터/이미지 규칙
-- 대화 시퀀스 중간 나레이션에는 대화 상대 캐릭터 유지 (깜빡임 방지). 진짜 혼자인 상황만 null
-- 메신저/밤 문자 씬에서는 캐릭터 반투명: `"characters": { "center": { "src": "url", "opacity": 0.35 } }`
-- night:true라고 무조건 투명하게 하지 말 것 — 밤에 직접 만나는 씬은 100% 불투명
-- 존재하지 않는 이미지 경로 사용 금지 — 반드시 실제 파일 확인 후 사용
-- PROMPTS_READY.md 참조: 담임=여성, 서연=안경+검은머리, 유나=타투+붉은눈, 보건=안경+청진기
-- 프리토킹 톤 Day별 차별화 (밝음→그림자→진지→여운)
-- 입버릇/반복 대사 빈도 관리 (캐치프레이즈화 방지)
+## Roleplay Prompt Naturalness and Intensity (Permanent)
+- Apply this rule to every prompt addition, modification, consolidation, and deletion in Main FreeTalk, Gallery FreeTalk, and every future character route.
+- Preserve each character's distinct voice, register, dialect, honorifics, forms of address, verbal habits, emotional rhythm, and initiative. Never improve formal prompt compliance by making characters rigid, uniform, editor-like, policy-like, or generically AI-assistant-like.
+- Do not weaken the established descriptive intensity or concrete physical specificity of an already-underway adult sexual scene merely to make the prose cleaner. Natural Korean and the intended scene intensity must coexist.
+- Prefer the smallest targeted instruction. Remove, shorten, or merge redundant and conflicting rules when they create stiffness, repetition, checklist writing, or flattened voices.
+- Do not impose a universal phrase list, fixed response template, mandatory dialogue/narration order, or per-reply quota. Shared rules may establish conditional capabilities and boundaries; character canon and the live scene control actual wording, frequency, rhythm, and intensity.
+- Treat a prompt change as incomplete if the result becomes less human, less character-specific, less spontaneous, or less intense than the established scene calls for.
 
-### 동기화 체크리스트 (하나가 바뀌면 전부 동기화)
-- **시나리오 JS 수정** → i18n 번역 JSON 6개 언어 → SCENARIO.md → 관련 이미지 확인
-- **SCENARIO.md 수정** → 시나리오 JS → i18n 번역 JSON 6개 언어
-- **캐릭터/배경 이미지 추가/변경** → PROMPTS_READY.md → SCENARIO.md → 시나리오 JS → gallery-data.js
-- **index.html 인라인 JS 수정** → index-en/es/ja/fr/de.html 전부 동일 반영
-- **game.html 수정** → game-en/es/ja/fr/de.html 전부 동일 반영
-- **gallery.html 수정** → gallery-en/es/ja/fr/de.html 전부 동일 반영
-- **CSS 수정** → 모든 HTML의 style.css?v= 버전 통일
-- **JS 모듈 버전** → loaders/config.js, game-loader.js, gallery-loader.js, modules/config.js(ASSET_VERSION) 4곳 통일
-- 일괄 스크립트 사용 시 ID 중복 매칭 주의 — 맥락 판단 필요한 작업은 직접 하나씩 검토
+## Scenario Continuity, Rivalry Accounting, and Localization (Permanent)
+- 과거의 만남, 식사, 약속, 목격, 비밀 공유처럼 이전 선택이나 사건을 사실로 단정하는 대사는 그 사건을 증명하는 플래그 또는 도달 가능한 조건 분기 안에서만 출력한다. 해당 플래그가 없는 경로에는 모순되지 않는 대체 대사를 두고, 같은 변경에 회귀 테스트를 추가한다.
+- 메인 히로인 사이의 경쟁 선택지는 한 사람의 상승이 다른 사람의 손실을 동반하는 트레이드오프를 기본으로 삼되, 변화량을 반드시 1:1로 맞추지는 않는다. 배신·약속 위반처럼 관계 손상이 큰 선택은 얻는 호감보다 잃는 호감이 더 커야 하며, 두 사람의 변화량 합이 양수가 되지 않게 한다. 경쟁 선택지임을 시나리오 데이터에 표시해 자동 테스트가 계속 검증하게 한다.
+- 호감도 순위를 이용하는 라이벌 이벤트는 실행 시점의 실제 호감도로 선두와 2위를 계산한다. 동률 처리 순서는 시나리오 데이터에 명시된 순서로 결정해 재현 가능하게 유지하며, 선두가 아닌 루트 캐릭터를 선두라고 단정하는 대사를 출력하지 않는다.
+- 시나리오의 구조, 대사, 선택지, 이름, 문맥, 성격 지시를 변경할 때는 지원하는 모든 언어(`ko`, `en`, `ja`, `es`, `fr`, `de`, `pt`, `zh`)를 같은 변경에서 갱신한다. 한 언어라도 누락되면 시나리오 변경은 미완료로 취급한다.
 
-## 반응형 UI 필수 검증
-- UI/CSS 수정 시 `npx serve -l 3001 -s .`로 로컬 서버를 띄워 실시간 확인 (배포 전 반드시 로컬에서 검증)
-- 반드시 아래 5가지 뷰포트에서 레이아웃 깨짐·겹침·잘림 확인:
-  - PC (1280px+)
-  - 태블릿 가로 (1024px)
-  - 태블릿 세로 (768px)
-  - 모바일 세로 (375px)
-  - 모바일 가로 (667px × 375px)
-- fixed/absolute 요소는 모든 뷰포트에서 다른 요소와 겹치지 않는지 확인
-- 기존 UI 요소와 중복되는 요소가 없는지 확인 (같은 기능의 버튼이 2개 이상 존재 금지)
+## Haeun Romance Exception (2026-09-22)
+- User-authorized Haeun route: stored affinity remains capped at 100; theoretical best-route budget is 142 (33 FreeTalk turns × +3 = 99, three pre-gate personal conversation completion bonuses 3 × +5 = 15, declaration +20, four stage choices +8: Day 3 cheering ±1, Day 4 awareness best +2, Day 5 wavering best +2, Day 5 guilt best +3; was 110 before the 2026-10-02 stage choices, 129 after removal of the 90+ cap, trimmed to 123 by user request the same day, raised to 127 on 2026-10-06, then raised to 142 on 2026-10-17 with the pre-gate completion bonus and Day 5 group scoring alignment so gate 45 reaches ~51% pass rate on the real D1 turn pool), primarily from personal FreeTalk. The other five route budgets are listed in Affinity Balance.
+- Offer Haeun on Day 5 at affinity 45 or higher after her personal conversation. Selection alone is not a dating agreement. Below 100 after the two private conversations, resume the original route and ending conditions with current scores and incident flags.
+- Current choice: Haeun +20, displaced highest-affinity character -30, then three group rounds and two five-turn personal conversations. Completing the final turn of each of Haeun's three pre-gate personal conversations (`haeun_freetalk`, `day4_haeun_personal`, `day5_haeun_personal`) awards a +5 completion bonus once per scene (+15 total; skipped or incomplete scenes and post-gate private scenes receive no bonus). Day 5 high-trust misunderstanding group scenes (`day5_haeun_<partner>_group_talk`, `groupMode: 'haeun_misunderstanding'`) score Haeun's affinity like her personal conversations (+2 for a sincere explanation without shifting blame onto Haeun, up to +3 for concretely caring for Haeun's awkward position or worry after defending the protagonist). The best-route budget is 142 with the flat +3 turn cap. Saves that already entered the previous route retain their original ten-turn personal scenes without the new declaration bonus or group.
+- Haeun addresses Seoyeon, Yuna and Dain as `서연 선배`, `유나 선배`, `다인 선배` in Korean and uses the corresponding senior address in Japanese. School staff remain `선생님`. Verify authored speech and Main/Group/Gallery prompt guidance together.
+- Haeun scoring guide (2026-10-02): the anchor "high scores only for concrete, heartfelt care (heartfelt +2, concrete care or empathy up to +3; empty phrases, formulaic compliments and ordinary courtesy 0 to +1)" is injected after the cache boundary for every Haeun-speaking scene (FreeTalk, group, switch group, private_1/2) in all eight languages by `FreeTalkSystem._getHaeunStageGuidance`. Penalty tiers, the -50 floor, gate 45, ending 100, the +3 turn cap and stored cap 100 are unchanged; other characters get no anchor. See `docs/haeun-stage-choices-20261002.md` and `tests/haeun-affinity-anchor.test.cjs`.
+- Haeun stricter short-line rule, late choice budget, Day 5 group scoring, and pre-gate completion bonus (2026-10-06 / 2026-10-17, user-approved): the same anchor adds, identically in all eight languages, that short or low-effort lines (one- or two-word replies such as "뭔데", one-line casual flirting, bare praise without substance) stay at 0 to +1, and that a line that does not concretely answer what Haeun said or her situation never gets +2 or more. Late stage choices are Day 4 awareness -1/+2/-2/+1, Day 5 wavering -1/+2/-2/+1 and Day 5 guilt -2/+3/+2/-3 (Day 3 cheering stays ±1), best sum +8, worst -8. Day 5 misunderstanding group scenes (`groupMode: 'haeun_misunderstanding'`) score Haeun like a personal conversation, and completing each of the three pre-gate personal conversations grants +5 (+15 total). Gates 8/45/100, the -50 floor and penalty tiers are unchanged. Haeun stays a 17-year-old student: keep every Haeun prompt and score rule non-sexual and age-appropriate. See `docs/haeun-balance-20261006.md`.
 
-## 번역테이블 (translation_review)
-- `translation_review_day{1~5}.json` — 씬별 번역 상태 추적 파일 (번역테이블)
-- 구조: `{ section: { nodeId: { _ko_text_preview, en: { _reviewed, _score, _issues }, ja: {...}, ... } } }`
-- `_reviewed: false` = 미검토, `_issues` = 문제 사유
-- 대사 수정 시 해당 씬의 `_ko_text_preview` 갱신 + 5개 언어 `_reviewed: false` 마킹
-- 다국어 번역 일괄 적용: `fix_translation_deviations.js` 패턴으로 스크립트 작성 후 `node` 실행
+## Cloudflare Pages R2 Image Proxy & Post-Deploy Live Verification (Permanent, 2026-11-09)
+- `cupid`, `harem`, `chatbot`은 빌드(`scripts/build-public.cjs`) 시 `dist/`에서 로컬 이미지를 제외하고 Pages Functions(`functions/api/media.js`, `functions/[[image]].js`)를 통해 비공개 R2 버킷에서 모든 이미지를 서빙한다.
+- **절대 프로젝트 루트(`D:\workspace\cupid`) 외부(예: 상위 `D:\workspace`)에서 `wrangler pages deploy`를 실행하지 않는다.** 루트 밖에서 배포하면 `functions/`가 누락되어 사이트 전체 이미지가 `404`로 깨진다.
+- Pages 배포는 반드시 프로젝트 루트의 `main` 브랜치에서 `git commit` + `git push origin main`을 기본으로 사용하며, 이미지/스프라이트 변경 시 `npm run images:check`, `npm run characters:check`, `python scripts/image-storage.py publish`로 R2 동기화를 먼저 완료한다.
+- 배포 직후 라이브 이미지 엔드포인트(`200 image/webp`), 백업 뷰어(`conversation-viewer.html`) 이미지, 크레딧 잔액 조회(`/api/credits` 및 `credit_snapshot`)가 모두 정상 응답하는지 확인한다.
 
-## 시나리오 수정 작업 순서
-1. **SCENARIO.md 먼저 수정** — 시나리오 문서에서 대사/구조 변경을 확정
-2. **시나리오 JS 반영** — `assets/js/scenario/day*_*.js`에 씬 추가/라우팅 변경
-3. **i18n 6개 언어 동기화** — `assets/js/i18n/{ko,en,ja,es,fr,de}/day*_*.json` 전부 반영 (번역 스크립트 사용 권장)
-4. **translation_review 갱신** — `translation_review_day{1~5}.json`의 `_ko_text_preview` + `_reviewed` 업데이트
-5. **`node validate.js` 실행** — 0 데드엔드, UNREACHABLE 확인
-5. 씬 제거 시 고아 씬을 남기지 말고 완전 삭제 (UNREACHABLE 경고 방지)
-6. 씬 삽입 시 기존 체인의 `next`를 새 씬으로 변경하고, 새 씬의 마지막 `next`가 원래 목적지를 가리키는지 확인
-
-## 이미지 생성 규칙
-- **배경 이미지**: Imagen 4 Ultra (1순위) → Imagen 4 (2순위), **1:1 비율 (1024x1024)**, `assets/images/background/`
-- **이벤트 CG**: Imagen 4 Ultra → Imagen 4, **1:1 비율 (1024x1024)**, `assets/images/background/`
-- **캐릭터 레퍼런스(_normal)**: Imagen 4 Ultra → Imagen 4, **1:1 비율 (1024x1024)**, `assets/images/characters/`
-- **캐릭터 표정/행동 변형**: 레퍼런스 이미지 + Gemini 3.1 Flash Lite Image (편집), 동일 비율 유지
-- 프롬프트에 "anime visual novel style" 사용, 텍스트/워터마크 금지 지시 필수
-- API 키: `.env.txt` (workspace 루트)
-- 캐릭터 외형 참조: `PROMPTS_READY.md`
-- **기존 이미지 비율 절대 변경 금지** — 배경 1024x1024, 캐릭터 1024x1024, CG 1024x1024
-
-## 기술 환경
-- 웹 브라우저 기반 게임 — localStorage, URL, HTML/CSS/JS만 사용
-- exe, 설치 폴더, 파일 시스템 접근 절대 불가
-- **Pages 배포 주의 (영구)**: 절대 프로젝트 루트(`D:\workspace\cupid`) 외부(예: `D:\workspace`)에서 `wrangler pages deploy`를 실행하지 말 것(`functions/`가 누락되어 R2 이미지 서빙이 전부 `404`로 깨짐). 배포 후 라이브 이미지(`200 image/webp`)와 백업 뷰어·잔액 조회 API 정상 응답을 반드시 확인할 것.
+## Harem(mixed_5) ↔ Cupid R2 에셋 자동 동기화 및 표정 판별(seductive 남발 방지) 규칙 (Permanent, 2026-11-10)
+- **Harem(mixed_5) ↔ Cupid 캐릭터 스프라이트 자동 동기화**:
+  - harem의 큐피드 방(ssets/characters/mixed_5/members/*)과 cupid 프로젝트(ssets/characters/*, config/media-storage.json, cupid-media-private R2 catalog/media-v1.json)에 새로운 캐릭터 표정 이미지가 올라가거나 수정되면 scripts/image-storage.py publish 및 scripts/sync-cupid-sprites.py를 통해 항상 자동으로 양쪽 저장소와 R2 버킷(rcherlab-site-images, rcherlab-image-backups, cupid-media-private)을 동기화한다.
+  - 양쪽 에셋의 해시가 서로 다를 경우 **나중에 올린(최신) 버전 기준**으로 평문(cupid-media-private/images/<sha256>.<ext> 및 rcherlab-site-images), CUPIDENC1 암호화본(rcherlab-image-backups), 매니페스트(character-assets.json, image-sources.json, media-storage.json, catalog/media-v1.json, media-manifest.js, media-gate.js)를 모두 일치시킨다.
+  - 대화 백업 뷰어(conversation-viewer.html)의 큐피드 아바타 캐시 키와 서명 URL에는 에셋 해시 버전(?v=<sha256[:12]>)을 포함해 R2 카탈로그 갱신 즉시 브라우저 캐시가 새 이미지로 교체되도록 유지한다.
+- **seductive 표정 남발 방지 및 lushed 판별 기준 분리 (harem, cupid, chatbot 공통)**:
+  - decideCompletionExpressions(ssets/js/openrouter-worker.js) 및 classifySchoolAffect(harem-room/src/school-affect.js)에서:
+    1. seductive는 **화자가 의도적·능동적으로 상대를 유혹하거나 성적으로 도발할 때만** 선택하도록 엄격히 제한한다.
+    2. 팔레트에 세분화된 중간 성적 코드(entranced, enduring, undressed_shy, egging_lust, kiss)가 없는 캐릭터가 수동적 흥분·홍조·가쁜 숨·노출 수치심·애무 반응 상태일 때는 절대 seductive로 대체하지 말고 **lushed(또는 shy)를 선택**하도록 state.rules와 lushed criteria를 명시한다.
+  - uildDeepSeekMultilingualRoleplayStyleRules에서 단순 **Affection / teasing**(호감/장난 -> smile, soft_smile, egyo, lushed, smirk)과 실제 성적 유혹인 **Sexual seduction / erotic temptation**(seductive, dominant_aroused)을 명확히 분리하여 일상 호감·장난 장면에서 seductive가 오발동되지 않게 한다.

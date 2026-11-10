@@ -95,4 +95,13 @@
 - Pages 배포는 반드시 프로젝트 루트의 `main` 브랜치에서 `git commit` + `git push origin main`을 기본으로 사용하며, 이미지/스프라이트 변경 시 `npm run images:check`, `npm run characters:check`, `python scripts/image-storage.py publish`로 R2 동기화를 먼저 완료한다.
 - 배포 직후 라이브 이미지 엔드포인트(`200 image/webp`), 백업 뷰어(`conversation-viewer.html`) 이미지, 크레딧 잔액 조회(`/api/credits` 및 `credit_snapshot`)가 모두 정상 응답하는지 확인한다.
 
-
+## Harem(mixed_5) ↔ Cupid R2 에셋 자동 동기화 및 표정 판별(seductive 남발 방지) 규칙 (Permanent, 2026-11-10)
+- **Harem(mixed_5) ↔ Cupid 캐릭터 스프라이트 자동 동기화**:
+  - harem의 큐피드 방(ssets/characters/mixed_5/members/*)과 cupid 프로젝트(ssets/characters/*, config/media-storage.json, cupid-media-private R2 catalog/media-v1.json)에 새로운 캐릭터 표정 이미지가 올라가거나 수정되면 scripts/image-storage.py publish 및 scripts/sync-cupid-sprites.py를 통해 항상 자동으로 양쪽 저장소와 R2 버킷(rcherlab-site-images, rcherlab-image-backups, cupid-media-private)을 동기화한다.
+  - 양쪽 에셋의 해시가 서로 다를 경우 **나중에 올린(최신) 버전 기준**으로 평문(cupid-media-private/images/<sha256>.<ext> 및 rcherlab-site-images), CUPIDENC1 암호화본(rcherlab-image-backups), 매니페스트(character-assets.json, image-sources.json, media-storage.json, catalog/media-v1.json, media-manifest.js, media-gate.js)를 모두 일치시킨다.
+  - 대화 백업 뷰어(conversation-viewer.html)의 큐피드 아바타 캐시 키와 서명 URL에는 에셋 해시 버전(?v=<sha256[:12]>)을 포함해 R2 카탈로그 갱신 즉시 브라우저 캐시가 새 이미지로 교체되도록 유지한다.
+- **seductive 표정 남발 방지 및 lushed 판별 기준 분리 (harem, cupid, chatbot 공통)**:
+  - decideCompletionExpressions(ssets/js/openrouter-worker.js) 및 classifySchoolAffect(harem-room/src/school-affect.js)에서:
+    1. seductive는 **화자가 의도적·능동적으로 상대를 유혹하거나 성적으로 도발할 때만** 선택하도록 엄격히 제한한다.
+    2. 팔레트에 세분화된 중간 성적 코드(entranced, enduring, undressed_shy, egging_lust, kiss)가 없는 캐릭터가 수동적 흥분·홍조·가쁜 숨·노출 수치심·애무 반응 상태일 때는 절대 seductive로 대체하지 말고 **lushed(또는 shy)를 선택**하도록 state.rules와 lushed criteria를 명시한다.
+  - uildDeepSeekMultilingualRoleplayStyleRules에서 단순 **Affection / teasing**(호감/장난 -> smile, soft_smile, egyo, lushed, smirk)과 실제 성적 유혹인 **Sexual seduction / erotic temptation**(seductive, dominant_aroused)을 명확히 분리하여 일상 호감·장난 장면에서 seductive가 오발동되지 않게 한다.
