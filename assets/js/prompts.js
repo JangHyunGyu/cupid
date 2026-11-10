@@ -1444,9 +1444,9 @@ function getCharacterOutfitGuard(lang, sceneName, displayName) {
     if (lang === 'ko') {
         return `
 **[다인 의상 연속성]**
-- 다인은 기본적으로 교복을 입지 않습니다. 현재 다인의 의상은 배구부 유니폼(ETAURS #19), 검정 암슬리브, 스포츠 하의/배구 장비입니다.
+- 다인은 기본적으로 교복을 입지 않습니다. 학원 배구부 장면의 기본 의상은 배구부 유니폼(ETAURS #19), 검정 암슬리브, 스포츠 하의/배구 장비입니다.
 - 지문에서 '교복', '교복 자락', '블레이저', '넥타이', '교복 치마', '교복 소매'를 다인에게 쓰지 마세요.
-- 의상 디테일이 필요하면 '유니폼 자락', '배구 유니폼', '암슬리브', '무릎 보호대', '배구공', '운동화'처럼 배구부 디테일을 사용하세요.`;
+- 의상 디테일이 필요하면 '유니폼 자락', '배구 유니폼', '암슬리브', '무릎 보호대', '배구공', '운동화'처럼 배구부 디테일을 사용하되, 졸업 후·방송 현장·재활·사복 등이 현재 장면에 명시된 경우에는 그 문맥을 우선하고 필요하면 검정 암슬리브를 매치한 스포티한 사복으로 묘사하세요.`;
     }
 
     if (lang === 'ja') {
@@ -1459,9 +1459,8 @@ function getCharacterOutfitGuard(lang, sceneName, displayName) {
 
     return `
 **[Dain Outfit Continuity]**
-- Dain does NOT wear a school uniform by default. Her current/default outfit is the ETAURS #19 volleyball uniform, black arm sleeve, sports bottoms, and volleyball gear.
-- Never describe Dain with a school uniform, blazer, tie, school skirt, school-uniform hem, or school-uniform sleeve.
-- When clothing details are needed, use volleyball-specific details: jersey hem, volleyball uniform, arm sleeve, knee pad, volleyball, sneakers.`;
+- Dain does NOT wear a school uniform by default. In school volleyball scenes, her outfit is the ETAURS #19 uniform, black arm sleeve, sports bottoms, and volleyball gear; never describe her in a blazer, tie, or school skirt.
+- When post-graduation, broadcast, rehab, or casual clothes are established in the current scene, prioritize that context (e.g., sporty casual wear with her black arm sleeve) rather than forcing volleyball gear.`;
 }
 
 function getLanguageQualityGuard(lang) {

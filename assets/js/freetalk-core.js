@@ -1000,10 +1000,16 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             ? ['그녀', '그는', '자신', '잠시', '조용히', '천천히', '다시', '이내', '살짝', '가볍게', '그리고', '하지만', '그러나', '아주', '조금', '너무', '여전히', '그저', '마치']
             : ['with', 'that', 'from', 'then', 'this', 'into', 'her', 'his', 'she', 'they', 'their', 'while', 'again', 'slowly', 'softly', 'slightly', 'quietly', 'before', 'after', 'over', 'just', 'like', 'still', 'ella', 'como', 'pero', 'para', 'elle', 'dans', 'avec', 'mais', 'sich', 'noch', 'dann', 'ela', 'para', 'como', '彼女', '自分', '少し', 'ゆっくり', '静かに', 'そして']);
         const josa = /(?:에서|으로|에게|까지|부터|을|를|은|는|이|가|의|에|로|와|과|도|만)$/u;
+        const isJa = String(lang || '').toLowerCase().startsWith('ja');
+        const tokenRe = isKo
+            ? /[가-힣]{2,}/gu
+            : (isJa
+                ? /[\p{Script=Han}]{2,}|[\p{Script=Katakana}]{2,}|[\p{Script=Han}][\p{Script=Hiragana}]{1,2}/gu
+                : (isCjk ? /(?:(?![的了着过在把被向往从用和与而便就都也又还她他它你我])[\p{Script=Han}]){2,4}/gu : /[\p{L}]{4,}/gu));
         const counts = new Map();
         for (const narration of narrations) {
             const seen = new Map();
-            for (const token of narration.match(isKo ? /[가-힣]{2,}/gu : (isCjk ? /[\p{Script=Han}\p{Script=Hiragana}\p{Script=Katakana}]{2,}/gu : /[\p{L}]{4,}/gu)) || []) {
+            for (const token of narration.match(tokenRe) || []) {
                 let key = isKo ? token.replace(josa, '') : token.toLowerCase();
                 if (isKo && key.length < 2) key = token;
                 if (isKo && /(?:다|며|고|듯|서|면서)$/u.test(key) && key.length >= 4) key = key.slice(0, 3);

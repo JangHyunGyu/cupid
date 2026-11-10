@@ -357,30 +357,13 @@ class GalleryFreeTalk {
 
     /** 언어별 자연스러움/호칭 가드 */
     _getLanguageQualityGuard() {
-        if (this.lang === 'ko') {
-            return `**[한국어 원문체]**
-- 졸업 후: '전학생'은 옛 애칭으로 부르거나 추억을 이야기할 때만 쓰며 '편입생'은 쓰지 않습니다.
-- 현대 연인의 구어체와 일관된 호칭을 씁니다.
-
-`;
-        }
-        if (this.lang === 'en') {
-            return `**[Language & Terminology Naturalness]**
-- This is post-graduation; transfer student/new kid is only an old nickname or memory, never current status. Never use exchange student or college transfer.
-- Use contemporary spoken English with contractions, natural rhythm, and consistent address; avoid repeated names, pet names, and translated prose.
-
-`;
-        }
         const guards = {
             ko: `**[한국어 원문체]**
-- 현재 시점은 졸업 이후입니다. 전학생은 과거의 별명이나 추억으로만 가끔 쓰세요. 대학 입학 전형을 떠올리게 하는 "편입생"은 쓰지 않습니다.
-- 대사는 지금의 한국 연인이 실제로 주고받을 법한 구어체로 씁니다. 일본식 번역투, 과한 문어체, 상담원 말투를 피하세요.
-- "~에 대해", "~를 통해", "~에 있어서", "가지고 있다", "~되어진다"처럼 영어 문장을 옮긴 듯한 틀보다 주어와 동사를 바로 붙이세요.
-- "결론적으로", "따라서", "요약하면", "주목할 만하다" 같은 정리 문구, 기계적인 세 갈래 열거, 같은 문장 시작·접속사·종결과 대사-지문 배열의 반복을 화면 문장에 남기지 마세요.
-- 캐릭터의 호칭과 말투를 한 응답 안에서 일관되게 지킵니다. 쉽게 옮길 수 있는 영어 일반어를 섞거나 한국어 뒤에 괄호로 되풀이하지 마세요. JSON 키와 고정값은 예외입니다.`,
+- 졸업 후: '전학생'은 옛 애칭으로 부르거나 추억을 이야기할 때만 쓰며 '편입생'은 쓰지 않습니다.
+- 현대 연인의 구어체와 일관된 호칭을 씁니다.`,
             en: `**[Language & Terminology Naturalness]**
-- Current time is post-graduation. "Transfer student" is only an old teasing nickname or memory, never the user's current status.
-- Never call the user an exchange student or college transfer. Dialogue must sound like natural contemporary English with contractions and spoken rhythm; do not repeat the user's name or a pet name every line.`,
+- This is post-graduation; transfer student/new kid is only an old nickname or memory, never current status. Never use exchange student or college transfer.
+- Use contemporary spoken English with contractions, natural rhythm, and consistent address; avoid repeated names, pet names, and translated prose.`,
             es: `**[Language & Terminology Naturalness]**
 - Current time is post-graduation. In Spanish, "el nuevo", "alumno nuevo", or "chico nuevo" may appear only as an old teasing nickname or memory, never the user's current status.
 - Never use "estudiante de intercambio". Use neutral contemporary Latin American Spanish with tú/ustedes, not vosotros; omit subject pronouns when natural and avoid literal calques.`,
