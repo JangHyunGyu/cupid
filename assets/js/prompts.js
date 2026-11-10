@@ -2628,9 +2628,7 @@ function buildSystemPrompt(params) {
     const charInteractionGuideline = findPromptValue(data.interactionGuidelines, useEnTemplate ? "Maintain a natural distance based on the situation." : "상황에 맞는 자연스러운 거리감을 유지하세요.");
     const charSpecificCriteria = findPromptValue(data.statCriteria, "");
     const charRelationshipGuideline = findPromptValue(data.relationshipGuidelines, useEnTemplate ? "Let this character’s own tastes, aversions, and way of loving shape their choices." : "이 인물의 취향과 싫어하는 것, 사랑하는 방식이 선택에 배게 하세요.");
-    const charAdultIntimacy = (effectiveLang === 'ko' || effectiveLang === 'en')
-        ? getCupidCharacterAdultIntimacy(sceneName, displayName, effectiveLang)
-        : '';
+    const charAdultIntimacy = getCupidCharacterAdultIntimacy(sceneName, displayName, effectiveLang);
     const charAddressingGuideline = getLocalizedAddressingGuideline(
         effectiveLang,
         sceneName,
