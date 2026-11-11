@@ -853,8 +853,7 @@ def restore_clipped_contours_by_lineart(rgba, orig_rgb=None):
     b = src_rgb[:, :, 2]
     a = out[:, :, 3].astype(np.float32)
 
-    # 이미 투명 배경이 적용된 RGBA 입력인지, 아니면 순백색(#FFFFFF) 배경 원본 RGB 입력인지 판별
-    top_corners_transparent = (a[0, 0] < 10.0) and (a[0, w - 1] < 10.0)
+    # 원본 RGB(orig_rgb) 상단 좌우 코너가 순백색(#FFFFFF) 캔버스이면 AI 알파가 이미 0이어도 선화 장벽 전체 복원 모드로 동작
     zero_black = (a == 0.0) & (r == 0.0) & (g == 0.0) & (b == 0.0)
     r_bg = np.where(zero_black, 255.0, r)
     g_bg = np.where(zero_black, 255.0, g)
@@ -867,33 +866,46 @@ def restore_clipped_contours_by_lineart(rgba, orig_rgb=None):
     gy, gx = np.gradient(lum)
     grad = np.hypot(gx, gy)
 
+    has_white_canvas_orig = (
+        (orig_rgb is not None)
+        and (not bool(zero_black[0, 0]))
+        and (not bool(zero_black[0, w - 1]))
+        and (float(lum[0, 0]) >= 248.0)
+        and (float(lum[0, w - 1]) >= 248.0)
+        and (float(sat[0, 0]) <= 5.0)
+        and (float(sat[0, w - 1]) <= 5.0)
+    )
+    top_corners_transparent = (not has_white_canvas_orig) and (a[0, 0] < 10.0) and (a[0, w - 1] < 10.0)
+
     main_fg = a >= 180.0
     if not np.any(main_fg):
         return out
 
     # 1. 선화 및 비순백색 장벽(Line-Art & Non-White Barrier) 검출
-    #    이미 외곽이 투명(a < 16)으로 정리된 RGBA의 경우, 외부 여백과 2x2 클로징으로 작은 틈새가 브릿징되어 정상 반투명 테두리가 닫히는 현상을 막기 위해
-    #    실제 불투명 전경(a >= 180) 또는 투명 영역 아래에 숨겨진 실제 원본 선화/채색((a == 0) & (~zero_black) & (lum < 245))만 클로징 없이 장벽으로 인정
     if top_corners_transparent:
         hidden_real_paint = (~zero_black) & (a == 0.0) & ((lum < 245.0) | (sat >= 12.0))
         valid_barrier = main_fg | hidden_real_paint
     else:
-        is_flat_white_bg = (lum >= 251.5) & (sat <= 4.5) & (grad <= 6.0) & (a < 180.0)
+        is_flat_white_bg = (lum >= 251.5) & (sat <= 4.5) & (grad <= 5.2) & (a < 180.0)
         line_or_paint_barrier = (~is_flat_white_bg) | main_fg
-        k2 = np.ones((2, 2), dtype=bool)
-        closed_barrier = ndimage.binary_closing(line_or_paint_barrier, structure=k2, iterations=1)
-        near_main_24 = ndimage.binary_dilation(main_fg, iterations=max(8, int(round(18 * scale))))
-        valid_barrier = ndimage.binary_propagation(main_fg, mask=closed_barrier & near_main_24)
+        k3 = np.ones((3, 3), dtype=bool)
+        closed_barrier = ndimage.binary_closing(line_or_paint_barrier, structure=k3, iterations=1)
+        near_main_36 = ndimage.binary_dilation(main_fg, iterations=max(16, int(round(36 * scale))))
+        valid_barrier = ndimage.binary_propagation(main_fg, mask=closed_barrier & near_main_36)
 
-    # 캔버스 테두리(x=0, y=0, x=w-1, y=h-1)와 연결된 진짜 외부 배경만 플러드필로 추출
+    # 하단 중앙(y == h-1)은 반신 캐릭터의 흰 가운·셔츠 밑단이 잘리는 경계이므로 제외하고 상·좌·우 여백 및 하단 양끝 모서리에서만 외부 배경 플러드필 수행
     walkable_bg = ~valid_barrier
     bg_lbl, _ = ndimage.label(walkable_bg)
-    true_ext_bg = np.zeros((h, w), dtype=bool)
-    for lbl_i, sl in enumerate(ndimage.find_objects(bg_lbl), 1):
-        if sl is None:
-            continue
-        if sl[0].start == 0 or sl[1].start == 0 or sl[0].stop >= h or sl[1].stop >= w:
-            true_ext_bg[sl] |= (bg_lbl[sl] == lbl_i)
+    corner_pad = max(8, int(round(16 * scale)))
+    seed_ids = (
+        set(np.unique(bg_lbl[0, :]))
+        | set(np.unique(bg_lbl[:, 0]))
+        | set(np.unique(bg_lbl[:, w - 1]))
+        | set(np.unique(bg_lbl[h - 1, :corner_pad]))
+        | set(np.unique(bg_lbl[h - 1, w - corner_pad:]))
+    )
+    seed_ids.discard(0)
+    true_ext_bg = np.isin(bg_lbl, list(seed_ids))
 
     # 선화 폐곡선 안쪽에 갇혀 외부 여백과 분리된 내부 영역 중 AI가 잘못 파먹은 영역(a < 235) 검사
     # (단, 외부 배경과 3px 이내로 맞닿은 정상 반투명 안티앨리어싱 테두리는 제외하고 실제 내부 침식 구멍만 대상)
@@ -943,12 +955,31 @@ def restore_clipped_contours_by_lineart(rgba, orig_rgb=None):
         skin_rim_frac = float(warm_skin_rim[rim_b].mean()) if rim_b.any() else 0.0
         is_small_skin_adj_detail = (not top_corners_transparent) and (area <= int(450 * (scale ** 2))) and (skin_rim_frac >= 0.12)
 
-        if (rim_a_mean >= 180.0 and float((sub_a > 0).mean()) >= 0.35) or is_small_skin_adj_detail:
+        # 흰 가운 밑단·소매 주름·옷깃처럼 선화 폐곡선(~true_ext_bg) 안쪽에 있고 밝은 의상 음영(lum >= 165)과 맞닿은 흰 의상 영역 복원
+        vis_rim_b = rim_b & (a[y0_b:y1_b, x0_b:x1_b] >= 150.0)
+        vis_rim_p75_lum = float(np.percentile(lum[y0_b:y1_b, x0_b:x1_b][vis_rim_b], 75)) if vis_rim_b.any() else 0.0
+        touches_bottom_hem = (sl[0].stop >= h - 4)
+        in_lower_or_outer_garment = (sl[0].start >= int(0.45 * h)) or (sl[1].start >= int(0.72 * w)) or (sl[1].stop <= int(0.24 * w))
+        is_eroded_white_garment = (
+            has_white_canvas_orig
+            and vis_rim_b.any()
+            and (vis_rim_p75_lum >= 168.0)
+            and (touches_bottom_hem or (in_lower_or_outer_garment and area <= int(9500 * (scale ** 2))))
+        )
+
+        if (rim_a_mean >= 180.0 and float((sub_a > 0).mean()) >= 0.35) or is_small_skin_adj_detail or is_eroded_white_garment:
             fill_m = comp
-            if is_small_skin_adj_detail:
-                # 얇은 외곽 선화 안쪽 1px 경계까지 빈틈없이 채워 손톱 상단 초승달 구멍 방지
+            if is_small_skin_adj_detail or is_eroded_white_garment:
+                # 얇은 외곽 선화 안쪽 1px 경계까지 빈틈없이 채우고 외곽 선화 테두리도 안티앨리어싱 복원
                 sub_inside = (~true_ext_bg[sl]) & (dist_to_ext_bg[sl] >= 1.2)
                 fill_m = ndimage.binary_dilation(comp, iterations=2) & sub_inside
+                line_rim = (~true_ext_bg[sl]) & (~fill_m) & (ndimage.binary_dilation(fill_m, iterations=2))
+                if np.any(line_rim):
+                    line_a = np.clip((253.5 - lum[sl][line_rim]) / 85.0, 0.25, 1.0) * 255.0
+                    a[sl][line_rim] = np.maximum(a[sl][line_rim], line_a)
+                    out[:, :, 0][sl][line_rim] = np.clip(np.round(r[sl][line_rim]), 0, 255).astype(np.uint8)
+                    out[:, :, 1][sl][line_rim] = np.clip(np.round(g[sl][line_rim]), 0, 255).astype(np.uint8)
+                    out[:, :, 2][sl][line_rim] = np.clip(np.round(b[sl][line_rim]), 0, 255).astype(np.uint8)
             a[sl][fill_m] = 255.0
             out[:, :, 0][sl][fill_m] = np.clip(np.round(r[sl][fill_m]), 0, 255).astype(np.uint8)
             out[:, :, 1][sl][fill_m] = np.clip(np.round(g[sl][fill_m]), 0, 255).astype(np.uint8)
@@ -1487,10 +1518,12 @@ def clean_nurse_sprite_bg(rgba, character_id=None):
     dist_ext = ndimage.distance_transform_edt(a >= 25.0)
     if not is_pale_face_expr:
         nail_guard = (yy >= int(358 * sy)) & (yy <= int(412 * sy)) & (xx >= int(330 * sx)) & (xx <= int(430 * sx)) & near_finger_skin
-        upper_outer = (yy < int(555 * sy)) & (~deep_face) & (~is_climax05_sleeve) & (~nail_guard) & (dist_ext <= 3.5 * sx) & (a > 0)
-        upper_white_fringe = upper_outer & (cmin >= 180.0) & (sat <= 18.0) & ((r - b) <= 12.0)
-        a[upper_white_fringe] *= np.clip((210.0 - cmin[upper_white_fringe]) / 45.0, 0.0, 0.25)
-        a[upper_outer & (cmin >= 212.0) & (sat <= 14.0) & ((r - b) <= 12.0)] = 0.0
+        # 두부·단발 외곽(y < 488, x = 295..855)의 반투명 흰끼(a < 235)만 감쇠하고 좌우 어깨·소매의 불투명 흰 가운(a >= 235 또는 어깨 구간)은 100% 보호
+        hair_head_box = (yy < int(488 * sy)) & (xx >= int(295 * sx)) & (xx <= int(855 * sx))
+        upper_outer = hair_head_box & (~deep_face) & (~is_climax05_sleeve) & (~nail_guard) & (dist_ext <= 3.0 * sx) & (a > 0) & (a < 235.0)
+        upper_white_fringe = upper_outer & (cmin >= 185.0) & (sat <= 16.0) & ((r - b) <= 12.0)
+        a[upper_white_fringe] *= np.clip((218.0 - cmin[upper_white_fringe]) / 45.0, 0.0, 0.30)
+        a[upper_outer & (cmin >= 220.0) & (sat <= 12.0) & ((r - b) <= 12.0)] = 0.0
 
     lower_outer = (yy >= int(520 * sy)) & (dist_ext <= 2.2 * sx) & (a > 0)
     local_min_lum = ndimage.minimum_filter(lum, size=max(3, int(round(5 * sx))))
@@ -1644,15 +1677,17 @@ def remove_trapped_hair_pockets(rgba, orig_rgb=None, character_id=None):
     warm_skin = (a >= 140.0) & ((sr - sb) >= 14.0) & (sr >= 145.0)
     hand_closed = ndimage.binary_fill_holes(ndimage.binary_closing(a >= 120.0, iterations=max(3, int(round(5 * scale)))))
 
-    # 상반신 머리카락·턱·목·옷깃·손가락 주변(y < 0.38*h)에서 좁은 틈새 JPEG 링잉까지 포괄하는 저채도 고명도 후보 추출
-    pocket_zone = (yy < int(0.38 * h)) & (~deep_face) & (a > 0)
-    cand = pocket_zone & (cmin >= 222.0) & (sat <= 18.0) & ((sr - sb) <= 16.0) & ((sb - sg) <= 7.0)
+    # 흰 가운 어깨·소매가 y 경계선에서 사전 절단되어 소형 조각으로 오인되지 않도록 먼저 전체 이미지에서 흰 연결 요소를 라벨링한 뒤 두부·목·손 범위만 검사
+    cand = (~deep_face) & (a > 0) & (cmin >= 222.0) & (sat <= 18.0) & ((sr - sb) <= 16.0) & ((sb - sg) <= 7.0)
     lbl, _ = ndimage.label(cand, structure=np.ones((3, 3), dtype=bool))
 
     killed = np.zeros((h, w), dtype=bool)
     max_area = int(4800 * scale * scale)
     for idx, sl in enumerate(ndimage.find_objects(lbl), 1):
         if sl is None:
+            continue
+        # 머리카락·턱·목·손가락 범위(y <= 0.375*h, x = 0.23*w..0.72*w) 바깥으로 뻗은 흰 가운 어깨·소매·카라는 즉시 제외
+        if sl[0].stop > int(0.375 * h) or sl[1].start < int(0.23 * w) or sl[1].stop > int(0.72 * w):
             continue
         comp = (lbl[sl] == idx)
         area = int(comp.sum())
@@ -1818,7 +1853,9 @@ def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
             rim_lums = lum_cur[y0_o:y1_o, x0_o:x1_o][rim_o]
             fg_lum_mean = float(rim_lums.mean())
             fg_lum_p25 = float(np.percentile(rim_lums, 25))
-            if fg_lum_mean <= 165.0 and fg_lum_p25 <= 120.0:
+            fg_lum_p75 = float(np.percentile(rim_lums, 75))
+            # 주변에 밝은 흰 의상 음영(p75 >= 195)이 이어지는 가운·소매 주름은 보존하고 어두운 선화·치마 바깥 포켓만 제거
+            if fg_lum_mean <= 155.0 and fg_lum_p25 <= 115.0 and fg_lum_p75 < 195.0:
                 killed_op[op_sl] |= sub_op
         if np.any(killed_op):
             a[killed_op] = 0.0
