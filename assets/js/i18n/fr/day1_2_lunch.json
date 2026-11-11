@@ -1,11 +1,11 @@
 {
     "lunch_start": {
         "name": "{name}",
-        "text": "*Alors que la cloche du déjeuner retent, la salle de classe s'anime. Seoyeon prend son sac de déjeuner et se dirige vers les escaliers. Dain fait signe de la main dans le couloir. Yuna serre son livre contre elle et se dirige vers la bibliothèque.*"
+        "text": "*La sonnerie de midi retentit et la classe s’anime aussitôt. Seoyeon se dirige vers l’escalier du couloir avec son sac-repas, Dain fait signe depuis la porte et Yuna part vers le couloir de l’annexe, un livre contre elle.*"
     },
     "lunch_start_4": {
         "name": "Seoyeon",
-        "text": "Tu montes sur le toit, comme on a dit ? *Elle s'arrête sur le palier et désigne l'étage du bout des doigts.*"
+        "text": "Si tu ne sais pas encore où déjeuner, tu veux monter sur le toit ? *Elle s’arrête sur le palier et désigne l’étage supérieur du bout des doigts.*"
     },
     "lunch_start_4_b": {
         "name": "{name}",
@@ -21,7 +21,7 @@
     },
     "lunch_start_7": {
         "name": "{name}",
-        "text": "*Trois chemins s'ouvrent devant moi : le toit dans le vent, la supérette qui sent le pain sucré, et la bibliothèque silencieuse.*"
+        "text": "*L’escalier qui monte au toit, le couloir qui descend vers la cafétéria et le passage vers la bibliothèque de l’annexe s’offrent tour à tour à mon regard.*"
     },
     "lunch_choice": {
         "name": "{name}",
@@ -34,11 +34,11 @@
     },
     "lunch_seo_1": {
         "name": "Seoyeon",
-        "text": "*Clic. Dès que Seoyeon ouvre la lourde porte de fer d'un tour de clé, un vent de printemps frais d'avril me balaie les mèches.*"
+        "text": "*D’un déclic métallique, Seoyeon déverrouille la lourde porte de fer avec une petite clé, et une brise fraîche d’avril effleure ma frange.*"
     },
     "lunch_seo_1_aff_high": {
         "name": "Seoyeon",
-        "text": "Viens t'asseoir. Ta blague dans le couloir, ce matin, m'est restée en tête pendant tout le cours. Ça m'a un peu fait rire."
+        "text": "Viens t’asseoir ici. Ce que tu as dit ce matin devant le portail m’est revenu pendant tout le cours, ça m’a bien fait sourire."
     },
     "lunch_seo_1_aff_default": {
         "name": "Seoyeon",
@@ -50,7 +50,7 @@
     },
     "lunch_seo_3": {
         "name": "Seoyeon",
-        "text": "Oui. Personne ne monte ici. C'est mon coin, rien qu'à moi."
+        "text": "Oui, je les arrose et je m’en occupe dès que j’ai un moment. Personne ne monte ici, c’est mon petit coin à moi."
     },
     "lunch_seo_4": {
         "name": "{name}",
@@ -58,7 +58,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "Je n'ouvre jamais cet endroit à quelqu'un d'autre. *Elle déplie une chaise sans un bruit.* Aujourd'hui, je fais une exception."
+        "text": "D’habitude, je n’ouvre cet endroit à personne. *Elle époussette légèrement le dossier de l’une des chaises pliantes et la rapproche pour moi.* C’est exceptionnel, juste pour aujourd’hui."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
-        "text": "*Du sac posé sur ses genoux, elle sort côte à côte deux boîtes à bento pastel, qui font bien 2 portions.*"
+        "text": "*Du sac posé sur ses genoux, elle sort deux boîtes à bento pastel — largement de quoi nourrir deux personnes — et les aligne côte à côte.*"
     },
     "lunch_seo_9": {
         "name": "{name}",
@@ -82,7 +82,7 @@
     },
     "lunch_seo_11": {
         "name": "{name}",
-        "text": "Omelette roulée bien dorée, saucisses en poulpe, et même des boulettes de riz. Parfait. Et deux paires de baguettes, dès le départ."
+        "text": "Omelette roulée bien dorée, petites saucisses en poulpe et même des boulettes de riz. Et tu avais prévu deux paires de baguettes dès le départ."
     },
     "lunch_seo_13": {
         "name": "{name}",
@@ -102,7 +102,7 @@
     },
     "lunch_seo_17": {
         "name": "Seoyeon",
-        "text": "Alors, je goûte en premier. *Au-delà de la rambarde, le terrain en plein soleil et le toit silencieux de l'annexe de la bibliothèque se voient d'un coup.*"
+        "text": "Alors j’y goûte volontiers. *Par-dessus la rambarde, la cour baignée de soleil et le toit de la bibliothèque de l’annexe s’étendent d’un seul coup d’œil.*"
     },
     "lunch_seo_19": {
         "name": "Seoyeon",
@@ -114,11 +114,11 @@
     },
     "lunch_seo_21": {
         "name": "Seoyeon",
-        "text": "*Seoyeon rit en touchant le séparateur du boîtier de déjeuner avec ses baguettes.* Je te demandais ton avis sur le lycée. Pourquoi tu complimentes le bento ?"
+        "text": "*Seoyeon tapote le séparateur de la boîte du bout de ses baguettes et éclate de rire.* Je te demande tes impressions sur le lycée et tu me réponds en complimentant mon bento."
     },
     "lunch_seo_22": {
         "name": "Seoyeon",
-        "text": "*Seoyeon hésite un instant, prend le plus joli morceau d'omelette roulée et le tend avec précaution vers ma bouche.*"
+        "text": "*Après une brève hésitation, Seoyeon saisit le morceau d’omelette le plus net et l’approche doucement de mes lèvres.*"
     },
     "lunch_seo_23": {
         "name": "Seoyeon",
@@ -136,7 +136,7 @@
     },
     "lunch_seo_c1_1": {
         "name": "{name}",
-        "text": "*Je me penche un peu et je prends directement, au bout des baguettes de Seoyeon, l'omelette moelleuse et chaude.*"
+        "text": "*Je me penche légèrement et prends directement au bout des baguettes de Seoyeon le morceau d’omelette tiède et moelleux.*"
     },
     "lunch_seo_c1_2": {
         "name": "{name}",
@@ -152,7 +152,7 @@
     },
     "lunch_seo_c1_3_b": {
         "name": "{name}",
-        "text": "*Seoyeon, qui tripotait l'étiquette à demi pliée, cache son lobe rougi et reprend ses baguettes.*"
+        "text": "*Tout en tripotant le coin replié de l’étiquette de sa bouteille, Seoyeon cache le lobe rougi de son oreille sous ses cheveux et reprend ses baguettes.*"
     },
     "lunch_seo_c2_1": {
         "name": "Seoyeon",
@@ -160,11 +160,11 @@
     },
     "lunch_seo_c2_2": {
         "name": "Seoyeon",
-        "text": "Hmm. Comme tu disais, même moi, je le trouve bon."
+        "text": "Mm, même pour moi, l’assaisonnement est réussi."
     },
     "lunch_seo_c2_3": {
         "name": "Seoyeon",
-        "text": "Attends, pourquoi le couvercle ne s'emboîte pas ? *À force de se presser, il ne se ferme qu'à la troisième fois, dans un clic.*"
+        "text": "Finissons de manger avant que ça refroidisse. *Les yeux baissés sur son bento, elle rajuste ses baguettes et tripote le bouchon de sa bouteille.*"
     },
     "lunch_seo_after": {
         "name": "{name}",
@@ -180,7 +180,7 @@
     },
     "lunch_seo_after_4": {
         "name": "Seoyeon",
-        "text": "C'est pas une grande invitation. Juste manger ensemble. Dès que la cloche sonne, tu montes."
+        "text": "Ce n’est rien de solennel, juste histoire de discuter encore un peu. Je laisserai la porte déverrouillée, monte dès que ça sonne."
     },
     "lunch_seo_after_5": {
         "name": "Seoyeon",
@@ -189,7 +189,7 @@
     "lunch_seo_after_7": {},
     "lunch_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Elle range la boîte à bento dans son sac, pousse la chaise pliante d'une demi-main vers moi et s'assoit.* Ici, le vent est plutôt frais. T'as pas froid ?",
+        "text": "*Elle range les boîtes vides dans son sac et rapproche sa chaise pliante d’une demi-main vers moi.* La brise est plutôt fraîche ici, tu n’as pas froid ?",
         "context": "Déjeuner du premier jour. Juste après avoir partagé le bento de Seoyeon sur le toit. Ils sont encore maladroits, mais commencent à se montrer curieux l'un de l'autre.",
         "personality": "Seoyeon est une présidente du conseil des élèves posée, qui avance à son propre rythme. Elle observe avant de montrer son intérêt et reste franche dans ses paroles comme dans ses gestes."
     },
@@ -211,11 +211,11 @@
     },
     "lunch_dain_4": {
         "name": "Dain",
-        "text": "Évidemment, pierre-feuille-ciseaux en une seule manche. C'est carré, non ?"
+        "text": "Pierre-feuille-ciseaux en une manche sèche, évidemment. C’est net et sans bavure !"
     },
     "lunch_dain_5": {
         "name": "{name}",
-        "text": "Quelqu'un qui joue sa vie à pierre-feuille-ciseaux, c'est une première."
+        "text": "C’est bien la première fois que je vois quelqu’un prendre un pari de pain aussi au sérieux."
     },
     "lunch_dain_6": {
         "name": "Dain",
@@ -235,7 +235,7 @@
     },
     "lunch_dain_10": {
         "name": "{name}",
-        "text": "*Les ciseaux grands ouverts de Dain s'arrêtent devant mon poing. Dain a perdu.*"
+        "text": "*Les ciseaux grand ouverts de Dain s’arrêtent net devant mon poing. Elle a perdu.*"
     },
     "lunch_dain_11": {
         "name": "Dain",
@@ -247,19 +247,19 @@
     },
     "lunch_dain_12_b": {
         "name": "Dain",
-        "text": "Ah, t'es agaçant ! Bon, c'est moi qui régale. Madame, deux pains soboro et du lait à la fraise, s'il vous plaît !"
+        "text": "Argh, t’es vraiment agaçant ! Bon d’accord, c’est pour moi ! Madame, deux pains briochés et deux laits à la fraise, s’il vous plaît !"
     },
     "lunch_dain_14": {
         "name": "Dain",
-        "text": "*Elle pose les pièces sur le comptoir d'un geste vif et serre contre elle deux sachets de pain soboro encore chaud.*"
+        "text": "*Elle passe sa carte sur le lecteur et récupère deux sachets de pain tout chaud avec les briques de lait à la fraise.*"
     },
     "lunch_dain_15": {
         "name": "{name}",
-        "text": "*Nous nous asseyons côte à côte sur un banc à l'ombre du wisteria et partageons les pains. Chaque fois que Dain bouge, sa chaleur me parvient, portant le parfum du soleil.*"
+        "text": "*On s’installe côte à côte sur le long banc au coin de la cafétéria et on se partage les sachets de pain. À chacun de ses gestes, je sens la chaleur de sa course dans les escaliers.*"
     },
     "lunch_dain_16": {
         "name": "Dain",
-        "text": "*Elle déchire le sachet d'un grand geste et me fixe.* Hé, au fait, tu fais vraiment aucun sport, d'habitude ?"
+        "text": "*Elle ouvre son sachet de pain d’un coup sec et se tourne vers moi.* Dis, t’étais même pas essoufflé en dévalant les escaliers tout à l’heure — tu fais du sport d’habitude ?"
     },
     "lunch_dain_17": {
         "name": "{name}",
@@ -275,7 +275,7 @@
     },
     "lunch_dain_20": {
         "name": "Dain",
-        "text": "Me vanter ? Tu parles de ma pub, ou de mes records en sport ?"
+        "text": "Me vanter ? Tu parles de ma pub pour le club de volley ou de mon record de détente ?"
     },
     "lunch_dain_21": {
         "name": "{name}",
@@ -283,11 +283,11 @@
     },
     "lunch_dain_22": {
         "name": "Dain",
-        "text": "*Dans la main de Dain, le coin du pack rose de lait à la fraise se froisse un peu.*"
+        "text": "*Le coin de la brique de lait à la fraise dans la main de Dain s’enfonce légèrement.*"
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "Hum. Tu m'as eue direct. Alors, t'as vraiment un peu de dispositions ?"
+        "text": "Hum, grillée direct ! Mais tout à l’heure en classe, quand j’ai parlé de réceptions, t’avais l’air de t’y connaître. T’as déjà joué au volley ?"
     },
     "lunch_dain_choice": {
         "name": "Dain",
@@ -300,7 +300,7 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "Oh, t'es sûr de toi ? Alors viens au gymnase après les cours. L'échauffement, je te le fais moi-même. Ça marche ?"
+        "text": "Oh, t’as confiance en toi ? Alors passe au gymnase demain après les cours. Je m’occuperai de toi dès l’échauffement, marché conclu ?"
     },
     "lunch_dain_c1_2": {
         "name": "Dain",
@@ -308,7 +308,7 @@
     },
     "lunch_dain_c2_1": {
         "name": "Dain",
-        "text": "Allez, c'est pas comme si ça t'intéressait zéro ! Passe un moment au gymnase après les cours. Même juste pour regarder, tu verras, c'est marrant."
+        "text": "Allez, fais pas genre ça t’intéresse pas du tout ! Passe faire un tour au gymnase demain après les cours. Même juste regarder, c’est sympa."
     },
     "lunch_dain_after": {
         "name": "{name}",
@@ -328,7 +328,7 @@
     },
     "lunch_dain_after_5": {
         "name": "Dain",
-        "text": "*Du poing, pour jouer, elle me tape l'épaule, laisse la chaleur souple de ses doigts, puis recule d'un pas.*"
+        "text": "*Elle me donne une petite tape sur l’épaule du poing et recule d’un pas.*"
     },
     "lunch_dain_freetalk": {
         "name": "Dain",
@@ -342,19 +342,19 @@
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
-        "text": "*Pas de petit mot à part. Yuna est déjà assise dans un coin de la salle de lecture, là où le soleil tombe en biais, et elle ouvre son livre en silence.*"
+        "text": "*Quand j’ouvre la porte de la bibliothèque de l’annexe, une odeur calme de papier flotte dans l’air. Yuna est déjà assise dans un coin ensoleillé de la salle de lecture, un livre ouvert devant elle.*"
     },
     "lunch_yuna_2": {
         "name": "Yuna",
-        "text": "La chaise, doucement. Sans bruit. *De son index blanc, elle appuie sans bouger sur le coin de la page ouverte.*"
+        "text": "Marche un peu plus doucement ici. *Elle pose tranquillement l’index sur le coin de la page ouverte.*"
     },
     "lunch_yuna_4": {
         "name": "Yuna",
-        "text": "Attends un instant. *Elle plie bien droit le bout du reçu de prêt glissé dedans, et le cache sous le marque-page.*"
+        "text": "Attends juste un instant. *Elle replie soigneusement le bout du ticket d’emprunt et le glisse sous son marque-page.*"
     },
     "lunch_yuna_5": {
         "name": "{name}",
-        "text": "*5 secondes, puis encore 10, passent en silence. Yuna ne fait que caresser le coin plié du reçu. Elle ne tourne pas la page.*"
+        "text": "*Un court silence s’installe. Yuna effleure simplement le coin plié du ticket sans tourner la page.*"
     },
     "lunch_yuna_5_b": {
         "name": "{name}",
@@ -366,7 +366,7 @@
     },
     "lunch_yuna_8": {
         "name": "Yuna",
-        "text": "J'ai enlevé le sac. Assieds-toi ici. *Elle retire son sac de la chaise d'à côté et baisse de nouveau les yeux vers son livre.*"
+        "text": "J’ai enlevé mon sac. Assieds-toi sans faire grincer la chaise. *Elle retire son sac de la chaise voisine, puis rebaisse les yeux vers son livre.*"
     },
     "lunch_yuna_10": {
         "name": "{name}",
@@ -374,7 +374,7 @@
     },
     "lunch_yuna_10_b": {
         "name": "{name}",
-        "text": "*Les bouts de doigts de Yuna effleurent l'inscription délavée sur le marque-page. Je détourne le regard et tire un livre de l'étagère derrière nous.*"
+        "text": "*Le bout des doigts de Yuna recouvre l’inscription sur son marque-page. Je détourne les yeux et tire un autre tome de l’étagère derrière nous.*"
     },
     "lunch_yuna_12": {
         "name": "Yuna",
@@ -390,7 +390,7 @@
     },
     "lunch_yuna_15": {
         "name": "Yuna",
-        "text": "Tiens. Lis d'abord celui-là. *Elle fait glisser vers moi le tome 1 qu'elle avait empilé près de sa main.*"
+        "text": "Il est là. Commence par celui-ci. *Elle pousse doucement vers moi le tome 1 posé près de sa main.*"
     },
     "lunch_yuna_16": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     },
     "lunch_yuna_20": {
         "name": "{name}",
-        "text": "*Longtemps après, je relève la tête. Yuna, le soleil de la fenêtre dans le dos, me regardait en silence par-dessus son livre.*"
+        "text": "*Quand je relève enfin la tête après un long moment de lecture, Yuna m’observe silencieusement par-dessus son livre, à contre-jour de la fenêtre.*"
     },
     "lunch_yuna_21": {
         "name": "{name}",
@@ -414,7 +414,7 @@
     },
     "lunch_yuna_22": {
         "name": "Yuna",
-        "text": "*Yuna glisse un mince marque-page entre les pages.* Juste… d'être resté silencieux jusqu'au bout."
+        "text": "*Yuna glisse un fin marque-page entre les feuilles.* C’est juste que tu es resté lire tranquillement jusqu’au bout."
     },
     "lunch_yuna_23": {
         "name": "{name}",
@@ -426,7 +426,7 @@
     },
     "lunch_yuna_25": {
         "name": "Yuna",
-        "text": "*Le regard de Yuna effleure la couverture du livre que je tiens, puis atteint mes yeux. Dans le silence d'un instant, nos regards s'entrelacent, froids et profonds.*"
+        "text": "*Le regard de Yuna effleure la couverture entre mes mains avant de s’arrêter sur mes yeux. Dans ce bref silence, nos regards posés se croisent.*"
     },
     "lunch_yuna_choice": {
         "name": "{name}",
@@ -440,7 +440,7 @@
     },
     "lunch_yuna_c1_1": {
         "name": "Yuna",
-        "text": "Ouais. Te presse pas. Lis le tome 1 doucement. Plus tu avances, plus ça devient profond."
+        "text": "Oui, ne tourne pas les pages trop vite et lis-le tranquillement jusqu’au bout. Plus on avance dans les tomes suivants, plus l’histoire gagne en profondeur."
     },
     "lunch_yuna_c1_2": {
         "name": "Yuna",
@@ -448,7 +448,7 @@
     },
     "lunch_yuna_c2_1": {
         "name": "Yuna",
-        "text": "De toute façon, en classe, j'aurais rien à faire."
+        "text": "Peut-être. Je suis juste venue ici parce que la salle de classe était trop bruyante."
     },
     "lunch_yuna_c2_2": {
         "name": "Yuna",
@@ -456,13 +456,13 @@
     },
     "lunch_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Yuna pose tout doucement ses deux mains pâles l'une sur l'autre, sur la couverture du livre fermé.* Passer le temps dans ce silence, ça t'a pas ennuyé ?",
+        "text": "*Elle pose doucement ses deux mains l’une sur l’autre sur la couverture fermée.* Passer un moment aussi calme, ça ne t’a pas ennuyé ?",
         "context": "Déjeuner du premier jour, juste après avoir passé un moment calme avec Yuna à la bibliothèque. Ils se connaissent encore peu, mais une curiosité silencieuse circule entre eux.",
         "personality": "Yuna est une lectrice réservée et prudente. Elle observe et réfléchit avant de parler, puis dévoile davantage ses propres pensées à mesure que la confiance grandit."
     },
     "lunch_end": {
         "name": "{name}",
-        "text": "*La sonnerie qui annonce le 5e cours retentit, et cette première pause déjeuner, courte mais un peu fébrile, se termine.*"
+        "text": "*La sonnerie de la cinquième heure résonne dans le couloir, marquant la fin de ma première pause déjeuner au lycée.*"
     },
     "lunch_dain_trap_1": {
         "name": "Dain",

@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*De retour à la maison, j'accroche au cintre le nouvel uniforme encore peu familier et je m'allonge de tout mon long sur le matelas.*"
+        "text": "*De retour à la maison, je suspends sur un cintre mon nouvel uniforme encore peu familier et m’allonge sur le matelas.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "night_msg_seo_2": {
         "name": "{name}",
-        "text": "*La brise était fraîche, et le bento était bon aussi*"
+        "text": "La brise était fraîche et le bento délicieux. *J’écris une courte réponse et l’envoie.*"
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*La bulle « C'est le service spécial pour l'élève transféré », arrivée seule une ligne plus bas, comme ajoutée après une hésitation, me fait relever le coin de la bouche sans vraie raison.*"
+        "text": "*Après un court battement, une bulle séparée s’affiche juste en dessous — « Service spécial nouvel élève » — et le coin de mes lèvres se relève tout seul.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -57,15 +57,15 @@
     },
     "night_hidden_check": {
         "name": "{name}",
-        "text": "*Au moment de fermer la messagerie, une autre alerte de l'appli du lycée s'affiche dans la barre de notifications, en haut.*"
+        "text": "*Au moment de fermer la messagerie, je remarque une autre notification de l’application du lycée dans la barre supérieure.*"
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Une publication de notre professeur principal apparaît dans l'application des annonces de la classe. 'Apportez votre manuel de mathématiques pour le premier cours demain. Et quant à notre nouvel élève transféré, il suffit qu'il s'installe en toute sécurité.'*"
+        "text": "*Dans l’application du lycée, une note individuelle de ma professeure principale accompagne l’avis de classe : « Demain en première heure, apportez le manuel de maths. — Et pour le nouvel élève arrivé aujourd’hui, tant que tu prends tes marques sans encombre, cela me suffit. »*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Ce n'est qu'après avoir relu une fois de plus la phrase gentille ajoutée à la fin de l'annonce que je retourne le téléphone contre ma poitrine.*"
+        "text": "*Je relis encore une fois cette courte phrase laissée par ma professeure principale avant de poser mon téléphone retourné sur ma poitrine.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*La voix douce de l'infirmière semble encore résonner à mon oreille. Je me lève et je remplis à ras bord la bouteille près de l'oreiller.*"
+        "text": "*En repensant à la recommandation posée de l’infirmière cet après-midi, je me relève pour remplir d’eau la bouteille sur ma table de chevet.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Je laisse un court message et place mon téléphone près de ma tête. L'heure du réveil de demain matin est visible sur l'écran de verrouillage qui s'estompe.*"
+        "text": "*Après avoir envoyé un court bonsoir, je vérifie l’écran verrouillé où s’affiche l’heure du réveil de demain matin.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -101,7 +101,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*L'indicateur de saisie clignote quelques fois, comme si l'autre écrivait quelque chose, puis disparaît sans bruit.*"
+        "text": "*En bas de la fenêtre de discussion, l’indicateur de saisie clignote quelques instants avant de s’effacer sans bruit.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*C'est tellement absurde qu'un rire m'échappe, mais mon doigt avait déjà tapé « Partant » dans la zone de réponse.*"
+        "text": "*Un rire m’échappe, mais mon pouce a déjà tapé « Marché conclu » dans le champ de réponse.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",
@@ -133,11 +133,11 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Je pose mon téléphone et regarde le plafond. Le nouvel uniforme accroché à proximité dégage le parfum de la brise printanière et des fleurs de cerisier d'aujourd'hui.*"
+        "text": "*En repensant aux visages derrière les nouveaux noms ajoutés aujourd’hui à mes contacts, je pose mon téléphone verrouillé près de l’oreiller.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Je regarde encore une fois les nouveaux noms enregistrés côte à côte dans mes contacts, puis j'éteins l'écran en silence.*"
+        "text": "*Je lève les yeux vers le plafond plongé dans la pénombre. Du nouvel uniforme suspendu au cintre s’échappe une trace légère de la brise printanière d’aujourd’hui.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",
@@ -153,7 +153,7 @@
     },
     "forced_violation_day1_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon me coupe net.* Un malentendu ? À partir du moment où j'ai clairement dit non et posé une limite, ça ne peut plus en être un. Plus d'excuses."
+        "text": "*Seoyeon me coupe net.* Un malentendu ? À partir du moment où j’ai clairement posé une limite et dit non, ça ne peut plus en être un. Garde tes excuses."
     },
     "forced_violation_day1_after_yuna": {
         "name": "Yuna",
@@ -169,7 +169,7 @@
     },
     "forced_violation_day1_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna tourne la tête sans même écouter mon explication jusqu'au bout.* J'ai clairement dit non. Des excuses, je n'ai pas à les entendre."
+        "text": "*Yuna détourne la tête sans même écouter la fin de mes explications.* J’ai clairement dit non. Je n’écouterai aucune excuse."
     },
     "forced_violation_day1_after_dain": {
         "name": "Dain",

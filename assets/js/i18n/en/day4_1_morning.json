@@ -1,7 +1,7 @@
 {
     "hidden_homeroom_d4_low": {
         "name": "Homeroom Teacher",
-        "text": "*In front of the meeting place, the homeroom teacher I run into pulls the worn paper envelope deep against her chest.* Sorry, but I can't show you the manuscript this time. See you at school on Monday."
+        "text": "*Running into me outside the gate, my homeroom teacher hugs the paper envelope close to her chest.* I’m sorry, I don’t think I can show you the draft this time. Let’s see each other at tomorrow’s school event."
     },
     "hidden_homeroom_d4_neg": {
         "name": "Homeroom Teacher",
@@ -68,7 +68,7 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*The appointments I overlapped, precarious as they are, are still there on the calendar. I know this isn't something I can get past just by splitting the time, and my fingers feel heavy.*"
+        "text": "*Overlapping plans sit side by side on Saturday’s calendar slot. My thumb stops halfway down the schedule.*"
     },
     "minsu_cheer_4_d": {},
     "minsu_cheer_4_e": {},
@@ -82,7 +82,7 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*It's one neat line, but the timestamp is seven in the morning. I can picture her getting ready long before, the way Seoyeon would, and a smile pulls at my mouth.*"
+        "text": "*The timestamp beside that single neat line reads seven in the morning. Picturing her already dressed and ready makes me smile.*"
     },
     "morning4_seo_msg_1_c": {},
     "morning4_yuna_msg_1": {
@@ -91,15 +91,15 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*There's not even a period at the end of those two short lines, but I can already see Yuna showing up early anyway, sitting in profile by the window.*"
+        "text": "*It’s just one short line without even a final period, yet I can already picture Yuna sitting quietly by the window ahead of time.*"
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
-        "text": "*Past those plain sentences, I almost hear Yuna's quiet voice. I decide to give the whole day to just one person.*"
+        "text": "*Yuna’s quiet voice comes right through those clipped words. I send a quick reply and pull open my closet door.*"
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "It's finally today! You didn't forget, 10 in front of the gym, right? Ah, what do I do, I'm nervous already. Pretend you didn't see that last line!"
+        "text": "Today’s finally the day! 10 AM in front of the gym, you didn’t forget, right? Ugh, what do I do, I’m already nervous. Hey, pretend you didn’t see what I just said!"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
@@ -107,7 +107,7 @@
     },
     "morning4_hidden_check": {
         "name": "{name}",
-        "text": "*Cutting through the early morning air, I wait at the crosswalk of the intersection in front of school for the light to change.*"
+        "text": "*There’s still plenty of time before my plans. Leaving home early, I wait for the light at the crosswalk in front of school.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_missed": {
@@ -136,7 +136,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*Instead of the suit I usually see at the podium, she's in a beige trench coat and a knit.*"
+        "text": "*Instead of the roll book she usually brings to the podium, today she holds a thick brown document envelope in both arms.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -144,7 +144,7 @@
     },
     "hidden_homeroom_d4_3_e": {
         "name": "Homeroom Teacher",
-        "text": "The members who signed up said a weekend morning was the only time they could make. An advisor has to fit the students' schedules."
+        "text": "Once we worked around everyone’s cram school hours, Saturday morning was all that was left. What can a club advisor do but match their schedule?"
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
@@ -176,7 +176,7 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Homeroom Teacher",
-        "text": "It's an open critique, and we take outside readers' comments, so that's fine. Whether you read the manuscript all the way through is something you can decide comfortably once you're there."
+        "text": "We welcome feedback from readers outside the club too, so it’s fine. You can just read a bit and head out—no pressure."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Homeroom Teacher",
@@ -245,7 +245,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Homeroom Teacher",
-        "text": "If a passage feels awkward, or like you can't get a breath, underline it without holding back. Tell me honestly, too, whether you turned the page because you wanted the next one, or just kept reading out of obligation. *She points at the stack of critique printouts with her chin and looks quietly into my eyes.*",
+        "text": "If a sentence trips you up or a passage drags, underline it without mercy. And write down honestly whether you turned the page out of curiosity or sheer obligation. *She gestures toward the stack of printouts with her chin and meets my eyes.*",
         "choices": [
             "You still haven't decided on the ending?",
             "You'll show the whole thing to the club too, right?",
@@ -278,7 +278,7 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
-        "text": "Thanks for thinking of that. Anonymous critique is the rule, so leave the name blank and just put down what you think."
+        "text": "I’d appreciate that. Everyone reads the drafts blind anyway, so leave the name blank and write whatever comes to mind."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "{name}",
-        "text": "Reading your writing in a cafe feels strange. *She writes a small number at the top of the printout and slides it toward me. The fingertips brush the back of my hand.*"
+        "text": "Reading your writing at a cafe outside school feels weirdly special. *She jots a small number at the top of the printout and slides it over, her fingers lightly touching the back of my hand.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Homeroom Teacher",
@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "I'm here for the counseling time you set. *I open the door to the quiet nurse's office. A counseling record and an information sheet lie on the desk.*"
+        "text": "Ma’am, I came at the time you mentioned yesterday. *I open the quiet infirmary door. A counseling sheet and an information handout rest on the desk.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "School Nurse",
@@ -327,11 +327,11 @@
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
-        "text": "This is to wrap up the counseling we went through last time, right?"
+        "text": "You called me in so we could finish wrapping up what we talked about yesterday, right?"
     },
     "hidden_nurse_d4_morning_6": {
         "name": "School Nurse",
-        "text": "Right. We'll see how you've been since then, and also settle a place where you can get help right away the next time things are hard."
+        "text": "Yeah. I wanted to see your face, check if you got some sleep, and figure out together where you can lean right away whenever things feel heavy."
     },
     "hidden_nurse_d4_morning_7": {
         "name": "School Nurse",
@@ -351,7 +351,7 @@
     },
     "hidden_nurse_d4_morning_11": {
         "name": "School Nurse",
-        "text": "Have you settled on even one adult you won't hesitate to ask for help, even when the nurse's office door is closed?"
+        "text": "When the infirmary door is closed, is there at least one adult you’ve thought of whom you could go to right away instead of bottling it up alone?"
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
@@ -364,7 +364,7 @@
     },
     "hidden_nurse_d4_morning_choice_trap": {
         "name": "School Nurse",
-        "text": "Of course you can come to me first. But there also has to be an adult who can look out for you when I'm out of the nurse's office, or when I can't reach you."
+        "text": "I’m glad you trust me that much. Still, let’s make sure there’s at least one more adult you can lean on so you’re never left alone when I’m away."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
@@ -380,11 +380,11 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "School Nurse",
-        "text": "I won't pass on what you confide to anyone else without permission. But if I see a risk of you getting hurt, I'll work with other adults."
+        "text": "Nothing you share in here leaves this room without your permission. Still, if you ever seem truly at risk, I won’t keep it to myself—I’ll ask other teachers to help protect you."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "School Nurse",
-        "text": "*She gently closes the counseling record folder.* You remember the contact order we just wrote down together, right? If you hit a moment where you can't breathe, don't just endure it alone. Start with the place in the first box."
+        "text": "*She gently closes the counseling folder.* Remember the numbers we just highlighted, okay? Whenever your chest feels tight, don’t tough it out alone—reach out starting from the top line."
     },
     "hidden_nurse_d4_check": {
         "name": "System",
@@ -396,7 +396,7 @@
     },
     "hidden_nurse_d4_1_b": {
         "name": "School Nurse",
-        "text": "*Her eyes go wide as she turns.* Oh? It's a weekend morning, and you actually came to help?"
+        "text": "*Her eyes widen as she turns toward me.* Did you really come on a weekend morning to help sort out the first-aid kits too?"
     },
     "hidden_nurse_d4_2": {
         "name": "School Nurse",
@@ -416,11 +416,11 @@
     },
     "hidden_nurse_d4_2_e": {
         "name": "School Nurse",
-        "text": "*She hands me a bundle of clear zipper pouches.* Put two gauze pads and three antiseptic cotton pads in each. I'll handle the confidential health records myself."
+        "text": "*She hands me a bundle of clear zip pouches.* Just pack two gauze pads and three alcohol swabs into each. I’ll handle checking the medicine inventory and filing the binders."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "All the pouches in this row have the right quantities now. *Her fingertips and mine brush lightly over a pouch.*"
+        "text": "I’ve filled every pouch in this row to the right count. *As she takes the pouches, the back of her hand lightly touches my fingers.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "School Nurse",
@@ -448,7 +448,7 @@
     },
     "hidden_nurse_d4_4_d": {
         "name": "School Nurse",
-        "text": "What stifled me most back then wasn't the endless workload."
+        "text": "Back then, what wore me down most wasn’t the endless stream of patients."
     },
     "hidden_nurse_d4_4_e": {
         "name": "{name}",
@@ -502,7 +502,7 @@
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
-        "text": "What I just heard is absolutely not nothing."
+        "text": "That wasn’t a light story I could just brush off, though."
     },
     "hidden_nurse_d4_6_c": {
         "name": "School Nurse",
@@ -571,7 +571,7 @@
     },
     "hidden_nurse_d4_meal_4": {
         "name": "School Nurse",
-        "text": "{name}. Thank you for working in step beside me from this weekend morning. On Monday, be sure to check that your volunteer hours actually posted in the school system."
+        "text": "{name}, thank you so much for lending a hand on your morning off. Stay safe at tomorrow’s event, and make sure to check on Monday that your volunteer hours posted properly."
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "School Nurse",
@@ -640,11 +640,11 @@
     },
     "day4_haeun_concern_seoyeon_escalation": {
         "name": "Seoyeon",
-        "text": "What bothers me most is whether you knew Haeun was that uncomfortable and did it anyway. *Seoyeon waits for my answer, calm, her eyes firm.* Don't dodge it. Say it here, directly."
+        "text": "What weighs on me most is whether you realized just how uncomfortable Haeun felt. *Seoyeon shifts the folder in her arms and looks me in the eye.* Tell me right here what the context was yesterday."
     },
     "day4_haeun_concern_seoyeon_escalation_delay": {
         "name": "Seoyeon",
-        "text": "What bothers me most is whether you knew Haeun was that uncomfortable and did it anyway. *Seoyeon waits for my answer, calm, her eyes firm.* Don't dodge it. Say it here, directly."
+        "text": "Walking away right now will only make the misunderstanding worse. *Seoyeon steps half a pace closer, blocking my path.* Don’t dodge this—explain it yourself right here."
     },
     "day4_haeun_concern_seoyeon_group_talk": {
         "name": "Seoyeon",
@@ -667,11 +667,11 @@
     },
     "day4_haeun_concern_yuna_escalation": {
         "name": "Yuna",
-        "text": "*Yuna slides the phone in her hand deep into her coat pocket.* Right now I don't know how to believe what you say. Don't hide it. Tell me what you meant yesterday."
+        "text": "*Yuna slips the phone in her hand into her bag pocket.* I won’t jump to conclusions from Haeun’s side alone. Tell me plainly what you meant yesterday."
     },
     "day4_haeun_concern_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna slides the phone in her hand deep into her coat pocket.* Right now I don't know how to believe what you say. Don't hide it. Tell me what you meant yesterday."
+        "text": "*Yuna slips the phone in her hand into her bag pocket.* Turning your back like that only makes it harder to trust you. Don’t hide it—tell me what you meant yesterday."
     },
     "day4_haeun_concern_yuna_group_talk": {
         "name": "Yuna",
@@ -694,11 +694,11 @@
     },
     "day4_haeun_concern_dain_escalation": {
         "name": "Dain",
-        "text": "*Dain uncrosses her arms and looks me straight in the eye.* If it's an unfair misunderstanding, clear it up now. If you said something that hurt her, admit it honestly. I'll stay right here and listen to the end."
+        "text": "*Dain uncrosses her arms and looks me straight in the eye.* Glad you’re willing to ask and clear the air right now. If it’s an unfair misunderstanding, sort it out cleanly, and if something you said hurt her, own up honestly. I’ll listen to the end."
     },
     "day4_haeun_concern_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain uncrosses her arms and looks me straight in the eye.* If it's an unfair misunderstanding, clear it up now. If you said something that hurt her, admit it honestly. I'll stay right here and listen to the end."
+        "text": "*Dain shifts half a step sideways to block my way.* Hey, you can’t just walk off like this. If it’s a misunderstanding, clear it up here, and if you said the wrong thing, own up to it."
     },
     "day4_haeun_concern_dain_group_talk": {
         "name": "Dain",
@@ -721,11 +721,11 @@
     },
     "day4_haeun_concern_teacher_escalation": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher looks straight at me, her eyes serious.* It may have come across differently from what you meant. Even so, we need to look together at why Haeun felt uncomfortable. What do you think?"
+        "text": "*My homeroom teacher looks straight at me with serious eyes.* I’m glad you’re willing to talk it through right away. Even if it came out differently from what you meant, we still need to look at why Haeun felt uncomfortable. What happened yesterday?"
     },
     "day4_haeun_concern_teacher_escalation_delay": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher looks straight at me, her eyes serious.* It may have come across differently from what you meant. Even so, we need to look together at why Haeun felt uncomfortable. What do you think?"
+        "text": "*My homeroom teacher raises a calm hand, stopping me as I turn to leave.* Stepping away now will only make things heavier for both Haeun and you. Stay a moment and let’s go over what you meant yesterday."
     },
     "day4_haeun_concern_teacher_group_talk": {
         "name": "Homeroom Teacher",
@@ -748,11 +748,11 @@
     },
     "day4_haeun_concern_nurse_escalation": {
         "name": "School Nurse",
-        "text": "*The school nurse lets the easy smile leave her mouth and speaks calmly.* While all three of us are here, let's go through, step by step, why Haeun took your words that way. You explain first."
+        "text": "*The school nurse lets her smile fade and nods calmly.* Thank you for offering to hear this out first. While all three of us are here, let’s calmly untangle why Haeun took your words that way."
     },
     "day4_haeun_concern_nurse_escalation_delay": {
         "name": "School Nurse",
-        "text": "*The school nurse lets the easy smile leave her mouth and speaks calmly.* While all three of us are here, let's go through, step by step, why Haeun took your words that way. You explain first."
+        "text": "*The school nurse drops her smile and quietly calls me back as I start to turn.* Brushing past this now will only leave both of you hurting more. While the three of us are together, let’s go over yesterday’s talk, even briefly."
     },
     "day4_haeun_concern_nurse_group_talk": {
         "name": "School Nurse",
@@ -793,7 +793,7 @@
     },
     "day4_haeun_notice_down": {
         "name": "Haeun",
-        "text": "*Haeun forces the corners of her mouth up into a smile and steps half a pace back.* Oh, right. We were in the middle of talking about Seoyeon. What I just said was only a passing thought to myself, so please forget it."
+        "text": "*Haeun lifts the corners of her mouth for a brief instant, lowers them, and steps half a pace back.* Oh, right. We were talking about Seoyeon sunbae to begin with. What I just said was only me talking to myself, so please forget it."
     },
     "day4_haeun_reputation_cg": {
         "name": "{name}",

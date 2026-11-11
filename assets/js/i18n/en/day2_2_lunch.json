@@ -18,13 +18,13 @@
     },
     "lunch2_seo_1b": {
         "name": "Seoyeon",
-        "text": "First time you've come up to the roof? Sit in the shade over here. The breeze is cool. *She opens a neat lunchbox on a folding chair.*"
+        "text": "First time coming all the way up to the roof, right? *Seated on a folding chair in the shade, Seoyeon sets the lunch bag from her lap down and looks up.*"
     },
     "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {},
     "lunch2_seo_2b_dain": {
         "name": "Seoyeon",
-        "text": "Yesterday you headed for the shop with Dain. Today you came all the way up to my rooftop."
+        "text": "Yesterday you headed toward the school store with Dain, and today you came all the way up to my rooftop."
     },
     "lunch2_seo_3b_dain": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Then the iron door, shut tight, clicks open, and Dain bursts in, out of breath.*"
+        "text": "*Just then, the half-shut iron rooftop door swings wide open, and Dain bursts in catching her breath.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -101,7 +101,7 @@
     },
     "lunch2_seo_12": {
         "name": "Dain",
-        "text": "There's an empty chair, too. This one's mine! *Dain strides over and drops into the chair across from me.*"
+        "text": "Oh, nice, there's another folding chair over in the corner! *Dain strides over, grabs the chair leaning against the wall, and unfolds it beside us.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -121,7 +121,7 @@
     },
     "lunch2_seo_15": {
         "name": "{name}",
-        "text": "We're all in the same class. You two already know each other well, right?"
+        "text": "We're all in the same grade anyway. You two already know each other pretty well, right?"
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
@@ -178,7 +178,7 @@
     },
     "lunch2_seo_end_c1": {
         "name": "Dain",
-        "text": "...Anyway, let's finish eating first. It's going to get cold! *As if shaking off the awkwardness, Dain taps the chair leg twice with her toe.*"
+        "text": "...Anyway, let's finish eating first before everything gets cold! *Dain clears her throat once and taps the chair leg twice with the tip of her shoe.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -191,7 +191,7 @@
     "lunch2_seo_c2_3": {},
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*A rice mark remains on the back of my hand. Seoyeon, having withdrawn her hand, only unties the lunchbox cloth strap and cinches it again.*"
+        "text": "*As her hand pulls back from my lips, a cool breeze slips through the space between us. Having withdrawn her hand, Seoyeon unties and reties the knot of her lunch cloth.*"
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
-        "text": "Yesterday the president called me and showed me around from the morning, so today I wanted to try the shop bread you talked about."
+        "text": "Yesterday the student council president invited me to lunch first, so today I wanted to try that school-store bread you mentioned."
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
@@ -320,7 +320,7 @@
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*While Dain sulked and chewed the rest of her bread, I kept seeing Seoyeon's retreating back beyond the shop's glass door.*"
+        "text": "*While Dain takes a big bite of the remaining streusel bread, Seoyeon's footsteps slowly fade beyond the hallway glass door.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
@@ -332,7 +332,7 @@
     },
     "lunch2_dain_end_d": {
         "name": "{name}",
-        "text": "*I carefully open the nurse's office door and step in. The sharp antiseptic from yesterday, and a faint perfume, sink into my lungs again.*"
+        "text": "*I carefully open the infirmary door and step inside. Behind the sharp disinfectant smell from yesterday, a faint trace of perfume brushes past my nose again.*"
     },
     "lunch2_dain_end_e": {
         "name": "School Nurse",
@@ -426,7 +426,7 @@
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "School Nurse",
-        "text": "There, all done. Next time, don't run with your eyes only on the ball. Watch the people around you first."
+        "text": "Next time, don't just stare at the ball when you run—watch the people around you first."
     },
     "lunch2_yuna_1": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*A long silence settles after “used to be.” On the narrow sofa, sitting side by side, Yuna's cool shoulder is close enough to touch.*",
+        "text": "*Yuna's voice stops right after “used to be.” Just past the empty spot she cleared on the narrow sofa, the cool line of her shoulder sits close.*",
         "choices": [
             "What happened to them?",
             "Sit beside her without asking",
@@ -574,7 +574,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "If it's hard to bring up, you don't have to force yourself to say more. *Yuna lifts the open book until it covers her up to the tip of her nose.*"
+        "text": "If they left without a word, that must've been pretty sudden. *Yuna lifts the cover of her open book until it hides the tip of her nose.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Before I close the annex door, I look back. Yuna is looking down at the page she stopped on when she said “used to be.”*"
+        "text": "*Before closing the annex door, I look back; Yuna still gazes down at the same page she had kept her finger on earlier.*"
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
@@ -679,7 +679,7 @@
     },
     "lunch2_yuna_3_neg": {
         "name": "Yuna",
-        "text": "*She doesn't hand over a note. She only turns one page, cold.* I don't want to talk to anyone today."
+        "text": "*Without even lifting her eyes from her open book, she coldly turns a single page.* I don't feel like talking to anyone today."
     },
     "lunch2_seo_neg_leave": {
         "name": "{name}",
@@ -711,6 +711,6 @@
     },
     "lunch2_yuna_cool_cont": {
         "name": "{name}",
-        "text": "*In the quiet room, only my page turns. Yuna never takes the earphone out of her ear.*"
+        "text": "*Beneath the window's shade, only the sparse rustle of turning pages sounds. Yuna never takes the earphone out of her ear.*"
     }
 }

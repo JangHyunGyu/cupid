@@ -9,12 +9,12 @@
     },
     "after_kakao_3": {
         "name": "{name}",
-        "text": "*My gaze catches on that casual line: 'That's a relief, haha.' I tap the input box several times, but I can't type a single letter.*"
+        "text": "*'Good to hear lol'—my eyes stop on that short line. I tap the input bar several times, yet I can't type a single word past the blinking cursor.*"
     },
     "after_kakao_5": {},
     "after_kakao_end": {
         "name": "{name}",
-        "text": "*After a long hesitation, I tap Leave Group. Only this school's messenger, added today, remains at the top of the list.*"
+        "text": "*After hesitating for a long moment, I tap Leave on the old group chat. At the very top of my chat list, only the new class group chat I was invited to today remains.*"
     },
     "after1_jealousy_seo_1": {
         "name": "Dain",
@@ -22,15 +22,15 @@
     },
     "after1_jealousy_seo_2": {
         "name": "{name}",
-        "text": "*With my thumb, I quickly erase the four characters I was typing into the reply box: “with Seoyeon.”*"
+        "text": "*I swallow back the words 'with Seoyeon' on the tip of my tongue and pause to choose my answer.*"
     },
     "after1_jealousy_seo_3": {
         "name": "Dain",
-        "text": "I saw the two of you coming down by the stairs, you and the student council president. Why'd you go up to the roof together?"
+        "text": "Earlier by the stairs, I saw someone who looked like you from behind heading up beside the student council president. Did the two of you go up to the rooftop?"
     },
     "after1_jealousy_seo_choice": {
         "name": "Dain",
-        "text": "*At Dain's messages, one after another, my fingers tighten around the phone before I notice.*",
+        "text": "*With Dain narrowing her eyes at me in the middle of the hallway, I adjust my grip on my bag strap.*",
         "choices": [
             "I ate on the rooftop with the president. (Honest)",
             "I was just wandering around alone. (Lie)",
@@ -40,7 +40,7 @@
     },
     "after1_jealousy_seo_honest": {
         "name": "{name}",
-        "text": "Yeah. This morning, while she was showing me around, the student council president called me up to the roof. She'd packed a lot of lunch, too."
+        "text": "Yeah, the student council president invited me up to the rooftop for lunch. She had packed plenty of food, too."
     },
     "after1_jealousy_seo_honest_2": {
         "name": "Dain",
@@ -56,7 +56,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*I unfold the note tucked into my bag's side pocket. The period at the end of Yuna's lavender handwriting has smudged.* I saw you coming down from the roof at lunch. You looked pretty close with the student council president."
+        "text": "*I unfold the note tucked into my bag's side pocket. Yuna's neat lavender-ink handwriting catches my eye.* I saw you coming down from the rooftop at lunch. You looked pretty close with the student council president."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -64,7 +64,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon straightens her grip on the corner of the clipboard held to her chest. Under that cool look past her glasses, I stop and pick my answer.*"
+        "text": "*Seoyeon squares her grip on the edge of the clipboard in her arms. Meeting her steady gaze behind her glasses, I stop and choose my reply.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -76,7 +76,7 @@
     },
     "after1_pre_miss": {
         "name": "{name}",
-        "text": "*I put my phone in my pocket and walk slowly down the hallway, the sunset stretched long across it.*"
+        "text": "*Adjusting my bag strap over my shoulder, I walk down the hallway where the late sun casts long shadows.*"
     },
     "after_dain_skip": {},
     "after_miss_dain_1": {
@@ -93,7 +93,7 @@
     },
     "after_miss_dain_4": {
         "name": "Dain",
-        "text": "Oh, those reflexes were pretty good. You do play sports, right?"
+        "text": "Whoa, nice reflexes just now! You must stay pretty active, huh?"
     },
     "after_miss_dain_5": {
         "name": "{name}",
@@ -105,16 +105,16 @@
     },
     "after_miss_dain_6_b": {
         "name": "{name}",
-        "text": "*After a couple of steps, Dain stops and puts a hand on her right knee. Then she lets go as if nothing happened and picks up her pace again.*"
+        "text": "*After two or three steps, Dain stops short and presses a hand to her right knee. Right away she shakes her hand off and picks up speed again.*"
     },
     "after_miss_dain_7": {
         "name": "Dain",
-        "text": "Oh, and my name's Dain! Don't show up tomorrow and forget it! *At the corner at the end of the hall, she shakes her sweat-damp bangs and lifts a hand high.*"
+        "text": "Don't forget your desk neighbor's name tomorrow morning—it's Dain! *At the far corner of the hall, she tosses her sweat-damp bangs and waves high.*"
     },
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*In the hallway in front of the library, a girl with red eyes walks toward me, holding a thick book. A small tattoo is slightly visible at her sleeve.*"
+        "text": "*In the corridor outside the annex library, I run into Yuna walking out with a thick book in her arms. A small tattoo peeks from beneath her uniform cuff.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -134,7 +134,7 @@
     },
     "after_miss_yuna_3_b": {
         "name": "Yuna",
-        "text": "*As if hiding something she cares about, she slides the bookmark deep into the spine of the book, then turns without a sound and walks off.*"
+        "text": "*She tucks the bookmark deep between the pages, turns without a sound, and walks away.*"
     },
     "after_miss_yuna_4": {},
     "after_miss_seoyeon_1": {
@@ -151,7 +151,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "I left the roof door open on purpose, and you still never came up. Standing up the student council president on your first day as a transfer. You've got some nerve."
+        "text": "At the start of lunch I invited you up to the rooftop, remember? Turning down the student council president on your very first day takes nerve."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -163,7 +163,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seoyeon pulls the clipboard up against her chest, looks slightly away, and clicks the cap shut on the pen in her hand.*"
+        "text": "*Seoyeon hugs the papers clipped to her board closer to her chest, lowers her gaze at an angle, and clicks her ballpoint pen.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -196,7 +196,7 @@
     },
     "after_hidden_homeroom_3": {
         "name": "Homeroom Teacher",
-        "text": "I happened to be free, so come in. *An attendance book and school calendar lie beneath her rolled-up cardigan sleeves.*"
+        "text": "I just happened to have a free moment, so come on in. *Past her rolled-up cardigan sleeves, the attendance book and academic calendar rest on her desk.*"
     },
     "after_hidden_homeroom_3_b": {
         "name": "{name}",
@@ -229,15 +229,15 @@
     },
     "after_homeroom_ok_b": {
         "name": "Homeroom Teacher",
-        "text": "*She pushes the stack of papers at the edge of the desk aside and clears a place for me to sit.*"
+        "text": "*She pushes aside a stack of papers near the side chair by her desk, making room for me to sit.*"
     },
     "after_homeroom_ok_3": {
         "name": "Homeroom Teacher",
-        "text": "A little unfamiliar means it's going very smoothly. It'd be stranger if your first day as a transfer already felt as easy as coming back after a long time."
+        "text": "If things only feel a little unfamiliar, you're off to a smooth start. It'd actually feel strange if a new school felt like home on day one."
     },
     "after_homeroom_ok_4": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher's slender fingertips rest for a moment on the corner of the transfer papers she was about to turn.*"
+        "text": "*Her fingertips linger briefly on the corner of the transfer paperwork she was about to turn.*"
     },
     "after_homeroom_ok_5": {
         "name": "Homeroom Teacher",
@@ -265,7 +265,7 @@
     },
     "after_homeroom_honest_4": {
         "name": "Homeroom Teacher",
-        "text": "If the classroom air gets stifling, come here anytime. Since you're a student, I can always get you a sweet juice instead of coffee."
+        "text": "Whenever the classroom feels stifling, drop by here anytime. I happened to pick up an extra can earlier—have this juice on my desk and catch your breath before you go."
     },
     "after_homeroom_honest_5": {
         "name": "{name}",
@@ -281,7 +281,7 @@
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
-        "text": "*The homeroom teacher, leaning on the corner of the desk, is about a handspan closer, and her soft gaze meets mine.*",
+        "text": "*Having slid the can of juice toward me, my homeroom teacher leans against the corner of the desk a handspan closer and meets my eyes.*",
         "choices": [
             "If you're worried, you can just say so.",
             "Then I'll expect juice next time too.",
@@ -299,11 +299,11 @@
     },
     "after_homeroom_honest_choice2b": {
         "name": "Homeroom Teacher",
-        "text": "*She points at the vending machine toward the hall with the tip of her fountain pen and smiles.* Don't expect too much. It's canned juice from that machine over there."
+        "text": "*She points toward the hallway vending machine with the end of her fountain pen and smiles.* Don't expect anything fancy—it's just canned juice from the machine right outside."
     },
     "after_homeroom_honest_choice2b_b": {
         "name": "Homeroom Teacher",
-        "text": "*She closes the attendance book and comes out to see me off as far as the staff room threshold, then suddenly stops and calls me again.*"
+        "text": "*Closing the attendance book on her desk, my homeroom teacher pauses her hands and looks up to call my name again.*"
     },
     "after_homeroom_honest_7": {
         "name": "Homeroom Teacher",
@@ -337,12 +337,12 @@
     },
     "after_hidden_nurse_choice": {
         "name": "{name}",
-        "text": "*The fatigue of being jostled since morning by unfamiliar looks and noise hits all at once, and my feet won't move from the nurse's office door.*",
+        "text": "*The fatigue of being jostled since morning by unfamiliar eyes and noise hits all at once, stopping my feet outside the nurse's office door.*",
         "choices": [
             "Go to the nurse's office",
             "Just go home",
-            "The nurse must be bored too, so I’ll keep her company for a while.",
-            "A health consultation could help us get closer."
+            "I'll just kill some time on an infirmary bed before heading home.",
+            "I'm not really sick, but I might as well poke my head in out of curiosity."
         ]
     },
     "after_hidden_nurse_intro_b": {
@@ -355,11 +355,11 @@
     },
     "after_nurse_d1_neg": {
         "name": "School Nurse",
-        "text": "*She shuts the appointment log.* We're done seeing anyone today. Go straight home."
+        "text": "*She closes and straightens the infirmary logbook.* The nurse’s office is closed for the day. Head straight home."
     },
     "after_nurse_enter_1": {
         "name": "{name}",
-        "text": "*As I open the door, a faint lingering fragrance mingles with the smell of disinfectant. The teacher in a white coat looks at me over her glasses.* Excuse me."
+        "text": "*As I open the door, a faint scent of soap drifts over the smell of antiseptic. A teacher in a white coat looks at me from behind her glasses.* Excuse me."
     },
     "after_nurse_enter_2": {
         "name": "School Nurse",
@@ -407,7 +407,7 @@
     },
     "after_nurse_enter_7_b": {
         "name": "{name}",
-        "text": "*When I lie down on the inner bed, the stiff, starched white sheet rustles against me, cool to the touch.*"
+        "text": "*As I lie down on the inner bed, the crisp white sheet rustles coolly against me.*"
     },
     "after_nurse_enter_7_c": {
         "name": "School Nurse",
@@ -444,7 +444,7 @@
     },
     "after_nurse_enter_8_c": {
         "name": "School Nurse",
-        "text": "*She comes closer through the gap in the curtain, hands me water, and brushes the back of my hand.* Drink it slowly and steady your breathing. You'll feel better. If you keep feeling queasy, we'll tell your homeroom teacher too."
+        "text": "*Stepping through the gap in the curtain, her fingertips brush the back of my hand as she hands me a cup of water.* Drink slowly and catch your breath—you’ll feel steadier soon. If the nausea keeps up, let’s tell your homeroom teacher too."
     },
     "after_nurse_enter_8_d": {
         "name": "{name}",
@@ -464,7 +464,7 @@
     },
     "after_nurse_enter_9_e": {
         "name": "School Nurse",
-        "text": "*The nurse's slender fingers grip the desk drawer handle once, tight, then let go without a sound.*"
+        "text": "*Her slender fingers curl around the handle of the slightly open desk drawer, then let go without pushing it shut.*"
     },
     "after_nurse_enter_10": {
         "name": "School Nurse",
@@ -472,7 +472,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "School Nurse",
-        "text": "Okay. The 10 minutes are up. How's your stomach now? *In the open drawer, a faded pale-green notebook catches my eye for a moment.*"
+        "text": "All right, ten minutes are up. How's your stomach feeling? *Inside the half-open drawer, a faded light-green notebook briefly catches my eye.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -504,7 +504,7 @@
     },
     "after_nurse_enter_11_g": {
         "name": "School Nurse",
-        "text": "*She writes the treatment time in the last box of the chart and puts the water cup away.*"
+        "text": "*She writes the time in the last column of the infirmary log and clears away the empty water cup.*"
     },
     "after_nurse_enter_11_h": {
         "name": "School Nurse",
@@ -512,7 +512,7 @@
     },
     "after_nurse_enter_11_i": {
         "name": "School Nurse",
-        "text": "*She draws the curtain back and straightens the crumpled bedsheet.*"
+        "text": "*She draws the bedside curtain all the way back and hooks it neatly into its tieback.*"
     },
     "after_nurse_enter_11_j": {},
     "after_nurse_enter_11_k": {
@@ -537,7 +537,7 @@
     },
     "after_nurse_freetalk": {
         "name": "School Nurse",
-        "text": "*She returns the thermometer to its case and checks the time on the medical chart.* Has the dizziness settled down?",
+        "text": "*She clips the infirmary sheet onto her board and glances once at the wall clock.* Has the dizziness settled down now?",
         "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse checked the symptoms and let the student rest; the conversation continues as she monitors recovery and school adjustment.",
         "personality": "The school nurse is observant and easygoing. She moved to the school after experiencing burnout as a hospital nurse and may use light humor when it helps a student relax. She keeps treatment and counseling within professional boundaries."
     },

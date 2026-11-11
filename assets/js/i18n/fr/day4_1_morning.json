@@ -1,7 +1,7 @@
 {
     "hidden_homeroom_d4_low": {
         "name": "Professeure principale",
-        "text": "*Devant le lieu du rendez-vous, la professeure principale que je croise serre profondément contre elle un vieux sac en papier.* Désolée, cette fois je ne pourrai pas te montrer le manuscrit. On se voit lundi, au lycée."
+        "text": "*Croisée devant le portail, la professeure principale serre l’enveloppe en papier contre elle.* Désolée, mais je vais avoir du mal à te montrer le manuscrit cette fois. On se voit demain à l’événement du lycée."
     },
     "hidden_homeroom_d4_neg": {
         "name": "Professeure principale",
@@ -68,7 +68,7 @@
     },
     "minsu_cheer_4_c": {
         "name": "{name}",
-        "text": "*Les rendez-vous que j'ai chevauchés, aussi précaires soient-ils, sont toujours là sur le calendrier. Je sais que ce n'est pas quelque chose que je peux surmonter en partageant simplement le temps, et mes doigts sont lourds.*"
+        "text": "*Dans la case du samedi, les rendez-vous qui se chevauchent s’affichent côte à côte. Mon pouce s’arrête au milieu du planning.*"
     },
     "minsu_cheer_4_d": {},
     "minsu_cheer_4_e": {},
@@ -82,7 +82,7 @@
     },
     "morning4_seo_msg_1_b": {
         "name": "{name}",
-        "text": "*C'est une seule ligne nette, et pourtant l'envoi date de sept heures du matin. J'imagine Seoyeon, comme toujours, déjà en train de se préparer depuis un moment, et un sourire me vient aux lèvres.*"
+        "text": "*L’heure affichée à côté de cette courte ligne indique sept heures du matin. L’imaginer déjà prête me fait sourire tout seul.*"
     },
     "morning4_seo_msg_1_c": {},
     "morning4_yuna_msg_1": {
@@ -91,15 +91,15 @@
     },
     "morning4_yuna_msg_1_b": {
         "name": "{name}",
-        "text": "*Même pas un point à la fin de ces deux courtes lignes, et pourtant je vois très bien le profil de Yuna, venue en avance, assise près de la fenêtre.*"
+        "text": "*Ce n’est qu’une courte ligne sans même un point final, mais j’imagine déjà Yuna assise tranquillement près de la fenêtre en avance.*"
     },
     "morning4_yuna_msg_single": {
         "name": "{name}",
-        "text": "*Derrière ces phrases sobres, j'ai l'impression d'entendre la voix basse de Yuna. Je décide de garder toute cette journée pour une seule personne.*"
+        "text": "*À travers ces mots courts, on entend presque la voix basse de Yuna. J’envoie ma réponse et j’ouvre la porte du placard.*"
     },
     "morning4_dain_msg_1": {
         "name": "Dain",
-        "text": "C'est enfin aujourd'hui ! Devant le gymnase, 10 heures, t'as pas oublié ? Ah, qu'est-ce que je fais, je suis déjà tendue. Fais comme si t'avais pas lu la dernière ligne !"
+        "text": "C’est enfin aujourd’hui ! 10 heures devant le gymnase, t’as pas oublié, hein ? Oh là là, j’ai déjà le trac. Hé, fais comme si t’avais rien vu à l’instant !"
     },
     "morning4_fallback_msg": {
         "name": "{name}",
@@ -107,7 +107,7 @@
     },
     "morning4_hidden_check": {
         "name": "{name}",
-        "text": "*Je fends l'air du petit matin, au passage piéton du carrefour devant le lycée, et j'attends que le feu change.*"
+        "text": "*Il me reste encore de la marge avant l’heure du rendez-vous. Parti tôt de la maison, j’attends le feu au passage piéton devant le lycée.*"
     },
     "morning4_manuscript_check": {},
     "hidden_homeroom_d4_missed": {
@@ -136,7 +136,7 @@
     },
     "hidden_homeroom_d4_3_c": {
         "name": "{name}",
-        "text": "*Au lieu du costume que je vois habituellement au pupitre, elle porte un trench beige et un pull en tricot.*"
+        "text": "*Au lieu du registre d’appel qu’elle tient d’habitude à l’estrade, elle serre aujourd’hui contre elle une épaisse enveloppe kraft.*"
     },
     "hidden_homeroom_d4_3_d": {
         "name": "{name}",
@@ -144,7 +144,7 @@
     },
     "hidden_homeroom_d4_3_e": {
         "name": "Professeure principale",
-        "text": "Les membres inscrits n'ont que le matin du week-end de libre, à ce qu'ils disent. Une professeure référente, ça doit suivre l'emploi du temps des élèves."
+        "text": "En évitant les heures de cours du soir des élèves, il ne restait plus que le samedi matin. Que peut faire la prof référente, sinon s’adapter ?"
     },
     "hidden_homeroom_d4_4": {
         "name": "{name}",
@@ -176,7 +176,7 @@
     },
     "hidden_homeroom_d4_5_c": {
         "name": "Professeure principale",
-        "text": "C'est une critique ouverte, on écoute aussi les lecteurs extérieurs, donc pas de problème. Une fois sur place, tu décideras tranquillement si tu lis le manuscrit jusqu'au bout ou non."
+        "text": "C’est une séance ouverte aux avis des élèves hors du club aussi, donc aucun souci. Tu peux juste lire un moment avant de repartir, sans pression."
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Professeure principale",
@@ -245,7 +245,7 @@
     },
     "hidden_homeroom_d4_cafe_choice": {
         "name": "Professeure principale",
-        "text": "Si un passage te paraît faux, ou s'il te coupe le souffle, souligne-le sans rien retenir. Et dis-moi franchement si tu as tourné la page parce que la suite t'intriguait, ou si tu as seulement tenu par obligation. *Du menton, la professeure principale désigne la liasse des exemplaires pour la critique et regarde mes yeux sans bouger.*",
+        "text": "Si une phrase accroche ou qu’un passage traîne en longueur, souligne sans ménagement. Et note franchement si tu as tourné la page par curiosité ou juste par politesse. *La professeure désigne du menton la pile de tirages en soutenant mon regard.*",
         "choices": [
             "Vous n'avez toujours pas choisi la fin ?",
             "Vous allez aussi montrer tout le manuscrit au club, n'est-ce pas ?",
@@ -278,7 +278,7 @@
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Professeure principale",
-        "text": "Merci d'y avoir pensé. La critique anonyme, c'est la règle, alors laisse le nom en blanc et note seulement ce que tu penses, sans te forcer."
+        "text": "Ce serait gentil, merci. Comme on lit toujours les textes de façon anonyme, laisse le nom vide et écris librement ce que tu en penses."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -298,7 +298,7 @@
     },
     "hidden_homeroom_d4_cafe_5_h": {
         "name": "{name}",
-        "text": "Lire ton écriture dans un café est étrange. *Elle écrit un petit chiffre en haut de l'impression et me la fait glisser. Le bout de ses doigts effleure le dos de ma main.*"
+        "text": "Ça fait une drôle d’impression de lire un texte de vous dans un café hors du lycée. *La professeure note un petit numéro en haut du tirage avant de le pousser vers moi. Ses doigts effleurent le dos de ma main.*"
     },
     "hidden_homeroom_d4_cafe_6": {
         "name": "Professeure principale",
@@ -315,7 +315,7 @@
     },
     "hidden_nurse_d4_morning_1": {
         "name": "{name}",
-        "text": "Je suis là pour le temps de conseil que tu as fixé. *J'ouvre la porte du bureau du surveillant calme. Un dossier de conseil et une fiche d'information sont posés sur le bureau.*"
+        "text": "Madame, je suis venu à l’heure dont vous m’aviez parlé hier. *J’ouvre la porte de l’infirmerie silencieuse. Une fiche de suivi et un feuillet d’information sont posés sur le bureau.*"
     },
     "hidden_nurse_d4_morning_3": {
         "name": "Infirmière",
@@ -327,11 +327,11 @@
     },
     "hidden_nurse_d4_morning_5": {
         "name": "{name}",
-        "text": "C'est bien pour conclure l'entretien de la dernière fois, n'est-ce pas ?"
+        "text": "Vous m’avez fait venir pour finir de faire le point sur notre discussion d’hier, c’est bien ça ?"
     },
     "hidden_nurse_d4_morning_6": {
         "name": "Infirmière",
-        "text": "Oui. On va voir comment tu allais entre-temps, et on va aussi choisir ensemble un point de contact vers lequel tu pourras te tourner tout de suite, les prochaines fois où ça n'ira pas."
+        "text": "Oui. Je voulais voir ta tête pour savoir si tu avais un peu dormi, et décider ensemble vers qui tu peux te tourner tout de suite quand ça devient trop lourd."
     },
     "hidden_nurse_d4_morning_7": {
         "name": "Infirmière",
@@ -351,7 +351,7 @@
     },
     "hidden_nurse_d4_morning_11": {
         "name": "Infirmière",
-        "text": "Même quand la porte de l'infirmerie est fermée, tu as déjà choisi au moins un adulte à qui demander de l'aide sans hésiter ?"
+        "text": "Si jamais l’infirmerie est fermée, est-ce que tu as au moins un adulte en tête vers qui aller sans ruminer tout seul ?"
     },
     "hidden_nurse_d4_morning_choice": {
         "name": "{name}",
@@ -364,7 +364,7 @@
     },
     "hidden_nurse_d4_morning_choice_trap": {
         "name": "Infirmière",
-        "text": "Bien sûr, tu peux venir me voir en premier. Mais il te faut aussi, forcément, un adulte qui restera près de toi quand je ne suis pas à l'infirmerie, ou que je ne peux pas intervenir."
+        "text": "Ça me touche que tu me dises ça. Mais prévoyons quand même au moins un autre adulte sur qui compter, pour que tu ne restes pas seul quand je m’absente."
     },
     "hidden_nurse_d4_morning_choice_a": {
         "name": "{name}",
@@ -380,11 +380,11 @@
     },
     "hidden_nurse_d4_morning_13": {
         "name": "Infirmière",
-        "text": "Je ne transmettrai rien de ce que tu me confies à qui que ce soit sans permission. Mais si je vois un risque que tu te fasses du mal, je travaillerai avec d'autres adultes."
+        "text": "Ce que tu me confies ici ne sortira pas sans ton accord. En revanche, si je vois que tu es vraiment en danger, je ne garderai pas ça pour moi seule et je demanderai l’aide d’autres enseignants."
     },
     "hidden_nurse_d4_morning_freetalk": {
         "name": "Infirmière",
-        "text": "*L'infirmière referme doucement le classeur de la fiche de suivi.* Tu te souviens de l'ordre des contacts qu'on vient de noter ensemble ? Quand le souffle se bloque, n'encaisse pas tout seul. Va d'abord à l'endroit écrit dans la première case."
+        "text": "*Elle referme doucement le dossier de suivi.* Tu te souviens des numéros qu’on vient de surligner ? Dès que ça t’oppresse, n’encaisse pas tout seul et appelle en commençant par la première ligne."
     },
     "hidden_nurse_d4_check": {
         "name": "Système",
@@ -396,7 +396,7 @@
     },
     "hidden_nurse_d4_1_b": {
         "name": "Infirmière",
-        "text": "*L'infirmière écarquille les yeux et se retourne.* Tiens, un samedi matin, tu es vraiment venu pour aider ?"
+        "text": "*L’infirmière écarquille les yeux en se tournant vers moi.* Tu es vraiment venu un samedi matin pour m’aider aussi à préparer les trousses de secours ?"
     },
     "hidden_nurse_d4_2": {
         "name": "Infirmière",
@@ -416,11 +416,11 @@
     },
     "hidden_nurse_d4_2_e": {
         "name": "Infirmière",
-        "text": "*Elle me tend un paquet de pochettes transparentes à fermeture éclair.* Mettez deux compresses et trois cotons antiseptiques dans chacune. Je m'occuperai moi-même des dossiers médicaux confidentiels."
+        "text": "*Elle me tend un paquet de pochettes transparentes à zip.* Mets juste deux compresses et trois tampons désinfectants dans chacune. Je m’occupe du pointage des médicaments et des classeurs."
     },
     "hidden_nurse_d4_2_f": {
         "name": "{name}",
-        "text": "Toutes les pochettes de cette rangée ont maintenant la bonne quantité. *Le bout de ses doigts et le mien effleurent légèrement une pochette.*"
+        "text": "J’ai rempli toute cette rangée avec le bon compte. *En récupérant les pochettes, le dos de sa main effleure mes doigts.*"
     },
     "hidden_nurse_d4_2_g": {
         "name": "Infirmière",
@@ -448,7 +448,7 @@
     },
     "hidden_nurse_d4_4_d": {
         "name": "Infirmière",
-        "text": "Ce qui m'étouffait le plus, à cette époque, ce n'était pas la charge de travail sans fin."
+        "text": "À cette époque-là, ce qui m’épuisait le plus, ce n’était pas le flot incessant de patients."
     },
     "hidden_nurse_d4_4_e": {
         "name": "{name}",
@@ -502,7 +502,7 @@
     },
     "hidden_nurse_d4_6_b": {
         "name": "{name}",
-        "text": "Ce que je viens d'entendre n'est absolument pas une histoire sans importance."
+        "text": "Ce n’était vraiment pas une histoire anodine qu’on écoute d’une oreille."
     },
     "hidden_nurse_d4_6_c": {
         "name": "Infirmière",
@@ -571,7 +571,7 @@
     },
     "hidden_nurse_d4_meal_4": {
         "name": "Infirmière",
-        "text": "{name}. Merci vraiment d'avoir suivi le rythme avec moi, dès le matin du week-end. Lundi, vérifie bien que tes heures de bénévolat sont correctement enregistrées sur NEIS."
+        "text": "{name}, merci beaucoup d’être venu prêter main-forte sur ta matinée de repos. Fais attention à ne pas te blesser demain pendant l’événement, et vérifie bien lundi que tes heures de bénévolat sont enregistrées."
     },
     "hidden_nurse_d4_meal_4_b": {
         "name": "Infirmière",
@@ -640,11 +640,11 @@
     },
     "day4_haeun_concern_seoyeon_escalation": {
         "name": "Seoyeon",
-        "text": "Ce qui me travaille le plus, c'est de savoir si tu l'as fait en sachant que Haeun était mal à l'aise à ce point. *Seoyeon attend ma réponse, le regard calme, mais ferme.* Ne te défile pas. Dis-le ici, directement."
+        "text": "Ce qui me préoccupe le plus, c’est de savoir si tu avais conscience du malaise de Haeun. *Seoyeon rajuste son dossier contre elle et me regarde dans les yeux.* Dis-moi tout de suite ici dans quel contexte tu as dit ça hier."
     },
     "day4_haeun_concern_seoyeon_escalation_delay": {
         "name": "Seoyeon",
-        "text": "Ce qui me travaille le plus, c'est de savoir si tu l'as fait en sachant que Haeun était mal à l'aise à ce point. *Seoyeon attend ma réponse, le regard calme, mais ferme.* Ne te défile pas. Dis-le ici, directement."
+        "text": "Si tu t’en vas maintenant, le malentendu ne fera que grandir. *Seoyeon fait un demi-pas en avant pour me barrer le passage.* Ne fuis pas et explique-toi directement ici."
     },
     "day4_haeun_concern_seoyeon_group_talk": {
         "name": "Seoyeon",
@@ -667,11 +667,11 @@
     },
     "day4_haeun_concern_yuna_escalation": {
         "name": "Yuna",
-        "text": "*Yuna enfonce au fond de la poche de son manteau le téléphone qu'elle tenait.* Là, je ne sais plus comment croire ce que tu dis. Ne le cache pas. Dis-moi ce que tu voulais dire hier."
+        "text": "*Yuna glisse le téléphone qu’elle tenait dans la poche de son sac.* Je ne vais pas juger en n’écoutant que Haeun. Dis-moi simplement ce que tu voulais dire hier."
     },
     "day4_haeun_concern_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna enfonce au fond de la poche de son manteau le téléphone qu'elle tenait.* Là, je ne sais plus comment croire ce que tu dis. Ne le cache pas. Dis-moi ce que tu voulais dire hier."
+        "text": "*Yuna glisse le téléphone qu’elle tenait dans la poche de son sac.* Si tu tournes les talons comme ça, j’aurai encore plus de mal à te croire. Ne cache rien et dis-moi ce que tu voulais dire hier."
     },
     "day4_haeun_concern_yuna_group_talk": {
         "name": "Yuna",
@@ -694,11 +694,11 @@
     },
     "day4_haeun_concern_dain_escalation": {
         "name": "Dain",
-        "text": "*Dain décroise les bras et me regarde droit dans les yeux.* Si c'est un malentendu injuste, règle-le franchement, maintenant. Si tu as dit quelque chose qui a blessé, admets-le honnêtement. J'écoute jusqu'au bout, ici à côté."
+        "text": "*Dain décroise les bras et me regarde droit dans les yeux.* Tant mieux si tu veux mettre les choses à plat tout de suite. Si c’est un malentendu, règle-le franchement, et si un mot a blessé, reconnais-le honnêtement. J’écoute jusqu’au bout."
     },
     "day4_haeun_concern_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain décroise les bras et me regarde droit dans les yeux.* Si c'est un malentendu injuste, règle-le franchement, maintenant. Si tu as dit quelque chose qui a blessé, admets-le honnêtement. J'écoute jusqu'au bout, ici à côté."
+        "text": "*Dain fait un demi-pas de côté pour me barrer le chemin.* Hé, tu ne peux pas partir comme ça maintenant. Si c’est un malentendu, règle-le ici, et si tu as parlé de travers, admets-le franchement."
     },
     "day4_haeun_concern_dain_group_talk": {
         "name": "Dain",
@@ -721,11 +721,11 @@
     },
     "day4_haeun_concern_teacher_escalation": {
         "name": "Professeure principale",
-        "text": "*La professeure principale me regarde droit dans les yeux, l'air sérieux.* Ça a pu passer autrement que tu ne le pensais. Même ainsi, il faut regarder ensemble pourquoi Haeun s'est sentie mal à l'aise. Qu'est-ce que tu en penses ?"
+        "text": "*La professeure principale me regarde droit dans les yeux, l’air sérieux.* Tant mieux si tu es prêt à en parler tout de suite. Même si tes mots ont dépassé ton intention, il faut comprendre ensemble pourquoi Haeun s’est sentie mal à l’aise. Que s’est-il passé hier ?"
     },
     "day4_haeun_concern_teacher_escalation_delay": {
         "name": "Professeure principale",
-        "text": "*La professeure principale me regarde droit dans les yeux, l'air sérieux.* Ça a pu passer autrement que tu ne le pensais. Même ainsi, il faut regarder ensemble pourquoi Haeun s'est sentie mal à l'aise. Qu'est-ce que tu en penses ?"
+        "text": "*D’un geste calme, la professeure principale retient mon pas alors que je m’apprête à partir.* Si tu esquives maintenant, ce sera encore plus lourd pour Haeun comme pour toi. Reste un instant qu’on voie ensemble ce que tu voulais dire hier."
     },
     "day4_haeun_concern_teacher_group_talk": {
         "name": "Professeure principale",
@@ -748,11 +748,11 @@
     },
     "day4_haeun_concern_nurse_escalation": {
         "name": "Infirmière",
-        "text": "*L'infirmière efface le sourire détendu au coin de ses lèvres et parle calmement.* Pendant qu'on est tous les trois, reprenons pas à pas pourquoi Haeun a pris tes mots comme ça. Explique d'abord, toi."
+        "text": "*L’infirmière efface son sourire et hoche calmement la tête.* Merci d’accepter d’écouter d’abord. Pendant qu’on est tous les trois, démêlons posément pourquoi Haeun a reçu tes mots de cette façon."
     },
     "day4_haeun_concern_nurse_escalation_delay": {
         "name": "Infirmière",
-        "text": "*L'infirmière efface le sourire détendu au coin de ses lèvres et parle calmement.* Pendant qu'on est tous les trois, reprenons pas à pas pourquoi Haeun a pris tes mots comme ça. Explique d'abord, toi."
+        "text": "*L’infirmière perd son sourire et me rappelle doucement alors que je me détourne.* Si tu pars sans rien dire maintenant, vous allez tous les deux vous blesser davantage. Profitons d’être tous les trois pour revenir, même brièvement, sur la discussion d’hier."
     },
     "day4_haeun_concern_nurse_group_talk": {
         "name": "Infirmière",
@@ -793,7 +793,7 @@
     },
     "day4_haeun_notice_down": {
         "name": "Haeun",
-        "text": "*Haeun tire le coin de ses lèvres pour sourire, et recule d'un demi-pas.* Ah, c'est vrai. On était en train de parler de Seoyeon. Ce que je viens de dire n'était qu'une pensée à part moi, au passage, alors oublie-la, s'il te plaît."
+        "text": "*Haeun relève à peine le coin des lèvres avant de le relâcher et recule d’un demi-pas.* Ah, c’est vrai. On parlait de Seoyeon sunbae au départ. Ce que je viens de dire n’était qu’une réflexion en l’air, oubliez-le, s’il vous plaît."
     },
     "day4_haeun_reputation_cg": {
         "name": "{name}",

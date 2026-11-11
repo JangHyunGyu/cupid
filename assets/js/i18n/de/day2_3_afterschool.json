@@ -98,7 +98,7 @@
     "hidden_nurse_d2_9": {},
     "after2_choice": {
         "name": "{name}",
-        "text": "*Nach der Schule fängt das Abendrot an, alles zu färben. Wohin soll ich gehen?*",
+        "text": "*Nach dem Unterricht färbt das Abendrot langsam das Klassenzimmerfenster. Wohin soll ich gehen?*",
         "choices": [
             "Zur Turnhalle (Dain)",
             "Zum Schülerratsraum (Seoyeon)",
@@ -115,7 +115,7 @@
     },
     "after2_dain_3": {
         "name": "{name}",
-        "text": "Guck auf die Uhr. Ich bin ganze 5 Minuten vor der Zeit da."
+        "text": "Es hat vor keine fünf Minuten geklingelt und ich bin sofort runtergekommen — wieso zu spät?"
     },
     "after2_dain_4": {
         "name": "Dain",
@@ -123,7 +123,7 @@
     },
     "after2_dain_5": {
         "name": "{name}",
-        "text": "*Du bist nur früher da, weil du so ungeduldig bist. Ich bin nicht zu spät.*"
+        "text": "*So ungeduldig wie Dain ist, war sie garantiert schon lange vor mir hier unten.*"
     },
     "after2_dain_6": {
         "name": "Dain",
@@ -135,7 +135,7 @@
     },
     "after2_dain_8": {
         "name": "Dain",
-        "text": "Vom Laufen hab ich schon Hunger! Los, ich nehme an!"
+        "text": "Vom Herumrennen hab ich eben schon Hunger! Hier, ich werf dir den Ball zu — mach mal Aufschlag!"
     },
     "after2_dain_9": {
         "name": "{name}",
@@ -159,11 +159,11 @@
     },
     "after2_dain_9_f": {
         "name": "Dain",
-        "text": "Hah, hah... 3:2, das Match ist aus! *Dain, die immer noch keuchend, steht auf, reibt sich ohne zu denken einmal das rechte Knie und dreht das Anzeigetafel-Display.*"
+        "text": "Keuch, keuch, 3:2, dein Sieg! Satz vorbei! *Atemlos steht Dain auf, reibt sich unbewusst kurz übers rechte Knie und klappt die Punktetafel um.*"
     },
     "after2_dain_12": {
         "name": "Dain",
-        "text": "Ah, so knapp verloren! Aber wie du den Ball triffst, ist alles andere als gewöhnlich. Hast du mir nicht klar gesagt, du machst keinen Sport?"
+        "text": "Argh, um Haaresbreite hab ich verloren! Wettschulden sind Ehrenschulden, das Tteokbokki vorm Schultor geht auf mich! Aber sag mal, deine Schlaghaltung war echt nicht ohne — meintest du nicht, du machst keinen Sport?"
     },
     "after2_dain_13": {
         "name": "{name}",
@@ -171,7 +171,7 @@
     },
     "after2_dain_14": {
         "name": "Dain",
-        "text": "*Sie reißt die Augen so weit auf, dass der Volleyball unter ihrem Arm dumpf auf den Boden fällt.* Was, dann bin nur ich voll drauf reingefallen?"
+        "text": "*Mit der Hand am Riemen ihrer geschulterten Sporttasche bleibt sie abrupt auf der Straße stehen und reißt die Augen auf.* Was, heißt das, ich bin mir ganz allein auf den Leim gegangen?"
     },
     "after2_dain_15": {
         "name": "{name}",
@@ -333,7 +333,7 @@
     },
     "after2_seo_choice1": {
         "name": "{name}",
-        "text": "*Durch den Spalt der halb offenen Jalousie fällt orangefarbenes Abendrot und färbt die Unterlagen auf dem Tisch und Seoyeons Profil warm.*",
+        "text": "*Durch die halb offenen Jalousien taucht das orangefarbene Abendrot Seoyeons Profil in warmes Licht. Vor den Ordnern voller täglicher Prüfvermerke drückt sie sich kurz in den verspannten Nacken.*",
         "choices": [
             "Der Sonnenuntergang ist schön. Ich meine den da draußen.",
             "Wenn du das jeden Tag machst, bist du es bestimmt gewohnt.",
@@ -343,7 +343,7 @@
     },
     "after2_seo_sunset_joke": {
         "name": "{name}",
-        "text": "Ich sollte klarstellen, dass ich vom Sonnenuntergang draußen spreche. Wir wollen keine Missverständnisse haben. *Seoyeons Brille rutscht auf die Nasenspitze, und der Stift rutscht über die Datumsbox hinaus.*"
+        "text": "Du hast gerade kurz gestockt, stimmt's? Zum Glück hab ich's gleich dazugesagt, sonst hättest du's glatt falsch verstanden. *Seoyeons Brille rutscht ihr auf die Nasenspitze und die Stiftspitze gleitet aus dem Datumsfeld.*"
     },
     "after2_seo_sunset_joke_b": {},
     "after2_seo_sunset_react": {
@@ -353,7 +353,7 @@
     "after2_seo_sunset_react_b": {},
     "after2_seo_neck_worry": {
         "name": "Seoyeon",
-        "text": "Mir geht's gut. So viel Papierkram ist bei mir Alltag."
+        "text": "Nur weil ich daran gewöhnt bin, heißt das nicht, dass es nicht ermüdet. Trotzdem ist es meine Aufgabe, also bringe ich sie zu Ende."
     },
     "after2_seo_neck_react": {
         "name": "Seoyeon",
@@ -389,7 +389,7 @@
     },
     "after2_seo_neck_high_2_b": {
         "name": "Seoyeon",
-        "text": "So, den Rest ordnen wir noch nach Datum. Die Kiste bleibt hier. *Aus so kurzer Distanz, dass sich die Schultern fast berühren, blättert Seoyeon das nächste Blatt um.*"
+        "text": "So, sortieren wir den Rest noch nach Datum. Die Kiste bleibt genau hier stehen. *So nah, dass unsere Schultern sich fast berühren, blättert Seoyeon das nächste Dokument um.*"
     },
     "after2_seo_neck_low": {
         "name": "{name}",
@@ -442,7 +442,7 @@
     },
     "after2_seo_stay_3c": {
         "name": "{name}",
-        "text": "Hier liegt noch das letzte Blatt der Abschlusscheckliste? Nur das noch zusammen ansehen, dann Pause. *Ich ziehe das letzte Blatt parallel neben das umgedrehte Klemmbrett.*"
+        "text": "Dann leih ich mir den Platz neben der Schulsprecherin, bis ihre Pause vorbei ist. *Ich schiebe den geschlossenen Ordner beiseite und blicke neben Seoyeon hinaus ins Abendrot.*"
     },
     "after2_seo_leave": {
         "name": "Seoyeon",
@@ -455,7 +455,7 @@
     },
     "after2_seo_skinship_2": {
         "name": "Seoyeon",
-        "text": "Beweg dich nicht. Bleib still. ...So, fertig. *Erst nachdem der Reinigungswagen außerhalb des Ganges vorbeigefahren ist, lassen Seoyeons Fingerspitzen langsam los.*"
+        "text": "Nicht bewegen, halt kurz still. So, fertig. *Erst als draußen auf dem Flur der Putzwagen vorübergerollt ist, lösen sich Seoyeons Fingerspitzen langsam.*"
     },
     "after2_seo_skinship_3": {
         "name": "Seoyeon",
@@ -487,11 +487,11 @@
     },
     "after2_yuna_1": {
         "name": "{name}",
-        "text": "*Ich denke an den Zettel von heute Morgen und gehe zum Bibliotheksanbau, wo kaum jemand unterwegs ist.*"
+        "text": "*Mit dem Zettel von heute Morgen im Kopf gehe ich zum menschenleeren Flur im Bibliotheksnebengebäude.*"
     },
     "after2_yuna_1_b": {
         "name": "{name}",
-        "text": "*Im Flur des Anbaus, in den das Abendrot schräg einfällt, ist keine Menschenseele. Nur die Tür zum geheimen Leseraum in der Ecke steht einen Spalt offen, zwei Fingerbreit.*"
+        "text": "*Im schräg vom Abendrot durchfluteten Flur des Nebengebäudes regt sich niemand. Nur die Tür zum kleinen Raum ganz hinten in der Ecke steht zwei Fingerbreit offen.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -503,7 +503,7 @@
     },
     "after2_yuna_3": {
         "name": "Yuna",
-        "text": "Du bist wieder da."
+        "text": "Du hast wirklich hergefunden."
     },
     "after2_yuna_4": {
         "name": "{name}",
@@ -584,11 +584,11 @@
     },
     "after2_yuna_quiet_react": {
         "name": "Yuna",
-        "text": "Selbst mit dir neben mir kann ich lesen, ohne abgelenkt zu werden. *Sie schiebt den Lesezeichen um eine Seite zurück und legt den Ohrhörerkopf trotzdem nicht auf das Sofa.*"
+        "text": "Selbst wenn du neben mir sitzt, kann ich ungestört lesen. *Sie schiebt das Lesezeichen eine Seite weiter, zieht aber das geteilte Kopfhörerkabel nicht zurück.*"
     },
     "after2_yuna_end": {
         "name": "{name}",
-        "text": "Ich sollte jetzt gehen, bevor es dunkel wird. Den geliehenen Ohrhörer leg ich hier hin. *Ich stehe vom Sofa auf und nehme meine Tasche.*"
+        "text": "Ich sollte langsam los, bevor es dunkel wird. Danke für das Lied, den Ohrhörer leg ich hier hin. *Ich lege meinen Ohrhörer aufs Sofa, stehe auf und greife nach meiner Tasche.*"
     },
     "after2_yuna_skinship_1": {
         "name": "{name}",
@@ -596,7 +596,7 @@
     },
     "after2_yuna_skinship_2": {
         "name": "Yuna",
-        "text": "...Ich wollte nicht als Erste zugreifen. Nimm du das Buch. *Unsere Fingerspitzen überlappen in Stille für etwa drei Sekunden, bevor Yuna langsam ihre Hand zurückzieht.*"
+        "text": "Ich wollte deine Hand eigentlich gar nicht zuerst greifen. Nimm du das Buch mit. *Unsere übereinanderliegenden Fingerspitzen verharren einen Moment, ehe Yuna ihre Hand langsam zurückzieht.*"
     },
     "after2_yuna_skinship_3": {
         "name": "{name}",
@@ -673,7 +673,7 @@
     },
     "after2_group_return": {
         "name": "{name}",
-        "text": "*Ich beende das Gespräch, das noch leise nachklingt, richte die Tasche auf der Schulter und gehe zum Schultor.*"
+        "text": "*Nach dem kurzen Wortgefecht beenden wir das Gespräch, ich rücke meine Tasche zurecht und gehe Richtung Schultor.*"
     },
     "minsu_warn_gate": {},
     "minsu_warn_1": {
@@ -694,7 +694,7 @@
     },
     "minsu_warn_4": {
         "name": "Minsu",
-        "text": "Macht dir die Schule neuerdings ziemlich Spaß?"
+        "text": "Kaum gewechselt und schon hast du mächtig Spaß am Schulleben, was?"
     },
     "minsu_warn_4_b": {
         "name": "{name}",
@@ -720,7 +720,7 @@
     },
     "after2_yuna_trap_react": {
         "name": "Yuna",
-        "text": "Das klang für mich, als würdest du fragen, ob du das nächste Mal jemanden mitbringen darfst. Ich habe nie gesagt, dass du hier irgendjemanden mitbringen darfst. *Sie steckt das Lesezeichen zurück und packt die Kopfhörer in ihre Tasche.*"
+        "text": "Das klingt, als wolltest du fragen, ob du nächstes Mal jemand anderen mitbringen kannst. Ich habe nie gesagt, dass hier einfach jeder rein darf. *Sie steckt das Lesezeichen zurück und nimmt zuerst ihren eigenen Ohrhörer heraus.*"
     },
     "after2_seo_tone": {},
     "after2_dain_tone": {},
@@ -747,7 +747,7 @@
     },
     "after2_yuna_neg_1": {
         "name": "Yuna",
-        "text": "*Sie klappt das aufgeschlagene Buch nicht zu und reicht keinen Zettel.* Heute will ich mit niemandem zusammen sein."
+        "text": "*Ohne auch nur einmal vom aufgeschlagenen Buch aufzusehen, blättert sie um.* Heute will ich mit niemandem zusammen sein."
     },
     "after2_dain_rival_seo_neg": {
         "name": "Seoyeon",
@@ -787,7 +787,7 @@
     },
     "after2_dain_neg_leave": {
         "name": "{name}",
-        "text": "*Ich trete aus der Halle, in der die Luft schwer liegt, und gehe allein zum Schulkiosk.*"
+        "text": "*Ich lasse die geschlossenen Sporthallentüren hinter mir und gehe allein durchs Schultor hinaus zur Imbissstraße.*"
     },
     "after2_yuna_neg_leave": {
         "name": "{name}",

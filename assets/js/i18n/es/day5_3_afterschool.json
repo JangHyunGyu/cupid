@@ -76,7 +76,7 @@
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*Dain sale por la entrada del gimnasio. El paso es mucho más corto y lento que de costumbre, ella que siempre iba por delante a zancadas.*"
+        "text": "*Por la puerta abierta del gimnasio veo a Dain con un balón de voleibol en la mano. Su paso es mucho más corto y lento que de costumbre, ella que siempre cruzaba la pista a grandes zancadas.*"
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
@@ -100,11 +100,11 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "...Está bien, ve. Solo te enviaré con una sonrisa hasta aquí. Tampoco tengo que actuar fuerte y contener las lágrimas frente a ti. *Dain se da la vuelta y mete el balón de voleibol en el contenedor de almacenamiento.*"
+        "text": "...Venga, vete ya. Lo de despedirte con una sonrisa lo dejo hasta aquí. Tampoco tengo por qué hacerme la fuerte y aguantarme las lágrimas delante de ti. *Dain se da media vuelta y guarda el balón de voleibol en el carro.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*Dain aprieta una vez más el velcro de la rodillera con la punta de los dedos, que le tiemblan, y entra en el gimnasio sin volverse.*"
+        "text": "*Con las yemas de los dedos temblorosas, Dain aprieta una vez más el velcro de la rodillera y, sin volverse, cruza la pista hacia el cuarto de material.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
@@ -152,7 +152,7 @@
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*Al final vuelvo a meter el móvil al fondo del bolsillo, sin encender la pantalla. Para no perder la espalda que se alejaba, doy dos pasos largos al otro lado de la bifurcación y llamo el nombre a voz en cuello.*"
+        "text": "*Guardo de nuevo el móvil al fondo del bolsillo sin llegar a encender la pantalla. Para no dejar escapar la silueta de Seoyeon, que aflojaba el paso más adelante, doy dos zancadas al otro lado del cruce y la llamo por su nombre.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -284,7 +284,7 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*Tomo aire hondo, con la respiración agitada, y llamo su nombre con la voz más clara que tengo.*"
+        "text": "*Tomo una bocanada honda para calmar el aliento agitado, la miro directo a los ojos y hablo con voz clara.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -293,7 +293,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Seoyeon está a mi lado con las mejillas sonrojadas y comienza a caminar hacia el parque.* ...Fue muy cruel decirlo tan tarde. Aun así... ahora finalmente sé cómo te sientes de verdad."
+        "text": "*Al estrechar con firmeza la mano derecha que me tendía, Seoyeon se coloca a mi lado con las mejillas encendidas y echa a andar hacia el parque.* ...Qué malo eres, diciéndolo tan tarde. Aun así, por fin sé lo que sientes de verdad."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -363,7 +363,7 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*Sin atreverme a separar los labios, apago la pantalla del móvil y cierro la boca, pesada.*"
+        "text": "*Incapaz de pronunciar esa última palabra decisiva, bajo la cabeza y cierro la boca con pesadez.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
@@ -371,7 +371,7 @@
     },
     "after5_confess_no_2b": {
         "name": "{name}",
-        "text": "*Enterré en el pecho el nombre al que no llegué a llamar y, al final, me di la vuelta solo y me fui a casa.*"
+        "text": "*Enterré en el pecho la confesión que me había subido hasta la garganta y, dando la espalda a los pasos que se alejaban, me marché solo a casa.*"
     },
     "after5_set_harem": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     "after5_co_tempter_branch": {},
     "after5_co_start": {
         "name": "{name}",
-        "text": "*En el pasillo de después de clase, ya sin la gente del festival, vuelven a estar reunidas las personas con las que esta mañana tuve aquel cara a cara que no dejaba respirar.*"
+        "text": "*De pie en el pasillo de después de clase, ya vacío tras el gentío del festival, recuerdo los rostros del tenso cara a cara de esta mañana. Antes de volver a casa, aún me quedan conversaciones pendientes.*"
     },
     "after5_co_seo_1": {
         "name": "Seoyeon",
@@ -426,7 +426,7 @@
     },
     "after5_co_dain_1": {
         "name": "Dain",
-        "text": "*Dain empuja el balón de voleibol hasta el rincón más hondo del armario.* He quitado tu nombre de la lista de parejas del evento de la tarde."
+        "text": "*Dain empuja el balón de voleibol hasta el rincón más hondo del carro.* He borrado tu nombre de la lista de parejas del evento que había apuntado esta mañana."
     },
     "after5_co_dain_2": {
         "name": "Dain",
@@ -529,7 +529,7 @@
     "after5_last_chance_seo_history_check": {},
     "after5_last_chance_seo_postponed": {
         "name": "Seoyeon",
-        "text": "*Al otro lado del cruce, donde da el sol de la tarde, Seoyeon afloja el paso; al notar que me acerco, se detiene y murmura en voz baja.* Lo de anoche en la azotea, lo que no llegamos a acabar... hoy déjamelo oír hasta el final."
+        "text": "*Al otro lado del cruce bañado por el atardecer, Seoyeon afloja el paso y, al notar que vengo detrás, deja escapar un murmullo quedo.* Lo que anoche quedó a medias en la azotea... hoy déjamelo oír hasta el final."
     },
     "after5_last_chance_seo_tentative": {
         "name": "Seoyeon",
@@ -626,7 +626,7 @@
     },
     "day5_haeun_guilt_1": {
         "name": "Haeun",
-        "text": "*Al final del pasillo, Haeun está de pie agarrando la correa de su bolso.* No estaba mintiendo cuando dije que te apoyaba, sunbae. Pero ahora no puedo mirar a Seoyeon a los ojos."
+        "text": "*Al final del pasillo, Haeun permanece de pie aferrando la correa de su bolso.* Cuando te dije que te animaba, sunbae, no mentía. Pero ahora mismo no soy capaz de mirar a la cara ni a Seoyeon sunbae ni a la persona que te estaba esperando."
     },
     "day5_haeun_guilt_choice": {
         "name": "Haeun",
@@ -668,11 +668,11 @@
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*Haeun se sienta a mi lado en el banco y toma el borde de mi manga.* Yo también te gusto mucho, sunbae. Empecemos a salir hoy. Mañana por la mañana, ¿puedo pedírtelo solo porque te extraño, sin necesidad de una excusa?"
+        "text": "*Cuando me declaro yo primero y le digo que me gusta, a Haeun se le enrojecen los ojos; se acerca en el banco hasta pegarse a mi lado y me sujeta el borde de la manga.* A mí también me gustas muchísimo, sunbae. Salgamos juntos desde hoy. Mañana por la mañana, aunque no tenga la excusa de una caja de papeles, ¿puedo llamarte solo porque tengo ganas de verte?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",
-        "text": "*Haeun sonríe, despejada, y mira una vez hacia el tejado de la escuela, ya en el atardecer.* Mañana iré yo a ver a Seoyeon, por mi cuenta, y se lo diré como es debido. No voy a esquivar la culpa: me la llevo, y a partir de ahora quiero estar a tu lado sin esconderme."
+        "text": "*Haeun sonríe con claridad y vuelve una vez la vista hacia el tejado del instituto teñido por el ocaso.* Mañana iré yo misma a buscar a Seoyeon sunbae aparte para hablar con ella como es debido. Asumiré de frente la culpa que me toca y, desde ahora, quiero estar con orgullo a tu lado, sunbae."
     },
     "day5_ending_haeun_apology_yuna": {
         "name": "Haeun",
@@ -692,7 +692,7 @@
     },
     "day5_ending_haeun_epilogue": {
         "name": "Haeun",
-        "text": "*Una tarde, después de que Haeun se gradúa de la preparatoria y se convierte en adulta, entro al café. Ella me saluda feliz desde un asiento junto a la ventana.* ¡Sunbae, llegué primero hoy y guardé nuestros asientos! Esperé para que pudiéramos elegir el menú juntos. ¿Qué vamos a tomar hoy?"
+        "text": "*Una tarde de primavera, cuando Haeun también se ha graduado del instituto y ya es mayor de edad, abro la puerta de la cafetería y la veo saludarme con alegría desde la ventana, con una fina pulsera plateada en la muñeca.* ¡Sunbae, como hoy es una cita y no un recado, he llegado un poco antes para guardarnos sitio! Y te he esperado para elegir juntos la carta. ¿Qué nos pedimos hoy?"
     },
     "day5_haeun_offer_seoyeon": {
         "name": "Haeun",
@@ -700,7 +700,7 @@
     },
     "day5_haeun_leave_seoyeon": {
         "name": "{name}",
-        "text": "*Le aviso a Seoyeon de que tengo algo que decirle sí o sí, y nos quedamos cara a cara junto a la ventana del pasillo. Haeun, que ha venido detrás, se detiene con cuidado a medio paso de mí.* Lo siento. La persona a la que quiero conocer más a fondo, de ahora en adelante, es Haeun. Hoy me voy con ella. Quería decírtelo yo, sin esconderlo."
+        "text": "*Aviso a Seoyeon de que tengo algo importante que decirle y nos vemos frente a frente junto a la ventana del pasillo. Haeun, que venía detrás, se detiene con cuidado medio paso a mi lado.* Lo siento. La persona a la que quiero conocer más a fondo de ahora en adelante es Haeun. Hoy me voy con ella. Quería decírtelo yo mismo, no que te enteraras por otros."
     },
     "day5_haeun_offer_yuna": {
         "name": "Haeun",
@@ -724,7 +724,7 @@
     },
     "day5_haeun_leave_teacher": {
         "name": "{name}",
-        "text": "*Le hago saber a la profesora que tengo algo que decirle, y nos quedamos cara a cara junto a la ventana del pasillo. Haeun también se detiene con cuidado a mi lado.* Profesora, a partir de ahora quiero ver más a Haeun. Hoy me voy con ella. A ti también quería decírtelo yo, sin esquivarlo."
+        "text": "*Le hago saber a la tutora que tengo algo que comentarle y nos encontramos junto a la ventana del pasillo. Haeun también se detiene con cuidado a mi lado.* Profesora, a partir de ahora quiero seguir conociendo más a Haeun. Hoy me marcho con ella. Sin rodeos, quería decírselo en persona."
     },
     "day5_haeun_offer_nurse": {
         "name": "Haeun",
@@ -760,7 +760,7 @@
     },
     "day5_haeun_switch_yuna_group_talk": {
         "name": "Yuna",
-        "text": "No apartes la vista. Mírame a los ojos y dímelo.",
+        "text": "No gires la cara. Mírame directo a los ojos y dímelo.",
         "context": "Día 5, después de clases. El protagonista, Yuna y Haeun se reúnen en el pasillo. El protagonista acaba de decir: «Quiero conocer más a Haeun. Hoy me voy con ella. Quería decírtelo en persona.». Eligió explícitamente a Haeun, pero aún no han acordado salir. Yuna tenía la afinidad más alta antes de la elección. Haeun +20 y Yuna -30 ya se aplicaron.",
         "personality": "Los tres hablan sobre la declaración que acaba de hacer el protagonista. Haeun se alegra de ser elegida, pero aún no ha aceptado salir con él. La otra persona expresa dolor y dudas con su propia voz. Las relaciones y promesas previas deben constar en los recuerdos reales. No presentes al personal escolar como expareja de un alumno. Haeun +20 y la otra persona -30 ya se aplicaron; evalúa solo la conducta nueva de este turno.",
         "groupLocation": "Ventana del pasillo",
@@ -776,7 +776,7 @@
     },
     "day5_haeun_switch_dain_group_talk": {
         "name": "Dain",
-        "text": "Vale. Desde aquí te oigo perfectamente, así que no lo escondas y cuéntamelo todo: por qué lo has decidido así.",
+        "text": "Vale, te estoy escuchando bien claro desde aquí, así que cuéntamelo todo tal cual: por qué lo has decidido así.",
         "context": "Día 5, después de clases. El protagonista, Dain y Haeun se reúnen en el pasillo. El protagonista acaba de decir: «Quiero conocer más a Haeun. Hoy me voy con ella. Quería decírtelo en persona.». Eligió explícitamente a Haeun, pero aún no han acordado salir. Dain tenía la afinidad más alta antes de la elección. Haeun +20 y Dain -30 ya se aplicaron.",
         "personality": "Los tres hablan sobre la declaración que acaba de hacer el protagonista. Haeun se alegra de ser elegida, pero aún no ha aceptado salir con él. La otra persona expresa dolor y dudas con su propia voz. Las relaciones y promesas previas deben constar en los recuerdos reales. No presentes al personal escolar como expareja de un alumno. Haeun +20 y la otra persona -30 ya se aplicaron; evalúa solo la conducta nueva de este turno.",
         "groupLocation": "Ventana del pasillo",

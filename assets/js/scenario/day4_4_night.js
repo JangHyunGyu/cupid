@@ -1906,6 +1906,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "wall_yuna_pre_high_1": {
         "background": "assets/images/background/room_my.png",
         "backgroundVariant": "dream",
+        "bgm": "night2.mp3",
         "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
         "next": "wall_yuna_pre_high_2"
     },
@@ -1914,8 +1915,11 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "routeBeforeRender": true
     },
     "wall_yuna_pre_low_1": {
-        "next": "wall_yuna_pre_low_2",
-        "routeBeforeRender": true
+        "background": "assets/images/background/room_my.png",
+        "backgroundVariant": "dream",
+        "bgm": "night2.mp3",
+        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "next": "wall_yuna_pre_low_2"
     },
     "wall_yuna_pre_low_2": {
         "next": "wall_yuna_rival_rank",
@@ -2432,6 +2436,9 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
+            { "condition": "day4_distance_seoyeon", "next": "day4_night_regret_msg" },
+            { "condition": "day4_distance_dain", "next": "day4_night_regret_msg" },
+            { "condition": "day4_distance_yuna", "next": "day4_night_regret_msg" },
             { "condition": "route_seoyeon", "next": "day4_night_regret_msg_seo" },
             { "condition": "route_dain", "next": "day4_night_regret_msg_dain" },
             { "condition": "route_yuna", "next": "day4_night_regret_msg_yuna" },

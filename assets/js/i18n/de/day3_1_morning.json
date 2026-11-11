@@ -33,16 +33,16 @@
     },
     "morning3_start_2": {
         "name": "{name}",
-        "text": "*Ich packe den Schulterriemen fest und renne, bis mir die Luft bis zum Hals steht. Vor dem Schultor, kurz bevor es zufällt, steht eine vertraute Silhouette.*"
+        "text": "*Ich fasse den Trageriemen meiner Tasche fester und renne, bis mir der Atem bis zum Hals steht. Kurz vor dem Vorklingeln eile ich auf das Schultor zu.*"
     },
     "morning3_gate_branch": {},
     "morning3_seo_gate_1": {
         "name": "{name}",
-        "text": "Seoyeon? Die Glocke wird gleich läuten. Warum stehst du noch hier? *Seoyeon blickt ruhig neben dem Torpfosten in diese Richtung.*"
+        "text": "Seoyeon? Es klingelt gleich, bist du noch gar nicht hoch ins Klassenzimmer gegangen? *Seoyeon steht neben dem Torpfeiler und blickt ruhig zu mir herüber.*"
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon atmet leise aus und dreht die Schuhspitzen zu mir. Anders als sonst ist das der Blick von jemandem, der lange auf jemanden gewartet hat.*"
+        "text": "*Seoyeon atmet kurz aus und dreht die Schuhspitzen in meine Richtung. Ihre Fingerspitzen halten das Klemmbrett ein wenig fester als sonst.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -98,7 +98,7 @@
     },
     "morning3_yuna_gate_1": {
         "name": "{name}",
-        "text": "*Im Schatten neben dem Schultor senkt Yuna die Wimpern und sieht still nur auf ihre Schuhspitzen.*"
+        "text": "*Im Schatten des Baumes neben dem Schultor blickt Yuna mit gesenkten Wimpern still auf ihre Schuhspitzen hinab.*"
     },
     "morning3_yuna_gate_warm_1": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     },
     "morning3_dain_gate_1": {
         "name": "{name}",
-        "text": "*Von der anderen Seite der Torecke rennt Dain mit fliegendem Pferdeschwanz im Vollsprint heran.*"
+        "text": "*Hinter der Ecke des Schultors kommt Dain mit voller Kraft angesprintet, ihr kurzes braunes Haar wippt im Lauf.*"
     },
     "morning3_dain_gate_warm_1": {
         "name": "Dain",
@@ -202,7 +202,7 @@
     },
     "morning3_classroom_1": {
         "name": "{name}",
-        "text": "*Als ich die Hintertür des Klassenzimmers öffnete, fror die Luft in drei Richtungen ein. Seoyeons Füllfederhalter blieb stehen, Dains Stuhl verschob sich und Yuna schob ihren Lesezeichen wieder hinein.*"
+        "text": "*Als ich die Hintertür des Klassenzimmers öffne, erstarrt die Luft aus drei Richtungen. Seoyeons Füllfederhalter hält inne, Dains Stuhl rückt zurück, und Yuna legt leise ihr Lesezeichen ins Buch.*"
     },
     "morning3_react_seo_1": {
         "name": "Dain",
@@ -238,11 +238,11 @@
     },
     "morning3_date_intro_b": {
         "name": "{name}",
-        "text": "*Der Flur, in den ich kurz zum Durchatmen gegangen bin. Als hätte sie gewartet, kommt Seoyeon an meine Seite und passt den Schritt an.*"
+        "text": "*Auf dem Flur, auf den ich kurz zum Durchatmen getreten bin, kommt Seoyeon an meine Seite und passt ihren Schritt meinem an.*"
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "Frau Lehrerin, Sie waren also hier. *Ich öffne die Tür zum leeren Klassenzimmer. Der Füllfederhalter der Klassenlehrerin, der über den Schreibtisch gleitet, stockt.*"
+        "text": "Frau Lehrerin, Sie sind ja ganz allein im leeren Klassenzimmer. *Als ich leise die Tür öffne, hält die Füllfeder der Klassenlehrerin über dem Manuskriptpapier auf dem Pult inne.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Klassenlehrerin",
@@ -352,7 +352,7 @@
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Klassenlehrerin",
-        "text": "*Sie trennt den Stapel von Manuskriptseiten vom Klassenbuch.* Das ist meine persönliche Arbeit. Es hat nichts mit dem Unterricht oder der Bewertung zu tun, und es ist nichts, worüber du dich verantwortlich fühlen musst."
+        "text": "*Sie legt das Bündel Manuskriptblätter neben das Klassenbuch beiseite.* Das ist mein persönliches Manuskript. Es hat nichts mit dem Unterricht oder den Noten zu tun, mach dir also keine Gedanken."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
@@ -372,7 +372,7 @@
     },
     "hidden_homeroom_d3_reveal_choice": {
         "name": "{name}",
-        "text": "*Über das Manuskriptpapier, auf dem 7 Jahre liegen, fällt das Morgenlicht schräg.*",
+        "text": "*Das Morgenlicht fällt schräg auf die abgegriffenen Ecken der Manuskriptblätter aus sieben Jahren.*",
         "choices": [
             "Sieben Jahre sind kein Aufgeben — das ist Durchhaltevermögen.",
             "Warum schreiben Sie immer hier?",
@@ -397,7 +397,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin beißt sich einmal fest auf die Unterlippe, lässt sie wieder los und versteckt das Manuskriptpapier trotzdem nicht in der Schublade.*"
+        "text": "*Die Klassenlehrerin beißt sich kurz auf die Unterlippe, versteckt die Manuskriptblätter jedoch nicht in der Schublade.*"
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Klassenlehrerin",
@@ -405,7 +405,7 @@
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
-        "text": "*Die Klassenlehrerin räuspert sich leise und klopft die Kanten des Manuskripts zurecht. Im stillen Klassenzimmer ist nur das Ticken des Sekundenzeigers an der Wanduhr deutlich zu hören.*"
+        "text": "*Die Klassenlehrerin räuspert sich leise und klopft die Kanten des Manuskripts ordentlich zurecht. Im stillen Klassenzimmer ist nur der Sekundenzeiger der Wanduhr deutlich zu hören.*"
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Klassenlehrerin",
@@ -443,7 +443,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*Während der Pause öffne ich die Tür zur Krankenstation. Im Geruch von Desinfektionsmittel berührt der Rand des Pflasters an meinem Ellbogen meinen Ärmel.*"
+        "text": "*In der Pause öffne ich die Tür zum Krankenzimmer. Im Geruch nach Desinfektionsmittel streift das wasserfeste Pflaster von gestern am Ellbogen die Innenseite meines Hemdsärmels.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Schulkrankenschwester",
@@ -459,11 +459,11 @@
     },
     "hidden_nurse_d3_1_e": {
         "name": "{name}",
-        "text": "Im Klassenzimmer bekomme ich schlecht Luft. Ich möchte mich nur kurz ausruhen und dann gehen."
+        "text": "Die Luft im Klassenzimmer war mir etwas zu stickig. Darf ich mich hier kurz ein wenig ausruhen?"
     },
     "hidden_nurse_d3_2": {
         "name": "Schulkrankenschwester",
-        "text": "Du hast kein Fieber? Deine Gesichtsfarbe ist ganz matt."
+        "text": "Kein Fieber und kein Schwindel? Dein Gesichtsausdruck wirkt heute ziemlich bedrückt."
     },
     "hidden_nurse_d3_2_b": {},
     "hidden_nurse_d3_2_c": {},
@@ -471,7 +471,7 @@
     "hidden_nurse_d3_2_e": {},
     "hidden_nurse_d3_3": {
         "name": "{name}",
-        "text": "Ich möchte nur kurz still durchatmen. Es fühlt sich an, als würden sich die Beziehungen zu den anderen immer weiter verheddern."
+        "text": "Ich wollte nur kurz in Ruhe durchatmen. Ich bin erst seit ein paar Tagen an dieser Schule, und trotzdem ist mir schon ziemlich viel im Kopf."
     },
     "hidden_nurse_d3_3_b": {
         "name": "Schulkrankenschwester",
@@ -481,7 +481,7 @@
     "hidden_nurse_d3_3_d": {},
     "hidden_nurse_d3_4": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulnotärin zieht den Vorhang halb zu und reicht mir eine Tasse warmes Wasser.* Komm und setz dich hier. Du musst hier nicht so tun, als wärst du okay, also nimm dir Zeit und erzähl mir."
+        "text": "*Die Schulkrankenschwester zieht den Vorhang am Bett halb zu und reicht mir einen Pappbecher mit warmem Wasser.* Komm, setz dich. Hier musst du keine Miene wahren, erzähl ganz in Ruhe."
     },
     "hidden_nurse_d3_5_b": {},
     "hidden_nurse_d3_5_c": {},
@@ -496,11 +496,11 @@
     "hidden_nurse_d3_5_f": {},
     "hidden_nurse_d3_5_g": {
         "name": "{name}",
-        "text": "Aus Angst, jemanden zu verletzen oder zu enttäuschen, schiebe ich die Antwort, die ich eigentlich geben müsste, immer wieder auf."
+        "text": "Aus Angst, jemanden zu enttäuschen, schiebe ich das, was ich eigentlich sagen müsste, immer wieder vor mir her."
     },
     "hidden_nurse_d3_5_h": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester stellt ihren eigenen Pappbecher ordentlich an die Ecke des Tisches.*"
+        "text": "*Die Schulkrankenschwester streicht ruhig über den Henkel ihres Bechers, der an der Tischecke steht.*"
     },
     "hidden_nurse_d3_5_i": {
         "name": "Schulkrankenschwester",
@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_o": {
         "name": "Schulkrankenschwester",
-        "text": "*Ihr Blick wandert zum Fenster, und der Rand des Pappbechers biegt sich unter ihrem Daumen.* Die Art, wie du fragst, weckt Erinnerungen."
+        "text": "*Ihr Blick wandert zum Fenster, und ihr Daumen drückt fester gegen den Henkel ihres Bechers.* Wenn du mich so fragst, muss ich an früher denken."
     },
     "hidden_nurse_d3_5_p": {
         "name": "Schulkrankenschwester",
@@ -561,27 +561,27 @@
     },
     "hidden_nurse_d3_6_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Als die Schulkrankenschwester den Wasserbecher abstellt, breitet sich auf der Glasplatte ein runder nasser Fleck aus.*"
+        "text": "*Als sie ihren abkühlenden Becher zur Seite schiebt, bleibt ein runder Feuchtigkeitsring auf der Glasplatte zurück.*"
     },
     "hidden_nurse_d3_6_c": {
         "name": "Schulkrankenschwester",
-        "text": "Ich wollte für alle eine gute Krankenschwester sein, aber genau dieser Ehrgeiz hat mich zuerst aufgerieben."
+        "text": "Ich wollte für alle eine gute Krankenschwester sein, doch an diesem Anspruch bin ich am Ende zuerst selbst aufgerieben worden."
     },
     "hidden_nurse_d3_6_d": {
         "name": "{name}",
-        "text": "Ist vor deinem Wechsel zur Schule etwas Entscheidendes passiert? Du musst es mir nicht sagen, wenn es zu schwierig ist. *Sie berührt den Schubladengriff und zieht dann ihre Hand zurück.*"
+        "text": "Ist etwas Entscheidendes passiert, bevor Sie an die Schule gewechselt sind? Wenn es Ihnen schwerfällt, müssen Sie nicht darüber sprechen. *Sie berührt den Schubladengriff und zieht die Hand leise wieder zurück.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "Schulkrankenschwester",
-        "text": "Ja. Es gab einen siebzehnjährigen Patienten, den ich nicht retten konnte. Nach dem Verlust dieses Patienten verließ ich das Krankenhaus."
+        "text": "Ja. Ich hatte einen siebzehnjährigen Patienten auf meiner Station, den wir am Ende nicht retten konnten. Ich musste ihn gehen lassen, ohne mich richtig verabschieden zu können."
     },
     "hidden_nurse_d3_6_f": {
         "name": "{name}",
-        "text": "*Das hellgrüne Heft, das ich vorher durch den Spalt der Schublade gesehen habe, blitzt auf. Die Schrift eines Briefs auf der ersten Seite, die nie zu Ende kam.*"
+        "text": "*Der verblasste hellgrüne Hefteinband, den ich neulich kurz durch den Spalt der Schublade gesehen habe, blitzt in meinem Kopf auf.*"
     },
     "hidden_nurse_d3_7": {
         "name": "Schulkrankenschwester",
-        "text": "Deshalb bin ich an diese Schule gekommen. Hier jagt mich keine Klingel, und ich kann jedem Schüler, der zu mir kommt, bis zum Ende ins Gesicht sehen."
+        "text": "Deshalb habe ich im Krankenhaus aufgehört und bin an diese Schule gewechselt. Hier hetzt mich keine Rufklingel, und ich kann jedem Schüler, der hereinkommt, in Ruhe bis zum Schluss in die Augen sehen."
     },
     "hidden_nurse_d3_7_b": {},
     "hidden_nurse_d3_8": {
@@ -590,7 +590,7 @@
     },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
-        "text": "Danke für den Rat."
+        "text": "Danke für Ihre Worte, Frau Lehrerin."
     },
     "hidden_nurse_d3_8_d": {
         "name": "Schulkrankenschwester",
@@ -610,7 +610,7 @@
     },
     "hidden_nurse_d3_choice2": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester schließt langsam die Schublade und blickt zu mir auf. In der stillen Luft, die nach Desinfektionsmittel riecht, suche ich nach Worten.*",
+        "text": "*Die Schulkrankenschwester schiebt die Schublade ganz zu und sieht zu mir auf. Im nach Desinfektionsmittel riechenden Krankenzimmer wird es noch stiller.*",
         "choices": [
             "Sind Sie nach diesem Erlebnis aus dem Krankenhaus gegangen?",
             "Ist es für Sie in Ordnung, noch mehr davon zu erzählen?",
@@ -631,23 +631,23 @@
     },
     "hidden_nurse_d3_9": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn dir alles zu eng wird, bist du jederzeit willkommen. Versprechen, dass ich deine Probleme alle für dich löse, kann ich aber nicht."
+        "text": "Wenn dir das Herz schwer wird, kannst du jederzeit vorbeikommen. Nur entscheiden kann ich deine Probleme nicht an deiner Stelle."
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
-        "text": "*Ich stelle den leeren Pappbecher ab und drehe die Karte, die ich eingesteckt hatte, wieder zwischen den Fingern.*"
+        "text": "*Ich nehme die Hand von der Türklinke, trete ans Pult zurück, stelle den leeren Pappbecher ab und streiche in der Tasche wieder über die Beratungskarte.*"
     },
     "hidden_nurse_d3_9_c": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn es über das hinausgeht, was du allein tragen kannst, helfe ich dann zusammen mit der Klassenlehrerin oder der Beratungsstelle."
+        "text": "Und falls dir irgendwann etwas allein über den Kopf wächst, helfe ich dir gemeinsam mit deiner Klassenlehrerin oder der Beratungsstelle."
     },
     "hidden_nurse_d3_9_d": {
         "name": "Schulkrankenschwester",
-        "text": "Natürlich bespreche ich vorher auf jeden Fall zuerst mit dir, wem wir wie viel sagen."
+        "text": "Aber keine Sorge: Wem ich wie viel erzähle, bespreche ich vorher auf jeden Fall zuerst mit dir."
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
-        "text": "*Auf dem Plan stehen die freien Zeiten von Krankenzimmer und Beratungsstelle nebeneinander. Ich nehme einen Stift und ziehe leise einen Kreis in ein leeres Feld.*"
+        "text": "*Auf dem Plan stehen die freien Zeiten von Krankenzimmer und Beratungsraum nebeneinander. Ich nehme den Stift und kreise still ein freies Feld ein.*"
     },
     "hidden_nurse_d3_11": {
         "name": "Schulkrankenschwester",
@@ -709,7 +709,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
-        "text": "Okay, dann bereiten wir uns auf die nächste Stunde vor! *Sie lächelt extra munter und geht zurück an ihren Platz, tippt aber kurz vor der Klingel mit dem Finger fein innen an ihre Uniformtasche.*"
+        "text": "So, machen wir uns vor dem Klingeln bereit für die nächste Stunde! *Dain kehrt munter lächelnd an ihren Platz zurück, nur in ihrer Tasche unter dem Tisch bewegen sich ihre Finger ganz leicht.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
@@ -751,7 +751,7 @@
     "morning3_multi_from_yuna": {},
     "morning3_end": {
         "name": "{name}",
-        "text": "*Es läutet zum Ende der letzten Stunde am Vormittag, und eine Mittagspause wie am Vorabend eines Sturms beginnt.*"
+        "text": "*Das Klingeln zum Ende der vierten Stunde hallt lang nach und läutet im Klassenzimmer eine angespannte Mittagspause ein.*"
     },
     "morning3_end_b": {},
     "morning3_gate_none_1": {

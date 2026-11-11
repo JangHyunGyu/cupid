@@ -18,13 +18,13 @@
     },
     "lunch2_seo_1b": {
         "name": "Seoyeon",
-        "text": "C'est la première fois que tu montes au toit ? Assieds-toi à l'ombre par ici. La brise est fraîche. *Elle ouvre une boîte à bento bien nette sur une chaise pliante.*"
+        "text": "C'est la première fois que tu montes jusqu'au toit, pas vrai ? *Assise sur une chaise pliante à l'ombre, Seoyeon pose le sac à bento qu'elle tenait sur ses genoux et lève la tête.*"
     },
     "lunch2_seo_2b_check": {},
     "lunch2_seo_2b": {},
     "lunch2_seo_2b_dain": {
         "name": "Seoyeon",
-        "text": "Hier tu partais vers la supérette avec Dain, et aujourd'hui tu es monté jusqu'à mon toit."
+        "text": "Hier tu es parti vers la supérette avec Dain, et aujourd'hui te voilà monté jusqu'à mon toit."
     },
     "lunch2_seo_3b_dain": {
         "name": "{name}",
@@ -85,7 +85,7 @@
     },
     "lunch2_seo_7": {
         "name": "{name}",
-        "text": "*Là, la porte de fer du toit, bien fermée, s'ouvre dans un claquement. Dain déboule, le souffle court.*"
+        "text": "*À cet instant, la porte métallique entrouverte du toit s'ouvre en grand et Dain déboule, hors d'haleine.*"
     },
     "lunch2_seo_9": {
         "name": "Dain",
@@ -101,7 +101,7 @@
     },
     "lunch2_seo_12": {
         "name": "Dain",
-        "text": "Tiens, il y a même une chaise de libre. Celle-là est à moi ! *Dain s'avance d'un grand pas et se laisse tomber sur la chaise d'en face.*"
+        "text": "Tiens, il y a justement une autre chaise pliante là-bas dans le coin ! *Dain va chercher d'un pas vif la chaise appuyée contre le mur et la déplie à côté de nous.*"
     },
     "lunch2_seo_13": {
         "name": "Dain",
@@ -121,7 +121,7 @@
     },
     "lunch2_seo_15": {
         "name": "{name}",
-        "text": "On est tous dans la même classe. Vous deux, vous vous connaissiez déjà bien, non ?"
+        "text": "On est tous dans la même année, après tout. Vous vous connaissez déjà bien toutes les deux, non ?"
     },
     "lunch2_seo_16": {
         "name": "Seoyeon",
@@ -178,7 +178,7 @@
     },
     "lunch2_seo_end_c1": {
         "name": "Dain",
-        "text": "...Bon, on finit de manger d'abord. Ça va refroidir ! *Comme pour chasser la gêne, Dain tapote deux fois le pied de la chaise du bout du pied.*"
+        "text": "...Bref, finissons déjà de manger avant que tout refroidisse ! *Dain s'éclaircit la gorge une fois puis tapote deux fois le pied de la chaise du bout de sa chaussure.*"
     },
     "lunch2_seo_c2_1": {
         "name": "{name}",
@@ -191,7 +191,7 @@
     "lunch2_seo_c2_3": {},
     "lunch2_seo_end_c2": {
         "name": "{name}",
-        "text": "*Une trace de riz reste sur le dos de ma main. Seoyeon, ayant retiré sa main, ne fait que défaire le cordon de la boîte à lunch et le resserre.*"
+        "text": "*Quand sa main s'éloigne de mes lèvres, une brise fraîche glisse entre nous. Ayant retiré sa main, Seoyeon défait puis resserre le nœud du tissu de sa boîte à bento.*"
     },
     "lunch2_dain_1_check": {
         "name": "{name}",
@@ -211,7 +211,7 @@
     },
     "lunch2_dain_3b_seo": {
         "name": "{name}",
-        "text": "Hier, la présidente m'a guidé et appelé dès le matin. Aujourd'hui, je voulais aussi goûter le pain de la supérette dont tu parlais."
+        "text": "Comme la présidente m'avait proposé de déjeuner ensemble en premier hier, aujourd'hui j'avais envie de goûter ce fameux pain de la supérette dont tu parlais."
     },
     "lunch2_dain_4b_seo": {
         "name": "Dain",
@@ -320,7 +320,7 @@
     },
     "lunch2_dain_end": {
         "name": "{name}",
-        "text": "*Pendant que Dain faisait la moue et mangeait le reste de son pain, je n'arrêtais pas de voir le dos de Seoyeon s'éloigner au-delà de la porte vitrée de la boutique.*"
+        "text": "*Pendant que Dain mord à pleines dents dans le reste de sa brioche, les pas de Seoyeon s'éloignent lentement derrière la porte vitrée du couloir.*"
     },
     "lunch2_dain_end_b": {
         "name": "{name}",
@@ -332,7 +332,7 @@
     },
     "lunch2_dain_end_d": {
         "name": "{name}",
-        "text": "*J'ouvre avec précaution la porte de l'infirmerie et j'entre. L'odeur piquante du désinfectant d'hier, et un parfum discret, me reviennent jusqu'au fond des poumons.*"
+        "text": "*J'ouvre doucement la porte de l'infirmerie et j'entre. Derrière l'odeur vive de désinfectant d'hier, un léger parfum m'effleure de nouveau le bout du nez.*"
     },
     "lunch2_dain_end_e": {
         "name": "Infirmière",
@@ -426,7 +426,7 @@
     },
     "lunch2_dain_end_nurse_short1": {
         "name": "Infirmière",
-        "text": "Voilà, c'est fait. La prochaine fois, ne cours pas en ne regardant que le ballon. Regarde d'abord les gens autour de toi."
+        "text": "La prochaine fois, ne cours pas les yeux rivés uniquement sur le ballon ; regarde d'abord les gens autour de toi."
     },
     "lunch2_yuna_1": {
         "name": "{name}",
@@ -540,7 +540,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Un long silence tombe après « il y avait ». Sur le canapé étroit où nous sommes assis côte à côte, la ligne fraîche de l'épaule de Yuna est assez proche pour qu'on la touche.*",
+        "text": "*La voix de Yuna s'arrête net après ce « il y avait ». Juste à côté de la place qu'elle a libérée sur le canapé étroit, la ligne fraîche de son épaule est toute proche.*",
         "choices": [
             "Cette personne, où est-elle maintenant ?",
             "Ne pas demander et s'asseoir à côté d'elle",
@@ -574,7 +574,7 @@
     },
     "lunch2_yuna_c1_7": {
         "name": "{name}",
-        "text": "Si c'est trop dur d'en parler, tu n'es pas obligée d'en dire plus. *Yuna soulève la couverture du livre ouvert et se cache jusqu'au bout du nez.*"
+        "text": "Si cette personne est partie sans un mot, ça a dû être plutôt brusque. *Yuna relève la couverture de son livre ouvert jusqu'à cacher le bout de son nez.*"
     },
     "lunch2_yuna_c1_9": {
         "name": "{name}",
@@ -626,7 +626,7 @@
     },
     "lunch2_yuna_end": {
         "name": "{name}",
-        "text": "*Avant de fermer la porte de l'annexe, je regarde en arrière. Yuna regarde la page sur laquelle elle s'était arrêtée en disant 'autrefois'.*"
+        "text": "*Avant de refermer la porte de l'annexe, je me retourne : Yuna baisse toujours les yeux sur la page où elle avait gardé le doigt plus tôt.*"
     },
     "lunch2_seo_trap_1": {
         "name": "Seoyeon",
@@ -679,7 +679,7 @@
     },
     "lunch2_yuna_3_neg": {
         "name": "Yuna",
-        "text": "*Sans même tendre de mot, elle tourne froidement une seule page.* Aujourd'hui, j'ai pas envie de parler à qui que ce soit."
+        "text": "*Sans même lever les yeux de son livre ouvert, elle tourne froidement une page.* Aujourd'hui, je n'ai envie de parler à personne."
     },
     "lunch2_seo_neg_leave": {
         "name": "{name}",
@@ -711,6 +711,6 @@
     },
     "lunch2_yuna_cool_cont": {
         "name": "{name}",
-        "text": "*Dans la pièce silencieuse, seule une page de mon livre tourne. Yuna ne retire pas l'écouteur qu'elle a dans l'oreille.*"
+        "text": "*À l'ombre de la fenêtre, seul le bruit espacé d'une page qu'on tourne se fait entendre. Yuna ne retire jamais son écouteur.*"
     }
 }

@@ -86,7 +86,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "after1_jealousy_seo_yuna": {
         "background": "assets/images/background/school_hallway.png",
-        "character": "assets/images/characters/dain_normal.png",
+        "character": null,
         "next": "after1_pre_miss"
     },
     "after1_jealousy_dain_1": {

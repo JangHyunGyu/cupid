@@ -5,7 +5,7 @@
     },
     "after3_route_check": {
         "name": "{name}",
-        "text": "*Mexo no celular no bolso. Pra resolver os combinados de fim de semana que se embolaram, quem eu procuro primeiro hoje, depois da aula?*"
+        "text": "*Mexo no celular dentro do bolso. As aulas de sexta terminaram; para onde devo ir primeiro hoje depois da aula?*"
     },
     "after3_auto_dain": {
         "name": "{name}",
@@ -17,7 +17,7 @@
     },
     "after3_auto_seo": {
         "name": "{name}",
-        "text": "*O olhar da Seoyeon, a prancheta bem apertada na mão, forçando um ar calmo, me pesa. Subo a escada em direção à sala do conselho estudantil.*"
+        "text": "*Não me sai da cabeça o rosto de Seoyeon, baixando o olhar enquanto apertava firme a prancheta. Subo a escada em direção à sala do grêmio.*"
     },
     "after3_multi_choice": {
         "name": "{name}",
@@ -55,11 +55,11 @@
     "after3_reject_for_seo_3c": {},
     "after3_reject_for_seo_4": {
         "name": "{name}",
-        "text": "*Voltei ao corredor. A voz da Dain tinha baixado, e o lugar da Yuna estava frio e vazio. Só o bilhete na minha mão se amassa ao longo das dobras.*"
+        "text": "*Saio de novo para o corredor. A voz baixa de Dain e o lugar frio e vazio de Yuna não me saem da cabeça enquanto o bilhete amassa na minha mão.*"
     },
     "after3_seo_1": {
         "name": "{name}",
-        "text": "*Quando abro a porta da sala do conselho estudantil, Seoyeon está curvada sobre a mesa iluminada pelo pôr do sol, com a cabeça apoiada nos braços. O bloco de anotações que ela sempre carrega está aos seus pés.*"
+        "text": "*Quando abro a porta da sala do grêmio, Seoyeon está debruçada sobre os braços na mesa tingida pelo pôr do sol. Ao pé da cadeira está caída a prancheta que ela sempre carrega.*"
     },
     "after3_seo_3": {
         "name": "Seoyeon",
@@ -67,7 +67,7 @@
     },
     "after3_seo_4": {
         "name": "Seoyeon",
-        "text": "*A Seoyeon desvia do meu olhar e, com a ponta do sapato, empurra a prancheta caída para debaixo da sombra da mesa.*"
+        "text": "*Ao erguer a cabeça, Seoyeon não consegue encarar meus olhos e empurra com a ponta do sapato a prancheta caída para a sombra debaixo da mesa.*"
     },
     "after3_seo_5": {
         "name": "{name}",
@@ -87,7 +87,7 @@
     },
     "after3_seo_7_b": {
         "name": "Seoyeon",
-        "text": "*Seoyeon dá meio passo em minha direção, depois para e pressiona as costas da mão contra os olhos.* De todas as pessoas, você. Eu nunca quis que você visse meu rosto desmoronando assim."
+        "text": "*Seoyeon dá meio passo à frente, para e aperta o canto dos olhos com as costas da mão.* Logo para você, mais do que para qualquer outra pessoa, eu não queria mostrar meu rosto desmontado."
     },
     "after3_seo_8": {
         "name": "Seoyeon",
@@ -95,11 +95,11 @@
     },
     "after3_seo_9": {
         "name": "Seoyeon",
-        "text": "Espera. Só vou recuperar o fôlego. *A Seoyeon morde o lábio com força e, com a mão trêmula, pega a prancheta e a põe sobre o joelho.*"
+        "text": "Deixa só eu recuperar o fôlego um instante. *Mordendo firme o lábio, Seoyeon volta a se sentar na cadeira e apoia a prancheta no colo com as mãos trêmulas.*"
     },
     "after3_seo_choice": {
         "name": "Seoyeon",
-        "text": "O que você viu hoje, deixa por aqui. Em troca, nesta sala, agora, você me trata como sempre, como se nada tivesse acontecido?",
+        "text": "Guarda o que você viu hoje só entre nós dois. Em troca, enquanto estivermos nesta sala, pode me tratar normalmente, como se nada tivesse acontecido?",
         "choices": [
             "Todo mundo tem dias assim. Não leva tão a sério.",
             "O quê? Não vi nada. Minha caneta caiu e entrei para pegar.",
@@ -141,11 +141,11 @@
     },
     "after3_seo_pity_trap_9": {
         "name": "Seoyeon",
-        "text": "*A Seoyeon corta o que eu ia dizer, com um olhar de gelo.* Dentro da escola, me chama de Presidente."
+        "text": "*Seoyeon corta minha fala com o olhar gélido.* Dentro da escola, me chame de presidente."
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
-        "text": "*Fechei a porta da sala do conselho estudantil e saí, como se me pusessem para fora. No corredor vazio, só ecoou uma vez, lá de dentro, o som da prancheta jogada, fria, sobre a mesa.*"
+        "text": "*Quase posto para fora, fecho a porta da sala do grêmio atrás de mim. Pelo corredor vazio, ecoa apenas uma vez o som seco da prancheta batendo na mesa.*"
     },
     "after3_seo_correct_1": {
         "name": "Seoyeon",
@@ -153,7 +153,7 @@
     },
     "after3_seo_correct_2": {
         "name": "{name}",
-        "text": "*Eu me inclino e estico a mão por baixo da mesa. Para dar tempo a Seoyeon de secar os olhos, eu olho para o chão e mexerei como se estivesse procurando uma caneta.*"
+        "text": "*Abaixo-me e estendo a mão por baixo da mesa. Para dar tempo de Seoyeon recompor o olhar, mantenho a vista no chão procurando uma caneta perdida.*"
     },
     "after3_seo_correct_3": {
         "name": "{name}",
@@ -189,11 +189,11 @@
     },
     "after3_seo_correct_11": {
         "name": "Seoyeon",
-        "text": "*Seoyeon abaixa a cabeça até que sua testa quase toque meu antebraço e sussurra. O hálito quente roça pelo colarinho aberto da minha camisa.* Da próxima vez que você perder uma caneta, venha aqui primeiro."
+        "text": "*Seoyeon abaixa a cabeça até quase encostar a testa no meu antebraço e sussurra. O sopro quente roça a gola aberta da minha camisa.* Da próxima vez que perder uma caneta, venha procurar aqui primeiro, sem falta."
     },
     "after3_seo_correct_12": {
         "name": "{name}",
-        "text": "*Seoyeon dobra o cronograma de dever do conselho estudantil da próxima semana, ainda quente das mãos dela, e desliza-o silenciosamente na minha palma.*"
+        "text": "*Seoyeon dobra a escala de plantão do grêmio da próxima semana, ainda morna do toque dela, e a coloca devagar na palma da minha mão.*"
     },
     "after3_seo_freetalk": {
         "name": "Seoyeon",
@@ -224,7 +224,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Da Seoyeon, só ouvi fala de trabalho. Pra Dain, só deixei um oi curto. Acertar os combinados, que era o que eu tinha de fazer, nem saiu da boca.*"
+        "text": "*De Seoyeon só ouvi assuntos do grêmio e para Dain deixei apenas um oi rápido. No fim, não consigo nem tocar na conversa sobre os compromissos do fim de semana.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -236,7 +236,7 @@
     },
     "after3_yuna_4": {
         "name": "{name}",
-        "text": "*Meus olhos caem na primeira página sem querer. \"Um dia um aluno transferido veio. Ele encontrou o caminho até o canto da biblioteca e sentou-se ao meu lado sem dizer uma palavra. Eu não me importava com aquele calor.\"*"
+        "text": "*Sem querer, meus olhos pousam na primeira página. «Um dia chegou um aluno transferido. Alguém que veio até o canto da biblioteca e se sentou ao meu lado sem dizer nada. Eu não desgostei daquele calor.»*"
     },
     "after3_yuna_5_b": {
         "name": "{name}",
@@ -248,7 +248,7 @@
     },
     "after3_yuna_7": {
         "name": "Yuna",
-        "text": "Tirei uma bebida pra você. Por que você está olhando isso? *O olhar da Yuna, parada na soleira, trava entre a ponta dos meus dedos e o caderno.*"
+        "text": "Fui pegar uma bebida para você, por que está olhando isso? *Parada na soleira, o olhar de Yuna congela entre o caderno aberto na almofada e a ponta dos meus dedos.*"
     },
     "after3_yuna_8": {
         "name": "Yuna",
@@ -256,7 +256,7 @@
     },
     "after3_yuna_8b": {
         "name": "Yuna",
-        "text": "*A Yuna encurta a distância de uma vez, se aproxima e toma o caderno da minha mão, quase num arranque.* Ainda não deixei você ler."
+        "text": "*Yuna encurta a distância num instante e recolhe depressa o caderno de cima da almofada.* Ainda não dei permissão para você ler."
     },
     "after3_yuna_9": {
         "name": "Yuna",
@@ -264,7 +264,7 @@
     },
     "after3_yuna_choice": {
         "name": "{name}",
-        "text": "*A ponta dos dedos da Yuna, no meu pulso, treme num tremor miúdo. Os olhos violeta, bem diante do meu rosto, vacilam.*",
+        "text": "*Segurando meu pulso, a ponta dos dedos de Yuna treme de leve. Bem diante de mim, seus olhos carmesins vacilam.*",
         "choices": [
             "Desculpe. Mas esta história é sobre mim, não é?",
             "Desculpe. Só vi a primeira página que estava aberta. Não vou ler mais. Mas esta autora escreve muito bem.",
@@ -274,7 +274,7 @@
     },
     "after3_yuna_decode_trap_1": {
         "name": "Yuna",
-        "text": "*A Yuna sacode o meu pulso, como se o deixasse escapar, e aperta o caderno de couro contra o peito. Os dedos fazem tanta força que a capa chega a amassar.*"
+        "text": "*Yuna solta meu pulso de repente e aperta o caderno de couro bem contra o peito. Os dedos fazem tanta força que chegam a vincar a capa.*"
     },
     "after3_yuna_decode_trap_2": {
         "name": "Yuna",
@@ -294,7 +294,7 @@
     },
     "after3_yuna_decode_trap_6": {
         "name": "Yuna",
-        "text": "É por causa de gente que finge saber tudo por dentro da pessoa e fica fuçando que eu não consigo escrever nem uma linha em paz."
+        "text": "É por causa de gente que fica cavando e tirando conclusões sobre o que vai no coração dos outros que eu não consigo escrever uma linha sequer em paz."
     },
     "after3_yuna_decode_trap_7": {
         "name": "{name}",
@@ -302,7 +302,7 @@
     },
     "after3_yuna_decode_trap_8": {
         "name": "Yuna",
-        "text": "Se, além da vida real, você ainda abre o que eu escondi atrás das frases, eu me escondo aonde?"
+        "text": "Se já não basta a realidade e você ainda arranca o que escondi atrás das frases de um romance, onde é que eu vou me esconder?"
     },
     "after3_yuna_decode_trap_9": {
         "name": "Yuna",
@@ -314,11 +314,11 @@
     },
     "after3_yuna_decode_trap_11": {
         "name": "{name}",
-        "text": "*Os passos da Yuna ecoam no corredor e se afastam depressa. No sofá vazio, só restam, largados, a marca funda de onde o caderno estava e a lata de bebida que vai esfriando.*"
+        "text": "*Os passos de Yuna ecoam pelo corredor e se afastam depressa. Ao lado da marca funda no sofá vazio, na beira da mesa só resta uma lata gelada coberta de gotículas.*"
     },
     "after3_yuna_correct_1": {
         "name": "Yuna",
-        "text": "*A força vai saindo, devagar, dos dedos da Yuna, que segurava o caderno na defensiva.*"
+        "text": "*A força vai saindo devagar dos dedos de Yuna, que segurava o caderno firme contra o peito.*"
     },
     "after3_yuna_correct_2": {
         "name": "Yuna",
@@ -330,7 +330,7 @@
     },
     "after3_yuna_correct_4": {
         "name": "Yuna",
-        "text": "*Sem desviar do meu olhar, a Yuna levanta só um pouquinho o canto da boca.* Sei lá. Provavelmente é um manuscrito inédito, o único exemplar no mundo."
+        "text": "*Yuna encara meus olhos de frente e ergue de leve o canto dos lábios.* Quem sabe. Provavelmente um manuscrito inédito, o único exemplar do mundo."
     },
     "after3_yuna_correct_5": {
         "name": "{name}",
@@ -342,7 +342,7 @@
     },
     "after3_yuna_correct_7": {
         "name": "Yuna",
-        "text": "*A Yuna chega mais meio passo, bem perto, e puxa com a ponta dos dedos a manga da camisa do meu uniforme.* Se você está tão curioso, eu empresto só pra você?"
+        "text": "*Yuna chega mais meio passo perto e puxa de leve a manga da minha camisa com a ponta dos dedos.* Se está tão curioso assim, quer que eu empreste só para você?"
     },
     "after3_yuna_correct_8": {
         "name": "{name}",
@@ -358,11 +358,11 @@
     },
     "after3_yuna_correct_11": {
         "name": "{name}",
-        "text": "*Mesmo depois de o caderno passar de vez para a minha mão, a Yuna não solta. Ela puxa o meu pulso e o encosta, quieta, ao lado da bochecha quente.*"
+        "text": "*Mesmo depois de o caderno passar de vez para a minha mão, Yuna não solta; ela puxa meu pulso e o encosta devagar ao lado da própria bochecha quente.*"
     },
     "after3_yuna_correct_12": {
         "name": "Yuna",
-        "text": "*Yuna se inclina, sua bochecha quente contra minha palma, e sussurra.* Quando você ler até a última página, deixa uma linha anônima, só pra essa autora, dizendo o que achou."
+        "text": "*Com a bochecha quente encostada na palma da minha mão, Yuna sussurra baixinho.* Quando terminar de ler até a última página, deixa uma linha anônima de impressão só para essa autora."
     },
     "after3_yuna_freetalk": {
         "name": "Yuna",
@@ -405,11 +405,11 @@
     },
     "after3_dain_6": {
         "name": "Dain",
-        "text": "*Só depois de terminar a frase, no tom de quem está bem, a Dain solta uma gargalhada larga, um tempo atrasada, sem fôlego.*"
+        "text": "*Só depois de terminar a frase com naturalidade é que Dain, puxando o fôlego curto, solta uma gargalhada larga um segundo atrasada.*"
     },
     "after3_dain_choice": {
         "name": "Dain",
-        "text": "*A Dain, sentada na ponta do banco no canto da quadra, não para de esfregar com a palma o joelho direito, à mostra debaixo do short do uniforme.*",
+        "text": "*Sentada na ponta do banco no canto da quadra, Dain esfrega repetidas vezes com a palma o joelho direito à mostra sob o short de treino.*",
         "choices": [
             "Eu sabia que você estava se forçando. Desiste do torneio e descansa hoje.",
             "Então eu fico aqui. Fala quando tiver vontade.",
@@ -504,7 +504,7 @@
     },
     "after3_dain_dilemma_tell": {
         "name": "Dain",
-        "text": "*Com a testa no meu ombro, enquanto recupera o fôlego curto, a Dain se encolhe.* O quê?"
+        "text": "*Com a testa apoiada no meu ombro enquanto acalma a respiração ofegante, os ombros de Dain enrijecem num sobressalto.* O quê?"
     },
     "after3_dain_dilemma_tell_2": {
         "name": "{name}",
@@ -524,11 +524,11 @@
     },
     "after3_dain_dilemma_tell_6": {
         "name": "Dain",
-        "text": "Quem decide o que importa mais sou eu, a atleta. Não você."
+        "text": "O que é mais importante quem decide sou eu, como jogadora. Não você."
     },
     "after3_dain_dilemma_tell_7": {
         "name": "Dain",
-        "text": "Minhas mãos estão tremendo tanto que não consigo amarrar os cadarços direito. Não decida por mim só porque você me viu assim. *Com a mão ainda no joelho, Dain abaixa a cabeça em meus braços.*"
+        "text": "Minhas mãos estão tremendo tanto que nem consigo amarrar direito o cadarço do tênis. Não tire conclusões por conta própria só porque me viu nesse estado. *Com a mão apoiada no joelho, Dain abaixa fundo a cabeça junto ao meu peito.*"
     },
     "after3_dain_dilemma_tell_8": {
         "name": "Dain",
@@ -570,11 +570,11 @@
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Você disse que, quando estivesse pronta, ia me contar primeiro."
+        "text": "Você disse que, quando se sentisse pronta, ia contar para mim antes de todo mundo."
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
-        "text": "Você quer dizer que eu devo dizer quando estiver pronta. Não despejar tudo agora. *Dain morde o lábio, depois esfrega os olhos molhados com as costas da mão e sorri.*"
+        "text": "Quer dizer para eu falar quando organizar o que sinto, né? Sem me apressar para despejar tudo agora. *Dain morde o lábio, passa as costas da mão pelos olhos úmidos e abre um sorriso claro.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -597,7 +597,7 @@
     },
     "after3_dain_end_first": {
         "name": "Dain",
-        "text": "*A Dain dá um toque leve com o punho no meu ombro e, sem jeito, enfia a mão no bolso da roupa de treino.*"
+        "text": "*Dain dá um soquinho leve no meu ombro e, com a ponta das orelhas vermelha, enfia as mãos nos bolsos do agasalho.*"
     },
     "after3_confront_1": {
         "name": "{name}",
@@ -617,7 +617,7 @@
     },
     "after3_confront_5": {
         "name": "Seoyeon",
-        "text": "Quando eu soube que você sorriu para a Dain e para a Yuna com o mesmo calor e marcou com elas também, foi humilhante. Eu tinha me animado achando que era a única especial."
+        "text": "Quando descobri que você sorriu com o mesmo calor e marcou compromisso no fim de semana com outra pessoa além de mim, me senti péssima por ter me iludido achando que era especial."
     },
     "after3_confront_5_b": {
         "name": "Dain",
@@ -633,7 +633,7 @@
     },
     "after3_confront_choice": {
         "name": "Seoyeon",
-        "text": "Dessa vez não desvia. Fala direito, com a sua boca. A gente não pode resolver isso por você. *No silêncio que sufoca, a Seoyeon recua meio passo e me encara com dureza.*",
+        "text": "Dessa vez não desconverse; fale direito com as suas próprias palavras. Nós não podemos resolver isso no seu lugar. *No silêncio pesado, Seoyeon recua meio passo e crava os olhos nos meus.*",
         "choices": [
             "Admitir com sinceridade",
             "Os horários eram diferentes, achei que ia dar",
@@ -646,15 +646,15 @@
     },
     "after3_confront_admit_b": {
         "name": "Seoyeon",
-        "text": "*A Seoyeon abaixa a cabeça e olha, fria, só para a alça da bolsa da marmita na mão.*"
+        "text": "*Seoyeon abaixa a cabeça e encara friamente o canto da prancheta que traz nos braços.*"
     },
     "after3_confront_admit_2": {
         "name": "Seoyeon",
-        "text": "*Um brilho transparente sobe no canto dos olhos da Seoyeon.* Mais do que um pedido de desculpa servindo de desculpa, eu quero ouvir como você vai se responsabilizar pelos combinados que se atropelaram."
+        "text": "*Um brilho úmido surge no canto dos olhos de Seoyeon.* Mais do que um simples pedido de desculpas, quero ouvir primeiro como você pretende assumir os compromissos que sobrepôs no fim de semana."
     },
     "after3_confront_admit_3": {
         "name": "Seoyeon",
-        "text": "Você achou que eu entenderia e deixaria passar depois de um único pedido de desculpas? Perguntei o que estava acontecendo com nossos planos para este fim de semana. *Seoyeon aperta o cabo da bolsa com força.*"
+        "text": "Achou que com um pedido de desculpas eu ia entender tudo e deixar para lá? Eu perguntei como fica o nosso encontro deste fim de semana. *Seoyeon aperta a prancheta nos braços até a ponta dos dedos ficar branca.*"
     },
     "after3_confront_admit_4": {
         "name": "Seoyeon",
@@ -666,12 +666,12 @@
     },
     "after3_confront_admit_5": {
         "name": "Seoyeon",
-        "text": "Hoje à noite eu não deixo a porta do terraço aberta. Não sobe."
+        "text": "Agora não tenho condições de continuar conversando cara a cara com você. Não venha atrás de mim."
     },
     "after3_confront_admit_6": {},
     "after3_confront_excuse": {
         "name": "Seoyeon",
-        "text": "*A voz da Seoyeon corta o ar do patamar, afiada.* Você ainda acha que isso é problema de como dividir o tempo?"
+        "text": "*A voz fria de Seoyeon corta o silêncio do patamar da escada.* Você ainda acha que isso é só uma questão de dividir horários?"
     },
     "after3_confront_excuse_b": {},
     "after3_confront_excuse_2": {
@@ -680,7 +680,7 @@
     },
     "after3_confront_excuse_2_b": {
         "name": "Seoyeon",
-        "text": "*A Seoyeon morde o lábio com força, como se engolisse o que ia dizer, e puxa a prancheta contra o peito.*"
+        "text": "*Segurando o resto do que ia dizer, Seoyeon morde o lábio com força e aperta a prancheta contra o peito.*"
     },
     "after3_confront_lie_b": {
         "name": "Seoyeon",
@@ -757,12 +757,12 @@
     },
     "minsu_d3_3": {
         "name": "Minsu",
-        "text": "O clima da sala no almoço e, agora, a cara da Seoyeon saindo pelo corredor."
+        "text": "Eu vi o clima da sala no almoço e até o rosto da Seoyeon saindo pelo corredor agorinha."
     },
     "minsu_d3_4": {},
     "minsu_d3_5": {
         "name": "Minsu",
-        "text": "Está ficando difícil de assistir como sua amiga. Os três são sinceros com você. Eu sei que você não quer fazer mal a ninguém, mas você continua evitando a chance de dizer não."
+        "text": "Olhando de lado como seu amigo, dá agonia. Todas elas tratam você com sinceridade. Sei que não foi por maldade, mas você fica adiando o momento de dizer não."
     },
     "minsu_d3_5b": {
         "name": "Minsu",
@@ -778,11 +778,11 @@
     },
     "minsu_d3_7": {
         "name": "Minsu",
-        "text": "Dizer não a tempo é cortesia e consideração. Traçar uma linha clara agora dói menos do que deixar um espaço em uma promessa que você não pode cumprir."
+        "text": "Dizer não na hora certa também é respeito pela outra pessoa. Traçar um limite claro agora machuca menos do que deixar brecha em promessas que você não vai cumprir."
     },
     "minsu_d3_8": {
         "name": "{name}",
-        "text": "*Na minha antiga escola, eu também sempre fechava a boca no momento certo. Eu vi o grafite na mesa da Sojeong e ainda virei a cabeça. Desta vez, não posso disfarçar meu silêncio covarde como consideração.*"
+        "text": "*Na antiga escola eu também me calei em todos os momentos decisivos. Mesmo vendo os rabiscos na carteira da Sojeong, virei o rosto. Não posso disfarçar de novo um silêncio covarde como cuidado.*"
     },
     "minsu_d3_9": {
         "name": "Minsu",
@@ -790,7 +790,7 @@
     },
     "minsu_d3_10": {
         "name": "Minsu",
-        "text": "Amanhã de manhã a gente se vê na sala. Hoje à noite, não foge. Pensa nisso a sério."
+        "text": "Segura as pontas no fim de semana e a gente se vê domingo no evento da escola. Hoje à noite não foge, pensa nisso a sério."
     },
     "haeun_warn_1": {
         "name": "{name}",
@@ -818,7 +818,7 @@
     },
     "haeun_warn_3_c": {
         "name": "{name}",
-        "text": "*O peito despenca. Será que ela já estava chorando desde antes de eu entrar na sala do grêmio?*"
+        "text": "*Meu peito aperta de repente. Será que ela já estava chorando sozinha antes mesmo de eu abrir a porta da sala do grêmio?*"
     },
     "haeun_warn_4": {
         "name": "Haeun",
@@ -877,7 +877,7 @@
     },
     "haeun_warn_7_c": {
         "name": "Haeun",
-        "text": "Se ela empurrar você agora, dizendo que quer ficar sozinha, espere um pouco, por favor. Mas, mais tarde, você poderia perguntar se ela chegou bem em casa esta noite?"
+        "text": "Mesmo que Seoyeon afaste você agora dizendo que quer ficar sozinha, espere só um pouquinho, por favor. Em troca, mais tarde hoje à noite, você poderia perguntar se ela chegou bem em casa?"
     },
     "haeun_freetalk": {
         "name": "Haeun",
@@ -887,7 +887,7 @@
     },
     "haeun_affinity_high_1": {
         "name": "Haeun",
-        "text": "*Haeun observa com seriedade, por um tempo, a minha expressão e ajeita direito a pulseira do grêmio que tinha virado para dentro do pulso.* Vou acreditar no que você disse."
+        "text": "*Haeun observa minha expressão com seriedade por um instante e ajeita no pulso a pulseira do grêmio que havia virado para dentro.* Vou confiar no que você disse."
     },
     "haeun_affinity_high_2": {
         "name": "Haeun",
@@ -903,7 +903,7 @@
     },
     "haeun_affinity_low_1": {
         "name": "Haeun",
-        "text": "*Haeun agarra a pulseira com força e recua meio passo, em guarda.* Com essa atitude, me parece difícil confiar Seoyeon a você, {name}."
+        "text": "*Haeun aperta firme a pulseira e recua meio passo.* Com uma atitude dessas agora, fica difícil confiar Seoyeon a você, {name}."
     },
     "haeun_affinity_low_2": {
         "name": "Haeun",
@@ -912,11 +912,11 @@
     "haeun_warn_7_d": {},
     "haeun_warn_8": {
         "name": "{name}",
-        "text": "*Depois que Haeun sai, eu bato cuidadosamente na porta da sala do grêmio estudantil. Um leve arrastar de cadeira vem do outro lado.* Seoyeon, sou eu. Fico só um instante aqui fora e já vou."
+        "text": "*Mesmo depois que Haeun some na curva do corredor, meus pés demoram a sair do lugar. Olho para o alto da escada que leva ao grêmio e aperto firme o celular no bolso.* Melhor organizar direito a cabeça hoje à noite do que subir lá sem jeito agora."
     },
     "haeun_warn_8b": {
         "name": "{name}",
-        "text": "*Saí pelo portão da escola quando a escuridão começava a descer.*"
+        "text": "*Enquanto a escuridão começa a descer, saio caminhando devagar pelo portão principal da escola.*"
     },
     "after3_walk_home": {
         "name": "{name}",
@@ -994,7 +994,7 @@
     },
     "after3_dain_partial_2": {
         "name": "Dain",
-        "text": "Se eu sentar um pouco, melhora rapidinho. Hoje não esquenta, vai na frente. Amanhã a gente se vê na sala."
+        "text": "Sentando um pouquinho para descansar já melhora logo. Hoje não se preocupe comigo e pode ir na frente. Bom fim de semana, e a gente se vê depois de amanhã no evento da escola."
     },
     "after3_dain_low_1": {
         "name": "Dain",

@@ -33,16 +33,16 @@
     },
     "morning3_start_2": {
         "name": "{name}",
-        "text": "*Je serre fort la bretelle du sac sur mon épaule et je cours jusqu'à en avoir le souffle coincé dans la gorge. Devant le portail qui va se fermer, une silhouette familière se tient là.*"
+        "text": "*Je resserre ma prise sur la bretelle de mon sac et cours à perdre haleine. La première sonnerie approche ; je presse le pas vers le portail du lycée.*"
     },
     "morning3_gate_branch": {},
     "morning3_seo_gate_1": {
         "name": "{name}",
-        "text": "Seoyeon ? La sonnerie va bientôt retentir. Pourquoi es-tu encore là ? *Seoyeon regarde calmement dans cette direction, près du pilier du port.*"
+        "text": "Seoyeon ? La cloche va sonner d'une seconde à l'autre, tu n'es pas encore montée en classe ? *Debout près du pilier du portail, Seoyeon regarde calmement dans ma direction.*"
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon expire doucement et tourne le bout de sa chaussure vers moi. Ce n'est pas son regard habituel : celui de quelqu'un qui a attendu longtemps.*"
+        "text": "*Seoyeon laisse échapper un léger souffle et tourne le bout de ses chaussures vers moi. Ses doigts serrent son porte-bloc un peu plus fort que d'habitude.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -98,7 +98,7 @@
     },
     "morning3_yuna_gate_1": {
         "name": "{name}",
-        "text": "*À l'ombre, à côté du portail, Yuna garde les cils baissés et ne regarde que le bout de ses chaussures.*"
+        "text": "*À l'ombre de l'arbre près du portail, Yuna garde les cils baissés, fixant silencieusement le bout de ses chaussures.*"
     },
     "morning3_yuna_gate_warm_1": {
         "name": "{name}",
@@ -154,7 +154,7 @@
     },
     "morning3_dain_gate_1": {
         "name": "{name}",
-        "text": "*De l'autre côté du coin du portail, Dain arrive à fond, sa queue-de-cheval au vent.*"
+        "text": "*De l'autre côté du coin du portail, Dain arrive au sprint, ses cheveux courts châtains rebondissant dans le vent.*"
     },
     "morning3_dain_gate_warm_1": {
         "name": "Dain",
@@ -202,7 +202,7 @@
     },
     "morning3_classroom_1": {
         "name": "{name}",
-        "text": "*En ouvrant la porte arrière de la classe, l'air se fige dans trois directions. Le stylo-plume de Seoyeon s'arrête, la chaise de Dain bouge, et Yuna replace son marque-page.*"
+        "text": "*Quand j'ouvre la porte arrière de la classe, l'air se fige dans trois directions. Le stylo-plume de Seoyeon s'arrête, la chaise de Dain recule et Yuna glisse doucement son marque-page dans son livre.*"
     },
     "morning3_react_seo_1": {
         "name": "Dain",
@@ -238,11 +238,11 @@
     },
     "morning3_date_intro_b": {
         "name": "{name}",
-        "text": "*Le couloir, où je suis sorti reprendre mon souffle un instant. Comme si elle m'attendait, Seoyeon vient à côté de moi et cale son pas sur le mien.*"
+        "text": "*Dans le couloir où je suis sorti reprendre mon souffle un instant, Seoyeon s'approche la première et accorde son pas au mien.*"
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "Vous étiez ici, madame. *J'ouvre la porte de la salle de classe vide. Le stylo-plume de l'enseignante de classe, traçant sur le bureau, vacille.*"
+        "text": "Madame, vous étiez toute seule dans cette salle vide. *Quand j'ouvre doucement la porte, la plume de ma professeure principale s'immobilise sur les feuillets posés sur le pupitre.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Professeure principale",
@@ -352,7 +352,7 @@
     },
     "hidden_homeroom_d3_reveal_4_c": {
         "name": "Professeure principale",
-        "text": "*Elle sépare la pile de pages du manuscrit, à côté du registre de présence.* Ceci est mon travail personnel. Cela n'a rien à voir avec les cours ou l'évaluation, et ce n'est rien qui doive te peser."
+        "text": "*Elle écarte la liasse de feuillets à côté du registre d'appel.* C'est un manuscrit personnel. Ça n'a aucun rapport avec les cours ou les notes, tu n'as aucune raison de te sentir mal à l'aise."
     },
     "hidden_homeroom_d3_reveal_4_d": {
         "name": "{name}",
@@ -372,7 +372,7 @@
     },
     "hidden_homeroom_d3_reveal_choice": {
         "name": "{name}",
-        "text": "*Le soleil du matin tombe en biais sur la feuille de manuscrit où 7 ans se sont déposés.*",
+        "text": "*La lumière du matin tombe en biais sur les coins élimés de sept années de feuillets manuscrits.*",
         "choices": [
             "Sept ans, c'est pas de l'abandon — c'est de la persévérance",
             "Pourquoi vous écrivez toujours ici ?",
@@ -397,7 +397,7 @@
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Professeure principale",
-        "text": "*La professeure principale se mord une fois la lèvre inférieure, puis la relâche, sans glisser les feuilles de manuscrit dans le tiroir.*"
+        "text": "*Ma professeure principale se mord doucement la lèvre inférieure avant de la relâcher, sans pour autant cacher les feuillets dans le tiroir.*"
     },
     "hidden_homeroom_d3_reveal_6_b": {
         "name": "Professeure principale",
@@ -405,7 +405,7 @@
     },
     "hidden_homeroom_d3_reveal_6_c": {
         "name": "{name}",
-        "text": "*La professeure principale se racle doucement la gorge et tapote les coins du manuscrit pour les aligner. Dans la classe silencieuse, seule la trotteuse de l'horloge murale résonne, nette.*"
+        "text": "*Ma professeure principale s'éclaircit discrètement la gorge et taquine les bords du manuscrit pour les aligner. Dans la salle silencieuse, seule la trotteuse de l'horloge murale résonne nettement.*"
     },
     "hidden_homeroom_d3_reveal_6_d": {
         "name": "Professeure principale",
@@ -443,7 +443,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*Pendant la pause, j'ouvre la porte du bureau de l'infirmière. Dans l'odeur de désinfectant, le bord du pansement sur mon coude effleure ma manche.*"
+        "text": "*À la pause, j'ouvre la porte de l'infirmerie. Dans l'odeur d'antiseptique, le pansement étanche posé hier sur mon coude frôle l'intérieur de ma manche.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Infirmière",
@@ -459,11 +459,11 @@
     },
     "hidden_nurse_d3_1_e": {
         "name": "{name}",
-        "text": "L'air de la classe est un peu étouffant. J'aimerais me reposer un instant, puis repartir."
+        "text": "L'air de la classe m'étouffait un peu. Je peux me reposer ici juste un instant ?"
     },
     "hidden_nurse_d3_2": {
         "name": "Infirmière",
-        "text": "Ce n'est pas de la fièvre ? Tu as vraiment mauvaise mine."
+        "text": "Tu n'as ni fièvre ni vertiges ? Tu as les traits bien tirés aujourd'hui."
     },
     "hidden_nurse_d3_2_b": {},
     "hidden_nurse_d3_2_c": {},
@@ -471,7 +471,7 @@
     "hidden_nurse_d3_2_e": {},
     "hidden_nurse_d3_3": {
         "name": "{name}",
-        "text": "Je voulais juste reprendre mon souffle au calme, un moment. J'ai l'impression que mes relations avec les autres s'embrouillent sans arrêt."
+        "text": "Je voulais juste souffler un peu au calme. Ça ne fait que quelques jours que j'ai été transféré, et j'ai déjà plein de choses qui s'emmêlent dans la tête."
     },
     "hidden_nurse_d3_3_b": {
         "name": "Infirmière",
@@ -481,7 +481,7 @@
     "hidden_nurse_d3_3_d": {},
     "hidden_nurse_d3_4": {
         "name": "Infirmière",
-        "text": "*L'infirmière de l'école tire le rideau à mi-chemin et me tend une tasse d'eau tiède.* Viens t'asseoir ici. Tu n'as pas à faire semblant d'aller bien ici, alors prends ton temps et dis-moi."
+        "text": "*L'infirmière tire à moitié le rideau près du lit et me tend un gobelet d'eau tiède.* Viens t'asseoir. Ici, pas besoin de surveiller ton expression, prends ton temps pour parler."
     },
     "hidden_nurse_d3_5_b": {},
     "hidden_nurse_d3_5_c": {},
@@ -496,11 +496,11 @@
     "hidden_nurse_d3_5_f": {},
     "hidden_nurse_d3_5_g": {
         "name": "{name}",
-        "text": "De peur de blesser quelqu'un, ou de le décevoir, je repousse sans cesse la réponse que je devrais donner."
+        "text": "De peur de décevoir quelqu'un, je repousse sans cesse ce que je devrais pourtant dire franchement."
     },
     "hidden_nurse_d3_5_h": {
         "name": "Infirmière",
-        "text": "*L'infirmière pose bien droit, au coin du bureau, son propre gobelet.*"
+        "text": "*L'infirmière effleure doucement l'anse de son mug posé au coin du bureau.*"
     },
     "hidden_nurse_d3_5_i": {
         "name": "Infirmière",
@@ -524,7 +524,7 @@
     },
     "hidden_nurse_d3_5_o": {
         "name": "Infirmière",
-        "text": "*Son regard se porte sur la fenêtre, et le bord du gobelet se plie sous son pouce.* La façon dont tu demandes me rappelle des souvenirs."
+        "text": "*Son regard glisse vers la fenêtre et son pouce se crispe sur l'anse de son mug.* Quand tu me poses la question comme ça, ça me rappelle de vieux souvenirs."
     },
     "hidden_nurse_d3_5_p": {
         "name": "Infirmière",
@@ -561,27 +561,27 @@
     },
     "hidden_nurse_d3_6_b": {
         "name": "Infirmière",
-        "text": "*Quand l'infirmière pose le verre, une trace d'eau ronde s'étale sur la plaque de verre.*"
+        "text": "*Lorsqu'elle décale son mug tiédi, une trace ronde d'humidité reste sur la plaque de verre du bureau.*"
     },
     "hidden_nurse_d3_6_c": {
         "name": "Infirmière",
-        "text": "Je voulais être une bonne infirmière pour tout le monde, mais à force de le vouloir, c'est moi qui me suis usée en premier."
+        "text": "Je voulais être une bonne infirmière pour tout le monde, mais à trop vouloir bien faire, c'est moi qui me suis usée la première."
     },
     "hidden_nurse_d3_6_d": {
         "name": "{name}",
-        "text": "Est-ce qu'il s'est passé quelque chose de décisif avant que tu ne viennes à l'école ? Tu n'es pas obligée de me le dire si c'est trop difficile. *Elle touche la poignée du tiroir, puis retire sa main.*"
+        "text": "Il s'est passé quelque chose de décisif avant votre arrivée au lycée ? Si c'est difficile d'en parler, ne vous forcez surtout pas. *Elle pose la main sur la poignée du tiroir, puis la retire doucement.*"
     },
     "hidden_nurse_d3_6_e": {
         "name": "Infirmière",
-        "text": "Oui. Il y avait un patient de dix-sept ans que je n'ai pas pu sauver. Après avoir perdu ce patient, j'ai quitté l'hôpital."
+        "text": "Oui. J'avais sous ma responsabilité un patient de dix-sept ans que nous n'avons pas réussi à sauver. J'ai dû le laisser partir sans même pouvoir lui dire correctement au revoir."
     },
     "hidden_nurse_d3_6_f": {
         "name": "{name}",
-        "text": "*Le carnet vert pâle, aperçu autrefois dans la fente du tiroir, me revient. L'écriture d'une lettre qui n'a jamais pu continuer, dès la première page.*"
+        "text": "*La couverture pâlie du carnet vert tendre, entrevue l'autre jour par la fente du tiroir, me traverse l'esprit.*"
     },
     "hidden_nurse_d3_7": {
         "name": "Infirmière",
-        "text": "C'est pour ça que je suis venue dans cette école. Ici, les sonnettes ne me courent pas après, et je peux regarder jusqu'au bout, un par un, le visage des élèves qui viennent."
+        "text": "C'est pour ça que j'ai quitté l'hôpital pour venir dans ce lycée. Ici, je ne suis plus pourchassée par les sonnettes d'appel : je peux regarder en face chaque élève qui pousse la porte, jusqu'au bout."
     },
     "hidden_nurse_d3_7_b": {},
     "hidden_nurse_d3_8": {
@@ -590,7 +590,7 @@
     },
     "hidden_nurse_d3_8_c": {
         "name": "{name}",
-        "text": "Merci pour le conseil, madame."
+        "text": "Merci pour vos paroles, madame."
     },
     "hidden_nurse_d3_8_d": {
         "name": "Infirmière",
@@ -610,7 +610,7 @@
     },
     "hidden_nurse_d3_choice2": {
         "name": "Infirmière",
-        "text": "*L'infirmière referme lentement le tiroir et lève les yeux vers moi. Dans l'air calme, où flotte l'odeur du désinfectant, je cherche mes mots.*",
+        "text": "*L'infirmière repousse complètement le tiroir et lève les yeux vers moi. Imprégnée d'odeur d'antiseptique, l'infirmerie devient encore plus calme.*",
         "choices": [
             "C'est pour ça que vous avez quitté l'hôpital ?",
             "Ça ne vous dérange pas d'en parler davantage ?",
@@ -631,23 +631,23 @@
     },
     "hidden_nurse_d3_9": {
         "name": "Infirmière",
-        "text": "Venir quand ça t'étouffe, tu es toujours le bienvenu. En revanche, je ne peux pas te promettre de régler tous tes problèmes à ta place."
+        "text": "Tu es le bienvenu chaque fois que tu as le cœur lourd. En revanche, je ne pourrai pas trancher tes soucis à ta place."
     },
     "hidden_nurse_d3_9_b": {
         "name": "{name}",
-        "text": "*Je pose le gobelet vide et je tripote de nouveau la carte que j'avais glissée dans ma poche.*"
+        "text": "*Je lâche la poignée, reviens d'un demi-pas poser mon gobelet vide sur le bureau et effleure de nouveau la carte d'orientation dans ma poche.*"
     },
     "hidden_nurse_d3_9_c": {
         "name": "Infirmière",
-        "text": "Si tu vas au-delà de ce que tu peux porter seul, alors j'aiderai avec ta professeure principale, ou avec le service d'écoute."
+        "text": "Et si un jour ça devient trop lourd à porter tout seul, je t'aiderai avec ta professeure principale ou le service d'écoute."
     },
     "hidden_nurse_d3_9_d": {
         "name": "Infirmière",
-        "text": "Bien sûr, avant ça, je verrai d'abord avec toi à qui on en parle, et jusqu'où."
+        "text": "Bien sûr, ne t'inquiète pas : je te demanderai toujours ton avis avant de décider à qui en parler et jusqu'où."
     },
     "hidden_nurse_d3_9_f": {
         "name": "{name}",
-        "text": "*Sur la feuille, les créneaux libres de l'infirmerie et du service d'écoute sont notés côte à côte. Je prends un stylo et j'entoure en silence une case vide.*"
+        "text": "*Sur la fiche, les créneaux libres de l'infirmerie et du bureau d'écoute s'alignent côte à côte. Je prends le stylo et entoure doucement une case vide.*"
     },
     "hidden_nurse_d3_11": {
         "name": "Infirmière",
@@ -709,7 +709,7 @@
     },
     "morning3_date_dain_decline_narr": {
         "name": "Dain",
-        "text": "D'accord. Allez, on prépare le cours suivant ! *Elle regagne sa place avec un rire faussement vaillant, mais juste avant la sonnerie elle tapote menu, du doigt, l'intérieur de la poche de son uniforme.*"
+        "text": "Allez, préparons le prochain cours avant la sonnerie ! *Dain regagne sa place avec un grand sourire, seuls ses doigts remuant légèrement au fond de sa poche sous le bureau.*"
     },
     "morning3_date_yuna_1": {
         "name": "{name}",
@@ -751,7 +751,7 @@
     "morning3_multi_from_yuna": {},
     "morning3_end": {
         "name": "{name}",
-        "text": "*La sonnerie qui clôt le dernier cours de la matinée retentit, et l'heure du déjeuner arrive, pareille à la veille d'une tempête.*"
+        "text": "*La sonnerie marquant la fin de la matinée retentit longuement, laissant place dans la classe à une pause déjeuner chargée de tension.*"
     },
     "morning3_end_b": {},
     "morning3_gate_none_1": {

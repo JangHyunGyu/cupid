@@ -45,8 +45,8 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "character": null,
         "choices": [
             { "next": "lunch_seo_1", "setFlags": ["chose_seoyeon_lunch","ate_lunch_seoyeon","met_seoyeon"] },
-            { "next": "lunch_dain_1", "setFlags": ["chose_dain_lunch"] },
-            { "next": "lunch_yuna_1", "setFlags": ["chose_yuna_lunch"] }
+            { "next": "lunch_dain_1", "setFlags": ["chose_dain_lunch","met_dain"] },
+            { "next": "lunch_yuna_1", "setFlags": ["chose_yuna_lunch","met_yuna"] }
         ]
     },
     "lunch_seo_1": {

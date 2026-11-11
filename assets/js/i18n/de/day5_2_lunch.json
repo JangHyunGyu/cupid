@@ -5,7 +5,7 @@
     },
     "tour_yuna_low": {
         "name": "Yuna",
-        "text": "*Kurz nachdem ich vor der fest verschlossenen Tür des Nebengebäudes stehen bleibe, erscheint auf dem Handy eine kurze Nachricht von Yuna.* Ich möchte heute allein sein. *Ich sehe noch einmal auf die kalt geschlossene Klinke, drehe um und gehe zurück auf den Flur.*"
+        "text": "*Kurz nachdem ich vor der fest verschlossenen Tür zum Nebengebäude stehen geblieben bin, leuchtet auf meinem Handy eine kurze Nachricht von Yuna auf.* Ich möchte heute allein sein. *Statt zu antworten, blicke ich einmal auf die kalte Türklinke hinab und gehe leise in den Flur zurück.*"
     },
     "tour_dain_low": {
         "name": "Dain",
@@ -89,7 +89,7 @@
     },
     "tour_yuna_2": {
         "name": "Yuna",
-        "text": "*Yuna, die am Fenster sitzt, hebt bei meinen Schritten den Kopf und klopft zweimal mit der Handfläche auf den Platz direkt neben sich.* Komm her und setz dich. Hier ist kein Staub, ich habe schon abgewischt."
+        "text": "*Als wir gemeinsam ans Fenster des Nebengebäudes zurückkehren, setzt sich Yuna zuerst aufs Sofa und klopft zweimal mit der Handfläche auf den Platz direkt neben sich.* Komm her und setz dich. Hier habe ich vorhin schon abgestaubt."
     },
     "tour_yuna_3": {
         "name": "{name}",
@@ -137,7 +137,7 @@
     },
     "tour_yuna_end_2": {
         "name": "{name}",
-        "text": "*Yuna hört dort auf zu sprechen, und ihr Blick legt sich auf das Heft in meiner Hand. Die Stille im Nebengebäude füllt sich mit dem Schlag unserer beiden Herzen.*"
+        "text": "*Yuna hält an dieser Stelle inne und legt ihren Blick auf das Notizbuch in meinen Händen. Jenseits des offenen Oberlichts rückt der Lärm des Schulfests in weite Ferne, während nur unser beider Atem ganz nah bleibt.*"
     },
     "tour_dain_1_check": {
         "name": "{name}",
@@ -153,7 +153,7 @@
     },
     "tour_dain_2": {
         "name": "Dain",
-        "text": "Du bist da! Heute würde ich lieber mit dir faulenzen, als Ball spielen. *Mit einem Volleyball unter dem Arm winkelt Dain hell von der Mitte des Platzes.*"
+        "text": "Puh, die Kommentarprobe ist geschafft, jetzt haben wir endlich richtig frei! Heute will ich gar nicht groß Bälle schlagen, sondern einfach mit dir herumhängen. *Mit einem Volleyball unter dem Arm winkt Dain strahlend aus der Spielfeldmitte.*"
     },
     "tour_dain_3": {
         "name": "Dain",
@@ -258,7 +258,7 @@
     },
     "tour_seo_event_1": {
         "name": "Haeun",
-        "text": "*Haeun kommt atemlos den Flur entlanggerannt und bleibt stehen.* Frau Schülersprecherin! Die Probe der Rundfunk-AG in der Aula überschneidet sich mit der Sicherheitsprüfung der Stände auf dem Sportplatz. Soll ich stattdessen zum Rundfunkraum gehen?"
+        "text": "*Außer Atem kommt Haeun vom Haupteingang bis vor das Schultor gerannt und bleibt stehen.* Seoyeon-sunbae! Die Probe der Rundfunk-AG in der Aula überschneidet sich mit der Sicherheitsprüfung der Stände auf dem Sportplatz. Soll ich stattdessen beim Rundfunkraum vorbeischauen?"
     },
     "tour_seo_event_2": {
         "name": "{name}",
@@ -274,11 +274,11 @@
     },
     "tour_seo_event_5": {
         "name": "Seoyeon",
-        "text": "*Bis Haeun um die Ecke biegt, jagt Seoyeon sie aus Sorge nicht.* ...Stimmt. Nur weil eine Sache nicht direkt durch meine Hände geht, stürzt die Welt nicht ein."
+        "text": "*Bis Haeuns davoneilender Rücken hinter der Ecke des Hauptgebäudes verschwindet, bleibt Seoyeon mit gesenktem Klemmbrett ruhig stehen und sieht ihr nach.* ...Stimmt schon. Nur weil eine Aufgabe mal nicht direkt durch meine Hände geht, bricht die Welt nicht zusammen."
     },
     "tour_yuna_event_1": {
         "name": "{name}",
-        "text": "*Zwei jüngere Schüler stehen an dem Schaukasten des Literaturclubs außerhalb des Anbaus. Sie zeigen auf Yunas ununterschriebene Kurzgeschichte und flüstern, wo sie den nächsten Teil lesen können.*"
+        "text": "*Als wir kurz vor das Nebengebäude treten, stehen zwei jüngere Schüler vor der Ausstellungstafel des Literaturklubs. Sie deuten auf Yunas namenlos ausgehängte Kurzgeschichte und tuscheln, wo man wohl die Fortsetzung lesen kann.*"
     },
     "tour_yuna_event_2": {
         "name": "{name}",
@@ -384,7 +384,7 @@
     },
     "day5_haeun_defends": {
         "name": "Haeun",
-        "text": "Ich habe zuerst um Hilfe gebeten. *Haeun zieht die Papierbox aufrecht hoch.* Wir haben wirklich nichts getan, was missverstanden werden könnte. ...Nein. Warum klingt es jetzt, da ich es selbst gesagt habe, noch wie eine seltsame Ausrede?"
+        "text": "Ich habe ihn zuerst um Hilfe gebeten. *Haeun zieht den Karton mit den Unterlagen näher an ihre Füße heran.* Es ist wirklich nichts, was man falsch verstehen müsste. ...Wirklich nicht, aber warum klingt es aus meinem Mund bloß wie eine verlegene Ausrede?"
     },
     "day5_haeun_waver_1": {
         "name": "Haeun",
@@ -427,7 +427,7 @@
     },
     "day5_haeun_low_apology": {
         "name": "Haeun",
-        "text": "*Ich entschuldige mich für die Haltung, die sie beim letzten Mal unbehaglich gemacht hat, und sage, dass ich ihr beim Abschluss der Inspektion helfen werde. Haeun studiert meine Augen einen Moment, dann öffnet sie die Checkliste.* ...Ich habe deine Entschuldigung gehört. Dann überprüfe bitte diesen Abschnitt mit mir, beginnend hier."
+        "text": "*Als ich mich für mein Verhalten entschuldige, das ihr beim letzten Mal unangenehm war, und meine Hilfe bei der Kontrolle anbiete, mustert Haeun kurz meinen Blick und schlägt die Checkliste auf.* ...Die Entschuldigung ist angekommen. Prüfen wir dann bitte zuerst diesen Bereich zusammen."
     },
     "day5_haeun_low_work": {
         "name": "{name}",
@@ -455,7 +455,7 @@
     },
     "day5_haeun_seoyeon_escalation_delay": {
         "name": "Seoyeon",
-        "text": "Ihr steht euch also nah genug, um euch einfach etwas zu bitten. *Seoyeon wendet sich mir mit ruhigem, kaltem Blick zu.* Sag es selbst, nicht Haeun. Seit wann seid ihr euch so nah?"
+        "text": "Es auf später zu verschieben ist keine Antwort. *Mit ruhigem, kühl gewordenem Blick hält Seoyeon mich zurück.* Nicht durch Haeun – sag es mir jetzt sofort selbst. Seit wann steht ihr zwei euch so nah?"
     },
     "day5_haeun_seoyeon_group_talk": {
         "name": "Seoyeon · Haeun",
@@ -478,7 +478,7 @@
     },
     "day5_haeun_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna wickelt das herausgezogene Ohrhörerkabel zusammen und steckt es in die Uniformtasche.* Dass Haeun dich zuerst gebeten hat, verstehe ich. Trotzdem sag du es selbst. Was habt ihr zwei gerade gemacht?"
+        "text": "*Während Yuna das herausgezogene Kopfhörerkabel um ihre Finger wickelt, lässt sie mich nicht aus den Augen.* Nicht später, ich möchte es jetzt hören. Sag mir selbst, was ihr zwei gerade gemacht habt."
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
@@ -501,7 +501,7 @@
     },
     "day5_haeun_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain reißt den Blick von Haeun zu mir herum.* Sag du es selbst, nicht Haeun. Hast du wirklich nur bei der Schülerratsarbeit geholfen?"
+        "text": "*Dain tritt mir einen halben Schritt in den Weg, als ich es aufschieben will, und kneift die Augen zusammen.* Später erklären zieht bei mir nicht. Sag mir jetzt direkt ins Gesicht, ob du wirklich bloß für den Schülerrat geholfen hast."
     },
     "day5_haeun_dain_group_talk": {
         "name": "Dain · Haeun",
@@ -524,7 +524,7 @@
     },
     "day5_haeun_teacher_escalation_delay": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin rückt die Mappe unter ihrem Arm zurecht.* Haeun muss dich nicht in Schutz nehmen. Erklär es selbst. Habe ich das gerade falsch gesehen?"
+        "text": "*Die Klassenlehrerin klemmt sich die Mappe fester unter den Arm und hält mich ruhig zurück.* Du musst das nicht auf später verschieben. Willst du es nicht lieber gleich hier selbst erklären, bevor es unangenehm wird?"
     },
     "day5_haeun_teacher_group_talk": {
         "name": "Klassenlehrerin · Haeun",
@@ -547,7 +547,7 @@
     },
     "day5_haeun_nurse_escalation_delay": {
         "name": "Schulkrankenschwester",
-        "text": "*Um den Mund der Schulkrankenschwester verschwindet das leichte Lächeln.* Ich frage nicht Haeun. Ich will es direkt von dir hören. Was seid ihr beide füreinander?"
+        "text": "*Das leichte Lächeln schwindet von den Lippen der Schulkrankenschwester.* Wenn du so ausweichst, macht mich das erst recht nachdenklich. Schieb es nicht auf und sag es mir gleich selbst: Was ist zwischen euch beiden?"
     },
     "day5_haeun_nurse_group_talk": {
         "name": "Schulkrankenschwester · Haeun",
@@ -590,11 +590,11 @@
     },
     "day5_haeun_concern_seoyeon_escalation": {
         "name": "Seoyeon",
-        "text": "Ich will wissen, ob du wusstest, wie unangenehm Haeun das damals war. *Seoyeon wartet unbewegt auf meine Antwort.* Weich nicht aus. Sag es hier direkt."
+        "text": "Ich möchte wissen, ob dir überhaupt klar war, wie unangenehm das damals für Haeun war. *Seoyeon wartet unbeirrt auf meine Antwort.* Sag es mir direkt hier mit deinen eigenen Worten."
     },
     "day5_haeun_concern_seoyeon_escalation_delay": {
         "name": "Seoyeon",
-        "text": "Ich will wissen, ob du wusstest, wie unangenehm Haeun das damals war. *Seoyeon wartet unbewegt auf meine Antwort.* Weich nicht aus. Sag es hier direkt."
+        "text": "Das lässt sich nicht einfach unter den Teppich kehren. *Seoyeon sieht mich unverwandt an.* Da Haeun direkt hier steht, sollten wir das jetzt sofort ordentlich klären."
     },
     "day5_haeun_concern_seoyeon_group_talk": {
         "name": "Seoyeon",
@@ -621,7 +621,7 @@
     },
     "day5_haeun_concern_yuna_escalation_delay": {
         "name": "Yuna",
-        "text": "*Yuna steckt das Handy, das sie in der Hand hielt, in die Tasche.* Ich weiß gerade nicht, wie ich deine Worte nehmen soll. Erzähl mir, was du dir an dem Tag dabei gedacht hast."
+        "text": "*Yuna steckt das Handy in ihrer Hand in die Tasche.* Ich weiß nicht, wie ich es auffassen soll, wenn du das schweigend aufschiebst. Sag mir mit deinen eigenen Worten, was du vor Haeun gesagt hast."
     },
     "day5_haeun_concern_yuna_group_talk": {
         "name": "Yuna",
@@ -648,7 +648,7 @@
     },
     "day5_haeun_concern_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain lässt die verschränkten Arme sinken und sieht mir ernst in die Augen.* Wenn es ein ungerechtes Missverständnis ist, klär es hier. Und falls dabei Worte waren, die verletzt haben, sag die auch ehrlich. Ich höre bis zum Schluss zu."
+        "text": "*Dain lässt die verschränkten Arme sinken und schüttelt entschieden den Kopf.* Auf später vertrösten gilt nicht. Ob blödes Missverständnis oder Fehler – sprich es jetzt hier ehrlich aus."
     },
     "day5_haeun_concern_dain_group_talk": {
         "name": "Dain",
@@ -675,7 +675,7 @@
     },
     "day5_haeun_concern_teacher_escalation_delay": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin sieht mich direkt an.* Vielleicht ist es anders rübergekommen, als du es gemeint hast. Trotzdem müssen wir zusammen klären, warum Haeun sich unwohl gefühlt hat. Wie siehst du das?"
+        "text": "*Die Klassenlehrerin sieht mich direkt an, als ich zurückweichen will.* Vielleicht bist du überrumpelt und findest nicht sofort die richtigen Worte. Trotzdem dürfen wir es nicht aufschieben und müssen jetzt gemeinsam klären, warum es Haeun so zugesetzt hat. Erzähl es mir ganz ruhig."
     },
     "day5_haeun_concern_teacher_group_talk": {
         "name": "Klassenlehrerin",
@@ -702,7 +702,7 @@
     },
     "day5_haeun_concern_nurse_escalation_delay": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester nimmt das Lächeln aus ihrem eben noch sanften Blick.* Gehen wir ruhig durch, warum Haeun deine Worte so aufgefasst hat. Erklärst du es selbst?"
+        "text": "*Die Schulkrankenschwester lässt das Lächeln aus ihrem sanften Blick weichen.* Wenn du die Antwort hinauszögerst, löst sich diese Befangenheit nicht von selbst auf. Erklärst du es uns jetzt in aller Ruhe?"
     },
     "day5_haeun_concern_nurse_group_talk": {
         "name": "Schulkrankenschwester",
@@ -717,7 +717,7 @@
     },
     "day5_haeun_trust_cg": {
         "name": "{name}",
-        "text": "*Vor der Tür zum Rundfunkraum legt Haeun beide Hände still übereinander auf die Unterlagenkiste und wendet sich mit leicht geröteten Wangen zu mir.*"
+        "text": "*Am Rand des Flurs legt Haeun still beide Hände übereinander auf den Karton mit den Unterlagen und wendet sich mir mit leicht geröteten Wangen zu.*"
     },
     "day5_haeun_personal": {
         "name": "Haeun",

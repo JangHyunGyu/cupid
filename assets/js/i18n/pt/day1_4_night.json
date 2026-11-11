@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Volto para casa, penduro no cabide o uniforme novo, ainda estranho, e me estico sobre o colchão.*"
+        "text": "*De volta em casa, penduro no cabide o uniforme novo ainda estranho e me estico sobre o colchão.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "night_msg_seo_2": {
         "name": "{name}",
-        "text": "*A brisa estava fresca, e a marmita também estava boa*"
+        "text": "A brisa estava fresca e o almoço, uma delícia. *Digito uma resposta curta e envio.*"
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*O balão «É o serviço especial do aluno transferido.», que chega sozinho na linha de baixo, como se ela tivesse hesitado antes de acrescentar, faz o canto da minha boca subir sem motivo.*"
+        "text": "*Depois de uma breve pausa, chega outro balão logo abaixo — 'Serviço especial para o aluno novo' — e o canto da minha boca sobe sozinho.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -57,15 +57,15 @@
     },
     "night_hidden_check": {
         "name": "{name}",
-        "text": "*Quando vou fechar a conversa do mensageiro, mais um aviso do app da escola aparece na barra de notificações, em cima.*"
+        "text": "*Quando vou fechar a janela do mensageiro, vejo mais uma notificação do aplicativo da escola na barra superior.*"
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Um post do nosso professor regente aparece no aplicativo de avisos da turma. 'Tragam o livro de matemática para a primeira aula amanhã. E quanto ao nosso novo aluno transferido, apenas se estabelecer em segurança já é o suficiente.'*"
+        "text": "*No aplicativo da escola, junto ao aviso da turma aparece um recado individual da professora titular: 'Amanhã, tragam o livro de matemática para o 1º horário. — E quanto ao aluno novo que chegou hoje, contanto que esteja se adaptando bem, já fico tranquila.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Só depois de ler de novo a frase carinhosa acrescentada na última linha do aviso é que deito o celular, virado para baixo, sobre o peito.*"
+        "text": "*Leio mais uma vez aquela frase curta deixada pela professora antes de apoiar o celular virado para baixo sobre o peito.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*A voz suave da enfermeira parece ecoar no ouvido, então eu me levanto e encho até a boca a garrafa de água da cabeceira.*"
+        "text": "*Lembrando da recomendação calma da enfermeira hoje à tarde, levanto e encho de água a garrafa da cabeceira.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*Eu deixo uma saudação curta e coloco meu telefone ao lado da minha cabeça. O horário do alarme para amanhã está visível na tela de bloqueio que desaparece.*"
+        "text": "*Depois de mandar uma resposta curta, olho a tela de bloqueio e vejo no topo o horário do alarme de amanhã cedo.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -101,7 +101,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*O indicador de digitação pisca algumas vezes, como se a outra pessoa estivesse escrevendo algo, e logo some em silêncio.*"
+        "text": "*Na parte de baixo da conversa, o indicador de digitação pisca algumas vezes e logo some em silêncio.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*De tão absurdo, a risada escapa, mas meu dedo já estava digitando «topo» no campo de resposta.*"
+        "text": "*Solto uma risada sem acreditar, mas meu polegar já digitou 'Fechado' na caixa de resposta.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",
@@ -133,11 +133,11 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Eu coloco o telefone e olho para o teto. O uniforme novo pendurado por perto carrega o cheiro da brisa primaveril e das cerejeiras de hoje.*"
+        "text": "*Lembrando dos rostos por trás dos nomes novos salvos hoje nos contatos, deixo o celular bloqueado ao lado do travesseiro.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Olho mais uma vez os nomes novos, salvos lado a lado nos contatos, e apago a tela em silêncio.*"
+        "text": "*Olho para o teto escuro. Do uniforme novo pendurado no cabide ainda vem, suave, o cheiro da brisa de primavera de hoje.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",
@@ -153,7 +153,7 @@
     },
     "forced_violation_day1_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon corta a fala de uma vez.* Mal-entendido? A partir do momento em que eu disse claramente que não queria e tracei o limite, isso não pode ser um mal-entendido. Não dê mais desculpas."
+        "text": "*Seoyeon me corta na hora.* Mal-entendido? A partir do momento em que deixei claro que não queria e impus um limite, isso deixou de ser mal-entendido. Pare de dar desculpas."
     },
     "forced_violation_day1_after_yuna": {
         "name": "Yuna",
@@ -169,7 +169,7 @@
     },
     "forced_violation_day1_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna vira o rosto sem nem ouvir minha explicação até o fim.* Eu disse claramente que não queria. Não vou ouvir desculpa nenhuma."
+        "text": "*Yuna vira o rosto sem nem ouvir minha explicação até o fim.* Eu disse claramente que não. Não vou ouvir desculpas."
     },
     "forced_violation_day1_after_dain": {
         "name": "Dain",

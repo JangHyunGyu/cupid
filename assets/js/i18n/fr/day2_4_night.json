@@ -38,7 +38,7 @@
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "Tu veux monter sur le toit demain midi ? Le vent sera encore plutôt frais."
+        "text": "Ta journée a encore dû être bien agitée, non ? Ne veille pas trop tard"
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
@@ -73,11 +73,11 @@
     "night2_reply_dain_1": {},
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Hein ? Me dis pas que t'es du genre à pas supporter le piment."
+        "text": "Hein, toi aussi tu résistes mal aux plats épicés en fait ?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "Alors demain, je commanderai le plus doux, pour m'adapter à toi."
+        "text": "Vendu, la prochaine fois on prend le plus doux ! En vrai moi aussi j'ai la bouche en feu dès que ça pique haha"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
@@ -89,7 +89,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "Hé, sérieux, tu fais vraiment rire. Demain, après les cours, tu viens au gymnase, c'est obligatoire !"
+        "text": "Ah, parler de tteokbokki le soir, ça me redonne faim haha Demain après les cours, viens absolument au gymnase !"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -97,11 +97,11 @@
     },
     "night2_reply_seo_1": {
         "name": "{name}",
-        "text": "Si tu m'appelles, je reviendrai, n'importe quand."
+        "text": "Si tu m'appelles, je viendrai n'importe quand"
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
-        "text": "Tu dis vraiment trop facilement des choses que tu regretteras."
+        "text": "Tu lâches bien facilement des promesses que tu risques de regretter"
     },
     "night2_reply_seo_3": {
         "name": "{name}",
@@ -113,11 +113,11 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*Sans une formule de plus, Seoyeon clôt la conversation pile là.*"
+        "text": "*Sur l'écran figé, l'indicateur de saisie de Seoyeon clignote brièvement avant de disparaître.*"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
-        "text": "À te connaître, t'es plutôt doué pour taquiner les gens, sans en avoir l'air. On se voit sur le toit demain midi ?"
+        "text": "J'ai gardé sous les yeux la preuve que tu viendrais n'importe quand, alors pas d'excuse demain midi."
     },
     "night2_reply_seo_react_default": {
         "name": "Seoyeon",
@@ -126,7 +126,7 @@
     "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "Oui. Quand tu auras tout lu, je veux vraiment entendre ce que t'en penses."
+        "text": "D'accord. Quand tu auras lu jusqu'à la dernière page, dis-moi surtout ce que tu en as pensé."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -135,11 +135,11 @@
     "night2_reply_yuna_4": {},
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*J'ouvre le lien de la playlist de nuit que Yuna a partagée. À côté du troisième morceau, une petite icône de lecture clignote.*"
+        "text": "*J'ouvre le lien de la playlist nocturne envoyé par Yuna. À côté du troisième titre de la liste, une petite icône de lecture clignote.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Ce morceau, écoute-le jusqu'à la dernière note."
+        "text": "Écoute ce morceau jusqu'à ce que la dernière note s'éteigne"
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
-        "text": "Oui. Merci de l'avoir écouté. Dors bien."
+        "text": "Tu as dû finir de l'écouter maintenant. Il est tard, bonne nuit."
     },
     "night2_dain_freetalk": {
         "name": "Dain",
@@ -205,15 +205,15 @@
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*Je finis les réponses, je souffle longuement et je pose le téléphone à côté de l'oreiller.*"
+        "text": "*Une fois l'échange terminé, je souffle longuement et reviens à la liste principale de la messagerie.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*Je vais répondre aux deux autres, et mon doigt se bloque. Cette agitation anxieuse de ne décevoir personne est un sentiment que j'ai ressenti dans mon ancienne école.*"
+        "text": "*En baissant les yeux sur les discussions restées sans réponse, mon pouce se fige au-dessus de l'écran. À force de taper puis d'effacer, le bout de mes doigts se refroidit.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*Dans l'album photo, une photo de sortie scolaire du printemps d'il y a 3 mois apparaît. Sojeong sourit à mes côtés, mais sur la photo prise la semaine suivante, le bureau de Sojeong est repoussé et le bureau avec des graffitis est coupé.*"
+        "text": "*En faisant défiler machinalement la galerie jusqu'en bas, je tombe sur une photo de la sortie de printemps d'il y a trois mois. Sojeong sourit à côté de moi, mais dès les photos de la semaine suivante, son bureau est repoussé au fond et le plateau couvert de gribouillis est coupé du cadre.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
@@ -233,15 +233,15 @@
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*Je rouvre la photo que je viens de fermer. Je souris droit devant, tandis que Sojeong à mes côtés regarde mon profil.*"
+        "text": "*Je retourne dans la galerie et rouvre cette photo de la sortie de printemps. À côté de moi qui souris face à l'objectif, le regard de Sojeong est tourné vers mon profil.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*Un sentiment lourd s'installe dans un coin de ma poitrine, et au final, je ne peux pas écrire de réponse aux deux autres.*"
+        "text": "*Je rouvre la fenêtre de messagerie, mais seul le curseur clignotant fait du surplace dans le champ vide.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Trois noms sont empilés côte à côte sur l'écran de verrouillage. Je lis les notifications sans les regarder et j'éteins l'écran.*"
+        "text": "*Laissant à l'écran les notifications restées sans réponse, j'appuie doucement sur le bouton de veille et éteins l'écran.*"
     },
     "night2_end_2_b": {},
     "night2_end_3_b": {
@@ -258,7 +258,7 @@
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Après un long silence, Seoyeon prend la parole, la voix glacée.* N'imagine pas laisser passer ce que tu viens de faire comme si rien ne s'était passé. Pendant quelque temps, ne te montre plus devant moi, et ne me contacte pas.",
+        "text": "*Après un long silence, la réponse glaciale de Seoyeon tombe.* Ne t'imagine pas pouvoir faire comme si tes paroles et ton attitude n'avaient pas eu lieu. Ne te montre plus devant moi pendant un moment et ne me contacte plus.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -266,15 +266,15 @@
     },
     "forced_violation_day2_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Le visage fermé de Seoyeon ne se détend pas du tout.* J'ai entendu tes excuses. Ça n'efface pas ce que tu viens de faire. Comme je l'ai dit, ne me contacte pas pendant quelque temps."
+        "text": "*Le ton de Seoyeon ne s'adoucit pas d'un pouce.* J'ai bien vu tes excuses. Ça n'efface pas ce qui vient de se passer pour autant. Comme je l'ai dit, ne me contacte plus pendant un moment."
     },
     "forced_violation_day2_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon coupe la parole, froide.* Un malentendu ? À partir du moment où j'ai clairement dit non, ça ne peut plus en être un. Ne dis plus rien."
+        "text": "*Seoyeon tranche net.* Un malentendu ? Dès l'instant où j'ai clairement dit non, la limite du simple malentendu a été franchie. N'ajoute pas un mot."
     },
     "forced_violation_day2_after_yuna": {
         "name": "Yuna",
-        "text": "*Yuna recule d'un pas et calme son souffle, devenu rauque.* Tu savais que je ne voulais pas, et tu as ignoré ça jusqu'au bout. Là, je ne veux même pas voir ton visage. Ne me contacte plus.",
+        "text": "*Après un long silence figé, la réponse glacée de Yuna arrive.* Je t'ai dit non et tu m'as ignorée jusqu'au bout. Là, je n'ai envie d'échanger aucun mot avec toi. Ne me recontacte plus jamais.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -282,15 +282,15 @@
     },
     "forced_violation_day2_yuna_apologize": {
         "name": "Yuna",
-        "text": "*Après un long silence, Yuna répond, glaciale.* S'excuser ne fait pas disparaître ce qui vient de se passer. Maintenant, arrête."
+        "text": "*Après un long blanc, la réponse froide de Yuna tombe.* S'excuser ne fait pas disparaître ce qui vient de se passer. Arrête maintenant."
     },
     "forced_violation_day2_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna n'écoute même pas mon explication jusqu'au bout.* J'ai clairement dit non. Je n'ai pas à écouter tes excuses."
+        "text": "*Yuna coupe court à mes justifications sans s'y attarder.* J'ai clairement dit non. Je n'ai aucune excuse à accepter."
     },
     "forced_violation_day2_after_dain": {
         "name": "Dain",
-        "text": "*Toute trace de sourire quitte le visage de Dain. Longtemps après, elle lâche quelques mots d'une voix dure.* C'est pas une blague. J'ai dit non, et tu l'as fait quand même, de force. Je laisserai pas passer.",
+        "text": "*Toute trace de sa légèreté habituelle disparue, sa réponse tombe après un lourd silence.* Ce n'est pas une blague. Forcer comme ça alors que j'ai dit non, je ne laisserai jamais passer ça.",
         "choices": [
             "S'excuser sans chercher d'excuse, puis mettre fin à la conversation.",
             "Essayer d'expliquer qu'il s'agissait d'un malentendu."
@@ -298,11 +298,11 @@
     },
     "forced_violation_day2_dain_apologize": {
         "name": "Dain",
-        "text": "*Ce n'est que longtemps après que Dain répond, brièvement, le visage fermé.* D'accord. Alors on s'arrête là pour aujourd'hui. C'est moi qui déciderai si on en reparle."
+        "text": "*Ce n'est qu'au bout d'un long moment que Dain laisse une réponse brève.* Compris. On s'arrête là pour aujourd'hui. C'est moi qui déciderai si on se reparle."
     },
     "forced_violation_day2_dain_excuse": {
         "name": "Dain",
-        "text": "*La voix de Dain tombe, plus rauque.* Non. Cherche pas d'excuse. C'est toi qui as insisté, alors que j'avais dit non."
+        "text": "*Dain me coupe froidement.* Non, ne cherche pas d'excuses. C'est toi qui as insisté alors que j'avais dit non."
     },
     "forced_violation_day2_after_teacher": {
         "name": "Professeure principale",
@@ -338,23 +338,23 @@
     },
     "night2_reply_dain_1_established": {
         "name": "{name}",
-        "text": "Le tteokbokki d'aujourd'hui était vraiment piquant haha"
+        "text": "Franchement, les tteokbokki d'aujourd'hui m'ont bien arraché à moi aussi haha"
     },
     "night2_reply_dain_1_first": {
         "name": "{name}",
-        "text": "On mange des tteokbokki devant le lycée, demain ? Moi, le piment, je le tiens mal haha"
+        "text": "Et demain après les cours, ça te dit aussi des tteokbokki devant le lycée ? Par contre je crains un peu le piquant haha"
     },
     "night2_reply_yuna_1_established": {
         "name": "{name}",
-        "text": "Le livre que tu m'as prêté tout à l'heure, j'en ai déjà lu la moitié. C'était plutôt bien."
+        "text": "J'ai déjà lu la moitié du livre que tu m'as prêté. Il est vraiment prenant"
     },
     "night2_reply_yuna_1_first": {
         "name": "{name}",
-        "text": "Si je passe à l'annexe de la bibliothèque demain, recommande-moi un livre qui vaut le coup."
+        "text": "Si je passe à l'annexe demain, tu me prêteras un de tes livres préférés ? Je le lirai jusqu'au bout."
     },
     "night2_reply_yuna_4_established": {
         "name": "Yuna",
-        "text": "La playlist que je t'ai fait écouter tout à l'heure. Le troisième morceau, là-dedans, écoute-le aussi."
+        "text": "Je viens de t'envoyer le lien de la playlist qu'on a écoutée tout à l'heure. Écoute absolument le troisième morceau aussi"
     },
     "night2_reply_yuna_4_first": {
         "name": "Yuna",
@@ -370,7 +370,7 @@
     },
     "night2_reply_dain_react_neg": {
         "name": "Dain",
-        "text": "Compris. Dors, c'est tout. *Ça passe seulement en lu, et plus aucune réponse n'arrive.*"
+        "text": "Compris. Va dormir. *La mention non lu disparaît, et plus aucune réponse n'arrive.*"
     },
     "night2_reply_seo_react_neg": {
         "name": "Seoyeon",

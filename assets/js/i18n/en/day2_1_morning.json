@@ -9,7 +9,7 @@
     },
     "morning2_start": {
         "name": "{name}",
-        "text": "*My second morning at the new school. The creases in my uniform sleeves have faded compared to yesterday. I open my textbook and the timetable I wrote yesterday catches my eye.*"
+        "text": "*My second morning after transferring. The creases in my uniform sleeves have faded since yesterday. Recalling the timetable I wrote down yesterday, I pause outside our classroom's front door.*"
     },
     "morning2_start_2": {},
     "morning2_greet_seo_1": {},
@@ -23,7 +23,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "Seoyeon",
-        "text": "You're early today. The way to the classroom isn't confusing anymore, right? *At the sound of Seoyeon's voice, Dain's chair shifts beside me, and Yuna turns a page by the window.*"
+        "text": "You're early today. Finding your way to the classroom isn't confusing anymore, right? *At Seoyeon's voice from the doorway, Dain's chair shifts beside me and Yuna turns a page by the window.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -44,12 +44,12 @@
     },
     "morning2_greet_dain_others_yuna": {
         "name": "{name}",
-        "text": "*In the seat behind me, the tip of Yuna's fountain pen pauses and leaves a small violet ink dot in the middle of a white note.*"
+        "text": "*In the seat behind me, the tip of Yuna's fountain pen pauses, leaving a tiny violet ink dot on the corner of her open notebook.*"
     },
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*Yuna's note on the corner of the desk. On the back, one line longer than yesterday, it says, 'To the library annex at lunch.'*"
+        "text": "*I unfold the neatly creased note in my hand; written in pale violet ink is a single line: 'To the library annex at lunch.'*"
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
@@ -69,7 +69,7 @@
     },
     "morning2_yuna_seen": {
         "name": "Yuna",
-        "text": "...Have you been to this school before you transferred?"
+        "text": "...Strange. You really seem like someone I've seen somewhere before."
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
-        "text": "*Passing in the hall, Seoyeon leans her head in a little through the open classroom door.* Did you sleep well last night without tossing and turning?"
+        "text": "*Stepping back into the hallway, Seoyeon pokes her head slightly back in through the open front door.* Oh, right—did you sleep well last night without tossing and turning?"
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "The busy student council president came all the way to someone else's classroom this morning, just to say hi in person?"
+        "text": "For a busy student council president, you sure drop by someone else's classroom doorway a lot in the morning."
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
@@ -157,23 +157,23 @@
     },
     "hidden_homeroom_d2_3": {
         "name": "Homeroom Teacher",
-        "text": "Yeah, sit. Looking at your record from your old school, your Korean grades were especially good. Do you usually like to read?"
+        "text": "Yeah, have a seat. Looking at your records from your old school, your Korean grades stood out—does the subject suit you well?"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "{name}",
-        "text": "Aside from textbooks, I like reading novels quite a bit."
+        "text": "Reading the passages in class just feels less boring than the rest."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "I didn't expect you to bring up novels, ma'am. *As if noticing my gaze, the homeroom teacher places her fountain pen on the manuscript paper in the open drawer.*"
+        "text": "You have quite a lot of literature books on your desk here too. *Over the stack of manuscript paper in the open drawer, she quietly lays the attendance book.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Homeroom Teacher",
-        "text": "You like to read, then. And you've never tried writing anything yourself?"
+        "text": "Call it an occupational hazard. Have you ever tried writing something yourself?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*The homeroom teacher's slender finger, resting on the report card, quietly covers the corner of the manuscript paper in the drawer.*"
+        "text": "*Her gaze brushes past the half-open drawer before returning straight to me.*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -181,11 +181,11 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "Homeroom Teacher",
-        "text": "Huh, the drawer rail's caught again. *The drawer catches on the corner of the manuscript paper. She pushes it with her knee and stops when she meets my eyes.*"
+        "text": "Oh, the drawer rail caught again. Anyway, outside of textbooks, do you read much on your own? *Nudging the stuck drawer shut with her knee, she meets my eyes.*"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*Hand off the drawer, the homeroom teacher waits for my answer through the steam rising off her teacup.*",
+        "text": "*Hand off the drawer, the homeroom teacher waits for my answer across the steam rising from her coffee mug.*",
         "choices": [
             "What about you? What do you read?",
             "I do like reading.",
@@ -206,11 +206,11 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "Homeroom Teacher",
-        "text": "My desk's a little messy, isn't it? *She pushes the manuscript stack that was sticking out deep inside, and closes the drawer the rest of the way.*"
+        "text": "My desk's a bit cluttered, isn't it? Start of the semester means a pile of paperwork to sort. *She taps a stack of handouts neat at the corner of her desk.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Homeroom Teacher",
-        "text": "So, now that it's your second day, how is it? Is the classroom air a bit more familiar than yesterday?"
+        "text": "So how's day two treating you? Does the class feel a bit more comfortable than yesterday?"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     "hidden_homeroom_d2_8_f": {},
     "hidden_homeroom_d2_9": {
         "name": "{name}",
-        "text": "Thank you for looking after this so carefully, Teacher."
+        "text": "That's a relief. I got a little nervous thinking I might've missed a form."
     },
     "hidden_homeroom_d2_10": {
         "name": "Homeroom Teacher",
@@ -264,7 +264,7 @@
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Homeroom Teacher",
-        "text": "Yeah. Even if it's only polite, being thanked like that makes it worth it."
+        "text": "Well, hearing you put it like that makes sorting all that paperwork feel worth it."
     },
     "hidden_homeroom_d2_11": {
         "name": "Homeroom Teacher",
@@ -293,7 +293,7 @@
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "Your hand just shot in with no warning. You startled me. *Awkward for no reason, I resettle the bag strap on my shoulder.*"
+        "text": "Your hand came in out of nowhere without a word—you startled me. *Feeling weirdly self-conscious, I tug my uniform blazer straight.*"
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",
@@ -301,7 +301,7 @@
     },
     "morning2_dain_react_1": {
         "name": "{name}",
-        "text": "*The dust is clearly gone, but the spot on my shoulder where Seoyeon's fingertips touched still itches, so I fix my grip on the bag strap twice.*"
+        "text": "*Even though the dust is clearly gone, the spot on my shoulder where Seoyeon's fingertips brushed still tingles, leaving me rubbing the back of my neck.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",
@@ -317,7 +317,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "I told you, she really just brushed off dust. Why are you staring with your eyes that wide? *I quietly let go of the bag strap I'd been fiddling with.*"
+        "text": "She really just brushed off some dust, I swear. Why are you squinting at me like that? *I quietly slip the hand from my shoulder into my pocket.*"
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Homeroom Teacher",
@@ -335,7 +335,7 @@
     },
     "morning2_greet_none_2": {
         "name": "{name}",
-        "text": "*Seoyeon just flips through the attendance book, while Dain turns toward her friends. By the window, Yuna keeps her eyes on her book.*"
+        "text": "*Passing the hallway window, Seoyeon only flips through her clipboard while Dain turns toward her friends. By the window, Yuna doesn't lift her eyes from her open book.*"
     },
     "morning2_greet_none_tone": {},
     "morning2_greet_none_neg_1": {
@@ -356,6 +356,6 @@
     },
     "morning2_greet_yuna_1_thanks": {
         "name": "Yuna",
-        "text": "*A neatly folded note is sitting on the corner of the desk I was about to sit at.* Thanks for being next to me yesterday."
+        "text": "*As I pick up the note resting on the corner of my desk, my eyes brush past Yuna's by the window.* ...Thanks for staying beside me yesterday."
     }
 }

@@ -9,7 +9,7 @@
     },
     "morning2_start": {
         "name": "{name}",
-        "text": "*Minha segunda manhã na nova escola. Os vincos nas mangas do meu uniforme estão mais suaves em comparação com ontem. Eu abro meu livro e o horário que escrevi ontem chama minha atenção.*"
+        "text": "*Minha segunda manhã após a transferência. Os vincos nas mangas do uniforme estão mais suaves do que ontem. Lembrando o horário que anotei ontem, paro diante da porta da frente da nossa sala de aula.*"
     },
     "morning2_start_2": {},
     "morning2_greet_seo_1": {},
@@ -23,7 +23,7 @@
     },
     "morning2_greet_seo_2": {
         "name": "Seoyeon",
-        "text": "Você está cedo hoje. O caminho para a sala não é confuso mais, certo? *Ao ouvir a voz de Seoyeon, a cadeira de Dain se move ao meu lado, e Yuna vira uma página perto da janela.*"
+        "text": "Chegou cedo hoje. Já não se confunde mais no caminho até a sala, né? *Ao som da voz de Seoyeon parada à porta, a cadeira de Dain se mexe ao meu lado e Yuna vira uma página perto da janela.*"
     },
     "morning2_greet_seo_others_2": {
         "name": "{name}",
@@ -44,12 +44,12 @@
     },
     "morning2_greet_dain_others_yuna": {
         "name": "{name}",
-        "text": "*A ponta da caneta-tinteiro que Yuna, na fileira de trás, segurava hesita e deixa um pequeno ponto de tinta violeta no meio de um bilhete branco.*"
+        "text": "*Na carteira de trás, a ponta da caneta-tinteiro de Yuna hesita e deixa um pequeno ponto de tinta violeta no canto do caderno aberto.*"
     },
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*O bilhete de Yuna no canto da mesa. No verso, uma linha mais longa que ontem, diz: 'Para o anexo da biblioteca no almoço.'*"
+        "text": "*Desdobro na mão o bilhete bem vincado; em tinta lilás-clara está escrito: 'Para o anexo da biblioteca no almoço.'*"
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
@@ -69,7 +69,7 @@
     },
     "morning2_yuna_seen": {
         "name": "Yuna",
-        "text": "...Por acaso você já veio nesta escola antes de se transferir?"
+        "text": "...Que estranho. Você parece muito alguém que eu já vi em algum lugar antes."
     },
     "morning2_note_1": {
         "name": "{name}",
@@ -81,11 +81,11 @@
     },
     "morning2_seo_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon, que passava pelo corredor, enfia de leve a cabeça pela fresta da porta aberta da sala.* Você dormiu bem ontem sem vir revirar na cama?"
+        "text": "*Saindo para o corredor, Seoyeon coloca a cabeça de volta pela fresta da porta da frente aberta.* Ah, aliás, dormiu bem ontem à noite sem ficar rolando na cama?"
     },
     "morning2_seo_4": {
         "name": "{name}",
-        "text": "A presidente do grêmio anda tão ocupada e mesmo assim veio logo de manhã, pessoalmente, até a porta da sala dos outros só para cumprimentar?"
+        "text": "Para uma presidente do grêmio tão ocupada, você está passando bastante na porta da sala dos outros logo cedo, hein?"
     },
     "morning2_seo_5": {
         "name": "Seoyeon",
@@ -157,23 +157,23 @@
     },
     "hidden_homeroom_d2_3": {
         "name": "Professora",
-        "text": "Isso, senta. Aliás, olhei o histórico da escola anterior e as suas notas de português estavam especialmente boas. Você gosta de ler?"
+        "text": "Isso, pode sentar. Olhando o histórico da sua escola anterior, suas notas de português se destacavam bastante; você leva jeito para a matéria?"
     },
     "hidden_homeroom_d2_3_b": {
         "name": "{name}",
-        "text": "Fora o livro didático, eu gosto bastante de ler romances."
+        "text": "É que durante a aula ler os textos acaba sendo menos entediante."
     },
     "hidden_homeroom_d2_3_c": {
         "name": "{name}",
-        "text": "Eu não esperava que a senhora mencionasse romances. *Como se tivesse percebido meu olhar, a professora regente coloca sua caneta-tinteiro sobre o papel de manuscrito na gaveta aberta.*"
+        "text": "A senhora também tem bastantes livros de literatura aqui na mesa. *Por cima do maço de folhas de manuscrito na gaveta aberta, ela apoia discretamente o diário de classe.*"
     },
     "hidden_homeroom_d2_3_d": {
         "name": "Professora",
-        "text": "Gosta de ler, é. E nunca tentou escrever por conta própria?"
+        "text": "Deformação profissional, digamos. E você, nunca tentou escrever nada por conta própria?"
     },
     "hidden_homeroom_d2_3_e": {
         "name": "{name}",
-        "text": "*O dedo fino da professora, pousado sobre o boletim, cobre de leve o canto da folha de manuscrito dentro da gaveta.*"
+        "text": "*O olhar da professora passa de leve pela gaveta entreaberta e logo volta direto para mim.*"
     },
     "hidden_homeroom_d2_3_f": {
         "name": "{name}",
@@ -181,11 +181,11 @@
     },
     "hidden_homeroom_d2_3_g": {
         "name": "Professora",
-        "text": "Ora, o trilho da gaveta emperrou de novo. *A gaveta emperra no canto do papel de manuscrito. Ela o empurra com o joelho e para quando encontra meus olhos.*"
+        "text": "Ora, o trilho da gaveta emperrou de novo. Enfim, fora os livros didáticos, você costuma ler no dia a dia? *Empurrando a gaveta presa com o joelho, o olhar dela encontra o meu.*"
     },
     "hidden_homeroom_d2_choice1": {
         "name": "{name}",
-        "text": "*A professora, já com a mão fora da gaveta, espera a minha resposta do outro lado do vapor que sobe da xícara de chá.*",
+        "text": "*Já com a mão fora da gaveta, a professora espera minha resposta por trás do vapor que sobe da caneca de café.*",
         "choices": [
             "E a senhora? Lê o quê?",
             "Eu gosto de ler, sim.",
@@ -206,11 +206,11 @@
     },
     "hidden_homeroom_d2_6": {
         "name": "Professora",
-        "text": "Minha mesa está meio bagunçada, né? *Ela empurra bem para dentro o maço de manuscrito que estava para fora e termina de fechar a gaveta.*"
+        "text": "Minha mesa está meio bagunçada, né? Começo de semestre tem muita papelada para organizar. *Ela alinha direitinho uma pilha de impressos no canto da mesa.*"
     },
     "hidden_homeroom_d2_7": {
         "name": "Professora",
-        "text": "E então, como está sendo esse segundo dia? O ar da sala já ficou um pouco mais familiar do que ontem?"
+        "text": "E então, como está sendo o segundo dia? Já está se sentindo um pouco mais à vontade com a turma do que ontem?"
     },
     "hidden_homeroom_d2_7_b": {
         "name": "{name}",
@@ -239,7 +239,7 @@
     "hidden_homeroom_d2_8_f": {},
     "hidden_homeroom_d2_9": {
         "name": "{name}",
-        "text": "Obrigado por cuidar de tudo com tanto cuidado, professora."
+        "text": "Que alívio. Fiquei até um pouco tenso achando que estava faltando algum documento."
     },
     "hidden_homeroom_d2_10": {
         "name": "Professora",
@@ -264,7 +264,7 @@
     },
     "hidden_homeroom_d2_choice2_b": {
         "name": "Professora",
-        "text": "É. Mesmo que seja só da boca para fora, você agradecer assim faz valer a pena."
+        "text": "Bom, ouvir uma palavra assim já faz valer o trabalho de organizar toda essa papelada."
     },
     "hidden_homeroom_d2_11": {
         "name": "Professora",
@@ -293,7 +293,7 @@
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "Você veio com a mão assim, de repente, sem falar nada. Claro que eu me assustei. *Sem jeito, ajeito a alça da mochila no ombro.*"
+        "text": "Você me assustou chegando com a mão assim de repente, sem falar nada. *Meio sem graça à toa, ajeito o blazer do uniforme.*"
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",
@@ -301,7 +301,7 @@
     },
     "morning2_dain_react_1": {
         "name": "{name}",
-        "text": "*O pó com certeza já saiu todo, mas o lugar do ombro onde os dedos de Seoyeon tocaram coça, e eu ajeito a alça da mochila de novo, duas vezes.*"
+        "text": "*Mesmo com a poeira já toda tirada, o lugar no ombro onde os dedos de Seoyeon tocaram continua pinicando, e acabo passando a mão na nuca à toa.*"
     },
     "morning2_dain_react_3": {
         "name": "Dain",
@@ -317,7 +317,7 @@
     },
     "morning2_dain_react_6": {
         "name": "{name}",
-        "text": "Já falei que ela só tirou o pó de verdade. Por que você está me olhando com esses olhos arregalados? *Tiro a mão de fininho da alça da mochila que eu vinha mexendo.*"
+        "text": "Ela só tirou uma poeira mesmo, juro. Por que está me olhando desse jeito? *Tiro de mansinho a mão do ombro e enfio no bolso.*"
     },
     "hidden_homeroom_d2_freetalk": {
         "name": "Professora",
@@ -335,7 +335,7 @@
     },
     "morning2_greet_none_2": {
         "name": "{name}",
-        "text": "*Seoyeon apenas folheia o livro de chamada, enquanto Dain se vira para seus amigos. Perto da janela, Yuna mantém os olhos em seu livro.*"
+        "text": "*Passando pela janela do corredor, Seoyeon apenas folheia a prancheta, e Dain se vira para as amigas. Perto da janela, Yuna não tira os olhos do livro aberto.*"
     },
     "morning2_greet_none_tone": {},
     "morning2_greet_none_neg_1": {
@@ -356,6 +356,6 @@
     },
     "morning2_greet_yuna_1_thanks": {
         "name": "Yuna",
-        "text": "*No canto da minha mesa, onde eu ia sentar, há um bilhete dobrado com capricho.* Obrigada por ter ficado do meu lado ontem."
+        "text": "*Ao pegar o bilhete deixado no canto da minha carteira, meu olhar cruza de leve com o de Yuna perto da janela.* ...Obrigada por ficar ao meu lado ontem."
     }
 }

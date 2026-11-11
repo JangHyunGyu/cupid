@@ -5,7 +5,7 @@
     },
     "hidden_nurse_d5_low": {
         "name": "School Nurse",
-        "text": "*The school nurse pulls a counseling-room card from between the charts and slides it to the edge of the desk.* Let's book a proper counseling time for the longer talk. If you feel sick, you can knock on the nurse's office door anytime. *I take the card and quietly turn back toward the classroom.*"
+        "text": "*The school nurse pulls a counseling-room card from between her charts and holds it out toward me.* Let's book a proper counseling slot for the longer talk. If you feel sick, you can knock on the nurse's office door anytime. *I take the card she handed me and quietly turn back toward the classroom.*"
     },
     "morning5_start": {
         "name": "{name}",
@@ -44,11 +44,11 @@
     },
     "morning5_caught_nurse_honest": {
         "name": "School Nurse",
-        "text": "*The nurse listens to my whole explanation, then closes the record sheet.* I'm glad you got home safely. Next time, let me know first if your plans change. Let's arrange a separate time to continue the longer conversation. *I say goodbye and return to the classroom.*"
+        "text": "*The school nurse listens to my whole explanation, then closes the record sheet.* I'm glad you got home safely. Next time, let me know first if your schedule shifts. Let's set a separate time for the longer talk. *With a brief nod, I leave the nurse's office and head back to the classroom.*"
     },
     "morning5_caught_nurse_lie": {
         "name": "School Nurse",
-        "text": "*The nurse sets her pen down on the record sheet.* Parts of that explanation don't fit the timetable. Let's go over this again with the school counselor. *I walk back to the classroom with heavy steps.*"
+        "text": "*The school nurse sets her pen down on the record sheet.* Parts of that explanation don't line up with the schedule. Let's go over this again together with the school counselor. *Unable to answer, I give a quiet bow and walk out of the nurse's office back to the classroom with heavy steps.*"
     },
     "morning5_caught_by_seoyeon_route": {},
     "morning5_caught_by_yuna_route": {},
@@ -193,7 +193,7 @@
     },
     "morning5_yuna_story_4": {
         "name": "{name}",
-        "text": "*In the bottom margin, a tiny pencil note remains: 'This is fiction. It isn't real.' Through the traces of repeated, unfinished erasing, the feelings she couldn't hide come through.*"
+        "text": "*In the bottom margin, a tiny pencil note remains: 'This is fiction. It isn't real.' Where an eraser rubbed over the words again and again before stopping, the paper fibers stand rough and white.*"
     },
     "morning5_return_class": {
         "name": "{name}",
@@ -209,12 +209,12 @@
     },
     "morning5_dain_2": {
         "name": "Dain",
-        "text": "*She tosses her head so her ponytail swings and puffs out her cheeks.* Huh. You didn't say you don't want to. Show up late and I really will be mad. Got it?"
+        "text": "*She tosses her head back so the ends of her short hair swing and puffs out her cheeks.* Hmph, you didn't say no, did you? Show up late and I really will get mad, got it?"
     },
     "morning5_committed_start": {},
     "morning5_committed_seo": {
         "name": "{name}",
-        "text": "*There is no secret note on the desk anymore. At the front of the classroom, Seoyeon, holding the clipboard, meets my eyes and smiles. Yuna and Dain calmly pass on only the festival schedule and move on.*"
+        "text": "*My desk is clean and empty this morning. Instead of a secret note, Seoyeon stands near the front of the classroom hugging her clipboard, meeting my eyes with a warm smile. Yuna and Dain calmly pass along only the festival schedule as they go by.*"
     },
     "morning5_committed_yuna": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "morning5_committed_dain": {
         "name": "{name}",
-        "text": "*Near the gym entrance, Dain, tightening her wrist guard, waves the moment she sees me. Seoyeon and Yuna, when I meet them in the classroom, only tell me the festival event order in calm voices, briefly.*"
+        "text": "*By the classroom's hallway window, Dain tightens her wrist guard and waves brightly the instant she spots me. Inside by the desks, Seoyeon and Yuna calmly fill me in on just the order of the festival events.*"
     },
     "hidden_homeroom_d5_check": {
         "name": "{name}",
@@ -372,11 +372,11 @@
     },
     "hidden_homeroom_d5_correct_13": {
         "name": "Homeroom Teacher",
-        "text": "Good. On the anonymous comment section on the back page, write it exactly as you felt it."
+        "text": "Good. On the anonymous comment section of that back page where you just stopped, write down exactly what you felt."
     },
     "hidden_homeroom_d5_correct_14": {
         "name": "{name}",
-        "text": "All right. I'll write it after I've read every line, without skipping one. *The teacher quietly rubs the return-sticker mark left on the brown envelope with a fingertip.*"
+        "text": "Understood. I'll go back through it calmly from the start and write my honest thoughts. *With a fingertip, the teacher quietly rubs the mark left by a return sticker on the brown envelope.*"
     },
     "hidden_homeroom_d5_6": {
         "name": "Homeroom Teacher",
@@ -469,7 +469,7 @@
     },
     "hidden_nurse_d5_1": {
         "name": "School Nurse",
-        "text": "Oh, {name}, you're here. The festival's near the end too. Let's finish sorting the counseling notes we've been keeping, this time."
+        "text": "Oh, {name}, you're here. Your first week since transferring is almost over now, too. Let's finish wrapping up the counseling notes we've been keeping."
     },
     "hidden_nurse_d5_1_b": {
         "name": "{name}",
@@ -495,7 +495,7 @@
     "hidden_nurse_d5_2_c": {},
     "hidden_nurse_d5_3": {
         "name": "{name}",
-        "text": "Teacher, I stopped by to pick up my counseling confirmation."
+        "text": "So once I pick up today's counseling confirmation slip, that wraps everything up, right?"
     },
     "hidden_nurse_d5_3_b": {
         "name": "{name}",
@@ -545,7 +545,7 @@
     },
     "hidden_nurse_d5_choice_a": {
         "name": "{name}",
-        "text": "I'll keep it safe. If I don't get hurt, I can just leave it in the inside pocket of my bag, right? *She slides the card into a thin clear case and sets it on my palm.*"
+        "text": "I'll keep it safe. As long as I don't get hurt, I can just leave it tucked in my bag's inner pocket, right? *She nods as she slips the first-aid card into a thin clear sleeve.*"
     },
     "hidden_nurse_d5_choice_a_b": {
         "name": "School Nurse",
@@ -581,7 +581,7 @@
     },
     "hidden_nurse_d5_6": {
         "name": "School Nurse",
-        "text": "*Only then do her eyes soften, as if she is relieved.* Do it that way, and that's enough. Here, the first-aid card."
+        "text": "*Her eyes soften at last, and she sets the sleeved card onto my palm.* Just do that, and it's plenty. Here—your first-aid card."
     },
     "hidden_nurse_d5_6_b": {},
     "hidden_nurse_d5_6_c": {
@@ -593,12 +593,12 @@
     "hidden_nurse_d5_7_both": {},
     "hidden_nurse_d5_freetalk": {
         "name": "School Nurse",
-        "text": "*She slides the finished counseling record into a file in the cabinet.* Official counseling ends here. Next time something hurts, don't hold it in. Tell me right away."
+        "text": "*She neatly tucks the completed counseling sheet into her portable file folder.* Official counseling ends here. Next time something hurts, don't hold it in—tell me right away."
     },
     "morning5_end_branch": {},
     "morning5_end": {
         "name": "{name}",
-        "text": "*I carefully sort the notes on the desk and gather them, then check every notification on my phone, one by one. My heart starts beating a little faster.*"
+        "text": "*I go back over the words left with me this morning and check the notifications still on my phone screen one by one. Beyond the hallway, the lively chatter marking the start of the festival draws closer.*"
     },
     "morning5_committed_end": {
         "name": "{name}",
@@ -632,7 +632,7 @@
     },
     "morning5_sojeong_5": {
         "name": "{name}",
-        "text": "I would like formal counseling about something I looked past at the school before I transferred. *I send a message to my current homeroom teacher as well. I do not delete the two lines of confession I finally sent.*"
+        "text": "I would like formal counseling about something I pretended not to see at my previous school before transferring. *I send the message to my current homeroom teacher too, then look quietly down at the screen showing it delivered.*"
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
@@ -656,7 +656,7 @@
     },
     "morning5_harem_fallout_3": {
         "name": "{name}",
-        "text": "*My lips move, then I nod without any strength. I watch for a long time as the three leave the school gate shoulder to shoulder, then follow behind them alone, a shadow one step late.*"
+        "text": "*My lips part without a sound, and I give a limp nod. For a long moment I watch the three of them walk away down the hall shoulder to shoulder, then trail after them alone, a step behind.*"
     },
     "morning5_counteroffer_choice": {
         "name": "{name}",
@@ -673,7 +673,7 @@
     },
     "morning5_counteroffer_choice_tempter": {
         "name": "{name}",
-        "text": "*I look at the person I spent last night with, then bow deep to the person I promised first.* I won't hide, like a coward, who my heart has leaned toward. Holding both of you and hurting you ends here."
+        "text": "*I look at the person I spent last night with, then bow deeply to the one I made my first promise to.* I'll tell you honestly who my heart leans toward right now. Stringing both of you along and hurting you ends here."
     },
     "morning5_counteroffer_choice_neither": {
         "name": "{name}",
@@ -695,6 +695,6 @@
     },
     "hidden_nurse_d5_neg": {
         "name": "School Nurse",
-        "text": "*The school nurse snaps the chart shut and closes the appointment sheet.* This hour, I'll only do emergency care. If you need a personal talk, request it through the school's official channel. *I turn and go back to the classroom.*"
+        "text": "*The school nurse snaps the chart shut and closes the appointment sheet.* During this hour, I'm only taking emergency care. If you need a personal consultation, apply through the school's official channel. *Unable to say anything more, I turn around and head back to the classroom.*"
     }
 }

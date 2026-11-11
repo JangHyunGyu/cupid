@@ -17,15 +17,15 @@
     },
     "night3_faithful_msg_seo_2": {
         "name": "Seoyeon",
-        "text": "Stattdessen darfst du morgen wieder mit der Ausrede vorbeikommen, du hättest deinen Kugelschreiber verloren. Ich warte."
+        "text": "Du darfst auch nächstes Mal gern mit der Ausrede eines verlorenen Kugelschreibers im Schülerratsraum vorbeischauen. Gute Nacht."
     },
     "night3_faithful_msg_seo_3": {
         "name": "{name}",
-        "text": "*Es fühlt sich an, als würde Seoyeons warme Atmung wieder an mir vorbeiziehen. Ich lese die letzte Zeile und schalte den Bildschirm aus, hinter einem angenehmen Eindruck.*"
+        "text": "*Die Erinnerung an Seoyeons warmen Atem an meinem Unterarm kehrt zurück. Als ich nach der letzten Zeile das Display ausschalte, bleibt eine angenehme Wärme.*"
     },
     "night3_faithful_msg_yuna_1": {
         "name": "Yuna",
-        "text": "*Von Yuna ist eine Nachricht aus der tiefen Nacht da. Es geht um das Ledernotizbuch, das sie mir vorhin im Bibliotheksanbau gereicht hat, die Wange an meine Handfläche gelehnt.*"
+        "text": "*Mit einem kurzen Vibrieren trifft eine späte Nachricht von Yuna ein.* Noch wach? Ich wollte nur wissen, ob du das Notizbuch aus dem Nebengebäude gut mit nach Hause genommen hast."
     },
     "night3_faithful_msg_yuna_2": {
         "name": "Yuna",
@@ -33,7 +33,7 @@
     },
     "night3_faithful_msg_yuna_2_b": {
         "name": "{name}",
-        "text": "*Ich streiche über das Ledernotizbuch auf dem Schreibtisch und sehe mir die letzte Zeile meiner Notizen an. Yunas Wärme scheint immer noch da zu sein.*"
+        "text": "*Ich schlage das Ledernotizbuch auf dem Schreibtisch auf und blicke auf die leere letzte Seite. Yunas Wärme auf dem Einband ist an meinen Fingerspitzen noch ganz präsent.*"
     },
     "night3_faithful_msg_dain_1": {
         "name": "Dain",
@@ -49,7 +49,7 @@
     },
     "night3_dream_1": {
         "name": "{name}",
-        "text": "*Ich fange an, die Schreibtischlampe auszuschalten, dann nehme ich mein Handy wieder in die Hand. Wie nah wir nach der Schule waren, Seite an Seite atmend, ist mir immer noch auf den Fingerspitzen lebhaft.*"
+        "text": "*Auf dem Bett liegend greife ich noch einmal zum Handy. Die Nähe nach dem Unterricht, als wir Seite an Seite ruhig atmeten, ist mir noch ganz gegenwärtig.*"
     },
     "night3_dream_2_b": {
         "name": "{name}",
@@ -111,11 +111,11 @@
     },
     "night3_cheat_msg_3_b": {
         "name": "Seoyeon",
-        "text": "*In Seoyeons Chat geht die Anzeige „schreibt“ lange an und aus. Am Ende kommt der nächste Satz nicht.*"
+        "text": "*In Seoyeons Chat blinkt lange die Anzeige „schreibt“, ehe nur eine kurze Zeile erscheint.* Tut mir leid. Vergiss, was ich gerade geschickt habe."
     },
     "night3_cheat_msg_4": {
         "name": "Yuna",
-        "text": "Du hast uns drei gegeneinander abgewogen. Ich wusste von Anfang an alles."
+        "text": "Dass du zwischen uns abgewogen hast, wusste ich von Anfang an."
     },
     "night3_cheat_msg_4_b": {
         "name": "Yuna",
@@ -135,31 +135,31 @@
     },
     "night3_cheat_msg_7": {
         "name": "Yuna",
-        "text": "Ich weiß, dass du das jetzt liest und nicht antwortest. Morgen früh schnappe ich dich als Erstes. *Im Dunkeln leuchtet Yunas letzte Nachricht auf und fesselt den Blick wie eine kühle Besessenheit.*"
+        "text": "Ich weiß genau, dass du das liest und nicht antwortest. Morgen früh erwische ich dich als Erste. *Ich kann den Blick nicht von Yunas letzter Nachricht lösen, die das dunkle Zimmer erhellt.*"
     },
     "night3_nightmare_1": {
         "name": "{name}",
-        "text": "*Ich schalte das Licht aus und lege mich hin, aber mein Herz schwillt an und ich kann nicht die Augen schließen. Nur das kalte Licht des Bildschirms fällt auf meine Handfläche.*"
+        "text": "*Ich lege mich im dunklen Zimmer aufs Bett, doch mein Herz schlägt so heftig, dass ich kein Auge zubekomme. Nur das kühle Displaylicht fällt auf meine Handfläche.*"
     },
     "night3_nightmare_2_b": {
         "name": "{name}",
-        "text": "*Mit zitterndem Daumen öffne ich Seoyeons Chat wieder. Über der Zeile „Bitte. Ich flehe dich an.“, in der sie ihren ganzen Stolz abgelegt hat, legt sich Seoyeons nasser Blick.*"
+        "text": "*Mit zitterndem Daumen öffne ich noch einmal Seoyeons Chat. Über die Zeile ohne jeden Stolz – „Bitte. Ich flehe dich an.“ – legt sich ihr feuchter Blick, als eine neue Nachricht aufleuchtet.*"
     },
     "night3_nightmare_3": {
         "name": "Seoyeon",
-        "text": "Ich dränge dich nicht, heute Nacht sofort zu antworten. Aber morgen früh lauf vor mir nicht weg."
+        "text": "Ich dränge dich nicht, mir noch heute Nacht zu antworten. Aber lauf morgen nicht vor mir davon."
     },
     "night3_nightmare_3_b": {
         "name": "{name}",
-        "text": "*Ich schließe das Fenster und öffne Yunas Chat. Das „Gelesen“, das ich hinterlassen habe, steht da wie ein kaltes Brandmal.*"
+        "text": "*Ich schließe das Fenster und öffne Yunas Chat, in dem mein hinterlassenes „Gelesen“ kühl auf dem Bildschirm steht.*"
     },
     "night3_nightmare_4": {
         "name": "{name}",
-        "text": "*„Weich meinen Augen nicht aus. Versprich nur das.“ Hinter der kurzen Sprechblase ist es, als schnüre Yunas kalte Hand, die mein Handgelenk nicht losließ, mir den Nacken zu.*"
+        "text": "*„Weich meinen Augen nicht aus. Versprich nur das.“ Hinter der kurzen Sprechblase tauchen Yunas durchdringende karminrote Augen deutlich im Dunkeln auf.*"
     },
     "night3_nightmare_4_b": {
         "name": "{name}",
-        "text": "*Ganz unten in Dains Chat steht hinter dem Lachen, das sie sich abgerungen hat, nur noch eine einzelne Zeile.*"
+        "text": "*Ganz unten in Dains Chat steht hinter dem locker angehängten Lachen nur eine einzelne verlassene Zeile.*"
     },
     "night3_nightmare_5": {
         "name": "{name}",
@@ -171,7 +171,7 @@
     },
     "night3_nightmare_choice": {
         "name": "{name}",
-        "text": "*Wenn diese harte Nacht vorbei ist und der Tag anbricht, zu wem soll ich zuerst laufen und die Wahrheit sagen?*",
+        "text": "*Wenn diese lange, schwere Nacht vorüber ist und der Morgen graut – zu wem soll ich als Erstes gehen und ehrlich alles aussprechen?*",
         "choices": [
             "Zuerst mit Seoyeon reden",
             "Zuerst mit Yuna reden",
@@ -184,7 +184,7 @@
     },
     "night3_nightmare_yuna": {
         "name": "{name}",
-        "text": "*Ich schreibe in Yunas Eingabefeld „Morgen weiche ich dir auf keinen Fall aus. Ich komme zuerst zu dir.“, und hinter dem letzten Zeichen blinkt der Cursor hastig.*"
+        "text": "*Als ich in Yunas Eingabefeld „Morgen weiche ich dir nicht aus – ich komme zuerst zu dir.“ tippe, blinkt der Cursor hektisch hinter dem letzten Zeichen.*"
     },
     "night3_nightmare_dain": {
         "name": "{name}",
@@ -200,11 +200,11 @@
     },
     "night3_cheat_reflect_2": {
         "name": "{name}",
-        "text": "*Auf dem Gruppenfoto blickt Sojeong kraftlos in die Kamera, und neben ihr blicke ich weg, so wie ich es damals tat, alles Schwierige ausweichend.*"
+        "text": "*Auf dem Gruppenfoto blickt Sojeong kraftlos in die Kamera, während ich daneben schon damals vor unangenehmen Dingen leise den Blick abwende.*"
     },
     "night3_cheat_reflect_3_c": {
         "name": "{name}",
-        "text": "*Ich scanne die Nachrichtenliste. Neben jedem der drei Namen steckt eine andere Wunde.*"
+        "text": "*Ich scrolle langsam durch die Nachrichtenliste. Neben jedem Namen, den meine doppelten Zusagen zurückgelassen haben, sitzt eine andere Wunde.*"
     },
     "night3_cheat_reflect_3_d": {
         "name": "Minsu",
@@ -212,11 +212,11 @@
     },
     "night3_cheat_reflect_3_e": {
         "name": "{name}",
-        "text": "*Ich lese die drei Chats noch einmal von der ersten Zeile an. Diesmal schließe ich kein Fenster, als würde ich fliehen.*"
+        "text": "*Ruhig lese ich die offenen Chats noch einmal von der ersten Zeile an. Diesmal schließe ich kein einziges Fenster überstürzt.*"
     },
     "night3_cheat_reflect_5": {
         "name": "{name}",
-        "text": "*Ich nehme meine Hand von Senden und lege das Telefon mit dem Display nach unten. Ich werde das nicht mit ein paar Zeilen Text flicken. Morgen werde ich ihr ins Gesicht schauen und antworten.*"
+        "text": "*Ich nehme den Daumen vom Senden-Knopf und lege das Handy mit dem Display nach unten ab. Statt mich mit ein paar getippten Worten herauszureden, stelle ich mich morgen früh persönlich.*"
     },
     "night3_nightmare_end_4": {
         "name": "{name}",
@@ -224,7 +224,7 @@
     },
     "night3_end": {
         "name": "{name}",
-        "text": "*Ich schließe das Schulbuch mit dem notierten Freitagsstundenplan und schalte die Schreibtischlampe ganz aus. Das Handy lege ich mit dem Display nach unten neben mein Kopfkissen.*"
+        "text": "*Draußen vor dem dunklen Fenster neigt sich die Freitagnacht langsam dem Ende zu. Ich lege das Handy neben mein Kopfkissen und schließe die Augen dem Wochenende entgegen.*"
     },
     "forced_violation_day3_after_seoyeon": {
         "name": "Seoyeon",

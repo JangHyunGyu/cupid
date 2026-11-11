@@ -52,7 +52,7 @@
     "lunch3_meal_10_e": {},
     "lunch3_choice": {
         "name": "{name}",
-        "text": "*Am Tisch, wo selbst das Atmen leiser geworden ist, wähle ich, wem ich die letzte Beilage gebe.*",
+        "text": "*Über den zusammengeschobenen Schultischen, an denen selbst das Atmen leise geworden ist, wähle ich, wem ich das letzte Stück reiche.*",
         "choices": [
             "Seoyeon geben",
             "Dain geben",
@@ -91,7 +91,7 @@
     },
     "lunch3_seo_witness_1": {
         "name": "Dain",
-        "text": "Ich hab Durst, ich füll die Flasche kurz auf. *Dain nimmt die leere Wasserflasche, wirft einen Blick zu Seoyeons Lunchbox und geht auf den Flur.*"
+        "text": "Ich hab Durst, ich hol mir kurz Wasser. *Dain greift nach ihrer leeren Trinkflasche, blickt noch einmal kurz zu Seoyeons Lunchbox zurück und geht hinaus auf den Flur.*"
     },
     "lunch3_seo_witness_choice": {
         "name": "{name}",
@@ -113,7 +113,7 @@
     },
     "lunch3_seo_chase_dain_2b": {
         "name": "{name}",
-        "text": "*Ich habe Dain beruhigt und sie zurück an den Platz im Klassenzimmer gebracht.*"
+        "text": "*Nachdem ich Dain auf dem Flur beruhigt habe, kehren wir nebeneinander an unsere Plätze im Klassenzimmer zurück.*"
     },
     "lunch3_seo_focus_2": {
         "name": "Seoyeon",
@@ -176,11 +176,11 @@
     },
     "lunch3_yuna_skin_3": {
         "name": "{name}",
-        "text": "*Yuna bleibt lange so, als würde sie ihre Wärme an meinen Fingerspitzen lassen, und nimmt dann langsam die Hand weg. Ich falte den Zettel in der Handfläche und stecke ihn ein.*"
+        "text": "*Yuna verweilt kurz, bis ihre Wärme an meinen Fingerspitzen zurückbleibt, und zieht die Hand dann langsam weg. Ich falte den Zettel in meiner Handfläche zusammen und stecke ihn ein.*"
     },
     "lunch3_give_yuna_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon legt die Stäbchen so ordentlich hin, als würde sie eine Teetasse absetzen.* Ich dachte, es kommt selbstverständlich zu mir. Überraschend."
+        "text": "*Seoyeon legt ihre Essstäbchen lautlos und ordentlich am Rand ihrer Lunchbox ab.* Ich hatte fest gedacht, es ginge an mich. Überraschend."
     },
     "lunch3_yuna_witness_1": {
         "name": "Seoyeon",
@@ -188,7 +188,7 @@
     },
     "lunch3_yuna_witness_2": {
         "name": "{name}",
-        "text": "*Yuna tippt einmal mit dem Zeigefinger an die Seite des Wasserbechers und sieht Seoyeon direkt in die Augen.*"
+        "text": "*Yuna tippt einmal mit dem Zeigefinger an die Seite des Bechers und begegnet Seoyeons Blick geradeheraus.*"
     },
     "lunch3_give_yuna_3": {
         "name": "Dain",
@@ -204,7 +204,7 @@
     },
     "lunch3_expose_3": {
         "name": "{name}",
-        "text": "Hä? Moment, Dain. Darüber reden wir gleich. *Für einen Moment wird mir kalt den Rücken runter, und die Stäbchen in meiner Hand erstarren.*"
+        "text": "Äh? Moment mal, Dain, lass uns später darüber reden. *Mir läuft es eiskalt den Rücken hinunter, und die Stäbchen in meiner Hand halten inne.*"
     },
     "lunch3_expose_4": {
         "name": "{name}",
@@ -213,11 +213,11 @@
     "lunch3_expose_5": {},
     "lunch3_expose_6": {
         "name": "Seoyeon",
-        "text": "*Aus Seoyeons Stimme ist jede Wärme weg.* Moment. Heißt das, das Treffen am Wochenende ist nicht nur mit mir?"
+        "text": "*Jede Wärme weicht aus Seoyeons Stimme.* Moment mal. Heißt das etwa, ich bin nicht die Einzige, mit der du dich dieses Wochenende triffst?"
     },
     "lunch3_expose_7": {
         "name": "Dain",
-        "text": "*Das Lächeln verschwindet langsam aus Dains Gesicht.* Was, komisch. Wir drei haben anscheinend alle was anderes gehört, mit wem und wann du dich triffst."
+        "text": "*Das Lächeln verschwindet langsam aus Dains Gesicht.* Moment, das ist komisch. Warum passen deine Aussagen über das Wochenende vorne und hinten nicht zusammen?"
     },
     "lunch3_expose_7_b": {
         "name": "{name}",
@@ -233,7 +233,7 @@
     },
     "lunch3_expose_11": {
         "name": "Yuna",
-        "text": "Dass Seoyeon und Dain dich zuerst gefragt haben, hab ich gesehen. Dass du all die Treffen angenommen hast, wusste ich nicht."
+        "text": "Ich habe mitbekommen, wie Seoyeon und Dain nach deinem Wochenende gefragt haben. Sag bloß, du hast sich überschneidende Treffen angenommen, ohne abzusagen?"
     },
     "lunch3_expose_12": {
         "name": "Minsu",
@@ -241,7 +241,7 @@
     },
     "lunch3_expose_14": {
         "name": "Minsu",
-        "text": "*Minsu packt meine Schulter und flüstert fassungslos.* Hey, spinnst du? Wie viele Treffen hast du an einem Wochenende übereinandergelegt?"
+        "text": "*Minsu packt meine Schulter, stößt leise Luft aus und flüstert.* Sag mal, bist du noch zu retten? Wie viele Verabredungen hast du auf ein einziges Wochenende gelegt?"
     },
     "lunch3_expose_choice": {
         "name": "{name}",
@@ -258,11 +258,11 @@
     },
     "lunch3_expose_honest_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeon zieht fassungslos leise die Luft ein.* Weil du nicht ablehnen konntest? Diese Ausrede ist die grausamste, {name}."
+        "text": "*Seoyeon zieht scharf die Luft ein und beißt sich auf die Lippe.* Weil du nicht Nein sagen konntest? Diese Ausrede ist die grausamste überhaupt, {name}."
     },
     "lunch3_expose_honest_3": {
         "name": "Seoyeon",
-        "text": "Das halbherzige Lächeln, das du verteilst, nur weil du nicht gehasst werden willst, lässt die wartende Person glauben, sie sei etwas Besonderes."
+        "text": "Ein halbherziges Lächeln, nur um nicht unbeliebt zu sein, weckt bei dem Menschen, der wartet, die Illusion, etwas Besonderes zu sein."
     },
     "lunch3_expose_honest_4": {
         "name": "Seoyeon",
@@ -279,15 +279,15 @@
     },
     "lunch3_expose_honest_7": {
         "name": "{name}",
-        "text": "*Dain, die zurückbleibt, nickt nur kurz und weicht dem Blick aus. In ihrer Stimme ist von der sonst üblichen Aufregung nichts mehr da.*"
+        "text": "*Die zurückgebliebene Dain nickt nur kurz und wendet den Blick ab. Um ihre fest geschlossenen Lippen liegt keine Spur ihrer sonstigen Ausgelassenheit mehr.*"
     },
     "lunch3_expose_excuse_1": {
         "name": "{name}",
-        "text": "Die Tage und Uhrzeiten unterscheiden sich ein bisschen. Wenn man alles zusammen sieht, geht das doch, oder?"
+        "text": "Da sich die Uhrzeiten nicht überschnitten haben, dachte ich, es wäre in Ordnung, euch nacheinander zu treffen."
     },
     "lunch3_expose_excuse_2": {
         "name": "Seoyeon",
-        "text": "*Seoyeons Blick wird eiskalt.* Kapierst du wirklich nicht, dass es nicht darum geht, ob sich die Zeiten überschneiden?"
+        "text": "*Seoyeons Blick verhärtet sich eisig.* Begreifst du wirklich nicht, dass es hier überhaupt nicht darum geht, ob sich Uhrzeiten überschneiden?"
     },
     "lunch3_expose_excuse_2_b": {
         "name": "Dain",
@@ -303,7 +303,7 @@
     },
     "lunch3_expose_run_1": {
         "name": "{name}",
-        "text": "*Statt zu antworten drücke ich die Hintertür auf und komme wie auf der Flucht auf den Flur. Hinter mir schrammen die Stuhlbeine alle zugleich über den Boden.*"
+        "text": "*Statt einer Antwort stoße ich die Hintertür auf und eile hinaus auf den Flur. Hinter mir schrammen gleichzeitig mehrere Stuhlbeine über den Boden.*"
     },
     "lunch3_expose_run_2": {
         "name": "{name}",
@@ -311,11 +311,11 @@
     },
     "lunch3_share_1": {
         "name": "{name}",
-        "text": "Streitet nicht, wir schneiden es gleich durch und teilen. Dann ist es fair. *Alle drei lachen leise, doch die Stäbchenspitzen in ihren Händen bleiben seltsam still.*"
+        "text": "Streiten wir nicht, teilen wir es einfach gerecht auf. *Alle drei lachen leicht, doch die Spitzen ihrer Essstäbchen halten kurz in der Luft inne.*"
     },
     "lunch3_share_cool": {
         "name": "{name}",
-        "text": "*Ich teile das letzte Stück Eierrolle in drei gleiche Teile. Über dem Tisch liegt nur eine leichte Stille, das Lachen geht nicht weiter.*"
+        "text": "*Ich teile das letzte Stück Eierrolle in drei Teile. Über den zusammengeschobenen Schultischen liegt nur kurzes Schweigen, kein Lachen folgt.*"
     },
     "lunch3_share_neg": {
         "name": "{name}",
@@ -331,7 +331,7 @@
     },
     "lunch3_end": {
         "name": "{name}",
-        "text": "*Beim Klingeln zum Ende der Mittagspause klappt jede ihre Lunchbox zu. Vom Wochenendtreffen spricht am Ende niemand mehr.*"
+        "text": "*Das Klingeln zum Ende der Mittagspause hallt lang durch den Flur. Die zusammengeschobenen Tische rücken wieder an ihren Platz, und ich bereite mich auf den Nachmittagsunterricht vor.*"
     },
     "lunch3_give_seo_2_check": {},
     "lunch3_give_seo_dain_affinity": {},
@@ -409,7 +409,7 @@
     },
     "lunch3_give_yuna_seo_neg": {
         "name": "Seoyeon",
-        "text": "*Sie geht den Flur entlang und wirft nicht einmal einen Blick zum Fenster Richtung Bibliothek.*"
+        "text": "*Als Seoyeon durch die Hintertür des Klassenzimmers tritt, verschwindet sie auf dem Flur, ohne auch nur einen Blick zu meinem Platz zu werfen.*"
     },
     "lunch3_give_yuna_dain_neg": {
         "name": "Dain",

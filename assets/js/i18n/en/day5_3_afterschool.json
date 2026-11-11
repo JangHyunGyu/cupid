@@ -76,7 +76,7 @@
     "after5_farewell_dain_check": {},
     "after5_farewell_dain_1": {
         "name": "{name}",
-        "text": "*Dain comes out from the gym entrance. Her stride is unusually short and slow, nothing like the way she always used to stride on ahead.*"
+        "text": "*Through the open gym doors, I spot Dain holding a volleyball. Her stride is unusually short and slow compared to the way she always bounds across the court.*"
     },
     "after5_farewell_dain_2": {
         "name": "Dain",
@@ -100,11 +100,11 @@
     },
     "after5_farewell_dain_4_d": {
         "name": "Dain",
-        "text": "...Okay, go. I'll only send you off smiling up to here. I don't have to act tough and hold in tears in front of you, too. *Dain turns and puts the volleyball into the storage bin.*"
+        "text": "...All right, go on already. Seeing you off with a smile stops right here. I don't have to act tough and hold back my tears in front of you too. *Dain turns around and sets the volleyball into the storage bin.*"
     },
     "after5_farewell_dain_5": {
         "name": "{name}",
-        "text": "*With trembling fingertips, Dain presses the Velcro on her knee brace down once more, then walks into the gym without looking back.*"
+        "text": "*With trembling fingertips, Dain presses the Velcro on her knee brace down once more, then walks across the court into the equipment room without looking back.*"
     },
     "after5_farewell_dain_5b": {
         "name": "{name}",
@@ -152,7 +152,7 @@
     "after5_last_chance_seo_aff_check": {},
     "after5_last_chance_2_b": {
         "name": "{name}",
-        "text": "*In the end I slide the phone deep back into my pocket without turning the screen on. So I won't lose the back about to walk away, I take two long steps to the far side of the fork and call out the name at the top of my voice.*"
+        "text": "*Without even lighting the screen, I shove my phone deep back into my pocket. Refusing to lose Seoyeon's slowing figure ahead, I take two long strides across the fork in the road and call out her name.*"
     },
     "after5_last_chance_2_c": {
         "name": "{name}",
@@ -284,7 +284,7 @@
     },
     "after5_confess_yes": {
         "name": "{name}",
-        "text": "*I pull a deep breath in over the short ones and call the name in the clearest voice in the world.*"
+        "text": "*Drawing a deep breath to steady my racing chest, I look straight into her eyes and speak in a clear, steady voice.*"
     },
     "after5_confess_yes_2": {
         "name": "{name}",
@@ -293,7 +293,7 @@
     "after5_confess_aff_seo": {},
     "after5_confess_react_seo": {
         "name": "Seoyeon",
-        "text": "*Seoyeon stands beside me with her flushed cheeks and starts walking toward the park.* ...That was really mean, saying it this late. Still... now I finally know how you really feel."
+        "text": "*When I take her outstretched right hand and hold it tight, Seoyeon steps up beside me with flushed cheeks and starts walking toward the park.* ...You're really mean, saying it this late. Still, now I finally know how you truly feel."
     },
     "after5_confess_react_seo_low": {
         "name": "Seoyeon",
@@ -363,7 +363,7 @@
     },
     "after5_confess_no": {
         "name": "{name}",
-        "text": "*I can't bring myself to part my lips. I only turn off the phone screen and keep my mouth shut.*"
+        "text": "*Unable to force the decisive words past my lips, I lower my head and press my mouth shut.*"
     },
     "after5_confess_no_2": {
         "name": "{name}",
@@ -371,7 +371,7 @@
     },
     "after5_confess_no_2b": {
         "name": "{name}",
-        "text": "*I buried the name I never managed to call, turned around alone, and headed home.*"
+        "text": "*Burying the confession that had risen to my throat deep in my chest, I turned my back on the fading footsteps and walked home alone.*"
     },
     "after5_set_harem": {
         "name": "{name}",
@@ -406,7 +406,7 @@
     "after5_co_tempter_branch": {},
     "after5_co_start": {
         "name": "{name}",
-        "text": "*In the after-school hall, the festival crowd gone, the people from this morning's suffocating face-to-face are gathered again.*"
+        "text": "*Standing in the quiet after-school hallway now emptied of the festival crowd, I picture the faces from this morning's tense confrontation. Before going home, there are still conversations I have to face.*"
     },
     "after5_co_seo_1": {
         "name": "Seoyeon",
@@ -426,7 +426,7 @@
     },
     "after5_co_dain_1": {
         "name": "Dain",
-        "text": "*Dain shoves the volleyball into the deepest corner of the storage bin.* I took your name off the afternoon event partner list."
+        "text": "*Dain shoves the volleyball into the deepest corner of the storage bin.* I crossed your name off the event partner list I'd written down this morning."
     },
     "after5_co_dain_2": {
         "name": "Dain",
@@ -529,7 +529,7 @@
     "after5_last_chance_seo_history_check": {},
     "after5_last_chance_seo_postponed": {
         "name": "Seoyeon",
-        "text": "*Across the sunset-lit fork, Seoyeon slows, then stops when she senses me coming, and murmurs.* What we couldn't finish on the rooftop last night... today, tell me all of it."
+        "text": "*Across the sunset-lit fork, Seoyeon slows her pace and, sensing me behind her, lets a quiet murmur slip under her breath.* What we couldn't finish saying on the rooftop last night... let me hear all of it today."
     },
     "after5_last_chance_seo_tentative": {
         "name": "Seoyeon",
@@ -626,7 +626,7 @@
     },
     "day5_haeun_guilt_1": {
         "name": "Haeun",
-        "text": "*At the end of the hallway, Haeun stands gripping her bag strap.* I wasn't lying when I said I was rooting for you, sunbae. But now I can't look Seoyeon in the face."
+        "text": "*At the end of the hallway, Haeun stands gripping her bag strap.* When I said I was cheering you on, senior, I wasn't lying. But right now I can't look Seoyeon sunbae—or the person who's been waiting for you—straight in the eye."
     },
     "day5_haeun_guilt_choice": {
         "name": "Haeun",
@@ -668,11 +668,11 @@
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*Haeun sits next to me on the bench and takes the end of my sleeve.* I really like you too, sunbae. Let's start dating today. Tomorrow morning, can I ask to see you just because I miss you, without needing an excuse?"
+        "text": "*When I confess first that I like her, Haeun's eyes redden; she scoots close beside me on the bench and holds tight to the edge of my sleeve.* I really like you too, sunbae. Let's start dating today. Tomorrow morning, I don't need an excuse like a box of paperwork—can I ask to see you just because I miss you?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",
-        "text": "*Haeun smiles, bright, and glances once toward the school roof in the sunset.* I'll go see Seoyeon tomorrow, on my own, and greet her properly. I won't avoid how sorry I am. I'll carry it, and from now on I want to stand beside you, senior, with my head up."
+        "text": "*Smiling brightly, Haeun glances back once toward the school roof glowing in the sunset.* Tomorrow I'll go see Seoyeon sunbae on my own and tell her properly. I'll carry my share of how sorry I am, and from now on I want to stand proudly beside you, senior."
     },
     "day5_ending_haeun_apology_yuna": {
         "name": "Haeun",
@@ -692,7 +692,7 @@
     },
     "day5_ending_haeun_epilogue": {
         "name": "Haeun",
-        "text": "*One afternoon, after Haeun has graduated from high school and become an adult, I enter the café. She waves happily from a seat by the window.* Senior, I got here first today and saved our seats! I waited so we could choose the menu together. What should we drink today?"
+        "text": "*One spring afternoon after Haeun has graduated from high school and become an adult too, I push open the café door to find her waving happily from a window seat, a thin silver bracelet glinting at her wrist.* Senior, since today's a date and not an errand, I got here a little early and saved our spot! I waited to pick from the menu together, too. What should we drink today?"
     },
     "day5_haeun_offer_seoyeon": {
         "name": "Haeun",
@@ -700,7 +700,7 @@
     },
     "day5_haeun_leave_seoyeon": {
         "name": "{name}",
-        "text": "*I contact Seoyeon to say I have something I need to tell her, and we face each other by the hall window. Haeun, who followed, stops carefully half a step beside me.* Sorry. The person I want to know more deeply from now on is Haeun. I'm going with Haeun today. I wanted to say it myself, without hiding it."
+        "text": "*I message Seoyeon that I have something important to tell her, and we face each other by the hallway window. Haeun, following behind, stops carefully half a step beside me.* I'm sorry. The person I want to get to know more deeply from now on is Haeun. I'm leaving with her today. I wanted you to hear it straight from me, not from anyone else."
     },
     "day5_haeun_offer_yuna": {
         "name": "Haeun",
@@ -724,7 +724,7 @@
     },
     "day5_haeun_leave_teacher": {
         "name": "{name}",
-        "text": "*I send word to the homeroom teacher that I have something to say, and we face each other by the hall window. Haeun stops carefully beside me.* Teacher, I want to see more of Haeun from now on. I'm going with Haeun today. I wanted to tell you myself, too, without avoiding it."
+        "text": "*I let my homeroom teacher know I have something to tell her, and we meet by the hallway window. Haeun stops carefully beside me.* Teacher, I want to spend more time getting to know Haeun from now on. I'm heading out with her today. Rather than making excuses, I wanted to tell you myself in person."
     },
     "day5_haeun_offer_nurse": {
         "name": "Haeun",
@@ -760,7 +760,7 @@
     },
     "day5_haeun_switch_yuna_group_talk": {
         "name": "Yuna",
-        "text": "Don't look away. Look me in the eye and tell me.",
+        "text": "Don't turn your head away. Look me straight in the eye and tell me.",
         "context": "Day 5 after school. The protagonist, Yuna and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. Yuna had the highest affinity before this choice. Haeun +20 and Yuna -30 are already applied.",
         "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
         "groupLocation": "Hallway window",
@@ -776,7 +776,7 @@
     },
     "day5_haeun_switch_dain_group_talk": {
         "name": "Dain",
-        "text": "All right. I'm right here listening, so don't hide why you decided that. Tell me all of it.",
+        "text": "Fine, I'm standing right here listening, so tell me straight why you decided that—every bit of it.",
         "context": "Day 5 after school. The protagonist, Dain and Haeun face each other in the hallway. The protagonist just said: “Haeun is the person I want to get closer to. I’m leaving with her today. I wanted to tell you in person.” Haeun was explicitly chosen, but they have not agreed to date. Dain had the highest affinity before this choice. Haeun +20 and Dain -30 are already applied.",
         "personality": "The three discuss the declaration just made. Haeun welcomes being chosen but has not agreed to date yet. The other character expresses hurt and questions in her own voice. Existing relationships and promises must come from actual memory. School staff are not portrayed as having dated a student. The entry changes, Haeun +20 and the other character -30, have already been applied; judge only new conduct this turn.",
         "groupLocation": "Hallway window",

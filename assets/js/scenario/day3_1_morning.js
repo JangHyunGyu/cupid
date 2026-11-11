@@ -913,7 +913,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
     "morning3_date_dain_accept": {
         "background": "assets/images/background/room_school.png",
         "character": "assets/images/characters/dain_laugh.png",
-        "next": "morning3_date_dain_decline_narr"
+        "next": "morning3_date_yuna_1"
     },
     "morning3_date_dain_decline": {
         "background": "assets/images/background/room_school.png",

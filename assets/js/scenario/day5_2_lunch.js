@@ -1417,13 +1417,11 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     },
     "tour_dain_1": {
         "background": "assets/images/background/gym.png",
-        "backgroundVariant": "lights-off",
         "character": null,
         "next": "tour_dain_affinity_check"
     },
     "tour_dain_1b": {
         "background": "assets/images/background/gym.png",
-        "backgroundVariant": "lights-off",
         "character": null,
         "next": "tour_dain_affinity_check"
     },

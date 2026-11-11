@@ -11,7 +11,7 @@
     "day4_adult_nurse_student_rank": {},
     "day4_teacher_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*I stop at the entrance to the rooftop stairs on my way to the school gate. Seoyeon comes over from where she stood alone and catches my sleeve. Usually the first to speak, she has to steady her breathing before she can start.* Do you have to go home right now? I never thought I'd ask you for this. Couldn't you stay with me a little longer tonight?",
+        "text": "*My steps toward the school gate stop in front of the main building’s entrance stairs. Standing beneath a streetlight, Seoyeon walks up, catches my sleeve, and takes a breath before speaking.* Do you have to go straight home right now? I never thought I’d ask something like this, either. Could you stay with me just a little longer tonight?",
         "choices": [
             "Go straight home and check in",
             "Follow Seoyeon to the rooftop and take her hand",
@@ -21,7 +21,7 @@
     },
     "day4_teacher_dain_counteroffer": {
         "name": "Dain",
-        "text": "*On the way out through the school gate, Dain waves to me from the steps outside the dark gym. Sitting on the edge of a bench, she stops adjusting her knee brace as I approach.* Do you have to head home right now? Could you sit beside me and talk for a bit, instead of doing sports today? Trying to keep someone here isn't my style… but right now, I don't want to let you go.",
+        "text": "*Along the path out to the gate, Dain waves from the steps of the darkened gym. Sitting on the edge of a bench fiddling with her knee brace, she stills her hands as I walk up.* Do you have to head home right now? Instead of working out today, could you just sit beside me and talk for a bit? Holding people back isn’t my style at all. Right now, though, I really don’t want to let you go.",
         "choices": [
             "Go straight home and check in",
             "Enter the gym and accept Dain's request",
@@ -41,7 +41,7 @@
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*I stop at the entrance to the rooftop stairs on my way to the school gate. Seoyeon comes over from where she stood alone and catches my sleeve. Usually the first to speak, she has to steady her breathing before she can start.* Do you have to go home right now? I never thought I'd ask you for this. Couldn't you stay with me a little longer tonight?",
+        "text": "*My steps toward the school gate stop in front of the main building’s entrance stairs. Standing beneath a streetlight, Seoyeon walks up, catches my sleeve, and takes a breath before speaking.* Do you have to go straight home right now? I never thought I’d ask something like this, either. Could you stay with me just a little longer tonight?",
         "choices": [
             "Go straight home and check in",
             "Follow Seoyeon to the rooftop and take her hand",
@@ -51,7 +51,7 @@
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
-        "text": "*On the way out through the school gate, Dain waves to me from the steps outside the dark gym. Sitting on the edge of a bench, she stops adjusting her knee brace as I approach.* Do you have to head home right now? Could you sit beside me and talk for a bit, instead of doing sports today? Trying to keep someone here isn't my style… but right now, I don't want to let you go.",
+        "text": "*Along the path out to the gate, Dain waves from the steps of the darkened gym. Sitting on the edge of a bench fiddling with her knee brace, she stills her hands as I walk up.* Do you have to head home right now? Instead of working out today, could you just sit beside me and talk for a bit? Holding people back isn’t my style at all. Right now, though, I really don’t want to let you go.",
         "choices": [
             "Go straight home and check in",
             "Enter the gym and accept Dain's request",
@@ -100,11 +100,11 @@
     },
     "wall_seo_pre_high_1": {
         "name": "Seoyeon",
-        "text": "Sorry for the hour. Tonight, can I let myself sound a little weak in front of you?"
+        "text": "Sorry to call this late. I’m at the park bench where we met earlier—could you come out for a bit right now? Would it be okay if I sounded a little weak in front of you tonight?"
     },
     "wall_seo_pre_high_2": {
         "name": "{name}",
-        "text": "Of course. If it's hard to say over the phone, take your time. I'm listening to all of it. *Through the receiver, Seoyeon's faintly trembling breath tickles my ear.*"
+        "text": "Of course. I’m heading right out, so wait for me on the bench. *Through the receiver, I hear Seoyeon’s breath trembling faintly.*"
     },
     "wall_seo_pre_low_1": {
         "name": "{name}",
@@ -140,7 +140,7 @@
     },
     "wall_seo_6": {
         "name": "{name}",
-        "text": "*I sit close, right beside Seoyeon. Through the lenses, where the streetlight stretches long, she stares down at nothing but the dark paving stones.*"
+        "text": "*I sit down right beside Seoyeon. Behind glasses catching the glow of the streetlight, she keeps her eyes fixed on the dark paving stones.*"
     },
     "wall_seo_7": {
         "name": "Seoyeon",
@@ -148,7 +148,7 @@
     },
     "wall_seo_7_b": {
         "name": "{name}",
-        "text": "What did your mom say, to leave you like this? It didn't seem like an ordinary check-in. *Seoyeon laces her cold hands together in her lap.*"
+        "text": "What did your mom say? Did she sound pretty upset on the phone? *Seoyeon laces her cold fingers together in her lap.*"
     },
     "wall_seo_8": {
         "name": "Seoyeon",
@@ -156,7 +156,7 @@
     },
     "wall_seo_9": {
         "name": "Seoyeon",
-        "text": "*Seoyeon lifts one corner of her mouth, as if mocking herself, then lets it fall.*"
+        "text": "*Seoyeon lifts one corner of her mouth for a brief instant, then lets it drop.*"
     },
     "wall_seo_9_b": {
         "name": "Seoyeon",
@@ -168,7 +168,7 @@
     },
     "wall_seo_9_d": {
         "name": "{name}",
-        "text": "Looking only at you smiling on the outside, I had no idea. So home wasn't even a place you could rest? *A dry leaf rolls up and stops at the tip of Seoyeon's shoe.*"
+        "text": "I had no idea. Does that mean you haven’t even been able to rest easy at home? *A dry leaf tumbles across the ground and stops at the tip of Seoyeon’s shoe.*"
     },
     "wall_seo_10": {
         "name": "Seoyeon",
@@ -180,7 +180,7 @@
     },
     "wall_seo_11_b": {
         "name": "{name}",
-        "text": "When on earth did you hear that? She put words even a grown adult would struggle to carry on you, like a burden? *Seoyeon's tightly closed lips tremble as she swallows, dry.*"
+        "text": "When on earth did she say something like that to you? How did you carry all of that by yourself? *Seoyeon’s closed lips tremble faintly as she swallows dryly.*"
     },
     "wall_seo_12": {
         "name": "Seoyeon",
@@ -192,7 +192,7 @@
     },
     "wall_seo_14": {
         "name": "Seoyeon",
-        "text": "Whenever a teacher or the kids praised me for being perfect, I wasn't glad. The first thing I counted was how many times I'd practiced smiling in the mirror that morning."
+        "text": "Every time teachers or classmates praised me for being flawless, I didn’t feel happy—instead I silently counted how many times I’d practiced smiling in front of the mirror that morning."
     },
     "wall_seo_14_b": {
         "name": "Seoyeon",
@@ -200,15 +200,15 @@
     },
     "wall_seo_14_c": {
         "name": "Seoyeon",
-        "text": "In front of you, that face from the mirror keeps falling apart. Wait. I was going to say it all without crying, but I can't breathe. *On her lap, Seoyeon's locked fingertips go white, and one thick tear drops from under her glasses and wets the back of my hand.*"
+        "text": "In front of you, that mirror face keeps falling apart. Hold on—I tried to finish saying this without crying, my throat’s just closing up. *Seoyeon’s clasped knuckles turn white, and a heavy tear drops from beneath her glasses onto the back of my hand.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
-        "text": "*Once they break, the tears run soundlessly down Seoyeon's pale cheek. Makeup smears on the back of the hand that wiped her eyes, and through wet glasses she looks up at me, pleading.*"
+        "text": "*Once the tears break loose, they stream silently down Seoyeon’s cheeks. Dark makeup smudges onto the back of the hand she wipes her eyes with as she looks up at me through misted glasses.*"
     },
     "wall_seo_hug_choice": {
         "name": "Seoyeon",
-        "text": "*With the back of her hand, still marked by smeared makeup, dropped on her knee, Seoyeon's thin shoulders hitch with every short breath.*",
+        "text": "*Resting her makeup-smudged hand back on her knee, Seoyeon’s slender shoulders tremble with every shallow breath.*",
         "choices": [
             "Hold her",
             "Hold out a hand",
@@ -218,7 +218,7 @@
     },
     "wall_seo_hug_1": {
         "name": "{name}",
-        "text": "In front of me, you don't have to force a smile. You don't have to say anything. Just lean on me. *I open both arms and pull Seoyeon's shoulders and back in close. As if she had been waiting, she buries her hot face between my neck and shoulder. Through the thin shirt, her hot tears and body heat spread fast.*"
+        "text": "You don’t have to force a smile in front of me. You don’t have to say anything either—just lean on me. *When I open my arms and pull Seoyeon’s shoulders and back close, she buries her forehead beside my neck. Damp warmth spreads quickly through my thin shirt.*"
     },
     "wall_seo_hug_2_b": {
         "name": "Seoyeon",
@@ -230,7 +230,7 @@
     },
     "wall_seo_hug_3": {
         "name": "Seoyeon",
-        "text": "*Strength goes into the fingers Seoyeon has gripped into my back, and a hot breath mixed with a sweet scent reaches my collarbone and the nape of my neck, then scatters.*"
+        "text": "*Seoyeon’s fingers tighten on the fabric at my back, and her shaky exhale brushes near my collarbone before fading.*"
     },
     "wall_seo_pinky_1": {
         "name": "{name}",
@@ -238,7 +238,7 @@
     },
     "wall_seo_pinky_2": {
         "name": "{name}",
-        "text": "If a night comes that chokes you like tonight, call me, whatever the hour. I won't ask why. I'll come running."
+        "text": "Whenever a heavy night like tonight comes around, call me no matter how late it is. I won’t ask a single question—I’ll come right out."
     },
     "wall_seo_pinky_3": {
         "name": "Seoyeon",
@@ -287,7 +287,7 @@
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
-        "text": "I was in a rush and rubbed it with my bare hand, so it smeared into a mess. I wanted to show only a pretty face, at least to you. *Seoyeon looks down at the makeup on the back of her hand and bites her lip, shy.*"
+        "text": "Rubbing at it with my bare hand in a hurry smudged everything. You were the one person I wanted to look put-together around. *Looking down at the stain on the back of her hand, Seoyeon lightly bites her lower lip.*"
     },
     "wall_seo_after_line_3": {
         "name": "{name}",
@@ -295,7 +295,7 @@
     },
     "wall_seo_after_line_4": {
         "name": "Seoyeon",
-        "text": "Thanks. My face must be a mess right now, but strangely I don't want to turn away and hide in front of you. *Seoyeon takes the wet wipe and gently holds my wrist.*"
+        "text": "Thank you. My face must look a mess right now, yet weirdly enough, I don’t feel like turning away or hiding around you. *As Seoyeon takes the wet wipe, she lightly catches my wrist.*"
     },
     "wall_seo_after_line_4_b": {
         "name": "Seoyeon",
@@ -325,11 +325,11 @@
     },
     "wall_seo_glimpse_1": {
         "name": "{name}",
-        "text": "*On the way to the park where Seoyeon is waiting, keeping the 10 PM meeting. Under the light at the dark gym's emergency door, I see Dain standing unsteady, touching the tape on her knee.*"
+        "text": "*Walking along the school wall shortcut toward the park for my 10 PM plans, I spot Dain standing alone beneath the gym’s emergency light beyond the closed iron fence, adjusting the taping on her knee.*"
     },
     "wall_seo_glimpse_2": {
         "name": "Dain",
-        "text": "Don't worry, I'm not going to push myself practicing this late. *Dain takes her hand off her knee. She tries to smile, then presses her lips together. The hand she raised to stop me stays in the air.* Just… could you hold me for a moment tonight? It's too hard to keep pretending I'm fine on my own. I hate that it sounds like I'm holding you back, but I hate letting you go even more.",
+        "text": "Don’t worry, I’m not pushing myself to practice at this hour. *Dain takes her hand off her knee and starts to smile, then presses her lips shut, unable to lower the hand that called me over.* Tonight, could you just hold me for a moment? Pretending I’m fine all by myself is getting too hard to bear. I hate sounding like I’m holding you back, yet letting you walk past feels even worse.",
         "choices": [
             "Keep the promise and go to Seoyeon at the park",
             "Enter the gym and stay with Dain",
@@ -387,7 +387,7 @@
     },
     "wall_dain_4": {
         "name": "{name}",
-        "text": "*The gym at night, only the green emergency lights faintly on. Dain stands alone in the middle of the empty court, bouncing a volleyball on the floor. When she sees me she forces the corners of her mouth up, but both shoulders are locked stiff.*"
+        "text": "*Inside the nighttime gym lit only by green exit signs, Dain stands in the middle of the empty court bouncing a volleyball against the floor. She lifts the corners of her mouth when she spots me, yet both shoulders stay stiff.*"
     },
     "wall_dain_5": {
         "name": "Dain",
@@ -423,7 +423,7 @@
     },
     "wall_dain_11": {
         "name": "{name}",
-        "text": "*She can't finish the sentence. The knuckles gripping her right knee brace are white, not a trace of blood in them.*"
+        "text": "*Swallowing the rest of her words, Dain grips her right knee brace so hard the tendons stand out pale across the back of her hand.*"
     },
     "wall_dain_12": {
         "name": "{name}",
@@ -439,7 +439,7 @@
     },
     "wall_dain_13": {
         "name": "{name}",
-        "text": "*I kneel and sit beside Dain, who is sitting on the wooden floor. When she bites her lip and goes quiet, only the hum of the emergency lights wraps the two of us.*"
+        "text": "*I lower myself onto the gym floor beside Dain where she’s sunk down. When she presses her lips shut, only the low hum of the emergency light overhead echoes through the gym.*"
     },
     "wall_dain_14": {
         "name": "Dain",
@@ -455,7 +455,7 @@
     },
     "wall_dain_16": {
         "name": "Dain",
-        "text": "*The corners of her mouth, always forced up, slide down, and Dain's unsteady gaze sticks on a white line on the court floor.*"
+        "text": "*Every trace of the smile she was holding onto vanishes from her face, and Dain’s gaze stops on the white court line.*"
     },
     "wall_dain_16_b": {
         "name": "Dain",
@@ -471,11 +471,11 @@
     },
     "wall_dain_18_b": {
         "name": "Dain",
-        "text": "It really hit me, hard enough to stop my breath, when I took the knee brace and the uniform out of my gym locker with my own hands."
+        "text": "When it really hit me that it was over was the day I emptied my jersey and knee pads out of my gym locker with my own hands."
     },
     "wall_dain_18_c": {
         "name": "{name}",
-        "text": "Have you told your parents or your coach that the pain has started again? Have you been hiding it and putting up with it alone all this time? *Dain's nail scrapes the grain of the wooden floor.*"
+        "text": "Did you tell your parents or your coach that the pain came back? Have you been holding it in all by yourself until now? *Dain’s fingernails scratch against the grain of the wooden floor.*"
     },
     "wall_dain_18_d": {
         "name": "Dain",
@@ -491,11 +491,11 @@
     },
     "wall_dain_20": {
         "name": "Dain",
-        "text": "Every time kids at school laughed and said, \"Dain's always so full of energy!\" my breath jammed right under my ribs."
+        "text": "Every time kids at school laughed and said, “Dain’s always bursting with energy!” my chest knotted up tight."
     },
     "wall_dain_20_b": {
         "name": "Dain",
-        "text": "No matter how deep I breathed, it felt like the air never reached the bottom of my lungs."
+        "text": "Because I’m the only one frozen in place while the whole world keeps looking for the old me without knowing a thing."
     },
     "wall_dain_21": {
         "name": "Dain",
@@ -503,7 +503,7 @@
     },
     "wall_dain_22": {
         "name": "Dain",
-        "text": "If I can't play volleyball anymore, and then I cry in front of you because it hurts, there's really nothing left of me."
+        "text": "Now that I can’t even play volleyball anymore, if I break down crying in pain in front of you too, I really won’t have anything left."
     },
     "wall_dain_22_b": {
         "name": "{name}",
@@ -520,7 +520,7 @@
     },
     "wall_dain_newdream_1": {
         "name": "{name}",
-        "text": "*When I stroke Dain's back and shoulders without a word, the toe of her sneaker, scraping the court floor, slowly stops.*"
+        "text": "*As I rub Dain’s back and shoulders without a word, the tip of her sneaker stops scraping the court floor.*"
     },
     "wall_dain_newdream_2_b": {
         "name": "Dain",
@@ -544,11 +544,11 @@
     },
     "wall_dain_newdream_7": {
         "name": "Dain",
-        "text": "Until I find that path, will you hold my hand beside me, like now?"
+        "text": "Until I find that new path, will you stay beside me and hold my hand like this?"
     },
     "wall_dain_newdream_8": {
         "name": "{name}",
-        "text": "*When I nod and squeeze her hand back, Dain turns her phone on with the other hand and searches for a rehab hospital. The volleyball sits quietly outside the court line.*"
+        "text": "*When I nod and squeeze her hand back, Dain switches on her phone with her free hand and searches for a rehab clinic. The volleyball rests quietly outside the court line.*"
     },
     "wall_dain_cry_1": {
         "name": "Dain",
@@ -604,11 +604,11 @@
     },
     "wall_dain_lastspike_5": {
         "name": "Dain",
-        "text": "The moment I wake up tomorrow morning, I'll tell Mom and Coach the truth about how my knee is now."
+        "text": "First thing tomorrow morning, I’ll tell my mom and my coach honestly that my knee started hurting again."
     },
     "wall_dain_lastspike_6": {
         "name": "Dain",
-        "text": "Monday, when I go to the hospital, I'm scared. Will you hold my hand and come with me?"
+        "text": "Honestly, I’m a little scared to go to the clinic on Monday—will you hold my hand and come with me?"
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
@@ -620,15 +620,15 @@
     },
     "wall_dain_mention_1": {
         "name": "Dain",
-        "text": "Hey. You know what Seoyeon said when she ran into me earlier? Not one word. She just looked me in the eyes and stayed quiet."
+        "text": "You know, I briefly crossed paths with Seoyeon near school earlier today. Without saying a word, she just looked quietly at my knee brace and then my face."
     },
     "wall_dain_mention_2": {
         "name": "Dain",
-        "text": "If she'd gotten mad and called me out, at least we could fight it out. When she says nothing like that, it feels like I'm the only bad one."
+        "text": "If she’d asked straight out whether I was okay, I could’ve laughed it off loud as usual—meeting her eyes in silence made me feel like she’d seen right through everything."
     },
     "wall_dain_mention_3": {
         "name": "Dain",
-        "text": "Look at me, dumping even this ugly stuff on you. Let's just walk. We can go slow so I spare my knee, right? *Dain, stopped for a moment, steps in close beside me and matches my stride.*"
+        "text": "Man, I’m really rambling about everything tonight. Mind if we walk a little slower so I can go easy on my knee? *Slowing for a moment, Dain steps right up beside me and matches my stride.*"
     },
     "wall_dain_skin_check": {},
     "wall_dain_skin70_1": {
@@ -673,7 +673,7 @@
     },
     "wall_dain_glimpse_4_c": {
         "name": "Yuna",
-        "text": "The only person who used to see me disappeared without a word. If I'm left alone again tonight, I think I'll go back into the dark of that day. I don't care that you were with Dain this afternoon. Come be next to me now.",
+        "text": "Someone who once stood by me vanished without a word of goodbye. If I’m left alone again tonight, I feel like I’ll end up waiting endlessly just like back then. I don’t care if you spent the day with Dain—right now, please come stay by my side.",
         "choices": [
             "Reply to Dain and continue to the gym",
             "Go back to the school gate and stay with Yuna",
@@ -687,7 +687,7 @@
     },
     "wall_dain_seo_tempt_2": {
         "name": "Seoyeon",
-        "text": "If I go home like this, I'll have to put the smile on in the mirror again. Just for tonight, let me breathe as Seoyeon in front of you, not the perfect student council president. Come up to the roof with me, and I won't let go of your hand tonight.",
+        "text": "If I go home like this right now, I’ll just have to practice my smile in front of the mirror again. Just for tonight, let me breathe as plain Seoyeon in front of you instead of the flawless student council president. Come up to the roof with me and I won’t let go of your hand all night.",
         "choices": [
             "Reply to Dain and continue to the gym",
             "Follow Seoyeon to the roof and take her hand",
@@ -705,10 +705,13 @@
     },
     "wall_yuna_pre_high_1": {
         "name": "Yuna",
-        "text": "Tonight I won't hide behind a paper note. I'll say it myself."
+        "text": "I’m outside the school’s back gate. Tonight I won’t hide behind paper notes—I’ll tell you in my own words, so please come now."
     },
     "wall_yuna_pre_high_2": {},
-    "wall_yuna_pre_low_1": {},
+    "wall_yuna_pre_low_1": {
+        "name": "Yuna",
+        "text": "*10:00 PM sharp. Lighting up my dark room, a short message from Yuna arrives.* I’m outside the school’s back gate. Could you come out for a bit right now?"
+    },
     "wall_yuna_pre_low_2": {},
     "wall_yuna_2": {
         "name": "{name}",
@@ -748,7 +751,7 @@
     },
     "wall_yuna_11": {
         "name": "Yuna",
-        "text": "It was the same after I started high school, and that senior was the first. He saw my notebook and said, \"Yuna, what you write is really good.\" It was the first time I felt I existed."
+        "text": "High school was no different until that senior came along. Looking at my notebook, they told me, “Yuna, I really loved what you wrote.” It was the very first time my voice had ever reached someone."
     },
     "wall_yuna_12": {
         "name": "Yuna",
@@ -756,7 +759,7 @@
     },
     "wall_yuna_13": {
         "name": "Yuna",
-        "text": "Then one morning I came in and he'd transferred without a sound. No goodbye to my face. He just left this one letter between the pages."
+        "text": "Then one morning I came to school and found they’d transferred away without a sound. Not a single word of goodbye—just this one letter tucked between the pages."
     },
     "wall_yuna_14": {
         "name": "Yuna",
@@ -780,11 +783,11 @@
     },
     "wall_yuna_14_f": {
         "name": "Yuna",
-        "text": "The gentle air around you was too much like that senior. So it wasn't a relief. It scared me until I couldn't breathe."
+        "text": "The quiet way you sat beside me reminded me so much of that senior. Instead of making me glad, it scared me right away."
     },
     "wall_yuna_14_g": {
         "name": "Yuna",
-        "text": "If I let myself care and got close again, and then one day you disappeared too, I thought I'd really break that time."
+        "text": "Because if I opened my heart and grew close again, only for you to vanish without warning someday, I didn’t think I’d survive it this time."
     },
     "wall_yuna_14_h": {
         "name": "{name}",
@@ -817,15 +820,15 @@
     },
     "wall_yuna_moved_2": {
         "name": "Yuna",
-        "text": "But not now. There was never one moment when you were just a stand-in filling someone else's empty place."
+        "text": "It’s not like that now, though. Never once have I kept you beside me as a stand-in for someone else."
     },
     "wall_yuna_moved_3": {
         "name": "{name}",
-        "text": "Then right now, in front of you, who are you looking at if it isn't that senior? *Yuna lets go of the old letter and steps closer, meeting my eyes.*"
+        "text": "Then right now, instead of that senior, who do you see in front of you? *Yuna lets go of the worn letter, takes a step closer, and meets my eyes.*"
     },
     "wall_yuna_moved_4": {
         "name": "Yuna",
-        "text": "Right now I only see you. I'm looking at you. Not anyone else."
+        "text": "Only you. Just you, standing right here in front of me."
     },
     "wall_yuna_moved_5": {
         "name": "Yuna",
@@ -833,7 +836,7 @@
     },
     "wall_yuna_moved_5_b": {
         "name": "Yuna",
-        "text": "*She lets go of the hand gripping her own sleeve, and Yuna closes the last one step left between the narrow shelf and me, coming all the way in.*"
+        "text": "*Letting go of her own sleeve, Yuna closes the last step left between the bookshelves and me.*"
     },
     "wall_yuna_skin_check": {},
     "wall_yuna_skin70_1": {
@@ -854,7 +857,7 @@
     },
     "wall_yuna_skin60_2": {
         "name": "Yuna",
-        "text": "Can I rest my forehead on your broad back, just for a minute? If I can feel you breathing, I think I'll be all right."
+        "text": "May I rest my forehead against your back for just a moment? Leaning quietly like this feels like it’ll put my heart at ease."
     },
     "wall_yuna_sub_1": {
         "name": "Yuna",
@@ -894,7 +897,7 @@
     },
     "wall_yuna_glimpse_3_b": {
         "name": "Seoyeon",
-        "text": "If I go home like this, I'll have to put the smile on in the mirror again. Just for tonight, let me be Seoyeon in front of you, not the student council president. Come up to the roof with me, and I won't let go of your hand.",
+        "text": "If I go home like this right now, I’ll just have to practice my smile in front of the mirror all over again. Just for tonight, let me be plain Seoyeon in front of you instead of the student council president. Come up to the roof with me and I won’t let go of your hand.",
         "choices": [
             "Reply to Yuna and continue to the school back gate",
             "Follow Seoyeon to the roof and take her hand",
@@ -912,7 +915,7 @@
     },
     "wall_yuna_dain_tempt_2": {
         "name": "Dain",
-        "text": "Don't worry. I won't force practice today. Just... come here for a minute and hold me. Tonight it's too hard to keep pretending I'm okay alone.",
+        "text": "Don’t worry, I’m not overdoing practice today. Just come here and hold me for a moment. Tonight it’s way too hard to keep pretending I’m fine on my own.",
         "choices": [
             "Reply to Yuna and continue to the school back gate",
             "Enter the gym and stay with Dain",
@@ -946,7 +949,7 @@
     },
     "day4_night_regret_msg": {
         "name": "{name}",
-        "text": "*In the dark room, the phone screen lights up cold. Beneath a one-line message that swallowed even the resentment, only a late read receipt remains.*"
+        "text": "*Inside my dark room, my phone screen lights up stark white. Next to that clipped single-line message, only the blank space where the unread number vanished remains.*"
     },
     "day4_night_regret_reply": {
         "name": "{name}",
@@ -1012,7 +1015,7 @@
     },
     "day4_night_sleep": {
         "name": "{name}",
-        "text": "*I set the Sunday morning alarm and turn off the desk lamp. Only the sentence I never sent remains, like an afterimage in the dark.*"
+        "text": "*Setting my alarm for Sunday morning, I switch off the bedside lamp. Even with my eyes closed, the voices we traded today linger clearly in the dark.*"
     },
     "day4_final": {
         "name": "{name}",
@@ -1032,7 +1035,7 @@
     },
     "forced_violation_day4_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon cuts me off in one stroke.* A misunderstanding? From the moment I clearly said no, it can't be a misunderstanding. Stop making excuses."
+        "text": "*Seoyeon cuts me off flatly.* A misunderstanding? The moment I clearly said no, it stopped being any kind of misunderstanding. Don’t make any more excuses."
     },
     "forced_violation_day4_after_yuna": {
         "name": "Yuna",
@@ -1068,7 +1071,7 @@
     },
     "forced_violation_day4_after_teacher": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher speaks with no waver in her voice at all.* What you just did clearly crossed the line between teacher and student. Don't come any closer. I'll handle this through the official process, by school rules.",
+        "text": "*My homeroom teacher’s expression hardens as she steps back.* What you just did crossed the line between teacher and student. Don’t take another step closer. I won’t let today slide—I’m reporting this formally to the school.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1076,7 +1079,7 @@
     },
     "forced_violation_day4_teacher_apologize": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher steadies her breath, cold, and speaks.* I heard the apology. But the official process will go ahead as planned. Don't say any more. Go back."
+        "text": "*My homeroom teacher takes a short breath and speaks firmly.* I heard your apology. Even so, school procedures will move forward by the book. Say nothing further and go home right now."
     },
     "forced_violation_day4_teacher_excuse": {
         "name": "Homeroom Teacher",
@@ -1084,7 +1087,7 @@
     },
     "forced_violation_day4_after_nurse": {
         "name": "School Nurse",
-        "text": "*The school nurse's usual ease and playfulness vanish completely from her face.* Step back right now and keep your distance. I'll put everything you just did on the official record and tell the person in charge.",
+        "text": "*Every trace of her usual warmth vanishes from the school nurse’s face.* Step back right now. I’m putting what you just did straight on record and notifying the school immediately.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -1092,7 +1095,7 @@
     },
     "forced_violation_day4_nurse_apologize": {
         "name": "School Nurse",
-        "text": "*The school nurse pushes her glasses up, cold, and answers.* I'll take the apology. Even so, the counseling record and the school report will go ahead by the rules. Let's end today's talk here."
+        "text": "*Adjusting her glasses with a stern expression, the school nurse replies.* I’ve heard your apology. Still, the record and report will proceed by the book. This conversation ends here."
     },
     "forced_violation_day4_nurse_excuse": {
         "name": "School Nurse",
@@ -1100,7 +1103,7 @@
     },
     "day4_student_return_home": {
         "name": "{name}",
-        "text": "*I finish the night's meeting and walk home with the feeling still in my steps. When the front door closes, only the faint glow of the phone screen remains in the quiet room.*"
+        "text": "*I walk back home through alleys cooled by the night air. Closing the front door behind me, the glow of my phone screen quietly lights up my dark room.*"
     },
     "wall_seo_overpromise_react": {
         "name": "Seoyeon",
@@ -1108,11 +1111,11 @@
     },
     "day4_teacher_checkin": {
         "name": "{name}",
-        "text": "*I leave a reply in the school app to the homeroom teacher's arrival check-in alert for students who stayed at school to prepare for the weekend event.* I've just left for home, and I'll check in as soon as I arrive."
+        "text": "*On the school app, I leave a reply to the evening safe-return notice my homeroom teacher sent to students from today’s weekend club session.* I’m heading straight home now and will check in right when I get back."
     },
     "day4_nurse_checkin": {
         "name": "{name}",
-        "text": "*I leave a reply in the school app to the school nurse's arrival check-in alert for students who stayed at school to prepare for the weekend event.* I've just left for home, and I'll check in as soon as I arrive."
+        "text": "*On the school app, I leave a reply to the evening safe-return notice the school nurse sent to students who helped prepare for the weekend event today.* I’m heading straight home now and will check in right when I get back."
     },
     "day4_adult_return_home": {
         "name": "{name}",
@@ -1135,7 +1138,7 @@
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
         "text": "*She keeps the sweat-soaked front of her jersey pulled down and breathes hot air right in my face.* Put your hand inside my jersey. Don't you want to feel the sweat between my breasts?",
-        "precedingHistory": "*The last ball rolls across the floor. Dain catches her breath, grabs the front of her jersey, and pulls it down. She leans in so close that her sweat-warm breath hits my face.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?",
+        "precedingHistory": "*The volleyball slips from her hand and rolls across the floor. Dain catches her breath, grabs the front of her jersey, and pulls it down. She leans in so close that her sweat-warm breath hits my face.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?",
         "context": "On the fourth night, the protagonist accepted Dain's invitation. The two are alone in the gym. Just now Dain pulled the front of her jersey down, leaned in close, and told them to put a hand inside the jersey and feel the sweat between her breasts. That distance is unchanged. In this scene Dain puts their hand inside the jersey as a blunt joke, then goes further if they respond. What they say and do now can deepen their affection or hurt it.",
         "personality": "Put their hand inside the jersey like a blunt joke, then go further if they respond. She does not hide that she hates losing him to the other promise. Do not ignore a hurting knee. Do not deny that contact."
     },
@@ -1172,11 +1175,11 @@
     "day4_student_visit_teacher_branch": {},
     "day4_student_teacher_checkin": {
         "name": "{name}",
-        "text": "*I reply in the school app to the homeroom teacher's arrival check-in message for students who stayed at school to prepare for the weekend event.* I left straight for home. I'll check in when I arrive."
+        "text": "*Using the school app, I reply to the evening safe-return check my homeroom teacher sent to students who attended today’s weekend club meeting.* I’ve just headed home and will check in once I arrive."
     },
     "day4_student_nurse_checkin": {
         "name": "{name}",
-        "text": "*I reply in the school app to the school nurse's arrival check-in message for students who stayed at school to prepare for the weekend event.* I left straight for home. I'll check in when I arrive."
+        "text": "*Using the school app, I reply to the evening safe-return check the school nurse sent to students who helped with weekend event prep earlier today.* I’ve just headed home and will check in once I arrive."
     },
     "day4_student_both_checkin": {
         "name": "{name}",
@@ -1200,7 +1203,7 @@
     },
     "forced_violation_day4_after_haeun": {
         "name": "Haeun",
-        "text": "*Haeun's face goes white. She takes a step back and clutches her student council bracelet.* Please don't come any closer. I'm calling a teacher right now.",
+        "text": "*Pale-faced, Haeun steps back and clutches her student council wristband.* Don’t come any closer. I’m calling a teacher right now.",
         "choices": [
             "Admit the wrongdoing and keep my distance.",
             "Claim it was a misunderstanding."

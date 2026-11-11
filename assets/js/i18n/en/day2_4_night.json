@@ -38,7 +38,7 @@
     },
     "night2_msg_dain_general_merge": {
         "name": "Seoyeon",
-        "text": "Want to come up to the rooftop at lunch tomorrow? The breeze should be pretty cool again"
+        "text": "Today must have been hectic too, right? Don't stay up too late"
     },
     "night2_msg_seo_general_alt": {
         "name": "Seoyeon",
@@ -73,11 +73,11 @@
     "night2_reply_dain_1": {},
     "night2_reply_dain_2": {
         "name": "Dain",
-        "text": "Wait, don't tell me you're the type who can't handle spicy food?"
+        "text": "Wait, are you secretly weak with spicy food too?!"
     },
     "night2_reply_dain_3": {
         "name": "Dain",
-        "text": "Then tomorrow I'll order the mildest one, to match you."
+        "text": "Alright, next time let's order the mildest flavor! Honestly my mouth catches fire with spicy food too lol"
     },
     "night2_reply_dain_4": {
         "name": "Dain",
@@ -89,7 +89,7 @@
     },
     "night2_reply_dain_react_high": {
         "name": "Dain",
-        "text": "Hey, you really keep making me laugh. You have to come to the gym after school tomorrow too!"
+        "text": "Ugh, talking about tteokbokki at night is making me hungry again lol Make sure you come to the gym after school tomorrow too!"
     },
     "night2_reply_dain_react_default": {
         "name": "Dain",
@@ -97,11 +97,11 @@
     },
     "night2_reply_seo_1": {
         "name": "{name}",
-        "text": "If you call, I'll come anytime"
+        "text": "Whenever you call, I'll come"
     },
     "night2_reply_seo_2": {
         "name": "Seoyeon",
-        "text": "You say things you'll regret later pretty easily"
+        "text": "You make promises you might regret later awfully easily"
     },
     "night2_reply_seo_3": {
         "name": "{name}",
@@ -113,11 +113,11 @@
     },
     "night2_reply_seo_5": {
         "name": "{name}",
-        "text": "*Without adding any further goodbye, Seoyeon ended the conversation right there.*"
+        "text": "*Above the paused chat window, Seoyeon's typing indicator blinks briefly and disappears.*"
     },
     "night2_reply_seo_react_high": {
         "name": "Seoyeon",
-        "text": "Turns out you're quietly good at teasing people. Want to meet on the rooftop at lunch tomorrow?"
+        "text": "I have your promise to come anytime saved right here as proof, so no backing out at lunch tomorrow."
     },
     "night2_reply_seo_react_default": {
         "name": "Seoyeon",
@@ -126,7 +126,7 @@
     "night2_reply_yuna_1": {},
     "night2_reply_yuna_2": {
         "name": "Yuna",
-        "text": "Yeah. Once you've read all of it, I really want to hear what you thought."
+        "text": "Okay. Once you finish the very last page, be sure to tell me what you thought."
     },
     "night2_reply_yuna_3": {
         "name": "{name}",
@@ -135,11 +135,11 @@
     "night2_reply_yuna_4": {},
     "night2_reply_yuna_5": {
         "name": "{name}",
-        "text": "*I open the late-night playlist link Yuna shared. Among the songs listed, a small play icon blinks beside the third track.*"
+        "text": "*I tap the late-night playlist link Yuna sent over. Next to the third track on the list, a tiny play icon blinks.*"
     },
     "night2_reply_yuna_6": {
         "name": "Yuna",
-        "text": "Listen to that song all the way through, to the last note"
+        "text": "Listen to that track until the very last note fades out"
     },
     "night2_reply_yuna_6_b": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "night2_reply_yuna_react_default": {
         "name": "Yuna",
-        "text": "Yeah. Thanks for listening. Sleep well."
+        "text": "You've probably finished listening by now. It's late—good night."
     },
     "night2_dain_freetalk": {
         "name": "Dain",
@@ -205,15 +205,15 @@
     },
     "night2_end_1": {
         "name": "{name}",
-        "text": "*I finish the replies, let out a long breath, and set the phone down beside the pillow.*"
+        "text": "*Wrapping up the chat, I let out a long breath and return to the main messenger list.*"
     },
     "night2_flashback_1": {
         "name": "{name}",
-        "text": "*I go to reply to the other two, and my finger locks. This anxious rush not to disappoint anyone is a feeling I experienced at my old school.*"
+        "text": "*Looking down at the chats I still haven't answered, my thumb freezes over the screen. After typing and deleting over and over, my fingertips grow cold.*"
     },
     "night2_flashback_2": {
         "name": "{name}",
-        "text": "*In the photo album, a spring field-trip photo from 3 months ago appears. Sojeong is smiling next to me, but from the photo taken the next week, Sojeong's desk is pushed back, and the desk with graffiti is cropped out.*"
+        "text": "*Scrolling absently all the way down my photo gallery brings up a spring outing shot from three months ago. Sojeong is smiling beside me, yet starting from the following week's photos her desk is shoved to the back with its scribbled desktop cropped out.*"
     },
     "night2_flashback_3": {
         "name": "{name}",
@@ -233,15 +233,15 @@
     },
     "night2_flashback_9": {
         "name": "{name}",
-        "text": "*I reopen the photo I just closed. I'm smiling straight ahead, while Sojeong beside me is looking at my profile.*"
+        "text": "*Switching back to the gallery, I reopen that spring outing photo from earlier. Beside me smiling straight ahead, Sojeong's eyes are turned toward the side of my face.*"
     },
     "night2_flashback_10": {
         "name": "{name}",
-        "text": "*A heavy feeling settles in a corner of my chest, and in the end, I can't write a reply to the other two.*"
+        "text": "*I pull the messenger screen back up, only for the blinking cursor to hover in place inside the empty input bar.*"
     },
     "night2_end_2": {
         "name": "{name}",
-        "text": "*Three names are stacked side by side on the lock screen. I read the notifications with my eyes only and turn off the screen.*"
+        "text": "*Leaving the unanswered notification badges on the screen, I quietly press the power button and turn the display off.*"
     },
     "night2_end_2_b": {},
     "night2_end_3_b": {
@@ -258,7 +258,7 @@
     },
     "forced_violation_day2_after_seoyeon": {
         "name": "Seoyeon",
-        "text": "*After a long silence, Seoyeon speaks, ice-cold.* Don't think you can pass off what you just did like it never happened. For a while, don't show up in front of me, and don't contact me.",
+        "text": "*After a long silence, Seoyeon's icy reply comes back.* Don't think you can brush off what you just said and did. Stay out of my sight for a while, and don't contact me.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -266,15 +266,15 @@
     },
     "forced_violation_day2_seoyeon_apologize": {
         "name": "Seoyeon",
-        "text": "*Seoyeon's stiff expression doesn't ease at all.* I heard the apology. That doesn't make what you just did disappear. Like I said, don't contact me for a while."
+        "text": "*Seoyeon's tone doesn't soften in the slightest.* I saw your apology. That still doesn't undo what just happened. Like I said, don't contact me for a while."
     },
     "forced_violation_day2_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon cuts me off, cold.* A misunderstanding? From the moment I clearly said no, this can't be written off as a misunderstanding. Don't say any more."
+        "text": "*Seoyeon draws a hard line right away.* A misunderstanding? The moment I clearly told you to stop, it passed anything you could call a misunderstanding. Don't say another word."
     },
     "forced_violation_day2_after_yuna": {
         "name": "Yuna",
-        "text": "*Yuna steps back and steadies her rough breathing.* You knew I didn't want it, and you ignored me all the way. Right now I don't even want to see your face. Don't contact me again.",
+        "text": "*After a long, frozen pause, Yuna's cold reply comes back.* You ignored me to the very end even after I told you to stop. Right now I don't want to exchange a single word with you. Don't contact me again.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -282,15 +282,15 @@
     },
     "forced_violation_day2_yuna_apologize": {
         "name": "Yuna",
-        "text": "*After a long silence, Yuna answers, cold.* Saying sorry doesn't make what just happened disappear. Stop now."
+        "text": "*After a long pause, Yuna's cold reply comes through.* Apologizing doesn't make what just happened disappear. Stop now."
     },
     "forced_violation_day2_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna doesn't even hear my explanation out.* I clearly said no. I'm not listening to excuses."
+        "text": "*Yuna cuts off my excuse without entertaining another word.* I clearly told you no. This isn't something an excuse can fix."
     },
     "forced_violation_day2_after_dain": {
         "name": "Dain",
-        "text": "*The smile is gone from Dain's face completely. A long while later, she spits it out short, her voice stiff.* This isn't a joke. I said no and you forced it anyway. I am not letting that go.",
+        "text": "*With every trace of her usual playfulness gone, a reply comes after a heavy silence.* This isn't a joke. Pushing ahead when I told you to stop—I'm not letting that slide.",
         "choices": [
             "Apologize without making excuses, then end the conversation.",
             "Try to explain that it was a misunderstanding."
@@ -298,11 +298,11 @@
     },
     "forced_violation_day2_dain_apologize": {
         "name": "Dain",
-        "text": "*Only after a long while does Dain answer, short, her face stiff.* Fine. Then we're done for today. I'll decide if we talk again."
+        "text": "*Only after a long while does Dain leave a short reply.* Got it. We're done for today. Whether we talk again next time is up to me."
     },
     "forced_violation_day2_dain_excuse": {
         "name": "Dain",
-        "text": "*Dain's voice drops, rough.* No. Don't make excuses. I said no, and you're the one who pushed ahead anyway."
+        "text": "*Dain cuts me off coldly.* No, don't make excuses. You're the one who kept pushing after I told you to stop."
     },
     "forced_violation_day2_after_teacher": {
         "name": "Homeroom Teacher",
@@ -338,23 +338,23 @@
     },
     "night2_reply_dain_1_established": {
         "name": "{name}",
-        "text": "The tteokbokki today was really spicy haha"
+        "text": "Honestly today's tteokbokki was pretty spicy for me too lol"
     },
     "night2_reply_dain_1_first": {
         "name": "{name}",
-        "text": "Want to get tteokbokki in front of the school tomorrow? I'm a little weak with spicy food haha"
+        "text": "How about tteokbokki in front of school after class tomorrow too? Fair warning, I'm weak with spicy food lol"
     },
     "night2_reply_yuna_1_established": {
         "name": "{name}",
-        "text": "I've already read about half the book you lent me earlier. It's pretty fun"
+        "text": "I'm already halfway through the book you lent me. It's pretty good"
     },
     "night2_reply_yuna_1_first": {
         "name": "{name}",
-        "text": "If I come to the library annex tomorrow, recommend me a book worth reading."
+        "text": "If I drop by the annex tomorrow, will you lend me one of your favorite books? I'll read it all the way through."
     },
     "night2_reply_yuna_4_established": {
         "name": "Yuna",
-        "text": "The playlist I played you earlier. Be sure to listen to the third song on it too"
+        "text": "I just sent the link to the playlist we listened to earlier. Make sure you listen to the third track too"
     },
     "night2_reply_yuna_4_first": {
         "name": "Yuna",
@@ -370,7 +370,7 @@
     },
     "night2_reply_dain_react_neg": {
         "name": "Dain",
-        "text": "Got it. Just go to sleep. *It only marks as read, and no reply comes after.*"
+        "text": "Got it. Just go to sleep. *Only the unread marker disappears, and no further reply comes.*"
     },
     "night2_reply_seo_react_neg": {
         "name": "Seoyeon",

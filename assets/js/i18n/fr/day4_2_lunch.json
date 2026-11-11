@@ -1,7 +1,7 @@
 {
     "date_seo_low": {
         "name": "Seoyeon",
-        "text": "*Le banc devant la fontaine, là où on s'était donné rendez-vous, est vide. J'écoute seulement le bruit de l'eau, puis j'allume mon téléphone : un court message de Seoyeon arrive à l'écran.* Désolée, mais aujourd'hui, mieux vaut qu'on ne se voie pas seuls. On se voit au lycée la semaine prochaine."
+        "text": "*Le banc convenu devant la fontaine est vide. Alors que j’écoute le bruit de l’eau, un court message de Seoyeon s’affiche sur mon téléphone.* Désolée, mais il vaut mieux qu’on ne se voie pas tous les deux aujourd’hui. On se voit demain à l’événement du lycée."
     },
     "date_yuna_low": {
         "name": "Yuna",
@@ -9,7 +9,7 @@
     },
     "date_dain_low": {
         "name": "Dain",
-        "text": "*Devant l'escalier du gymnase, Dain, qui m'attendait, le visage fermé, rajuste la sangle de son sac de sport.* Désolée, mais aujourd'hui j'ai pas le cœur à sourire et à traîner avec toi. On se voit au lycée la semaine prochaine."
+        "text": "*Debout devant les marches du gymnase, Dain remonte jusqu’au bout la fermeture de son sac de sport, le visage fermé.* Désolée, aujourd’hui je n’ai pas le cœur à rire et traîner ensemble. On se voit demain au lycée pour l’événement."
     },
     "date_seo_1": {
         "name": "{name}",
@@ -34,7 +34,7 @@
     },
     "date_seo_pretty_high_2": {
         "name": "Seoyeon",
-        "text": "*Comme pour rafraîchir ses joues rougissantes, elle tourne son regard vers la fontaine, mais elle ne quitte pas l'endroit à mes côtés.* Restons pas plantés là. Marchons vers l'allée, on prendra l'air."
+        "text": "*Elle s’évente une fois la joue de la paume en tournant la tête vers la fontaine.* Ne restons pas plantés là, allons marcher sur le sentier pour prendre un peu l’air."
     },
     "date_seo_pretty_high_3": {
         "name": "{name}",
@@ -42,7 +42,7 @@
     },
     "date_seo_pretty_high_3_b": {
         "name": "Seoyeon",
-        "text": "*Les cils de Seoyeon tremblent, puis elle fait mine d'être calme et resserre sa prise sur la bandoulière.* Arrête-toi là. Si j'en entends encore, je pourrai plus relever la tête."
+        "text": "*Seoyeon cligne rapidement des yeux deux ou trois fois et serre fort la bandoulière de son sac.* Arrête-toi là. Si tu continues, je ne pourrai vraiment plus lever les yeux."
     },
     "date_seo_pretty_high_4": {
         "name": "Seoyeon",
@@ -98,7 +98,7 @@
     },
     "date_seo_end": {
         "name": "Seoyeon",
-        "text": "Tiens. Prends-le des deux mains. Cela signifie penser à moi souvent. *Alors que Seoyeon me tend le pot de succulentes, ses doigts chauds se ferment sur ma paume un instant avant de se retirer.*"
+        "text": "Tiens, prends-le à deux mains. C’est pour que tu penses souvent à moi. *En me tendant le petit pot de plante grasse, les doigts chauds de Seoyeon se posent doucement sur mes paumes avant de s’écarter.*"
     },
     "date_seo_end_b": {
         "name": "{name}",
@@ -143,7 +143,7 @@
     },
     "date_yuna_pretty_high_5": {
         "name": "Yuna",
-        "text": "*La tête baissée de gêne, le bout de ses doigts tendus sur la table s'arrête tout près du dos de ma main.*"
+        "text": "*La tête baissée, les yeux cachés derrière sa frange, elle avance la main sur la table et arrête le bout de ses doigts tout près du dos de la mienne.*"
     },
     "date_yuna_pretty_high_5_b": {
         "name": "{name}",
@@ -175,7 +175,7 @@
     },
     "date_yuna_bookstore_3": {
         "name": "Yuna",
-        "text": "Tant mieux. Mon coin secret, c'est moi, et personne d'autre, qui te l'ai montré en premier."
+        "text": "Tant mieux. C’est un endroit auquel je tiens beaucoup, alors je voulais absolument te le faire découvrir moi-même en premier."
     },
     "date_yuna_earphone": {
         "name": "Yuna",
@@ -187,7 +187,7 @@
     },
     "date_yuna_earphone_2_b": {
         "name": "{name}",
-        "text": "*Une mélodie de piano, basse et rêveuse, se répand dans l'oreille, et les pas, le bruit de la librairie, s'éloignent d'un coup, presque irréels.*"
+        "text": "*Lorsqu’un lent accompagnement au piano emplit mon oreille, les pas qui vont et viennent dans la librairie s’éloignent d’un coup.*"
     },
     "date_yuna_earphone_3": {
         "name": "{name}",
@@ -207,7 +207,7 @@
     },
     "date_yuna_oldbook_2": {
         "name": "Yuna",
-        "text": "Ce roman, quand je l'ai lu seule il y a un an, la dernière page était triste à couper le souffle."
+        "text": "Ce roman, quand je l’ai lu seule il y a un an, m’avait rendue si triste que je suis restée longtemps sans pouvoir me lever après la dernière page."
     },
     "date_yuna_oldbook_3": {
         "name": "{name}",
@@ -247,7 +247,7 @@
     },
     "date_dain_compliment_choice": {
         "name": "{name}",
-        "text": "*Dain s'approche d'un pas, enfonce une fois la visière de sa casquette, un peu gauche, et attend que j'ouvre la bouche. Un parfum frais de savon aux agrumes et sa chaleur arrivent d'un coup.*",
+        "text": "*Dain fait un pas vers moi, tapote une fois la visière de sa casquette et attend la suite. Une odeur fraîche d’assouplissant se dégage de la manche de son survêtement.*",
         "choices": [
             "Cette casquette te va bien.",
             "La tenue de sport, c'est vraiment tout toi.",
@@ -257,7 +257,7 @@
     },
     "date_dain_pretty_high": {
         "name": "Dain",
-        "text": "Attends, tu ne me taquines pas, n'est-ce pas ? Quand tu me regardes comme ça et que tu dis ça, mon souffle se coupe. *Dain tire le bord de sa casquette, cachant son visage rougi.*"
+        "text": "Attends, tu ne te moques pas de moi, hein ? Quand tu me dis ça en me fixant comme ça, j’en perds mes mots d’un coup. *Dain rabat bien bas la visière de sa casquette pour cacher son visage rougi.*"
     },
     "date_dain_pretty_high_2": {
         "name": "Dain",
@@ -285,7 +285,7 @@
     },
     "date_dain_arcade": {
         "name": "{name}",
-        "text": "*Au fond de la salle, sous les sons électroniques criards, on se place côte à côte devant la borne de rythme. Les lumières de toutes les couleurs vacillent sur les yeux brillants de Dain et sur ses lèvres humides.*"
+        "text": "*Au fond de la salle d’arcade où résonnent les sons électroniques, on se place côte à côte devant une borne de jeu de rythme. Les néons clignotants éclairent le dessous de la visière de Dain.*"
     },
     "date_dain_arcade_2": {
         "name": "Dain",
@@ -309,7 +309,7 @@
     },
     "date_dain_rhythm": {
         "name": "Dain",
-        "text": "*Les joues rouges de joie, brillantes, elle pointe du doigt le score du classement en haut de l'écran.* Regarde, là : le 2e score de tous les temps sur cette machine !"
+        "text": "*Les joues rougies et tout sourire, elle pointe du doigt le classement tout en haut de l’écran.* Regarde là-haut, c’est le 2e meilleur score de toute la borne !"
     },
     "date_dain_rhythm_2": {
         "name": "{name}",
@@ -317,11 +317,11 @@
     },
     "date_dain_rhythm_3": {
         "name": "Dain",
-        "text": "Hé hé, évidemment. Ce jeu se joue avec les mains, alors je peux tout donner sans me servir des genoux."
+        "text": "Héhé, évidemment. Un jeu qui se joue avec les mains, pas besoin d’utiliser mon genou pour viser la première place."
     },
     "date_dain_knee": {
         "name": "{name}",
-        "text": "*« Sans me servir des genoux. » Comme piquée par les mots qu'elle a lâchés sans y penser, Dain, qui souriait encore de toutes ses dents, laisse son regard descendre en silence vers la genouillère noire du genou droit.*"
+        "text": "*« Pas besoin d’utiliser mon genou. » À peine ces mots lâchés machinalement, le sourire de Dain s’efface avec un temps de retard et son regard descend en silence vers la genouillère noire à son genou droit.*"
     },
     "date_dain_knee_2": {
         "name": "Dain",
@@ -345,11 +345,11 @@
     },
     "date_dain_shop_3_b": {
         "name": "Dain",
-        "text": "*Elle élargit le pas en faisant semblant que tout va bien, mais le pied droit de Dain boite à peine.* Tu me redemandes encore une fois si ça va, et je te laisse là. Je pars devant pour de bon."
+        "text": "*Même en allongeant volontairement la foulée, sa jambe droite boite légèrement à chaque pas.* Si tu me demandes encore une seule fois si ça va, je te plante là et je pars devant."
     },
     "date_dain_end": {
         "name": "{name}",
-        "text": "*Quand je me place à côté d'elle sans un mot et que j'accorde mon pas au sien, Dain esquisse enfin un petit sourire, mais sous la visière son regard reste du côté de la vitrine, comme une image qui ne part pas.*"
+        "text": "*Quand je viens marcher sans un mot à sa hauteur en ralentissant l’allure, Dain a un petit sourire. Malgré tout, elle jette encore un coup d’œil vers la vitrine à chaque pas.*"
     },
     "date_dain_end_b": {
         "name": "Dain",
@@ -357,7 +357,7 @@
     },
     "date_dain_end_c": {
         "name": "Dain",
-        "text": "Le rendez-vous avec toi, aujourd'hui, c'était vraiment bien. Tu sais que, moi, les phrases en l'air, j'y arrive pas. *Dain s'arrête, pose d'un coup son épaule et son bras contre mon épaule, et souffle un air chaud.*"
+        "text": "Je me suis vraiment bien amusée avec toi aujourd’hui. Tu sais bien que je ne sais pas faire de compliments en l’air, pas vrai ? *Dain s’arrête, appuie légèrement son épaule contre la mienne et reprend longuement son souffle.*"
     },
     "pre_confess_minsu": {
         "name": "Minsu",
@@ -390,15 +390,15 @@
     },
     "date_seo_tentative_1": {
         "name": "{name}",
-        "text": "*Tout le tour de l'allée du parc, au lieu d'une histoire à elle, Seoyeon ne sort que le planning du conseil des élèves pour la semaine prochaine, d'une voix posée. Elle s'arrête enfin sur le banc devant le lac.*"
+        "text": "*Tout au long du sentier du parc, Seoyeon évite les sujets personnels et ne parle que des préparatifs de l’événement du lycée prévu demain. Près du banc face au lac, elle s’arrête.*"
     },
     "date_seo_tentative_2": {
         "name": "Seoyeon",
-        "text": "Désolée, mais aujourd'hui, mieux vaut s'arrêter de marcher là. Lundi, si on se croise au lycée, je ne t'éviterai pas. Je te dirai bonjour."
+        "text": "Désolée, mais il vaut mieux ne pas aller plus loin aujourd’hui et rentrer doucement. Marchons ensemble jusqu’au devant du lycée."
     },
     "date_seo_tentative_3": {
         "name": "{name}",
-        "text": "*Après un silence gêné, sans pouvoir fixer un prochain rendez-vous, on se sépare sur la place devant la gare, chacun de son côté.*"
+        "text": "*Sans même pouvoir proposer l’étape suivante que j’avais prévue, je refais la route vers le lycée à un demi-pas d’elle.*"
     },
     "date_yuna_tier_check": {},
     "date_yuna_high_1": {
@@ -419,7 +419,7 @@
     },
     "date_yuna_tentative_3": {
         "name": "Yuna",
-        "text": "Quand ce sera clair pour moi, la prochaine fois, c'est moi qui t'écrirai. Aujourd'hui, on s'arrête là."
+        "text": "J’ai l’esprit un peu trop embrouillé pour passer à la librairie aujourd’hui. Quittons le café maintenant et rentrons tranquillement à pied vers le lycée."
     },
     "date_dain_tier_check": {},
     "date_dain_high_1": {
@@ -440,7 +440,7 @@
     },
     "date_dain_tentative_3": {
         "name": "Dain",
-        "text": "On se voit lundi au lycée. Si on se revoit, j'y penserai le moment venu."
+        "text": "Marcher jusqu’au centre-ville risque de tirer un peu sur mon genou aujourd’hui. Rentrons tranquillement vers le lycée en prenant l’air."
     },
     "day4_caught_fallout_1": {
         "name": "{name}",
@@ -452,7 +452,7 @@
     },
     "day4_caught_fallout_3": {
         "name": "{name}",
-        "text": "*Le nombre dans le groupe a baissé, mais Yuna n'envoie aucune réponse. Juste après, un court message de Dain s'affiche : « Si tu comptes me voir aujourd'hui, fixe clairement l'heure d'abord. » Le souffle coupé, je baisse de nouveau les yeux sur les rendez-vous qui se chevauchent dans le calendrier.*"
+        "text": "*Le compteur du groupe baisse, mais Yuna n’envoie aucune réponse. Aussitôt après, un court message de Dain s’affiche : « Si tu comptes me voir aujourd’hui, fixe clairement l’heure d’abord. » J’avale difficilement ma salive en baissant de nouveau les yeux sur mon calendrier.*"
     },
     "day4_caught_fallout_4": {
         "name": "{name}",

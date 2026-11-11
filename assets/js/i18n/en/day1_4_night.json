@@ -1,7 +1,7 @@
 {
     "night_start": {
         "name": "{name}",
-        "text": "*Back home, I hang the still-unfamiliar new uniform on a hanger and stretch out across the mattress.*"
+        "text": "*Back home, I hang my still-unfamiliar new uniform on a hanger and stretch out across my mattress.*"
     },
     "night_start_3": {
         "name": "{name}",
@@ -13,7 +13,7 @@
     },
     "night_msg_seo_2": {
         "name": "{name}",
-        "text": "*The breeze was cool, and the lunch box was good too*"
+        "text": "The breeze was cool and lunch was delicious. *I type a short reply and send it.*"
     },
     "night_msg_seo_3": {
         "name": "Seoyeon",
@@ -25,7 +25,7 @@
     },
     "night_msg_seo_5": {
         "name": "{name}",
-        "text": "*The corner of my mouth lifts, for no real reason, at the bubble that landed on its own line below, as if she'd hesitated and then added it: “Special service for the transfer student.”*"
+        "text": "*After a brief beat, a separate bubble lands one line below—'Transfer student special service'—and the corner of my mouth lifts on its own.*"
     },
     "night_msg_yuna_1": {
         "name": "Yuna",
@@ -57,15 +57,15 @@
     },
     "night_hidden_check": {
         "name": "{name}",
-        "text": "*As I go to close the messenger, another school app alert sits in the notification bar at the top.*"
+        "text": "*Just as I go to close the messenger window, one more school-app notification catches my eye in the top bar.*"
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*A post from our homeroom teacher appears in the class notice app. 'Bring your math textbook for first period tomorrow. And as for our new transfer student, just settling in safely is enough.'*"
+        "text": "*In the school app, a private note from my homeroom teacher is attached beneath the class notice: 'Bring your math workbook for 1st period tomorrow. — And as for today's transfer student, so long as you're settling in all right, that's plenty.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
-        "text": "*Only after I read the kind sentence added at the end of the notice once more do I lay the phone face down on my chest.*"
+        "text": "*I read that short note from my homeroom teacher one more time before resting the phone face-down on my chest.*"
     },
     "night_hidden_nurse_1": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*The school nurse's soft voice seems to linger by my ear, so I get up and fill the water bottle by my pillow.*"
+        "text": "*Remembering the school nurse’s gentle reminder from this afternoon, I get up and fill my bedside bottle with water.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -93,7 +93,7 @@
     },
     "night_seo_late_3": {
         "name": "{name}",
-        "text": "*I leave a short greeting and place my phone by my head. The alarm time for tomorrow morning is visible on the fading lock screen.*"
+        "text": "*After sending a brief goodnight, I glance at the lock screen and see tomorrow morning’s alarm set along the top.*"
     },
     "night_yuna_late_1": {
         "name": "Yuna",
@@ -101,7 +101,7 @@
     },
     "night_yuna_late_2": {
         "name": "{name}",
-        "text": "*The typing indicator blinks a few times, as if the other person is writing something, then quietly disappears.*"
+        "text": "*At the bottom of the chat window, the typing indicator blinks a few times and then quietly disappears.*"
     },
     "night_yuna_late_3": {
         "name": "{name}",
@@ -125,7 +125,7 @@
     },
     "night_dain_late_4": {
         "name": "{name}",
-        "text": "*It's so absurd a laugh slips out, but my finger has already typed “I'm in” into the reply box.*"
+        "text": "*A laugh slips out of me, yet my thumb has already typed 'Deal' into the reply box.*"
     },
     "night_dain_late_4_b": {
         "name": "{name}",
@@ -133,11 +133,11 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*I put down my phone and look up at the ceiling. The new uniform hanging nearby carries the scent of today's spring breeze and cherry blossoms.*"
+        "text": "*Thinking back on the faces behind the new names saved in my contacts today, I set my locked phone down by my pillow.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*I take in the new names saved side by side in my contacts once more, then quietly turn the screen off.*"
+        "text": "*I look up at the darkened ceiling. From the new uniform hanging on the rack, a faint trace of today’s spring breeze drifts across the room.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",
@@ -153,7 +153,7 @@
     },
     "forced_violation_day1_seoyeon_excuse": {
         "name": "Seoyeon",
-        "text": "*Seoyeon cuts me off in one stroke.* A misunderstanding? From the moment I clearly said no and drew the line, it couldn't be a misunderstanding. No more excuses."
+        "text": "*Seoyeon cuts me off flatly.* A misunderstanding? The moment I clearly drew the line and said no, it stopped being anything of the sort. Save your excuses."
     },
     "forced_violation_day1_after_yuna": {
         "name": "Yuna",
@@ -169,7 +169,7 @@
     },
     "forced_violation_day1_yuna_excuse": {
         "name": "Yuna",
-        "text": "*Yuna turns her head without even hearing my explanation through.* I clearly said no. I'm not here to hear excuses."
+        "text": "*Yuna turns her head away without even hearing my explanation out.* I clearly told you to stop. I have nothing to hear from you."
     },
     "forced_violation_day1_after_dain": {
         "name": "Dain",
