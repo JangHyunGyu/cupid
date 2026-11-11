@@ -2671,20 +2671,20 @@ function buildSystemPrompt(params) {
     const compactStableGuidance = (useEnTemplate ? [
         charAddressingGuideline && `Addressing: ${charAddressingGuideline}`,
         charInteractionGuideline && `Distance/interaction: ${charInteractionGuideline}`,
-        charSpecificCriteria && `Affinity criteria: ${charSpecificCriteria}`,
-        mediumInstruction && `Medium: ${mediumInstruction}`
+        charSpecificCriteria && `Affinity criteria: ${charSpecificCriteria}`
     ] : [
         charAddressingGuideline && `호칭: ${charAddressingGuideline}`,
         charInteractionGuideline && `거리와 상호작용: ${charInteractionGuideline}`,
-        charSpecificCriteria && `호감도 기준: ${charSpecificCriteria}`,
-        mediumInstruction && `대화 방식: ${mediumInstruction}`
+        charSpecificCriteria && `호감도 기준: ${charSpecificCriteria}`
     ]).filter(Boolean).join("\n");
     const compactDynamicGuidance = (useEnTemplate ? [
+        mediumInstruction && `Medium: ${mediumInstruction}`,
         extraGuideline && `Scene persona: ${extraGuideline}`,
         datingGuideline && `Relationship state: ${datingGuideline}`,
         gameContext && `Game context: ${gameContext}`,
         socialContext && `Social context: ${socialContext}`
     ] : [
+        mediumInstruction && `대화 방식: ${mediumInstruction}`,
         extraGuideline && `장면 페르소나: ${extraGuideline}`,
         datingGuideline && `관계 상태: ${datingGuideline}`,
         gameContext && `최근 사건과 기억: ${gameContext}`,

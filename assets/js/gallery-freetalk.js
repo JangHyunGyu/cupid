@@ -129,7 +129,7 @@ class GalleryFreeTalk {
 
         this.MEMORY_KEY = 'cupid_freetalk_memory';
         this.PROMPT_EPOCH_MEMORY_KEY = 'cupid_freetalk_prompt_epochs_v1';
-        this.HISTORY_WINDOW = 5;
+        this.HISTORY_WINDOW = 9;
 
         // 캐릭터 ID → 키 매핑
         this.CHAR_ID_TO_KEY = {
