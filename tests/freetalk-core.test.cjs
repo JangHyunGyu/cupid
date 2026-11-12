@@ -2468,3 +2468,101 @@ test('readChatCompletionStream rethrows INPUT_CONTROL_BLOCKED instead of returni
         }
     );
 });
+
+test('Teacher and Nurse canonical real names stay locked across Main, Group, and Gallery FreeTalk in all 8 locales', () => {
+    const sandbox = { window: {}, console, setTimeout, clearTimeout, URL, Blob, FormData, fetch: async () => {} };
+    sandbox.globalThis = sandbox;
+    vm.createContext(sandbox);
+    for (const rel of [
+        'assets/js/freetalk-core.js',
+        'assets/js/example-dialogues-ko.js',
+        'assets/js/prompts.js',
+        'assets/js/gallery-freetalk.js',
+        'assets/js/modules/FreeTalkSystem.js'
+    ]) {
+        vm.runInContext(read(rel), sandbox, { filename: rel });
+    }
+    const expected = {
+        ko: { teacher: '김지현', nurse: '이주원' },
+        en: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
+        es: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
+        ja: { teacher: 'キム・ジヒョン', nurse: 'イ・ジュウォン' },
+        fr: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
+        de: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
+        pt: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
+        zh: { teacher: '金知贤', nurse: '李朱媛' }
+    };
+    for (const alias of ['김지현', '지현', 'Kim Jihyeon', 'Jihyeon', 'キム・ジヒョン', 'ジヒョン', '金知贤', '知贤']) {
+        assert.equal(sandbox.window.normalizePromptCharacterKey(alias), 'Teacher');
+    }
+    for (const alias of ['이주원', '주원', 'Lee Juwon', 'Juwon', 'イ・ジュウォン', 'ジュウォン', '李朱媛', '朱媛']) {
+        assert.equal(sandbox.window.normalizePromptCharacterKey(alias), 'Nurse');
+    }
+    const gallery = new sandbox.window.GalleryFreeTalk('ko', {
+        getPlayerName: () => 'Alex',
+        getCurrentAffinity: () => 85
+    });
+    for (const [lang, names] of Object.entries(expected)) {
+        const data = sandbox.window.getPromptData(lang, 'Alex');
+        const mainTeacher = sandbox.window.buildSystemPrompt({
+            isEn: lang !== 'ko',
+            lang,
+            sceneName: 'Teacher',
+            displayName: lang === 'ko' ? '담임선생님' : 'Homeroom Teacher',
+            locationName: 'Classroom',
+            context: 'Asking her real name.',
+            affinity: 45,
+            promptData: data,
+            playerName: 'Alex',
+            knowsName: true
+        });
+        const mainNurse = sandbox.window.buildSystemPrompt({
+            isEn: lang !== 'ko',
+            lang,
+            sceneName: 'Nurse',
+            displayName: lang === 'ko' ? '보건선생님' : 'School Nurse',
+            locationName: 'Infirmary',
+            context: 'Asking her real name.',
+            affinity: 45,
+            promptData: data,
+            playerName: 'Alex',
+            knowsName: true
+        });
+        const mainSeoyeon = sandbox.window.buildSystemPrompt({
+            isEn: lang !== 'ko',
+            lang,
+            sceneName: 'Seoyeon',
+            displayName: lang === 'ko' ? '서연' : 'Seoyeon',
+            locationName: 'Council Room',
+            context: 'Talking about teachers.',
+            affinity: 45,
+            promptData: data,
+            playerName: 'Alex',
+            knowsName: true
+        });
+        assert.ok(mainTeacher.includes(names.teacher), `${lang} main Teacher prompt must include ${names.teacher}`);
+        assert.ok(mainNurse.includes(names.nurse), `${lang} main Nurse prompt must include ${names.nurse}`);
+        assert.ok(mainSeoyeon.includes(names.teacher) && mainSeoyeon.includes(names.nurse), `${lang} shared cast knowledge must include both teacher real names`);
+
+        const groupPrompt = sandbox.window.buildCupidGroupSystemPrompt({
+            lang,
+            groupMode: 'route_rivalry',
+            participants: [
+                { id: 'Teacher', name: lang === 'ko' ? '담임선생님' : 'Homeroom Teacher', role: 'focus' },
+                { id: 'Nurse', name: lang === 'ko' ? '보건선생님' : 'School Nurse', role: 'companion' }
+            ],
+            promptData: data,
+            playerName: 'Alex'
+        });
+        assert.ok(groupPrompt.includes(names.teacher) && groupPrompt.includes(names.nurse), `${lang} group prompt must include both teacher real names`);
+
+        gallery.lang = lang;
+        const galTeacher = gallery._buildCachedSystemPrompt('teacher');
+        const galNurse = gallery._buildCachedSystemPrompt('nurse');
+        assert.ok(galTeacher.includes(names.teacher), `${lang} gallery teacher prompt must include ${names.teacher}`);
+        assert.ok(galNurse.includes(names.nurse), `${lang} gallery nurse prompt must include ${names.nurse}`);
+        if (lang !== 'ko') {
+            assert.doesNotMatch(mainTeacher + mainNurse + galTeacher + galNurse, /[가-힣]/u, `${lang} prompts must not leak Hangul`);
+        }
+    }
+});

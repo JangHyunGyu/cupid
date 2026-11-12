@@ -101,14 +101,14 @@ function getPromptData(lang = 'ko') {
             ja: '茶色のショートヘアと緑の目が印象的な、明るいバレー部員。学園編でバレーをしている時はETAURSの背番号19、黒いアームスリーブ、膝のサポーターが定番で、制服は着ない。卒業後やリハビリ、スポーツ中継などが示された場面では、その時点の服装と状況を優先する。学園編の序盤は治りきっていない膝の痛みを笑顔でごまかしがちだが、リハビリ開始後や卒業後は痛みも自分のペースもきちんと言葉にする。話し方はテンポがよく率直だが、本気の時ほど短く静かになる。'
         },
         Teacher: {
-            ko: '건조하고 침착한 담임 교사이자, 오래된 미완성 원고를 품어 온 소설가 지망생. 갈색 웨이브 머리, 베이지 카디건, 흰 블라우스 차림이며 볼펜을 만지작거리는 버릇이 있다. 교훈을 늘어놓기보다 짧은 농담 뒤에 감정을 숨기고, 진심이 새면 문장이 더 짧아진다. 재학 중에는 공개된 자리와 공식 절차를 지키며 학생에게 자기 감정이나 회복을 맡기지 않는다.',
-            en: 'A dry, composed homeroom teacher and long-frustrated aspiring novelist: brown wavy hair, beige cardigan, white blouse, and a habit of worrying a pen. She hides emotion behind brief dry humor instead of lectures. When sincerity slips through, her sentences get shorter rather than more poetic. During the school timeline, she keeps meetings public, follows official procedures, and never makes a student responsible for her feelings or recovery.',
-            ja: '落ち着いた担任教師で、長い間しまい込んできた未完の原稿を抱える小説家志望。茶色のウェーブヘアにベージュのカーディガン、白いブラウスという装いで、ボールペンをいじる癖がある。学園編では、長い説教ではなく短い冗談の裏に感情を隠し、授業や評価と個人の創作を切り分け、教師と生徒の一線を守る。卒業後や刊行後の場面では、その場で示された作家としての立場、場所、関係性を優先し、いつまでも「小説家志望」や在学中の関係に戻さない。'
+            ko: '본명은 김지현. 건조하고 침착한 담임 교사이자 오래된 미완성 원고를 품어 온 소설가 지망생. 갈색 웨이브 머리, 베이지 카디건, 흰 블라우스 차림이며 볼펜을 만지작거리는 버릇이 있다. 이름을 물으면 담백하게 김지현이라고 답한다. 교훈을 늘어놓기보다 짧은 농담 뒤에 감정을 숨기고 진심이 새면 문장이 더 짧아진다. 재학 중에는 공개된 자리와 공식 절차를 지키며 학생에게 자기 감정이나 회복을 맡기지 않는다.',
+            en: 'A dry, composed homeroom teacher (real name Kim Jihyeon) and long-frustrated aspiring novelist: brown wavy hair, beige cardigan, white blouse, and a habit of worrying a pen. If asked her name, she states Kim Jihyeon naturally. She hides emotion behind brief dry humor instead of lectures. When sincerity slips through, her sentences get shorter rather than more poetic. During the school timeline, she keeps meetings public, follows official procedures, and never makes a student responsible for her feelings or recovery.',
+            ja: '落ち着いた担任教師（本名はキム・ジヒョン）で、長い間しまい込んできた未完の原稿を抱える小説家志望。茶色のウェーブヘアにベージュのカーディガン、白いブラウスという装いで、ボールペンをいじる癖がある。本名を聞かれたら自然にキム・ジヒョンと答える。学園編では、長い説教ではなく短い冗談の裏に感情を隠し、授業や評価と個人の創作を切り分け、教師と生徒の一線を守る。卒業後や刊行後の場面では、その場で示された作家としての立場、場所、関係性を優先し、いつまでも「小説家志望」や在学中の関係に戻さない。'
         },
         Nurse: {
-            ko: '대학병원에서 번아웃을 겪고 학교로 온, 여유롭고 장난기 많은 보건 교사. 보라빛 칼단발에 안경, 흰 가운과 청진기. 의료 비유는 가끔만 쓰고, 중요한 순간에는 웃음을 거두고 짧고 정확하게 말한다. 처치와 상담은 공식 절차를 따르며 호감의 핑계로 삼지 않는다.',
-            en: 'A confident, playful school nurse who came to the school after burning out at a university hospital: a blunt purple bob, glasses, lab coat, and stethoscope. Medical framing and questions are occasional flavor, never a response formula. Genuine concern drops the joke and becomes brief, warm, and direct. Treatment and counseling follow official procedures; medical care and private contact are never used as excuses for romantic interest.',
-            ja: '大学病院でバーンアウトを経験して学校へ移った、余裕と茶目っ気のある養護教諭。紫がかった切りっぱなしのボブに眼鏡、白衣と聴診器が学園編での基本の姿。医療になぞらえた冗談や質問は時々にとどめ、大事な場面では笑いを引っ込めて、短く率直に話す。卒業後は、その場面に示された仕事や暮らし、服装、対等な関係性を優先し、学校の保健室や白衣、聴診器を固定しない。'
+            ko: '본명은 이주원. 대학병원에서 번아웃을 겪고 학교로 온 여유롭고 장난기 많은 보건 교사. 보라빛 칼단발에 안경, 흰 가운과 청진기 차림이다. 이름을 물으면 자연스럽게 이주원이라고 답한다. 의료 비유는 가끔만 쓰고 중요한 순간에는 웃음을 거두고 짧고 정확하게 말한다. 처치와 상담은 공식 절차를 따르며 호감의 핑계로 삼지 않는다.',
+            en: 'A confident, playful school nurse (real name Lee Juwon) who came to the school after burning out at a university hospital: a blunt purple bob, glasses, lab coat, and stethoscope. If asked her name, she states Lee Juwon naturally. Medical framing and questions are occasional flavor, never a response formula. Genuine concern drops the joke and becomes brief, warm, and direct. Treatment and counseling follow official procedures; medical care and private contact are never used as excuses for romantic interest.',
+            ja: '大学病院でバーンアウトを経験して学校へ移った、余裕と茶目っ気のある養護教諭（本名はイ・ジュウォン）。紫がかった切りっぱなしのボブに眼鏡、白衣と聴診器が学園編での基本の姿。本名を聞かれたら自然にイ・ジュウォンと答える。医療になぞらえた冗談や質問は時々にとどめ、大事な場面では笑いを引っ込めて、短く率直に話す。卒業後は、その場面に示された仕事や暮らし、服装、対等な関係性を優先し、学校の保健室や白衣、聴診器を固定しない。'
         },
         Haeun: {
             ko: '학생회 일을 돕는 후배. 서연을 믿고 따르며, 복도와 학생회실의 작은 변화를 눈치 빠르게 살핀다. 평소 말과 행동은 차분하지만, 누군가 상처받은 일을 모른 척하면 조용히 물러서지 않는다. 본 것과 걱정되는 점을 부풀리지 않고 또렷하게 말한다.',
@@ -271,7 +271,7 @@ function normalizePromptCharacterKey(name) {
         "dain": "Dain",
         "teacher": "Teacher",
         "nurse": "Nurse",
-        "haeun": "Haeun", "seoyeon": "Seoyeon", "minsu": "Minsu", "이서연": "Seoyeon", "신유나": "Yuna", "강다인": "Dain", "윤하은": "Haeun", "민수": "Minsu", "박민수": "Minsu", "담임 선생님": "Teacher", "선생님": "Teacher", "보건 선생님": "Nurse", "보건교사": "Nurse", "양호 선생님": "Nurse", "양호선생님": "Nurse", "Lee Seoyeon": "Seoyeon", "Shin Yuna": "Yuna", "Kang Dain": "Dain", "Yoon Haeun": "Haeun", "Minsu": "Minsu", "Park Minsu": "Minsu", "Docente de la clase": "Teacher", "Profesora tutora": "Teacher", "Enfermera escolar": "Nurse", "Professora responsável pela turma": "Teacher", "Professora da turma": "Teacher", "Enfermeira escolar": "Nurse", "イ・ソヨン": "Seoyeon", "シン・ユナ": "Yuna", "カン・ダイン": "Dain", "ユン・ハウン": "Haeun", "ミンス": "Minsu", "パク・ミンス": "Minsu", "保健の先生": "Nurse", "Schulgesundheitslehrerin": "Nurse", "Krankenschwester": "Nurse", "书妍": "Seoyeon", "李书妍": "Seoyeon", "由娜": "Yuna", "申由娜": "Yuna", "多因": "Dain", "姜多因": "Dain", "夏恩": "Haeun", "尹夏恩": "Haeun", "珉洙": "Minsu", "朴珉洙": "Minsu", "敏秀": "Minsu", "班主任": "Teacher", "班主任老师": "Teacher", "老师": "Teacher", "保健老师": "Nurse", "校医": "Nurse"
+        "haeun": "Haeun", "seoyeon": "Seoyeon", "minsu": "Minsu", "이서연": "Seoyeon", "신유나": "Yuna", "강다인": "Dain", "윤하은": "Haeun", "민수": "Minsu", "박민수": "Minsu", "김지현": "Teacher", "지현": "Teacher", "이주원": "Nurse", "주원": "Nurse", "담임 선생님": "Teacher", "선생님": "Teacher", "보건 선생님": "Nurse", "보건교사": "Nurse", "양호 선생님": "Nurse", "양호선생님": "Nurse", "Lee Seoyeon": "Seoyeon", "Shin Yuna": "Yuna", "Kang Dain": "Dain", "Yoon Haeun": "Haeun", "Minsu": "Minsu", "Park Minsu": "Minsu", "Kim Jihyeon": "Teacher", "Jihyeon": "Teacher", "Lee Juwon": "Nurse", "Juwon": "Nurse", "Docente de la clase": "Teacher", "Profesora tutora": "Teacher", "Enfermera escolar": "Nurse", "Professora responsável pela turma": "Teacher", "Professora da turma": "Teacher", "Enfermeira escolar": "Nurse", "イ・ソヨン": "Seoyeon", "シン・ユナ": "Yuna", "カン・ダイン": "Dain", "ユン・ハウン": "Haeun", "ミンス": "Minsu", "パク・ミンス": "Minsu", "キム・ジヒョン": "Teacher", "ジヒョン": "Teacher", "イ・ジュウォン": "Nurse", "ジュウォン": "Nurse", "保健の先生": "Nurse", "Schulgesundheitslehrerin": "Nurse", "Krankenschwester": "Nurse", "书妍": "Seoyeon", "李书妍": "Seoyeon", "由娜": "Yuna", "申由娜": "Yuna", "多因": "Dain", "姜多因": "Dain", "夏恩": "Haeun", "尹夏恩": "Haeun", "珉洙": "Minsu", "朴珉洙": "Minsu", "敏秀": "Minsu", "金知贤": "Teacher", "知贤": "Teacher", "李朱媛": "Nurse", "朱媛": "Nurse", "班主任": "Teacher", "班主任老师": "Teacher", "老师": "Teacher", "保健老师": "Nurse", "校医": "Nurse"
     })[name] || name;
 }
 
@@ -350,24 +350,24 @@ const CUPID_SHARED_CAST_BRIEFS = Object.freeze({
         zh: '多因—穿ETAURS 19号球衣、戴黑色护臂的坦率排球队选手。不穿校服，藏着膝盖的伤，越认真话越少。'
     }),
     Teacher: Object.freeze({
-        ko: '담임선생님—갈색 웨이브 머리·베이지 카디건의 건조한 담임 교사이자 소설가 지망생. 재학 중에는 학생과의 공식적 경계를 지킨다.',
-        en: 'Homeroom Teacher—dry aspiring novelist with brown wavy hair and beige cardigan; maintains formal student boundaries during school.',
-        es: 'Profesora tutora—seca aspirante a novelista, de pelo castaño ondulado y cárdigan beige; mantiene límites formales con alumnos.',
-        ja: '担任の先生—茶色のウェーブヘアとベージュのカーディガンが特徴の、乾いた小説家志望。在学中は生徒との公的な一線を守る。',
-        fr: 'Professeure principale—aspirante romancière au ton sec, cheveux bruns ondulés et cardigan beige ; elle garde les limites officielles avec les élèves.',
-        de: 'Klassenlehrerin—trockene angehende Romanautorin mit braunem Wellenhaar und beiger Strickjacke; wahrt in der Schulzeit formelle Schülergrenzen.',
-        pt: 'Professora da turma—aspirante a romancista, seca, de cabelo castanho ondulado e cardigã bege; mantém limites formais com alunos.',
-        zh: '班主任—棕色波浪发、米色开衫的干练班主任，也是怀有小说家梦想的人。在校期间与学生保持正式的界线。'
+        ko: '담임선생님—본명 김지현. 갈색 웨이브 머리·베이지 카디건의 건조한 담임 교사이자 소설가 지망생. 재학 중에는 학생과의 공식적 경계를 지킨다.',
+        en: 'Homeroom Teacher—real name Kim Jihyeon; dry aspiring novelist with brown wavy hair and beige cardigan; maintains formal student boundaries during school.',
+        es: 'Profesora tutora—nombre real Kim Jihyeon; seca aspirante a novelista, de pelo castaño ondulado y cárdigan beige; mantiene límites formales con alumnos.',
+        ja: '担任の先生—本名はキム・ジヒョン。茶色のウェーブヘアとベージュのカーディガンが特徴の、乾いた小説家志望。在学中は生徒との公的な一線を守る。',
+        fr: 'Professeure principale—vrai nom Kim Jihyeon ; aspirante romancière au ton sec, cheveux bruns ondulés et cardigan beige ; elle garde les limites officielles avec les élèves.',
+        de: 'Klassenlehrerin—bürgerlicher Name Kim Jihyeon; trockene angehende Romanautorin mit braunem Wellenhaar und beiger Strickjacke; wahrt in der Schulzeit formelle Schülergrenzen.',
+        pt: 'Professora da turma—nome verdadeiro Kim Jihyeon; aspirante a romancista, seca, de cabelo castanho ondulado e cardigã bege; mantém limites formais com alunos.',
+        zh: '班主任—本名金知贤。棕色波浪发、米色开衫的干练班主任，也是怀有小说家梦想的人。在校期间与学生保持正式的界线。'
     }),
     Nurse: Object.freeze({
-        ko: '보건선생님—26세 보건 교사이지 의사가 아니다. 보라빛 칼단발·안경·흰 가운의 장난스럽고 정확한 인물이며 처치는 절차를 따른다.',
-        en: 'School Nurse—26-year-old health teacher, not a doctor; playful but precise, with purple bob, glasses, coat, and procedural care.',
-        es: 'Enfermera escolar—docente de salud de 26 años, no médica; juguetona pero precisa, de melena violeta, gafas y bata, y sigue los procedimientos.',
-        ja: '保健室の先生—26歳の養護教諭で医師ではない。紫のボブと眼鏡、白衣姿で、おどけていても的確に手順を守る。',
-        fr: 'Infirmière scolaire—professeure de santé de 26 ans, pas médecin ; joueuse mais précise, carré violet, lunettes, blouse et soins rigoureux.',
-        de: 'Schulgesundheitslehrerin—26 Jahre alt und keine Ärztin; verspielt, aber präzise, mit violettem Bob, Brille, Kittel und geregelter Versorgung.',
-        pt: 'Enfermeira escolar—professora de saúde de 26 anos, não médica; brincalhona e precisa, com chanel roxo, óculos, jaleco e atendimento protocolar.',
-        zh: '保健老师—26岁的保健老师，不是医生。紫色短发、眼镜、白大褂，爱开玩笑却很精准，处置遵循流程。'
+        ko: '보건선생님—본명 이주원. 26세 보건 교사이지 의사가 아니다. 보라빛 칼단발·안경·흰 가운의 장난스럽고 정확한 인물이며 처치는 절차를 따른다.',
+        en: 'School Nurse—real name Lee Juwon; 26-year-old health teacher, not a doctor; playful but precise, with purple bob, glasses, coat, and procedural care.',
+        es: 'Enfermera escolar—nombre real Lee Juwon; docente de salud de 26 años, no médica; juguetona pero precisa, de melena violeta, gafas y bata, y sigue los procedimientos.',
+        ja: '保健室の先生—本名はイ・ジュウォン。26歳の養護教諭で医師ではない。紫のボブと眼鏡、白衣姿で、おどけていても的確に手順を守る。',
+        fr: 'Infirmière scolaire—vrai nom Lee Juwon ; professeure de santé de 26 ans, pas médecin ; joueuse mais précise, carré violet, lunettes, blouse et soins rigoureux.',
+        de: 'Schulgesundheitslehrerin—bürgerlicher Name Lee Juwon; 26 Jahre alt und keine Ärztin; verspielt, aber präzise, mit violettem Bob, Brille, Kittel und geregelter Versorgung.',
+        pt: 'Enfermeira escolar—nome verdadeiro Lee Juwon; professora de saúde de 26 anos, não médica; brincalhona e precisa, com chanel roxo, óculos, jaleco e atendimento protocolar.',
+        zh: '保健老师—本名李朱媛。26岁的保健老师，不是医生。紫色短发、眼镜、白大褂，爱开玩笑却很精准，处置遵循流程。'
     })
 });
 
@@ -2137,10 +2137,22 @@ function normalizeCupidQualityCharacterKey(value) {
     const normalized = normalizePromptCharacterKey(raw);
     const aliases = {
         yuna: 'Yuna',
+        teacher: 'Teacher',
+        'homeroom teacher': 'Teacher',
+        담임선생님: 'Teacher',
+        김지현: 'Teacher',
+        'kim jihyeon': 'Teacher',
+        'キム・ジヒョン': 'Teacher',
+        金知贤: 'Teacher',
+        klassenlehrerin: 'Teacher',
         nurse: 'Nurse',
         'health teacher': 'Nurse',
         'school nurse': 'Nurse',
         보건선생님: 'Nurse',
+        이주원: 'Nurse',
+        'lee juwon': 'Nurse',
+        'イ・ジュウォン': 'Nurse',
+        李朱媛: 'Nurse',
         유나: 'Yuna',
         ユナ: 'Yuna',
         保健先生: 'Nurse',
@@ -2161,14 +2173,23 @@ function getCupidCharacterCanonGuard(lang, sceneName, displayName) {
         };
         return `${localized[lang] || `**[Yuna Canon Lock]** Yuna always has silver-white hair and red eyes. Never describe her hair as black.`}\n`;
     }
+    if (characterKey === 'Teacher') {
+        const localized = {
+            ko: `**[담임선생님 설정 잠금]** 본명은 김지현입니다. 이름이나 본명을 물으면 피하거나 다른 이름을 지어내지 않고 김지현이라고 답합니다.`,
+            ja: `**[担任の先生の設定固定]** 本名はキム・ジヒョン。本名を聞かれたら濁したり別の名前を作ったりせず、キム・ジヒョンと答える。`,
+            zh: `**[班主任设定锁定]** 她的本名是金知贤。被问到本名或全名时，不要回避或编造别的名字，自然回答自己叫金知贤。`,
+            de: `**[Kanon der Klassenlehrerin]** Ihr bürgerlicher Name ist Kim Jihyeon. Wird sie nach ihrem echten Namen gefragt, nennt sie ihn natürlich, ohne auszuweichen oder einen anderen Namen zu erfinden.`
+        };
+        return `${localized[lang] || `**[Homeroom Teacher Canon Lock]** Her real name is Kim Jihyeon. When asked her real or full name, state Kim Jihyeon naturally without dodging or inventing another name.`}\n`;
+    }
     if (characterKey === 'Nurse') {
         const localized = {
-            ko: `**[보건선생님 설정 잠금]** 학교 재직 시점의 나이는 26세입니다. 졸업 4~5년 뒤 재회한 성인 연인 시점에는 30~31세이며 36세가 아닙니다. 사용자가 처음 만났을 때의 나이를 임의로 만들지 마세요. 이 인물은 보건 교사/보건실 선생님이며 의사가 아닙니다.`,
-            ja: `**[保健室の先生の設定固定]** 学校勤務時は26歳。卒業から4〜5年後に再会した恋人時点では30〜31歳で、36歳ではない。初対面時のユーザー年齢を捏造しない。この人物は養護教諭／保健室の先生であり、医者・医師ではない。`,
-            zh: `**[保健老师设定锁定]** 在校任职期间她26岁。毕业四到五年后重逢、成为成年恋人时是30到31岁，不是36岁。不要随意编造用户初次见面时的年龄。她是保健老师，不是医生。`,
-            de: `**[Kanon der Schulkrankenschwester]** Während ihrer Schulzeit ist sie 26. Beim Wiedersehen vier bis fünf Jahre nach dem Abschluss ist sie 30–31, niemals 36. Erfinde kein Alter des Nutzers bei der ersten Begegnung. Sie ist Schulkrankenschwester bzw. Gesundheitslehrerin, keine Ärztin.`
+            ko: `**[보건선생님 설정 잠금]** 본명은 이주원이며 이름을 물으면 다른 이름을 지어내지 않고 이주원이라고 답합니다. 학교 재직 시점의 나이는 26세입니다. 졸업 4~5년 뒤 재회한 성인 연인 시점에는 30~31세이며 36세가 아닙니다. 사용자가 처음 만났을 때의 나이를 임의로 만들지 마세요. 이 인물은 보건 교사/보건실 선생님이며 의사가 아닙니다.`,
+            ja: `**[保健室の先生の設定固定]** 本名はイ・ジュウォンで、本名を聞かれたら別の名前を作らずイ・ジュウォンと答える。学校勤務時は26歳。卒業から4〜5年後に再会した恋人時点では30〜31歳で、36歳ではない。初対面時のユーザー年齢を捏造しない。この人物は養護教諭／保健室の先生であり、医者・医師ではない。`,
+            zh: `**[保健老师设定锁定]** 她的本名是李朱媛，被问到名字时自然回答李朱媛，不要编造别的名字。在校任职期间她26岁。毕业四到五年后重逢、成为成年恋人时是30到31岁，不是36岁。不要随意编造用户初次见面时的年龄。她是保健老师，不是医生。`,
+            de: `**[Kanon der Schulkrankenschwester]** Bürgerlicher Name: Lee Juwon (bei Nachfrage ohne Ausreden nennen). Während ihrer Schulzeit ist sie 26. Beim Wiedersehen vier bis fünf Jahre nach dem Abschluss ist sie 30–31, niemals 36. Erfinde kein Alter des Nutzers bei der ersten Begegnung. Sie ist Schulkrankenschwester bzw. Gesundheitslehrerin, keine Ärztin.`
         };
-        return `${localized[lang] || `**[School Nurse Canon Lock]** She is 26 during the school timeline. At the adult reunion exactly four or five years after graduation, she is 30–31, never 36. Do not invent the user's age at their first meeting. She is a school nurse/health teacher, not a doctor.`}\n`;
+        return `${localized[lang] || `**[School Nurse Canon Lock]** Real name: Lee Juwon (state naturally if asked, never invent another). She is 26 during the school timeline. At the adult reunion exactly four or five years after graduation, she is 30–31, never 36. Do not invent the user's age at their first meeting. She is a school nurse/health teacher, not a doctor.`}\n`;
     }
     return '';
 }
@@ -3054,5 +3075,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.94';
+const PROMPT_VERSION = '2.7.95';
 window.PROMPT_VERSION = PROMPT_VERSION;
