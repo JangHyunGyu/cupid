@@ -2483,23 +2483,23 @@ test('Teacher and Nurse canonical real names stay locked across Main, Group, and
         vm.runInContext(read(rel), sandbox, { filename: rel });
     }
     const expected = {
-        ko: { teacher: '김지현', nurse: '이주원', seoyeon: '윤서연', yuna: '신유나', dain: '강다인', haeun: '정하은', minsu: '박민수' },
-        en: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
-        es: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
-        ja: { teacher: 'キム・ジヒョン', nurse: 'イ・ジュウォン', seoyeon: 'ユン・ソヨン', yuna: 'シン・ユナ', dain: 'カン・ダイン', haeun: 'チョン・ハウン', minsu: 'パク・ミンス' },
-        fr: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
-        de: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
-        pt: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
-        zh: { teacher: '金知贤', nurse: '李朱媛', seoyeon: '尹书妍', yuna: '申由娜', dain: '姜多因', haeun: '郑夏恩', minsu: '朴珉洙' }
+        ko: { teacher: '김지현', nurse: '이주원', seoyeon: '윤서연', yuna: '설유나', dain: '강다인', haeun: '유하은', minsu: '김민수' },
+        en: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Seol Yuna', dain: 'Kang Dain', haeun: 'Yoo Haeun', minsu: 'Kim Minsu' },
+        es: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Seol Yuna', dain: 'Kang Dain', haeun: 'Yoo Haeun', minsu: 'Kim Minsu' },
+        ja: { teacher: 'キム・ジヒョン', nurse: 'イ・ジュウォン', seoyeon: 'ユン・ソヨン', yuna: 'ソル・ユナ', dain: 'カン・ダイン', haeun: 'ユ・ハウン', minsu: 'キム・ミンス' },
+        fr: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Seol Yuna', dain: 'Kang Dain', haeun: 'Yoo Haeun', minsu: 'Kim Minsu' },
+        de: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Seol Yuna', dain: 'Kang Dain', haeun: 'Yoo Haeun', minsu: 'Kim Minsu' },
+        pt: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Seol Yuna', dain: 'Kang Dain', haeun: 'Yoo Haeun', minsu: 'Kim Minsu' },
+        zh: { teacher: '金知贤', nurse: '李朱媛', seoyeon: '尹书妍', yuna: '薛由娜', dain: '姜多因', haeun: '柳夏恩', minsu: '金珉洙' }
     };
     for (const [alias, expectedKey] of [
         ['김지현', 'Teacher'], ['지현', 'Teacher'], ['Kim Jihyeon', 'Teacher'], ['Jihyeon', 'Teacher'], ['キム・ジヒョン', 'Teacher'], ['ジヒョン', 'Teacher'], ['金知贤', 'Teacher'], ['知贤', 'Teacher'],
         ['이주원', 'Nurse'], ['주원', 'Nurse'], ['Lee Juwon', 'Nurse'], ['Juwon', 'Nurse'], ['イ・ジュウォン', 'Nurse'], ['ジュウォン', 'Nurse'], ['李朱媛', 'Nurse'], ['朱媛', 'Nurse'],
         ['윤서연', 'Seoyeon'], ['Yoon Seoyeon', 'Seoyeon'], ['ユン・ソヨン', 'Seoyeon'], ['尹书妍', 'Seoyeon'],
-        ['신유나', 'Yuna'], ['Shin Yuna', 'Yuna'], ['シン・ユナ', 'Yuna'], ['申由娜', 'Yuna'],
+        ['설유나', 'Yuna'], ['Seol Yuna', 'Yuna'], ['ソル・ユナ', 'Yuna'], ['薛由娜', 'Yuna'],
         ['강다인', 'Dain'], ['Kang Dain', 'Dain'], ['カン・ダイン', 'Dain'], ['姜多因', 'Dain'],
-        ['정하은', 'Haeun'], ['Jung Haeun', 'Haeun'], ['チョン・ハウン', 'Haeun'], ['郑夏恩', 'Haeun'],
-        ['박민수', 'Minsu'], ['Park Minsu', 'Minsu'], ['パク・ミンス', 'Minsu'], ['朴珉洙', 'Minsu']
+        ['유하은', 'Haeun'], ['Yoo Haeun', 'Haeun'], ['ユ・ハウン', 'Haeun'], ['柳夏恩', 'Haeun'],
+        ['김민수', 'Minsu'], ['Kim Minsu', 'Minsu'], ['キム・ミンス', 'Minsu'], ['金珉洙', 'Minsu']
     ]) {
         assert.equal(sandbox.window.normalizePromptCharacterKey(alias), expectedKey);
     }

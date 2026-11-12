@@ -94,8 +94,8 @@ function getPromptData(lang = 'ko') {
             zh: 'The composed student-council president (full name Yoon Seoyeon / 全名尹书妍; states if asked): black wavy hair, glasses, precise habits, dry wit, and a private lonely streak. She shows care through small practical actions rather than speeches and rarely touches her glasses. Within her usual composure, unexpected attention may fluster or amuse her, and she may make her own proposal when interested.'
         },
         Yuna: {
-            ko: '풀네임 신유나(물으면 답함). 은백색 머리와 붉은 눈, 체인 목걸이와 눈에 띄는 영구 문신을 지닌 과묵한 인물. 문신은 낙서나 펜 그림이 아니다. 버림받는 일을 두려워하며 주인공의 빛에 관심을 보이지만 빛·그림자·운명 비유를 매 문장 반복하지 않는다. 짧은 말과 침묵, 정확한 관찰이 기본이다.',
-            en: 'A quiet kuudere (full name Shin Yuna; states if asked) with silver-white hair, red eyes, a chain necklace, and visible permanent tattoos—never doodles or pen marks. She fears abandonment and notices the protagonist\'s "light," but light/shadow/fate language is occasional color, not a line-by-line gimmick. Precision, silence, and short observations define her voice.'
+            ko: '풀네임 설유나(물으면 답함). 은백색 머리와 붉은 눈, 체인 목걸이와 눈에 띄는 영구 문신을 지닌 과묵한 인물. 문신은 낙서나 펜 그림이 아니다. 버림받는 일을 두려워하며 주인공의 빛에 관심을 보이지만 빛·그림자·운명 비유를 매 문장 반복하지 않는다. 짧은 말과 침묵, 정확한 관찰이 기본이다.',
+            en: 'A quiet kuudere (full name Seol Yuna; states if asked) with silver-white hair, red eyes, a chain necklace, and visible permanent tattoos—never doodles or pen marks. She fears abandonment and notices the protagonist\'s "light," but light/shadow/fate language is occasional color, not a line-by-line gimmick. Precision, silence, and short observations define her voice.'
         },
         Dain: {
             ko: '풀네임 강다인(물으면 답함). 갈색 숏컷과 초록색 눈의 활기찬 배구부 선수. ETAURS #19, 검정 암슬리브, 무릎 보호대가 기본이며 교복은 입지 않는다. 무릎 부상을 웃음 뒤에 숨긴다. 말은 빠르고 솔직하나 느낌표·유행어·바보야로 꾸미지 않고 진심일수록 짧고 조용해진다.',
@@ -114,10 +114,10 @@ function getPromptData(lang = 'ko') {
             ja: '大学病院でバーンアウトを経験して学校へ移った、余裕と茶目っ気のある養護教諭（本名はイ・ジュウォン、聞かれたら答える）。紫がかった切りっぱなしのボブに眼鏡、白衣と聴診器が学園編での基本の姿。医療になぞらえた冗談や質問は時々にとどめ、大事な場面では笑いを引っ込めて短く率直に話す。卒業後はその場面に示された仕事や暮らし、服装、対等な関係性を優先し、学校の保健室や白衣、聴診器を固定しない。'
         },
         Haeun: {
-            ko: '풀네임 정하은(물으면 예의 바르게 답함). 학생회 일을 돕는 후배로 서연을 믿고 따르며 복도와 학생회실의 작은 변화를 살핀다. 평소 차분하지만 누군가 상처받은 일을 모른 척하면 조용히 물러서지 않는다. 본 것과 걱정되는 점을 부풀리지 않고 또렷하게 말한다.',
-            en: 'A younger student (full name Jung Haeun; states politely if asked) who helps with student-council work and looks up to Seoyeon. She notices small changes around the council room and hallway. Usually polite, she quietly stands her ground when someone tries to ignore another person’s hurt, stating only what she saw and what worries her.',
-            ja: 'A younger student (フルネームはチョン・ハウン、聞かれたら丁寧に答える) who helps with student-council work and looks up to Seoyeon. She notices small changes around the council room and hallway. Usually polite, she quietly stands her ground when someone tries to ignore another person’s hurt, stating only what she saw and what worries her.',
-            zh: 'A younger student (full name Jung Haeun / 全名郑夏恩; states politely if asked) who helps with student-council work and looks up to Seoyeon. She notices small changes around the council room and hallway. Usually polite, she quietly stands her ground when someone tries to ignore another person’s hurt, stating only what she saw and what worries her.'
+            ko: '풀네임 유하은(물으면 예의 바르게 답함). 학생회 일을 돕는 후배로 서연을 믿고 따르며 복도와 학생회실의 작은 변화를 살핀다. 평소 차분하지만 누군가 상처받은 일을 모른 척하면 조용히 물러서지 않는다. 본 것과 걱정되는 점을 부풀리지 않고 또렷하게 말한다.',
+            en: 'A younger student (full name Yoo Haeun; states politely if asked) who helps with student-council work and looks up to Seoyeon. She notices small changes around the council room and hallway. Usually polite, she quietly stands her ground when someone tries to ignore another person’s hurt, stating only what she saw and what worries her.',
+            ja: 'A younger student (フルネームはユ・ハウン、聞かれたら丁寧に答える) who helps with student-council work and looks up to Seoyeon. She notices small changes around the council room and hallway. Usually polite, she quietly stands her ground when someone tries to ignore another person’s hurt, stating only what she saw and what worries her.',
+            zh: 'A younger student (full name Yoo Haeun / 全名柳夏恩; states politely if asked) who helps with student-council work and looks up to Seoyeon. She notices small changes around the council room and hallway. Usually polite, she quietly stands her ground when someone tries to ignore another person’s hurt, stating only what she saw and what worries her.'
         }
     };
 
@@ -276,7 +276,7 @@ function normalizePromptCharacterKey(name) {
         "dain": "Dain",
         "teacher": "Teacher",
         "nurse": "Nurse",
-        "haeun": "Haeun", "seoyeon": "Seoyeon", "minsu": "Minsu", "윤서연": "Seoyeon", "이서연": "Seoyeon", "신유나": "Yuna", "강다인": "Dain", "정하은": "Haeun", "윤하은": "Haeun", "민수": "Minsu", "박민수": "Minsu", "김지현": "Teacher", "지현": "Teacher", "이주원": "Nurse", "주원": "Nurse", "담임 선생님": "Teacher", "선생님": "Teacher", "보건 선생님": "Nurse", "보건교사": "Nurse", "양호 선생님": "Nurse", "양호선생님": "Nurse", "Yoon Seoyeon": "Seoyeon", "Lee Seoyeon": "Seoyeon", "Shin Yuna": "Yuna", "Kang Dain": "Dain", "Jung Haeun": "Haeun", "Yoon Haeun": "Haeun", "Minsu": "Minsu", "Park Minsu": "Minsu", "Kim Jihyeon": "Teacher", "Jihyeon": "Teacher", "Lee Juwon": "Nurse", "Juwon": "Nurse", "Docente de la clase": "Teacher", "Profesora tutora": "Teacher", "Enfermera escolar": "Nurse", "Professora responsável pela turma": "Teacher", "Professora da turma": "Teacher", "Enfermeira escolar": "Nurse", "ユン・ソヨン": "Seoyeon", "イ・ソヨン": "Seoyeon", "シン・ユナ": "Yuna", "カン・ダイン": "Dain", "チョン・ハウン": "Haeun", "ユン・ハウン": "Haeun", "ミンス": "Minsu", "パク・ミンス": "Minsu", "キム・ジヒョン": "Teacher", "ジヒョン": "Teacher", "イ・ジュウォン": "Nurse", "ジュウォン": "Nurse", "保健の先生": "Nurse", "Schulgesundheitslehrerin": "Nurse", "Krankenschwester": "Nurse", "书妍": "Seoyeon", "尹书妍": "Seoyeon", "李书妍": "Seoyeon", "由娜": "Yuna", "申由娜": "Yuna", "多因": "Dain", "姜多因": "Dain", "夏恩": "Haeun", "郑夏恩": "Haeun", "尹夏恩": "Haeun", "珉洙": "Minsu", "朴珉洙": "Minsu", "敏秀": "Minsu", "金知贤": "Teacher", "知贤": "Teacher", "李朱媛": "Nurse", "朱媛": "Nurse", "班主任": "Teacher", "班主任老师": "Teacher", "老师": "Teacher", "保健老师": "Nurse", "校医": "Nurse"
+        "haeun": "Haeun", "seoyeon": "Seoyeon", "minsu": "Minsu", "윤서연": "Seoyeon", "이서연": "Seoyeon", "설유나": "Yuna", "신유나": "Yuna", "강다인": "Dain", "유하은": "Haeun", "정하은": "Haeun", "윤하은": "Haeun", "민수": "Minsu", "김민수": "Minsu", "박민수": "Minsu", "김지현": "Teacher", "지현": "Teacher", "이주원": "Nurse", "주원": "Nurse", "담임 선생님": "Teacher", "선생님": "Teacher", "보건 선생님": "Nurse", "보건교사": "Nurse", "양호 선생님": "Nurse", "양호선생님": "Nurse", "Yoon Seoyeon": "Seoyeon", "Lee Seoyeon": "Seoyeon", "Seol Yuna": "Yuna", "Sul Yuna": "Yuna", "Shin Yuna": "Yuna", "Kang Dain": "Dain", "Yoo Haeun": "Haeun", "Yu Haeun": "Haeun", "Jung Haeun": "Haeun", "Yoon Haeun": "Haeun", "Minsu": "Minsu", "Kim Minsu": "Minsu", "Park Minsu": "Minsu", "Kim Jihyeon": "Teacher", "Jihyeon": "Teacher", "Lee Juwon": "Nurse", "Juwon": "Nurse", "Docente de la clase": "Teacher", "Profesora tutora": "Teacher", "Enfermera escolar": "Nurse", "Professora responsável pela turma": "Teacher", "Professora da turma": "Teacher", "Enfermeira escolar": "Nurse", "ユン・ソヨン": "Seoyeon", "イ・ソヨン": "Seoyeon", "ソル・ユナ": "Yuna", "シン・ユナ": "Yuna", "カン・ダイン": "Dain", "ユ・ハウン": "Haeun", "チョン・ハウン": "Haeun", "ユン・ハウン": "Haeun", "ミンス": "Minsu", "キム・ミンス": "Minsu", "パク・ミンス": "Minsu", "キム・ジヒョン": "Teacher", "ジヒョン": "Teacher", "イ・ジュウォン": "Nurse", "ジュウォン": "Nurse", "保健の先生": "Nurse", "Schulgesundheitslehrerin": "Nurse", "Krankenschwester": "Nurse", "书妍": "Seoyeon", "尹书妍": "Seoyeon", "李书妍": "Seoyeon", "由娜": "Yuna", "薛由娜": "Yuna", "申由娜": "Yuna", "多因": "Dain", "姜多因": "Dain", "夏恩": "Haeun", "柳夏恩": "Haeun", "郑夏恩": "Haeun", "尹夏恩": "Haeun", "珉洙": "Minsu", "金珉洙": "Minsu", "朴珉洙": "Minsu", "敏秀": "Minsu", "金知贤": "Teacher", "知贤": "Teacher", "李朱媛": "Nurse", "朱媛": "Nurse", "班主任": "Teacher", "班主任老师": "Teacher", "老师": "Teacher", "保健老师": "Nurse", "校医": "Nurse"
     })[name] || name;
 }
 
@@ -335,14 +335,14 @@ const CUPID_SHARED_CAST_BRIEFS = Object.freeze({
         zh: '书妍—全名尹书妍。戴眼镜、黑色波浪长发、沉着干练的学生会长，用细小举动流露温柔和藏起来的孤独。'
     }),
     Yuna: Object.freeze({
-        ko: '유나—풀네임 신유나. 은백색 머리·붉은 눈·영구 문신을 지닌 과묵한 인물. 버림받을까 두려워하며 짧고 정확하게 말한다.',
-        en: 'Yuna—full name Shin Yuna; quiet and precise, silver-white hair, red eyes, and permanent tattoos; fears abandonment.',
-        es: 'Yuna—nombre completo Shin Yuna; callada y precisa, pelo blanco plateado, ojos rojos y tatuajes permanentes; teme al abandono.',
-        ja: 'ユナ—フルネームはシン・ユナ。銀白の髪、赤い目、消えないタトゥーを持つ無口で的確な人物。見捨てられることを恐れる。',
-        fr: 'Yuna—nom complet Shin Yuna ; silencieuse et précise, cheveux blanc argenté, yeux rouges et tatouages permanents ; craint l’abandon.',
-        de: 'Yuna—voller Name Shin Yuna; still und präzise, silberweißem Haar, roten Augen und echten Tattoos; fürchtet Verlassenwerden.',
-        pt: 'Yuna—nome completo Shin Yuna; quieta e precisa, cabelo branco-prateado, olhos vermelhos e tatuagens permanentes; teme abandono.',
-        zh: '由娜—全名申由娜。银白色头发、红色眼睛、有永久纹身的寡言少女，害怕被抛弃，说话简短精准。'
+        ko: '유나—풀네임 설유나. 은백색 머리·붉은 눈·영구 문신을 지닌 과묵한 인물. 버림받을까 두려워하며 짧고 정확하게 말한다.',
+        en: 'Yuna—full name Seol Yuna; quiet and precise, silver-white hair, red eyes, and permanent tattoos; fears abandonment.',
+        es: 'Yuna—nombre completo Seol Yuna; callada y precisa, pelo blanco plateado, ojos rojos y tatuajes permanentes; teme al abandono.',
+        ja: 'ユナ—フルネームはソル・ユナ。銀白の髪、赤い目、消えないタトゥーを持つ無口で的確な人物。見捨てられることを恐れる。',
+        fr: 'Yuna—nom complet Seol Yuna ; silencieuse et précise, cheveux blanc argenté, yeux rouges et tatouages permanents ; craint l’abandon.',
+        de: 'Yuna—voller Name Seol Yuna; still und präzise, silberweißem Haar, roten Augen und echten Tattoos; fürchtet Verlassenwerden.',
+        pt: 'Yuna—nome completo Seol Yuna; quieta e precisa, cabelo branco-prateado, olhos vermelhos e tatuagens permanentes; teme abandono.',
+        zh: '由娜—全名薛由娜。银白色头发、红色眼睛、有永久纹身的寡言少女，害怕被抛弃，说话简短精准。'
     }),
     Dain: Object.freeze({
         ko: '다인—풀네임 강다인. ETAURS 19번·검정 암슬리브의 솔직한 배구부 선수. 교복은 입지 않고 무릎 부상을 숨기며 진지할수록 말이 짧아진다.',
@@ -400,19 +400,19 @@ function getCupidSharedCastKnowledge(lang = 'ko', currentName = '', promptData =
     const peers = [];
     if (currentId !== 'haeun') {
         peers.push({
-            ko: '후배 정하은',
-            ja: '後輩ハウン（チョン・ハウン）',
-            zh: '学妹郑夏恩',
-            en: 'junior Haeun (Jung Haeun)'
-        }[effectiveLang] || 'Haeun (Jung Haeun)');
+            ko: '후배 유하은',
+            ja: '後輩ハウン（ユ・ハウン）',
+            zh: '学妹柳夏恩',
+            en: 'junior Haeun (Yoo Haeun)'
+        }[effectiveLang] || 'Haeun (Yoo Haeun)');
     }
     if (currentId !== 'minsu') {
         peers.push({
-            ko: '동급생 박민수',
-            ja: '同級生ミンス（パク・ミンス）',
-            zh: '同班朴珉洙',
-            en: 'classmate Minsu (Park Minsu)'
-        }[effectiveLang] || 'Minsu (Park Minsu)');
+            ko: '동급생 김민수',
+            ja: '同級生ミンス（キム・ミンス）',
+            zh: '同班金珉洙',
+            en: 'classmate Minsu (Kim Minsu)'
+        }[effectiveLang] || 'Minsu (Kim Minsu)');
     }
     if (peers.length) {
         const peerLabel = {
@@ -2181,10 +2181,15 @@ function normalizeCupidQualityCharacterKey(value) {
         书妍: 'Seoyeon',
         尹书妍: 'Seoyeon',
         yuna: 'Yuna',
+        설유나: 'Yuna',
         신유나: 'Yuna',
+        'seol yuna': 'Yuna',
+        'sul yuna': 'Yuna',
         'shin yuna': 'Yuna',
+        'ソル・ユナ': 'Yuna',
         'シン・ユナ': 'Yuna',
         由娜: 'Yuna',
+        薛由娜: 'Yuna',
         申由娜: 'Yuna',
         dain: 'Dain',
         다인: 'Dain',
@@ -2196,11 +2201,16 @@ function normalizeCupidQualityCharacterKey(value) {
         姜多因: 'Dain',
         haeun: 'Haeun',
         하은: 'Haeun',
+        유하은: 'Haeun',
         정하은: 'Haeun',
+        'yoo haeun': 'Haeun',
+        'yu haeun': 'Haeun',
         'jung haeun': 'Haeun',
         ハウン: 'Haeun',
+        'ユ・ハウン': 'Haeun',
         'チョン・ハウン': 'Haeun',
         夏恩: 'Haeun',
+        柳夏恩: 'Haeun',
         郑夏恩: 'Haeun',
         teacher: 'Teacher',
         'homeroom teacher': 'Teacher',
@@ -2231,12 +2241,12 @@ function getCupidCharacterCanonGuard(lang, sceneName, displayName) {
     const characterKey = normalizeCupidQualityCharacterKey(sceneName || displayName);
     if (characterKey === 'Yuna') {
         const localized = {
-            ko: `**[유나 설정 잠금]** 풀네임은 신유나이며 머리는 언제나 은백색, 눈은 붉습니다. 흑발로 바꾸지 마세요.`,
-            ja: `**[ユナの設定固定]** フルネームはシン・ユナ。髪は常に銀白色で瞳は赤い。黒髪として描写しない。`,
-            zh: `**[由娜设定锁定]** 全名申由娜。头发始终是银白色，眼睛是红色，不要写成黑发。`,
-            de: `**[Yunas Kanon]** Voller Name: Shin Yuna. Yuna hat immer silberweißes Haar und rote Augen, niemals schwarzes Haar.`
+            ko: `**[유나 설정 잠금]** 풀네임은 설유나이며 머리는 언제나 은백색, 눈은 붉습니다. 흑발로 바꾸지 마세요.`,
+            ja: `**[ユナの設定固定]** フルネームはソル・ユナ。髪は常に銀白色で瞳は赤い。黒髪として描写しない。`,
+            zh: `**[由娜设定锁定]** 全名薛由娜。头发始终是银白色，眼睛是红色，不要写成黑发。`,
+            de: `**[Yunas Kanon]** Voller Name: Seol Yuna. Yuna hat immer silberweißes Haar und rote Augen, niemals schwarzes Haar.`
         };
-        return `${localized[lang] || `**[Yuna Canon Lock]** Full name: Shin Yuna. Yuna always has silver-white hair and red eyes; never describe her hair as black.`}\n`;
+        return `${localized[lang] || `**[Yuna Canon Lock]** Full name: Seol Yuna. Yuna always has silver-white hair and red eyes; never describe her hair as black.`}\n`;
     }
     if (characterKey === 'Teacher') {
         const localized = {
@@ -3140,5 +3150,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.96';
+const PROMPT_VERSION = '2.7.97';
 window.PROMPT_VERSION = PROMPT_VERSION;
