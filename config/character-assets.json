@@ -68,8 +68,8 @@
             "assets/images/characters/dain_afterglow.png",
             "assets/characters/dain/expressions/afterglow/01/sprite.png"
           ],
-          "sha256": "23016822e15664bdbd2ed37977519b54bb1a0b1e236015fe56852ac9e6e0ab73",
-          "bytes": 1426422
+          "sha256": "b523f00366eb56facd7656a4f0376f23829b4f1d20c87ca4cd786da6aa9386e5",
+          "bytes": 1423002
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/afterglow/01/sprite.webp",
@@ -77,8 +77,8 @@
             "assets/images/characters/dain_afterglow.webp",
             "assets/characters/dain/expressions/afterglow/01/sprite.webp"
           ],
-          "sha256": "f865d99ef61eafd7c6d849347fb12e7091a2322ac7b5e2f9ba373285e778b365",
-          "bytes": 877373
+          "sha256": "a07be5f71b1d29071c11bfac99ee7cb1fa718c75cc7bf5cacd9b67f2a168818f",
+          "bytes": 874245
         }
       }
     },
@@ -1256,8 +1256,8 @@
             "assets/images/characters/dain_messy_afterglow.png",
             "assets/characters/dain/expressions/messy_afterglow/01/sprite.png"
           ],
-          "sha256": "17b705902475cb7f08cca98a2156b0adc6c1001df1def82c8f312923da2277cf",
-          "bytes": 1314857
+          "sha256": "2357ba2a37dc0ef00700cf176c3855a6adc7e9a339fe37199d7a045247027792",
+          "bytes": 1263572
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/messy_afterglow/01/sprite.webp",
@@ -1265,8 +1265,8 @@
             "assets/images/characters/dain_messy_afterglow.webp",
             "assets/characters/dain/expressions/messy_afterglow/01/sprite.webp"
           ],
-          "sha256": "de39f9c31fae78a4dfd5b4fd004c0cfa20a58ee007fe8daffd3454d49b180594",
-          "bytes": 802199
+          "sha256": "87ff9c8717638b28e3ecada773257b8624ad3b28a4c7233a0d547c52ad89b879",
+          "bytes": 776061
         }
       }
     },
@@ -2180,8 +2180,8 @@
             "assets/images/characters/haeun_afterglow.png",
             "assets/characters/haeun/expressions/afterglow/01/sprite.png"
           ],
-          "sha256": "aa73623114da1d78df1ee1844d189e0cac9bb9c8b21298ad2d7e7e7bf25b0fb9",
-          "bytes": 1305682
+          "sha256": "b4f76a3902ba8426826755872e6a28bed392d57098daed21e56e5650f6fda5dd",
+          "bytes": 1305145
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/afterglow/01/sprite.webp",
@@ -2189,8 +2189,8 @@
             "assets/images/characters/haeun_afterglow.webp",
             "assets/characters/haeun/expressions/afterglow/01/sprite.webp"
           ],
-          "sha256": "95c27241a8b663cce24d2f5357bb7fe9fe7a11f29c87371058274ad94f578c5f",
-          "bytes": 822465
+          "sha256": "23f233668ca4719b935129d0fa20434d263beb1c00ac74f66da76f6ed873f578",
+          "bytes": 788719
         }
       }
     },
@@ -3260,8 +3260,8 @@
             "assets/images/characters/haeun_messy_afterglow.png",
             "assets/characters/haeun/expressions/messy_afterglow/01/sprite.png"
           ],
-          "sha256": "0cd6cb46032d5a555a88614d3eb7cc00ada993f803e3e8270677bdafea7d072e",
-          "bytes": 1389501
+          "sha256": "cbb920a30b38aa185d74a2280df36c61f9e4c105d010c12d397abab5f8ee6232",
+          "bytes": 1387287
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/messy_afterglow/01/sprite.webp",
@@ -3269,8 +3269,8 @@
             "assets/images/characters/haeun_messy_afterglow.webp",
             "assets/characters/haeun/expressions/messy_afterglow/01/sprite.webp"
           ],
-          "sha256": "0aabd873909f4ed9a0db2755b4c0d7be4882d6a03643c0fafea2bbb688b1b35e",
-          "bytes": 862121
+          "sha256": "f1115932b263cb697ef5421c5edb3c57827b35f76e65eeb394cb254ffd81ac62",
+          "bytes": 822815
         }
       }
     },
@@ -4025,8 +4025,8 @@
             "assets/images/characters/minsu_afterglow.png",
             "assets/characters/minsu/expressions/afterglow/01/sprite.png"
           ],
-          "sha256": "70f510546a616e947f68719dadf691ed1db7eccea46e2bc5c348c461d37bced8",
-          "bytes": 1683530
+          "sha256": "30bc651e23894202181edd0cf756f47c5cbfe1270ff8a3c5bba8bc4799d2ecbf",
+          "bytes": 1679471
         },
         "sprite.webp": {
           "source": "assets/characters/minsu/expressions/afterglow/01/sprite.webp",
@@ -4034,8 +4034,8 @@
             "assets/images/characters/minsu_afterglow.webp",
             "assets/characters/minsu/expressions/afterglow/01/sprite.webp"
           ],
-          "sha256": "a53c6bea1ced75f8ac19cdb6cf31a1f79c8d3b3e8dcdde10b02294ff4997d2e8",
-          "bytes": 1075859
+          "sha256": "c0908508a5abb4bd8ec055b7fc72dbba4670cb4abb6f29277b530c3b34f018d1",
+          "bytes": 1047697
         }
       }
     },
@@ -5024,8 +5024,8 @@
             "assets/images/characters/minsu_messy_afterglow.png",
             "assets/characters/minsu/expressions/messy_afterglow/01/sprite.png"
           ],
-          "sha256": "ef0f852bfead9fea36720915c0f3e2a0c9995cd9bd6b723646dcc1b6de0cdc7b",
-          "bytes": 1713195
+          "sha256": "cc7afab1aa0382075edce8cec4b2aadcd89dfd8ec5b20167fc32c06d9b044b2e",
+          "bytes": 1634421
         },
         "sprite.webp": {
           "source": "assets/characters/minsu/expressions/messy_afterglow/01/sprite.webp",
@@ -5033,8 +5033,8 @@
             "assets/images/characters/minsu_messy_afterglow.webp",
             "assets/characters/minsu/expressions/messy_afterglow/01/sprite.webp"
           ],
-          "sha256": "893ed46d397059e7df4bd5a6d5b9a5b2d25b22b84dda29af3630b3db17957ac0",
-          "bytes": 1057885
+          "sha256": "7cb56b0653fa30f936b0bdd7cad933d9dec7814510d13300bd286b244f76efa2",
+          "bytes": 1018785
         }
       }
     },
@@ -5753,8 +5753,8 @@
             "assets/images/characters/nurse_afterglow.png",
             "assets/characters/nurse/expressions/afterglow/01/sprite.png"
           ],
-          "sha256": "82c268d767f4a92e356951fd02eec4abde20a4a869f3e1eca6de2fa5cbde9d13",
-          "bytes": 1811691
+          "sha256": "f187368018f676db153f4e5835eee008f339ac688220585b447848a55580120d",
+          "bytes": 1807163
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/afterglow/01/sprite.webp",
@@ -5762,8 +5762,8 @@
             "assets/images/characters/nurse_afterglow.webp",
             "assets/characters/nurse/expressions/afterglow/01/sprite.webp"
           ],
-          "sha256": "86fd17880619b2adda5c6db8e4826c653f4ce06ae1d27679080054ec78065f2f",
-          "bytes": 1091975
+          "sha256": "2a25b02a57bd2176c0eb6d76f13ed6fa57aac984a40e5dc2ce6058543cb1d811",
+          "bytes": 1087915
         }
       }
     },
@@ -6887,8 +6887,8 @@
             "assets/images/characters/nurse_messy_afterglow.png",
             "assets/characters/nurse/expressions/messy_afterglow/01/sprite.png"
           ],
-          "sha256": "edadac7f36d2305aee4aac03809cdcf9fd9d52ebb15eea6ae73d3f93317fbeb9",
-          "bytes": 1844188
+          "sha256": "101ff166b98ed8894ee18f36b554a5439e2992585a6f42a08a8da763188a5978",
+          "bytes": 1830361
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/messy_afterglow/01/sprite.webp",
@@ -6896,8 +6896,8 @@
             "assets/images/characters/nurse_messy_afterglow.webp",
             "assets/characters/nurse/expressions/messy_afterglow/01/sprite.webp"
           ],
-          "sha256": "5d0f686613c57639eea98ca7b88b4a4fc4a0b133b81b4c157380ebcb9ae79432",
-          "bytes": 1090517
+          "sha256": "2d50888ab3fb51365fe1a7985a7d9e5a83e6c21992611a4018a6e98f36c9b6ad",
+          "bytes": 1081175
         }
       }
     },
@@ -7711,8 +7711,8 @@
             "assets/images/characters/seyoun_afterglow.png",
             "assets/characters/seoyeon/expressions/afterglow/01/sprite.png"
           ],
-          "sha256": "4654f5e1e80889142bd0020eb4b3c3340b877d4a3ffafcb4c24c4f6b628bbad5",
-          "bytes": 1423924
+          "sha256": "2161df9d69e7ec0283edb718ba92490460c5249dd7bf0c719a50255dc89cf3b6",
+          "bytes": 1418005
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/afterglow/01/sprite.webp",
@@ -7720,8 +7720,8 @@
             "assets/images/characters/seyoun_afterglow.webp",
             "assets/characters/seoyeon/expressions/afterglow/01/sprite.webp"
           ],
-          "sha256": "283c7e30c299c4d63cc6f653e4182b3d71e8b4f398f4802c3ed1e2aa4a86a2f7",
-          "bytes": 908093
+          "sha256": "459185420b7be7e42c282d881ce8e7b6c969c0f1c5fbe0d19ba488bdc4cbab66",
+          "bytes": 865331
         }
       }
     },
@@ -8872,8 +8872,8 @@
             "assets/images/characters/seyoun_messy_afterglow.png",
             "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.png"
           ],
-          "sha256": "02bb7e49fb99f5111b1e4c4163982652c95ebe80231b5f090986ee1ff0ad0b9a",
-          "bytes": 1497163
+          "sha256": "5e92b60959563537ff26fec3166ebf4ab9449fe09a172b767be9efebce80f62d",
+          "bytes": 1491671
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.webp",
@@ -8881,8 +8881,8 @@
             "assets/images/characters/seyoun_messy_afterglow.webp",
             "assets/characters/seoyeon/expressions/messy_afterglow/01/sprite.webp"
           ],
-          "sha256": "e2080305be80c8b0c0a20d417c45df9e5d228a55c52900055695e75b2944ffcf",
-          "bytes": 956229
+          "sha256": "53c6d8cc6008342dad6bcadb6597400326c4b025c3bf31fc1daca803debc4bec",
+          "bytes": 916221
         }
       }
     },
@@ -9741,8 +9741,8 @@
             "assets/images/characters/teacher_afterglow.png",
             "assets/characters/teacher/expressions/afterglow/01/sprite.png"
           ],
-          "sha256": "904428f6595bda8f833357183e10dfd90a4ed0169a0456004270fbb519a02709",
-          "bytes": 1520562
+          "sha256": "16f6295cd528d334d49ecbc6e3a2b2e3db3eda2da368a6cd13536e5eed781679",
+          "bytes": 1516201
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/afterglow/01/sprite.webp",
@@ -9750,8 +9750,8 @@
             "assets/images/characters/teacher_afterglow.webp",
             "assets/characters/teacher/expressions/afterglow/01/sprite.webp"
           ],
-          "sha256": "cce7717d1643892fa81eae02aa0aed596b65e5b453846d3158c51e9be0996e1f",
-          "bytes": 907039
+          "sha256": "d75e25ab0546381cf37934e0a9e4465b7a9ef83bc29c610e2d9936c7f1446262",
+          "bytes": 906273
         }
       }
     },
@@ -10902,8 +10902,8 @@
             "assets/images/characters/teacher_messy_afterglow.png",
             "assets/characters/teacher/expressions/messy_afterglow/01/sprite.png"
           ],
-          "sha256": "b373e95c31325d36710d89ad069482b0762a74c0ef2b7367b2df1062293dc7ed",
-          "bytes": 1641101
+          "sha256": "a14c7b23697fb2a1f8ef28503401637ed91536a7437e182eee8ba6d5cbfa841a",
+          "bytes": 1632546
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/messy_afterglow/01/sprite.webp",
@@ -10911,8 +10911,8 @@
             "assets/images/characters/teacher_messy_afterglow.webp",
             "assets/characters/teacher/expressions/messy_afterglow/01/sprite.webp"
           ],
-          "sha256": "72c58ee7771e2986ab7196494b41488b52e35a57bfed43549cfedc11d9afb8fd",
-          "bytes": 1018081
+          "sha256": "00389cc44c2380f2020fa14b32851f142ce25cc01c2eee652622998fe3602278",
+          "bytes": 974355
         }
       }
     },
@@ -11631,8 +11631,8 @@
             "assets/images/characters/yuna_afterglow.png",
             "assets/characters/yuna/expressions/afterglow/01/sprite.png"
           ],
-          "sha256": "92dab67ca1ca6eac29944110705083537e345cb1c65225e188e26857bcc4d131",
-          "bytes": 1744017
+          "sha256": "3c99d0fd36a786fff5c0f1f0d6c16bea22905e098b11d5fca84937054404b71a",
+          "bytes": 1743262
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/afterglow/01/sprite.webp",
@@ -11640,8 +11640,8 @@
             "assets/images/characters/yuna_afterglow.webp",
             "assets/characters/yuna/expressions/afterglow/01/sprite.webp"
           ],
-          "sha256": "7de2eba4ffb47c23f401f8de75110291b963ac4e4238b9bd11f804843a6e988a",
-          "bytes": 1033003
+          "sha256": "e1ceb3254845e8f6472c89b9f2d3f93896364351e3c1625bc8649c63d5302898",
+          "bytes": 1033137
         }
       }
     },
@@ -12792,8 +12792,8 @@
             "assets/images/characters/yuna_messy_afterglow.png",
             "assets/characters/yuna/expressions/messy_afterglow/01/sprite.png"
           ],
-          "sha256": "1465a8a9671a75bcbc7e15d1c3065971631cb26683e9ec2a4b7a4b08b182e59d",
-          "bytes": 1767100
+          "sha256": "0005047b0895a003f488496b97ef339b32ec27f2602573e6d69145edec33aa63",
+          "bytes": 1765870
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/messy_afterglow/01/sprite.webp",
@@ -12801,8 +12801,8 @@
             "assets/images/characters/yuna_messy_afterglow.webp",
             "assets/characters/yuna/expressions/messy_afterglow/01/sprite.webp"
           ],
-          "sha256": "4fbc9a3c70a8cd999b3a38b4341eeb44a782542df53d8708770838399c77f800",
-          "bytes": 1050025
+          "sha256": "6965b5669fc2f122a54444aaaf528c27c0ed635e71e5fc3890e87b7e27f51281",
+          "bytes": 1050161
         }
       }
     },
