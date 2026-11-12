@@ -104,9 +104,9 @@ function getPromptData(lang = 'ko') {
             zh: 'An energetic volleyball player (full name Kang Dain / 全名姜多因; states if asked) with short brown hair and green eyes. School volleyball look is the ETAURS #19 kit, black arm sleeve, and knee gear—not a school uniform. Follow the current scene for graduation, rehab, broadcasting, or everyday clothes. Early on she hides a lingering knee injury behind smiles; after rehab or graduation she names pain and sets her own pace. Quick, candid speech; sincerity makes her quieter.'
         },
         Teacher: {
-            ko: '본명 김지현(물으면 담백하게 답함). 건조하고 침착한 담임 교사이자 미완성 원고를 품어 온 소설가 지망생. 갈색 웨이브 머리, 베이지 카디건, 흰 블라우스 차림에 볼펜을 만지작거리는 버릇이 있다. 교훈보다 짧은 농담 뒤에 감정을 숨기고 진심이 새면 문장이 짧아진다. 재학 중에는 공개된 자리와 공식 절차를 지키며 학생에게 자기 감정이나 회복을 맡기지 않는다.',
-            en: 'A dry, composed homeroom teacher (real name Kim Jihyeon; states if asked) and long-frustrated aspiring novelist: brown wavy hair, beige cardigan, white blouse, and a habit of worrying a pen. She hides emotion behind brief dry humor instead of lectures. When sincerity slips through, her sentences get shorter rather than more poetic. During the school timeline, she keeps meetings public, follows official procedures, and never makes a student responsible for her feelings or recovery.',
-            ja: '落ち着いた担任教師（本名はキム・ジヒョン、聞かれたら答える）で、未完の原稿を抱える小説家志望。茶色のウェーブヘアにベージュのカーディガン、白いブラウス姿でボールペンをいじる癖がある。学園編では長い説教ではなく短い冗談の裏に感情を隠し、授業や評価と個人の創作を切り分け、教師と生徒の一線を守る。卒業後や刊行後の場面ではその場で示された作家としての立場、場所、関係性を優先し、いつまでも「小説家志望」や在学中の関係に戻さない。'
+            ko: '본명 서혜란(물으면 담백하게 답함). 건조하고 침착한 담임 교사이자 미완성 원고를 품어 온 소설가 지망생. 갈색 웨이브 머리, 베이지 카디건, 흰 블라우스 차림에 볼펜을 만지작거리는 버릇이 있다. 교훈보다 짧은 농담 뒤에 감정을 숨기고 진심이 새면 문장이 짧아진다. 재학 중에는 공개된 자리와 공식 절차를 지키며 학생에게 자기 감정이나 회복을 맡기지 않는다.',
+            en: 'A dry, composed homeroom teacher (real name Seo Hyeran; states if asked) and long-frustrated aspiring novelist: brown wavy hair, beige cardigan, white blouse, and a habit of worrying a pen. She hides emotion behind brief dry humor instead of lectures. When sincerity slips through, her sentences get shorter rather than more poetic. During the school timeline, she keeps meetings public, follows official procedures, and never makes a student responsible for her feelings or recovery.',
+            ja: '落ち着いた担任教師（本名はソ・ヘラン、聞かれたら答える）で、未完の原稿を抱える小説家志望。茶色のウェーブヘアにベージュのカーディガン、白いブラウス姿でボールペンをいじる癖がある。学園編では長い説教ではなく短い冗談の裏に感情を隠し、授業や評価と個人の創作を切り分け、教師と生徒の一線を守る。卒業後や刊行後の場面ではその場で示された作家としての立場、場所、関係性を優先し、いつまでも「小説家志望」や在学中の関係に戻さない。'
         },
         Nurse: {
             ko: '본명 이주원(물으면 자연스럽게 답함). 대학병원 번아웃 뒤 학교로 온 여유롭고 장난기 많은 보건 교사. 보라빛 칼단발에 안경, 흰 가운과 청진기 차림이다. 의료 비유는 가끔만 쓰고 중요한 순간엔 웃음을 거두고 짧고 정확하게 말한다. 처치와 상담은 공식 절차를 따르며 호감의 핑계로 삼지 않는다.',
@@ -276,7 +276,7 @@ function normalizePromptCharacterKey(name) {
         "dain": "Dain",
         "teacher": "Teacher",
         "nurse": "Nurse",
-        "haeun": "Haeun", "seoyeon": "Seoyeon", "minsu": "Minsu", "윤서연": "Seoyeon", "이서연": "Seoyeon", "설유나": "Yuna", "신유나": "Yuna", "강다인": "Dain", "유하은": "Haeun", "정하은": "Haeun", "윤하은": "Haeun", "민수": "Minsu", "김민수": "Minsu", "박민수": "Minsu", "김지현": "Teacher", "지현": "Teacher", "이주원": "Nurse", "주원": "Nurse", "담임 선생님": "Teacher", "선생님": "Teacher", "보건 선생님": "Nurse", "보건교사": "Nurse", "양호 선생님": "Nurse", "양호선생님": "Nurse", "Yoon Seoyeon": "Seoyeon", "Lee Seoyeon": "Seoyeon", "Seol Yuna": "Yuna", "Sul Yuna": "Yuna", "Shin Yuna": "Yuna", "Kang Dain": "Dain", "Yoo Haeun": "Haeun", "Yu Haeun": "Haeun", "Jung Haeun": "Haeun", "Yoon Haeun": "Haeun", "Minsu": "Minsu", "Kim Minsu": "Minsu", "Park Minsu": "Minsu", "Kim Jihyeon": "Teacher", "Jihyeon": "Teacher", "Lee Juwon": "Nurse", "Juwon": "Nurse", "Docente de la clase": "Teacher", "Profesora tutora": "Teacher", "Enfermera escolar": "Nurse", "Professora responsável pela turma": "Teacher", "Professora da turma": "Teacher", "Enfermeira escolar": "Nurse", "ユン・ソヨン": "Seoyeon", "イ・ソヨン": "Seoyeon", "ソル・ユナ": "Yuna", "シン・ユナ": "Yuna", "カン・ダイン": "Dain", "ユ・ハウン": "Haeun", "チョン・ハウン": "Haeun", "ユン・ハウン": "Haeun", "ミンス": "Minsu", "キム・ミンス": "Minsu", "パク・ミンス": "Minsu", "キム・ジヒョン": "Teacher", "ジヒョン": "Teacher", "イ・ジュウォン": "Nurse", "ジュウォン": "Nurse", "保健の先生": "Nurse", "Schulgesundheitslehrerin": "Nurse", "Krankenschwester": "Nurse", "书妍": "Seoyeon", "尹书妍": "Seoyeon", "李书妍": "Seoyeon", "由娜": "Yuna", "薛由娜": "Yuna", "申由娜": "Yuna", "多因": "Dain", "姜多因": "Dain", "夏恩": "Haeun", "柳夏恩": "Haeun", "郑夏恩": "Haeun", "尹夏恩": "Haeun", "珉洙": "Minsu", "金珉洙": "Minsu", "朴珉洙": "Minsu", "敏秀": "Minsu", "金知贤": "Teacher", "知贤": "Teacher", "李朱媛": "Nurse", "朱媛": "Nurse", "班主任": "Teacher", "班主任老师": "Teacher", "老师": "Teacher", "保健老师": "Nurse", "校医": "Nurse"
+        "haeun": "Haeun", "seoyeon": "Seoyeon", "minsu": "Minsu", "윤서연": "Seoyeon", "이서연": "Seoyeon", "설유나": "Yuna", "신유나": "Yuna", "강다인": "Dain", "유하은": "Haeun", "정하은": "Haeun", "윤하은": "Haeun", "민수": "Minsu", "김민수": "Minsu", "박민수": "Minsu", "서혜란": "Teacher", "혜란": "Teacher", "김지현": "Teacher", "지현": "Teacher", "이주원": "Nurse", "주원": "Nurse", "담임 선생님": "Teacher", "선생님": "Teacher", "보건 선생님": "Nurse", "보건교사": "Nurse", "양호 선생님": "Nurse", "양호선생님": "Nurse", "Yoon Seoyeon": "Seoyeon", "Lee Seoyeon": "Seoyeon", "Seol Yuna": "Yuna", "Sul Yuna": "Yuna", "Shin Yuna": "Yuna", "Kang Dain": "Dain", "Yoo Haeun": "Haeun", "Yu Haeun": "Haeun", "Jung Haeun": "Haeun", "Yoon Haeun": "Haeun", "Minsu": "Minsu", "Kim Minsu": "Minsu", "Park Minsu": "Minsu", "Seo Hyeran": "Teacher", "Hyeran": "Teacher", "Kim Jihyeon": "Teacher", "Jihyeon": "Teacher", "Lee Juwon": "Nurse", "Juwon": "Nurse", "Docente de la clase": "Teacher", "Profesora tutora": "Teacher", "Enfermera escolar": "Nurse", "Professora responsável pela turma": "Teacher", "Professora da turma": "Teacher", "Enfermeira escolar": "Nurse", "ユン・ソヨン": "Seoyeon", "イ・ソヨン": "Seoyeon", "ソル・ユナ": "Yuna", "シン・ユナ": "Yuna", "カン・ダイン": "Dain", "ユ・ハウン": "Haeun", "チョン・ハウン": "Haeun", "ユン・ハウン": "Haeun", "ミンス": "Minsu", "キム・ミンス": "Minsu", "パク・ミンス": "Minsu", "ソ・ヘラン": "Teacher", "ヘラン": "Teacher", "キム・ジヒョン": "Teacher", "ジヒョン": "Teacher", "イ・ジュウォン": "Nurse", "ジュウォン": "Nurse", "保健の先生": "Nurse", "Schulgesundheitslehrerin": "Nurse", "Krankenschwester": "Nurse", "书妍": "Seoyeon", "尹书妍": "Seoyeon", "李书妍": "Seoyeon", "由娜": "Yuna", "薛由娜": "Yuna", "申由娜": "Yuna", "多因": "Dain", "姜多因": "Dain", "夏恩": "Haeun", "柳夏恩": "Haeun", "郑夏恩": "Haeun", "尹夏恩": "Haeun", "珉洙": "Minsu", "金珉洙": "Minsu", "朴珉洙": "Minsu", "敏秀": "Minsu", "徐慧兰": "Teacher", "慧兰": "Teacher", "金知贤": "Teacher", "知贤": "Teacher", "李朱媛": "Nurse", "朱媛": "Nurse", "班主任": "Teacher", "班主任老师": "Teacher", "老师": "Teacher", "保健老师": "Nurse", "校医": "Nurse"
     })[name] || name;
 }
 
@@ -355,14 +355,14 @@ const CUPID_SHARED_CAST_BRIEFS = Object.freeze({
         zh: '多因—全名姜多因。穿ETAURS 19号球衣、戴黑色护臂的坦率排球队选手，不穿校服，藏着膝伤，越认真话越少。'
     }),
     Teacher: Object.freeze({
-        ko: '담임선생님—본명 김지현. 갈색 웨이브 머리·베이지 카디건의 건조한 담임 교사이자 소설가 지망생. 재학 중엔 학생과의 공식 경계를 지킨다.',
-        en: 'Homeroom Teacher—real name Kim Jihyeon; dry aspiring novelist with brown wavy hair and beige cardigan; maintains formal student boundaries during school.',
-        es: 'Profesora tutora—nombre real Kim Jihyeon; seca aspirante a novelista, pelo castaño ondulado y cárdigan beige; mantiene límites formales con alumnos.',
-        ja: '担任の先生—本名はキム・ジヒョン。茶色のウェーブヘアとベージュのカーディガンが特徴の、乾いた小説家志望。在学中は生徒との公的な一線を守る。',
-        fr: 'Professeure principale—vrai nom Kim Jihyeon ; aspirante romancière au ton sec, cheveux bruns ondulés et cardigan beige ; garde les limites officielles.',
-        de: 'Klassenlehrerin—bürgerlicher Name Kim Jihyeon; trockene angehende Romanautorin mit braunem Wellenhaar und beiger Strickjacke; wahrt Schülergrenzen.',
-        pt: 'Professora da turma—nome verdadeiro Kim Jihyeon; aspirante a romancista, seca, cabelo castanho ondulado e cardigã bege; mantém limites formais.',
-        zh: '班主任—本名金知贤。棕色波浪发、米色开衫的干练班主任，也是怀有小说家梦想的人。在校期间与学生保持正式的界线。'
+        ko: '담임선생님—본명 서혜란. 갈색 웨이브 머리·베이지 카디건의 건조한 담임 교사이자 소설가 지망생. 재학 중엔 학생과의 공식 경계를 지킨다.',
+        en: 'Homeroom Teacher—real name Seo Hyeran; dry aspiring novelist with brown wavy hair and beige cardigan; maintains formal student boundaries during school.',
+        es: 'Profesora tutora—nombre real Seo Hyeran; seca aspirante a novelista, pelo castaño ondulado y cárdigan beige; mantiene límites formales con alumnos.',
+        ja: '担任の先生—本名はソ・ヘラン。茶色のウェーブヘアとベージュのカーディガンが特徴の、乾いた小説家志望。在学中は生徒との公的な一線を守る。',
+        fr: 'Professeure principale—vrai nom Seo Hyeran ; aspirante romancière au ton sec, cheveux bruns ondulés et cardigan beige ; garde les limites officielles.',
+        de: 'Klassenlehrerin—bürgerlicher Name Seo Hyeran; trockene angehende Romanautorin mit braunem Wellenhaar und beiger Strickjacke; wahrt Schülergrenzen.',
+        pt: 'Professora da turma—nome verdadeiro Seo Hyeran; aspirante a romancista, seca, cabelo castanho ondulado e cardigã bege; mantém limites formais.',
+        zh: '班主任—本名徐慧兰。棕色波浪发、米色开衫的干练班主任，也是怀有小说家梦想的人。在校期间与学生保持正式的界线。'
     }),
     Nurse: Object.freeze({
         ko: '보건선생님—본명 이주원. 26세 보건 교사(의사 아님). 보라빛 칼단발·안경·흰 가운의 장난스럽고 정확한 인물이며 처치는 절차를 따른다.',
@@ -2215,6 +2215,14 @@ function normalizeCupidQualityCharacterKey(value) {
         teacher: 'Teacher',
         'homeroom teacher': 'Teacher',
         담임선생님: 'Teacher',
+        서혜란: 'Teacher',
+        혜란: 'Teacher',
+        'seo hyeran': 'Teacher',
+        hyeran: 'Teacher',
+        'ソ・ヘラン': 'Teacher',
+        'ヘラン': 'Teacher',
+        徐慧兰: 'Teacher',
+        慧兰: 'Teacher',
         김지현: 'Teacher',
         'kim jihyeon': 'Teacher',
         'キム・ジヒョン': 'Teacher',
@@ -2250,12 +2258,12 @@ function getCupidCharacterCanonGuard(lang, sceneName, displayName) {
     }
     if (characterKey === 'Teacher') {
         const localized = {
-            ko: `**[담임선생님 설정 잠금]** 본명은 김지현입니다. 본명을 물으면 다른 이름을 지어내지 않고 김지현이라고 답합니다.`,
-            ja: `**[担任の先生の設定固定]** 本名はキム・ジヒョン。本名を聞かれたら別の名前を作らずキム・ジヒョンと答える。`,
-            zh: `**[班主任设定锁定]** 本名金知贤。被问到本名时不要回避或编造，自然回答金知贤。`,
-            de: `**[Kanon der Klassenlehrerin]** Bürgerlicher Name: Kim Jihyeon (bei Nachfrage natürlich nennen, keinen anderen erfinden).`
+            ko: `**[담임선생님 설정 잠금]** 본명은 서혜란입니다. 본명을 물으면 다른 이름을 지어내지 않고 서혜란이라고 답합니다.`,
+            ja: `**[担任の先生の設定固定]** 本名はソ・ヘラン。本名を聞かれたら別の名前を作らずソ・ヘランと答える。`,
+            zh: `**[班主任设定锁定]** 本名徐慧兰。被问到本名时不要回避或编造，自然回答徐慧兰。`,
+            de: `**[Kanon der Klassenlehrerin]** Bürgerlicher Name: Seo Hyeran (bei Nachfrage natürlich nennen, keinen anderen erfinden).`
         };
-        return `${localized[lang] || `**[Homeroom Teacher Canon Lock]** Real name: Kim Jihyeon (state naturally if asked; never dodge or invent another name).`}\n`;
+        return `${localized[lang] || `**[Homeroom Teacher Canon Lock]** Real name: Seo Hyeran (state naturally if asked; never dodge or invent another name).`}\n`;
     }
     if (characterKey === 'Nurse') {
         const localized = {
@@ -3150,5 +3158,5 @@ window.buildSystemPrompt = function buildSystemPromptWithCacheBoundary(params) {
 window.buildCupidGroupSystemPrompt = buildCupidGroupSystemPrompt;
 
 // 프롬프트 콘텐츠 버전 — 정적 prompt 변경 시 올려서 Gemini 캐시를 무효화
-const PROMPT_VERSION = '2.7.97';
+const PROMPT_VERSION = '2.7.98';
 window.PROMPT_VERSION = PROMPT_VERSION;
