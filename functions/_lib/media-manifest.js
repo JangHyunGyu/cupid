@@ -1669,21 +1669,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_oral_service": {
-    "version": "f47f06676f950ee21274f901",
+    "version": "a8336407922c9521e040c4ce",
     "files": [
       {
         "path": "assets/images/characters/dain_oral_service.png",
-        "key": "images/9ad4946ce7d64b53fab7bb7f63ab948ff8c11b4decb2008f891a7b71345b18be.png",
-        "sha256": "9ad4946ce7d64b53fab7bb7f63ab948ff8c11b4decb2008f891a7b71345b18be",
-        "etag": "dde13befb9556d59a6434df22a579bdd",
-        "size": 1396533
+        "key": "images/58d277e350f696ae17f64a4ab635e7a9cd03575b599d15f2a53d228c81c503ad.png",
+        "sha256": "58d277e350f696ae17f64a4ab635e7a9cd03575b599d15f2a53d228c81c503ad",
+        "etag": "7bd7e248516a0fa4e5e7e6d03afe8628",
+        "size": 1385254
       },
       {
         "path": "assets/images/characters/dain_oral_service.webp",
-        "key": "images/a68bebd7a799c7a2be1290761951a2dcfd1feef83675a9da335e8ad52bbd45d4.webp",
-        "sha256": "a68bebd7a799c7a2be1290761951a2dcfd1feef83675a9da335e8ad52bbd45d4",
-        "etag": "4e652046ce9ab3cf056c070a73cd9cad",
-        "size": 845886
+        "key": "images/8e026440d364b72d42fa489bf60e4944517e2ba402bc0d974c65311c06693bcb.webp",
+        "sha256": "8e026440d364b72d42fa489bf60e4944517e2ba402bc0d974c65311c06693bcb",
+        "etag": "fd3a2ab4a3a0ddfcccf9b99168355921",
+        "size": 844744
       }
     ]
   },
@@ -2999,21 +2999,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/haeun_oral_service": {
-    "version": "6406b2515200af442ee11238",
+    "version": "56daba63f3dd0aae70d32ed9",
     "files": [
       {
         "path": "assets/images/characters/haeun_oral_service.png",
-        "key": "images/176fc2ef757ec92482046e6d5b2346aea4992725548882dbf5a052450d1df482.png",
-        "sha256": "176fc2ef757ec92482046e6d5b2346aea4992725548882dbf5a052450d1df482",
-        "etag": "06c8bd9eb2bc53cf26a35d6f6b3cdf8c",
-        "size": 1465035
+        "key": "images/a53eedd04f362ae206bd1a87e7f8df1256933d1b8d9ead1717b027a574d67d42.png",
+        "sha256": "a53eedd04f362ae206bd1a87e7f8df1256933d1b8d9ead1717b027a574d67d42",
+        "etag": "80f3ce0cc408ccbdcace9a13ab345ce2",
+        "size": 1463775
       },
       {
         "path": "assets/images/characters/haeun_oral_service.webp",
-        "key": "images/fd13a5784935447451e8082a4f6e2bb0fe630595274cb428537c82a3a0b2f02f.webp",
-        "sha256": "fd13a5784935447451e8082a4f6e2bb0fe630595274cb428537c82a3a0b2f02f",
-        "etag": "3343357a181d2262ebeca0971c705c7a",
-        "size": 883804
+        "key": "images/f0c50c63a189711513dee9928501ecd71aab365424234d4e35692c84e1ab6c60.webp",
+        "sha256": "f0c50c63a189711513dee9928501ecd71aab365424234d4e35692c84e1ab6c60",
+        "etag": "6d38021240aaefd0e7dc8fa368316f29",
+        "size": 883494
       }
     ]
   },
@@ -4239,21 +4239,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/minsu_oral_service": {
-    "version": "2376483f78b5e62320a31753",
+    "version": "2375d800d2c9118aa64dcb50",
     "files": [
       {
         "path": "assets/images/characters/minsu_oral_service.png",
-        "key": "images/d692307a068805d2192912dc081f7a652d147c92503d1fe237ded8dadc169e36.png",
-        "sha256": "d692307a068805d2192912dc081f7a652d147c92503d1fe237ded8dadc169e36",
-        "etag": "46a5f3a39066d1f216b100ee9fbe92bf",
-        "size": 1556926
+        "key": "images/55a829f24dfb3073c4c8858909e7db5e4c4fc54144de3bcada55be53af2c69c1.png",
+        "sha256": "55a829f24dfb3073c4c8858909e7db5e4c4fc54144de3bcada55be53af2c69c1",
+        "etag": "706a4bb7bc09934f69d1db407c6d1407",
+        "size": 1551539
       },
       {
         "path": "assets/images/characters/minsu_oral_service.webp",
-        "key": "images/3eac0f9674498f1bf3de6063f5b323b7d4bbd0da8dfce1ca69c5f73224782893.webp",
-        "sha256": "3eac0f9674498f1bf3de6063f5b323b7d4bbd0da8dfce1ca69c5f73224782893",
-        "etag": "ac5e5abda73ee45e958748c558c0eb4c",
-        "size": 970270
+        "key": "images/07b645982a95ba339b93b4617b561b7421b94633ac4ed1c4ed9439cb0ee90f9a.webp",
+        "sha256": "07b645982a95ba339b93b4617b561b7421b94633ac4ed1c4ed9439cb0ee90f9a",
+        "etag": "fdccd58d7f5cafec0ca89830fc57e853",
+        "size": 968922
       }
     ]
   },
@@ -5610,21 +5610,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/nurse_oral_service": {
-    "version": "ca4da9f7771a24886b1cbaa8",
+    "version": "dc283fd9b2457e2e096efd8e",
     "files": [
       {
         "path": "assets/images/characters/nurse_oral_service.png",
-        "key": "images/8fb7deabe1938960b23c2bd8e249d9c2b89f17282569a3cfe40c31ae3753bb0a.png",
-        "sha256": "8fb7deabe1938960b23c2bd8e249d9c2b89f17282569a3cfe40c31ae3753bb0a",
-        "etag": "169d94a7b38ae5808d211ecaf27954b9",
-        "size": 1758436
+        "key": "images/23a6358b1609ff72fe4fbe487f2dac5cad089a270e18f6d2f0746a22657b993f.png",
+        "sha256": "23a6358b1609ff72fe4fbe487f2dac5cad089a270e18f6d2f0746a22657b993f",
+        "etag": "44fcd3f859920b746717c617baa257be",
+        "size": 1757667
       },
       {
         "path": "assets/images/characters/nurse_oral_service.webp",
-        "key": "images/4acd9d3e3ee0e2d776207322eb5917c03d9cbd6963e13037e21860c7a14691ee.webp",
-        "sha256": "4acd9d3e3ee0e2d776207322eb5917c03d9cbd6963e13037e21860c7a14691ee",
-        "etag": "4d7ef872f1b3cd089e4acf9c0c345cbb",
-        "size": 1036260
+        "key": "images/443973a1d32b796967941262443d0f7ba42e259487fae5a946bb022c25d990c3.webp",
+        "sha256": "443973a1d32b796967941262443d0f7ba42e259487fae5a946bb022c25d990c3",
+        "etag": "d7b7f9fc55cea5b63e80de97f778a6d6",
+        "size": 1035588
       }
     ]
   },
@@ -7035,21 +7035,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/seyoun_oral_service": {
-    "version": "4b2341c840246c8e1f9f666d",
+    "version": "ffbc346c27746406034f633c",
     "files": [
       {
         "path": "assets/images/characters/seyoun_oral_service.png",
-        "key": "images/4116ce01d85fa32eb133872bff3bb66904e0db49f379c80935d80e6c02ba2f1f.png",
-        "sha256": "4116ce01d85fa32eb133872bff3bb66904e0db49f379c80935d80e6c02ba2f1f",
-        "etag": "d2d36bf974c3d5a59d9d349455fb1025",
-        "size": 1201132
+        "key": "images/5525e4d3ab3da538bf96caa6a988adeb5b714750d45b6c41f7a20b100e5ee930.png",
+        "sha256": "5525e4d3ab3da538bf96caa6a988adeb5b714750d45b6c41f7a20b100e5ee930",
+        "etag": "0323ebfd8a518f8a2387c7282238be88",
+        "size": 1177627
       },
       {
         "path": "assets/images/characters/seyoun_oral_service.webp",
-        "key": "images/51d33415166b24d78574def22e7d72f842e6039720dc36ec8e45400da19b924d.webp",
-        "sha256": "51d33415166b24d78574def22e7d72f842e6039720dc36ec8e45400da19b924d",
-        "etag": "7ab2cb66673c7119cba3820106be7fdd",
-        "size": 675774
+        "key": "images/cd2479e888fa42d7631c3725f27312cc272a20e5ca9f29d071ba7fa3795ce155.webp",
+        "sha256": "cd2479e888fa42d7631c3725f27312cc272a20e5ca9f29d071ba7fa3795ce155",
+        "etag": "3b4ea881db750dc48c67421c9d30c02c",
+        "size": 673690
       }
     ]
   },
@@ -8365,21 +8365,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/teacher_oral_service": {
-    "version": "fb3ad64c2836d80374f7562e",
+    "version": "fed26e04898cf311ed89c0db",
     "files": [
       {
         "path": "assets/images/characters/teacher_oral_service.png",
-        "key": "images/c2521f5b298023a517523181c8cd07408f76f535a9ce41c69c3ac629d5d46067.png",
-        "sha256": "c2521f5b298023a517523181c8cd07408f76f535a9ce41c69c3ac629d5d46067",
-        "etag": "6fbe0e9a1dfa35840cb3edf9e3eb0c45",
-        "size": 1560003
+        "key": "images/19cbca5e1fd424c35835db93d7c3c40dd0d69125bf43a6f91dbabeda6a9cd8ec.png",
+        "sha256": "19cbca5e1fd424c35835db93d7c3c40dd0d69125bf43a6f91dbabeda6a9cd8ec",
+        "etag": "2e83e9449fa157a176d8807500a87bc1",
+        "size": 1542764
       },
       {
         "path": "assets/images/characters/teacher_oral_service.webp",
-        "key": "images/bc3471710140776f4fb631382bb27e927788784d7eefda9fea27d9d880f60e6f.webp",
-        "sha256": "bc3471710140776f4fb631382bb27e927788784d7eefda9fea27d9d880f60e6f",
-        "etag": "4fcd4925427b46ff683ecbc8540558a8",
-        "size": 907428
+        "key": "images/4468f0bd51df1632a4e776c38f8c333a9ad2b3d73800f08ec95e787583f3b13c.webp",
+        "sha256": "4468f0bd51df1632a4e776c38f8c333a9ad2b3d73800f08ec95e787583f3b13c",
+        "etag": "29a61da109ed5fef3b206b5d77bff8b1",
+        "size": 904736
       }
     ]
   },
@@ -9755,21 +9755,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/yuna_oral_service": {
-    "version": "6604f303caac4813e1b23df1",
+    "version": "15fb507d71b68e0a13b29ae6",
     "files": [
       {
         "path": "assets/images/characters/yuna_oral_service.png",
-        "key": "images/eebad0c95c598615b45ca01023702a2732aa3fb536a6eb41ffe16ebc498326c2.png",
-        "sha256": "eebad0c95c598615b45ca01023702a2732aa3fb536a6eb41ffe16ebc498326c2",
-        "etag": "03362c11d5f421a33bd7981920afec89",
-        "size": 1697603
+        "key": "images/1b1fbd96715181228c05efe67a51d24af64c3735df6fb59146dd00cf09be6397.png",
+        "sha256": "1b1fbd96715181228c05efe67a51d24af64c3735df6fb59146dd00cf09be6397",
+        "etag": "bff9fe2f409ced7474ff53d5e9152d68",
+        "size": 1696918
       },
       {
         "path": "assets/images/characters/yuna_oral_service.webp",
-        "key": "images/95d8e902d5d5497f1734fec9b9214c174edb25230e48bbffecd297c6c177a566.webp",
-        "sha256": "95d8e902d5d5497f1734fec9b9214c174edb25230e48bbffecd297c6c177a566",
-        "etag": "b6b1c253afe6804f567a03680e4f7f88",
-        "size": 1006764
+        "key": "images/33691e1eb06fcf5b93eac0dda978db510e212a218011e6ff798da0856724fc69.webp",
+        "sha256": "33691e1eb06fcf5b93eac0dda978db510e212a218011e6ff798da0856724fc69",
+        "etag": "a5f4e7b625c1044c933edc2ed4e032b9",
+        "size": 1006522
       }
     ]
   },
