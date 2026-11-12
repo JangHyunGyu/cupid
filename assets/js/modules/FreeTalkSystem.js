@@ -42,10 +42,11 @@ function cupidExpressionImageChoices(sceneName, displayName) {
     const expressionMap = typeof getCharacterExpressionSet === 'function'
         ? getCharacterExpressionSet(sceneName, displayName)
         : null;
+    const excluded = new Set(CupidFreeTalkCore.NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS || ['bikini']);
     const codes = [];
     for (const value of Object.keys(expressionMap || {})) {
         const code = String(value || '').trim().toLowerCase();
-        if (!/^[a-z][a-z0-9_-]{0,31}$/.test(code) || codes.includes(code)) continue;
+        if (!/^[a-z][a-z0-9_-]{0,31}$/.test(code) || excluded.has(code) || codes.includes(code)) continue;
         codes.push(code);
     }
     if (!codes.includes('normal')) codes.unshift('normal');
@@ -3543,16 +3544,17 @@ class FreeTalkSystem {
                     ? getCharacterExpressionSet(this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name, scene.name)
                     : (window.CHARACTER_EXPRESSIONS[this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name] || window.CHARACTER_EXPRESSIONS[scene.name]);
 
-                // 해당 표정이 정의되어 있으면 이미지 변경
-                if (charExprs && charExprs[exprName]) {
+                // 배경 미제거 갤러리 전용 CG를 제외한 유효 표정만 반영
+                const normalizedExpr = CupidFreeTalkCore.normalizeAvailableExpression(exprName, Object.keys(charExprs || {}));
+                if (normalizedExpr && charExprs && charExprs[normalizedExpr]) {
                     const centerSlot = this.uiManager.charSlots.center;  // 중앙 캐릭터 슬롯
 
                     // 🔧 centerSlot이 없으면 표정 변경 스킵
                     if (!centerSlot) continue;
 
-                                        const basePath = charExprs[exprName];
+                                        const basePath = charExprs[normalizedExpr];
                     const rawPath = typeof window.pickCharacterExpressionVariant === 'function'
-                        ? window.pickCharacterExpressionVariant(this.charNameMap?.[scene.name] || scene.name, exprName, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
+                        ? window.pickCharacterExpressionVariant(this.charNameMap?.[scene.name] || scene.name, normalizedExpr, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
                         : basePath;
 
                     // 이미 이미지가 있으면 src만 변경, 없으면 새로 생성

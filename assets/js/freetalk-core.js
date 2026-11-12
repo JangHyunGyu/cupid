@@ -377,17 +377,20 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Choose expression only from that speaker\'s image codes in this request, and write it before visible text. During a sexual act, choose the better fit among "flushed", "climax", "exhausted", "shy", "pain", and "cry" from the codes that speaker has. ' + buildExhaustionExpressionGuidance(lang);
     }
 
+    const NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS = Object.freeze(['bikini']);
+    const NON_CUTOUT_GALLERY_ONLY_EXPRESSION_SET = new Set(NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS);
+
     function normalizeAvailableExpression(expression, validExpressions = []) {
         const valid = new Set(
             (Array.isArray(validExpressions) ? validExpressions : Object.keys(validExpressions || {}))
                 .map(value => String(value || '').toLowerCase())
-                .filter(Boolean)
+                .filter(value => value && !NON_CUTOUT_GALLERY_ONLY_EXPRESSION_SET.has(value))
         );
         const requested = String(expression || '').toLowerCase();
         const canonical = requested === 'shy2'
             ? 'very_shy'
             : (requested === 'neutral' && !valid.has('neutral') ? 'normal' : requested);
-        return canonical && valid.has(canonical) ? canonical : '';
+        return canonical && !NON_CUTOUT_GALLERY_ONLY_EXPRESSION_SET.has(canonical) && valid.has(canonical) ? canonical : '';
     }
 
     function normalizeNonNegativeInteger(value, fallback = 0) {
@@ -2422,6 +2425,7 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         buildRelationshipAftermathBlock,
         buildExpressionAffinityGuidance,
         buildExhaustionExpressionGuidance,
+        NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS,
         normalizeAvailableExpression,
         normalizePromptBlockForCache,
         shouldFailOverAiResponse,

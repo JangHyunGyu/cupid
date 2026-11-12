@@ -1073,10 +1073,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             let _streamingStarted = false;
             this._streamedExpressionKeys = new Set();
             const expressionChoices = (() => {
+                const excluded = new Set(GalleryFreeTalkCore.NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS || ['bikini']);
                 const codes = [];
                 for (const value of this.CHAR_EXPRESSIONS[requestCharId] || []) {
                     const code = String(value || '').trim().toLowerCase();
-                    if (!/^[a-z][a-z0-9_-]{0,31}$/.test(code) || codes.includes(code)) continue;
+                    if (!/^[a-z][a-z0-9_-]{0,31}$/.test(code) || excluded.has(code) || codes.includes(code)) continue;
                     codes.push(code);
                 }
                 if (!codes.includes('normal')) codes.unshift('normal');

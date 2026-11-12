@@ -2576,3 +2576,106 @@ test('Teacher and Nurse canonical real names stay locked across Main, Group, and
         }
     }
 });
+
+test('non-cutout bikini gallery CG is excluded from expression sprites and every FreeTalk path while preserved in GalleryData', () => {
+    assert.deepEqual(core.NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS, ['bikini']);
+    assert.equal(core.normalizeAvailableExpression('bikini', ['normal', 'bikini']), '');
+    assert.equal(core.normalizeAvailableExpression('BIKINI', { normal: 'a.png', bikini: 'b.png' }), '');
+
+    const runtimeWindow = { CupidFreeTalkCore: core, GalleryFreeTalkCore: core };
+    const sandbox = {
+        window: runtimeWindow,
+        CupidFreeTalkCore: core,
+        GalleryFreeTalkCore: core,
+        CHAR_NAME_MAP: { 서연: 'Seoyeon', 유나: 'Yuna', 다인: 'Dain', 담임선생님: 'Teacher', 보건선생님: 'Nurse', 하은: 'Haeun', 민수: 'Minsu' },
+        DEFAULT_MAX_FREE_TALK_TURNS: 3,
+        document: {
+            documentElement: { lang: 'ko' },
+            getElementById: () => ({ src: '', dataset: {}, getAttribute: () => null, removeAttribute() {} }),
+            querySelectorAll: () => [],
+            addEventListener() {}
+        },
+        navigator: { onLine: true },
+        console: { log() {}, info() {}, warn() {}, error() {} },
+        getAssetUrl: value => value,
+        setTimeout,
+        clearTimeout,
+        URL,
+        URLSearchParams,
+        Math,
+        Date,
+        Object,
+        Array,
+        String,
+        Number,
+        Set,
+        Map,
+        Promise
+    };
+    vm.runInNewContext(read('assets/js/gallery-data.js'), sandbox);
+    vm.runInNewContext(read('assets/js/prompts.js'), sandbox);
+    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), sandbox);
+    vm.runInNewContext(read('assets/js/gallery-freetalk.js'), sandbox);
+
+    for (const speaker of ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse', 'Haeun', 'Minsu']) {
+        assert.equal('bikini' in (runtimeWindow.CHARACTER_EXPRESSIONS[speaker] || {}), false, speaker + ' CHARACTER_EXPRESSIONS must not contain bikini');
+        const choices = sandbox.cupidExpressionImageChoices(speaker, speaker);
+        assert.equal(choices.includes('bikini'), false, speaker + ' cupidExpressionImageChoices must not contain bikini');
+    }
+
+    for (const galleryId of ['seyoun', 'yuna', 'dain', 'teacher', 'nurse']) {
+        assert.equal(sandbox.GalleryData.getCharacter('ko', galleryId).expressions.includes('bikini'), true, galleryId + ' GalleryData viewer keeps bikini CG');
+    }
+
+    const promptData = sandbox.getPromptData('ko');
+    const storyPrompt = sandbox.buildSystemPrompt({
+        lang: 'ko',
+        sceneName: 'Seoyeon',
+        displayName: '서연',
+        locationName: '학생회실',
+        context: '일상 대화',
+        affinity: 50,
+        promptData,
+        playerName: '주인공',
+        knowsName: true
+    });
+    const groupPrompt = sandbox.buildCupidGroupSystemPrompt({
+        lang: 'ko',
+        participants: [
+            { id: 'Seoyeon', name: '서연', role: 'focus' },
+            { id: 'Dain', name: '다인', role: 'companion' }
+        ],
+        locationName: '복도',
+        context: '일상 대화',
+        affinities: { Seoyeon: 50, Dain: 50 },
+        promptData,
+        playerName: '주인공'
+    });
+    assert.equal(/\bbikini\b/i.test(storyPrompt), false);
+    assert.equal(/\bbikini\b/i.test(groupPrompt), false);
+
+    // Even if a stale runtime map still injected bikini, FreeTalk choice/render paths reject it.
+    runtimeWindow.CHARACTER_EXPRESSIONS = {
+        ...runtimeWindow.CHARACTER_EXPRESSIONS,
+        Seoyeon: { ...runtimeWindow.CHARACTER_EXPRESSIONS.Seoyeon, bikini: 'assets/images/characters/seyoun_bikini.png' }
+    };
+    assert.equal(sandbox.cupidExpressionImageChoices('Seoyeon', '서연').includes('bikini'), false);
+
+    const img = { src: 'initial.png', dataset: {} };
+    const slot = { dataset: { groupCharId: 'Seoyeon' }, querySelector: () => img };
+    const ft = new runtimeWindow.FreeTalkSystem({}, {}, { charSlots: { center: slot, left: slot } }, {});
+    ft.charNameMap = sandbox.CHAR_NAME_MAP;
+    assert.equal(ft.applyExpression('bikini', { name: '서연' }), undefined);
+    assert.equal(img.src, 'initial.png');
+    ft.processExpressionTags('[EXPRESSION: bikini] 안녕', { name: '서연' });
+    assert.equal(img.src, 'initial.png');
+    const groupSel = ft._applyGroupExpression('bikini', 'Seoyeon');
+    assert.equal(groupSel.expression, '');
+    assert.equal(img.src, 'initial.png');
+
+    const gft = new runtimeWindow.GalleryFreeTalk('ko', { getPlayerName: () => '주인공', getCurrentAffinity: () => 100 });
+    for (const id of ['seyoun', 'yuna', 'dain', 'teacher', 'nurse', 'haeun']) {
+        assert.equal((gft.CHAR_EXPRESSIONS[id] || []).includes('bikini'), false);
+        assert.equal(gft._updateExpression('bikini', id), undefined);
+    }
+});
