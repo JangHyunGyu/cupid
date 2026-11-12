@@ -714,7 +714,16 @@
     };
 
     if (window.preventAutoStart && new URLSearchParams(location.search).get('gate') !== '1') {
-        setLandingControlsReady(true);
+        // 랜딩 버튼의 onclick(startGame 등)은 이 로더 뒤의 인라인 스크립트에 정의된다.
+        // HTML 파싱이 끝나기 전에 버튼을 켜면 startGame is not defined 가 날 수 있어 DOMContentLoaded 뒤로 미룬다.
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', function() {
+                if (!window.gameScriptsLoaded && runtimePromise) return;
+                setLandingControlsReady(true);
+            }, { once: true });
+        } else {
+            setLandingControlsReady(true);
+        }
         loadScript('ga.js').catch(function(error) {
             if (typeof window.__cupidLogRuntimeError === 'function') {
                 window.__cupidLogRuntimeError('AnalyticsLoadError', error && error.message, error && error.stack, 'game-loader');
