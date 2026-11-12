@@ -2483,20 +2483,25 @@ test('Teacher and Nurse canonical real names stay locked across Main, Group, and
         vm.runInContext(read(rel), sandbox, { filename: rel });
     }
     const expected = {
-        ko: { teacher: '김지현', nurse: '이주원' },
-        en: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
-        es: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
-        ja: { teacher: 'キム・ジヒョン', nurse: 'イ・ジュウォン' },
-        fr: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
-        de: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
-        pt: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon' },
-        zh: { teacher: '金知贤', nurse: '李朱媛' }
+        ko: { teacher: '김지현', nurse: '이주원', seoyeon: '윤서연', yuna: '신유나', dain: '강다인', haeun: '정하은', minsu: '박민수' },
+        en: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
+        es: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
+        ja: { teacher: 'キム・ジヒョン', nurse: 'イ・ジュウォン', seoyeon: 'ユン・ソヨン', yuna: 'シン・ユナ', dain: 'カン・ダイン', haeun: 'チョン・ハウン', minsu: 'パク・ミンス' },
+        fr: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
+        de: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
+        pt: { teacher: 'Kim Jihyeon', nurse: 'Lee Juwon', seoyeon: 'Yoon Seoyeon', yuna: 'Shin Yuna', dain: 'Kang Dain', haeun: 'Jung Haeun', minsu: 'Park Minsu' },
+        zh: { teacher: '金知贤', nurse: '李朱媛', seoyeon: '尹书妍', yuna: '申由娜', dain: '姜多因', haeun: '郑夏恩', minsu: '朴珉洙' }
     };
-    for (const alias of ['김지현', '지현', 'Kim Jihyeon', 'Jihyeon', 'キム・ジヒョン', 'ジヒョン', '金知贤', '知贤']) {
-        assert.equal(sandbox.window.normalizePromptCharacterKey(alias), 'Teacher');
-    }
-    for (const alias of ['이주원', '주원', 'Lee Juwon', 'Juwon', 'イ・ジュウォン', 'ジュウォン', '李朱媛', '朱媛']) {
-        assert.equal(sandbox.window.normalizePromptCharacterKey(alias), 'Nurse');
+    for (const [alias, expectedKey] of [
+        ['김지현', 'Teacher'], ['지현', 'Teacher'], ['Kim Jihyeon', 'Teacher'], ['Jihyeon', 'Teacher'], ['キム・ジヒョン', 'Teacher'], ['ジヒョン', 'Teacher'], ['金知贤', 'Teacher'], ['知贤', 'Teacher'],
+        ['이주원', 'Nurse'], ['주원', 'Nurse'], ['Lee Juwon', 'Nurse'], ['Juwon', 'Nurse'], ['イ・ジュウォン', 'Nurse'], ['ジュウォン', 'Nurse'], ['李朱媛', 'Nurse'], ['朱媛', 'Nurse'],
+        ['윤서연', 'Seoyeon'], ['Yoon Seoyeon', 'Seoyeon'], ['ユン・ソヨン', 'Seoyeon'], ['尹书妍', 'Seoyeon'],
+        ['신유나', 'Yuna'], ['Shin Yuna', 'Yuna'], ['シン・ユナ', 'Yuna'], ['申由娜', 'Yuna'],
+        ['강다인', 'Dain'], ['Kang Dain', 'Dain'], ['カン・ダイン', 'Dain'], ['姜多因', 'Dain'],
+        ['정하은', 'Haeun'], ['Jung Haeun', 'Haeun'], ['チョン・ハウン', 'Haeun'], ['郑夏恩', 'Haeun'],
+        ['박민수', 'Minsu'], ['Park Minsu', 'Minsu'], ['パク・ミンス', 'Minsu'], ['朴珉洙', 'Minsu']
+    ]) {
+        assert.equal(sandbox.window.normalizePromptCharacterKey(alias), expectedKey);
     }
     const gallery = new sandbox.window.GalleryFreeTalk('ko', {
         getPlayerName: () => 'Alex',
@@ -2504,65 +2509,70 @@ test('Teacher and Nurse canonical real names stay locked across Main, Group, and
     });
     for (const [lang, names] of Object.entries(expected)) {
         const data = sandbox.window.getPromptData(lang, 'Alex');
-        const mainTeacher = sandbox.window.buildSystemPrompt({
+        const buildMain = (sceneName, displayName) => sandbox.window.buildSystemPrompt({
             isEn: lang !== 'ko',
             lang,
-            sceneName: 'Teacher',
-            displayName: lang === 'ko' ? '담임선생님' : 'Homeroom Teacher',
+            sceneName,
+            displayName,
             locationName: 'Classroom',
-            context: 'Asking her real name.',
+            context: 'Asking full names.',
             affinity: 45,
             promptData: data,
             playerName: 'Alex',
             knowsName: true
         });
-        const mainNurse = sandbox.window.buildSystemPrompt({
-            isEn: lang !== 'ko',
-            lang,
-            sceneName: 'Nurse',
-            displayName: lang === 'ko' ? '보건선생님' : 'School Nurse',
-            locationName: 'Infirmary',
-            context: 'Asking her real name.',
-            affinity: 45,
-            promptData: data,
-            playerName: 'Alex',
-            knowsName: true
-        });
-        const mainSeoyeon = sandbox.window.buildSystemPrompt({
-            isEn: lang !== 'ko',
-            lang,
-            sceneName: 'Seoyeon',
-            displayName: lang === 'ko' ? '서연' : 'Seoyeon',
-            locationName: 'Council Room',
-            context: 'Talking about teachers.',
-            affinity: 45,
-            promptData: data,
-            playerName: 'Alex',
-            knowsName: true
-        });
+        const mainTeacher = buildMain('Teacher', lang === 'ko' ? '담임선생님' : 'Homeroom Teacher');
+        const mainNurse = buildMain('Nurse', lang === 'ko' ? '보건선생님' : 'School Nurse');
+        const mainSeoyeon = buildMain('Seoyeon', lang === 'ko' ? '서연' : 'Seoyeon');
+        const mainYuna = buildMain('Yuna', lang === 'ko' ? '유나' : 'Yuna');
+        const mainDain = buildMain('Dain', lang === 'ko' ? '다인' : 'Dain');
+        const mainHaeun = buildMain('Haeun', lang === 'ko' ? '하은' : 'Haeun');
         assert.ok(mainTeacher.includes(names.teacher), `${lang} main Teacher prompt must include ${names.teacher}`);
         assert.ok(mainNurse.includes(names.nurse), `${lang} main Nurse prompt must include ${names.nurse}`);
-        assert.ok(mainSeoyeon.includes(names.teacher) && mainSeoyeon.includes(names.nurse), `${lang} shared cast knowledge must include both teacher real names`);
+        assert.ok(mainSeoyeon.includes(names.seoyeon), `${lang} main Seoyeon prompt must include ${names.seoyeon}`);
+        assert.ok(mainYuna.includes(names.yuna), `${lang} main Yuna prompt must include ${names.yuna}`);
+        assert.ok(mainDain.includes(names.dain), `${lang} main Dain prompt must include ${names.dain}`);
+        assert.ok(mainHaeun.includes(names.haeun), `${lang} main Haeun prompt must include ${names.haeun}`);
+        assert.ok(
+            mainTeacher.includes(names.seoyeon)
+            && mainTeacher.includes(names.yuna)
+            && mainTeacher.includes(names.dain)
+            && mainTeacher.includes(names.haeun)
+            && mainTeacher.includes(names.minsu)
+            && mainSeoyeon.includes(names.teacher)
+            && mainSeoyeon.includes(names.nurse),
+            `${lang} shared cast knowledge must include all staff and student full names`
+        );
 
         const groupPrompt = sandbox.window.buildCupidGroupSystemPrompt({
             lang,
             groupMode: 'route_rivalry',
             participants: [
-                { id: 'Teacher', name: lang === 'ko' ? '담임선생님' : 'Homeroom Teacher', role: 'focus' },
-                { id: 'Nurse', name: lang === 'ko' ? '보건선생님' : 'School Nurse', role: 'companion' }
+                { id: 'Seoyeon', name: lang === 'ko' ? '서연' : 'Seoyeon', role: 'focus' },
+                { id: 'Dain', name: lang === 'ko' ? '다인' : 'Dain', role: 'companion' }
             ],
             promptData: data,
             playerName: 'Alex'
         });
-        assert.ok(groupPrompt.includes(names.teacher) && groupPrompt.includes(names.nurse), `${lang} group prompt must include both teacher real names`);
+        assert.ok(groupPrompt.includes(names.seoyeon) && groupPrompt.includes(names.dain), `${lang} group prompt must include student full names`);
 
         gallery.lang = lang;
+        const galSeoyeon = gallery._buildCachedSystemPrompt('seyoun');
+        const galYuna = gallery._buildCachedSystemPrompt('yuna');
+        const galDain = gallery._buildCachedSystemPrompt('dain');
         const galTeacher = gallery._buildCachedSystemPrompt('teacher');
         const galNurse = gallery._buildCachedSystemPrompt('nurse');
+        const galHaeun = gallery._buildCachedSystemPrompt('haeun');
+        assert.ok(galSeoyeon.includes(names.seoyeon), `${lang} gallery seoyeon prompt must include ${names.seoyeon}`);
+        assert.ok(galYuna.includes(names.yuna), `${lang} gallery yuna prompt must include ${names.yuna}`);
+        assert.ok(galDain.includes(names.dain), `${lang} gallery dain prompt must include ${names.dain}`);
         assert.ok(galTeacher.includes(names.teacher), `${lang} gallery teacher prompt must include ${names.teacher}`);
         assert.ok(galNurse.includes(names.nurse), `${lang} gallery nurse prompt must include ${names.nurse}`);
+        assert.ok(galHaeun.includes(names.haeun), `${lang} gallery haeun prompt must include ${names.haeun}`);
         if (lang !== 'ko') {
-            assert.doesNotMatch(mainTeacher + mainNurse + galTeacher + galNurse, /[가-힣]/u, `${lang} prompts must not leak Hangul`);
+            const combined = (mainTeacher + mainNurse + mainSeoyeon + mainYuna + mainDain + mainHaeun + galSeoyeon + galYuna + galDain + galTeacher + galNurse + galHaeun)
+                .replace(/서연 선배|유나 선배|다인 선배/gu, '');
+            assert.doesNotMatch(combined, /[가-힣]/u, `${lang} prompts must not leak Hangul`);
         }
     }
 });
