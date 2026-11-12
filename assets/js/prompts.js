@@ -1526,19 +1526,19 @@ function getLanguageQualityGuard(lang) {
 function getNativeAntiTranslationGuard(lang) {
     if (lang === 'ko') {
         return `**[자연스러운 한국어 말투]**
-- 오타는 뜻만 받고, 처음부터 한국어로 쓴 듯 인물의 즉각적인 말·행동·감각으로 시작합니다. 요약·해설·도우미 말투를 피합니다.
+- 오타는 뜻만 받고 처음부터 한국어로 쓴 듯 인물의 즉각적인 말·행동·감각으로 시작합니다. 상대가 방금 한 말을 첫머리에 복창하지 않고 그 말속 눈치·태도·핑계·작은 디테일을 바로 짚어 반응하며 요약·해설·도우미 말투를 피합니다.
 - 분명한 주어·호칭은 생략하고 명사화·피동·상투적 비유·감탄·말줄임표·의성어 반복을 줄이며 JSON 키는 유지합니다.
 - 지문(narration/scene/sceneNarration)은 3인칭 소설 서술체(-다/-했다)로 쓰며 -요·-ㅂ니다·-습니다로 끝내지 않습니다. 실제 발화는 dialogue에만 두고 존댓말·반말·사투리·호칭 등 인물 고유 말투는 대사에만 적용합니다. 과거 지문의 문체·대사 혼입 오류는 이어 쓰지 않습니다.
-- 하고 싶은 말을 하되 매번 요약·감정 확인·질문 순서를 밟지 않습니다. 길이와 끊김은 성격·감정·관계에 따르며 억지로 더듬거나 말을 흐리지 않습니다. 드러난 감정을 몸짓마다 설명하거나 대사 사이를 채우려 같은 표정이나 시선, 소품을 만지는 동작을 반복하지 않습니다. 대명사 남발·이중 피동(~되어지다)·번역투(가지고 있다)·분열문(~하는 이유다)과 연결어미 뒤 쉼표를 피합니다. 모든 대사는 문어체 가정·선언이나 대사 예고 지문 없이 구어 어미(~잖아·~거든·~지)와 한 호흡 단위로 씁니다.
+- 하고 싶은 말을 하되 매번 요약·감정 확인·질문 순서를 밟지 않고 툭 던지는 한마디·받아치기·농담·말 돌리기 등 실제 사람의 대화 간격을 살립니다. 길이와 끊김은 성격·감정·관계에 따르며 억지로 더듬거나 말을 흐리지 않습니다. 드러난 감정을 몸짓마다 설명하거나 대사 사이를 채우려 같은 표정이나 시선, 소품을 만지는 동작을 반복하지 않습니다. 대명사 남발·이중 피동(~되어지다)·번역투(가지고 있다)·분열문(~하는 이유다)과 연결어미 뒤 쉼표를 피합니다. 모든 대사는 문어체 가정·선언이나 대사 예고 지문 없이 구어 어미(~잖아·~거든·~지)와 한 호흡 단위로 씁니다.
 
 `;
     }
 
     if (lang === 'ja') {
         return `**[最初から日本語で書いた文体]**
-- 誤字や崩れた文法は意図だけを受け取り、翻訳調や案内役の返事ではなく、場面内の自然な日本語の言動から始めます。
-- キャラクター固有の一人称・呼び方・敬語・距離感を保ち、不要な比喩を足さず、JSONのキーと固定値は変えません。
-- セリフは、今この相手に伝えたいことから続けます。相手の話を要約し、気持ちを受け止め、質問で締める流れを毎回繰り返しません。言葉の長さや途切れ方は性格・感情・関係に合わせ、自然に見せるためだけにわざとつかえたり言葉を濁したりしません。すでに伝わっている感情を身振りのたびに解説したり、セリフの間を埋めるために同じ表情・視線・小道具の動きを繰り返したりしません。
+- 誤字は意図だけ受け取り、発言のオウム返しや案内役の返事を避け、裏のニュアンスや態度へ反応する自然な日本語の言動で始めます。
+- 固有の一人称・呼び方・敬語・距離感を保ち、不要な比喩は足さずJSONのキーと固定値は変えません。
+- セリフは今伝えたい言葉から続けます。要約・共感・質問で締める流れを毎回繰り返しません。切り返しや軽口など生きた間合いを活かし、言葉の長さや途切れ方は性格・感情・関係に合わせ、わざとつかえたり言葉を濁したりしません。伝わる感情を身振りのたびに解説したり、間埋めに同じ表情・視線・小道具の動きを繰り返したりしません。
 
 `;
     }
@@ -1555,8 +1555,8 @@ function getNativeAntiTranslationGuard(lang) {
     }[lang] || 'the selected target language';
 
     return `**[Target-Language Voice]**
-- Use idiomatic ${languageName}, consistent character voice/dialect/pronouns/address/register/honorifics. Read typos/code-switching for intent; preserve JSON keys/enums.
-- Speak from current intent; avoid routine recap→validation→question. Personality/emotion/relationship set length and pauses; no feigned stammers or trailing speech. Do not explain clear emotions behind gestures or repeat expressions/glances/prop motions as filler.
+- Use idiomatic ${languageName} and character-true voice/register/pronouns/honorifics; read typos for intent and keep JSON keys/enums.
+- Answer subtext/attitude straight without echoing first; avoid routine recap→validation→question. Personality/emotion/relationship set length and pauses; no feigned stammers or trailing speech. Do not explain clear emotions behind gestures or repeat expressions/glances/prop motions as filler.
 
 `;
 }
