@@ -1,4 +1,4 @@
-import os, sys, io, base64, argparse, pathlib
+import os, sys, io, gc, base64, argparse, pathlib
 import numpy as np
 from PIL import Image
 from scipy import ndimage
@@ -20,13 +20,39 @@ _BRIA_INP_NAME = None
 _REMBG_SESSIONS = {}
 
 
+def _build_memory_safe_ort_options():
+    """
+    입력 인자 없음 -> ONNX Runtime의 BFC 아레나(대형 연속 메모리를 미리 통째로 잡아두는 할당기)와 메모리 패턴 선할당을 끄고 스레드 수를 제한 ->
+    다중 모델 실행 시 메모리 부족(bad allocation)을 막는 SessionOptions 객체 반환 -> onnxruntime 미설치 시 ImportError 발생
+    """
+    import onnxruntime as ort
+    opts = ort.SessionOptions()
+    opts.enable_cpu_mem_arena = False
+    opts.enable_mem_pattern = False
+    opts.intra_op_num_threads = 4
+    opts.inter_op_num_threads = 1
+    opts.log_severity_level = 3
+    return opts
+
+
 def get_rembg_session(model_name="birefnet-general"):
     """
-    모델 이름을 받아 rembg 추론 세션을 캐시에서 반환 -> 초기화 실패 시 예외 발생
+    모델 이름(model_name)을 받아 메모리 안전 옵션이 적용된 rembg 추론 세션 조회 또는 생성 ->
+    세션 팩토리에서 모델 클래스를 찾아 BFC 아레나 비활성화 옵션을 주입하고 캐시에 보관 ->
+    초기화된 세션 객체 반환 -> 모델 미존재 또는 초기화 실패 시 예외 발생
     """
     global _REMBG_SESSIONS
     if model_name in _REMBG_SESSIONS:
         return _REMBG_SESSIONS[model_name]
+    try:
+        from rembg.session_factory import sessions_class
+        target_cls = next((sc for sc in sessions_class if sc.name() == model_name), None)
+        if target_cls is not None:
+            sess = target_cls(model_name, _build_memory_safe_ort_options())
+            _REMBG_SESSIONS[model_name] = sess
+            return sess
+    except Exception:
+        pass
     from rembg import new_session
     sess = new_session(model_name)
     _REMBG_SESSIONS[model_name] = sess
@@ -35,7 +61,8 @@ def get_rembg_session(model_name="birefnet-general"):
 
 def get_bria_ort_session():
     """
-    로컬 bria-rmbg.onnx ONNX Runtime 세션을 초기화해 캐시에서 반환 -> 모델 파일이 없으면 (None, None) 반환
+    입력 인자 없음 -> 로컬 bria-rmbg.onnx 파일 존재 여부를 확인하고 메모리 안전 옵션으로 ONNX Runtime 세션 생성 ->
+    (추론 세션, 입력 텐서 이름) 튜플 반환 -> 모델 파일이 없으면 (None, None) 반환
     """
     global _BRIA_ORT_SESS, _BRIA_INP_NAME
     if _BRIA_ORT_SESS is not None:
@@ -44,10 +71,7 @@ def get_bria_ort_session():
     if not bria_path.exists():
         return None, None
     import onnxruntime as ort
-    opts = ort.SessionOptions()
-    opts.intra_op_num_threads = 4
-    opts.inter_op_num_threads = 1
-    opts.log_severity_level = 3
+    opts = _build_memory_safe_ort_options()
     _BRIA_ORT_SESS = ort.InferenceSession(str(bria_path), sess_options=opts, providers=["CPUExecutionProvider"])
     _BRIA_INP_NAME = _BRIA_ORT_SESS.get_inputs()[0].name
     return _BRIA_ORT_SESS, _BRIA_INP_NAME
@@ -92,7 +116,7 @@ def _guided_filter_alpha(guide_rgb, init_alpha_u8, radius=3, eps=1.5e-3):
 def predict_sota_alpha(rgb_im, primary_model="birefnet-general", core_model="isnet-anime"):
     """
     RGB 이미지를 받아 고해상도 경계 추론 모델(bria-rmbg 또는 birefnet-general)과 애니메이션 내부 보호 모델(isnet-anime)을 앙상블하고 가이디드 필터로 테두리 정렬 ->
-    2차원 uint8 알파 배열 반환 -> 고해상도 모델 실패 시 코어 모델 결과로 폴백하고 원인 로그 출력
+    2차원 uint8 알파 배열 반환 -> 고해상도 모델 메모리 부족 시 경량 모델(birefnet-general-lite) 및 코어 모델 순서로 폴백하고 원인 로그 출력
     """
     rgb_conv = rgb_im.convert("RGB")
     w, h = rgb_conv.size
@@ -121,15 +145,25 @@ def predict_sota_alpha(rgb_im, primary_model="birefnet-general", core_model="isn
             print(f"[고해상도 알파 추론 폴백] model=bria-rmbg, error={exc}", flush=True)
 
     if hr_a is None:
-        try:
-            sess_hr = get_rembg_session(primary_model)
-            hr_rgba = np.array(remove(rgb_conv, session=sess_hr))
-            hr_a = hr_rgba[:, :, 3].astype(np.float32)
-        except Exception as exc:
-            print(f"[고해상도 알파 추론 폴백] primary_model={primary_model}, error={exc}", flush=True)
+        fallback_models = [primary_model]
+        if primary_model != "birefnet-general-lite":
+            fallback_models.append("birefnet-general-lite")
+        last_exc = None
+        for candidate_model in fallback_models:
+            try:
+                sess_hr = get_rembg_session(candidate_model)
+                hr_rgba = np.array(remove(rgb_conv, session=sess_hr))
+                hr_a = hr_rgba[:, :, 3].astype(np.float32)
+                break
+            except Exception as exc:
+                last_exc = exc
+                _REMBG_SESSIONS.pop(candidate_model, None)
+                gc.collect()
+                print(f"[고해상도 알파 추론 폴백] primary_model={candidate_model}, error={exc}", flush=True)
+        if hr_a is None:
             if core_a is not None:
                 return _guided_filter_alpha(rgb_arr, np.clip(np.round(core_a), 0, 255).astype(np.uint8), radius=max(2, int(round(3 * sx))))
-            raise
+            raise last_exc
 
     # 고해상도 경계 모델이 흰 가운·흰 셔츠·안경·손톱 내부를 반투명하게 침식하지 못하도록 애니메이션 코어 내부 불투명 보호
     if core_a is not None:
@@ -174,7 +208,7 @@ CHARACTER_PROFILES = {
         "protect_glasses": True,
         "hospital_scrubs_cleanup": False,
         "wavy_hair_pocket_max_y": 0.375,
-        "wavy_hair_x_range": (0.23, 0.72),
+        "wavy_hair_x_range": (0.20, 0.76),
     },
     "seoyeon": {
         "silver_hair": False,
@@ -867,7 +901,7 @@ def resolve_default_ref_rgba(input_path, explicit_ref_path=None):
 
 def audit_sprite_quality(rgba, expected_size=None):
     """
-    최종 RGBA 배열과 기대 해상도(expected_size)를 받아 부유 노이즈 섬·내부 반투명 침식 홀·외곽 흰끼 픽셀·상단 정수리 잘림 여부를 정량 집계 ->
+    최종 RGBA 배열과 기대 해상도(expected_size)를 받아 부유 노이즈 섬·내부 반투명 침식 홀·닫힌 핀홀·외곽 흰 포켓 좌표·상단 정수리 잘림 여부를 정량 집계 ->
     검수 지표 딕셔너리 반환 -> 불투명 픽셀이 없으면 빈 카운트 반환
     """
     h, w = rgba.shape[:2]
@@ -879,9 +913,11 @@ def audit_sprite_quality(rgba, expected_size=None):
     cmin = np.minimum(np.minimum(r, g), b)
     sat = np.maximum(np.maximum(r, g), b) - cmin
 
-    # 연결 요소(Connected Component, 서로 맞닿은 픽셀 묶음) 개수로 본체 밖 부유 노이즈 섬 검출
+    # 연결 요소(Connected Component, 서로 맞닿은 픽셀 묶음) 개수로 본체 밖 부유 노이즈 섬 검출 (a >= 1 및 a >= 18 다단계 검증)
     _, num_islands = ndimage.label(a >= 1)
     floating_islands = max(0, int(num_islands) - 1)
+    _, num_islands_18 = ndimage.label(a >= 18)
+    floating_islands_18 = max(0, int(num_islands_18) - 1)
 
     # 유클리드 거리 변환(EDT, 투명 경계에서 안쪽까지의 픽셀 거리 계산)으로 확정 내부 코어 안쪽 반투명 침식 홀 집계
     ext_bg = a < 20
@@ -894,7 +930,37 @@ def audit_sprite_quality(rgba, expected_size=None):
         if sl[0].start == 0 or sl[1].start == 0 or sl[0].stop >= h or sl[1].stop >= w or int(comp.sum()) >= int(1600 * scale * scale):
             open_ext[sl] |= comp
     dist_open = ndimage.distance_transform_edt(~open_ext)
-    interior_holes = int(((dist_open >= 5.0 * scale) & (a > 0) & (a < 235)).sum())
+    dist_zero = ndimage.distance_transform_edt(a > 0)
+    interior_holes = int(((dist_zero >= 4.5 * scale) & (a < 245)).sum())
+
+    # 실루엣 내부에 갇힌 소형 완전 투명 핀홀(a == 0) 개수 집계
+    solid_filled = ndimage.binary_fill_holes(a >= 180)
+    pin_cand = solid_filled & (a == 0)
+    pin_lbl, _ = ndimage.label(pin_cand)
+    max_pin_area = int(350 * scale * scale)
+    enclosed_pinholes = 0
+    for idx, sl in enumerate(ndimage.find_objects(pin_lbl), 1):
+        if sl is None:
+            continue
+        if sl[0].start == 0 or sl[1].start == 0 or sl[0].stop >= h or sl[1].stop >= w:
+            continue
+        area = int((pin_lbl[sl] == idx).sum())
+        if 1 <= area <= max_pin_area:
+            enclosed_pinholes += 1
+
+    # 외곽 투명 경계 인접 고휘도·저채도 중성 흰 포켓·할로 클러스터 좌표(area, x0, y0, x1, y1) 추출
+    wp_cand = (a >= 40) & (dist_open <= 25.0 * scale) & (cmin >= 205.0) & (sat <= 20.0) & ((r - b) <= 16.0)
+    wp_lbl, _ = ndimage.label(wp_cand)
+    min_wp_area = max(8, int(10 * scale * scale))
+    white_pocket_clusters = []
+    for idx, sl in enumerate(ndimage.find_objects(wp_lbl), 1):
+        if sl is None:
+            continue
+        comp = (wp_lbl[sl] == idx)
+        area = int(comp.sum())
+        if area >= min_wp_area:
+            white_pocket_clusters.append((area, int(sl[1].start), int(sl[0].start), int(sl[1].stop - 1), int(sl[0].stop - 1)))
+    white_pocket_clusters.sort(reverse=True)
 
     halo_px = int(((dist_open <= 2.5 * scale) & (a >= 32) & (a < 210) & (cmin >= 242.0) & (sat <= 6.0)).sum())
     edge_clip_top = int((a[0, :] > 20).sum())
@@ -905,16 +971,50 @@ def audit_sprite_quality(rgba, expected_size=None):
         "height": h,
         "resolution_ok": resolution_ok,
         "floating_islands": floating_islands,
+        "floating_islands_18": floating_islands_18,
         "interior_holes": interior_holes,
+        "enclosed_pinholes": enclosed_pinholes,
         "white_halo_px": halo_px,
+        "white_pocket_clusters": white_pocket_clusters[:12],
         "edge_clip_top": edge_clip_top,
     }
 
 
-def generate_verification_sheet(rgba, sheet_path, ref_rgba=None):
+def generate_1to1_contrast_sheets(rgba, base_sheet_path):
     """
-    최종 RGBA 스프라이트를 어두운 배경(#181824)·네온 마젠타(#FF00FF)·네온 그린(#00FF00) 3중 대비 배경에 합성하고 정량 검수 수치와 비율 기준선 표시 ->
-    지정된 경로(sheet_path)에 JPEG 시트 저장 -> 상위 디렉터리가 없으면 자동 생성
+    최종 RGBA 배열과 기준 시트 경로(base_sheet_path)를 받아 리사이즈 없는 1:1 원본 배율 상·하체 분할 3색 대비 시트(#181824, #FF00FF, #00FF00) 생성 ->
+    무손실 PNG 파일 2종(<stem>_top_1to1.png, <stem>_bot_1to1.png) 저장 후 경로 튜플 반환 -> 저장 실패 시 IOError 전파
+    """
+    h, w = rgba.shape[:2]
+    bgs = ((24, 24, 36), (255, 0, 255), (0, 255, 0))
+    im_rgba = Image.fromarray(rgba)
+    overlap = max(24, int(round(0.03 * h)))
+    mid_y = h // 2
+    slices = (
+        ("top", 0, min(h, mid_y + overlap)),
+        ("bot", max(0, mid_y - overlap), h),
+    )
+    stem_path = pathlib.Path(os.path.abspath(base_sheet_path))
+    stem_path.parent.mkdir(parents=True, exist_ok=True)
+    saved = []
+    for tag, y0, y1 in slices:
+        sh = y1 - y0
+        crop_rgba = im_rgba.crop((0, y0, w, y1))
+        sheet = Image.new("RGB", (w * len(bgs), sh), (24, 24, 36))
+        for idx, bg_col in enumerate(bgs):
+            panel = Image.new("RGBA", (w, sh), (*bg_col, 255))
+            panel.alpha_composite(crop_rgba)
+            sheet.paste(panel.convert("RGB"), (idx * w, 0))
+        out_png = stem_path.parent / f"{stem_path.stem}_{tag}_1to1.png"
+        sheet.save(out_png, format="PNG", compress_level=6)
+        saved.append(str(out_png))
+    return tuple(saved)
+
+
+def generate_verification_sheet(rgba, sheet_path, ref_rgba=None, emit_1to1_png=True):
+    """
+    최종 RGBA 스프라이트를 어두운 배경(#181824)·네온 마젠타(#FF00FF)·네온 그린(#00FF00) 3중 대비 배경에 합성하고 1:1 원본 배율 상·하체 무손실 PNG 시트를 함께 생성 ->
+    지정된 경로(sheet_path)와 동반 1:1 PNG 파일 저장 -> 상위 디렉터리가 없으면 자동 생성
     """
     from PIL import ImageDraw
     h, w = rgba.shape[:2]
@@ -925,8 +1025,8 @@ def generate_verification_sheet(rgba, sheet_path, ref_rgba=None):
         rm = measure_body_proportions(ref_rgba)
         panels.append((ref_rgba, (24, 24, 36), f"REF (head={rm['head_w_ratio']:.3f} shld={rm['shoulder_w_ratio']:.3f})"))
     cm = measure_body_proportions(rgba)
-    panels.append((rgba, (24, 24, 36), f"DARK #181824 (head={cm['head_w_ratio']:.3f} isl={audit['floating_islands']})"))
-    panels.append((rgba, (255, 0, 255), f"MAGENTA #FF00FF (hole={audit['interior_holes']}px)"))
+    panels.append((rgba, (24, 24, 36), f"DARK #181824 (isl={audit['floating_islands']}/{audit['floating_islands_18']})"))
+    panels.append((rgba, (255, 0, 255), f"MAGENTA #FF00FF (hole={audit['interior_holes']} pin={audit['enclosed_pinholes']})"))
     panels.append((rgba, (0, 255, 0), f"GREEN #00FF00 (halo={audit['white_halo_px']}px)"))
 
     canvas = Image.new("RGB", (pw * len(panels), ph), (24, 24, 36))
@@ -944,6 +1044,8 @@ def generate_verification_sheet(rgba, sheet_path, ref_rgba=None):
         canvas.paste(rgb_p, (i * pw, 0))
     os.makedirs(os.path.dirname(os.path.abspath(sheet_path)), exist_ok=True)
     canvas.save(sheet_path, quality=92)
+    if emit_1to1_png:
+        generate_1to1_contrast_sheets(rgba, sheet_path)
 
 
 def restore_clipped_contours_by_lineart(rgba, orig_rgb=None, character_id=None):
@@ -1136,6 +1238,14 @@ def restore_clipped_contours_by_lineart(rgba, orig_rgb=None, character_id=None):
             out[:, :, 0][newly_recovered_strand] = np.clip(np.round((r[newly_recovered_strand] - (1.0 - a01) * 255.0) / a01), 0, 255).astype(np.uint8)
             out[:, :, 1][newly_recovered_strand] = np.clip(np.round((g[newly_recovered_strand] - (1.0 - a01) * 255.0) / a01), 0, 255).astype(np.uint8)
             out[:, :, 2][newly_recovered_strand] = np.clip(np.round((b[newly_recovered_strand] - (1.0 - a01) * 255.0) / a01), 0, 255).astype(np.uint8)
+
+    # 3. 투명 경계(a < 20)에서 4.5px 이상 안쪽인 신체·의상 코어의 반투명 알파 누수(a < 250) 불투명 복원 (입 주변 무채색 입김 제외)
+    dist_zero_core = ndimage.distance_transform_edt(a >= 20.0)
+    yy_core, _ = np.mgrid[0:h, 0:w]
+    breath_zone = (yy_core >= int(0.19 * h)) & (yy_core <= int(0.36 * h)) & (sat <= 16.0)
+    deep_leak = (dist_zero_core >= 4.5 * scale) & (a >= 80.0) & (a < 250.0) & (~zero_black) & (~breath_zone)
+    if np.any(deep_leak):
+        a[deep_leak] = 255.0
 
     out[:, :, 3] = np.clip(np.round(a), 0, 255).astype(np.uint8)
     return out
@@ -1427,8 +1537,11 @@ def clean_dohoon_hospital_bg(rgba, character_id=None):
     a[hair_halo] = 0.0
     a[(yy < int(480 * sy)) & (a < 48.0)] = 0.0
 
-    desk_rim = (yy >= int(1520 * sy)) & (xx >= int(350 * sx)) & (xx <= int(700 * sx)) & ((g - r) < 10.0) & (lum > 165.0)
-    a[desk_rim] = 0.0
+    # 하단 책상 테두리 제거는 실제로 청록색 수술복(g - r >= 6)을 입은 스프라이트에만 적용해 상의 탈의 복부 피부 침식 차단
+    scrub_lower_probe = (yy >= int(1475 * sy)) & (yy < int(1520 * sy)) & (xx >= int(400 * sx)) & (xx <= int(660 * sx)) & (a > 180.0)
+    if np.any(scrub_lower_probe) and float((g[scrub_lower_probe] - r[scrub_lower_probe]).mean()) >= 6.0:
+        desk_rim = (yy >= int(1520 * sy)) & (xx >= int(350 * sx)) & (xx <= int(700 * sx)) & ((g - r) < 10.0) & ((r - g) < 12.0) & (lum > 165.0)
+        a[desk_rim] = 0.0
 
     # 붉게 달아오른 상체 근육 피부(climax/01 등: R-G 편차와 채도가 높음)가 어두운 나무문 그림자로 오인되어 파먹히지 않도록 채도·적색 편차 상한 검사
     armpit_probe = (yy >= int(1180 * sy)) & (yy <= int(1320 * sy)) & (xx >= int(220 * sx)) & (xx <= int(265 * sx))
@@ -1816,12 +1929,18 @@ def remove_trapped_hair_pockets(rgba, orig_rgb=None, character_id=None):
         return out
 
     dist_ext = ndimage.distance_transform_edt(a >= 25.0)
+    head_solid = ndimage.binary_fill_holes(a >= 180.0)
+    dist_head_in = ndimage.distance_transform_edt(head_solid)
     deep_face = (yy >= int(0.11 * h)) & (yy <= int(0.29 * h)) & (xx >= int(0.39 * w)) & (xx <= int(0.63 * w)) & (dist_ext >= 10.0 * scale)
-    warm_skin = (a >= 140.0) & ((sr - sb) >= 14.0) & (sr >= 145.0)
-    hand_closed = ndimage.binary_fill_holes(ndimage.binary_closing(a >= 120.0, iterations=max(3, int(round(5 * scale)))))
+    warm_skin = (a >= 140.0) & (yy >= int(0.085 * h)) & ((sr - sb) >= 14.0) & (sr >= 150.0) & (sg >= 112.0) & (sb >= 92.0)
 
-    # 흰 가운 어깨·소매가 y 경계선에서 사전 절단되어 소형 조각으로 오인되지 않도록 먼저 전체 이미지에서 흰 연결 요소를 라벨링한 뒤 두부·목·손 범위만 검사
-    cand = (~deep_face) & (a > 0) & (cmin >= 222.0) & (sat <= 18.0) & ((sr - sb) <= 16.0) & ((sb - sg) <= 7.0)
+    # 외곽 경계 인접 구간(dist_ext <= 16px)은 JPEG 서브샘플링 및 갈색 머리카락 색 번짐이 섞인 왕관 할로 캡까지 통합 라벨링
+    near_ext_band = dist_ext <= 16.0 * scale
+    crown_rim_band = (yy <= int(0.14 * h)) & (dist_ext <= 12.0 * scale)
+    cand_core = (cmin >= 222.0) & (sat <= 18.0) & ((sr - sb) <= 16.0) & ((sb - sg) <= 7.0)
+    cand_edge = near_ext_band & (cmin >= 204.0) & (sat <= 22.0) & ((sr - sb) <= 18.0) & ((sb - sg) <= 9.0)
+    cand_crown = crown_rim_band & (cmin >= 210.0) & (sat <= 28.0) & ((sr - sb) <= 28.0) & ((sb - sg) <= 9.0)
+    cand = (~deep_face) & (a > 0) & (cand_core | cand_edge | cand_crown)
     lbl, _ = ndimage.label(cand, structure=np.ones((3, 3), dtype=bool))
 
     killed = np.zeros((h, w), dtype=bool)
@@ -1836,22 +1955,39 @@ def remove_trapped_hair_pockets(rgba, orig_rgb=None, character_id=None):
         area = int(comp.sum())
         if area < max(5, int(6 * scale * scale)) or area > max_area:
             continue
-        # 하은(haeun) 등 정수리 흰 머리띠 보호
-        if prof["protect_white_headband"] and sl[0].start <= int(0.15 * h) and area >= int(320 * scale * scale):
-            continue
-        # 포켓 중심 최고 명도가 기준 미만이면 연보라·회색 머리카락 하이라이트이므로 제외
-        min_peak_cmin = 235.0 if prof["protect_white_coat"] else 230.0
-        if float(cmin[sl][comp].max()) < min_peak_cmin:
-            continue
-        # 채색된 오프화이트 의상(순백색 비율 < 0.55, 면적 >= 80px)은 배경 여백(#FFFFFF)이 아닌 실제 흰 머리띠·유니폼·캐미솔이므로 보호
-        pw_frac = float(((cmin[sl][comp] >= 250.0) & (sat[sl][comp] <= 4.0)).mean())
-        if area >= int(80 * scale * scale) and pw_frac < 0.55:
-            continue
         ry0, ry1 = max(0, sl[0].start - 3), min(h, sl[0].stop + 3)
         rx0, rx1 = max(0, sl[1].start - 3), min(w, sl[1].stop + 3)
         pad = (lbl[ry0:ry1, rx0:rx1] == idx)
         rim = ndimage.binary_dilation(pad, iterations=3) & (~pad)
         touches_trans = bool((rim & (a[ry0:ry1, rx0:rx1] < 35.0)).any())
+        in_hair_crown_zone = sl[0].stop <= int(0.28 * h)
+        min_comp_dist_ext = float(dist_ext[sl][comp].min())
+        near_outer_rim = touches_trans or (in_hair_crown_zone and min_comp_dist_ext <= 7.0 * scale)
+
+        # 하은(haeun) 등 정수리 안쪽 흰 머리띠 보호 (단, 정수리 최상단 바깥 여백 인접 순백색 할로 캡은 제거 허용)
+        is_crown_top_halo = near_outer_rim and (sl[0].stop <= int(0.062 * h)) and (float(cmin[sl][comp].max()) >= 246.0)
+        if prof["protect_white_headband"] and sl[0].start <= int(0.15 * h) and area >= int(320 * scale * scale) and (not is_crown_top_halo):
+            continue
+
+        # 두부·앞머리 실루엣 내부에 완전히 닫힌 젖은 머리카락 하이라이트(외곽 경계 비접촉)는 배경 포켓이 아니므로 원형 보존
+        pw_frac = float(((cmin[sl][comp] >= 250.0) & (sat[sl][comp] <= 4.0)).mean())
+        if (not near_outer_rim) and (sl[0].stop <= int(0.32 * h)) and (float(dist_head_in[sl][comp].min()) >= 8.0 * scale) and (area <= int(650 * scale * scale) or pw_frac < 0.78):
+            continue
+
+        # 포켓 중심 최고 명도 검사 (외곽 경계 인접 두부 포켓은 216 이상 허용)
+        if near_outer_rim and in_hair_crown_zone and (not prof["protect_white_coat"]):
+            min_peak_cmin = 216.0
+        else:
+            min_peak_cmin = 235.0 if prof["protect_white_coat"] else 228.0
+        if float(cmin[sl][comp].max()) < min_peak_cmin:
+            continue
+
+        # 어깨·목 아래 의상 구간(y >= 0.28*h) 또는 닫힌 내부 영역의 채색 오프화이트 의상은 보호하되, 상단 머리카락 외곽 흰 캡은 제거 진행
+        if (not (near_outer_rim and in_hair_crown_zone)) and area >= int(80 * scale * scale) and pw_frac < 0.55:
+            continue
+        if prof["protect_white_coat"] and near_outer_rim and in_hair_crown_zone and (float(cmin[sl][comp].max()) < 244.0 or pw_frac < 0.25):
+            continue
+
         rim_vis = rim & (a[ry0:ry1, rx0:rx1] >= 120.0)
         if not rim_vis.any():
             killed[sl] |= comp
@@ -1859,19 +1995,24 @@ def remove_trapped_hair_pockets(rgba, orig_rgb=None, character_id=None):
         skin_frac = float(warm_skin[ry0:ry1, rx0:rx1][rim_vis].mean())
         cool_hair_frac = float(((sb[ry0:ry1, rx0:rx1][rim_vis] - sr[ry0:ry1, rx0:rx1][rim_vis]) >= 5.0).mean())
         # 손가락 내부에 닫힌 흰 손톱(외부 투명 여백 비접촉 + 주변 살색 + 한색 머리카락 비인접) 및 손바닥·목 땀 반사광 보호
-        is_pure_white_notch = touches_trans and (float(cmin[sl][comp].max()) >= 250.0) and (float(np.percentile(sat[sl][comp], 15)) <= 5.0)
+        notch_sat_cap = 16.0 if in_hair_crown_zone else 6.0
+        notch_cmin_floor = 240.0 if in_hair_crown_zone else 246.0
+        is_pure_white_notch = near_outer_rim and (float(cmin[sl][comp].max()) >= notch_cmin_floor) and (float(np.percentile(sat[sl][comp], 25)) <= notch_sat_cap)
         if skin_frac >= 0.42 and not is_pure_white_notch:
             continue
-        if not touches_trans and area <= int(320 * scale * scale) and skin_frac >= 0.18 and cool_hair_frac < 0.15:
+        if not near_outer_rim and area <= int(320 * scale * scale) and skin_frac >= 0.18 and cool_hair_frac < 0.15:
             continue
         rim_lums = lum[ry0:ry1, rx0:rx1][rim_vis]
         rim_sats = sat[ry0:ry1, rx0:rx1][rim_vis]
         shaded_fabric_frac = float(((rim_lums >= 182.0) & (rim_sats <= 26.0)).mean())
-        # 밝은 흰 천 음영(lum >= 182, sat <= 26)과 넓게 이어지는 흰 셔츠 카라·유니폼 어깨끈·가운 소매(면적 >= 450px, 음영 인접 >= 0.22) 보호
-        if (float(np.median(rim_lums)) >= 196.0 and not touches_trans) or (area >= int(450 * scale * scale) and shaded_fabric_frac >= 0.22):
+        # 목 아래 중앙 흰 셔츠 칼라 V존(y >= 0.33*h, 0.28*w <= x <= 0.72*w) 및 넓은 흰 의상 음영 연결부 보호
+        in_collar_v_zone = (sl[0].stop >= int(0.33 * h)) and (sl[1].start >= int(0.28 * w)) and (sl[1].stop <= int(0.72 * w))
+        if in_collar_v_zone and (shaded_fabric_frac >= 0.14 or skin_frac >= 0.12):
             continue
-        # 어두운 머리카락·옷깃·청진기 선화로 둘러싸였거나 외부 투명 여백과 맞닿은 진짜 흰 배경 포켓만 제거
-        if touches_trans or float(np.percentile(rim_lums, 30)) <= 148.0:
+        if (float(np.median(rim_lums)) >= 196.0 and not near_outer_rim) or ((not in_hair_crown_zone) and area >= int(450 * scale * scale) and shaded_fabric_frac >= 0.22):
+            continue
+        # 어두운 머리카락·옷깃·청진기 선화로 둘러싸였거나 외곽 경계에 인접한 진짜 흰 배경 포켓만 제거
+        if near_outer_rim or float(np.percentile(rim_lums, 30)) <= 148.0:
             killed[sl] |= comp
 
     if np.any(killed):
@@ -1898,7 +2039,7 @@ def remove_trapped_hair_pockets(rgba, orig_rgb=None, character_id=None):
     return out
 
 
-def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
+def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False, skip_legacy_hair_tint=False):
     """
     RGBA 배열과 캐릭터 식별자(character_id)를 받아 내부 침식 복원(restore_interior_erosion) -> 캐릭터별 특화 보정 -> 갇힌 흰 배경 포켓 제거(remove_trapped_hair_pockets) -> 외곽 디프린징을 순서대로 수행 ->
     정리된 RGBA 배열 반환 -> 캐릭터 미식별 시 색상 프로파일로 자동 판별
@@ -1911,8 +2052,9 @@ def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
     orig_rgb = rgba[:, :, :3].copy()
     out = restore_interior_erosion(rgba.copy(), orig_rgb=orig_rgb, character_id=character_id)
     out = recover_silver_hair_locks(out, character_id=character_id, orig_rgb=orig_rgb, is_fresh_cutout=is_fresh_cutout)
-    out = repair_seoyeon_right_hair(out, character_id=character_id)
-    out = repair_teacher_hair_holes(out, character_id=character_id)
+    if not skip_legacy_hair_tint:
+        out = repair_seoyeon_right_hair(out, character_id=character_id)
+        out = repair_teacher_hair_holes(out, character_id=character_id)
     out = clean_dohoon_hospital_bg(out, character_id=character_id)
     out = clean_nurse_sprite_bg(out, character_id=character_id)
     out = remove_trapped_hair_pockets(out, orig_rgb=orig_rgb, character_id=character_id)
@@ -1974,28 +2116,34 @@ def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
             tw_rim = ndimage.binary_dilation(killed_tw, iterations=2) & (~killed_tw) & (~deep_face_interior) & (a > 0) & (cmin >= 180.0) & (sat <= 26.0)
             a[tw_rim] *= np.clip((235.0 - cmin[tw_rim]) / 55.0, 0.0, 0.65)
 
-    # 전신 외곽(웨이브 머리카락·어깨·소매·치마·허벅지 경계)에서 어두운 선화/의상 테두리 바깥쪽에 갇힌 순백색(#FFFFFF) 배경 포켓 제거
-    # 은발 캐릭터(yuna)는 상단 은발 결 보호를 위해 하단 교복 구간(yy >= 0.40*h)에만 적용하고, 흰 가운·셔츠 하이라이트는 주변 명도로 보존
+    # 전신 외곽(웨이브 머리카락·어깨·소매·팔뚝·치마·허벅지 경계)에서 선화·피부·색상 의상 바깥쪽에 갇힌 순백색 배경 포켓 제거
+    # 은발 캐릭터(yuna)는 상단 은발 결 보호를 위해 하단 교복 구간(yy >= 0.40*h)에만 적용하고, 흰 가운·셔츠 음영 주름은 보존
+    prof = get_character_profile(character_id)
     lum_cur = 0.299 * r + 0.587 * g + 0.114 * b
     ext_bg_cur = a < 25.0
     dist_ext_cur = ndimage.distance_transform_edt(~ext_bg_cur)
     silver_safe_zone = (yy >= int(0.40 * h)) if is_silver else np.ones((h, w), dtype=bool)
-    outer_pw_cand = silver_safe_zone & (~deep_face_interior) & (a >= 120.0) & (cmin >= 246.0) & (sat <= 6.0)
+    outer_pw_cand = silver_safe_zone & (~deep_face_interior) & (a >= 90.0) & (cmin >= 220.0) & (sat <= 15.0) & ((r - b) <= 12.0)
     op_lbl, _ = ndimage.label(outer_pw_cand)
-    min_op_area = max(12, int(15 * (scale ** 2)))
-    max_op_area = int(2600 * (scale ** 2))
+    min_op_area = max(8, int(10 * (scale ** 2)))
+    max_op_area = int(6500 * (scale ** 2))
     killed_op = np.zeros((h, w), dtype=bool)
     for op_i, op_sl in enumerate(ndimage.find_objects(op_lbl), 1):
         if op_sl is None:
+            continue
+        if prof["protect_white_coat"] and op_sl[0].stop >= int(0.28 * h):
             continue
         sub_op = (op_lbl[op_sl] == op_i)
         op_area = int(sub_op.sum())
         if op_area < min_op_area or op_area > max_op_area:
             continue
         touches_bottom_edge = op_sl[0].stop >= h - 2
-        if float(dist_ext_cur[op_sl][sub_op].min()) > 12.0 * scale and not touches_bottom_edge:
+        min_d_ext = float(dist_ext_cur[op_sl][sub_op].min())
+        if min_d_ext > 8.0 * scale and not touches_bottom_edge:
             continue
-        if float(cmin[op_sl][sub_op].mean()) < 250.5 or float(sat[op_sl][sub_op].mean()) > 3.5:
+        sub_cmin = cmin[op_sl][sub_op]
+        sub_sat = sat[op_sl][sub_op]
+        if float(sub_cmin.max()) < 246.0 or float(np.percentile(sub_cmin, 75)) < 238.0 or float(sub_sat.mean()) > 8.0:
             continue
         y0_o, y1_o = max(0, op_sl[0].start - 3), min(h, op_sl[0].stop + 3)
         x0_o, x1_o = max(0, op_sl[1].start - 3), min(w, op_sl[1].stop + 3)
@@ -2004,15 +2152,24 @@ def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
         if not rim_o.any():
             killed_op[op_sl] |= sub_op
             continue
-        if op_area <= int(280 * (scale ** 2)) and float(warm_skin[y0_o:y1_o, x0_o:x1_o][rim_o].mean()) >= 0.10:
+        # 피부 내부에 완전히 둘러싸인 소형 땀 광택(외부 투명 경계 비접촉)은 보존
+        skin_rim_ratio = float(warm_skin[y0_o:y1_o, x0_o:x1_o][rim_o].mean())
+        if (min_d_ext >= 2.5 * scale) and (not touches_bottom_edge) and op_area <= int(280 * (scale ** 2)) and skin_rim_ratio >= 0.15:
             continue
         rim_lums = lum_cur[y0_o:y1_o, x0_o:x1_o][rim_o]
+        rim_sats = sat[y0_o:y1_o, x0_o:x1_o][rim_o]
+        rim_rb = (r[y0_o:y1_o, x0_o:x1_o] - b[y0_o:y1_o, x0_o:x1_o])[rim_o]
         fg_lum_mean = float(rim_lums.mean())
         fg_lum_p25 = float(np.percentile(rim_lums, 25))
         fg_lum_p75 = float(np.percentile(rim_lums, 75))
-        # 주변에 밝은 흰 의상 음영이 이어지는 가운·소매 주름은 보존하고 어두운 머리카락 컬·교복·치마 하단 바깥 포켓만 제거
-        is_bottom_skirt_notch = touches_bottom_edge and (float(cmin[op_sl][sub_op].mean()) >= 252.5) and (fg_lum_p25 <= 95.0) and (fg_lum_p75 < 225.0)
-        if (fg_lum_mean <= 155.0 and fg_lum_p25 <= 118.0 and fg_lum_p75 < 190.0) or is_bottom_skirt_notch:
+        # 흰 셔츠 소매 커프스·칼라·유니폼 앞판처럼 무채색 밝은 천 음영(lum >= 175, sat <= 20, r-b < 15)과 이어지면 보존
+        neutral_fabric_frac = float(((rim_lums >= 175.0) & (rim_sats <= 20.0) & (rim_rb < 15.0)).mean())
+        if neutral_fabric_frac >= 0.16 and not touches_bottom_edge:
+            continue
+        chromatic_or_dark_frac = float(((rim_lums <= 145.0) | (rim_sats >= 22.0) | (rim_rb >= 16.0)).mean())
+        is_bottom_gap = touches_bottom_edge and (float(sub_cmin.mean()) >= 245.0) and (neutral_fabric_frac < 0.14)
+        is_outer_trapped_pocket = (min_d_ext <= 4.0 * scale) and (float(np.percentile(sub_cmin, 60)) >= 242.0) and (chromatic_or_dark_frac >= 0.78) and (neutral_fabric_frac < 0.12)
+        if (fg_lum_mean <= 155.0 and fg_lum_p25 <= 118.0 and fg_lum_p75 < 190.0) or is_bottom_gap or is_outer_trapped_pocket:
             killed_op[op_sl] |= sub_op
     if np.any(killed_op):
         a[killed_op] = 0.0
@@ -2020,7 +2177,7 @@ def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
         a[op_rim] *= np.clip((242.0 - cmin[op_rim]) / 55.0, 0.0, 0.65)
 
     # 2. 부유 노이즈 섬 제거 (메인 캐릭터 연결 성분만 유지)
-    for thresh in (20, 10, 1):
+    for thresh in (24, 18, 10, 1):
         vis = a >= thresh
         lbl, num = ndimage.label(vis)
         if num > 1:
@@ -2070,8 +2227,19 @@ def sota_clean_one_shot(rgba, character_id=None, is_fresh_cutout=False):
             and (min_d_in >= 10.0 * scale)
             and ((not is_silver) or (fh_sl[1].start >= int(0.38 * w) and fh_sl[1].stop <= int(0.62 * w)))
         )
-        # 피부로 둘러싸인 얼굴 내부(눈·코·입·볼) 홀이거나 상단 흰 머리띠 침식 홀만 복원하고, 머리카락·입김·목 옆 틈새는 원형 보존
-        if is_headband_or_bright or (skin_f >= 0.45 and fh_area <= int(500 * (scale ** 2))):
+        orig_sub = orig_rgb[fh_sl][sub_fh].astype(np.float32)
+        orig_cmin = np.minimum(np.minimum(orig_sub[:, 0], orig_sub[:, 1]), orig_sub[:, 2])
+        orig_sat = np.maximum(np.maximum(orig_sub[:, 0], orig_sub[:, 1]), orig_sub[:, 2]) - orig_cmin
+        orig_pw_frac = float(((orig_cmin >= 250.0) & (orig_sat <= 4.0)).mean())
+        is_enclosed_wet_hair_highlight = (
+            (not top_corners_trans_now)
+            and (fh_area <= int(450 * (scale ** 2)))
+            and (min_d_in >= 8.0 * scale)
+            and (orig_pw_frac < 0.78)
+            and (float(orig_cmin.max()) > 15.0)
+        )
+        # 피부 인접 얼굴 홀·상단 흰 머리띠 침식 홀·닫힌 젖은 머리카락 하이라이트 핀홀만 복원하고, 실제 머리카락 사이 개방 틈새는 원형 보존
+        if is_headband_or_bright or (skin_f >= 0.45 and fh_area <= int(500 * (scale ** 2))) or is_enclosed_wet_hair_highlight:
             a[fh_sl][sub_fh] = 255.0
             r[fh_sl][sub_fh] = orig_rgb[:, :, 0][fh_sl][sub_fh]
             g[fh_sl][sub_fh] = orig_rgb[:, :, 1][fh_sl][sub_fh]
@@ -2136,10 +2304,13 @@ def clean_sprite_defringe(rgba):
         _, (cy, cx) = ndimage.distance_transform_edt(~core_mask, return_indices=True)
         core_r, core_g, core_b = r[cy, cx], g[cy, cx], b[cy, cx]
         core_lum = 0.299 * core_r + 0.587 * core_g + 0.114 * core_b
+        core_cmin = np.minimum(np.minimum(core_r, core_g), core_b)
+        core_sat = np.maximum(np.maximum(core_r, core_g), core_b) - core_cmin
 
-        # 어두운 선화 코어(core_lum <= 145) 바깥 반투명 테두리에 섞인 순백색 배경 번짐만 알파 감쇠 및 코어 색상 클램핑
+        # 어두운 선화 코어(core_lum <= 145) 또는 유채색 의상·피부 코어(core_sat >= 24, core_cmin <= 195) 바깥의 무채색 흰 배경 번짐만 알파 감쇠 및 코어 색상 클램핑
         rim_semi = (a > 0) & (a < 235.0) & (dist_ext <= 3.0 * scale)
-        halo_rim = rim_semi & (cmin >= 215.0) & (sat <= 14.0) & (core_lum <= 145.0)
+        dark_or_chromatic_core = (core_lum <= 145.0) | ((core_sat >= 24.0) & (core_cmin <= 195.0))
+        halo_rim = rim_semi & (cmin >= 214.0) & (sat <= 14.0) & ((r - b) <= 12.0) & dark_or_chromatic_core
         if np.any(halo_rim):
             a[halo_rim] *= np.clip((250.0 - cmin[halo_rim]) / 42.0, 0.0, 0.65)
             still = halo_rim & (a >= 16.0)
@@ -2148,6 +2319,13 @@ def clean_sprite_defringe(rgba):
             b[still] = np.minimum(b[still], core_b[still] + 24.0)
 
     a[a < 16.0] = 0.0
+    for thresh in (24, 18, 10, 1):
+        vis = a >= thresh
+        lbl, num = ndimage.label(vis)
+        if num > 1:
+            sizes = ndimage.sum(vis, lbl, range(1, num + 1))
+            main_lbl = int(np.argmax(sizes)) + 1
+            a[vis & (lbl != main_lbl)] = 0.0
     zero = a == 0.0
     r[zero] = 0.0
     g[zero] = 0.0
@@ -2338,26 +2516,175 @@ def patch_face_onto_base_ref(rgba, ref_rgba):
     return res
 
 
-def clean_sprite(rgba, ref_rgba=None, extra_gap_rois=None, restore_holes=True, use_pymatting=False, restore_crown=True, harmonize_style=False, restore_outer_hair=False, style_ref_rgba=None, patch_face_from_base=False, character_id=None, is_fresh_cutout=False):
+def is_native_transparent_rgba(rgba):
     """
-    RGBA 배열을 받아 원샷 배경·구멍·포켓 정리(sota_clean_one_shot) -> 정수리 잘림 복원 -> EDT 디프린징 및 PyMatting 전경 역산 -> 기준 포즈 호환 시 얼굴 패치 또는 색감 정합 순서로 처리 ->
-    원본 해상도가 그대로 유지된 최종 RGBA 배열 반환
+    RGBA 배열을 받아 생성 모델이 네이티브 알파(배경 색 섞임 없이 처음부터 투명 채널과 함께 생성된 픽셀 데이터)로 출력한 이미지인지 판별 ->
+    상단 양 모서리 패치 투명도·상좌우 테두리 투명 픽셀 비율·불투명 전경 면적 비율을 순서대로 검사 ->
+    네이티브 투명 배경이면 True 반환 -> 불투명 배경이거나 잘못된 배열 차원이면 False 반환
     """
+    if rgba is None or rgba.ndim != 3 or rgba.shape[2] != 4:
+        return False
+    h, w = rgba.shape[:2]
+    if h < 16 or w < 16:
+        return False
+    a = rgba[:, :, 3]
+    patch = max(4, min(12, h // 32, w // 32))
+    top_left_ok = float(a[:patch, :patch].mean()) <= 8.0
+    top_right_ok = float(a[:patch, w - patch:].mean()) <= 8.0
+    if not (top_left_ok and top_right_ok):
+        return False
+    border_a = np.concatenate([a[0, :], a[:, 0], a[:, w - 1]])
+    if float((border_a <= 8).mean()) < 0.50:
+        return False
+    if float((a >= 180).mean()) < 0.05:
+        return False
+    return True
+
+
+def clean_native_rgba_sprite(rgba, character_id=None, restore_crown=False, ref_rgba=None, harmonize_style=False):
+    """
+    네이티브 투명 배경 RGBA 배열을 받아 외곽 잔머리 알파는 보존하면서 허공 미세 먼지·분리 노이즈 섬 제거 ->
+    실루엣 내부에 갇힌 소형 핀홀(완전 투명 미세 구멍)의 빈 RGB를 주변 불투명 픽셀로 메운 뒤 불투명 복원 ->
+    흰 가운·셔츠·안경·하이라이트 내부 반투명 누수(alpha < 255) 잠금 순서로 경량 후처리 수행 ->
+    원본 해상도가 그대로 유지된 RGBA 배열 반환 -> 불투명 배경 입력 시 ValueError, 해상도 변형 시 RuntimeError 발생
+    """
+    if not is_native_transparent_rgba(rgba):
+        tl_a = int(rgba[0, 0, 3]) if (rgba is not None and rgba.ndim == 3 and rgba.shape[2] == 4) else -1
+        tr_a = int(rgba[0, -1, 3]) if (rgba is not None and rgba.ndim == 3 and rgba.shape[2] == 4) else -1
+        raise ValueError(
+            f"[네이티브 투명 배경 검증 실패] 불투명 배경 감지(top_left_a={tl_a}, top_right_a={tr_a}), --native-rgba 대신 기본 SOTA 배경제거 모드 필요"
+        )
+
     in_shape = rgba.shape[:2]
-    out = sota_clean_one_shot(rgba, character_id=character_id, is_fresh_cutout=is_fresh_cutout)
+    out = rgba.copy()
+    h, w = out.shape[:2]
+    scale = max(0.5, w / 1152.0)
+
+    # 전경 외곽선에서 떨어진 허공의 저불투명 확산 노이즈를 먼저 비워 단일 연결 요소 판별 시 잔먼지 간섭 방지
+    a = out[:, :, 3]
+    dist_from_fg24 = ndimage.distance_transform_edt(a < 24)
+    ghost_mist = (a > 0) & (a <= 14) & (dist_from_fg24 > 2.5 * scale)
+    a[ghost_mist] = 0
+    a[a <= 4] = 0
+
+    # 본체와 끊어진 외부 부유 먼지 섬을 다단계 임계값(24, 18, 10, 1)에서 제거하되 본체에 붙은 반투명 잔머리 끝단은 유지
+    for thresh in (24, 18, 10, 1):
+        vis = a >= thresh
+        lbl, num = ndimage.label(vis)
+        if num > 1:
+            sizes = ndimage.sum(vis, lbl, range(1, num + 1))
+            main_lbl = int(np.argmax(sizes)) + 1
+            a[vis & (lbl != main_lbl)] = 0
+
+    # PNG 저장 과정에서 투명 픽셀 RGB가 0으로 비워진 내부 핀홀이 검은 점으로 복원되지 않도록 인접 불투명 픽셀 색으로 먼저 보간
+    solid_filled = ndimage.binary_fill_holes(a >= 180)
+    pin_cand = solid_filled & (a == 0)
+    pin_lbl, _ = ndimage.label(pin_cand)
+    max_pin_area = int(350 * scale * scale)
+    pad_px = max(5, int(round(6 * scale)))
+    for idx, sl in enumerate(ndimage.find_objects(pin_lbl), 1):
+        if sl is None:
+            continue
+        if sl[0].start == 0 or sl[1].start == 0 or sl[0].stop >= h or sl[1].stop >= w:
+            continue
+        comp = pin_lbl[sl] == idx
+        area = int(comp.sum())
+        if area < 1 or area > max_pin_area:
+            continue
+        y0, y1 = max(0, sl[0].start - pad_px), min(h, sl[0].stop + pad_px)
+        x0, x1 = max(0, sl[1].start - pad_px), min(w, sl[1].stop + pad_px)
+        sub_rgba = out[y0:y1, x0:x1]
+        sub_pin = pin_lbl[y0:y1, x0:x1] == idx
+        valid_src = sub_rgba[:, :, 3] >= 180
+        if np.any(valid_src):
+            _, (ny, nx) = ndimage.distance_transform_edt(~valid_src, return_indices=True)
+            filled_rgb = sub_rgba[:, :, :3][ny, nx].astype(np.float32)
+            for ch_idx in range(3):
+                blurred_ch = ndimage.gaussian_filter(filled_rgb[:, :, ch_idx], sigma=0.8)
+                sub_rgba[:, :, ch_idx][sub_pin] = np.clip(np.round(blurred_ch[sub_pin]), 0, 255).astype(np.uint8)
+        sub_rgba[:, :, 3][sub_pin] = 255
+
+    # 외곽 안티앨리어싱 테두리(4px 미만)와 팔·몸통 사이 실제 개방 여백은 건드리지 않고 실루엣 안쪽 코어의 반투명 누수만 불투명 고정
+    a = out[:, :, 3]
+    dist_zero = ndimage.distance_transform_edt(a > 0)
+    deep_leak = (dist_zero >= 4.0 * scale) & (a > 0) & (a < 255)
+    if np.any(deep_leak):
+        low_alpha_leak = deep_leak & (a < 64)
+        if np.any(low_alpha_leak):
+            valid_core = a >= 180
+            if np.any(valid_core):
+                _, (cy, cx) = ndimage.distance_transform_edt(~valid_core, return_indices=True)
+                for ch_idx in range(3):
+                    out[:, :, ch_idx][low_alpha_leak] = out[:, :, ch_idx][cy[low_alpha_leak], cx[low_alpha_leak]]
+        a[deep_leak] = 255
+
+    if restore_crown:
+        out, _ = restore_crown_if_needed(out)
+    if harmonize_style and ref_rgba is not None:
+        out = harmonize_style_to_ref(out, ref_rgba)
+
+    # 선택 후처리 이후 생길 수 있는 미세 분리 픽셀 최종 정리 및 투명 영역 RGB 0 초기화
+    for thresh in (24, 18, 10, 1):
+        vis = out[:, :, 3] >= thresh
+        lbl, num = ndimage.label(vis)
+        if num > 1:
+            sizes = ndimage.sum(vis, lbl, range(1, num + 1))
+            main_lbl = int(np.argmax(sizes)) + 1
+            out[:, :, 3][vis & (lbl != main_lbl)] = 0
+
+    out[out[:, :, 3] == 0, :3] = 0
+    if out.shape[:2] != in_shape:
+        raise RuntimeError(f"[스프라이트 해상도 불일치 오류] expected={in_shape}, actual={out.shape[:2]}")
+    return out
+
+
+def clean_sprite(rgba, ref_rgba=None, extra_gap_rois=None, restore_holes=True, use_pymatting=False, restore_crown=True, harmonize_style=False, restore_outer_hair=False, style_ref_rgba=None, patch_face_from_base=False, character_id=None, is_fresh_cutout=False, skip_legacy_hair_tint=False, native_rgba=False):
+    """
+    RGBA 배열을 받아 native_rgba 여부에 따라 네이티브 투명 경량 후처리(clean_native_rgba_sprite) 또는 5단계 SOTA 배경·구멍·포켓·디프린징 파이프라인 수행 ->
+    정수리 복원·색감 정합·부유 노이즈 섬 제거·내부 반투명 누수 잠금을 거쳐 원본 해상도가 유지된 최종 RGBA 배열 반환 -> 해상도 변형 발생 시 RuntimeError 발생
+    """
+    target_ref = style_ref_rgba if style_ref_rgba is not None else ref_rgba
+    if native_rgba:
+        return clean_native_rgba_sprite(
+            rgba,
+            character_id=character_id,
+            restore_crown=bool(restore_crown),
+            ref_rgba=target_ref,
+            harmonize_style=harmonize_style,
+        )
+    in_shape = rgba.shape[:2]
+    out = sota_clean_one_shot(rgba, character_id=character_id, is_fresh_cutout=is_fresh_cutout, skip_legacy_hair_tint=skip_legacy_hair_tint)
     if restore_crown:
         out, _ = restore_crown_if_needed(out)
     if use_pymatting:
         out = defringe_with_pymatting(out)
     else:
         out = clean_sprite_defringe(out)
-    target_ref = style_ref_rgba if style_ref_rgba is not None else ref_rgba
     if patch_face_from_base and target_ref is not None and is_pose_compatible_with_base(out, target_ref):
         return patch_face_onto_base_ref(out, target_ref)
     if restore_outer_hair and target_ref is not None:
         out = restore_outer_hair_from_ref(out, target_ref)
     if harmonize_style and target_ref is not None:
         out = harmonize_style_to_ref(out, target_ref)
+    # 후처리 단계 이후 남을 수 있는 분리 노이즈 섬 최종 제거 (a >= 24, 18, 10, 1 전 구간 단일 연결 요소 보장)
+    for thresh in (24, 18, 10, 1):
+        vis = out[:, :, 3] >= thresh
+        lbl, num = ndimage.label(vis)
+        if num > 1:
+            sizes = ndimage.sum(vis, lbl, range(1, num + 1))
+            main_lbl = int(np.argmax(sizes)) + 1
+            out[:, :, 3][vis & (lbl != main_lbl)] = 0
+    # 최종 코어 반투명 누수 방지 잠금 (입 주변 무채색 입김 제외)
+    h_f, w_f = out.shape[:2]
+    sc_f = max(0.5, w_f / 1152.0)
+    dz_f = ndimage.distance_transform_edt(out[:, :, 3] >= 20)
+    yy_f, _ = np.mgrid[0:h_f, 0:w_f]
+    cmax_f = out[:, :, :3].max(axis=2).astype(np.int16)
+    cmin_f = out[:, :, :3].min(axis=2).astype(np.int16)
+    breath_f = (yy_f >= int(0.19 * h_f)) & (yy_f <= int(0.36 * h_f)) & ((cmax_f - cmin_f) <= 16)
+    leak_f = (dz_f >= 4.5 * sc_f) & (out[:, :, 3] >= 80) & (out[:, :, 3] < 250) & (~breath_f)
+    out[:, :, 3][leak_f] = 255
+    out[out[:, :, 3] == 0, :3] = 0
     if out.shape[:2] != in_shape:
         raise RuntimeError(f"[스프라이트 해상도 불일치 오류] expected={in_shape}, actual={out.shape[:2]}")
     return out
@@ -2383,10 +2710,10 @@ def export_chat_crops(sprite_rgba, output_dir, webp_quality=92):
     return str(chat_png), str(chat_webp)
 
 
-def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemble=True, use_pymatting=True, ref_path=None, verify_sheet_path=None, harmonize_style=False, restore_outer_hair=False, patch_face_from_base=False, character_id=None, target_size=None, emit_webp=False, emit_chat_crop=False):
+def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemble=True, use_pymatting=True, ref_path=None, verify_sheet_path=None, harmonize_style=False, restore_outer_hair=False, patch_face_from_base=False, character_id=None, target_size=None, emit_webp=False, emit_chat_crop=False, native_rgba=False, auto_native_rgba=False, restore_crown=None):
     """
-    입력 파일(input_path)과 출력 파일(output_path)을 받아 5단계 SOTA 배경 제거·내부 침식 복원·포켓 제거·PyMatting 디프린징·3중 배경 정량 검수를 수행하고 PNG(및 선택 시 WebP·768x768 chat 크롭) 저장 ->
-    정량 검수 결과 딕셔너리 반환 -> 해상도 변형 발생 시 예외 발생
+    입력 파일(input_path)과 출력 파일(output_path)을 받아 네이티브 투명 경량 후처리(--native-rgba) 또는 5단계 SOTA 배경제거 파이프라인을 실행하고 3중 배경 정량 검수 후 PNG·WebP·chat 크롭 저장 ->
+    정량 검수 결과 딕셔너리 반환 -> 불투명 배경에 native_rgba 지정 시 ValueError, 해상도 변형 발생 시 RuntimeError 발생
     """
     if character_id is None:
         character_id = detect_character_id(path_str=output_path or input_path)
@@ -2395,26 +2722,44 @@ def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemb
         im = im.resize(tuple(target_size), Image.Resampling.LANCZOS)
     expected_wh = im.size
 
-    if use_rembg:
-        rgb_im = im.convert("RGB")
-        alpha = predict_sota_alpha(rgb_im)
-        rgba = np.dstack([np.array(rgb_im), alpha])
-    else:
-        rgba = np.array(im.convert("RGBA"))
+    use_native_mode = bool(native_rgba)
+    if not use_native_mode and auto_native_rgba and im.mode in ("RGBA", "LA"):
+        cand_rgba = np.array(im.convert("RGBA"))
+        if is_native_transparent_rgba(cand_rgba):
+            use_native_mode = True
 
     prop_ref_rgba = resolve_default_ref_rgba(output_path or input_path, explicit_ref_path=ref_path)
-    rgba = clean_sprite(
-        rgba,
-        restore_holes=True,
-        use_pymatting=use_pymatting,
-        restore_crown=True,
-        harmonize_style=harmonize_style,
-        restore_outer_hair=restore_outer_hair,
-        style_ref_rgba=prop_ref_rgba,
-        patch_face_from_base=patch_face_from_base,
-        character_id=character_id,
-        is_fresh_cutout=use_rembg,
-    )
+    if use_native_mode:
+        rgba = np.array(im.convert("RGBA"))
+        effective_crown = False if restore_crown is None else bool(restore_crown)
+        rgba = clean_sprite(
+            rgba,
+            restore_crown=effective_crown,
+            harmonize_style=harmonize_style,
+            style_ref_rgba=prop_ref_rgba,
+            character_id=character_id,
+            native_rgba=True,
+        )
+    else:
+        if use_rembg:
+            rgb_im = im.convert("RGB")
+            alpha = predict_sota_alpha(rgb_im)
+            rgba = np.dstack([np.array(rgb_im), alpha])
+        else:
+            rgba = np.array(im.convert("RGBA"))
+        effective_crown = True if restore_crown is None else bool(restore_crown)
+        rgba = clean_sprite(
+            rgba,
+            restore_holes=True,
+            use_pymatting=use_pymatting,
+            restore_crown=effective_crown,
+            harmonize_style=harmonize_style,
+            restore_outer_hair=restore_outer_hair,
+            style_ref_rgba=prop_ref_rgba,
+            patch_face_from_base=patch_face_from_base,
+            character_id=character_id,
+            is_fresh_cutout=use_rembg,
+        )
 
     audit = audit_sprite_quality(rgba, expected_size=expected_wh)
     if not audit["resolution_ok"]:
@@ -2430,6 +2775,14 @@ def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemb
         export_chat_crops(rgba, os.path.dirname(os.path.abspath(output_path)))
     if verify_sheet_path:
         generate_verification_sheet(rgba, verify_sheet_path, ref_rgba=prop_ref_rgba)
+    mode_label = "네이티브 투명 스프라이트 후처리 완료" if use_native_mode else "SOTA 스프라이트 후처리 완료"
+    print(
+        f"[{mode_label}] output_path={output_path}, size={audit['width']}x{audit['height']}, "
+        f"floating_islands={audit['floating_islands']}/{audit['floating_islands_18']}, "
+        f"interior_holes={audit['interior_holes']}, enclosed_pinholes={audit['enclosed_pinholes']}, "
+        f"white_halo_px={audit['white_halo_px']}",
+        flush=True,
+    )
     if prop_ref_rgba is not None:
         passed, report = validate_proportion_against_ref(rgba, prop_ref_rgba)
         if not passed:
@@ -2438,9 +2791,12 @@ def process_sprite_file(input_path, output_path, use_rembg=True, use_sota_ensemb
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Clean character sprite background using 5-stage SOTA pipeline, Trimap PyMatting, and 3-way verification")
+    parser = argparse.ArgumentParser(description="Clean character sprite background using Native RGBA lightweight mode or 5-stage SOTA pipeline, Trimap PyMatting, and 1:1 verification")
     parser.add_argument("input", help="Input image file path")
     parser.add_argument("output", help="Output PNG file path")
+    parser.add_argument("--native-rgba", action="store_true", help="Lightweight mode for native transparent RGBA sprites (GPT Image 2.6 background='transparent'): skips rembg and white-bg defringing while fixing interior highlight leaks, closed pinholes, and exterior ghost dust")
+    parser.add_argument("--auto-native-rgba", action="store_true", help="Automatically switch to --native-rgba when input image already has a native transparent background")
+    parser.add_argument("--restore-crown", action="store_true", help="Also run top crown (y=0) clipping restoration when using --native-rgba")
     parser.add_argument("--no-rembg", action="store_true", help="Run sota_clean_one_shot on existing alpha without re-running rembg")
     parser.add_argument("--sota", action="store_true", help="Use SOTA alpha prediction and PyMatting foreground estimation")
     parser.add_argument("--no-pymatting", action="store_true", help="Skip PyMatting multi-level foreground estimation and use fast EDT defringing only")
@@ -2453,7 +2809,7 @@ if __name__ == "__main__":
     parser.add_argument("--patch-face", action="store_true", help="Reuse 100%% of verified base sprite's outer mask/hair/body and patch only the inner facial expression when pose matches")
     parser.add_argument("--harmonize-style", action="store_true", help="Harmonize hair/uniform tone, linework darkness, and green chroma residue to match reference sprite without geometric warping")
     parser.add_argument("--restore-outer-hair", action="store_true", help="Restore over-eroded outer hair strands from reference sprite for matching base head poses")
-    parser.add_argument("--verify-sheet", default=None, help="Optional output path for triple-background (#181824 + #FF00FF + #00FF00) verification sheet")
+    parser.add_argument("--verify-sheet", default=None, help="Optional output path for triple-background (#181824 + #FF00FF + #00FF00) verification sheet and 1:1 PNG slices")
     args = parser.parse_args()
     parsed_size = None
     if args.target_size:
@@ -2462,7 +2818,7 @@ if __name__ == "__main__":
     process_sprite_file(
         args.input,
         args.output,
-        use_rembg=not args.no_rembg,
+        use_rembg=(not args.no_rembg) and (not args.native_rgba),
         use_sota_ensemble=True,
         use_pymatting=(not args.no_pymatting) or args.trimap_matting or args.sota,
         ref_path=args.ref,
@@ -2474,4 +2830,7 @@ if __name__ == "__main__":
         target_size=parsed_size,
         emit_webp=args.webp,
         emit_chat_crop=args.chat_crop,
+        native_rgba=args.native_rgba,
+        auto_native_rgba=args.auto_native_rgba,
+        restore_crown=True if args.restore_crown else None,
     )

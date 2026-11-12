@@ -47,8 +47,16 @@
 - Higgsfield MCP를 사용할 수 없거나 생성이 실패하면 다른 이미지 생성기로 임의 대체하지 말고 사용자에게 상황을 알린다.
 - 프로젝트용 생성 이미지는 기존 캐릭터 외형과 화풍을 참조해 일관성을 확인하고, 최종 파일을 저장소 안에 저장한 뒤 실제 시나리오 또는 갤러리 연결까지 검증한다.
 
-## Character Sprite Background Removal & Hole Recovery (Permanent, 2026-11-06 / Upgraded 2026-11-07)
-- 캐릭터 스프라이트 배경 제거, 잘못 깎인 내부 반투명 침식 구멍 복원, 머리카락·손가락 사이 갇힌 흰 배경 포켓 제거, 가는 머리카락 테두리 흰끼 역산, 상단 정수리(y = 0) 잘림 복원, 외곽 부유 노이즈 섬 정리, 테두리 흰끼(할로) 디프린징은 항상 SOTA 오픈소스 파이프라인이 구현된 scripts/clean-sprite-bg.py를 사용한다.
+## Native Transparent Character Sprite Generation (`GPT Image 2.6` Sunburst) & Lightweight Post-Processing (Permanent, 2026-11-12)
+- 캐릭터 스프라이트 신규 생성 및 자세·표정 편집 시 Higgsfield MCP의 **`GPT Image 2.6` (`gpt_image_2_6`, OpenAI Sunburst)** + **네이티브 투명 배경(`background: "transparent"`, `output_format: "png"`, `aspect_ratio: "3:4"`)** + 캐릭터 정본 레퍼런스(`normal/01/sprite.png` 또는 `smile/01/sprite.png`, `image_references`) 조합을 최우선 표준으로 사용한다(필요 시 `Nano Banana 2.1` (`nano_banana_2_1`) 등 보조 활용).
+- 동일 해상도·품질(`1k` + `high` = `1.5 credits`)에서 크레딧 비용이 동일하므로, 초고속 시안용 경량 모델인 `GPT Image 2.6 Flare` (`gpt_image_2_6_flare`)는 프로덕션 캐릭터 에셋에 사용하지 않고 레퍼런스 일관성·세부 묘사(손가락·의상 주름·젖은 머리카락 결)·네이티브 알파 품질이 우수한 기본 **`GPT Image 2.6` (`gpt_image_2_6`)**을 사용한다.
+- `background: "transparent"`로 생성된 네이티브 투명 PNG는 배경 색 섞임 없는 순수 전경 RGB와 잔머리 안티앨리어싱 알파를 이미 보유하므로, 외곽 머리카락 결 손상과 흰 배경 역산 왜곡을 막기 위해 무거운 AI 배경제거(`rembg` / `BiRefNet`)와 흰 배경 디프린징을 생략하고 반드시 `python scripts/clean-sprite-bg.py <raw.png> <out/sprite.png> --native-rgba --webp --chat-crop --verify-sheet <verify.jpg>` 경량 후처리를 실행한다:
+  1. **외곽 네이티브 잔머리 알파 보존 + 허공 노이즈 제거**: 본체에 연결된 반투명 머리카락 끝단의 RGB·알파는 그대로 보존하고, 허공의 미세 확산 먼지(`alpha <= 14`)와 분리된 부유 노이즈 섬만 다단계 연결 요소 필터(`alpha >= 24, 18, 10, 1`)로 제거.
+  2. **내부 반투명 누수 및 닫힌 미세 핀홀 복원**: 흰 의사 가운·흰 셔츠·머리띠·안경알·눈동자 하이라이트·치아·땀방울 등 실루엣 내부 밝은 부위가 반투명(`alpha < 255`)하게 빠지거나 미세 핀홀(`alpha == 0`)이 뚫린 경우 주변 불투명 픽셀 색 보간 후 `alpha = 255`로 잠금(팔과 몸통 사이 등 실제 개방 배경 공간은 보존).
+  3. **필수 정량·육안 검수 통과 후 배포**: 네이티브 투명 생성물도 예외 없이 후처리 직후 정량 픽셀 검사(`floating_islands == 0`, `floating_islands_18 == 0`, `interior_holes == 0`, `enclosed_pinholes == 0`) 및 `1:1` 상·하체 분할 무손실 PNG 3색 대비 시트(`#181824`, `#FF00FF`, `#00FF00`) 육안 검수를 통과한 뒤에만 R2 게시·배포한다.
+
+## Character Sprite Background Removal & Hole Recovery (Permanent, 2026-11-06 / Upgraded 2026-11-12)
+- 불투명 흰 배경(`#FFFFFF`) 원본의 캐릭터 스프라이트 배경 제거, 잘못 깎인 내부 반투명 침식 구멍 복원, 머리카락·손가락 사이 갇힌 흰 배경 포켓 제거, 가는 머리카락 테두리 흰끼 역산, 상단 정수리(y = 0) 잘림 복원, 외곽 부유 노이즈 섬 정리, 테두리 흰끼(할로) 디프린징은 항상 SOTA 오픈소스 파이프라인(ONNX BFC 메모리 아레나 비활성화 적용)이 구현된 scripts/clean-sprite-bg.py를 사용한다(네이티브 투명 배경 원본은 위 `--native-rgba` 경량 모드를 사용).
 - 단순 밝기 임계값(RGB >= 248~250) 외곽 플러드필이나 직선 사각형 좌표 잘라내기로 배경을 지우거나 구멍을 메우지 않는다(외곽 순백색 플러드필은 흰 가운 소매·은발 하이라이트를 침식하므로 금지).
 - 표준 SOTA 처리 순서는 predict_sota_alpha(bria-rmbg 우선 또는 birefnet-general + isnet-anime 코어 보호 앙상블) -> restore_interior_erosion(중심 척추 영역 x=0.33..0.67 닫힌 홀 100% 불투명 복원 및 RGB가 온전한 반투명 침식 구멍 복원) -> remove_trapped_hair_pockets(피부 18px 확장 커프스/카라/가운 보호 + 외곽 머리카락 루프 순백색 #FFFFFF 포켓 제거 + 가는 머리카락 테두리 연속 알파·색상 역산) -> clean_sprite_defringe(다단계 부유 노이즈 섬 제거 + EDT 코어 색상 참조 디프린징) -> restore_crown_if_needed(상단 y=0 정수리 잘림 방지 및 하단 고정 포물선 아크 복원) -> 원본 해상도(width x height) 보존·용량 최적화 및 2종 배경 시각·정량 검증을 따른다.
 - harem의 큐피드 방(mixed_5)과 cupid 프로젝트의 캐릭터 스프라이트는 평문 SHA-256과 R2 스토리지를 동기화하여 관리한다.
