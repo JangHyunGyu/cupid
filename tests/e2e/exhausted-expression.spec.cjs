@@ -58,7 +58,7 @@ for (const width of [360, 390, 768, 1024, 1440]) {
                         img.complete && img.naturalWidth > 0 && decodeURIComponent(img.currentSrc).includes(expected), `${id}_${expression}`)).toBe(true);
                     if (expression === 'exhausted') {
                         const dimensions = await page.locator(selector).evaluate(img => [img.naturalWidth, img.naturalHeight]);
-                        expect(dimensions).toEqual([1086, 1448]);
+                        expect(dimensions).toEqual(id === 'nurse' ? [1152, 1536] : [1086, 1448]);
                         if (id === 'yuna' && [390, 1440].includes(width)) {
                             await page.screenshot({ path: testInfo.outputPath(`${surface}-yuna-${width}.png`) });
                         }

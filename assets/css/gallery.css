@@ -596,6 +596,8 @@ body::before {
 
 /* 모달 헤더 제목 */
 .modal-header h2 {
+    min-width: 0;
+    overflow-wrap: anywhere;
     color: var(--c-text);
     font-size: 1.4rem;
     font-weight: 500;
@@ -670,6 +672,8 @@ body::before {
 /* 캐릭터 상세 정보 영역 (오른쪽) */
 .character-details {
     flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
     /* 50% 너비 */
     padding: 20px;
     overflow-y: auto;
@@ -706,13 +710,16 @@ body::before {
 /* 표정 버튼 그리드 */
 .expression-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     /* 4열 */
     gap: 8px;
 }
 
 /* 표정 버튼 */
 .expression-btn {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: break-word;
     background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #aaa;
@@ -757,12 +764,14 @@ body::before {
 /* 프로필 그리드 (2열) */
 .stats-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
 }
 
 /* 개별 프로필 항목 */
 .stat-item {
+    min-width: 0;
+    overflow-wrap: anywhere;
     background: rgba(255, 255, 255, 0.05);
     padding: 12px;
     border-radius: 10px;
@@ -1568,7 +1577,7 @@ body::before {
 
     /* 표정 버튼 3열로 변경 */
     .expression-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     /* 탭 버튼 크기 축소 */
@@ -1728,6 +1737,10 @@ body::before {
 
     .character-preview img {
         max-height: 70vh;
+    }
+
+    .expression-grid {
+        grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
     }
 
     /* CG 그리드: 가로모드에서 더 많은 카드 표시 */

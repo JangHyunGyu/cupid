@@ -38,9 +38,9 @@ test('new relationship artwork is connected without changing existing Haeun unlo
         }
     }
     const date = scene('date_seo_pretty_high_3');
-    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_very_shy.png'), /seyoun_date_shy/);
-    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_shy2.png'), /seyoun_date_shy/);
-    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_angry.png'), /seyoun_date_worried/);
+    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_very_shy.png'), /seyoun_date_very_shy\.webp$/);
+    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_shy2.png'), /seyoun_date_shy\.webp$/);
+    assert.match(GalleryData.resolveOutfitExpression(date, 'assets/images/characters/seyoun_angry.png'), /seyoun_date_angry\.webp$/);
 });
 
 test('every authored scene and localized gallery image has a real matching asset', () => {
@@ -105,6 +105,17 @@ test('conversation expressions preserve authored outfits across every expression
     const centerScene = { characters: { center: { src: 'assets/images/characters/seyoun_date_normal.webp' } } };
     assert.match(GalleryData.resolveOutfitExpression(centerScene, 'assets/images/characters/seyoun_climax_04.png'), /seyoun_date_[a-z0-9_]+\.webp$/);
     assert.equal(GalleryData.resolveOutfitExpression({}, 'assets/images/characters/dain_sad.png'), 'assets/images/characters/dain_sad.png');
+    for (const [id, outfits] of Object.entries(GalleryData.OUTFIT_EXPRESSIONS)) {
+        for (const [outfit, expressions] of Object.entries(outfits)) {
+            const outfitScene = { character: `assets/images/characters/${id}_${outfit}_normal.webp` };
+            for (const expr of expressions) {
+                assert.equal(
+                    GalleryData.resolveOutfitExpression(outfitScene, `assets/images/characters/${id}_${expr}.png`),
+                    `assets/images/characters/${id}_${outfit}_${expr}.webp`
+                );
+            }
+        }
+    }
 });
 
 test('all new protected outfit files have deterministic native-resolution recovery fixtures', () => {

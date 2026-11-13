@@ -12,6 +12,7 @@ async function openGame(page, lang = 'ko') {
 
 for (const [width, height] of [[1440, 1000], [390, 844]]) {
     test(`new artwork loads in the story and retains date outfits at ${width}x${height}`, async ({ page }, info) => {
+        test.setTimeout(120_000);
         await page.setViewportSize({ width, height });
         await openGame(page);
         const errors = [];
@@ -27,17 +28,24 @@ for (const [width, height] of [[1440, 1000], [390, 844]]) {
             ['day5_ending_haeun_apology_seoyeon', 'haeun_smile']
         ]) {
             await page.evaluate(id => gameEngine.renderScene(id, { restoring: true }), id);
-            const img = page.locator('#char-center img');
+            const img = page.locator('#char-center > img');
             await expect.poll(() => img.getAttribute('src')).toContain(asset);
             await img.evaluate(img => img.decode());
             expect(await img.evaluate(img => img.naturalWidth)).toBe(2480);
             await page.screenshot({ path: info.outputPath(id + '.png'), animations: 'disabled' });
         }
         await page.evaluate(async () => {
-            await gameEngine.renderScene('date_seo_pretty_high_3', { restoring: true });
-            gameEngine.freeTalkSystem.applyExpression('very_shy', gameEngine.sceneRenderer.getScene('date_seo_pretty_high_3'));
+            await window.ensureCupidFreeTalkRuntime?.();
+            await gameEngine.renderScene('date_seo_pretty_high_3_b', { restoring: true });
+            gameEngine.freeTalkSystem.applyExpression('very_shy', gameEngine.sceneRenderer.getScene('date_seo_pretty_high_3_b'));
         });
-        await expect.poll(() => page.locator('#char-center img').getAttribute('src')).toContain('seyoun_date_shy');
+        await expect.poll(() => page.locator('#char-center > img').getAttribute('src')).toContain('seyoun_date_very_shy');
+        await expect.poll(() => page.locator('#char-center > img').evaluate(img => img.naturalWidth)).toBe(1744);
+        await page.evaluate(() => {
+            gameEngine.freeTalkSystem.applyExpression('angry', gameEngine.sceneRenderer.getScene('date_seo_pretty_high_3_b'));
+        });
+        await expect.poll(() => page.locator('#char-center > img').getAttribute('src')).toContain('seyoun_date_angry');
+        await expect.poll(() => page.locator('#char-center > img').evaluate(img => img.naturalWidth)).toBe(1744);
         for (const [id, asset] of [['lunch_yuna_18', 'event_yuna_reading'], ['date_seo_succulent_3', 'event_seoyeon_succulent'], ['tour_seo_7', 'school_festival']]) {
             await page.evaluate(id => gameEngine.renderScene(id, { restoring: true }), id);
             await expect.poll(() => page.locator('#background-layer').evaluate(el => decodeURIComponent(el.style.backgroundImage))).toContain(asset);
@@ -135,8 +143,8 @@ test('a home conversation retains its outfit when the AI changes expression', as
     await openGame(page);
     await page.evaluate(() => gameEngine.renderScene('day5_nurse_ending_freetalk_perfect', { restoring: true }));
     await page.evaluate(() => gameEngine.freeTalkSystem.applyExpression('angry', gameEngine.sceneRenderer.getScene('day5_nurse_ending_freetalk_perfect')));
-    await expect.poll(() => page.locator('#character-layer img').getAttribute('src')).toMatch(/nurse_home_angry/);
-    await expect.poll(() => page.locator('#character-layer img').evaluate(img => img.naturalWidth)).toBe(3584);
+    await expect.poll(() => page.locator('#character-layer .char-slot > img').getAttribute('src')).toMatch(/nurse_home_angry/);
+    await expect.poll(() => page.locator('#character-layer .char-slot > img').evaluate(img => img.naturalWidth)).toBe(3584);
 });
 
 test('reused portraits update opacity in both unchanged and mixed slot transitions', async ({ page }) => {
@@ -163,9 +171,9 @@ test('an AI-selected expression cannot leak into the next authored portrait', as
     await openGame(page);
     await page.evaluate(() => gameEngine.renderScene('classroom_dain_1', { restoring: true }));
     await page.evaluate(() => gameEngine.freeTalkSystem.applyExpression('angry', gameEngine.sceneRenderer.getScene('classroom_dain_1')));
-    await expect.poll(() => page.locator('#character-layer img').getAttribute('src')).toMatch(/dain_angry/);
+    await expect.poll(() => page.locator('#character-layer .char-slot > img').getAttribute('src')).toMatch(/dain_angry/);
     await page.evaluate(() => gameEngine.renderScene('classroom_dain_1', { restoring: true }));
-    await expect.poll(() => page.locator('#character-layer img').getAttribute('src')).toMatch(/dain_normal/);
+    await expect.poll(() => page.locator('#character-layer .char-slot > img').getAttribute('src')).toMatch(/dain_normal/);
 });
 
 for (const lang of ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh']) test(`${lang}: every outfit has localized gallery labels and unchanged base requirements`, async ({ page }) => {

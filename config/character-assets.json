@@ -2000,6 +2000,82 @@
       }
     },
     {
+      "id": "dain/outfits/date/expressions/active/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "active",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/active/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_active.webp",
+            "assets/characters/dain/outfits/date/expressions/active/01/sprite.webp"
+          ],
+          "sha256": "e22ebbdfe89707e76630d4a1a575cbba87c00fc44b117607a42c02ba5ab6ca46",
+          "bytes": 289839
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/aegyo/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "aegyo",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_aegyo.webp",
+            "assets/characters/dain/outfits/date/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "26fd1909e46108f89c7cac5487d29bd0206b983fd6beda350e1de194bbfe8d69",
+          "bytes": 282157
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/afterglow/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "afterglow",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_afterglow.webp",
+            "assets/characters/dain/outfits/date/expressions/afterglow/01/sprite.webp"
+          ],
+          "sha256": "96022e9f1d6105930c046c160da3899cdb78eb7454225430f52de52c94a764d1",
+          "bytes": 306019
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/ahegao/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "ahegao",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_ahegao.webp",
+            "assets/characters/dain/outfits/date/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "5458c7819b7b4e3060043fd8daac1cb8723660de20a052efb7367cbaadb46a4a",
+          "bytes": 300105
+        }
+      }
+    },
+    {
       "id": "dain/outfits/date/expressions/angry/01",
       "characterId": "dain",
       "role": "expression",
@@ -2015,6 +2091,500 @@
           ],
           "sha256": "38ccce2225aebe818353d53f5204ed4a951d84919dbed0ee28c0f6425ee35bf1",
           "bytes": 758501
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/begging_lust/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "begging_lust",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_begging_lust.webp",
+            "assets/characters/dain/outfits/date/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "792bfe4a920c5579cdb06c8559999d0c94d4cc37489512d28b3787df6d786cc3",
+          "bytes": 301603
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/betrayed/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "betrayed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_betrayed.webp",
+            "assets/characters/dain/outfits/date/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "d6f423f0bbb9dae41e30f77fa7cb5bb0738a17f1913a782db849a1316500663c",
+          "bytes": 312677
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/bored/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "bored",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_bored.webp",
+            "assets/characters/dain/outfits/date/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "6e67031d09c784375a57ebc5b9131649cf477cf7685e2c65fddb228e96488440",
+          "bytes": 311917
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/choking/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "choking",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/choking/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_choking.webp",
+            "assets/characters/dain/outfits/date/expressions/choking/01/sprite.webp"
+          ],
+          "sha256": "fc20c88b4ce7fc7f13250d86e94c34d6ad91bdb1cde670f4f3152e04c2eb94e1",
+          "bytes": 300091
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/climax/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "climax",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/climax/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_climax.webp",
+            "assets/characters/dain/outfits/date/expressions/climax/01/sprite.webp"
+          ],
+          "sha256": "87d1dc6ebd1c396143be83da98ce5252c84a02abcbdc6f18090bcfad9af8b5ff",
+          "bytes": 352677
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/cold/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "cold",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/cold/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_cold.webp",
+            "assets/characters/dain/outfits/date/expressions/cold/01/sprite.webp"
+          ],
+          "sha256": "bcc1a1bbcfb2d2f910f97a8a9d983a35e3466ec6100ed5706703db47427f414a",
+          "bytes": 309967
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/combat_ready/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "combat_ready",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_combat_ready.webp",
+            "assets/characters/dain/outfits/date/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "a4632cabc01a36897e8c7a9e56fec6ff78e86d96d1eb81abc1eec4f2cb446b94",
+          "bytes": 298189
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/confused/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "confused",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/confused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_confused.webp",
+            "assets/characters/dain/outfits/date/expressions/confused/01/sprite.webp"
+          ],
+          "sha256": "90a134feaa677e7866e109aafd11fbe9fef6f75929750e1d7bd1506af45fc5ff",
+          "bytes": 307825
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/cry/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "cry",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/cry/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_cry.webp",
+            "assets/characters/dain/outfits/date/expressions/cry/01/sprite.webp"
+          ],
+          "sha256": "44eff075f3e866a465f9edd6bcc2213558db05b2ffecfcee368024556c19605f",
+          "bytes": 309723
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/dazed/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dazed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_dazed.webp",
+            "assets/characters/dain/outfits/date/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "24f0efe8f80b825e199a3498995bfaafc3a050cbf934974962ab54ae0314f009",
+          "bytes": 280983
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/dead/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dead",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_dead.webp",
+            "assets/characters/dain/outfits/date/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "97cc73f67c5604ad4ecb1911fe9ebb511c7aad87a7c560b83ade974375bfc392",
+          "bytes": 253815
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/disgusted/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "disgusted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/disgusted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_disgusted.webp",
+            "assets/characters/dain/outfits/date/expressions/disgusted/01/sprite.webp"
+          ],
+          "sha256": "5ab303efe2390c457870d9ff498a4a8074e5995910c8e5891e2818e5303c767f",
+          "bytes": 291695
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/dominant_aroused/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_dominant_aroused.webp",
+            "assets/characters/dain/outfits/date/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "2776f45f273f6548fc143dfd7fca2731bf63681ccc40a89a0cc9951a6daef7db",
+          "bytes": 281161
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/dry_smile/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dry_smile",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_dry_smile.webp",
+            "assets/characters/dain/outfits/date/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "8a1902fbddc2218ad61c98e630dbfeae932b8c01b3929ed509b7c71511c6df8c",
+          "bytes": 293227
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/dumbfounded/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_dumbfounded.webp",
+            "assets/characters/dain/outfits/date/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "853cff5bbed238c1293cb2b57f5fe05e5a92263d15f2563dd1f96d98281dc93e",
+          "bytes": 312703
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/enduring/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "enduring",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_enduring.webp",
+            "assets/characters/dain/outfits/date/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "c751ce392155ba52c7c0f3dc98e947c9a6da052d8defb3f95740c9e55d81965e",
+          "bytes": 302727
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/entranced/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "entranced",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_entranced.webp",
+            "assets/characters/dain/outfits/date/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "e2cb84d270c5d97d787e57cb7675584d28f18ed0923b6f914e716e893bfd6bcc",
+          "bytes": 306439
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/exhausted/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "exhausted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/exhausted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_exhausted.webp",
+            "assets/characters/dain/outfits/date/expressions/exhausted/01/sprite.webp"
+          ],
+          "sha256": "3b335d29ea0892f6cecbb7f93671945e169b5b805ad6b78cec0c5c55da69d544",
+          "bytes": 313845
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/fainted/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "fainted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_fainted.webp",
+            "assets/characters/dain/outfits/date/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "4267c56cef8b86ef784d019d24a92c4925d7785a4bd3099d2b7afe2a635bcf5f",
+          "bytes": 294065
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/firm/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "firm",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_firm.webp",
+            "assets/characters/dain/outfits/date/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "0cecb9adedfc78a0c8fc12b711e38f35789e5fc0afce739b048bee00f45a44c8",
+          "bytes": 277817
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/flushed/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "flushed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/flushed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_flushed.webp",
+            "assets/characters/dain/outfits/date/expressions/flushed/01/sprite.webp"
+          ],
+          "sha256": "4208c9eb294dec2468d262fa03340b57b6f7020bf80ea75f4090743989f62cef",
+          "bytes": 305521
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/furious/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "furious",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/furious/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_furious.webp",
+            "assets/characters/dain/outfits/date/expressions/furious/01/sprite.webp"
+          ],
+          "sha256": "b8cd3b25fcac0e8a7cc0cb119e5adb217f6d6f1d59d3f7c780025ed5a8608667",
+          "bytes": 293599
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/groggy/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "groggy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_groggy.webp",
+            "assets/characters/dain/outfits/date/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "ff0e25dc84f0059a7db854dba7305cca55904789d0e4ac30cf5c2dfed507b410",
+          "bytes": 311003
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/humiliated/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "humiliated",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_humiliated.webp",
+            "assets/characters/dain/outfits/date/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "31f71b7dd9afd17d12359a3f4db7ac9de40f8b876f05aca281e30e1e992f890d",
+          "bytes": 289827
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/jealous/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "jealous",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/jealous/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_jealous.webp",
+            "assets/characters/dain/outfits/date/expressions/jealous/01/sprite.webp"
+          ],
+          "sha256": "3df9802f82f4692a22e7e1bc9ca914aebc85e264b3ae570a3ab4b8750f2b5608",
+          "bytes": 300955
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/kiss/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "kiss",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/kiss/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_kiss.webp",
+            "assets/characters/dain/outfits/date/expressions/kiss/01/sprite.webp"
+          ],
+          "sha256": "b404be3671cd68460cf1e377fb1eb45412d9a7b83546afe9bcf72c07f0c09466",
+          "bytes": 306931
         }
       }
     },
@@ -2038,6 +2608,44 @@
       }
     },
     {
+      "id": "dain/outfits/date/expressions/lovestruck/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "lovestruck",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/lovestruck/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_lovestruck.webp",
+            "assets/characters/dain/outfits/date/expressions/lovestruck/01/sprite.webp"
+          ],
+          "sha256": "cd46136599d9fef9e64ebfbf7eabfde70433f877e697aa00e2de27ff05e2a2dc",
+          "bytes": 293421
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/messy_afterglow/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_messy_afterglow.webp",
+            "assets/characters/dain/outfits/date/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "a43d31dd8c65ac4495230dc261edf32eb37a254b885a9a7f7807b6cee7a9d94c",
+          "bytes": 343463
+        }
+      }
+    },
+    {
       "id": "dain/outfits/date/expressions/normal/01",
       "characterId": "dain",
       "role": "expression",
@@ -2053,6 +2661,101 @@
           ],
           "sha256": "a05d3e7b60b8ce0d2322b296b818aa1680e66a877a7f3e1dc87ab79651409c8f",
           "bytes": 763853
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/oral_service/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "oral_service",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_oral_service.webp",
+            "assets/characters/dain/outfits/date/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "4d0dde90ae6e5d145976b64d0c4d730f429f847992084a239da175bcff2dbb66",
+          "bytes": 273471
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/pain/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "pain",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/pain/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_pain.webp",
+            "assets/characters/dain/outfits/date/expressions/pain/01/sprite.webp"
+          ],
+          "sha256": "59f497e12a851a01e2df9da610fcc56f6ef896b3040f8c30ff18ca88cad042ee",
+          "bytes": 309503
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/pleading/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "pleading",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_pleading.webp",
+            "assets/characters/dain/outfits/date/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "4c3ee4db52301f171108dbfab22765cc03ab025e0eba399b9fd66dfd338fde04",
+          "bytes": 304801
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/pout/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "pout",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/pout/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_pout.webp",
+            "assets/characters/dain/outfits/date/expressions/pout/01/sprite.webp"
+          ],
+          "sha256": "a259763d169e4dd87c36bc78ac417ebdb06a2571038646f29a1af7226c2ae2ed",
+          "bytes": 300069
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/relieved/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "relieved",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/relieved/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_relieved.webp",
+            "assets/characters/dain/outfits/date/expressions/relieved/01/sprite.webp"
+          ],
+          "sha256": "3323823c947b97b1b4bbf16d0fdc8a2ad768f46f919184f8b615e9bedf7e2bdc",
+          "bytes": 279533
         }
       }
     },
@@ -2076,6 +2779,82 @@
       }
     },
     {
+      "id": "dain/outfits/date/expressions/scared/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "scared",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_scared.webp",
+            "assets/characters/dain/outfits/date/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "d89757aee61216e3a842f17da747abc4ffb49577fa0ce5ce2220e4a534c134d7",
+          "bytes": 322017
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/scheming/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "scheming",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_scheming.webp",
+            "assets/characters/dain/outfits/date/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "ae383a5f3266067e0240307961de9b10eeffee02d12a83a41a8ccfe91ed1dc39",
+          "bytes": 281343
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/scream/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "scream",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/scream/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_scream.webp",
+            "assets/characters/dain/outfits/date/expressions/scream/01/sprite.webp"
+          ],
+          "sha256": "33302dbb5d7a53acdae8993b751d31fd036ebe12da9e8aaa84d53523cde03bbe",
+          "bytes": 337887
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/seductive/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "seductive",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/seductive/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_seductive.webp",
+            "assets/characters/dain/outfits/date/expressions/seductive/01/sprite.webp"
+          ],
+          "sha256": "42c19c9c6a03158c7b39d90866858d97478e60f810ce7bf7446ad80c2f8d8269",
+          "bytes": 327195
+        }
+      }
+    },
+    {
       "id": "dain/outfits/date/expressions/shy/01",
       "characterId": "dain",
       "role": "expression",
@@ -2095,6 +2874,120 @@
       }
     },
     {
+      "id": "dain/outfits/date/expressions/smile/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "smile",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_smile.webp",
+            "assets/characters/dain/outfits/date/expressions/smile/01/sprite.webp"
+          ],
+          "sha256": "391c510aadc2528fae122ea2f7f087b664f857ac1e59385028879d7031a6026c",
+          "bytes": 297695
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/smirk/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "smirk",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/smirk/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_smirk.webp",
+            "assets/characters/dain/outfits/date/expressions/smirk/01/sprite.webp"
+          ],
+          "sha256": "c1ce6dfed1eeb92a68618016654030849aa26d464906ca561ce464d3211cf4c3",
+          "bytes": 313045
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/sob/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "sob",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/sob/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_sob.webp",
+            "assets/characters/dain/outfits/date/expressions/sob/01/sprite.webp"
+          ],
+          "sha256": "43eca6c432a6fcfd4ac7c4bcb6a857fe43c7d23676d4b23f25d92bf2a41cc9df",
+          "bytes": 289147
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/soft_smile/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "soft_smile",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_soft_smile.webp",
+            "assets/characters/dain/outfits/date/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "085d4ca09444039cb3c995df0ed228bb75da134d22ea730adf91486ed94869fd",
+          "bytes": 292545
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/surprised/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "surprised",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_surprised.webp",
+            "assets/characters/dain/outfits/date/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "f4c07f6c1521b8596d2617a270a9dac984f6c55a19c1341db2ca0d640fd83f4b",
+          "bytes": 266473
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/suspicious/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "suspicious",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/suspicious/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_suspicious.webp",
+            "assets/characters/dain/outfits/date/expressions/suspicious/01/sprite.webp"
+          ],
+          "sha256": "997e5cb5f78f194107f237c37c0302fa558caac997b2e4fa493455c4e9193ca9",
+          "bytes": 291739
+        }
+      }
+    },
+    {
       "id": "dain/outfits/date/expressions/sweat/01",
       "characterId": "dain",
       "role": "expression",
@@ -2110,6 +3003,101 @@
           ],
           "sha256": "d26221671052f573ce36c4610f891c37c02fb85181d5df6bccf9a01055a0e144",
           "bytes": 766525
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/tired/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "tired",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_tired.webp",
+            "assets/characters/dain/outfits/date/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "f7efe8330358dd4794bd4e5fc3fb104ec3d24a1670ec10819a417bfd15664487",
+          "bytes": 287461
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/touched/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "touched",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_touched.webp",
+            "assets/characters/dain/outfits/date/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "048cb07057d76ff03252a1fa92b9d552b91fec85f4a57ec0f073f60befa0908e",
+          "bytes": 309763
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/undressed_shy/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_undressed_shy.webp",
+            "assets/characters/dain/outfits/date/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "be4d1cd21ccc2870a3bd3a292d98b9e346bdb7ccd6cfb1a230fbbbc3faeec03b",
+          "bytes": 291041
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/very_shy/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "very_shy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_very_shy.webp",
+            "assets/characters/dain/outfits/date/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "8c9b0ddb32fd561df67d4034f481d85b1eca3f328b308c497bd86894db9a78fe",
+          "bytes": 329515
+        }
+      }
+    },
+    {
+      "id": "dain/outfits/date/expressions/worried/01",
+      "characterId": "dain",
+      "role": "expression",
+      "expression": "worried",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/dain/outfits/date/expressions/worried/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/dain_date_worried.webp",
+            "assets/characters/dain/outfits/date/expressions/worried/01/sprite.webp"
+          ],
+          "sha256": "11350042abdd000ec7aad571a08f306e3d4c399b3103c519054134097c8b4ee2",
+          "bytes": 292195
         }
       }
     },
@@ -7550,6 +8538,82 @@
       }
     },
     {
+      "id": "nurse/outfits/home/expressions/active/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "active",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/active/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_active.webp",
+            "assets/characters/nurse/outfits/home/expressions/active/01/sprite.webp"
+          ],
+          "sha256": "2bf52f3a80db1e9e66a6d957eece5cdad5e8f0b1a5f475de56baf93468964f73",
+          "bytes": 277811
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/aegyo/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "aegyo",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_aegyo.webp",
+            "assets/characters/nurse/outfits/home/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "773b10c6605686b9f7d12f089151accc05f14a96095376c525c9def0394383ea",
+          "bytes": 253285
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/afterglow/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "afterglow",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_afterglow.webp",
+            "assets/characters/nurse/outfits/home/expressions/afterglow/01/sprite.webp"
+          ],
+          "sha256": "05f36233fe88b02150ca462f55be09bc155b44de14994b8c9e4dd7d5c1394948",
+          "bytes": 309085
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/ahegao/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "ahegao",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_ahegao.webp",
+            "assets/characters/nurse/outfits/home/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "8fc9d14ef3a98103a183cc3d8c78126ed942fcbc355afbfd8f27557ba4e59106",
+          "bytes": 307507
+        }
+      }
+    },
+    {
       "id": "nurse/outfits/home/expressions/angry/01",
       "characterId": "nurse",
       "role": "expression",
@@ -7565,6 +8629,557 @@
           ],
           "sha256": "a02b1b396a019054df775f0986ff8f44e06c4147b192e06be9d3664e0086ba7e",
           "bytes": 6985089
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/begging_lust/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "begging_lust",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_begging_lust.webp",
+            "assets/characters/nurse/outfits/home/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "2f218ea6093357fc205d0149b73699a90aff939162fb4a64710aa73946410ef7",
+          "bytes": 253439
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/betrayed/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "betrayed",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_betrayed.webp",
+            "assets/characters/nurse/outfits/home/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "c5c835493d81f2a44529f933ab4c4f783502171ed4b325519f224f7b42f24dbd",
+          "bytes": 257417
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/bored/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "bored",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_bored.webp",
+            "assets/characters/nurse/outfits/home/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "6e628184fbf724c85b5267eba0a49832476c72249841e1b45363955716da0c74",
+          "bytes": 258367
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/choking/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "choking",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/choking/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_choking.webp",
+            "assets/characters/nurse/outfits/home/expressions/choking/01/sprite.webp"
+          ],
+          "sha256": "77e896408688694a866673a37a3906fc31eba4ca2271a9fb5334c81cc320df22",
+          "bytes": 267665
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/climax/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "climax",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/climax/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_climax.webp",
+            "assets/characters/nurse/outfits/home/expressions/climax/01/sprite.webp"
+          ],
+          "sha256": "95cc3e1fcc3472b11c0c8dbe7b91a39ce7a1ba973d75ad1664699f96752f0c92",
+          "bytes": 273967
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/cold/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "cold",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/cold/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_cold.webp",
+            "assets/characters/nurse/outfits/home/expressions/cold/01/sprite.webp"
+          ],
+          "sha256": "d6d6e53899e0dafcbcfcd1f227ab01e669d16909c9939ca9029d4325319ff9a1",
+          "bytes": 262389
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/combat_ready/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "combat_ready",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_combat_ready.webp",
+            "assets/characters/nurse/outfits/home/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "58c747ac8a29b95c90497f53a66a32905d68492476aee70fbede42cd0e099447",
+          "bytes": 254231
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/confused/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "confused",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/confused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_confused.webp",
+            "assets/characters/nurse/outfits/home/expressions/confused/01/sprite.webp"
+          ],
+          "sha256": "dbfc5d86d169f4afb779ad686591033d7c27658ec3f76e13333693daa5105fbf",
+          "bytes": 264373
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/cry/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "cry",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/cry/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_cry.webp",
+            "assets/characters/nurse/outfits/home/expressions/cry/01/sprite.webp"
+          ],
+          "sha256": "7742c508e51167b354619a45c88ea779141ed6e620d79af06a35298da1c90628",
+          "bytes": 261889
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/dazed/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dazed",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_dazed.webp",
+            "assets/characters/nurse/outfits/home/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "3ec6200a039dfe994374393867d8548f800897aef8426e9f5fe0305c35472b16",
+          "bytes": 266829
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/dead/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dead",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_dead.webp",
+            "assets/characters/nurse/outfits/home/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "ed81785825e57c70081f62d67e2b1db19dd1cf168a79e3865100dfadf797116a",
+          "bytes": 253155
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/disgusted/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "disgusted",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/disgusted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_disgusted.webp",
+            "assets/characters/nurse/outfits/home/expressions/disgusted/01/sprite.webp"
+          ],
+          "sha256": "3077072c60243c9d76b18b0109606fff0f375c7dacaa7d006d91871501de73ab",
+          "bytes": 249025
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/dominant_aroused/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_dominant_aroused.webp",
+            "assets/characters/nurse/outfits/home/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "822c874dd4688f142d1b98f5e9d0485f33b37b60e3a8da730e2c013872590e7a",
+          "bytes": 294573
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/dry_smile/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dry_smile",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_dry_smile.webp",
+            "assets/characters/nurse/outfits/home/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "a5382d0c513cbb1183fa50cfbef664dbb7a2e4f846aab347fbcdd0d498752250",
+          "bytes": 264293
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/dumbfounded/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_dumbfounded.webp",
+            "assets/characters/nurse/outfits/home/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "0f931cda7a9fd7ed3527e2c01630c797c27605ded64747c060fc8db5983ececf",
+          "bytes": 236893
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/enduring/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "enduring",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_enduring.webp",
+            "assets/characters/nurse/outfits/home/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "4f85fadaab2536eb4c5a2fba38ea607f3ed3bd18437e3b12f02294347d4052c4",
+          "bytes": 305657
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/entranced/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "entranced",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_entranced.webp",
+            "assets/characters/nurse/outfits/home/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "170e2516dc3bcbc8ce867e0b34e4ed1a9c068b192618d8267f7ebee76dbfb263",
+          "bytes": 254571
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/exhausted/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "exhausted",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/exhausted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_exhausted.webp",
+            "assets/characters/nurse/outfits/home/expressions/exhausted/01/sprite.webp"
+          ],
+          "sha256": "1e7f558976a302ae61d8d3547a361da044a3097bab4e44226dd686d43b37e8af",
+          "bytes": 274469
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/fainted/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "fainted",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_fainted.webp",
+            "assets/characters/nurse/outfits/home/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "abdcc26112d5b0dcf09c84b04a08050baf3df98a5e5355cb6f547d5b6c63ff49",
+          "bytes": 252577
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/firm/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "firm",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_firm.webp",
+            "assets/characters/nurse/outfits/home/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "5a18e375d6066f9b96de575331a69bbd1e96d7145d9982b2fab66ce155e6ecd1",
+          "bytes": 265835
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/flushed/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "flushed",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/flushed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_flushed.webp",
+            "assets/characters/nurse/outfits/home/expressions/flushed/01/sprite.webp"
+          ],
+          "sha256": "bed98fba84099860ce9d88f8b59e1f77544b6470e99389b3666e40ec5b1f452e",
+          "bytes": 277971
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/furious/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "furious",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/furious/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_furious.webp",
+            "assets/characters/nurse/outfits/home/expressions/furious/01/sprite.webp"
+          ],
+          "sha256": "ade32494d604b627743ad30a71cb3fa7ae5199903584cc0eaf265fb7f69293b4",
+          "bytes": 248599
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/groggy/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "groggy",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_groggy.webp",
+            "assets/characters/nurse/outfits/home/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "f60cdafdce29cc9c12292ed169ea79e5147689e38b0eb2c3f509decf0ff1a461",
+          "bytes": 247085
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/humiliated/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "humiliated",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_humiliated.webp",
+            "assets/characters/nurse/outfits/home/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "de45f8efdfdf34e9e4b2d5c63503c21e6ea9345782bfb1d97d834878dfc94ea1",
+          "bytes": 243545
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/jealous/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "jealous",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/jealous/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_jealous.webp",
+            "assets/characters/nurse/outfits/home/expressions/jealous/01/sprite.webp"
+          ],
+          "sha256": "814447615c1208381b0de3d7b404b58015eb9ee08d14673bc7465329c31d5a63",
+          "bytes": 234577
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/kiss/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "kiss",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/kiss/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_kiss.webp",
+            "assets/characters/nurse/outfits/home/expressions/kiss/01/sprite.webp"
+          ],
+          "sha256": "7d7113e1e6b7f725f11e4bbcd03cd74c314694cf9bbf1fcd82d9b123ea2e87b1",
+          "bytes": 273459
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/laugh/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "laugh",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/laugh/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_laugh.webp",
+            "assets/characters/nurse/outfits/home/expressions/laugh/01/sprite.webp"
+          ],
+          "sha256": "e602f0a8988e02f4a4e92877b32725aedc6bbbc06440f631a18da7c2869e89dc",
+          "bytes": 258499
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/lovestruck/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "lovestruck",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/lovestruck/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_lovestruck.webp",
+            "assets/characters/nurse/outfits/home/expressions/lovestruck/01/sprite.webp"
+          ],
+          "sha256": "86681643dff98977eef1af7c7a84dc44fee33aeea3d61d8a763bf69bba4b22ba",
+          "bytes": 246189
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/messy_afterglow/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_messy_afterglow.webp",
+            "assets/characters/nurse/outfits/home/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "6a48cdf5939afeeba75c5e0676453b4adf3ce91a7528f369f3ca8b71a320bdfc",
+          "bytes": 351161
         }
       }
     },
@@ -7588,6 +9203,101 @@
       }
     },
     {
+      "id": "nurse/outfits/home/expressions/oral_service/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "oral_service",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_oral_service.webp",
+            "assets/characters/nurse/outfits/home/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "9bf7e221d3c81bb1aafe1bee53ff540da5a89eb2f5da9bcf0edcf03351407cc9",
+          "bytes": 289309
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/pain/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "pain",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/pain/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_pain.webp",
+            "assets/characters/nurse/outfits/home/expressions/pain/01/sprite.webp"
+          ],
+          "sha256": "7363ad8becad137f88ad1dec66d207399fad97d3ada30546cd5132c8db1af928",
+          "bytes": 270847
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/pleading/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "pleading",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_pleading.webp",
+            "assets/characters/nurse/outfits/home/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "c358fa99e53d4e535b7c707399c50f472e906eb3a4821119a25bba73afad7b8a",
+          "bytes": 265627
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/pout/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "pout",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/pout/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_pout.webp",
+            "assets/characters/nurse/outfits/home/expressions/pout/01/sprite.webp"
+          ],
+          "sha256": "c1f04d91669c9116d200e315d87556d895e501ce0be1b1dbc1b37aec72ef026b",
+          "bytes": 247227
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/relieved/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "relieved",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/relieved/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_relieved.webp",
+            "assets/characters/nurse/outfits/home/expressions/relieved/01/sprite.webp"
+          ],
+          "sha256": "f4a9c8cf53a29572160480b552865a8f6835fec56d5159e00bb3d265a1169c7e",
+          "bytes": 247333
+        }
+      }
+    },
+    {
       "id": "nurse/outfits/home/expressions/sad/01",
       "characterId": "nurse",
       "role": "expression",
@@ -7603,6 +9313,82 @@
           ],
           "sha256": "b0dc621510bc6206d59220e4bbde17031ac8c2a878c75ccfb3d23fb19ccf7f4e",
           "bytes": 7074623
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/scared/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "scared",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_scared.webp",
+            "assets/characters/nurse/outfits/home/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "2853935d4f1c0b742681934b18dadb7cc251f0b9b280f6f587912364fddfa9ed",
+          "bytes": 249917
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/scheming/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "scheming",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_scheming.webp",
+            "assets/characters/nurse/outfits/home/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "debb411d3f5620a65bc4b22ceaf08e066eea936b01a3d9ff528dbc461a9b478a",
+          "bytes": 257575
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/scream/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "scream",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/scream/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_scream.webp",
+            "assets/characters/nurse/outfits/home/expressions/scream/01/sprite.webp"
+          ],
+          "sha256": "f9d90c53688003c13634b2db561dc7c4b60a06b12edd763b2cf9aafba4199268",
+          "bytes": 277877
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/seductive/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "seductive",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/seductive/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_seductive.webp",
+            "assets/characters/nurse/outfits/home/expressions/seductive/01/sprite.webp"
+          ],
+          "sha256": "e7539f402e8bfef8db838cf333107a19d75c9a7c0054a7f8a81eb71437529929",
+          "bytes": 276543
         }
       }
     },
@@ -7641,6 +9427,215 @@
           ],
           "sha256": "8cdfb1872b6536d124e5234b2dcec042cbd005982db81b86cb31c9296f9d30e7",
           "bytes": 7387187
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/smirk/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "smirk",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/smirk/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_smirk.webp",
+            "assets/characters/nurse/outfits/home/expressions/smirk/01/sprite.webp"
+          ],
+          "sha256": "2b8f0f48d19f01089b70c31f39061e67b7c04f39ae366644447e8fa5ab0bd9cd",
+          "bytes": 240825
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/sob/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "sob",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/sob/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_sob.webp",
+            "assets/characters/nurse/outfits/home/expressions/sob/01/sprite.webp"
+          ],
+          "sha256": "b85f33c5c0c462ec60e08e7ba71ec6cf2a443c87ff69b5f67a80db25777b7732",
+          "bytes": 264879
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/soft_smile/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "soft_smile",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_soft_smile.webp",
+            "assets/characters/nurse/outfits/home/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "c4637ccdc49ad745d69cf4e65847e17ea353cfd4e5126239c26c03710648bee8",
+          "bytes": 271419
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/surprised/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "surprised",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_surprised.webp",
+            "assets/characters/nurse/outfits/home/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "972dec54b72d0d4fb2169b51de45980f0c28cdc49ce9bfa8b9e0110f06235325",
+          "bytes": 259781
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/suspicious/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "suspicious",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/suspicious/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_suspicious.webp",
+            "assets/characters/nurse/outfits/home/expressions/suspicious/01/sprite.webp"
+          ],
+          "sha256": "832d85c27bd35bcc0397fd5674b7ee4920d92f88417b3479556a37ca5daf83e2",
+          "bytes": 243323
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/sweat/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "sweat",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/sweat/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_sweat.webp",
+            "assets/characters/nurse/outfits/home/expressions/sweat/01/sprite.webp"
+          ],
+          "sha256": "f9a642dabab3baf6c356bb1f332a65c4a2dd11a55489f23f87fa5ba92a48e40c",
+          "bytes": 263933
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/tired/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "tired",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_tired.webp",
+            "assets/characters/nurse/outfits/home/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "69e1672bea7a62ff2d11e97b092a3c364b44c1a1419c8d9da8d363949648c511",
+          "bytes": 259849
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/touched/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "touched",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_touched.webp",
+            "assets/characters/nurse/outfits/home/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "c3a62bb637a6399cd712d307485b2af7a04d741ee0ea2e724e9a3e5ea8a10110",
+          "bytes": 260289
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/undressed_shy/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_undressed_shy.webp",
+            "assets/characters/nurse/outfits/home/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "84e7c58c0ddf35f0cea62652b948471b02a8d25a20ec01ba3bd5b48323a13033",
+          "bytes": 300507
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/very_shy/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "very_shy",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_very_shy.webp",
+            "assets/characters/nurse/outfits/home/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "815b1e9d35af4b56fc6d692ba81528447393c5991159fbc441ebd345ffa1f0d8",
+          "bytes": 257025
+        }
+      }
+    },
+    {
+      "id": "nurse/outfits/home/expressions/worried/01",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "worried",
+      "outfit": "home",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/nurse/outfits/home/expressions/worried/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_home_worried.webp",
+            "assets/characters/nurse/outfits/home/expressions/worried/01/sprite.webp"
+          ],
+          "sha256": "e6d03cc89799b555b8efe6bb852f171e3e58a16e0b79f88d4f51bd0971a561e0",
+          "bytes": 240313
         }
       }
     },
@@ -9535,6 +11530,614 @@
       }
     },
     {
+      "id": "seoyeon/outfits/date/expressions/active/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "active",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/active/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_active.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/active/01/sprite.webp"
+          ],
+          "sha256": "40e9347d4f73af4da6f3dbcd137a0cd0c60534c0d901d619b7710d161e463a1b",
+          "bytes": 328383
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/aegyo/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "aegyo",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_aegyo.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "f79a80546468fe5745603ce0af3c024cffb0bc91be802d272cee4f47e37651d9",
+          "bytes": 312279
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/afterglow/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "afterglow",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_afterglow.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/afterglow/01/sprite.webp"
+          ],
+          "sha256": "fd8f7fe4bdb07e570090daabfa5397b258c8c396350ddf089c996bf4689bd467",
+          "bytes": 361803
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/ahegao/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "ahegao",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_ahegao.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "5d02f022fc7e64eb79dc72952f9b81fdc91549eb2b1bb31cd3728792509cd363",
+          "bytes": 349753
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/angry/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "angry",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/angry/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_angry.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/angry/01/sprite.webp"
+          ],
+          "sha256": "bea0ea0e974f31daf4237563d33d97e205e02e4b9f35e6f8586ff17cad028bec",
+          "bytes": 292797
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/back/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "back",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/back/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_back.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/back/01/sprite.webp"
+          ],
+          "sha256": "276709ce1172114f492c98ca534b32567e8ed6e670c36ef86d81b964615afbf6",
+          "bytes": 298613
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/begging_lust/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "begging_lust",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_begging_lust.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "d4c0c19d7f0fa547a01c72d58218eb7897f58cdb1d6a4baa5bf71e976522709b",
+          "bytes": 315481
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/betrayed/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "betrayed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_betrayed.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "5708e069e493c13dde1d6fd45221be7934edea860cbc1a67e1ea6d8cf8149303",
+          "bytes": 293935
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/bored/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "bored",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/bored/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_bored.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/bored/01/sprite.webp"
+          ],
+          "sha256": "34baee364a771fa48293869af638956337d5b3711013eb35d02bb1df67644dac",
+          "bytes": 294479
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/choking/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "choking",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/choking/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_choking.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/choking/01/sprite.webp"
+          ],
+          "sha256": "452ff13c0f7ee8cc26ef908a58a8641c05d67ae802a2eaafa9d1a8808f191aa2",
+          "bytes": 363811
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/climax/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "climax",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/climax/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_climax.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/climax/01/sprite.webp"
+          ],
+          "sha256": "3856de8e33a9b0d8932f68d210185e8b925d5deb3898aeae6724e38cfc0b2d1e",
+          "bytes": 375583
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/cold/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "cold",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/cold/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_cold.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/cold/01/sprite.webp"
+          ],
+          "sha256": "9efce2717f9ff0c7f8353dd5b61cebdbced2c75f3a6d1a7cec9dd031d59bdd46",
+          "bytes": 265027
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/combat_ready/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "combat_ready",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_combat_ready.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "c37b2fe4c36fb300897bbe3d7b7d17b3e4727af273529477b67a0981ace96434",
+          "bytes": 307609
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/confused/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "confused",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/confused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_confused.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/confused/01/sprite.webp"
+          ],
+          "sha256": "8d2a103bd7a593e51b2cdb7ed13f9aa9d608524ad5588eb20a7ba3a14f69efa1",
+          "bytes": 308321
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/cry/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "cry",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/cry/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_cry.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/cry/01/sprite.webp"
+          ],
+          "sha256": "35d0aed68e88b6e1ded9663ac12e0db9fd3437f0d618e3fa977f067baec195fe",
+          "bytes": 318963
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/dazed/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dazed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_dazed.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "6049fd58af98f0fd4e3be5d5897af97ad98a766ae773489728c50909ffe9b0c8",
+          "bytes": 313347
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/dead/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dead",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_dead.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "b7c4a4587d51f25d7943bb9219df1dd19875da6910705ea0393f49b9623d76be",
+          "bytes": 319383
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/disgusted/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "disgusted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/disgusted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_disgusted.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/disgusted/01/sprite.webp"
+          ],
+          "sha256": "42c78cf5052c99afcd9e62154aba2d4acd014c0cdbac43e5527f7d5e2c1843e3",
+          "bytes": 299341
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/dominant_aroused/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_dominant_aroused.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "24e1c7525b1f6b32c3f5891d0bc18fec3a8d07c49efb1102e8580b928b7f78eb",
+          "bytes": 303197
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/dry_smile/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dry_smile",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_dry_smile.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "95488cd32df8716c4b0f07c89e22f8e5d0262712cb2eb3fecc5e0fdd5f7a7c74",
+          "bytes": 289275
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/dumbfounded/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_dumbfounded.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "ee03d532957054bd9642ebbebca415d981d1d2d9ad1510ca9282c2cb32e098fc",
+          "bytes": 312059
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/enduring/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "enduring",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_enduring.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "3daaaead60c4b9db9cc64206013c97c9df3387db571a691ae87bd35bccab9eb5",
+          "bytes": 323523
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/entranced/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "entranced",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_entranced.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "77bdbe0aa19bd5720fbb5a39f6b74cf0c07f97a85590e64ad05b14e71a2fa484",
+          "bytes": 333849
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/exhausted/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "exhausted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/exhausted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_exhausted.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/exhausted/01/sprite.webp"
+          ],
+          "sha256": "92b9574ba0cd3c52dea16d4bb236cafc089e6b0e84aae75941090461c285d38a",
+          "bytes": 297113
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/fainted/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "fainted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_fainted.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "005852e026a26cae386126ec1c2a104033406d1a5bd14cf72b960b9e225d6c36",
+          "bytes": 319441
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/firm/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "firm",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_firm.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "416951adc5aa76798b1a0b779d1a8f459fc40bbc459d98331900cac953ffc6e5",
+          "bytes": 304263
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/flushed/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "flushed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/flushed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_flushed.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/flushed/01/sprite.webp"
+          ],
+          "sha256": "64db1b9e1851da8f0cd3dd16a8917e7033da2506dcceecee5766d381572ddfd9",
+          "bytes": 299269
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/furious/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "furious",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/furious/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_furious.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/furious/01/sprite.webp"
+          ],
+          "sha256": "f47dcb9f14f371baa28d67dfac5ab8010a9fad7bf7b77975970ee1a132d41f7d",
+          "bytes": 336325
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/groggy/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "groggy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_groggy.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "354b988830e946059dc7e88cbc672a31b8e18ef778b2027dc5dbedbfe21eeef8",
+          "bytes": 316389
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/humiliated/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "humiliated",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_humiliated.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "d1043d9f27f4da118453fe2577d880f62a8bcbd63501938d395317db900dfdd0",
+          "bytes": 319131
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/jealous/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "jealous",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/jealous/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_jealous.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/jealous/01/sprite.webp"
+          ],
+          "sha256": "5497d071493344758f61065a7f8ce06d4dd84689fbb7c67246b9fdb527b242fe",
+          "bytes": 323521
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/kiss/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "kiss",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/kiss/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_kiss.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/kiss/01/sprite.webp"
+          ],
+          "sha256": "ec56e491cb729524a5ea5bb502e48f79fdd72fbb9810ba4054d35825b0952ae2",
+          "bytes": 304465
+        }
+      }
+    },
+    {
       "id": "seoyeon/outfits/date/expressions/laugh/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -9559,6 +12162,44 @@
           ],
           "sha256": "63ca4bb495a77769529e057729dcef6a25bf45fe4c6c31166b656b96b708302e",
           "bytes": 497995
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/lovestruck/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "lovestruck",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/lovestruck/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_lovestruck.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/lovestruck/01/sprite.webp"
+          ],
+          "sha256": "495d54fbcf137de26c32eaded4270c9da168a5d6503170fcfd7ce175685d8178",
+          "bytes": 308141
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/messy_afterglow/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_messy_afterglow.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "8cfcd90d59d4f124032ef56d8ba1a21cac4af82557efcaf857e44a3cf0b3086f",
+          "bytes": 386649
         }
       }
     },
@@ -9591,6 +12232,101 @@
       }
     },
     {
+      "id": "seoyeon/outfits/date/expressions/oral_service/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "oral_service",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_oral_service.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "b6f38bd748b2ef2d9b73551e0fee25c9e0cc5514663afd186be2f6d8b50e31d8",
+          "bytes": 336605
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/pain/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "pain",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/pain/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_pain.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/pain/01/sprite.webp"
+          ],
+          "sha256": "0583bf23b709d271219629ace81653e90e805074aabedd76bb44a7a213c26267",
+          "bytes": 324811
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/pleading/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "pleading",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_pleading.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "95445c72d0a37fe21c69f93c7a519f2ff55550eccedd11f7f21401f768bfbd51",
+          "bytes": 310109
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/pout/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "pout",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/pout/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_pout.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/pout/01/sprite.webp"
+          ],
+          "sha256": "fd80aa1c9538bdd11c93c4ee6aa2cc13df4e272e5324be0c6cb17aab538c29ac",
+          "bytes": 298199
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/relieved/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "relieved",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/relieved/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_relieved.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/relieved/01/sprite.webp"
+          ],
+          "sha256": "6722f815ddadd188810be17412d311b5dbe6816e52ae9bc6307c157937f7b0b7",
+          "bytes": 334047
+        }
+      }
+    },
+    {
       "id": "seoyeon/outfits/date/expressions/sad/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -9619,6 +12355,82 @@
       }
     },
     {
+      "id": "seoyeon/outfits/date/expressions/scared/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "scared",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_scared.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "2cf623986f79a0459cc736731abf97f44b147895a85ec1b3121ca3e6748e6da8",
+          "bytes": 297649
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/scheming/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "scheming",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_scheming.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "d5b3aa0036187681f991ebcee8c61056a152c4a09c0b9384a97e90181fa7f041",
+          "bytes": 309331
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/scream/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "scream",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/scream/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_scream.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/scream/01/sprite.webp"
+          ],
+          "sha256": "bfffec47e0f84a9149528eed5305c264570d0b599426b392e84c6b0371fcf6a5",
+          "bytes": 344041
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/seductive/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "seductive",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/seductive/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_seductive.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/seductive/01/sprite.webp"
+          ],
+          "sha256": "5e9cda43a1f463531e22784c4fe7de0ce4fc1d1992272191dc2bd7761d3903c4",
+          "bytes": 341197
+        }
+      }
+    },
+    {
       "id": "seoyeon/outfits/date/expressions/shy/01",
       "characterId": "seoyeon",
       "role": "expression",
@@ -9643,6 +12455,215 @@
           ],
           "sha256": "e95592e3daba5a862b98a1678f18440b9dc769ef45462fe0de28fc1cc54e834c",
           "bytes": 500257
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/smile/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "smile",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_smile.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/smile/01/sprite.webp"
+          ],
+          "sha256": "21f33d430377ae85e1e8852b66bd8f82c00f11b7a1e53f373db83a6d439091f9",
+          "bytes": 315153
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/smirk/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "smirk",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/smirk/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_smirk.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/smirk/01/sprite.webp"
+          ],
+          "sha256": "4c382e93a61ce9db454cd003795bcd905e61abe66191ff23ae0fec729a96c51f",
+          "bytes": 313167
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/sob/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "sob",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/sob/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_sob.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/sob/01/sprite.webp"
+          ],
+          "sha256": "7433c4f7598fe18236aca6a60a1fb96a85ae96f21fbb5e2fb5f76dc255414810",
+          "bytes": 317691
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/soft_smile/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "soft_smile",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_soft_smile.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "46af7ae8b5564a57c76fb380c92f910b6bea09f2a90c89973e4b96f5ec378e59",
+          "bytes": 325787
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/surprised/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "surprised",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_surprised.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "76fbc06af794570804b55581e378ff9d935c16d8071bf357def1b992c1013103",
+          "bytes": 307577
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/suspicious/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "suspicious",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/suspicious/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_suspicious.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/suspicious/01/sprite.webp"
+          ],
+          "sha256": "a3b226e46ae17133bcf01b1705ed572cb4fc5446bd22b7f2434f0e380f54861d",
+          "bytes": 295027
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/sweat/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "sweat",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/sweat/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_sweat.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/sweat/01/sprite.webp"
+          ],
+          "sha256": "0286017b49c93e87909fb1a917330aba3d9428b36dc4f3841601f4f1d071b897",
+          "bytes": 326159
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/tired/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "tired",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_tired.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "08e67371e690fcf41f6d1c98f8d3f6ab3575943d9a57aeea361d8409b69d9ea2",
+          "bytes": 296037
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/touched/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "touched",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_touched.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "6217fb7521308d174827aef92ef5e04939cebdd0cbe9a010c30c74dab1593f06",
+          "bytes": 317945
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/undressed_shy/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_undressed_shy.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "6cda981ef2c69ffd727ce4359e92f3ede9c07c29ac67a8efd1d380bab464ac87",
+          "bytes": 330931
+        }
+      }
+    },
+    {
+      "id": "seoyeon/outfits/date/expressions/very_shy/01",
+      "characterId": "seoyeon",
+      "role": "expression",
+      "expression": "very_shy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/seoyeon/outfits/date/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/seyoun_date_very_shy.webp",
+            "assets/characters/seoyeon/outfits/date/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "b8d453d5fe2883efc3bbc9bc02380828f9458c8400e878f63c72c8c29c5d39e9",
+          "bytes": 311591
         }
       }
     },
@@ -13482,6 +16503,139 @@
       }
     },
     {
+      "id": "yuna/outfits/date/expressions/active/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "active",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/active/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_active.webp",
+            "assets/characters/yuna/outfits/date/expressions/active/01/sprite.webp"
+          ],
+          "sha256": "84844aa48b4db7676a0d3e5ae282691f4b7d129abd0bac6b12effdc3fe28a2f3",
+          "bytes": 283345
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/aegyo/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "aegyo",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/aegyo/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_aegyo.webp",
+            "assets/characters/yuna/outfits/date/expressions/aegyo/01/sprite.webp"
+          ],
+          "sha256": "c63d786a099213fa8496bd06c7e7a91d02b835feb6628bc9641066445003144d",
+          "bytes": 281539
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/afterglow/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "afterglow",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_afterglow.webp",
+            "assets/characters/yuna/outfits/date/expressions/afterglow/01/sprite.webp"
+          ],
+          "sha256": "b9a7b0c433ec0ee76cda0e70779ed435697eb1798668de2f1ed6ea5bb91e57af",
+          "bytes": 306717
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/ahegao/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "ahegao",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/ahegao/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_ahegao.webp",
+            "assets/characters/yuna/outfits/date/expressions/ahegao/01/sprite.webp"
+          ],
+          "sha256": "335140c9c3befe60a4fa01359cfaac51ff60271fd699cf5876ab28e3e5e4f631",
+          "bytes": 286231
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/angry/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "angry",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/angry/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_angry.webp",
+            "assets/characters/yuna/outfits/date/expressions/angry/01/sprite.webp"
+          ],
+          "sha256": "f85afd8b2ee840026b3128dc2f452421652208eb99a3c2ef2261eb4fce574699",
+          "bytes": 251213
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/begging_lust/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "begging_lust",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/begging_lust/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_begging_lust.webp",
+            "assets/characters/yuna/outfits/date/expressions/begging_lust/01/sprite.webp"
+          ],
+          "sha256": "9cee5de2703b007d9ffe934ad4145dd18065ea8fe918f7875fcb952e2a5cca93",
+          "bytes": 311773
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/betrayed/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "betrayed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/betrayed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_betrayed.webp",
+            "assets/characters/yuna/outfits/date/expressions/betrayed/01/sprite.webp"
+          ],
+          "sha256": "d93ac11562601e9c3491c0037d38e03fecfcd6c0cc48412369d6d1c6c8f183c8",
+          "bytes": 288677
+        }
+      }
+    },
+    {
       "id": "yuna/outfits/date/expressions/bored/01",
       "characterId": "yuna",
       "role": "expression",
@@ -13497,6 +16651,500 @@
           ],
           "sha256": "6d04394d7bafa6703ddbdadfbe882a9256fb3bc45bd401afd67dfdd2fc2999de",
           "bytes": 6567257
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/choking/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "choking",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/choking/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_choking.webp",
+            "assets/characters/yuna/outfits/date/expressions/choking/01/sprite.webp"
+          ],
+          "sha256": "1e38ffd003d3cadb31cdb9a45d8a7b65e67be70110e87c3040458553b34c506f",
+          "bytes": 306073
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/climax/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "climax",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/climax/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_climax.webp",
+            "assets/characters/yuna/outfits/date/expressions/climax/01/sprite.webp"
+          ],
+          "sha256": "8cc7e1b1053bed6916a944656b16a3946c15e8600f5726c8486de6b64a653ab6",
+          "bytes": 303897
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/cold/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "cold",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/cold/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_cold.webp",
+            "assets/characters/yuna/outfits/date/expressions/cold/01/sprite.webp"
+          ],
+          "sha256": "23903a740b5efb22c5b04507fdb97f87d0a4613643a436721b301f517f9594f6",
+          "bytes": 273779
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/combat_ready/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "combat_ready",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/combat_ready/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_combat_ready.webp",
+            "assets/characters/yuna/outfits/date/expressions/combat_ready/01/sprite.webp"
+          ],
+          "sha256": "5f4303addb5c99f9aa2ad3e19c1d0131448a9cf2689baac2afe96f27ac900882",
+          "bytes": 274223
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/confused/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "confused",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/confused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_confused.webp",
+            "assets/characters/yuna/outfits/date/expressions/confused/01/sprite.webp"
+          ],
+          "sha256": "13feccaa4225338b3e07fdce2c53991e2f02643a71437b3cf137755e9c457089",
+          "bytes": 288999
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/cry/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "cry",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/cry/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_cry.webp",
+            "assets/characters/yuna/outfits/date/expressions/cry/01/sprite.webp"
+          ],
+          "sha256": "9a00e70568c14997de026c6163cbae7a8c93c415a958a1aa8561ebbd66e1db6e",
+          "bytes": 275595
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/dazed/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dazed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/dazed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_dazed.webp",
+            "assets/characters/yuna/outfits/date/expressions/dazed/01/sprite.webp"
+          ],
+          "sha256": "9c7794712fee8b744e1dbaf6bc63a8a86015fdecda06bf63750244f874dba8b3",
+          "bytes": 285227
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/dead/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dead",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/dead/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_dead.webp",
+            "assets/characters/yuna/outfits/date/expressions/dead/01/sprite.webp"
+          ],
+          "sha256": "d2aade75e4032d774046c6780e0b3ace02bdf7fa5752a3b182a3b910ac779fb5",
+          "bytes": 267095
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/disgusted/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "disgusted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/disgusted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_disgusted.webp",
+            "assets/characters/yuna/outfits/date/expressions/disgusted/01/sprite.webp"
+          ],
+          "sha256": "508308f24e2c316bf57b22fbcafbc921dff0acde79346a15a9e5829e4233b17b",
+          "bytes": 287621
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/dominant_aroused/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dominant_aroused",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/dominant_aroused/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_dominant_aroused.webp",
+            "assets/characters/yuna/outfits/date/expressions/dominant_aroused/01/sprite.webp"
+          ],
+          "sha256": "b37543c84cfa7eb5b5f9c4782f04f60f05b9747fb6ca826984bd733d9d2b53bd",
+          "bytes": 265159
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/dry_smile/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dry_smile",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/dry_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_dry_smile.webp",
+            "assets/characters/yuna/outfits/date/expressions/dry_smile/01/sprite.webp"
+          ],
+          "sha256": "61fc09bc2f68fe3149b86b68bddbfd87c0c77087ee1babbd9fe3dca58ea19e44",
+          "bytes": 284141
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/dumbfounded/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "dumbfounded",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/dumbfounded/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_dumbfounded.webp",
+            "assets/characters/yuna/outfits/date/expressions/dumbfounded/01/sprite.webp"
+          ],
+          "sha256": "0a174be94071b61a1074b1eae8ccedaffb3c1e85d72f26bdbcff322dc18a945d",
+          "bytes": 270893
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/enduring/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "enduring",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/enduring/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_enduring.webp",
+            "assets/characters/yuna/outfits/date/expressions/enduring/01/sprite.webp"
+          ],
+          "sha256": "78fb408e265befe13fd2792203bf58c702bd0c516f527692b44cec86dfa6e1de",
+          "bytes": 284517
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/entranced/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "entranced",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/entranced/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_entranced.webp",
+            "assets/characters/yuna/outfits/date/expressions/entranced/01/sprite.webp"
+          ],
+          "sha256": "1a0167b4fda0e0a94bff7422ba3d017ca14cd3742f35434dec647519edb0d42c",
+          "bytes": 279337
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/exhausted/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "exhausted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/exhausted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_exhausted.webp",
+            "assets/characters/yuna/outfits/date/expressions/exhausted/01/sprite.webp"
+          ],
+          "sha256": "36a4a6b17e350cf61b5ace582c28cb26fe8d03f092d132d9d2f645f6d6f18d49",
+          "bytes": 277223
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/fainted/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "fainted",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/fainted/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_fainted.webp",
+            "assets/characters/yuna/outfits/date/expressions/fainted/01/sprite.webp"
+          ],
+          "sha256": "f889e2e1cb970abb92c9e5c50695248054b3907595e7af5377d286b7261b1b53",
+          "bytes": 267357
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/firm/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "firm",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/firm/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_firm.webp",
+            "assets/characters/yuna/outfits/date/expressions/firm/01/sprite.webp"
+          ],
+          "sha256": "362674dc08e2ceb490ecf1dcda1b93e3e04d1b5f8024301d6351d73348832207",
+          "bytes": 264467
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/flushed/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "flushed",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/flushed/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_flushed.webp",
+            "assets/characters/yuna/outfits/date/expressions/flushed/01/sprite.webp"
+          ],
+          "sha256": "3cfe4599abf5ceec8238aae1c5bea48ed1f08d4e944114fc15426a1179d4f14c",
+          "bytes": 292583
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/furious/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "furious",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/furious/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_furious.webp",
+            "assets/characters/yuna/outfits/date/expressions/furious/01/sprite.webp"
+          ],
+          "sha256": "5ec77ee5f2f9edc11bff31df306b75ae23cfbb604350a1f1d1a5e80e9f4e4c16",
+          "bytes": 282097
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/groggy/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "groggy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/groggy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_groggy.webp",
+            "assets/characters/yuna/outfits/date/expressions/groggy/01/sprite.webp"
+          ],
+          "sha256": "05d55644b759845f94728683119abe526507a57b329019cb2cf1f0a54d34dc76",
+          "bytes": 274181
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/humiliated/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "humiliated",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/humiliated/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_humiliated.webp",
+            "assets/characters/yuna/outfits/date/expressions/humiliated/01/sprite.webp"
+          ],
+          "sha256": "66640780abb161423883b82bf64c5591b5073697297b0d4d67d7858472b596fe",
+          "bytes": 297521
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/jealous/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "jealous",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/jealous/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_jealous.webp",
+            "assets/characters/yuna/outfits/date/expressions/jealous/01/sprite.webp"
+          ],
+          "sha256": "334f0e06f0eff69c71dabf0a6b9c42562446fe180e55232d95bea2a1c2af1adb",
+          "bytes": 268505
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/kiss/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "kiss",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/kiss/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_kiss.webp",
+            "assets/characters/yuna/outfits/date/expressions/kiss/01/sprite.webp"
+          ],
+          "sha256": "4004e0f527619e3586b1bdb2dc310f50701e9198a7b631c10248e7b31a80cdb6",
+          "bytes": 244521
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/laugh/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "laugh",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/laugh/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_laugh.webp",
+            "assets/characters/yuna/outfits/date/expressions/laugh/01/sprite.webp"
+          ],
+          "sha256": "cd504e89db538801109cc59a5b3c66622c461ae805353585f7a7a07d5c2dfd96",
+          "bytes": 264695
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/lovestruck/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "lovestruck",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/lovestruck/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_lovestruck.webp",
+            "assets/characters/yuna/outfits/date/expressions/lovestruck/01/sprite.webp"
+          ],
+          "sha256": "d1719c6b93047ef8fdbdc88d772362498a7f15d94de18a087a9c3787f5a4959c",
+          "bytes": 276473
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/messy_afterglow/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "messy_afterglow",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/messy_afterglow/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_messy_afterglow.webp",
+            "assets/characters/yuna/outfits/date/expressions/messy_afterglow/01/sprite.webp"
+          ],
+          "sha256": "4a420f2e6c5ff55dd3a5a460cb37485129f611bef1ae71010aef3a33f97c83dc",
+          "bytes": 317841
         }
       }
     },
@@ -13520,6 +17168,101 @@
       }
     },
     {
+      "id": "yuna/outfits/date/expressions/oral_service/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "oral_service",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/oral_service/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_oral_service.webp",
+            "assets/characters/yuna/outfits/date/expressions/oral_service/01/sprite.webp"
+          ],
+          "sha256": "379c260e30c870734f7ce66199f7c585fb60d9ff602cdfb5e4da3e691607da1f",
+          "bytes": 307887
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/pain/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "pain",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/pain/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_pain.webp",
+            "assets/characters/yuna/outfits/date/expressions/pain/01/sprite.webp"
+          ],
+          "sha256": "605aa99997cfc0be066de53c3a19b2a96f6ee9e64be343b4331011419f6d3593",
+          "bytes": 297225
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/pleading/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "pleading",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/pleading/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_pleading.webp",
+            "assets/characters/yuna/outfits/date/expressions/pleading/01/sprite.webp"
+          ],
+          "sha256": "a073b2d52ebb73a30e7bd996b06f44d6e1bd7bc41d871d52ced17f2af8bc6761",
+          "bytes": 271907
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/pout/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "pout",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/pout/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_pout.webp",
+            "assets/characters/yuna/outfits/date/expressions/pout/01/sprite.webp"
+          ],
+          "sha256": "9e4f304cd226a033812681b50a5876d948c7ee913889f9d0b324ff337471f924",
+          "bytes": 256319
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/relieved/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "relieved",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/relieved/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_relieved.webp",
+            "assets/characters/yuna/outfits/date/expressions/relieved/01/sprite.webp"
+          ],
+          "sha256": "e112db64bd0a0dd0c0a704aa5ad7365d9d5bc2cdb683d99e52783bc2973f70dc",
+          "bytes": 282099
+        }
+      }
+    },
+    {
       "id": "yuna/outfits/date/expressions/sad/01",
       "characterId": "yuna",
       "role": "expression",
@@ -13535,6 +17278,82 @@
           ],
           "sha256": "833861f6e07e482f4170278201e97b5b8ba3d0003aa94b0ddd34fc8a4b41189b",
           "bytes": 6570383
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/scared/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "scared",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/scared/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_scared.webp",
+            "assets/characters/yuna/outfits/date/expressions/scared/01/sprite.webp"
+          ],
+          "sha256": "fa90fca6d176ee7f07c2f0c1e6ca571e6e712e94d708e9a14894b2c0bd14dc5c",
+          "bytes": 292805
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/scheming/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "scheming",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/scheming/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_scheming.webp",
+            "assets/characters/yuna/outfits/date/expressions/scheming/01/sprite.webp"
+          ],
+          "sha256": "9d276a079374b691176c278d0b81dab2ba95b05a87d9e8b47925b84aead7e589",
+          "bytes": 285391
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/scream/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "scream",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/scream/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_scream.webp",
+            "assets/characters/yuna/outfits/date/expressions/scream/01/sprite.webp"
+          ],
+          "sha256": "88f7748ad6630a4332790d2411ca81e2ced38edc044290e32c08ead62172c66d",
+          "bytes": 321235
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/seductive/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "seductive",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/seductive/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_seductive.webp",
+            "assets/characters/yuna/outfits/date/expressions/seductive/01/sprite.webp"
+          ],
+          "sha256": "b25b137dde3f838ebbf173262b7615dca4ca10d2b82d994bdb7406f540a3c080",
+          "bytes": 246967
         }
       }
     },
@@ -13573,6 +17392,215 @@
           ],
           "sha256": "0905065d8cd7050ae31f393b12149939fee628c8b6a96c17e23b3a8eba21c3b6",
           "bytes": 6564587
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/smirk/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "smirk",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/smirk/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_smirk.webp",
+            "assets/characters/yuna/outfits/date/expressions/smirk/01/sprite.webp"
+          ],
+          "sha256": "f4422ef4e3bac2b506948d7443659ca470d6c17e59a0a300007b2d870584cd76",
+          "bytes": 269503
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/sob/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "sob",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/sob/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_sob.webp",
+            "assets/characters/yuna/outfits/date/expressions/sob/01/sprite.webp"
+          ],
+          "sha256": "f7e0b530c0b6503b3769acc7cf34d9f9575eb718ed37f527a0ce1c1ba30e9b04",
+          "bytes": 271551
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/soft_smile/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "soft_smile",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/soft_smile/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_soft_smile.webp",
+            "assets/characters/yuna/outfits/date/expressions/soft_smile/01/sprite.webp"
+          ],
+          "sha256": "0317d781000a1573e91f0c34b4aaa2b5eefeaab7e6effa7f5116b58d913b5358",
+          "bytes": 306227
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/surprised/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "surprised",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/surprised/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_surprised.webp",
+            "assets/characters/yuna/outfits/date/expressions/surprised/01/sprite.webp"
+          ],
+          "sha256": "6d579f3f4c1df0cb73df5cba990c7e39da8095210f4275576fdcc39328d3de42",
+          "bytes": 271875
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/suspicious/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "suspicious",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/suspicious/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_suspicious.webp",
+            "assets/characters/yuna/outfits/date/expressions/suspicious/01/sprite.webp"
+          ],
+          "sha256": "d21d4a834900e3308e742d927344bccda71a5be4768a911c7f1d65de8133d420",
+          "bytes": 267905
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/sweat/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "sweat",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/sweat/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_sweat.webp",
+            "assets/characters/yuna/outfits/date/expressions/sweat/01/sprite.webp"
+          ],
+          "sha256": "0efb2a6045013e91253c416c90944830eed06fdb323a46f7b40d61413555c781",
+          "bytes": 287281
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/tired/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "tired",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/tired/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_tired.webp",
+            "assets/characters/yuna/outfits/date/expressions/tired/01/sprite.webp"
+          ],
+          "sha256": "691c5b72ec02c68bb7be7bdde951b7ee78400ef339c9cd03657e14a62af98a7b",
+          "bytes": 278699
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/touched/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "touched",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/touched/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_touched.webp",
+            "assets/characters/yuna/outfits/date/expressions/touched/01/sprite.webp"
+          ],
+          "sha256": "0c212f629566e9ef0a7fa68de4134e28963550dd0170cd9a2d7735426169f3f4",
+          "bytes": 266007
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/undressed_shy/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "undressed_shy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/undressed_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_undressed_shy.webp",
+            "assets/characters/yuna/outfits/date/expressions/undressed_shy/01/sprite.webp"
+          ],
+          "sha256": "5acf5afb76a7e83b0f8ae57092750e3eea24c21a5fe3732905b067e3960e8641",
+          "bytes": 303411
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/very_shy/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "very_shy",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/very_shy/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_very_shy.webp",
+            "assets/characters/yuna/outfits/date/expressions/very_shy/01/sprite.webp"
+          ],
+          "sha256": "0a225c6067bd9dc4c3adddb553d255a57d99d097397cc8acdd0437234ae215ff",
+          "bytes": 286209
+        }
+      }
+    },
+    {
+      "id": "yuna/outfits/date/expressions/worried/01",
+      "characterId": "yuna",
+      "role": "expression",
+      "expression": "worried",
+      "outfit": "date",
+      "variant": "01",
+      "files": {
+        "sprite.webp": {
+          "source": "assets/characters/yuna/outfits/date/expressions/worried/01/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/yuna_date_worried.webp",
+            "assets/characters/yuna/outfits/date/expressions/worried/01/sprite.webp"
+          ],
+          "sha256": "11fb14759a3d49a1f69e72758fd639796fa8712e2d28d7e47f321c2ca6a8f6a8",
+          "bytes": 247975
         }
       }
     }
