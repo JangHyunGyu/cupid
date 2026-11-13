@@ -141,7 +141,7 @@
     },
     "after3_seo_pity_trap_9": {
         "name": "Seoyeon",
-        "text": "*Seoyeon corta minha fala com o olhar gélido.* Dentro da escola, me chame de presidente."
+        "text": "*Seoyeon corta minha fala com o olhar gélido.* Dentro da escola, me chame de **presidente**."
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "after3_yuna_decode_trap_4": {
         "name": "Yuna",
-        "text": "*A voz da Yuna se rasga, aguda.* Já falei que não é."
+        "text": "*A voz da Yuna se rasga, aguda.* **Já falei que não é.**"
     },
     "after3_yuna_decode_trap_5": {
         "name": "Yuna",

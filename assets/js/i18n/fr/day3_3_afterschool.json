@@ -141,7 +141,7 @@
     },
     "after3_seo_pity_trap_9": {
         "name": "Seoyeon",
-        "text": "*Seoyeon m'interrompt d'un regard glacial.* Dans l'enceinte du lycée, appelle-moi présidente."
+        "text": "*Seoyeon m'interrompt d'un regard glacial.* Dans l'enceinte du lycée, appelle-moi **présidente**."
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "after3_yuna_decode_trap_4": {
         "name": "Yuna",
-        "text": "*La voix de Yuna se déchire, aiguë.* Je t'ai dit que non."
+        "text": "*La voix de Yuna se déchire, aiguë.* **Je t'ai dit que non.**"
     },
     "after3_yuna_decode_trap_5": {
         "name": "Yuna",

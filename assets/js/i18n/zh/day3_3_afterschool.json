@@ -141,7 +141,7 @@
     },
     "after3_seo_pity_trap_9": {
         "name": "书妍",
-        "text": "*书妍用冷硬的眼神打断了我的话。* 在学校里，请叫我会长。"
+        "text": "*书妍用冷硬的眼神打断了我的话。* 在学校里，请叫我**会长**。"
     },
     "after3_seo_pity_trap_10": {
         "name": "{name}",
@@ -286,7 +286,7 @@
     },
     "after3_yuna_decode_trap_4": {
         "name": "由娜",
-        "text": "*由娜的声音尖锐地撕开。* 都说了不是。"
+        "text": "*由娜的声音尖锐地撕开。* **都说了不是。**"
     },
     "after3_yuna_decode_trap_5": {
         "name": "由娜",
