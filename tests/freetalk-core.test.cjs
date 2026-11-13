@@ -2578,7 +2578,7 @@ test('Teacher and Nurse canonical real names stay locked across Main, Group, and
 });
 
 test('non-cutout bikini gallery CG is excluded from expression sprites and every FreeTalk path while preserved in GalleryData', () => {
-    assert.deepEqual(core.NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS, ['bikini']);
+    assert.deepEqual(JSON.parse(JSON.stringify(core.NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS)), ['bikini']);
     assert.equal(core.normalizeAvailableExpression('bikini', ['normal', 'bikini']), '');
     assert.equal(core.normalizeAvailableExpression('BIKINI', { normal: 'a.png', bikini: 'b.png' }), '');
 
@@ -2624,7 +2624,7 @@ test('non-cutout bikini gallery CG is excluded from expression sprites and every
     }
 
     for (const galleryId of ['seyoun', 'yuna', 'dain', 'teacher', 'nurse']) {
-        assert.equal(sandbox.GalleryData.getCharacter('ko', galleryId).expressions.includes('bikini'), true, galleryId + ' GalleryData viewer keeps bikini CG');
+        assert.equal(sandbox.window.GalleryData.getCharacter('ko', galleryId).expressions.includes('bikini'), true, galleryId + ' GalleryData viewer keeps bikini CG');
     }
 
     const promptData = sandbox.getPromptData('ko');

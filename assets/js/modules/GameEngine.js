@@ -356,6 +356,12 @@ class GameEngine {
             this.sceneRenderer.currentSceneId,
             id => this.sceneRenderer.getScene(id)
         );
+        if (typeof document !== 'undefined') {
+            for (const id of ['home-btn', 'settings-btn']) {
+                const button = document.getElementById?.(id);
+                if (button) button.disabled = false;
+            }
+        }
 
         // ─────────────────────────────────────────────────────────────
         // 💾 저장/불러오기 관련 함수
@@ -1102,6 +1108,10 @@ class GameEngine {
                 releaseRenderLock();
                 return;
             }
+
+            // 화면을 그리지 않고 건너뛰는 분기도 플래그는 남긴다.
+            // ending_counteroffer_bitter가 여기서 빠지면 엔딩 프리토킹이 좋은 결말로 내려간다.
+            if (!restoring && shouldRoute && !guardedNext) this.sceneRenderer.processSceneFlags(scene);
 
             sceneId = nextId;
             scene = await this._getSceneWithLazyContent(sceneId);

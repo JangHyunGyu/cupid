@@ -428,3 +428,63 @@ test('day-4 manuscript miss shows the closed gate instead of the teacher refusal
         assert.equal(copy.hidden_homeroom_d4_skip, undefined);
     }
 });
+
+test('counteroffer bitter router keeps ending_bittersweet before the ending freetalk choice', async () => {
+    const context = vm.createContext({
+        window: {},
+        console: { log() {}, warn() {}, error() {} },
+        setTimeout,
+        clearTimeout
+    });
+    vm.runInContext(read('assets/js/modules/SceneRenderer.js'), context);
+    vm.runInContext(read('assets/js/modules/GameEngine.js'), context);
+    const flags = {};
+    const scenes = {
+        ending_counteroffer_bitter: {
+            routeBeforeRender: true,
+            setFlags: ['ending_bittersweet'],
+            next: 'co_bitter_seo_1'
+        },
+        co_bitter_seo_1: { background: 'park.png', next: 'bitter_epilogue_3' },
+        day5_seo_ending_freetalk_router: {
+            routeBeforeRender: true,
+            branches: [
+                { condition: 'ending_bittersweet', next: 'day5_seo_ending_freetalk_bittersweet' },
+                { condition: 'day5_confessed', next: 'day5_seo_ending_freetalk_late_good' },
+                { next: 'day5_seo_ending_freetalk_good' }
+            ]
+        },
+        day5_seo_ending_freetalk_bittersweet: { type: 'free_talk' },
+        day5_seo_ending_freetalk_good: { type: 'free_talk' },
+        day5_seo_ending_freetalk_late_good: { type: 'free_talk' }
+    };
+    const engine = Object.assign(Object.create(context.window.GameEngine.prototype), {
+        stateManager: {
+            getFlag: name => flags[name] || false,
+            setFlag: (name, value = true) => { flags[name] = value; }
+        },
+        sceneRenderer: {
+            cgTransition: { cancel() {} },
+            currentSceneId: '',
+            resolveSceneAlias: id => id,
+            resolveAffinityGuard: () => null,
+            processSceneFlags(scene) {
+                for (const flag of scene.setFlags || []) flags[flag] = true;
+            },
+            resolveNextScene(scene) {
+                const branch = scene.branches?.find(item => !item.condition || flags[item.condition]);
+                return branch?.next || scene.next || null;
+            }
+        },
+        dialogueSystem: { resetAdvanceCooldown() {} },
+        _getSceneWithLazyContent: async id => scenes[id] || null,
+        _resolveNextScene(scene, sceneId) {
+            return this.sceneRenderer.resolveNextScene(scene, sceneId);
+        }
+    });
+    await engine.renderScene('ending_counteroffer_bitter').catch(() => {});
+    assert.equal(flags.ending_bittersweet, true);
+    assert.equal(engine.sceneRenderer.currentSceneId, 'co_bitter_seo_1');
+    await engine.renderScene('day5_seo_ending_freetalk_router').catch(() => {});
+    assert.equal(engine.sceneRenderer.currentSceneId, 'day5_seo_ending_freetalk_bittersweet');
+});
