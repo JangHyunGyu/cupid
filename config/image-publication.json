@@ -3,7 +3,7 @@
   "verified": true,
   "method": "R2 full read-back SHA-256",
   "manifests": {
-    "config/image-sources.json": "9c0767b62b381c81b87750cb1efcfed1310277284a4a5ed52d370df3be63bfa6",
+    "config/image-sources.json": "3e23709c82e537a5d3b13b893622d1f295d1f32d5a30a968083c9f0e9a86dc4f",
     "config/public-images.json": "8b0290075da1e1ba0e4a41e2a620bab6e2380eeb2555c917a9779d2bfb35d078"
   }
 }
