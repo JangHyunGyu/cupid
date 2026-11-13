@@ -1631,21 +1631,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_messy_afterglow": {
-    "version": "14c3d2246e46ec83025feff0",
+    "version": "025259ff7a805efea01f2ff5",
     "files": [
       {
         "path": "assets/images/characters/dain_messy_afterglow.png",
-        "key": "images/42d2332cf7c2fd2b83613cbc32e600a83c159c7f80afc27f5887871c3d92fa48.png",
-        "sha256": "42d2332cf7c2fd2b83613cbc32e600a83c159c7f80afc27f5887871c3d92fa48",
-        "etag": "747434a4c03d97ac46e1289a151403af",
-        "size": 1263535
+        "key": "images/a2f14ff3a35dcae85713f630dbb7f08c468b90b24857e8edb3680b1e31947cf3.png",
+        "sha256": "a2f14ff3a35dcae85713f630dbb7f08c468b90b24857e8edb3680b1e31947cf3",
+        "etag": "6831bdf3afa3f8747aa964c1a2f23e9f",
+        "size": 1291253
       },
       {
         "path": "assets/images/characters/dain_messy_afterglow.webp",
-        "key": "images/fd8ca9bc3d42d9f2c4331c8af731cf0d72a63eff4d18fa2fad36d775ff3a58d3.webp",
-        "sha256": "fd8ca9bc3d42d9f2c4331c8af731cf0d72a63eff4d18fa2fad36d775ff3a58d3",
-        "etag": "0123fcb6ac92fae079ae12686994361d",
-        "size": 776024
+        "key": "images/06993d3565bf7c1ec745badc8c58f84911ee332f791dc5da9b1376070fa10b91.webp",
+        "sha256": "06993d3565bf7c1ec745badc8c58f84911ee332f791dc5da9b1376070fa10b91",
+        "etag": "79f22c96fe9ab9832fa10369928b7ef9",
+        "size": 179746
       }
     ]
   },
@@ -4201,21 +4201,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/minsu_messy_afterglow": {
-    "version": "f6f3c2860de58835a7013bb0",
+    "version": "fe064c9301c5358f0f3ceb63",
     "files": [
       {
         "path": "assets/images/characters/minsu_messy_afterglow.png",
-        "key": "images/24fdca8b66a3cd22395a641a1939b870edbb90832e00c53255486443e5643850.png",
-        "sha256": "24fdca8b66a3cd22395a641a1939b870edbb90832e00c53255486443e5643850",
-        "etag": "49d82d79d87da46ec27451640030bbe7",
-        "size": 1634384
+        "key": "images/6028f1cc1645ecad901de668546e78bba1c3621a57e23296090f22579e0824f8.png",
+        "sha256": "6028f1cc1645ecad901de668546e78bba1c3621a57e23296090f22579e0824f8",
+        "etag": "4889b93d9f3062a7a232e41d5d56dfe8",
+        "size": 1460414
       },
       {
         "path": "assets/images/characters/minsu_messy_afterglow.webp",
-        "key": "images/36cdf63fc1d0881adfe7bef9ea83572eb7bf0b56599f5a1bf3ac100c4b6bb4a1.webp",
-        "sha256": "36cdf63fc1d0881adfe7bef9ea83572eb7bf0b56599f5a1bf3ac100c4b6bb4a1",
-        "etag": "befea913c0e58f9cfb4a9d0eb4e4bcb9",
-        "size": 1018748
+        "key": "images/52f8d1b23db8bcccc6daa325c1ce73f0ffc0d3ab5e958032b974084b48835619.webp",
+        "sha256": "52f8d1b23db8bcccc6daa325c1ce73f0ffc0d3ab5e958032b974084b48835619",
+        "etag": "c25af9b39f5577d0bee338a92ea90833",
+        "size": 153038
       }
     ]
   },
