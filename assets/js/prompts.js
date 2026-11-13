@@ -894,8 +894,11 @@ const CHARACTER_EXPRESSION_VARIANT_PATHS = Object.freeze({
         undressed_shy: makeCharacterExpressionVariants('dain', 'undressed_shy', 4)
     }),
     Teacher: Object.freeze({
-        flushed: makeCharacterExpressionVariants('teacher', 'flushed', 3),
-        climax: makeCharacterExpressionVariants('teacher', 'climax', 10)
+        flushed: Object.freeze([
+            'assets/images/characters/teacher_flushed.png',
+            'assets/images/characters/teacher_flushed_03.png'
+        ]),
+        climax: makeCharacterExpressionVariants('teacher', 'climax', 11)
     }),
     Nurse: Object.freeze({
         flushed: makeCharacterExpressionVariants('nurse', 'flushed', 3),

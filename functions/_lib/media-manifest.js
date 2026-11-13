@@ -2068,40 +2068,40 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/dain_undressed_shy_02": {
-    "version": "161039fcc3851698ef4dd321",
+    "version": "e64eac17c1daa5436f16eaed",
     "files": [
       {
         "path": "assets/images/characters/dain_undressed_shy_02.png",
-        "key": "images/25ed731a7cf0310cd0447358ff12e4607ad601d9e1f7ee3c66eb780a0cf7ace5.png",
-        "sha256": "25ed731a7cf0310cd0447358ff12e4607ad601d9e1f7ee3c66eb780a0cf7ace5",
-        "etag": "f7a0437a6f929b8e3d04b35ecad73d50",
-        "size": 1148034
+        "key": "images/a7066efde626688a33935b0c0eee5af5f00d6b53e372d0a704f1524b0c42575b.png",
+        "sha256": "a7066efde626688a33935b0c0eee5af5f00d6b53e372d0a704f1524b0c42575b",
+        "etag": "bb8af3b2f0ee5f8473432e21a6e62de8",
+        "size": 1107691
       },
       {
         "path": "assets/images/characters/dain_undressed_shy_02.webp",
-        "key": "images/73483d41519435acfa8258af59dcc288868e82645a108de3aa871c6553d369ed.webp",
-        "sha256": "73483d41519435acfa8258af59dcc288868e82645a108de3aa871c6553d369ed",
-        "etag": "667ff9751bbcef1cc5ed18ab6f355b68",
-        "size": 133510
+        "key": "images/67ec38554451022179fc5ca66e81fd472ce74027ff3e1d87afde7a80fd640d5b.webp",
+        "sha256": "67ec38554451022179fc5ca66e81fd472ce74027ff3e1d87afde7a80fd640d5b",
+        "etag": "a1b034a7e68c7eccd76f9039c22fec38",
+        "size": 117748
       }
     ]
   },
   "characters/dain_undressed_shy_03": {
-    "version": "66a3bf332abdf37782a03c06",
+    "version": "a59c82ead84d21a17815aa55",
     "files": [
       {
         "path": "assets/images/characters/dain_undressed_shy_03.png",
-        "key": "images/148bed13c59550debddd9ac290aaa44d927922ddfb937a82201cd69769ebda6e.png",
-        "sha256": "148bed13c59550debddd9ac290aaa44d927922ddfb937a82201cd69769ebda6e",
-        "etag": "f11a31a669d10aaf98df5f41e227e2a0",
-        "size": 1216883
+        "key": "images/d336b9d3a29fd8f56b1853c8037bc9971783ec3c9f6994b9cfe3d56394d064e6.png",
+        "sha256": "d336b9d3a29fd8f56b1853c8037bc9971783ec3c9f6994b9cfe3d56394d064e6",
+        "etag": "b46c90a36fc23245c513636ba534254a",
+        "size": 1163547
       },
       {
         "path": "assets/images/characters/dain_undressed_shy_03.webp",
-        "key": "images/10846c9744da7ee68721978338185c1e5a4252a0db38ca0e2a2b4dde295e3557.webp",
-        "sha256": "10846c9744da7ee68721978338185c1e5a4252a0db38ca0e2a2b4dde295e3557",
-        "etag": "676d602573fe3710eff8d6c7978da3ef",
-        "size": 142364
+        "key": "images/09c045e3b83dcd91d8e592af4c3ba8460850beb2a0c20556c1ec7e975f84eab7.webp",
+        "sha256": "09c045e3b83dcd91d8e592af4c3ba8460850beb2a0c20556c1ec7e975f84eab7",
+        "etag": "98dda4c784d7098df6b5624331695565",
+        "size": 126032
       }
     ]
   },
@@ -2353,21 +2353,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/haeun_climax_02": {
-    "version": "6c578014e91446748dbe6bf3",
+    "version": "755d5d47b860e9e67903a145",
     "files": [
       {
         "path": "assets/images/characters/haeun_climax_02.png",
-        "key": "images/b869abf1e25fb20c5e4b07b48f418de403deebf663fdebc3870f4711fd134d83.png",
-        "sha256": "b869abf1e25fb20c5e4b07b48f418de403deebf663fdebc3870f4711fd134d83",
-        "etag": "e8981fc70c2b5e27e8b68ad0756b6a72",
-        "size": 1338661
+        "key": "images/df83e627237943f97ed23732032f71cb73e5e9e326f0b0f8fb895c09631fc3a5.png",
+        "sha256": "df83e627237943f97ed23732032f71cb73e5e9e326f0b0f8fb895c09631fc3a5",
+        "etag": "02df166244ce24bca130cdc2997ba342",
+        "size": 1079617
       },
       {
         "path": "assets/images/characters/haeun_climax_02.webp",
-        "key": "images/9630d6a5cbd4845777e2d5548d4da2dfcb4dc4a536559ed3a05862573cdadce4.webp",
-        "sha256": "9630d6a5cbd4845777e2d5548d4da2dfcb4dc4a536559ed3a05862573cdadce4",
-        "etag": "f2d1c6b11957015d7d7991cc4f2ebcec",
-        "size": 143490
+        "key": "images/b859ffacb1ffdfbf728b472eefc9f99c31a4b9008423f4d2203d57030d0e9799.webp",
+        "sha256": "b859ffacb1ffdfbf728b472eefc9f99c31a4b9008423f4d2203d57030d0e9799",
+        "etag": "e4c3de87f289d8b194e04f69c14613c4",
+        "size": 123024
       }
     ]
   },
@@ -5056,21 +5056,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/nurse_combat_ready": {
-    "version": "4a2bf4ad885fb2d69745bd32",
+    "version": "22f0276ee7272537f41c7145",
     "files": [
       {
         "path": "assets/images/characters/nurse_combat_ready.png",
-        "key": "images/0b12a06afdab435df7b426337da6448337f671cda4a135f1193279599b558ff9.png",
-        "sha256": "0b12a06afdab435df7b426337da6448337f671cda4a135f1193279599b558ff9",
-        "etag": "cda7feeed2d797df16ac75425e094598",
-        "size": 1620809
+        "key": "images/50b36acff58bae7fe32a9c1225a2c065bb4715fd6c7c12459a545679fb4aa106.png",
+        "sha256": "50b36acff58bae7fe32a9c1225a2c065bb4715fd6c7c12459a545679fb4aa106",
+        "etag": "2f853b400fd7d11ea0aa65cb56d34edf",
+        "size": 1621126
       },
       {
         "path": "assets/images/characters/nurse_combat_ready.webp",
-        "key": "images/1b48787eba97448b8876864b6b046482d5fb35f99353c093dbdfdfd2d4bde095.webp",
-        "sha256": "1b48787eba97448b8876864b6b046482d5fb35f99353c093dbdfdfd2d4bde095",
-        "etag": "37638065509f4831b771338e33116377",
-        "size": 165294
+        "key": "images/3d64b7972f248bb86138b328a9d5ab7d22eddd5dcbf936c356705f356ed4d2c1.webp",
+        "sha256": "3d64b7972f248bb86138b328a9d5ab7d22eddd5dcbf936c356705f356ed4d2c1",
+        "etag": "82941499a71afaf02aa67b3f5feb1332",
+        "size": 164754
       }
     ]
   },
@@ -5132,21 +5132,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/nurse_dead": {
-    "version": "223e970bdbfa62d17c28029d",
+    "version": "3c2ca7fd8d517a3ce9304235",
     "files": [
       {
         "path": "assets/images/characters/nurse_dead.png",
-        "key": "images/f96532b3243b6b4414ae79c268d163c4ce2ec9ea26c633c05c22ad6147b87869.png",
-        "sha256": "f96532b3243b6b4414ae79c268d163c4ce2ec9ea26c633c05c22ad6147b87869",
-        "etag": "fa7c9fef8b5b1b54a91930cde1a78a3c",
-        "size": 1632843
+        "key": "images/c03663c3e2eb329396ea5efccd311b18f6ebd945abc39c37c4dcac007143ccd2.png",
+        "sha256": "c03663c3e2eb329396ea5efccd311b18f6ebd945abc39c37c4dcac007143ccd2",
+        "etag": "9e02f80668f19bcfd4c627550393a1b1",
+        "size": 1635304
       },
       {
         "path": "assets/images/characters/nurse_dead.webp",
-        "key": "images/8f70b0c0b3f7de73d4565067f18ddd0175d75c2ece0f551fd23b431011386e31.webp",
-        "sha256": "8f70b0c0b3f7de73d4565067f18ddd0175d75c2ece0f551fd23b431011386e31",
-        "etag": "7d33292b6afe4f763332a047f2aa7e87",
-        "size": 165644
+        "key": "images/b61bced9b876ff46957e6651d484ced86ca733750487dd1fc30cf3f958843e26.webp",
+        "sha256": "b61bced9b876ff46957e6651d484ced86ca733750487dd1fc30cf3f958843e26",
+        "etag": "d3266db115e02614379fcfad0ea9d2fa",
+        "size": 166156
       }
     ]
   },
@@ -7206,21 +7206,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/seyoun_seductive": {
-    "version": "79780bb33483ae96d161910d",
+    "version": "299028b9efb21b53a800c5d3",
     "files": [
       {
         "path": "assets/images/characters/seyoun_seductive.png",
-        "key": "images/33304914e9c05395ba89a2c97a7f9340b5e4690a85b10fd5813f86cf984bf056.png",
-        "sha256": "33304914e9c05395ba89a2c97a7f9340b5e4690a85b10fd5813f86cf984bf056",
-        "etag": "3e9d34f7ff47e34f203fa1740b791213",
-        "size": 1323977
+        "key": "images/36d772bee55ec06104f394316a057bc42dd2fbb618e471c1ec2d7f0dddfd7e00.png",
+        "sha256": "36d772bee55ec06104f394316a057bc42dd2fbb618e471c1ec2d7f0dddfd7e00",
+        "etag": "6c771659ec0394e3c6c2eb53ce0be51f",
+        "size": 1267011
       },
       {
         "path": "assets/images/characters/seyoun_seductive.webp",
-        "key": "images/928d85d13ada95a3a9f6f47f6ee4bf1b30b4a2a891b25c2faaaadd8b380c8a25.webp",
-        "sha256": "928d85d13ada95a3a9f6f47f6ee4bf1b30b4a2a891b25c2faaaadd8b380c8a25",
-        "etag": "5435fe0394883af3cefd2c92a15742d3",
-        "size": 152330
+        "key": "images/f0afc9416ff391a6f65a32bfdc59e10e0c8bcb969b6343cd3faa6f0a30795c93.webp",
+        "sha256": "f0afc9416ff391a6f65a32bfdc59e10e0c8bcb969b6343cd3faa6f0a30795c93",
+        "etag": "38d31a81fcc9e069dee1a0883cbd1f8f",
+        "size": 137310
       }
     ]
   },
@@ -7851,6 +7851,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/teacher_climax_11": {
+    "version": "bee6215e775fc2db36030328",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_climax_11.png",
+        "key": "images/cbba292b177ca60a9d3152927fe12f3acc7719286ebd8f311553ffa9de08eaa2.png",
+        "sha256": "cbba292b177ca60a9d3152927fe12f3acc7719286ebd8f311553ffa9de08eaa2",
+        "etag": "286fd5f256946e3474db6a9b02449b38",
+        "size": 1496909
+      },
+      {
+        "path": "assets/images/characters/teacher_climax_11.webp",
+        "key": "images/f9c24c7502e1c9fbdacba3ca9f4c1762e38695787e766416a4cc9c73c56e0d7a.webp",
+        "sha256": "f9c24c7502e1c9fbdacba3ca9f4c1762e38695787e766416a4cc9c73c56e0d7a",
+        "etag": "b9341be3aff4db597a7e86770d75fd57",
+        "size": 154428
+      }
+    ]
+  },
   "characters/teacher_cold": {
     "version": "10580fa000565da2d3b632dc",
     "files": [
@@ -8384,21 +8403,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/teacher_pain": {
-    "version": "050d9f0669f89fcb8315cb6f",
+    "version": "b7b166fc77d9598bd6d29e98",
     "files": [
       {
         "path": "assets/images/characters/teacher_pain.png",
-        "key": "images/9ed25f3d872bdd4cd4ff1a0589141ceae77fc7a9671f6ad6d006d7291ec7e725.png",
-        "sha256": "9ed25f3d872bdd4cd4ff1a0589141ceae77fc7a9671f6ad6d006d7291ec7e725",
-        "etag": "d4adfd992c29b68017422f23ee875440",
-        "size": 1406338
+        "key": "images/bb60ccb661753d08cf71238e1698a2ea60cc15865cc42b840579a1127c434bae.png",
+        "sha256": "bb60ccb661753d08cf71238e1698a2ea60cc15865cc42b840579a1127c434bae",
+        "etag": "0f0b933d317717d99d22ad208ca39c3b",
+        "size": 1361257
       },
       {
         "path": "assets/images/characters/teacher_pain.webp",
-        "key": "images/92e2c3b88e5bec7764dfeb914c8be529e7cdbb800ae9d63a904682e26efa7262.webp",
-        "sha256": "92e2c3b88e5bec7764dfeb914c8be529e7cdbb800ae9d63a904682e26efa7262",
-        "etag": "5151a6a0111d3d7ad57a10928b5a1f19",
-        "size": 171146
+        "key": "images/463e92d08fbb7a6df032daf5e8f2e2f1bcfc014ab8fb149d7f6b71b76fc16ab2.webp",
+        "sha256": "463e92d08fbb7a6df032daf5e8f2e2f1bcfc014ab8fb149d7f6b71b76fc16ab2",
+        "etag": "abde59dd4a25ef511bcbd6f8741d2943",
+        "size": 157508
       }
     ]
   },
