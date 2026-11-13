@@ -47,8 +47,9 @@
 - Higgsfield MCP를 사용할 수 없거나 생성이 실패하면 다른 이미지 생성기로 임의 대체하지 말고 사용자에게 상황을 알린다.
 - 프로젝트용 생성 이미지는 기존 캐릭터 외형과 화풍을 참조해 일관성을 확인하고, 최종 파일을 저장소 안에 저장한 뒤 실제 시나리오 또는 갤러리 연결까지 검증한다.
 
-## Native Transparent Character Sprite Generation (`GPT Image 2.6` Sunburst) & Lightweight Post-Processing (Permanent, 2026-11-12)
-- 캐릭터 스프라이트 신규 생성 및 자세·표정 편집 시 Higgsfield MCP의 **`GPT Image 2.6` (`gpt_image_2_6`, OpenAI Sunburst)** + **네이티브 투명 배경(`background: "transparent"`, `output_format: "png"`, `aspect_ratio: "3:4"`)** + 캐릭터 정본 레퍼런스(`normal/01/sprite.png` 또는 `smile/01/sprite.png`, `image_references`) 조합을 최우선 표준으로 사용한다(필요 시 `Nano Banana 2.1` (`nano_banana_2_1`) 등 보조 활용).
+## Native Transparent Character Sprite Generation (`GPT Image 2.6` 2D Shading Lock) & Lightweight Post-Processing (Permanent, 2026-11-12 / Upgraded 2026-11-13)
+- 캐릭터 스프라이트 신규 생성 및 자세·표정 편집 시 Higgsfield MCP의 **`GPT Image 2.6` (`gpt_image_2_6`, OpenAI Sunburst — 2D 평면+소프트 에어브러시 채색 강제 프롬프트)** + **네이티브 투명 배경(`background: "transparent"`, `output_format: "png"`, `aspect_ratio: "3:4"`)** + 캐릭터 정본 레퍼런스(`normal/01/sprite.png`, `image_references`; 변형된 파생본 사용 금지) 조합을 영구 표준으로 사용한다.
+- **2D 화풍 잠금(2D Shading Lock) 프롬프트 필수 적용**: `gpt_image_2_6` 호출 시 `"semi-painterly"`, `"realistic"`, `"3D"` 등 반실사 유도 표현이나 비율 재드로잉을 유발하는 `"cel-shaded"` 단독 지시를 절대 사용하지 않는다. 반드시 **"매끈한 2D 애니메이션 평면+소프트 에어브러시 채색(`clean smooth 2D anime flat-to-soft airbrush shading`) 유지, 실사형 잔주름·비닐/새틴 광택·3D 입술 음영·실사 잔머리 결 노이즈 금지, 의상(재킷·치마 등)·머리카락 덩어리 질감·얇은 선화·신체 비율은 원본 `normal/01` 레퍼런스 그대로 유지"** 조건을 프롬프트에 명시해 2.5D 화풍 드리프트를 차단한다.
 - 동일 해상도·품질(`1k` + `high` = `1.5 credits`)에서 크레딧 비용이 동일하므로, 초고속 시안용 경량 모델인 `GPT Image 2.6 Flare` (`gpt_image_2_6_flare`)는 프로덕션 캐릭터 에셋에 사용하지 않고 레퍼런스 일관성·세부 묘사(손가락·의상 주름·젖은 머리카락 결)·네이티브 알파 품질이 우수한 기본 **`GPT Image 2.6` (`gpt_image_2_6`)**을 사용한다.
 - `background: "transparent"`로 생성된 네이티브 투명 PNG는 배경 색 섞임 없는 순수 전경 RGB와 잔머리 안티앨리어싱 알파를 이미 보유하므로, 외곽 머리카락 결 손상과 흰 배경 역산 왜곡을 막기 위해 무거운 AI 배경제거(`rembg` / `BiRefNet`)와 흰 배경 디프린징을 생략하고 반드시 `python scripts/clean-sprite-bg.py <raw.png> <out/sprite.png> --native-rgba --webp --chat-crop --verify-sheet <verify.jpg>` 경량 후처리를 실행한다:
   1. **외곽 네이티브 잔머리 알파 보존 + 허공 노이즈 제거**: 본체에 연결된 반투명 머리카락 끝단의 RGB·알파는 그대로 보존하고, 허공의 미세 확산 먼지(`alpha <= 14`)와 분리된 부유 노이즈 섬만 다단계 연결 요소 필터(`alpha >= 24, 18, 10, 1`)로 제거.

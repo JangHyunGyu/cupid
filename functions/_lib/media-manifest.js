@@ -8840,21 +8840,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/yuna_afterglow": {
-    "version": "f6ecf683b98ac918729d9990",
+    "version": "81b904784b88b73de8230537",
     "files": [
       {
         "path": "assets/images/characters/yuna_afterglow.png",
-        "key": "images/1714dcc189c7719f64750edfaabcb900ac503c3a79687a2379713015749ddbdd.png",
-        "sha256": "1714dcc189c7719f64750edfaabcb900ac503c3a79687a2379713015749ddbdd",
-        "etag": "dce01d0a1c0d7f0d575b8c0b60b0e4b8",
-        "size": 1811911
+        "key": "images/ba0a32e4572ddd83332cc2f1e9d0178dc7a87710193a7e2221257caef61279cd.png",
+        "sha256": "ba0a32e4572ddd83332cc2f1e9d0178dc7a87710193a7e2221257caef61279cd",
+        "etag": "8a13ef21175b3a9f752d31fa94bbb838",
+        "size": 1446318
       },
       {
         "path": "assets/images/characters/yuna_afterglow.webp",
-        "key": "images/c80a5ee83571e3810c84cf97f2106a8232d0a5ea0e5d0232e256f270845f53b9.webp",
-        "sha256": "c80a5ee83571e3810c84cf97f2106a8232d0a5ea0e5d0232e256f270845f53b9",
-        "etag": "aa339850b006a4e91f876dfa3693be53",
-        "size": 253164
+        "key": "images/d6a1d8a5e4653343892889a3982392f4f8855b63322141192924c04a48b8054f.webp",
+        "sha256": "d6a1d8a5e4653343892889a3982392f4f8855b63322141192924c04a48b8054f",
+        "etag": "ae9d8405e4c96975a3b8186790faae30",
+        "size": 182386
       }
     ]
   },
@@ -9717,21 +9717,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/yuna_messy_afterglow": {
-    "version": "9ad9e3f43487fe36a42a9c4c",
+    "version": "70ac499ff812c93b648fd900",
     "files": [
       {
         "path": "assets/images/characters/yuna_messy_afterglow.png",
-        "key": "images/e922e8651e36bf3003fe5ff59f6a637161df8480a77f6a0ee2f802c0c48f26cc.png",
-        "sha256": "e922e8651e36bf3003fe5ff59f6a637161df8480a77f6a0ee2f802c0c48f26cc",
-        "etag": "5d8f8c226c2d6e70bc6fd1a4a50057c4",
-        "size": 1765833
+        "key": "images/6fcb688dfe924783b8778816e596fa0576d23dd7de0cb6ecfd90dd20d4c40ea3.png",
+        "sha256": "6fcb688dfe924783b8778816e596fa0576d23dd7de0cb6ecfd90dd20d4c40ea3",
+        "etag": "1d98edf0e7f087a829e4adc10fb2ef78",
+        "size": 1465514
       },
       {
         "path": "assets/images/characters/yuna_messy_afterglow.webp",
-        "key": "images/2b5b9bd5cf8eb097165b3636ecec60d8410b7be6b52ffe00f810ab48287a4919.webp",
-        "sha256": "2b5b9bd5cf8eb097165b3636ecec60d8410b7be6b52ffe00f810ab48287a4919",
-        "etag": "6167c12abe89aa6e0239b192a8fa7751",
-        "size": 1050124
+        "key": "images/f43dee8771d449bb290de8e110e7bf922852f68168a90b6d464bbecb32b7bf39.webp",
+        "sha256": "f43dee8771d449bb290de8e110e7bf922852f68168a90b6d464bbecb32b7bf39",
+        "etag": "f0562b39188e00605187b5a88f282606",
+        "size": 199410
       }
     ]
   },
