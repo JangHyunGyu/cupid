@@ -8840,21 +8840,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/yuna_afterglow": {
-    "version": "530f8d2e7c9279bd85fcfba0",
+    "version": "f6ecf683b98ac918729d9990",
     "files": [
       {
         "path": "assets/images/characters/yuna_afterglow.png",
-        "key": "images/8169558468d0ac72ac1498533fbbb677d24121a0288738135f24a2d5aafef9fe.png",
-        "sha256": "8169558468d0ac72ac1498533fbbb677d24121a0288738135f24a2d5aafef9fe",
-        "etag": "ea6844abeb6675c275264a98246e35b5",
-        "size": 1743225
+        "key": "images/1714dcc189c7719f64750edfaabcb900ac503c3a79687a2379713015749ddbdd.png",
+        "sha256": "1714dcc189c7719f64750edfaabcb900ac503c3a79687a2379713015749ddbdd",
+        "etag": "dce01d0a1c0d7f0d575b8c0b60b0e4b8",
+        "size": 1811911
       },
       {
         "path": "assets/images/characters/yuna_afterglow.webp",
-        "key": "images/01f840244f7c5906f35384c6b5bd88dd424df84cb24b97682d6efd81713f24d1.webp",
-        "sha256": "01f840244f7c5906f35384c6b5bd88dd424df84cb24b97682d6efd81713f24d1",
-        "etag": "a1c13b8c1d45ca96bfe3a8673ac82582",
-        "size": 1033100
+        "key": "images/c80a5ee83571e3810c84cf97f2106a8232d0a5ea0e5d0232e256f270845f53b9.webp",
+        "sha256": "c80a5ee83571e3810c84cf97f2106a8232d0a5ea0e5d0232e256f270845f53b9",
+        "etag": "aa339850b006a4e91f876dfa3693be53",
+        "size": 253164
       }
     ]
   },

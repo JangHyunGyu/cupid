@@ -11631,8 +11631,8 @@
             "assets/images/characters/yuna_afterglow.png",
             "assets/characters/yuna/expressions/afterglow/01/sprite.png"
           ],
-          "sha256": "3c99d0fd36a786fff5c0f1f0d6c16bea22905e098b11d5fca84937054404b71a",
-          "bytes": 1743262
+          "sha256": "488bc1c866b3d09de98584f0cecafbcdc5237fc2a01ddde734875854a32c4918",
+          "bytes": 1811948
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/afterglow/01/sprite.webp",
@@ -11640,8 +11640,8 @@
             "assets/images/characters/yuna_afterglow.webp",
             "assets/characters/yuna/expressions/afterglow/01/sprite.webp"
           ],
-          "sha256": "e1ceb3254845e8f6472c89b9f2d3f93896364351e3c1625bc8649c63d5302898",
-          "bytes": 1033137
+          "sha256": "8c96ea366af339d57b601232aea87033d777c5112b3dba86e293fcee657275e0",
+          "bytes": 253201
         }
       }
     },

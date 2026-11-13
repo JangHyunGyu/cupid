@@ -4534,14 +4534,14 @@
       "backupKey": "objects/sources/f22314b55b95f9de230c5938ac5874223184d534b11f97629d2e150d4f47025a.webp"
     },
     "assets/characters/yuna/expressions/afterglow/01/sprite.png": {
-      "sha256": "3c99d0fd36a786fff5c0f1f0d6c16bea22905e098b11d5fca84937054404b71a",
-      "bytes": 1743262,
-      "backupKey": "objects/sources/3c99d0fd36a786fff5c0f1f0d6c16bea22905e098b11d5fca84937054404b71a.png"
+      "sha256": "488bc1c866b3d09de98584f0cecafbcdc5237fc2a01ddde734875854a32c4918",
+      "bytes": 1811948,
+      "backupKey": "objects/sources/488bc1c866b3d09de98584f0cecafbcdc5237fc2a01ddde734875854a32c4918.png"
     },
     "assets/characters/yuna/expressions/afterglow/01/sprite.webp": {
-      "sha256": "e1ceb3254845e8f6472c89b9f2d3f93896364351e3c1625bc8649c63d5302898",
-      "bytes": 1033137,
-      "backupKey": "objects/sources/e1ceb3254845e8f6472c89b9f2d3f93896364351e3c1625bc8649c63d5302898.webp"
+      "sha256": "8c96ea366af339d57b601232aea87033d777c5112b3dba86e293fcee657275e0",
+      "bytes": 253201,
+      "backupKey": "objects/sources/8c96ea366af339d57b601232aea87033d777c5112b3dba86e293fcee657275e0.webp"
     },
     "assets/characters/yuna/expressions/ahegao/01/sprite.png": {
       "sha256": "c4e4906e841b398f87ff2527f3a832342cdacd6cc756d4c2f85f9d4be9ed1bf5",
@@ -11440,14 +11440,14 @@
       "backupKey": "objects/sources/7dffa31d6c8d5217f030de185ba5ca34a9fd69d24e7da5092de48b5c23d5f6e4.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/yuna_afterglow.png": {
-      "sha256": "8169558468d0ac72ac1498533fbbb677d24121a0288738135f24a2d5aafef9fe",
-      "bytes": 1743225,
-      "backupKey": "objects/sources/8169558468d0ac72ac1498533fbbb677d24121a0288738135f24a2d5aafef9fe.png"
+      "sha256": "1714dcc189c7719f64750edfaabcb900ac503c3a79687a2379713015749ddbdd",
+      "bytes": 1811911,
+      "backupKey": "objects/sources/1714dcc189c7719f64750edfaabcb900ac503c3a79687a2379713015749ddbdd.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/yuna_afterglow.webp": {
-      "sha256": "01f840244f7c5906f35384c6b5bd88dd424df84cb24b97682d6efd81713f24d1",
-      "bytes": 1033100,
-      "backupKey": "objects/sources/01f840244f7c5906f35384c6b5bd88dd424df84cb24b97682d6efd81713f24d1.webp"
+      "sha256": "c80a5ee83571e3810c84cf97f2106a8232d0a5ea0e5d0232e256f270845f53b9",
+      "bytes": 253164,
+      "backupKey": "objects/sources/c80a5ee83571e3810c84cf97f2106a8232d0a5ea0e5d0232e256f270845f53b9.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/yuna_ahegao.png": {
       "sha256": "d3e55ac92a0bd8a601346494942b7137ba88531f82147a1236b07f525793fa39",
