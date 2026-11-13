@@ -10011,8 +10011,8 @@
             "assets/images/characters/teacher_climax_03.png",
             "assets/characters/teacher/expressions/climax/03/sprite.png"
           ],
-          "bytes": 1663426,
-          "sha256": "a1d119f7003ca33043278ba08abe6f4362c352da2d4e5d944c41de630c26008a"
+          "bytes": 1621938,
+          "sha256": "3dbe024e57b3dedb24b148205f6dfa9c36f1cad975f5c6565a2a3da2207f7c51"
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/climax/03/sprite.webp",
@@ -10020,8 +10020,8 @@
             "assets/images/characters/teacher_climax_03.webp",
             "assets/characters/teacher/expressions/climax/03/sprite.webp"
           ],
-          "bytes": 190571,
-          "sha256": "a0555b2401c2a72435bab53424c2ff75312c45f8a6e7297d48f446b31a8dc082"
+          "bytes": 179941,
+          "sha256": "da2b8f8ea257b64e7adab25903f62d9918ceda2d6398d35a4c9075ae8c7a7d3b"
         }
       }
     },

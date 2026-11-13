@@ -3924,14 +3924,14 @@
       "backupKey": "objects/sources/fa9c57c480d23b6c9e9b40b9ad2d8dded751f13a3a61e970419f224be05eac0b.webp"
     },
     "assets/characters/teacher/expressions/climax/03/sprite.png": {
-      "sha256": "a1d119f7003ca33043278ba08abe6f4362c352da2d4e5d944c41de630c26008a",
-      "bytes": 1663426,
-      "backupKey": "objects/sources/a1d119f7003ca33043278ba08abe6f4362c352da2d4e5d944c41de630c26008a.png"
+      "sha256": "3dbe024e57b3dedb24b148205f6dfa9c36f1cad975f5c6565a2a3da2207f7c51",
+      "bytes": 1621938,
+      "backupKey": "objects/sources/3dbe024e57b3dedb24b148205f6dfa9c36f1cad975f5c6565a2a3da2207f7c51.png"
     },
     "assets/characters/teacher/expressions/climax/03/sprite.webp": {
-      "sha256": "a0555b2401c2a72435bab53424c2ff75312c45f8a6e7297d48f446b31a8dc082",
-      "bytes": 190571,
-      "backupKey": "objects/sources/a0555b2401c2a72435bab53424c2ff75312c45f8a6e7297d48f446b31a8dc082.webp"
+      "sha256": "da2b8f8ea257b64e7adab25903f62d9918ceda2d6398d35a4c9075ae8c7a7d3b",
+      "bytes": 179941,
+      "backupKey": "objects/sources/da2b8f8ea257b64e7adab25903f62d9918ceda2d6398d35a4c9075ae8c7a7d3b.webp"
     },
     "assets/characters/teacher/expressions/climax/04/sprite.png": {
       "sha256": "e36694bd1303246e45c979c6fab37958475c9d3a4ac32d0fc25d43d47250a9d2",
@@ -10840,14 +10840,14 @@
       "backupKey": "objects/sources/dfc62b96a0a24d195515d1259f1f44091458b9138c6036787fc84d1d42e8fdc4.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/teacher_climax_03.png": {
-      "sha256": "b98d1eb2429dbb65c34cf396320aaae8eb4962c3237cce730283bafe7e3ea4a7",
-      "bytes": 1663389,
-      "backupKey": "objects/sources/b98d1eb2429dbb65c34cf396320aaae8eb4962c3237cce730283bafe7e3ea4a7.png"
+      "sha256": "ce18480b25d1ba237d55472c99fdfa687e295cc2b58716eb28bc02b7b3f2957f",
+      "bytes": 1621901,
+      "backupKey": "objects/sources/ce18480b25d1ba237d55472c99fdfa687e295cc2b58716eb28bc02b7b3f2957f.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/teacher_climax_03.webp": {
-      "sha256": "288b1a9fab261ddb60329d73b4a470d88aec4c14b8bd3eec7964c2f0d0ab63f4",
-      "bytes": 190534,
-      "backupKey": "objects/sources/288b1a9fab261ddb60329d73b4a470d88aec4c14b8bd3eec7964c2f0d0ab63f4.webp"
+      "sha256": "0d57cfc306f1d7209039c39c6dcbb9a6f8dac85408b6d6abb306840be1468a15",
+      "bytes": 179904,
+      "backupKey": "objects/sources/0d57cfc306f1d7209039c39c6dcbb9a6f8dac85408b6d6abb306840be1468a15.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/teacher_climax_04.png": {
       "sha256": "2f97dc49972fe4a61e34033668467d335b8ab8f627f4fa6a7981f2123ac84304",
