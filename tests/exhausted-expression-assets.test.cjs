@@ -111,15 +111,68 @@ test('Gallery selects and grants exhaustion, then follows a normal reply', () =>
     }
 });
 
-test('date/home outfit fallback does not erase the imported exhaustion sprite', () => {
+test('date/home outfit scenes never leak uniform exhaustion sprites and keep unlock requirements', () => {
     for (const [id, outfit] of [['seyoun', 'date'], ['yuna', 'date'], ['dain', 'date'], ['nurse', 'home']]) {
         const asset = `assets/images/characters/${id}_exhausted.png`;
-        assert.equal(gallery.resolveOutfitExpression({ character: `assets/images/characters/${id}_${outfit}_normal.webp` }, asset), asset);
+        assert.match(
+            gallery.resolveOutfitExpression({ character: `assets/images/characters/${id}_${outfit}_normal.webp` }, asset),
+            new RegExp(`^assets/images/characters/${id}_${outfit}_[a-z0-9_]+\\.webp$`)
+        );
         assert.equal(gallery.getExpressionRequirement(id, 'normal'), 0);
         assert.equal(gallery.getExpressionRequirement(id, 'date_shy'), gallery.getExpressionRequirement(id, 'shy'));
     }
     assert.equal(gallery.getExpressionRequirement('haeun', 'relieved'), 100);
     assert.equal(gallery.getExpressionRequirement('haeun', 'firm'), 67);
+});
+
+test('casual-outfit FreeTalk keeps date/home sprites across applyExpression, tags, group turns, and gallery', () => {
+    const prevPicker = runtime.window.pickCharacterExpressionVariant;
+    runtime.window.pickCharacterExpressionVariant = (charId, expr, base) =>
+        base.replace(/\.(png|webp)$/, '_02.$1');
+    try {
+        for (const [name, id, outfit] of [
+            ['Nurse', 'nurse', 'home'],
+            ['Seoyeon', 'seyoun', 'date'],
+            ['Yuna', 'yuna', 'date'],
+            ['Dain', 'dain', 'date']
+        ]) {
+            const pattern = new RegExp(`^assets/images/characters/${id}_${outfit}_[a-z0-9_]+\\.webp$`);
+            const slotImg = { dataset: { cupidAvatarAsset: `assets/images/characters/${id}_${outfit}_normal.webp` } };
+            const slot = { dataset: { groupCharId: name }, querySelector: () => slotImg };
+            const context = Object.assign(Object.create(main), {
+                uiManager: { charSlots: { center: slot } },
+                charNameMap: { [name]: name }
+            });
+            const scene = { name, character: `assets/images/characters/${id}_${outfit}_normal.webp` };
+            for (const expr of ['normal', 'angry', 'shy', 'flushed', 'climax', 'ahegao', 'exhausted', 'pain', 'undressed_shy']) {
+                const selection = main.applyExpression.call(context, expr, scene);
+                assert.match(selection.path, pattern);
+                assert.match(slotImg.selectedAsset, pattern);
+                main.processExpressionTags.call(context, `test [EXPRESSION: ${expr}]`, scene);
+                assert.match(slotImg.selectedAsset, pattern);
+                main.applyExpression.call(context, expr, { name });
+                assert.match(slotImg.selectedAsset, pattern);
+                const groupSel = main._applyGroupExpression.call(context, expr, name);
+                assert.match(groupSel.path, pattern);
+                assert.match(slotImg.selectedAsset, pattern);
+            }
+        }
+        const gft = new runtime.window.GalleryFreeTalk('en', {});
+        const prevGetEl = runtime.document.getElementById;
+        const gftImg = { dataset: { cupidAvatarAsset: 'assets/images/characters/nurse_home_smile.webp' } };
+        runtime.document.getElementById = id => (id === 'gft-char-img' ? gftImg : image);
+        try {
+            for (const expr of ['normal', 'angry', 'climax', 'exhausted', 'pain']) {
+                const sel = gft._updateExpression(expr, 'nurse');
+                assert.match(sel.path, /^assets\/images\/characters\/nurse_home_[a-z0-9_]+\.webp$/);
+                assert.match(gftImg.selectedAsset, /^assets\/images\/characters\/nurse_home_[a-z0-9_]+\.webp$/);
+            }
+        } finally {
+            runtime.document.getElementById = prevGetEl;
+        }
+    } finally {
+        runtime.window.pickCharacterExpressionVariant = prevPicker;
+    }
 });
 
 test('Main, Group, and Gallery cache the broad fatigue rule in every language', () => {

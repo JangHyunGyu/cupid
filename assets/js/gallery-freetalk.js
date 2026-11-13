@@ -2133,9 +2133,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const img = document.getElementById('gft-char-img');
         if (!img) return;
         const defaultPath = `assets/images/characters/${charId}_${resolvedExpression}.png`;
-        const path = typeof window.pickCharacterExpressionVariant === 'function'
-            ? window.pickCharacterExpressionVariant(charId, resolvedExpression, defaultPath, Math.random, { scope: `gallery:${this.lang}`, turn, reuse: !turn })
-            : defaultPath;
+        const activeCasual = window.getCupidChatAvatarAsset?.(img) || img?.dataset?.cupidAvatarAsset || img?.dataset?.cupidPending || '';
+        const casualMatch = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(String(activeCasual));
+        const resolvedOutfitPath = casualMatch
+            ? (window.GalleryData?.resolveOutfitExpression?.({ character: activeCasual }, defaultPath) || defaultPath)
+            : '';
+        const isCasualOutfit = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(resolvedOutfitPath);
+        const path = isCasualOutfit
+            ? resolvedOutfitPath
+            : (typeof window.pickCharacterExpressionVariant === 'function'
+                ? window.pickCharacterExpressionVariant(charId, resolvedExpression, defaultPath, Math.random, { scope: `gallery:${this.lang}`, turn, reuse: !turn })
+                : defaultPath);
         const variantMatch = path.match(/\/([a-z0-9]+)_([a-z0-9_]+)\.(?:png|webp)$/i);
         const unlockExpr = (variantMatch && variantMatch[1] === charId) ? variantMatch[2] : resolvedExpression;
         const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(path)

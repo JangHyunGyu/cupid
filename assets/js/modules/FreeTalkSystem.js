@@ -1966,7 +1966,8 @@ class FreeTalkSystem {
                     scene?.character
                 ) || {};
                 if (parsed.expression === 'neutral') {
-                    parsed.expression = shownPortrait.expression || (displayFallback ? '' : 'normal');
+                    const shownExpr = String(shownPortrait.expression || '').replace(/^(?:date|home)_/i, '');
+                    parsed.expression = shownExpr || (displayFallback ? '' : 'normal');
                 }
                 window.recordCupidVisibleChat?.({ charId: charKey, role: 'assistant', content: reply,
                     sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
@@ -2324,10 +2325,18 @@ class FreeTalkSystem {
             expression,
             Object.keys(expressions || {})
         );
+        const slot = Object.values(this.uiManager?.charSlots || {})
+            .find(candidate => candidate?.dataset?.groupCharId === speakerId);
+        const img = slot?.querySelector('img');
+        const outfitScene = this._getEffectiveOutfitScene?.({}, slot);
         const baseSrc = expressions?.[normalized];
-        const src = (baseSrc && typeof window.pickCharacterExpressionVariant === 'function')
-            ? window.pickCharacterExpressionVariant(speakerId, normalized, baseSrc, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
+        const outfitSrc = baseSrc
+            ? (window.GalleryData?.resolveOutfitExpression?.(outfitScene, baseSrc) || baseSrc)
             : baseSrc;
+        const isCasualOutfit = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(String(outfitSrc || ''));
+        const src = (!isCasualOutfit && outfitSrc && typeof window.pickCharacterExpressionVariant === 'function')
+            ? window.pickCharacterExpressionVariant(speakerId, normalized, outfitSrc, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
+            : outfitSrc;
         const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(src)
             || window.getCupidChatAvatarAsset?.({ dataset: { cupidAvatarAsset: src } })
             || '';
@@ -2342,9 +2351,6 @@ class FreeTalkSystem {
             expressionVariant
         };
         this._lastExpressionSelection = selection;
-        const slot = Object.values(this.uiManager?.charSlots || {})
-            .find(candidate => candidate?.dataset?.groupCharId === speakerId);
-        const img = slot?.querySelector('img');
         if (src && img) {
             (window.CupidExpressionState ||= {})[speakerId] = normalized;
             img.dataset.rawSrc = src;
@@ -2405,8 +2411,9 @@ class FreeTalkSystem {
             const conversation = conversations[index];
             const portrait = Object.values(this.uiManager?.charSlots || {}).find(slot => slot?.dataset?.groupCharId === conversation.speakerId)?.querySelector('img');
             const shownPortrait = window.getCupidPortraitLogFields?.(portrait, conversation.speakerId) || {};
+            const shownExpr = String(shownPortrait.expression || '').replace(/^(?:date|home)_/i, '');
             const requestedExpression = conversation.expression === 'neutral'
-                ? (shownPortrait.expression || 'normal')
+                ? (shownExpr || 'normal')
                 : conversation.expression;
             this._setGroupActiveSpeaker(conversation.speakerId);
             this.uiManager.updateNameTag(conversation.speakerName);
@@ -3358,6 +3365,18 @@ class FreeTalkSystem {
         img.src = url;
     }
 
+    _getEffectiveOutfitScene(scene, slotEl = null) {
+        const outfitRe = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i;
+        const explicit = String(scene?.character || scene?.characters?.center?.src || scene?.characters?.center || '');
+        if (explicit) return scene;
+        const img = slotEl?.querySelector?.('img');
+        const activeAsset = window.getCupidChatAvatarAsset?.(img) || img?.dataset?.cupidAvatarAsset || img?.dataset?.rawSrc || '';
+        if (outfitRe.test(String(activeAsset))) {
+            return { ...(scene || {}), character: activeAsset };
+        }
+        return scene;
+    }
+
     applyExpression(exprName, scene) {
         if (scene.romanticInterlude === true) return;
         if (!window.CHARACTER_EXPRESSIONS && window.ensureCupidFreeTalkRuntime) {
@@ -3383,8 +3402,10 @@ class FreeTalkSystem {
         const centerSlot = this.uiManager.charSlots.center;
         if (!centerSlot) return;
 
-        const basePath = window.GalleryData?.resolveOutfitExpression?.(scene, charExprs[name]) || charExprs[name];
-        const rawPath = (basePath === charExprs[name] && typeof window.pickCharacterExpressionVariant === 'function')
+        const effectiveScene = this._getEffectiveOutfitScene(scene, centerSlot);
+        const basePath = window.GalleryData?.resolveOutfitExpression?.(effectiveScene, charExprs[name]) || charExprs[name];
+        const isCasualOutfit = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(basePath);
+        const rawPath = (!isCasualOutfit && basePath === charExprs[name] && typeof window.pickCharacterExpressionVariant === 'function')
             ? window.pickCharacterExpressionVariant(expressionOwner || scene.name, name, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
             : basePath;
         const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(rawPath)
@@ -3552,8 +3573,10 @@ class FreeTalkSystem {
                     // 🔧 centerSlot이 없으면 표정 변경 스킵
                     if (!centerSlot) continue;
 
-                                        const basePath = charExprs[normalizedExpr];
-                    const rawPath = typeof window.pickCharacterExpressionVariant === 'function'
+                    const effectiveScene = this._getEffectiveOutfitScene(scene, centerSlot);
+                    const basePath = window.GalleryData?.resolveOutfitExpression?.(effectiveScene, charExprs[normalizedExpr]) || charExprs[normalizedExpr];
+                    const isCasualOutfit = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(basePath);
+                    const rawPath = (!isCasualOutfit && basePath === charExprs[normalizedExpr] && typeof window.pickCharacterExpressionVariant === 'function')
                         ? window.pickCharacterExpressionVariant(this.charNameMap?.[scene.name] || scene.name, normalizedExpr, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
                         : basePath;
 

@@ -92,15 +92,18 @@ test('outfit variants never lower or raise existing expression unlock thresholds
     }
 });
 
-test('conversation expressions preserve authored outfits without replacing existing special expressions', () => {
+test('conversation expressions preserve authored outfits across every expression without leaking uniform variants', () => {
     const { GalleryData } = loadCorpus();
     const scene = { character: 'assets/images/characters/nurse_home_normal.webp' };
     assert.match(GalleryData.resolveOutfitExpression(scene, 'assets/images/characters/nurse_angry.png'), /nurse_home_angry\.webp$/);
     assert.match(GalleryData.resolveOutfitExpression(scene, 'assets/images/characters/nurse_shy.png'), /nurse_home_shy\.webp$/);
-    for (const expression of ['bikini', 'climax']) {
+    assert.match(GalleryData.resolveOutfitExpression(scene, 'assets/images/characters/nurse_home_smile.webp'), /nurse_home_smile\.webp$/);
+    for (const expression of ['bikini', 'climax', 'ahegao', 'exhausted', 'pain', 'climax_02', 'flushed_03']) {
         const original = `assets/images/characters/nurse_${expression}.png`;
-        assert.equal(GalleryData.resolveOutfitExpression(scene, original), original);
+        assert.match(GalleryData.resolveOutfitExpression(scene, original), /nurse_home_[a-z0-9_]+\.webp$/);
     }
+    const centerScene = { characters: { center: { src: 'assets/images/characters/seyoun_date_normal.webp' } } };
+    assert.match(GalleryData.resolveOutfitExpression(centerScene, 'assets/images/characters/seyoun_climax_04.png'), /seyoun_date_[a-z0-9_]+\.webp$/);
     assert.equal(GalleryData.resolveOutfitExpression({}, 'assets/images/characters/dain_sad.png'), 'assets/images/characters/dain_sad.png');
 });
 

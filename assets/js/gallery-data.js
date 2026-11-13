@@ -2708,16 +2708,83 @@ GalleryData.getExpressionRequirement = function (charId, expression) {
     return baseExpressions.length <= 1 ? 0 : Math.round(index / (baseExpressions.length - 1) * 100);
 };
 GalleryData.resolveOutfitExpression = function (scene, rawPath) {
-    const outfit = String(scene?.character || '').match(/\/(seyoun|yuna|dain|nurse)_(date|home)_[^/]+\.(?:png|webp)$/);
+    const scenePortrait = String(scene?.character || scene?.characters?.center?.src || scene?.characters?.center || '');
+    const outfit = scenePortrait.match(/(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i);
     if (!outfit) return rawPath;
-    const available = this.OUTFIT_EXPRESSIONS[outfit[1]]?.[outfit[2]];
-    if (!available) return rawPath;
-    const expression = String(rawPath).split('/').pop().replace(/^[^_]+_/, '').replace(/\.(png|webp)$/, '');
-    if (expression === 'bikini' || expression === 'climax' || expression === 'ahegao' || /^(?:climax|flushed)_[0-9]{2}$/.test(expression) || expression === 'exhausted' || expression === 'pain') return rawPath;
-    const alternatives = { angry: available.includes('worried') ? 'worried' : 'bored', pout: 'sad', worried: 'sad', surprised: available.includes('worried') ? 'worried' : available.includes('sweat') ? 'sweat' : 'shy', scared: available.includes('worried') ? 'worried' : 'sad', fainted: available.includes('exhausted') ? 'exhausted' : 'sad', dazed: available.includes('scared') ? 'scared' : 'surprised', disgusted: 'angry', smirk: 'smile', furious: 'angry', confused: 'surprised', relieved: 'soft_smile', sob: 'cry', scream: 'scared', choking: 'pain', dead: available.includes('exhausted') ? 'exhausted' : 'sad', humiliated: 'shy', dumbfounded: available.includes('bored') ? 'bored' : 'sad', pleading: available.includes('worried') ? 'worried' : 'sad', entranced: 'shy', seductive: available.includes('smile') ? 'smile' : 'laugh', jealous: 'pout', cold: available.includes('bored') ? 'bored' : 'normal', suspicious: available.includes('worried') ? 'worried' : 'normal', lovestruck: available.includes('smile') ? 'smile' : 'shy', kiss: 'shy', afterglow: 'shy', enduring: 'shy', oral_service: 'shy', undressed_shy: 'shy', dominant_aroused: available.includes('smile') ? 'smile' : 'laugh', messy_afterglow: 'shy', begging_lust: 'shy', betrayed: 'sad', combat_ready: 'angry', groggy: available.includes('worried') ? 'worried' : 'sad', scheming: available.includes('smile') ? 'smile' : 'laugh', touched: available.includes('smile') ? 'smile' : 'shy', sweat: available.includes('worried') ? 'worried' : 'shy', dry_smile: available.includes('smile') ? 'smile' : 'sad', tired: available.includes('sweat') ? 'sweat' : 'sad', bored: available.includes('bored') ? 'bored' : 'normal', firm: 'normal', pain: 'sad', cry: 'sad', laugh: 'smile', smile: 'laugh', soft_smile: available.includes('smile') ? 'smile' : 'normal', aegyo: available.includes('laugh') ? 'laugh' : available.includes('smile') ? 'smile' : 'shy', very_shy: 'shy', shy2: 'shy', active: 'normal', flushed: 'shy' };
+    const charId = outfit[1].toLowerCase();
+    const outfitKey = outfit[2].toLowerCase();
+    const available = this.OUTFIT_EXPRESSIONS[charId]?.[outfitKey];
+    if (!available || !available.length) return rawPath;
+    const rawFile = String(rawPath || '').split('?')[0].split('/').pop() || '';
+    const expression = rawFile
+        .replace(/^[^_]+_/, '')
+        .replace(/^(?:date|home)_/i, '')
+        .replace(/\.(?:png|webp)$/i, '')
+        .replace(/_[0-9]{2}$/, '')
+        .toLowerCase();
+    const alternatives = {
+        angry: available.includes('worried') ? 'worried' : 'bored',
+        pout: 'sad',
+        worried: 'sad',
+        surprised: available.includes('worried') ? 'worried' : available.includes('sweat') ? 'sweat' : 'shy',
+        scared: available.includes('worried') ? 'worried' : 'sad',
+        fainted: available.includes('exhausted') ? 'exhausted' : 'sad',
+        dazed: available.includes('scared') ? 'scared' : 'surprised',
+        disgusted: 'angry',
+        smirk: 'smile',
+        furious: 'angry',
+        confused: 'surprised',
+        relieved: 'soft_smile',
+        sob: 'cry',
+        scream: 'scared',
+        choking: available.includes('pain') ? 'pain' : 'sad',
+        dead: available.includes('exhausted') ? 'exhausted' : 'sad',
+        humiliated: 'shy',
+        dumbfounded: available.includes('bored') ? 'bored' : 'sad',
+        pleading: available.includes('worried') ? 'worried' : 'sad',
+        entranced: available.includes('flushed') ? 'flushed' : 'shy',
+        seductive: available.includes('smile') ? 'smile' : 'laugh',
+        jealous: 'pout',
+        cold: available.includes('bored') ? 'bored' : 'normal',
+        suspicious: available.includes('worried') ? 'worried' : 'normal',
+        lovestruck: available.includes('smile') ? 'smile' : 'shy',
+        kiss: 'shy',
+        afterglow: available.includes('flushed') ? 'flushed' : 'shy',
+        enduring: available.includes('flushed') ? 'flushed' : 'shy',
+        oral_service: available.includes('flushed') ? 'flushed' : 'shy',
+        undressed_shy: 'shy',
+        dominant_aroused: available.includes('smile') ? 'smile' : 'laugh',
+        messy_afterglow: available.includes('flushed') ? 'flushed' : 'shy',
+        begging_lust: available.includes('flushed') ? 'flushed' : 'shy',
+        betrayed: 'sad',
+        combat_ready: 'angry',
+        groggy: available.includes('worried') ? 'worried' : 'sad',
+        scheming: available.includes('smile') ? 'smile' : 'laugh',
+        touched: available.includes('smile') ? 'smile' : 'shy',
+        sweat: available.includes('worried') ? 'worried' : 'shy',
+        dry_smile: available.includes('smile') ? 'smile' : 'sad',
+        tired: available.includes('sweat') ? 'sweat' : 'sad',
+        bored: available.includes('bored') ? 'bored' : 'normal',
+        firm: 'normal',
+        pain: 'sad',
+        cry: 'sad',
+        laugh: 'smile',
+        smile: 'laugh',
+        soft_smile: available.includes('smile') ? 'smile' : 'normal',
+        aegyo: available.includes('laugh') ? 'laugh' : available.includes('smile') ? 'smile' : 'shy',
+        very_shy: 'shy',
+        shy2: 'shy',
+        active: 'normal',
+        flushed: 'shy',
+        climax: available.includes('flushed') ? 'flushed' : 'shy',
+        ahegao: available.includes('climax') ? 'climax' : available.includes('flushed') ? 'flushed' : 'shy',
+        exhausted: available.includes('tired') ? 'tired' : available.includes('sweat') ? 'sweat' : 'sad',
+        bikini: 'shy',
+        back: 'normal'
+    };
     const chosen = available.includes(expression) ? expression
         : available.includes(alternatives[expression]) ? alternatives[expression] : 'normal';
-    return `assets/images/characters/${outfit[1]}_${outfit[2]}_${chosen}.webp`;
+    return `assets/images/characters/${charId}_${outfitKey}_${chosen}.webp`;
 };
 const outfitLabels = {
     ko: { date: '데이트 복장', home: '사복' },
