@@ -1830,8 +1830,9 @@ def harmonic_inpaint_patch(sub_rgba, fill_mask, seed_mask, n_iter=550):
 
 def recover_enclosed_fabric_and_hair_holes(rgba, character_id=None):
     """
-    RGBA 배열에서 선화 폐곡선 내부에 잘못 파먹힌 소형 닫힌 홀(흰/회색 셔츠 칼라·어깨·소매 커프스 내부 홀 <= 1800px 및 손가락-어두운 모발 경계 미세 슬릿 <= 380px)을 탐지 ->
-    실제 목·손가락·팔-허리 개방 공간(살색 경계 비율 과다 또는 대형 홀)은 100% 보존하면서 침식 홀만 Neumann-Dirichlet 조화 보간으로 복원한 RGBA 배열 반환
+    RGBA 배열에서 선화 폐곡선 내부에 잘못 파먹힌 소형 닫힌 홀(흰/회색/크림 셔츠 칼라·어깨·소매 커프스 내부 홀 <= 1800px,
+    손가락 하이라이트 내부 미세 핀홀, 손가락-어두운 모발 경계 미세 슬릿 <= 380px)을 탐지 ->
+    실제 목·손가락 사이·팔-허리 개방 공간은 100% 보존하면서 침식 홀만 Neumann-Dirichlet 조화 보간으로 복원한 RGBA 배열 반환
     """
     out = rgba.copy()
     h, w = out.shape[:2]
@@ -1846,7 +1847,7 @@ def recover_enclosed_fabric_and_hair_holes(rgba, character_id=None):
     lum = 0.299 * r + 0.587 * g + 0.114 * b
     cmin = np.minimum(np.minimum(r, g), b)
     sat = np.maximum(np.maximum(r, g), b) - cmin
-    warm_skin = (a >= 180) & ((r - b) >= 20.0) & (r >= 150.0)
+    warm_skin = (a >= 180) & ((r - b) >= 11.0) & (r >= 155.0) & (lum >= 145.0)
 
     solid = a >= 235
     enclosed = ndimage.binary_fill_holes(solid) & (~solid)
@@ -1855,7 +1856,7 @@ def recover_enclosed_fabric_and_hair_holes(rgba, character_id=None):
 
     lbl, _ = ndimage.label(enclosed)
     max_fabric_hole = int(1800 * scale * scale)
-    max_hair_slit = int(380 * scale * scale)
+    max_hair_slit = int(420 * scale * scale)
     pad = max(8, int(round(10 * scale)))
 
     for idx, sl in enumerate(ndimage.find_objects(lbl), 1):
@@ -1865,7 +1866,7 @@ def recover_enclosed_fabric_and_hair_holes(rgba, character_id=None):
             continue
         comp = lbl[sl] == idx
         area = int(comp.sum())
-        if area < 2 or area > max_fabric_hole:
+        if area < 1 or area > max_fabric_hole:
             continue
         # 상단 얼굴·머리띠 구간(y < 0.24*h)은 sota_clean_one_shot의 전용 두부 홀 복원기가 처리하므로 중복 개입 방지
         if sl[0].stop < int(0.24 * h):
@@ -1892,32 +1893,62 @@ def recover_enclosed_fabric_and_hair_holes(rgba, character_id=None):
             continue
 
         skin_frac = float(sskin[ring].mean())
-        bright_fabric_seeds = ring & (slum >= 165.0) & (ssat <= 28.0) & ((sr - sb) <= 22.0)
-        dark_hair_seeds = ring & (slum >= 20.0) & (slum <= 88.0) & (~sskin)
+        fabric_core = ndimage.binary_erosion(
+            (sa >= 245.0) & (slum >= 135.0) & (ssat <= 34.0) & ((sr - sb) <= 26.0) & (~sskin),
+            iterations=max(1, int(round(2 * scale))),
+        )
+        bright_fabric_seeds = ring & ndimage.binary_dilation(fabric_core, iterations=max(1, int(round(2 * scale)))) & (slum >= 135.0) & (ssat <= 34.0) & (~sskin)
+        adj_ring = ndimage.binary_dilation(sub_hole, iterations=3) & (~sub_hole)
+        adj_fabric_core = adj_ring & fabric_core
+        navy_blazer_ring = ring & ((sb - sr) >= 10.0) & (slum <= 135.0)
+        navy_frac = float(navy_blazer_ring.sum()) / float(ring.sum())
+        dark_hair_seeds = ring & (slum >= 18.0) & (slum <= 90.0) & (~sskin)
         fabric_frac = float(bright_fabric_seeds.sum()) / float(ring.sum())
         dark_frac = float(dark_hair_seeds.sum()) / float(ring.sum())
         hole_w = sl[1].stop - sl[1].start
 
-        # Case 1: 흰/밝은 회색 셔츠 칼라·어깨·소매 커프스 내부 침식 홀 (살색 목·손가락 틈새 배제)
-        if fabric_frac >= 0.16 and skin_frac < 0.22 and int(bright_fabric_seeds.sum()) >= 10:
-            crisp_line = (sa >= 242.0) & (slum < 115.0)
+        # Case 1: 흰/쿨그레이/크림 셔츠 칼라·어깨·소매 커프스 내부 침식 홀 (1px AA 테두리가 아닌 두께 있는 실제 원단 코어와 맞닿은 홀만 복원하고 팔-허리 남색 재킷 틈새·목·손가락 배제)
+        if (
+            (fabric_frac >= 0.16 or (int(adj_fabric_core.sum()) >= 4 and area <= int(750 * scale * scale)))
+            and skin_frac < 0.24
+            and navy_frac < 0.45
+            and int(bright_fabric_seeds.sum()) >= 8
+        ):
+            crisp_line = (sa >= 242.0) & (slum < 108.0)
             eroded_fringe = (
                 ndimage.binary_dilation(sub_hole, iterations=2)
                 & (~crisp_line)
                 & (~sskin)
-                & ((sa < 252.0) | ((slum >= 115.0) & (slum < 168.0)))
+                & ((sa < 252.0) | ((slum >= 108.0) & (slum < 135.0)))
             )
             fill_m = sub_hole | eroded_fringe
-            seed_m = (~fill_m) & (sa >= 248.0) & (slum >= 170.0) & (ssat <= 28.0) & ((sr - sb) <= 22.0)
+            seed_m = (~fill_m) & ndimage.binary_dilation(fabric_core, iterations=max(1, int(round(2 * scale)))) & (sa >= 246.0) & (slum >= 135.0) & (ssat <= 34.0) & ((sr - sb) <= 26.0) & (~sskin)
             if int(seed_m.sum()) >= 8:
                 out[y0:y1, x0:x1] = harmonic_inpaint_patch(sub_rgba, fill_m, seed_m, n_iter=550)
-        # Case 2: 손가락 외곽 선화와 어두운 모발 사이에 갇힌 세로 미세 슬릿 홀 (flushed/02 등)
-        elif area <= max_hair_slit and hole_w <= int(round(14 * scale)) and dark_frac >= 0.55 and skin_frac <= 0.35 and sl[0].stop <= int(0.45 * h):
-            speckles = ndimage.binary_dilation(sub_hole, iterations=2) & (~sskin) & ((sa < 252.0) | ((slum >= 92.0) & ((sr - sb) < 18.0)))
+        # Case 2: 손가락 내부 밝은 살색 하이라이트에 뚫린 미세 세로 슬릿·핀홀 (어두운 모발 색으로 잘못 칠해지지 않도록 피부 시드로만 보간)
+        elif area <= max_hair_slit and hole_w <= int(round(10 * scale)) and skin_frac >= 0.30 and dark_frac < 0.28 and fabric_frac < 0.18:
+            skin_seed_m = (~sub_hole) & (sa >= 245.0) & sskin & (slum >= 190.0)
+            if int(skin_seed_m.sum()) >= 6:
+                out[y0:y1, x0:x1] = harmonic_inpaint_patch(sub_rgba, sub_hole, skin_seed_m, n_iter=350)
+        # Case 3: 손가락 외곽 선화와 어두운 모발 사이에 갇힌 세로 미세 슬릿 홀 (피부 쪽은 살색 시드, 모발 쪽은 모발 시드로 분리 복원)
+        elif area <= max_hair_slit and hole_w <= int(round(14 * scale)) and dark_frac >= 0.28 and skin_frac <= 0.68 and sl[0].stop <= int(0.48 * h):
+            speckles = ndimage.binary_dilation(sub_hole, iterations=2) & (~sskin) & ((sa < 252.0) | ((slum >= 225.0) & ((sr - sb) < 10.0)))
             fill_m = sub_hole | speckles
-            seed_m = (~fill_m) & (sa >= 250.0) & (slum >= 22.0) & (slum <= 86.0) & (~sskin)
-            if int(seed_m.sum()) >= 8:
-                out[y0:y1, x0:x1] = harmonic_inpaint_patch(sub_rgba, fill_m, seed_m, n_iter=400)
+            hair_seed_m = (~fill_m) & (sa >= 248.0) & (slum >= 20.0) & (slum <= 86.0) & (~sskin)
+            skin_seed_m = (~fill_m) & (sa >= 248.0) & sskin & (slum >= 195.0)
+            if skin_frac >= 0.12 and int(skin_seed_m.sum()) >= 8 and int(hair_seed_m.sum()) >= 8:
+                d_skin = ndimage.distance_transform_edt(~skin_seed_m)
+                d_hair = ndimage.distance_transform_edt(~hair_seed_m)
+                skin_part = fill_m & (d_skin + 1.0 < d_hair)
+                hair_part = fill_m & (~skin_part)
+                patched = sub_rgba
+                if np.any(skin_part):
+                    patched = harmonic_inpaint_patch(patched, skin_part, skin_seed_m, n_iter=350)
+                if np.any(hair_part):
+                    patched = harmonic_inpaint_patch(patched, hair_part, hair_seed_m, n_iter=400)
+                out[y0:y1, x0:x1] = patched
+            elif int(hair_seed_m.sum()) >= 8:
+                out[y0:y1, x0:x1] = harmonic_inpaint_patch(sub_rgba, fill_m, hair_seed_m, n_iter=400)
 
     return out
 
@@ -1925,8 +1956,8 @@ def recover_enclosed_fabric_and_hair_holes(rgba, character_id=None):
 def remove_trapped_white_notches_and_thigh_gaps(rgba, character_id=None):
     """
     전신 높이(0..h)에서 안티앨리어싱 전이층 너머 실제 불투명 벽면(wall) 색상을 검사하여:
-      1. 치마 밑 양 허벅지 사이에 갇힌 순백색/근백색 삼각형 배경 조각 제거,
-      2. 재킷-소매 V슬릿, 치마 주름 예각 노치, 허리 오목부, 머리카락 끝 틈새의 순백색 배경 쐐기(<= 650px) 제거 ->
+      1. 치마 밑 양 허벅지 사이 및 팔-허리(소매-몸통) 사이에 갇힌 순백색/근백색 배경 조각 제거,
+      2. 재킷-소매 V슬릿, 치마 주름 예각 노치, 허리 오목부, 머리카락 끝 틈새의 순백색 배경 쐐기(<= 850px) 제거 ->
     흰 셔츠·칼라·커프스·흰 가운·흰 머리띠·은발·얼굴 내부 하이라이트·손톱은 100% 보존한 RGBA 배열 반환
     """
     prof = get_character_profile(character_id)
@@ -1951,8 +1982,9 @@ def remove_trapped_white_notches_and_thigh_gaps(rgba, character_id=None):
     headband_guard = prof["protect_white_headband"] & (yy <= int(0.15 * h)) & (xx >= int(0.34 * w)) & (xx <= int(0.66 * w))
     silver_guard = (yy < int(0.42 * h)) if is_silver else np.zeros((h, w), dtype=bool)
     coat_guard = (yy >= int(0.28 * h)) if prof["protect_white_coat"] else np.zeros((h, w), dtype=bool)
+    dark_or_navy_px = (a >= 210.0) & ((lum <= 95.0) | (((b - r) >= 12.0) & (lum <= 135.0)))
 
-    broad_bright = (~deep_face) & (~headband_guard) & (~silver_guard) & (~coat_guard) & (a > 0) & (cmin >= 175.0) & (sat <= 22.0) & ((r - b) <= 16.0)
+    broad_bright = (~deep_face) & (~headband_guard) & (~silver_guard) & (~coat_guard) & (a > 0) & (cmin >= 175.0) & (sat <= 24.0) & ((r - b) <= 16.0)
     blbl, _ = ndimage.label(broad_bright, structure=np.ones((3, 3), dtype=bool))
     killed = np.zeros((h, w), dtype=bool)
 
@@ -1961,22 +1993,38 @@ def remove_trapped_white_notches_and_thigh_gaps(rgba, character_id=None):
             continue
         comp = blbl[sl] == idx
         area = int(comp.sum())
-        if area > int(650 * scale * scale):
+        if area > int(850 * scale * scale):
             continue
         sub_cmin = cmin[sl][comp]
         min_d = float(dist_ext[sl][comp].min())
         in_lower_thigh_zone = (sl[0].start >= int(0.75 * h)) and (sl[1].start >= int(0.38 * w)) and (sl[1].stop <= int(0.64 * w))
+        cx_mid = 0.5 * (sl[1].start + sl[1].stop)
+        cy_mid = 0.5 * (sl[0].start + sl[0].stop)
+        in_chest_shirt_zone = (0.41 * w <= cx_mid <= 0.60 * w) and (0.28 * h <= cy_mid <= 0.58 * h)
+        can_check_arm_waist = (sl[0].start >= int(0.30 * h)) and (not in_chest_shirt_zone) and (area >= max(8, int(10 * scale * scale)))
 
-        if min_d > 2.4 * scale and not in_lower_thigh_zone:
+        if min_d > 2.4 * scale and (not in_lower_thigh_zone) and (not can_check_arm_waist):
             continue
 
-        req_peak = 204.0 if (area <= int(35 * scale * scale) and min_d <= 2.0 * scale) else (225.0 if in_lower_thigh_zone else 236.0)
+        req_peak = 204.0 if (area <= int(35 * scale * scale) and min_d <= 2.0 * scale) else (225.0 if (in_lower_thigh_zone or can_check_arm_waist) else 236.0)
         if float(sub_cmin.max()) < req_peak:
             continue
 
-        ry0, ry1 = max(0, sl[0].start - 5), min(h, sl[0].stop + 5)
-        rx0, rx1 = max(0, sl[1].start - 5), min(w, sl[1].stop + 5)
+        ry0, ry1 = max(0, sl[0].start - 7), min(h, sl[0].stop + 7)
+        rx0, rx1 = max(0, sl[1].start - 7), min(w, sl[1].stop + 7)
         pad = blbl[ry0:ry1, rx0:rx1] == idx
+
+        # 팔-허리·소매-몸통 사이 내부 흰 틈새(min_d > 2.4): 3..6px 외벽의 78% 이상이 남색 재킷/검은 선화이고 흰 셔츠 성분이 없을 때만 정밀 제거
+        if min_d > 2.4 * scale and (not in_lower_thigh_zone):
+            ring6 = ndimage.binary_dilation(pad, iterations=max(4, int(round(6 * scale)))) & (~ndimage.binary_dilation(pad, iterations=max(1, int(round(2 * scale))))) & (a[ry0:ry1, rx0:rx1] >= 180.0)
+            if int(ring6.sum()) < 16:
+                continue
+            dn_ratio = float(dark_or_navy_px[ry0:ry1, rx0:rx1][ring6].mean())
+            wf_ratio = float(((lum[ry0:ry1, rx0:rx1][ring6] >= 158.0) & (sat[ry0:ry1, rx0:rx1][ring6] <= 26.0)).mean())
+            if dn_ratio >= 0.78 and wf_ratio < 0.08:
+                killed[sl] |= comp
+            continue
+
         wall = ndimage.binary_dilation(pad, iterations=3) & (~ndimage.binary_dilation(pad, iterations=1)) & (a[ry0:ry1, rx0:rx1] >= 160.0)
         if not wall.any():
             wall = ndimage.binary_dilation(pad, iterations=2) & (~pad) & (a[ry0:ry1, rx0:rx1] >= 140.0)
@@ -2002,7 +2050,26 @@ def remove_trapped_white_notches_and_thigh_gaps(rgba, character_id=None):
             killed[sl] |= comp
 
     if np.any(killed):
+        # 예각 끝단(lum >= 125, sat <= 32)에 남는 1~2px 회백색 꼭짓점까지 함께 전파 후 경계 선형 Color-to-Alpha 역산 수행
+        apex_ext = ndimage.binary_propagation(killed, mask=(a > 0) & (lum >= 125.0) & (sat <= 32.0) & (~deep_face) & (~headband_guard) & (~coat_guard))
+        killed = killed | apex_ext
         a[killed] = 0.0
+        rim_zone = ndimage.binary_dilation(killed, iterations=max(2, int(round(3 * scale)))) & (~killed) & (a > 0) & (~deep_face) & (~coat_guard)
+        deep_fg = (~(killed | rim_zone)) & (a >= 240.0) & (lum <= 115.0)
+        if np.any(rim_zone) and np.any(deep_fg):
+            _, (ny, nx) = ndimage.distance_transform_edt(~deep_fg, return_indices=True)
+            c_lum = lum[ny, nx]
+            unmix_m = rim_zone & (lum > c_lum + 6.0) & (sat <= 32.0)
+            if np.any(unmix_m):
+                a_new = np.clip((255.0 - lum[unmix_m]) / np.maximum(255.0 - c_lum[unmix_m], 1.0), 0.0, 1.0)
+                a_new[a_new < 0.06] = 0.0
+                r[unmix_m] = r[ny[unmix_m], nx[unmix_m]]
+                g[unmix_m] = g[ny[unmix_m], nx[unmix_m]]
+                b[unmix_m] = b[ny[unmix_m], nx[unmix_m]]
+                a[unmix_m] = np.minimum(a[unmix_m], a_new * 255.0)
+        out[:, :, 0] = np.clip(np.round(r), 0, 255).astype(np.uint8)
+        out[:, :, 1] = np.clip(np.round(g), 0, 255).astype(np.uint8)
+        out[:, :, 2] = np.clip(np.round(b), 0, 255).astype(np.uint8)
         out[:, :, 3] = np.clip(np.round(a), 0, 255).astype(np.uint8)
         out[out[:, :, 3] == 0, :3] = 0
     return out
