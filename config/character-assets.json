@@ -2369,8 +2369,8 @@
             "assets/images/characters/haeun_climax.png",
             "assets/characters/haeun/expressions/climax/01/sprite.png"
           ],
-          "sha256": "971909c90a17b5100d8d7bfba39cd798b1222aa4cc34a37ee116f2889560ef42",
-          "bytes": 1323444
+          "sha256": "7dbc020b9086a6175cb1c7dd8e6fe773180b837c1b6d664465d3ec65841802f4",
+          "bytes": 1294936
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/climax/01/sprite.webp",
@@ -2378,8 +2378,8 @@
             "assets/images/characters/haeun_climax.webp",
             "assets/characters/haeun/expressions/climax/01/sprite.webp"
           ],
-          "sha256": "dfb8c8dcf2ec53590ad531fbaf1e961cd41a9b760f23a90523bb8a03b5c5f893",
-          "bytes": 142465
+          "sha256": "ae63b65b15d9bef55adcbc4d5126d81cd5640c9c8163e95851c10146a6868a1f",
+          "bytes": 816001
         }
       }
     },
@@ -2396,8 +2396,8 @@
             "assets/images/characters/haeun_climax_02.png",
             "assets/characters/haeun/expressions/climax/02/sprite.png"
           ],
-          "bytes": 1079654,
-          "sha256": "95872236cf3e500dfebb746faca6604065d8e0107da0a6bc822fa46122035c19"
+          "bytes": 1102768,
+          "sha256": "f42d3eb520250fa04ca2736f0ac59b89e8f00665c834f0471e58a801a6dbdf01"
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/climax/02/sprite.webp",
@@ -2405,8 +2405,8 @@
             "assets/images/characters/haeun_climax_02.webp",
             "assets/characters/haeun/expressions/climax/02/sprite.webp"
           ],
-          "bytes": 123061,
-          "sha256": "0b1d3b6f20e8b8a3906bab52d8762aa8d39007585ffa6f65fd23483bcb8cb3c7"
+          "bytes": 728689,
+          "sha256": "1f58f51b785984c242b2d571dd7b2d635419025522f78675d3e311f5503d8964"
         }
       }
     },
@@ -2423,8 +2423,8 @@
             "assets/images/characters/haeun_climax_03.png",
             "assets/characters/haeun/expressions/climax/03/sprite.png"
           ],
-          "bytes": 1258280,
-          "sha256": "bb7fd7a7501081640d7972790fd0b937388dc8b053f3ddc4ce0d4e813811a18c"
+          "bytes": 1266496,
+          "sha256": "3f963e5bc337fd5a7503a70838e1390a50efb5a02977cf30ffdb3f4e656358d9"
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/climax/03/sprite.webp",
@@ -2432,8 +2432,8 @@
             "assets/images/characters/haeun_climax_03.webp",
             "assets/characters/haeun/expressions/climax/03/sprite.webp"
           ],
-          "bytes": 142977,
-          "sha256": "4ef19750b893810c1ef2454ca687bc60c1a4bbe18f37942b07c4efb984a6a86b"
+          "bytes": 811493,
+          "sha256": "53563d142ef620e72be5b40044726d0ee349846debea812a0d154dfda87da975"
         }
       }
     },
@@ -2450,8 +2450,8 @@
             "assets/images/characters/haeun_climax_04.png",
             "assets/characters/haeun/expressions/climax/04/sprite.png"
           ],
-          "bytes": 1375927,
-          "sha256": "aed370b0bb13f2fd067aea9a02ce97c39f37367eb0a19de4aef132f67424b643"
+          "bytes": 1068795,
+          "sha256": "6fe99d081a2ca58e6d0f417a57d1a24679c861114b85ac8ebcce145f1e41d021"
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/climax/04/sprite.webp",
@@ -2459,8 +2459,8 @@
             "assets/images/characters/haeun_climax_04.webp",
             "assets/characters/haeun/expressions/climax/04/sprite.webp"
           ],
-          "bytes": 148389,
-          "sha256": "86fc1a0c9eadecd03fa6bace8c55403cbf496de37a860e547f1b72fa1396251b"
+          "bytes": 660679,
+          "sha256": "171fffe5e0176badc0cc2ab08f91177798597c3bb3e0c34f0ae8f57f97abc1af"
         }
       }
     },
@@ -2477,8 +2477,8 @@
             "assets/images/characters/haeun_climax_05.png",
             "assets/characters/haeun/expressions/climax/05/sprite.png"
           ],
-          "bytes": 1281749,
-          "sha256": "caf0746435f688787ec15e47fc7c643daa49056a3be382c74370100a78c889f4"
+          "bytes": 1157844,
+          "sha256": "bf2904edafdb39af00a229a89d93a9ecbe29fab1657fb9ef81eb048d7b9bf590"
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/climax/05/sprite.webp",
@@ -2486,8 +2486,8 @@
             "assets/images/characters/haeun_climax_05.webp",
             "assets/characters/haeun/expressions/climax/05/sprite.webp"
           ],
-          "bytes": 147195,
-          "sha256": "9e5c3dc3b0ab08ec9f8c2813375f8ce0ada16b1d6b1e0334d41724b319212023"
+          "bytes": 733053,
+          "sha256": "466edd7d76f2dba26f620d12b8d51bfdabc21a99335ea9e3594c5d5f8961d6a0"
         }
       }
     },
@@ -2504,8 +2504,8 @@
             "assets/images/characters/haeun_climax_06.png",
             "assets/characters/haeun/expressions/climax/06/sprite.png"
           ],
-          "bytes": 1211051,
-          "sha256": "4954287ff251d1703f83734826505d52c8f335de18204338d022a4115a6d894b"
+          "bytes": 1012628,
+          "sha256": "6ec00f2c9e4cb7c78a3a06f7be8523a20e679708eb6cd2b78759cf94a01b8d0b"
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/climax/06/sprite.webp",
@@ -2513,8 +2513,8 @@
             "assets/images/characters/haeun_climax_06.webp",
             "assets/characters/haeun/expressions/climax/06/sprite.webp"
           ],
-          "bytes": 128315,
-          "sha256": "b4696d0cdb650118871c550a650b89aaf939b2cfedf42966cec3f654c601d637"
+          "bytes": 635121,
+          "sha256": "1a997983f56d351ade60f2a2828d169d68540aa5d2e1e1875b9e71c85881c77d"
         }
       }
     },
@@ -2531,8 +2531,8 @@
             "assets/images/characters/haeun_climax_07.png",
             "assets/characters/haeun/expressions/climax/07/sprite.png"
           ],
-          "bytes": 1281616,
-          "sha256": "ba274808deb9a397a749682dfab432e60d686e1927c4578fe0e718cca795dfff"
+          "bytes": 1288026,
+          "sha256": "13a8953416df12d9083d71cdf0921539c617af8437f7a88401fd32a3c4e4a18b"
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/climax/07/sprite.webp",
@@ -2540,8 +2540,8 @@
             "assets/images/characters/haeun_climax_07.webp",
             "assets/characters/haeun/expressions/climax/07/sprite.webp"
           ],
-          "bytes": 144969,
-          "sha256": "9241298906218eb4f884378103fd3b3e49110bccd4f70afe7396541aa2b57a03"
+          "bytes": 810453,
+          "sha256": "f97645bc1b347a0415493f9d9dbd06648ca9edabcd52e497016bc9575f33263e"
         }
       }
     },
@@ -2558,8 +2558,8 @@
             "assets/images/characters/haeun_climax_08.png",
             "assets/characters/haeun/expressions/climax/08/sprite.png"
           ],
-          "bytes": 1325252,
-          "sha256": "71cb1c5b8ec5104e213a509788873cd4c3cdb3d8c959b6191862ec4b16ca682c"
+          "bytes": 1299326,
+          "sha256": "d3be5855a43d5e0d07c6194654f041a4041de3c44885ad150bea95dd01867ee3"
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/climax/08/sprite.webp",
@@ -2567,8 +2567,8 @@
             "assets/images/characters/haeun_climax_08.webp",
             "assets/characters/haeun/expressions/climax/08/sprite.webp"
           ],
-          "bytes": 144761,
-          "sha256": "6c1812eb810c3b7ae9cc97bb6e080a11b90c0461550e80618e0d2f9a520b3955"
+          "bytes": 828213,
+          "sha256": "f0f69bfd51867317e00376a5ff9fbe07da8bc99ea30c73a3de75c929516bc000"
         }
       }
     },
@@ -3017,8 +3017,8 @@
             "assets/images/characters/haeun_flushed_02.png",
             "assets/characters/haeun/expressions/flushed/02/sprite.png"
           ],
-          "sha256": "7e6c6a327df10d6bbfe7e14c82230b2ecbce29fd292504780a900e9c9391ccd6",
-          "bytes": 1116757
+          "sha256": "d0061102e3c3e6df4f3cbfb3dafbf897d8e98aa84dd0cfbd0a14f89ab3e7bf0b",
+          "bytes": 1111831
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/flushed/02/sprite.webp",
@@ -3026,8 +3026,8 @@
             "assets/images/characters/haeun_flushed_02.webp",
             "assets/characters/haeun/expressions/flushed/02/sprite.webp"
           ],
-          "sha256": "15c661e156e3805cc12d7dff6f7762ad3de92ed77363defd9df60e56a81d6585",
-          "bytes": 117827
+          "sha256": "f9c786f16d19545990506d661ff8db7dd47cba3495883d748f458bf0e08770fa",
+          "bytes": 714037
         }
       }
     },
@@ -3314,8 +3314,8 @@
             "assets/images/characters/haeun_oral_service.png",
             "assets/characters/haeun/expressions/oral_service/01/sprite.png"
           ],
-          "sha256": "19ef85a47267b55481ad0814241c6d21d59630dfc12aae98cfc128a2b37181b0",
-          "bytes": 1463812
+          "sha256": "de0fb76070583bf6168e5c2d741bcf78b9c5f8fd391a3509251cee6705a394dd",
+          "bytes": 1182269
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/oral_service/01/sprite.webp",
@@ -3323,8 +3323,8 @@
             "assets/images/characters/haeun_oral_service.webp",
             "assets/characters/haeun/expressions/oral_service/01/sprite.webp"
           ],
-          "sha256": "48dca20155a11bef119e567094df57e46eb08efe907501ab6934c8eeef51abca",
-          "bytes": 883531
+          "sha256": "061168da8021b3aaada3d12b62d6145d0fb939b10e87c6c4bb70a8af5cb598eb",
+          "bytes": 786035
         }
       }
     },
@@ -3854,8 +3854,8 @@
             "assets/images/characters/haeun_undressed_shy.png",
             "assets/characters/haeun/expressions/undressed_shy/01/sprite.png"
           ],
-          "sha256": "d2ae61afbfa1b07571401b5f401ecc68b91f161e5f7e9a4324668c15e523c3de",
-          "bytes": 1015717
+          "sha256": "cf17b1067b62448ffa6543cb4b3c317e87b8f6b458dcd73074a288d6dadd4f23",
+          "bytes": 1286235
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/undressed_shy/01/sprite.webp",
@@ -3863,8 +3863,8 @@
             "assets/images/characters/haeun_undressed_shy.webp",
             "assets/characters/haeun/expressions/undressed_shy/01/sprite.webp"
           ],
-          "sha256": "6c7188b6685da64ea404bfe5eb0573039c0f2184206719c204ae49222da3f304",
-          "bytes": 573351
+          "sha256": "aae68672b716b996d25dde22d3a44e66c6033467ec6f1edee76a47ba220c1a96",
+          "bytes": 829917
         }
       }
     },
