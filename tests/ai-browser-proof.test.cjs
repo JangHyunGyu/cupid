@@ -180,3 +180,42 @@ test('300030 challenge failures retry with a visible widget and report stage and
   });
   assert.deepEqual(h.widgets.map(w => w.appearance), ['interaction-only', 'always']);
 });
+
+test('Turnstile 200100 shows a device-clock message instead of asking to verify again', async () => {
+  for (const [lang, clockPattern, retryPattern] of [
+    ['en', /device date and time/i, /Click "Verify again"/],
+    ['ko', /날짜와 시간/, /다시 인증 버튼을 눌러/],
+  ]) {
+    const h = harness();
+    h.document.documentElement.lang = lang;
+    h.window.turnstile.execute = id => queueMicrotask(() => h.widgets[id]['error-callback']('200100'));
+    await assert.rejects(h.window.fetch('/api/ai', { method: 'POST', body: '{}' }), error => {
+      assert.equal(error.turnstileErrorCode, '200100');
+      assert.deepEqual([...error.turnstileErrorCodes], ['200100']);
+      assert.equal(error.turnstileBotSuspected, false);
+      assert.match(error.message, clockPattern);
+      assert.doesNotMatch(error.message, retryPattern);
+      return true;
+    });
+    const banner = h.appended.find(node => node.className === 'ai-browser-verification-retry');
+    assert.ok(banner, 'retry banner should still be rendered for 200100');
+    assert.match(banner.children[0].textContent, clockPattern);
+    assert.doesNotMatch(banner.children[0].textContent, retryPattern);
+    assert.ok(banner.retryButton, 'retry button may stay, but the message must point to the device clock');
+    assert.equal(h.widgets.length, 1);
+    assert.equal(h.calls.length, 0);
+  }
+
+  const h = harness();
+  h.window.turnstile.execute = id => queueMicrotask(() => h.widgets[id]['error-callback']('110200'));
+  await assert.rejects(h.window.fetch('/api/ai', { method: 'POST', body: '{}' }), error => {
+    assert.equal(error.turnstileErrorCode, '110200');
+    assert.match(error.message, /Verify again/);
+    assert.doesNotMatch(error.message, /device date and time/i);
+    return true;
+  });
+  const banner = h.appended.find(node => node.className === 'ai-browser-verification-retry');
+  assert.ok(banner, 'retry banner should be rendered for other codes');
+  assert.match(banner.children[0].textContent, /Verify again/);
+  assert.doesNotMatch(banner.children[0].textContent, /device date and time/i);
+});

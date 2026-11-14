@@ -61,7 +61,17 @@
     const isBotCode = code => /^(300\d*|600\d*)$/.test(String(code || ''));
     const isRetryableCode = code => /^(110600|110620|200500|300\d*|600\d*)$/.test(String(code || ''));
     const lang = () => String(root.GAME_LANG || document.documentElement?.lang || 'en').toLowerCase().slice(0, 2);
-    const message = (botSuspected = false) => (botSuspected ? {
+    const isClockSkewCode = code => String(code || '') === '200100';
+    const message = (botSuspected = false, clockSkew = false) => (clockSkew ? {
+        ko: '기기의 날짜와 시간이 맞지 않아 인증할 수 없어요. 자동 시간 설정을 켠 뒤 다시 시도해 주세요.',
+        ja: '端末の日付と時刻がずれているため、認証できません。自動時刻設定をオンにしてから、もう一度お試しください。',
+        en: 'Browser verification failed because your device date and time are incorrect. Turn on automatic date and time, then try again.',
+        es: 'La verificación del navegador falló porque la fecha y la hora del dispositivo no son correctas. Activa el ajuste automático de fecha y hora y, después, vuelve a intentarlo.',
+        fr: 'La vérification du navigateur a échoué car la date et l\'heure de votre appareil sont incorrectes. Activez le réglage automatique de la date et de l\'heure, puis réessayez.',
+        de: 'Die Browserprüfung ist fehlgeschlagen, weil Datum und Uhrzeit deines Geräts nicht stimmen. Aktiviere die automatische Datums- und Uhrzeiteinstellung und versuche es danach noch einmal.',
+        pt: 'A verificação do navegador falhou porque a data e a hora do dispositivo estão incorretas. Ative o ajuste automático de data e hora e tente outra vez.',
+        zh: '设备的日期和时间不正确，无法完成验证。请开启自动设置日期和时间后再试。',
+    } : botSuspected ? {
         ko: '접속 확인에 실패했어요. 브라우저 확장 프로그램이나 VPN을 잠시 끄고 다시 인증해 주세요.',
         ja: '接続を確認できませんでした。ブラウザの拡張機能やVPNを一時的にオフにして、再認証してください。',
         en: 'Browser verification failed. Turn off browser extensions or VPN and verify again.',
@@ -79,7 +89,7 @@
         de: 'Die Browserprüfung ist fehlgeschlagen. Klicke auf „Erneut prüfen“ und versuche es noch einmal.',
         pt: 'A verificação do navegador falhou. Clique em “Verificar novamente” e tente outra vez.',
         zh: '浏览器验证失败。请点击“重新验证”后重试。',
-    })[lang()] || 'Browser verification failed.';
+    })[lang()] || (clockSkew ? 'Browser verification failed because your device date and time are incorrect. Turn on automatic date and time, then try again.' : 'Browser verification failed.');
     const retryLabel = () => ({
         ko: '다시 인증',
         ja: '再認証',
@@ -102,7 +112,8 @@
             turnstileAppearance: String(meta.appearance || ''),
         };
         try { root.__lastTurnstileFailure = Object.assign({ at: Date.now() }, info); } catch (_) {}
-        return Object.assign(new Error(message(botSuspected)), { verificationRetryable: retryable }, info);
+        const clockSkew = isClockSkewCode(code) || (codes.length > 0 && codes.every(isClockSkewCode));
+        return Object.assign(new Error(message(botSuspected, clockSkew)), { verificationRetryable: retryable }, info);
     }
     function clearRetryBanner() {
         if (!retryBanner) return;
