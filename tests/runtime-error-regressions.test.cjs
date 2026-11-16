@@ -361,3 +361,28 @@ test('gallery back button survives an opener that throws and falls back to the l
         assert.notEqual(handler({ opener: null }), false);
     }
 });
+
+test('mobile keyboard offset update survives a missing document.body (D1 6838)', () => {
+    const source = read('assets/js/modules/UIManager.js');
+    const start = source.indexOf('    _updateMobileKeyboardOffset() {');
+    assert.ok(start > 0, '_updateMobileKeyboardOffset exists');
+    const end = source.indexOf('\n    }\n', start) + 7;
+    const body = source.slice(start, end).replace(/^    _updateMobileKeyboardOffset\(\)/, 'function _updateMobileKeyboardOffset()');
+    const classes = new Set();
+    const style = { props: {}, setProperty(k, v) { this.props[k] = v; }, transform: 'x' };
+    const uiLayer = {
+        style,
+        contains: () => true,
+        classList: { toggle: (name, on) => (on ? classes.add(name) : classes.delete(name)) }
+    };
+    const context = vm.createContext({ document: { body: null, activeElement: {} }, window: { getCupidKeyboardOffset: () => 0 } });
+    vm.runInContext(`${body}; this.fn = _updateMobileKeyboardOffset;`, context);
+    assert.doesNotThrow(() => context.fn.call({ uiLayer }));
+    assert.equal(style.props['--keyboard-offset'], '0px');
+    assert.equal(style.transform, '');
+    context.document.body = { classList: { toggle: (name, on) => (on ? classes.add(name) : classes.delete(name)) } };
+    context.window.getCupidKeyboardOffset = () => 120;
+    context.fn.call({ uiLayer });
+    assert.ok(classes.has('cupid-keyboard-active'));
+    assert.ok(classes.has('keyboard-active'));
+});

@@ -309,7 +309,8 @@ class UIManager {
         this.uiLayer.style.transform = keyboardOffset > 0
             ? `translate3d(0, -${keyboardOffset}px, 0)`
             : '';
-        document.body.classList.toggle('cupid-keyboard-active', keyboardOffset > 0);
+        // 페이지가 내려가거나 문서가 교체되는 순간 body가 없을 수 있다.
+        document.body?.classList.toggle('cupid-keyboard-active', keyboardOffset > 0);
     }
 
     /**
