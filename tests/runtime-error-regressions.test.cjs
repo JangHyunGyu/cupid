@@ -363,7 +363,7 @@ test('gallery back button survives an opener that throws and falls back to the l
 });
 
 test('mobile keyboard offset update survives a missing document.body (D1 6838)', () => {
-    const source = read('assets/js/modules/UIManager.js');
+    const source = read('assets/js/modules/UIManager.js').replace(/\r\n/g, '\n');
     const start = source.indexOf('    _updateMobileKeyboardOffset() {');
     assert.ok(start > 0, '_updateMobileKeyboardOffset exists');
     const end = source.indexOf('\n    }\n', start) + 7;

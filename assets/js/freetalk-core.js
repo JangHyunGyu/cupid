@@ -372,9 +372,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
     function buildExpressionAffinityGuidance(lang = 'ko') {
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         if (isKo) {
-            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. expression은 이 요청에 적힌 그 화자의 이미지 코드만 고르고, 보이는 문장보다 먼저 적습니다. 성행위 중에는 flushed, climax, exhausted, shy, pain, cry 가운데 그 화자에게 있는 코드에서 장면에 더 맞는 쪽을 고릅니다. ' + buildExhaustionExpressionGuidance(lang);
+            return 'expression은 겉표정, affinity는 관계 변화. 기계적으로 같은 방향에 맞추지 마세요. 화자 코드만 먼저 적고, 성행위 중엔 flushed, climax, exhausted, shy, pain, cry 가운데 고르되 climax·ahegao는 실제 절정에만 씁니다(포옹·키스·옷 위 접촉은 flushed·shy). ' + buildExhaustionExpressionGuidance(lang);
         }
-        return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Choose expression only from that speaker\'s image codes in this request, and write it before visible text. During a sexual act, choose the better fit among "flushed", "climax", "exhausted", "shy", "pain", and "cry" from the codes that speaker has. ' + buildExhaustionExpressionGuidance(lang);
+        return 'expression=face; affinity=relationship. Do not mechanically force them in the same direction. Use speaker codes first. During sex, pick among "flushed", "climax", "exhausted", "shy", "pain", and "cry" ("climax"/"ahegao"=orgasm only, never hugs/kisses/clothed touch). ' + buildExhaustionExpressionGuidance(lang);
     }
 
     const NON_CUTOUT_GALLERY_ONLY_EXPRESSIONS = Object.freeze(['bikini']);

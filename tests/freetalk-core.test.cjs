@@ -642,9 +642,15 @@ test('outward expression remains independent from affinity direction', () => {
     assert.match(core.buildExpressionAffinityGuidance('ko'), /기계적으로 같은 방향에 맞추지 마세요/);
     assert.match(core.buildExpressionAffinityGuidance('ko'), /몹시 지치면 exhausted/);
     assert.match(core.buildExpressionAffinityGuidance('ko'), /flushed, climax, exhausted, shy, pain, cry 가운데/);
+    assert.match(core.buildExpressionAffinityGuidance('ko'), /climax·ahegao는 실제 절정에만 씁니다\(포옹·키스·옷 위 접촉은 flushed·shy\)/);
     assert.match(core.buildExpressionAffinityGuidance('en'), /among "flushed", "climax", "exhausted", "shy", "pain", and "cry"/);
+    assert.match(core.buildExpressionAffinityGuidance('en'), /\("climax"\/"ahegao"=orgasm only, never hugs\/kisses\/clothed touch\)/);
     assert.match(core.buildExpressionAffinityGuidance('en'), /Do not mechanically force them in the same direction/);
     assert.match(core.buildExpressionAffinityGuidance('en'), /exhausted=very tired/);
+    const projected = core.projectDecisionWriterMessages([
+        { role: 'system', content: `Head\n${core.buildExpressionAffinityGuidance('ko')}\n${core.buildExpressionAffinityGuidance('en')}` }
+    ]);
+    assert.doesNotMatch(projected[0].content, /climax|ahegao/);
 });
 
 test('game and gallery affinity paths share the core normalizer', () => {
