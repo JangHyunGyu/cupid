@@ -390,7 +390,7 @@ function getCupidSharedCastKnowledge(lang = 'ko', currentName = '', promptData =
         .filter(character => character.id.toLowerCase() !== currentId)
         .map(character => {
             const brief = CUPID_SHARED_CAST_BRIEFS[character.id];
-            const localized = String(brief?.[effectiveLang] || brief?.en || '').replace(/^[^—]+—/u, '');
+            const localized = String(((brief === null || brief === void 0 ? void 0 : brief[effectiveLang])) || ((brief === null || brief === void 0 ? void 0 : brief.en)) || '').replace(/^[^—]+—/u, '');
             const label = effectiveLang === 'ko' ? character.ko : (effectiveLang === 'zh' ? (character.zh || character.en) : character.en);
             return `- ${label}: ${localized}`;
         })
@@ -941,28 +941,28 @@ const _expressionVariantTurns = new Map();
 let _expressionVariantStorageLoaded = false;
 const _expressionVariantStorageKey = 'expression-variants:v1:cupid';
 
-function pickCharacterExpressionVariant(charKey, expression, fallbackPath = '', randomFn = Math.random, context = {}) {
+function pickCharacterExpressionVariant(charKey, expression, fallbackPath = '', randomFn = Math.random, context = {}) { var __oc0, __oc1, __oc2;
     const normalizedKey = normalizePromptCharacterKey(charKey) || String(charKey || '').trim();
-    const variantMap = window.CHARACTER_EXPRESSION_VARIANTS?.[normalizedKey]
-        || window.CHARACTER_EXPRESSION_VARIANTS?.[charKey] || null;
+    const variantMap = (((__oc0 = window.CHARACTER_EXPRESSION_VARIANTS) === null || __oc0 === void 0 ? void 0 : __oc0[normalizedKey]))
+        || (((__oc1 = window.CHARACTER_EXPRESSION_VARIANTS) === null || __oc1 === void 0 ? void 0 : __oc1[charKey])) || null;
     const exprKey = String(expression || '').trim().toLowerCase();
-    const variants = variantMap?.[exprKey];
-    if (!Array.isArray(variants) || variants.length <= 1) return fallbackPath || variants?.[0] || '';
+    const variants = ((variantMap === null || variantMap === void 0 ? void 0 : variantMap[exprKey]));
+    if (!Array.isArray(variants) || variants.length <= 1) return fallbackPath || ((variants === null || variants === void 0 ? void 0 : variants[0])) || '';
     let storage;
     try { storage = window.CupidStorage || window.localStorage; } catch (_) { /* Memory-only when storage is denied. */ }
     if (!_expressionVariantStorageLoaded) {
         _expressionVariantStorageLoaded = true;
         try {
-            const saved = JSON.parse(storage?.getItem(_expressionVariantStorageKey) || '{}');
+            const saved = JSON.parse(((storage === null || storage === void 0 ? void 0 : storage.getItem(_expressionVariantStorageKey))) || '{}');
             for (const [key, value] of Object.entries(saved || {}).slice(-512)) _expressionVariantSelections.set(key, value);
         } catch (_) { /* Ignore malformed state. */ }
     }
-    const owner = Object.entries(CHARACTER_EXPRESSION_VARIANT_PATHS).find(([, value]) => value === variantMap)?.[0] || normalizedKey;
+    const owner = (((__oc2 = Object.entries(CHARACTER_EXPRESSION_VARIANT_PATHS).find(([, value]) => value === variantMap)) === null || __oc2 === void 0 ? void 0 : __oc2[0])) || normalizedKey;
     const selectionId = JSON.stringify([context.scope || '', owner, exprKey]);
     const turn = String(context.turn || ''), turnKey = JSON.stringify([selectionId, turn]);
     const signature = JSON.stringify(variants);
     let state = _expressionVariantSelections.get(selectionId);
-    if (!state || state.signature !== signature) state = { signature, last: state?.last || '' };
+    if (!state || state.signature !== signature) state = { signature, last: ((state === null || state === void 0 ? void 0 : state.last)) || '' };
     let chosen = turn ? (_expressionVariantTurns.get(turnKey) || (state.turn === turn ? state.choice : ''))
         : context.reuse ? state.last : '';
     if (!variants.includes(chosen)) {
@@ -971,7 +971,7 @@ function pickCharacterExpressionVariant(charKey, expression, fallbackPath = '', 
         chosen = variants[index];
         _expressionVariantSelections.set(selectionId, { signature, last: chosen, turn, choice: chosen });
         if (_expressionVariantSelections.size > 512) _expressionVariantSelections.delete(_expressionVariantSelections.keys().next().value);
-        try { storage?.setItem(_expressionVariantStorageKey, JSON.stringify(Object.fromEntries(_expressionVariantSelections))); } catch (_) { /* Keep the in-memory choice. */ }
+        try { ((storage === null || storage === void 0 ? void 0 : storage.setItem(_expressionVariantStorageKey, JSON.stringify(Object.fromEntries(_expressionVariantSelections))))); } catch (_) { /* Keep the in-memory choice. */ }
     }
     if (turn) {
         _expressionVariantTurns.set(turnKey, chosen);
@@ -1128,7 +1128,7 @@ function getCharacterExpressionSet(sceneName, displayName) {
     return key ? expressionMap[key] : null;
 }
 
-function getFreeTalkVoiceExampleList(lang, sceneName, displayName) {
+function getFreeTalkVoiceExampleList(lang, sceneName, displayName) { var __oc3;
     const key = normalizePromptCharacterKey(sceneName) || normalizePromptCharacterKey(displayName);
     const useKo = lang === 'ko';
     const generatedKoExamples = (typeof EXAMPLE_DIALOGUES_KO !== 'undefined' && EXAMPLE_DIALOGUES_KO) || {};
@@ -1224,7 +1224,7 @@ function getFreeTalkVoiceExampleList(lang, sceneName, displayName) {
             ]
         }
     };
-    const localized = LOCALIZED_FREE_TALK_VOICE_EXAMPLES[key]?.[lang];
+    const localized = (((__oc3 = LOCALIZED_FREE_TALK_VOICE_EXAMPLES[key]) === null || __oc3 === void 0 ? void 0 : __oc3[lang]));
     if (Array.isArray(localized) && localized.length) return localized;
     const entry = examples[key];
     if (!entry) return [];
@@ -1232,7 +1232,7 @@ function getFreeTalkVoiceExampleList(lang, sceneName, displayName) {
 }
 
 function isSexualVoiceExample(example) {
-    return /친밀|성적|intimat|sexual/i.test(String(example?.situation || '')) || example?.sexual === true;
+    return /친밀|성적|intimat|sexual/i.test(String(((example === null || example === void 0 ? void 0 : example.situation)) || '')) || ((example === null || example === void 0 ? void 0 : example.sexual)) === true;
 }
 
 function pickVoiceExamplesForPrompt(list, maxExamples = 4, includeSexual = false) {
@@ -1264,7 +1264,7 @@ function getFreeTalkVoiceExamples(lang, sceneName, displayName, maxExamples = 4,
 
 window.getFreeTalkVoiceExamples = getFreeTalkVoiceExamples;
 
-function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
+function getLocalizedAddressingGuideline(lang, sceneName, fallback) { var __oc4;
     if (lang === 'ko' || lang === 'en') return fallback;
 
     const key = normalizePromptCharacterKey(sceneName);
@@ -1467,7 +1467,7 @@ function getLocalizedAddressingGuideline(lang, sceneName, fallback) {
         }
     };
 
-    return localized[lang]?.[key] || fallback;
+    return (((__oc4 = localized[lang]) === null || __oc4 === void 0 ? void 0 : __oc4[key])) || fallback;
 }
 
 function getCharacterOutfitGuard(lang, sceneName, displayName) {
@@ -1680,10 +1680,10 @@ function formatRoleplayExampleBlock(examples, charName, lang = 'ko', maxExamples
     if (!Array.isArray(examples) || !examples.length) return '';
     const label = lang === 'ko' ? '[대화 예시]' : '[Example Dialogue]';
     const lines = examples.slice(0, maxExamples).map((example, index) => {
-        const user = String(example?.user || '').trim();
-        const charLine = String(example?.char || example?.reply || '').trim();
+        const user = String(((example === null || example === void 0 ? void 0 : example.user)) || '').trim();
+        const charLine = String(((example === null || example === void 0 ? void 0 : example.char)) || ((example === null || example === void 0 ? void 0 : example.reply)) || '').trim();
         if (!user || !charLine) return '';
-        const isSexual = example?.sexual === true || /친밀|성적|intimat|sexual/i.test(String(example?.situation || ''));
+        const isSexual = ((example === null || example === void 0 ? void 0 : example.sexual)) === true || /친밀|성적|intimat|sexual/i.test(String(((example === null || example === void 0 ? void 0 : example.situation)) || ''));
         const tag = isSexual
             ? (lang === 'ko' ? '[성적]' : '[sexual]')
             : (lang === 'ko' ? '[일반]' : '[general]');
@@ -2320,30 +2320,32 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     incidentState = null,
     incidentPlan = null,
     requireForcedSexualViolation = false
-} = {}) {
-    const text = String(parsed?.text || '');
-    const segments = Array.isArray(parsed?.segments) ? parsed.segments : [];
+} = {}) { var __oc5, __oc6, __oc7, __oc8, __oc9, __oc10, __oc11, __oc12;
+    const text = String(((parsed === null || parsed === void 0 ? void 0 : parsed.text)) || '');
+    const segments = Array.isArray(((parsed === null || parsed === void 0 ? void 0 : parsed.segments))) ? parsed.segments : [];
     const visibleTexts = segments.length > 0
-        ? segments.map(segment => String(segment?.text || '')).filter(Boolean)
+        ? segments.map(segment => { return (
+String(((segment === null || segment === void 0 ? void 0 : segment.text)) || '')
+); }).filter(Boolean)
         : [text].filter(Boolean);
     const combinedText = visibleTexts.join('\n');
     const issues = [];
 
-    if (window.CupidFreeTalkCore?.getVisibleProtocolIssue?.(parsed)) {
+    if ((((__oc6 = (__oc5 = window.CupidFreeTalkCore) === null || __oc5 === void 0 ? void 0 : __oc5.getVisibleProtocolIssue) === null || __oc6 === void 0 ? void 0 : __oc6.call(__oc5, parsed)))) {
         issues.push('visible_json_protocol_artifact');
     }
 
-    const incidentContractIssue = window.CupidFreeTalkCore?.getGalleryIncidentContractIssue?.({
+    const incidentContractIssue = (((__oc8 = (__oc7 = window.CupidFreeTalkCore) === null || __oc7 === void 0 ? void 0 : __oc7.getGalleryIncidentContractIssue) === null || __oc8 === void 0 ? void 0 : __oc8.call(__oc7, {
         state: incidentState || {},
         plan: incidentPlan,
-        payload: parsed?.incident
-    });
-    if (incidentContractIssue?.shouldRetry) {
+        payload: parsed === null || parsed === void 0 ? void 0 : parsed.incident
+    })));
+    if (((incidentContractIssue === null || incidentContractIssue === void 0 ? void 0 : incidentContractIssue.shouldRetry))) {
         issues.push(...incidentContractIssue.issues);
     }
 
     if (requireForcedSexualViolation
-        && !window.CupidFreeTalkCore?.normalizeForcedSexualViolation?.(parsed?.forcedSexualViolation)) {
+        && !(((__oc10 = (__oc9 = window.CupidFreeTalkCore) === null || __oc9 === void 0 ? void 0 : __oc9.normalizeForcedSexualViolation) === null || __oc10 === void 0 ? void 0 : __oc10.call(__oc9, parsed === null || parsed === void 0 ? void 0 : parsed.forcedSexualViolation)))) {
         issues.push('forced_sexual_violation_classification_missing');
     }
 
@@ -2352,7 +2354,7 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     }
 
     if (!didCupidUserRequestRepetition(latestUserText)
-        && window.CupidFreeTalkCore?.isNearDuplicateReply?.(combinedText, recentMessages, 0.72)) {
+        && (((__oc12 = (__oc11 = window.CupidFreeTalkCore) === null || __oc11 === void 0 ? void 0 : __oc11.isNearDuplicateReply) === null || __oc12 === void 0 ? void 0 : __oc12.call(__oc11, combinedText, recentMessages, 0.72)))) {
         issues.push('recent_response_near_duplicate');
     }
 
@@ -2363,8 +2365,12 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
 
     const narrationTexts = segments.length > 0
         ? segments
-            .filter(segment => String(segment?.type || '').toLowerCase() !== 'dialogue')
-            .map(segment => String(segment?.text || '').trim())
+            .filter(segment => { return (
+String(((segment === null || segment === void 0 ? void 0 : segment.type)) || '').toLowerCase() !== 'dialogue'
+); })
+            .map(segment => { return (
+String(((segment === null || segment === void 0 ? void 0 : segment.text)) || '').trim()
+); })
             .filter(Boolean)
         : Array.from(text.matchAll(/\*([^*]+)\*/gu), match => String(match[1] || '').trim()).filter(Boolean);
     const pointOfViewPattern = getCupidNarrationPointOfViewPattern(lang);
@@ -2414,16 +2420,16 @@ function getCupidRoleplayQualityIssue(parsed = {}, {
     };
 }
 
-function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
+function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) { var __oc13, __oc14, __oc15, __oc16, __oc17, __oc18, __oc19;
     const { lang = 'ko', charKey = '' } = options;
     let working = parsed;
-    const implicitIncident = window.CupidFreeTalkCore?.buildImplicitActiveGalleryIncidentPayload?.(options.incidentState);
-    const incidentIssue = window.CupidFreeTalkCore?.getGalleryIncidentContractIssue?.({
+    const implicitIncident = (((__oc14 = (__oc13 = window.CupidFreeTalkCore) === null || __oc13 === void 0 ? void 0 : __oc13.buildImplicitActiveGalleryIncidentPayload) === null || __oc14 === void 0 ? void 0 : __oc14.call(__oc13, options.incidentState)));
+    const incidentIssue = (((__oc16 = (__oc15 = window.CupidFreeTalkCore) === null || __oc15 === void 0 ? void 0 : __oc15.getGalleryIncidentContractIssue) === null || __oc16 === void 0 ? void 0 : __oc16.call(__oc15, {
         state: options.incidentState || {},
         plan: options.incidentPlan,
-        payload: parsed?.incident
-    });
-    if (implicitIncident && incidentIssue?.issues?.includes('active_gallery_incident_payload_missing')) {
+        payload: parsed === null || parsed === void 0 ? void 0 : parsed.incident
+    })));
+    if (implicitIncident && (((__oc17 = incidentIssue === null || incidentIssue === void 0 ? void 0 : incidentIssue.issues) === null || __oc17 === void 0 ? void 0 : __oc17.includes('active_gallery_incident_payload_missing')))) {
         working = {
             ...parsed,
             incident: implicitIncident,
@@ -2437,9 +2443,11 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
     if (!initialIssue.shouldRetry) {
         return working === parsed ? null : working;
     }
-    const hasVisibleRoleplay = String(working?.text || '').trim()
-        || (Array.isArray(working?.segments)
-            && working.segments.some(segment => String(segment?.text || '').trim()));
+    const hasVisibleRoleplay = String(((working === null || working === void 0 ? void 0 : working.text)) || '').trim()
+        || (Array.isArray(((working === null || working === void 0 ? void 0 : working.segments)))
+            && working.segments.some(segment => { return (
+String(((segment === null || segment === void 0 ? void 0 : segment.text)) || '').trim()
+); }));
     if (initialIssue.issues.length > 0
         && initialIssue.issues.every(issue => issue === 'scheduled_gallery_incident_payload_missing')
         && hasVisibleRoleplay) {
@@ -2477,10 +2485,10 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
     const retainValidNarration = value => (String(value || '').match(/[^.!?。！？\n]+[.!?。！？]*|\n+/gu) || [])
         .filter(sentence => !sentence.includes('\uFFFD') && !pointOfViewPattern.test(sentence))
         .join('').trim();
-    if (!Array.isArray(working?.segments) || working.segments.length === 0) {
+    if (!Array.isArray(((working === null || working === void 0 ? void 0 : working.segments))) || working.segments.length === 0) {
         let droppedSegments = 0;
         let repairedSegments = 0;
-        const text = String(working?.text || '')
+        const text = String(((working === null || working === void 0 ? void 0 : working.text)) || '')
             .replace(/\*([^*]+)\*/gu, (match, narration) => {
                 const value = String(narration || '').trim();
                 if (value.includes('\uFFFD') || pointOfViewPattern.test(value)) {
@@ -2506,7 +2514,7 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
                 droppedSegments,
                 repairedSegments,
                 legacyText: true,
-                implicitIncident: working?.qualityRecovery?.implicitIncident || undefined
+                implicitIncident: (((__oc18 = working === null || working === void 0 ? void 0 : working.qualityRecovery) === null || __oc18 === void 0 ? void 0 : __oc18.implicitIncident)) || undefined
             }
         };
         return getCupidRoleplayQualityIssue(recovered, options).shouldRetry ? null : recovered;
@@ -2547,7 +2555,7 @@ function recoverCupidRoleplayQualityFallback(parsed = {}, options = {}) {
             reason: initialIssue.reason,
             droppedSegments,
             repairedSegments,
-            implicitIncident: working?.qualityRecovery?.implicitIncident || undefined
+            implicitIncident: (((__oc19 = working === null || working === void 0 ? void 0 : working.qualityRecovery) === null || __oc19 === void 0 ? void 0 : __oc19.implicitIncident)) || undefined
         }
     };
     if (!recovered.text
@@ -2569,7 +2577,7 @@ function buildCupidRoleplayQualityRepairBlock(issue = {}, lang = 'ko', charKey =
         zh: 'Simplified Chinese'
     };
     const characterCanon = getCupidCharacterCanonGuard(lang, charKey, charKey).trim();
-    const issueSet = new Set(Array.isArray(issue?.issues) ? issue.issues : []);
+    const issueSet = new Set(Array.isArray(((issue === null || issue === void 0 ? void 0 : issue.issues))) ? issue.issues : []);
     return [
         '[System Notice: rejected roleplay draft]',
         `Rejected reasons: ${issue.reason || 'invalid output'}.`,
@@ -2886,10 +2894,14 @@ function buildCupidGroupSystemPrompt(params = {}) {
     } = params;
     const effectiveLang = String(lang || 'ko').toLowerCase().split('-')[0];
     const useKo = effectiveLang === 'ko';
-    const hasSchoolStaff = participants.some(participant => ['Teacher', 'Nurse'].includes(
-        normalizePromptCharacterKey(participant?.id || participant?.key || participant?.name)
-    ));
-    const hasHaeun = participants.some(participant => normalizePromptCharacterKey(participant?.id || participant?.name) === 'Haeun');
+    const hasSchoolStaff = participants.some(participant => { return (
+['Teacher', 'Nurse'].includes(
+        normalizePromptCharacterKey(((participant === null || participant === void 0 ? void 0 : participant.id)) || ((participant === null || participant === void 0 ? void 0 : participant.key)) || ((participant === null || participant === void 0 ? void 0 : participant.name)))
+    )
+); });
+    const hasHaeun = participants.some(participant => { return (
+normalizePromptCharacterKey(((participant === null || participant === void 0 ? void 0 : participant.id)) || ((participant === null || participant === void 0 ? void 0 : participant.name))) === 'Haeun'
+); });
     const koreanBanmalRule = useKo && hasHaeun
         ? '[호칭과 말투] 하은은 주인공과 선배, 교직원에게 존댓말을 유지합니다. 다른 인물은 각자의 평소 말투를 유지하고 하은의 말투를 따라 바꾸지 않습니다.'
         : useKo && hasSchoolStaff
@@ -2899,13 +2911,15 @@ function buildCupidGroupSystemPrompt(params = {}) {
     const isRivalry = groupMode === 'route_rivalry';
     const data = params.promptData || {};
     const normalizedParticipants = participants
-        .map((participant, index) => ({
-            id: normalizePromptCharacterKey(participant?.id || participant?.key || participant?.name) || String(participant?.id || ''),
-            name: String(participant?.name || participant?.displayName || participant?.id || '').trim(),
+        .map((participant, index) => { return (
+({
+            id: normalizePromptCharacterKey(((participant === null || participant === void 0 ? void 0 : participant.id)) || ((participant === null || participant === void 0 ? void 0 : participant.key)) || ((participant === null || participant === void 0 ? void 0 : participant.name))) || String(((participant === null || participant === void 0 ? void 0 : participant.id)) || ''),
+            name: String(((participant === null || participant === void 0 ? void 0 : participant.name)) || ((participant === null || participant === void 0 ? void 0 : participant.displayName)) || ((participant === null || participant === void 0 ? void 0 : participant.id)) || '').trim(),
             role: isConfrontation
-                ? (participant?.role === 'tempter' ? 'tempter' : (index === 0 ? 'lead' : 'tempter'))
-                : (participant?.role === 'companion' ? 'companion' : (index === 0 ? 'focus' : 'companion'))
-        }))
+                ? (((participant === null || participant === void 0 ? void 0 : participant.role)) === 'tempter' ? 'tempter' : (index === 0 ? 'lead' : 'tempter'))
+                : (((participant === null || participant === void 0 ? void 0 : participant.role)) === 'companion' ? 'companion' : (index === 0 ? 'focus' : 'companion'))
+        })
+); })
         .filter(participant => participant.id && participant.name)
         .slice(0, 2);
 
@@ -3105,8 +3119,8 @@ Include both characters exactly once in focus-character then companion order. na
 
     const dynamicLabelKo = isConfrontation ? '현재 대면 상태' : (isRivalry ? '현재 선택 경쟁' : '현재 그룹 대화');
     const dynamicLabelEn = isConfrontation ? 'Current confrontation state' : (isRivalry ? 'Current choice rivalry' : 'Current group conversation');
-    const participantStates = normalizedParticipants.map((participant) => {
-        const currentAffinity = Number(affinities[participant.id] ?? 0);
+    const participantStates = normalizedParticipants.map((participant) => { var __oc20;
+        const currentAffinity = Number((((__oc20 = affinities[participant.id]) !== null && __oc20 !== void 0 ? __oc20 : 0)));
         const intimacyGuidance = buildCupidAffinityIntimacyGuidance(effectiveLang, currentAffinity, {
             characterName: participant.name,
             nonRomance: participant.id === 'Haeun' && groupMode !== 'haeun_switch'

@@ -41,9 +41,12 @@ function runOpeningStatement(box, marker, scope) {
     const src = read('assets/js/modules/FreeTalkSystem.js');
     const at = src.indexOf(marker);
     assert.ok(at >= 0, marker);
-    const start = src.indexOf('window.recordCupidVisibleChat?.(', at);
-    const end = src.indexOf('});', start) + 3;
-    const fn = vm.runInContext(`(function (${Object.keys(scope).join(',')}) { ${src.slice(start, end)} })`, box);
+    const callAt = src.indexOf('window.recordCupidVisibleChat', at);
+    const start = src.lastIndexOf('(((__oc', callAt);
+    const end = src.indexOf('})));', start) + 5;
+    const ocNames = [...new Set(src.slice(start, end).match(/\b__oc\d+\b/g) || [])];
+    const decl = ocNames.length ? `var ${ocNames.join(',')}; ` : '';
+    const fn = vm.runInContext(`(function (${Object.keys(scope).join(',')}) { ${decl}${src.slice(start, end)} })`, box);
     fn.call(scope.self, ...Object.values(scope));
 }
 
@@ -70,9 +73,9 @@ test('speaker ownership: another character portrait is never accepted', () => {
 
 test('realtime 1:1 and group paths choose the speaker portrait over a stale slot', () => {
     const src = read('assets/js/modules/FreeTalkSystem.js');
-    assert.match(src, /pickCupidSpeakerAvatarAsset\?\.\(charKey,/);
-    assert.match(src, /pickCupidSpeakerAvatarAsset\?\.\(conversation\.speakerId,/);
-    assert.match(read('assets/js/gallery-freetalk.js'), /pickCupidSpeakerAvatarAsset\?\.\(requestCharId,/);
+    assert.match(src, /window\.pickCupidSpeakerAvatarAsset[\s\S]{0,60}call\(window,\s*charKey,/);
+    assert.match(src, /window\.pickCupidSpeakerAvatarAsset[\s\S]{0,60}call\(window,\s*conversation\.speakerId,/);
+    assert.match(read('assets/js/gallery-freetalk.js'), /window\.pickCupidSpeakerAvatarAsset[\s\S]{0,60}call\(window,\s*requestCharId,/);
     const { box } = loadRuntime();
     // The center slot still shows the nurse while Dain answers: the nurse file must not be logged.
     const slot = img('assets/images/characters/nurse_smile.png');
@@ -83,7 +86,7 @@ test('realtime 1:1 and group paths choose the speaker portrait over a stale slot
 test('1:1 opening record includes the shown expression and portrait', () => {
     const { box, saved } = loadRuntime();
     const self = { stateManager: { currentDay: 3 }, uiManager: { charSlots: { center: { querySelector: () => img('assets/images/characters/dain_shy_02.png') } } } };
-    runOpeningStatement(box, "const displayReply = checkpoint?.lastReply;", {
+    runOpeningStatement(box, "const displayReply =", {
         self, displayReply: null, charKey: 'Dain', scene: { text: '안녕, 왔구나.' }, sceneId: 'scene-1'
     });
     assert.equal(saved.length, 1);
@@ -96,7 +99,7 @@ test('1:1 opening record includes the shown expression and portrait', () => {
 test('1:1 opening never logs another character shown in the center slot', () => {
     const { box, saved } = loadRuntime();
     const self = { stateManager: { currentDay: 3 }, uiManager: { charSlots: { center: { querySelector: () => img('assets/images/characters/nurse_smile.png') } } } };
-    runOpeningStatement(box, "const displayReply = checkpoint?.lastReply;", {
+    runOpeningStatement(box, "const displayReply =", {
         self, displayReply: null, charKey: 'Dain', scene: { text: '안녕.' }, sceneId: 'scene-1'
     });
     assert.equal(saved[0].avatarAsset, undefined);
@@ -162,7 +165,7 @@ test('rewritten dist CHARACTER_EXPRESSIONS paths still enforce speaker ownership
         stateManager: { currentDay: 2 },
         uiManager: { charSlots: { center: { querySelector: () => img('assets/images/characters/yuna_normal.webp') } } }
     };
-    runOpeningStatement(box, "const displayReply = checkpoint?.lastReply;", {
+    runOpeningStatement(box, "const displayReply =", {
         self: selfTeacher,
         displayReply: null,
         charKey: 'Teacher',
@@ -180,7 +183,7 @@ test('rewritten dist CHARACTER_EXPRESSIONS paths still enforce speaker ownership
         stateManager: { currentDay: 4 },
         uiManager: { charSlots: { center: { querySelector: () => img('assets/images/characters/seyoun_pout.webp') } } }
     };
-    runOpeningStatement(box, "const displayReply = checkpoint?.lastReply;", {
+    runOpeningStatement(box, "const displayReply =", {
         self: selfDain,
         displayReply: null,
         charKey: 'Dain',

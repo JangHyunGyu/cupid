@@ -10,7 +10,7 @@
             this.active = null;
         }
 
-        _snapshotProperties() {
+        _snapshotProperties() { var __oc0;
             const properties = new Set(['opacity', 'transform', 'filter', 'display', 'visibility', 'background-image', 'app-region']);
             const visit = rules => {
                 for (const rule of rules) {
@@ -24,7 +24,7 @@
                 }
             };
             try {
-                if (!document.styleSheets?.length) return null;
+                if (!(((__oc0 = document.styleSheets) === null || __oc0 === void 0 ? void 0 : __oc0.length))) return null;
                 for (const sheet of document.styleSheets) visit(sheet.cssRules);
                 return properties;
             } catch (_) {
@@ -36,14 +36,14 @@
             const clone = source.cloneNode(true);
             const originals = [source, ...source.querySelectorAll('*')];
             const copies = [clone, ...clone.querySelectorAll('*')];
-            originals.forEach((element, index) => {
+            originals.forEach((element, index) => { var __oc1, __oc2, __oc3;
                 const copy = copies[index];
                 const computed = getComputedStyle(element);
                 copy.removeAttribute('id');
                 if (properties) {
                     const selected = new Set([...properties, ...element.style]);
-                    for (const animation of element.getAnimations?.() || []) {
-                        for (const frame of animation.effect?.getKeyframes?.() || []) {
+                    for (const animation of (((__oc1 = element.getAnimations) === null || __oc1 === void 0 ? void 0 : __oc1.call(element))) || []) {
+                        for (const frame of (((__oc3 = (__oc2 = animation.effect) === null || __oc2 === void 0 ? void 0 : __oc2.getKeyframes) === null || __oc3 === void 0 ? void 0 : __oc3.call(__oc2))) || []) {
                             for (const property of Object.keys(frame)) {
                                 if (!['offset', 'computedOffset', 'easing', 'composite'].includes(property)) {
                                     selected.add(property.replace(/[A-Z]/g, value => '-' + value.toLowerCase()));
@@ -67,7 +67,7 @@
             return clone;
         }
 
-        prepare(key, isCG, instant = false) {
+        prepare(key, isCG, instant = false) { var __oc4, __oc5;
             this.cancel();
             if (key === this.key || instant || (!isCG && !this.isCG)) return null;
             const overlay = document.createElement('div');
@@ -85,7 +85,7 @@
             this.layers[0].parentNode.appendChild(overlay);
             const state = {
                 overlay, picture, incoming: isCG, outgoing: this.isCG, animations: [], timers: [],
-                visibility: this.dialogue?.style.visibility ?? ''
+                visibility: (((__oc5 = (__oc4 = this.dialogue) === null || __oc4 === void 0 ? void 0 : __oc4.style.visibility) !== null && __oc5 !== void 0 ? __oc5 : ''))
             };
             state.cancelled = new Promise(resolve => { state.resolveCancel = resolve; });
             this.active = state;

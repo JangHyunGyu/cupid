@@ -9,7 +9,7 @@
 
 const LoaderConfig = {
     // 버전 (캐시 버스팅용)
-    VERSION: '2.9.382',
+    VERSION: '2.9.383',
 
     // 기본 경로
     BASE_PATH: 'assets/js/',

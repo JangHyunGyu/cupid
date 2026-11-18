@@ -33,7 +33,9 @@ class TipsRenderer {
 
     _tips() {
         return GalleryTipsData.getTips(this.lang, {
-            getName: (charId) => GalleryData.getCharacter(this.lang, charId)?.name || charId,
+            getName: (charId) => { var __oc0; return (
+(((__oc0 = GalleryData.getCharacter(this.lang, charId)) === null || __oc0 === void 0 ? void 0 : __oc0.name)) || charId
+); },
             isMet: (charId) => this.ui.progress.isMet(charId)
         });
     }

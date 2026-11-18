@@ -50,10 +50,10 @@ window.CupidAffinityGate = Object.freeze({
 });
 
 class StateManager {
-    static AFFINITY_REBALANCE_VERSION = 1;
-    static ROMANCE_CHARACTER_KEYS = Object.freeze(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']);
+    
+    
 
-    constructor() {
+    constructor() { var __oc0;
         /**
          * 플레이어 이름
          * - 게임 시작 시 이름 입력 씬에서 설정됨
@@ -120,7 +120,7 @@ class StateManager {
         this.telemetryRunId = '';
         this.progressionRunId = '';
         this.progressionRevision = 0;
-        this.appliedAffinityCorrections = window.CupidAffinityCorrections?.ids() || [];
+        this.appliedAffinityCorrections = (((__oc0 = window.CupidAffinityCorrections) === null || __oc0 === void 0 ? void 0 : __oc0.ids())) || [];
         this._installAffinityGuards();
     }
 
@@ -130,7 +130,7 @@ class StateManager {
      *   이름, 날짜, 호감도, 플래그, 본편 AI 대화 문맥만 초기화합니다.
      * - 갤러리 localStorage와 D1 대화 로그는 이 클래스의 소유가 아니므로 건드리지 않습니다.
      */
-    resetForNewGame() {
+    resetForNewGame() { var __oc1, __oc2, __oc3;
         const lang = window.GAME_LANG || 'ko';
         this.playerName = { en: "Protagonist", es: "Protagonista", ja: "主人公", fr: "Protagoniste", de: "Protagonist", pt: "Protagonista", zh: "主角" }[lang] || "주인공";
         this.currentDay = 1;
@@ -154,10 +154,10 @@ class StateManager {
         this.telemetryRunId = '';
         this.progressionRunId = '';
         this.progressionRevision = 0;
-        this.appliedAffinityCorrections = window.CupidAffinityCorrections?.ids() || [];
+        this.appliedAffinityCorrections = (((__oc1 = window.CupidAffinityCorrections) === null || __oc1 === void 0 ? void 0 : __oc1.ids())) || [];
         this._installAffinityGuards();
-        window.rotateCupidMainMemoryEpoch?.();
-        window.CupidProgressIntegrity?.start(this);
+        (((__oc2 = window.rotateCupidMainMemoryEpoch) === null || __oc2 === void 0 ? void 0 : __oc2.call(window)));
+        (((__oc3 = window.CupidProgressIntegrity) === null || __oc3 === void 0 ? void 0 : __oc3.start(this)));
     }
 
     _withAffinityWrite(write) {
@@ -166,10 +166,10 @@ class StateManager {
         finally { this._affinityWriteDepth -= 1; }
     }
 
-    _installAffinityGuards() {
+    _installAffinityGuards() { var __oc4;
         for (const box of Object.values(this.stats || {})) {
             if (!box || typeof box !== 'object') continue;
-            if (Object.getOwnPropertyDescriptor(box, 'affinity')?.set) continue;
+            if ((((__oc4 = Object.getOwnPropertyDescriptor(box, 'affinity')) === null || __oc4 === void 0 ? void 0 : __oc4.set))) continue;
             let stored = Number(box.affinity);
             stored = Number.isFinite(stored) ? Math.max(-100, Math.min(100, Math.round(stored))) : 0;
             const state = this;
@@ -189,9 +189,9 @@ class StateManager {
 
     restoreCommittedAffinities(snapshotStats) {
         this._installAffinityGuards();
-        this._withAffinityWrite(() => {
+        this._withAffinityWrite(() => { var __oc5;
             for (const key of Object.keys(this.stats || {})) {
-                const expected = Number(snapshotStats?.[key]?.affinity);
+                const expected = Number((((__oc5 = snapshotStats === null || snapshotStats === void 0 ? void 0 : snapshotStats[key]) === null || __oc5 === void 0 ? void 0 : __oc5.affinity)));
                 if (!Number.isFinite(expected) || !this.stats[key]) continue;
                 this.stats[key].affinity = expected;
             }
@@ -247,10 +247,10 @@ class StateManager {
      * @param {string} charKey - 캐릭터 키
      * @returns {number} 호감도 값 (없으면 0)
      */
-    getAffinity(charKey) {
+    getAffinity(charKey) { var __oc6;
         // ?? 0 사용: 음수 호감도(-50 등)도 올바르게 반환
         // || 0은 falsy 값(-50, 0 등)을 모두 0으로 처리하는 버그 발생
-        const value = Number(this.stats[charKey]?.affinity);
+        const value = Number((((__oc6 = this.stats[charKey]) === null || __oc6 === void 0 ? void 0 : __oc6.affinity)));
         return Number.isFinite(value) ? Math.max(-100, Math.min(100, Math.round(value))) : 0;
     }
 
@@ -297,20 +297,24 @@ class StateManager {
      * @param {string} flagName - 플래그 이름
      * @returns {boolean} 플래그 값 (없으면 false)
      */
-    getFlag(flagName) {
+    getFlag(flagName) { var __oc10;
         // || 를 먼저 분리 (OR가 낮은 우선순위), 각 OR 그룹 안에서 && 처리
         if (flagName.includes('||')) {
-            return flagName.split('||').some(orPart => {
+            return flagName.split('||').some(orPart => { var __oc8;
                 if (orPart.includes('&&')) {
-                    return orPart.split('&&').every(f => this.flags[f.trim()] ?? false);
+                    return orPart.split('&&').every(f => { var __oc7; return (
+((__oc7 = this.flags[f.trim()]) !== null && __oc7 !== void 0 ? __oc7 : false)
+); });
                 }
-                return this.flags[orPart.trim()] ?? false;
+                return (((__oc8 = this.flags[orPart.trim()]) !== null && __oc8 !== void 0 ? __oc8 : false));
             });
         }
         if (flagName.includes('&&')) {
-            return flagName.split('&&').every(f => this.flags[f.trim()] ?? false);
+            return flagName.split('&&').every(f => { var __oc9; return (
+((__oc9 = this.flags[f.trim()]) !== null && __oc9 !== void 0 ? __oc9 : false)
+); });
         }
-        return this.flags[flagName] ?? false;
+        return (((__oc10 = this.flags[flagName]) !== null && __oc10 !== void 0 ? __oc10 : false));
     }
 
     /** 현재 캐릭터 설정 */
@@ -355,7 +359,9 @@ class StateManager {
             .trim();
         const knownCharacters = new Set(Object.keys(this.stats || {}));
         const participants = [...new Set((Array.isArray(memory.participants) ? memory.participants : [])
-            .map(value => String(value?.id || value || '').trim())
+            .map(value => { return (
+String(((value === null || value === void 0 ? void 0 : value.id)) || value || '').trim()
+); })
             .filter(value => knownCharacters.has(value)))];
         if (participants.length < 2) return null;
 
@@ -365,13 +371,15 @@ class StateManager {
             return Number.isInteger(number) && number >= -100 && number <= 100 ? number : null;
         };
         const assistantMessages = (Array.isArray(memory.assistantMessages) ? memory.assistantMessages : [])
-            .map(message => ({
-                speakerId: String(message?.speakerId || '').trim(),
-                speakerName: String(message?.speakerName || '').trim(),
-                content: normalizeContent(message?.content),
-                affinityChange: affinitySnapshot(message?.affinityChange),
-                affinityCurrent: affinitySnapshot(message?.affinityCurrent)
-            }))
+            .map(message => { return (
+({
+                speakerId: String(((message === null || message === void 0 ? void 0 : message.speakerId)) || '').trim(),
+                speakerName: String(((message === null || message === void 0 ? void 0 : message.speakerName)) || '').trim(),
+                content: normalizeContent(((message === null || message === void 0 ? void 0 : message.content))),
+                affinityChange: affinitySnapshot(((message === null || message === void 0 ? void 0 : message.affinityChange))),
+                affinityCurrent: affinitySnapshot(((message === null || message === void 0 ? void 0 : message.affinityCurrent)))
+            })
+); })
             .filter(message => participants.includes(message.speakerId) && message.content);
         const userContent = normalizeContent(memory.userContent);
         if (!userContent && assistantMessages.length === 0) return null;
@@ -421,9 +429,9 @@ class StateManager {
         delete this.chatPromptEpochs[charName];
     }
 
-    setRelationshipAftermath(charName, state) {
+    setRelationshipAftermath(charName, state) { var __oc11;
         if (!charName) return null;
-        const normalized = window.CupidFreeTalkCore?.normalizeRelationshipAftermath
+        const normalized = (((__oc11 = window.CupidFreeTalkCore) === null || __oc11 === void 0 ? void 0 : __oc11.normalizeRelationshipAftermath))
             ? window.CupidFreeTalkCore.normalizeRelationshipAftermath(state)
             : (state || null);
         if (!normalized) {
@@ -434,10 +442,10 @@ class StateManager {
         return this.relationshipAftermaths[charName];
     }
 
-    getRelationshipAftermath(charName) {
+    getRelationshipAftermath(charName) { var __oc12;
         if (!charName) return null;
         const rawState = this.relationshipAftermaths[charName] || null;
-        const normalized = window.CupidFreeTalkCore?.normalizeRelationshipAftermath
+        const normalized = (((__oc12 = window.CupidFreeTalkCore) === null || __oc12 === void 0 ? void 0 : __oc12.normalizeRelationshipAftermath))
             ? window.CupidFreeTalkCore.normalizeRelationshipAftermath(rawState)
             : rawState;
         if (!normalized) {
@@ -456,7 +464,7 @@ class StateManager {
      *
      * @returns {Object} 저장 가능한 형태의 게임 상태 객체
      */
-    exportState() {
+    exportState() { var __oc13;
         return {
             telemetryRunId: this.telemetryRunId,
             progressionRunId: this.progressionRunId,
@@ -464,7 +472,7 @@ class StateManager {
             playerName: this.playerName,
             currentDay: this.currentDay,
             affinityRebalanceVersion: this.affinityRebalanceVersion,
-            appliedAffinityCorrections: window.CupidAffinityCorrections?.ids() || [],
+            appliedAffinityCorrections: (((__oc13 = window.CupidAffinityCorrections) === null || __oc13 === void 0 ? void 0 : __oc13.ids())) || [],
             stats: JSON.parse(JSON.stringify(this.stats)),
             chatMemories: JSON.parse(JSON.stringify(this.chatMemories)),
             freeTalkCheckpoint: this.freeTalkCheckpoint ? JSON.parse(JSON.stringify(this.freeTalkCheckpoint)) : null,
@@ -484,9 +492,9 @@ class StateManager {
      *
      * @param {Object} data - exportState()로 생성된 저장 데이터
      */
-    importState(data) {
-        window.CupidProgressIntegrity?.restoreState(data);
-        window.CupidAffinityCorrections?.correctState(data);
+    importState(data) { var __oc14, __oc15, __oc18, __oc19;
+        (((__oc14 = window.CupidProgressIntegrity) === null || __oc14 === void 0 ? void 0 : __oc14.restoreState(data)));
+        (((__oc15 = window.CupidAffinityCorrections) === null || __oc15 === void 0 ? void 0 : __oc15.correctState(data)));
         this.progressionRunId = String(data.progressionRunId || '');
         this.progressionRevision = Number(data.progressionRevision) || 0;
         this.appliedAffinityCorrections = data.appliedAffinityCorrections || [];
@@ -494,21 +502,21 @@ class StateManager {
         const savedAffinityRebalanceVersion = Number(data.affinityRebalanceVersion) || 0;
         if (data.playerName) this.playerName = data.playerName;
         if (data.currentDay !== undefined) this.currentDay = data.currentDay;
-        this._withAffinityWrite(() => {
+        this._withAffinityWrite(() => { var __oc16, __oc17;
             if (data.stats) for (const key of Object.keys(this.stats)) {
-                const value = Number(data.stats[key]?.affinity);
+                const value = Number((((__oc16 = data.stats[key]) === null || __oc16 === void 0 ? void 0 : __oc16.affinity)));
                 if (Number.isFinite(value)) this.stats[key].affinity = value;
             }
             if (savedAffinityRebalanceVersion < StateManager.AFFINITY_REBALANCE_VERSION) {
                 for (const charKey of StateManager.ROMANCE_CHARACTER_KEYS) {
-                    if ((Number(this.stats[charKey]?.affinity) || 0) >= 100) this.stats[charKey].affinity = 99;
+                    if ((Number((((__oc17 = this.stats[charKey]) === null || __oc17 === void 0 ? void 0 : __oc17.affinity))) || 0) >= 100) this.stats[charKey].affinity = 99;
                 }
             }
         });
         let affinityRebalanced = false;
         if (savedAffinityRebalanceVersion < StateManager.AFFINITY_REBALANCE_VERSION) {
             for (const charKey of StateManager.ROMANCE_CHARACTER_KEYS) {
-                if ((Number(data.stats?.[charKey]?.affinity) || 0) >= 100) affinityRebalanced = true;
+                if ((Number((((__oc19 = (__oc18 = data.stats) === null || __oc18 === void 0 ? void 0 : __oc18[charKey]) === null || __oc19 === void 0 ? void 0 : __oc19.affinity))) || 0) >= 100) affinityRebalanced = true;
             }
         }
         this.affinityRebalanceVersion = StateManager.AFFINITY_REBALANCE_VERSION;
@@ -557,6 +565,8 @@ class StateManager {
         else this.flags[key] = value;
     }
 }
+StateManager.AFFINITY_REBALANCE_VERSION = 1;
+StateManager.ROMANCE_CHARACTER_KEYS = Object.freeze(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']);
 
 // ============================================================================
 // window 전역 노출

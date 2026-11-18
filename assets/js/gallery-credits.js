@@ -15,20 +15,22 @@
  const t=(i)=> (copy[lang()]||copy.en)[i];
  let wallet=null,session=null,pending=null,refreshPending=null,epoch=0,dialog=null;
  const active=new Set();
- const account=()=>String(root.archerlabAccount?.user?.id||'').replace(/^al:/,'');
+ const account=()=>{ var __oc0, __oc1; return (
+String((((__oc1 = (__oc0 = root.archerlabAccount) === null || __oc0 === void 0 ? void 0 : __oc0.user) === null || __oc1 === void 0 ? void 0 : __oc1.id))||'').replace(/^al:/,'')
+); };
  const subject=()=>account()?'al:'+account():'guest';
  let accountId=account();
  const node=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n;};
- async function post(url,body){
-  const fp=await root.AiBrowserProof?.fingerprint?.();
+ async function post(url,body){ var __oc2, __oc3;
+  const fp=await (((__oc3 = (__oc2 = root.AiBrowserProof) === null || __oc2 === void 0 ? void 0 : __oc2.fingerprint) === null || __oc3 === void 0 ? void 0 : __oc3.call(__oc2)));
   const headers={'Content-Type':'application/json'};if(fp&&url.startsWith(base))headers['X-Device-Fp']=fp;
   const response=await fetch(url,{method:'POST',credentials:'include',cache:'no-store',headers,body:JSON.stringify(body),signal:AbortSignal.timeout(15000)});
   if(!response.ok)throw new Error('IDENTITY_UNAVAILABLE');return response.json();
  }
- async function credentials(){
-  await root.archerlabAccount?.ready;
+ async function credentials(){ var __oc4;
+  await (((__oc4 = root.archerlabAccount) === null || __oc4 === void 0 ? void 0 : __oc4.ready));
   const who=account(),version=epoch;
-  if(session?.account===who&&session.expires_at>Date.now()+60000)return session;
+  if(((session === null || session === void 0 ? void 0 : session.account))===who&&session.expires_at>Date.now()+60000)return session;
   if(pending)return pending;
   pending=(async()=>{
    let value;
@@ -44,11 +46,11 @@
   })().finally(()=>{if(version===epoch)pending=null;});
   return pending;
  }
- async function authorized(path,init={},auth){
+ async function authorized(path,init={},auth){ var __oc5, __oc6;
   auth=auth||await credentials();const headers=new Headers(init.headers||{});headers.set('Authorization','Bearer '+auth.token);
-  const fp=await root.AiBrowserProof?.fingerprint?.();if(fp&&!headers.has('X-Device-Fp'))headers.set('X-Device-Fp',fp);
+  const fp=await (((__oc6 = (__oc5 = root.AiBrowserProof) === null || __oc5 === void 0 ? void 0 : __oc5.fingerprint) === null || __oc6 === void 0 ? void 0 : __oc6.call(__oc5)));if(fp&&!headers.has('X-Device-Fp'))headers.set('X-Device-Fp',fp);
   const response=await fetch(base+path,{...init,headers,credentials:'include',cache:'no-store'});
-  if(response.status===401&&session?.token===auth.token)session=null;return response;
+  if(response.status===401&&((session === null || session === void 0 ? void 0 : session.token))===auth.token)session=null;return response;
  }
  async function proofFor(expectedSubject=''){
   const target=String(expectedSubject||subject());
@@ -56,10 +58,10 @@
   try{
    const auth=await credentials();
    if(target!==subject())return '';
-   if(target==='guest'&&!String(auth?.user_id||'').startsWith('gu:'))return '';
-   if(target.startsWith('al:')&&auth?.user_id!==target)return '';
-   return String(auth?.token||'');
-  }catch{return '';}
+   if(target==='guest'&&!String(((auth === null || auth === void 0 ? void 0 : auth.user_id))||'').startsWith('gu:'))return '';
+   if(target.startsWith('al:')&&((auth === null || auth === void 0 ? void 0 : auth.user_id))!==target)return '';
+   return String(((auth === null || auth === void 0 ? void 0 : auth.token))||'');
+  }catch (_err) {return '';}
  }
  function render(){
   const text=wallet?t(0).replace('{amount}',new Intl.NumberFormat(lang()).format(wallet.balance)):t(7);
@@ -74,28 +76,28 @@
   })().finally(()=>{if(version===epoch)refreshPending=null;});return refreshPending;
  }
  function show(reason=''){
-  dialog?.remove();dialog=node('dialog');dialog.className='cupid-gallery-credit-dialog';
+  ((dialog === null || dialog === void 0 ? void 0 : dialog.remove()));dialog=node('dialog');dialog.className='cupid-gallery-credit-dialog';
   const title=node('h2',t(1));title.id='cupid-gallery-credit-title';dialog.setAttribute('aria-labelledby',title.id);
   dialog.append(title,node('p',t(2)),node('p',t(8)));
   if(reason){const error=node('p',t(reason==='insufficient'?3:4));error.setAttribute('role','alert');dialog.append(error);}
   const link=node('a',t(6));link.href='https://harem.archerlab.dev/';link.target='_blank';link.rel='noopener';
   const close=node('button',t(5));close.onclick=()=>{dialog.close();dialog.remove();};dialog.append(link,close);document.body.append(dialog);dialog.showModal();close.focus();
  }
- async function beforeSend(){try{const value=await refresh();if(value.balance>=value.price)return true;show('insufficient');}catch{show('unavailable');}return false;}
+ async function beforeSend(){try{const value=await refresh();if(value.balance>=value.price)return true;show('insufficient');}catch (_err) {show('unavailable');}return false;}
  function mount(host){
   const button=node('button',t(7));button.className='cupid-gallery-balance';button.type='button';button.onclick=()=>show();host.append(button);render();void refresh().catch(()=>{});
  }
- async function chatFetch(url,init,expectedEpoch=epoch){
+ async function chatFetch(url,init,expectedEpoch=epoch){ var __oc7, __oc8, __oc10;
   if(expectedEpoch!==epoch)throw new DOMException('Account changed','AbortError');
   const auth=await credentials();
   if(expectedEpoch!==epoch)throw new DOMException('Account changed','AbortError');
   const version=epoch,body=JSON.parse(init.body||'{}'),controller=new AbortController();
   if(!body.turnId)throw new Error('MISSING_TURN_ID');
-  const abort=()=>controller.abort();init.signal?.addEventListener('abort',abort,{once:true});if(init.signal?.aborted)abort();
+  const abort=()=>controller.abort();(((__oc7 = init.signal) === null || __oc7 === void 0 ? void 0 : __oc7.addEventListener('abort', abort, { once: true })));if((((__oc8 = init.signal) === null || __oc8 === void 0 ? void 0 : __oc8.aborted)))abort();
   active.add(controller);let finished=false,cancelSent=false;
   const cancel=()=>{if(finished||cancelSent)return;cancelSent=true;void authorized('/api/credits/cancel',{method:'POST',keepalive:true,headers:{'Content-Type':'application/json'},body:JSON.stringify({turnId:body.turnId})},auth).catch(()=>{});};
   controller.signal.addEventListener('abort',cancel,{once:true});
-  const cleanup=()=>{finished=true;active.delete(controller);init.signal?.removeEventListener('abort',abort);controller.signal.removeEventListener('abort',cancel);if(epoch===version)void refresh().catch(()=>{});};
+  const cleanup=()=>{ var __oc9;finished=true;active.delete(controller);(((__oc9 = init.signal) === null || __oc9 === void 0 ? void 0 : __oc9.removeEventListener('abort', abort)));controller.signal.removeEventListener('abort',cancel);if(epoch===version)void refresh().catch(()=>{});};
   try{
    if(controller.signal.aborted)throw new DOMException('Aborted','AbortError');
    let response;const until=Date.now()+105000;
@@ -106,13 +108,13 @@
     await new Promise((resolve,reject)=>{const stop=()=>{clearTimeout(timer);reject(new DOMException('Aborted','AbortError'));};const timer=setTimeout(()=>{controller.signal.removeEventListener('abort',stop);resolve();},750);if(controller.signal.aborted)stop();else controller.signal.addEventListener('abort',stop,{once:true});});
    }
    if(epoch!==version)throw new DOMException('Account changed','AbortError');
-   if(response.status===402){const data=await response.clone().json().catch(()=>({}));if(data.wallet?.owner===auth.user_id){wallet=data.wallet;render();}show('insufficient');}
+   if(response.status===402){const data=await response.clone().json().catch(()=>({}));if((((__oc10 = data.wallet) === null || __oc10 === void 0 ? void 0 : __oc10.owner))===auth.user_id){wallet=data.wallet;render();}show('insufficient');}
    if(!response.body){cleanup();return response;}
    const reader=response.body.getReader();
    return new Response(new ReadableStream({async pull(out){try{const part=await reader.read();if(part.done){reader.releaseLock();cleanup();out.close();}else out.enqueue(part.value);}catch(error){cleanup();out.error(error);}},async cancel(reason){cancel();try{await reader.cancel(reason);}finally{cleanup();}}}),response);
   }catch(error){if(controller.signal.aborted)cancel();cleanup();throw error;}
  }
- root.addEventListener('archerlab:session',()=>{const next=account();if(next===accountId)return;accountId=next;epoch++;for(const controller of active)controller.abort();wallet=null;session=null;pending=null;refreshPending=null;dialog?.remove();render();if(document.querySelector('.cupid-gallery-balance'))void refresh().catch(()=>{});});
+ root.addEventListener('archerlab:session',()=>{const next=account();if(next===accountId)return;accountId=next;epoch++;for(const controller of active)controller.abort();wallet=null;session=null;pending=null;refreshPending=null;((dialog === null || dialog === void 0 ? void 0 : dialog.remove()));render();if(document.querySelector('.cupid-gallery-balance'))void refresh().catch(()=>{});});
  root.addEventListener('focus',()=>{if(document.querySelector('.cupid-gallery-balance'))void refresh().catch(()=>{});});
  const style=node('style');style.textContent=`.cupid-gallery-balance{position:absolute;right:max(12px,env(safe-area-inset-right));top:max(12px,env(safe-area-inset-top));z-index:6;max-width:calc(100% - 24px);min-height:44px;padding:9px 14px;border:1px solid #ba859a;border-radius:18px;background:#30212ee8;color:#ffe4ed;font-family:inherit;font-size:13px;font-weight:600;line-height:1.4;cursor:pointer;white-space:normal}.cupid-gallery-credit-dialog{box-sizing:border-box;margin:auto;inset:0;width:min(440px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:24px;border:1px solid #b68099;border-radius:20px;background:#271d2a;color:#fce9f0;box-shadow:0 16px 70px #0008;overflow:auto;font:15px/1.6 sans-serif}.cupid-gallery-credit-dialog::backdrop{background:#100a17b8}.cupid-gallery-credit-dialog h2{word-break:keep-all;font-size:20px;margin:0 0 16px}.cupid-gallery-credit-dialog p{margin:12px 0;overflow-wrap:anywhere}.cupid-gallery-credit-dialog a{display:block;color:#ffc7db;padding:10px 0}.cupid-gallery-credit-dialog button{display:block;margin:12px 0 0 auto;min-height:44px;padding:8px 24px;background:#78445f;color:white;border:1px solid #c78aa9;border-radius:12px;cursor:pointer}.cupid-gallery-credit-dialog :focus-visible,.cupid-gallery-balance:focus-visible{outline:2px solid #ffe4ed;outline-offset:3px}`;document.head.append(style);
  root.HaremLogIdentity=Object.freeze({capture:subject,proofFor,prepare:()=>{void proofFor().catch(()=>{});}});

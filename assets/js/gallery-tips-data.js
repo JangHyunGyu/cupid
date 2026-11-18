@@ -16,9 +16,44 @@
  * 수치가 바뀌면 이 파일과 tests/gallery-tips.test.cjs를 함께 갱신하세요.
  */
 class GalleryTipsData {
-    static LANGUAGES = Object.freeze(['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh']);
+    
 
-    static items = Object.freeze([
+    
+
+    
+
+    static getCopy(lang) {
+        return this.copy[lang] || this.copy.en;
+    }
+
+    /**
+     * 화면에 그릴 팁 목록을 반환합니다.
+     * @param {string} lang - 언어 코드
+     * @param {{ getName?: (charId: string) => string, isMet?: (charId: string) => boolean }} [options]
+     * @returns {Array<{id, group, icon, charId, title, summary, points, locked}>}
+     */
+    static getTips(lang, options = {}) {
+        const copy = this.getCopy(lang);
+        const getName = options.getName || (() => '');
+        const isMet = options.isMet || (() => true);
+        return this.items.map(item => {
+            const text = copy.items[item.id];
+            const locked = Boolean(item.gateByMet && !isMet(item.charId));
+            return {
+                id: item.id,
+                group: item.group,
+                icon: locked ? '❓' : item.icon,
+                charId: item.charId || null,
+                title: locked ? copy.lockedTitle : (text.title || getName(item.charId) || item.id),
+                summary: locked ? copy.lockedHint : text.summary,
+                points: locked ? [] : text.points.slice(),
+                locked
+            };
+        });
+    }
+}
+GalleryTipsData.LANGUAGES = Object.freeze(['ko', 'en', 'es', 'ja', 'fr', 'de', 'pt', 'zh']);
+GalleryTipsData.items = Object.freeze([
         { id: 'basics', group: 'general', icon: '💬' },
         { id: 'earn', group: 'general', icon: '✨' },
         { id: 'group', group: 'general', icon: '👥' },
@@ -34,8 +69,7 @@ class GalleryTipsData {
         { id: 'nurse', group: 'character', charId: 'nurse', icon: '🌿' },
         { id: 'haeun', group: 'character', charId: 'haeun', icon: '🤝', gateByMet: true }
     ]);
-
-    static copy = {
+GalleryTipsData.copy = {
         ko: {
             tab: '💡 팁',
             heading: '프리토킹 팁',
@@ -757,36 +791,5 @@ class GalleryTipsData {
             }
         }
     };
-
-    static getCopy(lang) {
-        return this.copy[lang] || this.copy.en;
-    }
-
-    /**
-     * 화면에 그릴 팁 목록을 반환합니다.
-     * @param {string} lang - 언어 코드
-     * @param {{ getName?: (charId: string) => string, isMet?: (charId: string) => boolean }} [options]
-     * @returns {Array<{id, group, icon, charId, title, summary, points, locked}>}
-     */
-    static getTips(lang, options = {}) {
-        const copy = this.getCopy(lang);
-        const getName = options.getName || (() => '');
-        const isMet = options.isMet || (() => true);
-        return this.items.map(item => {
-            const text = copy.items[item.id];
-            const locked = Boolean(item.gateByMet && !isMet(item.charId));
-            return {
-                id: item.id,
-                group: item.group,
-                icon: locked ? '❓' : item.icon,
-                charId: item.charId || null,
-                title: locked ? copy.lockedTitle : (text.title || getName(item.charId) || item.id),
-                summary: locked ? copy.lockedHint : text.summary,
-                points: locked ? [] : text.points.slice(),
-                locked
-            };
-        });
-    }
-}
 
 window.GalleryTipsData = GalleryTipsData;

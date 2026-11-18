@@ -263,10 +263,10 @@ class CharacterRenderer {
     /**
      * 캐릭터 모달 닫기
      */
-    closeModal() {
+    closeModal() { var __oc0;
         if (this.modalEl) {
             this.modalEl.classList.remove('active');
-            this.modalEl.querySelector('.character-preview')?.removeAttribute('data-char-id');
+            (((__oc0 = this.modalEl.querySelector('.character-preview')) === null || __oc0 === void 0 ? void 0 : __oc0.removeAttribute('data-char-id')));
         }
         this.currentCharacter = null;
     }
@@ -316,7 +316,7 @@ class CharacterRenderer {
         const totalExpressions = char.expressions.length;
         let html = '';
 
-        char.expressions.forEach((expr, index) => {
+        char.expressions.forEach((expr, index) => { var __oc1, __oc2;
             const unlocked = this.ui.progress.isExpressionUnlocked(char.id, index, totalExpressions, expr);
             const exprName = GalleryData.getExpressionName(this.ui.lang, expr);
 
@@ -329,8 +329,7 @@ class CharacterRenderer {
                 `;
             } else {
                 const isBikini = expr === 'bikini';
-                const requiredAffinity = GalleryData.getExpressionRequirement?.(char.id, expr)
-                    ?? this.ui.progress.getExpressionRequirement(index, totalExpressions);
+                const requiredAffinity = (((__oc2 = (__oc1 = GalleryData.getExpressionRequirement) === null || __oc1 === void 0 ? void 0 : __oc1.call(GalleryData, char.id, expr)) !== null && __oc2 !== void 0 ? __oc2 : this.ui.progress.getExpressionRequirement(index, totalExpressions)));
 
                 html += `
                     <button class="expression-btn locked ${isBikini ? 'special' : ''}"
@@ -437,11 +436,11 @@ class CharacterRenderer {
      * @param {string} charId - 캐릭터 ID
      * @param {string} charName - 캐릭터 이름
      */
-    _showOutingPicker(charId) {
+    _showOutingPicker(charId) { var __oc3, __oc4, __oc5;
         const outings = window.CupidGalleryOutings;
         const talk = window.galleryFreeTalk;
         if (!outings || !talk) {
-            window.galleryFreeTalk?.open(charId);
+            (((__oc3 = window.galleryFreeTalk) === null || __oc3 === void 0 ? void 0 : __oc3.open(charId)));
             return;
         }
         const places = outings.getPlaces(charId);
@@ -450,7 +449,7 @@ class CharacterRenderer {
             return;
         }
         const lang = this.ui.lang;
-        const lastId = this.ui.progress.getLastOuting?.(charId) || places[0].id;
+        const lastId = (((__oc5 = (__oc4 = this.ui.progress).getLastOuting) === null || __oc5 === void 0 ? void 0 : __oc5.call(__oc4, charId))) || places[0].id;
         const birthday = outings.isBirthday(charId);
         const overlay = document.createElement('div');
         overlay.className = 'gft-outing-overlay';
@@ -480,10 +479,10 @@ class CharacterRenderer {
         document.body.appendChild(overlay);
     }
 
-    _showFreeTalkLockPopup(charId, charName) {
+    _showFreeTalkLockPopup(charId, charName) { var __oc6, __oc7;
         const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.ui.lang] || en;
 
-        const perfectEnding = this.ui.progress.data.characters?.[charId]?.perfectEndingCleared || false;
+        const perfectEnding = (((__oc7 = (__oc6 = this.ui.progress.data.characters) === null || __oc6 === void 0 ? void 0 : __oc6[charId]) === null || __oc7 === void 0 ? void 0 : __oc7.perfectEndingCleared)) || false;
         const currentAffinity = this.ui.progress.getAffinity(charId);
         const freeTalkCount = this.ui.progress.getFreeTalkCount(charId);
 

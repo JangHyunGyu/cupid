@@ -206,7 +206,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         const score = 'Affinity scoring runs after the completed reply. Use 0 only as the affinity transport placeholder. Preserve the relationship, causes of hurt and unresolved events in prose; friendliness alone does not resolve them.';
         const face = 'Expression images are selected after generation. Use "normal" as a transport placeholder; keep metadata out of visible text.';
         return (messages || []).map(message => {
-            if (message?.role !== 'system' || typeof message.content !== 'string') return message;
+            if (((message === null || message === void 0 ? void 0 : message.role)) !== 'system' || typeof message.content !== 'string') return message;
             let content = message.content;
             for (const lang of ['ko', 'en']) {
                 content = content.split(buildAffinityChangeGuidance(lang)).join(score);
@@ -263,14 +263,14 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             }] : []);
         const causes = rawCauses
             .map(item => {
-                const excerpt = truncateLatestUserText(item?.excerpt || item?.text || '', 180);
+                const excerpt = truncateLatestUserText(((item === null || item === void 0 ? void 0 : item.excerpt)) || ((item === null || item === void 0 ? void 0 : item.text)) || '', 180);
                 if (!excerpt) return null;
-                const impactValue = Number(item?.impact);
+                const impactValue = Number(((item === null || item === void 0 ? void 0 : item.impact)));
                 const impact = Number.isFinite(impactValue)
                     ? Math.max(1, Math.min(50, Math.round(Math.abs(impactValue))))
                     : intensity;
                 return {
-                    source: item?.source === 'incident' ? 'incident' : 'user',
+                    source: ((item === null || item === void 0 ? void 0 : item.source)) === 'incident' ? 'incident' : 'user',
                     excerpt,
                     impact
                 };
@@ -314,7 +314,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             const repeatedExtension = previous ? Math.min(3, Math.max(1, Math.ceil(magnitude / 10))) : 0;
             const remainingTurns = Math.min(
                 RELATIONSHIP_AFTERMATH_MAX_TURNS,
-                Math.max(baseDuration, previous?.remainingTurns || 0) + repeatedExtension
+                Math.max(baseDuration, ((previous === null || previous === void 0 ? void 0 : previous.remainingTurns)) || 0) + repeatedExtension
             );
             return normalizeRelationshipAftermath({ intensity, remainingTurns, causes });
         }
@@ -423,11 +423,11 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         const activeSource = source.activeIncident && typeof source.activeIncident === 'object'
             ? source.activeIncident
             : null;
-        const activeCategory = normalizeGalleryIncidentCategory(activeSource?.category);
+        const activeCategory = normalizeGalleryIncidentCategory(((activeSource === null || activeSource === void 0 ? void 0 : activeSource.category)));
         const activeIncident = activeCategory ? {
             category: activeCategory,
             severity: activeCategory === 'crisis'
-                ? normalizeGalleryCrisisSeverity(activeSource?.severity)
+                ? normalizeGalleryCrisisSeverity(((activeSource === null || activeSource === void 0 ? void 0 : activeSource.severity)))
                 : '',
             summary: String(activeSource.summary || '').replace(/\s+/g, ' ').trim().slice(0, 240),
             startedAtTurn: Math.max(0, Math.min(completedTurns, normalizeNonNegativeInteger(activeSource.startedAtTurn))),
@@ -435,25 +435,25 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         } : null;
         const recentIncidents = (Array.isArray(source.recentIncidents) ? source.recentIncidents : [])
             .map(item => {
-                const category = normalizeGalleryIncidentCategory(item?.category);
-                const summary = String(item?.summary || '').replace(/\s+/g, ' ').trim().slice(0, 240);
+                const category = normalizeGalleryIncidentCategory(((item === null || item === void 0 ? void 0 : item.category)));
+                const summary = String(((item === null || item === void 0 ? void 0 : item.summary)) || '').replace(/\s+/g, ' ').trim().slice(0, 240);
                 if (!category || !summary) return null;
                 return {
                     category,
                     severity: category === 'crisis'
-                        ? normalizeGalleryCrisisSeverity(item?.severity)
+                        ? normalizeGalleryCrisisSeverity(((item === null || item === void 0 ? void 0 : item.severity)))
                         : '',
                     summary,
-                    endedAtTurn: Math.max(0, Math.min(completedTurns, normalizeNonNegativeInteger(item?.endedAtTurn)))
+                    endedAtTurn: Math.max(0, Math.min(completedTurns, normalizeNonNegativeInteger(((item === null || item === void 0 ? void 0 : item.endedAtTurn)))))
                 };
             })
             .filter(Boolean)
             .slice(-GALLERY_INCIDENT_POLICY.recentIncidentLimit);
         const negativeSignals = (Array.isArray(source.negativeSignals) ? source.negativeSignals : [])
             .map(item => {
-                const turn = Math.max(0, Math.min(completedTurns, normalizeNonNegativeInteger(item?.turn)));
-                const weight = Math.max(1, Math.min(6, normalizeNonNegativeInteger(item?.weight, 1)));
-                const excerpt = String(item?.excerpt || '').replace(/\s+/g, ' ').trim().slice(0, 180);
+                const turn = Math.max(0, Math.min(completedTurns, normalizeNonNegativeInteger(((item === null || item === void 0 ? void 0 : item.turn)))));
+                const weight = Math.max(1, Math.min(6, normalizeNonNegativeInteger(((item === null || item === void 0 ? void 0 : item.weight)), 1)));
+                const excerpt = String(((item === null || item === void 0 ? void 0 : item.excerpt)) || '').replace(/\s+/g, ' ').trim().slice(0, 180);
                 if (!excerpt || completedTurns - turn > GALLERY_INCIDENT_POLICY.crisisCooldownTurns) return null;
                 return { turn, weight, excerpt };
             })
@@ -566,9 +566,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         };
     }
 
-    function buildImplicitActiveGalleryIncidentPayload(rawState = {}) {
+    function buildImplicitActiveGalleryIncidentPayload(rawState = {}) { var __oc0;
         const state = normalizeGalleryIncidentState(rawState);
-        const summary = String(state.activeIncident?.summary || '').replace(/\s+/g, ' ').trim().slice(0, 240);
+        const summary = String((((__oc0 = state.activeIncident) === null || __oc0 === void 0 ? void 0 : __oc0.summary)) || '').replace(/\s+/g, ' ').trim().slice(0, 240);
         if (!state.activeIncident || !summary) return null;
         return {
             status: 'ongoing',
@@ -579,15 +579,15 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
     function getGalleryIncidentContractIssue({ state: rawState = {}, plan = null, payload = null } = {}) {
         const state = normalizeGalleryIncidentState(rawState);
         const incidentPayload = normalizeGalleryIncidentPayload(payload);
-        const plannedCategory = normalizeGalleryIncidentCategory(plan?.category);
+        const plannedCategory = normalizeGalleryIncidentCategory(((plan === null || plan === void 0 ? void 0 : plan.category)));
         const issues = [];
 
         if (state.activeIncident) {
-            const hasContinuationPayload = incidentPayload?.summary
+            const hasContinuationPayload = ((incidentPayload === null || incidentPayload === void 0 ? void 0 : incidentPayload.summary))
                 && ['ongoing', 'resolved'].includes(incidentPayload.status);
             if (!hasContinuationPayload) issues.push('active_gallery_incident_payload_missing');
         } else if (plannedCategory) {
-            const hasStartPayload = incidentPayload?.status === 'started'
+            const hasStartPayload = ((incidentPayload === null || incidentPayload === void 0 ? void 0 : incidentPayload.status)) === 'started'
                 && incidentPayload.summary
                 && (plannedCategory !== 'crisis' || incidentPayload.severity);
             if (!hasStartPayload) issues.push('scheduled_gallery_incident_payload_missing');
@@ -640,7 +640,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             return `\n\n[Active gallery relationship incident]\nCategory: ${active.category}${active.severity ? `\nSeverity: ${active.severity}` : ''}\nEstablished incident summary: ${active.summary || 'The incident started in the previous reply.'}\nIncident turns: ${active.turns}\n- Do not erase this incident or start a separate one. Continue it in ${characterName || 'the character'}'s own voice and at the current relationship distance.\n- Use incident.status=resolved only when the central misunderstanding or conflict is actually settled in this turn; otherwise use ongoing.\n- The output JSON must include incident:{"status":"ongoing or resolved","summary":"updated 1-2 sentence factual summary"}.`;
         }
 
-        if (!plan?.category) return '';
+        if (!((plan === null || plan === void 0 ? void 0 : plan.category))) return '';
         const category = normalizeGalleryIncidentCategory(plan.category);
         const impactRule = category === 'crisis'
             ? 'low -20 to -29; medium -30 to -39; high -40 to -50'
@@ -669,9 +669,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         );
     }
 
-    function shouldRetryAiResponse(response) {
+    function shouldRetryAiResponse(response) { var __oc1, __oc2;
         return !!response && !response.ok
-            && response.headers?.get?.('x-ai-retry-exhausted') !== 'true' && (
+            && (((__oc2 = (__oc1 = response.headers) === null || __oc1 === void 0 ? void 0 : __oc1.get) === null || __oc2 === void 0 ? void 0 : __oc2.call(__oc1, 'x-ai-retry-exhausted'))) !== 'true' && (
             RETRY_HTTP_STATUSES.has(response.status)
             || response.status >= 500
         );
@@ -739,10 +739,10 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
     }
 
     function encodeCacheKeyPart(value) {
-        const text = String(value ?? '');
+        const text = String(((value !== null && value !== void 0 ? value : '')));
         try {
             return encodeURIComponent(text);
-        } catch {
+        } catch (_err) {
             return getStablePromptHash(text);
         }
     }
@@ -793,7 +793,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         const candidate = String(reply || '').trim();
         if (normalizeRepetitionText(candidate).length < 40) return false;
         return (Array.isArray(messages) ? messages : [])
-            .filter(message => message?.role === 'assistant' && typeof message.content === 'string')
+            .filter(message => { return (
+((message === null || message === void 0 ? void 0 : message.role)) === 'assistant' && typeof message.content === 'string'
+); })
             .slice(-6)
             .some(message => {
                 const previous = String(message.content || '').trim();
@@ -802,7 +804,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             });
     }
 
-    function normalizeCupidResponsePayload(value, depth = 0) {
+    function normalizeCupidResponsePayload(value, depth = 0) { var __oc3, __oc4, __oc5;
         if (depth > 4 || value === null || value === undefined) return null;
         if (typeof value === 'string') {
             const source = value.trim();
@@ -810,7 +812,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             if (/^[\[{]/.test(source)) {
                 try {
                     return normalizeCupidResponsePayload(JSON.parse(source), depth + 1);
-                } catch {
+                } catch (_err) {
                     // Preserve non-JSON prose as visible text.
                 }
             }
@@ -823,7 +825,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
                 if (!normalized) return [];
                 if (Array.isArray(normalized.segments) && normalized.segments.length > 0) {
                     return normalized.segments.map(segment => {
-                        const type = String(segment?.type || '').trim().toLowerCase();
+                        const type = String(((segment === null || segment === void 0 ? void 0 : segment.type)) || '').trim().toLowerCase();
                         return {
                             ...segment,
                             type: ['narration', 'scene', 'action'].includes(type) ? 'narration' : 'dialogue'
@@ -875,7 +877,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
                 normalizedEntries.push(normalized);
                 if (Array.isArray(normalized.segments) && normalized.segments.length > 0) {
                     collectionSegments.push(...normalized.segments.map(segment => {
-                        const type = String(segment?.type || '').trim().toLowerCase();
+                        const type = String(((segment === null || segment === void 0 ? void 0 : segment.type)) || '').trim().toLowerCase();
                         return {
                             ...segment,
                             type: ['narration', 'scene', 'action'].includes(type) ? 'narration' : 'dialogue'
@@ -897,9 +899,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
                     ...value,
                     ...first,
                     segments: [...legacySegments, ...collectionSegments],
-                    expression: first.expression ?? value.expression,
-                    affinity: first.affinity ?? value.affinity,
-                    incident: first.incident ?? value.incident,
+                    expression: (((__oc3 = first.expression) !== null && __oc3 !== void 0 ? __oc3 : value.expression)),
+                    affinity: (((__oc4 = first.affinity) !== null && __oc4 !== void 0 ? __oc4 : value.affinity)),
+                    incident: (((__oc5 = first.incident) !== null && __oc5 !== void 0 ? __oc5 : value.incident)),
                 };
             }
         }
@@ -928,7 +930,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             try {
                 const decoded = JSON.parse(source);
                 if (typeof decoded === 'string') return normalizeVisibleProtocolSource(decoded, depth + 1);
-            } catch {
+            } catch (_err) {
                 // Keep the original source for malformed-protocol detection.
             }
         }
@@ -937,10 +939,10 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
 
     function getVisibleProtocolIssue(payload = {}) {
         const visibleTexts = [];
-        if (typeof payload?.text === 'string') visibleTexts.push({ path: 'text', value: payload.text });
-        if (Array.isArray(payload?.segments)) {
+        if (typeof ((payload === null || payload === void 0 ? void 0 : payload.text)) === 'string') visibleTexts.push({ path: 'text', value: payload.text });
+        if (Array.isArray(((payload === null || payload === void 0 ? void 0 : payload.segments)))) {
             payload.segments.forEach((segment, index) => {
-                if (typeof segment?.text === 'string') {
+                if (typeof ((segment === null || segment === void 0 ? void 0 : segment.text)) === 'string') {
                     visibleTexts.push({ path: `segments[${index}].text`, value: segment.text });
                 }
             });
@@ -960,7 +962,7 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
                     if (parsed && typeof parsed === 'object') {
                         return { reason: 'embedded_json_value', path: item.path };
                     }
-                } catch {
+                } catch (_err) {
                     if (source.startsWith('{')
                         || /^\[\s*(?:[\[{"'\d-]|true\b|false\b|null\b)/i.test(source)) {
                         return { reason: 'malformed_json_protocol', path: item.path };
@@ -973,13 +975,13 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
 
     function resolveCupidAssistantLogContent(assistantContent, renderReceipt = null) {
         const formattedContent = String(assistantContent || '');
-        const renderedContent = typeof renderReceipt?.renderedContent === 'string'
+        const renderedContent = typeof ((renderReceipt === null || renderReceipt === void 0 ? void 0 : renderReceipt.renderedContent)) === 'string'
             ? renderReceipt.renderedContent
             : '';
         // A successful receipt proves that the formatted source reached the screen.
         // Keep that source in D1 so narration markers and segment boundaries survive;
         // renderedContent is DOM textContent and intentionally contains neither.
-        if (formattedContent.trim() && renderReceipt?.status === 'rendered') {
+        if (formattedContent.trim() && ((renderReceipt === null || renderReceipt === void 0 ? void 0 : renderReceipt.status)) === 'rendered') {
             return formattedContent;
         }
         return renderedContent.trim() ? renderedContent : formattedContent;
@@ -991,7 +993,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         const isEn = String(lang || '').toLowerCase().startsWith('en');
         const isCjk = /^(?:ja|zh)/i.test(String(lang || ''));
         const narrations = (Array.isArray(messages) ? messages : [])
-            .filter(message => message?.role === 'assistant' && typeof message.content === 'string')
+            .filter(message => { return (
+((message === null || message === void 0 ? void 0 : message.role)) === 'assistant' && typeof message.content === 'string'
+); })
             .slice(-6)
             .map(message => {
                 const match = String(message.content).match(/\*+([^*]{4,}?)\*+/u);
@@ -1037,12 +1041,16 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             : `\n\n[Recent narration repetition]\nActions and props already used in recent narration: ${repeated.join(', ')}. Open this time with a different body part, gaze, prop, or setting detail, do not repeat the same monologue topic, and move the scene one step forward.`;
     }
 
-    function buildNearDuplicateExpressionGuard(messages = [], lang = 'ko') {
+    function buildNearDuplicateExpressionGuard(messages = [], lang = 'ko') { var __oc6;
         const allMessages = Array.isArray(messages) ? messages : [];
-        const texts = allMessages.filter(message => message?.role === 'assistant' && typeof message.content === 'string')
+        const texts = allMessages.filter(message => { return (
+((message === null || message === void 0 ? void 0 : message.role)) === 'assistant' && typeof message.content === 'string'
+); })
             .slice(-8).map(message => String(message.content).normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]+/gu, ''))
             .filter(text => text.length >= 40);
-        const latestUser = String([...allMessages].reverse().find(message => message?.role === 'user')?.content || '');
+        const latestUser = String((((__oc6 = [...allMessages].reverse().find(message => {
+        return (((message === null || message === void 0 ? void 0 : message.role)) === 'user');
+    })) === null || __oc6 === void 0 ? void 0 : __oc6.content)) || '');
         if (/(?:다시\s*(?:말|해|써|반복)|그대로\s*(?:말|해|써)|もう一度言って|同じ言葉で|再说一遍|重复一遍|\b(?:repeat|say\s+that\s+again|same\s+words?|repite|repítelo|dis-le\s+encore|répète|wiederhol(?:e|en)?|repita)\b)/iu.test(latestUser)) return '';
         const shingles = text => new Set(Array.from({ length: Math.max(0, text.length - 5) }, (_, index) => text.slice(index, index + 6)));
         const bodies = texts.map(text => ({ text, parts: shingles(text) }));
@@ -1058,8 +1066,10 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
             : '\n\n[Repeated wording]\nRecent long replies repeated almost the same body. Respond to the current input and situation without replaying a whole answer needlessly. Intentional verbal habits, gestures, and maintaining the same boundary remain valid; do not force a different decision or action to avoid repetition.';
     }
 
-    function buildRecentExpressionRepetitionGuard(messages = [], lang = 'ko') {
-        const latestUser = String([...(Array.isArray(messages) ? messages : [])].reverse().find(message => message?.role === 'user')?.content || '');
+    function buildRecentExpressionRepetitionGuard(messages = [], lang = 'ko') { var __oc7;
+        const latestUser = String((((__oc7 = [...(Array.isArray(messages) ? messages : [])].reverse().find(message => {
+        return (((message === null || message === void 0 ? void 0 : message.role)) === 'user');
+    })) === null || __oc7 === void 0 ? void 0 : __oc7.content)) || '');
         const asksRepeat = /(?:다시\s*(?:말|해|써|반복)|그대로\s*(?:말|해|써)|もう一度言って|同じ言葉で|再说一遍|重复一遍|\b(?:repeat|say\s+that\s+again|same\s+words?|repite|repítelo|dis-le\s+encore|répète|wiederhol(?:e|en)?|repita)\b)/iu.test(latestUser);
         return (asksRepeat ? '' : buildRecentActionPropHint(messages, lang)) + buildNearDuplicateExpressionGuard(messages, lang);
     }
@@ -1095,8 +1105,8 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         if (!Array.isArray(value)) return String(value || '');
         return value.map(part => {
             if (typeof part === 'string') return part;
-            if (part?.type === 'text') return part.text || '';
-            if (part?.type === 'image_url' || part?.image_url) return '[image attachment]';
+            if (((part === null || part === void 0 ? void 0 : part.type)) === 'text') return part.text || '';
+            if (((part === null || part === void 0 ? void 0 : part.type)) === 'image_url' || ((part === null || part === void 0 ? void 0 : part.image_url))) return '[image attachment]';
             return '';
         }).filter(Boolean).join(' ');
     }
@@ -1234,18 +1244,22 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         const recentTexts = new Set(
             (Array.isArray(messages) ? messages : [])
                 .slice(-24)
-                .map(message => normalizePromptMemoryText(message?.content || ''))
+                .map(message => { return (
+normalizePromptMemoryText(((message === null || message === void 0 ? void 0 : message.content)) || '')
+); })
                 .filter(Boolean)
         );
         const seen = new Set();
         const selected = [];
         let totalChars = 0;
 
-        const ranked = [...hits].sort((left, right) => Number(right?.score || 0) - Number(left?.score || 0));
+        const ranked = [...hits].sort((left, right) => { return (
+Number(((right === null || right === void 0 ? void 0 : right.score)) || 0) - Number(((left === null || left === void 0 ? void 0 : left.score)) || 0)
+); });
         for (const hit of ranked) {
-            const score = Number(hit?.score || 0);
-            const role = hit?.role === 'assistant' ? 'assistant' : (hit?.role === 'user' ? 'user' : '');
-            const rawContent = getPromptMemoryText(hit?.content).trim();
+            const score = Number(((hit === null || hit === void 0 ? void 0 : hit.score)) || 0);
+            const role = ((hit === null || hit === void 0 ? void 0 : hit.role)) === 'assistant' ? 'assistant' : (((hit === null || hit === void 0 ? void 0 : hit.role)) === 'user' ? 'user' : '');
+            const rawContent = getPromptMemoryText(((hit === null || hit === void 0 ? void 0 : hit.content))).trim();
             if (!role || !rawContent || score < 0.62) continue;
 
             const normalized = normalizePromptMemoryText(rawContent);
@@ -1281,7 +1295,9 @@ At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the 
         if (!Array.isArray(hits) || !hits.length) return '';
         const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
         const sorted = [...hits].sort((left, right) =>
-            String(left?.created_at || '').localeCompare(String(right?.created_at || ''))
+            { return (
+String(((left === null || left === void 0 ? void 0 : left.created_at)) || '').localeCompare(String(((right === null || right === void 0 ? void 0 : right.created_at)) || ''))
+); }
         );
         const lines = sorted.map(hit => {
             const speaker = hit.role === 'user'
@@ -1413,7 +1429,7 @@ Latest user: """${excerpt}"""
         if (complete) {
             try {
                 return JSON.parse(`"${source}"`);
-            } catch {
+            } catch (_err) {
                 // Fall through to the incremental decoder while the JSON is still arriving.
             }
         }
@@ -1606,8 +1622,8 @@ Latest user: """${excerpt}"""
     }
 
     // AI_DISPLAY_FALLBACK_START
-async function readAiReplyPrefix(response) {
-    if (!response.body?.getReader) return { text: await response.text(), interrupted: false };
+async function readAiReplyPrefix(response) { var __oc8, __oc9, __oc10;
+    if (!(((__oc8 = response.body) === null || __oc8 === void 0 ? void 0 : __oc8.getReader))) return { text: await response.text(), interrupted: false };
     const reader = response.body.getReader();
     const decoder = new TextDecoder();
     let text = '';
@@ -1622,17 +1638,17 @@ async function readAiReplyPrefix(response) {
         }
     } catch (failure) { interrupted = true; error = failure; }
     finally {
-        if (interrupted) { try { await reader.cancel?.(); } catch (_) { /* best effort */ } }
-        reader.releaseLock?.();
+        if (interrupted) { try { await (((__oc9 = reader.cancel) === null || __oc9 === void 0 ? void 0 : __oc9.call(reader))); } catch (_) { /* best effort */ } }
+        (((__oc10 = reader.releaseLock) === null || __oc10 === void 0 ? void 0 : __oc10.call(reader)));
     }
     return { text, interrupted, error };
 }
-function buildAiDisplayFallback(raw, options = {}) {
+function buildAiDisplayFallback(raw, options = {}) { var __oc12, __oc13, __oc14, __oc15, __oc18, __oc19, __oc20, __oc21, __oc22;
     const source = String(raw || '').replace(/^\s*```(?:json)?\s*/i, '').replace(/\s*```\s*$/, '').trim().slice(0, 262144);
     const cut = new Set();
     let cursor = 0;
     const skip = () => { while (/\s/.test(source[cursor] || '') && cursor < source.length) cursor++; };
-    const readString = () => {
+    const readString = () => { var __oc11;
         const quote = source[cursor++];
         let value = '';
         while (cursor < source.length) {
@@ -1646,7 +1662,7 @@ function buildAiDisplayFallback(raw, options = {}) {
                 if (!/^[\da-f]{4}$/i.test(digits)) break;
                 value += String.fromCharCode(parseInt(digits, 16));
                 cursor += 4;
-            } else value += ({ n: '\n', r: '\r', t: '\t', b: '\b', f: '\f' })[escape] ?? escape;
+            } else value += (((__oc11 = ({ n: '\n', r: '\r', t: '\t', b: '\b', f: '\f' })[escape]) !== null && __oc11 !== void 0 ? __oc11 : escape));
         }
         return { value: value.replace(/[\uD800-\uDBFF]$/, ''), complete: false };
     };
@@ -1702,8 +1718,8 @@ function buildAiDisplayFallback(raw, options = {}) {
     };
     let parsed;
     try { parsed = JSON.parse(source); } catch (_) { parsed = readValue([]); }
-    const choice = parsed?.choices?.[0];
-    const envelopeText = choice?.message?.content ?? choice?.delta?.content;
+    const choice = (((__oc12 = parsed === null || parsed === void 0 ? void 0 : parsed.choices) === null || __oc12 === void 0 ? void 0 : __oc12[0]));
+    const envelopeText = (((__oc14 = (__oc13 = choice === null || choice === void 0 ? void 0 : choice.message) === null || __oc13 === void 0 ? void 0 : __oc13.content) !== null && __oc14 !== void 0 ? __oc14 : (__oc15 = choice === null || choice === void 0 ? void 0 : choice.delta) === null || __oc15 === void 0 ? void 0 : __oc15.content));
     if (typeof envelopeText === 'string' && !options.envelopeRead) {
         const field = choice.message ? 'message' : 'delta';
         return buildAiDisplayFallback(envelopeText, { ...options, envelopeRead: true, truncated: options.truncated || cut.has(JSON.stringify(['choices', 0, field, 'content'])) });
@@ -1722,9 +1738,9 @@ function buildAiDisplayFallback(raw, options = {}) {
     };
     const segments = (item, path) => {
         if (!item || typeof item !== 'object') return [];
-        if (Array.isArray(item.segments)) return item.segments.flatMap((segment, index) => {
+        if (Array.isArray(item.segments)) return item.segments.flatMap((segment, index) => { var __oc16, __oc17;
             if (!segment || typeof segment !== 'object') return [];
-            const directText = displayText(segment.text ?? segment.content ?? segment.message, [...path, 'segments', index, 'text']);
+            const directText = displayText((((__oc17 = (__oc16 = segment.text) !== null && __oc16 !== void 0 ? __oc16 : segment.content) !== null && __oc17 !== void 0 ? __oc17 : segment.message)), [...path, 'segments', index, 'text']);
             if (directText) {
                 return [{ type: ['dialogue', 'narration', 'scene', 'thought', 'action', 'text'].includes(segment.type) ? segment.type : 'dialogue', text: directText }];
             }
@@ -1742,8 +1758,10 @@ function buildAiDisplayFallback(raw, options = {}) {
         return [];
     };
     const speakers = Array.isArray(options.responseSpeakers) ? options.responseSpeakers : [];
-    const knownName = typeof speakers[0]?.name === 'string' ? speakers[0].name : '';
-    const name = item => typeof item?.name === 'string' ? item.name : (typeof item?.speaker === 'string' ? item.speaker : knownName);
+    const knownName = typeof (((__oc18 = speakers[0]) === null || __oc18 === void 0 ? void 0 : __oc18.name)) === 'string' ? speakers[0].name : '';
+    const name = item => { return (
+typeof ((item === null || item === void 0 ? void 0 : item.name)) === 'string' ? item.name : (typeof ((item === null || item === void 0 ? void 0 : item.speaker)) === 'string' ? item.speaker : knownName)
+); };
     if (parsed && typeof parsed === 'object') {
         const rootPath = Array.isArray(parsed) ? null : [];
         if (rootPath) {
@@ -1756,8 +1774,10 @@ function buildAiDisplayFallback(raw, options = {}) {
         const items = Array.isArray(parsed) ? parsed.map((item, index) => ({ item, path: [index], key: '' })) : (collection ? parsed[collection].map((item, index) => ({ item, path: [collection, index], key: '' })) : (keyedCollection ? Object.entries(parsed[keyedCollection]).filter(([, item]) => item && (typeof item === 'string' || (typeof item === 'object' && !Array.isArray(item)))).map(([k, item]) => ({ item, path: [keyedCollection, k], key: k })) : []));
         const parts = items.map(({ item, path: itemPath, key: fallbackKey }) => {
             const content = typeof item === 'string' ? [{ type: 'dialogue', text: displayText(item, itemPath) }] : segments(item, itemPath);
-            const expressionPath = [...itemPath, 'expression']; const itemKey = String(item?.key || item?.id || fallbackKey || '').trim(); const speakerMatch = itemKey ? speakers.find(s => String(s?.key || s?.id || '').trim() === itemKey) : null; const itemName = (typeof item?.name === 'string' && item.name.trim()) ? item.name : ((typeof item?.speaker === 'string' && item.speaker.trim()) ? item.speaker : ((typeof speakerMatch?.name === 'string' && speakerMatch.name.trim()) ? speakerMatch.name : (itemKey || knownName)));
-            const requestedExpression = String(item?.expression || '').trim().toLowerCase();
+            const expressionPath = [...itemPath, 'expression']; const itemKey = String(((item === null || item === void 0 ? void 0 : item.key)) || ((item === null || item === void 0 ? void 0 : item.id)) || fallbackKey || '').trim(); const speakerMatch = itemKey ? speakers.find(s => { return (
+String(((s === null || s === void 0 ? void 0 : s.key)) || ((s === null || s === void 0 ? void 0 : s.id)) || '').trim() === itemKey
+); }) : null; const itemName = (typeof ((item === null || item === void 0 ? void 0 : item.name)) === 'string' && item.name.trim()) ? item.name : ((typeof ((item === null || item === void 0 ? void 0 : item.speaker)) === 'string' && item.speaker.trim()) ? item.speaker : ((typeof ((speakerMatch === null || speakerMatch === void 0 ? void 0 : speakerMatch.name)) === 'string' && speakerMatch.name.trim()) ? speakerMatch.name : (itemKey || knownName)));
+            const requestedExpression = String(((item === null || item === void 0 ? void 0 : item.expression)) || '').trim().toLowerCase();
             const expression = !cut.has(JSON.stringify(expressionPath)) && /^[a-z][a-z0-9_-]{0,31}$/.test(requestedExpression)
                 ? requestedExpression : '';
             return content.some(segment => segment.text) ? {
@@ -1771,7 +1791,7 @@ function buildAiDisplayFallback(raw, options = {}) {
         const text = displayText(source, [], true);
         if (text) result.segments = [{ type: 'dialogue', text }];
     }
-    const visible = (result.segments?.length || 0) + (result.sceneMessages?.length || 0) + (result.conversations?.length || 0) + (result.sceneNarration ? 1 : 0);
+    const visible = ((((__oc19 = result.segments) === null || __oc19 === void 0 ? void 0 : __oc19.length)) || 0) + ((((__oc20 = result.sceneMessages) === null || __oc20 === void 0 ? void 0 : __oc20.length)) || 0) + ((((__oc21 = result.conversations) === null || __oc21 === void 0 ? void 0 : __oc21.length)) || 0) + (result.sceneNarration ? 1 : 0);
     if (!visible) {
         result.displayFallback.empty = true;
         result.segments = [{ type: 'dialogue', text: '...' }];
@@ -1787,7 +1807,7 @@ function buildAiDisplayFallback(raw, options = {}) {
     }
     if (options.appType === 'cupid') {
         result.expression = 'neutral'; result.affinity = 0; result.forcedSexualViolation = 'none';
-        result.conversations?.forEach(item => { item.expression = 'neutral'; item.affinity = 0; });
+        (((__oc22 = result.conversations) === null || __oc22 === void 0 ? void 0 : __oc22.forEach(item => { item.expression = 'neutral'; item.affinity = 0; })));
     }
     return { content: JSON.stringify(result), ...result.displayFallback };
 }
@@ -1893,25 +1913,25 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
     }
 
     function assertChatCompletionSucceeded(payload = {}) {
-        if (payload?.reason === 'SAFETY_BLOCKED' || payload?.error === 'SAFETY_BLOCKED') {
+        if (((payload === null || payload === void 0 ? void 0 : payload.reason)) === 'SAFETY_BLOCKED' || ((payload === null || payload === void 0 ? void 0 : payload.error)) === 'SAFETY_BLOCKED') {
             throw Object.assign(new Error('SAFETY_BLOCKED'), { reason: 'SAFETY_BLOCKED', isSafetyBlocked: true });
         }
-        if (payload?.controlBlocked === true || payload?.reason === 'INPUT_CONTROL_BLOCKED' || payload?.error === 'INPUT_CONTROL_BLOCKED') {
-            throw Object.assign(new Error(payload?.message || 'INPUT_CONTROL_BLOCKED'), {
+        if (((payload === null || payload === void 0 ? void 0 : payload.controlBlocked)) === true || ((payload === null || payload === void 0 ? void 0 : payload.reason)) === 'INPUT_CONTROL_BLOCKED' || ((payload === null || payload === void 0 ? void 0 : payload.error)) === 'INPUT_CONTROL_BLOCKED') {
+            throw Object.assign(new Error(((payload === null || payload === void 0 ? void 0 : payload.message)) || 'INPUT_CONTROL_BLOCKED'), {
                 reason: 'INPUT_CONTROL_BLOCKED',
                 isControlBlocked: true,
-                userMessage: payload?.message || '',
-                inputHistory: payload?.inputHistory || { version: 1, treatment: 'unspoken_control', excludeCurrent: true },
-                turnId: payload?.turnId || '',
-                model: payload?.model || '',
-                providerRoute: payload?.providerRoute || payload?.provider || '',
-                outputLanguage: payload?.outputLanguage || '',
+                userMessage: ((payload === null || payload === void 0 ? void 0 : payload.message)) || '',
+                inputHistory: ((payload === null || payload === void 0 ? void 0 : payload.inputHistory)) || { version: 1, treatment: 'unspoken_control', excludeCurrent: true },
+                turnId: ((payload === null || payload === void 0 ? void 0 : payload.turnId)) || '',
+                model: ((payload === null || payload === void 0 ? void 0 : payload.model)) || '',
+                providerRoute: ((payload === null || payload === void 0 ? void 0 : payload.providerRoute)) || ((payload === null || payload === void 0 ? void 0 : payload.provider)) || '',
+                outputLanguage: ((payload === null || payload === void 0 ? void 0 : payload.outputLanguage)) || '',
             });
         }
-        if (payload?.retryExhausted === true
-            || payload?.model === 'local-structured-recovery'
-            || payload?.providerRoute === 'worker:local-structured-recovery'
-            || payload?.recoveryReason === 'UPSTREAM_UNDISPLAYABLE') {
+        if (((payload === null || payload === void 0 ? void 0 : payload.retryExhausted)) === true
+            || ((payload === null || payload === void 0 ? void 0 : payload.model)) === 'local-structured-recovery'
+            || ((payload === null || payload === void 0 ? void 0 : payload.providerRoute)) === 'worker:local-structured-recovery'
+            || ((payload === null || payload === void 0 ? void 0 : payload.recoveryReason)) === 'UPSTREAM_UNDISPLAYABLE') {
             const error = new Error('AI reply is temporarily unavailable. Please retry this turn.');
             error.reason = 'UPSTREAM_RETRIES_EXHAUSTED';
             error.retryExhausted = true;
@@ -1920,48 +1940,48 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         return payload;
     }
 
-    async function createAiResponseError(response) {
-        const error = new Error('HTTP ' + (response?.status || 0));
+    async function createAiResponseError(response) { var __oc23, __oc24, __oc25, __oc26, __oc27, __oc28, __oc29;
+        const error = new Error('HTTP ' + (((response === null || response === void 0 ? void 0 : response.status)) || 0));
         let payload = null;
-        try { payload = await response?.json?.(); } catch (_) { /* An HTML gateway error has no metadata. */ }
-        error.status = response?.status || 0;
-        error.reason = payload?.reason || payload?.error || '';
+        try { payload = await (((__oc23 = response === null || response === void 0 ? void 0 : response.json) === null || __oc23 === void 0 ? void 0 : __oc23.call(response))); } catch (_) { /* An HTML gateway error has no metadata. */ }
+        error.status = ((response === null || response === void 0 ? void 0 : response.status)) || 0;
+        error.reason = ((payload === null || payload === void 0 ? void 0 : payload.reason)) || ((payload === null || payload === void 0 ? void 0 : payload.error)) || '';
         error.isSafetyBlocked = error.reason === 'SAFETY_BLOCKED';
-        error.isBrowserVerificationError = payload?.error === 'AI_ACCESS_REQUIRED'
+        error.isBrowserVerificationError = ((payload === null || payload === void 0 ? void 0 : payload.error)) === 'AI_ACCESS_REQUIRED'
             || /^BROWSER_VERIFICATION_/.test(String(error.reason || ''));
         if (error.isBrowserVerificationError) {
             error.turnstileBotSuspected = true;
             error.turnstileErrorCode = String(error.reason || 'AI_ACCESS_REQUIRED').toLowerCase();
         }
         error.isControlBlocked = error.reason === 'INPUT_CONTROL_BLOCKED'
-            || payload?.controlBlocked === true
-            || response?.headers?.get?.('x-input-control-blocked') === '1';
+            || ((payload === null || payload === void 0 ? void 0 : payload.controlBlocked)) === true
+            || (((__oc25 = (__oc24 = response === null || response === void 0 ? void 0 : response.headers) === null || __oc24 === void 0 ? void 0 : __oc24.get) === null || __oc25 === void 0 ? void 0 : __oc25.call(__oc24, 'x-input-control-blocked'))) === '1';
         if (error.isControlBlocked) {
             error.reason = 'INPUT_CONTROL_BLOCKED';
-            error.userMessage = payload?.message || '';
-            error.inputHistory = payload?.inputHistory || { version: 1, treatment: 'unspoken_control', excludeCurrent: true };
-            error.turnId = payload?.turnId || '';
-            error.model = payload?.model || '';
-            error.providerRoute = payload?.providerRoute || payload?.provider || '';
-            error.outputLanguage = payload?.outputLanguage || '';
+            error.userMessage = ((payload === null || payload === void 0 ? void 0 : payload.message)) || '';
+            error.inputHistory = ((payload === null || payload === void 0 ? void 0 : payload.inputHistory)) || { version: 1, treatment: 'unspoken_control', excludeCurrent: true };
+            error.turnId = ((payload === null || payload === void 0 ? void 0 : payload.turnId)) || '';
+            error.model = ((payload === null || payload === void 0 ? void 0 : payload.model)) || '';
+            error.providerRoute = ((payload === null || payload === void 0 ? void 0 : payload.providerRoute)) || ((payload === null || payload === void 0 ? void 0 : payload.provider)) || '';
+            error.outputLanguage = ((payload === null || payload === void 0 ? void 0 : payload.outputLanguage)) || '';
         }
-        error.retryExhausted = response?.headers?.get?.('x-ai-retry-exhausted') === 'true'
-            || payload?.retryExhausted === true;
+        error.retryExhausted = (((__oc27 = (__oc26 = response === null || response === void 0 ? void 0 : response.headers) === null || __oc26 === void 0 ? void 0 : __oc26.get) === null || __oc27 === void 0 ? void 0 : __oc27.call(__oc26, 'x-ai-retry-exhausted'))) === 'true'
+            || ((payload === null || payload === void 0 ? void 0 : payload.retryExhausted)) === true;
         if (error.retryExhausted) error.reason = 'UPSTREAM_RETRIES_EXHAUSTED';
-        error.retryAfterSeconds = Number(payload?.retryAfterSeconds || response?.headers?.get?.('retry-after')) || 0;
+        error.retryAfterSeconds = Number(((payload === null || payload === void 0 ? void 0 : payload.retryAfterSeconds)) || (((__oc29 = (__oc28 = response === null || response === void 0 ? void 0 : response.headers) === null || __oc28 === void 0 ? void 0 : __oc28.get) === null || __oc29 === void 0 ? void 0 : __oc29.call(__oc28, 'retry-after')))) || 0;
         return error;
     }
 
-    function selectChatCompletionContent(payload = {}) {
+    function selectChatCompletionContent(payload = {}) { var __oc30, __oc31, __oc32, __oc33, __oc34;
         assertChatCompletionSucceeded(payload);
-        const finalContent = payload?.choices?.[0]?.message?.content;
+        const finalContent = (((__oc32 = (__oc31 = (__oc30 = payload === null || payload === void 0 ? void 0 : payload.choices) === null || __oc30 === void 0 ? void 0 : __oc30[0]) === null || __oc31 === void 0 ? void 0 : __oc31.message) === null || __oc32 === void 0 ? void 0 : __oc32.content));
         const fallback = typeof finalContent === 'string' ? finalContent.trim() : '';
-        const finishReason = String(payload?.choices?.[0]?.finish_reason || '').trim().toLowerCase();
-        const cannotPreserveRawStream = payload?.recovered === true
+        const finishReason = String((((__oc34 = (__oc33 = payload === null || payload === void 0 ? void 0 : payload.choices) === null || __oc33 === void 0 ? void 0 : __oc33[0]) === null || __oc34 === void 0 ? void 0 : __oc34.finish_reason)) || '').trim().toLowerCase();
+        const cannotPreserveRawStream = ((payload === null || payload === void 0 ? void 0 : payload.recovered)) === true
             || ['length', 'content_filter', 'safety', 'error'].includes(finishReason);
         if (cannotPreserveRawStream) return fallback;
 
-        return getCompleteDisplayableStreamReply(payload?.streamedContent) || fallback;
+        return getCompleteDisplayableStreamReply(((payload === null || payload === void 0 ? void 0 : payload.streamedContent))) || fallback;
     }
 
     // One budget covers transport and content recovery; the prompt and turn stay identical.
@@ -1980,8 +2000,8 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         return error;
     }
 
-    function decisionAffinityValue(value) {
-        if (value?.affinityEvaluation?.status !== 'evaluated') return null;
+    function decisionAffinityValue(value) { var __oc35;
+        if ((((__oc35 = value === null || value === void 0 ? void 0 : value.affinityEvaluation) === null || __oc35 === void 0 ? void 0 : __oc35.status)) !== 'evaluated') return null;
         const delta = value.affinity;
         return Number.isInteger(delta) && delta >= -50 && delta <= 3 ? delta : null;
     }
@@ -1989,11 +2009,11 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
     async function requestChatCompletion(endpoint, buildRequestInit, {
         assertCurrent = () => {}, onDelta = null, onReset = null,
         signal = null, timeoutMs = 120000, retryDelayMs = 400, fetchImpl = fetch
-    } = {}) {
+    } = {}) { var __oc37, __oc38, __oc39, __oc40, __oc41, __oc42, __oc43, __oc44, __oc45, __oc46, __oc47, __oc48, __oc49, __oc50;
         const controller = new AbortController();
         const cancel = () => controller.abort();
-        signal?.addEventListener('abort', cancel, { once: true });
-        if (signal?.aborted) cancel();
+        ((signal === null || signal === void 0 ? void 0 : signal.addEventListener('abort', cancel, { once: true })));
+        if (((signal === null || signal === void 0 ? void 0 : signal.aborted))) cancel();
         let timedOut = false;
         const timeout = setTimeout(() => { timedOut = true; cancel(); }, timeoutMs);
         let wantsStream = true;
@@ -2016,18 +2036,18 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
                     assertCurrent();
                     if (!response.ok) throw await createAiResponseError(response);
                     const payload = await readChatCompletionStream(response, { wasTimedOut: () => timedOut, presentation,
-                        onDelta: async event => { assertCurrent(event.event); if (event.event?.segmentPreview) await onDelta?.(event); } });
+                        onDelta: async event => { var __oc36; assertCurrent(event.event); if ((((__oc36 = event.event) === null || __oc36 === void 0 ? void 0 : __oc36.segmentPreview))) await ((onDelta === null || onDelta === void 0 ? void 0 : onDelta(event))); } });
                     assertCurrent(payload);
-                    if (hasCupidRepeatLoop(payload?.streamedContent) || hasCupidRepeatLoop(payload?.choices?.[0]?.message?.content)) {
-                        window.logCupidError?.(new Error('Repeated-token output blocked before display'), {
-                            source: 'cupid-reply-guard', errorType: 'DEGENERATE_REPEAT_LOOP', errorClass: 'upstream',
-                            extra: { turnId: payload?.turnId || presentation.turnId || '', rawPreview: String(payload?.streamedContent || payload?.choices?.[0]?.message?.content || '').slice(0, 1500) }
-                        });
-                        onReset?.();
+                    if (hasCupidRepeatLoop(((payload === null || payload === void 0 ? void 0 : payload.streamedContent))) || hasCupidRepeatLoop((((__oc39 = (__oc38 = (__oc37 = payload === null || payload === void 0 ? void 0 : payload.choices) === null || __oc37 === void 0 ? void 0 : __oc37[0]) === null || __oc38 === void 0 ? void 0 : __oc38.message) === null || __oc39 === void 0 ? void 0 : __oc39.content)))) {
+                        (((__oc40 = window.logCupidError) === null || __oc40 === void 0 ? void 0 : __oc40.call(window, new Error('Repeated-token output blocked before display'), {
+        source: 'cupid-reply-guard', errorType: 'DEGENERATE_REPEAT_LOOP', errorClass: 'upstream',
+        extra: { turnId: (payload === null || payload === void 0 ? void 0 : payload.turnId) || presentation.turnId || '', rawPreview: String((payload === null || payload === void 0 ? void 0 : payload.streamedContent) || ((__oc43 = (__oc42 = (__oc41 = payload === null || payload === void 0 ? void 0 : payload.choices) === null || __oc41 === void 0 ? void 0 : __oc41[0]) === null || __oc42 === void 0 ? void 0 : __oc42.message) === null || __oc43 === void 0 ? void 0 : __oc43.content) || '').slice(0, 1500) }
+    })));
+                        ((onReset === null || onReset === void 0 ? void 0 : onReset()));
                         return makeAiDisplayCompletion('', payload, presentation);
                     }
                     const reply = getCompleteDisplayableStreamReply(selectChatCompletionContent(payload));
-                    if (!reply || isAiDisplayJsonIncomplete(payload?.choices?.[0]?.message?.content) || payload?.choices?.[0]?.finish_reason === 'length') {
+                    if (!reply || isAiDisplayJsonIncomplete((((__oc46 = (__oc45 = (__oc44 = payload === null || payload === void 0 ? void 0 : payload.choices) === null || __oc44 === void 0 ? void 0 : __oc44[0]) === null || __oc45 === void 0 ? void 0 : __oc45.message) === null || __oc46 === void 0 ? void 0 : __oc46.content))) || (((__oc48 = (__oc47 = payload === null || payload === void 0 ? void 0 : payload.choices) === null || __oc47 === void 0 ? void 0 : __oc47[0]) === null || __oc48 === void 0 ? void 0 : __oc48.finish_reason)) === 'length') {
                         return makeAiDisplayCompletion(selectChatCompletionContent(payload), payload, { ...presentation, truncated: true });
                     }
                     payload.choices[0].message.content = reply;
@@ -2036,36 +2056,36 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
                 } catch (error) {
                     assertCurrent();
                     markAiRequestTimeout(error, timedOut && controller.signal.aborted);
-                    const terminal = controller.signal.aborted || error?.name === 'AbortError'
-                        || error?.retryExhausted || ['SAFETY_BLOCKED', 'INPUT_CONTROL_BLOCKED', 'STALE_TURN', 'VERSION_MISMATCH'].includes(error?.reason);
+                    const terminal = controller.signal.aborted || ((error === null || error === void 0 ? void 0 : error.name)) === 'AbortError'
+                        || ((error === null || error === void 0 ? void 0 : error.retryExhausted)) || ['SAFETY_BLOCKED', 'INPUT_CONTROL_BLOCKED', 'STALE_TURN', 'VERSION_MISMATCH'].includes(((error === null || error === void 0 ? void 0 : error.reason)));
                     const recoverable = isNetworkTransportError(error)
-                        || error?.isResponseDecodeFailure || ['STREAM_INTERRUPTED', 'STREAM_ERROR', 'EMPTY_AI_RESPONSE', 'INCOMPLETE_STRUCTURED_STREAM', 'PROVIDER_OUTPUT_CONTRACT_VIOLATION'].includes(error?.reason)
+                        || ((error === null || error === void 0 ? void 0 : error.isResponseDecodeFailure)) || ['STREAM_INTERRUPTED', 'STREAM_ERROR', 'EMPTY_AI_RESPONSE', 'INCOMPLETE_STRUCTURED_STREAM', 'PROVIDER_OUTPUT_CONTRACT_VIOLATION'].includes(((error === null || error === void 0 ? void 0 : error.reason)))
                         || (response && shouldRetryAiResponse(response));
                     if (terminal || !recoverable || attempt === 2 || (typeof navigator !== 'undefined' && navigator.onLine === false)) throw error;
-                    try { await response?.body?.cancel?.(); } catch (_) { /* best effort */ }
-                    onReset?.();
+                    try { await (((__oc50 = (__oc49 = response === null || response === void 0 ? void 0 : response.body) === null || __oc49 === void 0 ? void 0 : __oc49.cancel) === null || __oc50 === void 0 ? void 0 : __oc50.call(__oc49))); } catch (_) { /* best effort */ }
+                    ((onReset === null || onReset === void 0 ? void 0 : onReset()));
                     wantsStream = false;
                     await new Promise(resolve => setTimeout(resolve, retryDelayMs * (attempt + 1)));
                 }
             }
         } finally {
             clearTimeout(timeout);
-            signal?.removeEventListener('abort', cancel);
+            ((signal === null || signal === void 0 ? void 0 : signal.removeEventListener('abort', cancel)));
         }
     }
 
-    async function readChatCompletionStream(response, { onDelta = null, wasTimedOut = () => false, presentation = null } = {}) {
-        const contentType = String(response?.headers?.get?.('content-type') || '').toLowerCase();
-        if (!contentType.includes('text/event-stream') || !response?.body?.getReader) {
+    async function readChatCompletionStream(response, { onDelta = null, wasTimedOut = () => false, presentation = null } = {}) { var __oc51, __oc52, __oc53, __oc54, __oc55, __oc65, __oc66;
+        const contentType = String((((__oc52 = (__oc51 = response === null || response === void 0 ? void 0 : response.headers) === null || __oc51 === void 0 ? void 0 : __oc51.get) === null || __oc52 === void 0 ? void 0 : __oc52.call(__oc51, 'content-type'))) || '').toLowerCase();
+        if (!contentType.includes('text/event-stream') || !(((__oc53 = response === null || response === void 0 ? void 0 : response.body) === null || __oc53 === void 0 ? void 0 : __oc53.getReader))) {
             let payload;
             const received = typeof response.text === 'function' ? await readAiReplyPrefix(response) : null;
-            if (received?.error && !presentation) throw received.error;
-            if (received?.error?.name === 'AbortError' && !wasTimedOut()) throw received.error;
-            if (received?.interrupted && presentation) return makeAiDisplayCompletion(received.text, {}, { ...presentation, truncated: true });
-            const responseText = received?.text ?? null;
+            if (((received === null || received === void 0 ? void 0 : received.error)) && !presentation) throw received.error;
+            if ((((__oc54 = received === null || received === void 0 ? void 0 : received.error) === null || __oc54 === void 0 ? void 0 : __oc54.name)) === 'AbortError' && !wasTimedOut()) throw received.error;
+            if (((received === null || received === void 0 ? void 0 : received.interrupted)) && presentation) return makeAiDisplayCompletion(received.text, {}, { ...presentation, truncated: true });
+            const responseText = (((__oc55 = received === null || received === void 0 ? void 0 : received.text) !== null && __oc55 !== void 0 ? __oc55 : null));
             try { payload = responseText === null ? await response.json() : JSON.parse(responseText); } catch (error) {
-                if (presentation && error?.name === 'SyntaxError') return makeAiDisplayCompletion(responseText || '', {}, { ...presentation, truncated: true });
-                if (error?.name === 'SyntaxError') error.isResponseDecodeFailure = true;
+                if (presentation && ((error === null || error === void 0 ? void 0 : error.name)) === 'SyntaxError') return makeAiDisplayCompletion(responseText || '', {}, { ...presentation, truncated: true });
+                if (((error === null || error === void 0 ? void 0 : error.name)) === 'SyntaxError') error.isResponseDecodeFailure = true;
                 throw error;
             }
             return assertChatCompletionSucceeded(payload);
@@ -2078,7 +2098,7 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         let partialEvent = '';
         let finalPayload = null;
         let receivedSegmentPreview = false;
-        const processEvent = async eventText => {
+        const processEvent = async eventText => { var __oc56, __oc57, __oc58, __oc59, __oc60, __oc61, __oc62, __oc63, __oc64;
             const dataText = String(eventText || '')
                 .split(/\r?\n/)
                 .filter(line => line.startsWith('data:'))
@@ -2089,28 +2109,28 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
             let event;
             try {
                 event = JSON.parse(dataText);
-            } catch {
+            } catch (_err) {
                 partialEvent = dataText;
                 return;
             }
-            if (event?.segmentPreview === true && typeof event.content === 'string') {
+            if (((event === null || event === void 0 ? void 0 : event.segmentPreview)) === true && typeof event.content === 'string') {
                 receivedSegmentPreview = true;
                 rawContent = event.content;
                 if (typeof onDelta === 'function') await onDelta({ delta: '', content: rawContent, event });
                 return;
             }
             assertChatCompletionSucceeded(event);
-            if (event?.error) {
-                const error = new Error(event.error?.message || event.error?.reason || 'AI streaming failed');
-                error.reason = event.error?.reason || event.reason || 'STREAM_ERROR';
+            if (((event === null || event === void 0 ? void 0 : event.error))) {
+                const error = new Error((((__oc56 = event.error) === null || __oc56 === void 0 ? void 0 : __oc56.message)) || (((__oc57 = event.error) === null || __oc57 === void 0 ? void 0 : __oc57.reason)) || 'AI streaming failed');
+                error.reason = (((__oc58 = event.error) === null || __oc58 === void 0 ? void 0 : __oc58.reason)) || event.reason || 'STREAM_ERROR';
                 throw error;
             }
-            if (event?.final === true) {
+            if (((event === null || event === void 0 ? void 0 : event.final)) === true) {
                 finalPayload = event;
-                if (event.segmentStream || event.expressionDecision || event.affinityDecision) rawContent = event.choices?.[0]?.message?.content || rawContent;
+                if (event.segmentStream || event.expressionDecision || event.affinityDecision) rawContent = (((__oc61 = (__oc60 = (__oc59 = event.choices) === null || __oc59 === void 0 ? void 0 : __oc59[0]) === null || __oc60 === void 0 ? void 0 : __oc60.message) === null || __oc61 === void 0 ? void 0 : __oc61.content)) || rawContent;
                 return;
             }
-            const delta = event?.choices?.[0]?.delta?.content;
+            const delta = (((__oc64 = (__oc63 = (__oc62 = event === null || event === void 0 ? void 0 : event.choices) === null || __oc62 === void 0 ? void 0 : __oc62[0]) === null || __oc63 === void 0 ? void 0 : __oc63.delta) === null || __oc64 === void 0 ? void 0 : __oc64.content));
             if (typeof delta === 'string' && delta) {
                 rawContent += delta;
                 if (typeof onDelta === 'function') await onDelta({ delta, content: rawContent, event });
@@ -2133,19 +2153,19 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
             if (!finalPayload && buffer.trim()) await processEvent(buffer);
         } catch (error) {
             if (buffer.trim()) await processEvent(buffer);
-            if (receivedSegmentPreview && !['SAFETY_BLOCKED', 'STALE_TURN', 'INPUT_CONTROL_BLOCKED'].includes(error?.reason) && !error?.isControlBlocked
-                && !(error?.name === 'AbortError' && !wasTimedOut())) {
+            if (receivedSegmentPreview && !['SAFETY_BLOCKED', 'STALE_TURN', 'INPUT_CONTROL_BLOCKED'].includes(((error === null || error === void 0 ? void 0 : error.reason))) && !((error === null || error === void 0 ? void 0 : error.isControlBlocked))
+                && !(((error === null || error === void 0 ? void 0 : error.name)) === 'AbortError' && !wasTimedOut())) {
                 return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
             }
-            if (error?.retryExhausted || error?.isControlBlocked || ['SAFETY_BLOCKED', 'STALE_TURN', 'INPUT_CONTROL_BLOCKED'].includes(error?.reason) || (error?.name === 'AbortError' && !wasTimedOut())) throw error;
+            if (((error === null || error === void 0 ? void 0 : error.retryExhausted)) || ((error === null || error === void 0 ? void 0 : error.isControlBlocked)) || ['SAFETY_BLOCKED', 'STALE_TURN', 'INPUT_CONTROL_BLOCKED'].includes(((error === null || error === void 0 ? void 0 : error.reason))) || (((error === null || error === void 0 ? void 0 : error.name)) === 'AbortError' && !wasTimedOut())) throw error;
             if (presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
             const existingReply = getCompleteDisplayableStreamReply(rawContent);
             if (!existingReply && presentation) return makeAiDisplayCompletion(rawContent || partialEvent, {}, { ...presentation, truncated: true });
             if (!existingReply) throw error;
             finalPayload = { choices: [{ message: { content: existingReply }, finish_reason: 'stop' }] };
         } finally {
-            if (finalPayload) { try { await reader.cancel?.(); } catch (_) { /* best effort */ } }
-            reader.releaseLock?.();
+            if (finalPayload) { try { await (((__oc65 = reader.cancel) === null || __oc65 === void 0 ? void 0 : __oc65.call(reader))); } catch (_) { /* best effort */ } }
+            (((__oc66 = reader.releaseLock) === null || __oc66 === void 0 ? void 0 : __oc66.call(reader)));
         }
 
         if (!finalPayload && presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
@@ -2174,12 +2194,12 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         let remaining = Math.max(0, Number(visibleCharacters) || 0);
         const visible = [];
         for (const segment of segments) {
-            const characters = Array.from(String(segment?.text || ''));
+            const characters = Array.from(String(((segment === null || segment === void 0 ? void 0 : segment.text)) || ''));
             if (!characters.length) continue;
             if (visible.length > 0) remaining = Math.max(0, remaining - 2);
             if (remaining <= 0) break;
             const text = characters.slice(0, remaining).join('');
-            if (text) visible.push({ type: segment?.type === 'narration' ? 'narration' : 'dialogue', text });
+            if (text) visible.push({ type: ((segment === null || segment === void 0 ? void 0 : segment.type)) === 'narration' ? 'narration' : 'dialogue', text });
             remaining -= characters.length;
             if (remaining <= 0) break;
         }
@@ -2215,7 +2235,9 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         maxCharactersPerFrame = STREAMING_MAX_CHARACTERS_PER_FRAME,
         initialBufferChars = 24,
         initialBufferMs = 320,
-        now = () => (global.performance?.now?.() ?? Date.now()),
+        now = () => { var __oc67, __oc68, __oc69; return (
+(((__oc69 = (__oc68 = (__oc67 = global.performance) === null || __oc67 === void 0 ? void 0 : __oc67.now) === null || __oc68 === void 0 ? void 0 : __oc68.call(__oc67)) !== null && __oc69 !== void 0 ? __oc69 : Date.now()))
+); },
         scheduleFrame = callback => (typeof global.requestAnimationFrame === 'function'
             ? global.requestAnimationFrame(callback)
             : global.setTimeout(() => callback(now()), 16)),
@@ -2359,12 +2381,12 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         const reply = String(assistantText || '');
         const accepted = [];
         for (const fact of Array.isArray(facts) ? facts.slice(0, 24) : []) {
-            const key = String(fact?.key || '').trim();
-            const kind = String(fact?.kind || '').trim();
-            const value = String(fact?.value || '').replace(/\s+/g, ' ').trim().slice(0, 240);
-            const quote = String(fact?.quote || '').replace(/\s+/g, ' ').trim().slice(0, 180);
-            const basis = String(fact?.basis || '').trim();
-            const status = fact?.status === 'resolved' ? 'resolved' : 'active';
+            const key = String(((fact === null || fact === void 0 ? void 0 : fact.key)) || '').trim();
+            const kind = String(((fact === null || fact === void 0 ? void 0 : fact.kind)) || '').trim();
+            const value = String(((fact === null || fact === void 0 ? void 0 : fact.value)) || '').replace(/\s+/g, ' ').trim().slice(0, 240);
+            const quote = String(((fact === null || fact === void 0 ? void 0 : fact.quote)) || '').replace(/\s+/g, ' ').trim().slice(0, 180);
+            const basis = String(((fact === null || fact === void 0 ? void 0 : fact.basis)) || '').trim();
+            const status = ((fact === null || fact === void 0 ? void 0 : fact.status)) === 'resolved' ? 'resolved' : 'active';
             if (!/^[\p{L}\p{N}_:-]{1,64}$/u.test(key) || !value || [...quote].length < 4) continue;
             if (!['address', 'promise', 'secret', 'place', 'object', 'boundary', 'like', 'dislike'].includes(kind)) continue;
             const userSpeech = basis === 'user_speech' && spoken.includes(quote);

@@ -273,9 +273,9 @@ test('every Cupid free-talk surface validates buffered SSE before paced display 
     assert.match(gallery, /characterDelayMs:\s*50/);
     assert.match(gallery, /maxCharactersPerFrame:\s*1/);
     assert.match(dialogue, /renderStreamingText\(/);
-    assert.match(main, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidChatLog/);
-    assert.match(main, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidGroupChatLog/);
-    assert.match(gallery, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidChatLog/);
+    assert.match(main, /Promise\.resolve\(\)\.then\(\(\) => \{\s*(?:var __oc[^;]+;\s*)?return \(\s*window\.saveCupidChatLog/);
+    assert.match(main, /Promise\.resolve\(\)\.then\(\(\) => \{\s*(?:var __oc[^;]+;\s*)?return \(\s*window\.saveCupidGroupChatLog/);
+    assert.match(gallery, /Promise\.resolve\(\)\.then\(\(\) => \{\s*(?:var __oc[^;]+;\s*)?return \(\s*window\.saveCupidChatLog/);
 });
 
 test('gallery outings stay after the cache boundary and birthdays are calendar-only', () => {
@@ -1159,14 +1159,14 @@ test('main story keeps every character message for the current run', () => {
     const latestEnd = freeTalk.indexOf('    async sendChatMessage(', latestStart);
     const latest = freeTalk.slice(latestStart, latestEnd);
     assert.doesNotMatch(latest, /\.filter\(/);
-    assert.match(latest, /lastMessage\?\.role === 'user'/);
+    assert.match(latest, /lastMessage\.role\)\)\s*===\s*'user'/);
 
     const gallery = read('assets/js/gallery-freetalk.js');
     const galleryStart = gallery.indexOf('    _forceLatestUserMessageLast(');
     const galleryEnd = gallery.indexOf('    async _handleSend(', galleryStart);
     const galleryLatest = gallery.slice(galleryStart, galleryEnd);
     assert.doesNotMatch(galleryLatest, /\.filter\(/);
-    assert.match(galleryLatest, /lastMessage\?\.role === 'user'/);
+    assert.match(galleryLatest, /lastMessage\.role\)\)\s*===\s*'user'/);
 
     const location = freeTalk.slice(freeTalk.indexOf('const locNames = {'), freeTalk.indexOf('// 캐릭터 정보 수집'));
     assert.match(location, /locByStem\[bgStem\]/);
@@ -1196,7 +1196,7 @@ test('main relationship aftermath survives save import and is isolated per chara
     assert.match(restored.getRelationshipAftermath('Yuna').causes[0].excerpt, /경계/);
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /buildRelationshipAftermathBlock/);
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /updateRelationshipAftermath/);
-    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /window\.saveGameState\?\.\(\)/);
+    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /window\.saveGameState[\s\S]{0,60}call\(window\)/);
 });
 
 test('main state affinity rebalance lowers only legacy 100-point saves once', () => {
@@ -1383,7 +1383,7 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(freeTalk, /speakerId: charKey,[\s\S]*?speakerName: scene\.name/);
     assert.match(freeTalk, /speakerStates: rendered\.map\(item => \(\{/);
     assert.match(freeTalk, /setChatMemory\(groupKey, requestHistory\)/);
-    assert.match(freeTalk, /addGroupConversationMemory\?\.\(\{/);
+    assert.match(freeTalk, /this\.stateManager\)\.addGroupConversationMemory[\s\S]{0,100}call\(__oc\d+,\s*\{/);
     assert.match(freeTalk, /includeGroupConversations: false/);
     assert.doesNotMatch(freeTalk, /positiveBudget/);
     assert.match(freeTalk, /const GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX = 3;/);
@@ -1402,13 +1402,13 @@ test('day-five confrontation uses two-speaker rendering, bounded recovery, and c
     assert.match(config, /\$\{kind\}_queue_dropped/);
     assert.doesNotMatch(config, /errorType: 'chat_log_queue_transient_failure'/);
     assert.doesNotMatch(config, /group_chat_log_direct_transient_failure/);
-    assert.match(freeTalk, /Promise\.resolve\(\)\.then\(\(\) => window\.saveCupidGroupChatLog\(\{/);
+    assert.match(freeTalk, /Promise\.resolve\(\)\.then\(\(\) => \{\s*(?:var __oc[^;]+;\s*)?return \(\s*window\.saveCupidGroupChatLog\(\{/);
     assert.doesNotMatch(freeTalk, /await window\.saveCupidGroupChatLog\(\{/);
     assert.match(config, /window\.saveCupidGroupChatLog = saveCupidGroupChatLog/);
     assert.match(css, /group-freetalk-active/);
     assert.match(css, /data-group-speaker-side="right"/);
-    assert.match(freeTalk, /chatContainer\?\.classList\.add\('group-freetalk-mode'\)/);
-    assert.match(freeTalk, /chatContainer\?\.classList\.remove\('group-freetalk-mode'\)/);
+    assert.match(freeTalk, /chatContainer[\s\S]{0,60}classList\.add\('group-freetalk-mode'\)/);
+    assert.match(freeTalk, /chatContainer[\s\S]{0,60}classList\.remove\('group-freetalk-mode'\)/);
     assert.match(freeTalk, /this\.groupParticipants\s*\.map\(participant => normalized\.find\(conversation => conversation\.speakerId === participant\.id\)\)/);
     assert.match(freeTalk, /ordered\.length !== this\.groupParticipants\.length/);
     assert.doesNotMatch(freeTalk, /_enforceGroupOpeningLoss/);
@@ -1618,14 +1618,14 @@ test('day-two student rivalry and day-three adult social groups use the highest-
     assert.match(freeTalk, /focus_with_highest_other_affinity/);
     assert.match(freeTalk, /right\.affinity - left\.affinity \|\| left\.priority - right\.priority/);
     assert.match(freeTalk, /scene\.dynamicGroupName/);
-    assert.match(freeTalk, /scene\?\.groupAftermathCause/);
+    assert.match(freeTalk, /scene\s*===\s*null[\s\S]{0,60}scene\.groupAftermathCause/);
     assert.match(renderer, /'groupLocation'/);
     assert.match(renderer, /'groupChoiceState'/);
     assert.match(renderer, /'groupAftermathCause'/);
     assert.match(renderer, /'companionTexts'/);
     assert.match(freeTalk, /_buildGroupOpeningDialogues\(scene, participants = \[\]\)/);
     assert.match(freeTalk, /_waitForGroupOpeningAdvance\(openingEpoch, sceneId, remaining\)/);
-    assert.match(freeTalk, /scene\?\.companionTexts/);
+    assert.match(freeTalk, /scene\s*===\s*null[\s\S]{0,60}scene\.companionTexts/);
     assert.match(freeTalk, /openingDialogues\.length/);
 
     const nurseI18n = JSON.parse(read('assets/js/i18n/ko/day3_3_afterschool.json')).after3_group_nurse_companion;
@@ -2357,9 +2357,9 @@ test('game and gallery FreeTalk inputs use the shared keyboard rule', () => {
     const gameEngine = read('assets/js/modules/GameEngine.js');
     const gallery = read('assets/js/gallery-freetalk.js');
 
-    assert.match(gameEngine, /chatInput\.addEventListener\('keydown',[\s\S]*MessageComposerUtils\?\.shouldSubmitOnEnter/);
-    assert.match(gameEngine, /chatSendBtn\?\.click\(\)/);
-    assert.match(gallery, /input\.addEventListener\('keydown',[\s\S]*MessageComposerUtils\?\.shouldSubmitOnEnter/);
+    assert.match(gameEngine, /chatInput\.addEventListener\('keydown',[\s\S]*MessageComposerUtils[\s\S]{0,60}shouldSubmitOnEnter/);
+    assert.match(gameEngine, /chatSendBtn[\s\S]{0,60}click\(\)/);
+    assert.match(gallery, /input\.addEventListener\('keydown',[\s\S]*MessageComposerUtils[\s\S]{0,60}shouldSubmitOnEnter/);
     assert.match(gallery, /event\.preventDefault\(\);\s*this\._handleSend\(\);/);
 });
 

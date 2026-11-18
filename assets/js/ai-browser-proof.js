@@ -1,10 +1,11 @@
 (function (root) {
     'use strict';
     if (root.AiBrowserProof) return;
+    if (typeof root.fetch !== 'function') return;
     const SITEKEY = '0x4AAAAAAFuc4-X-L72BjMVG';
     const fetchOriginal = root.fetch.bind(root);
     let loading, queue = Promise.resolve(), retryBanner = null, forceInteractive = false, firstFreeAllowed = true, fpMemo = '', fpPromise = null;
-    async function computeFingerprint() {
+    async function computeFingerprint() { var __oc0;
         if (fpMemo) return fpMemo;
         const parts = [];
         try {
@@ -40,7 +41,7 @@
                 const widths = [];
                 for (const font of ['monospace', 'sans-serif', 'serif', '"Malgun Gothic",sans-serif', '"Apple SD Gothic Neo",sans-serif', '"Yu Gothic",sans-serif', '"Segoe UI",sans-serif']) {
                     ctx.font = `72px ${font}`;
-                    widths.push(Math.round(Number(ctx.measureText('mmmmmmmmmmlli')?.width) || 0));
+                    widths.push(Math.round(Number((((__oc0 = ctx.measureText('mmmmmmmmmmlli')) === null || __oc0 === void 0 ? void 0 : __oc0.width))) || 0));
                 }
                 parts.push(widths.join(','));
             }
@@ -60,7 +61,9 @@
     void fingerprint();
     const isBotCode = code => /^(300\d*|600\d*)$/.test(String(code || ''));
     const isRetryableCode = code => /^(110600|110620|200500|300\d*|600\d*)$/.test(String(code || ''));
-    const lang = () => String(root.GAME_LANG || document.documentElement?.lang || 'en').toLowerCase().slice(0, 2);
+    const lang = () => { var __oc1; return (
+String(root.GAME_LANG || (((__oc1 = document.documentElement) === null || __oc1 === void 0 ? void 0 : __oc1.lang)) || 'en').toLowerCase().slice(0, 2)
+); };
     const isClockSkewCode = code => String(code || '') === '200100';
     const message = (botSuspected = false, clockSkew = false) => (clockSkew ? {
         ko: '기기의 날짜와 시간이 맞지 않아 인증할 수 없어요. 자동 시간 설정을 켠 뒤 다시 시도해 주세요.',
@@ -97,15 +100,15 @@
         es: 'Volver a verificar', fr: 'Vérifier à nouveau', de: 'Erneut prüfen',
         pt: 'Verificar novamente', zh: '重新验证',
     })[lang()] || 'Verify again';
-    function failure(retryable = false, meta = {}) {
+    function failure(retryable = false, meta = {}) { var __oc2, __oc3, __oc4;
         const code = String(meta.code || 'unknown');
         const codes = Array.isArray(meta.codes) && meta.codes.length ? meta.codes.map(String) : [code];
-        const botSuspected = Boolean(meta.botSuspected ?? codes.some(isBotCode));
+        const botSuspected = Boolean((((__oc2 = meta.botSuspected) !== null && __oc2 !== void 0 ? __oc2 : codes.some(isBotCode))));
         const info = {
             turnstileErrorCode: code,
             turnstileErrorCodes: codes,
             turnstileWidgetLoaded: Boolean(meta.widgetLoaded),
-            turnstileScriptLoaded: Boolean(meta.scriptLoaded ?? root.turnstile?.render),
+            turnstileScriptLoaded: Boolean((((__oc3 = meta.scriptLoaded) !== null && __oc3 !== void 0 ? __oc3 : (__oc4 = root.turnstile) === null || __oc4 === void 0 ? void 0 : __oc4.render))),
             turnstileBotSuspected: botSuspected,
             turnstileStage: String(meta.stage || 'unknown'),
             turnstileAttempts: Number(meta.attempts) || 1,
@@ -115,64 +118,66 @@
         const clockSkew = isClockSkewCode(code) || (codes.length > 0 && codes.every(isClockSkewCode));
         return Object.assign(new Error(message(botSuspected, clockSkew)), { verificationRetryable: retryable }, info);
     }
-    function clearRetryBanner() {
+    function clearRetryBanner() { var __oc5;
         if (!retryBanner) return;
-        try { retryBanner.remove?.(); } catch (_) {}
+        try { (((__oc5 = retryBanner.remove) === null || __oc5 === void 0 ? void 0 : __oc5.call(retryBanner))); } catch (_) {}
         retryBanner = null;
     }
-    function retryPendingAction() {
+    function retryPendingAction() { var __oc6, __oc7, __oc8;
         forceInteractive = true;
-        if (!root.turnstile?.render) loading = null;
+        if (!(((__oc6 = root.turnstile) === null || __oc6 === void 0 ? void 0 : __oc6.render))) loading = null;
         clearRetryBanner();
         const doc = typeof document !== 'undefined' ? document : null;
-        if (doc?.querySelector) {
+        if (((doc === null || doc === void 0 ? void 0 : doc.querySelector))) {
             for (const [inputSel, btnSel] of [['#ft-input', '#ft-send-btn'], ['#chat-input', '#chat-send'], ['#message-input', '#send']]) {
                 const input = doc.querySelector(inputSel), btn = doc.querySelector(btnSel);
                 if (input && btn && !btn.disabled && String(input.value || '').trim()) {
-                    btn.click?.();
+                    (((__oc7 = btn.click) === null || __oc7 === void 0 ? void 0 : __oc7.call(btn)));
                     return true;
                 }
             }
         }
         const app = root.haremApp;
-        if (app?.activeCharacterId && Array.isArray(app.chatManager?.conversation) && app.chatManager.conversation.length === 0
+        if (((app === null || app === void 0 ? void 0 : app.activeCharacterId)) && Array.isArray((((__oc8 = app.chatManager) === null || __oc8 === void 0 ? void 0 : __oc8.conversation))) && app.chatManager.conversation.length === 0
             && typeof app._triggerAutoGreeting === 'function') {
             void app._triggerAutoGreeting('first-greeting');
             return true;
         }
         return false;
     }
-    function showRetryBanner(error) {
+    function showRetryBanner(error) { var __oc9, __oc10, __oc12, __oc13, __oc14;
         try {
             clearRetryBanner();
             const container = document.body || document.documentElement;
-            if (!container?.append || typeof document.createElement !== 'function') return;
+            if (!((container === null || container === void 0 ? void 0 : container.append)) || typeof document.createElement !== 'function') return;
             const wrap = document.createElement('div');
             wrap.className = 'ai-browser-verification-retry';
-            wrap.setAttribute?.('role', 'alert');
+            (((__oc9 = wrap.setAttribute) === null || __oc9 === void 0 ? void 0 : __oc9.call(wrap, 'role', 'alert')));
             wrap.style.cssText = 'position:fixed;z-index:2147483647;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));display:flex;align-items:center;gap:10px;max-width:calc(100vw - 24px);padding:10px 14px;border-radius:999px;background:rgba(20,22,30,0.94);color:#fff;font:500 13px/1.35 system-ui,-apple-system,sans-serif;box-shadow:0 8px 24px rgba(0,0,0,0.35);';
             const text = document.createElement('span');
             text.className = 'ai-browser-verification-retry-text';
-            text.textContent = error?.message || message(Boolean(error?.turnstileBotSuspected));
+            text.textContent = ((error === null || error === void 0 ? void 0 : error.message)) || message(Boolean(((error === null || error === void 0 ? void 0 : error.turnstileBotSuspected))));
             const btn = document.createElement('button');
             btn.type = 'button';
             btn.className = 'ai-browser-verification-retry-btn';
-            btn.setAttribute?.('data-ai-verify-retry', 'true');
+            (((__oc10 = btn.setAttribute) === null || __oc10 === void 0 ? void 0 : __oc10.call(btn, 'data-ai-verify-retry', 'true')));
             btn.textContent = retryLabel();
             btn.style.cssText = 'flex-shrink:0;padding:6px 12px;border:0;border-radius:999px;background:#ff4d8d;color:#fff;font:600 12px/1 system-ui,-apple-system,sans-serif;cursor:pointer;';
-            const onRetry = event => {
-                event?.preventDefault?.();
+            const onRetry = event => { var __oc11;
+                (((__oc11 = event === null || event === void 0 ? void 0 : event.preventDefault) === null || __oc11 === void 0 ? void 0 : __oc11.call(event)));
                 retryPendingAction();
             };
             btn.onclick = onRetry;
-            btn.addEventListener?.('click', onRetry);
-            wrap.append ? wrap.append(text, btn) : (wrap.appendChild?.(text), wrap.appendChild?.(btn));
+            (((__oc12 = btn.addEventListener) === null || __oc12 === void 0 ? void 0 : __oc12.call(btn, 'click', onRetry)));
+            wrap.append ? wrap.append(text, btn) : ((((__oc13 = wrap.appendChild) === null || __oc13 === void 0 ? void 0 : __oc13.call(wrap, text))), (((__oc14 = wrap.appendChild) === null || __oc14 === void 0 ? void 0 : __oc14.call(wrap, btn))));
             wrap.retryButton = btn;
             retryBanner = wrap;
             container.append(wrap);
         } catch (_) {}
     }
-    const aborted = signal => signal?.reason || new DOMException('Aborted', 'AbortError');
+    const aborted = signal => { return (
+((signal === null || signal === void 0 ? void 0 : signal.reason)) || new DOMException('Aborted', 'AbortError')
+); };
     function abortable(promise, signal) {
         if (!signal) return promise;
         if (signal.aborted) return Promise.reject(aborted(signal));
@@ -188,18 +193,18 @@
             || (url.origin === location.origin && url.pathname === '/api/ai');
     }
     function visible(signal) {
-        if (signal?.aborted) return Promise.reject(aborted(signal));
+        if (((signal === null || signal === void 0 ? void 0 : signal.aborted))) return Promise.reject(aborted(signal));
         if (document.visibilityState !== 'hidden') return Promise.resolve();
         return new Promise((resolve, reject) => {
             const finish = error => {
                 document.removeEventListener('visibilitychange', changed);
-                signal?.removeEventListener('abort', cancel);
+                ((signal === null || signal === void 0 ? void 0 : signal.removeEventListener('abort', cancel)));
                 error ? reject(error) : resolve();
             };
             const changed = () => { if (document.visibilityState !== 'hidden') finish(); };
             const cancel = () => finish(aborted(signal));
             document.addEventListener('visibilitychange', changed);
-            signal?.addEventListener('abort', cancel, { once: true });
+            ((signal === null || signal === void 0 ? void 0 : signal.addEventListener('abort', cancel, { once: true })));
             changed();
         });
     }
@@ -207,24 +212,24 @@
         const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${type || ''}\n${body}`));
         return Array.from(new Uint8Array(bytes), byte => byte.toString(16).padStart(2, '0')).join('');
     }
-    function load() {
-        if (root.turnstile?.render) return Promise.resolve(root.turnstile);
+    function load() { var __oc15;
+        if ((((__oc15 = root.turnstile) === null || __oc15 === void 0 ? void 0 : __oc15.render))) return Promise.resolve(root.turnstile);
         if (!loading) loading = new Promise((resolve, reject) => {
             const script = document.createElement('script');
             script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
             script.async = true;
             const timer = setTimeout(() => { script.remove(); reject(failure(true, { code: 'script-load-timeout', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); }, 20000);
-            script.onload = () => { clearTimeout(timer); root.turnstile?.render ? resolve(root.turnstile) : reject(failure(false, { code: 'script-missing-api', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); };
+            script.onload = () => { var __oc16; clearTimeout(timer); (((__oc16 = root.turnstile) === null || __oc16 === void 0 ? void 0 : __oc16.render)) ? resolve(root.turnstile) : reject(failure(false, { code: 'script-missing-api', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); };
             script.onerror = () => { clearTimeout(timer); script.remove(); reject(failure(true, { code: 'script-load-error', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); };
             document.head.append(script);
         }).catch(error => { loading = null; throw error; });
         return loading;
     }
     async function tokenAttempt(hash, signal, attempt = 0) {
-        if (signal?.aborted) throw aborted(signal);
+        if (((signal === null || signal === void 0 ? void 0 : signal.aborted))) throw aborted(signal);
         const api = await abortable(load(), signal);
-        if (signal?.aborted) throw aborted(signal);
-        return new Promise((resolve, reject) => {
+        if (((signal === null || signal === void 0 ? void 0 : signal.aborted))) throw aborted(signal);
+        return new Promise((resolve, reject) => { var __oc17;
             const host = document.createElement('div');
             host.className = 'ai-browser-verification';
             host.style.cssText = 'position:fixed;z-index:2147483647;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));max-width:calc(100vw - 20px);';
@@ -236,13 +241,13 @@
             const meta = (stage, extra = {}) => Object.assign({ stage, appearance, attempts: attempt + 1, widgetLoaded: true, scriptLoaded: true }, extra);
             const finish = (error, value) => {
                 if (done) return;
-                done = true; clearTimeout(timer); signal?.removeEventListener('abort', cancel);
+                done = true; clearTimeout(timer); ((signal === null || signal === void 0 ? void 0 : signal.removeEventListener('abort', cancel)));
                 if (id !== undefined) { try { api.remove(id); } catch (_) {} }
                 host.remove(); error ? reject(error) : resolve(value);
             };
             const cancel = () => finish(aborted(signal));
             const timer = setTimeout(() => finish(failure(true, meta('widget-timeout', { code: 'widget-timeout', widgetLoaded: id !== undefined }))), 90000);
-            signal?.addEventListener('abort', cancel, { once: true });
+            ((signal === null || signal === void 0 ? void 0 : signal.addEventListener('abort', cancel, { once: true })));
             try {
                 id = api.render(host, { sitekey: SITEKEY, action: 'ai_request', cData: hash,
                     execution: 'execute', appearance, theme: 'auto', retry: 'never',
@@ -259,7 +264,7 @@
                 });
                 if (!done) api.execute(id);
                 else if (id !== undefined) { try { api.remove(id); } catch (_) {} }
-            } catch (_) { finish(failure(false, meta('render', { code: 'widget-render-exception', widgetLoaded: false, scriptLoaded: Boolean(root.turnstile?.render) }))); }
+            } catch (_) { finish(failure(false, meta('render', { code: 'widget-render-exception', widgetLoaded: false, scriptLoaded: Boolean((((__oc17 = root.turnstile) === null || __oc17 === void 0 ? void 0 : __oc17.render))) }))); }
         });
     }
     async function token(hash, signal) {
@@ -273,18 +278,18 @@
                 return value;
             }
             catch (error) {
-                if (signal?.aborted) throw aborted(signal);
-                if (error?.turnstileErrorCode) codes.push(String(error.turnstileErrorCode));
-                if (attempt || !error?.verificationRetryable) {
-                    const finalError = failure(Boolean(error?.verificationRetryable), {
-                        code: error?.turnstileErrorCode || codes.at(-1) || 'unknown',
+                if (((signal === null || signal === void 0 ? void 0 : signal.aborted))) throw aborted(signal);
+                if (((error === null || error === void 0 ? void 0 : error.turnstileErrorCode))) codes.push(String(error.turnstileErrorCode));
+                if (attempt || !((error === null || error === void 0 ? void 0 : error.verificationRetryable))) {
+                    const finalError = failure(Boolean(((error === null || error === void 0 ? void 0 : error.verificationRetryable))), {
+                        code: ((error === null || error === void 0 ? void 0 : error.turnstileErrorCode)) || codes.at(-1) || 'unknown',
                         codes,
-                        widgetLoaded: error?.turnstileWidgetLoaded,
-                        scriptLoaded: error?.turnstileScriptLoaded,
-                        botSuspected: error?.turnstileBotSuspected || codes.some(isBotCode),
-                        stage: error?.turnstileStage || 'unknown',
+                        widgetLoaded: ((error === null || error === void 0 ? void 0 : error.turnstileWidgetLoaded)),
+                        scriptLoaded: ((error === null || error === void 0 ? void 0 : error.turnstileScriptLoaded)),
+                        botSuspected: ((error === null || error === void 0 ? void 0 : error.turnstileBotSuspected)) || codes.some(isBotCode),
+                        stage: ((error === null || error === void 0 ? void 0 : error.turnstileStage)) || 'unknown',
                         attempts: attempt + 1,
-                        appearance: error?.turnstileAppearance || '',
+                        appearance: ((error === null || error === void 0 ? void 0 : error.turnstileAppearance)) || '',
                     });
                     showRetryBanner(finalError);
                     throw finalError;
@@ -292,8 +297,8 @@
             }
         }
     }
-    async function protectedFetch(input, init) {
-        const method = String(init?.method || (input instanceof Request ? input.method : 'GET')).toUpperCase();
+    async function protectedFetch(input, init) { var __oc18, __oc19;
+        const method = String(((init === null || init === void 0 ? void 0 : init.method)) || (input instanceof Request ? input.method : 'GET')).toUpperCase();
         const url = new URL(input instanceof Request ? input.url : String(input), location.href);
         if (method !== 'POST' || !protectedUrl(url)) return fetchOriginal(input, init);
         const request = new Request(input instanceof Request ? input : url.href, init);
@@ -304,9 +309,9 @@
             const response = await fetchOriginal(request.clone());
             if (![403, 503].includes(response.status)) return response;
             const error = await response.clone().json().catch(() => null);
-            if (error?.error !== 'AI_ACCESS_REQUIRED'
+            if (((error === null || error === void 0 ? void 0 : error.error)) !== 'AI_ACCESS_REQUIRED'
                 || !['BROWSER_VERIFICATION_REQUIRED', 'BROWSER_VERIFICATION_FAILED', 'BROWSER_VERIFICATION_UNAVAILABLE'].includes(error.reason)) return response;
-            await response.body?.cancel();
+            await (((__oc18 = response.body) === null || __oc18 === void 0 ? void 0 : __oc18.cancel()));
         }
         const body = await request.clone().text();
         const hash = await digest(requestType, body);
@@ -323,7 +328,7 @@
             if (attempt || ![403, 503].includes(response.status)) {
                 if (attempt && [403, 503].includes(response.status)) {
                     const terminalErr = await response.clone().json().catch(() => null);
-                    if (terminalErr?.error === 'AI_ACCESS_REQUIRED') {
+                    if (((terminalErr === null || terminalErr === void 0 ? void 0 : terminalErr.error)) === 'AI_ACCESS_REQUIRED') {
                         showRetryBanner(failure(true, {
                             code: String(terminalErr.reason || 'server-verify-failed').toLowerCase(),
                             stage: 'server-verify',
@@ -337,9 +342,9 @@
                 return response;
             }
             const error = await response.clone().json().catch(() => null);
-            if (error?.error !== 'AI_ACCESS_REQUIRED'
+            if (((error === null || error === void 0 ? void 0 : error.error)) !== 'AI_ACCESS_REQUIRED'
                 || !['BROWSER_VERIFICATION_FAILED', 'BROWSER_VERIFICATION_UNAVAILABLE'].includes(error.reason)) return response;
-            await response.body?.cancel();
+            await (((__oc19 = response.body) === null || __oc19 === void 0 ? void 0 : __oc19.cancel()));
         }
     }
     root.AiBrowserProof = Object.freeze({ fetch: protectedFetch, retry: retryPendingAction, fingerprint });

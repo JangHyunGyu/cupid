@@ -1,3 +1,4 @@
+var __oc2, __oc3, __oc48;
 /**
  * ============================================================================
  * config.js - 게임 전역 설정 상수 및 유틸리티 함수
@@ -50,19 +51,19 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.382";
+const ASSET_VERSION = "2.9.383";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
 function _getCupidPromptEpochMessageText(message) {
-    const content = message?.content;
+    const content = ((message === null || message === void 0 ? void 0 : message.content));
     if (typeof content === 'string') return content;
     if (!Array.isArray(content)) return String(content || '');
 
     return content.map(part => {
         if (typeof part === 'string') return part;
-        if (part?.type === 'text') return part.text || '';
-        if (part?.type === 'image_url' || part?.image_url) return '[image attachment]';
+        if (((part === null || part === void 0 ? void 0 : part.type)) === 'text') return part.text || '';
+        if (((part === null || part === void 0 ? void 0 : part.type)) === 'image_url' || ((part === null || part === void 0 ? void 0 : part.image_url))) return '[image attachment]';
         return '';
     }).filter(Boolean).join(' ');
 }
@@ -76,9 +77,9 @@ function _getCupidPromptEpochMessageKey(message) {
     }
 
     return [
-        message?.role || '',
-        message?.speakerId || message?.speakerName || '',
-        Number(message?.timestamp || message?.ts || 0) || '',
+        ((message === null || message === void 0 ? void 0 : message.role)) || '',
+        ((message === null || message === void 0 ? void 0 : message.speakerId)) || ((message === null || message === void 0 ? void 0 : message.speakerName)) || '',
+        Number(((message === null || message === void 0 ? void 0 : message.timestamp)) || ((message === null || message === void 0 ? void 0 : message.ts)) || 0) || '',
         (hash >>> 0).toString(36)
     ].join('|');
 }
@@ -95,7 +96,7 @@ function _compactCupidPromptEpochMessages(messages = []) {
         if (!rawText) return '';
 
         const text = rawText.length > 420 ? `${rawText.slice(0, 417).trim()}...` : rawText;
-        const label = message?.speakerName || (message?.role === 'assistant' ? 'Character' : 'User');
+        const label = ((message === null || message === void 0 ? void 0 : message.speakerName)) || (((message === null || message === void 0 ? void 0 : message.role)) === 'assistant' ? 'Character' : 'User');
         return `${label}: ${text}`;
     }).filter(Boolean).join('\n');
 }
@@ -116,12 +117,12 @@ function _mergeCupidPromptEpochCarryover(previousCarryover, droppedMessages, max
  * cap, older turns become a frozen checkpoint and only a small verbatim tail is
  * carried into the next epoch.
  */
-function buildCupidPromptEpoch(history, options = {}) {
+function buildCupidPromptEpoch(history, options = {}) { var __oc0, __oc1;
     if (!Array.isArray(history) || history.length === 0) {
         return { messages: [], state: null };
     }
 
-    const systemMessage = history[0]?.role === 'system' ? history[0] : null;
+    const systemMessage = (((__oc0 = history[0]) === null || __oc0 === void 0 ? void 0 : __oc0.role)) === 'system' ? history[0] : null;
     const source = (systemMessage ? history.slice(1) : history).filter(Boolean);
     if (source.length === 0) {
         return { messages: systemMessage ? [systemMessage] : [], state: null };
@@ -130,7 +131,7 @@ function buildCupidPromptEpoch(history, options = {}) {
     const maxMessages = Math.max(4, Number(options.maxMessages) || 5);
     const retainMessages = Math.max(2, Math.min(maxMessages - 1, Number(options.retainMessages) || 3));
     const carryoverChars = Math.max(800, Number(options.carryoverChars) || 2400);
-    const savedState = options.state?.version === CUPID_PROMPT_EPOCH_VERSION ? options.state : {};
+    const savedState = (((__oc1 = options.state) === null || __oc1 === void 0 ? void 0 : __oc1.version)) === CUPID_PROMPT_EPOCH_VERSION ? options.state : {};
     const state = {
         version: CUPID_PROMPT_EPOCH_VERSION,
         anchorKeys: Array.isArray(savedState.anchorKeys) ? savedState.anchorKeys : [],
@@ -203,20 +204,20 @@ const CUPID_IS_IOS = /iPhone|iPad|iPod/i.test(navigator.userAgent || '')
 let cupidKeyboardBaselineWidth = window.innerWidth || 0;
 let cupidKeyboardBaselineHeight = Math.max(
     window.innerHeight || 0,
-    document.documentElement?.clientHeight || 0,
-    window.visualViewport?.height || 0
+    (((__oc2 = document.documentElement) === null || __oc2 === void 0 ? void 0 : __oc2.clientHeight)) || 0,
+    (((__oc3 = window.visualViewport) === null || __oc3 === void 0 ? void 0 : __oc3.height)) || 0
 );
 
-function isCupidDesktopPointer() {
-    return window.matchMedia?.('(hover: hover) and (pointer: fine)').matches ?? false;
+function isCupidDesktopPointer() { var __oc4, __oc5;
+    return (((__oc5 = (__oc4 = window.matchMedia) === null || __oc4 === void 0 ? void 0 : __oc4.call(window, '(hover: hover) and (pointer: fine)').matches) !== null && __oc5 !== void 0 ? __oc5 : false));
 }
 
-function isCupidEditableElement(element) {
+function isCupidEditableElement(element) { var __oc6, __oc7;
     if (!element || element === document.body) return false;
-    return element.matches?.('input, textarea, [contenteditable="true"]') ?? false;
+    return (((__oc7 = (__oc6 = element.matches) === null || __oc6 === void 0 ? void 0 : __oc6.call(element, 'input, textarea, [contenteditable="true"]')) !== null && __oc7 !== void 0 ? __oc7 : false));
 }
 
-function updateCupidKeyboardBaseline() {
+function updateCupidKeyboardBaseline() { var __oc8;
     const viewport = window.visualViewport;
     const width = window.innerWidth || 0;
     const previousHeight = width === cupidKeyboardBaselineWidth ? cupidKeyboardBaselineHeight : 0;
@@ -224,12 +225,12 @@ function updateCupidKeyboardBaseline() {
     cupidKeyboardBaselineHeight = Math.max(
         previousHeight,
         window.innerHeight || 0,
-        document.documentElement?.clientHeight || 0,
-        viewport?.height || 0
+        (((__oc8 = document.documentElement) === null || __oc8 === void 0 ? void 0 : __oc8.clientHeight)) || 0,
+        ((viewport === null || viewport === void 0 ? void 0 : viewport.height)) || 0
     );
 }
 
-function getCupidKeyboardOffset(focusedElement = document.activeElement) {
+function getCupidKeyboardOffset(focusedElement = document.activeElement) { var __oc9, __oc10, __oc11, __oc12;
     updateCupidKeyboardBaseline();
     const viewport = window.visualViewport;
     if (window.innerWidth > 768 || !isCupidEditableElement(focusedElement)) {
@@ -239,13 +240,13 @@ function getCupidKeyboardOffset(focusedElement = document.activeElement) {
     const fullscreen = Boolean(
         document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement
     );
-    const virtualKeyboardHeight = Math.round(window.navigator?.virtualKeyboard?.boundingRect?.height || 0);
-    const viewportHeight = viewport?.height || window.innerHeight || 0;
-    const viewportTop = viewport?.offsetTop || 0;
+    const virtualKeyboardHeight = Math.round((((__oc11 = (__oc10 = (__oc9 = window.navigator) === null || __oc9 === void 0 ? void 0 : __oc9.virtualKeyboard) === null || __oc10 === void 0 ? void 0 : __oc10.boundingRect) === null || __oc11 === void 0 ? void 0 : __oc11.height)) || 0);
+    const viewportHeight = ((viewport === null || viewport === void 0 ? void 0 : viewport.height)) || window.innerHeight || 0;
+    const viewportTop = ((viewport === null || viewport === void 0 ? void 0 : viewport.offsetTop)) || 0;
     const layoutHeight = Math.max(
         cupidKeyboardBaselineHeight,
         window.innerHeight || 0,
-        document.documentElement?.clientHeight || 0,
+        (((__oc12 = document.documentElement) === null || __oc12 === void 0 ? void 0 : __oc12.clientHeight)) || 0,
         viewportHeight + viewportTop
     );
     const rawOffset = Math.max(
@@ -410,17 +411,17 @@ function inferCupidConversationDay(sessionId) {
     return null;
 }
 
-function resolveCupidConversationDay(value, sessionId) {
-    return inferCupidConversationDay(sessionId) ?? normalizeCupidConversationDay(value);
+function resolveCupidConversationDay(value, sessionId) { var __oc13;
+    return (((__oc13 = inferCupidConversationDay(sessionId)) !== null && __oc13 !== void 0 ? __oc13 : normalizeCupidConversationDay(value)));
 }
 
-function getCurrentCupidConversationDay() {
-    return normalizeCupidConversationDay(window.gameEngine?.stateManager?.currentDay);
+function getCurrentCupidConversationDay() { var __oc14, __oc15;
+    return normalizeCupidConversationDay((((__oc15 = (__oc14 = window.gameEngine) === null || __oc14 === void 0 ? void 0 : __oc14.stateManager) === null || __oc15 === void 0 ? void 0 : __oc15.currentDay)));
 }
 
 async function prepareCupidPromptMemoryRecall({ charId = '', value = '', messages = [] } = {}) {
     const core = window.CupidFreeTalkCore;
-    if (!charId || typeof fetch !== 'function' || !core?.getPromptMemoryRetrievalDecision) return [];
+    if (!charId || typeof fetch !== 'function' || !((core === null || core === void 0 ? void 0 : core.getPromptMemoryRetrievalDecision))) return [];
     const decision = core.getPromptMemoryRetrievalDecision(value, messages);
     if (!decision.retrieve) return [];
     const query = core.buildPromptMemoryQuery(value, messages);
@@ -445,12 +446,12 @@ async function prepareCupidPromptMemoryRecall({ charId = '', value = '', message
         }).then(async response => response.ok ? response.json() : null);
         const timeout = new Promise(resolve => {
             timer = setTimeout(() => {
-                controller?.abort();
+                ((controller === null || controller === void 0 ? void 0 : controller.abort()));
                 resolve(null);
             }, 4500);
         });
         const data = await Promise.race([request, timeout]);
-        return core.filterPromptMemoryHits(data?.hits, query, messages);
+        return core.filterPromptMemoryHits(((data === null || data === void 0 ? void 0 : data.hits)), query, messages);
     } catch (_) {
         return [];
     } finally {
@@ -515,12 +516,14 @@ async function postCupidDurable(path, charId, payload, { gallery = false, timeou
 
 async function prepareCupidDurableFacts(charId, { gallery = false } = {}) {
     const data = await postCupidDurable('memory-facts/query', charId, {}, { gallery });
-    return (Array.isArray(data?.facts) ? data.facts : []).filter(fact => fact?.status !== 'resolved');
+    return (Array.isArray(((data === null || data === void 0 ? void 0 : data.facts))) ? data.facts : []).filter(fact => { return (
+((fact === null || fact === void 0 ? void 0 : fact.status)) !== 'resolved'
+); });
 }
 
 function saveCupidDurableFacts({ charId = '', facts = [], userText = '', assistantText = '', gallery = false } = {}) {
     const core = window.CupidFreeTalkCore;
-    const accepted = typeof core?.acceptCupidDurableFacts === 'function'
+    const accepted = typeof ((core === null || core === void 0 ? void 0 : core.acceptCupidDurableFacts)) === 'function'
         ? core.acceptCupidDurableFacts(facts, userText, assistantText)
         : [];
     if (!charId || !accepted.length) return;
@@ -572,7 +575,7 @@ function makeCupidGroupChatLogClientId({ turnId, role, speakerId = '', messageIn
 // 디바이스 ID 첫 생성 시 1회 실행. 기존 base64 이미지는 R2로 변환 후 URL로 교체.
 // 본편: cupid_save → gameState.chatMemories[charName] = [...]
 // Gallery: cupid_freetalk_memory = { [charId]: [...] }
-async function migrateCupidChatHistoryToD1() {
+async function migrateCupidChatHistoryToD1() { var __oc16, __oc17;
     const FLAG = 'cupid_chat_migrated_v1';
     const userId = getCupidDeviceId();
     const language = getCupidLanguage();
@@ -690,13 +693,13 @@ async function migrateCupidChatHistoryToD1() {
             if (m) s = m[1].trim();
             const obj = JSON.parse(s);
             if (obj && typeof obj.text === 'string') return obj.text;
-        } catch {}
+        } catch (_err) {}
         return content;
     }
 
     // Saved history keeps the expression either as fields or inside the original JSON reply.
     function _recoveredExpressionFields(msg) {
-        if (msg?.role !== 'assistant') return {};
+        if (((msg === null || msg === void 0 ? void 0 : msg.role)) !== 'assistant') return {};
         let expression = typeof msg.expression === 'string' ? msg.expression : '';
         if (!expression && typeof msg.content === 'string') {
             const trimmed = msg.content.trim();
@@ -704,7 +707,7 @@ async function migrateCupidChatHistoryToD1() {
                 try {
                     const fenced = trimmed.match(/```(?:json)?\s*([\s\S]*?)\s*```/);
                     const obj = JSON.parse(fenced ? fenced[1].trim() : trimmed);
-                    if (typeof obj?.expression === 'string') expression = obj.expression;
+                    if (typeof ((obj === null || obj === void 0 ? void 0 : obj.expression)) === 'string') expression = obj.expression;
                 } catch (_) { /* Plain text replies carry no expression. */ }
             }
         }
@@ -755,7 +758,7 @@ async function migrateCupidChatHistoryToD1() {
     // v1 플래그가 이미 있어도 그룹 턴은 매 로드마다 결정적 clientMsgId로 재확인한다.
     // D1에는 upsert되므로 중복되지 않으며, 과거 배포에서 빠진 그룹 로그도 복구된다.
     try {
-        const groupMemories = parsedSave?.gameState?.groupConversationMemories;
+        const groupMemories = (((__oc16 = parsedSave === null || parsedSave === void 0 ? void 0 : parsedSave.gameState) === null || __oc16 === void 0 ? void 0 : __oc16.groupConversationMemories));
         if (Array.isArray(groupMemories)) {
             const recoveryOccurrences = new Map();
             const nextRecoveryOccurrence = ({ sessionId, role, speakerId, content }) => {
@@ -768,7 +771,9 @@ async function migrateCupidChatHistoryToD1() {
                 const memory = groupMemories[turnIndex];
                 if (!memory || typeof memory !== 'object') continue;
                 const participants = Array.isArray(memory.participants)
-                    ? memory.participants.map(item => String(item?.id || item || '')).filter(Boolean)
+                    ? memory.participants.map(item => { return (
+String(((item === null || item === void 0 ? void 0 : item.id)) || item || '')
+); }).filter(Boolean)
                     : [];
                 if (participants.length < 2) continue;
                 const sessionId = String(memory.sessionId || 'migrated-group');
@@ -808,8 +813,8 @@ async function migrateCupidChatHistoryToD1() {
                 const assistantMessages = Array.isArray(memory.assistantMessages) ? memory.assistantMessages : [];
                 for (let messageIndex = 0; messageIndex < assistantMessages.length; messageIndex++) {
                     const message = assistantMessages[messageIndex];
-                    const speakerId = String(message?.speakerId || '');
-                    if (!participants.includes(speakerId) || !String(message?.content || '').trim()) continue;
+                    const speakerId = String(((message === null || message === void 0 ? void 0 : message.speakerId)) || '');
+                    if (!participants.includes(speakerId) || !String(((message === null || message === void 0 ? void 0 : message.content)) || '').trim()) continue;
                     await postOne({
                         ...shared,
                         role: 'assistant',
@@ -851,7 +856,7 @@ async function migrateCupidChatHistoryToD1() {
     try {
         // 1. 본편 cupid_save
         if (parsedSave) {
-            const memories = parsedSave?.gameState?.chatMemories || {};
+            const memories = (((__oc17 = parsedSave === null || parsedSave === void 0 ? void 0 : parsedSave.gameState) === null || __oc17 === void 0 ? void 0 : __oc17.chatMemories)) || {};
             for (const charName of Object.keys(memories)) {
                 await migrateChatArray(charName, memories[charName], 'migrated-main', '1:1');
             }
@@ -909,12 +914,14 @@ class ChatLogOutbox {
     read(key) {
         let legacy = [];
         try { legacy = JSON.parse(this.get(key) || '[]'); } catch (_) {}
-        const entries = new Map((Array.isArray(legacy) ? legacy : []).filter(x => x?.clientMsgId).map(x => [x.clientMsgId, x]));
+        const entries = new Map((Array.isArray(legacy) ? legacy : []).filter(x => { return (
+(x === null || x === void 0 ? void 0 : x.clientMsgId)
+); }).map(x => [x.clientMsgId, x]));
         const keys = new Set(this.knownKeys);
         try { const storage = this.storage(); for (let i = 0; i < storage.length; i++) keys.add(storage.key(i)); } catch (_) {}
         const prefix = key + ':item:';
         for (const itemKey of keys) {
-            if (!itemKey?.startsWith(prefix)) continue;
+            if (!((itemKey === null || itemKey === void 0 ? void 0 : itemKey.startsWith(prefix)))) continue;
             try {
                 const journal = JSON.parse(this.get(itemKey) || 'null');
                 if (!journal) continue;
@@ -957,10 +964,10 @@ function writeCupidChatLogQueue(queue) {
     return chatLogOutbox.write(CUPID_CHAT_LOG_QUEUE_KEY, queue);
 }
 
-function currentCupidViewerIdentitySubject() {
+function currentCupidViewerIdentitySubject() { var __oc18, __oc19;
     const helper = typeof window !== 'undefined' ? window.HaremLogIdentity : null;
-    if (typeof helper?.capture === 'function') return helper.capture();
-    const id = String((typeof window !== 'undefined' && window.archerlabAccount?.user?.id) || '').trim().replace(/^al:/, '');
+    if (typeof ((helper === null || helper === void 0 ? void 0 : helper.capture)) === 'function') return helper.capture();
+    const id = String((typeof window !== 'undefined' && (((__oc19 = (__oc18 = window.archerlabAccount) === null || __oc18 === void 0 ? void 0 : __oc18.user) === null || __oc19 === void 0 ? void 0 : __oc19.id))) || '').trim().replace(/^al:/, '');
     return id ? `al:${id}` : 'guest';
 }
 
@@ -970,13 +977,15 @@ function enqueueCupidChatLog(entry) {
 
 function enqueueCupidChatLogs(entries = []) {
     const queue = readCupidChatLogQueue();
-    entries.filter(entry => entry?.clientMsgId).forEach(rawEntry => {
+    entries.filter(entry => { return (
+(entry === null || entry === void 0 ? void 0 : entry.clientMsgId)
+); }).forEach(rawEntry => {
         const index = queue.findIndex(item => item.clientMsgId === rawEntry.clientMsgId);
         const existing = index >= 0 ? queue[index] : null;
-        const hasIdentityRuntime = Boolean(typeof window !== 'undefined' && (window.HaremLogIdentity || window.archerlabAccount || existing?.viewerIdentitySubject || rawEntry.viewerIdentitySubject));
+        const hasIdentityRuntime = Boolean(typeof window !== 'undefined' && (window.HaremLogIdentity || window.archerlabAccount || ((existing === null || existing === void 0 ? void 0 : existing.viewerIdentitySubject)) || rawEntry.viewerIdentitySubject));
         const entry = rawEntry.role === 'user' && hasIdentityRuntime ? {
             ...rawEntry,
-            viewerIdentitySubject: String(existing?.viewerIdentitySubject || rawEntry.viewerIdentitySubject || currentCupidViewerIdentitySubject())
+            viewerIdentitySubject: String(((existing === null || existing === void 0 ? void 0 : existing.viewerIdentitySubject)) || rawEntry.viewerIdentitySubject || currentCupidViewerIdentitySubject())
         } : rawEntry;
         if (index < 0) queue.push(entry);
         else { const upgraded = (entry.content && entry.content !== existing.content) || (entry.logSource && entry.logSource !== existing.logSource); queue[index] = { ...existing, ...entry, ...(upgraded ? { attempts: 0, lastError: '', ...(entry.nextAttemptAt === undefined ? { nextAttemptAt: 0 } : {}) } : {}) }; }
@@ -1060,17 +1069,17 @@ function canonicalCharacterPathToLogicalId(raw) {
 
 // A portrait belongs to a speaker when its file name starts with that speaker's prefix (seyoun_, dain_ ...).
 // Unknown or custom speakers have no prefix to compare, so their portrait is accepted as is.
-function getCupidAvatarAssetPrefix(speaker) {
+function getCupidAvatarAssetPrefix(speaker) { var __oc20, __oc21;
     const rawSpeaker = String(speaker || '').trim();
     const wanted = rawSpeaker.toLowerCase();
     if (!wanted) return '';
-    const mappedKey = String(window.CHAR_NAME_MAP?.[rawSpeaker] || '').trim().toLowerCase();
+    const mappedKey = String((((__oc20 = window.CHAR_NAME_MAP) === null || __oc20 === void 0 ? void 0 : __oc20[rawSpeaker])) || '').trim().toLowerCase();
     const map = window.CHARACTER_EXPRESSIONS || {};
     const key = Object.keys(map).find(name => {
         const lower = name.toLowerCase();
         return lower === wanted || (mappedKey && lower === mappedKey);
     });
-    const normalCandidate = key && map[key]?.normal;
+    const normalCandidate = key && (((__oc21 = map[key]) === null || __oc21 === void 0 ? void 0 : __oc21.normal));
     const normalizedNormal = normalCandidate ? getCupidChatAvatarAssetFromPath(normalCandidate) : '';
     const match = String(normalizedNormal || normalCandidate || '').match(/characters\/([a-z0-9]+)_normal\.(?:webp|png)$/i);
     if (match) return match[1].toLowerCase();
@@ -1240,7 +1249,7 @@ async function fetchCupidLogOnce(url, init, timeoutMs = CUPID_LOG_REQUEST_TIMEOU
     const timeout = new Promise((_, reject) => {
         timer = setTimeout(() => {
             timedOut = true;
-            try { controller?.abort(); } catch (_) {}
+            try { ((controller === null || controller === void 0 ? void 0 : controller.abort())); } catch (_) {}
             const error = new Error(`fetch timeout after ${timeoutMs}ms`);
             error.name = 'TimeoutError';
             error.cupidFetchTimeout = true;
@@ -1261,7 +1270,7 @@ async function fetchCupidLogOnce(url, init, timeoutMs = CUPID_LOG_REQUEST_TIMEOU
             // text()가 읽는 중이면 본문이 잠겨 있어 cancel()이 거부됩니다. 잠긴 본문은 abort()가 이미 끊었으니
             // 잠기지 않았을 때만 취소하고, 거부된 프라미스도 받아 둡니다(받지 않으면 UnhandledRejection으로 남습니다).
             try {
-                const body = response?.body;
+                const body = ((response === null || response === void 0 ? void 0 : response.body));
                 if (body && !body.locked && typeof body.cancel === 'function') Promise.resolve(body.cancel()).catch(() => {});
             } catch (_) {}
             const timeoutError = new Error(`fetch timeout after ${timeoutMs}ms`);
@@ -1302,8 +1311,8 @@ async function sendCupidLogRequest(url, {
             try {
                 return assertCupidLogResponse(await fetchCupidLogOnce(url, { ...init, keepalive: true }, timeoutMs), label);
             } catch (error) {
-                if (Number(error?.cupidStatus || 0) || error?.cupidFetchTimeout) throw error;
-                console.warn(`[ChatLog] ${label} keepalive 요청이 거절되어 일반 요청으로 다시 보냅니다:`, error?.message || error);
+                if (Number(((error === null || error === void 0 ? void 0 : error.cupidStatus)) || 0) || ((error === null || error === void 0 ? void 0 : error.cupidFetchTimeout))) throw error;
+                console.warn(`[ChatLog] ${label} keepalive 요청이 거절되어 일반 요청으로 다시 보냅니다:`, ((error === null || error === void 0 ? void 0 : error.message)) || error);
             } finally {
                 budget.release(bytes);
             }
@@ -1329,7 +1338,7 @@ function scheduleCupidLogRetry(attempts = 1) {
     }, delayMs);
 }
 
-function reportCupidLogFailure(error, item = {}, errorType, extra = {}) {
+function reportCupidLogFailure(error, item = {}, errorType, extra = {}) { var __oc22;
     try {
         const reportError = error instanceof Error ? error : new Error(String(error || errorType));
         logCupidError(reportError, {
@@ -1343,7 +1352,7 @@ function reportCupidLogFailure(error, item = {}, errorType, extra = {}) {
                 charId: item.charId || '',
                 role: item.role || '',
                 logContext: item.context || '',
-                conversationDay: item.conversationDay ?? null
+                conversationDay: (((__oc22 = item.conversationDay) !== null && __oc22 !== void 0 ? __oc22 : null))
             },
             extra: {
                 clientMsgId: item.clientMsgId || '',
@@ -1354,25 +1363,25 @@ function reportCupidLogFailure(error, item = {}, errorType, extra = {}) {
             }
         });
     } catch (reportError) {
-        console.warn('[ChatLog] 대화 로그 오류를 보고하지 못했습니다:', reportError?.message || reportError);
+        console.warn('[ChatLog] 대화 로그 오류를 보고하지 못했습니다:', ((reportError === null || reportError === void 0 ? void 0 : reportError.message)) || reportError);
     }
 }
 
 // 실패 항목과 저장 함수를 받아 재전송 가능 여부 확인 후 큐 갱신
 // 일시 오류는 대기 시간을 늘려 보존하고 retry 반환, 복구 불가 오류만 보고 후 dropped 반환
 function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, getId }) {
-    const attempts = Number(item?.attempts || 0) + 1;
+    const attempts = Number(((item === null || item === void 0 ? void 0 : item.attempts)) || 0) + 1;
     const transient = isCupidLogTransientError(error);
-    const retryableHttp = isCupidLogRetryableHttpStatus(error?.cupidStatus);
+    const retryableHttp = isCupidLogRetryableHttpStatus(((error === null || error === void 0 ? void 0 : error.cupidStatus)));
     const itemWithAttempts = { ...item, attempts };
     if (!transient && attempts === 1) {
-        reportCupidLogFailure(error, itemWithAttempts, error?.cupidClientException
+        reportCupidLogFailure(error, itemWithAttempts, ((error === null || error === void 0 ? void 0 : error.cupidClientException))
             ? `${kind}_client_exception`
             : `${kind}_send_failed`);
     }
     const id = getId(item);
     if (transient || retryableHttp) {
-        const lastError = String(error?.message || error).substring(0, 200);
+        const lastError = String(((error === null || error === void 0 ? void 0 : error.message)) || error).substring(0, 200);
         const nextAttemptAt = Date.now() + Math.min(CUPID_LOG_RETRY_BASE_MS * attempts, CUPID_LOG_RETRY_MAX_MS);
         writeQueue(readQueue().map(queued => getId(queued) === id ? { ...queued, attempts, lastError, nextAttemptAt } : queued));
         // A dropped connection or our own fetch timeout is a network failure: the entry stays queued and keeps
@@ -1380,7 +1389,7 @@ function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, 
         if (attempts === CUPID_LOG_MAX_ATTEMPTS && !transient) {
             reportCupidLogFailure(error, itemWithAttempts, `${kind}_delivery_delayed`, { nextAttemptAt });
         }
-        console.warn(`[대화 로그 재전송 대기] kind=${kind} attempts=${attempts}`, error?.message || error);
+        console.warn(`[대화 로그 재전송 대기] kind=${kind} attempts=${attempts}`, ((error === null || error === void 0 ? void 0 : error.message)) || error);
         scheduleCupidLogRetry(attempts);
         return 'retry';
     }
@@ -1388,7 +1397,7 @@ function handleCupidLogQueueFailure(error, item, { kind, readQueue, writeQueue, 
     reportCupidLogFailure(error, itemWithAttempts, `${kind}_queue_dropped`, {
         reason: 'non_retryable',
         maxAttempts: CUPID_LOG_MAX_ATTEMPTS,
-        firstError: item?.lastError || ''
+        firstError: ((item === null || item === void 0 ? void 0 : item.lastError)) || ''
     });
     return 'dropped';
 }
@@ -1412,7 +1421,7 @@ function findCupidReadyLogEntry(queue) {
 function assertCupidLogAcknowledged(response) {
     let data;
     try { data = JSON.parse(response.text); } catch (_) {}
-    if (data?.ok !== true) {
+    if (((data === null || data === void 0 ? void 0 : data.ok)) !== true) {
         const error = new Error('D1 delivery acknowledgement missing');
         error.cupidStatus = 502;
         throw error;
@@ -1420,10 +1429,10 @@ function assertCupidLogAcknowledged(response) {
     return response;
 }
 
-async function postCupidChatLogEntry(entry, options = {}) {
+async function postCupidChatLogEntry(entry, options = {}) { var __oc23;
     const payload = stripCupidLogQueueFields(entry);
-    if (payload.role === 'user' && !payload.viewerIdentityProof && typeof window !== 'undefined' && typeof window.HaremLogIdentity?.proofFor === 'function') {
-        const subject = String(entry?.viewerIdentitySubject || currentCupidViewerIdentitySubject());
+    if (payload.role === 'user' && !payload.viewerIdentityProof && typeof window !== 'undefined' && typeof (((__oc23 = window.HaremLogIdentity) === null || __oc23 === void 0 ? void 0 : __oc23.proofFor)) === 'function') {
+        const subject = String(((entry === null || entry === void 0 ? void 0 : entry.viewerIdentitySubject)) || currentCupidViewerIdentitySubject());
         const proof = await window.HaremLogIdentity.proofFor(subject);
         if (proof) payload.viewerIdentityProof = proof;
     }
@@ -1462,7 +1471,9 @@ async function flushCupidChatLogQueue() {
                     kind: 'chat_log',
                     readQueue: readCupidChatLogQueue,
                     writeQueue: writeCupidChatLogQueue,
-                    getId: item => item?.clientMsgId
+                    getId: item => { return (
+(item === null || item === void 0 ? void 0 : item.clientMsgId)
+); }
                 });
             }
         }
@@ -1477,7 +1488,9 @@ async function persistCupidChatLogEntries(entries = [], {
     source = 'persistCupidChatLogEntries',
     errorType = 'chat_log_direct_rejected'
 } = {}) {
-    const pendingEntries = entries.filter(entry => entry?.clientMsgId && String(entry.content || '').trim());
+    const pendingEntries = entries.filter(entry => { return (
+((entry === null || entry === void 0 ? void 0 : entry.clientMsgId)) && String(entry.content || '').trim()
+); });
     if (pendingEntries.length === 0) return [];
 
     // Persist the complete turn before the first network await. If the page is
@@ -1605,7 +1618,7 @@ async function flushCupidChatRenderAckQueue() {
 }
 
 async function postCupidChatRenderAck(entry, receipt = {}) {
-    if (!entry?.clientMsgId || entry.role !== 'assistant') return false;
+    if (!((entry === null || entry === void 0 ? void 0 : entry.clientMsgId)) || entry.role !== 'assistant') return false;
     const payload = makeCupidChatRenderAckPayload(entry, receipt);
     if (enqueueCupidRenderAck(payload)) {
         await flushCupidChatRenderAckQueue();
@@ -1615,7 +1628,7 @@ async function postCupidChatRenderAck(entry, receipt = {}) {
         await postCupidChatRenderAckPayload(payload);
         return true;
     } catch (error) {
-        console.warn('[ChatLog] cupid render acknowledgement could not be persisted:', error?.message || error);
+        console.warn('[ChatLog] cupid render acknowledgement could not be persisted:', ((error === null || error === void 0 ? void 0 : error.message)) || error);
         reportCupidLogFailure(error, { ...entry, attempts: 1 }, isCupidLogTransientError(error)
             ? 'chat_render_ack_queue_dropped'
             : 'chat_render_ack_send_failed', { stage: 'direct' });
@@ -1637,7 +1650,9 @@ function sendCupidPendingLogsOnPageHide() {
         started += 1;
     };
     for (const entry of readCupidChatLogQueue().slice(0, 12)) {
-        sendItem(entry, postCupidChatLogEntry, readCupidChatLogQueue, writeCupidChatLogQueue, item => item?.clientMsgId);
+        sendItem(entry, postCupidChatLogEntry, readCupidChatLogQueue, writeCupidChatLogQueue, item => { return (
+(item === null || item === void 0 ? void 0 : item.clientMsgId)
+); });
     }
     for (const payload of readCupidRenderAckQueue().slice(0, 12)) {
         sendItem(payload, postCupidChatRenderAckPayload, readCupidRenderAckQueue, writeCupidRenderAckQueue, getCupidRenderAckQueueId);
@@ -1649,16 +1664,18 @@ function sendCupidPendingLogsOnPageHide() {
 function recordCupidVisibleChat({ charId, role, content, sessionId = '', turnId = '',
     speakerId = null, participants = [], conversationDay = null, playerName = '',
     clientMsgId = '', responseMetadata = null, logSource = 'client-reply', expression = '',
-    expressionVariant = '', avatarAsset = '' } = {}) {
+    expressionVariant = '', avatarAsset = '' } = {}) { var __oc24, __oc25;
     if (!charId || !String(content || '').trim()) return null;
     const group = charId === 'group';
     const entry = makeCupidChatLogEntry({
         userId: getCupidDeviceId(), charId, role, content, sessionId,
         context: group ? 'group' : '1:1', speakerId,
-        playerName: playerName || window.gameEngine?.stateManager?.playerName || '',
+        playerName: playerName || (((__oc25 = (__oc24 = window.gameEngine) === null || __oc24 === void 0 ? void 0 : __oc24.stateManager) === null || __oc25 === void 0 ? void 0 : __oc25.playerName)) || '',
         language: getCupidLanguage(), appId: getCupidAppId(),
         conversationDay: resolveCupidConversationDay(conversationDay, sessionId),
-        groupParticipants: participants.map(item => String(item?.id || item)),
+        groupParticipants: participants.map(item => { return (
+String(((item === null || item === void 0 ? void 0 : item.id)) || item)
+); }),
         ...getCupidResponseLogMetadata(responseMetadata || { turnId }, getCupidLanguage()),
         logSource, expression, expressionVariant, avatarAsset, clientMsgId: clientMsgId || (turnId
             ? `cupid-api:${turnId}:${role}${role === 'assistant' ? ':' + (speakerId || charId) : ''}` : '')
@@ -1671,12 +1688,12 @@ function recordCupidVisibleChat({ charId, role, content, sessionId = '', turnId 
 window.recordCupidVisibleChat = recordCupidVisibleChat;
 
 // Snapshot the selected logical portrait, never an expiring media URL or a blob URL.
-function getCupidChatAvatarAsset(img) {
-    let raw = img?.dataset?.cupidAvatarAsset || img?.dataset?.rawSrc || img?.getAttribute?.('src') || '';
+function getCupidChatAvatarAsset(img) { var __oc26, __oc27, __oc28, __oc29, __oc30;
+    let raw = (((__oc26 = img === null || img === void 0 ? void 0 : img.dataset) === null || __oc26 === void 0 ? void 0 : __oc26.cupidAvatarAsset)) || (((__oc27 = img === null || img === void 0 ? void 0 : img.dataset) === null || __oc27 === void 0 ? void 0 : __oc27.rawSrc)) || (((__oc28 = img === null || img === void 0 ? void 0 : img.getAttribute) === null || __oc28 === void 0 ? void 0 : __oc28.call(img, 'src'))) || '';
     if (raw.includes('/api/media?')) {
         try { raw = new URL(raw, 'https://cupid.archerlab.dev').searchParams.get('asset') || ''; } catch (_) { return ''; }
     }
-    const logical = window.CupidMedia?.toLogicalAssetId?.(raw)
+    const logical = (((__oc30 = (__oc29 = window.CupidMedia) === null || __oc29 === void 0 ? void 0 : __oc29.toLogicalAssetId) === null || __oc30 === void 0 ? void 0 : __oc30.call(__oc29, raw)))
         || canonicalCharacterPathToLogicalId(raw)
         || String(raw).split('?')[0].replace(/^assets\/images\//, '').replace(/\.(png|webp)$/, '');
     return /^characters\/[a-z0-9_-]+$/.test(logical) ? `assets/images/${logical}.webp` : '';
@@ -1712,8 +1729,8 @@ async function saveCupidChatLog({
     expression = '',
     expressionVariant = '',
     avatarAsset = ''
-}) {
-    responseMetadata = { ...(responseMetadata || {}), turnId: responseMetadata?.turnId || turnId };
+}) { var __oc31, __oc32, __oc33, __oc34, __oc35, __oc36, __oc37, __oc38;
+    responseMetadata = { ...(responseMetadata || {}), turnId: ((responseMetadata === null || responseMetadata === void 0 ? void 0 : responseMetadata.turnId)) || turnId };
     if (!charId) {
         reportCupidLogFailure(new Error('chat log skipped: missing charId'), { sessionId, context, content: userContent }, 'chat_log_skipped', {
             reason: 'missing_char_id'
@@ -1725,7 +1742,7 @@ async function saveCupidChatLog({
         charId,
         sessionId,
         context,
-        playerName: _pn || window.gameEngine?.stateManager?.playerName || '',
+        playerName: _pn || (((__oc32 = (__oc31 = window.gameEngine) === null || __oc31 === void 0 ? void 0 : __oc31.stateManager) === null || __oc32 === void 0 ? void 0 : __oc32.playerName)) || '',
         language: getCupidLanguage(),
         appId: getCupidAppId(),
         conversationDay: resolveCupidConversationDay(conversationDay, sessionId),
@@ -1733,30 +1750,27 @@ async function saveCupidChatLog({
         logSource: 'realtime'
     };
     const entries = [];
-    if (userContent) entries.push(makeCupidChatLogEntry({ ...shared, role: 'user', content: userContent, clientMsgId: responseMetadata?.logIds?.user || (responseMetadata?.turnId ? `cupid-api:${responseMetadata.turnId}:user` : '') }));
-    const assistantLogContent = window.CupidFreeTalkCore?.resolveCupidAssistantLogContent?.(
-        assistantContent,
-        assistantRenderReceipt
-    ) ?? String(assistantContent || '');
+    if (userContent) entries.push(makeCupidChatLogEntry({ ...shared, role: 'user', content: userContent, clientMsgId: (((__oc33 = responseMetadata === null || responseMetadata === void 0 ? void 0 : responseMetadata.logIds) === null || __oc33 === void 0 ? void 0 : __oc33.user)) || (((responseMetadata === null || responseMetadata === void 0 ? void 0 : responseMetadata.turnId)) ? `cupid-api:${responseMetadata.turnId}:user` : '') }));
+    const assistantLogContent = (((__oc36 = (__oc35 = (__oc34 = window.CupidFreeTalkCore) === null || __oc34 === void 0 ? void 0 : __oc34.resolveCupidAssistantLogContent) === null || __oc35 === void 0 ? void 0 : __oc35.call(__oc34, assistantContent, assistantRenderReceipt)) !== null && __oc36 !== void 0 ? __oc36 : String(assistantContent || '')));
     let assistantEntry = null;
     if (assistantLogContent) {
         assistantEntry = makeCupidChatLogEntry({
             ...shared,
             role: 'assistant',
             content: assistantLogContent,
-            clientMsgId: responseMetadata?.logIds?.assistant || (responseMetadata?.turnId ? `cupid-api:${responseMetadata.turnId}:assistant:${charId}` : ''),
+            clientMsgId: (((__oc37 = responseMetadata === null || responseMetadata === void 0 ? void 0 : responseMetadata.logIds) === null || __oc37 === void 0 ? void 0 : __oc37.assistant)) || (((responseMetadata === null || responseMetadata === void 0 ? void 0 : responseMetadata.turnId)) ? `cupid-api:${responseMetadata.turnId}:assistant:${charId}` : ''),
             affinityChange,
             affinityCurrent,
             expression,
             expressionVariant,
             avatarAsset,
-            affinityCorrectionIds: window.CupidAffinityCorrections?.ids(charId) || []
+            affinityCorrectionIds: (((__oc38 = window.CupidAffinityCorrections) === null || __oc38 === void 0 ? void 0 : __oc38.ids(charId))) || []
         });
         entries.push(assistantEntry);
     } else {
         reportCupidLogFailure(new Error('chat log skipped: empty assistant content'), { ...shared, role: 'assistant' }, 'chat_log_skipped', {
             reason: 'empty_assistant_content',
-            receiptStatus: assistantRenderReceipt?.status || ''
+            receiptStatus: ((assistantRenderReceipt === null || assistantRenderReceipt === void 0 ? void 0 : assistantRenderReceipt.status)) || ''
         });
     }
 
@@ -1780,8 +1794,10 @@ async function saveCupidGroupChatLog({
     playerName: _pn = '',
     conversationDay = getCurrentCupidConversationDay(),
     responseMetadata = null
-}) {
-    const participantIds = participants.map(item => String(item?.id || item || '')).filter(Boolean);
+}) { var __oc39, __oc40, __oc41, __oc42, __oc43, __oc44, __oc45, __oc46, __oc47;
+    const participantIds = participants.map(item => { return (
+String(((item === null || item === void 0 ? void 0 : item.id)) || item || '')
+); }).filter(Boolean);
     if (participantIds.length < 2) {
         reportCupidLogFailure(new Error('group chat log skipped: fewer than two participants'), {
             charId: 'group',
@@ -1797,7 +1813,7 @@ async function saveCupidGroupChatLog({
         charId: 'group',
         sessionId,
         context: 'group',
-        playerName: _pn || window.gameEngine?.stateManager?.playerName || '',
+        playerName: _pn || (((__oc40 = (__oc39 = window.gameEngine) === null || __oc39 === void 0 ? void 0 : __oc39.stateManager) === null || __oc40 === void 0 ? void 0 : __oc40.playerName)) || '',
         language: getCupidLanguage(),
         appId: getCupidAppId(),
         groupParticipants: participantIds,
@@ -1815,17 +1831,14 @@ async function saveCupidGroupChatLog({
             role: 'user',
             content: userContent,
             speakerId: '__player__',
-            clientMsgId: responseMetadata?.logIds?.user || (turnId ? `cupid-api:${turnId}:user` : '') || makeCupidGroupChatLogClientId({ turnId, role: 'user', content: userContent })
+            clientMsgId: (((__oc41 = responseMetadata === null || responseMetadata === void 0 ? void 0 : responseMetadata.logIds) === null || __oc41 === void 0 ? void 0 : __oc41.user)) || (turnId ? `cupid-api:${turnId}:user` : '') || makeCupidGroupChatLogClientId({ turnId, role: 'user', content: userContent })
         }));
     }
     for (let messageIndex = 0; messageIndex < assistantMessages.length; messageIndex++) {
         const message = assistantMessages[messageIndex];
-        const speakerId = String(message?.speakerId || '');
+        const speakerId = String(((message === null || message === void 0 ? void 0 : message.speakerId)) || '');
         if (!participantIds.includes(speakerId)) continue;
-        const assistantContent = window.CupidFreeTalkCore?.resolveCupidAssistantLogContent?.(
-            message.content,
-            message.renderReceipt
-        ) ?? String(message.content || '');
+        const assistantContent = (((__oc44 = (__oc43 = (__oc42 = window.CupidFreeTalkCore) === null || __oc42 === void 0 ? void 0 : __oc42.resolveCupidAssistantLogContent) === null || __oc43 === void 0 ? void 0 : __oc43.call(__oc42, message.content, message.renderReceipt)) !== null && __oc44 !== void 0 ? __oc44 : String(message.content || '')));
         if (!String(assistantContent || '').trim()) continue;
         const entry = makeCupidChatLogEntry({
             ...shared,
@@ -1837,8 +1850,8 @@ async function saveCupidGroupChatLog({
             expressionVariant: message.expressionVariant || '',
             avatarAsset: message.avatarAsset || '',
             affinityCurrent: message.affinityCurrent,
-            affinityCorrectionIds: window.CupidAffinityCorrections?.ids(speakerId) || [],
-            clientMsgId: responseMetadata?.logIds?.assistants?.[speakerId] || (turnId ? `cupid-api:${turnId}:assistant:${speakerId}` : '') || makeCupidGroupChatLogClientId({
+            affinityCorrectionIds: (((__oc45 = window.CupidAffinityCorrections) === null || __oc45 === void 0 ? void 0 : __oc45.ids(speakerId))) || [],
+            clientMsgId: (((__oc47 = (__oc46 = responseMetadata === null || responseMetadata === void 0 ? void 0 : responseMetadata.logIds) === null || __oc46 === void 0 ? void 0 : __oc46.assistants) === null || __oc47 === void 0 ? void 0 : __oc47[speakerId])) || (turnId ? `cupid-api:${turnId}:assistant:${speakerId}` : '') || makeCupidGroupChatLogClientId({
                 turnId,
                 role: 'assistant',
                 speakerId,
@@ -1918,21 +1931,21 @@ function logCupidError(error, options = {}) {
         if (typeof window !== 'undefined' && typeof window.__cupidReportCaughtError === 'function') {
             return window.__cupidReportCaughtError(error, mergedOptions);
         }
-        const message = error?.message || String(error || 'Unknown Cupid error');
+        const message = ((error === null || error === void 0 ? void 0 : error.message)) || String(error || 'Unknown Cupid error');
         const currentLocation = typeof location !== 'undefined' ? location : null;
         const payload = {
             appId: options.appId || getCupidAppId(),
             userId: options.userId || getCupidDeviceId(),
             message: limitCupidLogText(message, 500),
-            stack: limitCupidLogText(error?.stack || '', 4000),
-            url: limitCupidLogText(currentLocation?.href || '', 500),
+            stack: limitCupidLogText(((error === null || error === void 0 ? void 0 : error.stack)) || '', 4000),
+            url: limitCupidLogText(((currentLocation === null || currentLocation === void 0 ? void 0 : currentLocation.href)) || '', 500),
             source: limitCupidLogText(options.source || 'cupid', 500),
             errorType: limitCupidLogText(options.errorType || 'runtime', 100),
-            errorClass: limitCupidLogText(options.errorClass || error?.name || '', 50),
+            errorClass: limitCupidLogText(options.errorClass || ((error === null || error === void 0 ? void 0 : error.name)) || '', 50),
             sessionId: limitCupidLogText(options.sessionId || '', 64),
             context: makeCupidLogSafe({
                 language: getCupidLanguage(),
-                page: currentLocation?.pathname || '',
+                page: ((currentLocation === null || currentLocation === void 0 ? void 0 : currentLocation.pathname)) || '',
                 ...(options.context || {})
             }),
             extra: makeCupidLogSafe(mergedExtra)
@@ -1950,7 +1963,9 @@ function logCupidError(error, options = {}) {
             cache: 'no-store'
         }).then(result => {
             if (!result.ok) console.warn('[ErrorLog] cupid 저장 실패: HTTP', result.status);
-        }).catch(err => console.warn('[ErrorLog] cupid 저장 실패:', err?.message || err));
+        }).catch(err => { return (
+console.warn('[ErrorLog] cupid 저장 실패:', ((err === null || err === void 0 ? void 0 : err.message)) || err)
+); });
         return true;
     } catch (e) {
         console.warn('[ErrorLog] cupid logCupidError 오류:', e.message);
@@ -1965,9 +1980,9 @@ function reportCupidCaughtError(error, options = {}) {
         }
         if (typeof window !== 'undefined' && typeof window.__cupidLogRuntimeError === 'function') {
             window.__cupidLogRuntimeError(
-                options.errorType || error?.name || 'Error',
-                error?.message || String(error || 'Unknown Cupid error'),
-                error?.stack || '',
+                options.errorType || ((error === null || error === void 0 ? void 0 : error.name)) || 'Error',
+                ((error === null || error === void 0 ? void 0 : error.message)) || String(error || 'Unknown Cupid error'),
+                ((error === null || error === void 0 ? void 0 : error.stack)) || '',
                 options.source || 'cupid'
             );
             return true;
@@ -2095,27 +2110,31 @@ function _cupidSendChatLogsOnPageHide() {
         reportCupidLogFailure(error, {}, 'chat_log_client_exception', { stage: 'pagehide' });
     }
 }
-if (typeof window !== 'undefined' && typeof window.location?.hostname === 'string' && !window.HaremLogIdentity) {
-    (function (root) {
+if (typeof window !== 'undefined' && typeof (((__oc48 = window.location) === null || __oc48 === void 0 ? void 0 : __oc48.hostname)) === 'string' && !window.HaremLogIdentity) {
+    (function (root) { var __oc58;
         const base = 'https://avatar.archerlab.dev';
         let session = null, pending = null, epoch = 0;
-        const account = () => String(root.archerlabAccount?.user?.id || '').trim().replace(/^al:/, '');
+        const account = () => { var __oc49, __oc50; return (
+String((((__oc50 = (__oc49 = root.archerlabAccount) === null || __oc49 === void 0 ? void 0 : __oc49.user) === null || __oc50 === void 0 ? void 0 : __oc50.id)) || '').trim().replace(/^al:/, '')
+); };
         let accountId = account();
-        const subject = () => root.CupidGalleryCredits?.captureSubject ? root.CupidGalleryCredits.captureSubject() : (account() ? 'al:' + account() : 'guest');
-        async function post(url, body) {
-            const fp = await root.AiBrowserProof?.fingerprint?.();
+        const subject = () => { var __oc51; return (
+(((__oc51 = root.CupidGalleryCredits) === null || __oc51 === void 0 ? void 0 : __oc51.captureSubject)) ? root.CupidGalleryCredits.captureSubject() : (account() ? 'al:' + account() : 'guest')
+); };
+        async function post(url, body) { var __oc52, __oc53;
+            const fp = await (((__oc53 = (__oc52 = root.AiBrowserProof) === null || __oc52 === void 0 ? void 0 : __oc52.fingerprint) === null || __oc53 === void 0 ? void 0 : __oc53.call(__oc52)));
             const headers = { 'Content-Type': 'application/json' };
             if (fp && url.startsWith(base)) headers['X-Device-Fp'] = fp;
             const response = await fetch(url, { method: 'POST', credentials: 'include', cache: 'no-store', headers, body: JSON.stringify(body), signal: AbortSignal.timeout(15000) });
             if (!response.ok) throw new Error('IDENTITY_UNAVAILABLE');
             return response.json();
         }
-        async function credentials() {
-            await root.archerlabAccount?.ready;
+        async function credentials() { var __oc54;
+            await (((__oc54 = root.archerlabAccount) === null || __oc54 === void 0 ? void 0 : __oc54.ready));
             const who = account(), version = epoch;
-            if (session?.account === who && session.expires_at > Date.now() + 60000) return session;
+            if (((session === null || session === void 0 ? void 0 : session.account)) === who && session.expires_at > Date.now() + 60000) return session;
             if (pending) return pending;
-            pending = (async () => {
+            pending = (async () => { var __oc55, __oc56;
                 let value;
                 if (who) {
                     const status = await post('https://account.archerlab.dev/api/status', {});
@@ -2126,9 +2145,9 @@ if (typeof window !== 'undefined' && typeof window.location?.hostname === 'strin
                 } else {
                     value = await post(base + '/api/session', { guest: true });
                 }
-                if (epoch !== version || account() !== who || !value?.token || !value?.user_id || (who && value.user_id !== 'al:' + who)) throw new Error('IDENTITY_CHANGED');
+                if (epoch !== version || account() !== who || !((value === null || value === void 0 ? void 0 : value.token)) || !((value === null || value === void 0 ? void 0 : value.user_id)) || (who && value.user_id !== 'al:' + who)) throw new Error('IDENTITY_CHANGED');
                 session = { ...value, account: who };
-                const fp = await root.AiBrowserProof?.fingerprint?.();
+                const fp = await (((__oc56 = (__oc55 = root.AiBrowserProof) === null || __oc55 === void 0 ? void 0 : __oc55.fingerprint) === null || __oc56 === void 0 ? void 0 : __oc56.call(__oc55)));
                 const headers = { Authorization: 'Bearer ' + value.token };
                 if (fp) headers['X-Device-Fp'] = fp;
                 void fetch(base + '/api/credits', { headers, credentials: 'include', cache: 'no-store', signal: AbortSignal.timeout(15000) }).catch(() => {});
@@ -2136,28 +2155,29 @@ if (typeof window !== 'undefined' && typeof window.location?.hostname === 'strin
             })().finally(() => { if (version === epoch) pending = null; });
             return pending;
         }
-        async function proofFor(expectedSubject = '') {
-            if (root.CupidGalleryCredits?.proofFor) return root.CupidGalleryCredits.proofFor(expectedSubject);
+        async function proofFor(expectedSubject = '') { var __oc57;
+            if ((((__oc57 = root.CupidGalleryCredits) === null || __oc57 === void 0 ? void 0 : __oc57.proofFor))) return root.CupidGalleryCredits.proofFor(expectedSubject);
             const target = String(expectedSubject || subject());
             if (target !== subject()) return '';
             try {
                 const auth = await credentials();
                 if (target !== subject()) return '';
-                if (target === 'guest' && !String(auth?.user_id || '').startsWith('gu:')) return '';
-                if (target.startsWith('al:') && auth?.user_id !== target) return '';
-                return String(auth?.token || '');
-            } catch {
+                if (target === 'guest' && !String(((auth === null || auth === void 0 ? void 0 : auth.user_id)) || '').startsWith('gu:')) return '';
+                if (target.startsWith('al:') && ((auth === null || auth === void 0 ? void 0 : auth.user_id)) !== target) return '';
+                return String(((auth === null || auth === void 0 ? void 0 : auth.token)) || '');
+            } catch (_err) {
                 return '';
             }
         }
-        root.addEventListener?.('archerlab:session', () => {
-            const next = account();
-            if (next === accountId) return;
-            accountId = next;
-            epoch++;
-            session = null;
-            pending = null;
-        });
+        (((__oc58 = root.addEventListener) === null || __oc58 === void 0 ? void 0 : __oc58.call(root, 'archerlab:session', () => {
+        const next = account();
+        if (next === accountId)
+            return;
+        accountId = next;
+        epoch++;
+        session = null;
+        pending = null;
+    })));
         root.HaremLogIdentity = Object.freeze({ capture: subject, proofFor, prepare: () => { void proofFor().catch(() => {}); } });
     })(window);
 }

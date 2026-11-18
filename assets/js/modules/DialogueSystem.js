@@ -148,22 +148,24 @@ class DialogueSystem {
      * @param {string} charName - 말하는 캐릭터 이름
      * @param {boolean} isStarting - true: 대사 시작, false: 대사 끝
      */
-    updateTalkingAnimation(charName, isStarting) {
+    updateTalkingAnimation(charName, isStarting) { var __oc0, __oc1, __oc3;
         const charSlots = this.uiManager.charSlots;
         const activeImages = Object.values(charSlots).filter(Boolean).map(slot => slot.querySelector('img')).filter(Boolean);
         const canonical = this.charNameMap[charName] || charName;
         const portraitKeys = { Seoyeon: 'seyoun', Yuna: 'yuna', Dain: 'dain', Teacher: 'teacher', Nurse: 'nurse', Haeun: 'haeun' };
         const focusKey = this.charFileMap[charName] || portraitKeys[canonical];
-        const groupMode = document.getElementById?.('character-layer')?.classList.contains('group-freetalk-mode');
+        const groupMode = (((__oc1 = (__oc0 = document.getElementById) === null || __oc0 === void 0 ? void 0 : __oc0.call(document, 'character-layer')) === null || __oc1 === void 0 ? void 0 : __oc1.classList.contains('group-freetalk-mode')));
         const focusEnabled = !groupMode && activeImages.length > 1 && !!focusKey
-            && activeImages.some(img => String(img.dataset?.rawSrc || img.src).toLowerCase().includes(focusKey));
+            && activeImages.some(img => { var __oc2; return (
+String((((__oc2 = img.dataset) === null || __oc2 === void 0 ? void 0 : __oc2.rawSrc)) || img.src).toLowerCase().includes(focusKey)
+); });
         for (const slot of Object.values(charSlots)) {
             if (!slot) continue;
             const img = slot.querySelector('img');
-            const focused = focusEnabled && !!img && String(img.dataset?.rawSrc || img.src).toLowerCase().includes(focusKey);
+            const focused = focusEnabled && !!img && String((((__oc3 = img.dataset) === null || __oc3 === void 0 ? void 0 : __oc3.rawSrc)) || img.src).toLowerCase().includes(focusKey);
             slot.classList.toggle('char-dimmed', focusEnabled && !!img && !focused);
             slot.classList.toggle('char-focused', focused);
-            img?.classList.toggle('char-focused', focused);
+            ((img === null || img === void 0 ? void 0 : img.classList.toggle('char-focused', focused)));
         }
 
         // 주인공이나 시스템 메시지는 애니메이션 없음
@@ -186,8 +188,8 @@ class DialogueSystem {
         // 해당 캐릭터의 이미지에만 애니메이션 적용
         Object.values(charSlots).forEach(slot => {
             if (!slot) return;
-            slot.querySelectorAll('img').forEach(img => {
-                const src = String(img.dataset?.rawSrc || img.src).toLowerCase();
+            slot.querySelectorAll('img').forEach(img => { var __oc4;
+                const src = String((((__oc4 = img.dataset) === null || __oc4 === void 0 ? void 0 : __oc4.rawSrc)) || img.src).toLowerCase();
                 if (src.includes(targetKey)) {
                     // 이 캐릭터가 말하는 중
                     if (isStarting) img.classList.add('char-talking');
@@ -348,7 +350,7 @@ class DialogueSystem {
      * @private
      */
     _rewriteSpokenLexicon(text) {
-        const source = String(text ?? '');
+        const source = String(((text !== null && text !== void 0 ? text : '')));
         if (!source.includes('씨물')) return source;
         // 씨물 ends in ㄹ, so 로; 정액 ends in ㄱ, so 으로.
         return source.replace(/씨물로/g, '정액으로').replace(/씨물/g, '정액');
@@ -384,8 +386,8 @@ class DialogueSystem {
         return String(value || '').replace(/\s+/g, ' ').trim();
     }
 
-    getRenderedMessageText() {
-        return this._normalizeRenderedText(this.uiManager.messageEl?.textContent || '');
+    getRenderedMessageText() { var __oc5;
+        return this._normalizeRenderedText((((__oc5 = this.uiManager.messageEl) === null || __oc5 === void 0 ? void 0 : __oc5.textContent)) || '');
     }
 
     getExpectedRenderedMessageText(text, charName, structuredSegments = null) {

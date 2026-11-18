@@ -299,12 +299,12 @@ class GalleryFreeTalk {
         return ({ ko, en, es, ja, fr, de, pt, zh })[this.lang] || en;
     }
 
-    _getMessageEl() {
-        return this.overlayEl?.querySelector('#message') || document.getElementById('message');
+    _getMessageEl() { var __oc0;
+        return (((__oc0 = this.overlayEl) === null || __oc0 === void 0 ? void 0 : __oc0.querySelector('#message'))) || document.getElementById('message');
     }
 
-    _getNameTagEl() {
-        return this.overlayEl?.querySelector('#name-tag') || document.getElementById('name-tag');
+    _getNameTagEl() { var __oc1;
+        return (((__oc1 = this.overlayEl) === null || __oc1 === void 0 ? void 0 : __oc1.querySelector('#name-tag'))) || document.getElementById('name-tag');
     }
 
     _getThinkingText() {
@@ -351,8 +351,8 @@ class GalleryFreeTalk {
         messageEl.scrollTop = messageEl.scrollHeight;
     }
 
-    _clearThinkingMessage() {
-        this._getMessageEl()?.querySelectorAll('.ai-thinking-message').forEach(el => el.remove());
+    _clearThinkingMessage() { var __oc2;
+        (((__oc2 = this._getMessageEl()) === null || __oc2 === void 0 ? void 0 : __oc2.querySelectorAll('.ai-thinking-message').forEach(el => el.remove())));
     }
 
     /** 언어별 자연스러움/호칭 가드 */
@@ -527,17 +527,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * 프리토킹 오버레이 열기
      * @param {string} charId - 캐릭터 ID (예: 'seyoun')
      */
-    open(charId, outingId = '') {
-        if (this.progress?.isFreeTalkUnlocked && !this.progress.isFreeTalkUnlocked(charId)) return false;
+    open(charId, outingId = '') { var __oc3, __oc4, __oc5, __oc6, __oc7, __oc8, __oc9;
+        if ((((__oc3 = this.progress) === null || __oc3 === void 0 ? void 0 : __oc3.isFreeTalkUnlocked)) && !this.progress.isFreeTalkUnlocked(charId)) return false;
         this._invalidateGalleryTalkContext();
         const openEpoch = this._galleryTalkEpoch;
         this.currentCharId = charId;
         this.currentCharKey = this.CHAR_ID_TO_KEY[charId];
         if (!this.currentCharKey) return;
         const outings = window.CupidGalleryOutings;
-        this.currentOuting = outings?.getPlace?.(charId, outingId) || null;
+        this.currentOuting = (((__oc4 = outings === null || outings === void 0 ? void 0 : outings.getPlace) === null || __oc4 === void 0 ? void 0 : __oc4.call(outings, charId, outingId))) || null;
         if (outings && this.progress) {
-            this.progress.setLastOuting?.(charId, this.currentOuting?.id || outingId || '');
+            (((__oc6 = (__oc5 = this.progress).setLastOuting) === null || __oc6 === void 0 ? void 0 : __oc6.call(__oc5, charId, ((__oc7 = this.currentOuting) === null || __oc7 === void 0 ? void 0 : __oc7.id) || outingId || '')));
         }
 
         this.overlayEl = document.getElementById('gallery-freetalk-overlay');
@@ -553,11 +553,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         this.chatHistory = this._sanitizeDainOutfitHistory(this.chatHistory, charId);
         this.chatHistory = this._sanitizeVisibleArtifactsHistory(this.chatHistory);
         const hasSavedConversation = this.chatHistory.some(message =>
-            message?.role === 'user' || message?.role === 'assistant'
+            { return (
+((message === null || message === void 0 ? void 0 : message.role)) === 'user' || ((message === null || message === void 0 ? void 0 : message.role)) === 'assistant'
+); }
         );
-        this.progress?.initializeCurrentAffinityForFreeTalk?.(charId, {
-            hasConversation: hasSavedConversation
-        });
+        (((__oc9 = (__oc8 = this.progress) === null || __oc8 === void 0 ? void 0 : __oc8.initializeCurrentAffinityForFreeTalk) === null || __oc9 === void 0 ? void 0 : __oc9.call(__oc8, charId, {
+        hasConversation: hasSavedConversation
+    })));
 
         // 시스템 프롬프트 구성
         const systemPrompt = this._buildCachedSystemPrompt(charId);
@@ -578,10 +580,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         // 입력 포커스
         const input = document.getElementById('chat-input');
         if (input && (!window.isCupidDesktopPointer || window.isCupidDesktopPointer())) {
-            setTimeout(() => {
+            setTimeout(() => { var __oc10, __oc11;
                 if (this._galleryTalkEpoch === openEpoch
                     && this.currentCharId === charId
-                    && this.overlayEl?.classList?.contains('active')) {
+                    && (((__oc11 = (__oc10 = this.overlayEl) === null || __oc10 === void 0 ? void 0 : __oc10.classList) === null || __oc11 === void 0 ? void 0 : __oc11.contains('active')))) {
                     input.focus();
                 }
             }, 300);
@@ -631,10 +633,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * 구조: 배경 + 캐릭터(중앙 하단) + 대사창 + 입력창
      * @private
      */
-    _createOverlay(charId) {
-        const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
-        const bgUrl = this.currentOuting?.background || this.CHAR_BACKGROUNDS[charId];
-        const currentAffinity = this.progress?.getCurrentAffinity?.(charId) || 0;
+    _createOverlay(charId) { var __oc12, __oc13, __oc14, __oc15, __oc16;
+        const charName = (((__oc12 = this.CHAR_NAMES[charId]) === null || __oc12 === void 0 ? void 0 : __oc12[this.lang])) || charId;
+        const bgUrl = (((__oc13 = this.currentOuting) === null || __oc13 === void 0 ? void 0 : __oc13.background)) || this.CHAR_BACKGROUNDS[charId];
+        const currentAffinity = (((__oc15 = (__oc14 = this.progress) === null || __oc14 === void 0 ? void 0 : __oc14.getCurrentAffinity) === null || __oc15 === void 0 ? void 0 : __oc15.call(__oc14, charId))) || 0;
         const affinityTone = this._getAffinityTone(currentAffinity);
         const affinityValue = this._formatAffinityValue(currentAffinity);
         const affinityLabel = this._L(
@@ -689,7 +691,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         `;
 
         // 이벤트 바인딩 (게임과 동일한 ID 사용)
-        window.CupidGalleryCredits?.mount(this.overlayEl);
+        (((__oc16 = window.CupidGalleryCredits) === null || __oc16 === void 0 ? void 0 : __oc16.mount(this.overlayEl)));
         const closeBtn = this.overlayEl.querySelector('.gft-close-btn');
         const sendBtn = this.overlayEl.querySelector('#chat-send');
         const input = this.overlayEl.querySelector('#chat-input');
@@ -701,8 +703,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         closeBtn.addEventListener('click', () => this.close());
         sendBtn.addEventListener('click', () => this._handleSend());
         input.addEventListener('input', () => this._resizeInput(input));
-        input.addEventListener('keydown', (event) => {
-            if (!window.MessageComposerUtils?.shouldSubmitOnEnter(event)) return;
+        input.addEventListener('keydown', (event) => { var __oc17;
+            if (!(((__oc17 = window.MessageComposerUtils) === null || __oc17 === void 0 ? void 0 : __oc17.shouldSubmitOnEnter(event)))) return;
 
             event.preventDefault();
             this._handleSend();
@@ -826,7 +828,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 text.match(/(?:あなたは|君は|私は|僕は|俺は)\s*["'“”‘’「」『』]?([\p{L}\p{N}_\- ]{1,24}?)["'“”‘’「」『』]?\s*(?:です|だ|である)(?:[\s.!?。]|$)/u) ||
                 text.match(/(?:你是|我是|玩家是|用户是)\s*["'“”‘’「」『』]?([\p{L}\p{N}_\- ]{1,24}?)["'“”‘’「」『』]?(?:[\s.!?。]|$)/u) ||
                 text.match(/\b(?:eres|soy|tu es|je suis|du bist|ich bin|você é|eu sou)\s+["'“”‘’]?([\p{L}][\p{L}\p{N}_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/iu);
-            const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || multiMatch?.[1] || '');
+            const roleName = cleanRoleName(((koMatch === null || koMatch === void 0 ? void 0 : koMatch[1])) || ((enMatch === null || enMatch === void 0 ? void 0 : enMatch[1])) || ((multiMatch === null || multiMatch === void 0 ? void 0 : multiMatch[1])) || '');
             if (!roleName || blockedRoleNames.has(roleName.toLowerCase())) continue;
 
             if (this.lang === 'ko') {
@@ -861,9 +863,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         return Math.ceil((lineHeight * maxRows) + verticalPadding + verticalBorder);
     }
 
-    _invalidateGalleryTalkContext() {
+    _invalidateGalleryTalkContext() { var __oc18;
         if (this._activeRequestContext) {
-            this._activeRequestContext.abortController?.abort();
+            (((__oc18 = this._activeRequestContext.abortController) === null || __oc18 === void 0 ? void 0 : __oc18.abort()));
             this._rollbackRequestHistory(this._activeRequestContext);
         }
         this._galleryTalkEpoch += 1;
@@ -876,14 +878,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         this.skipTyping = false;
     }
 
-    _isRequestContextCurrent(requestContext) {
+    _isRequestContextCurrent(requestContext) { var __oc19, __oc20;
         return Boolean(requestContext
             && this._galleryTalkEpoch === requestContext.epoch
             && this.currentCharId === requestContext.charId
             && this.currentCharKey === requestContext.charKey
             && this.chatHistory === requestContext.history
             && this._activeRequestOwner === requestContext.owner
-            && this.overlayEl?.classList?.contains('active'));
+            && (((__oc20 = (__oc19 = this.overlayEl) === null || __oc19 === void 0 ? void 0 : __oc19.classList) === null || __oc20 === void 0 ? void 0 : __oc20.contains('active'))));
     }
 
     _assertRequestContext(requestContext, payload = null) {
@@ -894,8 +896,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     }
 
     _rollbackRequestHistory(requestContext) {
-        const history = requestContext?.history;
-        const start = requestContext?.historyLengthBeforeTurn;
+        const history = ((requestContext === null || requestContext === void 0 ? void 0 : requestContext.history));
+        const start = ((requestContext === null || requestContext === void 0 ? void 0 : requestContext.historyLengthBeforeTurn));
         if (!Array.isArray(history) || !Number.isInteger(start) || start < 0) return;
         if (history.length > start) history.splice(start);
     }
@@ -929,14 +931,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
     }
 
     _assertCurrentTurn(turnMeta, payload = null) {
-        if (!turnMeta?.turnId) return;
+        if (!((turnMeta === null || turnMeta === void 0 ? void 0 : turnMeta.turnId))) return;
         if (this._activeChatTurnId && this._activeChatTurnId !== turnMeta.turnId) {
             throw this._makeStaleTurnError();
         }
-        if (payload?.turnId && payload.turnId !== turnMeta.turnId) {
+        if (((payload === null || payload === void 0 ? void 0 : payload.turnId)) && payload.turnId !== turnMeta.turnId) {
             throw this._makeStaleTurnError('AI response turn id did not match request');
         }
-        if (payload?.latestUserHash && payload.latestUserHash !== turnMeta.latestUserHash) {
+        if (((payload === null || payload === void 0 ? void 0 : payload.latestUserHash)) && payload.latestUserHash !== turnMeta.latestUserHash) {
             throw this._makeStaleTurnError('AI response latest user hash did not match request');
         }
     }
@@ -946,14 +948,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (!text) return Array.isArray(messages) ? messages : [];
         const completeHistory = Array.isArray(messages) ? messages.slice() : [];
         const lastMessage = completeHistory[completeHistory.length - 1];
-        if (lastMessage?.role === 'user' && lastMessage.content === text) return completeHistory;
+        if (((lastMessage === null || lastMessage === void 0 ? void 0 : lastMessage.role)) === 'user' && lastMessage.content === text) return completeHistory;
         return [...completeHistory, { role: 'user', content: text }];
     }
 
-    async _handleSend() {
+    async _handleSend() { var __oc21, __oc22, __oc23, __oc24, __oc25, __oc26, __oc27, __oc30, __oc31, __oc32, __oc33, __oc34, __oc35, __oc36, __oc37, __oc38, __oc39, __oc40, __oc41, __oc42, __oc43, __oc44, __oc45, __oc46, __oc47, __oc48, __oc49, __oc50, __oc51, __oc52, __oc53, __oc54, __oc55, __oc56, __oc57, __oc58, __oc59, __oc60, __oc61, __oc62, __oc63, __oc67, __oc68, __oc69, __oc70, __oc71, __oc72, __oc73, __oc74, __oc75;
         if (this.isProcessing || this._creditChecking) return;
-        if (this.progress?.isFreeTalkUnlocked && !this.progress.isFreeTalkUnlocked(this.currentCharId)) return;
-        if (!this.currentCharId || !this.currentCharKey || !this.overlayEl?.classList?.contains('active')) return;
+        if ((((__oc21 = this.progress) === null || __oc21 === void 0 ? void 0 : __oc21.isFreeTalkUnlocked)) && !this.progress.isFreeTalkUnlocked(this.currentCharId)) return;
+        if (!this.currentCharId || !this.currentCharKey || !(((__oc23 = (__oc22 = this.overlayEl) === null || __oc22 === void 0 ? void 0 : __oc22.classList) === null || __oc23 === void 0 ? void 0 : __oc23.contains('active')))) return;
 
         const requestOwner = {};
         const requestContext = {
@@ -983,7 +985,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         finally { this._creditChecking = false; }
         if (!canSend || input.value.trim() !== text || this.stagedImage !== stagedImage
             || this._galleryTalkEpoch !== requestContext.epoch
-            || this.currentCharId !== requestCharId || !this.overlayEl?.classList.contains('active')) return;
+            || this.currentCharId !== requestCharId || !(((__oc24 = this.overlayEl) === null || __oc24 === void 0 ? void 0 : __oc24.classList.contains('active')))) return;
         requestContext.creditEpoch = window.CupidGalleryCredits.capture();
 
         input.value = '';
@@ -999,9 +1001,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
         requestContext.turnMeta = this._createTurnMeta(finalContent);
         this._activeChatTurnId = requestContext.turnMeta.turnId;
-        window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'user', content: finalContent,
-            sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
-            playerName: this.progress.getPlayerName() || '', logSource: 'realtime' });
+        (((__oc25 = window.recordCupidVisibleChat) === null || __oc25 === void 0 ? void 0 : __oc25.call(window, { charId: requestCharKey, role: 'user', content: finalContent,
+        sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
+        playerName: this.progress.getPlayerName() || '', logSource: 'realtime' })));
 
         const msgEl = document.getElementById('message');
         const nameTag = document.getElementById('name-tag');
@@ -1021,14 +1023,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
         }
         const failedTurnName = playerName;
-        const failedTurnHtml = msgEl?.innerHTML || '';
+        const failedTurnHtml = ((msgEl === null || msgEl === void 0 ? void 0 : msgEl.innerHTML)) || '';
 
         // 이미지 미리보기 제거
         this._removeStagedImage();
 
         // 직전 턴에서 바뀐 현재 호감도와 관계 온도를 시스템 상태에 반영
         const currentSystemPrompt = this._buildCachedSystemPrompt(requestCharId);
-        if (requestHistory[0]?.role === 'system') {
+        if ((((__oc26 = requestHistory[0]) === null || __oc26 === void 0 ? void 0 : __oc26.role)) === 'system') {
             requestHistory[0].content = currentSystemPrompt;
         } else {
             requestHistory.unshift({ role: 'system', content: currentSystemPrompt });
@@ -1061,7 +1063,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             indicator.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
             gftChar.appendChild(indicator);
         }
-        const pendingCharName = this.CHAR_NAMES[requestCharId]?.[this.lang] || requestCharId;
+        const pendingCharName = (((__oc27 = this.CHAR_NAMES[requestCharId]) === null || __oc27 === void 0 ? void 0 : __oc27[this.lang])) || requestCharId;
         this._showThinkingMessage(pendingCharName);
 
         let _lastTurnMeta = null;
@@ -1087,7 +1089,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 characterDelayMs: 50,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.skipTyping === true,
-                onRender: ({ text: previewText, segments: previewSegments }) => {
+                onRender: ({ text: previewText, segments: previewSegments }) => { var __oc28, __oc29;
                     if (!this._isRequestContextCurrent(requestContext)) return;
                     if (!_streamingStarted) {
                         _streamingStarted = true;
@@ -1098,9 +1100,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
                         this._beginStreamingText(requestContext);
                     }
-                    window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'assistant', content: previewText,
-                        sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta?.turnId,
-                        playerName: this.progress.getPlayerName() || '', logSource: 'stream-preview' });
+                    (((__oc28 = window.recordCupidVisibleChat) === null || __oc28 === void 0 ? void 0 : __oc28.call(window, { charId: requestCharKey, role: 'assistant', content: previewText,
+        sessionId: 'gallery-freetalk', turnId: (__oc29 = requestContext.turnMeta) === null || __oc29 === void 0 ? void 0 : __oc29.turnId,
+        playerName: this.progress.getPlayerName() || '', logSource: 'stream-preview' })));
                     this._renderStreamingText(previewText, previewSegments, requestContext);
                 },
                 onReset: () => {
@@ -1112,7 +1114,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const updateStreamingPreview = rawContent => {
                 const faces = []; // Await the completed response's expression decision.
                 const lead = faces[0];
-                if (lead?.expression) {
+                if (((lead === null || lead === void 0 ? void 0 : lead.expression))) {
                     const key = `${requestCharId}:${lead.expression}`;
                     if (!this._streamedExpressionKeys.has(key)) {
                         this._streamedExpressionKeys.add(key);
@@ -1134,9 +1136,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const _latestUserCanonBlock = buildGalleryLatestUserCanonBlock(_optimized, this.lang || 'en', finalContent);
             const _inWorldUserRoleBlock = this._buildInWorldUserRoleBlock(_optimized);
             const _recentRepetitionGuard = buildGalleryRecentExpressionRepetitionGuard(_optimized, this.lang || 'en');
-            const _currentAffinity = this.progress?.getCurrentAffinity
+            const _currentAffinity = (((__oc30 = this.progress) === null || __oc30 === void 0 ? void 0 : __oc30.getCurrentAffinity))
                 ? this.progress.getCurrentAffinity(requestCharId)
-                : (this.progress?.getAffinity?.(requestCharId) || 0);
+                : ((((__oc32 = (__oc31 = this.progress) === null || __oc31 === void 0 ? void 0 : __oc31.getAffinity) === null || __oc32 === void 0 ? void 0 : __oc32.call(__oc31, requestCharId))) || 0);
             const _latestTurnIntimacyBoundaryRule = GalleryFreeTalkCore.buildCupidLatestTurnIntimacyBoundaryGate(
                 this.lang || 'en',
                 _currentAffinity,
@@ -1152,13 +1154,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             requestContext.incidentRuntime = _incidentRuntime;
             const _incidentRuntimeBlock = GalleryFreeTalkCore.buildGalleryIncidentRuntimeBlock({
                 lang: this.lang || 'en',
-                characterName: this.CHAR_NAMES[requestCharId]?.[this.lang] || requestCharId,
+                characterName: (((__oc33 = this.CHAR_NAMES[requestCharId]) === null || __oc33 === void 0 ? void 0 : __oc33[this.lang])) || requestCharId,
                 state: _incidentRuntime.state,
                 plan: _incidentRuntime.plan
             });
             const _relationshipAftermathBlock = GalleryFreeTalkCore.buildRelationshipAftermathBlock({
                 lang: this.lang || 'en',
-                state: this.progress?.getRelationshipAftermath?.(requestCharId)
+                state: (((__oc35 = (__oc34 = this.progress) === null || __oc34 === void 0 ? void 0 : __oc34.getRelationshipAftermath) === null || __oc35 === void 0 ? void 0 : __oc35.call(__oc34, requestCharId)))
             });
             const _durableFactsPromise = typeof window.prepareCupidDurableFacts === 'function'
                 ? window.prepareCupidDurableFacts(requestCharKey, { gallery: true })
@@ -1175,7 +1177,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const _dataBankRecallBlock = GalleryFreeTalkCore.buildDataBankRecallBlock(_memoryRecall, {
                 lang: this.lang || 'en',
                 playerName: this.progress.getPlayerName() || '',
-                characterName: this.CHAR_NAMES[requestCharId]?.[this.lang] || requestCharId
+                characterName: (((__oc36 = this.CHAR_NAMES[requestCharId]) === null || __oc36 === void 0 ? void 0 : __oc36[this.lang])) || requestCharId
             });
             const _lowInformationContinuationRule = typeof window.buildCupidLowInformationContinuationRule === 'function'
                 ? window.buildCupidLowInformationContinuationRule(finalContent, this.lang || 'en')
@@ -1185,17 +1187,17 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 lowInformationRule: _lowInformationContinuationRule,
                 boundaryRule: _latestTurnIntimacyBoundaryRule
             });
-            const _durableFactInstruction = GalleryFreeTalkCore.buildDurableFactInstruction?.(this.lang || 'en') || '';
-            const _durableFactBlock = GalleryFreeTalkCore.buildDurableFactBlock?.(_durableFacts, this.lang || 'en') || '';
+            const _durableFactInstruction = (((__oc37 = GalleryFreeTalkCore.buildDurableFactInstruction) === null || __oc37 === void 0 ? void 0 : __oc37.call(GalleryFreeTalkCore, this.lang || 'en'))) || '';
+            const _durableFactBlock = (((__oc38 = GalleryFreeTalkCore.buildDurableFactBlock) === null || __oc38 === void 0 ? void 0 : __oc38.call(GalleryFreeTalkCore, _durableFacts, this.lang || 'en'))) || '';
             const _runtimePromptPatch = `${_latestUserCanonBlock}${_inWorldUserRoleBlock}${_relationshipAftermathBlock}${_durableFactInstruction}${_durableFactBlock}${_dataBankRecallBlock}${_incidentRuntimeBlock}${_postHistoryGuidance}`;
-            if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
+            if (_runtimePromptPatch && Array.isArray(_optimized) && (((__oc39 = _optimized[0]) === null || __oc39 === void 0 ? void 0 : __oc39.role)) === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendGalleryFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
                     ..._optimized.slice(1)
                 ];
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
-            const _stablePromptContent = Array.isArray(_optimized) && _optimized[0]?.role === 'system'
+            const _stablePromptContent = Array.isArray(_optimized) && (((__oc40 = _optimized[0]) === null || __oc40 === void 0 ? void 0 : __oc40.role)) === 'system'
                 ? _optimized[0].content
                 : '';
             const _stablePromptFingerprint = _stablePromptContent
@@ -1208,7 +1210,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const _turnMeta = requestContext.turnMeta;
             _lastTurnMeta = _turnMeta;
             requestContext.turnMeta = _turnMeta;
-            this._activeChatTurnId = _turnMeta?.turnId || null;
+            this._activeChatTurnId = ((_turnMeta === null || _turnMeta === void 0 ? void 0 : _turnMeta.turnId)) || null;
             const aiEndpoint = 'https://avatar.archerlab.dev/api/credits/chat';
             _lastAiEndpoint = aiEndpoint;
             const fallbackEndpoint = ''; // AI text must not fall back to the legacy Gemini endpoint.
@@ -1263,18 +1265,18 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             if (!reply) {
                 console.warn('[Cupid GalleryFreeTalk] Empty AI response payload:', {
-                    reason: data?.reason || data?.error || data?.choices?.[0]?.finish_reason || 'EMPTY_AI_RESPONSE',
+                    reason: ((data === null || data === void 0 ? void 0 : data.reason)) || ((data === null || data === void 0 ? void 0 : data.error)) || (((__oc42 = (__oc41 = data === null || data === void 0 ? void 0 : data.choices) === null || __oc41 === void 0 ? void 0 : __oc41[0]) === null || __oc42 === void 0 ? void 0 : __oc42.finish_reason)) || 'EMPTY_AI_RESPONSE',
                     character: requestCharId || ''
                 });
                 throw new Error('AI response was empty. Please try again.');
             }
 
             // 응답 파싱
-            if (data?.provider === 'deepseek' && data?.usage) {
+            if (((data === null || data === void 0 ? void 0 : data.provider)) === 'deepseek' && ((data === null || data === void 0 ? void 0 : data.usage))) {
                 const usage = data.usage;
                 const cache = data.cache || {};
-                const hitTokens = Number(cache.prompt_cache_hit_tokens ?? usage.prompt_cache_hit_tokens ?? 0);
-                const missTokens = Number(cache.prompt_cache_miss_tokens ?? usage.prompt_cache_miss_tokens ?? 0);
+                const hitTokens = Number((((__oc44 = (__oc43 = cache.prompt_cache_hit_tokens) !== null && __oc43 !== void 0 ? __oc43 : usage.prompt_cache_hit_tokens) !== null && __oc44 !== void 0 ? __oc44 : 0)));
+                const missTokens = Number((((__oc46 = (__oc45 = cache.prompt_cache_miss_tokens) !== null && __oc45 !== void 0 ? __oc45 : usage.prompt_cache_miss_tokens) !== null && __oc46 !== void 0 ? __oc46 : 0)));
                 const hitRatio = hitTokens + missTokens > 0 ? hitTokens / (hitTokens + missTokens) : 0;
                 console.info('[DeepSeek Cache]', {
                     app: 'cupid-gallery-freetalk',
@@ -1292,18 +1294,18 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             this._assertRequestContext(requestContext, data);
             const parsed = this._parseResponse(reply);
             window.__cupidLastStreamFinish = {
-                provider: data?.provider || '',
-                providerRoute: data?.providerRoute || '',
-                model: data?.model || '',
-                usage: data?.usage || null,
-                cache: data?.cache || null,
-                turnId: data?.turnId || _turnMeta?.turnId || '',
+                provider: ((data === null || data === void 0 ? void 0 : data.provider)) || '',
+                providerRoute: ((data === null || data === void 0 ? void 0 : data.providerRoute)) || '',
+                model: ((data === null || data === void 0 ? void 0 : data.model)) || '',
+                usage: ((data === null || data === void 0 ? void 0 : data.usage)) || null,
+                cache: ((data === null || data === void 0 ? void 0 : data.cache)) || null,
+                turnId: ((data === null || data === void 0 ? void 0 : data.turnId)) || ((_turnMeta === null || _turnMeta === void 0 ? void 0 : _turnMeta.turnId)) || '',
                 surface: 'gallery-freetalk',
                 at: new Date().toISOString()
             };
             console.info('[Cupid AI Stream Finish]', window.__cupidLastStreamFinish);
 
-            if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
+            if (!((parsed === null || parsed === void 0 ? void 0 : parsed.text)) && !(Array.isArray(((parsed === null || parsed === void 0 ? void 0 : parsed.segments))) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
             const displayFallback = GalleryFreeTalkCore.getAiDisplayFallbackInfo(reply);
@@ -1315,7 +1317,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
             this._assertRequestContext(requestContext, data);
             // 이름표를 캐릭터로 변경 + 생각중 상태 해제
-            const charName = this.CHAR_NAMES[requestCharId]?.[this.lang] || requestCharId;
+            const charName = (((__oc47 = this.CHAR_NAMES[requestCharId]) === null || __oc47 === void 0 ? void 0 : __oc47[this.lang])) || requestCharId;
             this._clearThinkingMessage();
             if (nameTag) nameTag.textContent = charName;
             if (charImg) charImg.classList.remove('thinking');
@@ -1325,19 +1327,19 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const pacedDisplayText = Array.isArray(displaySegments) && displaySegments.length > 0
                 ? displaySegments.map(segment => segment.text).join('\n\n')
                 : displayText;
-            const shownPortrait = window.getCupidPortraitLogFields?.(document.getElementById('gft-char-img'), requestCharId) || {};
+            const shownPortrait = (((__oc48 = window.getCupidPortraitLogFields) === null || __oc48 === void 0 ? void 0 : __oc48.call(window, document.getElementById('gft-char-img'), requestCharId))) || {};
             if (parsed.expression === 'neutral') {
                 parsed.expression = shownPortrait.expression || (displayFallback ? '' : 'normal');
             }
-            window.recordCupidVisibleChat?.({ charId: requestCharKey, role: 'assistant', content: displayText,
-                sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
-                playerName: this.progress.getPlayerName() || '', responseMetadata: data,
-                expression: displayFallback ? (shownPortrait.expression || '') : parsed.expression,
-                ...(displayFallback ? {
-                    expressionVariant: shownPortrait.expressionVariant || '',
-                    avatarAsset: shownPortrait.avatarAsset || ''
-                } : {}),
-                clientMsgId: data?.logIds?.assistant });
+            (((__oc49 = window.recordCupidVisibleChat) === null || __oc49 === void 0 ? void 0 : __oc49.call(window, { charId: requestCharKey, role: 'assistant', content: displayText,
+        sessionId: 'gallery-freetalk', turnId: requestContext.turnMeta.turnId,
+        playerName: this.progress.getPlayerName() || '', responseMetadata: data,
+        expression: displayFallback ? (shownPortrait.expression || '') : parsed.expression,
+        ...(displayFallback ? {
+            expressionVariant: shownPortrait.expressionVariant || '',
+            avatarAsset: shownPortrait.avatarAsset || ''
+        } : {}),
+        clientMsgId: (__oc50 = data === null || data === void 0 ? void 0 : data.logIds) === null || __oc50 === void 0 ? void 0 : __oc50.assistant })));
             _streamingPreview.update(pacedDisplayText, displaySegments);
             await _streamingPreview.drain();
             this._finishStreamingText();
@@ -1346,15 +1348,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const assistantRenderReceipt = this._getChatRenderReceipt(displayText, displaySegments);
             this._assertRequestContext(requestContext, data);
             const selection = displayFallback ? null : this._updateExpression(parsed.expression, requestCharId);
-            const currentPortrait = window.getCupidPortraitLogFields?.(document.getElementById('gft-char-img'), requestCharId, selection?.avatarAsset) || {};
-            const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(requestCharId,
-                window.getCupidChatAvatarAsset?.(document.getElementById('gft-char-img')),
-                selection?.avatarAsset) || currentPortrait.avatarAsset || '';
+            const currentPortrait = (((__oc51 = window.getCupidPortraitLogFields) === null || __oc51 === void 0 ? void 0 : __oc51.call(window, document.getElementById('gft-char-img'), requestCharId, selection === null || selection === void 0 ? void 0 : selection.avatarAsset))) || {};
+            const avatarAsset = (((__oc52 = window.pickCupidSpeakerAvatarAsset) === null || __oc52 === void 0 ? void 0 : __oc52.call(window, requestCharId, (__oc53 = window.getCupidChatAvatarAsset) === null || __oc53 === void 0 ? void 0 : __oc53.call(window, document.getElementById('gft-char-img')), selection === null || selection === void 0 ? void 0 : selection.avatarAsset))) || currentPortrait.avatarAsset || '';
             const loggedExpression = displayFallback
                 ? (currentPortrait.expression || shownPortrait.expression || '')
                 : (parsed.expression || currentPortrait.expression || '');
-            const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
-                || window.getCupidExpressionVariantId?.(avatarAsset, loggedExpression)
+            const expressionVariant = (((__oc54 = window.normalizeCupidExpressionVariant) === null || __oc54 === void 0 ? void 0 : __oc54.call(window, selection === null || selection === void 0 ? void 0 : selection.expressionVariant)))
+                || (((__oc55 = window.getCupidExpressionVariantId) === null || __oc55 === void 0 ? void 0 : __oc55.call(window, avatarAsset, loggedExpression)))
                 || currentPortrait.expressionVariant
                 || '';
             this._assertRequestContext(requestContext, data);
@@ -1372,10 +1372,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 requestCharId,
                 finalContent
             );
-            const aftermathFromIncident = Boolean(incidentResult.startedCategory && incidentResult.activeIncident?.summary);
+            const aftermathFromIncident = Boolean(incidentResult.startedCategory && (((__oc56 = incidentResult.activeIncident) === null || __oc56 === void 0 ? void 0 : __oc56.summary)));
             const nextAftermath = GalleryFreeTalkCore.updateRelationshipAftermath(
-                this.progress?.getRelationshipAftermath?.(requestCharId),
-                affinityResult?.requestedChange ?? 0,
+                (((__oc58 = (__oc57 = this.progress) === null || __oc57 === void 0 ? void 0 : __oc57.getRelationshipAftermath) === null || __oc58 === void 0 ? void 0 : __oc58.call(__oc57, requestCharId))),
+                (((__oc59 = affinityResult === null || affinityResult === void 0 ? void 0 : affinityResult.requestedChange) !== null && __oc59 !== void 0 ? __oc59 : 0)),
                 aftermathFromIncident ? incidentResult.activeIncident.summary : finalContent,
                 {
                     source: aftermathFromIncident ? 'incident' : 'user',
@@ -1384,16 +1384,16 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                         : (aftermathFromIncident ? 'a relationship event between them' : 'the user\'s preceding words or action')
                 }
             );
-            if (!displayFallback) this.progress?.setRelationshipAftermath?.(requestCharId, nextAftermath);
-            if (!displayFallback) window.saveCupidDurableFacts?.({
-                charId: requestCharKey,
-                facts: parsed.memoryFacts,
-                userText: requestContext.aiUserContent ?? finalContent,
-                assistantText: displayText,
-                gallery: true
-            });
+            if (!displayFallback) (((__oc61 = (__oc60 = this.progress) === null || __oc60 === void 0 ? void 0 : __oc60.setRelationshipAftermath) === null || __oc61 === void 0 ? void 0 : __oc61.call(__oc60, requestCharId, nextAftermath)));
+            if (!displayFallback) (((__oc62 = window.saveCupidDurableFacts) === null || __oc62 === void 0 ? void 0 : __oc62.call(window, {
+        charId: requestCharKey,
+        facts: parsed.memoryFacts,
+        userText: (__oc63 = requestContext.aiUserContent) !== null && __oc63 !== void 0 ? __oc63 : finalContent,
+        assistantText: displayText,
+        gallery: true
+    })));
             this._assertRequestContext(requestContext, data);
-            if (displayFallback?.empty) {
+            if (((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty))) {
                 this._rollbackRequestHistory(requestContext);
             } else {
                 requestHistory.push({
@@ -1416,104 +1416,106 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             // assistantContent: 파싱된 displayText(raw JSON 저장 금지 — 뷰어에서 원본 JSON이 그대로 노출됨)
             if (typeof window.saveCupidChatLog === 'function') {
                 this._assertRequestContext(requestContext, data);
-                void Promise.resolve().then(() => window.saveCupidChatLog({
+                void Promise.resolve().then(() => { var __oc64; return (
+window.saveCupidChatLog({
                         charId: requestCharKey,
                         userContent: finalContent,
                         assistantContent: displayText,
                         sessionId: 'gallery-freetalk',
                         context: '1:1',
                         playerName: this.progress.getPlayerName() || '',
-                        affinityChange: affinityResult?.change,
-                        affinityCurrent: affinityResult?.value,
+                        affinityChange: ((affinityResult === null || affinityResult === void 0 ? void 0 : affinityResult.change)),
+                        affinityCurrent: ((affinityResult === null || affinityResult === void 0 ? void 0 : affinityResult.value)),
                         assistantRenderReceipt,
-                        turnId: requestContext.turnMeta?.turnId || '',
+                        turnId: (((__oc64 = requestContext.turnMeta) === null || __oc64 === void 0 ? void 0 : __oc64.turnId)) || '',
                         responseMetadata: data,
                         expression: loggedExpression,
                         expressionVariant,
                         avatarAsset
-                    }))
-                    .catch(logError => {
+                    })
+); })
+                    .catch(logError => { var __oc65, __oc66;
                         console.warn('[Cupid GalleryFreeTalk] Could not persist chat log asynchronously', logError);
-                        window.logCupidError?.(logError, {
-                            source: 'GalleryFreeTalk.saveCupidChatLog',
-                            errorType: 'chat_log_client_exception',
-                            errorClass: 'client',
-                            sessionId: 'gallery-freetalk',
-                            context: { charId: requestCharKey, logContext: '1:1' },
-                            extra: { turnId: requestContext?.turnMeta?.turnId || '' }
-                        });
+                        (((__oc65 = window.logCupidError) === null || __oc65 === void 0 ? void 0 : __oc65.call(window, logError, {
+        source: 'GalleryFreeTalk.saveCupidChatLog',
+        errorType: 'chat_log_client_exception',
+        errorClass: 'client',
+        sessionId: 'gallery-freetalk',
+        context: { charId: requestCharKey, logContext: '1:1' },
+        extra: { turnId: ((__oc66 = requestContext === null || requestContext === void 0 ? void 0 : requestContext.turnMeta) === null || __oc66 === void 0 ? void 0 : __oc66.turnId) || '' }
+    })));
                     });
             }
 
         } catch (err) {
-            _streamingPreview?.stop();
+            ((_streamingPreview === null || _streamingPreview === void 0 ? void 0 : _streamingPreview.stop()));
             _streamingPreview = null;
             this._finishStreamingText();
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
-            const isControlBlocked = err?.isControlBlocked === true || err?.reason === 'INPUT_CONTROL_BLOCKED';
+            const isControlBlocked = ((err === null || err === void 0 ? void 0 : err.isControlBlocked)) === true || ((err === null || err === void 0 ? void 0 : err.reason)) === 'INPUT_CONTROL_BLOCKED';
             this._rollbackRequestHistory(requestContext);
-            if (!ownsCurrentContext || err?.isStaleTurn || err?.reason === 'STALE_TURN') {
+            if (!ownsCurrentContext || ((err === null || err === void 0 ? void 0 : err.isStaleTurn)) || ((err === null || err === void 0 ? void 0 : err.reason)) === 'STALE_TURN') {
                 console.warn('[Cupid GalleryFreeTalk] Ignored stale chat response');
                 err.__staleTurnHandled = true;
             }
-            if (!err?.__staleTurnHandled && isControlBlocked) {
-                window.recordCupidVisibleChat?.({
-                    charId: requestCharKey,
-                    role: 'user',
-                    content: finalContent,
-                    sessionId: 'gallery-freetalk',
-                    turnId: requestContext?.turnMeta?.turnId || err?.turnId || '',
-                    playerName: this.progress?.getPlayerName?.() || '',
-                    responseMetadata: err,
-                    logSource: 'control-blocked'
-                });
-                const notice = err?.userMessage || GalleryFreeTalkCore.getControlBlockedNotice?.(this.lang) || 'Inputs that dictate the other character cannot be sent.';
+            if (!((err === null || err === void 0 ? void 0 : err.__staleTurnHandled)) && isControlBlocked) {
+                (((__oc67 = window.recordCupidVisibleChat) === null || __oc67 === void 0 ? void 0 : __oc67.call(window, {
+        charId: requestCharKey,
+        role: 'user',
+        content: finalContent,
+        sessionId: 'gallery-freetalk',
+        turnId: ((__oc68 = requestContext === null || requestContext === void 0 ? void 0 : requestContext.turnMeta) === null || __oc68 === void 0 ? void 0 : __oc68.turnId) || (err === null || err === void 0 ? void 0 : err.turnId) || '',
+        playerName: ((__oc70 = (__oc69 = this.progress) === null || __oc69 === void 0 ? void 0 : __oc69.getPlayerName) === null || __oc70 === void 0 ? void 0 : __oc70.call(__oc69)) || '',
+        responseMetadata: err,
+        logSource: 'control-blocked'
+    })));
+                const notice = ((err === null || err === void 0 ? void 0 : err.userMessage)) || (((__oc71 = GalleryFreeTalkCore.getControlBlockedNotice) === null || __oc71 === void 0 ? void 0 : __oc71.call(GalleryFreeTalkCore, this.lang))) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 if (nameTag) nameTag.textContent = failedTurnName;
                 if (nameTag) nameTag.textContent = ({ ko: '안내', en: 'Notice', es: 'Aviso', ja: '案内', fr: 'Info', de: 'Hinweis', pt: 'Aviso', zh: '提示' }[this.lang] || 'Notice'); if (msgEl) msgEl.textContent = notice;
                 if (charImg) charImg.classList.remove('thinking');
                 if (dialogueBox) dialogueBox.classList.remove('thinking-box');
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
-                window.CupidCredits?.refreshBalance?.().catch(() => {});
+                (((__oc73 = (__oc72 = window.CupidCredits) === null || __oc72 === void 0 ? void 0 : __oc72.refreshBalance) === null || __oc73 === void 0 ? void 0 : __oc73.call(__oc72).catch(() => { })));
                 err.__staleTurnHandled = true;
             }
-            if (!err?.__staleTurnHandled) {
+            if (!((err === null || err === void 0 ? void 0 : err.__staleTurnHandled))) {
                 if (!input.value) input.value = text;
                 this._resizeInput(input);
                 if (stagedImage && !this.stagedImage) {
                     this.stagedImage = stagedImage;
                     this._setImageUploadState(false, stagedImage);
                 }
-                const isHandledTurnstileChallenge = err?.turnstileBotSuspected === true
-                    || err?.isBrowserVerificationError === true
-                    || /^(?:300|600)\d*$/.test(String(err?.turnstileErrorCode || ''));
+                const isHandledTurnstileChallenge = ((err === null || err === void 0 ? void 0 : err.turnstileBotSuspected)) === true
+                    || ((err === null || err === void 0 ? void 0 : err.isBrowserVerificationError)) === true
+                    || /^(?:300|600)\d*$/.test(String(((err === null || err === void 0 ? void 0 : err.turnstileErrorCode)) || ''));
                 const isNetworkTransportFailure = GalleryFreeTalkCore.isNetworkTransportError(err);
                 const isTransientTransportFailure = isNetworkTransportFailure
-                    || /^HTTP (?:408|425|429|5\d\d)$/i.test(err?.message || '');
+                    || /^HTTP (?:408|425|429|5\d\d)$/i.test(((err === null || err === void 0 ? void 0 : err.message)) || '');
                 const isOfflineTransportFailure = navigator.onLine === false && isNetworkTransportFailure;
-                if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn('[GalleryFreeTalk] transport/verification interruption:', err?.message || err);
+                if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn('[GalleryFreeTalk] transport/verification interruption:', ((err === null || err === void 0 ? void 0 : err.message)) || err);
                 else console.error('[GalleryFreeTalk] API 오류:', err);
-                if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || err?.retryExhausted)) {
+                if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || ((err === null || err === void 0 ? void 0 : err.retryExhausted)))) {
                     window.logCupidError(err, {
                         source: 'cupid-gallery-freetalk',
-                        errorType: err?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : GalleryFreeTalkCore.isClientCodeException(err) ? 'freetalk_client_exception' : (/^HTTP\s+\d+/.test(err?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
+                        errorType: ((err === null || err === void 0 ? void 0 : err.retryExhausted)) ? 'freetalk_upstream_retries_exhausted' : GalleryFreeTalkCore.isClientCodeException(err) ? 'freetalk_client_exception' : (/^HTTP\s+\d+/.test(((err === null || err === void 0 ? void 0 : err.message)) || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                         sessionId: 'gallery-freetalk',
                         context: {
                             charId: requestCharKey || requestCharId || '',
                             galleryCharId: requestCharId || '',
                             language: this.lang || '',
-                            freeTalkCount: this.progress?.getFreeTalkCount?.(requestCharId) || 0
+                            freeTalkCount: (((__oc75 = (__oc74 = this.progress) === null || __oc74 === void 0 ? void 0 : __oc74.getFreeTalkCount) === null || __oc75 === void 0 ? void 0 : __oc75.call(__oc74, requestCharId))) || 0
                         },
                         extra: {
                             cacheKey: _lastCacheKey,
                             aiEndpoint: _lastAiEndpoint,
-                            turnId: _lastTurnMeta?.turnId || '',
-                            latestUserHash: _lastTurnMeta?.latestUserHash || '',
-                            latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
+                            turnId: ((_lastTurnMeta === null || _lastTurnMeta === void 0 ? void 0 : _lastTurnMeta.turnId)) || '',
+                            latestUserHash: ((_lastTurnMeta === null || _lastTurnMeta === void 0 ? void 0 : _lastTurnMeta.latestUserHash)) || '',
+                            latestUserLength: ((_lastTurnMeta === null || _lastTurnMeta === void 0 ? void 0 : _lastTurnMeta.latestUserLength)) || String(finalContent || '').length,
                             hasImage: String(finalContent || '').includes('data:image/'),
                             historyLength: requestHistory.length,
-                            ...(err?.status ? { httpStatus: Number(err.status) } : {}),
-                            ...(err?.reason ? { reason: String(err.reason) } : {})
+                            ...(((err === null || err === void 0 ? void 0 : err.status)) ? { httpStatus: Number(err.status) } : {}),
+                            ...(((err === null || err === void 0 ? void 0 : err.reason)) ? { reason: String(err.reason) } : {})
                         }
                     });
                 }
@@ -1526,7 +1528,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
         }
 
-        _streamingPreview?.stop();
+        ((_streamingPreview === null || _streamingPreview === void 0 ? void 0 : _streamingPreview.stop()));
         this._finishStreamingText();
         if (this._activeRequestOwner === requestOwner) {
             this._activeRequestOwner = null;
@@ -1560,8 +1562,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * AI 응답 파싱 (FreeTalkSystem.parseJsonResponse 경량 버전)
      * @private
      */
-    _getPlayerDisplayName() {
-        return this.progress?.getPlayerName?.() || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri', 'Liebling', 'Amor', '亲爱的');
+    _getPlayerDisplayName() { var __oc76, __oc77;
+        return (((__oc77 = (__oc76 = this.progress) === null || __oc76 === void 0 ? void 0 : __oc76.getPlayerName) === null || __oc77 === void 0 ? void 0 : __oc77.call(__oc76))) || this._L('자기', 'Honey', 'Cariño', 'あなた', 'Chéri', 'Liebling', 'Amor', '亲爱的');
     }
 
     _sanitizePlayerPlaceholders(text) {
@@ -1681,7 +1683,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         });
     }
 
-    _parseResponse(reply) {
+    _parseResponse(reply) { var __oc78, __oc79, __oc80;
         if (!reply) return { text: '', segments: null, expression: '', affinity: null, incident: null };
 
         const likelyJson = reply.includes('{') || reply.includes('```json');
@@ -1717,7 +1719,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
 
             const rawParsed = JSON.parse(jsonStr);
-            const parsed = window.CupidFreeTalkCore?.normalizeCupidResponsePayload?.(rawParsed) || rawParsed;
+            const parsed = (((__oc79 = (__oc78 = window.CupidFreeTalkCore) === null || __oc78 === void 0 ? void 0 : __oc78.normalizeCupidResponsePayload) === null || __oc79 === void 0 ? void 0 : __oc79.call(__oc78, rawParsed))) || rawParsed;
 
             // 신규 — segments 배열 우선 처리
             if (parsed && typeof parsed === 'object' && Array.isArray(parsed.segments) && parsed.segments.length > 0) {
@@ -1748,18 +1750,18 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             throw new Error('Unsupported Cupid response JSON schema');
 
         } catch (e) {
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-gallery-freetalk',
-                errorType: 'ai_response_json_parse_failed',
-                sessionId: 'gallery-freetalk',
-                context: {
-                    charId: this.currentCharId || '',
-                    charKey: this.currentCharKey || '',
-                    language: this.lang || '',
-                    replyLength: String(reply || '').length,
-                    replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
-                }
-            });
+            (((__oc80 = window.reportCupidCaughtError) === null || __oc80 === void 0 ? void 0 : __oc80.call(window, e, {
+        source: 'cupid-gallery-freetalk',
+        errorType: 'ai_response_json_parse_failed',
+        sessionId: 'gallery-freetalk',
+        context: {
+            charId: this.currentCharId || '',
+            charKey: this.currentCharKey || '',
+            language: this.lang || '',
+            replyLength: String(reply || '').length,
+            replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
+        }
+    })));
             return { text: '', segments: null, expression: '', affinity: null, incident: null };
         }
     }
@@ -1802,7 +1804,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
      * @private
      */
     _rewriteSpokenLexicon(text) {
-        const source = String(text ?? '');
+        const source = String(((text !== null && text !== void 0 ? text : '')));
         if (!source.includes('씨물')) return source;
         return source.replace(/씨물로/g, '정액으로').replace(/씨물/g, '정액');
     }
@@ -1870,10 +1872,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         return this._normalizeRenderedText(preview.textContent || '');
     }
 
-    _getChatRenderReceipt(text, structuredSegments = null) {
+    _getChatRenderReceipt(text, structuredSegments = null) { var __oc81;
         const expectedContent = this._getExpectedRenderedMessageText(text, structuredSegments);
         const renderedContent = this._normalizeRenderedText(
-            document.getElementById('message')?.textContent || ''
+            (((__oc81 = document.getElementById('message')) === null || __oc81 === void 0 ? void 0 : __oc81.textContent)) || ''
         );
         return {
             expectedContent,
@@ -1912,7 +1914,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         const resolvedSegments = this._sanitizeSegmentsPlaceholders(structuredSegments);
         const html = Array.isArray(resolvedSegments) && resolvedSegments.length > 0
             ? resolvedSegments.map(segment => {
-                if (!segment?.text) return '';
+                if (!((segment === null || segment === void 0 ? void 0 : segment.text))) return '';
                 const isAction = segment.type === 'narration';
                 const formatted = this._zetaFormatText(segment.text, isAction);
                 const escaped = String(formatted)
@@ -2114,13 +2116,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
 
     _hydratePendingCharacterImage() {
         const img = document.getElementById('gft-char-img');
-        const path = img?.getAttribute('data-cupid-pending');
+        const path = ((img === null || img === void 0 ? void 0 : img.getAttribute('data-cupid-pending')));
         if (!path) return;
         img.removeAttribute('data-cupid-pending');
         this._updateExpression('normal');
     }
 
-    _updateExpression(expression, charId = this.currentCharId, turn = this._activeChatTurnId || '') {
+    _updateExpression(expression, charId = this.currentCharId, turn = this._activeChatTurnId || '') { var __oc82, __oc83, __oc84, __oc85, __oc86, __oc87, __oc88, __oc89, __oc90, __oc91, __oc92, __oc93;
         if (!charId) return;
         const validExprs = this.CHAR_EXPRESSIONS[charId] || [];
         const resolvedExpression = GalleryFreeTalkCore.normalizeAvailableExpression(
@@ -2128,15 +2130,15 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             validExprs
         );
         if (!validExprs.includes(resolvedExpression)) return;
-        (window.CupidExpressionState ||= {})[charId] = resolvedExpression;
+        ((window.CupidExpressionState || (window.CupidExpressionState = {})))[charId] = resolvedExpression;
 
         const img = document.getElementById('gft-char-img');
         if (!img) return;
         const defaultPath = `assets/images/characters/${charId}_${resolvedExpression}.png`;
-        const activeCasual = window.getCupidChatAvatarAsset?.(img) || img?.dataset?.cupidAvatarAsset || img?.dataset?.cupidPending || '';
+        const activeCasual = (((__oc82 = window.getCupidChatAvatarAsset) === null || __oc82 === void 0 ? void 0 : __oc82.call(window, img))) || (((__oc83 = img === null || img === void 0 ? void 0 : img.dataset) === null || __oc83 === void 0 ? void 0 : __oc83.cupidAvatarAsset)) || (((__oc84 = img === null || img === void 0 ? void 0 : img.dataset) === null || __oc84 === void 0 ? void 0 : __oc84.cupidPending)) || '';
         const casualMatch = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(String(activeCasual));
         const resolvedOutfitPath = casualMatch
-            ? (window.GalleryData?.resolveOutfitExpression?.({ character: activeCasual }, defaultPath) || defaultPath)
+            ? ((((__oc86 = (__oc85 = window.GalleryData) === null || __oc85 === void 0 ? void 0 : __oc85.resolveOutfitExpression) === null || __oc86 === void 0 ? void 0 : __oc86.call(__oc85, { character: activeCasual }, defaultPath))) || defaultPath)
             : '';
         const isCasualOutfit = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(resolvedOutfitPath);
         const path = isCasualOutfit
@@ -2146,12 +2148,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 : defaultPath);
         const variantMatch = path.match(/\/([a-z0-9]+)_([a-z0-9_]+)\.(?:png|webp)$/i);
         const unlockExpr = (variantMatch && variantMatch[1] === charId) ? variantMatch[2] : resolvedExpression;
-        const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(path)
-            || window.getCupidChatAvatarAsset?.({ dataset: { cupidAvatarAsset: path } })
+        const avatarAsset = (((__oc87 = window.getCupidChatAvatarAssetFromPath) === null || __oc87 === void 0 ? void 0 : __oc87.call(window, path)))
+            || (((__oc88 = window.getCupidChatAvatarAsset) === null || __oc88 === void 0 ? void 0 : __oc88.call(window, { dataset: { cupidAvatarAsset: path } })))
             || '';
-        const expressionVariant = window.normalizeCupidExpressionVariant?.(
-            window.getCupidExpressionVariantId?.(path || avatarAsset, resolvedExpression)
-        ) || '';
+        const expressionVariant = (((__oc89 = window.normalizeCupidExpressionVariant) === null || __oc89 === void 0 ? void 0 : __oc89.call(window, (__oc90 = window.getCupidExpressionVariantId) === null || __oc90 === void 0 ? void 0 : __oc90.call(window, path || avatarAsset, resolvedExpression)))) || '';
         this._lastExpressionSelection = {
             owner: charId,
             expression: resolvedExpression,
@@ -2161,8 +2161,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         };
         if (img.dataset) img.dataset.cupidAvatarAsset = path;
         // Encrypted CUPIDENC1 sprites must go through /api/media — raw static URLs blank the img.
-        if (window.CupidMedia?.loadImageWithMediaFallback) {
-            window.CupidMedia.unlockExpression?.(charId, unlockExpr);
+        if ((((__oc91 = window.CupidMedia) === null || __oc91 === void 0 ? void 0 : __oc91.loadImageWithMediaFallback))) {
+            (((__oc93 = (__oc92 = window.CupidMedia).unlockExpression) === null || __oc93 === void 0 ? void 0 : __oc93.call(__oc92, charId, unlockExpr)));
             window.CupidMedia.loadImageWithMediaFallback(img, path, null, null, { preservePrevious: true });
             return this._lastExpressionSelection;
         }
@@ -2170,13 +2170,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         return this._lastExpressionSelection;
     }
 
-    _applyAffinityChange(change, charId = this.currentCharId, latestUserText = '') {
-        if (!charId || !this.progress?.changeCurrentAffinity) return null;
+    _applyAffinityChange(change, charId = this.currentCharId, latestUserText = '') { var __oc94, __oc95, __oc96, __oc97, __oc98;
+        if (!charId || !(((__oc94 = this.progress) === null || __oc94 === void 0 ? void 0 : __oc94.changeCurrentAffinity))) return null;
         if (!Number.isInteger(change)) return null;
 
-        const currentAffinity = this.progress?.getCurrentAffinity
+        const currentAffinity = (((__oc95 = this.progress) === null || __oc95 === void 0 ? void 0 : __oc95.getCurrentAffinity))
             ? this.progress.getCurrentAffinity(charId)
-            : (this.progress?.getAffinity?.(charId) || 0);
+            : ((((__oc97 = (__oc96 = this.progress) === null || __oc96 === void 0 ? void 0 : __oc96.getAffinity) === null || __oc97 === void 0 ? void 0 : __oc97.call(__oc96, charId))) || 0);
         const requestedChange = GalleryFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
             change,
             latestUserText,
@@ -2187,9 +2187,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             charId,
             requestedChange
         );
-        this._updateAffinityDisplay(result?.value, charId);
+        this._updateAffinityDisplay(((result === null || result === void 0 ? void 0 : result.value)), charId);
 
-        const effectChange = result?.requestedChange ?? requestedChange;
+        const effectChange = (((__oc98 = result === null || result === void 0 ? void 0 : result.requestedChange) !== null && __oc98 !== void 0 ? __oc98 : requestedChange));
         if (effectChange) {
             this._showAffinityChange(effectChange);
         }
@@ -2215,10 +2215,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         return '🤍';
     }
 
-    _updateAffinityDisplay(value, charId = this.currentCharId) {
+    _updateAffinityDisplay(value, charId = this.currentCharId) { var __oc99;
         if (charId !== this.currentCharId) return;
 
-        const display = this.overlayEl?.querySelector('#gft-affinity-display');
+        const display = (((__oc99 = this.overlayEl) === null || __oc99 === void 0 ? void 0 : __oc99.querySelector('#gft-affinity-display')));
         if (!display) return;
 
         const score = Math.max(-100, Math.min(100, Math.round(Number(value) || 0)));
@@ -2244,13 +2244,13 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (valueEl) valueEl.textContent = formatted;
     }
 
-    _showAffinityChange(amount) {
+    _showAffinityChange(amount) { var __oc100;
         if (!amount) return;
 
         const sfxPath = amount > 0
             ? 'assets/audio/sfx/affinity_up.mp3'
             : 'assets/audio/sfx/affinity_down.mp3';
-        if (window.soundManager?.playSfx) {
+        if ((((__oc100 = window.soundManager) === null || __oc100 === void 0 ? void 0 : __oc100.playSfx))) {
             Promise.resolve(window.soundManager.playSfx(sfxPath)).catch(() => {});
         }
 
@@ -2271,11 +2271,11 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         window.setTimeout(() => popup.remove(), 4000);
     }
 
-    _incrementFreeTalkCount(charId = this.currentCharId) {
+    _incrementFreeTalkCount(charId = this.currentCharId) { var __oc101;
         if (!charId || !this.progress) return;
         try {
             this.progress.refresh();
-            const charData = this.progress.data.characters?.[charId];
+            const charData = (((__oc101 = this.progress.data.characters) === null || __oc101 === void 0 ? void 0 : __oc101[charId]));
             if (charData) {
                 charData.freeTalkCount = (charData.freeTalkCount || 0) + 1;
                 this.progress.save();
@@ -2285,8 +2285,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         }
     }
 
-    _prepareGalleryIncidentRuntime(charId = this.currentCharId) {
-        const state = this.progress?.getGalleryIncidentState
+    _prepareGalleryIncidentRuntime(charId = this.currentCharId) { var __oc102;
+        const state = (((__oc102 = this.progress) === null || __oc102 === void 0 ? void 0 : __oc102.getGalleryIncidentState))
             ? this.progress.getGalleryIncidentState(charId)
             : GalleryFreeTalkCore.normalizeGalleryIncidentState();
         const plan = GalleryFreeTalkCore.planGalleryIncident(
@@ -2305,21 +2305,21 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         latestUserText = '',
         turnAffinity = 0,
         decisionEvaluated = false
-    } = {}) {
+    } = {}) { var __oc103, __oc104, __oc105;
         let state = GalleryFreeTalkCore.normalizeGalleryIncidentState(
-            runtime?.state || this.progress?.getGalleryIncidentState?.(charId)
+            ((runtime === null || runtime === void 0 ? void 0 : runtime.state)) || (((__oc104 = (__oc103 = this.progress) === null || __oc103 === void 0 ? void 0 : __oc103.getGalleryIncidentState) === null || __oc104 === void 0 ? void 0 : __oc104.call(__oc103, charId)))
         );
-        const plan = runtime?.plan || null;
+        const plan = ((runtime === null || runtime === void 0 ? void 0 : runtime.plan)) || null;
         const incidentPayload = GalleryFreeTalkCore.normalizeGalleryIncidentPayload(payload);
         state.completedTurns += 1;
 
         let affinityChange = this._normalizeAffinityChange(turnAffinity);
         let startedCategory = '';
         let startedSeverity = '';
-        const plannedCategory = GalleryFreeTalkCore.normalizeGalleryIncidentCategory(plan?.category);
+        const plannedCategory = GalleryFreeTalkCore.normalizeGalleryIncidentCategory(((plan === null || plan === void 0 ? void 0 : plan.category)));
         const startsPlannedIncident = Boolean(
             plannedCategory
-            && incidentPayload?.status === 'started'
+            && ((incidentPayload === null || incidentPayload === void 0 ? void 0 : incidentPayload.status)) === 'started'
             && incidentPayload.summary
             && (plannedCategory !== 'crisis' || incidentPayload.severity)
         );
@@ -2327,14 +2327,14 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         if (startsPlannedIncident && !state.activeIncident) {
             const category = plannedCategory;
             const severity = category === 'crisis'
-                ? GalleryFreeTalkCore.normalizeGalleryCrisisSeverity(incidentPayload?.severity)
+                ? GalleryFreeTalkCore.normalizeGalleryCrisisSeverity(((incidentPayload === null || incidentPayload === void 0 ? void 0 : incidentPayload.severity)))
                 : '';
-            const summary = incidentPayload?.summary
+            const summary = ((incidentPayload === null || incidentPayload === void 0 ? void 0 : incidentPayload.summary))
                 || GalleryFreeTalkCore.truncateLatestUserText(visibleText, 240)
                 || `${category} incident`;
             affinityChange = GalleryFreeTalkCore.normalizeGalleryIncidentImpact(
                 category,
-                incidentPayload?.impact,
+                ((incidentPayload === null || incidentPayload === void 0 ? void 0 : incidentPayload.impact)),
                 {
                     severity
                 }
@@ -2355,8 +2355,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             }
         } else if (state.activeIncident) {
             state.activeIncident.turns += 1;
-            if (incidentPayload?.summary) state.activeIncident.summary = incidentPayload.summary;
-            if (incidentPayload?.status === 'resolved') {
+            if (((incidentPayload === null || incidentPayload === void 0 ? void 0 : incidentPayload.summary))) state.activeIncident.summary = incidentPayload.summary;
+            if (((incidentPayload === null || incidentPayload === void 0 ? void 0 : incidentPayload.status)) === 'resolved') {
                 state.recentIncidents.push({
                     category: state.activeIncident.category,
                     severity: state.activeIncident.severity || '',
@@ -2380,7 +2380,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                 latestUserText
             );
         }
-        const savedState = this.progress?.setGalleryIncidentState
+        const savedState = (((__oc105 = this.progress) === null || __oc105 === void 0 ? void 0 : __oc105.setGalleryIncidentState))
             ? this.progress.setGalleryIncidentState(charId, state)
             : GalleryFreeTalkCore.normalizeGalleryIncidentState(state);
 
@@ -2508,20 +2508,20 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
                             }
                             console.debug('[GalleryFreeTalk] R2 업로드 완료:', url);
                         }
-                    }).catch(err => {
+                    }).catch(err => { var __oc106;
                         if (this._imageUploadVersion === uploadVersion) {
                             this._setImageUploadState(false);
                         }
                         console.warn('[GalleryFreeTalk] R2 업로드 실패, base64 폴백:', err.message);
-                        window.reportCupidCaughtError?.(err, {
-                            source: 'cupid-gallery-freetalk',
-                            errorType: 'image_upload_fallback',
-                            context: {
-                                uploadContext: 'gallery-freetalk',
-                                charId: this.currentCharId || '',
-                                charKey: this.currentCharKey || ''
-                            }
-                        });
+                        (((__oc106 = window.reportCupidCaughtError) === null || __oc106 === void 0 ? void 0 : __oc106.call(window, err, {
+        source: 'cupid-gallery-freetalk',
+        errorType: 'image_upload_fallback',
+        context: {
+            uploadContext: 'gallery-freetalk',
+            charId: this.currentCharId || '',
+            charKey: this.currentCharKey || ''
+        }
+    })));
                     });
                 }
             };
@@ -2618,7 +2618,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
         };
     }
 
-    _buildSystemPrompt(charId) {
+    _buildSystemPrompt(charId) { var __oc107, __oc108, __oc109, __oc110, __oc111, __oc112, __oc113;
         const isEn = this.lang !== 'ko';
 
         // 강제 언어 룰 — 모든 비-한국어 페이지에 적용
@@ -2640,10 +2640,10 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             langPrefix = `**[Response Language Rule]**: Reply only in natural, conversational Simplified Chinese (简体中文), regardless of input or history language. Never use Traditional characters.\n\n`;
         }
 
-        const charName = this.CHAR_NAMES[charId]?.[this.lang] || charId;
-        const location = this.CHAR_LOCATIONS[charId]?.[this.lang] || '';
-        const personality = this.CHAR_PERSONALITIES[charId]?.[this.lang] || '';
-        const datingPrompt = this.CHAR_DATING_PROMPTS[charId]?.[this.lang] || '';
+        const charName = (((__oc107 = this.CHAR_NAMES[charId]) === null || __oc107 === void 0 ? void 0 : __oc107[this.lang])) || charId;
+        const location = (((__oc108 = this.CHAR_LOCATIONS[charId]) === null || __oc108 === void 0 ? void 0 : __oc108[this.lang])) || '';
+        const personality = (((__oc109 = this.CHAR_PERSONALITIES[charId]) === null || __oc109 === void 0 ? void 0 : __oc109[this.lang])) || '';
+        const datingPrompt = (((__oc110 = this.CHAR_DATING_PROMPTS[charId]) === null || __oc110 === void 0 ? void 0 : __oc110[this.lang])) || '';
         const adultIntimacyProfile = getGalleryCharacterAdultIntimacy(charId, this.lang);
         // 이름이 비어 있을 때 애칭을 이름처럼 주입하지 않는다.
         const playerName = String(this.progress.getPlayerName() || '').trim();
@@ -2674,9 +2674,9 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             location && `기본 장소: ${location}`
         ]).filter(Boolean).join("\n");
         const compactGalleryExpressions = validExprs.join(', ') || 'normal';
-        const currentAffinity = this.progress?.getCurrentAffinity
+        const currentAffinity = (((__oc111 = this.progress) === null || __oc111 === void 0 ? void 0 : __oc111.getCurrentAffinity))
             ? this.progress.getCurrentAffinity(charId)
-            : (this.progress?.getAffinity?.(charId) || 0);
+            : ((((__oc113 = (__oc112 = this.progress) === null || __oc112 === void 0 ? void 0 : __oc112.getAffinity) === null || __oc113 === void 0 ? void 0 : __oc113.call(__oc112, charId))) || 0);
         const relationshipState = this._getGalleryRelationshipState(currentAffinity);
         const affinityChangeGuidance = GalleryFreeTalkCore.buildAffinityChangeGuidance(this.lang);
         const expressionAffinityGuidance = GalleryFreeTalkCore.buildExpressionAffinityGuidance(this.lang);
@@ -2795,26 +2795,32 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
         });
     }
 
-    _applyInputHistoryDisposition(requestContext, data) {
-        const disposition = data?.inputHistory;
-        if (disposition?.version !== 1 || !Array.isArray(requestContext?.history)) return;
-        const user = [...requestContext.history].reverse().find(message => message?.role === 'user');
+    _applyInputHistoryDisposition(requestContext, data) { var __oc114;
+        const disposition = ((data === null || data === void 0 ? void 0 : data.inputHistory));
+        if (((disposition === null || disposition === void 0 ? void 0 : disposition.version)) !== 1 || !Array.isArray(((requestContext === null || requestContext === void 0 ? void 0 : requestContext.history)))) return;
+        const user = [...requestContext.history].reverse().find(message => { return (
+((message === null || message === void 0 ? void 0 : message.role)) === 'user'
+); });
         if (!user) return;
         if (disposition.excludeCurrent === true && disposition.treatment === 'unspoken_control') user.excludeFromAiHistory = true;
         else if (disposition.content != null) user.aiHistoryContent = disposition.content;
-        const content = user.excludeFromAiHistory ? '' : user.aiHistoryContent ?? user.content;
+        const content = user.excludeFromAiHistory ? '' : (((__oc114 = user.aiHistoryContent) !== null && __oc114 !== void 0 ? __oc114 : user.content));
         requestContext.aiUserContent = typeof content === 'string' ? content
-            : (content || []).filter(part => part?.type === 'text').map(part => part.text).join('\n');
+            : (content || []).filter(part => { return (
+((part === null || part === void 0 ? void 0 : part.type)) === 'text'
+); }).map(part => part.text).join('\n');
     }
 
     _buildWindowedHistory(history = this.chatHistory, charId = this.currentCharId) {
         if (!Array.isArray(history) || history.length === 0) return [];
-        const cleanHistory = history.filter(msg => {
-            if (msg?.excludeFromAiHistory) return false;
+        const cleanHistory = history.filter(msg => { var __oc115;
+            if (((msg === null || msg === void 0 ? void 0 : msg.excludeFromAiHistory))) return false;
             if (!msg || msg.role !== 'assistant') return true;
-            if (msg.displayFallback?.empty === true) return false;
+            if ((((__oc115 = msg.displayFallback) === null || __oc115 === void 0 ? void 0 : __oc115.empty)) === true) return false;
             return String(msg.content || '').trim() !== '...';
-        }).map(msg => msg?.aiHistoryContent != null ? { ...msg, content: msg.aiHistoryContent } : msg);
+        }).map(msg => { return (
+((msg === null || msg === void 0 ? void 0 : msg.aiHistoryContent)) != null ? { ...msg, content: msg.aiHistoryContent } : msg
+); });
         if (typeof window.buildCupidPromptEpoch !== 'function') {
             const sysMsg = cleanHistory[0];
             if (!sysMsg || sysMsg.role !== 'system') {
@@ -2840,29 +2846,29 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
         if (!charId) return null;
         try {
             const all = JSON.parse(window.CupidStorage.getItem(this.PROMPT_EPOCH_MEMORY_KEY) || '{}');
-            return all?.[charId] || null;
+            return ((all === null || all === void 0 ? void 0 : all[charId])) || null;
         } catch (_) {
             return null;
         }
     }
 
-    _savePromptEpochState(charId, state) {
+    _savePromptEpochState(charId, state) { var __oc116;
         if (!charId) return;
         try {
             const all = JSON.parse(window.CupidStorage.getItem(this.PROMPT_EPOCH_MEMORY_KEY) || '{}');
-            if (state?.version === 1) all[charId] = state;
+            if (((state === null || state === void 0 ? void 0 : state.version)) === 1) all[charId] = state;
             else delete all[charId];
             window.CupidStorage.setItem(this.PROMPT_EPOCH_MEMORY_KEY, JSON.stringify(all));
         } catch (e) {
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-gallery-freetalk',
-                errorType: 'gallery_freetalk_prompt_epoch_save_failed',
-                context: { charId }
-            });
+            (((__oc116 = window.reportCupidCaughtError) === null || __oc116 === void 0 ? void 0 : __oc116.call(window, e, {
+        source: 'cupid-gallery-freetalk',
+        errorType: 'gallery_freetalk_prompt_epoch_save_failed',
+        context: { charId }
+    })));
         }
     }
 
-    _loadMemory(charId) {
+    _loadMemory(charId) { var __oc117;
         try {
             const saved = window.CupidStorage.getItem(this.MEMORY_KEY);
             if (saved) {
@@ -2873,15 +2879,15 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
             }
         } catch (e) {
             this.chatHistory = [];
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-gallery-freetalk',
-                errorType: 'gallery_freetalk_memory_load_failed',
-                context: { charId }
-            });
+            (((__oc117 = window.reportCupidCaughtError) === null || __oc117 === void 0 ? void 0 : __oc117.call(window, e, {
+        source: 'cupid-gallery-freetalk',
+        errorType: 'gallery_freetalk_memory_load_failed',
+        context: { charId }
+    })));
         }
     }
 
-    _saveMemory(charId, history = this.chatHistory) {
+    _saveMemory(charId, history = this.chatHistory) { var __oc118;
         try {
             const saved = window.CupidStorage.getItem(this.MEMORY_KEY);
             const all = saved ? JSON.parse(saved) : {};
@@ -2893,11 +2899,11 @@ ${affinityIntimacyGuidance}${this._buildOutingDynamicTail(charId, charName)}`;
             window.CupidStorage.setItem(this.MEMORY_KEY, JSON.stringify(all));
         } catch (e) {
             console.error('[GalleryFreeTalk] 메모리 저장 실패:', e);
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-gallery-freetalk',
-                errorType: 'gallery_freetalk_memory_save_failed',
-                context: { charId, historyLength: this.chatHistory.length }
-            });
+            (((__oc118 = window.reportCupidCaughtError) === null || __oc118 === void 0 ? void 0 : __oc118.call(window, e, {
+        source: 'cupid-gallery-freetalk',
+        errorType: 'gallery_freetalk_memory_save_failed',
+        context: { charId, historyLength: this.chatHistory.length }
+    })));
         }
     }
 }

@@ -260,7 +260,7 @@ class UIManager {
     /**
      * 모바일 가상 키보드가 하단 UI를 덮지 않도록 보정합니다.
      */
-    setupMobileKeyboardHandling() {
+    setupMobileKeyboardHandling() { var __oc0, __oc1, __oc2;
         this.uiLayer = this.uiLayer || document.getElementById('ui-layer');
         if (!this.uiLayer || this._mobileKeyboardBound) return;
         this._mobileKeyboardBound = true;
@@ -274,7 +274,7 @@ class UIManager {
         window.addEventListener('resize', this._keyboardViewportHandler);
         document.addEventListener('fullscreenchange', this._keyboardViewportHandler);
         document.addEventListener('webkitfullscreenchange', this._keyboardViewportHandler);
-        window.navigator?.virtualKeyboard?.addEventListener?.('geometrychange', this._keyboardViewportHandler);
+        (((__oc2 = (__oc1 = (__oc0 = window.navigator) === null || __oc0 === void 0 ? void 0 : __oc0.virtualKeyboard) === null || __oc1 === void 0 ? void 0 : __oc1.addEventListener) === null || __oc2 === void 0 ? void 0 : __oc2.call(__oc1, 'geometrychange', this._keyboardViewportHandler)));
         this._keyboardOrientationHandler = () => this._queueMobileKeyboardUpdate(160);
         window.addEventListener('orientationchange', this._keyboardOrientationHandler);
 
@@ -295,7 +295,7 @@ class UIManager {
         }, delay);
     }
 
-    _updateMobileKeyboardOffset() {
+    _updateMobileKeyboardOffset() { var __oc3;
         if (!this.uiLayer) return;
 
         const focusedElement = document.activeElement;
@@ -310,7 +310,7 @@ class UIManager {
             ? `translate3d(0, -${keyboardOffset}px, 0)`
             : '';
         // 페이지가 내려가거나 문서가 교체되는 순간 body가 없을 수 있다.
-        document.body?.classList.toggle('cupid-keyboard-active', keyboardOffset > 0);
+        (((__oc3 = document.body) === null || __oc3 === void 0 ? void 0 : __oc3.classList.toggle('cupid-keyboard-active', keyboardOffset > 0)));
     }
 
     /**
@@ -445,13 +445,13 @@ class UIManager {
                             this.stagedImage = url;
                             console.debug('[UIManager] R2 업로드 완료:', url);
                         }
-                    }).catch(err => {
+                    }).catch(err => { var __oc4;
                         console.warn('[UIManager] R2 업로드 실패, base64 폴백:', err.message);
-                        window.reportCupidCaughtError?.(err, {
-                            source: 'cupid-ui-manager',
-                            errorType: 'image_upload_fallback',
-                            context: { uploadContext: 'game-chat' }
-                        });
+                        (((__oc4 = window.reportCupidCaughtError) === null || __oc4 === void 0 ? void 0 : __oc4.call(window, err, {
+        source: 'cupid-ui-manager',
+        errorType: 'image_upload_fallback',
+        context: { uploadContext: 'game-chat' }
+    })));
                     }).finally(() => {
                         if (this._imageUploadVersion === uploadVersion) {
                             this._setImageUploadState(false);
@@ -667,7 +667,7 @@ class UIManager {
      * 여러 캐릭터 호감도 동시 변화 표시 (좌/우 분산 배치)
      * @param {Array} changes - [{amount, charKey}, ...]
      */
-    showAffinityChangeMulti(changes) {
+    showAffinityChangeMulti(changes) { var __oc5;
         if (!changes || changes.length === 0) return;
 
         // 양수를 먼저, 음수를 나중에 정렬
@@ -701,7 +701,7 @@ class UIManager {
         ];
         const visibleChars = {};
         for (const slot of slots) {
-            const img = slot.el?.querySelector('img');
+            const img = (((__oc5 = slot.el) === null || __oc5 === void 0 ? void 0 : __oc5.querySelector('img')));
             if (img && img.src) {
                 const src = img.src.toLowerCase();
                 for (const [key, file] of Object.entries(charFileMap)) {
@@ -724,8 +724,8 @@ class UIManager {
         // 화면에 없는 캐릭터들의 분산 위치 (화면 캐릭터 위치 피해서)
         const usedPositions = new Set(onScreen.map(c => c.left));
         const sidePositions = ['25%', '75%', '15%', '85%'].filter(p => !usedPositions.has(p));
-        offScreen.forEach((change, i) => {
-            change.left = sidePositions[i] ?? (i % 2 === 0 ? '25%' : '75%');
+        offScreen.forEach((change, i) => { var __oc6;
+            change.left = (((__oc6 = sidePositions[i]) !== null && __oc6 !== void 0 ? __oc6 : (i % 2 === 0 ? '25%' : '75%')));
         });
 
         // 양수 효과음 1번만
@@ -736,14 +736,14 @@ class UIManager {
         }
 
         // 화면에 보이는 캐릭터: 기존 팝업
-        onScreen.forEach((change) => {
+        onScreen.forEach((change) => { var __oc7;
             const popup = document.createElement('div');
             popup.className = `affinity-popup affinity-popup-multi ${change.amount > 0 ? 'positive' : 'negative'}`;
             popup.style.left = change.left;
 
             const label = document.createElement('span');
             label.className = 'affinity-char-label';
-            label.textContent = nameMap[change.charKey] ?? change.charKey;
+            label.textContent = (((__oc7 = nameMap[change.charKey]) !== null && __oc7 !== void 0 ? __oc7 : change.charKey));
 
             const emoji = document.createElement('span');
             emoji.className = 'emoji';
@@ -762,7 +762,7 @@ class UIManager {
         });
 
         // 화면에 안 보이는 캐릭터: 옆에서 슬라이드인 되는 이름 태그
-        offScreen.forEach((change, i) => {
+        offScreen.forEach((change, i) => { var __oc8;
             const tag = document.createElement('div');
             const isPositive = change.amount > 0;
             const side = i % 2 === 0 ? 'left' : 'right';
@@ -770,7 +770,7 @@ class UIManager {
 
             const name = document.createElement('span');
             name.className = 'affinity-nametag-name';
-            name.textContent = nameMap[change.charKey] ?? change.charKey;
+            name.textContent = (((__oc8 = nameMap[change.charKey]) !== null && __oc8 !== void 0 ? __oc8 : change.charKey));
 
             const val = document.createElement('span');
             val.className = 'affinity-nametag-value';

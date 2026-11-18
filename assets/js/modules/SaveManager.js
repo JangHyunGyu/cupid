@@ -28,7 +28,7 @@
  */
 
 class SaveManager {
-    static AFFINITY_REBALANCE_VERSION = 1;
+    
 
     /**
      * @param {string} storageKey - localStorage에 사용할 키 이름
@@ -46,7 +46,7 @@ class SaveManager {
      * @param {Object} characters - 현재 표시된 캐릭터들 {left, center, right}
      * @param {Object} gameStateData - StateManager.exportState()의 결과
      */
-    save(sceneId, bgUrl, characters, gameStateData) {
+    save(sceneId, bgUrl, characters, gameStateData) { var __oc0, __oc1;
         const saveData = {
             currentSceneId: sceneId,           // 어느 씬까지 진행했는지
             lastBgUrl: bgUrl,                  // 마지막 배경
@@ -55,7 +55,7 @@ class SaveManager {
             savedAt: Date.now()                // 저장 시각
         };
 
-        if (window.CupidProgressIntegrity?.save(saveData) === false) return false;
+        if ((((__oc0 = window.CupidProgressIntegrity) === null || __oc0 === void 0 ? void 0 : __oc0.save(saveData))) === false) return false;
 
         // JSON 문자열로 변환해서 저장
         try {
@@ -63,11 +63,11 @@ class SaveManager {
             console.log('[SaveManager] 저장 완료:', sceneId);
         } catch (e) {
             console.error('[SaveManager] 저장 실패:', e);
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-save-manager',
-                errorType: 'save_failed',
-                context: { storageKey: this.storageKey, sceneId }
-            });
+            (((__oc1 = window.reportCupidCaughtError) === null || __oc1 === void 0 ? void 0 : __oc1.call(window, e, {
+        source: 'cupid-save-manager',
+        errorType: 'save_failed',
+        context: { storageKey: this.storageKey, sceneId }
+    })));
         }
     }
 
@@ -75,7 +75,7 @@ class SaveManager {
      * 저장된 게임 데이터 불러오기
      * @returns {Object|null} 저장된 데이터, 없으면 null
      */
-    load() {
+    load() { var __oc2, __oc3, __oc4;
         const saved = window.CupidStorage.getItem(this.storageKey);
 
         // 저장된 데이터가 없으면 null 반환
@@ -83,8 +83,8 @@ class SaveManager {
 
         try {
             const saveData = JSON.parse(saved);
-            window.CupidProgressIntegrity?.restoreSave(saveData);
-            if (window.CupidAffinityCorrections?.correctSave(saveData)) {
+            (((__oc2 = window.CupidProgressIntegrity) === null || __oc2 === void 0 ? void 0 : __oc2.restoreSave(saveData)));
+            if ((((__oc3 = window.CupidAffinityCorrections) === null || __oc3 === void 0 ? void 0 : __oc3.correctSave(saveData)))) {
                 window.CupidStorage.setItem(this.storageKey, JSON.stringify(saveData));
             }
             this._migrateAffinityRebalance(saveData);
@@ -92,11 +92,11 @@ class SaveManager {
         } catch (e) {
             // JSON 파싱 실패 (데이터 손상)
             console.error('[SaveManager] 파싱 오류:', e);
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-save-manager',
-                errorType: 'save_parse_failed',
-                context: { storageKey: this.storageKey, savedLength: saved.length }
-            });
+            (((__oc4 = window.reportCupidCaughtError) === null || __oc4 === void 0 ? void 0 : __oc4.call(window, e, {
+        source: 'cupid-save-manager',
+        errorType: 'save_parse_failed',
+        context: { storageKey: this.storageKey, savedLength: saved.length }
+    })));
             return null;
         }
     }
@@ -109,8 +109,8 @@ class SaveManager {
      * @returns {{changed:boolean, downgradedCharacters:string[], reroutedScene:string}}
      * @private
      */
-    _migrateAffinityRebalance(saveData) {
-        const gameState = saveData?.gameState;
+    _migrateAffinityRebalance(saveData) { var __oc5, __oc6, __oc7;
+        const gameState = ((saveData === null || saveData === void 0 ? void 0 : saveData.gameState));
         if (!gameState || typeof gameState !== 'object') {
             return { changed: false, downgradedCharacters: [], reroutedScene: '' };
         }
@@ -134,7 +134,7 @@ class SaveManager {
         );
 
         for (const { key } of configs) {
-            if ((Number(stats[key]?.affinity) || 0) < 100) continue;
+            if ((Number((((__oc5 = stats[key]) === null || __oc5 === void 0 ? void 0 : __oc5.affinity))) || 0) < 100) continue;
             stats[key].affinity = 99;
             flags[`isDating_${key}`] = false;
             downgradedCharacters.push(key);
@@ -165,7 +165,7 @@ class SaveManager {
             console.warn('[SaveManager] 호감도 재조정 저장 실패:', e);
         }
         if (downgradedCharacters.length > 0) {
-            window.CupidProgressIntegrity?.commitMigration?.(saveData);
+            (((__oc7 = (__oc6 = window.CupidProgressIntegrity) === null || __oc6 === void 0 ? void 0 : __oc6.commitMigration) === null || __oc7 === void 0 ? void 0 : __oc7.call(__oc6, saveData)));
         }
         return { changed: true, downgradedCharacters, reroutedScene };
     }
@@ -185,20 +185,21 @@ class SaveManager {
     /**
      * 저장 데이터 삭제 (새 게임 시작 시 호출)
      */
-    clear() {
+    clear() { var __oc8;
         try {
             window.CupidStorage.removeItem(this.storageKey);
             console.log('[SaveManager] 저장 데이터 삭제됨');
         } catch (e) {
             console.error('[SaveManager] 삭제 실패:', e);
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-save-manager',
-                errorType: 'save_clear_failed',
-                context: { storageKey: this.storageKey }
-            });
+            (((__oc8 = window.reportCupidCaughtError) === null || __oc8 === void 0 ? void 0 : __oc8.call(window, e, {
+        source: 'cupid-save-manager',
+        errorType: 'save_clear_failed',
+        context: { storageKey: this.storageKey }
+    })));
         }
     }
 }
+SaveManager.AFFINITY_REBALANCE_VERSION = 1;
 
 // ============================================================================
 // window 전역 노출

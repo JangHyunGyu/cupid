@@ -67,7 +67,7 @@ class SoundManager {
     /**
      * AudioContext 생성/resume
      */
-    _ensureAudioContext() {
+    _ensureAudioContext() { var __oc0, __oc1;
         if (this._audioUnavailable) return null;
         if (!this.audioContext) {
             const AudioContextCtor = window.AudioContext || window.webkitAudioContext;
@@ -85,7 +85,7 @@ class SoundManager {
             }
         }
         if (this.audioContext.state === 'suspended') {
-            this.audioContext.resume?.().catch(() => {});
+            (((__oc1 = (__oc0 = this.audioContext).resume) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0).catch(() => { })));
         }
         return this.audioContext;
     }
@@ -99,7 +99,7 @@ class SoundManager {
         this.isInitialized = true;
         this._installAvailabilityRecovery();
 
-        const unlock = () => {
+        const unlock = () => { var __oc2;
             console.log("SoundManager: 사용자 상호작용 감지");
             const ctx = this._ensureAudioContext();
             if (!ctx) {
@@ -124,20 +124,19 @@ class SoundManager {
             }
 
             // suspended → running 전환 대기
-            ctx.resume?.().then(() => {
-                if (!this._unlocked && ctx.state === 'running') {
-                    this._unlocked = true;
-                    this._startAmbience();
-                    window.removeEventListener('click', unlock);
-                    window.removeEventListener('touchstart', unlock);
-
-                    if (this._pendingPlay) {
-                        const { path, loop } = this._pendingPlay;
-                        this._pendingPlay = null;
-                        this._startPlayback(path, loop);
-                    }
-                }
-            });
+            (((__oc2 = ctx.resume) === null || __oc2 === void 0 ? void 0 : __oc2.call(ctx).then(() => {
+        if (!this._unlocked && ctx.state === 'running') {
+            this._unlocked = true;
+            this._startAmbience();
+            window.removeEventListener('click', unlock);
+            window.removeEventListener('touchstart', unlock);
+            if (this._pendingPlay) {
+                const { path, loop } = this._pendingPlay;
+                this._pendingPlay = null;
+                this._startPlayback(path, loop);
+            }
+        }
+    })));
         };
 
         window.addEventListener('click', unlock);
@@ -201,8 +200,8 @@ class SoundManager {
 
     _isRetryableAudioError(error) {
         if (this._isAudioDecodeError(error)) return true;
-        const name = String(error?.name || '');
-        const message = String(error?.message || error || '');
+        const name = String(((error === null || error === void 0 ? void 0 : error.name)) || '');
+        const message = String(((error === null || error === void 0 ? void 0 : error.message)) || error || '');
         if (name === 'AbortError' || name === 'NetworkError') return true;
         if (name === 'TypeError'
             && /load failed|failed to fetch|network request failed|fetch failed/i.test(message)) {
@@ -215,8 +214,8 @@ class SoundManager {
     }
 
     _isAudioDecodeError(error) {
-        const name = String(error?.name || '');
-        const message = String(error?.message || error || '');
+        const name = String(((error === null || error === void 0 ? void 0 : error.name)) || '');
+        const message = String(((error === null || error === void 0 ? void 0 : error.message)) || error || '');
         return name === 'EncodingError'
             || /unable to decode audio data|decode audio data|audio.*decod/i.test(message);
     }
@@ -256,8 +255,8 @@ class SoundManager {
         } else if (typeof window.__cupidLogRuntimeError === 'function') {
             window.__cupidLogRuntimeError(
                 'SoundLoadError',
-                error?.message,
-                error?.stack || '',
+                ((error === null || error === void 0 ? void 0 : error.message)),
+                ((error === null || error === void 0 ? void 0 : error.stack)) || '',
                 path || 'sound-manager',
                 reportExtra
             );
@@ -383,9 +382,9 @@ class SoundManager {
                 if (this.currentBgmPath === path) this._resetBgmRecoveryEpisode();
                 return audioBuffer;
             } catch (e) {
-                if (!isBgm && /^HTTP (404|410)$/.test(String(e?.message || ''))) return null;
+                if (!isBgm && /^HTTP (404|410)$/.test(String(((e === null || e === void 0 ? void 0 : e.message)) || ''))) return null;
                 if (this._isRetryableAudioError(e)) {
-                    console.warn("SoundManager: 일시적인 오디오 네트워크 오류, 복구 대기 ->", path, e?.message || e);
+                    console.warn("SoundManager: 일시적인 오디오 네트워크 오류, 복구 대기 ->", path, ((e === null || e === void 0 ? void 0 : e.message)) || e);
                     if (isBgm && this.currentBgmPath === path) {
                         const recoveryStatus = this._scheduleBgmRecovery(path, this._bgmLoop);
                         if (recoveryStatus === 'exhausted') {
@@ -418,7 +417,7 @@ class SoundManager {
     /**
      * BGM 재생 요청
      */
-    async playBgm(path, loop = true, force = false) {
+    async playBgm(path, loop = true, force = false) { var __oc3;
         // A stop cue ("none"/empty) must never become a file request such as
         // assets/audio/bgm/none, even if a caller prefixed the BGM folder.
         const cue = this._normalizeCuePath(path);
@@ -440,7 +439,7 @@ class SoundManager {
 
         // BGM 갤러리 해금
         const bgmId = path.split('/').pop().replace('.mp3', '').replace('.ogg', '');
-        if (window.gameEngine?.galleryManager) {
+        if ((((__oc3 = window.gameEngine) === null || __oc3 === void 0 ? void 0 : __oc3.galleryManager))) {
             window.gameEngine.galleryManager.unlockBGM(bgmId);
         }
 
@@ -803,8 +802,8 @@ try {
     if (typeof window.__cupidLogRuntimeError === 'function') {
         window.__cupidLogRuntimeError(
             'SoundInitError',
-            e?.message || String(e || 'SoundManager init failed'),
-            e?.stack || '',
+            ((e === null || e === void 0 ? void 0 : e.message)) || String(e || 'SoundManager init failed'),
+            ((e === null || e === void 0 ? void 0 : e.stack)) || '',
             'sound-manager'
         );
     }

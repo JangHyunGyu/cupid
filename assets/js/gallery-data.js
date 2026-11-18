@@ -1,3 +1,4 @@
+var __oc5, __oc6, __oc7, __oc14;
 /**
  * ============================================================================
  * GalleryData - 갤러리 데이터 클래스
@@ -25,19 +26,12 @@ class GalleryData {
      * 갤러리 데이터 버전
      * 데이터 구조가 변경되면 버전을 올려서 자동 리셋 유도
      */
-    static VERSION = 2;
+    
 
     /** 기존 100점 기록을 새 퍼펙트 기준에 맞춰 한 번만 재조정하는 버전 */
-    static AFFINITY_REBALANCE_VERSION = 1;
+    
 
-    static PERFECT_CG_BY_CHARACTER = Object.freeze({
-        seyoun: 'ending_perfect_seoyeon',
-        yuna: 'ending_perfect_yuna',
-        dain: 'ending_perfect_dain',
-        teacher: 'ending_perfect_teacher',
-        nurse: 'ending_perfect_nurse',
-        haeun: 'ending_perfect_haeun'
-    });
+    
 
     /**
      * 기존 최고 호감도 100 기록을 99로 낮추고 100점·퍼펙트 전용 해금을 회수합니다.
@@ -46,11 +40,11 @@ class GalleryData {
      * @param {Object} progress cupid_gallery 진행 데이터
      * @returns {{changed:boolean, downgradedCharacters:string[]}}
      */
-    static migrateLegacyPerfectAffinity(progress) {
+    static migrateLegacyPerfectAffinity(progress) { var __oc0;
         if (!progress || typeof progress !== 'object') {
             return { changed: false, downgradedCharacters: [] };
         }
-        const targetedChanged = window.CupidAffinityCorrections?.correctGallery(progress) || false;
+        const targetedChanged = (((__oc0 = window.CupidAffinityCorrections) === null || __oc0 === void 0 ? void 0 : __oc0.correctGallery(progress))) || false;
         if ((Number(progress.affinityRebalanceVersion) || 0) >= this.AFFINITY_REBALANCE_VERSION) {
             return { changed: targetedChanged, downgradedCharacters: [] };
         }
@@ -99,7 +93,221 @@ class GalleryData {
     // - expressions: 사용 가능한 표정 목록 (이미지 파일명에 사용)
     //   예: 'normal' → 'seyoun_normal.png'
 
-    static characters = {
+    
+
+    // =========================================================================
+    // 표정 이름 매핑 (Expression Name Mappings)
+    // =========================================================================
+    // 표정 코드(예: 'shy')를 사용자에게 표시할 이름(예: '수줍음')으로 변환
+    // 표정 선택 버튼에 텍스트로 표시됨
+
+    
+
+    // =========================================================================
+    // CG 데이터 (이벤트 CG 목록)
+    // =========================================================================
+    // 게임 내 특별 이벤트에서 표시되는 일러스트(CG) 목록
+    // 
+    // 구조 설명:
+    // - id: CG 고유 식별자 (해금 상태 저장에 사용)
+    // - name: CG 제목
+    // - character: 해당 CG에 등장하는 캐릭터
+    // - description: CG 설명
+    // - file: 원본 이미지 경로
+    // - thumbnail: 썸네일 이미지 경로 (목록에서 표시용)
+
+    
+
+    
+
+    
+
+    // =========================================================================
+    // BGM 데이터 (배경음악 목록)
+    // =========================================================================
+    // 게임에서 사용되는 배경음악 목록
+    // 게임 내에서 해당 BGM이 재생되면 자동으로 갤러리에서 해금됨
+    //
+    // 구조 설명:
+    // - id: BGM 고유 식별자 (파일명과 동일하게 설정 권장)
+    // - name: BGM 제목
+    // - artist: 작곡가/아티스트
+    // - duration: 재생 시간
+    // - file: 오디오 파일 경로
+
+    
+
+    // =========================================================================
+    // 헬퍼 메서드 (Helper Methods)
+    // =========================================================================
+
+    /**
+     * 특정 캐릭터 데이터 가져오기
+     * 
+     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
+     * @param {string} charId - 캐릭터 ID (예: 'seyoun', 'yuna')
+     * @returns {Object|null} 캐릭터 데이터 객체 또는 null
+     * 
+     * @example
+     * const char = GalleryData.getCharacter('ko', 'seyoun');
+     * console.log(char.name); // '서연'
+     */
+    static getCharacter(lang, charId) { var __oc1;
+        return (((__oc1 = this.characters[lang]) === null || __oc1 === void 0 ? void 0 : __oc1[charId])) || null;
+    }
+
+    /**
+     * 모든 캐릭터 목록 가져오기
+     * 
+     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
+     * @returns {Object} 해당 언어의 모든 캐릭터 객체
+     * 
+     * @example
+     * const allChars = GalleryData.getAllCharacters('ko');
+     * Object.values(allChars).forEach(char => console.log(char.name));
+     */
+    static getAllCharacters(lang) {
+        return this.characters[lang] || {};
+    }
+
+    /**
+     * 표정 코드를 표시 이름으로 변환
+     * 
+     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
+     * @param {string} expr - 표정 코드 (예: 'shy', 'angry')
+     * @returns {string} 표정 표시 이름 (예: '수줍음', 'Angry')
+     * 
+     * @example
+     * GalleryData.getExpressionName('ko', 'shy'); // '수줍음'
+     * GalleryData.getExpressionName('en', 'shy'); // 'Shy'
+     */
+    static getExpressionName(lang, expr) { var __oc2;
+        return (((__oc2 = this.expressions[lang]) === null || __oc2 === void 0 ? void 0 : __oc2[expr])) || expr;
+    }
+
+    /**
+     * CG 목록 가져오기
+     * 
+     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
+     * @returns {Array} CG 객체 배열
+     */
+    static getCGList(lang) {
+        return this.cg[lang] || [];
+    }
+
+    /**
+     * 특정 CG 찾기
+     * 
+     * @param {string} lang - 언어 코드
+     * @param {string} cgId - CG ID
+     * @returns {Object|null} CG 객체 또는 null
+     */
+    static getCG(lang, cgId) { var __oc3;
+        return (((__oc3 = this.cg[lang]) === null || __oc3 === void 0 ? void 0 : __oc3.find(cg => cg.id === cgId))) || null;
+    }
+
+    static getEndingCopy(lang) {
+        return this.endingCopy[lang] || this.endingCopy.en;
+    }
+
+    static getEndingCatalog(lang) {
+        const copy = this.getEndingCopy(lang);
+        return this.endingRoutes.map((route, index) => { var __oc4;
+            const characterName = route.character ? ((((__oc4 = this.getCharacter(lang, route.character)) === null || __oc4 === void 0 ? void 0 : __oc4.name)) || route.character) : '';
+            return {
+                ...route,
+                number: index + 1,
+                name: characterName ? `${characterName} · ${copy.labels[route.kind]}` : copy.labels[route.kind],
+                hint: copy.hints[route.kind].replace('{character}', characterName)
+            };
+        });
+    }
+
+    static resolveEndingId(sceneId, getFlag = () => false) {
+        if (sceneId === 'day5_seo_ending_freetalk_bittersweet') {
+            return getFlag('day5_abandoned_seoyeon') ? 'counteroffer_seoyeon' : 'bittersweet_seoyeon';
+        }
+        if (sceneId === 'day5_teacher_ending_freetalk_bittersweet') {
+            return getFlag('day5_abandoned_teacher') ? 'counteroffer_teacher' : 'bittersweet_teacher';
+        }
+        if (sceneId === 'day5_ending_confess_fail') {
+            if (getFlag('route_seoyeon')) return 'confess_fail_seoyeon';
+            if (getFlag('route_yuna')) return 'confess_fail_yuna';
+            if (getFlag('route_dain')) return 'confess_fail_dain';
+            return null;
+        }
+        const direct = {
+            day5_ending_haeun: 'perfect_haeun',
+            day5_ending_haeun_epilogue: 'perfect_haeun',
+            day5_seo_ending_freetalk_perfect: 'perfect_seoyeon',
+            day5_yuna_ending_freetalk_perfect: 'perfect_yuna',
+            day5_dain_ending_freetalk_perfect: 'perfect_dain',
+            day5_seo_ending_freetalk_true_love: 'true_seoyeon',
+            day5_yuna_ending_freetalk_true_love: 'true_yuna',
+            day5_dain_ending_freetalk_true_love: 'true_dain',
+            day5_seo_ending_freetalk_good: 'good_seoyeon',
+            day5_yuna_ending_freetalk_good: 'good_yuna',
+            day5_dain_ending_freetalk_good: 'good_dain',
+            day5_yuna_ending_freetalk_bittersweet: 'bittersweet_yuna',
+            day5_dain_ending_freetalk_bittersweet: 'bittersweet_dain',
+            day5_seo_ending_freetalk_late_good: 'late_good_seoyeon',
+            day5_yuna_ending_freetalk_late_good: 'late_good_yuna',
+            day5_dain_ending_freetalk_late_good: 'late_good_dain',
+            day5_ending_friend: 'friend',
+            day5_ending_mayhem: 'mayhem',
+            day5_ending_harem: 'unresolved',
+            day5_ending_alone: 'alone',
+            day5_teacher_ending_freetalk_perfect: 'perfect_teacher',
+            day5_teacher_ending_freetalk_true_love: 'true_teacher',
+            day5_teacher_ending_freetalk_good: 'good_teacher',
+            day5_nurse_ending_freetalk_perfect: 'perfect_nurse',
+            day5_nurse_ending_freetalk_true_love: 'true_nurse',
+            day5_nurse_ending_freetalk_good: 'good_nurse',
+            day5_nurse_ending_freetalk_bittersweet: 'bittersweet_nurse'
+        };
+        return direct[sceneId] || null;
+    }
+
+    /**
+     * 모든 CG ID 목록 가져오기 (언어 무관)
+     * CG 경로에서 ID 추출 시 유효성 검증에 사용
+     * 
+     * @returns {Set} 모든 CG ID의 Set
+     */
+    static getAllCGIds() {
+        return new Set([
+            ...this.cg.ko.map(cg => cg.id),
+            ...this.cg.en.map(cg => cg.id),
+            ...(this.cg.es || []).map(cg => cg.id),
+            ...(this.cg.ja || []).map(cg => cg.id),
+            ...(this.cg.fr || []).map(cg => cg.id),
+            ...(this.cg.de || []).map(cg => cg.id),
+            ...(this.cg.pt || []).map(cg => cg.id),
+            ...(this.cg.zh || []).map(cg => cg.id)
+        ]);
+    }
+
+    /**
+     * BGM 목록 가져오기
+     * 
+     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
+     * @returns {Array} BGM 객체 배열
+     */
+    static getBGMList(lang) {
+        return this.bgm[lang] || [];
+    }
+}
+GalleryData.VERSION = 2;
+GalleryData.AFFINITY_REBALANCE_VERSION = 1;
+GalleryData.PERFECT_CG_BY_CHARACTER = Object.freeze({
+        seyoun: 'ending_perfect_seoyeon',
+        yuna: 'ending_perfect_yuna',
+        dain: 'ending_perfect_dain',
+        teacher: 'ending_perfect_teacher',
+        nurse: 'ending_perfect_nurse',
+        haeun: 'ending_perfect_haeun'
+    });
+GalleryData.characters = {
         // ===== 한국어 데이터 =====
         ko: {
             // 서연 - 빈틈을 기록하는 학생회장
@@ -811,14 +1019,7 @@ class GalleryData {
             }
         }
     };
-
-    // =========================================================================
-    // 표정 이름 매핑 (Expression Name Mappings)
-    // =========================================================================
-    // 표정 코드(예: 'shy')를 사용자에게 표시할 이름(예: '수줍음')으로 변환
-    // 표정 선택 버튼에 텍스트로 표시됨
-
-    static expressions = {
+GalleryData.expressions = {
         // 한국어 표정 이름
         ko: {
             normal: '기본',      // 기본 표정
@@ -1017,21 +1218,7 @@ class GalleryData {
             "awkward": "尴尬"
         }
     };
-
-    // =========================================================================
-    // CG 데이터 (이벤트 CG 목록)
-    // =========================================================================
-    // 게임 내 특별 이벤트에서 표시되는 일러스트(CG) 목록
-    // 
-    // 구조 설명:
-    // - id: CG 고유 식별자 (해금 상태 저장에 사용)
-    // - name: CG 제목
-    // - character: 해당 CG에 등장하는 캐릭터
-    // - description: CG 설명
-    // - file: 원본 이미지 경로
-    // - thumbnail: 썸네일 이미지 경로 (목록에서 표시용)
-
-    static cg = {
+GalleryData.cg = {
         ko: [
             {"id":"event_haeun_trust","name":"제가 부탁했어요","character":"하은","description":"방송실 앞에서 서류 상자를 끌어당기며 주인공을 두둔하는 하은","file":"assets/images/background/event_haeun_trust.png","thumbnail":"assets/images/background/event_haeun_trust.webp","unlockHint":"하은 신뢰 8 이상으로 5일차 점심에 하은이 두둔하는 장면 보기"},
             {"id":"event_haeun_reputation","name":"교문 앞의 해명","character":"하은","description":"교문 앞에서 전날 대화가 불편했던 이유를 말하는 하은","file":"assets/images/background/event_haeun_reputation.png","thumbnail":"assets/images/background/event_haeun_reputation.webp","unlockHint":"하은 신뢰가 음수일 때 4일차 아침의 평판 해명 장면 보기"},
@@ -1915,8 +2102,7 @@ class GalleryData {
             {"id":"ending_perfect_nurse","name":"一起度过的早晨","character":"保健老师","description":"毕业五年后重逢、又相处了几个月的两个成年人共度的早晨","file":"assets/images/background/ending_perfect_nurse.png","thumbnail":"assets/images/background/ending_perfect_nurse.png","unlockHint":"达成保健老师的完美结局"}
         ]
     };
-
-    static endingRoutes = [
+GalleryData.endingRoutes = [
         { id: 'perfect_haeun', character: 'haeun', kind: 'perfect' },
         { id: 'perfect_seoyeon', character: 'seyoun', kind: 'perfect' },
         { id: 'perfect_yuna', character: 'yuna', kind: 'perfect' },
@@ -1951,8 +2137,7 @@ class GalleryData {
         { id: 'good_nurse', character: 'nurse', kind: 'good' },
         { id: 'bittersweet_nurse', character: 'nurse', kind: 'bittersweet' }
     ];
-
-    static endingCopy = {
+GalleryData.endingCopy = {
         ko: {
             discovered: '발견한 엔딩', complete: '발견 완료', locked: '미발견', hintLabel: '힌트',
             labels: { perfect: 'PERFECT', true: 'TRUE LOVE', good: 'GOOD', counteroffer: '흔들린 선택', bittersweet: 'BITTERSWEET', lateGood: '늦은 고백', confessFail: '고백 실패', friend: '친구', mayhem: '파국', unresolved: '엇갈린 대답', alone: '혼자' },
@@ -2008,21 +2193,7 @@ class GalleryData {
             hints: {"perfect":"以好感度100走完{character}的路线。","true":"以至少60的好感度迎来{character}路线的最后一天。","good":"接受{character}的告白，并保持至少40的好感度。","counteroffer":"在向{character}许下约定之后，接受别人的提议，并面对结果。","bittersweet":"以低于40的好感度迎来{character}路线的最后一天。","lateGood":"推迟{character}的告白，在最后的机会坦诚相告。","confessFail":"推迟{character}的告白，并在关系还不够深时再次告白。","friend":"最后选择继续做朋友，而不是告白。","mayhem":"许下多个约定，在事情败露后迎来最后一天。","unresolved":"面对多段关系，始终没有给出唯一的答案，直到最后一天。","alone":"不进入任何人的路线，直接迎来最后一天。"}
         }
     };
-
-    // =========================================================================
-    // BGM 데이터 (배경음악 목록)
-    // =========================================================================
-    // 게임에서 사용되는 배경음악 목록
-    // 게임 내에서 해당 BGM이 재생되면 자동으로 갤러리에서 해금됨
-    //
-    // 구조 설명:
-    // - id: BGM 고유 식별자 (파일명과 동일하게 설정 권장)
-    // - name: BGM 제목
-    // - artist: 작곡가/아티스트
-    // - duration: 재생 시간
-    // - file: 오디오 파일 경로
-
-    static bgm = {
+GalleryData.bgm = {
         ko: [
             { id: 'intro', name: '메인 테마', artist: 'Cupid OST', duration: '2:30', file: 'assets/audio/bgm/intro.mp3' },
             { id: 'morning', name: '상쾌한 아침', artist: 'Cupid OST', duration: '3:25', file: 'assets/audio/bgm/morning.mp3' },
@@ -2137,170 +2308,9 @@ class GalleryData {
         ]
     };
 
-    // =========================================================================
-    // 헬퍼 메서드 (Helper Methods)
-    // =========================================================================
-
-    /**
-     * 특정 캐릭터 데이터 가져오기
-     * 
-     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
-     * @param {string} charId - 캐릭터 ID (예: 'seyoun', 'yuna')
-     * @returns {Object|null} 캐릭터 데이터 객체 또는 null
-     * 
-     * @example
-     * const char = GalleryData.getCharacter('ko', 'seyoun');
-     * console.log(char.name); // '서연'
-     */
-    static getCharacter(lang, charId) {
-        return this.characters[lang]?.[charId] || null;
-    }
-
-    /**
-     * 모든 캐릭터 목록 가져오기
-     * 
-     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
-     * @returns {Object} 해당 언어의 모든 캐릭터 객체
-     * 
-     * @example
-     * const allChars = GalleryData.getAllCharacters('ko');
-     * Object.values(allChars).forEach(char => console.log(char.name));
-     */
-    static getAllCharacters(lang) {
-        return this.characters[lang] || {};
-    }
-
-    /**
-     * 표정 코드를 표시 이름으로 변환
-     * 
-     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
-     * @param {string} expr - 표정 코드 (예: 'shy', 'angry')
-     * @returns {string} 표정 표시 이름 (예: '수줍음', 'Angry')
-     * 
-     * @example
-     * GalleryData.getExpressionName('ko', 'shy'); // '수줍음'
-     * GalleryData.getExpressionName('en', 'shy'); // 'Shy'
-     */
-    static getExpressionName(lang, expr) {
-        return this.expressions[lang]?.[expr] || expr;
-    }
-
-    /**
-     * CG 목록 가져오기
-     * 
-     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
-     * @returns {Array} CG 객체 배열
-     */
-    static getCGList(lang) {
-        return this.cg[lang] || [];
-    }
-
-    /**
-     * 특정 CG 찾기
-     * 
-     * @param {string} lang - 언어 코드
-     * @param {string} cgId - CG ID
-     * @returns {Object|null} CG 객체 또는 null
-     */
-    static getCG(lang, cgId) {
-        return this.cg[lang]?.find(cg => cg.id === cgId) || null;
-    }
-
-    static getEndingCopy(lang) {
-        return this.endingCopy[lang] || this.endingCopy.en;
-    }
-
-    static getEndingCatalog(lang) {
-        const copy = this.getEndingCopy(lang);
-        return this.endingRoutes.map((route, index) => {
-            const characterName = route.character ? (this.getCharacter(lang, route.character)?.name || route.character) : '';
-            return {
-                ...route,
-                number: index + 1,
-                name: characterName ? `${characterName} · ${copy.labels[route.kind]}` : copy.labels[route.kind],
-                hint: copy.hints[route.kind].replace('{character}', characterName)
-            };
-        });
-    }
-
-    static resolveEndingId(sceneId, getFlag = () => false) {
-        if (sceneId === 'day5_seo_ending_freetalk_bittersweet') {
-            return getFlag('day5_abandoned_seoyeon') ? 'counteroffer_seoyeon' : 'bittersweet_seoyeon';
-        }
-        if (sceneId === 'day5_teacher_ending_freetalk_bittersweet') {
-            return getFlag('day5_abandoned_teacher') ? 'counteroffer_teacher' : 'bittersweet_teacher';
-        }
-        if (sceneId === 'day5_ending_confess_fail') {
-            if (getFlag('route_seoyeon')) return 'confess_fail_seoyeon';
-            if (getFlag('route_yuna')) return 'confess_fail_yuna';
-            if (getFlag('route_dain')) return 'confess_fail_dain';
-            return null;
-        }
-        const direct = {
-            day5_ending_haeun: 'perfect_haeun',
-            day5_ending_haeun_epilogue: 'perfect_haeun',
-            day5_seo_ending_freetalk_perfect: 'perfect_seoyeon',
-            day5_yuna_ending_freetalk_perfect: 'perfect_yuna',
-            day5_dain_ending_freetalk_perfect: 'perfect_dain',
-            day5_seo_ending_freetalk_true_love: 'true_seoyeon',
-            day5_yuna_ending_freetalk_true_love: 'true_yuna',
-            day5_dain_ending_freetalk_true_love: 'true_dain',
-            day5_seo_ending_freetalk_good: 'good_seoyeon',
-            day5_yuna_ending_freetalk_good: 'good_yuna',
-            day5_dain_ending_freetalk_good: 'good_dain',
-            day5_yuna_ending_freetalk_bittersweet: 'bittersweet_yuna',
-            day5_dain_ending_freetalk_bittersweet: 'bittersweet_dain',
-            day5_seo_ending_freetalk_late_good: 'late_good_seoyeon',
-            day5_yuna_ending_freetalk_late_good: 'late_good_yuna',
-            day5_dain_ending_freetalk_late_good: 'late_good_dain',
-            day5_ending_friend: 'friend',
-            day5_ending_mayhem: 'mayhem',
-            day5_ending_harem: 'unresolved',
-            day5_ending_alone: 'alone',
-            day5_teacher_ending_freetalk_perfect: 'perfect_teacher',
-            day5_teacher_ending_freetalk_true_love: 'true_teacher',
-            day5_teacher_ending_freetalk_good: 'good_teacher',
-            day5_nurse_ending_freetalk_perfect: 'perfect_nurse',
-            day5_nurse_ending_freetalk_true_love: 'true_nurse',
-            day5_nurse_ending_freetalk_good: 'good_nurse',
-            day5_nurse_ending_freetalk_bittersweet: 'bittersweet_nurse'
-        };
-        return direct[sceneId] || null;
-    }
-
-    /**
-     * 모든 CG ID 목록 가져오기 (언어 무관)
-     * CG 경로에서 ID 추출 시 유효성 검증에 사용
-     * 
-     * @returns {Set} 모든 CG ID의 Set
-     */
-    static getAllCGIds() {
-        return new Set([
-            ...this.cg.ko.map(cg => cg.id),
-            ...this.cg.en.map(cg => cg.id),
-            ...(this.cg.es || []).map(cg => cg.id),
-            ...(this.cg.ja || []).map(cg => cg.id),
-            ...(this.cg.fr || []).map(cg => cg.id),
-            ...(this.cg.de || []).map(cg => cg.id),
-            ...(this.cg.pt || []).map(cg => cg.id),
-            ...(this.cg.zh || []).map(cg => cg.id)
-        ]);
-    }
-
-    /**
-     * BGM 목록 가져오기
-     * 
-     * @param {string} lang - 언어 코드 ('ko' 또는 'en')
-     * @returns {Array} BGM 객체 배열
-     */
-    static getBGMList(lang) {
-        return this.bgm[lang] || [];
-    }
-}
-
 for (const localizedCharacters of Object.values(GalleryData.characters)) {
     for (const charId of ['seyoun', 'yuna', 'dain', 'teacher', 'nurse']) {
-        const expressions = localizedCharacters[charId]?.expressions;
+        const expressions = (((__oc5 = localizedCharacters[charId]) === null || __oc5 === void 0 ? void 0 : __oc5.expressions));
         if (!Array.isArray(expressions) || expressions.includes('climax')) continue;
         const bikiniIndex = expressions.indexOf('bikini');
         expressions.splice(bikiniIndex >= 0 ? bikiniIndex : expressions.length, 0, 'climax');
@@ -2646,11 +2656,11 @@ for (const [lang, label] of Object.entries(exhaustedExpressionLabels)) {
     GalleryData.expressions[lang].groggy = groggyExpressionLabels[lang];
     GalleryData.expressions[lang].scheming = schemingExpressionLabels[lang];
     GalleryData.expressions[lang].touched = touchedExpressionLabels[lang];
-    if (GalleryData.characters[lang]?.haeun && !GalleryData.characters[lang].haeun.expressions.includes('climax')) {
+    if ((((__oc6 = GalleryData.characters[lang]) === null || __oc6 === void 0 ? void 0 : __oc6.haeun)) && !GalleryData.characters[lang].haeun.expressions.includes('climax')) {
         GalleryData.characters[lang].haeun.expressions.push('climax');
     }
     for (const [charId, extraList] of Object.entries(additionalCharacterExpressions)) {
-        const charObj = GalleryData.characters[lang]?.[charId];
+        const charObj = (((__oc7 = GalleryData.characters[lang]) === null || __oc7 === void 0 ? void 0 : __oc7[charId]));
         if (!charObj) continue;
         for (const expr of extraList) {
             if (!charObj.expressions.includes(expr)) charObj.expressions.push(expr);
@@ -2696,24 +2706,24 @@ GalleryData.EXPRESSION_VARIANTS = Object.freeze({
         climax: ['02', '03', '04', '05', '06', '07', '08']
     }
 });
-GalleryData.getExpressionRequirement = function (charId, expression) {
-    const baseExpressions = (this.getCharacter('ko', charId)?.expressions || ['normal'])
+GalleryData.getExpressionRequirement = function (charId, expression) { var __oc8, __oc9;
+    const baseExpressions = ((((__oc8 = this.getCharacter('ko', charId)) === null || __oc8 === void 0 ? void 0 : __oc8.expressions)) || ['normal'])
         .filter(name => name !== 'exhausted' && !/^(date|home)_/.test(name) && !/_[0-9]{2}$/.test(name));
     const base = String(expression).replace(/^(date|home)_/, '').replace(/_[0-9]{2}$/, '');
     if (charId === 'haeun') {
-        return ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, very_shy: 45, smile: 60, dry_smile: 20, bored: 20, tired: 20, sad: 20, angry: 20, flushed: 80, laugh: 60, pout: 33, surprised: 20, soft_smile: 20, scared: 20, aegyo: 60, ahegao: 100, fainted: 20, dazed: 20, disgusted: 20, smirk: 20, furious: 20, confused: 20, sob: 20, scream: 20, choking: 100, dead: 20, humiliated: 20, dumbfounded: 20, pleading: 20, entranced: 80, seductive: 80, active: 40, sweat: 20, jealous: 60, cold: 20, suspicious: 20, lovestruck: 80, kiss: 80, afterglow: 100, enduring: 80, oral_service: 100, undressed_shy: 80, dominant_aroused: 80, messy_afterglow: 100, begging_lust: 80, betrayed: 20, combat_ready: 20, groggy: 20, scheming: 40, touched: 80, cry: 20, pain: 20 })[base] ?? 100;
+        return (((__oc9 = ({ normal: 0, worried: 33, firm: 67, relieved: 100, shy: 45, very_shy: 45, smile: 60, dry_smile: 20, bored: 20, tired: 20, sad: 20, angry: 20, flushed: 80, laugh: 60, pout: 33, surprised: 20, soft_smile: 20, scared: 20, aegyo: 60, ahegao: 100, fainted: 20, dazed: 20, disgusted: 20, smirk: 20, furious: 20, confused: 20, sob: 20, scream: 20, choking: 100, dead: 20, humiliated: 20, dumbfounded: 20, pleading: 20, entranced: 80, seductive: 80, active: 40, sweat: 20, jealous: 60, cold: 20, suspicious: 20, lovestruck: 80, kiss: 80, afterglow: 100, enduring: 80, oral_service: 100, undressed_shy: 80, dominant_aroused: 80, messy_afterglow: 100, begging_lust: 80, betrayed: 20, combat_ready: 20, groggy: 20, scheming: 40, touched: 80, cry: 20, pain: 20 })[base]) !== null && __oc9 !== void 0 ? __oc9 : 100));
     }
     const index = baseExpressions.indexOf(base);
     if (index < 0) return 100;
     return baseExpressions.length <= 1 ? 0 : Math.round(index / (baseExpressions.length - 1) * 100);
 };
-GalleryData.resolveOutfitExpression = function (scene, rawPath) {
-    const scenePortrait = String(scene?.character || scene?.characters?.center?.src || scene?.characters?.center || '');
+GalleryData.resolveOutfitExpression = function (scene, rawPath) { var __oc10, __oc11, __oc12, __oc13;
+    const scenePortrait = String(((scene === null || scene === void 0 ? void 0 : scene.character)) || (((__oc11 = (__oc10 = scene === null || scene === void 0 ? void 0 : scene.characters) === null || __oc10 === void 0 ? void 0 : __oc10.center) === null || __oc11 === void 0 ? void 0 : __oc11.src)) || (((__oc12 = scene === null || scene === void 0 ? void 0 : scene.characters) === null || __oc12 === void 0 ? void 0 : __oc12.center)) || '');
     const outfit = scenePortrait.match(/(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i);
     if (!outfit) return rawPath;
     const charId = outfit[1].toLowerCase();
     const outfitKey = outfit[2].toLowerCase();
-    const available = this.OUTFIT_EXPRESSIONS[charId]?.[outfitKey];
+    const available = (((__oc13 = this.OUTFIT_EXPRESSIONS[charId]) === null || __oc13 === void 0 ? void 0 : __oc13[outfitKey]));
     if (!available || !available.length) return rawPath;
     const rawFile = String(rawPath || '').split('?')[0].split('/').pop() || '';
     const expression = rawFile
@@ -2807,7 +2817,7 @@ for (const [lang, label] of Object.entries(outfitLabels)) {
         }
     }
     for (const [charId, variantGroups] of Object.entries(GalleryData.EXPRESSION_VARIANTS)) {
-        const charEntry = GalleryData.characters[lang]?.[charId];
+        const charEntry = (((__oc14 = GalleryData.characters[lang]) === null || __oc14 === void 0 ? void 0 : __oc14[charId]));
         if (!charEntry || !Array.isArray(charEntry.expressions)) continue;
         for (const [baseExpr, suffixList] of Object.entries(variantGroups)) {
             const baseLabel = GalleryData.getExpressionName(lang, baseExpr);

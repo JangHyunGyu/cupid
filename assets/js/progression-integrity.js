@@ -1,15 +1,17 @@
 (function (root, createIntegrity) {
-    'use strict';
+    'use strict'; var __oc0;
     if (typeof module !== 'undefined' && module.exports) module.exports = createIntegrity;
-    if (root) root.CupidProgressIntegrity = createIntegrity({ storage: root.CupidStorage, locks: root.navigator?.locks, crypto: root.crypto });
+    if (root) root.CupidProgressIntegrity = createIntegrity({ storage: root.CupidStorage, locks: (((__oc0 = root.navigator) === null || __oc0 === void 0 ? void 0 : __oc0.locks)), crypto: root.crypto });
 })(typeof window !== 'undefined' ? window : null, function (options) {
     'use strict';
     const { storage, locks, crypto } = options || {};
     const key = 'cupid_progress_integrity_v1';
     const sealKey = 'cupid-affinity-seal-v1:k9Qm4rV2pL8sN1wX6cH3dF0';
     function sealText(snapshot, runId, revision) {
-        const stats = snapshot?.stats || {};
-        const body = Object.keys(stats).sort().map(name => `${name}=${Number(stats[name]?.affinity) || 0}`).join(',');
+        const stats = ((snapshot === null || snapshot === void 0 ? void 0 : snapshot.stats)) || {};
+        const body = Object.keys(stats).sort().map(name => { var __oc1; return (
+`${name}=${Number((((__oc1 = stats[name]) === null || __oc1 === void 0 ? void 0 : __oc1.affinity))) || 0}`
+); }).join(',');
         return `${sealKey}|${runId}|${revision}|${body}`;
     }
     function sealMac(text) {
@@ -26,30 +28,32 @@
         record.seal = sealMac(sealText(record.snapshot, record.runId, record.revision));
     }
     function sealMatches(record) {
-        return !!record?.seal && record.seal === sealMac(sealText(record.snapshot, record.runId, record.revision));
+        return !!((record === null || record === void 0 ? void 0 : record.seal)) && record.seal === sealMac(sealText(record.snapshot, record.runId, record.revision));
     }
-    function clearSealedAffinities(record) {
-        for (const stat of Object.values(record?.snapshot?.stats || {})) {
+    function clearSealedAffinities(record) { var __oc2;
+        for (const stat of Object.values((((__oc2 = record === null || record === void 0 ? void 0 : record.snapshot) === null || __oc2 === void 0 ? void 0 : __oc2.stats)) || {})) {
             if (stat && typeof stat === 'object') stat.affinity = 0;
         }
         stamp(record);
-        storage?.setItem(key, JSON.stringify(record));
+        ((storage === null || storage === void 0 ? void 0 : storage.setItem(key, JSON.stringify(record))));
     }
     const copy = value => JSON.parse(JSON.stringify(value));
     const fields = ['playerName', 'currentDay', 'stats', 'flags', 'freeTalkCheckpoint', 'progressionRunId', 'progressionRevision', 'telemetryRunId', 'appliedAffinityCorrections'];
     const critical = state => Object.fromEntries(fields.filter(field => state[field] !== undefined).map(field => [field, copy(state[field])]));
-    const uuid = () => crypto?.randomUUID?.() || `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+    const uuid = () => { var __oc3; return (
+(((__oc3 = crypto === null || crypto === void 0 ? void 0 : crypto.randomUUID) === null || __oc3 === void 0 ? void 0 : __oc3.call(crypto))) || `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`
+); };
     function read() {
         try {
-            const value = JSON.parse(storage?.getItem(key) || 'null');
-            if (!(value?.version === 1 && value.runId)) return null;
+            const value = JSON.parse(((storage === null || storage === void 0 ? void 0 : storage.getItem(key))) || 'null');
+            if (!(((value === null || value === void 0 ? void 0 : value.version)) === 1 && value.runId)) return null;
             if (value.sealed && !sealMatches(value)) {
                 clearSealedAffinities(value);
             }
             return value;
         } catch (_) { return null; }
     }
-    function persist(value) { stamp(value); storage?.setItem(key, JSON.stringify(value)); }
+    function persist(value) { stamp(value); ((storage === null || storage === void 0 ? void 0 : storage.setItem(key, JSON.stringify(value)))); }
     function start(state) {
         state.progressionRunId = uuid();
         state.progressionRevision = 0;
@@ -76,25 +80,25 @@
         const out = {};
         if (!stats || typeof stats !== 'object') return out;
         for (const [key, value] of Object.entries(stats)) {
-            const score = Number(value?.affinity);
+            const score = Number(((value === null || value === void 0 ? void 0 : value.affinity)));
             if (Number.isFinite(score)) out[key] = score;
         }
         return out;
     }
     function uncommittedAffinityEdits(state, snapshot) {
-        const saved = affinityMap(snapshot?.stats);
-        const live = affinityMap(state?.stats);
+        const saved = affinityMap(((snapshot === null || snapshot === void 0 ? void 0 : snapshot.stats)));
+        const live = affinityMap(((state === null || state === void 0 ? void 0 : state.stats)));
         return Object.entries(saved)
             .filter(([key, expected]) => live[key] !== undefined && live[key] !== expected)
             .map(([key, expected]) => ({ character: key, from: live[key], to: expected }));
     }
     function restoreUncommittedAffinities(state, snapshot) {
-        if (typeof state?.restoreCommittedAffinities === 'function') {
-            state.restoreCommittedAffinities(snapshot?.stats);
+        if (typeof ((state === null || state === void 0 ? void 0 : state.restoreCommittedAffinities)) === 'function') {
+            state.restoreCommittedAffinities(((snapshot === null || snapshot === void 0 ? void 0 : snapshot.stats)));
             return;
         }
-        const saved = snapshot?.stats;
-        const live = state?.stats;
+        const saved = ((snapshot === null || snapshot === void 0 ? void 0 : snapshot.stats));
+        const live = ((state === null || state === void 0 ? void 0 : state.stats));
         if (!saved || !live) return;
         for (const [key, snap] of Object.entries(saved)) {
             if (!live[key] || snap == null || !Object.prototype.hasOwnProperty.call(snap, 'affinity')) continue;
@@ -104,17 +108,17 @@
     function affinityChanges(beforeStats, afterStats) {
         const before = affinityMap(beforeStats);
         const after = affinityMap(afterStats);
-        return [...new Set([...Object.keys(before), ...Object.keys(after)])].flatMap(key => {
+        return [...new Set([...Object.keys(before), ...Object.keys(after)])].flatMap(key => { var __oc4;
             if (after[key] === undefined || before[key] === after[key]) return [];
-            const from = before[key] ?? 0;
+            const from = (((__oc4 = before[key]) !== null && __oc4 !== void 0 ? __oc4 : 0));
             return [{ character: key, before: from, delta: after[key] - from, after: after[key] }];
         });
     }
-    function auditAffinity(state, eventKey, report) {
+    function auditAffinity(state, eventKey, report) { var __oc5;
         const telemetry = typeof window !== 'undefined' ? window.CupidRouteTelemetry : null;
-        try { telemetry?.auditAffinity?.(state, { eventKey, ...report }); } catch (_) { /* A log must not block play. */ }
+        try { (((__oc5 = telemetry === null || telemetry === void 0 ? void 0 : telemetry.auditAffinity) === null || __oc5 === void 0 ? void 0 : __oc5.call(telemetry, state, { eventKey, ...report }))); } catch (_) { /* A log must not block play. */ }
     }
-    function commit(state, eventKey, operation, metadata = {}) {
+    function commit(state, eventKey, operation, metadata = {}) { var __oc6;
         if (!storage) return { applied: true, value: operation() };
         let record = read();
         if (!record) {
@@ -135,7 +139,7 @@
         const before = critical(state);
         try {
             const value = operation();
-            if (value?.then) throw new Error('Progress operations must be synchronous');
+            if (((value === null || value === void 0 ? void 0 : value.then))) throw new Error('Progress operations must be synchronous');
             state.progressionRevision = record.revision + 1;
             record.receipts[eventKey] = typeof value === 'string' ? value : true;
             if (metadata.checkpoint) {
@@ -152,19 +156,19 @@
             return { applied: true, value };
         } catch (error) {
             Object.assign(state, before);
-            state._installAffinityGuards?.();
+            (((__oc6 = state._installAffinityGuards) === null || __oc6 === void 0 ? void 0 : __oc6.call(state)));
             throw error;
         }
     }
-    function checkpoint(state, sceneId) {
+    function checkpoint(state, sceneId) { var __oc7;
         const record = read();
-        return record?.runId === state.progressionRunId && record.checkpoints?.[sceneId] ? copy(record.checkpoints[sceneId]) : null;
+        return ((record === null || record === void 0 ? void 0 : record.runId)) === state.progressionRunId && (((__oc7 = record.checkpoints) === null || __oc7 === void 0 ? void 0 : __oc7[sceneId])) ? copy(record.checkpoints[sceneId]) : null;
     }
     function save(saveData) {
         const record = read();
         if (!record) return true;
         const state = saveData.gameState;
-        if (state?.progressionRunId !== record.runId || Number(state.progressionRevision || 0) !== record.revision) return false;
+        if (((state === null || state === void 0 ? void 0 : state.progressionRunId)) !== record.runId || Number(state.progressionRevision || 0) !== record.revision) return false;
         const reverted = uncommittedAffinityEdits(state, record.snapshot);
         restoreUncommittedAffinities(state, record.snapshot);
         if (reverted.length) auditAffinity(state, 'save', { reverted });
@@ -177,10 +181,10 @@
         return true;
     }
     function restoreSave(saveData) {
-        if (!saveData?.gameState) return false;
+        if (!((saveData === null || saveData === void 0 ? void 0 : saveData.gameState))) return false;
         const changed = restoreState(saveData.gameState);
         const record = read();
-        if (changed && record?.sceneId) {
+        if (changed && ((record === null || record === void 0 ? void 0 : record.sceneId))) {
             saveData.currentSceneId = record.sceneId;
             saveData.lastBgUrl = record.lastBgUrl || '';
             saveData.currentCharacters = record.currentCharacters || {};
@@ -196,7 +200,7 @@
     // 재조정 결과로 다시 봉인해야 다음 불러오기가 예전 100점으로 되돌리지 않는다.
     function commitMigration(saveData) {
         const record = read();
-        const state = saveData?.gameState;
+        const state = ((saveData === null || saveData === void 0 ? void 0 : saveData.gameState));
         if (!record || !state) return false;
         if (!state.progressionRunId || state.progressionRunId !== record.runId) return false;
         if (Number(state.progressionRevision || 0) !== record.revision) return false;
@@ -216,7 +220,7 @@
         return result;
     }
     function withLock(operation) {
-        if (!locks?.request || locksDenied) return withQueue(operation);
+        if (!((locks === null || locks === void 0 ? void 0 : locks.request)) || locksDenied) return withQueue(operation);
         let started = false;
         const run = lock => {
             started = true;
@@ -226,7 +230,7 @@
         // 거절합니다. 잠금을 못 받았을 뿐 작업은 아직 돌지 않았으니, 탭 안 대기열로 순서만 지키고 이어갑니다.
         // 작업이 시작된 뒤 난 오류나 다른 종류의 오류는 그대로 올려 코드 버그로 남깁니다.
         const fallback = error => {
-            if (started || error?.name !== 'SecurityError') throw error;
+            if (started || ((error === null || error === void 0 ? void 0 : error.name)) !== 'SecurityError') throw error;
             locksDenied = true;
             return withQueue(operation);
         };

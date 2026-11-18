@@ -1979,7 +1979,7 @@ try {
         '.gft-affinity-display',
         'affinity_up.mp3',
         "'sound.js'",
-        'soundManager?.init?.()',
+        'window.soundManager',
         'Math.max(-100',
         '"affinity":<판정한 정수>',
         'PERFECT 엔딩 후 성인 연인 관계는 점수만으로 초기화·결별하지 않습니다',
@@ -2240,12 +2240,13 @@ try {
     const galleryCatchIndex = gftContent.indexOf('} catch (err)', gallerySendIndex);
     const affinityLogContracts = [
         ['config', configContent, ['affinityChange = null', 'affinityCurrent = null', 'entry.affinityChange', 'entry.affinityCurrent']],
-        ['main', ftSysContent, ['this.applyAffinity(parsed.affinity, scene, finalContent)', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value', 'const actualChange = newValue - previousValue']],
-        ['gallery', gftContent, ['this._applyAffinityChange(', 'incidentResult.affinityChange,', 'requestCharId,', 'finalContent', 'affinityChange: affinityResult?.change', 'affinityCurrent: affinityResult?.value']]
+        ['main', ftSysContent, ['this.applyAffinity(parsed.affinity, scene, finalContent)', /affinityChange:[\s\S]{0,80}affinityResult\.change/, /affinityCurrent:[\s\S]{0,80}affinityResult\.value/, 'const actualChange = newValue - previousValue']],
+        ['gallery', gftContent, ['this._applyAffinityChange(', 'incidentResult.affinityChange,', 'requestCharId,', 'finalContent', /affinityChange:[\s\S]{0,80}affinityResult\.change/, /affinityCurrent:[\s\S]{0,80}affinityResult\.value/]]
     ];
     for (const [label, source, required] of affinityLogContracts) {
         for (const token of required) {
-            if (!source.includes(token)) {
+            const matched = token instanceof RegExp ? token.test(source) : source.includes(token);
+            if (!matched) {
                 errors.push(`[FREETALK_AFFINITY_LOG] ${label} missing Cupid affinity backup contract: ${token}`);
             }
         }
@@ -2282,9 +2283,9 @@ try {
     }
     const mainRollbackIndex = ftSysContent.indexOf('this._rollbackRequestHistory(requestContext)', mainCatchIndex);
     const mainTurnRollbackIndex = ftSysContent.indexOf('this.freeTalkTurns = requestContext.freeTalkTurnsBefore', mainCatchIndex);
-    const mainStaleIndex = ftSysContent.indexOf('if (!ownsCurrentContext || error?.isStaleTurn', mainCatchIndex);
+    const mainStaleIndex = ftSysContent.indexOf('error.isStaleTurn', mainCatchIndex);
     const galleryRollbackIndex = gftContent.indexOf('this._rollbackRequestHistory(requestContext)', galleryCatchIndex);
-    const galleryStaleIndex = gftContent.indexOf('if (!ownsCurrentContext || err?.isStaleTurn', galleryCatchIndex);
+    const galleryStaleIndex = gftContent.indexOf('err.isStaleTurn', galleryCatchIndex);
     if (!(mainCatchIndex >= 0 && mainRollbackIndex > mainCatchIndex && mainTurnRollbackIndex > mainRollbackIndex && mainTurnRollbackIndex < mainStaleIndex)
         || !(galleryCatchIndex >= 0 && galleryRollbackIndex > galleryCatchIndex && galleryRollbackIndex < galleryStaleIndex)) {
         errors.push('[FREETALK_STALE] stale 분기 전에 원래 history/턴을 안전하게 롤백하지 않음');

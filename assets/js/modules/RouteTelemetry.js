@@ -12,7 +12,9 @@
     function readQueue() {
         try {
             const value = JSON.parse(window.CupidStorage.getItem(KEY) || '[]');
-            return Array.isArray(value) ? value.filter(item => item?.event?.eventId && item.appId && item.userId) : [];
+            return Array.isArray(value) ? value.filter(item => { var __oc0; return (
+(((__oc0 = item === null || item === void 0 ? void 0 : item.event) === null || __oc0 === void 0 ? void 0 : __oc0.eventId)) && item.appId && item.userId
+); }) : [];
         }
         catch (_) { return []; }
     }
@@ -27,20 +29,20 @@
         timer = setTimeout(() => { timer = null; void flush(); }, delay);
     }
     const MAX_ATTEMPTS = 6;
-    function reportFailure(error, batch, errorType, extra = {}) {
+    function reportFailure(error, batch, errorType, extra = {}) { var __oc1;
         try {
-            window.logCupidError?.(error instanceof Error ? error : new Error(String(error || errorType)), {
-                source: 'CupidRouteTelemetry.flush',
-                errorType,
-                errorClass: error?.cupidStatus ? 'http' : (error?.cupidClientException ? 'client' : (error?.name || 'route-events')),
-                context: { eventTypes: [...new Set(batch.map(item => item.event.eventType))].slice(0, 8) },
-                extra: {
-                    eventIds: batch.map(item => item.event.eventId).slice(0, 8),
-                    httpStatus: Number(error?.cupidStatus || 0),
-                    attempts: Math.max(...batch.map(item => Number(item.attempts || 0)), 0),
-                    ...extra
-                }
-            });
+            (((__oc1 = window.logCupidError) === null || __oc1 === void 0 ? void 0 : __oc1.call(window, error instanceof Error ? error : new Error(String(error || errorType)), {
+        source: 'CupidRouteTelemetry.flush',
+        errorType,
+        errorClass: (error === null || error === void 0 ? void 0 : error.cupidStatus) ? 'http' : ((error === null || error === void 0 ? void 0 : error.cupidClientException) ? 'client' : ((error === null || error === void 0 ? void 0 : error.name) || 'route-events')),
+        context: { eventTypes: [...new Set(batch.map(item => item.event.eventType))].slice(0, 8) },
+        extra: {
+            eventIds: batch.map(item => item.event.eventId).slice(0, 8),
+            httpStatus: Number((error === null || error === void 0 ? void 0 : error.cupidStatus) || 0),
+            attempts: Math.max(...batch.map(item => Number(item.attempts || 0)), 0),
+            ...extra
+        }
+    })));
         } catch (_) { /* Diagnostics must never interrupt a scene. */ }
     }
     function nextBatch(skip = new Set()) {
@@ -61,7 +63,7 @@
         });
         let parsed = null;
         try { parsed = JSON.parse(result.text || 'null'); } catch (_) { parsed = null; }
-        if (!parsed?.ok || !Array.isArray(parsed.eventIds)) {
+        if (!((parsed === null || parsed === void 0 ? void 0 : parsed.ok)) || !Array.isArray(parsed.eventIds)) {
             const error = new Error('route telemetry missing acknowledgement');
             error.cupidClientException = true;
             throw error;
@@ -71,22 +73,22 @@
         persist(acknowledged);
         return acknowledged.size;
     }
-    function handleFailure(error, batch) {
+    function handleFailure(error, batch) { var __oc2, __oc3, __oc4;
         const ids = new Set(batch.map(item => item.event.eventId));
         const attempts = Math.max(...batch.map(item => Number(item.attempts || 0)), 0) + 1;
-        const transient = window.isCupidLogTransientError?.(error) === true;
-        const retryableHttp = window.isCupidLogRetryableHttpStatus?.(error?.cupidStatus) === true;
+        const transient = (((__oc2 = window.isCupidLogTransientError) === null || __oc2 === void 0 ? void 0 : __oc2.call(window, error))) === true;
+        const retryableHttp = (((__oc3 = window.isCupidLogRetryableHttpStatus) === null || __oc3 === void 0 ? void 0 : __oc3.call(window, error === null || error === void 0 ? void 0 : error.cupidStatus))) === true;
         // 네트워크 단절·시간 초과가 아닌 실패는 첫 발생 때 바로 D1 오류 로그로 남깁니다.
         if (!transient && attempts === 1) {
-            reportFailure(error, batch, error?.cupidClientException ? 'route_events_client_exception' : 'route_events_send_failed');
+            reportFailure(error, batch, ((error === null || error === void 0 ? void 0 : error.cupidClientException)) ? 'route_events_client_exception' : 'route_events_send_failed');
         }
         if ((transient || retryableHttp) && attempts < MAX_ATTEMPTS) {
-            const lastError = String(error?.message || error).substring(0, 200);
+            const lastError = String(((error === null || error === void 0 ? void 0 : error.message)) || error).substring(0, 200);
             pending = pending.map(item => ids.has(item.event.eventId) ? { ...item, attempts, lastError } : item);
             persist();
             return Math.min(15000 * attempts, 120000);
         }
-        const firstError = batch[0]?.lastError || '';
+        const firstError = (((__oc4 = batch[0]) === null || __oc4 === void 0 ? void 0 : __oc4.lastError)) || '';
         pending = pending.filter(item => !ids.has(item.event.eventId));
         persist(ids);
         reportFailure(error, batch.map(item => ({ ...item, attempts })), 'route_events_queue_dropped', {
@@ -160,10 +162,10 @@
             const arrived = kind === 'arrived';
             if (state && !state.telemetryRunId) state.telemetryRunId = uuid();
             if (!state && !crossingRunId) crossingRunId = uuid();
-            const day = Number(state?.currentDay);
+            const day = Number(((state === null || state === void 0 ? void 0 : state.currentDay)));
             const scene = String(sceneId || (arrived ? 'start' : '')).replace(/[^a-zA-Z0-9_.:-]/g, '').slice(0, 120) || (arrived ? 'start' : 'unknown');
             pending.push({ appId: window.getCupidAppId(), userId: window.getCupidDeviceId(), event: {
-                eventId: uuid(), runId: state?.telemetryRunId || crossingRunId, eventType: 'crossing_' + kind,
+                eventId: uuid(), runId: ((state === null || state === void 0 ? void 0 : state.telemetryRunId)) || crossingRunId, eventType: 'crossing_' + kind,
                 sceneId: scene, nextSceneId: '',
                 day: Number.isInteger(day) && day >= 1 && day <= 5 ? day : (arrived ? 1 : 5),
                 route: state ? route(state) : '', version: ASSET_VERSION, clientTime: new Date().toISOString(),
@@ -193,8 +195,11 @@
             schedule();
         } catch (_) { /* Diagnostics must never interrupt a scene. */ }
     }
-    function isOffer(scene) {
-        return scene?.choices?.some(choice => choice.setFlags?.some(flag => ['day4_counteroffer_penalty_deferred', 'haeun_route_selected'].includes(flag)));
+    function isOffer(scene) { var __oc5;
+        return (((__oc5 = scene === null || scene === void 0 ? void 0 : scene.choices) === null || __oc5 === void 0 ? void 0 : __oc5.some(choice => {
+        var __oc205;
+        return (((__oc205 = choice.setFlags) === null || __oc205 === void 0 ? void 0 : __oc205.some(flag => ['day4_counteroffer_penalty_deferred', 'haeun_route_selected'].includes(flag))));
+    })));
     }
     function entered(state, sceneId, scene, restoring = false) {
         const milestones = { morning4_start: 'day4_entered', day4_night_start: 'night_entered', morning5_start: 'morning_entered' };
@@ -210,7 +215,7 @@
             emit(state, sceneId, 'scene_checkpoint', { restoring });
         }
     }
-    function transition(state, sceneId, scene, nextSceneId, guarded = false) {
+    function transition(state, sceneId, scene, nextSceneId, guarded = false) { var __oc6;
         if (!scene || (!/^(wall_|day4_|morning4_|morning5_)/.test(sceneId) && !isHaeunScene(sceneId))) return;
         let selectedConditionFound = false;
         const conditions = (scene.branches || []).map(branch => {
@@ -225,7 +230,7 @@
             || (isHaeunScene(sceneId) && scene.routeBeforeRender)) {
             const selected = conditions.find(condition => condition.selected);
             const rivals = (scene.rankedRivalBranches || []).map(branch => ({ character: branch.character, affinity: state.getAffinity(branch.character), selected: branch.next === nextSceneId }));
-            let reason = guarded ? 'affinity_guard' : selected?.condition || 'fallback';
+            let reason = guarded ? 'affinity_guard' : ((selected === null || selected === void 0 ? void 0 : selected.condition)) || 'fallback';
             if (rivals.length) reason = rivals.some(rival => rival.selected) ? 'rival_selected' : 'no_eligible_rival';
             if (['day4_student_night_branch', 'day4_waited_night_branch'].includes(sceneId) && reason === 'fallback') reason = 'no_student_route';
             if (sceneId === 'day4_student_night_branch' && nextSceneId === 'day4_waited_night_branch') reason = 'confession_deferred';
@@ -233,23 +238,23 @@
                 && !['day3_caught_multiple_dates', 'harem_seed'].includes(reason)) reason = 'no_counteroffer_accepted';
             emit(state, sceneId, 'gate_evaluated', {
                 reason, conditions, rivals, guard: guarded ? scene.affinityGuard : null,
-                minimumRivalAffinity: scene.minRivalAffinity ?? null,
+                minimumRivalAffinity: (((__oc6 = scene.minRivalAffinity) !== null && __oc6 !== void 0 ? __oc6 : null)),
                 wouldFailFormerZeroGate: rivals.length ? rivals.every(rival => rival.affinity < 0) : null
             }, nextSceneId);
         }
         if (scene.type === 'free_talk' || scene.type === 'group_free_talk') emit(state, sceneId, 'freetalk_exited', {}, nextSceneId);
     }
-    function choice(state, sceneId, scene, selected, nextSceneId) {
+    function choice(state, sceneId, scene, selected, nextSceneId) { var __oc7;
         if (!isOffer(scene)) return;
         emit(state, sceneId, 'offer_choice', {
-            accepted: selected.setFlags?.some(flag => ['day4_counteroffer_penalty_deferred', 'haeun_route_selected'].includes(flag)) || false,
+            accepted: (((__oc7 = selected.setFlags) === null || __oc7 === void 0 ? void 0 : __oc7.some(flag => ['day4_counteroffer_penalty_deferred', 'haeun_route_selected'].includes(flag)))) || false,
             choiceIndex: scene.choices.findIndex(choice => choice.next === selected.next
                 && JSON.stringify(choice.setFlags || []) === JSON.stringify(selected.setFlags || [])), setFlags: selected.setFlags || [],
             affinityBranches: selected.affinityBranches || [], affinityEffects: selected.stats || {}
         }, nextSceneId);
     }
     function auditAffinity(state, report = {}) {
-        const day = Math.min(5, Math.max(1, Number(state?.currentDay) || 1));
+        const day = Math.min(5, Math.max(1, Number(((state === null || state === void 0 ? void 0 : state.currentDay))) || 1));
         const sceneId = String(report.eventKey || 'affinity').replace(/[^a-zA-Z0-9_.:-]/g, '').slice(0, 120) || 'affinity';
         if (Array.isArray(report.changes) && report.changes.length) emit(state, sceneId, 'affinity_commit', { changes: report.changes }, '', day);
         if (Array.isArray(report.reverted) && report.reverted.length) emit(state, sceneId, 'affinity_reverted', { reverted: report.reverted }, '', day);

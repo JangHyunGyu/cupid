@@ -51,7 +51,7 @@ class Gallery {
      * 
      * DOMContentLoaded 이벤트에서 호출됩니다.
      */
-    init() {
+    init() { var __oc0, __oc1;
         // 1. URL에서 언어 감지
         const pathname = window.location.pathname;
         this.lang = pathname.includes('-es') ? 'es'
@@ -66,7 +66,7 @@ class Gallery {
         // 2. 진행도 관리 인스턴스 생성 및 로드
         this.progress = new GalleryProgress();
         window.galleryProgressInstance = this.progress;
-        window.soundManager?.init?.();
+        (((__oc1 = (__oc0 = window.soundManager) === null || __oc0 === void 0 ? void 0 : __oc0.init) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0)));
 
         // 3. UI 인스턴스 생성
         this.ui = new GalleryUI(this.progress, this.lang);
@@ -186,9 +186,9 @@ const gallery = new Gallery();
 window.CupidGalleryReady = new Promise(resolve => {
     if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', resolve, { once: true });
     else resolve();
-}).then(async () => {
+}).then(async () => { var __oc2;
     if (!document.getElementById('character-grid')) return gallery;
-    await window.CupidAffinityCorrections?.ready;
+    await (((__oc2 = window.CupidAffinityCorrections) === null || __oc2 === void 0 ? void 0 : __oc2.ready));
     gallery.init();
     return gallery;
 });

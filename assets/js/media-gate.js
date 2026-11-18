@@ -6,10 +6,10 @@
  */
 
 (function (global) {
-  'use strict';
+  'use strict'; var __oc0, __oc1;
 
   if (global.__CUPID_MEDIA_GATE) {
-    try { global.CupidMedia?.hydrateProtectedImages?.(); } catch (_) {}
+    try { (((__oc1 = (__oc0 = global.CupidMedia) === null || __oc0 === void 0 ? void 0 : __oc0.hydrateProtectedImages) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0))); } catch (_) {}
     return;
   }
   global.__CUPID_MEDIA_GATE = true;
@@ -434,10 +434,10 @@ async function fadeExpressionImage(image, source, options = {}) {
     const token = image.__expressionToken = (image.__expressionToken || 0) + 1;
     const current = () => token === image.__expressionToken && image.isConnected !== false
         && (!options.isCurrent || options.isCurrent());
-    const request = (async () => {
+    const request = (async () => { var __oc2, __oc3, __oc4, __oc5, __oc6, __oc7;
         try {
             if (image.__expressionLoadedSource === source && image.__expressionLoadedURL === image.src) {
-                options.onCommit?.(image.src);
+                (((__oc2 = options.onCommit) === null || __oc2 === void 0 ? void 0 : __oc2.call(options, image.src)));
                 return true;
             }
             let next = source;
@@ -458,20 +458,20 @@ async function fadeExpressionImage(image, source, options = {}) {
             if (!current()) return false;
             await image.__expressionSwap;
             if (!current()) return false;
-            if (image.src === next || image.getAttribute?.('src') === next) {
+            if (image.src === next || (((__oc3 = image.getAttribute) === null || __oc3 === void 0 ? void 0 : __oc3.call(image, 'src'))) === next) {
                 image.__expressionLoadedSource = source; image.__expressionLoadedURL = image.src;
-                options.onCommit?.(next); return true;
+                (((__oc4 = options.onCommit) === null || __oc4 === void 0 ? void 0 : __oc4.call(options, next))); return true;
             }
-            if (image.getAttribute?.('src') && image.complete === false
-                && (image.loading !== 'lazy' || image.getClientRects?.().length)) {
-                try { await image.decode?.(); } catch (_) {}
+            if ((((__oc5 = image.getAttribute) === null || __oc5 === void 0 ? void 0 : __oc5.call(image, 'src'))) && image.complete === false
+                && (image.loading !== 'lazy' || (((__oc6 = image.getClientRects) === null || __oc6 === void 0 ? void 0 : __oc6.call(image).length)))) {
+                try { await (((__oc7 = image.decode) === null || __oc7 === void 0 ? void 0 : __oc7.call(image))); } catch (_) {}
                 if (!current()) return false;
             }
-            const swap = (async () => {
+            const swap = (async () => { var __oc8, __oc9, __oc10, __oc11, __oc12, __oc13, __oc14, __oc15, __oc16;
                 let animate = options.animate !== false && image.naturalWidth > 0 && image.parentElement
                     && typeof image.animate === 'function' && typeof image.cloneNode === 'function'
-                    && image.ownerDocument?.createElement && window.CSS?.supports?.('mix-blend-mode', 'plus-lighter')
-                    && !window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+                    && (((__oc8 = image.ownerDocument) === null || __oc8 === void 0 ? void 0 : __oc8.createElement)) && (((__oc10 = (__oc9 = window.CSS) === null || __oc9 === void 0 ? void 0 : __oc9.supports) === null || __oc10 === void 0 ? void 0 : __oc10.call(__oc9, 'mix-blend-mode', 'plus-lighter')))
+                    && !(((__oc12 = (__oc11 = window.matchMedia) === null || __oc11 === void 0 ? void 0 : __oc11.call(window, '(prefers-reduced-motion: reduce)')) === null || __oc12 === void 0 ? void 0 : __oc12.matches));
                 let outgoing, incoming, layer, ghost, arrival, restoreVisibility;
                 try {
                     if (animate) {
@@ -509,12 +509,12 @@ async function fadeExpressionImage(image, source, options = {}) {
                             arrival = copy('expression-incoming', next);
                             Object.assign(ghost.style, { opacity: style.opacity, zIndex: '1', mixBlendMode: 'plus-lighter' });
                             Object.assign(arrival.style, { opacity: '0', zIndex: '0', mixBlendMode: 'normal' });
-                            await Promise.all([ghost.decode?.(), arrival.decode?.()]);
+                            await Promise.all([(((__oc13 = ghost.decode) === null || __oc13 === void 0 ? void 0 : __oc13.call(ghost))), (((__oc14 = arrival.decode) === null || __oc14 === void 0 ? void 0 : __oc14.call(arrival)))]);
                             if (!current()) return false;
                             layer.appendChild(arrival); layer.appendChild(ghost);
                             image.parentElement.appendChild(layer);
                         } catch (_) {
-                            layer?.remove();
+                            ((layer === null || layer === void 0 ? void 0 : layer.remove()));
                             layer = null;
                             animate = false;
                             if (!current()) return false;
@@ -527,7 +527,7 @@ async function fadeExpressionImage(image, source, options = {}) {
                     if (animate) {
                         restoreVisibility = image.style.visibility;
                         image.style.visibility = 'hidden';
-                        try { await image.decode?.(); } catch (_) {}
+                        try { await (((__oc15 = image.decode) === null || __oc15 === void 0 ? void 0 : __oc15.call(image))); } catch (_) {}
                         const nextStyle = window.getComputedStyle(image);
                         const opacity = Number(nextStyle.opacity);
                         for (const property of Array.from(nextStyle)) arrival.style.setProperty(property, nextStyle.getPropertyValue(property));
@@ -542,12 +542,12 @@ async function fadeExpressionImage(image, source, options = {}) {
                         outgoing = ghost.animate([{ opacity: Number(ghost.style.opacity) }, { opacity: 0 }], timing);
                         incoming = arrival.animate([{ opacity: 0 }, { opacity }], timing);
                         await Promise.all([outgoing.finished, incoming.finished]);
-                        try { await image.decode?.(); } catch (_) {}
+                        try { await (((__oc16 = image.decode) === null || __oc16 === void 0 ? void 0 : __oc16.call(image))); } catch (_) {}
                     }
                     return true;
                 } finally {
                     if (restoreVisibility !== undefined) image.style.visibility = restoreVisibility;
-                    layer?.remove(); outgoing?.cancel(); incoming?.cancel();
+                    ((layer === null || layer === void 0 ? void 0 : layer.remove())); ((outgoing === null || outgoing === void 0 ? void 0 : outgoing.cancel())); ((incoming === null || incoming === void 0 ? void 0 : incoming.cancel()));
                 }
             })();
             image.__expressionSwap = swap.catch(() => false);
@@ -561,19 +561,19 @@ async function fadeExpressionImage(image, source, options = {}) {
     return request;
 }
 
-  function loadImageWithMediaFallback(img, rawPath, onload, onerror, options) {
+  function loadImageWithMediaFallback(img, rawPath, onload, onerror, options) { var __oc17;
     if (!img) return;
-    if (options?.preservePrevious && img.__expressionTarget === rawPath) return img.__expressionRequest;
+    if (((options === null || options === void 0 ? void 0 : options.preservePrevious)) && img.__expressionTarget === rawPath) return img.__expressionRequest;
     var generation = (img.__cupidLoadGeneration || 0) + 1;
     img.__cupidLoadGeneration = generation;
     // Both chat avatars and standing portraits retain their decoded previous frame.
-    if (options?.preservePrevious && img.getAttribute?.('src') && global.Image) {
+    if (((options === null || options === void 0 ? void 0 : options.preservePrevious)) && (((__oc17 = img.getAttribute) === null || __oc17 === void 0 ? void 0 : __oc17.call(img, 'src'))) && global.Image) {
       return fadeExpressionImage(img, rawPath, {
         isCurrent: function () { return img.__cupidLoadGeneration === generation; },
         load: function () { return new Promise(function (resolve, reject) {
           var pending = new global.Image();
-          loadImageWithMediaFallback(pending, rawPath, function () {
-            Promise.resolve(pending.decode?.()).then(function () { resolve(pending.src); }, reject);
+          loadImageWithMediaFallback(pending, rawPath, function () { var __oc18;
+            Promise.resolve((((__oc18 = pending.decode) === null || __oc18 === void 0 ? void 0 : __oc18.call(pending)))).then(function () { resolve(pending.src); }, reject);
           }, reject);
         }); }
       }).then(function (changed) {
@@ -627,8 +627,8 @@ async function fadeExpressionImage(image, source, options = {}) {
     });
   }
 
-  function preloadUnlocked(assets) {
-    if (!global.Image || global.navigator?.connection?.saveData) return;
+  function preloadUnlocked(assets) { var __oc19, __oc20;
+    if (!global.Image || (((__oc20 = (__oc19 = global.navigator) === null || __oc19 === void 0 ? void 0 : __oc19.connection) === null || __oc20 === void 0 ? void 0 : __oc20.saveData))) return;
     (assets || []).slice(0, 2).forEach(function (asset) {
       var id = logicalFromAny(asset);
       if (!id || (!isPublicLogical(id) && !knownUnlocked[id])) return;

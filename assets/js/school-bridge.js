@@ -1,6 +1,6 @@
 /* Cupid title / Harem school handoff. Keep both copies identical. */
 (function (root) {
-    'use strict';
+    'use strict'; var __oc8;
     const LANGUAGES = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'];
     const RETURN_KEY = 'harem:cupidReturnLanguage';
     const CROSSING_KEY = 'school:pendingCrossings:v1';
@@ -12,7 +12,7 @@
         try { const rows = JSON.parse(crossingStore().getItem(CROSSING_KEY) || '[]'); return Array.isArray(rows) ? rows : []; }
         catch (_) { return []; }
     }
-    async function flushCrossings() {
+    async function flushCrossings() { var __oc0;
         if (crossingBusy || typeof root.fetch !== 'function') return;
         crossingBusy = true;
         try {
@@ -23,7 +23,7 @@
             const response = await root.fetch('https://chatbot-api.yama5993.workers.dev/cupid-route-events', {
                 method: 'POST', headers: { 'Content-Type': 'application/json', 'x-app-id': first.appId }, keepalive: true,
                 body: JSON.stringify({ appId:first.appId, userId:first.userId, events:batch.map(row=>row.event) }),
-                signal: root.AbortSignal?.timeout(10000),
+                signal: (((__oc0 = root.AbortSignal) === null || __oc0 === void 0 ? void 0 : __oc0.timeout(10000))),
             });
             if (!response.ok) throw new Error('CROSSING_WRITE_FAILED');
             const ack = await response.json();
@@ -38,7 +38,7 @@
             }
         }
     }
-    function recordCrossing(direction, family) {
+    function recordCrossing(direction, family) { var __oc1, __oc2, __oc3;
         try {
             if (!['arrived','departed'].includes(direction) || !['harem','cupid'].includes(family)) return;
             const key = `${family}:${direction}`, now = Date.now();
@@ -50,7 +50,7 @@
                 userId = family === 'cupid' ? `cupid_${root.crypto.randomUUID()}` : `harem_${now}_${root.crypto.randomUUID().slice(0,8)}`;
                 store.setItem(identityKey,userId);
             }
-            const lang = language(root.document?.documentElement?.lang?.toLowerCase().split('-')[0]);
+            const lang = language((((__oc3 = (__oc2 = (__oc1 = root.document) === null || __oc1 === void 0 ? void 0 : __oc1.documentElement) === null || __oc2 === void 0 ? void 0 : __oc2.lang) === null || __oc3 === void 0 ? void 0 : __oc3.toLowerCase().split('-')[0])));
             const appId = family === 'harem' ? 'harem' : (lang === 'ko' ? 'cupid' : `cupid-${lang}`);
             const eventId = root.crypto.randomUUID();
             const isTest = root.CUPID_ROUTE_TELEMETRY_TEST === true || /^(localhost|127\.0\.0\.1)$/.test(root.location.hostname) || root.location.hostname.endsWith('.pages.dev');
@@ -104,23 +104,23 @@
         } catch (_) { /* Use the current school language. */ }
         return language(fallback);
     }
-    function savedStory() {
+    function savedStory() { var __oc4;
         try {
-            const raw = root.CupidStorage?.getItem('cupid_save');
+            const raw = (((__oc4 = root.CupidStorage) === null || __oc4 === void 0 ? void 0 : __oc4.getItem('cupid_save')));
             const save = JSON.parse(raw || 'null');
-            return typeof save?.currentSceneId === 'string' && save.currentSceneId && save.gameState ? save : null;
+            return typeof ((save === null || save === void 0 ? void 0 : save.currentSceneId)) === 'string' && save.currentSceneId && save.gameState ? save : null;
         } catch (_) { return null; }
     }
-    function hasDurableSave() {
+    function hasDurableSave() { var __oc5;
         try {
-            const value = root.CupidStorage?.getItem('cupid_save');
+            const value = (((__oc5 = root.CupidStorage) === null || __oc5 === void 0 ? void 0 : __oc5.getItem('cupid_save')));
             return !value || root.localStorage.getItem('cupid_save') === value;
         } catch (_) { return false; }
     }
-    async function initCupid() {
+    async function initCupid() { var __oc6, __oc7;
         const document = root.document;
         const landing = document.getElementById('landing-container');
-        const links = landing?.querySelector('.title-actions');
+        const links = ((landing === null || landing === void 0 ? void 0 : landing.querySelector('.title-actions')));
         if (!links || document.getElementById('school-visit-link')) return;
         const lang = language(document.documentElement.lang.toLowerCase().split('-')[0]);
         const text = copy(lang);
@@ -162,7 +162,7 @@
         if (!continueStory) return;
         consume(['from']);
         if (!savedStory() || typeof root.continueGame !== 'function') {
-            document.getElementById('start-btn')?.focus();
+            (((__oc6 = document.getElementById('start-btn')) === null || __oc6 === void 0 ? void 0 : __oc6.focus()));
             return;
         }
         try {
@@ -174,7 +174,7 @@
             const switcher = document.querySelector('.lang-switch');
             if (switcher) switcher.style.display = '';
             showError(text[5]);
-            document.getElementById('continue-btn')?.focus();
+            (((__oc7 = document.getElementById('continue-btn')) === null || __oc7 === void 0 ? void 0 : __oc7.focus()));
         }
     }
     const bridge = { language, copy, cupidUrl, schoolUrl, takeSchoolArrival, getReturnLanguage: returnLanguage, savedStory, hasDurableSave, initCupid, recordCrossing, flushCrossings };
@@ -184,7 +184,7 @@
         root.addEventListener('pagehide', () => { void flushCrossings(); });
     }
     void flushCrossings();
-    if (root.document?.addEventListener) {
+    if ((((__oc8 = root.document) === null || __oc8 === void 0 ? void 0 : __oc8.addEventListener))) {
         if (root.document.readyState === 'loading') root.document.addEventListener('DOMContentLoaded', initCupid, { once: true });
         else void initCupid();
     }

@@ -126,12 +126,10 @@ class CGRenderer {
     /** @private */
     _hydrateProtectedImages() {
         if (!this.gridEl || !window.CupidMedia) return;
-        this.gridEl.querySelectorAll('img[data-cupid-asset]').forEach((img) => {
+        this.gridEl.querySelectorAll('img[data-cupid-asset]').forEach((img) => { var __oc0, __oc1;
             const asset = img.getAttribute('data-cupid-asset');
             if (!asset) return;
-            window.CupidMedia.unlockCG?.(
-                (window.CupidMedia.toLogicalAssetId(asset) || '').replace(/^background\//, '')
-            );
+            (((__oc1 = (__oc0 = window.CupidMedia).unlockCG) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0, (window.CupidMedia.toLogicalAssetId(asset) || '').replace(/^background\//, ''))));
             window.CupidMedia.loadImageWithMediaFallback(img, asset);
         });
     }
@@ -140,22 +138,13 @@ class CGRenderer {
      * CG 잠금 팝업 표시
      * @param {string} cgId - CG ID
      */
-    showLockPopup(cgId) {
+    showLockPopup(cgId) { var __oc2;
         const L = (ko, en, es, ja, fr, de, pt, zh) => ({ ko, en, es, ja, fr, de, pt, zh })[this.ui.lang] || en;
 
         // CG별 해금 힌트 가져오기
         const cgList = GalleryData.getCGList(this.ui.lang);
         const cgData = cgList.find(c => c.id === cgId);
-        const hint = cgData?.unlockHint ?? L(
-            '게임에서 그 장면을 보면 열려요.',
-            'Experience this event in the game!',
-            '¡Experimenta este evento en el juego!',
-            'ゲーム本編でこのイベントを迎えると解放されます。',
-            'Vivez cet événement dans le jeu !',
-            'Erlebe dieses Event im Spiel!',
-            'Experimente este evento no jogo!',
-            '请在游戏中亲身体验这个事件！'
-        );
+        const hint = (((__oc2 = cgData === null || cgData === void 0 ? void 0 : cgData.unlockHint) !== null && __oc2 !== void 0 ? __oc2 : L('게임에서 그 장면을 보면 열려요.', 'Experience this event in the game!', '¡Experimenta este evento en el juego!', 'ゲーム本編でこのイベントを迎えると解放されます。', 'Vivez cet événement dans le jeu !', 'Erlebe dieses Event im Spiel!', 'Experimente este evento no jogo!', '请在游戏中亲身体验这个事件！')));
 
         this.ui.showUnlockPopup({
             title: L('CG 미해금', 'CG Locked', 'CG bloqueado', '未解放のCG', 'CG verrouillé', 'CG gesperrt', 'CG bloqueado', 'CG未解锁'),
@@ -177,10 +166,10 @@ class CGRenderer {
      * CG 모달 열기
      * @param {string} cgId - 표시할 CG ID
      */
-    openModal(cgId) {
+    openModal(cgId) { var __oc3, __oc4;
         const cg = GalleryData.getCG(this.ui.lang, cgId);
         if (!cg) return;
-        if (!this.ui.progress?.isUnlocked?.('cg', cgId)) {
+        if (!(((__oc4 = (__oc3 = this.ui.progress) === null || __oc3 === void 0 ? void 0 : __oc3.isUnlocked) === null || __oc4 === void 0 ? void 0 : __oc4.call(__oc3, 'cg', cgId)))) {
             this.showLockPopup(cgId);
             return;
         }
@@ -279,7 +268,9 @@ class CGRenderer {
 
         // 닫기 버튼 이벤트
         modal.querySelector('#cg-close-btn').addEventListener('click', () => this.closeModal());
-        modal.querySelector('#cg-retry-btn').addEventListener('click', () => this._retryCG?.());
+        modal.querySelector('#cg-retry-btn').addEventListener('click', () => { var __oc5; return (
+((__oc5 = this._retryCG) === null || __oc5 === void 0 ? void 0 : __oc5.call(this))
+); });
 
         document.body.appendChild(modal);
         this._createParticles(modal.querySelector('.cg-particles'));

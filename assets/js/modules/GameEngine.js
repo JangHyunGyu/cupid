@@ -163,37 +163,39 @@ class GameEngine {
         this.exposeGlobalFunctions();  // window 객체에 함수 등록
     }
 
-    async _getSceneWithLazyContent(sceneId) {
+    async _getSceneWithLazyContent(sceneId) { var __oc0;
         let scene = this.sceneRenderer.getScene(sceneId);
         const loader = window.CupidContentLoader;
-        while (!scene && !String(sceneId || '').endsWith('.html') && loader?.hasUnloadedDays?.()) {
+        while (!scene && !String(sceneId || '').endsWith('.html') && (((__oc0 = loader === null || loader === void 0 ? void 0 : loader.hasUnloadedDays) === null || __oc0 === void 0 ? void 0 : __oc0.call(loader)))) {
             await loader.loadNextDay();
             scene = this.sceneRenderer.getScene(sceneId);
         }
         return scene;
     }
 
-    _prefetchNextScenarioDay(scene) {
+    _prefetchNextScenarioDay(scene) { var __oc1, __oc2, __oc3;
         // Only already-unlocked media in an unconditional next scene may warm up.
         // Do not evaluate branches or grant future images while preloading.
-        if (typeof scene?.next === 'string' && !scene.choices && !scene.branches) {
+        if (typeof ((scene === null || scene === void 0 ? void 0 : scene.next)) === 'string' && !scene.choices && !scene.branches) {
             const upcoming = this.sceneRenderer.getScene(scene.next);
             if (upcoming) {
                 const images = [upcoming.background, upcoming.character,
-                    ...Object.values(upcoming.characters || {}).map(value => typeof value === 'string' ? value : value?.src)
+                    ...Object.values(upcoming.characters || {}).map(value => { return (
+typeof value === 'string' ? value : ((value === null || value === void 0 ? void 0 : value.src))
+); })
                 ].filter(Boolean);
-                window.CupidMedia?.preloadUnlocked?.(images);
+                (((__oc2 = (__oc1 = window.CupidMedia) === null || __oc1 === void 0 ? void 0 : __oc1.preloadUnlocked) === null || __oc2 === void 0 ? void 0 : __oc2.call(__oc1, images)));
             }
         }
-        const match = String(scene?.__sourceFile || '').match(/^day([1-4])_4_night$/);
-        if (!match || !window.CupidContentLoader?.prefetchDay) return;
+        const match = String(((scene === null || scene === void 0 ? void 0 : scene.__sourceFile)) || '').match(/^day([1-4])_4_night$/);
+        if (!match || !(((__oc3 = window.CupidContentLoader) === null || __oc3 === void 0 ? void 0 : __oc3.prefetchDay))) return;
         window.CupidContentLoader.prefetchDay(Number(match[1]) + 1).catch(error => {
-            console.warn('[GameEngine] next-day prefetch failed:', error?.message || error);
+            console.warn('[GameEngine] next-day prefetch failed:', ((error === null || error === void 0 ? void 0 : error.message)) || error);
         });
     }
 
     _handleAsyncError(context, error) {
-        if (error?.name === 'ProgressConflictError') {
+        if (((error === null || error === void 0 ? void 0 : error.name)) === 'ProgressConflictError') {
             if (this._progressRecovery) return this._progressRecovery;
             // Discard the stale action; never replay its rewards against the new revision.
             this._resetAsyncControls();
@@ -212,32 +214,32 @@ class GameEngine {
         this._resetAsyncControls();
     }
 
-    _resetAsyncControls() {
+    _resetAsyncControls() { var __oc4, __oc5, __oc6, __oc7;
         this._isRendering = false;
         if (this.freeTalkSystem) this.freeTalkSystem.isProcessingChat = false;
-        if (this.uiManager?.chatSendBtn) this.uiManager.chatSendBtn.disabled = false;
-        if (this.uiManager?.chatSkipBtn) this.uiManager.chatSkipBtn.disabled = false;
-        if (this.uiManager?.chatInput) this.uiManager.chatInput.disabled = false;
-        if (this.uiManager?.dialogueBox) this.uiManager.dialogueBox.classList.remove('thinking-box');
+        if ((((__oc4 = this.uiManager) === null || __oc4 === void 0 ? void 0 : __oc4.chatSendBtn))) this.uiManager.chatSendBtn.disabled = false;
+        if ((((__oc5 = this.uiManager) === null || __oc5 === void 0 ? void 0 : __oc5.chatSkipBtn))) this.uiManager.chatSkipBtn.disabled = false;
+        if ((((__oc6 = this.uiManager) === null || __oc6 === void 0 ? void 0 : __oc6.chatInput))) this.uiManager.chatInput.disabled = false;
+        if ((((__oc7 = this.uiManager) === null || __oc7 === void 0 ? void 0 : __oc7.dialogueBox))) this.uiManager.dialogueBox.classList.remove('thinking-box');
         document.querySelectorAll('.char-slot img').forEach(img => img.classList.remove('thinking'));
         document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
     }
 
-    _reportCaughtError(context, error, errorType = 'game_engine_caught_error', extra = null) {
+    _reportCaughtError(context, error, errorType = 'game_engine_caught_error', extra = null) { var __oc8, __oc9, __oc10, __oc11, __oc12;
         try {
             const reporter = window.reportCupidCaughtError || window.logCupidError;
             if (typeof reporter === 'function') {
                 reporter(error, {
                     source: 'cupid-game-engine',
                     errorType,
-                    errorClass: error?.name || 'Error',
-                    sessionId: this.sceneRenderer?.currentSceneId || '',
+                    errorClass: ((error === null || error === void 0 ? void 0 : error.name)) || 'Error',
+                    sessionId: (((__oc8 = this.sceneRenderer) === null || __oc8 === void 0 ? void 0 : __oc8.currentSceneId)) || '',
                     context: {
                         asyncContext: context,
-                        sceneId: this.sceneRenderer?.currentSceneId || '',
-                        day: this.stateManager?.currentDay || '',
-                        language: window.GAME_LANG || document.documentElement?.lang || 'ko',
-                        isFreeTalking: !!this.freeTalkSystem?.isFreeTalking
+                        sceneId: (((__oc9 = this.sceneRenderer) === null || __oc9 === void 0 ? void 0 : __oc9.currentSceneId)) || '',
+                        day: (((__oc10 = this.stateManager) === null || __oc10 === void 0 ? void 0 : __oc10.currentDay)) || '',
+                        language: window.GAME_LANG || (((__oc11 = document.documentElement) === null || __oc11 === void 0 ? void 0 : __oc11.lang)) || 'ko',
+                        isFreeTalking: !!(((__oc12 = this.freeTalkSystem) === null || __oc12 === void 0 ? void 0 : __oc12.isFreeTalking))
                     },
                     extra
                 });
@@ -290,12 +292,12 @@ class GameEngine {
 
         if (this.uiManager.chatInput) {
             this.uiManager.chatInput.addEventListener('input', () => this.uiManager.resizeChatInput());
-            this.uiManager.chatInput.addEventListener('keydown', (event) => {
-                if (!window.MessageComposerUtils?.shouldSubmitOnEnter(event)) return;
+            this.uiManager.chatInput.addEventListener('keydown', (event) => { var __oc13, __oc14, __oc15;
+                if (!(((__oc13 = window.MessageComposerUtils) === null || __oc13 === void 0 ? void 0 : __oc13.shouldSubmitOnEnter(event)))) return;
 
                 event.preventDefault();
-                if (this.uiManager.chatInput.disabled || this.uiManager.chatSendBtn?.disabled) return;
-                this.uiManager.chatSendBtn?.click();
+                if (this.uiManager.chatInput.disabled || (((__oc14 = this.uiManager.chatSendBtn) === null || __oc14 === void 0 ? void 0 : __oc14.disabled))) return;
+                (((__oc15 = this.uiManager.chatSendBtn) === null || __oc15 === void 0 ? void 0 : __oc15.click()));
             });
             this.uiManager.resizeChatInput();
         }
@@ -343,7 +345,7 @@ class GameEngine {
      *   → 여기에 해당 함수가 등록되어 있는지 확인
      *   → window.xxx = () => ... 형태로 추가
      */
-    exposeGlobalFunctions() {
+    exposeGlobalFunctions() { var __oc16;
         // ─────────────────────────────────────────────────────────────
         // 🏠 홈/설정 관련 함수 (UI 모달 제어)
         // ─────────────────────────────────────────────────────────────
@@ -358,7 +360,7 @@ class GameEngine {
         );
         if (typeof document !== 'undefined') {
             for (const id of ['home-btn', 'settings-btn']) {
-                const button = document.getElementById?.(id);
+                const button = (((__oc16 = document.getElementById) === null || __oc16 === void 0 ? void 0 : __oc16.call(document, id)));
                 if (button) button.disabled = false;
             }
         }
@@ -418,25 +420,25 @@ class GameEngine {
     _armCgLock(sceneId, holdMs) {
         this._clearCgLock();
         this._cgLocked = true;
-        this._endingLockTimer = setTimeout(() => {
+        this._endingLockTimer = setTimeout(() => { var __oc17;
             this._endingLockTimer = null;
-            if (this.sceneRenderer?.currentSceneId === sceneId) this._cgLocked = false;
+            if ((((__oc17 = this.sceneRenderer) === null || __oc17 === void 0 ? void 0 : __oc17.currentSceneId)) === sceneId) this._cgLocked = false;
         }, holdMs);
     }
 
     /** 대화창 클릭 처리 */
-    async handleDialogueClick() {
-        if (this.sceneRenderer.cgTransition?.active) return;
+    async handleDialogueClick() { var __oc18, __oc19, __oc20, __oc21, __oc22, __oc23;
+        if ((((__oc18 = this.sceneRenderer.cgTransition) === null || __oc18 === void 0 ? void 0 : __oc18.active))) return;
         // 씬 렌더링 중이면 클릭 무시 (배경/캐릭터 로딩 완료 전 스킵 방지)
         if (this._isRendering) return;
 
         // 엔딩 CG 감상 중이면 클릭 무시 (4초간 스킵 불가)
         if (this._cgLocked) return;
 
-        if (this.dialogueSystem.isAdvanceCoolingDown?.()) return;
+        if ((((__oc20 = (__oc19 = this.dialogueSystem).isAdvanceCoolingDown) === null || __oc20 === void 0 ? void 0 : __oc20.call(__oc19)))) return;
 
         // 메신저 '입력 중' 대기 중이면 대기만 끝내고 말풍선 표시
-        if (this.messengerView?.isAnimating()) {
+        if ((((__oc21 = this.messengerView) === null || __oc21 === void 0 ? void 0 : __oc21.isAnimating()))) {
             this.messengerView.skip();
             return;
         }
@@ -478,7 +480,7 @@ class GameEngine {
         // - 프리토킹 종료 후 대화창을 클릭하면 다음 씬으로 넘어감
         if (scene.type === 'group_free_talk'
             && this.freeTalkSystem.isFreeTalking
-            && this.freeTalkSystem.advanceGroupMessageQueue?.()) {
+            && (((__oc23 = (__oc22 = this.freeTalkSystem).advanceGroupMessageQueue) === null || __oc23 === void 0 ? void 0 : __oc23.call(__oc22)))) {
             return;
         }
 
@@ -664,8 +666,8 @@ class GameEngine {
         // 📌 렌파이 스타일 연타 방지: 마지막 버튼 애니메이션 완료 후 클릭 활성화
         // 마지막 버튼 stagger delay + 애니메이션 duration(1500ms)
         const totalDelay = (choices.length - 1) * 80 + 1500;
-        setTimeout(() => {
-            const buttons = this.uiManager.choiceContainer?.querySelectorAll('.choice-btn');
+        setTimeout(() => { var __oc24;
+            const buttons = (((__oc24 = this.uiManager.choiceContainer) === null || __oc24 === void 0 ? void 0 : __oc24.querySelectorAll('.choice-btn')));
             if (buttons) {
                 buttons.forEach(btn => btn.classList.add('choice-ready'));
             }
@@ -707,11 +709,11 @@ class GameEngine {
      *
      * @param {Object} choice - 실행할 선택지 객체
      */
-    async executeChoice(choice) {
-        if (this.sceneRenderer.cgTransition?.active) return false;
+    async executeChoice(choice) { var __oc25, __oc26, __oc27;
+        if ((((__oc25 = this.sceneRenderer.cgTransition) === null || __oc25 === void 0 ? void 0 : __oc25.active))) return false;
         if (this._choiceInFlight) return false;
         const sceneId = this.sceneRenderer.currentSceneId;
-        const available = this.getAvailableChoices(this.sceneRenderer.getScene(sceneId)?.choices || []);
+        const available = this.getAvailableChoices((((__oc26 = this.sceneRenderer.getScene(sceneId)) === null || __oc26 === void 0 ? void 0 : __oc26.choices)) || []);
         const canonical = available.find(candidate => JSON.stringify(candidate) === JSON.stringify(choice));
         if (!canonical) return false;
         choice = canonical;
@@ -723,20 +725,19 @@ class GameEngine {
                 : { applied: true, value: apply() };
             if (!result.applied) return false;
             const nextScene = result.value;
-            window.CupidRouteTelemetry?.choice(this.stateManager, sceneId,
-                this.sceneRenderer.getScene(sceneId), choice, nextScene);
+            (((__oc27 = window.CupidRouteTelemetry) === null || __oc27 === void 0 ? void 0 : __oc27.choice(this.stateManager, sceneId, this.sceneRenderer.getScene(sceneId), choice, nextScene)));
             if (nextScene === 'index.html') this.uiManager.goToHome();
             else await this.renderScene(nextScene);
             return true;
         } catch (error) {
-            if (error?.name === 'ProgressConflictError') { await this._handleAsyncError('choice', error); return false; }
+            if (((error === null || error === void 0 ? void 0 : error.name)) === 'ProgressConflictError') { await this._handleAsyncError('choice', error); return false; }
             throw error;
         } finally {
             this._choiceInFlight = false;
         }
     }
 
-    _applyChoiceEffects(choice) {
+    _applyChoiceEffects(choice) { var __oc28, __oc29, __oc30, __oc31, __oc32;
         // ─────────────────────────────────────────────────────────
         // 📌 1단계: 플래그 설정
         // ─────────────────────────────────────────────────────────
@@ -748,11 +749,11 @@ class GameEngine {
         if (choice.setFlag) this.stateManager.setFlag(choice.setFlag);
 
         // 플래그 초기화 (clearFlags: ["flag1", "flag2"])
-        if (choice.clearFlags?.length) choice.clearFlags.forEach(flag => this.stateManager.setFlag(flag, false));
+        if ((((__oc28 = choice.clearFlags) === null || __oc28 === void 0 ? void 0 : __oc28.length))) choice.clearFlags.forEach(flag => this.stateManager.setFlag(flag, false));
 
         // 복수 플래그 설정 (setFlags: ["flag1", "flag2"])
         // 하나의 선택으로 여러 플래그를 동시에 설정할 때 사용
-        if (choice.setFlags?.length) choice.setFlags.forEach(flag => this.stateManager.setFlag(flag));
+        if ((((__oc29 = choice.setFlags) === null || __oc29 === void 0 ? void 0 : __oc29.length))) choice.setFlags.forEach(flag => this.stateManager.setFlag(flag));
 
         // ─────────────────────────────────────────────────────────
         // 📌 2단계: 스탯(호감도) 변경
@@ -769,7 +770,7 @@ class GameEngine {
         // - "선생님께 인사한다" → Teacher +5
         // - "현재 대화중인 캐릭터 선물" → #{current_character} +10
 
-        const liveChoices = this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId)?.choices || [];
+        const liveChoices = (((__oc30 = this.sceneRenderer.getScene(this.sceneRenderer.currentSceneId)) === null || __oc30 === void 0 ? void 0 : __oc30.choices)) || [];
         const choiceIsLive = liveChoices.some(candidate => candidate === choice || JSON.stringify(candidate) === JSON.stringify(choice));
         if (choice.stats && choiceIsLive) {
             // stats 객체의 각 캐릭터별로 순회
@@ -825,8 +826,8 @@ class GameEngine {
                 // ─────────────────────────────────────────────────
                 // stats.affinity가 있고, 해당 캐릭터가 존재하는 경우만 처리
                 if (stats.affinity && this.stateManager.stats[charKey]
-                    && window.CupidAffinityGate?.commitKey() === `choice:${this.sceneRenderer.currentSceneId}`
-                    && window.CupidAffinityGate?.grant(charKey, stats.affinity)) {
+                    && (((__oc31 = window.CupidAffinityGate) === null || __oc31 === void 0 ? void 0 : __oc31.commitKey())) === `choice:${this.sceneRenderer.currentSceneId}`
+                    && (((__oc32 = window.CupidAffinityGate) === null || __oc32 === void 0 ? void 0 : __oc32.grant(charKey, stats.affinity)))) {
                     // 1️⃣ 호감도 수치 변경
                     // changeAffinity(캐릭터, 변화량) → 새로운 호감도 반환
                     // 예: 현재 30 + 변화량 10 = 새 값 40
@@ -1047,15 +1048,15 @@ class GameEngine {
      *
      * @param {string} sceneId - 렌더링할 씬의 고유 ID
      */
-    _resolveNextScene(scene, sceneId = this.sceneRenderer.currentSceneId) {
+    _resolveNextScene(scene, sceneId = this.sceneRenderer.currentSceneId) { var __oc33;
         const nextId = this.sceneRenderer.resolveNextScene(scene);
-        window.CupidRouteTelemetry?.transition(this.stateManager, sceneId, scene, nextId);
+        (((__oc33 = window.CupidRouteTelemetry) === null || __oc33 === void 0 ? void 0 : __oc33.transition(this.stateManager, sceneId, scene, nextId)));
         return nextId;
     }
 
-    async renderScene(sceneId, { restoring = false } = {}) {
-        this.sceneRenderer.cgTransition?.cancel();
-        this.dialogueSystem.resetAdvanceCooldown?.();
+    async renderScene(sceneId, { restoring = false } = {}) { var __oc34, __oc35, __oc36, __oc37, __oc38, __oc39, __oc40, __oc41, __oc42, __oc43, __oc44, __oc45, __oc46, __oc47, __oc48, __oc49, __oc50, __oc51, __oc52;
+        (((__oc34 = this.sceneRenderer.cgTransition) === null || __oc34 === void 0 ? void 0 : __oc34.cancel()));
+        (((__oc36 = (__oc35 = this.dialogueSystem).resetAdvanceCooldown) === null || __oc36 === void 0 ? void 0 : __oc36.call(__oc35)));
         // 렌더링 락 활성화 (비동기 로딩 중 클릭 방지).
         // 중간에 예외가 나도 이 락이 남지 않게 하고, 더 새로 시작한 렌더의 락은 풀지 않는다.
         const renderToken = (this._renderToken = (this._renderToken || 0) + 1);
@@ -1069,13 +1070,13 @@ class GameEngine {
         // 📌 1단계: 씬 데이터 로드
         // ─────────────────────────────────────────────────────────
         // 예전 세이브가 정리로 지운 장면을 가리키면 대체 장면 ID로 바꾼 뒤 진행
-        sceneId = this.sceneRenderer.resolveSceneAlias?.(sceneId) ?? sceneId;
+        sceneId = (((__oc39 = (__oc38 = (__oc37 = this.sceneRenderer).resolveSceneAlias) === null || __oc38 === void 0 ? void 0 : __oc38.call(__oc37, sceneId)) !== null && __oc39 !== void 0 ? __oc39 : sceneId));
         let scene = await this._getSceneWithLazyContent(sceneId);
 
         // 씬이 없으면 HTML 페이지 이동인지 확인
         if (!scene) {
             releaseRenderLock();
-            if (sceneId?.endsWith('.html')) {
+            if (((sceneId === null || sceneId === void 0 ? void 0 : sceneId.endsWith('.html')))) {
                 // index.html 계열은 언어별 라우팅 적용
                 if (sceneId === 'index.html') {
                     this.uiManager.goToHome();
@@ -1102,7 +1103,7 @@ class GameEngine {
             preRenderVisited.add(sceneId);
 
             const nextId = guardedNext || this._resolveNextScene(scene, sceneId);
-            if (guardedNext) window.CupidRouteTelemetry?.transition(this.stateManager, sceneId, scene, nextId, true);
+            if (guardedNext) (((__oc40 = window.CupidRouteTelemetry) === null || __oc40 === void 0 ? void 0 : __oc40.transition(this.stateManager, sceneId, scene, nextId, true)));
             if (!nextId || nextId === sceneId) {
                 console.error(`[GameEngine] 사전 분기 대상이 올바르지 않음: ${sceneId}`);
                 releaseRenderLock();
@@ -1130,7 +1131,7 @@ class GameEngine {
         // 현재 씬 ID 저장 (다른 곳에서 참조용)
         this.sceneRenderer.currentSceneId = sceneId;
         this._prefetchNextScenarioDay(scene);
-        this.galleryManager.recordEndingScene?.(sceneId, this.stateManager);
+        (((__oc42 = (__oc41 = this.galleryManager).recordEndingScene) === null || __oc42 === void 0 ? void 0 : __oc42.call(__oc41, sceneId, this.stateManager)));
 
         // ─────────────────────────────────────────────────────────
         // 🎬 엔딩/에필로그 모드 토글
@@ -1188,7 +1189,7 @@ class GameEngine {
             : scene.backgroundVariant === 'rain' ? 'rain'
             : /(?:library_old|yuna_hideout|bookstore)/.test(ambientBackground) ? 'library'
             : /\/gym\./.test(ambientBackground) ? 'gym' : null;
-        if (typeof soundManager !== 'undefined') soundManager.setAmbience?.(ambient);
+        if (typeof soundManager !== 'undefined') (((__oc43 = soundManager.setAmbience) === null || __oc43 === void 0 ? void 0 : __oc43.call(soundManager, ambient)));
 
         // sfx: 효과음 1회 재생
         if (scene.sfx && typeof soundManager !== 'undefined') soundManager.playSfx(scene.sfx.startsWith('synth:') ? scene.sfx : `assets/audio/sfx/${scene.sfx}`);
@@ -1206,13 +1207,13 @@ class GameEngine {
 
         // 문자 장면이 아니면 휴대폰 화면을 닫고 지문만 남는 장면이면 열린 대화방 유지
         this.uiManager.dialogueBox.classList.remove('messenger-quiet');
-        if (!this.messengerView?.isPhoneContext(scene)) this.messengerView?.hide();
+        if (!(((__oc44 = this.messengerView) === null || __oc44 === void 0 ? void 0 : __oc44.isPhoneContext(scene)))) (((__oc45 = this.messengerView) === null || __oc45 === void 0 ? void 0 : __oc45.hide()));
 
         // ─────────────────────────────────────────────────────────
         // 🌑 4단계: 페이드 효과 처리
         // ─────────────────────────────────────────────────────────
         // 특정 키워드가 있으면 페이드 아웃(어두워지는) 효과
-        const shouldFade = scene.fade || scene.text?.includes("페이드 아웃") || scene.text?.includes("어두워집니다");
+        const shouldFade = scene.fade || (((__oc46 = scene.text) === null || __oc46 === void 0 ? void 0 : __oc46.includes("페이드 아웃"))) || (((__oc47 = scene.text) === null || __oc47 === void 0 ? void 0 : __oc47.includes("어두워집니다")));
         this.uiManager.setFade(shouldFade, scene.tbc);
 
         // ─────────────────────────────────────────────────────────
@@ -1299,7 +1300,7 @@ class GameEngine {
         if (isNightScene && /_(msg|reply)_/.test(sceneId)) {
             const box = this.uiManager.dialogueBox;
             box.classList.remove('msg-vibrate');
-            if (!this.messengerView?.vibrate()) {
+            if (!(((__oc48 = this.messengerView) === null || __oc48 === void 0 ? void 0 : __oc48.vibrate()))) {
                 void box.offsetWidth;
                 box.classList.add('msg-vibrate');
             }
@@ -1377,7 +1378,7 @@ class GameEngine {
                 this._reportCaughtError('free talk start', error, 'freetalk_start_failed', {
                     sceneId,
                     sceneName: scene.name || '',
-                    maxTurns: scene.maxTurns ?? DEFAULT_MAX_FREE_TALK_TURNS
+                    maxTurns: (((__oc49 = scene.maxTurns) !== null && __oc49 !== void 0 ? __oc49 : DEFAULT_MAX_FREE_TALK_TURNS))
                 });
                 throw error;
             }
@@ -1419,7 +1420,7 @@ class GameEngine {
                     if (this.stateManager.getFlag(`isDating_${key}`)) {
                         try {
                             const gallery = JSON.parse(window.CupidStorage.getItem('cupid_gallery') || '{}');
-                            gallery.affinityRebalanceVersion = window.GalleryData?.AFFINITY_REBALANCE_VERSION || 1;
+                            gallery.affinityRebalanceVersion = (((__oc50 = window.GalleryData) === null || __oc50 === void 0 ? void 0 : __oc50.AFFINITY_REBALANCE_VERSION)) || 1;
                             if (!gallery.characters) gallery.characters = {};
                             if (!gallery.characters[id]) gallery.characters[id] = {};
                             gallery.characters[id].perfectEndingCleared = true;
@@ -1632,7 +1633,7 @@ class GameEngine {
             // ═══════════════════════════════════════════════════════
         } else {
             // 📜 대사가 있으면 타이핑 효과로 출력
-            if (scene.text && this.messengerView?.shouldBubble(scene)) {
+            if (scene.text && (((__oc51 = this.messengerView) === null || __oc51 === void 0 ? void 0 : __oc51.shouldBubble(scene)))) {
                 // 밤 문자: 대사는 휴대폰 말풍선, 지문은 대화창에 표시, 지문이 없으면 대화창에 진행 화살표만 남김
                 this.uiManager.messageEl.textContent = "";
                 this.uiManager.dialogueBox.classList.add('messenger-quiet');
@@ -1711,7 +1712,7 @@ class GameEngine {
         // ─────────────────────────────────────────────────────────
         // 💾 11단계: 게임 자동 저장
         // ─────────────────────────────────────────────────────────
-        window.CupidRouteTelemetry?.entered(this.stateManager, sceneId, scene, restoring);
+        (((__oc52 = window.CupidRouteTelemetry) === null || __oc52 === void 0 ? void 0 : __oc52.entered(this.stateManager, sceneId, scene, restoring)));
         // 매 씬마다 저장하여 브라우저 종료 시에도 이어하기 가능
         this.saveGame();
         } finally {
@@ -1749,7 +1750,7 @@ class GameEngine {
         }, 520);
     }
 
-    _applyCrossHitch(sceneId) {
+    _applyCrossHitch(sceneId) { var __oc53;
         let search = '';
         try { search = location.search || ''; } catch (_) { search = ''; }
         // takeArrival removes ?gate=1 before the first scene, so the arrival
@@ -1762,7 +1763,7 @@ class GameEngine {
         const hitch = sceneId === 'start_again'
             || (sceneId === 'start' && fromGate)
             || (sceneId === 'morning2_yuna_seen' && this._hasPlayedNevergrad());
-        if (!hitch || window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
+        if (!hitch || (((__oc53 = window.matchMedia) === null || __oc53 === void 0 ? void 0 : __oc53.call(window, '(prefers-reduced-motion: reduce)').matches))) return;
         const box = document.getElementById('background-layer');
         if (!box) return;
         box.classList.remove('lab-flicker');
@@ -1771,7 +1772,7 @@ class GameEngine {
         this._crackleAndBuzz();
     }
 
-    _applyLabGlitch(scene) {
+    _applyLabGlitch(scene) { var __oc54;
         const layer = document.getElementById('background-layer');
         const box = document.getElementById('game-container');
         if (!document.getElementById('cupid-lab-glitch-style')) {
@@ -1787,14 +1788,14 @@ class GameEngine {
         for (const el of [layer, box]) {
             if (!el) continue;
             el.classList.remove('lab-flicker', 'lab-dark');
-            if (scene.labGlitch && el === layer && !window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) el.classList.add(scene.labGlitch);
+            if (scene.labGlitch && el === layer && !(((__oc54 = window.matchMedia) === null || __oc54 === void 0 ? void 0 : __oc54.call(window, '(prefers-reduced-motion: reduce)').matches))) el.classList.add(scene.labGlitch);
         }
         if (scene.labGlitch === 'lab-flicker') this._crackleAndBuzz();
     }
 
-    _crackleAndBuzz() {
-        if (window.matchMedia?.('(prefers-reduced-motion: reduce)').matches) return;
-        try { window.soundManager?.playStaticCrackle?.(); } catch (_) {}
+    _crackleAndBuzz() { var __oc55, __oc56, __oc57;
+        if ((((__oc55 = window.matchMedia) === null || __oc55 === void 0 ? void 0 : __oc55.call(window, '(prefers-reduced-motion: reduce)').matches))) return;
+        try { (((__oc57 = (__oc56 = window.soundManager) === null || __oc56 === void 0 ? void 0 : __oc56.playStaticCrackle) === null || __oc57 === void 0 ? void 0 : __oc57.call(__oc56))); } catch (_) {}
         if (navigator.vibrate && (navigator.maxTouchPoints > 0 || 'ontouchstart' in window)) {
             navigator.vibrate([35, 40, 65]);
         }
@@ -1825,16 +1826,18 @@ class GameEngine {
                 window.CupidStorage.setItem('cupid_subject_compliance', '100');
                 try {
                     const saved = JSON.parse(localStorage.getItem(this.saveManager.storageKey) || 'null');
-                    return saved?.currentSceneId === this.sceneRenderer.currentSceneId;
+                    return ((saved === null || saved === void 0 ? void 0 : saved.currentSceneId)) === this.sceneRenderer.currentSceneId;
                 } catch (_) { return false; }
             },
             // onLeave runs only once the save succeeded and the crossing is really starting
             // (not when the player picks "back to the scene"). The marker is non-blocking.
-            onLeave: () => {
-                try { window.CupidRouteTelemetry?.crossing('departed', this.stateManager, this.sceneRenderer.currentSceneId); } catch (_) { /* never block the crossing */ }
-                window.soundManager?.stopBgm?.();
+            onLeave: () => { var __oc58, __oc59, __oc60;
+                try { (((__oc58 = window.CupidRouteTelemetry) === null || __oc58 === void 0 ? void 0 : __oc58.crossing('departed', this.stateManager, this.sceneRenderer.currentSceneId))); } catch (_) { /* never block the crossing */ }
+                (((__oc60 = (__oc59 = window.soundManager) === null || __oc59 === void 0 ? void 0 : __oc59.stopBgm) === null || __oc60 === void 0 ? void 0 : __oc60.call(__oc59)));
             },
-            onBack: () => this.uiManager.dialogueBox.focus?.()
+            onBack: () => { var __oc61, __oc62; return (
+((__oc62 = (__oc61 = this.uiManager.dialogueBox).focus) === null || __oc62 === void 0 ? void 0 : __oc62.call(__oc61))
+); }
         });
     }
 
@@ -1952,7 +1955,7 @@ class GameEngine {
      * ▶ 저장 데이터가 없으면?
      * 자동으로 새 게임을 시작합니다.
      */
-    async continueGame({ requireSave = false } = {}) {
+    async continueGame({ requireSave = false } = {}) { var __oc65, __oc66, __oc67;
         // 🔊 사운드 매니저 초기화
         if (typeof soundManager !== 'undefined') soundManager.init();
 
@@ -1973,15 +1976,17 @@ class GameEngine {
             // 🎬 현재 씬 ID 복원
             if (saveData.currentSceneId) this.sceneRenderer.currentSceneId = saveData.currentSceneId;
 
-            const isEncryptedStaticUrl = (value) => !!(
-                window.CupidMedia?.isProtectedPath?.(value)
+            const isEncryptedStaticUrl = (value) => { var __oc63, __oc64; return (
+!!(
+                (((__oc64 = (__oc63 = window.CupidMedia) === null || __oc63 === void 0 ? void 0 : __oc63.isProtectedPath) === null || __oc64 === void 0 ? void 0 : __oc64.call(__oc63, value)))
                 && String(value).indexOf('/api/media?') === -1
-            );
+            )
+); };
 
             // 🖼️ 배경 이미지 즉시 표시 (로딩 화면 없이)
             // 암호화 전 세이브의 정적 경로는 복호화 API로 다시 그린다.
             if (saveData.lastBgUrl && !isEncryptedStaticUrl(saveData.lastBgUrl)) {
-                const bg = window.CupidMedia?.preferWebpUrl?.(saveData.lastBgUrl) || saveData.lastBgUrl;
+                const bg = (((__oc66 = (__oc65 = window.CupidMedia) === null || __oc65 === void 0 ? void 0 : __oc65.preferWebpUrl) === null || __oc66 === void 0 ? void 0 : __oc66.call(__oc65, saveData.lastBgUrl))) || saveData.lastBgUrl;
                 this.sceneRenderer.lastBgUrl = bg;
                 this.uiManager.bgLayer.style.backgroundImage = `url(${bg})`;
             }
@@ -1995,7 +2000,7 @@ class GameEngine {
                     img.setAttribute('aria-hidden', 'true');
                     this.uiManager.charSlots[slot].innerHTML = '';
                     this.uiManager.charSlots[slot].appendChild(img);
-                    if (window.CupidMedia?.loadImageWithMediaFallback && String(src).indexOf('/api/media?') !== -1) {
+                    if ((((__oc67 = window.CupidMedia) === null || __oc67 === void 0 ? void 0 : __oc67.loadImageWithMediaFallback)) && String(src).indexOf('/api/media?') !== -1) {
                         window.CupidMedia.loadImageWithMediaFallback(img, src);
                     } else {
                         img.src = src;

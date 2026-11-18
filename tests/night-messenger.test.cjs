@@ -102,9 +102,9 @@ test('game engine routes bubbles through the messenger and lets a click skip the
     const engine = read('assets/js/modules/GameEngine.js');
     const loader = read('assets/js/loaders/game-loader.js');
     assert.match(loader, /'modules\/DialogueSystem\.js',[^\n]*\n\s*'modules\/MessengerView\.js'/);
-    assert.match(engine, /this\.messengerView\?\.isAnimating\(\)\) \{\s*this\.messengerView\.skip\(\);\s*return;/);
-    assert.match(engine, /scene\.text && this\.messengerView\?\.shouldBubble\(scene\)/);
-    assert.match(engine, /if \(!this\.messengerView\?\.isPhoneContext\(scene\)\) this\.messengerView\?\.hide\(\);/);
+    assert.match(engine, /this\.messengerView[\s\S]{0,60}isAnimating\(\)\)\)\) \{\s*this\.messengerView\.skip\(\);\s*return;/);
+    assert.match(engine, /scene\.text && [\s\S]{0,60}this\.messengerView[\s\S]{0,60}shouldBubble\(scene\)/);
+    assert.match(engine, /if \(!\([\s\S]{0,60}this\.messengerView[\s\S]{0,60}isPhoneContext\(scene\)\)\)\) [\s\S]{0,60}this\.messengerView[\s\S]{0,60}hide\(\)/);
     assert.match(read('assets/css/style.css'), /#messenger-panel \{/);
 });
 
@@ -129,5 +129,5 @@ test('trimmed day 2-3 bridge nodes are gone in every language and old saves are 
         });
     }
     assert.deepEqual(dangling, []);
-    assert.match(read('assets/js/modules/GameEngine.js'), /sceneId = this\.sceneRenderer\.resolveSceneAlias\?\.\(sceneId\) \?\? sceneId;/);
+    assert.match(read('assets/js/modules/GameEngine.js'), /sceneId = [\s\S]{0,120}this\.sceneRenderer\)\.resolveSceneAlias[\s\S]{0,200}: sceneId\)\);/);
 });

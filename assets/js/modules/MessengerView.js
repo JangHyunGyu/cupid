@@ -90,8 +90,8 @@ class MessengerView {
     }
 
     /** 패널 DOM이 처음 필요할 때 한 번만 생성 */
-    _ensurePanel() {
-        if (this.panel?.isConnected) return this.panel;
+    _ensurePanel() { var __oc0;
+        if ((((__oc0 = this.panel) === null || __oc0 === void 0 ? void 0 : __oc0.isConnected))) return this.panel;
         const container = document.getElementById('game-container') || document.body;
         const panel = document.createElement('div');
         panel.id = 'messenger-panel';
@@ -100,7 +100,9 @@ class MessengerView {
         panel.setAttribute('aria-label', this._labels().panel);
         panel.innerHTML = '<div class="messenger-header"><span class="messenger-avatar" aria-hidden="true"></span><span class="messenger-title"></span></div><div class="messenger-thread"></div>';
         // 휴대폰 화면을 눌러도 대화창 클릭과 똑같이 다음 장면으로 진행
-        panel.addEventListener('click', () => this.uiManager.dialogueBox?.click());
+        panel.addEventListener('click', () => { var __oc1; return (
+((__oc1 = this.uiManager.dialogueBox) === null || __oc1 === void 0 ? void 0 : __oc1.click())
+); });
         container.appendChild(panel);
         this.panel = panel;
         this.threadEl = panel.querySelector('.messenger-thread');
@@ -115,8 +117,8 @@ class MessengerView {
         return panel;
     }
 
-    _syncLayout() {
-        if (!this.panel?.classList.contains('is-visible')) return;
+    _syncLayout() { var __oc2, __oc3;
+        if (!(((__oc2 = this.panel) === null || __oc2 === void 0 ? void 0 : __oc2.classList.contains('is-visible')))) return;
         const container = this.panel.parentElement;
         const top = container.getBoundingClientRect().top + this.panel.offsetTop;
         const controls = [this.uiManager.dialogueBox, this.uiManager.choiceContainer]
@@ -125,7 +127,7 @@ class MessengerView {
             .filter(rect => rect.height > 0);
         const bottom = Math.min(container.getBoundingClientRect().bottom, ...controls.map(rect => rect.top));
         const available = Math.max(0, Math.floor(bottom - top - 12));
-        const choosing = this.uiManager.choiceContainer?.getBoundingClientRect().height > 0;
+        const choosing = (((__oc3 = this.uiManager.choiceContainer) === null || __oc3 === void 0 ? void 0 : __oc3.getBoundingClientRect().height)) > 0;
         this.panel.style.setProperty('--messenger-available-height', `${available}px`);
         this.panel.style.visibility = choosing && available < 64 ? 'hidden' : '';
         this._scrollToEnd();
@@ -137,14 +139,14 @@ class MessengerView {
      * 반투명(opacity < 1) 스프라이트는 기존 시나리오에서 '화면 너머 상대'를 뜻하는 표기
      * messenger:false로 통화 장면 등을 직접 제외 가능
      */
-    isPhoneContext(scene) {
+    isPhoneContext(scene) { var __oc4, __oc5;
         if (!scene || scene.messenger === false) return false;
         const speakerKey = typeof CHAR_NAME_MAP !== 'undefined' && CHAR_NAME_MAP[scene.name];
         if (speakerKey && !MESSENGER_CONTACT_KEYS.has(speakerKey)) return false;
         if (['free_talk', 'group_free_talk', 'input', 'credits'].includes(scene.type)) return false;
         if (!MESSENGER_NIGHT_FILE_PATTERN.test(scene.__sourceFile || '')) return false;
         if (scene.messenger === true) return true;
-        const opacity = scene.characters?.center?.opacity;
+        const opacity = (((__oc5 = (__oc4 = scene.characters) === null || __oc4 === void 0 ? void 0 : __oc4.center) === null || __oc5 === void 0 ? void 0 : __oc5.opacity));
         return typeof opacity === 'number' && opacity < 1;
     }
 
@@ -153,7 +155,7 @@ class MessengerView {
      * 반환: { kind: 'player' } | { kind: 'contact', key } | null(말풍선 대상 아님)
      */
     _speaker(scene) {
-        const name = String(scene?.name || '');
+        const name = String(((scene === null || scene === void 0 ? void 0 : scene.name)) || '');
         if (!name) return null;
         if (name.includes('{name}')) return { kind: 'player' };
         const key = (typeof CHAR_NAME_MAP !== 'undefined' && CHAR_NAME_MAP[name]) || null;
@@ -161,8 +163,8 @@ class MessengerView {
     }
 
     /** 대사(말풍선)와 지문(대화창)을 원문 기준으로 분리, 둘 다 {name} 치환은 출력 직전에 처리 */
-    _split(text) {
-        const segments = this.dialogueSystem?._parseNarrationSegments
+    _split(text) { var __oc6;
+        const segments = (((__oc6 = this.dialogueSystem) === null || __oc6 === void 0 ? void 0 : __oc6._parseNarrationSegments))
             ? this.dialogueSystem._parseNarrationSegments(String(text || ''))
             : [{ type: 'text', content: String(text || '') }];
         const spoken = segments.filter(seg => seg.type !== 'action').map(seg => seg.content.trim()).filter(Boolean).join(' ');
@@ -180,9 +182,9 @@ class MessengerView {
     }
 
     /** 주인공 메시지의 대화 상대: 장면 지정값 → 스프라이트 파일명 → 열린 방 순으로 추정 */
-    _inferContact(scene) {
-        if (MESSENGER_CONTACT_KEYS.has(scene?.messengerContact)) return scene.messengerContact;
-        const src = String(scene?.characters?.center?.src || scene?.character || '');
+    _inferContact(scene) { var __oc7, __oc8;
+        if (MESSENGER_CONTACT_KEYS.has(((scene === null || scene === void 0 ? void 0 : scene.messengerContact)))) return scene.messengerContact;
+        const src = String((((__oc8 = (__oc7 = scene === null || scene === void 0 ? void 0 : scene.characters) === null || __oc7 === void 0 ? void 0 : __oc7.center) === null || __oc8 === void 0 ? void 0 : __oc8.src)) || ((scene === null || scene === void 0 ? void 0 : scene.character)) || '');
         const file = src.split('/').pop() || '';
         const prefix = Object.keys(MESSENGER_SPRITE_PREFIX).find(key => file.startsWith(key));
         return prefix ? MESSENGER_SPRITE_PREFIX[prefix] : this.contactKey;
@@ -271,7 +273,7 @@ class MessengerView {
      * 반환: 대화창에 따로 출력할 지문 원문(없으면 빈 문자열)
      * 장면이 중간에 바뀌면 말풍선을 추가하지 않고 빈 문자열 반환
      */
-    async present(scene, { restoring = false, isStillCurrent = null } = {}) {
+    async present(scene, { restoring = false, isStillCurrent = null } = {}) { var __oc9, __oc10;
         this.skip();
         this._animating = false;
         const speaker = this._speaker(scene);
@@ -294,7 +296,7 @@ class MessengerView {
                 if (!stillCurrent()) return '';
             }
             this._appendRow('contact', bubbleText);
-            if (skipped) this.dialogueSystem.armAdvanceCooldown?.();
+            if (skipped) (((__oc10 = (__oc9 = this.dialogueSystem).armAdvanceCooldown) === null || __oc10 === void 0 ? void 0 : __oc10.call(__oc9)));
             return narration;
         }
 
@@ -340,8 +342,8 @@ class MessengerView {
     }
 
     /** 새 메시지 진동 효과를 휴대폰 화면에 적용 */
-    vibrate() {
-        if (!this.panel?.classList.contains('is-visible')) return false;
+    vibrate() { var __oc11;
+        if (!(((__oc11 = this.panel) === null || __oc11 === void 0 ? void 0 : __oc11.classList.contains('is-visible')))) return false;
         this.panel.classList.remove('msg-vibrate');
         void this.panel.offsetWidth;
         this.panel.classList.add('msg-vibrate');

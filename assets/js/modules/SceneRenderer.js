@@ -68,12 +68,12 @@ function toWebpUrl(url) {
  * @param {Function} onload - 로드 성공 콜백
  * @param {Function} onerror - 로드 실패 콜백
  */
-function loadImageWithFallback(img, url, onload, onerror) {
+function loadImageWithFallback(img, url, onload, onerror) { var __oc0, __oc1, __oc2, __oc3, __oc4;
     const text = String(url || '');
     const stripQuery = (u) => String(u || '').split('?')[0];
     const pathOnly = stripQuery(text).replace(/^https?:\/\/[^/]+\//, '');
-    const protectedPath = window.CupidMedia?.isProtectedPath?.(pathOnly) || window.CupidMedia?.isProtectedPath?.(text);
-    if ((text.indexOf('/api/media?') !== -1 || protectedPath) && window.CupidMedia?.loadImageWithMediaFallback) {
+    const protectedPath = (((__oc1 = (__oc0 = window.CupidMedia) === null || __oc0 === void 0 ? void 0 : __oc0.isProtectedPath) === null || __oc1 === void 0 ? void 0 : __oc1.call(__oc0, pathOnly))) || (((__oc3 = (__oc2 = window.CupidMedia) === null || __oc2 === void 0 ? void 0 : __oc2.isProtectedPath) === null || __oc3 === void 0 ? void 0 : __oc3.call(__oc2, text)));
+    if ((text.indexOf('/api/media?') !== -1 || protectedPath) && (((__oc4 = window.CupidMedia) === null || __oc4 === void 0 ? void 0 : __oc4.loadImageWithMediaFallback))) {
         const source = text.indexOf('/api/media?') !== -1 ? text : (pathOnly || text);
         window.CupidMedia.loadImageWithMediaFallback(img, source, onload, onerror);
         return;
@@ -192,21 +192,21 @@ class SceneRenderer {
      * @param {string} id - 씬 ID
      * @returns {Object|null} 씬 데이터, 없으면 null
      */
-    getScene(id) {
+    getScene(id) { var __oc5, __oc6, __oc7;
         if (!id) return null;
 
         // 1. 현재 날짜 시나리오에서 먼저 검색
-        if (SCENARIO[this.stateManager.currentDay]?.[id]) {
+        if ((((__oc5 = SCENARIO[this.stateManager.currentDay]) === null || __oc5 === void 0 ? void 0 : __oc5[id]))) {
             return this._applyI18n(SCENARIO[this.stateManager.currentDay][id], id);
         }
 
         // 2. 모든 날짜 검색 (다른 날짜의 씬으로 점프할 경우)
         for (const day in SCENARIO) {
-            if (SCENARIO[day]?.[id]) return this._applyI18n(SCENARIO[day][id], id);
+            if ((((__oc6 = SCENARIO[day]) === null || __oc6 === void 0 ? void 0 : __oc6[id]))) return this._applyI18n(SCENARIO[day][id], id);
         }
 
         // 3. 공통 시나리오(0)에서 검색 (날짜 무관한 씬들)
-        if (SCENARIO[0]?.[id]) return this._applyI18n(SCENARIO[0][id], id);
+        if ((((__oc7 = SCENARIO[0]) === null || __oc7 === void 0 ? void 0 : __oc7[id]))) return this._applyI18n(SCENARIO[0][id], id);
 
         // 4. 루트 레벨 검색 (구버전 호환)
         if (SCENARIO[id]) return this._applyI18n(SCENARIO[id], id);
@@ -244,7 +244,7 @@ class SceneRenderer {
      * @param {Object} scene - 원본 씬 데이터
      * @returns {Object} 언어 텍스트가 주입된 씬 (원본 불변)
      */
-    _applyI18n(scene, id) {
+    _applyI18n(scene, id) { var __oc8, __oc9, __oc10;
         if (!scene) return scene;
 
         const lang = window.GAME_LANG || 'ko';
@@ -253,7 +253,7 @@ class SceneRenderer {
         if (window.I18N_DATA && window.I18N_DATA[id]) {
             i18n = window.I18N_DATA[id];
         } else if (scene._i18n) {
-            i18n = scene._i18n[lang] ?? scene._i18n['en'] ?? scene._i18n['ko'] ?? {};
+            i18n = (((__oc10 = (__oc9 = (__oc8 = scene._i18n[lang]) !== null && __oc8 !== void 0 ? __oc8 : scene._i18n['en']) !== null && __oc9 !== void 0 ? __oc9 : scene._i18n['ko']) !== null && __oc10 !== void 0 ? __oc10 : {}));
         } else {
             return scene; // No text data found
         }
@@ -280,10 +280,12 @@ class SceneRenderer {
         }
 
         if (i18n.choices && Array.isArray(result.choices)) {
-            result.choices = result.choices.map((choice, idx) => ({
+            result.choices = result.choices.map((choice, idx) => { var __oc11, __oc12; return (
+({
                 ...choice,
-                text: i18n.choices[idx] ?? choice.text ?? '',
-            }));
+                text: (((__oc12 = (__oc11 = i18n.choices[idx]) !== null && __oc11 !== void 0 ? __oc11 : choice.text) !== null && __oc12 !== void 0 ? __oc12 : '')),
+            })
+); });
         }
 
         return result;
@@ -309,8 +311,8 @@ class SceneRenderer {
      * 약속/루트 플래그가 남아 있어도 관계가 기준 아래로 내려갔다면 전용 장면으로 보낸다.
      */
     resolveAffinityGuard(scene) {
-        const guard = scene?.affinityGuard;
-        if (!guard?.character || !guard?.fallback) return null;
+        const guard = ((scene === null || scene === void 0 ? void 0 : scene.affinityGuard));
+        if (!((guard === null || guard === void 0 ? void 0 : guard.character)) || !((guard === null || guard === void 0 ? void 0 : guard.fallback))) return null;
 
         const minAffinity = Number(guard.minAffinity);
         if (!Number.isFinite(minAffinity)) return null;
@@ -331,12 +333,12 @@ class SceneRenderer {
      * @param {Object} scene - 현재 씬 데이터
      * @returns {string|null} 다음 씬 ID
      */
-    resolveNextScene(scene) {
+    resolveNextScene(scene) { var __oc13, __oc14, __oc15;
         if (!scene) return null;
 
         const forcedViolation = this.stateManager.getFlag('forced_sexual_violation');
         if (scene.forcedSexualViolationResume === true) {
-            return typeof forcedViolation?.returnScene === 'string' && forcedViolation.returnScene
+            return typeof ((forcedViolation === null || forcedViolation === void 0 ? void 0 : forcedViolation.returnScene)) === 'string' && forcedViolation.returnScene
                 ? forcedViolation.returnScene
                 : null;
         }
@@ -346,7 +348,7 @@ class SceneRenderer {
             && typeof forcedViolation === 'object'
             && forcedViolation.handled !== true
             && forcedViolation.sceneId === this.currentSceneId) {
-            const violationDay = Number(forcedViolation.day ?? this.stateManager.currentDay);
+            const violationDay = Number((((__oc13 = forcedViolation.day) !== null && __oc13 !== void 0 ? __oc13 : this.stateManager.currentDay)));
             const characterId = FORCED_SEXUAL_VIOLATION_CHARACTER_IDS[forcedViolation.character];
             const aftermathRoute = Number.isInteger(violationDay)
                 && violationDay >= 1
@@ -370,7 +372,7 @@ class SceneRenderer {
 
         // 실시간 라이벌 분기: 최소 호감도를 넘긴 최고 호감도 라이벌 선택
         if (Array.isArray(scene.rankedRivalBranches) && scene.rankedRivalBranches.length > 0) {
-            const minRivalAffinity = Number(scene.minRivalAffinity ?? -100);
+            const minRivalAffinity = Number((((__oc14 = scene.minRivalAffinity) !== null && __oc14 !== void 0 ? __oc14 : -100)));
             const rankedRivals = scene.rankedRivalBranches
                 .filter(branch => branch.character && branch.next)
                 .map((branch, index) => ({
@@ -472,17 +474,17 @@ class SceneRenderer {
         // 분기 없으면 단순히 next 반환
         if (!scene.next) {
             console.error(`[SceneRenderer] next가 정의되지 않은 씬:`, scene);
-            window.reportCupidCaughtError?.(new Error(`Scene has no next: ${scene.id || scene.nodeId || 'unknown'}`), {
-                source: 'cupid-scene-renderer',
-                errorType: 'scene_next_missing',
-                sessionId: scene.id || scene.nodeId || '',
-                context: {
-                    sceneId: scene.id || scene.nodeId || '',
-                    sceneType: scene.type || '',
-                    hasChoices: Array.isArray(scene.choices) && scene.choices.length > 0,
-                    hasBranches: Array.isArray(scene.branches) && scene.branches.length > 0
-                }
-            });
+            (((__oc15 = window.reportCupidCaughtError) === null || __oc15 === void 0 ? void 0 : __oc15.call(window, new Error(`Scene has no next: ${scene.id || scene.nodeId || 'unknown'}`), {
+        source: 'cupid-scene-renderer',
+        errorType: 'scene_next_missing',
+        sessionId: scene.id || scene.nodeId || '',
+        context: {
+            sceneId: scene.id || scene.nodeId || '',
+            sceneType: scene.type || '',
+            hasChoices: Array.isArray(scene.choices) && scene.choices.length > 0,
+            hasBranches: Array.isArray(scene.branches) && scene.branches.length > 0
+        }
+    })));
         }
         return scene.next || null;
     }
@@ -494,19 +496,19 @@ class SceneRenderer {
      *
      * @param {string} bgPath - 배경 이미지 경로
      */
-    async setBackground(bgPath, { instant = false } = {}) {
+    async setBackground(bgPath, { instant = false } = {}) { var __oc16, __oc17, __oc18, __oc19, __oc20, __oc21, __oc22, __oc23;
         if (!bgPath) return;
 
         const cgFileName = bgPath.split(/[?#]/)[0].split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
         const isCG = typeof REGISTERED_CG_IDS !== 'undefined' && REGISTERED_CG_IDS.has(cgFileName);
-        const transition = this.cgTransition?.prepare(cgFileName, isCG, instant);
-        const requestId = this._backgroundRequestId = (this._backgroundRequestId ?? 0) + 1;
+        const transition = (((__oc16 = this.cgTransition) === null || __oc16 === void 0 ? void 0 : __oc16.prepare(cgFileName, isCG, instant)));
+        const requestId = this._backgroundRequestId = (((__oc17 = this._backgroundRequestId) !== null && __oc17 !== void 0 ? __oc17 : 0)) + 1;
         try {
         this.galleryManager.unlockCG(cgFileName);
-        try { await window.CupidMedia?.unlockCG?.(cgFileName); } catch (_) {}
+        try { await (((__oc19 = (__oc18 = window.CupidMedia) === null || __oc18 === void 0 ? void 0 : __oc18.unlockCG) === null || __oc19 === void 0 ? void 0 : __oc19.call(__oc18, cgFileName))); } catch (_) {}
         if (requestId !== this._backgroundRequestId) return;
 
-        const bgUrl = (window.CupidMedia?.isProtectedPath?.(bgPath))
+        const bgUrl = (((__oc21 = (__oc20 = window.CupidMedia) === null || __oc20 === void 0 ? void 0 : __oc20.isProtectedPath) === null || __oc21 === void 0 ? void 0 : __oc21.call(__oc20, bgPath)))
             ? window.CupidMedia.resolveUrl(bgPath)
             : getAssetUrl(bgPath);
         this.lastBgUrl = bgUrl;
@@ -528,7 +530,7 @@ class SceneRenderer {
         });
 
         if (requestId !== this._backgroundRequestId || !displayBgUrl) return;
-        this.cgTransition?.commit(cgFileName, isCG);
+        (((__oc22 = this.cgTransition) === null || __oc22 === void 0 ? void 0 : __oc22.commit(cgFileName, isCG)));
 
         if (transition || instant) {
             bgLayer.classList.remove('bg-crossfade', 'bg-crossfade-slow', 'bg-crossfade-long');
@@ -574,7 +576,7 @@ class SceneRenderer {
             bgLayer.style.removeProperty('--bg-next');
         }
         } finally {
-            if (transition && this.cgTransition?.active === transition) this.cgTransition.cancel();
+            if (transition && (((__oc23 = this.cgTransition) === null || __oc23 === void 0 ? void 0 : __oc23.active)) === transition) this.cgTransition.cancel();
         }
     }
 
@@ -610,7 +612,7 @@ class SceneRenderer {
      * @param {Object} scene - 씬 데이터
      * @param {string} sceneId - 씬 ID (씬 전환 체크용)
      */
-    async updateCharacters(scene, sceneId) {
+    async updateCharacters(scene, sceneId) { var __oc29, __oc30, __oc33, __oc34;
         // 캐릭터 정보가 없으면 리턴 (이전 캐릭터 유지)
         if (
             !scene.hasOwnProperty('characters')
@@ -654,21 +656,21 @@ class SceneRenderer {
         // 씬 데이터 파싱
         if (!shouldHideCharactersForCG && scene.characters) {
             // 다중 캐릭터: { left: "url", center: {src: "url", opacity: 0.5}, ... }
-            Object.entries(scene.characters).forEach(([pos, value]) => {
+            Object.entries(scene.characters).forEach(([pos, value]) => { var __oc24, __oc25, __oc26, __oc27, __oc28;
                 const posKey = pos.toLowerCase();
-                if (typeof value === 'object' && value?.src) {
+                if (typeof value === 'object' && ((value === null || value === void 0 ? void 0 : value.src))) {
                     // 객체 형태: {src, opacity}
-                    newCharMap[posKey] = (window.CupidMedia?.isProtectedPath?.(value.src) ? window.CupidMedia.resolveUrl(value.src) : getAssetUrl(value.src));
-                    charOptions[posKey] = { opacity: value.opacity ?? 1, framing: value.framing };
+                    newCharMap[posKey] = ((((__oc25 = (__oc24 = window.CupidMedia) === null || __oc24 === void 0 ? void 0 : __oc24.isProtectedPath) === null || __oc25 === void 0 ? void 0 : __oc25.call(__oc24, value.src))) ? window.CupidMedia.resolveUrl(value.src) : getAssetUrl(value.src));
+                    charOptions[posKey] = { opacity: (((__oc26 = value.opacity) !== null && __oc26 !== void 0 ? __oc26 : 1)), framing: value.framing };
                 } else {
                     // 문자열: 단순 URL
-                    newCharMap[posKey] = (window.CupidMedia?.isProtectedPath?.(value) ? window.CupidMedia.resolveUrl(value) : getAssetUrl(value));
+                    newCharMap[posKey] = ((((__oc28 = (__oc27 = window.CupidMedia) === null || __oc27 === void 0 ? void 0 : __oc27.isProtectedPath) === null || __oc28 === void 0 ? void 0 : __oc28.call(__oc27, value))) ? window.CupidMedia.resolveUrl(value) : getAssetUrl(value));
                     charOptions[posKey] = { opacity: 1 };
                 }
             });
         } else if (!shouldHideCharactersForCG && scene.character) {
             // 단일 캐릭터: 중앙에 배치
-            newCharMap['center'] = (window.CupidMedia?.isProtectedPath?.(scene.character) ? window.CupidMedia.resolveUrl(scene.character) : getAssetUrl(scene.character));
+            newCharMap['center'] = ((((__oc30 = (__oc29 = window.CupidMedia) === null || __oc29 === void 0 ? void 0 : __oc29.isProtectedPath) === null || __oc30 === void 0 ? void 0 : __oc30.call(__oc29, scene.character))) ? window.CupidMedia.resolveUrl(scene.character) : getAssetUrl(scene.character));
             charOptions['center'] = { opacity: 1 };
         }
 
@@ -687,13 +689,13 @@ class SceneRenderer {
         });
 
         const syncPresentation = () => {
-            Object.entries(this.uiManager.charSlots).forEach(([pos, slot]) => {
+            Object.entries(this.uiManager.charSlots).forEach(([pos, slot]) => { var __oc31, __oc32;
                 if (!slot) return;
                 const img = slot.querySelector('img');
                 if (!img || !newCharMap[pos] || img.dataset.rawSrc !== newCharMap[pos]) return;
                 // Reused portraits must not retain the previous AI reply's log asset.
                 img.dataset.cupidAvatarAsset = newCharMap[pos];
-                const opacity = charOptions[pos]?.opacity ?? 1;
+                const opacity = (((__oc32 = (__oc31 = charOptions[pos]) === null || __oc31 === void 0 ? void 0 : __oc31.opacity) !== null && __oc32 !== void 0 ? __oc32 : 1));
                 img.style.opacity = opacity === 1 ? '' : String(opacity);
                 img.classList.remove('char-fade-out');
                 if (scene.silhouette) img.classList.add('silhouette');
@@ -729,7 +731,7 @@ class SceneRenderer {
         // 이미지 프리로드
         // The renderer grants only expressions in the scene actually entered.
         // The shared image loader itself is read-only (also used by galleries).
-        await window.CupidMedia?.unlock?.(Object.values(newCharMap));
+        await (((__oc34 = (__oc33 = window.CupidMedia) === null || __oc33 === void 0 ? void 0 : __oc33.unlock) === null || __oc34 === void 0 ? void 0 : __oc34.call(__oc33, Object.values(newCharMap))));
         const charPromises = Object.entries(newCharMap)
             .filter(([pos]) => changedSlots.includes(pos))
             .map(([pos, charUrl]) => {
@@ -756,11 +758,11 @@ class SceneRenderer {
         if (this.currentSceneId !== sceneId || this._charUpdateId !== updateId) return;
 
         const swapPromises = [];
-        loadedChars.forEach(result => {
+        loadedChars.forEach(result => { var __oc35;
             const slot = result && this.uiManager.charSlots[result.pos];
             if (!slot) return;
             const oldImg = slot.querySelector('img');
-            if (oldImg && window.CupidMedia?.fadeExpressionImage) {
+            if (oldImg && (((__oc35 = window.CupidMedia) === null || __oc35 === void 0 ? void 0 : __oc35.fadeExpressionImage))) {
                 const commitOldImg = () => {
                     oldImg.dataset.rawSrc = result.img.dataset.rawSrc;
                     oldImg.dataset.cupidAvatarAsset = result.img.dataset.cupidAvatarAsset;
@@ -795,9 +797,9 @@ class SceneRenderer {
         if (this.currentSceneId === sceneId && this._charUpdateId === updateId) syncPresentation();
     }
 
-    syncPresentation(scene) {
+    syncPresentation(scene) { var __oc36, __oc37, __oc38, __oc39, __oc40;
         const frames = ['far', 'normal', 'close', 'intimate'];
-        const layer = document.getElementById?.('character-layer');
+        const layer = (((__oc36 = document.getElementById) === null || __oc36 === void 0 ? void 0 : __oc36.call(document, 'character-layer')));
         let count = 0;
         let intimate = false;
         for (const [pos, slot] of Object.entries(this.uiManager.charSlots)) {
@@ -807,20 +809,20 @@ class SceneRenderer {
                 slot.classList.remove('char-dimmed', 'char-focused');
                 continue;
             }
-            const requested = scene.characters?.[pos]?.framing || scene.framing || 'normal';
+            const requested = (((__oc38 = (__oc37 = scene.characters) === null || __oc37 === void 0 ? void 0 : __oc37[pos]) === null || __oc38 === void 0 ? void 0 : __oc38.framing)) || scene.framing || 'normal';
             const frame = frames.includes(requested) ? requested : 'normal';
             img.classList.remove(...frames.map(name => `char-frame-${name}`));
             img.classList.add(`char-frame-${frame}`);
             count++;
             intimate = intimate || frame === 'intimate';
         }
-        layer?.classList.toggle('multi-character-scene', count > 1);
-        layer?.classList.toggle('three-character-scene', count === 3);
-        layer?.classList.toggle('bg-depth-of-field', intimate && count > 0);
-        this.uiManager.bgLayer?.classList.toggle('bg-depth-of-field', intimate && count > 0);
+        ((layer === null || layer === void 0 ? void 0 : layer.classList.toggle('multi-character-scene', count > 1)));
+        ((layer === null || layer === void 0 ? void 0 : layer.classList.toggle('three-character-scene', count === 3)));
+        ((layer === null || layer === void 0 ? void 0 : layer.classList.toggle('bg-depth-of-field', intimate && count > 0)));
+        (((__oc39 = this.uiManager.bgLayer) === null || __oc39 === void 0 ? void 0 : __oc39.classList.toggle('bg-depth-of-field', intimate && count > 0)));
         if (count < 2) for (const slot of Object.values(this.uiManager.charSlots)) {
-            slot?.classList.remove('char-dimmed', 'char-focused');
-            slot?.querySelector('img')?.classList.remove('char-focused');
+            ((slot === null || slot === void 0 ? void 0 : slot.classList.remove('char-dimmed', 'char-focused')));
+            (((__oc40 = slot === null || slot === void 0 ? void 0 : slot.querySelector('img')) === null || __oc40 === void 0 ? void 0 : __oc40.classList.remove('char-focused')));
         }
     }
     // ============================================================================================
@@ -852,13 +854,13 @@ class SceneRenderer {
      * 씬의 플래그/날짜 변경 처리
      * @param {Object} scene - 씬 데이터
      */
-    processSceneFlags(scene) {
+    processSceneFlags(scene) { var __oc41, __oc42;
         // 플래그 초기화 (false로 설정)
-        if (scene.clearFlags?.length) scene.clearFlags.forEach(flag => this.stateManager.setFlag(flag, false));
+        if ((((__oc41 = scene.clearFlags) === null || __oc41 === void 0 ? void 0 : __oc41.length))) scene.clearFlags.forEach(flag => this.stateManager.setFlag(flag, false));
         // 단일 플래그 설정
         if (scene.setFlag) this.stateManager.setFlag(scene.setFlag);
         // 복수 플래그 설정
-        if (scene.setFlags?.length) scene.setFlags.forEach(flag => this.stateManager.setFlag(flag));
+        if ((((__oc42 = scene.setFlags) === null || __oc42 === void 0 ? void 0 : __oc42.length))) scene.setFlags.forEach(flag => this.stateManager.setFlag(flag));
         // 날짜 변경
         if (scene.changeDay) this.stateManager.setDay(scene.changeDay);
     }
@@ -867,9 +869,9 @@ class SceneRenderer {
      * 씬의 스탯(호감도) 변화 처리
      * @param {Object} scene - 씬 데이터
      */
-    processSceneStats(scene) {
+    processSceneStats(scene) { var __oc43, __oc44;
         const live = this.getScene(this.currentSceneId);
-        if (!live?.stats || window.CupidAffinityGate?.commitKey() !== `scene:${this.currentSceneId}`) return;
+        if (!((live === null || live === void 0 ? void 0 : live.stats)) || (((__oc43 = window.CupidAffinityGate) === null || __oc43 === void 0 ? void 0 : __oc43.commitKey())) !== `scene:${this.currentSceneId}`) return;
         if (scene && scene !== live && JSON.stringify(scene.stats || {}) !== JSON.stringify(live.stats)) return;
 
         // { Seoyeon: { affinity: 10 }, ... } 또는 { Seoyeon: 10, ... } 형태 모두 지원
@@ -877,8 +879,8 @@ class SceneRenderer {
         const changes = [];
         for (const [char, stats] of Object.entries(live.stats)) {
             const charKey = this.charNameMap[char] || char;
-            const affinityChange = typeof stats === 'number' ? stats : stats?.affinity;
-            if (affinityChange && this.stateManager.stats[charKey] && window.CupidAffinityGate?.grant(charKey, affinityChange)) {
+            const affinityChange = typeof stats === 'number' ? stats : ((stats === null || stats === void 0 ? void 0 : stats.affinity));
+            if (affinityChange && this.stateManager.stats[charKey] && (((__oc44 = window.CupidAffinityGate) === null || __oc44 === void 0 ? void 0 : __oc44.grant(charKey, affinityChange)))) {
                 const newValue = this.stateManager.changeAffinity(charKey, affinityChange);
                 this.galleryManager.updateMaxAffinity(charKey, newValue);
                 this.galleryManager.checkAffinityUnlock(charKey, newValue);
@@ -901,7 +903,7 @@ class SceneRenderer {
         // 현재 표시된 캐릭터들 수집
         const currentCharacters = {};
         for (const [slot, el] of Object.entries(this.uiManager.charSlots)) {
-            const img = el?.querySelector('img');
+            const img = ((el === null || el === void 0 ? void 0 : el.querySelector('img')));
             if (img && img.src) currentCharacters[slot] = img.src;
         }
 

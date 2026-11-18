@@ -146,11 +146,11 @@ class FreeTalkSystem {
         return messages[lang] || messages[lang.slice(0, 2)] || messages.ko;
     }
 
-    _showThinkingMessage(characterName) {
-        const messageEl = this.uiManager?.messageEl;
+    _showThinkingMessage(characterName) { var __oc0, __oc1, __oc2;
+        const messageEl = (((__oc0 = this.uiManager) === null || __oc0 === void 0 ? void 0 : __oc0.messageEl));
         if (!messageEl) return;
 
-        this.uiManager.updateNameTag?.(characterName);
+        (((__oc2 = (__oc1 = this.uiManager).updateNameTag) === null || __oc2 === void 0 ? void 0 : __oc2.call(__oc1, characterName)));
         messageEl.innerHTML = '';
 
         const wrapper = document.createElement('div');
@@ -176,12 +176,12 @@ class FreeTalkSystem {
         messageEl.scrollTop = messageEl.scrollHeight;
     }
 
-    _clearThinkingMessage() {
-        this.uiManager?.messageEl?.querySelectorAll('.ai-thinking-message').forEach(el => el.remove());
+    _clearThinkingMessage() { var __oc3, __oc4;
+        (((__oc4 = (__oc3 = this.uiManager) === null || __oc3 === void 0 ? void 0 : __oc3.messageEl) === null || __oc4 === void 0 ? void 0 : __oc4.querySelectorAll('.ai-thinking-message').forEach(el => el.remove())));
     }
 
-    _buildGroupConversationMemoryContext(charName, lang = 'ko') {
-        const memories = this.stateManager.getGroupConversationMemories?.(charName) || [];
+    _buildGroupConversationMemoryContext(charName, lang = 'ko') { var __oc5, __oc6;
+        const memories = (((__oc6 = (__oc5 = this.stateManager).getGroupConversationMemories) === null || __oc6 === void 0 ? void 0 : __oc6.call(__oc5, charName))) || [];
         if (memories.length === 0) return '';
 
         const language = String(lang || 'ko').toLowerCase().split('-')[0];
@@ -324,8 +324,8 @@ class FreeTalkSystem {
         const sections = [];
         if (memories.length > 0) {
             const header = { es: "\n\n[Eventos y Recuerdos Recientes]:\n", ja: "\n\n[直近の出来事と記憶]\n", en: "\n\n[Recent Events & Memories]:\n", fr: "\n\n[Événements et souvenirs récents] :\n", de: "\n\n[Aktuelle Ereignisse & Erinnerungen]:\n", pt: "\n\n[Eventos e Memórias Recentes]:\n", zh: "\n\n[最近发生的事和记忆]:\n" }[lang] || "\n\n[최근 사건과 기억]\n";
-            sections.push(header + memories.map(m => {
-                const memory = m.variants?.find(variant => this.stateManager.getFlag(variant.condition)) || m;
+            sections.push(header + memories.map(m => { var __oc7;
+                const memory = (((__oc7 = m.variants) === null || __oc7 === void 0 ? void 0 : __oc7.find(variant => this.stateManager.getFlag(variant.condition)))) || m;
                 let text = memory[lang] || memory.ko || memory.en;
                 return `- ${text.replace(/{name}/g, this.stateManager.playerName)}`;
             }).join("\n"));
@@ -362,29 +362,29 @@ class FreeTalkSystem {
      * @param {Object} scene - 씬 데이터
      * @param {string} sceneId - 씬 ID
      */
-    _getFreeTalkCheckpoint(scene, sceneId, history = []) {
-        const protectedCheckpoint = window.CupidProgressIntegrity?.checkpoint(this.stateManager, sceneId);
+    _getFreeTalkCheckpoint(scene, sceneId, history = []) { var __oc8, __oc9, __oc10, __oc11, __oc12, __oc13, __oc14, __oc15;
+        const protectedCheckpoint = (((__oc8 = window.CupidProgressIntegrity) === null || __oc8 === void 0 ? void 0 : __oc8.checkpoint(this.stateManager, sceneId)));
         const saved = protectedCheckpoint || this.stateManager.freeTalkCheckpoint;
-        if (this.stateManager.getFlag?.(`messaged_${sceneId}`)) {
-            return { ...(saved?.sceneId === sceneId ? saved : {}), sceneId, turns: scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS, completed: true };
+        if ((((__oc10 = (__oc9 = this.stateManager).getFlag) === null || __oc10 === void 0 ? void 0 : __oc10.call(__oc9, `messaged_${sceneId}`)))) {
+            return { ...(((saved === null || saved === void 0 ? void 0 : saved.sceneId)) === sceneId ? saved : {}), sceneId, turns: scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS, completed: true };
         }
-        if (saved?.sceneId === sceneId) return saved;
+        if (((saved === null || saved === void 0 ? void 0 : saved.sceneId)) === sceneId) return saved;
         const maxTurns = scene.maxTurns || DEFAULT_MAX_FREE_TALK_TURNS;
         if (scene.type === 'group_free_talk') {
             const turns = (this.stateManager.groupConversationMemories || []).filter(turn => turn.sessionId === sceneId);
             if (turns.length) {
                 const lastTurn = turns.at(-1);
-                const completed = this.stateManager.getFlag?.(`messaged_${sceneId}`);
+                const completed = (((__oc12 = (__oc11 = this.stateManager).getFlag) === null || __oc12 === void 0 ? void 0 : __oc12.call(__oc11, `messaged_${sceneId}`)));
                 const roles = scene.groupParticipants === 'counteroffer_confrontation' ? ['lead', 'tempter'] : ['focus', 'companion'];
                 return {
                     sceneId,
                     turns: completed ? maxTurns : Math.min(maxTurns, turns.length),
                     participants: lastTurn.participants.map((id, index) => ({ id, role: roles[index], side: index === 0 ? 'left' : 'right' })),
-                    lastReply: lastTurn.assistantMessages?.at(-1)
+                    lastReply: (((__oc13 = lastTurn.assistantMessages) === null || __oc13 === void 0 ? void 0 : __oc13.at(-1)))
                 };
             }
         }
-        if (this.stateManager.getFlag?.(`messaged_${sceneId}`)) {
+        if ((((__oc15 = (__oc14 = this.stateManager).getFlag) === null || __oc15 === void 0 ? void 0 : __oc15.call(__oc14, `messaged_${sceneId}`)))) {
             return { sceneId, turns: maxTurns, completed: true };
         }
         // Older saves have the opening and replies but no explicit turn checkpoint.
@@ -404,28 +404,32 @@ class FreeTalkSystem {
             turns: this.freeTalkTurns,
             completed,
             participants: this.isGroupMode ? this.groupParticipants.map(participant => ({ ...participant })) : [],
-            lastReply: lastReply || (previous?.sceneId === this.currentSceneId ? previous.lastReply : null)
+            lastReply: lastReply || (((previous === null || previous === void 0 ? void 0 : previous.sceneId)) === this.currentSceneId ? previous.lastReply : null)
         };
         if (completed) this.stateManager.setFlag(`messaged_${this.currentSceneId}`);
     }
 
-    _getTemptationPrecedingHistory(charKey) {
+    _getTemptationPrecedingHistory(charKey) { var __oc16, __oc17;
         const sceneId = {
             Seoyeon: 'day4_temptation_seoyeon_freetalk',
             Yuna: 'day4_temptation_yuna_freetalk',
             Dain: 'day4_temptation_dain_freetalk'
         }[charKey];
         if (!sceneId) return '';
-        return String(window.I18N_DATA?.[sceneId]?.precedingHistory || '').trim();
+        return String((((__oc17 = (__oc16 = window.I18N_DATA) === null || __oc16 === void 0 ? void 0 : __oc16[sceneId]) === null || __oc17 === void 0 ? void 0 : __oc17.precedingHistory)) || '').trim();
     }
 
     _withTemptationSceneHistory(history, scene) {
-        const seed = String(scene?.precedingHistory || '').trim();
-        if (!seed || scene?.romanticInterlude !== true) {
+        const seed = String(((scene === null || scene === void 0 ? void 0 : scene.precedingHistory)) || '').trim();
+        if (!seed || ((scene === null || scene === void 0 ? void 0 : scene.romanticInterlude)) !== true) {
             return Array.isArray(history) ? history.slice() : [];
         }
-        const list = (Array.isArray(history) ? history : []).filter(message => message?.role !== 'system');
-        if (list.some(message => message?.content === seed)) return list;
+        const list = (Array.isArray(history) ? history : []).filter(message => { return (
+((message === null || message === void 0 ? void 0 : message.role)) !== 'system'
+); });
+        if (list.some(message => { return (
+((message === null || message === void 0 ? void 0 : message.content)) === seed
+); })) return list;
         const seedMessage = { role: 'user', content: seed };
         const openingIndex = scene.text
             ? list.findIndex(message => message.role === 'assistant' && message.content === scene.text)
@@ -436,9 +440,9 @@ class FreeTalkSystem {
         return [seedMessage, ...list];
     }
 
-    _buildTemptationNightMemoryBlock(tempterId, lang = 'ko') {
+    _buildTemptationNightMemoryBlock(tempterId, lang = 'ko') { var __oc18, __oc19;
         const character = this.charNameMap[tempterId] || tempterId;
-        if (!this.stateManager.getFlag?.(`day4_took_${String(character || '').toLowerCase()}_counteroffer`)) {
+        if (!(((__oc19 = (__oc18 = this.stateManager).getFlag) === null || __oc19 === void 0 ? void 0 : __oc19.call(__oc18, `day4_took_${String(character || '').toLowerCase()}_counteroffer`)))) {
             return '';
         }
         const seed = this._getTemptationPrecedingHistory(character, lang);
@@ -482,7 +486,7 @@ class FreeTalkSystem {
         return `${localized.header}\n${seed}\n${localized.guard}`;
     }
 
-    _getSceneDialoguePolicy(scene, sceneId = this.currentSceneId) {
+    _getSceneDialoguePolicy(scene, sceneId = this.currentSceneId) { var __oc20, __oc21;
         const character = this.charNameMap[scene.name] || scene.name;
         const targets = {
             day4_temptation_seoyeon_freetalk: 'Seoyeon',
@@ -494,7 +498,7 @@ class FreeTalkSystem {
             && scene.affinityLocked === false && scene.maxTurns === 5;
         const actualAffinity = this.stateManager.getAffinity
             ? this.stateManager.getAffinity(character)
-            : (this.stateManager.stats?.[character]?.affinity || 0);
+            : ((((__oc21 = (__oc20 = this.stateManager.stats) === null || __oc20 === void 0 ? void 0 : __oc20[character]) === null || __oc21 === void 0 ? void 0 : __oc21.affinity)) || 0);
         return { romanticInterlude, actualAffinity, affinity: romanticInterlude ? 100 : actualAffinity };
     }
 
@@ -588,13 +592,17 @@ class FreeTalkSystem {
                 pt: "a outra pessoa",
                 zh: "对方"
             };
-        const getFlag = flag => this.stateManager.getFlag?.(flag);
+        const getFlag = flag => { var __oc22, __oc23; return (
+((__oc23 = (__oc22 = this.stateManager).getFlag) === null || __oc23 === void 0 ? void 0 : __oc23.call(__oc22, flag))
+); };
         const cheered = !!getFlag('haeun_cheer_seen');
         const routeChosen = !!getFlag('haeun_route_selected') || !!getFlag('haeun_switch_declared');
         const rivalId = (typeof getFlag('day5_haeun_route_rival') === 'string' && getFlag('day5_haeun_route_rival'))
             || (typeof getFlag('day5_haeun_rival') === 'string' && getFlag('day5_haeun_rival')) || '';
-        const focus = Array.isArray(scene?.groupParticipants) ? scene.groupParticipants.find(item => item?.role === 'focus' && item.id !== 'Haeun') : null;
-        const rivalName = focus?.id ? this._getLocalizedGroupCharacterName(focus.id, language) : rivalId ? this._getLocalizedGroupCharacterName(rivalId, language) : pick(GENERIC_OTHER);
+        const focus = Array.isArray(((scene === null || scene === void 0 ? void 0 : scene.groupParticipants))) ? scene.groupParticipants.find(item => { return (
+((item === null || item === void 0 ? void 0 : item.role)) === 'focus' && item.id !== 'Haeun'
+); }) : null;
+        const rivalName = ((focus === null || focus === void 0 ? void 0 : focus.id)) ? this._getLocalizedGroupCharacterName(focus.id, language) : rivalId ? this._getLocalizedGroupCharacterName(rivalId, language) : pick(GENERIC_OTHER);
         const stageBySceneId = {
             haeun_freetalk: 'cheer',
             day4_haeun_personal: cheered ? 'notice' : '',
@@ -602,23 +610,25 @@ class FreeTalkSystem {
             day5_haeun_private_1: routeChosen ? 'guilt' : '',
             day5_haeun_private_2: routeChosen ? 'decide' : ''
         };
-        const stage = stageBySceneId[sceneId] || (scene?.groupMode === 'haeun_switch' ? 'guilt' : scene?.groupMode === 'haeun_misunderstanding' ? 'misunderstanding' : '');
+        const stage = stageBySceneId[sceneId] || (((scene === null || scene === void 0 ? void 0 : scene.groupMode)) === 'haeun_switch' ? 'guilt' : ((scene === null || scene === void 0 ? void 0 : scene.groupMode)) === 'haeun_misunderstanding' ? 'misunderstanding' : '');
         const parts = [];
         if (stage && STAGES[stage]) parts.push(pick(STAGES[stage]).replace(/\{R\}/g, rivalName));
         // 하은이 말하는 모든 장면(자유 대화·그룹 대화·스위치 그룹·private_1/2)에 같은 호감도 기준을 붙인다.
         // 엔딩 후 대화처럼 점수가 잠긴 장면에는 붙이지 않는다.
         const HAEUN_FREE_TALK_IDS = ['haeun_freetalk', 'day4_haeun_personal', 'day5_haeun_personal', 'day5_haeun_private_1', 'day5_haeun_private_2'];
         const speakerKey = scene ? ((this.charNameMap && this.charNameMap[scene.name]) || scene.name) : '';
-        const haeunSpeaks = scene?.type === 'group_free_talk'
-            ? Array.isArray(scene.groupParticipants) && scene.groupParticipants.some(item => item?.id === 'Haeun')
+        const haeunSpeaks = ((scene === null || scene === void 0 ? void 0 : scene.type)) === 'group_free_talk'
+            ? Array.isArray(scene.groupParticipants) && scene.groupParticipants.some(item => { return (
+((item === null || item === void 0 ? void 0 : item.id)) === 'Haeun'
+); })
             : (HAEUN_FREE_TALK_IDS.includes(sceneId) || speakerKey === 'Haeun');
-        const anchored = haeunSpeaks && scene?.affinityLocked !== true
-            && (scene?.type === 'free_talk' || scene?.type === 'group_free_talk');
+        const anchored = haeunSpeaks && ((scene === null || scene === void 0 ? void 0 : scene.affinityLocked)) !== true
+            && (((scene === null || scene === void 0 ? void 0 : scene.type)) === 'free_talk' || ((scene === null || scene === void 0 ? void 0 : scene.type)) === 'group_free_talk');
         if (anchored) parts.push(pick(ANCHOR));
         return parts.join(' ');
     }
 
-    async startFreeTalk(scene, sceneId) {
+    async startFreeTalk(scene, sceneId) { var __oc24, __oc25, __oc26, __oc27;
         if (window.ensureCupidFreeTalkRuntime && !window.CupidFreeTalkPromptsReady) {
             const epoch = this._freeTalkEpoch;
             await window.ensureCupidFreeTalkRuntime();
@@ -628,7 +638,7 @@ class FreeTalkSystem {
             && !this.stateManager.getFlag('haeun_switch_declared')) {
             scene = { ...scene, maxTurns: scene.legacyHaeunMaxTurns };
         }
-        if (scene?.type === 'group_free_talk') {
+        if (((scene === null || scene === void 0 ? void 0 : scene.type)) === 'group_free_talk') {
             return this.startGroupFreeTalk(scene, sceneId);
         }
         // 이미 프리토킹 중이면 무시 (중복 호출 방지)
@@ -665,7 +675,7 @@ class FreeTalkSystem {
         );
         if (scene.precedingHistory) this.stateManager.setChatMemory(charKey, this.freeTalkHistory);
         const checkpoint = this._getFreeTalkCheckpoint(scene, sceneId, this.freeTalkHistory);
-        this.freeTalkTurns = Math.min(this.currentMaxTurns, checkpoint?.turns || 0);
+        this.freeTalkTurns = Math.min(this.currentMaxTurns, ((checkpoint === null || checkpoint === void 0 ? void 0 : checkpoint.turns)) || 0);
 
         // 🔍 현재 배경 이미지로 장소 유추
         const locNames = {
@@ -855,13 +865,13 @@ class FreeTalkSystem {
         // ─────────────────────────────────────────────────────────────
         // 캐릭터가 먼저 말을 거는 상황 (예: "안녕! 무슨 일이야?")
         // → 타이핑 효과로 표시하고, AI 대화 기록에도 추가
-        const displayReply = checkpoint?.lastReply;
-        if (displayReply?.content || scene.text) {
-            if (!displayReply?.content) window.recordCupidVisibleChat?.({ charId: charKey,
-                role: 'assistant', content: scene.text, sessionId: sceneId,
-                conversationDay: this.stateManager.currentDay, logSource: 'opening',
-                ...(window.getCupidPortraitLogFields?.(this.uiManager.charSlots?.center?.querySelector('img'), charKey, scene?.character) || {}) });
-            await this.dialogueSystem.typeText(displayReply?.content || scene.text, displayReply?.speakerName || scene.name, displayReply?.segments || null, () => (
+        const displayReply = ((checkpoint === null || checkpoint === void 0 ? void 0 : checkpoint.lastReply));
+        if (((displayReply === null || displayReply === void 0 ? void 0 : displayReply.content)) || scene.text) {
+            if (!((displayReply === null || displayReply === void 0 ? void 0 : displayReply.content))) (((__oc24 = window.recordCupidVisibleChat) === null || __oc24 === void 0 ? void 0 : __oc24.call(window, { charId: charKey,
+        role: 'assistant', content: scene.text, sessionId: sceneId,
+        conversationDay: this.stateManager.currentDay, logSource: 'opening',
+        ...(((__oc25 = window.getCupidPortraitLogFields) === null || __oc25 === void 0 ? void 0 : __oc25.call(window, (__oc27 = (__oc26 = this.uiManager.charSlots) === null || __oc26 === void 0 ? void 0 : __oc26.center) === null || __oc27 === void 0 ? void 0 : __oc27.querySelector('img'), charKey, scene === null || scene === void 0 ? void 0 : scene.character)) || {}) })));
+            await this.dialogueSystem.typeText(((displayReply === null || displayReply === void 0 ? void 0 : displayReply.content)) || scene.text, ((displayReply === null || displayReply === void 0 ? void 0 : displayReply.speakerName)) || scene.name, ((displayReply === null || displayReply === void 0 ? void 0 : displayReply.segments)) || null, () => (
                 this._freeTalkEpoch === startEpoch
                 && this.currentSceneId === sceneId
                 && this.currentCharKey === charKey
@@ -895,7 +905,7 @@ class FreeTalkSystem {
         }
     }
 
-    _getLocalizedGroupCharacterName(charId, lang = 'ko') {
+    _getLocalizedGroupCharacterName(charId, lang = 'ko') { var __oc28, __oc29;
         const names = {
             Seoyeon: { ko: '서연', en: 'Seoyeon', es: 'Seoyeon', ja: 'ソヨン', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon', zh: '书妍' },
             Yuna: { ko: '유나', en: 'Yuna', es: 'Yuna', ja: 'ユナ', fr: 'Yuna', de: 'Yuna', pt: 'Yuna', zh: '由娜' },
@@ -905,11 +915,13 @@ class FreeTalkSystem {
             Haeun: { ko: '하은', en: 'Haeun', es: 'Haeun', ja: 'ハウン', fr: 'Haeun', de: 'Haeun', pt: 'Haeun', zh: '夏恩' }
         };
         const language = String(lang || 'ko').toLowerCase().split('-')[0];
-        return names[charId]?.[language] || names[charId]?.ko || charId;
+        return (((__oc28 = names[charId]) === null || __oc28 === void 0 ? void 0 : __oc28[language])) || (((__oc29 = names[charId]) === null || __oc29 === void 0 ? void 0 : __oc29.ko)) || charId;
     }
 
     _resolveCounterofferGroupParticipants(lang = 'ko') {
-        const getFlag = flag => this.stateManager.getFlag?.(flag);
+        const getFlag = flag => { var __oc30, __oc31; return (
+((__oc31 = (__oc30 = this.stateManager).getFlag) === null || __oc31 === void 0 ? void 0 : __oc31.call(__oc30, flag))
+); };
         let leadId = '';
         if (getFlag('day4_counteroffer_target_teacher')) leadId = 'Teacher';
         else if (getFlag('day4_counteroffer_target_nurse')) leadId = 'Nurse';
@@ -929,11 +941,11 @@ class FreeTalkSystem {
         ];
     }
 
-    _resolveGroupParticipants(scene, lang = 'ko') {
-        if (scene?.groupParticipants === 'counteroffer_confrontation') {
+    _resolveGroupParticipants(scene, lang = 'ko') { var __oc32, __oc39;
+        if (((scene === null || scene === void 0 ? void 0 : scene.groupParticipants)) === 'counteroffer_confrontation') {
             return this._resolveCounterofferGroupParticipants(lang);
         }
-        if (scene?.groupParticipants?.strategy === 'focus_with_highest_other_affinity') {
+        if ((((__oc32 = scene === null || scene === void 0 ? void 0 : scene.groupParticipants) === null || __oc32 === void 0 ? void 0 : __oc32.strategy)) === 'focus_with_highest_other_affinity') {
             const knownIds = ['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse'];
             const focusId = String(scene.groupParticipants.focus || '').trim();
             if (!knownIds.includes(focusId)) return [];
@@ -945,15 +957,13 @@ class FreeTalkSystem {
                 ...requestedPriority,
                 ...knownIds.filter(id => id !== focusId)
             ])];
-            const affinityOf = id => {
-                const value = Number(this.stateManager.getAffinity?.(id)
-                    ?? this.stateManager.stats?.[id]?.affinity
-                    ?? 0);
+            const affinityOf = id => { var __oc33, __oc34, __oc35, __oc36, __oc37, __oc38;
+                const value = Number((((__oc38 = (__oc35 = (__oc34 = (__oc33 = this.stateManager).getAffinity) === null || __oc34 === void 0 ? void 0 : __oc34.call(__oc33, id)) !== null && __oc35 !== void 0 ? __oc35 : (__oc37 = (__oc36 = this.stateManager.stats) === null || __oc36 === void 0 ? void 0 : __oc36[id]) === null || __oc37 === void 0 ? void 0 : __oc37.affinity) !== null && __oc38 !== void 0 ? __oc38 : 0)));
                 return Number.isFinite(value) ? value : 0;
             };
-            const companionId = tiePriority
-                .map((id, priority) => ({ id, priority, affinity: affinityOf(id) }))
-                .sort((left, right) => right.affinity - left.affinity || left.priority - right.priority)[0]?.id;
+            const companionId = (((__oc39 = tiePriority
+        .map((id, priority) => ({ id, priority, affinity: affinityOf(id) }))
+        .sort((left, right) => right.affinity - left.affinity || left.priority - right.priority)[0]) === null || __oc39 === void 0 ? void 0 : __oc39.id));
             if (!companionId) return [];
 
             return [
@@ -973,18 +983,18 @@ class FreeTalkSystem {
                 }
             ];
         }
-        if (!Array.isArray(scene?.groupParticipants)) return [];
+        if (!Array.isArray(((scene === null || scene === void 0 ? void 0 : scene.groupParticipants)))) return [];
 
         const knownIds = new Set(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse', 'Haeun']);
         const participants = scene.groupParticipants.slice(0, 2).map((participant, index) => {
-            const id = String(participant?.id || '').trim();
+            const id = String(((participant === null || participant === void 0 ? void 0 : participant.id)) || '').trim();
             if (!knownIds.has(id)) return null;
             return {
                 id,
                 name: this._getLocalizedGroupCharacterName(id, lang),
-                role: participant?.role || (index === 0 ? 'focus' : 'companion'),
-                side: participant?.side === 'right' ? 'right' : (participant?.side === 'left' ? 'left' : (index === 0 ? 'left' : 'right')),
-                initialExpression: String(participant?.initialExpression || 'normal').toLowerCase()
+                role: ((participant === null || participant === void 0 ? void 0 : participant.role)) || (index === 0 ? 'focus' : 'companion'),
+                side: ((participant === null || participant === void 0 ? void 0 : participant.side)) === 'right' ? 'right' : (((participant === null || participant === void 0 ? void 0 : participant.side)) === 'left' ? 'left' : (index === 0 ? 'left' : 'right')),
+                initialExpression: String(((participant === null || participant === void 0 ? void 0 : participant.initialExpression)) || 'normal').toLowerCase()
             };
         }).filter(Boolean);
 
@@ -996,19 +1006,19 @@ class FreeTalkSystem {
         return participants;
     }
 
-    _getGroupChoiceState(scene, lang = 'ko') {
-        if (['haeun_misunderstanding', 'haeun_reputation'].includes(scene?.groupMode)) {
-            const key = this.stateManager.getFlag?.(scene.groupChoiceFlag || 'day5_haeun_delayed_explanation') ? 'delay' : 'open';
-            return scene.groupChoiceState?.[key] || '';
+    _getGroupChoiceState(scene, lang = 'ko') { var __oc40, __oc41, __oc42, __oc43, __oc44, __oc45, __oc46, __oc47, __oc48, __oc49, __oc50;
+        if (['haeun_misunderstanding', 'haeun_reputation'].includes(((scene === null || scene === void 0 ? void 0 : scene.groupMode)))) {
+            const key = (((__oc41 = (__oc40 = this.stateManager).getFlag) === null || __oc41 === void 0 ? void 0 : __oc41.call(__oc40, scene.groupChoiceFlag || 'day5_haeun_delayed_explanation'))) ? 'delay' : 'open';
+            return (((__oc42 = scene.groupChoiceState) === null || __oc42 === void 0 ? void 0 : __oc42[key])) || '';
         }
-        if (scene?.groupChoiceState) return scene.groupChoiceState;
-        const lied = this.stateManager.getFlag?.('day5_lied_about_counteroffer');
+        if (((scene === null || scene === void 0 ? void 0 : scene.groupChoiceState))) return scene.groupChoiceState;
+        const lied = (((__oc44 = (__oc43 = this.stateManager).getFlag) === null || __oc44 === void 0 ? void 0 : __oc44.call(__oc43, 'day5_lied_about_counteroffer')));
         const states = lied
             ? { ko: '알림을 보고도 별일 아니라고 다시 거짓말했다', en: 'he lied again and dismissed the notification', es: 'volvió a mentir y restó importancia a la notificación', ja: '通知を見られても、たいしたことではないと再び嘘をついた', fr: 'il a de nouveau menti en minimisant la notification', de: 'er hat erneut gelogen und die Nachricht heruntergespielt', pt: 'ele mentiu de novo e tentou minimizar a notificação', zh: '看到了通知，却又撒谎说没什么大不了' }
             : { ko: '숨기지 않고 어젯밤 일을 털어놓았다', en: 'he admitted what happened last night without hiding it', es: 'contó sin ocultarlo lo que ocurrió la noche anterior', ja: '昨夜のことを隠さず打ち明けた', fr: 'il a raconté sans rien cacher ce qui s’était passé la veille', de: 'er hat ohne Ausflüchte erzählt, was in der Nacht geschehen ist', pt: 'ele contou sem esconder o que aconteceu na noite anterior', zh: '毫不隐瞒地说出了昨晚的事' };
         const language = String(lang || 'ko').toLowerCase().split('-')[0];
         const preceding = states[language] || states.en;
-        if (scene?.groupParticipants !== 'counteroffer_confrontation') return preceding;
+        if (((scene === null || scene === void 0 ? void 0 : scene.groupParticipants)) !== 'counteroffer_confrontation') return preceding;
         const history = {
             "ko": [
                 "3일차에 학생들에게 중복 약속이 발각됐다. 그 학생들은 이번 설명을 더 의심할 수 있다. 교직원이 그 일까지 안다고 단정하지 않는다. 이미 반영한 감점을 반복하지 않는다.",
@@ -1053,13 +1063,13 @@ class FreeTalkSystem {
         };
         const notes = history[language] || history.en;
         const parts = [preceding];
-        if (this.stateManager.getFlag?.('day3_caught_multiple_dates')) parts.push(notes[0]);
-        if (this.stateManager.getFlag?.('harem_seed')) parts.push(notes[1]);
-        if (!this.stateManager.getFlag?.('day4_confession_accepted')) parts.push(notes[2]);
+        if ((((__oc46 = (__oc45 = this.stateManager).getFlag) === null || __oc46 === void 0 ? void 0 : __oc46.call(__oc45, 'day3_caught_multiple_dates')))) parts.push(notes[0]);
+        if ((((__oc48 = (__oc47 = this.stateManager).getFlag) === null || __oc48 === void 0 ? void 0 : __oc48.call(__oc47, 'harem_seed')))) parts.push(notes[1]);
+        if (!(((__oc50 = (__oc49 = this.stateManager).getFlag) === null || __oc50 === void 0 ? void 0 : __oc50.call(__oc49, 'day4_confession_accepted')))) parts.push(notes[2]);
         return parts.join('\n');
     }
 
-    _setGroupStandingCharacters(participants = []) {
+    _setGroupStandingCharacters(participants = []) { var __oc51, __oc52, __oc53, __oc54, __oc55, __oc56, __oc57;
         const fallbackImages = {
             Seoyeon: 'assets/images/characters/seyoun_sad.png',
             Yuna: 'assets/images/characters/yuna_sad.png',
@@ -1067,7 +1077,7 @@ class FreeTalkSystem {
             Teacher: 'assets/images/characters/teacher_sad.png',
             Nurse: 'assets/images/characters/nurse_worried.png'
         };
-        const slots = this.uiManager?.charSlots || {};
+        const slots = (((__oc51 = this.uiManager) === null || __oc51 === void 0 ? void 0 : __oc51.charSlots)) || {};
         for (const [side, slot] of Object.entries(slots)) {
             if (!slot) continue;
             slot.replaceChildren();
@@ -1076,7 +1086,7 @@ class FreeTalkSystem {
             if (side === 'center') continue;
             const participant = participants.find(item => item.side === side);
             if (!participant) continue;
-            const expressions = window.CHARACTER_EXPRESSIONS?.[participant.id] || {};
+            const expressions = (((__oc52 = window.CHARACTER_EXPRESSIONS) === null || __oc52 === void 0 ? void 0 : __oc52[participant.id])) || {};
             const rawSrc = expressions[participant.initialExpression]
                 || expressions.normal
                 || fallbackImages[participant.id];
@@ -1089,35 +1099,35 @@ class FreeTalkSystem {
             slot.appendChild(img);
             this._loadCupidProtectedImage(img, rawSrc);
         }
-        document.getElementById('character-layer')?.classList.add('group-freetalk-mode');
-        this.uiManager?.dialogueBox?.classList.add('group-freetalk-dialogue');
-        this.uiManager?.chatContainer?.classList.add('group-freetalk-mode');
+        (((__oc53 = document.getElementById('character-layer')) === null || __oc53 === void 0 ? void 0 : __oc53.classList.add('group-freetalk-mode')));
+        (((__oc55 = (__oc54 = this.uiManager) === null || __oc54 === void 0 ? void 0 : __oc54.dialogueBox) === null || __oc55 === void 0 ? void 0 : __oc55.classList.add('group-freetalk-dialogue')));
+        (((__oc57 = (__oc56 = this.uiManager) === null || __oc56 === void 0 ? void 0 : __oc56.chatContainer) === null || __oc57 === void 0 ? void 0 : __oc57.classList.add('group-freetalk-mode')));
     }
 
-    _setGroupActiveSpeaker(charId = '') {
-        const slots = this.uiManager?.charSlots || {};
+    _setGroupActiveSpeaker(charId = '') { var __oc58, __oc59, __oc60;
+        const slots = (((__oc58 = this.uiManager) === null || __oc58 === void 0 ? void 0 : __oc58.charSlots)) || {};
         for (const slot of Object.values(slots)) {
-            if (!slot?.classList.contains('group-freetalk-participant')) continue;
+            if (!((slot === null || slot === void 0 ? void 0 : slot.classList.contains('group-freetalk-participant')))) continue;
             const active = slot.dataset.groupCharId === charId;
             slot.classList.toggle('group-freetalk-active', active);
             slot.classList.toggle('group-freetalk-inactive', !active);
         }
         const participant = this.groupParticipants.find(item => item.id === charId);
-        this.uiManager?.dialogueBox?.setAttribute('data-group-speaker-side', participant?.side || 'left');
+        (((__oc60 = (__oc59 = this.uiManager) === null || __oc59 === void 0 ? void 0 : __oc59.dialogueBox) === null || __oc60 === void 0 ? void 0 : __oc60.setAttribute('data-group-speaker-side', (participant === null || participant === void 0 ? void 0 : participant.side) || 'left')));
     }
 
-    _clearGroupPresentation() {
-        document.getElementById('character-layer')?.classList.remove('group-freetalk-mode');
-        this.uiManager?.dialogueBox?.classList.remove('group-freetalk-dialogue');
-        this.uiManager?.chatContainer?.classList.remove('group-freetalk-mode');
-        this.uiManager?.dialogueBox?.removeAttribute('data-group-speaker-side');
-        for (const slot of Object.values(this.uiManager?.charSlots || {})) {
-            slot?.classList.remove('group-freetalk-participant', 'group-freetalk-active', 'group-freetalk-inactive');
-            if (slot?.dataset) delete slot.dataset.groupCharId;
+    _clearGroupPresentation() { var __oc61, __oc62, __oc63, __oc64, __oc65, __oc66, __oc67, __oc68;
+        (((__oc61 = document.getElementById('character-layer')) === null || __oc61 === void 0 ? void 0 : __oc61.classList.remove('group-freetalk-mode')));
+        (((__oc63 = (__oc62 = this.uiManager) === null || __oc62 === void 0 ? void 0 : __oc62.dialogueBox) === null || __oc63 === void 0 ? void 0 : __oc63.classList.remove('group-freetalk-dialogue')));
+        (((__oc65 = (__oc64 = this.uiManager) === null || __oc64 === void 0 ? void 0 : __oc64.chatContainer) === null || __oc65 === void 0 ? void 0 : __oc65.classList.remove('group-freetalk-mode')));
+        (((__oc67 = (__oc66 = this.uiManager) === null || __oc66 === void 0 ? void 0 : __oc66.dialogueBox) === null || __oc67 === void 0 ? void 0 : __oc67.removeAttribute('data-group-speaker-side')));
+        for (const slot of Object.values((((__oc68 = this.uiManager) === null || __oc68 === void 0 ? void 0 : __oc68.charSlots)) || {})) {
+            ((slot === null || slot === void 0 ? void 0 : slot.classList.remove('group-freetalk-participant', 'group-freetalk-active', 'group-freetalk-inactive')));
+            if (((slot === null || slot === void 0 ? void 0 : slot.dataset))) delete slot.dataset.groupCharId;
         }
     }
 
-    _buildCurrentGroupSystemPrompt(scene, lang) {
+    _buildCurrentGroupSystemPrompt(scene, lang) { var __oc69, __oc70, __oc77, __oc78;
         const participants = this.groupParticipants;
         const promptData = window.getPromptData ? window.getPromptData(lang, this.stateManager.playerName) : {};
         const gameContexts = Object.fromEntries(participants.map(participant => [
@@ -1125,7 +1135,7 @@ class FreeTalkSystem {
             this.getGameContext(participant.id, lang, { includeGroupConversations: false })
         ]));
         if (scene.groupMode === 'haeun_reputation') {
-            const prior = (this.stateManager.getChatMemory?.('Haeun') || [])
+            const prior = ((((__oc70 = (__oc69 = this.stateManager).getChatMemory) === null || __oc70 === void 0 ? void 0 : __oc70.call(__oc69, 'Haeun'))) || [])
                 .filter(message => ['user', 'assistant'].includes(message.role))
                 .slice(-12)
                 .map(message => ({ role: message.role, content: message.content }));
@@ -1140,29 +1150,31 @@ class FreeTalkSystem {
                 gameContexts[tempter.id] = [gameContexts[tempter.id], nightMemory].filter(Boolean).join('\n');
             }
         }
-        const affinities = Object.fromEntries(participants.map(participant => [
+        const affinities = Object.fromEntries(participants.map(participant => { var __oc71, __oc72, __oc73, __oc74, __oc75, __oc76; return (
+[
             participant.id,
-            this.stateManager.getAffinity?.(participant.id) ?? this.stateManager.stats?.[participant.id]?.affinity ?? 0
-        ]));
-        return window.buildCupidGroupSystemPrompt?.({
-            lang,
-            groupMode: scene.groupMode || (scene.groupParticipants === 'counteroffer_confrontation'
-                ? 'counteroffer_confrontation'
-                : 'route_social'),
-            participants,
-            locationName: this._getLocalizedGroupLocation(scene, lang),
-            context: [this._getHaeunStageGuidance?.(scene, this.currentSceneId, lang), scene.context || ''].filter(Boolean).join(' '),
-            extraGuideline: scene.personality || scene.extra_guideline || '',
-            playerName: this.stateManager.playerName || '',
-            choiceState: this._getGroupChoiceState(scene, lang),
-            gameContexts,
-            affinities,
-            promptData
-        }) || '';
+            (((__oc76 = (__oc73 = (__oc72 = (__oc71 = this.stateManager).getAffinity) === null || __oc72 === void 0 ? void 0 : __oc72.call(__oc71, participant.id)) !== null && __oc73 !== void 0 ? __oc73 : (__oc75 = (__oc74 = this.stateManager.stats) === null || __oc74 === void 0 ? void 0 : __oc74[participant.id]) === null || __oc75 === void 0 ? void 0 : __oc75.affinity) !== null && __oc76 !== void 0 ? __oc76 : 0))
+        ]
+); }));
+        return (((__oc77 = window.buildCupidGroupSystemPrompt) === null || __oc77 === void 0 ? void 0 : __oc77.call(window, {
+        lang,
+        groupMode: scene.groupMode || (scene.groupParticipants === 'counteroffer_confrontation'
+            ? 'counteroffer_confrontation'
+            : 'route_social'),
+        participants,
+        locationName: this._getLocalizedGroupLocation(scene, lang),
+        context: [(__oc78 = this._getHaeunStageGuidance) === null || __oc78 === void 0 ? void 0 : __oc78.call(this, scene, this.currentSceneId, lang), scene.context || ''].filter(Boolean).join(' '),
+        extraGuideline: scene.personality || scene.extra_guideline || '',
+        playerName: this.stateManager.playerName || '',
+        choiceState: this._getGroupChoiceState(scene, lang),
+        gameContexts,
+        affinities,
+        promptData
+    }))) || '';
     }
 
     _getLocalizedGroupLocation(scene, lang = 'ko') {
-        if (scene?.groupLocation) return scene.groupLocation;
+        if (((scene === null || scene === void 0 ? void 0 : scene.groupLocation))) return scene.groupLocation;
         const locations = { ko: '교실', en: 'Classroom', es: 'Salón de clases', ja: '教室', fr: 'Salle de classe', de: 'Klassenzimmer', pt: 'Sala de aula', zh: '教室' };
         const language = String(lang || 'ko').toLowerCase().split('-')[0];
         return locations[language] || locations.en;
@@ -1173,7 +1185,7 @@ class FreeTalkSystem {
         const focus = participants[0];
         const companion = participants[1];
         const lines = [];
-        const focusText = String(scene?.text || '').trim();
+        const focusText = String(((scene === null || scene === void 0 ? void 0 : scene.text)) || '').trim();
         if (focus && focusText) {
             lines.push({
                 speakerId: focus.id,
@@ -1181,7 +1193,7 @@ class FreeTalkSystem {
                 content: focusText
             });
         }
-        const companionMap = scene?.companionTexts;
+        const companionMap = ((scene === null || scene === void 0 ? void 0 : scene.companionTexts));
         const companionText = companion && companionMap && typeof companionMap === 'object'
             ? String(companionMap[companion.id] || '').trim()
             : '';
@@ -1195,9 +1207,9 @@ class FreeTalkSystem {
         return lines;
     }
 
-    _waitForGroupOpeningAdvance(openingEpoch, sceneId, remaining) {
+    _waitForGroupOpeningAdvance(openingEpoch, sceneId, remaining) { var __oc79, __oc80;
         this._groupMessagesRemaining = remaining;
-        this.uiManager.showNextIndicator?.(remaining > 0);
+        (((__oc80 = (__oc79 = this.uiManager).showNextIndicator) === null || __oc80 === void 0 ? void 0 : __oc80.call(__oc79, remaining > 0)));
         if (remaining <= 0) return Promise.resolve(true);
         return new Promise((resolve) => {
             let timer = null;
@@ -1205,10 +1217,10 @@ class FreeTalkSystem {
                 if (timer) clearTimeout(timer);
                 resolve(value);
             };
-            timer = setTimeout(() => {
+            timer = setTimeout(() => { var __oc81, __oc82;
                 if (this._groupAdvanceResolver === resolver) {
                     this._groupAdvanceResolver = null;
-                    this.uiManager.showNextIndicator?.(false);
+                    (((__oc82 = (__oc81 = this.uiManager).showNextIndicator) === null || __oc82 === void 0 ? void 0 : __oc82.call(__oc81, false)));
                     resolver(true);
                 }
             }, 180000);
@@ -1225,7 +1237,7 @@ class FreeTalkSystem {
         });
     }
 
-    async startGroupFreeTalk(scene, sceneId) {
+    async startGroupFreeTalk(scene, sceneId) { var __oc83, __oc84, __oc85, __oc86, __oc87;
         if (window.ensureCupidFreeTalkRuntime && !window.CupidFreeTalkPromptsReady) {
             const epoch = this._freeTalkEpoch;
             await window.ensureCupidFreeTalkRuntime();
@@ -1234,7 +1246,7 @@ class FreeTalkSystem {
         if (this.isFreeTalking) return;
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const checkpoint = this._getFreeTalkCheckpoint(scene, sceneId);
-        const participants = checkpoint?.participants?.length === 2
+        const participants = (((__oc83 = checkpoint === null || checkpoint === void 0 ? void 0 : checkpoint.participants) === null || __oc83 === void 0 ? void 0 : __oc83.length)) === 2
             ? checkpoint.participants.map(participant => ({ ...participant, name: this._getLocalizedGroupCharacterName(participant.id, lang) }))
             : this._resolveGroupParticipants(scene, lang);
         if (participants.length !== 2) {
@@ -1246,7 +1258,7 @@ class FreeTalkSystem {
         this.isProcessingChat = false;
         this.isGroupMode = true;
         this.currentMaxTurns = scene.maxTurns || 3;
-        this.freeTalkTurns = Math.min(this.currentMaxTurns, checkpoint?.turns || 0);
+        this.freeTalkTurns = Math.min(this.currentMaxTurns, ((checkpoint === null || checkpoint === void 0 ? void 0 : checkpoint.turns)) || 0);
         this.currentSceneId = sceneId;
         this.groupParticipants = participants;
         this.currentCharKey = `group:${participants.map(item => item.id).join(':')}`;
@@ -1255,7 +1267,9 @@ class FreeTalkSystem {
         const systemPrompt = normalizeFreeTalkPromptBlockForCache(this._buildCurrentGroupSystemPrompt(scene, lang));
         this.freeTalkHistory = [
             { role: 'system', content: systemPrompt },
-            ...existingHistory.filter(message => message?.role !== 'system')
+            ...existingHistory.filter(message => { return (
+((message === null || message === void 0 ? void 0 : message.role)) !== 'system'
+); })
         ];
 
         this._setGroupStandingCharacters(participants);
@@ -1289,11 +1303,11 @@ class FreeTalkSystem {
             ? participants.map(participant => participant.name).join(' · ')
             : (scene.name || participants[0].name);
         const openingEpoch = this._freeTalkEpoch;
-        const lastReply = checkpoint?.lastReply;
+        const lastReply = ((checkpoint === null || checkpoint === void 0 ? void 0 : checkpoint.lastReply));
         const openingDialogues = this._buildGroupOpeningDialogues(scene, participants);
-        this.uiManager.updateNameTag(lastReply?.speakerName || participants[0].name);
-        if (lastReply?.speakerId) this._setGroupActiveSpeaker(lastReply.speakerId);
-        if (lastReply?.content) {
+        this.uiManager.updateNameTag(((lastReply === null || lastReply === void 0 ? void 0 : lastReply.speakerName)) || participants[0].name);
+        if (((lastReply === null || lastReply === void 0 ? void 0 : lastReply.speakerId))) this._setGroupActiveSpeaker(lastReply.speakerId);
+        if (((lastReply === null || lastReply === void 0 ? void 0 : lastReply.content))) {
             await this.dialogueSystem.typeText(lastReply.content, lastReply.speakerName || openingName, lastReply.segments || null);
             if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
             this._commitFreeTalkCheckpoint(lastReply);
@@ -1302,12 +1316,15 @@ class FreeTalkSystem {
                 const line = openingDialogues[index];
                 this._setGroupActiveSpeaker(line.speakerId);
                 this.uiManager.updateNameTag(line.speakerName);
-                window.recordCupidVisibleChat?.({ charId: 'group',
-                    role: 'assistant', content: line.content, sessionId: sceneId,
-                    speakerId: line.speakerId, participants,
-                    conversationDay: this.stateManager.currentDay, logSource: 'opening',
-                    ...(window.getCupidPortraitLogFields?.(Object.values(this.uiManager?.charSlots || {})
-                        .find(slot => slot?.dataset?.groupCharId === line.speakerId)?.querySelector('img'), line.speakerId) || {}) });
+                (((__oc84 = window.recordCupidVisibleChat) === null || __oc84 === void 0 ? void 0 : __oc84.call(window, { charId: 'group',
+        role: 'assistant', content: line.content, sessionId: sceneId,
+        speakerId: line.speakerId, participants,
+        conversationDay: this.stateManager.currentDay, logSource: 'opening',
+        ...(((__oc85 = window.getCupidPortraitLogFields) === null || __oc85 === void 0 ? void 0 : __oc85.call(window, (__oc87 = Object.values(((__oc86 = this.uiManager) === null || __oc86 === void 0 ? void 0 : __oc86.charSlots) || {})
+            .find(slot => {
+            var __oc284;
+            return ((((__oc284 = slot === null || slot === void 0 ? void 0 : slot.dataset) === null || __oc284 === void 0 ? void 0 : __oc284.groupCharId)) === line.speakerId);
+        })) === null || __oc87 === void 0 ? void 0 : __oc87.querySelector('img'), line.speakerId)) || {}) })));
                 await this.dialogueSystem.typeText(line.content, line.speakerName, null);
                 if (this._freeTalkEpoch !== openingEpoch || this.currentSceneId !== sceneId) return;
                 this.freeTalkHistory.push({
@@ -1335,7 +1352,7 @@ class FreeTalkSystem {
     }
 
     /** 프리토킹 스킵 */
-    async skipFreeTalk() {
+    async skipFreeTalk() { var __oc88;
         if (!this.isFreeTalking) return;
 
         const skipEpoch = this._freeTalkEpoch;
@@ -1380,7 +1397,7 @@ class FreeTalkSystem {
             this.groupParticipants = [];
             this._clearGroupPresentation();
             try {
-                window.saveGameState?.();
+                (((__oc88 = window.saveGameState) === null || __oc88 === void 0 ? void 0 : __oc88.call(window)));
             } catch (saveError) {
                 console.warn('[Cupid FreeTalk] Could not persist the skipped conversation', saveError);
             }
@@ -1407,11 +1424,11 @@ class FreeTalkSystem {
         return messages[language] || messages.en;
     }
 
-    _applyGroupSkipPenalty(participants) {
-        if (window.CupidAffinityGate?.commitKey() !== `close:${this.currentSceneId}`) return [];
-        const changes = participants.flatMap(participant => {
-            if (!this.stateManager.stats?.[participant.id]) return [];
-            if (!window.CupidAffinityGate?.grant(participant.id, GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY)) return [];
+    _applyGroupSkipPenalty(participants) { var __oc89;
+        if ((((__oc89 = window.CupidAffinityGate) === null || __oc89 === void 0 ? void 0 : __oc89.commitKey())) !== `close:${this.currentSceneId}`) return [];
+        const changes = participants.flatMap(participant => { var __oc90, __oc91;
+            if (!(((__oc90 = this.stateManager.stats) === null || __oc90 === void 0 ? void 0 : __oc90[participant.id]))) return [];
+            if (!(((__oc91 = window.CupidAffinityGate) === null || __oc91 === void 0 ? void 0 : __oc91.grant(participant.id, GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY)))) return [];
             const previousValue = this.stateManager.getAffinity(participant.id);
             const newValue = this.stateManager.changeAffinity(
                 participant.id,
@@ -1423,13 +1440,15 @@ class FreeTalkSystem {
         if (typeof this.uiManager.showAffinityChangeMulti === 'function') {
             this.uiManager.showAffinityChangeMulti(changes);
         } else {
-            changes.forEach(change => this.uiManager.showAffinityChange?.(change.amount, change.charKey));
+            changes.forEach(change => { var __oc92, __oc93; return (
+((__oc93 = (__oc92 = this.uiManager).showAffinityChange) === null || __oc93 === void 0 ? void 0 : __oc93.call(__oc92, change.amount, change.charKey))
+); });
         }
         return changes;
     }
 
     /** 채팅 메시지 전송 */
-    _invalidateFreeTalkContext({ preserveRequestOwner = false } = {}) {
+    _invalidateFreeTalkContext({ preserveRequestOwner = false } = {}) { var __oc94, __oc95;
         if (this._groupAdvanceResolver) {
             const resolve = this._groupAdvanceResolver;
             this._groupAdvanceResolver = null;
@@ -1437,9 +1456,9 @@ class FreeTalkSystem {
             resolve(false);
         }
         if (!preserveRequestOwner && this._activeRequestContext) {
-            this._activeRequestContext.abortController?.abort();
+            (((__oc94 = this._activeRequestContext.abortController) === null || __oc94 === void 0 ? void 0 : __oc94.abort()));
             this._rollbackRequestHistory(this._activeRequestContext);
-            if (this.uiManager?.messageEl) this.uiManager.messageEl.innerHTML = '';
+            if ((((__oc95 = this.uiManager) === null || __oc95 === void 0 ? void 0 : __oc95.messageEl))) this.uiManager.messageEl.innerHTML = '';
         }
         this._freeTalkEpoch += 1;
         this._activeChatTurnId = null;
@@ -1453,7 +1472,7 @@ class FreeTalkSystem {
      * 새 게임 시작 시 본편 프리토킹의 실행 중 상태와 로컬 문맥만 초기화합니다.
      * 원격 D1 로그와 별도 갤러리 메모리는 이 시스템에서 삭제하지 않습니다.
      */
-    resetForNewGame() {
+    resetForNewGame() { var __oc96, __oc97;
         this._invalidateFreeTalkContext();
         this.isFreeTalking = false;
         this.isProcessingChat = false;
@@ -1467,7 +1486,7 @@ class FreeTalkSystem {
         this._groupMessagesRemaining = 0;
         this._isRemote = false;
         this._activeChatTurnId = null;
-        this.uiManager?.removeStagedImage?.();
+        (((__oc97 = (__oc96 = this.uiManager) === null || __oc96 === void 0 ? void 0 : __oc96.removeStagedImage) === null || __oc97 === void 0 ? void 0 : __oc97.call(__oc96)));
     }
 
     _isRequestContextCurrent(requestContext) {
@@ -1488,8 +1507,8 @@ class FreeTalkSystem {
     }
 
     _rollbackRequestHistory(requestContext) {
-        const history = requestContext?.history;
-        const start = requestContext?.historyLengthBeforeTurn;
+        const history = ((requestContext === null || requestContext === void 0 ? void 0 : requestContext.history));
+        const start = ((requestContext === null || requestContext === void 0 ? void 0 : requestContext.historyLengthBeforeTurn));
         if (!Array.isArray(history) || !Number.isInteger(start) || start < 0) return;
         if (history.length > start) history.splice(start);
     }
@@ -1523,14 +1542,14 @@ class FreeTalkSystem {
     }
 
     _assertCurrentTurn(turnMeta, payload = null) {
-        if (!turnMeta?.turnId) return;
+        if (!((turnMeta === null || turnMeta === void 0 ? void 0 : turnMeta.turnId))) return;
         if (this._activeChatTurnId && this._activeChatTurnId !== turnMeta.turnId) {
             throw this._makeStaleTurnError();
         }
-        if (payload?.turnId && payload.turnId !== turnMeta.turnId) {
+        if (((payload === null || payload === void 0 ? void 0 : payload.turnId)) && payload.turnId !== turnMeta.turnId) {
             throw this._makeStaleTurnError('AI response turn id did not match request');
         }
-        if (payload?.latestUserHash && payload.latestUserHash !== turnMeta.latestUserHash) {
+        if (((payload === null || payload === void 0 ? void 0 : payload.latestUserHash)) && payload.latestUserHash !== turnMeta.latestUserHash) {
             throw this._makeStaleTurnError('AI response latest user hash did not match request');
         }
     }
@@ -1540,18 +1559,18 @@ class FreeTalkSystem {
         if (!text) return Array.isArray(messages) ? messages : [];
         const completeHistory = Array.isArray(messages) ? messages.slice() : [];
         const lastMessage = completeHistory[completeHistory.length - 1];
-        if (lastMessage?.role === 'user' && lastMessage.content === text) return completeHistory;
+        if (((lastMessage === null || lastMessage === void 0 ? void 0 : lastMessage.role)) === 'user' && lastMessage.content === text) return completeHistory;
         return [...completeHistory, { role: 'user', content: text }];
     }
 
-    async sendChatMessage(getSceneFn) {
-        const activeScene = getSceneFn?.(this.currentSceneId);
-        if (activeScene?.type === 'group_free_talk') {
+    async sendChatMessage(getSceneFn) { var __oc98, __oc99, __oc100, __oc101, __oc102, __oc103, __oc104, __oc107, __oc108, __oc109, __oc110, __oc111, __oc112, __oc113, __oc114, __oc115, __oc116, __oc117, __oc118, __oc119, __oc120, __oc121, __oc122, __oc123, __oc124, __oc133, __oc134, __oc135, __oc136, __oc137, __oc138, __oc139, __oc140, __oc141, __oc142, __oc148, __oc149, __oc150, __oc151, __oc152, __oc153, __oc154, __oc155;
+        const activeScene = ((getSceneFn === null || getSceneFn === void 0 ? void 0 : getSceneFn(this.currentSceneId)));
+        if (((activeScene === null || activeScene === void 0 ? void 0 : activeScene.type)) === 'group_free_talk') {
             return this.sendGroupChatMessage(getSceneFn);
         }
         // 이미 처리 중이면 무시 (중복 호출 방지)
         if (this.isProcessingChat) return;
-        if (!this.uiManager?.chatInput || !this.uiManager?.chatSendBtn || !this.uiManager?.dialogueBox) return;
+        if (!(((__oc98 = this.uiManager) === null || __oc98 === void 0 ? void 0 : __oc98.chatInput)) || !(((__oc99 = this.uiManager) === null || __oc99 === void 0 ? void 0 : __oc99.chatSendBtn)) || !(((__oc100 = this.uiManager) === null || __oc100 === void 0 ? void 0 : __oc100.dialogueBox))) return;
 
         const stagedImageEarly = this.uiManager.stagedImage;
         const text = this.uiManager.chatInput.value.trim();
@@ -1584,7 +1603,7 @@ class FreeTalkSystem {
         this.isProcessingChat = true;
 
         this.uiManager.chatInput.value = "";
-        this.uiManager.resizeChatInput?.();
+        (((__oc102 = (__oc101 = this.uiManager).resizeChatInput) === null || __oc102 === void 0 ? void 0 : __oc102.call(__oc101)));
         this.freeTalkTurns++;
         if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
 
@@ -1601,9 +1620,9 @@ class FreeTalkSystem {
 
         requestContext.turnMeta = this._createTurnMeta(finalContent);
         this._activeChatTurnId = requestContext.turnMeta.turnId;
-        window.recordCupidVisibleChat?.({ charId: charKey, role: 'user', content: finalContent,
-            sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
-            conversationDay: this.stateManager.currentDay, logSource: 'realtime' });
+        (((__oc103 = window.recordCupidVisibleChat) === null || __oc103 === void 0 ? void 0 : __oc103.call(window, { charId: charKey, role: 'user', content: finalContent,
+        sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
+        conversationDay: this.stateManager.currentDay, logSource: 'realtime' })));
 
         // 텍스트 표시
         this.uiManager.messageEl.innerHTML = text ? this.dialogueSystem.parseNarration(text) : '';
@@ -1629,7 +1648,7 @@ class FreeTalkSystem {
         // 유저 메시지 표시 후 대화창 최하단으로 스크롤
         if (this.uiManager.messageEl) this.uiManager.messageEl.scrollTop = this.uiManager.messageEl.scrollHeight;
         const failedTurnName = playerLabel;
-        const failedTurnHtml = this.uiManager.messageEl?.innerHTML || '';
+        const failedTurnHtml = (((__oc104 = this.uiManager.messageEl) === null || __oc104 === void 0 ? void 0 : __oc104.innerHTML)) || '';
 
         const historyLengthBeforeTurn = requestHistory.length;
         requestContext.historyLengthBeforeTurn = historyLengthBeforeTurn;
@@ -1687,7 +1706,7 @@ class FreeTalkSystem {
                 characterDelayMs: 50,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.dialogueSystem.skipTyping === true,
-                onRender: ({ text: previewText, segments: previewSegments }) => {
+                onRender: ({ text: previewText, segments: previewSegments }) => { var __oc105, __oc106;
                     if (!this._isRequestContextCurrent(requestContext)) return;
                     if (!_streamingStarted) {
                         _streamingStarted = true;
@@ -1701,9 +1720,9 @@ class FreeTalkSystem {
                             () => this._isRequestContextCurrent(requestContext)
                         );
                     }
-                    window.recordCupidVisibleChat?.({ charId: charKey, role: 'assistant', content: previewText,
-                        sessionId: requestSceneId, turnId: requestContext.turnMeta?.turnId,
-                        conversationDay: this.stateManager.currentDay, logSource: 'stream-preview' });
+                    (((__oc105 = window.recordCupidVisibleChat) === null || __oc105 === void 0 ? void 0 : __oc105.call(window, { charId: charKey, role: 'assistant', content: previewText,
+        sessionId: requestSceneId, turnId: (__oc106 = requestContext.turnMeta) === null || __oc106 === void 0 ? void 0 : __oc106.turnId,
+        conversationDay: this.stateManager.currentDay, logSource: 'stream-preview' })));
                     this.dialogueSystem.renderStreamingText(
                         previewText,
                         scene.name,
@@ -1720,7 +1739,7 @@ class FreeTalkSystem {
             const updateStreamingPreview = rawContent => {
                 const faces = []; // Expressions are selected after the completed reply.
                 const lead = faces[0];
-                if (lead?.expression) {
+                if (((lead === null || lead === void 0 ? void 0 : lead.expression))) {
                     const key = `${charKey}:${lead.expression}`;
                     if (!this._streamedExpressionKeys.has(key)) {
                         this._streamedExpressionKeys.add(key);
@@ -1757,18 +1776,14 @@ class FreeTalkSystem {
                     nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
                 }
             );
-            const _affinityIntimacyProgressionPatch = _sceneDialogue.romanticInterlude ? '' : window.buildCupidAffinityIntimacyGuidance?.(
-                _lang,
-                _currentAffinity,
-                {
-                    characterName: scene.name || charKey,
-                    establishedRelationship: _isDatingCurrentForBoundary,
-                    nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
-                }
-            ) || '';
+            const _affinityIntimacyProgressionPatch = _sceneDialogue.romanticInterlude ? '' : (((__oc107 = window.buildCupidAffinityIntimacyGuidance) === null || __oc107 === void 0 ? void 0 : __oc107.call(window, _lang, _currentAffinity, {
+        characterName: scene.name || charKey,
+        establishedRelationship: _isDatingCurrentForBoundary,
+        nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
+    }))) || '';
             const _relationshipAftermathBlock = _sceneDialogue.romanticInterlude ? '' : CupidFreeTalkCore.buildRelationshipAftermathBlock({
                 lang: _lang,
-                state: this.stateManager.getRelationshipAftermath?.(charKey)
+                state: (((__oc109 = (__oc108 = this.stateManager).getRelationshipAftermath) === null || __oc109 === void 0 ? void 0 : __oc109.call(__oc108, charKey)))
             });
             const _durableFactsPromise = typeof window.prepareCupidDurableFacts === 'function'
                 ? window.prepareCupidDurableFacts(charKey)
@@ -1798,17 +1813,17 @@ class FreeTalkSystem {
                     ? window.buildCupidTemptationSceneCanonRule(_lang)
                     : ''
             });
-            const _durableFactInstruction = CupidFreeTalkCore.buildDurableFactInstruction?.(_lang) || '';
-            const _durableFactBlock = CupidFreeTalkCore.buildDurableFactBlock?.(_durableFacts, _lang) || '';
+            const _durableFactInstruction = (((__oc110 = CupidFreeTalkCore.buildDurableFactInstruction) === null || __oc110 === void 0 ? void 0 : __oc110.call(CupidFreeTalkCore, _lang))) || '';
+            const _durableFactBlock = (((__oc111 = CupidFreeTalkCore.buildDurableFactBlock) === null || __oc111 === void 0 ? void 0 : __oc111.call(CupidFreeTalkCore, _durableFacts, _lang))) || '';
             const _runtimePromptPatch = `${_inWorldUserRoleBlock}${_affinityIntimacyProgressionPatch}${_relationshipAftermathBlock}${_durableFactInstruction}${_durableFactBlock}${_dataBankRecallBlock}${_postHistoryGuidance}`;
-            if (_runtimePromptPatch && Array.isArray(_optimized) && _optimized[0]?.role === 'system') {
+            if (_runtimePromptPatch && Array.isArray(_optimized) && (((__oc112 = _optimized[0]) === null || __oc112 === void 0 ? void 0 : __oc112.role)) === 'system') {
                 _optimized = [
                     { ..._optimized[0], content: appendFreeTalkDynamicContext(_optimized[0].content, _runtimePromptPatch) },
                     ..._optimized.slice(1)
                 ];
             }
             _optimized = this._forceLatestUserMessageLast(_optimized, finalContent);
-            const _stablePromptContent = Array.isArray(_optimized) && _optimized[0]?.role === 'system'
+            const _stablePromptContent = Array.isArray(_optimized) && (((__oc113 = _optimized[0]) === null || __oc113 === void 0 ? void 0 : __oc113.role)) === 'system'
                 ? _optimized[0].content
                 : '';
             const _stablePromptFingerprint = _stablePromptContent
@@ -1821,7 +1836,7 @@ class FreeTalkSystem {
             const _turnMeta = requestContext.turnMeta;
             _lastTurnMeta = _turnMeta;
             requestContext.turnMeta = _turnMeta;
-            this._activeChatTurnId = _turnMeta?.turnId || null;
+            this._activeChatTurnId = ((_turnMeta === null || _turnMeta === void 0 ? void 0 : _turnMeta.turnId)) || null;
             const aiEndpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT)
                 ? AI_API_ENDPOINT
                 : '/api/ai';
@@ -1883,18 +1898,18 @@ class FreeTalkSystem {
 
             if (!reply) {
                 console.warn('[Cupid FreeTalk] Empty AI response payload:', {
-                    reason: data?.reason || data?.error || data?.choices?.[0]?.finish_reason || 'EMPTY_AI_RESPONSE',
+                    reason: ((data === null || data === void 0 ? void 0 : data.reason)) || ((data === null || data === void 0 ? void 0 : data.error)) || (((__oc115 = (__oc114 = data === null || data === void 0 ? void 0 : data.choices) === null || __oc114 === void 0 ? void 0 : __oc114[0]) === null || __oc115 === void 0 ? void 0 : __oc115.finish_reason)) || 'EMPTY_AI_RESPONSE',
                     character: charKey || ''
                 });
                 throw new Error('AI response was empty. Please try again.');
             }
 
             // JSON 응답 파싱 → {text, expression, affinity} 구조체 반환
-            if (data?.provider === 'deepseek' && data?.usage) {
+            if (((data === null || data === void 0 ? void 0 : data.provider)) === 'deepseek' && ((data === null || data === void 0 ? void 0 : data.usage))) {
                 const usage = data.usage;
                 const cache = data.cache || {};
-                const hitTokens = Number(cache.prompt_cache_hit_tokens ?? usage.prompt_cache_hit_tokens ?? 0);
-                const missTokens = Number(cache.prompt_cache_miss_tokens ?? usage.prompt_cache_miss_tokens ?? 0);
+                const hitTokens = Number((((__oc117 = (__oc116 = cache.prompt_cache_hit_tokens) !== null && __oc116 !== void 0 ? __oc116 : usage.prompt_cache_hit_tokens) !== null && __oc117 !== void 0 ? __oc117 : 0)));
+                const missTokens = Number((((__oc119 = (__oc118 = cache.prompt_cache_miss_tokens) !== null && __oc118 !== void 0 ? __oc118 : usage.prompt_cache_miss_tokens) !== null && __oc119 !== void 0 ? __oc119 : 0)));
                 const hitRatio = hitTokens + missTokens > 0 ? hitTokens / (hitTokens + missTokens) : 0;
                 console.info('[DeepSeek Cache]', {
                     app: 'cupid-freetalk',
@@ -1914,21 +1929,21 @@ class FreeTalkSystem {
             const displayFallback = CupidFreeTalkCore.getAiDisplayFallbackInfo(reply);
 
             window.__cupidLastStreamFinish = {
-                provider: data?.provider || '',
-                providerRoute: data?.providerRoute || '',
-                model: data?.model || '',
-                usage: data?.usage || null,
-                cache: data?.cache || null,
-                turnId: data?.turnId || _turnMeta?.turnId || '',
+                provider: ((data === null || data === void 0 ? void 0 : data.provider)) || '',
+                providerRoute: ((data === null || data === void 0 ? void 0 : data.providerRoute)) || '',
+                model: ((data === null || data === void 0 ? void 0 : data.model)) || '',
+                usage: ((data === null || data === void 0 ? void 0 : data.usage)) || null,
+                cache: ((data === null || data === void 0 ? void 0 : data.cache)) || null,
+                turnId: ((data === null || data === void 0 ? void 0 : data.turnId)) || ((_turnMeta === null || _turnMeta === void 0 ? void 0 : _turnMeta.turnId)) || '',
                 at: new Date().toISOString()
             };
             console.info('[Cupid AI Stream Finish]', window.__cupidLastStreamFinish);
 
-            if (!parsed?.text && !(Array.isArray(parsed?.segments) && parsed.segments.length > 0)) {
+            if (!((parsed === null || parsed === void 0 ? void 0 : parsed.text)) && !(Array.isArray(((parsed === null || parsed === void 0 ? void 0 : parsed.segments))) && parsed.segments.length > 0)) {
                 throw new Error('AI response did not contain visible roleplay text. Please try again.');
             }
             const forcedSexualViolation = CupidFreeTalkCore.normalizeForcedSexualViolation(
-                parsed?.forcedSexualViolation
+                ((parsed === null || parsed === void 0 ? void 0 : parsed.forcedSexualViolation))
             );
 
             if (parsed) {
@@ -1960,24 +1975,20 @@ class FreeTalkSystem {
                 const pacedReplyText = Array.isArray(parsedSegments) && parsedSegments.length > 0
                     ? parsedSegments.map(segment => segment.text).join('\n\n')
                     : reply;
-                const shownPortrait = window.getCupidPortraitLogFields?.(
-                    this.uiManager.charSlots?.center?.querySelector('img'),
-                    charKey,
-                    scene?.character
-                ) || {};
+                const shownPortrait = (((__oc120 = window.getCupidPortraitLogFields) === null || __oc120 === void 0 ? void 0 : __oc120.call(window, (__oc122 = (__oc121 = this.uiManager.charSlots) === null || __oc121 === void 0 ? void 0 : __oc121.center) === null || __oc122 === void 0 ? void 0 : __oc122.querySelector('img'), charKey, scene === null || scene === void 0 ? void 0 : scene.character))) || {};
                 if (parsed.expression === 'neutral') {
                     const shownExpr = String(shownPortrait.expression || '').replace(/^(?:date|home)_/i, '');
                     parsed.expression = shownExpr || (displayFallback ? '' : 'normal');
                 }
-                window.recordCupidVisibleChat?.({ charId: charKey, role: 'assistant', content: reply,
-                    sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
-                    conversationDay: this.stateManager.currentDay, responseMetadata: data,
-                    expression: displayFallback ? (shownPortrait.expression || '') : parsed.expression,
-                    ...(displayFallback ? {
-                        expressionVariant: shownPortrait.expressionVariant || '',
-                        avatarAsset: shownPortrait.avatarAsset || ''
-                    } : {}),
-                    clientMsgId: data?.logIds?.assistant });
+                (((__oc123 = window.recordCupidVisibleChat) === null || __oc123 === void 0 ? void 0 : __oc123.call(window, { charId: charKey, role: 'assistant', content: reply,
+        sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
+        conversationDay: this.stateManager.currentDay, responseMetadata: data,
+        expression: displayFallback ? (shownPortrait.expression || '') : parsed.expression,
+        ...(displayFallback ? {
+            expressionVariant: shownPortrait.expressionVariant || '',
+            avatarAsset: shownPortrait.avatarAsset || ''
+        } : {}),
+        clientMsgId: (__oc124 = data === null || data === void 0 ? void 0 : data.logIds) === null || __oc124 === void 0 ? void 0 : __oc124.assistant })));
                 _streamingPreview.update(pacedReplyText, parsedSegments);
                 await _streamingPreview.drain();
                 this.dialogueSystem.finishStreamingText(scene.name);
@@ -1992,13 +2003,13 @@ class FreeTalkSystem {
                 // 화면 렌더가 성공한 응답에만 표정과 호감도를 적용한다.
                 this._assertRequestContext(requestContext, data);
                 let affinityResult;
-                const commitTurn = () => {
+                const commitTurn = () => { var __oc125, __oc126, __oc127, __oc128, __oc129, __oc130, __oc131, __oc132;
                 if (!displayFallback) this.applyExpression(parsed.expression, scene);
                 affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(charKey) } : this.applyAffinity(parsed.affinity, scene, finalContent);
                 this._assertRequestContext(requestContext, data);
                 const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
-                    this.stateManager.getRelationshipAftermath?.(charKey),
-                    affinityResult?.requestedChange ?? 0,
+                    (((__oc126 = (__oc125 = this.stateManager).getRelationshipAftermath) === null || __oc126 === void 0 ? void 0 : __oc126.call(__oc125, charKey))),
+                    (((__oc127 = affinityResult === null || affinityResult === void 0 ? void 0 : affinityResult.requestedChange) !== null && __oc127 !== void 0 ? __oc127 : 0)),
                     finalContent,
                     {
                         source: 'user',
@@ -2007,19 +2018,19 @@ class FreeTalkSystem {
                             : 'the user\'s preceding words or action'
                     }
                 );
-                if (!displayFallback && !_sceneDialogue.romanticInterlude) this.stateManager.setRelationshipAftermath?.(charKey, nextAftermath);
-                if (!displayFallback) window.saveCupidDurableFacts?.({
-                    charId: charKey,
-                    facts: parsed.memoryFacts,
-                    userText: requestContext.aiUserContent ?? finalContent,
-                    assistantText: reply
-                });
+                if (!displayFallback && !_sceneDialogue.romanticInterlude) (((__oc129 = (__oc128 = this.stateManager).setRelationshipAftermath) === null || __oc129 === void 0 ? void 0 : __oc129.call(__oc128, charKey, nextAftermath)));
+                if (!displayFallback) (((__oc130 = window.saveCupidDurableFacts) === null || __oc130 === void 0 ? void 0 : __oc130.call(window, {
+        charId: charKey,
+        facts: parsed.memoryFacts,
+        userText: (__oc131 = requestContext.aiUserContent) !== null && __oc131 !== void 0 ? __oc131 : finalContent,
+        assistantText: reply
+    })));
                 if (!displayFallback) {
                     const completionBonus = this._applyHaeunCompletionBonus(scene, requestSceneId);
-                    if (completionBonus?.bonus) {
+                    if (((completionBonus === null || completionBonus === void 0 ? void 0 : completionBonus.bonus))) {
                         affinityResult = {
                             ...affinityResult,
-                            change: (affinityResult?.change ?? 0) + completionBonus.bonus,
+                            change: (((__oc132 = affinityResult === null || affinityResult === void 0 ? void 0 : affinityResult.change) !== null && __oc132 !== void 0 ? __oc132 : 0)) + completionBonus.bonus,
                             completionBonus: completionBonus.bonus,
                             value: completionBonus.value
                         };
@@ -2035,7 +2046,7 @@ class FreeTalkSystem {
                 }
                 // 대화 기록 저장 (로컬)
                 this._assertRequestContext(requestContext, data);
-                if (displayFallback?.empty) {
+                if (((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty))) {
                     this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                     if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
                     this._rollbackRequestHistory(requestContext);
@@ -2053,33 +2064,25 @@ class FreeTalkSystem {
                     this._commitFreeTalkCheckpoint(requestHistory.at(-1));
                 }
                 };
-                const turnResult = this.stateManager.commitProgressEvent && !displayFallback?.empty
+                const turnResult = this.stateManager.commitProgressEvent && !((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty))
                     ? await this.stateManager.commitProgressEvent(`talk:${requestSceneId}:${requestContext.freeTalkTurnsBefore}`, commitTurn,
                         { checkpoint: () => this.stateManager.freeTalkCheckpoint })
                     : { applied: true, value: commitTurn() };
                 if (!turnResult.applied) throw this._makeStaleTurnError('This conversation turn was already committed');
                 this.uiManager.updateNameTag(scene.name);
                 const selected = !displayFallback ? (this._lastExpressionSelection || null) : null;
-                const currentPortrait = window.getCupidPortraitLogFields?.(
-                    this.uiManager.charSlots?.center?.querySelector('img'),
-                    charKey,
-                    selected?.avatarAsset,
-                    scene?.character
-                ) || {};
+                const currentPortrait = (((__oc133 = window.getCupidPortraitLogFields) === null || __oc133 === void 0 ? void 0 : __oc133.call(window, (__oc135 = (__oc134 = this.uiManager.charSlots) === null || __oc134 === void 0 ? void 0 : __oc134.center) === null || __oc135 === void 0 ? void 0 : __oc135.querySelector('img'), charKey, selected === null || selected === void 0 ? void 0 : selected.avatarAsset, scene === null || scene === void 0 ? void 0 : scene.character))) || {};
                 // The center slot can still show another character, so only the speaker's own portrait is logged.
-                const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(charKey,
-                    window.getCupidChatAvatarAsset?.(this.uiManager.charSlots?.center?.querySelector('img')),
-                    selected?.avatarAsset,
-                    scene?.character) || currentPortrait.avatarAsset || '';
+                const avatarAsset = (((__oc136 = window.pickCupidSpeakerAvatarAsset) === null || __oc136 === void 0 ? void 0 : __oc136.call(window, charKey, (__oc137 = window.getCupidChatAvatarAsset) === null || __oc137 === void 0 ? void 0 : __oc137.call(window, (__oc139 = (__oc138 = this.uiManager.charSlots) === null || __oc138 === void 0 ? void 0 : __oc138.center) === null || __oc139 === void 0 ? void 0 : __oc139.querySelector('img')), selected === null || selected === void 0 ? void 0 : selected.avatarAsset, scene === null || scene === void 0 ? void 0 : scene.character))) || currentPortrait.avatarAsset || '';
                 const loggedExpression = displayFallback
                     ? (currentPortrait.expression || shownPortrait.expression || '')
                     : (parsed.expression || currentPortrait.expression || '');
-                const expressionVariant = window.normalizeCupidExpressionVariant?.(selected?.expressionVariant)
-                    || window.getCupidExpressionVariantId?.(avatarAsset, loggedExpression)
+                const expressionVariant = (((__oc140 = window.normalizeCupidExpressionVariant) === null || __oc140 === void 0 ? void 0 : __oc140.call(window, selected === null || selected === void 0 ? void 0 : selected.expressionVariant)))
+                    || (((__oc141 = window.getCupidExpressionVariantId) === null || __oc141 === void 0 ? void 0 : __oc141.call(window, avatarAsset, loggedExpression)))
                     || currentPortrait.expressionVariant
                     || '';
                 try {
-                    window.saveGameState?.();
+                    (((__oc142 = window.saveGameState) === null || __oc142 === void 0 ? void 0 : __oc142.call(window)));
                 } catch (saveError) {
                     console.warn('[Cupid FreeTalk] Could not persist the completed chat turn', saveError);
                 }
@@ -2087,35 +2090,34 @@ class FreeTalkSystem {
                 // D1 chat-logs 저장 (백업 뷰어용). 화면 완료와 입력 재활성화를 막지 않는다.
                 if (typeof window.saveCupidChatLog === 'function') {
                     this._assertRequestContext(requestContext, data);
-                    void Promise.resolve().then(() => window.saveCupidChatLog({
+                    void Promise.resolve().then(() => { var __oc143, __oc144, __oc145; return (
+window.saveCupidChatLog({
                             charId: charKey,
                             userContent: finalContent,
                             assistantContent: reply,
                             sessionId: requestSceneId || '',
                             context: '1:1',
-                            conversationDay: window.resolveCupidConversationDay?.(
-                                this.stateManager.currentDay,
-                                requestSceneId
-                            ) ?? this.stateManager.currentDay,
-                            affinityChange: affinityResult?.change,
-                            affinityCurrent: affinityResult?.value,
+                            conversationDay: (((__oc144 = (__oc143 = window.resolveCupidConversationDay) === null || __oc143 === void 0 ? void 0 : __oc143.call(window, this.stateManager.currentDay, requestSceneId)) !== null && __oc144 !== void 0 ? __oc144 : this.stateManager.currentDay)),
+                            affinityChange: ((affinityResult === null || affinityResult === void 0 ? void 0 : affinityResult.change)),
+                            affinityCurrent: ((affinityResult === null || affinityResult === void 0 ? void 0 : affinityResult.value)),
                             assistantRenderReceipt,
-                            turnId: requestContext.turnMeta?.turnId || '',
+                            turnId: (((__oc145 = requestContext.turnMeta) === null || __oc145 === void 0 ? void 0 : __oc145.turnId)) || '',
                             responseMetadata: data,
                             expression: loggedExpression,
                             expressionVariant,
                             avatarAsset
-                        }))
-                        .catch(logError => {
+                        })
+); })
+                        .catch(logError => { var __oc146, __oc147;
                             console.warn('[Cupid FreeTalk] Could not persist chat log asynchronously', logError);
-                            window.logCupidError?.(logError, {
-                                source: 'FreeTalkSystem.saveCupidChatLog',
-                                errorType: 'chat_log_client_exception',
-                                errorClass: 'client',
-                                sessionId: requestSceneId || '',
-                                context: { charId: charKey, logContext: '1:1' },
-                                extra: { turnId: requestContext?.turnMeta?.turnId || '' }
-                            });
+                            (((__oc146 = window.logCupidError) === null || __oc146 === void 0 ? void 0 : __oc146.call(window, logError, {
+        source: 'FreeTalkSystem.saveCupidChatLog',
+        errorType: 'chat_log_client_exception',
+        errorClass: 'client',
+        sessionId: requestSceneId || '',
+        context: { charId: charKey, logContext: '1:1' },
+        extra: { turnId: ((__oc147 = requestContext === null || requestContext === void 0 ? void 0 : requestContext.turnMeta) === null || __oc147 === void 0 ? void 0 : __oc147.turnId) || '' }
+    })));
                         });
                 }
             }
@@ -2126,17 +2128,17 @@ class FreeTalkSystem {
                 this.endFreeTalk(requestOwner);
             }
         } catch (error) {
-            _streamingPreview?.stop();
+            ((_streamingPreview === null || _streamingPreview === void 0 ? void 0 : _streamingPreview.stop()));
             _streamingPreview = null;
             this.dialogueSystem.finishStreamingText(scene.name);
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
-            const isControlBlocked = error?.isControlBlocked === true || error?.reason === 'INPUT_CONTROL_BLOCKED';
+            const isControlBlocked = ((error === null || error === void 0 ? void 0 : error.isControlBlocked)) === true || ((error === null || error === void 0 ? void 0 : error.reason)) === 'INPUT_CONTROL_BLOCKED';
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
                 if (!isControlBlocked) {
                     if (!this.uiManager.chatInput.value) this.uiManager.chatInput.value = text;
-                    this.uiManager.resizeChatInput?.();
-                    if (stagedImage && !this.uiManager.stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
+                    (((__oc149 = (__oc148 = this.uiManager).resizeChatInput) === null || __oc149 === void 0 ? void 0 : __oc149.call(__oc148)));
+                    if (stagedImage && !this.uiManager.stagedImage) (((__oc151 = (__oc150 = this.uiManager).updateImagePreview) === null || __oc151 === void 0 ? void 0 : __oc151.call(__oc150, stagedImage)));
                 }
                 this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                 if (this.uiManager.turnCountEl) {
@@ -2146,23 +2148,23 @@ class FreeTalkSystem {
 
             // 🔍 오류 내용을 콘솔에 기록 (디버깅용)
             // F12 → Console 탭에서 확인 가능
-            if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') {
+            if (!ownsCurrentContext || ((error === null || error === void 0 ? void 0 : error.isStaleTurn)) || ((error === null || error === void 0 ? void 0 : error.reason)) === 'STALE_TURN') {
                 console.warn('[Cupid FreeTalk] Ignored stale chat response');
                 return;
             }
             if (isControlBlocked) {
                 const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
-                window.recordCupidVisibleChat?.({
-                    charId: charKey,
-                    role: 'user',
-                    content: finalContent,
-                    sessionId: requestSceneId,
-                    turnId: requestContext?.turnMeta?.turnId || error?.turnId || '',
-                    conversationDay: this.stateManager?.currentDay,
-                    responseMetadata: error,
-                    logSource: 'control-blocked'
-                });
-                const notice = error?.userMessage || CupidFreeTalkCore.getControlBlockedNotice?.(langErr) || 'Inputs that dictate the other character cannot be sent.';
+                (((__oc152 = window.recordCupidVisibleChat) === null || __oc152 === void 0 ? void 0 : __oc152.call(window, {
+        charId: charKey,
+        role: 'user',
+        content: finalContent,
+        sessionId: requestSceneId,
+        turnId: ((__oc153 = requestContext === null || requestContext === void 0 ? void 0 : requestContext.turnMeta) === null || __oc153 === void 0 ? void 0 : __oc153.turnId) || (error === null || error === void 0 ? void 0 : error.turnId) || '',
+        conversationDay: (__oc154 = this.stateManager) === null || __oc154 === void 0 ? void 0 : __oc154.currentDay,
+        responseMetadata: error,
+        logSource: 'control-blocked'
+    })));
+                const notice = ((error === null || error === void 0 ? void 0 : error.userMessage)) || (((__oc155 = CupidFreeTalkCore.getControlBlockedNotice) === null || __oc155 === void 0 ? void 0 : __oc155.call(CupidFreeTalkCore, langErr))) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 this.uiManager.updateNameTag(failedTurnName);
                 this.uiManager.updateNameTag({ ko: '안내', en: 'Notice', es: 'Aviso', ja: '案内', fr: 'Info', de: 'Hinweis', pt: 'Aviso', zh: '提示' }[String((typeof langErr !== 'undefined' ? langErr : lang) || 'ko').toLowerCase().split('-')[0]] || 'Notice'); if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
@@ -2170,24 +2172,24 @@ class FreeTalkSystem {
             }
             const langErr = window.GAME_LANG || document.documentElement.lang || 'ko';
 
-            const isHandledTurnstileChallenge = error?.turnstileBotSuspected === true
-                || error?.isBrowserVerificationError === true
-                || /^(?:300|600)\d*$/.test(String(error?.turnstileErrorCode || ''));
+            const isHandledTurnstileChallenge = ((error === null || error === void 0 ? void 0 : error.turnstileBotSuspected)) === true
+                || ((error === null || error === void 0 ? void 0 : error.isBrowserVerificationError)) === true
+                || /^(?:300|600)\d*$/.test(String(((error === null || error === void 0 ? void 0 : error.turnstileErrorCode)) || ''));
             const isNetworkTransportFailure = CupidFreeTalkCore.isNetworkTransportError(error);
             const isTransientTransportFailure = isNetworkTransportFailure
-                || /^HTTP (?:408|425|429|5\d\d)$/i.test(error?.message || '');
+                || /^HTTP (?:408|425|429|5\d\d)$/i.test(((error === null || error === void 0 ? void 0 : error.message)) || '');
             const isOfflineTransportFailure = navigator.onLine === false && isNetworkTransportFailure;
-            if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn("AI Chat transport/verification interruption:", error?.message || error);
+            if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn("AI Chat transport/verification interruption:", ((error === null || error === void 0 ? void 0 : error.message)) || error);
             else console.error("AI Chat Error:", error);
-            if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
+            if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || ((error === null || error === void 0 ? void 0 : error.retryExhausted)))) {
                 window.logCupidError(error, {
                     source: 'cupid-freetalk',
-                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : CupidFreeTalkCore.isClientCodeException(error) ? 'freetalk_client_exception' : (/^HTTP\s+\d+/.test(error?.message || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
+                    errorType: ((error === null || error === void 0 ? void 0 : error.retryExhausted)) ? 'freetalk_upstream_retries_exhausted' : CupidFreeTalkCore.isClientCodeException(error) ? 'freetalk_client_exception' : (/^HTTP\s+\d+/.test(((error === null || error === void 0 ? void 0 : error.message)) || '') ? 'freetalk_http_error' : 'freetalk_request_failed'),
                     sessionId: requestSceneId || '',
                     context: {
                         charId: charKey || '',
                         sceneId: requestSceneId || '',
-                        sceneName: scene?.name || '',
+                        sceneName: ((scene === null || scene === void 0 ? void 0 : scene.name)) || '',
                         language: langErr,
                         chatMode: this._isRemote ? 'remote' : 'face',
                         freeTalkTurns: this.freeTalkTurns
@@ -2195,13 +2197,13 @@ class FreeTalkSystem {
                     extra: {
                         cacheKey: _lastCacheKey,
                         aiEndpoint: _lastAiEndpoint,
-                        turnId: _lastTurnMeta?.turnId || '',
-                        latestUserHash: _lastTurnMeta?.latestUserHash || '',
-                        latestUserLength: _lastTurnMeta?.latestUserLength || String(finalContent || '').length,
+                        turnId: ((_lastTurnMeta === null || _lastTurnMeta === void 0 ? void 0 : _lastTurnMeta.turnId)) || '',
+                        latestUserHash: ((_lastTurnMeta === null || _lastTurnMeta === void 0 ? void 0 : _lastTurnMeta.latestUserHash)) || '',
+                        latestUserLength: ((_lastTurnMeta === null || _lastTurnMeta === void 0 ? void 0 : _lastTurnMeta.latestUserLength)) || String(finalContent || '').length,
                         hasImage: String(finalContent || '').includes('data:image/'),
                         historyLength: requestHistory.length,
-                        ...(error?.status ? { httpStatus: Number(error.status) } : {}),
-                        ...(error?.reason ? { reason: String(error.reason) } : {})
+                        ...(((error === null || error === void 0 ? void 0 : error.status)) ? { httpStatus: Number(error.status) } : {}),
+                        ...(((error === null || error === void 0 ? void 0 : error.reason)) ? { reason: String(error.reason) } : {})
                     }
                 });
             }
@@ -2210,7 +2212,7 @@ class FreeTalkSystem {
             this.uiManager.updateNameTag(failedTurnName);
             if (this.uiManager.messageEl) this.uiManager.messageEl.innerHTML = failedTurnHtml;
         } finally {
-            _streamingPreview?.stop();
+            ((_streamingPreview === null || _streamingPreview === void 0 ? void 0 : _streamingPreview.stop()));
             this.dialogueSystem.finishStreamingText(scene.name);
             if (this._activeRequestOwner === requestOwner) {
                 this._activeRequestOwner = null;
@@ -2234,18 +2236,18 @@ class FreeTalkSystem {
         }
     }
 
-    advanceGroupMessageQueue() {
+    advanceGroupMessageQueue() { var __oc156, __oc157;
         if (!this.isGroupMode || !this._groupAdvanceResolver) return false;
         const resolve = this._groupAdvanceResolver;
         this._groupAdvanceResolver = null;
-        this.uiManager.showNextIndicator?.(false);
+        (((__oc157 = (__oc156 = this.uiManager).showNextIndicator) === null || __oc157 === void 0 ? void 0 : __oc157.call(__oc156, false)));
         resolve(true);
         return true;
     }
 
-    _waitForGroupMessageAdvance(requestContext, remaining) {
+    _waitForGroupMessageAdvance(requestContext, remaining) { var __oc158, __oc159;
         this._groupMessagesRemaining = remaining;
-        this.uiManager.showNextIndicator?.(remaining > 0);
+        (((__oc159 = (__oc158 = this.uiManager).showNextIndicator) === null || __oc159 === void 0 ? void 0 : __oc159.call(__oc158, remaining > 0)));
         if (remaining <= 0) return Promise.resolve(true);
         return new Promise((resolve) => {
             // 사용자가 넘기지 않아도 대기가 영원히 이어지지 않도록 넉넉한 시간 뒤 자동으로 넘긴다.
@@ -2254,10 +2256,10 @@ class FreeTalkSystem {
                 if (timer) clearTimeout(timer);
                 resolve(value);
             };
-            timer = setTimeout(() => {
+            timer = setTimeout(() => { var __oc160, __oc161;
                 if (this._groupAdvanceResolver === resolver) {
                     this._groupAdvanceResolver = null;
-                    this.uiManager.showNextIndicator?.(false);
+                    (((__oc161 = (__oc160 = this.uiManager).showNextIndicator) === null || __oc161 === void 0 ? void 0 : __oc161.call(__oc160, false)));
                     resolver(true);
                 }
             }, 180000);
@@ -2282,7 +2284,7 @@ class FreeTalkSystem {
             if (start >= 0 && end > start) jsonText = jsonText.slice(start, end + 1);
         }
         const parsed = JSON.parse(jsonText);
-        if (!Array.isArray(parsed?.conversations)) {
+        if (!Array.isArray(((parsed === null || parsed === void 0 ? void 0 : parsed.conversations)))) {
             throw new Error('Cupid group response is missing conversations');
         }
 
@@ -2293,12 +2295,14 @@ class FreeTalkSystem {
         const normalized = [];
         const seen = new Set();
         for (const conversation of parsed.conversations) {
-            const rawName = String(conversation?.name || '').trim();
+            const rawName = String(((conversation === null || conversation === void 0 ? void 0 : conversation.name)) || '').trim();
             const participant = byName.get(rawName.toLowerCase())
-                || this.groupParticipants.find(item => (this.charNameMap[rawName] || window.normalizePromptCharacterKey?.(rawName) || rawName) === item.id);
+                || this.groupParticipants.find(item => { var __oc162; return (
+(this.charNameMap[rawName] || (((__oc162 = window.normalizePromptCharacterKey) === null || __oc162 === void 0 ? void 0 : __oc162.call(window, rawName))) || rawName) === item.id
+); });
             if (!participant || seen.has(participant.id)) continue;
             const segments = this._sanitizeSegmentsPlaceholders(this.normalizeSegments(conversation.segments));
-            if (!segments?.length) continue;
+            if (!((segments === null || segments === void 0 ? void 0 : segments.length))) continue;
             seen.add(participant.id);
             normalized.push({
                 speakerId: participant.id,
@@ -2319,30 +2323,30 @@ class FreeTalkSystem {
         return ordered;
     }
 
-    _applyGroupExpression(expression, speakerId) {
-        const expressions = window.CHARACTER_EXPRESSIONS?.[speakerId];
+    _applyGroupExpression(expression, speakerId) { var __oc163, __oc164, __oc166, __oc167, __oc168, __oc169, __oc170, __oc171, __oc172;
+        const expressions = (((__oc163 = window.CHARACTER_EXPRESSIONS) === null || __oc163 === void 0 ? void 0 : __oc163[speakerId]));
         const normalized = CupidFreeTalkCore.normalizeAvailableExpression(
             expression,
             Object.keys(expressions || {})
         );
-        const slot = Object.values(this.uiManager?.charSlots || {})
-            .find(candidate => candidate?.dataset?.groupCharId === speakerId);
-        const img = slot?.querySelector('img');
-        const outfitScene = this._getEffectiveOutfitScene?.({}, slot);
-        const baseSrc = expressions?.[normalized];
+        const slot = Object.values((((__oc164 = this.uiManager) === null || __oc164 === void 0 ? void 0 : __oc164.charSlots)) || {})
+            .find(candidate => { var __oc165; return (
+(((__oc165 = candidate === null || candidate === void 0 ? void 0 : candidate.dataset) === null || __oc165 === void 0 ? void 0 : __oc165.groupCharId)) === speakerId
+); });
+        const img = ((slot === null || slot === void 0 ? void 0 : slot.querySelector('img')));
+        const outfitScene = (((__oc166 = this._getEffectiveOutfitScene) === null || __oc166 === void 0 ? void 0 : __oc166.call(this, {}, slot)));
+        const baseSrc = ((expressions === null || expressions === void 0 ? void 0 : expressions[normalized]));
         const outfitSrc = baseSrc
-            ? (window.GalleryData?.resolveOutfitExpression?.(outfitScene, baseSrc) || baseSrc)
+            ? ((((__oc168 = (__oc167 = window.GalleryData) === null || __oc167 === void 0 ? void 0 : __oc167.resolveOutfitExpression) === null || __oc168 === void 0 ? void 0 : __oc168.call(__oc167, outfitScene, baseSrc))) || baseSrc)
             : baseSrc;
         const isCasualOutfit = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(String(outfitSrc || ''));
         const src = (!isCasualOutfit && outfitSrc && typeof window.pickCharacterExpressionVariant === 'function')
             ? window.pickCharacterExpressionVariant(speakerId, normalized, outfitSrc, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
             : outfitSrc;
-        const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(src)
-            || window.getCupidChatAvatarAsset?.({ dataset: { cupidAvatarAsset: src } })
+        const avatarAsset = (((__oc169 = window.getCupidChatAvatarAssetFromPath) === null || __oc169 === void 0 ? void 0 : __oc169.call(window, src)))
+            || (((__oc170 = window.getCupidChatAvatarAsset) === null || __oc170 === void 0 ? void 0 : __oc170.call(window, { dataset: { cupidAvatarAsset: src } })))
             || '';
-        const expressionVariant = window.normalizeCupidExpressionVariant?.(
-            window.getCupidExpressionVariantId?.(src || avatarAsset, normalized)
-        ) || '';
+        const expressionVariant = (((__oc171 = window.normalizeCupidExpressionVariant) === null || __oc171 === void 0 ? void 0 : __oc171.call(window, (__oc172 = window.getCupidExpressionVariantId) === null || __oc172 === void 0 ? void 0 : __oc172.call(window, src || avatarAsset, normalized)))) || '';
         const selection = {
             owner: speakerId,
             expression: normalized,
@@ -2352,7 +2356,7 @@ class FreeTalkSystem {
         };
         this._lastExpressionSelection = selection;
         if (src && img) {
-            (window.CupidExpressionState ||= {})[speakerId] = normalized;
+            ((window.CupidExpressionState || (window.CupidExpressionState = {})))[speakerId] = normalized;
             img.dataset.rawSrc = src;
             this._loadCupidProtectedImage(img, src);
         }
@@ -2361,15 +2365,15 @@ class FreeTalkSystem {
 
     // Each group speaker is scored independently: every character may gain up to +3 per turn on its own,
     // matching the documented 18 turns x 3 = 54 pre-ending free-talk budget per character (2026-10-06).
-    _applyGroupAffinity(change, speakerId, latestUserText = '', scene = null) {
-        if (!this.stateManager.stats?.[speakerId]) return null;
+    _applyGroupAffinity(change, speakerId, latestUserText = '', scene = null) { var __oc173, __oc174, __oc175;
+        if (!(((__oc173 = this.stateManager.stats) === null || __oc173 === void 0 ? void 0 : __oc173[speakerId]))) return null;
         if (!Number.isInteger(change)) return null;
         const previousValue = this.stateManager.getAffinity(speakerId);
         let requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
             change,
             latestUserText,
             previousValue,
-            { characterId: speakerId, nonRomance: speakerId === 'Haeun' && scene?.haeunRomance !== true }
+            { characterId: speakerId, nonRomance: speakerId === 'Haeun' && ((scene === null || scene === void 0 ? void 0 : scene.haeunRomance)) !== true }
         );
         if (requestedChange > 0) requestedChange = Math.min(requestedChange, GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX);
         if (requestedChange === 0) {
@@ -2382,11 +2386,11 @@ class FreeTalkSystem {
         if (appliedChange === 0) {
             return { change: 0, value: previousValue, requestedChange, appliedChange: 0, positiveUsed: 0 };
         }
-        const groupKey = window.CupidAffinityGate?.commitKey() || '';
+        const groupKey = (((__oc174 = window.CupidAffinityGate) === null || __oc174 === void 0 ? void 0 : __oc174.commitKey())) || '';
         const groupTurn = Number(groupKey.slice(groupKey.lastIndexOf(':') + 1));
         const groupAllowed = groupKey.startsWith(`talk:${this.currentSceneId}:`)
             && Number.isInteger(groupTurn) && groupTurn >= 0 && groupTurn < Number(this.currentMaxTurns || 0)
-            && window.CupidAffinityGate?.grant(speakerId, appliedChange);
+            && (((__oc175 = window.CupidAffinityGate) === null || __oc175 === void 0 ? void 0 : __oc175.grant(speakerId, appliedChange)));
         if (!groupAllowed) {
             return { change: 0, value: previousValue, requestedChange, appliedChange: 0, positiveUsed: 0 };
         }
@@ -2404,13 +2408,16 @@ class FreeTalkSystem {
         };
     }
 
-    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null, streamingPreview = null, displayFallback = null) {
+    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null, streamingPreview = null, displayFallback = null) { var __oc176, __oc177, __oc178, __oc179, __oc180, __oc181, __oc182, __oc183, __oc184, __oc190, __oc191;
         const rendered = [];
         for (let index = 0; index < conversations.length; index += 1) {
             this._assertRequestContext(requestContext);
             const conversation = conversations[index];
-            const portrait = Object.values(this.uiManager?.charSlots || {}).find(slot => slot?.dataset?.groupCharId === conversation.speakerId)?.querySelector('img');
-            const shownPortrait = window.getCupidPortraitLogFields?.(portrait, conversation.speakerId) || {};
+            const portrait = (((__oc177 = Object.values(((__oc176 = this.uiManager) === null || __oc176 === void 0 ? void 0 : __oc176.charSlots) || {}).find(slot => {
+        var __oc376;
+        return ((((__oc376 = slot === null || slot === void 0 ? void 0 : slot.dataset) === null || __oc376 === void 0 ? void 0 : __oc376.groupCharId)) === conversation.speakerId);
+    })) === null || __oc177 === void 0 ? void 0 : __oc177.querySelector('img')));
+            const shownPortrait = (((__oc178 = window.getCupidPortraitLogFields) === null || __oc178 === void 0 ? void 0 : __oc178.call(window, portrait, conversation.speakerId))) || {};
             const shownExpr = String(shownPortrait.expression || '').replace(/^(?:date|home)_/i, '');
             const requestedExpression = conversation.expression === 'neutral'
                 ? (shownExpr || 'normal')
@@ -2420,20 +2427,19 @@ class FreeTalkSystem {
             const selection = displayFallback
                 ? null
                 : this._applyGroupExpression(requestedExpression, conversation.speakerId);
-            const avatarAsset = window.pickCupidSpeakerAvatarAsset?.(conversation.speakerId,
-                window.getCupidChatAvatarAsset?.(portrait), selection?.avatarAsset, shownPortrait.avatarAsset) || '';
+            const avatarAsset = (((__oc179 = window.pickCupidSpeakerAvatarAsset) === null || __oc179 === void 0 ? void 0 : __oc179.call(window, conversation.speakerId, (__oc180 = window.getCupidChatAvatarAsset) === null || __oc180 === void 0 ? void 0 : __oc180.call(window, portrait), selection === null || selection === void 0 ? void 0 : selection.avatarAsset, shownPortrait.avatarAsset))) || '';
             const loggedExpression = displayFallback
                 ? (shownPortrait.expression || '')
                 : (requestedExpression || shownPortrait.expression || '');
-            const expressionVariant = window.normalizeCupidExpressionVariant?.(selection?.expressionVariant)
-                || window.getCupidExpressionVariantId?.(avatarAsset, loggedExpression)
+            const expressionVariant = (((__oc181 = window.normalizeCupidExpressionVariant) === null || __oc181 === void 0 ? void 0 : __oc181.call(window, selection === null || selection === void 0 ? void 0 : selection.expressionVariant)))
+                || (((__oc182 = window.getCupidExpressionVariantId) === null || __oc182 === void 0 ? void 0 : __oc182.call(window, avatarAsset, loggedExpression)))
                 || shownPortrait.expressionVariant
                 || '';
-            window.recordCupidVisibleChat?.({ charId: 'group', role: 'assistant', content: conversation.text,
-                speakerId: conversation.speakerId, participants: this.groupParticipants,
-                sessionId: requestContext.sceneId, turnId: requestContext.turnMeta?.turnId,
-                expression: loggedExpression, expressionVariant, avatarAsset,
-                conversationDay: this.stateManager.currentDay });
+            (((__oc183 = window.recordCupidVisibleChat) === null || __oc183 === void 0 ? void 0 : __oc183.call(window, { charId: 'group', role: 'assistant', content: conversation.text,
+        speakerId: conversation.speakerId, participants: this.groupParticipants,
+        sessionId: requestContext.sceneId, turnId: (__oc184 = requestContext.turnMeta) === null || __oc184 === void 0 ? void 0 : __oc184.turnId,
+        expression: loggedExpression, expressionVariant, avatarAsset,
+        conversationDay: this.stateManager.currentDay })));
             if (index === 0 && streamingPreview) {
                 const pacedConversationText = Array.isArray(conversation.segments) && conversation.segments.length > 0
                     ? conversation.segments.map(segment => segment.text).join('\n\n')
@@ -2462,7 +2468,7 @@ class FreeTalkSystem {
         // Commit both speakers together after every message has finished rendering.
         // Skipping or leaving between speakers must not retain half a turn's rewards.
         this._assertRequestContext(requestContext);
-        const commitTurn = () => {
+        const commitTurn = () => { var __oc185, __oc186, __oc187, __oc188, __oc189;
         for (const conversation of rendered) {
             const affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(conversation.speakerId) } : this._applyGroupAffinity(
                 conversation.affinity,
@@ -2471,43 +2477,43 @@ class FreeTalkSystem {
                 scene
             );
             const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
-                this.stateManager.getRelationshipAftermath?.(conversation.speakerId),
-                affinityResult?.requestedChange ?? 0,
+                (((__oc186 = (__oc185 = this.stateManager).getRelationshipAftermath) === null || __oc186 === void 0 ? void 0 : __oc186.call(__oc185, conversation.speakerId))),
+                (((__oc187 = affinityResult === null || affinityResult === void 0 ? void 0 : affinityResult.requestedChange) !== null && __oc187 !== void 0 ? __oc187 : 0)),
                 latestUserText,
                 {
                     source: 'user',
-                    fallbackCause: scene?.groupAftermathCause || (lang === 'ko'
+                    fallbackCause: ((scene === null || scene === void 0 ? void 0 : scene.groupAftermathCause)) || (lang === 'ko'
                         ? '함께 나눈 대화에서 사용자가 남긴 말이나 행동'
                         : ({ ja: '一緒に交わした会話でユーザーが残した言葉や行動', es: 'las palabras o acciones del usuario durante la conversación grupal', fr: 'les paroles ou les actes de l’utilisateur pendant la conversation de groupe', de: 'die Worte oder Handlungen des Nutzers während des Gruppengesprächs', pt: 'as palavras ou ações do usuário durante a conversa em grupo', zh: '在共同对话中用户留下的话语或行动' }[lang] || 'the user’s words or actions during the group conversation'))
                 }
             );
-            if (!displayFallback) this.stateManager.setRelationshipAftermath?.(conversation.speakerId, nextAftermath);
-            if (!displayFallback?.empty) this.galleryManager.incrementFreeTalkCount(conversation.speakerId);
+            if (!displayFallback) (((__oc189 = (__oc188 = this.stateManager).setRelationshipAftermath) === null || __oc189 === void 0 ? void 0 : __oc189.call(__oc188, conversation.speakerId, nextAftermath)));
+            if (!((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty))) this.galleryManager.incrementFreeTalkCount(conversation.speakerId);
             conversation.affinityResult = affinityResult;
         }
             const last = rendered.at(-1);
-            if (!displayFallback?.empty && last) {
+            if (!((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty)) && last) {
                 this._commitFreeTalkCheckpoint({ content: last.text, speakerId: last.speakerId, speakerName: last.speakerName, segments: last.segments });
             }
         };
-        if (displayFallback?.empty) {
+        if (((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty))) {
             this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
             if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
         }
-        const turnResult = this.stateManager.commitProgressEvent && !displayFallback?.empty
+        const turnResult = this.stateManager.commitProgressEvent && !((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty))
             ? await this.stateManager.commitProgressEvent(`talk:${requestContext.sceneId}:${requestContext.freeTalkTurnsBefore}`, commitTurn,
                 { checkpoint: () => this.stateManager.freeTalkCheckpoint })
             : { applied: true, value: commitTurn() };
         if (!turnResult.applied) throw this._makeStaleTurnError('This group turn was already committed');
         if (rendered.length) this.uiManager.updateNameTag(rendered.at(-1).speakerName);
-        this.uiManager.showNextIndicator?.(false);
+        (((__oc191 = (__oc190 = this.uiManager).showNextIndicator) === null || __oc191 === void 0 ? void 0 : __oc191.call(__oc190, false)));
         this._groupMessagesRemaining = 0;
         return rendered;
     }
 
-    async sendGroupChatMessage(getSceneFn) {
+    async sendGroupChatMessage(getSceneFn) { var __oc192, __oc193, __oc194, __oc195, __oc196, __oc197, __oc198, __oc201, __oc202, __oc203, __oc204, __oc205, __oc206, __oc207, __oc208, __oc211, __oc212, __oc213, __oc214, __oc217, __oc218, __oc219, __oc220, __oc221, __oc222, __oc223, __oc224;
         if (this.isProcessingChat || !this.isGroupMode) return;
-        if (!this.uiManager?.chatInput || !this.uiManager?.chatSendBtn || !this.uiManager?.dialogueBox) return;
+        if (!(((__oc192 = this.uiManager) === null || __oc192 === void 0 ? void 0 : __oc192.chatInput)) || !(((__oc193 = this.uiManager) === null || __oc193 === void 0 ? void 0 : __oc193.chatSendBtn)) || !(((__oc194 = this.uiManager) === null || __oc194 === void 0 ? void 0 : __oc194.dialogueBox))) return;
         const text = this.uiManager.chatInput.value.trim();
         const stagedImage = this.uiManager.stagedImage;
         if ((!text && !stagedImage) || this.freeTalkTurns >= this.currentMaxTurns || this.dialogueSystem.isCurrentlyTyping()) return;
@@ -2517,7 +2523,7 @@ class FreeTalkSystem {
         const requestHistory = this.freeTalkHistory;
         const requestEpoch = this._freeTalkEpoch;
         const groupKey = this.currentCharKey;
-        if (!scene || scene.type !== 'group_free_talk' || !groupKey?.startsWith('group:')) return;
+        if (!scene || scene.type !== 'group_free_talk' || !((groupKey === null || groupKey === void 0 ? void 0 : groupKey.startsWith('group:')))) return;
 
         const requestOwner = {};
         const requestContext = {
@@ -2543,9 +2549,9 @@ class FreeTalkSystem {
         const finalContent = stagedImage ? (text ? `${text}\n\n${stagedImage}` : stagedImage) : text;
         requestContext.turnMeta = this._createTurnMeta(finalContent);
         this._activeChatTurnId = requestContext.turnMeta.turnId;
-        window.recordCupidVisibleChat?.({ charId: 'group', role: 'user', content: finalContent,
-            sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId, speakerId: '__player__',
-            participants: this.groupParticipants, conversationDay: this.stateManager.currentDay, logSource: 'realtime' });
+        (((__oc195 = window.recordCupidVisibleChat) === null || __oc195 === void 0 ? void 0 : __oc195.call(window, { charId: 'group', role: 'user', content: finalContent,
+        sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId, speakerId: '__player__',
+        participants: this.groupParticipants, conversationDay: this.stateManager.currentDay, logSource: 'realtime' })));
         this.uiManager.messageEl.innerHTML = text ? this.dialogueSystem.parseNarration(text) : '';
         if (stagedImage) {
             const img = document.createElement('img');
@@ -2555,9 +2561,9 @@ class FreeTalkSystem {
             this.uiManager.messageEl.appendChild(img);
         }
         const failedTurnName = playerLabels[lang] || playerLabels.en;
-        const failedTurnHtml = this.uiManager.messageEl?.innerHTML || '';
+        const failedTurnHtml = (((__oc196 = this.uiManager.messageEl) === null || __oc196 === void 0 ? void 0 : __oc196.innerHTML)) || '';
         this.uiManager.chatInput.value = '';
-        this.uiManager.resizeChatInput?.();
+        (((__oc198 = (__oc197 = this.uiManager).resizeChatInput) === null || __oc198 === void 0 ? void 0 : __oc198.call(__oc197)));
         this.uiManager.removeStagedImage();
         requestHistory.push({ role: 'user', content: finalContent });
 
@@ -2582,7 +2588,7 @@ class FreeTalkSystem {
                 characterDelayMs: 50,
                 maxCharactersPerFrame: 1,
                 shouldFlush: () => this.dialogueSystem.skipTyping === true,
-                onRender: ({ text: previewText, segments: previewSegments }) => {
+                onRender: ({ text: previewText, segments: previewSegments }) => { var __oc199, __oc200;
                     if (!this._isRequestContextCurrent(requestContext) || !previewSpeaker) return;
                     if (!streamingStarted) {
                         streamingStarted = true;
@@ -2596,10 +2602,10 @@ class FreeTalkSystem {
                             () => this._isRequestContextCurrent(requestContext)
                         );
                     }
-                    window.recordCupidVisibleChat?.({ charId: 'group', role: 'assistant', content: previewText,
-                        speakerId: previewSpeaker.id, participants: this.groupParticipants,
-                        sessionId: requestSceneId, turnId: requestContext.turnMeta?.turnId,
-                        conversationDay: this.stateManager.currentDay, logSource: 'stream-preview' });
+                    (((__oc199 = window.recordCupidVisibleChat) === null || __oc199 === void 0 ? void 0 : __oc199.call(window, { charId: 'group', role: 'assistant', content: previewText,
+        speakerId: previewSpeaker.id, participants: this.groupParticipants,
+        sessionId: requestSceneId, turnId: (__oc200 = requestContext.turnMeta) === null || __oc200 === void 0 ? void 0 : __oc200.turnId,
+        conversationDay: this.stateManager.currentDay, logSource: 'stream-preview' })));
                     this.dialogueSystem.renderStreamingText(
                         previewText,
                         previewSpeaker.name,
@@ -2660,20 +2666,20 @@ class FreeTalkSystem {
                 repetitionGuard,
                 boundaryRule
             });
-            if (optimized[0]?.role === 'system') {
+            if ((((__oc201 = optimized[0]) === null || __oc201 === void 0 ? void 0 : __oc201.role)) === 'system') {
                 optimized = [
                     { ...optimized[0], content: appendFreeTalkDynamicContext(optimized[0].content, postHistoryGuidance) },
                     ...optimized.slice(1)
                 ];
             }
             optimized = this._forceLatestUserMessageLast(optimized, finalContent);
-            const stableFingerprint = getFreeTalkStablePromptFingerprint(optimized[0]?.content || '');
+            const stableFingerprint = getFreeTalkStablePromptFingerprint((((__oc202 = optimized[0]) === null || __oc202 === void 0 ? void 0 : __oc202.content)) || '');
             lastCacheKey = stableFingerprint
                 ? `cupid:ctx:${encodeFreeTalkCacheKeyPart(lang)}:group:${this.groupParticipants.map(item => encodeFreeTalkCacheKeyPart(item.id)).join(':')}:f:s${stableFingerprint}`
                 : '';
             lastTurnMeta = requestContext.turnMeta;
             requestContext.turnMeta = lastTurnMeta;
-            this._activeChatTurnId = lastTurnMeta?.turnId || null;
+            this._activeChatTurnId = ((lastTurnMeta === null || lastTurnMeta === void 0 ? void 0 : lastTurnMeta.turnId)) || null;
 
             const endpoint = (typeof AI_API_ENDPOINT !== 'undefined' && AI_API_ENDPOINT)
                 ? AI_API_ENDPOINT
@@ -2723,11 +2729,11 @@ class FreeTalkSystem {
             });
             this._assertRequestContext(requestContext, data);
             this._applyInputHistoryDisposition(requestContext, data);
-            if (data?.provider === 'deepseek' && data?.usage) {
+            if (((data === null || data === void 0 ? void 0 : data.provider)) === 'deepseek' && ((data === null || data === void 0 ? void 0 : data.usage))) {
                 const usage = data.usage;
                 const cache = data.cache || {};
-                const hitTokens = Number(cache.prompt_cache_hit_tokens ?? usage.prompt_cache_hit_tokens ?? 0);
-                const missTokens = Number(cache.prompt_cache_miss_tokens ?? usage.prompt_cache_miss_tokens ?? 0);
+                const hitTokens = Number((((__oc204 = (__oc203 = cache.prompt_cache_hit_tokens) !== null && __oc203 !== void 0 ? __oc203 : usage.prompt_cache_hit_tokens) !== null && __oc204 !== void 0 ? __oc204 : 0)));
+                const missTokens = Number((((__oc206 = (__oc205 = cache.prompt_cache_miss_tokens) !== null && __oc205 !== void 0 ? __oc205 : usage.prompt_cache_miss_tokens) !== null && __oc206 !== void 0 ? __oc206 : 0)));
                 const hitRatio = hitTokens + missTokens > 0 ? hitTokens / (hitTokens + missTokens) : 0;
                 console.info('[DeepSeek Cache]', {
                     app: 'cupid-group-freetalk',
@@ -2745,12 +2751,12 @@ class FreeTalkSystem {
             const conversations = this.parseGroupJsonResponse(reply);
 
             window.__cupidLastStreamFinish = {
-                provider: data?.provider || '',
-                providerRoute: data?.providerRoute || '',
-                model: data?.model || '',
-                usage: data?.usage || null,
-                cache: data?.cache || null,
-                turnId: data?.turnId || lastTurnMeta?.turnId || '',
+                provider: ((data === null || data === void 0 ? void 0 : data.provider)) || '',
+                providerRoute: ((data === null || data === void 0 ? void 0 : data.providerRoute)) || '',
+                model: ((data === null || data === void 0 ? void 0 : data.model)) || '',
+                usage: ((data === null || data === void 0 ? void 0 : data.usage)) || null,
+                cache: ((data === null || data === void 0 ? void 0 : data.cache)) || null,
+                turnId: ((data === null || data === void 0 ? void 0 : data.turnId)) || ((lastTurnMeta === null || lastTurnMeta === void 0 ? void 0 : lastTurnMeta.turnId)) || '',
                 surface: 'group-freetalk',
                 at: new Date().toISOString()
             };
@@ -2772,22 +2778,21 @@ class FreeTalkSystem {
             streamingPreview = null;
             this._assertRequestContext(requestContext, data);
 
-            const conversationDay = window.resolveCupidConversationDay?.(
-                this.stateManager.currentDay,
-                requestSceneId
-            ) ?? this.stateManager.currentDay;
-            const assistantMessages = rendered.map(item => ({
+            const conversationDay = (((__oc208 = (__oc207 = window.resolveCupidConversationDay) === null || __oc207 === void 0 ? void 0 : __oc207.call(window, this.stateManager.currentDay, requestSceneId)) !== null && __oc208 !== void 0 ? __oc208 : this.stateManager.currentDay));
+            const assistantMessages = rendered.map(item => { var __oc209, __oc210; return (
+({
                 speakerId: item.speakerId,
                 speakerName: item.speakerName,
                 content: item.text,
                 expression: item.expression,
                 avatarAsset: item.avatarAsset,
                 expressionVariant: item.expressionVariant,
-                affinityChange: item.affinityResult?.change,
-                affinityCurrent: item.affinityResult?.value,
+                affinityChange: (((__oc209 = item.affinityResult) === null || __oc209 === void 0 ? void 0 : __oc209.change)),
+                affinityCurrent: (((__oc210 = item.affinityResult) === null || __oc210 === void 0 ? void 0 : __oc210.value)),
                 renderReceipt: item.renderReceipt
-            }));
-            if (displayFallback?.empty) {
+            })
+); });
+            if (((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty))) {
                 this._rollbackRequestHistory(requestContext);
                 this.stateManager.setChatMemory(groupKey, requestHistory);
             } else {
@@ -2806,41 +2811,43 @@ class FreeTalkSystem {
                     }))
                 });
                 this.stateManager.setChatMemory(groupKey, requestHistory);
-                this.stateManager.addGroupConversationMemory?.({
-                    turnId: lastTurnMeta?.turnId || '',
-                    sessionId: requestSceneId || '',
-                    day: conversationDay,
-                    participants: this.groupParticipants,
-                    playerName: this.stateManager.playerName || '',
-                    userContent: requestContext.aiUserContent ?? finalContent,
-                    assistantMessages
-                });
+                (((__oc212 = (__oc211 = this.stateManager).addGroupConversationMemory) === null || __oc212 === void 0 ? void 0 : __oc212.call(__oc211, {
+        turnId: (lastTurnMeta === null || lastTurnMeta === void 0 ? void 0 : lastTurnMeta.turnId) || '',
+        sessionId: requestSceneId || '',
+        day: conversationDay,
+        participants: this.groupParticipants,
+        playerName: this.stateManager.playerName || '',
+        userContent: (__oc213 = requestContext.aiUserContent) !== null && __oc213 !== void 0 ? __oc213 : finalContent,
+        assistantMessages
+    })));
                 const lastSpeaker = rendered.at(-1);
                 this._commitFreeTalkCheckpoint({ content: lastSpeaker.text, speakerId: lastSpeaker.speakerId, speakerName: lastSpeaker.speakerName, segments: lastSpeaker.segments });
             }
-            window.saveGameState?.();
+            (((__oc214 = window.saveGameState) === null || __oc214 === void 0 ? void 0 : __oc214.call(window)));
 
             if (typeof window.saveCupidGroupChatLog === 'function') {
-                void Promise.resolve().then(() => window.saveCupidGroupChatLog({
+                void Promise.resolve().then(() => { return (
+window.saveCupidGroupChatLog({
                         userContent: finalContent,
                         assistantMessages,
                         participants: this.groupParticipants,
                         sessionId: requestSceneId || '',
-                        turnId: lastTurnMeta?.turnId || '',
+                        turnId: ((lastTurnMeta === null || lastTurnMeta === void 0 ? void 0 : lastTurnMeta.turnId)) || '',
                         playerName: this.stateManager.playerName || '',
                         conversationDay,
                         responseMetadata: data
-                    }))
-                    .catch(logError => {
+                    })
+); })
+                    .catch(logError => { var __oc215, __oc216;
                         console.warn('[Cupid Group FreeTalk] Could not persist chat log asynchronously', logError);
-                        window.logCupidError?.(logError, {
-                            source: 'FreeTalkSystem.saveCupidGroupChatLog',
-                            errorType: 'chat_log_client_exception',
-                            errorClass: 'client',
-                            sessionId: requestSceneId || '',
-                            context: { charId: 'group', logContext: 'group' },
-                            extra: { turnId: requestContext?.turnMeta?.turnId || '' }
-                        });
+                        (((__oc215 = window.logCupidError) === null || __oc215 === void 0 ? void 0 : __oc215.call(window, logError, {
+        source: 'FreeTalkSystem.saveCupidGroupChatLog',
+        errorType: 'chat_log_client_exception',
+        errorClass: 'client',
+        sessionId: requestSceneId || '',
+        context: { charId: 'group', logContext: 'group' },
+        extra: { turnId: ((__oc216 = requestContext === null || requestContext === void 0 ? void 0 : requestContext.turnMeta) === null || __oc216 === void 0 ? void 0 : __oc216.turnId) || '' }
+    })));
                     });
             }
 
@@ -2849,52 +2856,52 @@ class FreeTalkSystem {
                 this.endFreeTalk(requestOwner);
             }
         } catch (error) {
-            streamingPreview?.stop();
+            ((streamingPreview === null || streamingPreview === void 0 ? void 0 : streamingPreview.stop()));
             streamingPreview = null;
             this.dialogueSystem.finishStreamingText();
             const ownsCurrentContext = this._isRequestContextCurrent(requestContext);
-            const isControlBlocked = error?.isControlBlocked === true || error?.reason === 'INPUT_CONTROL_BLOCKED';
+            const isControlBlocked = ((error === null || error === void 0 ? void 0 : error.isControlBlocked)) === true || ((error === null || error === void 0 ? void 0 : error.reason)) === 'INPUT_CONTROL_BLOCKED';
             this._rollbackRequestHistory(requestContext);
             if (ownsCurrentContext) {
                 if (!isControlBlocked) {
                     if (!this.uiManager.chatInput.value) this.uiManager.chatInput.value = text;
-                    this.uiManager.resizeChatInput?.();
-                    if (stagedImage && !this.uiManager.stagedImage) this.uiManager.updateImagePreview?.(stagedImage);
+                    (((__oc218 = (__oc217 = this.uiManager).resizeChatInput) === null || __oc218 === void 0 ? void 0 : __oc218.call(__oc217)));
+                    if (stagedImage && !this.uiManager.stagedImage) (((__oc220 = (__oc219 = this.uiManager).updateImagePreview) === null || __oc220 === void 0 ? void 0 : __oc220.call(__oc219, stagedImage)));
                 }
                 this.freeTalkTurns = requestContext.freeTalkTurnsBefore;
                 if (this.uiManager.turnCountEl) this.uiManager.turnCountEl.textContent = this.currentMaxTurns - this.freeTalkTurns;
             }
-            if (!ownsCurrentContext || error?.isStaleTurn || error?.reason === 'STALE_TURN') return;
+            if (!ownsCurrentContext || ((error === null || error === void 0 ? void 0 : error.isStaleTurn)) || ((error === null || error === void 0 ? void 0 : error.reason)) === 'STALE_TURN') return;
             if (isControlBlocked) {
-                window.recordCupidVisibleChat?.({
-                    charId: 'group',
-                    role: 'user',
-                    content: finalContent,
-                    sessionId: requestSceneId,
-                    turnId: requestContext?.turnMeta?.turnId || error?.turnId || '',
-                    speakerId: '__player__',
-                    participants: this.groupParticipants,
-                    conversationDay: this.stateManager?.currentDay,
-                    responseMetadata: error,
-                    logSource: 'control-blocked'
-                });
-                const notice = error?.userMessage || CupidFreeTalkCore.getControlBlockedNotice?.(lang) || 'Inputs that dictate the other character cannot be sent.';
+                (((__oc221 = window.recordCupidVisibleChat) === null || __oc221 === void 0 ? void 0 : __oc221.call(window, {
+        charId: 'group',
+        role: 'user',
+        content: finalContent,
+        sessionId: requestSceneId,
+        turnId: ((__oc222 = requestContext === null || requestContext === void 0 ? void 0 : requestContext.turnMeta) === null || __oc222 === void 0 ? void 0 : __oc222.turnId) || (error === null || error === void 0 ? void 0 : error.turnId) || '',
+        speakerId: '__player__',
+        participants: this.groupParticipants,
+        conversationDay: (__oc223 = this.stateManager) === null || __oc223 === void 0 ? void 0 : __oc223.currentDay,
+        responseMetadata: error,
+        logSource: 'control-blocked'
+    })));
+                const notice = ((error === null || error === void 0 ? void 0 : error.userMessage)) || (((__oc224 = CupidFreeTalkCore.getControlBlockedNotice) === null || __oc224 === void 0 ? void 0 : __oc224.call(CupidFreeTalkCore, lang))) || 'Inputs that dictate the other character cannot be sent.';
                 this._clearThinkingMessage();
                 this.uiManager.updateNameTag(failedTurnName);
                 this.uiManager.updateNameTag({ ko: '안내', en: 'Notice', es: 'Aviso', ja: '案内', fr: 'Info', de: 'Hinweis', pt: 'Aviso', zh: '提示' }[String((typeof langErr !== 'undefined' ? langErr : lang) || 'ko').toLowerCase().split('-')[0]] || 'Notice'); if (this.uiManager.messageEl) this.uiManager.messageEl.textContent = notice;
                 return;
             }
-            const isHandledTurnstileChallenge = error?.turnstileBotSuspected === true
-                || error?.isBrowserVerificationError === true
-                || /^(?:300|600)\d*$/.test(String(error?.turnstileErrorCode || ''));
+            const isHandledTurnstileChallenge = ((error === null || error === void 0 ? void 0 : error.turnstileBotSuspected)) === true
+                || ((error === null || error === void 0 ? void 0 : error.isBrowserVerificationError)) === true
+                || /^(?:300|600)\d*$/.test(String(((error === null || error === void 0 ? void 0 : error.turnstileErrorCode)) || ''));
             const isTransientTransportFailure = CupidFreeTalkCore.isNetworkTransportError(error);
             const isOfflineTransportFailure = navigator.onLine === false && isTransientTransportFailure;
-            if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn('[Cupid Group FreeTalk] transport/verification interruption:', error?.message || error);
+            if (isTransientTransportFailure || isHandledTurnstileChallenge) console.warn('[Cupid Group FreeTalk] transport/verification interruption:', ((error === null || error === void 0 ? void 0 : error.message)) || error);
             else console.error('[Cupid Group FreeTalk] Error:', error);
-            if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || error?.retryExhausted)) {
+            if (typeof window.logCupidError === 'function' && !isHandledTurnstileChallenge && !isOfflineTransportFailure && (!isTransientTransportFailure || ((error === null || error === void 0 ? void 0 : error.retryExhausted)))) {
                 window.logCupidError(error, {
                     source: 'cupid-group-freetalk',
-                    errorType: error?.retryExhausted ? 'freetalk_upstream_retries_exhausted' : CupidFreeTalkCore.isClientCodeException(error) ? 'group_freetalk_client_exception' : /^HTTP\s+\d+/.test(error?.message || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
+                    errorType: ((error === null || error === void 0 ? void 0 : error.retryExhausted)) ? 'freetalk_upstream_retries_exhausted' : CupidFreeTalkCore.isClientCodeException(error) ? 'group_freetalk_client_exception' : /^HTTP\s+\d+/.test(((error === null || error === void 0 ? void 0 : error.message)) || '') ? 'group_freetalk_http_error' : 'group_freetalk_request_failed',
                     sessionId: requestSceneId || '',
                     context: {
                         charId: 'group',
@@ -2905,9 +2912,9 @@ class FreeTalkSystem {
                     },
                     extra: {
                         cacheKey: lastCacheKey,
-                        turnId: lastTurnMeta?.turnId || '',
-                        ...(error?.status ? { httpStatus: Number(error.status) } : {}),
-                        ...(error?.reason ? { reason: String(error.reason) } : {})
+                        turnId: ((lastTurnMeta === null || lastTurnMeta === void 0 ? void 0 : lastTurnMeta.turnId)) || '',
+                        ...(((error === null || error === void 0 ? void 0 : error.status)) ? { httpStatus: Number(error.status) } : {}),
+                        ...(((error === null || error === void 0 ? void 0 : error.reason)) ? { reason: String(error.reason) } : {})
                     }
                 });
             }
@@ -2915,7 +2922,7 @@ class FreeTalkSystem {
             this.uiManager.updateNameTag(failedTurnName);
             if (this.uiManager.messageEl) this.uiManager.messageEl.innerHTML = failedTurnHtml;
         } finally {
-            streamingPreview?.stop();
+            ((streamingPreview === null || streamingPreview === void 0 ? void 0 : streamingPreview.stop()));
             this.dialogueSystem.finishStreamingText();
             if (this._activeRequestOwner === requestOwner) {
                 this._activeRequestOwner = null;
@@ -2977,30 +2984,36 @@ class FreeTalkSystem {
     }
 
     /** 같은 회차의 캐릭터별 본편 대화 전체를 원래 순서대로 반환합니다. */
-    _applyInputHistoryDisposition(requestContext, data) {
-        const disposition = data?.inputHistory;
-        if (disposition?.version !== 1 || !Array.isArray(requestContext?.history)) return;
-        const user = [...requestContext.history].reverse().find(message => message?.role === 'user');
+    _applyInputHistoryDisposition(requestContext, data) { var __oc225;
+        const disposition = ((data === null || data === void 0 ? void 0 : data.inputHistory));
+        if (((disposition === null || disposition === void 0 ? void 0 : disposition.version)) !== 1 || !Array.isArray(((requestContext === null || requestContext === void 0 ? void 0 : requestContext.history)))) return;
+        const user = [...requestContext.history].reverse().find(message => { return (
+((message === null || message === void 0 ? void 0 : message.role)) === 'user'
+); });
         if (!user) return;
         if (disposition.excludeCurrent === true && disposition.treatment === 'unspoken_control') user.excludeFromAiHistory = true;
         else if (disposition.content != null) user.aiHistoryContent = disposition.content;
-        const content = user.excludeFromAiHistory ? '' : user.aiHistoryContent ?? user.content;
+        const content = user.excludeFromAiHistory ? '' : (((__oc225 = user.aiHistoryContent) !== null && __oc225 !== void 0 ? __oc225 : user.content));
         requestContext.aiUserContent = typeof content === 'string' ? content
-            : (content || []).filter(part => part?.type === 'text').map(part => part.text).join('\n');
+            : (content || []).filter(part => { return (
+((part === null || part === void 0 ? void 0 : part.type)) === 'text'
+); }).map(part => part.text).join('\n');
     }
 
-    _buildWindowedHistory(history = this.freeTalkHistory, charKey = this.currentCharKey) {
+    _buildWindowedHistory(history = this.freeTalkHistory, charKey = this.currentCharKey) { var __oc226, __oc227;
         if (!Array.isArray(history) || history.length === 0) return [];
-        this.stateManager.clearChatPromptEpoch?.(charKey);
-        return history.filter(msg => {
-            if (msg?.excludeFromAiHistory) return false;
+        (((__oc227 = (__oc226 = this.stateManager).clearChatPromptEpoch) === null || __oc227 === void 0 ? void 0 : __oc227.call(__oc226, charKey)));
+        return history.filter(msg => { var __oc228;
+            if (((msg === null || msg === void 0 ? void 0 : msg.excludeFromAiHistory))) return false;
             if (!msg || msg.role !== 'assistant') return true;
-            if (msg.displayFallback?.empty === true) return false;
+            if ((((__oc228 = msg.displayFallback) === null || __oc228 === void 0 ? void 0 : __oc228.empty)) === true) return false;
             return String(msg.content || '').trim() !== '...';
-        }).map(msg => msg?.aiHistoryContent != null ? { ...msg, content: msg.aiHistoryContent } : msg);
+        }).map(msg => { return (
+((msg === null || msg === void 0 ? void 0 : msg.aiHistoryContent)) != null ? { ...msg, content: msg.aiHistoryContent } : msg
+); });
     }
 
-    _buildInWorldUserRoleBlock(messages) {
+    _buildInWorldUserRoleBlock(messages) { var __oc229;
         if (!Array.isArray(messages)) return '';
 
         const userMessages = [...messages].reverse().filter(msg =>
@@ -3037,12 +3050,12 @@ class FreeTalkSystem {
                 text.match(/(?:あなたは|君は|私は|僕は|俺は)\s*["'“”‘’「」『』]?([\p{L}\p{N}_\- ]{1,24}?)["'“”‘’「」『』]?\s*(?:です|だ|である)(?:[\s.!?。]|$)/u) ||
                 text.match(/(?:你是|我是|玩家是|用户是)\s*["'“”‘’「」『』]?([\p{L}\p{N}_\- ]{1,24}?)["'“”‘’「」『』]?(?:[\s.!?。]|$)/u) ||
                 text.match(/\b(?:eres|soy|tu es|je suis|du bist|ich bin|você é|eu sou)\s+["'“”‘’]?([\p{L}][\p{L}\p{N}_\- ]{1,30})["'“”‘’]?(?:[\s.!?]|$)/iu);
-            const roleName = cleanRoleName(koMatch?.[1] || enMatch?.[1] || multiMatch?.[1] || '');
+            const roleName = cleanRoleName(((koMatch === null || koMatch === void 0 ? void 0 : koMatch[1])) || ((enMatch === null || enMatch === void 0 ? void 0 : enMatch[1])) || ((multiMatch === null || multiMatch === void 0 ? void 0 : multiMatch[1])) || '');
             if (!roleName || blockedRoleNames.has(roleName.toLowerCase())) continue;
 
             const lang = String(
                 (typeof window !== 'undefined' && window.GAME_LANG) ||
-                (typeof document !== 'undefined' && document.documentElement?.lang) ||
+                (typeof document !== 'undefined' && (((__oc229 = document.documentElement) === null || __oc229 === void 0 ? void 0 : __oc229.lang))) ||
                 'ko'
             ).toLowerCase();
 
@@ -3087,8 +3100,8 @@ class FreeTalkSystem {
      * @param {string} reply - AI 응답 원문
      * @returns {string} 추출된 텍스트 또는 원본 그대로
      */
-    _getPlayerDisplayName() {
-        const lang = String((typeof window !== 'undefined' && window.GAME_LANG) || (typeof document !== 'undefined' && document.documentElement?.lang) || 'ko').toLowerCase().split('-')[0]; return this.stateManager?.playerName || ({ ko: '주인공', en: 'Player', ja: '主人公', es: 'Protagonista', fr: 'Protagoniste', de: 'Protagonist', pt: 'Protagonista', zh: '主角' }[lang] || 'Player');
+    _getPlayerDisplayName() { var __oc230, __oc231;
+        const lang = String((typeof window !== 'undefined' && window.GAME_LANG) || (typeof document !== 'undefined' && (((__oc230 = document.documentElement) === null || __oc230 === void 0 ? void 0 : __oc230.lang))) || 'ko').toLowerCase().split('-')[0]; return (((__oc231 = this.stateManager) === null || __oc231 === void 0 ? void 0 : __oc231.playerName)) || ({ ko: '주인공', en: 'Player', ja: '主人公', es: 'Protagonista', fr: 'Protagoniste', de: 'Protagonist', pt: 'Protagonista', zh: '主角' }[lang] || 'Player');
     }
 
     _sanitizePlayerPlaceholders(text) {
@@ -3219,7 +3232,7 @@ class FreeTalkSystem {
         }).filter(seg => seg && seg.text);
     }
 
-    parseJsonResponse(reply) {
+    parseJsonResponse(reply) { var __oc232, __oc233, __oc234;
         if (!reply) {
             throw new Error('AI response was empty. Please try again.');
         }
@@ -3254,7 +3267,7 @@ class FreeTalkSystem {
 
             // 📌 JSON 파싱 시도
             const rawParsed = JSON.parse(jsonStr);
-            const parsed = window.CupidFreeTalkCore?.normalizeCupidResponsePayload?.(rawParsed) || rawParsed;
+            const parsed = (((__oc233 = (__oc232 = window.CupidFreeTalkCore) === null || __oc232 === void 0 ? void 0 : __oc232.normalizeCupidResponsePayload) === null || __oc233 === void 0 ? void 0 : __oc233.call(__oc232, rawParsed))) || rawParsed;
 
             // 📌 신규 — segments 배열 우선 처리 {segments, expression, affinity}
             if (parsed && typeof parsed === 'object' && !Array.isArray(parsed) && Array.isArray(parsed.segments) && parsed.segments.length > 0) {
@@ -3286,17 +3299,17 @@ class FreeTalkSystem {
         } catch (e) {
             // 📌 JSON 파싱 실패 시 경고 로그
             console.warn("JSON parsing failed:", e);
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-freetalk',
-                errorType: 'ai_response_json_parse_failed',
-                sessionId: this.currentSceneId || '',
-                context: {
-                    sceneId: this.currentSceneId || '',
-                    language: window.GAME_LANG || document.documentElement.lang || 'ko',
-                    replyLength: String(reply || '').length,
-                    replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
-                }
-            });
+            (((__oc234 = window.reportCupidCaughtError) === null || __oc234 === void 0 ? void 0 : __oc234.call(window, e, {
+        source: 'cupid-freetalk',
+        errorType: 'ai_response_json_parse_failed',
+        sessionId: this.currentSceneId || '',
+        context: {
+            sceneId: this.currentSceneId || '',
+            language: window.GAME_LANG || document.documentElement.lang || 'ko',
+            replyLength: String(reply || '').length,
+            replyHash: window.hashCupidLogText ? window.hashCupidLogText(reply || '') : ''
+        }
+    })));
         }
 
         throw new Error('AI response format could not be parsed. Please try again.');
@@ -3348,16 +3361,16 @@ class FreeTalkSystem {
      * @param {Object} scene - 현재 씬 데이터
      */
 
-    _loadCupidProtectedImage(img, rawPath) {
+    _loadCupidProtectedImage(img, rawPath) { var __oc235, __oc236, __oc237, __oc238, __oc239;
         if (!img || !rawPath) return;
         if (img.dataset) {
             img.dataset.cupidAvatarAsset = rawPath;
-            img.dataset.rawSrc = window.CupidMedia?.resolveUrl?.(rawPath)
+            img.dataset.rawSrc = (((__oc236 = (__oc235 = window.CupidMedia) === null || __oc235 === void 0 ? void 0 : __oc235.resolveUrl) === null || __oc236 === void 0 ? void 0 : __oc236.call(__oc235, rawPath)))
                 || (typeof getAssetUrl === 'function' ? getAssetUrl(rawPath) : rawPath);
         }
-        if (window.CupidMedia?.loadImageWithMediaFallback) {
+        if ((((__oc237 = window.CupidMedia) === null || __oc237 === void 0 ? void 0 : __oc237.loadImageWithMediaFallback))) {
             // This expression was selected by the active conversation, not a preload.
-            window.CupidMedia.unlock?.([rawPath]);
+            (((__oc239 = (__oc238 = window.CupidMedia).unlock) === null || __oc239 === void 0 ? void 0 : __oc239.call(__oc238, [rawPath])));
             window.CupidMedia.loadImageWithMediaFallback(img, rawPath, null, null, { preservePrevious: true });
             return;
         }
@@ -3365,19 +3378,19 @@ class FreeTalkSystem {
         img.src = url;
     }
 
-    _getEffectiveOutfitScene(scene, slotEl = null) {
+    _getEffectiveOutfitScene(scene, slotEl = null) { var __oc240, __oc241, __oc242, __oc243, __oc244, __oc245, __oc246;
         const outfitRe = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i;
-        const explicit = String(scene?.character || scene?.characters?.center?.src || scene?.characters?.center || '');
+        const explicit = String(((scene === null || scene === void 0 ? void 0 : scene.character)) || (((__oc241 = (__oc240 = scene === null || scene === void 0 ? void 0 : scene.characters) === null || __oc240 === void 0 ? void 0 : __oc240.center) === null || __oc241 === void 0 ? void 0 : __oc241.src)) || (((__oc242 = scene === null || scene === void 0 ? void 0 : scene.characters) === null || __oc242 === void 0 ? void 0 : __oc242.center)) || '');
         if (explicit) return scene;
-        const img = slotEl?.querySelector?.('img');
-        const activeAsset = window.getCupidChatAvatarAsset?.(img) || img?.dataset?.cupidAvatarAsset || img?.dataset?.rawSrc || '';
+        const img = (((__oc243 = slotEl === null || slotEl === void 0 ? void 0 : slotEl.querySelector) === null || __oc243 === void 0 ? void 0 : __oc243.call(slotEl, 'img')));
+        const activeAsset = (((__oc244 = window.getCupidChatAvatarAsset) === null || __oc244 === void 0 ? void 0 : __oc244.call(window, img))) || (((__oc245 = img === null || img === void 0 ? void 0 : img.dataset) === null || __oc245 === void 0 ? void 0 : __oc245.cupidAvatarAsset)) || (((__oc246 = img === null || img === void 0 ? void 0 : img.dataset) === null || __oc246 === void 0 ? void 0 : __oc246.rawSrc)) || '';
         if (outfitRe.test(String(activeAsset))) {
             return { ...(scene || {}), character: activeAsset };
         }
         return scene;
     }
 
-    applyExpression(exprName, scene) {
+    applyExpression(exprName, scene) { var __oc247, __oc248, __oc249, __oc250, __oc251, __oc252, __oc253, __oc254, __oc255, __oc256, __oc257;
         if (scene.romanticInterlude === true) return;
         if (!window.CHARACTER_EXPRESSIONS && window.ensureCupidFreeTalkRuntime) {
             const epoch = this._freeTalkEpoch;
@@ -3389,31 +3402,29 @@ class FreeTalkSystem {
         }
         if (!window.CHARACTER_EXPRESSIONS) return;
         const charExprs = typeof getCharacterExpressionSet === 'function'
-            ? getCharacterExpressionSet(this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name, scene.name)
-            : (window.CHARACTER_EXPRESSIONS[this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name] || window.CHARACTER_EXPRESSIONS[scene.name]);
+            ? getCharacterExpressionSet((((__oc247 = this.charNameMap) === null || __oc247 === void 0 ? void 0 : __oc247[scene.name])) || (((__oc248 = window.normalizePromptCharacterKey) === null || __oc248 === void 0 ? void 0 : __oc248.call(window, scene.name))) || scene.name, scene.name)
+            : (window.CHARACTER_EXPRESSIONS[(((__oc249 = this.charNameMap) === null || __oc249 === void 0 ? void 0 : __oc249[scene.name])) || (((__oc250 = window.normalizePromptCharacterKey) === null || __oc250 === void 0 ? void 0 : __oc250.call(window, scene.name))) || scene.name] || window.CHARACTER_EXPRESSIONS[scene.name]);
         const name = CupidFreeTalkCore.normalizeAvailableExpression(
             exprName,
             Object.keys(charExprs || {})
         );
         if (!charExprs || !charExprs[name]) return;
-        const expressionOwner = this.charNameMap?.[scene.name] || scene.name;
-        if (expressionOwner) (window.CupidExpressionState ||= {})[expressionOwner] = name;
+        const expressionOwner = (((__oc251 = this.charNameMap) === null || __oc251 === void 0 ? void 0 : __oc251[scene.name])) || scene.name;
+        if (expressionOwner) ((window.CupidExpressionState || (window.CupidExpressionState = {})))[expressionOwner] = name;
 
         const centerSlot = this.uiManager.charSlots.center;
         if (!centerSlot) return;
 
         const effectiveScene = this._getEffectiveOutfitScene(scene, centerSlot);
-        const basePath = window.GalleryData?.resolveOutfitExpression?.(effectiveScene, charExprs[name]) || charExprs[name];
+        const basePath = (((__oc253 = (__oc252 = window.GalleryData) === null || __oc252 === void 0 ? void 0 : __oc252.resolveOutfitExpression) === null || __oc253 === void 0 ? void 0 : __oc253.call(__oc252, effectiveScene, charExprs[name]))) || charExprs[name];
         const isCasualOutfit = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(basePath);
         const rawPath = (!isCasualOutfit && basePath === charExprs[name] && typeof window.pickCharacterExpressionVariant === 'function')
             ? window.pickCharacterExpressionVariant(expressionOwner || scene.name, name, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
             : basePath;
-        const avatarAsset = window.getCupidChatAvatarAssetFromPath?.(rawPath)
-            || window.getCupidChatAvatarAsset?.({ dataset: { cupidAvatarAsset: rawPath } })
+        const avatarAsset = (((__oc254 = window.getCupidChatAvatarAssetFromPath) === null || __oc254 === void 0 ? void 0 : __oc254.call(window, rawPath)))
+            || (((__oc255 = window.getCupidChatAvatarAsset) === null || __oc255 === void 0 ? void 0 : __oc255.call(window, { dataset: { cupidAvatarAsset: rawPath } })))
             || '';
-        const expressionVariant = window.normalizeCupidExpressionVariant?.(
-            window.getCupidExpressionVariantId?.(rawPath || avatarAsset, name)
-        ) || '';
+        const expressionVariant = (((__oc256 = window.normalizeCupidExpressionVariant) === null || __oc256 === void 0 ? void 0 : __oc256.call(window, (__oc257 = window.getCupidExpressionVariantId) === null || __oc257 === void 0 ? void 0 : __oc257.call(window, rawPath || avatarAsset, name)))) || '';
         this._lastExpressionSelection = {
             owner: expressionOwner || scene.name,
             expression: name,
@@ -3439,7 +3450,7 @@ class FreeTalkSystem {
      * @param {number} change - 호감도 변화량 (정수)
      * @param {Object} scene - 현재 씬 데이터
      */
-    applyAffinity(change, scene, latestUserText = '') {
+    applyAffinity(change, scene, latestUserText = '') { var __oc258, __oc259;
         const charKey = this.charNameMap[scene.name] || scene.name;
         if (!this.stateManager.stats[charKey]) return null;
         if (!Number.isInteger(change)) return null;
@@ -3466,11 +3477,11 @@ class FreeTalkSystem {
         if (appliedChange === 0) {
             return { change: 0, value: previousValue, requestedChange, appliedChange: 0 };
         }
-        const talkKey = window.CupidAffinityGate?.commitKey() || '';
+        const talkKey = (((__oc258 = window.CupidAffinityGate) === null || __oc258 === void 0 ? void 0 : __oc258.commitKey())) || '';
         const talkTurn = Number(talkKey.slice(talkKey.lastIndexOf(':') + 1));
         const talkAllowed = talkKey.startsWith(`talk:${this.currentSceneId}:`)
             && Number.isInteger(talkTurn) && talkTurn >= 0 && talkTurn < Number(this.currentMaxTurns || 0)
-            && window.CupidAffinityGate?.grant(charKey, appliedChange);
+            && (((__oc259 = window.CupidAffinityGate) === null || __oc259 === void 0 ? void 0 : __oc259.grant(charKey, appliedChange)));
         if (!talkAllowed) {
             return { change: 0, value: previousValue, requestedChange, appliedChange: 0 };
         }
@@ -3487,27 +3498,27 @@ class FreeTalkSystem {
      * 하은 45 게이트 전 개인 대화 3장면(3·4·5일차)을 끝까지 마쳤을 때 +5 완료 보너스를 준다.
      * 스킵이나 중간 이탈에는 주지 않고, 장면당 한 번만 반영한다.
      */
-    _applyHaeunCompletionBonus(scene, sceneId = this.currentSceneId) {
+    _applyHaeunCompletionBonus(scene, sceneId = this.currentSceneId) { var __oc260, __oc261, __oc262, __oc263, __oc264, __oc265, __oc266, __oc267, __oc268, __oc269, __oc270, __oc271, __oc272, __oc273, __oc274, __oc275, __oc276, __oc277, __oc278, __oc279;
         if (!HAEUN_PRE_GATE_PERSONAL_SCENE_IDS.includes(sceneId)) {
-            return { bonus: 0, value: this.stateManager?.getAffinity?.('Haeun') ?? 0 };
+            return { bonus: 0, value: (((__oc262 = (__oc261 = (__oc260 = this.stateManager) === null || __oc260 === void 0 ? void 0 : __oc260.getAffinity) === null || __oc261 === void 0 ? void 0 : __oc261.call(__oc260, 'Haeun')) !== null && __oc262 !== void 0 ? __oc262 : 0)) };
         }
-        const charKey = (this.charNameMap && scene?.name && this.charNameMap[scene.name]) || scene?.name || 'Haeun';
-        if (charKey !== 'Haeun' || !this.stateManager?.stats?.Haeun || scene?.affinityLocked === true) {
-            return { bonus: 0, value: this.stateManager?.getAffinity?.('Haeun') ?? 0 };
+        const charKey = (this.charNameMap && ((scene === null || scene === void 0 ? void 0 : scene.name)) && this.charNameMap[scene.name]) || ((scene === null || scene === void 0 ? void 0 : scene.name)) || 'Haeun';
+        if (charKey !== 'Haeun' || !(((__oc264 = (__oc263 = this.stateManager) === null || __oc263 === void 0 ? void 0 : __oc263.stats) === null || __oc264 === void 0 ? void 0 : __oc264.Haeun)) || ((scene === null || scene === void 0 ? void 0 : scene.affinityLocked)) === true) {
+            return { bonus: 0, value: (((__oc267 = (__oc266 = (__oc265 = this.stateManager) === null || __oc265 === void 0 ? void 0 : __oc265.getAffinity) === null || __oc266 === void 0 ? void 0 : __oc266.call(__oc265, 'Haeun')) !== null && __oc267 !== void 0 ? __oc267 : 0)) };
         }
-        const maxTurns = Number(this.currentMaxTurns || scene?.maxTurns || 0);
+        const maxTurns = Number(this.currentMaxTurns || ((scene === null || scene === void 0 ? void 0 : scene.maxTurns)) || 0);
         if (!(maxTurns > 0) || this.freeTalkTurns < maxTurns) {
             return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
         }
         const bonusFlag = `completed_bonus_${sceneId}`;
-        if (this.stateManager.getFlag?.(bonusFlag)) {
+        if ((((__oc269 = (__oc268 = this.stateManager).getFlag) === null || __oc269 === void 0 ? void 0 : __oc269.call(__oc268, bonusFlag)))) {
             return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
         }
-        const talkKey = window.CupidAffinityGate?.commitKey() || '';
+        const talkKey = (((__oc270 = window.CupidAffinityGate) === null || __oc270 === void 0 ? void 0 : __oc270.commitKey())) || '';
         const talkTurn = Number(talkKey.slice(talkKey.lastIndexOf(':') + 1));
         const talkAllowed = talkKey.startsWith(`talk:${sceneId}:`)
             && Number.isInteger(talkTurn) && talkTurn >= 0 && talkTurn < maxTurns
-            && window.CupidAffinityGate?.grant('Haeun', HAEUN_PRE_GATE_COMPLETION_BONUS);
+            && (((__oc271 = window.CupidAffinityGate) === null || __oc271 === void 0 ? void 0 : __oc271.grant('Haeun', HAEUN_PRE_GATE_COMPLETION_BONUS)));
         if (!talkAllowed) {
             return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
         }
@@ -3515,10 +3526,10 @@ class FreeTalkSystem {
         const previousValue = this.stateManager.getAffinity('Haeun');
         const newValue = this.stateManager.changeAffinity('Haeun', HAEUN_PRE_GATE_COMPLETION_BONUS);
         const actualBonus = newValue - previousValue;
-        this.stateManager.setFlag?.(bonusFlag, true);
-        if (actualBonus !== 0) this.uiManager?.showAffinityChange?.(actualBonus, 'Haeun');
-        this.galleryManager?.updateMaxAffinity?.('Haeun', newValue);
-        this.galleryManager?.checkAffinityUnlock?.('Haeun', newValue);
+        (((__oc273 = (__oc272 = this.stateManager).setFlag) === null || __oc273 === void 0 ? void 0 : __oc273.call(__oc272, bonusFlag, true)));
+        if (actualBonus !== 0) (((__oc275 = (__oc274 = this.uiManager) === null || __oc274 === void 0 ? void 0 : __oc274.showAffinityChange) === null || __oc275 === void 0 ? void 0 : __oc275.call(__oc274, actualBonus, 'Haeun')));
+        (((__oc277 = (__oc276 = this.galleryManager) === null || __oc276 === void 0 ? void 0 : __oc276.updateMaxAffinity) === null || __oc277 === void 0 ? void 0 : __oc277.call(__oc276, 'Haeun', newValue)));
+        (((__oc279 = (__oc278 = this.galleryManager) === null || __oc278 === void 0 ? void 0 : __oc278.checkAffinityUnlock) === null || __oc279 === void 0 ? void 0 : __oc279.call(__oc278, 'Haeun', newValue)));
         return { bonus: actualBonus, value: newValue, requestedBonus: HAEUN_PRE_GATE_COMPLETION_BONUS };
     }
 
@@ -3548,7 +3559,7 @@ class FreeTalkSystem {
      * @param {Object} scene - 현재 씬 데이터 (캐릭터 이름 포함)
      * @returns {string} 표정 태그가 제거된 텍스트
      */
-    processExpressionTags(reply, scene) {
+    processExpressionTags(reply, scene) { var __oc280, __oc281, __oc282, __oc283, __oc284, __oc285, __oc286;
         if (scene.romanticInterlude === true) return reply.replace(/\[EXPRESSION:\s*\w+\]/gi, '').trim();
         // 📌 정규식: [EXPRESSION: xxx] 형태 찾기 (대소문자 무시)
         const exprRegex = /\[EXPRESSION:\s*(\w+)\]/gi;
@@ -3562,8 +3573,8 @@ class FreeTalkSystem {
             if (window.CHARACTER_EXPRESSIONS) {
                 // 현재 캐릭터의 표정 목록 가져오기
                 const charExprs = typeof getCharacterExpressionSet === 'function'
-                    ? getCharacterExpressionSet(this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name, scene.name)
-                    : (window.CHARACTER_EXPRESSIONS[this.charNameMap?.[scene.name] || window.normalizePromptCharacterKey?.(scene.name) || scene.name] || window.CHARACTER_EXPRESSIONS[scene.name]);
+                    ? getCharacterExpressionSet((((__oc280 = this.charNameMap) === null || __oc280 === void 0 ? void 0 : __oc280[scene.name])) || (((__oc281 = window.normalizePromptCharacterKey) === null || __oc281 === void 0 ? void 0 : __oc281.call(window, scene.name))) || scene.name, scene.name)
+                    : (window.CHARACTER_EXPRESSIONS[(((__oc282 = this.charNameMap) === null || __oc282 === void 0 ? void 0 : __oc282[scene.name])) || (((__oc283 = window.normalizePromptCharacterKey) === null || __oc283 === void 0 ? void 0 : __oc283.call(window, scene.name))) || scene.name] || window.CHARACTER_EXPRESSIONS[scene.name]);
 
                 // 배경 미제거 갤러리 전용 CG를 제외한 유효 표정만 반영
                 const normalizedExpr = CupidFreeTalkCore.normalizeAvailableExpression(exprName, Object.keys(charExprs || {}));
@@ -3574,10 +3585,10 @@ class FreeTalkSystem {
                     if (!centerSlot) continue;
 
                     const effectiveScene = this._getEffectiveOutfitScene(scene, centerSlot);
-                    const basePath = window.GalleryData?.resolveOutfitExpression?.(effectiveScene, charExprs[normalizedExpr]) || charExprs[normalizedExpr];
+                    const basePath = (((__oc285 = (__oc284 = window.GalleryData) === null || __oc284 === void 0 ? void 0 : __oc284.resolveOutfitExpression) === null || __oc285 === void 0 ? void 0 : __oc285.call(__oc284, effectiveScene, charExprs[normalizedExpr]))) || charExprs[normalizedExpr];
                     const isCasualOutfit = /(?:^|\/)(seyoun|yuna|dain|nurse)_(date|home)_[^/?]+\.(?:png|webp)(?:\?.*)?$/i.test(basePath);
                     const rawPath = (!isCasualOutfit && basePath === charExprs[normalizedExpr] && typeof window.pickCharacterExpressionVariant === 'function')
-                        ? window.pickCharacterExpressionVariant(this.charNameMap?.[scene.name] || scene.name, normalizedExpr, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
+                        ? window.pickCharacterExpressionVariant((((__oc286 = this.charNameMap) === null || __oc286 === void 0 ? void 0 : __oc286[scene.name])) || scene.name, normalizedExpr, basePath, Math.random, { scope: `story:${window.GAME_LANG || 'ko'}:${this.currentSceneId || ''}`, turn: this._activeChatTurnId || '', reuse: !this._activeChatTurnId })
                         : basePath;
 
                     // 이미 이미지가 있으면 src만 변경, 없으면 새로 생성
@@ -3628,7 +3639,7 @@ class FreeTalkSystem {
         this.freeTalkTurns = this.currentMaxTurns;
         this.stateManager.setFlag(`messaged_${endingSceneId}`);
         this._commitFreeTalkCheckpoint();
-        const persistClose = () => { window.saveGameState?.(); };
+        const persistClose = () => { var __oc287; (((__oc287 = window.saveGameState) === null || __oc287 === void 0 ? void 0 : __oc287.call(window))); };
         if (this.stateManager.commitProgressEvent) {
             void this.stateManager.commitProgressEvent(`close:${endingSceneId}`, () => {},
                 { checkpoint: () => this.stateManager.freeTalkCheckpoint }).then(persistClose).catch(() => {});

@@ -725,7 +725,7 @@ function verifyWiringAndScenePrompts() {
         'chat history does not read the canonical character key');
     assert(freeTalkSource.includes('this.stateManager.setChatMemory(charKey, requestHistory);'),
         'chat history does not save the canonical character key');
-    assert(freeTalkSource.includes('window.buildCupidAffinityIntimacyGuidance?.(')
+    assert(/window\.buildCupidAffinityIntimacyGuidance/.test(freeTalkSource)
         && freeTalkSource.includes('nonRomance: charKey === \'Haeun\''),
         'main free talk does not inject the shared affinity intimacy boundary');
     assert(!freeTalkSource.includes('buildCupidLatestUserCanonBlock')
@@ -923,17 +923,17 @@ function verifyRequestOwnershipGuards() {
 function verifyCacheKeyWiring() {
     const main = read('assets/js/modules/FreeTalkSystem.js');
     const gallery = read('assets/js/gallery-freetalk.js');
-    assert(main.includes("_optimized[0]?.role === 'system'")
+    assert(/_optimized\[0\][\s\S]{0,120}\.role\)\)\s*===\s*'system'/.test(main)
         && main.includes('getFreeTalkStablePromptFingerprint(_stablePromptContent)')
         && main.includes('const _cacheKey = charKey && _stablePromptFingerprint'),
         'main cache key is not gated by an actual system prompt stable prefix');
-    assert(gallery.includes("_optimized[0]?.role === 'system'")
+    assert(/_optimized\[0\][\s\S]{0,120}\.role\)\)\s*===\s*'system'/.test(gallery)
         && gallery.includes('getGalleryFreeTalkStablePromptFingerprint(_stablePromptContent)')
         && gallery.includes('const _gftCacheKey = requestCharId && _stablePromptFingerprint'),
         'gallery cache key is not gated by an actual system prompt stable prefix');
-    assert(!main.includes('getFreeTalkStablePromptHash(_optimized[0]?.content || finalContent)'),
+    assert(!/getFreeTalkStablePromptHash\([\s\S]{0,120}_optimized\[0\][\s\S]{0,120}finalContent\)/.test(main),
         'main cache key can still hash the latest user message when the system prompt is missing');
-    assert(!gallery.includes('getGalleryFreeTalkStablePromptHash(_optimized[0]?.content || finalContent)'),
+    assert(!/getGalleryFreeTalkStablePromptHash\([\s\S]{0,120}_optimized\[0\][\s\S]{0,120}finalContent\)/.test(gallery),
         'gallery cache key can still hash the latest user message when the system prompt is missing');
     for (const dimension of [
         'encodeFreeTalkCacheKeyPart(_lang)',

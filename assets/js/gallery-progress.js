@@ -45,7 +45,7 @@ function cupidGalleryMac(text) {
 }
 
 function cupidGalleryAffinityText(data) {
-    const characters = data?.characters || {};
+    const characters = ((data === null || data === void 0 ? void 0 : data.characters)) || {};
     return Object.keys(characters).sort().map(id => {
         const row = characters[id] || {};
         return `${id}:${Number(row.maxAffinity) || 0}:${Number(row.currentAffinity) || 0}`;
@@ -53,13 +53,15 @@ function cupidGalleryAffinityText(data) {
 }
 
 function cupidGalleryUnlockText(data) {
-    const characters = data?.characters || {};
+    const characters = ((data === null || data === void 0 ? void 0 : data.characters)) || {};
     const chars = Object.keys(characters).sort().map(id => {
         const row = characters[id] || {};
         return `${id}:${Number(row.freeTalkCount) || 0}:${row.unlocked ? 1 : 0}:${row.met ? 1 : 0}`;
     }).join('|');
-    const ids = bucket => Object.keys(bucket || {}).filter(id => bucket[id]?.unlocked).sort().join(',');
-    return `${chars}#${ids(data?.cg)}#${ids(data?.endings)}#${ids(data?.bgm)}`;
+    const ids = bucket => Object.keys(bucket || {}).filter(id => { var __oc0; return (
+((__oc0 = bucket[id]) === null || __oc0 === void 0 ? void 0 : __oc0.unlocked)
+); }).sort().join(',');
+    return `${chars}#${ids(((data === null || data === void 0 ? void 0 : data.cg)))}#${ids(((data === null || data === void 0 ? void 0 : data.endings)))}#${ids(((data === null || data === void 0 ? void 0 : data.bgm)))}`;
 }
 
 function cupidGallerySeal(data, version) {
@@ -70,7 +72,7 @@ function cupidGallerySeal(data, version) {
 }
 
 function cupidGallerySealMatches(data) {
-    if (!data?.affinitySeal) return !data?.affinitySealed;
+    if (!((data === null || data === void 0 ? void 0 : data.affinitySeal))) return !((data === null || data === void 0 ? void 0 : data.affinitySealed));
     const version = Number(data.affinitySealVersion) || 1;
     return data.affinitySeal === cupidGallerySeal(data, version);
 }
@@ -80,7 +82,7 @@ function cupidGalleryWriteAllowed() {
 }
 
 function cupidGalleryStripRewards(data) {
-    for (const row of Object.values(data?.characters || {})) {
+    for (const row of Object.values(((data === null || data === void 0 ? void 0 : data.characters)) || {})) {
         if (!row || typeof row !== 'object') continue;
         row.maxAffinity = 0;
         row.currentAffinity = 0;
@@ -107,12 +109,12 @@ function cupidGalleryRemember(data) {
     }));
 }
 
-function cupidGalleryClampGrowth(data) {
+function cupidGalleryClampGrowth(data) { var __oc1, __oc2, __oc3, __oc4, __oc5, __oc6, __oc7, __oc8, __oc9, __oc10;
     const accepted = cupidGalleryAccepted;
     if (!accepted || cupidGalleryWriteAllowed()) return;
     for (const [id, row] of Object.entries(data.characters || {})) {
         if (!row || typeof row !== 'object') continue;
-        const prev = accepted.characters?.[id];
+        const prev = (((__oc1 = accepted.characters) === null || __oc1 === void 0 ? void 0 : __oc1[id]));
         if (!prev) {
             row.maxAffinity = 0;
             row.currentAffinity = 0;
@@ -128,13 +130,13 @@ function cupidGalleryClampGrowth(data) {
         if (row.met && !prev.met) row.met = false;
     }
     for (const id of Object.keys(data.cg || {})) {
-        if (data.cg[id]?.unlocked && !accepted.cg?.[id]?.unlocked) delete data.cg[id];
+        if ((((__oc2 = data.cg[id]) === null || __oc2 === void 0 ? void 0 : __oc2.unlocked)) && !(((__oc4 = (__oc3 = accepted.cg) === null || __oc3 === void 0 ? void 0 : __oc3[id]) === null || __oc4 === void 0 ? void 0 : __oc4.unlocked))) delete data.cg[id];
     }
     for (const id of Object.keys(data.endings || {})) {
-        if (data.endings[id]?.unlocked && !accepted.endings?.[id]?.unlocked) delete data.endings[id];
+        if ((((__oc5 = data.endings[id]) === null || __oc5 === void 0 ? void 0 : __oc5.unlocked)) && !(((__oc7 = (__oc6 = accepted.endings) === null || __oc6 === void 0 ? void 0 : __oc6[id]) === null || __oc7 === void 0 ? void 0 : __oc7.unlocked))) delete data.endings[id];
     }
     for (const id of Object.keys(data.bgm || {})) {
-        if (id !== 'intro' && data.bgm[id]?.unlocked && !accepted.bgm?.[id]?.unlocked) delete data.bgm[id];
+        if (id !== 'intro' && (((__oc8 = data.bgm[id]) === null || __oc8 === void 0 ? void 0 : __oc8.unlocked)) && !(((__oc10 = (__oc9 = accepted.bgm) === null || __oc9 === void 0 ? void 0 : __oc9[id]) === null || __oc10 === void 0 ? void 0 : __oc10.unlocked))) delete data.bgm[id];
     }
 }
 
@@ -173,7 +175,7 @@ class GalleryProgress {
      * GalleryProgress 생성자
      * localStorage 키를 설정하고 데이터를 로드합니다.
      */
-    constructor() {
+    constructor() { var __oc11, __oc12, __oc13, __oc14;
         /**
          * localStorage에 저장할 때 사용하는 키
          * @type {string}
@@ -199,8 +201,8 @@ class GalleryProgress {
         // 초기 데이터 로드
         this.load();
         try {
-            window.CupidMedia?.syncFromProgressObject?.(this.data);
-            window.CupidMedia?.migrateFromLocalGallery?.();
+            (((__oc12 = (__oc11 = window.CupidMedia) === null || __oc11 === void 0 ? void 0 : __oc11.syncFromProgressObject) === null || __oc12 === void 0 ? void 0 : __oc12.call(__oc11, this.data)));
+            (((__oc14 = (__oc13 = window.CupidMedia) === null || __oc13 === void 0 ? void 0 : __oc13.migrateFromLocalGallery) === null || __oc14 === void 0 ? void 0 : __oc14.call(__oc13)));
         } catch (_) {}
     }
 
@@ -218,7 +220,7 @@ class GalleryProgress {
      * 
      * @returns {Object} 로드된 또는 새로 생성된 진행 데이터
      */
-    load() {
+    load() { var __oc15;
         let saved = null;
         try {
             saved = window.CupidStorage.getItem(this.storageKey);
@@ -249,11 +251,11 @@ class GalleryProgress {
                 }
             } catch (e) {
                 console.error('[GalleryProgress] 데이터 파싱 오류:', e);
-                window.reportCupidCaughtError?.(e, {
-                    source: 'cupid-gallery-progress',
-                    errorType: 'gallery_progress_parse_failed',
-                    context: { storageKey: this.storageKey, savedLength: saved.length }
-                });
+                (((__oc15 = window.reportCupidCaughtError) === null || __oc15 === void 0 ? void 0 : __oc15.call(window, e, {
+        source: 'cupid-gallery-progress',
+        errorType: 'gallery_progress_parse_failed',
+        context: { storageKey: this.storageKey, savedLength: saved.length }
+    })));
                 needsReset = true;
             }
         } else {
@@ -274,8 +276,8 @@ class GalleryProgress {
      * 기존 유저 데이터 호환성 유지
      * @private
      */
-    _migratePerfectEndingKey() {
-        if (!this.data?.characters) return;
+    _migratePerfectEndingKey() { var __oc16;
+        if (!(((__oc16 = this.data) === null || __oc16 === void 0 ? void 0 : __oc16.characters))) return;
         let migrated = false;
         for (const charData of Object.values(this.data.characters)) {
             if (charData.trueEndingCleared !== undefined) {
@@ -291,8 +293,8 @@ class GalleryProgress {
     }
 
     /** @private */
-    _migrateAffinityRebalance() {
-        const result = GalleryData.migrateLegacyPerfectAffinity?.(this.data)
+    _migrateAffinityRebalance() { var __oc17;
+        const result = (((__oc17 = GalleryData.migrateLegacyPerfectAffinity) === null || __oc17 === void 0 ? void 0 : __oc17.call(GalleryData, this.data)))
             || { changed: false, downgradedCharacters: [] };
         if (result.changed) {
             this.save();
@@ -308,8 +310,8 @@ class GalleryProgress {
      * 기존 이용자는 달성한 최고 호감도에서 시작하며, 이후 현재값만 오르내립니다.
      * @private
      */
-    _migrateCurrentAffinity() {
-        if (!this.data?.characters) return false;
+    _migrateCurrentAffinity() { var __oc18;
+        if (!(((__oc18 = this.data) === null || __oc18 === void 0 ? void 0 : __oc18.characters))) return false;
 
         let migrated = false;
         for (const charData of Object.values(this.data.characters)) {
@@ -337,7 +339,7 @@ class GalleryProgress {
         return migrated;
     }
 
-    _migrateEndingLedger() {
+    _migrateEndingLedger() { var __oc19, __oc20, __oc21;
         if (!this.data || typeof this.data !== 'object') return false;
         if (!this.data.endings || typeof this.data.endings !== 'object') this.data.endings = {};
         const legacyCgMap = {
@@ -351,7 +353,7 @@ class GalleryProgress {
         };
         let changed = false;
         for (const [cgId, endingId] of Object.entries(legacyCgMap)) {
-            if (!this.data.cg?.[cgId]?.unlocked || this.data.endings[endingId]?.unlocked) continue;
+            if (!(((__oc20 = (__oc19 = this.data.cg) === null || __oc19 === void 0 ? void 0 : __oc19[cgId]) === null || __oc20 === void 0 ? void 0 : __oc20.unlocked)) || (((__oc21 = this.data.endings[endingId]) === null || __oc21 === void 0 ? void 0 : __oc21.unlocked))) continue;
             this.data.endings[endingId] = {
                 unlocked: true,
                 unlockedAt: this.data.cg[cgId].unlockedAt || Date.now(),
@@ -374,11 +376,11 @@ class GalleryProgress {
      * @private
      * @returns {Object} 기본 진행 데이터
      */
-    _createDefaultData() {
+    _createDefaultData() { var __oc22;
         return {
             version: GalleryData.VERSION,
             affinityRebalanceVersion: GalleryData.AFFINITY_REBALANCE_VERSION,
-            appliedAffinityCorrections: window.CupidAffinityCorrections?.ids() || [],
+            appliedAffinityCorrections: (((__oc22 = window.CupidAffinityCorrections) === null || __oc22 === void 0 ? void 0 : __oc22.ids())) || [],
             characters: {
                 seyoun: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
                 yuna: { met: false, maxAffinity: 0, currentAffinity: 0, galleryFreeTalkAffinityInitialized: false, freeTalkCount: 0, galleryIncident: this._createDefaultGalleryIncidentState(), relationshipAftermath: null },
@@ -397,8 +399,8 @@ class GalleryProgress {
     /**
      * 현재 진행 상태를 localStorage에 저장
      */
-    _affinitySealText() {
-        const characters = this.data?.characters || {};
+    _affinitySealText() { var __oc23;
+        const characters = (((__oc23 = this.data) === null || __oc23 === void 0 ? void 0 : __oc23.characters)) || {};
         return Object.keys(characters).sort().map(id => {
             const row = characters[id] || {};
             return `${id}:${Number(row.maxAffinity) || 0}:${Number(row.currentAffinity) || 0}`;
@@ -416,15 +418,15 @@ class GalleryProgress {
         this.data.affinitySeal = (hash >>> 0).toString(16).padStart(8, '0');
     }
 
-    _affinitySealMatches() {
-        if (!this.data?.affinitySeal) return !this.data?.affinitySealed;
+    _affinitySealMatches() { var __oc24, __oc25;
+        if (!(((__oc24 = this.data) === null || __oc24 === void 0 ? void 0 : __oc24.affinitySeal))) return !(((__oc25 = this.data) === null || __oc25 === void 0 ? void 0 : __oc25.affinitySealed));
         const expected = this.data.affinitySeal;
         this._stampAffinitySeal();
         return this.data.affinitySeal === expected;
     }
 
-    _clearUnsealedAffinity() {
-        for (const row of Object.values(this.data?.characters || {})) {
+    _clearUnsealedAffinity() { var __oc26;
+        for (const row of Object.values((((__oc26 = this.data) === null || __oc26 === void 0 ? void 0 : __oc26.characters)) || {})) {
             if (!row || typeof row !== 'object') continue;
             row.maxAffinity = 0;
             row.currentAffinity = 0;
@@ -434,15 +436,15 @@ class GalleryProgress {
         this.save();
     }
 
-    save() {
+    save() { var __oc27;
         try {
             window.CupidGalleryStore.commit(this.data);
         } catch (e) {
-            window.reportCupidCaughtError?.(e, {
-                source: 'cupid-gallery-progress',
-                errorType: 'gallery_progress_save_failed',
-                context: { storageKey: this.storageKey }
-            });
+            (((__oc27 = window.reportCupidCaughtError) === null || __oc27 === void 0 ? void 0 : __oc27.call(window, e, {
+        source: 'cupid-gallery-progress',
+        errorType: 'gallery_progress_save_failed',
+        context: { storageKey: this.storageKey }
+    })));
         }
     }
 
@@ -452,7 +454,7 @@ class GalleryProgress {
      * 
      * @returns {Object} 현재 저장된 진행 데이터
      */
-    refresh() {
+    refresh() { var __oc28;
         let saved = null;
         try { saved = window.CupidStorage.getItem(this.storageKey); } catch (e) {}
         if (saved) {
@@ -464,11 +466,11 @@ class GalleryProgress {
                 this._migrateCurrentAffinity();
             } catch (e) {
                 // 파싱 실패 시 현재 데이터 유지
-                window.reportCupidCaughtError?.(e, {
-                    source: 'cupid-gallery-progress',
-                    errorType: 'gallery_progress_refresh_parse_failed',
-                    context: { storageKey: this.storageKey, savedLength: saved.length }
-                });
+                (((__oc28 = window.reportCupidCaughtError) === null || __oc28 === void 0 ? void 0 : __oc28.call(window, e, {
+        source: 'cupid-gallery-progress',
+        errorType: 'gallery_progress_refresh_parse_failed',
+        context: { storageKey: this.storageKey, savedLength: saved.length }
+    })));
             }
         }
         return this.data;
@@ -489,10 +491,10 @@ class GalleryProgress {
      *   // 서연을 만난 적 있음 - 상세 정보 표시
      * }
      */
-    isMet(charId) {
+    isMet(charId) { var __oc29, __oc30;
         if (this.isAdmin) return true;
         this.refresh();
-        return this.data.characters?.[charId]?.met || false;
+        return (((__oc30 = (__oc29 = this.data.characters) === null || __oc29 === void 0 ? void 0 : __oc29[charId]) === null || __oc30 === void 0 ? void 0 : __oc30.met)) || false;
     }
 
     /**
@@ -510,10 +512,10 @@ class GalleryProgress {
      *   // 호감도 80 이상 - 전체 소개 표시
      * }
      */
-    getAffinity(charId) {
+    getAffinity(charId) { var __oc31, __oc32;
         if (this.isAdmin) return 100;
         this.refresh();
-        return this.data.characters?.[charId]?.maxAffinity || 0;
+        return (((__oc32 = (__oc31 = this.data.characters) === null || __oc31 === void 0 ? void 0 : __oc31[charId]) === null || __oc32 === void 0 ? void 0 : __oc32.maxAffinity)) || 0;
     }
 
     /**
@@ -523,9 +525,9 @@ class GalleryProgress {
      * @param {string} charId - 캐릭터 ID
      * @returns {number} 현재 호감도 (-100 ~ 100)
      */
-    getCurrentAffinity(charId) {
+    getCurrentAffinity(charId) { var __oc33;
         this.refresh();
-        const charData = this.data.characters?.[charId];
+        const charData = (((__oc33 = this.data.characters) === null || __oc33 === void 0 ? void 0 : __oc33[charId]));
         if (!charData) return 0;
 
         const hasSavedCurrent = charData.currentAffinity !== undefined
@@ -546,9 +548,9 @@ class GalleryProgress {
      * @param {{hasConversation?: boolean}} options - 저장된 갤러리 대화 존재 여부
      * @returns {number} 초기화 또는 보존된 현재 호감도
      */
-    initializeCurrentAffinityForFreeTalk(charId, { hasConversation = false } = {}) {
+    initializeCurrentAffinityForFreeTalk(charId, { hasConversation = false } = {}) { var __oc34, __oc35;
         this.refresh();
-        const charData = this.data.characters?.[charId];
+        const charData = (((__oc34 = this.data.characters) === null || __oc34 === void 0 ? void 0 : __oc34[charId]));
         if (!charData) return 0;
 
         const maxAffinity = Math.max(0, Math.min(100, Number(charData.maxAffinity) || 0));
@@ -561,7 +563,7 @@ class GalleryProgress {
             return currentAffinity;
         }
 
-        const completedTurns = Math.max(0, Number(charData.galleryIncident?.completedTurns) || 0);
+        const completedTurns = Math.max(0, Number((((__oc35 = charData.galleryIncident) === null || __oc35 === void 0 ? void 0 : __oc35.completedTurns))) || 0);
         const hasChangedCurrentAffinity = Number.isFinite(savedCurrent) && currentAffinity !== 0;
         const hasPriorGalleryTalk = Boolean(hasConversation)
             || completedTurns > 0
@@ -586,13 +588,13 @@ class GalleryProgress {
      *
      * @returns {{value:number, change:number, requestedChange:number, maxAffinity:number}}
      */
-    changeCurrentAffinity(charId, amount) {
+    changeCurrentAffinity(charId, amount) { var __oc36, __oc37, __oc38, __oc39, __oc40, __oc41, __oc42;
         if (!/gallery-freetalk\.js/.test(new Error().stack || '')) {
-            const current = Number(this.data?.characters?.[charId]?.currentAffinity) || 0;
-            return { value: current, change: 0, requestedChange: 0, maxAffinity: Number(this.data?.characters?.[charId]?.maxAffinity) || 0 };
+            const current = Number((((__oc38 = (__oc37 = (__oc36 = this.data) === null || __oc36 === void 0 ? void 0 : __oc36.characters) === null || __oc37 === void 0 ? void 0 : __oc37[charId]) === null || __oc38 === void 0 ? void 0 : __oc38.currentAffinity))) || 0;
+            return { value: current, change: 0, requestedChange: 0, maxAffinity: Number((((__oc41 = (__oc40 = (__oc39 = this.data) === null || __oc39 === void 0 ? void 0 : __oc39.characters) === null || __oc40 === void 0 ? void 0 : __oc40[charId]) === null || __oc41 === void 0 ? void 0 : __oc41.maxAffinity))) || 0 };
         }
         this.refresh();
-        const charData = this.data.characters?.[charId];
+        const charData = (((__oc42 = this.data.characters) === null || __oc42 === void 0 ? void 0 : __oc42[charId]));
         if (!charData) return { value: 0, change: 0, requestedChange: 0, maxAffinity: 0 };
 
         const safeChange = window.CupidFreeTalkCore.normalizeAffinityChange(amount);
@@ -619,14 +621,14 @@ class GalleryProgress {
      * @param {string} charId - 캐릭터 ID
      * @returns {number} 프리토킹 횟수
      */
-    getFreeTalkCount(charId) {
+    getFreeTalkCount(charId) { var __oc43, __oc44;
         this.refresh();
-        return this.data.characters?.[charId]?.freeTalkCount || 0;
+        return (((__oc44 = (__oc43 = this.data.characters) === null || __oc43 === void 0 ? void 0 : __oc43[charId]) === null || __oc44 === void 0 ? void 0 : __oc44.freeTalkCount)) || 0;
     }
 
-    getLastOuting(charId) {
+    getLastOuting(charId) { var __oc45, __oc46;
         this.refresh();
-        return this.data.characters?.[charId]?.lastOuting || '';
+        return (((__oc46 = (__oc45 = this.data.characters) === null || __oc45 === void 0 ? void 0 : __oc45[charId]) === null || __oc46 === void 0 ? void 0 : __oc46.lastOuting)) || '';
     }
 
     setLastOuting(charId, placeId) {
@@ -662,13 +664,13 @@ class GalleryProgress {
      * @param {string} charId
      * @returns {Object}
      */
-    getGalleryIncidentState(charId) {
+    getGalleryIncidentState(charId) { var __oc47, __oc48;
         this.refresh();
-        const charData = this.data.characters?.[charId];
+        const charData = (((__oc47 = this.data.characters) === null || __oc47 === void 0 ? void 0 : __oc47[charId]));
         if (!charData) return this._createDefaultGalleryIncidentState();
 
         const rawState = charData.galleryIncident || this._createDefaultGalleryIncidentState();
-        const normalized = window.CupidFreeTalkCore?.normalizeGalleryIncidentState
+        const normalized = (((__oc48 = window.CupidFreeTalkCore) === null || __oc48 === void 0 ? void 0 : __oc48.normalizeGalleryIncidentState))
             ? window.CupidFreeTalkCore.normalizeGalleryIncidentState(rawState)
             : rawState;
         if (JSON.stringify(charData.galleryIncident || null) !== JSON.stringify(normalized)) {
@@ -685,12 +687,12 @@ class GalleryProgress {
      * @param {Object} state
      * @returns {Object}
      */
-    setGalleryIncidentState(charId, state) {
+    setGalleryIncidentState(charId, state) { var __oc49, __oc50;
         this.refresh();
-        const charData = this.data.characters?.[charId];
+        const charData = (((__oc49 = this.data.characters) === null || __oc49 === void 0 ? void 0 : __oc49[charId]));
         if (!charData) return this._createDefaultGalleryIncidentState();
 
-        const normalized = window.CupidFreeTalkCore?.normalizeGalleryIncidentState
+        const normalized = (((__oc50 = window.CupidFreeTalkCore) === null || __oc50 === void 0 ? void 0 : __oc50.normalizeGalleryIncidentState))
             ? window.CupidFreeTalkCore.normalizeGalleryIncidentState(state)
             : state;
         charData.galleryIncident = normalized;
@@ -705,12 +707,12 @@ class GalleryProgress {
      * @param {string} charId
      * @returns {Object|null}
      */
-    getRelationshipAftermath(charId) {
+    getRelationshipAftermath(charId) { var __oc51, __oc52;
         this.refresh();
-        const charData = this.data.characters?.[charId];
+        const charData = (((__oc51 = this.data.characters) === null || __oc51 === void 0 ? void 0 : __oc51[charId]));
         if (!charData) return null;
 
-        const normalized = window.CupidFreeTalkCore?.normalizeRelationshipAftermath
+        const normalized = (((__oc52 = window.CupidFreeTalkCore) === null || __oc52 === void 0 ? void 0 : __oc52.normalizeRelationshipAftermath))
             ? window.CupidFreeTalkCore.normalizeRelationshipAftermath(charData.relationshipAftermath)
             : (charData.relationshipAftermath || null);
         if (JSON.stringify(charData.relationshipAftermath || null) !== JSON.stringify(normalized)) {
@@ -727,12 +729,12 @@ class GalleryProgress {
      * @param {Object|null} state
      * @returns {Object|null}
      */
-    setRelationshipAftermath(charId, state) {
+    setRelationshipAftermath(charId, state) { var __oc53, __oc54;
         this.refresh();
-        const charData = this.data.characters?.[charId];
+        const charData = (((__oc53 = this.data.characters) === null || __oc53 === void 0 ? void 0 : __oc53[charId]));
         if (!charData) return null;
 
-        const normalized = window.CupidFreeTalkCore?.normalizeRelationshipAftermath
+        const normalized = (((__oc54 = window.CupidFreeTalkCore) === null || __oc54 === void 0 ? void 0 : __oc54.normalizeRelationshipAftermath))
             ? window.CupidFreeTalkCore.normalizeRelationshipAftermath(state)
             : (state || null);
         charData.relationshipAftermath = normalized;
@@ -821,10 +823,10 @@ class GalleryProgress {
      * @param {string} charId - 캐릭터 ID (예: 'seyoun')
      * @returns {boolean} 해금 여부
      */
-    isFreeTalkUnlocked(charId) {
+    isFreeTalkUnlocked(charId) { var __oc55, __oc56;
         if (this.isAdmin) return true;
         this.refresh();
-        const perfectEnding = this.data.characters?.[charId]?.perfectEndingCleared || false;
+        const perfectEnding = (((__oc56 = (__oc55 = this.data.characters) === null || __oc55 === void 0 ? void 0 : __oc55[charId]) === null || __oc56 === void 0 ? void 0 : __oc56.perfectEndingCleared)) || false;
         if (charId === 'haeun') return perfectEnding && this.getAffinity(charId) >= 100;
         const hiddenChars = ['teacher', 'nurse'];
         const affinityThreshold = hiddenChars.includes(charId) ? 80 : 100;
@@ -839,14 +841,14 @@ class GalleryProgress {
      *
      * @returns {string|null} 플레이어 이름 또는 null
      */
-    getPlayerName() {
+    getPlayerName() { var __oc57;
         this.refresh();
         if (this.data.playerName) return this.data.playerName;
 
         // 갤러리에 없으면 게임 세이브에서 가져오기
         try {
             const save = JSON.parse(window.CupidStorage.getItem('cupid_save') || '{}');
-            if (save.gameState?.playerName) return save.gameState.playerName;
+            if ((((__oc57 = save.gameState) === null || __oc57 === void 0 ? void 0 : __oc57.playerName))) return save.gameState.playerName;
         } catch (e) { /* 무시 */ }
 
         return null;
@@ -868,21 +870,21 @@ class GalleryProgress {
      *   // CG 해금됨 - 이미지 표시
      * }
      */
-    isUnlocked(type, id) {
+    isUnlocked(type, id) { var __oc58, __oc59;
         if (this.isAdmin) return true;
         this.refresh();
-        return this.data[type]?.[id]?.unlocked || false;
+        return (((__oc59 = (__oc58 = this.data[type]) === null || __oc58 === void 0 ? void 0 : __oc58[id]) === null || __oc59 === void 0 ? void 0 : __oc59.unlocked)) || false;
     }
 
-    isEndingUnlocked(id) {
+    isEndingUnlocked(id) { var __oc60, __oc61;
         if (this.isAdmin) return true;
         this.refresh();
-        return this.data.endings?.[id]?.unlocked || false;
+        return (((__oc61 = (__oc60 = this.data.endings) === null || __oc60 === void 0 ? void 0 : __oc60[id]) === null || __oc61 === void 0 ? void 0 : __oc61.unlocked)) || false;
     }
 
-    getEndingRecord(id) {
+    getEndingRecord(id) { var __oc62;
         this.refresh();
-        return this.data.endings?.[id] || null;
+        return (((__oc62 = this.data.endings) === null || __oc62 === void 0 ? void 0 : __oc62[id])) || null;
     }
 
     getUnlockedEndingCount() {
@@ -890,7 +892,9 @@ class GalleryProgress {
         this.refresh();
         const validIds = new Set(GalleryData.endingRoutes.map(ending => ending.id));
         return Object.entries(this.data.endings || {})
-            .filter(([id, value]) => validIds.has(id) && value?.unlocked)
+            .filter(([id, value]) => { return (
+validIds.has(id) && ((value === null || value === void 0 ? void 0 : value.unlocked))
+); })
             .length;
     }
 
@@ -909,7 +913,7 @@ class GalleryProgress {
      *   console.log('새로운 CG 해금!');
      * }
      */
-    unlockCG(cgId) {
+    unlockCG(cgId) { var __oc63, __oc64, __oc65, __oc66, __oc67;
         this.refresh();
 
         // CG 객체가 없으면 생성
@@ -918,7 +922,7 @@ class GalleryProgress {
         }
 
         // 이미 해금된 경우 false 반환
-        if (this.data.cg[cgId]?.unlocked) {
+        if ((((__oc63 = this.data.cg[cgId]) === null || __oc63 === void 0 ? void 0 : __oc63.unlocked))) {
             return false;
         }
 
@@ -929,9 +933,9 @@ class GalleryProgress {
         };
 
         this.save();
-        if (!this.data.cg?.[cgId]?.unlocked) return false;
+        if (!(((__oc65 = (__oc64 = this.data.cg) === null || __oc64 === void 0 ? void 0 : __oc64[cgId]) === null || __oc65 === void 0 ? void 0 : __oc65.unlocked))) return false;
         console.log(`[GalleryProgress] CG 해금: ${cgId}`);
-        try { window.CupidMedia?.unlockCG?.(cgId); } catch (_) {}
+        try { (((__oc67 = (__oc66 = window.CupidMedia) === null || __oc66 === void 0 ? void 0 : __oc66.unlockCG) === null || __oc67 === void 0 ? void 0 : __oc67.call(__oc66, cgId))); } catch (_) {}
         return true;
     }
 

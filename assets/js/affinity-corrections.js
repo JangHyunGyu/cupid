@@ -174,8 +174,12 @@
     let matchedDevice = '';
     let matches = [];
     const isObject = value => value && typeof value === 'object' && !Array.isArray(value);
-    const active = () => storage?.getItem('cupid_device_id') === matchedDevice ? matches : [];
-    const marked = (data, id) => Array.isArray(data?.appliedAffinityCorrections) && data.appliedAffinityCorrections.includes(id);
+    const active = () => { return (
+((storage === null || storage === void 0 ? void 0 : storage.getItem('cupid_device_id'))) === matchedDevice ? matches : []
+); };
+    const marked = (data, id) => { return (
+Array.isArray(((data === null || data === void 0 ? void 0 : data.appliedAffinityCorrections))) && data.appliedAffinityCorrections.includes(id)
+); };
     function mark(data, id) {
         data.appliedAffinityCorrections = [...new Set([
             ...(Array.isArray(data.appliedAffinityCorrections) ? data.appliedAffinityCorrections : []), id
@@ -186,12 +190,12 @@
         const baseline = Number.isInteger(target) ? Math.max(-100, Math.min(99, target)) : 99;
         return Number(value) >= (correction.restoreFrom99 ? 99 : 100) ? baseline : value;
     }
-    function correctGallery(data) {
+    function correctGallery(data) { var __oc0;
         if (!isObject(data)) return false;
         let changed = false;
         for (const correction of active()) {
             if (marked(data, correction.id)) continue;
-            const character = data.characters?.[correction.galleryCharacter];
+            const character = (((__oc0 = data.characters) === null || __oc0 === void 0 ? void 0 : __oc0[correction.galleryCharacter]));
             let stripped = false;
             if (isObject(character)) {
                 for (const [field, kind] of [['maxAffinity', 'peak'], ['currentAffinity', 'current']]) {
@@ -209,12 +213,12 @@
         }
         return changed;
     }
-    function correctState(data) {
+    function correctState(data) { var __oc1;
         if (!isObject(data)) return false;
         let changed = false;
         for (const correction of active()) {
             if (marked(data, correction.id)) continue;
-            const stat = data.stats?.[correction.character];
+            const stat = (((__oc1 = data.stats) === null || __oc1 === void 0 ? void 0 : __oc1[correction.character]));
             if (isObject(stat) && 'affinity' in stat) stat.affinity = cap(stat.affinity, correction, 'current');
             mark(data, correction.id);
             changed = true;
@@ -222,7 +226,7 @@
         return changed;
     }
     function correctSave(data) {
-        if (!isObject(data?.gameState)) return false;
+        if (!isObject(((data === null || data === void 0 ? void 0 : data.gameState)))) return false;
         const pending = active().filter(item => !marked(data.gameState, item.id));
         const changed = correctState(data.gameState);
         const checks = {
@@ -230,11 +234,11 @@
             Dain: ['dain', 'ending_aff_check_dain'], Teacher: ['teacher', 'hidden_perfect_homeroom_check'],
             Nurse: ['nurse', 'hidden_perfect_nurse_check']
         };
-        const affected = pending.find(item => {
+        const affected = pending.find(item => { var __oc2, __oc3;
             const [suffix] = checks[item.character] || [];
             if (!suffix) return false;
             const pattern = new RegExp(`^(perfect_${suffix}_|perfect_epilogue_.*_${suffix}$|date_choice_perfect_${suffix}$|day5_${suffix}_ending_freetalk_perfect$|hidden_perfect_${item.character === 'Teacher' ? 'homeroom' : suffix}_)`);
-            return pattern.test(data.currentSceneId || '') || (data.gameState.flags?.ending_perfect && data.gameState.flags?.[`isDating_${item.character}`]);
+            return pattern.test(data.currentSceneId || '') || ((((__oc2 = data.gameState.flags) === null || __oc2 === void 0 ? void 0 : __oc2.ending_perfect)) && (((__oc3 = data.gameState.flags) === null || __oc3 === void 0 ? void 0 : __oc3[`isDating_${item.character}`])));
         });
         if (changed && affected) {
             data.currentSceneId = checks[affected.character][1];
@@ -248,7 +252,7 @@
     }
     function reconcileStorage() {
         for (const [key, correct] of [['cupid_gallery', correctGallery], ['cupid_save', correctSave]]) {
-            const raw = storage?.getItem(key);
+            const raw = ((storage === null || storage === void 0 ? void 0 : storage.getItem(key)));
             if (!raw) continue;
             let data;
             try { data = JSON.parse(raw); } catch (_) { continue; }
@@ -256,7 +260,7 @@
         }
     }
     async function initialize() {
-        const device = storage?.getItem('cupid_device_id');
+        const device = ((storage === null || storage === void 0 ? void 0 : storage.getItem('cupid_device_id')));
         if (!device) return;
         const bytes = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(device));
         const fingerprint = Array.from(new Uint8Array(bytes), byte => byte.toString(16).padStart(2, '0')).join('');
