@@ -97,6 +97,7 @@
 
 ## Harem(mixed_5) ↔ Cupid R2 에셋 자동 동기화 및 표정 판별(seductive 남발 방지) 규칙 (Permanent, 2026-11-10)
 - **Harem(mixed_5) ↔ Cupid 캐릭터 스프라이트 자동 동기화**:
+  - `scripts/sync-cupid-sprites.py`는 공유 7인(`dain`, `haeun`, `minsu`, `nurse`, `seoyeon`, `teacher`, `yuna`; 큐피드방 `dohoon`은 완전 삭제됨)의 기본 표정 슬롯 전체를 양방향 합집합(`|`)으로 동기화하며, `npm run characters:check`에 연결된 `sync-cupid-sprites.py --check`가 매니페스트 및 `prompts.js`·`gallery-data.js`·`cupid-school-expressions.json` 100% 정합성을 강제한다.
   - harem의 큐피드 방(ssets/characters/mixed_5/members/*)과 cupid 프로젝트(ssets/characters/*, config/media-storage.json, cupid-media-private R2 catalog/media-v1.json)에 새로운 캐릭터 표정 이미지가 올라가거나 수정되면 scripts/image-storage.py publish 및 scripts/sync-cupid-sprites.py를 통해 항상 자동으로 양쪽 저장소와 R2 버킷(rcherlab-site-images, rcherlab-image-backups, cupid-media-private)을 동기화한다.
   - 양쪽 에셋의 해시가 서로 다를 경우 **나중에 올린(최신) 버전 기준**으로 평문(cupid-media-private/images/<sha256>.<ext> 및 rcherlab-site-images), CUPIDENC1 암호화본(rcherlab-image-backups), 매니페스트(character-assets.json, image-sources.json, media-storage.json, catalog/media-v1.json, media-manifest.js, media-gate.js)를 모두 일치시킨다.
   - 대화 백업 뷰어(conversation-viewer.html)의 큐피드 아바타 캐시 키와 서명 URL에는 에셋 해시 버전(?v=<sha256[:12]>)을 포함해 R2 카탈로그 갱신 즉시 브라우저 캐시가 새 이미지로 교체되도록 유지한다.

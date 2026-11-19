@@ -6378,6 +6378,33 @@
       }
     },
     {
+      "id": "minsu/expressions/smile/02",
+      "characterId": "minsu",
+      "role": "expression",
+      "expression": "smile",
+      "variant": "02",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/minsu/expressions/smile/02/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/minsu_smile_02.png",
+            "assets/characters/minsu/expressions/smile/02/sprite.png"
+          ],
+          "sha256": "2da78339466dd4d6777b3b04d1f8ee0eddd254072029e550b9e8d72b635bb53a",
+          "bytes": 1249302
+        },
+        "sprite.webp": {
+          "source": "assets/characters/minsu/expressions/smile/02/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/minsu_smile_02.webp",
+            "assets/characters/minsu/expressions/smile/02/sprite.webp"
+          ],
+          "sha256": "dcdd7c4e6fe80de2af6a9cb5a01ec0efd93e1e15b8809740f664288580ffdd7d",
+          "bytes": 116011
+        }
+      }
+    },
+    {
       "id": "minsu/expressions/smirk/01",
       "characterId": "minsu",
       "role": "expression",
@@ -8237,6 +8264,33 @@
           ],
           "sha256": "e8e7d747eab26615feda2cc2e5ed91735eceee30723ae289884090db5eb28469",
           "bytes": 173979
+        }
+      }
+    },
+    {
+      "id": "nurse/expressions/smile/02",
+      "characterId": "nurse",
+      "role": "expression",
+      "expression": "smile",
+      "variant": "02",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/nurse/expressions/smile/02/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/nurse_smile_02.png",
+            "assets/characters/nurse/expressions/smile/02/sprite.png"
+          ],
+          "sha256": "e41dd6e0315b4302e1c2ffc8089c26b9dfafa18f4094d62d79eac4d0fc8410bf",
+          "bytes": 1589033
+        },
+        "sprite.webp": {
+          "source": "assets/characters/nurse/expressions/smile/02/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/nurse_smile_02.webp",
+            "assets/characters/nurse/expressions/smile/02/sprite.webp"
+          ],
+          "sha256": "21bb3ccb244332857ae2ed22d99418a0fe57b41f88c2f0be2cc0787068e3c3dc",
+          "bytes": 165419
         }
       }
     },
@@ -14312,6 +14366,33 @@
           ],
           "sha256": "444cacd535c0f058d7b313e091d3ffced20bb9e09618989d9b3dff3f422c7878",
           "bytes": 144885
+        }
+      }
+    },
+    {
+      "id": "teacher/expressions/smile/02",
+      "characterId": "teacher",
+      "role": "expression",
+      "expression": "smile",
+      "variant": "02",
+      "files": {
+        "sprite.png": {
+          "source": "assets/characters/teacher/expressions/smile/02/sprite.png",
+          "publicPaths": [
+            "assets/images/characters/teacher_smile_02.png",
+            "assets/characters/teacher/expressions/smile/02/sprite.png"
+          ],
+          "sha256": "1b72dadb20a8ae9f0d4b8b2cd02efa305f46043a160bbbfdc46377a590bfe368",
+          "bytes": 1330967
+        },
+        "sprite.webp": {
+          "source": "assets/characters/teacher/expressions/smile/02/sprite.webp",
+          "publicPaths": [
+            "assets/images/characters/teacher_smile_02.webp",
+            "assets/characters/teacher/expressions/smile/02/sprite.webp"
+          ],
+          "sha256": "be36b3075d7b838b57fe39d6dd79062f8de93be0087741421ed8280cc52b7f7b",
+          "bytes": 135923
         }
       }
     },

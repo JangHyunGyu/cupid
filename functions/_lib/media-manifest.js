@@ -5090,6 +5090,25 @@ export const MEDIA_MANIFEST = {
       }
     ]
   },
+  "characters/minsu_smile_02": {
+    "version": "c51410f8bb36b1435ebc1656",
+    "files": [
+      {
+        "path": "assets/images/characters/minsu_smile_02.png",
+        "key": "images/906d18467def732bb86199afa35fc6d670cb53ffaacb20541401067acdf5188d.png",
+        "sha256": "906d18467def732bb86199afa35fc6d670cb53ffaacb20541401067acdf5188d",
+        "etag": "8c4761dc441f3a43dc784bac0c7c65e5",
+        "size": 1249265
+      },
+      {
+        "path": "assets/images/characters/minsu_smile_02.webp",
+        "key": "images/42f64881f42a024da63861003b7bc75e0b62c8aa4ce6df70a478a3f8aa980298.webp",
+        "sha256": "42f64881f42a024da63861003b7bc75e0b62c8aa4ce6df70a478a3f8aa980298",
+        "etag": "49e39dbe261864514fe07efaf155bc35",
+        "size": 115974
+      }
+    ]
+  },
   "characters/minsu_smirk": {
     "version": "e76b6fa39c720322172d0a53",
     "files": [
@@ -7094,6 +7113,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "c03083d93b1c7d132020df0be30dfd331adfbcebd1c1a1716f5fb84ac9a632fd",
         "etag": "a52c97318b644372c71e45dbd0fbede1",
         "size": 173942
+      }
+    ]
+  },
+  "characters/nurse_smile_02": {
+    "version": "c1f9a0f777637a52147b4d55",
+    "files": [
+      {
+        "path": "assets/images/characters/nurse_smile_02.png",
+        "key": "images/30ada4e446250946d5214bda5f1ea38b3aa9c8e1d1247a5985a218daffd11a7b.png",
+        "sha256": "30ada4e446250946d5214bda5f1ea38b3aa9c8e1d1247a5985a218daffd11a7b",
+        "etag": "a75be34f644cb5432b7455665645738c",
+        "size": 1588996
+      },
+      {
+        "path": "assets/images/characters/nurse_smile_02.webp",
+        "key": "images/8df81e3985bcbede8a009a5f1fda3bb7a55bded06d008d8193b5d3d186db8a58.webp",
+        "sha256": "8df81e3985bcbede8a009a5f1fda3bb7a55bded06d008d8193b5d3d186db8a58",
+        "etag": "fcf62008b7fbaea8503a9f3c2083c6bb",
+        "size": 165382
       }
     ]
   },
@@ -10516,6 +10554,25 @@ export const MEDIA_MANIFEST = {
         "sha256": "17306856799c19b9778e989da76674f9d4f813e675485ce6aa8155557213547e",
         "etag": "175f9417617f17cab46be27ebb1b0fc2",
         "size": 144848
+      }
+    ]
+  },
+  "characters/teacher_smile_02": {
+    "version": "b82adc6b1f8892389be77b35",
+    "files": [
+      {
+        "path": "assets/images/characters/teacher_smile_02.png",
+        "key": "images/595544da62314eb13542a36902109e2036c63ce5de87ee72f12da7d3113eb271.png",
+        "sha256": "595544da62314eb13542a36902109e2036c63ce5de87ee72f12da7d3113eb271",
+        "etag": "23025578d640da4b64d2208571b2c08c",
+        "size": 1330930
+      },
+      {
+        "path": "assets/images/characters/teacher_smile_02.webp",
+        "key": "images/4baf6054525a3013424210b6c5e206810e8339113cbf2a2ab38e25548b13fb0c.webp",
+        "sha256": "4baf6054525a3013424210b6c5e206810e8339113cbf2a2ab38e25548b13fb0c",
+        "etag": "01258d9263063a88919daeea7323746f",
+        "size": 135886
       }
     ]
   },

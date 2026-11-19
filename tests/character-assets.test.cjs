@@ -40,3 +40,13 @@ test('path traversal and duplicate public URLs are rejected', t => {
  fs.writeFileSync(path.join(root,'config/character-assets.json'),JSON.stringify(data));
  assert.throws(()=>api.catalog(root),/Duplicate asset URL/);
 });
+test('harem mixed_5 and cupid shared character expressions stay 100% synchronized', t => {
+ const { execFileSync } = require('node:child_process');
+ const root = path.resolve(__dirname, '..');
+ const haremSync = path.resolve(root, '../harem/scripts/sync-cupid-sprites.py');
+ if (!fs.existsSync(haremSync)) {
+  t.skip('Sibling harem repository not present');
+  return;
+ }
+ execFileSync(process.platform === 'win32' ? 'python' : 'python3', ['-B', haremSync, '--check'], { cwd: root, stdio: 'pipe' });
+});

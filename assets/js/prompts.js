@@ -813,6 +813,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         fainted: 'assets/images/characters/minsu_fainted.png',
         dazed: 'assets/images/characters/minsu_dazed.png',
         disgusted: 'assets/images/characters/minsu_disgusted.png',
+        smirk: 'assets/images/characters/minsu_smirk.png',
         furious: 'assets/images/characters/minsu_furious.png',
         confused: 'assets/images/characters/minsu_confused.png',
         relieved: 'assets/images/characters/minsu_relieved.png',
@@ -894,6 +895,7 @@ const CHARACTER_EXPRESSION_VARIANT_PATHS = Object.freeze({
         undressed_shy: makeCharacterExpressionVariants('dain', 'undressed_shy', 4)
     }),
     Teacher: Object.freeze({
+        smile: makeCharacterExpressionVariants('teacher', 'smile', 2),
         flushed: Object.freeze([
             'assets/images/characters/teacher_flushed.png',
             'assets/images/characters/teacher_flushed_03.png'
@@ -901,6 +903,7 @@ const CHARACTER_EXPRESSION_VARIANT_PATHS = Object.freeze({
         climax: makeCharacterExpressionVariants('teacher', 'climax', 11)
     }),
     Nurse: Object.freeze({
+        smile: makeCharacterExpressionVariants('nurse', 'smile', 2),
         flushed: makeCharacterExpressionVariants('nurse', 'flushed', 3),
         climax: makeCharacterExpressionVariants('nurse', 'climax', 9)
     }),
@@ -909,6 +912,7 @@ const CHARACTER_EXPRESSION_VARIANT_PATHS = Object.freeze({
         climax: makeCharacterExpressionVariants('haeun', 'climax', 8)
     }),
     Minsu: Object.freeze({
+        smile: makeCharacterExpressionVariants('minsu', 'smile', 2),
         flushed: makeCharacterExpressionVariants('minsu', 'flushed', 3),
         climax: makeCharacterExpressionVariants('minsu', 'climax', 6)
     })
