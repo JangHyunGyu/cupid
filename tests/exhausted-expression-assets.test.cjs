@@ -55,7 +55,7 @@ test('all seven imported VN sprites retain native RGBA dimensions and catalog ha
             const bytes = readPlainMedia(path.join(root, asset));
             assert.equal(createHash('sha256').update(bytes).digest('hex'), catalog[asset].sha256);
             if (ext === 'png') {
-                const [expectedWidth, expectedHeight] = id === 'nurse' ? [1152, 1536] : [1086, 1448];
+                const [expectedWidth, expectedHeight] = [880, 1168];
                 assert.deepEqual([...bytes.subarray(0, 8)], [137, 80, 78, 71, 13, 10, 26, 10]);
                 assert.equal(bytes[25], 6);
                 assert.equal(bytes.readUInt32BE(16), expectedWidth);
