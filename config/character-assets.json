@@ -14220,8 +14220,8 @@
             "assets/images/characters/teacher_scared.png",
             "assets/characters/teacher/expressions/scared/01/sprite.png"
           ],
-          "sha256": "e6a9886d5613fcb51e1fa7de3dbbc253cd0b9ca757a41c86128ac673fa710369",
-          "bytes": 850838
+          "sha256": "014b68921338b743fed7aec1886ac5e390e98b31ba05a9cd9a430cb960419835",
+          "bytes": 883557
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/scared/01/sprite.webp",
@@ -14229,8 +14229,8 @@
             "assets/images/characters/teacher_scared.webp",
             "assets/characters/teacher/expressions/scared/01/sprite.webp"
           ],
-          "sha256": "fd2502aac07119539f0bfac80f7caefd191ae021f6dc6b643c52036a46bb930e",
-          "bytes": 104547
+          "sha256": "5876ffd69e9978a6b54d399d23bfc08bef43bb11b57a3a8f1f5c28cdce889260",
+          "bytes": 121207
         }
       }
     },
@@ -15678,8 +15678,8 @@
             "assets/images/characters/yuna_flushed_03.png",
             "assets/characters/yuna/expressions/flushed/03/sprite.png"
           ],
-          "sha256": "69e1d38febb53ea035d69d7edf016d0d4a5cf03b6aa32152acef19cdadfefb16",
-          "bytes": 936785
+          "sha256": "32607bdd7db0c440884fbbbdaed4c3ac7d30f694442830433bdd10aa460e4070",
+          "bytes": 899651
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/flushed/03/sprite.webp",
@@ -15687,8 +15687,8 @@
             "assets/images/characters/yuna_flushed_03.webp",
             "assets/characters/yuna/expressions/flushed/03/sprite.webp"
           ],
-          "sha256": "6d2e6e35fadfa5070f74cfd9dcab0aa9454a8e610d2c37ebc95cf72512febe60",
-          "bytes": 135869
+          "sha256": "c41cec8874b1a472227e6f5e89abbf539a24962877380047938b9ab641740aca",
+          "bytes": 135329
         }
       }
     },

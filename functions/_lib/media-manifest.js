@@ -10444,21 +10444,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/teacher_scared": {
-    "version": "c2725511c25364d14ba8b5ec",
+    "version": "1aec9ebd540f56c3aefaf549",
     "files": [
       {
         "path": "assets/images/characters/teacher_scared.png",
-        "key": "images/83f44dcb8aa9c76089de52c849d4968c379a0b4d370d23888dd9e75580c3bd07.png",
-        "sha256": "83f44dcb8aa9c76089de52c849d4968c379a0b4d370d23888dd9e75580c3bd07",
-        "etag": "d65309c36b70070f2aedaee84f2acf3a",
-        "size": 850801
+        "key": "images/1857164f7c14429d8783b476ec3613edcbfcabd19084c6af116a50e97b0ed7a4.png",
+        "sha256": "1857164f7c14429d8783b476ec3613edcbfcabd19084c6af116a50e97b0ed7a4",
+        "etag": "bfe8f1b48a023cd2b981d1c18ed45449",
+        "size": 883520
       },
       {
         "path": "assets/images/characters/teacher_scared.webp",
-        "key": "images/a8542f7657f9060731bc8b69628046244cbd638c89562f3f11c79876eca5455d.webp",
-        "sha256": "a8542f7657f9060731bc8b69628046244cbd638c89562f3f11c79876eca5455d",
-        "etag": "88bb04505fec0137fa5d980f4240ddb6",
-        "size": 104510
+        "key": "images/c81f20f31548c4a74a176d9810b8464400761da09069287fa40ca49b9383ab61.webp",
+        "sha256": "c81f20f31548c4a74a176d9810b8464400761da09069287fa40ca49b9383ab61",
+        "etag": "72bbb650d39bcf41597643d7812bcc1e",
+        "size": 121170
       }
     ]
   },
@@ -12166,21 +12166,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/yuna_flushed_03": {
-    "version": "0af0ec05ac51770322143bb2",
+    "version": "d1b020c0005a56df4f0e30d1",
     "files": [
       {
         "path": "assets/images/characters/yuna_flushed_03.png",
-        "key": "images/24bcb709392eab08eefa0111ae47222ac144ee4ed8c7ac3c71192c71334eb911.png",
-        "sha256": "24bcb709392eab08eefa0111ae47222ac144ee4ed8c7ac3c71192c71334eb911",
-        "etag": "a63cb64759e5546de43e085572864d68",
-        "size": 936748
+        "key": "images/d675f62f41d0248abd683e2df6de7a987f9ffcc04fbf6518a96b835131e7fe8d.png",
+        "sha256": "d675f62f41d0248abd683e2df6de7a987f9ffcc04fbf6518a96b835131e7fe8d",
+        "etag": "ad0feacccba369e9660830888ee7e70a",
+        "size": 899614
       },
       {
         "path": "assets/images/characters/yuna_flushed_03.webp",
-        "key": "images/44f5ec71fb2beba63db9445cab15c2e7708c84567e698e285fe25f6032ba540c.webp",
-        "sha256": "44f5ec71fb2beba63db9445cab15c2e7708c84567e698e285fe25f6032ba540c",
-        "etag": "e3aef664d4c37b07fc50e29fe268fc2e",
-        "size": 135832
+        "key": "images/ad1a005c75e310cfb182d63b8b609e8b0187000f36b0177140affd3bcdb9e416.webp",
+        "sha256": "ad1a005c75e310cfb182d63b8b609e8b0187000f36b0177140affd3bcdb9e416",
+        "etag": "29a84055d25dab0ac8b09ebcf79276a2",
+        "size": 135292
       }
     ]
   },
