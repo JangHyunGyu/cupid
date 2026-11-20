@@ -51,7 +51,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.383";
+const ASSET_VERSION = "2.9.384";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -569,6 +569,25 @@ function makeCupidGroupChatLogClientId({ turnId, role, speakerId = '', messageIn
     return makeCupidMigratedClientMsgId(parts);
 }
 
+// 서버 입력 해석 JSON 래퍼([Player input interpretation; ...])가 섞인 사용자 로그에서 원문 발화만 복원
+function unwrapCupidInputInterpretation(content, role) {
+    if (role !== 'user' || typeof content !== 'string') return content;
+    const trimmed = content.trim();
+    if (trimmed.indexOf('[Player input interpretation;') !== 0) return content;
+    const start = trimmed.indexOf('{');
+    if (start < 0) return content;
+    try {
+        const parsed = JSON.parse(trimmed.slice(start));
+        if (parsed && typeof parsed.quoted_player_input === 'string') {
+            return parsed.quoted_player_input;
+        }
+    } catch (_err) {}
+    return content;
+}
+if (typeof window !== 'undefined') {
+    window.unwrapCupidInputInterpretation = unwrapCupidInputInterpretation;
+}
+
 // ============================================================================
 // 기존 localStorage 대화 → D1 일괄 마이그레이션 (소급 적용)
 // ============================================================================
@@ -724,7 +743,7 @@ async function migrateCupidChatHistoryToD1() { var __oc16, __oc17;
         for (let index = 0; index < history.length; index++) {
             const msg = history[index];
             if (!msg || msg.role === 'system' || !msg.content) continue;
-            let content = _unwrapAssistantJson(msg.content, msg.role);
+            let content = unwrapCupidInputInterpretation(_unwrapAssistantJson(msg.content, msg.role), msg.role);
             content = await convertBase64ToR2(content);
             await postOne({
                 charId: normalizedCharId,
@@ -791,22 +810,26 @@ String(((item === null || item === void 0 ? void 0 : item.id)) || item || '')
                     groupJoinIndices,
                     groupPairId
                 };
-                if (String(memory.userContent || '').trim()) {
+                const rawUserSource = String(memory.displayUserContent || '').trim()
+                    ? memory.displayUserContent
+                    : memory.userContent;
+                const recoveredUserContent = unwrapCupidInputInterpretation(rawUserSource, 'user');
+                if (String(recoveredUserContent || '').trim()) {
                     await postOne({
                         ...shared,
                         role: 'user',
-                        content: memory.userContent,
+                        content: recoveredUserContent,
                         speakerId: '__player__',
                         clientMsgId: makeCupidGroupChatLogClientId({
                             turnId,
                             role: 'user',
-                            content: memory.userContent
+                            content: recoveredUserContent
                         }),
                         recoveryOccurrence: nextRecoveryOccurrence({
                             sessionId,
                             role: 'user',
                             speakerId: '__player__',
-                            content: memory.userContent
+                            content: recoveredUserContent
                         })
                     });
                 }

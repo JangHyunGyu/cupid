@@ -382,7 +382,8 @@ String(((value === null || value === void 0 ? void 0 : value.id)) || value || ''
 ); })
             .filter(message => participants.includes(message.speakerId) && message.content);
         const userContent = normalizeContent(memory.userContent);
-        if (!userContent && assistantMessages.length === 0) return null;
+        const displayUserContent = normalizeContent(memory.displayUserContent);
+        if (!userContent && !displayUserContent && assistantMessages.length === 0) return null;
 
         const turnId = String(memory.turnId || '').trim();
         if (turnId) {
@@ -398,6 +399,7 @@ String(((value === null || value === void 0 ? void 0 : value.id)) || value || ''
             participants,
             playerName: String(memory.playerName || this.playerName || '').trim(),
             userContent,
+            ...(displayUserContent ? { displayUserContent } : {}),
             assistantMessages
         };
         this.groupConversationMemories.push(entry);

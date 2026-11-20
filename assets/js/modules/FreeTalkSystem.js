@@ -1860,7 +1860,8 @@ class FreeTalkSystem {
                         messages,
                         characterId: charKey,
                         affinityContext: { [charKey]: { score: this.stateManager.getAffinity(charKey), locked: scene.affinityLocked === true,
-                            nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true } },
+                            nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
+                            ...(charKey === 'Haeun' && scene.affinityLocked !== true ? { storyCareAnchor: true } : {}) } },
                         chatLogContext: { sessionId: requestSceneId || '', conversationDay: this.stateManager.currentDay },
                         roleplaySurface: "game",
                         requestType: "character",
@@ -2701,7 +2702,8 @@ window.saveCupidChatLog({
                     characterId: 'group',
                     affinityContext: Object.fromEntries(this.groupParticipants.map(item => [item.id, {
                         score: this.stateManager.getAffinity(item.id), locked: scene.affinityLocked === true,
-                        nonRomance: item.id === 'Haeun' && scene.haeunRomance !== true
+                        nonRomance: item.id === 'Haeun' && scene.haeunRomance !== true,
+                        ...(item.id === 'Haeun' && scene.affinityLocked !== true ? { storyCareAnchor: true } : {})
                     }])),
                     chatLogContext: { sessionId: requestSceneId || '', conversationDay: this.stateManager.currentDay },
                     roleplaySurface: 'game',
@@ -2818,6 +2820,7 @@ window.saveCupidChatLog({
         participants: this.groupParticipants,
         playerName: this.stateManager.playerName || '',
         userContent: (__oc213 = requestContext.aiUserContent) !== null && __oc213 !== void 0 ? __oc213 : finalContent,
+        displayUserContent: finalContent,
         assistantMessages
     })));
                 const lastSpeaker = rendered.at(-1);
