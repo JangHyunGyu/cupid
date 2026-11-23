@@ -218,6 +218,9 @@ String(root.GAME_LANG || (((__oc1 = document.documentElement) === null || __oc1 
             const script = document.createElement('script');
             script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit';
             script.async = true;
+            // This loader owns the load failure (onerror/timeout/retry) and the caller reports a terminal verification
+            // failure itself, so the generic resource-error reporter must not log the same script again (D1 7009).
+            script.setAttribute('data-cupid-managed-script', 'true');
             const timer = setTimeout(() => { script.remove(); reject(failure(true, { code: 'script-load-timeout', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); }, 20000);
             script.onload = () => { var __oc16; clearTimeout(timer); (((__oc16 = root.turnstile) === null || __oc16 === void 0 ? void 0 : __oc16.render)) ? resolve(root.turnstile) : reject(failure(false, { code: 'script-missing-api', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); };
             script.onerror = () => { clearTimeout(timer); script.remove(); reject(failure(true, { code: 'script-load-error', stage: 'script-load', widgetLoaded: false, scriptLoaded: false })); };

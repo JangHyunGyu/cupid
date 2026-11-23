@@ -219,3 +219,29 @@ test('Turnstile 200100 shows a device-clock message instead of asking to verify 
   assert.match(banner.children[0].textContent, /Verify again/);
   assert.doesNotMatch(banner.children[0].textContent, /device date and time/i);
 });
+
+test('the Turnstile script is marked as managed so its load failure is not double-reported (D1 7009)', async () => {
+  const source = fs.readFileSync(path.join(__dirname, '../assets/js/ai-browser-proof.js'), 'utf8');
+  const reporter = fs.readFileSync(path.join(__dirname, '../assets/js/error-reporter.js'), 'utf8');
+  assert.match(reporter, /getAttribute\('data-cupid-managed-script'\) === 'true'\) return;/);
+  const scripts = [];
+  const window = { innerWidth: 375, fetch: async () => new Response('{}') };
+  const document = { documentElement: { lang: 'en' }, body: { append() {} }, visibilityState: 'visible',
+    addEventListener() {}, removeEventListener() {},
+    head: { append(node) { scripts.push(node); queueMicrotask(() => node.onerror()); } },
+    createElement: tag => ({ tagName: String(tag || '').toUpperCase(), style: {}, attributes: {},
+      setAttribute(name, value) { this.attributes[name] = String(value); }, append() {}, remove() { this.removed = true; } }) };
+  vm.runInNewContext(source, {
+    window, document, location: new URL('https://cupid.archerlab.dev/game.html'),
+    URL, Request, Response, Headers, crypto: globalThis.crypto, TextEncoder, DOMException, setTimeout, clearTimeout, console: { warn() {} },
+    Array, Object, Error, String, Boolean,
+  });
+  await assert.rejects(
+    window.fetch('/api/ai', { method: 'POST', body: '{}', headers: { 'x-request-type': 'character' } }),
+    error => error.turnstileErrorCode === 'script-load-error');
+  assert.ok(scripts.length >= 1);
+  for (const script of scripts) {
+    assert.equal(script.src, 'https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit');
+    assert.equal(script.attributes['data-cupid-managed-script'], 'true');
+  }
+});
