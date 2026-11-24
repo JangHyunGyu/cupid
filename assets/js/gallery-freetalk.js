@@ -1662,6 +1662,9 @@ window.saveCupidChatLog({
             .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?|sec(?:onds?)?|second(?:es?|s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
             .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:es?|s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, shortPause)
             .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?)\.?/g, shortPause)
+            .replace(/<(?:pad|eos|bos|unk|sep|cls|mask|end_of_turn|start_of_turn|turn)>|<\|[^|>\s]{1,32}\|>/gi, '')
+            .replace(/(?:\}\s*\}\s*\{\s*\\?"?(?:type|text|segments|expression|affinity)\b[^*]*|\}\s*,\s*\{\s*"(?:type|text)"\s*:[^*]*)(\*)?\s*$/i, (_, star) => star || '')
+            .replace(/\*\s*\*/g, '')
             .replace(/\s{2,}/g, ' ')
             .replace(/\s+([.?!,;:])/g, '$1')
             .trim();

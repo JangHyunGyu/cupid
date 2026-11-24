@@ -196,3 +196,122 @@ test('rewritten dist CHARACTER_EXPRESSIONS paths still enforce speaker ownership
     assert.equal(saved[1].expressionVariant, '01');
     assert.equal(saved[1].avatarAsset, 'assets/images/characters/dain_relieved.webp');
 });
+
+test('casual outfit prefixes strip cleanly from portrait logs and foreign rejection drops variant', () => {
+    const { box } = loadRuntime();
+    const nurseFields = box.getCupidPortraitLogFields(img('assets/images/characters/nurse_home_smile.webp'), 'Nurse');
+    assert.equal(nurseFields.expression, 'smile');
+    assert.equal(nurseFields.expressionVariant, '01');
+    assert.equal(nurseFields.avatarAsset, 'assets/images/characters/nurse_home_smile.webp');
+    assert.equal(box.getCupidExpressionVariantId('assets/images/characters/nurse_home_smile.webp', 'smile'), '');
+
+    const dateFields = box.getCupidPortraitLogFields(img('assets/images/characters/seyoun_date_shy.webp'), 'Seoyeon');
+    assert.equal(dateFields.expression, 'shy');
+    assert.equal(dateFields.expressionVariant, '01');
+
+    const rejected = box.makeCupidChatLogEntry({
+        userId: 'u',
+        charId: 'Dain',
+        sessionId: 'day4_temptation_dain_freetalk',
+        role: 'assistant',
+        content: 'test',
+        context: '1:1',
+        playerName: 'p',
+        language: 'ko',
+        appId: 'cupid',
+        expression: 'seductive',
+        expressionVariant: '02',
+        avatarAsset: 'assets/images/characters/seyoun_soft_smile_02.webp'
+    });
+    assert.equal(rejected.avatarAsset, undefined);
+    assert.equal(rejected.expressionVariant, undefined);
+});
+
+test('FreeTalkSystem clears _lastExpressionSelection on reset/interlude and passes group metadata + resolved day', async () => {
+    const { box, saved } = loadRuntime();
+    const recorded = [];
+    vm.runInContext(read('assets/js/freetalk-core.js'), box);
+    box.window.recordCupidVisibleChat = entry => { recorded.push(entry); return entry; };
+    box.window.GAME_LANG = 'ko';
+    box.window.CupidMedia = { loadImageWithMediaFallback: () => {} };
+    box.DEFAULT_MAX_FREE_TALK_TURNS = 3;
+    box.document = { ...box.document, documentElement: { lang: 'ko' }, querySelectorAll: () => [] };
+    vm.runInContext(read('assets/js/modules/FreeTalkSystem.js'), box);
+
+    const slotImg = img('assets/images/characters/seyoun_soft_smile_02.webp');
+    const slot = { dataset: { groupCharId: 'Seoyeon' }, querySelector: () => slotImg };
+    const ft = Object.create(box.window.FreeTalkSystem.prototype);
+    Object.assign(ft, {
+        charNameMap: { 서연: 'Seoyeon', 유나: 'Yuna', Seoyeon: 'Seoyeon', Yuna: 'Yuna' },
+        stateManager: {
+            currentDay: 1,
+            getAffinity: () => 50,
+            setAffinity() {},
+            getRelationshipAftermath: () => null,
+            setRelationshipAftermath() {},
+            setFlag() {},
+            getFlag: () => false
+        },
+        galleryManager: { incrementFreeTalkCount() {}, updateMaxAffinity() {}, checkAffinityUnlock() {} },
+        dialogueSystem: {
+            typeText: async () => {},
+            getChatRenderReceipt: () => ({ status: 'rendered' }),
+            finishStreamingText() {}
+        },
+        uiManager: {
+            charSlots: { center: slot, left: slot, right: { dataset: { groupCharId: 'Yuna' }, querySelector: () => img('assets/images/characters/yuna_normal.webp') } },
+            updateNameTag() {},
+            showNextIndicator() {},
+            showAffinityChange() {}
+        },
+        groupParticipants: [{ id: 'Seoyeon', name: '서연' }, { id: 'Yuna', name: '유나' }],
+        _freeTalkEpoch: 1,
+        currentSceneId: 'after2_group_seoyeon_companion',
+        currentCharKey: 'group:Seoyeon:Yuna',
+        isFreeTalking: true,
+        freeTalkHistory: [],
+        _activeRequestOwner: {},
+        _lastExpressionSelection: { owner: 'Seoyeon', expression: 'soft_smile', avatarAsset: 'assets/images/characters/seyoun_soft_smile_02.webp', expressionVariant: '02' },
+        _setGroupActiveSpeaker() {},
+        _applyGroupExpression: expr => ({ owner: 'Seoyeon', expression: expr, path: 'assets/images/characters/seyoun_firm.webp', avatarAsset: 'assets/images/characters/seyoun_firm.webp', expressionVariant: '01' }),
+        _applyGroupAffinity: () => ({ change: 1, requestedChange: 1, value: 51 }),
+        _commitFreeTalkCheckpoint() {}
+    });
+
+    ft.applyExpression('seductive', { name: 'Seoyeon', romanticInterlude: true });
+    assert.equal(ft._lastExpressionSelection, null);
+
+    ft._lastExpressionSelection = { owner: 'Seoyeon', expressionVariant: '02' };
+    ft._invalidateFreeTalkContext();
+    assert.equal(ft._lastExpressionSelection, null);
+
+    ft._lastExpressionSelection = { owner: 'Seoyeon', expressionVariant: '02' };
+    ft.resetForNewGame();
+    assert.equal(ft._lastExpressionSelection, null);
+
+    ft.isFreeTalking = true;
+    ft.currentSceneId = 'after2_group_seoyeon_companion';
+    ft.currentCharKey = 'group:Seoyeon:Yuna';
+    const requestContext = {
+        owner: ft._activeRequestOwner,
+        epoch: ft._freeTalkEpoch,
+        sceneId: 'after2_group_seoyeon_companion',
+        charKey: 'group:Seoyeon:Yuna',
+        history: ft.freeTalkHistory,
+        turnMeta: { turnId: 'group-turn-1' }
+    };
+    await ft._renderGroupConversations(
+        [{ speakerId: 'Seoyeon', speakerName: '서연', text: '같이 정리하자.', segments: [{ type: 'dialogue', text: '같이 정리하자.' }], expression: 'firm', affinity: 1 }],
+        requestContext,
+        '응',
+        'ko',
+        { name: '서연' },
+        null,
+        null,
+        { model: 'google/gemma-4-31b-it', providerRoute: 'openrouter:deepinfra/turbo', outputLanguage: 'ko' }
+    );
+    assert.equal(recorded.length, 1);
+    assert.equal(recorded[0].conversationDay, 2);
+    assert.equal(recorded[0].responseMetadata.model, 'google/gemma-4-31b-it');
+    assert.equal(recorded[0].responseMetadata.providerRoute, 'openrouter:deepinfra/turbo');
+});

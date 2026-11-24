@@ -51,7 +51,7 @@ const AI_API_ENDPOINT = "/api/ai";
  * - 버전을 바꾸면 브라우저가 캐시를 무시하고 새 파일을 다운로드합니다
  * - 이미지나 오디오를 수정했는데 반영이 안 될 때 이 숫자를 올리세요
  */
-const ASSET_VERSION = "2.9.385";
+const ASSET_VERSION = "2.9.386";
 
 const CUPID_PROMPT_EPOCH_VERSION = 1;
 
@@ -1130,7 +1130,8 @@ function getCupidPortraitLogFields(img, speaker, ...fallbackCandidates) {
     const file = avatarAsset.split('/').pop() || '';
     const match = file.match(/^[a-z0-9]+_([a-z0-9_]+?)(?:_(\d{2}))?\.webp$/i);
     if (!match) return { expression: '', expressionVariant: '', avatarAsset: '' };
-    return { expression: match[1].toLowerCase(), expressionVariant: match[2] || '01', avatarAsset };
+    const expression = match[1].toLowerCase().replace(/^(?:date|home)_/, '');
+    return { expression, expressionVariant: match[2] || '01', avatarAsset };
 }
 
 function makeCupidChatLogEntry({
@@ -1202,8 +1203,11 @@ function makeCupidChatLogEntry({
         entry.expression = /^[a-z][a-z0-9_-]{0,63}$/.test(code) ? code : '';
         if (/^assets\/images\/characters\/[a-z0-9_-]+\.(?:webp|png)$/.test(avatarAsset)
             && isCupidAvatarAssetOwnedBy(avatarAsset, speakerId || charId)) entry.avatarAsset = avatarAsset;
-        const variant = normalizeCupidExpressionVariant(expressionVariant)
-            || (entry.expression && entry.avatarAsset ? getCupidExpressionVariantId(entry.avatarAsset, entry.expression) : '');
+        const droppedForeignAvatar = Boolean(avatarAsset) && !entry.avatarAsset;
+        const variant = droppedForeignAvatar
+            ? ''
+            : (normalizeCupidExpressionVariant(expressionVariant)
+                || (entry.expression && entry.avatarAsset ? getCupidExpressionVariantId(entry.avatarAsset, entry.expression) : ''));
         if (entry.expression && variant) entry.expressionVariant = variant;
     }
     const normalizedRecoveryOccurrence = Number(recoveryOccurrence);

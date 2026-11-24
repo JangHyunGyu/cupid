@@ -2684,4 +2684,10 @@ test('non-cutout bikini gallery CG is excluded from expression sprites and every
         assert.equal((gft.CHAR_EXPRESSIONS[id] || []).includes('bikini'), false);
         assert.equal(gft._updateExpression('bikini', id), undefined);
     }
+
+    const leaked = '*이안이 원고를 훑어 내려가는 속도와 리듬을 가만히 지켜본다.}}{\\type*';
+    assert.equal(ft._sanitizeVisibleArtifacts(leaked), '*이안이 원고를 훑어 내려가는 속도와 리듬을 가만히 지켜본다.*');
+    assert.equal(gft._sanitizeVisibleArtifacts(leaked), '*이안이 원고를 훑어 내려가는 속도와 리듬을 가만히 지켜본다.*');
+    assert.equal(ft._sanitizeVisibleArtifacts('안녕<pad><eos><|eot_id|>!'), '안녕!');
+    assert.equal(gft._sanitizeVisibleArtifacts('안녕<pad><eos><|eot_id|>!'), '안녕!');
 });

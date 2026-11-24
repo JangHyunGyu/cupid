@@ -1462,6 +1462,7 @@ class FreeTalkSystem {
         }
         this._freeTalkEpoch += 1;
         this._activeChatTurnId = null;
+        this._lastExpressionSelection = null;
         if (!preserveRequestOwner) {
             this._activeRequestOwner = null;
             this._activeRequestContext = null;
@@ -1486,6 +1487,7 @@ class FreeTalkSystem {
         this._groupMessagesRemaining = 0;
         this._isRemote = false;
         this._activeChatTurnId = null;
+        this._lastExpressionSelection = null;
         (((__oc97 = (__oc96 = this.uiManager) === null || __oc96 === void 0 ? void 0 : __oc96.removeStagedImage) === null || __oc97 === void 0 ? void 0 : __oc97.call(__oc96)));
     }
 
@@ -1585,6 +1587,12 @@ class FreeTalkSystem {
 
         const charKey = this.charNameMap[scene.name] || scene.name;
         if (this.currentCharKey !== charKey) return;
+        const resolvedDay = typeof window.resolveCupidConversationDay === 'function'
+            ? window.resolveCupidConversationDay(this.stateManager.currentDay, requestSceneId)
+            : null;
+        const effectiveConversationDay = resolvedDay !== null && resolvedDay !== undefined
+            ? resolvedDay
+            : this.stateManager.currentDay;
 
         const requestOwner = {};
         const requestContext = {
@@ -1622,7 +1630,7 @@ class FreeTalkSystem {
         this._activeChatTurnId = requestContext.turnMeta.turnId;
         (((__oc103 = window.recordCupidVisibleChat) === null || __oc103 === void 0 ? void 0 : __oc103.call(window, { charId: charKey, role: 'user', content: finalContent,
         sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
-        conversationDay: this.stateManager.currentDay, logSource: 'realtime' })));
+        conversationDay: effectiveConversationDay, logSource: 'realtime' })));
 
         // 텍스트 표시
         this.uiManager.messageEl.innerHTML = text ? this.dialogueSystem.parseNarration(text) : '';
@@ -1722,7 +1730,7 @@ class FreeTalkSystem {
                     }
                     (((__oc105 = window.recordCupidVisibleChat) === null || __oc105 === void 0 ? void 0 : __oc105.call(window, { charId: charKey, role: 'assistant', content: previewText,
         sessionId: requestSceneId, turnId: (__oc106 = requestContext.turnMeta) === null || __oc106 === void 0 ? void 0 : __oc106.turnId,
-        conversationDay: this.stateManager.currentDay, logSource: 'stream-preview' })));
+        conversationDay: effectiveConversationDay, logSource: 'stream-preview' })));
                     this.dialogueSystem.renderStreamingText(
                         previewText,
                         scene.name,
@@ -1862,7 +1870,7 @@ class FreeTalkSystem {
                         affinityContext: { [charKey]: { score: this.stateManager.getAffinity(charKey), locked: scene.affinityLocked === true,
                             nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
                             ...(charKey === 'Haeun' && scene.affinityLocked !== true ? { storyCareAnchor: true } : {}) } },
-                        chatLogContext: { sessionId: requestSceneId || '', conversationDay: this.stateManager.currentDay },
+                        chatLogContext: { sessionId: requestSceneId || '', conversationDay: effectiveConversationDay },
                         roleplaySurface: "game",
                         requestType: "character",
                         chatMode: "single",
@@ -1976,14 +1984,17 @@ class FreeTalkSystem {
                 const pacedReplyText = Array.isArray(parsedSegments) && parsedSegments.length > 0
                     ? parsedSegments.map(segment => segment.text).join('\n\n')
                     : reply;
-                const shownPortrait = (((__oc120 = window.getCupidPortraitLogFields) === null || __oc120 === void 0 ? void 0 : __oc120.call(window, (__oc122 = (__oc121 = this.uiManager.charSlots) === null || __oc121 === void 0 ? void 0 : __oc121.center) === null || __oc122 === void 0 ? void 0 : __oc122.querySelector('img'), charKey, scene === null || scene === void 0 ? void 0 : scene.character))) || {};
+                const isRomanticInterlude = Boolean(scene && scene.romanticInterlude);
+                const shownPortrait = isRomanticInterlude
+                    ? {}
+                    : (((__oc120 = window.getCupidPortraitLogFields) === null || __oc120 === void 0 ? void 0 : __oc120.call(window, (__oc122 = (__oc121 = this.uiManager.charSlots) === null || __oc121 === void 0 ? void 0 : __oc121.center) === null || __oc122 === void 0 ? void 0 : __oc122.querySelector('img'), charKey, scene === null || scene === void 0 ? void 0 : scene.character))) || {};
                 if (parsed.expression === 'neutral') {
                     const shownExpr = String(shownPortrait.expression || '').replace(/^(?:date|home)_/i, '');
                     parsed.expression = shownExpr || (displayFallback ? '' : 'normal');
                 }
                 (((__oc123 = window.recordCupidVisibleChat) === null || __oc123 === void 0 ? void 0 : __oc123.call(window, { charId: charKey, role: 'assistant', content: reply,
         sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId,
-        conversationDay: this.stateManager.currentDay, responseMetadata: data,
+        conversationDay: effectiveConversationDay, responseMetadata: data,
         expression: displayFallback ? (shownPortrait.expression || '') : parsed.expression,
         ...(displayFallback ? {
             expressionVariant: shownPortrait.expressionVariant || '',
@@ -2005,7 +2016,10 @@ class FreeTalkSystem {
                 this._assertRequestContext(requestContext, data);
                 let affinityResult;
                 const commitTurn = () => { var __oc125, __oc126, __oc127, __oc128, __oc129, __oc130, __oc131, __oc132;
-                if (!displayFallback) this.applyExpression(parsed.expression, scene);
+                if (!displayFallback) {
+                    this._lastExpressionSelection = null;
+                    this.applyExpression(parsed.expression, scene);
+                }
                 affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(charKey) } : this.applyAffinity(parsed.affinity, scene, finalContent);
                 this._assertRequestContext(requestContext, data);
                 const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
@@ -2071,10 +2085,18 @@ class FreeTalkSystem {
                     : { applied: true, value: commitTurn() };
                 if (!turnResult.applied) throw this._makeStaleTurnError('This conversation turn was already committed');
                 this.uiManager.updateNameTag(scene.name);
-                const selected = !displayFallback ? (this._lastExpressionSelection || null) : null;
-                const currentPortrait = (((__oc133 = window.getCupidPortraitLogFields) === null || __oc133 === void 0 ? void 0 : __oc133.call(window, (__oc135 = (__oc134 = this.uiManager.charSlots) === null || __oc134 === void 0 ? void 0 : __oc134.center) === null || __oc135 === void 0 ? void 0 : __oc135.querySelector('img'), charKey, selected === null || selected === void 0 ? void 0 : selected.avatarAsset, scene === null || scene === void 0 ? void 0 : scene.character))) || {};
+                const selected = !displayFallback && !isRomanticInterlude && this._lastExpressionSelection && this._lastExpressionSelection.owner === charKey
+                    ? this._lastExpressionSelection
+                    : null;
+                const centerPortraitImg = isRomanticInterlude
+                    ? null
+                    : ((__oc135 = (__oc134 = this.uiManager.charSlots) === null || __oc134 === void 0 ? void 0 : __oc134.center) === null || __oc135 === void 0 ? void 0 : __oc135.querySelector('img'));
+                const scenePortrait = isRomanticInterlude ? undefined : (scene === null || scene === void 0 ? void 0 : scene.character);
+                const currentPortrait = isRomanticInterlude
+                    ? {}
+                    : (((__oc133 = window.getCupidPortraitLogFields) === null || __oc133 === void 0 ? void 0 : __oc133.call(window, centerPortraitImg, charKey, selected === null || selected === void 0 ? void 0 : selected.avatarAsset, scenePortrait))) || {};
                 // The center slot can still show another character, so only the speaker's own portrait is logged.
-                const avatarAsset = (((__oc136 = window.pickCupidSpeakerAvatarAsset) === null || __oc136 === void 0 ? void 0 : __oc136.call(window, charKey, (__oc137 = window.getCupidChatAvatarAsset) === null || __oc137 === void 0 ? void 0 : __oc137.call(window, (__oc139 = (__oc138 = this.uiManager.charSlots) === null || __oc138 === void 0 ? void 0 : __oc138.center) === null || __oc139 === void 0 ? void 0 : __oc139.querySelector('img')), selected === null || selected === void 0 ? void 0 : selected.avatarAsset, scene === null || scene === void 0 ? void 0 : scene.character))) || currentPortrait.avatarAsset || '';
+                const avatarAsset = (((__oc136 = window.pickCupidSpeakerAvatarAsset) === null || __oc136 === void 0 ? void 0 : __oc136.call(window, charKey, (__oc137 = window.getCupidChatAvatarAsset) === null || __oc137 === void 0 ? void 0 : __oc137.call(window, centerPortraitImg), selected === null || selected === void 0 ? void 0 : selected.avatarAsset, scenePortrait))) || currentPortrait.avatarAsset || '';
                 const loggedExpression = displayFallback
                     ? (currentPortrait.expression || shownPortrait.expression || '')
                     : (parsed.expression || currentPortrait.expression || '');
@@ -2161,7 +2183,7 @@ window.saveCupidChatLog({
         content: finalContent,
         sessionId: requestSceneId,
         turnId: ((__oc153 = requestContext === null || requestContext === void 0 ? void 0 : requestContext.turnMeta) === null || __oc153 === void 0 ? void 0 : __oc153.turnId) || (error === null || error === void 0 ? void 0 : error.turnId) || '',
-        conversationDay: (__oc154 = this.stateManager) === null || __oc154 === void 0 ? void 0 : __oc154.currentDay,
+        conversationDay: effectiveConversationDay,
         responseMetadata: error,
         logSource: 'control-blocked'
     })));
@@ -2409,7 +2431,13 @@ window.saveCupidChatLog({
         };
     }
 
-    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null, streamingPreview = null, displayFallback = null) { var __oc176, __oc177, __oc178, __oc179, __oc180, __oc181, __oc182, __oc183, __oc184, __oc190, __oc191;
+    async _renderGroupConversations(conversations, requestContext, latestUserText, lang, scene = null, streamingPreview = null, displayFallback = null, responseMetadata = null) { var __oc176, __oc177, __oc178, __oc179, __oc180, __oc181, __oc182, __oc183, __oc184, __oc190, __oc191;
+        const resolvedDay = typeof window.resolveCupidConversationDay === 'function'
+            ? window.resolveCupidConversationDay(this.stateManager.currentDay, requestContext.sceneId)
+            : null;
+        const effectiveConversationDay = resolvedDay !== null && resolvedDay !== undefined
+            ? resolvedDay
+            : this.stateManager.currentDay;
         const rendered = [];
         for (let index = 0; index < conversations.length; index += 1) {
             this._assertRequestContext(requestContext);
@@ -2439,8 +2467,8 @@ window.saveCupidChatLog({
             (((__oc183 = window.recordCupidVisibleChat) === null || __oc183 === void 0 ? void 0 : __oc183.call(window, { charId: 'group', role: 'assistant', content: conversation.text,
         speakerId: conversation.speakerId, participants: this.groupParticipants,
         sessionId: requestContext.sceneId, turnId: (__oc184 = requestContext.turnMeta) === null || __oc184 === void 0 ? void 0 : __oc184.turnId,
-        expression: loggedExpression, expressionVariant, avatarAsset,
-        conversationDay: this.stateManager.currentDay })));
+        responseMetadata, expression: loggedExpression, expressionVariant, avatarAsset,
+        conversationDay: effectiveConversationDay })));
             if (index === 0 && streamingPreview) {
                 const pacedConversationText = Array.isArray(conversation.segments) && conversation.segments.length > 0
                     ? conversation.segments.map(segment => segment.text).join('\n\n')
@@ -2525,6 +2553,12 @@ window.saveCupidChatLog({
         const requestEpoch = this._freeTalkEpoch;
         const groupKey = this.currentCharKey;
         if (!scene || scene.type !== 'group_free_talk' || !((groupKey === null || groupKey === void 0 ? void 0 : groupKey.startsWith('group:')))) return;
+        const resolvedDay = typeof window.resolveCupidConversationDay === 'function'
+            ? window.resolveCupidConversationDay(this.stateManager.currentDay, requestSceneId)
+            : null;
+        const effectiveConversationDay = resolvedDay !== null && resolvedDay !== undefined
+            ? resolvedDay
+            : this.stateManager.currentDay;
 
         const requestOwner = {};
         const requestContext = {
@@ -2552,7 +2586,7 @@ window.saveCupidChatLog({
         this._activeChatTurnId = requestContext.turnMeta.turnId;
         (((__oc195 = window.recordCupidVisibleChat) === null || __oc195 === void 0 ? void 0 : __oc195.call(window, { charId: 'group', role: 'user', content: finalContent,
         sessionId: requestSceneId, turnId: requestContext.turnMeta.turnId, speakerId: '__player__',
-        participants: this.groupParticipants, conversationDay: this.stateManager.currentDay, logSource: 'realtime' })));
+        participants: this.groupParticipants, conversationDay: effectiveConversationDay, logSource: 'realtime' })));
         this.uiManager.messageEl.innerHTML = text ? this.dialogueSystem.parseNarration(text) : '';
         if (stagedImage) {
             const img = document.createElement('img');
@@ -2606,7 +2640,7 @@ window.saveCupidChatLog({
                     (((__oc199 = window.recordCupidVisibleChat) === null || __oc199 === void 0 ? void 0 : __oc199.call(window, { charId: 'group', role: 'assistant', content: previewText,
         speakerId: previewSpeaker.id, participants: this.groupParticipants,
         sessionId: requestSceneId, turnId: (__oc200 = requestContext.turnMeta) === null || __oc200 === void 0 ? void 0 : __oc200.turnId,
-        conversationDay: this.stateManager.currentDay, logSource: 'stream-preview' })));
+        conversationDay: effectiveConversationDay, logSource: 'stream-preview' })));
                     this.dialogueSystem.renderStreamingText(
                         previewText,
                         previewSpeaker.name,
@@ -2705,7 +2739,7 @@ window.saveCupidChatLog({
                         nonRomance: item.id === 'Haeun' && scene.haeunRomance !== true,
                         ...(item.id === 'Haeun' && scene.affinityLocked !== true ? { storyCareAnchor: true } : {})
                     }])),
-                    chatLogContext: { sessionId: requestSceneId || '', conversationDay: this.stateManager.currentDay },
+                    chatLogContext: { sessionId: requestSceneId || '', conversationDay: effectiveConversationDay },
                     roleplaySurface: 'game',
                     requestType: 'character',
                     chatMode: 'group',
@@ -2775,7 +2809,8 @@ window.saveCupidChatLog({
                 lang,
                 scene,
                 streamingPreview,
-                displayFallback
+                displayFallback,
+                data
             );
             streamingPreview = null;
             this._assertRequestContext(requestContext, data);
@@ -3202,7 +3237,11 @@ window.saveCupidGroupChatLog({
         out = out
             .replace(/\*\s*\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?|sec(?:onds?)?|second(?:es?|s)?|seg(?:undos?)?|Sek(?:unden)?)\.?\s*\*/gi, pauseBeat)
             .replace(/\b\d+(?:[.,]\d+)?\s*(?:sec(?:onds?)?|second(?:es?|s)?|seg(?:undos?)?|Sek(?:unden)?)\b\.?/gi, shortPause)
-            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?)\.?/g, shortPause);
+            .replace(/\d+(?:[.,]\d+)?\s*(?:초간|초|秒钟?)\.?/g, shortPause)
+            .replace(/<(?:pad|eos|bos|unk|sep|cls|mask|end_of_turn|start_of_turn|turn)>|<\|[^|>\s]{1,32}\|>/gi, '')
+            .replace(/(?:\}\s*\}\s*\{\s*\\?"?(?:type|text|segments|expression|affinity)\b[^*]*|\}\s*,\s*\{\s*"(?:type|text)"\s*:[^*]*)(\*)?\s*$/i, (_, star) => star || '')
+            .replace(/\*\s*\*/g, '')
+            .replace(/\s{2,}/g, ' ');
 
         return out.replace(/\s+([.?!,;:])/g, '$1').trim();
     }
@@ -3394,7 +3433,10 @@ window.saveCupidGroupChatLog({
     }
 
     applyExpression(exprName, scene) { var __oc247, __oc248, __oc249, __oc250, __oc251, __oc252, __oc253, __oc254, __oc255, __oc256, __oc257;
-        if (scene.romanticInterlude === true) return;
+        if (scene.romanticInterlude === true) {
+            this._lastExpressionSelection = null;
+            return;
+        }
         if (!window.CHARACTER_EXPRESSIONS && window.ensureCupidFreeTalkRuntime) {
             const epoch = this._freeTalkEpoch;
             return window.ensureCupidFreeTalkRuntime().then(() => {

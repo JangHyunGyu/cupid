@@ -178,3 +178,60 @@ test('explicit cancellation is not reported as a transport timeout', async () =>
   assert.notEqual(error.isTransportFailure, true);
   assert.equal(core.isNetworkTransportError(error), false);
 });
+
+for (const stream of [false, true]) test(`pad-token ${stream ? 'stream' : 'JSON'} degeneration is blocked before preview (D1 2175468, 2187504)`, async () => {
+  const content = JSON.stringify({
+    segments: [{ type: 'narration', text: '*볼펜을 돌리던 손가락이 멈춘다' + '<pad>'.repeat(40) }],
+    affinity: 2
+  });
+  const runtime = load([() => stream ? sse(content, { choices: [{ message: { content } }] }) : completion(content)]);
+  const previews = [];
+  const parsed = JSON.parse(await runtime.run({ onDelta: value => previews.push(value.content) }));
+  assert.equal(parsed.displayFallback.empty, true);
+  assert.equal(parsed.affinity, 0);
+  assert.equal(previews.length, 0);
+  assert.equal(runtime.requests.length, 1);
+});
+
+test('buildAiDisplayFallback strips stray special tokens and preserves stream metadata on fallback', async () => {
+  const fallback = JSON.parse(core.buildAiDisplayFallback(
+    JSON.stringify({ segments: [{ type: 'narration', text: '*손을 멈춘다<pad><eos><|eot_id|>*' }] }),
+    { appType: 'cupid' }
+  ).content);
+  assert.equal(fallback.segments[0].text, '*손을 멈춘다*');
+
+  const snapshot = JSON.stringify({
+    segments: [{ type: 'dialogue', text: 'Keep metadata.' }],
+    displayFallback: { empty: false, partial: true }
+  });
+  const payload = await core.requestChatCompletion('https://ai.test', stream => ({
+    method: 'POST',
+    headers: { 'x-cache-key': 'test:stable' },
+    body: JSON.stringify({ messages: history, turnId: 'turn-meta-1', stream, responsePresentation: 'ellipsis' })
+  }), {
+    retryDelayMs: 1,
+    timeoutMs: 3000,
+    fetchImpl: async () => new Response(
+      `data: ${JSON.stringify({
+        segmentPreview: true,
+        content: snapshot,
+        model: 'google/gemma-4-31b-it',
+        provider: 'openrouter',
+        providerRoute: 'openrouter:deepinfra/turbo',
+        turnId: 'turn-meta-1',
+        outputLanguage: 'ko'
+      })}\n\ndata: ${JSON.stringify({
+        final: true,
+        error: 'Archive unavailable',
+        reason: 'REPLY_ARCHIVE_FAILED',
+        retryExhausted: true
+      })}\n\n`,
+      { headers: { 'content-type': 'text/event-stream' } }
+    )
+  });
+  assert.equal(payload.model, 'google/gemma-4-31b-it');
+  assert.equal(payload.provider, 'openrouter');
+  assert.equal(payload.providerRoute, 'openrouter:deepinfra/turbo');
+  assert.equal(payload.turnId, 'turn-meta-1');
+  assert.equal(payload.outputLanguage, 'ko');
+});

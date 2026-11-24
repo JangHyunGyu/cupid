@@ -1728,7 +1728,10 @@ function buildAiDisplayFallback(raw, options = {}) { var __oc12, __oc13, __oc14,
     const suffix = text => /(?:\.{3}|\u2026)$/.test(text) ? text : `${text}...`;
     const displayText = (value, path, plain = false) => {
         if (typeof value !== 'string') return '';
-        const text = value.replace(/\u0000/g, '').trim();
+        const text = value
+            .replace(/\u0000/g, '')
+            .replace(/<(?:pad|eos|bos|unk|sep|cls|mask|end_of_turn|start_of_turn|turn)>|<\|[^|>\s]{1,32}\|>/gi, '')
+            .trim();
         if (!text || /^[\[{]/.test(text) || /^```/.test(text)) return '';
         if (cut.has(JSON.stringify(path)) || (plain && options.truncated)) {
             result.displayFallback.partial = true;
@@ -1986,7 +1989,11 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
 
     // One budget covers transport and content recovery; the prompt and turn stay identical.
     function hasCupidRepeatLoop(value) {
-        return /(?:^|[\s"*])([\p{L}\p{N}]{1,32}(?:[ ,]+[\p{L}\p{N}]{1,32}){0,3}?)(?:[\s,]+\1){11,}(?=[\s",.*!?\]}]|$)/iu.test(String(value || ''));
+        const text = String(value || '');
+        if (/(?:^|[\s"*])([\p{L}\p{N}]{1,32}(?:[ ,]+[\p{L}\p{N}]{1,32}){0,3}?)(?:[\s,]+\1){11,}(?=[\s",.*!?\]}]|$)/iu.test(text)) {
+            return true;
+        }
+        return /(?:<(?:pad|eos|bos|unk|sep|cls|mask|end_of_turn|start_of_turn|turn)>\s*|<\|[^|>\s]{1,32}\|>\s*){3,}/i.test(text);
     }
 
     // The 120s deadline is a fetch timeout: a frozen mobile tab resumes long after the reply was sent.
@@ -2098,6 +2105,15 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         let partialEvent = '';
         let finalPayload = null;
         let receivedSegmentPreview = false;
+        const streamMeta = {};
+        const captureStreamMeta = event => {
+            if (!event || typeof event !== 'object') return;
+            for (const key of ['model', 'provider', 'providerRoute', 'turnId', 'outputLanguage']) {
+                if (typeof event[key] === 'string' && event[key].trim()) {
+                    streamMeta[key] = event[key];
+                }
+            }
+        };
         const processEvent = async eventText => { var __oc56, __oc57, __oc58, __oc59, __oc60, __oc61, __oc62, __oc63, __oc64;
             const dataText = String(eventText || '')
                 .split(/\r?\n/)
@@ -2113,6 +2129,7 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
                 partialEvent = dataText;
                 return;
             }
+            captureStreamMeta(event);
             if (((event === null || event === void 0 ? void 0 : event.segmentPreview)) === true && typeof event.content === 'string') {
                 receivedSegmentPreview = true;
                 rawContent = event.content;
@@ -2155,24 +2172,24 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
             if (buffer.trim()) await processEvent(buffer);
             if (receivedSegmentPreview && !['SAFETY_BLOCKED', 'STALE_TURN', 'INPUT_CONTROL_BLOCKED'].includes(((error === null || error === void 0 ? void 0 : error.reason))) && !((error === null || error === void 0 ? void 0 : error.isControlBlocked))
                 && !(((error === null || error === void 0 ? void 0 : error.name)) === 'AbortError' && !wasTimedOut())) {
-                return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
+                return makeAiDisplayCompletion(rawContent, streamMeta, { ...presentation, truncated: true });
             }
             if (((error === null || error === void 0 ? void 0 : error.retryExhausted)) || ((error === null || error === void 0 ? void 0 : error.isControlBlocked)) || ['SAFETY_BLOCKED', 'STALE_TURN', 'INPUT_CONTROL_BLOCKED'].includes(((error === null || error === void 0 ? void 0 : error.reason))) || (((error === null || error === void 0 ? void 0 : error.name)) === 'AbortError' && !wasTimedOut())) throw error;
-            if (presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
+            if (presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, streamMeta, { ...presentation, truncated: true });
             const existingReply = getCompleteDisplayableStreamReply(rawContent);
-            if (!existingReply && presentation) return makeAiDisplayCompletion(rawContent || partialEvent, {}, { ...presentation, truncated: true });
+            if (!existingReply && presentation) return makeAiDisplayCompletion(rawContent || partialEvent, streamMeta, { ...presentation, truncated: true });
             if (!existingReply) throw error;
-            finalPayload = { choices: [{ message: { content: existingReply }, finish_reason: 'stop' }] };
+            finalPayload = { ...streamMeta, choices: [{ message: { content: existingReply }, finish_reason: 'stop' }] };
         } finally {
             if (finalPayload) { try { await (((__oc65 = reader.cancel) === null || __oc65 === void 0 ? void 0 : __oc65.call(reader))); } catch (_) { /* best effort */ } }
             (((__oc66 = reader.releaseLock) === null || __oc66 === void 0 ? void 0 : __oc66.call(reader)));
         }
 
-        if (!finalPayload && presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, {}, { ...presentation, truncated: true });
+        if (!finalPayload && presentation && isAiDisplayJsonIncomplete(rawContent)) return makeAiDisplayCompletion(rawContent, streamMeta, { ...presentation, truncated: true });
         if (!finalPayload && getCompleteDisplayableStreamReply(rawContent)) {
-            finalPayload = { choices: [{ message: { content: getCompleteDisplayableStreamReply(rawContent) }, finish_reason: 'stop' }] };
+            finalPayload = { ...streamMeta, choices: [{ message: { content: getCompleteDisplayableStreamReply(rawContent) }, finish_reason: 'stop' }] };
         }
-        if (!finalPayload && presentation) return makeAiDisplayCompletion(rawContent || partialEvent, {}, { ...presentation, truncated: true });
+        if (!finalPayload && presentation) return makeAiDisplayCompletion(rawContent || partialEvent, streamMeta, { ...presentation, truncated: true });
         if (!finalPayload) {
             const error = new Error('AI stream ended before the final response');
             error.reason = 'STREAM_INTERRUPTED';
