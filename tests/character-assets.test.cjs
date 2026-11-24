@@ -1,6 +1,6 @@
 'use strict';
 const test = require('node:test'), assert = require('node:assert/strict');
-const fs = require('node:fs'), path = require('node:path'), os = require('node:os'), crypto = require('node:crypto');
+const fs = require('node:fs'), path = require('node:path'), os = require('node:os'), crypto = require('node:crypto'), vm = require('node:vm');
 const api = require('../scripts/character-assets.cjs');
 function fixture(t) {
  const root = fs.mkdtempSync(path.join(os.tmpdir(), 'character-assets-'));
@@ -49,4 +49,27 @@ test('harem mixed_5 and cupid shared character expressions stay 100% synchronize
   return;
  }
  execFileSync(process.platform === 'win32' ? 'python' : 'python3', ['-B', haremSync, '--check'], { cwd: root, stdio: 'pipe' });
+});
+
+test('GalleryFreeTalk and Minsu expose complete base expressions matching CHARACTER_EXPRESSIONS', () => {
+ const root = path.resolve(__dirname, '..');
+ const runtime = { window: {}, console, setTimeout, clearTimeout };
+ vm.createContext(runtime);
+ for (const rel of ['assets/js/freetalk-core.js', 'assets/js/prompts.js', 'assets/js/gallery-freetalk.js']) {
+  vm.runInNewContext(fs.readFileSync(path.join(root, rel), 'utf8'), runtime, { filename: rel });
+ }
+ const promptExprs = runtime.window.CHARACTER_EXPRESSIONS;
+ const gallery = new runtime.window.GalleryFreeTalk('ko', {});
+ const excluded = new Set(['back', 'bikini']);
+ const expectedBase = Object.keys(promptExprs.Yuna).filter(expr => !excluded.has(expr)).sort();
+
+ assert.equal(expectedBase.length, 58);
+ for (const [galleryId, promptKey] of [['seyoun', 'Seoyeon'], ['yuna', 'Yuna'], ['dain', 'Dain'], ['teacher', 'Teacher'], ['nurse', 'Nurse'], ['haeun', 'Haeun']]) {
+  const actual = Array.from(gallery.CHAR_EXPRESSIONS[galleryId]).filter(expr => !excluded.has(expr)).sort();
+  assert.deepEqual(actual, Object.keys(promptExprs[promptKey]).filter(expr => !excluded.has(expr)).sort(), `${galleryId} gallery expressions`);
+ }
+ assert.ok(gallery.CHAR_EXPRESSIONS.nurse.includes('dry_smile'));
+ assert.ok(gallery.CHAR_EXPRESSIONS.nurse.includes('tired'));
+ assert.deepEqual(Object.keys(promptExprs.Minsu).sort(), expectedBase);
+ assert.equal(promptExprs.Minsu.ahegao, 'assets/images/characters/minsu_entranced.png');
 });

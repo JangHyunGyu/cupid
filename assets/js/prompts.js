@@ -810,6 +810,7 @@ const CHARACTER_EXPRESSION_PATHS = Object.freeze({
         surprised: 'assets/images/characters/minsu_surprised.png',
         scared: 'assets/images/characters/minsu_scared.png',
         aegyo: 'assets/images/characters/minsu_aegyo.png',
+        ahegao: 'assets/images/characters/minsu_entranced.png',
         fainted: 'assets/images/characters/minsu_fainted.png',
         dazed: 'assets/images/characters/minsu_dazed.png',
         disgusted: 'assets/images/characters/minsu_disgusted.png',
