@@ -30,11 +30,11 @@ context.FLAG_MEMORIES = context.window.FLAG_MEMORIES;
 const languages = ['en', 'es', 'ja', 'fr', 'de', 'pt', 'zh'];
 const stablePromptBudgets = {
     en: { main: 9530, gallery: 8960 },
-    es: { main: 9660, gallery: 9310 },
+    es: { main: 9710, gallery: 9310 },
     ja: { main: 7110, gallery: 6110 },
-    fr: { main: 9770, gallery: 9590 },
+    fr: { main: 9810, gallery: 9590 },
     de: { main: 9760, gallery: 9470 },
-    pt: { main: 9510, gallery: 9110 },
+    pt: { main: 9570, gallery: 9110 },
     zh: { main: 7510, gallery: 7510 }
 };
 const unnamedPlayerGuardByLanguage = {

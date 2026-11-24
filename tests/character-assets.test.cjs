@@ -63,7 +63,7 @@ test('GalleryFreeTalk and Minsu expose complete base expressions matching CHARAC
  const excluded = new Set(['back', 'bikini']);
  const expectedBase = Object.keys(promptExprs.Yuna).filter(expr => !excluded.has(expr)).sort();
 
- assert.equal(expectedBase.length, 58);
+ assert.equal(expectedBase.length, 71);
  for (const [galleryId, promptKey] of [['seyoun', 'Seoyeon'], ['yuna', 'Yuna'], ['dain', 'Dain'], ['teacher', 'Teacher'], ['nurse', 'Nurse'], ['haeun', 'Haeun']]) {
   const actual = Array.from(gallery.CHAR_EXPRESSIONS[galleryId]).filter(expr => !excluded.has(expr)).sort();
   assert.deepEqual(actual, Object.keys(promptExprs[promptKey]).filter(expr => !excluded.has(expr)).sort(), `${galleryId} gallery expressions`);
