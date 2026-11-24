@@ -19,6 +19,7 @@
 - 커밋 직전과 푸시 직전에 각각 `git branch --show-current`로 `main`인지 다시 확인한다.
 - 운영 배포 직전에는 작업 트리가 깨끗하고 `HEAD`가 `origin/main`과 같은지 확인한다.
 - 별도 브랜치나 Pull Request를 만들지 않고 `main`에 직접 커밋하고 푸시한다.
+- `main`에 푸시하면 Cloudflare가 Pages를 자동 배포한다. `wrangler deploy`나 `wrangler pages deploy`를 따로 돌리지 않고, 1~2분 뒤 Cloudflare API의 deployments에서 새 배포를 확인만 한다(2026-11-24 확인).
 
 
 ## Context Cache Verification (Permanent)
