@@ -18,18 +18,35 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "date_seo_tier_check"
     },
     "date_seo_tier_check": {
-        "background": "assets/images/background/park.png",
-        "character": null,
         "affinityChar": "Seoyeon",
         "affinityBranches": [
-            { "minAffinity": 60, "next": "date_seo_high_1" },
-            { "minAffinity": 40, "next": "date_seo_compliment_choice" },
-            { "minAffinity": 30, "next": "date_seo_tentative_1" },
-            { "minAffinity": 0, "next": "date_seo_low" },
-            { "minAffinity": -19, "next": "date_seo_low" },
-            { "minAffinity": -100, "next": "date_seo_neg" }
+            {
+                "minAffinity": 60,
+                "next": "date_seo_high_1"
+            },
+            {
+                "minAffinity": 40,
+                "next": "date_seo_compliment_choice"
+            },
+            {
+                "minAffinity": 30,
+                "next": "date_seo_tentative_1"
+            },
+            {
+                "minAffinity": 0,
+                "next": "date_seo_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "date_seo_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "date_seo_neg"
+            }
         ],
-        "next": "date_seo_neg"
+        "next": "date_seo_neg",
+        "routeBeforeRender": true
     },
     "date_seo_high_1": {
         "background": "assets/images/background/park.png",
@@ -175,8 +192,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "date_seo_end_b": {
         "background": "assets/images/background/street.png",
         "character": "assets/images/characters/seyoun_date_normal.webp",
-        "next": "date_seo_end_c",
-        "framing": "close"
+        "next": "date_seo_end_c"
     },
     "date_seo_end_c": {
         "background": "assets/images/background/street.png",
@@ -203,18 +219,35 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "date_yuna_tier_check"
     },
     "date_yuna_tier_check": {
-        "background": "assets/images/background/cafe.png",
-        "character": null,
         "affinityChar": "Yuna",
         "affinityBranches": [
-            { "minAffinity": 60, "next": "date_yuna_high_1" },
-            { "minAffinity": 40, "next": "date_yuna_compliment_choice" },
-            { "minAffinity": 30, "next": "date_yuna_tentative_1" },
-            { "minAffinity": 0, "next": "date_yuna_low" },
-            { "minAffinity": -19, "next": "date_yuna_low" },
-            { "minAffinity": -100, "next": "date_yuna_neg" }
+            {
+                "minAffinity": 60,
+                "next": "date_yuna_high_1"
+            },
+            {
+                "minAffinity": 40,
+                "next": "date_yuna_compliment_choice"
+            },
+            {
+                "minAffinity": 30,
+                "next": "date_yuna_tentative_1"
+            },
+            {
+                "minAffinity": 0,
+                "next": "date_yuna_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "date_yuna_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "date_yuna_neg"
+            }
         ],
-        "next": "date_yuna_neg"
+        "next": "date_yuna_neg",
+        "routeBeforeRender": true
     },
     "date_yuna_high_1": {
         "background": "assets/images/background/cafe.png",
@@ -238,7 +271,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_yuna_tentative_3": {
         "background": "assets/images/background/street.png",
-        "locationTransition": true,
         "character": "assets/images/characters/yuna_date_normal.webp",
         "setFlags": [
             "day4_tentative_yuna"
@@ -442,8 +474,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "date_dain_tier_check"
     },
     "date_dain_tier_check": {
-        "background": "assets/images/background/school_back.png",
-        "character": null,
         "affinityChar": "Dain",
         "affinityBranches": [
             {
@@ -471,7 +501,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "date_dain_neg"
             }
         ],
-        "next": "date_dain_neg"
+        "next": "date_dain_neg",
+        "routeBeforeRender": true
     },
     "date_dain_high_1": {
         "background": "assets/images/background/school_back.png",
@@ -597,7 +628,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_dain_bright": {
         "background": "assets/images/background/school_back.png",
-        "character": "assets/images/characters/dain_date_laugh.webp",
+        "character": "assets/images/characters/dain_date_sweat.webp",
         "next": "date_dain_to_arcade"
     },
     "date_dain_to_arcade": {
@@ -677,7 +708,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "date_dain_shop_3": {
         "background": "assets/images/background/street.png",
-        "character": "assets/images/characters/dain_date_laugh.webp",
+        "character": "assets/images/characters/dain_date_pout.webp",
         "next": "date_dain_shop_3_b"
     },
     "date_dain_shop_3_b": {
@@ -750,10 +781,15 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "day4_harem_fallout_1": {
         "background": "assets/images/background/room_my_day.webp",
-        "character": null,
         "bgm": "morning.mp3",
         "next": "day4_harem_fallout_2",
-        "timeOfDay": "day"
+        "timeOfDay": "day",
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_date_sad.webp",
+                "opacity": 0.35
+            }
+        }
     },
     "day4_harem_fallout_2": {
         "background": "assets/images/background/room_my_day.webp",
@@ -800,7 +836,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_night_start",
         "characters": {
             "center": {
-                "src": "assets/images/characters/seyoun_normal.png",
+                "src": "assets/images/characters/seyoun_date_sad.webp",
                 "opacity": 0.35
             }
         }
@@ -870,7 +906,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "day4_night_start",
         "characters": {
             "center": {
-                "src": "assets/images/characters/seyoun_pout.png",
+                "src": "assets/images/characters/seyoun_date_cold.webp",
                 "opacity": 0.35
             }
         }

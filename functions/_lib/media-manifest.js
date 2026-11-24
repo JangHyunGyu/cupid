@@ -362,21 +362,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "background/ending_perfect_nurse": {
-    "version": "2efe79fb6a3ccaa6bfc42ec5",
+    "version": "e32146d198bbc83f49b103bd",
     "files": [
       {
         "path": "assets/images/background/ending_perfect_nurse.png",
-        "key": "images/9b0683356d4985d699fc8e64611821db2b501758edb8f1315740b932f79fb950.png",
-        "sha256": "9b0683356d4985d699fc8e64611821db2b501758edb8f1315740b932f79fb950",
-        "etag": "4f34affcc30ae9f005f37ad630b0d2dd",
-        "size": 3355603
+        "key": "images/e5c4ee63344016325172d7f414f70790d090fc45ef4fd93fd074947d7a150c86.png",
+        "sha256": "e5c4ee63344016325172d7f414f70790d090fc45ef4fd93fd074947d7a150c86",
+        "etag": "80ffc0ef22605b36b6765a637e8abea7",
+        "size": 5086953
       },
       {
         "path": "assets/images/background/ending_perfect_nurse.webp",
-        "key": "images/4cc81c94961c70708af1a44f451804bdb6ddec0a1ed221e2de16ce58c9bf4372.webp",
-        "sha256": "4cc81c94961c70708af1a44f451804bdb6ddec0a1ed221e2de16ce58c9bf4372",
-        "etag": "0199a897ff1ec9ef551cee999d19d706",
-        "size": 156512
+        "key": "images/e03bb4667478c3c27ad0bb103bc8a25f44ea8491c70165cb53f7b0677a150ca4.webp",
+        "sha256": "e03bb4667478c3c27ad0bb103bc8a25f44ea8491c70165cb53f7b0677a150ca4",
+        "etag": "a70474d5eb17dedfb0dea7e1b5c94fa8",
+        "size": 2831468
       }
     ]
   },
@@ -400,21 +400,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "background/ending_perfect_teacher": {
-    "version": "fe8877f9d320958a916ec193",
+    "version": "dcd647ff3c549af865d93b04",
     "files": [
       {
         "path": "assets/images/background/ending_perfect_teacher.png",
-        "key": "images/614634d8f3d2f9b4e9e2cc0f23509d29b1c0cbf8b2b4604a0d2a13851651cf7d.png",
-        "sha256": "614634d8f3d2f9b4e9e2cc0f23509d29b1c0cbf8b2b4604a0d2a13851651cf7d",
-        "etag": "0a456480885549cf31855d553c90b819",
-        "size": 4238087
+        "key": "images/9fb9419dbe54e827687f5ca0611d5320b24717227b40b41b5706d847b3327a96.png",
+        "sha256": "9fb9419dbe54e827687f5ca0611d5320b24717227b40b41b5706d847b3327a96",
+        "etag": "4280715380f463a08b67aa97c4b71420",
+        "size": 6237531
       },
       {
         "path": "assets/images/background/ending_perfect_teacher.webp",
-        "key": "images/966b16a891c5cfffbb4f819edb7919e41ab440b42298350e62e23082c1d91a45.webp",
-        "sha256": "966b16a891c5cfffbb4f819edb7919e41ab440b42298350e62e23082c1d91a45",
-        "etag": "f767d638cf4cf25a596b2c45cd3f8653",
-        "size": 370368
+        "key": "images/7d97b0e114b05c3c9944f57cd4b620e200fbc196a4c54b2b09a5ea8f71dfff31.webp",
+        "sha256": "7d97b0e114b05c3c9944f57cd4b620e200fbc196a4c54b2b09a5ea8f71dfff31",
+        "etag": "0e3a82b4ca969c460405688bb2eed658",
+        "size": 3062220
       }
     ]
   },
@@ -457,21 +457,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "background/ending_true_nurse": {
-    "version": "4727b2407b6623fd802285f8",
+    "version": "d7063d94f7767edbf87a73b8",
     "files": [
       {
         "path": "assets/images/background/ending_true_nurse.png",
-        "key": "images/cc10c71a917bc9f65f88306e5a66981c7b66b592e89c38369bdba1652e0c4409.png",
-        "sha256": "cc10c71a917bc9f65f88306e5a66981c7b66b592e89c38369bdba1652e0c4409",
-        "etag": "8b8b565d4ef65c969214e9ff3b1a2598",
-        "size": 3456984
+        "key": "images/c6ccbd5e09f631b2093a04b475331b03b41d00d3bc06799aecd80c6547b6c21a.png",
+        "sha256": "c6ccbd5e09f631b2093a04b475331b03b41d00d3bc06799aecd80c6547b6c21a",
+        "etag": "2b44bf412324f259040b3eb173175872",
+        "size": 5688832
       },
       {
         "path": "assets/images/background/ending_true_nurse.webp",
-        "key": "images/7f95a4601f6ef33f56dd7245c89d005bb33c84b0bc04cb9d25b0160ebe7fb3af.webp",
-        "sha256": "7f95a4601f6ef33f56dd7245c89d005bb33c84b0bc04cb9d25b0160ebe7fb3af",
-        "etag": "0c1e54f2f989c3f0520e8e425e842f5b",
-        "size": 151896
+        "key": "images/4dbd0f5453021cbec3ba04af913bd86e50d2f85796fd94c6685f41c7fde955fa.webp",
+        "sha256": "4dbd0f5453021cbec3ba04af913bd86e50d2f85796fd94c6685f41c7fde955fa",
+        "etag": "6f2f90418760678157d227a2c8bd7be8",
+        "size": 2700284
       }
     ]
   },
@@ -495,21 +495,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "background/ending_true_teacher": {
-    "version": "14adfae607797f5fccdf601c",
+    "version": "980c131e60a93accff4a1b2a",
     "files": [
       {
         "path": "assets/images/background/ending_true_teacher.png",
-        "key": "images/0d91ab2ce1429143dc650dc96d8954e501f2e3d7d1a65356d76a2ecd43c0954c.png",
-        "sha256": "0d91ab2ce1429143dc650dc96d8954e501f2e3d7d1a65356d76a2ecd43c0954c",
-        "etag": "8b9b88ed3e9474248d128e5f9353bdc2",
-        "size": 3585503
+        "key": "images/ca947b0c4b3c732dea91f7bcd50534d09720c15b9c2b883967e1493bd1d8aa61.png",
+        "sha256": "ca947b0c4b3c732dea91f7bcd50534d09720c15b9c2b883967e1493bd1d8aa61",
+        "etag": "07a20e9952853b72e8f55e85c0a430ba",
+        "size": 5942169
       },
       {
         "path": "assets/images/background/ending_true_teacher.webp",
-        "key": "images/815b0b3e07fd26509b70bf8ec21b50433ba7585cc3e4a597d751754ba069548a.webp",
-        "sha256": "815b0b3e07fd26509b70bf8ec21b50433ba7585cc3e4a597d751754ba069548a",
-        "etag": "273d18c1c159498a0ef733d9e30f6cb1",
-        "size": 300244
+        "key": "images/fa7cbe86ac34d4e910d6419e85c9bf1efe1e1bccc4486ad41d29f9b2e29aa736.webp",
+        "sha256": "fa7cbe86ac34d4e910d6419e85c9bf1efe1e1bccc4486ad41d29f9b2e29aa736",
+        "etag": "17095d52a0a20f03964459d982254e51",
+        "size": 2852488
       }
     ]
   },

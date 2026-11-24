@@ -5,7 +5,7 @@
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*No quarto, com a luz ainda apagada, viro o celular que deixei de bruços sobre a mesa e acendo a tela.*"
+        "text": "*No quarto iluminado só pela luminária da mesa, viro o celular que estava de bruços e acendo a tela.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*Quando fecho os olhos, vem primeiro a luz do entardecer na sala do grêmio, a testa quente da Seoyeon no meu antebraço e o laço da gola, um pouco solto.*"
+        "text": "*Ao fechar os olhos, volta primeiro o entardecer na sala do grêmio, a testa quente da Seoyeon no meu braço e a gola meio desalinhada da camisa.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "night3_nightmare_4_b": {
         "name": "{name}",
-        "text": "*Lá embaixo, no chat da Dain, atrás da risadinha acrescentada de leve, sobra apenas uma linha solitária.*"
+        "text": "*Lá embaixo, na conversa da Dain, só sobrou uma frase solta depois do \"kkkk\" leve que ela acrescentou.*"
     },
     "night3_nightmare_5": {
         "name": "{name}",
@@ -188,7 +188,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*No campo da Dain, escrevo «Desculpa por te deixar pensando sozinha. Amanhã de manhã eu falo na hora.» A ponta do polegar trava sobre o ícone de enviar.*"
+        "text": "*No campo da Dain escrevo: \"Desculpa deixar você pensando sozinha nisso. Amanhã cedo já falo com você.\" Meu polegar trava sobre enviar.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

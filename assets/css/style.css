@@ -3093,3 +3093,198 @@ html:not([lang="ko"]) .messenger-bubble {
         rgba(255, 214, 230, 0) 100%);
     mix-blend-mode: screen;
 }
+
+/* ==========================================================================
+   Ending Banner & Credits Epigraph (엔딩 타이틀 배너 및 크레딧 여운 연출)
+   엔딩/크레딧 화면 전용, 비차단(pointer-events: none) 오버레이
+   ========================================================================== */
+#ending-banner-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 20px 140px;
+    pointer-events: none;
+    opacity: 0;
+    transform: translateY(10px) scale(0.985);
+    transition: opacity 0.65s cubic-bezier(0.22, 0.61, 0.36, 1), transform 0.65s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#ending-banner-overlay.is-active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+}
+
+#ending-banner-overlay .ending-banner-card {
+    --eb-accent: #f3c87a;
+    --eb-glow: rgba(243, 200, 122, 0.24);
+    max-width: min(560px, 88vw);
+    width: 100%;
+    padding: 28px 34px 26px;
+    border-radius: 18px;
+    text-align: center;
+    background: linear-gradient(160deg, rgba(16, 12, 22, 0.84), rgba(10, 8, 16, 0.72));
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 22px 60px rgba(0, 0, 0, 0.58), 0 0 42px var(--eb-glow), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+#ending-banner-overlay[data-ending-theme="gold"] .ending-banner-card {
+    --eb-accent: #f5d078;
+    --eb-glow: rgba(245, 208, 120, 0.28);
+}
+
+#ending-banner-overlay[data-ending-theme="rose"] .ending-banner-card {
+    --eb-accent: #ff9cb8;
+    --eb-glow: rgba(255, 130, 170, 0.28);
+}
+
+#ending-banner-overlay[data-ending-theme="amber"] .ending-banner-card {
+    --eb-accent: #ffc78c;
+    --eb-glow: rgba(255, 185, 118, 0.24);
+}
+
+#ending-banner-overlay[data-ending-theme="violet"] .ending-banner-card {
+    --eb-accent: #c5b4f0;
+    --eb-glow: rgba(176, 150, 235, 0.24);
+}
+
+#ending-banner-overlay[data-ending-theme="crimson"] .ending-banner-card {
+    --eb-accent: #f08896;
+    --eb-glow: rgba(224, 92, 116, 0.26);
+}
+
+#ending-banner-overlay[data-ending-theme="slate"] .ending-banner-card {
+    --eb-accent: #b8c6db;
+    --eb-glow: rgba(145, 165, 195, 0.22);
+}
+
+.ending-banner-eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--eb-accent);
+    opacity: 0.92;
+    margin-bottom: 10px;
+}
+
+.ending-banner-title {
+    font-size: clamp(1.25rem, 2.8vw, 1.85rem);
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #ffffff;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.65);
+    line-height: 1.32;
+}
+
+.ending-banner-rule {
+    width: 64px;
+    height: 1.5px;
+    margin: 14px auto 12px;
+    background: linear-gradient(90deg, transparent, var(--eb-accent), transparent);
+}
+
+.ending-banner-epigraph {
+    margin: 0;
+    font-size: clamp(0.88rem, 1.6vw, 1rem);
+    line-height: 1.68;
+    color: rgba(246, 240, 248, 0.9);
+    word-break: keep-all;
+}
+
+#dialogue-box.ending-mode.ending-title-scene {
+    background: linear-gradient(180deg, rgba(14, 10, 20, 0.28) 0%, rgba(14, 10, 20, 0.88) 100%);
+}
+
+#dialogue-box.ending-mode.ending-title-scene #dialogue-text {
+    font-size: 0.92rem;
+    letter-spacing: 0.14em;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.credits-epigraph-block {
+    margin: 10px auto 26px;
+    max-width: 520px;
+    padding: 0 16px;
+    text-align: center;
+}
+
+.credits-ending-badge {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: #ffe4ec;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.08);
+    margin-bottom: 10px;
+}
+
+.credits-epigraph {
+    margin: 0;
+    font-size: 0.96rem;
+    line-height: 1.75;
+    color: rgba(255, 246, 250, 0.88);
+    word-break: keep-all;
+}
+
+#credits-layer[data-ending-theme="gold"] .credits-title,
+#credits-layer[data-ending-theme="gold"] .credits-ending-badge {
+    color: #ffe39a;
+    border-color: rgba(255, 227, 154, 0.42);
+}
+
+#credits-layer[data-ending-theme="rose"] .credits-title,
+#credits-layer[data-ending-theme="rose"] .credits-ending-badge {
+    color: #ffb8ce;
+    border-color: rgba(255, 184, 206, 0.42);
+}
+
+#credits-layer[data-ending-theme="amber"] .credits-title,
+#credits-layer[data-ending-theme="amber"] .credits-ending-badge {
+    color: #ffd5a8;
+    border-color: rgba(255, 213, 168, 0.4);
+}
+
+#credits-layer[data-ending-theme="violet"] .credits-title,
+#credits-layer[data-ending-theme="violet"] .credits-ending-badge {
+    color: #d6c8fa;
+    border-color: rgba(214, 200, 250, 0.4);
+}
+
+#credits-layer[data-ending-theme="crimson"] .credits-title,
+#credits-layer[data-ending-theme="crimson"] .credits-ending-badge {
+    color: #f5a0ae;
+    border-color: rgba(245, 160, 174, 0.42);
+}
+
+#credits-layer[data-ending-theme="slate"] .credits-title,
+#credits-layer[data-ending-theme="slate"] .credits-ending-badge {
+    color: #cbd8ea;
+    border-color: rgba(203, 216, 234, 0.36);
+}
+
+@media (max-width: 600px) {
+    #ending-banner-overlay {
+        padding: 16px 14px 165px;
+    }
+
+    #ending-banner-overlay .ending-banner-card {
+        padding: 20px 18px 18px;
+        border-radius: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #ending-banner-overlay {
+        transition: none;
+        transform: none;
+    }
+}

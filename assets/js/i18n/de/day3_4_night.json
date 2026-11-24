@@ -5,7 +5,7 @@
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*Im Zimmer ist das Licht noch aus. Ich drehe das Handy um, das mit dem Display nach unten auf dem Schreibtisch lag, und schalte den Bildschirm ein.*"
+        "text": "*Im nur von der Schreibtischlampe erhellten Zimmer drehe ich das umgedrehte Handy um und schalte das Display ein.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*Kaum schließe ich die Augen, ist da zuerst das Abendlicht im Schülerratsraum, Seoyeons heiße Stirn an meinem Unterarm und die leicht gelöste Schleife am Kragen.*"
+        "text": "*Kaum schließe ich die Augen, steigen das Abendlicht im Schülerratszimmer, Seoyeons heiße Stirn an meinem Arm und ihr leicht verrutschter Hemdkragen wieder auf.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "night3_nightmare_4_b": {
         "name": "{name}",
-        "text": "*Ganz unten in Dains Chat steht hinter dem locker angehängten Lachen nur eine einzelne verlassene Zeile.*"
+        "text": "*Ganz unten in Dains Chat steht nur noch diese eine einzelne Zeile hinter dem locker angehängten „haha“.*"
     },
     "night3_nightmare_5": {
         "name": "{name}",
@@ -188,7 +188,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*In Dains Eingabefeld schreibe ich „Tut mir leid, dass ich dich allein nachdenken ließ. Morgen früh sage ich es dir sofort.“ Die Daumenspitze erstarrt über dem Senden-Symbol.*"
+        "text": "*In Dains Eingabefeld tippe ich: „Tut mir leid, dass ich dich damit allein gelassen hab. Morgen früh sag ich dir gleich Bescheid.“ Mein Daumen stoppt über Senden.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

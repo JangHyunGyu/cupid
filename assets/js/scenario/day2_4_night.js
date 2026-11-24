@@ -13,7 +13,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "bgm": "night1.mp3",
-        "next": "night2_msg_1"
+        "next": "night2_msg_1",
+        "timeOfDay": "day"
     },
     "night2_msg_1": {
         "branches": [
@@ -37,62 +38,151 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "night2_msg_dain_specific": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Dain","minAffinity":-19,"fallback":"night2_msg_seo_general"},
-        "next": "night2_msg_dain_specific_2"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Dain",
+            "minAffinity": -19,
+            "fallback": "night2_msg_seo_general"
+        },
+        "next": "night2_msg_dain_specific_2",
+        "timeOfDay": "day"
     },
     "night2_msg_dain_specific_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "night2_msg_seo_general"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_msg_seo_general",
+        "timeOfDay": "day"
     },
     "night2_msg_seo_general": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Seoyeon","minAffinity":-19,"fallback":"night2_msg_yuna_general"},
-        "next": "night2_msg_yuna_general"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Seoyeon",
+            "minAffinity": -19,
+            "fallback": "night2_msg_yuna_general"
+        },
+        "next": "night2_msg_yuna_general",
+        "timeOfDay": "day"
     },
     "night2_msg_seo_specific": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Seoyeon","minAffinity":-19,"fallback":"night2_msg_dain_general"},
-        "next": "night2_msg_seo_specific_2"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Seoyeon",
+            "minAffinity": -19,
+            "fallback": "night2_msg_dain_general"
+        },
+        "next": "night2_msg_seo_specific_2",
+        "timeOfDay": "day"
     },
     "night2_msg_seo_specific_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "next": "night2_msg_dain_general"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_msg_dain_general",
+        "timeOfDay": "day"
     },
     "night2_msg_yuna_specific": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Yuna","minAffinity":-19,"fallback":"night2_msg_dain_general"},
-        "next": "night2_msg_yuna_specific_2"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Yuna",
+            "minAffinity": -19,
+            "fallback": "night2_msg_dain_general"
+        },
+        "next": "night2_msg_yuna_specific_2",
+        "timeOfDay": "day"
     },
     "night2_msg_yuna_specific_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_msg_dain_general"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_msg_dain_general",
+        "timeOfDay": "day"
     },
     "night2_msg_dain_general": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Dain","minAffinity":-19,"fallback":"night2_msg_dain_general_merge"},
-        "next": "night2_msg_dain_general_merge"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Dain",
+            "minAffinity": -19,
+            "fallback": "night2_msg_dain_general_merge"
+        },
+        "next": "night2_msg_dain_general_merge",
+        "timeOfDay": "day"
     },
     "night2_msg_dain_general_merge": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
         "branches": [
-            { "condition": "chose_seo_after2", "next": "night2_msg_yuna_general" },
-            { "next": "night2_msg_seo_general_alt" }
-        ]
+            {
+                "condition": "chose_seo_after2",
+                "next": "night2_msg_yuna_general"
+            },
+            {
+                "next": "night2_msg_seo_general_alt"
+            }
+        ],
+        "timeOfDay": "day"
     },
     "night2_msg_seo_general_alt": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Seoyeon","minAffinity":-19,"fallback":"night2_msg_seo_general_alt_gate"},
-        "next": "night2_msg_seo_general_alt_gate"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Seoyeon",
+            "minAffinity": -19,
+            "fallback": "night2_msg_seo_general_alt_gate"
+        },
+        "next": "night2_msg_seo_general_alt_gate",
+        "timeOfDay": "day"
     },
     "night2_msg_seo_general_alt_gate": {
         "routeBeforeRender": true,
@@ -103,21 +193,51 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "night2_msg_yuna_general": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Yuna","minAffinity":-19,"fallback":"night2_msg_7"},
-        "next": "night2_msg_7"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Yuna",
+            "minAffinity": -19,
+            "fallback": "night2_msg_7"
+        },
+        "next": "night2_msg_7",
+        "timeOfDay": "day"
     },
     "night2_msg_generic": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Dain","minAffinity":-19,"fallback":"night2_msg_generic_2"},
-        "next": "night2_msg_generic_2"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Dain",
+            "minAffinity": -19,
+            "fallback": "night2_msg_generic_2"
+        },
+        "next": "night2_msg_generic_2",
+        "timeOfDay": "day"
     },
     "night2_msg_generic_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "affinityGuard": {"character":"Seoyeon","minAffinity":-19,"fallback":"night2_msg_generic_3"},
-        "next": "night2_msg_generic_3"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "affinityGuard": {
+            "character": "Seoyeon",
+            "minAffinity": -19,
+            "fallback": "night2_msg_generic_3"
+        },
+        "next": "night2_msg_generic_3",
+        "timeOfDay": "day"
     },
     "night2_msg_generic_3": {
         "routeBeforeRender": true,
@@ -140,7 +260,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "opacity": 0.35
             }
         },
-        "next": "night2_msg_7"
+        "next": "night2_msg_7",
+        "timeOfDay": "day"
     },
     "night2_msg_generic_3_first": {
         "background": "assets/images/background/room_my.png",
@@ -150,21 +271,35 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "opacity": 0.35
             }
         },
-        "next": "night2_msg_7"
+        "next": "night2_msg_7",
+        "timeOfDay": "day"
     },
     "night2_msg_7": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_choice"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_choice",
+        "timeOfDay": "day"
     },
     "night2_choice": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "choices": [
-            { "next": "night2_reply_dain_1" },
-            { "next": "night2_reply_seo_1" },
-            { "next": "night2_reply_yuna_1" }
-        ]
+            {
+                "next": "night2_reply_dain_1"
+            },
+            {
+                "next": "night2_reply_seo_1"
+            },
+            {
+                "next": "night2_reply_yuna_1"
+            }
+        ],
+        "timeOfDay": "day"
     },
     "night2_reply_dain_1": {
         "routeBeforeRender": true,
@@ -198,7 +333,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "affinity": 4
             }
         },
-        "next": "night2_reply_dain_2"
+        "next": "night2_reply_dain_2",
+        "timeOfDay": "day"
     },
     "night2_reply_dain_1_first": {
         "background": "assets/images/background/room_my.png",
@@ -213,42 +349,104 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "affinity": 4
             }
         },
-        "next": "night2_reply_dain_2"
+        "next": "night2_reply_dain_2",
+        "timeOfDay": "day"
     },
     "night2_reply_dain_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "night2_reply_dain_3"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_dain_3",
+        "timeOfDay": "day"
     },
     "night2_reply_dain_3": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "night2_reply_dain_4"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_dain_4",
+        "timeOfDay": "day"
     },
     "night2_reply_dain_4": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "next": "night2_reply_dain_5"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_dain_5",
+        "timeOfDay": "day"
     },
     "night2_reply_dain_5": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_dain_react_high"},{"minAffinity":0,"next":"night2_reply_dain_react_default"},{"minAffinity":-19,"next":"night2_reply_dain_react_default"},{"minAffinity":-100,"next":"night2_reply_dain_react_neg"}],
-        "next": "night2_reply_dain_react_default"
+        "affinityBranches": [
+            {
+                "minAffinity": 30,
+                "next": "night2_reply_dain_react_high"
+            },
+            {
+                "minAffinity": 0,
+                "next": "night2_reply_dain_react_default"
+            },
+            {
+                "minAffinity": -19,
+                "next": "night2_reply_dain_react_default"
+            },
+            {
+                "minAffinity": -100,
+                "next": "night2_reply_dain_react_neg"
+            }
+        ],
+        "next": "night2_reply_dain_react_default",
+        "timeOfDay": "day"
     },
     "night2_reply_dain_react_high": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_dain"],
-        "stats": {"Dain":{"affinity":2}},
-        "next": "night2_dain_freetalk"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_dain"
+        ],
+        "stats": {
+            "Dain": {
+                "affinity": 2
+            }
+        },
+        "next": "night2_dain_freetalk",
+        "timeOfDay": "day"
     },
     "night2_reply_dain_react_default": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_dain"],
-        "next": "night2_dain_freetalk"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_dain"
+        ],
+        "next": "night2_dain_freetalk",
+        "timeOfDay": "day"
     },
     "night2_dain_freetalk": {
         "background": "assets/images/background/room_my.png",
@@ -261,49 +459,125 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "type": "free_talk",
         "isRemote": true,
         "maxTurns": 3,
-        "next": "night2_hidden_check"
+        "next": "night2_hidden_check",
+        "timeOfDay": "day"
     },
     "night2_reply_seo_1": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "stats": {"Seoyeon":{"affinity":2}},
-        "affinityGuard": {"character":"Seoyeon","minAffinity":-19,"fallback":"night2_reply_seo_react_neg"},
-        "next": "night2_reply_seo_2"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "stats": {
+            "Seoyeon": {
+                "affinity": 2
+            }
+        },
+        "affinityGuard": {
+            "character": "Seoyeon",
+            "minAffinity": -19,
+            "fallback": "night2_reply_seo_react_neg"
+        },
+        "next": "night2_reply_seo_2",
+        "timeOfDay": "day"
     },
     "night2_reply_seo_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "next": "night2_reply_seo_3"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_seo_3",
+        "timeOfDay": "day"
     },
     "night2_reply_seo_3": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "next": "night2_reply_seo_4"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_seo_4",
+        "timeOfDay": "day"
     },
     "night2_reply_seo_4": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "next": "night2_reply_seo_5"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_seo_5",
+        "timeOfDay": "day"
     },
     "night2_reply_seo_5": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_seo_react_high"},{"minAffinity":0,"next":"night2_reply_seo_react_default"},{"minAffinity":-19,"next":"night2_reply_seo_react_default"},{"minAffinity":-100,"next":"night2_reply_seo_react_neg"}],
-        "next": "night2_reply_seo_react_default"
+        "affinityBranches": [
+            {
+                "minAffinity": 30,
+                "next": "night2_reply_seo_react_high"
+            },
+            {
+                "minAffinity": 0,
+                "next": "night2_reply_seo_react_default"
+            },
+            {
+                "minAffinity": -19,
+                "next": "night2_reply_seo_react_default"
+            },
+            {
+                "minAffinity": -100,
+                "next": "night2_reply_seo_react_neg"
+            }
+        ],
+        "next": "night2_reply_seo_react_default",
+        "timeOfDay": "day"
     },
     "night2_reply_seo_react_high": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_seo"],
-        "stats": {"Seoyeon":{"affinity":1}},
-        "next": "night2_seo_freetalk"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_seo"
+        ],
+        "stats": {
+            "Seoyeon": {
+                "affinity": 1
+            }
+        },
+        "next": "night2_seo_freetalk",
+        "timeOfDay": "day"
     },
     "night2_reply_seo_react_default": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_seo"],
-        "next": "night2_seo_freetalk"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_seo"
+        ],
+        "next": "night2_seo_freetalk",
+        "timeOfDay": "day"
     },
     "night2_seo_freetalk": {
         "background": "assets/images/background/room_my.png",
@@ -316,7 +590,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "type": "free_talk",
         "isRemote": true,
         "maxTurns": 3,
-        "next": "night2_hidden_check"
+        "next": "night2_hidden_check",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_1": {
         "routeBeforeRender": true,
@@ -344,7 +619,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "affinity": 4
             }
         },
-        "next": "night2_reply_yuna_2"
+        "next": "night2_reply_yuna_2",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_1_first": {
         "background": "assets/images/background/room_my.png",
@@ -359,17 +635,30 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "affinity": 4
             }
         },
-        "next": "night2_reply_yuna_2"
+        "next": "night2_reply_yuna_2",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_3"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_yuna_3",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_3": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_4"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_yuna_4",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_4": {
         "routeBeforeRender": true,
@@ -397,7 +686,8 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "opacity": 0.35
             }
         },
-        "next": "night2_reply_yuna_5"
+        "next": "night2_reply_yuna_5",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_4_first": {
         "background": "assets/images/background/room_my.png",
@@ -407,22 +697,41 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "opacity": 0.35
             }
         },
-        "next": "night2_reply_yuna_5"
+        "next": "night2_reply_yuna_5",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_5": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_6"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_yuna_6",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_6": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_6_b"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_yuna_6_b",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_6_b": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "next": "night2_reply_yuna_6_c"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_reply_yuna_6_c",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_6_c": {
         "background": "assets/images/background/room_my.png",
@@ -435,27 +744,71 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "next": "night2_reply_yuna_7",
         "setFlags": [
             "heard_yuna_third_song"
-        ]
+        ],
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_7": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":30,"next":"night2_reply_yuna_react_high"},{"minAffinity":0,"next":"night2_reply_yuna_react_default"},{"minAffinity":-19,"next":"night2_reply_yuna_react_default"},{"minAffinity":-100,"next":"night2_reply_yuna_react_neg"}],
-        "next": "night2_reply_yuna_react_default"
+        "affinityBranches": [
+            {
+                "minAffinity": 30,
+                "next": "night2_reply_yuna_react_high"
+            },
+            {
+                "minAffinity": 0,
+                "next": "night2_reply_yuna_react_default"
+            },
+            {
+                "minAffinity": -19,
+                "next": "night2_reply_yuna_react_default"
+            },
+            {
+                "minAffinity": -100,
+                "next": "night2_reply_yuna_react_neg"
+            }
+        ],
+        "next": "night2_reply_yuna_react_default",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_react_high": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_yuna"],
-        "stats": {"Yuna":{"affinity":1}},
-        "next": "night2_yuna_freetalk"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_yuna"
+        ],
+        "stats": {
+            "Yuna": {
+                "affinity": 1
+            }
+        },
+        "next": "night2_yuna_freetalk",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_react_default": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_yuna"],
-        "next": "night2_yuna_freetalk"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_yuna"
+        ],
+        "next": "night2_yuna_freetalk",
+        "timeOfDay": "day"
     },
     "night2_yuna_freetalk": {
         "background": "assets/images/background/room_my.png",
@@ -468,54 +821,101 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "type": "free_talk",
         "isRemote": true,
         "maxTurns": 3,
-        "next": "night2_hidden_check"
+        "next": "night2_hidden_check",
+        "timeOfDay": "day"
     },
     "night2_hidden_check": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "branches": [
-            { "condition": "homeroom_day2", "next": "night2_hidden_homeroom_1" },
-            { "condition": "nurse_day2", "next": "night2_hidden_nurse_1" },
-            { "next": "night2_end_1" }
-        ]
+            {
+                "condition": "homeroom_day2",
+                "next": "night2_hidden_homeroom_1"
+            },
+            {
+                "condition": "nurse_day2",
+                "next": "night2_hidden_nurse_1"
+            },
+            {
+                "next": "night2_end_1"
+            }
+        ],
+        "timeOfDay": "day"
     },
     "night2_hidden_homeroom_1": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
-        "next": "night2_hidden_homeroom_2"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/teacher_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_hidden_homeroom_2",
+        "timeOfDay": "day"
     },
     "night2_hidden_homeroom_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
-        "next": "night2_hidden_homeroom_3"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/teacher_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_hidden_homeroom_3",
+        "timeOfDay": "day"
     },
     "night2_hidden_homeroom_3": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/teacher_normal.png","opacity":0.35}},
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/teacher_normal.png",
+                "opacity": 0.35
+            }
+        },
         "branches": [
-            { "condition": "nurse_day2", "next": "night2_hidden_nurse_1" },
-            { "next": "night2_end_1" }
-        ]
+            {
+                "condition": "nurse_day2",
+                "next": "night2_hidden_nurse_1"
+            },
+            {
+                "next": "night2_end_1"
+            }
+        ],
+        "timeOfDay": "day"
     },
     "night2_hidden_nurse_1": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/nurse_normal.png","opacity":0.35}},
-        "next": "night2_hidden_nurse_2"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/nurse_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_hidden_nurse_2",
+        "timeOfDay": "day"
     },
     "night2_hidden_nurse_2": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/nurse_normal.png","opacity":0.35}},
-        "next": "night2_end_1"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/nurse_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "next": "night2_end_1",
+        "timeOfDay": "day"
     },
     "night2_end_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_1"
+        "next": "night2_flashback_1",
+        "timeOfDay": "day"
     },
     "night2_flashback_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_2"
+        "next": "night2_flashback_2",
+        "timeOfDay": "day"
     },
     "night2_flashback_2": {
         "background": "assets/images/background/sojeong_flashback.png",
@@ -525,32 +925,38 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_flashback_3": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_5"
+        "next": "night2_flashback_5",
+        "timeOfDay": "day"
     },
     "night2_flashback_5": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_7"
+        "next": "night2_flashback_7",
+        "timeOfDay": "day"
     },
     "night2_flashback_7": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_8"
+        "next": "night2_flashback_8",
+        "timeOfDay": "day"
     },
     "night2_flashback_8": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_9"
+        "next": "night2_flashback_9",
+        "timeOfDay": "day"
     },
     "night2_flashback_9": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_flashback_10"
+        "next": "night2_flashback_10",
+        "timeOfDay": "day"
     },
     "night2_flashback_10": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_end_2"
+        "next": "night2_end_2",
+        "timeOfDay": "day"
     },
     "night2_end_2": {
         "background": "assets/images/background/room_my.png",
@@ -569,12 +975,16 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "night2_end_4_b": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "night2_end_4_c"
+        "next": "night2_end_4_c",
+        "timeOfDay": "day",
+        "backgroundVariant": "warm"
     },
     "night2_end_4_c": {
         "background": "assets/images/background/room_my.png",
         "character": null,
-        "next": "morning3_start"
+        "next": "morning3_start",
+        "timeOfDay": "day",
+        "backgroundVariant": "warm"
     },
     "forced_violation_day2_after_seoyeon": {
         "runtimeEntrypoint": true,
@@ -662,21 +1072,45 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     },
     "night2_reply_dain_react_neg": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/dain_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_dain"],
-        "next": "night2_hidden_check"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/dain_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_dain"
+        ],
+        "next": "night2_hidden_check",
+        "timeOfDay": "day"
     },
     "night2_reply_seo_react_neg": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/seyoun_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_seo"],
-        "next": "night2_hidden_check"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/seyoun_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_seo"
+        ],
+        "next": "night2_hidden_check",
+        "timeOfDay": "day"
     },
     "night2_reply_yuna_react_neg": {
         "background": "assets/images/background/room_my.png",
-        "characters": {"center":{"src":"assets/images/characters/yuna_normal.png","opacity":0.35}},
-        "setFlags": ["night2_replied_yuna"],
-        "next": "night2_hidden_check"
+        "characters": {
+            "center": {
+                "src": "assets/images/characters/yuna_normal.png",
+                "opacity": 0.35
+            }
+        },
+        "setFlags": [
+            "night2_replied_yuna"
+        ],
+        "next": "night2_hidden_check",
+        "timeOfDay": "day"
     }
     };
     for (const scene of Object.values(scenes)) {

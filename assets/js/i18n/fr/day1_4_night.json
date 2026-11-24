@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*Dans l’application du lycée, une note individuelle de ma professeure principale accompagne l’avis de classe : « Demain en première heure, apportez le manuel de maths. — Et pour le nouvel élève arrivé aujourd’hui, tant que tu prends tes marques sans encombre, cela me suffit. »*"
+        "text": "*Dans les notifications de l’application du lycée s’affiche une note individuelle de la professeure principale : « Pensez au manuel de maths demain en 1re heure. Quant au nouvel élève, inutile de forcer, prends le temps de t’adapter. »*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*En repensant à la recommandation posée de l’infirmière cet après-midi, je me relève pour remplir d’eau la bouteille sur ma table de chevet.*"
+        "text": "*En repensant aux conseils de l’infirmière cet après-midi, je me lève servir un verre d’eau que je pose près de mon lit.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "Je cherche une personne, premier arrivé premier servi, pour sortir sur le terrain tôt demain matin et s'échauffer."
+        "text": "Ne fais pas la grasse mat’ demain matin et arrive tôt en classe, premier arrivé premier servi"
     },
     "night_dain_late_3": {
         "name": "Dain",
@@ -133,11 +133,11 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*En repensant aux visages derrière les nouveaux noms ajoutés aujourd’hui à mes contacts, je pose mon téléphone verrouillé près de l’oreiller.*"
+        "text": "*Repensant tour à tour aux visages croisés en ce premier jour, je pose mon téléphone verrouillé près de l’oreiller.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Je lève les yeux vers le plafond plongé dans la pénombre. Du nouvel uniforme suspendu au cintre s’échappe une trace légère de la brise printanière d’aujourd’hui.*"
+        "text": "*Je fixe le plafond plongé dans le noir. Le nouvel uniforme pendu sur son cintre me paraît encore un peu étranger.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",

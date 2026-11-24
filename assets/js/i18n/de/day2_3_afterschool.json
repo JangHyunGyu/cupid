@@ -89,7 +89,7 @@
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Mit einem weichen Lächeln nimmt sie die Hand vom Schubladengriff.* Ja. Ein Geheimnis nur für uns beide reicht so doch, oder?"
+        "text": "*Sie nimmt die Hand von der Schublade und zieht ruhig eine Grenze.* Das ist nichts, was ich einem Schüler aufbürden sollte. Du musst dich damit nicht belasten."
     },
     "hidden_nurse_d2_8": {
         "name": "Schulkrankenschwester",
@@ -491,7 +491,7 @@
     },
     "after2_yuna_1_b": {
         "name": "{name}",
-        "text": "*Im schräg vom Abendrot durchfluteten Flur des Nebengebäudes regt sich niemand. Nur die Tür zum kleinen Raum ganz hinten in der Ecke steht zwei Fingerbreit offen.*"
+        "text": "*Der vom Abendrot gestreifte Flur des Nebengebäudes liegt still da. Die Tür zum kleinen Raum in der hintersten Ecke steht einen Spalt weit offen.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Seit dieser ältere Schüler weg ist, war keine einzige Person mehr hier."
+        "text": "Kein einziger Mensch mehr, seit der Ältere weg ist, der früher mit mir hier war."
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
@@ -650,9 +650,9 @@
         "groupChoiceState": "es bleibt nur Zeit für einen von zwei Stapeln und der Protagonist muss sagen, bei wem er bleibt",
         "groupAftermathCause": "bei wem der Protagonist im Bibliotheksanbau bleiben wollte und warum",
         "companionTexts": {
-            "Seoyeon": "*Seoyeon stellt einen Zeitplan neben die Stapel.* Der Schülervertretungsplan muss heute auch passen. Zuerst meine Seite.",
+            "Seoyeon": "*Seoyeon stellt ihren Terminplan neben den Aktenstapel.* Der Zeitplan des Schülerrats muss heute auch noch stehen. Hilf erst auf meiner Seite.",
             "Dain": "*Dain tippt an die Tischkante.* Die Aufräumerei in der Turnhalle hängt auch. Hilf mir zuerst.",
-            "Teacher": "*Die Klassenlehrerin schiebt eine Mappe einen halben Schritt.* Es steht noch eine Bürokontrolle aus. Können wir zuerst diese Seite ansehen?",
+            "Teacher": "*Die Klassenlehrerin schiebt eine Akte ein Stück weiter.* Fürs Lehrerzimmer steht auch noch etwas aus. Kannst du hier erst kurz schauen?",
             "Nurse": "*Die Krankenschwester stellt eine kleine Box ab.* Die Materialien im Krankenzimmer müssen heute auch stimmen. Hilfst du mir zuerst?"
         }
     },
@@ -667,7 +667,7 @@
         "companionTexts": {
             "Seoyeon": "*Seoyeon hebt die Lagerpapiere an.* Mir wurde gesagt, zuerst das Veranstaltungsmaterial zu bewegen. Bestätigst du zuerst meine Seite?",
             "Yuna": "*Yuna faltet einen kurzen Zettel auf.* Der Lagerverantwortliche wollte zuerst die Papiere. Bestätigst du das zuerst?",
-            "Teacher": "*Die Klassenlehrerin hebt einen Ausdruck an.* Was ich aus dem Lehrerzimmer bekommen habe, stellte die Papiere zuerst. Können wir zuerst diese Seite prüfen?",
+            "Teacher": "*Die Klassenlehrerin hebt die Ausdrucke kurz an.* Aus dem Lehrerzimmer hieß es zuerst die Unterlagen. Schaust du hier mal kurz drüber?",
             "Nurse": "*Die Krankenschwester hält eine kleine Liste hin.* Die Materialliste sollte zuerst kommen. Bestätigst du das zuerst?"
         }
     },

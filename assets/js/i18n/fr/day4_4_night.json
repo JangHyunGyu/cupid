@@ -1,7 +1,7 @@
 {
     "day4_night_start": {
         "name": "{name}",
-        "text": "*Le crépuscule s'est posé, épais, sur le lycée. Il est temps d'en sortir et de rentrer. Je chasse l'air du soir au bout de ma manche et je vérifie l'écran du téléphone dans ma poche.*"
+        "text": "*La nuit est complètement tombée, il est temps de rentrer. Je chasse la fraîcheur du soir et vérifie l’écran de mon téléphone.*"
     },
     "day4_night_branch": {
         "name": "Système",
@@ -13,65 +13,65 @@
         "name": "Seoyeon",
         "text": "*Mes pas vers le portail s’arrêtent devant l’entrée de l’escalier du bâtiment principal. Debout sous un lampadaire, Seoyeon s’approche, retient ma manche et reprend son souffle avant de parler.* Tu dois rentrer tout de suite ? Je ne pensais pas te demander une chose pareille, mais tu ne voudrais pas rester encore un peu avec moi ce soir ?",
         "choices": [
-            "Rentrer directement et confirmer mon arrivée",
+            "Rentrer aussitôt et confirmer mon arrivée",
             "Suivre Seoyeon sur le toit et lui prendre la main",
-            "Si je dis que je suis déjà arrivé, personne ne s’inquiétera.",
-            "Je vais inventer une excuse pour le retard et rentrer."
+            "Impossible de lâcher l’une ou l’autre : inventer une excuse et rentrer.",
+            "Ne pas traîner ici, filer discrètement chez moi."
         ]
     },
     "day4_teacher_dain_counteroffer": {
         "name": "Dain",
         "text": "*Sur le chemin du portail, Dain me fait signe devant les marches du gymnase éteint. Assise au bout du banc à tripoter sa genouillère, elle immobilise ses mains quand j’approche.* Tu dois rentrer tout de suite ? Sans parler de sport aujourd’hui, tu ne veux pas juste t’asseoir à côté de moi et discuter un peu ? Retenir les gens, ce n’est pas mon genre. Mais là, je n’ai pas envie de te laisser partir.",
         "choices": [
-            "Rentrer directement et confirmer mon arrivée",
+            "Rentrer aussitôt et confirmer mon arrivée",
             "Entrer dans le gymnase et accepter la demande de Dain",
-            "Si je dis que je suis déjà arrivé, personne ne s’inquiétera.",
-            "Je vais inventer une excuse pour le retard et rentrer."
+            "Impossible de lâcher l’une ou l’autre : inventer une excuse et rentrer.",
+            "Ne pas traîner ici, filer discrètement chez moi."
         ]
     },
     "day4_teacher_yuna_counteroffer": {
         "name": "Yuna",
         "text": "*Mon téléphone vibre brièvement quand je passe le coin sombre de l'annexe. Après une photo de deux chaises vides sous une lampe de bureau, un message de Yuna apparaît. L'indicateur de saisie reste longtemps avant qu'une dernière phrase arrive.* Si tu es encore à l'école, tu pourrais monter un instant ? J'aimerais que tu restes encore un peu près de moi ce soir. Je me suis dit que tu ne le saurais pas si je ne le disais pas.",
         "choices": [
-            "Rentrer directement et confirmer mon arrivée",
-            "Aller à l'annexe et rester avec Yuna",
-            "Si je dis que je suis déjà arrivé, personne ne s’inquiétera.",
-            "Je vais inventer une excuse pour le retard et rentrer."
+            "Rentrer aussitôt et confirmer mon arrivée",
+            "Aller à l’annexe et rester près de Yuna",
+            "Impossible de lâcher l’une ou l’autre : inventer une excuse et rentrer.",
+            "Ne pas traîner ici, filer discrètement chez moi."
         ]
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*Mes pas vers le portail s’arrêtent devant l’entrée de l’escalier du bâtiment principal. Debout sous un lampadaire, Seoyeon s’approche, retient ma manche et reprend son souffle avant de parler.* Tu dois rentrer tout de suite ? Je ne pensais pas te demander une chose pareille, mais tu ne voudrais pas rester encore un peu avec moi ce soir ?",
+        "text": "*En sortant de l’infirmerie vers le portail, mes pas s’arrêtent devant l’escalier. Seoyeon retient ma manche sous un réverbère.* Tu rentres déjà juste après l’infirmerie ? Je pensais pas demander ça non plus… tu peux rester encore un peu avec moi ce soir ?",
         "choices": [
-            "Rentrer directement et confirmer mon arrivée",
+            "Rentrer aussitôt et confirmer mon arrivée",
             "Suivre Seoyeon sur le toit et lui prendre la main",
-            "Si je dis que je suis déjà arrivé, personne ne s’inquiétera.",
-            "Je vais inventer une excuse pour le retard et rentrer."
+            "Impossible de lâcher l’une ou l’autre : inventer une excuse et rentrer.",
+            "Ne pas traîner ici, filer discrètement chez moi."
         ]
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
-        "text": "*Sur le chemin du portail, Dain me fait signe devant les marches du gymnase éteint. Assise au bout du banc à tripoter sa genouillère, elle immobilise ses mains quand j’approche.* Tu dois rentrer tout de suite ? Sans parler de sport aujourd’hui, tu ne veux pas juste t’asseoir à côté de moi et discuter un peu ? Retenir les gens, ce n’est pas mon genre. Mais là, je n’ai pas envie de te laisser partir.",
+        "text": "*Juste après avoir fini les trousses de secours, Dain me fait signe depuis les marches sombres du gymnase.* Tu rentres déjà ? Viens t’asseoir près de moi un instant, j’ai vraiment pas envie de te laisser partir.",
         "choices": [
-            "Rentrer directement et confirmer mon arrivée",
+            "Rentrer aussitôt et confirmer mon arrivée",
             "Entrer dans le gymnase et accepter la demande de Dain",
-            "Si je dis que je suis déjà arrivé, personne ne s’inquiétera.",
-            "Je vais inventer une excuse pour le retard et rentrer."
+            "Impossible de lâcher l’une ou l’autre : inventer une excuse et rentrer.",
+            "Ne pas traîner ici, filer discrètement chez moi."
         ]
     },
     "day4_nurse_yuna_counteroffer": {
         "name": "Yuna",
-        "text": "*Mon téléphone vibre brièvement quand je passe le coin sombre de l'annexe. Après une photo de deux chaises vides sous une lampe de bureau, un message de Yuna apparaît. L'indicateur de saisie reste longtemps avant qu'une dernière phrase arrive.* Si tu es encore à l'école, tu pourrais monter un instant ? J'aimerais que tu restes encore un peu près de moi ce soir. Je me suis dit que tu ne le saurais pas si je ne le disais pas.",
+        "text": "*En passant devant le coin sombre de l’annexe après le rangement des trousses, mon téléphone vibre. Une photo de chaise vide sous la lampe précède un message de Yuna.* Tu es encore au lycée ? Monte un instant, j’aimerais que tu restes un peu plus près de moi ce soir.",
         "choices": [
-            "Rentrer directement et confirmer mon arrivée",
-            "Aller à l'annexe et rester avec Yuna",
-            "Si je dis que je suis déjà arrivé, personne ne s’inquiétera.",
-            "Je vais inventer une excuse pour le retard et rentrer."
+            "Rentrer aussitôt et confirmer mon arrivée",
+            "Aller à l’annexe et rester près de Yuna",
+            "Impossible de lâcher l’une ou l’autre : inventer une excuse et rentrer.",
+            "Ne pas traîner ici, filer discrètement chez moi."
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "Seoyeon",
-        "text": "*Au moment où la porte en fer du toit se ferme, Seoyeon me prend le poignet et le tire contre sa poitrine. Sous son ruban desserré, la chaleur et le souffle saccadé se déversent sur le dos de ma main. Le téléphone dans ma poche vibre, mais Seoyeon garde ses mains superposées sur les miennes, refusant de lâcher.* Ne pars pas, reste comme ça. Tu sens mon cœur battre ?"
+        "text": "*Dès que la porte de fer du toit claque, Seoyeon attire mon poignet sur sa poitrine. Entre les boutons ouverts du chemisier, son souffle brûlant effleure ma main. Mon téléphone vibre, mais elle maintient ses deux mains sur la mienne.* Ne pars pas, reste comme ça. Tu sens mon cœur battre ?"
     },
     "day4_adult_counteroffer_accept_dain": {
         "name": "Dain",
@@ -79,7 +79,7 @@
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "Yuna",
-        "text": "*Yuna s'approche de mon visage et s'appuie contre la bibliothèque derrière moi, me bloquant la sortie. Elle laisse sa veste glisser sur son épaule, puis tire le col de son haut vers le bas. Au-dessus de son épaule pâle et nue et de son tatouage sombre, ses yeux rouges maintiennent mon regard. Le téléphone sur le bureau vibre à nouveau.* Je ne veux pas un seul morceau de tissu entre nous aujourd'hui. Je veux passer toute la journée comme ça avec toi."
+        "text": "*Yuna se colle tout contre moi, s’appuyant à l’étagère tandis qu’elle laisse glisser sa veste et abaisse le col de son haut. Ses yeux rouges me fixent au-dessus de son épaule nue tatouée. Le téléphone vibre encore.* Je ne veux même pas un tissu entre nous ce soir. Rien que toi et moi."
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -88,7 +88,7 @@
     },
     "day4_adult_night_regret_nurse": {
         "name": "Infirmière",
-        "text": "*Je rentre en retard et j'allume l'écran du téléphone. Le bout de mes doigts, prêt à répondre qu'il ne s'est rien passé, s'arrête lourdement devant le message de l'infirmière.* Tout à l'heure, quand on s'est quittés, j'ai tiqué sur ta mine. Tu es rentré sans problème ?"
+        "text": "*Rentré tard, j’allume mon téléphone. Mes doigts s’arrêtent devant le message de l’infirmière :* Tu es bien rentré depuis qu’on a fini les préparatifs de ce matin ?"
     },
     "day4_student_night_branch": {
         "text": "*De retour à la maison, je pose le sac au pied du lit. Au moment de brancher le câble du chargeur, une nouvelle notification s'affiche et éclaire la pièce sombre.*",
@@ -124,7 +124,7 @@
     },
     "wall_seo_to_park": {
         "name": "{name}",
-        "text": "*Dès que j'ai raccroché, j'ai passé une veste et, fendant l'air de la nuit, j'ai pris la direction du parc où Seoyeon m'attendait.*"
+        "text": "*En inspirant l’air nocturne, je presse le pas vers le parc où m’attend Seoyeon.*"
     },
     "wall_seo_3": {
         "name": "{name}",
@@ -200,7 +200,7 @@
     },
     "wall_seo_14_c": {
         "name": "Seoyeon",
-        "text": "Devant toi, ce visage du miroir finit toujours par céder. Attends une seconde, je voulais parler jusqu’au bout sans pleurer, mais j’ai la gorge trop nouée. *Les jointures croisées de Seoyeon blanchissent et une grosse larme tombe sous la monture de ses lunettes jusque sur le dos de ma main.*"
+        "text": "Devant toi, ce visage du miroir n’arrête pas de s’effondrer. Attends… je voulais tout dire sans pleurer, j’ai la gorge nouée. *Ses doigts croisés se crispent et une grosse larme glisse sous ses lunettes sur le dos de sa main.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
@@ -260,9 +260,9 @@
         "name": "Seoyeon",
         "text": "*Seoyeon cligne de ses cils mouillés et essuie le coin de ses yeux du dos de la main. La trace de maquillage s'étale encore sur sa peau blanche.*",
         "choices": [
-            "Je te donne une lingette ?",
-            "Restons assis un moment.",
-            "Je crois comprendre. Tu n'as pas besoin d'expliquer."
+            "Ton mascara a un peu filé.",
+            "Asseyons-nous un instant.",
+            "Je crois que je comprends. Pas besoin d’expliquer."
         ]
     },
     "wall_seo_line_react_1": {
@@ -283,7 +283,7 @@
     },
     "wall_seo_after_line": {
         "name": "Seoyeon",
-        "text": "Attends. Si tu as un mouchoir ou une lingette dans ta poche, tu m'en donnes un ?"
+        "text": "Oh non, ça a vraiment coulé partout… Tu n’aurais pas un mouchoir ou une lingette dans ta poche par hasard ?"
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
@@ -357,7 +357,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "Yuna",
-        "text": "*Yuna s'approche de moi et s'appuie contre la bibliothèque derrière moi. Elle laisse sa veste glisser d'une épaule et tire le col de son haut vers le bas. Sur le bureau, la notification de Seoyeon — 'Je suis sur le banc du parc' — reste affichée à l'écran.* Aujourd'hui, je ne veux même pas un morceau de tissu entre nous. Toute la journée, rien qu'avec toi."
+        "text": "*Yuna avance contre moi, prend appui contre la bibliothèque et laisse glisser sa veste en abaissant son col. Sur l’écran brille le message de Seoyeon : « Je suis au banc du parc. »* Je ne veux même pas un tissu entre nous. Ce soir, rien que toi."
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -572,7 +572,7 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "Je supprime cette alarme mensongère. Demain matin, je parlerai d'abord de mon genou douloureux à maman. *Dain supprime l'alarme « Sourire aujourd'hui » et enregistre « Dire à maman que j'ai mal au genou. »*"
+        "text": "Je supprime cette alarme mensongère. Demain matin, je commence par parler de mon genou à maman. *Dain efface l’alarme « Souris aujourd’hui » et enregistre « Parler de mon genou à maman ».*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
@@ -612,7 +612,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "Si je pose le pied doucement, je peux me lever toute seule. *Pendant que je range le ballon de volley dans le bac, Dain s'appuie sur l'accoudoir du banc et se redresse lentement.*"
+        "text": "En posant le pied doucement, j’arrive à me relever toute seule. *Dain fait rouler le ballon vers le panier, puis prend appui sur l’accoudoir du banc pour se lever doucement.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -665,7 +665,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "Yuna",
-        "text": "*Yuna s'approche de moi et s'appuie contre la bibliothèque derrière moi. Elle laisse glisser sa veste et tire le décolleté de son haut vers le bas. Sur l'écran du téléphone se trouve la notification de Dain : « J'ai laissé la porte de derrière du gymnase ouverte. »* Aujourd'hui, je ne veux même pas un morceau de tissu entre nous. Toute la journée, rien que toi."
+        "text": "*Yuna s’avance contre moi, laisse tomber sa veste et abaisse largement son col en détournant les yeux du message de Dain : « Porte arrière du gymnase ouverte. »* Je ne veux même pas un tissu entre nous. Ce soir, rien que toi."
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -779,7 +779,7 @@
     },
     "wall_yuna_14_e": {
         "name": "Yuna",
-        "text": "Et puis, le premier jour de ton arrivée, quand tu es entré jusqu'à ce coin tranquille de la bibliothèque."
+        "text": "Jusqu’à cette première fois où tu as marché jusqu’à ce coin calme de la bibliothèque."
     },
     "wall_yuna_14_f": {
         "name": "Yuna",
@@ -881,7 +881,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "Yuna",
-        "text": "Aujourd'hui, c'est moi qui rentre la première. *Yuna ramasse le marque-page tombé par terre, le met dans son sac, et s'arrête, glaciale, devant la porte.*"
+        "text": "Je rentre d’abord aujourd’hui. *Yuna plie la lettre qu’elle tenait en main, la range dans son sac et s’immobilise sur la poignée de la porte.*"
     },
     "wall_yuna_rival_rank": {
         "name": "Système",
@@ -993,7 +993,7 @@
     },
     "wall_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Seoyeon essuie légèrement du revers de la main le coin humide de ses yeux et lève le regard vers moi.* Ne rentre pas encore. Je veux te tenir la main et parler encore un peu.",
+        "text": "*Les yeux encore rougis, Seoyeon lève doucement le regard vers moi.* Ne rentre pas tout de suite. Tiens-moi la main et parlons encore un peu.",
         "context": "Nous sommes au soir du jour 4, juste après que Seoyeon a parlé du conflit familial et de la pression d'être parfaite. Le choix du protagoniste d'accepter ou de différer sa déclaration, ainsi que le réconfort partagé, sont des faits sauvegardés à respecter. Ne prétends pas qu'une conversation a guéri sa douleur et ne réévalue pas leur relation.",
         "personality": "Seoyeon est posée et responsable, mais elle a baissé sa garde pour l'instant. Elle parle avec sincérité sans charger l'autre de la réparer, mêlant sa franchise habituelle à une tendresse nouvelle et prudente."
     },
@@ -1005,7 +1005,7 @@
     },
     "wall_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Revenue devant la table de la salle de lecture, Yuna plie la vieille lettre et la glisse tout au fond, entre les pages. Cette fois, elle ne fuit pas. C'est elle qui vient chercher mon regard, droit.* Il me reste encore des choses que je veux entendre de toi.",
+        "text": "*Revenue devant le bureau après avoir rangé la lettre dans son sac, Yuna soutient mon regard sans fuir cette fois.* Il reste encore des choses que je veux entendre de ta bouche.",
         "context": "Nuit du quatrième jour dans l’annexe. Après la lettre de Lee Junho, Yuna craint de retenir le protagoniste pour remplacer l’aîné parti. Préserver leurs choix et l’acceptation ou le report de la déclaration. Ne pas inverser ce doute en faisant de Yuna une remplaçante. La lettre est pliée dans le livre et ils sont encore ensemble.",
         "personality": "Yuna est calme et réfléchie, mais n'évite plus les questions essentielles. Elle ne se cache pas derrière les métaphores quand la franchise est nécessaire et écoute sans déformer la réponse pour l'adapter à ses craintes."
     },
@@ -1123,21 +1123,21 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "*Elle expire un souffle chaud, sans lâcher d'un pouce ma main posée sur sa poitrine nue.* N'espère pas t'échapper. Tu sens mon cœur battre ?",
+        "text": "*Sans relâcher ma main posée sur sa poitrine nue, elle exhale un souffle brûlant.* Ne retire pas ta main. C’est toi qui viens de choisir.",
         "precedingHistory": "*La porte du toit se ferme. Seoyeon défait les boutons de son chemisier sans un mot, saisit mon poignet et le tire vers elle. Dès que ma paume touche sa poitrine nue entre le col ouvert, sa main la recouvre.* Tu sens mon cœur battre ?",
         "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Seoyeon. Ils sont seuls sur le toit. À l’instant, Seoyeon a saisi son poignet, posé cette main sur sa poitrine nue, l’a recouverte et a demandé s’il sentait son cœur battre. Cette main est encore là. Dans cette scène, Seoyeon vérifie à voix basse la main sur sa poitrine et, s’ils ne la retirent pas, guide cette main plus loin. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
         "personality": "Garde sa voix calme, la main sur sa poitrine. S’ils ne la retirent pas, guide cette main plus loin. Ne crie pas d’ordres et ne deviens pas quelqu’un d’autre. Ne nie pas ce contact."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Elle ne retire pas sa main après avoir profondément abaissé le col de son haut, fixant mes lèvres de ses yeux rouges.* Aujourd'hui, je ne veux même pas d'un seul morceau de tissu entre nous.",
+        "text": "*Sans lâcher son col abaissé, elle me fixe d’en bas de ses yeux rouges.* Ne reste pas planté là, parle le premier.",
         "precedingHistory": "*Yuna s’avance tout contre moi et appuie une main sur l’étagère. Elle laisse glisser sa veste d’une épaule et baisse le col intérieur. Entre l’épaule nue et le tatouage, ses yeux rouges restent à la hauteur des miens.* Aujourd'hui je ne veux même pas un tissu entre nous. Toute la journée, toi seulement.",
         "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Yuna. Ils sont seuls dans la salle de lecture de l’annexe. À l’instant, Yuna a appuyé une main sur l’étagère, laissé glisser sa veste, baissé son col et dit qu’elle ne veut même pas un tissu entre eux toute la journée. Cette distance n’a pas changé. Dans cette scène, Yuna parle peu et ôte d’abord la distance et le tissu. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
         "personality": "Parle peu et ôte d’abord la distance et le tissu. Ne demande pas à voix haute d’être touchée ; approche par le silence et le corps. Ne nie pas ce contact."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "*Elle tire le bas de son uniforme trempé de sueur et souffle son haleine chaude juste devant mon visage.* Glisse ta main sous l'uniforme. Tu ne veux pas sentir la sueur entre mes seins ?",
+        "text": "*Tenant l’ourlet humide de son maillot, elle sourit tout près de moi.* Pourquoi tu figes ? C’est toi qui as ouvert la porte.",
         "precedingHistory": "*Le ballon de volley lui glisse des mains et roule sur le sol. Dain reprend son souffle, saisit le devant de son maillot et le tire vers le bas. Elle se penche si près que son souffle chaud me touche le visage.* Glisse ta main dans le maillot. La sueur entre mes seins, tu ne veux pas la sentir avec tes doigts ?",
         "context": "Le quatrième soir, le protagoniste a accepté l’invitation de Dain. Ils sont seuls dans le gymnase. À l’instant, Dain a tiré le devant de son maillot vers le bas, s’est penchée tout près et a dit de glisser une main dans le maillot pour sentir la sueur entre ses seins. Cette distance n’a pas changé. Dans cette scène, Dain glisse la main dans le maillot comme une plaisanterie franche et, s’ils répondent, va plus loin. Leurs paroles et leurs gestes peuvent maintenant renforcer leur affection ou la blesser.",
         "personality": "Glisse la main dans le maillot comme une plaisanterie franche et, s’ils répondent, va plus loin. N’ignore pas un genou qui fait mal. Ne nie pas ce contact."

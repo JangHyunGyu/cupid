@@ -13,7 +13,7 @@
     },
     "hidden_nurse_d3_neg": {
         "name": "Enfermera",
-        "text": "*Cierra la carpeta de fichas y ni mira hacia la silla.* Tramítalo solo por la ventanilla oficial. Vuelve al aula."
+        "text": "*Cierra la carpeta sin mirar siquiera hacia la silla.* Si necesitas consulta, pide cita en horario normal. Vuelve ahora a tu clase."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",
@@ -42,7 +42,7 @@
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon suelta un leve suspiro y gira la punta de los zapatos hacia mí. Las yemas de sus dedos sujetan la carpeta con algo más de firmeza que de costumbre.*"
+        "text": "*Seoyeon suelta un suspiro breve y se vuelve hacia mí con las manos vacías y recogidas junto a la falda del uniforme.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "Profesora, estaba usted sola en el aula vacía. *Al abrir la puerta en silencio, la punta de la pluma estilográfica de la profesora se detiene sobre las cuartillas del pupitre.*"
+        "text": "*En el descanso tras la asamblea matinal y la primera hora, abro sin ruido la puerta del aula vacía.* ¿Estaba aquí sola, profesora? *La pluma estilográfica con la que escribía en el atril se detiene.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Profesora",
@@ -393,7 +393,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Profesora",
-        "text": "Dentro de esta semana, planeo mostrárselo a los otros maestros de artes del lenguaje primero. Siento que si lo guardo en un cajón, nunca le pondré punto final."
+        "text": "La semana que viene pienso enseñárselo primero a los compañeros del departamento de lengua. Si lo dejo guardado en un cajón para siempre, nunca le pondré punto final."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Profesora",
@@ -443,7 +443,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*En el recreo, abro la puerta de la enfermería. Entre el olor a antiséptico, el apósito impermeable que me puso ayer en el codo roza el interior de mi manga.*"
+        "text": "*En el recreo tras la primera hora de la mañana, abro la puerta de la enfermería. Entre el olor a antiséptico, la tirita impermeable del codo de ayer roza la manga por dentro.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Enfermera",
@@ -612,9 +612,9 @@
         "name": "Enfermera",
         "text": "*La enfermera termina de cerrar el cajón y levanta la vista hacia mí. La enfermería, impregnada de olor a antiséptico, se queda aún más en calma.*",
         "choices": [
-            "¿Dejó el hospital después de aquello?",
-            "¿Le parece bien seguir hablando de aquello?",
-            "¿No se sentiría mejor si lo contara todo?"
+            "¿Todavía piensa mucho en aquel paciente?",
+            "¿Le importa seguir hablando de ello?",
+            "¿No se sentiría más aliviada si lo contara todo?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {

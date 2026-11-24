@@ -426,6 +426,313 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
         }, holdMs);
     }
 
+    /** 엔딩 배너/크레딧 메타데이터 (8개 언어 지원, 비차단 연출용) */
+    _getEndingBannerMeta(sceneId) {
+        if (!sceneId || typeof sceneId !== 'string') return null;
+        const rawLang = (typeof window !== 'undefined' && window.GAME_LANG)
+            || (typeof document !== 'undefined' && document.documentElement && document.documentElement.lang)
+            || 'ko';
+        const lang = ['ko', 'en', 'ja', 'es', 'fr', 'de', 'pt', 'zh'].includes(rawLang) ? rawLang : 'ko';
+        const hasFlag = (name) => !!(this.stateManager && typeof this.stateManager.getFlag === 'function' && this.stateManager.getFlag(name));
+
+        const CHAR_LABELS = {
+            seo: { ko: '서연', en: 'Seoyeon', ja: 'ソヨン', es: 'Seoyeon', fr: 'Seoyeon', de: 'Seoyeon', pt: 'Seoyeon', zh: '书妍' },
+            yuna: { ko: '유나', en: 'Yuna', ja: 'ユナ', es: 'Yuna', fr: 'Yuna', de: 'Yuna', pt: 'Yuna', zh: '由娜' },
+            dain: { ko: '다인', en: 'Dain', ja: 'ダイン', es: 'Dain', fr: 'Dain', de: 'Dain', pt: 'Dain', zh: '多因' },
+            teacher: { ko: '담임선생님', en: 'Homeroom Teacher', ja: '担任の先生', es: 'Profesora', fr: 'Professeure principale', de: 'Klassenlehrerin', pt: 'Professora', zh: '班主任' },
+            nurse: { ko: '보건선생님', en: 'School Nurse', ja: '保健室の先生', es: 'Enfermera', fr: 'Infirmière', de: 'Schulkrankenschwester', pt: 'Enfermeira', zh: '保健老师' },
+            haeun: { ko: '하은', en: 'Haeun', ja: 'ハウン', es: 'Haeun', fr: 'Haeun', de: 'Haeun', pt: 'Haeun', zh: '夏恩' }
+        };
+
+        const KIND_LABELS = {
+            perfect: { ko: 'PERFECT END', en: 'PERFECT END', ja: 'PERFECT END', es: 'PERFECT END', fr: 'PERFECT END', de: 'PERFECT END', pt: 'PERFECT END', zh: '完美结局' },
+            true: { ko: 'TRUE LOVE END', en: 'TRUE LOVE END', ja: 'TRUE LOVE END', es: 'TRUE LOVE END', fr: 'TRUE LOVE END', de: 'TRUE LOVE END', pt: 'TRUE LOVE END', zh: '真爱结局' },
+            good: { ko: 'GOOD END', en: 'GOOD END', ja: 'GOOD END', es: 'GOOD END', fr: 'GOOD END', de: 'GOOD END', pt: 'GOOD END', zh: '好结局' },
+            lateGood: { ko: 'LATE CONFESSION END', en: 'LATE CONFESSION END', ja: 'LATE CONFESSION END', es: 'LATE CONFESSION END', fr: 'LATE CONFESSION END', de: 'LATE CONFESSION END', pt: 'LATE CONFESSION END', zh: '迟来的告白' },
+            bittersweet: { ko: 'BITTERSWEET END', en: 'BITTERSWEET END', ja: 'BITTERSWEET END', es: 'BITTERSWEET END', fr: 'BITTERSWEET END', de: 'BITTERSWEET END', pt: 'BITTERSWEET END', zh: '苦涩结局' },
+            counteroffer: { ko: 'SHAKEN CHOICE END', en: 'A SHAKEN CHOICE', ja: '揺れた選択 END', es: 'ELECCIÓN INCIERTA', fr: 'CHOIX ÉBRANLÉ', de: 'WANKENDE WAHL', pt: 'ESCOLHA ABALADA', zh: '动摇的选择' },
+            confessFail: { ko: 'CONFESSION REJECTED END', en: 'CONFESSION FAILED', ja: 'CONFESSION FAILED', es: 'CONFESIÓN RECHAZADA', fr: 'DÉCLARATION REFUSÉE', de: 'GESTÄNDNIS GESCHEITERT', pt: 'CONFISSÃO RECUSADA', zh: '告白失败' },
+            friend: { ko: 'FRIEND END', en: 'FRIEND END', ja: 'FRIEND END', es: 'FINAL DE AMISTAD', fr: 'FIN AMITIÉ', de: 'FREUNDSCHAFTS-ENDE', pt: 'FINAL DE AMIZADE', zh: '朋友结局' },
+            mayhem: { ko: 'MAYHEM END', en: 'MAYHEM END', ja: 'MAYHEM END', es: 'FINAL CAÓTICO', fr: 'FIN CHAOS', de: 'CHAOS-ENDE', pt: 'FINAL CAÓTICO', zh: '混乱结局' },
+            unresolved: { ko: 'UNRESOLVED END', en: 'UNRESOLVED END', ja: 'UNRESOLVED END', es: 'FINAL INCONCLUSO', fr: 'FIN IRRÉSOLUE', de: 'UNGELÖSTES ENDE', pt: 'FINAL INCONCLUSIVO', zh: '未解结局' },
+            alone: { ko: 'ALONE END', en: 'ALONE END', ja: 'ALONE END', es: 'FINAL EN SOLEDAD', fr: 'FIN SOLITAIRE', de: 'EINSAMES ENDE', pt: 'FINAL SOZINHO', zh: '孤单结局' }
+        };
+
+        const EPIGRAPHS = {
+            perfect: {
+                ko: '망설임 끝에 고른 단 하나의 마음이, 계절을 건너 가장 선명한 봄으로 남았다.',
+                en: 'One heart chosen past every hesitation lingered across the seasons as the clearest spring.',
+                ja: '迷いの果てに選んだたった一つの想いが、季節を越えていちばん澄んだ春になった。',
+                es: 'Un solo corazón elegido más allá de toda duda quedó, tras las estaciones, como la primavera más clara.',
+                fr: 'Un seul cœur choisi par-delà l’hésitation a traversé les saisons comme le printemps le plus limpide.',
+                de: 'Ein einziges Herz, jenseits allen Zögerns gewählt, überdauerte die Jahreszeiten als klarster Frühling.',
+                pt: 'Um único coração escolhido além de qualquer hesitação atravessou as estações como a primavera mais nítida.',
+                zh: '越过所有犹豫选定的唯一心意，穿过四季，化作了最明澈的春天。'
+            },
+            true: {
+                ko: '서툴렀던 한 주간의 망설임을 지나, 비로소 같은 보폭으로 걷기 시작했다.',
+                en: 'Past a week of clumsy hesitation, two shadows finally fell into the same stride.',
+                ja: '不器用だった一週間の迷いを越えて、ようやく同じ歩幅で歩き始めた。',
+                es: 'Tras una semana de dudas torpes, al fin comenzaron a caminar al mismo paso.',
+                fr: 'Après une semaine d’hésitations maladroites, vos pas ont enfin trouvé la même cadence.',
+                de: 'Nach einer Woche voller Zögern fanden eure Schritte endlich denselben Takt.',
+                pt: 'Após uma semana de hesitações desajeitadas, vocês finalmente passaram a caminhar no mesmo ritmo.',
+                zh: '走过笨拙而犹豫的一周，终于真正开始了并肩同行的步伐。'
+            },
+            good: {
+                ko: '아직 완벽하지 않아도, 내일을 함께 약속할 수 있는 온기가 손끝에 남았다.',
+                en: 'Not yet effortless, perhaps, but warm enough to promise tomorrow hand in hand.',
+                ja: 'まだ完璧ではなくても、明日を約束できるぬくもりが指先に残った。',
+                es: 'Quizá aún no sea perfecto, pero quedó en las manos el calor suficiente para prometer el mañana.',
+                fr: 'Pas encore parfait sans doute, mais assez chaleureux pour se promettre demain.',
+                de: 'Vielleicht noch nicht makellos, doch warm genug, um sich das Morgen zu versprechen.',
+                pt: 'Talvez ainda não seja perfeito, mas restou nas mãos o calor bastante para prometer o amanhã.',
+                zh: '或许还不算完美，但指尖已留住足以约定明天的温度。'
+            },
+            lateGood: {
+                ko: '한 발 늦은 고백이었지만, 진심이 닿은 자리에서 비로소 두 사람의 계절이 열렸다.',
+                en: 'A heartbeat late, yet honest enough to open a season of your own.',
+                ja: '一歩遅れた告白でも、本心が届いた場所から二人の季節が始まった。',
+                es: 'Llegó un latido tarde, pero fue tan sincero que abrió al fin vuestra propia estación.',
+                fr: 'Un battement plus tard, mais assez sincère pour ouvrir enfin votre saison.',
+                de: 'Einen Herzschlag zu spät, doch ehrlich genug, um eure eigene Jahreszeit zu beginnen.',
+                pt: 'Com um compasso de atraso, mas sincero o bastante para abrir enfim a estação de vocês.',
+                zh: '虽迟了一步的告白，却在真心相触的那一刻开启了只属于两人的季节。'
+            },
+            counteroffer: {
+                ko: '흔들린 시선 끝에서 놓쳐 버린 온기는, 뒤늦은 후회 속에서만 선명하게 남았다.',
+                en: 'The warmth slipped away where your gaze wavered, clearest only in hindsight.',
+                ja: '揺らいだ視線の先で手放したぬくもりは、遅すぎた後悔の中だけに鮮やかに残った。',
+                es: 'El calor que se escapó donde dudó tu mirada solo quedó nítido en el arrepentimiento.',
+                fr: 'La chaleur perdue là où le regard a vacillé ne demeure claire que dans le regret.',
+                de: 'Die Wärme, die im Zögern entglitt, bleibt nur in der späten Reue scharf gezeichnet.',
+                pt: 'O calor que escapou onde o olhar vacilou permaneceu nítido apenas no arrependimento tardio.',
+                zh: '在视线动摇处失落的温度，只能在迟来的懊悔里清晰留存。'
+            },
+            bittersweet: {
+                ko: '닫히지 않은 문틈으로 새어 나온 여운처럼, 끝내 닿지 못한 마음이 계절에 남았다.',
+                en: 'Like light through a half-shut door, unspoken feelings lingered softly in the season.',
+                ja: '閉まりきらない扉の隙間から漏れる余韻のように、届かなかった想いが季節に残った。',
+                es: 'Como una luz tras la puerta entreabierta, lo no dicho quedó suspendido en la estación.',
+                fr: 'Comme une lueur filtrant sous une porte entrouverte, les sentiments inachevés sont restés dans l’air.',
+                de: 'Wie Licht durch eine halb offene Tür blieb das Ungesagte still in der Jahreszeit zurück.',
+                pt: 'Como luz por uma porta entreaberta, o que não se alcançou permaneceu na estação.',
+                zh: '像半掩门缝透出的微光，未能抵达的心意悄然留在季节里。'
+            },
+            confessFail: {
+                ko: '꺼낸 말보다 삼킨 침묵이 더 길었던 밤, 엇갈린 타이밍이 조용히 식어 갔다.',
+                en: 'On a night weighed down by delayed words, mistimed honesty quietly grew cold.',
+                ja: '伝えた言葉より飲み込んだ沈黙が長かった夜、すれ違ったタイミングが静かに冷えていった。',
+                es: 'En una noche de palabras postergadas, el silencio pesó más que el momento perdido.',
+                fr: 'Dans une nuit alourdie par les mots retenus, le contretemps s’est refroidi en silence.',
+                de: 'In einer Nacht voller aufgeschobener Worte kühlte das verpasste Timing leise aus.',
+                pt: 'Numa noite de palavras adiadas, o desencontro esfriou em silêncio.',
+                zh: '在吞下沉默远胜开口的夜里，错过的时机悄然冷却。'
+            },
+            friend: {
+                ko: '선 너머로 가지 않았기에 지킬 수 있었던 웃음이, 평범한 내일로 이어졌다.',
+                en: 'Because no line was crossed, the laughter beside you stayed intact into tomorrow.',
+                ja: '一線を越えなかったからこそ守れた笑顔が、穏やかな明日へと続いていった。',
+                es: 'Al no cruzar la línea, las risas a tu lado siguieron intactas hacia un mañana sereno.',
+                fr: 'Pour n’avoir franchi aucune ligne, les rires à tes côtés ont rejoint demain sans heurt.',
+                de: 'Weil keine Grenze überschritten wurde, blieb das vertraute Lachen bis in den nächsten Tag erhalten.',
+                pt: 'Por não cruzar a linha, o sorriso ao seu lado seguiu intacto até o amanhã comum.',
+                zh: '正因为未曾越过那条线，身旁的笑声才安稳地延续到平凡的明天。'
+            },
+            mayhem: {
+                ko: '모든 문 앞에 동시에 섰던 대가로, 빈자리와 침묵만이 가장 솔직한 답으로 남았다.',
+                en: 'Standing at every door at once left only empty seats and silence as the honest answer.',
+                ja: 'すべての扉の前に同時に立った代償として、空席と沈黙だけが正直な答えになった。',
+                es: 'Estar frente a todas las puertas a la vez dejó solo sillas vacías y silencio por respuesta.',
+                fr: 'À vouloir se tenir devant toutes les portes à la fois, il ne resta que le silence pour réponse.',
+                de: 'Vor allen Türen zugleich zu stehen hinterließ am Ende nur leere Plätze und Stille.',
+                pt: 'Ficar diante de todas as portas ao mesmo tempo deixou apenas cadeiras vazias e silêncio.',
+                zh: '同时站在每一扇门前的代价，只剩下空位与沉默作为最坦诚的回答。'
+            },
+            unresolved: {
+                ko: '정하지 못한 대답들은 봉투에 담긴 채, 세 개의 이름 위로 긴 여백을 남겼다.',
+                en: 'Left sealed without an answer, three names lingered across an unfinished page.',
+                ja: '決めきれない答えは封をされたまま、三つの名前のうえに長い余白を残した。',
+                es: 'Sin una respuesta elegida, tres nombres dejaron un largo silencio sobre la página.',
+                fr: 'Sans réponse tranchée, trois noms ont laissé un long silence sur la page.',
+                de: 'Ohne entschiedene Antwort ließen drei Namen eine lange Leerstelle zurück.',
+                pt: 'Sem uma resposta definida, três nomes deixaram um longo silêncio na página.',
+                zh: '未曾落笔的回答被原封收起，只在三个名字之上留下长长的空白。'
+            },
+            alone: {
+                ko: '누구의 손도 잡지 않았던 닷새가 조용히 저물고, 낯선 방에 혼자만의 밤이 내렸다.',
+                en: 'Five days passed with no hand held, and night settled quietly into an unshared room.',
+                ja: '誰の手も取らなかった五日間が静かに暮れ、ひとりきりの夜が部屋に降りた。',
+                es: 'Cinco días pasaron sin tomar ninguna mano, y la noche cayó tranquila en una habitación vacía.',
+                fr: 'Cinq jours s’achevèrent sans aucune main saisie, et la nuit tomba sur une chambre silencieuse.',
+                de: 'Fünf Tage vergingen, ohne eine Hand zu halten, bis die Nacht allein ins Zimmer fiel.',
+                pt: 'Cinco dias se foram sem segurar nenhuma mão, e a noite desceu quieta num quarto só seu.',
+                zh: '未曾牵起任何人双手的五天静静落幕，独自一人的夜色沉入房间。'
+            }
+        };
+
+        const routeChar = hasFlag('route_seoyeon') ? 'seo'
+            : hasFlag('route_yuna') ? 'yuna'
+            : hasFlag('route_dain') ? 'dain'
+            : hasFlag('route_haeun') ? 'haeun'
+            : null;
+
+        let kind = null;
+        let ch = null;
+        let theme = 'amber';
+
+        const directMap = {
+            perfect_epilogue_4_seo: ['perfect', 'seo', 'gold'],
+            perfect_epilogue_4_yuna: ['perfect', 'yuna', 'gold'],
+            perfect_epilogue_4_dain: ['perfect', 'dain', 'gold'],
+            hidden_perfect_homeroom_ending_title: ['perfect', 'teacher', 'gold'],
+            hidden_perfect_nurse_ending_title: ['perfect', 'nurse', 'gold'],
+            day5_ending_haeun: ['perfect', 'haeun', 'gold'],
+            hidden_true_homeroom_ending_title: ['true', 'teacher', 'rose'],
+            hidden_true_nurse_ending_title: ['true', 'nurse', 'rose'],
+            hidden_good_homeroom_ending_title: ['good', 'teacher', 'amber'],
+            hidden_good_nurse_ending_title: ['good', 'nurse', 'amber'],
+            hidden_bitter_nurse_ending_title: ['bittersweet', 'nurse', 'violet'],
+            friend_12: ['friend', null, 'amber'],
+            mayhem_8: ['mayhem', null, 'crimson'],
+            harem_8: ['unresolved', null, 'slate'],
+            alone_5: ['alone', null, 'slate']
+        };
+
+        if (directMap[sceneId]) {
+            [kind, ch, theme] = directMap[sceneId];
+        } else if (sceneId === 'true_epilogue_7') {
+            kind = 'true';
+            ch = routeChar;
+            theme = 'rose';
+        } else if (sceneId === 'good_5_cg_seo' || sceneId === 'good_5_cg_yuna' || sceneId === 'good_5_cg_dain') {
+            kind = hasFlag('day5_confessed') ? 'lateGood' : 'good';
+            ch = sceneId.endsWith('seo') ? 'seo' : (sceneId.endsWith('yuna') ? 'yuna' : 'dain');
+            theme = kind === 'lateGood' ? 'rose' : 'amber';
+        } else if (sceneId === 'bitter_epilogue_3') {
+            const abandoned = hasFlag('day5_abandoned_seoyeon') || hasFlag('day4_counteroffer_accepted');
+            kind = abandoned ? 'counteroffer' : 'bittersweet';
+            ch = routeChar;
+            theme = abandoned ? 'crimson' : 'violet';
+        } else if (sceneId === 'hidden_bitter_homeroom_ending_title') {
+            const abandoned = hasFlag('day5_abandoned_teacher') || hasFlag('day4_counteroffer_accepted');
+            kind = abandoned ? 'counteroffer' : 'bittersweet';
+            ch = 'teacher';
+            theme = abandoned ? 'crimson' : 'violet';
+        } else if (sceneId === 'confess_fail_5') {
+            kind = 'confessFail';
+            ch = routeChar;
+            theme = 'slate';
+        } else {
+            return null;
+        }
+
+        const kindText = (KIND_LABELS[kind] && KIND_LABELS[kind][lang]) || KIND_LABELS[kind].en;
+        const charText = ch && CHAR_LABELS[ch] ? (CHAR_LABELS[ch][lang] || CHAR_LABELS[ch].ko) : '';
+        const title = charText ? `${charText} · ${kindText}` : kindText;
+        const epigraph = (EPIGRAPHS[kind] && (EPIGRAPHS[kind][lang] || EPIGRAPHS[kind].en)) || '';
+        return { kind, ch, theme, kindText, charText, title, epigraph, lang };
+    }
+
+    /** 현재 씬에 맞춰 엔딩 배너 오버레이를 비차단 방식으로 동기화 */
+    _syncEndingBanner(sceneId, scene) {
+        if (typeof document === 'undefined' || !this.uiManager) return;
+        const dialogueBox = this.uiManager.dialogueBox;
+        const meta = this._getEndingBannerMeta(sceneId);
+        if (meta) {
+            this._lastEndingBannerMeta = meta;
+        } else if (!sceneId || (!this._isEndingScene(sceneId) && sceneId !== 'day5_credits')) {
+            this._lastEndingBannerMeta = null;
+        }
+
+        let overlay = document.getElementById('ending-banner-overlay');
+        if (!meta) {
+            if (overlay) {
+                overlay.classList.remove('is-active');
+                overlay.setAttribute('aria-hidden', 'true');
+            }
+            if (dialogueBox && dialogueBox.classList) {
+                dialogueBox.classList.remove('ending-title-scene');
+            }
+            return;
+        }
+
+        const container = document.getElementById('game-container');
+        if (!container) return;
+        if (!overlay) {
+            overlay = document.createElement('div');
+            overlay.id = 'ending-banner-overlay';
+            overlay.setAttribute('aria-hidden', 'true');
+            overlay.innerHTML = '<div class="ending-banner-card"><span class="ending-banner-eyebrow">CUPID FINALE</span><div class="ending-banner-title"></div><div class="ending-banner-rule" aria-hidden="true"></div><p class="ending-banner-epigraph"></p></div>';
+            container.appendChild(overlay);
+        }
+
+        overlay.dataset.endingTheme = meta.theme;
+        const titleEl = overlay.querySelector('.ending-banner-title');
+        const epiEl = overlay.querySelector('.ending-banner-epigraph');
+        if (titleEl) titleEl.textContent = meta.title;
+        if (epiEl) epiEl.textContent = meta.epigraph;
+        overlay.classList.remove('is-active');
+        void overlay.offsetHeight;
+        overlay.classList.add('is-active');
+
+        if (dialogueBox && dialogueBox.classList && !(scene && scene.text && meta.kind === 'perfect' && meta.ch === 'haeun')) {
+            dialogueBox.classList.add('ending-title-scene');
+        } else if (dialogueBox && dialogueBox.classList) {
+            dialogueBox.classList.remove('ending-title-scene');
+        }
+    }
+
+    /** 엔딩 크레딧 레이어에 달성 엔딩 여운 문구와 컬러 테마 반영 */
+    _applyEndingCreditsTheme(creditsLayer) {
+        if (!creditsLayer) return;
+        const meta = this._lastEndingBannerMeta || (() => {
+            const hasFlag = (name) => !!(this.stateManager && typeof this.stateManager.getFlag === 'function' && this.stateManager.getFlag(name));
+            if (hasFlag('route_haeun')) return this._getEndingBannerMeta('day5_ending_haeun');
+            if (hasFlag('ending_perfect')) {
+                if (hasFlag('route_seoyeon')) return this._getEndingBannerMeta('perfect_epilogue_4_seo');
+                if (hasFlag('route_yuna')) return this._getEndingBannerMeta('perfect_epilogue_4_yuna');
+                if (hasFlag('route_dain')) return this._getEndingBannerMeta('perfect_epilogue_4_dain');
+                if (hasFlag('isDating_Teacher')) return this._getEndingBannerMeta('hidden_perfect_homeroom_ending_title');
+                if (hasFlag('isDating_Nurse')) return this._getEndingBannerMeta('hidden_perfect_nurse_ending_title');
+            }
+            if (hasFlag('ending_true_love')) {
+                if (hasFlag('isDating_Teacher')) return this._getEndingBannerMeta('hidden_true_homeroom_ending_title');
+                if (hasFlag('isDating_Nurse')) return this._getEndingBannerMeta('hidden_true_nurse_ending_title');
+                return this._getEndingBannerMeta('true_epilogue_7');
+            }
+            if (hasFlag('ending_harem')) return this._getEndingBannerMeta('harem_8');
+            if (hasFlag('ending_bittersweet')) return this._getEndingBannerMeta('bitter_epilogue_3');
+            return null;
+        })();
+
+        const content = creditsLayer.querySelector('#credits-content');
+        if (!content) return;
+        let epiWrap = content.querySelector('.credits-epigraph-block');
+        if (!epiWrap) {
+            epiWrap = document.createElement('div');
+            epiWrap.className = 'credits-epigraph-block';
+            epiWrap.innerHTML = '<div class="credits-ending-badge"></div><p class="credits-epigraph"></p>';
+            const divider = content.querySelector('.credits-divider');
+            if (divider && divider.parentNode === content) {
+                content.insertBefore(epiWrap, divider);
+            } else {
+                content.prepend(epiWrap);
+            }
+        }
+        const badgeEl = epiWrap.querySelector('.credits-ending-badge');
+        const textEl = epiWrap.querySelector('.credits-epigraph');
+        if (meta) {
+            creditsLayer.dataset.endingTheme = meta.theme;
+            if (badgeEl) badgeEl.textContent = meta.title;
+            if (textEl) textEl.textContent = meta.epigraph;
+            epiWrap.style.display = '';
+        } else {
+            delete creditsLayer.dataset.endingTheme;
+            epiWrap.style.display = 'none';
+        }
+    }
+
     /** 대화창 클릭 처리 */
     async handleDialogueClick() { var __oc18, __oc19, __oc20, __oc21, __oc22, __oc23;
         if ((((__oc18 = this.sceneRenderer.cgTransition) === null || __oc18 === void 0 ? void 0 : __oc18.active))) return;
@@ -1148,6 +1455,9 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
                 this.uiManager.dialogueBox.classList.remove('ending-mode', 'ending-fade-in');
             }
         }
+        if (typeof this._syncEndingBanner === 'function') {
+            this._syncEndingBanner(sceneId, scene);
+        }
 
         // GA4 가상 페이지뷰 전송 (SPA 보정)
         if (window.sendGAPageView) window.sendGAPageView(sceneId);
@@ -1537,6 +1847,10 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
             }
 
             // 이전 크레딧 상태 완전 초기화 (재진입 시 애니메이션 재시작 보장)
+            if (typeof this._applyEndingCreditsTheme === 'function') {
+                this._applyEndingCreditsTheme(creditsLayer);
+            }
+
             creditsLayer.classList.remove('active');
             creditsLayer.setAttribute('aria-hidden', 'true');
             const content = document.getElementById('credits-content');

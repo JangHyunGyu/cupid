@@ -155,12 +155,12 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "lunch_seo_21": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_smile.png",
+        "character": "assets/images/characters/seyoun_laugh.png",
         "next": "lunch_seo_22"
     },
     "lunch_seo_22": {
         "background": "assets/images/background/top_school.png",
-        "character": "assets/images/characters/seyoun_laugh.png",
+        "character": "assets/images/characters/seyoun_soft_smile.png",
         "next": "lunch_seo_23"
     },
     "lunch_seo_23": {
@@ -420,7 +420,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "lunch_dain_after": {
         "background": "assets/images/background/store.png",
-        "character": "assets/images/characters/dain_laugh.png",
+        "character": "assets/images/characters/dain_normal.png",
         "next": "lunch_dain_after_2"
     },
     "lunch_dain_after_2": {
@@ -453,7 +453,6 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     },
     "lunch_yuna_1": {
         "background": "assets/images/background/library_old.png",
-        "backgroundVariant": "empty",
         "character": "assets/images/characters/yuna_normal.png",
         "bgm": "night1.mp3",
         "affinityChar": "Yuna",

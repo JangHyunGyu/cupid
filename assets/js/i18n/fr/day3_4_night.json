@@ -5,7 +5,7 @@
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*Dans la chambre encore éteinte, je retourne le téléphone posé face contre le bureau et j'allume l'écran.*"
+        "text": "*Dans la chambre éclairée uniquement par la lampe de bureau, je retourne mon téléphone posé face contre table et allume l’écran.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*Dès que je ferme les yeux, me reviennent d'abord la lumière du couchant dans la salle du conseil, le front brûlant de Seoyeon contre mon avant-bras, et le ruban du col, un peu dénoué.*"
+        "text": "*En fermant les yeux, la lumière du soir dans le bureau du conseil, le front brûlant de Seoyeon contre mon avant-bras et son col de chemise légèrement froissé reviennent aussitôt.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "night3_nightmare_4_b": {
         "name": "{name}",
-        "text": "*Tout en bas, dans la discussion de Dain, une seule ligne reste suspendue derrière le petit rire ajouté légèrement.*"
+        "text": "*Tout en bas, dans le fil de Dain, une seule ligne reste suspendue après le petit « mdr » léger ajouté à la fin.*"
     },
     "night3_nightmare_5": {
         "name": "{name}",
@@ -188,7 +188,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*Dans la zone de saisie de Dain, j'écris « Désolé de t'avoir laissée y penser seule. Demain matin, je te le dirai tout de suite. » Le bout de mon pouce se fige sur l'icône d'envoi.*"
+        "text": "*Dans la zone de texte de Dain je tape : « Désolé de t’avoir laissée te tracasser seule. Je te parle dès demain matin. » Mon pouce s’arrête sur Envoyer.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

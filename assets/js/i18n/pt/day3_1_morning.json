@@ -13,7 +13,7 @@
     },
     "hidden_nurse_d3_neg": {
         "name": "Enfermeira",
-        "text": "*Ela fecha a pasta de fichas e nem olha para o lado da cadeira.* Registra só no balcão oficial. Volta para a sala."
+        "text": "*Ela fecha a pasta de prontuários sem olhar para a cadeira.* Se precisar de atendimento, agende no horário regular. Agora volte para a sala."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",
@@ -42,7 +42,7 @@
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon solta um suspiro curto e vira a ponta dos sapatos na minha direção. A ponta dos dedos dela segura a prancheta com um pouco mais de firmeza que de costume.*"
+        "text": "*Seoyeon solta um suspiro curto e se vira para mim, mantendo as mãos vazias alinhadas ao lado da saia do uniforme.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "Professora, a senhora estava aqui sozinha na sala vazia. *Quando abro a porta devagar, a ponta da caneta-tinteiro da professora para sobre as folhas de manuscrito na mesa.*"
+        "text": "*No intervalo após a primeira aula da manhã, abro devagar a porta da sala vazia.* Professora, estava aqui sozinha? *A caneta-tinteiro que escrevia sobre o púlpito hesita.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Professora",
@@ -393,7 +393,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Professora",
-        "text": "Nesta semana, pretendo mostrá-lo primeiro aos outros professores de artes da linguagem. Sinto que se eu apenas o mantiver em uma gaveta, nunca colocarei o ponto final nele."
+        "text": "Semana que vem pretendo mostrar primeiro para os colegas do departamento de letras. Se deixar guardado na gaveta para sempre, nunca vou conseguir pôr um ponto final."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Professora",
@@ -443,7 +443,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*No intervalo, abro a porta da enfermaria. Em meio ao cheiro de antisséptico, o curativo impermeável colocado ontem no cotovelo roça por dentro da manga da camisa.*"
+        "text": "*No intervalo após a primeira aula, abro a porta da enfermaria. No cheiro de antisséptico, o curativo à prova d’água de ontem no cotovelo roça por dentro da manga.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Enfermeira",
@@ -612,9 +612,9 @@
         "name": "Enfermeira",
         "text": "*A enfermeira empurra a gaveta até fechar por completo e ergue os olhos para mim. A enfermaria, impregnada do cheiro de antisséptico, fica ainda mais silenciosa.*",
         "choices": [
-            "Foi depois disso que a senhora saiu do hospital?",
-            "Está tudo bem continuar falando sobre isso?",
-            "A senhora não se sentiria melhor se contasse tudo?"
+            "Ainda pensa muito naquele paciente hoje em dia?",
+            "Tudo bem se continuarmos falando daquela época?",
+            "Não ficaria mais leve se colocasse tudo para fora?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {

@@ -49,7 +49,7 @@
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*I unfold the neatly creased note in my hand; written in pale violet ink is a single line: 'To the library annex at lunch.'*"
+        "text": "*I pick up the note sitting on my desk and unfold it; written in pale violet ink is a single line: 'To the library annex at lunch.'*"
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
@@ -293,7 +293,7 @@
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "Your hand came in out of nowhere without a word—you startled me. *Feeling weirdly self-conscious, I tug my uniform blazer straight.*"
+        "text": "Your hand shot over without warning—you startled me. *Feeling oddly flustered, I adjust my uniform jacket.*"
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",

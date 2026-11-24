@@ -17,7 +17,7 @@
     },
     "tour_seo_2": {
         "name": "Seoyeon",
-        "text": "*Elle lève les yeux vers le pilier du portail, un léger sourire aux lèvres.* On s'est salués ici pour la première fois, non ?"
+        "text": "*Levant les yeux vers le pilier du portail avec un léger sourire.* En revoyant ce pilier, ça m’a frappée : c’est ici qu’on s’est dit bonjour pour la première fois."
     },
     "tour_seo_3": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "tour_yuna_event_4": {
         "name": "{name}",
-        "text": "*Yuna prend un stylo-plume violet pâle et écrit les trois caractères de son nom dans l'espace vide sous le titre. \"Choi Yuna.\" Le dernier caractère est un peu penché.*"
+        "text": "*Yuna sort son stylo-plume lavande et trace son nom complet sous le titre laissé vide : « Seol Yuna ». La dernière lettre penche un peu.*"
     },
     "tour_yuna_event_5": {
         "name": "Yuna",
@@ -328,20 +328,20 @@
     "tour_yuna_affinity_check": {},
     "tour_yuna_affinity_80": {
         "name": "Yuna",
-        "text": "La place de premier lecteur du nouveau carnet, celui que j'écrirai ensuite, je te la garde aussi d'avance. Quand l'événement d'aujourd'hui sera fini, on notera la date ensemble, sur la couverture."
+        "text": "Quand l’agitation du festival sera retombée, j’ai un autre livre à te recommander. On en parlera après la journée."
     },
     "tour_yuna_affinity_60": {
         "name": "Yuna",
-        "text": "La dernière page que je montrerai cet après-midi... personne d'autre. Lis-la en premier, toi."
+        "text": "Passe me voir un moment cet après-midi avant d’aller ailleurs. J’ai quelque chose à te dire."
     },
     "tour_dain_affinity_check": {},
     "tour_dain_affinity_80": {
         "name": "Dain",
-        "text": "La semaine prochaine, quand je ferai pour de vrai l'entraînement de commentaire de match, tu viens regarder, obligé ! Dès que la date est fixée, c'est toi que je préviens en premier."
+        "text": "Garde du temps libre après les cours dès la semaine prochaine ! Il y a plein de trucs à faire ensemble hors du gymnase."
     },
     "tour_dain_affinity_60": {
         "name": "Dain",
-        "text": "Cet après-midi, on passe d'abord par la cabine radio, ensemble ? J'ai décidé que le premier auditeur de mon test de micro, aujourd'hui, ce serait toi."
+        "text": "Dès que le programme de cet après-midi se termine, viens me voir en premier, d’accord ? On se fera une vraie revanche."
     },
     "tour_seo_skip": {},
     "tour_yuna_skip": {},
@@ -402,7 +402,7 @@
     },
     "day5_haeun_waver_up": {
         "name": "Haeun",
-        "text": "*Haeun laisse sortir d'un long souffle l'air qu'elle retenait, et ses épaules se dénouent.* …Merci. Puisque vous me le dites comme ça, j'ai un peu moins peur. Restez encore un tout petit moment à côté de moi."
+        "text": "*Haeun relâche enfin son souffle et détend les épaules.* …Merci, senior. Rien que votre présence à mes côtés me rassure un peu. Restez encore un petit moment avec moi."
     },
     "day5_haeun_waver_down": {
         "name": "Haeun",
@@ -482,7 +482,7 @@
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
-        "text": "*Haeun recule d'un demi-pas, avec précaution, et Yuna fixe le coin de mes lèvres d'un regard calme.*",
+        "text": "*Haeun recule prudemment d’un demi-pas et Yuna attend ma réponse d’un regard calme.*",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun et le protagoniste ont porté des documents à la salle radio. L’autre personne a vu Haeun se pencher pour dégager le fermoir de son bracelet du bouton de sa manche. Haeun l’a défendu en disant qu’elle lui demandait facilement de l’aide, aggravant le malentendu sur leur relation. L’affinité de l’autre personne a déjà baissé de 15 points, ou de 20 si l’explication a été différée. Il n’y a eu ni romance ni activité sexuelle entre Haeun et le protagoniste.",
         "personality": "L’autre personne demande une explication avec sa voix propre et selon son affinité actuelle. Être première en affinité ne prouve ni couple ni promesses antérieures. Haeun reste polie, rapporte uniquement ce qu’elle a vu et ne parle pas des sentiments du protagoniste à sa place. Laisse-lui la place de répondre ; ses explications peuvent dissiper ou entretenir le malentendu. Ne résous pas tout dès le début et ne transforme pas les soupçons en trahison avérée. Ne répète pas la pénalité initiale ; note uniquement les effets de la contribution actuelle. Note l’affinité de Haeun exactement comme dans une conversation personnelle : une explication sincère sans rejeter la faute sur Haeun vaut +2, et prendre concrètement soin de sa position délicate ou de son inquiétude après l’avoir défendu vaut jusqu’à +3.",
@@ -597,7 +597,7 @@
         "text": "Ce n'est pas une chose qu'on peut simplement passer sous silence. *Seoyeon me regarde droit dans les yeux, inflexible.* Puisque Haeun est là, mettons les choses au clair tout de suite."
     },
     "day5_haeun_concern_seoyeon_group_talk": {
-        "name": "Seoyeon",
+        "name": "Seoyeon · Haeun",
         "text": "*Seoyeon jette un regard à Haeun, au visage fermé, puis me demande.* Je ne pensais pas qu'on me rapporterait ton histoire comme ça. Qu'est-ce que tu as bien pu dire à Haeun ?",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois sont dans le couloir. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
@@ -624,7 +624,7 @@
         "text": "*Yuna glisse dans sa poche le téléphone qu'elle tenait.* Je ne sais pas comment prendre le fait que tu repousses ça en silence. Dis-moi avec tes propres mots ce que tu as dit devant Haeun."
     },
     "day5_haeun_concern_yuna_group_talk": {
-        "name": "Yuna",
+        "name": "Yuna · Haeun",
         "text": "*Yuna plie calmement le fil de ses écouteurs et le range dans sa poche.* Ce que Haeun m'a raconté est trop différent du toi que je connaissais. Dis-le toi. De quoi vous avez parlé ?",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois sont dans le couloir. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
@@ -651,7 +651,7 @@
         "text": "*Dain décroise les bras et secoue fermement la tête.* Pas question de remettre ça à plus tard. Malentendu injuste ou maladresse, parle franchement ici même."
     },
     "day5_haeun_concern_dain_group_talk": {
-        "name": "Dain",
+        "name": "Dain · Haeun",
         "text": "*Dain s'arrête devant moi.* Qu'est-ce que tu as bien pu dire à Haeun ? Moi, je ne te croyais pas du genre à traiter une cadette n'importe comment. Écoutons ta version, aussi.",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois sont dans le couloir. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
@@ -678,7 +678,7 @@
         "text": "*La professeure principale me regarde droit dans les yeux alors que j'essaie de reculer.* Tu es peut-être pris de court et les mots ne sortent pas tout de suite. Même ainsi, au lieu de repousser les choses, il faut voir ensemble maintenant pourquoi Haeun l'a si mal vécu. Explique-moi calmement."
     },
     "day5_haeun_concern_teacher_group_talk": {
-        "name": "Professeure principale",
+        "name": "Professeure principale · Haeun",
         "text": "*La professeure principale baisse le dossier qu'elle tenait.* D'habitude, je te faisais confiance. Mais cette histoire, je ne peux pas faire comme si je ne l'avais pas entendue. Explique-moi pas à pas ce que tu as dit à Haeun.",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois sont dans le couloir. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",
@@ -705,7 +705,7 @@
         "text": "*L'infirmière efface le sourire de son regard jusqu'alors doux.* Repousser ta réponse ne dissipera pas ce malaise tout seul. Tu veux bien t'expliquer calmement, tout de suite ?"
     },
     "day5_haeun_concern_nurse_group_talk": {
-        "name": "Infirmière",
+        "name": "Infirmière · Haeun",
         "text": "*L'infirmière observe d'abord l'état de Haeun, puis se tourne vers moi.* Je ne m'attendais pas à entendre parler de toi à un moment comme celui-ci. Je veux aussi entendre de toi pourquoi cela pèse sur Haeun. Qu'as-tu dit alors ?",
         "groupLocation": "Couloir devant la salle radio pendant la fête de l’école",
         "context": "Haeun a perdu confiance lors de sa précédente conversation libre avec le protagoniste. Elle a confié son malaise à la personne ayant la plus forte affinité, qui se méfie désormais davantage de lui. Tous trois sont dans le couloir. L’autre personne a déjà perdu 15 points, ou 20 si l’explication a été différée. L’impression de Haeun peut différer de l’intention. Seule la transcription antérieure ci-dessous fait foi. N’invente ni insultes, ni menaces, ni promesses rompues. Sans transcription, parle uniquement de son malaise sans citer de propos précis.",

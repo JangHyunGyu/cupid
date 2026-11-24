@@ -58,7 +58,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "Normalerweise schließe ich hier für niemanden sonst auf. *Sie klopft leicht über die Lehne eines der Klappstühle und zieht ihn näher zu mir.* Nur heute mache ich eine Ausnahme."
+        "text": "Normalerweise schließe ich hier für niemanden auf. *Sie wischt leicht über die Holzbank und deutet neben sich.* Nur heute mache ich mal eine Ausnahme."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
-        "text": "*Aus der Tasche auf ihrem Schoß holt sie zwei pastellfarbene Lunchboxen – locker genug für zwei – und stellt sie nebeneinander.*"
+        "text": "*Aus der Tasche auf ihrem Schoß holt sie zwei pastellfarbene Lunchboxen für zwei Personen und stellt sie nebeneinander auf den kleinen Tisch.*"
     },
     "lunch_seo_9": {
         "name": "{name}",
@@ -101,7 +101,7 @@
         "text": "*Anstatt zu antworten, drückt sie mir Essstäbchen in die Hand und wendet sich ab.* Hör auf zu neugierig zu sein und iss. Es schmeckt nicht gut, wenn es kalt wird."
     },
     "lunch_seo_17": {
-        "name": "Seoyeon",
+        "name": "{name}",
         "text": "Dann greife ich gern zu. *Hinter dem Geländer liegen der sonnenüberflutete Schulhof und das Dach der Nebengebäude-Bibliothek frei im Blick.*"
     },
     "lunch_seo_19": {
@@ -199,7 +199,7 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "Ofenfrisches Brot, der Geruch ist der Wahnsinn, oder? Etwas voll, aber hier ist es am besten. *Sie zieht mich am Ärmel und geht mit großen Schritten in den Schulkiosk.*"
+        "text": "Schnell rein, bevor die Brötchen am Kiosk ausverkauft sind! Ein bisschen voll ist es schon, aber hier ist es am besten. *Sie zieht mich am Ärmel hinein.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
@@ -259,7 +259,7 @@
     },
     "lunch_dain_16": {
         "name": "Dain",
-        "text": "*Sie reißt die Brottüte in einem Zug auf und dreht sich zu mir.* Sag mal, du warst vorhin auf der Treppe überhaupt nicht außer Atem – machst du regelmäßig Sport?"
+        "text": "*Sie reißt die Brötchentüte mit einem Ruck auf und dreht sich zu mir.* Sag mal, vorhin beim Treppenrunterrennen warst du null außer Atem. Trainierst du regelmäßig?"
     },
     "lunch_dain_17": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "Ähm, sofort ertappt! Aber als ich vorhin im Klassenzimmer von Annahmen geredet habe, sahst du aus, als würdest du dich auskennen. Hast du schon mal Volleyball gespielt?"
+        "text": "Ähem, voll erwischt! Übrigens, heute Morgen als das mit der Annahme fiel, hast du ziemlich wissend geschaut – hast du schon mal Volleyball gespielt?"
     },
     "lunch_dain_choice": {
         "name": "Dain",
@@ -300,7 +300,7 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "Oho, ganz schön selbstbewusst! Dann komm morgen nach dem Unterricht in die Sporthalle. Ich übernehme dich persönlich ab dem Aufwärmen – abgemacht?"
+        "text": "Oh, du hast also schon gespielt? Dann komm morgen nach dem Unterricht in die Halle. Ich trainier dich ab dem Aufwärmen persönlich, abgemacht?"
     },
     "lunch_dain_c1_2": {
         "name": "Dain",
@@ -338,11 +338,11 @@
     },
     "lunch_yuna_1": {
         "name": "{name}",
-        "text": "*Vorbei an der Treppe, auf der der Flurlärm leiser wird, folge ich Yuna in die kühle, stille Bibliothek.*"
+        "text": "*Ich gehe die Treppe hinauf, wo der Flurlärm abklingt, und folge Yuna bis vor die Tür der Nebengebäude-Bibliothek.*"
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
-        "text": "*Als ich die Tür der Bibliothek im Nebengebäude öffne, liegt ruhiger Papierduft in der Luft. Yuna sitzt bereits in einer schräg besonnten Ecke des Lesesaals vor einem aufgeschlagenen Buch.*"
+        "text": "*Als ich die Tür der Nebengebäude-Bibliothek öffne, empfängt mich ruhiger Papierduft. Yuna setzt sich zuerst ans sonnige Fenster und schlägt ihr Buch auf.*"
     },
     "lunch_yuna_2": {
         "name": "Yuna",
@@ -402,7 +402,7 @@
     },
     "lunch_yuna_18": {
         "name": "Yuna",
-        "text": "Dann liest jetzt jeder für sich. *Mit einem Tisch zwischen uns schlagen wir nebeneinander die erste Seite auf.*"
+        "text": "Dann liest jetzt jeder für sich. *Uns über den Tisch hinweg gegenübersitzend schlagen wir die erste Seite auf.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
@@ -432,10 +432,10 @@
         "name": "{name}",
         "text": "*Ich klappe langsam das Buch zu, das ich lese, und sehe Yuna in die Augen.*",
         "choices": [
-            "Ich würde gern weiterlesen.",
-            "Du sitzt wohl am liebsten still da und liest.",
-            "Ich unterhalte dich besser als das Buch.",
-            "Wir könnten uns miteinander wohlfühlen, ohne reden zu müssen."
+            "Ich würde den Rest gern noch lesen.",
+            "Du liest wohl am liebsten ganz ruhig allein.",
+            "Ich kann dich besser unterhalten als das Buch.",
+            "Wird dir nicht langweilig, dich jeden Tag hier zu verstecken?"
         ]
     },
     "lunch_yuna_c1_1": {

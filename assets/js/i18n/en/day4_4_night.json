@@ -1,7 +1,7 @@
 {
     "day4_night_start": {
         "name": "{name}",
-        "text": "*It is time to leave the school, thick with dusk, and head home. I brush the evening air off the end of my sleeve and check the phone screen in my pocket.*"
+        "text": "*Dusk has completely fallen and it’s time to head home. Brushing off the chill, I check my phone screen in my pocket.*"
     },
     "day4_night_branch": {
         "name": "System",
@@ -15,8 +15,8 @@
         "choices": [
             "Go straight home and check in",
             "Follow Seoyeon to the rooftop and take her hand",
-            "If I say I have arrived already, neither will worry.",
-            "I will make up an excuse for being late and head home."
+            "Can't let either go—give some vague excuse and leave.",
+            "Don’t stall here; slip out neatly and head home."
         ]
     },
     "day4_teacher_dain_counteroffer": {
@@ -25,8 +25,8 @@
         "choices": [
             "Go straight home and check in",
             "Enter the gym and accept Dain's request",
-            "If I say I have arrived already, neither will worry.",
-            "I will make up an excuse for being late and head home."
+            "Can't let either go—give some vague excuse and leave.",
+            "Don’t stall here; slip out neatly and head home."
         ]
     },
     "day4_teacher_yuna_counteroffer": {
@@ -35,43 +35,43 @@
         "choices": [
             "Go straight home and check in",
             "Go to the annex and stay with Yuna",
-            "If I say I have arrived already, neither will worry.",
-            "I will make up an excuse for being late and head home."
+            "Can't let either go—give some vague excuse and leave.",
+            "Don’t stall here; slip out neatly and head home."
         ]
     },
     "day4_nurse_seoyeon_counteroffer": {
         "name": "Seoyeon",
-        "text": "*My steps toward the school gate stop in front of the main building’s entrance stairs. Standing beneath a streetlight, Seoyeon walks up, catches my sleeve, and takes a breath before speaking.* Do you have to go straight home right now? I never thought I’d ask something like this, either. Could you stay with me just a little longer tonight?",
+        "text": "*Walking toward the gate after infirmary prep, my steps stop at the main stairs. Seoyeon catches my sleeve under a streetlight.* Heading straight home after the nurse's office? I didn't think I'd ask this, either. Can't you stay with me just a little longer tonight?",
         "choices": [
             "Go straight home and check in",
             "Follow Seoyeon to the rooftop and take her hand",
-            "If I say I have arrived already, neither will worry.",
-            "I will make up an excuse for being late and head home."
+            "Can't let either go—give some vague excuse and leave.",
+            "Don’t stall here; slip out neatly and head home."
         ]
     },
     "day4_nurse_dain_counteroffer": {
         "name": "Dain",
-        "text": "*Along the path out to the gate, Dain waves from the steps of the darkened gym. Sitting on the edge of a bench fiddling with her knee brace, she stills her hands as I walk up.* Do you have to head home right now? Instead of working out today, could you just sit beside me and talk for a bit? Holding people back isn’t my style at all. Right now, though, I really don’t want to let you go.",
+        "text": "*Just as I'm heading past the dark gym steps after finishing the event kits, Dain waves from a bench while fidgeting with her knee brace.* Heading straight home now? Come sit and talk with me a little—I really don't want to let you go right now.",
         "choices": [
             "Go straight home and check in",
             "Enter the gym and accept Dain's request",
-            "If I say I have arrived already, neither will worry.",
-            "I will make up an excuse for being late and head home."
+            "Can't let either go—give some vague excuse and leave.",
+            "Don’t stall here; slip out neatly and head home."
         ]
     },
     "day4_nurse_yuna_counteroffer": {
         "name": "Yuna",
-        "text": "*My phone briefly vibrates as I pass the dark corner of the annex. A photo of two empty chairs side by side beneath a desk lamp is followed by Yuna's message. The typing indicator lingers before one more short sentence arrives.* If you're still at school, could you come up for a moment? I'd like you to stay beside me a little longer tonight. I thought you might never know if I didn't say it.",
+        "text": "*Passing the dark annex corner after packing the kits, my phone buzzes once. A photo of an empty chair under a desk lamp is followed by Yuna's message.* Still on campus? Come up for a bit—I wanted you beside me a little longer tonight.",
         "choices": [
             "Go straight home and check in",
             "Go to the annex and stay with Yuna",
-            "If I say I have arrived already, neither will worry.",
-            "I will make up an excuse for being late and head home."
+            "Can't let either go—give some vague excuse and leave.",
+            "Don’t stall here; slip out neatly and head home."
         ]
     },
     "day4_adult_counteroffer_accept_seoyeon": {
         "name": "Seoyeon",
-        "text": "*The moment the rooftop iron door closes, Seoyeon grabs my wrist and pulls it against her chest. Below her loosened ribbon, the heat and ragged breath pour over the back of my hand. The phone in my pocket vibrates, but Seoyeon keeps her hands layered over mine, refusing to let go.* Don't go anywhere, just stay like this. Can you feel my heart beating?"
+        "text": "*The moment the rooftop iron door clicks shut, Seoyeon pulls my wrist onto her chest. Heat and unsteady breaths pour over my hand through the unbuttoned blouse collar. My pocket phone buzzes, yet she pins both hands over mine without letting go.* Don't go anywhere—stay right here like this. Can you feel my heart beating?"
     },
     "day4_adult_counteroffer_accept_dain": {
         "name": "Dain",
@@ -79,7 +79,7 @@
     },
     "day4_adult_counteroffer_accept_yuna": {
         "name": "Yuna",
-        "text": "*Yuna comes right up to my face and braces against the bookcase behind me, blocking my way out. She lets her jacket slide down past her shoulder, then pulls the neckline of her top low. Above her pale bare shoulder and dark tattoo, her red eyes hold my gaze. The phone on the desk vibrates again.* I don't want even a scrap of cloth between us today. I want to spend the whole day just like this with you."
+        "text": "*Yuna closes the gap right in front of me, bracing against the bookcase as she lets her jacket slip off her shoulders and pulls her collar low. Red eyes lock onto mine above pale skin and dark ink. The phone vibrates again on the desk.* I don't want a scrap of cloth between us tonight. Just stay with me like this."
     },
     "day4_adult_night_regret_target_branch": {},
     "day4_adult_night_regret_teacher": {
@@ -88,7 +88,7 @@
     },
     "day4_adult_night_regret_nurse": {
         "name": "School Nurse",
-        "text": "*I get home late and turn on my phone. My fingers, about to reply that nothing happened, stop heavy in front of the school nurse's message.* Your face stuck with me a little when we parted. Did you get home all right?"
+        "text": "*Getting home late, I turn on my phone. My fingers pause over the nurse's message:* Did you make it home safe after our morning prep finished?"
     },
     "day4_student_night_branch": {
         "text": "*Back home, I set my bag down by the bed. Just as I go to plug in the charger, a new notification lights the dark room.*",
@@ -124,7 +124,7 @@
     },
     "wall_seo_to_park": {
         "name": "{name}",
-        "text": "*The moment I hang up, I pull on a coat and cut through the night air toward the park where Seoyeon is waiting.*"
+        "text": "*Breathing in the cool night air, I hurry my steps toward the park where Seoyeon is waiting.*"
     },
     "wall_seo_3": {
         "name": "{name}",
@@ -200,7 +200,7 @@
     },
     "wall_seo_14_c": {
         "name": "Seoyeon",
-        "text": "In front of you, that mirror face keeps falling apart. Hold on—I tried to finish saying this without crying, my throat’s just closing up. *Seoyeon’s clasped knuckles turn white, and a heavy tear drops from beneath her glasses onto the back of my hand.*"
+        "text": "In front of you, that face in the mirror keeps falling apart. Hold on—I tried not to cry, my throat just choked up. *Her clasped hands tighten, and a single thick tear slips from beneath her glasses onto the back of a hand.*"
     },
     "wall_seo_14_d": {
         "name": "{name}",
@@ -260,8 +260,8 @@
         "name": "Seoyeon",
         "text": "*Seoyeon blinks her wet lashes and wipes the corner of her eye with the back of her hand, and the smeared makeup spreads wider over her pale skin.*",
         "choices": [
-            "Want a wet wipe?",
-            "Let's sit here for a minute.",
+            "Your mascara smudged a bit.",
+            "Let's sit down for a minute.",
             "I think I get it. You don't have to explain."
         ]
     },
@@ -283,7 +283,7 @@
     },
     "wall_seo_after_line": {
         "name": "Seoyeon",
-        "text": "Wait. If you've got a tissue or a wet wipe in your pocket, could you give me one?"
+        "text": "Oh, it really smudged everywhere... Do you happen to have a tissue or a wet wipe in your pocket?"
     },
     "wall_seo_after_line_2": {
         "name": "Seoyeon",
@@ -357,7 +357,7 @@
     },
     "wall_seo_yuna_tempt_accept": {
         "name": "Yuna",
-        "text": "*Yuna steps up to me and braces against the bookcase behind me. She lets her jacket slip off one shoulder and pulls the neckline of her top deep down. On the desk, the notification from Seoyeon—'I'm at the park bench'—remains on the screen.* I don't want even a scrap of cloth between us today. The whole day, just you."
+        "text": "*Yuna steps right up to me, braces against the bookcase, and lets her jacket fall while tugging her collar low, glancing briefly at the phone. Seoyeon's message glows on the lockscreen: 'I'm at the park bench.'* I don't want even a scrap of cloth between us. Tonight, just you."
     },
     "wall_dain_1": {
         "name": "{name}",
@@ -572,7 +572,7 @@
     },
     "wall_dain_cry_6": {
         "name": "Dain",
-        "text": "I'm deleting this lying alarm. Tomorrow morning I'll tell Mom about my hurting knee first. *Dain deletes the \"Smile today\" alarm and saves \"Tell Mom about my knee pain.\"*"
+        "text": "I’m deleting this lying alarm. Tomorrow morning I’ll start by telling Mom about my knee. *Dain deletes the \"Smile today\" alarm and saves \"Tell Mom about my knee.\"*"
     },
     "wall_dain_lastspike_1": {
         "name": "{name}",
@@ -612,7 +612,7 @@
     },
     "wall_dain_farewell_1": {
         "name": "Dain",
-        "text": "If I put my weight down slowly, I can stand up on my own. *While I put the volleyball in the storage bin, Dain braces on the bench armrest and slowly gets up.*"
+        "text": "If I take it slow, I can stand up fine on my own. *Rolling the volleyball toward the storage rack, Dain braces a hand on the bench armrest and rises slowly.*"
     },
     "wall_dain_farewell_2": {
         "name": "{name}",
@@ -665,7 +665,7 @@
     },
     "wall_dain_glimpse_4": {
         "name": "Yuna",
-        "text": "*Yuna steps up to me and braces against the bookcase behind me. She lets her jacket slide down and pulls the neckline of her top low. On the phone screen is Dain's notification: 'I've left the gym's back door open.'* I don't want even a scrap of cloth between us today. All day, just with you."
+        "text": "*Yuna steps right up, braces against the bookcase, drops her jacket, and pulls her collar down while turning away from the screen showing Dain's message: 'Back gym door is open.'* I don't want even a scrap of cloth between us. Tonight, just you."
     },
     "wall_dain_glimpse_4_b": {
         "name": "{name}",
@@ -779,7 +779,7 @@
     },
     "wall_yuna_14_e": {
         "name": "Yuna",
-        "text": "Then, on the first day you transferred, when you walked all the way into this quiet corner of the library."
+        "text": "Until that first time you walked all the way back into this quiet corner of the library."
     },
     "wall_yuna_14_f": {
         "name": "Yuna",
@@ -881,7 +881,7 @@
     },
     "wall_yuna_reject_3": {
         "name": "Yuna",
-        "text": "I'll head back first today. *Yuna picks the bookmark up off the floor, puts it in her bag, and stops cold in front of the door.*"
+        "text": "I'll head home first today. *Yuna folds the letter in her hands, slips it into her bag, and pauses with her hand on the doorknob.*"
     },
     "wall_yuna_rival_rank": {
         "name": "System",
@@ -993,7 +993,7 @@
     },
     "wall_seo_freetalk": {
         "name": "Seoyeon",
-        "text": "*Seoyeon lightly wipes the damp corners of her eyes with the back of her hand and looks up at me.* Don't go home yet. I want to hold your hand and talk a little longer.",
+        "text": "*Looking up quietly at me with reddened eyes, Seoyeon reaches out.* Don't go home yet. Hold my hand and talk with me a bit longer.",
         "context": "It is the night of Day 4, immediately after Seoyeon opened up about family conflict and the pressure to be perfect. Whether the protagonist accepted or postponed her confession, and the comfort just shared, are established facts; follow the saved flags. Do not declare her pain cured by one conversation or reassess the relationship.",
         "personality": "Seoyeon is composed and responsible, but she has lowered her guard for now. She speaks honestly without making the other person responsible for fixing her, continuing with her familiar directness and newly cautious tenderness."
     },
@@ -1005,7 +1005,7 @@
     },
     "wall_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Back at the reading-room desk, Yuna folds the old letter and slides it deep between the pages. This time she doesn't look away. She meets my eyes first.* There's still more I want to hear from you.",
+        "text": "*Back at the reading-room desk after tucking the letter away in her bag, Yuna meets my eyes directly this time.* There's still more I want to hear from you.",
         "context": "Night of Day 4 in the annex reading room. After reading Lee Junho’s letter, Yuna has voiced her fear that she may be holding onto the player as a replacement for the senior who left. Preserve their just-made choices and acceptance or postponement of the confession. Do not reverse this into Yuna being someone’s replacement. The letter is folded inside a book; both remain here.",
         "personality": "Yuna is quiet and reflective, but she no longer avoids the questions that matter. Instead of hiding behind metaphor, she speaks directly when needed and listens without twisting the answer to fit her fears."
     },
@@ -1123,21 +1123,21 @@
     },
     "day4_temptation_seoyeon_freetalk": {
         "name": "Seoyeon",
-        "text": "*She exhales a hot breath, refusing to let go of my hand placed against her bare chest.* Don't even think about running away. Can you feel my heart beating?",
+        "text": "*Keeping my hand pressed over her bare chest, she exhales sharply.* Don't pull away. You're the one who chose this.",
         "precedingHistory": "*The rooftop door closes. Seoyeon undoes her blouse buttons without a word, takes my wrist, and pulls it toward her. The moment my palm meets her bare chest through the open collar, her hand covers it.* Can you feel my heart beating?",
         "context": "On the fourth night, the protagonist accepted Seoyeon's invitation. The two are alone on the rooftop. Just now Seoyeon took the protagonist's wrist, placed that hand on her bare chest, covered it, and asked if they could feel her heart beating. That hand is still there. In this scene Seoyeon keeps her voice low over the hand on her chest and, if they do not pull away, guides that hand further. What they say and do now can deepen their affection or hurt it.",
         "personality": "Keep her calm voice over the hand on her chest. If they do not pull away, guide that hand further. She will not let go because she is afraid of losing him to the other promise. Do not shout demands or become someone else. Do not deny that contact."
     },
     "day4_temptation_yuna_freetalk": {
         "name": "Yuna",
-        "text": "*Without letting go of the collar she pulled deep down, she stares at my lips with flushed eyes.* Today, I don't want even a single piece of cloth between us.",
+        "text": "*Without letting go of her lowered collar, she looks up at me with red eyes.* Don't just stand there—you speak first.",
         "precedingHistory": "*Yuna steps in close and braces one hand on the shelf. She lets her jacket slip off one shoulder and pulls the inner collar down. Between the bare shoulder and the tattoo, her red eyes stay level with mine.* I don't want even a scrap of cloth between us. The whole day, just you.",
         "context": "On the fourth night, the protagonist accepted Yuna's invitation. The two are alone in the annex reading room. Just now Yuna braced a hand on the shelf, let her jacket slip, pulled her collar down, and said she does not want even a scrap of cloth between them for the whole day. That distance is unchanged. In this scene Yuna keeps her words short and closes distance and cloth first. What they say and do now can deepen their affection or hurt it.",
         "personality": "Keep the lines short. Step in first and push the clothes aside. She clings harder because she is afraid of being left alone again, of losing him to the other girl. Do not deny that contact."
     },
     "day4_temptation_dain_freetalk": {
         "name": "Dain",
-        "text": "*She keeps the sweat-soaked front of her jersey pulled down and breathes hot air right in my face.* Put your hand inside my jersey. Don't you want to feel the sweat between my breasts?",
+        "text": "*Gripping the damp hem of her jersey, she smirks right in front of me.* Why'd you freeze up? You walked through the door first.",
         "precedingHistory": "*The volleyball slips from her hand and rolls across the floor. Dain catches her breath, grabs the front of her jersey, and pulls it down. She leans in so close that her sweat-warm breath hits my face.* Put your hand inside my jersey. The sweat between my breasts. Want to feel it with your fingers?",
         "context": "On the fourth night, the protagonist accepted Dain's invitation. The two are alone in the gym. Just now Dain pulled the front of her jersey down, leaned in close, and told them to put a hand inside the jersey and feel the sweat between her breasts. That distance is unchanged. In this scene Dain puts their hand inside the jersey as a blunt joke, then goes further if they respond. What they say and do now can deepen their affection or hurt it.",
         "personality": "Put their hand inside the jersey like a blunt joke, then go further if they respond. She does not hide that she hates losing him to the other promise. Do not ignore a hurting knee. Do not deny that contact."

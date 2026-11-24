@@ -180,7 +180,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Homeroom Teacher",
-        "text": "You don't have to feel any pressure just because your homeroom teacher wrote it. It's the weekend, so you probably have plans of your own. *Her words trail off as she grips the envelope's handle tightly.*"
+        "text": "You don't need to feel pressured just because I wrote it. It's the weekend, so you probably have plans too. *Trailing off, she grips the edge of the manila envelope.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -274,11 +274,11 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "Should I leave my name off when I note in the margin? I'm afraid it'll put you in a difficult spot if the kids recognize my handwriting. *She stops the hand that was smoothing the cup sleeve and smiles.*"
+        "text": "This draft looks pretty substantial if the whole club is reading it next week. *She pauses fiddling with her cup sleeve and smiles.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Homeroom Teacher",
-        "text": "I’d appreciate that. Everyone reads the drafts blind anyway, so leave the name blank and write whatever comes to mind."
+        "text": "I reworked it specifically to get feedback from all the club members at once. Just write down honestly what you felt reading it."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -559,7 +559,7 @@
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "School Nurse",
-        "text": "Good. Prep stops here. Everyone check that your volunteer hours are written down, then head to the event area you're assigned to."
+        "text": "Alright, that wraps up prep. Everyone double-check your volunteer hours were logged, then move over to your prep stations."
     },
     "hidden_nurse_d4_meal_3_d": {
         "name": "{name}",
@@ -589,13 +589,13 @@
     },
     "hidden_nurse_d4_freetalk": {
         "name": "School Nurse",
-        "text": "*She zips the last first-aid kit, puts it in the box, and points a fingertip at the spare chair across from her.* Thanks for helping with the work. Now that we can catch a breath, I can listen to you for a minute.",
+        "text": "*She closes the checklist notes on the desk and points at the spare chair opposite her.* Thanks for helping out. Before you go, catch your breath and tell me how things are going.",
         "context": "It is the morning of Day 4 in the nurse's office, after preparations and first-aid kit sorting for the school event. They may have shared a snack or the student may have chosen to rest, so treat only saved events as fact. They remain a school nurse and student; trust has deepened, but professional boundaries remain.",
         "personality": "The school nurse is practical, attentive, and keeps her humor even when tired. She is honest only as far as appropriate rather than dramatizing her past, and she respects the student's health and choices."
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Back home, I straighten my shirt collar and my hair, and retie the laces of my going-out sneakers tight at the entryway.*"
+        "text": "*Back home, I straighten my collar and hair, finish getting ready, and step toward the front door.*"
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Homeroom Teacher",
@@ -698,7 +698,7 @@
     },
     "day4_haeun_concern_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain shifts half a step sideways to block my way.* Hey, you can’t just walk off like this. If it’s a misunderstanding, clear it up here, and if you said the wrong thing, own up to it."
+        "text": "*Dain steps forward and blocks my path.* Hey, you can't just walk away like that. If it's unfair, clear it up right here—or own up if you said something wrong."
     },
     "day4_haeun_concern_dain_group_talk": {
         "name": "Dain",
@@ -789,15 +789,15 @@
     },
     "day4_haeun_notice_up": {
         "name": "Haeun",
-        "text": "*Haeun flushes and smiles.* Thank you for listening to me all the way through without laughing. Thanks to you, Senior, I feel a little lighter."
+        "text": "*Haeun flushes and smiles.* Thank you for taking me seriously instead of brushing it off, senior. I feel much lighter thanks to you."
     },
     "day4_haeun_notice_down": {
         "name": "Haeun",
-        "text": "*Haeun lifts the corners of her mouth for a brief instant, lowers them, and steps half a pace back.* Oh, right. We were talking about Seoyeon sunbae to begin with. What I just said was only me talking to myself, so please forget it."
+        "text": "*Haeun barely lifts the corners of her mouth and steps half a pace back.* Oh... sorry for rambling. We were talking about Seoyeon sunbae, right? Please forget what I just said."
     },
     "day4_haeun_reputation_cg": {
         "name": "{name}",
-        "text": "*In the cool morning air in front of the gate, Haeun waits for my answer with her lip lightly bitten.*"
+        "text": "*In the cool morning air before the gate, Haeun clasps the bracelet on her wrist and waits for my reply.*"
     },
     "day4_haeun_personal": {
         "name": "Haeun",

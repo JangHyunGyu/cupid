@@ -555,8 +555,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "morning4_nightmare_check": {
-        "background": "assets/images/background/room_my_day.webp",
-        "character": null,
         "branches": [
             {
                 "condition": "nightmare_chose_seoyeon",
@@ -574,7 +572,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "minsu_cheer_1"
             }
         ],
-        "timeOfDay": "day"
+        "routeBeforeRender": true
     },
     "morning4_nightmare_seo": {
         "background": "assets/images/background/room_my_day.webp",
@@ -662,8 +660,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "timeOfDay": "day"
     },
     "minsu_cheer_4_branch": {
-        "background": "assets/images/background/room_my_day.webp",
-        "character": null,
         "branches": [
             {
                 "condition": "day3_has_multiple_dates",
@@ -673,7 +669,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "minsu_cheer_4_ins_single"
             }
         ],
-        "timeOfDay": "day"
+        "routeBeforeRender": true
     },
     "minsu_cheer_4_ins_single": {
         "background": "assets/images/background/room_my_day.webp",
@@ -731,7 +727,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "center": {
-                "src": "assets/images/characters/seyoun_pout.png",
+                "src": "assets/images/characters/seyoun_date_normal.webp",
                 "opacity": 0.35
             }
         },
@@ -747,7 +743,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my_day.webp",
         "characters": {
             "center": {
-                "src": "assets/images/characters/seyoun_pout.png",
+                "src": "assets/images/characters/seyoun_date_normal.webp",
                 "opacity": 0.35
             }
         },
@@ -837,7 +833,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         ]
     },
     "morning4_manuscript_check": {
-        "background": "assets/images/background/street.png",
         "branches": [
             {
                 "condition": "discovered_manuscript",
@@ -846,7 +841,8 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             {
                 "next": "hidden_homeroom_d4_missed"
             }
-        ]
+        ],
+        "routeBeforeRender": true
     },
     "hidden_homeroom_d4_missed": {
         "background": "assets/images/background/street.png",
@@ -1238,11 +1234,16 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "next": "hidden_nurse_d4_check"
     },
     "hidden_nurse_d4_check": {
-        "character": null,
         "branches": [
-            { "condition": "nurse_day3", "next": "hidden_nurse_d4_1" },
-            { "next": "day4_haeun_gate" }
-        ]
+            {
+                "condition": "nurse_day3",
+                "next": "hidden_nurse_d4_1"
+            },
+            {
+                "next": "day4_haeun_gate"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "hidden_nurse_d4_1": {
         "background": "assets/images/background/nurse_room.png",
@@ -1263,19 +1264,16 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_2_b": {
         "background": "assets/images/background/nurse_room.png",
-        "backgroundVariant": "cold",
         "character": "assets/images/characters/nurse_shy.png",
         "next": "hidden_nurse_d4_2_c"
     },
     "hidden_nurse_d4_2_c": {
         "background": "assets/images/background/nurse_room.png",
-        "backgroundVariant": "cold",
         "character": "assets/images/characters/nurse_dry_smile.png",
         "next": "hidden_nurse_d4_2_d"
     },
     "hidden_nurse_d4_2_d": {
         "background": "assets/images/background/nurse_room.png",
-        "backgroundVariant": "cold",
         "character": "assets/images/characters/nurse_shy.png",
         "next": "hidden_nurse_d4_2_e"
     },
@@ -1291,7 +1289,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_2_g": {
         "background": "assets/images/background/nurse_room.png",
-        "backgroundVariant": "cold",
         "character": "assets/images/characters/nurse_tired.png",
         "next": "hidden_nurse_d4_2_h"
     },
@@ -1314,22 +1311,26 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     "hidden_nurse_d4_4_b": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d4_4_c"
+        "next": "hidden_nurse_d4_4_c",
+        "backgroundVariant": "cold"
     },
     "hidden_nurse_d4_4_c": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_tired.png",
-        "next": "hidden_nurse_d4_4_d"
+        "next": "hidden_nurse_d4_4_d",
+        "backgroundVariant": "cold"
     },
     "hidden_nurse_d4_4_d": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_tired.png",
-        "next": "hidden_nurse_d4_4_e"
+        "next": "hidden_nurse_d4_4_e",
+        "backgroundVariant": "cold"
     },
     "hidden_nurse_d4_4_e": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "hidden_nurse_d4_4_f"
+        "next": "hidden_nurse_d4_4_f",
+        "backgroundVariant": "cold"
     },
     "hidden_nurse_d4_4_f": {
         "background": "assets/images/background/nurse_room.png",
@@ -1358,7 +1359,6 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_4_k": {
         "background": "assets/images/background/nurse_room.png",
-        "backgroundVariant": "cold",
         "character": "assets/images/characters/nurse_shy.png",
         "next": "hidden_nurse_d4_5"
     },
@@ -1369,12 +1369,32 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
     },
     "hidden_nurse_d4_name_choice": {
         "background": "assets/images/background/nurse_room.png",
-        "backgroundVariant": "cold",
         "character": "assets/images/characters/nurse_shy.png",
         "choices": [
-            { "next": "hidden_nurse_d4_name_choice_a", "stats": {"Nurse":{"affinity":4}} },
-            { "next": "hidden_nurse_d4_name_choice_b", "stats": {"Nurse":{"affinity":2}} },
-            { "next": "hidden_nurse_d4_name_trap", "stats": {"Nurse":{"affinity":-3}} }
+            {
+                "next": "hidden_nurse_d4_name_choice_a",
+                "stats": {
+                    "Nurse": {
+                        "affinity": 4
+                    }
+                }
+            },
+            {
+                "next": "hidden_nurse_d4_name_choice_b",
+                "stats": {
+                    "Nurse": {
+                        "affinity": 2
+                    }
+                }
+            },
+            {
+                "next": "hidden_nurse_d4_name_trap",
+                "stats": {
+                    "Nurse": {
+                        "affinity": -3
+                    }
+                }
+            }
         ]
     },
     "hidden_nurse_d4_name_choice_a": {

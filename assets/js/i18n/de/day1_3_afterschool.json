@@ -29,13 +29,13 @@
         "text": "Vorhin an der Treppe ist neben der Schulsprecherin jemand hochgegangen, der dir von hinten ziemlich ähnlich sah. Wart ihr zwei etwa zusammen auf dem Dach?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "Dain",
+        "name": "{name}",
         "text": "*Als Dain mich mitten auf dem Flur mit schmalen Augen mustert, greife ich den Riemen meiner Tasche fester.*",
         "choices": [
-            "Ich hab auf dem Dach mit der Sprecherin gegessen. (Ehrlich)",
-            "Ich bin einfach allein rumgelaufen. (Lüge)",
-            "Wenn ich gewusst hätte, dass du so nach mir suchst, hätte ich dich zum Essen eingeladen.",
-            "Wenn ich gewusst hätte, dass du eifersüchtig wirst, hätte ich dir vorher Bescheid gesagt."
+            "Ich habe mit der Schülersprecherin auf dem Dach gegessen.",
+            "Ich bin einfach allein herumgelaufen.",
+            "Hätte ich gewusst, dass du mich suchst, hätte ich dich dazugebeten.",
+            "Hätte ich gewusst, dass du eifersüchtig wirst, hätte ich es dir vorher gesagt."
         ]
     },
     "after1_jealousy_seo_honest": {
@@ -56,7 +56,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*Ich falte den Zettel auseinander, der in der Seitentasche meiner Tasche steckte, und erkenne Yunas saubere Schrift in Lavendeltinte.* Ich hab dich mittags vom Dach herunterkommen sehen. Du wirktest ziemlich vertraut mit der Schulsprecherin."
+        "text": "*Nachdem Dain zur Sporthalle davongelaufen ist, falte ich den Zettel aus der Seitentasche meiner Tasche auf. Yunas ordentliche lavendelfarbene Schrift fällt ins Auge.* Ich habe dich mittags vom Dach kommen sehen. Du wirktest ziemlich vertraut mit der Schülersprecherin."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -64,7 +64,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon fasst die Kante des Klemmbretts in ihren Armen ordentlicher nach. Unter ihrem ruhigen Blick hinter der Brille bleibe ich stehen und wähle meine Antwort.*"
+        "text": "*Seoyeon rückt das Klemmbrett in ihren Armen zurecht.* Ich muss nach Schulschluss noch etwas erledigen und gehe vor. *Sie verabschiedet sich kurz und geht weiter.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -81,7 +81,7 @@
     "after_dain_skip": {},
     "after_miss_dain_1": {
         "name": "{name}",
-        "text": "*Ich biege um die Flurecke. Hinter mir werden schnelle, leichte Schritte lauter, Turnsohlen, die sich vom Holzboden abstoßen.*"
+        "text": "*Kaum biege ich um die Flurecke, kommen hastige Turnschuhschritte schnell hinter mir näher.*"
     },
     "after_miss_dain_2": {
         "name": "Dain",
@@ -114,7 +114,7 @@
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Im Flur vor der Bibliothek des Nebengebäudes begegne ich Yuna, die mit einem dicken Buch im Arm herauskommt. Unter ihrem Uniformärmel blitzt ein kleines Tattoo hervor.*"
+        "text": "*Im Flur vor der Nebengebäude-Bibliothek laufe ich Yuna über den Weg, die mit einem dicken Buch herauskommt. Unter den hochgekrempelten Uniformärmeln zeichnet sich deutlich ihr dunkles Unterarm-Tattoo ab.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -151,7 +151,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Zu Beginn der Mittagspause habe ich dich doch aufs Dach eingeladen. Gleich am ersten Tag die Schulsprecherin abblitzen zu lassen, erfordert schon Mut."
+        "text": "Ich hatte dir doch gesagt, du sollst mittags aufs Dach kommen. Schon am ersten Tag eine Einladung der Schülersprecherin auszuschlagen – ganz schön mutig."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -163,7 +163,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seoyeon zieht die ans Klemmbrett gehefteten Unterlagen näher an sich, senkt leicht den Blick und drückt klickend auf ihren Kugelschreiber.*"
+        "text": "*Seoyeon drückt die Unterlagen auf dem Klemmbrett an ihre Brust, senkt den Blick und klickt einmal mit dem Kugelschreiber.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -261,7 +261,7 @@
     },
     "after_homeroom_honest_3_b": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin dreht das Klemmbrett um und reibt mit dem Daumen langsam über die glatte Plastikkante.*"
+        "text": "*Sie greift kurz zum Pappbecher, lächelt und spricht ruhig weiter.*"
     },
     "after_homeroom_honest_4": {
         "name": "Klassenlehrerin",
@@ -277,7 +277,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "Klassenlehrerin",
-        "text": "*Mit einem schelmischen Lächeln drückt sie mit dem Daumen die leicht umgeknickte Ecke des Klassenbuchs fest glatt.*"
+        "text": "*Mit einem neckischen Lächeln schiebt sie das Klassenbuch auf dem Schreibtisch beiseite.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -327,7 +327,7 @@
     },
     "after_homeroom_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Sie lässt die Tür zum Lehrerzimmer halb zu, klemmt sich das Klassenbuch unter den Arm und passt sich meinem Schritt an.*",
+        "text": "*Sie lässt die Lehrerzimmertür halb offen, klemmt das Klassenbuch unter den Arm und stellt sich neben mich.* Hast du noch etwas auf dem Herzen?",
         "context": "[Medium: persönlich] Nach Schulschluss vor dem Lehrerzimmer am ersten Tag des neuen Schülers. Er hat um Rat zum Einleben gebeten, und seine Klassenlehrerin hat zugehört. Das Gespräch setzt bei seinen tatsächlichen Fragen und dem Anlass seines Besuchs an.",
         "personality": "Die Klassenlehrerin ist eine aufmerksame Frau Ende zwanzig mit langem, welligem braunem Haar und einer beigen Strickjacke. Beratung und Begleitung hält sie innerhalb der schulischen Verfahren. Früher wollte sie Romanautorin werden, und das Schreiben ist ihr weiterhin wichtig."
     },
@@ -341,8 +341,8 @@
         "choices": [
             "Ins Krankenzimmer gehen",
             "Einfach nach Hause gehen",
-            "Ich schlage einfach ein bisschen Zeit auf einer Liege tot, bevor ich heimgehe.",
-            "Mir fehlt zwar nicht wirklich was, aber aus Neugier schaue ich mal rein."
+            "Sagen, der Schwindel sei nur ein Vorwand für eine Ruhepause im Bett",
+            "Sagen, es sei nichts und ich wollte mich nur umschauen"
         ]
     },
     "after_hidden_nurse_intro_b": {
@@ -383,7 +383,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Schulkrankenschwester",
-        "text": "Erstens ein gut aussehendes Gesicht, das ich noch nie gesehen habe, und an der Uniformjacke keine einzige Knickfalte. Meine Schlussfolgerung stimmt doch?"
+        "text": "Erstens bist du ein neues Gesicht, und die frischen Falten sind noch genau so in deinen Uniformärmeln. Gut geraten, oder?"
     },
     "after_nurse_enter_4_d": {
         "name": "Schulkrankenschwester",
@@ -472,7 +472,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "Schulkrankenschwester",
-        "text": "So, zehn Minuten sind um. Wie geht es deinem Magen? *In der halb offenen Schublade blitzt kurz ein verblasstes hellgrünes Notizbuch hervor.*"
+        "text": "*Als die Wanduhr ihre Runde gedreht hat, zieht sie den Vorhang auf.* So, zehn Minuten sind um. Wie geht es dem Magen? *In der halb offenen Schublade fällt mir ein verblasstes hellgrünes Notizbuch auf.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "after_nurse_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie klemmt den Behandlungsbogen aufs Klemmbrett und wirft einen Blick auf die Wanduhr.* Hat sich der Schwindel inzwischen gelegt?",
+        "text": "*Sie klemmt das Protokoll auf ihr Brett und schaut auf die Wanduhr.* Ab morgen frühstückst du ordentlich. Der erste Tag war sicher trubelig – wie ist denn deine Klasse so?",
         "context": "Tag 1 nach der Schule. Dem neuen Schüler war schwindelig und er ging ins Krankenzimmer. Die Schulkrankenschwester prüfte die Symptome und ließ ihn ausruhen; im weiteren Gespräch beobachtet sie seine Erholung und Eingewöhnung.",
         "personality": "Die Schulkrankenschwester ist aufmerksam und gelassen. Nach einem Burnout als Krankenhausschwester wechselte sie an die Schule und kann leichten Humor einsetzen, wenn er einem Schüler beim Entspannen hilft. Bei Behandlung und Beratung wahrt sie professionelle Grenzen."
     },

@@ -5,7 +5,7 @@
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*In the room, lights still off, I flip over the phone I left face down on the desk and turn the screen on.*"
+        "text": "*In the room lit only by the desk lamp, I flip over my phone lying face-down and wake the screen.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*The moment I close my eyes, the sunset light in the student council room comes first, Seoyeon's hot forehead against my forearm, and the ribbon at her collar, slightly undone.*"
+        "text": "*Shutting my eyes, the sunset glow in the student council room, Seoyeon’s warm forehead against my forearm, and her slightly rumpled shirt collar come back first.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "night3_nightmare_4_b": {
         "name": "{name}",
-        "text": "*At the very bottom, Dain's chat holds only a single line hanging alone behind the casual laugh she tacked on.*"
+        "text": "*At the very bottom, in Dain's chatroom, only one lonely line sits after the light laugh 'haha' she tacked on.*"
     },
     "night3_nightmare_5": {
         "name": "{name}",
@@ -188,7 +188,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*In Dain's text box I type \"Sorry I left you to think it through alone. I'll tell you first thing tomorrow morning.\" The tip of my thumb freezes over the send icon.*"
+        "text": "*In Dain’s reply box I type: \"Sorry for making you sit with that alone. I’ll talk to you first thing tomorrow morning.\" My thumb stops right over Send.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",

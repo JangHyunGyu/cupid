@@ -58,7 +58,7 @@
     },
     "lunch_seo_5": {
         "name": "Seoyeon",
-        "text": "D’habitude, je n’ouvre cet endroit à personne. *Elle époussette légèrement le dossier de l’une des chaises pliantes et la rapproche pour moi.* C’est exceptionnel, juste pour aujourd’hui."
+        "text": "D'habitude, je n'ouvre pas cet endroit à n'importe qui. *Elle époussette d'un geste le banc en bois et m'invite à m'asseoir.* C'est juste une exception pour aujourd'hui."
     },
     "lunch_seo_6": {
         "name": "{name}",
@@ -70,7 +70,7 @@
     },
     "lunch_seo_8": {
         "name": "Seoyeon",
-        "text": "*Du sac posé sur ses genoux, elle sort deux boîtes à bento pastel — largement de quoi nourrir deux personnes — et les aligne côte à côte.*"
+        "text": "*De son sac posé sur ses genoux, elle sort deux boîtes repas pastel bien garnies et les pose côte à côte sur la petite table.*"
     },
     "lunch_seo_9": {
         "name": "{name}",
@@ -101,7 +101,7 @@
         "text": "*Au lieu de répondre, elle me presse des baguettes en bois dans la main et détourne le regard.* Arrête de fouiner et mange. Ça ne sera pas bon une fois que ce sera froid."
     },
     "lunch_seo_17": {
-        "name": "Seoyeon",
+        "name": "{name}",
         "text": "Alors j’y goûte volontiers. *Par-dessus la rambarde, la cour baignée de soleil et le toit de la bibliothèque de l’annexe s’étendent d’un seul coup d’œil.*"
     },
     "lunch_seo_19": {
@@ -199,7 +199,7 @@
     },
     "lunch_dain_1_aff_default": {
         "name": "Dain",
-        "text": "L'odeur du pain tout chaud, ça envoie, non ? Y a du monde, mais ici c'est le top. *Elle m'entraîne par la manche et entre d'un pas décidé dans la supérette.*"
+        "text": "Allez, entrons vite avant que tout le pain de la cafétéria ne soit vendu ! Il y a du monde, mais cet endroit reste le meilleur. *Elle me tire par la manche et entre d’un pas vif.*"
     },
     "lunch_dain_2": {
         "name": "Dain",
@@ -259,7 +259,7 @@
     },
     "lunch_dain_16": {
         "name": "Dain",
-        "text": "*Elle ouvre son sachet de pain d’un coup sec et se tourne vers moi.* Dis, t’étais même pas essoufflé en dévalant les escaliers tout à l’heure — tu fais du sport d’habitude ?"
+        "text": "*Elle déchire d’un coup le sachet de pain et se tourne vers moi.* Hé, tu n’étais même pas essoufflé tout à l’heure en descendant les escaliers. Tu entretiens ta forme ?"
     },
     "lunch_dain_17": {
         "name": "{name}",
@@ -287,7 +287,7 @@
     },
     "lunch_dain_23": {
         "name": "Dain",
-        "text": "Hum, grillée direct ! Mais tout à l’heure en classe, quand j’ai parlé de réceptions, t’avais l’air de t’y connaître. T’as déjà joué au volley ?"
+        "text": "Ahem, cramée direct ! D’ailleurs ce matin quand j’ai parlé de réception, t’avais l’œil qui connaissait son affaire — tu as déjà fait du volley ?"
     },
     "lunch_dain_choice": {
         "name": "Dain",
@@ -300,7 +300,7 @@
     },
     "lunch_dain_c1_1": {
         "name": "Dain",
-        "text": "Oh, t’as confiance en toi ? Alors passe au gymnase demain après les cours. Je m’occuperai de toi dès l’échauffement, marché conclu ?"
+        "text": "Oh, tu as déjà joué un peu ? Alors passe au gymnase demain après les cours. Je m’occupe de toi dès l’échauffement, marché conclu ?"
     },
     "lunch_dain_c1_2": {
         "name": "Dain",
@@ -338,11 +338,11 @@
     },
     "lunch_yuna_1": {
         "name": "{name}",
-        "text": "*Je passe l'escalier où le bruit du couloir s'éloigne, je suis Yuna et j'entre dans la bibliothèque, fraîche et silencieuse.*"
+        "text": "*Je passe l’escalier où le bruit du couloir retombe et suis Yuna jusqu’à la porte de la bibliothèque de l’annexe.*"
     },
     "lunch_yuna_1_aff_default": {
         "name": "Yuna",
-        "text": "*Quand j’ouvre la porte de la bibliothèque de l’annexe, une odeur calme de papier flotte dans l’air. Yuna est déjà assise dans un coin ensoleillé de la salle de lecture, un livre ouvert devant elle.*"
+        "text": "*En ouvrant la porte de l’annexe, l’odeur tranquille du papier m’enveloppe. Yuna s’assoit d’abord à une table près de la fenêtre ensoleillée et ouvre son livre.*"
     },
     "lunch_yuna_2": {
         "name": "Yuna",
@@ -402,7 +402,7 @@
     },
     "lunch_yuna_18": {
         "name": "Yuna",
-        "text": "Alors, on lit chacun de son côté. *Un bureau entre nous, on ouvre en même temps la première page.*"
+        "text": "Alors lisons chacun de notre côté. *Assis face à face de part et d’autre du bureau, nous ouvrons la première page.*"
     },
     "lunch_yuna_20": {
         "name": "{name}",
@@ -433,9 +433,9 @@
         "text": "*Je referme lentement le livre que je lisais et je croise le regard de Yuna.*",
         "choices": [
             "J’aimerais lire la suite.",
-            "On dirait que tu aimes rester tranquille avec un livre.",
-            "Je saurai être plus intéressant que ce livre.",
-            "On pourrait être bien ensemble sans même avoir à parler."
+            "Tu aimes bien rester tranquille à lire, on dirait.",
+            "Je peux être plus distrayant que ce livre.",
+            "Tu ne t’ennuies pas à te cacher ici tous les jours ?"
         ]
     },
     "lunch_yuna_c1_1": {

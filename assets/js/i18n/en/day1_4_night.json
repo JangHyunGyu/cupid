@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*In the school app, a private note from my homeroom teacher is attached beneath the class notice: 'Bring your math workbook for 1st period tomorrow. — And as for today's transfer student, so long as you're settling in all right, that's plenty.'*"
+        "text": "*In the school app notifications, a private note from my homeroom teacher sits beside the class notice: 'Bring your math workbook for 1st period tomorrow. And to today's transfer student, don't push yourself—just take your time settling in.'*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Remembering the school nurse’s gentle reminder from this afternoon, I get up and fill my bedside bottle with water.*"
+        "text": "*Remembering what the school nurse said this afternoon, I get up, pour a glass of water, and set it by my bed.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "Looking for one person, first come first served, to come out to the field early tomorrow morning and warm up."
+        "text": "Don't oversleep tomorrow morning—get to the classroom early, first come first served for the first spot"
     },
     "night_dain_late_3": {
         "name": "Dain",
@@ -133,11 +133,11 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Thinking back on the faces behind the new names saved in my contacts today, I set my locked phone down by my pillow.*"
+        "text": "*Thinking back through the faces from my first day at the new school, I set my locked phone down beside the bed.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*I look up at the darkened ceiling. From the new uniform hanging on the rack, a faint trace of today’s spring breeze drifts across the room.*"
+        "text": "*I stare up at the dark ceiling. The new uniform hanging on the rack still feels a little unfamiliar.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",

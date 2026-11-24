@@ -152,7 +152,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*Die erste Woche nach dem Schulwechsel ist schon am Ende angekommen. Bevor ich die Klinke der Klassenzimmertür fasse, gehe ich still die Atemzüge und Stimmen durch, die in den letzten vier Tagen an meinem Ohr vorbeigestrichen sind. Die Fingerspitzen werden angenehm warm.*"
+        "text": "*Meine erste Woche nach dem Wechsel neigt sich schon dem Ende zu. Vor der Klassentür fallen mir die Gespräche der letzten vier Tage ein, und ich öffne beschwingt die Tür.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -268,15 +268,15 @@
         "name": "{name}",
         "text": "*Ich nehme den Manuskriptumschlag, den die Klassenlehrerin mir gibt, in beide Arme. Die schwere Wärme des Papierstapels drückt gegen die Innenseite der Arme.*",
         "choices": [
-            "Nach sieben Jahren ist es bestimmt fast fertig. Ich muss wohl nichts mehr markieren.",
-            "Ich lese erst einmal. Darf ich Stellen markieren?",
-            "Die schwierigen Stellen sind sicher beabsichtigt, also lasse ich sie so.",
-            "Weil es Ihr Text ist, schreibe ich nur die netten Dinge auf."
+            "Nach sieben Jahren ist es sicher fast fertig, kaum etwas anzumerken",
+            "Ich lese es zuerst. Darf ich Anmerkungen machen?",
+            "Die schwierigen Stellen sind sicher Absicht, also lasse ich sie so.",
+            "Da es Ihr Text ist, schreibe ich nur Gutes auf"
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Klassenlehrerin",
-        "text": "*Sie schenkt mir ein bedauerndes Lächeln und glättet die Ecke des Umschlags.* Du musst nichts Schönes sagen, bevor du die erste Seite überhaupt umgeblättert hast. Dass ich ihn lange behalten habe, bedeutet nicht, dass ich ihn gut geschrieben habe."
+        "text": "*Sie lächelt schief und streicht die Umschlagkante glatt.* Du musst nicht schon vor der ersten Seite höflich drüberhinweggehen. Lange daran zu sitzen heißt noch lange nicht, dass alles gut geschrieben ist."
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Klassenlehrerin",
@@ -384,7 +384,7 @@
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*Mir fällt der Stapel der Textbesprechungsexemplare ein, der abends hoch auf dem hinteren Tisch im Café gelegen hat. An der Ecke des braunen Umschlags in meiner Hand steht in ordentlicher Schrift die Zahl 04.*"
+        "text": "*Der Stapel Manuskripte von gestern Morgen auf dem Tisch im hinteren Teil des Cafés fällt mir wieder ein. Auf dem braunen Umschlag steht sauber „04“.*"
     },
     "hidden_homeroom_d5_6_c": {},
     "hidden_homeroom_d5_6_d": {
@@ -457,11 +457,11 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin geht zuerst auf den Flur und prüft die Schüler, die die Feststände vorbereiten, indem sie ihre Namen einzeln aufruft.*"
+        "text": "*Während sie die Ausdrucke auf dem Pult einsammelt, geht die Lehrerin noch einmal die Liste der Schulfest-Stände durch.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Klassenlehrerin",
-        "text": "*Sie deutet mit einem Blick auf den Umschlag des Textbesprechungsexemplars Nummer 04, den ich im Arm halte.* Das ist die letzte Prüfung. Auch wenn du leere Sätze siehst, lass sie nicht durchgehen, sondern zeig darauf."
+        "text": "*Sie deutet auf den Umschlag Nr. 04 in meinem Arm und wendet sich zur Flurtür.* Letzte Durchsicht. Wenn dir ein leerer Satz auffällt, schon mich nicht und sag es direkt."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -636,7 +636,7 @@
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
-        "text": "*Kurz vor der Eröffnung des Schulfests ist die Luft im Klassenzimmer eisig. Die drei sitzen weit auseinander in drei Ecken des Raums, und auf dem Rollenplan an der Tafel stehen nur trockene, sachliche Aufgaben.*"
+        "text": "*Vor Beginn des Schulfests hängt kühle Stille im Raum. Die drei sitzen weit auseinander, und an der Tafel stehen bloß trockene Namenslisten.*"
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",

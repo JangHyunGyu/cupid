@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Je tiens la note de Yuna de ce matin. J'arrête là où le couloir se divise vers les escaliers du toit, la petite épicerie du sous-sol et l'annexe de la bibliothèque.*"
+        "text": "*Je garde le mot de Yuna en main et m’arrête dans le couloir où le chemin bifurque entre l’escalier du toit, la cafétéria et l’annexe.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -44,7 +44,7 @@
     },
     "lunch2_seo_2b_yuna": {
         "name": "Seoyeon",
-        "text": "Tu as même reçu un mot à part de Yuna, ce matin, et tes pas t'ont quand même mené au toit."
+        "text": "Ce matin tu avais l’air d’avoir la tête du côté de la bibliothèque, et pourtant tes pas t’ont mené sur le toit."
     },
     "lunch2_seo_3b_yuna": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*La vieille annexe de la bibliothèque, déserte. Tout au bout du couloir, sous une ombre fraîche, Yuna est appuyée à la fenêtre et lit, seule.*"
+        "text": "*La vieille annexe déserte. Accoudée à la fenêtre du couloir baignée d’une lumière oblique de l’après-midi, Yuna lit seule.*"
     },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {},
@@ -508,11 +508,11 @@
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
-        "text": "Entre ici."
+        "text": "Le parquet fait un peu résonner les pas, non ? Entre par ici."
     },
     "lunch2_yuna_11": {
         "name": "Yuna",
-        "text": "Le plancher est en bois, les pas résonnent un peu, non ? On y est. *Elle entre dans une petite pièce, au fond, où des rideaux de velours délavés sont tirés.*"
+        "text": "On y est. *J’entre dans une vieille salle vide en béton cachée tout au fond du recoin.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -524,7 +524,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "Si tu restes là, je ne peux pas me concentrer pour lire. Assieds-toi. *Elle s'affale sur le petit canapé deux places, pose son sac et laisse la place juste à côté d'elle vide.*"
+        "text": "Si tu restes planté là, ça me déconcentre pour lire. Assieds-toi. *Elle s’adosse au grand canapé usé et laisse la place libre à côté d’elle.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -540,7 +540,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*La voix de Yuna s'arrête net après ce « il y avait ». Juste à côté de la place qu'elle a libérée sur le canapé étroit, la ligne fraîche de son épaule est toute proche.*",
+        "text": "*La voix de Yuna s’interrompt sur « il y avait ». Juste à côté de la place libre sur le canapé, son épaule est toute proche.*",
         "choices": [
             "Cette personne, où est-elle maintenant ?",
             "Ne pas demander et s'asseoir à côté d'elle",
@@ -606,7 +606,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Dans la pâle lumière qui filtre à travers les rideaux, le bruit de nos pages qui tournent alterne, comme une respiration alanguie.*"
+        "text": "*Sous la pâle lumière entrant par la fenêtre, le bruissement de nos pages qu’on tourne alterne doucement.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",

@@ -89,7 +89,7 @@
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "School Nurse",
-        "text": "*With a soft smile, she takes her hand off the drawer handle.* Right. A secret just between the two of us is enough, isn't it?"
+        "text": "*She takes her hand off the drawer and calmly draws a line.* It isn't something for a student to carry. You don't have to take it on."
     },
     "hidden_nurse_d2_8": {
         "name": "School Nurse",
@@ -491,7 +491,7 @@
     },
     "after2_yuna_1_b": {
         "name": "{name}",
-        "text": "*Not a soul stirs in the annex hallway slanted with sunset light. Only the door to the small room in the far corner stands cracked open by two finger-widths.*"
+        "text": "*The annex hallway bathed in sunset light is quiet. The door to the small room down the inner corner stands slightly ajar.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Not a single person since that senior left."
+        "text": "Not a single person since the senior who used to share this spot with me left."
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
@@ -650,9 +650,9 @@
         "groupChoiceState": "there is time to sort only one of two stacks, so the protagonist must say whose side he will stay on",
         "groupAftermathCause": "whose side the protagonist chose in the library annex, and why",
         "companionTexts": {
-            "Seoyeon": "*Seoyeon stands a schedule beside the paper stacks.* The student-council timetable also has to line up today. My side first.",
+            "Seoyeon": "*Seoyeon sets her schedule beside the stack of folders.* The council timeline has to match by today too. Help me on my side first.",
             "Dain": "*Dain taps the desk corner.* Gym cleanup is behind too. Help me first.",
-            "Teacher": "*The homeroom teacher slides a folder half a step.* There is still an office check left. Can we take this side first?",
+            "Teacher": "*Homeroom Teacher slides a file halfway across.* There are staff-room confirmations left too. Could you take a look here first?",
             "Nurse": "*The school nurse sets down a small box.* The nurse’s-office supplies also need matching today. Will you help me first?"
         }
     },
@@ -667,7 +667,7 @@
         "companionTexts": {
             "Seoyeon": "*Seoyeon lifts the warehouse papers.* They told me to move the event materials first. Will you check my side first?",
             "Yuna": "*Yuna unfolds a short memo.* The warehouse lead asked for the papers first. Will you confirm that first?",
-            "Teacher": "*The homeroom teacher lifts a printout.* What I got from the staff room put the papers first. Can we check this side first?",
+            "Teacher": "*Homeroom Teacher raises the printed sheets slightly.* The staff room prioritized materials. Could you check this side first?",
             "Nurse": "*The school nurse holds out a small list.* They asked for the supply list first. Will you confirm that first?"
         }
     },

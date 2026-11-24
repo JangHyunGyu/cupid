@@ -29,13 +29,13 @@
         "text": "Agora há pouco, perto da escada, vi alguém parecido com você de costas subindo ao lado da presidente do grêmio. Vocês dois foram pro terraço?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "Dain",
+        "name": "{name}",
         "text": "*Diante da Dain semicerrando os olhos para mim no meio do corredor, ajeito a mão na alça da mochila.*",
         "choices": [
-            "Comi no terraço com a presidente do grêmio. (Sincero)",
-            "Só fiquei andando por aí. (Mentira)",
-            "Se eu soubesse que você ia me procurar assim, teria chamado você para comer com a gente.",
-            "Se eu soubesse que ficaria com ciúme, teria contado antes."
+            "Comi no terraço com a presidente.",
+            "Só fiquei andando por aí sozinho.",
+            "Se soubesse que ia me procurar tanto, teria chamado você pra comer junto.",
+            "Se soubesse que ia ficar com ciúme, teria avisado antes."
         ]
     },
     "after1_jealousy_seo_honest": {
@@ -56,7 +56,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*Desdobro o bilhete encaixado no bolso lateral da mochila e vejo a letra caprichada da Yuna em tinta lavanda.* Vi você descendo do terraço na hora do almoço. Parecia bem próximo da presidente do grêmio."
+        "text": "*Depois que Dain sai correndo para o ginásio, abro o bilhete enfiado no bolso lateral da minha mochila. A letra caprichada de Yuna em tinta lavanda aparece.* Vi você descendo do terraço no almoço. Parecia bem próximo da presidente."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -64,7 +64,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon ajeita a borda da prancheta nos braços. Diante do olhar calmo por trás dos óculos, paro e escolho o que responder.*"
+        "text": "*Seoyeon ajeita a prancheta nos braços.* Ainda tenho coisas para resolver depois da aula, vou indo na frente. *Ela se despede rápido e segue adiante.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -81,7 +81,7 @@
     "after_dain_skip": {},
     "after_miss_dain_1": {
         "name": "{name}",
-        "text": "*Quando dobro a esquina do corredor, o solado de um tênis empurra o assoalho atrás de mim, e os passos leves chegam rápido.*"
+        "text": "*Ao dobrar a esquina do corredor, passos apressados de tênis chegam rápido atrás de mim.*"
     },
     "after_miss_dain_2": {
         "name": "Dain",
@@ -114,7 +114,7 @@
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*No corredor em frente à biblioteca do anexo, cruzo com a Yuna saindo com um livro grosso nos braços. Pela manga do uniforme aparece de leve uma pequena tatuagem.*"
+        "text": "*No corredor em frente à biblioteca do anexo, esbarro com Yuna saindo com um livro grosso nos braços. Por baixo das mangas dobradas do uniforme, a tatuagem escura no antebraço fica bem visível.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -151,7 +151,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "No começo do almoço eu te chamei para subir no terraço, lembra? Dispensar o convite da presidente do grêmio logo no primeiro dia exige coragem."
+        "text": "Eu disse para você subir ao terraço no almoço. Furar com o convite da presidente logo no primeiro dia mostra bastante coragem."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -163,7 +163,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seoyeon ajeita junto ao peito os papéis presos na prancheta, baixa um pouco o olhar e aperta o clique da caneta.*"
+        "text": "*Seoyeon segura os papéis da prancheta junto ao peito, baixa os olhos e aperta a esferográfica com um estalo.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -261,7 +261,7 @@
     },
     "after_homeroom_honest_3_b": {
         "name": "Professora",
-        "text": "*A professora vira a prancheta e esfrega devagar com o polegar a borda lisa de plástico.*"
+        "text": "*Ela pousa a mão junto ao copo de papel, sorri de leve e retoma a conversa com calma.*"
     },
     "after_homeroom_honest_4": {
         "name": "Professora",
@@ -277,7 +277,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "Professora",
-        "text": "*Com um sorriso brincalhão, ela aperta com o polegar o cantinho dobrado do livro de chamada até alisar.*"
+        "text": "*Com um sorriso brincalhão, ela afasta o diário de classe para o canto da mesa.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -327,7 +327,7 @@
     },
     "after_homeroom_freetalk": {
         "name": "Professora",
-        "text": "*Com a porta da sala dos professores meio fechada, ela prende o livro de chamada debaixo do braço e acompanha o meu passo.*",
+        "text": "*Deixando a porta da sala dos professores entreaberta, ela coloca o diário sob o braço e para ao meu lado.* Ainda tem alguma coisa para perguntar?",
         "context": "[Meio: presencial] Em frente à sala dos professores, depois das aulas do primeiro dia. O aluno pediu ajuda para se adaptar e sua professora o ouviu. Continue a conversa com base no que ele disse e no motivo da visita.",
         "personality": "A professora está perto dos trinta anos e, embora pareça indiferente, não deixa de perceber o estado dos alunos. Tem cabelos castanhos, longos e ondulados, usa um cardigã bege e conduz orientação e acompanhamento pelos procedimentos oficiais da escola. No passado sonhava em ser romancista e ainda se interessa por escrita criativa."
     },
@@ -340,9 +340,9 @@
         "text": "*O cansaço de passar o dia desde cedo entre olhares estranhos e barulho bate de uma vez, travando meus passos diante da porta da enfermaria.*",
         "choices": [
             "Entrar na enfermaria",
-            "Ir direto pra casa",
-            "Vou só enrolar um pouco numa cama da enfermaria antes de ir embora.",
-            "Nem estou passando mal de verdade, mas vou entrar só por curiosidade."
+            "Ir embora para casa",
+            "Dizer que a tontura é desculpa para descansar na maca",
+            "Dizer que não tem nada e só veio dar uma olhada"
         ]
     },
     "after_hidden_nurse_intro_b": {
@@ -383,7 +383,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Enfermeira",
-        "text": "Pra começar, é um rosto bonito que eu nunca vi, e o blazer do uniforme não tem marca nenhuma de dobra. Acertei, né?"
+        "text": "Primeiro que você é um rosto novo, e os vincos de roupa nova ainda estão inteirinhos nas mangas do uniforme. Acertei, não acertei?"
     },
     "after_nurse_enter_4_d": {
         "name": "Enfermeira",
@@ -472,7 +472,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "Enfermeira",
-        "text": "Pronto, já se passaram dez minutos. Como está o estômago? *Dentro da gaveta entreaberta, dá para ver de relance um caderno verde-claro desbotado.*"
+        "text": "*Depois que o relógio gira mais um pouco, ela abre a cortina.* Pronto, deu dez minutos. Como está o estômago? *Dentro da gaveta entreaberta, aparece um caderninho verde-claro desbotado.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "after_nurse_freetalk": {
         "name": "Enfermeira",
-        "text": "*Ela prende a ficha de atendimento na prancheta e confere o relógio de parede uma vez.* A tontura já deu uma trégua?",
+        "text": "*Ela prende a ficha na prancheta e olha o relógio da parede.* A partir de amanhã vê se toma café da manhã direitinho. Primeiro dia deve ter sido corrido — como está sua turma?",
         "context": "Dia 1 depois da aula. O aluno transferido sentiu tontura e foi à enfermaria. A enfermeira verificou os sintomas e o deixou descansar; a conversa continua enquanto ela observa a recuperação e a adaptação à escola.",
         "personality": "A enfermeira escolar fala com calma e é muito observadora. Veio para a escola depois de sofrer esgotamento profissional enquanto trabalhava como enfermeira em um hospital universitário e, quando necessário, usa um humor leve para aliviar a tensão dos alunos. Mantém limites profissionais no atendimento e no aconselhamento."
     },

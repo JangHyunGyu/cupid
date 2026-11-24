@@ -29,13 +29,13 @@
         "text": "Earlier by the stairs, I saw someone who looked like you from behind heading up beside the student council president. Did the two of you go up to the rooftop?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "Dain",
+        "name": "{name}",
         "text": "*With Dain narrowing her eyes at me in the middle of the hallway, I adjust my grip on my bag strap.*",
         "choices": [
-            "I ate on the rooftop with the president. (Honest)",
-            "I was just wandering around alone. (Lie)",
-            "If I’d known you’d look for me like that, I would’ve asked you to eat with us.",
-            "If I’d known you’d get jealous, I would’ve told you first."
+            "I ate on the rooftop with the president.",
+            "I just walked around on my own.",
+            "If I'd known you were looking for me, I would've asked you to join us.",
+            "If I'd known you'd get jealous, I would've told you beforehand."
         ]
     },
     "after1_jealousy_seo_honest": {
@@ -56,7 +56,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*I unfold the note tucked into my bag's side pocket. Yuna's neat lavender-ink handwriting catches my eye.* I saw you coming down from the rooftop at lunch. You looked pretty close with the student council president."
+        "text": "*After Dain runs off toward the gym, I unfold the note tucked into my bag's side pocket. Yuna's neat lavender ink catches my eye.* I saw you coming down from the rooftop at lunch. You looked pretty close with the student council president."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -64,7 +64,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon squares her grip on the edge of the clipboard in her arms. Meeting her steady gaze behind her glasses, I stop and choose my reply.*"
+        "text": "*Seoyeon squares the clipboard in her arms.* I still have things to wrap up after class, so I’ll head off first. *She leaves a brief goodbye and walks past.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -81,7 +81,7 @@
     "after_dain_skip": {},
     "after_miss_dain_1": {
         "name": "{name}",
-        "text": "*As I turn the hallway corner, light footsteps rush up behind me, sneaker soles kicking off the wood floor.*"
+        "text": "*Turning the hallway corner, I hear hurried footsteps scuffing up close behind me.*"
     },
     "after_miss_dain_2": {
         "name": "Dain",
@@ -114,7 +114,7 @@
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*In the corridor outside the annex library, I run into Yuna walking out with a thick book in her arms. A small tattoo peeks from beneath her uniform cuff.*"
+        "text": "*In the hallway outside the annex library, I run into Yuna walking out with a thick book. Beneath her rolled-up uniform sleeves, a bold forearm tattoo stands out clearly.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -151,7 +151,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "At the start of lunch I invited you up to the rooftop, remember? Turning down the student council president on your very first day takes nerve."
+        "text": "I told you to come up to the rooftop at lunch. Skipping an invitation from the student council president on your very first day takes some nerve."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -163,7 +163,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seoyeon hugs the papers clipped to her board closer to her chest, lowers her gaze at an angle, and clicks her ballpoint pen.*"
+        "text": "*Seoyeon holds the papers on her clipboard against her chest, lowers her eyes, and clicks her ballpoint pen.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -261,7 +261,7 @@
     },
     "after_homeroom_honest_3_b": {
         "name": "Homeroom Teacher",
-        "text": "*The homeroom teacher flips the clipboard over and slowly rubs the smooth plastic corner with her thumb.*"
+        "text": "*She rests her hand by the paper cup, smiles briefly, and picks up where she left off calmly.*"
     },
     "after_homeroom_honest_4": {
         "name": "Homeroom Teacher",
@@ -277,7 +277,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "Homeroom Teacher",
-        "text": "*With a playful smile, she presses the slightly folded corner of the attendance book flat with her thumb.*"
+        "text": "*With a playful smile, she pushes the attendance book aside on her desk.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -327,7 +327,7 @@
     },
     "after_homeroom_freetalk": {
         "name": "Homeroom Teacher",
-        "text": "*She leaves the staff room door half shut, tucks the attendance book under her arm, and matches my stride.*",
+        "text": "*Leaving the staff room door half open, she tucks the attendance book under her arm and steps beside me.* Still have anything left to ask?",
         "context": "[Medium: in person] Outside the staff room after school on the student’s first day. The student asked for advice about settling in, and the homeroom teacher listened. Continue that conversation, responding to what the student actually said and why they came.",
         "personality": "The homeroom teacher is an attentive woman in her late twenties with long wavy brown hair and a beige cardigan. She keeps counseling and guidance within formal school procedures. She once hoped to become a novelist and still cares about writing."
     },
@@ -341,8 +341,8 @@
         "choices": [
             "Go to the nurse's office",
             "Just go home",
-            "I'll just kill some time on an infirmary bed before heading home.",
-            "I'm not really sick, but I might as well poke my head in out of curiosity."
+            "Say I'm just faking dizziness to rest on a bed",
+            "Say nothing's wrong and I only came to look around"
         ]
     },
     "after_hidden_nurse_intro_b": {
@@ -383,7 +383,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "School Nurse",
-        "text": "For one thing, it's a handsome face I've never seen, and there isn't a single crease in your uniform jacket. My guess is right, isn't it?"
+        "text": "For one, you're a new face, and those brand-new creases are still right there on your uniform sleeves. Good guess, right?"
     },
     "after_nurse_enter_4_d": {
         "name": "School Nurse",
@@ -472,7 +472,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "School Nurse",
-        "text": "All right, ten minutes are up. How's your stomach feeling? *Inside the half-open drawer, a faded light-green notebook briefly catches my eye.*"
+        "text": "*After the wall clock ticks around another beat, she draws back the curtain.* All right, ten minutes are up. How is your stomach? *Inside the half-open drawer, a faded light-green notebook catches my eye.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "after_nurse_freetalk": {
         "name": "School Nurse",
-        "text": "*She clips the infirmary sheet onto her board and glances once at the wall clock.* Has the dizziness settled down now?",
+        "text": "*She clips the infirmary sheet onto her board and checks the wall clock.* Starting tomorrow, don’t skip breakfast. First day must have been hectic—how is your class?",
         "context": "Day 1 after school. The transfer student felt dizzy and visited the nurse's office. The nurse checked the symptoms and let the student rest; the conversation continues as she monitors recovery and school adjustment.",
         "personality": "The school nurse is observant and easygoing. She moved to the school after experiencing burnout as a hospital nurse and may use light humor when it helps a student relax. She keeps treatment and counseling within professional boundaries."
     },

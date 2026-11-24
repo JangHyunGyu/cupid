@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Eu seguro o bilhete de Yuna desta manhã. Eu paro onde o corredor se divide em direção às escadas do telhado, à lanchonete do porão e ao anexo da biblioteca.*"
+        "text": "*Seguro o bilhete que Yuna me deu hoje cedo e paro no corredor onde o caminho se divide entre as escadas do terraço, a cantina e o anexo.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -44,7 +44,7 @@
     },
     "lunch2_seo_2b_yuna": {
         "name": "Seoyeon",
-        "text": "Você recebeu até um bilhete separado da Yuna de manhã, e os pés vieram para o terraço."
+        "text": "Hoje de manhã parecia com a cabeça voltada pra biblioteca, mas acabou subindo pro terraço."
     },
     "lunch2_seo_3b_yuna": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*O velho anexo da biblioteca está deserto. Encostada na janela no fim do corredor, sob uma sombra fresca, Yuna lê sozinha.*"
+        "text": "*O velho anexo deserto da biblioteca. Encostada na janela do corredor banhada pela luz oblíqua da tarde, Yuna lê sozinha.*"
     },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {},
@@ -508,11 +508,11 @@
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
-        "text": "Entra aqui."
+        "text": "O piso de madeira faz os passos ecoarem um pouco, né? Entra por aqui."
     },
     "lunch2_yuna_11": {
         "name": "Yuna",
-        "text": "O chão é de madeira, então os passos ecoam um pouco, né? Já chegamos. *Ela entra numa salinha ao fundo, com cortinas de veludo desbotado caindo.*"
+        "text": "Chegamos. *Entro numa sala vazia e antiga de concreto escondida no canto.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -524,7 +524,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "Se você ficar parado aí, eu não consigo focar o suficiente para ler. Sente-se. *Ela se afunda no pequeno sofá de 2 lugares, coloca sua bolsa e deixa o assento ao lado dela vazio.*"
+        "text": "Se ficar aí parado não consigo ler direito. Senta aqui. *Ela se recosta no grande sofá gasto e deixa o espaço ao lado livre.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -540,7 +540,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*A voz de Yuna para logo depois daquele «tinha». Bem ao lado do lugar que ela abriu no sofá estreito, a linha fria do ombro dela fica bem perto.*",
+        "text": "*A voz de Yuna para em “havia alguém”. Ao lado do espaço vazio do sofá, o ombro dela fica bem perto.*",
         "choices": [
             "E essa pessoa, agora?",
             "Não pergunto. Só sento do lado.",
@@ -606,7 +606,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Na luz fraca do sol que atravessa a cortina, o som das nossas páginas se alterna como uma respiração sonolenta.*"
+        "text": "*Sob a luz tênue que entra pela janela, o som das páginas que viramos se alterna em paz.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",

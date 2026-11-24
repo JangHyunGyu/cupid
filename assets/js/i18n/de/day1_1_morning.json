@@ -98,7 +98,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "Wir kommen zu spät. Komm mit, {name}. *Sie verdeckt das leicht gerötete Ohr mit dem Haar und geht einen Schritt voraus.*"
+        "text": "Wir kommen zu spät. Beeil dich und komm mit. *Seoyeon dreht den Kopf weg und geht einen Schritt voraus.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Das Hauptgebäude, durch das wir gerade gehen, ist das Gebäude für Jahrgang 3, und gegenüber vor den Fenstern liegt die Bibliothek. Die Treppe ins Untergeschoss runter, und der Schulkiosk ist direkt da."
+        "text": "Das Hauptgebäude hier ist für die Abschlussklasse, und gegenüber den Fenstern liegt die Bibliothek. Geh die Treppe runter bis ans Ende des Erdgeschosses, da ist gleich der Kiosk."
     },
     "hallway_4": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*Halb abgewandt hebt Seoyeon das Klemmbrett zum Abschied leicht auf Schulterhöhe und dreht sich dann den Flur hinunter um.*"
+        "text": "*Halb umgedreht hebt Seoyeon kurz ihr Klemmbrett zum Gruß.* Bis zum Mittagessen."
     },
     "hallway_13_b": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "classroom_dain_5_d": {
         "name": "Klassenlehrerin",
-        "text": "*Die Klassenlehrerin stößt einen kurzen Seufzer aus, zieht leicht die Brauen zusammen und tippt mit dem Klassenbuch aufs Pult.*"
+        "text": "*Mit einem kurzen Seufzer runzelt die Klassenlehrerin leicht die Stirn und schlägt das Klassenbuch auf.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -295,11 +295,11 @@
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*Als ich die gefaltete Ecke aufklappe, fällt mir eine saubere lavendelfarbene Handschrift ins Auge.* Gleich am ersten Tag einen lauten Platz erwischt. — Yuna"
+        "text": "*Ich falte den Zettel auf und sehe ordentliche lavendelfarbene Handschrift.* Gleich am ersten Tag so ein lauter Platz. - Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Als ich mich noch einmal umdrehe, gleiten Yunas blasse Fingerspitzen aus dem Sonnenlicht am Fenster lautlos unter ihren Tisch.*"
+        "text": "*Als ich noch einmal zurückblicke, lässt Yuna ihre Hand leise wieder unter den Tisch sinken.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

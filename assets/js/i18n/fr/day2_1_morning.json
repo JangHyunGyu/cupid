@@ -49,7 +49,7 @@
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*Je déplie le billet soigneusement plié dans ma main ; à l'encre violet pâle, une ligne indique : 'À l'annexe de la bibliothèque à la pause déjeuner.'*"
+        "text": "*Je prends le mot posé sur mon bureau et le déplie ; d’une encre lavande, une seule ligne y est écrite : « À l’annexe de la bibliothèque à midi. »*"
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
@@ -293,7 +293,7 @@
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "Tu m'as surpris à tendre la main d'un coup sans prévenir. *Un peu gêné malgré moi, je rajuste ma veste d'uniforme.*"
+        "text": "Ta main a surgi sans prévenir, tu m’as fait sursauter. *Pris d’une gêne soudaine, je rajuste ma veste d’uniforme.*"
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",

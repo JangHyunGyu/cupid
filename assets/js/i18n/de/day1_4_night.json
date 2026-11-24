@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*In der Schul-App steht unter der Klassenmitteilung noch eine persönliche Notiz meiner Klassenlehrerin: ‚Morgen zur 1. Stunde das Mathe-Arbeitsbuch mitbringen. — Und was unseren neuen Mitschüler von heute angeht: Solange du dich gut einlebst, reicht mir das völlig.‘*"
+        "text": "*In der Schul-App steht neben der Klasseninfo eine einzelne Notiz meiner Klassenlehrerin: „Morgen zur 1. Stunde das Mathebuch mitbringen. Und der neue Schüler soll sich keinen Druck machen und in Ruhe ankommen.“*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Da mir die ruhigen Worte der Schulkrankenschwester vom Nachmittag wieder einfallen, stehe ich auf und fülle die Wasserflasche am Bett auf.*"
+        "text": "*Als mir einfällt, was die Schulkrankenschwester nachmittags gesagt hat, stehe ich auf, hole ein Glas Wasser und stelle es ans Bett.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "Suche eine Person, wer zuerst kommt: morgen früh raus auf den Sportplatz und aufwärmen."
+        "text": "Verschlaf morgen früh bloß nicht und komm zeitig ins Klassenzimmer, wer zuerst kommt, mahlt zuerst"
     },
     "night_dain_late_3": {
         "name": "Dain",
@@ -133,11 +133,11 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Während mir die Gesichter zu den heute neu gespeicherten Kontakten durch den Kopf gehen, lege ich das gesperrte Handy neben mein Kopfkissen.*"
+        "text": "*Während ich nacheinander an die Gesichter denke, die mir am ersten Tag begegnet sind, lege ich das gesperrte Handy ans Bett.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Ich blicke zur dunklen Zimmerdecke hinauf. Von der neuen Uniform am Bügel weht noch eine feine Spur der Frühlingsbrise von heute herüber.*"
+        "text": "*Ich starre an die dunkle Zimmerdecke. Die neue Uniform am Kleiderbügel wirkt noch ein wenig ungewohnt.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",

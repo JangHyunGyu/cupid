@@ -17,7 +17,7 @@
     },
     "tour_seo_2": {
         "name": "Seoyeon",
-        "text": "*She looks up at the gate pillar, a faint smile at the corner of her mouth.* We said hello here for the first time, didn't we."
+        "text": "*Looking up at the gate pillar with a faint smile.* Seeing the gate pillar just reminded me—this is right where we first said hello."
     },
     "tour_seo_3": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "tour_yuna_event_4": {
         "name": "{name}",
-        "text": "*Yuna takes a pale purple fountain pen and writes the three characters of her name in the blank space under the title. \"Choi Yuna.\" The last character is a little tilted.*"
+        "text": "*Yuna pulls out her lavender fountain pen and writes her full name in the blank under the title: \"Seol Yuna.\" The last character leans slightly.*"
     },
     "tour_yuna_event_5": {
         "name": "Yuna",
@@ -328,20 +328,20 @@
     "tour_yuna_affinity_check": {},
     "tour_yuna_affinity_80": {
         "name": "Yuna",
-        "text": "I'll save the first-reader seat in the next notebook for you, too. When today's events are over, let's write the date on that cover together."
+        "text": "Once the festival calms down, there's another book I'd like to recommend you. Let's talk about it after today wraps up."
     },
     "tour_yuna_affinity_60": {
         "name": "Yuna",
-        "text": "The last page I'll show you this afternoon... Don't let it be anyone else. You read it first."
+        "text": "Stop by to see me first this afternoon before heading anywhere else. There's something I want to tell you in person."
     },
     "tour_dain_affinity_check": {},
     "tour_dain_affinity_80": {
         "name": "Dain",
-        "text": "Next week, when I officially practice match commentary, you have to come watch! Once the date's set, I'll message you first."
+        "text": "Keep some after-school time free starting next week! There is plenty we can hang out and do outside the gym too!"
     },
     "tour_dain_affinity_60": {
         "name": "Dain",
-        "text": "Want to stop by the broadcast booth together this afternoon? I already decided you're the first listener for my mic test today."
+        "text": "Once this afternoon's schedule wraps up, come find me first, okay? Let's have a proper rematch then."
     },
     "tour_seo_skip": {},
     "tour_yuna_skip": {},
@@ -402,7 +402,7 @@
     },
     "day5_haeun_waver_up": {
         "name": "Haeun",
-        "text": "*Haeun lets out the breath she was holding and drops the tension from her shoulders.* ...Thank you, senior. Hearing you say that, I'm a little less scared. Please stay beside me just a little longer."
+        "text": "*Haeun exhales the breath she was holding and lets her shoulders drop.* ...Thank you, senior. Just staying right beside me makes me feel a little less scared. Please stay here with me just a little longer."
     },
     "day5_haeun_waver_down": {
         "name": "Haeun",
@@ -482,7 +482,7 @@
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
-        "text": "*Haeun carefully steps half a pace back, and Yuna looks at the corner of my mouth with quiet eyes.*",
+        "text": "*Haeun steps half a pace back while Yuna waits calmly for my answer.*",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun and the protagonist carried paperwork to the broadcasting room. The other person saw her leaning close to free her student-council bracelet clasp from his sleeve button. Haeun defended him, saying she felt comfortable asking him for help, which deepened the misunderstanding about their relationship. The other person has already lost 15 affinity, or 20 if the protagonist delayed explaining. There has been no romance or sexual activity between Haeun and the protagonist.",
         "personality": "The other person asks for an explanation in their own voice and at their current affinity. Being ranked first does not establish a couple or past promises. Haeun remains polite and speaks only to what she witnessed, never for the protagonist’s feelings. Leave him room to explain; let the actual answers resolve or sustain the misunderstanding. Do not solve everything at the outset or turn suspicion into a factual betrayal. Do not repeat the initial penalty; score only changes caused by the current contribution. Score Haeun’s affinity just like a personal conversation: a sincere explanation that does not shift blame onto Haeun earns +2, and concretely caring for Haeun’s awkward position or worry after defending the protagonist earns up to +3.",
@@ -597,7 +597,7 @@
         "text": "This isn't something we can just brush aside and walk past. *Seoyeon looks straight at me without wavering.* Haeun is standing right here, so let's clear it up properly now."
     },
     "day5_haeun_concern_seoyeon_group_talk": {
-        "name": "Seoyeon",
+        "name": "Seoyeon · Haeun",
         "text": "*Seoyeon glances once at Haeun's stiff face, then asks me.* I didn't think I'd hear about you like this. What on earth did you say to Haeun?",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
@@ -624,7 +624,7 @@
         "text": "*Yuna slips the phone in her hand into her pocket.* I don't know how I'm supposed to take it when you put this off in silence. Tell me in your own words what you said in front of Haeun."
     },
     "day5_haeun_concern_yuna_group_talk": {
-        "name": "Yuna",
+        "name": "Yuna · Haeun",
         "text": "*Yuna calmly folds the earbud cord and puts it in her pocket.* What Haeun told me is too different from the you I know. Tell me yourself. What did you talk about?",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
@@ -651,7 +651,7 @@
         "text": "*Dain uncrosses her arms and gives a firm shake of her head.* Saving it for later doesn't cut it. Unfair misunderstanding or honest mistake, say it straight right here."
     },
     "day5_haeun_concern_dain_group_talk": {
-        "name": "Dain",
+        "name": "Dain · Haeun",
         "text": "*Dain stops in front of me.* What on earth did you say to Haeun? I believed you weren't someone who'd treat a junior carelessly. Let's hear your side, too.",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
@@ -678,7 +678,7 @@
         "text": "*The homeroom teacher looks straight at me as I try to step back.* Maybe you're flustered and the words won't come out right away. Even so, instead of putting it off, we need to go over right now why Haeun had such a hard time. Take a breath and tell me calmly."
     },
     "day5_haeun_concern_teacher_group_talk": {
-        "name": "Homeroom Teacher",
+        "name": "Homeroom Teacher · Haeun",
         "text": "*The homeroom teacher lowers the folder she was holding.* I've trusted how you usually are, but I can't pretend I didn't hear this. Explain, step by step, what you said to Haeun.",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",
@@ -705,7 +705,7 @@
         "text": "*The school nurse lets the warmth fade from her gentle eyes.* Putting off your answer won't make this awkwardness clear up on its own. Will you explain it calmly right here?"
     },
     "day5_haeun_concern_nurse_group_talk": {
-        "name": "School Nurse",
+        "name": "School Nurse · Haeun",
         "text": "*The school nurse checks on Haeun first, then turns toward me.* I didn't expect to hear about you in a moment like this. I want to hear from you, too, why this is weighing on Haeun. What did you say then?",
         "groupLocation": "Hallway outside the broadcasting room during the school festival",
         "context": "Haeun lost trust during her earlier free talk with the protagonist. She described her discomfort to the person with the highest affinity, who is now more wary of him. All three meet in the hallway to discuss it. The other person has already lost 15 affinity, or 20 if the explanation was delayed. Haeun’s impression may differ from what was meant. Use only the prior transcript below as factual evidence. Do not invent insults, threats or broken promises. If the transcript is missing, discuss only her uneasy impression without quoting specific remarks.",

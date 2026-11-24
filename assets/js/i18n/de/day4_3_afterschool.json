@@ -92,7 +92,7 @@
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*Langsam lässt Seoyeon meine Hand los und wendet sich zur Tür des Dachtreppenhauses.*"
+        "text": "*Sie lässt das Geländer los und wendet sich zur Tür des Treppenhauses.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
@@ -144,9 +144,9 @@
         "text": "*Yuna streicht die geknickte Ecke des Lesezeichens langsam mit dem Daumen glatt und hält meinen Blick, nah genug, dass mein Atem sie erreicht.*",
         "choices": [
             "Ihr sagen, dass ich sie mag.",
-            "Hier ist es wirklich schön.",
-            "Ich antworte, wenn Yuna zuerst fragt.",
-            "Yuna sollte wissen, was ich fühle, auch wenn ich es nicht sage."
+            "Die Stimmung hier gefällt mir richtig gut.",
+            "Antworten, wenn Yuna zuerst fragt.",
+            "Yuna merkt bestimmt auch ohne Worte, was ich fühle."
         ]
     },
     "confess_yuna_yes_1": {
@@ -307,7 +307,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*Statt nach dem weggerollten Ball zu greifen, packt Dain kurz mein Hemd vorn, lässt wieder los und strahlt mich an.*"
+        "text": "*Statt den Ball vom Boden zu holen, greift Dain einmal fest nach meiner Hemdvorderseite, lässt los und strahlt mich an.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

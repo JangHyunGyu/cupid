@@ -29,12 +29,12 @@
         "text": "Tout à l’heure près de l’escalier, j’ai vu quelqu’un qui te ressemblait de dos monter à côté de la présidente. Vous êtes allés sur le toit tous les deux ?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "Dain",
+        "name": "{name}",
         "text": "*Face à Dain qui plisse les yeux au milieu du couloir, je resserre ma prise sur la bretelle de mon sac.*",
         "choices": [
-            "J'ai mangé sur le toit avec la présidente. (Honnête)",
-            "J'ai juste traîné seul. (Mensonge)",
-            "Si j’avais su que tu me chercherais comme ça, je t’aurais proposé de manger avec nous.",
+            "J’ai mangé sur le toit avec la présidente.",
+            "Je traînais juste tout seul.",
+            "Si j’avais su que tu me cherchais, je t’aurais invitée.",
             "Si j’avais su que tu serais jalouse, je te l’aurais dit avant."
         ]
     },
@@ -56,7 +56,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*Je déplie le billet glissé dans la poche latérale de mon sac et reconnais l’écriture soignée de Yuna à l’encre lavande.* Je t’ai vu descendre du toit à midi. Tu avais l’air plutôt proche de la présidente."
+        "text": "*Une fois Dain partie en courant vers le gymnase, je déplie le billet glissé dans la poche latérale de mon sac. L’écriture soignée de Yuna à l’encre lavande saute aux yeux.* Je t’ai vu descendre du toit à midi. Vous aviez l’air plutôt proches avec la présidente."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -64,7 +64,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon rajuste le bord du porte-bloc qu’elle tient contre elle. Sous son regard posé derrière ses lunettes, je m’arrête et choisis ma réponse.*"
+        "text": "*Seoyeon réajuste le porte-bloc contre elle.* J’ai encore des tâches à boucler après les cours, alors je file d’abord. *Elle laisse un bref au revoir et passe son chemin.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -81,7 +81,7 @@
     "after_dain_skip": {},
     "after_miss_dain_1": {
         "name": "{name}",
-        "text": "*Je tourne au coin du couloir. Derrière moi, des semelles de baskets poussent sur le parquet, et ce pas léger se rapproche vite.*"
+        "text": "*Alors que je tourne au coin du couloir, des pas pressés de baskets qui raclent le sol se rapprochent vite derrière moi.*"
     },
     "after_miss_dain_2": {
         "name": "Dain",
@@ -114,7 +114,7 @@
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*Dans le couloir devant la bibliothèque de l’annexe, je croise Yuna qui sort un gros livre dans les bras. Un petit tatouage dépasse légèrement du poignet de son uniforme.*"
+        "text": "*Dans le couloir devant l’annexe, je tombe sur Yuna qui sort un gros livre dans les bras. Sous ses manches retroussées d’uniforme, un tatouage net et sombre court clairement sur son avant-bras.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -151,7 +151,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Au début de la pause déjeuner, je t’avais proposé de monter sur le toit. Décliner l’invitation de la présidente dès ton premier jour, c’est plutôt culotté."
+        "text": "Je t’avais bien dit de monter sur le toit à midi. Poser un lapin à la présidente dès ton premier jour de transfert, faut avoir du culot."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -163,7 +163,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seoyeon resserre contre elle les feuilles fixées à son porte-bloc, baisse légèrement les yeux et fait cliquer son stylo-bille.*"
+        "text": "*Seoyeon serre les dossiers de son porte-bloc contre elle, baisse les yeux et fait cliquer son stylo bille.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -261,7 +261,7 @@
     },
     "after_homeroom_honest_3_b": {
         "name": "Professeure principale",
-        "text": "*La professeure principale retourne le porte-bloc et frotte lentement, du pouce, le coin de plastique lisse.*"
+        "text": "*Elle pose la main près du gobelet en carton, esquisse un sourire puis reprend calmement.*"
     },
     "after_homeroom_honest_4": {
         "name": "Professeure principale",
@@ -277,7 +277,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "Professeure principale",
-        "text": "*Avec un sourire malicieux, elle appuie du pouce sur le coin un peu replié du registre d'appel et l'aplatit.*"
+        "text": "*Avec un sourire espiègle, elle pousse le cahier d’appel sur le côté de son bureau.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -327,7 +327,7 @@
     },
     "after_homeroom_freetalk": {
         "name": "Professeure principale",
-        "text": "*Elle laisse la porte de la salle des profs à moitié fermée, cale le registre d'appel sous son bras et règle son pas sur le mien.*",
+        "text": "*Laissant la porte de la salle des professeurs entrouverte, elle cale le cahier d’appel sous son bras et se place à côté de moi.* Tu as encore des questions ?",
         "context": "[Mode : en personne] Devant la salle des professeurs, après les cours du premier jour. L’élève a demandé conseil pour s’intégrer et sa professeure principale l’a écouté. Poursuivre cet échange à partir de ses paroles et du motif de sa visite.",
         "personality": "La professeure principale est une femme attentive à la fin de la vingtaine, aux longs cheveux bruns ondulés, vêtue d'un cardigan beige. Elle inscrit l'accompagnement et les conseils dans les procédures de l'école. Elle rêvait autrefois de devenir romancière et tient toujours à l'écriture."
     },
@@ -339,10 +339,10 @@
         "name": "{name}",
         "text": "*La fatigue accumulée depuis le matin entre les regards inconnus et le brouhaha me tombe dessus d’un coup, arrêtant mes pas devant la porte de l’infirmerie.*",
         "choices": [
-            "Aller à l'infirmerie",
-            "Rentrer directement",
-            "Je vais juste tuer le temps sur un lit de l’infirmerie avant de rentrer.",
-            "Je n’ai rien de spécial, mais je vais entrer juste par curiosité."
+            "Entrer à l’infirmerie",
+            "Rentrer directement chez soi",
+            "Dire que le vertige est un prétexte pour se reposer sur un lit",
+            "Dire que je vais bien et que je viens juste visiter"
         ]
     },
     "after_hidden_nurse_intro_b": {
@@ -383,7 +383,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Infirmière",
-        "text": "Déjà, un beau visage que je n'avais jamais vu, et pas un seul pli sur la veste d'uniforme. Ma déduction est bonne, non ?"
+        "text": "Déjà tu es un nouveau visage, et les plis tout neufs sont encore bien marqués sur les manches de ton uniforme. J’ai deviné juste, non ?"
     },
     "after_nurse_enter_4_d": {
         "name": "Infirmière",
@@ -472,7 +472,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "Infirmière",
-        "text": "Voilà, dix minutes sont passées. Comment va ton estomac ? *Au fond du tiroir entrouvert, j’entrevois un carnet vert pâle un peu délavé.*"
+        "text": "*Après quelques minutes au rythme de l’horloge, elle tire le rideau.* Voilà, dix minutes ont passé. Ton ventre va mieux ? *Dans le tiroir entrouvert, un carnet vert pâle un peu passé accroche mon regard.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "after_nurse_freetalk": {
         "name": "Infirmière",
-        "text": "*Elle fixe la fiche de soins sur son porte-bloc et jette un coup d’œil à l’horloge murale.* Tes vertiges se sont un peu calmés ?",
+        "text": "*Elle fixe la fiche médicale sur son porte-bloc et jette un œil à l’horloge.* À partir de demain, ne saute plus le petit-déjeuner. Ça a dû être intense pour un premier jour — comment est ta classe ?",
         "context": "Jour 1 après les cours. Le nouvel élève a eu un vertige et s'est rendu à l'infirmerie. L'infirmière a vérifié ses symptômes et l'a laissé se reposer ; la conversation continue tandis qu'elle surveille son rétablissement et son adaptation à l'école.",
         "personality": "L'infirmière scolaire est observatrice et décontractée. Elle a rejoint l'école après un épuisement professionnel comme infirmière hospitalière et peut recourir à un humour léger lorsqu'il aide un élève à se détendre. Elle respecte les limites professionnelles des soins et de l'accompagnement."
     },

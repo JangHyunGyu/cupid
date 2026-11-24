@@ -98,7 +98,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "On va être en retard. Suis-moi, {name}. *Elle cache son oreille un peu rouge sous ses cheveux et avance d'un pas.*"
+        "text": "On va être en retard. Dépêche-toi de me suivre. *Seoyeon détourne la tête et marche un pas devant.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "Le bâtiment principal, là où on marche, c'est celui des terminales. En face, derrière la fenêtre, la bibliothèque. La supérette, c'est en bas, par l'escalier du sous-sol."
+        "text": "Le bâtiment principal où nous marchons est celui des terminales, et la bibliothèque est juste en face des fenêtres. Descends les escaliers et la cafétéria est tout au bout du rez-de-chaussée."
     },
     "hallway_4": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*À demi retournée, Seoyeon lève légèrement son porte-bloc à hauteur d'épaule en guise de salut avant de repartir dans le couloir.*"
+        "text": "*À demi retournée, Seoyeon lève légèrement son porte-bloc pour me saluer.* À tout à l’heure pour le déjeuner."
     },
     "hallway_13_b": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "classroom_dain_5_d": {
         "name": "Professeure principale",
-        "text": "*Laissant échapper un bref soupir, la professeure principale fronce légèrement les sourcils et tapote le pupitre avec le registre.*"
+        "text": "*Poussant un bref soupir, la professeure principale fronce légèrement les sourcils et ouvre le cahier d’appel.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -295,11 +295,11 @@
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*En dépliant le coin marqué, une écriture soignée à l'encre lavande attire mon regard.* Tu es tombé sur une place bruyante dès le premier jour. — Yuna"
+        "text": "*Je déplie le mot et découvre une écriture soignée à l’encre lavande.* Drôle de place bruyante dès le premier jour. - Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Quand je me retourne de nouveau, les doigts pâles de Yuna, baignés par la lumière de la fenêtre, glissent sans bruit sous son bureau.*"
+        "text": "*Quand je me retourne encore, Yuna baisse discrètement sa main sous son bureau.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

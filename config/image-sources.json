@@ -7613,18 +7613,14 @@
       "backupKey": "snapshots/20261030/cupid/part-0015.zip"
     },
     "assets/images/background/ending_perfect_nurse.png": {
-      "sha256": "90fe9151415e4160592448da49e3be6d773352e51e3a451d3f2dff74fb0fbc10",
-      "bytes": 3355640,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "04919e933642e999457a50a6004b8cc4d4c92d2a3c0bc19692dcde0126d1d996",
+      "bytes": 5086990,
+      "backupKey": "objects/sources/04919e933642e999457a50a6004b8cc4d4c92d2a3c0bc19692dcde0126d1d996.png"
     },
     "assets/images/background/ending_perfect_nurse.webp": {
-      "sha256": "6f8a0100c0a8563f8e3a77596d28cab5efaac230179229f063dbf6b2121762ce",
-      "bytes": 156549,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "a02a31c355e232b179e3d42f36f27af0f83525514854beb6aa52bfb6ffa97309",
+      "bytes": 2831505,
+      "backupKey": "objects/sources/a02a31c355e232b179e3d42f36f27af0f83525514854beb6aa52bfb6ffa97309.webp"
     },
     "assets/images/background/ending_perfect_seoyeon.png": {
       "sha256": "0c6b235a201a5ff1488ae7bf126f1653f382f11552edb6c2a0006ec95d4d6111",
@@ -7641,18 +7637,14 @@
       "backupKey": "snapshots/20261030/cupid/part-0015.zip"
     },
     "assets/images/background/ending_perfect_teacher.png": {
-      "sha256": "df4c13392015dacb05b17057f80c9e7b7b8f28ccf10d82822fdf7a94e3c6bcb9",
-      "bytes": 4238124,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "aa7691af7a12e2878a059331b07b2f24a42b8bc66a7be05842858a49d69c4415",
+      "bytes": 6237568,
+      "backupKey": "objects/sources/aa7691af7a12e2878a059331b07b2f24a42b8bc66a7be05842858a49d69c4415.png"
     },
     "assets/images/background/ending_perfect_teacher.webp": {
-      "sha256": "1332b54b90a98b60cd042c8ae455814557fa99f6bf5cd06493e03af807f77463",
-      "bytes": 370405,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "a32035f2a008213c6a90018f6fad9583cbe50e44c2d13863345f05802c06dc0f",
+      "bytes": 3062257,
+      "backupKey": "objects/sources/a32035f2a008213c6a90018f6fad9583cbe50e44c2d13863345f05802c06dc0f.webp"
     },
     "assets/images/background/ending_perfect_yuna.png": {
       "sha256": "8e8b656cd02ce3d1e44471aba9d95cba43f220cedd277a42058c4ef863b73182",
@@ -7683,18 +7675,14 @@
       "backupKey": "snapshots/20261030/cupid/part-0015.zip"
     },
     "assets/images/background/ending_true_nurse.png": {
-      "sha256": "7f7ae76fb9780159796b93b298d4ba973183c64cc1fe1762b6ceee52b2c552b8",
-      "bytes": 3457021,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "fa6075d64c3d4777e8aa40a2bceff23959abfabd04da6d918e51768540694e72",
+      "bytes": 5688869,
+      "backupKey": "objects/sources/fa6075d64c3d4777e8aa40a2bceff23959abfabd04da6d918e51768540694e72.png"
     },
     "assets/images/background/ending_true_nurse.webp": {
-      "sha256": "08e7c407a4b0d19d985ac0147364cbcbd70d4fe6ceaa207430cb0dfc7ecaba24",
-      "bytes": 151933,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "62add6659fb2a30a4725daeb3144497cf1e2cf3d1ed23c86e07bb5d0f0b4e72b",
+      "bytes": 2700321,
+      "backupKey": "objects/sources/62add6659fb2a30a4725daeb3144497cf1e2cf3d1ed23c86e07bb5d0f0b4e72b.webp"
     },
     "assets/images/background/ending_true_seoyeon.png": {
       "sha256": "896681b664f33879a6b7a7ca81468fbb1a37ed3e4269e4938eda85189715fc17",
@@ -7711,18 +7699,14 @@
       "backupKey": "snapshots/20261030/cupid/part-0015.zip"
     },
     "assets/images/background/ending_true_teacher.png": {
-      "sha256": "9da676d90d8e10ef9c9c40b28bf2576ac690e3c3043d8f69b3ea5f8c2ace947f",
-      "bytes": 3585540,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "0d8a81ab7a28b6add7fc6f765dfb6cae76837f15d2762e782bf680bee6ba78ca",
+      "bytes": 5942206,
+      "backupKey": "objects/sources/0d8a81ab7a28b6add7fc6f765dfb6cae76837f15d2762e782bf680bee6ba78ca.png"
     },
     "assets/images/background/ending_true_teacher.webp": {
-      "sha256": "e7d50616711b8c1af0b486b0e947a56f044992d1c6279ebf6740d2ad6f9beb65",
-      "bytes": 300281,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "90650d228406dff2d24684edb2a09c321227c4e2e75102d689d44c85929ef50a",
+      "bytes": 2852525,
+      "backupKey": "objects/sources/90650d228406dff2d24684edb2a09c321227c4e2e75102d689d44c85929ef50a.webp"
     },
     "assets/images/background/ending_true_yuna.png": {
       "sha256": "6786c4bd8910ae27eaddd87e17e91baafb8b01a3e3a13d2d218abc795c00920a",
@@ -9155,6 +9139,46 @@
       "snapshotPart": "part-0031.zip",
       "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
       "backupKey": "snapshots/20261030/cupid/part-0014.zip"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_nurse.png": {
+      "sha256": "e5c4ee63344016325172d7f414f70790d090fc45ef4fd93fd074947d7a150c86",
+      "bytes": 5086953,
+      "backupKey": "objects/sources/e5c4ee63344016325172d7f414f70790d090fc45ef4fd93fd074947d7a150c86.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_nurse.webp": {
+      "sha256": "e03bb4667478c3c27ad0bb103bc8a25f44ea8491c70165cb53f7b0677a150ca4",
+      "bytes": 2831468,
+      "backupKey": "objects/sources/e03bb4667478c3c27ad0bb103bc8a25f44ea8491c70165cb53f7b0677a150ca4.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_teacher.png": {
+      "sha256": "9fb9419dbe54e827687f5ca0611d5320b24717227b40b41b5706d847b3327a96",
+      "bytes": 6237531,
+      "backupKey": "objects/sources/9fb9419dbe54e827687f5ca0611d5320b24717227b40b41b5706d847b3327a96.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_teacher.webp": {
+      "sha256": "7d97b0e114b05c3c9944f57cd4b620e200fbc196a4c54b2b09a5ea8f71dfff31",
+      "bytes": 3062220,
+      "backupKey": "objects/sources/7d97b0e114b05c3c9944f57cd4b620e200fbc196a4c54b2b09a5ea8f71dfff31.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_nurse.png": {
+      "sha256": "c6ccbd5e09f631b2093a04b475331b03b41d00d3bc06799aecd80c6547b6c21a",
+      "bytes": 5688832,
+      "backupKey": "objects/sources/c6ccbd5e09f631b2093a04b475331b03b41d00d3bc06799aecd80c6547b6c21a.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_nurse.webp": {
+      "sha256": "4dbd0f5453021cbec3ba04af913bd86e50d2f85796fd94c6685f41c7fde955fa",
+      "bytes": 2700284,
+      "backupKey": "objects/sources/4dbd0f5453021cbec3ba04af913bd86e50d2f85796fd94c6685f41c7fde955fa.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_teacher.png": {
+      "sha256": "ca947b0c4b3c732dea91f7bcd50534d09720c15b9c2b883967e1493bd1d8aa61",
+      "bytes": 5942169,
+      "backupKey": "objects/sources/ca947b0c4b3c732dea91f7bcd50534d09720c15b9c2b883967e1493bd1d8aa61.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_teacher.webp": {
+      "sha256": "fa7cbe86ac34d4e910d6419e85c9bf1efe1e1bccc4486ad41d29f9b2e29aa736",
+      "bytes": 2852488,
+      "backupKey": "objects/sources/fa7cbe86ac34d4e910d6419e85c9bf1efe1e1bccc4486ad41d29f9b2e29aa736.webp"
     },
     "tests/fixtures/corrected-media/assets/images/background/event_seoyeon_succulent.png": {
       "sha256": "6cb85cf3b82fb2b694a7b421287b2bd0b49bb427c69b635e73f27093b3923800",

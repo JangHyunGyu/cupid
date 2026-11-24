@@ -89,7 +89,7 @@
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Enfermera",
-        "text": "*Con una sonrisa suave, suelta el tirador del cajón.* Sí. Un secreto solo entre nosotros dos, con esto basta, ¿no?"
+        "text": "*Suelta el tirador del cajón y marca el límite con calma.* No es algo que deba contarle a un estudiante. Tampoco tienes que cargar con eso."
     },
     "hidden_nurse_d2_8": {
         "name": "Enfermera",
@@ -491,7 +491,7 @@
     },
     "after2_yuna_1_b": {
         "name": "{name}",
-        "text": "*En el pasillo del anexo, bañado en diagonal por el atardecer, no hay ni un alma. Solo la puerta de la salita del rincón al fondo está entreabierta un par de dedos.*"
+        "text": "*El pasillo del anexo bañado por la luz del atardecer está en silencio. La puerta de la salita del rincón interior está ligeramente entreabierta.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Desde que se fue aquella persona de un curso superior, no ha venido ni una."
+        "text": "Ni una sola persona desde que se marchó el mayor que solía compartir este sitio conmigo."
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
@@ -650,9 +650,9 @@
         "groupChoiceState": "solo hay tiempo para ordenar uno de los dos grupos de documentos y el protagonista debe decir al lado de quién se quedará",
         "groupAftermathCause": "al lado de quién eligió quedarse el protagonista en el anexo y por qué",
         "companionTexts": {
-            "Seoyeon": "*Seoyeon apoya un horario junto a los papeles.* El calendario del consejo también hay que cuadrarlo hoy. Primero el mío.",
+            "Seoyeon": "*Seoyeon deja su agenda junto al fajo de papeles.* La agenda del consejo también hay que cerrarla hoy. Ayúdame primero por aquí.",
             "Dain": "*Dain golpea la esquina del escritorio.* La limpieza del gimnasio también va atrasada. Ayúdame primero.",
-            "Teacher": "*La tutora desplaza una carpeta medio paso.* Todavía queda una revisión de la oficina. ¿Podemos ver este lado primero?",
+            "Teacher": "*La profesora desliza una carpeta a medias.* También quedan verificaciones de sala de profesores. ¿Puedes revisar esto primero?",
             "Nurse": "*La enfermera deja una caja pequeña.* Los suministros del consultorio también hay que cuadrarlos hoy. ¿Me ayudas primero?"
         }
     },
@@ -667,7 +667,7 @@
         "companionTexts": {
             "Seoyeon": "*Seoyeon alza los papeles del almacén.* Me dijeron que moviera primero el material del evento. ¿Confirmas mi lado primero?",
             "Yuna": "*Yuna abre un memo corto.* El encargado del almacén pidió primero los papeles. ¿Lo confirmas primero?",
-            "Teacher": "*La tutora alza una impresión.* Lo que recibí en la sala de profesores priorizaba los papeles. ¿Podemos ver este lado primero?",
+            "Teacher": "*La profesora levanta un poco las hojas impresas.* De sala de profesores nos pidieron priorizar el material. ¿Puedes mirar esto primero?",
             "Nurse": "*La enfermera tiende una lista pequeña.* Pidieron primero la lista de suministros. ¿Lo confirmas primero?"
         }
     },

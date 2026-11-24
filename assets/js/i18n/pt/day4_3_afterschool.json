@@ -92,7 +92,7 @@
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*Soltando devagar a minha mão, Seoyeon se vira para a porta da escada do terraço.*"
+        "text": "*Soltando a grade, Seoyeon se vira para a porta da escada do terraço.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
@@ -128,25 +128,25 @@
     },
     "confess_yuna_3": {
         "name": "{name}",
-        "text": "*O espaço de leitura no anexo, onde eu segui Choi Yuna. O pôr do sol entrando pela janela se assenta profundamente no braço do sofá antigo.*"
+        "text": "*O espaço de leitura no anexo, onde eu segui Yuna. O pôr do sol entrando pela janela se assenta profundamente no braço do sofá antigo.*"
     },
     "confess_yuna_3b": {},
     "confess_yuna_4": {
         "name": "Yuna",
-        "text": "Venha sentar ao meu lado. Hoje não precisamos abrir um livro. *Choi Yuna se recosta no sofá e olha para mim.*"
+        "text": "Venha sentar ao meu lado. Hoje não precisamos abrir um livro. *Yuna se recosta no sofá e olha para mim.*"
     },
     "confess_yuna_5": {
         "name": "{name}",
-        "text": "*Quando eu sento ao lado de Choi Yuna, o assento do sofá afunda e nossos ombros se tocam.*"
+        "text": "*Quando eu sento ao lado de Yuna, o assento do sofá afunda e nossos ombros se tocam.*"
     },
     "confess_yuna_choice": {
         "name": "{name}",
         "text": "*Yuna vai alisando com o polegar o canto dobrado do marcador e, perto o bastante para o meu hálito chegar, sustenta o olhar em silêncio.*",
         "choices": [
             "Dizer que gosto dela.",
-            "...Esse lugar é muito bom mesmo.",
-            "Vou responder quando a Yuna perguntar primeiro.",
-            "Mesmo sem eu dizer, a Yuna deveria saber o que sinto."
+            "O clima aqui está muito bom.",
+            "Respondo se a Yuna perguntar primeiro.",
+            "A Yuna deve saber o que sinto mesmo sem eu dizer."
         ]
     },
     "confess_yuna_yes_1": {
@@ -211,11 +211,11 @@
     },
     "confess_yuna_no_2": {
         "name": "Yuna",
-        "text": "*Sem dizer uma palavra, Choi Yuna empurra o marcador profundamente entre as páginas fechadas, depois abaixa o queixo um pouco.*"
+        "text": "*Sem dizer uma palavra, Yuna empurra o marcador profundamente entre as páginas fechadas, depois abaixa o queixo um pouco.*"
     },
     "confess_yuna_no_3": {
         "name": "{name}",
-        "text": "Choi Yuna, você ainda não terminou o livro no seu colo? *Choi Yuna não abre as páginas, apenas traça as letras do título na capa com o dedo.*"
+        "text": "Yuna, você ainda não terminou o livro no seu colo? *Yuna não abre as páginas, apenas traça as letras do título na capa com o dedo.*"
     },
     "confess_yuna_no_4": {
         "name": "Yuna",
@@ -307,7 +307,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*Em vez da bola que rolou para longe, Dain agarra de uma vez a frente da minha camisa, solta e abre um sorriso largo.*"
+        "text": "*Em vez de pegar a bola no chão, Dain puxa firme a frente da minha camisa uma vez, solta e dá um sorrisão.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

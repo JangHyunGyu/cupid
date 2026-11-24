@@ -152,7 +152,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*The first week since I transferred has already reached its end. Before I take the classroom door handle, I quietly go back over the breaths and voices that passed my ear these past four days. My fingertips warm, and it feels good.*"
+        "text": "*My first week after transferring is already nearing its close. Before gripping the classroom door handle, the talks we shared over these four days run back through my head, and I push open the door with a strangely buoyant step.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -268,15 +268,15 @@
         "name": "{name}",
         "text": "*I take the manuscript envelope she hands me and hold it in both arms. The heavy warmth of the paper stack presses into the inside of my arm.*",
         "choices": [
-            "After seven years, it must be almost finished. I probably don't need to mark anything.",
-            "I'll read it first. Is it okay if I mark it up?",
+            "After seven years, it's practically done—nothing much to mark",
+            "I'll read it first. Okay if I mark it up?",
             "The difficult parts must be intentional, so I’ll leave them as they are.",
-            "Since it’s your writing, I’ll only mark the nice things."
+            "Since it’s your writing, I’ll only pick the good points to write down"
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Homeroom Teacher",
-        "text": "*She gives a rueful smile and smooths out the corner of the envelope.* You don't have to pick something nice to say before you've even turned the first page. Holding on to it for a long time doesn't mean I wrote it well."
+        "text": "*She gives a dry smile and smooths down the corner of the envelope.* No need to skim past it before turning the first page. Taking years over something doesn't automatically make it good writing."
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Homeroom Teacher",
@@ -384,7 +384,7 @@
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*The stack of critique copies piled high on an inner table at the cafe around evening comes back to me. On the corner of the brown envelope in my hand, the number “04” is written in neat handwriting.*"
+        "text": "*That stack of critique copies piled on the inner cafe table yesterday morning comes back to me. On the corner of the brown envelope in my hand, the digits \"04\" are written cleanly.*"
     },
     "hidden_homeroom_d5_6_c": {},
     "hidden_homeroom_d5_6_d": {
@@ -457,11 +457,11 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher walks out into the hall first and checks the students setting up festival booths, calling their names one by one.*"
+        "text": "*Gathering the printouts on the lectern, the teacher checks through the festival booth roster one last time.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Homeroom Teacher",
-        "text": "*She indicates with a look the No. 04 critique-copy envelope I'm holding.* Final review. Even if you see blank sentences, don't go easy. Point them out."
+        "text": "*Pointing toward the No. 04 envelope in my arms, she turns toward the hallway door.* Last look-over. Even if a blank sentence jumps out at you, don’t go easy—call it out."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -636,7 +636,7 @@
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
-        "text": "*With the festival about to open, the classroom air is cold as ice. The three sit far apart, one in each corner, and the duty sheet on the board lists only dry, clerical assignments.*"
+        "text": "*Before the festival opens, the classroom air hangs cold and flat. The three sit far apart in their own corners, and the duty sheet on the board lists only names in dry, matter-of-fact ink.*"
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",

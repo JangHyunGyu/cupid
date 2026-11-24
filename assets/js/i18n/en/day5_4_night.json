@@ -34,7 +34,7 @@
     },
     "hidden_perfect_homeroom_2c": {
         "name": "Homeroom Teacher",
-        "text": "*The teacher's eyes curve like spring sunlight.* Thanks to your critique, I finished the final sentence. I sent the manuscript to a publisher yesterday too. As the adult, it's my responsibility to handle what comes next. ...You take care of yourself and stay well."
+        "text": "*The teacher breaks into a warm smile.* Thanks to the notes you left, I made it to the final line. I sent the manuscript to a publisher yesterday, too—what happens next is on me as the adult. ...You take good care of yourself, okay?"
     },
     "hidden_perfect_homeroom_3": {
         "name": "{name}",
@@ -74,15 +74,15 @@
     },
     "hidden_perfect_homeroom_4e": {
         "name": "{name}",
-        "text": "*After talking late into the night about her book, the next spring weekend evening arrives. Out on a rooftop café terrace where night cherry blossoms drift in full bloom, she is already waiting with a small pale-pink bouquet in her arms.*"
+        "text": "*After talking about books late into the night, another spring afternoon arrives. On an outdoor cafe terrace where full-blooming cherry petals drift on the breeze, Seo Hyeran is already waiting.*"
     },
     "hidden_perfect_homeroom_4f": {
         "name": "{name}",
-        "text": "*The fragrant bouquet goes down in the middle of the table, and our fingertips brush as we straighten, side by side, the end of the wrapping ribbon the wind has loosened.*"
+        "text": "*In the spring sunlight, wearing a cream off-shoulder dress, Seo Hyeran holds a pink-ribboned bouquet close to her chest as she looks up at me. Beside her on the marble table rest a teacup and a slice of strawberry shortcake.*"
     },
     "hidden_perfect_homeroom_4g": {
         "name": "Homeroom Teacher",
-        "text": "*She draws a deep breath, then covers my hand with hers, her gaze clear and warm.* Thank you for waiting until my sentences could step out into the world. Would you take this as my confession that I want to see every season ahead right beside you?"
+        "text": "*Adjusting the bouquet against her flushed cheeks, she holds my gaze warmly.* Thank you for waiting until my sentences stepped out into the world. Can I take this as your answer that you want to spend every season ahead with me?"
     },
     "hidden_perfect_homeroom_ending_title": {
         "name": "",
@@ -90,7 +90,7 @@
     },
     "hidden_perfect_homeroom_5": {
         "name": "{name}",
-        "text": "*By the café terrace doorway dusted with cherry blossom petals, I wrap my hand around her warm fingers still holding the bouquet and quietly answer that I feel the same way.*"
+        "text": "*Inside the petal-strewn terrace, I wrap my hands over Seo Hyeran’s warm fingers holding the bouquet and answer quietly that I feel the same way.*"
     },
     "hidden_perfect_homeroom_ep1": {
         "name": "{name}",
@@ -141,7 +141,7 @@
         "text": "*The awkwardness lasts only a moment. Before any talk of the old school, work, and the books each of us opens night after night lately, come out first, easily.*"
     },
     "hidden_true_homeroom_4_c": {
-        "name": "Homeroom Teacher",
+        "name": "{name}",
         "text": "*She takes out a book she had set aside next to her bag and shows it to me. It bears the exact same title as the unfinished manuscript kept in the lectern drawer of that empty classroom four years ago.*"
     },
     "hidden_true_homeroom_4_d": {
@@ -157,7 +157,7 @@
         "text": "*She looks up at me, a playful light in her eyes.* We promised I wouldn't try to find out who wrote what. But I remember one copy very clearly. The margin of that last blank page was packed with questions that were sharp, and kind."
     },
     "hidden_true_homeroom_4_g": {
-        "name": "Homeroom Teacher",
+        "name": "{name}",
         "text": "*With steady fingers, she quietly lines up the corner of the book. Her old habit of folding and unfolding a paper cup sleeve whenever she felt anxious is gone now.*"
     },
     "hidden_true_homeroom_4_h": {
@@ -174,7 +174,7 @@
     },
     "hidden_true_homeroom_5_c": {
         "name": "{name}",
-        "text": "I'd like to get to know you as you are now, too, not the person at the front of the class. And let's take our time deciding what to call each other."
+        "text": "I want to get to know Seo Hyeran as she is now, too—not just the homeroom teacher at school. And let's take our time figuring out what to call each other."
     },
     "hidden_true_homeroom_6": {
         "name": "Homeroom Teacher",
@@ -198,11 +198,11 @@
     },
     "hidden_true_homeroom_7_d": {
         "name": "{name}",
-        "text": "*Across the small coffee-scented table, we quietly say each other's names once. Across from me, she drops the old title too and says my name, \"{name},\" letting each syllable linger slowly on her lips.*"
+        "text": "*Across the coffee-scented table, we try each other’s names once, low. From the seat opposite, dropping the old title, she says \"{name}\" warmly.*"
     },
     "hidden_true_homeroom_8": {
         "name": "Homeroom Teacher",
-        "text": "*Past the small cake plate, she gently opens her pale palm. Stopping just shy of my fingertips, she waits quietly for my answer.* ...Want to meet again next week?"
+        "text": "*Under the warm amber pendant lights sit two steaming cups of coffee and an open hardcover book. Resting her chin softly on her hand with her knit cardigan slipping off one shoulder, Seo Hyeran smiles warmly across the table.* Shall we meet again next week?"
     },
     "hidden_true_homeroom_ending_title": {
         "name": "",
@@ -295,19 +295,19 @@
     },
     "hidden_perfect_nurse_ep1": {
         "name": "{name}",
-        "text": "*After weekend dates stretching across the changing seasons, we greet the same morning sunlight at Juwon's place. Stirring awake, Juwon slips her hand out beneath the covers and waits for my fingers to lace with hers.*"
+        "text": "*After months of weekend dates, we greet the same morning light in Juwon’s bedroom. Sunshine pours past the potted rosemary and sheer curtains onto the nightstand with a water glass and her folded glasses, while Juwon rests her cheek on her hand with an unbuttoned white shirt slipping off one bare shoulder.*"
     },
     "hidden_perfect_nurse_ep2": {
         "name": "{name}",
-        "text": "*From that Sunday morning on, the weekend squares of our shared calendar filled up with warm plans. Meanwhile, Juwon transferred to the nursing education team at a university hospital, where the new nurses called her Teacher too—Lee Juwon, now my partner.*"
+        "text": "*From that Sunday morning at Juwon's home onward, our shared calendar filled steadily with cozy weekends. Meanwhile, Juwon moved to the university hospital nursing education team—Lee Juwon, now my partner.*"
     },
     "hidden_perfect_nurse_ep3": {
         "name": "{name}",
-        "text": "*On the living-room windowsill of the new home the two of us chose together, a pot of green rosemary sits. Every morning, misting the leaves with a spray bottle is something we take turns doing, side by side.*"
+        "text": "*By the living-room window of the home we chose together sits a rosemary pot just like the one in her bedroom window. Every morning we take turns misting its leaves.*"
     },
     "hidden_perfect_nurse_ep4": {
         "name": "{name}",
-        "text": "*On the last page of the old pale-green notebook in the drawer, a single line has been added in Juwon's handwriting across five years: \"It took me a long time to come back, but now I'm starting over with you entirely by my own choice.\"*"
+        "text": "*On the last page of the old light-green notebook in the drawer, a line appears in Juwon’s handwriting: \"It took a long time to return, yet starting over with you now is my own choice.\"*"
     },
     "hidden_true_nurse_1": {
         "name": "{name}",
@@ -383,7 +383,7 @@
     },
     "hidden_true_nurse_7_d": {
         "name": "School Nurse",
-        "text": "*At the unfamiliar way I address her, the tips of Juwon's ears turn bright red before she pulls out her phone and opens her schedule.* ...Let's make it next weekend, then. On a day we can both keep completely free."
+        "text": "*At the unfamiliar way I call her, Juwon's ears turn crimson before she pulls out her phone to open the calendar.* ...Next weekend, then—on a day we can keep open all day long."
     },
     "hidden_true_nurse_8": {
         "name": "School Nurse",
@@ -415,11 +415,11 @@
     },
     "hidden_true_nurse_8_g": {
         "name": "School Nurse",
-        "text": "Yeah. I stayed of my own accord, because I wanted to keep loving that work. And now, like this... choosing to see you again on the sofa in my room is entirely a choice I made, too."
+        "text": "Yeah. I stayed because I wanted to keep caring about that work. And choosing to meet you again here on my living-room sofa was my decision, too."
     },
     "hidden_true_nurse_8_h": {
         "name": "{name}",
-        "text": "I want to keep staying with you like this next week, and the week after too. *Before the closing credits even finish rolling, Juwon lets out a steady, warm breath and falls asleep with her head resting on my shoulder.*"
+        "text": "I want to stay like this with you next week and the week after too. *On the sofa bathed only in the dim TV glow of a rainy night, wearing a thick knit cardigan slipped over her silk camisole beside her folded glasses and cooling chamomile tea, Juwon looks over at me with a languid smile.*"
     },
     "hidden_good_nurse_1": {
         "name": "School Nurse",
@@ -438,7 +438,7 @@
         "text": "*She nods warmly.* Thank you for graduating safe and sound. Once you're out in the world, don't tough it out alone if you get sick—go see a doctor right away. I won't be nearby to check on you myself anymore."
     },
     "hidden_good_nurse_2_d": {
-        "name": "School Nurse",
+        "name": "{name}",
         "text": "*From the desk drawer she takes the pale green notebook, worn from handling, and opens it to the very last page.*"
     },
     "hidden_good_nurse_3": {
@@ -695,11 +695,11 @@
         "text": "You came all the way up here with me, so stay beside me for a little. There's still something I want to show you. *Yuna stands with her back against the low rooftop railing.*"
     },
     "true_yuna_3": {
-        "name": "Yuna",
+        "name": "{name}",
         "text": "*The small secret roof above the hatch. In the evening wind, the corner of the notebook Yuna holds to her chest flutters.*"
     },
     "true_yuna_4": {
-        "name": "Yuna",
+        "name": "{name}",
         "text": "*Yuna turns on her phone and opens the music playlist. Beside the title of the third track, one very small star is glinting.*"
     },
     "true_yuna_5": {},
@@ -884,7 +884,7 @@
     },
     "day5_ending_alone": {
         "name": "{name}",
-        "text": "*Outside the school gate I walked out of alone, my phone buzzes once, short. It isn't someone's message. It's a system warning that the battery is low.*"
+        "text": "*Stepping out of the gate alone, my phone buzzes briefly. Thinking it might be a text, I check—only a low-battery warning.*"
     },
     "alone_1": {
         "name": "{name}",
@@ -900,7 +900,7 @@
     },
     "alone_4": {
         "name": "{name}",
-        "text": "*I plug in the charging cable and set the alarm for school tomorrow morning. Even after the screen goes completely black, the second hand of the wall clock goes on in the dark, toward tomorrow.*"
+        "text": "*I plug in the charger and set my morning alarm. Even after the screen goes black, only the steady tick of the wall clock fills the dark room.*"
     },
     "alone_5": {
         "name": "System",
@@ -1047,7 +1047,7 @@
         "text": "*Even after the chime signaling the start of evening study hall fades away completely, the two of us stay leaning against the same railing, shoulders touching.*"
     },
     "good_4_yuna": {
-        "name": "Yuna",
+        "name": "{name}",
         "text": "*Yuna opens the notebook in her hands and slips the pale purple bookmark into a new page. The next sheet is clean, with no crease on it yet.*"
     },
     "good_5_yuna": {
@@ -1168,7 +1168,7 @@
         "text": "*All three chats are stuck on a cold read mark. I try to write a late excuse, then erase it before I even finish the first letter.*"
     },
     "mayhem_1": {
-        "name": "Seoyeon",
+        "name": "{name}",
         "text": "*Passing in the hallway, Seoyeon brushes my shoulder and leaves only a cold wind. She never even turns her head.*"
     },
     "mayhem_2": {
@@ -1185,11 +1185,11 @@
     },
     "mayhem_5": {
         "name": "{name}",
-        "text": "*Cherry blossom petals, soaked in the cold spring rain and stuck to the asphalt. The place beside me was empty, and cold.*"
+        "text": "*Cherry blossom petals soaked in spring rain stick flat to the asphalt. Returning to my desk, the seat beside me feels more than quiet—hollow.*"
     },
     "mayhem_6": {
         "name": "{name}",
-        "text": "*In every chat I never opened, only the questions I failed to answer in time are piled up like fossils.*"
+        "text": "*In every unread chatroom, only the questions I failed to answer in time remain sitting there unchanged.*"
     },
     "mayhem_7": {
         "name": "{name}",
@@ -1208,7 +1208,7 @@
         "text": "*Seoyeon speaks with her arms folded, her voice calm and cool.* I get that you're trying to be honest. That doesn't mean the three of us have to just wait around until you make up your mind."
     },
     "harem_1_b": {
-        "name": "Yuna",
+        "name": "{name}",
         "text": "*Yuna drops her gaze for a moment, then looks at Seoyeon and Dain in turn. She never sets down the book in her arms.*"
     },
     "harem_2": {
@@ -1255,10 +1255,10 @@
     },
     "nurse_perfect_pills_0": {
         "name": "School Nurse",
-        "text": "*Morning light filters into the bedroom. Juwon comes to the bedside with a water glass, drawing the front of her sleep robe closed.* When you woke for a second earlier, you looked really rough. I brought water and your morning medicine."
+        "text": "*Sunlight filters into the bedroom. Picking up the water glass beside her folded glasses, Juwon gathers her loose white shirt closed as she walks over.* You looked pretty pale when you stirred earlier. Brought water and morning vitamins."
     },
     "nurse_perfect_pills_1": {
-        "name": "School Nurse",
+        "name": "{name}",
         "text": "*Juwon holds both pale palms out side by side from under the warm blanket. On her left palm rests an unfamiliar black pill; on her right palm, a smooth pink pill.*"
     },
     "nurse_perfect_pills_ask": {
@@ -1283,7 +1283,7 @@
     },
     "nurse_perfect_pills_pink_3": {
         "name": "{name}",
-        "text": "*Under the blanket, warmed through, our bare fingers lace tightly together again.*"
+        "text": "*On the sunlit white sheets, our bare fingers lace together slowly once more.*"
     },
     "nurse_perfect_pills_black_1": {
         "name": "{name}",
@@ -1295,7 +1295,7 @@
     },
     "nurse_perfect_pills_black_2": {
         "name": "{name}",
-        "text": "*Juwon's gentle smile hardens like plaster in an instant. The warm bedside lamp snaps off, and overhead a cold fluorescent light begins to buzz ominously.*"
+        "text": "*Juwon's warm smile freezes in an instant. The soft bedside lamp snaps off while an overhead fluorescent tube begins buzzing ominously.*"
     },
     "nurse_perfect_pills_black_3": {
         "name": "{name}",
@@ -1482,8 +1482,8 @@
         "name": "Seoyeon",
         "text": "*On the afternoon after our college entrance ceremony, I stand facing Seoyeon on our old high school rooftop during a nostalgic visit back.* We promised to finish the talk we didn't get through yesterday. Should we stay up on this roof a little longer, or head to the café by the gate?",
         "choices": [
-            "The rooftop.",
-            "The cafe."
+            "Rooftop",
+            "Cafe"
         ]
     },
     "date_perfect_seo_roof_1": {
@@ -1514,8 +1514,8 @@
         "name": "Yuna",
         "text": "*The first weekend after her first full-length novel landed in the bookstores, Yuna and I stopped by our usual used bookstore.* The weather's nice today, so it's fine if we go somewhere else. You pick where.",
         "choices": [
-            "The used bookstore.",
-            "The rooftop."
+            "Used bookstore",
+            "Rooftop"
         ]
     },
     "date_perfect_yuna_book_1": {
@@ -1523,8 +1523,8 @@
         "text": "*Walking side by side between shelves thick with the smell of old paper, Yuna runs a hand down the spines and suddenly stops.*"
     },
     "date_perfect_yuna_book_2": {
-        "name": "Man",
-        "text": "...Yuna? I didn't expect to see you back at this bookstore. ...About leaving without a word back then..."
+        "name": "Stranger",
+        "text": "...Yuna? I didn't expect to see you back at this bookstore. *Recognition clicks late—he's Lee Junho, the name I only knew from yesterday's letter.* ...Leaving without a word back then..."
     },
     "date_perfect_yuna_book_3": {
         "name": "Lee Junho",
@@ -1550,8 +1550,8 @@
         "name": "Dain",
         "text": "Coming back to our old school gym on the weekend like this feels surreal! We don't have to get on the court and work up a sweat today, but there's a spot I really want to visit with you again!",
         "choices": [
-            "The gym.",
-            "The booth."
+            "Gym",
+            "Booth"
         ]
     },
     "date_perfect_dain_gym_1": {
@@ -1582,8 +1582,8 @@
         "name": "Homeroom Teacher",
         "text": "*On the first weekend after her second novel came out, she quietly closes the menu in a sunset-lit café.* Now that the heavy titles are gone, there are plenty of places we can walk side by side. Where would you like to go today?",
         "choices": [
-            "The cafe.",
-            "The exhibition."
+            "Cafe",
+            "Exhibition"
         ]
     },
     "date_perfect_teacher_cafe_1": {
@@ -1614,8 +1614,8 @@
         "name": "School Nurse",
         "text": "*Juwon lays her fingers over the back of my hand and smiles with her eyes, lazy.* We've got a weekend that's just the two of us, one that won't go on any chart or record. Today, do you want to laze around at home, or go out for a walk?",
         "choices": [
-            "Home.",
-            "The park."
+            "Home",
+            "Park"
         ]
     },
     "date_perfect_nurse_home_1": {
@@ -1646,8 +1646,8 @@
         "name": "Seoyeon",
         "text": "Before we head straight home, want to stop somewhere for just a minute?",
         "choices": [
-            "Cafe.",
-            "Rooftop."
+            "Cafe",
+            "Rooftop"
         ]
     },
     "date_true_seo_1": {
@@ -1670,13 +1670,13 @@
         "name": "Yuna",
         "text": "Where should we head on our way home today? Want to stop by the alley used bookstore, or go back up to our secret rooftop?",
         "choices": [
-            "Bookstore.",
-            "Roof."
+            "Bookstore",
+            "Rooftop"
         ]
     },
     "date_true_yuna_book_1": {
-        "name": "Lee Junho",
-        "text": "It's been a long time, Yuna. I didn't think I'd see you again at the used bookstore in this alley."
+        "name": "Stranger",
+        "text": "*Between the musty shelves of the used bookstore, a man who can only be the Lee Junho from her letter speaks first.* Long time no see, Yuna. Never thought I'd run into you at this alley bookshop again."
     },
     "date_true_yuna_book_2": {
         "name": "Yuna",
@@ -1694,8 +1694,8 @@
         "name": "Dain",
         "text": "*Sitting on the quiet gym bench, Dain pats the spot right beside her with her palm.* Stay with me just a little longer today. Where are you more comfortable?",
         "choices": [
-            "The bench.",
-            "The booth."
+            "Bench",
+            "Booth"
         ]
     },
     "date_true_dain_1": {
@@ -1718,8 +1718,8 @@
         "name": "Homeroom Teacher",
         "text": "Our coffee cups are already empty. Shall we stay at this table a little longer, or walk over to the night exhibition nearby?",
         "choices": [
-            "A table.",
-            "The exhibition."
+            "Table",
+            "Exhibition"
         ]
     },
     "date_true_teacher_1": {
@@ -1742,8 +1742,8 @@
         "name": "School Nurse",
         "text": "I must have dozed off—the rain outside has already stopped. Want to rest at home a little longer, or walk out to a park bench for some night air?",
         "choices": [
-            "Home.",
-            "A bench."
+            "Home",
+            "Bench"
         ]
     },
     "date_true_nurse_1": {
@@ -1921,7 +1921,7 @@
     },
     "perfect_yuna_coda_1": {
         "name": "{name}",
-        "text": "*A new-book signing announcement goes up on the bookstore homepage. In place of the old anonymous manuscript, the three characters \"Choi Yuna\" are printed larger and clearer than the book title itself.*"
+        "text": "*A new-book signing announcement goes up on the bookstore homepage. Replacing the old anonymous manuscript, \"Seol Yuna\" is printed larger and clearer than the title itself.*"
     },
     "perfect_yuna_coda_2": {
         "name": "Yuna",

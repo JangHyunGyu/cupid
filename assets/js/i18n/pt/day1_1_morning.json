@@ -98,7 +98,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "Vamos nos atrasar. Vem por aqui, {name}. *Ela cobre com o cabelo a orelha um pouco vermelha e caminha um passo à frente.*"
+        "text": "Vamos nos atrasar. Anda logo e me segue. *Seoyeon vira o rosto e caminha um passo à frente.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "O prédio principal, onde a gente está, é o do 3º ano. Do outro lado da janela fica a biblioteca. A cantina é descendo a escada do subsolo, logo ali."
+        "text": "Este prédio principal é o do terceiro ano, e a biblioteca fica do outro lado das janelas. Descendo as escadas, a cantina fica logo no fim do primeiro andar."
     },
     "hallway_4": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*Meio de costas, Seoyeon ergue de leve a prancheta na altura do ombro em despedida e se vira pelo corredor.*"
+        "text": "*Meio virada, Seoyeon ergue de leve a prancheta em cumprimento.* Até o almoço."
     },
     "hallway_13_b": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "classroom_dain_5_d": {
         "name": "Professora",
-        "text": "*Soltando um suspiro curto, a professora franze de leve a testa e bate duas vezes na mesa com o diário.*"
+        "text": "*Soltando um breve suspiro, a professora franze de leve a testa e abre o diário de classe.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -295,11 +295,11 @@
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*Ao desdobrar a ponta vincada, vejo uma caligrafia caprichada em tinta lavanda.* Pegou um lugar barulhento logo no primeiro dia. — Yuna"
+        "text": "*Desdobro o bilhete e vejo uma letra caprichada em tinta lavanda.* Logo no primeiro dia pegou um lugar barulhento. - Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Quando olho para trás outra vez, os dedos claros de Yuna, iluminados pelo sol da janela, descem sem ruído para baixo da carteira.*"
+        "text": "*Quando olho para trás de novo, Yuna abaixa devagar a mão para debaixo da carteira.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

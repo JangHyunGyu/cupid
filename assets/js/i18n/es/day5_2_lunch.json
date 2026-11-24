@@ -17,7 +17,7 @@
     },
     "tour_seo_2": {
         "name": "Seoyeon",
-        "text": "*Mira hacia el pilar de la puerta y se le dibuja una leve sonrisa en los labios.* Aquí nos saludamos por primera vez, ¿verdad?"
+        "text": "*Alza la vista hacia el pilar del portón con una sonrisa tenue.* Al mirar este pilar me acordé: aquí mismo nos saludamos por primera vez."
     },
     "tour_seo_3": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "tour_yuna_event_4": {
         "name": "{name}",
-        "text": "*Yuna toma un bolígrafo de tinta de color púrpura pálido y escribe los tres caracteres de su nombre en el espacio en blanco debajo del título. \"Choi Yuna.\" El último carácter está un poco inclinado.*"
+        "text": "*Yuna saca su pluma estilográfica lavanda y escribe su nombre completo bajo el título en blanco: «Seol Yuna». La última sílaba queda algo inclinada.*"
     },
     "tour_yuna_event_5": {
         "name": "Yuna",
@@ -328,20 +328,20 @@
     "tour_yuna_affinity_check": {},
     "tour_yuna_affinity_80": {
         "name": "Yuna",
-        "text": "El sitio de primer lector del cuaderno nuevo que escriba la próxima vez también lo dejo ya para ti. Cuando acabe el acto de hoy, apuntemos juntos la fecha en esa tapa."
+        "text": "Cuando termine todo este lío del festival tengo otro libro que recomendarte. Hablamos después de hoy."
     },
     "tour_yuna_affinity_60": {
         "name": "Yuna",
-        "text": "La última página que enseñe esta tarde... que no la lea nadie más. Léela tú el primero."
+        "text": "Pásate a verme un momento esta tarde antes de ir a ningún sitio. Tengo algo que decirte."
     },
     "tour_dain_affinity_check": {},
     "tour_dain_affinity_80": {
         "name": "Dain",
-        "text": "¡La semana que viene, cuando practique en serio el comentario del partido, tienes que venir a verlo! En cuanto se fije la fecha, te mando yo el mensaje la primera."
+        "text": "¡Deja algo de tiempo libre después de clase a partir de la próxima semana! Hay mil planes fuera del gimnasio también."
     },
     "tour_dain_affinity_60": {
         "name": "Dain",
-        "text": "¿Esta tarde pasamos primero por la cabina de radio? Al primer oyente de la prueba de mi micrófono de hoy ya lo decidí: eres tú."
+        "text": "En cuanto acabe el horario de esta tarde ven a buscarme primero, ¿eh? Ahí nos echamos una revancha en serio."
     },
     "tour_seo_skip": {},
     "tour_yuna_skip": {},
@@ -402,7 +402,7 @@
     },
     "day5_haeun_waver_up": {
         "name": "Haeun",
-        "text": "*Haeun suelta en un suspiro largo el aire que contenía y afloja los hombros.* ...Gracias. Como lo dices así, me da un poco menos de miedo. Quédate a mi lado solo un ratito más, por favor."
+        "text": "*Haeun suelta el aire que retenía y relaja los hombros.* ...Gracias, sénior. Con que se quede aquí a mi lado ya me da menos miedo. Quédese un ratito más conmigo, por favor."
     },
     "day5_haeun_waver_down": {
         "name": "Haeun",
@@ -482,7 +482,7 @@
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
-        "text": "*Haeun retrocede medio paso con cuidado, y Yuna mira la comisura de mis labios con los ojos quietos.*",
+        "text": "*Haeun da medio paso atrás mientras Yuna espera mi respuesta con ojos serenos.*",
         "groupLocation": "Pasillo frente a la sala de radio durante el festival escolar",
         "context": "Haeun y el protagonista llevaron documentos a la sala de radio. La otra persona vio a Haeun acercarse para liberar el broche de su pulsera del botón de la manga del protagonista. Haeun lo defendió diciendo que se sentía cómoda pidiéndole ayuda, lo que agravó el malentendido. La afinidad de la otra persona ya bajó 15 puntos, o 20 si el protagonista pospuso la explicación. No hubo romance ni actividad sexual entre Haeun y el protagonista.",
         "personality": "La otra persona pide explicaciones con su propia voz y según su afinidad actual. Ser la primera en afinidad no establece un noviazgo ni promesas previas. Haeun mantiene un trato respetuoso y cuenta solo lo que vio, sin hablar por los sentimientos del protagonista. Dale espacio para explicar; sus respuestas pueden aclarar o mantener el malentendido. No lo resuelvas todo al principio ni conviertas sospechas en una traición real. No repitas la penalización inicial; puntúa solo el efecto de la intervención actual. Puntúa la afinidad de Haeun igual que en una conversación personal: una explicación sincera que no le eche la culpa a Haeun da +2, y tener en cuenta de forma concreta su posición incómoda o su preocupación por haberlo defendido da hasta +3.",
@@ -597,7 +597,7 @@
         "text": "Esto no es algo que podamos tapar y dejar pasar. *Seoyeon me sostiene la mirada con firmeza.* Ya que Haeun está delante, aclarémoslo bien aquí y ahora."
     },
     "day5_haeun_concern_seoyeon_group_talk": {
-        "name": "Seoyeon",
+        "name": "Seoyeon · Haeun",
         "text": "*Seoyeon mira un momento a Haeun, con el gesto rígido, y luego me pregunta.* No esperaba oír hablar de ti de esta forma. ¿Qué le dijiste a Haeun?",
         "groupLocation": "Pasillo frente a la sala de radio durante el festival escolar",
         "context": "Haeun perdió confianza durante su conversación libre anterior con el protagonista. Contó su incomodidad a la persona con mayor afinidad, que ahora desconfía más de él. Los tres se reúnen en el pasillo. La afinidad de la otra persona ya bajó 15 puntos, o 20 si se pospuso la explicación. La impresión de Haeun puede diferir de la intención. Usa solo la transcripción anterior como prueba. No inventes insultos, amenazas ni promesas rotas. Si falta el registro, trata solo su impresión incómoda sin citar frases concretas.",
@@ -624,7 +624,7 @@
         "text": "*Yuna guarda en el bolsillo el móvil que tenía en la mano.* No sé cómo debo tomar que lo postergues en silencio. Dime con tus propias palabras lo que dijiste delante de Haeun."
     },
     "day5_haeun_concern_yuna_group_talk": {
-        "name": "Yuna",
+        "name": "Yuna · Haeun",
         "text": "*Yuna pliega con calma el cable del auricular y lo mete en el bolsillo.* Lo que contó Haeun se parece muy poco a como te conocía. Dímelo tú. ¿De qué hablasteis?",
         "groupLocation": "Pasillo frente a la sala de radio durante el festival escolar",
         "context": "Haeun perdió confianza durante su conversación libre anterior con el protagonista. Contó su incomodidad a la persona con mayor afinidad, que ahora desconfía más de él. Los tres se reúnen en el pasillo. La afinidad de la otra persona ya bajó 15 puntos, o 20 si se pospuso la explicación. La impresión de Haeun puede diferir de la intención. Usa solo la transcripción anterior como prueba. No inventes insultos, amenazas ni promesas rotas. Si falta el registro, trata solo su impresión incómoda sin citar frases concretas.",
@@ -651,7 +651,7 @@
         "text": "*Dain descruza los brazos y niega con firmeza.* Dejarlo para luego no vale. Sea un malentendido injusto o un tropiezo tuyo, dilo con franqueza aquí mismo."
     },
     "day5_haeun_concern_dain_group_talk": {
-        "name": "Dain",
+        "name": "Dain · Haeun",
         "text": "*Dain se detiene delante de mí.* ¿Qué le dijiste a Haeun? Yo creía que no eras de los que tratan a la ligera a alguien de curso menor. Vamos a oír también tu versión.",
         "groupLocation": "Pasillo frente a la sala de radio durante el festival escolar",
         "context": "Haeun perdió confianza durante su conversación libre anterior con el protagonista. Contó su incomodidad a la persona con mayor afinidad, que ahora desconfía más de él. Los tres se reúnen en el pasillo. La afinidad de la otra persona ya bajó 15 puntos, o 20 si se pospuso la explicación. La impresión de Haeun puede diferir de la intención. Usa solo la transcripción anterior como prueba. No inventes insultos, amenazas ni promesas rotas. Si falta el registro, trata solo su impresión incómoda sin citar frases concretas.",
@@ -678,7 +678,7 @@
         "text": "*La profesora me mira de frente cuando intento dar un paso atrás.* Puede que estés desconcertado y no te salgan las palabras enseguida. Aun así, en vez de dejarlo pasar, tenemos que ver ahora mismo por qué Haeun lo pasó mal. Cuéntamelo con calma."
     },
     "day5_haeun_concern_teacher_group_talk": {
-        "name": "Profesora",
+        "name": "Profesora · Haeun",
         "text": "*La profesora baja la carpeta que llevaba.* Confiaba en cómo sueles ser, pero esta historia no puedo dejarla pasar como si nada. Explícame paso a paso qué le dijiste a Haeun.",
         "groupLocation": "Pasillo frente a la sala de radio durante el festival escolar",
         "context": "Haeun perdió confianza durante su conversación libre anterior con el protagonista. Contó su incomodidad a la persona con mayor afinidad, que ahora desconfía más de él. Los tres se reúnen en el pasillo. La afinidad de la otra persona ya bajó 15 puntos, o 20 si se pospuso la explicación. La impresión de Haeun puede diferir de la intención. Usa solo la transcripción anterior como prueba. No inventes insultos, amenazas ni promesas rotas. Si falta el registro, trata solo su impresión incómoda sin citar frases concretas.",
@@ -705,7 +705,7 @@
         "text": "*La enfermera borra la sonrisa de su mirada hasta ahora amable.* Aplazar la respuesta no hará que esta incomodidad se resuelva sola. ¿Me lo explicas con calma aquí mismo?"
     },
     "day5_haeun_concern_nurse_group_talk": {
-        "name": "Enfermera",
+        "name": "Enfermera · Haeun",
         "text": "*La enfermera mira primero cómo está Haeun y luego se vuelve hacia mí.* No esperaba escuchar sobre ti en un momento como este. Yo también quiero escuchar de ti por qué esto le preocupa a Haeun. ¿Qué dijiste entonces?",
         "groupLocation": "Pasillo frente a la sala de radio durante el festival escolar",
         "context": "Haeun perdió confianza durante su conversación libre anterior con el protagonista. Contó su incomodidad a la persona con mayor afinidad, que ahora desconfía más de él. Los tres se reúnen en el pasillo. La afinidad de la otra persona ya bajó 15 puntos, o 20 si se pospuso la explicación. La impresión de Haeun puede diferir de la intención. Usa solo la transcripción anterior como prueba. No inventes insultos, amenazas ni promesas rotas. Si falta el registro, trata solo su impresión incómoda sin citar frases concretas.",

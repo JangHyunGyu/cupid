@@ -9,15 +9,15 @@
     },
     "after3_auto_dain": {
         "name": "{name}",
-        "text": "*Não me sai da cabeça o pé direito da Dain, que de manhã, no portão, vinha colada em mim, um tempo atrasada. Sigo para o ginásio.*"
+        "text": "*Não sai da minha cabeça o jeito que a Dain parecia poupar a perna desde de manhã. Sigo para o ginásio.*"
     },
     "after3_auto_yuna": {
         "name": "{name}",
-        "text": "*Lembro da ponta dos dedos da Yuna, que no almoço inteiro só mexia no marcador de página, sem dizer nada. Vou para o anexo da biblioteca.*"
+        "text": "*Lembro de como a Yuna ficou quieta demais na hora do almoço. Sigo para o anexo da biblioteca.*"
     },
     "after3_auto_seo": {
         "name": "{name}",
-        "text": "*Não me sai da cabeça o rosto de Seoyeon, baixando o olhar enquanto apertava firme a prancheta. Subo a escada em direção à sala do grêmio.*"
+        "text": "*Fico preocupado com a cara tensa da Seoyeon desde de manhã. Subo as escadas rumo à sala do grêmio.*"
     },
     "after3_multi_choice": {
         "name": "{name}",
@@ -63,7 +63,7 @@
     },
     "after3_seo_3": {
         "name": "Seoyeon",
-        "text": "*Assustada com o som da porta, Seoyeon se senta. O laço está ligeiramente desfeito e o rímel está levemente borrado sob seus olhos avermelhados.*"
+        "text": "*Assustada com a porta, Seoyeon se ergue. A gola da camisa está meio desalinhada e um borrão leve de rímel marca sob os olhos avermelhados.*"
     },
     "after3_seo_4": {
         "name": "Seoyeon",
@@ -224,7 +224,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*De Seoyeon só ouvi assuntos do grêmio e para Dain deixei apenas um oi rápido. No fim, não consigo nem tocar na conversa sobre os compromissos do fim de semana.*"
+        "text": "*Saindo para o corredor, só troquei cumprimentos rápidos com Seoyeon e Dain. No fim, não consegui tocar no assunto dos planos de fim de semana.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -508,7 +508,7 @@
     },
     "after3_dain_dilemma_tell_2": {
         "name": "{name}",
-        "text": "O joelho direito. Desde manhã, quando você correu no portão, já me chamou atenção, e você não para de esfregar. Isso não foi só um mau jeito de hoje, né?"
+        "text": "Seu joelho direito. Quando você aterrissou agora há pouco deu pra ver, e não para de esfregar no banco. Não foi só um mau jeito de hoje, né?"
     },
     "after3_dain_dilemma_tell_3": {
         "name": "{name}",
@@ -570,11 +570,11 @@
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Você disse que, quando se sentisse pronta, ia contar para mim antes de todo mundo."
+        "text": "Combinamos que eu ia esperar até você ficar pronta para contar por conta própria."
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
-        "text": "Quer dizer para eu falar quando organizar o que sinto, né? Sem me apressar para despejar tudo agora. *Dain morde o lábio, passa as costas da mão pelos olhos úmidos e abre um sorriso claro.*"
+        "text": "Quer dizer que vai respeitar o meu ritmo sem me arrastar à força pra enfermaria, né? *Dain morde o lábio, enxuga os olhos com as costas da mão e abre um sorrisão.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -676,7 +676,7 @@
     "after3_confront_excuse_b": {},
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
-        "text": "O problema não é se você tem energia pra encontrar tanta gente. O que me irrita é o combinado comigo ter pesado tão pouco pra você."
+        "text": "Não é questão de ter tempo sobrando ou não. O que me deixa furiosa é você tratar tão levianamente um combinado comigo."
     },
     "after3_confront_excuse_2_b": {
         "name": "Seoyeon",
@@ -834,7 +834,7 @@
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Ela me disse para não perguntar nada e ir embora primeiro. Mas ficou um bom tempo sem conseguir sair de diante da pia, com a água fria aberta."
+        "text": "Ela pediu para eu não perguntar nada e ir na frente, mas ficou um tempão sem sair da frente da pia com a água fria ligada."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -1011,7 +1011,7 @@
     },
     "after3_seo_overcare_react": {
         "name": "Seoyeon",
-        "text": "*A expressão de Seoyeon endurece, fria.* Você vai entender tudo, até a parte em que eu fico fraca, e cuidar de mim do lado? O que eu acabei de pedir não foi pena. Foi que me tratasse como sempre."
+        "text": "*O rosto de Seoyeon esfria na hora.* Não contei isso para receber pena. Eu pedi antes para me tratar normalmente."
     },
     "after3_yuna_control_react": {
         "name": "Yuna",

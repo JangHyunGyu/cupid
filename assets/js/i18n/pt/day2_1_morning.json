@@ -49,7 +49,7 @@
     "morning2_greet_yuna_1": {},
     "morning2_greet_yuna_2": {
         "name": "{name}",
-        "text": "*Desdobro na mão o bilhete bem vincado; em tinta lilás-clara está escrito: 'Para o anexo da biblioteca no almoço.'*"
+        "text": "*Pego o bilhete pousado sobre a carteira e o desdobro; em tinta lilás está escrito: \"Para o anexo da biblioteca no almoço.\"*"
     },
     "morning2_greet_yuna_others": {
         "name": "Seoyeon",
@@ -293,7 +293,7 @@
     },
     "morning2_seo_dust_5": {
         "name": "{name}",
-        "text": "Você me assustou chegando com a mão assim de repente, sem falar nada. *Meio sem graça à toa, ajeito o blazer do uniforme.*"
+        "text": "Sua mão veio do nada sem avisar, levei um susto. *Meio sem jeito, ajeito o blazer do uniforme.*"
     },
     "morning2_seo_dust_6": {
         "name": "Seoyeon",

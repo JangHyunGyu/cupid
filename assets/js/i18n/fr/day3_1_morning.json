@@ -13,7 +13,7 @@
     },
     "hidden_nurse_d3_neg": {
         "name": "Infirmière",
-        "text": "*En refermant le classeur des fiches, elle ne regarde même pas vers la chaise.* Uniquement par le guichet officiel. Retourne en classe."
+        "text": "*Elle referme le classeur sans même regarder vers la chaise.* Si tu as besoin d’un entretien, prends rendez-vous sur les créneaux normaux. Retourne en classe."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",
@@ -42,7 +42,7 @@
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon laisse échapper un léger souffle et tourne le bout de ses chaussures vers moi. Ses doigts serrent son porte-bloc un peu plus fort que d'habitude.*"
+        "text": "*Seoyeon expire doucement et se tourne vers moi, les mains vides sagement posées le long de sa jupe d’uniforme.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "Madame, vous étiez toute seule dans cette salle vide. *Quand j'ouvre doucement la porte, la plume de ma professeure principale s'immobilise sur les feuillets posés sur le pupitre.*"
+        "text": "*À la pause après le rassemblement du matin et le premier cours, j’entrouvre doucement la porte de la salle vide.* Vous étiez seule ici, madame ? *Sa plume s’arrête au-dessus des feuilles de manuscrit.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Professeure principale",
@@ -393,7 +393,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Professeure principale",
-        "text": "Dans la semaine, j'ai l'intention de le montrer d'abord aux autres professeurs de lettres. J'ai l'impression que si je le garde dans un tiroir, je n'y mettrai jamais de point final."
+        "text": "Dans le courant de la semaine prochaine, je compte d’abord le montrer aux collègues de lettres. Si je le laisse au fond d’un tiroir, je ne mettrai jamais le point final."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Professeure principale",
@@ -443,7 +443,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*À la pause, j'ouvre la porte de l'infirmerie. Dans l'odeur d'antiseptique, le pansement étanche posé hier sur mon coude frôle l'intérieur de ma manche.*"
+        "text": "*À la pause après la première heure, j’ouvre la porte de l’infirmerie. Dans l’odeur d’antiseptique, le pansement étanche collé hier au coude frôle l’intérieur de ma manche.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Infirmière",
@@ -612,9 +612,9 @@
         "name": "Infirmière",
         "text": "*L'infirmière repousse complètement le tiroir et lève les yeux vers moi. Imprégnée d'odeur d'antiseptique, l'infirmerie devient encore plus calme.*",
         "choices": [
-            "C'est pour ça que vous avez quitté l'hôpital ?",
-            "Ça ne vous dérange pas d'en parler davantage ?",
-            "Vous ne vous sentiriez pas mieux après avoir tout raconté ?"
+            "Pensez-vous encore souvent à ce patient ?",
+            "Ça va si l’on continue d’en parler ?",
+            "Ne vous sentiriez-vous pas plus légère en vidant votre sac ?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {

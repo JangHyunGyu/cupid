@@ -98,7 +98,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "Se nos hace tarde. Sígueme, {name}. *Se tapa con el pelo la oreja, algo colorada, y camina un paso por delante.*"
+        "text": "Se nos hace tarde. Date prisa y sígueme. *Seoyeon aparta la mirada y camina un paso por delante.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "El edificio principal por el que vamos es el de 3.º. Al otro lado de la ventana está la biblioteca. La tienda escolar queda justo al bajar las escaleras del sótano."
+        "text": "Este edificio principal es el de tercero, y la biblioteca queda frente a las ventanas. Si bajas las escaleras, la tienda está al fondo del primer piso."
     },
     "hallway_4": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*Medio girada, Seoyeon levanta ligeramente el portapapeles a la altura del hombro a modo de despedida y se da la vuelta hacia el pasillo.*"
+        "text": "*Medio vuelta, Seoyeon levanta ligeramente su carpeta a modo de saludo.* Nos vemos en el almuerzo."
     },
     "hallway_13_b": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "classroom_dain_5_d": {
         "name": "Profesora",
-        "text": "*Tras soltar un breve suspiro, la profesora frunce apenas el ceño y da dos toques en el atril con la lista de asistencia.*"
+        "text": "*Soltando un breve suspiro, la profesora frunce ligeramente el ceño y abre el registro de asistencia.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -295,11 +295,11 @@
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*Al desplegar la esquina doblada, aparece una letra limpia en tinta lavanda.* Te tocó un sitio ruidoso desde el primer día. — Yuna"
+        "text": "*Desdoblo la nota y veo una letra pulcra en tinta lavanda.* Qué asiento más ruidoso desde el primer día. - Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*Al volver a mirar atrás, los dedos pálidos de Yuna, iluminados por el sol de la ventana, bajan sin ruido bajo su pupitre.*"
+        "text": "*Al mirar atrás otra vez, Yuna baja discretamente la mano bajo el pupitre.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

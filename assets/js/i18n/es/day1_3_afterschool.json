@@ -29,13 +29,13 @@
         "text": "Antes, por las escaleras, vi subir junto a la presidenta a alguien muy parecido a ti de espaldas. ¿Acaso subieron juntos a la azotea?"
     },
     "after1_jealousy_seo_choice": {
-        "name": "Dain",
+        "name": "{name}",
         "text": "*Con Dain mirándome con los ojos entrecerrados en mitad del pasillo, aprieto la correa de mi mochila.*",
         "choices": [
-            "Comí en la azotea con la presidenta. (Sincero)",
-            "Solo estuve recorriendo la escuela. (Mentira)",
-            "Si hubiera sabido que me buscarías así, te habría invitado a comer con nosotros.",
-            "Si hubiera sabido que te pondrías celosa, te lo habría dicho antes."
+            "Comí en la azotea con la presidenta.",
+            "Estuve dando una vuelta solo.",
+            "De haber sabido que me buscabas, te habría invitado a comer.",
+            "De haber sabido que te ibas a poner celosa, te habría avisado antes."
         ]
     },
     "after1_jealousy_seo_honest": {
@@ -56,7 +56,7 @@
     },
     "after1_jealousy_seo_yuna": {
         "name": "Yuna",
-        "text": "*Despliego la nota metida en el bolsillo lateral de mi mochila y reconozco la letra cuidada de Yuna en tinta lavanda.* Te vi bajar de la azotea en el almuerzo. Parecías bastante cercano a la presidenta."
+        "text": "*Después de que Dain se va corriendo hacia el gimnasio, abro la nota metida en el bolsillo lateral de mi mochila. Se ve la letra prolija de Yuna en tinta lavanda.* Te vi bajar de la azotea en el almuerzo. Parecían bastante cercanos tú y la presidenta."
     },
     "after1_jealousy_dain_1": {
         "name": "Seoyeon",
@@ -64,7 +64,7 @@
     },
     "after1_jealousy_dain_2": {
         "name": "{name}",
-        "text": "*Seoyeon acomoda el borde del portapapeles que lleva en brazos. Ante la mirada serena tras sus gafas, me detengo y pienso qué responder.*"
+        "text": "*Seoyeon acomoda la carpeta contra su pecho.* Me queda trabajo por hacer después de clase, así que me adelanto. *Se despide brevemente y pasa de largo.*"
     },
     "after1_jealousy_yuna_1": {
         "name": "Dain",
@@ -81,7 +81,7 @@
     "after_dain_skip": {},
     "after_miss_dain_1": {
         "name": "{name}",
-        "text": "*Al doblar la esquina del pasillo, a mi espalda se acercan rápido unos pasos ligeros: las suelas de unas zapatillas golpean el suelo de madera.*"
+        "text": "*Al doblar la esquina del pasillo, unos pasos apresurados arrastrando zapatillas se acercan deprisa a mis espaldas.*"
     },
     "after_miss_dain_2": {
         "name": "Dain",
@@ -114,7 +114,7 @@
     "after_yuna_skip": {},
     "after_miss_yuna_1": {
         "name": "{name}",
-        "text": "*En el pasillo frente a la biblioteca del anexo me cruzo con Yuna, que sale abrazando un libro grueso. Por el puño del uniforme asoma un pequeño tatuaje.*"
+        "text": "*En el pasillo frente a la biblioteca del anexo me cruzo con Yuna saliendo con un libro grueso. Bajo las mangas remangadas del uniforme se distingue claramente el tatuaje oscuro de su antebrazo.*"
     },
     "after_miss_yuna_1_b": {
         "name": "{name}",
@@ -151,7 +151,7 @@
     },
     "after_miss_seoyeon_4": {
         "name": "Seoyeon",
-        "text": "Al empezar el almuerzo te invité a subir a la azotea, ¿recuerdas? Rechazar a la presidenta del consejo el primer día requiere bastante agallas."
+        "text": "Te dije que subieras a la azotea a la hora del almuerzo. Saltarte la invitación de la presidenta del consejo en tu primer día demuestra bastante descaro."
     },
     "after_miss_seoyeon_5": {
         "name": "{name}",
@@ -163,7 +163,7 @@
     },
     "after_miss_seoyeon_7": {
         "name": "{name}",
-        "text": "*Seoyeon acomoda contra el pecho los papeles sujetos a su carpeta, baja un poco la vista y pulsa el clic del bolígrafo.*"
+        "text": "*Seoyeon abraza los papeles de su carpeta contra el pecho, baja la mirada y hace clic con el bolígrafo.*"
     },
     "after_miss_seoyeon_8": {
         "name": "Seoyeon",
@@ -261,7 +261,7 @@
     },
     "after_homeroom_honest_3_b": {
         "name": "Profesora",
-        "text": "*La profesora pone el portapapeles boca abajo y frota despacio con el pulgar el borde liso de plástico.*"
+        "text": "*Apoya la mano junto al vaso de papel, sonríe un instante y sigue hablando con calma.*"
     },
     "after_homeroom_honest_4": {
         "name": "Profesora",
@@ -277,7 +277,7 @@
     },
     "after_homeroom_honest_6_b": {
         "name": "Profesora",
-        "text": "*Con una sonrisa traviesa, aplasta con el pulgar la esquina un poco doblada de la lista de asistencia y la deja lisa.*"
+        "text": "*Sonriendo con picardía, aparta a un lado el registro de asistencia del escritorio.*"
     },
     "after_homeroom_honest_choice2": {
         "name": "{name}",
@@ -327,7 +327,7 @@
     },
     "after_homeroom_freetalk": {
         "name": "Profesora",
-        "text": "*Deja la puerta de la sala de profesores a medio cerrar, se encaja la lista de asistencia bajo el brazo y se pone a mi paso.*",
+        "text": "*Dejando la puerta de la sala de profesores medio abierta, sostiene el registro bajo el brazo y se acerca a mi lado.* ¿Te queda algo más por preguntar?",
         "context": "[Medio: presencial] Frente a la sala de profesores, al acabar el primer día del alumno. Él pidió consejo para adaptarse y su tutora lo escuchó. Continúa esa conversación a partir de lo que dijo y del motivo de su visita.",
         "personality": "La tutora es una profesora que ronda los treinta y, aunque parece indiferente, no pierde de vista el estado de sus alumnos. Tiene el cabello largo, castaño y ondulado, usa un cárdigan beige y realiza la orientación y el acompañamiento mediante los procedimientos formales de la escuela. Antes soñaba con ser novelista y todavía le interesa la escritura creativa."
     },
@@ -339,10 +339,10 @@
         "name": "{name}",
         "text": "*El cansancio de llevar desde la mañana entre miradas extrañas y bullicio me cae de golpe y me detiene frente a la puerta de la enfermería.*",
         "choices": [
-            "Entrar a la enfermería",
-            "Ir directamente a casa",
-            "Pasaré el rato tumbado en una cama de la enfermería antes de irme.",
-            "Tampoco es que me duela nada, pero entraré solo por curiosear."
+            "Entrar en la enfermería",
+            "Irse a casa sin más",
+            "Decir que es excusa para descansar en una camilla",
+            "Decir que no pasa nada y solo vengo a curiosear"
         ]
     },
     "after_hidden_nurse_intro_b": {
@@ -383,7 +383,7 @@
     },
     "after_nurse_enter_4_c": {
         "name": "Enfermera",
-        "text": "Para empezar, es un rostro guapo que veo por primera vez, y la chaqueta del uniforme no tiene ni una marca de doblez. ¿A que he acertado?"
+        "text": "Para empezar eres una cara nueva, y esas marcas de prenda nueva siguen intactas en las mangas del uniforme. ¿Acerté, verdad?"
     },
     "after_nurse_enter_4_d": {
         "name": "Enfermera",
@@ -472,7 +472,7 @@
     },
     "after_nurse_enter_10_b": {
         "name": "Enfermera",
-        "text": "Listo, ya pasaron diez minutos. ¿Cómo tienes el estómago? *Dentro del cajón entreabierto se alcanza a ver un cuaderno verde claro algo desgastado.*"
+        "text": "*Después de que pasa un rato en el reloj, corre la cortina.* Listo, pasaron diez minutos. ¿Cómo va el estómago? *Dentro del cajón medio abierto asoma una libreta verde claro algo descolorida.*"
     },
     "after_nurse_enter_10_c": {
         "name": "{name}",
@@ -537,7 +537,7 @@
     },
     "after_nurse_freetalk": {
         "name": "Enfermera",
-        "text": "*Sujeta la hoja de atención en su carpeta y echa un vistazo al reloj de pared.* ¿Ya se te pasó un poco el mareo?",
+        "text": "*Sujeta la ficha clínica en su carpeta y mira el reloj de pared.* Desde mañana desayuna sin falta. El primer día habrá sido un lío, ¿qué tal el ambiente de tu clase?",
         "context": "Día 1 después de clases. El estudiante nuevo se mareó y fue a la enfermería. La enfermera revisó los síntomas y le permitió descansar; la conversación continúa mientras observa su recuperación y adaptación a la escuela.",
         "personality": "La enfermera escolar habla con calma y es muy observadora. Llegó a la escuela tras sufrir agotamiento profesional mientras trabajaba como enfermera en un hospital universitario y, cuando hace falta, usa un humor ligero para aliviar la tensión de los alumnos. Mantiene los límites profesionales durante la atención y la orientación."
     },

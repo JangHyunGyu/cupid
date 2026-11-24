@@ -152,7 +152,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*La première semaine depuis mon transfert touche déjà à sa fin. Avant de prendre la poignée de la classe, je repasse en silence les souffles et les voix qui m'ont frôlé l'oreille pendant ces quatre jours. Le bout de mes doigts chauffe, d'une chaleur agréable.*"
+        "text": "*Ma première semaine après le transfert touche déjà à sa fin. Avant de saisir la poignée, les conversations de ces quatre jours défilent tour à tour et j’entre d’un pas étrangement léger.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -268,15 +268,15 @@
         "name": "{name}",
         "text": "*Je prends à deux bras l'enveloppe du manuscrit que la professeure principale me tend. La chaleur lourde de la liasse presse l'intérieur de mes bras.*",
         "choices": [
-            "Après sept ans, ça doit être presque terminé. Je n'ai sans doute rien besoin de noter.",
-            "Je vais d'abord le lire. Je peux écrire dessus ?",
-            "Les passages difficiles doivent être voulus, alors je les laisserai tels quels.",
-            "Puisque c’est votre texte, je ne noterai que les bons côtés."
+            "Après sept ans, c’est sûrement presque fini, rien à annoter",
+            "Je vais le lire d’abord. Je peux mettre des marques ?",
+            "Les passages difficiles doivent être voulus, donc je les laisse tels quels.",
+            "Puisque c’est votre texte, je ne noterai que les qualités"
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Professeure principale",
-        "text": "*Elle esquisse un sourire mélancolique et lisse le coin de l'enveloppe.* Tu n'as pas besoin de choisir quelque chose de gentil avant même d'avoir tourné la première page. Le fait de la garder longtemps ne signifie pas que je l'ai bien écrite."
+        "text": "*Elle sourit d’un air amer en lissant le coin de l’enveloppe.* Pas besoin d’esquiver avant même de tourner la première page. Garder un texte des années n’en fait pas un chef-d’œuvre."
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professeure principale",
@@ -384,7 +384,7 @@
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*Je revois la pile d'exemplaires de critique, entassée sur la table du fond du café, vers le soir. Au coin de l'enveloppe brune dans ma main, le chiffre 04 est écrit d'une main nette.*"
+        "text": "*La pile de manuscrits posée hier matin sur la table au fond du café me revient en tête. Dans le coin de l’enveloppe kraft entre mes mains figure le chiffre « 04 ».*"
     },
     "hidden_homeroom_d5_6_c": {},
     "hidden_homeroom_d5_6_d": {
@@ -457,11 +457,11 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "Professeure principale",
-        "text": "*La professeure principale sort la première dans le couloir et vérifie, nom par nom, les élèves qui préparent les stands de la fête.*"
+        "text": "*En rassemblant ses feuilles sur le bureau, la professeure jette un dernier coup d’œil à la liste des stands du festival.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professeure principale",
-        "text": "*Du regard, elle désigne l'enveloppe de l'exemplaire de critique numéro 04 que je tiens contre moi.* C'est la dernière relecture. Même si tu vois des phrases vides, ne sois pas indulgent. Signale-les."
+        "text": "*Désignant l’enveloppe n° 04 dans mes bras, elle se tourne vers la porte du couloir.* Dernière relecture. Même si une phrase te paraît creuse, ne me ménage pas et signale-la."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -636,7 +636,7 @@
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
-        "text": "*L'air de la classe, à la veille de l'ouverture du festival, est froid comme une plaque de glace. Les trois sont assises loin les unes des autres, dans trois coins de la salle, et sur la feuille des rôles collée au tableau, il n'y a que des tâches sèches, purement administratives.*"
+        "text": "*Avant l’ouverture du festival, l’atmosphère de la classe reste glaciale. Les trois restent loin l’une de l’autre et le tableau des tâches n’affiche que des noms secs.*"
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",

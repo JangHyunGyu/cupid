@@ -9,15 +9,15 @@
     },
     "after3_auto_dain": {
         "name": "{name}",
-        "text": "*Le pied droit de Dain, qui ce matin me suivait d'un demi-temps de retard devant le portail, me revient sans cesse. Je prends la direction du gymnase.*"
+        "text": "*La façon dont Dain faisait attention à sa jambe depuis ce matin me tracasse. Je me dirige vers le gymnase.*"
     },
     "after3_auto_yuna": {
         "name": "{name}",
-        "text": "*Les doigts de Yuna, qui ont tripoté un marque-page en silence pendant toute la pause déjeuner, me reviennent. Je me dirige vers l'annexe de la bibliothèque.*"
+        "text": "*Le silence inhabituel de Yuna au déjeuner me trotte encore dans la tête. Je prends la direction de l’annexe.*"
     },
     "after3_auto_seo": {
         "name": "{name}",
-        "text": "*Le visage de Seoyeon, baissant les yeux tout en serrant fort son porte-bloc, me reste en tête. Je monte l'escalier vers la salle du conseil des élèves.*"
+        "text": "*L’air crispé que gardait Seoyeon depuis ce matin me préoccupe. Je monte l’escalier vers la salle du conseil.*"
     },
     "after3_multi_choice": {
         "name": "{name}",
@@ -63,7 +63,7 @@
     },
     "after3_seo_3": {
         "name": "Seoyeon",
-        "text": "*Surprise par le bruit de la porte, Seoyeon se redresse. Le ruban est légèrement défait, et le mascara est légèrement étalé sous ses yeux rougis.*"
+        "text": "*Surprise par le bruit de la porte, Seoyeon se redresse. Le col de sa chemise est légèrement froissé et un peu de mascara a filé sous ses yeux rougis.*"
     },
     "after3_seo_4": {
         "name": "Seoyeon",
@@ -224,7 +224,7 @@
     },
     "after3_reject_for_yuna_4": {
         "name": "{name}",
-        "text": "*Seoyeon ne m'a parlé que des affaires du conseil et je n'ai laissé qu'un bref salut à Dain. Au bout du compte, pas moyen d'aborder les rendez-vous du week-end.*"
+        "text": "*Sorti dans le couloir, je n’ai échangé qu’un bref salut avec Seoyeon et Dain. Au final, je n’ai pas réussi à aborder la question du week-end.*"
     },
     "after3_yuna_1": {
         "name": "{name}",
@@ -508,7 +508,7 @@
     },
     "after3_dain_dilemma_tell_2": {
         "name": "{name}",
-        "text": "Ton genou droit. Dès ce matin, quand tu courais au portail, ça me travaillait, et depuis tout à l'heure tu n'arrêtes pas de le frotter. C'est pas juste un faux mouvement d'aujourd'hui, hein ?"
+        "text": "Ton genou droit. À ta réception tout à l’heure déjà, et tu continues de le frotter sur le banc. Tu ne te l’es pas juste tordu aujourd’hui, si ?"
     },
     "after3_dain_dilemma_tell_3": {
         "name": "{name}",
@@ -570,11 +570,11 @@
     },
     "after3_dain_choice1_3": {
         "name": "{name}",
-        "text": "Tu m'as promis que, le jour où tu serais prête, c'est à moi que tu en parlerais en premier."
+        "text": "On avait convenu que j’attendrais que tu sois prête à le dire toi-même."
     },
     "after3_dain_choice1_react": {
         "name": "Dain",
-        "text": "Tu veux dire que j'en parlerai quand je serai prête, c'est ça ? Sans me pousser à tout déballer tout de suite. *Dain se mord la lèvre, essuie ses yeux humides du revers de la main et sourit franchement.*"
+        "text": "Tu veux dire que tu vas me laisser aller à mon rythme sans me traîner de force à l’infirmerie ? *Dain se mordille la lèvre, s’essuie les yeux du revers de la main et retrouve un grand sourire.*"
     },
     "after3_dain_choice1_react2": {
         "name": "Dain",
@@ -676,7 +676,7 @@
     "after3_confront_excuse_b": {},
     "after3_confront_excuse_2": {
         "name": "Seoyeon",
-        "text": "Le problème, ce n'est pas de savoir si tu as la force de voir tant de personnes. Ce qui me met en colère, c'est que, pour toi, le rendez-vous pris avec moi n'avait que ce poids-là."
+        "text": "Ce n’est pas une question d’emploi du temps libre. Ce qui m’énerve, c’est la légèreté avec laquelle tu as traité notre promesse."
     },
     "after3_confront_excuse_2_b": {
         "name": "Seoyeon",
@@ -834,7 +834,7 @@
     },
     "haeun_warn_5b": {
         "name": "Haeun",
-        "text": "Elle m'a dit de ne rien demander et de partir avant elle. Mais devant le lavabo, l'eau froide ouverte, elle n'a pas pu sortir pendant un long moment."
+        "text": "Elle m’a dit de ne rien demander et de rentrer avant elle, mais elle est restée très longtemps figée devant le lavabo avec l’eau froide ouverte."
     },
     "haeun_warn_5c": {
         "name": "{name}",
@@ -1011,7 +1011,7 @@
     },
     "after3_seo_overcare_react": {
         "name": "Seoyeon",
-        "text": "*L'expression de Seoyeon se fige, froide.* Tu veux tout comprendre, même mes moments de faiblesse, et me prendre en charge ? Ce que je viens de demander, c'était pas de la pitié. C'était que tu me traites comme d'habitude."
+        "text": "*Le visage de Seoyeon se glace.* Je ne t’ai pas raconté ça par pitié. Je t’ai demandé tout à l’heure de me traiter comme d’habitude."
     },
     "after3_yuna_control_react": {
         "name": "Yuna",

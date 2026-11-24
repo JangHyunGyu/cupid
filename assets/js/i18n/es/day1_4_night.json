@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*En la aplicación del instituto aparece el aviso de clase junto con una nota individual de la tutora: «Mañana traed el libro de matemáticas para primera hora. — Y en cuanto al alumno nuevo que llegó hoy, con que te estés adaptando bien me basta.»*"
+        "text": "*En las notificaciones de la app escolar aparece un aviso de clase con una nota individual de la profesora: \"Mañana traer el libro de mates a primera hora. Y el estudiante nuevo que no se exija de más y se adapte poco a poco.\"*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Al recordar el consejo suave de la enfermera de esta tarde, me levanto y lleno de agua la botella de la mesilla.*"
+        "text": "*Al acordarme de lo que dijo la enfermera por la tarde, me levanto, sirvo un vaso de agua y lo dejo en la mesilla.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "Mañana temprano busco a una sola persona, por orden de llegada, para salir al campo a calentar."
+        "text": "Mañana no te quedes dormido y llega temprano al aula, busco al primero que llegue por orden de llegada"
     },
     "night_dain_late_3": {
         "name": "Dain",
@@ -133,11 +133,11 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Pensando en los rostros detrás de los nombres nuevos guardados hoy en mis contactos, dejo el móvil bloqueado junto a la almohada.*"
+        "text": "*Repasando una por una las caras que conocí en mi primer día aquí, dejo el teléfono bloqueado junto a la cama.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Miro hacia el techo a oscuras. Del uniforme nuevo colgado en la percha llega tenue el aroma de la brisa primaveral de hoy.*"
+        "text": "*Miro el techo a oscuras. El uniforme nuevo colgado en la percha todavía me resulta algo extraño.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",

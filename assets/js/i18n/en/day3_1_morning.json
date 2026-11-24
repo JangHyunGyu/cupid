@@ -13,7 +13,7 @@
     },
     "hidden_nurse_d3_neg": {
         "name": "School Nurse",
-        "text": "*She closes the chart binder and doesn't even look toward the chair.* Submit it only through the official desk. Go back to class."
+        "text": "*Closing the chart binder without even looking at the chair.* If you need counseling, book an appointment during regular hours. Go back to class."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",
@@ -42,7 +42,7 @@
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon lets out a quiet breath and turns the toes of her shoes toward me. Her fingertips grip the edge of her clipboard a little tighter than usual.*"
+        "text": "*Seoyeon lets out a quiet breath and turns to face me, holding her empty hands neatly beside her uniform skirt.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "You were in the empty classroom by yourself, ma'am. *As I quietly open the door, the nib of my homeroom teacher's fountain pen pauses over the manuscript paper on the lectern.*"
+        "text": "*Break time after morning assembly and first period, I quietly slide open the empty classroom door.* Teacher, you were in here alone? *At the lectern, her fountain pen halts over the manuscript pages.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Homeroom Teacher",
@@ -393,7 +393,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Homeroom Teacher",
-        "text": "Within this week, I'm planning to show it to the other language arts teachers first. I feel like if I just keep it in a drawer, I'll never put the period on it."
+        "text": "Sometime next week, I plan to show it to the other language arts teachers first. If I keep it locked in a drawer forever, I'll never put a period on it."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Homeroom Teacher",
@@ -443,7 +443,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*During break, I open the infirmary door. Amid the scent of antiseptic, the waterproof adhesive bandage from yesterday brushes the inside of my shirt sleeve.*"
+        "text": "*Break time after morning assembly and first period, I open the infirmary door. Amid the antiseptic scent, yesterday's waterproof elbow bandage brushes inside my shirt sleeve.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "School Nurse",
@@ -612,7 +612,7 @@
         "name": "School Nurse",
         "text": "*The school nurse pushes the drawer all the way shut and looks up at me. Steeped in the scent of antiseptic, the infirmary grows quieter still.*",
         "choices": [
-            "Is that why you left the hospital?",
+            "Do you still think about that patient a lot?",
             "Are you okay talking more about it?",
             "Wouldn't you feel better if you told me everything?"
         ]

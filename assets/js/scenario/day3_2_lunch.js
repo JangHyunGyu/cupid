@@ -186,10 +186,18 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_seo_skin_check"
     },
     "lunch3_seo_skin_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/seyoun_normal.png",
         "affinityChar": "Seoyeon",
-        "affinityBranches": [{"minAffinity":40,"next":"lunch3_seo_skin_1"},{"minAffinity":-100,"next":"lunch3_give_seo_2_check"}]
+        "affinityBranches": [
+            {
+                "minAffinity": 40,
+                "next": "lunch3_seo_skin_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_seo_2_check"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_seo_skin_1": {
         "background": "assets/images/background/room_school.png",
@@ -208,24 +216,42 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_give_seo_2_check"
     },
     "lunch3_give_seo_2_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "branches": [
-            { "condition": "day3_has_multiple_dates", "next": "lunch3_give_seo_2" },
-            { "next": "lunch3_give_seo_dain_affinity" }
-        ]
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "lunch3_give_seo_2"
+            },
+            {
+                "next": "lunch3_give_seo_dain_affinity"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_seo_dain_affinity": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "affinityChar": "Dain",
         "affinityBranches": [
-            { "minAffinity": 35, "next": "lunch3_give_seo_2" },
-            { "minAffinity": 15, "next": "lunch3_give_seo_dain_mid" },
-            { "minAffinity": 0, "next": "lunch3_give_seo_dain_low" },
-            { "minAffinity": -19, "next": "lunch3_give_seo_dain_low" },
-            { "minAffinity": -100, "next": "lunch3_give_seo_dain_neg" }
-        ]
+            {
+                "minAffinity": 35,
+                "next": "lunch3_give_seo_2"
+            },
+            {
+                "minAffinity": 15,
+                "next": "lunch3_give_seo_dain_mid"
+            },
+            {
+                "minAffinity": 0,
+                "next": "lunch3_give_seo_dain_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "lunch3_give_seo_dain_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_seo_dain_neg"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_seo_dain_mid": {
         "background": "assets/images/background/room_school.png",
@@ -315,24 +341,42 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_give_seo_3_check"
     },
     "lunch3_give_seo_3_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "branches": [
-            { "condition": "day3_has_multiple_dates", "next": "lunch3_give_seo_3" },
-            { "next": "lunch3_give_seo_yuna_affinity" }
-        ]
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "lunch3_give_seo_3"
+            },
+            {
+                "next": "lunch3_give_seo_yuna_affinity"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_seo_yuna_affinity": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "affinityChar": "Yuna",
         "affinityBranches": [
-            { "minAffinity": 35, "next": "lunch3_give_seo_3" },
-            { "minAffinity": 15, "next": "lunch3_give_seo_yuna_mid" },
-            { "minAffinity": 0, "next": "lunch3_give_seo_yuna_low" },
-            { "minAffinity": -19, "next": "lunch3_give_seo_yuna_low" },
-            { "minAffinity": -100, "next": "lunch3_give_seo_yuna_neg" }
-        ]
+            {
+                "minAffinity": 35,
+                "next": "lunch3_give_seo_3"
+            },
+            {
+                "minAffinity": 15,
+                "next": "lunch3_give_seo_yuna_mid"
+            },
+            {
+                "minAffinity": 0,
+                "next": "lunch3_give_seo_yuna_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "lunch3_give_seo_yuna_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_seo_yuna_neg"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_seo_yuna_mid": {
         "background": "assets/images/background/room_school.png",
@@ -385,10 +429,18 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_dain_skin_check"
     },
     "lunch3_dain_skin_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/dain_laugh.png",
         "affinityChar": "Dain",
-        "affinityBranches": [{"minAffinity":40,"next":"lunch3_dain_skin_1"},{"minAffinity":-100,"next":"lunch3_give_dain_2_check"}]
+        "affinityBranches": [
+            {
+                "minAffinity": 40,
+                "next": "lunch3_dain_skin_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_dain_2_check"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_dain_skin_1": {
         "background": "assets/images/background/room_school.png",
@@ -402,24 +454,42 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_give_dain_2_check"
     },
     "lunch3_give_dain_2_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "branches": [
-            { "condition": "day3_has_multiple_dates", "next": "lunch3_give_dain_2" },
-            { "next": "lunch3_give_dain_seo_affinity" }
-        ]
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "lunch3_give_dain_2"
+            },
+            {
+                "next": "lunch3_give_dain_seo_affinity"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_dain_seo_affinity": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "affinityChar": "Seoyeon",
         "affinityBranches": [
-            { "minAffinity": 35, "next": "lunch3_give_dain_2" },
-            { "minAffinity": 15, "next": "lunch3_give_dain_seo_mid" },
-            { "minAffinity": 0, "next": "lunch3_give_dain_seo_low" },
-            { "minAffinity": -19, "next": "lunch3_give_dain_seo_low" },
-            { "minAffinity": -100, "next": "lunch3_give_dain_seo_neg" }
-        ]
+            {
+                "minAffinity": 35,
+                "next": "lunch3_give_dain_2"
+            },
+            {
+                "minAffinity": 15,
+                "next": "lunch3_give_dain_seo_mid"
+            },
+            {
+                "minAffinity": 0,
+                "next": "lunch3_give_dain_seo_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "lunch3_give_dain_seo_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_dain_seo_neg"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_dain_seo_mid": {
         "background": "assets/images/background/room_school.png",
@@ -452,16 +522,30 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "routeBeforeRender": true
     },
     "lunch3_give_dain_3_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "affinityChar": "Yuna",
         "affinityBranches": [
-            { "minAffinity": 35, "next": "lunch3_dain_witness_1" },
-            { "minAffinity": 15, "next": "lunch3_give_dain_yuna_mid" },
-            { "minAffinity": 0, "next": "lunch3_give_dain_yuna_low" },
-            { "minAffinity": -19, "next": "lunch3_give_dain_yuna_low" },
-            { "minAffinity": -100, "next": "lunch3_give_dain_yuna_neg" }
-        ]
+            {
+                "minAffinity": 35,
+                "next": "lunch3_dain_witness_1"
+            },
+            {
+                "minAffinity": 15,
+                "next": "lunch3_give_dain_yuna_mid"
+            },
+            {
+                "minAffinity": 0,
+                "next": "lunch3_give_dain_yuna_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "lunch3_give_dain_yuna_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_dain_yuna_neg"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_dain_yuna_mid": {
         "background": "assets/images/background/room_school.png",
@@ -507,10 +591,18 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_yuna_skin_check"
     },
     "lunch3_yuna_skin_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": "assets/images/characters/yuna_normal.png",
         "affinityChar": "Yuna",
-        "affinityBranches": [{"minAffinity":40,"next":"lunch3_yuna_skin_1"},{"minAffinity":-100,"next":"lunch3_give_yuna_2_check"}]
+        "affinityBranches": [
+            {
+                "minAffinity": 40,
+                "next": "lunch3_yuna_skin_1"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_yuna_2_check"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_yuna_skin_1": {
         "background": "assets/images/background/room_school.png",
@@ -529,24 +621,42 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "next": "lunch3_give_yuna_2_check"
     },
     "lunch3_give_yuna_2_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "branches": [
-            { "condition": "day3_has_multiple_dates", "next": "lunch3_give_yuna_2" },
-            { "next": "lunch3_give_yuna_seo_affinity" }
-        ]
+            {
+                "condition": "day3_has_multiple_dates",
+                "next": "lunch3_give_yuna_2"
+            },
+            {
+                "next": "lunch3_give_yuna_seo_affinity"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_yuna_seo_affinity": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "affinityChar": "Seoyeon",
         "affinityBranches": [
-            { "minAffinity": 35, "next": "lunch3_give_yuna_2" },
-            { "minAffinity": 15, "next": "lunch3_give_yuna_seo_mid" },
-            { "minAffinity": 0, "next": "lunch3_give_yuna_seo_low" },
-            { "minAffinity": -19, "next": "lunch3_give_yuna_seo_low" },
-            { "minAffinity": -100, "next": "lunch3_give_yuna_seo_neg" }
-        ]
+            {
+                "minAffinity": 35,
+                "next": "lunch3_give_yuna_2"
+            },
+            {
+                "minAffinity": 15,
+                "next": "lunch3_give_yuna_seo_mid"
+            },
+            {
+                "minAffinity": 0,
+                "next": "lunch3_give_yuna_seo_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "lunch3_give_yuna_seo_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_yuna_seo_neg"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_yuna_seo_mid": {
         "background": "assets/images/background/room_school.png",
@@ -580,16 +690,30 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         ]
     },
     "lunch3_give_yuna_3_check": {
-        "background": "assets/images/background/room_school.png",
-        "character": null,
         "affinityChar": "Dain",
         "affinityBranches": [
-            { "minAffinity": 35, "next": "lunch3_give_yuna_3" },
-            { "minAffinity": 15, "next": "lunch3_give_yuna_dain_mid" },
-            { "minAffinity": 0, "next": "lunch3_give_yuna_dain_low" },
-            { "minAffinity": -19, "next": "lunch3_give_yuna_dain_low" },
-            { "minAffinity": -100, "next": "lunch3_give_yuna_dain_neg" }
-        ]
+            {
+                "minAffinity": 35,
+                "next": "lunch3_give_yuna_3"
+            },
+            {
+                "minAffinity": 15,
+                "next": "lunch3_give_yuna_dain_mid"
+            },
+            {
+                "minAffinity": 0,
+                "next": "lunch3_give_yuna_dain_low"
+            },
+            {
+                "minAffinity": -19,
+                "next": "lunch3_give_yuna_dain_low"
+            },
+            {
+                "minAffinity": -100,
+                "next": "lunch3_give_yuna_dain_neg"
+            }
+        ],
+        "routeBeforeRender": true
     },
     "lunch3_give_yuna_dain_mid": {
         "background": "assets/images/background/room_school.png",
@@ -848,7 +972,6 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         ],
         "next": "lunch3_end",
         "characters": {
-            "left": "assets/images/characters/seyoun_sad.png",
             "center": "assets/images/characters/yuna_bored.png",
             "right": "assets/images/characters/dain_sad.png"
         }

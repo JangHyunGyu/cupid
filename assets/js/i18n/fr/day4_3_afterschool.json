@@ -92,7 +92,7 @@
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*Lâchant doucement ma main, Seoyeon se tourne vers la porte de l’escalier du toit.*"
+        "text": "*Quittant le garde-corps des mains, Seoyeon se tourne vers la porte de l’escalier.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
@@ -143,10 +143,10 @@
         "name": "{name}",
         "text": "*Du pouce, Yuna déplie lentement le coin replié du marque-page, et elle soutient mon regard, assez près pour que mon souffle l'atteigne.*",
         "choices": [
-            "Lui dire qu’elle me plaît.",
-            "...Cet endroit est vraiment bien.",
-            "Je répondrai si Yuna me pose la question la première.",
-            "Même sans le dire, Yuna devrait savoir ce que je ressens."
+            "Lui dire que je l’aime bien.",
+            "L’ambiance ici est vraiment agréable.",
+            "Je répondrai si Yuna pose la question d’abord.",
+            "Yuna doit comprendre ce que je ressens sans que je le dise."
         ]
     },
     "confess_yuna_yes_1": {
@@ -307,7 +307,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*Au lieu du ballon qui a roulé plus loin, Dain agrippe un coup le devant de ma chemise avant de lâcher prise avec un grand sourire.*"
+        "text": "*Au lieu de ramasser le ballon au sol, Dain serre un instant le devant de ma chemise avant de le lâcher avec un grand sourire.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

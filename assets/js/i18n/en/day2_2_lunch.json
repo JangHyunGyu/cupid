@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*I hold Yuna’s note from this morning. I stop where the corridor branches toward the roof stairs, the basement snack shop and the library annex.*"
+        "text": "*I hold Yuna’s note from this morning in my hand, pausing in the hallway where the path splits toward the roof stairs, the snack shop, and the library annex.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -44,7 +44,7 @@
     },
     "lunch2_seo_2b_yuna": {
         "name": "Seoyeon",
-        "text": "You took a note from Yuna this morning, and your feet still brought you to the rooftop."
+        "text": "You looked like your mind was over by the library this morning, yet your feet walked you up to the rooftop."
     },
     "lunch2_seo_3b_yuna": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*The deserted old library annex. Cool shade settles over the far end of the hall, where Yuna leans by the window, reading alone.*"
+        "text": "*The deserted old library annex. Leaning by the hallway window bathed in slanted afternoon light, Yuna reads alone.*"
     },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {},
@@ -508,11 +508,11 @@
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
-        "text": "Come in here."
+        "text": "The wood floor makes footsteps echo a bit, right? Come in through here."
     },
     "lunch2_yuna_11": {
         "name": "Yuna",
-        "text": "The wood floor makes the footsteps echo a bit, right? We're here. *She steps into a small inner room hung with faded velvet curtains.*"
+        "text": "We're here. *I step into an old empty concrete room hidden away in the corner.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -524,7 +524,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "If you just stand there, I can't focus enough to read. Sit. *She sinks into the small 2-seat sofa, sets her bag down and leaves the seat right beside her empty.*"
+        "text": "Standing there stiffly makes it hard to focus. Sit down. *She sinks back onto the large worn sofa and leaves the space beside her open.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -540,7 +540,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Yuna's voice stops right after “used to be.” Just past the empty spot she cleared on the narrow sofa, the cool line of her shoulder sits close.*",
+        "text": "*Yuna cuts herself off at “used to.” Just past the empty seat on the sofa, her shoulder sits close.*",
         "choices": [
             "What happened to them?",
             "Sit beside her without asking",
@@ -606,7 +606,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*In the pale sunlight past the curtain, the sound of the two of us turning pages alternates, like slow breaths.*"
+        "text": "*Under pale sunlight slanting through the window, the sound of us turning pages trades back and forth.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",

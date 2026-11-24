@@ -47,7 +47,7 @@
     },
     "minsu_cheer_1_c": {
         "name": "{name}",
-        "text": "Woher weißt du das denn?"
+        "text": "Woher weißt du das?"
     },
     "minsu_cheer_1_d": {
         "name": "Minsu",
@@ -180,7 +180,7 @@
     },
     "hidden_homeroom_d4_5_d": {
         "name": "Klassenlehrerin",
-        "text": "Du musst dich nicht unter Druck gesetzt fühlen, nur weil dein Klassenlehrer es geschrieben hat. Es ist Wochenende, also hast du wahrscheinlich deine eigenen Pläne. *Ihre Worte verhallen, als sie den Griff des Umschlags fest umklammert.*"
+        "text": "Du musst dich nicht unter Druck setzen lassen, nur weil ich es geschrieben habe. Ist ja Wochenende, da hast du sicher etwas vor. *Sie bricht ab und drückt das Ende des Umschlags fest.*"
     },
     "hidden_homeroom_d4_choice": {
         "name": "{name}",
@@ -274,11 +274,11 @@
     },
     "hidden_homeroom_d4_cafe_5_b": {
         "name": "{name}",
-        "text": "Soll ich meinen Namen weglassen, wenn ich eine Anmerkung in die Marge schreibe? Ich fürchte, es würde dich in eine schwierige Lage bringen, wenn die Kinder meine Handschrift erkennen. *Sie hält die Hand, die den Bechergriff glättete, an und lächelt.*"
+        "text": "Dieses Manuskript ist ganz schön umfangreich, wenn nächste Woche der ganze Klub es liest. *Sie lässt vom Pappbecher ab und lächelt.*"
     },
     "hidden_homeroom_d4_cafe_5_c": {
         "name": "Klassenlehrerin",
-        "text": "Das wäre mir wirklich lieb. Da wir die Texte ohnehin anonym herumreichen, lass das Namensfeld einfach frei und schreib ganz ungezwungen."
+        "text": "Ich habe es extra noch überarbeitet, um alle Rückmeldungen aus dem Klub einzuholen. Schreib einfach frei auf, was dir beim Lesen auffällt."
     },
     "hidden_homeroom_d4_cafe_5_d": {
         "name": "{name}",
@@ -559,7 +559,7 @@
     },
     "hidden_nurse_d4_meal_3_c": {
         "name": "Schulkrankenschwester",
-        "text": "Gut, mit der Vorbereitung ist hier Schluss. Prüft, ob eure Helferstunden eingetragen sind, und geht in den Festbereich, der euch zugeteilt ist."
+        "text": "Gut, die Vorbereitungen sind durch. Prüft alle kurz eure eingetragenen Helferstunden und geht dann an eure jeweiligen Vorbereitungsplätze."
     },
     "hidden_nurse_d4_meal_3_d": {
         "name": "{name}",
@@ -589,13 +589,13 @@
     },
     "hidden_nurse_d4_freetalk": {
         "name": "Schulkrankenschwester",
-        "text": "*Die Schulkrankenschwester schließt den Reißverschluss am letzten Erste-Hilfe-Set, legt es in die Kiste und zeigt mit der Fingerspitze auf den Stuhl gegenüber.* Danke fürs Mithelfen. Jetzt, wo wir durchatmen können, höre ich mir kurz an, was du zu sagen hast.",
+        "text": "*Sie klappt die Inventarnotizen auf dem Schreibtisch zu und zeigt auf den Stuhl gegenüber.* Danke fürs Helfen. Bevor du gehst, verschnauf kurz und erzähl mal, wie es dir geht.",
         "context": "Es ist der Morgen von Tag 4 im Krankenzimmer, nachdem die Erste-Hilfe-Sets für die Schulveranstaltung vorbereitet und sortiert wurden. Vielleicht teilten sie einen Snack, vielleicht ruhte sich der Schüler aus; nur gespeicherte Ereignisse gelten als Tatsache. Sie bleiben Schulkrankenschwester und Schüler. Das Vertrauen ist gewachsen, die professionellen Grenzen bestehen weiter.",
         "personality": "Die Schulkrankenschwester ist praktisch, aufmerksam und behält selbst müde ihren Humor. Sie dramatisiert ihre Vergangenheit nicht, ist nur im angemessenen Rahmen offen und respektiert Gesundheit und Entscheidungen des Schülers."
     },
     "morning4_end": {
         "name": "{name}",
-        "text": "*Zuhause glätte ich meinen Hemdkragen und mein Haar und schnür die Schnürsenkel meiner Sportschuhe fest am Eingang.*"
+        "text": "*Wieder zu Hause richte ich Hemdkragen und Haare und gehe fertig angezogen zur Haustür.*"
     },
     "hidden_homeroom_d4_cafe_trap": {
         "name": "Klassenlehrerin",
@@ -698,7 +698,7 @@
     },
     "day4_haeun_concern_dain_escalation_delay": {
         "name": "Dain",
-        "text": "*Dain macht einen halben Schritt zur Seite und verstellt mir den Weg.* Hey, du kannst doch jetzt nicht einfach abhauen. Wenn es ein Missverständnis ist, klär es hier, und wenn was daneben war, steh ehrlich dazu."
+        "text": "*Dain tritt entschlossen nach vorn und verstellt mir den Weg.* Hey, du kannst nicht einfach gehen. Wenn es ein Missverständnis ist, klär es hier, sonst steh dazu."
     },
     "day4_haeun_concern_dain_group_talk": {
         "name": "Dain",
@@ -789,15 +789,15 @@
     },
     "day4_haeun_notice_up": {
         "name": "Haeun",
-        "text": "*Haeun wird rot und lächelt.* Danke, dass du mir zu Ende zugehört hast, ohne zu lachen. Dank dir, Sunbae, fühle ich mich ein wenig leichter."
+        "text": "*Haeun errötet und lächelt.* Danke, dass du es ernst genommen und nicht abgetan hast. Durch dich fühle ich mich gleich viel leichter."
     },
     "day4_haeun_notice_down": {
         "name": "Haeun",
-        "text": "*Haeun hebt nur kurz die Mundwinkel, lässt sie wieder sinken und tritt einen halben Schritt zurück.* Ach, stimmt ja. Eigentlich haben wir gerade über Seoyeon-sunbae gesprochen. Das eben habe ich nur vor mich hin gesagt, also vergiss es bitte."
+        "text": "*Haeun zieht kaum die Mundwinkel hoch und tritt einen halben Schritt zurück.* Ach… ich habe nur dummes Zeug geredet. Es ging ja um Seoyeon. Bitte vergiss das eben."
     },
     "day4_haeun_reputation_cg": {
         "name": "{name}",
-        "text": "*In der kühlen Morgenluft vor dem Schultor beißt Haeun sich leicht auf die Lippe und wartet auf meine Antwort.*"
+        "text": "*In der kühlen Morgenluft vor dem Tor umfasst Haeun ihr Armband und wartet auf meine Antwort.*"
     },
     "day4_haeun_personal": {
         "name": "Haeun",

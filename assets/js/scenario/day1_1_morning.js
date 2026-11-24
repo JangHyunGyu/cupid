@@ -262,7 +262,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_3",
         "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
+            "center": "assets/images/characters/teacher_normal.png",
             "right": "assets/images/characters/dain_normal.png"
         }
     },
@@ -278,7 +278,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_5",
         "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
+            "center": "assets/images/characters/teacher_normal.png",
             "right": "assets/images/characters/dain_normal.png"
         }
     },
@@ -286,7 +286,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_5_b",
         "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
+            "center": "assets/images/characters/teacher_normal.png",
             "right": "assets/images/characters/dain_normal.png"
         }
     },
@@ -310,7 +310,7 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
         "background": "assets/images/background/room_school.png",
         "next": "classroom_yuna_1",
         "characters": {
-            "center": "assets/images/characters/teacher_angry.png",
+            "center": "assets/images/characters/teacher_worried.png",
             "right": "assets/images/characters/dain_normal.png"
         }
     },
@@ -376,58 +376,37 @@ if (!SCENARIO[1]) SCENARIO[1] = {};
     "classroom_dain_talk_2": {
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_talk_3",
-        "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
-            "right": "assets/images/characters/dain_normal.png"
-        }
+        "character": "assets/images/characters/dain_normal.png"
     },
     "classroom_dain_talk_3": {
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_talk_4",
-        "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
-            "right": "assets/images/characters/dain_normal.png"
-        }
+        "character": "assets/images/characters/dain_normal.png"
     },
     "classroom_dain_talk_4": {
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_talk_5",
-        "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
-            "right": "assets/images/characters/dain_normal.png"
-        }
+        "character": "assets/images/characters/dain_normal.png"
     },
     "classroom_dain_talk_5": {
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_talk_6",
-        "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
-            "right": "assets/images/characters/dain_normal.png"
-        }
+        "character": "assets/images/characters/dain_normal.png"
     },
     "classroom_dain_talk_6": {
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_talk_7",
-        "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
-            "right": "assets/images/characters/dain_normal.png"
-        }
+        "character": "assets/images/characters/dain_normal.png"
     },
     "classroom_dain_talk_7": {
         "background": "assets/images/background/room_school.png",
         "next": "classroom_dain_talk_8",
-        "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
-            "right": "assets/images/characters/dain_laugh.png"
-        }
+        "character": "assets/images/characters/dain_laugh.png"
     },
     "classroom_dain_talk_8": {
         "background": "assets/images/background/room_school.png",
         "next": "classroom_yuna_note_1",
-        "characters": {
-            "center": "assets/images/characters/yuna_normal.png",
-            "right": "assets/images/characters/dain_laugh.png"
-        }
+        "character": "assets/images/characters/dain_laugh.png"
     },
     "classroom_yuna_note_1": {
         "background": "assets/images/background/room_school.png",

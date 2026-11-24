@@ -61,7 +61,7 @@
     },
     "night_hidden_homeroom_1": {
         "name": "{name}",
-        "text": "*No aplicativo da escola, junto ao aviso da turma aparece um recado individual da professora titular: 'Amanhã, tragam o livro de matemática para o 1º horário. — E quanto ao aluno novo que chegou hoje, contanto que esteja se adaptando bem, já fico tranquila.'*"
+        "text": "*Nas notificações do aplicativo da escola aparece um recado individual da professora junto ao aviso da turma: \"Amanhã trazer a apostila de matemática na 1ª aula. E o aluno transferido não precisa forçar, vá se adaptando aos poucos.\"*"
     },
     "night_hidden_homeroom_2": {
         "name": "{name}",
@@ -73,7 +73,7 @@
     },
     "night_hidden_nurse_2": {
         "name": "{name}",
-        "text": "*Lembrando da recomendação calma da enfermeira hoje à tarde, levanto e encho de água a garrafa da cabeceira.*"
+        "text": "*Lembrando do que a enfermeira falou à tarde, levanto para pegar um copo de água e deixo na cabeceira.*"
     },
     "night_late_transition": {
         "name": "{name}",
@@ -117,7 +117,7 @@
     },
     "night_dain_late_2": {
         "name": "Dain",
-        "text": "Procuro uma pessoa, primeira que chegar, para aparecer no campo cedo amanhã de manhã e aquecer."
+        "text": "Não perde a hora amanhã de manhã e chega cedo na sala, vaga garantida pro primeiro que chegar"
     },
     "night_dain_late_3": {
         "name": "Dain",
@@ -133,11 +133,11 @@
     },
     "night_end_1": {
         "name": "{name}",
-        "text": "*Lembrando dos rostos por trás dos nomes novos salvos hoje nos contatos, deixo o celular bloqueado ao lado do travesseiro.*"
+        "text": "*Lembrando um a um dos rostos do meu primeiro dia na escola nova, pouso o celular bloqueado na cabeceira.*"
     },
     "night_end_3": {
         "name": "{name}",
-        "text": "*Olho para o teto escuro. Do uniforme novo pendurado no cabide ainda vem, suave, o cheiro da brisa de primavera de hoje.*"
+        "text": "*Fico olhando para o teto escuro. O uniforme novo no cabide ainda parece um pouco estranho.*"
     },
     "forced_violation_day1_after_seoyeon": {
         "name": "Seoyeon",

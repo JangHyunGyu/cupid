@@ -152,7 +152,7 @@
     },
     "morning5_mood_high": {
         "name": "{name}",
-        "text": "*A primeira semana depois da transferência já chegou ao fim. Antes de pegar a maçaneta da sala, repasso em silêncio as respirações e as vozes que roçaram a minha orelha nos últimos quatro dias. A ponta dos dedos esquenta, num calor bom.*"
+        "text": "*Minha primeira semana após a transferência já se aproxima do fim. Antes de girar a maçaneta da sala, lembro das conversas desses quatro dias e abro a porta meio animado.*"
     },
     "morning5_mood_mid": {
         "name": "{name}",
@@ -268,15 +268,15 @@
         "name": "{name}",
         "text": "*Seguro com os dois braços o envelope do manuscrito que a professora me entrega. O peso morno do maço de papel aperta a parte de dentro do braço.*",
         "choices": [
-            "Depois de sete anos, já deve estar quase pronto. Acho que nem preciso marcar nada.",
-            "Vou ler primeiro. Posso fazer anotações?",
-            "As partes difíceis devem ser intencionais, então vou deixá-las como estão.",
-            "Como é um texto seu, vou anotar só as coisas boas."
+            "Depois de sete anos deve estar quase pronto, nem precisa marcar nada",
+            "Vou ler primeiro. Posso fazer marcações?",
+            "As partes difíceis devem ser propositais, então deixo como estão.",
+            "Como é seu texto, vou anotar só os elogios"
         ]
     },
     "hidden_homeroom_d5_praise_trap_1": {
         "name": "Professora",
-        "text": "*Ela dá um sorriso melancólico e alisa o canto do envelope.* Você não precisa escolher algo bonito antes mesmo de virar a primeira página. Guardar por muito tempo não significa que eu escrevi bem."
+        "text": "*Ela dá um sorriso sem graça e alisa a ponta do envelope.* Não precisa passar por cima antes nem de virar a primeira página. Segurar um texto por anos não torna tudo bom."
     },
     "hidden_homeroom_d5_praise_trap_2": {
         "name": "Professora",
@@ -384,7 +384,7 @@
     },
     "hidden_homeroom_d5_6_b": {
         "name": "{name}",
-        "text": "*Volta o maço de cópias da sessão, empilhado na mesa do fundo do café, no fim da tarde. No canto do envelope pardo na minha mão está escrito, numa letra caprichada, o número 04.*"
+        "text": "*Lembro da pilha de exemplares empilhados ontem de manhã na mesa do fundo do café. No canto do envelope pardo em minhas mãos lê-se um \"04\" caprichado.*"
     },
     "hidden_homeroom_d5_6_c": {},
     "hidden_homeroom_d5_6_d": {
@@ -457,11 +457,11 @@
     },
     "hidden_homeroom_d5_8": {
         "name": "Professora",
-        "text": "*A professora sai primeiro para o corredor e confere, chamando um por um, os nomes dos alunos que preparam os estandes do festival.*"
+        "text": "*Recolhendo os papéis sobre o púlpito, a professora confere mais uma vez a lista das barracas do festival.*"
     },
     "hidden_homeroom_d5_freetalk": {
         "name": "Professora",
-        "text": "*A professora aponta com o olhar o envelope da cópia 04 da sessão, que eu seguro.* É a última revisão. Mesmo se você vir uma frase vazia, não alivia. Aponta."
+        "text": "*Apontando para o envelope nº 04 que seguro, ela se vira para a porta do corredor.* Última revisão. Mesmo se notar alguma frase vazia, não alivia não—pode apontar."
     },
     "hidden_nurse_d5_check": {
         "name": "{name}",
@@ -636,7 +636,7 @@
     },
     "morning5_caught_fallout_1": {
         "name": "{name}",
-        "text": "*O ar da sala, antes da abertura do festival, está frio como uma placa de gelo. As três sentam bem afastadas, cada uma num canto da sala, e a lista de funções no quadro só traz divisões secas, de expediente.*"
+        "text": "*Antes da abertura do festival, o ar da sala pesa frio e seco. As três sentam bem afastadas e o quadro de tarefas traz apenas nomes soltos.*"
     },
     "morning5_caught_fallout_2": {
         "name": "{name}",

@@ -13,7 +13,7 @@
     },
     "hidden_nurse_d3_neg": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie klappt die Kartei zu und sieht nicht einmal zum Stuhl.* Reich es nur über den offiziellen Schalter ein. Geh zurück ins Klassenzimmer."
+        "text": "*Sie klappt die Akte zu, ohne überhaupt zum Stuhl zu blicken.* Wenn du eine Beratung brauchst, mach regulär einen Termin. Geh jetzt zurück in den Unterricht."
     },
     "morning3_date_seo_low": {
         "name": "Seoyeon",
@@ -42,7 +42,7 @@
     },
     "morning3_seo_gate_warm_1": {
         "name": "Seoyeon",
-        "text": "*Seoyeon atmet kurz aus und dreht die Schuhspitzen in meine Richtung. Ihre Fingerspitzen halten das Klemmbrett ein wenig fester als sonst.*"
+        "text": "*Seoyeon atmet kurz aus und dreht sich zu mir um, ihre leeren Hände ordentlich neben ihrem Uniformrock haltend.*"
     },
     "morning3_seo_gate_warm_2": {
         "name": "Seoyeon",
@@ -242,7 +242,7 @@
     },
     "hidden_homeroom_d3_1": {
         "name": "{name}",
-        "text": "Frau Lehrerin, Sie sind ja ganz allein im leeren Klassenzimmer. *Als ich leise die Tür öffne, hält die Füllfeder der Klassenlehrerin über dem Manuskriptpapier auf dem Pult inne.*"
+        "text": "*In der Pause nach dem Morgenappell und der ersten Stunde schiebe ich leise die Tür zum leeren Klassenzimmer auf.* Waren Sie ganz allein hier? *Am Pult stockt ihr Füller über dem Manuskriptpapier.*"
     },
     "hidden_homeroom_d3_3": {
         "name": "Klassenlehrerin",
@@ -393,7 +393,7 @@
     },
     "hidden_homeroom_d3_reveal_5": {
         "name": "Klassenlehrerin",
-        "text": "Innerhalb dieser Woche plane ich, es zuerst den anderen Sprachwissenschaftler zu zeigen. Ich habe das Gefühl, wenn ich es einfach in einer Schublade lasse, werde ich es nie beenden können."
+        "text": "Nächste Woche will ich es zuerst den Kolleginnen und Kollegen aus dem Fachbereich Deutsch zeigen. Wenn es ewig in der Schublade bleibt, setze ich nie einen Schlusspunkt."
     },
     "hidden_homeroom_d3_reveal_6": {
         "name": "Klassenlehrerin",
@@ -443,7 +443,7 @@
     },
     "hidden_nurse_d3_1": {
         "name": "{name}",
-        "text": "*In der Pause öffne ich die Tür zum Krankenzimmer. Im Geruch nach Desinfektionsmittel streift das wasserfeste Pflaster von gestern am Ellbogen die Innenseite meines Hemdsärmels.*"
+        "text": "*In der Pause nach der ersten Stunde öffne ich die Tür zum Krankenzimmer. Im Geruch nach Desinfektionsmittel streift das wasserdichte Ellbogenpflaster von gestern meinen Hemdärmel.*"
     },
     "hidden_nurse_d3_1_b": {
         "name": "Schulkrankenschwester",
@@ -612,9 +612,9 @@
         "name": "Schulkrankenschwester",
         "text": "*Die Schulkrankenschwester schiebt die Schublade ganz zu und sieht zu mir auf. Im nach Desinfektionsmittel riechenden Krankenzimmer wird es noch stiller.*",
         "choices": [
-            "Sind Sie nach diesem Erlebnis aus dem Krankenhaus gegangen?",
-            "Ist es für Sie in Ordnung, noch mehr davon zu erzählen?",
-            "Würden Sie sich nicht besser fühlen, wenn Sie alles erzählen?"
+            "Denken Sie immer noch oft an diesen Patienten?",
+            "Ist es okay für Sie, weiter darüber zu sprechen?",
+            "Würde es nicht erleichtern, alles einmal auszusprechen?"
         ]
     },
     "hidden_nurse_d3_choice2_a": {

@@ -98,7 +98,7 @@
     },
     "choice_flirt_7": {
         "name": "Seoyeon",
-        "text": "We'll be late. Follow me, {name}. *She covers a slightly flushed ear with her hair and walks a step ahead.*"
+        "text": "We'll be late. Hurry up and follow me. *Seoyeon turns her head away and walks a step ahead.*"
     },
     "choice_joke_1": {
         "name": "Seoyeon",
@@ -118,7 +118,7 @@
     },
     "hallway_3": {
         "name": "Seoyeon",
-        "text": "The main building we're walking through is the third-year building, and the library is across the windows. Go down the basement stairs and the snack bar is right there."
+        "text": "The main building we're walking through is for the third-years, and the library is across from these windows. Go down the stairs to the end of the first floor and you'll hit the snack shop right away."
     },
     "hallway_4": {
         "name": "Seoyeon",
@@ -162,7 +162,7 @@
     },
     "hallway_13": {
         "name": "Seoyeon",
-        "text": "*Half-turned, Seoyeon raises her clipboard lightly to shoulder height in farewell before turning away down the hall.*"
+        "text": "*Half-turning, Seoyeon lifts her clipboard lightly in greeting.* See you at lunch."
     },
     "hallway_13_b": {
         "name": "{name}",
@@ -222,7 +222,7 @@
     },
     "classroom_dain_5_d": {
         "name": "Homeroom Teacher",
-        "text": "*Letting out a brief sigh, the homeroom teacher knits her brows slightly and taps the lectern with the attendance book.*"
+        "text": "*Letting out a brief sigh, the homeroom teacher furrows her brow slightly and opens the attendance book.*"
     },
     "classroom_yuna_1": {
         "name": "{name}",
@@ -295,11 +295,11 @@
     },
     "classroom_yuna_note_3": {
         "name": "Yuna",
-        "text": "*I unfold the creased corner, and neat lavender handwriting catches my eye.* Noisy seat from day one. — Yuna"
+        "text": "*I unfold the creased note and see neat lavender handwriting inside.* Noisy seat from day one. - Yuna"
     },
     "classroom_yuna_note_5": {
         "name": "{name}",
-        "text": "*When I glance back again, Yuna's pale fingertips—caught in the window sunlight—slip quietly down beneath her desk.*"
+        "text": "*When I glance back again, Yuna quietly lowers her hand back under her desk.*"
     },
     "classroom_yuna_note_6": {
         "name": "{name}",

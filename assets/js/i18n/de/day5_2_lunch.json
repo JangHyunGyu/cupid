@@ -17,7 +17,7 @@
     },
     "tour_seo_2": {
         "name": "Seoyeon",
-        "text": "*Sie blickt am Pfeiler des Schultors hinauf, ein schwaches Lächeln auf den Lippen.* Hier haben wir uns zum ersten Mal begrüßt, oder?"
+        "text": "*Mit einem leichten Lächeln schaut sie zum Torpfeiler hinauf.* Als ich den Pfeiler sah, fiel es mir ein – genau hier haben wir uns zuerst begrüßt."
     },
     "tour_seo_3": {
         "name": "{name}",
@@ -290,7 +290,7 @@
     },
     "tour_yuna_event_4": {
         "name": "{name}",
-        "text": "*Yuna nimmt einen blassvioletten Füllfederhalter und schreibt die drei Zeichen ihres Namens in den leeren Platz unter dem Titel. \"Choi Yuna.\" Das letzte Zeichen ist ein wenig geneigt.*"
+        "text": "*Yuna zückt ihren blassvioletten Füller und schreibt ihren Namen unter den freien Titel: „Seol Yuna“. Das letzte Zeichen neigt sich leicht.*"
     },
     "tour_yuna_event_5": {
         "name": "Yuna",
@@ -328,20 +328,20 @@
     "tour_yuna_affinity_check": {},
     "tour_yuna_affinity_80": {
         "name": "Yuna",
-        "text": "Den Platz als erster Leser im nächsten neuen Heft reserviere ich auch schon für dich. Wenn das Programm heute vorbei ist, schreiben wir das Datum zusammen auf den Deckel."
+        "text": "Wenn nach dem Fest wieder Ruhe einkehrt, habe ich noch ein Buch für dich. Reden wir nach dem Programm heute drüber."
     },
     "tour_yuna_affinity_60": {
         "name": "Yuna",
-        "text": "Die letzte Seite, die ich heute Nachmittag zeigen will... Lies du sie zuerst, niemand sonst."
+        "text": "Schau heute Nachmittag zuerst bei mir vorbei, bevor du irgendwohin gehst. Ich muss dir etwas sagen."
     },
     "tour_dain_affinity_check": {},
     "tour_dain_affinity_80": {
         "name": "Dain",
-        "text": "Nächste Woche, wenn ich richtig Kommentar übe, musst du unbedingt zuschauen! Sobald der Termin steht, schreibe ich dir als Erste."
+        "text": "Halt dir ab nächster Woche nach der Schule ein bisschen Zeit frei! Außerhalb der Halle können wir noch so viel zusammen unternehmen!"
     },
     "tour_dain_affinity_60": {
         "name": "Dain",
-        "text": "Wollen wir heute Nachmittag zuerst am Übertragungsstand vorbeischauen? Dich habe ich als ersten Zuhörer für meinen Mikrofontest heute festgelegt."
+        "text": "Wenn das Programm heute Nachmittag vorbei ist, komm zuerst zu mir, ja? Dann gibt’s eine richtige Revanche."
     },
     "tour_seo_skip": {},
     "tour_yuna_skip": {},
@@ -402,7 +402,7 @@
     },
     "day5_haeun_waver_up": {
         "name": "Haeun",
-        "text": "*Haeun lässt den angehaltenen Atem lang aus und nimmt die Spannung aus den Schultern.* …Danke. Wenn du das sagst, ist es ein bisschen weniger beängstigend. Bleib bitte nur noch einen ganz kurzen Moment neben mir."
+        "text": "*Haeun atmet tief aus und lässt die Schultern sinken.* …Danke, Senior. Allein dass du bei mir bleibst, macht es weniger beängstigend. Bitte bleib noch kurz hier."
     },
     "day5_haeun_waver_down": {
         "name": "Haeun",
@@ -482,7 +482,7 @@
     },
     "day5_haeun_yuna_group_talk": {
         "name": "Yuna · Haeun",
-        "text": "*Haeun weicht vorsichtig einen halben Schritt nach hinten, und Yuna sieht mit stillem Blick auf meine Lippen.*",
+        "text": "*Haeun tritt vorsichtig einen halben Schritt zurück, und Yuna wartet mit ruhigem Blick auf meine Antwort.*",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun und der Protagonist trugen Unterlagen zum Rundfunkraum. Die andere Person sah Haeun sich vorbeugen, um ihren Armbandverschluss vom Ärmelknopf zu lösen. Haeun verteidigte ihn und sagte, sie könne ihn ungezwungen um Hilfe bitten. Das vertiefte das Missverständnis über ihre Beziehung. Die Zuneigung der anderen Person ist bereits um 15 gesunken, bei aufgeschobener Erklärung um 20. Zwischen Haeun und dem Protagonisten gab es weder Romantik noch sexuelle Handlungen.",
         "personality": "Die andere Person verlangt in ihrer eigenen Stimme und entsprechend ihrer aktuellen Zuneigung eine Erklärung. Der höchste Wert belegt weder eine Paarbeziehung noch frühere Versprechen. Haeun bleibt höflich und berichtet nur, was sie gesehen hat; sie spricht nicht für seine Gefühle. Lass dem Protagonisten Raum zur Erklärung. Seine tatsächlichen Antworten können das Missverständnis lösen oder bestehen lassen. Löse nicht alles sofort und mache aus einem Verdacht keinen erwiesenen Verrat. Wiederhole den anfänglichen Abzug nicht; bewerte nur die aktuelle Äußerung und Handlung. Bewerte Haeuns Zuneigung genauso wie in einem persönlichen Gespräch: Eine aufrichtige Erklärung, die die Schuld nicht auf Haeun schiebt, bringt +2, und konkretes Eingehen auf Haeuns unangenehme Lage oder ihre Sorge, nachdem sie ihn verteidigt hat, bis zu +3.",
@@ -597,7 +597,7 @@
         "text": "Das lässt sich nicht einfach unter den Teppich kehren. *Seoyeon sieht mich unverwandt an.* Da Haeun direkt hier steht, sollten wir das jetzt sofort ordentlich klären."
     },
     "day5_haeun_concern_seoyeon_group_talk": {
-        "name": "Seoyeon",
+        "name": "Seoyeon · Haeun",
         "text": "*Seoyeon sieht einmal zu Haeun hin, deren Miene starr ist, und fragt dann mich.* Ich hätte nicht gedacht, dass ich so etwas über dich höre. Was hast du Haeun überhaupt gesagt?",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
@@ -624,7 +624,7 @@
         "text": "*Yuna steckt das Handy in ihrer Hand in die Tasche.* Ich weiß nicht, wie ich es auffassen soll, wenn du das schweigend aufschiebst. Sag mir mit deinen eigenen Worten, was du vor Haeun gesagt hast."
     },
     "day5_haeun_concern_yuna_group_talk": {
-        "name": "Yuna",
+        "name": "Yuna · Haeun",
         "text": "*Yuna faltet das Ohrhörerkabel ruhig zusammen und steckt es in die Tasche.* Was Haeun erzählt hat, weicht so stark von dem ab, wie ich dich kenne. Sag du es selbst. Worüber habt ihr gesprochen?",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
@@ -651,7 +651,7 @@
         "text": "*Dain lässt die verschränkten Arme sinken und schüttelt entschieden den Kopf.* Auf später vertrösten gilt nicht. Ob blödes Missverständnis oder Fehler – sprich es jetzt hier ehrlich aus."
     },
     "day5_haeun_concern_dain_group_talk": {
-        "name": "Dain",
+        "name": "Dain · Haeun",
         "text": "*Dain bleibt vor mir stehen.* Was hast du Haeun bloß gesagt? Ich hab geglaubt, du bist nicht jemand, der eine Jüngere so behandelt. Hören wir auch deine Seite.",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
@@ -678,7 +678,7 @@
         "text": "*Die Klassenlehrerin sieht mich direkt an, als ich zurückweichen will.* Vielleicht bist du überrumpelt und findest nicht sofort die richtigen Worte. Trotzdem dürfen wir es nicht aufschieben und müssen jetzt gemeinsam klären, warum es Haeun so zugesetzt hat. Erzähl es mir ganz ruhig."
     },
     "day5_haeun_concern_teacher_group_talk": {
-        "name": "Klassenlehrerin",
+        "name": "Klassenlehrerin · Haeun",
         "text": "*Die Klassenlehrerin senkt die Mappe in ihrer Hand.* Ich habe dir bisher vertraut, aber darüber kann ich nicht einfach hinwegsehen. Erklär der Reihe nach, was du zu Haeun gesagt hast.",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",
@@ -705,7 +705,7 @@
         "text": "*Die Schulkrankenschwester lässt das Lächeln aus ihrem sanften Blick weichen.* Wenn du die Antwort hinauszögerst, löst sich diese Befangenheit nicht von selbst auf. Erklärst du es uns jetzt in aller Ruhe?"
     },
     "day5_haeun_concern_nurse_group_talk": {
-        "name": "Schulkrankenschwester",
+        "name": "Schulkrankenschwester · Haeun",
         "text": "*Die Schulkrankenschwester prüft zuerst, wie es Haeun geht, und dreht sich dann zu mir.* Ich hätte nicht erwartet, von dir in einem solchen Moment zu hören. Ich möchte auch von dir hören, warum dich das belastet, Haeun. Was hast du damals gesagt?",
         "groupLocation": "Flur vor dem Rundfunkraum während des Schulfests",
         "context": "Haeun verlor im vorherigen freien Gespräch Vertrauen zum Protagonisten. Sie schilderte ihr Unbehagen der Person mit der höchsten Zuneigung, die ihm jetzt skeptischer begegnet. Alle drei stehen im Flur. Die andere Person hat bereits 15 Punkte verloren, bei aufgeschobener Erklärung 20. Haeuns Eindruck kann von der Absicht abweichen. Nur das frühere Transkript unten dient als Tatsachengrundlage. Erfinde keine Beleidigungen, Drohungen oder gebrochenen Versprechen. Fehlt der Verlauf, behandle nur ihr Unbehagen und zitiere keine konkreten Aussagen.",

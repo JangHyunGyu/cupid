@@ -1,7 +1,7 @@
 {
     "lunch2_start": {
         "name": "{name}",
-        "text": "*Ich halte Yunas Notiz von heute Morgen in der Hand. Ich halte inne, wo der Gang zu den Treppen auf das Dach, zum Snack-Laden im Keller und zum Anbau der Bibliothek abzweigt.*"
+        "text": "*Ich halte Yunas Zettel von heute Morgen in der Hand und bleibe im Flur stehen, wo sich die Wege zu Dachtreppe, Kiosk und Nebengebäude trennen.*"
     },
     "lunch2_choice": {
         "name": "{name}",
@@ -44,7 +44,7 @@
     },
     "lunch2_seo_2b_yuna": {
         "name": "Seoyeon",
-        "text": "Heute Morgen extra einen Zettel von Yuna, und trotzdem gehst du aufs Dach."
+        "text": "Heute Morgen wirktest du noch ganz in Gedanken bei der Bibliothek, aber deine Füße haben dich trotzdem aufs Dach getragen."
     },
     "lunch2_seo_3b_yuna": {
         "name": "{name}",
@@ -430,7 +430,7 @@
     },
     "lunch2_yuna_1": {
         "name": "{name}",
-        "text": "*Der menschenleere, alte Bibliotheksanbau. Am Fenster ganz am Ende des Flurs, wo kühler Schatten liegt, lehnt Yuna und liest allein.*"
+        "text": "*Das menschenleere alte Bibliotheks-Nebengebäude. Im schräg einfallenden Nachmittagslicht am Flurfenster lehnt Yuna und liest allein.*"
     },
     "lunch2_yuna_intro_check": {},
     "lunch2_yuna_3": {},
@@ -508,11 +508,11 @@
     },
     "lunch2_yuna_10": {
         "name": "Yuna",
-        "text": "Komm hier rein."
+        "text": "Auf dem Holzboden hallen die Schritte ganz schön, oder? Komm hier rein."
     },
     "lunch2_yuna_11": {
         "name": "Yuna",
-        "text": "Der Boden ist aus Holz, da hallen die Schritte etwas, oder? Jetzt sind wir da. *Sie tritt in den kleinen Raum weiter hinten, wo verblichene Samtvorhänge hängen.*"
+        "text": "Da sind wir. *Ich betrete einen versteckten, alten leeren Betonraum in der Ecke.*"
     },
     "lunch2_yuna_13": {
         "name": "{name}",
@@ -524,7 +524,7 @@
     },
     "lunch2_yuna_15": {
         "name": "Yuna",
-        "text": "Wenn du einfach da stehst, kann ich mich nicht genug konzentrieren, um zu lesen. Setz dich. *Sie sinkt auf das kleine Zweisitzer-Sofa, stellt ihre Tasche ab und lässt den Sitz direkt neben sich leer.*"
+        "text": "Wenn du nur so dastehst, lenkt mich das beim Lesen ab. Setz dich. *Sie lehnt sich auf dem großen, abgenutzten Sofa zurück und macht neben sich Platz.*"
     },
     "lunch2_yuna_16": {
         "name": "Yuna",
@@ -540,7 +540,7 @@
     },
     "lunch2_yuna_choice": {
         "name": "{name}",
-        "text": "*Nach „Früher war da“ bricht Yunas Stimme ab. Direkt neben dem freigemachten Platz auf dem schmalen Sofa ist die kühle Linie ihrer Schulter ganz nah.*",
+        "text": "*Bei „früher gab es jemanden“ bricht Yuna ab. Über den freien Platz auf dem Sofa hinweg ist mir ihre Schulter ganz nah.*",
         "choices": [
             "Und wo ist diese Person jetzt?",
             "Nicht fragen und sich neben sie setzen",
@@ -606,7 +606,7 @@
     },
     "lunch2_yuna_c2_4": {
         "name": "{name}",
-        "text": "*Im blassen Sonnenlicht, das durch den Vorhang sickert, wechseln sich unsere Blattgeräusche ab wie ein träges Atmen.*"
+        "text": "*Im blassen Sonnenlicht durch das Fenster wechselt sich das Rascheln unserer umgeblätterten Seiten ab.*"
     },
     "lunch2_yuna_c2_6": {
         "name": "Yuna",

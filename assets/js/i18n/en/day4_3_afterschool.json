@@ -92,7 +92,7 @@
     },
     "confess_seo_yes_11_b": {
         "name": "Seoyeon",
-        "text": "*Slowly letting go of my hand, Seoyeon turns toward the rooftop stairwell door.*"
+        "text": "*Letting go of the railing, Seoyeon turns toward the rooftop stairwell door.*"
     },
     "confess_seo_yes_12": {
         "name": "Seoyeon",
@@ -144,9 +144,9 @@
         "text": "*Yuna slowly smooths the folded corner of the bookmark with her thumb and meets my eyes from close enough that my breath reaches her.*",
         "choices": [
             "Tell her I like her.",
-            "This place is really nice.",
-            "I’ll answer if Yuna asks me first.",
-            "Yuna should know how I feel even if I don’t say it."
+            "The atmosphere here is really nice.",
+            "Answer if Yuna asks first.",
+            "Yuna should know how I feel without saying it."
         ]
     },
     "confess_yuna_yes_1": {
@@ -307,7 +307,7 @@
     },
     "confess_dain_yes_10_b": {
         "name": "Dain",
-        "text": "*Ignoring the ball that rolled away, Dain grabs the front of my shirt once, lets go, and breaks into a bright smile.*"
+        "text": "*Instead of picking up the ball on the floor, Dain tugs the front of my shirt tight once, lets go, and beams.*"
     },
     "confess_dain_no_1": {
         "name": "{name}",

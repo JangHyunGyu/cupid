@@ -89,7 +89,7 @@
     },
     "hidden_nurse_d2_choice2_b": {
         "name": "Infirmière",
-        "text": "*Avec un sourire doux, elle lâche la poignée du tiroir.* Bon. Un secret entre nous deux, jusque-là, ça suffit, non ?"
+        "text": "*Elle lâche la poignée du tiroir et pose calmement une limite.* Ce n’est pas une histoire à confier à un élève. Tu n’as pas à porter ça sur tes épaules."
     },
     "hidden_nurse_d2_8": {
         "name": "Infirmière",
@@ -491,7 +491,7 @@
     },
     "after2_yuna_1_b": {
         "name": "{name}",
-        "text": "*Pas une âme dans le couloir de l'annexe baigné par la lumière oblique du couchant. Seule la porte de la petite pièce tout au fond est entrouverte de deux doigts.*"
+        "text": "*Le couloir de l’annexe baigné par le couchant est silencieux. La porte de la petite pièce tout au bout est légèrement entrouverte.*"
     },
     "after2_yuna_2": {
         "name": "{name}",
@@ -547,7 +547,7 @@
     },
     "after2_yuna_choice_pre3": {
         "name": "Yuna",
-        "text": "Depuis que cette aînée est partie, il n'y en a pas eu une seule."
+        "text": "Personne du tout depuis le départ de l’ancien qui partageait cet endroit avec moi."
     },
     "after2_yuna_choice_pre3_b": {
         "name": "Yuna",
@@ -650,9 +650,9 @@
         "groupChoiceState": "il ne reste assez de temps que pour classer une pile et le protagoniste doit dire auprès de qui il restera",
         "groupAftermathCause": "auprès de qui le protagoniste a choisi de rester dans l'annexe, et pourquoi",
         "companionTexts": {
-            "Seoyeon": "*Seoyeon dresse un planning à côté des liasses.* L’emploi du temps du conseil doit aussi coller aujourd’hui. Mon côté d’abord.",
+            "Seoyeon": "*Seoyeon pose son planning à côté de la pile de documents.* Le calendrier du conseil doit aussi être bouclé aujourd’hui. Aide-moi d’abord de mon côté.",
             "Dain": "*Dain tape le coin du bureau.* Le rangement du gymnase est aussi en retard. Aide-moi d’abord.",
-            "Teacher": "*La professeure principale fait glisser un dossier d’un demi-pas.* Il reste encore une vérif de bureau. On peut prendre ce côté d’abord ?",
+            "Teacher": "*La professeure fait glisser un dossier sur le côté.* Il reste aussi des vérifications pour les profs. Tu veux bien regarder ici d’abord ?",
             "Nurse": "*L’infirmière pose une petite boîte.* Les fournitures de l’infirmerie doivent aussi coller aujourd’hui. Tu m’aides d’abord ?"
         }
     },
@@ -667,7 +667,7 @@
         "companionTexts": {
             "Seoyeon": "*Seoyeon soulève les papiers de l’entrepôt.* On m’a dit de commencer par le matériel de l’événement. Tu confirmes mon côté d’abord ?",
             "Yuna": "*Yuna déplie un court mémo.* Le responsable de l’entrepôt a demandé les papiers d’abord. Tu confirmes ça d’abord ?",
-            "Teacher": "*La professeure principale soulève une impression.* Ce que j’ai reçu à la salle des professeurs mettait les papiers en premier. On peut vérifier ce côté d’abord ?",
+            "Teacher": "*La professeure lève légèrement les feuilles.* En salle des profs, on m’a demandé les dossiers en premier. Tu veux bien jeter un œil par ici d’abord ?",
             "Nurse": "*L’infirmière tend une petite liste.* On a demandé la liste de fournitures d’abord. Tu confirmes ça d’abord ?"
         }
     },

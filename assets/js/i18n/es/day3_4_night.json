@@ -5,7 +5,7 @@
     },
     "night3_start_2": {
         "name": "{name}",
-        "text": "*En la habitación, sin encender ni la luz, le doy la vuelta al móvil que había dejado boca abajo sobre el escritorio y enciendo la pantalla.*"
+        "text": "*En el cuarto iluminado solo por la lámpara del escritorio, doy la vuelta al móvil y enciendo la pantalla.*"
     },
     "night3_faithful_check": {
         "name": "{name}",
@@ -91,7 +91,7 @@
     },
     "night3_dream_seo_bonus": {
         "name": "{name}",
-        "text": "*Al cerrar los ojos, lo primero que aparece es la luz del atardecer en la sala del consejo, la frente caliente de Seoyeon contra mi antebrazo y el lazo del cuello, un poco suelto.*"
+        "text": "*Al cerrar los ojos vuelve enseguida la luz del ocaso en el consejo, la frente tibia de Seoyeon contra mi brazo y su cuello de camisa algo revuelto.*"
     },
     "night3_dream_yuna_bonus": {
         "name": "{name}",
@@ -159,7 +159,7 @@
     },
     "night3_nightmare_4_b": {
         "name": "{name}",
-        "text": "*Abajo del todo, en el chat de Dain, tras las letras de risa añadidas al descuido queda colgando una única línea solitaria.*"
+        "text": "*Abajo del todo, en el chat de Dain, solo queda una frase suelta detrás del \"jaja\" ligero que añadió.*"
     },
     "night3_nightmare_5": {
         "name": "{name}",
@@ -188,7 +188,7 @@
     },
     "night3_nightmare_dain": {
         "name": "{name}",
-        "text": "*En el campo de Dain escribo «Perdón por dejarte pensarlo sola. Mañana por la mañana te lo digo enseguida». La punta del pulgar se me queda tiesa sobre el icono de enviar.*"
+        "text": "*En el cuadro de Dain escribo: \"Perdón por dejarte dándole vueltas sola. Mañana a primera hora hablamos.\" El pulgar se frena sobre enviar.*"
     },
     "night3_nightmare_end": {
         "name": "{name}",
