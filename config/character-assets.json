@@ -1445,8 +1445,8 @@
             "assets/images/characters/dain_oral_service.png",
             "assets/characters/dain/expressions/oral_service/01/sprite.png"
           ],
-          "sha256": "7025573332df1a29416ec8525318aff901bd600c7ce14f7dc0c5578174e6fdeb",
-          "bytes": 797137
+          "sha256": "0aa736ccd4180018e162adbcff04e50b8980005ede3647c0ac436800e6adaf95",
+          "bytes": 850354
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/oral_service/01/sprite.webp",
@@ -1454,8 +1454,8 @@
             "assets/images/characters/dain_oral_service.webp",
             "assets/characters/dain/expressions/oral_service/01/sprite.webp"
           ],
-          "sha256": "5b1857cb1486b62594be3ad8a6761278507555131ceb634037a69ff543731e37",
-          "bytes": 109803
+          "sha256": "688abf309ff0000f7dbd8b5784a7070d88b7e0d89bcb230d596dbce500b5260d",
+          "bytes": 120561
         }
       }
     },
@@ -2228,8 +2228,8 @@
             "assets/images/characters/dain_undressed_shy_02.png",
             "assets/characters/dain/expressions/undressed_shy/02/sprite.png"
           ],
-          "sha256": "45b6ac862e49e4f13bae0f7d845b3193934ee3ad192b4c3bd9b0479a22187c8d",
-          "bytes": 684692
+          "sha256": "d27c231e4247f09085648746e5eb2699c5c3849e1f5ea7828954d08676d97a98",
+          "bytes": 667162
         },
         "sprite.webp": {
           "source": "assets/characters/dain/expressions/undressed_shy/02/sprite.webp",
@@ -2237,8 +2237,8 @@
             "assets/images/characters/dain_undressed_shy_02.webp",
             "assets/characters/dain/expressions/undressed_shy/02/sprite.webp"
           ],
-          "sha256": "f9ea55cbb6320772bdff487315d88b817b8a05c9bc7ecd627073b66390d89e6a",
-          "bytes": 91321
+          "sha256": "b16e2663ed61f85b8c6bb41df2d6c88f9b0a07968fe528c4c175513ba0aba9c5",
+          "bytes": 92237
         }
       }
     },
@@ -3735,8 +3735,8 @@
             "assets/images/characters/haeun_choking.png",
             "assets/characters/haeun/expressions/choking/01/sprite.png"
           ],
-          "sha256": "0b8e84919c00a0b4db3edc55f0c6095599120e61bdf05a4ff17a9db263231669",
-          "bytes": 820276
+          "sha256": "d4b12b2a54547d3cdb6bfcda8a2ca010e3878d1d822ee739cf816e4d0e44975e",
+          "bytes": 615376
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/choking/01/sprite.webp",
@@ -3744,8 +3744,8 @@
             "assets/images/characters/haeun_choking.webp",
             "assets/characters/haeun/expressions/choking/01/sprite.webp"
           ],
-          "sha256": "98636f04131ccd3600bc558edc6c2186a663a55e138c5450c093832e6f27794f",
-          "bytes": 137959
+          "sha256": "93580af1aee8cbf1d66fb8f0d523095fce41e4b261d51a09548db3a4267e99b2",
+          "bytes": 79433
         }
       }
     },
@@ -4113,8 +4113,8 @@
             "assets/images/characters/haeun_dazed.png",
             "assets/characters/haeun/expressions/dazed/01/sprite.png"
           ],
-          "sha256": "d99fdb40d65ae8b040eac3a64e91b6c5b702162be147fe0fa4ebadc7ad92116f",
-          "bytes": 672147
+          "sha256": "8856eb74bf05b2f1bdad4d127d3cff873061d377c59a1689f359730e58e07d55",
+          "bytes": 657674
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/dazed/01/sprite.webp",
@@ -4122,8 +4122,8 @@
             "assets/images/characters/haeun_dazed.webp",
             "assets/characters/haeun/expressions/dazed/01/sprite.webp"
           ],
-          "sha256": "3afbeb094170f00d981d65e34669cf2a427e83d19c33b50da3f38b1d32e3f381",
-          "bytes": 85975
+          "sha256": "0fa33f813357687724c5c438427e113d40c157cb357b8e07c59f3880206012cc",
+          "bytes": 86555
         }
       }
     },
@@ -4140,8 +4140,8 @@
             "assets/images/characters/haeun_dead.png",
             "assets/characters/haeun/expressions/dead/01/sprite.png"
           ],
-          "sha256": "94c75a808f90d0bace1fd9d963a6a30f48b47c22cca3fc8a0bcf5262c89694dd",
-          "bytes": 593614
+          "sha256": "f7bff3b503f754f08a5b71382d1d7c18f89e5552a3a9671de327a8c85da6aa97",
+          "bytes": 583869
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/dead/01/sprite.webp",
@@ -4149,8 +4149,8 @@
             "assets/images/characters/haeun_dead.webp",
             "assets/characters/haeun/expressions/dead/01/sprite.webp"
           ],
-          "sha256": "8ad6a087b7788fcb08a9e5339f75eb813676f276c9ad26b6f53e363079ebe1b8",
-          "bytes": 69443
+          "sha256": "83aee0b9c9115fe101faeffb4ed8bf9059565ce943a11c8006a8a11894ae6607",
+          "bytes": 68219
         }
       }
     },
@@ -4167,8 +4167,8 @@
             "assets/images/characters/haeun_disgusted.png",
             "assets/characters/haeun/expressions/disgusted/01/sprite.png"
           ],
-          "sha256": "7a7fc1833b4345bb7fd5329dfdb8a77eb4ac4601a0a7aad09ca97d533c269b3c",
-          "bytes": 629282
+          "sha256": "f7947d071da0fb4f0d56a98df34c12129888ed331859ed32857cc3cd1d7deb02",
+          "bytes": 573057
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/disgusted/01/sprite.webp",
@@ -4176,8 +4176,8 @@
             "assets/images/characters/haeun_disgusted.webp",
             "assets/characters/haeun/expressions/disgusted/01/sprite.webp"
           ],
-          "sha256": "e03efb0d44ef2d8f9fdef0bf4cb9f9bc991f536eeef10ba3d0b970ed59c2da4d",
-          "bytes": 78293
+          "sha256": "1c0ae0d844e69fc19036472a20bf9e8d5f596bd4761c3ee942bd00866c5b9a34",
+          "bytes": 69819
         }
       }
     },
@@ -4356,8 +4356,8 @@
             "assets/images/characters/haeun_fainted.png",
             "assets/characters/haeun/expressions/fainted/01/sprite.png"
           ],
-          "sha256": "68811db95317bba75890c58e82637f66f2cc5fe4f62cd81a56dbbb3807e25a94",
-          "bytes": 814845
+          "sha256": "61916b2474d29a2cd1d52aa42994444166be7421ffef938b45b376518a185b8f",
+          "bytes": 650606
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/fainted/01/sprite.webp",
@@ -4365,8 +4365,8 @@
             "assets/images/characters/haeun_fainted.webp",
             "assets/characters/haeun/expressions/fainted/01/sprite.webp"
           ],
-          "sha256": "72598839f1f54fc0b5b9e2a73c38e8aa8df70548f8d81e93e7b093798609b5a4",
-          "bytes": 101929
+          "sha256": "a62ffcad5e2fb6ace8e500bf0d3430040028e383ed9722a504d7dc634fe1a636",
+          "bytes": 80637
         }
       }
     },
@@ -4491,8 +4491,8 @@
             "assets/images/characters/haeun_furious.png",
             "assets/characters/haeun/expressions/furious/01/sprite.png"
           ],
-          "sha256": "8640ecaa8b5467d5d6187afcbe0e05df742b9b16d003b03fe1830c9f0505df05",
-          "bytes": 737390
+          "sha256": "d2c191cf1fe763ca83396ecc0c6d7ee8abce5eab4367ba6805203cc076b108d3",
+          "bytes": 706181
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/furious/01/sprite.webp",
@@ -4500,8 +4500,8 @@
             "assets/images/characters/haeun_furious.webp",
             "assets/characters/haeun/expressions/furious/01/sprite.webp"
           ],
-          "sha256": "c5a584d975f32e2b234b6f959eb613a6bbef78d0de4c4a6ba47aee4c52abbf3e",
-          "bytes": 96079
+          "sha256": "7ab22de8088b21b864e361f3353bc8abea26faeb47982621e35276f9fc2e9262",
+          "bytes": 89667
         }
       }
     },
@@ -4545,8 +4545,8 @@
             "assets/images/characters/haeun_humiliated.png",
             "assets/characters/haeun/expressions/humiliated/01/sprite.png"
           ],
-          "sha256": "039a55e893c138b4f6a067bcf3ad44025ff1fcdb2111a940d6806ed87293a029",
-          "bytes": 658981
+          "sha256": "41f48d4baf9f9c7ced30fb42ae25e5942a42291be11e8b7c9e666eb9ab489c91",
+          "bytes": 562621
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/humiliated/01/sprite.webp",
@@ -4554,8 +4554,8 @@
             "assets/images/characters/haeun_humiliated.webp",
             "assets/characters/haeun/expressions/humiliated/01/sprite.webp"
           ],
-          "sha256": "ac9649ab2f290db0484d0934aed8c9a67c105b8a9f5830f19c258dc77f9e3cac",
-          "bytes": 81153
+          "sha256": "b1846f7d0b66d14d045121a2e2458914cba9fc95f09b7a5736dbf640ea19ed62",
+          "bytes": 70253
         }
       }
     },
@@ -4626,8 +4626,8 @@
             "assets/images/characters/haeun_kiss.png",
             "assets/characters/haeun/expressions/kiss/01/sprite.png"
           ],
-          "sha256": "461f421bcd5c561145510ebb9ea0935410688fc6ef430a6ac4d841c157495b5a",
-          "bytes": 817175
+          "sha256": "9bd8a4599fbacaaf3c933e57280603f7015d2f9bc46e7bc23ae232c37e1fc9a0",
+          "bytes": 645533
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/kiss/01/sprite.webp",
@@ -4635,8 +4635,8 @@
             "assets/images/characters/haeun_kiss.webp",
             "assets/characters/haeun/expressions/kiss/01/sprite.webp"
           ],
-          "sha256": "b9468ff03bfef650b10f9ccd73d15c3e25fee70994d09dc91777643e30dbcf9e",
-          "bytes": 98849
+          "sha256": "b55af9b579e24f0e87fcb7105a73fafc233b30919e4eae8ecb24d0048ae42a92",
+          "bytes": 81879
         }
       }
     },
@@ -4788,8 +4788,8 @@
             "assets/images/characters/haeun_oral_service.png",
             "assets/characters/haeun/expressions/oral_service/01/sprite.png"
           ],
-          "sha256": "59de45c61ce66a65a15f8f0907fe55897a9254ac8c69ba35df8cf80cd013e075",
-          "bytes": 635633
+          "sha256": "70cc2b9b8f26404bae8c0c01b93f416a74221248e7ee90847e119071c6c499f5",
+          "bytes": 781937
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/oral_service/01/sprite.webp",
@@ -4797,8 +4797,8 @@
             "assets/images/characters/haeun_oral_service.webp",
             "assets/characters/haeun/expressions/oral_service/01/sprite.webp"
           ],
-          "sha256": "3d0f96e5473006a9a82393eebaa8ac70e3623aa58fbe4f38c4a161a481deab70",
-          "bytes": 78665
+          "sha256": "5f2c775801f9bb9c45ae1fa32109e4ea59d6089433f33dd977a0589e71a278a4",
+          "bytes": 92697
         }
       }
     },
@@ -5004,8 +5004,8 @@
             "assets/images/characters/haeun_scared.png",
             "assets/characters/haeun/expressions/scared/01/sprite.png"
           ],
-          "sha256": "523c904713aa22f06a6cf11f1d461d50381477b4b88088f2d016a4b9d3880a02",
-          "bytes": 665817
+          "sha256": "e04191f85c9c6eb377f5501167a5ee19a3afd47792f7fff35944931102076fe9",
+          "bytes": 636105
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/scared/01/sprite.webp",
@@ -5013,8 +5013,8 @@
             "assets/images/characters/haeun_scared.webp",
             "assets/characters/haeun/expressions/scared/01/sprite.webp"
           ],
-          "sha256": "10abbbf7ebc10333f45016028f7a4d6e5545f2f7431be07f0b87b556733b0ad5",
-          "bytes": 78501
+          "sha256": "2dee40c80fbcdcb8e781f080a637e22658ad3f735b7bced9a7ed60229f92a489",
+          "bytes": 80835
         }
       }
     },
@@ -5058,8 +5058,8 @@
             "assets/images/characters/haeun_scream.png",
             "assets/characters/haeun/expressions/scream/01/sprite.png"
           ],
-          "sha256": "8311459017ad389a99b218db20b8ecdf434d1467e9b36f505e7026e65f878214",
-          "bytes": 746854
+          "sha256": "fae09e152c007a44fb99680125ed11c50d22c430d0e167196909d22d335fc2ca",
+          "bytes": 571503
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/scream/01/sprite.webp",
@@ -5067,8 +5067,8 @@
             "assets/images/characters/haeun_scream.webp",
             "assets/characters/haeun/expressions/scream/01/sprite.webp"
           ],
-          "sha256": "cb1242cf0ad6f9d7f71a8ac521af57574f02578a9d8965c143842207f1007db0",
-          "bytes": 97091
+          "sha256": "8068b6e26b5f619e9b47826d3ec83d828f963ade89ed7c254e4da8e721cb7338",
+          "bytes": 73477
         }
       }
     },
@@ -5274,8 +5274,8 @@
             "assets/images/characters/haeun_sob.png",
             "assets/characters/haeun/expressions/sob/01/sprite.png"
           ],
-          "sha256": "191b4c6f3c9509047290a7ecc9a0b4f36b7db1942706249852be57fc80702bca",
-          "bytes": 730069
+          "sha256": "2e47cd6c48851030d7245ee5d0350e15d7ebe9912f7d597f53797e23ffc1cff9",
+          "bytes": 635876
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/sob/01/sprite.webp",
@@ -5283,8 +5283,8 @@
             "assets/images/characters/haeun_sob.webp",
             "assets/characters/haeun/expressions/sob/01/sprite.webp"
           ],
-          "sha256": "80ffc5a2dcf50e748782b59ada77df4e81164176acd670260483c188946831fe",
-          "bytes": 94313
+          "sha256": "d2b1310474e15d7f0e6b7ba3de0937a54598ac70c4984d790888e2dd148715cd",
+          "bytes": 80567
         }
       }
     },
@@ -5571,8 +5571,8 @@
             "assets/images/characters/haeun_very_shy.png",
             "assets/characters/haeun/expressions/very_shy/01/sprite.png"
           ],
-          "sha256": "2f5cf10a9a94a666d5f5f50843fc172b31c56e84cb228c795add07d80a4a6c7d",
-          "bytes": 695343
+          "sha256": "3b7ff9909bab38fe40aa179f9b9400699f237f02779c9cf8ed5d59177510d9d7",
+          "bytes": 604555
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/very_shy/01/sprite.webp",
@@ -5580,8 +5580,8 @@
             "assets/images/characters/haeun_very_shy.webp",
             "assets/characters/haeun/expressions/very_shy/01/sprite.webp"
           ],
-          "sha256": "4be1a52eafd61f86eae35fb0dad23944321abe6446f55606b3a3bee9baaf9bf6",
-          "bytes": 88259
+          "sha256": "c601b4cda939c4ef9f265bc821607111c71df20bde390bddfc9d734eca3f48a0",
+          "bytes": 74097
         }
       }
     },
@@ -6903,8 +6903,8 @@
             "assets/images/characters/minsu_oral_service.png",
             "assets/characters/minsu/expressions/oral_service/01/sprite.png"
           ],
-          "sha256": "df44be1c83790b5740a6571799c3644cb799968027700449cb6284446df72d92",
-          "bytes": 1007897
+          "sha256": "cf2eba9d7a7cb3b10c04ddf455ab68d2cd0fdb01a47c4dad95f3aa7e39cc8d49",
+          "bytes": 798146
         },
         "sprite.webp": {
           "source": "assets/characters/minsu/expressions/oral_service/01/sprite.webp",
@@ -6912,8 +6912,8 @@
             "assets/images/characters/minsu_oral_service.webp",
             "assets/characters/minsu/expressions/oral_service/01/sprite.webp"
           ],
-          "sha256": "3cd554cf65d259b6d657cc164be507d940c849f4fd044d7d2fb14ff13c373732",
-          "bytes": 132405
+          "sha256": "2175fa7617629a727f54796f2de209958ebf91e6c12b1bc1dedf5203dc7a137d",
+          "bytes": 88651
         }
       }
     },
@@ -7686,8 +7686,8 @@
             "assets/images/characters/minsu_undressed_shy.png",
             "assets/characters/minsu/expressions/undressed_shy/01/sprite.png"
           ],
-          "sha256": "3f9481dc3926d2bc6e525234bc90873b2e68106a183eb071d538f00878a0b84c",
-          "bytes": 828794
+          "sha256": "e042a816405338d1fb71977f06f51daf4d9dd4ecee93577a3b2bf8b5fb8705f6",
+          "bytes": 864563
         },
         "sprite.webp": {
           "source": "assets/characters/minsu/expressions/undressed_shy/01/sprite.webp",
@@ -7695,8 +7695,8 @@
             "assets/images/characters/minsu_undressed_shy.webp",
             "assets/characters/minsu/expressions/undressed_shy/01/sprite.webp"
           ],
-          "sha256": "3416e5bbb6a5961d0948b1d3bc0cd513b8fbda14acb23a4b66d93ba0e0b136ad",
-          "bytes": 80637
+          "sha256": "c32bd6b6f31116c5b8952433668433fe9a20b52cfa6214af1babf11ff71b6394",
+          "bytes": 87235
         }
       }
     },
@@ -8928,8 +8928,8 @@
             "assets/images/characters/nurse_hungry_lust.png",
             "assets/characters/nurse/expressions/hungry_lust/01/sprite.png"
           ],
-          "sha256": "9238fdbcc379c6b42d66ed1d05976cc4513bf2f9fe36849d3bc46f817fb7ec25",
-          "bytes": 1018325
+          "sha256": "6820ce09d881b71f6e2e669ab438d25bc62f0bee6363f2b02675bd51b5966418",
+          "bytes": 1063323
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/hungry_lust/01/sprite.webp",
@@ -8937,8 +8937,8 @@
             "assets/images/characters/nurse_hungry_lust.webp",
             "assets/characters/nurse/expressions/hungry_lust/01/sprite.webp"
           ],
-          "sha256": "63ed1881ade1f5cbb82eea49d032103b534b5a562818e417b308a8687c8b05cc",
-          "bytes": 135437
+          "sha256": "090321d34aa72a17078140994d1d089332d44696b786db8525472889695f851e",
+          "bytes": 133659
         }
       }
     },
@@ -9144,8 +9144,8 @@
             "assets/images/characters/nurse_oral_service.png",
             "assets/characters/nurse/expressions/oral_service/01/sprite.png"
           ],
-          "sha256": "22cfe100f4f737b397cdf4730e87fc59600427e211900f277a366a74de18f124",
-          "bytes": 1006079
+          "sha256": "6453f436c0393bb8135b1b9cfb0cf6eff4a255f8ee262672e3b211f7b2d38908",
+          "bytes": 1026204
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/oral_service/01/sprite.webp",
@@ -9153,8 +9153,8 @@
             "assets/images/characters/nurse_oral_service.webp",
             "assets/characters/nurse/expressions/oral_service/01/sprite.webp"
           ],
-          "sha256": "6d4ba526512715c25eb988ff2a7925f1f7528dde2168c844606e7a7c2ce1e92a",
-          "bytes": 125807
+          "sha256": "f33e46560e83b9478e4699cc8ae4547a880da4816dc5112b6b5f333819c411b6",
+          "bytes": 128705
         }
       }
     },
@@ -9711,8 +9711,8 @@
             "assets/images/characters/nurse_submissive_lust.png",
             "assets/characters/nurse/expressions/submissive_lust/01/sprite.png"
           ],
-          "sha256": "d567d1b30ef210e1a506b6983bf33cba0c9a70507414382dcc34afc80cb2d866",
-          "bytes": 967257
+          "sha256": "3aec0836058835dc70e8e7d04b81b3a95417ef303f101b875ee65615540d0d66",
+          "bytes": 921290
         },
         "sprite.webp": {
           "source": "assets/characters/nurse/expressions/submissive_lust/01/sprite.webp",
@@ -9720,8 +9720,8 @@
             "assets/images/characters/nurse_submissive_lust.webp",
             "assets/characters/nurse/expressions/submissive_lust/01/sprite.webp"
           ],
-          "sha256": "842681c24e52f399917e8d93f432c3454665ee7d0c37a1bac56d7a52c9562e97",
-          "bytes": 123283
+          "sha256": "58fd508da33c684f742d0bb08df395eec2b74cef9c5c139daaa841e72328b019",
+          "bytes": 109073
         }
       }
     },
@@ -12514,8 +12514,8 @@
             "assets/images/characters/seyoun_oral_service.png",
             "assets/characters/seoyeon/expressions/oral_service/01/sprite.png"
           ],
-          "sha256": "0e6a43a6b211cd2b48d75089b3d799f9e7707ea765d72e65b366ef8d7a67358a",
-          "bytes": 864550
+          "sha256": "365e413c9937cfffd75da2da6ca4e1a174180f390f32db72509adbdea7f1e806",
+          "bytes": 918752
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/oral_service/01/sprite.webp",
@@ -12523,8 +12523,8 @@
             "assets/images/characters/seyoun_oral_service.webp",
             "assets/characters/seoyeon/expressions/oral_service/01/sprite.webp"
           ],
-          "sha256": "8a3b1477b7c89b2ea63dc842da50ec28b9315d9356955602a9b27a747a96fcdf",
-          "bytes": 114645
+          "sha256": "b2a2c5fd7592bf3776cbc2c12553b623375b5f9c53cd194abd0bd018a9c6aaa9",
+          "bytes": 114695
         }
       }
     },
@@ -12541,8 +12541,8 @@
             "assets/images/characters/seyoun_overwhelmed_pleasure.png",
             "assets/characters/seoyeon/expressions/overwhelmed_pleasure/01/sprite.png"
           ],
-          "sha256": "b9562e211d3748d1bc400a3c01c3f729e0eeeb47ff37b011f96dc753be5b30b6",
-          "bytes": 901042
+          "sha256": "88c29514a582f9866fad6bd15f9596b872521eafcedc2ef9d02a3a26c3ef1491",
+          "bytes": 747840
         },
         "sprite.webp": {
           "source": "assets/characters/seoyeon/expressions/overwhelmed_pleasure/01/sprite.webp",
@@ -12550,8 +12550,8 @@
             "assets/images/characters/seyoun_overwhelmed_pleasure.webp",
             "assets/characters/seoyeon/expressions/overwhelmed_pleasure/01/sprite.webp"
           ],
-          "sha256": "8e83fc22d12530138e63036583cbcebf959fbfbca27371d5982d35e69dabb883",
-          "bytes": 122565
+          "sha256": "5cc8853733eb41b0bc5b8c49184a118966e54fc23b119dc83051e3d806daaa6a",
+          "bytes": 93761
         }
       }
     },
@@ -15030,8 +15030,8 @@
             "assets/images/characters/teacher_climax_08.png",
             "assets/characters/teacher/expressions/climax/08/sprite.png"
           ],
-          "bytes": 783617,
-          "sha256": "2b0ac119d163a53d7a81bd22886d40f454a9282fdf4d0dbe45541619503cb2f4"
+          "bytes": 833977,
+          "sha256": "dd2e8b0674ded360244da633b486b9a9679dd0552a0c9e31f3c566a94e5d99bb"
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/climax/08/sprite.webp",
@@ -15039,8 +15039,8 @@
             "assets/images/characters/teacher_climax_08.webp",
             "assets/characters/teacher/expressions/climax/08/sprite.webp"
           ],
-          "bytes": 96665,
-          "sha256": "c368a4f75987d7e79ca6e21cf238d40b9605b359685d9ec227f35126dffe29fd"
+          "bytes": 107569,
+          "sha256": "6a65808b0e2de7ebed90153f3de143ad81c9329f81c8dc3cbdfa98badc52ca06"
         }
       }
     },
@@ -15057,8 +15057,8 @@
             "assets/images/characters/teacher_climax_09.png",
             "assets/characters/teacher/expressions/climax/09/sprite.png"
           ],
-          "bytes": 789149,
-          "sha256": "287600da3d9a9a6f0d84e7afe3ddda299722829e221fab2278c2a208bc897b78"
+          "bytes": 841579,
+          "sha256": "fefc76f06d44108fdabc758c825b308e0f3a1c6c078f998d986caa7818cda35d"
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/climax/09/sprite.webp",
@@ -15066,8 +15066,8 @@
             "assets/images/characters/teacher_climax_09.webp",
             "assets/characters/teacher/expressions/climax/09/sprite.webp"
           ],
-          "bytes": 95563,
-          "sha256": "3fe4619b01ba69c7ce07d26139d7e566df8ba2e619321b439f4d3b9a660118a9"
+          "bytes": 104507,
+          "sha256": "e2ccfa6923b81fbff7021cecc020496da63a0d3450a652edcf21f816d1abc323"
         }
       }
     },
@@ -15084,8 +15084,8 @@
             "assets/images/characters/teacher_climax_10.png",
             "assets/characters/teacher/expressions/climax/10/sprite.png"
           ],
-          "bytes": 799395,
-          "sha256": "f6b2cf25b71e63c8a9a9ec9610fcc3e0a1e6651544712263e145bcb47ec3e73b"
+          "bytes": 792943,
+          "sha256": "1a82b7e33230b876c815b9c93a9ee034beef42e55ccacb23b0778ed363c82e3c"
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/climax/10/sprite.webp",
@@ -15093,8 +15093,8 @@
             "assets/images/characters/teacher_climax_10.webp",
             "assets/characters/teacher/expressions/climax/10/sprite.webp"
           ],
-          "bytes": 99185,
-          "sha256": "5362617b7b0c23ddf011226021d09b78a3dd3c912eba52fcc856881e9382765f"
+          "bytes": 94627,
+          "sha256": "f5bfd8c189edccf4a41ec85d0df8d335aff305763e44d3f5d10a6847c31e5d03"
         }
       }
     },
@@ -15948,8 +15948,8 @@
             "assets/images/characters/teacher_oral_service.png",
             "assets/characters/teacher/expressions/oral_service/01/sprite.png"
           ],
-          "sha256": "f2a7332c7979cacf7311777e16b4b47d146914718605024ee0f436f0e57ee71b",
-          "bytes": 854633
+          "sha256": "5856407088d6ef4dfd3f015313d716c0f3d2894deb35300d363f06003554b7f0",
+          "bytes": 900011
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/oral_service/01/sprite.webp",
@@ -15957,8 +15957,8 @@
             "assets/images/characters/teacher_oral_service.webp",
             "assets/characters/teacher/expressions/oral_service/01/sprite.webp"
           ],
-          "sha256": "cff1b6e5b3e277a33ae3a98e119a7e10591848b6e32b9d7c4e21db3d9c9a83ab",
-          "bytes": 102219
+          "sha256": "d2a1319d9310c63cd8437f64684135e59acd2a6938a0cf55143580fb469b2cf6",
+          "bytes": 116171
         }
       }
     },
@@ -15975,8 +15975,8 @@
             "assets/images/characters/teacher_overwhelmed_pleasure.png",
             "assets/characters/teacher/expressions/overwhelmed_pleasure/01/sprite.png"
           ],
-          "sha256": "2acf118a5d91b08dcb5879edfdf37820d15e48da7b3704235369ad334e13350a",
-          "bytes": 853670
+          "sha256": "8801af1c56a486cc4f947bb9f82c611bfca2bf8f499245cd6a38c143370314a9",
+          "bytes": 766666
         },
         "sprite.webp": {
           "source": "assets/characters/teacher/expressions/overwhelmed_pleasure/01/sprite.webp",
@@ -15984,8 +15984,8 @@
             "assets/images/characters/teacher_overwhelmed_pleasure.webp",
             "assets/characters/teacher/expressions/overwhelmed_pleasure/01/sprite.webp"
           ],
-          "sha256": "6752826c92a9de79484a8b70d78e7f6f3575698da82d1c0ce9ad5c84538992d1",
-          "bytes": 110729
+          "sha256": "042a92eb3a545467f5a3cde6b409917e151218c8d7f98810a47aa0aea4e51392",
+          "bytes": 91287
         }
       }
     },
@@ -17163,8 +17163,8 @@
             "assets/images/characters/yuna_climax_02.png",
             "assets/characters/yuna/expressions/climax/02/sprite.png"
           ],
-          "bytes": 869023,
-          "sha256": "910c6aab60bc372361dbfb61fb2c4f3a5c4b473320672a73d8aef45d5f40f18c"
+          "bytes": 921934,
+          "sha256": "5334b0b2df2a13976c34c48070943f6530ee3c2f25f44d59ba8b31da3d1fb7c9"
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/climax/02/sprite.webp",
@@ -17172,8 +17172,8 @@
             "assets/images/characters/yuna_climax_02.webp",
             "assets/characters/yuna/expressions/climax/02/sprite.webp"
           ],
-          "bytes": 157691,
-          "sha256": "3c95e04fca9aaf1684d8d343ef4a09e2c79ec7c32da6790a6169888eb69fe3fe"
+          "bytes": 137589,
+          "sha256": "a7b11e9db82e809706d832fd28c831e9987048559c92721a30564c970e63c9c2"
         }
       }
     },
@@ -17298,8 +17298,8 @@
             "assets/images/characters/yuna_climax_07.png",
             "assets/characters/yuna/expressions/climax/07/sprite.png"
           ],
-          "bytes": 914316,
-          "sha256": "a7c2e17d812fa41b9e8811963ff3a4c68334445db5d86b78b7fc73deaab511c6"
+          "bytes": 980129,
+          "sha256": "b0d7761dda59ad7098ba45b13988a4120780f3cd6ac101274ca551eec2adf022"
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/climax/07/sprite.webp",
@@ -17307,8 +17307,8 @@
             "assets/images/characters/yuna_climax_07.webp",
             "assets/characters/yuna/expressions/climax/07/sprite.webp"
           ],
-          "bytes": 134415,
-          "sha256": "ddec04c7fb9e2207bfb0ef5661dd8a6c56c2193dde59df68478df5abdb522ab6"
+          "bytes": 153435,
+          "sha256": "7ae5d91e64a219b8a3a6e2f9d87e77782439e15a76b11f91068d6814b5348b16"
         }
       }
     },
@@ -17352,8 +17352,8 @@
             "assets/images/characters/yuna_climax_09.png",
             "assets/characters/yuna/expressions/climax/09/sprite.png"
           ],
-          "bytes": 903031,
-          "sha256": "7b64995ad5e4545b1039b4595270abb10b8225e5362d46da129e60e020d7a3c8"
+          "bytes": 1065253,
+          "sha256": "75d2cf64a456967ff98a12b76bf12cd3a479d0cfba890ee9829e29c0384fe24e"
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/climax/09/sprite.webp",
@@ -17361,8 +17361,8 @@
             "assets/images/characters/yuna_climax_09.webp",
             "assets/characters/yuna/expressions/climax/09/sprite.webp"
           ],
-          "bytes": 132557,
-          "sha256": "81815c2ccc8ed243d8dac4d362068e3133b1ae78a7793159de699a577daa5549"
+          "bytes": 160563,
+          "sha256": "7fd2a633a3217a456bcfd49fa680893ba790327255ecccbe48dbd80bb4ecd2d4"
         }
       }
     },
@@ -18135,8 +18135,8 @@
             "assets/images/characters/yuna_messy_afterglow.png",
             "assets/characters/yuna/expressions/messy_afterglow/01/sprite.png"
           ],
-          "sha256": "9953a149eb044611f90b4f2b547ae5aa619682e77d6a1f989d8ab095c0782894",
-          "bytes": 926718
+          "sha256": "ca1ebe2f49ee607517b325bbb382eb7cc096f8371a4a7bf76ce4a896b9a5f5da",
+          "bytes": 847368
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/messy_afterglow/01/sprite.webp",
@@ -18144,8 +18144,8 @@
             "assets/images/characters/yuna_messy_afterglow.webp",
             "assets/characters/yuna/expressions/messy_afterglow/01/sprite.webp"
           ],
-          "sha256": "18d56cf3a07bb5a8d3494b33c8caf8f0f0adc83b8bca6adcc3627d2be25ede15",
-          "bytes": 139281
+          "sha256": "c177bad4befaee4111b8972910b738b172a4e5b501c1f18685034a0c981060a4",
+          "bytes": 116985
         }
       }
     },
@@ -18243,8 +18243,8 @@
             "assets/images/characters/yuna_overwhelmed_pleasure.png",
             "assets/characters/yuna/expressions/overwhelmed_pleasure/01/sprite.png"
           ],
-          "sha256": "a6ae07c2fb480c8454e2bcef5d922d773962304282776f8c3531c10f8e8e5d5e",
-          "bytes": 996205
+          "sha256": "602d2e5e555ccda610ed489056890ac25eeb04c067ee1902ceae03d477c9d3aa",
+          "bytes": 1023684
         },
         "sprite.webp": {
           "source": "assets/characters/yuna/expressions/overwhelmed_pleasure/01/sprite.webp",
@@ -18252,8 +18252,8 @@
             "assets/images/characters/yuna_overwhelmed_pleasure.webp",
             "assets/characters/yuna/expressions/overwhelmed_pleasure/01/sprite.webp"
           ],
-          "sha256": "5ddeb9c23634366763ea2198536ce9745699ff1797e690318ff2675e407163e2",
-          "bytes": 157783
+          "sha256": "5cb872c8864c2acbb64bcd5d1c978aaf85863985c6d933eadcd5afa593172188",
+          "bytes": 158555
         }
       }
     },
