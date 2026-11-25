@@ -2068,9 +2068,7 @@ class FreeTalkSystem {
                     this.applyExpression(parsed.expression, scene);
                 }
                 affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(charKey) } : this.applyAffinity(parsed.affinity, scene, finalContent, {
-                    forcedSexualViolation,
-                    expression: parsed.expression,
-                    replyText: reply
+                    reaction: parsed.intimacyReaction
                 });
                 this._assertRequestContext(requestContext, data);
                 const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
@@ -2385,7 +2383,8 @@ window.saveCupidChatLog({
                 segments,
                 text: this._sanitizeVisibleArtifacts(this.segmentsToText(segments)),
                 expression: String(conversation.expression || '').toLowerCase(),
-                affinity: CupidFreeTalkCore.decisionAffinityValue(conversation)
+                affinity: CupidFreeTalkCore.decisionAffinityValue(conversation),
+                intimacyReaction: CupidFreeTalkCore.decisionIntimacyReaction(conversation)
             });
         }
         const ordered = this.groupParticipants
@@ -2439,7 +2438,7 @@ window.saveCupidChatLog({
 
     // Each group speaker is scored independently: every character may gain up to +3 per turn on its own,
     // matching the documented 18 turns x 3 = 54 pre-ending free-talk budget per character (2026-10-06).
-    _applyGroupAffinity(change, speakerId, latestUserText = '', scene = null) { var __oc173, __oc174, __oc175;
+    _applyGroupAffinity(change, speakerId, latestUserText = '', scene = null, reaction = '') { var __oc173, __oc174, __oc175;
         if (!(((__oc173 = this.stateManager.stats) === null || __oc173 === void 0 ? void 0 : __oc173[speakerId]))) return null;
         if (!Number.isInteger(change)) return null;
         const previousValue = this.stateManager.getAffinity(speakerId);
@@ -2450,6 +2449,11 @@ window.saveCupidChatLog({
             { characterId: speakerId, nonRomance: speakerId === 'Haeun' && ((scene === null || scene === void 0 ? void 0 : scene.haeunRomance)) !== true,
                 ...getHaeunContactTargetOptions(speakerId, scene, this.groupParticipants) }
         );
+        // 강제였더라도 답변 끝에서 반긴 키스·성행위는 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
+        requestedChange = CupidFreeTalkCore.applyWelcomedIntimacyFloor(requestedChange, {
+            reaction, characterId: speakerId,
+            nonRomance: speakerId === 'Haeun' && ((scene === null || scene === void 0 ? void 0 : scene.haeunRomance)) !== true
+        });
         if (requestedChange > 0) requestedChange = Math.min(requestedChange, GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX);
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0, positiveUsed: 0 };
@@ -2555,7 +2559,8 @@ window.saveCupidChatLog({
                 conversation.affinity,
                 conversation.speakerId,
                 latestUserText,
-                scene
+                scene,
+                conversation.intimacyReaction
             );
             const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
                 (((__oc186 = (__oc185 = this.stateManager).getRelationshipAftermath) === null || __oc186 === void 0 ? void 0 : __oc186.call(__oc185, conversation.speakerId))),
@@ -3387,6 +3392,7 @@ window.saveCupidGroupChatLog({
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: CupidFreeTalkCore.decisionAffinityValue(parsed),
+                    intimacyReaction: CupidFreeTalkCore.decisionIntimacyReaction(parsed),
                     forcedSexualViolation: CupidFreeTalkCore.normalizeForcedSexualViolation(parsed.forcedSexualViolation),
                     memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : [],
                 };
@@ -3399,6 +3405,7 @@ window.saveCupidGroupChatLog({
                     segments: null,
                     expression: (parsed.expression || "").toLowerCase(),
                     affinity: CupidFreeTalkCore.decisionAffinityValue(parsed),
+                    intimacyReaction: CupidFreeTalkCore.decisionIntimacyReaction(parsed),
                     forcedSexualViolation: CupidFreeTalkCore.normalizeForcedSexualViolation(parsed.forcedSexualViolation),
                     memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : [],
                 };
@@ -3561,7 +3568,7 @@ window.saveCupidGroupChatLog({
      * 📊 applyAffinity - JSON 필드에서 받은 호감도 변화량 적용
      * @param {number} change - 호감도 변화량 (정수)
      * @param {Object} scene - 현재 씬 데이터
-     * @param {Object|null} consent - 1:1 본편 답변의 forcedSexualViolation 분류, 선택된 표정, 화면에 낸 답변. 합의가 분명한 키스·성행위에 채점기가 준 -14 이하 점수만 0으로 맞춘다.
+     * @param {Object|null} consent - 판별 모델이 본 캐릭터 반응(reaction). welcomed면 키스·성행위 감점을 0으로 맞춘다(하은 제외).
      */
     applyAffinity(change, scene, latestUserText = '', consent = null) { var __oc258, __oc259;
         const charKey = this.charNameMap[scene.name] || scene.name;
@@ -3581,17 +3588,12 @@ window.saveCupidGroupChatLog({
             { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
                 ...getHaeunContactTargetOptions(charKey, scene) }
         );
-        // 작가 분류가 none이고, 표정이 키스·성행위에 함께하는 모습이며, 사용자 줄이 그 행위를 직접 말하고 폭력·협박·촬영·모욕이
-        // 없고, 답변에 강제·거절·고통 묘사가 없고, 호감도 40 이상이면 채점기의 -14 이하 점수는 답변과 모순이라 0으로 맞춘다(2026-11-26).
+        // 강제였더라도 캐릭터가 답변 끝에서 키스·성행위를 반기면 호감도를 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
         if (consent) {
-            requestedChange = CupidFreeTalkCore.reconcileConsensualIntimacyAffinity(
-                requestedChange,
-                latestUserText,
-                policyAffinity,
-                { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
-                    forcedSexualViolation: consent.forcedSexualViolation, expression: consent.expression,
-                    replyText: consent.replyText }
-            );
+            requestedChange = CupidFreeTalkCore.applyWelcomedIntimacyFloor(requestedChange, {
+                reaction: consent.reaction, characterId: charKey,
+                nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
+            });
         }
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0 };

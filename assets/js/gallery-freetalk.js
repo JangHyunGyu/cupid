@@ -1370,7 +1370,8 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.progress.getAffinity(requestCharId) } : this._applyAffinityChange(
                 incidentResult.affinityChange,
                 requestCharId,
-                finalContent
+                finalContent,
+                parsed.intimacyReaction
             );
             const aftermathFromIncident = Boolean(incidentResult.startedCategory && (((__oc56 = incidentResult.activeIncident) === null || __oc56 === void 0 ? void 0 : __oc56.summary)));
             const nextAftermath = GalleryFreeTalkCore.updateRelationshipAftermath(
@@ -1733,6 +1734,7 @@ window.saveCupidChatLog({
                     segments: this._sanitizeSegmentsPlaceholders(normalizedSegments),
                     expression: (parsed.expression || '').toLowerCase(),
                     affinity: GalleryFreeTalkCore.decisionAffinityValue(parsed),
+                    intimacyReaction: GalleryFreeTalkCore.decisionIntimacyReaction(parsed),
                     incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident),
                     memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : []
                 };
@@ -1745,6 +1747,7 @@ window.saveCupidChatLog({
                     segments: null,
                     expression: (parsed.expression || '').toLowerCase(),
                     affinity: GalleryFreeTalkCore.decisionAffinityValue(parsed),
+                    intimacyReaction: GalleryFreeTalkCore.decisionIntimacyReaction(parsed),
                     incident: GalleryFreeTalkCore.normalizeGalleryIncidentPayload(parsed.incident),
                     memoryFacts: Array.isArray(parsed.memoryFacts) ? parsed.memoryFacts : []
                 };
@@ -2173,18 +2176,22 @@ window.saveCupidChatLog({
         return this._lastExpressionSelection;
     }
 
-    _applyAffinityChange(change, charId = this.currentCharId, latestUserText = '') { var __oc94, __oc95, __oc96, __oc97, __oc98;
+    _applyAffinityChange(change, charId = this.currentCharId, latestUserText = '', reaction = '') { var __oc94, __oc95, __oc96, __oc97, __oc98;
         if (!charId || !(((__oc94 = this.progress) === null || __oc94 === void 0 ? void 0 : __oc94.changeCurrentAffinity))) return null;
         if (!Number.isInteger(change)) return null;
 
         const currentAffinity = (((__oc95 = this.progress) === null || __oc95 === void 0 ? void 0 : __oc95.getCurrentAffinity))
             ? this.progress.getCurrentAffinity(charId)
             : ((((__oc97 = (__oc96 = this.progress) === null || __oc96 === void 0 ? void 0 : __oc96.getAffinity) === null || __oc97 === void 0 ? void 0 : __oc97.call(__oc96, charId))) || 0);
-        const requestedChange = GalleryFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
-            change,
-            latestUserText,
-            currentAffinity,
-            { characterId: charId }
+        // 강제였더라도 답변 끝에서 반긴 키스·성행위는 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
+        const requestedChange = GalleryFreeTalkCore.applyWelcomedIntimacyFloor(
+            GalleryFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
+                change,
+                latestUserText,
+                currentAffinity,
+                { characterId: charId }
+            ),
+            { reaction, characterId: charId }
         );
         const result = this.progress.changeCurrentAffinity(
             charId,

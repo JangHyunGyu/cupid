@@ -99,7 +99,7 @@ are unchanged.
   because that exception is a standing user decision. It is listed as an open item in
   `docs/haeun-balance-20261125.md`.
 
-## 2026-11-26 follow-up: consensual intimacy no longer scored as assault (main-story 1:1)
+## 2026-11-26 follow-up: a welcomed kiss or sexual act is never penalised (1:1, group and gallery)
 
 A Day 4 homeroom-teacher conversation lost -18 at affinity 61, -18 at 43 and -20 at 25 in three consecutive turns. The
 player's lines were unasked sexual acts. The client contact guard did not produce those numbers: at 61 and 43 it does
@@ -116,30 +116,25 @@ score), the three turns differ:
 - Turn 3 (25): below the sexual-contact tier, filmed, and the reply says "거부하지 못하고 그의 요구에 따른다". The -20
   follows the rules; the affinity was 25 only because of the first two turns.
 
-`reconcileConsensualIntimacyAffinity` (`assets/js/freetalk-core.js`) lifts an assault-band score (-14 or lower) to 0
-only when every signal of the turn agrees:
+**User decision, same day: "강제라도 캐릭터 반응이 긍정적이면 호감도 깎지 마."** A kiss or sexual act loses no
+affinity when the character ends the reply welcoming, enjoying, taking part in or asking for more of it, even if the act
+was forced or unasked and even if the reply first showed protest, shame or force (turn 1 above). This replaces the
+narrower reconciliation shipped earlier that day, which kept turn 1's penalty.
 
-- the writer classified the reply's `forcedSexualViolation` as `none` (only the main-story 1:1 schema carries it);
-- the face selected from the reply shows the kiss or sexual act going on with the character engaged in it:
-  `kiss`, `breathless_kiss`, `climax`, `ahegao`, `oral_service`, `afterglow`, `messy_afterglow`, `entranced`,
-  `dominant_aroused`, `begging_lust`, `hungry_lust`, `overwhelmed_pleasure`; a kiss face never covers a sexual act;
-- the user line itself names a kiss or sexual act (the contact cues, or `CONSENSUAL_INTIMACY_EXPLICIT_ACT_CUE` for
-  penetration, oral sex and ejaculation lines they miss; this cue is used only here, not by the blocking gate) and
-  carries no coercion (`COERCIVE_CONTACT_CUE`, `싫어도`/`싫더라도`), violence, threat, recording, sharing or insult cue;
-- the visible reply narrates no force, refusal, fear, pain or crying (`CONSENSUAL_INTIMACY_REPLY_REFUSAL_CUE`, plus
-  `COERCIVE_CONTACT_CUE` on the reply);
-- a romance character other than Haeun, at affinity 40 or more (in the Day 4 temptation interlude the scene attitude
-  of 100 applies, as it does for the contact gate).
-
-A blocked attempt also gets `none` from the writer, so warm, shy, flustered, mocking or startled faces (smile, flushed,
-shy, undressed_shy, sensitive_shiver, smirk, pout, seductive ...) never qualify. Penalties from -13 to -1 stay: they
-can be about something else in the line (an insult is -10..-13) or the mild friction the rubric allows inside
-consensual intimacy (-1..-6). Positive scores, affinity below 40, contact other than a kiss or sexual act,
-`rape`/`molestation` or a missing classification, Haeun at every stage (she is 17, so this never applies to her, before
-or after the declaration), locked scenes, group FreeTalk and gallery FreeTalk keep the scorer value.
-`FreeTalkSystem.applyAffinity` applies it only when the 1:1 reply passes its classification, face and visible text.
-With these rules the production turns come out as -18 (kept), 0 (lifted) and -20 (kept).
-Regression coverage: `tests/consensual-intimacy-scoring.test.cjs`.
+- The shared worker (`harem`, `assets/js/affinity-decision.js`) adds one `reaction_<n>` question to the existing Cupid
+  affinity decision call: `welcomed`, `resisted` or `not_intimate`. When the answer is `welcomed` (a clear winner) and
+  the scored delta is negative, the worker returns 0 (`correction: 'welcomed_intimacy'`) and reports
+  `affinityEvaluation.reaction`. Public-room scoring does not ask the question and is unchanged.
+- The client (`applyWelcomedIntimacyFloor` in `assets/js/freetalk-core.js`) reads that reaction in main 1:1, group and
+  gallery FreeTalk, so the low-affinity contact cap (-10/-12/-18 below the allowed tier) cannot add the penalty back.
+  Positive scores are untouched; a welcomed act below the allowed tier gains nothing (the cap turns a gain into a loss,
+  which is then floored at 0).
+- Resisted reactions (refusal, pushing away, stopping, fear, pain, crying, anger, disgust at the end of the reply),
+  turns without an intimate act, and a missing or tied reaction answer keep the score. Haeun is 17, so nothing is
+  excused for her at any stage. The forced-violation story branch (`forcedSexualViolation` "rape"/"molestation") is
+  unchanged; this rule only concerns affinity.
+- With the rule the three production turns end at 0, 0 and 0 (the teacher ends each reply welcoming the act).
+- Regression coverage: cupid `tests/consensual-intimacy-scoring.test.cjs`, harem `tests/affinity-decision.test.cjs`.
 
 ### Contact-cue detection fixes (same day, from an audit of 12,262 scored user lines since 2026-11-18)
 
@@ -159,7 +154,3 @@ Open items, left unchanged in this fix:
   request with `자위해줘` alone). Those lines get neither the refusal gate nor the -10/-12/-18 caps at any affinity, so
   below 40 (and for a non-romance Haeun) the writer can play them as accepted while the scorer alone decides the
   number. Widening the blocking cues changes writer prompts and needs its own decision.
-- The scorer lives in the shared worker (`harem`). It receives neither the writer classification nor the allowed tier,
-  so group FreeTalk, which has no writer classification, can still show the contradiction.
-- The writer sometimes narrates force and pleasure in one reply (turn 1 above). The scorer then has a basis for the
-  assault band; this fix deliberately leaves such turns alone.

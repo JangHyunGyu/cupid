@@ -261,63 +261,22 @@
             : normalized;
     }
 
-    // Consensual intimacy reconciliation (2026-11-26, from a production Teacher turn scored -18 at affinity 43 whose
-    // reply had her embrace him, take part on her own and say "싫지 않아"). The worker scores the completed reply
-    // separately from the writer and sometimes picks its "non-consensual sexual assault" band (-18..-20) for an
-    // unasked kiss or sexual act that the reply plainly welcomes. The scorer's own rubric never treats consensual
-    // intimacy without refusal, fear or force as misconduct, so that assault-band score (-14 or lower) is lifted to 0,
-    // but only when every signal of the turn agrees:
-    // - the writer classified forcedSexualViolation as "none" (only the main-story 1:1 schema carries it);
-    // - the selected face shows the kiss or sexual act going on with the character engaged in it, and covers at least
-    //   the act the user line names (a kiss face never covers a sexual act);
-    // - the user line itself names a kiss or sexual act and carries no coercion, violence, threat, recording, sharing
-    //   or insult cue;
-    // - the visible reply narrates no force, refusal, fear, pain or crying (a reply that says "강제로", "그만",
-    //   "고개를 젓지만" or "거부하지 못하고" keeps the scorer's verdict);
-    // - a romance character other than Haeun, at affinity 40 or more.
-    // Penalties from -13 to -1, positive scores, blocked tiers, forced or missing classifications and every other
-    // path keep the scorer's value.
-    const CONSENSUAL_INTIMACY_SEXUAL_EXPRESSIONS = Object.freeze([
-        'climax', 'ahegao', 'oral_service', 'afterglow', 'messy_afterglow', 'entranced', 'dominant_aroused',
-        'begging_lust', 'hungry_lust', 'overwhelmed_pleasure'
-    ]);
-    const CONSENSUAL_INTIMACY_KISS_EXPRESSIONS = Object.freeze(['kiss', 'breathless_kiss']);
-    const CONSENSUAL_INTIMACY_PARTICIPATION_EXPRESSIONS = Object.freeze([
-        ...CONSENSUAL_INTIMACY_KISS_EXPRESSIONS,
-        ...CONSENSUAL_INTIMACY_SEXUAL_EXPRESSIONS
-    ]);
-    // Only the scorer's coercion and assault bands (-14 and below) contradict a willing scene. Smaller penalties can be
-    // about something else in the line (an insult is -10..-13) or the mild friction the rubric allows inside consensual
-    // intimacy (-1..-6), so they stay.
-    const CONSENSUAL_INTIMACY_CONTRADICTION_MAX = -14;
-    const INTIMACY_LEVEL_RANK = Object.freeze({ none: 0, light: 1, kiss: 2, sexual: 3 });
-    // Explicit acts the contact cues miss (penetration, oral sex, ejaculation). Used only here, never for the blocking gate.
-    const CONSENSUAL_INTIMACY_EXPLICIT_ACT_CUE = /(?:자지|보지|성기|질\s*(?:안|속)|삽입|피스톤|애무|사정(?:을\s*한|하고|해|한\s*(?:후|뒤))|(?:물건|그것)을?\s*(?:넣|밀어\s*넣)|안으로\s*(?:깊이\s*)?밀어\s*넣|박(?:는다|아\s*넣|으며|고)|섹스|挿入|セックス|フェラ|插入|做爱|操(?:你|她)|口交|\b(?:fuck(?:s|ed|ing)?|thrust(?:s|ed|ing)?|penetrat\w*|blowjob|cum(?:s|ming)?|inside\s+her)\b|\b(?:follar\w*|penetr\w*|baiser|pénètre\w*|ficken\w*|dring\w*\s+(?:in\s+)?sie\s+ein|transar\w*|meter\w*\s+(?:nela|en\s+ella))\b)/iu;
-    const CONSENSUAL_INTIMACY_USER_EXCLUSION_CUE = /(?:싫어도|싫더라도|때리|때린|때려|뺨|주먹|발로\s*차|목을\s*(?:조르|졸라|조른)|죽(?:여|일|인다)|협박|소문|퍼뜨|유포|단톡|공유|찍(?:어|는|을|었|는다)|촬영|녹화|녹음|카메라|사진|동영상|걸레|창녀|년아|병신|씨발|한심|殴|叩|首を絞|殺|撮|録画|録音|写真|動画|晒|打她|掐|杀|威胁|拍|录|视频|照片|婊|贱|\b(?:hit(?:s|ting)?|slap\w*|punch\w*|chok\w*|strangl\w*|kill\w*|threat\w*|blackmail\w*|film\w*|record\w*|camera|photo\w*|video\w*|shar(?:e|es|ed|ing)|post(?:s|ed|ing)?|slut|whore|bitch)\b|\b(?:golpe\w*|bofet\w*|estrangul\w*|matar|amenaz\w*|grab\w*|foto\w*|puta|frapp\w*|gifl\w*|étrangl\w*|tuer|menac\w*|filme\w*|salope|schlag\w*|würg\w*|töt\w*|droh\w*|schlampe|bat(?:e|o|er)|amea\w*|filma\w*|vadia)\b)/iu;
-    const CONSENSUAL_INTIMACY_REPLY_REFUSAL_CUE = /(?:강제로|억지로|하지\s*마|그만(?!큼)|멈춰|싫어(?!도)|싫다(?:고|는)|놔\s*줘|놔!|놓아|저리\s*가|비켜|거부|거절|고개를\s*(?:젓|저어|저으|저었)|밀어내|밀쳐|뿌리치|뿌리쳤|도망|살려|울먹|흐느|눈물|겁에\s*질|공포|무서|아파|아프|비명(?:을)?\s*(?:지른다|질렀|지르며)|無理やり|やめ|いやっ|嫌|離して|痛|怖|泣|强迫|强行|不要|住手|放开|别碰|疼|痛|怕|哭|\b(?:forc(?:e|ed|ing)|stop|don['’]?t|let\s+(?:me\s+)?go|get\s+off|against\s+(?:her|my)\s+will|refus\w*|scream(?:s|ed|ing)?|cr(?:y|ies|ied|ying)|tears?|terrified|afraid|scared|hurts?)\b|\b(?:basta|suéltame|a\s+la\s+fuerza|duele|miedo|llor\w*|arrête\w*|lâche-moi|de\s+force|peur|pleur\w*|hör\s+auf|stopp|gewaltsam|lass\s+mich|angst|wein\w*|pare|solta|à\s+força|dói|medo|chor\w*)\b)/iu;
+    // Welcomed intimacy (2026-11-26, user decision): a kiss or sexual act loses no affinity when the character ends the
+    // reply welcoming it, even if the act was forced or unasked. The shared worker asks the decision model how the
+    // character reacted and returns it as affinityEvaluation.reaction ("welcomed" | "resisted" | "not_intimate"); the
+    // worker already floors its own score, and this keeps the client's low-affinity contact cap (-10/-12/-18 below the
+    // allowed tier) from adding the penalty back. Positive scores are untouched, and a welcomed act below the tier still
+    // gains nothing because the cap turns any gain into a loss that is then floored at 0. Haeun is 17, so nothing is
+    // ever excused for her, before or after the declaration.
+    function decisionIntimacyReaction(value) { var __oc36;
+        const reaction = String((((__oc36 = value === null || value === void 0 ? void 0 : value.affinityEvaluation) === null || __oc36 === void 0 ? void 0 : __oc36.reaction)) || '').trim().toLowerCase();
+        return ['welcomed', 'resisted', 'not_intimate'].includes(reaction) ? reaction : '';
+    }
 
-    function reconcileConsensualIntimacyAffinity(value, latestUserText = '', currentAffinity = 0, options = {}) {
+    function applyWelcomedIntimacyFloor(value, options = {}) {
         const normalized = normalizeAffinityChange(value);
-        if (normalized > CONSENSUAL_INTIMACY_CONTRADICTION_MAX) return normalized;
-        if (normalizeForcedSexualViolation(options.forcedSexualViolation) !== 'none') return normalized;
-        // Haeun is a 17-year-old student: her scoring stays non-sexual even after the romance declaration.
+        if (normalized >= 0 || options.reaction !== 'welcomed') return normalized;
         if (options.nonRomance === true || String(options.characterId || '').trim().toLowerCase() === 'haeun') return normalized;
-        const score = Math.max(-100, Math.min(100, Number(currentAffinity) || 0));
-        if (score < 40) return normalized;
-        const expression = String(options.expression || '').trim().toLowerCase();
-        const faceLevel = CONSENSUAL_INTIMACY_SEXUAL_EXPRESSIONS.includes(expression)
-            ? 'sexual'
-            : (CONSENSUAL_INTIMACY_KISS_EXPRESSIONS.includes(expression) ? 'kiss' : 'none');
-        if (faceLevel === 'none') return normalized;
-        const text = String(latestUserText || '');
-        if (COERCIVE_CONTACT_CUE.test(text) || CONSENSUAL_INTIMACY_USER_EXCLUSION_CUE.test(text)) return normalized;
-        const cueLevel = classifyCupidIntimacyAdvance(text).level;
-        const textLevel = CONSENSUAL_INTIMACY_EXPLICIT_ACT_CUE.test(text) ? 'sexual' : cueLevel;
-        // The user line has to name the act itself; a face alone never stands in for it.
-        if (textLevel !== 'kiss' && textLevel !== 'sexual') return normalized;
-        if (INTIMACY_LEVEL_RANK[faceLevel] < INTIMACY_LEVEL_RANK[textLevel]) return normalized;
-        const reply = String(options.replyText || '');
-        if (!reply.trim() || COERCIVE_CONTACT_CUE.test(reply) || CONSENSUAL_INTIMACY_REPLY_REFUSAL_CUE.test(reply)) return normalized;
         return 0;
     }
 
@@ -2620,8 +2579,8 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         classifyCupidIntimacyAdvance,
         getCupidAffinityIntimacyBoundary,
         enforceCupidAffinityIntimacyBoundary,
-        reconcileConsensualIntimacyAffinity,
-        CONSENSUAL_INTIMACY_PARTICIPATION_EXPRESSIONS,
+        decisionIntimacyReaction,
+        applyWelcomedIntimacyFloor,
         buildCupidLatestTurnIntimacyBoundaryGate,
         normalizeForcedSexualViolation,
         normalizeStoryFreeTalkAffinityChange,
