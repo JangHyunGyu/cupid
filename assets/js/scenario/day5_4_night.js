@@ -1115,7 +1115,9 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
                 "next": "nurse_perfect_pills_pink"
             },
             {
-                "next": "nurse_perfect_pills_black_1"
+                "next": "nurse_perfect_pills_black_1",
+                "redirectNevergrad": true,
+                "immediateCross": true
             }
         ],
         "timeOfDay": "day"

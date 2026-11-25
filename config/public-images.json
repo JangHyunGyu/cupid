@@ -1010,6 +1010,14 @@
       "key": "objects/4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f.webp",
       "etag": "0e85655c9b269209a396c0013c10de2a",
       "contentType": "image/webp"
+    },
+    "6c1d575a61a1c4acfe56cf899eb7c7be1253540e786b3c3d1bd89cf88781098d.webp": {
+      "sha256": "6c1d575a61a1c4acfe56cf899eb7c7be1253540e786b3c3d1bd89cf88781098d",
+      "bytes": 737982,
+      "source": "assets/images/background/cross_to_nevergrad.webp",
+      "key": "objects/6c1d575a61a1c4acfe56cf899eb7c7be1253540e786b3c3d1bd89cf88781098d.webp",
+      "etag": "e0e1f23fce7eccffcfba73dd735bbd1c",
+      "contentType": "image/webp"
     }
   },
   "routes": {
@@ -1144,6 +1152,7 @@
     "assets/images/background/ending_epilogue_dain.png": "81de4a9cb7c48479de6ea1478477be3e65d1d7bafd9e397e28bd4780257b30fd.png",
     "assets/images/background/ending_epilogue_dain.webp": "68b9bca22b4b22e348ffab78bceeac79d8aa95aae0f2b74173436553a377331d.webp",
     "assets/images/background/ending_epilogue_haeun.png": "a360b898871e80bfc044b5c7f70cef719738167c988b4a4ac55c5bf5044f1ea7.png",
-    "assets/images/background/ending_epilogue_haeun.webp": "4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f.webp"
+    "assets/images/background/ending_epilogue_haeun.webp": "4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f.webp",
+    "assets/images/background/cross_to_nevergrad.webp": "6c1d575a61a1c4acfe56cf899eb7c7be1253540e786b3c3d1bd89cf88781098d.webp"
   }
 }

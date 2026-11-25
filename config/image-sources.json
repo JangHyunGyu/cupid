@@ -7322,6 +7322,11 @@
       "backupKey": "snapshots/20261030/cupid/part-0013.zip",
       "publicObject": "22e3c9e28eaabdc60fd731cda9d5cdbc4923365ad167be3f052fa5879ab356cd.webp"
     },
+    "assets/images/background/cross_to_nevergrad.webp": {
+      "sha256": "6c1d575a61a1c4acfe56cf899eb7c7be1253540e786b3c3d1bd89cf88781098d",
+      "bytes": 737982,
+      "backupKey": "objects/sources/6c1d575a61a1c4acfe56cf899eb7c7be1253540e786b3c3d1bd89cf88781098d.webp"
+    },
     "assets/images/background/dain_broadcast_booth.lossless.webp": {
       "sha256": "029534f7a46068847248c0b5ec9d1e313050f67084b4d170c4b82a6964129bc4",
       "bytes": 3582850,

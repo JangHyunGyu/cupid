@@ -750,9 +750,10 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
             return;
         }
 
-        // 타이핑 중이면 스킵 (단, 엔딩/에필로그는 스킵 불가 — 끝까지 감상)
+        // 타이핑 중이면 스킵 (단, 엔딩/에필로그/알약 전환 장면은 스킵 불가 — 끝까지 감상)
         if (this.dialogueSystem.isCurrentlyTyping()) {
-            if (this._isEndingScene(this.sceneRenderer.currentSceneId)) return;
+            const curId = this.sceneRenderer.currentSceneId || '';
+            if (this._isEndingScene(curId) || /^nurse_perfect_pills_/.test(curId)) return;
             this.dialogueSystem.requestSkip();
             return;
         }
@@ -1033,6 +1034,10 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
             if (!result.applied) return false;
             const nextScene = result.value;
             (((__oc27 = window.CupidRouteTelemetry) === null || __oc27 === void 0 ? void 0 : __oc27.choice(this.stateManager, sceneId, this.sceneRenderer.getScene(sceneId), choice, nextScene)));
+            if (choice.redirectNevergrad && choice.immediateCross) {
+                this._redirectToNevergrad({ immediate: true, sourceSceneId: sceneId });
+                return true;
+            }
             if (nextScene === 'index.html') this.uiManager.goToHome();
             else await this.renderScene(nextScene);
             return true;
@@ -1378,6 +1383,19 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
         // ─────────────────────────────────────────────────────────
         // 예전 세이브가 정리로 지운 장면을 가리키면 대체 장면 ID로 바꾼 뒤 진행
         sceneId = (((__oc39 = (__oc38 = (__oc37 = this.sceneRenderer).resolveSceneAlias) === null || __oc38 === void 0 ? void 0 : __oc38.call(__oc37, sceneId)) !== null && __oc39 !== void 0 ? __oc39 : sceneId));
+        if ((sceneId === 'nurse_perfect_pills_2' || /^nurse_perfect_pills_black_/.test(sceneId))
+            && ((this.stateManager && typeof this.stateManager.hasFlag === 'function' && this.stateManager.hasFlag('crossed_to_nevergrad'))
+                || (window.CrossWorld && typeof window.CrossWorld.hasRecentDeparture === 'function' && window.CrossWorld.hasRecentDeparture('nevergrad')))) {
+            sceneId = 'hidden_perfect_nurse_ending_title';
+        }
+        if (/^nurse_perfect_pills_(?:0|1|ask)$/.test(sceneId)
+            && window.CrossWorld && typeof window.CrossWorld.preload === 'function') {
+            window.CrossWorld.preload([
+                'assets/images/background/nurse_bedroom_pills.jpg',
+                'assets/images/background/cross_to_nevergrad.webp',
+                'assets/images/background/riin_lab_pills.jpg'
+            ]);
+        }
         let scene = await this._getSceneWithLazyContent(sceneId);
 
         // 씬이 없으면 HTML 페이지 이동인지 확인
@@ -2119,7 +2137,7 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
         }
     }
 
-    _redirectToNevergrad() {
+    _redirectToNevergrad(options = {}) {
         const lang = window.GAME_LANG || document.documentElement.lang || 'ko';
         const page = {
             ko: '/',
@@ -2129,13 +2147,53 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
             fr: '/fr/',
             de: '/de/',
             pt: '/pt/',
-            zh: '/en/'
+            zh: '/zh/'
         }[lang] || '/';
+        const targetUrl = `https://nevergrad.archerlab.dev${page}?from=riin`;
+        const sourceSceneId = (options && options.sourceSceneId) || this.sceneRenderer.currentSceneId;
+        if (options && options.immediate && window.CrossWorld && typeof window.CrossWorld.departSequence === 'function') {
+            window.CrossWorld.departSequence({
+                world: 'nevergrad',
+                lang,
+                name: this.stateManager.playerName,
+                url: targetUrl,
+                frames: [
+                    { image: 'assets/images/background/nurse_bedroom_pills.jpg', captionIndex: 16 },
+                    { image: 'assets/images/background/cross_to_nevergrad.webp', captionIndex: 17, fx: 'glitch' },
+                    { image: 'assets/images/background/riin_lab_pills.jpg', captionIndex: 18 }
+                ],
+                save: () => {
+                    try {
+                        if (this.stateManager && typeof this.stateManager.setFlag === 'function') {
+                            this.stateManager.setFlag('crossed_to_nevergrad');
+                        }
+                        if (this.sceneRenderer) {
+                            this.sceneRenderer.currentSceneId = 'hidden_perfect_nurse_ending_title';
+                        }
+                        this.saveGame();
+                        if (window.CupidStorage) {
+                            window.CupidStorage.setItem('cupid_cycle_01', 'complete');
+                            window.CupidStorage.setItem('cupid_heroine', 'nurse');
+                            window.CupidStorage.setItem('cupid_subject_compliance', '100');
+                        }
+                    } catch (_) {}
+                    return true;
+                },
+                onLeave: () => { var __oc58, __oc59, __oc60;
+                    try { (((__oc58 = window.CupidRouteTelemetry) === null || __oc58 === void 0 ? void 0 : __oc58.crossing('departed', this.stateManager, sourceSceneId))); } catch (_) { /* never block the crossing */ }
+                    (((__oc60 = (__oc59 = window.soundManager) === null || __oc59 === void 0 ? void 0 : __oc59.stopBgm) === null || __oc60 === void 0 ? void 0 : __oc60.call(__oc59)));
+                },
+                onBeat: index => {
+                    if (index === 1) this._crackleAndBuzz();
+                }
+            });
+            return;
+        }
         window.CrossWorld.show({
             departure: true, world: 'nevergrad', lang,
             image: 'assets/images/background/riin_lab_pills.jpg',
             name: this.stateManager.playerName,
-            url: `https://nevergrad.archerlab.dev${page}?from=riin`,
+            url: targetUrl,
             save: () => {
                 // Keep the departure scene. It now waits for input when restored.
                 this.saveGame();
@@ -2150,7 +2208,7 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
             // onLeave runs only once the save succeeded and the crossing is really starting
             // (not when the player picks "back to the scene"). The marker is non-blocking.
             onLeave: () => { var __oc58, __oc59, __oc60;
-                try { (((__oc58 = window.CupidRouteTelemetry) === null || __oc58 === void 0 ? void 0 : __oc58.crossing('departed', this.stateManager, this.sceneRenderer.currentSceneId))); } catch (_) { /* never block the crossing */ }
+                try { (((__oc58 = window.CupidRouteTelemetry) === null || __oc58 === void 0 ? void 0 : __oc58.crossing('departed', this.stateManager, sourceSceneId))); } catch (_) { /* never block the crossing */ }
                 (((__oc60 = (__oc59 = window.soundManager) === null || __oc59 === void 0 ? void 0 : __oc59.stopBgm) === null || __oc60 === void 0 ? void 0 : __oc60.call(__oc59)));
             },
             onBack: () => { var __oc61, __oc62; return (

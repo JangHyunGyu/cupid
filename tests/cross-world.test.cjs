@@ -142,3 +142,89 @@ test('the arrival overlay arms the gate hitch only for a new game', () => {
   assert.match(loader, /onTitle:\s*function \(\) \{\s*window\.__cupidArrivedFromGate = false;/);
   assert.equal(loader.includes('?.'), false);
 });
+
+test('takeArrival arms a Back-button guard via pushState and popstate', () => {
+  const pushed = [];
+  const listeners = new Map();
+  const env = {
+    window: { addEventListener(evt, fn) { listeners.set(evt, fn); }, matchMedia: () => ({ matches: false }) },
+    document: { cookie: '' },
+    location: { href: 'https://cupid.archerlab.dev/?gate=1', pathname: '/', search: '', hash: '', hostname: 'cupid.archerlab.dev', protocol: 'https:' },
+    URL, Date,
+    history: {
+      state: { entry: 1 },
+      replaceState(s, t, url) { this.replaced = url; },
+      pushState(s, t, url) { pushed.push({ s, url }); }
+    }
+  };
+  env.window.addEventListener = (evt, fn) => listeners.set(evt, fn);
+  vm.createContext(env);
+  vm.runInContext(fs.readFileSync(path.join(__dirname, '../assets/js/cross-world.js'), 'utf8'), env);
+  assert.ok(env.window.CrossWorld.takeArrival('cupid'));
+  assert.equal(pushed.length, 1);
+  assert.equal(pushed[0].s.crossWorldGuard, 'cupid');
+  assert.equal(typeof listeners.get('popstate'), 'function');
+  listeners.get('popstate')();
+  assert.equal(pushed.length, 2);
+});
+
+test('nurse black pill triggers immediate 3-CG crossing and zh maps to /zh/', () => {
+  const pillSceneEnv = {
+    SCENARIO: { 5: {} }
+  };
+  const nightSrc = fs.readFileSync(path.join(__dirname, '../assets/js/scenario/day5_4_night.js'), 'utf8');
+  vm.runInNewContext(nightSrc, pillSceneEnv);
+  const pillChoice = pillSceneEnv.SCENARIO[5].nurse_perfect_pills_2.choices[1];
+  assert.equal(pillChoice.next, 'nurse_perfect_pills_black_1');
+  assert.equal(pillChoice.redirectNevergrad, true);
+  assert.equal(pillChoice.immediateCross, true);
+
+  let departOpts = null;
+  const flags = new Set();
+  const stored = {};
+  const telemetry = [];
+  let bgmStopped = 0;
+  let savedCount = 0;
+  const engineSrc = fs.readFileSync(path.join(__dirname, '../assets/js/modules/GameEngine.js'), 'utf8');
+  const env = {
+    window: {
+      GAME_LANG: 'zh',
+      CrossWorld: { departSequence: o => { departOpts = o; }, show: () => {} },
+      CupidStorage: { setItem: (k, v) => { stored[k] = v; } },
+      CupidRouteTelemetry: { crossing: (...args) => telemetry.push(args) },
+      soundManager: { stopBgm: () => { bgmStopped += 1; } },
+      matchMedia: () => ({ matches: false })
+    },
+    document: { documentElement: { lang: 'zh' } },
+    console
+  };
+  vm.runInNewContext(engineSrc, env);
+  const engine = Object.create(env.window.GameEngine.prototype);
+  engine.stateManager = { playerName: 'Tester', setFlag: f => flags.add(f) };
+  engine.sceneRenderer = { currentSceneId: 'nurse_perfect_pills_2' };
+  engine.saveManager = { storageKey: 'cupid_save' };
+  engine.saveGame = () => { savedCount += 1; };
+  engine._crackleAndBuzz = () => {};
+  engine._redirectToNevergrad({ immediate: true, sourceSceneId: 'nurse_perfect_pills_2' });
+
+  assert.ok(departOpts);
+  assert.equal(departOpts.url, 'https://nevergrad.archerlab.dev/zh/?from=riin');
+  assert.equal(departOpts.frames.length, 3);
+  assert.match(departOpts.frames[1].image, /cross_to_nevergrad\.webp$/);
+  assert.equal(departOpts.save(), true);
+  assert.equal(savedCount, 1);
+  assert.ok(flags.has('crossed_to_nevergrad'));
+  assert.equal(engine.sceneRenderer.currentSceneId, 'hidden_perfect_nurse_ending_title');
+  assert.equal(stored.cupid_cycle_01, 'complete');
+  departOpts.onLeave();
+  assert.equal(bgmStopped, 1);
+  assert.equal(telemetry[0][0], 'departed');
+  assert.equal(telemetry[0][2], 'nurse_perfect_pills_2');
+
+  const cwSrc = fs.readFileSync(path.join(__dirname, '../assets/js/cross-world.js'), 'utf8');
+  assert.equal(cwSrc.includes('?.'), false);
+  const siblingCw = path.resolve(__dirname, '../../nevergrad/assets/js/cross-world.js');
+  if (fs.existsSync(siblingCw)) {
+    assert.equal(cwSrc, fs.readFileSync(siblingCw, 'utf8'));
+  }
+});
