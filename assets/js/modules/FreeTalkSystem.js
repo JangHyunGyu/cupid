@@ -70,12 +70,58 @@ const cupidTruncateLatestUserText = CupidFreeTalkCore.truncateLatestUserText;
 const cupidFindLatestUserText = CupidFreeTalkCore.findLatestUserText;
 const GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY = -20;
 const GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX = 3;
-const HAEUN_PRE_GATE_COMPLETION_BONUS = 5;
+// 하은 대화 완료 보너스(2026-11-25): 45 게이트 전 네 장면은 +6, 선언 뒤 세 장면은 +7.
+const HAEUN_PRE_GATE_COMPLETION_BONUS = 6;
+const HAEUN_POST_GATE_COMPLETION_BONUS = 7;
 const HAEUN_PRE_GATE_PERSONAL_SCENE_IDS = Object.freeze([
     'haeun_freetalk',
     'day4_haeun_personal',
     'day5_haeun_personal'
 ]);
+const HAEUN_POST_GATE_PERSONAL_SCENE_IDS = Object.freeze([
+    'day5_haeun_private_1',
+    'day5_haeun_private_2'
+]);
+const HAEUN_COMPLETION_BONUS_GROUP_MODES = Object.freeze({
+    haeun_misunderstanding: HAEUN_PRE_GATE_COMPLETION_BONUS,
+    haeun_switch: HAEUN_POST_GATE_COMPLETION_BONUS
+});
+// 비연애 단계 하은의 스킨십 경계는 하은 본인에게 한 접촉만 본다. 그룹 장면에서 실제로 함께 있는 인물의 이름만 넘긴다.
+const HAEUN_CONTACT_SELF_NAMES = Object.freeze(['하은', 'Haeun', 'ハウン', '夏恩']);
+const HAEUN_CONTACT_PARTICIPANT_NAMES = Object.freeze({
+    Seoyeon: Object.freeze(['서연', 'Seoyeon', 'ソヨン', '书妍']),
+    Yuna: Object.freeze(['유나', 'Yuna', 'ユナ', '由娜']),
+    Dain: Object.freeze(['다인', 'Dain', 'ダイン', '多因']),
+    Teacher: Object.freeze(['담임선생님', '담임 선생님', '담임', '선생님', '쌤', 'Homeroom Teacher', 'teacher', 'Profesora',
+        'Professeure principale', 'professeure', 'Klassenlehrerin', 'Lehrerin', 'Professora', '担任の先生', '担任', '先生', '班主任', '老师']),
+    Nurse: Object.freeze(['보건선생님', '보건 선생님', '보건쌤', '선생님', '쌤', 'School Nurse', 'nurse', 'Enfermera',
+        'Infirmière scolaire', 'infirmière', 'Schulkrankenschwester', 'Krankenschwester', 'Enfermeira', '保健室の先生', '保健の先生',
+        '先生', '保健老师', '老师'])
+});
+
+function getHaeunCompletionBonusAmount(scene, sceneId) {
+    if (scene && scene.type === 'group_free_talk') {
+        const hasHaeun = Array.isArray(scene.groupParticipants)
+            && scene.groupParticipants.some(participant => participant && participant.id === 'Haeun');
+        const groupBonus = HAEUN_COMPLETION_BONUS_GROUP_MODES[scene.groupMode];
+        return hasHaeun && Number.isInteger(groupBonus) ? groupBonus : 0;
+    }
+    if (HAEUN_PRE_GATE_PERSONAL_SCENE_IDS.includes(sceneId)) return HAEUN_PRE_GATE_COMPLETION_BONUS;
+    if (HAEUN_POST_GATE_PERSONAL_SCENE_IDS.includes(sceneId)) return HAEUN_POST_GATE_COMPLETION_BONUS;
+    return 0;
+}
+
+function getHaeunContactTargetOptions(characterId, scene, participants) {
+    if (characterId !== 'Haeun' || !scene || scene.haeunRomance === true || scene.type !== 'group_free_talk') return {};
+    const source = Array.isArray(participants) && participants.length ? participants : scene.groupParticipants;
+    const otherNames = [];
+    for (const participant of Array.isArray(source) ? source : []) {
+        const id = participant && typeof participant === 'object' ? participant.id : participant;
+        if (id === 'Haeun') continue;
+        for (const name of HAEUN_CONTACT_PARTICIPANT_NAMES[id] || []) otherNames.push(name);
+    }
+    return otherNames.length ? { contactSelfNames: HAEUN_CONTACT_SELF_NAMES, contactOtherNames: otherNames } : {};
+}
 
 class FreeTalkSystem {
     /**
@@ -1781,7 +1827,8 @@ class FreeTalkSystem {
                     characterName: scene.name || charKey,
                     characterId: charKey,
                     establishedRelationship: _isDatingCurrentForBoundary,
-                    nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
+                    nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
+                    ...getHaeunContactTargetOptions(charKey, scene)
                 }
             );
             const _affinityIntimacyProgressionPatch = _sceneDialogue.romanticInterlude ? '' : (((__oc107 = window.buildCupidAffinityIntimacyGuidance) === null || __oc107 === void 0 ? void 0 : __oc107.call(window, _lang, _currentAffinity, {
@@ -2040,8 +2087,8 @@ class FreeTalkSystem {
         userText: (__oc131 = requestContext.aiUserContent) !== null && __oc131 !== void 0 ? __oc131 : finalContent,
         assistantText: reply
     })));
-                if (!displayFallback) {
-                    const completionBonus = this._applyHaeunCompletionBonus(scene, requestSceneId);
+                {
+                    const completionBonus = this._applyHaeunCompletionBonusAfterReply(scene, requestSceneId, displayFallback);
                     if (((completionBonus === null || completionBonus === void 0 ? void 0 : completionBonus.bonus))) {
                         affinityResult = {
                             ...affinityResult,
@@ -2396,7 +2443,8 @@ window.saveCupidChatLog({
             change,
             latestUserText,
             previousValue,
-            { characterId: speakerId, nonRomance: speakerId === 'Haeun' && ((scene === null || scene === void 0 ? void 0 : scene.haeunRomance)) !== true }
+            { characterId: speakerId, nonRomance: speakerId === 'Haeun' && ((scene === null || scene === void 0 ? void 0 : scene.haeunRomance)) !== true,
+                ...getHaeunContactTargetOptions(speakerId, scene, this.groupParticipants) }
         );
         if (requestedChange > 0) requestedChange = Math.min(requestedChange, GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX);
         if (requestedChange === 0) {
@@ -2520,6 +2568,20 @@ window.saveCupidChatLog({
             if (!((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty))) this.galleryManager.incrementFreeTalkCount(conversation.speakerId);
             conversation.affinityResult = affinityResult;
         }
+            // 하은이 낀 오해 그룹과 선언 뒤 그룹도 마지막 턴까지 마치면 완료 보너스를 받는다.
+            const groupCompletionBonus = this._applyHaeunCompletionBonusAfterReply(scene, requestContext.sceneId, displayFallback);
+            if (groupCompletionBonus && groupCompletionBonus.bonus) {
+                const haeunLine = rendered.filter(item => item.speakerId === 'Haeun').pop();
+                if (haeunLine) {
+                    const lineResult = haeunLine.affinityResult || {};
+                    haeunLine.affinityResult = {
+                        ...lineResult,
+                        change: (Number.isFinite(Number(lineResult.change)) ? Number(lineResult.change) : 0) + groupCompletionBonus.bonus,
+                        completionBonus: groupCompletionBonus.bonus,
+                        value: groupCompletionBonus.value
+                    };
+                }
+            }
             const last = rendered.at(-1);
             if (!((displayFallback === null || displayFallback === void 0 ? void 0 : displayFallback.empty)) && last) {
                 this._commitFreeTalkCheckpoint({ content: last.text, speakerId: last.speakerId, speakerName: last.speakerName, segments: last.segments });
@@ -2692,7 +2754,8 @@ window.saveCupidChatLog({
                     {
                         characterName: participant.name,
                         characterId: participant.id,
-                        nonRomance: participant.id === 'Haeun' && scene.haeunRomance !== true
+                        nonRomance: participant.id === 'Haeun' && scene.haeunRomance !== true,
+                        ...getHaeunContactTargetOptions(participant.id, scene, this.groupParticipants)
                     }
                 ))
                 .filter(Boolean)
@@ -3509,7 +3572,8 @@ window.saveCupidGroupChatLog({
             change,
             latestUserText,
             this._getSceneDialoguePolicy(scene).affinity,
-            { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true }
+            { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
+                ...getHaeunContactTargetOptions(charKey, scene) }
         );
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0 };
@@ -3540,42 +3604,66 @@ window.saveCupidGroupChatLog({
     }
 
     /**
-     * 하은 45 게이트 전 개인 대화 3장면(3·4·5일차)을 끝까지 마쳤을 때 +5 완료 보너스를 준다.
+     * 완료 보너스는 대화를 끝까지 마친 데 주는 점수라서, 마지막 답변이 표시용 대체 문장으로 끝나도 준다.
+     * 답변이 비어 턴을 되돌리는 경우에는 주지 않는다. 개인 대화와 그룹 대화가 같은 규칙을 쓴다.
+     */
+    _applyHaeunCompletionBonusAfterReply(scene, sceneId, displayFallback = null) {
+        if (displayFallback && displayFallback.empty) return null;
+        return this._applyHaeunCompletionBonus(scene, sceneId);
+    }
+
+    /**
+     * 하은과 나누는 대화 일곱 장면을 끝까지 마쳤을 때 완료 보너스를 준다.
+     * 45 게이트 전 개인 대화 3장면과 5일차 오해 그룹은 +6, 선언 뒤 그룹과 개인 대화 2장면은 +7이다.
      * 스킵이나 중간 이탈에는 주지 않고, 장면당 한 번만 반영한다.
      */
-    _applyHaeunCompletionBonus(scene, sceneId = this.currentSceneId) { var __oc260, __oc261, __oc262, __oc263, __oc264, __oc265, __oc266, __oc267, __oc268, __oc269, __oc270, __oc271, __oc272, __oc273, __oc274, __oc275, __oc276, __oc277, __oc278, __oc279;
-        if (!HAEUN_PRE_GATE_PERSONAL_SCENE_IDS.includes(sceneId)) {
-            return { bonus: 0, value: (((__oc262 = (__oc261 = (__oc260 = this.stateManager) === null || __oc260 === void 0 ? void 0 : __oc260.getAffinity) === null || __oc261 === void 0 ? void 0 : __oc261.call(__oc260, 'Haeun')) !== null && __oc262 !== void 0 ? __oc262 : 0)) };
+    _applyHaeunCompletionBonus(scene, sceneId = this.currentSceneId) {
+        const state = this.stateManager;
+        const currentValue = () => {
+            const value = state && typeof state.getAffinity === 'function' ? Number(state.getAffinity('Haeun')) : 0;
+            return Number.isFinite(value) ? value : 0;
+        };
+        const requestedBonus = getHaeunCompletionBonusAmount(scene, sceneId);
+        if (!(requestedBonus > 0)) return { bonus: 0, value: currentValue() };
+        const isGroupScene = Boolean(scene && scene.type === 'group_free_talk');
+        const charKey = isGroupScene
+            ? 'Haeun'
+            : ((this.charNameMap && scene && scene.name && this.charNameMap[scene.name]) || (scene && scene.name) || 'Haeun');
+        if (charKey !== 'Haeun' || !(state && state.stats && state.stats.Haeun) || (scene && scene.affinityLocked === true)) {
+            return { bonus: 0, value: currentValue() };
         }
-        const charKey = (this.charNameMap && ((scene === null || scene === void 0 ? void 0 : scene.name)) && this.charNameMap[scene.name]) || ((scene === null || scene === void 0 ? void 0 : scene.name)) || 'Haeun';
-        if (charKey !== 'Haeun' || !(((__oc264 = (__oc263 = this.stateManager) === null || __oc263 === void 0 ? void 0 : __oc263.stats) === null || __oc264 === void 0 ? void 0 : __oc264.Haeun)) || ((scene === null || scene === void 0 ? void 0 : scene.affinityLocked)) === true) {
-            return { bonus: 0, value: (((__oc267 = (__oc266 = (__oc265 = this.stateManager) === null || __oc265 === void 0 ? void 0 : __oc265.getAffinity) === null || __oc266 === void 0 ? void 0 : __oc266.call(__oc265, 'Haeun')) !== null && __oc267 !== void 0 ? __oc267 : 0)) };
-        }
-        const maxTurns = Number(this.currentMaxTurns || ((scene === null || scene === void 0 ? void 0 : scene.maxTurns)) || 0);
+        const maxTurns = Number(this.currentMaxTurns || (scene && scene.maxTurns) || 0);
         if (!(maxTurns > 0) || this.freeTalkTurns < maxTurns) {
-            return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
+            return { bonus: 0, value: currentValue() };
         }
         const bonusFlag = `completed_bonus_${sceneId}`;
-        if ((((__oc269 = (__oc268 = this.stateManager).getFlag) === null || __oc269 === void 0 ? void 0 : __oc269.call(__oc268, bonusFlag)))) {
-            return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
+        if (typeof state.getFlag === 'function' && state.getFlag(bonusFlag)) {
+            return { bonus: 0, value: currentValue() };
         }
-        const talkKey = (((__oc270 = window.CupidAffinityGate) === null || __oc270 === void 0 ? void 0 : __oc270.commitKey())) || '';
+        const gate = window.CupidAffinityGate;
+        const talkKey = (gate && gate.commitKey()) || '';
         const talkTurn = Number(talkKey.slice(talkKey.lastIndexOf(':') + 1));
         const talkAllowed = talkKey.startsWith(`talk:${sceneId}:`)
             && Number.isInteger(talkTurn) && talkTurn >= 0 && talkTurn < maxTurns
-            && (((__oc271 = window.CupidAffinityGate) === null || __oc271 === void 0 ? void 0 : __oc271.grant('Haeun', HAEUN_PRE_GATE_COMPLETION_BONUS)));
+            && Boolean(gate && gate.grant('Haeun', requestedBonus));
         if (!talkAllowed) {
-            return { bonus: 0, value: this.stateManager.getAffinity('Haeun') };
+            return { bonus: 0, value: currentValue() };
         }
 
-        const previousValue = this.stateManager.getAffinity('Haeun');
-        const newValue = this.stateManager.changeAffinity('Haeun', HAEUN_PRE_GATE_COMPLETION_BONUS);
+        const previousValue = state.getAffinity('Haeun');
+        const newValue = state.changeAffinity('Haeun', requestedBonus);
         const actualBonus = newValue - previousValue;
-        (((__oc273 = (__oc272 = this.stateManager).setFlag) === null || __oc273 === void 0 ? void 0 : __oc273.call(__oc272, bonusFlag, true)));
-        if (actualBonus !== 0) (((__oc275 = (__oc274 = this.uiManager) === null || __oc274 === void 0 ? void 0 : __oc274.showAffinityChange) === null || __oc275 === void 0 ? void 0 : __oc275.call(__oc274, actualBonus, 'Haeun')));
-        (((__oc277 = (__oc276 = this.galleryManager) === null || __oc276 === void 0 ? void 0 : __oc276.updateMaxAffinity) === null || __oc277 === void 0 ? void 0 : __oc277.call(__oc276, 'Haeun', newValue)));
-        (((__oc279 = (__oc278 = this.galleryManager) === null || __oc278 === void 0 ? void 0 : __oc278.checkAffinityUnlock) === null || __oc279 === void 0 ? void 0 : __oc279.call(__oc278, 'Haeun', newValue)));
-        return { bonus: actualBonus, value: newValue, requestedBonus: HAEUN_PRE_GATE_COMPLETION_BONUS };
+        if (typeof state.setFlag === 'function') state.setFlag(bonusFlag, true);
+        if (actualBonus !== 0 && this.uiManager && typeof this.uiManager.showAffinityChange === 'function') {
+            this.uiManager.showAffinityChange(actualBonus, 'Haeun');
+        }
+        if (this.galleryManager && typeof this.galleryManager.updateMaxAffinity === 'function') {
+            this.galleryManager.updateMaxAffinity('Haeun', newValue);
+        }
+        if (this.galleryManager && typeof this.galleryManager.checkAffinityUnlock === 'function') {
+            this.galleryManager.checkAffinityUnlock('Haeun', newValue);
+        }
+        return { bonus: actualBonus, value: newValue, requestedBonus };
     }
 
     /**
@@ -3707,5 +3795,10 @@ window.saveCupidGroupChatLog({
 }
 
 FreeTalkSystem.HAEUN_PRE_GATE_COMPLETION_BONUS = HAEUN_PRE_GATE_COMPLETION_BONUS;
+FreeTalkSystem.HAEUN_POST_GATE_COMPLETION_BONUS = HAEUN_POST_GATE_COMPLETION_BONUS;
 FreeTalkSystem.HAEUN_PRE_GATE_PERSONAL_SCENE_IDS = HAEUN_PRE_GATE_PERSONAL_SCENE_IDS;
+FreeTalkSystem.HAEUN_POST_GATE_PERSONAL_SCENE_IDS = HAEUN_POST_GATE_PERSONAL_SCENE_IDS;
+FreeTalkSystem.HAEUN_COMPLETION_BONUS_GROUP_MODES = HAEUN_COMPLETION_BONUS_GROUP_MODES;
+FreeTalkSystem.getHaeunCompletionBonusAmount = getHaeunCompletionBonusAmount;
+FreeTalkSystem.getHaeunContactTargetOptions = getHaeunContactTargetOptions;
 window.FreeTalkSystem = FreeTalkSystem;

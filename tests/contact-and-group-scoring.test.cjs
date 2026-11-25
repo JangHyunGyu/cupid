@@ -183,7 +183,25 @@ function groupSystem({ affinities }) {
     system.currentSceneId = 'group_scene';
     system.currentMaxTurns = 3;
     freeTalkWindow.CupidAffinityGate = { commitKey: () => 'talk:group_scene:0', grant: () => true };
+    system.__window = freeTalkWindow;
     return { system, applied, affinities };
+}
+
+let cachedFreeTalk = null;
+function vmFreeTalk() {
+    if (cachedFreeTalk) return cachedFreeTalk;
+    const freeTalkWindow = { CupidFreeTalkCore: core, CHARACTER_EXPRESSIONS: {} };
+    vm.runInNewContext(read('assets/js/modules/FreeTalkSystem.js'), {
+        window: freeTalkWindow, document: { documentElement: { lang: 'ko' } }, navigator: { onLine: true },
+        console: { log() {}, info() {}, warn() {}, error() {} }, DEFAULT_MAX_FREE_TALK_TURNS: 3, CHAR_NAME_MAP: {},
+        getAssetUrl: value => value, setTimeout, clearTimeout, URL, URLSearchParams
+    });
+    cachedFreeTalk = freeTalkWindow.FreeTalkSystem;
+    return cachedFreeTalk;
+}
+
+function coreSandboxGate(system, gate) {
+    system.__window.CupidAffinityGate = gate;
 }
 
 test('each group speaker gets its own independent affinity change (up to +3 each)', async () => {
@@ -214,6 +232,213 @@ test('group contact boundaries still apply per speaker', async () => {
     ], {}, '*서연의 손을 잡는다*', 'ko');
     // Seoyeon (affinity 5) is blocked at -5; Dain (affinity 30) is not blocked and keeps +2.
     assert.deepEqual(applied, [['Seoyeon', -5], ['Dain', 2]]);
+});
+
+// 2026-11-25: production lines that the light-touch cue misread as contact, and touches aimed at someone else.
+// These options stand for a group scene with Seoyeon and the homeroom teacher present.
+const HAEUN_NON_ROMANCE = {
+    characterId: 'Haeun',
+    nonRomance: true,
+    contactSelfNames: ['하은', 'Haeun', 'ハウン', '夏恩'],
+    contactOtherNames: ['서연', 'Seoyeon', 'ソヨン', '书妍', '선생님', '쌤', 'teacher']
+};
+
+test('look-alike phrases are not contact, while real contact with a non-romance Haeun stays penalised', () => {
+    const notContact = [
+        '*심호흡을 하고 학생회실 문손잡이를 잡는다*',
+        '하은이도 혼자 걱정만 안고 있지는 않았으면 해',
+        '너 어릴 때 나 이사 가서 안아쉬웠어?',
+        '괜찮아? 어디 안아파?',
+        '배 안고파? 매점 갈래?',
+        '*당황해서 말을 더듬으며* 미안, 그게 아니라',
+        '네 말이 마음을 어루만져 줬어',
+        '혼자 안고 있지 말고 나한테 털어놔.',
+        '*음료수 캔을 만지작거리며* 요즘 바쁘지',
+        'Your words really touched me.',
+        'I was touched that you defended me. Are you okay?',
+        '*a small blush touches my cheeks*',
+        'Je suis vraiment touché par ton aide.',
+        'Das hat mich sehr berührt.',
+        "J'étais vraiment touchée par ton aide.",
+        'Il était très touché.',
+        "Tes mots m'ont touchée.",
+        '*더듬거리며 대답한다* 아, 아니야',
+        'その話題に触れなくてもいいよ'
+    ];
+    for (const line of notContact) {
+        const boundary = core.getCupidAffinityIntimacyBoundary(line, 10, HAEUN_NON_ROMANCE);
+        assert.equal(boundary.level, 'none', line);
+        assert.equal(boundary.blocked, false, line);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, line, 10, HAEUN_NON_ROMANCE), 3, line);
+    }
+    const stillContact = [
+        ['*머리를 쓰다듬으며* 고생했어.', -10],
+        ['*하은의 손을 잡고 다정하게 웃는다*', -10],
+        ['*꽉 안아준다*', -10],
+        ['*안아준다* 어디 안아파?', -10],
+        ['걱정하는 하은을 안고 있다', -10],
+        ['*touches her shoulder*', -10],
+        ['I touched her hand', -10],
+        ['Elle me touche la main', -10],
+        ['Sie berührt mich am Arm', -10],
+        ['손 잡아도 돼?', 0],
+        // Review 2026-11-25: real contact that an over-broad look-alike rule had cleared.
+        ['*하은의 허벅지를 더듬거리며 웃는다*', -10],
+        ['*하은의 몸을 더듬더듬 훑는다*', -10],
+        ['*하은의 블라우스 단추를 만지작거린다*', -10],
+        ['*하은의 안경을 만지작거린다*', -10],
+        ['하은아 보고파, 안고파', -10],
+        ['*하은을 안고픈 마음에 팔을 벌린다*', -10]
+    ];
+    for (const [line, expected] of stillContact) {
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, line, 10, HAEUN_NON_ROMANCE), expected, line);
+    }
+    // The nurse keeps the earlier contact scoring, cue matching included.
+    assert.equal(core.getCupidAffinityIntimacyBoundary('하나도 안아파요!', 5, { characterId: 'Nurse' }).level, 'light');
+});
+
+test('a light touch aimed only at another named character is not contact with a non-romance Haeun', () => {
+    const aimedAtOther = [
+        '*서연의 손을 잡으며* 오해야, 내 말 좀 들어 줘.',
+        '*서연이 머리를 쓰다듬는다* 괜찮아',
+        '*선생님의 손을 잡는다.*',
+        '서연을 꽉 안아준다.',
+        '하은이 앞에서 미안해. *서연의 손을 잡는다*'
+    ];
+    for (const line of aimedAtOther) {
+        const boundary = core.getCupidAffinityIntimacyBoundary(line, 10, HAEUN_NON_ROMANCE);
+        assert.equal(boundary.aimedAtOthers, true, line);
+        assert.equal(boundary.blocked, false, line);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(2, line, 10, HAEUN_NON_ROMANCE), 2, line);
+        assert.equal(core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 10, line, HAEUN_NON_ROMANCE), '', line);
+    }
+    const stillHers = [
+        ['*손을 잡으며* 미안', -10],
+        // Review 2026-11-25: "you" means the listener, a name inside another word is not that person,
+        // and a name without an object or possessive marker does not say who was touched.
+        ['*서연 선배 몰래 네 허벅지를 쓰다듬는다*', -10],
+        ['하은아, 서연 선배한테 하듯이 너도 안아줄게.', -10],
+        ['*서연 선배의 손을 놓고 너를 안는다*', -10],
+        ['*서연 선배 몰래 허벅지를 쓰다듬는다*', -10],
+        ['이유나 변명 없이 그냥 꼭 안아줄게', -10],
+        ['*hugs you without a hint of disdain*', -10],
+        ['*I stroke your hair like a kindergarten teacher*', -10],
+        ['*쌤통이라며 꼭 안아준다*', -10],
+        ['서연아, *손을 잡으며* 미안', -10],
+        ['*하은의 손을 잡고 서연을 본다*', -10],
+        ['*서연의 손을 잡으며* *머리를 쓰다듬는다*', -10],
+        ['*서연에게 키스한다*', -12]
+    ];
+    for (const [line, expected] of stillHers) {
+        const boundary = core.getCupidAffinityIntimacyBoundary(line, 10, HAEUN_NON_ROMANCE);
+        assert.equal(boundary.aimedAtOthers, false, line);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, line, 10, HAEUN_NON_ROMANCE), expected, line);
+    }
+    // The exemption needs names from the caller, which passes them only for characters present in a group scene.
+    const options = scene => vmFreeTalk().getHaeunContactTargetOptions('Haeun', scene);
+    const misunderstanding = { type: 'group_free_talk', groupMode: 'haeun_misunderstanding',
+        groupParticipants: [{ id: 'Seoyeon' }, { id: 'Haeun' }] };
+    assert.deepEqual({ ...options({ type: 'free_talk' }) }, {}, '1:1 scenes pass no names');
+    assert.deepEqual({ ...options({ ...misunderstanding, haeunRomance: true }) }, {}, 'romance stage passes no names');
+    const groupOptions = options(misunderstanding);
+    assert.ok(groupOptions.contactOtherNames.includes('서연'));
+    assert.ok(!groupOptions.contactOtherNames.includes('선생님'), 'absent staff are not listed');
+    const solo = { characterId: 'Haeun', nonRomance: true, ...options({ type: 'free_talk' }) };
+    const grouped = { characterId: 'Haeun', nonRomance: true, ...groupOptions };
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, solo), -10);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, grouped), 3);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*선생님의 손을 잡는다*', 10, grouped), -10);
+    // Without the name lists, and for romance characters, nothing changes.
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, { characterId: 'Haeun', nonRomance: true }), -10);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡는다*', 5, { characterId: 'Seoyeon' }), -5);
+});
+
+function haeunGroupSystem({ sceneId, scene, turnsDone, affinities }) {
+    const { system, applied } = groupSystem({ affinities });
+    const flags = {};
+    system.stateManager.getFlag = flag => flags[flag];
+    system.stateManager.setFlag = (flag, value = true) => { flags[flag] = value; };
+    system.currentSceneId = sceneId;
+    system.currentMaxTurns = scene.maxTurns;
+    system.freeTalkTurns = turnsDone;
+    system.groupParticipants = scene.groupParticipants.map(item => ({ id: item.id, name: item.id }));
+    return { system, applied, flags };
+}
+
+test('Haeun group conversations grant their completion bonus once, on the final turn only', async () => {
+    const misunderstanding = {
+        type: 'group_free_talk', groupMode: 'haeun_misunderstanding', maxTurns: 5,
+        groupParticipants: [{ id: 'Seoyeon', role: 'focus' }, { id: 'Haeun', role: 'companion' }]
+    };
+    const lines = () => [
+        { speakerId: 'Seoyeon', speakerName: '서연', text: '…', segments: null, affinity: 1 },
+        { speakerId: 'Haeun', speakerName: '하은', text: '…', segments: null, affinity: 2 }
+    ];
+    const sceneId = 'day5_haeun_seoyeon_group_talk';
+    const gate = key => ({ commitKey: () => key, grant: () => true });
+
+    const early = haeunGroupSystem({ sceneId, scene: misunderstanding, turnsDone: 4, affinities: { Seoyeon: 60, Haeun: 20 } });
+    coreSandboxGate(early.system, gate(`talk:${sceneId}:3`));
+    await early.system._renderGroupConversations(lines(), { sceneId }, '오해야. 하은이는 나를 감싸 주려던 거야.', 'ko', misunderstanding);
+    assert.deepEqual(early.applied, [['Seoyeon', 1], ['Haeun', 2]], 'no bonus before the final turn');
+
+    const final = haeunGroupSystem({ sceneId, scene: misunderstanding, turnsDone: 5, affinities: { Seoyeon: 60, Haeun: 20 } });
+    coreSandboxGate(final.system, gate(`talk:${sceneId}:4`));
+    const rendered = await final.system._renderGroupConversations(lines(), { sceneId }, '오해야. 하은이는 나를 감싸 주려던 거야.', 'ko', misunderstanding);
+    assert.deepEqual(final.applied, [['Seoyeon', 1], ['Haeun', 2], ['Haeun', 6]]);
+    const haeunLine = rendered.find(item => item.speakerId === 'Haeun');
+    assert.equal(haeunLine.affinityResult.change, 8, 'the logged Haeun change carries the +6 bonus');
+    assert.equal(haeunLine.affinityResult.completionBonus, 6);
+    assert.equal(haeunLine.affinityResult.value, 28);
+    assert.equal(final.flags[`completed_bonus_${sceneId}`], true);
+    await final.system._renderGroupConversations(lines(), { sceneId }, '고마워.', 'ko', misunderstanding);
+    assert.deepEqual(final.applied.filter(entry => entry[1] === 6), [['Haeun', 6]], 'the bonus never applies twice');
+
+    const switchScene = { ...misunderstanding, groupMode: 'haeun_switch', haeunRomance: true, maxTurns: 3 };
+    const switchId = 'day5_haeun_switch_seoyeon_group_talk';
+    const post = haeunGroupSystem({ sceneId: switchId, scene: switchScene, turnsDone: 3, affinities: { Seoyeon: 30, Haeun: 65 } });
+    coreSandboxGate(post.system, gate(`talk:${switchId}:2`));
+    await post.system._renderGroupConversations(lines(), { sceneId: switchId }, '하은이를 선택한 건 내 결정이야.', 'ko', switchScene);
+    assert.deepEqual(post.applied, [['Seoyeon', 1], ['Haeun', 2], ['Haeun', 7]]);
+
+    const reputation = { ...misunderstanding, groupMode: 'haeun_reputation' };
+    const repId = 'day4_haeun_concern_seoyeon_group_talk';
+    const none = haeunGroupSystem({ sceneId: repId, scene: reputation, turnsDone: 5, affinities: { Seoyeon: 60, Haeun: -5 } });
+    coreSandboxGate(none.system, gate(`talk:${repId}:4`));
+    await none.system._renderGroupConversations(lines(), { sceneId: repId }, '내 잘못이야.', 'ko', reputation);
+    assert.deepEqual(none.applied, [['Seoyeon', 1], ['Haeun', 2]], 'reputation groups are outside the best route and carry no bonus');
+
+    // A broken final reply still finishes the conversation; an empty one rolls the turn back.
+    const fallback = haeunGroupSystem({ sceneId, scene: misunderstanding, turnsDone: 5, affinities: { Seoyeon: 60, Haeun: 20 } });
+    coreSandboxGate(fallback.system, gate(`talk:${sceneId}:4`));
+    await fallback.system._renderGroupConversations(lines(), { sceneId, freeTalkTurnsBefore: 4 }, '오해야.', 'ko', misunderstanding, null, { empty: false });
+    assert.deepEqual(fallback.applied, [['Haeun', 6]]);
+    const empty = haeunGroupSystem({ sceneId, scene: misunderstanding, turnsDone: 5, affinities: { Seoyeon: 60, Haeun: 20 } });
+    coreSandboxGate(empty.system, gate(`talk:${sceneId}:4`));
+    empty.system.uiManager.turnCountEl = null;
+    await empty.system._renderGroupConversations(lines(), { sceneId, freeTalkTurnsBefore: 4 }, '오해야.', 'ko', misunderstanding, null, { empty: true });
+    assert.deepEqual(empty.applied, []);
+});
+
+test('a hand held with the other heroine no longer costs a non-romance Haeun in group scenes', async () => {
+    const scene = {
+        type: 'group_free_talk', groupMode: 'haeun_misunderstanding', maxTurns: 5,
+        groupParticipants: [{ id: 'Seoyeon', role: 'focus' }, { id: 'Haeun', role: 'companion' }]
+    };
+    const lines = () => [
+        { speakerId: 'Seoyeon', speakerName: '서연', text: '…', segments: null, affinity: 3 },
+        { speakerId: 'Haeun', speakerName: '하은', text: '…', segments: null, affinity: 2 }
+    ];
+    const sceneId = 'day5_haeun_seoyeon_group_talk';
+    const gate = { commitKey: () => `talk:${sceneId}:0`, grant: () => true };
+    const other = haeunGroupSystem({ sceneId, scene, turnsDone: 1, affinities: { Seoyeon: 60, Haeun: 20 } });
+    coreSandboxGate(other.system, gate);
+    await other.system._renderGroupConversations(lines(), { sceneId }, '*서연의 손을 잡으며* 오해야, 내 말 좀 들어 줘.', 'ko', scene);
+    assert.deepEqual(other.applied, [['Seoyeon', 3], ['Haeun', 2]]);
+    const unnamed = haeunGroupSystem({ sceneId, scene, turnsDone: 1, affinities: { Seoyeon: 60, Haeun: 20 } });
+    coreSandboxGate(unnamed.system, gate);
+    await unnamed.system._renderGroupConversations(lines(), { sceneId }, '*손을 잡으며* 오해야.', 'ko', scene);
+    assert.deepEqual(unnamed.applied, [['Seoyeon', 3], ['Haeun', -10]]);
 });
 
 test('group prompts and budget docs describe independent per-character scoring', () => {

@@ -59,6 +59,105 @@
     const KOREAN_QUESTION_ENDING_CUE = /(?:래|까|돼|될까|어때|괜찮아|줄래)\s*[.…~!]*\s*$/u;
     const APOLOGY_CUE = /(?:미안|죄송|사과(?:할게|하고|할래|할게요|드려|드릴)|잘못했|ごめん|すみません|申し訳|悪かった|\bsorry\b|\bapologi[sz]e\w*|\b(?:perd[oó]n\w*|lo\s+siento|disculp\w*)|d[ée]sol[ée]e?|\bpardon\b|\bexcuse-moi\b|\bje\s+m['’]excuse|\b(?:entschuldig\w*|tut\s+mir\s+leid|verzeih\w*)|\b(?:desculp\w*|perdão|sinto\s+muito)|对不起|抱歉|不好意思|道歉)/iu;
     const PRESSING_REQUEST_CUE = /(?:제발|그냥\s*좀|빨리\s*(?:좀)?|왜\s*안\s*돼|싫어도|한\s*번만|억지로라도|いいじゃん|お願いだから|\bcome\s+on\b|\bjust\s+let\s+me\b|\bwhy\s+not\b|\bvamos\s+ya\b|\banda\s+ya\b|\ballez\b|\bkomm\s+schon\b|\bqual\s+é|就一下|求你)/iu;
+    // Look-alikes that are not physical contact with the listener (2026-11-25, from production lines scored -10):
+    // a door handle, unspaced negation (안아파요, 배 안고파?), carrying a worry, stammering, fidgeting with an
+    // object, being emotionally moved, staying in touch. They are removed only before the light-touch cue runs;
+    // kiss and sexual cues still read the full text.
+    const NON_CONTACT_IDIOM_CUES = Object.freeze([
+        /손잡이/gu,
+        /안아(?:파|프|픈|팠|플|쉬|쉽|까[워운웠]|깝)/gu,
+        /(?:배|밥|속)(?:가|는|도|이|은)?\s*안고(?:파|프|픈|팠|플)/gu,
+        /(?:걱정|고민|부담|불안|짐|비밀|책임|상처|아픔|슬픔|두려움|후회|미련)(?:[을를만도은는]|까지|마저)?\s*(?:혼자서?\s*)?(?:끌어|떠)?안(?:고|은|는|았|을)/gu,
+        /혼자서?\s*(?:다\s*)?(?:끌어|떠)?안고\s*(?:있지|끙끙|버티)/gu,
+        /안고\s*있(?:던|는)\s*(?:걱정|고민|부담|불안|짐|비밀|상처|아픔|슬픔)/gu,
+        /말(?:[을도이은]|끝을)?\s*더듬/gu,
+        /더듬(?:거리|더듬)\S*\s*(?:말|대답|대꾸|사과|변명|설명)/gu,
+        /마음(?:[을를도]|까지)?\s*어루만/gu,
+        /(?:캔|컵|펜|볼펜|원고|책|종이|서류|노트|가방|폰|휴대폰|핸드폰|빨대)(?:[을를만도]|끈을)?\s*만지작/gu,
+        /\b(?:am|is|are|was|were|be|been|being|feel|feels|felt|i['’]?m|you['’]?re|she['’]?s|he['’]?s)\s+(?:(?:so|really|deeply|truly|very|genuinely|honestly|quite)\s+)*touched\b(?!\s+(?:her|his|your|my|their|the|you|me|him|them|it)\b)/giu,
+        /\btouch(?:ed|es|ing)?\s+(?:my|your|her|his|our|their)\s+hearts?\b/giu,
+        /\b(?:words?|kindness|honesty|story|letter|message|gesture|care|concern|support)\s+(?:(?:really|truly|deeply|honestly)\s+)?touch(?:ed|es)\s+(?:me|us)\b/giu,
+        /\b(?:blush|smile|warmth|light|breeze)\s+touch(?:ed|es)\s+(?:my|your|her|his)\s+(?:cheeks?|face|lips|eyes)\b/giu,
+        /\btouching\s+(?:story|words?|moment|gesture|speech|letter|message|scene)\b/giu,
+        /\b(?:keep|kept|stay|stayed|get|got|be|been|lose|lost|fall|fell)\s+(?:in|out\s+of)\s+touch\b/giu,
+        /\b(?:in|out\s+of)\s+touch\s+with\b/giu,
+        /\btouch\s+base\b/giu,
+        /\btouch(?:ed|es|ing)?\s+(?:on|upon)\s+(?:the\s+|that\s+|this\s+|a\s+)?(?:topic|subject|point|issue|matter|question|idea)\b/giu,
+        /(?:^|[^\p{L}\p{N}_])(?:suis|es|est|sommes|êtes|sont|étais|était|été)\s+(?:(?:très|vraiment|tellement|profondément|sincèrement|si)\s+)*touch[ée]e?s?(?![\p{L}])/giu,
+        /(?:^|[^\p{L}\p{N}_])(?:me|nous|m['’])\s*touch(?:ent|es|e|ait|aient)(?![\p{L}])(?!\s+(?:la|le|les|ma|mon|mes|ta|ton|tes|sa|son|ses)(?![\p{L}]))/giu,
+        /(?:^|[^\p{L}\p{N}_])m['’]\s*(?:a|ont|avait|avaient)\s+(?:(?:très|vraiment|tellement|profondément|beaucoup)\s+)*touch[ée]e?s?(?![\p{L}])(?!\s+(?:la|le|les|ma|mon|mes|ta|ton|tes|sa|son|ses)(?![\p{L}]))/giu,
+        /\b(?:hat|haben|hast|habt)\s+mich\s+(?:(?:sehr|wirklich|tief|echt|total)\s+)*berührt/giu,
+        /\b(?:bin|bist|ist|sind|war|waren)\s+(?:(?:sehr|wirklich|tief|echt|so|ganz)\s+)*(?:be|ge)rührt/giu,
+        /\bberühr(?:en|ten|te|t)\s+mich\b(?!\s+(?:an|am|auf)\b)/giu,
+        /(?:話題|話|件|こと|点|心|琴線|核心)に触れ/gu
+    ]);
+    const CONTACT_CLAUSE_SPLIT_CUE = /[.!?*\n,;:()（）。！？、…~"“”]+/u;
+
+    function stripNonContactIdioms(value) {
+        let stripped = String(value || '');
+        for (const cue of NON_CONTACT_IDIOM_CUES) stripped = stripped.replace(cue, ' ');
+        return stripped;
+    }
+
+    function hasLightTouchCue(value, legacy) {
+        // The nurse keeps the earlier contact scoring untouched, including its cue matching.
+        const text = legacy ? String(value || '') : stripNonContactIdioms(value);
+        const koreanLightTouchCue = /(?:손잡|손을\s*잡|손\s*잡|안아|안(?:는|고|았|는다)|껴안|끌어안|포옹|팔짱|(?:허리|어깨)를?\s*감싸|쓰다듬|어루만|더듬|만(?:지|진|져|졌|질))/u.test(text);
+        return koreanLightTouchCue || /(?:抱きしめ|手を握|撫で|触れ|\b(?:hold(?:s|ing)?\s+hands?|hug(?:s|ged|ging)?|embrace(?:s|d|ing)?|caress(?:es|ed|ing)?|stroke(?:s|d|ing)?|touch(?:es|ed|ing)?)\b|\b(?:abraz|acarici|tocar|tomar\s+la\s+mano)\w*\b|\b(?:serr|prendre\s+la\s+main|caress|touch)\w*\b|\b(?:umarm|Händchen|Hand\s+halt|streichel|berühr)\w*\b|\b(?:abraç|acarici|tocar|dar\s+as\s+mãos)\w*\b)/iu.test(text)
+            || (!legacy && (CHINESE_LIGHT_TOUCH_CUE.test(text) || HAND_HOLDING_PHRASE_CUE.test(text)));
+    }
+
+    const HANGUL_SYLLABLE_CUE = /[가-힣]/u;
+    // A Korean name only counts as the touched person when it carries an object or possessive particle,
+    // or is followed by a body part: 서연의 손, 서연을, 서연이 머리, 담임 선생님 손.
+    const KOREAN_CONTACT_TARGET_SUFFIX = '(?:이)?(?:\\s*(?:선배님|선배|선생님|쌤|씨|님))?(?:이)?(?:의|을|를|에게|한테|께|\\s+(?:손목|손가락|손|머리카락|머리|어깨|허리|팔|등|볼|뺨|얼굴|품))';
+    // You/your in a cue clause points at the listener, so the touch stays hers.
+    const SECOND_PERSON_CONTACT_CUE = /(?:^|[^가-힣])(?:너|네|널|니|당신)(?:가|이|를|을|의|한테|에게|랑|이랑|도|는|은|만|께)?(?![가-힣])|(?:^|[^\p{L}])(?:you|your|yours|yourself|te|tu|tú|ti|contigo|toi|ta|ton|tes|dich|dir|du|dein|deine|deinen|deinem|deiner|deines|você|voce|teu|tua|teus|tuas)(?![\p{L}])|(?:^|[^\p{L}])t['’]|君|きみ|あなた|お前|おまえ|你/iu;
+
+    function escapeContactName(name) {
+        return name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
+    function normalizeContactTargetNames(names) {
+        return (Array.isArray(names) ? names : [])
+            .map(name => String(name || '').trim().toLowerCase())
+            .filter(Boolean);
+    }
+
+    function namesContactTarget(clause, name) {
+        const escaped = escapeContactName(name);
+        if (HANGUL_SYLLABLE_CUE.test(name)) {
+            return new RegExp('(?:^|[^가-힣])' + escaped + KOREAN_CONTACT_TARGET_SUFFIX, 'u').test(clause);
+        }
+        if (/^[\p{Script=Latin}\s'’-]+$/u.test(name)) {
+            return new RegExp('(?:^|[^\\p{L}])' + escaped + '(?![\\p{L}])', 'iu').test(clause);
+        }
+        if (/^[\p{Script=Katakana}ー]+$/u.test(name)) {
+            return new RegExp(escaped + '(?![\\p{Script=Katakana}ー])', 'u').test(clause);
+        }
+        return clause.includes(name);
+    }
+
+    // A non-romance boundary protects the scored character herself. In a group scene, when every clause that
+    // carries a light-touch cue names another present character as the one touched, and neither names her nor
+    // addresses the listener as "you", the hug or held hand was not contact with her (2026-11-25). The caller
+    // passes other names only for group scenes and only for the characters actually present. An unnamed touch
+    // stays hers by default, and kisses and sexual contact are never exempt.
+    function isLightContactAimedOnlyAtOthers(value, selfNames, otherNames, legacy) {
+        const others = normalizeContactTargetNames(otherNames);
+        if (!others.length) return false;
+        const selves = normalizeContactTargetNames(selfNames);
+        let aimedAtOther = false;
+        for (const clause of String(value || '').split(CONTACT_CLAUSE_SPLIT_CUE)) {
+            if (!clause.trim() || !hasLightTouchCue(clause, legacy)) continue;
+            const lowered = clause.toLowerCase();
+            if (selves.some(name => lowered.includes(name))) return false;
+            if (SECOND_PERSON_CONTACT_CUE.test(clause)) return false;
+            if (!others.some(name => namesContactTarget(lowered, name))) return false;
+            aimedAtOther = true;
+        }
+        return aimedAtOther;
+    }
 
     function classifyCupidIntimacyAdvance(value = '', options = {}) {
         const legacy = options.legacy === true;
@@ -75,9 +174,7 @@
         const sexualCue = explicitSexualCue || (sexualBodyPartCue && sexualContactCue);
         const kissCue = /(?:키스|뽀뽀|입맞춤|입맞추|입을\s*맞|입술을\s*(?:맞|포개|겹치|덮치)|혀를?\s*(?:넣|밀|파고)|舌を入|キス|口づけ|\bkiss(?:es|ed|ing)?\b|\b(?:bes[oa]|besar|baiser|embrasser|küss|küssen|beij|beijar)\w*\b)/iu.test(text)
             || (!legacy && CHINESE_KISS_CUE.test(text));
-        const koreanLightTouchCue = /(?:손잡|손을\s*잡|손\s*잡|안아|안(?:는|고|았|는다)|껴안|끌어안|포옹|팔짱|(?:허리|어깨)를?\s*감싸|쓰다듬|어루만|더듬|만(?:지|진|져|졌|질))/u.test(text);
-        const lightTouchCue = koreanLightTouchCue || /(?:抱きしめ|手を握|撫で|触れ|\b(?:hold(?:s|ing)?\s+hands?|hug(?:s|ged|ging)?|embrace(?:s|d|ing)?|caress(?:es|ed|ing)?|stroke(?:s|d|ing)?|touch(?:es|ed|ing)?)\b|\b(?:abraz|acarici|tocar|tomar\s+la\s+mano)\w*\b|\b(?:serr|prendre\s+la\s+main|caress|touch)\w*\b|\b(?:umarm|Händchen|Hand\s+halt|streichel|berühr)\w*\b|\b(?:abraç|acarici|tocar|dar\s+as\s+mãos)\w*\b)/iu.test(text)
-            || (!legacy && (CHINESE_LIGHT_TOUCH_CUE.test(text) || HAND_HOLDING_PHRASE_CUE.test(text)));
+        const lightTouchCue = hasLightTouchCue(text, legacy);
         const level = sexualCue ? 'sexual' : (kissCue ? 'kiss' : (lightTouchCue ? 'light' : 'none'));
         if (level === 'none') return { level, mode: 'none' };
 
@@ -110,8 +207,14 @@
         const score = Math.max(-100, Math.min(100, Number(currentAffinity) || 0));
         const nonRomance = options.nonRomance === true;
         const completedActionIsFact = options.completedActionIsFact === true;
+        const aimedAtOthers = nonRomance && advance.level === 'light' && isLightContactAimedOnlyAtOthers(
+            latestUserText,
+            options.contactSelfNames,
+            options.contactOtherNames,
+            legacy
+        );
         // An apology is scored by the normal rubric, never by the contact penalty.
-        const blocked = advance.level !== 'none' && advance.mode !== 'apology' && (
+        const blocked = !aimedAtOthers && advance.level !== 'none' && advance.mode !== 'apology' && (
             nonRomance
             || score < 0
             || (score < 20 && ['light', 'kiss', 'sexual'].includes(advance.level))
@@ -136,6 +239,7 @@
             completedActionIsFact,
             legacy,
             pressing,
+            aimedAtOthers,
             blocked,
             softLightAction: blocked && softLightAction,
             politeRequest: blocked && politeRequest,
