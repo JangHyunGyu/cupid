@@ -992,7 +992,8 @@ test('forced sexual violation classification accepts only the scenario contract 
     const mainFreeTalk = read('assets/js/modules/FreeTalkSystem.js');
     assert.match(mainFreeTalk, /setFlag\('forced_sexual_violation'/);
     assert.match(mainFreeTalk, /forcedSexualViolation === 'rape' \|\| forcedSexualViolation === 'molestation'/);
-    assert.match(mainFreeTalk, /affinityResult = displayFallback \?[^\n]+: this\.applyAffinity\(parsed\.affinity, scene, finalContent\)/);
+    // The 1:1 reply passes its classification and selected face so consensual intimacy is not scored as assault (2026-11-26).
+    assert.match(mainFreeTalk, /affinityResult = displayFallback \?[^\n]+: this\.applyAffinity\(parsed\.affinity, scene, finalContent, \{\s*forcedSexualViolation,\s*expression: parsed\.expression,\s*replyText: reply\s*\}\)/);
     assert.match(mainFreeTalk, /commitProgressEvent\(`talk:/);
     assert.match(mainFreeTalk, /if \(this\.freeTalkTurns >= this\.currentMaxTurns\)/);
     assert.doesNotMatch(mainFreeTalk, /violationAffinity/);

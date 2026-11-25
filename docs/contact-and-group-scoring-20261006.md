@@ -99,3 +99,54 @@ are unchanged.
   because that exception is a standing user decision. It is listed as an open item in
   `docs/haeun-balance-20261125.md`.
 
+## 2026-11-26 follow-up: consensual intimacy no longer scored as assault (main-story 1:1)
+
+A Day 4 homeroom-teacher conversation lost -18 at affinity 61, -18 at 43 and -20 at 25 in three consecutive turns. The
+player's lines were unasked sexual acts. The client contact guard did not produce those numbers: at 61 and 43 it does
+not block sexual contact, and at 25 its text cues did not recognise the line. The worker's separate `cupid_story`
+scorer chose its "-18..-20 non-consensual sexual assault" band each time. Read against the scorer's own rubric
+(consensual conduct "without refusal, fear, or anger" is never misconduct; forced undressing is -15..-20 regardless of
+score), the three turns differ:
+
+- Turn 1 (61): the reply itself narrated force and refusal ("다리가 강제로 벌려지고", "수치심에 … 고개를 젓지만",
+  "그만… 아니, 더"). The -18 has a basis in the rubric. The defect is the writer mixing force and pleasure, which the
+  intimacy guidance already forbids ("실제 거절을 숨은 욕망으로 뒤집지 않습니다").
+- Turn 2 (43): the teacher embraced him, took part on her own and said "싫지 않아"; no refusal, fear or force. The -18
+  contradicts the rubric. This is the scoring defect fixed here.
+- Turn 3 (25): below the sexual-contact tier, filmed, and the reply says "거부하지 못하고 그의 요구에 따른다". The -20
+  follows the rules; the affinity was 25 only because of the first two turns.
+
+`reconcileConsensualIntimacyAffinity` (`assets/js/freetalk-core.js`) lifts an assault-band score (-14 or lower) to 0
+only when every signal of the turn agrees:
+
+- the writer classified the reply's `forcedSexualViolation` as `none` (only the main-story 1:1 schema carries it);
+- the face selected from the reply shows the kiss or sexual act going on with the character engaged in it:
+  `kiss`, `breathless_kiss`, `climax`, `ahegao`, `oral_service`, `afterglow`, `messy_afterglow`, `entranced`,
+  `dominant_aroused`, `begging_lust`, `hungry_lust`, `overwhelmed_pleasure`; a kiss face never covers a sexual act;
+- the user line itself names a kiss or sexual act (the contact cues, or `CONSENSUAL_INTIMACY_EXPLICIT_ACT_CUE` for
+  penetration, oral sex and ejaculation lines they miss; this cue is used only here, not by the blocking gate) and
+  carries no coercion (`COERCIVE_CONTACT_CUE`, `싫어도`/`싫더라도`), violence, threat, recording, sharing or insult cue;
+- the visible reply narrates no force, refusal, fear, pain or crying (`CONSENSUAL_INTIMACY_REPLY_REFUSAL_CUE`, plus
+  `COERCIVE_CONTACT_CUE` on the reply);
+- a romance character other than Haeun, at affinity 40 or more (in the Day 4 temptation interlude the scene attitude
+  of 100 applies, as it does for the contact gate).
+
+A blocked attempt also gets `none` from the writer, so warm, shy, flustered, mocking or startled faces (smile, flushed,
+shy, undressed_shy, sensitive_shiver, smirk, pout, seductive ...) never qualify. Penalties from -13 to -1 stay: they
+can be about something else in the line (an insult is -10..-13) or the mild friction the rubric allows inside
+consensual intimacy (-1..-6). Positive scores, affinity below 40, contact other than a kiss or sexual act,
+`rape`/`molestation` or a missing classification, Haeun at every stage (she is 17, so this never applies to her, before
+or after the declaration), locked scenes, group FreeTalk and gallery FreeTalk keep the scorer value.
+`FreeTalkSystem.applyAffinity` applies it only when the 1:1 reply passes its classification, face and visible text.
+With these rules the production turns come out as -18 (kept), 0 (lifted) and -20 (kept).
+Regression coverage: `tests/consensual-intimacy-scoring.test.cjs`.
+
+Open items, left unchanged in this fix:
+- The contact cues miss several explicit lines (penetration described as `질 안에 … 밀어넣는다`, a masturbation request
+  with `보지 벌려줘 … 자위해줘`). Those lines get neither the refusal gate nor the -10/-12/-18 caps at any affinity, so
+  below 40 (and for a non-romance Haeun) the writer can play them as accepted while the scorer alone decides the
+  number. Widening the blocking cues changes writer prompts and needs its own decision.
+- The scorer lives in the shared worker (`harem`). It receives neither the writer classification nor the allowed tier,
+  so group FreeTalk, which has no writer classification, can still show the contradiction.
+- The writer sometimes narrates force and pleasure in one reply (turn 1 above). The scorer then has a basis for the
+  assault band; this fix deliberately leaves such turns alone.

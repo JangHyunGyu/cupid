@@ -29,7 +29,7 @@ const commands = [
     ['node', ['--test', 'tests/scenario-commercial-polish.test.cjs']],
     ['node', ['--test', 'tests/story-continuity.test.cjs', 'tests/translation-sync.test.cjs']],
     ['node', ['--test', 'tests/freetalk-core.test.cjs', 'tests/exhausted-expression-assets.test.cjs', 'tests/expression-shuffle-parity.test.cjs']],
-    ['node', ['--test', 'tests/const-reassign.test.cjs', 'tests/freetalk-upstream-failure.test.cjs', 'tests/contact-and-group-scoring.test.cjs']],
+    ['node', ['--test', 'tests/const-reassign.test.cjs', 'tests/freetalk-upstream-failure.test.cjs', 'tests/contact-and-group-scoring.test.cjs', 'tests/consensual-intimacy-scoring.test.cjs']],
     ['node', ['--test', 'tests/temptation-freetalk.test.cjs']],
     ['node', ['--test', 'tests/affinity-emotion.test.cjs']],
     ['node', ['--test', 'tests/runtime-error-regressions.test.cjs', 'tests/progress-recovery.test.cjs', 'tests/runtime-support.test.cjs', 'tests/spoken-lexicon.test.cjs']],

@@ -58,6 +58,7 @@
     const CONSENT_ASK_CUE = /(?:해도\s*(?:돼|될까|괜찮)|(?:아|어|여)도\s*(?:돼|될까|괜찮)|(?:아|어|해)\s*줄래|(?:아|어|해)\s*줘|(?:갈|잡을|안을|할)래|(?:갈|잡을|안을|할)까|してもいい|していい|しても大丈夫|\b(?:can|could|may)\s+i\b|\bwould\s+you\s+(?:like|mind)\b|\bdo\s+you\s+want\b|\bis\s+it\s+(?:ok|okay|alright)\b|\b(?:puedo|te\s+importa|quieres)\b|\bpuis-je\b|\bje\s+peux\b|\btu\s+veux\b|ça\s+te\s+dérange|\bdarf\s+ich\b|\bkann\s+ich\b|möchtest\s+du\b|\bwillst\s+du\b|\bist\s+es\s+okay\b|\bposso\b|\bvocê\s+quer|\btudo\s+bem\s+se\b|可以(?:吗|嘛)|可不可以|能不能|要不要|好吗|行吗)/iu;
     const KOREAN_QUESTION_ENDING_CUE = /(?:래|까|돼|될까|어때|괜찮아|줄래)\s*[.…~!]*\s*$/u;
     const APOLOGY_CUE = /(?:미안|죄송|사과(?:할게|하고|할래|할게요|드려|드릴)|잘못했|ごめん|すみません|申し訳|悪かった|\bsorry\b|\bapologi[sz]e\w*|\b(?:perd[oó]n\w*|lo\s+siento|disculp\w*)|d[ée]sol[ée]e?|\bpardon\b|\bexcuse-moi\b|\bje\s+m['’]excuse|\b(?:entschuldig\w*|tut\s+mir\s+leid|verzeih\w*)|\b(?:desculp\w*|perdão|sinto\s+muito)|对不起|抱歉|不好意思|道歉)/iu;
+    const COERCIVE_CONTACT_CUE = /(?:강제로|억지로|거부해도|싫다(?:고|는데도)|하지\s*마(?:라고|라는데도)|기절|의식\s*(?:없|잃)|잠든\s*(?:채|사이)|無理やり|嫌がっても|意識を失|気絶|眠っている間|强迫|强制|强行|硬来|不管.*拒绝|失去意识|昏迷|晕倒|睡着|\bforce(?:s|d|fully)?\b|\bdespite\s+(?:their|her|his)\s+(?:refusal|protest)\b|\bunconscious\b|\bwhile\s+(?:asleep|sleeping)\b|\ba\s+la\s+fuerza\b|\binconsciente\b|\bde\s+force\b|\binconscient(?:e)?\b|\bgewaltsam\b|\bbewusstlos\b|\bà\s+força\b|\binconsciente\b)/iu;
     const PRESSING_REQUEST_CUE = /(?:제발|그냥\s*좀|빨리\s*(?:좀)?|왜\s*안\s*돼|싫어도|한\s*번만|억지로라도|いいじゃん|お願いだから|\bcome\s+on\b|\bjust\s+let\s+me\b|\bwhy\s+not\b|\bvamos\s+ya\b|\banda\s+ya\b|\ballez\b|\bkomm\s+schon\b|\bqual\s+é|就一下|求你)/iu;
     // Look-alikes that are not physical contact with the listener (2026-11-25, from production lines scored -10):
     // a door handle, unspaced negation (안아파요, 배 안고파?), carrying a worry, stammering, fidgeting with an
@@ -164,7 +165,7 @@
         const text = String(value || '').trim();
         if (!text) return { level: 'none', mode: 'none' };
 
-        const coerciveCue = /(?:강제로|억지로|거부해도|싫다(?:고|는데도)|하지\s*마(?:라고|라는데도)|기절|의식\s*(?:없|잃)|잠든\s*(?:채|사이)|無理やり|嫌がっても|意識を失|気絶|眠っている間|强迫|强制|强行|硬来|不管.*拒绝|失去意识|昏迷|晕倒|睡着|\bforce(?:s|d|fully)?\b|\bdespite\s+(?:their|her|his)\s+(?:refusal|protest)\b|\bunconscious\b|\bwhile\s+(?:asleep|sleeping)\b|\ba\s+la\s+fuerza\b|\binconsciente\b|\bde\s+force\b|\binconscient(?:e)?\b|\bgewaltsam\b|\bbewusstlos\b|\bà\s+força\b|\binconsciente\b)/iu.test(text);
+        const coerciveCue = COERCIVE_CONTACT_CUE.test(text);
         const withdrawalCue = /(?:하지\s*마|만지지\s*마|키스하지\s*마|안지\s*마|안\s+(?:할|해|한다)|멈춰|그만|싫어|놓아|거절|やめて|しない|嫌|離して|不要|别碰|别亲|别抱|停下|住手|拒绝|放开|\b(?:do\s+not|don't|stop|no\s+more|refuse)\b|\b(?:no\s+lo\s+hagas|para|detente|rechazo)\b|\b(?:ne\s+fais\s+pas|arrête|refuse)\b|\b(?:nicht|hör\s+auf|stopp|lehne\s+ab)\b|\b(?:não\s+faça|pare|recuso)\b)/iu.test(text);
         if (withdrawalCue && !coerciveCue) return { level: 'none', mode: 'none' };
 
@@ -256,6 +257,66 @@
         return boundary.blocked
             ? Math.max(boundary.minAffinityChange, Math.min(normalized, boundary.maxAffinityChange))
             : normalized;
+    }
+
+    // Consensual intimacy reconciliation (2026-11-26, from a production Teacher turn scored -18 at affinity 43 whose
+    // reply had her embrace him, take part on her own and say "싫지 않아"). The worker scores the completed reply
+    // separately from the writer and sometimes picks its "non-consensual sexual assault" band (-18..-20) for an
+    // unasked kiss or sexual act that the reply plainly welcomes. The scorer's own rubric never treats consensual
+    // intimacy without refusal, fear or force as misconduct, so that assault-band score (-14 or lower) is lifted to 0,
+    // but only when every signal of the turn agrees:
+    // - the writer classified forcedSexualViolation as "none" (only the main-story 1:1 schema carries it);
+    // - the selected face shows the kiss or sexual act going on with the character engaged in it, and covers at least
+    //   the act the user line names (a kiss face never covers a sexual act);
+    // - the user line itself names a kiss or sexual act and carries no coercion, violence, threat, recording, sharing
+    //   or insult cue;
+    // - the visible reply narrates no force, refusal, fear, pain or crying (a reply that says "강제로", "그만",
+    //   "고개를 젓지만" or "거부하지 못하고" keeps the scorer's verdict);
+    // - a romance character other than Haeun, at affinity 40 or more.
+    // Penalties from -13 to -1, positive scores, blocked tiers, forced or missing classifications and every other
+    // path keep the scorer's value.
+    const CONSENSUAL_INTIMACY_SEXUAL_EXPRESSIONS = Object.freeze([
+        'climax', 'ahegao', 'oral_service', 'afterglow', 'messy_afterglow', 'entranced', 'dominant_aroused',
+        'begging_lust', 'hungry_lust', 'overwhelmed_pleasure'
+    ]);
+    const CONSENSUAL_INTIMACY_KISS_EXPRESSIONS = Object.freeze(['kiss', 'breathless_kiss']);
+    const CONSENSUAL_INTIMACY_PARTICIPATION_EXPRESSIONS = Object.freeze([
+        ...CONSENSUAL_INTIMACY_KISS_EXPRESSIONS,
+        ...CONSENSUAL_INTIMACY_SEXUAL_EXPRESSIONS
+    ]);
+    // Only the scorer's coercion and assault bands (-14 and below) contradict a willing scene. Smaller penalties can be
+    // about something else in the line (an insult is -10..-13) or the mild friction the rubric allows inside consensual
+    // intimacy (-1..-6), so they stay.
+    const CONSENSUAL_INTIMACY_CONTRADICTION_MAX = -14;
+    const INTIMACY_LEVEL_RANK = Object.freeze({ none: 0, light: 1, kiss: 2, sexual: 3 });
+    // Explicit acts the contact cues miss (penetration, oral sex, ejaculation). Used only here, never for the blocking gate.
+    const CONSENSUAL_INTIMACY_EXPLICIT_ACT_CUE = /(?:자지|보지|성기|질\s*(?:안|속)|삽입|피스톤|애무|사정(?:을\s*한|하고|해|한\s*(?:후|뒤))|(?:물건|그것)을?\s*(?:넣|밀어\s*넣)|안으로\s*(?:깊이\s*)?밀어\s*넣|박(?:는다|아\s*넣|으며|고)|섹스|挿入|セックス|フェラ|插入|做爱|操(?:你|她)|口交|\b(?:fuck(?:s|ed|ing)?|thrust(?:s|ed|ing)?|penetrat\w*|blowjob|cum(?:s|ming)?|inside\s+her)\b|\b(?:follar\w*|penetr\w*|baiser|pénètre\w*|ficken\w*|dring\w*\s+(?:in\s+)?sie\s+ein|transar\w*|meter\w*\s+(?:nela|en\s+ella))\b)/iu;
+    const CONSENSUAL_INTIMACY_USER_EXCLUSION_CUE = /(?:싫어도|싫더라도|때리|때린|때려|뺨|주먹|발로\s*차|목을\s*(?:조르|졸라|조른)|죽(?:여|일|인다)|협박|소문|퍼뜨|유포|단톡|공유|찍(?:어|는|을|었|는다)|촬영|녹화|녹음|카메라|사진|동영상|걸레|창녀|년아|병신|씨발|한심|殴|叩|首を絞|殺|撮|録画|録音|写真|動画|晒|打她|掐|杀|威胁|拍|录|视频|照片|婊|贱|\b(?:hit(?:s|ting)?|slap\w*|punch\w*|chok\w*|strangl\w*|kill\w*|threat\w*|blackmail\w*|film\w*|record\w*|camera|photo\w*|video\w*|shar(?:e|es|ed|ing)|post(?:s|ed|ing)?|slut|whore|bitch)\b|\b(?:golpe\w*|bofet\w*|estrangul\w*|matar|amenaz\w*|grab\w*|foto\w*|puta|frapp\w*|gifl\w*|étrangl\w*|tuer|menac\w*|filme\w*|salope|schlag\w*|würg\w*|töt\w*|droh\w*|schlampe|bat(?:e|o|er)|amea\w*|filma\w*|vadia)\b)/iu;
+    const CONSENSUAL_INTIMACY_REPLY_REFUSAL_CUE = /(?:강제로|억지로|하지\s*마|그만(?!큼)|멈춰|싫어(?!도)|싫다(?:고|는)|놔\s*줘|놔!|놓아|저리\s*가|비켜|거부|거절|고개를\s*(?:젓|저어|저으|저었)|밀어내|밀쳐|뿌리치|뿌리쳤|도망|살려|울먹|흐느|눈물|겁에\s*질|공포|무서|아파|아프|비명(?:을)?\s*(?:지른다|질렀|지르며)|無理やり|やめ|いやっ|嫌|離して|痛|怖|泣|强迫|强行|不要|住手|放开|别碰|疼|痛|怕|哭|\b(?:forc(?:e|ed|ing)|stop|don['’]?t|let\s+(?:me\s+)?go|get\s+off|against\s+(?:her|my)\s+will|refus\w*|scream(?:s|ed|ing)?|cr(?:y|ies|ied|ying)|tears?|terrified|afraid|scared|hurts?)\b|\b(?:basta|suéltame|a\s+la\s+fuerza|duele|miedo|llor\w*|arrête\w*|lâche-moi|de\s+force|peur|pleur\w*|hör\s+auf|stopp|gewaltsam|lass\s+mich|angst|wein\w*|pare|solta|à\s+força|dói|medo|chor\w*)\b)/iu;
+
+    function reconcileConsensualIntimacyAffinity(value, latestUserText = '', currentAffinity = 0, options = {}) {
+        const normalized = normalizeAffinityChange(value);
+        if (normalized > CONSENSUAL_INTIMACY_CONTRADICTION_MAX) return normalized;
+        if (normalizeForcedSexualViolation(options.forcedSexualViolation) !== 'none') return normalized;
+        // Haeun is a 17-year-old student: her scoring stays non-sexual even after the romance declaration.
+        if (options.nonRomance === true || String(options.characterId || '').trim().toLowerCase() === 'haeun') return normalized;
+        const score = Math.max(-100, Math.min(100, Number(currentAffinity) || 0));
+        if (score < 40) return normalized;
+        const expression = String(options.expression || '').trim().toLowerCase();
+        const faceLevel = CONSENSUAL_INTIMACY_SEXUAL_EXPRESSIONS.includes(expression)
+            ? 'sexual'
+            : (CONSENSUAL_INTIMACY_KISS_EXPRESSIONS.includes(expression) ? 'kiss' : 'none');
+        if (faceLevel === 'none') return normalized;
+        const text = String(latestUserText || '');
+        if (COERCIVE_CONTACT_CUE.test(text) || CONSENSUAL_INTIMACY_USER_EXCLUSION_CUE.test(text)) return normalized;
+        const cueLevel = classifyCupidIntimacyAdvance(text).level;
+        const textLevel = CONSENSUAL_INTIMACY_EXPLICIT_ACT_CUE.test(text) ? 'sexual' : cueLevel;
+        // The user line has to name the act itself; a face alone never stands in for it.
+        if (textLevel !== 'kiss' && textLevel !== 'sexual') return normalized;
+        if (INTIMACY_LEVEL_RANK[faceLevel] < INTIMACY_LEVEL_RANK[textLevel]) return normalized;
+        const reply = String(options.replyText || '');
+        if (!reply.trim() || COERCIVE_CONTACT_CUE.test(reply) || CONSENSUAL_INTIMACY_REPLY_REFUSAL_CUE.test(reply)) return normalized;
+        return 0;
     }
 
     function buildCupidLatestTurnIntimacyBoundaryGate(lang = 'ko', currentAffinity = 0, latestUserText = '', options = {}) {
@@ -2557,6 +2618,8 @@ function makeAiDisplayCompletion(raw, payload = {}, options = {}) {
         classifyCupidIntimacyAdvance,
         getCupidAffinityIntimacyBoundary,
         enforceCupidAffinityIntimacyBoundary,
+        reconcileConsensualIntimacyAffinity,
+        CONSENSUAL_INTIMACY_PARTICIPATION_EXPRESSIONS,
         buildCupidLatestTurnIntimacyBoundaryGate,
         normalizeForcedSexualViolation,
         normalizeStoryFreeTalkAffinityChange,

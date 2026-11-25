@@ -2240,7 +2240,7 @@ try {
     const galleryCatchIndex = gftContent.indexOf('} catch (err)', gallerySendIndex);
     const affinityLogContracts = [
         ['config', configContent, ['affinityChange = null', 'affinityCurrent = null', 'entry.affinityChange', 'entry.affinityCurrent']],
-        ['main', ftSysContent, ['this.applyAffinity(parsed.affinity, scene, finalContent)', /affinityChange:[\s\S]{0,80}affinityResult\.change/, /affinityCurrent:[\s\S]{0,80}affinityResult\.value/, 'const actualChange = newValue - previousValue']],
+        ['main', ftSysContent, [/this\.applyAffinity\(parsed\.affinity, scene, finalContent, \{\s*forcedSexualViolation,\s*expression: parsed\.expression,\s*replyText: reply\s*\}\)/, /affinityChange:[\s\S]{0,80}affinityResult\.change/, /affinityCurrent:[\s\S]{0,80}affinityResult\.value/, 'const actualChange = newValue - previousValue']],
         ['gallery', gftContent, ['this._applyAffinityChange(', 'incidentResult.affinityChange,', 'requestCharId,', 'finalContent', /affinityChange:[\s\S]{0,80}affinityResult\.change/, /affinityCurrent:[\s\S]{0,80}affinityResult\.value/]]
     ];
     for (const [label, source, required] of affinityLogContracts) {

@@ -2067,7 +2067,11 @@ class FreeTalkSystem {
                     this._lastExpressionSelection = null;
                     this.applyExpression(parsed.expression, scene);
                 }
-                affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(charKey) } : this.applyAffinity(parsed.affinity, scene, finalContent);
+                affinityResult = displayFallback ? { change: 0, requestedChange: 0, value: this.stateManager.getAffinity(charKey) } : this.applyAffinity(parsed.affinity, scene, finalContent, {
+                    forcedSexualViolation,
+                    expression: parsed.expression,
+                    replyText: reply
+                });
                 this._assertRequestContext(requestContext, data);
                 const nextAftermath = CupidFreeTalkCore.updateRelationshipAftermath(
                     (((__oc126 = (__oc125 = this.stateManager).getRelationshipAftermath) === null || __oc126 === void 0 ? void 0 : __oc126.call(__oc125, charKey))),
@@ -3557,8 +3561,9 @@ window.saveCupidGroupChatLog({
      * 📊 applyAffinity - JSON 필드에서 받은 호감도 변화량 적용
      * @param {number} change - 호감도 변화량 (정수)
      * @param {Object} scene - 현재 씬 데이터
+     * @param {Object|null} consent - 1:1 본편 답변의 forcedSexualViolation 분류, 선택된 표정, 화면에 낸 답변. 합의가 분명한 키스·성행위에 채점기가 준 -14 이하 점수만 0으로 맞춘다.
      */
-    applyAffinity(change, scene, latestUserText = '') { var __oc258, __oc259;
+    applyAffinity(change, scene, latestUserText = '', consent = null) { var __oc258, __oc259;
         const charKey = this.charNameMap[scene.name] || scene.name;
         if (!this.stateManager.stats[charKey]) return null;
         if (!Number.isInteger(change)) return null;
@@ -3568,13 +3573,26 @@ window.saveCupidGroupChatLog({
             return { change: 0, value: previousValue, requestedChange: 0, appliedChange: 0 };
         }
         // 게임·갤러리 공용 턴당 호감도 범위: -50 ~ +5
-        const requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
+        const policyAffinity = this._getSceneDialoguePolicy(scene).affinity;
+        let requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
             change,
             latestUserText,
-            this._getSceneDialoguePolicy(scene).affinity,
+            policyAffinity,
             { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
                 ...getHaeunContactTargetOptions(charKey, scene) }
         );
+        // 작가 분류가 none이고, 표정이 키스·성행위에 함께하는 모습이며, 사용자 줄이 그 행위를 직접 말하고 폭력·협박·촬영·모욕이
+        // 없고, 답변에 강제·거절·고통 묘사가 없고, 호감도 40 이상이면 채점기의 -14 이하 점수는 답변과 모순이라 0으로 맞춘다(2026-11-26).
+        if (consent) {
+            requestedChange = CupidFreeTalkCore.reconcileConsensualIntimacyAffinity(
+                requestedChange,
+                latestUserText,
+                policyAffinity,
+                { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
+                    forcedSexualViolation: consent.forcedSexualViolation, expression: consent.expression,
+                    replyText: consent.replyText }
+            );
+        }
         if (requestedChange === 0) {
             return { change: 0, value: previousValue, requestedChange: 0 };
         }
