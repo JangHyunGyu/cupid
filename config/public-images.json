@@ -946,6 +946,70 @@
       "key": "objects/f77bfad1710e0ed690c9a42f3426cb10c178a22c3e2a750b4aec14533c03381a.ico",
       "etag": "d8b58181c03f6c5f38fd29aad7ba62ff",
       "contentType": "image/x-icon"
+    },
+    "334f4e43516549105aae346bc2d9b4b302a2fb6acd03815eeb902bd69aeb78fc.png": {
+      "sha256": "334f4e43516549105aae346bc2d9b4b302a2fb6acd03815eeb902bd69aeb78fc",
+      "bytes": 6392939,
+      "source": "assets/images/background/ending_epilogue_seoyeon.png",
+      "key": "objects/334f4e43516549105aae346bc2d9b4b302a2fb6acd03815eeb902bd69aeb78fc.png",
+      "etag": "03095059c595fb6492b57ab335f4a7c1",
+      "contentType": "image/png"
+    },
+    "d6ad6c39bae03acacbadc9201e09144a4cc5f5aa48fa2d710c649da6f3cb9bc2.webp": {
+      "sha256": "d6ad6c39bae03acacbadc9201e09144a4cc5f5aa48fa2d710c649da6f3cb9bc2",
+      "bytes": 2966298,
+      "source": "assets/images/background/ending_epilogue_seoyeon.webp",
+      "key": "objects/d6ad6c39bae03acacbadc9201e09144a4cc5f5aa48fa2d710c649da6f3cb9bc2.webp",
+      "etag": "60b3b86ecdf368e845bac570fea07775",
+      "contentType": "image/webp"
+    },
+    "fea603b039fcfd126445c8029a38cb5b526a8ac9f5fff023881f771588df5c15.png": {
+      "sha256": "fea603b039fcfd126445c8029a38cb5b526a8ac9f5fff023881f771588df5c15",
+      "bytes": 6108033,
+      "source": "assets/images/background/ending_epilogue_yuna.png",
+      "key": "objects/fea603b039fcfd126445c8029a38cb5b526a8ac9f5fff023881f771588df5c15.png",
+      "etag": "d8df5ad2fbdf4cdb61dd26e66419e7c0",
+      "contentType": "image/png"
+    },
+    "adb02241cdf3613383fa5c784dca0a8e172ab6ca79570e0fe428a75adb475fcf.webp": {
+      "sha256": "adb02241cdf3613383fa5c784dca0a8e172ab6ca79570e0fe428a75adb475fcf",
+      "bytes": 3080708,
+      "source": "assets/images/background/ending_epilogue_yuna.webp",
+      "key": "objects/adb02241cdf3613383fa5c784dca0a8e172ab6ca79570e0fe428a75adb475fcf.webp",
+      "etag": "249ec404a9c72745456f2405357df22f",
+      "contentType": "image/webp"
+    },
+    "81de4a9cb7c48479de6ea1478477be3e65d1d7bafd9e397e28bd4780257b30fd.png": {
+      "sha256": "81de4a9cb7c48479de6ea1478477be3e65d1d7bafd9e397e28bd4780257b30fd",
+      "bytes": 6582978,
+      "source": "assets/images/background/ending_epilogue_dain.png",
+      "key": "objects/81de4a9cb7c48479de6ea1478477be3e65d1d7bafd9e397e28bd4780257b30fd.png",
+      "etag": "944f6f7a2a05e1648f315e15ba1ac543",
+      "contentType": "image/png"
+    },
+    "68b9bca22b4b22e348ffab78bceeac79d8aa95aae0f2b74173436553a377331d.webp": {
+      "sha256": "68b9bca22b4b22e348ffab78bceeac79d8aa95aae0f2b74173436553a377331d",
+      "bytes": 2910488,
+      "source": "assets/images/background/ending_epilogue_dain.webp",
+      "key": "objects/68b9bca22b4b22e348ffab78bceeac79d8aa95aae0f2b74173436553a377331d.webp",
+      "etag": "727e696a2e9fd8b5f72835a6b824fd0f",
+      "contentType": "image/webp"
+    },
+    "a360b898871e80bfc044b5c7f70cef719738167c988b4a4ac55c5bf5044f1ea7.png": {
+      "sha256": "a360b898871e80bfc044b5c7f70cef719738167c988b4a4ac55c5bf5044f1ea7",
+      "bytes": 6312699,
+      "source": "assets/images/background/ending_epilogue_haeun.png",
+      "key": "objects/a360b898871e80bfc044b5c7f70cef719738167c988b4a4ac55c5bf5044f1ea7.png",
+      "etag": "5fbbdfac450ec38a5578f7297ed162c8",
+      "contentType": "image/png"
+    },
+    "4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f.webp": {
+      "sha256": "4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f",
+      "bytes": 3020770,
+      "source": "assets/images/background/ending_epilogue_haeun.webp",
+      "key": "objects/4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f.webp",
+      "etag": "0e85655c9b269209a396c0013c10de2a",
+      "contentType": "image/webp"
     }
   },
   "routes": {
@@ -1072,6 +1136,14 @@
     "favicon-192.webp": "e0b43172e68ea41f9650bf445467495a6c38d2dfc0dfb9eada0f507fc169b777.webp",
     "favicon-512.png": "43e627490ce1a130d1fdc75fdd67bc6bfcda3f1984709f7da5f9f347b051e61f.png",
     "favicon-512.webp": "2b68b8a7e659deee219a3e52a0632c306682ecdf8749dc5426be95f58a0a941a.webp",
-    "favicon.ico": "f77bfad1710e0ed690c9a42f3426cb10c178a22c3e2a750b4aec14533c03381a.ico"
+    "favicon.ico": "f77bfad1710e0ed690c9a42f3426cb10c178a22c3e2a750b4aec14533c03381a.ico",
+    "assets/images/background/ending_epilogue_seoyeon.png": "334f4e43516549105aae346bc2d9b4b302a2fb6acd03815eeb902bd69aeb78fc.png",
+    "assets/images/background/ending_epilogue_seoyeon.webp": "d6ad6c39bae03acacbadc9201e09144a4cc5f5aa48fa2d710c649da6f3cb9bc2.webp",
+    "assets/images/background/ending_epilogue_yuna.png": "fea603b039fcfd126445c8029a38cb5b526a8ac9f5fff023881f771588df5c15.png",
+    "assets/images/background/ending_epilogue_yuna.webp": "adb02241cdf3613383fa5c784dca0a8e172ab6ca79570e0fe428a75adb475fcf.webp",
+    "assets/images/background/ending_epilogue_dain.png": "81de4a9cb7c48479de6ea1478477be3e65d1d7bafd9e397e28bd4780257b30fd.png",
+    "assets/images/background/ending_epilogue_dain.webp": "68b9bca22b4b22e348ffab78bceeac79d8aa95aae0f2b74173436553a377331d.webp",
+    "assets/images/background/ending_epilogue_haeun.png": "a360b898871e80bfc044b5c7f70cef719738167c988b4a4ac55c5bf5044f1ea7.png",
+    "assets/images/background/ending_epilogue_haeun.webp": "4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f.webp"
   }
 }

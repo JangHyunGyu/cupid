@@ -1569,34 +1569,40 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "perfect_epilogue_2_seo"
     },
     "perfect_epilogue_2_seo": {
-        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "background": "assets/images/background/ending_epilogue_seoyeon.webp",
         "character": null,
-        "next": "perfect_epilogue_3_seo"
+        "next": "perfect_epilogue_3_seo",
+        "timeOfDay": "day"
     },
     "perfect_epilogue_3_seo": {
-        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "background": "assets/images/background/ending_epilogue_seoyeon.webp",
         "character": null,
-        "next": "perfect_seo_coda_1"
+        "next": "perfect_seo_coda_1",
+        "timeOfDay": "day"
     },
     "perfect_seo_coda_1": {
-        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "background": "assets/images/background/ending_epilogue_seoyeon.webp",
         "character": null,
-        "next": "perfect_seo_coda_2"
+        "next": "perfect_seo_coda_2",
+        "timeOfDay": "day"
     },
     "perfect_seo_coda_2": {
-        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "background": "assets/images/background/ending_epilogue_seoyeon.webp",
         "character": null,
-        "next": "perfect_seo_coda_3"
+        "next": "perfect_seo_coda_3",
+        "timeOfDay": "day"
     },
     "perfect_seo_coda_3": {
-        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "background": "assets/images/background/ending_epilogue_seoyeon.webp",
         "character": null,
-        "next": "date_choice_perfect_seo"
+        "next": "date_choice_perfect_seo",
+        "timeOfDay": "day"
     },
     "perfect_epilogue_4_seo": {
-        "background": "assets/images/background/ending_perfect_seoyeon.png",
+        "background": "assets/images/background/ending_epilogue_seoyeon.webp",
         "character": null,
-        "next": "day5_seo_ending_freetalk_intro"
+        "next": "day5_seo_ending_freetalk_intro",
+        "timeOfDay": "day"
     },
     "bitter_seo_1": {
         "background": "assets/images/background/park.png",
@@ -1784,34 +1790,40 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "perfect_epilogue_2_yuna"
     },
     "perfect_epilogue_2_yuna": {
-        "background": "assets/images/background/ending_perfect_yuna.png",
+        "background": "assets/images/background/ending_epilogue_yuna.webp",
         "character": null,
-        "next": "perfect_epilogue_3_yuna"
+        "next": "perfect_epilogue_3_yuna",
+        "timeOfDay": "day"
     },
     "perfect_epilogue_3_yuna": {
-        "background": "assets/images/background/ending_perfect_yuna.png",
+        "background": "assets/images/background/ending_epilogue_yuna.webp",
         "character": null,
-        "next": "perfect_yuna_coda_1"
+        "next": "perfect_yuna_coda_1",
+        "timeOfDay": "day"
     },
     "perfect_yuna_coda_1": {
-        "background": "assets/images/background/ending_perfect_yuna.png",
+        "background": "assets/images/background/ending_epilogue_yuna.webp",
         "character": null,
-        "next": "perfect_yuna_coda_2"
+        "next": "perfect_yuna_coda_2",
+        "timeOfDay": "day"
     },
     "perfect_yuna_coda_2": {
-        "background": "assets/images/background/ending_perfect_yuna.png",
+        "background": "assets/images/background/ending_epilogue_yuna.webp",
         "character": null,
-        "next": "perfect_yuna_coda_3"
+        "next": "perfect_yuna_coda_3",
+        "timeOfDay": "day"
     },
     "perfect_yuna_coda_3": {
-        "background": "assets/images/background/ending_perfect_yuna.png",
+        "background": "assets/images/background/ending_epilogue_yuna.webp",
         "character": null,
-        "next": "date_choice_perfect_yuna"
+        "next": "date_choice_perfect_yuna",
+        "timeOfDay": "day"
     },
     "perfect_epilogue_4_yuna": {
-        "background": "assets/images/background/ending_perfect_yuna.png",
+        "background": "assets/images/background/ending_epilogue_yuna.webp",
         "character": null,
-        "next": "day5_yuna_ending_freetalk_intro"
+        "next": "day5_yuna_ending_freetalk_intro",
+        "timeOfDay": "day"
     },
     "bitter_yuna_1": {
         "background": "assets/images/background/park.png",
@@ -2066,34 +2078,40 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         "next": "perfect_epilogue_2_dain"
     },
     "perfect_epilogue_2_dain": {
-        "background": "assets/images/background/ending_perfect_dain.png",
+        "background": "assets/images/background/ending_epilogue_dain.webp",
         "character": null,
-        "next": "perfect_epilogue_3_dain"
+        "next": "perfect_epilogue_3_dain",
+        "timeOfDay": "day"
     },
     "perfect_epilogue_3_dain": {
-        "background": "assets/images/background/ending_perfect_dain.png",
+        "background": "assets/images/background/ending_epilogue_dain.webp",
         "character": null,
-        "next": "perfect_dain_coda_1"
+        "next": "perfect_dain_coda_1",
+        "timeOfDay": "day"
     },
     "perfect_dain_coda_1": {
-        "background": "assets/images/background/ending_perfect_dain.png",
+        "background": "assets/images/background/ending_epilogue_dain.webp",
         "character": null,
-        "next": "perfect_dain_coda_2"
+        "next": "perfect_dain_coda_2",
+        "timeOfDay": "day"
     },
     "perfect_dain_coda_2": {
-        "background": "assets/images/background/ending_perfect_dain.png",
+        "background": "assets/images/background/ending_epilogue_dain.webp",
         "character": null,
-        "next": "perfect_dain_coda_3"
+        "next": "perfect_dain_coda_3",
+        "timeOfDay": "day"
     },
     "perfect_dain_coda_3": {
-        "background": "assets/images/background/ending_perfect_dain.png",
+        "background": "assets/images/background/ending_epilogue_dain.webp",
         "character": null,
-        "next": "date_choice_perfect_dain"
+        "next": "date_choice_perfect_dain",
+        "timeOfDay": "day"
     },
     "perfect_epilogue_4_dain": {
-        "background": "assets/images/background/ending_perfect_dain.png",
+        "background": "assets/images/background/ending_epilogue_dain.webp",
         "character": null,
-        "next": "day5_dain_ending_freetalk_intro"
+        "next": "day5_dain_ending_freetalk_intro",
+        "timeOfDay": "day"
     },
     "bitter_dain_1": {
         "background": "assets/images/background/park.png",

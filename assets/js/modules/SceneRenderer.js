@@ -500,7 +500,8 @@ class SceneRenderer {
         if (!bgPath) return;
 
         const cgFileName = bgPath.split(/[?#]/)[0].split('/').pop().replace(/\.(png|jpg|jpeg|webp)$/i, '');
-        const isCG = typeof REGISTERED_CG_IDS !== 'undefined' && REGISTERED_CG_IDS.has(cgFileName);
+        const isCG = (typeof REGISTERED_CG_IDS !== 'undefined' && REGISTERED_CG_IDS.has(cgFileName))
+            || cgFileName.startsWith('ending_');
         const transition = (((__oc16 = this.cgTransition) === null || __oc16 === void 0 ? void 0 : __oc16.prepare(cgFileName, isCG, instant)));
         const requestId = this._backgroundRequestId = (((__oc17 = this._backgroundRequestId) !== null && __oc17 !== void 0 ? __oc17 : 0)) + 1;
         try {
@@ -636,7 +637,8 @@ class SceneRenderer {
         const isRegisteredCG = !!backgroundId
             && typeof REGISTERED_CG_IDS !== 'undefined'
             && REGISTERED_CG_IDS.has(backgroundId);
-        const shouldHideCharactersForCG = isRegisteredCG && !scene.allowCharacterOnCG;
+        const isEndingArt = !!backgroundId && backgroundId.startsWith('ending_');
+        const shouldHideCharactersForCG = (isRegisteredCG || isEndingArt) && !scene.allowCharacterOnCG;
 
         // Registered CG scenes should not render standing characters unless
         // they explicitly opt in.

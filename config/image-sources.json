@@ -7431,18 +7431,14 @@
       "backupKey": "snapshots/20261030/cupid/part-0013.zip"
     },
     "assets/images/background/ending_confess_fail_dain.png": {
-      "sha256": "8b4f8950ff3cb2e72676b20009bda4cc3359c0e473ab30dbb266e315b26eb9f6",
-      "bytes": 3219562,
-      "snapshotPart": "part-0013.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0013.zip"
+      "sha256": "93b9f926edc7f3cb78895bc86fddc4598aab60dbc515c09306e611f3ebddcee3",
+      "bytes": 5174786,
+      "backupKey": "objects/sources/93b9f926edc7f3cb78895bc86fddc4598aab60dbc515c09306e611f3ebddcee3.png"
     },
     "assets/images/background/ending_confess_fail_dain.webp": {
-      "sha256": "147f09dc7c8b09897046acb44729efe2830ae29527bb990f8ab4496b6983cca7",
-      "bytes": 228847,
-      "snapshotPart": "part-0013.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0013.zip"
+      "sha256": "d625b480168a92c3e7ecaf0511ed9aa8494933671c59edc66cbc86ef3ab6fdcb",
+      "bytes": 2926325,
+      "backupKey": "objects/sources/d625b480168a92c3e7ecaf0511ed9aa8494933671c59edc66cbc86ef3ab6fdcb.webp"
     },
     "assets/images/background/ending_confess_fail_seoyeon.png": {
       "sha256": "13635ca97a37caab680a35ad43d257c9ff3b3fd7ada617a2ca338f97e626bf96",
@@ -7459,18 +7455,54 @@
       "backupKey": "snapshots/20261030/cupid/part-0013.zip"
     },
     "assets/images/background/ending_confess_fail_yuna.png": {
-      "sha256": "3f231aad53f2d711cb56b6871779864f48e3df25057f0dfc533b0d832afbaf5e",
-      "bytes": 3866945,
-      "snapshotPart": "part-0013.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0013.zip"
+      "sha256": "3580f4890032abe5fbb506b97225e219f7fdc9de6a78ff9075d187db4dd25536",
+      "bytes": 5191845,
+      "backupKey": "objects/sources/3580f4890032abe5fbb506b97225e219f7fdc9de6a78ff9075d187db4dd25536.png"
     },
     "assets/images/background/ending_confess_fail_yuna.webp": {
-      "sha256": "60c52ff7e78a1fcac6a9bc27285185338957dc1a685f93158880500431f82507",
-      "bytes": 293377,
-      "snapshotPart": "part-0013.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0013.zip"
+      "sha256": "3fd2c0343f81a00cf1deda6d171c725e632c6451a4bc88e58ce0624f1d32fc58",
+      "bytes": 2660249,
+      "backupKey": "objects/sources/3fd2c0343f81a00cf1deda6d171c725e632c6451a4bc88e58ce0624f1d32fc58.webp"
+    },
+    "assets/images/background/ending_epilogue_dain.png": {
+      "sha256": "81de4a9cb7c48479de6ea1478477be3e65d1d7bafd9e397e28bd4780257b30fd",
+      "bytes": 6582978,
+      "backupKey": "objects/sources/81de4a9cb7c48479de6ea1478477be3e65d1d7bafd9e397e28bd4780257b30fd.png"
+    },
+    "assets/images/background/ending_epilogue_dain.webp": {
+      "sha256": "68b9bca22b4b22e348ffab78bceeac79d8aa95aae0f2b74173436553a377331d",
+      "bytes": 2910488,
+      "backupKey": "objects/sources/68b9bca22b4b22e348ffab78bceeac79d8aa95aae0f2b74173436553a377331d.webp"
+    },
+    "assets/images/background/ending_epilogue_haeun.png": {
+      "sha256": "a360b898871e80bfc044b5c7f70cef719738167c988b4a4ac55c5bf5044f1ea7",
+      "bytes": 6312699,
+      "backupKey": "objects/sources/a360b898871e80bfc044b5c7f70cef719738167c988b4a4ac55c5bf5044f1ea7.png"
+    },
+    "assets/images/background/ending_epilogue_haeun.webp": {
+      "sha256": "4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f",
+      "bytes": 3020770,
+      "backupKey": "objects/sources/4f3a0c4d7693f38cb8d48ec1b500adff990870839266709d90c752c0a4a5c19f.webp"
+    },
+    "assets/images/background/ending_epilogue_seoyeon.png": {
+      "sha256": "334f4e43516549105aae346bc2d9b4b302a2fb6acd03815eeb902bd69aeb78fc",
+      "bytes": 6392939,
+      "backupKey": "objects/sources/334f4e43516549105aae346bc2d9b4b302a2fb6acd03815eeb902bd69aeb78fc.png"
+    },
+    "assets/images/background/ending_epilogue_seoyeon.webp": {
+      "sha256": "d6ad6c39bae03acacbadc9201e09144a4cc5f5aa48fa2d710c649da6f3cb9bc2",
+      "bytes": 2966298,
+      "backupKey": "objects/sources/d6ad6c39bae03acacbadc9201e09144a4cc5f5aa48fa2d710c649da6f3cb9bc2.webp"
+    },
+    "assets/images/background/ending_epilogue_yuna.png": {
+      "sha256": "fea603b039fcfd126445c8029a38cb5b526a8ac9f5fff023881f771588df5c15",
+      "bytes": 6108033,
+      "backupKey": "objects/sources/fea603b039fcfd126445c8029a38cb5b526a8ac9f5fff023881f771588df5c15.png"
+    },
+    "assets/images/background/ending_epilogue_yuna.webp": {
+      "sha256": "adb02241cdf3613383fa5c784dca0a8e172ab6ca79570e0fe428a75adb475fcf",
+      "bytes": 3080708,
+      "backupKey": "objects/sources/adb02241cdf3613383fa5c784dca0a8e172ab6ca79570e0fe428a75adb475fcf.webp"
     },
     "assets/images/background/ending_friend.png": {
       "sha256": "8a177cd6652d098334072fa06f159fbbec8f0c92eaac44f7bb9411a360bed3d3",
@@ -7487,32 +7519,24 @@
       "backupKey": "snapshots/20261030/cupid/part-0013.zip"
     },
     "assets/images/background/ending_good_dain.png": {
-      "sha256": "ce7b02d578dac976981ffb706b03ac31932a7b6456f3fcd463ed311768effb55",
-      "bytes": 3252172,
-      "snapshotPart": "part-0013.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0013.zip"
+      "sha256": "7b0a6ca4873f16e4a63f17acfb8e15d73919deb7b7dfe9a652e6c012b5d2e70e",
+      "bytes": 5590355,
+      "backupKey": "objects/sources/7b0a6ca4873f16e4a63f17acfb8e15d73919deb7b7dfe9a652e6c012b5d2e70e.png"
     },
     "assets/images/background/ending_good_dain.webp": {
-      "sha256": "54392394f6d39b571571926e9bcaaf13f0941be1f9fe152fb2da22e71b52a939",
-      "bytes": 244991,
-      "snapshotPart": "part-0013.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0013.zip"
+      "sha256": "27c334999926dfae3035c1a59bb9d961a213da5ec3edac932dd8813a6b30d3c8",
+      "bytes": 2969615,
+      "backupKey": "objects/sources/27c334999926dfae3035c1a59bb9d961a213da5ec3edac932dd8813a6b30d3c8.webp"
     },
     "assets/images/background/ending_good_nurse.png": {
-      "sha256": "98176e2fe8539201d7f3fd7ce75f7dd8548a3f8683e0f864235d2e968e565627",
-      "bytes": 3455044,
-      "snapshotPart": "part-0013.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0013.zip"
+      "sha256": "ab008a081e8c7afed1e2509389634da2f47897e7a35333b10704df1f242d7f80",
+      "bytes": 5400578,
+      "backupKey": "objects/sources/ab008a081e8c7afed1e2509389634da2f47897e7a35333b10704df1f242d7f80.png"
     },
     "assets/images/background/ending_good_nurse.webp": {
-      "sha256": "e5a6b3064f8af1889157702dff7e2afeff1c59301f731e2163e51a4987d6a532",
-      "bytes": 273463,
-      "snapshotPart": "part-0013.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0013.zip"
+      "sha256": "daf76d9c8dfa3909a1a4cbb74906b93b1fa8f49c80731cf535d10b99c7f873e6",
+      "bytes": 2735267,
+      "backupKey": "objects/sources/daf76d9c8dfa3909a1a4cbb74906b93b1fa8f49c80731cf535d10b99c7f873e6.webp"
     },
     "assets/images/background/ending_good_seoyeon.png": {
       "sha256": "68ebecb0d9e53b5a36b4cd119f51fb68bbc8168422fae2bb0677b60826132c88",
@@ -7529,32 +7553,24 @@
       "backupKey": "snapshots/20261030/cupid/part-0014.zip"
     },
     "assets/images/background/ending_good_teacher.png": {
-      "sha256": "9b2bcc32280a3c86eca9a6f5fe96256d75abd7fa4941032d15e2fd5c5c92109d",
-      "bytes": 3554858,
-      "snapshotPart": "part-0014.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0014.zip"
+      "sha256": "b7d7a7fbbed7c5cd76b8807bc65a9fde9d637ccb855167b85a8109165ac43ad3",
+      "bytes": 5870759,
+      "backupKey": "objects/sources/b7d7a7fbbed7c5cd76b8807bc65a9fde9d637ccb855167b85a8109165ac43ad3.png"
     },
     "assets/images/background/ending_good_teacher.webp": {
-      "sha256": "52939b26310d81ee378f5549b176aea1633d4c60177040d8a97ec550ea9fed11",
-      "bytes": 275029,
-      "snapshotPart": "part-0014.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0014.zip"
+      "sha256": "5d236da95f78a6e2af6d912ef7002be626d0f5fc2adc427a366926c13421dbb1",
+      "bytes": 2863273,
+      "backupKey": "objects/sources/5d236da95f78a6e2af6d912ef7002be626d0f5fc2adc427a366926c13421dbb1.webp"
     },
     "assets/images/background/ending_good_yuna.png": {
-      "sha256": "216e12ecd74de89885636b4c05c579c2ced1618e31f6a76a472be39339021112",
-      "bytes": 3516198,
-      "snapshotPart": "part-0014.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0014.zip"
+      "sha256": "4f639ff21b72d7e6572ec48be4360f98fe075259a1b2a90e0ffb821eb08da32a",
+      "bytes": 5892775,
+      "backupKey": "objects/sources/4f639ff21b72d7e6572ec48be4360f98fe075259a1b2a90e0ffb821eb08da32a.png"
     },
     "assets/images/background/ending_good_yuna.webp": {
-      "sha256": "1d5e47093907d6422537eb0a9a6160b4f501874eed9427f1743de82e4f48bcd0",
-      "bytes": 243279,
-      "snapshotPart": "part-0014.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0014.zip"
+      "sha256": "ca701d1b9085eb96443f79a19eb0e322778d899709613a9a854b40679babbdef",
+      "bytes": 2903273,
+      "backupKey": "objects/sources/ca701d1b9085eb96443f79a19eb0e322778d899709613a9a854b40679babbdef.webp"
     },
     "assets/images/background/ending_harem.png": {
       "sha256": "f8b7632b0fae69f41138de1b5b8217d1cba76a80560393a470b25c477790566c",
@@ -7585,18 +7601,14 @@
       "backupKey": "snapshots/20261030/cupid/part-0014.zip"
     },
     "assets/images/background/ending_perfect_dain.png": {
-      "sha256": "c9266503d964eb63fca153f0d65e7e0ab1a1288ddf3c6fda65e5622d18edb063",
-      "bytes": 3438432,
-      "snapshotPart": "part-0014.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0014.zip"
+      "sha256": "21c6d1ab5c70f3ddbfea04840062d86a069c9083010c8debdd2aa6aaeb2f770e",
+      "bytes": 5049462,
+      "backupKey": "objects/sources/21c6d1ab5c70f3ddbfea04840062d86a069c9083010c8debdd2aa6aaeb2f770e.png"
     },
     "assets/images/background/ending_perfect_dain.webp": {
-      "sha256": "ce522f5e1326ca9eb1e8e1ff76558fa8bdaff2d8b13f142f203087e5e93e3144",
-      "bytes": 281109,
-      "snapshotPart": "part-0014.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0014.zip"
+      "sha256": "b53f516eafdd8686d3065549aea7b4fb899e285246928ce02a12d310de269c03",
+      "bytes": 2752159,
+      "backupKey": "objects/sources/b53f516eafdd8686d3065549aea7b4fb899e285246928ce02a12d310de269c03.webp"
     },
     "assets/images/background/ending_perfect_haeun.png": {
       "sha256": "e7de8260aba800b3bc21858ad005d184ee224f93f7057f1090eb4cdbe07d0014",
@@ -7623,18 +7635,14 @@
       "backupKey": "objects/sources/a02a31c355e232b179e3d42f36f27af0f83525514854beb6aa52bfb6ffa97309.webp"
     },
     "assets/images/background/ending_perfect_seoyeon.png": {
-      "sha256": "0c6b235a201a5ff1488ae7bf126f1653f382f11552edb6c2a0006ec95d4d6111",
-      "bytes": 3517401,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "b9ab56fbc899b1a33b558ea7a30d4fdd800e7f01c0ea29b456ae6e36f5f1a710",
+      "bytes": 5645840,
+      "backupKey": "objects/sources/b9ab56fbc899b1a33b558ea7a30d4fdd800e7f01c0ea29b456ae6e36f5f1a710.png"
     },
     "assets/images/background/ending_perfect_seoyeon.webp": {
-      "sha256": "503bd661d92af6961e3a8a38dbe6a2aaad8dab8fda251044ad4ac00e77a02ebe",
-      "bytes": 172365,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "6e9992d9b686b4b2daf87729499553f18cfda43a2f09b325f20e1faf4ff9cebd",
+      "bytes": 2971699,
+      "backupKey": "objects/sources/6e9992d9b686b4b2daf87729499553f18cfda43a2f09b325f20e1faf4ff9cebd.webp"
     },
     "assets/images/background/ending_perfect_teacher.png": {
       "sha256": "aa7691af7a12e2878a059331b07b2f24a42b8bc66a7be05842858a49d69c4415",
@@ -7647,32 +7655,24 @@
       "backupKey": "objects/sources/a32035f2a008213c6a90018f6fad9583cbe50e44c2d13863345f05802c06dc0f.webp"
     },
     "assets/images/background/ending_perfect_yuna.png": {
-      "sha256": "8e8b656cd02ce3d1e44471aba9d95cba43f220cedd277a42058c4ef863b73182",
-      "bytes": 3613825,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "32980ff8755ed5561b2bf73d94c072ddd209e9cdb9a1c1347080cb6efbdb66e6",
+      "bytes": 6319441,
+      "backupKey": "objects/sources/32980ff8755ed5561b2bf73d94c072ddd209e9cdb9a1c1347080cb6efbdb66e6.png"
     },
     "assets/images/background/ending_perfect_yuna.webp": {
-      "sha256": "3a1b88235272e3aa0bee6ab80e54a5adb703e6b98b9e4e428e2aa5a81ef8ecea",
-      "bytes": 253701,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "cf16223cb2878428954cef6489fcbfe09b5e118acb5bc91b0cff845456da9156",
+      "bytes": 3028867,
+      "backupKey": "objects/sources/cf16223cb2878428954cef6489fcbfe09b5e118acb5bc91b0cff845456da9156.webp"
     },
     "assets/images/background/ending_true_dain.png": {
-      "sha256": "28bc2897e8a4f44522a9d676215c75d0ce20b9823ca30b0621a1ffe75d7d1e10",
-      "bytes": 3592316,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "d4de7c971c6bd16ab316f6b99f6e5bf061d3381fe2c666d7774f92bf8f2e0a4c",
+      "bytes": 5658933,
+      "backupKey": "objects/sources/d4de7c971c6bd16ab316f6b99f6e5bf061d3381fe2c666d7774f92bf8f2e0a4c.png"
     },
     "assets/images/background/ending_true_dain.webp": {
-      "sha256": "a3ab9c6396e46935c6cf92588c68a5fddf3d62cabee5ff2a20d92552fb943e45",
-      "bytes": 281837,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "626118eb810eba0d86936c6f17ad44f27d51c9d7eb44e58c21695a0780b5a2ae",
+      "bytes": 2894707,
+      "backupKey": "objects/sources/626118eb810eba0d86936c6f17ad44f27d51c9d7eb44e58c21695a0780b5a2ae.webp"
     },
     "assets/images/background/ending_true_nurse.png": {
       "sha256": "fa6075d64c3d4777e8aa40a2bceff23959abfabd04da6d918e51768540694e72",
@@ -7685,18 +7685,14 @@
       "backupKey": "objects/sources/62add6659fb2a30a4725daeb3144497cf1e2cf3d1ed23c86e07bb5d0f0b4e72b.webp"
     },
     "assets/images/background/ending_true_seoyeon.png": {
-      "sha256": "896681b664f33879a6b7a7ca81468fbb1a37ed3e4269e4938eda85189715fc17",
-      "bytes": 3839668,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "5eaaab567a2472de780c45e8239d1e021664392345d9e0866351826dec9f3792",
+      "bytes": 5885376,
+      "backupKey": "objects/sources/5eaaab567a2472de780c45e8239d1e021664392345d9e0866351826dec9f3792.png"
     },
     "assets/images/background/ending_true_seoyeon.webp": {
-      "sha256": "c2923d479288f2530dca510e074bd0ea80ce7df5f8b69f2fb06e37d66b00b064",
-      "bytes": 317147,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "96becd835bf9f1f456215a721f71116955cfe71797114a0bbc96abad59831dda",
+      "bytes": 2829643,
+      "backupKey": "objects/sources/96becd835bf9f1f456215a721f71116955cfe71797114a0bbc96abad59831dda.webp"
     },
     "assets/images/background/ending_true_teacher.png": {
       "sha256": "0d8a81ab7a28b6add7fc6f765dfb6cae76837f15d2762e782bf680bee6ba78ca",
@@ -7709,18 +7705,14 @@
       "backupKey": "objects/sources/90650d228406dff2d24684edb2a09c321227c4e2e75102d689d44c85929ef50a.webp"
     },
     "assets/images/background/ending_true_yuna.png": {
-      "sha256": "6786c4bd8910ae27eaddd87e17e91baafb8b01a3e3a13d2d218abc795c00920a",
-      "bytes": 3489511,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "9298cbc6e11b831ec7d283700dc35b779530659ff49b2287dd571d2f9b834426",
+      "bytes": 5398553,
+      "backupKey": "objects/sources/9298cbc6e11b831ec7d283700dc35b779530659ff49b2287dd571d2f9b834426.png"
     },
     "assets/images/background/ending_true_yuna.webp": {
-      "sha256": "acf8737571dedaaff51038ff3a3de3f85753c4eca50823b506fa17b8b8144237",
-      "bytes": 244043,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "f8e71cd51518b5cc1d3701264ea4507f92277b3af9ec90c788757a4664fc0ea0",
+      "bytes": 2857911,
+      "backupKey": "objects/sources/f8e71cd51518b5cc1d3701264ea4507f92277b3af9ec90c788757a4664fc0ea0.webp"
     },
     "assets/images/background/event_haeun_reputation.png": {
       "sha256": "6c07faa80b9b4af6f7e9c87756aa65323347f6ba68ed23115a2fadbffaee81fb",
@@ -9126,6 +9118,66 @@
       "backupKey": "snapshots/20261030/cupid/part-0030.zip",
       "publicObject": "f77bfad1710e0ed690c9a42f3426cb10c178a22c3e2a750b4aec14533c03381a.ico"
     },
+    "tests/fixtures/corrected-media/assets/images/background/ending_confess_fail_dain.png": {
+      "sha256": "d4371bdfec5a120c679891010e53bf4266a95828057ef31f938c875fcf43edc5",
+      "bytes": 5174749,
+      "backupKey": "objects/sources/d4371bdfec5a120c679891010e53bf4266a95828057ef31f938c875fcf43edc5.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_confess_fail_dain.webp": {
+      "sha256": "33f1b17aa7d78752ccf0af9e393282d4b1eca79d7b20d66f8b691a714b32fba8",
+      "bytes": 2926288,
+      "backupKey": "objects/sources/33f1b17aa7d78752ccf0af9e393282d4b1eca79d7b20d66f8b691a714b32fba8.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_confess_fail_yuna.png": {
+      "sha256": "f75c48dfcf8fe6ff606a90f8009a3e0c350c92d15a598c45ddd24c4948d5d683",
+      "bytes": 5191808,
+      "backupKey": "objects/sources/f75c48dfcf8fe6ff606a90f8009a3e0c350c92d15a598c45ddd24c4948d5d683.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_confess_fail_yuna.webp": {
+      "sha256": "41c06b4bab3abff3cb38074ca8d35c37f2b5693eeee5adabfee88b54b0cccbbd",
+      "bytes": 2660212,
+      "backupKey": "objects/sources/41c06b4bab3abff3cb38074ca8d35c37f2b5693eeee5adabfee88b54b0cccbbd.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_good_dain.png": {
+      "sha256": "451d750e73e225a5889572be50064d4989aabd3a6e7d770e1230a509c1537d0b",
+      "bytes": 5590318,
+      "backupKey": "objects/sources/451d750e73e225a5889572be50064d4989aabd3a6e7d770e1230a509c1537d0b.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_good_dain.webp": {
+      "sha256": "9eca573e8e7a04a62cfffb6374098a3f77829ce522bd9be05823ca22affd4e30",
+      "bytes": 2969578,
+      "backupKey": "objects/sources/9eca573e8e7a04a62cfffb6374098a3f77829ce522bd9be05823ca22affd4e30.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_good_nurse.png": {
+      "sha256": "00919244e3eb10382133a1241847a9f3af021473c26f5fb03706021bd124af75",
+      "bytes": 5400541,
+      "backupKey": "objects/sources/00919244e3eb10382133a1241847a9f3af021473c26f5fb03706021bd124af75.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_good_nurse.webp": {
+      "sha256": "f7833407914a3ee9a77d0b15ad66b8f30249a754db97c922ca3d9fac9036820c",
+      "bytes": 2735230,
+      "backupKey": "objects/sources/f7833407914a3ee9a77d0b15ad66b8f30249a754db97c922ca3d9fac9036820c.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_good_teacher.png": {
+      "sha256": "dad5d65f04b06b78ca52e23ed1461349124d8c50ea1f4e2e8b66b2bd9c5f191e",
+      "bytes": 5870722,
+      "backupKey": "objects/sources/dad5d65f04b06b78ca52e23ed1461349124d8c50ea1f4e2e8b66b2bd9c5f191e.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_good_teacher.webp": {
+      "sha256": "34e2282d07dbf94135608b1e9c67244d6c61ac96d75a48abf93b1dce3d45ee04",
+      "bytes": 2863236,
+      "backupKey": "objects/sources/34e2282d07dbf94135608b1e9c67244d6c61ac96d75a48abf93b1dce3d45ee04.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_good_yuna.png": {
+      "sha256": "3fa0229dc41a62450dfaa73ab7a661cbee526f13faaad806737af5982e64f97f",
+      "bytes": 5892738,
+      "backupKey": "objects/sources/3fa0229dc41a62450dfaa73ab7a661cbee526f13faaad806737af5982e64f97f.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_good_yuna.webp": {
+      "sha256": "c89cf2f3d0a9ec7091b8d0aabd7eacec422242488ed3da3644ae9425809a85f6",
+      "bytes": 2903236,
+      "backupKey": "objects/sources/c89cf2f3d0a9ec7091b8d0aabd7eacec422242488ed3da3644ae9425809a85f6.webp"
+    },
     "tests/fixtures/corrected-media/assets/images/background/ending_harem.png": {
       "sha256": "e9ce7ccfe9dcedca0a1e702888a79ba6f510e93953096a11b463e4c77d678760",
       "bytes": 28822052,
@@ -9140,6 +9192,16 @@
       "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
       "backupKey": "snapshots/20261030/cupid/part-0014.zip"
     },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_dain.png": {
+      "sha256": "bcb2943012fda61f406f33439d23b97da1117f1ff27121ec581f3ba91042ceff",
+      "bytes": 5049425,
+      "backupKey": "objects/sources/bcb2943012fda61f406f33439d23b97da1117f1ff27121ec581f3ba91042ceff.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_dain.webp": {
+      "sha256": "69c5495e75c645da5bca7e825c854c3f4f40bc4d60d52e2f7227aa0eeb12a82d",
+      "bytes": 2752122,
+      "backupKey": "objects/sources/69c5495e75c645da5bca7e825c854c3f4f40bc4d60d52e2f7227aa0eeb12a82d.webp"
+    },
     "tests/fixtures/corrected-media/assets/images/background/ending_perfect_nurse.png": {
       "sha256": "e5c4ee63344016325172d7f414f70790d090fc45ef4fd93fd074947d7a150c86",
       "bytes": 5086953,
@@ -9149,6 +9211,16 @@
       "sha256": "e03bb4667478c3c27ad0bb103bc8a25f44ea8491c70165cb53f7b0677a150ca4",
       "bytes": 2831468,
       "backupKey": "objects/sources/e03bb4667478c3c27ad0bb103bc8a25f44ea8491c70165cb53f7b0677a150ca4.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_seoyeon.png": {
+      "sha256": "acac6b2c1c6fa562936587a6e4dcfd99e67ced4174c96e013232fe18d2b26be7",
+      "bytes": 5645803,
+      "backupKey": "objects/sources/acac6b2c1c6fa562936587a6e4dcfd99e67ced4174c96e013232fe18d2b26be7.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_seoyeon.webp": {
+      "sha256": "2723b9e1dac5602fefff2e9da0046fd2dcae7a7569104d328a8da5fa49f28566",
+      "bytes": 2971662,
+      "backupKey": "objects/sources/2723b9e1dac5602fefff2e9da0046fd2dcae7a7569104d328a8da5fa49f28566.webp"
     },
     "tests/fixtures/corrected-media/assets/images/background/ending_perfect_teacher.png": {
       "sha256": "9fb9419dbe54e827687f5ca0611d5320b24717227b40b41b5706d847b3327a96",
@@ -9160,6 +9232,26 @@
       "bytes": 3062220,
       "backupKey": "objects/sources/7d97b0e114b05c3c9944f57cd4b620e200fbc196a4c54b2b09a5ea8f71dfff31.webp"
     },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_yuna.png": {
+      "sha256": "24b25bbd51a9ff56d4f7ae51985a6a57ab5aca661bd7b379c9d2d4d1ec20be30",
+      "bytes": 6319404,
+      "backupKey": "objects/sources/24b25bbd51a9ff56d4f7ae51985a6a57ab5aca661bd7b379c9d2d4d1ec20be30.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_yuna.webp": {
+      "sha256": "82d081992264e2fb84dbdc856d67c158581327822beb89484d735b2c7d73d682",
+      "bytes": 3028830,
+      "backupKey": "objects/sources/82d081992264e2fb84dbdc856d67c158581327822beb89484d735b2c7d73d682.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_dain.png": {
+      "sha256": "eebbd4019d71097692ddc562332edce712a908b1c4f3f4fc6a125507060262b7",
+      "bytes": 5658896,
+      "backupKey": "objects/sources/eebbd4019d71097692ddc562332edce712a908b1c4f3f4fc6a125507060262b7.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_dain.webp": {
+      "sha256": "423e350107dcd1f51b1ea8dd185f248c3b491abfbc85ac3ae99e613d8b81393b",
+      "bytes": 2894670,
+      "backupKey": "objects/sources/423e350107dcd1f51b1ea8dd185f248c3b491abfbc85ac3ae99e613d8b81393b.webp"
+    },
     "tests/fixtures/corrected-media/assets/images/background/ending_true_nurse.png": {
       "sha256": "c6ccbd5e09f631b2093a04b475331b03b41d00d3bc06799aecd80c6547b6c21a",
       "bytes": 5688832,
@@ -9170,6 +9262,16 @@
       "bytes": 2700284,
       "backupKey": "objects/sources/4dbd0f5453021cbec3ba04af913bd86e50d2f85796fd94c6685f41c7fde955fa.webp"
     },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_seoyeon.png": {
+      "sha256": "654a60d91b18cc95bb4ae40cf487c5a19cc5099369f12b36e45c63c80eb1c454",
+      "bytes": 5885339,
+      "backupKey": "objects/sources/654a60d91b18cc95bb4ae40cf487c5a19cc5099369f12b36e45c63c80eb1c454.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_seoyeon.webp": {
+      "sha256": "264d849776cd5575454e650ca3ddc94c36b6fd49add9fd5e22e3758b02e55cc5",
+      "bytes": 2829606,
+      "backupKey": "objects/sources/264d849776cd5575454e650ca3ddc94c36b6fd49add9fd5e22e3758b02e55cc5.webp"
+    },
     "tests/fixtures/corrected-media/assets/images/background/ending_true_teacher.png": {
       "sha256": "ca947b0c4b3c732dea91f7bcd50534d09720c15b9c2b883967e1493bd1d8aa61",
       "bytes": 5942169,
@@ -9179,6 +9281,16 @@
       "sha256": "fa7cbe86ac34d4e910d6419e85c9bf1efe1e1bccc4486ad41d29f9b2e29aa736",
       "bytes": 2852488,
       "backupKey": "objects/sources/fa7cbe86ac34d4e910d6419e85c9bf1efe1e1bccc4486ad41d29f9b2e29aa736.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_yuna.png": {
+      "sha256": "2e54286419e9795dfec4350d3d7389f0b7777741de6b36c2f8bf98c3450608fc",
+      "bytes": 5398516,
+      "backupKey": "objects/sources/2e54286419e9795dfec4350d3d7389f0b7777741de6b36c2f8bf98c3450608fc.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_true_yuna.webp": {
+      "sha256": "8f74d73950fd35665b248a981bf040bf6f0ca5cf5d4e808c73c9a6953a52ee81",
+      "bytes": 2857874,
+      "backupKey": "objects/sources/8f74d73950fd35665b248a981bf040bf6f0ca5cf5d4e808c73c9a6953a52ee81.webp"
     },
     "tests/fixtures/corrected-media/assets/images/background/event_seoyeon_succulent.png": {
       "sha256": "6cb85cf3b82fb2b694a7b421287b2bd0b49bb427c69b635e73f27093b3923800",

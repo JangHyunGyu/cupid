@@ -1571,6 +1571,8 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
         const isRegisteredCG = !!backgroundId
             && typeof REGISTERED_CG_IDS !== 'undefined'
             && REGISTERED_CG_IDS.has(backgroundId);
+        const isEndingIllustration = backgroundId.startsWith('ending_');
+        const isFullArtCG = isRegisteredCG || isEndingIllustration;
         const sourceFile = scene.__sourceFile || '';
         const nightFromFile = /_night$/.test(sourceFile);
         const sunsetFromFile = /_3_afterschool$/.test(sourceFile);
@@ -1582,25 +1584,27 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
             sourceFile,
             backgroundId,
             isRegisteredCG,
+            isEndingIllustration,
+            isFullArtCG,
             sceneNight: scene.night,
             backgroundVariant: scene.backgroundVariant,
             nightFromFile,
             isNightScene,
             isSunsetScene,
             applied: {
-                night: isRegisteredCG ? false : isNightScene,
-                sunset: isRegisteredCG ? false : isSunsetScene,
-                variant: isRegisteredCG ? null : scene.backgroundVariant
+                night: isFullArtCG ? false : isNightScene,
+                sunset: isFullArtCG ? false : isSunsetScene,
+                variant: isFullArtCG ? null : scene.backgroundVariant
             }
         });
         if (scene.inheritVisualContext !== true) {
             this.sceneRenderer.setTimeFilter(
-                isRegisteredCG ? false : isNightScene,
-                isRegisteredCG ? false : isSunsetScene,
-                isRegisteredCG ? null : scene.backgroundVariant
+                isFullArtCG ? false : isNightScene,
+                isFullArtCG ? false : isSunsetScene,
+                isFullArtCG ? null : scene.backgroundVariant
             );
             // CG 씬은 contain (가로 화면에서 잘림 방지)
-            this.sceneRenderer.uiManager.bgLayer.classList.toggle('cg-fit', isRegisteredCG);
+            this.sceneRenderer.uiManager.bgLayer.classList.toggle('cg-fit', isFullArtCG);
         }
         console.log('[TimeFilter] bgLayer.classList after setTimeFilter:', this.sceneRenderer.uiManager.bgLayer.className);
 

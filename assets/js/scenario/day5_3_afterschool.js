@@ -1472,8 +1472,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
         ]
     },
     "day5_ending_haeun_epilogue": {
-        "background": "assets/images/background/cafe.png",
-        "character": "assets/images/characters/haeun_relieved.png",
+        "background": "assets/images/background/ending_epilogue_haeun.webp",
+        "character": null,
         "next": "day5_credits",
         "timeOfDay": "day"
     },

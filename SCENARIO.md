@@ -26997,11 +26997,11 @@
 ---
 
 ### `day5_ending_haeun_epilogue`
-- 배경: `cafe.png`
+- 배경: `ending_epilogue_haeun.webp`
 - 시간대: `day`
 - 다음: `day5_credits`
 
-- 캐릭터: `haeun_relieved.png`
+- 캐릭터: `없음`
 **하은**: *하은도 고등학교를 졸업하고 성인이 된 봄날 오후. 카페 문을 열자 얇은 은팔찌를 찬 하은이 창가에서 손을 흔든다.* 선배, 오늘은 심부름 말고 데이트라서 제가 일찍 와서 자리 잡았어요! 메뉴도 같이 고르려고 기다렸거든요. 우리 뭐 마실래요?
 
 ---
@@ -30964,7 +30964,8 @@
 ---
 
 ### `perfect_epilogue_2_seo`
-- 배경: `ending_perfect_seoyeon.png`
+- 배경: `ending_epilogue_seoyeon.webp`
+- 시간대: `day`
 - 다음: `perfect_epilogue_3_seo`
 
 - 캐릭터: `없음`
@@ -30973,7 +30974,8 @@
 ---
 
 ### `perfect_epilogue_3_seo`
-- 배경: `ending_perfect_seoyeon.png`
+- 배경: `ending_epilogue_seoyeon.webp`
+- 시간대: `day`
 - 다음: `perfect_seo_coda_1`
 
 - 캐릭터: `없음`
@@ -30982,7 +30984,8 @@
 ---
 
 ### `perfect_seo_coda_1`
-- 배경: `ending_perfect_seoyeon.png`
+- 배경: `ending_epilogue_seoyeon.webp`
+- 시간대: `day`
 - 다음: `perfect_seo_coda_2`
 
 - 캐릭터: `없음`
@@ -30991,7 +30994,8 @@
 ---
 
 ### `perfect_seo_coda_2`
-- 배경: `ending_perfect_seoyeon.png`
+- 배경: `ending_epilogue_seoyeon.webp`
+- 시간대: `day`
 - 다음: `perfect_seo_coda_3`
 
 - 캐릭터: `없음`
@@ -31000,7 +31004,8 @@
 ---
 
 ### `perfect_seo_coda_3`
-- 배경: `ending_perfect_seoyeon.png`
+- 배경: `ending_epilogue_seoyeon.webp`
+- 시간대: `day`
 - 다음: `date_choice_perfect_seo`
 
 - 캐릭터: `없음`
@@ -31081,7 +31086,8 @@
 ---
 
 ### `perfect_epilogue_4_seo`
-- 배경: `ending_perfect_seoyeon.png`
+- 배경: `ending_epilogue_seoyeon.webp`
+- 시간대: `day`
 - 다음: `day5_seo_ending_freetalk_intro`
 
 - 캐릭터: `없음`
@@ -31406,7 +31412,8 @@
 ---
 
 ### `perfect_epilogue_2_yuna`
-- 배경: `ending_perfect_yuna.png`
+- 배경: `ending_epilogue_yuna.webp`
+- 시간대: `day`
 - 다음: `perfect_epilogue_3_yuna`
 
 - 캐릭터: `없음`
@@ -31415,7 +31422,8 @@
 ---
 
 ### `perfect_epilogue_3_yuna`
-- 배경: `ending_perfect_yuna.png`
+- 배경: `ending_epilogue_yuna.webp`
+- 시간대: `day`
 - 다음: `perfect_yuna_coda_1`
 
 - 캐릭터: `없음`
@@ -31424,7 +31432,8 @@
 ---
 
 ### `perfect_yuna_coda_1`
-- 배경: `ending_perfect_yuna.png`
+- 배경: `ending_epilogue_yuna.webp`
+- 시간대: `day`
 - 다음: `perfect_yuna_coda_2`
 
 - 캐릭터: `없음`
@@ -31433,7 +31442,8 @@
 ---
 
 ### `perfect_yuna_coda_2`
-- 배경: `ending_perfect_yuna.png`
+- 배경: `ending_epilogue_yuna.webp`
+- 시간대: `day`
 - 다음: `perfect_yuna_coda_3`
 
 - 캐릭터: `없음`
@@ -31442,7 +31452,8 @@
 ---
 
 ### `perfect_yuna_coda_3`
-- 배경: `ending_perfect_yuna.png`
+- 배경: `ending_epilogue_yuna.webp`
+- 시간대: `day`
 - 다음: `date_choice_perfect_yuna`
 
 - 캐릭터: `없음`
@@ -31533,7 +31544,8 @@
 ---
 
 ### `perfect_epilogue_4_yuna`
-- 배경: `ending_perfect_yuna.png`
+- 배경: `ending_epilogue_yuna.webp`
+- 시간대: `day`
 - 다음: `day5_yuna_ending_freetalk_intro`
 
 - 캐릭터: `없음`
@@ -31943,7 +31955,8 @@
 ---
 
 ### `perfect_epilogue_2_dain`
-- 배경: `ending_perfect_dain.png`
+- 배경: `ending_epilogue_dain.webp`
+- 시간대: `day`
 - 다음: `perfect_epilogue_3_dain`
 
 - 캐릭터: `없음`
@@ -31952,7 +31965,8 @@
 ---
 
 ### `perfect_epilogue_3_dain`
-- 배경: `ending_perfect_dain.png`
+- 배경: `ending_epilogue_dain.webp`
+- 시간대: `day`
 - 다음: `perfect_dain_coda_1`
 
 - 캐릭터: `없음`
@@ -31961,7 +31975,8 @@
 ---
 
 ### `perfect_dain_coda_1`
-- 배경: `ending_perfect_dain.png`
+- 배경: `ending_epilogue_dain.webp`
+- 시간대: `day`
 - 다음: `perfect_dain_coda_2`
 
 - 캐릭터: `없음`
@@ -31970,7 +31985,8 @@
 ---
 
 ### `perfect_dain_coda_2`
-- 배경: `ending_perfect_dain.png`
+- 배경: `ending_epilogue_dain.webp`
+- 시간대: `day`
 - 다음: `perfect_dain_coda_3`
 
 - 캐릭터: `없음`
@@ -31979,7 +31995,8 @@
 ---
 
 ### `perfect_dain_coda_3`
-- 배경: `ending_perfect_dain.png`
+- 배경: `ending_epilogue_dain.webp`
+- 시간대: `day`
 - 다음: `date_choice_perfect_dain`
 
 - 캐릭터: `없음`
@@ -32060,7 +32077,8 @@
 ---
 
 ### `perfect_epilogue_4_dain`
-- 배경: `ending_perfect_dain.png`
+- 배경: `ending_epilogue_dain.webp`
+- 시간대: `day`
 - 다음: `day5_dain_ending_freetalk_intro`
 
 - 캐릭터: `없음`
