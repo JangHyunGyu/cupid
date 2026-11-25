@@ -72,7 +72,7 @@ test('100 dates Haeun; 99 returns to the unchanged ending conditions and does no
     assert.equal(state.getFlag('isDating_Seoyeon'), false);
     assert.equal(state.getFlag('ending_perfect'), true);
 });
-test('the best path has a 172-point budget (33 turns x3, +24 pre-gate and +21 post-gate completion bonuses, +20 declaration, +8 stage choices), stored cap 100, mostly personal conversation', async () => {
+test('the best path has a 151-point budget (33 turns x3, +12 pre-gate and +12 post-gate completion bonuses, +20 declaration, +8 stage choices), stored cap 100, mostly personal conversation', async () => {
     const { context, state, scenes } = runtime();
     const FreeTalk = context.window.FreeTalkSystem;
     const personal = ['haeun_freetalk', 'day4_haeun_personal', 'day5_haeun_personal', 'day5_haeun_private_1', 'day5_haeun_private_2'];
@@ -82,9 +82,9 @@ test('the best path has a 172-point budget (33 turns x3, +24 pre-gate and +21 po
     const postBonus = FreeTalk.HAEUN_POST_GATE_COMPLETION_BONUS;
     assert.deepEqual(preGatePersonal, ['haeun_freetalk', 'day4_haeun_personal', 'day5_haeun_personal']);
     assert.deepEqual(postGatePersonal, ['day5_haeun_private_1', 'day5_haeun_private_2']);
-    assert.equal(preBonus, 6);
-    assert.equal(postBonus, 7);
-    assert.deepEqual({ ...FreeTalk.HAEUN_COMPLETION_BONUS_GROUP_MODES }, { haeun_misunderstanding: 6, haeun_switch: 7 });
+    assert.equal(preBonus, 3);
+    assert.equal(postBonus, 4);
+    assert.deepEqual({ ...FreeTalk.HAEUN_COMPLETION_BONUS_GROUP_MODES }, { haeun_misunderstanding: 3, haeun_switch: 4 });
     assert.equal(personal.reduce((n, id) => n + scenes[id].maxTurns, 0), 25);
     // Every Haeun conversation on the best route carries a bonus; the off-route reputation groups do not.
     const rivals = ['seoyeon', 'yuna', 'dain', 'teacher', 'nurse'];
@@ -169,16 +169,17 @@ test('the best path has a 172-point budget (33 turns x3, +24 pre-gate and +21 po
         raw += gain;
         await fixture.award(state, 'Haeun', gain);
     }
-    assert.equal(raw, 172);
+    assert.equal(raw, 151);
     assert.equal(raw, 33 * 3 + 4 * preBonus + 3 * postBonus + 20 + stageBest, 'flat +3 per turn plus seven completion bonuses');
     assert.equal(state.getAffinity('Haeun'), 100);
-    // Entering at exactly 45: the declaration and three post-gate bonuses leave 14 points for 13 turns,
-    // so +1 on every turn ends one short and at least one better turn is needed.
+    // Entering at exactly 45: the declaration (+20) and three post-gate bonuses (+12) reach 77,
+    // so 13 turns must supply 23 points (ten +2 turns and three +1 turns reach 100; nine +2 and four +1 end at 99).
     fixture.seed(state, 'Haeun', 45);
     await fixture.award(state, 'Haeun', 20);
     await fixture.award(state, 'Haeun', 3 * postBonus);
-    assert.equal(state.getAffinity('Haeun'), 86);
-    for (let turn = 0; turn < 13; turn++) await fixture.award(state, 'Haeun', 1);
+    assert.equal(state.getAffinity('Haeun'), 77);
+    for (let turn = 0; turn < 9; turn++) await fixture.award(state, 'Haeun', 2);
+    for (let turn = 0; turn < 4; turn++) await fixture.award(state, 'Haeun', 1);
     assert.equal(state.getAffinity('Haeun'), 99);
     await fixture.award(state, 'Haeun', 1);
     assert.equal(state.getAffinity('Haeun'), 100);
@@ -188,10 +189,10 @@ test('a final reply shown as display fallback still completes the conversation; 
     const { context, state, scenes } = runtime();
     const p = context.window.FreeTalkSystem.prototype;
     const cases = [
-        ['haeun_freetalk', { empty: false, partial: true }, 6],
-        ['day5_haeun_private_2', { empty: false, partial: true }, 7],
+        ['haeun_freetalk', { empty: false, partial: true }, 3],
+        ['day5_haeun_private_2', { empty: false, partial: true }, 4],
         ['day4_haeun_personal', { empty: true }, null],
-        ['day5_haeun_private_1', null, 7]
+        ['day5_haeun_private_1', null, 4]
     ];
     for (const [id, displayFallback, expected] of cases) {
         fixture.seed(state, 'Haeun', 50);
@@ -287,6 +288,6 @@ test('Haeun ending has one native square CG registered in every locale', async (
     assert.equal(scenes.day5_ending_haeun.character,null);
     assert.equal(context.window.GalleryData.PERFECT_CG_BY_CHARACTER.haeun,id);
     const png=readPlainMedia(path.join(root,`assets/images/background/${id}.png`));
-    assert.equal(png.readUInt32BE(16),2880);assert.equal(png.readUInt32BE(20),2880);
+    assert.equal(png.readUInt32BE(16),2048);assert.equal(png.readUInt32BE(20),2048);
     for(const lang of languages)assert.equal(context.window.GalleryData.cg[lang].filter(cg=>cg.id===id).length,1);
 });

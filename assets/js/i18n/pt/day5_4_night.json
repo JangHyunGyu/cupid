@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Enfermeira",
-        "text": "*A luz da manhã invade o quarto. Pegando o copo d’água junto aos óculos, Juwon fecha um pouco a camisa branca larga ao se aproximar.* Você parecia pálido quando acordou mais cedo. Trouxe água e o suplemento da manhã."
+        "text": "*A luz da manhã invade o quarto. Pegando o copo d'água junto aos óculos dobrados, Juwon fecha a camisa branca ao se aproximar da cama.* Você estava suando frio quando acordou mais cedo. Trouxe água e os remédios."
     },
     "nurse_perfect_pills_1": {
         "name": "{name}",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermeira",
-        "text": "É apenas um suplemento vitamínico para fadiga. Nós dois exageramos um pouco ontem à noite.",
+        "text": "O rosa é só para o cansaço. Já aquele comprimido preto do lado... melhor nem encostar. Ainda mais se você teve pesadelo ontem à noite.",
         "choices": [
             "Comprimido rosa",
             "Comprimido preto"

@@ -45,7 +45,8 @@ class GalleryData {
             return { changed: false, downgradedCharacters: [] };
         }
         const targetedChanged = (((__oc0 = window.CupidAffinityCorrections) === null || __oc0 === void 0 ? void 0 : __oc0.correctGallery(progress))) || false;
-        if ((Number(progress.affinityRebalanceVersion) || 0) >= this.AFFINITY_REBALANCE_VERSION) {
+        const prevVersion = Number(progress.affinityRebalanceVersion) || 0;
+        if (prevVersion >= this.AFFINITY_REBALANCE_VERSION) {
             return { changed: targetedChanged, downgradedCharacters: [] };
         }
 
@@ -57,6 +58,7 @@ class GalleryData {
         if (!progress.cg || typeof progress.cg !== 'object') progress.cg = {};
 
         for (const [charId, perfectCgId] of Object.entries(this.PERFECT_CG_BY_CHARACTER)) {
+            if (prevVersion >= 1 && charId !== 'haeun') continue;
             const charData = characters[charId];
             if (!charData || typeof charData !== 'object') continue;
             if ((Number(charData.maxAffinity) || 0) < 100) continue;
@@ -298,7 +300,7 @@ class GalleryData {
     }
 }
 GalleryData.VERSION = 2;
-GalleryData.AFFINITY_REBALANCE_VERSION = 1;
+GalleryData.AFFINITY_REBALANCE_VERSION = 2;
 GalleryData.PERFECT_CG_BY_CHARACTER = Object.freeze({
         seyoun: 'ending_perfect_seoyeon',
         yuna: 'ending_perfect_yuna',

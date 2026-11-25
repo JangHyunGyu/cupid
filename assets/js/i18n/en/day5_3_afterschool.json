@@ -520,7 +520,7 @@
     },
     "after5_hidden_nurse_mid": {
         "name": "School Nurse",
-        "text": "*She quietly rests a finger on the counseling QR code printed on the back of the first-aid card.* If you need to, book here anytime. You don't have to invent some big excuse about being sick."
+        "text": "*She jots down an extension number on the back of a small medicine slip and hands it over.* Don't force yourself to invent an illness—just call here whenever things get rough. I'll leave the infirmary door unlocked after school."
     },
     "after5_hidden_nurse_low": {
         "name": "School Nurse",
@@ -668,7 +668,7 @@
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*When I confess first that I like her, Haeun's eyes redden; she scoots close beside me on the bench and holds tight to the edge of my sleeve.* I really like you too, sunbae. Let's start dating today. Tomorrow morning, I don't need an excuse like a box of paperwork—can I ask to see you just because I miss you?"
+        "text": "*When I put my feelings into words first, Haeun's eyes soften and redden; she scoots close on the bench and clasps both hands around mine.* I've been waiting for you for so long too, sunbae. Tomorrow morning, I don't have to hide behind a box of paperwork—can I walk right up to you just because I missed you?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",

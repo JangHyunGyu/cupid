@@ -557,11 +557,11 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "School Nurse",
-        "text": "*With her index finger, she points to the small QR code printed in the corner on the back of the card.*"
+        "text": "*She taps the booking code stamped in the corner of the card with her fingertip.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "School Nurse",
-        "text": "Scan this, and the school app opens straight to the counseling booking window. Pick whichever is easier for you, the nurse's office or the school counseling center."
+        "text": "Tap this once in the school app and the booking screen opens right up. Pick whichever feels less heavy for you, the infirmary or counseling center."
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "School Nurse",

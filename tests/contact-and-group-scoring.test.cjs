@@ -119,13 +119,13 @@ test('unasked light contact is softened but the boundary stays; strict caps are 
     assert.equal(core.getCupidAffinityIntimacyBoundary('키스한다', 25).blocked, true);
 });
 
-test('Nurse keeps the legacy contact scoring unchanged', () => {
+test('Nurse uses the same non-contact idiom filtering and non-negative touch rules as Teacher', () => {
     for (const characterId of ['Nurse', 'nurse']) {
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, '*손을 잡으며* 같이 가자.', 5, { characterId }), -12);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*손을 잡으며* 같이 가자.', 5, { characterId }), -10);
-        assert.equal(core.getCupidAffinityIntimacyBoundary('손잡고 갈래?', 5, { characterId }).mode, 'action');
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, '손 잡아도 돼?', 5, { characterId }), -12);
-        assert.equal(core.getCupidAffinityIntimacyBoundary('아까 손잡아서 미안해', 5, { characterId }).blocked, true);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, '*손을 잡으며* 같이 가자.', 5, { characterId }), -9);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*손을 잡으며* 같이 가자.', 5, { characterId }), -5);
+        assert.equal(core.getCupidAffinityIntimacyBoundary('손잡고 갈래?', 5, { characterId }).mode, 'request');
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, '손 잡아도 돼?', 5, { characterId }), -1);
+        assert.equal(core.getCupidAffinityIntimacyBoundary('아까 손잡아서 미안해', 5, { characterId }).blocked, false);
     }
     const main = read('assets/js/modules/FreeTalkSystem.js');
     const gallery = read('assets/js/gallery-freetalk.js');
@@ -293,8 +293,8 @@ test('look-alike phrases are not contact, while real contact with a non-romance 
     for (const [line, expected] of stillContact) {
         assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, line, 10, HAEUN_NON_ROMANCE), expected, line);
     }
-    // The nurse keeps the earlier contact scoring, cue matching included.
-    assert.equal(core.getCupidAffinityIntimacyBoundary('하나도 안아파요!', 5, { characterId: 'Nurse' }).level, 'light');
+    // Nurse also ignores non-contact idioms such as "안아파요" just like Teacher and Seoyeon.
+    assert.equal(core.getCupidAffinityIntimacyBoundary('하나도 안아파요!', 5, { characterId: 'Nurse' }).level, 'none');
 });
 
 test('a light touch aimed only at another named character is not contact with a non-romance Haeun', () => {
@@ -385,21 +385,21 @@ test('Haeun group conversations grant their completion bonus once, on the final 
     const final = haeunGroupSystem({ sceneId, scene: misunderstanding, turnsDone: 5, affinities: { Seoyeon: 60, Haeun: 20 } });
     coreSandboxGate(final.system, gate(`talk:${sceneId}:4`));
     const rendered = await final.system._renderGroupConversations(lines(), { sceneId }, '오해야. 하은이는 나를 감싸 주려던 거야.', 'ko', misunderstanding);
-    assert.deepEqual(final.applied, [['Seoyeon', 1], ['Haeun', 2], ['Haeun', 6]]);
+    assert.deepEqual(final.applied, [['Seoyeon', 1], ['Haeun', 2], ['Haeun', 3]]);
     const haeunLine = rendered.find(item => item.speakerId === 'Haeun');
-    assert.equal(haeunLine.affinityResult.change, 8, 'the logged Haeun change carries the +6 bonus');
-    assert.equal(haeunLine.affinityResult.completionBonus, 6);
-    assert.equal(haeunLine.affinityResult.value, 28);
+    assert.equal(haeunLine.affinityResult.change, 5, 'the logged Haeun change carries the +3 bonus');
+    assert.equal(haeunLine.affinityResult.completionBonus, 3);
+    assert.equal(haeunLine.affinityResult.value, 25);
     assert.equal(final.flags[`completed_bonus_${sceneId}`], true);
     await final.system._renderGroupConversations(lines(), { sceneId }, '고마워.', 'ko', misunderstanding);
-    assert.deepEqual(final.applied.filter(entry => entry[1] === 6), [['Haeun', 6]], 'the bonus never applies twice');
+    assert.deepEqual(final.applied.filter(entry => entry[1] === 3), [['Haeun', 3]], 'the bonus never applies twice');
 
     const switchScene = { ...misunderstanding, groupMode: 'haeun_switch', haeunRomance: true, maxTurns: 3 };
     const switchId = 'day5_haeun_switch_seoyeon_group_talk';
     const post = haeunGroupSystem({ sceneId: switchId, scene: switchScene, turnsDone: 3, affinities: { Seoyeon: 30, Haeun: 65 } });
     coreSandboxGate(post.system, gate(`talk:${switchId}:2`));
     await post.system._renderGroupConversations(lines(), { sceneId: switchId }, '하은이를 선택한 건 내 결정이야.', 'ko', switchScene);
-    assert.deepEqual(post.applied, [['Seoyeon', 1], ['Haeun', 2], ['Haeun', 7]]);
+    assert.deepEqual(post.applied, [['Seoyeon', 1], ['Haeun', 2], ['Haeun', 4]]);
 
     const reputation = { ...misunderstanding, groupMode: 'haeun_reputation' };
     const repId = 'day4_haeun_concern_seoyeon_group_talk';
@@ -412,7 +412,7 @@ test('Haeun group conversations grant their completion bonus once, on the final 
     const fallback = haeunGroupSystem({ sceneId, scene: misunderstanding, turnsDone: 5, affinities: { Seoyeon: 60, Haeun: 20 } });
     coreSandboxGate(fallback.system, gate(`talk:${sceneId}:4`));
     await fallback.system._renderGroupConversations(lines(), { sceneId, freeTalkTurnsBefore: 4 }, '오해야.', 'ko', misunderstanding, null, { empty: false });
-    assert.deepEqual(fallback.applied, [['Haeun', 6]]);
+    assert.deepEqual(fallback.applied, [['Haeun', 3]]);
     const empty = haeunGroupSystem({ sceneId, scene: misunderstanding, turnsDone: 5, affinities: { Seoyeon: 60, Haeun: 20 } });
     coreSandboxGate(empty.system, gate(`talk:${sceneId}:4`));
     empty.system.uiManager.turnCountEl = null;

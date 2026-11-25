@@ -7611,18 +7611,14 @@
       "backupKey": "objects/sources/b53f516eafdd8686d3065549aea7b4fb899e285246928ce02a12d310de269c03.webp"
     },
     "assets/images/background/ending_perfect_haeun.png": {
-      "sha256": "e7de8260aba800b3bc21858ad005d184ee224f93f7057f1090eb4cdbe07d0014",
-      "bytes": 12238544,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "35859d1874a9b0b0291ba89387b3dac08ff7d7ab462264823c50298f2c8e82ec",
+      "bytes": 5428601,
+      "backupKey": "objects/sources/35859d1874a9b0b0291ba89387b3dac08ff7d7ab462264823c50298f2c8e82ec.png"
     },
     "assets/images/background/ending_perfect_haeun.webp": {
-      "sha256": "106bfcb7178facde54120c9ac2e4f5e0a748088c4bfdcce8d7ac102da731f6c0",
-      "bytes": 8088225,
-      "snapshotPart": "part-0015.zip",
-      "sourceCommit": "0c5a0696cdf7214f71b53c7de96661c70fc35b13",
-      "backupKey": "snapshots/20261030/cupid/part-0015.zip"
+      "sha256": "c990236c88752f1f9da8fd4e2c7fa099b9996f40dbe07cc42dfe35f0112f191e",
+      "bytes": 3065703,
+      "backupKey": "objects/sources/c990236c88752f1f9da8fd4e2c7fa099b9996f40dbe07cc42dfe35f0112f191e.webp"
     },
     "assets/images/background/ending_perfect_nurse.png": {
       "sha256": "04919e933642e999457a50a6004b8cc4d4c92d2a3c0bc19692dcde0126d1d996",
@@ -9201,6 +9197,16 @@
       "sha256": "69c5495e75c645da5bca7e825c854c3f4f40bc4d60d52e2f7227aa0eeb12a82d",
       "bytes": 2752122,
       "backupKey": "objects/sources/69c5495e75c645da5bca7e825c854c3f4f40bc4d60d52e2f7227aa0eeb12a82d.webp"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_haeun.png": {
+      "sha256": "9fe0cf31ebac9c16b3c6364efe5eb88628b0b34c30df1b57a603f5e5482508cb",
+      "bytes": 5428564,
+      "backupKey": "objects/sources/9fe0cf31ebac9c16b3c6364efe5eb88628b0b34c30df1b57a603f5e5482508cb.png"
+    },
+    "tests/fixtures/corrected-media/assets/images/background/ending_perfect_haeun.webp": {
+      "sha256": "26d297a735591acb246b4e58d35ec48cd8dd0b0f671134c0d5da23ca9a6d564a",
+      "bytes": 3065666,
+      "backupKey": "objects/sources/26d297a735591acb246b4e58d35ec48cd8dd0b0f671134c0d5da23ca9a6d564a.webp"
     },
     "tests/fixtures/corrected-media/assets/images/background/ending_perfect_nurse.png": {
       "sha256": "e5c4ee63344016325172d7f414f70790d090fc45ef4fd93fd074947d7a150c86",

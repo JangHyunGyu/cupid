@@ -520,7 +520,7 @@
     },
     "after5_hidden_nurse_mid": {
         "name": "Enfermera",
-        "text": "*Posa el dedo, quieta, sobre el código QR de reserva de consulta impreso en el reverso de la tarjeta de primeros auxilios.* Si lo necesitas, reserva aquí cuando quieras. No hace falta que te inventes a propósito una excusa grande de que te encuentras mal."
+        "text": "*Anota rápido una extensión al dorso de un sobre pequeño de medicina y me lo entrega.* Si se te hace cuesta arriba, no inventes excusas ni dolores: llama aquí. Dejaré la puerta de la enfermería abierta también después de clase."
     },
     "after5_hidden_nurse_low": {
         "name": "Enfermera",
@@ -668,7 +668,7 @@
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*Cuando me declaro yo primero y le digo que me gusta, a Haeun se le enrojecen los ojos; se acerca en el banco hasta pegarse a mi lado y me sujeta el borde de la manga.* A mí también me gustas muchísimo, sunbae. Salgamos juntos desde hoy. Mañana por la mañana, aunque no tenga la excusa de una caja de papeles, ¿puedo llamarte solo porque tengo ganas de verte?"
+        "text": "*Cuando me adelanto a decirle lo que siento, a Haeun se le humedecen los ojos; se acerca un palmo más en el banco y aprieta mi mano entre las suyas.* Yo también llevaba mucho tiempo esperándote solo a ti, sunbae. Mañana por la mañana ya no tendré que poner la excusa de ninguna caja de papeles: ¿puedo hablarte simplemente porque tenía ganas de verte?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",

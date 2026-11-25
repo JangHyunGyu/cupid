@@ -115,13 +115,13 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "day4_night_reflect"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_adult_return_home": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_hidden_msg_branch",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_nurse_checkin": {
         "background": "assets/images/background/school.png",
@@ -613,7 +613,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_hidden_msg_branch",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_adult_night_regret_nurse": {
         "background": "assets/images/background/room_my.png",
@@ -624,7 +624,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_hidden_msg_branch",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_waited_night_branch": {
         "branches": [
@@ -655,7 +655,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_waited_seoyeon_promise",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_waited_seoyeon_promise": {
         "messenger": true,
@@ -666,7 +666,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "day4_night_promised_seoyeon"
         ],
         "next": "wall_seo_rival_rank",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_waited_dain_invite": {
         "background": "assets/images/background/room_my.png",
@@ -677,7 +677,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_waited_dain_promise",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_waited_dain_promise": {
         "messenger": true,
@@ -688,7 +688,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "day4_night_promised_dain"
         ],
         "next": "wall_dain_rival_rank",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_waited_yuna_invite": {
         "background": "assets/images/background/room_my.png",
@@ -699,7 +699,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_waited_yuna_promise",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_waited_yuna_promise": {
         "messenger": true,
@@ -710,7 +710,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             "day4_night_promised_yuna"
         ],
         "next": "wall_yuna_rival_rank",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_student_night_branch": {
         "background": "assets/images/background/room_my.png",
@@ -748,7 +748,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "day4_night_reflect"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_seo_1": {
         "background": "assets/images/background/room_my.png",
@@ -774,7 +774,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_seo_skip"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_seo_pre_high_1": {
         "messenger": false,
@@ -786,7 +786,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_seo_pre_high_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_seo_pre_high_2": {
         "messenger": false,
@@ -798,7 +798,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_seo_rival_rank",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_seo_pre_low_1": {
         "background": "assets/images/background/room_my.png",
@@ -809,7 +809,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_seo_pre_low_1b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_seo_pre_low_1b": {
         "background": "assets/images/background/room_my.png",
@@ -820,7 +820,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_seo_pre_low_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_seo_pre_low_2": {
         "messenger": false,
@@ -832,7 +832,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_seo_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_seo_2": {
         "messenger": false,
@@ -844,7 +844,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_seo_rival_rank",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_seo_to_park": {
         "background": "assets/images/background/park.png",
@@ -1392,7 +1392,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_dain_skip"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_dain_pre_high_1": {
         "background": "assets/images/background/room_my.png",
@@ -1403,7 +1403,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_dain_pre_high_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_dain_pre_high_2": {
         "next": "wall_dain_3",
@@ -1422,7 +1422,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_dain_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_dain_2": {
         "background": "assets/images/background/room_my.png",
@@ -1433,7 +1433,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_dain_2_b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_dain_2_b": {
         "background": "assets/images/background/room_my.png",
@@ -1444,7 +1444,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_dain_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_dain_3": {
         "background": "assets/images/background/room_my.png",
@@ -1455,7 +1455,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_dain_rival_rank",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_dain_4": {
         "background": "assets/images/background/gym.png",
@@ -2083,7 +2083,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
                 "next": "wall_yuna_skip"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_yuna_pre_high_1": {
         "background": "assets/images/background/room_my.png",
@@ -2095,7 +2095,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_yuna_pre_high_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_yuna_pre_high_2": {
         "next": "wall_yuna_rival_rank",
@@ -2111,7 +2111,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "wall_yuna_pre_low_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_yuna_pre_low_2": {
         "next": "wall_yuna_rival_rank",
@@ -2603,19 +2603,19 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_adult_night_regret_target_branch",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_night_regret": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_night_regret_msg_branch",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_student_return_home": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_hidden_msg_branch",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_night_regret_msg_branch": {
         "branches": [
@@ -2658,7 +2658,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_night_regret_reply",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_night_regret_msg_dain": {
         "background": "assets/images/background/room_my.png",
@@ -2669,7 +2669,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_night_regret_reply",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_night_regret_msg_yuna": {
         "background": "assets/images/background/room_my.png",
@@ -2680,25 +2680,25 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_night_regret_reply",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_night_regret_msg": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_night_regret_reply",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_night_regret_reply": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_hidden_msg_branch",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_night_reflect": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_hidden_msg_branch",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_hidden_msg_branch": {
         "branches": [
@@ -2725,7 +2725,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "night_homeroom_msg_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night_homeroom_msg_2": {
         "background": "assets/images/background/room_my.png",
@@ -2736,7 +2736,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "night_homeroom_msg_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night_homeroom_msg_3": {
         "background": "assets/images/background/room_my.png",
@@ -2747,7 +2747,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_hidden_msg_after_homeroom",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_hidden_msg_after_homeroom": {
         "branches": [
@@ -2770,7 +2770,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "night_nurse_msg_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night_nurse_msg_2": {
         "background": "assets/images/background/room_my.png",
@@ -2781,7 +2781,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "night_nurse_msg_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night_nurse_msg_3": {
         "background": "assets/images/background/room_my.png",
@@ -2792,7 +2792,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "night_nurse_msg_4",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night_nurse_msg_4": {
         "background": "assets/images/background/room_my.png",
@@ -2803,7 +2803,7 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
             }
         },
         "next": "day4_night_sleep",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "day4_night_sleep": {
         "background": "assets/images/background/room_my.png",
@@ -2903,19 +2903,19 @@ if (!SCENARIO[4]) SCENARIO[4] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_night_reflect",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_dain_skip": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_night_reflect",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "wall_yuna_skip": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "day4_night_reflect",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     }
     };
     scenes.day4_student_checkin_return_home.branches = scenes.day4_student_night_branch.branches;

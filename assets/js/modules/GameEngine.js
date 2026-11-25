@@ -1734,7 +1734,7 @@ typeof value === 'string' ? value : ((value === null || value === void 0 ? void 
                     if (this.stateManager.getFlag(`isDating_${key}`)) {
                         try {
                             const gallery = JSON.parse(window.CupidStorage.getItem('cupid_gallery') || '{}');
-                            gallery.affinityRebalanceVersion = (((__oc50 = window.GalleryData) === null || __oc50 === void 0 ? void 0 : __oc50.AFFINITY_REBALANCE_VERSION)) || 1;
+                            gallery.affinityRebalanceVersion = (((__oc50 = window.GalleryData) === null || __oc50 === void 0 ? void 0 : __oc50.AFFINITY_REBALANCE_VERSION)) || 2;
                             if (!gallery.characters) gallery.characters = {};
                             if (!gallery.characters[id]) gallery.characters[id] = {};
                             gallery.characters[id].perfectEndingCleared = true;

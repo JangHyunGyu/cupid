@@ -658,7 +658,7 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain",
-        "text": "*Sujeta el carro de balones en el gimnasio.* Han pedido que primero se lleve el material del evento desde el almacén. A mí me dijeron que trajera primero los balones. ¿Qué comprobarás primero?",
+        "text": "*Nada más dejar la tienda y volver al gimnasio, Dain apoya la mano en el carro de balones.* Han pedido que primero se lleve el material del evento desde el almacén. A mí me dijeron que trajera primero los balones. ¿Qué comprobamos primero?",
         "context": "De camino a la salida regresaron al gimnasio para devolver el carro. Al acompañante le pidieron primero material del festival; Dain oyó balones primero. Solo discrepa el orden, sin accidente ni mentiroso establecido. Con poco tiempo, el protagonista debe decidir qué indicación comprobar y a quién ayudar antes.",
         "personality": "No inventes un accidente grave ni una mentira maliciosa. Lo importante no es resolver un misterio, sino a quién decide creer primero el protagonista. Dain exige sinceridad y el acompañante no queda reducido a un papel secundario. La respuesta puede herir a uno de los dos.",
         "groupLocation": "Gimnasio",

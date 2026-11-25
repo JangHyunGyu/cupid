@@ -520,7 +520,7 @@
     },
     "after5_hidden_nurse_mid": {
         "name": "Enfermeira",
-        "text": "*A enfermeira aponta, devagar, o QR de agendamento da consulta impresso no verso do cartão de primeiros socorros.* Quando precisar, marca aqui a qualquer hora. Não precisa inventar de propósito um pretexto grande de que está doente."
+        "text": "*Ela anota depressa um ramal no verso de um envelope pequeno de remédio e me entrega.* Quando apertar, não inventa desculpa nem dor—me liga aqui. Vou deixar a porta da enfermaria aberta depois das aulas."
     },
     "after5_hidden_nurse_low": {
         "name": "Enfermeira",
@@ -668,7 +668,7 @@
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*Quando me declaro primeiro dizendo que gosto dela, os olhos de Haeun ficam marejados; ela chega bem pertinho de mim no banco e segura a ponta da minha manga.* Eu também gosto muito de você, sunbae. Vamos namorar a partir de hoje. Amanhã cedo, mesmo sem desculpa de caixa de documentos, posso te chamar só porque deu saudade?"
+        "text": "*Quando falo o que sinto primeiro, os olhos de Haeun ficam úmidos e vermelhos; ela chega mais perto no banco e aperta nossas mãos entrelaçadas.* Eu também esperei só por você há tanto tempo, sunbae. Amanhã cedo não preciso mais da desculpa de carregar caixas de papéis—posso ir falar com você só porque estava com saudade?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",

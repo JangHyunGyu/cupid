@@ -340,20 +340,30 @@ function formatScene(sceneId, scene, i18n) {
     // ── 캐릭터 + 대사 (흐름 뒤) ──
     // 원본 순서: 배경 → BGM → 다음/분기 → (빈줄) → 캐릭터 → 대사
 
-    // 캐릭터 (단일)
+    // 캐릭터 (단일 및 다중 슬롯)
+    const formatCharEntry = (c) => {
+        if (!c) return null;
+        const src = typeof c === 'string' ? c : c.src;
+        if (!src) return null;
+        const label = `\`${img(src)}\``;
+        return (typeof c === 'object' && c.opacity !== undefined) ? `${label} @ ${c.opacity}` : label;
+    };
+    const charEntries = [];
     if (scene.character !== undefined && scene.character !== null) {
+        charEntries.push(`\`${img(scene.character)}\``);
+    }
+    if (scene.characters && typeof scene.characters === 'object') {
+        for (const slot of ['left', 'center', 'right']) {
+            const formatted = formatCharEntry(scene.characters[slot]);
+            if (formatted) charEntries.push(slot === 'center' ? formatted : `${slot}: ${formatted}`);
+        }
+    }
+    if (charEntries.length > 0) {
         lines.push('');
-        lines.push(`- 캐릭터: \`${img(scene.character)}\``);
-    } else if (scene.character === null && !scene.characters?.center) {
+        lines.push(`- 캐릭터: ${charEntries.join(', ')}`);
+    } else if (scene.character === null || scene.characters) {
         lines.push('');
         lines.push(`- 캐릭터: \`없음\``);
-    }
-
-    // 캐릭터 (투명도 포함)
-    if (scene.characters?.center) {
-        const c = scene.characters.center;
-        lines.push('');
-        lines.push(`- 캐릭터: \`${img(c.src)}\` @ ${c.opacity}`);
     }
 
     if (entry) {

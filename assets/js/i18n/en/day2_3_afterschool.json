@@ -658,7 +658,7 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain",
-        "text": "*She grips the ball cart in the gym.* They said to move the event materials from storage first. I was told to get the balls first. What will you check first?",
+        "text": "*As soon as we leave the snack shop and step back into the gym, Dain rests a hand on the ball cart.* They said to move the event materials from storage first. I was told to grab the balls first. What are we checking first?",
         "context": "On the way out, they returned to the gym with Dain to return the ball cart. The companion was asked by the storage attendant to bring festival materials first; Dain heard balls first. Only the order conflicts, with no accident or established liar. With little time left, the player must say whose instruction to verify and help with first.",
         "personality": "Do not invent a serious accident or malicious lie. The point is not a mystery's objective solution, but whose word the protagonist trusts first. Dain presses honestly, and the companion does not withdraw into a supporting role. Let one person be hurt by the answer when that fits.",
         "groupLocation": "Gym",

@@ -14,7 +14,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "character": null,
         "bgm": "night1.mp3",
         "next": "night2_msg_1",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_1": {
         "branches": [
@@ -50,7 +50,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_seo_general"
         },
         "next": "night2_msg_dain_specific_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_dain_specific_2": {
         "background": "assets/images/background/room_my.png",
@@ -61,7 +61,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_msg_seo_general",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_seo_general": {
         "background": "assets/images/background/room_my.png",
@@ -77,7 +77,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_yuna_general"
         },
         "next": "night2_msg_yuna_general",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_seo_specific": {
         "background": "assets/images/background/room_my.png",
@@ -93,7 +93,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_dain_general"
         },
         "next": "night2_msg_seo_specific_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_seo_specific_2": {
         "background": "assets/images/background/room_my.png",
@@ -104,7 +104,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_msg_dain_general",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_yuna_specific": {
         "background": "assets/images/background/room_my.png",
@@ -120,7 +120,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_dain_general"
         },
         "next": "night2_msg_yuna_specific_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_yuna_specific_2": {
         "background": "assets/images/background/room_my.png",
@@ -131,7 +131,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_msg_dain_general",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_dain_general": {
         "background": "assets/images/background/room_my.png",
@@ -147,7 +147,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_dain_general_merge"
         },
         "next": "night2_msg_dain_general_merge",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_dain_general_merge": {
         "background": "assets/images/background/room_my.png",
@@ -166,7 +166,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "next": "night2_msg_seo_general_alt"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_seo_general_alt": {
         "background": "assets/images/background/room_my.png",
@@ -182,7 +182,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_seo_general_alt_gate"
         },
         "next": "night2_msg_seo_general_alt_gate",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_seo_general_alt_gate": {
         "routeBeforeRender": true,
@@ -205,7 +205,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_7"
         },
         "next": "night2_msg_7",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_generic": {
         "background": "assets/images/background/room_my.png",
@@ -221,7 +221,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_generic_2"
         },
         "next": "night2_msg_generic_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_generic_2": {
         "background": "assets/images/background/room_my.png",
@@ -237,7 +237,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_msg_generic_3"
         },
         "next": "night2_msg_generic_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_generic_3": {
         "routeBeforeRender": true,
@@ -261,7 +261,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_msg_7",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_generic_3_first": {
         "background": "assets/images/background/room_my.png",
@@ -272,7 +272,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_msg_7",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_msg_7": {
         "background": "assets/images/background/room_my.png",
@@ -283,7 +283,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_choice",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_choice": {
         "background": "assets/images/background/room_my.png",
@@ -299,7 +299,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "next": "night2_reply_yuna_1"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_dain_1": {
         "routeBeforeRender": true,
@@ -334,7 +334,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_dain_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_dain_1_first": {
         "background": "assets/images/background/room_my.png",
@@ -350,7 +350,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_dain_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_dain_2": {
         "background": "assets/images/background/room_my.png",
@@ -361,7 +361,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_dain_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_dain_3": {
         "background": "assets/images/background/room_my.png",
@@ -372,7 +372,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_dain_4",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_dain_4": {
         "background": "assets/images/background/room_my.png",
@@ -383,7 +383,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_dain_5",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_dain_5": {
         "background": "assets/images/background/room_my.png",
@@ -413,7 +413,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         ],
         "next": "night2_reply_dain_react_default",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_dain_react_high": {
         "background": "assets/images/background/room_my.png",
@@ -432,7 +432,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_dain_freetalk",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_dain_react_default": {
         "background": "assets/images/background/room_my.png",
@@ -446,7 +446,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "night2_replied_dain"
         ],
         "next": "night2_dain_freetalk",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_dain_freetalk": {
         "background": "assets/images/background/room_my.png",
@@ -460,7 +460,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "isRemote": true,
         "maxTurns": 3,
         "next": "night2_hidden_check",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_seo_1": {
         "background": "assets/images/background/room_my.png",
@@ -481,7 +481,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "fallback": "night2_reply_seo_react_neg"
         },
         "next": "night2_reply_seo_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_seo_2": {
         "background": "assets/images/background/room_my.png",
@@ -492,7 +492,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_seo_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_seo_3": {
         "background": "assets/images/background/room_my.png",
@@ -503,7 +503,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_seo_4",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_seo_4": {
         "background": "assets/images/background/room_my.png",
@@ -514,7 +514,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_seo_5",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_seo_5": {
         "background": "assets/images/background/room_my.png",
@@ -544,7 +544,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         ],
         "next": "night2_reply_seo_react_default",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_seo_react_high": {
         "background": "assets/images/background/room_my.png",
@@ -563,7 +563,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_seo_freetalk",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_seo_react_default": {
         "background": "assets/images/background/room_my.png",
@@ -577,7 +577,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "night2_replied_seo"
         ],
         "next": "night2_seo_freetalk",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_seo_freetalk": {
         "background": "assets/images/background/room_my.png",
@@ -591,7 +591,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "isRemote": true,
         "maxTurns": 3,
         "next": "night2_hidden_check",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_1": {
         "routeBeforeRender": true,
@@ -620,7 +620,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_1_first": {
         "background": "assets/images/background/room_my.png",
@@ -636,7 +636,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_2": {
         "background": "assets/images/background/room_my.png",
@@ -647,7 +647,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_3": {
         "background": "assets/images/background/room_my.png",
@@ -658,7 +658,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_4",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_4": {
         "routeBeforeRender": true,
@@ -687,7 +687,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_5",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_4_first": {
         "background": "assets/images/background/room_my.png",
@@ -698,7 +698,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_5",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_5": {
         "background": "assets/images/background/room_my.png",
@@ -709,7 +709,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_6",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_6": {
         "background": "assets/images/background/room_my.png",
@@ -720,7 +720,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_6_b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_6_b": {
         "background": "assets/images/background/room_my.png",
@@ -731,7 +731,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_reply_yuna_6_c",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_6_c": {
         "background": "assets/images/background/room_my.png",
@@ -745,7 +745,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "setFlags": [
             "heard_yuna_third_song"
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_7": {
         "background": "assets/images/background/room_my.png",
@@ -775,7 +775,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         ],
         "next": "night2_reply_yuna_react_default",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_react_high": {
         "background": "assets/images/background/room_my.png",
@@ -794,7 +794,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_yuna_freetalk",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_react_default": {
         "background": "assets/images/background/room_my.png",
@@ -808,7 +808,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "night2_replied_yuna"
         ],
         "next": "night2_yuna_freetalk",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_yuna_freetalk": {
         "background": "assets/images/background/room_my.png",
@@ -822,7 +822,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "isRemote": true,
         "maxTurns": 3,
         "next": "night2_hidden_check",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_hidden_check": {
         "background": "assets/images/background/room_my.png",
@@ -840,7 +840,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "next": "night2_end_1"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_hidden_homeroom_1": {
         "background": "assets/images/background/room_my.png",
@@ -851,7 +851,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_hidden_homeroom_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_hidden_homeroom_2": {
         "background": "assets/images/background/room_my.png",
@@ -862,7 +862,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_hidden_homeroom_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_hidden_homeroom_3": {
         "background": "assets/images/background/room_my.png",
@@ -881,7 +881,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
                 "next": "night2_end_1"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_hidden_nurse_1": {
         "background": "assets/images/background/room_my.png",
@@ -892,7 +892,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_hidden_nurse_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_hidden_nurse_2": {
         "background": "assets/images/background/room_my.png",
@@ -903,19 +903,19 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             }
         },
         "next": "night2_end_1",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_end_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_flashback_1",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_flashback_1": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_flashback_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_flashback_2": {
         "background": "assets/images/background/sojeong_flashback.png",
@@ -926,37 +926,37 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_flashback_5",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_flashback_5": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_flashback_7",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_flashback_7": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_flashback_8",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_flashback_8": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_flashback_9",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_flashback_9": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_flashback_10",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_flashback_10": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_end_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_end_2": {
         "background": "assets/images/background/room_my.png",
@@ -976,14 +976,14 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night2_end_4_c",
-        "timeOfDay": "day",
+        "timeOfDay": "night",
         "backgroundVariant": "warm"
     },
     "night2_end_4_c": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "morning3_start",
-        "timeOfDay": "day",
+        "timeOfDay": "night",
         "backgroundVariant": "warm"
     },
     "forced_violation_day2_after_seoyeon": {
@@ -1082,7 +1082,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "night2_replied_dain"
         ],
         "next": "night2_hidden_check",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_seo_react_neg": {
         "background": "assets/images/background/room_my.png",
@@ -1096,7 +1096,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "night2_replied_seo"
         ],
         "next": "night2_hidden_check",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night2_reply_yuna_react_neg": {
         "background": "assets/images/background/room_my.png",
@@ -1110,7 +1110,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
             "night2_replied_yuna"
         ],
         "next": "night2_hidden_check",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     }
     };
     for (const scene of Object.values(scenes)) {

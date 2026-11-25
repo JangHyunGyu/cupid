@@ -217,7 +217,7 @@ window.__cupidShowGalleryLoadError = function() {
     if (window.CupidRuntimeSupport && !window.CupidRuntimeSupport.supported) return;
     if (window.CupidGalleryLoaderReady) return;
     const basePath = 'assets/js/';
-    const version = '2.9.389';
+    const version = '2.9.390';
     const LOAD_RETRIES = 3;
     const recoveryKey = 'cupid-gallery-load-recovery:' + window.location.pathname;
 

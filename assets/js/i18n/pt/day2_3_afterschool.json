@@ -658,7 +658,7 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain",
-        "text": "*Ela segura o carrinho de bolas no ginásio.* Pediram para tirar primeiro o material do evento do depósito. A mim disseram para trazer as bolas primeiro. O que você vai conferir primeiro?",
+        "text": "*Assim que saímos da cantina e voltamos ao ginásio, Dain apoia a mão no carrinho de bolas.* Pediram para tirar primeiro o material do evento do depósito. A mim disseram para trazer as bolas primeiro. O que a gente confere primeiro?",
         "context": "Na saída voltaram ao ginásio para devolver o carrinho. Pediram à companhia o material do festival primeiro; Dain ouviu bolas primeiro. Só a ordem diverge, sem acidente nem mentira estabelecida. Com pouco tempo, o protagonista precisa dizer qual pedido vai conferir e quem vai ajudar antes.",
         "personality": "Não invente um acidente grave nem uma mentira maldosa. O ponto não é a solução objetiva de um mistério, mas em quem o protagonista decide acreditar primeiro. Dain cobra uma resposta franca, e a acompanhante não recua para um papel secundário. A resposta pode magoar uma das duas.",
         "groupLocation": "Ginásio",

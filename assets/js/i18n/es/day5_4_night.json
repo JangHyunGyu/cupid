@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Enfermera",
-        "text": "*Entra la luz de la mañana al dormitorio. Al recoger el vaso junto a sus gafas, Juwon se ajusta la camisa blanca amplia al acercarse.* Antes tenías mala cara al medio despertar. Te traje agua y tu pastilla de la mañana."
+        "text": "*La luz de la mañana entra al dormitorio. Al recoger el vaso junto a sus gafas dobladas, Juwon se cierra la camisa blanca y se acerca a la cama.* Antes, al medio despertar, tenías sudor frío. Te traje agua y tus pastillas."
     },
     "nurse_perfect_pills_1": {
         "name": "{name}",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Enfermera",
-        "text": "Son solo suplementos vitamínicos para combatir la fatiga. Como anoche ambos nos esforzamos un poco demasiado",
+        "text": "La rosa es solo para el cansancio. Pero esa pastilla negra de al lado... mejor ni la toques. Menos aún si anoche tuviste una pesadilla.",
         "choices": [
             "Pastilla rosa",
             "Pastilla negra"

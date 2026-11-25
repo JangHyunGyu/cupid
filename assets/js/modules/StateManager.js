@@ -510,14 +510,20 @@ String(((value === null || value === void 0 ? void 0 : value.id)) || value || ''
                 if (Number.isFinite(value)) this.stats[key].affinity = value;
             }
             if (savedAffinityRebalanceVersion < StateManager.AFFINITY_REBALANCE_VERSION) {
-                for (const charKey of StateManager.ROMANCE_CHARACTER_KEYS) {
+                const targetKeys = savedAffinityRebalanceVersion < 1
+                    ? [...StateManager.ROMANCE_CHARACTER_KEYS, 'Haeun']
+                    : ['Haeun'];
+                for (const charKey of targetKeys) {
                     if ((Number((((__oc17 = this.stats[charKey]) === null || __oc17 === void 0 ? void 0 : __oc17.affinity))) || 0) >= 100) this.stats[charKey].affinity = 99;
                 }
             }
         });
         let affinityRebalanced = false;
         if (savedAffinityRebalanceVersion < StateManager.AFFINITY_REBALANCE_VERSION) {
-            for (const charKey of StateManager.ROMANCE_CHARACTER_KEYS) {
+            const targetKeys = savedAffinityRebalanceVersion < 1
+                ? [...StateManager.ROMANCE_CHARACTER_KEYS, 'Haeun']
+                : ['Haeun'];
+            for (const charKey of targetKeys) {
                 if ((Number((((__oc19 = (__oc18 = data.stats) === null || __oc18 === void 0 ? void 0 : __oc18[charKey]) === null || __oc19 === void 0 ? void 0 : __oc19.affinity))) || 0) >= 100) affinityRebalanced = true;
             }
         }
@@ -567,7 +573,7 @@ String(((value === null || value === void 0 ? void 0 : value.id)) || value || ''
         else this.flags[key] = value;
     }
 }
-StateManager.AFFINITY_REBALANCE_VERSION = 1;
+StateManager.AFFINITY_REBALANCE_VERSION = 2;
 StateManager.ROMANCE_CHARACTER_KEYS = Object.freeze(['Seoyeon', 'Yuna', 'Dain', 'Teacher', 'Nurse']);
 
 // ============================================================================

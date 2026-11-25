@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "School Nurse",
-        "text": "*Sunlight filters into the bedroom. Picking up the water glass beside her folded glasses, Juwon gathers her loose white shirt closed as she walks over.* You looked pretty pale when you stirred earlier. Brought water and morning vitamins."
+        "text": "*Morning sunlight filters into the bedroom. Picking up the water glass beside her folded glasses, Juwon draws her white shirt closed and walks to the bedside.* You were breaking into a cold sweat when you stirred earlier. I brought water and your pills."
     },
     "nurse_perfect_pills_1": {
         "name": "{name}",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "School Nurse",
-        "text": "Just a supplement, for the fatigue. We both pushed it a little last night.",
+        "text": "The pink one's just for fatigue. As for that black pill beside it... better not touch it. Especially if last night's dream left you shaken.",
         "choices": [
             "Pink pill",
             "Black pill"

@@ -50,7 +50,7 @@ removes the connective comma. Prompt line `아직 허락을 구한 단계이며 
 | unasked light contact, affinity 0-19 | ≤ -10 (players got -12) | -9 to -5 |
 | light contact at negative affinity / non-romance (Haeun) | ≤ -10 | ≤ -10 (unchanged) |
 | kiss / sexual contact while blocked | ≤ -12 / ≤ -18 | unchanged |
-| Nurse | legacy | legacy (`LEGACY_CONTACT_SCORING_CHARACTERS`) |
+| Nurse | 2026-11-25 unified | requests/apologies + non-contact idioms (Teacher parity, `LEGACY_CONTACT_SCORING_CHARACTERS` empty) |
 
 Hand-holding phrases in en/es/fr/de/pt and Chinese contact cues were added so the same rule applies
 in every language (previously only `hold hands`-style phrases and no Chinese were detected). The
@@ -69,7 +69,7 @@ before the ending, so the pre-ending free-talk budget is 18 × 3 = 54 per charac
 budget a character could only reach 54 if the partner received nothing in every group turn (about 36 in
 practice). The documented maxima are unchanged and now hold for both group participants: Seoyeon 125,
 Yuna 125, Dain 126, Teacher 123, Nurse 123 (authored 71/71/72/69/69 + 54). Haeun was 127 at the time
-(33 turns × 3 + 20 + 8) and is 172 since 2026-11-25 (seven completion bonuses, +45). Gates (Haeun 8/45/100, endings 100/60/40) are unchanged. Group events that open
+(33 turns × 3 + 20 + 8) and is 151 since 2026-11-25 Teacher-parity tuning (seven completion bonuses, +24: +3 pre-gate × 4, +4 post-gate × 3). Gates (Haeun 8/45/100, endings 100/60/40) are unchanged. Group events that open
 with a penalty (Haeun festival -15/-20, Haeun switch -30, Day 5 confrontation -40/-50) still cannot raise a
 route ceiling: one character can regain at most +3 per turn.
 
@@ -95,7 +95,7 @@ are unchanged.
 - Review fixes the same day: `더듬거리며` is only stammering when speech follows (`더듬거리며 대답한다`), so groping
   with `더듬거리며`/`더듬더듬` is still contact; worn items (button, sleeve, glasses) were dropped from the fidgeting
   list; `안고파` is only "not hungry" after 배/밥/속; the French auxiliaries with accents now match.
-- The nurse keeps the legacy contact scoring and cue matching untouched (`안아파요` is still matched for her),
+- As of 2026-11-25, Nurse no longer keeps legacy `-10` / `안아파요` contact matching and uses the exact same Teacher rules (`LEGACY_CONTACT_SCORING_CHARACTERS` is empty), while Haeun keeps `-10`/`-12`/`-18` pre-declaration caps with `NON_CONTACT_IDIOM_CUES` and group other-heroine touch exemptions.
   because that exception is a standing user decision. It is listed as an open item in
   `docs/haeun-balance-20261125.md`.
 

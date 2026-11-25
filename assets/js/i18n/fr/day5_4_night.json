@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Infirmière",
-        "text": "*Le soleil du matin baigne la chambre. Prenant le verre près de ses lunettes posées, Juwon rabat sa large chemise blanche en approchant.* Tu avais petite mine tout à l’heure en te réveillant. J’ai apporté de l’eau et tes vitamines."
+        "text": "*La lumière du matin baigne la chambre. Prenant le verre près de ses lunettes posées, Juwon rabat sa chemise blanche en approchant du lit.* Tu étais couvert de sueur froide tout à l'heure en te réveillant. J'ai apporté de l'eau et tes comprimés."
     },
     "nurse_perfect_pills_1": {
         "name": "{name}",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Infirmière",
-        "text": "C'est juste un complément nutritionnel pour la fatigue. On a tous les deux un peu forcé hier soir.",
+        "text": "Le rose sert juste contre la fatigue. Quant au comprimé noir à côté... mieux vaut ne pas y toucher. Surtout si tes rêves d'hier soir étaient agitants.",
         "choices": [
             "Comprimé rose",
             "Comprimé noir"

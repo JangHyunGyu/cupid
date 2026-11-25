@@ -557,11 +557,11 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Enfermeira",
-        "text": "*A enfermeira aponta com o indicador o código QR pequeno impresso no canto do verso do cartão.*"
+        "text": "*Ela aponta com a ponta do dedo para o código de agendamento impresso no canto do cartão.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Enfermeira",
-        "text": "Escaneia isso e entra no aplicativo da escola. A janela de reserva da consulta abre na hora. Entre a enfermaria e o Wee Class, escolhe o que for mais confortável pra você."
+        "text": "É só abrir esse código no app da escola que a tela de reserva aparece direto. Escolhe a enfermaria ou o Wee Class, o que pesar menos pra você."
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "Enfermeira",

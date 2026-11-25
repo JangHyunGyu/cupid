@@ -114,17 +114,23 @@ class SaveManager {
         if (!gameState || typeof gameState !== 'object') {
             return { changed: false, downgradedCharacters: [], reroutedScene: '' };
         }
-        if ((Number(gameState.affinityRebalanceVersion) || 0) >= SaveManager.AFFINITY_REBALANCE_VERSION) {
+        const prevVersion = Number(gameState.affinityRebalanceVersion) || 0;
+        if (prevVersion >= SaveManager.AFFINITY_REBALANCE_VERSION) {
             return { changed: false, downgradedCharacters: [], reroutedScene: '' };
         }
 
-        const configs = [
+        const v1Configs = [
             { key: 'Teacher', routeFlag: 'homeroom_day5', check: 'hidden_perfect_homeroom_check', pattern: /^(hidden_perfect_homeroom_|date_choice_perfect_teacher|day5_teacher_ending_freetalk_)/ },
             { key: 'Nurse', routeFlag: 'nurse_day5', check: 'hidden_perfect_nurse_check', pattern: /^(hidden_perfect_nurse_|date_choice_perfect_nurse|day5_nurse_ending_freetalk_)/ },
             { key: 'Seoyeon', routeFlag: 'route_seoyeon', check: 'ending_aff_check_seo', pattern: /^(perfect_seo_|perfect_epilogue_.*_seo|date_choice_perfect_seo|day5_seo_ending_freetalk_)/ },
             { key: 'Yuna', routeFlag: 'route_yuna', check: 'ending_aff_check_yuna', pattern: /^(perfect_yuna_|perfect_epilogue_.*_yuna|date_choice_perfect_yuna|day5_yuna_ending_freetalk_)/ },
             { key: 'Dain', routeFlag: 'route_dain', check: 'ending_aff_check_dain', pattern: /^(perfect_dain_|perfect_epilogue_.*_dain|date_choice_perfect_dain|day5_dain_ending_freetalk_)/ }
         ];
+        const haeunConfig = {
+            key: 'Haeun', routeFlag: 'route_haeun', check: 'day5_haeun_romance_check',
+            pattern: /^(day5_ending_haeun(?:$|_epilogue)|day5_haeun_private_|day5_haeun_switch_)/
+        };
+        const configs = prevVersion < 1 ? [...v1Configs, haeunConfig] : [haeunConfig];
         const stats = gameState.stats && typeof gameState.stats === 'object' ? gameState.stats : {};
         const flags = gameState.flags && typeof gameState.flags === 'object' ? gameState.flags : {};
         gameState.flags = flags;
@@ -199,7 +205,7 @@ class SaveManager {
         }
     }
 }
-SaveManager.AFFINITY_REBALANCE_VERSION = 1;
+SaveManager.AFFINITY_REBALANCE_VERSION = 2;
 
 // ============================================================================
 // window 전역 노출

@@ -520,7 +520,7 @@
     },
     "after5_hidden_nurse_mid": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie zeigt auf den QR-Code für Beratungstermine, der auf der Rückseite der Erste-Hilfe-Karte aufgedruckt ist.* Buche hier jederzeit einen Termin, wenn du ihn brauchst. Du musst dir nicht extra einen vorgetäuschten Grund wie Schmerzen ausdenken."
+        "text": "*Sie kritzelt rasch eine Durchwahl auf die Rückseite eines kleinen Medizintütchens und reicht es mir.* Wenn es dir zu viel wird, musst du keine Bauchschmerzen erfinden—ruf einfach hier an. Ich lasse die Tür vom Krankenzimmer auch nach Schulschluss angelehnt."
     },
     "after5_hidden_nurse_low": {
         "name": "Schulkrankenschwester",
@@ -668,7 +668,7 @@
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*Als ich ihr zuerst gestehe, dass ich sie mag, röten sich Haeuns Augen; sie rückt auf der Bank dicht an meine Seite und hält meinen Ärmelsaum fest.* Ich hab dich auch furchtbar gern, Sunbae. Lass uns ab heute zusammen sein. Morgen früh darf ich dich doch auch ohne eine Ausrede wie die Unterlagenkiste rufen, einfach weil ich dich sehen will, oder?"
+        "text": "*Als ich meine Gefühle zuerst ausspreche, rötet sich Haeuns Blick; sie rückt auf der Bank dicht an mich heran und hält unsere Hände fest umschlossen.* Ich habe auch schon so lange nur auf Sie gewartet, Sunbae. Morgen früh brauche ich keine Aktenkiste mehr als Vorwand—darf ich Sie dann einfach ansprechen, weil ich Sie vermisst habe?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",

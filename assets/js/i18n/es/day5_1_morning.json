@@ -557,11 +557,11 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Enfermera",
-        "text": "*Señala con el índice el código QR pequeño impreso en una esquina del reverso de la tarjeta.*"
+        "text": "*Señala con la yema del dedo el código de reserva impreso en una esquina de la tarjeta.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Enfermera",
-        "text": "Si lo escaneas y entras en la app de la escuela, se abre al momento la ventana para reservar la consulta. Eliges entre la enfermería y Wee Class, la que te venga mejor."
+        "text": "Si abres la app del instituto y tocas esto, te lleva directo a la reserva. Elige la enfermería o Wee Class, donde vayas más tranquilo."
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "Enfermera",

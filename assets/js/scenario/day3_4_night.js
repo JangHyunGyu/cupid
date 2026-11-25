@@ -14,7 +14,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "character": null,
         "bgm": "night1.mp3",
         "next": "night3_start_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_start_2": {
         "background": "assets/images/background/room_my.png",
@@ -28,7 +28,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
                 "next": "night3_faithful_check"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_check": {
         "background": "assets/images/background/room_my.png",
@@ -50,7 +50,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
                 "next": "night3_dream_1"
             }
         ],
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_seo_1": {
         "background": "assets/images/background/room_my.png",
@@ -66,7 +66,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             "fallback": "night3_dream_1"
         },
         "next": "night3_faithful_msg_seo_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_seo_2": {
         "background": "assets/images/background/room_my.png",
@@ -77,7 +77,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_faithful_msg_seo_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_seo_3": {
         "background": "assets/images/background/room_my.png",
@@ -88,7 +88,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_dream_1",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_yuna_1": {
         "background": "assets/images/background/room_my.png",
@@ -104,7 +104,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             "fallback": "night3_dream_1"
         },
         "next": "night3_faithful_msg_yuna_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_yuna_2": {
         "background": "assets/images/background/room_my.png",
@@ -115,7 +115,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_faithful_msg_yuna_2_b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_yuna_2_b": {
         "background": "assets/images/background/room_my.png",
@@ -126,7 +126,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_dream_1",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_dain_1": {
         "background": "assets/images/background/room_my.png",
@@ -142,7 +142,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             "fallback": "night3_dream_1"
         },
         "next": "night3_faithful_msg_dain_2",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_dain_2": {
         "background": "assets/images/background/room_my.png",
@@ -153,7 +153,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_faithful_msg_dain_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_msg_dain_3": {
         "background": "assets/images/background/room_my.png",
@@ -164,7 +164,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_dream_1",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_dream_1": {
         "background": "assets/images/background/room_my.png",
@@ -180,43 +180,43 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_2_b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_reflect_2_b": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_2_c",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_reflect_2_c": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_2_d",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_reflect_2_d": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_reflect_3": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_3_b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_reflect_3_b": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_4",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_reflect_4": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_faithful_reflect_4_b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_faithful_reflect_4_b": {
         "next": "night3_faithful_reflect_4_c",
@@ -274,7 +274,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_cheat_msg_3",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_msg_3": {
         "background": "assets/images/background/room_my.png",
@@ -285,7 +285,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_cheat_msg_3_b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_msg_3_b": {
         "background": "assets/images/background/room_my.png",
@@ -296,7 +296,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_cheat_msg_4",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_msg_4": {
         "background": "assets/images/background/room_my.png",
@@ -307,7 +307,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_cheat_msg_4_b",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_msg_4_b": {
         "background": "assets/images/background/room_my.png",
@@ -318,7 +318,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_cheat_msg_5",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_msg_5": {
         "background": "assets/images/background/room_my.png",
@@ -329,7 +329,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_cheat_msg_6",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_msg_6": {
         "background": "assets/images/background/room_my.png",
@@ -340,7 +340,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_cheat_msg_dain_1",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_msg_dain_1": {
         "background": "assets/images/background/room_my.png",
@@ -351,7 +351,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_cheat_msg_7",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_msg_7": {
         "background": "assets/images/background/room_my.png",
@@ -362,7 +362,7 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
             }
         },
         "next": "night3_nightmare_1",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_nightmare_1": {
         "background": "assets/images/background/room_my.png",
@@ -479,31 +479,31 @@ if (!SCENARIO[3]) SCENARIO[3] = {};
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_cheat_reflect_3_c",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_reflect_3_c": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_cheat_reflect_3_d",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_reflect_3_d": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_cheat_reflect_3_e",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_reflect_3_e": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_cheat_reflect_5",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_cheat_reflect_5": {
         "background": "assets/images/background/room_my.png",
         "character": null,
         "next": "night3_nightmare_end_4",
-        "timeOfDay": "day"
+        "timeOfDay": "night"
     },
     "night3_nightmare_end_4": {
         "background": "assets/images/background/room_my.png",

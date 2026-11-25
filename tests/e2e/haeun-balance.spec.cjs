@@ -93,7 +93,7 @@ async function sendGroupTurn(page, input) {
     await page.evaluate(() => window.__haeunBalanceTurn);
 }
 
-test('Day 5 misunderstanding group grants +6 to Haeun only on turn 5 and persists across reload', async ({ page }) => {
+test('Day 5 misunderstanding group grants +3 to Haeun only on turn 5 and persists across reload', async ({ page }) => {
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     await installAiMock(page, body => groupJson(body, { Seoyeon: 1, Haeun: 1 }));
@@ -128,7 +128,7 @@ test('Day 5 misunderstanding group grants +6 to Haeun only on turn 5 and persist
         seoyeon: window.gameEngine.stateManager.getAffinity('Seoyeon'),
         flag: window.gameEngine.stateManager.getFlag('completed_bonus_day5_haeun_seoyeon_group_talk')
     }));
-    expect(afterFinal).toEqual({ haeun: 23, seoyeon: 70, flag: true });
+    expect(afterFinal).toEqual({ haeun: 20, seoyeon: 70, flag: true });
 
     await page.reload({ waitUntil: 'domcontentloaded' });
     await ready(page);
@@ -137,13 +137,13 @@ test('Day 5 misunderstanding group grants +6 to Haeun only on turn 5 and persist
         seoyeon: window.gameEngine.stateManager.getAffinity('Seoyeon'),
         flag: window.gameEngine.stateManager.getFlag('completed_bonus_day5_haeun_seoyeon_group_talk')
     }));
-    expect(persisted).toEqual({ haeun: 23, seoyeon: 70, flag: true });
+    expect(persisted).toEqual({ haeun: 20, seoyeon: 70, flag: true });
     expect(errors).toEqual([]);
 });
 
 for (const { label, extraTurnGain, expectedAffinity, expectedScene } of [
-    { label: 'all +1 turns reach 99 and fall back', extraTurnGain: 1, expectedAffinity: 99, expectedScene: 'day5_haeun_fallback' },
-    { label: 'one +2 turn reaches 100 and unlocks ending', extraTurnGain: 2, expectedAffinity: 100, expectedScene: 'day5_ending_haeun' }
+    { label: 'balanced +2/+1 turns reach 99 and fall back', extraTurnGain: 2, expectedAffinity: 99, expectedScene: 'day5_haeun_fallback' },
+    { label: 'one +3 turning point reaches 100 and unlocks ending', extraTurnGain: 3, expectedAffinity: 100, expectedScene: 'day5_ending_haeun' }
 ]) {
     test(`45-gate post-declaration path: ${label}`, async ({ page }) => {
         test.setTimeout(90000);
@@ -152,10 +152,10 @@ for (const { label, extraTurnGain, expectedAffinity, expectedScene } of [
         page.on('pageerror', e => errors.push(e.message));
         await installAiMock(page, body => {
             if (body.responseSpeakers?.length === 2) {
-                return groupJson(body, { Yuna: -1, Haeun: 1 }, '이해해 보려고 할게요.');
+                return groupJson(body, { Yuna: -1, Haeun: 2 }, '이해해 보려고 할게요.');
             }
             soloCalls += 1;
-            const gain = soloCalls === 6 ? extraTurnGain : 1;
+            const gain = soloCalls <= 5 ? 2 : (soloCalls === 6 ? extraTurnGain : 1);
             return soloJson('이야기해 줘서 고마워요.', gain);
         });
         await installAffinitySeeder(page);
@@ -194,7 +194,7 @@ for (const { label, extraTurnGain, expectedAffinity, expectedScene } of [
             await sendSoloTurn(page, '네가 부담 갖지 않도록 내가 먼저 이야기할게.');
         }
         await page.waitForFunction(() => !window.gameEngine.freeTalkSystem.isFreeTalking);
-        expect(await page.evaluate(() => window.gameEngine.stateManager.getAffinity('Haeun'))).toBe(87);
+        expect(await page.evaluate(() => window.gameEngine.stateManager.getAffinity('Haeun'))).toBe(89);
 
         await page.evaluate(async () => {
             const e = window.gameEngine;
@@ -218,7 +218,7 @@ for (const { label, extraTurnGain, expectedAffinity, expectedScene } of [
     });
 }
 
-test('haeun_freetalk awards +6 completion bonus only on turn 5', async ({ page }) => {
+test('haeun_freetalk awards +3 completion bonus only on turn 5', async ({ page }) => {
     const errors = [];
     page.on('pageerror', e => errors.push(e.message));
     await installAiMock(page, () => soloJson('오늘 말씀 감사해요.', 1));
@@ -250,7 +250,7 @@ test('haeun_freetalk awards +6 completion bonus only on turn 5', async ({ page }
         haeun: window.gameEngine.stateManager.getAffinity('Haeun'),
         flag: window.gameEngine.stateManager.getFlag('completed_bonus_haeun_freetalk')
     }));
-    expect(afterFinal).toEqual({ haeun: 11, flag: true });
+    expect(afterFinal).toEqual({ haeun: 8, flag: true });
     expect(errors).toEqual([]);
 });
 
@@ -297,7 +297,7 @@ test('skipping personal or group FreeTalk grants no completion bonus', async ({ 
     expect(errors).toEqual([]);
 });
 
-test('truncated final reply still awards +6 completion bonus on haeun_freetalk', async ({ page }) => {
+test('truncated final reply still awards +3 completion bonus on haeun_freetalk', async ({ page }) => {
     const errors = [];
     let mode = 'normal';
     page.on('pageerror', e => errors.push(e.message));
@@ -330,7 +330,7 @@ test('truncated final reply still awards +6 completion bonus on haeun_freetalk',
         haeun: window.gameEngine.stateManager.getAffinity('Haeun'),
         flag: window.gameEngine.stateManager.getFlag('completed_bonus_haeun_freetalk')
     }));
-    expect(truncatedResult).toEqual({ turns: 5, haeun: 10, flag: true });
+    expect(truncatedResult).toEqual({ turns: 5, haeun: 7, flag: true });
     expect(errors).toEqual([]);
 });
 
@@ -376,7 +376,7 @@ test('empty final reply rolls back turn without bonus and retries cleanly', asyn
         haeun: window.gameEngine.stateManager.getAffinity('Haeun'),
         flag: window.gameEngine.stateManager.getFlag('completed_bonus_haeun_freetalk')
     }));
-    expect(afterRetry).toEqual({ turns: 5, haeun: 11, flag: true });
+    expect(afterRetry).toEqual({ turns: 5, haeun: 8, flag: true });
     expect(errors).toEqual([]);
 });
 

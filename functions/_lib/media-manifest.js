@@ -343,21 +343,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "background/ending_perfect_haeun": {
-    "version": "9903cd5bf1aa4e4465484b0e",
+    "version": "0ecc9577fc9af9b511ae8f91",
     "files": [
       {
         "path": "assets/images/background/ending_perfect_haeun.png",
-        "key": "images/23e6996fd51578119477ffd43c38b06af1a7e43ccbffcb2e5c11009a5ab0dfc8.png",
-        "sha256": "23e6996fd51578119477ffd43c38b06af1a7e43ccbffcb2e5c11009a5ab0dfc8",
-        "etag": "4282fdd5c2b9dc3e5ac92edc04f5575d",
-        "size": 12238507
+        "key": "images/9fe0cf31ebac9c16b3c6364efe5eb88628b0b34c30df1b57a603f5e5482508cb.png",
+        "sha256": "9fe0cf31ebac9c16b3c6364efe5eb88628b0b34c30df1b57a603f5e5482508cb",
+        "etag": "87e1afabc7878c8c218cddae4231aa14",
+        "size": 5428564
       },
       {
         "path": "assets/images/background/ending_perfect_haeun.webp",
-        "key": "images/65ab7fb8caf059850f7215ee80c28aa35102ee4d366d57cfadcfbe10d9ac1659.webp",
-        "sha256": "65ab7fb8caf059850f7215ee80c28aa35102ee4d366d57cfadcfbe10d9ac1659",
-        "etag": "d2debc3c026e39656c239d4a9f5f7874",
-        "size": 8088188
+        "key": "images/26d297a735591acb246b4e58d35ec48cd8dd0b0f671134c0d5da23ca9a6d564a.webp",
+        "sha256": "26d297a735591acb246b4e58d35ec48cd8dd0b0f671134c0d5da23ca9a6d564a",
+        "etag": "994be6edc68b29efbfa0e6890ff5f083",
+        "size": 3065666
       }
     ]
   },

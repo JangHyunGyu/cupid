@@ -1213,7 +1213,8 @@ test('main state affinity rebalance lowers only legacy 100-point saves once', ()
             Yuna: { affinity: 99 },
             Dain: { affinity: 100 },
             Teacher: { affinity: 42 },
-            Nurse: { affinity: 100 }
+            Nurse: { affinity: 100 },
+            Haeun: { affinity: 100 }
         }
     });
     assert.equal(result.affinityRebalanced, true);
@@ -1222,15 +1223,35 @@ test('main state affinity rebalance lowers only legacy 100-point saves once', ()
     assert.equal(legacy.getAffinity('Dain'), 99);
     assert.equal(legacy.getAffinity('Teacher'), 42);
     assert.equal(legacy.getAffinity('Nurse'), 99);
-    assert.equal(legacy.exportState().affinityRebalanceVersion, 1);
+    assert.equal(legacy.getAffinity('Haeun'), 99);
+    assert.equal(legacy.exportState().affinityRebalanceVersion, 2);
+
+    // v1 -> v2 migration only downgrades Haeun (never touches already-earned Seoyeon/Yuna/Dain/Teacher/Nurse 100).
+    const v1State = new stateWindow.StateManager();
+    const v1Result = v1State.importState({
+        affinityRebalanceVersion: 1,
+        stats: {
+            Seoyeon: { affinity: 100 },
+            Yuna: { affinity: 100 },
+            Teacher: { affinity: 100 },
+            Haeun: { affinity: 100 }
+        }
+    });
+    assert.equal(v1Result.affinityRebalanced, true);
+    assert.equal(v1State.getAffinity('Seoyeon'), 100);
+    assert.equal(v1State.getAffinity('Yuna'), 100);
+    assert.equal(v1State.getAffinity('Teacher'), 100);
+    assert.equal(v1State.getAffinity('Haeun'), 99);
+    assert.equal(v1State.exportState().affinityRebalanceVersion, 2);
 
     const current = new stateWindow.StateManager();
     const currentResult = current.importState({
-        affinityRebalanceVersion: 1,
-        stats: { Seoyeon: { affinity: 100 } }
+        affinityRebalanceVersion: 2,
+        stats: { Seoyeon: { affinity: 100 }, Haeun: { affinity: 100 } }
     });
     assert.equal(currentResult.affinityRebalanced, false);
     assert.equal(current.getAffinity('Seoyeon'), 100);
+    assert.equal(current.getAffinity('Haeun'), 100);
 });
 
 test('Haeun affinity starts at zero, migrates into old saves, resets cleanly, and stays outside ending routes', () => {

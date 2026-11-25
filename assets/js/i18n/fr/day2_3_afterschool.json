@@ -658,7 +658,7 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain",
-        "text": "*Elle tient le chariot de ballons dans le gymnase.* On a demandé de déplacer d'abord le matériel de l'événement depuis la réserve. Moi, on m'a dit de ramener les ballons d'abord. Tu vérifies quoi en premier ?",
+        "text": "*À peine sortis de la boutique pour rejoindre le gymnase, Dain pose la main sur le chariot de ballons.* On a demandé de déplacer d'abord le matériel de l'événement depuis la réserve. Moi, on m'a dit de ramener les ballons d'abord. Tu vérifies quoi en premier ?",
         "context": "Sur le départ, ils sont revenus au gymnase pour rendre le chariot. L’autre personne doit apporter le matériel de la fête d’abord ; Dain a compris les ballons d’abord. Seul l’ordre diverge, sans accident ni mensonge établi. Le temps manque : quelle consigne vérifier et qui aider en premier ?",
         "personality": "N'invente ni accident grave ni mensonge malveillant. L'enjeu n'est pas la solution objective d'un mystère, mais la personne que le protagoniste décide de croire d'abord. Dain réclame une réponse franche et l'autre personnage ne se retire pas dans un rôle secondaire. La réponse peut blesser l'un des deux.",
         "groupLocation": "Gymnase",

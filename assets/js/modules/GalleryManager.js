@@ -76,7 +76,7 @@ class GalleryManager {
         if (!saved) {
             return {
                 version: this.dataVersion,
-                affinityRebalanceVersion: (((__oc0 = window.GalleryData) === null || __oc0 === void 0 ? void 0 : __oc0.AFFINITY_REBALANCE_VERSION)) || 1,
+                affinityRebalanceVersion: (((__oc0 = window.GalleryData) === null || __oc0 === void 0 ? void 0 : __oc0.AFFINITY_REBALANCE_VERSION)) || 2,
                 appliedAffinityCorrections: (((__oc1 = window.CupidAffinityCorrections) === null || __oc1 === void 0 ? void 0 : __oc1.ids())) || [],
                 characters: {},
                 cg: {},
@@ -108,7 +108,7 @@ class GalleryManager {
             // 손상된 데이터는 무시하고 기본 구조 반환
             return {
                 version: this.dataVersion,
-                affinityRebalanceVersion: (((__oc6 = window.GalleryData) === null || __oc6 === void 0 ? void 0 : __oc6.AFFINITY_REBALANCE_VERSION)) || 1,
+                affinityRebalanceVersion: (((__oc6 = window.GalleryData) === null || __oc6 === void 0 ? void 0 : __oc6.AFFINITY_REBALANCE_VERSION)) || 2,
                 appliedAffinityCorrections: (((__oc7 = window.CupidAffinityCorrections) === null || __oc7 === void 0 ? void 0 : __oc7.ids())) || [],
                 characters: {},
                 cg: {},

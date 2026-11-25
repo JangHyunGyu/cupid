@@ -557,11 +557,11 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Schulkrankenschwester",
-        "text": "*Sie legt den Zeigefinger auf den kleinen QR-Code, der in der Ecke auf der Rückseite der Infokarte gedruckt ist.*"
+        "text": "*Sie tippt mit der Fingerspitze auf den kleinen Termincode in der Ecke der Karte.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Schulkrankenschwester",
-        "text": "Wenn du das scannst, öffnet sich in der Schul-App sofort das Fenster zur Beratungsbuchung. Du nimmst die Seite, die dir leichter fällt: Krankenzimmer oder Wee-Class."
+        "text": "Ein Tipp auf das Symbol in der Schul-App öffnet sofort das Terminfenster. Nimm das Krankenzimmer oder Wee-Class—ganz danach, wo du dich wohler fühlst."
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "Schulkrankenschwester",

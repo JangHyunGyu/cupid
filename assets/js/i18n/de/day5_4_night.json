@@ -1255,7 +1255,7 @@
     },
     "nurse_perfect_pills_0": {
         "name": "Schulkrankenschwester",
-        "text": "*Morgenlicht strömt ins Schlafzimmer. Juwon greift nach dem Glas neben ihrer abgelegten Brille und zieht ihr weites weißes Hemd zusammen.* Vorhin sahst du beim Aufwachen ganz blass aus. Ich bringe Wasser und Morgentabletten."
+        "text": "*Morgenlicht strömt ins Schlafzimmer. Juwon greift nach dem Glas neben ihrer abgelegten Brille, zieht ihr weißes Hemd zusammen und tritt ans Bett.* Du hattest vorhin im Halbschlaf kalten Schweiß auf der Stirn. Ich habe dir Wasser und Tabletten gebracht."
     },
     "nurse_perfect_pills_1": {
         "name": "{name}",
@@ -1267,7 +1267,7 @@
     },
     "nurse_perfect_pills_2": {
         "name": "Schulkrankenschwester",
-        "text": "Das sind nur Nahrungsergänzungsmittel gegen Müdigkeit. Wir haben uns gestern Abend beide ein wenig zu sehr verausgabt.",
+        "text": "Die rosa Tablette ist nur gegen Müdigkeit. Aber die schwarze daneben... fass sie lieber nicht an. Erst recht nicht, wenn du letzte Nacht schlecht geträumt hast.",
         "choices": [
             "Rosa Tablette",
             "Schwarze Tablette"

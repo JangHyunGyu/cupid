@@ -47,8 +47,8 @@
         );
     }
 
-    // Contact scoring (2026-10-06, user-approved): requests and apologies are not unilateral contact.
-    const LEGACY_CONTACT_SCORING_CHARACTERS = new Set(['nurse']);
+    // Contact scoring (2026-10-06, updated 2026-11-25): Nurse now uses the same idiom/touch rules as Teacher.
+    const LEGACY_CONTACT_SCORING_CHARACTERS = new Set();
     const CONTACT_POLITE_REQUEST_MIN = -1;
     const CONTACT_LIGHT_ACTION_MAX = -5;
     const CONTACT_LIGHT_ACTION_MIN = -9;

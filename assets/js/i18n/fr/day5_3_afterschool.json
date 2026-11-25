@@ -520,7 +520,7 @@
     },
     "after5_hidden_nurse_mid": {
         "name": "Infirmière",
-        "text": "*L'infirmière pose le doigt, sans un mot, sur le code QR de rendez-vous imprimé au dos de la carte de premiers secours.* Quand tu en as besoin, réserve ici, n'importe quand. Tu n'as pas à inventer exprès un grand prétexte, comme quoi tu serais malade."
+        "text": "*Elle griffonne rapidement un numéro interne au dos d'un petit sachet de comprimés et me le tend.* Si ça devient dur, n'invente pas de faux malaise : appelle ici. Je laisserai la porte de l'infirmerie ouverte même après les cours."
     },
     "after5_hidden_nurse_low": {
         "name": "Infirmière",
@@ -668,7 +668,7 @@
     },
     "day5_ending_haeun": {
         "name": "Haeun",
-        "text": "*Lorsque je lui avoue en premier qu'elle me plaît, les yeux de Haeun rougissent ; elle se rapproche tout contre moi sur le banc et attrape le bord de ma manche.* Moi aussi, je vous aime beaucoup, sunbae. Sortons ensemble à partir d'aujourd'hui. Demain matin, même sans le prétexte d'une caisse de dossiers, je pourrai vous appeler juste parce que j'ai envie de vous voir ?"
+        "text": "*Quand je lui avoue mes sentiments le premier, les yeux de Haeun rougissent ; elle se rapproche contre moi sur le banc et serre nos mains l'une contre l'autre.* Moi aussi, sunbae, je n'attendais que vous depuis bien longtemps. Demain matin, je n'aurai plus besoin de prendre une caisse de dossiers comme excuse : je pourrai venir vous voir juste parce que vous me manquiez ?"
     },
     "day5_ending_haeun_apology_seoyeon": {
         "name": "Haeun",

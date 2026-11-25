@@ -232,7 +232,7 @@ test('a sealed 100-point save stays at 99, and a later committed 100 is kept', (
     assert.equal(first.currentSceneId, 'ending_aff_check_seo');
     assert.equal(first.gameState.flags.ending_perfect, false);
     assert.equal(first.gameState.flags.isDating_Seoyeon, false);
-    assert.equal(first.gameState.affinityRebalanceVersion, 1);
+    assert.equal(first.gameState.affinityRebalanceVersion, 2);
     const second = manager.load();
     assert.equal(second.gameState.stats.Seoyeon.affinity, 99);
     assert.equal(second.currentSceneId, 'ending_aff_check_seo');
@@ -249,4 +249,46 @@ test('a sealed 100-point save stays at 99, and a later committed 100 is kept', (
     const kept = manager.load();
     assert.equal(kept.gameState.stats.Seoyeon.affinity, 100);
     assert.equal(kept.gameState.flags.ending_perfect, true);
+});
+
+test('v1 -> v2 rebalance migration preserves v1 romance 100 scores and downgrades only Haeun 100 -> 99', () => {
+    const data = new Map();
+    const storage = {
+        getItem: key => data.get(key) ?? null,
+        setItem: (key, value) => data.set(key, value),
+        removeItem: key => data.delete(key)
+    };
+    const api = createIntegrity({ storage, crypto: require('node:crypto').webcrypto });
+    const v1State = {
+        playerName: '테스트',
+        currentDay: 5,
+        affinityRebalanceVersion: 1,
+        stats: { Seoyeon: { affinity: 100 }, Haeun: { affinity: 100 } },
+        flags: { route_haeun: true, isDating_Seoyeon: true, isDating_Haeun: true, ending_perfect: true },
+        progressionRunId: '',
+        progressionRevision: 0,
+        freeTalkCheckpoint: null
+    };
+    api.start(v1State);
+    const v1Save = {
+        currentSceneId: 'day5_ending_haeun',
+        currentDay: 5,
+        currentBgUrl: 'assets/images/background/ending_perfect_haeun.png',
+        currentCharacters: {},
+        gameState: clone(v1State)
+    };
+    api.save(v1Save);
+    storage.setItem('cupid_save', JSON.stringify(v1Save));
+    const context = { window: { CupidStorage: storage, CupidProgressIntegrity: api }, console: { log() {}, warn() {}, error() {} } };
+    context.window.window = context.window;
+    vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../assets/js/modules/SaveManager.js'), 'utf8'), context);
+    const manager = new context.window.SaveManager();
+
+    const migratedV2 = manager.load();
+    assert.equal(migratedV2.gameState.stats.Seoyeon.affinity, 100);
+    assert.equal(migratedV2.gameState.flags.isDating_Seoyeon, true);
+    assert.equal(migratedV2.gameState.stats.Haeun.affinity, 99);
+    assert.equal(migratedV2.gameState.flags.isDating_Haeun, false);
+    assert.equal(migratedV2.currentSceneId, 'day5_haeun_romance_check');
+    assert.equal(migratedV2.gameState.affinityRebalanceVersion, 2);
 });

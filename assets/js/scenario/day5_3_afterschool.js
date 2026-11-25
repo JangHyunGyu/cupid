@@ -1457,6 +1457,8 @@ if (!SCENARIO[5]) SCENARIO[5] = {};
     "day5_ending_haeun": {
         "background": "assets/images/background/ending_perfect_haeun.png",
         "character": null,
+        "bgm": "ending.mp3",
+        "timeOfDay": "sunset",
         "next": "day5_ending_haeun_epilogue",
         "setFlags": [
             "route_haeun",

@@ -21,7 +21,8 @@ const CHOICES = {
 const POLICIES = {
     before: { label: '이전(142)', pre: 5, group: 0, declaration: 20, switchGroup: 0, private1: 0, private2: 0 },
     draft: { label: '첫 조정안(175)', pre: 6, group: 6, declaration: 20, switchGroup: 8, private1: 8, private2: 8 },
-    after: { label: '이후(172)', pre: 6, group: 6, declaration: 20, switchGroup: 7, private1: 7, private2: 7 }
+    mid172: { label: '중간(172)', pre: 6, group: 6, declaration: 20, switchGroup: 7, private1: 7, private2: 7 },
+    after: { label: '담임 수준(151)', pre: 3, group: 3, declaration: 20, switchGroup: 4, private1: 4, private2: 4 }
 };
 
 function mulberry32(seed) {
@@ -121,16 +122,16 @@ function main() {
     console.log(`표본 ${RUNS}회. 칸 = 45 게이트 통과율 % / 100 달성률 %. 모든 하은 대화를 끝까지 마친 플레이어 기준.\n`);
     for (const [mode, modeLabel] of modes) {
         console.log(`## 선택: ${modeLabel}\n`);
-        console.log('| 채점 시기 | 입력 길이 | 이전(142) | 첫 조정안(175) | 이후(172) | 이후, 감점 턴 없음 |');
+        console.log('| 채점 시기 | 입력 길이 | 이전(142) | 중간(172) | 담임 수준(151) | 담임 수준, 감점 턴 없음 |');
         console.log('| --- | --- | --- | --- | --- | --- |');
         for (const [regime, regimeLabel] of regimes) {
             for (const [tier, tierLabel] of tiers) {
-                console.log(`| ${regimeLabel} | ${tierLabel} | ${rate(regime, tier, POLICIES.before, mode, false)} | ${rate(regime, tier, POLICIES.draft, mode, false)} | ${rate(regime, tier, POLICIES.after, mode, false)} | ${rate(regime, tier, POLICIES.after, mode, true)} |`);
+                console.log(`| ${regimeLabel} | ${tierLabel} | ${rate(regime, tier, POLICIES.before, mode, false)} | ${rate(regime, tier, POLICIES.mid172, mode, false)} | ${rate(regime, tier, POLICIES.after, mode, false)} | ${rate(regime, tier, POLICIES.after, mode, true)} |`);
             }
         }
         console.log('');
     }
-    console.log('## 민감도: 이후(172), 현재 채점기\n');
+    console.log('## 민감도: 담임 수준(151), 현재 채점기\n');
     console.log('| 입력 길이 | 선택 | 기준 | 게이트 전 -10 한 번(10번째 턴) | 3일차 보너스 놓침 | 마지막 보너스 놓침 | 선언 뒤 턴을 그룹 풀로 |');
     console.log('| --- | --- | --- | --- | --- | --- | --- |');
     for (const [tier, tierLabel] of [['attentive', '31~80자'], ['devoted', '81자 이상']]) {

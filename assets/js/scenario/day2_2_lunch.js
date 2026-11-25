@@ -567,10 +567,7 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_end_l": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "branches": [
-            { "condition": "nurse_day1", "next": "lunch2_dain_end_nurse_short1" },
-            { "next": "lunch2_dain_end_m" }
-        ]
+        "next": "lunch2_dain_end_m"
     },
     "lunch2_dain_end_m": {
         "background": "assets/images/background/nurse_room.png",
@@ -643,7 +640,10 @@ if (!SCENARIO[2]) SCENARIO[2] = {};
     "lunch2_dain_end_c2": {
         "background": "assets/images/background/nurse_room.png",
         "character": "assets/images/characters/nurse_normal.png",
-        "next": "after2_start"
+        "branches": [
+            { "condition": "nurse_day1", "next": "lunch2_dain_end_nurse_short1" },
+            { "next": "after2_start" }
+        ]
     },
     "lunch2_dain_end_nurse_short1": {
         "background": "assets/images/background/nurse_room.png",

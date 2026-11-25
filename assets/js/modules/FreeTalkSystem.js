@@ -70,9 +70,9 @@ const cupidTruncateLatestUserText = CupidFreeTalkCore.truncateLatestUserText;
 const cupidFindLatestUserText = CupidFreeTalkCore.findLatestUserText;
 const GROUP_FREE_TALK_SKIP_AFFINITY_PENALTY = -20;
 const GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX = 3;
-// 하은 대화 완료 보너스(2026-11-25): 45 게이트 전 네 장면은 +6, 선언 뒤 세 장면은 +7.
-const HAEUN_PRE_GATE_COMPLETION_BONUS = 6;
-const HAEUN_POST_GATE_COMPLETION_BONUS = 7;
+// 하은 대화 완료 보너스(2026-11-25): 담임 난이도(~1.45~1.50/턴)에 맞춰 45 게이트 전 네 장면은 +3, 선언 뒤 세 장면은 +4.
+const HAEUN_PRE_GATE_COMPLETION_BONUS = 3;
+const HAEUN_POST_GATE_COMPLETION_BONUS = 4;
 const HAEUN_PRE_GATE_PERSONAL_SCENE_IDS = Object.freeze([
     'haeun_freetalk',
     'day4_haeun_personal',

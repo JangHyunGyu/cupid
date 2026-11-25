@@ -658,7 +658,7 @@
     },
     "after2_group_dain_companion": {
         "name": "Dain",
-        "text": "*Sie hält den Ballwagen in der Sporthalle fest.* Die Veranstaltungssachen sollen zuerst aus dem Lager geholt werden. Mir wurde gesagt, ich soll zuerst die Bälle holen. Was prüfst du zuerst?",
+        "text": "*Kaum sind wir vom Kiosk zurück in der Sporthalle, stützt Dain eine Hand auf den Ballwagen.* Die Veranstaltungssachen sollen zuerst aus dem Lager geholt werden. Mir wurde gesagt, ich soll zuerst die Bälle holen. Was prüfen wir zuerst?",
         "context": "Auf dem Heimweg kehrten sie zur Halle zurück, um den Wagen abzugeben. Die Begleitung sollte zuerst Festmaterial bringen, Dain zuerst Bälle. Nur die Reihenfolge widerspricht sich; kein Unfall oder Lügner steht fest. Bei knapper Zeit muss der Spieler sagen, wessen Anweisung er zuerst prüft und wem er hilft.",
         "personality": "Erfinde weder einen schweren Unfall noch eine böswillige Lüge. Es geht nicht um die objektive Lösung eines Rätsels, sondern darum, wem der Protagonist zuerst glaubt. Dain verlangt offen eine Antwort, und die Begleitung zieht sich nicht in eine Nebenrolle zurück. Die Antwort darf eine der beiden verletzen.",
         "groupLocation": "Turnhalle",

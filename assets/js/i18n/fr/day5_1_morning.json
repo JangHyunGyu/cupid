@@ -557,11 +557,11 @@
     },
     "hidden_nurse_d5_choice_b_b": {
         "name": "Infirmière",
-        "text": "*De l'index, elle montre le petit code QR imprimé dans un coin, au dos de la carte.*"
+        "text": "*Elle tapote du bout du doigt le code de rendez-vous imprimé dans le coin de la carte.*"
     },
     "hidden_nurse_d5_choice_b_c": {
         "name": "Infirmière",
-        "text": "Tu scannes ça et tu entres dans l'application du lycée : la fenêtre de rendez-vous s'ouvre tout de suite. Tu choisis ce qui t'arrange, l'infirmerie ou le service d'écoute."
+        "text": "Un seul scan dans l'application du lycée ouvre directement la prise de rendez-vous. Choisis l'infirmerie ou le bureau d'écoute, là où tu te sens le plus à l'aise."
     },
     "hidden_nurse_d5_choice_b_d": {
         "name": "Infirmière",
