@@ -28,7 +28,7 @@ function jsonResponse(status, body) {
     };
 }
 
-test('Cupid tools prefer DeepInfra fp4 Turbo with Venice fp4 fallback', async () => {
+test('Cupid tools prefer Venice fp4 with DeepInfra fp4 Turbo fallback', async () => {
     const calls = [];
     const text = await callDeepSeek('hello', {
         openRouterApiKey: 'or-test',
@@ -43,10 +43,10 @@ test('Cupid tools prefer DeepInfra fp4 Turbo with Venice fp4 fallback', async ()
     assert.equal(calls[0].url, OPENROUTER_ENDPOINT);
     assert.equal(calls[0].body.model, OPENROUTER_MODEL);
     assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
-    assert.equal(OPENROUTER_GEMMA_PROVIDER, 'deepinfra/turbo');
+    assert.equal(OPENROUTER_GEMMA_PROVIDER, 'venice/fp4');
     assert.deepEqual(calls[0].body.provider, {
-        order: ['deepinfra/turbo', 'venice/fp4'],
-        only: ['deepinfra/turbo', 'venice/fp4'],
+        order: ['venice/fp4', 'deepinfra/turbo'],
+        only: ['venice/fp4', 'deepinfra/turbo'],
         quantizations: ['fp4'],
         allow_fallbacks: false,
         require_parameters: true,
@@ -87,8 +87,8 @@ test('Cupid default route fails after the allowed providers are exhausted withou
     }), /Text model routes exhausted/);
     assert.equal(calls.length, 1);
     assert.equal(calls[0].body.model, OPENROUTER_GEMMA_MODEL);
-    assert.deepEqual(calls[0].body.provider.order, ['deepinfra/turbo', 'venice/fp4']);
-    assert.deepEqual(calls[0].body.provider.only, ['deepinfra/turbo', 'venice/fp4']);
+    assert.deepEqual(calls[0].body.provider.order, ['venice/fp4', 'deepinfra/turbo']);
+    assert.deepEqual(calls[0].body.provider.only, ['venice/fp4', 'deepinfra/turbo']);
     assert.equal(calls[0].body.provider.allow_fallbacks, false);
 });
 
@@ -134,8 +134,8 @@ test('Cupid direct tools keep model-native protocols behind isolated adapters', 
 
     const gemmaPayload = { model: OPENROUTER_GEMMA_MODEL };
     gemma.applyPayload(gemmaPayload, { wantsJson: true });
-    assert.deepEqual(gemmaPayload.provider.order, ['deepinfra/turbo', 'venice/fp4']);
-    assert.deepEqual(gemmaPayload.provider.only, ['deepinfra/turbo', 'venice/fp4']);
+    assert.deepEqual(gemmaPayload.provider.order, ['venice/fp4', 'deepinfra/turbo']);
+    assert.deepEqual(gemmaPayload.provider.only, ['venice/fp4', 'deepinfra/turbo']);
     assert.deepEqual(gemmaPayload.provider.quantizations, ['fp4']);
     assert.equal(gemmaPayload.provider.allow_fallbacks, false);
     assert.deepEqual(gemmaPayload.response_format, { type: 'json_object' });
