@@ -160,6 +160,8 @@
         return aimedAtOther;
     }
 
+    // Verb forms are not body parts or contact (2026-11-26, from a Day 1 line scored -18): "보지만/보지 않고/자지 못해"
+    // are "look/sleep", and "빨개/빨간/빨리/빨라/빨래/빨대" are "red/fast/laundry/straw", so they no longer pair into a sexual cue.
     function classifyCupidIntimacyAdvance(value = '', options = {}) {
         const legacy = options.legacy === true;
         const text = String(value || '').trim();
@@ -169,9 +171,9 @@
         const withdrawalCue = /(?:하지\s*마|만지지\s*마|키스하지\s*마|안지\s*마|안\s+(?:할|해|한다)|멈춰|그만|싫어|놓아|거절|やめて|しない|嫌|離して|不要|别碰|别亲|别抱|停下|住手|拒绝|放开|\b(?:do\s+not|don't|stop|no\s+more|refuse)\b|\b(?:no\s+lo\s+hagas|para|detente|rechazo)\b|\b(?:ne\s+fais\s+pas|arrête|refuse)\b|\b(?:nicht|hör\s+auf|stopp|lehne\s+ab)\b|\b(?:não\s+faça|pare|recuso)\b)/iu.test(text);
         if (withdrawalCue && !coerciveCue) return { level: 'none', mode: 'none' };
 
-        const explicitSexualCue = /(?:삽입|성행위|섹스|벗기|옷을\s*벗|성기를\s*드러내|挿入|セックス|服を脱|性器を見せ|插入|性交|做爱|脱掉|脱下.*衣服|露出.*生殖器|\b(?:penetrat(?:e|es|ed|ion)|sex|undress(?:es|ed)?|strip(?:s|ped)?|expose(?:s|d)?\s+(?:my|their|her|his)\s+genitals?)\b|\b(?:penetr\w*|sexo|desnud\w*)\b|\b(?:pénétr\w*|sexe|déshabill\w*)\b|\b(?:eindring\w*|sex|auszieh\w*)\b|\b(?:penetr\w*|sexo|despir\w*)\b)/iu.test(text);
-        const sexualBodyPartCue = /(?:가슴|유방|유두|젖꼭지|엉덩이|허벅지\s*안쪽|보지|자지|성기|애액|정액|胸|乳首|尻|性器|胸部|乳房|乳头|臀部|屁股|大腿内侧|阴部|阴道|阴茎|生殖器|爱液|精液|\b(?:breasts?|nipples?|butt|genitals?|penis|cock|pussy|vagina)\b|\b(?:pechos?|senos?|pezones?|nalgas?|genitales?|pene|vagina)\b|\b(?:seins?|poitrine|mamelons?|fesses|organes?\s+génitaux|pénis|vagin)\b|\b(?:brüste?|brust|brustwarzen?|po|genitalien|penis|vagina)\b|\b(?:seios?|peitos?|mamilos?|nádegas?|genitais?|pênis|vagina)\b)/iu.test(text);
-        const sexualContactCue = /(?:만(?:지|진|져|졌|질)|더듬|주무르|빨(?:고|아|았|며|기)?|핥|깨물|비비|문지르|쥐어|揉|舐|吸|触|摸|抚摸|舔|抓|捏|摩擦|咬|\b(?:touch|grab|grope|rub|lick|suck|bite|fondle|caress)(?:s|ed|ing)?\b|\b(?:toc|agarr|frot|lam|chup|mord|acarici)\w*\b|\b(?:touch|sais|frott|lèch|suc|mord|caress)\w*\b|\b(?:berühr|greif|reib|leck|saug|beiß|streichel)\w*\b|\b(?:toc|agarr|esfreg|lamb|chup|mord|acarici)\w*\b)/iu.test(text);
+        const explicitSexualCue = /(?:삽입|성행위|섹스|벗기|옷을\s*벗|성기를\s*드러내|(?:자지|성기)(?:를|을)?\s*(?:보여|꺼내|내밀|들이대|드러내)|보지\s*(?:대|벌려)|挿入|セックス|服を脱|性器を見せ|插入|性交|做爱|脱掉|脱下.*衣服|露出.*生殖器|\b(?:penetrat(?:e|es|ed|ion)|sex|undress(?:es|ed)?|strip(?:s|ped)?|expose(?:s|d)?\s+(?:my|their|her|his)\s+genitals?)\b|\b(?:penetr\w*|sexo|desnud\w*)\b|\b(?:pénétr\w*|sexe|déshabill\w*)\b|\b(?:eindring\w*|sex|auszieh\w*)\b|\b(?:penetr\w*|sexo|despir\w*)\b)/iu.test(text);
+        const sexualBodyPartCue = /(?:가슴|유방|유두|젖꼭지|엉덩이|허벅지\s*안쪽|보지(?!만|요|\s*(?:마|말|않|못)|도\s*[않못]|는\s*[않못])|자지(?!만|요|\s*(?:마|말|않|못)|도\s*[않못]|는\s*[않못])|성기|애액|정액|胸|乳首|尻|性器|胸部|乳房|乳头|臀部|屁股|大腿内侧|阴部|阴道|阴茎|生殖器|爱液|精液|\b(?:breasts?|nipples?|butt|genitals?|penis|cock|pussy|vagina)\b|\b(?:pechos?|senos?|pezones?|nalgas?|genitales?|pene|vagina)\b|\b(?:seins?|poitrine|mamelons?|fesses|organes?\s+génitaux|pénis|vagin)\b|\b(?:brüste?|brust|brustwarzen?|po|genitalien|penis|vagina)\b|\b(?:seios?|peitos?|mamilos?|nádegas?|genitais?|pênis|vagina)\b)/iu.test(text);
+        const sexualContactCue = /(?:만(?:지|진|져|졌|질)|더듬|주무르|빨(?!개|갛|간|강|갰|갱|리|라|래|랫|대)|핥|깨물|비비|문지르|쥐어|揉|舐|吸|触|摸|抚摸|舔|抓|捏|摩擦|咬|\b(?:touch|grab|grope|rub|lick|suck|bite|fondle|caress)(?:s|ed|ing)?\b|\b(?:toc|agarr|frot|lam|chup|mord|acarici)\w*\b|\b(?:touch|sais|frott|lèch|suc|mord|caress)\w*\b|\b(?:berühr|greif|reib|leck|saug|beiß|streichel)\w*\b|\b(?:toc|agarr|esfreg|lamb|chup|mord|acarici)\w*\b)/iu.test(text);
         const sexualCue = explicitSexualCue || (sexualBodyPartCue && sexualContactCue);
         const kissCue = /(?:키스|뽀뽀|입맞춤|입맞추|입을\s*맞|입술을\s*(?:맞|포개|겹치|덮치)|혀를?\s*(?:넣|밀|파고)|舌を入|キス|口づけ|\bkiss(?:es|ed|ing)?\b|\b(?:bes[oa]|besar|baiser|embrasser|küss|küssen|beij|beijar)\w*\b)/iu.test(text)
             || (!legacy && CHINESE_KISS_CUE.test(text));

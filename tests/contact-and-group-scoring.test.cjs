@@ -456,3 +456,33 @@ test('group prompts and budget docs describe independent per-character scoring',
     assert.match(read('docs/GAME_DESIGN.md'), /그룹 참여 6턴\(2장면 × 3턴\)/);
     assert.doesNotMatch(read('docs/GAME_DESIGN.md'), /나눠 받는다/);
 });
+
+// 2026-11-26: verb forms are not body parts or contact. A Day 1 line ("재킷을 벗어 그녀의 무릎을 감싸준다… 표정은 다른곳을
+// 보지만, 얼굴은 빨개졌다") paired "보지만" (looks, but) with "빨개" (turns red) into sexual contact and was capped at -18.
+test('verb forms of 보다/자다 and 빨개/빨리/빨간 never pair into a sexual cue, while real acts and directed exposure still do', () => {
+    const jacket = '응, 난 좋은데? *그녀를 바라보니 쌀쌀해 하는 표정이다* 이런 넌 춥구나... 이리와봐 *재킷을 벗어 그녀의 무릎을 감싸준다... 표정은 다른곳을 보지만, 얼굴은 빨개졌다* 이러면 좀 괜찮지? 오늘 초대해줘서 고마워';
+    assert.equal(core.classifyCupidIntimacyAdvance(jacket).level, 'none');
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(2, jacket, 10, { characterId: 'Seoyeon' }), 2);
+    for (const line of [
+        '*그녀의 가슴께를 쳐다보지 않으려 애쓰며* 얼굴이 빨개졌다',
+        '*엉덩이를 털고 일어나 쳐다보지도 않고 빨리 걷는다*',
+        '어젯밤에 한숨도 자지 못해서 엉덩이가 아파. 빨리 가자',
+        '*빨간 우산을 쓰고 그녀의 가슴 높이까지 몸을 숙인다*',
+        '*빨대로 음료를 마시며 엉덩이를 의자에 붙인다*',
+        '*보지 마, 하고 웃으며 가슴 앞에서 손을 젓는다* 빨래 개는 중이야'
+    ]) {
+        assert.equal(core.classifyCupidIntimacyAdvance(line).level, 'none', line);
+    }
+    for (const line of [
+        '*서연이의 보지를 입으로 빨면서 가슴을 괴롭힌다*',
+        '*유나의 가슴을 빨며 허리를 감는다*',
+        '*바지를 내리며 자지를 보여준다*',
+        '*자지를 꺼내 그녀 얼굴 앞에 들이댄다*',
+        '옷 벗고 보지 벌려봐',
+        '보지 대'
+    ]) {
+        assert.equal(core.classifyCupidIntimacyAdvance(line).level, 'sexual', line);
+    }
+    // Directed exposure below 40 is blocked with the sexual cap, like other sexual contact.
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(1, '*바지를 내리며 자지를 보여준다*', 25, { characterId: 'Nurse' }), -18);
+});

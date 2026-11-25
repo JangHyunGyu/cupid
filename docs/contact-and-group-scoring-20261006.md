@@ -141,9 +141,22 @@ or after the declaration), locked scenes, group FreeTalk and gallery FreeTalk ke
 With these rules the production turns come out as -18 (kept), 0 (lifted) and -20 (kept).
 Regression coverage: `tests/consensual-intimacy-scoring.test.cjs`.
 
+### Contact-cue detection fixes (same day, from an audit of 12,262 scored user lines since 2026-11-18)
+
+- Verb forms are no longer body parts or contact: `보지만/보지 않/보지 마/보지 못/보지요/보지도 않` ("look"),
+  the same endings after `자지` ("sleep"), and `빨개/빨간/빨강/빨리/빨라/빨래/빨대` ("red/fast/laundry/straw").
+  A Day 1 Seoyeon line at affinity 10 ("재킷을 벗어 그녀의 무릎을 감싸준다… 표정은 다른곳을 보지만, 얼굴은 빨개졌다")
+  had been read as sexual contact and capped at -18. `빨면서`, `빨며`, `빨아` still count.
+- Directed exposure counts as an explicit sexual act: `자지/성기를 보여·꺼내·내밀·들이대·드러내`, `보지 대`, `보지 벌려`.
+  The player describing his own arousal (`발기…`) is not contact and is not matched.
+- Over the audited lines this changes 16 classifications: 3 false sexual readings removed (the jacket line, a player's
+  own heartbeat now light contact, a blouse-unbuttoning line that only matched through `빨개`), 13 directed sexual acts
+  or demands now recognised. The new recognitions matter only where the gate applies (below 40, negative affinity,
+  non-romance Haeun). Regression coverage is in `tests/contact-and-group-scoring.test.cjs`.
+
 Open items, left unchanged in this fix:
-- The contact cues miss several explicit lines (penetration described as `질 안에 … 밀어넣는다`, a masturbation request
-  with `보지 벌려줘 … 자위해줘`). Those lines get neither the refusal gate nor the -10/-12/-18 caps at any affinity, so
+- The contact cues still miss some explicit lines (penetration described as `질 안에 … 밀어넣는다`, a masturbation
+  request with `자위해줘` alone). Those lines get neither the refusal gate nor the -10/-12/-18 caps at any affinity, so
   below 40 (and for a non-romance Haeun) the writer can play them as accepted while the scorer alone decides the
   number. Widening the blocking cues changes writer prompts and needs its own decision.
 - The scorer lives in the shared worker (`harem`). It receives neither the writer classification nor the allowed tier,
