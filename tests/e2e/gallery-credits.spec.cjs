@@ -44,7 +44,7 @@ for(const lang of ['ko','en','ja','es','fr','de','pt','zh'])for(const [width,hei
   const pill=page.locator('.cupid-gallery-balance');await expect(pill).toBeVisible();await pill.click();
   const dialog=page.locator('.cupid-gallery-credit-dialog');await expect(dialog).toBeVisible();
   const box=await dialog.boundingBox();expect(box.x).toBeGreaterThanOrEqual(0);expect(box.y).toBeGreaterThanOrEqual(0);expect(box.x+box.width).toBeLessThanOrEqual(width+1);expect(box.y+box.height).toBeLessThanOrEqual(height+1);
-  await page.screenshot({path:info.outputPath('balance-dialog.png')});await dialog.locator('button').click();
+  await page.screenshot({path:info.outputPath('balance-dialog.png')});await dialog.locator('.harem-credit-close').click();
   await page.evaluate(async()=>{document.getElementById('chat-input').value='Hello, how was your day?';await galleryFreeTalk._handleSend();});
   await page.waitForFunction(()=>CupidGalleryCredits.wallet?.balance===990);expect(calls.length).toBe(1);
   expect(calls[0].headers['x-cache-key']).toMatch(/^cupid-gft:ctx:/);expect(balances.guest).toBe(990);

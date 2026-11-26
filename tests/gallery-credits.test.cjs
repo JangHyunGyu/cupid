@@ -1,17 +1,19 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
 function fixture(){
- const listeners={},requests=[],nodes=[];let balance=1000,pendingOnce=false;
- const createElement=tag=>{const el={tag,children:[],setAttribute(){},append(...items){this.children.push(...items);},remove(){this.removed=true;},showModal(){this.open=true;},close(){this.open=false;},focus(){}};nodes.push(el);return el;};
+ const listeners={},requests=[],nodes=[];let balance=1000,pendingOnce=false,attendanceClaimed=false;
+ const createElement=tag=>{const el={tag,children:[],className:'',textContent:'',setAttribute(){},append(...items){this.children.push(...items);},remove(){this.removed=true;},showModal(){this.open=true;},close(){this.open=false;},focus(){}};nodes.push(el);return el;};
  const root={GAME_LANG:'ko',archerlabAccount:{ready:Promise.resolve(),user:null},addEventListener:(name,fn)=>listeners[name]=fn};
  const document={documentElement:{lang:'ko'},createElement,head:createElement('head'),body:createElement('body'),querySelectorAll:()=>[],querySelector:()=>null};
+ const makeWallet=()=>({owner:root.archerlabAccount.user?'al:member':'gu:browser',kind:root.archerlabAccount.user?'account':'guest',balance,price:10,movePrice:10,dailyEarned:40,dailyLimit:root.archerlabAccount.user?1000:300,dailyRemaining:root.archerlabAccount.user?960:260,roomFreeLimit:30,roomFreeRemaining:18,resetAt:'2026-11-27T00:00:00+09:00',attendanceClaimed,attendanceAmount:root.archerlabAccount.user?200:100});
  const fetch=async(url,init={})=>{
   const u=new URL(url),body=JSON.parse(init.body||'{}');requests.push({path:u.pathname,body,headers:new Headers(init.headers),signal:init.signal});
   if(u.pathname==='/api/status')return Response.json({user:root.archerlabAccount.user,csrf:'csrf'});
   if(u.pathname==='/api/session/start')return Response.json({request:'request',state:'state'});
   if(u.pathname==='/api/sso')return Response.json({code:'code'});
   if(u.pathname==='/api/session')return Response.json({user_id:body.guest?'gu:browser':'al:member',token:body.guest?'guest-token':'member-token',expires_at:Date.now()+3600000});
-  if(u.pathname==='/api/credits')return Response.json({owner:root.archerlabAccount.user?'al:member':'gu:browser',balance,price:10});
+  if(u.pathname==='/api/credits')return Response.json(makeWallet());
+  if(u.pathname==='/api/credits/attendance'){attendanceClaimed=true;const amt=root.archerlabAccount.user?200:100;balance+=amt;return Response.json({amount:amt,wallet:makeWallet()});}
   if(u.pathname==='/api/credits/cancel')return Response.json({ok:true});
   if(u.pathname==='/api/credits/chat'){
    if(pendingOnce){pendingOnce=false;return Response.json({error:'CREDIT_PENDING'},{status:409});}
@@ -19,7 +21,7 @@ function fixture(){
   }throw new Error(url);
  };
  vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/js/gallery-credits.js'),'utf8'),{window:root,document,fetch,Headers,Response,Request,ReadableStream,AbortController,AbortSignal,DOMException,Intl,Date,setTimeout,clearTimeout,console});
- return {api:root.CupidGalleryCredits,root,listeners,requests,nodes,setBalance:value=>balance=value,setPending:()=>pendingOnce=true};
+ return {api:root.CupidGalleryCredits,root,listeners,requests,nodes,body:document.body,setBalance:value=>balance=value,setPending:()=>pendingOnce=true};
 }
 test('gallery preflight blocks insufficient funds and keeps the draft outside the request path',async()=>{
  const f=fixture();assert.equal(await f.api.beforeSend(),true);f.setBalance(0);assert.equal(await f.api.beforeSend(),false);
@@ -71,4 +73,25 @@ test('chat-logs outbox attaches viewerIdentityProof from HaremLogIdentity and pr
  const u3=logRequests.find(r=>r.body.clientMsgId==='u3');
  assert.equal(u2.body.viewerIdentityProof,undefined);
  assert.equal(u3.body.viewerIdentityProof,'member-token');
+});
+test('gallery modal renders full 8-locale Harem parity with attendance check-in, progress bar, guest bonus, and renewed notice copy',async()=>{
+ const flatten=el=>[el.textContent||'',...(el.children||[]).map(flatten)].join('\n');
+ for(const lang of ['ko','en','ja','es','fr','de','pt','zh']){
+  const f=fixture();f.root.GAME_LANG=lang;await f.api.refresh();f.api.open();
+  const dlg=f.nodes.find(n=>n.tag==='dialog'&&String(n.className).includes('cupid-gallery-credit-dialog'));
+  assert.ok(dlg&&dlg.open,`${lang}: gallery dialog opens`);
+  const txt=flatten(dlg);
+  assert.ok(txt.includes('40')&&txt.includes('300'),`${lang}: public-room progress bar shown`);
+  assert.ok(txt.includes('700'),`${lang}: guest +700 login bonus card shown`);
+  assert.ok(!/\{\w+\}/.test(txt)&&!txt.includes('undefined'),`${lang}: no unfilled placeholders`);
+  if(lang!=='ko')assert.ok(!/[\uAC00-\uD7AF]/.test(txt),`${lang}: no Hangul in non-ko modal`);
+ }
+ const ko=fixture();await ko.api.refresh();ko.api.open();
+ const attBtn=ko.nodes.find(n=>n.dataset&&n.dataset.attendance==='true');
+ await attBtn.onclick();
+ const confirmBtn=ko.nodes.find(n=>n.tag==='button'&&n.textContent==='확인');
+ assert.ok(confirmBtn,'attendance confirmation button rendered');
+ await confirmBtn.onclick();
+ assert.equal(ko.api.wallet.balance,1100);
+ assert.equal(ko.api.wallet.attendanceClaimed,true);
 });

@@ -2177,7 +2177,7 @@ String((((__oc50 = (__oc49 = root.archerlabAccount) === null || __oc49 === void 
                 const fp = await (((__oc56 = (__oc55 = root.AiBrowserProof) === null || __oc55 === void 0 ? void 0 : __oc55.fingerprint) === null || __oc56 === void 0 ? void 0 : __oc56.call(__oc55)));
                 const headers = { Authorization: 'Bearer ' + value.token };
                 if (fp) headers['X-Device-Fp'] = fp;
-                void fetch(base + '/api/credits', { headers, credentials: 'include', cache: 'no-store', signal: AbortSignal.timeout(15000) }).catch(() => {});
+                await fetch(base + '/api/credits', { headers, credentials: 'include', cache: 'no-store', signal: AbortSignal.timeout(15000) }).catch(() => {});
                 return session;
             })().finally(() => { if (version === epoch) pending = null; });
             return pending;

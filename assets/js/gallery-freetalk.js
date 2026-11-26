@@ -1477,7 +1477,7 @@ window.saveCupidChatLog({
                 if (charImg) charImg.classList.remove('thinking');
                 if (dialogueBox) dialogueBox.classList.remove('thinking-box');
                 document.querySelectorAll('.thinking-indicator').forEach(el => el.remove());
-                (((__oc73 = (__oc72 = window.CupidCredits) === null || __oc72 === void 0 ? void 0 : __oc72.refreshBalance) === null || __oc73 === void 0 ? void 0 : __oc73.call(__oc72).catch(() => { })));
+                (((__oc73 = (__oc72 = window.CupidGalleryCredits) === null || __oc72 === void 0 ? void 0 : __oc72.refresh) === null || __oc73 === void 0 ? void 0 : __oc73.call(__oc72).catch(() => { })));
                 err.__staleTurnHandled = true;
             }
             if (!((err === null || err === void 0 ? void 0 : err.__staleTurnHandled))) {
