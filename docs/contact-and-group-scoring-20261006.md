@@ -174,7 +174,10 @@ in front of an insult cost nothing, and in a group each heroine's jealousy over 
 - User instruction "다 공통으로": harem public rooms (Cupid room affinity and Blind Spot character obsession) ask the same
   `reaction_<n>` / `withoutact_<n>` questions. The room's reply-text `consensual_pleasure_guard`, which read welcoming
   lines such as "그만큼 기다렸어" or "やめないで" as refusals, was replaced by this shared decision. School standing and
-  player-to-player scores are unchanged. Room requests are split to at most 19 questions.
+  player-to-player scores are unchanged. Room requests are split to at most 19 questions. The Azure-only
+  `azure_consensual_intimacy_guard` post-processing was removed too (it could also erase Haeun's and other conduct's
+  penalties). When the room server confirmed that the character physically fought the user off in that turn
+  (`autoDefendedChar`), the question is not asked and the penalty stays.
 - The forced-violation aftermath scene is unchanged by user instruction ("인위적인 후처리는 하지마").
 
 ### Contact-cue detection fixes (same day, from an audit of 12,262 scored user lines since 2026-11-18)
