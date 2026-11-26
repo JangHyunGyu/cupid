@@ -163,6 +163,20 @@ in front of an insult cost nothing, and in a group each heroine's jealousy over 
   to refuse a kiss meant for someone else. Haeun keeps her 2026-11-25 rule: before the declaration only a light touch
   named for someone else is exempt, and no reaction ever skips her cap.
 
+### Rule removal and public rooms (same day)
+
+- User instruction: the scorer sentence "Regardless of score (including >= 80), actual non-consensual violence, forced
+  restraint, forced undressing, groping, sexual assault BY the user, post-assault body taunts, or ignoring release cries
+  is severe user_conduct (-15..-20)" was removed from both `CUPID_STORY_DECISION_RULES` and the shared
+  `AFFINITY_DECISION_RULES`. The general negative bands stay (for example -18..-20 for non-consensual sexual assault),
+  so a forced act the character resists can still be penalised heavily; the scorer is no longer told to apply that band
+  whatever the reply shows.
+- User instruction "다 공통으로": harem public rooms (Cupid room affinity and Blind Spot character obsession) ask the same
+  `reaction_<n>` / `withoutact_<n>` questions. The room's reply-text `consensual_pleasure_guard`, which read welcoming
+  lines such as "그만큼 기다렸어" or "やめないで" as refusals, was replaced by this shared decision. School standing and
+  player-to-player scores are unchanged. Room requests are split to at most 19 questions.
+- The forced-violation aftermath scene is unchanged by user instruction ("인위적인 후처리는 하지마").
+
 ### Contact-cue detection fixes (same day, from an audit of 12,262 scored user lines since 2026-11-18)
 
 - Verb forms are no longer body parts or contact: `보지만/보지 않/보지 마/보지 못/보지요/보지도 않` ("look"),
