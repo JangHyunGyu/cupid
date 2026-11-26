@@ -4,7 +4,7 @@
 //   every language shows the same non-physical, concrete caring line.
 // - Asking for consent and apologising are not unilateral contact; polite requests score 0 or -1,
 //   unasked light contact at affinity 0-19 scores -5 to -9, and strict caps stay for negative affinity,
-//   non-romance (Haeun), kisses and sexual contact. Nurse keeps the legacy contact scoring.
+//   non-romance (Haeun), kisses and sexual contact. Since 2026-11-25 Nurse uses the same contact scoring as Teacher.
 // - Each group speaker is scored independently with its own +3 per-turn cap.
 const test = require('node:test');
 const assert = require('node:assert/strict');
