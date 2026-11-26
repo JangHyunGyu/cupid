@@ -123,6 +123,29 @@ function getHaeunContactTargetOptions(characterId, scene, participants) {
     return otherNames.length ? { contactSelfNames: HAEUN_CONTACT_SELF_NAMES, contactOtherNames: otherNames } : {};
 }
 
+// Every character's own names, for telling whose body a group-scene act is aimed at (2026-11-26).
+const GROUP_CONTACT_NAMES = Object.freeze({ ...HAEUN_CONTACT_PARTICIPANT_NAMES, Haeun: HAEUN_CONTACT_SELF_NAMES });
+
+// In a group scene a kiss or touch named for another present character is not contact with this speaker. Haeun keeps
+// her own rule above (light touches before the declaration only). A name this speaker shares (선생님, 쌤, 先生) never
+// proves the act went to someone else. 1:1 scenes pass no names, so nothing changes there.
+function getGroupContactTargetOptions(characterId, scene, participants) {
+    if (characterId === 'Haeun') return getHaeunContactTargetOptions(characterId, scene, participants);
+    if (!scene || scene.type !== 'group_free_talk' || !GROUP_CONTACT_NAMES[characterId]) return {};
+    const source = Array.isArray(participants) && participants.length ? participants : scene.groupParticipants;
+    const selfNames = GROUP_CONTACT_NAMES[characterId];
+    const own = new Set(selfNames.map(name => name.toLowerCase()));
+    const otherNames = [];
+    for (const participant of Array.isArray(source) ? source : []) {
+        const id = participant && typeof participant === 'object' ? participant.id : participant;
+        if (id === characterId) continue;
+        for (const name of GROUP_CONTACT_NAMES[id] || []) {
+            if (!own.has(name.toLowerCase())) otherNames.push(name);
+        }
+    }
+    return otherNames.length ? { contactSelfNames: selfNames, contactOtherNames: otherNames } : {};
+}
+
 class FreeTalkSystem {
     /**
      * @param {StateManager} stateManager - 게임 상태 관리자
@@ -1828,7 +1851,7 @@ class FreeTalkSystem {
                     characterId: charKey,
                     establishedRelationship: _isDatingCurrentForBoundary,
                     nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
-                    ...getHaeunContactTargetOptions(charKey, scene)
+                    ...getGroupContactTargetOptions(charKey, scene)
                 }
             );
             const _affinityIntimacyProgressionPatch = _sceneDialogue.romanticInterlude ? '' : (((__oc107 = window.buildCupidAffinityIntimacyGuidance) === null || __oc107 === void 0 ? void 0 : __oc107.call(window, _lang, _currentAffinity, {
@@ -2447,11 +2470,13 @@ window.saveCupidChatLog({
             latestUserText,
             previousValue,
             { characterId: speakerId, nonRomance: speakerId === 'Haeun' && ((scene === null || scene === void 0 ? void 0 : scene.haeunRomance)) !== true,
-                ...getHaeunContactTargetOptions(speakerId, scene, this.groupParticipants) }
+                groupScene: true, decisionReaction: reaction,
+                ...getGroupContactTargetOptions(speakerId, scene, this.groupParticipants) }
         );
-        // 강제였더라도 답변 끝에서 반긴 키스·성행위는 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
+        // 강제였더라도 답변 끝에서 반긴 스킨십·키스·성행위는 그 행동 몫만큼 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
+        // 같은 턴의 다른 잘못(모욕·위협·다른 사람에게 한 행동에 대한 질투)으로 판정 모델이 남긴 감점은 그대로 둔다.
         requestedChange = CupidFreeTalkCore.applyWelcomedIntimacyFloor(requestedChange, {
-            reaction, characterId: speakerId,
+            reaction, characterId: speakerId, workerChange: change,
             nonRomance: speakerId === 'Haeun' && ((scene === null || scene === void 0 ? void 0 : scene.haeunRomance)) !== true
         });
         if (requestedChange > 0) requestedChange = Math.min(requestedChange, GROUP_FREE_TALK_PER_CHARACTER_TURN_GAIN_MAX);
@@ -2764,7 +2789,7 @@ window.saveCupidChatLog({
                         characterName: participant.name,
                         characterId: participant.id,
                         nonRomance: participant.id === 'Haeun' && scene.haeunRomance !== true,
-                        ...getHaeunContactTargetOptions(participant.id, scene, this.groupParticipants)
+                        ...getGroupContactTargetOptions(participant.id, scene, this.groupParticipants)
                     }
                 ))
                 .filter(Boolean)
@@ -3586,12 +3611,13 @@ window.saveCupidGroupChatLog({
             latestUserText,
             policyAffinity,
             { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
-                ...getHaeunContactTargetOptions(charKey, scene) }
+                ...getGroupContactTargetOptions(charKey, scene) }
         );
-        // 강제였더라도 캐릭터가 답변 끝에서 키스·성행위를 반기면 호감도를 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
+        // 강제였더라도 캐릭터가 답변 끝에서 스킨십·키스·성행위를 반기면 그 행동 몫만큼 호감도를 깎지 않는다
+        // (2026-11-26 사용자 결정, 하은 제외). 같은 턴의 다른 잘못으로 판정 모델이 남긴 감점은 그대로 둔다.
         if (consent) {
             requestedChange = CupidFreeTalkCore.applyWelcomedIntimacyFloor(requestedChange, {
-                reaction: consent.reaction, characterId: charKey,
+                reaction: consent.reaction, characterId: charKey, workerChange: change,
                 nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true
             });
         }
@@ -3821,4 +3847,5 @@ FreeTalkSystem.HAEUN_POST_GATE_PERSONAL_SCENE_IDS = HAEUN_POST_GATE_PERSONAL_SCE
 FreeTalkSystem.HAEUN_COMPLETION_BONUS_GROUP_MODES = HAEUN_COMPLETION_BONUS_GROUP_MODES;
 FreeTalkSystem.getHaeunCompletionBonusAmount = getHaeunCompletionBonusAmount;
 FreeTalkSystem.getHaeunContactTargetOptions = getHaeunContactTargetOptions;
+FreeTalkSystem.getGroupContactTargetOptions = getGroupContactTargetOptions;
 window.FreeTalkSystem = FreeTalkSystem;

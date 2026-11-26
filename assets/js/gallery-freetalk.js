@@ -2183,7 +2183,8 @@ window.saveCupidChatLog({
         const currentAffinity = (((__oc95 = this.progress) === null || __oc95 === void 0 ? void 0 : __oc95.getCurrentAffinity))
             ? this.progress.getCurrentAffinity(charId)
             : ((((__oc97 = (__oc96 = this.progress) === null || __oc96 === void 0 ? void 0 : __oc96.getAffinity) === null || __oc97 === void 0 ? void 0 : __oc97.call(__oc96, charId))) || 0);
-        // 강제였더라도 답변 끝에서 반긴 키스·성행위는 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
+        // 강제였더라도 답변 끝에서 반긴 스킨십·키스·성행위는 그 행동 몫만큼 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
+        // 같은 턴의 다른 잘못으로 판정 모델이 남긴 감점은 그대로 둔다.
         const requestedChange = GalleryFreeTalkCore.applyWelcomedIntimacyFloor(
             GalleryFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
                 change,
@@ -2191,7 +2192,7 @@ window.saveCupidChatLog({
                 currentAffinity,
                 { characterId: charId }
             ),
-            { reaction, characterId: charId }
+            { reaction, characterId: charId, workerChange: change }
         );
         const result = this.progress.changeCurrentAffinity(
             charId,

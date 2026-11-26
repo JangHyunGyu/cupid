@@ -117,7 +117,7 @@ score), the three turns differ:
   follows the rules; the affinity was 25 only because of the first two turns.
 
 **User decision, same day: "강제라도 캐릭터 반응이 긍정적이면 호감도 깎지 마."** A kiss or sexual act loses no
-affinity when the character ends the reply welcoming, enjoying, taking part in or asking for more of it, even if the act
+affinity when the character ends the reply welcoming it of her own will (see the review follow-up below), even if the act
 was forced or unasked and even if the reply first showed protest, shame or force (turn 1 above). This replaces the
 narrower reconciliation shipped earlier that day, which kept turn 1's penalty.
 
@@ -135,6 +135,33 @@ narrower reconciliation shipped earlier that day, which kept turn 1's penalty.
   unchanged; this rule only concerns affinity.
 - With the rule the three production turns end at 0, 0 and 0 (the teacher ends each reply welcoming the act).
 - Regression coverage: cupid `tests/consensual-intimacy-scoring.test.cjs`, harem `tests/affinity-decision.test.cjs`.
+
+### Review follow-up (same day): only the welcomed act's share is removed, and group bystanders are not charged
+
+An adversarial review of the first version found that a welcomed act erased every negative in the turn. "*키스한다*"
+in front of an insult cost nothing, and in a group each heroine's jealousy over the other's kiss was zeroed too. Fixed:
+
+- The worker asks one more question per Cupid pair, `withoutact_<n>`: the score for the same turn with the romantic or
+  sexual act toward this evaluator left out (words, insults, threats, other actions and acts toward other people stay).
+  For a welcomed act the delta becomes `max(scored, min(0, withoutAct))`: kiss + insult (-12, without the kiss -5)
+  gives -5 (`correction: 'welcomed_intimacy_other_conduct_kept'`); the act alone gives 0. A missing or skipped answer
+  removes the whole penalty, as before.
+- The client floor (`applyWelcomedIntimacyFloor`) now receives the worker score (`workerChange`) and only undoes what the
+  contact cap added on top of it: `max(capped, min(0, workerChange))`.
+- `welcomed` now means the character plainly welcomes it of her own will (desire, pleasure, eager participation, asking
+  for more). Submitting, freezing, enduring or going along because she feels she cannot refuse is `resisted`. Turn 3
+  above still ends with the teacher asking for more ("얼른, 내 위에… 빨리"), so it stays 0.
+- Haeun, `nonRomance` and `storyCareAnchor` pairs are no longer asked the reaction or without-act question at all.
+- The reaction, without-act and basis questions now point at `state.affinity.context` in the combined expression +
+  affinity request (they pointed at a root `state.context` that does not exist there).
+- Group FreeTalk: the contact cap no longer charges a participant the act was not aimed at. (1) A clause that names
+  another present participant as the one touched, kissed or undressed, and does not name this speaker or say "you", is
+  not contact with her (`getGroupContactTargetOptions`; titles shared by Teacher and Nurse such as 선생님/쌤/先生 never
+  count as another person). (2) When the decision model says nothing romantic or sexual was done to this speaker
+  (`not_intimate`), her cap is skipped and the decision score stands, so jealousy it scored still applies. Without a
+  reaction an unnamed act stays hers. The request-side writer gate uses the same names, so a bystander is no longer told
+  to refuse a kiss meant for someone else. Haeun keeps her 2026-11-25 rule: before the declaration only a light touch
+  named for someone else is exempt, and no reaction ever skips her cap.
 
 ### Contact-cue detection fixes (same day, from an audit of 12,262 scored user lines since 2026-11-18)
 

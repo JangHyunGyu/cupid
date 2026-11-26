@@ -139,18 +139,25 @@
         return clause.includes(name);
     }
 
-    // A non-romance boundary protects the scored character herself. In a group scene, when every clause that
-    // carries a light-touch cue names another present character as the one touched, and neither names her nor
-    // addresses the listener as "you", the hug or held hand was not contact with her (2026-11-25). The caller
-    // passes other names only for group scenes and only for the characters actually present. An unnamed touch
-    // stays hers by default, and kisses and sexual contact are never exempt.
-    function isLightContactAimedOnlyAtOthers(value, selfNames, otherNames, legacy) {
+    // A contact boundary protects the scored character herself. In a group scene, when every clause that carries a
+    // contact cue names another present character as the one touched, and neither names her nor addresses the
+    // listener as "you", the act was not contact with her. Non-romance Haeun keeps the 2026-11-25 rule: only a hug or
+    // a held hand can be aimed at someone else, and kisses and sexual contact always count as hers. Romance
+    // characters get the same check for kisses and sexual acts too (2026-11-26): a kiss aimed at Dain is not a kiss
+    // for Yuna. The caller passes other names only for group scenes and only for the characters actually present.
+    // An unnamed act stays hers by default.
+    function clauseCarriesContactCue(clause, legacy, level) {
+        if (hasLightTouchCue(clause, legacy)) return true;
+        return level !== 'light' && classifyCupidIntimacyAdvance(clause, { legacy }).level !== 'none';
+    }
+
+    function isContactAimedOnlyAtOthers(value, selfNames, otherNames, legacy, level = 'light') {
         const others = normalizeContactTargetNames(otherNames);
         if (!others.length) return false;
         const selves = normalizeContactTargetNames(selfNames);
         let aimedAtOther = false;
         for (const clause of String(value || '').split(CONTACT_CLAUSE_SPLIT_CUE)) {
-            if (!clause.trim() || !hasLightTouchCue(clause, legacy)) continue;
+            if (!clause.trim() || !clauseCarriesContactCue(clause, legacy, level)) continue;
             const lowered = clause.toLowerCase();
             if (selves.some(name => lowered.includes(name))) return false;
             if (SECOND_PERSON_CONTACT_CUE.test(clause)) return false;
@@ -210,11 +217,12 @@
         const score = Math.max(-100, Math.min(100, Number(currentAffinity) || 0));
         const nonRomance = options.nonRomance === true;
         const completedActionIsFact = options.completedActionIsFact === true;
-        const aimedAtOthers = nonRomance && advance.level === 'light' && isLightContactAimedOnlyAtOthers(
+        const aimedAtOthers = (nonRomance ? advance.level === 'light' : advance.level !== 'none') && isContactAimedOnlyAtOthers(
             latestUserText,
             options.contactSelfNames,
             options.contactOtherNames,
-            legacy
+            legacy,
+            advance.level
         );
         // An apology is scored by the normal rubric, never by the contact penalty.
         const blocked = !aimedAtOthers && advance.level !== 'none' && advance.mode !== 'apology' && (
@@ -255,19 +263,27 @@
 
     function enforceCupidAffinityIntimacyBoundary(value, latestUserText = '', currentAffinity = 0, options = {}) {
         const normalized = normalizeAffinityChange(value);
+        // In a group scene the decision model judges per speaker whether the act was aimed at her at all. When it says
+        // nothing romantic or sexual was done to this speaker (a kiss for someone else, an unnamed act it attributes to
+        // another person), the contact cap belongs to someone else (2026-11-26). Haeun is never asked, so her cap stays.
+        if (options.groupScene === true && options.decisionReaction === 'not_intimate'
+            && options.nonRomance !== true && String(options.characterId || '').trim().toLowerCase() !== 'haeun') {
+            return normalized;
+        }
         const boundary = getCupidAffinityIntimacyBoundary(latestUserText, currentAffinity, options);
         return boundary.blocked
             ? Math.max(boundary.minAffinityChange, Math.min(normalized, boundary.maxAffinityChange))
             : normalized;
     }
 
-    // Welcomed intimacy (2026-11-26, user decision): a kiss or sexual act loses no affinity when the character ends the
-    // reply welcoming it, even if the act was forced or unasked. The shared worker asks the decision model how the
-    // character reacted and returns it as affinityEvaluation.reaction ("welcomed" | "resisted" | "not_intimate"); the
-    // worker already floors its own score, and this keeps the client's low-affinity contact cap (-10/-12/-18 below the
-    // allowed tier) from adding the penalty back. Positive scores are untouched, and a welcomed act below the tier still
-    // gains nothing because the cap turns any gain into a loss that is then floored at 0. Haeun is 17, so nothing is
-    // ever excused for her, before or after the declaration.
+    // Welcomed intimacy (2026-11-26, user decision): a touch, kiss or sexual act loses no affinity when the character ends
+    // the reply plainly welcoming it of her own will, even if the act was forced or unasked. The shared worker asks the
+    // decision model how the character reacted and returns it as affinityEvaluation.reaction ("welcomed" | "resisted" |
+    // "not_intimate"). For a welcomed act the worker removes only that act's share of its score and keeps any penalty for
+    // other conduct in the same turn (an insult, a threat, jealousy over an act toward someone else). This keeps the
+    // client's low-affinity contact cap (-10/-12/-18 below the allowed tier) from adding the act's penalty back, while the
+    // worker's kept penalty stays. Positive scores are untouched, and a welcomed act below the tier still gains nothing.
+    // Haeun is 17, so nothing is ever excused for her, before or after the declaration.
     function decisionIntimacyReaction(value) { var __oc36;
         const reaction = String((((__oc36 = value === null || value === void 0 ? void 0 : value.affinityEvaluation) === null || __oc36 === void 0 ? void 0 : __oc36.reaction)) || '').trim().toLowerCase();
         return ['welcomed', 'resisted', 'not_intimate'].includes(reaction) ? reaction : '';
@@ -277,7 +293,11 @@
         const normalized = normalizeAffinityChange(value);
         if (normalized >= 0 || options.reaction !== 'welcomed') return normalized;
         if (options.nonRomance === true || String(options.characterId || '').trim().toLowerCase() === 'haeun') return normalized;
-        return 0;
+        // workerChange is the decision score before the client cap: it already holds only the penalty for other conduct.
+        const keptByWorker = options.workerChange === undefined || options.workerChange === null
+            ? 0
+            : Math.min(0, normalizeAffinityChange(options.workerChange));
+        return Math.max(normalized, keptByWorker);
     }
 
     function buildCupidLatestTurnIntimacyBoundaryGate(lang = 'ko', currentAffinity = 0, latestUserText = '', options = {}) {
