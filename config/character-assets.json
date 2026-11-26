@@ -3735,8 +3735,8 @@
             "assets/images/characters/haeun_choking.png",
             "assets/characters/haeun/expressions/choking/01/sprite.png"
           ],
-          "sha256": "d4b12b2a54547d3cdb6bfcda8a2ca010e3878d1d822ee739cf816e4d0e44975e",
-          "bytes": 615376
+          "sha256": "0b8e84919c00a0b4db3edc55f0c6095599120e61bdf05a4ff17a9db263231669",
+          "bytes": 820276
         },
         "sprite.webp": {
           "source": "assets/characters/haeun/expressions/choking/01/sprite.webp",
@@ -3744,8 +3744,8 @@
             "assets/images/characters/haeun_choking.webp",
             "assets/characters/haeun/expressions/choking/01/sprite.webp"
           ],
-          "sha256": "93580af1aee8cbf1d66fb8f0d523095fce41e4b261d51a09548db3a4267e99b2",
-          "bytes": 79433
+          "sha256": "98636f04131ccd3600bc558edc6c2186a663a55e138c5450c093832e6f27794f",
+          "bytes": 137959
         }
       }
     },

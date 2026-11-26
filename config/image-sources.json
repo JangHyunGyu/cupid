@@ -1477,14 +1477,14 @@
       "backupKey": "objects/sources/8d3f465de9279396ea682908d3de37b2636d1f46aa753fc88badd34d0b200459.webp"
     },
     "assets/characters/haeun/expressions/choking/01/sprite.png": {
-      "sha256": "d4b12b2a54547d3cdb6bfcda8a2ca010e3878d1d822ee739cf816e4d0e44975e",
-      "bytes": 615376,
-      "backupKey": "objects/sources/d4b12b2a54547d3cdb6bfcda8a2ca010e3878d1d822ee739cf816e4d0e44975e.png"
+      "sha256": "0b8e84919c00a0b4db3edc55f0c6095599120e61bdf05a4ff17a9db263231669",
+      "bytes": 820276,
+      "backupKey": "objects/sources/0b8e84919c00a0b4db3edc55f0c6095599120e61bdf05a4ff17a9db263231669.png"
     },
     "assets/characters/haeun/expressions/choking/01/sprite.webp": {
-      "sha256": "93580af1aee8cbf1d66fb8f0d523095fce41e4b261d51a09548db3a4267e99b2",
-      "bytes": 79433,
-      "backupKey": "objects/sources/93580af1aee8cbf1d66fb8f0d523095fce41e4b261d51a09548db3a4267e99b2.webp"
+      "sha256": "98636f04131ccd3600bc558edc6c2186a663a55e138c5450c093832e6f27794f",
+      "bytes": 137959,
+      "backupKey": "objects/sources/98636f04131ccd3600bc558edc6c2186a663a55e138c5450c093832e6f27794f.webp"
     },
     "assets/characters/haeun/expressions/climax/01/sprite.png": {
       "sha256": "485a5ad765a67fac994b9a277a1749dab122bcd6cc219bedc2bbb1f698c074cb",
@@ -10582,14 +10582,14 @@
       "backupKey": "objects/sources/ad2dd7d7172aae6233a7e46065fb601ca41a36dd393e23e60d352ac3192ece5c.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/haeun_choking.png": {
-      "sha256": "c3566da6d092831e07c63a0868610b316812b2f238cbb1152142333a70d2c9fc",
-      "bytes": 615339,
-      "backupKey": "objects/sources/c3566da6d092831e07c63a0868610b316812b2f238cbb1152142333a70d2c9fc.png"
+      "sha256": "cd3cecc076279fd7b0c9ae777af9090cc79663f8913e4a80ef0f124da589c1aa",
+      "bytes": 820239,
+      "backupKey": "objects/sources/cd3cecc076279fd7b0c9ae777af9090cc79663f8913e4a80ef0f124da589c1aa.png"
     },
     "tests/fixtures/corrected-media/assets/images/characters/haeun_choking.webp": {
-      "sha256": "640f9f5af36373658159ee523effce1c66c019bebedeac39eb0a8363c8a72ff2",
-      "bytes": 79396,
-      "backupKey": "objects/sources/640f9f5af36373658159ee523effce1c66c019bebedeac39eb0a8363c8a72ff2.webp"
+      "sha256": "ca935cde0ced3be74ac462a4577fe574be8e0fa645a5b2cf3448328494d07793",
+      "bytes": 137922,
+      "backupKey": "objects/sources/ca935cde0ced3be74ac462a4577fe574be8e0fa645a5b2cf3448328494d07793.webp"
     },
     "tests/fixtures/corrected-media/assets/images/characters/haeun_climax.png": {
       "sha256": "d497f30e6e2f533261ea04713035f496538aaa7e08ca1e9c4c55bb7000a1936e",

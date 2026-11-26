@@ -3224,21 +3224,21 @@ export const MEDIA_MANIFEST = {
     ]
   },
   "characters/haeun_choking": {
-    "version": "bf30e3715f455dd6d0126b8d",
+    "version": "7bc7b63cd3f56ac3ab865d71",
     "files": [
       {
         "path": "assets/images/characters/haeun_choking.png",
-        "key": "images/c3566da6d092831e07c63a0868610b316812b2f238cbb1152142333a70d2c9fc.png",
-        "sha256": "c3566da6d092831e07c63a0868610b316812b2f238cbb1152142333a70d2c9fc",
-        "etag": "c0204b603c5fe142f67b9fae9ee6a7f0",
-        "size": 615339
+        "key": "images/cd3cecc076279fd7b0c9ae777af9090cc79663f8913e4a80ef0f124da589c1aa.png",
+        "sha256": "cd3cecc076279fd7b0c9ae777af9090cc79663f8913e4a80ef0f124da589c1aa",
+        "etag": "365385bdc06dfc0a801509525f760626",
+        "size": 820239
       },
       {
         "path": "assets/images/characters/haeun_choking.webp",
-        "key": "images/640f9f5af36373658159ee523effce1c66c019bebedeac39eb0a8363c8a72ff2.webp",
-        "sha256": "640f9f5af36373658159ee523effce1c66c019bebedeac39eb0a8363c8a72ff2",
-        "etag": "4d9ac78cf452d9a61d4c7697dd839fa4",
-        "size": 79396
+        "key": "images/ca935cde0ced3be74ac462a4577fe574be8e0fa645a5b2cf3448328494d07793.webp",
+        "sha256": "ca935cde0ced3be74ac462a4577fe574be8e0fa645a5b2cf3448328494d07793",
+        "etag": "51e77bedb181de84e8c78fed014c1eb8",
+        "size": 137922
       }
     ]
   },
