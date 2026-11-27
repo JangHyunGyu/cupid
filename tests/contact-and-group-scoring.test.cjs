@@ -66,89 +66,51 @@ test('the face-to-face tip shows the same non-physical caring example in all eig
     }
 });
 
-test('consent requests and apologies are not scored as unilateral contact, in every language', () => {
+test('client regex forced penalties are disabled across requests, unasked touch, Nurse, and boundary gate helpers', () => {
     const requests = ['손잡고 갈래?', '손 잡아도 돼?', '손잡자', 'Can I hold your hand?', '手を握ってもいい？',
         '¿Puedo tomarte la mano?', 'Darf ich deine Hand halten?', 'Posso segurar sua mão?', '我可以牵你的手吗？'];
     for (const text of requests) {
         const boundary = core.getCupidAffinityIntimacyBoundary(text, 5);
         assert.equal(boundary.mode, 'request', text);
-        assert.equal(boundary.blocked, true, text);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, text, 5), -1, `${text}: polite request floor`);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, text, 5), -12);
         assert.equal(core.enforceCupidAffinityIntimacyBoundary(-1, text, 5), -1);
         assert.equal(core.enforceCupidAffinityIntimacyBoundary(0, text, 5), 0);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, text, 5), 0, `${text}: refusal is never rewarded`);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, text, 5), 3);
     }
-    // Pestering is not floored at -1.
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(-6, '제발 손잡자, 왜 안 돼?', 5), -6);
 
-    const apologies = ['아까 손잡아서 미안해', '아까 갑자기 안아서 미안해. 놀랐지?', 'Sorry I grabbed your hand earlier.',
-        'さっき手を握ってごめん', 'Lo siento por tomar tu mano.', 'Désolé de t’avoir pris la main.', '对不起，刚才拉了你的手。'];
-    for (const text of apologies) {
-        const boundary = core.getCupidAffinityIntimacyBoundary(text, 5);
-        assert.equal(boundary.mode, 'apology', text);
-        assert.equal(boundary.blocked, false, text);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(2, text, 5), 2, `${text}: apology scored normally`);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-3, text, 5), -3);
-        assert.equal(core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 5, text), '');
-    }
-});
-
-test('unasked light contact is softened but the boundary stays; strict caps are unchanged', () => {
     for (const text of ['*손을 잡으며* 같이 가자.', '*그녀를 끌어안는다*', '*holds her hand* Let\'s go.', '*toma la mano* Vamos.',
         '*prend la main* Allons-y.', '*nimmt ihre Hand* Komm mit.', '*segura a mão* Vamos.', '*牵起她的手* 走吧。']) {
-        const boundary = core.getCupidAffinityIntimacyBoundary(text, 5);
-        assert.deepEqual([boundary.level, boundary.mode, boundary.blocked], ['light', 'action', true], text);
-        assert.deepEqual([boundary.maxAffinityChange, boundary.minAffinityChange], [-5, -9], text);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, text, 5), -5);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, text, 5), -9);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, text, 5), 3);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, text, 5), -12);
         assert.equal(core.enforceCupidAffinityIntimacyBoundary(-7, text, 5), -7);
-        // At affinity 20+ light contact is no longer blocked.
-        assert.equal(core.getCupidAffinityIntimacyBoundary(text, 20).blocked, false);
     }
-    // Negative affinity and non-romance relationships keep -10 or lower without a floor.
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*손을 잡으며* 같이 가자.', -5), -10);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*손을 잡으며* 같이 가자.', -5), 3);
     assert.equal(core.enforceCupidAffinityIntimacyBoundary(-20, '*손을 잡으며* 같이 가자.', -5), -20);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*손을 잡으며* 같이 가자.', 50, { nonRomance: true }), -10);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(-1, '손 잡아도 돼?', 50, { nonRomance: true }), -1);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(-4, '손 잡아도 돼?', 50, { nonRomance: true }), -4,
-        'non-romance (Haeun) requests are not floored');
-    // Kisses and sexual contact keep their caps.
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '(혀를 넣어 키스한다)', 3), -12);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*손을 잡으며* 같이 가자.', 50, { nonRomance: true }), 3);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '(혀를 넣어 키스한다)', 3), 3);
     assert.equal(core.enforceCupidAffinityIntimacyBoundary(-20, '(혀를 넣어 키스한다)', 3), -20);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '(가슴을 만진다)', 3), -18);
-    assert.equal(core.getCupidAffinityIntimacyBoundary('키스한다', 25).blocked, true);
-});
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '(가슴을 만진다)', 3), 3);
 
-test('Nurse uses the same non-contact idiom filtering and non-negative touch rules as Teacher', () => {
     for (const characterId of ['Nurse', 'nurse']) {
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, '*손을 잡으며* 같이 가자.', 5, { characterId }), -9);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*손을 잡으며* 같이 가자.', 5, { characterId }), -5);
-        assert.equal(core.getCupidAffinityIntimacyBoundary('손잡고 갈래?', 5, { characterId }).mode, 'request');
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, '손 잡아도 돼?', 5, { characterId }), -1);
-        assert.equal(core.getCupidAffinityIntimacyBoundary('아까 손잡아서 미안해', 5, { characterId }).blocked, false);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, '*손을 잡으며* 같이 가자.', 5, { characterId }), -12);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*손을 잡으며* 같이 가자.', 5, { characterId }), 3);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, '손 잡아도 돼?', 5, { characterId }), -12);
     }
     const main = read('assets/js/modules/FreeTalkSystem.js');
     const gallery = read('assets/js/gallery-freetalk.js');
-    assert.match(main, /\{ characterId: charKey, nonRomance: charKey === 'Haeun'/);
-    assert.match(main, /\{ characterId: speakerId, nonRomance: speakerId === 'Haeun'/);
-    assert.match(main, /characterId: participant\.id,/);
-    assert.match(main, /characterName: scene\.name \|\| charKey,\s*characterId: charKey,/);
-    assert.match(gallery, /characterId: requestCharId,/);
-    assert.match(gallery, /currentAffinity,\s*\{ characterId: charId \}/);
+    assert.doesNotMatch(main, /enforceCupidAffinityIntimacyBoundary|buildCupidLatestTurnIntimacyBoundaryGate/);
+    assert.doesNotMatch(gallery, /enforceCupidAffinityIntimacyBoundary|buildCupidLatestTurnIntimacyBoundaryGate/);
 });
 
-test('boundary gate wording matches the code ranges in Korean and English', () => {
+test('regex boundary gate returns empty string without disturbing stable prompt cache fingerprint', () => {
     const koRequest = core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 5, '손 잡아도 돼?', { characterName: '서연' });
     const enRequest = core.buildCupidLatestTurnIntimacyBoundaryGate('en', 5, 'Can I hold your hand?', { characterName: 'Seoyeon' });
-    assert.match(koRequest, /affinity는 양수로 주지 마세요\. 0이나 -1로 둡니다\./);
-    assert.match(enRequest, /affinity is 0 or -1/);
     const koAction = core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 5, '*손을 잡으며* 같이 가자.', { characterName: '서연' });
     const enAction = core.buildCupidLatestTurnIntimacyBoundaryGate('en', 5, '*holds her hand* Let\'s go.', { characterName: 'Seoyeon' });
-    assert.match(koAction, /-9~-5 사이 음수/);
-    assert.match(enAction, /between -9 and -5/);
-    const koPressing = core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 5, '제발 손잡자, 왜 안 돼?', { characterName: '서연' });
-    assert.match(koPressing, /조르거나 압박했다면 그만큼 낮춥니다/);
-    // The latest-turn gate stays after the cache boundary (dynamic), so the stable fingerprint is unchanged.
+    assert.equal(koRequest, '');
+    assert.equal(enRequest, '');
+    assert.equal(koAction, '');
+    assert.equal(enAction, '');
     const prompt = core.appendDynamicContext('stable prompt', core.buildPostHistoryGuidance(
         [{ role: 'user', content: '손 잡아도 돼?' }], 'ko', { boundaryRule: koRequest }));
     assert.equal(core.getStablePromptFingerprint(prompt), core.getStablePromptFingerprint('stable prompt'));
@@ -224,14 +186,13 @@ test('each group speaker gets its own independent affinity change (up to +3 each
     }
 });
 
-test('group contact boundaries still apply per speaker', async () => {
+test('group affinity honors decision model scores without client regex clamping', async () => {
     const { system, applied } = groupSystem({ affinities: { Seoyeon: 5, Dain: 30 } });
     await system._renderGroupConversations([
         { speakerId: 'Seoyeon', speakerName: '서연', text: '…', segments: null, affinity: 2 },
         { speakerId: 'Dain', speakerName: '다인', text: '…', segments: null, affinity: 2 }
     ], {}, '*서연의 손을 잡는다*', 'ko');
-    // Seoyeon (affinity 5) is blocked at -5; Dain (affinity 30) is not blocked and keeps +2.
-    assert.deepEqual(applied, [['Seoyeon', -5], ['Dain', 2]]);
+    assert.deepEqual(applied, [['Seoyeon', 2], ['Dain', 2]]);
 });
 
 // 2026-11-25: production lines that the light-touch cue misread as contact, and touches aimed at someone else.
@@ -290,8 +251,8 @@ test('look-alike phrases are not contact, while real contact with a non-romance 
         ['하은아 보고파, 안고파', -10],
         ['*하은을 안고픈 마음에 팔을 벌린다*', -10]
     ];
-    for (const [line, expected] of stillContact) {
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, line, 10, HAEUN_NON_ROMANCE), expected, line);
+    for (const [line] of stillContact) {
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, line, 10, HAEUN_NON_ROMANCE), 3, line);
     }
     // Nurse also ignores non-contact idioms such as "안아파요" just like Teacher and Seoyeon.
     assert.equal(core.getCupidAffinityIntimacyBoundary('하나도 안아파요!', 5, { characterId: 'Nurse' }).level, 'none');
@@ -329,12 +290,11 @@ test('a light touch aimed only at another named character is not contact with a 
         ['*서연의 손을 잡으며* *머리를 쓰다듬는다*', -10],
         ['*서연에게 키스한다*', -12]
     ];
-    for (const [line, expected] of stillHers) {
+    for (const [line] of stillHers) {
         const boundary = core.getCupidAffinityIntimacyBoundary(line, 10, HAEUN_NON_ROMANCE);
         assert.equal(boundary.aimedAtOthers, false, line);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, line, 10, HAEUN_NON_ROMANCE), expected, line);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, line, 10, HAEUN_NON_ROMANCE), 3, line);
     }
-    // The exemption needs names from the caller, which passes them only for characters present in a group scene.
     const options = scene => vmFreeTalk().getHaeunContactTargetOptions('Haeun', scene);
     const misunderstanding = { type: 'group_free_talk', groupMode: 'haeun_misunderstanding',
         groupParticipants: [{ id: 'Seoyeon' }, { id: 'Haeun' }] };
@@ -345,12 +305,11 @@ test('a light touch aimed only at another named character is not contact with a 
     assert.ok(!groupOptions.contactOtherNames.includes('선생님'), 'absent staff are not listed');
     const solo = { characterId: 'Haeun', nonRomance: true, ...options({ type: 'free_talk' }) };
     const grouped = { characterId: 'Haeun', nonRomance: true, ...groupOptions };
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, solo), -10);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, solo), 3);
     assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, grouped), 3);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*선생님의 손을 잡는다*', 10, grouped), -10);
-    // Without the name lists, and for romance characters, nothing changes.
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, { characterId: 'Haeun', nonRomance: true }), -10);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡는다*', 5, { characterId: 'Seoyeon' }), -5);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*선생님의 손을 잡는다*', 10, grouped), 3);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, { characterId: 'Haeun', nonRomance: true }), 3);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡는다*', 5, { characterId: 'Seoyeon' }), 3);
 });
 
 function haeunGroupSystem({ sceneId, scene, turnsDone, affinities }) {
@@ -438,7 +397,7 @@ test('a hand held with the other heroine no longer costs a non-romance Haeun in 
     const unnamed = haeunGroupSystem({ sceneId, scene, turnsDone: 1, affinities: { Seoyeon: 60, Haeun: 20 } });
     coreSandboxGate(unnamed.system, gate);
     await unnamed.system._renderGroupConversations(lines(), { sceneId }, '*손을 잡으며* 오해야.', 'ko', scene);
-    assert.deepEqual(unnamed.applied, [['Seoyeon', 3], ['Haeun', -10]]);
+    assert.deepEqual(unnamed.applied, [['Seoyeon', 3], ['Haeun', 2]]);
 });
 
 test('group prompts and budget docs describe independent per-character scoring', () => {
@@ -483,8 +442,8 @@ test('verb forms of 보다/자다 and 빨개/빨리/빨간 never pair into a sex
     ]) {
         assert.equal(core.classifyCupidIntimacyAdvance(line).level, 'sexual', line);
     }
-    // Directed exposure below 40 is blocked with the sexual cap, like other sexual contact.
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(1, '*바지를 내리며 자지를 보여준다*', 25, { characterId: 'Nurse' }), -18);
+    // Client regex boundary no longer overrides worker scores in any case.
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(1, '*바지를 내리며 자지를 보여준다*', 25, { characterId: 'Nurse' }), 1);
 });
 
 test('D1 regressions (2026-11-27): coat-lending, French besoin, polite narration requests/apologies, and burden idioms', () => {
@@ -542,7 +501,7 @@ test('D1 regressions (2026-11-27): coat-lending, French besoin, polite narration
         const adv = core.classifyCupidIntimacyAdvance(line);
         assert.equal(adv.level, level, line);
         assert.equal(adv.mode, 'request', line);
-        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, line, 5, { characterId: 'Seoyeon' }), -1, line);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, line, 5, { characterId: 'Seoyeon' }), -12, line);
     }
     const apology = core.classifyCupidIntimacyAdvance('*고개를 숙이며* 아까 손잡아서 미안해');
     assert.deepEqual({ level: apology.level, mode: apology.mode }, { level: 'light', mode: 'apology' });
@@ -564,5 +523,5 @@ test('D1 regressions (2026-11-27): coat-lending, French besoin, polite narration
     const idiom = '마음속에 힘든일은 너무 안고 계시면 힘들어져요.';
     assert.equal(core.classifyCupidIntimacyAdvance(idiom).level, 'none');
     assert.equal(core.getCupidAffinityIntimacyBoundary(idiom, 4, { characterId: 'Nurse' }).blocked, false);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '걱정하는 하은을 안고 있다', 10, HAEUN_NON_ROMANCE), -10);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '걱정하는 하은을 안고 있다', 10, HAEUN_NON_ROMANCE), 3);
 });

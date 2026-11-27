@@ -73,18 +73,18 @@ test('the production turns all end at 0 when the teacher ends each reply welcomi
         assert.equal(result.change, 0);
         assert.equal(scores.Teacher, affinity);
     }
-    // At 25 the client cap used to turn even a worker 0 into -18 for this sexual line.
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(0, FILMING, 25, { characterId: 'Teacher' }), -18);
+    // Client regex boundary no longer turns a worker 0 into -18.
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(0, FILMING, 25, { characterId: 'Teacher' }), 0);
 });
 
-test('main-story applyAffinity keeps penalties for resisted acts, missing reactions, Haeun and locked scenes', () => {
+test('main-story applyAffinity keeps worker scores for resisted acts, missing reactions, Haeun and locked scenes', () => {
     const resisted = storySystem({ affinity: 25 });
     resisted.system.applyAffinity(-5, resisted.scene, FILMING, { reaction: 'resisted' });
-    assert.deepEqual(resisted.applied, [['Teacher', -18]]);
+    assert.deepEqual(resisted.applied, [['Teacher', -5]]);
 
     const missing = storySystem({ affinity: 25 });
     missing.system.applyAffinity(0, missing.scene, FILMING, { reaction: '' });
-    assert.deepEqual(missing.applied, [['Teacher', -18]]);
+    assert.deepEqual(missing.applied, []);
 
     const plain = storySystem({ affinity: 61 });
     plain.system.applyAffinity(-18, plain.scene, UNDRESS);
@@ -111,7 +111,7 @@ test('group FreeTalk applies the same reaction rule per speaker', () => {
     system._applyGroupAffinity(0, 'Teacher', FILMING, group, 'welcomed');
     assert.deepEqual(applied, []);
     system._applyGroupAffinity(-3, 'Teacher', FILMING, group, 'resisted');
-    assert.deepEqual(applied, [['Teacher', -18]]);
+    assert.deepEqual(applied, [['Teacher', -3]]);
 });
 
 test('the parsed 1:1 reply carries the reaction, and every scoring path forwards it', () => {
@@ -128,7 +128,7 @@ test('the parsed 1:1 reply carries the reaction, and every scoring path forwards
     const gallery = read('assets/js/gallery-freetalk.js');
     assert.equal((gallery.match(/intimacyReaction: GalleryFreeTalkCore\.decisionIntimacyReaction\(parsed\)/gu) || []).length, 2);
     assert.match(gallery, /finalContent,\s*parsed\.intimacyReaction\s*\)/u);
-    assert.match(gallery, /applyWelcomedIntimacyFloor\(\s*GalleryFreeTalkCore\.enforceCupidAffinityIntimacyBoundary\(/u);
+    assert.match(gallery, /applyWelcomedIntimacyFloor\(\s*GalleryFreeTalkCore\.normalizeAffinityChange\(/u);
 });
 
 // Review follow-up (2026-11-26): only the welcomed act's share is removed. The worker returns the turn's score without
@@ -156,54 +156,39 @@ function groupStory({ affinities, participants }) {
     return { system, applied, scores, scene };
 }
 
-test('group FreeTalk: a kiss or sexual act for one heroine never costs the other one', () => {
-    // Named target: deterministic, no decision reaction needed.
+test('group FreeTalk preserves worker scores for each heroine without client regex forced penalties', () => {
     const named = groupStory({ affinities: { Dain: 25, Yuna: 25 }, participants: ['Dain', 'Yuna'] });
     named.system._applyGroupAffinity(0, 'Yuna', '*다인에게 키스한다*', named.scene, '');
     named.system._applyGroupAffinity(0, 'Yuna', '*다인의 옷을 벗긴다*', named.scene, '');
-    assert.deepEqual(named.applied, [], 'Yuna is not charged for Dain\'s kiss or undressing');
-    named.system._applyGroupAffinity(0, 'Dain', '*다인에게 키스한다*', named.scene, '');
-    assert.deepEqual(named.applied, [['Dain', -12]], 'the kissed heroine keeps her own cap when no reaction says she welcomed it');
+    assert.deepEqual(named.applied, [], 'Yuna is not charged when worker scores 0');
+    named.system._applyGroupAffinity(-12, 'Dain', '*다인에게 키스한다*', named.scene, '');
+    assert.deepEqual(named.applied, [['Dain', -12]], 'the kissed heroine keeps the decision model score');
 
-    // Unnamed act: the decision model says nothing was done to Yuna, so her cap does not apply.
     const unnamed = groupStory({ affinities: { Dain: 25, Yuna: 25 }, participants: ['Dain', 'Yuna'] });
     unnamed.system._applyGroupAffinity(0, 'Dain', '*키스한다*', unnamed.scene, 'welcomed');
     unnamed.system._applyGroupAffinity(0, 'Yuna', '*키스한다*', unnamed.scene, 'not_intimate');
     assert.deepEqual(unnamed.applied, []);
-    // A real penalty the decision model gave the bystander (jealousy) still applies.
     unnamed.system._applyGroupAffinity(-2, 'Yuna', '*키스한다*', unnamed.scene, 'not_intimate');
     assert.deepEqual(unnamed.applied, [['Yuna', -2]]);
-    // Without a reaction an unnamed act stays hers.
     const silent = groupStory({ affinities: { Dain: 25, Yuna: 25 }, participants: ['Dain', 'Yuna'] });
     silent.system._applyGroupAffinity(0, 'Yuna', '*키스한다*', silent.scene, '');
-    assert.deepEqual(silent.applied, [['Yuna', -12]]);
-    // Her own name or "you" in the clause keeps the cap; 1:1 scenes pass no names.
+    assert.deepEqual(silent.applied, []);
     const own = groupStory({ affinities: { Dain: 25, Yuna: 25 }, participants: ['Dain', 'Yuna'] });
-    own.system._applyGroupAffinity(0, 'Yuna', '*다인에게 키스하고 유나를 끌어안는다*', own.scene, '');
-    own.system._applyGroupAffinity(0, 'Dain', '*너에게 키스한다*', own.scene, '');
+    own.system._applyGroupAffinity(-12, 'Yuna', '*다인에게 키스하고 유나를 끌어안는다*', own.scene, '');
+    own.system._applyGroupAffinity(-12, 'Dain', '*너에게 키스한다*', own.scene, '');
     assert.deepEqual(own.applied, [['Yuna', -12], ['Dain', -12]]);
     assert.deepEqual({ ...vmFreeTalkSystem().getGroupContactTargetOptions('Yuna', { type: 'free_talk' }) }, {});
 });
 
-test('group writer gate does not tell a bystander to refuse a kiss aimed at someone else; Haeun keeps her rule', () => {
+test('group writer gate returns empty string without client regex injection', () => {
     const FreeTalk = vmFreeTalkSystem();
     const scene = { type: 'group_free_talk', groupParticipants: [{ id: 'Dain' }, { id: 'Yuna' }] };
     const gate = (id, line, affinity = 25, extra = {}) => core.buildCupidLatestTurnIntimacyBoundaryGate('ko', affinity, line,
         { characterName: id, characterId: id, ...FreeTalk.getGroupContactTargetOptions(id, scene), ...extra });
     assert.equal(gate('Yuna', '*다인에게 키스한다*'), '');
-    assert.notEqual(gate('Dain', '*다인에게 키스한다*'), '');
-    // Teacher and Nurse share "선생님": a shared title never proves the act went to the other one.
-    const staff = { type: 'group_free_talk', groupParticipants: [{ id: 'Teacher' }, { id: 'Nurse' }] };
-    const staffOptions = FreeTalk.getGroupContactTargetOptions('Teacher', staff);
-    assert.ok(!staffOptions.contactOtherNames.includes('선생님'));
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(0, '*선생님에게 키스한다*', 25, { characterId: 'Teacher', ...staffOptions }), -12);
-    // Haeun before the declaration: a kiss for someone else in the clause is still never exempt, and no reaction skips her cap.
-    const haeunScene = { type: 'group_free_talk', groupParticipants: [{ id: 'Seoyeon' }, { id: 'Haeun' }] };
-    const haeunOptions = { characterId: 'Haeun', nonRomance: true, ...FreeTalk.getGroupContactTargetOptions('Haeun', haeunScene) };
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(0, '*서연에게 키스한다*', 10, haeunOptions), -12);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '*서연의 손을 잡으며* 오해야', 10, haeunOptions), 3);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(0, '*키스한다*', 10,
-        { ...haeunOptions, groupScene: true, decisionReaction: 'not_intimate' }), -12);
+    assert.equal(gate('Dain', '*다인에게 키스한다*'), '');
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(0, '*선생님에게 키스한다*', 25, { characterId: 'Teacher' }), 0);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(0, '*서연에게 키스한다*', 10, { characterId: 'Haeun', nonRomance: true }), 0);
 });
 
 function vmFreeTalkSystem() {

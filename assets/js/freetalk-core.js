@@ -268,18 +268,8 @@
     }
 
     function enforceCupidAffinityIntimacyBoundary(value, latestUserText = '', currentAffinity = 0, options = {}) {
-        const normalized = normalizeAffinityChange(value);
-        // In a group scene the decision model judges per speaker whether the act was aimed at her at all. When it says
-        // nothing romantic or sexual was done to this speaker (a kiss for someone else, an unnamed act it attributes to
-        // another person), the contact cap belongs to someone else (2026-11-26). Haeun is never asked, so her cap stays.
-        if (options.groupScene === true && options.decisionReaction === 'not_intimate'
-            && options.nonRomance !== true && String(options.characterId || '').trim().toLowerCase() !== 'haeun') {
-            return normalized;
-        }
-        const boundary = getCupidAffinityIntimacyBoundary(latestUserText, currentAffinity, options);
-        return boundary.blocked
-            ? Math.max(boundary.minAffinityChange, Math.min(normalized, boundary.maxAffinityChange))
-            : normalized;
+        // 정규식 기반 강제 감점·상한 덮어쓰기 중단, 후단 판정 모델(affinity-decision) 결과만 수용
+        return normalizeAffinityChange(value);
     }
 
     // Welcomed intimacy (2026-11-26, user decision): a touch, kiss or sexual act loses no affinity when the character ends
@@ -307,39 +297,8 @@
     }
 
     function buildCupidLatestTurnIntimacyBoundaryGate(lang = 'ko', currentAffinity = 0, latestUserText = '', options = {}) {
-        const boundary = getCupidAffinityIntimacyBoundary(latestUserText, currentAffinity, options);
-        if (!boundary.blocked) return '';
-        const characterName = String(options.characterName || '').trim();
-        const isKo = String(lang || 'ko').toLowerCase().startsWith('ko');
-        if (isKo) {
-            const advanceLabel = boundary.level === 'sexual'
-                ? '성적 접촉을'
-                : (boundary.level === 'kiss' ? '키스를' : '스킨십을');
-            const scoringRule = boundary.mode === 'request'
-                ? (boundary.politeRequest
-                    ? '아직 허락을 구한 단계이며 실제 접촉은 없었습니다. 정중하게 묻거나 권한 것만으로는 경계 침해가 아닙니다. 거절은 호감도 상승 요인이 아니니 affinity는 양수로 주지 마세요. 0이나 -1로 둡니다.'
-                    : '아직 허락을 구한 단계입니다. 거절은 호감도 상승 요인이 아닙니다. affinity는 양수로 주지 마세요. 거절 뒤에도 조르거나 압박했다면 그만큼 낮춥니다.')
-                : (boundary.softLightAction
-                    ? `묻지 않고 먼저 한 가벼운 접촉입니다. 이번 접촉만 기준으로 affinity는 ${boundary.minAffinityChange}~${boundary.maxAffinityChange} 사이 음수로 둡니다.`
-                    : `경계를 넘은 행동입니다. affinity는 반드시 음수여야 하며, 이번 접촉만 기준으로 보면 ${boundary.maxAffinityChange} 이하입니다.`);
-            const occurrenceRule = boundary.completedActionIsFact
-                ? '완료형 접촉은 이미 일어난 사건으로 다뤄도 됩니다. 하지만 캐릭터가 호응하거나 받아들였다고 쓰지 마세요. 바로 접촉을 끊고 거리를 둔 뒤,'
-                : '접촉이 실제로 이어졌다고 쓰지 마세요. 흥분·쾌락·신체 반응을 끌어와 거절을 수용으로 바꾸지도 마세요. 바로 막거나 피하고 거리를 둔 뒤,';
-            return `[후단 과업 — 이번 친밀감 경계]
-${characterName ? `${characterName}의 ` : ''}현재 호감도 ${boundary.score}에서는 이번 ${advanceLabel} 받아들이지 않습니다. ${occurrenceRule} 캐릭터의 말투로 분명히 거절합니다. 밀어내려다 실패해 결국 받아들이는 식으로 뒤집지 않습니다. ${scoringRule}`;
-        }
-        const scoringRule = boundary.mode === 'request'
-            ? (boundary.politeRequest
-                ? 'This is a request for permission and no contact happened. Politely asking or inviting is not a boundary violation, so affinity is 0 or -1. Refusal is not a positive event, so it cannot be positive.'
-                : 'This is a request for permission, so refusal is not a positive event. affinity cannot be positive. Lower it to match any pestering or pressure after a refusal.')
-            : (boundary.softLightAction
-                ? `This is light contact made without asking first. For this contact alone, affinity is negative, between ${boundary.minAffinityChange} and ${boundary.maxAffinityChange}.`
-                : `This crosses the current boundary. affinity cannot be positive and must be ${boundary.maxAffinityChange} or lower for this contact.`);
-        const occurrenceRule = boundary.completedActionIsFact
-            ? 'A completed contact may remain an event, but do not write the character as reciprocating or accepting it. End the contact immediately, create distance, and'
-            : 'Do not let the contact occur or turn arousal, pleasure, or bodily response into acceptance. Block or avoid it immediately, create distance, and';
-        return `[Post-History Task — Current Intimacy Boundary]
-At affinity ${boundary.score}, ${characterName ? `${characterName} does` : 'the character does'} not accept this ${boundary.level === 'sexual' ? 'sexual contact' : (boundary.level === 'kiss' ? 'kiss' : 'physical intimacy')}. ${occurrenceRule} refuse clearly in character. Never turn a failed attempt to push away into acceptance. ${scoringRule}`;
+        // 클라이언트 정규식 기반 거절·강제 감점 프롬프트 주입 중단 (호감도 단계 안내만 유지)
+        return '';
     }
 
     function normalizeForcedSexualViolation(value) {

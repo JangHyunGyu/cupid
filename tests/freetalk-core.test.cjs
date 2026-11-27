@@ -491,12 +491,12 @@ test('low-affinity intimacy is classified, refused, and never rewarded', () => {
     const requestedKiss = core.getCupidAffinityIntimacyBoundary('키스하자', 3);
     assert.equal(requestedKiss.blocked, true);
     assert.equal(requestedKiss.maxAffinityChange, 0);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '키스하자', 3), 0);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '키스하자', 3), 3);
 
     const forcedKiss = core.getCupidAffinityIntimacyBoundary('(혀를 넣어 키스한다)', 3);
     assert.equal(forcedKiss.blocked, true);
     assert.equal(forcedKiss.maxAffinityChange, -12);
-    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '(혀를 넣어 키스한다)', 3), -12);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '(혀를 넣어 키스한다)', 3), 3);
     assert.equal(core.enforceCupidAffinityIntimacyBoundary(-20, '(혀를 넣어 키스한다)', 3), -20);
 
     assert.equal(core.getCupidAffinityIntimacyBoundary('짧게 안아 준다', 25).blocked, false);
@@ -504,31 +504,25 @@ test('low-affinity intimacy is classified, refused, and never rewarded', () => {
     assert.equal(core.getCupidAffinityIntimacyBoundary('키스한다', 40).blocked, false);
     assert.equal(core.getCupidAffinityIntimacyBoundary('손을 잡는다', 100, { nonRomance: true }).blocked, true);
 
-    const gate = core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 3, '(혀를 넣어 키스한다)', {
+    assert.equal(core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 3, '(혀를 넣어 키스한다)', {
         characterName: '서연'
-    });
-    assert.match(gate, /이번 키스를 받아들이지 않습니다/);
-    assert.match(gate, /밀어내려다 실패해 결국 받아들이는 식으로 뒤집지 않습니다/);
-    assert.match(gate, /-12 이하/);
-
-    const galleryGate = core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 3, '(혀를 넣어 키스한다)', {
+    }), '');
+    assert.equal(core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 3, '(혀를 넣어 키스한다)', {
         characterName: '서연',
         completedActionIsFact: true
-    });
-    assert.match(galleryGate, /완료형 접촉은 이미 일어난 사건으로 다뤄도 됩니다/);
-    assert.doesNotMatch(galleryGate, /접촉이 이루어진 것으로 쓰거나/);
+    }), '');
 });
 
-test('the latest-turn boundary gate stays in the high-priority post-history task', () => {
+test('the latest-turn boundary gate stays disabled without regex injection into post-history guidance', () => {
     const boundaryRule = core.buildCupidLatestTurnIntimacyBoundaryGate('ko', 5, '키스하자', {
         characterName: '유나'
     });
+    assert.equal(boundaryRule, '');
     const prompt = core.appendDynamicContext(
         'stable prompt',
         core.buildPostHistoryGuidance([{ role: 'user', content: '키스하자' }], 'ko', { boundaryRule })
     );
-    assert.match(prompt, /후단 과업 — 이번 친밀감 경계/);
-    assert.match(prompt, /affinity는 양수로 주지 마세요/);
+    assert.doesNotMatch(prompt, /후단 과업 — 이번 친밀감 경계/);
     assert.equal(core.getStablePromptFingerprint(prompt), core.getStablePromptFingerprint('stable prompt'));
 });
 
@@ -653,19 +647,18 @@ test('outward expression remains independent from affinity direction', () => {
     assert.doesNotMatch(projected[0].content, /climax|ahegao/);
 });
 
-test('game and gallery affinity paths share the core normalizer', () => {
+test('game and gallery affinity paths share the core normalizer without client regex clamps', () => {
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /CupidFreeTalkCore\.normalizeStoryFreeTalkAffinityChange/);
-    assert.ok((read('assets/js/modules/FreeTalkSystem.js').match(/enforceCupidAffinityIntimacyBoundary/g) || []).length >= 2);
-    assert.match(read('assets/js/modules/FreeTalkSystem.js'), /buildCupidLatestTurnIntimacyBoundaryGate/);
+    assert.ok((read('assets/js/modules/FreeTalkSystem.js').match(/CupidFreeTalkCore\.normalizeAffinityChange/g) || []).length >= 2);
+    assert.doesNotMatch(read('assets/js/modules/FreeTalkSystem.js'), /enforceCupidAffinityIntimacyBoundary|buildCupidLatestTurnIntimacyBoundaryGate/);
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /updateStreamingPreview\(content\)/);
     assert.match(read('assets/js/modules/FreeTalkSystem.js'), /updateGroupStreamingPreview\(content\)/);
     assert.doesNotMatch(read('assets/js/modules/FreeTalkSystem.js'), /if \(!_latestTurnIntimacyBoundaryRule\) updateStreamingPreview/);
     assert.doesNotMatch(read('assets/js/modules/FreeTalkSystem.js'), /if \(!boundaryRule\) updateGroupStreamingPreview/);
     assert.doesNotMatch(read('assets/js/modules/FreeTalkSystem.js'), /Rejected affinity-boundary draft/);
     assert.match(read('assets/js/gallery-freetalk.js'), /GalleryFreeTalkCore\.normalizeAffinityChange\(value\)/);
-    assert.match(read('assets/js/gallery-freetalk.js'), /enforceCupidAffinityIntimacyBoundary/);
-    assert.match(read('assets/js/gallery-freetalk.js'), /buildCupidLatestTurnIntimacyBoundaryGate/);
-    assert.match(read('assets/js/gallery-freetalk.js'), /completedActionIsFact: true/);
+    assert.match(read('assets/js/gallery-freetalk.js'), /GalleryFreeTalkCore\.normalizeAffinityChange\(change\)/);
+    assert.doesNotMatch(read('assets/js/gallery-freetalk.js'), /enforceCupidAffinityIntimacyBoundary|buildCupidLatestTurnIntimacyBoundaryGate/);
     assert.match(read('assets/js/gallery-freetalk.js'), /updateStreamingPreview\(content\)/);
     assert.doesNotMatch(read('assets/js/gallery-freetalk.js'), /if \(!_latestTurnIntimacyBoundaryRule\) updateStreamingPreview/);
     assert.doesNotMatch(read('assets/js/freetalk-core.js'), /getCupidAffinityIntimacyBoundaryIssue/);

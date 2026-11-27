@@ -1139,17 +1139,7 @@ ${portugueseCharacterLines[charId] || '- Mantenha uma voz distinta para esta per
             const _currentAffinity = (((__oc30 = this.progress) === null || __oc30 === void 0 ? void 0 : __oc30.getCurrentAffinity))
                 ? this.progress.getCurrentAffinity(requestCharId)
                 : ((((__oc32 = (__oc31 = this.progress) === null || __oc31 === void 0 ? void 0 : __oc31.getAffinity) === null || __oc32 === void 0 ? void 0 : __oc32.call(__oc31, requestCharId))) || 0);
-            const _latestTurnIntimacyBoundaryRule = GalleryFreeTalkCore.buildCupidLatestTurnIntimacyBoundaryGate(
-                this.lang || 'en',
-                _currentAffinity,
-                finalContent,
-                {
-                    characterName: pendingCharName,
-                    characterId: requestCharId,
-                    establishedRelationship: true,
-                    completedActionIsFact: true
-                }
-            );
+            const _latestTurnIntimacyBoundaryRule = '';
             const _incidentRuntime = this._prepareGalleryIncidentRuntime(requestCharId);
             requestContext.incidentRuntime = _incidentRuntime;
             const _incidentRuntimeBlock = GalleryFreeTalkCore.buildGalleryIncidentRuntimeBlock({
@@ -2186,12 +2176,7 @@ window.saveCupidChatLog({
         // 강제였더라도 답변 끝에서 반긴 스킨십·키스·성행위는 그 행동 몫만큼 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
         // 같은 턴의 다른 잘못으로 판정 모델이 남긴 감점은 그대로 둔다.
         const requestedChange = GalleryFreeTalkCore.applyWelcomedIntimacyFloor(
-            GalleryFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
-                change,
-                latestUserText,
-                currentAffinity,
-                { characterId: charId }
-            ),
+            GalleryFreeTalkCore.normalizeAffinityChange(change),
             { reaction, characterId: charId, workerChange: change }
         );
         const result = this.progress.changeCurrentAffinity(

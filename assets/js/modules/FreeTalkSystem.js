@@ -1842,18 +1842,7 @@ class FreeTalkSystem {
             const _isDatingCurrentForBoundary = this.stateManager.getFlag(`isDating_${charKey}`) || this.stateManager.getFlag(`isDating_${scene.name}`);
             const _latestTurnIntimacyBoundaryRule = _sceneDialogue.romanticInterlude
                 ? window.buildCupidTemptationRomanceGuidance(_lang)
-                : CupidFreeTalkCore.buildCupidLatestTurnIntimacyBoundaryGate(
-                _lang,
-                _currentAffinity,
-                finalContent,
-                {
-                    characterName: scene.name || charKey,
-                    characterId: charKey,
-                    establishedRelationship: _isDatingCurrentForBoundary,
-                    nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
-                    ...getGroupContactTargetOptions(charKey, scene)
-                }
-            );
+                : '';
             const _affinityIntimacyProgressionPatch = _sceneDialogue.romanticInterlude ? '' : (((__oc107 = window.buildCupidAffinityIntimacyGuidance) === null || __oc107 === void 0 ? void 0 : __oc107.call(window, _lang, _currentAffinity, {
         characterName: scene.name || charKey,
         establishedRelationship: _isDatingCurrentForBoundary,
@@ -2465,14 +2454,8 @@ window.saveCupidChatLog({
         if (!(((__oc173 = this.stateManager.stats) === null || __oc173 === void 0 ? void 0 : __oc173[speakerId]))) return null;
         if (!Number.isInteger(change)) return null;
         const previousValue = this.stateManager.getAffinity(speakerId);
-        let requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
-            change,
-            latestUserText,
-            previousValue,
-            { characterId: speakerId, nonRomance: speakerId === 'Haeun' && ((scene === null || scene === void 0 ? void 0 : scene.haeunRomance)) !== true,
-                groupScene: true, decisionReaction: reaction,
-                ...getGroupContactTargetOptions(speakerId, scene, this.groupParticipants) }
-        );
+        // 클라이언트 정규식 강제 감점·상한 덮어쓰기 중단 -> 판정 모델 점수를 정규화 범위(-50~+5)로만 수신
+        let requestedChange = CupidFreeTalkCore.normalizeAffinityChange(change);
         // 강제였더라도 답변 끝에서 반긴 스킨십·키스·성행위는 그 행동 몫만큼 깎지 않는다(2026-11-26 사용자 결정, 하은 제외).
         // 같은 턴의 다른 잘못(모욕·위협·다른 사람에게 한 행동에 대한 질투)으로 판정 모델이 남긴 감점은 그대로 둔다.
         requestedChange = CupidFreeTalkCore.applyWelcomedIntimacyFloor(requestedChange, {
@@ -2780,20 +2763,7 @@ window.saveCupidChatLog({
             let optimized = this._buildWindowedHistory(requestHistory, groupKey);
             if (typeof window.optimizeImageHistory === 'function') optimized = window.optimizeImageHistory(optimized, 5);
             const repetitionGuard = buildCupidRecentExpressionRepetitionGuard(optimized, lang);
-            const boundaryRule = this.groupParticipants
-                .map(participant => CupidFreeTalkCore.buildCupidLatestTurnIntimacyBoundaryGate(
-                    lang,
-                    this.stateManager.getAffinity(participant.id),
-                    finalContent,
-                    {
-                        characterName: participant.name,
-                        characterId: participant.id,
-                        nonRomance: participant.id === 'Haeun' && scene.haeunRomance !== true,
-                        ...getGroupContactTargetOptions(participant.id, scene, this.groupParticipants)
-                    }
-                ))
-                .filter(Boolean)
-                .join('\n\n');
+            const boundaryRule = '';
             const postHistoryGuidance = CupidFreeTalkCore.buildPostHistoryGuidance(optimized, lang, {
                 repetitionGuard,
                 boundaryRule
@@ -3604,15 +3574,8 @@ window.saveCupidGroupChatLog({
         if (scene.affinityLocked === true) {
             return { change: 0, value: previousValue, requestedChange: 0, appliedChange: 0 };
         }
-        // 게임·갤러리 공용 턴당 호감도 범위: -50 ~ +5
-        const policyAffinity = this._getSceneDialoguePolicy(scene).affinity;
-        let requestedChange = CupidFreeTalkCore.enforceCupidAffinityIntimacyBoundary(
-            change,
-            latestUserText,
-            policyAffinity,
-            { characterId: charKey, nonRomance: charKey === 'Haeun' && scene.haeunRomance !== true,
-                ...getGroupContactTargetOptions(charKey, scene) }
-        );
+        // 게임·갤러리 공용 턴당 호감도 범위: -50 ~ +5 (정규식 강제 감점·상한 덮어쓰기 중단 -> 판정 모델 점수 사용)
+        let requestedChange = CupidFreeTalkCore.normalizeAffinityChange(change);
         // 강제였더라도 캐릭터가 답변 끝에서 스킨십·키스·성행위를 반기면 그 행동 몫만큼 호감도를 깎지 않는다
         // (2026-11-26 사용자 결정, 하은 제외). 같은 턴의 다른 잘못으로 판정 모델이 남긴 감점은 그대로 둔다.
         if (consent) {

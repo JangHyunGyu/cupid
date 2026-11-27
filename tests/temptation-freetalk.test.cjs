@@ -81,7 +81,8 @@ test('interludes score positive and negative turns using real point caps while k
         context.currentSceneId = 'wall_seo_freetalk';
         const normal = { name: character, type: 'free_talk' };
         assert.equal(context._getSceneDialoguePolicy(normal).affinity, -97);
-        assert.equal((await fixture.talk(context, 5, normal, '손을 잡아도 돼?')).change, 0);
+        assert.equal((await fixture.talk(context, 0, normal, '손을 잡아도 돼?')).change, 0);
+        assert.equal((await fixture.talk(context, 5, normal, '손을 잡아도 돼?')).change, 3);
     }
 });
 
