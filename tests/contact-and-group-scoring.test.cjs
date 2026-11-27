@@ -486,3 +486,83 @@ test('verb forms of 보다/자다 and 빨개/빨리/빨간 never pair into a sex
     // Directed exposure below 40 is blocked with the sexual cap, like other sexual contact.
     assert.equal(core.enforceCupidAffinityIntimacyBoundary(1, '*바지를 내리며 자지를 보여준다*', 25, { characterId: 'Nurse' }), -18);
 });
+
+test('D1 regressions (2026-11-27): coat-lending, French besoin, polite narration requests/apologies, and burden idioms', () => {
+    // 1. Coat-lending is not undressing/sexual assault.
+    for (const line of [
+        '*환하게 웃으며*좋아 같이 걸으면서 얘기하자, *겉옷을 벗어서 유나에게 덮어주며 말한다*춥겠다 이거 걸쳐',
+        '*겉옷을 벗어 서연의 어깨에 살짝 걸쳐주며* 바람은 좀 불지만 따뜻해서 좋은데? 넌 안 추워?',
+        '겉옷을 벗어서 입혀준다',
+        '너는 괜찮아 ? *겉옷을 벗어준다*',
+        '*내 옷을 벗어서 어깨에 걸쳐주며* 춥지?'
+    ]) {
+        const boundary = core.getCupidAffinityIntimacyBoundary(line, 10, { characterId: 'Seoyeon' });
+        assert.equal(boundary.level, 'none', line);
+        assert.equal(boundary.blocked, false, line);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(2, line, 10, { characterId: 'Seoyeon' }), 2, line);
+    }
+    for (const line of [
+        '옷을 벗어줘',
+        '속옷을 벗고',
+        '옷을 다 벗으며 강제로 만지기 시작한다',
+        '*그녀의 옷을 벗긴다*'
+    ]) {
+        assert.equal(core.classifyCupidIntimacyAdvance(line).level, 'sexual', line);
+    }
+
+    // 2. French "besoin" (need) is not a kiss cue, while real Romance/German kiss cues stay kiss.
+    for (const line of [
+        "je vais aider l'infirmière elle a plus besoin de moi",
+        'Je serai là pour toi qu’en tu auras besoin de moi',
+        "si jamais vous avez besoin d'aide"
+    ]) {
+        const boundary = core.getCupidAffinityIntimacyBoundary(line, 5, { characterId: 'Nurse' });
+        assert.equal(boundary.level, 'none', line);
+        assert.equal(boundary.blocked, false, line);
+    }
+    for (const line of [
+        'posso te beijar?',
+        'Ich küsse dain',
+        'te quiero besar',
+        "je veux t'embrasser",
+        'on peut baiser'
+    ]) {
+        assert.equal(core.classifyCupidIntimacyAdvance(line).level, 'kiss', line);
+    }
+
+    // 3. Harmless *...* / (...) narration with polite consent questions or apologies does not force mode: 'action'.
+    const politeRequests = [
+        ['*서연에게 다가가며* 좀 추운데 안아줄 수 있어?', 'light'],
+        ['(쑥스러워하며) 머리 쓰다듬어도 돼?', 'light'],
+        ['*강아지 같은 눈을 하며* 손 잡으면 안돼요?', 'light'],
+        ['선생님 저 안아주실수있나요', 'light'],
+        ['certo, *olho*, posso te beijar?', 'kiss']
+    ];
+    for (const [line, level] of politeRequests) {
+        const adv = core.classifyCupidIntimacyAdvance(line);
+        assert.equal(adv.level, level, line);
+        assert.equal(adv.mode, 'request', line);
+        assert.equal(core.enforceCupidAffinityIntimacyBoundary(-12, line, 5, { characterId: 'Seoyeon' }), -1, line);
+    }
+    const apology = core.classifyCupidIntimacyAdvance('*고개를 숙이며* 아까 손잡아서 미안해');
+    assert.deepEqual({ level: apology.level, mode: apology.mode }, { level: 'light', mode: 'apology' });
+    assert.equal(core.getCupidAffinityIntimacyBoundary('*고개를 숙이며* 아까 손잡아서 미안해', 5, { characterId: 'Seoyeon' }).blocked, false);
+
+    // Guards: marked contact acts and non-question statements stay mode: 'action'.
+    for (const [line, level] of [
+        ['*손을 잡으며* 같이 갈래?', 'light'],
+        ['(뽀뽀를 하며) 나랑 사귀자', 'kiss'],
+        ['*다가가며* *손을 잡는다* 괜찮아?', 'light'],
+        ['지금 그녀를 안고 있어요', 'light']
+    ]) {
+        const adv = core.classifyCupidIntimacyAdvance(line);
+        assert.equal(adv.level, level, line);
+        assert.equal(adv.mode, 'action', line);
+    }
+
+    // 4. Emotional-burden idiom is not physical contact, while real hugging of a worried person stays blocked.
+    const idiom = '마음속에 힘든일은 너무 안고 계시면 힘들어져요.';
+    assert.equal(core.classifyCupidIntimacyAdvance(idiom).level, 'none');
+    assert.equal(core.getCupidAffinityIntimacyBoundary(idiom, 4, { characterId: 'Nurse' }).blocked, false);
+    assert.equal(core.enforceCupidAffinityIntimacyBoundary(3, '걱정하는 하은을 안고 있다', 10, HAEUN_NON_ROMANCE), -10);
+});

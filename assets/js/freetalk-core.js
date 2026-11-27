@@ -55,8 +55,8 @@
     const CHINESE_LIGHT_TOUCH_CUE = /(?:牵(?:起|住|着)?(?:你|她|他)?(?:的)?手|拉(?:起|住|着|了)(?:你|她|他)?(?:的)?手|握(?:住|着|紧|了)(?:你|她|他)?(?:的)?手|拥抱|抱(?:住|紧|着|一下|抱)|搂(?:住|着)?|抚摸|摸(?:摸|一下|你|她|他))/u;
     const HAND_HOLDING_PHRASE_CUE = /(?:\b(?:hold|holds|holding|held|take|takes|taking|took|grab|grabs|grabbing|grabbed)\s+(?:her|his|your|my|their)\s+hands?\b|\b(?:toma|tomo|tomar|tomarte|tomé|coge|cojo|coger|agarra|agarro|agarrar|agarré)\w*\s+(?:la|tu|su)\s+mano\b|\b(?:prend|prends|prendre|pris)\s+(?:la|ta|sa)\s+main\b|\btenir\s+la\s+main\b|\b(?:nimmt|nehme|nehmen|nahm|halte|hält|halten|hielt|greife|greift)\s+(?:ihre|deine|seine|die)\s+Hand\b|\b(?:ihre|deine|seine)\s+Hand\s+(?:halten|nehmen|greifen)\b|\b(?:segura|seguro|segurar|segurei|pega|pego|pegar|peguei)\s+(?:a|na|sua|tua)\s+mão|\bde\s+mãos\s+dadas)/iu;
     const CHINESE_KISS_CUE = /(?:亲(?:吻|一下|一口|了|你|她|他)|吻)/u;
-    const CONSENT_ASK_CUE = /(?:해도\s*(?:돼|될까|괜찮)|(?:아|어|여)도\s*(?:돼|될까|괜찮)|(?:아|어|해)\s*줄래|(?:아|어|해)\s*줘|(?:갈|잡을|안을|할)래|(?:갈|잡을|안을|할)까|してもいい|していい|しても大丈夫|\b(?:can|could|may)\s+i\b|\bwould\s+you\s+(?:like|mind)\b|\bdo\s+you\s+want\b|\bis\s+it\s+(?:ok|okay|alright)\b|\b(?:puedo|te\s+importa|quieres)\b|\bpuis-je\b|\bje\s+peux\b|\btu\s+veux\b|ça\s+te\s+dérange|\bdarf\s+ich\b|\bkann\s+ich\b|möchtest\s+du\b|\bwillst\s+du\b|\bist\s+es\s+okay\b|\bposso\b|\bvocê\s+quer|\btudo\s+bem\s+se\b|可以(?:吗|嘛)|可不可以|能不能|要不要|好吗|行吗)/iu;
-    const KOREAN_QUESTION_ENDING_CUE = /(?:래|까|돼|될까|어때|괜찮아|줄래)\s*[.…~!]*\s*$/u;
+    const CONSENT_ASK_CUE = /(?:(?:해도|해\s*도)\s*(?:돼|되나요|될까|괜찮)|(?:아|어|여)도\s*(?:돼|되나요|될까|괜찮)|(?:면|으면)\s*안\s*(?:돼|돼요|될까|될까요|되나요)|(?:줄|주실|해\s*줄|해\s*주실|잡을|안을|만질|할)\s*수\s*있(?:어|어요|나요|을까|을까요|는지)|(?:아|어|해)\s*줄래|(?:아|어|해)\s*줘|(?:갈|잡을|안을|할)래|(?:갈|잡을|안을|할)까|してもいい|していい|しても大丈夫|\b(?:can|could|may)\s+i\b|\bwould\s+you\s+(?:like|mind)\b|\bdo\s+you\s+want\b|\bis\s+it\s+(?:ok|okay|alright)\b|\b(?:puedo|te\s+importa|quieres)\b|\bpuis-je\b|\bje\s+peux\b|\btu\s+veux\b|ça\s+te\s+dérange|\bdarf\s+ich\b|\bkann\s+ich\b|möchtest\s+du\b|\bwillst\s+du\b|\bist\s+es\s+okay\b|\bposso\b|\bvocê\s+quer|\btudo\s+bem\s+se\b|可以(?:吗|嘛)|可不可以|能不能|要不要|好吗|行吗)/iu;
+    const KOREAN_QUESTION_ENDING_CUE = /(?:래요?|까요?|돼요?|되나요|될까요?|어때요?|괜찮아요?|괜찮을까요?|줄래요?|주실래요?|있나요|있을까요?|수\s*있어요?)\s*[.…~!]*\s*$/u;
     const APOLOGY_CUE = /(?:미안|죄송|사과(?:할게|하고|할래|할게요|드려|드릴)|잘못했|ごめん|すみません|申し訳|悪かった|\bsorry\b|\bapologi[sz]e\w*|\b(?:perd[oó]n\w*|lo\s+siento|disculp\w*)|d[ée]sol[ée]e?|\bpardon\b|\bexcuse-moi\b|\bje\s+m['’]excuse|\b(?:entschuldig\w*|tut\s+mir\s+leid|verzeih\w*)|\b(?:desculp\w*|perdão|sinto\s+muito)|对不起|抱歉|不好意思|道歉)/iu;
     const COERCIVE_CONTACT_CUE = /(?:강제로|억지로|거부해도|싫다(?:고|는데도)|하지\s*마(?:라고|라는데도)|기절|의식\s*(?:없|잃)|잠든\s*(?:채|사이)|無理やり|嫌がっても|意識を失|気絶|眠っている間|强迫|强制|强行|硬来|不管.*拒绝|失去意识|昏迷|晕倒|睡着|\bforce(?:s|d|fully)?\b|\bdespite\s+(?:their|her|his)\s+(?:refusal|protest)\b|\bunconscious\b|\bwhile\s+(?:asleep|sleeping)\b|\ba\s+la\s+fuerza\b|\binconsciente\b|\bde\s+force\b|\binconscient(?:e)?\b|\bgewaltsam\b|\bbewusstlos\b|\bà\s+força\b|\binconsciente\b)/iu;
     const PRESSING_REQUEST_CUE = /(?:제발|그냥\s*좀|빨리\s*(?:좀)?|왜\s*안\s*돼|싫어도|한\s*번만|억지로라도|いいじゃん|お願いだから|\bcome\s+on\b|\bjust\s+let\s+me\b|\bwhy\s+not\b|\bvamos\s+ya\b|\banda\s+ya\b|\ballez\b|\bkomm\s+schon\b|\bqual\s+é|就一下|求你)/iu;
@@ -68,7 +68,7 @@
         /손잡이/gu,
         /안아(?:파|프|픈|팠|플|쉬|쉽|까[워운웠]|깝)/gu,
         /(?:배|밥|속)(?:가|는|도|이|은)?\s*안고(?:파|프|픈|팠|플)/gu,
-        /(?:걱정|고민|부담|불안|짐|비밀|책임|상처|아픔|슬픔|두려움|후회|미련)(?:[을를만도은는]|까지|마저)?\s*(?:혼자서?\s*)?(?:끌어|떠)?안(?:고|은|는|았|을)/gu,
+        /(?:걱정|고민|부담|불안|짐|비밀|책임|상처|아픔|슬픔|두려움|후회|미련|힘든\s*일|어려운\s*일|괴로운\s*일|속상한\s*일|마음의\s*짐)(?:[을를만도은는]|까지|마저)?\s*(?:(?:혼자서?|너무|계속|다|가득)\s*)*(?:끌어|떠)?안(?:고|은|는|았|을)/gu,
         /혼자서?\s*(?:다\s*)?(?:끌어|떠)?안고\s*(?:있지|끙끙|버티)/gu,
         /안고\s*있(?:던|는)\s*(?:걱정|고민|부담|불안|짐|비밀|상처|아픔|슬픔)/gu,
         /말(?:[을도이은]|끝을)?\s*더듬/gu,
@@ -167,6 +167,17 @@
         return aimedAtOther;
     }
 
+    function detectCupidIntimacyLevel(text, legacy) {
+        const explicitSexualCue = /(?:삽입|성행위|섹스|벗기|속옷을\s*벗|(?<![가-힣])옷을\s*(?:다\s*)?벗(?!어(?:서)?(?:\s*[^\n*]{0,24})?(?:덮어|덮으|걸쳐|걸치|둘러|두르|입혀|입히|건네|씌워|씌우))|성기를\s*드러내|(?:자지|성기)(?:를|을)?\s*(?:보여|꺼내|내밀|들이대|드러내)|보지\s*(?:대|벌려)|挿入|セックス|服を脱|性器を見せ|插入|性交|做爱|脱掉|脱下.*衣服|露出.*生殖器|\b(?:penetrat(?:e|es|ed|ion)|sex|undress(?:es|ed)?|strip(?:s|ped)?|expose(?:s|d)?\s+(?:my|their|her|his)\s+genitals?)\b|\b(?:penetr\w*|sexo|desnud\w*)\b|\b(?:pénétr\w*|sexe|déshabill\w*)\b|\b(?:eindring\w*|sex|auszieh\w*)\b|\b(?:penetr\w*|sexo|despir\w*)\b)/iu.test(text);
+        const sexualBodyPartCue = /(?:가슴|유방|유두|젖꼭지|엉덩이|허벅지\s*안쪽|보지(?!만|요|\s*(?:마|말|않|못)|도\s*[않못]|는\s*[않못])|자지(?!만|요|\s*(?:마|말|않|못)|도\s*[않못]|는\s*[않못])|성기|애액|정액|胸|乳首|尻|性器|胸部|乳房|乳头|臀部|屁股|大腿内侧|阴部|阴道|阴茎|生殖器|爱液|精液|\b(?:breasts?|nipples?|butt|genitals?|penis|cock|pussy|vagina)\b|\b(?:pechos?|senos?|pezones?|nalgas?|genitales?|pene|vagina)\b|\b(?:seins?|poitrine|mamelons?|fesses|organes?\s+génitaux|pénis|vagin)\b|\b(?:brüste?|brust|brustwarzen?|po|genitalien|penis|vagina)\b|\b(?:seios?|peitos?|mamilos?|nádegas?|genitais?|pênis|vagina)\b)/iu.test(text);
+        const sexualContactCue = /(?:만(?:지|진|져|졌|질)|더듬|주무르|빨(?!개|갛|간|강|갰|갱|리|라|래|랫|대)|핥|깨물|비비|문지르|쥐어|揉|舐|吸|触|摸|抚摸|舔|抓|捏|摩擦|咬|\b(?:touch|grab|grope|rub|lick|suck|bite|fondle|caress)(?:s|ed|ing)?\b|\b(?:toc|agarr|frot|lam|chup|mord|acarici)\w*\b|\b(?:touch|sais|frott|lèch|suc|mord|caress)\w*\b|\b(?:berühr|greif|reib|leck|saug|beiß|streichel)\w*\b|\b(?:toc|agarr|esfreg|lamb|chup|mord|acarici)\w*\b)/iu.test(text);
+        const sexualCue = explicitSexualCue || (sexualBodyPartCue && sexualContactCue);
+        const kissCue = /(?:키스|뽀뽀|입맞춤|입맞추|입을\s*맞|입술을\s*(?:맞|포개|겹치|덮치)|혀를?\s*(?:넣|밀|파고)|舌を入|キス|口づけ|\bkiss(?:es|ed|ing)?\b|\b(?:beso|besos|besa(?:s|n|mos|is|r\w*|ndo|do|da|ste|ron|ba\w*)?|bes[éeó]|b[ée]sa(?:me|te|la|lo)|bais(?:er|ers|e|es|ent|é|ée|ant)|embrass(?:er|e|es|ent|é|ée|ant|ons|ez)|küss(?:en|e|t|te|ten|end)?|beij(?:o|os|a|as|am|amos|ar\w*|ando|ei|ou|ado|ada))\b)/iu.test(text)
+            || (!legacy && CHINESE_KISS_CUE.test(text));
+        const lightTouchCue = hasLightTouchCue(text, legacy);
+        return sexualCue ? 'sexual' : (kissCue ? 'kiss' : (lightTouchCue ? 'light' : 'none'));
+    }
+
     // Verb forms are not body parts or contact (2026-11-26, from a Day 1 line scored -18): "보지만/보지 않고/자지 못해"
     // are "look/sleep", and "빨개/빨간/빨리/빨라/빨래/빨대" are "red/fast/laundry/straw", so they no longer pair into a sexual cue.
     function classifyCupidIntimacyAdvance(value = '', options = {}) {
@@ -178,14 +189,7 @@
         const withdrawalCue = /(?:하지\s*마|만지지\s*마|키스하지\s*마|안지\s*마|안\s+(?:할|해|한다)|멈춰|그만|싫어|놓아|거절|やめて|しない|嫌|離して|不要|别碰|别亲|别抱|停下|住手|拒绝|放开|\b(?:do\s+not|don't|stop|no\s+more|refuse)\b|\b(?:no\s+lo\s+hagas|para|detente|rechazo)\b|\b(?:ne\s+fais\s+pas|arrête|refuse)\b|\b(?:nicht|hör\s+auf|stopp|lehne\s+ab)\b|\b(?:não\s+faça|pare|recuso)\b)/iu.test(text);
         if (withdrawalCue && !coerciveCue) return { level: 'none', mode: 'none' };
 
-        const explicitSexualCue = /(?:삽입|성행위|섹스|벗기|옷을\s*벗|성기를\s*드러내|(?:자지|성기)(?:를|을)?\s*(?:보여|꺼내|내밀|들이대|드러내)|보지\s*(?:대|벌려)|挿入|セックス|服を脱|性器を見せ|插入|性交|做爱|脱掉|脱下.*衣服|露出.*生殖器|\b(?:penetrat(?:e|es|ed|ion)|sex|undress(?:es|ed)?|strip(?:s|ped)?|expose(?:s|d)?\s+(?:my|their|her|his)\s+genitals?)\b|\b(?:penetr\w*|sexo|desnud\w*)\b|\b(?:pénétr\w*|sexe|déshabill\w*)\b|\b(?:eindring\w*|sex|auszieh\w*)\b|\b(?:penetr\w*|sexo|despir\w*)\b)/iu.test(text);
-        const sexualBodyPartCue = /(?:가슴|유방|유두|젖꼭지|엉덩이|허벅지\s*안쪽|보지(?!만|요|\s*(?:마|말|않|못)|도\s*[않못]|는\s*[않못])|자지(?!만|요|\s*(?:마|말|않|못)|도\s*[않못]|는\s*[않못])|성기|애액|정액|胸|乳首|尻|性器|胸部|乳房|乳头|臀部|屁股|大腿内侧|阴部|阴道|阴茎|生殖器|爱液|精液|\b(?:breasts?|nipples?|butt|genitals?|penis|cock|pussy|vagina)\b|\b(?:pechos?|senos?|pezones?|nalgas?|genitales?|pene|vagina)\b|\b(?:seins?|poitrine|mamelons?|fesses|organes?\s+génitaux|pénis|vagin)\b|\b(?:brüste?|brust|brustwarzen?|po|genitalien|penis|vagina)\b|\b(?:seios?|peitos?|mamilos?|nádegas?|genitais?|pênis|vagina)\b)/iu.test(text);
-        const sexualContactCue = /(?:만(?:지|진|져|졌|질)|더듬|주무르|빨(?!개|갛|간|강|갰|갱|리|라|래|랫|대)|핥|깨물|비비|문지르|쥐어|揉|舐|吸|触|摸|抚摸|舔|抓|捏|摩擦|咬|\b(?:touch|grab|grope|rub|lick|suck|bite|fondle|caress)(?:s|ed|ing)?\b|\b(?:toc|agarr|frot|lam|chup|mord|acarici)\w*\b|\b(?:touch|sais|frott|lèch|suc|mord|caress)\w*\b|\b(?:berühr|greif|reib|leck|saug|beiß|streichel)\w*\b|\b(?:toc|agarr|esfreg|lamb|chup|mord|acarici)\w*\b)/iu.test(text);
-        const sexualCue = explicitSexualCue || (sexualBodyPartCue && sexualContactCue);
-        const kissCue = /(?:키스|뽀뽀|입맞춤|입맞추|입을\s*맞|입술을\s*(?:맞|포개|겹치|덮치)|혀를?\s*(?:넣|밀|파고)|舌を入|キス|口づけ|\bkiss(?:es|ed|ing)?\b|\b(?:bes[oa]|besar|baiser|embrasser|küss|küssen|beij|beijar)\w*\b)/iu.test(text)
-            || (!legacy && CHINESE_KISS_CUE.test(text));
-        const lightTouchCue = hasLightTouchCue(text, legacy);
-        const level = sexualCue ? 'sexual' : (kissCue ? 'kiss' : (lightTouchCue ? 'light' : 'none'));
+        const level = detectCupidIntimacyLevel(text, legacy);
         if (level === 'none') return { level, mode: 'none' };
 
         const requestCue = /(?:도\s*(?:돼|될까|괜찮)|해\s*줄래|하자|(?:손\s*잡|손잡|껴안|안|입맞추|키스하|만지|쓰다듬)자|할래|하고\s*싶|괜찮아\??|허락|원해\??|してもいい|しよう|したい|お願い|可以(?:吗|嘛)|可不可以|能不能|要不要|好吗|行吗|我想|\b(?:can|could|may)\s+i\b|\bshall\s+we\b|\blet['’]?s\b|\bwould\s+you\b|\bwould\s+it\s+be\s+okay\b|\bdo\s+you\s+want\b|\b(?:puedo|podemos|quieres|hagamos)\b|\b(?:puis-je|on\s+peut|veux-tu|faisons)\b|\b(?:darf\s+ich|wollen\s+wir|möchtest\s+du|lass\s+uns)\b|\b(?:posso|podemos|quer|vamos)\b)/iu.test(text);
@@ -197,11 +201,13 @@
                 : 'action';
             return { level, mode };
         }
-        // Asking, inviting or apologising is not contact. Only a marked or completed act is unilateral contact.
+        // Asking, inviting or apologising is not contact. Only a marked contact act or completed act is unilateral contact.
+        const markedSpans = text.match(/\*[^*]+\*|\([^()]+\)|（[^（）]+）/gu) || [];
+        const markedContactAction = markedSpans.some(span => detectCupidIntimacyLevel(span, legacy) !== 'none');
         const consentAskCue = requestCue || CONSENT_ASK_CUE.test(text);
         const questionCue = /[?？]/u.test(text) || KOREAN_QUESTION_ENDING_CUE.test(text);
         const apologyCue = APOLOGY_CUE.test(text);
-        if (markedAction || coerciveCue) return { level, mode: 'action' };
+        if (markedContactAction || coerciveCue) return { level, mode: 'action' };
         if (apologyCue && !CONSENT_ASK_CUE.test(text)) return { level, mode: 'apology' };
         if ((consentAskCue || questionCue) && !completedActionCue) return { level, mode: 'request' };
         if (apologyCue) return { level, mode: 'apology' };
